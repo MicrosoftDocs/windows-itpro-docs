@@ -35,7 +35,7 @@ Microsoft Azure Active Directory (AD) accounts for your employees:
 -   Employees need Azure AD accounts when they access Store for Business content from Windows-based devices.
 -   If you use a management tool to distribute and manage online-licensed apps, all employees will need an Azure AD account.
 
-For more information on Azure AD, see [About Office 365 and Azure Active Directory](http://go.microsoft.com/fwlink/p/?LinkId=708612), and [Intro to Azure: identity and access](http://go.microsoft.com/fwlink/p/?LinkId=708611).
+For more information on Azure AD, see [About Office 365 and Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=708612), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
 
 ### Optional
 

@@ -624,37 +624,37 @@ New-NetFirewallRule –DisplayName “Inbound Secure Bypass Rule" –Direction I
 
 For more information about Windows PowerShell concepts, see the following topics.
 
--   [Windows PowerShell Getting Started Guide](http://go.microsoft.com/fwlink/p/?linkid=113440)
+-   [Windows PowerShell Getting Started Guide](https://go.microsoft.com/fwlink/p/?linkid=113440)
 
--   [Windows PowerShell User Guide](http://go.microsoft.com/fwlink/p/?linkid=113441)
+-   [Windows PowerShell User Guide](https://go.microsoft.com/fwlink/p/?linkid=113441)
 
--   [Windows PowerShell About Help Topics](http://go.microsoft.com/fwlink/p/?linkid=113206)
+-   [Windows PowerShell About Help Topics](https://go.microsoft.com/fwlink/p/?linkid=113206)
 
--   [about\_Functions](http://go.microsoft.com/fwlink/p/?linkid=113231)
+-   [about\_Functions](https://go.microsoft.com/fwlink/p/?linkid=113231)
 
--   [about\_Functions\_Advanced](http://go.microsoft.com/fwlink/p/?linkid=144511)
+-   [about\_Functions\_Advanced](https://go.microsoft.com/fwlink/p/?linkid=144511)
 
--   [about\_Execution\_Policies](http://go.microsoft.com/fwlink/p/?linkid=135170)
+-   [about\_Execution\_Policies](https://go.microsoft.com/fwlink/p/?linkid=135170)
 
--   [about\_Foreach](http://go.microsoft.com/fwlink/p/?linkid=113229)
+-   [about\_Foreach](https://go.microsoft.com/fwlink/p/?linkid=113229)
 
--   [about\_Objects](http://go.microsoft.com/fwlink/p/?linkid=113241)
+-   [about\_Objects](https://go.microsoft.com/fwlink/p/?linkid=113241)
 
--   [about\_Properties](http://go.microsoft.com/fwlink/p/?linkid=113249)
+-   [about\_Properties](https://go.microsoft.com/fwlink/p/?linkid=113249)
 
--   [about\_While](http://go.microsoft.com/fwlink/p/?linkid=113275)
+-   [about\_While](https://go.microsoft.com/fwlink/p/?linkid=113275)
 
--   [about\_Scripts](http://go.microsoft.com/fwlink/p/?linkid=144310)
+-   [about\_Scripts](https://go.microsoft.com/fwlink/p/?linkid=144310)
 
--   [about\_Signing](http://go.microsoft.com/fwlink/p/?linkid=113268)
+-   [about\_Signing](https://go.microsoft.com/fwlink/p/?linkid=113268)
 
--   [about\_Throw](http://go.microsoft.com/fwlink/p/?linkid=145153)
+-   [about\_Throw](https://go.microsoft.com/fwlink/p/?linkid=145153)
 
--   [about\_PSSessions](http://go.microsoft.com/fwlink/p/?linkid=135181)
+-   [about\_PSSessions](https://go.microsoft.com/fwlink/p/?linkid=135181)
 
--   [about\_Modules](http://go.microsoft.com/fwlink/p/?linkid=144311)
+-   [about\_Modules](https://go.microsoft.com/fwlink/p/?linkid=144311)
 
--   [about\_Command\_Precedence](http://go.microsoft.com/fwlink/p/?linkid=113214)
+-   [about\_Command\_Precedence](https://go.microsoft.com/fwlink/p/?linkid=113214)
 
  
 

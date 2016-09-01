@@ -81,7 +81,7 @@ Operating system deployment with Configuration Manager is part of the normal sof
 ## See also
 
 
--   [Microsoft Deployment Toolkit downloads and resources](http://go.microsoft.com/fwlink/p/?LinkId=618117)
+-   [Microsoft Deployment Toolkit downloads and resources](https://go.microsoft.com/fwlink/p/?LinkId=618117)
 
 -   [Windows deployment tools](windows-deployment-scenarios-and-tools.md)
 
@@ -93,7 +93,7 @@ Operating system deployment with Configuration Manager is part of the normal sof
 
 -   [Sideload Windows Store apps](http://technet.microsoft.com/library/dn613831.aspx)
 
--   [Windows ADK for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=526803)
+-   [Windows ADK for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=526803)
 
  
 

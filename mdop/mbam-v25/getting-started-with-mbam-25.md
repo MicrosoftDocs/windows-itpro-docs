@@ -17,9 +17,9 @@ This topic provides a list of links to help you learn about Microsoft BitLocker 
 
 See the following resources for additional MBAM documentation:
 
--   [Microsoft BitLocker Administration and Monitoring Deployment Guide](http://go.microsoft.com/fwlink/?LinkId=396653)
+-   [Microsoft BitLocker Administration and Monitoring Deployment Guide](https://go.microsoft.com/fwlink/?LinkId=396653)
 
--   [Microsoft Training Overview](http://go.microsoft.com/fwlink/p/?LinkId=80347)
+-   [Microsoft Training Overview](https://go.microsoft.com/fwlink/p/?LinkId=80347)
 
 Before you deploy MBAM to a production environment, we recommend that you validate your deployment plan in a test environment.
 
@@ -72,7 +72,7 @@ Before you start planning your MBAM deployment, review the following topics.
 ## How to get MDOP technologies
 
 
-MBAM 2.5 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and about acquiring MDOP, see [How Do I Get MDOP](http://go.microsoft.com/fwlink/?LinkId=322049) (http://go.microsoft.com/fwlink/?LinkId=322049).
+MBAM 2.5 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and about acquiring MDOP, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049) (https://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## <a href="" id="other-resources-for-this-product-"></a>Other resources for this product
 

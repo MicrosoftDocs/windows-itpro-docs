@@ -87,9 +87,9 @@ The following server settings can be configured:
 
         -   Associate the server certificate with the port specified using netsh. For information, see the following:
 
-            -   [Netsh Commands for Hypertext Transfer Protocol (HTTP)](http://go.microsoft.com/fwlink/?LinkId=183314)
+            -   [Netsh Commands for Hypertext Transfer Protocol (HTTP)](https://go.microsoft.com/fwlink/?LinkId=183314)
 
-            -   [How to: Configure a Port with an SSL Certificate](http://go.microsoft.com/fwlink/?LinkID=183315)
+            -   [How to: Configure a Port with an SSL Certificate](https://go.microsoft.com/fwlink/?LinkID=183315)
 
             -   [How to: Configure a Port with an SSL Certificate](http://msdn.microsoft.com/library/ms733791.aspx)
 

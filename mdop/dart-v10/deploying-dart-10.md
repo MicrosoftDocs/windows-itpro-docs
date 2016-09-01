@@ -36,7 +36,7 @@ Microsoft Diagnostics and Recovery Toolset (DaRT) 10 supports a number of differ
 
 ### How to get DaRT
 
-This technology is a part of the Microsoft Desktop Optimization Pack (MDOP). Enterprise customers can get MDOP with Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](http://go.microsoft.com/fwlink/p/?LinkId=322049) (http://go.microsoft.com/fwlink/p/?LinkId=322049).
+This technology is a part of the Microsoft Desktop Optimization Pack (MDOP). Enterprise customers can get MDOP with Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/p/?LinkId=322049) (https://go.microsoft.com/fwlink/p/?LinkId=322049).
 
 ## Other Resources for deploying DaRT
 

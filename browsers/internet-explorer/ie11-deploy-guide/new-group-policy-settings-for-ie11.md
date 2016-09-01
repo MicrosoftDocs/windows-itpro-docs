@@ -95,5 +95,5 @@ After you've finished updating and deploying your Group Policy, you can use the 
 1.  Open and run the Resultant Set of Policy (RSoP) wizard, specifying the information you want to see.
 
 2.  Open your wizard results in the Group Policy Management Console (GPMC).<p>
-For complete instructions about how to add, open, and use RSoP, see [Use the RSoP Snap-in](http://go.microsoft.com/fwlink/p/?LinkId=395201)
+For complete instructions about how to add, open, and use RSoP, see [Use the RSoP Snap-in](https://go.microsoft.com/fwlink/p/?LinkId=395201)
 

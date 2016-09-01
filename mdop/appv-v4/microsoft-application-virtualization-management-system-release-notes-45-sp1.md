@@ -20,35 +20,35 @@ Read these Release Notes thoroughly before you install the Application Virtualiz
 
  
 
-For updated information about known issues, please visit the Microsoft TechNet Library at <http://go.microsoft.com/fwlink/?LinkId=122918>.
+For updated information about known issues, please visit the Microsoft TechNet Library at <https://go.microsoft.com/fwlink/?LinkId=122918>.
 
 ## About Microsoft Application Virtualization 4.5 Service Pack 1
 
 
 These Release Notes have been updated to reflect the changes introduced with Microsoft Application Virtualization (App-V) 4.5 Service Pack 1 (SP1). This service pack contains the following changes:
 
--   Support for Windows 7 and Windows Server 2008 R2: App-V 4.5 SP1 provides support for Windows 7 and Windows Server 2008 R2, including support for Windows 7 features such as the taskbar, AppLocker, BranchCache, and BitLocker To Go.  Windows Server 2008 R2 support is for the Application Virtualization Server only. For more information on AppLocker support in Windows 7, see <http://go.microsoft.com/fwlink/?LinkID=156732>.
+-   Support for Windows 7 and Windows Server 2008 R2: App-V 4.5 SP1 provides support for Windows 7 and Windows Server 2008 R2, including support for Windows 7 features such as the taskbar, AppLocker, BranchCache, and BitLocker To Go.  Windows Server 2008 R2 support is for the Application Virtualization Server only. For more information on AppLocker support in Windows 7, see <https://go.microsoft.com/fwlink/?LinkID=156732>.
 
--   Support for 3rd Party Kerberos Realms: App-V 4.5 SP1 provides support for environments that have a trust relationship and mapped user accounts between a Windows domain and an MIT Kerberos realm, which is a scenario that is common at many universities. For information on how to enable this support, please visit the Microsoft TechNet Library at <http://go.microsoft.com/fwlink/?LinkId=166004>.
+-   Support for 3rd Party Kerberos Realms: App-V 4.5 SP1 provides support for environments that have a trust relationship and mapped user accounts between a Windows domain and an MIT Kerberos realm, which is a scenario that is common at many universities. For information on how to enable this support, please visit the Microsoft TechNet Library at <https://go.microsoft.com/fwlink/?LinkId=166004>.
 
 -   Improved support for application publishing and streaming via HTTP/HTTPS: App-V 4.5 SP1 provides support for application publishing and streaming via the HTTP/HTTPS protocols for Windows XP Home Edition, Windows Vista Home Basic, and Windows 7 Home Basic.
 
--   Customer Feedback and Hotfix Rollup: App-V 4.5 SP1 also includes a rollup up of fixes to address issues found since the Microsoft Application Virtualization (App-V) 4.5 CU1 release. The updates are a result of a combination of known issues and customer feedback from our internal teams, partners, and customers who are using App-V 4.5. For a full list of the updates, see the KB article at <http://go.microsoft.com/fwlink/?LinkId=167121>.
+-   Customer Feedback and Hotfix Rollup: App-V 4.5 SP1 also includes a rollup up of fixes to address issues found since the Microsoft Application Virtualization (App-V) 4.5 CU1 release. The updates are a result of a combination of known issues and customer feedback from our internal teams, partners, and customers who are using App-V 4.5. For a full list of the updates, see the KB article at <https://go.microsoft.com/fwlink/?LinkId=167121>.
 
 ## About the Product Documentation
 
 
-Comprehensive documentation for Application Virtualization (App-V) is available on Microsoft TechNet in the Application Virtualization (App-V) TechCenter at <http://go.microsoft.com/fwlink/?LinkId=122939>. The TechNet documentation includes the online Help for the Application Virtualization Sequencer, the Application Virtualization Client, and the Application Virtualization Server. It also includes the Application Virtualization Planning and Deployment Guide and the Application Virtualization Operations Guide.
+Comprehensive documentation for Application Virtualization (App-V) is available on Microsoft TechNet in the Application Virtualization (App-V) TechCenter at <https://go.microsoft.com/fwlink/?LinkId=122939>. The TechNet documentation includes the online Help for the Application Virtualization Sequencer, the Application Virtualization Client, and the Application Virtualization Server. It also includes the Application Virtualization Planning and Deployment Guide and the Application Virtualization Operations Guide.
 
 ## Protect Against Security Vulnerabilities and Viruses
 
 
-To help protect against security vulnerabilities and viruses, we recommend that you install the latest available security updates for any new software being installed. For more information, see the Microsoft Security Web site at <http://go.microsoft.com/fwlink/?LinkId=3482>.
+To help protect against security vulnerabilities and viruses, we recommend that you install the latest available security updates for any new software being installed. For more information, see the Microsoft Security Web site at <https://go.microsoft.com/fwlink/?LinkId=3482>.
 
 ## Providing Feedback
 
 
-You can provide feedback, make a suggestion, or report an issue with the Microsoft Application Virtualization (App-V) Management System via a community forum on the Microsoft Application Virtualization TechCenter (<http://go.microsoft.com/fwlink/?LinkId=122917>).
+You can provide feedback, make a suggestion, or report an issue with the Microsoft Application Virtualization (App-V) Management System via a community forum on the Microsoft Application Virtualization TechCenter (<https://go.microsoft.com/fwlink/?LinkId=122917>).
 
 You can also provide your feedback on the documentation directly to the App-V documentation team. Send your documentation feedback to appvdocs@microsoft.com.
 
@@ -59,13 +59,13 @@ This section provides the most up-to-date information about issues with Microsof
 
 ### Guidance for installing Server Management Console
 
-If you need to install management software onto systems other than the primary Application Virtualization publishing and streaming server, the server install supports installing the Management Console and Management Web service on separate servers from the primary App-V Management Server. To distribute the management components across multiple servers, Kerberos delegation must be enabled on the server where the Web service is installed. For information on how to enable this support, please visit the Microsoft TechNet Library at <http://go.microsoft.com/fwlink/?LinkId=166682>
+If you need to install management software onto systems other than the primary Application Virtualization publishing and streaming server, the server install supports installing the Management Console and Management Web service on separate servers from the primary App-V Management Server. To distribute the management components across multiple servers, Kerberos delegation must be enabled on the server where the Web service is installed. For information on how to enable this support, please visit the Microsoft TechNet Library at <https://go.microsoft.com/fwlink/?LinkId=166682>
 
 ### Guidance for installing or upgrading clients to App-V 4.5 SP1 using setup.msi
 
 When installing or upgrading your App-V clients to App-V 4.5 SP1 by using setup.msi, the prerequisites are not installed automatically.
 
-WORKAROUND   You must manually install the prerequisites before installing or upgrading the App-V client to App-V 4.5 SP1. For detailed procedures for installing the prerequisites and the App-V client, see <http://go.microsoft.com/fwlink/?LinkId=144106>.
+WORKAROUND   You must manually install the prerequisites before installing or upgrading the App-V client to App-V 4.5 SP1. For detailed procedures for installing the prerequisites and the App-V client, see <https://go.microsoft.com/fwlink/?LinkId=144106>.
 
 When this has been completed, install the App-V 4.5 SP1 client by using setup.msi with elevated privileges. This file is available on the App-V 4.5 SP1 release media in the Installers\\Client folder.
 
@@ -158,11 +158,11 @@ When using IIS 6.0 or 7.0 for icon or OSD file retrieval and streaming of pack
 
     Setspn -r HTTP/&lt;Server FQDN&gt;
 
-For more information, see <http://go.microsoft.com/fwlink/?LinkId=131407>.
+For more information, see <https://go.microsoft.com/fwlink/?LinkId=131407>.
 
 ### .NET compatibility changes
 
-Microsoft Application Virtualization (App-V) Cumulative Update 1 or later supports sequencing the .NET Framework on Windows XP (SP2 or later). Sequencing routines for .NET applications that were written for SoftGrid 4.2 might need to be updated when used with the App-V 4.5 Sequencer. For details and workarounds, please refer to the Knowledge Base article at <http://go.microsoft.com/fwlink/?LinkId=123412>.
+Microsoft Application Virtualization (App-V) Cumulative Update 1 or later supports sequencing the .NET Framework on Windows XP (SP2 or later). Sequencing routines for .NET applications that were written for SoftGrid 4.2 might need to be updated when used with the App-V 4.5 Sequencer. For details and workarounds, please refer to the Knowledge Base article at <https://go.microsoft.com/fwlink/?LinkId=123412>.
 
 ### <a href="" id="after-client-upgrade-from-app-v-4-2--some-applications-are-not-shown-"></a>After client upgrade from App-V 4.2, some applications are not shown
 
@@ -192,7 +192,7 @@ The Application Virtualization administrators must be given read and execute per
 
 When used in conjunction with KEEPCURRENTSETTINGS=1, the following client installer command-line parameters are ignored: SWICACHESIZE, MINFREESPACEMB, ALLOWINDEPENDENTFILESTREAMING, APPLICATIONSOURCEROOT, ICONSOURCEROOT, OSDSOURCEROOT, SYSTEMEVENTLOGLEVEL, SWIGLOBALDATA, DOTIMEOUTMINUTES, SWIFSDRIVE, AUTOLOADTARGET, AUTOLOADTRIGGERS, SWIUSERDATA, and REQUIRESECURECONNECTION.
 
-WORKAROUND   If you have settings you want to retain, use KEEPCURRENTSETTINGS=1 and then set the other parameters after deployment. The App-V ADM Template can be used to set the following client settings: APPLICATIONSOURCEROOT, ICONSOURCEROOT, OSDSOURCEROOT, AUTOLOADTARGET, AUTOLOADTRIGGERS, DOTIMEOUTMINUTES, and ALLOWINDEPENDENTFILESTREAMING. The ADM Template can be found at <http://go.microsoft.com/fwlink/?LinkId=121835>.
+WORKAROUND   If you have settings you want to retain, use KEEPCURRENTSETTINGS=1 and then set the other parameters after deployment. The App-V ADM Template can be used to set the following client settings: APPLICATIONSOURCEROOT, ICONSOURCEROOT, OSDSOURCEROOT, AUTOLOADTARGET, AUTOLOADTRIGGERS, DOTIMEOUTMINUTES, and ALLOWINDEPENDENTFILESTREAMING. The ADM Template can be found at <https://go.microsoft.com/fwlink/?LinkId=121835>.
 
 ## Release Notes Copyright Information
 

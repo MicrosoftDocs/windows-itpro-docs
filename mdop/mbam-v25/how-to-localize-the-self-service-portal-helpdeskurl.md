@@ -34,7 +34,7 @@ In the following instructions, *SelfService* is the default virtual directory na
 
     The name of the Language folder can also be the language neutral name **es** instead of **es-es**. If the end user’s browser is set to **es-es** and that folder does not exist, the parent locale (as defined in .NET) is recursively retrieved and checked, resolving to &lt;MBAM Self-Service Install Directory&gt;\\SelfServiceWebsite\\es\\Notice.txt before finally becoming the default Notice.txt file. This recursive fallback mimics the .NET resource loading rules.
 
-    For a list of the valid language codes you can use, see [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=317947).
+    For a list of the valid language codes you can use, see [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=317947).
 
 4.  In the **Value** field, type the localized version of the `HelpdeskURL` value that you want to display to end users.
 

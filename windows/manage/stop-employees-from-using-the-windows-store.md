@@ -80,7 +80,7 @@ If you have mobile devices in your organization that you upgraded from earlier v
 
 When your MDM tool supports Windows Store for Business, the MDM can use these CSPs to block Windows Store app:
 
--   [Policy](http://go.microsoft.com/fwlink/p/?LinkId=717030)
+-   [Policy](https://go.microsoft.com/fwlink/p/?LinkId=717030)
 
 -   [EnterpriseAssignedAccess](https://msdn.microsoft.com/library/windows/hardware/mt157024.aspx) (Windows 10 Mobile, only)
 

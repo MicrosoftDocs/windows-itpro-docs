@@ -32,7 +32,7 @@ Out-of-date ActiveX control blocking lets you:
 
 -   Update the outdated control, so that it’s up-to-date and safer to use.
 
-The out-of-date ActiveX control blocking feature works with all [Security Zones](http://go.microsoft.com/fwlink/p/?LinkId=403863), except the Local Intranet Zone and the Trusted Sites Zone.
+The out-of-date ActiveX control blocking feature works with all [Security Zones](https://go.microsoft.com/fwlink/p/?LinkId=403863), except the Local Intranet Zone and the Trusted Sites Zone.
 
 It also works with these operating system and IE combinations:
 
@@ -46,7 +46,7 @@ It also works with these operating system and IE combinations:
 |Windows Server 2008 SP2                 |Windows Internet Explorer 9 only |
 |Windows Vista SP2                       |Windows Internet Explorer 9 only |
      
-For more info about this new feature, see the [Internet Explorer begins blocking out-of-date ActiveX controls](http://go.microsoft.com/fwlink/p/?LinkId=507691) blog. To see the complete list of out-of-date Active controls blocked by this feature, see [Blocked out-of-date ActiveX controls](http://go.microsoft.com/fwlink/p/?LinkId=517023).
+For more info about this new feature, see the [Internet Explorer begins blocking out-of-date ActiveX controls](https://go.microsoft.com/fwlink/p/?LinkId=507691) blog. To see the complete list of out-of-date Active controls blocked by this feature, see [Blocked out-of-date ActiveX controls](https://go.microsoft.com/fwlink/p/?LinkId=517023).
 
 ## What does the out-of-date ActiveX control blocking notification look like?
 When IE blocks an outdated ActiveX control, you’ll see a notification bar similar to this, depending on your version of IE:
@@ -89,7 +89,7 @@ IE opens the app’s website.
 IE uses Microsoft’s versionlist.xml or versionlistWin7.xml file to determine whether an ActiveX control should be stopped from loading. These files are updated with newly-discovered out-of-date ActiveX controls, which IE automatically downloads to your local copy of the file.
 
 You can see your copy of the file here `%LOCALAPPDATA%\Microsoft\Internet Explorer\VersionManager\versionlist.xml` or you can view Microsoft’s version, based on your operating system and version of IE, here:
-- [Internet Explorer 11 on Windows 7 SP1 or Windows Server 2008 R2](http://go.microsoft.com/fwlink/p/?LinkId=798230)
+- [Internet Explorer 11 on Windows 7 SP1 or Windows Server 2008 R2](https://go.microsoft.com/fwlink/p/?LinkId=798230)
 - [All other configurations](https://go.microsoft.com/fwlink/p/?LinkId=403864)
 
 **Security Note:**<br>Although we strongly recommend against it, if you don’t want your computer to automatically download the updated version list from Microsoft, run the following command from a command prompt:
@@ -100,7 +100,7 @@ reg add "HKCU\Software\Microsoft\Internet Explorer\VersionManager" /v DownloadVe
 Turning off this automatic download breaks the out-of-date ActiveX control blocking feature by not letting the version list update with newly outdated controls, potentially compromising the security of your computer. Use this configuration option at your own risk.
 
 ## Out-of-date ActiveX control blocking on managed devices
-Out-of-date ActiveX control blocking includes 4 new Group Policy settings that you can use to manage your web browser configuration, based on your domain controller. You can download the administrative templates, including the new settings, from the [Administrative templates (.admx) for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=746579) page or the [Administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2](http://go.microsoft.com/fwlink/p/?LinkId=746580) page, depending on your operating system.
+Out-of-date ActiveX control blocking includes 4 new Group Policy settings that you can use to manage your web browser configuration, based on your domain controller. You can download the administrative templates, including the new settings, from the [Administrative templates (.admx) for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=746579) page or the [Administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2](https://go.microsoft.com/fwlink/p/?LinkId=746580) page, depending on your operating system.
 
 ### Group Policy settings
 Here’s a list of the new Group Policy info, including the settings, location, requirements, and Help text strings. All of these settings can be set in either the Computer Configuration or User Configuration scope, but Computer Configuration takes precedence over User Configuration.
@@ -156,7 +156,7 @@ Here’s a detailed example and description of what’s included in the VersionA
 
 -   **Allowed/Blocked** Whether IE blocked the ActiveX control.
  
--   **Enhanced Protected Mode (EPM)-compatible.** Whether the loaded ActiveX control is compatible with [Enhanced Protected Mode](http://go.microsoft.com/fwlink/p/?LinkId=403865).<p>**Note**<br>Enhanced Protected Mode isn’t supported on Internet Explorer 9 or earlier versions of IE. Therefore, if you’re using Internet Explorer 8 or Internet Explorer 9, all ActiveX controls will always be marked as not EPM-compatible.
+-   **Enhanced Protected Mode (EPM)-compatible.** Whether the loaded ActiveX control is compatible with [Enhanced Protected Mode](https://go.microsoft.com/fwlink/p/?LinkId=403865).<p>**Note**<br>Enhanced Protected Mode isn’t supported on Internet Explorer 9 or earlier versions of IE. Therefore, if you’re using Internet Explorer 8 or Internet Explorer 9, all ActiveX controls will always be marked as not EPM-compatible.
 
 -   **Reason.** The ActiveX control can be blocked or allowed for any of these reasons:
 
@@ -176,7 +176,7 @@ Here’s a detailed example and description of what’s included in the VersionA
 For Windows 10 you also have the option to log your inventory info to a local WMI class. Info logged to this class includes all of info you get from the .csv file, plus the CLSID of the loaded ActiveX control or the name of any apps started from an ActiveX control.
 
 #### Before you begin
-Before you can use WMI to inventory your ActiveX controls, you need to [download the configuration package (.zip file)](http://go.microsoft.com/fwlink/p/?LinkId=616971), which includes:
+Before you can use WMI to inventory your ActiveX controls, you need to [download the configuration package (.zip file)](https://go.microsoft.com/fwlink/p/?LinkId=616971), which includes:
 
 -   **ConfigureWMILogging.ps1**. A Windows PowerShell script.
 
@@ -192,7 +192,7 @@ Before running the PowerShell script, you must copy both the .ps1 and .mof file 
 ```
 powershell –ExecutionPolicy Bypass .\ConfigureWMILogging.ps1
 ``` 
-For more info, see [about_Execution_Policies](http://go.microsoft.com/fwlink/p/?linkid=517460).
+For more info, see [about_Execution_Policies](https://go.microsoft.com/fwlink/p/?linkid=517460).
 
 3.  **Optional:** Set up your domain firewall for WMI data. For more info, see [Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md).
 

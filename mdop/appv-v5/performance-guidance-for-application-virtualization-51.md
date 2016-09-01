@@ -21,9 +21,9 @@ You should read and understand the following information before reading this doc
 
 -   [Microsoft Application Virtualization 5.1 Administrator's Guide](microsoft-application-virtualization-51-administrators-guide.md)
 
--   [App-V 5 SP2 Application Publishing and Client Interaction](http://go.microsoft.com/fwlink/?LinkId=395206)
+-   [App-V 5 SP2 Application Publishing and Client Interaction](https://go.microsoft.com/fwlink/?LinkId=395206)
 
--   [Microsoft Application Virtualization Sequencing Guide](http://go.microsoft.com/fwlink/?LinkId=269953)
+-   [Microsoft Application Virtualization Sequencing Guide](https://go.microsoft.com/fwlink/?LinkId=269953)
 
 **Note**  
 Some terms used in this document may have different meanings depending on external source and context. For more information about terms used in this document followed by an asterisk **\*** review the [Application Virtualization Performance Guidance Terminology](#bkmk-terms1) section of this document.

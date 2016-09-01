@@ -13,7 +13,7 @@ ms.prod: w8
 # How to Configure User Permissions
 
 
-You can enable and disable some actions for users who do not have administrative rights by editing the key values under the **Permissions** registry key (HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Client\\Permissions). This key is primarily designed to help prevent users from making mistakes rather than to provide any special security, because users with administrative rights can edit any of these key values. The following procedures are examples of how to change the key values. For more information about the Application Virtualization (App-V) Client registry keys and values, see <http://go.microsoft.com/fwlink/?LinkId=121528>.
+You can enable and disable some actions for users who do not have administrative rights by editing the key values under the **Permissions** registry key (HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SoftGrid\\4.5\\Client\\Permissions). This key is primarily designed to help prevent users from making mistakes rather than to provide any special security, because users with administrative rights can edit any of these key values. The following procedures are examples of how to change the key values. For more information about the Application Virtualization (App-V) Client registry keys and values, see <https://go.microsoft.com/fwlink/?LinkId=121528>.
 
 **To change user permissions**
 

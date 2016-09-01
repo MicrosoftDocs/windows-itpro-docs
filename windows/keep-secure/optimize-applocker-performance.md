@@ -20,7 +20,7 @@ This topic for IT professionals describes how to optimize AppLocker policy enfor
 
 AppLocker policies can be implemented by organization unit (OU) using Group Policy. If so, your Group Policy infrastructure should be optimized and retested for performance when AppLocker policies are added to existing Group Policy Objects (GPOs) or new GPOs are created, as you do with adding any policies to your GPOs.
 
-For more info, see the [Optimizing Group Policy Performance](http://go.microsoft.com/fwlink/p/?LinkId=163238) article in TechNet Magazine.
+For more info, see the [Optimizing Group Policy Performance](https://go.microsoft.com/fwlink/p/?LinkId=163238) article in TechNet Magazine.
 
 ### AppLocker rule limitations
 

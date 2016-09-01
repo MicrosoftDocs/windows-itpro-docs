@@ -13,7 +13,7 @@ author: CelesteDG
 -   Windows 10
 
 
-Your privacy is important to us, so we want to provide you with ways to customize the OS privacy settings, as well as some of the apps, so that you can choose what information is shared with Microsoft. To learn more about Microsoft’s commitment to privacy, see [Windows 10 and privacy](http://go.microsoft.com/fwlink/?LinkId=809305).
+Your privacy is important to us, so we want to provide you with ways to customize the OS privacy settings, as well as some of the apps, so that you can choose what information is shared with Microsoft. To learn more about Microsoft’s commitment to privacy, see [Windows 10 and privacy](https://go.microsoft.com/fwlink/?LinkId=809305).
 
 Here are some best practices and specific privacy settings we’d like you to be aware of.
 
@@ -28,8 +28,8 @@ Keep these best practices in mind when deploying any edition of Windows 10 in sc
 ## Windows 10 Contacts privacy settings
 
 If you’re an IT administrator who deploys Windows 10 in a school or district, we recommend that you review these deployment resources to make informed decisions about how you can configure telemetry for your school or district:
-* [Configure Windows telemetry in your organization](http://go.microsoft.com/fwlink/?LinkId=817241) - Describes the types of telemetry we gather and the ways you can manage this data.
-* [Manage connections from Windows operating system components to Microsoft services](http://go.microsoft.com/fwlink/?LinkId=817240) - Learn about network connections that Windows components make to Microsoft and also the privacy settings (such as location, camera, messaging, and more) that affect data that is shared with either Microsoft or apps and how you can manage this data.
+* [Configure Windows telemetry in your organization](https://go.microsoft.com/fwlink/?LinkId=817241) - Describes the types of telemetry we gather and the ways you can manage this data.
+* [Manage connections from Windows operating system components to Microsoft services](https://go.microsoft.com/fwlink/?LinkId=817240) - Learn about network connections that Windows components make to Microsoft and also the privacy settings (such as location, camera, messaging, and more) that affect data that is shared with either Microsoft or apps and how you can manage this data.
 
 In particular, the **Contacts** area in the **Settings** > **Privacy** section lets you choose which apps can access a student’s contacts list. By default, this setting is turned on.
 
@@ -70,7 +70,7 @@ To allow only certain apps to have access to contacts, you can:
 
 Skype Preview (a Universal Windows Platform [UWP] preview app) and Xbox are preinstalled as part of Windows 10.
 
-The Skype app replaces the integration of Skype features into Skype video and Messaging apps on Windows PCs and large tablets. The Skype app provides all these features in one place and lets users have a single place to manage both their chat and voice conversations so they can take better advantage of their screen. For information about the new Skype UWP app preview, see this [FAQ](http://go.microsoft.com/fwlink/?LinkId=821441).
+The Skype app replaces the integration of Skype features into Skype video and Messaging apps on Windows PCs and large tablets. The Skype app provides all these features in one place and lets users have a single place to manage both their chat and voice conversations so they can take better advantage of their screen. For information about the new Skype UWP app preview, see this [FAQ](https://go.microsoft.com/fwlink/?LinkId=821441).
 
 With the Xbox app, students can use their Xbox profiles to play and make progress on their games using their Windows-based device. They can also unlock achievements and show off to their friends with game clips and screenshots. The Xbox app requires a Microsoft account, which is a personal account.
 
@@ -104,16 +104,16 @@ The profile page includes these sections:
 #### Xbox
 A user’s Xbox friends and their friends’ friends can see their real name and profile. By default, the Xbox privacy settings enforce that no personal identifying information of a minor is shared on the Xbox Live network, although adults in the child’s family can change these default settings to allow it to be more permissive.
 
-To learn more about how families can manage security and privacy settings on Xbox, see this [Xbox article on security](http://go.microsoft.com/fwlink/?LinkId=821445).
+To learn more about how families can manage security and privacy settings on Xbox, see this [Xbox article on security](https://go.microsoft.com/fwlink/?LinkId=821445).
 
 
 ### Delete an account if username is identifying
 If you want to delete either (or both) the Skype and the Xbox accounts, here’s how to do it.
 
 #### Skype
-To delete a Skype account, you can follow the instructions here: [How do I close my Skype account?](http://go.microsoft.com/fwlink/?LinkId=816515)
+To delete a Skype account, you can follow the instructions here: [How do I close my Skype account?](https://go.microsoft.com/fwlink/?LinkId=816515)
 
-If you need help deleting the account, you can contact Skype customer service by going to the [Skype support request page](http://go.microsoft.com/fwlink/?LinkId=816519). You may need to sign in and specify a Skype account. Once you’ve signed in, you can:
+If you need help deleting the account, you can contact Skype customer service by going to the [Skype support request page](https://go.microsoft.com/fwlink/?LinkId=816519). You may need to sign in and specify a Skype account. Once you’ve signed in, you can:
 1.	Select a help topic (**Account and Password**)
 2.	Select a related problem (**Deleting an account**)
 3.	Click **Next**.
@@ -121,7 +121,7 @@ If you need help deleting the account, you can contact Skype customer service by
 
 
 #### Xbox
-To delete an Xbox account, you can follow the instructions here: [How to delete your Microsoft account and personal information associated with it](http://go.microsoft.com/fwlink/?LinkId=816521).
+To delete an Xbox account, you can follow the instructions here: [How to delete your Microsoft account and personal information associated with it](https://go.microsoft.com/fwlink/?LinkId=816521).
 
 ## Related topics
 [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)

@@ -63,7 +63,7 @@ Next, you should go through the user interface and make a list of all of the ava
 
 **How To Determine Where Each Setting is Stored**
 
-1.  Download a file and registry monitoring tool, such as the Regmon and Filemon tools, from the [Windows Sysinternals Web site](http://go.microsoft.com/fwlink/p/?linkid=36109).
+1.  Download a file and registry monitoring tool, such as the Regmon and Filemon tools, from the [Windows Sysinternals Web site](https://go.microsoft.com/fwlink/p/?linkid=36109).
 
 2.  Shut down as many applications as possible to limit the registry and file system activity on the computer.
 

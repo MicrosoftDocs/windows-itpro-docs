@@ -17,7 +17,7 @@ Using a web service in MDT is straightforward, but it does require that you have
 
 ## <a href="" id="sec01"></a>Create a sample web service
 
-In these steps we assume you have installed Microsoft Visual Studio Express 2013 for Web on PC0001 (the Windows 10 client) and downloaded the [MDT Sample Web Service](http://go.microsoft.com/fwlink/p/?LinkId=619363) from the Microsoft Download Center and extracted it to C:\\Projects.
+In these steps we assume you have installed Microsoft Visual Studio Express 2013 for Web on PC0001 (the Windows 10 client) and downloaded the [MDT Sample Web Service](https://go.microsoft.com/fwlink/p/?LinkId=619363) from the Microsoft Download Center and extracted it to C:\\Projects.
 1.  On PC0001, using Visual Studio Express 2013 for Web, open the C:\\Projects\\MDTSample\\ MDTSample.sln solution file.
 2.  On the ribbon bar, verify that Release is selected.
 3.  In the **Debug** menu, select the **Build MDTSample** action.

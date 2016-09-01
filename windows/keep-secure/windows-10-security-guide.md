@@ -93,7 +93,7 @@ With Microsoft Passport, you gain flexibility in the data center, too. To deploy
 
 Both software vendors and enterprise customers have come to realize that proprietary identity and authentication systems are a dead end: The future lies with open, interoperable systems that allow secure authentication across a variety of devices, line of business (LOB) apps, and external applications and websites. To this end, a group of industry players formed FIDO, the Fast IDentity Online Alliance. The FIDO Alliance is a nonprofit organization intended to address the lack of interoperability among strong authentication devices, as well as the problems users face when they need to create and remember multiple user names and passwords. The FIDO Alliance plans to change the nature of authentication by developing specifications that define an open, scalable, interoperable set of mechanisms that supplant reliance on passwords to securely authenticate users of online services. This new standard for security devices and browser plug ins will allow any website or cloud application to interface with a broad variety of existing and future FIDO-enabled devices that the user has for online security.
 
-In 2014, Microsoft joined the board of the [FIDO Alliance](http://go.microsoft.com/fwlink/p/?LinkId=626934). FIDO standards enable a universal framework that a global ecosystem delivers for a consistent and greatly improved user experience of strong password-less authentication. The FIDO 1.0 specifications, published in December 2014, provide for two types of authentications: password-less (known as UAF) and second factor (U2F). The FIDO Alliance is working on a set of 2.0 proposals that incorporate the best ideas from its U2F and UAF FIDO 1.0 standards, and of course, on new ideas. Microsoft has contributed Microsoft Passport technology to the FIDO 2.0 specification workgroup for review and feedback and continues to work with the FIDO Alliance as the FIDO 2.0 specification moves forward. Interoperability of FIDO products is a hallmark of FIDO authentication. Microsoft believes that bringing a FIDO solution to market will help solve a critical need for enterprises and consumers alike.
+In 2014, Microsoft joined the board of the [FIDO Alliance](https://go.microsoft.com/fwlink/p/?LinkId=626934). FIDO standards enable a universal framework that a global ecosystem delivers for a consistent and greatly improved user experience of strong password-less authentication. The FIDO 1.0 specifications, published in December 2014, provide for two types of authentications: password-less (known as UAF) and second factor (U2F). The FIDO Alliance is working on a set of 2.0 proposals that incorporate the best ideas from its U2F and UAF FIDO 1.0 standards, and of course, on new ideas. Microsoft has contributed Microsoft Passport technology to the FIDO 2.0 specification workgroup for review and feedback and continues to work with the FIDO Alliance as the FIDO 2.0 specification moves forward. Interoperability of FIDO products is a hallmark of FIDO authentication. Microsoft believes that bringing a FIDO solution to market will help solve a critical need for enterprises and consumers alike.
 
 #### It’s effective
 
@@ -238,7 +238,7 @@ Exercise caution when encrypting only used space on an existing volume on which 
 
 SEDs have been available for years, but Microsoft couldn’t support their use with some earlier versions of Windows because the drives lacked important key management features. Microsoft worked with storage vendors to improve the hardware capabilities, and now BitLocker supports the next generation of SEDs, which are called encrypted hard drives.
 Encrypted hard drives provide onboard cryptographic capabilities to encrypt data on drives, which improves both drive and system performance by offloading cryptographic calculations from the PC’s processor to the drive itself and rapidly encrypting the drive by using dedicated, purpose-built hardware. If you plan to use whole-drive encryption with Windows 10, Microsoft recommends that you investigate hard drive manufacturers and models to determine whether any of their encrypted hard drives meet your security and budget requirements.
-For more information about encrypted hard drives, see [Encrypted Hard Drive](http://go.microsoft.com/fwlink/p/?LinkId=733880).
+For more information about encrypted hard drives, see [Encrypted Hard Drive](https://go.microsoft.com/fwlink/p/?LinkId=733880).
 
 ### Preboot information protection
 
@@ -265,10 +265,11 @@ Network Unlock requires the following infrastructure:
 * A server running Windows Server 2012 with the Windows Deployment Services role
 * A server with the DHCP server role installed
 
-For more information about how to configure Network Unlock, see [BitLocker: How to enable Network Unlock](http://go.microsoft.com/fwlink/p/?LinkId=733905).
+For more information about how to configure Network Unlock, see [BitLocker: How to enable Network Unlock](https://go.microsoft.com/fwlink/p/?LinkId=733905).
 
 ### Microsoft BitLocker Administration and Monitoring
 
+>>>>>>> refs/remotes/origin/master
 Part of the Microsoft Desktop Optimization Pack, MBAM makes it easier to manage and support BitLocker and BitLocker To Go. MBAM 2.5 with Service Pack 1, the latest version, has the following key features:
 
 * Enables administrators to automate the process of encrypting volumes on client computers across the enterprise.
@@ -283,7 +284,7 @@ Part of the Microsoft Desktop Optimization Pack, MBAM makes it easier to manage 
 * Offers an IT-customizable recovery user experience.
 * Supports Windows 10.
 
-For more information about MBAM, including how to obtain it, see [Microsoft BitLocker Administration and Monitoring](http://go.microsoft.com/fwlink/p/?LinkId=626935) on the MDOP TechCenter.
+For more information about MBAM, including how to obtain it, see [Microsoft BitLocker Administration and Monitoring](https://go.microsoft.com/fwlink/p/?LinkId=626935) on the MDOP TechCenter.
 
 ## <a href="" id="malware"></a>Malware resistance
 
@@ -353,7 +354,7 @@ If SMB signing and mutual authentication are unavailable, a Windows 10 or Window
 >[!NOTE]
 >The registry values for these settings aren’t present by default, but the hardening rules still apply until overridden by Group Policy or other registry values.
 
-For more information on these security improvements, (also referred to as UNC hardening), see [Microsoft Knowledge Base article 3000483](http://go.microsoft.com/fwlink/p/?LinkId=789216) and [MS15-011 & MS15-014: Hardening Group Policy](http://go.microsoft.com/fwlink/p/?LinkId=789215).
+For more information on these security improvements, (also referred to as UNC hardening), see [Microsoft Knowledge Base article 3000483](https://go.microsoft.com/fwlink/p/?LinkId=789216) and [MS15-011 & MS15-014: Hardening Group Policy](https://go.microsoft.com/fwlink/p/?LinkId=789215).
  
 #### Secure hardware
 
@@ -381,7 +382,7 @@ All Windows 8 certified PCs must meet several requirements related to Secure Bo
 This behavior doesn’t limit the choice of operating system. In fact, users typically have three options for running non-Microsoft operating systems:
 
 - **Use an operating system with a Microsoft-signed bootloader.** Microsoft offers a service to sign non-Microsoft bootloaders so that they can be used on the device. In this case, a signature from the Microsoft third-party UEFI 
-CA is used to sign the non-Microsoft bootloader, and the signature itself is added to the UEFI database. Several non-Microsoft operating systems, including several varieties of Linux, have had their bootloaders signed by Microsoft so that they can take advantage of the Secure Boot capability. For more information about the Microsoft third-party UEFI signing policy, read [Microsoft UEFI CA Signing policy updates](http://go.microsoft.com/fwlink/p/?LinkId=626936) and [Pre-submission testing for UEFI submissions](http://go.microsoft.com/fwlink/p/?LinkId=626937).
+CA is used to sign the non-Microsoft bootloader, and the signature itself is added to the UEFI database. Several non-Microsoft operating systems, including several varieties of Linux, have had their bootloaders signed by Microsoft so that they can take advantage of the Secure Boot capability. For more information about the Microsoft third-party UEFI signing policy, read [Microsoft UEFI CA Signing policy updates](https://go.microsoft.com/fwlink/p/?LinkId=626936) and [Pre-submission testing for UEFI submissions](https://go.microsoft.com/fwlink/p/?LinkId=626937).
 
    >[!NOTE] 
    >PCs configured to use Device Guard boot only a secured version of Windows and do not permit a third-party bootloader. For more information, see the [Device Guard](#device-guard) section of this document.
@@ -392,7 +393,7 @@ CA is used to sign the non-Microsoft bootloader, and the signature itself is add
 >[!NOTE]  
 >With Windows 10, original equipment manufacturers (OEMs) have the ability to ship built-to-order PCs that lock down UEFI Secure Boot so that it cannot be disabled and allows only the operating system of the customer’s choice to start on the device.
      
-Windows, apps, and even malware cannot change the UEFI configuration. Instead, users must be physically present to manually boot a PC into a UEFI shell, and then change UEFI firmware settings. For more information about UEFI Secure Boot, read [Protecting the pre-OS environment with UEFI](http://go.microsoft.com/fwlink/p/?LinkId=626938).
+Windows, apps, and even malware cannot change the UEFI configuration. Instead, users must be physically present to manually boot a PC into a UEFI shell, and then change UEFI firmware settings. For more information about UEFI Secure Boot, read [Protecting the pre-OS environment with UEFI](https://go.microsoft.com/fwlink/p/?LinkId=626938).
 
 #### Virtualization-based security
 
@@ -515,6 +516,7 @@ Figure 3 illustrates the following process for device compliance verification an
 6.  The MDM server can send the same data to the health attestation server. The server decrypts the statement of health, asserts that the boot counter in the statement matches the boot counter that was sent to the MDM server, and compiles a list of health attributes.
 
 7.  The health attestation server sends this list of health attributes back to the MDM server. The MDM server now enforces access and compliance policies if configured to do so.
+
 
 For a list of data points that the health attestation server verifies, along with a description of the data, see the [HealthAttestation CSP article on MSDN](http://go.microsoft.com/fwlink/p/?LinkId=626940).
 
@@ -712,7 +714,7 @@ By default, users have the option to bypass SmartScreen Filter protection so tha
 
 Figure 8. The Windows SmartScreen configuration options in Control Panel
 
-If you want to try the SmartScreen Filter, use Windows 7 to download this simulated (but not dangerous) malware file:[freevideo.exe](http://go.microsoft.com/fwlink/p/?LinkId=626943). Save it to your computer, and then run it from Windows Explorer. As shown in Figure 9, Windows runs the app without much warning. In Windows 7, you might receive a warning message about the app not having a certificate, but you can easily bypass it.
+If you want to try the SmartScreen Filter, use Windows 7 to download this simulated (but not dangerous) malware file:[freevideo.exe](https://go.microsoft.com/fwlink/p/?LinkId=626943). Save it to your computer, and then run it from Windows Explorer. As shown in Figure 9, Windows runs the app without much warning. In Windows 7, you might receive a warning message about the app not having a certificate, but you can easily bypass it.
 
 ![Windows 7 allows the app to run](images/security-fig9-windows7allow.png "Windows 7 allows the app to run")
 
@@ -793,10 +795,10 @@ Windows 10 is the culmination of many years of effort from Microsoft, and its i
 
 ## Related topics
 
-[Windows 10 Specifications](http://go.microsoft.com/fwlink/p/?LinkId=625077 )
+[Windows 10 Specifications](https://go.microsoft.com/fwlink/p/?LinkId=625077 )
 
-[HealthAttestation CSP](http://go.microsoft.com/fwlink/p/?LinkId=626940 )
+[HealthAttestation CSP](https://go.microsoft.com/fwlink/p/?LinkId=626940 )
 
-[Making Windows 10 More Personal and More Secure with Windows Hello](http://go.microsoft.com/fwlink/p/?LinkId=626945)
+[Making Windows 10 More Personal and More Secure with Windows Hello](https://go.microsoft.com/fwlink/p/?LinkId=626945)
 
 [Protect BitLocker from pre-boot attacks](protect-bitlocker-from-pre-boot-attacks.md)

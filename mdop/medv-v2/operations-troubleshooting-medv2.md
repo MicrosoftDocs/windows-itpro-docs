@@ -82,7 +82,7 @@ None.
 
 **Solution**
 
-You can specify the length of time that MED-V waits to close unresponsive applications by setting the WaitToKillAppTimeout registry key in the guest virtual machine. For more information, see [How To Increase Shutdown Time So That Processes Can Quit Properly in Windows XP](http://go.microsoft.com/fwlink/?LinkId=206819) (http://go.microsoft.com/fwlink/?LinkId=206819).
+You can specify the length of time that MED-V waits to close unresponsive applications by setting the WaitToKillAppTimeout registry key in the guest virtual machine. For more information, see [How To Increase Shutdown Time So That Processes Can Quit Properly in Windows XP](https://go.microsoft.com/fwlink/?LinkId=206819) (https://go.microsoft.com/fwlink/?LinkId=206819).
 
 **Renaming a Published Application Shortcut in the Guest Virtual Machine does not Change the Published Name in the Host**. When you publish an application by creating a shortcut and then rename the shortcut in the guest virtual machine, the original application name remains in the host **Start** menu. The program continues to run as expected, however the program will always retain the original name.
 

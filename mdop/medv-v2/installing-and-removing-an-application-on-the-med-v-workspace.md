@@ -42,7 +42,7 @@ You can use Group Policy and Group Policy objects to assign or publish applicati
 
 You can also use Group Policy and Group Policy objects in the same manner to remove applications from the MED-V workspace.
 
-For more information about how to add and remove applications by using Group Policy, see [Group Policy Software Installation](http://go.microsoft.com/fwlink/?LinkId=195931) (http://go.microsoft.com/fwlink/?LinkId=195931).
+For more information about how to add and remove applications by using Group Policy, see [Group Policy Software Installation](https://go.microsoft.com/fwlink/?LinkId=195931) (https://go.microsoft.com/fwlink/?LinkId=195931).
 
 ## <a href="" id="bkmk-esd"></a> Adding and Removing Applications by Using an ESD System
 
@@ -56,7 +56,7 @@ Microsoft Application Virtualization (App-V) provides the administrative capabil
 
 You can use MED-V together with App-V to add and remove virtual applications on a deployed MED-V workspace. To manage applications in this manner, you must first install the App-V agent on the MED-V guest operating system. You can then use App-V in the MED-V workspace to add and remove the virtual applications.
 
-For information about how to install and use App-V, see [Application Virtualization](http://go.microsoft.com/fwlink/?LinkId=122939) (http://go.microsoft.com/fwlink/?LinkId=122939).
+For information about how to install and use App-V, see [Application Virtualization](https://go.microsoft.com/fwlink/?LinkId=122939) (https://go.microsoft.com/fwlink/?LinkId=122939).
 
 **Important**  
 App-V applications that you publish to the MED-V workspace have file-type associations that cannot redirect from the host computer to the guest virtual machine. However, the end user can still access these file types by clicking **File**, and then by clicking **Open** on the published App-V application.

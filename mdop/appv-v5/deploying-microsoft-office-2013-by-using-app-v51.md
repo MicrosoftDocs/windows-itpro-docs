@@ -859,21 +859,21 @@ The following table describes the requirements and options for deploying Visio 2
 
 **Office 2013 App-V Packages Additional Resources**
 
-[Office Deployment Tool for Click-to-Run](http://go.microsoft.com/fwlink/p/?LinkID=330672)
+[Office Deployment Tool for Click-to-Run](https://go.microsoft.com/fwlink/p/?LinkID=330672)
 
-[Supported scenarios for deploying Microsoft Office as a sequenced App-V Package](http://go.microsoft.com/fwlink/p/?LinkId=330680)
+[Supported scenarios for deploying Microsoft Office as a sequenced App-V Package](https://go.microsoft.com/fwlink/p/?LinkId=330680)
 
 **Office 2010 App-V Packages**
 
-[Microsoft Office 2010 Sequencing Kit for Microsoft Application Virtualization 5.0](http://go.microsoft.com/fwlink/p/?LinkId=330681)
+[Microsoft Office 2010 Sequencing Kit for Microsoft Application Virtualization 5.0](https://go.microsoft.com/fwlink/p/?LinkId=330681)
 
-[Known issues when you create or use an App-V 5.0 Office 2010 package](http://go.microsoft.com/fwlink/p/?LinkId=330682)
+[Known issues when you create or use an App-V 5.0 Office 2010 package](https://go.microsoft.com/fwlink/p/?LinkId=330682)
 
-[How to sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](http://go.microsoft.com/fwlink/p/?LinkId=330676)
+[How to sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://go.microsoft.com/fwlink/p/?LinkId=330676)
 
 **Connection Groups**
 
-[Deploying Connection Groups in Microsoft App-V v5](http://go.microsoft.com/fwlink/p/?LinkId=330683)
+[Deploying Connection Groups in Microsoft App-V v5](https://go.microsoft.com/fwlink/p/?LinkId=330683)
 
 [Managing Connection Groups](managing-connection-groups51.md)
 

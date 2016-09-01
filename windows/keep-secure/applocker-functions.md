@@ -20,14 +20,14 @@ This topic for the IT professional lists the functions and security levels for t
 
 The following list includes the SRP functions beginning with Windows Server 2003 and AppLocker functions beginning with Windows Server 2008 R2 and links to current documentation on MSDN:
 
--   [SaferGetPolicyInformation Function](http://go.microsoft.com/fwlink/p/?LinkId=159781)
--   [SaferCreateLevel Function](http://go.microsoft.com/fwlink/p/?LinkId=159782)
--   [SaferCloseLevel Function](http://go.microsoft.com/fwlink/p/?LinkId=159783)
--   [SaferIdentifyLevel Function](http://go.microsoft.com/fwlink/p/?LinkId=159784)
--   [SaferComputeTokenFromLevel Function](http://go.microsoft.com/fwlink/p/?LinkId=159785)
--   [SaferGetLevelInformation Function](http://go.microsoft.com/fwlink/p/?LinkId=159787)
--   [SaferRecordEventLogEntry Function](http://go.microsoft.com/fwlink/p/?LinkId=159789)
--   [SaferiIsExecutableFileType Function](http://go.microsoft.com/fwlink/p/?LinkId=159790)
+-   [SaferGetPolicyInformation Function](https://go.microsoft.com/fwlink/p/?LinkId=159781)
+-   [SaferCreateLevel Function](https://go.microsoft.com/fwlink/p/?LinkId=159782)
+-   [SaferCloseLevel Function](https://go.microsoft.com/fwlink/p/?LinkId=159783)
+-   [SaferIdentifyLevel Function](https://go.microsoft.com/fwlink/p/?LinkId=159784)
+-   [SaferComputeTokenFromLevel Function](https://go.microsoft.com/fwlink/p/?LinkId=159785)
+-   [SaferGetLevelInformation Function](https://go.microsoft.com/fwlink/p/?LinkId=159787)
+-   [SaferRecordEventLogEntry Function](https://go.microsoft.com/fwlink/p/?LinkId=159789)
+-   [SaferiIsExecutableFileType Function](https://go.microsoft.com/fwlink/p/?LinkId=159790)
 
 ## Security level ID
 

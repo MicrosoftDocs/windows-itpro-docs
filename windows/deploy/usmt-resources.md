@@ -22,13 +22,13 @@ author: greg-lindsay
 
         For more information about how to use the schema with your XML authoring environment, see the environment’s documentation.
 
--   [Ask the Directory Services Team blog](http://go.microsoft.com/fwlink/p/?LinkId=226365)
+-   [Ask the Directory Services Team blog](https://go.microsoft.com/fwlink/p/?LinkId=226365)
 
 -   Forums:
 
-    -   [Microsoft Deployment Toolkit](http://go.microsoft.com/fwlink/p/?LinkId=226386)
+    -   [Microsoft Deployment Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=226386)
 
-    -   [Configuration Manager Operating System Deployment](http://go.microsoft.com/fwlink/p/?LinkId=226388)
+    -   [Configuration Manager Operating System Deployment](https://go.microsoft.com/fwlink/p/?LinkId=226388)
 
 ## Related topics
 
