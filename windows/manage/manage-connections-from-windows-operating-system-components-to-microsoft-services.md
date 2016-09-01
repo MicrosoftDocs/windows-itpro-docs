@@ -262,6 +262,9 @@ To turn off font streaming, create a REG\_DWORD registry setting called **Disabl
 
 The Windows Insider Preview program lets you help shape the future of Windows, be part of the community, and get early access to releases of Windows 10.
 
+> [!NOTE]  
+> This setting stops communication with the Windows Insider Preview service that checks for new builds. Windows Insider Preview builds only apply to Windows 10 and will not work with Windows Server 2016.
+
 To turn off Insider Preview builds for a released version of Windows 10:
 
 - Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds** &gt; **Toggle user control over Insider builds**.
