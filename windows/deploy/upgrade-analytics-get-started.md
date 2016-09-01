@@ -133,7 +133,7 @@ The Upgrade Analytics deployment script does the following:
 
 7.  If enabled, displays the script’s progress in a cmd window, providing you immediate visibility into issues (success or fail for each step) and/or writes to log file.
 
-8.  If enabled, collects Internet Explorer data. By default, Internet Explorer data collection is disabled. To enable this functionality, uncomment the section related to IEDataOptIn. The following registry values determine what Internet Explorer data can be collected:
+8.  If enabled, collects Internet Explorer data. By default, Internet Explorer data collection is disabled. To enable this functionality, locate the AllowIEData, which will be set to Disable. Delete Disable and replace AllowIEData with IEDataOptIn. Then set the value to determine what Internet Explorer data can be collected:
 
     0 – Internet Explorer data collection is disabled
 
