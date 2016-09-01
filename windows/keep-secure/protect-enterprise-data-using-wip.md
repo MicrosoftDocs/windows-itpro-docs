@@ -21,7 +21,7 @@ localizationpriority: high
 
 With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control. For example, when an employee sends the latest engineering pictures from their personal email account, copies and pastes product info into a tweet, or saves an in-progress sales report to their public cloud storage.
 
-Windows Information Protection (WIP) helps to protect against this potential data leakage without otherwise interfering with the employee experience. WIP also helps to protect enterprise apps and data against accidental data leak on enterprise-owned devices and personal devices that employees bring to work without requiring changes to your environment or other apps. Finally, another data protection technology, Azure Rights Management also works alongside WIP to extend data protection for data that leaves the device, such as when email attachments are sent from an enterprise aware version of a rights management mail client.
+Windows Information Protection (WIP), previously known as enterprise data protection (EDP), helps to protect against this potential data leakage without otherwise interfering with the employee experience. WIP also helps to protect enterprise apps and data against accidental data leak on enterprise-owned devices and personal devices that employees bring to work without requiring changes to your environment or other apps. Finally, another data protection technology, Azure Rights Management also works alongside WIP to extend data protection for data that leaves the device, such as when email attachments are sent from an enterprise aware version of a rights management mail client.
 
 ## Prerequisites
 You’ll need this software to run WIP in your enterprise:
@@ -65,7 +65,7 @@ WIP provides:
 
 - Use of audit reports for tracking issues and remedial actions.
 
-- Integration with your existing management system (Microsoft Intune, System Center Configuration Manager 2016, or your current mobile device management (MDM) system) to configure, deploy, and manage WIP for your company.
+- Integration with your existing management system (Microsoft Intune, System Center Configuration Manager, or your current mobile device management (MDM) system) to configure, deploy, and manage WIP for your company.
 
 ## Why use WIP?
 WIP gives you a new way to manage data policy enforcement for apps and documents, along with the ability to remove access to enterprise data from both enterprise and personal devices (after enrollment in an enterprise management solution, like Intune).
