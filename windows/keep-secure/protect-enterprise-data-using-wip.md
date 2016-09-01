@@ -82,7 +82,7 @@ WIP gives you a new way to manage data policy enforcement for apps and documents
     
         You don’t have to modify line-of-business apps that never touch personal data to list them as allowed apps; just include them in the allowed apps list.
 
-    -   **Deciding your level of data access.** WIP lets you block, allow overrides, or audit employees' data sharing actions. Blocking the action stops it immediately. Allowing overrides let the employee know there's a risk, but lets him or her continue to share the data while recording and auditing the action. Silent just logs the action without blocking anything that the employee could've overridden while using that setting; collecting info that can help you to see patterns of inappropriate sharing so you can take educative action or find apps that should be added to your allowed apps list.
+    -   **Deciding your level of data access.** WIP lets you block, allow overrides, or audit employees' data sharing actions. Blocking the action stops it immediately. Allowing overrides lets the employee know there's a risk, but lets him or her continue to share the data while recording and auditing the action. Silent just logs the action without blocking anything that the employee could've overridden while using that setting; collecting info that can help you to see patterns of inappropriate sharing so you can take educative action or find apps that should be added to your allowed apps list.
 
     -   **Data encryption at rest.** WIP helps protect enterprise data on local files and on removable media.
     
