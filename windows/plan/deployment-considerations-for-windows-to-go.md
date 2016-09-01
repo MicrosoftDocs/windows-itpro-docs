@@ -56,11 +56,11 @@ When a Windows To Go workspace is first used at the workplace, the Windows To Go
 When the Windows To Go workspace is going to be used first on an off-premises computer, such as one at the employee’s home, then the IT professional preparing the Windows To Go drives should configure the drive to be able to connect to organizational resources and to maintain the security of the workspace. In this situation, the Windows To Go workspace needs to be configured for offline domain join and BitLocker needs to be enabled before the workspace has been initialized.
 
 **Tip**  
-Applying BitLocker Drive Encryption to the drives before provisioning is a much faster process than encrypting the drives after data has already been stored on them due to a new feature called used-disk space only encryption. For more information, see [What's New in BitLocker](http://go.microsoft.com/fwlink/p/?LinkId=619076).
+Applying BitLocker Drive Encryption to the drives before provisioning is a much faster process than encrypting the drives after data has already been stored on them due to a new feature called used-disk space only encryption. For more information, see [What's New in BitLocker](https://go.microsoft.com/fwlink/p/?LinkId=619076).
 
  
 
-DirectAccess can be used to ensure that the user can login with their domain credentials without needing a local account. For instructions on setting up a DirectAccess solution, for a small pilot deployment see [Deploy a Single Remote Access Server using the Getting Started Wizard](http://go.microsoft.com/fwlink/p/?LinkId=619077) for a larger scale deployment, see [Deploy Remote Access in an Enterprise](http://go.microsoft.com/fwlink/p/?LinkId=619078). If you do not want to use DirectAccess as an alternative users could log on using a local user account on the Windows To Go workspace and then use a virtual private network for remote access to your organizational network.
+DirectAccess can be used to ensure that the user can login with their domain credentials without needing a local account. For instructions on setting up a DirectAccess solution, for a small pilot deployment see [Deploy a Single Remote Access Server using the Getting Started Wizard](https://go.microsoft.com/fwlink/p/?LinkId=619077) for a larger scale deployment, see [Deploy Remote Access in an Enterprise](https://go.microsoft.com/fwlink/p/?LinkId=619078). If you do not want to use DirectAccess as an alternative users could log on using a local user account on the Windows To Go workspace and then use a virtual private network for remote access to your organizational network.
 
 ### <a href="" id="wtg-imagedep"></a>Image deployment and drive provisioning considerations
 
@@ -155,28 +155,28 @@ The following list of commonly used Wi-Fi network adapters that are not supporte
 <td align="left"><p>Marvell</p></td>
 <td align="left"><p>Yukon 88E8001/8003/8010 PCI Gigabit Ethernet</p></td>
 <td align="left"><p>pci\ven_11ab&amp;dev_4320&amp;subsys_811a1043</p></td>
-<td align="left"><p>[32-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619080)</p>
-<p>[64-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619082)</p></td>
+<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619080)</p>
+<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619082)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Marvell</p></td>
 <td align="left"><p>Libertas 802.11b/g Wireless</p></td>
 <td align="left"><p>pci\ven_11ab&amp;dev_1faa&amp;subsys_6b001385&amp;rev_03</p></td>
-<td align="left"><p>[32-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619128)</p>
-<p>[64-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619129)</p></td>
+<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619128)</p>
+<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619129)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Qualcomm</p></td>
 <td align="left"><p>Atheros AR6004 Wireless LAN Adapter</p></td>
 <td align="left"><p>sd\vid_0271&amp;pid_0401</p></td>
-<td align="left"><p>[32-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619086)</p>
+<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619086)</p>
 <p>64-bit driver not available</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Qualcomm</p></td>
 <td align="left"><p>Atheros AR5BWB222 Wireless Network Adapter</p></td>
 <td align="left"><p>pci\ven_168c&amp;dev_0034&amp;subsys_20031a56</p></td>
-<td align="left"><p>[32-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619348)</p>
+<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619348)</p>
 <p>64-bit driver not available</p></td>
 </tr>
 <tr class="odd">
@@ -189,43 +189,43 @@ The following list of commonly used Wi-Fi network adapters that are not supporte
 <td align="left"><p>Qualcomm</p></td>
 <td align="left"><p>Atheros AR5005G Wireless Network Adapter</p></td>
 <td align="left"><p>pci\ven_168c&amp;dev_001a&amp;subsys_04181468&amp;rev_01</p></td>
-<td align="left"><p>[32-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619349)</p>
-<p>[64-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619091)</p></td>
+<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619349)</p>
+<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619091)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Ralink</p></td>
 <td align="left"><p>Wireless-G PCI Adapter</p></td>
 <td align="left"><p>pci\ven_1814&amp;dev_0301&amp;subsys_00551737&amp;rev_00</p></td>
-<td align="left"><p>[32-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619092)</p>
-<p>[64-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619093)</p></td>
+<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619092)</p>
+<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619093)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Ralink</p></td>
 <td align="left"><p>Turbo Wireless LAN Card</p></td>
 <td align="left"><p>pci\ven_1814&amp;dev_0301&amp;subsys_25611814&amp;rev_00</p></td>
-<td align="left"><p>[32-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619094)</p>
-<p>[64-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619095)</p></td>
+<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619094)</p>
+<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619095)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Ralink</p></td>
 <td align="left"><p>Wireless LAN Card V1</p></td>
 <td align="left"><p>pci\ven_1814&amp;dev_0302&amp;subsys_3a711186&amp;rev_00</p></td>
-<td align="left"><p>[32-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619097)</p>
-<p>[64-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619098)</p></td>
+<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619097)</p>
+<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619098)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Ralink</p></td>
 <td align="left"><p>D-Link AirPlus G DWL-G510 Wireless PCI Adapter(rev.C)</p></td>
 <td align="left"><p>pci\ven_1814&amp;dev_0302&amp;subsys_3c091186&amp;rev_00</p></td>
-<td align="left"><p>[32-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619099)</p>
-<p>[64-bit driver](http://go.microsoft.com/fwlink/p/?LinkId=619100)</p></td>
+<td align="left"><p>[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619099)</p>
+<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619100)</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-IT administrators that want to target Windows To Go images for specific systems should test their images to ensure that the necessary system drivers are in the image, especially for critical functionality like Wi-Fi that is not supported by class drivers. Some consumer devices require OEM specific driver packages, which may not be available on Windows Update. For more information on how to add a driver to a Windows Image, please refer to the [Basic Windows Deployment Step-by-Step Guide](http://go.microsoft.com/fwlink/p/?LinkId=619079).
+IT administrators that want to target Windows To Go images for specific systems should test their images to ensure that the necessary system drivers are in the image, especially for critical functionality like Wi-Fi that is not supported by class drivers. Some consumer devices require OEM specific driver packages, which may not be available on Windows Update. For more information on how to add a driver to a Windows Image, please refer to the [Basic Windows Deployment Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?LinkId=619079).
 
 ### <a href="" id="wtg-appinstall"></a>Application installation and domain join
 
@@ -273,7 +273,7 @@ Enabling a system to always boot from USB first has implications that you should
 
  
 
-If you are going to be using a Windows 7 computer as a host-PC, see the wiki article [Tips for configuring your BIOS settings to work with Windows To Go](http://go.microsoft.com/fwlink/p/?LinkID=618951).
+If you are going to be using a Windows 7 computer as a host-PC, see the wiki article [Tips for configuring your BIOS settings to work with Windows To Go](https://go.microsoft.com/fwlink/p/?LinkID=618951).
 
 ### <a href="" id="stg-firmware"></a>Roaming between different firmware types
 

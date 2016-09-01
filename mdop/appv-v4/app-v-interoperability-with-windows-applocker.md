@@ -16,7 +16,7 @@ ms.prod: w8
 Version 4.5 SP1 of the Microsoft Application Virtualization (App-V) client supports the AppLocker feature of Windows 7. The AppLocker feature enables IT administrators to specify which applications are restricted from running on computers. This document describes how to configure the AppLocker rules to work with the App-V virtual environment and virtualized applications.
 
 **Note**  
-Windows AppLocker must first be enabled before configuring Windows AppLocker rules for virtual applications. For more information about enabling Windows AppLocker, [Windows AppLocker](http://go.microsoft.com/fwlink/?LinkId=156732) (http://go.microsoft.com/fwlink/?LinkId=156732).
+Windows AppLocker must first be enabled before configuring Windows AppLocker rules for virtual applications. For more information about enabling Windows AppLocker, [Windows AppLocker](https://go.microsoft.com/fwlink/?LinkId=156732) (https://go.microsoft.com/fwlink/?LinkId=156732).
 
  
 

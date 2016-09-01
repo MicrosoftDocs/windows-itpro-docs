@@ -26,7 +26,7 @@ Windows Internet Explorer 8 introduced document modes as a way to move from the
 This means that while Internet Explorer 11 will continue to support document modes, Microsoft Edge won’t. And because of that, it also means that if you want to use Microsoft Edge, you’re going to have to update your legacy webpages and apps to support modern features, browsers, and devices.
 
 **Note**<br>
-For specific details about the technologies and APIs that are no longer supported in Microsoft Edge, see [A break from the past, part 2: Saying goodbye to ActiveX, VBScript, attachEvent](http://go.microsoft.com/fwlink/p/?LinkId=615953).
+For specific details about the technologies and APIs that are no longer supported in Microsoft Edge, see [A break from the past, part 2: Saying goodbye to ActiveX, VBScript, attachEvent](https://go.microsoft.com/fwlink/p/?LinkId=615953).
 
 ## What is document mode?
 Each release after Internet Explorer 8 has helped with the transition by introducing additional document modes that emulated previously supported versions, while also introducing support for features defined by industry standards. During this time, numerous websites and apps were updated to the latest and greatest industry standards, while many other sites and apps continued to simply rely on document modes to work properly.

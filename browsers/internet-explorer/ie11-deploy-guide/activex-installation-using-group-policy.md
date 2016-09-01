@@ -35,7 +35,7 @@ You use the ActiveX Installer Service (AXIS) and Group Policy to manage your Act
 
 -   **ActiveX installation policy for sites in trusted zones.** Identifies how AXIS should behave when a website tries to install an ActiveX control. First, AXIS looks to see if the site appears in either the list of approved installation sites or in the **Trusted sites** zone. If the does, then AXIS checks to make sure the control meets your company's policy requirements. If the ActiveX control meets all of these requirements, the control is installed.
 
-For more information about the ActiveX Installer Service, see [Administering the ActiveX Installer Service in Windows 7](http://go.microsoft.com/fwlink/p/?LinkId=214503).
+For more information about the ActiveX Installer Service, see [Administering the ActiveX Installer Service in Windows 7](https://go.microsoft.com/fwlink/p/?LinkId=214503).
 
  
 

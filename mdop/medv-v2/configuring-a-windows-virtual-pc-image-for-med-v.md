@@ -29,7 +29,7 @@ Follow these steps to configure your MED-V image for running first time setup:
 
 1.  As part of preparing your image for use with MED-V, you can configure various settings on the virtual machine, such as specifying the settings for running Windows Update. Specify all the necessary virtual machine settings before you create the MED-V workspace package.
 
-2.  Before you create the MED-V workspace package, we recommend that you disable restore points on the virtual machine to prevent the differencing disk from growing unbounded. For more information, see [How to turn off and turn on System Restore in Windows XP](http://go.microsoft.com/fwlink/?LinkId=195927) (http://go.microsoft.com/fwlink/?LinkId=195927).
+2.  Before you create the MED-V workspace package, we recommend that you disable restore points on the virtual machine to prevent the differencing disk from growing unbounded. For more information, see [How to turn off and turn on System Restore in Windows XP](https://go.microsoft.com/fwlink/?LinkId=195927) (https://go.microsoft.com/fwlink/?LinkId=195927).
 
     **Note**  
     You can set up your Sysprep.inf file to disable restore points when first time setup is run. For an example of setting this GuiRunOnce key, see the sample Sysprep.inf file later in this section.
@@ -58,7 +58,7 @@ After you have completed customization of your MED-V image, you are ready to sea
 2.  In a MED-V environment, you can use Sysprep to assign unique security IDs (SID) and other settings to each MED-V workspace the first time that they are started.
 
     **Note**  
-    For more information about how to use Sysprep, see [Sysprep Technical Reference](http://go.microsoft.com/fwlink/?LinkId=195930) (http://go.microsoft.com/fwlink/?LinkId=195930).
+    For more information about how to use Sysprep, see [Sysprep Technical Reference](https://go.microsoft.com/fwlink/?LinkId=195930) (https://go.microsoft.com/fwlink/?LinkId=195930).
 
      
 
@@ -81,13 +81,13 @@ After you have completed customization of your MED-V image, you are ready to sea
 
     1.  Create a folder named *Sysprep* in the root of the MED-V image system drive.
 
-    2.  Download the deploy.cab file. For more information, see [Windows XP Service Pack 3 Deployment Tools](http://go.microsoft.com/fwlink/?LinkId=195928) From the Microsoft Download Center (http://go.microsoft.com/fwlink/?LinkId=195928).
+    2.  Download the deploy.cab file. For more information, see [Windows XP Service Pack 3 Deployment Tools](https://go.microsoft.com/fwlink/?LinkId=195928) From the Microsoft Download Center (https://go.microsoft.com/fwlink/?LinkId=195928).
 
     3.  From the deploy.cab file, copy or extract the Setupmgr.exe, Sysprep.exe, and Setupcl.exe files to the Sysprep folder.
 
     4.  In the Sysprep folder, run **Setup Manager** (Setupmgr.exe) to create a Sysprep.inf answer file.
 
-        Or, you can create this file manually or use your company’s existing file. For more information, see [How to use the Sysprep tool to automate successful deployment of Windows XP](http://go.microsoft.com/fwlink/?LinkId=195929) (http://go.microsoft.com/fwlink/?LinkId=195929).
+        Or, you can create this file manually or use your company’s existing file. For more information, see [How to use the Sysprep tool to automate successful deployment of Windows XP](https://go.microsoft.com/fwlink/?LinkId=195929) (https://go.microsoft.com/fwlink/?LinkId=195929).
 
     5.  Follow the **Setup Manager** wizard.
 

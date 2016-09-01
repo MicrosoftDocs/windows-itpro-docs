@@ -69,7 +69,7 @@ You can sideload apps on managed or unmanaged devices.
 
     -OR-
 
-    You can use a runtime provisioning package to import a security certificate. For information about applying a provisioning package to a Windows 10 device, see runtime instructions on [Build and apply a provisioning package]( http://go.microsoft.com/fwlink/p/?LinkId=619162).
+    You can use a runtime provisioning package to import a security certificate. For information about applying a provisioning package to a Windows 10 device, see runtime instructions on [Build and apply a provisioning package]( https://go.microsoft.com/fwlink/p/?LinkId=619162).
 
 **To install the app**
 -   From the folder with the appx package, run the PowerShell `Add-AppxPackage` command to install the appx package.
@@ -99,7 +99,7 @@ You can sideload apps on managed or unmanaged devices.
 
 **To import the security certificate for unmanaged devices**
 
--   You can use a runtime provisioning package to import a security certificate. For information about applying a provisioning package to a Windows 10 mobile device, see runtime instructions on [Build and apply a provisioning package]( http://go.microsoft.com/fwlink/p/?LinkId=619164).
+-   You can use a runtime provisioning package to import a security certificate. For information about applying a provisioning package to a Windows 10 mobile device, see runtime instructions on [Build and apply a provisioning package]( https://go.microsoft.com/fwlink/p/?LinkId=619164).
 
 **To install the app**
 

@@ -27,13 +27,13 @@ To locate the required existing public assemblies, open the directory where the 
 
 Use any of the following links to download and install the correct version of the required prerequisites:
 
--   [Microsoft Visual C++ 2005 Redistributable Package (x64)](http://go.microsoft.com/fwlink/?LinkId=152697)
+-   [Microsoft Visual C++ 2005 Redistributable Package (x64)](https://go.microsoft.com/fwlink/?LinkId=152697)
 
--   [Microsoft Visual C++ 2005 SP1 Redistributable Package (x64)](http://go.microsoft.com/fwlink/?LinkId=152698)
+-   [Microsoft Visual C++ 2005 SP1 Redistributable Package (x64)](https://go.microsoft.com/fwlink/?LinkId=152698)
 
--   [Microsoft Visual C++ 2008 Redistributable Package (x64)](http://go.microsoft.com/fwlink/?LinkId=152699)
+-   [Microsoft Visual C++ 2008 Redistributable Package (x64)](https://go.microsoft.com/fwlink/?LinkId=152699)
 
--   [Microsoft Visual C++ 2008 SP1 Redistributable Package (x64)](http://go.microsoft.com/fwlink/?LinkId=152700)
+-   [Microsoft Visual C++ 2008 SP1 Redistributable Package (x64)](https://go.microsoft.com/fwlink/?LinkId=152700)
 
  
 

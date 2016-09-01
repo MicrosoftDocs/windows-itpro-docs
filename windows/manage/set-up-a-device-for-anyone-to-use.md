@@ -20,7 +20,7 @@ localizationpriority: high
 
 **Looking for Windows Embedded 8.1 Industry information?**
 
--   [Assigned Access]( http://go.microsoft.com/fwlink/p/?LinkId=613653)
+-   [Assigned Access]( https://go.microsoft.com/fwlink/p/?LinkId=613653)
 
 You can configure a device running Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile, or Windows 10 Mobile Enterprise as a kiosk device, so that users can only interact with a single application that you select.
 

@@ -34,9 +34,9 @@ To create a Virtual PC image using Microsoft Virtual PC, refer to the Virtual PC
 
 For more information, see the following:
 
--   [Windows Virtual PC Help](http://go.microsoft.com/fwlink/?LinkId=182378)
+-   [Windows Virtual PC Help](https://go.microsoft.com/fwlink/?LinkId=182378)
 
--   [Create a virtual machine and install a guest operating system](http://go.microsoft.com/fwlink/?LinkId=182379)
+-   [Create a virtual machine and install a guest operating system](https://go.microsoft.com/fwlink/?LinkId=182379)
 
 ## <a href="" id="bkmk-howtoinstallthemedvworkspacemsipackage"></a>How to Install the MED-V Workspace .msi Package
 
@@ -203,9 +203,9 @@ Sysprep is Microsoft's system preparation utility for the Windows operating syst
 
 2.  From the Windows installation CD, extract *deploy.cab* to the root of the system drive, or download the latest Deployment Tools update from the Microsoft Web site.
 
-    -   For Windows 2000, see [Deployment Tools update for Windows 2000](http://go.microsoft.com/fwlink/?LinkId=143001).
+    -   For Windows 2000, see [Deployment Tools update for Windows 2000](https://go.microsoft.com/fwlink/?LinkId=143001).
 
-    -   For Windows XP, see [Deployment Tools update for Windows XP](http://go.microsoft.com/fwlink/?LinkId=143000).
+    -   For Windows XP, see [Deployment Tools update for Windows XP](https://go.microsoft.com/fwlink/?LinkId=143000).
 
 3.  Run **Setup Manager** (setupmgr.exe).
 

@@ -13,12 +13,12 @@ ms.prod: w7
 # Getting Started with DaRT 7.0
 
 
-DaRT requires thorough planning before you deploy it or use its features. If you are new to this product, we recommend that you read the documentation carefully. Before you deploy the product to a production environment, we also recommend that you validate your deployment plan in a test network environment. You might also consider taking a class about relevant technologies. For more information about Microsoft training opportunities, see the Microsoft Training Overview at [http://go.microsoft.com/fwlink/p/?LinkId=80347](http://go.microsoft.com/fwlink/?LinkId=80347).
+DaRT requires thorough planning before you deploy it or use its features. If you are new to this product, we recommend that you read the documentation carefully. Before you deploy the product to a production environment, we also recommend that you validate your deployment plan in a test network environment. You might also consider taking a class about relevant technologies. For more information about Microsoft training opportunities, see the Microsoft Training Overview at [https://go.microsoft.com/fwlink/p/?LinkId=80347](https://go.microsoft.com/fwlink/?LinkId=80347).
 
 This section provides general information for administrators who are evaluating and using Microsoft Diagnostics and Recovery Toolset (DaRT) 7.
 
 **Note**  
-A downloadable version of this document and the DaRT 7 Evaluation Guide can be downloaded from <http://go.microsoft.com/fwlink/?LinkId=232274>.
+A downloadable version of this document and the DaRT 7 Evaluation Guide can be downloaded from <https://go.microsoft.com/fwlink/?LinkId=232274>.
 
  
 

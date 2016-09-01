@@ -43,7 +43,7 @@ You can use the MED-V Workspace Packager to manage URL redirection in the MED-V 
 
      
 
-4.  Click **Save as…** to save the updated URL redirection files in the specified folder. MED-V creates a registry file that contains the updated URL redirection information. Deploy the updated registry key by using Group Policy. For more information about how to use Group Policy, see [Group Policy Software Installation](http://go.microsoft.com/fwlink/?LinkId=195931) (http://go.microsoft.com/fwlink/?LinkId=195931).
+4.  Click **Save as…** to save the updated URL redirection files in the specified folder. MED-V creates a registry file that contains the updated URL redirection information. Deploy the updated registry key by using Group Policy. For more information about how to use Group Policy, see [Group Policy Software Installation](https://go.microsoft.com/fwlink/?LinkId=195931) (https://go.microsoft.com/fwlink/?LinkId=195931).
 
     MED-V also creates a Windows PowerShell script in the specified folder that you can use to re-create the updated MED-V workspace package.
 

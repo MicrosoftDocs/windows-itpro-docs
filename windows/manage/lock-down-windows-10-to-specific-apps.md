@@ -108,7 +108,7 @@ In addition to specifying the apps that users can run, you should also restrict 
 
      
 
-To learn more about locking down features, see [Customizations for Windows 10 Enterprise](http://go.microsoft.com/fwlink/p/?LinkId=691442).
+To learn more about locking down features, see [Customizations for Windows 10 Enterprise](https://go.microsoft.com/fwlink/p/?LinkId=691442).
 
 ## Customize Start screen layout for the device
 

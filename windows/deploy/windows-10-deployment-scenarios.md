@@ -59,7 +59,7 @@ There are two primary dynamic provisioning scenarios:
 
 -   **Azure Active Directory (Azure AD) Join with automatic mobile device management (MDM) enrollment.** In this scenario, the organization member just needs to provide their work or school user ID and password; the device can then be automatically joined to Azure Active Directory and enrolled in a mobile device management (MDM) solution with no additional user interaction. Once done, the MDM solution can finish configuring the device as needed.
 
--   **Provisioning package configuration.** Using the [Windows Imaging and Configuration Designer (ICD)](http://go.microsoft.com/fwlink/p/?LinkId=619358), IT administrators can create a self-contained package that contains all of the configuration, settings, and apps that need to be applied to a machine. These packages can then be deployed to new PCs through a variety of means, typically by IT professionals. For more information, see [Configure devices without MDM](../manage/configure-devices-without-mdm.md).
+-   **Provisioning package configuration.** Using the [Windows Imaging and Configuration Designer (ICD)](https://go.microsoft.com/fwlink/p/?LinkId=619358), IT administrators can create a self-contained package that contains all of the configuration, settings, and apps that need to be applied to a machine. These packages can then be deployed to new PCs through a variety of means, typically by IT professionals. For more information, see [Configure devices without MDM](../manage/configure-devices-without-mdm.md).
 
 Either way, these scenarios can be used to enable “choose your own device” (CYOD) programs where the organization’s users can pick their own PC and not be restricted to a small list of approved or certified models (programs that are difficult to implement using traditional deployment scenarios).
 
@@ -126,8 +126,8 @@ The deployment process for the replace scenario is as follows:
 ## Related topics
 - [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
 - [Upgrade to Windows 10 with System Center Configuration Manager](upgrade-to-windows-10-with-system-center-configuraton-manager.md)
-- [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=620230)
+- [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=620230)
 - [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
-- [Windows setup technical reference](http://go.microsoft.com/fwlink/p/?LinkId=619357)
-- [Windows Imaging and Configuration Designer](http://go.microsoft.com/fwlink/p/?LinkId=619358)
-- [UEFI firmware](http://go.microsoft.com/fwlink/p/?LinkId=619359)
+- [Windows setup technical reference](https://go.microsoft.com/fwlink/p/?LinkId=619357)
+- [Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=619358)
+- [UEFI firmware](https://go.microsoft.com/fwlink/p/?LinkId=619359)

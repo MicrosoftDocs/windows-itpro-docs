@@ -34,8 +34,8 @@ If you delete a site by mistake, you’ll need to manually add it back using the
 -   [Add sites to the Enterprise Mode site list using the Enterprise Mode Site List Manager (schema v.1)](add-single-sites-to-enterprise-mode-site-list-using-the-version-1-enterprise-mode-tool.md)
 
 ## Related topics
-- [Download the Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853)
-- [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
  
 

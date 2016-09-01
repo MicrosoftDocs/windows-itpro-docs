@@ -47,7 +47,7 @@ The traditional approach for supporting apps has been to release a new app versi
 
 In the Windows as a service model, Microsoft is making a commitment to maintaining the compatibility of the underlying OS. This means Microsoft will make a concerted effort to ensure that there are no breaking changes that impact the app ecosystem negatively. In this scenario, when there is a release of a Windows build, most apps (those with no kernel dependencies) will continue to work.
 
-In view of this change, Microsoft recommends that our ISV partners decouple their app release and support from specific Windows builds. Our mutual customers are better served by an application lifecycle approach. This means when an application version is released it will be supported for a certain period of time irrespective of however many Windows builds are released in the interim. The ISV makes a commitment to provide support for that specific version of the app as long as it is supported in the lifecycle. Microsoft follows a similar lifecycle approach for Windows that can be referenced [here](http://go.microsoft.com/fwlink/?LinkID=780549).
+In view of this change, Microsoft recommends that our ISV partners decouple their app release and support from specific Windows builds. Our mutual customers are better served by an application lifecycle approach. This means when an application version is released it will be supported for a certain period of time irrespective of however many Windows builds are released in the interim. The ISV makes a commitment to provide support for that specific version of the app as long as it is supported in the lifecycle. Microsoft follows a similar lifecycle approach for Windows that can be referenced [here](https://go.microsoft.com/fwlink/?LinkID=780549).
 
 This approach will reduce the burden of maintaining an app schedule that aligns with Windows releases. ISV partners should be free to release features or updates at their own cadence. We feel that our partners can keep their customer base updated with the latest app updates independent of a Windows release. In addition, our customers do not have to seek an explicit support statement whenever a Windows build is released. Here is an example of a support statement that covers how an app may be supported across different versions of the OS:
 
@@ -89,7 +89,7 @@ Some apps perform a version check and simply pass a warning to users. However, t
 -   If the app is dependent on specific API functionality, ensure you target the correct API version.
 -   Ensure you detect the change via APISet or another public API, and do not use the version as a proxy for some feature or fix. If there are breaking changes and a proper check is not exposed, then that is a bug.
 -   Ensure the app does NOT check for version in odd ways, such as via the registry, file versions, offsets, kernel mode, drivers, or other means. If the app absolutely needs to check the version, use the GetVersion APIs, which should return the major, minor, and build number.
--   If you are using the [GetVersion](http://go.microsoft.com/fwlink/?LinkID=780555) API, remember that the behavior of this API has changed since Windows 8.1.
+-   If you are using the [GetVersion](https://go.microsoft.com/fwlink/?LinkID=780555) API, remember that the behavior of this API has changed since Windows 8.1.
 
 If you own apps such as antimalware or firewall apps, you should work through your usual feedback channels and via the Windows Insider program.
 
@@ -99,9 +99,9 @@ Your apps should not call undocumented Windows APIs, or take dependency on speci
 
 ### Develop Universal Windows Platform (UWP) and Centennial apps
 
-We encourage all Win32 app ISVs to develop [Universal Windows Platform (UWP)](http://go.microsoft.com/fwlink/?LinkID=780560) and, specifically, [Centennial](http://go.microsoft.com/fwlink/?LinkID=780562) apps moving forward. There are great benefits to developing these app packages rather than using traditional Win32 installers. UWP apps are also supported in the [Windows Store](http://go.microsoft.com/fwlink/?LinkID=780563), so it’s easier for you to update your users to a consistent version automatically, lowering your support costs.
+We encourage all Win32 app ISVs to develop [Universal Windows Platform (UWP)](https://go.microsoft.com/fwlink/?LinkID=780560) and, specifically, [Centennial](https://go.microsoft.com/fwlink/?LinkID=780562) apps moving forward. There are great benefits to developing these app packages rather than using traditional Win32 installers. UWP apps are also supported in the [Windows Store](https://go.microsoft.com/fwlink/?LinkID=780563), so it’s easier for you to update your users to a consistent version automatically, lowering your support costs.
 
-If your Win32 app types do not work with the Centennial model, we highly recommend that you use the right installer and ensure this is fully tested. An installer is your user or customer’s first experience with your app, so ensure that this works well. All too often, this doesn’t work well or it hasn’t been fully tested for all scenarios. The [Windows App Certification Kit](http://go.microsoft.com/fwlink/?LinkID=780565) can help you test the install and uninstall of your Win32 app and help you identify use of undocumented APIs, as well as other basic performance-related best-practice issues, before your users do.
+If your Win32 app types do not work with the Centennial model, we highly recommend that you use the right installer and ensure this is fully tested. An installer is your user or customer’s first experience with your app, so ensure that this works well. All too often, this doesn’t work well or it hasn’t been fully tested for all scenarios. The [Windows App Certification Kit](https://go.microsoft.com/fwlink/?LinkID=780565) can help you test the install and uninstall of your Win32 app and help you identify use of undocumented APIs, as well as other basic performance-related best-practice issues, before your users do.
 
 **Best practices:**
 -   Use installers that work for both 32-bit and 64-bit versions of Windows.
@@ -116,7 +116,7 @@ Windows OS flighting refers to the interim builds available to Windows Insiders 
 If your app is in the Store, you can flight your app via the Store, which means that your app will be available for our Windows Insider population to install. Users can install your app and you can receive preliminary feedback on your app before you release it to the general population. The follow sections outline the steps for testing your apps against Windows flighted builds.
 
 ### Step 1: Become a Windows Insider and participate in flighting
-As a [Windows Insider,](http://go.microsoft.com/fwlink/p/?LinkId=521639) you can help shape the future of Windows—your feedback will help us improve features and functionality in the platform. This is a vibrant community where you can connect with other enthusiasts, join forums, trade advice, and learn about upcoming Insider-only events.
+As a [Windows Insider,](https://go.microsoft.com/fwlink/p/?LinkId=521639) you can help shape the future of Windows—your feedback will help us improve features and functionality in the platform. This is a vibrant community where you can connect with other enthusiasts, join forums, trade advice, and learn about upcoming Insider-only events.
 
 Since you’ll have access to preview builds of Windows 10, Windows 10 Mobile, and the latest Windows SDK and Emulator, you’ll have all the tools at your disposal to develop great apps and explore what's new in the Universal Windows Platform and the Windows Store.
 
@@ -157,7 +157,7 @@ If after investigation, the former is the case, be sure to use the Windows Insid
 Let us know how your app is performing against flighted builds. As you discover issues with your app during testing, please log bugs via the partner portal if you have access, or through your Microsoft representative. We encourage this information so that we can build a quality experience for our users together.
 
 ### Step 4: Register on Windows 10
-The [Ready for Windows 10](http://go.microsoft.com/fwlink/?LinkID=780580) website is a directory of software that supports Windows 10. It’s intended for IT administrators at companies and organizations worldwide that are considering Windows 10 for their deployments. IT administrators can check the site to see whether software deployed in their enterprise is supported in Windows 10.
+The [Ready for Windows 10](https://go.microsoft.com/fwlink/?LinkID=780580) website is a directory of software that supports Windows 10. It’s intended for IT administrators at companies and organizations worldwide that are considering Windows 10 for their deployments. IT administrators can check the site to see whether software deployed in their enterprise is supported in Windows 10.
 
 ## Related topics
 [Windows 10 servicing options for updates and upgrades](introduction-to-windows-10-servicing.md)

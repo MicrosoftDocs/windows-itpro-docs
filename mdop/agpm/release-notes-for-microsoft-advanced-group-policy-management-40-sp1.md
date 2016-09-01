@@ -60,7 +60,7 @@ WORKAROUND: Manually start the AGPM Service after the domain controller is onlin
 
 ### Upgrade of AGPM Server to AGPM 4.0 SP1 is blocked when you upgrade from the AGPM 4.0 release plus the hotfix
 
-If you try to upgrade the AGPM server to AGPM 4.0. SP1 after installing AGPM 4.0 and then installing the AGPM hotfix (see Knowledge Base article [2643502](http://go.microsoft.com/fwlink/?LinkId=254474)), the upgrade fails and cannot be completed.
+If you try to upgrade the AGPM server to AGPM 4.0. SP1 after installing AGPM 4.0 and then installing the AGPM hotfix (see Knowledge Base article [2643502](https://go.microsoft.com/fwlink/?LinkId=254474)), the upgrade fails and cannot be completed.
 
 WORKAROUND: Uninstall the AGPM 4.0 Server and then install AGPM 4.0 SP1.
 

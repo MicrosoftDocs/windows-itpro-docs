@@ -143,7 +143,11 @@ The following table lists the Group Policy settings that you can configure for H
 
 ## MDM policy settings for Windows Hello for Business
 
-The following table lists the MDM policy settings that you can configure for Windows Hello for Business use in your workplace. These MDM policy settings use the [PassportForWork configuration service provider (CSP)](http://go.microsoft.com/fwlink/p/?LinkId=692070).
+The following table lists the MDM policy settings that you can configure for Windows Hello for Business use in your workplace. These MDM policy settings use the [PassportForWork configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkId=692070).
+
+>[!IMPORTANT]
+>Starting in Windows 10, version 1607, all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP. 
+
 <table>
 <tr>
 <th colspan="2">Policy</th>
@@ -319,7 +323,7 @@ You’ll need this software to set Windows Hello for Business policies in your e
 </ul></td>
 <td align="left"><ul>
 <li>Azure AD subscription</li>
-<li>[Azure AD Connect](http://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
+<li>[Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
 <li>A few Windows Server 2016 domain controllers on-site</li>
 <li>A management solution, such as Configuration Manager, Group Policy, or MDM</li>
 <li>Active Directory Certificate Services (AD CS) without Network Device Enrollment Service (NDES)</li>
@@ -340,7 +344,7 @@ You’ll need this software to set Windows Hello for Business policies in your e
 </ul></td>
 <td align="left"><ul>
 <li>Azure AD subscription</li>
-<li>[Azure AD Connect](http://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
+<li>[Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
 <li>AD CS with NDES</li>
 <li>Configuration Manager for domain-joined certificate enrollment, or InTune for non-domain-joined devices, or a non-Microsoft MDM service that supports Passport for Work</li>
 </ul></td>
@@ -357,7 +361,7 @@ Azure AD provides the ability to register devices with your enterprise and to pr
 
 Windows Hello can be managed on personal devices that your employees use for work purposes using MDM. On personal devices, users can create a personal Windows Hello PIN for unlocking the device and used this PIN for access to work resources.
 
-The PIN is managed using the same Windows Hello for Business policies that you can use to manage Windows Hello for Business on organization-owned devices. The PIN can also be managed using DeviceLock policy. DeviceLock policy can be used to control length, complexity, history, and expiration requirements and can be configured using the [Policy configuration service provider](http://go.microsoft.com/fwlink/p/?LinkID=623244).
+The PIN is managed using the same Windows Hello for Business policies that you can use to manage Windows Hello for Business on organization-owned devices. The PIN can also be managed using DeviceLock policy. DeviceLock policy can be used to control length, complexity, history, and expiration requirements and can be configured using the [Policy configuration service provider](https://go.microsoft.com/fwlink/p/?LinkID=623244).
 
 ## Related topics
 

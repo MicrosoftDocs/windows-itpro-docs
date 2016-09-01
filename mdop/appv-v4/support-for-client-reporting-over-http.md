@@ -15,7 +15,7 @@ ms.prod: w8
 
 Version 4.6 of the App-V client now supports the use of HTTP communication when sending client reporting data to the publishing server. This feature supports scenarios where a customer has implemented a custom HTTP(S) publishing server that is configured to collect and process client data.
 
-For more information on HTTP publishing servers, see <http://go.microsoft.com/fwlink/?LinkId=157426>
+For more information on HTTP publishing servers, see <https://go.microsoft.com/fwlink/?LinkId=157426>
 
 ## Client Reporting over HTTP
 

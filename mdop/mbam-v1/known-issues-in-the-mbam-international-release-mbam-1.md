@@ -32,7 +32,7 @@ If you are using a certificate for authentication between MBAM servers, after up
 
 ### MBAM Svclog File Filling Disk Space
 
-If you have followed Knowledge Base article 2668170, [http://support.microsoft.com/kb/2668170](http://go.microsoft.com/fwlink/?LinkID=247277), you might have to repeat the KB steps after you install this update.
+If you have followed Knowledge Base article 2668170, [http://support.microsoft.com/kb/2668170](https://go.microsoft.com/fwlink/?LinkID=247277), you might have to repeat the KB steps after you install this update.
 
 **Workaround**: None.
 

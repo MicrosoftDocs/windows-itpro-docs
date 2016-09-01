@@ -16,7 +16,7 @@ This topic will show you how to integrate Microsoft System Center 2012 R2 Orches
 MDT can integrate with System Center 2012 R2 Orchestrator, which is a component that ties the Microsoft System Center products together, as well as other products from both Microsoft and third-party vendors. The difference between using Orchestrator and "normal" web services, is that with Orchestrator you have a rich drag-and-drop style interface when building the solution, and little or no coding is required.
 
 **Note**  
-If you are licensed to use Orchestrator, we highly recommend that you start using it. To find out more about licensing options for System Center 2012 R2 and Orchestrator, visit the [System Center 2012 R2](http://go.microsoft.com/fwlink/p/?LinkId=619553) website.
+If you are licensed to use Orchestrator, we highly recommend that you start using it. To find out more about licensing options for System Center 2012 R2 and Orchestrator, visit the [System Center 2012 R2](https://go.microsoft.com/fwlink/p/?LinkId=619553) website.
  
 ## <a href="" id="sec01"></a>Orchestrator terminology
 
@@ -30,7 +30,7 @@ Before diving into the core details, here is a quick course in Orchestrator term
 -   **Integration packs.** These provide additional workflow activities you can import to integrate with other products or solutions, like the rest of Active Directory, other System Center 2012 R2 products, or Microsoft Exchange Server, to name a few.
 
 **Note**  
-To find and download additional integration packs, see [Integration Packs for System Center 2012 - Orchestrator](http://go.microsoft.com/fwlink/p/?LinkId=619554).
+To find and download additional integration packs, see [Integration Packs for System Center 2012 - Orchestrator](https://go.microsoft.com/fwlink/p/?LinkId=619554).
  
 ## <a href="" id="sec02"></a>Create a sample runbook
 
@@ -135,7 +135,7 @@ Figure 31. The ready-made task sequence.
 
 Since this task sequence just starts a runbook, you can test this on the PC0001 client that you used for the MDT simulation environment.
 **Note**  
-Make sure the account you are using has permissions to run runbooks on the Orchestrator server. For more information about runbook permissions, see [Runbook Permissions](http://go.microsoft.com/fwlink/p/?LinkId=619555).
+Make sure the account you are using has permissions to run runbooks on the Orchestrator server. For more information about runbook permissions, see [Runbook Permissions](https://go.microsoft.com/fwlink/p/?LinkId=619555).
  
 1.  On PC0001, log on as **CONTOSO\\MDT\_BA**.
 2.  Using an elevated command prompt (run as Administrator), type the following command:

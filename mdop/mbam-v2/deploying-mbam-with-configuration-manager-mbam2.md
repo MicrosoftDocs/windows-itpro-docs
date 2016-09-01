@@ -17,7 +17,7 @@ The following procedures describe how to deploy Microsoft BitLocker Administrati
 
 Before you start the installation, ensure that you have met the prerequisites and hardware and software requirements for installing MBAM with Configuration Manager by reviewing [Planning to Deploy MBAM with Configuration Manager](planning-to-deploy-mbam-with-configuration-manager-2.md).
 
-If you ever have to reinstall MBAM with the Configuration Manager topology, you will need to remove certain Configuration Manager objects first. Read the [Knowledge Base article](http://go.microsoft.com/fwlink/?LinkId=286306) for more information.
+If you ever have to reinstall MBAM with the Configuration Manager topology, you will need to remove certain Configuration Manager objects first. Read the [Knowledge Base article](https://go.microsoft.com/fwlink/?LinkId=286306) for more information.
 
 The steps to install MBAM with Configuration Manager are grouped into the following categories. Complete the steps for each category to complete the installation.
 

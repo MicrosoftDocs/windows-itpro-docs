@@ -33,10 +33,10 @@ User Experience Virtualization delivers an enhanced user state virtualization ex
 
 This product requires thorough planning before you deploy it or use its features. Because this product can affect every computer in your organization, you might disrupt your entire network if you do not plan your deployment carefully. However, if you plan your deployment carefully and manage it so that it meets your business needs, this product can help reduce your administrative overhead and total cost of ownership.
 
-If you are new to this product, we recommend that you read the documentation carefully. Before you deploy the product to a production environment, we also recommend that you validate your deployment plan in a test network environment. You might also consider taking a class about relevant technologies. For more information about Microsoft training opportunities, see the Microsoft Training Overview at <http://go.microsoft.com/fwlink/p/?LinkId=80347>.
+If you are new to this product, we recommend that you read the documentation carefully. Before you deploy the product to a production environment, we also recommend that you validate your deployment plan in a test network environment. You might also consider taking a class about relevant technologies. For more information about Microsoft training opportunities, see the Microsoft Training Overview at <https://go.microsoft.com/fwlink/p/?LinkId=80347>.
 
 **Note**  
-A downloadable version of this administrator’s guide is not available. However, you can learn about a special mode of the TechNet Library that allows you to select articles, group them in a collection, and print them or export them to a file at <http://go.microsoft.com/fwlink/?LinkId=272497> (http://go.microsoft.com/fwlink/?LinkId=272497).
+A downloadable version of this administrator’s guide is not available. However, you can learn about a special mode of the TechNet Library that allows you to select articles, group them in a collection, and print them or export them to a file at <https://go.microsoft.com/fwlink/?LinkId=272497> (https://go.microsoft.com/fwlink/?LinkId=272497).
 
  
 
