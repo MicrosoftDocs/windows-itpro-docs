@@ -65,7 +65,7 @@ WIP provides:
 
 - Use of audit reports for tracking issues and remedial actions.
 
-- Integration with your existing management system (Microsoft Intune, System Center Configuration Manager 2016, or your current mobile device management (MDM) system) to configure, deploy, and manage WIP for your company.
+- Integration with your existing management system (Microsoft Intune, System Center Configuration Manager, or your current mobile device management (MDM) system) to configure, deploy, and manage WIP for your company.
 
 ## Why use WIP?
 WIP gives you a new way to manage data policy enforcement for apps and documents, along with the ability to remove access to enterprise data from both enterprise and personal devices (after enrollment in an enterprise management solution, like Intune).
