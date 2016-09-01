@@ -115,7 +115,7 @@ By storing configuration items as MDT applications, it is easy to move these obj
 In these examples, we assume that you downloaded the software in this list to the E:\\Downloads folder. The first application is added using the UI, but because MDT supports Windows PowerShell, you add the other applications using Windows PowerShell.
 
 **Note**  
-All the Microsoft Visual C++ downloads can be found on [The latest supported Visual C++ downloads](http://go.microsoft.com/fwlink/p/?LinkId=619523).
+All the Microsoft Visual C++ downloads can be found on [The latest supported Visual C++ downloads](https://go.microsoft.com/fwlink/p/?LinkId=619523).
  
 ### Create the install: Microsoft Office Professional Plus 2013 x86
 

@@ -22,7 +22,7 @@ These release notes contain information that is required to successfully install
 ## About the product documentation
 
 
-For information about documentation for DaRT, see the [DaRT home page](http://go.microsoft.com/fwlink/?LinkID=252096) on Microsoft TechNet.
+For information about documentation for DaRT, see the [DaRT home page](https://go.microsoft.com/fwlink/?LinkID=252096) on Microsoft TechNet.
 
 ## Known issues with DaRT 8.0 SP1
 

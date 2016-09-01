@@ -16,7 +16,7 @@ ms.prod: w8
 Microsoft User Experience Virtualization (UE-V) supports the following described configurations.
 
 **Note**  
-Microsoft provides support for the current service pack, and in some cases, the preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](http://go.microsoft.com/fwlink/p/?LinkId=31975). For more information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](http://go.microsoft.com/fwlink/p/?LinkId=31976).
+Microsoft provides support for the current service pack, and in some cases, the preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). For more information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976).
 
  
 

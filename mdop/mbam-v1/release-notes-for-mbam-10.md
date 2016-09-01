@@ -24,7 +24,7 @@ These release notes contain information that is required to successfully install
 
 For information about MBAM documentation, see the MBAM home page on Microsoft TechNet.
 
-To obtain a downloadable copy of the MBAM documentation, see <http://go.microsoft.com/fwlink/p/?LinkId=225356> on the Microsoft Download Center.
+To obtain a downloadable copy of the MBAM documentation, see <https://go.microsoft.com/fwlink/p/?LinkId=225356> on the Microsoft Download Center.
 
 ## Provide Feedback
 
@@ -36,9 +36,9 @@ This email address is not a support channel, but your feedback will help us to p
 
  
 
-For the latest information about MDOP and additional learning resources, see the [MDOP Information Experience](http://go.microsoft.com/fwlink/p/?LinkId=236032) page.
+For the latest information about MDOP and additional learning resources, see the [MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032) page.
 
-For more information about new updates or to provide feedback, follow us on [Facebook](http://go.microsoft.com/fwlink/p/?LinkId=242445) or [Twitter](http://go.microsoft.com/fwlink/p/?LinkId=242447).
+For more information about new updates or to provide feedback, follow us on [Facebook](https://go.microsoft.com/fwlink/p/?LinkId=242445) or [Twitter](https://go.microsoft.com/fwlink/p/?LinkId=242447).
 
 ## Known Issues with MBAM 1.0
 

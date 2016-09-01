@@ -16,14 +16,14 @@ ms.prod: w7
 An electronic software distribution system can help you efficiently move software to many computers over slow or fast network connections. The following section provides information and instructions to help you deploy the Microsoft Enterprise Desktop Virtualization (MED-V) 2.0 components throughout your enterprise by using a software distribution system.
 
 **Note**  
-Whichever software distribution solution that you use, you must be familiar with the requirements of your particular solution. If you are using System Center Configuration Manager 2007 R2 or a later version, see the [Configuration Manager Documentation Library](http://go.microsoft.com/fwlink/?LinkId=66999) in the Microsoft Technical Library (http://go.microsoft.com/fwlink/?LinkId=66999).
+Whichever software distribution solution that you use, you must be familiar with the requirements of your particular solution. If you are using System Center Configuration Manager 2007 R2 or a later version, see the [Configuration Manager Documentation Library](https://go.microsoft.com/fwlink/?LinkId=66999) in the Microsoft Technical Library (https://go.microsoft.com/fwlink/?LinkId=66999).
 
  
 
 **Important**  
 If you are using System Center Configuration Manager 2007 SP2 and your MED-V workspaces are configured to operate in **NAT** mode, the virtual machines are classified as Internet-based clients and cannot find the closest distribution points from which to download content.
 
-The [hotfix to improve the functionality for VMs that are managed by MED-V](http://go.microsoft.com/fwlink/?LinkId=201088) (http://go.microsoft.com/fwlink/?LinkId=201088) adds new functionality to virtual machines that are managed by MED-V and that are configured to operate in **NAT** mode. The new functionality lets virtual machines access the closest distribution points. Therefore, the administrator can manage the virtual machine and the host computer in the same manner. This hotfix must be installed first on the site server and then on the client.
+The [hotfix to improve the functionality for VMs that are managed by MED-V](https://go.microsoft.com/fwlink/?LinkId=201088) (https://go.microsoft.com/fwlink/?LinkId=201088) adds new functionality to virtual machines that are managed by MED-V and that are configured to operate in **NAT** mode. The new functionality lets virtual machines access the closest distribution points. Therefore, the administrator can manage the virtual machine and the host computer in the same manner. This hotfix must be installed first on the site server and then on the client.
 
 The update is publically available. However, you might be prompted to accept an agreement for Microsoft Services. Follow the prompts on the successive webpages to retrieve this hotfix.
 

@@ -22,7 +22,7 @@ localizationpriority: high
 -   Windows Server 2008 R2
 
 **Looking for retail activation?**
--   [Get Help Activating Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=618644)
+-   [Get Help Activating Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)
 
 Active Directory-based activation is implemented as a role service that relies on AD DS to store activation objects. Active Directory-based activation requires that the forest schema be updated by adprep.exe on a computer running Windows Server 2012 R2 or Windows Server 2012, but after the schema is updated, older domain controllers can still activate clients.
 Any domain-joined computers running Windows 10, Windows 8.1, Windows 8, Windows Server 2012 R2, or Windows Server 2012 with a GVLK will be activated automatically and transparently. They will stay activated as long as they remain members of the domain and maintain periodic contact with a domain controller. Activation takes place after the Licensing service starts. When this service starts, the computer contacts AD DS automatically, receives the activation object, and is activated without user intervention.

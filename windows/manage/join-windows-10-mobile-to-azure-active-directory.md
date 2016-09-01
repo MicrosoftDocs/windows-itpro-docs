@@ -26,7 +26,7 @@ When a device running Windows 10 Mobile is joined to Azure AD, the device can e
 
 -   Single sign-on (SSO) in applications like Mail, Word, and OneDrive using resources backed by Azure AD.
 
--   SSO in Microsoft Edge browser to Azure AD-connected web applications like Office 365 Portal, Visual Studio, and more than [2500 non-Microsoft apps](http://go.microsoft.com/fwlink/p/?LinkID=746211).
+-   SSO in Microsoft Edge browser to Azure AD-connected web applications like Office 365 Portal, Visual Studio, and more than [2500 non-Microsoft apps](https://go.microsoft.com/fwlink/p/?LinkID=746211).
 
 -   SSO to resources on-premises.
 
@@ -41,7 +41,7 @@ When a device running Windows 10 Mobile is joined to Azure AD, the device can e
 
 Windows Phone 8.1 only supported the ability to connect the device to personal cloud services using a Microsoft account for authentication. This required creating Microsoft accounts to be used for work purposes. In Windows 10 Mobile, you have the ability to join devices directly to Azure AD without requiring a personal Microsoft account.
 
-If you have existing Windows Phone 8.1 devices, the first thing to understand is whether the devices you have can be upgraded to Windows 10 Mobile. Microsoft will be releasing more information about upgrade availability soon. As more information becomes available, it will be posted at [How to get Windows 10 Mobile]( http://go.microsoft.com/fwlink/p/?LinkId=746312). Premier Enterprise customers that have a business need to postpone Windows 10 Mobile upgrade should contact their Technical Account Manager to understand what options may be available.
+If you have existing Windows Phone 8.1 devices, the first thing to understand is whether the devices you have can be upgraded to Windows 10 Mobile. Microsoft will be releasing more information about upgrade availability soon. As more information becomes available, it will be posted at [How to get Windows 10 Mobile]( https://go.microsoft.com/fwlink/p/?LinkId=746312). Premier Enterprise customers that have a business need to postpone Windows 10 Mobile upgrade should contact their Technical Account Manager to understand what options may be available.
 
 Before upgrading and joining devices to Azure AD, you will want to consider existing data usage. How users are using the existing devices and what data is stored locally will vary for every customer. Are text messages used for work purposes and need to be backed up and available after the upgrade? Are there photos stored locally or stored associated with an Microsoft account? Are there device and app settings that to be retained? Are there contacts stored in the SIM or associated with an Microsoft account? You will need to explore methods for capturing and storing the data that needs to be retained before you join the devices to Azure AD. Photos, music files, and documents stored locally on the device can be copied from the device using a USB connection to a PC.
 
@@ -58,9 +58,9 @@ Even though Azure AD Join on Windows 10 Mobile provides the best overall experi
 
 -   You can add access to Azure AD-backed resources on the device without resetting the device.
 
-However, neither of these methods provides SSO in the Windows Store or SSO to resources on-premises, and does not provide the ability to roam settings based on the Azure AD account using enterprise roaming. [Learn about enterprise state roaming in Azure AD.](http://go.microsoft.com/fwlink/p/?LinkId=734996)
+However, neither of these methods provides SSO in the Windows Store or SSO to resources on-premises, and does not provide the ability to roam settings based on the Azure AD account using enterprise roaming. [Learn about enterprise state roaming in Azure AD.](https://go.microsoft.com/fwlink/p/?LinkId=734996)
 
-Using **Settings** &gt; **Accounts** &gt; **Your email and accounts** &gt; **Add work or school account**, users can add their Azure AD account to the device. Alternatively, a work account can be added when the user signs in to an application like Mail, Word, etc. If you [enable auto-enrollment in your MDM settings](http://go.microsoft.com/fwlink/p/?LinkID=691615), the device will automatically be enrolled in MDM.
+Using **Settings** &gt; **Accounts** &gt; **Your email and accounts** &gt; **Add work or school account**, users can add their Azure AD account to the device. Alternatively, a work account can be added when the user signs in to an application like Mail, Word, etc. If you [enable auto-enrollment in your MDM settings](https://go.microsoft.com/fwlink/p/?LinkID=691615), the device will automatically be enrolled in MDM.
 
 An added work account provides the same SSO experience in browser apps like Office 365 (Office portal, Outlook Web Access, Calendar, People, OneDrive), Azure AD profile and change password app, and Visual Studio. You get SSO to built-in applications like Mail, Calendar, People, OneDrive and files hosted on OneDrive without prompts for a password. In Office apps like Microsoft Word, Microsoft Excel, etc., you simply select the Azure AD account and you are able to open files without entering a password.
 
@@ -71,7 +71,7 @@ An added work account provides the same SSO experience in browser apps like Offi
 
     Currently, Azure AD Join only supports self-provisioning, meaning the credentials of the user of the device must be used during the initial setup of the device. If your mobile operator prepares devices on your behalf, this will impact your ability to join the device to Azure AD. Many IT administrators may start with a desire to set up devices for their employees, but the Azure AD Join experience is optimized for end-users, including the option for automatic MDM enrollment.
 
-    By default, Azure AD is set up to allow devices to join and to allow users to use their corporate credentials on organizational-owned devices or personal devices. The blog post [Azure AD Join on Windows 10 devices](http://go.microsoft.com/fwlink/p/?LinkID=616791) has more information on where you can review your Azure AD settings. You can configure Azure AD to not allow anyone to join, to allow everyone in your organization to join, or you can select specific Azure AD groups which are allowed to join.
+    By default, Azure AD is set up to allow devices to join and to allow users to use their corporate credentials on organizational-owned devices or personal devices. The blog post [Azure AD Join on Windows 10 devices](https://go.microsoft.com/fwlink/p/?LinkID=616791) has more information on where you can review your Azure AD settings. You can configure Azure AD to not allow anyone to join, to allow everyone in your organization to join, or you can select specific Azure AD groups which are allowed to join.
 
 -   **Device setup**
 
@@ -79,11 +79,11 @@ An added work account provides the same SSO experience in browser apps like Offi
 
 -   **Mobile device management**
 
-    An MDM service is required for managing Azure AD-joined devices. You can use MDM to push settings to devices, as well as application and certificates used by VPN, Wi-Fi, etc. Azure AD Premium or [Enterprise Mobility Suite (EMS)](http://go.microsoft.com/fwlink/p/?LinkID=723984) licenses are required to set up your Azure AD-joined devices to automatically enroll in MDM. [Learn more about setting up your Azure AD tenant for MDM auto-enrollment.](http://go.microsoft.com/fwlink/p/?LinkID=691615)
+    An MDM service is required for managing Azure AD-joined devices. You can use MDM to push settings to devices, as well as application and certificates used by VPN, Wi-Fi, etc. Azure AD Premium or [Enterprise Mobility Suite (EMS)](https://go.microsoft.com/fwlink/p/?LinkID=723984) licenses are required to set up your Azure AD-joined devices to automatically enroll in MDM. [Learn more about setting up your Azure AD tenant for MDM auto-enrollment.](https://go.microsoft.com/fwlink/p/?LinkID=691615)
 
 -   **Microsoft Passport**
 
-    Creating a Microsoft Passport (PIN) is required on Windows 10 Mobile by default and cannot be disabled. [You can control Microsoft Passport policies](http://go.microsoft.com/fwlink/p/?LinkId=735079) using controls in MDM, such as Intune. Because the device is joined using organizational credentials, the device must have a PIN to unlock the device. Windows Hello (biometrics such as fingerprint or iris) can be used for Passport authentication. Creating a Microsoft Passport requires the user to perform an multi-factor authentication since the PIN is a strong authentication credential. [Learn more about Microsoft Passport for Azure AD.](http://go.microsoft.com/fwlink/p/?LinkId=735004)
+    Creating a Microsoft Passport (PIN) is required on Windows 10 Mobile by default and cannot be disabled. [You can control Microsoft Passport policies](https://go.microsoft.com/fwlink/p/?LinkId=735079) using controls in MDM, such as Intune. Because the device is joined using organizational credentials, the device must have a PIN to unlock the device. Windows Hello (biometrics such as fingerprint or iris) can be used for Passport authentication. Creating a Microsoft Passport requires the user to perform an multi-factor authentication since the PIN is a strong authentication credential. [Learn more about Microsoft Passport for Azure AD.](https://go.microsoft.com/fwlink/p/?LinkId=735004)
 
 -   **Conditional access**
 

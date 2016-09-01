@@ -110,7 +110,7 @@ To collect the status from select computers in the database, you can select comp
     The same status appears under the **Status of Last Action** column in the product list view in the center pane.
     **Note**  
 
-    Product key installation will fail if VAMT finds mismatched key types or editions. VAMT will display the failure status and will continue the installation for the next product in the list. For more information on choosing the correct product key, see [How to Choose the Right Volume License Key for Windows.](http://go.microsoft.com/fwlink/p/?linkid=238382)
+    Product key installation will fail if VAMT finds mismatched key types or editions. VAMT will display the failure status and will continue the installation for the next product in the list. For more information on choosing the correct product key, see [How to Choose the Right Volume License Key for Windows.](https://go.microsoft.com/fwlink/p/?linkid=238382)
 
 ## <a href="" id="bkmk-partnine"></a>Step 9: Activate the client products
 

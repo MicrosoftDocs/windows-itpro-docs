@@ -31,7 +31,7 @@ Windows 10 supports end-to-end device lifecycle management to give companies con
 ## Deploy
 
 Windows 10 Mobile has a built-in device management client to deploy, configure, maintain, and support smartphones. Common to all editions of the Windows 10 operating system, including desktop, mobile, and Internet of Things (IoT), this client provides a single interface through which Mobile Device Management (MDM) solutions can manage any device that runs Windows 10. Because the MDM client integrates with identity management, the effort required to manage devices throughout the lifecycle is greatly reduced.
-Windows 10 includes comprehensive MDM capabilities that can be managed by Microsoft management solutions, such as Microsoft Intune or System Center Configuration Manager, as well as many third-party MDM solutions. There is no need to install an additional, custom MDM app to enroll devices and bring them under MDM control. All MDM system vendors have equal access to Windows 10 Mobile device management application programming interfaces (APIs), giving IT organizations the freedom to select whichever system best fits their management requirements, whether Microsoft Intune or a third-party MDM product. For more information about Windows 10 Mobile device management APIs, see [Mobile device management](http://go.microsoft.com/fwlink/p/?LinkId=734050).
+Windows 10 includes comprehensive MDM capabilities that can be managed by Microsoft management solutions, such as Microsoft Intune or System Center Configuration Manager, as well as many third-party MDM solutions. There is no need to install an additional, custom MDM app to enroll devices and bring them under MDM control. All MDM system vendors have equal access to Windows 10 Mobile device management application programming interfaces (APIs), giving IT organizations the freedom to select whichever system best fits their management requirements, whether Microsoft Intune or a third-party MDM product. For more information about Windows 10 Mobile device management APIs, see [Mobile device management](https://go.microsoft.com/fwlink/p/?LinkId=734050).
 
 ### <a href="" id="deployment-scenarios"></a>Deployment scenarios
 
@@ -1062,10 +1062,10 @@ A better option than wiping the entire device is to use Windows Information Prot
 
 ## Related topics
 
-- [Mobile device management](http://go.microsoft.com/fwlink/p/?LinkId=734050)
-- [Enterprise Mobility + Security](http://go.microsoft.com/fwlink/p/?LinkId=723984)
-- [Overview of Mobile Device Management for Office 365](http://go.microsoft.com/fwlink/p/?LinkId=734052)
-- [Windows Store for Business](http://go.microsoft.com/fwlink/p/?LinkId=722910)
+- [Mobile device management](https://go.microsoft.com/fwlink/p/?LinkId=734050)
+- [Enterprise Mobility + Security](https://go.microsoft.com/fwlink/p/?LinkId=723984)
+- [Overview of Mobile Device Management for Office 365](https://go.microsoft.com/fwlink/p/?LinkId=734052)
+- [Windows Store for Business](https://go.microsoft.com/fwlink/p/?LinkId=722910)
 
 
 ## Revision History

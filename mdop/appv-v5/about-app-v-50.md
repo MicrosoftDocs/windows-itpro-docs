@@ -13,7 +13,7 @@ ms.prod: w10
 # About App-V 5.0
 
 
-App-V 5.0 provides an improved integrated platform, more flexible virtualization, and powerful management for virtualized applications. For more information see the [App-V 5.0 Overview](http://go.microsoft.com/fwlink/?LinkId=325265) (http://go.microsoft.com/fwlink/?LinkId=325265).
+App-V 5.0 provides an improved integrated platform, more flexible virtualization, and powerful management for virtualized applications. For more information see the [App-V 5.0 Overview](https://go.microsoft.com/fwlink/?LinkId=325265) (https://go.microsoft.com/fwlink/?LinkId=325265).
 
 ## <a href="" id="what-s-new-"></a>What’s new?
 
@@ -87,7 +87,7 @@ The following table displays some of the differences between App-V 4.6 and App-V
 ## How to Get MDOP Technologies
 
 
-App-V 5.0 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](http://go.microsoft.com/fwlink/?LinkId=322049) (http://go.microsoft.com/fwlink/?LinkId=322049).
+App-V 5.0 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049) (https://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## Got a suggestion for App-V?
 

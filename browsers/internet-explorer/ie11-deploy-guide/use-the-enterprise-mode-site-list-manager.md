@@ -26,7 +26,7 @@ Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, lett
 You can use IE11 and the Enterprise Mode Site List Manager to add individual website domains and domain paths and to specify whether the site renders using Enterprise Mode or the default mode.
 
 ## Enterprise Mode Site List Manager versions
-There are currently two versions of the Enterprise Site List Manager, both based on your schema and operating system. Download the [Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853) or the [Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378) tool, based on your operating system.
+There are currently two versions of the Enterprise Site List Manager, both based on your schema and operating system. Download the [Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853) or the [Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378) tool, based on your operating system.
 
 |Operating system |Schema version |Enterprise Site List Manager version |
 |-----------------|---------------|------------------------------------|
@@ -54,8 +54,8 @@ The following topics give you more information about the things that you can do 
 ## Related topics
 
 
-- [Download the Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853)
-- [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md)
 - [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md)
  

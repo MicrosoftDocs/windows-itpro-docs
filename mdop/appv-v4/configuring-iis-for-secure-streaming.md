@@ -18,9 +18,9 @@ With the release of Microsoft Application Virtualization (App-V) version 4.5, yo
 **Note**  
 If you want to stream applications from a file server, you should enhance the security of the communications to the application packages. This can be achieved using IPsec. For more information see the following topics in the TechNet Library:
 
--   For Windows Server 2003, <http://go.microsoft.com/fwlink/?LinkId=133226>
+-   For Windows Server 2003, <https://go.microsoft.com/fwlink/?LinkId=133226>
 
--   For Windows Server 2008, <http://go.microsoft.com/fwlink/?LinkId=133227>
+-   For Windows Server 2008, <https://go.microsoft.com/fwlink/?LinkId=133227>
 
  
 
@@ -35,9 +35,9 @@ When you use IIS to stream virtual applications with HTTP or HTTPS, to support A
 
 Use the following KB articles as guidance for adding MIME types:
 
-IIS 6.0: <http://go.microsoft.com/fwlink/?LinkId=151973>
+IIS 6.0: <https://go.microsoft.com/fwlink/?LinkId=151973>
 
-IIS 7.0: <http://go.microsoft.com/fwlink/?LinkId=151977>
+IIS 7.0: <https://go.microsoft.com/fwlink/?LinkId=151977>
 
 ## Kerberos Authentication
 

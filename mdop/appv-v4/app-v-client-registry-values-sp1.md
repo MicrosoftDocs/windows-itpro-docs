@@ -86,7 +86,7 @@ The following table provides information about the registry values associated wi
 <td align="left"><p>Controls which messages are written to the log. The value indicates a threshold of what is logged—everything less than or equal to that value is logged. For example, a value of 0x3 (Warning) indicates that Warnings (0x3), Errors (0x2), and Critical Errors (0x1) are logged.</p>
 <p>Value Range: 0x0 = None, 0x1 = Critical, 0x2 = Error, 0x3 = Warning, 0x4 = Information (Default), 0x5 = Verbose.</p>
 <p>The log level is configurable from the Application Virtualization (App-V) client console and from the command prompt. At a command prompt, the command sftlist.exe /verboselog will increase the log level to verbose. For more information on command-line details see</p>
-<p>http://go.microsoft.com/fwlink/?LinkId=141467http://go.microsoft.com/fwlink/?LinkId=141467</p>
+<p>https://go.microsoft.com/fwlink/?LinkId=141467https://go.microsoft.com/fwlink/?LinkId=141467</p>
 <p>.</p></td>
 </tr>
 <tr class="odd">

@@ -34,11 +34,11 @@ The new and changed Group Policy client-side extensions are:
 
 -   **Force automatic setup for all users**. If you enable this policy setting, IT administrators can determine whether to create the Work Folders partnership automatically on end-user devices without input from end users. If you enable this policy setting, the synchronization will be set up according to how you configure the **Specify Work Folders settings** policy setting. If you set the **Force automatic setup for all users** policy setting to **Disabled** or **Not configured**, the Work Folders partnership will be configured according to how you set the **Automatic Provisioning** option in the **Specify Work Folders settings** policy setting.
 
-For more information about the Work Folders feature, see [Work Folders Overview](http://go.microsoft.com/fwlink/?LinkId=330444).
+For more information about the Work Folders feature, see [Work Folders Overview](https://go.microsoft.com/fwlink/?LinkId=330444).
 
 ### Customer feedback and hotfix rollup
 
-AGPM 4.0 SP2 includes a rollup of hotfixes to address issues found since the AGPM 4.0 Service Pack 1 (SP1) release. AGPM 4.0 SP2 contains the latest fixes up to and including Microsoft Advanced Group Policy Management 4.0 SP1 Hotfix 1. For more information, see Knowledge Base article [2873472](http://go.microsoft.com/fwlink/?LinkId=325400)).
+AGPM 4.0 SP2 includes a rollup of hotfixes to address issues found since the AGPM 4.0 Service Pack 1 (SP1) release. AGPM 4.0 SP2 contains the latest fixes up to and including Microsoft Advanced Group Policy Management 4.0 SP1 Hotfix 1. For more information, see Knowledge Base article [2873472](https://go.microsoft.com/fwlink/?LinkId=325400)).
 
 ### New Group Policy extensions in settings and difference reports
 
@@ -58,7 +58,7 @@ The changes and support for the AGPM 4.0 SP2 installer are:
 
 ### Ability to upgrade to AGPM 4.0 SP2 without reentering configuration parameters
 
-You can upgrade the AGPM Client or AGPM Server to AGPM 4.0 SP2 without being prompted to reenter configuration parameters (called the Smart Upgrade) only from AGPM 4.0 onward, as shown in the following table. If you are upgrading to AGPM 4.0 SP2 from other versions of AGPM, as shown in the table, you must use the Classic Upgrade, which requires you to reenter the configuration parameters. Because each version of AGPM is associated with a particular operating system, see [Choosing Which Version of AGPM to Install](http://go.microsoft.com/fwlink/?LinkId=254350) and make sure that you upgrade your operating system as appropriate before you upgrade AGPM.
+You can upgrade the AGPM Client or AGPM Server to AGPM 4.0 SP2 without being prompted to reenter configuration parameters (called the Smart Upgrade) only from AGPM 4.0 onward, as shown in the following table. If you are upgrading to AGPM 4.0 SP2 from other versions of AGPM, as shown in the table, you must use the Classic Upgrade, which requires you to reenter the configuration parameters. Because each version of AGPM is associated with a particular operating system, see [Choosing Which Version of AGPM to Install](https://go.microsoft.com/fwlink/?LinkId=254350) and make sure that you upgrade your operating system as appropriate before you upgrade AGPM.
 
 **AGPM 4.0 SP2 supported upgrades**
 
@@ -217,7 +217,7 @@ If the GPMC is not enabled, the installer enables it during the installation.
 ## How to Get MDOP Technologies
 
 
-AGPM 4.0 SP2 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](http://go.microsoft.com/fwlink/?LinkId=322049) (http://go.microsoft.com/fwlink/?LinkId=322049).
+AGPM 4.0 SP2 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049) (https://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## Related topics
 

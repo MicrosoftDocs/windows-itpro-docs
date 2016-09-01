@@ -81,7 +81,7 @@ Before trying to upgrade to Microsoft Application Virtualization (App-V) 4.5 or
 
 -   Any version 4.2 reports that were created and saved will be overwritten when the server is upgraded to version 4.5. If you have to keep these reports, you must save a backup copy of the SftMMC.msc file located in the SoftGrid Management Console folder on the server and use that copy to replace the new SftMMC.msc that is installed during the upgrade.
 
--   For additional information about upgrading from previous versions, see [Upgrading to Microsoft Application Virtualization 4.5 FAQ](http://go.microsoft.com/fwlink/?LinkId=120358) (http://go.microsoft.com/fwlink/?LinkId=120358).
+-   For additional information about upgrading from previous versions, see [Upgrading to Microsoft Application Virtualization 4.5 FAQ](https://go.microsoft.com/fwlink/?LinkId=120358) (https://go.microsoft.com/fwlink/?LinkId=120358).
 
 ## <a href="" id="app-v-4-6-client-package-support-"></a>App-V 4.6 Client Package Support
 

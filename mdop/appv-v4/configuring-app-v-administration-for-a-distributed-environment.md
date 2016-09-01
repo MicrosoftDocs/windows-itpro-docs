@@ -48,7 +48,7 @@ To set up the environment where SQL Servers use domain-based service accounts, y
 
 -   Linked servers
 
-For information about configuring Active Directory Domain Services when the SQL service uses a domain-based account, see <http://go.microsoft.com/fwlink/?LinkId=151968>.
+For information about configuring Active Directory Domain Services when the SQL service uses a domain-based account, see <https://go.microsoft.com/fwlink/?LinkId=151968>.
 
  
 
