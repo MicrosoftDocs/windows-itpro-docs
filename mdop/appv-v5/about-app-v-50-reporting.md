@@ -32,7 +32,7 @@ The following list displays the end–to-end high-level workflow for reporting i
 
 2.  Install the App-V 5.0 reporting server and associated database. For more information about installing the reporting server see [How to install the Reporting Server on a Standalone Computer and Connect it to the Database](how-to-install-the-reporting-server-on-a-standalone-computer-and-connect-it-to-the-database.md). Configure the time when the computer running the App-V 5.0 client should send data to the reporting server.
 
-3.  If you are not using an electronic software distribution system such as Configuration Manager to view reports then you can define reports in SQL Server Reporting Service. Download predefined appvshort Reports from the Download Center at <http://go.microsoft.com/fwlink/?LinkId=397255>.
+3.  If you are not using an electronic software distribution system such as Configuration Manager to view reports then you can define reports in SQL Server Reporting Service. Download predefined appvshort Reports from the Download Center at <https://go.microsoft.com/fwlink/?LinkId=397255>.
 
     **Note**  
     If you are using the Configuration Manager integration with App-V 5.0, most reports are generated from Configuration Manager rather than from App-V 5.0.
@@ -287,7 +287,7 @@ To retrieve report information and create reports using App-V 5.0 you must use o
 
 -   **Microsoft SQL Server Reporting Services (SSRS)** - Microsoft SQL Server Reporting Services is available with Microsoft SQL Server. SSRS is not installed when you install the App-V 5.0 reporting server. It must be deployed separately to generate the associated reports.
 
-    Use the following link for more information about using [Microsoft SQL Server Reporting Services](http://go.microsoft.com/fwlink/?LinkId=285596).
+    Use the following link for more information about using [Microsoft SQL Server Reporting Services](https://go.microsoft.com/fwlink/?LinkId=285596).
 
 -   **Scripting** – You can generate reports by scripting directly against the App-V 5.0 reporting database. For example:
 
@@ -295,7 +295,7 @@ To retrieve report information and create reports using App-V 5.0 you must use o
 
     **spProcessClientReport** is scheduled to run at midnight or 12:00 AM.
 
-    To run the Microsoft SQL Server Scheduled Stored procedure, the Microsoft SQL Server Agent must be running. You should ensure that the Microsoft SQL Server Agent is set to **AutoStart**. For more information see [Autostart SQL Server Agent (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=287045).
+    To run the Microsoft SQL Server Scheduled Stored procedure, the Microsoft SQL Server Agent must be running. You should ensure that the Microsoft SQL Server Agent is set to **AutoStart**. For more information see [Autostart SQL Server Agent (SQL Server Management Studio)](https://go.microsoft.com/fwlink/?LinkId=287045).
 
     The stored procedure is also created when using the App-V 5.0 database scripts.
 

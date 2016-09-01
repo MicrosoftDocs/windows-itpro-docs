@@ -63,7 +63,7 @@ For more information about remotely running the DaRT tools, see [How to Recover 
 
 ### To add the Debugging Tools for Windows to the DaRT recovery image
 
-In the **Crash Analyzer** dialog box of the **DaRT Recovery Image Wizard**, you are asked to specify the location of the Debugging Tools for Windows. If you do not have a copy of the tools, you can download them from Microsoft. The following link to the download page is provided in the wizard: [Download and Install Debugging Tools for Windows](http://go.microsoft.com/fwlink/?LinkId=99934).
+In the **Crash Analyzer** dialog box of the **DaRT Recovery Image Wizard**, you are asked to specify the location of the Debugging Tools for Windows. If you do not have a copy of the tools, you can download them from Microsoft. The following link to the download page is provided in the wizard: [Download and Install Debugging Tools for Windows](https://go.microsoft.com/fwlink/?LinkId=99934).
 
 You can either specify the location of the debugging tools on the computer where you are running the **DaRT Recovery Image Wizard**, or you can decide to use the tools that are located on the destination computer. If you decide to use a copy on another computer, you must make sure that the tools are installed on each computer on which you are diagnosing a crash.
 

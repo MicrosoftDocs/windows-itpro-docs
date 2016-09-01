@@ -56,7 +56,7 @@ When using the ADM Template, remember that the settings are Group Policy prefere
 
  
 
-For a full description of the ADM Template, the specific settings, and guidance to successfully deploy clients in your environment, see the App-V ADM Template white paper at [http://go.microsoft.com/fwlink/LinkId=122063](http://go.microsoft.com/fwlink/?LinkId=122063).
+For a full description of the ADM Template, the specific settings, and guidance to successfully deploy clients in your environment, see the App-V ADM Template white paper at [https://go.microsoft.com/fwlink/LinkId=122063](https://go.microsoft.com/fwlink/?LinkId=122063).
 
 ## Removing OSD File Type Associations
 

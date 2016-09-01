@@ -64,7 +64,7 @@ An Outlook profile must be created for any device on which a user wants to sync 
 
  
 
-Previously UE-V included Microsoft Office 2010 settings location templates that were automatically distributed and registered with the UE-V Agent. UE-V 2.1 works with Office 365 to determine whether Office 2013 settings are roamed by Office 365. If settings are roamed by Office 365 they are not roamed by UE-V. [Overview of user and roaming settings for Office 2013](http://go.microsoft.com/fwlink/p/?LinkID=391220) provides more information.
+Previously UE-V included Microsoft Office 2010 settings location templates that were automatically distributed and registered with the UE-V Agent. UE-V 2.1 works with Office 365 to determine whether Office 2013 settings are roamed by Office 365. If settings are roamed by Office 365 they are not roamed by UE-V. [Overview of user and roaming settings for Office 2013](https://go.microsoft.com/fwlink/p/?LinkID=391220) provides more information.
 
 To enable settings synchronization using UE-V 2.1, do one of the following:
 
@@ -72,7 +72,7 @@ To enable settings synchronization using UE-V 2.1, do one of the following:
 
 -   Do not enable the Office 365 synchronization experience during Office 2013 installation
 
-UE-V 2.1 ships [Office 2013 and Office 2010 templates](http://technet.microsoft.com/library/dn458932.aspx#autosyncsettings). This release removes the Office 2007 templates. Users can still use Office 2007 templates from UE-V 2.0 or earlier and can still get the templates from the UE-V template gallery located [here](http://go.microsoft.com/fwlink/p/?LinkID=246589).
+UE-V 2.1 ships [Office 2013 and Office 2010 templates](http://technet.microsoft.com/library/dn458932.aspx#autosyncsettings). This release removes the Office 2007 templates. Users can still use Office 2007 templates from UE-V 2.0 or earlier and can still get the templates from the UE-V template gallery located [here](https://go.microsoft.com/fwlink/p/?LinkID=246589).
 
 ## Got a suggestion for UE-V?
 

@@ -32,9 +32,9 @@ Effective as of June, 2014, the PackageStoreAccessControl (PSAC) feature that wa
 
 **Physically secure your computers**. Security is incomplete without physical security. Anyone with physical access to an App-V 5.0 server could potentially attack the entire client base. Any potential physical attacks must be considered high risk and mitigated appropriately. App-V 5.0 servers should be stored in a physically secure server room with controlled access. Secure these computers when administrators are not physically present by having the operating system lock the computer, or by using a secured screen saver.
 
-**Apply the most recent security updates to all computers**. To stay informed about the latest updates for operating systems, Microsoft SQL Server, and App-V 5.0, subscribe to the Security Notification service (<http://go.microsoft.com/fwlink/p/?LinkId=28819>).
+**Apply the most recent security updates to all computers**. To stay informed about the latest updates for operating systems, Microsoft SQL Server, and App-V 5.0, subscribe to the Security Notification service (<https://go.microsoft.com/fwlink/p/?LinkId=28819>).
 
-**Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all App-V 5.0 and App-V 5.0 administrator accounts. Never use blank passwords. For more information about password concepts, see the “Account Passwords and Policies” white paper on TechNet (<http://go.microsoft.com/fwlink/p/?LinkId=30009>).
+**Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all App-V 5.0 and App-V 5.0 administrator accounts. Never use blank passwords. For more information about password concepts, see the “Account Passwords and Policies” white paper on TechNet (<https://go.microsoft.com/fwlink/p/?LinkId=30009>).
 
 ## Accounts and groups in App-V 5.0
 

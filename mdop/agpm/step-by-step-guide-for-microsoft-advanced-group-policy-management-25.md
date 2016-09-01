@@ -57,7 +57,7 @@ You should install AGPM Server on a member server or domain controller with the 
 
 Specifically, if your AGPM Server is running Windows Server 2003 and the version of the GPMC that accompanied it, and your Group Policy administrators’ computers are running Windows Vista and the version of the GPMC that accompanied it, you can still manage most policy settings. However, policy settings from the GPMC in Windows Vista that are not available in the GPMC in Windows Server 2003—such as those related to folder redirection, wireless networking (IEEE 802.11), and deployed printers—cannot be stored by the AGPM Server, even though administrators can configure them using AGPM on their computers.
 
-If you must install AGPM Server on a computer with an older version of GPMC than your Group Policy administrators are running, see the Group Policy Settings Reference for details about which policy settings are available with which operating systems. To download the Group Policy Settings Reference, see <http://go.microsoft.com/fwlink/?LinkID=106147>.
+If you must install AGPM Server on a computer with an older version of GPMC than your Group Policy administrators are running, see the Group Policy Settings Reference for details about which policy settings are available with which operating systems. To download the Group Policy Settings Reference, see <https://go.microsoft.com/fwlink/?LinkID=106147>.
 
 **Note**  
 Archives cannot be migrated from an AGPM Server or a GPOVault Server running Windows Server 2003 to an AGPM Server running Windows Vista.

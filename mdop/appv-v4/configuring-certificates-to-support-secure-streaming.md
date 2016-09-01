@@ -35,7 +35,7 @@ The scenarios for obtaining and installing a certificate for App-V are as follow
 
 If a PKI infrastructure has been deployed, consult with the PKI administrators to acquire a certificate that complies with the requirements described in this topic. If a PKI infrastructure is not available, use a third-party CA to obtain a valid certificate.
 
-For step-by-step guidance for obtaining and installing a certificate, see <http://go.microsoft.com/fwlink/?LinkId=151969>.
+For step-by-step guidance for obtaining and installing a certificate, see <https://go.microsoft.com/fwlink/?LinkId=151969>.
 
 ## Related topics
 

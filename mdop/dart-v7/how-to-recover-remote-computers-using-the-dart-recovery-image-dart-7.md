@@ -84,7 +84,7 @@ A file is provided that is named inv32.xml and contains remote connection inform
 
 **To customize the Remote Connection process**
 
-1.  You can customize the Remote Connection process by editing the winpeshl.ini file. For more information about how to edit the winpeshl.ini file, see [Winpeshl.ini Files](http://go.microsoft.com/fwlink/?LinkId=219413).
+1.  You can customize the Remote Connection process by editing the winpeshl.ini file. For more information about how to edit the winpeshl.ini file, see [Winpeshl.ini Files](https://go.microsoft.com/fwlink/?LinkId=219413).
 
     Specify the following commands and parameters to customize how a remote connection is established with an end-user computer:
 

@@ -28,7 +28,7 @@ Figure 1. The machines used in this topic.
 
 ## <a href="" id="sec01"></a>Step 1: Configure Active Directory permissions
 
-These steps will show you how to configure an Active Directory account with the permissions required to deploy a Windows 10 machine to the domain using MDT. These steps assume you have downloaded the sample [Set-OUPermissions.ps1 script](http://go.microsoft.com/fwlink/p/?LinkId=619362) and copied it to C:\\Setup\\Scripts on DC01. The account is used for Windows Preinstallation Environment (Windows PE) to connect to MDT01. In order for MDT to join machines into the contoso.com domain you need to create an account and configure permissions in Active Directory.
+These steps will show you how to configure an Active Directory account with the permissions required to deploy a Windows 10 machine to the domain using MDT. These steps assume you have downloaded the sample [Set-OUPermissions.ps1 script](https://go.microsoft.com/fwlink/p/?LinkId=619362) and copied it to C:\\Setup\\Scripts on DC01. The account is used for Windows Preinstallation Environment (Windows PE) to connect to MDT01. In order for MDT to join machines into the contoso.com domain you need to create an account and configure permissions in Active Directory.
 1.  On DC01, using Active Directory User and Computers, browse to **contoso.com / Contoso / Service Accounts**.
 2.  Select the **Service Accounts** organizational unit (OU) and create the MDT\_JD account using the following settings:
     1.  Name: MDT\_JD
@@ -177,7 +177,7 @@ Or, you can use this command in a normal command prompt:
 wmic csproduct get name
 ```
 
-If you want a more standardized naming convention, try the ModelAliasExit.vbs script from the Deployment Guys blog post entitled [Using and Extending Model Aliases for Hardware Specific Application Installation](http://go.microsoft.com/fwlink/p/?LinkId=619536).
+If you want a more standardized naming convention, try the ModelAliasExit.vbs script from the Deployment Guys blog post entitled [Using and Extending Model Aliases for Hardware Specific Application Installation](https://go.microsoft.com/fwlink/p/?LinkId=619536).
 
 ![figure 4](images/fig4-oob-drivers.png)
 
@@ -217,7 +217,7 @@ In these steps, we assume you have downloaded PROWinx64.exe from Intel.com and s
 
 For the Lenovo T420 model, you use the Lenovo ThinkVantage Update Retriever software to download the drivers. With Update Retriever, you need to specify the correct Lenovo Machine Type for the actual hardware (the first four characters of the model name). As an example, the Lenovo T420 model has the 4178B9G model name, meaning the Machine Type is 4178.
 
-To get the updates, you download the drivers from the Lenovo ThinkVantage Update Retriever using its export function. You can download the drivers from the [Lenovo website](http://go.microsoft.com/fwlink/p/?LinkId=619543).
+To get the updates, you download the drivers from the Lenovo ThinkVantage Update Retriever using its export function. You can download the drivers from the [Lenovo website](https://go.microsoft.com/fwlink/p/?LinkId=619543).
 
 In these steps, we assume you have downloaded and extracted the drivers using ThinkVantage Update Retriever v5.0 to the E:\\Drivers\\Lenovo\\ThinkPad T420 (4178) folder.
 
@@ -227,7 +227,7 @@ In these steps, we assume you have downloaded and extracted the drivers using Th
 
 ### For the Latitude E6440
 
-For the Dell Latitude E6440 model, you use the Dell Driver CAB file, which is accessible via the [Dell TechCenter website](http://go.microsoft.com/fwlink/p/?LinkId=619544).
+For the Dell Latitude E6440 model, you use the Dell Driver CAB file, which is accessible via the [Dell TechCenter website](https://go.microsoft.com/fwlink/p/?LinkId=619544).
 
 In these steps, we assume you have downloaded and extracted the CAB file for the Latitude E6440 model to the E:\\Drivers\\Dell\\Latitude E6440 folder.
 
@@ -237,7 +237,7 @@ In these steps, we assume you have downloaded and extracted the CAB file for the
 
 ### For the HP EliteBook 8560w
 
-For the HP EliteBook 8560w, you use HP SoftPaq Download Manager to get the drivers. The HP SoftPaq Download Manager can be accessed on the [HP Support site](http://go.microsoft.com/fwlink/p/?LinkId=619545).
+For the HP EliteBook 8560w, you use HP SoftPaq Download Manager to get the drivers. The HP SoftPaq Download Manager can be accessed on the [HP Support site](https://go.microsoft.com/fwlink/p/?LinkId=619545).
 
 In these steps, we assume you have downloaded and extracted the drivers for the HP EliteBook 8650w model to the E:\\Drivers\\Windows 10 x64\\HP\\HP EliteBook 8560w folder.
 
@@ -630,7 +630,7 @@ Follow these steps to create a bootable USB stick from the offline media content
 
 ## <a href="" id="sec11"></a>Unified Extensible Firmware Interface (UEFI)-based deployments
 
-As referenced in [Windows 10 deployment tools](http://go.microsoft.com/fwlink/p/?LinkId=619546), Unified Extensible Firmware Interface (UEFI)-based deployments are becoming more common. In fact, when you create a generation 2 virtual machine in Hyper-V, you get a UEFI-based computer. During deployment, MDT automatically detects that you have an UEFI-based machine and creates the partitions UEFI requires. You do not need to update or change your task sequences in any way to accommodate UFEI.
+As referenced in [Windows 10 deployment tools](https://go.microsoft.com/fwlink/p/?LinkId=619546), Unified Extensible Firmware Interface (UEFI)-based deployments are becoming more common. In fact, when you create a generation 2 virtual machine in Hyper-V, you get a UEFI-based computer. During deployment, MDT automatically detects that you have an UEFI-based machine and creates the partitions UEFI requires. You do not need to update or change your task sequences in any way to accommodate UFEI.
 
 ![figure 14](images/mdt-07-fig16.png)
 

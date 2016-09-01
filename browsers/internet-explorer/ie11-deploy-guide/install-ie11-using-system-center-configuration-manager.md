@@ -12,7 +12,7 @@ ms.sitesec: library
 
 
 # Install Internet Explorer 11 (IE11) using System Center 2012 R2 Configuration Manager
-You can install Internet Explorer 11 (IE11) by using [System Center R2 2012 Configuration Manager](http://go.microsoft.com/fwlink/p/?linkid=276664). Complete these steps for each operating system and platform combination.
+You can install Internet Explorer 11 (IE11) by using [System Center R2 2012 Configuration Manager](https://go.microsoft.com/fwlink/p/?linkid=276664). Complete these steps for each operating system and platform combination.
 
  ![](images/wedge.gif) **To install IE11**
 
@@ -24,7 +24,7 @@ You can install Internet Explorer 11 (IE11) by using [System Center R2 2012 Con
 
 4.  Move the installation package to your distribution points, and then advertise the package.
 
-You can also use System Center Essentials 2010 to deploy IE11 installation packages. For info, see [System Center Essentials 2010](http://go.microsoft.com/fwlink/p/?linkid=395200) and the [System Center Essentials 2010 Operations Guide](http://go.microsoft.com/fwlink/p/?LinkId=214266).
+You can also use System Center Essentials 2010 to deploy IE11 installation packages. For info, see [System Center Essentials 2010](https://go.microsoft.com/fwlink/p/?linkid=395200) and the [System Center Essentials 2010 Operations Guide](https://go.microsoft.com/fwlink/p/?LinkId=214266).
 
  
 

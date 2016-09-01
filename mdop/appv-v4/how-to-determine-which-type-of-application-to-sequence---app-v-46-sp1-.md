@@ -41,12 +41,12 @@ Use the following table to determine which type of application you should sequen
 </tr>
 <tr class="even">
 <td align="left"><p>Add-on or Plug-in</p></td>
-<td align="left"><p>Select this option to create a package that extends the functionality of a standard application, for example, a plug-in for Microsoft Excel. Additionally, you can use plug-ins for natively installed applications, or another package that is linked by using Dynamic Suite Composition. For more information about Dynamic Suite Composition, see [How To Use Dynamic Suite Composition](http://go.microsoft.com/fwlink/?LinkId=203804) (http://go.microsoft.com/fwlink/?LinkId=203804).</p></td>
+<td align="left"><p>Select this option to create a package that extends the functionality of a standard application, for example, a plug-in for Microsoft Excel. Additionally, you can use plug-ins for natively installed applications, or another package that is linked by using Dynamic Suite Composition. For more information about Dynamic Suite Composition, see [How To Use Dynamic Suite Composition](https://go.microsoft.com/fwlink/?LinkId=203804) (https://go.microsoft.com/fwlink/?LinkId=203804).</p></td>
 <td align="left"><p>[How to Sequence a New Add-on or Plug-in Application (App-V 4.6 SP1)](how-to-sequence-a-new-add-on-or-plug-in-application--app-v-46-sp1-.md)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Middleware</p></td>
-<td align="left"><p>Select this option to create a package that is required by a standard application, for example, the Microsoft .NET Framework. Middleware packages are used for linking to other packages by using Dynamic Suite Composition. For more information about Dynamic Suite Composition, see [How To Use Dynamic Suite Composition](http://go.microsoft.com/fwlink/?LinkId=203804) (http://go.microsoft.com/fwlink/?LinkId=203804).</p></td>
+<td align="left"><p>Select this option to create a package that is required by a standard application, for example, the Microsoft .NET Framework. Middleware packages are used for linking to other packages by using Dynamic Suite Composition. For more information about Dynamic Suite Composition, see [How To Use Dynamic Suite Composition](https://go.microsoft.com/fwlink/?LinkId=203804) (https://go.microsoft.com/fwlink/?LinkId=203804).</p></td>
 <td align="left"><p>[How to Sequence a New Middleware Application (App-V 4.6 SP1)](how-to-sequence-a-new-middleware-application--app-v-46-sp1-.md)</p></td>
 </tr>
 </tbody>

@@ -64,7 +64,7 @@ Before you install AGPM Server, you must be a member of the Domain Admins group 
 
     -   Windows Server 2008: The GPMC is automatically installed by AGPM if not present.
 
-    -   Windows Vista: You must install the GPMC from RSAT before you install AGPM. For more information, see <http://go.microsoft.com/fwlink/?LinkID=116179>.
+    -   Windows Vista: You must install the GPMC from RSAT before you install AGPM. For more information, see <https://go.microsoft.com/fwlink/?LinkID=116179>.
 
 -   .NET Framework 3.5
 
@@ -90,7 +90,7 @@ The following Windows features are required by AGPM Client and will be automatic
 
     -   Windows Server 2008: The GPMC is automatically installed by AGPM if not present.
 
-    -   Windows Vista: You must install the GPMC from RSAT before you install AGPM. For more information, see <http://go.microsoft.com/fwlink/?LinkID=116179>.
+    -   Windows Vista: You must install the GPMC from RSAT before you install AGPM. For more information, see <https://go.microsoft.com/fwlink/?LinkID=116179>.
 
 -   .NET Framework 3.0
 

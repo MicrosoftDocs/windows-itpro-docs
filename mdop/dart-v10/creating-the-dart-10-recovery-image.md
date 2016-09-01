@@ -131,7 +131,7 @@ If you include the Crash Analyzer tool in the ISO image, you must also include t
 
 If you installed the Microsoft Windows Software Development Kit (SDK) or the Microsoft Windows Development Kit (WDK), the Windows 10 Debugging Tools are added to the recovery image by default, and the path to the Debugging Tools is automatically filled in. You can change the path of the Windows 10 Debugging Tools if the files are located somewhere other than the location indicated by the default file path. A link in the wizard lets you download and install debugging tools for Windows if they are not already installed.
 
-To download the Windows Debugging Tools, see [Debugging Tools for Windows](http://go.microsoft.com/fwlink/?LinkId=266248). Install the Debugging Tools to the default location.
+To download the Windows Debugging Tools, see [Debugging Tools for Windows](https://go.microsoft.com/fwlink/?LinkId=266248). Install the Debugging Tools to the default location.
 
 **Note**  
 The DaRT wizard checks for the tools in the `HKLM\Software\Microsoft\Windows Kits\Installed Roots\WindowsDebuggersRoot` registry key. If the registry value is not there, the wizard looks in one of the following locations, depending on your system architecture:

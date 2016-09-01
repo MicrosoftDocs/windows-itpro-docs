@@ -13,7 +13,7 @@ ms.prod: w10
 # How to Deploy DaRT 10
 
 
-The following instructions explain how to deploy Microsoft Diagnostics and Recovery Toolset (DaRT) 10 in your environment. To get the DaRT software, see [How to Get MDOP](http://go.microsoft.com/fwlink/?LinkId=322049). It is assumed that you are installing all functionality on one administrator computer. If you need to deploy or uninstall DaRT 10 on multiple computers, using an electronic software distribution system, for example, it might be easier to use command line installation options. Descriptions and examples of the available command line options are provided in this section.
+The following instructions explain how to deploy Microsoft Diagnostics and Recovery Toolset (DaRT) 10 in your environment. To get the DaRT software, see [How to Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049). It is assumed that you are installing all functionality on one administrator computer. If you need to deploy or uninstall DaRT 10 on multiple computers, using an electronic software distribution system, for example, it might be easier to use command line installation options. Descriptions and examples of the available command line options are provided in this section.
 
 **Important**  
 Before you install DaRT, see [DaRT 10 Supported Configurations](dart-10-supported-configurations.md) to ensure that you have installed all of the prerequisite software and that the computer meets the minimum system requirements. The computer onto which you install DaRT must be running Windows 10.

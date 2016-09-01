@@ -21,7 +21,7 @@ After the Application Virtualization (App-V) Client has been deployed and config
 
 -   Using a scripting language such as VBScript or Windows PowerShell
 
-There is also an ADM template that you can use. For more information about the ADM template, see <http://go.microsoft.com/fwlink/?LinkId=121835>.
+There is also an ADM template that you can use. For more information about the ADM template, see <https://go.microsoft.com/fwlink/?LinkId=121835>.
 
 **Caution**  
 Use care when you edit the registry because errors can leave the computer in an unusable state. Be sure to follow your standard business practices that relate to registry edits. Thoroughly test all proposed changes in a test environment before you deploy them to production computers.
