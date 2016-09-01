@@ -53,8 +53,6 @@ How does the Windows 10 Enterprise E3 in CSP program compare with Microsoft Vo
 
 In summary, the Windows 10 Enterprise E3 in CSP program is an upgrade offering that provides small- and medium-sized organizations easier, more flexible access to the benefits of Windows 10 Enterprise edition, whereas Microsoft Volume Licensing programs and Software Assurance are broader in scope and provide benefits beyond access to Windows 10 Enterprise edition.
 
-For information about deployment, see [Windows 10 Enterprise E3 deployment](windows-10-enterprise-e3-deployment.md).
-
 ## Compare Windows 10 Pro and Enterprise editions
 
 Windows 10 Enterprise edition has a number of features that are unavailable in Windows 10 Pro. Table 1 lists the Windows 10 Enterprise features not found in Windows 10 Pro. Many of these features are security-related, whereas others enable finer-grained device management.
@@ -154,7 +152,7 @@ For more information about integrating on-premises AD DS domains with Azure AD, 
 
 ### Preparing for deployment: reviewing requirements
 
-Devices must be running Windows 10 Pro, version 1607, and be Azure Active Directory joined, or domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. For more information, see [Review requirements on devices](#review-requirements-on-devices).
+Devices must be running Windows 10 Pro, version 1607, and be Azure Active Directory joined, or domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. For more information, see [Review requirements on devices](#review-requirements-on-devices), later in this topic.
 
 <!-- Watch the preceding link if you divide this into multiple topics. -->
 
@@ -283,7 +281,7 @@ Devices must be running Windows 10 Pro, version 1607, and be Azure Active Direct
 
 ## Deploy Windows 10 Enterprise features
 
-Now that you have Windows 10 Enterprise edition running on devices, how do you take advantage of the Enterprise edition features and capabilities? What are the next steps that need to be taken for each of the features discussed in [Table 1](#compare-windows10-pro-and-enterprise-editions)?
+Now that you have Windows 10 Enterprise edition running on devices, how do you take advantage of the Enterprise edition features and capabilities? What are the next steps that need to be taken for each of the features discussed in [Table 1](#compare-windows-10-pro-and-enterprise-editions)?
 
 The following sections provide you with the high-level tasks that need to be performed in your environment to help users take advantage of the Windows 10 Enterprise edition features.
 
@@ -389,8 +387,6 @@ The Managed User Experience feature is a set of Windows 10 Enterprise edition f
 | Unified write filter       | You can use Unified Write Filter (UWF) on your device to help protect your physical storage media, including most standard writable storage types that are supported by Windows, such as physical hard disks, solid-state drives, internal USB devices, external SATA devices, and so on. You can also use UWF to make read-only media appear to the OS as a writable volume.<br>For more information on these settings, see [Unified Write Filter](http://msdn.microsoft.com/library/windows/hardware/mt572001(v=vs.85).aspx).    |
 
 ## Related topics
-
-[Windows 10 Enterprise E3 Overview](windows-10-enterprise-e3-overview.md)
 
 [Connect domain-joined devices to Azure AD for Windows 10 experiences](https://azure.microsoft.com/en-us/documentation/articles/active-directory-azureadjoin-devices-group-policy/)
 
