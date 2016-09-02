@@ -257,19 +257,23 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     _SMSTSORGNAME=Contoso 
     OSInstall=YES 
     UserDataLocation=AUTO 
-    TimeZoneName=Pacific Standard Time 
+    TimeZoneName=Pacific Standard Time
+    OSDComputerName=PC_#Left("%SerialNumber%",5)#
     AdminPassword=pass@word1 
     JoinDomain=contoso.com 
-    DomainAdmin=CONTOSO\administrator 
+    DomainAdmin=administrator
+    DomainAdminDomain=CONTOSO
     DomainAdminPassword=pass@word1 
-    MachineObjectOU=OU=Workstations,OU=Computers,OU=Contoso,DC=contoso,DC=com  
+    ScanStateArgs=/ue:*\* /ui:CONTOSO\*
+    USMTMigFiles001=MigApp.xml
+    USMTMigFiles002=MigUser.xml
     HideShell=YES 
     ApplyGPOPack=NO 
     SkipAppsOnUpgrade=NO 
-    SkipAdminPassword=YES 
+    SkipAdminPassword=YES
     SkipProductKey=YES 
     SkipComputerName=NO 
-    SkipDomainMembership=YES 
+    SkipDomainMembership=YES
     SkipUserData=YES 
     SkipLocaleSelection=YES 
     SkipTaskSequence=NO 
@@ -280,6 +284,10 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     SkipCapture=YES 
     SkipFinalSummary=NO
     ```
+    **Note**: The contents of the Rules tab are added to c:\MDTProd\Control\CustomSettings.ini.
+    
+    **Important**: In this example a **MachineObjectOU** entry is not provided. Normally this entry describes the specific OU where new client computer objects are created in Active Directory. However, for the purposes of this test lab clients are added to the default computers OU, which requires that this parameter be unspecified. Similarly, the default domain administrator account is being used as a user account. These parameters and some other settings would be different in an actual production deployment.
+
 4. Click **Edit Bootstap.ini** and replace text in the file with the following text:
     ```
     [Settings] 
@@ -288,7 +296,8 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     [Default] 
     DeployRoot=\\SRV1\MDTProd$ 
     UserDomain=CONTOSO 
-    UserID=administrator 
+    UserID=administrator
+    UserPassword=pass@word1
     SkipBDDWelcome=YES
     ```
 5. Click **OK** when finished. 
@@ -301,27 +310,74 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 3. Click **Finish** when the update is complete.
 
+### Enable deployment monitoring
+
+1. In the Deployment Workbench console, right-click **MDT Production** and then click **Properties**.
+
+2. On the **Monitoring** tab, select the **Enable monitoring for this deployment share** checkbox, and then click **OK**.
+
 ### Configure Windows Deployment Services
-
-
 
 1. Initialize Windows Deployment Services (WDS) by typing the following command at an elevated Windows PowerShell prompt:
 
     ```
     WDSUTIL /Verbose /Progress /Initialize-Server /Server:SRV1 /RemInst:"C:\RemoteInstall"
+    WDSUTIL /Set-Server /AnswerClients:All
     ```
 
 2. Click **Start**, type **Windows Deployment**, and then click **Windows Deployment Services**.
 
 3. Expand SRV1.contoso.com, right-click **Boot Images**, and then click **Add Boot Image**.
 
-4. Browse to the **C:\MDTProd\Boot\LiteTouchPE_x64.wim** file, click **Open**, and accept the defaults in the Add Image Wizard.
+4. Browse to the **C:\MDTProd\Boot\LiteTouchPE_x64.wim** file, click **Open**, click **Next**, and accept the defaults in the Add Image Wizard. Click **Finish** to complete adding a boot image.
 
 ### Deploy the client image
 
-1. 
+1. Before using WDS to deploy a client image, you might need to temporarily disable the external network adapter on SRV1. This is just an artifact of the lab environment. **Note**: Do not disable the *internal* network interface. To disable the *external* interface on SRV1, open a Windows PowerShell prompt on SRV1 and type the following command:
 
+    ```
+    Disable-NetAdapter "Ethernet 2" -Confirm:$false
+    ```
 
+2. Next, switch to the Hyper-V host and open an elevated Windows PowerShell prompt. Create a generation 2 VM on the Hyper-V host that will load its OS using PXE. To create this VM, type the following commands at an elevated Windows PowerShell prompt:
+
+    ```
+    New-VM –Name "PC2" –NewVHDPath "c:\vhd\pc2.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
+    Set-VMMemory -VMName "PC2" -DynamicMemoryEnabled $true -MinimumBytes 1024MB -MaximumBytes 2048MB -Buffer 20
+    ```
+3. Start the new VM and connect to it:
+
+    ```
+    Start-VM PC2
+    vmconnect localhost PC2
+    ```
+4. When prompted, hit ENTER to start the network boot process.
+
+5. Choose the **Windows 10 Enterprise x64 Custom Image** and then click **Next**.
+
+6. When prompted to enter computer details, next to **Computer name** type **PC2** and then click **Next**. 
+
+    **Important**: When lite touch installation has started, be sure to re-enable the external network adapter on SRV1. This is needed so the client can use Windows Update after operating system installation is complete.  
+
+7. To re-enable the external network interface, open an elevated Windows PowerShell prompt on SRV1 and type the following command:
+
+    ```
+    Enable-NetAdapter "Ethernet 2"
+    ```
+8. When OS installation is complete, the system will reboot automatically and begin configuring devices.  When the new client computer is finished updating, click **Finish**. You will be automatically signed in to the local computer as pc2\administrator. 
+
+9. Turn off the PC2 VM before starting the next section.  To turn off the VM, right-click Start, point to Shut down or sign out, and then click Shut down.
+
+### Refresh a computer with Windows 10
+
+This topic will demonstrate how to export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings. The scenario will use PC1, a computer that was cloned from a physical device to a VM, as described in [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md). 
+
+1. Sign on to PC1 using the CONTOSO\Administrator account, open an elevated command prompt, and type the following command:
+
+    ```
+    \\SRV1\MDTProd$\Scripts\Litetouch.vbs
+    ```
+2. 
 
 
 ## Related Topics

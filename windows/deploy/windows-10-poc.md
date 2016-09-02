@@ -452,22 +452,24 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     Ethernet 2                Microsoft Hyper-V Network Adapter #2         14 Up           00-15-5D-83-26-06         1 Gbps
     Ethernet                  Microsoft Hyper-V Network Adapter            12 Up           00-15-5D-83-26-05        10 Gbps
     ``` 
-24. The DNS server role was installed on SRV1 so that we can forward DNS queries from DC1 to SRV1 to resolve Internet names without having to configure a forwarder outside the PoC network.  The last step to configure network services on the PoC network is to add this DNS forwarder. To add a server-level DNS forwarder on DC1, type the following command at an elevated command prompt on DC1:
+24. The DNS server role was installed on SRV1 so that we can forward DNS queries from DC1 to SRV1 to resolve Internet names without having to configure a forwarder outside the PoC network. To add this server-level DNS forwarder on DC1, type the following command at an elevated command prompt on DC1:
     ```
     Add-DnsServerForwarder -IPAddress 192.168.0.2
     ```
-25. If your corporate network has a firewall that filters recursive DNS queries, you might be forced to configure a DNS forwarder outside the PoC network in order to resolve Internet names. To do this, open an elevated Windows PowerShell prompt on SRV1 and type the following commands:
+25. The DNS service on SRV1 also needs to resolve hosts in the contoso.com domain. This can be accomplished with a conditional forwarder. To add a conditional forwarder, open an elevated Windows PowerShell prompt on SRV1 and type the following command:
+    ```
+    Add-DnsServerConditionalForwarderZone -Name contoso.com -MasterServers 192.168.0.1
+    ```
+26. If your corporate network has a firewall that filters queries from local DNS servers, you might be forced to configure a server-level DNS forwarder to resolve Internet names. To do this, open an elevated Windows PowerShell prompt on SRV1 and type the following commands:
     ```
     Add-DnsServerForwarder -IPAddress (Get-DnsClientServerAddress -InterfaceAlias "Ethernet 2").ServerAddresses
     ```   
-26. Verify that all three VMs on the PoC network can reach the Internet.
-27. Because the client computer has different hardware after coping it to a VM, its Windows activation will be invalidated and you might receive a message that you must activate Windows in 3 days.  To extend this period to 30 days, type the following commands at an elevated Windows PowerShell prompt on PC1:
+27. Verify that all three VMs on the PoC network can reach the Internet, and each other.
+28. Because the client computer has different hardware after copying it to a VM, its Windows activation will be invalidated and you might receive a message that you must activate Windows in 3 days.  To extend this period to 30 days, type the following commands at an elevated Windows PowerShell prompt on PC1:
     ```
     slmgr -rearm
     Restart-Computer
     ```
-
-
 
 ## Appendix A: Configuring Hyper-V on Windows Server 2008 R2
 
