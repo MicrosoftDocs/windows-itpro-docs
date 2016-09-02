@@ -14,6 +14,7 @@ You've already completed this step.
 We've tried to make editing an existing file as simple as possible. 
 
 **To edit a topic**
+
 1.	Go to the page on TechNet that you want to update, and then click **Contribute**.
 
        ![GitHub Web, showing the Contribute link](images/contribute-link.png)
@@ -32,7 +33,7 @@ We've tried to make editing an existing file as simple as possible.
 
     ![GitHub Web, showing the Propose file change button](images/propose-file-change.png)
 
-    The Comparing changes screen appears to see what the changes are between your fork and the original content.
+    The **Comparing changes** screen appears to see what the changes are between your fork and the original content.
 
 6.	On the **Comparing changes** screen, you’ll see if there are any problems with the file you’re checking in.
 
