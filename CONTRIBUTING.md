@@ -25,6 +25,7 @@ We've tried to make editing an existing file as simple as possible.
 
 3.	Using markdown language, make your changes to the topic. For info about how to edit content using markdown, see:
     - **If you're linked to the Microsoft organization in GitHub:** [Windows Open Publishing Guide Home](http://aka.ms/windows-op-guide)
+    
     - **If you're external to Microsoft:** [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) 
 
 4.	Make your suggested change, and then click **Preview Changes** to make sure it looks correct.
