@@ -30,22 +30,33 @@ We've tried to make editing an existing file as simple as possible.
 
 5. When you’re done editing the topic, scroll to the bottom of the page, and then click **Propose file change** to create a fork in your personal GitHub account.
 
-       ![GitHub Web, showing the Propose file change button](images/propose-file-change.png)
+    ![GitHub Web, showing the Propose file change button](images/propose-file-change.png)
 
-The Comparing changes screen appears to see what the changes are between your fork and the original content.
-6.	On the Comparing changes screen, you’ll see if there are any problems with the file you’re checking in.
-If there are no problems, you’ll see the message, Able to merge.
+    The Comparing changes screen appears to see what the changes are between your fork and the original content.
 
+6.	On the **Comparing changes** screen, you’ll see if there are any problems with the file you’re checking in.
 
-If your request is accepted, updates are published to one of the following places:
+    If there are no problems, you’ll see the message, **Able to merge**.
 
-- [Windows 10](https://technet.microsoft.com/itpro/windows)
-- [Internet Explorer 11](https://technet.microsoft.com/itpro/internet-explorer)
-- [Microsoft Edge](https://technet.microsoft.com/itpro/microsoft-edge)
-- [Surface](https://technet.microsoft.com/itpro/surface)
-- [Surface Hub](https://technet.microsoft.com/itpro/surface-hub)
-- [Windows 10 for Education](https://technet.microsoft.com/edu/windows)
-- [Microsoft Desktop Optimization Pack](https://technet.microsoft.com/itpro/mdop) 
+    ![GitHub Web, showing the Comparing changes screen](images/compare-changes.png)
+
+7.	Click **Create pull request**.
+
+8.	Enter a title and description to give the approver the appropriate context about what’s in the request.
+
+9.	Scroll to the bottom of the page, making sure that only your changed files are in this pull request. Otherwise, you could overwrite changes from other people.
+
+10.	Click **Create pull request**.
+
+    The pull request is sent to the writer of the topic and your edits are reviewed. If your request is accepted, updates are published to one of the following places:
+
+    - [Windows 10](https://technet.microsoft.com/itpro/windows)
+    - [Internet Explorer 11](https://technet.microsoft.com/itpro/internet-explorer)
+    - [Microsoft Edge](https://technet.microsoft.com/itpro/microsoft-edge)
+    - [Surface](https://technet.microsoft.com/itpro/surface)
+    - [Surface Hub](https://technet.microsoft.com/itpro/surface-hub)
+    - [Windows 10 for Education](https://technet.microsoft.com/edu/windows)
+    - [Microsoft Desktop Optimization Pack](https://technet.microsoft.com/itpro/mdop) 
 
 ## Making more substantial changes
 
