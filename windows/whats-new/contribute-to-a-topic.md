@@ -1,5 +1,5 @@
 ---
-title: Edit an existing topic
+title: Edit an existing topic using the Contribute link
 description: Instructions about how to edit an existing topic by using the Contribute link.
 keywords: contribute, edit a topic
 ms.prod: w10
