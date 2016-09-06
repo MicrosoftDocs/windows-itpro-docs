@@ -217,14 +217,23 @@ If you have to remove Credential Guard on a PC, you need to do the following:
 
 1.  From an elevated command prompt, type the following commands:
     ``` syntax
+
     mountvol X: /s
+    
     copy %WINDIR%\System32\SecConfig.efi X:\EFI\Microsoft\Boot\SecConfig.efi /Y
+    
     bcdedit /create {0cb3b571-2f2e-4343-a879-d86a476d7215} /d "DebugTool" /application osloader
+    
     bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} path "\EFI\Microsoft\Boot\SecConfig.efi"
+    
     bcdedit /set {bootmgr} bootsequence {0cb3b571-2f2e-4343-a879-d86a476d7215}
+    
     bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO
+    
     bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} device partition=X:
+    
     mountvol X: /d
+    
     ```
 2.  Restart the PC.
 3.  Accept the prompt to disable Credential Guard.
