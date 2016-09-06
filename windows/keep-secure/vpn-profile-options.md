@@ -15,6 +15,7 @@ localizationpriority: high
 **Applies to**
 -   Windows 10
 -   Windows 10 Mobile
+-   Windows XP (Don't accept this)
 
 Virtual private networks (VPN) let you give your users secure remote access to your company network. Windows 10 adds useful new VPN profile options to help you manage how users connect.
 
