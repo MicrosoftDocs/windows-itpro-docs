@@ -3,7 +3,7 @@
     "content":
       [
         {
-          "files": ["**/**.md"],
+          "files": ["**/**.md", "**/**.yml"],
           "exclude": ["**/obj/**"]
         }
       ],
@@ -14,7 +14,8 @@
         }
     ],
     "globalMetadata": {
-        "ROBOTS": "INDEX, FOLLOW"
+        "ROBOTS": "INDEX, FOLLOW",
+        "breadcrumb_path": "/itpro/windows/breadcrumb/toc.json"
     },
     "externalReference": [
     ],

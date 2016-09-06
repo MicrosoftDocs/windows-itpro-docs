@@ -34,9 +34,9 @@ After you have finished running the DaRT Recovery Image Wizard and created the r
 
 For more information about how to deploy DaRT as a remote partition, see the following:
 
--   [Walkthrough: Deploy an Image by Using PXE](http://go.microsoft.com/fwlink/?LinkId=212108)
+-   [Walkthrough: Deploy an Image by Using PXE](https://go.microsoft.com/fwlink/?LinkId=212108)
 
--   [Windows Deployment Services Getting Started Guide](http://go.microsoft.com/fwlink/?LinkId=212106)
+-   [Windows Deployment Services Getting Started Guide](https://go.microsoft.com/fwlink/?LinkId=212106)
 
 ## Related topics
 

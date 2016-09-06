@@ -30,7 +30,7 @@ The name of the certificate must match the name of the server. It is a best prac
 
  
 
-App-V can use IIS servers to support different infrastructure configurations. For more information about configuring IIS servers to support HTTPS, see <http://go.microsoft.com/fwlink/?LinkId=151972>.
+App-V can use IIS servers to support different infrastructure configurations. For more information about configuring IIS servers to support HTTPS, see <https://go.microsoft.com/fwlink/?LinkId=151972>.
 
 ## Related topics
 

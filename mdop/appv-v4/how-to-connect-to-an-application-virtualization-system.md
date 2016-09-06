@@ -22,15 +22,15 @@ You must connect the Application Virtualization Server Management Console to an 
     **Note**  
     There are three components to Application Virtualization server management: the Application Virtualization Management Console, the Management Web Service, and the SQL Datastore. If these components are distributed across different physical machines, you must configure security properly for the components to communicate across the system. For more information, see the following manuals and articles:
 
-    [How to Configure the Server to be Trusted for Delegation](http://go.microsoft.com/fwlink/?LinkID=166682) (http://go.microsoft.com/fwlink/?LinkID=166682)
+    [How to Configure the Server to be Trusted for Delegation](https://go.microsoft.com/fwlink/?LinkID=166682) (https://go.microsoft.com/fwlink/?LinkID=166682)
 
-    [Planning and Deployment Guide for the Application Virtualization System](http://go.microsoft.com/fwlink/?LinkID=122063) (http://go.microsoft.com/fwlink/?LinkID=122063)
+    [Planning and Deployment Guide for the Application Virtualization System](https://go.microsoft.com/fwlink/?LinkID=122063) (https://go.microsoft.com/fwlink/?LinkID=122063)
 
-    [Operations Guide for the Application Virtualization System](http://go.microsoft.com/fwlink/?LinkID=133129) (http://go.microsoft.com/fwlink/?LinkID=133129)
+    [Operations Guide for the Application Virtualization System](https://go.microsoft.com/fwlink/?LinkID=133129) (https://go.microsoft.com/fwlink/?LinkID=133129)
 
-    [Article 930472](http://go.microsoft.com/fwlink/?LinkId=114647) in the Microsoft Knowledge Base (http://go.microsoft.com/fwlink/?LinkId=114647)
+    [Article 930472](https://go.microsoft.com/fwlink/?LinkId=114647) in the Microsoft Knowledge Base (https://go.microsoft.com/fwlink/?LinkId=114647)
 
-    [Article 930565](http://go.microsoft.com/fwlink/?LinkId=114648) in the Microsoft Knowledge Base (http://go.microsoft.com/fwlink/?LinkId=114648)
+    [Article 930565](https://go.microsoft.com/fwlink/?LinkId=114648) in the Microsoft Knowledge Base (https://go.microsoft.com/fwlink/?LinkId=114648)
 
      
 

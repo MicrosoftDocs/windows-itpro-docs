@@ -11,6 +11,8 @@ ms.prod: w10
 
 # Application Publishing and Client Interaction
 
+**Applies to**
+-   Windows 10, version 1607
 
 This article provides technical information about common App-V client operations and their integration with the local operating system.
 
@@ -21,8 +23,8 @@ The Sequencer creates App-V packages and produces a virtualized application. The
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="30%" />
+<col width="70%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -65,9 +67,7 @@ The Sequencer creates App-V packages and produces a virtualized application. The
 </tbody>
 </table>
 
- 
-
-For information about sequencing, see [Application Virtualization Sequencing Guide](http://go.microsoft.com/fwlink/?LinkID=269810).
+For information about sequencing, see [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).
 
 ## What’s in the appv file?
 
@@ -123,7 +123,7 @@ To change the default location of the package store during setup, see [Enable th
 
 ### Shared Content Store
 
-If the App-V Client is configured in Shared Content Store mode, no data is written to disk when a stream fault occurs, which means that the packages require minimal local disk space (publishing data). The use of less disk space is highly desirable in VDI environments, where local storage can be limited, and streaming the applications from a high performance network location (such as a SAN) is preferable. For more information on shared content store mode, see <http://go.microsoft.com/fwlink/p/?LinkId=392750>.
+If the App-V Client is configured in Shared Content Store mode, no data is written to disk when a stream fault occurs, which means that the packages require minimal local disk space (publishing data). The use of less disk space is highly desirable in VDI environments, where local storage can be limited, and streaming the applications from a high performance network location (such as a SAN) is preferable. For more information, see [Shared Content Store in Microsoft App-V 5.0 - Behind the Scenes](https://blogs.technet.microsoft.com/appv/2013/07/22/shared-content-store-in-microsoft-app-v-5-0-behind-the-scenes/).
 
 > [!NOTE]  
 > The machine and package store must be located on a local drive, even when you’re using Shared Content Store configurations for the App-V Client.
@@ -232,7 +232,7 @@ The Package Store contains a pristine copy of the package files that have been s
 
 ### COW roaming
 
-The COW Roaming location described above stores changes to files and directories that are targeted to the typical %AppData% location or \\Users\\*<username>*\\AppData\\Roaming location. These directories and files are then roamed based on the operating system settings.
+The COW Roaming location described above stores changes to files and directories that are targeted to the typical %AppData% location or \\Users\\*&lt;username&gt;*\\AppData\\Roaming location. These directories and files are then roamed based on the operating system settings.
 
 ### COW local
 
@@ -383,7 +383,7 @@ App-V Packages are staged upon addition to the computer with the App-V Client. T
 
 ### Mounting packages
 
-Packages can be explicitly loaded using the PowerShell `Mount-AppVClientPackage` or by using the **App-V Client UI** to download a package. This operation completely loads the entire package into the package store.
+Packages can be explicitly loaded using the Windows PowerShell `Mount-AppVClientPackage` or by using the **App-V Client UI** to download a package. This operation completely loads the entire package into the package store.
 
 ### Streaming packages
 
@@ -441,7 +441,7 @@ These settings affect the behavior of streaming App-V package assets to the clie
 
 ### Background streaming
 
-The PowerShell cmdlet `Get-AppvClientConfiguration` can be used to determine the current mode for background streaming with the AutoLoad setting and modified with the cmdlet Set-AppvClientConfiguration or from the registry (HKLM\\SOFTWARE\\Microsoft\\AppV\\ClientStreaming key). Background streaming is a default setting where the Autoload setting is set to download previously used packages. The behavior based on default setting (value=1) downloads App-V data blocks in the background after the application has been launched. This setting can be disabled all together (value=0) or enabled for all packages (value=2), whether they have been launched.
+The Windows PowerShell cmdlet `Get-AppvClientConfiguration` can be used to determine the current mode for background streaming with the AutoLoad setting and modified with the cmdlet Set-AppvClientConfiguration or from the registry (HKLM\\SOFTWARE\\Microsoft\\AppV\\ClientStreaming key). Background streaming is a default setting where the Autoload setting is set to download previously used packages. The behavior based on default setting (value=1) downloads App-V data blocks in the background after the application has been launched. This setting can be disabled all together (value=0) or enabled for all packages (value=2), whether they have been launched.
 
 ### Optimized streaming
 
@@ -457,7 +457,7 @@ App-V Packages require updating throughout the lifecycle of the application. App
 
 ### Package removal
 
-The behavior of the App-V Client when packages are removed depends on the method used for removal. Using an App-V full infrastructure to unpublish the application, the user catalog files (machine catalog for globally published applications) are removed, but retains the package store location and COW locations. When the PowerShell cmdlet `Remove-AppVClientPackge` is used to remove an App-V Package, the package store location is cleaned. Remember that unpublishing an App-V Package from the Management Server does not perform a Remove operation. Neither operation will remove the Package Store package files.
+The behavior of the App-V Client when packages are removed depends on the method used for removal. Using an App-V full infrastructure to unpublish the application, the user catalog files (machine catalog for globally published applications) are removed, but retains the package store location and COW locations. When the Windows PowerShell cmdlet `Remove-AppVClientPackge` is used to remove an App-V Package, the package store location is cleaned. Remember that unpublishing an App-V Package from the Management Server does not perform a Remove operation. Neither operation will remove the Package Store package files.
 
 ## <a href="" id="bkmk-roaming-reg-data"></a>Roaming registry and data
 
@@ -598,11 +598,11 @@ This process will re-create both the local and network locations for AppData and
 ## App-V client application lifecycle management
 
 
-In an App-V Full Infrastructure, after applications are sequenced they are managed and published to users or computers via the App-V Management and Publishing servers. This section details the operations that occur during the common App-V application lifecycle operations (Add, publishing, launch, upgrade, and removal) and the file and registry locations that are changed and modified from the App-V Client perspective. The App-V Client operations are performed as a series of PowerShell commands initiated on the computer running the App-V Client.
+In an App-V Full Infrastructure, after applications are sequenced they are managed and published to users or computers via the App-V Management and Publishing servers. This section details the operations that occur during the common App-V application lifecycle operations (Add, publishing, launch, upgrade, and removal) and the file and registry locations that are changed and modified from the App-V Client perspective. The App-V Client operations are performed as a series of Windows PowerShell commands initiated on the computer running the App-V Client.
 
-This document focuses on App-V Full Infrastructure solutions. For specific information on App-V Integration with Configuration Manager 2012 visit: <http://go.microsoft.com/fwlink/?LinkId=392773>.
+This document focuses on App-V Full Infrastructure solutions. For specific information on App-V Integration with Configuration Manager 2012, see [Integrating Virtual Application Management with App-V 5 and Configuration Manager 2012 SP1](https://www.microsoft.com/en-us/download/details.aspx?id=38177).
 
-The App-V application lifecycle tasks are triggered at user login (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured during setup of the client or post-setup with PowerShell commands. See [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md) or use Windows PowerShell:
+The App-V application lifecycle tasks are triggered at user login (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured during setup of the client or post-setup with Windows PowerShell commands. See [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md) or use Windows PowerShell:
 
 ``` syntax
 get-command *appv*
@@ -610,7 +610,7 @@ get-command *appv*
 
 ### Publishing refresh
 
-The publishing refresh process is comprised of several smaller operations that are performed on the App-V Client. Since App-V is an application virtualization technology and not a task scheduling technology, the Windows Task Scheduler is utilized to enable the process at user logon, machine startup, and at scheduled intervals. The configuration of the client during setup listed above is the preferred method when distributing the client to a large group of computers with the correct settings. These client settings can be configured with the following PowerShell cmdlets:
+The publishing refresh process is comprised of several smaller operations that are performed on the App-V Client. Since App-V is an application virtualization technology and not a task scheduling technology, the Windows Task Scheduler is utilized to enable the process at user logon, machine startup, and at scheduled intervals. The configuration of the client during setup listed above is the preferred method when distributing the client to a large group of computers with the correct settings. These client settings can be configured with the following Windows PowerShell cmdlets:
 
 -   **Add-AppVPublishingServer:** Configures the client with an App-V Publishing Server that provides App-V packages.
 
@@ -628,7 +628,7 @@ The focus of the following sections is to detail the operations that occur durin
 
 ### Adding an App-V package
 
-Adding an App-V package to the client is the first step of the publishing refresh process. The end result is the same as the `Add-AppVClientPackage` cmdlet in PowerShell, except during the publishing refresh add process, the configured publishing server is contacted and passes a high-level list of applications back to the client to pull more detailed information and not a single package add operation. The process continues by configuring the client for package or connection group additions or updates, then accesses the appv file. Next, the contents of the appv file are expanded and placed on the local operating system in the appropriate locations. The following is a detailed workflow of the process, assuming the package is configured for Fault Streaming.
+Adding an App-V package to the client is the first step of the publishing refresh process. The end result is the same as the `Add-AppVClientPackage` cmdlet in Windows PowerShell, except during the publishing refresh add process, the configured publishing server is contacted and passes a high-level list of applications back to the client to pull more detailed information and not a single package add operation. The process continues by configuring the client for package or connection group additions or updates, then accesses the appv file. Next, the contents of the appv file are expanded and placed on the local operating system in the appropriate locations. The following is a detailed workflow of the process, assuming the package is configured for Fault Streaming.
 
 **How to add an App-V package**
 
@@ -990,7 +990,7 @@ The App-V Client supports publishing applications with support for COM integrati
 
 App-V supports registering COM objects from the package to the local operating system with two process types: Out-of-process and in-process. Registering COM objects is accomplished with one or a combination of multiple modes of operation for a specific App-V package that includes off, Isolated, and Integrated. The integrated mode is configured for either the out-of-process or in-process type. Configuration of COM modes and types is accomplished with dynamic configuration files (deploymentconfig.xml or userconfig.xml).
 
-Details on App-V integration are available at: <http://go.microsoft.com/fwlink/?LinkId=392834>.
+For details on App-V integration, see [Microsoft Application Virtualization 5.0 Integration](https://blogs.technet.microsoft.com/appv/2013/01/03/microsoft-application-virtualization-5-0-integration).
 
 ### Software clients and application capabilities
 
@@ -1059,7 +1059,7 @@ For situations where there is more than one application that could register the 
 
 The AppPath extension point supports calling App-V applications directly from the operating system. This is typically accomplished from the Run or Start Screen, depending on the operating system, which enables administrators to provide access to App-V applications from operating system commands or scripts without calling the specific path to the executable. It therefore avoids modifying the system path environment variable on all systems, as it is accomplished during publishing.
 
-The AppPath extension point is configured either in the manifest or in the dynamic configuration files and is stored in the registry on the local machine during publishing for the user. For additional information on AppPath review: <http://go.microsoft.com/fwlink/?LinkId=392835>.
+The AppPath extension point is configured either in the manifest or in the dynamic configuration files and is stored in the registry on the local machine during publishing for the user. For additional information on AppPath review: [App Paths - A Virtual Application Extension in App-V 5.0](https://blogs.technet.microsoft.com/virtualworld/2012/12/12/app-paths-a-virtual-application-extension-in-app-v-5-0/).
 
 ### Virtual application
 
@@ -1181,7 +1181,7 @@ App-V Packages contain the Manifest file inside of the appv package file, which 
 
 ### Example for dynamic configuration files
 
-The example below shows the combination of the Manifest, Deployment Configuration and User Configuration files after publishing and during normal operation. These examples are abbreviated examples of each of the files. The purpose is show the combination of the files only and not to be a complete description of the specific categories available in each of the files. For more information review the App-V Sequencing Guide at: [http://go.microsoft.com/fwlink/?LinkID=269810](http://go.microsoft.com/fwlink/?LinkID=269810).
+The example below shows the combination of the Manifest, Deployment Configuration and User Configuration files after publishing and during normal operation. These examples are abbreviated examples of each of the files. The purpose is show the combination of the files only and not to be a complete description of the specific categories available in each of the files. For more information, download the [App-V Sequencing Guide](https://www.microsoft.com/en-us/download/details.aspx?id=27760).
 
 **Manifest**
 
@@ -1288,4 +1288,4 @@ There are three specific categories of events recorded described below.
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

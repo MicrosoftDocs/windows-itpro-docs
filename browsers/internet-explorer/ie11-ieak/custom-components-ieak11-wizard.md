@@ -1,15 +1,17 @@
 ---
-description: How to use the Custom Components page in the IEAK 11 Customization Wizard to add additional components for your employees to install with IE. 
-ms.assetid: 38a2b90f-c324-4dc8-ad30-8cd3e3e901d7
+localizationpriority: low
+ms.mktglfcycl: deploy
+description: How to use the Custom Components page in the IEAK 11 Customization Wizard to add additional components for your employees to install with IE.
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 38a2b90f-c324-4dc8-ad30-8cd3e3e901d7
 title: Use the Custom Components page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
 
+
 # Use the Custom Components page in the IEAK 11 Wizard
-The **Custom Components** page of the Internet Explorer Customization Wizard 11 lets you add up to 10 additional components that your employees can install at the same time they install IE. These components can be created by Microsoft or your organization as either compressed cabinet (.cab) or self-extracting executable (.exe) files. If you’re using Microsoft components, make sure you have the latest version and software patches from the [Microsoft Support](http://go.microsoft.com/fwlink/p/?LinkId=258658) site. To include Microsoft Update components, you must bundle the associated files into a custom component.
+The **Custom Components** page of the Internet Explorer Customization Wizard 11 lets you add up to 10 additional components that your employees can install at the same time they install IE. These components can be created by Microsoft or your organization as either compressed cabinet (.cab) or self-extracting executable (.exe) files. If you’re using Microsoft components, make sure you have the latest version and software patches from the [Microsoft Support](https://go.microsoft.com/fwlink/p/?LinkId=258658) site. To include Microsoft Update components, you must bundle the associated files into a custom component.
 
 **Important**<br>You should sign any custom code that’s being downloaded over the Internet. The default settings of Internet Explorer 11 will automatically reject any unsigned code. For more info about digitally signing custom components, see [Security features and IEAK 11](security-and-ieak11.md).
 

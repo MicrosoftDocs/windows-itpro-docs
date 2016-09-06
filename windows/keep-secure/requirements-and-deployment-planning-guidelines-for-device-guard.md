@@ -4,6 +4,7 @@ description: To help you plan a deployment of Microsoft Device Guard, this artic
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 author: brianlic-msft
 ---
 
@@ -22,7 +23,9 @@ This article describes the following:
 - [Reviewing your applications: application signing and catalog files](#reviewing-your-applications-application-signing-and-catalog-files)
 - [Code integrity policy formats and signing](#code-integrity-policy-formats-and-signing)
 
-The information in this article provides a foundation for [Planning and getting started on the Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
+The information in this article is intended for IT professionals, and provides a foundation for [Planning and getting started on the Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
+
+>**Note**&nbsp;&nbsp;If you are an OEM, see the requirements information at [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514(v=vs.85).aspx).
 
 ## Hardware, firmware, and software requirements for Device Guard
 

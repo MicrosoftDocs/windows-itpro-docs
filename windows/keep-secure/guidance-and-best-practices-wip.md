@@ -8,6 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
+localizationpriority: high
 ---
 
 # General guidance and best practices for Windows Information Protection (WIP)
@@ -22,6 +23,6 @@ This section includes info about the enlightened Microsoft apps, including how t
 |Topic |Description |
 |------|------------|
 |[Windows Information Protection (WIP) overview](wip-enterprise-overview.md) |High-level overview info about why to use WIP, the enterprise scenarios, and how to turn it off. |
-|[Mandatory settings for Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |A list of all of the tasks and settings that are required for the operating system to turn on Windows Information Protection (WIP), formerly known as Windows Information Protection (WIP), in your enterprise. |
+|[Mandatory settings for Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |A list of all of the tasks and settings that are required for the operating system to turn on Windows Information Protection (WIP), formerly known as enterprise data protection (EDP), in your enterprise. |
 |[Enlightened apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md) |Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your allowed apps list. |
 |[Testing scenarios for Windows Information Protection (WIP)](testing-scenarios-for-wip.md) |We've come up with a list of suggested testing scenarios that you can use to test WIP in your company. |

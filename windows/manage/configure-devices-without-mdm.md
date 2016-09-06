@@ -71,7 +71,7 @@ Provisioning packages are simple for employees to install. And when they remove 
 
      
 
-For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( http://go.microsoft.com/fwlink/p/?LinkId=619012).
+For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( https://go.microsoft.com/fwlink/p/?LinkId=619012).
 
 ## Create a provisioning package 
 
@@ -125,7 +125,7 @@ When you run Windows ICD, you have several options for creating your package.
 3.  Name your project, and click **Next**.
 4.  Choose **All Windows editions**, **All Windows desktop editions**, or **All Windows mobile editions**, depending on the devices you intend to provision, and click **Next**.
 5.  On **New project**, click **Finish**. The workspace for your package opens.
-6.  Configure settings. [Learn more about specific settings in provisioning packages.]( http://go.microsoft.com/fwlink/p/?LinkId=615916)
+6.  Configure settings. [Learn more about specific settings in provisioning packages.]( https://go.microsoft.com/fwlink/p/?LinkId=615916)
 7.  On the **File** menu, select **Save.**
 8.  On the **Export** menu, select **Provisioning package**.
 9.  Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
@@ -155,7 +155,7 @@ When you run Windows ICD, you have several options for creating your package.
     -   Email
     -   USB tether (mobile only)
 
-Learn more: [Build and apply a provisioning package](http://go.microsoft.com/fwlink/p/?LinkID=629651)
+Learn more: [Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkID=629651)
 
 ## Apply package
 
@@ -186,9 +186,9 @@ On a mobile device, the employee goes to **Settings** &gt; **Accounts** &gt; **P
 ## Learn more
 
 
--   [Provisioning Windows 10 Devices with New Tools](http://go.microsoft.com/fwlink/p/?LinkId=615921)
+-   [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
--   [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](http://go.microsoft.com/fwlink/p/?LinkId=615922)
+-   [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
 
  
 

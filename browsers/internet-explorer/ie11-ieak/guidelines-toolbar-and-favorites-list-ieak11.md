@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: plan
 description: Customization guidelines for your Internet Explorer toolbar button and Favorites List icons.
-ms.assetid: bddc8f23-9ac1-449d-ad71-f77f43ae3b5c
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: plan
-ms.sitesec: library
+ms.assetid: bddc8f23-9ac1-449d-ad71-f77f43ae3b5c
 title: Customize the toolbar button and Favorites List icons using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Customize the Toolbar button and Favorites List icons using IEAK 11
 Use these customization guidelines to change the browser toolbar button and the **Favorites List** icons, using your own branding and graphics.
@@ -19,3 +21,4 @@ Use these customization guidelines to change the browser toolbar button and the 
 |Favorites List icons   |1 icon (.ico) file for each new URL. |
 
 Your icons must use the .ico file extension, no other image file extension works.
+

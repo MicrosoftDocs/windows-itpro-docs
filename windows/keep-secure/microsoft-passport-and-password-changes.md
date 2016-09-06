@@ -9,7 +9,7 @@ ms.pagetype: security
 author: jdeckerMS
 localizationpriority: high
 ---
-# Microsoft Passport and password changes
+# Windows Hello and password changes
 
 **Applies to**
 -   Windows 10

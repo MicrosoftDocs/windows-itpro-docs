@@ -260,7 +260,7 @@ Assign the setting-migration priority based on how critical the setting is to th
 
 Many of your users may be using Google Apps Gmail to manage their email, calendars, and contacts. You need to create the list of users you will migrate and the best time to perform the migration.
 
-Office 365 supports automated migration from Google Apps Gmail to Office 365. For more information, see [Migrate Google Apps mailboxes to Office 365](http://go.microsoft.com/fwlink/p/?LinkId=690252).
+Office 365 supports automated migration from Google Apps Gmail to Office 365. For more information, see [Migrate Google Apps mailboxes to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=690252).
 
 **Identify the list of user mailboxes to migrate**
 
@@ -268,7 +268,7 @@ In regards to creating the list of users you will migrate, it might seem that th
 
 Also, when you perform a migration it is a great time to verify that all user mailboxes are active. In many environments there are a significant number of mailboxes that were provisioned for users that are no longer a part of the institution (such as interns or student assistants). You can eliminate these users from your list of user mailboxes to migrate.
 
-Create your list of user mailboxes to migrate in Excel 2016 based on the format described in step 7 in [Create a list of Gmail mailboxes to migrate](http://go.microsoft.com/fwlink/p/?LinkId=690253). If you follow this format, you can use the Microsoft Excel spreadsheet to perform the actual migration later in the process.
+Create your list of user mailboxes to migrate in Excel 2016 based on the format described in step 7 in [Create a list of Gmail mailboxes to migrate](https://go.microsoft.com/fwlink/p/?LinkId=690253). If you follow this format, you can use the Microsoft Excel spreadsheet to perform the actual migration later in the process.
 
 **Identify companion devices that access Google Apps Gmail**
 
@@ -276,7 +276,7 @@ In addition to Chromebook devices, users may have companion devices (smartphones
 
 After you have identified each companion device, verify the settings for the device that are used to access Office 365. You only need to test one type of each companion device. For example, if users use Android phones to access Google Apps Gmail mailboxes, configure the device to access Office 365 and then record those settings. You can publish those settings on a website or to your helpdesk staff so that users will know how to access their Office 365 mailbox.
 
-In most instances, users will only need to provide in their Office 365 email account and password. However, you should verify this on each type of companion device. For more information about how to configure a companion device to work with Office 365, see [Compare how different mobile devices work with Office 365](http://go.microsoft.com/fwlink/p/?LinkId=690254).
+In most instances, users will only need to provide in their Office 365 email account and password. However, you should verify this on each type of companion device. For more information about how to configure a companion device to work with Office 365, see [Compare how different mobile devices work with Office 365](https://go.microsoft.com/fwlink/p/?LinkId=690254).
 
 **Identify the optimal timing for the migration**
 
@@ -630,11 +630,11 @@ Examine each of the following network infrastructure technologies and services a
 
     For more information that compares Internet bandwidth consumption for Chromebook and Windows devices, see the following resources:
 
-    -   [Chromebook vs. Windows Notebook Network Traffic Analysis](http://go.microsoft.com/fwlink/p/?LinkId=690255)
+    -   [Chromebook vs. Windows Notebook Network Traffic Analysis](https://go.microsoft.com/fwlink/p/?LinkId=690255)
 
-    -   [Hidden Cost of Chromebook Deployments](http://go.microsoft.com/fwlink/p/?LinkId=690256)
+    -   [Hidden Cost of Chromebook Deployments](https://go.microsoft.com/fwlink/p/?LinkId=690256)
 
-    -   [Microsoft Windows 8.1 Notebook vs. Chromebooks for Education](http://go.microsoft.com/fwlink/p/?LinkId=690257)
+    -   [Microsoft Windows 8.1 Notebook vs. Chromebooks for Education](https://go.microsoft.com/fwlink/p/?LinkId=690257)
 
 -   **Power.** Although not specifically a network infrastructure, you need to ensure your classrooms have adequate power. Chromebook and Windows devices should consume similar amounts of power. This means that your existing power outlets should support the same number of Windows devices.
 
@@ -675,15 +675,15 @@ Table 7. Network infrastructure products and technologies and deployment resourc
 <tr class="odd">
 <td align="left">DHCP</td>
 <td align="left"><ul>
-<li><p>[Core Network Guide](http://go.microsoft.com/fwlink/p/?LinkId=733920)</p></li>
-<li><p>[DHCP Deployment Guide](http://go.microsoft.com/fwlink/p/?LinkId=734021)</p></li>
+<li><p>[Core Network Guide](https://go.microsoft.com/fwlink/p/?LinkId=733920)</p></li>
+<li><p>[DHCP Deployment Guide](https://go.microsoft.com/fwlink/p/?LinkId=734021)</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">DNS</td>
 <td align="left"><ul>
-<li><p>[Core Network Guide](http://go.microsoft.com/fwlink/p/?LinkId=733920)</p></li>
-<li><p>[Deploying Domain Name System (DNS)](http://go.microsoft.com/fwlink/p/?LinkId=734022)</p></li>
+<li><p>[Core Network Guide](https://go.microsoft.com/fwlink/p/?LinkId=733920)</p></li>
+<li><p>[Deploying Domain Name System (DNS)](https://go.microsoft.com/fwlink/p/?LinkId=734022)</p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -717,16 +717,16 @@ Table 8. AD DS, Azure AD and deployment resources
 <tr class="odd">
 <td align="left">AD DS</td>
 <td align="left"><ul>
-<li><p>[Core Network Guide](http://go.microsoft.com/fwlink/p/?LinkId=733920)</p></li>
-<li><p>[Active Directory Domain Services Overview](http://go.microsoft.com/fwlink/p/?LinkId=733909)</p></li>
+<li><p>[Core Network Guide](https://go.microsoft.com/fwlink/p/?LinkId=733920)</p></li>
+<li><p>[Active Directory Domain Services Overview](https://go.microsoft.com/fwlink/p/?LinkId=733909)</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">Azure AD</td>
 <td align="left"><ul>
-<li><p>[Azure Active Directory documentation](http://go.microsoft.com/fwlink/p/?LinkId=690258)</p></li>
-<li><p>[Manage and support Azure Active Directory Premium](http://go.microsoft.com/fwlink/p/?LinkId=690259)</p></li>
-<li><p>[Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](http://go.microsoft.com/fwlink/p/?LinkId=690260)</p></li>
+<li><p>[Azure Active Directory documentation](https://go.microsoft.com/fwlink/p/?LinkId=690258)</p></li>
+<li><p>[Manage and support Azure Active Directory Premium](https://go.microsoft.com/fwlink/p/?LinkId=690259)</p></li>
+<li><p>[Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](https://go.microsoft.com/fwlink/p/?LinkId=690260)</p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -760,38 +760,38 @@ Table 9. Management systems and deployment resources
 <tr class="odd">
 <td align="left">Windows provisioning packages</td>
 <td align="left"><ul>
-<li><p>[Build and apply a provisioning package](http://go.microsoft.com/fwlink/p/?LinkId=733918)</p></li>
-<li><p>[Windows Imaging and Configuration Designer](http://go.microsoft.com/fwlink/p/?LinkId=733911)</p></li>
-<li><p>[Step-By-Step: Building Windows 10 Provisioning Packages](http://go.microsoft.com/fwlink/p/?LinkId=690261)</p></li>
+<li><p>[Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkId=733918)</p></li>
+<li><p>[Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=733911)</p></li>
+<li><p>[Step-By-Step: Building Windows 10 Provisioning Packages](https://go.microsoft.com/fwlink/p/?LinkId=690261)</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">Group Policy</td>
 <td align="left"><ul>
-<li><p>[Core Network Companion Guide: Group Policy Deployment](http://go.microsoft.com/fwlink/p/?LinkId=733915)</p></li>
-<li><p>[Deploying Group Policy](http://go.microsoft.com/fwlink/p/?LinkId=734024)</p></li>
+<li><p>[Core Network Companion Guide: Group Policy Deployment](https://go.microsoft.com/fwlink/p/?LinkId=733915)</p></li>
+<li><p>[Deploying Group Policy](https://go.microsoft.com/fwlink/p/?LinkId=734024)</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td align="left">Configuration Manager</td>
 <td align="left"><ul>
-<li><p>[Site Administration for System Center 2012 Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=733914)</p></li>
-<li><p>[Deploying Clients for System Center 2012 Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=733919)</p></li>
+<li><p>[Site Administration for System Center 2012 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733914)</p></li>
+<li><p>[Deploying Clients for System Center 2012 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733919)</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">Intune</td>
 <td align="left"><ul>
-<li><p>[Set up and manage devices with Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=690262)</p></li>
-<li><p>[Smoother Management Of Office 365 Deployments with Windows Intune](http://go.microsoft.com/fwlink/p/?LinkId=690263)</p></li>
-<li><p>[System Center 2012 R2 Configuration Manager &amp; Windows Intune](http://go.microsoft.com/fwlink/p/?LinkId=690264)</p></li>
+<li><p>[Set up and manage devices with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=690262)</p></li>
+<li><p>[Smoother Management Of Office 365 Deployments with Windows Intune](https://go.microsoft.com/fwlink/p/?LinkId=690263)</p></li>
+<li><p>[System Center 2012 R2 Configuration Manager &amp; Windows Intune](https://go.microsoft.com/fwlink/p/?LinkId=690264)</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td align="left">MDT</td>
 <td align="left"><ul>
-<li><p>[MDT documentation in the Microsoft Deployment Toolkit (MDT) 2013](http://go.microsoft.com/fwlink/p/?LinkId=690324)</p></li>
-<li><p>[Step-By-Step: Installing Windows 8.1 From A USB Key](http://go.microsoft.com/fwlink/p/?LinkId=690265)</p></li>
+<li><p>[MDT documentation in the Microsoft Deployment Toolkit (MDT) 2013](https://go.microsoft.com/fwlink/p/?LinkId=690324)</p></li>
+<li><p>[Step-By-Step: Installing Windows 8.1 From A USB Key](https://go.microsoft.com/fwlink/p/?LinkId=690265)</p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -825,23 +825,23 @@ Table 10. Management systems and app deployment resources
 <tr class="odd">
 <td align="left">Group Policy</td>
 <td align="left"><ul>
-<li><p>[Editing an AppLocker Policy](http://go.microsoft.com/fwlink/p/?LinkId=734025)</p></li>
-<li><p>[Group Policy Software Deployment Background](http://go.microsoft.com/fwlink/p/?LinkId=734026)</p></li>
-<li><p>[Assigning and Publishing Software](http://go.microsoft.com/fwlink/p/?LinkId=734027)</p></li>
+<li><p>[Editing an AppLocker Policy](https://go.microsoft.com/fwlink/p/?LinkId=734025)</p></li>
+<li><p>[Group Policy Software Deployment Background](https://go.microsoft.com/fwlink/p/?LinkId=734026)</p></li>
+<li><p>[Assigning and Publishing Software](https://go.microsoft.com/fwlink/p/?LinkId=734027)</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">Configuration Manager</td>
 <td align="left"><ul>
-<li><p>[How to Deploy Applications in Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=733917)</p></li>
-<li><p>[Application Management in Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=733907)</p></li>
+<li><p>[How to Deploy Applications in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733917)</p></li>
+<li><p>[Application Management in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733907)</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td align="left">Intune</td>
 <td align="left"><ul>
-<li><p>[Deploy apps to mobile devices in Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=733913)</p></li>
-<li><p>[Manage apps with Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=733910)</p></li>
+<li><p>[Deploy apps to mobile devices in Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=733913)</p></li>
+<li><p>[Manage apps with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=733910)</p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -873,17 +873,17 @@ If you do no want to migrate any user or device settings from the Chromebook dev
 
 In the [Plan for email migration](#plan-email-migrate) section, you identified the user mailboxes to migrate, identified the companion devices that access Google Apps Gmail, and identified the optimal timing for migration. You can perform this migration before or after you deploy the Windows devices.
 
-Office 365 supports automated migration from Google Apps Gmail to Office 365. For more information on how to automate the migration from Google Apps Gmail to Office 365, see [Migrate Google Apps mailboxes to Office 365](http://go.microsoft.com/fwlink/p/?LinkId=690252).
+Office 365 supports automated migration from Google Apps Gmail to Office 365. For more information on how to automate the migration from Google Apps Gmail to Office 365, see [Migrate Google Apps mailboxes to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=690252).
 
 Alternatively, if you want to migrate to Office 365 from:
 
 -   **On-premises Microsoft Exchange Server.** Use the following resources to migrate to Office 365 from an on-premises Microsoft Exchange Server:
 
-    -   [Cutover Exchange Migration and Single Sign-On](http://go.microsoft.com/fwlink/p/?LinkId=690266)
+    -   [Cutover Exchange Migration and Single Sign-On](https://go.microsoft.com/fwlink/p/?LinkId=690266)
 
-    -   [Step-By-Step: Migration of Exchange 2003 Server to Office 365](http://go.microsoft.com/fwlink/p/?LinkId=690267)
+    -   [Step-By-Step: Migration of Exchange 2003 Server to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=690267)
 
-    -   [Step-By-Step: Migrating from Exchange 2007 to Office 365](http://go.microsoft.com/fwlink/p/?LinkId=690268)
+    -   [Step-By-Step: Migrating from Exchange 2007 to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=690268)
 
 -   **Another on-premises or cloud-based email service.** Follow the guidance from that vendor.
 
@@ -924,15 +924,15 @@ For example, if you selected to deploy Windows devices by each classroom, start 
 
 In some instances, you may receive the devices with Windows 10 already deployed, and want to use provisioning packages. In other cases, you may have a custom Windows 10 image that you want to deploy to the devices by using Configuration Manager and/or MDT. For information on how to deploy Windows 10 images to the devices, see the following resources:
 
--   [Windows Imaging and Configuration Designer](http://go.microsoft.com/fwlink/p/?LinkId=733911)
+-   [Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=733911)
 
--   [Build and apply a provisioning package](http://go.microsoft.com/fwlink/p/?LinkId=733918)
+-   [Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkId=733918)
 
--   [MDT documentation in the Microsoft Deployment Toolkit (MDT) 2013](http://go.microsoft.com/fwlink/p/?LinkId=690324)
+-   [MDT documentation in the Microsoft Deployment Toolkit (MDT) 2013](https://go.microsoft.com/fwlink/p/?LinkId=690324)
 
--   [Step-By-Step: Installing Windows 8.1 From A USB Key](http://go.microsoft.com/fwlink/p/?LinkId=690265)
+-   [Step-By-Step: Installing Windows 8.1 From A USB Key](https://go.microsoft.com/fwlink/p/?LinkId=690265)
 
--   [Operating System Deployment in Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=733916)
+-   [Operating System Deployment in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=733916)
 
 In addition to the Windows 10 image deployment, you may need to perform the following tasks as a part of device deployment:
 
@@ -949,9 +949,9 @@ After you complete these steps, your management system should take over the day-
 ## Related topics
 
 
-[Try it out: Windows 10 deployment (for education)](http://go.microsoft.com/fwlink/p/?LinkId=623254)
+[Try it out: Windows 10 deployment (for education)](https://go.microsoft.com/fwlink/p/?LinkId=623254)
 
-[Try it out: Windows 10 in the classroom](http://go.microsoft.com/fwlink/p/?LinkId=623255)
+[Try it out: Windows 10 in the classroom](https://go.microsoft.com/fwlink/p/?LinkId=623255)
 
  
 

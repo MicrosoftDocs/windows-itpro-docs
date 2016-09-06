@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.pagetype: surfacehub
 ms.sitesec: library
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Accessibility (Surface Hub)

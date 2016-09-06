@@ -53,7 +53,7 @@ The private store for your organization is a page in the Windows Store app that 
 
 ## Still having trouble?
 
-If you are still having trouble using WSfB or installing the app, you can get more help on our [Support page](http://go.microsoft.com/fwlink/?LinkID=799757).
+If you are still having trouble using WSfB or installing the app, you can get more help on our [Support page](https://go.microsoft.com/fwlink/?LinkID=799757).
                                 
  
 

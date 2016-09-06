@@ -8,6 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 author: brianlic-msft
+redirect_url: https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511
 ---
 
 # Device Guard overview
@@ -25,7 +26,7 @@ For details on how to implement Device Guard, see [Device Guard deployment guide
 
 ## Why use Device Guard
 With thousands of new malicious files created every day, using traditional methods like signature-based detection to fight against malware provides an inadequate defense against new attacks. Device Guard on Windows 10 Enterprise changes from a mode where apps are trusted unless blocked by an antivirus or other security solutions, to a mode where the operating system trusts only apps authorized by your enterprise.
-Device Guard also helps protect against [zero day attacks](http://go.microsoft.com/fwlink/p/?linkid=534209) and works to combat the challenges of [polymorphic viruses](http://go.microsoft.com/fwlink/p/?LinkId=534210).
+Device Guard also helps protect against [zero day attacks](https://go.microsoft.com/fwlink/p/?linkid=534209) and works to combat the challenges of [polymorphic viruses](https://go.microsoft.com/fwlink/p/?LinkId=534210).
 ## Virtualization-based security using Windows 10 Enterprise Hypervisor
 
 Windows 10 Enterprise Hypervisor introduces new capabilities around virtual trust levels, which helps Windows 10 Enterprise services to run in a protected environment, in isolation from the running operating system. Windows 10 Enterprise virtualization-based security helps protect kernel code integrity and helps to provide credential isolation for the local security authority (LSA). Letting the Kernel Code Integrity service run as a hypervisor-hosted service increases the level of protection around the root operating system, adding additional protections against any malware that compromises the kernel layer. 

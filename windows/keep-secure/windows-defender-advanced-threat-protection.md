@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+localizationpriority: high
 ---
 
 # Windows Defender Advanced Threat Protection
@@ -19,8 +20,9 @@ author: mjcaparas
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+>For more info about Windows 10 Enterprise Edition features and functionality, see [Windows 10 Enterprise edition](https://www.microsoft.com/en-us/WindowsForBusiness/buy).
 
-Windows Defender Advanced Threat Protection (Windows Defender ATP) is a security service, built into Windows 10 that enables enterprise customers to detect, investigate, and respond to advanced threats on their networks.
+Windows Defender Advanced Threat Protection (Windows Defender ATP) is a security service that enables enterprise customers to detect, investigate, and respond to advanced threats on their networks.
 
 Windows Defender ATP uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 

@@ -11,6 +11,8 @@ ms.prod: w10
 
 # How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
 
+**Applies to**
+-   Windows 10, version 1607
 
 Use the following procedure to view and configure default package extensions.
 
@@ -28,18 +30,10 @@ Use the following procedure to view and configure default package extensions.
 
 5.  To edit other application extensions, modify the configuration file and click **Import and Overwrite this Configuration**. Select the modified file and click **Open**. In the dialog box, click **Overwrite** to complete the process.
 
-    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+## Have a suggestion for App-V?
+
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-
 [Operations for App-V](appv-operations.md)
-
- 
-
- 
-
-
-
-
-

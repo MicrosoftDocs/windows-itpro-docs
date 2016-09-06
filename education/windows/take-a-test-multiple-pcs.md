@@ -131,7 +131,7 @@ On the **File** menu, select **Save.**
 
     After you allow the package to be installed, the settings will be applied to the device
 
-[Learn how to apply a provisioning package in audit mode or OOBE.](http://go.microsoft.com/fwlink/p/?LinkID=692012)
+[Learn how to apply a provisioning package in audit mode or OOBE.](https://go.microsoft.com/fwlink/p/?LinkID=692012)
 
 ### Set up test account in Group Policy
 

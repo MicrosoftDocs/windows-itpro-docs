@@ -11,6 +11,8 @@ ms.prod: w10
 
 # Performance Guidance for Application Virtualization
 
+**Applies to**
+-   Windows 10, version 1607
 
 Learn how to configure App-V for optimal performance, optimize virtual app packages, and provide a better user experience with RDS and VDI.
 
@@ -20,12 +22,12 @@ You should read and understand the following information before reading this doc
 
 -   [Application Virtualization (App-V) overview](appv-for-windows.md)
 
--   [App-V 5 SP2 Application Publishing and Client Interaction](http://go.microsoft.com/fwlink/?LinkId=395206)
+-   [Application Publishing and Client Interaction](appv-application-publishing-and-client-interaction.md)
 
--   [Microsoft Application Virtualization Sequencing Guide](http://go.microsoft.com/fwlink/?LinkId=269953)
+-   [App-V Sequencing Guide](https://www.microsoft.com/en-us/download/details.aspx?id=27760)
 
 **Note**  
-Some terms used in this document may have different meanings depending on external source and context. For more information about terms used in this document followed by an asterisk **\*** review the [Application Virtualization Performance Guidance Terminology](#bkmk-terms1) section of this document.
+Some terms used in this document may have different meanings depending on external source and context. For more information about terms used in this document followed by an asterisk <strong>*</strong> review the [Application Virtualization Performance Guidance Terminology](#bkmk-terms1) section of this document.
 
  
 
@@ -50,7 +52,7 @@ Use the information in the following section for more information:
 
 -   Steps to Prepare the Base Image – Whether in a non-persistent VDI or RDSH environment, only a few steps must be completed in the base image to enable this approach.
 
--   Use UE-V 2.1 as the User Profile Management (UPM) solution for the App-V approach – the cornerstone of this approach is the ability of a UEM solution to persist the contents of just a few registry and file locations. These locations constitute the user integrations\*. Be sure to review the specific requirements for the UPM solution.
+-   Use UE-V as the User Profile Management (UPM) solution for the App-V approach – the cornerstone of this approach is the ability of a UEM solution to persist the contents of just a few registry and file locations. These locations constitute the user integrations\*. Be sure to review the specific requirements for the UPM solution.
 
 [User Experience Walk-through](#bkmk-uewt)
 
@@ -171,9 +173,9 @@ The following table displays the required steps to prepare the base image and th
 <tr class="odd">
 <td align="left"><p></p>
 <ul>
-<li><p>Install the App-V client version of the client.</p></li>
-<li><p>Install UE-V and download the App-V Settings Template from the UE-V template Gallery, see the following steps.</p></li>
-<li><p>Configure for Shared Content Store (SCS) mode. For more information see [How to Install the App-V Client for Shared Content Store Mode](appv-install-the-appv-client-for-shared-content-store-mode.md).</p></li>
+<li><p>Enable the App-V client as described in [Enable the App-V in-box client](appv-enable-the-app-v-desktop-client.md).</p></li>
+<li><p>Enable UE-V and download the App-V Settings Template from the UE-V template Gallery, see the following steps.</p></li>
+<li><p>Configure for Shared Content Store (SCS) mode. For more information see [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).</p></li>
 <li><p>Configure Preserve User Integrations on Login Registry DWORD.</p></li>
 <li><p>Pre-configure all user- and global-targeted packages for example, <strong>Add-AppvClientPackage</strong>.</p></li>
 <li><p>Pre-configure all user- and global-targeted connection groups for example, <strong>Add-AppvClientConnectionGroup</strong>.</p></li>
@@ -191,9 +193,9 @@ The following table displays the required steps to prepare the base image and th
 </ul></td>
 <td align="left"><p></p>
 <ul>
-<li><p>Install the App-V client version of the client.</p></li>
-<li><p>Install UE-V and download the App-V Settings Template from the UE-V template Gallery, see the following steps.</p></li>
-<li><p>Configure for Shared Content Store (SCS) mode. For more information see [How to Install the App-V Client for Shared Content Store Mode](appv-install-the-appv-client-for-shared-content-store-mode.md).</p></li>
+<li><p>Enable the App-V client as described in [Enable the App-V in-box client](appv-enable-the-app-v-desktop-client.md).</p></li>
+<li><p>Enable UE-V and download the App-V Settings Template from the UE-V template Gallery, see the following steps.</p></li>
+<li><p>Configure for Shared Content Store (SCS) mode. For more information see [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).</p></li>
 <li><p>Configure Preserve User Integrations on Login Registry DWORD.</p></li>
 <li><p>Pre-configure all global-targeted packages for example, <strong>Add-AppvClientPackage</strong>.</p></li>
 <li><p>Pre-configure all global-targeted connection groups for example, <strong>Add-AppvClientConnectionGroup</strong>.</p></li>
@@ -225,8 +227,7 @@ The following table displays the required steps to prepare the base image and th
 <tr class="odd">
 <td align="left"><p>Shared Content Store (SCS) Mode</p>
 <ul>
-<li><p>Configurable in PowerShell using <strong>Set- AppvClientConfiguration</strong> –<strong>SharedContentStoreMode</strong>, or</p></li>
-<li><p>During installation of the App-V client.</p></li>
+<li><p>Configurable in Windows PowerShell with `Set-AppvClientConfiguration -SharedContentStoreMode 1`<br>or configurable with Group Policy, as described in [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).</p></li>
 </ul></td>
 <td align="left"><p>When running the shared content store only publishing data is maintained on hard disk; other virtual application assets are maintained in memory (RAM).</p>
 <p>This helps to conserve local storage and minimize disk I/O per second (IOPS).</p></td>
@@ -246,7 +247,7 @@ The following table displays the required steps to prepare the base image and th
 <tr class="odd">
 <td align="left"><p>MaxConcurrentPublishingRefresh</p>
 <ul>
-<li><p>Configure in the Registry under <strong>HKEY_LOCAL_MACHINE</strong> \<strong>Software</strong> \ <strong>Microsoft</strong> \ <strong>AppV</strong> \<strong>Client</strong> \ <strong>Publishing</strong>.</p></li>
+<li><p>Configure in the Registry under <strong>HKEY_LOCAL_MACHINE</strong> \ <strong>Software</strong> \ <strong>Microsoft</strong> \ <strong>AppV</strong> \ <strong>Client</strong> \ <strong>Publishing</strong>.</p></li>
 <li><p>Create the DWORD value <strong>MaxConcurrentPublishingrefresh</strong> with the desired maximum number of concurrent publishing refreshes.</p></li>
 <li><p>The App-V client service and computer do not need to be restarted.</p></li>
 </ul></td>
@@ -261,22 +262,24 @@ The following table displays the required steps to prepare the base image and th
 
 ### Configure UE-V solution for App-V Approach
 
-We recommend using Microsoft User Experience Virtualization (UE-V) to capture and centralize application settings and Windows operating system settings for a specific user. These settings are then applied to the different computers that are accessed by the user, including desktop computers, laptop computers, and virtual desktop infrastructure (VDI) sessions. UE-V is optimized for RDS and VDI scenarios.
+We recommend using User Experience Virtualization (UE-V) to capture and centralize application settings and Windows operating system settings for a specific user. These settings are then applied to the different computers that are accessed by the user, including desktop computers, laptop computers, and virtual desktop infrastructure (VDI) sessions. UE-V is optimized for RDS and VDI scenarios.
 
-For more information see [Getting Started With User Experience Virtualization 2.0](https://technet.microsoft.com/library/dn458926.aspx)
+For more information, see:
 
-In essence all that is required is to install the UE-V client and download the following Microsoft authored App-V settings template from the [Microsoft User Experience Virtualization (UE-V) template gallery](http://gallery.technet.microsoft.com/Authored-UE-V-Settings-bb442a33). Register the template. For more information around UE-V templates see [The UE-V specific resource for acquiring and registering the template](https://technet.microsoft.com/library/dn458926.aspx).
+- [User Experience Virtualization (UE-V) for Windows 10 overview](uev-for-windows.md)
+
+- [Get Started with UE-V](uev-getting-started.md)
+
+In essence all that is required is to enable the UE-V service and download the following Microsoft authored App-V settings template from the [Microsoft User Experience Virtualization (UE-V) template gallery](http://gallery.technet.microsoft.com/Authored-UE-V-Settings-bb442a33). Register the template. For more information about UE-V templates, see [User Experience Virtualization (UE-V) for Windows 10 overview](uev-for-windows.md).
 
 **Note**  
-Without performing an additional configuration step, the Microsoft User Environment Virtualization (UE-V) will not be able to synchronize the Start menu shortcuts (.lnk files) on the target computer. The .lnk file type is excluded by default.
+Without performing an additional configuration step, User Environment Virtualization (UE-V) will not be able to synchronize the Start menu shortcuts (.lnk files) on the target computer. The .lnk file type is excluded by default.
 
-UE-V will only support removing the .lnk file type from the exclusion list in the RDS and VDI scenarios, where every user’s device will have the same set of applications installed to the same location and every .lnk file is valid for all the users’ devices. For example, UE-V would not currently support the following 2 scenarios, because the net result will be that the shortcut will be valid on one but not all devices.
+UE-V will only support removing the .lnk file type from the exclusion list in the RDS and VDI scenarios, where every user’s device will have the same set of applications installed to the same location and every .lnk file is valid for all the users’ devices. For example, UE-V would not currently support the following two scenarios, because the net result will be that the shortcut will be valid on one but not all devices.
 
 -   If a user has an application installed on one device with .lnk files enabled and the same native application installed on another device to a different installation root with .lnk files enabled.
 
 -   If a user has an application installed on one device but not another with .lnk files enabled.
-
- 
 
 **Important**  
 This topic describes how to change the Windows registry by using Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. You should make a backup copy of the registry files (System.dat and User.dat) before you change the registry. Microsoft cannot guarantee that the problems that might occur when you change the registry can be resolved. Change the registry at your own risk.
@@ -285,7 +288,7 @@ This topic describes how to change the Windows registry by using Registry Editor
 
 Using the Microsoft Registry Editor (regedit.exe), navigate to **HKEY\_LOCAL\_MACHINE** \\ **Software** \\ **Microsoft** \\ **UEV** \\ **Agent** \\ **Configuration** \\ **ExcludedFileTypes** and remove **.lnk** from the excluded file types.
 
-**Configure other User Profile Management (UPM) solution for App-V Approach**
+## Configure other User Profile Management (UPM) solutions for App-V Approach
 
 The expectation in a stateful environment is that a UPM solution is implemented and can support persistence of user data across sessions and between logins.
 
@@ -310,9 +313,9 @@ To enable an optimized login experience, for example the App-V approach for the 
 
 With App-V when you add a publishing server (**Add-AppvPublishingServer**) you can configure synchronization, for example refresh during log on and/or after a specified refresh interval. In both cases a scheduled task is created.
 
-In previous versions of App-V, both scheduled tasks were configured using a VBScript that would initiate the user and global refresh. With Hotfix Package 4 for Application Virtualization 5.0 SP2 the user refresh on log on was initiated by **SyncAppvPublishingServer.exe**. This change was introduced to provide UPM solutions a trigger process. This process delays the publish /refresh to allow the UPM solution to apply the user integrations. It will exit once the publishing/refresh is complete.
+In previous versions of App-V, both scheduled tasks were configured using a VBScript that would initiate the user and global refresh. Starting with Hotfix Package 4 for Application Virtualization 5.0 SP2 the user refresh on log on was initiated by **SyncAppvPublishingServer.exe**. This change was introduced to provide UPM solutions a trigger process. This process delays the publish /refresh to allow the UPM solution to apply the user integrations. It will exit once the publishing/refresh is complete.
 
-**User Integrations**
+### User Integrations
 
 Registry – HKEY\_CURRENT\_USER
 
@@ -324,7 +327,7 @@ Registry – HKEY\_CURRENT\_USER
 
 -   Path- Software\\Microsoft\\Windows\\CurrentVersion\\App Paths
 
-**File Locations**
+### File Locations
 
 -   Root – “Environment Variable” APPDATA
 
@@ -341,12 +344,6 @@ Registry – HKEY\_CURRENT\_USER
 -   (To persist all desktop shortcuts, virtual and non-virtual)
 
     Root - “KnownFolder” {B4BFCC3A-DB2C-424C-B029-7FE99A87C641}FileMask - \*.lnk
-
-**Microsoft User Experience Virtualization (UE-V)**
-
-Additionally, we recommend using Microsoft User Experience Virtualization (UE-V) to capture and centralize application settings and Windows operating system settings for a specific user. These settings are then applied to the different computers that are accessed by the user, including desktop computers, laptop computers, and virtual desktop infrastructure (VDI) sessions.
-
-For more information see [Getting Started With User Experience Virtualization 1.0](http://technet.microsoft.com/library/jj680015.aspx) and [Sharing Settings Location Templates with the UE-V Template Gallery](http://technet.microsoft.com/library/jj679972.aspx).
 
 ### <a href="" id="bkmk-uewt"></a>User Experience Walk-through
 
@@ -540,9 +537,9 @@ Removing FB1 does not require the original application installer. After completi
 
 3.  Move to **Create Package**.
 
-**PowerShell** - Update an Existing Virtual Application Package.
+**Windows PowerShell** - Update an Existing Virtual Application Package.
 
-1.  Open an elevated PowerShell session.
+1.  Open an elevated Windows PowerShell session.
 
 2.  Import-module **appvsequencer**.
 
@@ -623,7 +620,7 @@ When publishing a virtual application package, the App-V Client will detect if a
 
  
 
-### Disabling a Dynamic Configuration using Powershell
+### Disabling a Dynamic Configuration by using Windows Powershell
 
 -   For already published packages, you can use `Set-AppVClientPackage –Name Myapp –Path c:\Packages\Apps\MyApp.appv` without
 
@@ -635,9 +632,9 @@ When publishing a virtual application package, the App-V Client will detect if a
 
 For documentation on How to Apply a Dynamic Configuration, see:
 
--   [How to Apply the User Configuration File by Using PowerShell](appv-apply-the-user-configuration-file-with-powershell.md)
+-   [How to Apply the User Configuration File by Using Windows PowerShell](appv-apply-the-user-configuration-file-with-powershell.md)
 
--   [How to Apply the Deployment Configuration File by Using PowerShell](appv-apply-the-deployment-configuration-file-with-powershell.md)
+-   [How to Apply the Deployment Configuration File by Using Windows PowerShell](appv-apply-the-deployment-configuration-file-with-powershell.md)
 
 <table>
 <colgroup>
@@ -657,7 +654,7 @@ For documentation on How to Apply a Dynamic Configuration, see:
 <tbody>
 <tr class="odd">
 <td align="left"><p>Account for Synchronous Script Execution during Package Lifecycle.</p></td>
-<td align="left"><p>If script collateral is embedded in the package, Add (Powershell) may be significantly slower.</p>
+<td align="left"><p>If script collateral is embedded in the package, Add cmdlets may be significantly slower.</p>
 <p>Running of scripts during virtual application launch (StartVirtualEnvironment, StartProcess) and/or Add+Publish will impact the perceived performance during one or more of these lifecycle operations.</p></td>
 <td align="left"><p>Use of Asynchronous (Non-Blocking) Scripts will ensure that the lifecycle operations complete efficiently.</p></td>
 <td align="left"><p>This step requires working knowledge of all virtual application packages with embedded script collateral, which have associated dynamic configurations files and which reference and run scripts synchronously.</p></td>
@@ -681,18 +678,15 @@ For documentation on How to Apply a Dynamic Configuration, see:
 
 -   Open AppxManifest.xml and locate the following:
 
-    &lt;appv:Extension Category="AppV.Fonts"&gt;
+    ```
+    <appv:Extension Category="AppV.Fonts">
+    <appv:Fonts>
+    <appv:Font Path="[{Fonts}]\private\CalibriL.ttf" DelayLoad="true"></appv:Font>
+    </appv:Fonts>
+    ```
 
-    &lt;appv:Fonts&gt;
+    **Note**&nbsp;&nbsp;If there are fonts marked as **DelayLoad**, those will not impact first launch.
 
-    &lt;appv:Font Path="\[{Fonts}\]\\private\\CalibriL.ttf" DelayLoad="true"&gt;&lt;/appv:Font&gt;
-
-    **Note**  
-    If there are fonts marked as **DelayLoad**, those will not impact first launch.
-
-     
-
-    &lt;/appv:Fonts&gt;
 
 ### Excluding virtual fonts from the package
 
@@ -702,11 +696,11 @@ Use the dynamic configuration file that best suits the user scope – deployment
 
 Fonts
 
---&gt;
-
-&lt;Fonts Enabled="false" /&gt;
-
-&lt;!--
+```
+-->
+<Fonts Enabled="false" />
+<!--
+```
 
 ## <a href="" id="bkmk-terms1"></a> App-V Performance Guidance Terminology
 
@@ -733,7 +727,7 @@ The following terms are used when describing concepts and actions related to App
 
     -   From the point that users initiate a log-in to when they are able to manipulate the desktop.
 
-    -   From the point where the desktop can be interacted with to the point a publishing refresh begins (in PowerShell terms, sync) when using the App-V full server infrastructure. In standalone instances, it is when the **Add-AppVClientPackage** and **Publish-AppVClientPackage Powershell** commands are initiated.
+    -   From the point where the desktop can be interacted with to the point a publishing refresh begins (in Windows PowerShell terms, sync) when using the App-V full server infrastructure. In standalone instances, it is when the **Add-AppVClientPackage** and **Publish-AppVClientPackage** Windows Powershell commands are initiated.
 
     -   From start to completion of the publishing refresh. In standalone instances, this is the first to last virtual application published.
 
@@ -743,19 +737,8 @@ The following terms are used when describing concepts and actions related to App
 
 ## Have a suggestion for App-V?
 
-
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
-
 [Application Virtualization (App-V) overview](appv-for-windows.md)
-
- 
-
- 
-
-
-
-
-

@@ -34,9 +34,9 @@ This email address is not a support channel, but your feedback will help us to p
 
  
 
-For the latest information about MDOP and additional learning resources, see the [MDOP Information Experience](http://go.microsoft.com/fwlink/p/?LinkId=236032) page.
+For the latest information about MDOP and additional learning resources, see the [MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032) page.
 
-For more information about new updates or to provide feedback, follow us on [Facebook](http://go.microsoft.com/fwlink/p/?LinkId=242445) or [Twitter](http://go.microsoft.com/fwlink/p/?LinkId=242447).
+For more information about new updates or to provide feedback, follow us on [Facebook](https://go.microsoft.com/fwlink/p/?LinkId=242445) or [Twitter](https://go.microsoft.com/fwlink/p/?LinkId=242447).
 
 ## Known Issues with Hotfix Package 4 for Application Virtualization 5.0 SP2
 
@@ -125,7 +125,7 @@ The first time that end users start an application in the package after they log
 
 ### <a href="" id="-------------app-v-5-0-service-pack-2--app-v-5-0-sp2--does-not-include-a-new-version-of-the-app-v-server"></a> App-V 5.0 Service Pack 2 (App-V 5.0 SP2) does not include a new version of the App-V Server
 
-App-V 5.0 SP2 does not include a new version of the App-V Server. If you deploy App-V 5.0 SP2 clients running Windows 8.1 in your environment and plan to manage the clients using the App-V infrastructure, you must install [Hotfix Package 2 for Microsoft Application Virtualization 5.0 Service Pack 1](http://go.microsoft.com/fwlink/?LinkId=386634). (http://go.microsoft.com/fwlink/?LinkId=386634)
+App-V 5.0 SP2 does not include a new version of the App-V Server. If you deploy App-V 5.0 SP2 clients running Windows 8.1 in your environment and plan to manage the clients using the App-V infrastructure, you must install [Hotfix Package 2 for Microsoft Application Virtualization 5.0 Service Pack 1](https://go.microsoft.com/fwlink/?LinkId=386634). (https://go.microsoft.com/fwlink/?LinkId=386634)
 
 If you are running and managing App-V 5.0 SP2 clients using any of the following methods no client update is required:
 

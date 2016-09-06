@@ -20,7 +20,7 @@ An image repository is an optional server that is used for image distribution (w
 
 An image distribution server requires the following:
 
--   Internet Information Services (IIS)—For information, see [Internet Information Services](http://go.microsoft.com/fwlink/?LinkId=142995).
+-   Internet Information Services (IIS)—For information, see [Internet Information Services](https://go.microsoft.com/fwlink/?LinkId=142995).
 
     During the IIS installation, when adding role services, select the following supported authentication methods:
 
@@ -46,7 +46,7 @@ An image distribution server requires the following:
 
     -   Restart IIS.
 
--   BITS Server Extensions for IIS—For information, see [Install BITS Server Extensions](http://go.microsoft.com/fwlink/?LinkId=142996).
+-   BITS Server Extensions for IIS—For information, see [Install BITS Server Extensions](https://go.microsoft.com/fwlink/?LinkId=142996).
 
 ## Related topics
 

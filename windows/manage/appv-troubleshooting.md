@@ -11,65 +11,27 @@ ms.prod: w10
 
 # Troubleshooting App-V
 
+**Applies to**
+-   Windows 10, version 1607
 
-Troubleshooting content is not included in the Administrator’s Guide for this product. Instead, you can find troubleshooting information for this product on the [TechNet Wiki](http://go.microsoft.com/fwlink/p/?LinkId=224905).
+For information that can help with troubleshooting App-V for Windows 10, see:
 
-## How to Find Troubleshooting Content
+- [Application Virtualization (App-V): List of Microsoft Support Knowledge Base Articles](http://social.technet.microsoft.com/wiki/contents/articles/14272.app-v-v5-x-list-of-microsoft-support-knowledge-base-articles.aspx)
 
+- [Microsoft App-V Team Blog](https://blogs.technet.microsoft.com/appv/)
 
-You can use the following information to find troubleshooting or additional technical content for this product.
+- [Release Notes for App-V](appv-release-notes-for-appv-for-windows.md)
 
-### Search the MDOP Documentation
+- [Technical Reference for App-V](appv-technical-reference.md)
 
-The first step to find help content in the Administrator’s Guide is to search the MDOP documentation on TechNet.
-
-After you search the MDOP documentation, your next step would be to search the troubleshooting information for the product in the TechNet Wiki.
-
-**To search the MDOP product documentation**
-
-1.  Use a web browser to navigate to the [MDOP Information Experience](http://go.microsoft.com/fwlink/?LinkId=236032) TechNet home page.
-
-2.  Enter applicable search terms in the **Search TechNet with Bing** search box at the top of the MDOP Information Experience home page.
-
-3.  Review the search results for assistance.
-
-**To search the TechNet Wiki**
-
-1.  Use a web browser to navigate to the [TechNet Wiki](http://go.microsoft.com/fwlink/p/?LinkId=224905) home page.
-
-2.  Enter applicable search terms in the **Search TechNet Wiki** search box on the TechNet Wiki home page.
-
-3.  Review the search results for assistance.
-
-## How to Create a Troubleshooting Article
+- [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv)
 
 
-If you have a troubleshooting tip or a best practice to share that is not already included in the MDOP OnlineHelp or TechNet Wiki, you can create your own TechNet Wiki articles.
+## Other resources
 
-**To create a TechNet Wiki troubleshooting or best practices article**
+-   [Application Virtualization (App-V) for Windows 10 overview](appv-for-windows.md)
 
-1.  Use a web browser to navigate to the [TechNet Wiki](http://go.microsoft.com/fwlink/p/?LinkId=224905) home page.
-
-2.  Log in with your Windows Live ID.
-
-3.  Review the **Getting Started** section to learn the basics of the TechNet Wiki and its articles.
-
-4.  Select **Post an article &gt;&gt;** at the bottom of the **Getting Started** section.
-
-5.  On the Wiki article **Add Page** page, select **Insert Template** from the toolbar, select the troubleshooting article template (**Troubleshooting.html**), and then click **Insert**.
-
-6.  Be sure to give the article a descriptive title and then overwrite the template information as needed to create your troubleshooting or best practice article.
-
-7.  After you review your article, be sure to include a tag that is named **Troubleshooting** and another for the product name. This helps others to find your content.
-
-8.  Click **Save** to publish the article to the TechNet Wiki.
-
-## Other resources for troubleshooting App-V
-
-
--   [Application Virtualization (App-V) overview](appv-for-windows.md)
-
--   [Getting Started with App-V](appv-getting-started.md)
+-   [Getting Started with App-V for Windows 10](appv-getting-started.md)
 
 -   [Planning for App-V](appv-planning-for-appv.md)
 
@@ -79,14 +41,4 @@ If you have a troubleshooting tip or a best practice to share that is not alread
 
 ## Have a suggestion for App-V?
 
-
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
-
- 
-
- 
-
-
-
-
-
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

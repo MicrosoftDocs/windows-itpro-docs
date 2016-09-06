@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # Administrative Tools in Windows 10
@@ -30,23 +31,23 @@ If the content that is linked to a tool in the following list doesn't provide th
 
  
 
--   [Component Services]( http://go.microsoft.com/fwlink/p/?LinkId=708489)
--   [Computer Management](http://go.microsoft.com/fwlink/p/?LinkId=708490)
--   [Defragment and Optimize Drives](http://go.microsoft.com/fwlink/p/?LinkId=708488)
--   [Disk Cleanup](http://go.microsoft.com/fwlink/p/?LinkID=698648)
--   [Event Viewer](http://go.microsoft.com/fwlink/p/?LinkId=708491)
--   [iSCSI Initiator](http://go.microsoft.com/fwlink/p/?LinkId=708492)
--   [Local Security Policy](http://go.microsoft.com/fwlink/p/?LinkId=708493)
--   [ODBC Data Sources]( http://go.microsoft.com/fwlink/p/?LinkId=708494)
--   [Performance Monitor](http://go.microsoft.com/fwlink/p/?LinkId=708495)
--   [Print Management](http://go.microsoft.com/fwlink/p/?LinkId=708496)
--   [Resource Monitor](http://go.microsoft.com/fwlink/p/?LinkId=708497)
--   [Services](http://go.microsoft.com/fwlink/p/?LinkId=708498)
--   [System Configuration](http://go.microsoft.com/fwlink/p/?LinkId=708499)
--   [System Information]( http://go.microsoft.com/fwlink/p/?LinkId=708500)
--   [Task Scheduler](http://go.microsoft.com/fwlink/p/?LinkId=708501)
--   [Windows Firewall with Advanced Security](http://go.microsoft.com/fwlink/p/?LinkId=708503)
--   [Windows Memory Diagnostic]( http://go.microsoft.com/fwlink/p/?LinkId=708507)
+-   [Component Services]( https://go.microsoft.com/fwlink/p/?LinkId=708489)
+-   [Computer Management](https://go.microsoft.com/fwlink/p/?LinkId=708490)
+-   [Defragment and Optimize Drives](https://go.microsoft.com/fwlink/p/?LinkId=708488)
+-   [Disk Cleanup](https://go.microsoft.com/fwlink/p/?LinkID=698648)
+-   [Event Viewer](https://go.microsoft.com/fwlink/p/?LinkId=708491)
+-   [iSCSI Initiator](https://go.microsoft.com/fwlink/p/?LinkId=708492)
+-   [Local Security Policy](https://go.microsoft.com/fwlink/p/?LinkId=708493)
+-   [ODBC Data Sources]( https://go.microsoft.com/fwlink/p/?LinkId=708494)
+-   [Performance Monitor](https://go.microsoft.com/fwlink/p/?LinkId=708495)
+-   [Print Management](https://go.microsoft.com/fwlink/p/?LinkId=708496)
+-   [Resource Monitor](https://go.microsoft.com/fwlink/p/?LinkId=708497)
+-   [Services](https://go.microsoft.com/fwlink/p/?LinkId=708498)
+-   [System Configuration](https://go.microsoft.com/fwlink/p/?LinkId=708499)
+-   [System Information]( https://go.microsoft.com/fwlink/p/?LinkId=708500)
+-   [Task Scheduler](https://go.microsoft.com/fwlink/p/?LinkId=708501)
+-   [Windows Firewall with Advanced Security](https://go.microsoft.com/fwlink/p/?LinkId=708503)
+-   [Windows Memory Diagnostic]( https://go.microsoft.com/fwlink/p/?LinkId=708507)
 
  
 

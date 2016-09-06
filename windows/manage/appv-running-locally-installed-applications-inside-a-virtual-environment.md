@@ -11,6 +11,8 @@ ms.prod: w10
 
 # Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
 
+**Applies to**
+-   Windows 10, version 1607
 
 You can run a locally installed application in a virtual environment, alongside applications that have been virtualized by using Microsoft Application Virtualization (App-V). You might want to do this if you:
 
@@ -22,7 +24,7 @@ Use any of the following methods to open a local application inside the App-V vi
 
 -   [RunVirtual registry key](#bkmk-runvirtual-regkey)
 
--   [Get-AppvClientPackage PowerShell cmdlet](#bkmk-get-appvclientpackage-posh)
+-   [Get-AppvClientPackage Windows PowerShell cmdlet](#bkmk-get-appvclientpackage-posh)
 
 -   [Command line switch /appvpid:&lt;PID&gt;](#bkmk-cl-switch-appvpid)
 
@@ -37,32 +39,7 @@ To add a locally installed application to a package or to a connection group’s
 
 There is no Group Policy setting available to manage this registry key, so you have to use System Center Configuration Manager or another electronic software distribution (ESD) system, or manually edit the registry.
 
-### <a href="" id="bkmk-"></a>Supported methods of publishing packages when using RunVirtual
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">App-V version</th>
-<th align="left">Supported publishing methods</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>App-V 5.0 SP3 and App-V</p></td>
-<td align="left"><p>Published globally or to the user</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>App-V 5.0 through App-V 5.0 SP2</p></td>
-<td align="left"><p>Published globally only</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+Starting with App-V 5.0 SP3, when using RunVirtual, you can publish packages globally or to the user.
 
 ### Steps to create the subkey
 
@@ -125,7 +102,7 @@ There is no Group Policy setting available to manage this registry key, so you h
     @="aaaaaaaa-bbbb-cccc-dddd-eeeeeeee_11111111-2222-3333-4444-555555555
     ```
 
-## <a href="" id="bkmk-get-appvclientpackage-posh"></a>Get-AppvClientPackage PowerShell cmdlet
+## <a href="" id="bkmk-get-appvclientpackage-posh"></a>Get-AppvClientPackage Windows PowerShell cmdlet
 
 
 You can use the **Start-AppVVirtualProcess** cmdlet to retrieve the package name and then start a process within the specified package's virtual environment. This method lets you launch any command within the context of an App-V package, regardless of whether the package is currently running.
@@ -136,7 +113,7 @@ Use the following example syntax, and substitute the name of your package for **
 
 `Start-AppvVirtualProcess -AppvClientObject $AppVName cmd.exe`
 
-If you don’t know the exact name of your package, you can use the command line **Get-AppvClientPackage \*executable\***, where **executable** is the name of the application, for example: Get-AppvClientPackage \*Word\*.
+If you don’t know the exact name of your package, you can use the command line <strong>Get-AppvClientPackage \*executable\*</strong>, where **executable** is the name of the application, for example:<br>Get-AppvClientPackage \*Word\*
 
 ## <a href="" id="bkmk-cl-switch-appvpid"></a>Command line switch /appvpid:&lt;PID&gt;
 
@@ -166,14 +143,14 @@ To get the package GUID and version GUID of your application, run the **Get-Appv
 
 -   Version ID of the desired package
 
-If you don’t know the exact name of your package, use the command line **Get-AppvClientPackage \*executable\***, where **executable** is the name of the application, for example: Get-AppvClientPackage \*Word\*.
+If you don’t know the exact name of your package, use the command line <strong>Get-AppvClientPackage \*executable\*</strong>, where **executable** is the name of the application, for example:<br>Get-AppvClientPackage \*Word\*
 
 This method lets you launch any command within the context of an App-V package, regardless of whether the package is currently running.
 
 ## Have a suggestion for App-V?
 
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

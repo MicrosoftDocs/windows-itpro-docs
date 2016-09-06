@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: support
 description: Turn off natural metrics for Internet Explorer 11
-ms.assetid: e31a27d7-662e-4106-a3d2-c6b0531961d5
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: support
-ms.sitesec: library
+ms.assetid: e31a27d7-662e-4106-a3d2-c6b0531961d5
 title: Fix font rendering problems by turning off natural metrics (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Fix font rendering problems by turning off natural metrics
 By default, Internet Explorer 11 uses “natural metrics”. Natural metrics use inter-pixel spacing that creates more accurately rendered and readable text, avoiding many common font rendering problems with Windows Internet Explorer 9 or older sites.

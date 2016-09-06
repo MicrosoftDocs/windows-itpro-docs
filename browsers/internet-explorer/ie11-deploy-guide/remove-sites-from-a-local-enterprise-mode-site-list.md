@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
 description: Instructions about how to remove sites from a local Enterprise Mode site list.
-ms.assetid: c7d6dd0b-e264-42bb-8c9d-ac2f837018d2
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: c7d6dd0b-e264-42bb-8c9d-ac2f837018d2
 title: Remove sites from a local Enterprise Mode site list (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Remove sites from a local Enterprise Mode site list
 

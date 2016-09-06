@@ -13,7 +13,7 @@ author: jdeckerMS
 
 The Volume Activation Management Tool (VAMT) PowerShell cmdlets can be used to perform the same functions as the Vamt.exe command-line tool.
 **To install PowerShell 3.0**
--   VAMT PowerShell cmdlets require Windows PowerShell, which is included in Windows 10, Windows 8 and Windows Server® 2012. You can download PowerShell for Windows 7 or other operating systems from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=218356).
+-   VAMT PowerShell cmdlets require Windows PowerShell, which is included in Windows 10, Windows 8 and Windows Server® 2012. You can download PowerShell for Windows 7 or other operating systems from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=218356).
 **To install the Windows Assessment and Deployment Kit**
 -   In addition to PowerShell, you must import the VAMT PowerShell module. The module is included in the VAMT 3.0 folder after you install the Windows Assessment and Deployment Kit (Windows ADK).
 **To prepare the VAMT PowerShell environment**
@@ -48,7 +48,7 @@ get-help get-VamtProduct -all
 ```
 
 **Warning**  
-The update-help cmdlet is not supported for VAMT PowerShell cmdlets. To view online help for VAMT cmdlets, you can use the -online option with the get-help cmdlet. For more information, see [Volume Activation Management Tool (VAMT) Cmdlets in Windows PowerShell](http://go.microsoft.com/fwlink/p/?LinkId=242278).
+The update-help cmdlet is not supported for VAMT PowerShell cmdlets. To view online help for VAMT cmdlets, you can use the -online option with the get-help cmdlet. For more information, see [Volume Activation Management Tool (VAMT) Cmdlets in Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=242278).
 
 **To view VAMT PowerShell Help sections**
 

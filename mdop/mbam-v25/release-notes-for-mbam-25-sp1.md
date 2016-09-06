@@ -80,7 +80,7 @@ A user principal name (UPN) must be set for all service accounts in MBAM. If you
 
 When you upgrade Internet Information Services (IIS) to the Microsoft .NET Framework 4.5, the Self-Service Portal and the Administration and Monitoring Website do not open.
 
-**Workaround:** See the article [Error message after you install the .NET Framework 4.0: "Could not load type 'System.ServiceModel.Activation.HttpModule'](http://go.microsoft.com/fwlink/?LinkId=393568).
+**Workaround:** See the article [Error message after you install the .NET Framework 4.0: "Could not load type 'System.ServiceModel.Activation.HttpModule'](https://go.microsoft.com/fwlink/?LinkId=393568).
 
 ### Administration and Monitoring Website displays a "Report cannot be found" error message when Reports are not configured
 

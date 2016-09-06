@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to set up automatic detection for DHCP or DNS servers using IEAK 11 in your organization.
-ms.assetid: c6bfe7c4-f452-406f-b47e-b7f0d8c44ae1
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: c6bfe7c4-f452-406f-b47e-b7f0d8c44ae1
 title: Set up auto detection for DHCP or DNS servers using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Set up auto detection for DHCP or DNS servers using IEAK 11
 Set up your network to automatically detect and customize Internet Explorer 11 when it’s first started. Automatic detection is supported on both Dynamic Host Configuration Protocol (DHCP) and Domain Name System (DNS), letting your servers detect and set up your employee’s browser settings from a central location, using a configuration URL (.ins file) or a JavaScript proxy configuration file (.js, .jvs, or .pac).
@@ -30,7 +32,7 @@ DHCP has a higher priority than DNS for automatic configuration. If DHCP provide
 
 ![](images/wedge.gif) **To set up automatic detection for DHCP servers**
 
--   Open the [DHCP Administrative Tool](http://go.microsoft.com/fwlink/p/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](http://go.microsoft.com/fwlink/p/?LinkId=294649).
+-   Open the [DHCP Administrative Tool](https://go.microsoft.com/fwlink/p/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](https://go.microsoft.com/fwlink/p/?LinkId=294649).
 <p>**Examples:**<br>
 http://www.microsoft.com/webproxy.pac<br>
 http://marketing/config.ins<br>
@@ -46,9 +48,10 @@ For more detailed info about how to set up your DHCP server, see your server doc
 `mailserver1 IN A 192.55.200.51`
 <p>**-OR-**<p>
 Create a canonical name (CNAME) alias record, named **WPAD**. This record lets you use more than one name to point to a single host, letting you host both an FTP server and a web server on the same computer. It also includes the resolved name (not the IP address) of the server storing your automatic configuration (.pac) file.<p>
-**Note**<br>For more info about creating a **WPAD** entry, see [Creating a WPAD entry in DNS](http://go.microsoft.com/fwlink/p/?LinkId=294651). 
+**Note**<br>For more info about creating a **WPAD** entry, see [Creating a WPAD entry in DNS](https://go.microsoft.com/fwlink/p/?LinkId=294651). 
 
 2.  After the database file propagates to the server, the DNS name, `wpad.<domain>.com` resolves to the server name that includes your automatic configuration file.
 
 **Note**<br>
 IE11 creates a default URL template based on the host name,**wpad**. For example, `http://wpad.<domain>.com/wpad.dat`. Because of this, you need to set up a file or redirection point in your web server **WPAD** record, named **wpad.dat**. The **wpad.dat** record delivers the contents of your automatic configuration file.
+

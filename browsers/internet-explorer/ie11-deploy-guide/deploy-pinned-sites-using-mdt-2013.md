@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: You can pin websites to the Windows 8.1 taskbar for quick access using the Microsoft Deployment Toolkit (MDT) 2013.
-ms.assetid: 24f4dcac-9032-4fe8-bf6d-2d712d61cb0c
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 24f4dcac-9032-4fe8-bf6d-2d712d61cb0c
 title: Deploy pinned websites using Microsoft Deployment Toolkit (MDT) 2013 (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Deploy pinned websites using Microsoft Deployment Toolkit (MDT) 2013
 
@@ -20,10 +22,10 @@ title: Deploy pinned websites using Microsoft Deployment Toolkit (MDT) 2013 (Int
 
 You can pin websites to the Windows 8.1 taskbar for quick access. You pin a website simply by dragging its tab to the taskbar. Some websites can also extend the icon’s Jump List.
 
-The ability to pin websites to the Windows 8.1 taskbar can help make end users in businesses more productive. As an IT professional, for example, you can pin intranet and SharePoint websites to the taskbar to make them immediately available to users. In this article, you learn how to deploy pinned websites by using Lite Touch Installation in the [Microsoft Deployment Toolkit (MDT) 2013](http://go.microsoft.com/fwlink/p/?LinkId=398474).
+The ability to pin websites to the Windows 8.1 taskbar can help make end users in businesses more productive. As an IT professional, for example, you can pin intranet and SharePoint websites to the taskbar to make them immediately available to users. In this article, you learn how to deploy pinned websites by using Lite Touch Installation in the [Microsoft Deployment Toolkit (MDT) 2013](https://go.microsoft.com/fwlink/p/?LinkId=398474).
 
 ## Deploying pinned websites in MDT 2013
-This topic requires that you have a complete MDT 2013 deployment share that contains Windows 8.1 which comes with Internet Explorer 11. If you’re deploying to Windows 7 clients and need to learn how to add IE11 to an MDT 2013 deployment share as an update, see [Installing Internet Explorer 11 using Microsoft Deployment Toolkit (MDT)](http://go.microsoft.com/fwlink/p/?LinkId=398475) in the TechNet library.
+This topic requires that you have a complete MDT 2013 deployment share that contains Windows 8.1 which comes with Internet Explorer 11. If you’re deploying to Windows 7 clients and need to learn how to add IE11 to an MDT 2013 deployment share as an update, see [Installing Internet Explorer 11 using Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=398475) in the TechNet library.
 
 Deploying pinned websites in MDT 2013 is a 4-step process:
 
@@ -99,13 +101,13 @@ With the .website files ready to copy to the **Public Links** folder on target c
 ## Updating intranet websites for pinning
 The MDT 2013 deployment share and task sequences are now ready to pin websites to the taskbar during deployment. This pinning feature can include intranet sites important in your organization.
 
-You can make your intranet websites act more like applications by extending them to fully support the Windows 8.1 taskbar. This includes creating custom Jump Lists, thumbnail previews, and notifications. For info about extending your intranet websites, see [Pinned Sites Developer Documentation](http://go.microsoft.com/fwlink/p/?LinkId=398484) on MSDN. For more ideas about what to pin, see [Add-ons](http://go.microsoft.com/fwlink/p/?LinkId=398483) in the Internet Explorer Gallery.
+You can make your intranet websites act more like applications by extending them to fully support the Windows 8.1 taskbar. This includes creating custom Jump Lists, thumbnail previews, and notifications. For info about extending your intranet websites, see [Pinned Sites Developer Documentation](https://go.microsoft.com/fwlink/p/?LinkId=398484) on MSDN. For more ideas about what to pin, see [Add-ons](https://go.microsoft.com/fwlink/p/?LinkId=398483) in the Internet Explorer Gallery.
 
 ## Related topics
-- [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/p/?LinkId=276788)
-- [Windows System Image Manager Technical Reference](http://go.microsoft.com/fwlink/p/?LinkId=276789)
-- [Microsoft Deployment Toolkit (MDT)](http://go.microsoft.com/fwlink/p/?LinkId=331148)
-- [Windows ADK Overview](http://go.microsoft.com/fwlink/p/?LinkId=276669)
+- [Unattended Windows Setup Reference](https://go.microsoft.com/fwlink/p/?LinkId=276788)
+- [Windows System Image Manager Technical Reference](https://go.microsoft.com/fwlink/p/?LinkId=276789)
+- [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=331148)
+- [Windows ADK Overview](https://go.microsoft.com/fwlink/p/?LinkId=276669)
 
  
 

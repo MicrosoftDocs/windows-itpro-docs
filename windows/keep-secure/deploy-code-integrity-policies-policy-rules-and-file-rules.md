@@ -4,6 +4,7 @@ description: This article provides information about two elements in code integr
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 author: brianlic-msft
 ---
 
@@ -78,11 +79,6 @@ File rule levels allow administrators to specify the level at which they want to
 
 Each file rule level has its benefit and disadvantage. Use Table 3 to select the appropriate protection level for your available administrative resources and Device Guard deployment scenario.
 
-<!-- Need to confirm these updated table rows:
-    | **SignedVersion** | This combines the publisher rule with a version number. This option allows anything from the specified publisher, with a version at or above the specified version number, to run. |
-    | **FilePublisher** | This is a combination of the “FileName” attribute of the signed file, plus “Publisher” (PCA certificate with CN of leaf), plus a minimum version number. This option trusts specific files from the specified publisher, with a version at or above the specified version number. |
---> 
-
 Table 3. Code integrity policy - file rule levels
 
 | Rule level | Description |
@@ -99,7 +95,7 @@ Table 3. Code integrity policy - file rule levels
 | **WHQLPublisher** | This is a combination of the WHQL and the CN on the leaf certificate and is primarily for kernel binaries. |
 | **WHQLFilePublisher** | Specifies that the binaries are validated and signed by WHQL, with a specific publisher (WHQLPublisher), and that the binary is the specified version or newer. This is primarily for kernel binaries. |
 
-> **Note**&nbsp;&nbsp;When you create code integrity policies with the [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) cmdlet, you can specify a primary file rule level by including the **–Level** parameter. For discovered binaries that cannot be trusted based on the primary file rule criteria, use the **–Fallback** parameter. For example, if the primary file rule level is PCACertificate but you would like to trust the unsigned applications as well, using the Hash rule level as a fallback adds the hash values of binaries that did not have a signing certificate.
+> **Note**&nbsp;&nbsp;When you create code integrity policies with the [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) cmdlet, you can specify a primary file rule level by including the **-Level** parameter. For discovered binaries that cannot be trusted based on the primary file rule criteria, use the **-Fallback** parameter. For example, if the primary file rule level is PCACertificate but you would like to trust the unsigned applications as well, using the Hash rule level as a fallback adds the hash values of binaries that did not have a signing certificate.
 
 ## Related topics
 

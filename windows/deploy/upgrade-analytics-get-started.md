@@ -15,7 +15,7 @@ For system, application, and driver data to be shared with Microsoft, you must c
 
 - [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 
-- [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](http://go.microsoft.com/fwlink/?LinkID=822965)
+- [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
 
 
 This topic explains how to obtain and set up Upgrade Analytics components. If you haven’t done so already, see [Upgrade Analytics requirements](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-requirements) for information about requirements for using Upgrade Analytics.
@@ -31,13 +31,13 @@ Each task is explained in detail in the following sections.
 
 ## Add Upgrade Analytics to Operations Management Suite
 
-Upgrade Analytics is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
+Upgrade Analytics is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing your on-premises and cloud environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
 
 If you are already using OMS, you’ll find Upgrade Analytics in the Solutions Gallery. Select the **Upgrade Analytics** tile in the gallery and then click **Add** on the solution's details page. Upgrade Analytics is now visible in your workspace.
 
 If you are not using OMS:
 
-1.  Go to the [Upgrade Analytics website](http://go.microsoft.com/fwlink/?LinkID=799190&clcid=0x409) and click **Sign up** to kick off the onboarding process.
+1.  Go to the [Upgrade Analytics page on Microsoft.com](https://go.microsoft.com/fwlink/?LinkID=799190&clcid=0x409) and click **Sign up** to kick off the onboarding process.
 
 2.  Sign in to Operations Management Suite (OMS). You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
 
@@ -85,7 +85,7 @@ Note: The compatibility update KB runs under the computer’s system account and
 |---------------------------------------------------------|-----------|
 | `https://v10.vortex-win.data.microsoft.com/collect/v1`                                                                                                                             | Connected User Experience and Telemetry component endpoint. User computers send data to Microsoft through this endpoint.             |
 | `https://settings-win.data.microsoft.com/settings`                                                                                                                                 | Enables the compatibility update KB to send data to Microsoft.                                                                       |
-| `http://go.microsoft.com/fwlink/?LinkID=544713`<br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc/extended`                                        | This service provides driver information about whether there will be a driver available post-upgrade for the hardware on the system. |
+| `https://go.microsoft.com/fwlink/?LinkID=544713`<br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc/extended`                                        | This service provides driver information about whether there will be a driver available post-upgrade for the hardware on the system. |
 | `https://vortex.data.microsoft.com/health/keepalive` <br>`https://settings.data.microsoft.com/qos` <br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc` | These endpoints are used to validate that user computers are sharing data with Microsoft.                                            |
 
 ## Deploy the compatibility update and related KBs
@@ -131,7 +131,7 @@ The Upgrade Analytics deployment script does the following:
 
 To run the Upgrade Analytics deployment script:
 
-1.  Download the [Upgrade Analytics deployment script](http://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract UpgradeAnalytics.zip. The files in the Diagnostics folder are necessary only if you plan to run the script in troubleshooting mode.
+1.  Download the [Upgrade Analytics deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract UpgradeAnalytics.zip. The files in the Diagnostics folder are necessary only if you plan to run the script in troubleshooting mode.
 
 2.  Edit the following parameters in RunConfig.bat:
 

@@ -1,5 +1,5 @@
 ---
-title: Planning for High Availability with App-V Server (Windows 10)
+title: Planning for High Availability with App-V Server
 description: Planning for High Availability with App-V Server
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
@@ -10,6 +10,9 @@ ms.prod: w10
 
 
 # Planning for High Availability with App-V Server
+
+**Applies to**
+-   Windows 10, version 1607
 
 Microsoft Application Virtualization (App-V) system configurations can take advantage of options that maintain a high level of available service.
 
@@ -54,11 +57,11 @@ Review the following for more information about configuring IIS and Network Load
 
 ## <a href="" id="bkmk-clusterscsmode"></a>Support for clustered file servers when running SCS mode
 
-Running App-V Server in Share Content Store (SCS) mode with clustered file servers is supported.
+Running App-V Server in Shared Content Store (SCS) mode with clustered file servers is supported.
 
 The following steps can be used to enable this configuration:
 
--   Configure App-V to run in client SCS mode. For more information about configuring App-V SCS mode, see [How to Install the App-V Client for Shared Content Store Mode](appv-install-the-appv-client-for-shared-content-store-mode.md).
+-   Configure the App-V client to run in Shared Content Store mode. For more information, see [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).
 
 -   Configure the file server cluster, configured in either the scale out mode (which started with Windows Server 2012) or the earlier clustering mode, with a virtual SAN.
 
@@ -127,7 +130,7 @@ The App-V management server database supports deployments to computers running M
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
-localizationpriority: medium
+localizationpriority: high
 ---
 
 # Customize and export Start layout
@@ -19,7 +19,7 @@ localizationpriority: medium
 
 **Looking for consumer information?**
 
--   [Customize the Start menu](http://go.microsoft.com/fwlink/p/?LinkId=623630)
+-   [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
 The easiest method for creating a customized Start layout to apply to other Windows 10 devices is to set up the Start screen on a test computer and then export the layout.
 
@@ -74,7 +74,7 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 ## <a href="" id="bmk-exportstartscreenlayout"></a>Export the Start layout
 
 
-When you have the Start layout that you want your users to see, use the [Export-StartLayout](http://go.microsoft.com/fwlink/p/?LinkId=620879) cmdlet in Windows PowerShell to export the Start layout to an .xml file.
+When you have the Start layout that you want your users to see, use the [Export-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=620879) cmdlet in Windows PowerShell to export the Start layout to an .xml file.
 
 **To export the Start layout to an .xml file**
 
@@ -86,7 +86,7 @@ When you have the Start layout that you want your users to see, use the [Export-
 
     In the previous command, `-path` is a required parameter that specifies the path and file name for the export file. You can specify a local path or a UNC path (for example, \\\\FileServer01\\StartLayouts\\StartLayoutMarketing.xml).
 
-    Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](http://go.microsoft.com/fwlink/p/?LinkId=620879) cmdlet does not append the file name extension, and the policy settings require the extension.
+    Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=620879) cmdlet does not append the file name extension, and the policy settings require the extension.
     
     Example of a layout file produced by `Export-StartLayout`:
 

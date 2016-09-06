@@ -10,6 +10,9 @@ ms.prod: w10
 
 # Preparing Your Environment for App-V
 
+**Applies to**
+-   Windows 10, version 1607
+
 There are a number of different deployment configurations and prerequisites that you must consider before you create your deployment plan for Microsoft Application Virtualization (App-V). This section includes information that can help you gather the information that you must have to formulate a deployment plan that best meets your business requirements.
 
 ## App-V prerequisites
@@ -26,7 +29,7 @@ There are a number of different deployment configurations and prerequisites that
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Other resources for App-V planning
 

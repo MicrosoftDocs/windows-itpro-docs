@@ -21,7 +21,7 @@ Microsoft BitLocker Administration and Monitoring (MBAM) 2.0 provides a simpl
 BitLocker Administration and Monitoring 2.0 enforces the BitLocker encryption policy options that you set for your enterprise, monitors the compliance of client computers with those policies, and reports on the encryption status of both the enterprise and the individual computers. In addition, MBAM lets you access the recovery key information when users forget their PIN or password, or when their BIOS or boot record changes.
 
 **Note**  
-BitLocker is not covered in detail in this guide. For an overview of BitLocker, see [BitLocker Drive Encryption Overview](http://go.microsoft.com/fwlink/p/?LinkId=225013).
+BitLocker is not covered in detail in this guide. For an overview of BitLocker, see [BitLocker Drive Encryption Overview](https://go.microsoft.com/fwlink/p/?LinkId=225013).
 
  
 
@@ -94,7 +94,7 @@ For more information, and for late-breaking news that is not included in the doc
 ## How to Get MBAM 2.0
 
 
-This technology is a part of the Microsoft Desktop Optimization Pack (MDOP). Enterprise customers can get MDOP with Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP?](http://go.microsoft.com/fwlink/p/?LinkId=322049)
+This technology is a part of the Microsoft Desktop Optimization Pack (MDOP). Enterprise customers can get MDOP with Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP?](https://go.microsoft.com/fwlink/p/?LinkId=322049)
 
 ## Related topics
 

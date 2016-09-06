@@ -15,7 +15,7 @@ ms.prod: w10
 
 You can deploy App-V 5.0 packages using an Electronic Software Distribution (ESD) solution. For information about planning to deploy App-V packages with an ESD, see [Planning to Deploy App-V 5.0 with an Electronic Software Distribution System](planning-to-deploy-app-v-50-with-an-electronic-software-distribution-system.md).
 
-To deploy App-V packages with Microsoft System Center 2012 Configuration Manager, see [Introduction to Application Management in Configuration Manager](http://go.microsoft.com/fwlink/?LinkId=281816)
+To deploy App-V packages with Microsoft System Center 2012 Configuration Manager, see [Introduction to Application Management in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=281816)
 
 ## How to deploy virtualized packages using an ESD
 
@@ -39,7 +39,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 ## Other resources for using an ESD and App-V 5.0
 
 
-Use the following link for more information about [App-V and Citrix Integration](http://go.microsoft.com/fwlink/?LinkId=330294 ) (http://go.microsoft.com/fwlink/?LinkId=330294).
+Use the following link for more information about [App-V and Citrix Integration](https://go.microsoft.com/fwlink/?LinkId=330294 ) (https://go.microsoft.com/fwlink/?LinkId=330294).
 
 [Operations for App-V 5.0](operations-for-app-v-50.md)
 

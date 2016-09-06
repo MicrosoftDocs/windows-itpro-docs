@@ -42,7 +42,7 @@ This topic discusses general and security-related best practices when using User
 
 -   **Chkdsk.exe**
 
-    We recommend that you run Chkdsk.exe before running the ScanState and LoadState tools. Chkdsk.exe creates a status report for a hard disk drive and lists and corrects common errors. For more information about the Chkdsk.exe tool, see [Chkdsk](http://go.microsoft.com/fwlink/p/?LinkId=140244).
+    We recommend that you run Chkdsk.exe before running the ScanState and LoadState tools. Chkdsk.exe creates a status report for a hard disk drive and lists and corrects common errors. For more information about the Chkdsk.exe tool, see [Chkdsk](https://go.microsoft.com/fwlink/p/?LinkId=140244).
 
 -   **Migrate in groups**
 
@@ -55,7 +55,7 @@ As the authorized administrator, it is your responsibility to protect the privac
 
 -   **Encrypting File System (EFS)**
 
-    Take extreme caution when migrating encrypted files, because the end user does not need to be logged on to capture the user state. By default, USMT fails if an encrypted file is found. For more information about EFS best practices, see this article in the [Microsoft Knowledge Base](http://go.microsoft.com/fwlink/p/?linkid=163). For specific instructions about EFS best practices, see [Migrate EFS Files and Certificates](usmt-migrate-efs-files-and-certificates.md).
+    Take extreme caution when migrating encrypted files, because the end user does not need to be logged on to capture the user state. By default, USMT fails if an encrypted file is found. For more information about EFS best practices, see this article in the [Microsoft Knowledge Base](https://go.microsoft.com/fwlink/p/?linkid=163). For specific instructions about EFS best practices, see [Migrate EFS Files and Certificates](usmt-migrate-efs-files-and-certificates.md).
 
     **Important**  
     If you migrate an encrypted file without also migrating the certificate, end users will not be able to access the file after the migration.
@@ -72,7 +72,7 @@ As the authorized administrator, it is your responsibility to protect the privac
 
 -   **Maintain security of the file server and the deployment server**
 
-    We recommend that you manage the security of the file and deployment servers. It is important to make sure that the file server where you save the store is secure. You must also secure the deployment server, to ensure that the user data that is in the log files is not exposed. We also recommend that you only transmit data over a secure Internet connection, such as a virtual private network. For more information about network security, see [Microsoft Security Compliance Manager](http://go.microsoft.com/fwlink/p/?LinkId=215657).
+    We recommend that you manage the security of the file and deployment servers. It is important to make sure that the file server where you save the store is secure. You must also secure the deployment server, to ensure that the user data that is in the log files is not exposed. We also recommend that you only transmit data over a secure Internet connection, such as a virtual private network. For more information about network security, see [Microsoft Security Compliance Manager](https://go.microsoft.com/fwlink/p/?LinkId=215657).
 
 -   **Password Migration**
 

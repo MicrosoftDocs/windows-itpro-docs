@@ -127,7 +127,7 @@ Windows To Go can be deployed using standard Windows deployment tools like Diskp
 
 -   A Windows 10 Enterprise or Windows 10 Education host PC that can be used to provision new USB keys
 
-You can use a Windows PowerShell script to target several drives and scale your deployment for a large number of Windows To Go drives. You can also use a USB duplicator to duplicate a Windows To Go drive after it has been provisioned if you are creating a large number of drives. See the [Windows To Go Step by Step](http://go.microsoft.com/fwlink/p/?LinkId=618950) article on the TechNet wiki for a walkthrough of the drive creation process.
+You can use a Windows PowerShell script to target several drives and scale your deployment for a large number of Windows To Go drives. You can also use a USB duplicator to duplicate a Windows To Go drive after it has been provisioned if you are creating a large number of drives. See the [Windows To Go Step by Step](https://go.microsoft.com/fwlink/p/?LinkId=618950) article on the TechNet wiki for a walkthrough of the drive creation process.
 
 ## <a href="" id="wtg-faq-usbvs"></a>Is Windows To Go supported on both USB 2.0 and USB 3.0 drives?
 
@@ -152,7 +152,7 @@ Yes. Because USB 3.0 offers significantly faster speeds than USB 2.0, a Windows 
 ## <a href="" id="wtg-faq-selfpro"></a>Can the user self-provision Windows To Go?
 
 
-Yes, if the user has administrator permissions they can self-provision a Windows To Go drive using the Windows To Go Creator wizard which is included in Windows 10 Enterprise and Windows 10 Education. Additionally, System Center 2012 Configuration Manager SP1 and later releases includes support for user self-provisioning of Windows To Go drives. Configuration Manager can be downloaded for evaluation from the [Microsoft TechNet Evaluation Center](http://go.microsoft.com/fwlink/p/?LinkID=618746).
+Yes, if the user has administrator permissions they can self-provision a Windows To Go drive using the Windows To Go Creator wizard which is included in Windows 10 Enterprise and Windows 10 Education. Additionally, System Center 2012 Configuration Manager SP1 and later releases includes support for user self-provisioning of Windows To Go drives. Configuration Manager can be downloaded for evaluation from the [Microsoft TechNet Evaluation Center](https://go.microsoft.com/fwlink/p/?LinkID=618746).
 
 ## <a href="" id="wtg-faq-mng"></a>How can Windows To Go be managed in an organization?
 
@@ -186,7 +186,7 @@ After you have entered firmware setup, make sure that boot from USB is enabled. 
 
 Alternatively, if your computer supports it, you can try to use the one-time boot menu (often F12), to select USB boot on a per-boot basis.
 
-For more detailed instructions, see the wiki article, [Tips for configuring your BIOS settings to work with Windows To Go](http://go.microsoft.com/fwlink/p/?LinkID=618951).
+For more detailed instructions, see the wiki article, [Tips for configuring your BIOS settings to work with Windows To Go](https://go.microsoft.com/fwlink/p/?LinkID=618951).
 
 **Warning**  
 Configuring a computer to boot from USB will cause your computer to attempt to boot from any bootable USB device connected to your computer. This potentially includes malicious devices. Users should be informed of this risk and instructed to not have any bootable USB storage devices plugged in to their computers except for their Windows To Go drive.
@@ -312,7 +312,7 @@ The size constraints are the same as full Windows. To ensure that you have enoug
 ## <a href="" id="wtg-faq-roamact"></a>Do I need to activate Windows To Go every time I roam?
 
 
-No, Windows To Go requires volume activation; either using the [Key Management Service](http://go.microsoft.com/fwlink/p/?LinkId=619051) (KMS) server in your organization or using [Active Directory](http://go.microsoft.com/fwlink/p/?LinkId=619053) based volume activation. The Windows To Go workspace will not need to be reactivated every time you roam. KMS activates Windows on a local network, eliminating the need for individual computers to connect to Microsoft. To remain activated, KMS client computers must renew their activation by connecting to the KMS host on periodic basis. This typically occurs as soon as the user has access to the corporate network (either through a direct connection on-premises or a through remote connection using DirectAccess or a virtual private network connection), once activated the machine will not need to be activated again until the activation validity interval has passed. In a KMS configuration the activation validity interval is 180 days.
+No, Windows To Go requires volume activation; either using the [Key Management Service](https://go.microsoft.com/fwlink/p/?LinkId=619051) (KMS) server in your organization or using [Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=619053) based volume activation. The Windows To Go workspace will not need to be reactivated every time you roam. KMS activates Windows on a local network, eliminating the need for individual computers to connect to Microsoft. To remain activated, KMS client computers must renew their activation by connecting to the KMS host on periodic basis. This typically occurs as soon as the user has access to the corporate network (either through a direct connection on-premises or a through remote connection using DirectAccess or a virtual private network connection), once activated the machine will not need to be activated again until the activation validity interval has passed. In a KMS configuration the activation validity interval is 180 days.
 
 ## <a href="" id="wtg-faq-features"></a>Can I use all Windows features on Windows To Go?
 
@@ -346,12 +346,12 @@ Yes. You can use a combination of identifiers to determine if the currently runn
 
 Next, check if the **OperatingSystemSKU** property is equal to **4** (for Windows 10 Enterprise) or **121** (for Windows 10 Education). The combination of those two properties represents a Windows To Go workspace environment.
 
-For more information, see the MSDN article on the [Win32\_OperatingSystem class](http://go.microsoft.com/fwlink/p/?LinkId=619059).
+For more information, see the MSDN article on the [Win32\_OperatingSystem class](https://go.microsoft.com/fwlink/p/?LinkId=619059).
 
 ## <a href="" id="wtg-faq-lic"></a>How is Windows To Go licensed?
 
 
-Windows To Go allows organization to support the use of privately owned PCs at the home or office with more secure access to their organizational resources. With Windows To Go use rights under [Software Assurance](http://go.microsoft.com/fwlink/p/?LinkId=619062), an employee will be able to use Windows To Go on any company PC licensed with Software Assurance as well as from their home PC.
+Windows To Go allows organization to support the use of privately owned PCs at the home or office with more secure access to their organizational resources. With Windows To Go use rights under [Software Assurance](https://go.microsoft.com/fwlink/p/?LinkId=619062), an employee will be able to use Windows To Go on any company PC licensed with Software Assurance as well as from their home PC.
 
 ## <a href="" id="wtg-faq-recovery"></a>Does Windows Recovery Environment work with Windows To Go? What’s the guidance for recovering a Windows To Go drive?
 
@@ -383,7 +383,7 @@ You can reset the BitLocker system measurements to incorporate the new boot orde
 
     A message is displayed, informing you that your data will not be protected while BitLocker is suspended and asking if you want to suspend BitLocker Drive Encryption. Click **Yes** to continue and suspend BitLocker on the drive.
 
-4.  Restart the computer and enter the firmware settings to reset the boot order to boot from USB first. For more information on changing the boot order in the BIOS, see [Tips for configuring your BIOS settings to work with Windows To Go](http://go.microsoft.com/fwlink/p/?LinkId=618951) on the TechNet wiki.
+4.  Restart the computer and enter the firmware settings to reset the boot order to boot from USB first. For more information on changing the boot order in the BIOS, see [Tips for configuring your BIOS settings to work with Windows To Go](https://go.microsoft.com/fwlink/p/?LinkId=618951) on the TechNet wiki.
 
 5.  Restart the computer again and then log on to the host computer using an account with administrator privileges. (Neither your Windows To Go drive nor any other USB drive should be inserted.)
 
@@ -410,7 +410,7 @@ Reformatting the drive erases the data on the drive, but doesn’t reconfigure t
 
      
 
-2.  Start the [diskpart](http://go.microsoft.com/fwlink/p/?LinkId=619070) command interpreter, by typing `diskpart` at the command prompt.
+2.  Start the [diskpart](https://go.microsoft.com/fwlink/p/?LinkId=619070) command interpreter, by typing `diskpart` at the command prompt.
 
 3.  Use the `select disk` command to identify the drive. If you do not know the drive number, use the `list` command to display the list of disks available.
 
@@ -433,9 +433,9 @@ There is no support in Windows for upgrading a Windows To Go drive. Deployed Win
 ## Additional resources
 
 
--   [Windows 10 forums](http://go.microsoft.com/fwlink/p/?LinkId=618949)
+-   [Windows 10 forums](https://go.microsoft.com/fwlink/p/?LinkId=618949)
 
--   [Windows To Go Step by Step Wiki](http://go.microsoft.com/fwlink/p/?LinkId=618950)
+-   [Windows To Go Step by Step Wiki](https://go.microsoft.com/fwlink/p/?LinkId=618950)
 
 -   [Windows To Go: feature overview](windows-to-go-overview.md)
 

@@ -23,7 +23,7 @@ Read these Release Notes thoroughly before you install the Microsoft Application
 ## Protect Against Security Vulnerabilities and Viruses
 
 
-To help protect against security vulnerabilities and viruses, it is important to install the latest available security updates for any new software being installed. For more information, see the [Microsoft Security website](http://go.microsoft.com/fwlink/?LinkId=3482) (http://go.microsoft.com/fwlink/?LinkId=3482).
+To help protect against security vulnerabilities and viruses, it is important to install the latest available security updates for any new software being installed. For more information, see the [Microsoft Security website](https://go.microsoft.com/fwlink/?LinkId=3482) (https://go.microsoft.com/fwlink/?LinkId=3482).
 
 ## Known Issues with Application Virtualization 4.6 SP1
 

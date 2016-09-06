@@ -7,6 +7,7 @@ ms.pagetype: store, mobile
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Windows Store for Business overview
@@ -24,7 +25,7 @@ With the new Windows Store for Business, organizations can make volume purchases
 
 Organizations of any size can benefit from using the Store for Business provides:
 
--   **Scales to fit the size of your business** - For smaller businesses, with Azure AD accounts and Windows 10 devices, you can quickly have an end-to-end process for acquiring and distributing content using the Store for Business. For larger businesses, all the capabilities of the Store for Businessare available to you, or you can integrate the Store for Businesswith management tools, for greater control over access to apps and app updates. You can use existing work or school accounts.
+-   **Scales to fit the size of your business** - For smaller businesses, with Azure AD accounts and Windows 10 devices, you can quickly have an end-to-end process for acquiring and distributing content using the Store for Business. For larger businesses, all the capabilities of the Store for Business are available to you, or you can integrate the Store for Business with management tools, for greater control over access to apps and app updates. You can use existing work or school accounts.
 
 -   **Bulk app acquisition** - Acquire apps in volume from the Store for Business.
 
@@ -65,7 +66,7 @@ Microsoft Azure Active Directory (AD) accounts for your employees:
 
 -   For offline-licensed apps, Azure AD accounts are not required for employees.
 
-For more information on Azure AD, see [About Office 365 and Azure Active Directory](http://go.microsoft.com/fwlink/p/?LinkId=708612), and [Intro to Azure: identity and access](http://go.microsoft.com/fwlink/p/?LinkId=708611).
+For more information on Azure AD, see [About Office 365 and Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=708612), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
 
 ### Optional
 
@@ -144,11 +145,11 @@ Once signed in to the Store for Business, you can browse and search for all prod
 
 -   Universal Windows Platform apps
 
--   Universal Windows apps, by device: Phone, Surface Hub, IOT devices , HoloLens
+-   Universal Windows apps, by device: Phone, Surface Hub, IOT devices, HoloLens
 
 Apps purchased from the Store for Business only work on Windows 10 devices.
 
-Line-of-business (LOB) apps are also supported via the Business store. You can invite IT developers or ISVs to be LOB publishers for your organization. This allows them to submit apps via the developer center that are only available to your organization. These apps can be distributed using the distribution methods discussed in this topic. For more information, see Working with Line-of-Business apps.
+Line-of-business (LOB) apps are also supported via the Business store. You can invite IT developers or ISVs to be LOB publishers for your organization. This allows them to submit apps via the developer center that are only available to your organization. These apps can be distributed using the distribution methods discussed in this topic. For more information, see [Working with Line-of-Business apps](working-with-line-of-business-apps.md).
 
 **App licensing model**
 
@@ -264,7 +265,7 @@ Store for Business is currently available in these markets.
 ## <a href="" id="isv-wsfb"></a>ISVs and the Store for Business
 
 
-Developers in your organization, or ISVs can create content specific to your organization. In the Store for Business, we call these app line-of-business (LOB) apps, and the devs that create them are LOB publishers. The process looks like this:
+Developers in your organization, or ISVs can create content specific to your organization. In the Store for Business, we call these line-of-business (LOB) apps, and the devs that create them are LOB publishers. The process looks like this:
 
 -   Admin invites devs to be LOB publishers for your organization. These devs can be internal devs, or external ISVs.
 

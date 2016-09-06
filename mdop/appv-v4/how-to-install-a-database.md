@@ -44,7 +44,7 @@ To install the database, you must use a network account with the appropriate per
 8.  Select a name for the database, and then click **Next**.
 
     **Note**  
-    If error 25109 is displayed when you try to complete this step, you have incorrectly set up the permissions necessary to install the database. For details on setting up the necessary SQL permissions, please see <http://go.microsoft.com/fwlink/?LinkId=132144>.
+    If error 25109 is displayed when you try to complete this step, you have incorrectly set up the permissions necessary to install the database. For details on setting up the necessary SQL permissions, please see <https://go.microsoft.com/fwlink/?LinkId=132144>.
 
      
 

@@ -25,7 +25,7 @@ In these procedures, you confirm that the rules you deployed are working correct
 
 -   **Encryption zone.** Similar to the main isolation zone, after you confirm that the network traffic to zone members is properly authenticated and encrypted, you must convert your zone rules from request mode to require mode.
 
->**Note:**  In addition to the steps shown in this procedure, you can also use network traffic capture tools such as Microsoft Network Monitor, which can be downloaded from <http://go.microsoft.com/fwlink/?linkid=94770>. Network Monitor and similar tools allow you to capture, parse, and display the network packets received by the network adapter on your device. Current versions of these tools include full support for IPsec. They can identify encrypted network packets, but they cannot decrypt them.
+>**Note:**  In addition to the steps shown in this procedure, you can also use network traffic capture tools such as Microsoft Network Monitor, which can be downloaded from <https://go.microsoft.com/fwlink/?linkid=94770>. Network Monitor and similar tools allow you to capture, parse, and display the network packets received by the network adapter on your device. Current versions of these tools include full support for IPsec. They can identify encrypted network packets, but they cannot decrypt them.
 
  
 

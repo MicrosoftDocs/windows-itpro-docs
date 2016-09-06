@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+localizationpriority: high
 ---
 
 # Investigate machines in the Windows Defender ATP Machines view

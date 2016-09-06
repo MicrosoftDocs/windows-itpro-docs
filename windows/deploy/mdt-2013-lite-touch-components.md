@@ -33,7 +33,7 @@ The rules (CustomSettings.ini and Bootstrap.ini) make up the brain of MDT. The r
 -   Domain to join, and organizational unit (OU) in Active Directory to hold the computer object
 -   Whether to enable BitLocker
 -   Regional settings
-You can manage hundreds of settings in the rules. For more information, see the [Microsoft Deployment Toolkit resource center](http://go.microsoft.com/fwlink/p/?LinkId=618117).
+You can manage hundreds of settings in the rules. For more information, see the [Microsoft Deployment Toolkit resource center](https://go.microsoft.com/fwlink/p/?LinkId=618117).
 
 ![figure 5](images/mdt-05-fig05.png)
 
@@ -103,7 +103,7 @@ Selection profiles, which are available in the Advanced Configuration node, prov
 MDT uses many log files during operating system deployments. By default the logs are client side, but by configuring the deployment settings, you can have MDT store them on the server, as well.
 
 **Note**  
-The easiest way to view log files is to use Configuration Manager Trace (CMTrace), which is included in the [System Center 2012 R2 Configuration Manager Toolkit](http://go.microsoft.com/fwlink/p/?LinkId=734717).
+The easiest way to view log files is to use Configuration Manager Trace (CMTrace), which is included in the [System Center 2012 R2 Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717).
  
 ## <a href="" id="sec12"></a>Monitoring
 

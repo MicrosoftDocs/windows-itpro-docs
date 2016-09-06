@@ -18,19 +18,20 @@ localizationpriority: high
 
 In Windows 10, Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and a biometric or PIN.
 
-> **Note:** When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics. 
+>[!NOTE]
+> When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics. 
 
 Hello addresses the following problems with passwords:
 -   Passwords can be difficult to remember, and users often reuse passwords on multiple sites.
 -   Server breaches can expose symmetric network credentials.
--   Passwords can be subject to [replay attacks](http://go.microsoft.com/fwlink/p/?LinkId=615673).
--   Users can inadvertently expose their passwords due to [phishing attacks](http://go.microsoft.com/fwlink/p/?LinkId=615674).
+-   Passwords can be subject to [replay attacks](https://go.microsoft.com/fwlink/p/?LinkId=615673).
+-   Users can inadvertently expose their passwords due to [phishing attacks](https://go.microsoft.com/fwlink/p/?LinkId=615674).
 
 Hello lets users authenticate to:
 -   a Microsoft account.
 -   an Active Directory account.
 -   a Microsoft Azure Active Directory (Azure AD) account.
--   Identity Provider Services or Relying Party Services that support [Fast ID Online (FIDO) v2.0](http://go.microsoft.com/fwlink/p/?LinkId=533889) authentication
+-   Identity Provider Services or Relying Party Services that support [Fast ID Online (FIDO) v2.0](https://go.microsoft.com/fwlink/p/?LinkId=533889) authentication
 
 After an initial two-step verification of the user during enrollment, Hello is set up on the user's device and the user is asked to set a gesture, which can be a biometric, such as a fingerprint, or a PIN. The user provides the gesture to verify their identity. Windows then uses Hello to authenticate users and help them to access protected resources and services.
 
@@ -90,21 +91,21 @@ When identity providers such as Active Directory or Azure AD enroll a certificat
 
 ## Learn more
 
-[Introduction to Windows Hello](http://go.microsoft.com/fwlink/p/?LinkId=786649), video presentation on Microsoft Virtual Academy
+[Introduction to Windows Hello](https://go.microsoft.com/fwlink/p/?LinkId=786649), video presentation on Microsoft Virtual Academy
 
-[What's new in Active Directory Domain Services (AD DS) in Windows Server Technical Preview](http://go.microsoft.com/fwlink/p/?LinkId=708533)
+[What's new in Active Directory Domain Services (AD DS) in Windows Server Technical Preview](https://go.microsoft.com/fwlink/p/?LinkId=708533)
 
-[Windows Hello face authentication](http://go.microsoft.com/fwlink/p/?LinkId=626024)
+[Windows Hello face authentication](https://go.microsoft.com/fwlink/p/?LinkId=626024)
 
-[Biometrics hardware guidelines](http://go.microsoft.com/fwlink/p/?LinkId=626995)
+[Biometrics hardware guidelines](https://go.microsoft.com/fwlink/p/?LinkId=626995)
 
-[Windows 10: Disrupting the Revolution of Cyber-Threats with Revolutionary Security!](http://go.microsoft.com/fwlink/p/?LinkId=533890)
+[Windows 10: Disrupting the Revolution of Cyber-Threats with Revolutionary Security!](https://go.microsoft.com/fwlink/p/?LinkId=533890)
 
-[Windows 10: The End Game for Passwords and Credential Theft?](http://go.microsoft.com/fwlink/p/?LinkId=533891)
+[Windows 10: The End Game for Passwords and Credential Theft?](https://go.microsoft.com/fwlink/p/?LinkId=533891)
 
-[Authenticating identities without passwords through Microsoft Passport](http://go.microsoft.com/fwlink/p/?LinkId=616778)
+[Authenticating identities without passwords through Microsoft Passport](https://go.microsoft.com/fwlink/p/?LinkId=616778)
 
-[Microsoft Passport guide](http://go.microsoft.com/fwlink/p/?LinkId=691928)
+[Microsoft Passport guide](https://go.microsoft.com/fwlink/p/?LinkId=691928)
 
 ## Related topics
 

@@ -13,6 +13,16 @@ author: jdeckerMS
 This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 
+## August 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| [Create mandatory user profiles](mandatory-user-profile.md) | New |
+| [Configure Windows 10 taskbar](configure-windows-10-taskbar.md) | Updated sample XML for combined Start and taskbar layout; added note to explain the difference between applying taskbar configuration by Group Policy and by provisioning package |
+| [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Updated instructions for exiting assigned access mode. |
+| Application development for Windows as a service  |  Topic moved to MSDN: [Application development for Windows as a service](https://msdn.microsoft.com/windows/uwp/get-started/application-development-for-windows-as-a-service)
+
+
 ## RELEASE: Windows 10, version 1607
 
 The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added: 

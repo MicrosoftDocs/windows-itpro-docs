@@ -28,7 +28,7 @@ By default, at installation the App-V client is configured with the minimum perm
 
 ### File Type Associations
 
-By default, the installation of the client registers file type associations (FTAs) for OSD files, which enables users to start applications directly from OSD files instead of the published shortcuts. If a user with local administrator rights receives an OSD file containing malicious code, either in e-mail or downloaded from a Web site, the user can open the OSD file and start the application even if the client has been set to restrict the **Add Application** permission. You can unregister the FTAs for the OSD to reduce this risk. Also, consider blocking this extension in the e-mail system and at the firewall. For more information about configuring Outlook to block extensions, see <http://go.microsoft.com/fwlink/?LinkId=133278>.
+By default, the installation of the client registers file type associations (FTAs) for OSD files, which enables users to start applications directly from OSD files instead of the published shortcuts. If a user with local administrator rights receives an OSD file containing malicious code, either in e-mail or downloaded from a Web site, the user can open the OSD file and start the application even if the client has been set to restrict the **Add Application** permission. You can unregister the FTAs for the OSD to reduce this risk. Also, consider blocking this extension in the e-mail system and at the firewall. For more information about configuring Outlook to block extensions, see <https://go.microsoft.com/fwlink/?LinkId=133278>.
 
 **Security Note:  **
 
@@ -66,7 +66,7 @@ If you are using IIS to publish the ICO and OSD files, configure a MIME type for
 
 ### Package Streaming
 
-When a user launches an application for the first time, or if auto-loading parameters have been set on the client, the application package is streamed from a server to the client cache. This process supports the RTSP/RTSPS, HTTP/HTTPS, and SMB/CIFS protocols. The OSD files control which protocols are used, unless the **ApplicationSourceRoot** or **OverrideURL** setting has been configured on the clients. You should configure communication to occur over RTSPS, HTTPS, or IPsec for SMB/CIFS to achieve higher levels of security. For more information about choosing which communication method to use, see the App-V Planning and Deployment Guide at <http://go.microsoft.com/fwlink/?LinkId=122063>.
+When a user launches an application for the first time, or if auto-loading parameters have been set on the client, the application package is streamed from a server to the client cache. This process supports the RTSP/RTSPS, HTTP/HTTPS, and SMB/CIFS protocols. The OSD files control which protocols are used, unless the **ApplicationSourceRoot** or **OverrideURL** setting has been configured on the clients. You should configure communication to occur over RTSPS, HTTPS, or IPsec for SMB/CIFS to achieve higher levels of security. For more information about choosing which communication method to use, see the App-V Planning and Deployment Guide at <https://go.microsoft.com/fwlink/?LinkId=122063>.
 
 **Note**  
 If you are using IIS to publish packages (SFT files), configure a MIME type for SFT=Binary; otherwise, IIS will refuse to serve the SFT files to clients.

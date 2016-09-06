@@ -11,16 +11,19 @@ ms.prod: w10
 
 # Synchronizing Office with UE-V
 
+**Applies to**
+-   Windows 10, version 1607
+
 Microsoft User Experience Virtualization (UE-V) supports the synchronization of Microsoft Office application settings. The combination of UE-V and App-V  support for Office enables the same experience on virtualized instances of Office from any UE-V-enabled device or virtualized desktop.
 
-To synchronize Office applications settings, you can download Office templates from the [Microsoft User Experience Virtualization (UE-V) Template Gallery](http://go.microsoft.com/fwlink/p/?LinkId=246589). This resource provides Microsoft-authored UE-V settings location templates as well as community-developed settings location templates.
+To synchronize Office applications settings, you can download Office templates from the [User Experience Virtualization (UE-V) Template Gallery](https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=UE-V&f%5B0%5D.Text=UE-V). This resource provides Microsoft-authored UE-V settings location templates as well as community-developed settings location templates.
 
 
 ## Microsoft Office support in UE-V
 
 UE-V includes settings location templates for Microsoft Office 2016, 2013, and 2010. In previous versions of UE-V, settings location templates for Office 2013 and Office 2010 were distributed and registered when you installed the UE-V agent. Now that UE-V is a feature in Windows 10, version 1607, settings location templates are installed when you install or upgrade to the new operating system.  
 
-These templates help synchronize users’ Office experience between devices. Microsoft Office 2016 settings roamed by Office 365 experience are not included in these settings. For a list of Office 365-specific settings, see [Overview of user and roaming settings for Office](http://go.microsoft.com/fwlink/p/?LinkId=391220).
+These templates help synchronize users’ Office experience between devices. Microsoft Office 2016 settings roamed by Office 365 experience are not included in these settings. For a list of Office 365-specific settings, see [Overview of user and roaming settings for Office](https://technet.microsoft.com/library/jj733593.aspx).
 
 ## Synchronized Office Settings
 
@@ -131,9 +134,9 @@ You can deploy UE-V settings location template with the following methods:
 
 -   **Registering template with Template Catalog Path**. If you use the Settings Template Catalog Path to manage templates on users’ computers, copy the Office template into the folder defined in the UE-V service. The next time the Template Auto Update (ApplySettingsCatalog.exe) scheduled task runs, the settings location template will be registered on the device. For more information, see [Deploy a settings template catalog](uev-deploy-uev-for-custom-applications.md#deployasettingstemplatecatalog).
 
--   **Registering template with Configuration Manager**. If you use Configuration Manager to manage your UE-V settings storage templates, recreate the Template Baseline CAB, import it into Configuration Manager, and then deploy the baseline to user devices. For more information, see the guidance provided in the documentation for the [System Center Configuration Pack for User Experience Virtualization](http://go.microsoft.com/fwlink/?LinkId=317263).
+-   **Registering template with Configuration Manager**. If you use Configuration Manager to manage your UE-V settings storage templates, recreate the Template Baseline CAB, import it into Configuration Manager, and then deploy the baseline to user devices. For more information, see the guidance provided in the documentation for the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=40913).
 
 ## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).

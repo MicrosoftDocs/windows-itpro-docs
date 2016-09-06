@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub, mobility
 author: TrudyHa
-localizationpriority: high
+localizationpriority: medium
 ---
 
 # Manage settings with an MDM provider (Surface Hub)

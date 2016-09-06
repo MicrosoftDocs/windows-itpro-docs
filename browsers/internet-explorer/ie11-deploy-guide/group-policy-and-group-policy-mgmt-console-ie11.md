@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: security
 description: Overview about Group Policy, the Group Policy Management Console (GPMC), and Internet Explorer 11
-ms.assetid: ae3d227d-3da7-46b8-8a61-c71bfeae0c63
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security 
+ms.assetid: ae3d227d-3da7-46b8-8a61-c71bfeae0c63
 title: Group Policy, the Group Policy Management Console (GPMC), and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Group Policy, the Group Policy Management Console (GPMC), and Internet Explorer 11
 A Microsoft Management Console (MMC)-based tool that uses scriptable interfaces to manage Group Policy. The 32-bit and 64-bit versions are included with Windows Server R2 with Service Pack 1 (SP1) and Windows Server 2012 R2.
@@ -29,10 +31,10 @@ The GPMC lets you:
 
 -   Create scriptable interfaces to support all of the operations available within the GPMC. You can't use scripts to edit individual policy settings in a GPO.
 
-For more information about the GPMC, see [Group Policy Management Console](http://go.microsoft.com/fwlink/p/?LinkId=214515) on TechNet.
+For more information about the GPMC, see [Group Policy Management Console](https://go.microsoft.com/fwlink/p/?LinkId=214515) on TechNet.
 
 ## Searching for Group Policy settings
-To search for Group Policy settings in the Group Policy Management Console (GPMC), use the [Group Policy Search tool](http://go.microsoft.com/fwlink/p/?LinkId=279857). To find the Group Policy settings, click **Windows Components**, and then click **Internet Explorer**.
+To search for Group Policy settings in the Group Policy Management Console (GPMC), use the [Group Policy Search tool](https://go.microsoft.com/fwlink/p/?LinkId=279857). To find the Group Policy settings, click **Windows Components**, and then click **Internet Explorer**.
 
  
 

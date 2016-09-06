@@ -21,7 +21,7 @@ This article shows you how to install Microsoft Surface Deployment Accelerator (
 
 For information about prerequisites and instructions for how to download and install SDA, see [Microsoft Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md).
 
-1.  Download SDA, which is included in [Surface Tools for IT](http://go.microsoft.com/fwlink/p/?LinkId=618121) on the Microsoft Download Center.
+1.  Download SDA, which is included in [Surface Tools for IT](https://go.microsoft.com/fwlink/p/?LinkId=618121) on the Microsoft Download Center.
 
 2.  Run the SDA installation file, named **Surface\_Deployment\_Accelerator\_*xxxx*.msi**, where *xxxx* is the current version number.
 
@@ -77,7 +77,7 @@ The following steps show you how to create a deployment share for Windows 10 th
 
     -   **Windows 10 Deployment Services**
 
-        -   Select the **Import boot media into the local Windows Deployment Service** check box if you would like to boot your Surface devices from the network to perform the Windows deployment. Windows Deployment Services must be installed and configured to respond to PXE boot requests. See [Windows Deployment Services Getting Started Guide for Windows Server 2012](http://go.microsoft.com/fwlink/p/?LinkId=761072) for more information about how to configure Windows Deployment Services for PXE boot.
+        -   Select the **Import boot media into the local Windows Deployment Service** check box if you would like to boot your Surface devices from the network to perform the Windows deployment. Windows Deployment Services must be installed and configured to respond to PXE boot requests. See [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://go.microsoft.com/fwlink/p/?LinkId=761072) for more information about how to configure Windows Deployment Services for PXE boot.
 
     -   **Windows 10 Source Files**
 
@@ -147,7 +147,7 @@ You can use USB media to perform an SDA deployment if your Surface device is una
 
  
 
-Before you can create bootable media files within the MDT Deployment Workbench or copy those files to a USB drive, you must first configure that USB drive to be bootable. Using [DiskPart](http://go.microsoft.com/fwlink/p/?LinkId=761073), create a partition, format the partition as FAT32, and set the partition to be active. To run DiskPart, open an administrative PowerShell or Command Prompt window, and then run the following sequence of commands, as shown in Figure 7:
+Before you can create bootable media files within the MDT Deployment Workbench or copy those files to a USB drive, you must first configure that USB drive to be bootable. Using [DiskPart](https://go.microsoft.com/fwlink/p/?LinkId=761073), create a partition, format the partition as FAT32, and set the partition to be active. To run DiskPart, open an administrative PowerShell or Command Prompt window, and then run the following sequence of commands, as shown in Figure 7:
 
 1.  **diskpart** – Opens DiskPart to manage disks and partitions.
 
@@ -300,7 +300,7 @@ The **2 – Create Windows Reference Image** task sequence is used to perform a 
 
 Like the **1 – Deploy Microsoft Surface** task sequence, the **2 – Create Windows Reference Image** task sequence performs a deployment of the unaltered Windows image directly from the installation media. Creation of a reference image should always be performed on a virtual machine. Using a virtual machine as your reference system helps to ensure that the resulting image is compatible with different hardware configurations.
 
->**Note:**&nbsp;&nbsp;Using a virtual machine when you create a reference image for Windows deployment is a recommended practice for performing Windows deployments with Microsoft deployment tools including the Microsoft Deployment Toolkit and System Center Configuration Manager. These Microsoft deployment technologies use the hardware agnostic images produced from a virtual machine and a collection of managed drivers to deploy to different configurations of hardware. For more information, see [Deploy a Windows 10 image using MDT 2013 Update 2](http://technet.microsoft.com/en-us/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt).
+>**Note:**&nbsp;&nbsp;Using a virtual machine when you create a reference image for Windows deployment is a recommended practice for performing Windows deployments with Microsoft deployment tools including the Microsoft Deployment Toolkit and System Center Configuration Manager. These Microsoft deployment technologies use the hardware agnostic images produced from a virtual machine and a collection of managed drivers to deploy to different configurations of hardware. For more information, see [Deploy a Windows 10 image using MDT 2013 Update 2](http://technet.microsoft.com/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt).
 
  
 

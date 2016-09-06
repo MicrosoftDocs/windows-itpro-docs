@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+localizationpriority: medium
 author: jasesso
 ---
 
@@ -316,8 +317,8 @@ Description of the error. </dt>
 <p>To troubleshoot this event:
 <ol>
 <li>Run the scan again.</li>
-<li>If it fails in the same way, go to the <a href="http://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support site</a>, enter the error number in the <b>Search</b> box to look for the error code.</li>
-<li>Contact <a href="http://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>If it fails in the same way, go to the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support site</a>, enter the error number in the <b>Search</b> box to look for the error code.</li>
+<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
 </li>
 </ol>
 </p>
@@ -1290,8 +1291,8 @@ Description of the error. </dt>
 <p> </p>
 <p>If this event persists:<ol>
 <li>Run the scan again.</li>
-<li>If it fails in the same way, go to the <a href="http://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support site</a>, enter the error number in the <b>Search</b> box to look for the error code.</li>
-<li>Contact <a href="http://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>If it fails in the same way, go to the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support site</a>, enter the error number in the <b>Search</b> box to look for the error code.</li>
+<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
 </li>
 </ol>
 </p>
@@ -1504,13 +1505,13 @@ Description of the error. </dt>
 <li>Update the definitions. Either:<ol>
 <li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
 </li>
-<li>Download the latest definitions from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
-<p>Note: The size of the definitions file downloaded from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
+<li>Download the latest definitions from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
+<p>Note: The size of the definitions file downloaded from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
 </li>
 </ol>
 </li>
 <li>Review the entries in the %Windir%\WindowsUpdate.log file for more information about this error.</li>
-<li>Contact <a href="http://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
 </li>
 </ol>
 </p>
@@ -1607,12 +1608,12 @@ Description of the error. </dt>
 <li>Update the definitions. Either:<ol>
 <li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
 </li>
-<li>Download the latest definitions from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
-<p>Note: The size of the definitions file downloaded from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
+<li>Download the latest definitions from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
+<p>Note: The size of the definitions file downloaded from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
 </li>
 </ol>
 </li>
-<li>Contact <a href="http://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
 </li>
 </ol>
 </p>
@@ -1663,10 +1664,10 @@ Description of the error. </dt>
 <p>To troubleshoot this event:
 <ol>
 <li>Restart the computer and try again.</li>
-<li>Download the latest definitions from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
-<p>Note: The size of the definitions file downloaded from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
+<li>Download the latest definitions from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
+<p>Note: The size of the definitions file downloaded from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
 </li>
-<li>Contact <a href="http://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
 </li>
 </ol>
 </p>
@@ -2322,7 +2323,7 @@ Description of the error. </dt>
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>The real-time protection feature has restarted. If this event happens again, contact <a href="http://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>. </p>
+<p>The real-time protection feature has restarted. If this event happens again, contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>. </p>
 </td>
 </tr>
 <tr>
@@ -2498,7 +2499,7 @@ or Hang</dt>
 </li>
 </ul>
 </li>
-<li>If it fails in the same way, look up the error code by accessing the <a href="http://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support Site</a>  and entering the error number in the <b>Search</b> box, and contact <a href="http://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.</li>
+<li>If it fails in the same way, look up the error code by accessing the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support Site</a>  and entering the error number in the <b>Search</b> box, and contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.</li>
 </ol>
 </p>
 </td>
@@ -2512,8 +2513,8 @@ or Hang</dt>
 <p>To troubleshoot this event:
 <ol>
 <li>Run the scan again.</li>
-<li>If it fails in the same way, go to the <a href="http://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support site</a>, enter the error number in the <b>Search</b> box to look for the error code.</li>
-<li>Contact <a href="http://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>If it fails in the same way, go to the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support site</a>, enter the error number in the <b>Search</b> box to look for the error code.</li>
+<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
 </li>
 </ol>
 </p>
@@ -2753,8 +2754,8 @@ Use the information in these tables to help troubleshoot Windows Defender error 
 <li>Update the definitions. Either:<ol>
 <li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
 </li>
-<li>Download the latest definitions from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
-<p>Note: The size of the definitions file downloaded from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
+<li>Download the latest definitions from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
+<p>Note: The size of the definitions file downloaded from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
 </li>
 </ol>
 </li>
@@ -2996,8 +2997,8 @@ article</a>.</p>
 <li>Update the definitions. Either:<ol>
 <li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
 </li>
-<li>Download the latest definitions from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
-<p>Note: The size of the definitions file downloaded from the <a href="http://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
+<li>Download the latest definitions from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
+<p>Note: The size of the definitions file downloaded from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
 </li>
 </ol>
 </li>

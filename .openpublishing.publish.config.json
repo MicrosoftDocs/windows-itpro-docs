@@ -9,7 +9,7 @@
       "build_output_subfolder": "education",
       "locale": "en-us",
       "version": 0,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       }
@@ -20,15 +20,15 @@
       "build_output_subfolder": "browsers/internet-explorer",
       "locale": "en-us",
       "version": 0,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       }
     },
     {
       "docset_name": "itpro-hololens",
-      "build_source_folder": "itpro-hololens",
-      "build_output_subfolder": "itpro-hololens",
+      "build_source_folder": "devices/hololens",
+      "build_output_subfolder": "devices/hololens",
       "locale": "en-us",
       "version": 0,
       "open_to_public_contributors": false,
@@ -45,7 +45,7 @@
       "build_output_subfolder": "mdop",
       "locale": "en-us",
       "version": 0,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       }
@@ -56,7 +56,7 @@
       "build_output_subfolder": "browsers/edge",
       "locale": "en-us",
       "version": 0,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       }
@@ -67,7 +67,7 @@
       "build_output_subfolder": "devices/surface",
       "locale": "en-us",
       "version": 0,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       }
@@ -78,7 +78,7 @@
       "build_output_subfolder": "devices/surface-hub",
       "locale": "en-us",
       "version": 0,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       }
@@ -89,7 +89,7 @@
       "build_output_subfolder": "windows",
       "locale": "en-us",
       "version": 0,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       }
@@ -101,7 +101,8 @@
   "branches_to_filter": [
     ""
   ],
-  "git_repository_url_open_to_public_contributors": "",
+  "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/windows-itpro-docs",
+  "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
   "dependent_repositories": []
 }

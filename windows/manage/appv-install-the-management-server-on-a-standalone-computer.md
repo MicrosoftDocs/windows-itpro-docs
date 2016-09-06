@@ -11,6 +11,8 @@ ms.prod: w10
 
 # How to install the Management Server on a Standalone Computer and Connect it to the Database
 
+**Applies to**
+-   Windows Server 2016
 
 Use the following procedure to install the management server on a standalone computer and connect it to the database.
 
@@ -28,14 +30,8 @@ Use the following procedure to install the management server on a standalone com
 
 6.  On the **Configure Existing Management Database** page, select **Use a remote SQL Server**, and type the machine name of the computer running Microsoft SQL SQL, for example **SqlServerMachine**.
 
-    **Note**  
-    If the Microsoft SQL Server is deployed on the same server, select **Use local SQL Server**.
-
-     
-
-    For the SQL Server Instance, select **Use the default instance**. If you are using a custom Microsoft SQL Server instance, you must select **Use a custom instance** and then type the name of the instance.
-
-    Specify the **SQL Server Database name** that this management server will use, for example **AppvManagement**.
+    >**Note**  
+    If the Microsoft SQL Server is deployed on the same server, select **Use local SQL Server**. For the SQL Server Instance, select **Use the default instance**. If you are using a custom Microsoft SQL Server instance, you must select **Use a custom instance** and then type the name of the instance. Specify the **SQL Server Database name** that this management server will use, for example **AppvManagement**.
 
 7.  On the **Configure Management Server Configuration** page, specify the AD group or account that will connect to the management console for administrative purposes for example **MyDomain\\MyUser** or **MyDomain\\AdminGroup**. The account or AD group you specify will be enabled to manage the server through the management console. You can add additional users or groups using the management console after installation
 
@@ -45,7 +41,9 @@ Use the following procedure to install the management server on a standalone com
 
 9.  To confirm that the setup has completed successfully, open a web browser, and type the following URL: http://managementserver:portnumber/Console. If the installation was successful, you should see the **Management Console** appear without any error messages or warnings being displayed.
 
-    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+## Have a suggestion for App-V?  
+
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

@@ -15,7 +15,7 @@ ms.prod: w10
 
 Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 provides a simplified administrative interface that you can use to manage BitLocker Drive Encryption. You configure MBAM Group Policy Templates that enable you to set BitLocker Drive Encryption policy options that are appropriate for your enterprise, and then use them to monitor client compliance with those policies. You can also report on the encryption status of an individual computer and on the enterprise as a whole. In addition, you can access recovery key information when users forget their PIN or password or when their BIOS or boot record changes. For a more detailed description of MBAM, see [About MBAM 2.5](about-mbam-25.md).
 
-To get the MBAM software, see [How Do I Get MDOP](http://go.microsoft.com/fwlink/?LinkId=322049) (http://go.microsoft.com/fwlink/?LinkId=322049).
+To get the MBAM software, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049) (https://go.microsoft.com/fwlink/?LinkId=322049).
 
 <a href="" id="getting-started-with-mbam-2-5"></a>[Getting Started with MBAM 2.5](getting-started-with-mbam-25.md)  
 
@@ -45,13 +45,13 @@ To get the MBAM software, see [How Do I Get MDOP](http://go.microsoft.com/fwlink
 
     View updated product information and known issues for MBAM 2.5.
 
--   [MDOP TechCenter Page](http://go.microsoft.com/fwlink/p/?LinkId=225286)
+-   [MDOP TechCenter Page](https://go.microsoft.com/fwlink/p/?LinkId=225286)
 
     Learn about the latest MDOP information and resources.
 
--   [MDOP Information Experience](http://go.microsoft.com/fwlink/p/?LinkId=236032)
+-   [MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032)
 
-    Find documentation, videos, and other resources for MDOP technologies. You can also [send us feedback](mailto:MDOPDocs@microsoft.com%29 or learn about updates by following us on [Facebook]%28http://go.microsoft.com/fwlink/p/?LinkId=242445%29 or [Twitter]%28http://go.microsoft.com/fwlink/p/?LinkId=242447).
+    Find documentation, videos, and other resources for MDOP technologies. You can also [send us feedback](mailto:MDOPDocs@microsoft.com%29 or learn about updates by following us on [Facebook]%28https://go.microsoft.com/fwlink/p/?LinkId=242445%29 or [Twitter]%28https://go.microsoft.com/fwlink/p/?LinkId=242447).
 
 -   [MBAM Deployment Guide](http://www.microsoft.com/download/details.aspx?id=38398)
 
