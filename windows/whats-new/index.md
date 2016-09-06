@@ -18,7 +18,7 @@ Windows 10 provides IT professionals with advanced protection against modern sec
 - [What's new in Windows 10, version 1607](whats-new-windows-10-version-1607.md)
 - [What's new in Windows 10, versions 1507 and 1511](whats-new-windows-10-version-1507-and-1511.md)
 
-## Contributing and editing topics
+### Contributing and editing topics
 
 You can now make suggestions and update existing content with a simple click of a link.
 
