@@ -23,7 +23,7 @@ You can now make suggestions and update existing, public content with a GitHub a
 
 3. Click the **Pencil** icon (in the red box) to edit the content.
 
-       ![GitHub Web, showing the Pencil icon in the red box](images/pencil-icon.png)
+    ![GitHub Web, showing the Pencil icon in the red box](images/pencil-icon.png)
 
 4.	Using markdown language, make your changes to the topic. For info about how to edit content using markdown, see:
     - **If you're linked to the Microsoft organization in GitHub:** [Windows Open Publishing Guide Home](http://aka.ms/windows-op-guide)
