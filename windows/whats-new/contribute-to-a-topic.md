@@ -17,7 +17,11 @@ You can now make suggestions and update existing content with a simple click of 
 
        ![GitHub Web, showing the Contribute link](images/contribute-link.png)
 
-2.	Click the **Pencil** icon (in the red box) to edit the content.
+2. Log into (or sign up for) a GitHub account.
+    
+    You must have a GitHub account to get to the page that lets you edit a topic.
+
+3. Click the **Pencil** icon (in the red box) to edit the content.
 
        ![GitHub Web, showing the Pencil icon in the red box](images/pencil-icon.png)
 
