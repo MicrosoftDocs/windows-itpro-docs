@@ -339,7 +339,7 @@ Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring,
 Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Credential Guard, the private key can be protected. Then authentication policies can require that users sign on devices which authenticate using those certificates. This prevents shared secrets on stolen from the device to be used with stolen user credentials to sign on as the user.
 
 Domain-joined device certificate authentication has the following requirements:
--   Devices' accounts are in Windows Server 2012 DFL or higher domains.
+-   Devices' accounts are in Windows Server 2012 domain funcational level or higher domains.
 -   All domain controllers in those domains have KDC certificates which satisfy strict KDC validation certificate requirements:
     -   KDC EKU present
     -   DNS domain name matches the DNSName field of the SubjectAltName (SAN) extension
@@ -386,27 +386,31 @@ Beginning with the Windows Server 2008 R2 domain functional level, domain contro
 
 -   The [get-IssuancePolicy.ps1](#bkmk-getscript) shows all of the issuance policies that are available on the certificate authority.
     From a Windows PowerShell command prompt, run the following command:
+
     ``` syntax
     .\get-IssuancePolicy.ps1 –LinkedToGroup:All
     ```
+
 **To link a issuance policy to a universal security group**
 
 -   The [set-IssuancePolicyToGroupLink.ps1](#bkmk-setscript) creates a Universal security group, creates an organizational unit, and links the issuance policy to that Universal security group.
     From a Windows PowerShell command prompt, run the following command:
+
     ``` syntax
-    .\set-IssuancePolicyToGroupLink.ps1 –IssuancePolicyName:”<name of issuance policy>” –groupOU:”<Name of OU to create>” –groupName:”<name of Universal security group to create>”
+    .\set-IssuancePolicyToGroupLink.ps1 –IssuancePolicyName:"<name of issuance policy>" –groupOU:"<Name of OU to create>" –groupName:”<name of Universal security group to create>"
     ```
 
 #### Restricting user sign on
 
-So we now have:
+So we now have the following:
+
 -   Created a special certificate issuance policy to identify devices which meet the deployment criteria required for the user to be able to sign on
 -   Mapped that policy to a universal security group or claim
 -   Provided a way for domain controllers to get the device authorization data during user sign on using Kerberos armoring-   
 so what is left to do is configuring the access check on the domain controllers. This is done with authentication policies.
 
 Authentication policies have the following requirements:
--   Users' accounts are in Windows Server 2012 R2 DFL or higher domains.
+-   User accounts are in a Windows Server 2012 domain functional level or higher domain.
 
 **Creating an authentication policy restricting to the specific universal security group**
 
@@ -426,11 +430,11 @@ Authentication policies have the following requirements:
 > [!NOTE]  
 > When the authentication policy enforces policy restrictions, users will not be able to sign on using devices that do not have a certificate with the appropriate issuance policy deployed. This applies to both local and remote sign on scenarios. Therefore, it is strongly recommended to first only audit policy restrictions to ensure you don't have unexpected failures.
 
-##### Discovering authentication failures due to authentication policies
+#### Discovering authentication failures due to authentication policies
 
 To make tracking authentication failures due to authentication policies easier, an operational log exists with just those events. To enable the logs on the domain controllers, in Event Viewer, navigate to **Applications and Services Logs\\Microsoft\\Windows\\Authentication, right-click AuthenticationPolicyFailures-DomainController**, and then click **Enable Log**.
 
-To learn more about authentication policy events, see [Authentication Policies and Authentication Policy Silos](https://technet.microsoft.com/en-us/library/dn486813(v=ws.11).aspx) on TechNet.
+To learn more about authentication policy events, see [Authentication Policies and Authentication Policy Silos](https://technet.microsoft.com/en-us/library/dn486813(v=ws.11).aspx).
 
 ## Appendix: Scripts
 
