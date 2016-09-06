@@ -12,6 +12,11 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## September 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added content for Windows Server 2016 |
 
 ## August 2016
 

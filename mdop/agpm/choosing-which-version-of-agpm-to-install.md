@@ -19,7 +19,7 @@ We recommend that you install the AGPM Server on the most recent version of the 
 
 All versions of AGPM can manage only the policy settings that were introduced in the same version or an earlier version of the operating system on which AGPM is running. For example, if you install AGPM 4.0 SP2 on Windows Server 2012, you can manage policy settings that were introduced in Windows Server 2012 or earlier, but you cannot manage policy settings that were introduced later, in Windows 8.1 or Windows Server 2012 R2.
 
-If the version of the GPMC on your AGPM Server is older than the version on the computers that administrators use to manage Group Policy, the AGPM Server will be unable to store any policy settings that are not available in the older version of the GPMC. For information about which policy settings are available with which operating systems, see the [Group Policy Settings Reference for Windows and Windows Server](https://go.microsoft.com/fwlink/?LinkId=157345).
+If the version of the GPMC on your AGPM Server is older than the version on the computers that administrators use to manage Group Policy, the AGPM Server will be unable to store any policy settings that are not available in the older version of the GPMC. For a spreadsheet of Group Policy settings included in Windows, see [Group Policy Settings Reference for Windows and Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=613627).
 
 ## AGPM 4.0 SP3
 
