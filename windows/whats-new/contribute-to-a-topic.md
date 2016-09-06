@@ -18,7 +18,7 @@ You've already completed this step.
 
 2. Go to the page on TechNet that you want to update, and then click **Contribute**.
 
-       ![GitHub Web, showing the Contribute link](images/contribute-link.png)
+    ![GitHub Web, showing the Contribute link](images/contribute-link.png)
 
 3. Log into (or sign up for) a GitHub account.
     
