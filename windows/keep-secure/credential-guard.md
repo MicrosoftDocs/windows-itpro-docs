@@ -36,10 +36,6 @@ Here's a high-level overview on how the LSA is isolated by using virtualization-
 
 ![Credential Guard overview](images/credguard.png)
 
-## New and changed functionality
-
-To see what was added or changed in Credential Guard, see [What's new in Credential Guard?](../whats-new/credential-guard.md).
-
 ## Hardware and software requirements
 
 The PC must meet the following hardware and software requirements to use Credential Guard:
@@ -290,7 +286,7 @@ DG_Readiness_Tool_v2.0.ps1 -Ready
 
 ### NTLM & CHAP Considerations
 
-When you enable Credential Guard, you can no longer use NTLM v1 authentication. If you are using Wi-Fi and VPN end points that are based on MS-CHAPv2, they are subject to similar attacks as NTLMv1. We recommend that organizations use certificated-based authentication for Wi-Fi and VPN connections.
+When you enable Credential Guard, you can no longer use NTLM v1 authentication. If you are using WiFi and VPN endpoints that are based on MS-CHAPv2, they are subject to similar attacks as NTLMv1. We recommend that organizations use certificated-based authentication for WiFi and VPN connections.
 
 ### Kerberos Considerations
 
@@ -325,7 +321,7 @@ Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring,
 
 **To enable Kerberos armoring for restricting domain users to specific domain-joined devices**
 
--   Users need to be in domains which are Windows Server 2012 R2 or higher
+-   Users need to be in domains which are running Windows Server 2012 R2 or higher
 -   All the domain controllers in these domains must be configured to support Kerberos armoring. Set the **KDC support for claims, compound authentication, and Kerberos armoring** Group Policy setting to either **Supported** or **Always provide claims**.
 -   All the devices with Credential Guard which the users will be restricted to must be configured to support Kerberos armoring. Enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
 
@@ -341,11 +337,11 @@ Domain-joined device certificate authentication has the following requirements:
 -   Windows 10 devices have the CA issuing the domain controller certificates in the enterprise store.
 -   A process is established to ensure the identity and trustworthiness of the device in a similar manner as you would establish the identity and trustworthiness of a user before issuing them a smartcard.
 
-###### Deploying domain-joined device certificates
+##### Deploying domain-joined device certificates
 
 To guarantee that certificates with the issuance policy required are only on the devices these users must use, they must be deployed manually on each device. The same security procedures used for issuing smart cards to users should be applied to device certificates.
 
-For example, let's say you wanted to use the High Assurance policy only on these devices. Using a Windows Server enterprise CA, you would create a new template.
+For example, let's say you wanted to use the High Assurance policy only on these devices. Using a Windows Server Enterprise certificate authority, you would create a new template.
 
 **Creating a new certificate template**
 
@@ -375,7 +371,7 @@ CertReq -EnrollCredGuardCert MachineAuthentication
  
 #### How a certificate issuance policy can be used for access control
 
-Beginning with Windows Server 2008 R2 DFL, domain controllers support for authentication mechanism assurance provides a way to map certificate issuance policy OIDs to universal security groups. Windows Server 2012 domain controllers with claim support can map them to claims. To learn more about authentication mechanism assurance, see [Authentication Mechanism Assurance for AD DS in Windows Server 2008 R2 Step-by-Step Guide](https://technet.microsoft.com/en-us/library/dd378897(v=ws.10).aspx) on TechNet.
+Beginning with the Windows Server 2008 R2 domain functional level, domain controllers support for authentication mechanism assurance provides a way to map certificate issuance policy OIDs to universal security groups. Windows Server 2012 domain controllers with claim support can map them to claims. To learn more about authentication mechanism assurance, see [Authentication Mechanism Assurance for AD DS in Windows Server 2008 R2 Step-by-Step Guide](https://technet.microsoft.com/en-us/library/dd378897(v=ws.10).aspx) on TechNet.
 
 **To see the issuance policies available**
 
