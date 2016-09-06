@@ -13,22 +13,54 @@ You've already completed this step.
 
 We've tried to make editing an existing file as simple as possible. 
 
-- If you're already in the repo, just navigate to the file you want to make the edits to and click the **Edit** button.  
-- Alternatively, if you're viewing a TechNet page in your browser, click the **Contribute** button on the top right of the page. You will be redirected to the relevant source file in the repo, where you can click the **Edit** button. 
- 
-When you're done, submit a pull request back to the master branch of the official repository. 
+**To edit a topic**
 
-After you create the pull request, a member of the writing team will review your changes.
+1.	Go to the page on TechNet that you want to update, and then click **Contribute**.
 
-If your request is accepted, updates are published to one of the following places:
+       ![GitHub Web, showing the Contribute link](images/contribute-link.png)
 
-- [Windows 10](https://technet.microsoft.com/itpro/windows)
-- [Internet Explorer 11](https://technet.microsoft.com/itpro/internet-explorer)
-- [Microsoft Edge](https://technet.microsoft.com/itpro/microsoft-edge)
-- [Surface](https://technet.microsoft.com/itpro/surface)
-- [Surface Hub](https://technet.microsoft.com/itpro/surface-hub)
-- [Windows 10 for Education](https://technet.microsoft.com/edu/windows)
-- [Microsoft Desktop Optimization Pack](https://technet.microsoft.com/itpro/mdop) 
+2.	Click the **Pencil** icon (in the red box) to edit the content.
+
+       ![GitHub Web, showing the Pencil icon in the red box](images/pencil-icon.png)
+
+3.	Using markdown language, make your changes to the topic. For info about how to edit content using markdown, see:
+    - **If you're linked to the Microsoft organization in GitHub:** [Windows Open Publishing Guide Home](http://aka.ms/windows-op-guide)
+    
+    - **If you're external to Microsoft:** [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) 
+
+4.	Make your suggested change, and then click **Preview Changes** to make sure it looks correct.
+
+       ![GitHub Web, showing the Preview Changes tab](images/preview-changes.png)
+
+5. When you’re done editing the topic, scroll to the bottom of the page, and then click **Propose file change** to create a fork in your personal GitHub account.
+
+    ![GitHub Web, showing the Propose file change button](images/propose-file-change.png)
+
+    The **Comparing changes** screen appears to see what the changes are between your fork and the original content.
+
+6.	On the **Comparing changes** screen, you’ll see if there are any problems with the file you’re checking in.
+
+    If there are no problems, you’ll see the message, **Able to merge**.
+
+    ![GitHub Web, showing the Comparing changes screen](images/compare-changes.png)
+
+7.	Click **Create pull request**.
+
+8.	Enter a title and description to give the approver the appropriate context about what’s in the request.
+
+9.	Scroll to the bottom of the page, making sure that only your changed files are in this pull request. Otherwise, you could overwrite changes from other people.
+
+10.	Click **Create pull request**.
+
+    The pull request is sent to the writer of the topic and your edits are reviewed. If your request is accepted, updates are published to one of the following places:
+
+    - [Windows 10](https://technet.microsoft.com/itpro/windows)
+    - [Internet Explorer 11](https://technet.microsoft.com/itpro/internet-explorer)
+    - [Microsoft Edge](https://technet.microsoft.com/itpro/microsoft-edge)
+    - [Surface](https://technet.microsoft.com/itpro/surface)
+    - [Surface Hub](https://technet.microsoft.com/itpro/surface-hub)
+    - [Windows 10 for Education](https://technet.microsoft.com/edu/windows)
+    - [Microsoft Desktop Optimization Pack](https://technet.microsoft.com/itpro/mdop) 
 
 ## Making more substantial changes
 
