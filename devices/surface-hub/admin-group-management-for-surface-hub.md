@@ -16,7 +16,6 @@ localizationpriority: medium
 
 Every Microsoft Surface Hub can be configured individually by opening the Settings app on the device. However, to prevent people who are not administrators from changing the settings, the Settings app requires administrator credentials to open the app and change settings.
 
-The Settings app requires local administrator credentials to open the app.
 ## Admin Group Management
 
 
@@ -48,7 +47,7 @@ You can set a security group from your domain as local administrators on the Sur
 
 You can set up IT pros from your Azure AD organization as local administrators on the Surface Hub after you join the device. The people that are provisioned as local admins on your device depend on what Azure AD subscription you have. You will need to provide credentials that are capable of joining the Azure AD organization of your choice. After you successfully join Azure AD, the appropriate people will be set as local admins on the device. Any user who was set up as a local admin as a result of this process can enter their credentials and unlock the Settings app.
 
->**Note**  If your Azure AD organization is configured with mobile device management (MDM) enrollment, Surface Hubs will be enrolled into MDM as a result of joining Azure AD. Surface Hubs that have joined Azure AD are subject to receiving MDM policies, and can be managed using the MDM solution that your organization uses.
+>**Note**  If your Azure AD organization is configured to automaitwith mobile device management (MDM) enrollment, Surface Hubs will be enrolled into MDM as a result of joining Azure AD. Surface Hubs that have joined Azure AD are subject to receiving MDM policies, and can be managed using the MDM solution that your organization uses.
 
  
 
@@ -68,30 +67,31 @@ We recommend that a local admin be set up only if you do not have Active Directo
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">How is the local administrator set up?</th>
+<th align="left">Option</th>
 <th align="left">Requirements</th>
 <th align="left">Which credentials can be used for the Settings app?</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">A local admin account is created.</td>
+<td align="left">Use a local admin.</td>
 <td align="left">None.</td>
-<td align="left">The credentials of the local admin that was created.</td>
+<td align="left">The user name and password specified during first run.</td>
 </tr>
 <tr class="even">
-<td align="left">The Surface Hub is joined to a domain.</td>
+<td align="left">Use Active Directory domain services.</td>
 <td align="left">Your organization is using Active Directory (AD).</td>
-<td align="left">Credentials of any AD user from a specified security group</td>
+<td align="left">Any Active Directory user from a specific security group in your domain. </td>
 </tr>
 <tr class="odd">
-<td align="left">The Surface Hub is joined to Azure Active Directory (Azure AD).</td>
+<td align="left">Use Microsoft Azure Active Directory</td>
 <td align="left">Your organization is using Azure AD Basic.</td>
-<td align="left">Tenant or device admins</td>
+<td align="left">Global administators only.</td>
 </tr>
 <tr class="even">
+<td align="left"></td>
 <td align="left">Your organization is using Azure AD Premium.</td>
-<td align="left">Tenant or device admins + additional specified people</td>
+<td align="left">Global administrators and other specified users.</td>
 <td align="left"></td>
 </tr>
 </tbody>
