@@ -55,7 +55,7 @@ You've already completed this step.
 
 11.	Scroll to the bottom of the page, making sure that only your changed files are in this pull request. Otherwise, you could overwrite changes from other people.
 
-12.	Click **Create pull request**.
+12.	Click **Create pull request** again to actually submit the pull request.
 
     The pull request is sent to the writer of the topic and your edits are reviewed. If your request is accepted, updates are published to one of the following places:
 

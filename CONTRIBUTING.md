@@ -54,7 +54,7 @@ We've tried to make editing an existing, public file as simple as possible.
 
 10.	Scroll to the bottom of the page, making sure that only your changed files are in this pull request. Otherwise, you could overwrite changes from other people.
 
-11.	Click **Create pull request**.
+11.	Click **Create pull request** again to actually submit the pull request.
 
     The pull request is sent to the writer of the topic and your edits are reviewed. If your request is accepted, updates are published to one of the following places:
 
