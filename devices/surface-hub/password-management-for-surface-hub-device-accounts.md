@@ -18,7 +18,7 @@ Every Microsoft Surface Hub device account requires a password to authenticate a
 
 To prevent the device account from expiring, there are two options:
 
-1.  Set the password on the device account so it doesn't expire.
+1.  Turn off password expiration for the device account.
 2.  Allow the Surface Hub to automatically rotate the device account’s password.
 
 ## Setting the password so it doesn't expire
@@ -29,11 +29,11 @@ Set the device account’s **PasswordNeverExpires** property to True. You should
 ## Allow the Surface Hub to manage the password
 
 
-The Surface Hub can manage a device account’s password by changing it frequently without requiring you to manually update the device account’s information from the Surface Hub. You can enable this feature in **Settings**. Once enabled, the device account's password will change daily.
+The Surface Hub can manage a device account’s password by changing it frequently without requiring you to manually update the device account’s information from the Surface Hub. You can enable this feature in **Settings**. Once enabled, the device account's password will change daily at 12 AM.
 
-Note that when the device account’s password is changed, you will not be shown the new password. If you need to sign in to the account, or to provide the password again (for example, if you want to change the device account settings on the Surface Hub), then you'll need use Active Directory to reset the password.
+Note that when the device account’s password is changed, you will not be shown the new password. If you need to sign in to the account, or to provide the password again (for example, if you want to change the device account settings on the Surface Hub), then you'll need use Active Directory, or Office 365 Admin portal to reset the password.
 
-For your device account to use password rotation, you must meet enter the device account’s information when you set up your Surface Hub (during First-run experience), or in **Settings**. The format you'll use depends on where your device account it hosted:
+For your device account to use password rotation, you must meet enter the device account’s information when you set up your Surface Hub. For more information, see first run info for setting up the device account.  (during First-run experience), or in **Settings**. The format you'll use depends on where your device account it hosted:
 
 <table>
 <colgroup>
