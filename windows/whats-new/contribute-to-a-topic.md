@@ -1,6 +1,6 @@
 ---
 title: Edit an existing topic using the Contribute link
-description: Instructions about how to edit an existing topic by using the Contribute link.
+description: Instructions about how to edit an existing topic by using the Contribute link on TechNet.
 keywords: contribute, edit a topic
 ms.prod: w10
 ms.mktglfcycl: explore
