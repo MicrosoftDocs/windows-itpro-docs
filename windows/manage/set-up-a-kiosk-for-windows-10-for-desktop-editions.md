@@ -295,6 +295,33 @@ Alternatively, you can turn on Shell Launcher using the Deployment Image Servici
     </tbody>
     </table>
 
+**To turn on Shell Launcher using PowerShell**
+
+1.  Open a PowerShell as an administrator.
+2.  Enter the following command to install the Device Lockdown feature as a requirement for the Embedded Shell Launcher
+    <span codelanguage=""></span>
+    <table>
+    <colgroup>
+    <col width="100%" />
+    </colgroup>
+    <tbody>
+    <tr class="odd">
+    <td align="left"><pre><code>InstallWindowsFeature -windowsfeature "Client-DeviceLockdown"</code></pre></td>
+    </tr>
+    </tbody>
+    </table>
+3.  Enter the following command to install the Embedded Shell Launcher feature
+    <span codelanguage=""></span>
+    <table>
+    <colgroup>
+    <col width="100%" />
+    </colgroup>
+    <tbody>
+    <tr class="odd">
+    <td align="left"><pre><code>InstallWindowsFeature -windowsfeature "Client-EmbeddedShellLauncher"</code></pre></td>
+    </tr>
+    </tbody>
+    </table>
 **To set your custom shell**
 
 Modify the following PowerShell script as appropriate. The comments in the sample script explain the purpose of each section and tell you where you will want to change the script for your purposes. Save your script with the extension .ps1, open Windows PowerShell as administrator, and run the script on the kiosk device.
