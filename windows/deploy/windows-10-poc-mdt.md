@@ -25,36 +25,35 @@ This guide leverages the Hyper-V server role to perform procedures. If you do no
 
 ## In this guide
 
-Yadda yadda
+Description here.
 
 ## Install the Microsoft Deployment Toolkit (MDT)
 
-1. Temporarily disable IE Enhanced Security Configuration for Administrators by typing the following commands at an elevated Windows PowerShell prompt on SRV1:
+1. On SRV1, temporarily disable IE Enhanced Security Configuration for Administrators by typing the following commands at an elevated Windows PowerShell prompt:
     ```
     $AdminKey = "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}"
     Set-ItemProperty -Path $AdminKey -Name “IsInstalled” -Value 0
     Stop-Process -Name Explorer
     ```
-2. Download and install the 64-bit version of [Microsoft Deployment Toolkit (MDT) 2013 Update 2](https://www.microsoft.com/en-us/download/details.aspx?id=50407) on SRV1.
+2. Download and install the 64-bit version of [Microsoft Deployment Toolkit (MDT) 2013 Update 2](https://www.microsoft.com/en-us/download/details.aspx?id=50407) on SRV1 using the default options.
 
-3. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings.
+3. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1607. Installation might require several minutes to acquire all components.
 
-3. Re-enable IE Enhanced Security Configuration:
+3. If desired, re-enable IE Enhanced Security Configuration:
     ```
     Set-ItemProperty -Path $AdminKey -Name “IsInstalled” -Value 1
     Stop-Process -Name Explorer
     ```
->Alternatively, you can download the MDT and ADK installation files on the Hyper-V host, and then copy or share these files to SRV1.
 
 ## Create a deployment share
 
-1. In [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md) the Windows 10 Enterprise .iso file was saved to the c:\VHD directory as **c:\VHD\w10-enterprise.iso**. The first step in creating a deployment share is to mount this file on SRV1.  We can use PowerShell on the Hyper-V host to do this. To mount the Windows 10 Enterprise DVD on SRV1, open an elevated Windows PowerShell prompt on the Hyper-V host computer and type the following command:
+1. In [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md) the Windows 10 Enterprise .iso file was saved to the c:\VHD directory as **c:\VHD\w10-enterprise.iso**. The first step in creating a deployment share is to mount this file on SRV1.  To mount the Windows 10 Enterprise DVD on SRV1, open an elevated Windows PowerShell prompt on the Hyper-V host computer and type the following command:
     ```
     Set-VMDvdDrive -VMName SRV1 -Path c:\VHD\w10-enterprise.iso
     ```
-2. Connect to SRV1 and verify that the Windows Enterprise installation DVD is mounted as the D:\ drive.
+2. Connect to SRV1 and verify that the Windows Enterprise installation DVD is mounted as driver letter D.
 
-3. The Windows 10 Enterprise installation files will be used to create a deployment share  on SRV1 using the MDT deployment workbench. To open the deployment workbench, click Start, type deployment, and then click Deployment Workbench.
+3. The Windows 10 Enterprise installation files will be used to create a deployment share  on SRV1 using the MDT deployment workbench. To open the deployment workbench, click **Start**, type **deployment**, and then click **Deployment Workbench**.
 
 4. In the Deployment Workbench console, right-click Deployment Shares and select New Deployment Share.
 
@@ -69,7 +68,7 @@ Yadda yadda
 
 6. Expand the Deployment Shares node, and then expand MDT build lab.
 
-7. Right-click the Operating Systems node, and then click New Folder. Name the new folder **Windows 10**. 
+7. Right-click the Operating Systems node, and then click New Folder. Name the new folder **Windows 10**. Complete the wizard using default values and click **Finish**.
 
 7. Right-click the Windows 10 folder created in the previous step, and then click **Import Operating System**.
 
@@ -80,9 +79,9 @@ Yadda yadda
     - Summary: click **Next**
     - Confirmation: click **Finish**
 
-9. For purposes of this test lab, we will not add applications (such as Microsoft Office) to the deployment share. If you wish to add applications before proceeding, see the [Add applications](https://technet.microsoft.com/en-us/itpro/windows/deploy/create-a-windows-10-reference-image#sec03) section of the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic in the TechNet library.
+9. For purposes of this test lab, we will not add applications (such as Microsoft Office) to the deployment share. For information about adding applications, see the [Add applications](https://technet.microsoft.com/en-us/itpro/windows/deploy/create-a-windows-10-reference-image#sec03) section of the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic in the TechNet library.
 
-10. The next step is to create a task sequence to reference the operating system that was imported. To create a task sequence, right-click the Task Sequences node and then click New Task Sequence. Use the following settings for the New Task Sequence Wizard:
+10. The next step is to create a task sequence to reference the operating system that was imported. To create a task sequence, right-click the **Task Sequences** node and then click **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
     - Task sequence ID: **REFW10X64-001**<BR>
     - Task sequence name: **Windows 10 Enterprise x64 Default Image** <BR>
     - Task sequence comments: **Reference Build**<BR>
@@ -98,7 +97,7 @@ Yadda yadda
 
 11. Edit the task sequence to add the Microsoft NET Framework 3.5, which is required by many applications. To edit the task sequence, double-click **Windows 10 Enterprise x64 Default Image** that was created in the previous step.
 
-12. Click the **Task Sequence** tab, under **State Restore** click **Tatto** to highlight it, then click **Add** and choose **New Group**.
+12. Click the **Task Sequence** tab. Under **State Restore** click **Tatto** to highlight it, then click **Add** and choose **New Group**.
 
 13. On the Properties tab of the group that was created in the previous step, change the Name from New Group to **Custom Tasks (Pre-Windows Update)** and then click **Apply**.
 
@@ -111,7 +110,7 @@ Yadda yadda
 
 17. Click **OK** to complete editing the task sequence.
 
-18. The next step is to configure the MDT deployment share rules. To configure rules in the Deployment Workbench, right-click MDT build lab (C:\MDTBuildLab) and click Properties, and then click the Rules tab.
+18. The next step is to configure the MDT deployment share rules. To configure rules in the Deployment Workbench, right-click MDT build lab (C:\MDTBuildLab) and click **Properties**, and then click the **Rules** tab.
 
 19. Replace the default rules with the following text:
 
@@ -147,7 +146,7 @@ Yadda yadda
     SkipFinalSummary=YES
     ```
 
-20. Click Apply and then click Edit Bootstrap.ini. Replace the contents of the Bootstrap.ini file with the following text, and save the file:
+20. Click **Apply** and then click **Edit Bootstrap.ini**. Replace the contents of the Bootstrap.ini file with the following text, and save the file:
     ```
     [Settings]
     Priority=Default
@@ -168,7 +167,7 @@ Yadda yadda
 
 24. Copy **c:\MDTBuildLab\Boot\LiteTouchPE_x86.iso** on SRV1 to the **c:\VHD** directory on the Hyper-V host computer. Note that in MDT, the x86 boot image can deploy both x86 and x64 operating systems, except on computers based on Unified Extensible Firmware Interface (UEFI).
 
->Hint: Right-click the **LiteTouchPE_x86.iso** file and click **Copy** on SRV1, then open the **c:\VHD** folder on the Hyper-V host, right-click inside the folder and click **Paste**.
+>Hint: Top copy the file, right-click the **LiteTouchPE_x86.iso** file and click **Copy** on SRV1, then open the **c:\VHD** folder on the Hyper-V host, right-click inside the folder and click **Paste**.
 
 25. Open a Windows PowerShell prompt on the Hyper-V host computer and type the following commands:
 
@@ -183,23 +182,23 @@ Yadda yadda
 
 27. Accept the default values on the Capture Image page, and click **Next**. Operating system installation will complete after 5 to 10 minutes and then the VM will reboot automatically. Allow the system to boot normally (do not press a key). The process is fully automated.
 
-    Additional system restarts will occur to complete updating and preparing the operating system. This step requires approximately 15 to 30 minutes, depending on the speed of the Hyper-V host. Setup will complete the following steps:
+    Additional system restarts will occur to complete updating and preparing the operating system. Setup will complete the following procedures:
 
-    - Installs the Windows 10 Enterprise operating system.
-    - Installs added applications, roles, and features.
-    - Updates the operating system using Windows Update (or WSUS if optionally specified).
-    - Stages Windows PE on the local disk.
-    - Runs System Preparation (Sysprep) and reboots into Windows PE.
-    - Captures the installation to a Windows Imaging (WIM) file.
-    - Turns off the virtual machine.
+    - Install the Windows 10 Enterprise operating system.
+    - Install added applications, roles, and features.
+    - Update the operating system using Windows Update (or WSUS if optionally specified).
+    - Stage Windows PE on the local disk.
+    - Run System Preparation (Sysprep) and reboot into Windows PE.
+    - Capture the installation to a Windows Imaging (WIM) file.
+    - Turn off the virtual machine.
 
-    The entire process requires one to several hours, depending on the speed of the Hyper-V host and network. After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep, located in the C:\MDTBuildLab\Captures folder on your deployment server. The file name is REFW10X64-001.wim.
+    This step requires from 30 minutes to 2 hours, depending on the speed of the Hyper-V host. After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep. The image is located in the C:\MDTBuildLab\Captures folder on your deployment server. The file name is **REFW10X64-001.wim**.
 
  ## Deploy a Windows 10 image using MDT
 
 This procedure will demonstrate how to deploy the reference image to the PoC environment using MDT.
 
-1. On SRV1, open the MDT Deployment Workbench console, right-click Deployment Shares, and then click New Deployment Share. Use the following values in the New Deployment Share Wizard:
+1. On SRV1, open the MDT Deployment Workbench console, right-click **Deployment Shares**, and then click **New Deployment Share**. Use the following values in the New Deployment Share Wizard:
      - **Deployment share path**: C:\MDTProd
      - **Share name**: MDTProd$
      - **Deployment share description**: MDT Production
@@ -207,7 +206,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 2. Click **Finish** and verify the new deployment share was added successfully.
 
-3. In the Deployment Workbench console, expand the MDT Production deployment share, right-click **Operating Systems**, and then click **New Folder**. Name the new folder **Windows 10**.
+3. In the Deployment Workbench console, expand the MDT Production deployment share, right-click **Operating Systems**, and then click **New Folder**. Name the new folder **Windows 10** and complete the wizard using default values.
 
 4. Right-click the Windows 10 folder created in the previous step, and then click **Import Operating System**.
 
@@ -225,7 +224,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 ### Create the deployment task sequence
 
-1. Using the Deployment Workbench, select Task Sequences in the MDT Production node, and create a folder named Windows 10.
+1. Using the Deployment Workbench, select Task Sequences in the MDT Production node, and create a folder named **Windows 10**.
 
 2. Right-click the Windows 10 folder created in the previous step, and then click **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
     - Task sequence ID: W10-X64-001
@@ -260,7 +259,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     OSInstall=YES 
     UserDataLocation=AUTO 
     TimeZoneName=Pacific Standard Time
-    OSDComputerName=%hostname%
+    OSDComputername=#Left("PC_%SerialNumber%",7)#
     AdminPassword=pass@word1 
     JoinDomain=contoso.com 
     DomainAdmin=administrator
@@ -307,7 +306,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 ### Update the deployment share
 
-1. Right-click the **MDT Production** deployment share and then click Update Deployment Share.
+1. Right-click the **MDT Production** deployment share and then click **Update Deployment Share**.
 
 2. Use the default options for the Update Deployment Share Wizard. The update process requires 5 to 10 minutes to complete.
 
@@ -319,13 +318,13 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 2. On the **Monitoring** tab, select the **Enable monitoring for this deployment share** checkbox, and then click **OK**.
 
-3. Verify the monitoring service is working as expected by opening the following link in Internet Explorer: [http://localhost:9800/MDTMonitorEvent/](http://localhost:9800/MDTMonitorEvent/). If you do not see "**You have created a service**" at the top of the page, see [Troubleshooting MDT 2012 Monitoring](https://blogs.technet.microsoft.com/mniehaus/2012/05/10/troubleshooting-mdt-2012-monitoring/).
+3. Verify the monitoring service is working as expected by opening the following link on SRV1 in Internet Explorer: [http://localhost:9800/MDTMonitorEvent/](http://localhost:9800/MDTMonitorEvent/). If you do not see "**You have created a service**" at the top of the page, see [Troubleshooting MDT 2012 Monitoring](https://blogs.technet.microsoft.com/mniehaus/2012/05/10/troubleshooting-mdt-2012-monitoring/).
 
 4. Close Internet Explorer.
 
 ### Configure Windows Deployment Services
 
-1. Initialize Windows Deployment Services (WDS) by typing the following command at an elevated Windows PowerShell prompt:
+1. Initialize Windows Deployment Services (WDS) by typing the following command at an elevated Windows PowerShell prompt on SRV1:
 
     ```
     WDSUTIL /Verbose /Progress /Initialize-Server /Server:SRV1 /RemInst:"C:\RemoteInstall"
@@ -334,13 +333,13 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 2. Click **Start**, type **Windows Deployment**, and then click **Windows Deployment Services**.
 
-3. Expand SRV1.contoso.com, right-click **Boot Images**, and then click **Add Boot Image**.
+3. In the Windows Deployment Services console, expand Servers, expand SRV1.contoso.com, right-click **Boot Images**, and then click **Add Boot Image**.
 
 4. Browse to the **C:\MDTProd\Boot\LiteTouchPE_x64.wim** file, click **Open**, click **Next**, and accept the defaults in the Add Image Wizard. Click **Finish** to complete adding a boot image.
 
 ### Deploy the client image
 
-1. Before using WDS to deploy a client image, you might need to temporarily disable the external network adapter on SRV1. This is just an artifact of the lab environment. **Note**: Do not disable the *internal* network interface. To disable the *external* interface on SRV1, open a Windows PowerShell prompt on SRV1 and type the following command:
+1. Before using WDS to deploy a client image, you must temporarily disable the external network adapter on SRV1. This is just an artifact of the lab environment. In a typical deployment environment WDS would not be installed on the default gateway. **Note**: Do not disable the *internal* network interface. To disable the *external* interface on SRV1, open a Windows PowerShell prompt on SRV1 and type the following command:
 
     ```
     Disable-NetAdapter "Ethernet 2" -Confirm:$false
@@ -362,18 +361,15 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 5. Choose the **Windows 10 Enterprise x64 Custom Image** and then click **Next**.
 
-6. When prompted to enter computer details, next to **Computer name** type **PC2** and then click **Next**. 
-
-    **Important**: When lite touch installation has started, be sure to re-enable the external network adapter on SRV1. This is needed so the client can use Windows Update after operating system installation is complete.  
-
-7. To re-enable the external network interface, open an elevated Windows PowerShell prompt on SRV1 and type the following command:
+6. After MDT lite touch installation has started, be sure to re-enable the external network adapter on SRV1. This is needed so the client can use Windows Update after operating system installation is complete.To re-enable the external network interface, open an elevated Windows PowerShell prompt on SRV1 and type the following command:
 
     ```
     Enable-NetAdapter "Ethernet 2"
     ```
-8. When OS installation is complete, the system will reboot automatically and begin configuring devices.  When the new client computer is finished updating, click **Finish**. You will be automatically signed in to the local computer as pc2\administrator. 
+7. On SRV1, in the Deployment Workbench console, click on **Monitoring** and view the status of installation.
+8. When OS installation is complete, the system will reboot automatically and begin configuring devices.  When the new client computer is finished updating, click **Finish**. You will be automatically signed in to the local computer as administrator. 
 
-9. Turn off the PC2 VM before starting the next section.  To turn off the VM, right-click Start, point to Shut down or sign out, and then click Shut down.
+9. Turn off the PC2 VM before starting the next section.  To turn off the VM, right-click **Start**, point to **Shut down or sign out**, and then click **Shut down**.
 
 ### Refresh a computer with Windows 10
 
@@ -388,7 +384,7 @@ This topic will demonstrate how to export user data from an existing client comp
 
     >Specify **contoso\administrator** as the user name to ensure you do not sign on using the local administrator account. You must sign in with this account so that you have access to the deployment share.
 
-3. Open an elevated command prompt on PC1 and type the following command:
+3. Open an elevated command prompt on PC1 and type the following:
 
     ```
     cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
@@ -397,13 +393,11 @@ This topic will demonstrate how to export user data from an existing client comp
 
 4. Choose the **Windows 10 Enterprise x64 Custom Image** and then click **Next**.
 
-5. Click **Next** to accept the default for **Computer name**. <--- delete this step
-
-6. Choose **Do not back up the existing computer** and click **Next**.
+5. Choose **Do not back up the existing computer** and click **Next**.
 
     **Note**: The USMT will still back up the computer.
 
-7. Lite Touch Installation will perform the following actions:
+6. Lite Touch Installation will perform the following actions:
     - Back up user settings and data using USMT.
     - Install the Windows 10 Enterprise X64 operating system.
     - Update the operating system via Windows Update.
@@ -411,26 +405,102 @@ This topic will demonstrate how to export user data from an existing client comp
 
     You can review the progress of installation on SRV1 by clicking on the **Monitoring** node in the deployment workbench. When OS installation is complete, the computer will restart, set up devices, and configure settings. 
 
-8. Sign in with the CONTOSO\Administrator account and verify that user accounts and data have been migrated to the new operating system.
+7. Sign in with the CONTOSO\Administrator account and verify that user accounts and data have been migrated to the new operating system.
 
-9. Create another checkpoint for the PC1 VM so that you can review results of the computer refresh later. To create a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+8. Create another checkpoint for the PC1 VM so that you can review results of the computer refresh later. To create a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
     ```
     Checkpoint-VM -Name PC1 -SnapshotName RefreshState
     ```
-10. Restore the PC1 VM to it's previous state in preparation for the replace procedure. To restore a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+9. Restore the PC1 VM to it's previous state in preparation for the replace procedure. To restore a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
     ```
-    Restore-VMSnapshot -VM PC1 -Name BeginState
+    Restore-VMSnapshot -VMName PC1 -Name BeginState -Confirm:$false
+    Start-VM PC1
+    vmconnect localhost PC1
     ```
+10. Sign in to PC1 using the contoso\administrator account.
 
 ### Replace a computer with Windows 10
 
-1. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
+At a high level, the computer replace process consists of:<BR>
+- A special replace task sequence runs the USMT backup and an optional full Window Imaging (WIM) backup.<BR>
+- On the new machine, a standard bare-metal deployment is performed. At the end of the bare-metal deployment, the USMT backup from the old computer is restored.
 
-```
-New-Item -Path C:\MigData -ItemType directory
-New-SmbShare ?Name MigData$ ?Path C:\MigData
-```
+#### Create a backup-only task sequence
 
+1. On SRV1, right-click the MDT Production deployment share, click **Properties**, click the **Rules** tab, and change the line **SkipUserData=YES** to **SkipUserData=NO**.
+2. Click **OK**, right-click **MDT Production**, click **Update Deployment Share** and accept the default options in the wizard to update the share.
+3. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
+    ```
+    New-Item -Path C:\MigData -ItemType directory
+    New-SmbShare -Name MigData$ -Path C:\MigData -ChangeAccess EVERYONE
+    icacls C:\MigData /grant '"contoso\administrator":(OI)(CI)(M)'
+    ```
+4. On SRV1 in the deployment workbench, under **MDT Production**, right-click the **Task Sequences** node, and click **New Folder**.
+5. Name the new folder **Other**, and complete the wizard using default options.
+6. Right-click the **Other** folder and then click **New Task Sequence**. Use the following values in the wizard:
+    - **Task sequence ID**: REPLACE-001
+    - **Task sequence name**: Backup Only Task Sequence
+    - **Task sequence comments**: Run USMT to backup user data and settings
+    - **Template**: Standard Client Replace Task Sequence
+7. Accept defaults for the rest of the wizard and then click **Finish**. The replace task sequence will skip OS selection and settings.
+8. Open the new task sequence that was created and review it. Note the type of capture and backup tasks that are present. Click **OK** when you are finished reviewing the task sequence.
+
+#### Run the backup-only task sequence
+
+1. If you are not already signed on to PC1 as contoso\administrator, sign in using this account.
+2. On PC1, open an elevated command prompt and type the following:
+    ```
+    cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
+    ```
+3. Complete the deployment wizard using the following:
+    - **Task Sequence**: Backup Only Task Sequence
+    - **User Data**: Specify a location: **\\SRV1\MigData$\PC1**
+    - **Computer Backup**: Do not back up the existing computer.
+4. Click **Finish** when the capture is complete.
+5. On SRV1, verify that the file USMT.MIG was created in the C:\MigData\PC1\USMT directory. See the following example:
+    ```
+    PS C:\> dir C:\MigData\PC1\USMT
+
+
+        Directory: C:\MigData\PC1\USMT
+
+
+    Mode                LastWriteTime     Length Name
+    ----                -------------     ------ ----
+    -a---          9/6/2016  11:34 AM   14248685 USMT.MIG
+
+    ```
+#### Deploy PC3 
+
+1. On the Hyper-V host, type the following commands at an elevated Windows PowerShell prompt:
+    ```
+    New-VM –Name "PC3" –NewVHDPath "c:\vhd\pc3.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
+    Set-VMMemory -VMName "PC3" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes 2048MB -Buffer 20
+    ```
+2. Temporarily disable the external network adapter on SRV1 again, so that we can successfully boot PC3 from WDS. To disable the adapter, type the following command at an elevated Windows PowerShell prompt on SRV1:
+    ```
+    Disable-NetAdapter "Ethernet 2" -Confirm:$false
+    ```
+3. Start and connect to PC3 by typing the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
+    ```
+    Start-VM PC3
+    vmconnect localhost PC3
+    ```
+4. When prompted to press ENTER for network boot, press ENTER.
+5. On SRV1, re-enable the external network adapter by typing the following command:
+    ```
+    Enable-NetAdapter "Ethernet 2"
+    ```
+6. On PC3, ue the following settings for the Windows Deployment Wizard:
+    - Task Sequence: Windows 10 Enterprise x64 Custom Image
+    - Move Data and Settings: Do not move user data and settings
+    - User Data (Restore): Specify a location: \\SRV1\MigData$\PC1\USMT
+7. Setup will install the Windows 10 Enterprise operating system, update via Windows Update, and restore the user settings and data from PC1.
+
+Note: If there are problems with deployment, you can review logs in the following locations on the client computer:
+- Before the image is applied: X:\MININT\SMSOSD\OSDLOGS
+- After the system drive has been formatted: C:\MININT\SMSOSD\OSDLOGS
+- After deployment: %WINDIR%\TEMP\DeploymentLogs
 
 ## Related Topics
 
