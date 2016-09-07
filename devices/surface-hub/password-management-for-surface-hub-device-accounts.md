@@ -33,7 +33,7 @@ The Surface Hub can manage a device account’s password by changing it frequent
 
 Note that when the device account’s password is changed, you will not be shown the new password. If you need to sign in to the account, or to provide the password again (for example, if you want to change the device account settings on the Surface Hub), then you'll need use Active Directory, or Office 365 Admin portal to reset the password.
 
-For your device account to use password rotation, you must meet enter the device account’s information when you set up your Surface Hub. For more information, see first run info for setting up the device account.  (during First-run experience), or in **Settings**. The format you'll use depends on where your device account it hosted:
+For your device account to use password rotation, you must meet enter the device account’s information when you set up your Surface Hub. For more information, see [first run info for setting up the device account](https://technet.microsoft.com/itpro/surface-hub/first-run-program-surface-hub#device-account). 
 
 <table>
 <colgroup>
