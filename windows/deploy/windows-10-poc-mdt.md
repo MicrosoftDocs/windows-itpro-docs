@@ -21,6 +21,8 @@ The PoC environment is a virtual network running on Hyper-V with three virtual m
 - **SRV1**: A dual-homed contoso.com domain member server, DNS server, and default gateway providing NAT service for the PoC network.
 - **PC1**: A contoso.com member computer running Windows 7, Windows 8, or Windows 8.1 that has been cloned from a physical computer on your corporate network for testing purposes.
 
+This guide leverages the Hyper-V server role to perform procedures. If you do not complete all steps in a single session, consider using [checkpoints](https://technet.microsoft.com/library/dn818483.aspx) and [saved states](https://technet.microsoft.com/library/ee247418.aspx) to pause, resume, or restart your work.
+
 ## In this guide
 
 Yadda yadda
@@ -245,7 +247,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     copy-item "C:\Program Files\Microsoft Deployment Toolkit\Templates\Bootstrap.ini" C:\MDTProd\Control\Bootstrap.ini -Force
     copy-item "C:\Program Files\Microsoft Deployment Toolkit\Templates\CustomSettings.ini" C:\MDTProd\Control\CustomSettings.ini -Force
     ``` 
-2. In the Deployment Workbench console on SRV1, right-click the MDT Production deployment share and then click Properties.
+2. In the Deployment Workbench console on SRV1, right-click the **MDT Production** deployment share and then click Properties.
 
 3. Click the **Rules** tab and replace the rules with the following text:
 
@@ -258,7 +260,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     OSInstall=YES 
     UserDataLocation=AUTO 
     TimeZoneName=Pacific Standard Time
-    OSDComputerName=PC_#Left("%SerialNumber%",5)#
+    OSDComputerName=%hostname%
     AdminPassword=pass@word1 
     JoinDomain=contoso.com 
     DomainAdmin=administrator
@@ -272,7 +274,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     SkipAppsOnUpgrade=NO 
     SkipAdminPassword=YES
     SkipProductKey=YES 
-    SkipComputerName=NO 
+    SkipComputerName=YES 
     SkipDomainMembership=YES
     SkipUserData=YES 
     SkipLocaleSelection=YES 
@@ -283,10 +285,11 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     SkipSummary=YES 
     SkipCapture=YES 
     SkipFinalSummary=NO
+    EventService=http://SRV1:9800
     ```
     **Note**: The contents of the Rules tab are added to c:\MDTProd\Control\CustomSettings.ini.
     
-    **Important**: In this example a **MachineObjectOU** entry is not provided. Normally this entry describes the specific OU where new client computer objects are created in Active Directory. However, for the purposes of this test lab clients are added to the default computers OU, which requires that this parameter be unspecified. Similarly, the default domain administrator account is being used as a user account. These parameters and some other settings would be different in an actual production deployment.
+    >In this example a **MachineObjectOU** entry is not provided. Normally this entry describes the specific OU where new client computer objects are created in Active Directory. However, for the purposes of this test lab clients are added to the default computers OU, which requires that this parameter be unspecified.
 
 4. Click **Edit Bootstap.ini** and replace text in the file with the following text:
     ```
@@ -304,7 +307,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 ### Update the deployment share
 
-1. Right-click the MDT Production deployment share and then click Update Deployment Share.
+1. Right-click the **MDT Production** deployment share and then click Update Deployment Share.
 
 2. Use the default options for the Update Deployment Share Wizard. The update process requires 5 to 10 minutes to complete.
 
@@ -315,6 +318,10 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 1. In the Deployment Workbench console, right-click **MDT Production** and then click **Properties**.
 
 2. On the **Monitoring** tab, select the **Enable monitoring for this deployment share** checkbox, and then click **OK**.
+
+3. Verify the monitoring service is working as expected by opening the following link in Internet Explorer: [http://localhost:9800/MDTMonitorEvent/](http://localhost:9800/MDTMonitorEvent/). If you do not see "**You have created a service**" at the top of the page, see [Troubleshooting MDT 2012 Monitoring](https://blogs.technet.microsoft.com/mniehaus/2012/05/10/troubleshooting-mdt-2012-monitoring/).
+
+4. Close Internet Explorer.
 
 ### Configure Windows Deployment Services
 
@@ -372,12 +379,57 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 This topic will demonstrate how to export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings. The scenario will use PC1, a computer that was cloned from a physical device to a VM, as described in [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md). 
 
-1. Sign on to PC1 using the CONTOSO\Administrator account, open an elevated command prompt, and type the following command:
+1. Create a checkpoint for the PC1 VM so that it can easily be reverted to its current state for troubleshooting purposes and to perform additional scenarios.  Checkpoints are also known as snapshots. To create a checkpoint for the PC1 VM, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+    ```
+    Checkpoint-VM -Name PC1 -SnapshotName BeginState
+    ```
+
+2. Sign on to PC1 using the CONTOSO\Administrator account.
+
+    >Specify **contoso\administrator** as the user name to ensure you do not sign on using the local administrator account. You must sign in with this account so that you have access to the deployment share.
+
+3. Open an elevated command prompt on PC1 and type the following command:
 
     ```
-    \\SRV1\MDTProd$\Scripts\Litetouch.vbs
+    cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
     ```
-2. 
+    **Note**: Litetouch.vbs must be able to create the C:\MININT directory on the local computer.
+
+4. Choose the **Windows 10 Enterprise x64 Custom Image** and then click **Next**.
+
+5. Click **Next** to accept the default for **Computer name**. <--- delete this step
+
+6. Choose **Do not back up the existing computer** and click **Next**.
+
+    **Note**: The USMT will still back up the computer.
+
+7. Lite Touch Installation will perform the following actions:
+    - Back up user settings and data using USMT.
+    - Install the Windows 10 Enterprise X64 operating system.
+    - Update the operating system via Windows Update.
+    - Restore user settings and data using USMT.
+
+    You can review the progress of installation on SRV1 by clicking on the **Monitoring** node in the deployment workbench. When OS installation is complete, the computer will restart, set up devices, and configure settings. 
+
+8. Sign in with the CONTOSO\Administrator account and verify that user accounts and data have been migrated to the new operating system.
+
+9. Create another checkpoint for the PC1 VM so that you can review results of the computer refresh later. To create a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+    ```
+    Checkpoint-VM -Name PC1 -SnapshotName RefreshState
+    ```
+10. Restore the PC1 VM to it's previous state in preparation for the replace procedure. To restore a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+    ```
+    Restore-VMSnapshot -VM PC1 -Name BeginState
+    ```
+
+### Replace a computer with Windows 10
+
+1. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
+
+```
+New-Item -Path C:\MigData -ItemType directory
+New-SmbShare ?Name MigData$ ?Path C:\MigData
+```
 
 
 ## Related Topics

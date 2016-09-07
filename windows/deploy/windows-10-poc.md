@@ -227,18 +227,15 @@ The lab architecture is summarized in the following diagram:
 
 **Important**:Before you convert a PC to VHD, verify that you have access to a local administrator account on the computer. Alternatively you can use a domain account with administrative rights if these credentials are cached on the computer and your domain policy allows the use of cached credentials for login.
 
+>For purposes of the test lab, you must use a PC with a single hard drive that is assigned a drive letter of C:. Systems with multiple hard drives or non-standard configurations can also be upgraded using PC refresh and replace scenarios, but these systems require more advanced deployment task sequences than those used in this lab.
+
 1. Download the [Disk2vhd utility](https://technet.microsoft.com/en-us/library/ee656415.aspx), extract the .zip file and copy disk2vhd.exe to a flash drive or other location that is accessible from the computer you wish to convert.
     >Note: You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media.
 2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
 3. Select checkboxes next to the volumes you wish to copy and specify a location to save the resulting VHD or VHDX file. If your Hyper-V host is running Windows Server 2008 R2 you must choose VHD, otherwise choose VHDX.
-4. Click **Create** to start creating a VHDX file. See the following example: 
+4. Click **Create** to start creating a VHDX file.
 
-    ![disk2vhd](images/convert.png)
-
-    In this example, the source computer has two hard drives, C: and E: and a system reserved partition. The VHDX file (w7.vhdx) is being saved to a flash drive (F:) in the F:\VHD directory.<BR> 
-    >Disk2vhd can also save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted. 
-
-    >If you have experience with Microsoft Virtual Machine Converter and prefer to use this tool instead of Disk2vhd, see [Appendix B: Microsoft Virtual Machine Converter](#appendix-b-microsoft-virtual-machine-converter).
+    >Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
 
 5. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (w7.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
 
@@ -275,7 +272,7 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     (Get-Counter -Counter @("\Memory\Available MBytes")).countersamples.cookedvalue/4
     2775.5
     ```
-    In this example, VMs must use a maximum of 2700 MB of RAM so that you can run four VMs simultaneously. 
+    In this example, VMs can use a maximum of 2700 MB of RAM each, to run four VMs simultaneously. 
 
 4. At the elevated Windows PowerShell prompt, type the following command to create three new VMs. The fourth VM will be added later. 
     >**Important**: Replace the value of 2700MB in the first command below with the RAM value that you calculated in the previous step:
@@ -408,10 +405,10 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     Add-Computer -DomainName contoso -Credential $cred
     Restart-Computer
     ```
-    >PC1 is removed from its domain in this step while not connected to the corporate network so as to ensure the computer object in the corporate domain is unaffected. We have not also renamed PC1 to "PC1" here so that it maintains some of its mirrored identity. However, if desired you can also rename the computer.
+    >PC1 is removed from its domain in this step while not connected to the corporate network so as to ensure the computer object in the corporate domain is unaffected. We have not also renamed PC1 to "PC1" in system properties so that it maintains some of its mirrored identity. However, if desired you can also rename the computer.
 
 18. After PC1 restarts, sign in to the contoso.com domain with the (user1) account you created in step 8.
-19. Minimize the PC1 window but do not turn it off while the second Windows Server 2012 R2 VM (SRV1) is configured. This ensures that the Hyper-V host has enough resources to run all VMs simultaneously. Next, SRV1 will be started, joined to the contoso.com domain, and configured with RRAS and DNS services. 
+19. Minimize the PC1 window but do not turn it off while the second Windows Server 2012 R2 VM (SRV1) is configured. This verifies that the Hyper-V host has enough resources to run all VMs simultaneously. Next, SRV1 will be started, joined to the contoso.com domain, and configured with RRAS and DNS services. 
 20. On the Hyper-V host computer at an elevated Windows PowerShell prompt, type the following commands:
     ```
     Start-VM SRV1
@@ -442,17 +439,17 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     ```
     >The previous commands assume that network interfaces were added to the SRV1 VM in the order specified by this guide, resulting in an interface alias of "Ethernet" for the private interface and an interface alias of "Ethernet 2" for the public interface. If the interfaces on SRV1 are not named the same, you must adjust these commands appropriately.
 
-    To view a list of interfaces and their associated interface aliases on the VM, you use the Get-NetAdapter cmdlet. See the following example:
+    To view a list of interfaces and their associated interface aliases on the VM, use the following Windows PowerShell command:
 
     ```
-    Get-NetAdapter
+    Get-NetAdapter | ? status -eq ‘up’ | Get-NetIPAddress -AddressFamily IPv4 | ft IPAddress, InterfaceAlias
 
-    Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
-    ----                      --------------------                    ------- ------       ----------             ---------
-    Ethernet 2                Microsoft Hyper-V Network Adapter #2         14 Up           00-15-5D-83-26-06         1 Gbps
-    Ethernet                  Microsoft Hyper-V Network Adapter            12 Up           00-15-5D-83-26-05        10 Gbps
+    IPAddress                                                                  InterfaceAlias
+    ---------                                                                  --------------
+    10.137.130.118                                                             Ethernet 2
+    192.168.0.2                                                                Ethernet
     ``` 
-24. The DNS server role was installed on SRV1 so that we can forward DNS queries from DC1 to SRV1 to resolve Internet names without having to configure a forwarder outside the PoC network. To add this server-level DNS forwarder on DC1, type the following command at an elevated command prompt on DC1:
+24. The DNS server role was installed on SRV1 so that we can forward DNS queries from DC1 to SRV1 to resolve Internet names without having to configure a forwarder outside the PoC network. To add this server-level DNS forwarder on DC1, type the following command at an elevated Windows PowerShell prompt on DC1:
     ```
     Add-DnsServerForwarder -IPAddress 192.168.0.2
     ```
@@ -473,16 +470,11 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
 
 ## Appendix A: Configuring Hyper-V on Windows Server 2008 R2
 
-If your Hyper-V host is running Windows Server 2008 R2, you can use the Hyper-V manager interface to configure Hyper-V, or you can use Hyper-V WMI. Some instructions to configure Hyper-V using WMI are also included in this section for convenience. 
+If your Hyper-V host is running Windows Server 2008 R2, several of the steps in this guide will not work because they use the Hyper-V Module for Windows PowerShell, which is not available on Windows Server 2008 R2.
 
-For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
+To manage Hyper-V on Windows Server 2008 R2, you can use Hyper-V WMI, or you can use the Hyper-V Manager console.  
 
-To install Hyper-V on Windows Server 2008 R2, use the Add-WindowsFeature cmdlet:
-
-```
-Add-WindowsFeature -Name Hyper-V
-```
-Use the following Windows PowerShell commands to create a virtual switch on Windows Server 2008 R2:
+An example that uses Hyper-V WMI to create a virtual switch on Windows Server 2008 R2 is provided below. Converting all Hyper-V module commands used in this guide to Hyper-V WMI is beyond the scope of the guide.  If you must use a Hyper-V host running Windows Server 2008 R2, the steps in the guide can also be accomplished by using the Hyper-V Manager console.
 
 ```
 $SwitchFriendlyName = "poc-internal"
@@ -506,12 +498,13 @@ $Result = $VirtualSwitchManagementService.ConnectSwitchPort($InternalSwitchPort,
 $filter = "SettingID='" + $InternalEthernetPort.DeviceID +"'"
 $NetworkAdapterConfiguration = gwmi Win32_NetworkAdapterConfiguration -filter $filter
 ```
-
-Use the following Windows PowerShell commands to add VMs on Windows Server 2008 R2:
+To install Hyper-V on Windows Server 2008 R2, you can use the Add-WindowsFeature cmdlet:
 
 ```
-command here
+Add-WindowsFeature -Name Hyper-V
 ```
+For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
+
 ## Appendix B: Verify the configuration
 
 Use the following procedures to verify that the PoC environment is configured properly and working as expected.
