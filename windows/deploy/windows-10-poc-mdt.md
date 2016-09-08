@@ -349,8 +349,10 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
     ```
     New-VM –Name "PC2" –NewVHDPath "c:\vhd\pc2.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
-    Set-VMMemory -VMName "PC2" -DynamicMemoryEnabled $true -MinimumBytes 1024MB -MaximumBytes 2048MB -Buffer 20
+    Set-VMMemory -VMName "PC2" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes 2048MB -Buffer 20
     ```
+    >Dynamic memory is configured on the VM to conserve resources. However, this can cause memory allocation to be reduced past what is required to install an operating system. If this happens, reset the VM and begin the OS installation task sequence immediately. This ensures the VM memory allocation is not decreased too much while it is idle.
+
 3. Start the new VM and connect to it:
 
     ```
@@ -405,7 +407,7 @@ This topic will demonstrate how to export user data from an existing client comp
 
     You can review the progress of installation on SRV1 by clicking on the **Monitoring** node in the deployment workbench. When OS installation is complete, the computer will restart, set up devices, and configure settings. 
 
-7. Sign in with the CONTOSO\Administrator account and verify that user accounts and data have been migrated to the new operating system.
+7. Sign in with the CONTOSO\Administrator account and verify that all CONTOSO domain user accounts and data have been migrated to the new operating system.
 
 8. Create another checkpoint for the PC1 VM so that you can review results of the computer refresh later. To create a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
     ```
@@ -422,12 +424,12 @@ This topic will demonstrate how to export user data from an existing client comp
 ### Replace a computer with Windows 10
 
 At a high level, the computer replace process consists of:<BR>
-- A special replace task sequence runs the USMT backup and an optional full Window Imaging (WIM) backup.<BR>
-- On the new machine, a standard bare-metal deployment is performed. At the end of the bare-metal deployment, the USMT backup from the old computer is restored.
+- A special replace task sequence that runs the USMT backup and an optional full Window Imaging (WIM) backup.<BR>
+- A standard OS deployment on a new computer. At the end of the deployment, the USMT backup from the old computer is restored.
 
 #### Create a backup-only task sequence
 
-1. On SRV1, right-click the MDT Production deployment share, click **Properties**, click the **Rules** tab, and change the line **SkipUserData=YES** to **SkipUserData=NO**.
+1. On SRV1, in the deployment workbench console, right-click the MDT Production deployment share, click **Properties**, click the **Rules** tab, and change the line **SkipUserData=YES** to **SkipUserData=NO**.
 2. Click **OK**, right-click **MDT Production**, click **Update Deployment Share** and accept the default options in the wizard to update the share.
 3. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
     ```
@@ -447,8 +449,17 @@ At a high level, the computer replace process consists of:<BR>
 
 #### Run the backup-only task sequence
 
-1. If you are not already signed on to PC1 as contoso\administrator, sign in using this account.
-2. On PC1, open an elevated command prompt and type the following:
+1. If you are not already signed on to PC1 as **contoso\administrator**, sign in using this account. To verify the currently signed in account, type the following command at an elevated command prompt:
+    ```
+    whoami
+    ```
+2. To ensure a clean environment before running the backup task sequence, type the following at an elevated Windows PowerShell prompt:
+    ```
+    Remove-Item c:\minint -recurse
+    Remove-Item c:\_SMSTaskSequence -recurse
+    Restart-Computer
+    ```
+2. Sign in to PC1 using the contoso\administrator account, and then type the following at an elevated command prompt:
     ```
     cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
     ```
@@ -456,19 +467,17 @@ At a high level, the computer replace process consists of:<BR>
     - **Task Sequence**: Backup Only Task Sequence
     - **User Data**: Specify a location: **\\SRV1\MigData$\PC1**
     - **Computer Backup**: Do not back up the existing computer.
-4. Click **Finish** when the capture is complete.
-5. On SRV1, verify that the file USMT.MIG was created in the C:\MigData\PC1\USMT directory. See the following example:
+4. While the task sequence is running on PC1, open the deployment workbench console on SRV1 and click the **Monitoring* node. Press F5 to refresh the console, and view the status of current tasks.  
+5. Verify that **The user state capture was completed successfully** is displayed, and click **Finish** when the capture is complete.
+6. On SRV1, verify that the file **USMT.MIG** was created in the **C:\MigData\PC1\USMT** directory. See the following example:
     ```
     PS C:\> dir C:\MigData\PC1\USMT
 
-
         Directory: C:\MigData\PC1\USMT
-
 
     Mode                LastWriteTime     Length Name
     ----                -------------     ------ ----
     -a---          9/6/2016  11:34 AM   14248685 USMT.MIG
-
     ```
 #### Deploy PC3 
 
@@ -486,25 +495,33 @@ At a high level, the computer replace process consists of:<BR>
     Start-VM PC3
     vmconnect localhost PC3
     ```
-4. When prompted to press ENTER for network boot, press ENTER.
-5. On SRV1, re-enable the external network adapter by typing the following command:
+4. When prompted, press ENTER for network boot.
+
+6. On PC3, ue the following settings for the Windows Deployment Wizard:
+    - **Task Sequence**: Windows 10 Enterprise x64 Custom Image
+    - **Move Data and Settings**: Do not move user data and settings
+    - **User Data (Restore)**: Specify a location: **\\SRV1\MigData$\PC1**
+5. When OS installation has started on PC1, re-enable the external network adapter on SRV1 by typing the following command on SRV1:
     ```
     Enable-NetAdapter "Ethernet 2"
     ```
-6. On PC3, ue the following settings for the Windows Deployment Wizard:
-    - Task Sequence: Windows 10 Enterprise x64 Custom Image
-    - Move Data and Settings: Do not move user data and settings
-    - User Data (Restore): Specify a location: \\SRV1\MigData$\PC1\USMT
 7. Setup will install the Windows 10 Enterprise operating system, update via Windows Update, and restore the user settings and data from PC1.
 
-Note: If there are problems with deployment, you can review logs in the following locations on the client computer:
+#### Troubleshooting logs, events, and utilities
+
+Deployment logs are available on the client computer in the following locations:
 - Before the image is applied: X:\MININT\SMSOSD\OSDLOGS
 - After the system drive has been formatted: C:\MININT\SMSOSD\OSDLOGS
 - After deployment: %WINDIR%\TEMP\DeploymentLogs
 
+You can review WDS events in Event Viewer at: **Applications and Services Logs > Microsoft > Windows > Deployment-Services-Diagnostics**. By default, only the **Admin** and **Operational** logs are enabled. To enable other logs, right-click the log and then click **Enable Log**.
+
+Tools for viewing log files, and to assist with troubleshooting are available in the [System Center 2012 R2 Configuration Manager Toolkit](https://www.microsoft.com/en-us/download/details.aspx?id=50012)
+
 ## Related Topics
 
- 
+[Microsoft Deployment Toolkit](https://technet.microsoft.com/en-US/windows/dn475741)<BR>
+[Prepare for deployment with MDT 2013](prepare-for-windows-deployment-with-mdt-2013)
 
  
 

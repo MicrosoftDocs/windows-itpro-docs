@@ -35,7 +35,7 @@ The following topics and procedures are provided in this guide:
     - [Configure VHDs](#configure-vhds): Start virtual machines and configure all services and settings.
 
 The following optional topics are also available:
-- [Appendix A: Configuring Hyper-V on Windows Server 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2): Steps to configure a Hyper-V host running Windows Server 2008 R2.
+- [Appendix A: Configuring Hyper-V on Windows Server 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2): Information about using this guide with a Hyper-V host running Windows Server 2008 R2.
 - [Appendix B: Verify the configuration](#verify-the-configuration): Verify and troubleshoot network connectivity and services in the PoC environment.
 
 When you have completed the steps in this guide, see the following guides for step by step instructions to deploy Windows 10 using the PoC environment under common scenarios with current deployment tools:
@@ -433,6 +433,7 @@ Note: The Hyper-V Windows PowerShell module is not available on Windows Server 2
     >PC1 is removed from its domain in this step while not connected to the corporate network so as to ensure the computer object in the corporate domain is unaffected. We have not also renamed PC1 to "PC1" in system properties so that it maintains some of its mirrored identity. However, if desired you can also rename the computer.
 
 22. After PC1 restarts, sign in to the contoso.com domain with the (user1) account you created in step 11 of this section.
+    >The settings that will be used to migrate user data specifically select only accounts that belong to the CONTOSO domain. If you wish to test migration of user data and settings with an account other than the user1 account, you must copy this account's profile to the user1 profile.
 23. Minimize the PC1 window but do not turn it off while the second Windows Server 2012 R2 VM (SRV1) is configured. This verifies that the Hyper-V host has enough resources to run all VMs simultaneously. Next, SRV1 will be started, joined to the contoso.com domain, and configured with RRAS and DNS services. 
 24. On the Hyper-V host computer, at an elevated Windows PowerShell prompt, type the following commands:
     ```
