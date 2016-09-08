@@ -11,7 +11,7 @@ ms.sitesec: library
 You can now make suggestions and update existing, public content with a GitHub account and a simple click of a link.
 
 >**Note**<br>
->At this time, only English (en-us) content is available for editing.
+>At this time, only the English (en-us) content is available for editing.
 
 **To edit a topic**
 
