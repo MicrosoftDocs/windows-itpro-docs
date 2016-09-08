@@ -521,7 +521,7 @@ Tools for viewing log files, and to assist with troubleshooting are available in
 ## Related Topics
 
 [Microsoft Deployment Toolkit](https://technet.microsoft.com/en-US/windows/dn475741)<BR>
-[Prepare for deployment with MDT 2013](prepare-for-windows-deployment-with-mdt-2013)
+[Prepare for deployment with MDT 2013](prepare-for-windows-deployment-with-mdt-2013.md)
 
  
 
