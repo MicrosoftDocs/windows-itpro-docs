@@ -37,7 +37,7 @@ The following topics and procedures are provided in this guide:
 
 The following optional topics are also available:
 - [Appendix A: Configuring Hyper-V on Windows Server 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2): Information about using this guide with a Hyper-V host running Windows Server 2008 R2.
-- [Appendix B: Verify the configuration](#verify-the-configuration): Verify and troubleshoot network connectivity and services in the PoC environment.
+- [Appendix B: Verify the configuration](#appendix-b-verify-the-configuration): Verify and troubleshoot network connectivity and services in the PoC environment.
 
 When you have completed the steps in this guide, see the following topics for step by step instructions to deploy Windows 10 using the PoC environment under common scenarios with current deployment tools:
 
@@ -134,7 +134,6 @@ The lab architecture is summarized in the following diagram:
 [Configure Hyper-V](#configure-hyper-v)<BR>
 [Convert PC to VHD](#convert-pc-to-vhd)<BR>
 [Configure VHDs](#configure-vhds)<BR>
-[Verify the configuration](#verify-the-configuration)
 
 ### Verify support and install Hyper-V
 
@@ -300,8 +299,7 @@ Instructions to "type" commands provided in this guide can be typed, but in most
     Set-VMMemory -VMName "PC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
     Enable-VMIntegrationService –Name "Guest Service Interface" -VMName PC1
     ```
-
-### Configure Windows Server 2012 R2 VHDs
+### Configure VHDs 
 
 1. At an elevated Windows PowerShell prompt on the Hyper-V host, start the first VM by typing the following command:
 
@@ -550,7 +548,7 @@ Instructions to "type" commands provided in this guide can be typed, but in most
     Approximate round trip times in milli-seconds:
         Minimum = 1ms, Maximum = 3ms, Average = 2ms
     ```
-36. Verify that all three VMs can reach each other, and the Internet. See [Appendix B: Verify the configuration](#verify-the-configuration) for more information. 
+36. Verify that all three VMs can reach each other, and the Internet. See [Appendix B: Verify the configuration](#appendix-b-verify-the-configuration) for more information. 
 37. Lastly, because the client computer has different hardware after copying it to a VM, its Windows activation will be invalidated and you might receive a message that you must activate Windows in 3 days.  To extend this period to 30 days, type the following commands at an elevated Windows PowerShell prompt on PC1:
 
     ```
