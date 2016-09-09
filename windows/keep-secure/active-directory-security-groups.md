@@ -2231,6 +2231,7 @@ The Key Admins group applies to versions of the Windows Server operating system 
 | Default members | None |
 | Default member of | None |
 | Protected by ADMINSDHOLDER? | No |
+| Safe to move out of default container? | Yes |
 | Safe to delegate management of this group to non-Service admins? | No |
 | Default User Rights | None |
 
@@ -3351,6 +3352,7 @@ The Storage Replica Administrators group applies to versions of the Windows Serv
 | Default members | None |
 | Default member of | None |
 | Protected by ADMINSDHOLDER? | No |
+| Safe to move out of default container? | Yes |
 | Safe to delegate management of this group to non-Service admins? | No |
 | Default User Rights | None |
 
@@ -3371,6 +3373,7 @@ The System Managed Accounts group applies to versions of the Windows Server oper
 | Default members | Users |
 | Default member of | None |
 | Protected by ADMINSDHOLDER? | No |
+| Safe to move out of default container? | Yes |
 | Safe to delegate management of this group to non-Service admins? | No |
 | Default User Rights | None |
 
