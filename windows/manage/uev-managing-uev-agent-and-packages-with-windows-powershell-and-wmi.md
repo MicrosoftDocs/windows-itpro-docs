@@ -96,12 +96,12 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     </tr>
     <tr class="even">
     <td align="left"><p><code>Set-UevConfiguration -Computer -EnableSyncUnlistedWindows8Apps</code></p></td>
-    <td align="left"><p>Configures the UE-V service to synchronize all Windows apps that are not explicitly disabled by the Windows app list for all users of the computer. For more information, see &quot;Get-UevAppxPackage&quot; in [Managing UE-V 2.x Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).</p>
+    <td align="left"><p>Configures the UE-V service to synchronize all Windows apps that are not explicitly disabled by the Windows app list for all users of the computer. For more information, see &quot;Get-UevAppxPackage&quot; in [Managing UE-V Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).</p>
     <p>Use the <em>DisableSyncUnlistedWindows8Apps</em> parameter to configure the UE-V service to synchronize only Windows apps that are explicitly enabled by the Windows App List.</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p><code>Set-UevConfiguration -CurrentComputerUser - EnableSyncUnlistedWindows8Apps</code></p></td>
-    <td align="left"><p>Configures the UE-V service to synchronize all Windows apps that are not explicitly disabled by the Windows app list for the current user on the computer. For more information, see &quot;Get-UevAppxPackage&quot; in [Managing UE-V 2.x Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).</p>
+    <td align="left"><p>Configures the UE-V service to synchronize all Windows apps that are not explicitly disabled by the Windows app list for the current user on the computer. For more information, see &quot;Get-UevAppxPackage&quot; in [Managing UE-V Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).</p>
     <p>Use the <em>DisableSyncUnlistedWindows8Apps</em> parameter to configure the UE-V service to synchronize only Windows apps that are explicitly enabled by the Windows App List.</p></td>
     </tr>
     <tr class="even">
