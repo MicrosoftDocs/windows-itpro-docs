@@ -269,8 +269,6 @@ Instructions to "type" commands provided in this guide can be typed, but in most
     ```
     >Additionally, since an external virtual switch is associated to a physical NIC on the Hyper-V host, this NIC must be specified when adding the virtual switch. This step is automated in the example here by filtering for active ethernet adapters using the Get-NetAdapter cmdlet. If your Hyper-V host has multiple active ethernet adapters, this automation will not work, and the second command above will fail. In this case, you must edit the command used to add the "poc-external" virtual switch by inserting the specific value needed for the -NetAdapterName option. This value corresponds to the name of the network interface you wish to use.
     
-
-
 2. At the elevated Windows PowerShell prompt, type the following command to determine the megabytes of RAM that are currently available on the Hyper-V host:
 
     ```
@@ -302,6 +300,7 @@ Instructions to "type" commands provided in this guide can be typed, but in most
     Set-VMMemory -VMName "PC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
     Enable-VMIntegrationService –Name "Guest Service Interface" -VMName PC1
     ```
+
 ### Configure Windows Server 2012 R2 VHDs
 
 1. At an elevated Windows PowerShell prompt on the Hyper-V host, start the first VM by typing the following command:
