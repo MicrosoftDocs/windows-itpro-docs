@@ -14,10 +14,11 @@ author: greg-lindsay
 
 -   Windows 10
 
-<U>**Are you interested**</U> in upgrading to Windows 10?<BR>
-This guide enables you to test drive Windows 10, and check out the upgrade process at no cost, all without having to actually upgrade any production devices. 
+Are you interested in upgrading to Windows 10?
 
-If you have a computer running Windows 8 or a later OS with 16GB of RAM, you have everything you need to quickly set up a Windows 10 test lab. You can even clone computers from your network and see exactly what happens when they are upgraded to Windows 10. To see how, keep reading.
+Did you know that you can test drive Windows 10, and check out the upgrade process at no cost, all without having to actually upgrade any production devices? 
+
+If you have a computer running Windows 8 or a later OS with 16GB of RAM, you have everything you need to quickly set up a Windows 10 test lab. You can even clone computers from your network and see exactly what happens when they are upgraded to Windows 10. To see how, keep reading...
 
 ## In this guide
 
