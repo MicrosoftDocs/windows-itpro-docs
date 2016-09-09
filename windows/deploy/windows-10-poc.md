@@ -14,11 +14,9 @@ author: greg-lindsay
 
 -   Windows 10
 
-Are you interested in upgrading to Windows 10?
+If you are interested in upgrading to Windows 10 and would like to check out the upgrade process at no cost, and without having to actually upgrade any production devices, then keep reading...
 
-Did you know that you can test drive Windows 10, and check out the upgrade process at no cost, all without having to actually upgrade any production devices? 
-
-If you have a computer running Windows 8 or a later OS with 16GB of RAM, you have everything you need to quickly set up a Windows 10 test lab. You can even clone computers from your network and see exactly what happens when they are upgraded to Windows 10. To see how, keep reading...
+If you have a computer running Windows 8 or a later OS with 16GB of RAM, you have everything you need to quickly set up a Windows 10 test lab. You can even clone computers from your network and see exactly what happens when they are upgraded to Windows 10. 
 
 ## In this guide
 
@@ -42,7 +40,7 @@ The following optional topics are also available:
 When you have completed the steps in this guide, see the following topics for step by step instructions to deploy Windows 10 using the PoC environment under common scenarios with current deployment tools:
 
 - [Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)
-- [Deploy Windows 10 in a test lab using System Center](windows-10-poc-sccm.md)
+- [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)
 
 ## Hardware and software requirements
 
@@ -642,10 +640,11 @@ Use the following procedures to verify that the PoC environment is configured pr
     ping -n 1 dc1.contoso.com
     tracert www.microsoft.com
     ```
-    **whoami** displays the current user context, for example in an elevated Windows PowerShell prompt, contoso\administrator is displayed.
-    **hostname** displays the name of the local computer, for example W7PC-001.
-    **nslookup** displays the DNS server used for the query, and the results of the query. For example, server dc1.contoso.com, address 192.168.0.1, Name e2847.dspb.akamaiedge.net.
-    **tracert* displays the path to reach the destination, for example srv1.contoso.com [192.168.0.2] followed by a list of hosts and IP addresses corresponding to subsequent routing nodes between the source and the destination.
+    **whoami** displays the current user context, for example in an elevated Windows PowerShell prompt, contoso\administrator is displayed.<BR>
+    **hostname** displays the name of the local computer, for example W7PC-001.<BR>
+    **nslookup** displays the DNS server used for the query, and the results of the query. For example, server dc1.contoso.com, address 192.168.0.1, Name e2847.dspb.akamaiedge.net.<BR>
+    **ping** displays if the source can resolve the target name, and whether or not the target responds to ICMP. If it cannot be resolved, "..could not find host" will be diplayed and if the target is found and also responds to ICMP, you will see "Reply from" and the IP address of the target.<BR>
+    **tracert** displays the path to reach the destination, for example srv1.contoso.com [192.168.0.2] followed by a list of hosts and IP addresses corresponding to subsequent routing nodes between the source and the destination.
 
 ## Related Topics
 
