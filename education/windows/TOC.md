@@ -12,9 +12,9 @@
 ## [Take tests in Windows 10 ](take-tests-in-windows-10.md)
 ### [Set up Take a Test on a single PC ](take-a-test-single-pc.md)
 ### [Set up Take a Test on multiple PCs ](take-a-test-multiple-pcs.md)
+### [Create tests using Microsoft Forms ](create-tests-using-microsoft-forms.md)
 ### [Take a Test app technical reference ](take-a-test-app-technical.md)
 ## [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)
 ## [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)
 ## [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)
 ## [Chromebook migration guide](chromebook-migration-guide.md)
-
