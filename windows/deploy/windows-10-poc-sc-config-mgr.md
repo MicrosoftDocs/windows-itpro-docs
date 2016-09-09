@@ -47,7 +47,33 @@ Description here.
     Stop-Process -Name Explorer
     ```
 3. Download [System Center Configuration Manager and Endpoint Protection](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) on SRV1, double-click the file, enter **C:\configmgr** for **Unzip to folder**, and click **Unzip**. The directory will be automatically created. Click **OK** and then close the WinZip Self-Extractor dialog box when finished.
+
+```
+New-Item -Path c:\setupdl -ItemType Directory
+New-SmbShare -Name SetupDL$ -Path C:\setupdl -ChangeAccess EVERYONE
+cmd /c c:\configmgr\SMSSETUP\BIN\X64\setupdl.exe "\\greglin-xps\SetupDL$"
+
+Install-WindowsFeature Web-Windows-Auth
+Install-WindowsFeature Web-ISAPI-Ext
+Install-WindowsFeature Web-Metabase
+Install-WindowsFeature Web-WMI
+Install-WindowsFeature BITS
+Install-WindowsFeature RDC
+Install-WindowsFeature NET-Framework-Features
+Install-WindowsFeature Web-Asp-Net
+Install-WindowsFeature Web-Asp-Net45
+Install-WindowsFeature NET-HTTP-Activation
+Install-WindowsFeature NET-Non-HTTP-Activ
+
+
+```
+
+OK this is what I need to go with:
+https://gallery.technet.microsoft.com/ConfigMgr-2012-R2-e52919cd
+
+
 4. To start installation, type the following command at an elevated Windows PowerShell prompt:
+
     ```
     C:\configmgr\SMSSETUP\BIN\X64\Setup.exe
     ```
