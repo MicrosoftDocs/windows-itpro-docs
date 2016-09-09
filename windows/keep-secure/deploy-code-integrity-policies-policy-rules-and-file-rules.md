@@ -25,6 +25,7 @@ This topic includes the following sections:
 - [Overview of the process of creating code integrity policies](#overview-of-the-process-of-creating-code-integrity-policies): Helps familiarize you with the process described in this and related topics.
 - [Code integrity policy rules](#code-integrity-policy-rules): Describes one key element you specify in a policy, the *policy rules*, which control options such as audit mode or whether UMCI is enabled in a code integrity policy.
 - [Code integrity file rule levels](#code-integrity-file-rule-levels): Describes the other key element you specify in a policy, the *file rules* (or *file rule levels*), which specify the level at which applications will be identified and trusted.
+- [Example of file rule levels in use](#example-of-file-rule-levels-in-use): Gives an example of how file rule levels can be applied.
 
 ## Overview of the process of creating code integrity policies
 
@@ -97,8 +98,18 @@ Table 3. Code integrity policy - file rule levels
 
 > **Note**&nbsp;&nbsp;When you create code integrity policies with the [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) cmdlet, you can specify a primary file rule level by including the **-Level** parameter. For discovered binaries that cannot be trusted based on the primary file rule criteria, use the **-Fallback** parameter. For example, if the primary file rule level is PCACertificate but you would like to trust the unsigned applications as well, using the Hash rule level as a fallback adds the hash values of binaries that did not have a signing certificate.
 
+## Example of file rule levels in use
+
+For example, consider some IT professionals in a department that runs many servers. They decide they want their servers to run only software signed by the providers of their software and drivers, that is, the companies that provide their hardware, operating system, antivirus, and other important software. They know that their servers also run an internally written application that is unsigned but is rarely updated. They want to allow this application to run.
+
+To create the code integrity policy, they build a reference server on their standard hardware, and install all of the software that their servers are known to run. Then they run [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) with **-Level Publisher** (to allow software from their software providers, the "Publishers") and **-Fallback Hash** (to allow the internal, unsigned application). They enable the policy in auditing mode and gather information about any necessary software that was not included on the reference server. They merge code integrity policies into the original policy to allow that additional software to run. Then they enable the code integrity policy in enforced mode for their servers.
+
+As part of normal operations, they will eventually install software updates, or perhaps add software from the same software providers. Because the "Publisher" remains the same on those updates and software, they will not need to update their code integrity policy. If they come to a time when the internally-written, unsigned application must be updated, they must also update the code integrity policy so that the hash in the policy matches the hash of the updated internal application.
+
+They could also choose to create a catalog that captures information about the unsigned internal application, then sign and distribute the catalog. Then the internal application could be handled by code integrity policies in the same way as any other signed application. An update to the internal application would only require that the catalog be regenerated, signed, and distributed (no restarts would be required).
+
+
 ## Related topics
 
 - [How Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats)
 - [Deploy code integrity policies: steps](deploy-code-integrity-policies-steps.md)
-
