@@ -259,7 +259,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     OSInstall=YES 
     UserDataLocation=AUTO 
     TimeZoneName=Pacific Standard Time
-    OSDComputername=#Left("PC_%SerialNumber%",7)#
+    OSDComputername=#Left("PC-%SerialNumber%",7)#
     AdminPassword=pass@word1 
     JoinDomain=contoso.com 
     DomainAdmin=administrator
