@@ -14,9 +14,9 @@ author: greg-lindsay
 
 -   Windows 10
 
-If you are interested in upgrading to Windows 10 and would like to check out the upgrade process at no cost, and without having to actually upgrade any production devices, then keep reading...
+If you are interested in upgrading to Windows 10 and want to know more about the upgrade process, then keep reading...
 
-If you have a computer running Windows 8 or a later OS with 16GB of RAM, you have everything you need to quickly set up a Windows 10 test lab. You can even clone computers from your network and see exactly what happens when they are upgraded to Windows 10. 
+Do you have a computer running Windows 8 or later with 16GB of RAM? If so, then you have everything you need to set up a Windows 10 test lab. You can even clone computers from your network and see exactly what happens when they are upgraded to Windows 10. 
 
 ## In this guide
 
@@ -121,7 +121,7 @@ The lab architecture is summarized in the following diagram:
 **Note**:
 >If you have an existing Hyper-V host, you can use this host if desired and skip the Hyper-V installation section in this guide.
 
->The two Windows Server VMs can be combined into a single VM to conserve RAM and disk space if required. However, instructions in this guide assume two server systems are used. Using two servers enables Active Directory Domain Services and DHCP to be installed on a server that is not directly connected to the corporate network. This mitigates the risk of clients on the corporate network receiving DHCP leases from the PoC network (i.e. "rogue" DHCP), and limits NETBIOS service broadcasts to the corporate network.
+>The two Windows Server VMs can be combined into a single VM to conserve RAM and disk space if required. However, instructions in this guide assume two server systems are used. Using two servers enables Active Directory Domain Services and DHCP to be installed on a server that is not directly connected to the corporate network. This mitigates the risk of clients on the corporate network receiving DHCP leases from the PoC network (i.e. "rogue" DHCP), and limits NETBIOS service broadcasts.
 
 ## Configure the PoC environment
 
@@ -258,13 +258,13 @@ Instructions to "type" commands provided in this guide can be typed, but in most
     &nbsp;&nbsp;&nbsp;a) Remove the existing external virtual switch, then add the poc-external switch<BR> 
     &nbsp;&nbsp;&nbsp;b) Rename the existing external switch to "poc-external"<BR>
     &nbsp;&nbsp;&nbsp;c) Replace each instance of "poc-external" used in this guide with the name of your existing external virtual switch<BR>
-    If you choose b) or c), then to not run the second command below.
+    If you choose b) or c), then do not run the second command below.
 
     ```
     New-VMSwitch -Name poc-internal -SwitchType Internal -Notes "PoC Network"
     New-VMSwitch -Name poc-external -NetAdapterName (Get-NetAdapter |?{$_.Status -eq "Up" -and $_.NdisPhysicalMedium -eq 14}).Name -Notes "PoC External"
     ```
-    >Additionally, since an external virtual switch is associated to a physical NIC on the Hyper-V host, this NIC must be specified when adding the virtual switch. This step is automated in the example here by filtering for active ethernet adapters using the Get-NetAdapter cmdlet. If your Hyper-V host has multiple active ethernet adapters, this automation will not work, and the second command above will fail. In this case, you must edit the command used to add the "poc-external" virtual switch by inserting the specific value needed for the -NetAdapterName option. This value corresponds to the name of the network interface you wish to use.
+    >Also, since an external virtual switch is associated to a physical network adapter on the Hyper-V host, this adapter must be specified when adding the virtual switch. This is automated in the example here by filtering for active ethernet adapters using the Get-NetAdapter cmdlet. If your Hyper-V host has multiple active ethernet adapters, this automation will not work, and the second command above will fail. In this case, you must edit the command used to add the "poc-external" virtual switch by inserting the specific value needed for the -NetAdapterName option. This value corresponds to the name of the network interface you wish to use.
     
 2. At the elevated Windows PowerShell prompt, type the following command to determine the megabytes of RAM that are currently available on the Hyper-V host:
 
@@ -386,7 +386,8 @@ Instructions to "type" commands provided in this guide can be typed, but in most
     Start-VM PC1
     vmconnect localhost PC1
     ```
-15. Sign on to PC1 using an account that has local administrator rights.<BR> 
+15. Sign on to PC1 using an account that has local administrator rights.
+
     >PC1 will be disconnected from its current domain, so you cannot use a domain account to sign on unless these credentials are cached and the use of cached credentials is permitted by Group Policy. If cached credentials are available and permitted, you can use these credentials to sign in. Otherwise, use an existing local administrator account.
 16. After signing in, the operating system detects that it is running in a new environment. New drivers will be automatically installed, including the network adapter driver. The network adapter driver must be updated before you can proceed, so that you will be able to join the contoso.com domain. Depending on the resources allocated to PC1, installing the network adapter driver might take a few minutes.
 
@@ -396,7 +397,8 @@ Instructions to "type" commands provided in this guide can be typed, but in most
 
 17. When the new network adapter driver has completed installation, you will receive an alert to set a network location for the contoso.com network. Select **Work network** and then click **Close**. When you receive an alert that a restart is required, click **Restart Later**.
 18. Open an elevated Windows PowerShell prompt on PC1 and verify that the client VM has received a DHCP lease and can communicate with the consoto.com domain controller.
-    >To open Windows PowerShell on Windows 7, click Start, and search for "power."
+
+    To open Windows PowerShell on Windows 7, click **Start**, and search for "**power**."
     
     ```
     ipconfig
@@ -428,7 +430,7 @@ Instructions to "type" commands provided in this guide can be typed, but in most
     Our Site Name: Default-First-Site-Name
             Flags: PDC GC DS LDAP KDC TIMESERV WRITABLE DNS_FOREST CLOSE_SITE FULL_SECRET WS 0xC000
     ```
->**Note**: If PC1 is running Windows 7, enhanced session mode is not available, which means that you cannot copy and paste commands from the Hyper-V host to a Windows PowerShell prompt on PC1. However, it is possible to use integration services to copy a file from the Hyper-V host to a VM. The next procedure demonstrates this. If the Copy-VMFile command fails, then type the commands below at an elevated Windows PowerShell prompt on PC1 instead of saving them to a script to run remotely. If PC1 is running Windows 8 or a later operating system, you can use enhanced session mode to copy and paste these commands instead of typing them.
+>If PC1 is running Windows 7, enhanced session mode is not available, which means that you cannot copy and paste commands from the Hyper-V host to a Windows PowerShell prompt on PC1. However, it is possible to use integration services to copy a file from the Hyper-V host to a VM. The next procedure demonstrates this. If the Copy-VMFile command fails, then type the commands below at an elevated Windows PowerShell prompt on PC1 instead of saving them to a script to run remotely. If PC1 is running Windows 8 or a later operating system, you can use enhanced session mode to copy and paste these commands instead of typing them.
 
 19. Open an elevated Windows PowerShell ISE window on the Hyper-V host and type the following commands in the (upper) script editor pane: 
 
