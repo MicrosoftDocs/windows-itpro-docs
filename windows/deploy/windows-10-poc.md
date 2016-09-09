@@ -14,8 +14,8 @@ author: greg-lindsay
 
 -   Windows 10
 
-<U>**Are you interested**</U> in upgrading to Windows 10 ...but are not sure how some devices and apps will be affected?<BR>
-<U>**Did you know**</U> that you can test drive Windows 10 and check out the upgrade process for free without having to actually upgrade any production devices? 
+<U>**Are you interested**</U> in upgrading to Windows 10?<BR>
+This guide enables you to test drive Windows 10, and check out the upgrade process at no cost, all without having to actually upgrade any production devices. 
 
 If you have a computer running Windows 8 or a later OS with 16GB of RAM, you have everything you need to quickly set up a Windows 10 test lab. You can even clone computers from your network and see exactly what happens when they are upgraded to Windows 10. To see how, keep reading.
 
@@ -38,7 +38,7 @@ The following optional topics are also available:
 - [Appendix A: Configuring Hyper-V on Windows Server 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2): Information about using this guide with a Hyper-V host running Windows Server 2008 R2.
 - [Appendix B: Verify the configuration](#verify-the-configuration): Verify and troubleshoot network connectivity and services in the PoC environment.
 
-When you have completed the steps in this guide, see the following guides for step by step instructions to deploy Windows 10 using the PoC environment under common scenarios with current deployment tools:
+When you have completed the steps in this guide, see the following topics for step by step instructions to deploy Windows 10 using the PoC environment under common scenarios with current deployment tools:
 
 - [Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)
 - [Deploy Windows 10 in a test lab using System Center](windows-10-poc-sccm.md)
