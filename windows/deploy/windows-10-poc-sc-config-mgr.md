@@ -71,6 +71,12 @@ Install-WindowsFeature NET-Non-HTTP-Activ
 OK this is what I need to go with:
 https://gallery.technet.microsoft.com/ConfigMgr-2012-R2-e52919cd
 
+Configure it as a primary site, add state migration point, distribution point, extend AD
+
+After running it I need to install the ADK, configure SQL, then run SCCM setup.exe
+
+
+
 
 4. To start installation, type the following command at an elevated Windows PowerShell prompt:
 
