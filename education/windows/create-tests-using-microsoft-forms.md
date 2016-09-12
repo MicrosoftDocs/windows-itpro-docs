@@ -21,7 +21,7 @@ To do this, teachers can select a check box to make it a secure test. Microsoft 
 
 Microsoft Forms will perform checks to ensure students are taking the test in a locked down Take a Test session. If not, students are not permitted access to the assessment.
 
-[Learn how block Internet access while students complete your form](https://support.office.com/article/6bd7e31d-5be0-47c9-a0dc-c0a74fc48959)
+[Learn how to block Internet access while students complete your form](https://support.office.com/article/6bd7e31d-5be0-47c9-a0dc-c0a74fc48959)
 
 
 ## Related topics
