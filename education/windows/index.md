@@ -13,7 +13,7 @@ author: jdeckerMS
 
 [Find out how to get Windows 10 Education or Windows 10 Pro Education for your school](https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools)
 
-[Learn more about what features and functionality are supported in each Windows edition](https://www.microsoft.com/WindowsForBusiness/Compare)
+[Learn more about what features and functionality are supported in each Windows edition](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)
 
 ## In this section
 
