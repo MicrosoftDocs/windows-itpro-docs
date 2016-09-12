@@ -34,7 +34,7 @@ When replacing a user’s device, UE-V automatically restores settings if the us
 You can also use the Windows PowerShell cmdlet, Restore-UevBackup, to restore settings from a different device. To clone the settings packages for the new device, use the following cmdlet in Windows PowerShell:
 
 ``` syntax
-Restore-UevBackup –Machine <MachineName>
+Restore-UevBackup -Machine <MachineName>
 ```
 
 where &lt;MachineName&gt; is the computer name of the device.

@@ -9,9 +9,11 @@ author: jdeckerMS
 ---
 
 # Windows 10 for Education
-[Windows 10 Education](https://www.microsoft.com/en-us/education/products/windows/default.aspx) empowers staff, administrators, teachers and students to do great things.
+[Windows 10 Education and Windows 10 Pro Education](https://www.microsoft.com/en-us/education/products/windows/default.aspx) empowers staff, administrators, teachers and students to do great things.
 
-[Find out how to get Windows 10 Education for your school.](https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools)
+[Find out how to get Windows 10 Education or Windows 10 Pro Education for your school](https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools)
+
+[Learn more about what features and functionality are supported in each Windows edition](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)
 
 ## In this section
 
@@ -28,5 +30,5 @@ author: jdeckerMS
 
 ## Related topics
 
-- [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/index)
 - [Try it out: virtual labs and how-to videos for Windows 10 Education](https://technet.microsoft.com/en-us/windows/dn610356)
+- [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/index)
