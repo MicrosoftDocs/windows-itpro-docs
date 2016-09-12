@@ -150,6 +150,7 @@ To create a self-signed certificate, do the following:
     [NewRequest]
     Subject="CN=BitLocker Network Unlock certificate"
     ProviderType=0
+    MachineKeySet=True
     Exportable=true
     RequestType=Cert
     KeyUsage="CERT_KEY_ENCIPHERMENT_KEY_USAGE"
