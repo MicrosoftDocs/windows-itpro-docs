@@ -36,7 +36,7 @@ System Center 2012 R2 Configuration Manager SP1 adds support to manage and dep
 
 To help with this process, the Configuration Manager team has published [a blog](https://go.microsoft.com/fwlink/p/?LinkId=620179) that provides a sample task sequence, as well as the [original blog that includes the instructions for setting up the task sequence](https://go.microsoft.com/fwlink/p/?LinkId=620180). To summarize, here are the tasks you need to perform:
 
-1.  Download the [Windows10Upgrade1506.zip](https://go.microsoft.com/fwlink/p/?LinkId=620182) file that contains the sample task sequence and related scripts. Extract the contents onto a network share.
+1.  Download the [Windows10Upgrade1506.zip](https://msdnshared.blob.core.windows.net/media/TNBlogsFS/prod.evol.blogs.technet.com/telligent.evolution.components.attachments/01/6965/00/00/03/65/10/29/Windows10Upgrade1506.zip) file that contains the sample task sequence and related scripts. Extract the contents onto a network share.
 2.  Copy the Windows 10 Enterprise RTM x64 media into the extracted but empty **Windows vNext Upgrade Media** folder.
 3.  Using the Configuration Manager Console, right-click the **Task Sequences** node, and then choose **Import Task Sequence**. Select the **Windows-vNextUpgradeExport.zip** file that you extracted in Step 1.
 4.  Distribute the two created packages (one contains the Windows 10 Enterprise x64 media, the other contains the related scripts) to the Configuration Manager distribution point.
