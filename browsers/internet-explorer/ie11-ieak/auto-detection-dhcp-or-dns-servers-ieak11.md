@@ -33,11 +33,12 @@ DHCP has a higher priority than DNS for automatic configuration. If DHCP provide
 ![](images/wedge.gif) **To set up automatic detection for DHCP servers**
 
 -   Open the [DHCP Administrative Tool](https://go.microsoft.com/fwlink/p/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](https://go.microsoft.com/fwlink/p/?LinkId=294649).
-<p>**Examples:**<br>
-http://www.microsoft.com/webproxy.pac<br>
-http://marketing/config.ins<br>
-http://123.4.567.8/account.pac<p>
-For more detailed info about how to set up your DHCP server, see your server documentation.
+
+    **Examples:**<br>
+    `http://www.microsoft.com/webproxy.pac`<br>
+    `http://marketing/config.ins`<br>
+    `http://123.4.567.8/account.pac`<p>
+    For more detailed info about how to set up your DHCP server, see your server documentation.
 
 ![](images/wedge.gif) **To set up automatic detection for DNS servers**
 
