@@ -10,6 +10,9 @@ ms.sitesec: library
 # Edit an existing topic using the Contribute link
 You can now make suggestions and update existing, public content with a GitHub account and a simple click of a link.
 
+>**Note**<br>
+>At this time, only the English (en-us) content is available for editing.
+
 **To edit a topic**
 
 1. All contributors who are ***not*** a Microsoft employee must [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/) before contributing to any Microsoft repositories. 
