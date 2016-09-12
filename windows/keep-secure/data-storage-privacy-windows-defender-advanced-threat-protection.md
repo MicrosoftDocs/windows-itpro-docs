@@ -16,10 +16,11 @@ localizationpriority: high
 **Applies to:**
 
 - Windows 10 Enterprise
-- Windows 10 Enterprise for Education
+- Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 
 This section covers some of the most frequently asked questions regarding privacy and data handling for Windows Defender ATP.
 > [!NOTE]
