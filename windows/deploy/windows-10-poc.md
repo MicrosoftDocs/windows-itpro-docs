@@ -297,6 +297,7 @@ Instructions to "type" commands provided in this guide can be typed, but in most
     Set-VMMemory -VMName "PC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
     Enable-VMIntegrationService –Name "Guest Service Interface" -VMName PC1
     ```
+    
 ### Configure VHDs 
 
 1. At an elevated Windows PowerShell prompt on the Hyper-V host, start the first VM by typing the following command:
