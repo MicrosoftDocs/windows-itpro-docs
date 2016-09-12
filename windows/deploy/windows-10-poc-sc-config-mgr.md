@@ -73,9 +73,32 @@ https://gallery.technet.microsoft.com/ConfigMgr-2012-R2-e52919cd
 
 Configure it as a primary site, add state migration point, distribution point, extend AD
 
-After running it I need to install the ADK, configure SQL, then run SCCM setup.exe
+After running it I need to install the ADK, and WDS
 
+To configure SQL I think I have to download SQLEXPR_x64_ENU which is extracted and then run setup to load the install wizard
+This defaults to NT Service\MSSQL$SQLEXPRESS
+Windows authentication mode
 
+configure SQL - using SQL server installation center (?)
+
+Maybe use a configuration file
+Maybe use: 
+
+Setup.exe /qs /ACTION=Install /FEATURES=SQLEngine,Replication /INSTANCENAME=MSSQLSERVER /SQLSVCACCOUNT="contoso\administrator" /SQLSVCPASSWORD="pass@word1" /SQLSYSADMINACCOUNTS="contoso\administrator" /AGTSVCACCOUNT="NT AUTHORITY\Network Service" /UpdateEnabled=True  /IACCEPTSQLSERVERLICENSETERMS
+
+.\Setup.exe /QUIET /ACTION=REBUILDDATABASE /INSTANCENAME=MSSQLSERVER /SQLCOLLATION=SQL_Latin1_General_CP1_CI_AS /SQLSYSADMINACCOUNTS="contoso\administrator" <--- this worked but I probably just need to add /sqlcollation to the first command (install)
+
+& sc.exe config "$servicename" obj= "[$domain\$username]" password= "[$password]  <--- not this
+
+then run SCCM setup.exe
+
+Cripes I can't use SQL server express edition.... currently I only have this and the TCP port as failures.
+SQL server tcp is enabled and set to static port...
+
+So.. 
+I need to download a full version of SQL somewhere
+Install it with command line, set the port and firewall
+There seems to be some memory requirement for SQL "Configuration Manager requries SQL server to reserve a minimum of 8 GB of memory for central or primary site... I don't know if this will prevent me from getting it working.
 
 
 4. To start installation, type the following command at an elevated Windows PowerShell prompt:
