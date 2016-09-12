@@ -141,7 +141,15 @@ To enroll a certificate from an existing certification authority (CA), do the fo
     2.  Select **Yes, export the private key**.
     3.  Complete the wizard to create the .pfx file.
 
-To create a self-signed certificate, do the following:
+To create a self-signed certificate, you can either use the New-SelfSignedCertificate cmdlet in Windows PowerShell or use Certreq.
+
+Windows PowerShell example:
+
+```syntax
+New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -Subject "CN=BitLocker Network Unlock certificate" -KeyUsage KeyEncipherment -KeyUsageProperty Decrypt -KeyLength 2048 -KeySpec KeyExchange -HashAlgorithm sha512 -TextExtension @("1.3.6.1.4.1.311.21.10={text}OID=1.3.6.1.4.1.311.67.1.1","2.5.29.37={text}1.3.6.1.4.1.311.67.1.1")
+```
+
+Certreq example:
 
 1.  Create a text file with an .inf extension. For example, notepad.exe BitLocker-NetworkUnlock.inf
 2.  Add the following contents to the previously created file:
@@ -181,7 +189,7 @@ To create a self-signed certificate, do the following:
 With the certificate and key created, deploy them to the infrastructure to properly unlock systems. To deploy the certificates, do the following:
 
 1.  On the WDS server, open a new MMC and add the certificates snap-in. Select the computer account and local computer when given the options.
-2.  Right-click the Certificates (Local Computer) - BitLocker Drive Encryption Network Unlock item, choose All Tasks, then **Import**
+2.  Right-click the Certificates (Local Computer) - BitLocker Drive Encryption Network Unlock item, choose All Tasks, then **Import**.
 3.  In the **File to Import** dialog, choose the .pfx file created previously.
 4.  Enter the password used to create the .pfx and complete the wizard.
 
