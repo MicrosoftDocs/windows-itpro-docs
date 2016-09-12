@@ -6,6 +6,7 @@ keywords: deploy, tools, configure, script
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+localizationpriority: high
 author: mtniehaus
 ms.pagetype: mdt
 ---

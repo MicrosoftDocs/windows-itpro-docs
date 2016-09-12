@@ -4,6 +4,7 @@ description: If you have Microsoft System Center 2012 R2 Configuration Manager
 ms.assetid: eacd7b7b-dde0-423d-97cd-29bde9e8b363
 keywords: deployment, custom, boot
 ms.prod: w10
+localizationpriority: high
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus

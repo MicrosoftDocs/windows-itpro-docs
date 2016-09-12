@@ -5,6 +5,7 @@ ms.assetid: 9da2fb57-f2ff-4fce-a858-4ae4c237b5aa
 keywords: deploy, deployment, configure, customize, install, installation
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
@@ -164,6 +165,7 @@ You also can customize the Office installation using a Config.xml file. But we r
 If you need to add many applications, you can take advantage of the PowerShell support that MDT has. To start using PowerShell against the deployment share, you must first load the MDT PowerShell snap-in and then make the deployment share a PowerShell drive (PSDrive).
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Import the snap-in and create the PSDrive by running the following commands in an elevated PowerShell prompt:
+
     ``` syntax
     Import-Topic "C:\Program Files\Microsoft Deployment Toolkit\bin\MicrosoftDeploymentToolkit.psd1"
     New-PSDrive -Name "DS001" -PSProvider MDTProvider -Root "E:\MDTBuildLab"
@@ -173,7 +175,9 @@ If you need to add many applications, you can take advantage of the PowerShell s
 
 In these steps we assume that you have downloaded Microsoft Visual C++ 2005 SP1 x86. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2005SP1x86.
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
+
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
+
     ``` syntax
     $ApplicationName = "Install - Microsoft Visual C++ 2005 SP1 - x86"
     $CommandLine = "vcredist_x86.exe /Q"
@@ -187,6 +191,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2005 SP1 
 In these steps we assume that you have downloaded Microsoft Visual C++ 2005 SP1 x64. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2005SP1x64.
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
+
     ``` syntax
     $ApplicationName = "Install - Microsoft Visual C++ 2005 SP1 - x64"
     $CommandLine = "vcredist_x64.exe /Q"
@@ -200,6 +205,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2005 SP1 
 In these steps we assume that you have downloaded Microsoft Visual C++ 2008 SP1 x86. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2008SP1x86.
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
+
     ``` syntax
     $ApplicationName = "Install - Microsoft Visual C++ 2008 SP1 - x86"
     $CommandLine = "vcredist_x86.exe /Q"
@@ -213,6 +219,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2008 SP1 
 In these steps we assume that you have downloaded Microsoft Visual C++ 2008 SP1 x64. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2008SP1x64.
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
+
     ``` syntax
     $ApplicationName = "Install - Microsoft Visual C++ 2008 SP1 - x64"
     $CommandLine = "vcredist_x64.exe /Q"
@@ -226,6 +233,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2008 SP1 
 In these steps we assume that you have downloaded Microsoft Visual C++ 2010 SP1 x86. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2010SP1x86.
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
+
     ``` syntax
     $ApplicationName = "Install - Microsoft Visual C++ 2010 SP1 - x86"
     $CommandLine = "vcredist_x86.exe /Q"
@@ -239,6 +247,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2010 SP1 
 In these steps we assume that you have downloaded Microsoft Visual C++ 2010 SP1 x64. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2010SP1x64.
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
+
     ``` syntax
     $ApplicationName = "Install - Microsoft Visual C++ 2010 SP1 - x64"
     $CommandLine = "vcredist_x64.exe /Q"
@@ -252,6 +261,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2010 SP1 
 In these steps we assume that you have downloaded Microsoft Visual C++ 2012 Update 4 x86. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2012Ux86.
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
+
     ``` syntax
     $ApplicationName = "Install - Microsoft Visual C++ 2012 Update 4 - x86"
     $CommandLine = "vcredist_x86.exe /Q"
@@ -265,6 +275,7 @@ In these steps we assume that you have downloaded Microsoft Visual C++ 2012 Upda
 In these steps we assume that you have downloaded Microsoft Visual C++ 2012 Update 4 x64. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2012Ux64.
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
+
     ``` syntax
     $ApplicationName = "Install - Microsoft Visual C++ 2012 Update 4 - x64"
     $CommandLine = "vcredist_x64.exe /Q"

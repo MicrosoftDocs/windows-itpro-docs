@@ -5,6 +5,7 @@ ms.assetid: 1d70a3d8-1b1d-4051-b656-c0393a93f83c
 keywords: deployment, automate, tools, configure
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
@@ -304,6 +305,7 @@ In this section, you will learn how to configure the MDT Build Lab deployment sh
     2.  CustomSettings.ini
 2.  Right-click the **MDT Production** deployment share and select **Properties**.
 3.  Select the **Rules** tab and modify using the following information:
+
     ``` syntax
     [Settings]
     Priority=Default
@@ -340,6 +342,7 @@ In this section, you will learn how to configure the MDT Build Lab deployment sh
     SkipFinalSummary=NO
     ```
 4.  Click **Edit Bootstrap.ini** and modify using the following information:
+
     ``` syntax
     [Settings]
     Priority=Default

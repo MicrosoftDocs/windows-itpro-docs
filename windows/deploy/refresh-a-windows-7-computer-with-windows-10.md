@@ -5,6 +5,7 @@ ms.assetid: 2866fb3c-4909-4c25-b083-6fc1f7869f6f
 keywords: reinstallation, customize, template, script, restore
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
@@ -66,6 +67,7 @@ The custom USMT template is named MigContosoData.xml, and you can find it in the
 In order to use the custom MigContosoData.xml USMT template, you need to copy it to the MDT Production deployment share and update the CustomSettings.ini file. In these steps, we assume you have downloaded the MigContosoData.xml file.
 1.  Using File Explorer, copy the MigContosoData.xml file to the **E:\\MDTProduction\\Tools\\x64\\USMT5** folder.
 2.  Using Notepad, edit the E:\\MDTProduction\\Control\\CustomSettings.ini file. After the USMTMigFiles002=MigUser.xml line add the following line:
+
     ``` syntax
     USMTMigFiles003=MigContosoData.xml
     ```

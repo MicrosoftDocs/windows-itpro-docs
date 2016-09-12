@@ -4,6 +4,7 @@ description: This topic describes how to configure a PXE server to load WindowsÂ
 keywords: upgrade, update, windows, windows 10, pxe, WinPE, image, wim
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
