@@ -22,6 +22,12 @@ Upgrade decisions include:
 
 The blades in the **Resolve issues** section are:
 
+- Review applications with known issues
+- Review applications with no known issues
+- Review drivers with known issues
+
+Here you can also see adoption status of applications for the [Ready for Windows website](https://www.readyforwindows.com/). The following sections cover each of the blades and the adoption status of applications in more detail.
+
 ## Review applications with known issues
 
 Applications with issues known to Microsoft are listed, grouped by upgrade assessment into **Attention needed** or **Fix available**.
@@ -120,3 +126,31 @@ To change a driver’s upgrade decision:
 
 4.  Click **Save** when finished.
 
+## Review adoption status of applications for Ready for Windows
+
+The [Ready for Windows (Preview) website](https://www.readyforwindows.com/) lists software solutions that are supported and in use for Windows 10. This site leverages data about application adoption from commercial Windows 10 installs and helps IT managers upgrade to Windows 10 with confidence. For more information, see [Ready for Windows Frequently Asked Questions](https://developer.microsoft.com/windows/ready-for-windows/#/faq/). 
+
+Click **Review Applications With Known Issues** to see the status of applications for Ready for Windows, and corresponding guidance. The following table lists possible values for **ReadyForWindows** and what they mean.
+
+| Ready for Windows Status | What this means | Guidance |
+|--------------------------|-----------------|----------|
+|Supported version available    | The software provider has declared support for one or more versions of this application on Windows 10. |
+|  Highly adopted | This version of this application has been highly adopted within the Windows 10 Enterprise ecosystem. | This application has been installed on at least 100,000 commercial Windows 10 devices. | 
+| Adopted   | This version of this application has been adopted within the Windows 10 Enterprise ecosystem. | This application has been installed on at least 10,000 commercial Windows 10 devices. |
+| Insufficient Data | Too few commercial Windows 10 devices are sharing information about this version of this application for Microsoft to categorize its adoption. | N/A |
+| Contact software provider | There may be compatibility issues with this version of the application, so Microsoft recommends contacting the software provider to learn more. | Check the Ready for Windows site for additional information.|
+| Unknown | There is no Ready for Windows information available for this version of this application. Information may be available on the Ready for Windows site for other versions of the application. | N/A |
+
+If there are known issues with an application, the specific guidance for that known issue takes precedence over the Ready for Windows guidance.
+
+![upgrade-analytics-ready-for-windows-status](images/upgrade-analytics-ready-for-windows-status.png)
+
+If you query with RollupLevel="NamePublisher", then it is possible for each version of the application to have a different status for Ready for Windows. In this case, different values appear for Ready for Windows when RollupLevel=”NamePublisher”.
+
+| Ready for Windows Status | What this means | Guidance |
+|--------------------------|-----------------|----------|
+|Supported version available | The software provider has declared support for one or more versions of this application on Windows 10. | The ISV has declared support for a version of this application on Windows 10.|
+|Adoption status available | A Ready for Windows adoption status is available for one or more versions of this application. Please check the Ready for Windows site to learn more. |Check the Ready for Windows site for adoption information for this application.|
+|Unknown    | There is no Ready for Windows information available for this version of this application. Information may be available on the Ready for Windows site for other versions of the application. |N/A  |
+
+![Name publisher rollup](images/upgrade-analytics-namepub-rollup.png)
