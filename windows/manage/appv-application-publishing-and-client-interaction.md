@@ -532,21 +532,21 @@ The following table shows local and roaming locations, when folder redirection h
 
 | VFS directory in package | Mapped location of backing store |
 | - | - |
-| ProgramFilesX86 | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\ProgramFilesX86 |
-| SystemX86 | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\SystemX86 |
-| Windows | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\Windows |
-| appv\_ROOT | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\appv_ROOT|
-| AppData | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\AppData |
+| ProgramFilesX86 | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\ProgramFilesX86 |
+| SystemX86 | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\SystemX86 |
+| Windows | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\Windows |
+| appv\_ROOT | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\appv_ROOT|
+| AppData | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\AppData |
 
 The following table shows local and roaming locations, when folder redirection has been implemented for %AppData%, and the location has been redirected (typically to a network location).
 
 | VFS directory in package | Mapped location of backing store |
 | - | - |
-| ProgramFilesX86 | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\ProgramFilesX86 |
-| SystemX86 | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\SystemX86 |
-| Windows | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\Windows |
-| appv_ROOT | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\appv\_ROOT |
-| AppData | \\Fileserver\users\Local\roaming\Microsoft\AppV\Client\VFS\\<GUID>\AppData |
+| ProgramFilesX86 | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\ProgramFilesX86 |
+| SystemX86 | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\SystemX86 |
+| Windows | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\Windows |
+| appv_ROOT | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\appv\_ROOT |
+| AppData | \\Fileserver\users\Local\roaming\Microsoft\AppV\Client\VFS\\&lt;GUID&gt;\AppData |
  
 
 The current App-V Client VFS driver cannot write to network locations, so the App-V Client detects the presence of folder redirection and copies the data on the local drive during publishing and when the virtual environment starts. After the user closes the App-V application and the App-V Client closes the virtual environment, the local storage of the VFS AppData is copied back to the network, enabling roaming to additional machines, where the process will be repeated. The detailed steps of the processes are:
