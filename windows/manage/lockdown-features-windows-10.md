@@ -96,8 +96,8 @@ Many of the lockdown features available in Windows Embedded 8.1 Industry have be
 </tr>
 <tr class="odd">
 <td align="left"><p>[Gesture Filter](https://go.microsoft.com/fwlink/p/?LinkId=626672): block swipes from top, left, and right edges of screen</p></td>
-<td align="left">[Assigned Access](https://go.microsoft.com/fwlink/p/?LinkId=626608)</td>
-<td align="left"><p>The capabilities of Gesture Filter have been consolidated into Assigned Access for Windows 10. In Windows 8.1, gestures provided the ability to close an app, to switch apps, and to reach the Charms. For Windows 10, Charms have been removed, and blocking the closing or switching of apps is part of Assigned Access.</p></td>
+<td align="left">MDM and Group Policy</td>
+<td align="left"><p>In Windows 8.1, gestures provided the ability to close an app, to switch apps, and to reach the Charms. Im Windows 10, Charms have been removed. In Windows 10, version 1607, you can block swipes using the [Allow edge swipe](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#LockDown_AllowEdgeSwipe) policy. </p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Custom Logon]( https://go.microsoft.com/fwlink/p/?LinkId=626759): suppress Windows UI elements during Windows sign-on, sign-off, and shutdown</p></td>
