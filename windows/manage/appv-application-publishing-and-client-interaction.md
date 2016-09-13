@@ -602,7 +602,7 @@ In an App-V Full Infrastructure, after applications are sequenced they are manag
 
 This document focuses on App-V Full Infrastructure solutions. For specific information on App-V Integration with Configuration Manager 2012, see [Integrating Virtual Application Management with App-V 5 and Configuration Manager 2012 SP1](https://www.microsoft.com/en-us/download/details.aspx?id=38177).
 
-The App-V application lifecycle tasks are triggered at user login (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured after client setup with Windows PowerShell commands. See [App-V Client Configuration Settings: Windows PowerShell](appv-client-configuration-settings.md#app-v-client-configuration-settings-windows-powershell).
+The App-V application lifecycle tasks are triggered at user login (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured (after the client is enabled) with Windows PowerShell commands. See [App-V Client Configuration Settings: Windows PowerShell](appv-client-configuration-settings.md#app-v-client-configuration-settings-windows-powershell).
 
 ### Publishing refresh
 
