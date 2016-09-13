@@ -24,6 +24,7 @@ localizationpriority: high
 
 This section covers some of the most frequently asked questions regarding privacy and data handling for Windows Defender ATP.
 > [!NOTE]
+> This document explains the data storage and privacy details related to Windows Defender ATP. For more information related to Windows Defender ATP and other products and services like Windows Defender and Windows 10, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576). See also [Windows 10 privacy FAQ](https://go.microsoft.com/fwlink/?linkid=827577) for more information.
 
 ## What data does Windows Defender ATP collect?
 
@@ -31,6 +32,7 @@ Microsoft will collect and store information from your configured endpoints in a
 
 Information collected includes code file data (such as file names, sizes, and hashes), process data (running processes, hashes), registry data, network connection data (host IPs and ports), and machine details (such as GUIDs, names, and the operating system version).
 
+Microsoft stores this data securely in Microsoft Azure and maintains it in accordance with Microsoft privacy practices and [Microsoft Trust Center policies](https://go.microsoft.com/fwlink/?linkid=827578).
 
 Microsoft uses this data to:
 - Proactively identify indicators of attack (IOAs) in your organization
