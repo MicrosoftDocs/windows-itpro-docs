@@ -68,7 +68,7 @@ Microsoft Error Reporting provides a service that allows you to report problems 
 
 **Information Collected, Processed, or Transmitted:**
 
-For information about the information collected, processed, or transmitted by Microsoft Error Reporting, see the Microsoft Error Reporting privacy statement at [http://go.microsoft.com](http://go.microsoft.com/fwlink/?LinkID=244395).
+For information about the information collected, processed, or transmitted by Microsoft Error Reporting, see the Microsoft Error Reporting privacy statement at [https://go.microsoft.com](https://go.microsoft.com/fwlink/?LinkID=244395).
 
 **Use of Information:**
 
@@ -98,15 +98,15 @@ Microsoft Update is a service that provides Windows updates as well as updates f
 
 **Information Collected, Processed, or Transmitted:**
 
-For details about what information is collected and how it is used, see the Update Services Privacy Statement at <http://go.microsoft.com/fwlink/?LinkId=244400>.
+For details about what information is collected and how it is used, see the Update Services Privacy Statement at <https://go.microsoft.com/fwlink/?LinkId=244400>.
 
 **Use of Information:**
 
-For details about what information is collected and how it is used, see the Update Services Privacy Statement at <http://go.microsoft.com/fwlink/?LinkId=244400>.
+For details about what information is collected and how it is used, see the Update Services Privacy Statement at <https://go.microsoft.com/fwlink/?LinkId=244400>.
 
 **Choice/Control:**
 
-For details about controlling this feature, see the Update Services Privacy Statement at <http://go.microsoft.com/fwlink/?LinkId=244000>.
+For details about controlling this feature, see the Update Services Privacy Statement at <https://go.microsoft.com/fwlink/?LinkId=244000>.
 
 ### Customer Experience Improvement Program
 
@@ -116,7 +116,7 @@ The Customer Experience Improvement Program (“CEIP”) collects basic informat
 
 **Information Collected, Processed, or Transmitted:**
 
-For more information about the information collected, processed, or transmitted by CEIP, see the CEIP privacy statement at <http://go.microsoft.com/fwlink/?LinkID=52097>.
+For more information about the information collected, processed, or transmitted by CEIP, see the CEIP privacy statement at <https://go.microsoft.com/fwlink/?LinkID=52097>.
 
 **Use of Information:**
 

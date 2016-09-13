@@ -37,7 +37,7 @@ For custom graphics and branding, add the `FEATURE\AUTOCONFIG\BRANDING` registry
 
 ## Updating your automatic configuration settings
 After adding the `FEATURE\AUTOCONFIG\BRANDING` registry key, you can change your automatic configuration settings to pick up the updated branding.
-<p>**Important**<br>Your branding changes won't be added or updated if you've previously chosen the **Disable external branding of IE** setting in the `User Configuration\Administrative Templates\Windows Components\Internet Explorer` Group Policy object. This setting is intended to prevent branding by a third-party, like an Internet service or content provider. For more information about Group Policy, including videos and the latest technical documentation, see the [Group Policy TechCenter](http://go.microsoft.com/fwlink/p/?LinkId=214514).
+<p>**Important**<br>Your branding changes won't be added or updated if you've previously chosen the **Disable external branding of IE** setting in the `User Configuration\Administrative Templates\Windows Components\Internet Explorer` Group Policy object. This setting is intended to prevent branding by a third-party, like an Internet service or content provider. For more information about Group Policy, including videos and the latest technical documentation, see the [Group Policy TechCenter](https://go.microsoft.com/fwlink/p/?LinkId=214514).
 
  ![](images/wedge.gif) **To update your settings**
 
@@ -51,7 +51,7 @@ After adding the `FEATURE\AUTOCONFIG\BRANDING` registry key, you can change your
 
     -   **Automatic Configuration URL (.INS file) box:** Type the location of your automatic configuration script.
 
-    -   **Automatic proxy URL (.JS, .JVS, or .PAC file) box:** Type the location of your automatic proxy script.<p> **Important**<br>Internet Explorer 11 no longer supports using file server locations with your proxy configuration (.pac) files. To keep using your .pac files, you have to keep them on a web server and reference them using a URL, like *http://share/test.ins*.
+    -   **Automatic proxy URL (.JS, .JVS, or .PAC file) box:** Type the location of your automatic proxy script.<p> **Important**<br>Internet Explorer 11 no longer supports using file server locations with your proxy configuration (.pac) files. To keep using your .pac files, you have to keep them on a web server and reference them using a URL, like `http://share/test.ins`.
 
 If your branding changes aren't correctly deployed after running through this process, see [Auto configuration and auto proxy problems with Internet Explorer 11](auto-configuration-and-auto-proxy-problems-with-ie11.md).
 

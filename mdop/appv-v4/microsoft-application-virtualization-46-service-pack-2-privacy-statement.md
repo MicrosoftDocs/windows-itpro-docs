@@ -74,7 +74,7 @@ Microsoft Error Reporting provides a service that allows you to report problems 
 
 **Information Collected, Processed, or Transmitted: **
 
-For information about the information collected, processed, or transmitted by Microsoft Error Reporting, see the Microsoft Error Reporting privacy statement at <http://go.microsoft.com/fwlink/?linkid=50293>.
+For information about the information collected, processed, or transmitted by Microsoft Error Reporting, see the Microsoft Error Reporting privacy statement at <https://go.microsoft.com/fwlink/?linkid=50293>.
 
 **Use of Information:**
 
@@ -92,7 +92,7 @@ Enterprise customers can use Group Policy to configure how Microsoft Error Repor
 
 **What This Feature Does:**
 
-Microsoft Update is a service that provides Windows updates as well as updates for other Microsoft software, including App-V.  For details about what information is collected, how it is used and how to change your settings, see the Update Services Privacy Statement at <http://go.microsoft.com/fwlink/?linkid=50142>.
+Microsoft Update is a service that provides Windows updates as well as updates for other Microsoft software, including App-V.  For details about what information is collected, how it is used and how to change your settings, see the Update Services Privacy Statement at <https://go.microsoft.com/fwlink/?linkid=50142>.
 
 **Choice/Control: **
 
@@ -176,7 +176,7 @@ The Customer Experience Improvement Program (“CEIP”) collects basic informat
 
 **Information Collected, Processed, or Transmitted: **
 
-For more information about the information collected, processed, or transmitted by CEIP, see the CEIP privacy statement at <http://go.microsoft.com/fwlink/?LinkID=52097>.
+For more information about the information collected, processed, or transmitted by CEIP, see the CEIP privacy statement at <https://go.microsoft.com/fwlink/?LinkID=52097>.
 
 **Use of Information:**
 

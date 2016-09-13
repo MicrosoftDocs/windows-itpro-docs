@@ -52,7 +52,7 @@ In some cases, IPsec-secured traffic might have to pass through a router, perime
 
 In the case of a filtering router or a firewall, you must configure these devices to allow IPsec traffic to be forwarded. Configure the firewall to allow IPsec traffic on UDP source and destination port 500 (IKE), UDP source and destination port 4500 (IPsec NAT-T), and IP Protocol 50 (ESP). You might also have to configure the firewall to allow IPsec traffic on IP protocol 51 (AH) to allow troubleshooting by IPsec administrators and to allow the IPsec traffic to be inspected.
 
-For more info, see [How to Enable IPsec Traffic Through a Firewall](http://go.microsoft.com/fwlink/?LinkId=45085).
+For more info, see [How to Enable IPsec Traffic Through a Firewall](https://go.microsoft.com/fwlink/?LinkId=45085).
 
 ## Network load balancing and server clusters
 

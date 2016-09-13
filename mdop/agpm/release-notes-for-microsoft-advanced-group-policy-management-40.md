@@ -22,33 +22,33 @@ Microsoft Advanced Group Policy Management (AGPM) 4.0 extends the capabilities o
 
 The following documents can help you get started with AGPM 4.0.
 
--   For an overview of the capabilities of AGPM, see [Overview of Microsoft Advanced Group Policy Management](http://go.microsoft.com/fwlink/?LinkID=162671) (http://go.microsoft.com/fwlink/?LinkID=162671).
+-   For an overview of the capabilities of AGPM, see [Overview of Microsoft Advanced Group Policy Management](https://go.microsoft.com/fwlink/?LinkID=162671) (https://go.microsoft.com/fwlink/?LinkID=162671).
 
--   For information about how AGPM 4.0 differs from AGPM 3.0, see [What's New in AGPM 4.0](http://go.microsoft.com/fwlink/?LinkId=160058) (http://go.microsoft.com/fwlink/?LinkId=160058).
+-   For information about how AGPM 4.0 differs from AGPM 3.0, see [What's New in AGPM 4.0](https://go.microsoft.com/fwlink/?LinkId=160058) (https://go.microsoft.com/fwlink/?LinkId=160058).
 
--   For guidance about how to determine whether AGPM 4.0, AGPM 3.0, or AGPM 2.5 is appropriate for your environment, see [Choosing Which Version of AGPM to Install](http://go.microsoft.com/fwlink/?LinkId=145981) (http://go.microsoft.com/fwlink/?LinkId=145981).
+-   For guidance about how to determine whether AGPM 4.0, AGPM 3.0, or AGPM 2.5 is appropriate for your environment, see [Choosing Which Version of AGPM to Install](https://go.microsoft.com/fwlink/?LinkId=145981) (https://go.microsoft.com/fwlink/?LinkId=145981).
 
--   For basic guidance about how to install AGPM and a sample scenario for using AGPM, see [Step-by-Step Guide for Microsoft Advanced Group Policy Management 4.0](http://go.microsoft.com/fwlink/?LinkID=153505) (http://go.microsoft.com/fwlink/?LinkID=153505). This guide is primarily designed to help evaluators and first-time users.
+-   For basic guidance about how to install AGPM and a sample scenario for using AGPM, see [Step-by-Step Guide for Microsoft Advanced Group Policy Management 4.0](https://go.microsoft.com/fwlink/?LinkID=153505) (https://go.microsoft.com/fwlink/?LinkID=153505). This guide is primarily designed to help evaluators and first-time users.
 
--   For information about how to upgrade from an earlier version of AGPM or detailed guidance about how to plan the deployment of AGPM in your organization, see the [Planning Guide for Microsoft Advanced Group Policy Management 4.0](http://go.microsoft.com/fwlink/?LinkID=156883) (http://go.microsoft.com/fwlink/?LinkID=156883).
+-   For information about how to upgrade from an earlier version of AGPM or detailed guidance about how to plan the deployment of AGPM in your organization, see the [Planning Guide for Microsoft Advanced Group Policy Management 4.0](https://go.microsoft.com/fwlink/?LinkID=156883) (https://go.microsoft.com/fwlink/?LinkID=156883).
 
--   For information about how to use AGPM to perform specific tasks, see the Advanced Group Policy Management 4.0 Help, which is also available on TechNet as the [Operations Guide for AGPM 4.0](http://go.microsoft.com/fwlink/?LinkId=159872) (http://go.microsoft.com/fwlink/?LinkId=159872).
+-   For information about how to use AGPM to perform specific tasks, see the Advanced Group Policy Management 4.0 Help, which is also available on TechNet as the [Operations Guide for AGPM 4.0](https://go.microsoft.com/fwlink/?LinkId=159872) (https://go.microsoft.com/fwlink/?LinkId=159872).
 
 ## More information
 
 
 For more information about AGPM, see the following:
 
--   [Advanced Group Policy Management TechNet Library](http://go.microsoft.com/fwlink/?LinkID=146846) (http://go.microsoft.com/fwlink/?LinkID=146846)
+-   [Advanced Group Policy Management TechNet Library](https://go.microsoft.com/fwlink/?LinkID=146846) (https://go.microsoft.com/fwlink/?LinkID=146846)
 
--   [Microsoft Desktop Optimization Pack TechCenter](http://go.microsoft.com/fwlink/?LinkId=159870) (http://www.microsoft.com/technet/mdop)
+-   [Microsoft Desktop Optimization Pack TechCenter](https://go.microsoft.com/fwlink/?LinkId=159870) (http://www.microsoft.com/technet/mdop)
 
--   [Group Policy TechCenter](http://go.microsoft.com/fwlink/?LinkId=145531) (http://www.microsoft.com/gp)
+-   [Group Policy TechCenter](https://go.microsoft.com/fwlink/?LinkId=145531) (http://www.microsoft.com/gp)
 
 ## Providing feedback
 
 
-You can post feedback or questions about AGPM to the [Group Policy Forum](http://go.microsoft.com/fwlink/?LinkId=145532) (http://go.microsoft.com/fwlink/?LinkId=145532).
+You can post feedback or questions about AGPM to the [Group Policy Forum](https://go.microsoft.com/fwlink/?LinkId=145532) (https://go.microsoft.com/fwlink/?LinkId=145532).
 
 ## Known issues with AGPM 4.0
 

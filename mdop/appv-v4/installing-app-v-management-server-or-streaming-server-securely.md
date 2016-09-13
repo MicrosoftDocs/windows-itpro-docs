@@ -29,7 +29,7 @@ When you prepare to install or configure a secure Management or Streaming Server
 -   The certificate fully qualified domain name (FQDN) must match the server on which it is installed. For example, if the client is calling `RTSPS://Myserver.mycompany.com/content/MyApp.sft` and the certificate **Issued To** field is set to `Server1.mycompany.com`, the client will not connect to the server and the session ends. The failure is reported to the user.
 
     **Note**  
-    If you are using App-V in a Network Load Balancing cluster, you must configure the certificate with Subject Alternate Names (SANs) to support RTSPS. For information about configuring the certification authority (CA) and creating certificates with SANs, see <http://go.microsoft.com/fwlink/?LinkId=133228>.
+    If you are using App-V in a Network Load Balancing cluster, you must configure the certificate with Subject Alternate Names (SANs) to support RTSPS. For information about configuring the certification authority (CA) and creating certificates with SANs, see <https://go.microsoft.com/fwlink/?LinkId=133228>.
 
      
 

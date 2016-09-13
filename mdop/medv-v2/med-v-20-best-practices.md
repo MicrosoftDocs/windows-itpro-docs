@@ -21,11 +21,11 @@ Although you can specify any settings that you prefer, a MED-V best practice is 
 
 ### Disable restore points on the virtual machine
 
-Before you create the MED-V workspace package, we recommend that you disable restore points on the virtual machine to prevent the differencing disk from growing unbounded. For more information, see [How to turn off and turn on System Restore in Windows XP](http://go.microsoft.com/fwlink/?LinkId=195927) (http://go.microsoft.com/fwlink/?LinkId=195927).
+Before you create the MED-V workspace package, we recommend that you disable restore points on the virtual machine to prevent the differencing disk from growing unbounded. For more information, see [How to turn off and turn on System Restore in Windows XP](https://go.microsoft.com/fwlink/?LinkId=195927) (https://go.microsoft.com/fwlink/?LinkId=195927).
 
 ### Configure MED-V image to use local profiles
 
-We recommend that you apply only those policies that make sense in an application compatibility environment for Windows XP. For example, desktop customization policies do not typically have to be applied and should be disabled. For more information about how to allow only local profiles, see [Group Policy Settings for Roaming User Profiles](http://go.microsoft.com/fwlink/?LinkId=205072) (http://go.microsoft.com/fwlink/?LinkId=205072).
+We recommend that you apply only those policies that make sense in an application compatibility environment for Windows XP. For example, desktop customization policies do not typically have to be applied and should be disabled. For more information about how to allow only local profiles, see [Group Policy Settings for Roaming User Profiles](https://go.microsoft.com/fwlink/?LinkId=205072) (https://go.microsoft.com/fwlink/?LinkId=205072).
 
 ### Configure a Group Policy performance update
 

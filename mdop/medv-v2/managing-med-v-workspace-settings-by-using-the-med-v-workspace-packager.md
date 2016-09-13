@@ -75,7 +75,7 @@ You can use the MED-V Workspace Packager to manage certain settings in the MED-V
 
      
 
-4.  Click **Save as…** to save the updated configuration settings in the specified folder. MED-V creates a registry file that contains the updated settings. Deploy the updated registry file by using Group Policy. For more information about how to use Group Policy, see [Group Policy Software Installation](http://go.microsoft.com/fwlink/?LinkId=195931) (http://go.microsoft.com/fwlink/?LinkId=195931).
+4.  Click **Save as…** to save the updated configuration settings in the specified folder. MED-V creates a registry file that contains the updated settings. Deploy the updated registry file by using Group Policy. For more information about how to use Group Policy, see [Group Policy Software Installation](https://go.microsoft.com/fwlink/?LinkId=195931) (https://go.microsoft.com/fwlink/?LinkId=195931).
 
     MED-V also creates a Windows PowerShell script in the specified folder that you can use to re-create this updated registry file.
 

@@ -64,13 +64,13 @@ AppLocker event log is located in the following path: **Applications and Service
 2.  **MSI and Script**. Contains events for all files affected by the Windows Installer and script rule collections (.msi, .msp, .ps1, .bat, .cmd, .vbs, and .js).
 3.  **Packaged app-Deployment** or **Packaged app-Execution**, contains events for all Universal Windows apps affected by the packaged app and packed app installer rule collection (.appx).
 
-Collecting these events in a central location can help you maintain your AppLocker policy and troubleshoot rule configuration problems. Event collection technologies such as those available in Windows allow administrators to subscribe to specific event channels and have the events from source computers aggregated into a forwarded event log on a Windows Server operating system collector. For more info about setting up an event subscription, see [Configure Computers to Collect and Forward Events](http://go.microsoft.com/fwlink/p/?LinkId=145012).
+Collecting these events in a central location can help you maintain your AppLocker policy and troubleshoot rule configuration problems. Event collection technologies such as those available in Windows allow administrators to subscribe to specific event channels and have the events from source computers aggregated into a forwarded event log on a Windows Server operating system collector. For more info about setting up an event subscription, see [Configure Computers to Collect and Forward Events](https://go.microsoft.com/fwlink/p/?LinkId=145012).
 
 ### Policy maintenance
 
 As new apps are deployed or existing apps are updated by the software publisher, you will need to make revisions to your rule collections to ensure that the policy is current.
 
-You can edit an AppLocker policy by adding, changing, or removing rules. However, you cannot specify a version for the policy by importing additional rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create versions of Group Policy Objects (GPOs). An example of this type of software is the Advanced Group Policy Management feature from the Microsoft Desktop Optimization Pack. For more info about Advanced Group Policy Management, see [Advanced Group Policy Management Overview](http://go.microsoft.com/fwlink/p/?LinkId=145013) (http://go.microsoft.com/fwlink/p/?LinkId=145013).
+You can edit an AppLocker policy by adding, changing, or removing rules. However, you cannot specify a version for the policy by importing additional rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create versions of Group Policy Objects (GPOs). An example of this type of software is the Advanced Group Policy Management feature from the Microsoft Desktop Optimization Pack. For more info about Advanced Group Policy Management, see [Advanced Group Policy Management Overview](https://go.microsoft.com/fwlink/p/?LinkId=145013) (https://go.microsoft.com/fwlink/p/?LinkId=145013).
 
 >**Caution:**  You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
  
@@ -100,7 +100,7 @@ A file could be blocked for three reasons:
 -   There may be an existing rule that was created for the file that is too restrictive.
 -   A deny rule, which cannot be overridden, is explicitly blocking the file.
 
-Before editing the rule collection, first determine what rule is preventing the file from running. You can troubleshoot the problem by using the **Test-AppLockerPolicy** Windows PowerShell cmdlet. For more info about troubleshooting an AppLocker policy, see [Testing and Updating an AppLocker Policy](http://go.microsoft.com/fwlink/p/?LinkId=160269) (http://go.microsoft.com/fwlink/p/?LinkId=160269).
+Before editing the rule collection, first determine what rule is preventing the file from running. You can troubleshoot the problem by using the **Test-AppLockerPolicy** Windows PowerShell cmdlet. For more info about troubleshooting an AppLocker policy, see [Testing and Updating an AppLocker Policy](https://go.microsoft.com/fwlink/p/?LinkId=160269) (https://go.microsoft.com/fwlink/p/?LinkId=160269).
 
 ## Next steps
 

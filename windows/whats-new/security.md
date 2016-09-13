@@ -190,8 +190,8 @@ Table 1. Windows 10 hardware requirements
 In this table, **R** stands for *recommended*, **Y** means that the hardware component is *required* for that Windows 10 feature, and **N** means that the hardware component is *not used* with that Windows 10 feature.
  
 ## Related topics
-[Windows 10 Specifications](http://go.microsoft.com/fwlink/p/?LinkId=717550)
-[Making Windows 10 More Personal and More Secure with Windows Hello](http://go.microsoft.com/fwlink/p/?LinkId=717551)
+[Windows 10 Specifications](https://go.microsoft.com/fwlink/p/?LinkId=717550)
+[Making Windows 10 More Personal and More Secure with Windows Hello](https://go.microsoft.com/fwlink/p/?LinkId=717551)
 [Protect BitLocker from pre-boot attacks](../keep-secure/protect-bitlocker-from-pre-boot-attacks.md)
 [BitLocker Countermeasures](../keep-secure/bitlocker-countermeasures.md)
 [Device Guard deployment guide](../keep-secure/device-guard-deployment-guide.md)

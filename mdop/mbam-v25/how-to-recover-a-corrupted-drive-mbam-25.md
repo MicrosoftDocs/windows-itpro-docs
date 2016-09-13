@@ -37,7 +37,7 @@ You can use this procedure with the Administration and Monitoring Website (also 
 </tr>
 <tr class="odd">
 <td align="left"><p>Use the <code>repair-bde</code> command to complete the recovery process.</p></td>
-<td align="left"><p>To avoid a potential loss of data, it is strongly recommended that you review the [Manage-bde](http://go.microsoft.com/fwlink/?LinkId=393567) command before using it.</p></td>
+<td align="left"><p>To avoid a potential loss of data, it is strongly recommended that you review the [Manage-bde](https://go.microsoft.com/fwlink/?LinkId=393567) command before using it.</p></td>
 </tr>
 </tbody>
 </table>

@@ -16,7 +16,7 @@ ms.prod: w8
 ##  Share location templates with the template gallery
 
 
-The Microsoft User Experience Virtualization (UE-V) template gallery allows administrators to share their UE-V settings location templates. In the gallery, you can upload your settings location templates for other people to use, and you can download templates that other people have created. The UE-V template gallery is located on Microsoft TechNet here: <http://go.microsoft.com/fwlink/p/?LinkID=246589>.
+The Microsoft User Experience Virtualization (UE-V) template gallery allows administrators to share their UE-V settings location templates. In the gallery, you can upload your settings location templates for other people to use, and you can download templates that other people have created. The UE-V template gallery is located on Microsoft TechNet here: <https://go.microsoft.com/fwlink/p/?LinkID=246589>.
 
 Before you share a settings location template on the UE-V template gallery, make sure it does not contain any personal or company information. You can use any XML viewer to open and view the contents of a settings location template file. The following template values should be reviewed before you share it with anyone outside your company.
 

@@ -47,7 +47,7 @@ The following steps describe how to configure an NLB cluster virtual name and IP
 Before you begin the procedures described in this topic, you must have the MBAM Administration and Monitoring Server feature successfully installed by using the same IIS port binding on two separate server computers that meet the prerequisites for both MBAM Server feature installation and NLB Cluster configuration.
 
 **Note**  
-This topic describes the basic process of using Network Load Balancing Manager to create an NLB Cluster. The exact steps to configure a Windows Server as part of an NLB cluster depend on the Windows Server version in use.. For more information about how to create NLBs on Windows Server 2008, see [Creating Network Load Balancing Clusters](http://go.microsoft.com/fwlink/?LinkId=197176) in the Windows Server 2008 TechNet library.
+This topic describes the basic process of using Network Load Balancing Manager to create an NLB Cluster. The exact steps to configure a Windows Server as part of an NLB cluster depend on the Windows Server version in use.. For more information about how to create NLBs on Windows Server 2008, see [Creating Network Load Balancing Clusters](https://go.microsoft.com/fwlink/?LinkId=197176) in the Windows Server 2008 TechNet library.
 
  
 

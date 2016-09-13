@@ -34,11 +34,11 @@ After you have finished running the Microsoft Diagnostics and Recovery Toolset (
 
 3.  Use the boot.wim file to create a bootable recovery partition by using your company’s standard method for creating a custom Windows RE image.
 
-    For more information about how to create or customize a recovery partition, see [Customizing the Windows RE Experience](http://go.microsoft.com/fwlink/?LinkId=214222).
+    For more information about how to create or customize a recovery partition, see [Customizing the Windows RE Experience](https://go.microsoft.com/fwlink/?LinkId=214222).
 
 4.  Replace the target partition in your Windows 10 image with the recovery partition.
 
-    For more information about how to deploy a recovery solution to reinstall the factory image in the event of a system failure, see [Deploy a System Recovery Image](http://go.microsoft.com/fwlink/?LinkId=214221).
+    For more information about how to deploy a recovery solution to reinstall the factory image in the event of a system failure, see [Deploy a System Recovery Image](https://go.microsoft.com/fwlink/?LinkId=214221).
 
 ## Related topics
 

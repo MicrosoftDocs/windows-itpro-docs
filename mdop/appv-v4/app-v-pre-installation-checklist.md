@@ -52,7 +52,7 @@ The following checklist is intended to provide a high-level list of items to con
 </tr>
 <tr class="odd">
 <td align="left"><p>Install Microsoft SQL Server 2008.</p></td>
-<td align="left"><p>[Install SQL Server 2008](http://go.microsoft.com/fwlink/?LinkId=181924) (http://go.microsoft.com/fwlink/?LinkId=181924).</p></td>
+<td align="left"><p>[Install SQL Server 2008](https://go.microsoft.com/fwlink/?LinkId=181924) (https://go.microsoft.com/fwlink/?LinkId=181924).</p></td>
 </tr>
 </tbody>
 </table>

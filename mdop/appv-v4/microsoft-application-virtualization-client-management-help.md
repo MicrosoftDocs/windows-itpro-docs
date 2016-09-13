@@ -17,7 +17,7 @@ The Microsoft Application Virtualization Desktop Client and the Client for Remot
 
 This help documentation supports the Application Virtualization Desktop Client and Client for Remote Desktop Services. It includes conceptual information, step-by-step procedures, and a user interface reference.
 
-For the latest updates to this help documentation, please visit the Microsoft TechNet Library at <http://go.microsoft.com/fwlink/?LinkId=150698>.
+For the latest updates to this help documentation, please visit the Microsoft TechNet Library at <https://go.microsoft.com/fwlink/?LinkId=150698>.
 
 ## In This Section
 

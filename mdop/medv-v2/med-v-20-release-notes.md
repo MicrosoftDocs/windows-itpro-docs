@@ -22,12 +22,12 @@ Read these release notes thoroughly before you install the Microsoft Enterprise 
 ## About the Product Documentation
 
 
-Documentation for Microsoft Enterprise Desktop Virtualization (MED-V) 2.0 is distributed with the product and is also located at [Microsoft Enterprise Desktop Virtualization 2.0](http://go.microsoft.com/fwlink/?LinkID=207065) (http://go.microsoft.com/fwlink/?LinkId=207065).
+Documentation for Microsoft Enterprise Desktop Virtualization (MED-V) 2.0 is distributed with the product and is also located at [Microsoft Enterprise Desktop Virtualization 2.0](https://go.microsoft.com/fwlink/?LinkID=207065) (https://go.microsoft.com/fwlink/?LinkId=207065).
 
 ## Protect Against Security Vulnerabilities and Viruses
 
 
-To help protect against security vulnerabilities and viruses, we recommend that you install the latest available security updates for any new software being installed. For more information, see [Microsoft Security](http://go.microsoft.com/fwlink/?LinkId=3482) (http://go.microsoft.com/fwlink/?LinkId=3482).
+To help protect against security vulnerabilities and viruses, we recommend that you install the latest available security updates for any new software being installed. For more information, see [Microsoft Security](https://go.microsoft.com/fwlink/?LinkId=3482) (https://go.microsoft.com/fwlink/?LinkId=3482).
 
 ## Known Issues with MED-V 2.0
 

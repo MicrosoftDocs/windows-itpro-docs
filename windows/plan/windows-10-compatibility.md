@@ -6,6 +6,7 @@ keywords: deploy, upgrade, update, appcompat
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
+localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
 ---
@@ -19,13 +20,13 @@ author: mtniehaus
 
 Windows 10 will be compatible with most existing PC hardware; most devices running Windows 7, Windows 8, or Windows 8.1 will meet the requirements for Windows 10.
 
-For full system requirements, see [Windows 10 specifications](http://go.microsoft.com/fwlink/p/?LinkId=625077). Some driver updates may be required for Windows 10.
+For full system requirements, see [Windows 10 specifications](https://go.microsoft.com/fwlink/p/?LinkId=625077). Some driver updates may be required for Windows 10.
 
 Existing desktop (Win32) application compatibility is also expected to be strong, with most existing applications working without any changes. Some applications that interface with Windows at a low level, those that use undocumented APIs, or those that do not follow recommended coding practices could experience issues.
 
 Existing Windows Store (WinRT) apps created for Windows 8 and Windows 8.1 should also continue to work, because compatibility can be validated against all the apps that have been submitted to the Windows Store.
 
-For web apps and sites, modern HTML5-based sites should also have a high degree of compatibility and excellent performance through the new Microsoft Edge browser, while older web apps and sites can continue to use Internet Explorer 11 and the Enterprise Mode features that were first introduced in Windows 7 and Windows 8.1 and are still present in Windows 10. For more information about Internet Explorer and Enterprise Mode, see the [Internet Explorer 11 Deployment Guide for IT Pros.](http://go.microsoft.com/fwlink/p/?LinkId=734031)
+For web apps and sites, modern HTML5-based sites should also have a high degree of compatibility and excellent performance through the new Microsoft Edge browser, while older web apps and sites can continue to use Internet Explorer 11 and the Enterprise Mode features that were first introduced in Windows 7 and Windows 8.1 and are still present in Windows 10. For more information about Internet Explorer and Enterprise Mode, see the [Internet Explorer 11 Deployment Guide for IT Pros.](https://go.microsoft.com/fwlink/p/?LinkId=734031)
 
 ## Recommended application testing process
 

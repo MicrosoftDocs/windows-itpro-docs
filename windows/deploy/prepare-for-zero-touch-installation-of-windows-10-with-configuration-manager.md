@@ -4,6 +4,7 @@ description: This topic will walk you through the process of integrating Microso
 ms.assetid: 06e3a221-31ef-47a5-b4da-3b927cb50d08
 keywords: install, configure, deploy, deployment
 ms.prod: w10
+localizationpriority: high
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus
@@ -75,7 +76,7 @@ Figure 6. The Configuration Manager service accounts used for operating system d
 ## <a href="" id="sec02"></a>Configure Active Directory permissions
 
 
-In order for the Configuration Manager Join Domain Account (CM\_JD) to join machines into the contoso.com domain you need to configure permissions in Active Directory. These steps assume you have downloaded the sample [Set-OUPermissions.ps1 script](http://go.microsoft.com/fwlink/p/?LinkId=619362) and copied it to C:\\Setup\\Scripts on DC01.
+In order for the Configuration Manager Join Domain Account (CM\_JD) to join machines into the contoso.com domain you need to configure permissions in Active Directory. These steps assume you have downloaded the sample [Set-OUPermissions.ps1 script](https://go.microsoft.com/fwlink/p/?LinkId=619362) and copied it to C:\\Setup\\Scripts on DC01.
 
 1.  On DC01, log on as Administrator in the CONTOSO domain using the password **P@ssw0rd**.
 

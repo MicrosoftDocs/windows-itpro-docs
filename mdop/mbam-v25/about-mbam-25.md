@@ -45,7 +45,7 @@ The following groups might be interested in using MBAM to manage BitLocker:
 -   Administrators who are responsible for client computers that are running Windows
 
 **Note**  
-BitLocker is not explained in detail in this MBAM documentation. For more information, see [BitLocker Drive Encryption Overview](http://go.microsoft.com/fwlink/p/?LinkId=225013).
+BitLocker is not explained in detail in this MBAM documentation. For more information, see [BitLocker Drive Encryption Overview](https://go.microsoft.com/fwlink/p/?LinkId=225013).
 
  
 
@@ -60,7 +60,7 @@ MBAM adds support for Microsoft SQL Server 2014, in addition to the same softwar
 
 ### <a href="" id="-------------mbam-group-policy-templates-downloaded-separately"></a> MBAM Group Policy Templates downloaded separately
 
-The MBAM Group Policy Templates must be downloaded separately from the MBAM installation. In previous versions of MBAM, the MBAM installer included an MBAM Policy Template, which contained the required MBAM-specific Group Policy Objects (GPOs) that define MBAM implementation settings for BitLocker Drive Encryption. These GPOs have been removed from the MBAM installer. You now download the GPOs from [How to Get MDOP Group Policy (.admx) Templates](http://go.microsoft.com/fwlink/p/?LinkId=393941) and copy them to a server or workstation before you begin the MBAM Client installation. You can copy the Group Policy Templates to any server or workstation that is running a supported version of the Windows Server or Windows operating system.
+The MBAM Group Policy Templates must be downloaded separately from the MBAM installation. In previous versions of MBAM, the MBAM installer included an MBAM Policy Template, which contained the required MBAM-specific Group Policy Objects (GPOs) that define MBAM implementation settings for BitLocker Drive Encryption. These GPOs have been removed from the MBAM installer. You now download the GPOs from [How to Get MDOP Group Policy (.admx) Templates](https://go.microsoft.com/fwlink/p/?LinkId=393941) and copy them to a server or workstation before you begin the MBAM Client installation. You can copy the Group Policy Templates to any server or workstation that is running a supported version of the Windows Server or Windows operating system.
 
 **Important**  
 Do not change the Group Policy settings in the **BitLocker Drive Encryption** node, or MBAM will not work correctly. When you configure the Group Policy settings in the **MDOP MBAM (BitLocker Management)** node, MBAM automatically configures the BitLocker Drive Encryption settings for you.
@@ -133,7 +133,7 @@ Copy the template files to the location that best meets your needs. For the lang
 
      
 
-For more information about template files, see [Managing Group Policy ADMX Files Step-by-Step Guide](http://go.microsoft.com/fwlink/?LinkId=392818).
+For more information about template files, see [Managing Group Policy ADMX Files Step-by-Step Guide](https://go.microsoft.com/fwlink/?LinkId=392818).
 
 ### Ability to enforce encryption policies on operating system and fixed data drives
 
@@ -189,9 +189,9 @@ The new Group Policy setting is located in the following GPO node: **Computer Co
 
 MBAM 2.5 supports Federal Information Processing Standard (FIPS)-compliant BitLocker recovery keys on devices that are running the Windows 8.1 operating system. The recovery key was not FIPS compliant in earlier versions of Windows. This enhancement improves the drive recovery process in organizations that require FIPS compliance because it enables end users to use the Self-Service Portal or Administration and Monitoring Website (Help Desk) to recover their drives if they forget their PIN or password or get locked out of their computers. The new FIPS compliance feature does not extend to password protectors.
 
-To enable FIPS compliance in your organization, you must configure the Federal Information Processing Standard (FIPS) Group Policy settings. For configuration instructions, see [BitLocker Group Policy Settings](http://go.microsoft.com/fwlink/?LinkId=393560).
+To enable FIPS compliance in your organization, you must configure the Federal Information Processing Standard (FIPS) Group Policy settings. For configuration instructions, see [BitLocker Group Policy Settings](https://go.microsoft.com/fwlink/?LinkId=393560).
 
-For client computers that are running the Windows 8 or Windows 7 operating systems without the [installed BitLocker hotfix](https://support.microsoft.com/kb/3015477), IT administrators will continue to use the Data Recovery Agents (DRA) protector in FIPS-compliant environments. For information about DRA, see [Using Data Recovery Agents with BitLocker](http://go.microsoft.com/fwlink/?LinkId=393557).
+For client computers that are running the Windows 8 or Windows 7 operating systems without the [installed BitLocker hotfix](https://support.microsoft.com/kb/3015477), IT administrators will continue to use the Data Recovery Agents (DRA) protector in FIPS-compliant environments. For information about DRA, see [Using Data Recovery Agents with BitLocker](https://go.microsoft.com/fwlink/?LinkId=393557).
 
 See [Hotfix Package 2 for BitLocker Administration and Monitoring 2.5](https://support.microsoft.com/kb/3015477) to download and install the BitLocker hotfix for Windows 7 and Windows 8 computers.
 
@@ -282,15 +282,15 @@ Windows PowerShell Help for MBAM is available in the following formats:
 </tr>
 <tr class="even">
 <td align="left"><p>On TechNet as webpages</p></td>
-<td align="left"><p>http://go.microsoft.com/fwlink/?LinkId=393498</p></td>
+<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393498</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>On the Download Center as a Word .docx file</p></td>
-<td align="left"><p>http://go.microsoft.com/fwlink/?LinkId=393497</p></td>
+<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393497</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>On the Download Center as a .pdf file</p></td>
-<td align="left"><p>http://go.microsoft.com/fwlink/?LinkId=393499</p></td>
+<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393499</p></td>
 </tr>
 </tbody>
 </table>
@@ -346,7 +346,7 @@ MBAM supports BitLocker on Encrypted Hard Drives that meet TCG specification req
 ## How to Get MDOP Technologies
 
 
-MBAM is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of the Microsoft Software Assurance program. For more information about the Microsoft Software Assurance program and how to acquire the MDOP, see [How Do I Get MDOP?](http://go.microsoft.com/fwlink/?LinkId=322049).
+MBAM is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of the Microsoft Software Assurance program. For more information about the Microsoft Software Assurance program and how to acquire the MDOP, see [How Do I Get MDOP?](https://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## <a href="" id="---------mbam-2-5-release-notes"></a> MBAM 2.5 Release Notes
 

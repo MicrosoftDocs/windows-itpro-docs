@@ -13,7 +13,7 @@ ms.prod: w10
 # Managing the UE-V 2.x Agent and Packages with Windows PowerShell and WMI
 
 
-You can use Windows Management Instrumentation (WMI) and Windows PowerShell to manage Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 Agent configuration and synchronization behavior. For a complete list of UE-V PowerShell cmdlets, see [UE-V 2 Cmdlet Reference](http://go.microsoft.com/fwlink/?LinkId=393495) (http://go.microsoft.com/fwlink/?LinkId=393495).
+You can use Windows Management Instrumentation (WMI) and Windows PowerShell to manage Microsoft User Experience Virtualization (UE-V) 2.0, 2.1, and 2.1 SP1 Agent configuration and synchronization behavior. For a complete list of UE-V PowerShell cmdlets, see [UE-V 2 Cmdlet Reference](https://go.microsoft.com/fwlink/?LinkId=393495) (https://go.microsoft.com/fwlink/?LinkId=393495).
 
 **To deploy the UE-V Agent by using Windows PowerShell**
 

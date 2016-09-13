@@ -83,7 +83,7 @@ See [User Experience Virtualization (UE-V) settings templates for Microsoft Offi
 When you install the UE-V 2.1 or 2.1 SP1 Agent, it registers a default group of settings location templates that capture settings values for these common Microsoft applications.
 
 **Tip**  
-**Microsoft Office 2007 Settings Synchronization** – In UE-V 2.1 and 2.1 SP1, a settings location template is no longer included by default for Office 2007 applications. However, you can still use Office 2007 templates from UE-V 2.0 or earlier and can get the templates from the [UE-V template gallery](http://go.microsoft.com/fwlink/p/?LinkID=246589).
+**Microsoft Office 2007 Settings Synchronization** – In UE-V 2.1 and 2.1 SP1, a settings location template is no longer included by default for Office 2007 applications. However, you can still use Office 2007 templates from UE-V 2.0 or earlier and can get the templates from the [UE-V template gallery](https://go.microsoft.com/fwlink/p/?LinkID=246589).
 
  
 
@@ -172,7 +172,7 @@ UE-V 2.1 SP1 does not synchronize settings between the Microsoft Calculator in W
 When you install the UE-V 2.0 Agent, it registers a default group of settings location templates that capture settings values for these common Microsoft applications.
 
 **Tip**  
-**Microsoft Office 2013 Settings Synchronization** – In UE-V 2.0, a settings location template is not included by default for Office 2013 applications, but is available for download from the [UE-V template gallery](http://go.microsoft.com/fwlink/p/?LinkID=246589). [Synchronizing Office 2013 with UE-V 2.0](synchronizing-office-2013-with-ue-v-20-both-uevv2.md) provides details about the supported templates that synchronize Office 2013 settings.
+**Microsoft Office 2013 Settings Synchronization** – In UE-V 2.0, a settings location template is not included by default for Office 2013 applications, but is available for download from the [UE-V template gallery](https://go.microsoft.com/fwlink/p/?LinkID=246589). [Synchronizing Office 2013 with UE-V 2.0](synchronizing-office-2013-with-ue-v-20-both-uevv2.md) provides details about the supported templates that synchronize Office 2013 settings.
 
  
 
@@ -517,7 +517,7 @@ This PowerShell cmdlet disables credential synchronization:
 Disable-UevTemplate RoamingCredentialSettings
 ```
 
-[Group Policy](http://technet.microsoft.com/library/dn458893.aspx)**:** You must [deploy the latest MDOP ADMX template](http://go.microsoft.com/fwlink/p/?LinkId=393944) to enable credential synchronization through group policy. Credentials synchronization is managed with the Windows settings. To manage this feature with Group Policy, enable the Synchronize Windows settings policy.
+[Group Policy](http://technet.microsoft.com/library/dn458893.aspx)**:** You must [deploy the latest MDOP ADMX template](https://go.microsoft.com/fwlink/p/?LinkId=393944) to enable credential synchronization through group policy. Credentials synchronization is managed with the Windows settings. To manage this feature with Group Policy, enable the Synchronize Windows settings policy.
 
 1.  Open Group Policy Editor and navigate to **User Configuration – Administrative Templates – Windows Components – Microsoft User Experience Virtualization**.
 
@@ -597,7 +597,7 @@ The UE-V settings storage location and settings template catalog support storing
 
 -   Format the storage volume with an NTFS file system.
 
--   The share can use Distributed File System (DFS) replication, but Distributed File System Replication (DFSR) is specifically not supported. Distributed File System Namespaces (DFSN) are supported. For detailed information, see [Microsoft’s Support Statement Around Replicated User Profile Data](http://go.microsoft.com/fwlink/p/?LinkId=313991).
+-   The share can use Distributed File System (DFS) replication, but Distributed File System Replication (DFSR) is specifically not supported. Distributed File System Namespaces (DFSN) are supported. For detailed information, see [Microsoft’s Support Statement Around Replicated User Profile Data](https://go.microsoft.com/fwlink/p/?LinkId=313991).
 
     In addition, because SYSVOL uses DFSR for replication, SYSVOL cannot be used for UE-V data file replication.
 
@@ -692,12 +692,12 @@ Before you proceed, make sure your environment includes these requirements for r
 
 Also…
 
--   **MDOP License:** This technology is a part of the Microsoft Desktop Optimization Pack (MDOP). Enterprise customers can get MDOP with Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see How Do I Get MDOP (http://go.microsoft.com/fwlink/p/?LinkId=322049).
+-   **MDOP License:** This technology is a part of the Microsoft Desktop Optimization Pack (MDOP). Enterprise customers can get MDOP with Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see How Do I Get MDOP (https://go.microsoft.com/fwlink/p/?LinkId=322049).
 
 -   **Administrative Credentials** for any computer on which you’ll be installing
 
 **Note**  
--   The UE-V Windows PowerShell feature of the UE-V Agent requires .NET Framework 4 or higher and Windows PowerShell 3.0 or higher to be enabled. Download Windows PowerShell 3.0 [here](http://go.microsoft.com/fwlink/?LinkId=309609).
+-   The UE-V Windows PowerShell feature of the UE-V Agent requires .NET Framework 4 or higher and Windows PowerShell 3.0 or higher to be enabled. Download Windows PowerShell 3.0 [here](https://go.microsoft.com/fwlink/?LinkId=309609).
 
 -   Install .NET Framework 4 or .NET Framework 4.5 on computers that run the Windows 7 or the Windows Server 2008 R2 operating system. The Windows 8, Windows 8.1, and Windows Server 2012 operating systems come with .NET Framework 4.5 installed. The Windows 10 operating system comes with .NET Framework 4.6 installed.
 -   The “Delete Roaming Cache” policy for Mandatory profiles is not supported with UE-V and should not be used.

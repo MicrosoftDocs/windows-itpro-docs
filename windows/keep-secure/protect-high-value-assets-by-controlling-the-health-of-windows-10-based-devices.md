@@ -123,7 +123,7 @@ Windows 10 supports features to help prevent sophisticated low-level malware li
     -   The first TPM specification, version 1.2, was published in February 2005 by the TCG and standardized under ISO / IEC 11889 standard.
     -   The latest TPM specification, referred to as TPM 2.0, was released in April 2014 and has been approved by the ISO/IEC Joint Technical Committee (JTC) as ISO/IEC 11889:2015.
 
-    Windows 10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Microsoft Passport, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=733948).
+    Windows 10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Microsoft Passport, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=733948).
 
     Windows 10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 supports only TPM 2.0. TPM 2.0 is required for device health attestation.
 
@@ -183,7 +183,7 @@ Windows 10 supports features to help prevent sophisticated low-level malware li
 
     HVCI uses virtualization-based security to isolate Code Integrity, the only way kernel memory can become executable is through a Code Integrity verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified.
 
-    >**Note:**  Device Guard devices that run Kernel Mode Code Integrity with virtualization-based security must have compatible drivers. For additional information, please read the [Driver compatibility with Device Guard in Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=691612) blog post.
+    >**Note:**  Device Guard devices that run Kernel Mode Code Integrity with virtualization-based security must have compatible drivers. For additional information, please read the [Driver compatibility with Device Guard in Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=691612) blog post.
      
     The Device Guard Code Integrity feature lets organizations control what code is trusted to run into the Windows kernel and what applications are approved to run in user mode. It’s configurable by using a policy.
     Device Guard Code Integrity policy is a binary file that Microsoft recommends you sign. The signing of the Code Integrity policy aids in the protection against a malicious user with Administrator privileges trying to modify or remove the current Code Integrity policy.
@@ -198,7 +198,7 @@ Windows 10 supports features to help prevent sophisticated low-level malware li
 
     Windows 10 takes measurements of the UEFI firmware and each of the Windows and antimalware components are made as they load during the boot process. Additionally, they are taken and measured sequentially, not all at once. When these measurements are complete, their values are digitally signed and stored securely in the TPM and cannot be changed unless the system is reset.
 
-    For more information, see [Secured Boot and Measured Boot: Hardening Early Boot Components Against Malware](http://go.microsoft.com/fwlink/p/?LinkId=733950).
+    For more information, see [Secured Boot and Measured Boot: Hardening Early Boot Components Against Malware](https://go.microsoft.com/fwlink/p/?LinkId=733950).
 
     During each subsequent boot, the same components are measured, which allows comparison of the measurements against an expected baseline. For additional security, the values measured by the TPM can be signed and transmitted to a remote server, which can then perform the comparison. This process, called *remote device health attestation*, allows the server to verify health status of the Windows device.
 
@@ -245,7 +245,7 @@ The trust decision to execute code is performed by using Hyper-V Code Integrity,
 
 Hyper-V Code Integrity is a feature that validates the integrity of a driver or system file each time it is loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel, or whether a system file has been modified by malicious software that is being run by a user account with Administrator privileges. On x64-based versions of Windows 10 kernel-mode drivers must be digitally signed.
 
->**Note:**  Independently of activation of Device Guard Policy, [Windows 10 by default raises the bar for what runs in the kernel](http://go.microsoft.com/fwlink/p/?LinkId=691613). Windows 10 drivers must be signed by Microsoft, and more specifically, by the WHQL (Windows Hardware Quality Labs) portal. Additionally, starting in October 2015, the WHQL portal will only accept driver submissions, including both kernel and user mode driver submissions, that have a valid Extended Validation (“EV”) Code Signing Certificate.
+>**Note:**  Independently of activation of Device Guard Policy, [Windows 10 by default raises the bar for what runs in the kernel](https://go.microsoft.com/fwlink/p/?LinkId=691613). Windows 10 drivers must be signed by Microsoft, and more specifically, by the WHQL (Windows Hardware Quality Labs) portal. Additionally, starting in October 2015, the WHQL portal will only accept driver submissions, including both kernel and user mode driver submissions, that have a valid Extended Validation (“EV”) Code Signing Certificate.
  
 With Device Guard in Windows 10, organizations are now able to define their own Code Integrity policy for use on x64 systems running Windows 10 Enterprise. Organizations have the ability to configure the policy that determines what is trusted to run. These include drivers and system files, as well as traditional desktop applications and scripts. The system is then locked down to only run applications that the organization trusts.
 
@@ -325,7 +325,7 @@ For more information on device health attestation, see the [Detect an unhealthy 
 
 ### <a href="" id="hardware-req"></a>Hardware requirements
 
-The following table details the hardware requirements for both virtualization-based security services and the health attestation feature. For more information, see [Minimum hardware requirements](http://go.microsoft.com/fwlink/p/?LinkId=733951).
+The following table details the hardware requirements for both virtualization-based security services and the health attestation feature. For more information, see [Minimum hardware requirements](https://go.microsoft.com/fwlink/p/?LinkId=733951).
 
 <table>
 <colgroup>
@@ -475,7 +475,7 @@ The TPM has an embedded unique cryptographic key called the endorsement key. The
 
 The endorsement key public key is generally used for sending securely sensitive parameters, such as when taking possession of the TPM that contains the defining hash of the owner password. The EK private key is used when creating secondary keys like AIKs.
 
-The endorsement key acts as an identity card for the TPM. For more information, see [Understand the TPM endorsement key](http://go.microsoft.com/fwlink/p/?LinkId=733952).
+The endorsement key acts as an identity card for the TPM. For more information, see [Understand the TPM endorsement key](https://go.microsoft.com/fwlink/p/?LinkId=733952).
 
 The endorsement key is often accompanied by one or two digital certificates:
 
@@ -573,7 +573,7 @@ The Health Attestation Service provides the following information to an MDM solu
 -   Safe Mode boot, DEP enablement, test signing enablement
 -   Device TPM has been provisioned with a trusted endorsement certificate
 
-For completeness of the measurements, see [Health Attestation CSP](http://go.microsoft.com/fwlink/p/?LinkId=733949).
+For completeness of the measurements, see [Health Attestation CSP](https://go.microsoft.com/fwlink/p/?LinkId=733949).
 
 The following table presents some key items that can be reported back to MDM depending on the type of Windows 10-based device.
 
@@ -662,7 +662,7 @@ Today’s access control technology, in most cases, focuses on ensuring that the
 
 The remote device health attestation process uses measured boot data to verify the health status of the device. The health of the device is then available for an MDM solution like Intune.
 
->**Note:**  For the latest information on Intune and Windows 10 features support, see the [Microsoft Intune blog](http://go.microsoft.com/fwlink/p/?LinkId=691614) and [What's new in Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=733956).
+>**Note:**  For the latest information on Intune and Windows 10 features support, see the [Microsoft Intune blog](https://go.microsoft.com/fwlink/p/?LinkId=691614) and [What's new in Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=733956).
  
 The figure below shows how the Health Attestation Service is expected to work with Microsoft’s cloud-based Intune MDM service.
 
@@ -679,9 +679,9 @@ Windows 10 has an MDM client that ships as part of the operating system. This e
 
 ### Third-party MDM server support
 
-Third-party MDM servers can manage Windows 10 by using the MDM protocol. The built-in management client is able to communicate with a compatible server that supports the OMA-DM protocol to perform enterprise management tasks. For additional information, see [Azure Active Directory integration with MDM](http://go.microsoft.com/fwlink/p/?LinkId=733954).
+Third-party MDM servers can manage Windows 10 by using the MDM protocol. The built-in management client is able to communicate with a compatible server that supports the OMA-DM protocol to perform enterprise management tasks. For additional information, see [Azure Active Directory integration with MDM](https://go.microsoft.com/fwlink/p/?LinkId=733954).
 
->**Note:**  MDM servers do not need to create or download a client to manage Windows 10. For more information, see [Mobile device management](http://go.microsoft.com/fwlink/p/?LinkId=733955).
+>**Note:**  MDM servers do not need to create or download a client to manage Windows 10. For more information, see [Mobile device management](https://go.microsoft.com/fwlink/p/?LinkId=733955).
  
 The third-party MDM server will have the same consistent first-party user experience for enrollment, which also provides simplicity for Windows 10 users.
 
@@ -689,7 +689,7 @@ The third-party MDM server will have the same consistent first-party user experi
 
 This management infrastructure makes it possible for IT pros to use MDM-capable products like Intune, to manage health attestation, Device Guard, or Windows Defender on Windows 10-based devices, including BYODs that aren’t domain joined. IT pros will be able to manage and configure all of the actions and settings they are familiar with customizing by using Intune with Intune Endpoint Protection on down-level operating systems. Admins that currently only manage domain joined devices through Group Policy will find it easy to transition to managing Windows 10-based devices by using MDM because many of the settings and actions are shared across both mechanisms.
 
-For more information on how to manage Windows 10 security and system settings with an MDM solution, see [Custom URI settings for Windows 10 devices](http://go.microsoft.com/fwlink/p/?LinkId=733953).
+For more information on how to manage Windows 10 security and system settings with an MDM solution, see [Custom URI settings for Windows 10 devices](https://go.microsoft.com/fwlink/p/?LinkId=733953).
 
 ### Conditional access control
 
@@ -710,7 +710,7 @@ When a user requests access to an Office 365 service from a supported device pla
 
 When a user enrolls, the device is registered with Azure AD, and enrolled with a compatible MDM solution like Intune.
 
->**Note**  Microsoft is working with third-party MDM ISVs to support automated MDM enrollment and policy based access checks. Steps to turn on auto-MDM enrollment with Azure AD and Intune are explained in the [Windows 10, Azure AD And Microsoft Intune: Automatic MDM Enrollment Powered By The Cloud!](http://go.microsoft.com/fwlink/p/?LinkId=691615) blog post.
+>**Note**  Microsoft is working with third-party MDM ISVs to support automated MDM enrollment and policy based access checks. Steps to turn on auto-MDM enrollment with Azure AD and Intune are explained in the [Windows 10, Azure AD And Microsoft Intune: Automatic MDM Enrollment Powered By The Cloud!](https://go.microsoft.com/fwlink/p/?LinkId=691615) blog post.
  
 When a user enrolls a device successfully, the device becomes trusted. Azure AD provides single-sign-on to access company applications and enforces conditional access policy to grant access to a service not only the first time the user requests access, but every time the user requests to renew access.
 
@@ -732,7 +732,7 @@ To get to a compliant state, the Windows 10-based device needs to:
 -   Register with Azure AD.
 -   Be compliant with the device policies set by the MDM solution.
 
->**Note:**  At the present time, conditional access policies are selectively enforced on users on iOS and Android devices. For more information, see the [Azure AD, Microsoft Intune and Windows 10 – Using the cloud to modernize enterprise mobility!](http://go.microsoft.com/fwlink/p/?LinkId=691616) blog post.
+>**Note:**  At the present time, conditional access policies are selectively enforced on users on iOS and Android devices. For more information, see the [Azure AD, Microsoft Intune and Windows 10 – Using the cloud to modernize enterprise mobility!](https://go.microsoft.com/fwlink/p/?LinkId=691616) blog post.
  
 ### <a href="" id="cloud-and-on-premises-apps-conditional-access-control-"></a>Cloud and on-premises apps conditional access control
 
@@ -740,13 +740,13 @@ Conditional access control is a powerful policy evaluation engine built into Azu
 
 IT pros can configure conditional access control policies for cloud SaaS applications secured by Azure AD and even on-premises applications. Access rules in Azure AD leverage the conditional access engine to check device health and compliance state reported by a compatible MDM solution like Intune in order to determine whether to allow access.
 
-For more information about conditional access, see [Azure Conditional Access Preview for SaaS Apps.](http://go.microsoft.com/fwlink/p/?LinkId=524807)
+For more information about conditional access, see [Azure Conditional Access Preview for SaaS Apps.](https://go.microsoft.com/fwlink/p/?LinkId=524807)
 
->**Note:**  Conditional access control is an Azure AD Premium feature that's also available with EMS. If you don't have an Azure AD Premium subscription, you can get a trial from the [Microsoft Azure](http://go.microsoft.com/fwlink/p/?LinkId=691617) site.
+>**Note:**  Conditional access control is an Azure AD Premium feature that's also available with EMS. If you don't have an Azure AD Premium subscription, you can get a trial from the [Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=691617) site.
  
 For on-premises applications there are two options to enable conditional access control based on a device's compliance state:
 
--   For on-premises applications that are published through the Azure AD Application Proxy, you can configure conditional access control policies as you would for cloud applications. For more details, see the [Azure AD Conditional Access preview updated: Now supports On-Premises and Custom LOB apps](http://go.microsoft.com/fwlink/p/?LinkId=691618) blog post.
+-   For on-premises applications that are published through the Azure AD Application Proxy, you can configure conditional access control policies as you would for cloud applications. For more details, see the [Azure AD Conditional Access preview updated: Now supports On-Premises and Custom LOB apps](https://go.microsoft.com/fwlink/p/?LinkId=691618) blog post.
 -   Additionally, Azure AD Connect will sync device compliance information from Azure AD to on-premises AD. ADFS on Windows Server 2016 will support conditional access control based on a device's compliance state. IT pros will configure conditional access control policies in ADFS that use the device's compliance state reported by a compatible MDM solution to secure on-premises applications.
 
 ![figure 13](images/hva-fig12-conditionalaccess12.png)
@@ -768,7 +768,7 @@ The following process describes how Azure AD conditional access works:
 13. If the device is compliant and the user is authorized, an access token is generated.
 14. User can access the corporate managed asset.
 
-For more information about Azure AD join, see the [Azure AD & Windows 10: Better Together for Work or School](http://go.microsoft.com/fwlink/p/?LinkId=691619) white paper.
+For more information about Azure AD join, see the [Azure AD & Windows 10: Better Together for Work or School](https://go.microsoft.com/fwlink/p/?LinkId=691619) white paper.
 
 Conditional access control is a topic that many organizations and IT pros may not know as well as they should. The different attributes that describe a user, a device, compliance, and context of access are very powerful when used with a conditional access engine. Conditional access control is an essential step that helps organizations secure their environment.
 
@@ -822,4 +822,4 @@ Health attestation is a key feature of Windows 10 that includes client and clou
 
 - [Protect derived domain credentials with Credential Guard](credential-guard.md)
 - [Device Guard deployment guide](device-guard-deployment-guide.md)
-- [Trusted Platform Module technology overview](http://go.microsoft.com/fwlink/p/?LinkId=733957)
+- [Trusted Platform Module technology overview](https://go.microsoft.com/fwlink/p/?LinkId=733957)

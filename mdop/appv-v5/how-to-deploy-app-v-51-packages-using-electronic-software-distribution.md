@@ -56,7 +56,7 @@ Use one of the following methods to publish packages to App-V client computers w
 
 3.  After you create the virtual application, deploy the package by using your ESD solution.
 
-    If you are using System Center Configuration Manager, start by reviewing [Introduction to Application Management in Configuration Manager](http://go.microsoft.com/fwlink/?LinkId=281816) for information about using App-V 5.1 and System Center 2012 Configuration Manager.
+    If you are using System Center Configuration Manager, start by reviewing [Introduction to Application Management in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=281816) for information about using App-V 5.1 and System Center 2012 Configuration Manager.
 
     **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
