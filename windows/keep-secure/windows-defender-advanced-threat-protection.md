@@ -16,10 +16,11 @@ localizationpriority: high
 **Applies to:**
 
 - Windows 10 Enterprise
-- Windows 10 Enterprise for Education
+- Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+>For more info about Windows 10 Enterprise Edition features and functionality, see [Windows 10 Enterprise edition](https://www.microsoft.com/en-us/WindowsForBusiness/buy).
 
 Windows Defender Advanced Threat Protection (Windows Defender ATP) is a security service that enables enterprise customers to detect, investigate, and respond to advanced threats on their networks.
 

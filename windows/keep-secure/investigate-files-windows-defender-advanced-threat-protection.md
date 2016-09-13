@@ -15,7 +15,7 @@ localizationpriority: high
 **Applies to:**
 
 - Windows 10 Enterprise
-- Windows 10 Enterprise for Education
+- Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
@@ -89,7 +89,7 @@ When the sample is collected, Windows Defender ATP runs the file in is a secure 
 A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
 > [!NOTE]
-> Depending on machine availability, sample collection time can vary. There is a 1-hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 machine reporting at that time. You can re-submit files for deep analysis to get fresh data on the file.
+> Depending on machine availability, sample collection time can vary. There is a 3-hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 machine reporting at that time. You can re-submit files for deep analysis to get fresh data on the file.
 
 ## View deep analysis report
 
