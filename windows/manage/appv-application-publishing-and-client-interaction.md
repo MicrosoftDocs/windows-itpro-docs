@@ -245,7 +245,7 @@ Before an application can access the package registry data, the App-V Client mus
 
 When a new package is added to the App-V Client, a copy of the REGISTRY.DAT file from the package is created at `%ProgramData%\Microsoft\AppV\Client\VREG\{Version GUID}.dat`. The name of the file is the version GUID with the .DAT extension. The reason this copy is made is to ensure that the actual hive file in the package is never in use, which would prevent the removal of the package at a later time.
 
-**Registry.dat from Package Store ** > **%ProgramData%\Microsoft\AppV\Client\Vreg\{VersionGuid}.dat**
+**Registry.dat from Package Store** > **%ProgramData%\Microsoft\AppV\Client\Vreg\\{VersionGuid}.dat**
  
 
 When the first application from the package is launched on the client, the client stages or copies the contents out of the hive file, re-creating the package registry data in an alternate location `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\Packages\PackageGuid\Versions\VersionGuid\REGISTRY`. The staged registry data has two distinct types of machine data and user data. Machine data is shared across all users on the machine. User data is staged for each user to a userspecific location `HKCU\Software\Microsoft\AppV\Client\Packages\PackageGuid\Registry\User`. The machine data is ultimately removed at package removal time, and the user data is removed on a user unpublish operation.
@@ -387,7 +387,7 @@ Packages can be explicitly loaded using the Windows PowerShell `Mount-AppVClient
 
 ### Streaming packages
 
-The App-V Client can be configured to change the default behavior of streaming. All streaming policies are stored under the following registry key: `HKEY_LOCAL_MAcHINE\Software\Microsoft\AppV\Client\Streaming`. Policies are set using the Windows PowerShell cmdlet `Set-AppvClientConfiguration`. The following policies apply to Streaming:
+The App-V Client can be configured to change the default behavior of streaming. All streaming policies are stored under the following registry key: `HKEY_LOCAL_MACHINE\Software\Microsoft\AppV\Client\Streaming`. Policies are set using the Windows PowerShell cmdlet `Set-AppvClientConfiguration`. The following policies apply to Streaming:
 
 <table>
 <colgroup>
@@ -485,8 +485,8 @@ App-V registry roaming falls into two scenarios, as shown in the following table
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="25%" />
+<col width="75%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -499,8 +499,8 @@ App-V registry roaming falls into two scenarios, as shown in the following table
 <td align="left"><p>Applications that are run as standard users</p></td>
 <td align="left"><p>When a standard user launches an App-V application, both HKLM and HKCU for App-V applications are stored in the HKCU hive on the machine. This presents as two distinct paths:</p>
 <ul>
-<li><p>HKLM: HKCU\SOFTWARE\Classes\AppV\Client\Packages\{PkgGUID}\REGISTRY\MACHINE\SOFTWARE</p></li>
-<li><p>HKCU: HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\{PkgGUID}\REGISTRY\USER\{UserSID}\SOFTWARE</p></li>
+<li><p>HKLM: HKCU\SOFTWARE\Classes\AppV\Client\Packages\\{PkgGUID}\REGISTRY\MACHINE\SOFTWARE</p></li>
+<li><p>HKCU: HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\REGISTRY\USER\{UserSID}\SOFTWARE</p></li>
 </ul>
 <p>The locations are enabled for roaming based on the operating system settings.</p></td>
 </tr>
@@ -513,8 +513,8 @@ App-V registry roaming falls into two scenarios, as shown in the following table
 </ul>
 <p>In this scenario, these settings are not roamed with normal operating system roaming configurations, and the resulting registry keys and values are stored in the following location:</p>
 <ul>
-<li><p>HKLM\SOFTWARE\Microsoft\AppV\Client\Packages\{PkgGUID}\{UserSID}\REGISTRY\MACHINE\SOFTWARE</p></li>
-<li><p>HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\{PkgGUID}\Registry\User\{UserSID}\SOFTWARE</p></li>
+<li><p>HKLM\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\\{UserSID}\REGISTRY\MACHINE\SOFTWARE</p></li>
+<li><p>HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\\Registry\User\\{UserSID}\SOFTWARE</p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -532,21 +532,21 @@ The following table shows local and roaming locations, when folder redirection h
 
 | VFS directory in package | Mapped location of backing store |
 | - | - |
-| ProgramFilesX86 | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\ProgramFilesX86 |
-| SystemX86 | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\SystemX86 |
-| Windows | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\Windows |
-| appv\_ROOT | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\appv_ROOT|
-| AppData | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\AppData |
+| ProgramFilesX86 | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\ProgramFilesX86 |
+| SystemX86 | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\SystemX86 |
+| Windows | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\Windows |
+| appv\_ROOT | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\appv_ROOT|
+| AppData | C:\Users\username\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\AppData |
 
 The following table shows local and roaming locations, when folder redirection has been implemented for %AppData%, and the location has been redirected (typically to a network location).
 
 | VFS directory in package | Mapped location of backing store |
 | - | - |
-| ProgramFilesX86 | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\ProgramFilesX86 |
-| SystemX86 | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\SystemX86 |
-| Windows | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\Windows |
-| appv_ROOT | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\<GUID>\appv\_ROOT |
-| AppData | \\Fileserver\users\Local\roaming\Microsoft\AppV\Client\VFS\<GUID>\AppData |
+| ProgramFilesX86 | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\ProgramFilesX86 |
+| SystemX86 | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\SystemX86 |
+| Windows | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\Windows |
+| appv_ROOT | C:\Users\Local\AppData\Local\Microsoft\AppV\Client\VFS\\<GUID>\appv\_ROOT |
+| AppData | \\Fileserver\users\Local\roaming\Microsoft\AppV\Client\VFS\\<GUID>\AppData |
  
 
 The current App-V Client VFS driver cannot write to network locations, so the App-V Client detects the presence of folder redirection and copies the data on the local drive during publishing and when the virtual environment starts. After the user closes the App-V application and the App-V Client closes the virtual environment, the local storage of the VFS AppData is copied back to the network, enabling roaming to additional machines, where the process will be repeated. The detailed steps of the processes are:
@@ -602,11 +602,7 @@ In an App-V Full Infrastructure, after applications are sequenced they are manag
 
 This document focuses on App-V Full Infrastructure solutions. For specific information on App-V Integration with Configuration Manager 2012, see [Integrating Virtual Application Management with App-V 5 and Configuration Manager 2012 SP1](https://www.microsoft.com/en-us/download/details.aspx?id=38177).
 
-The App-V application lifecycle tasks are triggered at user login (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured during setup of the client or post-setup with Windows PowerShell commands. See [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md) or use Windows PowerShell:
-
-``` syntax
-get-command *appv*
-```
+The App-V application lifecycle tasks are triggered at user login (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured after client setup with Windows PowerShell commands. See [App-V Client Configuration Settings: Windows PowerShell](appv-client-configuration-settings.md#app-v-client-configuration-settings-windows-powershell).
 
 ### Publishing refresh
 
