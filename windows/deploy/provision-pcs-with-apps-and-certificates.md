@@ -78,13 +78,15 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
 5. For **DeviceContextAppLicense**, enter the **LicenseProductID**. 
 
-    - In Windows Store for Business, generate the unencoded license for the app on the app's download page.
+    - In Windows Store for Business, generate the unencoded license for the app on the app's download page, and change the extension of the license file from **.xml** to **.ms-windows-store-license**.
 
         ![generate license for offline app](images/uwp-license.png)
         
-    - Open the license file and search for **LicenseID=** to get the GUID and enter the GUID in the **LicenseProductID** field.
+    - Open the license file and search for **LicenseID=** to get the GUID, enter the GUID in the **LicenseProductID** field and click **Add**.
     
-    - Change the extension of the license file from **.xml** to **.ms-windows-store-license**.
+6. In the **Available customizations** pane, click the **LicenseProductId** that you just added. 
+
+7. For **LicenseInstall**, click **Browse**, navigate to the license file that you renamed *<file name>*.**ms-windows-store-license**, and select the license file.
 
 [Learn more about distributing offline apps from the Windows Store for Business.](../manage/distribute-offline-apps.md)
 
