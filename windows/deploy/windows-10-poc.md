@@ -30,6 +30,7 @@ The following topics and procedures are provided in this guide:
     - [Verify support and install Hyper-V](#verify-support-and-install-hyper-v): Verify that installation of Hyper-V is supported, and install the Hyper-V server role.
     - [Download VHD and ISO files](#download-vhd-and-iso-files): Download evaluation versions of Windows Server 2012 R2 and Windows 10 and prepare these files to be used on the Hyper-V host.
     - [Convert PC to VHD](#convert-pc-to-vhd): Convert a physical computer on your network to a VHDX file and prepare it to be used on the Hyper-V host.
+    - [Resize VHD](#resize-vhd): Increase the storage capacity for one of the Windows Server VMs.
     - [Configure Hyper-V](#configure-hyper-v): Create virtual switches, determine available RAM for virtual machines, and add virtual machines.
     - [Configure VHDs](#configure-vhds): Start virtual machines and configure all services and settings.
 
@@ -129,6 +130,8 @@ The lab architecture is summarized in the following diagram:
 
 [Verify support and install Hyper-V](#verify-support-and-install-hyper-v)<BR>
 [Download VHD and ISO files](#download-vhd-and-iso-files)<BR>
+[Convert PC to VHD](#convert-pc-to-vhd)<BR>
+[Resize VHD](#resize-vhd)<BR>
 [Configure Hyper-V](#configure-hyper-v)<BR>
 [Convert PC to VHD](#convert-pc-to-vhd)<BR>
 [Configure VHDs](#configure-vhds)<BR>
@@ -243,6 +246,40 @@ The lab architecture is summarized in the following diagram:
     2012R2-poc-2.vhd
     w10-enterprise.iso
     w7.VHDX
+    ```
+### Resize VHD
+
+The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 60GB to support imaging tools.  
+
+1. To add available space for the partition, type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
+
+    ```
+    Resize-VHD –Path c:\VHD\2012R2-poc-2.vhd –SizeBytes 60GB
+    Mount-VHD –Path c:\VHD\2012R2-poc-2.vhd -passthru | Get-Disk | Get-Partition | Get-Volume
+    ```
+
+2. Note the drive letter of the mounted VHD in the output of the second command. In the example below, the drive letter of the mounted VHD is E:
+
+    ```
+    DriveLetter FileSystemLabel FileSystem DriveType HealthStatus OperationalStatus SizeRemaining  Size
+    ----------- --------------- ---------- --------- ------------ ----------------- -------------  ----
+    E                           NTFS       Fixed     Healthy      OK                     32.66 GB 40 GB
+    ```
+
+    If the Hyper-V host you are using has a single hard drive assigned the letter C, and a DVD drive assigned the letter D, then drive E is probably also assigned to the mounted VHD as shown above. The size of the partition for drive E is still 40 GB, but since the VHD was resized to 60 GB in the first step, there is an additional 20 GB of unallocated space available. This additional space will be allocated in the following step.
+
+3. Replace **E** with the drive letter displayed in the previous command output, and type the following at an elevated Windows PowerShell prompt:
+
+    ```
+    $MaxSize = (Get-PartitionSupportedSize -DriveLetter E).SizeMax
+    Resize-Partition -DriveLetter E -Size $MaxSize
+    ```
+
+4. Verify that the mounted VHD drive is resized to 60 GB, and then dismount the drive:
+
+    ```
+    (Get-Disk -FriendlyName "Msft Virtual Disk").size/1GB
+    Dismount-VHD –Path c:\VHD\2012R2-poc-2.vhd
     ```
 
 ### Configure Hyper-V

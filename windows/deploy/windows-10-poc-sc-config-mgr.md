@@ -31,42 +31,64 @@ Description here.
 
 ## Install prerequisites
 
-1. On SRV1, type the following command at an elevated Windows PowerShell prompt on SRV1 to enable .NET Framework 3.5: 
+1. Before installing System Center Configuration Manager, we must install prerequisite services and features. Type the following commands at an elevated Windows PowerShell prompt on SRV1: 
+
     ```
-    Add-WindowsFeature NET-Framework-Core
+    Install-WindowsFeature Web-Windows-Auth
+    Install-WindowsFeature Web-ISAPI-Ext
+    Install-WindowsFeature Web-Metabase
+    Install-WindowsFeature Web-WMI
+    Install-WindowsFeature BITS
+    Install-WindowsFeature RDC
+    Install-WindowsFeature NET-Framework-Features
+    Install-WindowsFeature Web-Asp-Net
+    Install-WindowsFeature Web-Asp-Net45
+    Install-WindowsFeature NET-HTTP-Activation
+    Install-WindowsFeature NET-Non-HTTP-Activ
     ```
-2. 
 
-## Install System Center Configuration Manager
+2. Download [SQL Server 2012 SP2](https://www.microsoft.com/en-us/evalcenter/evaluate-sql-server-2014-sp2) from the Microsoft Evaluation Center as an .ISO file on the Hyper-V host computer. Save the file to the **C:\VHD** directory.
+3. When you have downloaded the file **SQLServer2014SP2-FullSlipstream-x64-ENU.iso** and placed it in the C:\VHD directory, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host. This command mounts the .ISO file to the DVD drive on SRV1:
 
+    ```
+    Set-VMDvdDrive -VMName SRV1 -Path c:\VHD\SQLServer2014SP2-FullSlipstream-x64-ENU.iso
+    ```
+4. Type the following command at an elevated Windows PowerShell prompt on SRV1 to install SQL Server 2012 SP2:
 
-2. On SRV1, temporarily disable IE Enhanced Security Configuration for Administrators by typing the following commands at an elevated Windows PowerShell prompt:
+    ```
+    D:\setup.exe /q /ACTION=Install /ERRORREPORTING="False" /FEATURES=SQLENGINE,RS,IS,SSMS,TOOLS,ADV_SSMS,CONN /INSTANCENAME=MSSQLSERVER /INSTANCEDIR="C:\Program Files\Microsoft SQL Server" /SQLSVCACCOUNT="NT AUTHORITY\System" /SQLSYSADMINACCOUNTS="BUILTIN\ADMINISTRATORS" /SQLSVCSTARTUPTYPE=Automatic /AGTSVCACCOUNT="NT AUTHORITY\SYSTEM" /AGTSVCSTARTUPTYPE=Automatic /RSSVCACCOUNT="NT AUTHORITY\System" /RSSVCSTARTUPTYPE=Automatic /ISSVCACCOUNT="NT AUTHORITY\System" /ISSVCSTARTUPTYPE=Disabled /ASCOLLATION="Latin1_General_CI_AS" /SQLCOLLATION="SQL_Latin1_General_CP1_CI_AS" /TCPENABLED="1" /NPENABLED="1" /IAcceptSQLServerLicenseTerms
+    ```
+    Installation might take several minutes. When installation is complete, the following output will be displayed:
+
+    ```
+    Microsoft (R) SQL Server 2014 12.00.5000.00
+    Copyright (c) Microsoft Corporation.  All rights reserved.
+
+    Microsoft (R) .NET Framework CasPol 2.0.50727.7905
+    Copyright (c) Microsoft Corporation.  All rights reserved.
+
+    Success
+    Microsoft (R) .NET Framework CasPol 2.0.50727.7905
+    Copyright (c) Microsoft Corporation.  All rights reserved.
+
+    Success
+    ```
+5. On SRV1, temporarily disable IE Enhanced Security Configuration for Administrators by typing the following commands at an elevated Windows PowerShell prompt:
     ```
     $AdminKey = "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}"
     Set-ItemProperty -Path $AdminKey -Name “IsInstalled” -Value 0
     Stop-Process -Name Explorer
     ```
-3. Download [System Center Configuration Manager and Endpoint Protection](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) on SRV1, double-click the file, enter **C:\configmgr** for **Unzip to folder**, and click **Unzip**. The directory will be automatically created. Click **OK** and then close the WinZip Self-Extractor dialog box when finished.
+6. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1607. Installation might require several minutes to acquire all components. 
 
-```
-New-Item -Path c:\setupdl -ItemType Directory
-New-SmbShare -Name SetupDL$ -Path C:\setupdl -ChangeAccess EVERYONE
-cmd /c c:\configmgr\SMSSETUP\BIN\X64\setupdl.exe "\\greglin-xps\SetupDL$"
+## Install System Center Configuration Manager
 
-Install-WindowsFeature Web-Windows-Auth
-Install-WindowsFeature Web-ISAPI-Ext
-Install-WindowsFeature Web-Metabase
-Install-WindowsFeature Web-WMI
-Install-WindowsFeature BITS
-Install-WindowsFeature RDC
-Install-WindowsFeature NET-Framework-Features
-Install-WindowsFeature Web-Asp-Net
-Install-WindowsFeature Web-Asp-Net45
-Install-WindowsFeature NET-HTTP-Activation
-Install-WindowsFeature NET-Non-HTTP-Activ
+1. Download [System Center Configuration Manager and Endpoint Protection](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) on SRV1, double-click the file, enter **C:\configmgr** for **Unzip to folder**, and click **Unzip**. The C:\configmgr directory will be automatically created. Click **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
+2. Type the following command at an elevated Windows PowerShell prompt on SRV1:
 
-
-```
+    ```
+    cmd /c c:\configmgr\SMSSETUP\BIN\X64\setupdl.exe 
+    ```
 
 OK this is what I need to go with:
 https://gallery.technet.microsoft.com/ConfigMgr-2012-R2-e52919cd
@@ -75,20 +97,8 @@ Configure it as a primary site, add state migration point, distribution point, e
 
 After running it I need to install the ADK, and WDS
 
-To configure SQL I think I have to download SQLEXPR_x64_ENU which is extracted and then run setup to load the install wizard
-This defaults to NT Service\MSSQL$SQLEXPRESS
-Windows authentication mode
-
-configure SQL - using SQL server installation center (?)
-
-Maybe use a configuration file
-Maybe use: 
-
-Setup.exe /qs /ACTION=Install /FEATURES=SQLEngine,Replication /INSTANCENAME=MSSQLSERVER /SQLSVCACCOUNT="contoso\administrator" /SQLSVCPASSWORD="pass@word1" /SQLSYSADMINACCOUNTS="contoso\administrator" /AGTSVCACCOUNT="NT AUTHORITY\Network Service" /UpdateEnabled=True  /IACCEPTSQLSERVERLICENSETERMS
-
-.\Setup.exe /QUIET /ACTION=REBUILDDATABASE /INSTANCENAME=MSSQLSERVER /SQLCOLLATION=SQL_Latin1_General_CP1_CI_AS /SQLSYSADMINACCOUNTS="contoso\administrator" <--- this worked but I probably just need to add /sqlcollation to the first command (install)
-
-& sc.exe config "$servicename" obj= "[$domain\$username]" password= "[$password]  <--- not this
+New-Item -Path c:\setupdl -ItemType Directory
+New-SmbShare -Name SetupDL$ -Path C:\setupdl -ChangeAccess EVERYONE
 
 then run SCCM setup.exe
 
