@@ -5,6 +5,7 @@ ms.assetid: 2dfb2f39-1597-4999-b4ec-b063e8a8c90c
 keywords: deployment, task sequence, custom, customize
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
 ---
