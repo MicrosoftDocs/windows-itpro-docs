@@ -312,7 +312,7 @@ Instructions to "type" commands provided in this guide can be typed, but in most
     Enable-VMIntegrationService –Name "Guest Service Interface" -VMName DC1
     New-VM –Name "SRV1" –VHDPath c:\vhd\2012R2-poc-2.vhd -SwitchName poc-internal
     Add-VMNetworkAdapter -VMName "SRV1" -SwitchName "poc-external"
-    Set-VMMemory -VMName "SRV1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
+    Set-VMMemory -VMName "SRV1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 80
     Enable-VMIntegrationService –Name "Guest Service Interface" -VMName SRV1
     New-VM –Name "PC1" –VHDPath c:\vhd\w7.vhdx -SwitchName poc-internal
     Set-VMMemory -VMName "PC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20

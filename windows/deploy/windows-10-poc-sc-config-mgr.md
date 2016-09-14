@@ -34,25 +34,18 @@ Description here.
 1. Before installing System Center Configuration Manager, we must install prerequisite services and features. Type the following commands at an elevated Windows PowerShell prompt on SRV1: 
 
     ```
-    Install-WindowsFeature Web-Windows-Auth
-    Install-WindowsFeature Web-ISAPI-Ext
-    Install-WindowsFeature Web-Metabase
-    Install-WindowsFeature Web-WMI
-    Install-WindowsFeature BITS
-    Install-WindowsFeature RDC
-    Install-WindowsFeature NET-Framework-Features
-    Install-WindowsFeature Web-Asp-Net
-    Install-WindowsFeature Web-Asp-Net45
-    Install-WindowsFeature NET-HTTP-Activation
-    Install-WindowsFeature NET-Non-HTTP-Activ
+    Install-WindowsFeature Web-Windows-Auth,Web-ISAPI-Ext,Web-Metabase,Web-WMI,BITS,RDC,NET-Framework-Features,Web-Asp-Net,Web-Asp-Net45,NET-HTTP-Activation,NET-Non-HTTP-Activ
     ```
 
 2. Download [SQL Server 2012 SP2](https://www.microsoft.com/en-us/evalcenter/evaluate-sql-server-2014-sp2) from the Microsoft Evaluation Center as an .ISO file on the Hyper-V host computer. Save the file to the **C:\VHD** directory.
-3. When you have downloaded the file **SQLServer2014SP2-FullSlipstream-x64-ENU.iso** and placed it in the C:\VHD directory, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host. This command mounts the .ISO file to the DVD drive on SRV1:
+3. When you have downloaded the file **SQLServer2014SP2-FullSlipstream-x64-ENU.iso** and placed it in the C:\VHD directory, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host: 
 
     ```
     Set-VMDvdDrive -VMName SRV1 -Path c:\VHD\SQLServer2014SP2-FullSlipstream-x64-ENU.iso
     ```
+
+    This command mounts the .ISO file to drive D on SRV1.
+
 4. Type the following command at an elevated Windows PowerShell prompt on SRV1 to install SQL Server 2012 SP2:
 
     ```
@@ -73,57 +66,37 @@ Description here.
 
     Success
     ```
+5. Type the following command at an elevated Windows PowerShell prompt on SRV1:
+
+    ```
+    netsh firewall set portopening protocol = TCP port = 1433 name = SQLPort mode = ENABLE scope = SUBNET profile = CURRENT
+    ```
 5. On SRV1, temporarily disable IE Enhanced Security Configuration for Administrators by typing the following commands at an elevated Windows PowerShell prompt:
+
     ```
     $AdminKey = "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}"
     Set-ItemProperty -Path $AdminKey -Name “IsInstalled” -Value 0
     Stop-Process -Name Explorer
     ```
-6. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1607. Installation might require several minutes to acquire all components. 
+6. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1607. Installation might require several minutes to acquire all components.   
 
 ## Install System Center Configuration Manager
 
 1. Download [System Center Configuration Manager and Endpoint Protection](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) on SRV1, double-click the file, enter **C:\configmgr** for **Unzip to folder**, and click **Unzip**. The C:\configmgr directory will be automatically created. Click **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
-2. Type the following command at an elevated Windows PowerShell prompt on SRV1:
 
-    ```
-    cmd /c c:\configmgr\SMSSETUP\BIN\X64\setupdl.exe 
-    ```
-
-OK this is what I need to go with:
-https://gallery.technet.microsoft.com/ConfigMgr-2012-R2-e52919cd
-
-Configure it as a primary site, add state migration point, distribution point, extend AD
-
-After running it I need to install the ADK, and WDS
-
-New-Item -Path c:\setupdl -ItemType Directory
-New-SmbShare -Name SetupDL$ -Path C:\setupdl -ChangeAccess EVERYONE
-
-then run SCCM setup.exe
-
-Cripes I can't use SQL server express edition.... currently I only have this and the TCP port as failures.
-SQL server tcp is enabled and set to static port...
-
-So.. 
-I need to download a full version of SQL somewhere
-Install it with command line, set the port and firewall
-There seems to be some memory requirement for SQL "Configuration Manager requries SQL server to reserve a minimum of 8 GB of memory for central or primary site... I don't know if this will prevent me from getting it working.
-
-
-4. To start installation, type the following command at an elevated Windows PowerShell prompt:
+2. To start installation, type the following command at an elevated command prompt:
 
     ```
     C:\configmgr\SMSSETUP\BIN\X64\Setup.exe
     ```
-5. Provide the following in the System Center Configuration Manager Setup Wizard:
+3. Provide the following in the System Center Configuration Manager Setup Wizard:
     - **Before You Begin**: Read the text and click *Next*.
     - **Getting Started**: Choose **Install a Configuration Manager primary site** and select the **Use typical installation options for a stand-alone primary site** checkbox.
         - Click **Yes** in response to the popup window.
     - **Product Key**: Choose **Install the evaluation edition of this Product**.
-    - **Microsoft Software License Terms**: Read the terms and then select the I accept these license terms checkbox.
+    - **Microsoft Software License Terms**: Read the terms and then select the **I accept these license terms** checkbox.
     - **Prerequisite Licenses**: Review license terms and select all three checkboxes on the page.
-    - **Prerequisite Downloads**: Choose **Download required files** and enter **c:\configmgr** next to **Path**. 
+    - **Prerequisite Downloads**: Choose **Download required files** and enter **c:\windows\temp** next to **Path**. 
     - **Site and Installation Settings**: Site code: **PS1**, Site name: **Contoso**.
         - use default settings for all other options
     - **Usage Data**: Read the text and click **Next**.
