@@ -5,6 +5,7 @@ ms.assetid: 858e384f-e9db-4a93-9a8b-101a503e4868
 keywords: deploy, feature, tools, upgrade, migrate, provisioning
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus

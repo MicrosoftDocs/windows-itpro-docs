@@ -146,7 +146,7 @@ To create a self-signed certificate, you can either use the New-SelfSignedCertif
 Windows PowerShell example:
 
 ```syntax
-New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -Subject "CN=BitLocker Network Unlock certificate" -KeyUsage KeyEncipherment -KeyUsageProperty Decrypt -KeyLength 2048 -KeySpec KeyExchange -HashAlgorithm sha512 -TextExtension @("1.3.6.1.4.1.311.21.10={text}OID=1.3.6.1.4.1.311.67.1.1","2.5.29.37={text}1.3.6.1.4.1.311.67.1.1")
+New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -Subject "CN=BitLocker Network Unlock certificate" -Provider "Microsoft Software Key Storage Provider" -KeyUsage KeyEncipherment -KeyUsageProperty Decrypt -KeyLength 2048 -HashAlgorithm sha512 -TextExtension @("1.3.6.1.4.1.311.21.10={text}OID=1.3.6.1.4.1.311.67.1.1","2.5.29.37={text}1.3.6.1.4.1.311.67.1.1")
 ```
 
 Certreq example:
@@ -164,7 +164,6 @@ Certreq example:
     KeyUsage="CERT_KEY_ENCIPHERMENT_KEY_USAGE"
     KeyUsageProperty="NCRYPT_ALLOW_DECRYPT_FLAG"
     KeyLength=2048
-    Keyspec="AT_KEYEXCHANGE"
     SMIME=FALSE
     HashAlgorithm=sha512
     [Extensions]
