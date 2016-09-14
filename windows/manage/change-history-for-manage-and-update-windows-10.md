@@ -16,7 +16,9 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 | New or changed topic | Description |
 | --- | --- |
+| [Lockdown features from Windows Embedded 8.1 Industry](lockdown-features-windows-10.md) | Added Group Policy setting to replace Gesture Filter |
 | [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added content for Windows Server 2016 |
+| [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Updated the script for setting a custom shell using Shell Launcher. |
 
 ## August 2016
 
@@ -100,7 +102,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | ---|---|
 | [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md) | New |
 | [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) | New |
-|[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md) | New |
+| [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md) | New |
 
 ## November 2015
 
