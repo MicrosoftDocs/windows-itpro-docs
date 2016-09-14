@@ -164,7 +164,6 @@ Certreq example:
     KeyUsage="CERT_KEY_ENCIPHERMENT_KEY_USAGE"
     KeyUsageProperty="NCRYPT_ALLOW_DECRYPT_FLAG"
     KeyLength=2048
-    Keyspec="AT_KEYEXCHANGE"
     SMIME=FALSE
     HashAlgorithm=sha512
     [Extensions]
