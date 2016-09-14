@@ -37,7 +37,7 @@
 #### [Testing scenarios for Windows Information Protection (WIP)](testing-scenarios-for-wip.md)
 ## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-instrusion-detection.md)
 ## [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md)
-## [Windows 10 VPN technical guide](vpn-guide.md)
+## [VPN technical guide](vpn-guide.md)
 ### [VPN connection types](vpn-connection-type.md)
 ### [VPN routing decisions](vpn-routing.md)
 ### [VPN authentication options](vpn-authentication.md)
