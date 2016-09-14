@@ -134,6 +134,7 @@ Click **Review Applications With Known Issues** to see the status of application
 
 | Ready for Windows Status | What this means | Guidance |
 |--------------------------|-----------------|----------|
+
 |Supported version available    | The software provider has declared support for one or more versions of this application on Windows 10. | The ISV has declared support for a version of this application on Windows 10. |
 |  Highly adopted | This version of this application has been highly adopted within the Windows 10 Enterprise ecosystem. | This application has been installed on at least 100,000 commercial Windows 10 devices. | 
 | Adopted   | This version of this application has been adopted within the Windows 10 Enterprise ecosystem. | This application has been installed on at least 10,000 commercial Windows 10 devices. |
