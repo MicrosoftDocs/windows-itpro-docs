@@ -190,6 +190,9 @@ On Windows Server 2016 Nano Server:
 
 - Create the registry path **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot** and then add a REG\_DWORD registry setting, called **DisableRootAutoUpdate**, with a value of 1.
 
+>[!NOTE]  
+>CRL and OCSP network traffic is currently whitelisted and will still show up in network traces.  CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of them, but there are many others, such as DigiCert, Thawte, Google, Symantec, and VeriSign.
+
 ### <a href="" id="bkmk-cortana"></a>2. Cortana and Search
 
 Use either Group Policy or MDM policies to manage settings for Cortana. For more info, see [Cortana, Search, and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730683).
@@ -1045,6 +1048,8 @@ In the **Background Apps** area, you can choose which apps can run in the backgr
 To turn off **Let apps run in the background**:
 
 -   Turn off the feature in the UI for each app.
+
+    -   Set the **Select a setting** box to **Force Deny**.
 
 ### <a href="" id="bkmk-spp"></a>17. Software Protection Platform
 
