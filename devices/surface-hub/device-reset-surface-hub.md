@@ -44,7 +44,7 @@ Initiating a reset will return the device to the last cumulative Windows update,
     ![Image showing Reset device option in Settings app for Surface Hub.](images/sh-settings-reset-device.png) 
 
 **Important Note**</br>
-Performing a device reset may take up to 6 hours. Do not interrupt the reset process. Interrupting the process will render the device inoperable, requiring warranty service to return to normal functionality.
+Performing a device reset may take up to 2 hours. Do not interrupt the reset process. Interrupting the process will render the device inoperable, requiring warranty service to return to normal functionality.
 
 After the reset, Surface Hub restarts the [first run program](first-run-program-surface-hub.md) again. 
 
