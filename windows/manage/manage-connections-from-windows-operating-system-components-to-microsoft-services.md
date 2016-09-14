@@ -168,11 +168,18 @@ For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 
 
 - Enable the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Internet Communication Management** > **Internet Communication Settings** > **Turn off Automatic Root Certificates Update**
 
+    -and-
+
+1. Navigate to **Computer Configuration** > **Windows Settings** > **Security Settings** > **Public Key Policies**.
+2. Double-click **Certificate Path Validation Settings**.
+3. On the **Network Retrieval** tab, select the **Define these policy settings** check box.
+4. Clear the **Automatically update certificates in the Microsoft Root Certificate Program (recommended)** check box, and then click **OK**.
+
     -or-
 
 - Create the registry path **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot** and then add a REG\_DWORD registry setting, called **DisableRootAutoUpdate**, with a value of 1.
 
-    -or-
+    -and-
 
 1. Navigate to **Computer Configuration** > **Windows Settings** > **Security Settings** > **Public Key Policies**.
 2. Double-click **Certificate Path Validation Settings**.
@@ -609,7 +616,7 @@ To turn off **Turn on SmartScreen Filter to check web content (URLs) that Window
 
     -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge** &gt; **Turn off the SmartScreen Filter**.
+-   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge** &gt; **Configure SmartScreen Filter**.
 
     Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **File Explorer** &gt; **Configure Windows SmartScreen**.
 
@@ -943,6 +950,10 @@ To turn off **Let apps automatically share and sync info with wireless devices t
 
 -   Turn off the feature in the UI.
 
+     -or-
+
+-   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps sync with devices**
+
 To turn off **Let your apps use your trusted devices (hardware you've already connected, or comes with your PC, tablet, or phone)**:
 
 -   Turn off the feature in the UI.
@@ -1041,7 +1052,7 @@ Enterprise customers can manage their Windows activation status with volume lice
 
 For Windows 10:
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Activation**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client AVS Activation**
 
     -or-
 
