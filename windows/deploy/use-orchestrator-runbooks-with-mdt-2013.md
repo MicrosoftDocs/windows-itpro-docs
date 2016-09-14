@@ -5,6 +5,7 @@ ms.assetid: 68302780-1f6f-4a9c-9407-b14371fdce3f
 keywords: web services, database
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
