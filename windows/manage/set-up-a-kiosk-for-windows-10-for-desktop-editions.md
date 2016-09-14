@@ -283,17 +283,8 @@ Alternatively, you can turn on Shell Launcher using the Deployment Image Servici
 
 1.  Open a command prompt as an administrator.
 2.  Enter the following command.
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>Dism /online /Enable-Feature /FeatureName:Client-EmbeddedShellLauncher</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+
+    `Dism /online /Enable-Feature /all /FeatureName:Client-EmbeddedShellLauncher`
 
 **To set your custom shell**
 
