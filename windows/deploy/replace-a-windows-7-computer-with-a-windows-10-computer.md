@@ -6,6 +6,7 @@ keywords: deploy, deployment, replace
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+localizationpriority: high
 ms.pagetype: mdt
 author: mtniehaus
 ---

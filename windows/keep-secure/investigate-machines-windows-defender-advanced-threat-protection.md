@@ -40,7 +40,7 @@ The Machines view contains the following columns:
 - **Active malware detections** - the number of active malware detections reported by the machine
 
 > [!NOTE]
-> The **Active alerts** and **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
+> The **Active alerts** and **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
 
 Click any column header to sort the view in ascending or descending order.
 

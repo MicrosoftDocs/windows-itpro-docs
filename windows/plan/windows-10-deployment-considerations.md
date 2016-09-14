@@ -4,6 +4,7 @@ description: There are new deployment options in Windows 10 that help you simpl
 ms.assetid: A8DD6B37-1E11-4CD6-B588-92C2404219FE
 keywords: deploy, upgrade, update, in-place
 ms.prod: w10
+localizationpriority: high
 ms.mktglfcycl: plan
 ms.sitesec: library
 author: mtniehaus

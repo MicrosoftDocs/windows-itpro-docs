@@ -5,6 +5,7 @@ ms.assetid: 0b069bec-5be8-47c6-bf64-7a630f41ac98
 keywords: deploy, upgrade, task sequence, install
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.pagetype: mdt
 ms.sitesec: library
 author: mtniehaus
