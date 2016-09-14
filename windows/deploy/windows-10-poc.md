@@ -516,7 +516,7 @@ Instructions to "type" commands provided in this guide can be typed, but in most
     ```
 31. Before configuring the routing service that was just installed, verify that network interfaces were added to SRV1 in the right order, resulting in an interface alias of "Ethernet" for the private interface, and an interface alias of "Ethernet 2" for the public interface. Also verify that the external interface has a valid external DHCP IP address lease.
 
-    To view a list of interfaces and their associated interface aliases on the VM, use the following Windows PowerShell command. Example output of the command is also shown below:
+    To view a list of interfaces, associated interface aliases, and IP addresses on SRV1, type the following Windows PowerShell command. Example output of the command is also shown below:
 
     ```
     Get-NetAdapter | ? status -eq ‘up’ | Get-NetIPAddress -AddressFamily IPv4 | ft IPAddress, InterfaceAlias
