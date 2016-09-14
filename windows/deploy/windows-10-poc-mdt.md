@@ -30,6 +30,7 @@ Description here.
 ## Install the Microsoft Deployment Toolkit (MDT)
 
 1. On SRV1, temporarily disable IE Enhanced Security Configuration for Administrators by typing the following commands at an elevated Windows PowerShell prompt:
+
     ```
     $AdminKey = "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}"
     Set-ItemProperty -Path $AdminKey -Name “IsInstalled” -Value 0
@@ -40,6 +41,7 @@ Description here.
 3. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1607. Installation might require several minutes to acquire all components.
 
 3. If desired, re-enable IE Enhanced Security Configuration:
+
     ```
     Set-ItemProperty -Path $AdminKey -Name “IsInstalled” -Value 1
     Stop-Process -Name Explorer
@@ -48,6 +50,7 @@ Description here.
 ## Create a deployment share
 
 1. In [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md) the Windows 10 Enterprise .iso file was saved to the c:\VHD directory as **c:\VHD\w10-enterprise.iso**. The first step in creating a deployment share is to mount this file on SRV1.  To mount the Windows 10 Enterprise DVD on SRV1, open an elevated Windows PowerShell prompt on the Hyper-V host computer and type the following command:
+
     ```
     Set-VMDvdDrive -VMName SRV1 -Path c:\VHD\w10-enterprise.iso
     ```
@@ -147,6 +150,7 @@ Description here.
     ```
 
 20. Click **Apply** and then click **Edit Bootstrap.ini**. Replace the contents of the Bootstrap.ini file with the following text, and save the file:
+
     ```
     [Settings]
     Priority=Default
@@ -291,6 +295,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     >In this example a **MachineObjectOU** entry is not provided. Normally this entry describes the specific OU where new client computer objects are created in Active Directory. However, for the purposes of this test lab clients are added to the default computers OU, which requires that this parameter be unspecified.
 
 4. Click **Edit Bootstap.ini** and replace text in the file with the following text:
+
     ```
     [Settings] 
     Priority=Default 
@@ -378,6 +383,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 This topic will demonstrate how to export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings. The scenario will use PC1, a computer that was cloned from a physical device to a VM, as described in [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md). 
 
 1. Create a checkpoint for the PC1 VM so that it can easily be reverted to its current state for troubleshooting purposes and to perform additional scenarios.  Checkpoints are also known as snapshots. To create a checkpoint for the PC1 VM, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+
     ```
     Checkpoint-VM -Name PC1 -SnapshotName BeginState
     ```
@@ -410,10 +416,12 @@ This topic will demonstrate how to export user data from an existing client comp
 7. Sign in with the CONTOSO\Administrator account and verify that all CONTOSO domain user accounts and data have been migrated to the new operating system.
 
 8. Create another checkpoint for the PC1 VM so that you can review results of the computer refresh later. To create a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+
     ```
     Checkpoint-VM -Name PC1 -SnapshotName RefreshState
     ```
 9. Restore the PC1 VM to it's previous state in preparation for the replace procedure. To restore a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+
     ```
     Restore-VMSnapshot -VMName PC1 -Name BeginState -Confirm:$false
     Start-VM PC1
@@ -432,6 +440,7 @@ At a high level, the computer replace process consists of:<BR>
 1. On SRV1, in the deployment workbench console, right-click the MDT Production deployment share, click **Properties**, click the **Rules** tab, and change the line **SkipUserData=YES** to **SkipUserData=NO**.
 2. Click **OK**, right-click **MDT Production**, click **Update Deployment Share** and accept the default options in the wizard to update the share.
 3. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
+
     ```
     New-Item -Path C:\MigData -ItemType directory
     New-SmbShare -Name MigData$ -Path C:\MigData -ChangeAccess EVERYONE
@@ -450,16 +459,19 @@ At a high level, the computer replace process consists of:<BR>
 #### Run the backup-only task sequence
 
 1. If you are not already signed on to PC1 as **contoso\administrator**, sign in using this account. To verify the currently signed in account, type the following command at an elevated command prompt:
+
     ```
     whoami
     ```
 2. To ensure a clean environment before running the backup task sequence, type the following at an elevated Windows PowerShell prompt:
+
     ```
     Remove-Item c:\minint -recurse
     Remove-Item c:\_SMSTaskSequence -recurse
     Restart-Computer
     ```
 2. Sign in to PC1 using the contoso\administrator account, and then type the following at an elevated command prompt:
+
     ```
     cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
     ```
@@ -470,6 +482,7 @@ At a high level, the computer replace process consists of:<BR>
 4. While the task sequence is running on PC1, open the deployment workbench console on SRV1 and click the **Monitoring* node. Press F5 to refresh the console, and view the status of current tasks.  
 5. Verify that **The user state capture was completed successfully** is displayed, and click **Finish** when the capture is complete.
 6. On SRV1, verify that the file **USMT.MIG** was created in the **C:\MigData\PC1\USMT** directory. See the following example:
+
     ```
     PS C:\> dir C:\MigData\PC1\USMT
 
@@ -482,15 +495,18 @@ At a high level, the computer replace process consists of:<BR>
 #### Deploy PC3 
 
 1. On the Hyper-V host, type the following commands at an elevated Windows PowerShell prompt:
+
     ```
     New-VM –Name "PC3" –NewVHDPath "c:\vhd\pc3.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
     Set-VMMemory -VMName "PC3" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes 2048MB -Buffer 20
     ```
 2. Temporarily disable the external network adapter on SRV1 again, so that we can successfully boot PC3 from WDS. To disable the adapter, type the following command at an elevated Windows PowerShell prompt on SRV1:
+
     ```
     Disable-NetAdapter "Ethernet 2" -Confirm:$false
     ```
 3. Start and connect to PC3 by typing the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
+
     ```
     Start-VM PC3
     vmconnect localhost PC3
@@ -502,6 +518,7 @@ At a high level, the computer replace process consists of:<BR>
     - **Move Data and Settings**: Do not move user data and settings
     - **User Data (Restore)**: Specify a location: **\\SRV1\MigData$\PC1**
 5. When OS installation has started on PC1, re-enable the external network adapter on SRV1 by typing the following command on SRV1:
+
     ```
     Enable-NetAdapter "Ethernet 2"
     ```
