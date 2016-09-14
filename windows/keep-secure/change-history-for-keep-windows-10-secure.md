@@ -12,6 +12,13 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## September 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| [Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md) | Clarified how convenience PIN works in Windows 10, version 1607, on domain-joined PCs |
+| [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md) | Corrected certreq ezxample and added a new Windows PowerShell example for creating a self-signed certficate |
+
 ## August 2016
 |New or changed topic | Description |
 |----------------------|-------------|
