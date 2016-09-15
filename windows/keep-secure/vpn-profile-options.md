@@ -65,3 +65,14 @@ A VPN profile configured with LockDown secures the device to only allow network 
 - [VPNv2 configuration service provider (CSP) reference](https://go.microsoft.com/fwlink/p/?LinkId=617588)
 - [How to Create VPN Profiles in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=618028)
 
+## Related topics
+
+- [VPN technical guide](vpn-guide.md)
+- [VPN connection types](vpn-connection-type.md)
+- [VPN routing decisions](vpn-routing.md)
+- [VPN authentication options](vpn-authentication.md)
+- [VPN and conditional access](vpn-conditional-access.md)
+- [VPN proxy settings](vpn-proxy-settings.md)
+- [VPN name resolution](vpn-name-resolution.md)
+- [VPN auto-triggered profile options](vpn-auto-trigger-profile.md)
+- [VPN security features](vpn-security-features.md)
