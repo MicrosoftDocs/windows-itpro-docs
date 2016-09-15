@@ -32,11 +32,14 @@ Windows supports a number of EAP authentication methods.
 
 ## Configure authentication
 
-See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) for XML configuration. 
+See [EAP configuration](https://msdn.microsoft.com/library/windows/hardware/mt168513.aspx) for EAP XML configuration. 
 
+>[!NOTE]
+>To configure Windows Hello for Business authentication, follow the steps in [EAP configuration](https://msdn.microsoft.com/library/windows/hardware/mt168513.aspx) to create a smart card certificate.
 
+The following image shows the field for EAP XML in a Microsoft Intune VPN profile. The EAP XML field only appears when you select a built-in connection type (automatic, IKEv2, L2TP, PPTP).
 
-
+![EAP XML configuration in Intune profile](images/vpn-eap-xml.png)
 
 ## Related topics
 
