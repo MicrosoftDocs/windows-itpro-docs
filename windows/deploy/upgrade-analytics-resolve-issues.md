@@ -26,7 +26,7 @@ The blades in the **Resolve issues** section are:
 - Review applications with no known issues
 - Review drivers with known issues
 
-Here you can also see adoption status of applications for the [Ready for Windows website](https://www.readyforwindows.com/). The following sections cover each of the blades and the adoption status of applications in more detail.
+As you review applications with known issues, you can also see ISV support of applications for [Ready for Windows](https://www.readyforwindows.com/).
 
 ## Review applications with known issues
 
@@ -73,13 +73,40 @@ For applications assessed as **Fix available**, review the table below for detai
 | Fix available      | Yes                               | Blocking upgrade, but can be reinstalled after upgrading | The application is compatible with the new operating system, but won’t migrate.                                                                                    | Remove the application before upgrading and reinstall on the new operating system.<br>             |
 | Fix available      | Yes                               | Disk encryption blocking upgrade                         | The application’s encryption features are blocking the upgrade.                                                                                                    | Disable the encryption feature before upgrading and enable it again after upgrading.<br>           |
 
+### ISV support for applications with Ready for Windows
+
+The [Ready for Windows (Preview) website](https://www.readyforwindows.com/) lists software solutions that are supported and in use for Windows 10. This site leverages data about application adoption from commercial Windows 10 installs and helps IT managers upgrade to Windows 10 with confidence. For more information, see [Ready for Windows Frequently Asked Questions](https://developer.microsoft.com/windows/ready-for-windows/#/faq/). 
+
+Click **Review Applications With Known Issues** to see the status of applications for Ready for Windows, and corresponding guidance. If you query with RollupLevel="NamePublisher", then it is possible for each version of the application to have a different status for Ready for Windows. In this case, different values appear for Ready for Windows when RollupLevel=”NamePublisher”. 
+
+![Name publisher rollup](images/upgrade-analytics-namepub-rollup.png)
+
+The following table lists possible values for **ReadyForWindows** and what they mean. For more informnation, see [What does the Adoption Status mean](https://developer.microsoft.com/en-us/windows/ready-for-windows#/faq/?scrollTo=faqStatuses).
+
+| Ready for Windows Status | Query rollup level | What this means | Guidance |
+|-------------------|--------------------------|-----------------|----------|
+|Supported version available    | Granular | The software provider has declared support for one or more versions of this application on Windows 10. | The ISV has declared support for a version of this application on Windows 10. |
+|  Highly adopted | Granular | This version of this application has been highly adopted within the Windows 10 Enterprise ecosystem. | This application has been installed on at least 100,000 commercial Windows 10 devices. | 
+| Adopted   | Granular | This version of this application has been adopted within the Windows 10 Enterprise ecosystem. | This application has been installed on at least 10,000 commercial Windows 10 devices. |
+| Insufficient Data | Granular | Too few commercial Windows 10 devices are sharing information about this version of this application for Microsoft to categorize its adoption. | N/A |
+| Contact developer | Granular | There may be compatibility issues with this version of the application, so Microsoft recommends contacting the software provider to learn more. | Check the Ready for Windows site for additional information.|
+|Supported version available | NamePublisher | The software provider has declared support for one or more versions of this application on Windows 10. | The ISV has declared support for a version of this application on Windows 10.|
+|Adoption status available | NamePublisher | A Ready for Windows adoption status is available for one or more versions of this application. Please check the Ready for Windows site to learn more. |Check the Ready for Windows site for adoption information for this application.|
+| Unknown | Any | There is no Ready for Windows information available for this version of this application. Information may be available on the Ready for Windows site for other versions of the application. | N/A |
+
+Here is an example of an application with **Highly adopted** status:
+
+![Upgrade analytics Ready for Windows status](images/upgrade-analytics-ready-for-windows-status.png)
+
+If there are known issues with an application, the specific guidance for that known issue takes precedence over the Ready for Windows guidance.
+
+![Upgrade analytics Ready for Windows status guidance precedence](images/upgrade-analytics-ready-for-windows-status-guidance-precedence.png)
+
+
+
 ## Review applications with no known issues
 
 Applications with no issues known to Microsoft are listed, grouped by upgrade decision.
-
-<!-- PRESERVING ORIGINAL IMAGE CODING JUST IN CASE
-<img src="media/image7.png" width="197" height="336" />
--->
 
 ![Review applications with no known issues](images/upgrade-analytics-apps-no-known-issues.png)
 
@@ -100,10 +127,6 @@ To change an application's upgrade decision:
 ## Review drivers with known issues
 
 Drivers that won’t migrate to the new operating system are listed, grouped by availability.
-
-<!-- PRESERVING ORIGINAL IMAGE CODING JUST IN CASE
-<img src="media/image8.png" width="197" height="316" />
--->
 
 ![Review drivers with known issues](images/upgrade-analytics-drivers-known.png)
 
@@ -126,33 +149,3 @@ To change a driver’s upgrade decision:
 
 4.  Click **Save** when finished.
 
-## Review adoption status of applications with Ready for Windows
-
-The [Ready for Windows (Preview) website](https://www.readyforwindows.com/) lists software solutions that are supported and in use for Windows 10. This site leverages data about application adoption from commercial Windows 10 installs and helps IT managers upgrade to Windows 10 with confidence. For more information, see [Ready for Windows Frequently Asked Questions](https://developer.microsoft.com/windows/ready-for-windows/#/faq/). 
-
-Click **Review Applications With Known Issues** to see the status of applications for Ready for Windows, and corresponding guidance. The following table lists possible values for **ReadyForWindows** and what they mean.
-
-| Ready for Windows Status | What this means | Guidance |
-|--------------------------|-----------------|----------|
-|Supported version available    | The software provider has declared support for one or more versions of this application on Windows 10. | The ISV has declared support for a version of this application on Windows 10. |
-|  Highly adopted | This version of this application has been highly adopted within the Windows 10 Enterprise ecosystem. | This application has been installed on at least 100,000 commercial Windows 10 devices. | 
-| Adopted   | This version of this application has been adopted within the Windows 10 Enterprise ecosystem. | This application has been installed on at least 10,000 commercial Windows 10 devices. |
-| Insufficient Data | Too few commercial Windows 10 devices are sharing information about this version of this application for Microsoft to categorize its adoption. | N/A |
-| Contact software provider | There may be compatibility issues with this version of the application, so Microsoft recommends contacting the software provider to learn more. | Check the Ready for Windows site for additional information.|
-| Unknown | There is no Ready for Windows information available for this version of this application. Information may be available on the Ready for Windows site for other versions of the application. | N/A |
-
-![Upgrade analytics Ready for Windows status](images/upgrade-analytics-ready-for-windows-status.png)
-
-If there are known issues with an application, the specific guidance for that known issue takes precedence over the Ready for Windows guidance.
-
-![Upgrade analytics Ready for Windows status guidance precedence](images/upgrade-analytics-ready-for-windows-status-guidance-precedence.png)
-
-If you query with RollupLevel="NamePublisher", then it is possible for each version of the application to have a different status for Ready for Windows. In this case, different values appear for Ready for Windows when RollupLevel=”NamePublisher”.
-
-| Ready for Windows Status | What this means | Guidance |
-|--------------------------|-----------------|----------|
-|Supported version available | The software provider has declared support for one or more versions of this application on Windows 10. | The ISV has declared support for a version of this application on Windows 10.|
-|Adoption status available | A Ready for Windows adoption status is available for one or more versions of this application. Please check the Ready for Windows site to learn more. |Check the Ready for Windows site for adoption information for this application.|
-|Unknown    | There is no Ready for Windows information available for this version of this application. Information may be available on the Ready for Windows site for other versions of the application. |N/A  |
-
-![Name publisher rollup](images/upgrade-analytics-namepub-rollup.png)
