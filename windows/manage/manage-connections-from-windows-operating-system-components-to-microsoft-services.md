@@ -1057,7 +1057,7 @@ Enterprise customers can manage their Windows activation status with volume lice
 
 For Windows 10:
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client AVS Activation**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client AVS Validation**
 
     -or-
 
@@ -1065,7 +1065,7 @@ For Windows 10:
 
 For Windows Server 2016 with Desktop Experience or Windows Server 2016 Server Core:
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Activation**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client AVS Validation**
 
 The Windows activation status will be valid for a rolling period of 180 days with weekly activation status checks to the KMS.
 
