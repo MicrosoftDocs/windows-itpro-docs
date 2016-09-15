@@ -33,13 +33,13 @@ Description here.
 
 ## Install prerequisites
 
-1. Before installing System Center Configuration Manager, we must install prerequisite services and features. Type the following commands at an elevated Windows PowerShell prompt on SRV1: 
+1. Before installing System Center Configuration Manager, we must install prerequisite services and features. Type the following command at an elevated Windows PowerShell prompt on SRV1: 
 
     ```
     Install-WindowsFeature Web-Windows-Auth,Web-ISAPI-Ext,Web-Metabase,Web-WMI,BITS,RDC,NET-Framework-Features,Web-Asp-Net,Web-Asp-Net45,NET-HTTP-Activation,NET-Non-HTTP-Activ
     ```
 
-    >If the command displays an error stating that the request to add or remove features failed, retry the installation by typing the command again.
+    >If the request to add features fails, retry the installation by typing the command again.
 
 2. Download [SQL Server 2012 SP2](https://www.microsoft.com/en-us/evalcenter/evaluate-sql-server-2014-sp2) from the Microsoft Evaluation Center as an .ISO file on the Hyper-V host computer. Save the file to the **C:\VHD** directory.
 3. When you have downloaded the file **SQLServer2014SP2-FullSlipstream-x64-ENU.iso** and placed it in the C:\VHD directory, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host: 
@@ -116,11 +116,11 @@ Description here.
     PingReplyDetails (RTT)   : 0 ms
     TcpTestSucceeded         : True
     ```
-    To verify WMI using the WMI console, type **wmimgmt.msc**, right-click **WMI Control (Local)** in the console tree, and then click **Properties**.
+    You can also verify WMI using the WMI console by typing **wmimgmt.msc**, right-clicking **WMI Control (Local)** in the console tree, and then clicking **Properties**.
 
     If the WMI service is not started, attempt to start it or reboot the computer.  If WMI is running but errors are present, see [WMIDiag](https://blogs.technet.microsoft.com/askperf/2015/05/12/wmidiag-2-2-is-here/) for troubleshooting information.
 
-2. To start installation, type the following command at an elevated Windows PowerShell prompt:
+2. To start Configuration Manager installation, type the following command at an elevated Windows PowerShell prompt:
 
     ```
     cmd /c C:\configmgr\SMSSETUP\BIN\X64\Setup.exe
@@ -156,7 +156,7 @@ Description here.
 ## Enable MDT ConfigMgr integration
 
 1. Click **Start**, type **configmgr**, and then click **Configure ConfigMgr Integration**.
-2. Type PS1 next to Site code, and then click **Next**.
+2. Type PS1 next to **Site code**, and then click **Next**.
 3. Verify **The process completed successfully** is displayed, and then click **Finish**.
 
 
