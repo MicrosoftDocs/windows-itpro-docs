@@ -16,7 +16,9 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile
 
-This guide will walk you through the decisions you will make for Windows 10 clients in your enterprise VPN solution and how to configure your deployment. This guide references the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx). 
+This guide will walk you through the decisions you will make for Windows 10 clients in your enterprise VPN solution and how to configure your deployment. This guide references the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx) and provides mobile device management (MDM) configuration instructions using Microsoft Intune and the VPN Profile template for Windows 10.
+
+![Intune VPN policy template](images/vpn-intune-policy.png)
 
 >[!NOTE]
 >This guide does not explain server deployment. It lists server dependencies, when relevant. 
@@ -36,7 +38,9 @@ This guide will walk you through the decisions you will make for Windows 10 clie
 | [VPN profile options](vpn-profile-options.md)  | combine settings into single profile using XML |
 
 
+## Learn more
 
+- [VPN connections in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/vpn-connections-in-microsoft-intune)
 
 
 

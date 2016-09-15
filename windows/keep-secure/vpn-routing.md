@@ -21,7 +21,7 @@ Network routes are required to forward traffic across the VPN interface. One of 
 
 In a split tunnel configuration, routes can be specified to go over VPN and all other traffic will go over the physical interface. 
 
-Routes can be configured using the VPNv2//*ProfileName*/RouteList setting in the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
+Routes can be configured using the VPNv2//*ProfileName*/RouteList setting in the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
  
 For each route item in the list the following can be specified: 
 
@@ -43,6 +43,8 @@ For built-in VPN, this decision is controlled using the MDM setting **VPNv2/Prof
 For a UWP VPN plug-in, this property is directly controlled by the app. If the VPN plug-in passes only 2 include routes (default route for both v4 and v6), the Windows VPN Platform marks the VPN as force tunnel.  
 
 ## Configure routing
+
+See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) for XML configuration. 
 
 When you configure a VPN profile in Microsoft Intune, you select a checkbox to enable split tunnel configuration.
 

@@ -25,21 +25,21 @@ There are many options for VPN clients. In Windows 10, the built-in plug-in and 
 
 - Tunneling protocols
 
-    - [Internet Key Exchange version 2 (IKEv2)](https://technet.microsoft.com/en-us/library/ff687731.aspx)
+    - [Internet Key Exchange version 2 (IKEv2)](https://technet.microsoft.com/library/ff687731.aspx)
 
         Currently, this can only be configured in [custom XML in the ProfileXML node](vpn-profile-options.md).
     
-        Configure the IPsec/IKE tunnel cryptographic properties using the **Cryptography Suite** setting in the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
+        Configure the IPsec/IKE tunnel cryptographic properties using the **Cryptography Suite** setting in the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
            
-    - [L2TP](https://technet.microsoft.com/en-us/library/ff687761.aspx)
+    - [L2TP](https://technet.microsoft.com/library/ff687761.aspx)
 
         Currently, this can only be configured in [custom XML in the ProfileXML node](vpn-profile-options.md).
     
-        L2TP with pre-shared key (PSK) authentication can be configured using the **L2tpPsk** setting in the [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
+        L2TP with pre-shared key (PSK) authentication can be configured using the **L2tpPsk** setting in the [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
     
-    - [PPTP](https://technet.microsoft.com/en-us/library/ff687676.aspx)
+    - [PPTP](https://technet.microsoft.com/library/ff687676.aspx)
 
-    - [SSTP](https://technet.microsoft.com/en-us/library/ff687819.aspx)
+    - [SSTP](https://technet.microsoft.com/library/ff687819.aspx)
 
         SSTP is supported for Windows desktop editions only. SSTP cannot be configured using mobile device management (MDM), but it is one of the protocols attempted in the **Automatic** option.
         
@@ -47,7 +47,7 @@ There are many options for VPN clients. In Windows 10, the built-in plug-in and 
 
     The **Automatic** option means that the device will try each of the built-in tunneling protocols until one succeeds. It will attempt from most secure to least secure. 
 
-    Configure **Automatic** for the **NativeProtocolType** setting in the [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
+    Configure **Automatic** for the **NativeProtocolType** setting in the [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
     
   
  
@@ -59,7 +59,7 @@ There are a number of Universal Windows Platform VPN applications, such as Pulse
 
 ## Configure connection type
 
-See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx) for XML configuration. 
+See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) for XML configuration. 
 
 The following image shows connection options in a VPN Profile configuration policy using Microsoft Intune.
 
