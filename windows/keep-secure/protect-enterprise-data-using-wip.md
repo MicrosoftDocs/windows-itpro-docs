@@ -35,7 +35,7 @@ Effective collaboration means that you need to share data with others in your en
 
 As an admin, you can address the question of who gets access to your data by using access controls, such as employee credentials. However, just because someone has the right to access your data doesn’t guarantee that the data will remain within the secured locations of the enterprise. This means that while access controls are a great start, they’re not enough.
 
-In the end, all of these security measures have one thing in common: employees will tolerate only so much inconvenience before looking for ways around the security restrictions. For example, if you don’t allow employees to share files through a protected system, employees will turn to an outside app that more than likely lacks security controls.
+In the end, all of these security measures have one thing in common: employees will tolerate only so much inconvenience before looking for ways around the security restrictions. For example, if you don’t allow employees to share files through a protected system, employees will turn to an outside app that more than likely lacks security controls
 
 ### Using data loss prevention systems
 To help address this security insufficiency, company’s developed data loss prevention (also known as DLP) systems. Data loss prevention systems require:
