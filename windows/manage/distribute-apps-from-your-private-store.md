@@ -17,6 +17,7 @@ localizationpriority: high
 
 -   Windows 10
 -   Windows 10 Mobile
+** Question: Does this really apply for Windows 10 Mobile? If so, please revise article **
 
 The private store is a feature in Windows Store for Business that organizations receive during the sign up process. When admins add apps to the private store, all employees in the organization can view and download the apps. Your private store is available as a tab in the Windows Store, and is usually named for your company or organization. Only apps with online licenses can be added to the private store.
 
