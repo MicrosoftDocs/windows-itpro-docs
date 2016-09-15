@@ -6,6 +6,7 @@ keywords: install, configure, deploy, deployment
 ms.prod: w10
 localizationpriority: high
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
 ---
