@@ -5,6 +5,7 @@ ms.assetid: 2866fb3c-4909-4c25-b083-6fc1f7869f6f
 keywords: reinstallation, customize, template, script, restore
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus

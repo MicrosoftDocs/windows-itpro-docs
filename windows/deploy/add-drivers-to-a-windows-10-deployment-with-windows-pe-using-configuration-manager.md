@@ -4,6 +4,7 @@ description: In this topic, you will learn how to configure the Windows Preinsta
 ms.assetid: 97b3ea46-28d9-407e-8c42-ded2e45e8d5c
 keywords: deploy, task sequence
 ms.prod: w10
+localizationpriority: high
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus

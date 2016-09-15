@@ -5,6 +5,7 @@ ms.assetid: 38b55fa8-e717-4689-bd43-8348751d493e
 keywords: configure, deploy, upgrade
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
 ---

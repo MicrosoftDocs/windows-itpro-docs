@@ -5,6 +5,7 @@ ms.assetid: 9da2fb57-f2ff-4fce-a858-4ae4c237b5aa
 keywords: deploy, deployment, configure, customize, install, installation
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
