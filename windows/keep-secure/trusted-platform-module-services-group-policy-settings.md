@@ -23,7 +23,7 @@ The TPM Services Group Policy settings are located at:
 **Computer Configuration\\Administrative Templates\\System\\Trusted Platform Module Services\\**
 
 | Setting | Windows 10, version 1607 | Windows 10, version 1511 and Windows 10, version 1507 | Windows Server 2012 R2, Windows 8.1 and Windows RT | Windows Server 2012, Windows 8 and Windows RT | Windows Server 2008 R2 and Windows 7 | Windows Server 2008 and Windows Vista |
-| - | - | - | - | - | - |
+| - | - | - | - | - | - | - |
 | [Turn on TPM backup to Active Directory Domain Services](#bkmk-tpmgp-addsbu) | | X| X| X| X| X| 
 | [Configure the list of blocked TPM commands](#bkmk-tpmgp-clbtc)| X| X| X| X| X| X| 
 | [Ignore the default list of blocked TPM commands](#bkmk-tpmgp-idlb) | X| X| X| X| X| X| 
@@ -32,20 +32,27 @@ The TPM Services Group Policy settings are located at:
 | [Standard User Lockout Duration](#bkmk-tpmgp-suld)| X| X| X| X|||  
 | [Standard User Individual Lockout Threshold](#bkmk-tpmgp-suilt)| X| X| X| X|||  
 | [Standard User Total Lockout Threshold](#bkmk-tpmgpsutlt)| X| X| X| X||||
- 
+
 ### <a href="" id="bkmk-tpmgp-addsbu"></a>Turn on TPM backup to Active Directory Domain Services
 
 This policy setting allows you to manage the Active Directory Domain Services (AD DS) backup of TPM owner information.
 
->**Note:**  This policy setting applies to the Windows operating systems listed in the [version table](#bkmk-version-table).
- 
+>[!NOTE]  
+>This policy setting applies to the Windows operating systems listed in the [version table](#bkmk-version-table).
+
+
 TPM owner information includes a cryptographic hash of the TPM owner password. Certain TPM commands can be run only by the TPM owner. This hash authorizes the TPM to run these commands.
 
->**Important:**  To back up TPM owner information from a computer running Windows 10, Windows 8.1, or Windows 8, you might need to first set up appropriate schema extensions and access control settings on the domain so that the AD DS backup can succeed. Windows Server 2012 R2 and Windows Server 2012 include the required schema extensions by default. For more information, see [AD DS schema extensions to support TPM backup](ad-ds-schema-extensions-to-support-tpm-backup.md). This functionality is discontinued starting with Windows 10, version 1607.
+>[!IMPORTANT]  
+>To back up TPM owner information from a computer running Windows 10, version 1507, Windows 10, version 1511, Windows 8.1, or Windows 8, you might need to first set up appropriate schema extensions and access control settings on the domain so that the AD DS backup can succeed. Windows Server 2012 R2 and Windows Server 2012 include the required schema extensions by default. For more information, see [AD DS schema extensions to support TPM backup](ad-ds-schema-extensions-to-support-tpm-backup.md). This functionality is discontinued starting with Windows 10, version 1607.
 
 If you enable this policy setting, TPM owner information will be automatically and silently backed up to AD DS when you use Windows to set or change a TPM owner password. When this policy setting is enabled, a TPM owner password cannot be set or changed unless the computer is connected to the domain and the AD DS backup succeeds.
 
 If you disable or do not configure this policy setting, TPM owner information will not be backed up to AD DS.
+
+>[!NOTE]  
+> The **Turn on TPM backup to Active Directory Domain Services** is not available in the Windows 10, version 1607 and Windows Server 2016 and later versions of the ADMX files.
+
 
 ### <a href="" id="bkmk-tpmgp-clbtc"></a>Configure the list of blocked TPM commands
 
