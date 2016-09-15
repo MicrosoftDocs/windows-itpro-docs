@@ -16,6 +16,72 @@ localizationpriority: medium
 
 This section contains an overview of the steps required to prepare your environment so that you can use all of the features of Microsoft Surface Hub. See [Intro to Surface Hub](intro-to-surface-hub.md) for a description of how the device and its features interact with your IT environment.
 
+## Surface Hub setup dependencies
+
+Review these dependencies to make sure Surface Hub features will work in your environment.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Dependency</th>
+<th align="left">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Active Directory (if using an on-premises deployment)</p></td>
+<td align="left"><p>The Surface Hub must be able to connect to the domain controller in order to validate the device account’s credentials, as well as to access information like the device account’s display name, alias, Exchange server, and Session Initiation Protocol (SIP) address.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Microsoft Office 365 (if using an online deployment)</p></td>
+<td align="left"><p>The Surface Hub must have Internet access in order to reach your Office 365 tenant. The device will connect to the Office 365 in order to validate the device account’s credentials, as well as to access information like the device account’s display name, alias, Exchange server, and SIP address.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Device account</p></td>
+<td align="left"><p>The device account is an Active Directory and/or Azure AD account that enables several key features for the Surface Hub. Learn more about device accounts in [Create and test a device account](create-and-test-a-device-account-surface-hub.md).</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Exchange and Exchange ActiveSync</p></td>
+<td align="left"><p>The Surface Hub must be able to reach the device account’s Exchange servers. Exchange is used for enabling mail and calendar features, and also lets people who use the device send meeting requests to the Surface Hub, enabling one-touch meeting join.</p>
+<p>ActiveSync is used to sync the device account’s calendar and mail to the Surface Hub. If the device cannot use ActiveSync, it will not show meetings on the welcome screen, and joining meetings and emailing whiteboards will not be enabled.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Skype for Business</p></td>
+<td align="left"><p>The Surface Hub must be able to reach the device account’s Skype for Business servers. Skype for Business is used for various conferencing features, like video calls, IM, and screen sharing.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Certificate-based authentication</p></td>
+<td align="left"><p>If certificate-based authentication is required to establish a connection with Exchange ActiveSync or Skype for Business, those certificates must be deployed to each Surface Hub.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Dynamic IP</p></td>
+<td align="left"><p>The Surface Hub cannot be configured to use a static IP. It must use DHCP to assign an IP address. Network or Internet access is required, depending on the configuration of your topology (on-premises or online respectively) in order to validate the device account.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Proxy servers</p></td>
+<td align="left"><p>If your topology requires a connection to a proxy server to reach Active Directory, Microsoft Online Services, or your Exchange or Skype for Business servers, then you can configure it during first run, or in Settings.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Mobile device management (MDM) solution provider</p></td>
+<td align="left"><p>If you want to manage devices remotely and by groups (apply settings or policies to multiple devices at a time), you must set up a MDM solution and enroll the device to that solution.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Microsoft Operations Management Suite (OMS)</p></td>
+<td align="left"><p>OMS is used to monitor Surface Hub devices.</p></td>
+</tr>
+</tbody>
+</table>
+
+## Setup process
+
+| Setup area                   | Requirements                          |
+| ---------------------------- | ------------------------------------- |
+| Find the correct people and resources. | Admins for Exchange, Active Directory, Exchange 
+
 ## Create and test a device account
 
 
