@@ -500,7 +500,7 @@ App-V registry roaming falls into two scenarios, as shown in the following table
 <td align="left"><p>When a standard user launches an App-V application, both HKLM and HKCU for App-V applications are stored in the HKCU hive on the machine. This presents as two distinct paths:</p>
 <ul>
 <li><p>HKLM: HKCU\SOFTWARE\Classes\AppV\Client\Packages\\{PkgGUID}\REGISTRY\MACHINE\SOFTWARE</p></li>
-<li><p>HKCU: HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\REGISTRY\USER\{UserSID}\SOFTWARE</p></li>
+<li><p>HKCU: HKCU\SOFTWARE\Microsoft\AppV\Client\Packages\\{PkgGUID}\REGISTRY\USER\\{UserSID}\SOFTWARE</p></li>
 </ul>
 <p>The locations are enabled for roaming based on the operating system settings.</p></td>
 </tr>
