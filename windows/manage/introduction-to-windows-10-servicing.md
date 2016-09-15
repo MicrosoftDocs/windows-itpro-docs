@@ -166,6 +166,8 @@ These LTSB images can be used to upgrade existing machines or to create new cust
 
 Note that Windows 10 Enterprise LTSB installations fully support the Universal Windows Platform, with the ability to run line-of-business apps created using the Windows SDK, Visual Studio, and related tools capable of creating Universal Windows apps. For apps from other ISVs (including those published in the Windows Store), contact the ISV to confirm if they will provide long-term support for their specific apps.
 
+Windows 10 Long Term Servicing Branches will support the currently released silicon at the time of release of the LTSB. As future silicon generations are released, support will be created through future Windows 10 LTSB releases that customers can deploy for those systems [(see Lifecycle support policy)](https://support.microsoft.com/en-us/help/18581/lifecycle-support-policy-faq-windows-products). As the schedule of new LTSB-Releases could vary, there can be a lack of support for the most actual silicon generations, these are only supported by the most current CB and CBB Releases.
+
 As mentioned previously, there are few, if any, scenarios where an organization would use the Long-Term Servicing Branch for every PC – or even for a majority of them.
 
 ## Windows Insider Program
