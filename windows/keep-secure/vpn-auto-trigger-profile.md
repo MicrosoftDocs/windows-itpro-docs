@@ -25,7 +25,6 @@ localizationpriority: high
 - [VPN routing decisions](vpn-routing.md)
 - [VPN authentication options](vpn-authentication.md)
 - [VPN and conditional access](vpn-conditional-access.md)
-- [VPN proxy settings](vpn-proxy-settings.md)
 - [VPN name resolution](vpn-name-resolution.md)
 - [VPN security features](vpn-security-features.md)
 - [VPN profile options](vpn-profile-options.md)

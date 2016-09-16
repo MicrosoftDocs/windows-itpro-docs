@@ -15,6 +15,14 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
+ 
+If your organization uses a proxy, especially in the case of force tunneled VPN, you can add an Interface Specific proxy with VPN. This can be configured using the MDM/SCCM configuration where you can provide either a Proxy auto-config (PAC) or Web Proxy Autodiscovery Protocol (WPAD) file, or specify a server and port.  
+
+**Bypass proxy settings for local addresses** is not currently supported.
+
+
+
+
 ## Related topics
 
 - [VPN technical guide](vpn-guide.md)

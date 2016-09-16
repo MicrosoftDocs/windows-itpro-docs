@@ -61,7 +61,7 @@ Server-side infrastructure requirements to support VPN device compliance include
    
 After the server side is set up, VPN admins can add the policy settings for conditional access to the VPN profile using the VPNv2 DeviceCompliance node.
 
-Two client-side configuration service providers are leveraged for VPN Device Compliance.
+Two client-side configuration service providers are leveraged for VPN device compliance.
 
 - VPNv2 CSP DeviceCompliance settings
    - **Enabled**: enables the Device Compliance flow from the client. If marked as **true**, the VPN client will attempt to communicate with Azure AD to get a certificate to use for authentication. The VPN should be set up to use certificate authentication and the VPN server must trust the server returned by Azure AD.
@@ -75,8 +75,16 @@ Two client-side configuration service providers are leveraged for VPN Device Com
    - Provisions the Health Attestation Certificate received from the HAS
    - Upon request, forwards the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
 
+## Configure conditional access
 
+See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) for XML configuration. 
 
+The following image shows conditional access options in a VPN Profile configuration policy using Microsoft Intune.
+
+![conditional access in profile](images/vpn-conditional-access-intune.png)
+
+>[!NOTE]
+>In Intune, the certificate selected in **Select a client certificate for client authentication** does not set any VPNv2 CSP nodes. It is simply a way to tie the VPN profile’s successful provisioning to the existence of a certificate. If you are enabling conditional access and using the Azure AD short-lived certificate for both VPN server authentication and domain resource authentication, do not select a certificate since the short-lived certificate is not a certificate that would be on the user’s device yet.
 
 ## Learn more about Conditional Access and Azure AD Health
 
@@ -91,7 +99,6 @@ Two client-side configuration service providers are leveraged for VPN Device Com
 - [VPN connection types](vpn-connection-type.md)
 - [VPN routing decisions](vpn-routing.md)
 - [VPN authentication options](vpn-authentication.md)
-- [VPN proxy settings](vpn-proxy-settings.md)
 - [VPN name resolution](vpn-name-resolution.md)
 - [VPN auto-triggered profile options](vpn-auto-trigger-profile.md)
 - [VPN security features](vpn-security-features.md)
