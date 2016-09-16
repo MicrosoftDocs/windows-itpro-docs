@@ -1,6 +1,6 @@
 ---
 title: Create tests using Microsoft Forms
-description: Learn how to use Microsoft Forms with the Take a Test app to prevent access to other computers or online resources while complete a test.
+description: Learn how to use Microsoft Forms with the Take a Test app to prevent access to other computers or online resources while completing a test.
 keywords: school, Take a Test, Microsoft Forms
 ms.prod: w10
 ms.mktglfcycl: plan
