@@ -15,6 +15,69 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
+When the VPN client connects to the VPN server, the VPN client receives the following addresses:
+
+- Client IP address
+- IP address of the Domain Name System (DNS) server
+- IP address of the Windows Internet Name Service (WINS) server
+
+The VPN client can access intranet resources by using names, which can be resolved to IP addresses using DNS-based and WINS-based resolution. DNS and WINS name resolution require a server address to be provisioned on the VPN client.
+
+The name resolution setting in the VPN profile configures how name resolution should work on the system when VPN is connected. The networking stack first looks at the Name Resolution Policy table (NRPT) for any matches and tries a resolution in the case of a match. If no match is found, the DNS Suffix is appended to the name and a DNS query is sent out on all interfaces. 
+
+## Name Resolution Policy table (NRPT)
+ 
+The NRPT is a table of namespaces that determines the DNS client’s behavior when issuing name resolution queries and processing responses. It is the first place that the stack will look after the DNSCache.
+
+There are 3 types of Name matches that can be set up for NRPT
+
+- Fully qualified domain name (FQDN) that can be used for direct matching to a name
+
+- Suffix match results in either a comparison of suffixes (for FQDN resolution) or the appending of the suffix (in case of a short name)
+
+- Any resolution should attempt to first resolve with the proxy server/DNS server with this entry
+
+Examples of the following in VPNv2 CSP can be found here. 
+
+NRPT is set using the **VPNv2//*ProfileName*/DomainNameInformationList** node. This node also configures Web proxy server or domain name servers. 
+
+[Learn more about NRPT](https://technet.microsoft.com/library/ee649207%28v=ws.10%29.aspx)
+
+ 
+## DNS suffix
+
+This setting is used to configure the primary DNS suffix for the VPN interface and the suffix search list after the VPN connection is established.
+
+Primary DNS suffix is set using the **VPNv2//*ProfileName*/DnsSuffix** node.
+
+Currently, this can only be configured in [custom XML in the ProfileXML node](vpn-profile-options.md).
+
+[Learn more about primaryDNS suffix](https://technet.microsoft.com/library/cc959611.aspx)
+
+## Persistent
+
+You can also configure *persistent* name resolution rules. Name resolution for specified items will only be performed over VPN.
+
+Persistent name resolution is set using the **VPNv2//*ProfileName*/DomainNameInformationList//*dniRowId*/Persistent** node.
+
+Currently, this can only be configured in [custom XML in the ProfileXML node](vpn-profile-options.md).
+
+## Configure name resolution
+
+See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) for XML configuration. 
+
+The following image shows name resolution options in a VPN Profile configuration policy using Microsoft Intune.
+
+![Add DNS rule](images/vpn-name-intune.png)
+
+The fields in **Add or edit DNS rule** in the Intune profile correspond to the XML settings shown in the following table.
+
+| Field | XML |
+| --- | --- |
+| **Name** | **VPNv2//*ProfileName*/DomainNameInformationList//*dniRowId*/DomainName**  |
+| **Servers (comma separated)** | **VPNv2//*ProfileName*/DomainNameInformationList//*dniRowId*/DnsServers**  |
+| **Proxy server** |  **VPNv2//*ProfileName*/DomainNameInformationList//*dniRowId*/WebServers**  |
+
 ## Related topics
 
 - [VPN technical guide](vpn-guide.md)
