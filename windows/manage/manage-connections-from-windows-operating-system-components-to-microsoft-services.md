@@ -91,6 +91,7 @@ See the following table for a summary of the management settings for Windows 10 
 | &nbsp;&nbsp;&nbsp;&nbsp;[16.14 Other devices](#bkmk-priv-other-devices) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[16.15 Feedback & diagnostics](#bkmk-priv-feedback) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[16.16 Background apps](#bkmk-priv-background) | ![Check mark](images/checkmark.png) | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.17 Motion](#bkmk-priv-motion) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
 | [17. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 | [18. Sync your settings](#bkmk-syncsettings) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 | [19. Teredo](#bkmk-teredo) | | | | | ![Check mark](images/checkmark.png) |
@@ -594,6 +595,8 @@ Use Settings &gt; Privacy to configure some settings that may be important to yo
 
 -   [16.16 Background apps](#bkmk-priv-background)
 
+-   [16.17 Motion](#bkmk-priv-motion)
+
 ### <a href="" id="bkmk-general"></a>16.1 General
 
 **General** includes options that don't fall into other areas.
@@ -1050,6 +1053,18 @@ To turn off **Let apps run in the background**:
 -   Turn off the feature in the UI for each app.
 
     -   Set the **Select a setting** box to **Force Deny**.
+
+### <a href="" id="bkmk-priv-motion"></a>16.17 Motion
+
+In the **Motion** area, you can choose which apps have access to your motion data.
+
+To turn off **Let Windows and your apps use your motion data and collect motion history**:
+
+-   Turn off the feature in the UI.
+
+     -or-
+
+-   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access motion**
 
 ### <a href="" id="bkmk-spp"></a>17. Software Protection Platform
 
