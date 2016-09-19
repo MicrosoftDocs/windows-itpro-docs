@@ -78,88 +78,52 @@ Review these dependencies to make sure Surface Hub features will work in your en
 
 ## Setup process
 
-| Setup area                   | Requirements                          |
-| ---------------------------- | ------------------------------------- |
-| Find the correct people and resources. | Admins for Exchange, Active Directory, Exchange 
+### Work with other admins
 
-## Create and test a device account
+Surface Hub interacts with a few different products and services. Depending on the size of your organization, there could be multiple people supporting different products in your environment. You'll want to include people who manage Exchange, Active Directory, Azure Actice Directory, mobile device maanagement (MDM), and network resources in your planning and prep for Surface Hub deployments. 
 
+### Create and verify device account
 
-A "device account" is an account that Surface Hub uses in order to access features from Exchange, like email and calendar, and to enable Skype for Business. See [Create and test a device account](create-and-test-a-device-account-surface-hub.md) for details.
+A device account is an account that Surface Hub uses in order to access features from Exchange, like email and calendar, and to enable Skype for Business. See [Create and test a device account](create-and-test-a-device-account-surface-hub.md) for details.
 
-## Check network availability
+After you've created your device account, there are a couple of ways to verify that the account. 
+- Run Surface Hub device account validation PowerShell scripts. For more information, see [Surface Hub device account scripts](https://gallery.technet.microsoft.com/scriptcenter/Surface-Hub-device-account-6db77696) in Script Center, or [PowerShell scripts for Surface Hub](appendix-a-powershell-scipts-for-surface-hub.md) later in this guide. 
+- Run the Lync Windows app from Windows Store. If Lync runs successfully, then Skype for Business will most likely run.
 
+### Check network resources
 
-In order to function properly, the Surface Hub must have access to a wired or wireless network that meets these requirements:
+In order to function properly, the Surface Hub must have access to a wired or wireless network that meets the same requirements as every other Skype for Business endpoint in your environment. Overall, a wired connection is preferred:
 
--   Access to your Active Directory or Azure Active Directory (Azure AD) instance, as well as your Microsoft Exchange and Skype for Business servers
--   Can receive an IP address using DHCP
--   Open ports:
-    -   HTTPS: 443
-    -   HTTP: 80
+- Access to your Active Directory or Azure Active Directory (Azure AD) instance, as well as your Microsoft Exchange and Skype for Business servers.
+- Can receive an IP address using DHCP
+- Open ports:
+    - HTTPS: 443
+    - HTTP: 80
+- Access to additional ports are needed, depending on your environment:
+    - For online envionments, see [Office 365 IP URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
+    - For on-premises istallations, see [Skype for Business Server: Ports and protocols for internal servers](https://technet.microsoft.com/library/gg398833.aspx). 
 
-A wired connection is preferred.
+In order to improve your experience, we collect data. To collect data, we need these sites whitelisted:
+- Telemetry client endpoint: https://vortex.data.microsoft.com/
+- Telemetry settings endpoint: https://settings.data.microsoft.com/
 
-## Certificates
+### Prepare for first-run program
+There are a few more item to consider before you start the [first-run program](first-run-program-surface-hub.md).  
 
+**Create provisioning packages** (optional) - Your Surface Hub may require certificates for ActiveSync, Skype for Business, network usage, or other authentication. To install certificates, you can either create a provisioning package (in order to install at first run, or after first run in Settings), or deploy them through a mobile device management (MDM) solution (after first run only). 
 
-Your Surface Hub may require certificates for ActiveSync, Skype for Business, network usage, or other authentication. To install certificates, you can either create a provisioning package (in order to install at first run, or after first run in Settings), or deploy them through a mobile device management (MDM) solution (after first run only).
+To install certificates using provisioning packages, see [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md). To install them using MDM, see the documentation for your MDM provider.
 
-To install certificates using provisioning packages, see [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md). To install them using MDM, see the documentation for your MDM solution.
+Currently, Surface Hub can use provisioning packages only to install certificates and to install Universal Windows Platform (UWP) apps. See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md) for details.You can also use provisioning to sideload apps that don't come from the Windows Store or Windows Store for Business.
 
-## Create provisioning packages
+**Manage admin groups** - Every Surface Hub can be configured individually by opening the Settings app on the device. To prevent people who are not administrators from changing settings, the Settings app requires local administrator credentials to open the app and change settings. See [Admin group management](admin-group-management-for-surface-hub.md) for details on how admin groups are set up and managed.
 
+During first run, you will [set up admins for the device](first-run-program-surface-hub.md#setup-admins)). 
 
-Currently, Surface Hub can use provisioning packages only to install certificates and to install Universal Windows Platform (UWP) apps. See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md) for details.
-
-Customers will use provisioning packages to authenticate (for example, to Exchange or Skype for Business), or to sideload apps that don't come from the Windows Store or Windows Store for Business.
-
-## Know the Exchange server for your device account
-
-
-You should know which Exchange server the device account will use for email and calendar services. The device will attempt to discover this automatically during first run, but if auto-discovery doesn't work, you may need to enter the server info manually.
-
-### Admin group management
-
-Every Surface Hub can be configured individually by opening the Settings app on the device. To prevent people who are not administrators from changing settings, the Settings app requires local administrator credentials to open the app and change settings. See [Admin group management](admin-group-management-for-surface-hub.md) for details on how admin groups are set up and managed.
-
-## Skype for Business
-
-
-Certificates may be required in order to have the Surface Hub use Skype for Business.
-
-## <a href="" id="prepare-checklist"></a>Checklist for preparation
-
-
-In order to ensure that your environment is ready for the Surface Hub, verify the items in the following list.
-
-1.  The device account has been created.
-
-    Test this by running:
-
-    -   Surface Hub device account validation PowerShell scripts
-    -   Lync Windows app from the Windows Store (if Lync runs successfully, then Skype for Business will most likely run).
-
-2.  Ensure that there is a working network/Internet connection for the device to connect to:
-
-    -   It must be able to receive an IP address using DHCP (Surface Hub cannot be configured with a static IP address)
-    -   It must have these ports open:
-
-        -   HTTPS: 443
-        -   HTTP: 80
-
-        If your network runs through a proxy, you'll need the proxy address or script information as well.
-
-3.  In order to improve your experience, we collect data. To collect data, we need these sites whitelisted:
-    -   Telemetry client endpoint: https://vortex.data.microsoft.com/
-    -   Telemetry settings endpoint: https://settings.data.microsoft.com/
-
-4.  Choose the local admin method you want to set up during first run (see [Set up admins for this device](first-run-program-surface-hub.md#setup-admins)). Also, decide whether you'll be using MDM (see [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md)).
-5.  You've created provisioning packages, as needed. See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md).
-6.  Have all necessary information available from the [Setup worksheet](setup-worksheet-surface-hub.md).
+**Review and complete Surface Hub setup worksheet** (optional)
+When you complete the first-run program for your Surface Hub, there is some information that you'll need to supply. The setup worksheet summarizes that info, and provides lists of environment-specific info that you'll need when you complete the first-run program. For more information, see [Setup worksheet](setup-worksheet-surface-hub.md).
 
 ## In this section
-
 
 <table>
 <colgroup>
