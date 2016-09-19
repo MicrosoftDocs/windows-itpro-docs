@@ -1,13 +1,12 @@
 ---
-Title: Using the Microsoft Surface Deployment Accelerator deployment share (Surface)
-Description:Explore the scenarios where you can use SDA to meet the deployment needs of your organization including Proof of Concept, pilot deployment, as well as import additional drivers and applications. 
+title: Using the Microsoft Surface Deployment Accelerator deployment share (Surface)
+description: Explore the scenarios where you can use SDA to meet the deployment needs of your organization including Proof of Concept, pilot deployment, as well as import additional drivers and applications.
 keywords: deploy, install, automate, deployment solution
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: Scottmca
-
 ---
 
 # Using the Microsoft Surface Deployment Accelerator deployment share
@@ -58,7 +57,7 @@ For example, you may intend to use your Surface device with a thermal printer, c
 
 Because SDA is built on MDT, adding the drivers to the SDA deployment share is easy and simple. 
 
->[!NOTE}
+>[!NOTE]
 >The drivers must be in the Setup Information File (.inf) format. If the drivers for your device come as an executable file (.exe), they may need to be extracted or installed to procure the .inf file. Some device drivers come packaged with applications, for example an all-in-one printer bundled with scan software. These applications will need to be installed separately from the drivers.
 
 To import drivers for a peripheral device:
