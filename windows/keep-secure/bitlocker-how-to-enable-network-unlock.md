@@ -151,7 +151,7 @@ New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -Subject "CN=
 
 Certreq example:
 
-1.  Create a text file with an .inf extension. For example, notepad.exe BitLocker-NetworkUnlock.inf
+1.  Create a text file with an .inf extension. For example, notepad.exe BitLocker-NetworkUnlock.inf.
 2.  Add the following contents to the previously created file:
 
     ``` syntax
@@ -179,9 +179,9 @@ Certreq example:
     certreq -new BitLocker-NetworkUnlock.inf BitLocker-NetworkUnlock.cer
     ```
 
-4.  Verify the previous command properly created the certificate by confirming the .cer file exists
-5.  Launch the Certificate Manager by running **certmgr.msc**
-6.  Create a .pfx file by opening the **Certificates – Current User\\Personal\\Certificates** path in the navigation pane, right-clicking the previously imported certificate, selecting **All Tasks**, then **Export**. Follow through the wizard to create the .pfx file.
+4.  Verify the previous command properly created the certificate by confirming the .cer file exists.
+5.  Launch Certificates - Local Machine by running **certlm.msc**.
+6.  Create a .pfx file by opening the **Certificates – Local Computer\\Personal\\Certificates** path in the navigation pane, right-clicking the previously imported certificate, selecting **All Tasks**, then **Export**. Follow through the wizard to create the .pfx file.
 
 ### <a href="" id="bkmk-stepfive"></a>Step Five: Deploy the private key and certificate to the WDS server
 
@@ -198,21 +198,21 @@ With certificate and key deployed to the WDS server for Network Unlock, the fina
 
 The following steps describe how to enable the Group Policy setting that is a requirement for configuring Network Unlock.
 
-1.  Open Group Policy Management Console (gpmc.msc)
-2.  Enable the policy **Require additional authentication at startup** and select the **Require startup PIN with TPM** option
-3.  Turn on BitLocker with TPM+PIN protectors on all domain-joined computers
+1.  Open Group Policy Management Console (gpmc.msc).
+2.  Enable the policy **Require additional authentication at startup** and select the **Require startup PIN with TPM** option.
+3.  Turn on BitLocker with TPM+PIN protectors on all domain-joined computers.
 
 The following steps describe how to deploy the required Group Policy setting:
 
 >**Note:**  The Group Policy settings **Allow network unlock at startup** and **Add Network Unlock Certificate** were introduced in Windows Server 2012.
  
-1.  Copy the .cer file created for Network Unlock to the domain controller
-2.  On the domain controller, launch Group Policy Management Console (gpmc.msc)
+1.  Copy the .cer file created for Network Unlock to the domain controller.
+2.  On the domain controller, launch Group Policy Management Console (gpmc.msc).
 3.  Create a new Group Policy Object or modify an existing object to enable the **Allow network unlock at startup** setting.
-4.  Deploy the public certificate to clients
+4.  Deploy the public certificate to clients:
 
-    1.  Within Group Policy Management Console, navigate to the following location: **Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Public Key Policies\\BitLocker Drive Encryption Network Unlock Certificate**
-    2.  Right-click the folder and choose **Add Network Unlock Certificate**
+    1.  Within Group Policy Management Console, navigate to the following location: **Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Public Key Policies\\BitLocker Drive Encryption Network Unlock Certificate**.
+    2.  Right-click the folder and choose **Add Network Unlock Certificate**.
     3.  Follow the wizard steps and import the .cer file that was copied earlier.
 
 >**Note:**  Only one network unlock certificate can be available at a time. If a new certificate is required, delete the current certificate before deploying a new one. The Network Unlock certificate is located in the **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\SystemCertificates\\FVE\_NKP** key on the client computer.
@@ -221,16 +221,16 @@ The following steps describe how to deploy the required Group Policy setting:
 
 An additional step is for enterprises to use TPM+PIN protectors for an extra level of security. To require TPM+PIN protectors in an environment, do the following:
 
-1.  Open Group Policy Management Console (gpmc.msc)
-2.  Enable the policy **Require additional authentication at startup** and select the **Require startup PIN with TPM** option
-3.  Turn on BitLocker with TPM+PIN protectors on all domain-joined computers
+1.  Open Group Policy Management Console (gpmc.msc).
+2.  Enable the policy **Require additional authentication at startup** and select the **Require startup PIN with TPM** option.
+3.  Turn on BitLocker with TPM+PIN protectors on all domain-joined computers.
 
 ### <a href="" id="bkmk-createcerttmpl"></a>Create the certificate template for Network Unlock
 
 The following steps detail how to create a certificate template for use with BitLocker Network Unlock. A properly configured Active Directory Services Certification Authority can use this certificate to create and issue Network Unlock certificates.
 
 1.  Open the Certificates Template snap-in (certtmpl.msc).
-2.  Locate the User template. Right-click the template name and select **Duplicate Template**
+2.  Locate the User template. Right-click the template name and select **Duplicate Template**.
 3.  On the **Compatibility** tab, change the **Certification Authority** and **Certificate recipient** fields to Windows Server 2012 and Windows 8respectively. Ensure the **Show resulting changes** dialog box is selected.
 4.  Select the **General** tab of the template. The **Template display name** and **Template name** should clearly identify that the template will be used for Network Unlock. Clear the checkbox for the **Publish certificate in Active Directory** option.
 5.  Select the **Request Handling** tab. Select **Encryption** from the **Purpose** drop down menu. Ensure the **Allow private key to be exported** option is selected.
@@ -246,9 +246,9 @@ The following steps detail how to create a certificate template for use with Bit
     -   **Name:** **BitLocker Network Unlock**
     -   **Object Identifier:** **1.3.6.1.4.1.311.67.1.1**
 
-14. Select the newly created **BitLocker Network Unlock** application policy and select **OK**
+14. Select the newly created **BitLocker Network Unlock** application policy and select **OK**.
 15. With the **Extensions** tab still open, select the **Edit Key Usage Extension** dialog, select the **Allow key exchange only with key encryption (key encipherment)** option. Select the **Make this extension critical** option.
-16. Select the **Security** tab. Confirm that the **Domain Admins** group has been granted **Enroll** permission
+16. Select the **Security** tab. Confirm that the **Domain Admins** group has been granted **Enroll** permission.
 17. Select **OK** to complete configuration of the template.
 
 To add the Network Unlock template to the Certification Authority, open the Certification Authority snap-in (certsrv.msc). Right-click the **Certificate Templates** item and choose **New, Certificate Template to issue**. Select the previously created BitLocker Network Unlock certificate.
@@ -328,8 +328,8 @@ Files to gather when troubleshooting BitLocker Network Unlock include:
         In the right pane, click **Enable Log**.
 
 2.  The DHCP subnet configuration file (if one exists).
-3.  The output of the BitLocker status on the volume, this can be gathered into a text file using **manage-bde -status** or **Get-BitLockerVolume** in Windows PowerShell
-4.  Network Monitor capture on the server hosting the WDS role, filtered by client IP address
+3.  The output of the BitLocker status on the volume, this can be gathered into a text file using **manage-bde -status** or **Get-BitLockerVolume** in Windows PowerShell.
+4.  Network Monitor capture on the server hosting the WDS role, filtered by client IP address.
 
 ## <a href="" id="bkmk-unsupportedsystems"></a>Configure Network Unlock Group Policy settings on earlier versions
 
