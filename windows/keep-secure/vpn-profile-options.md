@@ -18,6 +18,13 @@ localizationpriority: high
 
 Virtual private networks (VPN) let you give your users secure remote access to your company network. Windows 10 adds useful new VPN profile options to help you manage how users connect.
 
+The ProfileXML node was added to the VPNv2 CSP to allow users to deploy VPN profile as a single blob. This is particularly useful for deploying profiles with features that are not yet supported by MDMs. 
+For more information about ProfileXML including sample profiles (both native and UWP VPN plugin): https://msdn.microsoft.com/en-us/library/windows/hardware/mt755930(v=vs.85).aspx   
+OMA-DM Uri: /Vendor/MSFT/VPNv2/[Profile Name]/ProfileXML
+The below is a sample Native VPN profile (found in the link above). This blob would fall under the ProfileXML node. Profiles can be created for UWP apps as well. An example can be found in the link above as well.
+
+
+
 ## Always On
 
 Always On is a new feature in Windows 10 which enables the active VPN profile to connect automatically on the following triggers:
