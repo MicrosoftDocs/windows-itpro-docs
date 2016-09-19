@@ -22,7 +22,7 @@ Microsoft System Center 2012 R2 Configuration Manager supports deploying applica
 
 For the purposes of this topic, we will use CM01, a machine running Windows Server 2012 R2 Standard that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
->[NOTE]  
+>[!NOTE]  
 >Even though the new application model is fully supported to deploy via the task sequence, the most reliable way to deploy software via the task sequence is still the legacy packages, especially if you deploy many applications.
 
 ## Example: Create the Adobe Reader XI application
@@ -58,12 +58,12 @@ The following steps show you how to create the Adobe Reader XI application. This
 
 8.  On the **General Information** page, name the application Adobe Reader XI - OSD Install, click **Next** twice, and then click **Close**.
 
-  >[NOTE]
-  >Because it is not possible to reference an application deployment type in the task sequence, you should have a single deployment type for applications deployed by the task sequence. If you are deploying applications via both the task sequence and normal application deployment, and you have multiple deployment types, you should have two applications of the same software. In this section, you add the "OSD Install" suffix to applications that are deployed via the task sequence. If using packages, you can still reference both package and program in the task sequence.
+    >[!NOTE]
+    >Because it is not possible to reference an application deployment type in the task sequence, you should have a single deployment type for applications deployed by the task sequence. If you are deploying applications via both the task sequence and normal application deployment, and you have multiple deployment types, you should have two applications of the same software. In this section, you add the "OSD Install" suffix to applications that are deployed via the task sequence. If using packages, you can still reference both package and program in the task sequence.
   
-  ![Add the OSD Install suffix to the application name](images/mdt-06-fig21.png "Add the OSD Install suffix to the application name")
+    ![Add the OSD Install suffix to the application name](images/mdt-06-fig21.png "Add the OSD Install suffix to the application name")
   
-  *Figure 20. Add the "OSD Install" suffix to the application name*
+    *Figure 20. Add the "OSD Install" suffix to the application name*
 
 9.  In the **Applications** node, select the Adobe Reader XI - OSD Install application, and click **Properties** on the ribbon bar.
 

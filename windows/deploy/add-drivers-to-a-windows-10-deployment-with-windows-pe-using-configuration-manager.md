@@ -40,7 +40,7 @@ This section will show you how to import some network and storage drivers for Wi
 
 *Figure 21. Add drivers to Windows PE*
 
->[NOTE]  
+>[!NOTE]  
 >The Updating Boot Image part of the wizard will appear to hang when displaying Done. It will complete in a minute or two.
  
 
@@ -61,25 +61,22 @@ This section illustrates how to add drivers for Windows 10 through an example in
 
 4.  On the **Select the packages to add the imported driver** page, click **New Package**, use the following settings for the package, and then click **Next**:
 
-    1.  Name: Windows 10 x64 - HP EliteBook 8560w
+    * Name: Windows 10 x64 - HP EliteBook 8560w
 
-    2.  Path: \\\\CM01\\Sources$\\OSD\\DriverPackages\\Windows 10 x64\\HP EliteBook 8560w
+    * Path: \\\\CM01\\Sources$\\OSD\\DriverPackages\\Windows 10 x64\\HP EliteBook 8560w
 
-    **Note**  
-    The package path does not yet exist, so you have to type it in. The wizard will create the new package in that folder.
-
+    >[!NOTE]  
+    >The package path does not yet exist, so you have to type it in. The wizard will create the new package in that folder.
      
 
 5.  On the **Select drivers to include in the boot image** page, do not select anything, and click **Next** twice. After the package has been created, click **Close**.
 
-**Note**  
-If you want to monitor the driver import process more closely, you can open the SMSProv.log file during driver import.
-
- 
-
-![figure 23](images/mdt-06-fig26.png)
-
-Figure 23. Drivers imported and a new driver package created.
+    >[!NOTE]  
+    >If you want to monitor the driver import process more closely, you can open the SMSProv.log file during driver import.
+  
+    ![Drivers imported and a new driver package created](images/mdt-06-fig26.png "Drivers imported and a new driver package created")
+  
+    *Figure 23. Drivers imported and a new driver package created*
 
 ## Related topics
 
