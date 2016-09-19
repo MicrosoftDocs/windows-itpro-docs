@@ -22,9 +22,9 @@ One of the most important requirements to consider when you plan your Windows To
 ## Backup and restore
 
 
-As long as you are not saving data on the Windows To Go drive, there is no need for a backup and restore solution for Windows To Go. If you are saving data on the drive and are not using folder redirection and offline files, you should back up all of your data to a network location, such as cloud storage or a network share after each work session. Review the new and improved features described in [Supporting Information Workers with Reliable File Services and Storage](http://go.microsoft.com/fwlink/p/?LinkId=619102) for different solutions you could implement.
+As long as you are not saving data on the Windows To Go drive, there is no need for a backup and restore solution for Windows To Go. If you are saving data on the drive and are not using folder redirection and offline files, you should back up all of your data to a network location, such as cloud storage or a network share after each work session. Review the new and improved features described in [Supporting Information Workers with Reliable File Services and Storage](https://go.microsoft.com/fwlink/p/?LinkId=619102) for different solutions you could implement.
 
-If the USB drive fails for any reason, the standard process to restore the drive to working condition is to reformat and re-provision the drive with Windows To Go, so all data and customization on the drive will be lost. This is another reason why using roaming user profiles, folder redirection and offline files with Windows To Go is strongly recommended. For more information, see [Folder Redirection, Offline Files, and Roaming User Profiles overview](http://go.microsoft.com/fwlink/p/?LinkId=618924).
+If the USB drive fails for any reason, the standard process to restore the drive to working condition is to reformat and re-provision the drive with Windows To Go, so all data and customization on the drive will be lost. This is another reason why using roaming user profiles, folder redirection and offline files with Windows To Go is strongly recommended. For more information, see [Folder Redirection, Offline Files, and Roaming User Profiles overview](https://go.microsoft.com/fwlink/p/?LinkId=618924).
 
 ## BitLocker
 
@@ -47,16 +47,16 @@ We recommend that you use the **NoDefaultDriveLetter** attribute when provisioni
 
 To prevent accidental data leakage between Windows To Go and the host system Windows 8 has a new SAN policy—OFFLINE\_INTERNAL - “4” to prevent the operating system from automatically bringing online any internally connected disk. The default configuration for Windows To Go has this policy enabled. It is strongly recommended you do not change this policy to allow mounting of internal hard drives when booted into the Windows To Go workspace. If the internal drive contains a hibernated Windows 8 operating system, mounting the drive will lead to loss of hibernation state and therefor user state or any unsaved user data when the host operating system is booted. If the internal drive contains a hibernated Windows 7 or earlier operating system, mounting the drive will lead to corruption when the host operating system is booted.
 
-For more information, see [How to Configure Storage Area Network (SAN) Policy in Windows PE](http://go.microsoft.com/fwlink/p/?LinkId=619103).
+For more information, see [How to Configure Storage Area Network (SAN) Policy in Windows PE](https://go.microsoft.com/fwlink/p/?LinkId=619103).
 
 ## Security certifications for Windows To Go
 
 
 Windows to Go is a core capability of Windows when it is deployed on the drive and is configured following the guidance for the applicable security certification. Solutions built using Windows To Go can be submitted for additional certifications by the solution provider that cover the solution provider’s specific hardware environment. For more details about Windows security certifications, see the following topics.
 
--   [Windows Platform Common Criteria Certification](http://go.microsoft.com/fwlink/p/?LinkId=619104)
+-   [Windows Platform Common Criteria Certification](https://go.microsoft.com/fwlink/p/?LinkId=619104)
 
--   [FIPS 140 Evaluation](http://go.microsoft.com/fwlink/p/?LinkId=619107)
+-   [FIPS 140 Evaluation](https://go.microsoft.com/fwlink/p/?LinkId=619107)
 
 ## Related topics
 

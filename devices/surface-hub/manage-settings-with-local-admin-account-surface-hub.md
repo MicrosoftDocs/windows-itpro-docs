@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Manage settings with a local admin account (Surface Hub)

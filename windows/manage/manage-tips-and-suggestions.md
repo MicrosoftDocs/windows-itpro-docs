@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Manage Windows 10 and Windows Store tips, tricks, and suggestions
@@ -16,7 +17,6 @@ author: jdeckerMS
 
 -   Windows 10
 
-> <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
 
 Since its inception, Windows 10 has included a number of user experience features that provide useful tips, tricks, and suggestions as you use Windows, as well as app suggestions from the Windows Store. These features are designed to help people get the most out of their Windows 10 experience by, for example, sharing new features, providing more details on the features they use, or sharing content available in the Windows Store. Examples of such user experiences include: 
 
@@ -30,7 +30,8 @@ Since its inception, Windows 10 has included a number of user experience feature
 
 * **Microsoft account notifications**.  For users who have a connected Microsoft account, toast notifications about their account like parental control notifications or subscription expiration. 
 
-Windows 10 tips, tricks, and suggestions and Windows Store suggestions can be turned on or off by users.  For example, users are able to select personal photos for the lock screen as opposed to the images provided by Microsoft, or turn off tips, tricks, or suggestions as they use Windows.   
+>[!TIP]
+> On all Windows desktop editions, users can directly enable and disable Windows 10 tips, tricks, and suggestions and Windows Store suggestions.  For example, users are able to select personal photos for the lock screen as opposed to the images provided by Microsoft, or turn off tips, tricks, or suggestions as they use Windows.   
 
 Windows 10, version 1607 (also known as the Anniversary Update), provides organizations the ability to centrally manage the type of content provided by these features through Group Policy or mobile device management (MDM). The following table describes how administrators can manage suggestions and tips in Windows 10 commercial and education editions.  
 

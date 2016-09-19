@@ -47,7 +47,7 @@ You should also review any settings or configuration files associated with the v
 ## Securing App-V Package Accelerators
 
 
-Always save App-V Package Accelerators and any associated installation media in a secure location on the network to protect the App-V Package Accelerators and the installation files from being tampered with or becoming corrupted. Because Package Accelerators can also contain password and user-specific information, you must save App-V Package Accelerators in a secure location, and you must digitally sign the Package Accelerator after you create it so that the publisher can be verified when the Package Accelerator is applied. For more information about digital signatures, see [Application Guidelines on Digital Signature Practices for Common Criteria Security](http://go.microsoft.com/fwlink/?LinkId=204705) (http://go.microsoft.com/fwlink/?LinkId=204705).
+Always save App-V Package Accelerators and any associated installation media in a secure location on the network to protect the App-V Package Accelerators and the installation files from being tampered with or becoming corrupted. Because Package Accelerators can also contain password and user-specific information, you must save App-V Package Accelerators in a secure location, and you must digitally sign the Package Accelerator after you create it so that the publisher can be verified when the Package Accelerator is applied. For more information about digital signatures, see [Application Guidelines on Digital Signature Practices for Common Criteria Security](https://go.microsoft.com/fwlink/?LinkId=204705) (https://go.microsoft.com/fwlink/?LinkId=204705).
 
 ## Related topics
 

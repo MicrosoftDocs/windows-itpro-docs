@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to use the Important URLs - Home Page and Support page in the IEAK 11 Customization Wizard to choose one or more **Home** pages and an online support page for your customized version of IE.
-ms.assetid: 19e34879-ba9d-41bf-806a-3b9b9b752fc1
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 19e34879-ba9d-41bf-806a-3b9b9b752fc1
 title: Use the Important URLs - Home Page and Support page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Use the Important URLs - Home Page and Support page in the IEAK 11 Wizard
 The **Important URLS – Home Page and Support** page of the Internet Explorer Customization Wizard 11 lets you choose one or more **Home** pages and an online support page for your customized version of IE.

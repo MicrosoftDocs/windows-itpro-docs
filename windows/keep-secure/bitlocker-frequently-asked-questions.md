@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+localizationpriority: high
 author: brianlic-msft
 ---
 
@@ -138,7 +139,7 @@ The following table lists what action you need to take before you perform an upg
 
 ### <a href="" id="bkmk-automate"></a>Can BitLocker deployment be automated in an enterprise environment?
 
-Yes, you can automate the deployment and configuration of BitLocker and the TPM using either WMI or Windows PowerShell scripts. How you choose to implement the scripts depends on your environment. You can also use Manage-bde.exe to locally or remotely configure BitLocker. For more info about writing scripts that use the BitLocker WMI providers, see [BitLocker Drive Encryption Provider](http://go.microsoft.com/fwlink/p/?LinkId=80600). For more info about using Windows PowerShell cmdlets with BitLocker Drive Encryption, see [BitLocker Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj649829.aspx).
+Yes, you can automate the deployment and configuration of BitLocker and the TPM using either WMI or Windows PowerShell scripts. How you choose to implement the scripts depends on your environment. You can also use Manage-bde.exe to locally or remotely configure BitLocker. For more info about writing scripts that use the BitLocker WMI providers, see [BitLocker Drive Encryption Provider](https://go.microsoft.com/fwlink/p/?LinkId=80600). For more info about using Windows PowerShell cmdlets with BitLocker Drive Encryption, see [BitLocker Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj649829.aspx).
 
 ### <a href="" id="bkmk-os"></a>Can BitLocker encrypt more than just the operating system drive?
 

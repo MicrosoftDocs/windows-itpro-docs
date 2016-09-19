@@ -28,7 +28,7 @@ Comprehensive documentation for Microsoft Enterprise Desktop Virtualization (MED
 ## Protect Against Security Vulnerabilities and Viruses
 
 
-To help protect against security vulnerabilities and viruses, you should install the latest available security updates for any new software that you are installing. For more information, see the Microsoft Security website at <http://go.microsoft.com/fwlink/?LinkId=3482>.
+To help protect against security vulnerabilities and viruses, you should install the latest available security updates for any new software that you are installing. For more information, see the Microsoft Security website at <https://go.microsoft.com/fwlink/?LinkId=3482>.
 
 ## <a href="" id="what-s-new-in-med-v-1-0-sp2"></a>What’s New in MED-V 1.0 SP2
 

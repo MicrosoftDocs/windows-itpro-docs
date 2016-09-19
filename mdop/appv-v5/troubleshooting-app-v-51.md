@@ -13,7 +13,7 @@ ms.prod: w10
 # Troubleshooting App-V 5.1
 
 
-Troubleshooting content is not included in the Administrator’s Guide for this product. Instead, you can find troubleshooting information for this product on the [TechNet Wiki](http://go.microsoft.com/fwlink/p/?LinkId=224905).
+Troubleshooting content is not included in the Administrator’s Guide for this product. Instead, you can find troubleshooting information for this product on the [TechNet Wiki](https://go.microsoft.com/fwlink/p/?LinkId=224905).
 
 ## How to Find Troubleshooting Content
 
@@ -28,7 +28,7 @@ After you search the MDOP documentation, your next step would be to search the t
 
 **To search the MDOP product documentation**
 
-1.  Use a web browser to navigate to the [MDOP Information Experience](http://go.microsoft.com/fwlink/?LinkId=236032) TechNet home page.
+1.  Use a web browser to navigate to the [MDOP Information Experience](https://go.microsoft.com/fwlink/?LinkId=236032) TechNet home page.
 
 2.  Enter applicable search terms in the **Search TechNet with Bing** search box at the top of the MDOP Information Experience home page.
 
@@ -36,7 +36,7 @@ After you search the MDOP documentation, your next step would be to search the t
 
 **To search the TechNet Wiki**
 
-1.  Use a web browser to navigate to the [TechNet Wiki](http://go.microsoft.com/fwlink/p/?LinkId=224905) home page.
+1.  Use a web browser to navigate to the [TechNet Wiki](https://go.microsoft.com/fwlink/p/?LinkId=224905) home page.
 
 2.  Enter applicable search terms in the **Search TechNet Wiki** search box on the TechNet Wiki home page.
 
@@ -49,7 +49,7 @@ If you have a troubleshooting tip or a best practice to share that is not alread
 
 **To create a TechNet Wiki troubleshooting or best practices article**
 
-1.  Use a web browser to navigate to the [TechNet Wiki](http://go.microsoft.com/fwlink/p/?LinkId=224905) home page.
+1.  Use a web browser to navigate to the [TechNet Wiki](https://go.microsoft.com/fwlink/p/?LinkId=224905) home page.
 
 2.  Log in with your Windows Live ID.
 

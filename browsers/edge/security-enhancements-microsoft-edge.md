@@ -5,6 +5,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 title: Security enhancements for Microsoft Edge (Microsoft Edge for IT Pros)
+localizationpriority: high
 ---
 
 # Security enhancements for Microsoft Edge
@@ -13,7 +14,6 @@ title: Security enhancements for Microsoft Edge (Microsoft Edge for IT Pros)
 
 - Windows 10
 - Windows 10 Mobile
-- Windows Server 2016
 
 Microsoft Edge is designed with significant security improvements, helping to defend people from increasingly sophisticated and prevalent web-based attacks against Windows.
 

@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # VPN profile options
@@ -60,8 +61,7 @@ A VPN profile configured with LockDown secures the device to only allow network 
 
 ## Learn more
 
-[VPNv2 configuration service provider (CSP) reference](http://go.microsoft.com/fwlink/p/?LinkId=617588)
+- [Learn how to configure VPN connections in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/vpn-connections-in-microsoft-intune)
+- [VPNv2 configuration service provider (CSP) reference](https://go.microsoft.com/fwlink/p/?LinkId=617588)
+- [How to Create VPN Profiles in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=618028)
 
-[How to Create VPN Profiles in Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=618028)
-
-[Help users connect to their work using VPN profiles with Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=618029)

@@ -22,7 +22,7 @@ When you install the App-V client to use with a read-only cache, for example wit
 
  
 
-For more information about setting these parameter values after installation, see [How to Configure the App-V Client Registry Settings by Using the Command Line](http://go.microsoft.com/fwlink/?LinkId=169355) (http://go.microsoft.com/fwlink/?LinkId=169355) in the Application Virtualization (App-V) Operations Guide.
+For more information about setting these parameter values after installation, see [How to Configure the App-V Client Registry Settings by Using the Command Line](https://go.microsoft.com/fwlink/?LinkId=169355) (https://go.microsoft.com/fwlink/?LinkId=169355) in the Application Virtualization (App-V) Operations Guide.
 
 **Note**  
 If a configuration setting on the user’s computer depends on the client installation path, note that the Application Virtualization (App-V) 4.5 client copies its installation files to a different folder than previous versions did. By default, a new installation of the App-V 4.5 client will copy its installation files to the \\Program Files\\Microsoft Application Virtualization Client folder. If an earlier version of the client is already installed, running the App-V 4.5 client installer will perform an upgrade of the existing client using the existing installation folder.

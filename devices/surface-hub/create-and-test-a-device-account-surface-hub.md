@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Create and test a device account (Surface Hub)
@@ -55,11 +56,11 @@ These properties represent the minimum configuration for a device account to wor
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Exchange mailbox (Exchange 2010 or later, or Exchange Online)</p></td>
+<td align="left"><p>Exchange mailbox (Exchange 2013 or later, or Exchange Online)</p></td>
 <td align="left"><p>Enabling the account with an Exchange mailbox gives the device account the capability to receive and send both mail and meeting requests, and to display a meetings calendar on the Surface Hub’s welcome screen. The Surface Hub mailbox must be a room mailbox.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Skype for Business-enabled (Lync/Skype for Business 2010 or later or Skype for Business Online)</p></td>
+<td align="left"><p>Skype for Business-enabled (Lync/Skype for Business 2013 or later or Skype for Business Online)</p></td>
 <td align="left"><p>Skype for Business must be enabled in order to use various conferencing features, like video calls, IM, and screen-sharing.</p></td>
 </tr>
 <tr class="odd">
@@ -115,8 +116,6 @@ You can check online for updated versions at [Surface Hub device account scripts
 ### Device account configuration
 
 Your infrastructure will likely fall into one of three configurations. Which configuration you have will affect how you prepare for device setup.
-
-![Image showing deployment options: online, on-premises, or hybrid.](images/deploymentoptions-01.png)
 
 -   [Online deployment (Office 365)](online-deployment-surface-hub-device-accounts.md): Your organization’s environment is deployed entirely on Office 365.
 -   [On-premises deployment](on-premises-deployment-surface-hub-device-accounts.md): Your organization has servers that it controls, where Active Directory, Exchange, and Skype for Business (or Lync) are hosted.

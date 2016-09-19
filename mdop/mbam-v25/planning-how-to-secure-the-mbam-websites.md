@@ -140,7 +140,7 @@ If you use a fully qualified domain host name when you configure MBAM, you have 
 </tr>
 <tr class="even">
 <td align="left"><p>Configure constrained delegation for the SPN that you are registering for the application pool account.</p></td>
-<td align="left"><p>[Configuring Constrained Delegation](http://go.microsoft.com/fwlink/?LinkId=394335)</p>
+<td align="left"><p>[Configuring Constrained Delegation](https://go.microsoft.com/fwlink/?LinkId=394335)</p>
 <p>This requirement only applies to MBAM 2.5; it is not necessary in MBAM 2.5 SP1.</p></td>
 </tr>
 </tbody>
@@ -176,7 +176,7 @@ If you use a NetBIOS host name when you configure MBAM, register one SPN for the
 </tr>
 <tr class="odd">
 <td align="left"><p>Configure constrained delegation for the SPNs that you are registering for the application pool account.</p></td>
-<td align="left"><p>[Configuring Constrained Delegation](http://go.microsoft.com/fwlink/?LinkId=394335)</p>
+<td align="left"><p>[Configuring Constrained Delegation](https://go.microsoft.com/fwlink/?LinkId=394335)</p>
 <p>This requirement only applies to MBAM 2.5; it is not necessary in MBAM 2.5 SP1.</p></td>
 </tr>
 </tbody>
@@ -217,12 +217,12 @@ If you configure MBAM with a virtual host name that is a fully qualified domain 
 </tr>
 <tr class="even">
 <td align="left"><p>On the Domain Name Server (DNS) server, create an “A record” for the custom host name and point it to a web server or a load balancer.</p></td>
-<td align="left"><p>See the “To configure DNS Host A Records” section in [Configure DNS Host Records](http://go.microsoft.com/fwlink/?LinkId=394337).</p>
+<td align="left"><p>See the “To configure DNS Host A Records” section in [Configure DNS Host Records](https://go.microsoft.com/fwlink/?LinkId=394337).</p>
 <p>We recommend that you use A records instead of CNAMES. If you use CNAMES to point to the domain address, you must also register SPNs for the web server name in the application pool account.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Configure constrained delegation for the SPNs that you are registering for the application pool account.</p></td>
-<td align="left"><p>[Configuring Constrained Delegation](http://go.microsoft.com/fwlink/?LinkId=394335)</p>
+<td align="left"><p>[Configuring Constrained Delegation](https://go.microsoft.com/fwlink/?LinkId=394335)</p>
 <p>This requirement only applies to MBAM 2.5; it is not necessary in MBAM 2.5 SP1.</p></td>
 </tr>
 </tbody>

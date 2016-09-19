@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to use the Proxy Settings page in the IEAK 11 Customization Wizard to pick the proxy servers used to connect to required services.
-ms.assetid: 1fa1eee3-e97d-41fa-a48c-4a6e0dc8b544
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 1fa1eee3-e97d-41fa-a48c-4a6e0dc8b544
 title: Use the Proxy Settings page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Use the Proxy Settings page in the IEAK 11 Wizard
 The **Proxy Settings** page of the Internet Explorer Customization Wizard 11 lets you pick the proxy servers used by your employees to connect for services required by the custom install package.
@@ -18,7 +20,7 @@ Using a proxy server lets you limit access to the Internet. You can also use the
 1.  Check the **Enable proxy settings** box if you want to use proxy servers for any of your services.
 
 2.  Type the address of the proxy server you want to use for your services into the **Address of proxy** box. In most cases, a single proxy server is used for all of your services.<p>
-Proxy locations that don’t begin with a protocol (like, http:// or ftp://) are assumed to be a CERN-type HTTP proxy. For example, the entry *proxy* is treated the same as the entry *http://proxy*.
+Proxy locations that don’t begin with a protocol (like, http:// or ftp://) are assumed to be a CERN-type HTTP proxy. For example, the entry *proxy* is treated the same as the entry `http://proxy`.
 
 3.  Type the port for each service. The default value is *80*.
 

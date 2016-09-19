@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: servicing, devices
-author: TrudyHa
+author: jdeckerMS
 ---
 
 # Setup and deployment
@@ -87,7 +87,7 @@ Windows Update for Business allows administrators to control when upgrades and u
 </tr>
 </table>
  
-Administrators can control deferral periods with Group Policy Objects by using the [Local Group Policy Editor (GPEdit)](http://go.microsoft.com/fwlink/p/?LinkId=734030) or, for domain joined systems, [Group Policy Management Console (GPMC)](http://go.microsoft.com/fwlink/p/?LinkId=699325). For additional details on Group Policy management see [Group Policy management for IT pros](http://go.microsoft.com/fwlink/p/?LinkId=699282).
+Administrators can control deferral periods with Group Policy Objects by using the [Local Group Policy Editor (GPEdit)](https://go.microsoft.com/fwlink/p/?LinkId=734030) or, for domain joined systems, [Group Policy Management Console (GPMC)](https://go.microsoft.com/fwlink/p/?LinkId=699325). For additional details on Group Policy management see [Group Policy management for IT pros](https://go.microsoft.com/fwlink/p/?LinkId=699282).
 **Set different deferrals based on update classification in GPedit.msc**
 ![figure 4](images/wuforbusiness-fig4-localpoleditor.png)
 ![figure 5](images/wuforbusiness-fig5-deferupgrade.png)
@@ -157,7 +157,7 @@ Delivery Optimization configuration settings can be viewed by going to: Settings
 
 You can use Group Policy to configure Windows Update Delivery Optimization. To do this, use the following steps:
 
-1.  Download the [Administrative Templates (.admx) file for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=699283) from the Microsoft Download Center.
+1.  Download the [Administrative Templates (.admx) file for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=699283) from the Microsoft Download Center.
 2.  Copy the following files to the SYSVOL central store:
     -   DeliveryOptimization.admx from C:\\Program Files (x86)\\Microsoft Group Policy\\Windows 10\\PolicyDefinitions
     -   DeliveryOptimization.adml from C:\\Program Files (x86)\\Microsoft Group Policy\\Windows 10\\PolicyDefinitions\\en-US
@@ -172,9 +172,9 @@ You can use Group Policy to configure Windows Update Delivery Optimization. To d
 
 Microsoft scanned this file for viruses, using the most current virus-detection software that was available on the date that the file was posted. The file is stored on security-enhanced servers that help prevent any unauthorized changes to it.
 
-For more information about Windows Update Delivery Optimization in Windows 10, see the [Windows Update Delivery Optimization FAQ](http://go.microsoft.com/fwlink/p/?LinkId=699284).
+For more information about Windows Update Delivery Optimization in Windows 10, see the [Windows Update Delivery Optimization FAQ](https://go.microsoft.com/fwlink/p/?LinkId=699284).
 
-For additional resources, see [How to use Group Policy to configure Windows Update Delivery Optimization in Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=699288).
+For additional resources, see [How to use Group Policy to configure Windows Update Delivery Optimization in Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=699288).
 
 ## Related topics
 

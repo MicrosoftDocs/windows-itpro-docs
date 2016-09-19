@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 This GPO is authored by using the Windows Firewall with Advanced Security interface in the Group Policy editing tools. The User Configuration section of the GPO is disabled. It is intended to only apply to server devices that are running at least Windows Server 2008.
 

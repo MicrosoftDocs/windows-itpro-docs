@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 One of the most valuable benefits of conducting an asset discovery project is the large amount of data that is obtained about the client and server devices on the network. When you start designing and planning your isolation zones, you must make decisions that require accurate information about the state of all hosts to ensure that they can use IPsec as planned.
 
@@ -45,7 +45,7 @@ Using an automated auditing network management system provides valuable informat
 
 The biggest difference between manual discovery methods and automated methods is time.
 
-You can use Windows PowerShell to create a script file that can collect the system configuration information. For more information, see [Windows PowerShell Scripting](http://go.microsoft.com/fwlink/?linkid=110413).
+You can use Windows PowerShell to create a script file that can collect the system configuration information. For more information, see [Windows PowerShell Scripting](https://go.microsoft.com/fwlink/?linkid=110413).
 
 Whether you use an automatic, manual, or hybrid option to gather the information, one of the biggest issues that can cause problems to the design is capturing the changes between the original inventory scan and the point at which the implementation is ready to start. After the first scan has been completed, make support staff aware that all additional changes must be recorded and the updates noted in the inventory.
 

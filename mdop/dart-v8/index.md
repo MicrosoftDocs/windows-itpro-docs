@@ -43,17 +43,17 @@ DaRT 8.0 is an important part of the Microsoft Desktop Optimization Pack (MDOP),
 
 ### More Information
 
-<a href="" id="how-do-i-get-mdop"></a>[How Do I Get MDOP](http://go.microsoft.com/fwlink/?LinkId=322049)  
+<a href="" id="how-do-i-get-mdop"></a>[How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049)  
 Get information about how to download DaRT.
 
 <a href="" id="release-notes-for-dart-8-0"></a>[Release Notes for DaRT 8.0](release-notes-for-dart-80--dart-8.md)  
 View updated product information and known issues for DaRT 8.0.
 
-<a href="" id="mdop-techcenter-page"></a>[MDOP TechCenter Page](http://go.microsoft.com/fwlink/p/?LinkId=225286)  
+<a href="" id="mdop-techcenter-page"></a>[MDOP TechCenter Page](https://go.microsoft.com/fwlink/p/?LinkId=225286)  
 Learn about the latest MDOP information and resources.
 
-<a href="" id="mdop-information-experience"></a>[MDOP Information Experience](http://go.microsoft.com/fwlink/p/?LinkId=236032)  
-Find documentation, videos, and other resources for MDOP technologies. You can also [send us feedback](mailto:MDOPDocs@microsoft.com%29 or learn about updates by following us on [Facebook]%28http://go.microsoft.com/fwlink/p/?LinkId=242445%29 or [Twitter]%28http://go.microsoft.com/fwlink/p/?LinkId=242447).
+<a href="" id="mdop-information-experience"></a>[MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032)  
+Find documentation, videos, and other resources for MDOP technologies. You can also [send us feedback](mailto:MDOPDocs@microsoft.com%29 or learn about updates by following us on [Facebook]%28https://go.microsoft.com/fwlink/p/?LinkId=242445%29 or [Twitter]%28https://go.microsoft.com/fwlink/p/?LinkId=242447).
 
  
 

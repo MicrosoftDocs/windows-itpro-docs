@@ -63,7 +63,7 @@ For information about the availability of Microsoft product documentation and bo
 <td align="left"><p>(609) 987-8116</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[http://www.learningally.org/](http://go.microsoft.com/fwlink/?linkid=239)</p></td>
+<td align="left"><p>[http://www.learningally.org/](https://go.microsoft.com/fwlink/?linkid=239)</p></td>
 <td align="left"><p>Web addresses can change, so you might be unable to connect to the website or sites mentioned here.</p></td>
 </tr>
 </tbody>
@@ -85,7 +85,7 @@ Microsoft Support Services are subject to the prices, terms, and conditions in p
 ## For More Information
 
 
-For more information about how accessible technology for computers helps to improve the lives of people with disabilities, see the [Microsoft Accessibility website](http://go.microsoft.com/fwlink/?linkid=8431).
+For more information about how accessible technology for computers helps to improve the lives of people with disabilities, see the [Microsoft Accessibility website](https://go.microsoft.com/fwlink/?linkid=8431).
 
 ## Related topics
 

@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
 description: High-level info about some of the new and updated features for Internet Explorer 11.
-ms.assetid: f53c6f04-7c60-40e7-9fc5-312220f08156
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: f53c6f04-7c60-40e7-9fc5-312220f08156
 title: List of updated features and tools - Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # List of updated features and tools - Internet Explorer 11 (IE11)
 
@@ -34,7 +36,7 @@ Internet Explorer 11 includes several new features and tools. This topic includ
 
 -   **IE Administration Kit (IEAK).** Lets you create custom, branded versions of IE11. For more info and to download the tool, see [Internet Explorer Administration Kit 11 (IEAK 11) - Administration Guide for IT Pros](../ie11-ieak/index.md).
 
--   **Unattend Settings.** Lets you update the Unattend.xml file, to customize the home page, favorites, search providers, feeds, Accelerators, Web Slices, and settings for top result searches. For more info, see the [Unattend Settings: Microsoft-Windows-IE-InternetExplorer](http://go.microsoft.com/fwlink/p/?LinkId=263709).
+-   **Unattend Settings.** Lets you update the Unattend.xml file, to customize the home page, favorites, search providers, feeds, Accelerators, Web Slices, and settings for top result searches. For more info, see the [Unattend Settings: Microsoft-Windows-IE-InternetExplorer](https://go.microsoft.com/fwlink/p/?LinkId=263709).
 
  
 

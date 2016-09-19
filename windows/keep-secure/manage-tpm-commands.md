@@ -40,7 +40,7 @@ The following procedures describe how to manage the TPM command lists. You must 
 5.  Click **Enabled**, and then click **Show**.
 6.  For each command that you want to block, click **Add**, enter the command number, and then click **OK**.
     
-    >**Note:**  For a list of commands, see the [Trusted Platform Module (TPM) Specifications](http://go.microsoft.com/fwlink/p/?linkid=139770).
+    >**Note:**  For a list of commands, see the [Trusted Platform Module (TPM) Specifications](https://go.microsoft.com/fwlink/p/?linkid=139770).
      
 7.  After you have added numbers for each command that you want to block, click **OK** twice.
 8.  Close the Local Group Policy Editor.

@@ -20,7 +20,7 @@ Use the App-V 5.0 ADMX template to configure App-V 5.0 client settings using the
 1.  To modify the App-V 5.0 client configuration, locate the **ADMXTemplate** files that are available with App-V 5.0.
 
     **Note**  
-    Use the following link to download the App-V 5.0 **ADMX Templates**: <http://go.microsoft.com/fwlink/p/?LinkId=393941>.
+    Use the following link to download the App-V 5.0 **ADMX Templates**: <https://go.microsoft.com/fwlink/p/?LinkId=393941>.
 
      
 

@@ -21,7 +21,7 @@ VAMT enables IT Professionals to manage and activate the Active Directory-Based 
 
 ## Related topics
 
-- [How to Activate an Active Directory Forest Online](http://go.microsoft.com/fwlink/p/?LinkId=246565)
-- [How to Proxy Activate an Active Directory Forest](http://go.microsoft.com/fwlink/p/?LinkId=246566)
+- [How to Activate an Active Directory Forest Online](https://go.microsoft.com/fwlink/p/?LinkId=246565)
+- [How to Proxy Activate an Active Directory Forest](https://go.microsoft.com/fwlink/p/?LinkId=246566)
  
  

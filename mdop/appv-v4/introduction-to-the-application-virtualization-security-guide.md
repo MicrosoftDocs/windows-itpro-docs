@@ -16,7 +16,7 @@ ms.prod: w8
 This Microsoft Application Virtualization (App-V) security guide provides instructions for administrators who are responsible for configuring the security features that were selected for the App-V deployment.
 
 **Note**  
-This documentation does not provide guidance for choosing the specific security options. That information is provided in the App-V Security Best Practices white paper available at <http://go.microsoft.com/fwlink/?LinkId=127120>.
+This documentation does not provide guidance for choosing the specific security options. That information is provided in the App-V Security Best Practices white paper available at <https://go.microsoft.com/fwlink/?LinkId=127120>.
 
  
 
@@ -40,9 +40,9 @@ When planning an enhanced security App-V environment, you can consider several d
 **Note**  
 For more information about App-V infrastructure models, see the following documentation:
 
--   [App-V Planning and Deployment Guide](http://go.microsoft.com/fwlink/?LinkId=122063)
+-   [App-V Planning and Deployment Guide](https://go.microsoft.com/fwlink/?LinkId=122063)
 
--   [Infrastructure Planning and Design Guide Series](http://go.microsoft.com/fwlink/?LinkId=151986)
+-   [Infrastructure Planning and Design Guide Series](https://go.microsoft.com/fwlink/?LinkId=151986)
 
  
 

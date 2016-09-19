@@ -37,7 +37,7 @@ You can add and remove URL redirection information by performing one of the foll
 
     If you are adding URLs to the registry key, enter them one per line, as was required when you built the MED-V workspace package. For more information, see [Create a MED-V Workspace Package](create-a-med-v-workspace-package.md).
 
-2.  Deploy the updated registry key by using Group Policy. For more information about how to use Group Policy, see [Group Policy Software Installation](http://go.microsoft.com/fwlink/?LinkId=195931) (http://go.microsoft.com/fwlink/?LinkId=195931).
+2.  Deploy the updated registry key by using Group Policy. For more information about how to use Group Policy, see [Group Policy Software Installation](https://go.microsoft.com/fwlink/?LinkId=195931) (https://go.microsoft.com/fwlink/?LinkId=195931).
 
 **Note**  
 This method of editing URL redirection information is a MED-V best practice.

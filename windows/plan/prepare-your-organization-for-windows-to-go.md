@@ -70,7 +70,7 @@ Because Windows To Go requires no additional software and minimal configuration,
 
 Windows To Go uses volume activation. You can use either Active Directory-based activation or KMS activation with Windows To Go. The Windows To Go workspace counts as another installation when assessing compliance with application licensing agreements.
 
-Microsoft software, such as Microsoft Office, distributed to a Windows To Go workspace must also be activated. Office deployment is fully supported on Windows To Go. Please note, due to the retail subscription activation method associated with Office 365 ProPlus, Office 365 ProPlus subscribers are provided volume licensing activation rights for Office Professional Plus 2013 MSI for local installation on the Windows To Go drive. This is available to organizations who purchase Office 365 ProPlus or Office 365 Enterprise SKUs containing Office 365 ProPlus via volume licensing channels. For more information about activating Microsoft Office, see [Volume activation methods in Office 2013](http://go.microsoft.com/fwlink/p/?LinkId=618922).
+Microsoft software, such as Microsoft Office, distributed to a Windows To Go workspace must also be activated. Office deployment is fully supported on Windows To Go. Please note, due to the retail subscription activation method associated with Office 365 ProPlus, Office 365 ProPlus subscribers are provided volume licensing activation rights for Office Professional Plus 2013 MSI for local installation on the Windows To Go drive. This is available to organizations who purchase Office 365 ProPlus or Office 365 Enterprise SKUs containing Office 365 ProPlus via volume licensing channels. For more information about activating Microsoft Office, see [Volume activation methods in Office 2013](https://go.microsoft.com/fwlink/p/?LinkId=618922).
 
 You should investigate other software manufacturer’s licensing requirements to ensure they are compatible with roaming usage before deploying them to a Windows To Go workspace.
 
@@ -79,7 +79,7 @@ Using Multiple Activation Key (MAK) activation is not a supported activation met
 
  
 
-See [Plan for Volume Activation](http://go.microsoft.com/fwlink/p/?LinkId=618923) for more information about these activation methods and how they can be used in your organization.
+See [Plan for Volume Activation](https://go.microsoft.com/fwlink/p/?LinkId=618923) for more information about these activation methods and how they can be used in your organization.
 
 ## Organizational unit structure and use of Group Policy Objects
 
@@ -98,14 +98,14 @@ If you configure Windows To Go drives for scenarios where drives may remain unus
 ## User account and data management
 
 
-People use computers to work with data and consume content - that is their core function. The data must be stored and retrievable for it to be useful. When users are working in a Windows To Go workspace, they need to have the ability to get to the data that they work with and to keep it accessible when the workspace is not being used. For this reason we recommend that you use folder redirection and offline files to redirect the path of local folders (such as the Documents folder) to a network location, while caching the contents locally for increased speed and availability. We also recommend that you use roaming user profiles to synchronize user specific settings so that users receive the same operating system and application settings when using their Windows To Go workspace and their desktop computer. When a user signs in using a domain account that is set up with a file share as the profile path, the user’s profile is downloaded to the local computer and merged with the local profile (if present). When the user logs off the computer, the local copy of their profile, including any changes, is merged with the server copy of the profile. For more information, see [Folder Redirection, Offline Files, and Roaming User Profiles overview](http://go.microsoft.com/fwlink/p/?LinkId=618924).
+People use computers to work with data and consume content - that is their core function. The data must be stored and retrievable for it to be useful. When users are working in a Windows To Go workspace, they need to have the ability to get to the data that they work with and to keep it accessible when the workspace is not being used. For this reason we recommend that you use folder redirection and offline files to redirect the path of local folders (such as the Documents folder) to a network location, while caching the contents locally for increased speed and availability. We also recommend that you use roaming user profiles to synchronize user specific settings so that users receive the same operating system and application settings when using their Windows To Go workspace and their desktop computer. When a user signs in using a domain account that is set up with a file share as the profile path, the user’s profile is downloaded to the local computer and merged with the local profile (if present). When the user logs off the computer, the local copy of their profile, including any changes, is merged with the server copy of the profile. For more information, see [Folder Redirection, Offline Files, and Roaming User Profiles overview](https://go.microsoft.com/fwlink/p/?LinkId=618924).
 
 Windows To Go is fully integrated with your Microsoft account. Setting synchronization is accomplished by connecting a Microsoft account to a user account. Windows To Go devices fully support this feature and can be managed by Group Policy so that the customization and configurations you prefer will be applied to your Windows To Go workspace.
 
 ## Remote connectivity
 
 
-If you want Windows To Go to be able to connect back to organizational resources when it is being used off-premises a remote connectivity solution must be enabled. Windows Server 2012 DirectAccess can be used as can a virtual private network (VPN) solution. For more information about configuring a remote access solution, see the [Remote Access (DirectAccess, Routing and Remote Access) Overview](http://go.microsoft.com/fwlink/p/?LinkId=618925).
+If you want Windows To Go to be able to connect back to organizational resources when it is being used off-premises a remote connectivity solution must be enabled. Windows Server 2012 DirectAccess can be used as can a virtual private network (VPN) solution. For more information about configuring a remote access solution, see the [Remote Access (DirectAccess, Routing and Remote Access) Overview](https://go.microsoft.com/fwlink/p/?LinkId=618925).
 
 ## Related topics
 

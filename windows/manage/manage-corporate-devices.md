@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Manage corporate devices
@@ -33,7 +34,7 @@ Your employees using devices that are owned by the organization can connect to A
 
 You can join a device running Windows 10 to an on-premises Active Directory domain after the first-run experience (sometimes called out-of-box experience or OOBE). You can add devices running Windows 10 to your existing Active Directory infrastructure and manage them just as you've always been used to managing PCs running Windows.
 
-Desktop devices running Windows 10 that are joined to an Active Directory domain can be managed using Group Policy and System Center 2012 R2 Configuration Manager. The following table shows the management support for Windows 10 in Configuration Manager.
+Desktop devices running Windows 10 that are joined to an Active Directory domain can be managed using Group Policy and System Center Configuration Manager (current branch). The following table shows the management support for Windows 10 in Configuration Manager.
 
 <table>
 <colgroup>
@@ -48,7 +49,7 @@ Desktop devices running Windows 10 that are joined to an Active Directory domai
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Microsoft System Center Configuration Manager Technical Preview](http://go.microsoft.com/fwlink/p/?LinkId=613622)</p></td>
+<td align="left"><p>[System Center Configuration Manager (current branch) ](https://technet.microsoft.com/en-us/library/mt346023.aspx)</p></td>
 <td align="left"><p>Client deployment, upgrade, and management with new and existing features</p></td>
 </tr>
 <tr class="even">
@@ -70,7 +71,7 @@ Devices joined to Azure AD can be managed using Microsoft Intune or other mobile
 
 ![mdm options for mobile, desktop, and iot through device lifecycle](images/mdm.png)
 
-For flexibility in identity and management, you can combine Active Directory and Azure AD. Learn about [integrating Active Directory and Azure Active Directory for a hybrid identity solution](http://go.microsoft.com/fwlink/p/?LinkId=613209).
+For flexibility in identity and management, you can combine Active Directory and Azure AD. Learn about [integrating Active Directory and Azure Active Directory for a hybrid identity solution](https://go.microsoft.com/fwlink/p/?LinkId=613209).
 
 ## How setting conflicts are resolved
 
@@ -91,7 +92,7 @@ When setting values that do not have a security implication conflict, last write
 
 Devices running Windows 10 include a built-in agent that can be used by MDM servers to enroll and manage devices. MDM servers do not need to create a separate agent or client to install on devices running Windows 10.
 
-For more information about the MDM protocols, see [Mobile device management](http://go.microsoft.com/fwlink/p/?LinkID=533172).
+For more information about the MDM protocols, see [Mobile device management](https://go.microsoft.com/fwlink/p/?LinkID=533172).
 
 ## Learn more
 
@@ -99,33 +100,32 @@ For more information about the MDM protocols, see [Mobile device management](htt
 
 [Azure AD, Microsoft Intune and Windows 10 - Using the cloud to modernize enterprise mobility](https://blogs.technet.microsoft.com/enterprisemobility/2015/06/12/azure-ad-microsoft-intune-and-windows-10-using-the-cloud-to-modernize-enterprise-mobility/)
 
-[Microsoft Intune End User Enrollment Guide](http://go.microsoft.com/fwlink/p/?LinkID=617169)
+[Microsoft Intune End User Enrollment Guide](https://go.microsoft.com/fwlink/p/?LinkID=617169)
 
-[Azure AD Join on Windows 10 devices](http://go.microsoft.com/fwlink/p/?LinkId=616791)
+[Azure AD Join on Windows 10 devices](https://go.microsoft.com/fwlink/p/?LinkId=616791)
 
-[Azure AD support for Windows 10](http://go.microsoft.com/fwlink/p/?LinkID=615765)
+[Azure AD support for Windows 10](https://go.microsoft.com/fwlink/p/?LinkID=615765)
 
-[Windows 10 and Azure Active Directory: Embracing the Cloud](http://go.microsoft.com/fwlink/p/?LinkId=615768)
+[Windows 10 and Azure Active Directory: Embracing the Cloud](https://go.microsoft.com/fwlink/p/?LinkId=615768)
 
-[How to manage Windows 10 devices using Intune](http://go.microsoft.com/fwlink/p/?LinkId=613620)
+[How to manage Windows 10 devices using Intune](https://go.microsoft.com/fwlink/p/?LinkId=613620)
 
-[Using Intune alone and with Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=613207)
+[Using Intune alone and with Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=613207)
 
-Microsoft Virtual Academy course: [System Center 2012 R2 Configuration Manager & Windows Intune](http://go.microsoft.com/fwlink/p/?LinkId=613208)
+Microsoft Virtual Academy course: [System Center 2012 R2 Configuration Manager & Windows Intune](https://go.microsoft.com/fwlink/p/?LinkId=613208)
 
 ## Related topics
 
 [Manage Windows 10 and Windows Store tips, tricks, and suggestions](manage-tips-and-suggestions.md)
 
-[New policies for Windows 10](new-policies-for-windows-10.md)
+- [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md) 
+- [New policies for Windows 10](new-policies-for-windows-10.md)
+- [Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
+- [Changes to Group Policy settings for Start in Windows 10](changes-to-start-policies-in-windows-10.md)
+- [Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
+- [Introduction to configuration service providers (CSPs) for IT pros](how-it-pros-can-use-configuration-service-providers.md)
 
-[Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
 
-[Changes to Group Policy settings for Start in Windows 10](changes-to-start-policies-in-windows-10.md)
-
-[Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
-
- 
 
  
 

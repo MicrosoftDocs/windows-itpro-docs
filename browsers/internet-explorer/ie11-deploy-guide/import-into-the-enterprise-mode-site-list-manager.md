@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
 description: If you need to replace your entire site list because of errors, or simply because it’s out of date, you can import your exported Enterprise Mode site list using the Enterprise Mode Site List Manager.
-ms.assetid: cacd5d68-700b-4a96-b4c9-ca2c40c1ac5f
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: cacd5d68-700b-4a96-b4c9-ca2c40c1ac5f
 title: Import your Enterprise Mode site list to the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Import your Enterprise Mode site list to the Enterprise Mode Site List Manager
 
@@ -33,8 +35,8 @@ Importing your file overwrites everything that’s currently in the tool, so mak
 3.  Review the alert message about all of your entries being overwritten. If you still want to import the file, click **Yes**.
 
 ## Related topics
-- [Download the Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853)
-- [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
  
 

@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
 description: When you add multiple sites to your Enterprise Mode site list entries, they’re validated by the Enterprise Mode Site List Manager before they’re entered into your global list.
-ms.assetid: 9f80e39f-dcf1-4124-8931-131357f31d67
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: 9f80e39f-dcf1-4124-8931-131357f31d67
 title: Fix validation problems using the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Fix validation problems using the Enterprise Mode Site List Manager
 
@@ -31,8 +33,8 @@ There are typically 3 types of errors you’ll see:
 Another possibility is that redirection happens multiple times, with an intermediary site experiencing compatibility issues. For example, an employee types a short URL that then redirects multiple times, finally ending up on a non-intranet site. In this situation, you might want to add the intermediary URLs to your Enterprise Mode site list, in case there’s logic in one of them that has compatibility issues.
 
 ## Related topics
-- [Download the Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853)
-- [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
  
 

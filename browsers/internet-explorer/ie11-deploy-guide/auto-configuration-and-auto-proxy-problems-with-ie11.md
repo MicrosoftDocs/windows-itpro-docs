@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: networking
 description: Auto configuration and auto proxy problems with Internet Explorer 11
-ms.assetid: 3fbbc2c8-859b-4b2e-abc3-de2c299e0938
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: networking
+ms.assetid: 3fbbc2c8-859b-4b2e-abc3-de2c299e0938
 title: Auto configuration and auto proxy problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Auto configuration and auto proxy problems with Internet Explorer 11
 You might experience some problems using automatic configuration and auto-proxy with Internet Explorer 11.
@@ -30,7 +32,7 @@ If you experience issues while setting up your proxy server, you can try these t
 
 2.  Click **Settings** or **LAN Settings**, and then look at your proxy server address.
 
-3.  If you have multiple proxy servers, click **Advanced** to look at all of the additional addresses.<p>**Note**<br>If IE11 uses a proxy server for local IP addresses, regardless whether you turned on the **Bypass Proxy Server for Local Addresses** option, see [Internet Explorer Uses Proxy Server for Local IP Address Even if the "Bypass Proxy Server for Local Addresses" Option Is Turned On](http://go.microsoft.com/fwlink/p/?LinkId=85652).
+3.  If you have multiple proxy servers, click **Advanced** to look at all of the additional addresses.<p>**Note**<br>If IE11 uses a proxy server for local IP addresses, regardless whether you turned on the **Bypass Proxy Server for Local Addresses** option, see [Internet Explorer Uses Proxy Server for Local IP Address Even if the "Bypass Proxy Server for Local Addresses" Option Is Turned On](https://go.microsoft.com/fwlink/p/?LinkId=85652).
 
  ![](images/wedge.gif) **To check that you've turned on the correct settings**
 

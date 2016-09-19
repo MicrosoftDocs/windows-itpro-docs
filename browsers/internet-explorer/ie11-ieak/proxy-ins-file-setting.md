@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: Use the \[Proxy\] .INS file setting to define whether to use a proxy server.
-ms.assetid: 30b03c2f-e3e5-48d2-9007-e3fd632f3c18
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 30b03c2f-e3e5-48d2-9007-e3fd632f3c18
 title: Use the Proxy .INS file to specify a proxy server (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Use the Proxy .INS file to specify a proxy server
 Info about whether to use a proxy server. If yes, this also includes the host names for the proxy server.
@@ -21,3 +23,4 @@ Info about whether to use a proxy server. If yes, this also includes the host na
 |Secure_Proxy_Server |`<proxy_name>` |The host name for the secure proxy server. |
 |Socks_Proxy_Server |`<proxy_name>` |The host name for the SOCKS proxy server. |
 |Use_Same_Proxy |<ul><li>**0.** Don’t use the same proxy server for all services.</li><li>**1.** Use the same proxy server for all services.</li></ul> |Determines whether to use a single proxy server for all services. |
+

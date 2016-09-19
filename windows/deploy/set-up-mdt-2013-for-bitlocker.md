@@ -5,6 +5,7 @@ description:
 keywords: disk, encryption, TPM, configure, secure, script
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
@@ -24,7 +25,7 @@ To configure your environment for BitLocker, you will need to do the following:
 4.  Configure the rules (CustomSettings.ini) for BitLocker.
 
 **Note**  
-Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery key and TPM owner information in Active Directory. For additional information about these features, see [Backing Up BitLocker and TPM Recovery Information to AD DS](http://go.microsoft.com/fwlink/p/?LinkId=619548). If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
+Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery key and TPM owner information in Active Directory. For additional information about these features, see [Backing Up BitLocker and TPM Recovery Information to AD DS](https://go.microsoft.com/fwlink/p/?LinkId=619548). If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
  
 For the purposes of this topic, we will use DC01, a domain controller that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md#proof).
 
@@ -81,9 +82,10 @@ If you consistently get the error "Windows BitLocker Drive Encryption Informatio
  
 ### Set permissions in Active Directory for BitLocker
 
-In addition to the Group Policy created previously, you need to configure permissions in Active Directory to be able to store the TPM recovery information. In these steps, we assume you have downloaded the [Add-TPMSelfWriteACE.vbs script](http://go.microsoft.com/fwlink/p/?LinkId=167133) from Microsoft to C:\\Setup\\Scripts on DC01.
+In addition to the Group Policy created previously, you need to configure permissions in Active Directory to be able to store the TPM recovery information. In these steps, we assume you have downloaded the [Add-TPMSelfWriteACE.vbs script](https://go.microsoft.com/fwlink/p/?LinkId=167133) from Microsoft to C:\\Setup\\Scripts on DC01.
 1.  On DC01, start an elevated PowerShell prompt (run as Administrator).
 2.  Configure the permissions by running the following command:
+
     ``` syntax
     cscript C:\Setup\Scripts\Add-TPMSelfWriteACE.vbs
     ```
@@ -105,10 +107,12 @@ cctk.exe --tpm=on --valsetuppwd=Password1234
 ### Add tools from HP
 
 The HP tools are part of HP System Software Manager. The executable file from HP is named BiosConfigUtility.exe. This utility uses a configuration file for the BIOS settings. Here is a sample command to enable TPM and set a BIOS password using the BiosConfigUtility.exe tool:
+
 ``` syntax
 BIOSConfigUtility.EXE /SetConfig:TPMEnable.REPSET /NewAdminPassword:Password1234
 ```
 And the sample content of the TPMEnable.REPSET file:
+
 ``` syntax
 English
 Activate Embedded Security On Next Boot
@@ -128,7 +132,7 @@ cscript.exe SetConfig.vbs SecurityChip Active
 ```
 ## <a href="" id="sec03"></a>Configure the Windows 10 task sequence to enable BitLocker
 
-When configuring a task sequence to run any BitLocker tool, either directly or using a custom script, it is helpful if you also add some logic to detect whether the BIOS is already configured on the machine. In this task sequence, we are using a sample script (ZTICheckforTPM.wsf) from the Deployment Guys web page to check the status on the TPM chip. You can download this script from the Deployment Guys Blog post, [Check to see if the TPM is enabled](http://go.microsoft.com/fwlink/p/?LinkId=619549). In the following task sequence, we have added five actions:
+When configuring a task sequence to run any BitLocker tool, either directly or using a custom script, it is helpful if you also add some logic to detect whether the BIOS is already configured on the machine. In this task sequence, we are using a sample script (ZTICheckforTPM.wsf) from the Deployment Guys web page to check the status on the TPM chip. You can download this script from the Deployment Guys Blog post, [Check to see if the TPM is enabled](https://go.microsoft.com/fwlink/p/?LinkId=619549). In the following task sequence, we have added five actions:
 -   **Check TPM Status.** Runs the ZTICheckforTPM.wsf script to determine if TPM is enabled. Depending on the status, the script will set the TPMEnabled and TPMActivated properties to either true or false.
 -   **Configure BIOS for TPM.** Runs the vendor tools (in this case, HP, Dell, and Lenovo). To ensure this action is run only when necessary, add a condition so the action is run only when the TPM chip is not already activated. Use the properties from the ZTICheckforTPM.wsf.
     **Note**  

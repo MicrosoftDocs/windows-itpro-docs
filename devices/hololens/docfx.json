@@ -1,0 +1,37 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "devices/hololens/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "devices/hololens/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {},
+    "fileMetadata": {},
+    "template": [
+      null
+    ],
+    "dest": "devices/hololens"
+  }
+}

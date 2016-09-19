@@ -58,7 +58,7 @@ The image repository can reside on the same system as the MED-V server and the s
 
 ### Fault Tolerance
 
-If the image repository is unavailable, clients will not be able to download new or updated MED-V images. To design fault-tolerance options for the file server and fault-tolerant disks, see the [Infrastructure Planning and Design Microsoft SQL Server 2008](http://go.microsoft.com/fwlink/?LinkId=163302) guide.
+If the image repository is unavailable, clients will not be able to download new or updated MED-V images. To design fault-tolerance options for the file server and fault-tolerant disks, see the [Infrastructure Planning and Design Microsoft SQL Server 2008](https://go.microsoft.com/fwlink/?LinkId=163302) guide.
 
 ## Design and Place the IIS Servers
 
@@ -69,11 +69,11 @@ The IIS server can coexist on the same system as the MED-V server and the server
 
 For each image repository, sum the number of clients that may download MED-V images using IIS. This is the maximum number of concurrent downloads that can occur when an image is loaded into the repository. Use the throughput sum and the service level expectations determined in [Define the Project Scope](define-the-project-scope.md) to plan the design of the IIS server infrastructure and to determine the appropriate amount of bandwidth to allocate for the repository.
 
-To design the IIS infrastructure, see the [Infrastructure Planning and Design Microsoft Internet Information Services](http://go.microsoft.com/fwlink/?LinkId=160826) guide.
+To design the IIS infrastructure, see the [Infrastructure Planning and Design Microsoft Internet Information Services](https://go.microsoft.com/fwlink/?LinkId=160826) guide.
 
 ### Fault Tolerance
 
-If the IIS server infrastructure is unavailable, clients will not be able to download new or updated images. To configure fault tolerance, the Windows Server 2008-based IIS server can be placed in a failover cluster. To design the fault tolerance for the IIS server infrastructure, see the [Infrastructure Planning and Design Microsoft Internet Information Services](http://go.microsoft.com/fwlink/?LinkId=160826) guide.
+If the IIS server infrastructure is unavailable, clients will not be able to download new or updated images. To configure fault tolerance, the Windows Server 2008-based IIS server can be placed in a failover cluster. To design the fault tolerance for the IIS server infrastructure, see the [Infrastructure Planning and Design Microsoft Internet Information Services](https://go.microsoft.com/fwlink/?LinkId=160826) guide.
 
 ## Related topics
 

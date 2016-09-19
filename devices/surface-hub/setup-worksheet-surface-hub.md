@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
-localizationpriority: high
+localizationpriority: medium
 ---
 
 # Setup worksheet (Surface Hub)
@@ -30,12 +30,12 @@ You should fill out one list for each Surface Hub you need to configure, althoug
 <p>Proxy information</p>
 </td>
 <td>
-<p>If your network uses a proxy to for network and/or Internet access, you must provide a script or server/port information.</p>
+<p>If your network uses a proxy for network and/or Internet access, you must provide a script or server/port information.</p>
 </td>
 <td>
-<p>http://contoso/proxy.pa (proxy script)
-OR
-10.10.10.100, port 8080 (server, port)
+<p>Proxy script: http://contoso/proxy.pa </br>
+- OR - </br>
+Server and port info: 10.10.10.100, port 80
 </p>
 </td>
 <td>
@@ -64,7 +64,9 @@ OR
 <p>This is the User Principal Name (UPN) or the domain\username, and the password of the device account. Mail, calendar, and Skype for Business depend on a compatible device account.</p>
 </td>
 <td>
-<p>ConfRoom15@contoso.com, #Passw0rd1 (for UPN) OR CONTOSO\ConfRoom15, #Passw0rd1 (for Domain\username)</p>
+<p> UPN: ConfRoom15@contoso.com, #Passw0rd1 </br>
+- OR - <br> 
+Domain and username: CONTOSO\ConfRoom15, #Passw0rd1</p>
 </td>
 <td>
 <p></p>
@@ -96,7 +98,7 @@ Mail, calendar, and Skype for Business depend on a compatible device account.
 For Skype for Business to work, the device account must have a valid SIP address. The device will try to find this automatically.</p>
 </td>
 <td>
-<p>sip:ConfRoom15@contoso.com</p>
+<p>sip: ConfRoom15@contoso.com</p>
 </td>
 <td>
 <p></p>

@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # First-run program (Surface Hub)
@@ -153,7 +154,7 @@ This screen is purely informational, and shows which recommended settings have b
 
 ### Details
 
-You should read this screen and note which services have been enabled by default. All of them can be changed using the Settings app if need be, but you should be careful about the effects of doing so. For example, Cortana depends on some of these settings, and may not work if you disable them. See [Intro to Surface Hub](intro-to-surface-hub.md) for details.
+You should read this screen and note which services have been enabled by default. All of them can be changed using the Settings app if need be, but you should be careful about the effects of doing so. See [Intro to Surface Hub](intro-to-surface-hub.md) for details.
 
 Once you're done reviewing the settings, click **Next** to go on.
 
@@ -184,9 +185,8 @@ Click **Skip setting up a device account** to skip setting up a device account. 
 
 -   See a meeting calendar on the Welcome screen
 -   Start a meeting from the Welcome screen
--   Start a meeting using Cortana
 -   Email whiteboards from OneNote
--   Use Skype for Business for meetings.
+-   Use Skype for Business for meetings
 
 If you skip setting it up now, you can add a device account later by using the Settings app.
 
@@ -221,7 +221,6 @@ Click **Skip setting up Exchange services** to skip this step. If you do, people
 
 -   See a meeting calendar on the welcome screen.
 -   Start a meeting from the welcome screen.
--   Start a meeting using Cortana.
 -   Email whiteboards from OneNote.
 
 See [Intro to Surface Hub](intro-to-surface-hub.md) for details on setup dependencies.

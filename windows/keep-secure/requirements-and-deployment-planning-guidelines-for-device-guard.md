@@ -4,6 +4,7 @@ description: To help you plan a deployment of Microsoft Device Guard, this artic
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 author: brianlic-msft
 ---
 
@@ -22,7 +23,9 @@ This article describes the following:
 - [Reviewing your applications: application signing and catalog files](#reviewing-your-applications-application-signing-and-catalog-files)
 - [Code integrity policy formats and signing](#code-integrity-policy-formats-and-signing)
 
-The information in this article provides a foundation for [Planning and getting started on the Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
+The information in this article is intended for IT professionals, and provides a foundation for [Planning and getting started on the Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
+
+>**Note**&nbsp;&nbsp;If you are an OEM, see the requirements information at [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514(v=vs.85).aspx).
 
 ## Hardware, firmware, and software requirements for Device Guard
 
@@ -32,9 +35,7 @@ For example, hardware that includes CPU virtualization extensions and SLAT will 
 
 You can deploy Device Guard in phases, and plan these phases in relation to the computer purchases you plan for your next hardware refresh.
 
-The following tables provide more information about the hardware, firmware, and software required for deployment of various Device Guard features.
-
-<!-- POTENTIAL FUTURE ADDITION--PUT RIGHT AFTER PREVIOUS SENTENCE: The tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, available in 2016, and announced as options for 2017. -->
+The following tables provide more information about the hardware, firmware, and software required for deployment of various Device Guard features. The tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, available in 2016, and announced as options for 2017.
 
 > **Notes**
 > - To understand the requirements in the following tables, you will need to be familiar with the main features in Device Guard: configurable code integrity policies, virtualization-based security (VBS), and Universal Extensible Firmware Interface (UEFI) Secure Boot. For information about these features, see [How Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats).
@@ -51,19 +52,38 @@ The following tables provide more information about the hardware, firmware, and 
 | Software: **HVCI compatible drivers**       | **Requirements**: See the Windows Hardware Compatibility Program requirements under [Filter.Driver.DeviceGuard.DriverCompatibility](https://msdn.microsoft.com/library/windows/hardware/mt589732(v=vs.85).aspx).<br><br>**Security benefits**: [HVCI Compatible](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/) drivers help ensure that VBS can maintain appropriate memory permissions. This increases resistance to bypassing vulnerable kernel drivers and helps ensure that malware cannot run in kernel. Only code verified through code integrity can run in kernel mode. |
 | Software: Qualified **Windows operating system**  | **Requirement**: Windows 10 Enterprise, Windows 10 Education, Windows 2016 Server, or Windows Enterprise IoT<br><br>**Security benefits**: Support for VBS and for management features that simplify configuration of Device Guard. |
 
-<!-- When additional tables are added, change "The following table lists" to "The following tables list" in the Important just below. -->
-
-> **Important**&nbsp;&nbsp;The preceding table lists requirements for baseline protections. The following table lists requirements for improved security. You can use Device Guard with hardware, firmware, and software that support baseline protections, even if they do not support protections for improved security. However, we strongly recommend meeting the requirements for improved security, to significantly strengthen the level of security that Device Guard can provide.
+> **Important**&nbsp;&nbsp;The preceding table lists requirements for baseline protections. The following tables list requirements for improved security. You can use Device Guard with hardware, firmware, and software that support baseline protections, even if they do not support protections for improved security. However, we strongly recommend meeting the requirements for improved security, to significantly strengthen the level of security that Device Guard can provide.
 
 ## Device Guard requirements for improved security
 
 The following tables describes additional hardware and firmware requirements, and the improved security that is available when those requirements are met.
 
-### 2015 Additional Qualification Requirements for Device Guard (Windows 10, version 1507 and Windows 10, version 1511)
+### 2015 Additional Qualification Requirements for Device Guard (starting with Windows 10, version 1507, and Windows Server 2016, Technical Preview 4)
 
 | Protections for Improved Security - requirement         | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
 | Firmware: **Securing Boot Configuration and Management** | **Requirements**:<br>- BIOS password or stronger authentication must be supported.<br>- In the BIOS configuration, BIOS authentication must be set.<br>- There must be support for protected BIOS option to configure list of permitted boot devices (for example, “Boot only from internal hard drive”) and boot device order, overriding BOOTORDER modification made by operating system.<br>- In the BIOS configuration, BIOS options related to security and boot options (list of permitted boot devices, boot order) must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings.<br><br>**Security benefits**:<br>- BIOS password or stronger authentication helps ensure that only authenticated Platform BIOS administrators can change BIOS settings. This helps protect against a physically present user with BIOS access.<br>- Boot order when locked provides protection against the computer being booted into WinRE or another operating system on bootable media. |
+
+<br>
+
+### 2016 Additional Qualification Requirements for Device Guard (starting with Windows 10, version 1607, and Windows Server 2016)
+
+> **Important**&nbsp;&nbsp;The following tables list requirements for improved security, beyond the level of protection described in the preceding tables. You can use Device Guard with hardware, firmware, and software that do not support the following protections for improved security. As your systems meet more requirements, more protections become available to them.
+
+| Protections for Improved Security - requirement         | Description                                        |
+|---------------------------------------------|----------------------------------------------------|
+| Firmware: **Hardware Rooted Trust Platform Secure Boot** | **Requirements**:<br>Boot Integrity (Platform Secure Boot) must be supported. See the Windows Hardware Compatibility Program requirements under [System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby](https://msdn.microsoft.com/library/windows/hardware/dn932807(v=vs.85).aspx#system_fundamentals_firmware_cs_uefisecureboot_connectedstandby)<br>- The Hardware Security Test Interface (HSTI) must be implemented. See [Hardware Security Testability Specification](https://msdn.microsoft.com/en-us/library/windows/hardware/mt712332(v=vs.85).aspx).<br><br>**Security benefits**:<br>- Boot Integrity (Platform Secure Boot) from Power-On provides protections against physically present attackers, and defense-in-depth against malware.<br>- HSTI provides additional security assurance for correctly secured silicon and platform. |
+| Firmware: **Firmware Update through Windows Update** | **Requirements**: Firmware must support field updates through Windows Update and UEFI encapsulation update.<br><br>**Security benefits**: Helps ensure that firmware updates are fast, secure, and reliable. |
+| Firmware: **Securing Boot Configuration and Management** | **Requirements**:<br>- Required BIOS capabilities: Ability of OEM to add ISV, OEM, or Enterprise Certificate in Secure Boot DB at manufacturing time.<br>- Required configurations: Microsoft UEFI CA must be removed from Secure Boot DB. Support for 3rd-party UEFI modules is permitted but should leverage ISV-provided certificates or OEM certificate for the specific UEFI software.<br><br>**Security benefits**:<br>- Enterprises can choose to allow proprietary EFI drivers/applications to run.<br>- Removing Microsoft UEFI CA from Secure Boot DB provides full control to enterprises over software that runs before the operating system boots. |
+
+<br>
+
+### 2017 Additional Qualification Requirements for Device Guard (announced as options for future Windows operating systems for 2017) 
+
+| Protections for Improved Security - requirement         | Description                                        |
+|---------------------------------------------|----------------------------------------------------|
+| Firmware: **UEFI NX Protections**  | **Requirements**:<br>- All UEFI memory that is marked executable must be read only. Memory marked writable must not be executable.<br><br>UEFI Runtime Services:<br>- Must implement the UEFI 2.6 EFI_MEMORY_ATTRIBUTES_TABLE. The entire UEFI runtime must be described by this table.<br>- All entries must include attributes EFI_MEMORY_RO, EFI_MEMORY_XP, or both.<br>- No entries may be left with neither of the above attributes, indicating memory that is both executable and writable. Memory MUST be either readable and executable OR writeable and non-executable.<br><br>**Security benefits**:<br>- Protects against potential vulnerabilities in UEFI runtime in functions such as Update Capsule, Set Variables, and so on, so they can't compromise VBS.<br>- Reduces attack surface to VBS from system firmware. |
+| Firmware: **Firmware support for SMM protection** | **Requirements**: The [Windows SMM Security Mitigations Table (WSMT) specification](http://download.microsoft.com/download/1/8/A/18A21244-EB67-4538-BAA2-1A54E0E490B6/WSMT.docx) contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features.<br><br>**Security benefits**:<br>- Protects against potential vulnerabilities in UEFI runtime in functions such as Update Capsule, Set Variables, and so on, so they can't compromise VBS.<br>- Reduces attack surface to VBS from system firmware.<br>- Blocks additional security attacks against SMM. |
 
 ## Device Guard deployment in different scenarios: types of devices
 

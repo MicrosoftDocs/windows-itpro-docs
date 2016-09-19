@@ -20,33 +20,33 @@ Read these Release Notes thoroughly before you install the Microsoft Application
 
  
 
-For updated information about known issues, please visit the Microsoft TechNet Library at [App-V 4.5 SP2 Release Notes](http://go.microsoft.com/fwlink/?LinkId=184640) (http://go.microsoft.com/fwlink/?LinkId=184640).
+For updated information about known issues, please visit the Microsoft TechNet Library at [App-V 4.5 SP2 Release Notes](https://go.microsoft.com/fwlink/?LinkId=184640) (https://go.microsoft.com/fwlink/?LinkId=184640).
 
 ## About Microsoft Application Virtualization 4.5 Service Pack 2
 
 
 These Release Notes have been updated to reflect the changes introduced with Microsoft Application Virtualization (App-V) 4.5 Service Pack 2 (SP2). This service pack contains the following changes:
 
--   Support for Office 2010: App-V 4.5 SP2 now supports the virtualization of Microsoft Office 2010. For prescriptive guidance for sequencing Microsoft Office 2010 with App-V 4.5 SP2, see [Prescriptive guidance for sequencing Office 2010 in Microsoft App-V 4.6](http://go.microsoft.com/fwlink/?LinkId=191539) (http://go.microsoft.com/fwlink/?LinkId=191539).
+-   Support for Office 2010: App-V 4.5 SP2 now supports the virtualization of Microsoft Office 2010. For prescriptive guidance for sequencing Microsoft Office 2010 with App-V 4.5 SP2, see [Prescriptive guidance for sequencing Office 2010 in Microsoft App-V 4.6](https://go.microsoft.com/fwlink/?LinkId=191539) (https://go.microsoft.com/fwlink/?LinkId=191539).
 
--   Support for Database Mirroring: App-V 4.5 SP2 now supports Microsoft SQL Server Database Mirroring. For more information about configuring database mirroring in your App-V environment, see [How to Configure Microsoft SQL Server Mirroring Support for App-V](http://go.microsoft.com/fwlink/?LinkId=190880) (http://go.microsoft.com/fwlink/?LinkId=190880).
+-   Support for Database Mirroring: App-V 4.5 SP2 now supports Microsoft SQL Server Database Mirroring. For more information about configuring database mirroring in your App-V environment, see [How to Configure Microsoft SQL Server Mirroring Support for App-V](https://go.microsoft.com/fwlink/?LinkId=190880) (https://go.microsoft.com/fwlink/?LinkId=190880).
 
--   Customer Feedback and Hotfix Rollup: App-V 4.5 SP2 also includes a rollup of fixes to address issues found after the App-V  4.5 SP1 release. The updates address a combination of known issues and customer feedback from Microsoft internal teams, partners, and customers who are using App-V 4.5. For a full list of the updates, see article 980847 in the Microsoft Knowledge Base (KB) at [Description of Microsoft Application Virtualization 4.5 Service Pack 2](http://go.microsoft.com/fwlink/?LinkId=191540) (http://go.microsoft.com/fwlink/?LinkId=191540).
+-   Customer Feedback and Hotfix Rollup: App-V 4.5 SP2 also includes a rollup of fixes to address issues found after the App-V  4.5 SP1 release. The updates address a combination of known issues and customer feedback from Microsoft internal teams, partners, and customers who are using App-V 4.5. For a full list of the updates, see article 980847 in the Microsoft Knowledge Base (KB) at [Description of Microsoft Application Virtualization 4.5 Service Pack 2](https://go.microsoft.com/fwlink/?LinkId=191540) (https://go.microsoft.com/fwlink/?LinkId=191540).
 
 ## About the Product Documentation
 
 
-Comprehensive documentation for Application Virtualization (App-V) is available on Microsoft TechNet in the [Application Virtualization TechCenter Library](http://go.microsoft.com/fwlink/?LinkId=122939) (http://go.microsoft.com/fwlink/?LinkId=122939). The TechNet documentation includes the online Help for the Application Virtualization Sequencer, the Application Virtualization Clients, and the Application Virtualization Server. It also includes the Application Virtualization Planning and Deployment Guide and the Application Virtualization Operations Guide.
+Comprehensive documentation for Application Virtualization (App-V) is available on Microsoft TechNet in the [Application Virtualization TechCenter Library](https://go.microsoft.com/fwlink/?LinkId=122939) (https://go.microsoft.com/fwlink/?LinkId=122939). The TechNet documentation includes the online Help for the Application Virtualization Sequencer, the Application Virtualization Clients, and the Application Virtualization Server. It also includes the Application Virtualization Planning and Deployment Guide and the Application Virtualization Operations Guide.
 
 ## Protect Against Security Vulnerabilities and Viruses
 
 
-To help protect against security vulnerabilities and viruses, we recommend that you install the latest available security updates for any new software being installed. For more information, see [Microsoft Security](http://go.microsoft.com/fwlink/?LinkId=3482) (http://go.microsoft.com/fwlink/?LinkId=3482).
+To help protect against security vulnerabilities and viruses, we recommend that you install the latest available security updates for any new software being installed. For more information, see [Microsoft Security](https://go.microsoft.com/fwlink/?LinkId=3482) (https://go.microsoft.com/fwlink/?LinkId=3482).
 
 ## Provide Feedback
 
 
-You can provide feedback, make a suggestion, or report an issue with the Microsoft Application Virtualization (App-V) Management System through the community forum on the Application Virtualization TechCenter [App-V Documentation Forum](http://go.microsoft.com/fwlink/?LinkId=122917) (http://go.microsoft.com/fwlink/?LinkId=122917).
+You can provide feedback, make a suggestion, or report an issue with the Microsoft Application Virtualization (App-V) Management System through the community forum on the Application Virtualization TechCenter [App-V Documentation Forum](https://go.microsoft.com/fwlink/?LinkId=122917) (https://go.microsoft.com/fwlink/?LinkId=122917).
 
 You can also send your documentation feedback directly to the App-V documentation team at <appvdocs@microsoft.com>.
 
@@ -57,13 +57,13 @@ This section provides the most up-to-date information about issues with Microsof
 
 ### Guidance for installing Server Management Console
 
-If you have to install management software on systems other than the primary Application Virtualization publishing and streaming server, the server installation supports installing the Application Virtualization Management Console and Application Virtualization Management Web service on separate servers from the primary App-V Management Server. To distribute the management components across multiple servers, Kerberos delegation must be enabled on the server where the Application Virtualization Web service is installed. For information about how to enable this support, see [How to Configure the Server to be Trusted for Delegation](http://go.microsoft.com/fwlink/?LinkId=166682) (http://go.microsoft.com/fwlink/?LinkId=166682).
+If you have to install management software on systems other than the primary Application Virtualization publishing and streaming server, the server installation supports installing the Application Virtualization Management Console and Application Virtualization Management Web service on separate servers from the primary App-V Management Server. To distribute the management components across multiple servers, Kerberos delegation must be enabled on the server where the Application Virtualization Web service is installed. For information about how to enable this support, see [How to Configure the Server to be Trusted for Delegation](https://go.microsoft.com/fwlink/?LinkId=166682) (https://go.microsoft.com/fwlink/?LinkId=166682).
 
 ### Guidance for installing or upgrading clients to App-V 4.5 SP2 by using Setup.msi
 
 When installing or upgrading your App-V Clients to App-V 4.5 SP2 by using Setup.msi, the prerequisites are not installed automatically.
 
-WORKAROUND   You must manually install the prerequisites before installing or upgrading the App-V Clients to App-V 4.5 SP2. For detailed procedures about how to install the prerequisites and the App-V Client, see [How to Install the Client by Using the Command Line](http://go.microsoft.com/fwlink/?LinkId=144106) (http://go.microsoft.com/fwlink/?LinkId=144106).
+WORKAROUND   You must manually install the prerequisites before installing or upgrading the App-V Clients to App-V 4.5 SP2. For detailed procedures about how to install the prerequisites and the App-V Client, see [How to Install the Client by Using the Command Line](https://go.microsoft.com/fwlink/?LinkId=144106) (https://go.microsoft.com/fwlink/?LinkId=144106).
 
 When this has been completed, install the App-V 4.5 SP2 Clients by using Setup.msi with administrative credentials. This file is available on the App-V 4.5 SP2 release media in the Installers\\Client folder.
 
@@ -158,11 +158,11 @@ When using Internet Information Services (IIS) 6.0 or IIS 7.0 for icon or OSD
 
     **Setspn -r HTTP/&lt;Server FQDN&gt;**
 
-For more information, see [Integrated Windows Authentication (IIS 6.0)](http://go.microsoft.com/fwlink/?LinkId=131407) (http://go.microsoft.com/fwlink/?LinkId=131407).
+For more information, see [Integrated Windows Authentication (IIS 6.0)](https://go.microsoft.com/fwlink/?LinkId=131407) (https://go.microsoft.com/fwlink/?LinkId=131407).
 
 ### .NET compatibility changes
 
-Microsoft Application Virtualization (App-V) Cumulative Update 1 or later supports sequencing the .NET Framework on Windows XP SP2 or later. Sequencing routines for .NET applications that were written for SoftGrid 4.2 might have to be updated when used with the App-V 4.5 Sequencer. For details and workarounds, see the Application Virtualization TechCenter article at [Support for .NET in Microsoft Application Virtualization 4.5](http://go.microsoft.com/fwlink/?LinkId=123412) (http://go.microsoft.com/fwlink/?LinkId=123412).
+Microsoft Application Virtualization (App-V) Cumulative Update 1 or later supports sequencing the .NET Framework on Windows XP SP2 or later. Sequencing routines for .NET applications that were written for SoftGrid 4.2 might have to be updated when used with the App-V 4.5 Sequencer. For details and workarounds, see the Application Virtualization TechCenter article at [Support for .NET in Microsoft Application Virtualization 4.5](https://go.microsoft.com/fwlink/?LinkId=123412) (https://go.microsoft.com/fwlink/?LinkId=123412).
 
 ### <a href="" id="after-client-upgrade-from-app-v-4-2--some-applications-are-not-shown-"></a>After client upgrade from App-V 4.2, some applications are not shown
 
@@ -192,7 +192,7 @@ Application Virtualization administrators must have Read and Execute permissions
 
 When used in conjunction with KEEPCURRENTSETTINGS=1, the following client installer command-line parameters are ignored: SWICACHESIZE, MINFREESPACEMB, ALLOWINDEPENDENTFILESTREAMING, APPLICATIONSOURCEROOT, ICONSOURCEROOT, OSDSOURCEROOT, SYSTEMEVENTLOGLEVEL, SWIGLOBALDATA, DOTIMEOUTMINUTES, SWIFSDRIVE, AUTOLOADTARGET, AUTOLOADTRIGGERS, SWIUSERDATA, and REQUIRESECURECONNECTION.
 
-WORKAROUND   If you have settings you want to retain, use KEEPCURRENTSETTINGS=1, and then set the other parameters after deployment. The App-V ADM Template can be used to set the following client settings: APPLICATIONSOURCEROOT, ICONSOURCEROOT, OSDSOURCEROOT, AUTOLOADTARGET, AUTOLOADTRIGGERS, DOTIMEOUTMINUTES, and ALLOWINDEPENDENTFILESTREAMING. You can download the ADM Template from the Microsoft DownLoad Center at [Microsoft Application Virtualization Administrative Template (ADM Template)](http://go.microsoft.com/fwlink/?LinkId=121835) (http://go.microsoft.com/fwlink/?LinkId=121835).
+WORKAROUND   If you have settings you want to retain, use KEEPCURRENTSETTINGS=1, and then set the other parameters after deployment. The App-V ADM Template can be used to set the following client settings: APPLICATIONSOURCEROOT, ICONSOURCEROOT, OSDSOURCEROOT, AUTOLOADTARGET, AUTOLOADTRIGGERS, DOTIMEOUTMINUTES, and ALLOWINDEPENDENTFILESTREAMING. You can download the ADM Template from the Microsoft DownLoad Center at [Microsoft Application Virtualization Administrative Template (ADM Template)](https://go.microsoft.com/fwlink/?LinkId=121835) (https://go.microsoft.com/fwlink/?LinkId=121835).
 
 ### Release Notes Copyright Information
 

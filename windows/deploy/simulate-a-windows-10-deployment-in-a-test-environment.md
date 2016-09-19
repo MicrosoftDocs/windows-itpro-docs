@@ -5,6 +5,7 @@ ms.assetid: 2de86c55-ced9-4078-b280-35e0329aea9c
 keywords: deploy, script
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
@@ -13,7 +14,7 @@ author: mtniehaus
 # Simulate a Windows 10 deployment in a test environment
 
 This topic will walk you through the process of creating a simulated environment on which to test your Windows 10 deployment using MDT. When working with advanced settings and rules, especially those like database calls, it is most efficient to be able to test the settings without having to run through a complete deployment. Luckily, MDT enables you to perform a simulated deployment by running the Gather process by itself. The simulation works best when you are using a domain-joined machine (client or server). In the following example, you use the PC0001 Windows 10 client.
-For the purposes of this topic, you already will have either downloaded and installed the free Microsoft System Center 2012 R2 Configuration Manager Toolkit, or copied Configuration Manager Trace (CMTrace) if you have access to the System Center 2012 R2 Configuration Manager media. We also assume that you have downloaded the [sample Gather.ps1 script](http://go.microsoft.com/fwlink/p/?LinkId=619361) from the TechNet gallery.
+For the purposes of this topic, you already will have either downloaded and installed the free Microsoft System Center 2012 R2 Configuration Manager Toolkit, or copied Configuration Manager Trace (CMTrace) if you have access to the System Center 2012 R2 Configuration Manager media. We also assume that you have downloaded the [sample Gather.ps1 script](https://go.microsoft.com/fwlink/p/?LinkId=619361) from the TechNet gallery.
 
 1.  On PC0001, log on as **CONTOSO\\Administrator** using the password **P@ssw0rd**.
 2.  Using Computer Management, add the **CONTOSO\\MDT\_BA** user account to the local **Administrators** group.

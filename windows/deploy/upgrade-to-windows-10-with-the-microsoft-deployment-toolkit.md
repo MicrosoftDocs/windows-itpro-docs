@@ -5,6 +5,7 @@ ms.assetid: B8993151-3C1E-4F22-93F4-2C5F2771A460
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
@@ -100,5 +101,5 @@ After the task sequence completes, the computer will be fully upgraded to Window
 
 [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 
-[Microsoft Deployment Toolkit downloads and resources](http://go.microsoft.com/fwlink/p/?LinkId=618117)
+[Microsoft Deployment Toolkit downloads and resources](https://go.microsoft.com/fwlink/p/?LinkId=618117)
  

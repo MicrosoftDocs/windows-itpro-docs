@@ -32,11 +32,11 @@ To create a virtual image for MED-V, you must follow these steps.
 
 To create a Windows Virtual PC image, see the Windows Virtual PC documentation:
 
--   [Windows Virtual PC Home Page](http://go.microsoft.com/fwlink/?LinkId=148103) (http://go.microsoft.com/fwlink/?LinkId=148103).
+-   [Windows Virtual PC Home Page](https://go.microsoft.com/fwlink/?LinkId=148103) (https://go.microsoft.com/fwlink/?LinkId=148103).
 
--   [Windows Virtual PC Help](http://go.microsoft.com/fwlink/?LinkId=182378) (http://go.microsoft.com/fwlink/?LinkId=182378).
+-   [Windows Virtual PC Help](https://go.microsoft.com/fwlink/?LinkId=182378) (https://go.microsoft.com/fwlink/?LinkId=182378).
 
-Alternately, if you already have a Windows Imaging (WIM) file that you want to use as the basis for your virtual image, you can convert it to a VHD that you use to build the MED-V workspace. For more information about how to convert a WIM to a virtual hard disk, see [Native VHD Support in Windows 7](http://go.microsoft.com/fwlink/?LinkId=195922) (http://go.microsoft.com/fwlink/?LinkId=195922).
+Alternately, if you already have a Windows Imaging (WIM) file that you want to use as the basis for your virtual image, you can convert it to a VHD that you use to build the MED-V workspace. For more information about how to convert a WIM to a virtual hard disk, see [Native VHD Support in Windows 7](https://go.microsoft.com/fwlink/?LinkId=195922) (https://go.microsoft.com/fwlink/?LinkId=195922).
 
 **Important**  
 MED-V only supports one virtual hard disk per virtual machine and only one partition on each virtual disk.
@@ -50,12 +50,12 @@ After you have created your virtual hard disk, install Windows XP on the image.
 
 MED-V requires that Windows XP SP3 is installed on the Windows Virtual PC image before you build the MED-V workspace.
 
-For more information about how to install Windows XP, see [Create a virtual machine and install a guest operating system](http://go.microsoft.com/fwlink/?LinkId=182379) (http://go.microsoft.com/fwlink/?LinkId=182379).
+For more information about how to install Windows XP, see [Create a virtual machine and install a guest operating system](https://go.microsoft.com/fwlink/?LinkId=182379) (https://go.microsoft.com/fwlink/?LinkId=182379).
 
 ## <a href="" id="bkmk-installingnet"></a>Installing the .NET Framework 3.5 SP1 on a Windows Virtual PC Image
 
 
-You must manually install the .NET Framework 3.5 SP1 and the update KB959209 into the Windows Virtual PC image that you prepare for use with MED-V. The update [KB959209](http://go.microsoft.com/fwlink/?LinkId=204950) (http://go.microsoft.com/fwlink/?LinkId=204950) addresses several known application compatibility issues.
+You must manually install the .NET Framework 3.5 SP1 and the update KB959209 into the Windows Virtual PC image that you prepare for use with MED-V. The update [KB959209](https://go.microsoft.com/fwlink/?LinkId=204950) (https://go.microsoft.com/fwlink/?LinkId=204950) addresses several known application compatibility issues.
 
 ## <a href="" id="bkmk-applypatchestovpc"></a>Applying Updates to the Windows Virtual PC Image
 
@@ -74,7 +74,7 @@ When you install updates to Windows XP, make sure that you remain on the version
 
 ### Installing an Optional Performance Update
 
-Although it is optional, we recommend that you install the following update for [hotfix KB972435](http://go.microsoft.com/fwlink/?LinkId=201077) (http://go.microsoft.com/fwlink/?LinkId=201077). This update increases the performance of shared folders in a Terminal Services session:
+Although it is optional, we recommend that you install the following update for [hotfix KB972435](https://go.microsoft.com/fwlink/?LinkId=201077) (https://go.microsoft.com/fwlink/?LinkId=201077). This update increases the performance of shared folders in a Terminal Services session:
 
 **Note**  
 The update is publically available. However, you might be prompted to accept an agreement for Microsoft Services. Follow the prompts on the successive webpages to retrieve this hotfix.
@@ -107,16 +107,16 @@ When you configure the virtual image to work with MED-V, you must manually insta
 
 For more information about how to install and use the Integration Components package, see the following:
 
--   [Install or Upgrade the Integration Components Package](http://go.microsoft.com/fwlink/?LinkId=195923) (http://go.microsoft.com/fwlink/?LinkId=195923).
+-   [Install or Upgrade the Integration Components Package](https://go.microsoft.com/fwlink/?LinkId=195923) (https://go.microsoft.com/fwlink/?LinkId=195923).
 
--   [About Integration Features](http://go.microsoft.com/fwlink/?LinkId=195924) (http://go.microsoft.com/fwlink/?LinkId=195924).
+-   [About Integration Features](https://go.microsoft.com/fwlink/?LinkId=195924) (https://go.microsoft.com/fwlink/?LinkId=195924).
 
 ### Installing RemoteApp Update
 
 After you install the Integration Components package, you are prompted to install the following update: "Update for Windows XP SP3 to enable RemoteApp." This is a required component for MED-V.
 
 **Important**  
-If you are not prompted to install the RemoteApp update, you must download and install it manually. For more information and instructions about how to download this update, see [Update for Windows XP SP3 to enable RemoteApp](http://go.microsoft.com/fwlink/?LinkId=195925) (http://go.microsoft.com/fwlink/?LinkId=195925).
+If you are not prompted to install the RemoteApp update, you must download and install it manually. For more information and instructions about how to download this update, see [Update for Windows XP SP3 to enable RemoteApp](https://go.microsoft.com/fwlink/?LinkId=195925) (https://go.microsoft.com/fwlink/?LinkId=195925).
 
  
 
@@ -124,12 +124,12 @@ If you are not prompted to install the RemoteApp update, you must download and i
 
 By default, Remote Desktop is enabled after you install the Integration Components package. For MED-V to be operational, ensure that Remote Desktop is enabled, and do not distribute any Group Policy that disables it.
 
-For information about how to enable Remote Desktop, see [Enable or disable Remote Desktop](http://go.microsoft.com/fwlink/?LinkId=201162) (http://go.microsoft.com/fwlink/?LinkId=201162).
+For information about how to enable Remote Desktop, see [Enable or disable Remote Desktop](https://go.microsoft.com/fwlink/?LinkId=201162) (https://go.microsoft.com/fwlink/?LinkId=201162).
 
 ## Customizing Internet Explorer by Using the Internet Explorer Administration Kit
 
 
-If you want, you can use the Internet Explorer Administration Kit to customize Internet Explorer on the guest operating system. For more information, see the [Internet Explorer 6 Administration Kit and Deployment Guide](http://go.microsoft.com/fwlink/?LinkId=200007) (http:// go.microsoft.com/fwlink/?LinkId=200007).
+If you want, you can use the Internet Explorer Administration Kit to customize Internet Explorer on the guest operating system. For more information, see the [Internet Explorer 6 Administration Kit and Deployment Guide](https://go.microsoft.com/fwlink/?LinkId=200007) (http:// go.microsoft.com/fwlink/?LinkId=200007).
 
 **Warning**  
 You should consider security concerns associated with customizing Internet Explorer in the MED-V workspace. For more information, see [Security Best Practices for MED-V Operations](security-best-practices-for-med-v-operations.md).

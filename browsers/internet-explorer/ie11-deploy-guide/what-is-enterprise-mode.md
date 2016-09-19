@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
 description: Info about the features included in Enterprise Mode with Internet Explorer 11.
-ms.assetid: 3c77e9f3-eb21-46d9-b5aa-f9b2341cfefa
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: 3c77e9f3-eb21-46d9-b5aa-f9b2341cfefa
 title: What is Enterprise Mode (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # What is Enterprise Mode?
 
@@ -30,7 +32,7 @@ Enterprise Mode includes the following features:
 -   **Improved web app and website compatibility.** Through improved emulation, Enterprise Mode lets many legacy web apps run unmodified on IE11, supporting a number of site patterns that aren’t currently supported by existing document modes.
 
 -   **Tool-based management for website lists.** Use the Enterprise Mode Site List Manager to add website domains and domain paths and to specify whether a site renders using Enterprise Mode. <p>
-Download the [Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853) or the [Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378), based on your operating system and schema.
+Download the [Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853) or the [Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378), based on your operating system and schema.
 
 -   **Centralized control.** You can specify the websites or web apps to interpret using Enterprise Mode, through an XML file on a website or stored locally. Domains and paths within those domains can be treated differently, allowing granular control. Use Group Policy to let users turn Enterprise Mode on or off from the **Tools** menu and to decide whether the Enterprise browser profile appears on the **Emulation** tab of the F12 developer tools.<p>**Important**<br>All centrally-made decisions override any locally-made choices. 
 

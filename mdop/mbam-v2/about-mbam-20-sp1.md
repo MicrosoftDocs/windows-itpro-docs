@@ -131,7 +131,7 @@ You can configure a localized version of the Self-Service Portal “HelpdeskText
 
 2.  In the **Actions** pane, click **Add** to open the **Add Application Setting** dialog box.
 
-3.  In the **Name** field, type **HelpdeskText**\_&lt;*language*&gt;, where &lt;*language*&gt; is the appropriate language code for the text. For example, to create a localized HelpdeskText statement in Spanish, you would name the parameter HelpdeskText\_es-es. For a list of the valid language codes that you can use, see [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=317947).
+3.  In the **Name** field, type **HelpdeskText**\_&lt;*language*&gt;, where &lt;*language*&gt; is the appropriate language code for the text. For example, to create a localized HelpdeskText statement in Spanish, you would name the parameter HelpdeskText\_es-es. For a list of the valid language codes that you can use, see [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=317947).
 
 4.  In the **Value** field, type the localized text that you want to display to end users.
 
@@ -145,7 +145,7 @@ You can configure a localized version of the Self-Service Portal HelpdeskURL to 
 
 2.  In the **Actions** pane, click **Add** to open the **Add Application Setting** dialog box.
 
-3.  In the **Name** field, type **HelpdeskURL**\_&lt;*language*&gt;, where &lt;*language*&gt; is the appropriate language code for the URL. For example, to create a localized HelpdeskURL in Spanish, you would name the parameter HelpdeskURL\_es-es. For a list of the valid language codes you can use, see [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=317947).
+3.  In the **Name** field, type **HelpdeskURL**\_&lt;*language*&gt;, where &lt;*language*&gt; is the appropriate language code for the URL. For example, to create a localized HelpdeskURL in Spanish, you would name the parameter HelpdeskURL\_es-es. For a list of the valid language codes you can use, see [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=317947).
 
 4.  In the **Value** field, type the localized HelpdeskURL that you want to display to end users.
 
@@ -181,7 +181,7 @@ If an end user’s browser is set to a language that does not have a correspondi
     &lt;*MBAM Self-Service Install Directory*&gt;\\Self Service Website\\
 
     **Note**  
-    Some language folders already exist, so you may not have to create one. If you do need to create a language folder, see [National Language Support (NLS) API Reference](http://go.microsoft.com/fwlink/?LinkId=317947) for a list of the valid names that you can use for the &lt;*language*&gt; folder.
+    Some language folders already exist, so you may not have to create one. If you do need to create a language folder, see [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=317947) for a list of the valid names that you can use for the &lt;*language*&gt; folder.
 
      
 
@@ -470,7 +470,7 @@ MBAM 2.0 SP1 is now available in the following languages:
 ## How to Get MDOP Technologies
 
 
-MBAM 2.0 SP1 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](http://go.microsoft.com/fwlink/?LinkId=322049) (http://go.microsoft.com/fwlink/?LinkId=322049).
+MBAM 2.0 SP1 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049) (https://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## Related topics
 

@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: explore
 description: Frequently asked questions about Internet Explorer 11 for IT Pros
-ms.assetid: 140e7d33-584a-44da-8c68-6c1d568e1de3
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: explore
-ms.sitesec: library
+ms.assetid: 140e7d33-584a-44da-8c68-6c1d568e1de3
 title: Internet Explorer 11 - FAQ for IT Pros (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Internet Explorer 11 - FAQ for IT Pros
 Answering frequently asked questions about Internet Explorer 11 (IE11) features, operating system support, integration with the Windows operating system, Group Policy, and general configuration.
@@ -30,7 +32,7 @@ Answering frequently asked questions about Internet Explorer 11 (IE11) features
 IE11 is preinstalled with Windows 8.1 and Windows Server 2012 R2. No additional action is required.
 
 **Q: How do I install IE11 on Windows 7 with SP1 or Windows Server 2008 R2 with SP1?**<br>
-You can install IE11 on computers running either Windows 7 with SP1 or Windows Server 2008 R2 with SP1. To download IE11, see the IE11 [home page](http://go.microsoft.com/fwlink/p/?LinkId=290956).
+You can install IE11 on computers running either Windows 7 with SP1 or Windows Server 2008 R2 with SP1. To download IE11, see the IE11 [home page](https://go.microsoft.com/fwlink/p/?LinkId=290956).
 
 **Q: How does IE11 integrate with Windows 8.1?**<br>
 IE11 is the default handler for the HTTP and HTTPS protocols and the default browser for Windows 8.1. There are two experiences in Windows 8.1: Internet Explorer and Internet Explorer for the desktop. IE is the default browser for touch-first, immersive experiences. Internet Explorer for the desktop provides a more traditional window and tab management experience. The underlying platform of IE11 is fully interoperable across both IE and the familiar Internet Explorer for the desktop, letting developers write the same markup for both experiences.
@@ -56,10 +58,10 @@ Supported web standards include:
 
 -   And mutation observers like DOM4 and 5.3
 
-For more information about specific changes and additions, see the [IE11 guide for developers](http://go.microsoft.com/fwlink/p/?LinkId=313188).
+For more information about specific changes and additions, see the [IE11 guide for developers](https://go.microsoft.com/fwlink/p/?LinkId=313188).
 
 **Q: What test tools exist to test for potential application compatibility issues?**<br>
-The Compat Inspector tool supports Windows Internet Explorer 9 through IE11. For more information, see [Compat Inspector User Guide](http://go.microsoft.com/fwlink/p/?LinkId=313189). In addition, you can use the new [F12 Developer Tools](http://go.microsoft.com/fwlink/p/?LinkId=313190) that are included with IE11, or the [modern.ie](http://go.microsoft.com/fwlink/p/?linkid=308902) website for Microsoft Edge.
+The Compat Inspector tool supports Windows Internet Explorer 9 through IE11. For more information, see [Compat Inspector User Guide](https://go.microsoft.com/fwlink/p/?LinkId=313189). In addition, you can use the new [F12 Developer Tools](https://go.microsoft.com/fwlink/p/?LinkId=313190) that are included with IE11, or the [modern.ie](https://go.microsoft.com/fwlink/p/?linkid=308902) website for Microsoft Edge.
 
 **Q: Why am I having problems launching my legacy apps with Internet Explorer 11**?<br>
 It’s most likely because IE no longer starts apps that use managed browser hosting controls, like in the .NET Framework 1.1 and 2.0. You can get IE11 to use managed browser hosting controls again, by:
@@ -68,10 +70,10 @@ It’s most likely because IE no longer starts apps that use managed browser hos
 
 -   **For x64 systems or for 64-bit processes on x64 systems:** Go to the `HKLM\SOFTWARE\Wow6432Node\.NETFramework` registry key and change the **EnableIEHosting** value to **1**.
 
-For more information, see the [Web Applications](http://go.microsoft.com/fwlink/p/?LinkId=308903) section of the Application Compatibility in the .NET Framework 4.5 page.
+For more information, see the [Web Applications](https://go.microsoft.com/fwlink/p/?LinkId=308903) section of the Application Compatibility in the .NET Framework 4.5 page.
 
 **Q: Is there a compatibility list for IE?**<br>
-Yes. You can review the XML-based [compatibility version list](http://go.microsoft.com/fwlink/p/?LinkId=403864).
+Yes. You can review the XML-based [compatibility version list](https://go.microsoft.com/fwlink/p/?LinkId=403864).
 
 **Q: What is Enterprise Mode?**<br>
 Enterprise Mode is a compatibility mode designed for Enterprises. This mode lets websites render using a modified browser configuration that’s designed to avoid the common compatibility problems associated with web apps written and tested on older versions of IE, like Windows Internet Explorer 7 or Windows Internet Explorer 8.<p>
@@ -82,7 +84,7 @@ Enterprise Mode Site List Manager tool gives you a way to add websites to your E
 For more information, see all of the topics in [Use the Enterprise Mode Site List Manager](../ie11-deploy-guide/use-the-enterprise-mode-site-list-manager.md).
 
 **Q: Are browser plug-ins supported in IE11?**<br>
-The immersive version of IE11 provides an add-on–free experience, so browser plugins won't load and dependent content won't be displayed. This doesn't apply to Internet Explorer for the desktop. For more information, see [Browsing Without Plug-ins](http://go.microsoft.com/fwlink/p/?LinkId=242587). However, Internet Explorer for the desktop and IE11 on Windows 7 with SP1 do support browser plugins, including ActiveX controls such as Adobe Flash and Microsoft Silverlight.
+The immersive version of IE11 provides an add-on–free experience, so browser plugins won't load and dependent content won't be displayed. This doesn't apply to Internet Explorer for the desktop. For more information, see [Browsing Without Plug-ins](https://go.microsoft.com/fwlink/p/?LinkId=242587). However, Internet Explorer for the desktop and IE11 on Windows 7 with SP1 do support browser plugins, including ActiveX controls such as Adobe Flash and Microsoft Silverlight.
 
 **Q: Is Adobe Flash supported on IE11?**<br>
 Adobe Flash is included as a platform feature and is available out of the box for Windows 8.1, running on both IE and Internet Explorer for the desktop. Users can turn this feature on or off using the **Manage Add-ons** dialog box, while administrators can turn this feature on or off using the Group Policy setting, **Turn off Adobe Flash in IE and prevent applications from using IE technology to instantiate Flash objects**.<p>
@@ -114,15 +116,15 @@ For more information, see [New group policy settings for IE11](../ie11-deploy-gu
 **Q: Is there a version of the Internet Explorer Administration Kit (IEAK) supporting IE11?**<br>
 Yes. The Internet Explorer Administration Kit 11 (IEAK 11) is available for download. IEAK 11 lets you create custom versions of IE11 for use in your organization. For more information, see the following resources:
 
-- [Internet Explorer Administration Kit Information and Downloads](http://go.microsoft.com/fwlink/p/?LinkId=214250) on the Internet Explorer TechCenter.
+- [Internet Explorer Administration Kit Information and Downloads](https://go.microsoft.com/fwlink/p/?LinkId=214250) on the Internet Explorer TechCenter.
 
 - [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
 
 **Q: Where can I get more information about IE11 for IT pros?**<br>
-Visit the [Springboard Series for Microsoft Browsers](http://go.microsoft.com/fwlink/p/?LinkId=313191) webpage on TechNet.
+Visit the [Springboard Series for Microsoft Browsers](https://go.microsoft.com/fwlink/p/?LinkId=313191) webpage on TechNet.
 
 **Q: Is there a version of the Internet Explorer Blocker Toolkit that will prevent automatic installation of IE11?**<br>
-Yes. The IE11 Blocker Toolkit is available for download. For more information, see [Toolkit to Disable Automatic Delivery of IE11](http://go.microsoft.com/fwlink/p/?LinkId=328195) on the Microsoft Download Center.
+Yes. The IE11 Blocker Toolkit is available for download. For more information, see [Toolkit to Disable Automatic Delivery of IE11](https://go.microsoft.com/fwlink/p/?LinkId=328195) on the Microsoft Download Center.
 
 **Q: Can I customize settings for IE on Windows 8.1?**<br>
 Settings can be customized in the following ways:
@@ -143,6 +145,7 @@ Group Policy settings can be set to open either IE or Internet Explorer for the 
 |Always in Internet Explorer for the desktop |Links always open in Internet Explorer for the desktop. |
 
 ## Related topics
-- [Microsoft Edge - Deployment Guide for IT Pros](http://go.microsoft.com/fwlink/p/?LinkId=760643)
+- [Microsoft Edge - Deployment Guide for IT Pros](https://go.microsoft.com/fwlink/p/?LinkId=760643)
 - [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md)
 - [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](../ie11-ieak/index.md)
+

@@ -27,7 +27,7 @@ The x86 versions of the following software are required for both x86 and x64 ver
 
 **To install Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)**
 
-1.  Download the [Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](http://go.microsoft.com/fwlink/?LinkId=119961) software package from the Microsoft Download Center (http://go.microsoft.com/fwlink/?LinkId=119961). \[Template Token Value\] For version 4.5 SP2 and later of the App-V client, download vcredist\_x86.exe from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update](http://go.microsoft.com/fwlink/?LinkId=169360) (http://go.microsoft.com/fwlink/?LinkId=169360).\[Template Token Value\]
+1.  Download the [Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=119961) software package from the Microsoft Download Center (https://go.microsoft.com/fwlink/?LinkId=119961). \[Template Token Value\] For version 4.5 SP2 and later of the App-V client, download vcredist\_x86.exe from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update](https://go.microsoft.com/fwlink/?LinkId=169360) (https://go.microsoft.com/fwlink/?LinkId=169360).\[Template Token Value\]
 
 2.  To install silently, use the command-line option “/Q” with vcredist\_x86.exe—for example, **vcredist\_x86.exe /Q**.
 
@@ -42,7 +42,7 @@ For version 4.6 and later of the App-V client, you must also install the Micros
 
 ****
 
-1.  Download the [Microsoft Visual C++ 2008 Service Pack 1 Redistributable Package ATL Security Update](http://go.microsoft.com/fwlink/?LinkId=150700) software package from the Microsoft Download Center (http://go.microsoft.com/fwlink/?LinkId=150700).
+1.  Download the [Microsoft Visual C++ 2008 Service Pack 1 Redistributable Package ATL Security Update](https://go.microsoft.com/fwlink/?LinkId=150700) software package from the Microsoft Download Center (https://go.microsoft.com/fwlink/?LinkId=150700).
 
 2.  To install silently, use the command-line option “/Q” with vcredist\_x86.exe—for example, **vcredist\_x86.exe /Q**.
 
@@ -50,7 +50,7 @@ For version 4.6 and later of the App-V client, you must also install the Micros
 
 ****
 
-1.  Download the [Microsoft Core XML Services (MSXML) 6.0 SP1 (x86)](http://go.microsoft.com/fwlink/?LinkId=63266) software package from the Microsoft Download Center (http://go.microsoft.com/fwlink/?LinkId=63266).
+1.  Download the [Microsoft Core XML Services (MSXML) 6.0 SP1 (x86)](https://go.microsoft.com/fwlink/?LinkId=63266) software package from the Microsoft Download Center (https://go.microsoft.com/fwlink/?LinkId=63266).
 
 2.  To install silently, use the command-line option /quiet—for example, **msiexec /i msxml6\_x86.msi /quiet**.
 
@@ -130,7 +130,7 @@ For App-V 4.6 SP2 and later, you no longer need to install Microsoft Applicati
 ¹ App-V “Languages” release.
 
 **Note**  
-If you need to find the product code, you can use the Orca.exe database editor or a similar tool to examine Windows Installer files to find the value of the *ProductCode* property. For more information about using Orca.exe, see [Windows Installer Development Tools](http://go.microsoft.com/fwlink/?LinkId=150008) (http://go.microsoft.com/fwlink/?LinkId=150008).
+If you need to find the product code, you can use the Orca.exe database editor or a similar tool to examine Windows Installer files to find the value of the *ProductCode* property. For more information about using Orca.exe, see [Windows Installer Development Tools](https://go.microsoft.com/fwlink/?LinkId=150008) (https://go.microsoft.com/fwlink/?LinkId=150008).
 
  
 

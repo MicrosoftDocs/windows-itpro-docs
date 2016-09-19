@@ -5,6 +5,7 @@ ms.assetid: 0b069bec-5be8-47c6-bf64-7a630f41ac98
 keywords: deploy, upgrade, task sequence, install
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.pagetype: mdt
 ms.sitesec: library
 author: mtniehaus
@@ -24,7 +25,7 @@ For the purposes of this topic, we will use two machines: DC01 and CM01. DC01 is
 ## <a href="" id="sec01"></a>Create a task sequence using the MDT Integration Wizard
 
 
-This section will walk you through the process of creating a System Center 2012 R2 Configuration Manager task sequence for production use.
+This section walks you through the process of creating a System Center 2012 R2 Configuration Manager task sequence for production use.
 
 1.  On CM01, using the Configuration Manager Console, in the Software Library workspace, expand **Operating Systems**, right-click **Task Sequences**, and select **Create MDT Task Sequence**.
 
@@ -32,27 +33,27 @@ This section will walk you through the process of creating a System Center 2012 
 
 3.  On the **General** page, assign the following settings and then click **Next**:
 
-    1.  Task sequence name: Windows 10 Enterprise x64 RTM
+    * Task sequence name: Windows 10 Enterprise x64 RTM
 
-    2.  Task sequence comments: Production image with Office 2013
+    * Task sequence comments: Production image with Office 2013
 
 4.  On the **Details** page, assign the following settings and then click **Next**:
 
-    1.  Join a Domain
+    * Join a Domain
 
-    2.  Domain: contoso.com
+    * Domain: contoso.com
 
-        1.  Account: CONTOSO\\CM\_JD
+        * Account: CONTOSO\\CM\_JD
 
-        2.  Password: Passw0rd!
+        * Password: Passw0rd!
 
-    3.  Windows Settings
+    * Windows Settings
 
-        1.  User name: Contoso
+        * User name: Contoso
 
-        2.  Organization name: Contoso
+        * Organization name: Contoso
 
-        3.  Product key: &lt;blank&gt;
+        * Product key: &lt;blank&gt;
 
 5.  On the **Capture Settings** page, accept the default settings, and click **Next**.
 
@@ -87,12 +88,10 @@ After you create the task sequence, we recommend that you configure the task seq
 
 2.  In the **Install** group, select the **Set Variable for Drive Letter** action and configure the following:
 
-    -   OSDPreserveDriveLetter: True
-
-    **Note**  
-    If you don't change this value, your Windows installation will end up in E:\\Windows.
-
-     
+    * OSDPreserveDriveLetter: True
+    
+    >[!NOTE]  
+    >If you don't change this value, your Windows installation will end up in E:\\Windows.
 
 3.  In the **Post Install** group, select **Apply Network Settings**, and configure the Domain OU value to use the **Contoso / Workstations** OU (browse for values).
 
@@ -102,57 +101,55 @@ After you create the task sequence, we recommend that you configure the task seq
 
 6.  After the **Post Install / Drivers** group, add an **Apply Driver Package** action with the following settings:
 
-    1.  Name: HP EliteBook 8560w
+    * Name: HP EliteBook 8560w
 
-    2.  Driver Package: Windows 10 x64 - HP EliteBook 8560w
+    * Driver Package: Windows 10 x64 - HP EliteBook 8560w
 
-    3.  Options: Task Sequence Variable: Model equals HP EliteBook 8560w
-
-    **Note**  
-    You also can add a Query WMI condition with the following query: SELECT \* FROM Win32\_ComputerSystem WHERE Model LIKE '%HP EliteBook 8560w%'
-
-     
-
-    ![figure 24](images/fig27-driverpackage.png)
-
-    Figure 24. The driver package options.
+    * Options: Task Sequence Variable: Model equals HP EliteBook 8560w
+    
+    >[!NOTE]  
+    >You also can add a Query WMI condition with the following query: SELECT \* FROM Win32\_ComputerSystem WHERE Model LIKE '%HP EliteBook 8560w%'
+    
+    ![Driver package options](images/fig27-driverpackage.png "Driver package options")
+    
+    *Figure 24. The driver package options*
 
 7.  In the **State Restore / Install Applications** group, select the **Install Application** action.
 
 8.  Select the **Install the following applications** option, and add the OSD / Adobe Reader XI - OSD Install application to the list.
 
-    ![figure 25](images/fig28-addapp.png)
+    ![Add an application to the task sequence](images/fig28-addapp.png "Add an application to the task sequence")
 
-    Figure 25. Add an application to the Configuration Manager task sequence.
+    *Figure 25. Add an application to the Configuration Manager task sequence*
 
 9.  In the **State Restore** group, after the **Set Status 5** action, add a **Request State Store** action with the following settings:
 
-    1.  Restore state from another computer
+    * Restore state from another computer
 
-    2.  If computer account fails to connect to state store, use the Network Access account
+    * If computer account fails to connect to state store, use the Network Access account
 
-    3.  Options: Continue on error
+    * Options: Continue on error
 
-    4.  Options / Condition:
-
-        1.  Task Sequence Variable
-
-        2.  USMTLOCAL not equals True
+    * Options / Condition:
+    
+      * Task Sequence Variable
+      
+      * USMTLOCAL not equals True
 
 10. In the **State Restore** group, after the **Restore User State** action, add a **Release State Store** action with the following settings:
 
-    1.  Options: Continue on error
+    * Options: Continue on error
 
-    2.  Options / Condition:
-
-        1.  Task Sequence Variable
-
-        2.  USMTLOCAL not equals True
+    * Options / Condition:
+    
+      * Task Sequence Variable
+      
+      * USMTLOCAL not equals True
 
 11. Click **OK**.
 
-**Note**  
-The Request State Store and Release State Store actions need to be added for common computer replace scenarios.
+>[!NOTE]  
+>The Request State Store and Release State Store actions need to be added for common computer replace scenarios.
 
  
 

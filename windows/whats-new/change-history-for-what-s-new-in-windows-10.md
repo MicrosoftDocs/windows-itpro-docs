@@ -6,10 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: TrudyHa
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/whats-new/index
 ---
 
 # Change history for What's new in Windows 10
 This topic lists new and updated topics in the [What's new in Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
+
 
 ## April 2016
 

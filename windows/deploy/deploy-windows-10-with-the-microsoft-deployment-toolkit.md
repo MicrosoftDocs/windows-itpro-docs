@@ -5,7 +5,9 @@ ms.assetid: 837f009c-617e-4b3f-9028-2246067ee0fb
 keywords: deploy, tools, configure, script
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
+localizationpriority: high
 author: mtniehaus
 ms.pagetype: mdt
 ---
@@ -20,7 +22,7 @@ This guide will walk you through the process of deploying Windows 10 in an ente
 The Microsoft Deployment Toolkit is a unified collection of tools, processes, and guidance for automating desktop and server deployment. In addition to reducing deployment time and standardizing desktop and server images, MDT enables you to more easily manage security and ongoing configurations. MDT builds on top of the core deployment tools in the Windows Assessment and Deployment Kit (Windows ADK) with additional guidance and features designed to reduce the complexity and time required for deployment in an enterprise environment.
 MDT 2013 Update 2 supports the deployment of Windows 10, as well as Windows 7, Windows 8, Windows 8.1, and Windows Server 2012 R2. It also includes support for zero-touch installation (ZTI) with Microsoft System Center 2012 R2 Configuration Manager.
 
-To download the latest version of MDT, visit the [MDT resource page](http://go.microsoft.com/fwlink/p/?LinkId=618117).
+To download the latest version of MDT, visit the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117).
 
 ## In this section
 
@@ -71,13 +73,13 @@ Figure 2. The organizational unit (OU) structure used in this guide.
 ## Sample files
 
 The information in this guide is designed to help you deploy Windows 10. In order to help you put the information you learn into practice more quickly, we recommend that you download a small set of sample files for the fictitious Contoso Corporation:
--   [Gather.ps1](http://go.microsoft.com/fwlink/p/?LinkId=619361). This sample Windows PowerShell script performs the MDT Gather process in a simulated MDT environment. This allows you to test the MDT gather process and check to see if it is working correctly without performing a full Windows deployment.
--   [Set-OUPermissions.ps1](http://go.microsoft.com/fwlink/p/?LinkId=619362). This sample Windows PowerShell script creates a domain account and then configures OU permissions to allow the account to join machines to the domain in the specified OU.
--   [MDTSample.zip](http://go.microsoft.com/fwlink/p/?LinkId=619363). This sample web service shows you how to configure a computer name dynamically using MDT.
+-   [Gather.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619361). This sample Windows PowerShell script performs the MDT Gather process in a simulated MDT environment. This allows you to test the MDT gather process and check to see if it is working correctly without performing a full Windows deployment.
+-   [Set-OUPermissions.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619362). This sample Windows PowerShell script creates a domain account and then configures OU permissions to allow the account to join machines to the domain in the specified OU.
+-   [MDTSample.zip](https://go.microsoft.com/fwlink/p/?LinkId=619363). This sample web service shows you how to configure a computer name dynamically using MDT.
 
 ## Related topics
 
-[Microsoft Deployment Toolkit downloads and resources](http://go.microsoft.com/fwlink/p/?LinkId=618117)
+[Microsoft Deployment Toolkit downloads and resources](https://go.microsoft.com/fwlink/p/?LinkId=618117)
 
 [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 

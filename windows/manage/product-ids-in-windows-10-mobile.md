@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Product IDs in Windows 10 Mobile
@@ -232,7 +233,7 @@ The following table lists the product ID and AUMID for each app that is included
 ## Get product ID and AUMID for other apps
 
 
-To get the product ID and AUMID for apps that are installed from Windows Store or installed locally ([side-loaded](http://go.microsoft.com/fwlink/p/?LinkID=623433)), use the following steps.
+To get the product ID and AUMID for apps that are installed from Windows Store or installed locally ([side-loaded](https://go.microsoft.com/fwlink/p/?LinkID=623433)), use the following steps.
 
 **Prerequisites**: a device with an SD card inserted and all apps installed that you want to get IDs for
 

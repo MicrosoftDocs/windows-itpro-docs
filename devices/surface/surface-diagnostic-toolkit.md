@@ -16,7 +16,7 @@ author: miladCA
 
 Find out how you can use the Microsoft Surface Diagnostic Toolkit to test the hardware of your Surface device.
 
-The [Microsoft Surface Diagnostic Toolkit](http://go.microsoft.com/fwlink/p/?LinkId=618121) is a small, portable diagnostic tool that runs through a suite of tests to diagnose the hardware of Surface devices. The Microsoft Surface Diagnostic Toolkit executable file is less than 3 MB, which allows it to be distributed through email. It does not require installation, so it can be run directly from a USB stick or over the network. The Microsoft Surface Diagnostic Toolkit walks you through several tests of individual components including the touchscreen, cameras, and sensors.
+The [Microsoft Surface Diagnostic Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=618121) is a small, portable diagnostic tool that runs through a suite of tests to diagnose the hardware of Surface devices. The Microsoft Surface Diagnostic Toolkit executable file is less than 3 MB, which allows it to be distributed through email. It does not require installation, so it can be run directly from a USB stick or over the network. The Microsoft Surface Diagnostic Toolkit walks you through several tests of individual components including the touchscreen, cameras, and sensors.
 
 >**Note:**&nbsp;&nbsp;A Surface device must boot into Windows to run the Microsoft Surface Diagnostic Toolkit. The Microsoft Surface Diagnostic Toolkit will run only on the following Surface devices:
 
@@ -123,7 +123,7 @@ This test checks for any outstanding Windows updates and will prompt you to inst
 
 #### Device information
 
-This test reads the Device ID and serial number in addition to basic system information such as device model, operating system version, processor, memory, and storage. The Device ID is recorded in the name of the log file and can be used to identify a log file for a specific device. Several system log files are also collected, including update and rollback logs, and output from several Windows built-in tools, such as [DirectX Diagnostics](http://go.microsoft.com/fwlink/p/?LinkId=746476) and [System Information](http://go.microsoft.com/fwlink/p/?LinkId=746477), power configuration, disk health, and event logs. See the following list for a full set of collected log files:
+This test reads the Device ID and serial number in addition to basic system information such as device model, operating system version, processor, memory, and storage. The Device ID is recorded in the name of the log file and can be used to identify a log file for a specific device. Several system log files are also collected, including update and rollback logs, and output from several Windows built-in tools, such as [DirectX Diagnostics](https://go.microsoft.com/fwlink/p/?LinkId=746476) and [System Information](https://go.microsoft.com/fwlink/p/?LinkId=746477), power configuration, disk health, and event logs. See the following list for a full set of collected log files:
 
 - Output of **Get-WindowsUpdateLog** if the operating system is Windows 10
 
@@ -339,7 +339,7 @@ The device orientation sensor determines what the angle of the Surface device is
 This test cycles the screen through brightness levels from 0 percent to 100 percent, and then a message is displayed to confirm if the brightness level changed accordingly. You are then prompted to test for brightness reaction. To test the reaction of brightness when running on battery, disconnect the power adapter. The screen should automatically dim when power is disconnected.
 
 #### Surface Dock test
-The Microsoft Surface Diagnostic Toolkit uses this test only if a Surface Dock is connected to the device. If a Surface Dock is detected, this test verifies that the Surface Dock driver firmware is updated. For more detailed analysis of Surface Dock firmware status and how to manually initiate the firmware update process, see the [Microsoft Surface Dock Updater](https://technet.microsoft.com/en-us/itpro/surface/surface-dock-updater) article.
+The Microsoft Surface Diagnostic Toolkit uses this test only if a Surface Dock is connected to the device. If a Surface Dock is detected, this test verifies that the Surface Dock driver firmware is updated. For more detailed analysis of Surface Dock firmware status and how to manually initiate the firmware update process, see the [Microsoft Surface Dock Updater](https://technet.microsoft.com/itpro/surface/surface-dock-updater) article.
 
 
 #### System assessment
@@ -350,11 +350,11 @@ The Windows System Assessment Tool (WinSAT) runs a series of benchmarks against 
 
 #### Performance Monitor test
 
-Performance and diagnostic trace logs are recorded from Performance Monitor for 30 seconds and collected in the .zip file output of the Microsoft Surface Diagnostic Toolkit by this test. You can analyze these trace logs with the [Windows Performance Analyzer](http://go.microsoft.com/fwlink/p/?LinkId=746486) to identify causes of application crashes, performance issues, or other undesirable behavior in Windows.
+Performance and diagnostic trace logs are recorded from Performance Monitor for 30 seconds and collected in the .zip file output of the Microsoft Surface Diagnostic Toolkit by this test. You can analyze these trace logs with the [Windows Performance Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=746486) to identify causes of application crashes, performance issues, or other undesirable behavior in Windows.
 
 #### Crash dump collection
 
-If your Surface device has encountered an error that caused the device to fail or produce a blue screen error, this stage of the Microsoft Surface Diagnostic Toolkit records the information from the automatically recorded crash dump files in the diagnostic log. You can use these crash dump files to identify a faulty driver, hardware component, or application through analysis. Use the [Windows Debugging Tool](http://go.microsoft.com/fwlink/p/?LinkId=746488) to analyze these files. If you are not familiar with the analysis of crash dump files, you can describe your issue and post a link to your crash dump files (uploaded to OneDrive or another file sharing service) in the [Windows TechNet Forums](http://go.microsoft.com/fwlink/p/?LinkId=746489).
+If your Surface device has encountered an error that caused the device to fail or produce a blue screen error, this stage of the Microsoft Surface Diagnostic Toolkit records the information from the automatically recorded crash dump files in the diagnostic log. You can use these crash dump files to identify a faulty driver, hardware component, or application through analysis. Use the [Windows Debugging Tool](https://go.microsoft.com/fwlink/p/?LinkId=746488) to analyze these files. If you are not familiar with the analysis of crash dump files, you can describe your issue and post a link to your crash dump files (uploaded to OneDrive or another file sharing service) in the [Windows TechNet Forums](https://go.microsoft.com/fwlink/p/?LinkId=746489).
 
 #### Connected standby text
 

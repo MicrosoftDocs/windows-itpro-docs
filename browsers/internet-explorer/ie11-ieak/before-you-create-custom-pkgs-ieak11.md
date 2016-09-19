@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: plan
 description: A list of steps to follow before you start to create your custom browser installation packages.
-ms.assetid: 6ed182b0-46cb-4865-9563-70825be9a5e4
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: plan
-ms.sitesec: library
+ms.assetid: 6ed182b0-46cb-4865-9563-70825be9a5e4
 title: Before you start using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Before you start using IEAK 11
 Go through this list, making sure you’ve answered all of the questions before you run Internet Explorer Administration Kit 11 (IEAK 11) and the Customization Wizard.

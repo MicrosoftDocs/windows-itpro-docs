@@ -8,6 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Intro to Microsoft Surface Hub
@@ -33,7 +34,7 @@ The capabilities of your Surface Hub will depend on what other Microsoft product
 <tbody>
 <tr class="odd">
 <td align="left"><p>One-touch meeting join, meetings calendar, and email (for example, sending whiteboards)</p></td>
-<td align="left"><p>Device account with Microsoft Exchange 2010 or later, or Exchange Online and a network connection to where the account is hosted.</p></td>
+<td align="left"><p>Device account with Microsoft Exchange 2013 or later, or Exchange Online and a network connection to where the account is hosted.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Meetings using Skype for Business</p></td>
@@ -42,10 +43,6 @@ The capabilities of your Surface Hub will depend on what other Microsoft product
 <tr class="odd">
 <td align="left"><p>Web browsing through Microsoft Edge</p></td>
 <td align="left"><p>Internet connectivity.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Cortana meeting room assistant (voice commands, search)</p></td>
-<td align="left"><p>Internet connectivity needed to process questions and do searches.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Remote and multi-device management</p></td>

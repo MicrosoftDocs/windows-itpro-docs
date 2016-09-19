@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
-localizationpriority: high
+localizationpriority: medium
 ---
 
 # Appendix: PowerShell (Surface Hub)
@@ -612,7 +612,7 @@ catch
 {
     PrintError "Some dependencies are missing"
     PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to http://www.microsoft.com/download/details.aspx?id=39366" 
-    PrintError "Please install the Azure Active Directory module for PowerShell from http://go.microsoft.com/fwlink/p/?linkid=236297"
+    PrintError "Please install the Azure Active Directory module for PowerShell from https://go.microsoft.com/fwlink/p/?linkid=236297"
     CleanupAndFail
 }
 
@@ -1119,7 +1119,7 @@ if ($fHasOnline)
     }
     catch 
     {
-        CleanupAndFail "To verify accounts in online tenants you need the Azure Active Directory module for PowerShell from http://go.microsoft.com/fwlink/p/?linkid=236297"
+        CleanupAndFail "To verify accounts in online tenants you need the Azure Active Directory module for PowerShell from https://go.microsoft.com/fwlink/p/?linkid=236297"
     }
 }
 
@@ -1518,7 +1518,7 @@ if ($online)
     {
         PrintError "Some dependencies are missing"
         PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to http://www.microsoft.com/download/details.aspx?id=39366" 
-        PrintError "Please install the Azure Active Directory module for PowerShell from http://go.microsoft.com/fwlink/p/?linkid=236297"
+        PrintError "Please install the Azure Active Directory module for PowerShell from https://go.microsoft.com/fwlink/p/?linkid=236297"
         CleanupAndFail
     }
 }

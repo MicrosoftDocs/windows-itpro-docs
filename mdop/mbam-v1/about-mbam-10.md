@@ -18,7 +18,7 @@ Microsoft BitLocker Administration and Monitoring (MBAM) provides a simplified a
 With Microsoft BitLocker Administration and Monitoring, you can select the BitLocker encryption policy options that are appropriate for your enterprise so that you can monitor the client compliance with those policies and then report the encryption status of both the enterprise and individual computers. In addition, you can access recovery key information when users forget their PIN or password or when their BIOS or boot record changes.
 
 **Note**  
-BitLocker is not covered in detail in this guide. For an overview of BitLocker, see [BitLocker Drive Encryption Overview](http://go.microsoft.com/fwlink/p/?LinkId=225013).
+BitLocker is not covered in detail in this guide. For an overview of BitLocker, see [BitLocker Drive Encryption Overview](https://go.microsoft.com/fwlink/p/?LinkId=225013).
 
  
 

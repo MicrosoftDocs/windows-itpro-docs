@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
+localizationpriority: high
 ---
 
 # Mandatory tasks and settings required to turn on Windows Information Protection (WIP)

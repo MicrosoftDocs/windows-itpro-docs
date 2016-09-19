@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: Create packages for multiple operating systems or languages
-ms.assetid: 44051f9d-63a7-43bf-a427-d0a0a1c717da
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 44051f9d-63a7-43bf-a427-d0a0a1c717da
 title: Create packages for multiple operating systems or languages (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Create packages for multiple operating systems or languages
 You'll create multiple versions of your custom browser package if:

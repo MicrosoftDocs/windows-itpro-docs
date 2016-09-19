@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
+localizationpriority: high
 ---
 
 # Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate
@@ -76,7 +77,7 @@ It's possible that you might revoke data from an unenrolled device only to later
 
 1. Have your employee sign in to the unenrolled device, open a command prompt, and type:
     
-    `Robocopy “%localappdata%\Microsoft\WIP\Recovery” <“new_location”> /EFSRAW`
+    `Robocopy “%localappdata%\Microsoft\EDP\Recovery” <“new_location”> /EFSRAW`
 
     Where *&lt;”new_location”&gt;* is in a different directory. This can be on the employee’s device or on a Windows 8 or Windows Server 2012 or newer server file share that can be accessed while you're logged in as a data recovery agent.
 
@@ -86,7 +87,7 @@ It's possible that you might revoke data from an unenrolled device only to later
 
 3. Have your employee sign in to the unenrolled device, and type:
 
-    `Robocopy <”new_location”> “%localappdata%\Microsoft\WIP\Recovery\Input”`
+    `Robocopy <”new_location”> “%localappdata%\Microsoft\EDP\Recovery\Input”`
 
 4. Ask the employee to lock and unlock the device.
 

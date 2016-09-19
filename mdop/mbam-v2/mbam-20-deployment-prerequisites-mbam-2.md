@@ -275,7 +275,7 @@ For a list of supported operating systems, see [MBAM 2.0 Supported Configuration
 </tr>
 <tr class="even">
 <td align="left"><p>ASP.NET MVC 2.0</p></td>
-<td align="left"><p>[ASP.NET MVC 2 download](http://go.microsoft.com/fwlink/?LinkId=392270)</p></td>
+<td align="left"><p>[ASP.NET MVC 2 download](https://go.microsoft.com/fwlink/?LinkId=392270)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Web Service IIS Management Tools</p></td>
@@ -310,12 +310,12 @@ For a list of supported operating systems, see [MBAM 2.0 Supported Configuration
 <td align="left"><p>For more information, see the BIOS documentation.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>Windows 8 clients only</strong>: To have MBAM store and manage the TPM recovery keys: TPM auto-provisioning must be turned off, and MBAM must be set as the owner of the TPM before you deploy MBAM. To turn off TPM auto-provisioning, see [Disable-TpmAutoProvisioning](http://go.microsoft.com/fwlink/?LinkId=286468).</p>
+<td align="left"><p><strong>Windows 8 clients only</strong>: To have MBAM store and manage the TPM recovery keys: TPM auto-provisioning must be turned off, and MBAM must be set as the owner of the TPM before you deploy MBAM. To turn off TPM auto-provisioning, see [Disable-TpmAutoProvisioning](https://go.microsoft.com/fwlink/?LinkId=286468).</p>
 <ul>
 <li><p>TPM auto-provisioning must be turned off.</p></li>
 <li><p>MBAM must be set as the owner of the TPM before you deploy MBAM.</p></li>
 </ul></td>
-<td align="left"><p>To turn off TPM auto-provisioning, see [Disable-TpmAutoProvisioning](http://go.microsoft.com/fwlink/?LinkId=286468).</p>
+<td align="left"><p>To turn off TPM auto-provisioning, see [Disable-TpmAutoProvisioning](https://go.microsoft.com/fwlink/?LinkId=286468).</p>
 <div class="alert">
 <strong>Note</strong>  
 <p>Ensure that the keyboard, video, or mouse are directly connected and not managed through a keyboard, video, or mouse (KVM) switch. A KVM switch can interfere with the ability of the computer to detect the physical presence of hardware.</p>
