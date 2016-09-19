@@ -23,21 +23,19 @@ When the VPN client connects to the VPN server, the VPN client receives the foll
 
 The VPN client can access intranet resources by using names, which can be resolved to IP addresses using DNS-based and WINS-based resolution. DNS and WINS name resolution require a server address to be provisioned on the VPN client.
 
-The name resolution setting in the VPN profile configures how name resolution should work on the system when VPN is connected. The networking stack first looks at the Name Resolution Policy table (NRPT) for any matches and tries a resolution in the case of a match. If no match is found, the DNS Suffix is appended to the name and a DNS query is sent out on all interfaces. 
+The name resolution setting in the VPN profile configures how name resolution should work on the system when VPN is connected. The networking stack first looks at the Name Resolution Policy table (NRPT) for any matches and tries a resolution in the case of a match. If no match is found, the DNS suffix is appended to the name and a DNS query is sent out on all interfaces. 
 
 ## Name Resolution Policy table (NRPT)
  
 The NRPT is a table of namespaces that determines the DNS client’s behavior when issuing name resolution queries and processing responses. It is the first place that the stack will look after the DNSCache.
 
-There are 3 types of Name matches that can be set up for NRPT
+There are 3 types of name matches that can be set up for NRPT:
 
 - Fully qualified domain name (FQDN) that can be used for direct matching to a name
 
 - Suffix match results in either a comparison of suffixes (for FQDN resolution) or the appending of the suffix (in case of a short name)
 
 - Any resolution should attempt to first resolve with the proxy server/DNS server with this entry
-
-Examples of the following in VPNv2 CSP can be found here. 
 
 NRPT is set using the **VPNv2//*ProfileName*/DomainNameInformationList** node. This node also configures Web proxy server or domain name servers. 
 
