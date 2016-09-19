@@ -162,7 +162,7 @@ Certreq example:
     Exportable=true
     RequestType=Cert
     KeyUsage="CERT_KEY_ENCIPHERMENT_KEY_USAGE"
-    KeyUsageProperty="NCRYPT_ALLOW_DECRYPT_FLAG"
+    KeyUsageProperty="NCRYPT_ALLOW_DECRYPT_FLAG | NCRYPT_ALLOW_SIGNING_FLAG"
     KeyLength=2048
     SMIME=FALSE
     HashAlgorithm=sha512
