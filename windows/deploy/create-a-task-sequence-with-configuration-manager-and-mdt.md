@@ -39,15 +39,15 @@ This section walks you through the process of creating a System Center 2012 R2 C
 
 4.  On the **Details** page, assign the following settings and then click **Next**:
 
-    1.  Join a Domain
+    * Join a Domain
 
-    2.  Domain: contoso.com
+    * Domain: contoso.com
 
         * Account: CONTOSO\\CM\_JD
 
         * Password: Passw0rd!
 
-    3.  Windows Settings
+    * Windows Settings
 
         * User name: Contoso
 
@@ -110,7 +110,7 @@ After you create the task sequence, we recommend that you configure the task seq
     >[!NOTE]  
     >You also can add a Query WMI condition with the following query: SELECT \* FROM Win32\_ComputerSystem WHERE Model LIKE '%HP EliteBook 8560w%'
     
-    ![Driver package options](images/fig27-driverpackage.png "Driver package options)
+    ![Driver package options](images/fig27-driverpackage.png "Driver package options")
     
     *Figure 24. The driver package options*
 
