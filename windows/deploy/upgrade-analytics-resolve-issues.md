@@ -75,21 +75,21 @@ For applications assessed as **Fix available**, review the table below for detai
 
 ### ISV support for applications with Ready for Windows
 
-The [Ready for Windows (Preview) website](https://www.readyforwindows.com/) lists software solutions that are supported and in use for Windows 10. This site leverages data about application adoption from commercial Windows 10 installs and helps IT managers upgrade to Windows 10 with confidence. For more information, see [Ready for Windows Frequently Asked Questions](https://developer.microsoft.com/windows/ready-for-windows/#/faq/). 
+The [Ready for Windows (Preview) website](https://www.readyforwindows.com/) lists software solutions that are supported and in use for Windows 10. This site leverages data about application adoption from commercial Windows 10 installations and helps IT managers upgrade to Windows 10 with confidence. For more information, see [Ready for Windows Frequently Asked Questions](https://developer.microsoft.com/windows/ready-for-windows/#/faq/). 
 
-Click **Review Applications With Known Issues** to see the status of applications for Ready for Windows, and corresponding guidance. For example, this application has **Highly adopted** status:
+Click **Review Applications With Known Issues** to see the status of applications for Ready for Windows and corresponding guidance. For example:
 
 ![Upgrade analytics Ready for Windows status](images/upgrade-analytics-ready-for-windows-status.png)
-
-If you query with RollupLevel="NamePublisher", then each version of the application can have a different status for Ready for Windows. In this case, different values appear for Ready for Windows. 
-
-![Name publisher rollup](images/upgrade-analytics-namepub-rollup.png)
 
 If there are known issues with an application, the specific guidance for that known issue takes precedence over the Ready for Windows guidance.
 
 ![Upgrade analytics Ready for Windows status guidance precedence](images/upgrade-analytics-ready-for-windows-status-guidance-precedence.png)
 
-The following table lists possible values for **ReadyForWindows** and what they mean. For more informnation, see [What does the Adoption Status mean?](https://developer.microsoft.com/en-us/windows/ready-for-windows#/faq/?scrollTo=faqStatuses).
+If you query with RollupLevel="NamePublisher", each version of the application can have a different status for Ready for Windows. In this case, different values appear for Ready for Windows. 
+
+![Name publisher rollup](images/upgrade-analytics-namepub-rollup.png)
+
+The following table lists possible values for **ReadyForWindows** and what they mean. For more information, see [What does the Adoption Status mean?](https://developer.microsoft.com/en-us/windows/ready-for-windows#/faq/?scrollTo=faqStatuses)
 
 | Ready for Windows Status | Query rollup level | What this means | Guidance |
 |-------------------|--------------------------|-----------------|----------|
