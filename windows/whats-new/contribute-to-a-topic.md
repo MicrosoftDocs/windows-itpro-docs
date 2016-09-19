@@ -31,7 +31,7 @@ You've already completed this step.
 
     ![GitHub Web, showing the Pencil icon in the red box](images/pencil-icon.png)
 
-5.	Using markdown language, make your changes to the topic. For info about how to edit content using markdown, see:
+5.	Using Markdown language, make your changes to the topic. For info about how to edit content using Markdown, see:
     - **If you're linked to the Microsoft organization in GitHub:** [Windows Open Publishing Guide Home](http://aka.ms/windows-op-guide)
     
     - **If you're external to Microsoft:** [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) 
