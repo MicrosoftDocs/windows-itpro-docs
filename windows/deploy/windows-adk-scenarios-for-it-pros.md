@@ -4,6 +4,7 @@ description: The Windows Assessment and Deployment Kit (Windows ADK) contains to
 ms.assetid: FC4EB39B-29BA-4920-87C2-A00D711AE48B
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 author: greg-lindsay
 ---

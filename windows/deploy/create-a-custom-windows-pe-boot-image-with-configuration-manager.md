@@ -5,6 +5,7 @@ ms.assetid: b9e96974-324d-4fa4-b0ce-33cfc49c4809
 keywords: tool, customize, deploy, boot image
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
 ---

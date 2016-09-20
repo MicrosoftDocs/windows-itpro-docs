@@ -5,7 +5,9 @@ ms.assetid: acf091c9-f8f4-4131-9845-625691c09a2a
 keywords: deploy, deployment, replace
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
+localizationpriority: high
 ms.pagetype: mdt
 author: mtniehaus
 ---

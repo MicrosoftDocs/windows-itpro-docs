@@ -125,6 +125,9 @@ The UE-V service is the client-side component that captures user-personalized ap
 
 Before enabling the UE-V service, you need to register the UE-V templates for first time use. In a PowerShell window, type **register-&lt;TemplateName&gt;** where **TemplateName** is the name of the UE-V template you want to register, and press ENTER.
 
+>**Note**
+With Windows 10, version 1607, you must register UE-V templates for all inbox and custom templates. This provides flexibility for only deploying the required templates.
+
 With Windows 10, version 1607 and later, the UE-V service is installed on user devices. Enable the service to start using UE-V. You can enable the service with the Group Policy editor or with Windows PowerShell.
 
 **To enable the UE-V service with Group Policy**
