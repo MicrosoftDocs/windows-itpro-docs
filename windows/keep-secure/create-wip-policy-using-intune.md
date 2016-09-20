@@ -138,8 +138,8 @@ For this example, we’re going to add Internet Explorer, a desktop app, to the 
 1.	From the **App Rules** area, click **Add**.
 
     The **Add App Rule** box appears.
-
-        ![Microsoft Intune, Add a desktop app to your policy](images/intune-add-classic-apps.png)
+    
+    ![Microsoft Intune, Add a desktop app to your policy](images/intune-add-classic-apps.png)
 
 2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Internet Explorer*.
 
@@ -278,8 +278,8 @@ For this example, we’re going to add an AppLocker XML file to the **App Rules*
 1.	From the **App Rules** area, click **Add**.
     
     The **Add App Rule** box appears.
-
-        ![Microsoft Intune, Importing your AppLocker policy file using Intune](images/intune-add-applocker-xml-file.png)
+    
+    ![Microsoft Intune, Importing your AppLocker policy file using Intune](images/intune-add-applocker-xml-file.png)
 
 2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Allowed app list*.
 
@@ -370,8 +370,8 @@ There are no default locations included with WIP, you must add each of your netw
             </tr>
             <tr>
                 <td>Enterprise Cloud Resources</td>
-                <td>**With proxy:** contoso.sharepoint.com,proxy.contoso.com|<br>contoso.visualstudio.com,proxy.contoso.com<p>**Without proxy:** contoso.sharepoint.com|contoso.visualstudio.com</td>
-                <td>Specify the cloud resources to be treated as corporate and protected by WIP.<p>For each cloud resource, you may also optionally specify an internal proxy server that routes your traffic through your Enterprise Internal Proxy Server.<p>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example: `URL <,proxy>|URL <,proxy>`.<p>If Windows is unable to determine whether an app should be allowed to connect to a network resource, it will automatically block the connection. If instead you want Windows to allow the connections to happen, you can add the `/*AppCompat*/` string to this setting. For example: `URL <,proxy>|URL <,proxy>|/*AppCompat*/`</td>
+                <td>**With proxy:** contoso.sharepoint.com,contoso.internalproxy1.com|<br>contoso.visualstudio.com,contoso.internalproxy2.com<p>**Without proxy:** contoso.sharepoint.com|contoso.visualstudio.com</td>
+                <td>Specify the cloud resources to be treated as corporate and protected by WIP.<p>For each cloud resource, you may also optionally specify a proxy server from your Enterprise Internal Proxy Servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Enterprise Internal Proxy Servers is considered enterprise.<p>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example: <code>URL <,proxy>|URL <,proxy></code>.<p>If Windows is unable to determine whether an app should be allowed to connect to a network resource, it will automatically block the connection. If instead you want Windows to allow the connections to happen, you can add the <code>/*AppCompat*/</code> string to this setting. For example: <code>URL <,proxy>|URL <,proxy>|/*AppCompat*/</code></td>
             </tr>
             <tr>
                 <td>Enterprise Network Domain Names (Required)</td>
@@ -381,7 +381,7 @@ There are no default locations included with WIP, you must add each of your netw
             <tr>
                 <td>Enterprise Proxy Servers</td>
                 <td>proxy.contoso.com:80;proxy2.contoso.com:137</td>
-                <td>Specify your externally-facing proxy server addresses, along with the port through which traffic is allowed and protected with WIP.<p>This list shouldn’t include any servers listed in the Enterprise Internal Proxy Servers list, which are used for WIP-protected traffic.<p>This setting is also required if you use a proxy in your network. If you don't have a proxy server, you might find that enterprise resources are unavailable when a client is behind a proxy, such as when you’re visiting another company and not on that company’s guest network.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>
+                <td>Specify your externally-facing proxy server addresses, along with the port through which traffic accesses the Internet.<p>This list must not include any servers listed in the Enterprise Internal Proxy Servers list, because they’re used for WIP-protected traffic.<p>TThis setting is also required if there’s a chance you could end up behind a proxy server on another network. In this situation, if you don't have a proxy server pre-defined, you might find that enterprise resources are unavailable to your client device, such as when you’re visiting another company and not on the guest network. To make sure this doesn’t happen, the client device also needs to be able to reach the pre-defined proxy server through the VPN network.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>
             </tr>
             <tr>
                 <td>Enterprise Internal Proxy Servers</td>
