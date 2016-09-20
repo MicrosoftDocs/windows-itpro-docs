@@ -18,6 +18,7 @@ For more information about SDA and information on how to download SDA, see [Micr
 Using SDA provides these primary benefits:
 
 * With SDA, you can create a ready-to-deploy environment that can deploy to target devices as fast as your download speeds allow. The wizard experience enables you to check a few boxes and then the automated process builds your deployment environment for you.
+
 * With SDA, you prepare a deployment environment built on the industry leading deployment solution of MDT. With MDT you can scale from a relatively basic deployment of a few Surface devices to a solution capable of deploying to thousands of devices including all of the different makes and models in your organization and all of the applications required by each device and user.
 
 This article explores four scenarios where you can use SDA to meet the needs of your organization. See [Deploy Windows 10](https://technet.microsoft.com/en-us/itpro/windows/deploy/index) to explore the capabilities of MDT and the Windows deployment technologies available from Microsoft in greater detail. 
@@ -26,16 +27,20 @@ This article explores four scenarios where you can use SDA to meet the needs of 
 
 One of the primary scenarios for use of SDA is as a Proof of Concept. A *Proof of Concept* (PoC) enables you to test or evaluate the capabilities of a solution or technology. A PoC is often used to illustrate the benefits of the solution or technology to decision makers. For example, if you want to recommend Surface devices as a replacement of older point of sale (POS) systems, you could perform a PoC to demonstrate how Surface devices provide superior computing power, flexibility, and connectivity when compared to alternate options.
 
-Using SDA to prepare a PoC of Surface devices enables you to very quickly prepare a demonstration of Surface device or devices, which gives you more time for customization or preparation. The flexibility of SDA even lets you import resources, like applications and drivers, from existing MDT deployment infrastructure. See the [Work with Existing Deployment Shares](#work-with-existing-deployment-shares) section later in this article for more information.
+Using SDA to prepare a PoC of Surface devices enables you to very quickly prepare a demonstration of Surface device or devices, which gives you more time for customization or preparation. The flexibility of SDA even lets you import resources, like applications and drivers, from existing MDT deployment infrastructure. See the [Work with existing deployment shares](#work-with-existing-deployment-shares) section later in this article for more information.
 
 SDA is also an excellent PoC of the capabilities of MDT. SDA demonstrates just how quickly an MDT deployment environment can be prepared and made ready for deployment to devices. It also shows just how flexible and customizable the MDT solution can be, with support for Windows 10 and Windows 8.1, for Windows Store and desktop applications, and several models of Surface devices.
 
 Some recommendations for a successful PoC with SDA are:
 
 * Keep your SDA deployment environment separate from your production network. This ensures optimal performance and reduces potential for conflicts during your PoC deployment.
+
 * Use a fresh and updated instance of Windows Server to house your SDA deployment share to maintain the simplicity and performance of the demonstration environment.
+
 * Test the deployment process before you demonstrate your PoC. This reduces the potential for unexpected situations and keeps the demonstration focused on the deployment process and Surface devices.
+
 * Use offline files with SDA to further reduce installation times.
+
 * For help with your PoC, contact [Surface Support](https://www.microsoft.com/surface/en-us/support/contact-us-business).
 
 ## Perform a pilot deployment
@@ -63,10 +68,15 @@ Because SDA is built on MDT, adding the drivers to the SDA deployment share is e
 To import drivers for a peripheral device:
 
 1. Download the drivers for your device from the manufacturer web site.
+
 2. Open the MDT Deployment Workbench.
+
 3. Expand the **Deployment Shares** node and expand the SDA deployment share.
+
 4. Expand the **Out-of-Box Drivers** folder.
+
 5. Select the folder of the Surface model for which you would like to include this driver.
+
 6. Click **Import Drivers** to start the Import Drivers Wizard, as shown in Figure 1.
 
   ![Provide the location of your driver files](images\using-sda-driverfiles-fig1.png "Provide the location of your driver files")
@@ -75,12 +85,13 @@ To import drivers for a peripheral device:
 
 7. The Import Drivers Wizard presents a series of steps:
 
-  * **Specify Directory** – Click **Browse** and navigate to the folder where you stored the drivers in Step 1.
-  * **Summary** – Review the specified configuration on this page before you click **Next** to begin the import process.
-  * **Progress** – While the drivers are imported, a progress bar is displayed on this page.
-  * **Confirmation** – When the import process completes, the success of the process is displayed on this page. Click **Finish** to complete the Import Drivers Wizard.
+  - **Specify Directory** – Click **Browse** and navigate to the folder where you stored the drivers in Step 1.
+  - **Summary** – Review the specified configuration on this page before you click **Next** to begin the import process.
+  - **Progress** – While the drivers are imported, a progress bar is displayed on this page.
+  - **Confirmation** – When the import process completes, the success of the process is displayed on this page. Click **Finish** to complete the Import Drivers Wizard.
 
 8. Repeat Steps 5-7 for each Surface model on which you would like to include this driver.
+
 9. Close the Deployment Workbench.
 
 After the drivers are imported for the Surface model, the deployment task sequence will automatically select the drivers during the deployment process and include them in the Windows environment. When you connect your device, such as the barcode scanner in the example, Windows should automatically detect the device and you should be able to use it immediately.
@@ -95,10 +106,15 @@ As with drivers, the SDA deployment share can be pre-configured with apps like t
 In the previous example for including drivers for a POS system, you would also need to include POS software for processing transactions and recording the input from the barcode scanner and credit card reader. To import an application and prepare it for installation on your Surface devices during Windows deployment:
 
 1.	Download the application installation files or locate the installation media for your application.
+
 2.	Determine the command line instruction for silent installation, usually provided by the developer of the application. For Windows Installer files (.msi), see [Standard Installer Command-Line Options](https://msdn.microsoft.com/library/windows/desktop/aa372024) in the Windows Dev Center.
+
 3.	Open the MDT Deployment Workbench.
+
 4.	Expand the **Deployment Shares** node and expand the SDA deployment share.
+
 5.	Expand the **Applications** folder.
+
 6.	Click **New Application** to start the New Application Wizard, as shown in Figure 2.
 
   ![Provide the command to install your application](images\using-sda-installcommand-fig2.png "Provide the command to install your application")
@@ -107,18 +123,21 @@ In the previous example for including drivers for a POS system, you would also n
 
 7.	Follow the steps of the New Application Wizard:
 
-  * **Application Type** – Click **Application with Source Files**, and then click **Next**.
-  * **Details** – Enter a name for the application in the **Application Name** field. Enter publisher, version, and language information in the **Publisher**, **Version**, and **Language** fields if desired. Click **Next**.
-  * **Source** – Click **Browse** to navigate to and select the folder with the application installation files procured in Step 1, and then click **Next**.
-  * **Destination** – Enter a name for the folder where the application files will be stored in the **Specify the Name of the Directory that Should Be Created** field or click **Next** to accept the default name.
-  * **Command Details** – Enter the silent command-line instruction, for example `setup.msi /quiet /norestart`
-  * **Summary** – Review the specified configuration on this page before you click **Next** to begin the import process.
-  * **Progress** – While the installation files are imported, a progress bar is displayed on this page.
-  * **Confirmation** – When the import process completes, the success of the process is displayed on this page. Click **Finish** to complete the New Application Wizard.
+  - **Application Type** – Click **Application with Source Files**, and then click **Next**.
+  - **Details** – Enter a name for the application in the **Application Name** field. Enter publisher, version, and language information in the **Publisher**, **Version**, and **Language** fields if desired. Click **Next**.
+  - **Source** – Click **Browse** to navigate to and select the folder with the application installation files procured in Step 1, and then click **Next**.
+  - **Destination** – Enter a name for the folder where the application files will be stored in the **Specify the Name of the Directory that Should Be Created** field or click **Next** to accept the default name.
+  - **Command Details** – Enter the silent command-line instruction, for example `setup.msi /quiet /norestart`
+  - **Summary** – Review the specified configuration on this page before you click **Next** to begin the import process.
+  - **Progress** – While the installation files are imported, a progress bar is displayed on this page.
+  - **Confirmation** – When the import process completes, the success of the process is displayed on this page. Click **Finish** to complete the New Application Wizard.
 
 8.	Click the **Task Sequences** folder, right-click **1 - Deploy Microsoft Surface**, and then click **Properties**.
+
 9.	Click the **Task Sequence** tab to view the steps that are included in the new task sequence.
+
 10.	Select the **Windows Update (Pre-Application Installation)** step, and then click **Add**.
+
 11.	Hover the mouse over **General** under the **Add** menu, and then click **Install Application**. This will add a new step after the selected step for the installation of a specific application as shown in Figure 3.
 
   ![A new Install Application step for Sample POS App](images\using-sda-newinstall-fig3.png "A new Install Application step for Sample POS App")
@@ -126,9 +145,13 @@ In the previous example for including drivers for a POS system, you would also n
   *Figure 3. A new Install Application step for Sample POS App*
 
 12.	On the **Properties** tab of the new **Install Application** step, enter **Install - Application** in the **Name** field, where *application* is the name of your app.
+
 13.	Click **Install a Single Application**, and then click **Browse** to view available applications that have been imported into the deployment share.
+
 14.	Select your app from the list of applications, and then click **OK**.
+
 15.	Click **OK** to close the task sequence properties.
+
 16.	Close the Deployment Workbench.
 
 ## Work with existing deployment shares
