@@ -38,7 +38,7 @@ Currently, this can only be configured in [custom XML in the ProfileXML node](vp
 
 Windows Information Protection provides capabilities allowing the separation and protection of enterprise data against disclosure across both company and personally owned devices without requiring additional changes to the environments or the apps themselves. Additionally, when used with Rights Management Services (RMS), WIP can help to protect enterprise data locally.
 
-The [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) **EdpModeId** node allows a Windows 10 VPN client to integrate with WIP, extending its functionality to remote devices. Use case scenarios for WIP include:
+The **EdpModeId** node in the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) allows a Windows 10 VPN client to integrate with WIP, extending its functionality to remote devices. Use case scenarios for WIP include:
 
 - Core functionality: File encryption and file access blocking
 - UX policy enforcement: Restricting copy/paste, drag/drop, and sharing operations
