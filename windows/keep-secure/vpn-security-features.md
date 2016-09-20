@@ -28,7 +28,7 @@ A VPN profile configured with LockDown secures the device to only allow network 
 - Only one VPN LockDown profile is allowed on a device. 
 
 >[!NOTE]
->For inbox VPN, Lockdown VPN is only available for the Internet Key Exchange version 2 (IKEv2) tunnel type.
+>For built-in VPN, Lockdown VPN is only available for the Internet Key Exchange version 2 (IKEv2) connection type.
 
 Deploy this feature with caution as the resultant connection will not be able to send or receive any network traffic without the VPN being connected. 
 
@@ -46,6 +46,8 @@ The [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/libr
 - Network policy enforcement: Protecting SMB and Internet cloud resources over the corporate network and VPN
 
 The value of the **EdpModeId** is an Enterprise ID. The networking stack will look for this ID in the app token to determine whether VPN should be triggered for that particular app. 
+
+Additionally, when connecting with WIP, the admin does not have to specify AppTriggerList and TrafficFilterList rules separately in this profile (unless more advanced configuration is needed) because the WIP policies and App lists automatically take effect.
 
 Currently, this can only be configured in [custom XML in the ProfileXML node](vpn-profile-options.md).
 

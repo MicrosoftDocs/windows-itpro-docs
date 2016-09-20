@@ -16,7 +16,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Most of the VPN settings in Windows 10 can be configured in VPN profiles using Microsoft Intune or System Center Configuration Manager. All VPN settings in Windows 10 can be configued using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) 
+Most of the VPN settings in Windows 10 can be configured in VPN profiles using Microsoft Intune or System Center Configuration Manager. All VPN settings in Windows 10 can be configued using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx). 
 
 >[!NOTE]
 >If you're not familiar with CSPs, read [Introduction to configuration service providers (CSPs)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers) first.
@@ -134,7 +134,7 @@ NativeProtocolType
       </Add>
 ```
 
-[!NOTE]
+>[!NOTE]
 >Forced-tunnel routing is used if no routes are specified.
 
 
@@ -183,71 +183,307 @@ You can only configure EAP-based authentication if you select a built-in connect
 
 ## Proxy settings
 
-**Example:** domain name rule for traffic through proxy server
+**Example:** set proxy 
 
 ```
- <Add>
-        <CmdID>10016</CmdID>
+Manual
+      <Add>
+        <CmdID>$CmdID$</CmdID>
         <Item>
           <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/5/DomainName</LocURI>  
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/Proxy/Manual/Server</LocURI>
           </Target>
-          <Data>.</Data>
+          <Data>192.168.0.100:8888</Data>
         </Item>
       </Add>
+ 
+  AutoConfigUrl
       <Add>
-        <CmdID>10017</CmdID>
+        <CmdID>$CmdID$</CmdID>
         <Item>
           <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/5/WebProxyServers</LocURI>  
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/Proxy/AutoConfigUrl</LocURI>
           </Target>
-          <Data>192.168.0.11</Data>
+          <Data>HelloWorld.com</Data>
         </Item>
       </Add>
       ```
 
 ## NRPT name resolution
 
-**Example:** 
+**Example:** FQDN match with DNS server
+
+```
+<Add>
+        <CmdID>10016</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/2/DomainName</LocURI>  
+          </Target>
+          <Data>finance.contoso.com</Data>
+        </Item>
+      </Add>
+      <Add>
+        <CmdID>10017</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/2/DnsServers</LocURI>  
+          </Target>
+          <Data>192.168.0.11,192.168.0.12</Data>
+        </Item>
+      </Add>
+```
+
+**Example:** FQDN match with proxy server
+
+```
+<Add>
+        <CmdID>10016</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/3/DomainName</LocURI>  
+          </Target>
+          <Data>finance.contoso.com</Data>
+        </Item>
+      </Add>
+      <Add>
+        <CmdID>10017</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/3/WebProxyServers</LocURI>  
+          </Target>
+          <Data>192.168.0.11:8080</Data>
+        </Item>
+      </Add>
+```
 
 ## DNS suffix name resolution
 
-**Example:**
+**Example:** DNS suffix match with DNS server
+
+```
+<Add>
+        <CmdID>10013</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/DomainName</LocURI>  
+          </Target>
+          <Data>.contoso.com</Data>
+        </Item>
+      </Add>
+      <Add>
+        <CmdID>10014</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/DnsServers</LocURI>  
+          </Target>
+          <Data>192.168.0.11,192.168.0.12</Data>
+        </Item>
+      </Add>
+```
+
+**Example:** DNS suffix match with proxy server
+
+```
+<Add>
+        <CmdID>10013</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/DomainName</LocURI>  
+          </Target>
+          <Data>.contoso.com</Data>
+        </Item>
+      </Add>
+      <Add>
+        <CmdID>10015</CmdID>
+        <Item>
+          <Target>
+<LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/WebProxyServers</LocURI>  
+          </Target>
+          <Data>192.168.0.100:8888</Data>
+        </Item>
+      </Add>
+```
 
 ## Persistent name resolution
 
-**Example:**
+**Example:** persistent name resolution
+
+```
+<Add>
+        <CmdID>10010</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/Persistent</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">bool</Format>
+          </Meta>
+          <Data>true</Data>
+        </Item>
+      </Add>
+```
 
 ## App trigger
 
-**Example:**
+**Example:** set Internet Explorer and Microsoft Edge to trigger VPN
+
+```
+<!-- Internet Explorer -->
+      <Add>
+        <CmdID>10013</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/0/App/Id</LocURI>
+          </Target>
+          <Data>%PROGRAMFILES%\Internet Explorer\iexplore.exe</Data>
+        </Item>
+      </Add>
+      <Add>
+        <CmdID>10014</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/1/App/Id</LocURI>
+          </Target>
+          <Data>%PROGRAMFILES% (x86)\Internet Explorer\iexplore.exe</Data>
+        </Item>
+      </Add>
+      <!-- Edge -->
+      <Add>
+        <CmdID>10015</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/2/App/Id</LocURI>
+          </Target>
+          <Data>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Data>
+        </Item>
+      </Add>
+```
 
 ## Name trigger
 
-**Example:**
+**Example:** set domain name rule to trigger VPN
+
+```
+<Add>
+        <CmdID>10010</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/AutoTrigger</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">bool</Format>
+          </Meta>
+          <Data>true</Data>
+        </Item>
+      </Add>
+```
 
 ## Always On
 
-**Example:**
+Always On cannot be set with force tunnel.
+
+**Example:** set Always On.
+
+```
+<Add>
+        <CmdID>$CmdID$</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AlwaysOn</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">bool</Format>
+          </Meta>
+          <Data>true</Data>
+        </Item>
+      </Add>
+```
 
 ## Trusted network detection
 
-**Example:**
+**Example:** configure trusted networks 
+
+```
+      <Add>
+        <CmdID>$CmdID$</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/TrustedNetworkDetection</LocURI>
+          </Target>
+          <Data>Adatum.com</Data>
+        </Item>
+      </Add>
+```
 
 ## LockDown
 
-**Example:**
+For built-in VPN, Lockdown VPN is only available for the Internet Key Exchange version 2 (IKEv2) connection type.
+
+**Example:** set a LockDown profile. 
+
+```
+<Add>
+        <CmdID>$CmdID$</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/Lockdown</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">bool</Format>
+          </Meta>
+          <Data>true</Data>
+        </Item>
+      </Add>
+```
 
 ## Windows Information Protection
 
-**Example:**
+If you are using Windows Information Protection (WIP) (formerly known as Enterprise Data Protection), then you should configure VPN first before you configure WIP policies.
+
+**Example:** provide enterprise ID to connect VPN profile with WIP policy
+
+```
+<Add>
+      <CmdID>$CmdID$</CmdID>
+      <Item>
+        <Target>
+          <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/EDPModeID</LocURI>
+        </Target>
+        <Data>corp.contoso.com</Data>
+      </Item>
+    </Add>
+```
 
 ## Traffic filters
 
-**Example:**
+**Example:** traffic filter for desktop app
 
+```
+<Add>
+        <CmdID>10013</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/TrafficFilterList/0/App/Id</LocURI>
+          </Target>
+          <Data>%ProgramFiles%\Internet Explorer\iexplore.exe</Data>
+        </Item>
+      </Add>
+```
 
+**Example:** traffic filter for UWP app
 
+```
+<Add>
+        <CmdID>10014</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/TrafficFilterList/1/App/Id</LocURI>  
+          </Target>
+          <Data>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Data>
+        </Item>
+      </Add>
+```
 
 
  
