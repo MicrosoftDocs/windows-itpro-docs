@@ -91,6 +91,11 @@ The following image shows conditional access options in a VPN Profile configurat
 - [Azure Active Directory conditional access](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access/)
 - [Getting started with Azure Active Directory Conditional Access](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-azuread-connected-apps/)
 - [Control the health of Windows 10-based devices](https://technet.microsoft.com/itpro/windows/keep-secure/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices)
+- [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 1)](https://blogs.technet.microsoft.com/tip_of_the_day/2016/03/12/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn/)
+- [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 2)](https://blogs.technet.microsoft.com/tip_of_the_day/2016/03/14/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-2/)
+- [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 3)](https://blogs.technet.microsoft.com/tip_of_the_day/2016/03/15/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-3/)
+- [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 4)](https://blogs.technet.microsoft.com/tip_of_the_day/2016/03/16/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-4/)
+
 
 
 ## Related topics
