@@ -144,7 +144,7 @@ In the previous example for including drivers for a POS system, you would also n
   
   *Figure 3. A new Install Application step for Sample POS App*
 
-12.	On the **Properties** tab of the new **Install Application** step, enter **Install - Application** in the **Name** field, where *application* is the name of your app.
+12.	On the **Properties** tab of the new **Install Application** step, enter **Install - Sample POS App** in the **Name** field, where *Sample POS App* is the name of your app.
 
 13.	Click **Install a Single Application**, and then click **Browse** to view available applications that have been imported into the deployment share.
 
