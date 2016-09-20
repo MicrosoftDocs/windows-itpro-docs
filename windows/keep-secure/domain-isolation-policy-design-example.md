@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 This design example continues to use the fictitious company Woodgrove Bank, and builds on the example described in the [Firewall Policy Design Example](firewall-policy-design-example.md) section. See that example for an explanation of the basic corporate network infrastructure at Woodgrove Bank with diagrams.
 

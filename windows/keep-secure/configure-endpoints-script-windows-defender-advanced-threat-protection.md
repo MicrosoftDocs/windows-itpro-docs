@@ -8,12 +8,22 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+localizationpriority: high
 ---
 
 # Configure endpoints using a local script
+
+**Applies to:**
+
+- Windows 10 Enterprise
+- Windows 10 Education
+- Windows 10 Pro
+- Windows 10 Pro Education
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
 You can also manually onboard individual endpoints to Windows Defender ATP. You might want to do this first when testing the service before you commit to onboarding all endpoints in your network.
 
-
+## Onboard endpoints
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a.  Click **Endpoint Management** on the **Navigation pane**.
@@ -21,11 +31,11 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
     b.  Select **Local Script**, click **Download package** and save the .zip file.
 
 
-2.  Extract the contents of the configuration package to a location on the endpoint you want to onboard (for example, the Desktop). You should have a file called *WindowsDefenderATPOnboardingScript.cmd*.
+2.  Extract the contents of the configuration package to a location on the endpoint you want to onboard (for example, the Desktop). You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
 3.  Open an elevated command-line prompt on the endpoint and run the script:
 
-    a.  Click **Start** and type **cmd**.
+    a.  Go to **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
 
@@ -35,23 +45,46 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 
 5.  Press the **Enter** key or click **OK**.
 
-See the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) topic for details on how you can manually validate that the endpoint is compliant and correctly reports telemetry.
+For for information on how you can manually validate that the endpoint is compliant and correctly reports telemetry see, [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
 
-## Offboard endpoints using a local script
+## Configure sample collection settings
+For each endpoint, you can set a configuration value to state whether samples can be collected from the endpoint when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
+
+You can manually configure the sample sharing setting on the endpoint by using *regedit* or creating and running a *.reg* file.  
+
+The configuration is set through the following registry key entry:
+
+```text
+Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
+Name: "AllowSampleCollection"
+Value: 0 or 1
+```
+Where:<br>
+Name type is a D-WORD. <br>
+Possible values are:
+- 0 - doesn't allow sample sharing  from this endpoint
+- 1 - allows sharing of all file types from this endpoint
+
+The default value in case the registry key doesn’t exist is 1.
+
+
+## Offboard endpoints
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
-> **Note**&nbsp;&nbsp;Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
+> [!NOTE]
+> Onboarding and offboarding policies must not be deployed on the same endpoint at the same time, otherwise this will cause unpredictable collisions.
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a. Click **Endpoint Management** on the **Navigation pane**.
+
     b. Under **Endpoint offboarding** section, select **Group Policy**, click **Download package** and save the .zip file.
-    
+
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3.  Open an elevated command-line prompt on the endpoint and run the script:
 
-    a.  Click **Start** and type **cmd**.
+    a.  Go to **Start** and type **cmd**.
 
     b.  Right-click **Command prompt** and select **Run as administrator**.
 
@@ -60,6 +93,18 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
 5.  Press the **Enter** key or click **OK**.
+
+## Monitor endpoint configuration
+You can follow the different verification steps in the [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) to verify that the script completed successfully and the agent is running.
+
+Monitoring can also be done directly on the portal, or by using the different deployment tools.
+
+### Monitor endpoints using the portal
+1.	Go to the Windows Defender ATP portal.
+
+2.	Click **Machines view**.
+
+3.	Verify that endpoints are appearing.
 
 
 ## Related topics

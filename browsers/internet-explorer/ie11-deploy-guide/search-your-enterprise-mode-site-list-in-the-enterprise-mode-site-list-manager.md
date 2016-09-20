@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
 description: Search to see if a specific site already appears in your global Enterprise Mode site list.
-ms.assetid: e399aeaf-6c3b-4cad-93c9-813df6ad47f9 
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: e399aeaf-6c3b-4cad-93c9-813df6ad47f9
 title: Search your Enterprise Mode site list in the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Search your Enterprise Mode site list in the Enterprise Mode Site List Manager
 
@@ -27,8 +29,8 @@ You can search to see if a specific site already appears in your global Enterpri
 The search query searches all of the text. For example, entering *“micro”* will return results like, www.microsoft.com, microsoft.com, and microsoft.com/images. Wildcard characters aren’t supported.
 
 ## Related topics
-- [Download the Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853)
-- [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
  
 

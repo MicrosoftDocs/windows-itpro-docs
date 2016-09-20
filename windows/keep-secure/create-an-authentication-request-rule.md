@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 After you have configured IPsec algorithms and authentication methods, you can create the rule that requires the devices on the network to use those protocols and methods before they can communicate.
 

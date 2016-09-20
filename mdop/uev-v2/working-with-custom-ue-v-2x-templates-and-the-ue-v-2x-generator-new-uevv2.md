@@ -49,7 +49,8 @@ The UE-V Generator excludes locations, which commonly store application software
 
 -   Windows operating system files that are located in %Systemroot%, which requires administrator rights and might require to set a UAC agreement
 
-If registry keys and files that are stored in these locations are required to synchronize application settings, you can manually add the excluded locations to the settings location template during the template creation process.
+If registry keys and files that are stored in these locations are required to synchronize application settings, you can manually add the excluded locations to the settings location template during the template creation process
+ (except for registry entries in the HKEY\_LOCAL\_MACHINE hive).
 
 ## <a href="" id="edit"></a>Edit Settings Location Templates with the UE-V Generator
 
@@ -138,7 +139,7 @@ It is possible to create or edit settings location templates in an XML editor wi
 ## <a href="" id="share"></a>Share Settings Location Templates with the Template Gallery
 
 
-The Microsoft User Experience Virtualization (UE-V) 2.0 template gallery enables administrators to share their UE-V settings location templates. In the gallery, you can upload your settings location templates for other users to use, and you can download templates that other users have created. The UE-V template gallery is located on Microsoft TechNet [here](http://go.microsoft.com/fwlink/p/?LinkId=246589).
+The Microsoft User Experience Virtualization (UE-V) 2.0 template gallery enables administrators to share their UE-V settings location templates. In the gallery, you can upload your settings location templates for other users to use, and you can download templates that other users have created. The UE-V template gallery is located on Microsoft TechNet [here](https://go.microsoft.com/fwlink/p/?LinkId=246589).
 
 Before you share a settings location template on the UE-V template gallery, ensure it does not contain any personal or company information. You can use any XML viewer to open and view the contents of a settings location template file. The following template values should be reviewed before you share a template with anyone outside your company.
 

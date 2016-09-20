@@ -8,6 +8,7 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Prepare your environment for Microsoft Surface Hub

@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Implement Windows Hello for Business in your organization
@@ -17,9 +18,15 @@ author: jdeckerMS
 -   Windows 10 Mobile
 
 You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello on devices running Windows 10.
-> **Important:**  The Group Policy setting **Turn on PIN sign-in** does not apply to Windows 10. Use **Windows Hello for Business** policy settings to manage PINs.
+
+>[!IMPORTANT]
+>The Group Policy setting **Turn on PIN sign-in** does not apply to Windows Hello for Business. It still prevents or enables the creation of a convenience PIN for Windows 10, version 1507 and 1511. 
+>
+>Beginning in version 1607, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN for Windows 10, version 1607, enable the Group Policy setting **Turn on convenience PIN sign-in**. 
+>
+>Use **Windows Hello for Business** policy settings to manage PINs for Windows Hello for Business.
  
-## Group Policy settings for Passport
+## Group Policy settings for Windows Hello for Business
 
 The following table lists the Group Policy settings that you can configure for Hello use in your workplace. These policy settings are available in both **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.
 
@@ -138,9 +145,13 @@ The following table lists the Group Policy settings that you can configure for H
 </tr>
 </table>
 
-## MDM policy settings for Passport
+## MDM policy settings for Windows Hello for Business
 
-The following table lists the MDM policy settings that you can configure for Windows Hello for Business use in your workplace. These MDM policy settings use the [PassportForWork configuration service provider (CSP)](http://go.microsoft.com/fwlink/p/?LinkId=692070).
+The following table lists the MDM policy settings that you can configure for Windows Hello for Business use in your workplace. These MDM policy settings use the [PassportForWork configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkId=692070).
+
+>[!IMPORTANT]
+>Starting in Windows 10, version 1607, all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP. 
+
 <table>
 <tr>
 <th colspan="2">Policy</th>
@@ -284,8 +295,8 @@ The following table lists the MDM policy settings that you can configure for Win
 </tr>
 </table>
 
-**Note**  
-If policy is not configured to explicitly require letters or special characters, users will be restricted to creating a numeric PIN.
+>[!NOTE]  
+> If policy is not configured to explicitly require letters or special characters, users will be restricted to creating a numeric PIN.
  
 ## Prerequisites
 
@@ -311,12 +322,12 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <td align="left">Azure AD subscription</td>
 <td align="left"><ul>
 <li>Active Directory Federation Service (AD FS) (Windows Server 2016)</li>
-<li>A few Windows Server 2016 Technical Preview domain controllers on-site</li>
+<li>A few Windows Server 2016 domain controllers on-site</li>
 <li>Microsoft System Center 2012 R2 Configuration Manager SP2</li>
 </ul></td>
 <td align="left"><ul>
 <li>Azure AD subscription</li>
-<li>[Azure AD Connect](http://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
+<li>[Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
 <li>A few Windows Server 2016 domain controllers on-site</li>
 <li>A management solution, such as Configuration Manager, Group Policy, or MDM</li>
 <li>Active Directory Certificate Services (AD CS) without Network Device Enrollment Service (NDES)</li>
@@ -337,9 +348,9 @@ You’ll need this software to set Windows Hello for Business policies in your e
 </ul></td>
 <td align="left"><ul>
 <li>Azure AD subscription</li>
-<li>[Azure AD Connect](http://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
+<li>[Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
 <li>AD CS with NDES</li>
-<li>Configuration Manager 2016 for domain-joined certificate enrollment, or InTune for non-domain-joined devices, or a non-Microsoft MDM service that supports Passport for Work</li>
+<li>Configuration Manager for domain-joined certificate enrollment, or InTune for non-domain-joined devices, or a non-Microsoft MDM service that supports Passport for Work</li>
 </ul></td>
 </tr>
 </tbody>
@@ -349,12 +360,12 @@ Configuration Manager and MDM provide the ability to manage Windows Hello for Bu
 
 Azure AD provides the ability to register devices with your enterprise and to provision Windows Hello for Business for organization accounts.
 
-Active Directory provides the ability to authorize users and devices using keys protected by Windows Hello for Business if domain controllers are running Windows 10 and the Windows Hello for Business provisioning service in Windows 10 AD FS.
 
 ## Windows Hello for BYOD
 
-Windows Hello can be managed on personal devices that your employees use for work purposes using MDM. On personal devices, users can create a personal Windows Hello PIN for unlocking the device and a separate work PIN for access to work resources.
-The work PIN is managed using the same Windows Hello for Business policies that you can use to manage Windows Hello for Business on organization-owned devices. The personal PIN is managed separately using DeviceLock policy. DeviceLock policy can be used to control length, complexity, history, and expiration requirements and can be configured using the [Policy configuration service provider](http://go.microsoft.com/fwlink/p/?LinkID=623244).
+Windows Hello can be managed on personal devices that your employees use for work purposes using MDM. On personal devices, users can create a personal Windows Hello PIN for unlocking the device and used this PIN for access to work resources.
+
+The PIN is managed using the same Windows Hello for Business policies that you can use to manage Windows Hello for Business on organization-owned devices. The PIN can also be managed using DeviceLock policy. DeviceLock policy can be used to control length, complexity, history, and expiration requirements and can be configured using the [Policy configuration service provider](https://go.microsoft.com/fwlink/p/?LinkID=623244).
 
 ## Related topics
 

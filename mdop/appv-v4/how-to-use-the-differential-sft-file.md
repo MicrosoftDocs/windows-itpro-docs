@@ -19,7 +19,7 @@ You do not need to use the Differential SFT file if you are using Configuration 
 
 The following procedure shows how to use the mkdiffpkg.exe that is included in the Sequencer installation to create the Differential SFT file, after completing the upgrade of the virtual application package, and to deploy the Differential SFT file. Completing this procedure helps ensure that if the package is somehow unloaded from the client computer, the next time the user tries to run the application, the client will fall back to the override URL, which is set to stream the full package V2.sft from the local file share. This will avoid any failure for the user when starting the application. If the entire client becomes corrupted or is uninstalled, it is recommended that the ESD system be configured to deploy the full version of the upgraded package, V2.sft, to the client.
 
-For more information about upgrading a package, see “How to Upgrade an Existing Virtual Application” in the App-V 4.5 Operations Guide at <http://go.microsoft.com/fwlink/?LinkId=133129>
+For more information about upgrading a package, see “How to Upgrade an Existing Virtual Application” in the App-V 4.5 Operations Guide at <https://go.microsoft.com/fwlink/?LinkId=133129>
 
 **Note**  
 As a prerequisite, all user computers being targeted by the ESD must have the V1.sft file fully loaded into their local cache, and file streaming must be enabled on all computers.

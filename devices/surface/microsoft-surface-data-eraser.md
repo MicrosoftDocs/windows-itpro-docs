@@ -2,6 +2,7 @@
 title: Microsoft Surface Data Eraser (Surface)
 description: Find out how the Microsoft Surface Data Eraser tool can help you securely wipe data from your Surface devices.
 ms.assetid: 8DD3F9FE-5458-4467-BE26-E9200341CF10
+localizationpriority: high
 keywords: tool, USB, data, erase
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -15,7 +16,7 @@ author: miladCA
 
 Find out how the Microsoft Surface Data Eraser tool can help you securely wipe data from your Surface devices.
 
-[Microsoft Surface Data Eraser](http://go.microsoft.com/fwlink/p/?LinkId=691148) is a tool that boots from a USB stick and allows you to perform a secure wipe of all data from a compatible Surface device. A Microsoft Surface Data Eraser USB stick requires only the ability to boot from USB. The USB tool is easy to create by using the provided wizard, the Microsoft Surface Data Eraser Wrapper, and is easy to use with a simple graphic interface, no command line needed. To learn more about the data wiping capabilities and practices Microsoft uses during the service process for Surface, see [Protecting your data if you send your Surface in for service](http://go.microsoft.com/fwlink/p/?LinkId=691222).
+[Microsoft Surface Data Eraser](https://go.microsoft.com/fwlink/p/?LinkId=691148) is a tool that boots from a USB stick and allows you to perform a secure wipe of all data from a compatible Surface device. A Microsoft Surface Data Eraser USB stick requires only the ability to boot from USB. The USB tool is easy to create by using the provided wizard, the Microsoft Surface Data Eraser Wrapper, and is easy to use with a simple graphic interface, no command line needed. To learn more about the data wiping capabilities and practices Microsoft uses during the service process for Surface, see [Protecting your data if you send your Surface in for service](https://go.microsoft.com/fwlink/p/?LinkId=691222).
 
 Compatible Surface devices include:
 

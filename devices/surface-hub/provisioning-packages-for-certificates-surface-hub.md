@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Create provisioning packages (Surface Hub)
@@ -35,7 +36,6 @@ To create and apply a provisioning package to a Surface Hub, you'll need the fol
 -   USB flash drive.
 
 You'll create the provisioning package on a PC runing Windows 10, save the package to a USB drive, and then deploy it to your Surface Hub. 
-
 
 ## Supported items for Surface Hub provisioning packages
 

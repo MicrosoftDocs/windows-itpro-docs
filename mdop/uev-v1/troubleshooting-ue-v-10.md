@@ -13,7 +13,7 @@ ms.prod: w8
 # Troubleshooting UE-V 1.0
 
 
-Troubleshooting content is not included in the Administrator's Guide for this product. Instead, you can find troubleshooting information for this product on the [TechNet Wiki](http://go.microsoft.com/fwlink/p/?LinkId=224905).
+Troubleshooting content is not included in the Administrator's Guide for this product. Instead, you can find troubleshooting information for this product on the [TechNet Wiki](https://go.microsoft.com/fwlink/p/?LinkId=224905).
 
 ##  Find troubleshooting information
 
@@ -26,7 +26,7 @@ The first step to find help content in the Administrator’s Guide is to search 
 
 **To search the MDOP product documentation**
 
-1.  Open a web browser and navigate to the [MDOP Information Experience](http://go.microsoft.com/fwlink/p/?LinkId=236032) home page on TechNet.
+1.  Open a web browser and navigate to the [MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032) home page on TechNet.
 
 2.  Locate the **Search TechNet with Bing** search box and enter your search term.
 
@@ -34,7 +34,7 @@ The first step to find help content in the Administrator’s Guide is to search 
 
 **To search the TechNet Wiki**
 
-1.  Open a web browser and navigate to the [TechNet Wiki](http://go.microsoft.com/fwlink/p/?LinkId=224905) home page.
+1.  Open a web browser and navigate to the [TechNet Wiki](https://go.microsoft.com/fwlink/p/?LinkId=224905) home page.
 
 2.  Locate the **Search TechNet Wiki** search box and enter your search term.
 
@@ -47,7 +47,7 @@ If you have a troubleshooting tip or a best practice to share that is not alread
 
 **To create a TechNet Wiki troubleshooting or best practices article**
 
-1.  Open a web browser and navigate to the [TechNet Wiki](http://go.microsoft.com/fwlink/p/?LinkId=224905) home page.
+1.  Open a web browser and navigate to the [TechNet Wiki](https://go.microsoft.com/fwlink/p/?LinkId=224905) home page.
 
 2.  Log on with your Windows Live ID.
 

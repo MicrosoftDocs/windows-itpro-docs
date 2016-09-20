@@ -142,7 +142,7 @@ You can use MDT to deploy 32-bit or 64-bit versions of Windows 10. Install the 6
 
 >**Note:**&nbsp;&nbsp;If you install the 32-bit version of MDT, you can install only 32-bit versions of Windows 10. Ensure that you download and install the 64-bit version of MDT so that you can install 64-bit and 32 bit versions of the operating system.
 
-For more information about installing MDT on the admin device, see [Installing a New Instance of MDT](https://technet.microsoft.com/en-us/library/dn759415.aspx#InstallingaNewInstanceofMDT).
+For more information about installing MDT on the admin device, see [Installing a New Instance of MDT](https://technet.microsoft.com//library/dn759415.aspx#InstallingaNewInstanceofMDT).
 
 Now, you’re ready to create the MDT deployment share and populate it with the operating system, apps, and device drivers you want to deploy to your devices.
 
@@ -336,7 +336,7 @@ Now that you have an Office 365 subscription, you need to determine how you will
 
 In this method, you have an on-premises AD DS domain. As shown in Figure 4, the Azure AD Connector tool automatically synchronizes AD DS with Azure AD. When you add or change any user accounts in AD DS, the Azure AD Connector tool automatically updates Azure AD.
 
->**Note:**&nbsp;&nbsp;Azure AD Connect also supports synchronization from any Lightweight Directory Access Protocol version 3 (LDAPv3)–compliant directory by using the information provided in [Generic LDAP Connector for FIM 2010 R2 Technical Reference](https://technet.microsoft.com/en-us/library/dn510997.aspx?f=255&MSPPError=-2147217396).
+>**Note:**&nbsp;&nbsp;Azure AD Connect also supports synchronization from any Lightweight Directory Access Protocol version 3 (LDAPv3)–compliant directory by using the information provided in [Generic LDAP Connector for FIM 2010 R2 Technical Reference](https://technet.microsoft.com//library/dn510997.aspx?f=255&MSPPError=-2147217396).
 
 ![fig 4](images/deploy-win-10-school-figure4.png)
 
@@ -385,7 +385,7 @@ You can deploy the Azure AD Connect tool by using one of the following methods:
 
  *Figure 7. Azure AD Connect in Azure*
 
-This guide describes how to run Azure AD Connect on premises. For information about running Azure AD Connect in Azure, see [Deploy Office 365 Directory Synchronization (DirSync) in Microsoft Azure](https://technet.microsoft.com/en-us/library/dn635310.aspx).
+This guide describes how to run Azure AD Connect on premises. For information about running Azure AD Connect in Azure, see [Deploy Office 365 Directory Synchronization (DirSync) in Microsoft Azure](https://technet.microsoft.com//library/dn635310.aspx).
 
 ### Deploy Azure AD Connect on premises
 
@@ -436,8 +436,8 @@ Several methods are available to bulk-import user accounts into AD DS domains. T
 
 |Method | Description and reason to select this method |
 |-------| ---------------------------------------------|
-|Ldifde.exe |This command-line tool allows you to import and export objects (such as user accounts) from AD DS. Select this method if you aren’t comfortable with Microsoft Visual Basic Scripting Edition (VBScript), Windows PowerShell, or other scripting languages. For more information about using Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
-|VBScript | This scripting language uses the Active Directory Services Interfaces (ADSI) Component Object Model interface to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with VBScript. For more information about using VBScript and ADSI, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx) and [ADSI Scriptomatic](https://technet.microsoft.com/en-us/scriptcenter/dd939958.aspx).|
+|Ldifde.exe |This command-line tool allows you to import and export objects (such as user accounts) from AD DS. Select this method if you aren’t comfortable with Microsoft Visual Basic Scripting Edition (VBScript), Windows PowerShell, or other scripting languages. For more information about using Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com//library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
+|VBScript | This scripting language uses the Active Directory Services Interfaces (ADSI) Component Object Model interface to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with VBScript. For more information about using VBScript and ADSI, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com//library/bb727091.aspx) and [ADSI Scriptomatic](https://technet.microsoft.com//scriptcenter/dd939958.aspx).|
 |Windows PowerShell| This scripting language natively supports cmdlets to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with Window PowerShell scripting. For more information about using Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).|
 <p>
 ### Create a source file that contains the user and group accounts
@@ -448,8 +448,8 @@ After you have selected your user and group account bulk import method, you’re
 
 | Method | Source file format |
 |--------| -------------------|
-|Ldifde.exe|Ldifde.exe requires a specific format for the source file. Use Ldifde.exe to export existing user and group accounts so that you can see the format. For examples of the format that Ldifde.exe requires, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
-|VBScript | VBScript can use any .csv file format to create a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in comma-separated values (CSV) format, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx).|
+|Ldifde.exe|Ldifde.exe requires a specific format for the source file. Use Ldifde.exe to export existing user and group accounts so that you can see the format. For examples of the format that Ldifde.exe requires, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com//library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
+|VBScript | VBScript can use any .csv file format to create a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in comma-separated values (CSV) format, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com//library/bb727091.aspx).|
 | Windows PowerShell| Windows PowerShell can use any .csv file format you want to create as a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in CSV format, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).|
 <p>
 ### Import the user accounts into AD DS
@@ -460,8 +460,8 @@ With the bulk-import source file finished, you’re ready to import the user and
 
 For more information about how to import user accounts into AD DS by using:
 
-- Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).
-- VBScript, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx).
+- Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com//library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).
+- VBScript, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com//library/bb727091.aspx).
 - Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).
 
 ### Summary
@@ -702,14 +702,14 @@ The first step in preparation for Windows 10 deployment is to configure—that i
 <tbody>
 <tr>
 <td valign="top">1. Import operating systems</td>
-<td>Import the operating systems that you selected in the [Select operating systems](#select-the-operating-systems) section into the deployment share. For more information about how to import operating systems, see [Import an Operating System into the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#ImportanOperatingSystemintotheDeploymentWorkbench).</td>
+<td>Import the operating systems that you selected in the [Select operating systems](#select-the-operating-systems) section into the deployment share. For more information about how to import operating systems, see [Import an Operating System into the Deployment Workbench](https://technet.microsoft.com//library/dn759415.aspx#ImportanOperatingSystemintotheDeploymentWorkbench).</td>
 </tr>
 
 <tr>
 <td valign="top">2. Import device drives</td>
 <td>Device drivers allow Windows 10 to know a device’s hardware resources and connected hardware accessories. Without the proper device drivers, certain features may be unavailable. For example, without the proper audio driver, a device cannot play sounds; without the proper camera driver, the device cannot take photos or use video chat.<br/><br/>
 
-Import device drivers for each device in your institution. For more information about how to import device drivers, see [Import Device Drivers into the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#ImportDeviceDriversintotheDeploymentWorkbench).
+Import device drivers for each device in your institution. For more information about how to import device drivers, see [Import Device Drivers into the Deployment Workbench](https://technet.microsoft.com//library/dn759415.aspx#ImportDeviceDriversintotheDeploymentWorkbench).
 
 </td>
 </tr>
@@ -724,8 +724,8 @@ If you have Intune, you can deploy Windows Store apps after you deploy Windows 1
 
 In addition, you must prepare your environment for sideloading (deploying) Windows Store apps. For more information about how to:<br/><br/>
 <ul>
-<li>Prepare your environment for sideloading, see [Sideload LOB apps in Windows 10](https://technet.microsoft.com/en-us/itpro/windows/deploy/sideload-apps-in-windows-10).</li>
-<li>Create an MDT application, see [Create a New Application in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench).</li>
+<li>Prepare your environment for sideloading, see [Sideload LOB apps in Windows 10](https://technet.microsoft.com/itpro/windows/deploy/sideload-apps-in-windows-10).</li>
+<li>Create an MDT application, see [Create a New Application in the Deployment Workbench](https://technet.microsoft.com//library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench).</li>
 </ul>
 
 
@@ -737,11 +737,11 @@ In addition, you must prepare your environment for sideloading (deploying) Windo
 </td>
 <td>You need to create an MDT application for each Windows desktop app you want to deploy. You can obtain the Windows desktop apps from any source, but ensure that you have sufficient licenses for them.<br/><br/>
 
-To help reduce the effort needed to deploy Microsoft Office 2016 desktop apps, use the Office Deployment Tool, as described in [Deploy Click-to-Run for Office 365 products by using the Office Deployment Tool](https://technet.microsoft.com/en-us/library/jj219423.aspx?f=255&MSPPError=-2147217396).<br/><br/>
+To help reduce the effort needed to deploy Microsoft Office 2016 desktop apps, use the Office Deployment Tool, as described in [Deploy Click-to-Run for Office 365 products by using the Office Deployment Tool](https://technet.microsoft.com//library/jj219423.aspx?f=255&MSPPError=-2147217396).<br/><br/>
 
 If you have Intune, you can deploy Windows desktop apps after you deploy Windows 10, as described in the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section. This method provides granular deployment of Windows desktop apps, and you can use it for ongoing management of the apps. This is the preferred method for deploying and managing Windows desktop apps.<br/><br/>**Note:**&nbsp;&nbsp;You can also deploy Windows desktop apps after you deploy Windows 10, as described in the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section.<br/><br/>
 
-For more information about how to create an MDT application for Window desktop apps, see [Create a New Application in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench).
+For more information about how to create an MDT application for Window desktop apps, see [Create a New Application in the Deployment Workbench](https://technet.microsoft.com//library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench).
 
 </td>
 </tr>
@@ -757,7 +757,7 @@ For more information about how to create an MDT application for Window desktop a
 <li>Upgrade existing devices to Windows 10 Education 32-bit.</li>
 </ul>
 
-Again, you will create the task sequences based on the operating systems that you imported in Step 1. For more information about how to create a task sequence, see [Create a New Task Sequence in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewTaskSequenceintheDeploymentWorkbench).
+Again, you will create the task sequences based on the operating systems that you imported in Step 1. For more information about how to create a task sequence, see [Create a New Task Sequence in the Deployment Workbench](https://technet.microsoft.com//library/dn759415.aspx#CreateaNewTaskSequenceintheDeploymentWorkbench).
 
 </td>
 </tr>
@@ -767,7 +767,7 @@ Again, you will create the task sequences based on the operating systems that yo
 </td>
 <td>Updating a deployment share generates the MDT boot images you use to initiate the Windows 10 deployment process. You can configure the process to create 32 bit and 64 bit versions of the .iso and .wim files you can use to create bootable media or in Windows Deployment Services.<br/><br/>
 
-For more information about how to update a deployment share, see [Update a Deployment Share in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#UpdateaDeploymentShareintheDeploymentWorkbench).</td>
+For more information about how to update a deployment share, see [Update a Deployment Share in the Deployment Workbench](https://technet.microsoft.com//library/dn759415.aspx#UpdateaDeploymentShareintheDeploymentWorkbench).</td>
 </tr>
 </tbody>
 </table>
@@ -782,9 +782,9 @@ You can use Windows Deployment Services in conjunction with MDT to automatically
 
   - [Windows Deployment Services overview](https://technet.microsoft.com/library/hh831764.aspx)
   - The Windows Deployment Services Help file, included in Windows Deployment Services
-  - [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/en-us/library/jj648426.aspx)
+  - [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com//library/jj648426.aspx)
 
-2. Add LTI boot images (Windows PE images) to Windows Deployment Services.<p>The LTI boot images (.wim files) that you will add to Windows Deployment Services are in the MDT deployment share. Locate the .wim files in the Boot subfolder in the deployment share. For more information about how to perform this step, see [Add LTI Boot Images to Windows Deployment Services](https://technet.microsoft.com/en-us/library/dn759415.aspx#AddLTIBootImagestoWindowsDeploymentServices).
+2. Add LTI boot images (Windows PE images) to Windows Deployment Services.<p>The LTI boot images (.wim files) that you will add to Windows Deployment Services are in the MDT deployment share. Locate the .wim files in the Boot subfolder in the deployment share. For more information about how to perform this step, see [Add LTI Boot Images to Windows Deployment Services](https://technet.microsoft.com//library/dn759415.aspx#AddLTIBootImagestoWindowsDeploymentServices).
 
 ### Summary
 
@@ -897,7 +897,7 @@ Microsoft has several recommended settings for educational institutions. Table 1
 <td valign="top">Use of Microsoft accounts</td>
 <td>You want faculty and students to use only Azure AD accounts for institution-owned devices. For these devices, do not use Microsoft accounts or associate a Microsoft account with the Azure AD accounts.<br/><br/>
 **Note:**&nbsp;&nbsp;Personal devices typically use Microsoft accounts. Faculty and students can associate their Microsoft account with their Azure AD account on these devices.<br/><br/>
-**Group Policy.** Configure the [Accounts: Block Microsoft accounts](https://technet.microsoft.com/en-us/library/jj966262.aspx?f=255&MSPPError=-2147217396) Group Policy setting to use the Users can’t add Microsoft accounts setting option.<br/><br/>
+**Group Policy.** Configure the [Accounts: Block Microsoft accounts](https://technet.microsoft.com//library/jj966262.aspx?f=255&MSPPError=-2147217396) Group Policy setting to use the Users can’t add Microsoft accounts setting option.<br/><br/>
 **Intune.** Enable or disable the camera by using the **Allow Microsoft account**, **Allow adding non-Microsoft accounts manually**, and **Allow settings synchronization for Microsoft accounts** policy settings under the **Accounts and Synchronization** section of a **Windows 10 General Configuration** policy.
 </td>
 </tr>
@@ -905,7 +905,7 @@ Microsoft has several recommended settings for educational institutions. Table 1
 <tr>
 <td valign="top">Restrict local administrator accounts on the devices</td>
 <td>Ensure that only authorized users are local administrators on institution-owned devices. Typically, you don’t want students to be administrators on instruction-owned devices. Explicitly specify the users who will be local administrators on a group of devices.<br/><br/>
-**Group Policy**. Create a **Local Group** Group Policy preference to limit the local administrators group membership. Select the **Delete all member users** and **Delete all member groups** check boxes to remove any existing members. For more information about how to configure Local Group preferences, see [Configure a Local Group Item](https://technet.microsoft.com/en-us/library/cc732525.aspx).<br/><br/>
+**Group Policy**. Create a **Local Group** Group Policy preference to limit the local administrators group membership. Select the **Delete all member users** and **Delete all member groups** check boxes to remove any existing members. For more information about how to configure Local Group preferences, see [Configure a Local Group Item](https://technet.microsoft.com//library/cc732525.aspx).<br/><br/>
 **Intune**. Not available.
 </td>
 </tr>
@@ -913,7 +913,7 @@ Microsoft has several recommended settings for educational institutions. Table 1
 <tr>
 <td valign="top">Restrict the local administrator accounts on the devices</td>
 <td>Ensure that only authorized users are local administrators on institution-owned devices. Typically, you don’t want students to be administrators on instruction-owned devices. Explicitly specify the users who will be local administrators on a group of devices.<br/><br/>
-**Group Policy**. Create a **Local Group** Group Policy preference to limit the local administrators group membership. Select the **Delete all member users** and **Delete all member groups** check boxes to remove any existing members. For more information about how to configure Local Group preferences, see [Configure a Local Group Item](https://technet.microsoft.com/en-us/library/cc732525.aspx).<br/><br/>
+**Group Policy**. Create a **Local Group** Group Policy preference to limit the local administrators group membership. Select the **Delete all member users** and **Delete all member groups** check boxes to remove any existing members. For more information about how to configure Local Group preferences, see [Configure a Local Group Item](https://technet.microsoft.com//library/cc732525.aspx).<br/><br/>
 **Intune**. Not available.
 </td>
 </tr>
@@ -921,7 +921,7 @@ Microsoft has several recommended settings for educational institutions. Table 1
 <tr>
 <td valign="top">Manage the built-in administrator account created during device deployment</td>
 <td>When you use MDT to deploy Windows 10, the MDT deployment process automatically creates a local Administrator account with the password you specified. As a security best practice, rename the built-in Administrator account and optionally disable it.<br/><br/>
-**Group Policy**. Rename the built-in Administrator account by using the **Accounts: Rename administrator account** Group Policy setting. For more information about how to rename the built-in Administrator account, see [To rename the Administrator account using the Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc747484.aspx). You will specify the new name for the Administrator account. You can disable the built-in Administrator account by using the **Accounts: Administrator account status** Group Policy setting. For more information about how to disable the built-in Administrator account, see [Accounts: Administrator account status](https://technet.microsoft.com/en-us/library/jj852165.aspx).<br/><br/>
+**Group Policy**. Rename the built-in Administrator account by using the **Accounts: Rename administrator account** Group Policy setting. For more information about how to rename the built-in Administrator account, see [To rename the Administrator account using the Group Policy Management Console](https://technet.microsoft.com//library/cc747484.aspx). You will specify the new name for the Administrator account. You can disable the built-in Administrator account by using the **Accounts: Administrator account status** Group Policy setting. For more information about how to disable the built-in Administrator account, see [Accounts: Administrator account status](https://technet.microsoft.com//library/jj852165.aspx).<br/><br/>
 **Intune**. Not available.
 </td>
 </tr>
@@ -929,7 +929,7 @@ Microsoft has several recommended settings for educational institutions. Table 1
 <tr>
 <td valign="top">Control Windows Store access</td>
 <td>You can control access to Windows Store and whether existing Windows Store apps receive updates. You can only disable the Windows Store app in Windows 10 Education and Windows 10 Enterprise.<br/><br/>
-**Group Policy**. You can disable the Windows Store app by using the **Turn off the Store Application** Group Policy setting. You can prevent Windows Store apps from receiving updates by using the **Turn off Automatic Download and Install of updates** Group Policy setting. For more information about configuring these settings, see [Can I use Group Policy to control the Windows Store in my enterprise environment?](https://technet.microsoft.com/en-us/library/hh832040.aspx#BKMK_UseGP).<br/><br/>
+**Group Policy**. You can disable the Windows Store app by using the **Turn off the Store Application** Group Policy setting. You can prevent Windows Store apps from receiving updates by using the **Turn off Automatic Download and Install of updates** Group Policy setting. For more information about configuring these settings, see [Can I use Group Policy to control the Windows Store in my enterprise environment?](https://technet.microsoft.com//library/hh832040.aspx#BKMK_UseGP).<br/><br/>
 **Intune**. You can enable or disable the camera by using the **Allow application store** policy setting in the **Apps** section of a **Windows 10 General Configuration** policy.
 </td>
 </tr>
@@ -953,7 +953,7 @@ Microsoft has several recommended settings for educational institutions. Table 1
 <tr>
 <td valign="top">Use of audio recording</td>
 <td>Audio recording (by using the Sound Recorder app) can be a source of disclosure or privacy issues in an education environment. Depending on your institution’s policies, you may want to disable the Sound Recorder app on your devices.<br/><br/>
-**Group Policy**. You can disable the Sound Recorder app by using the **Do not allow Sound Recorder to run** Group Policy setting. You can disable other audio recording apps by using AppLocker policies. Create AppLocker policies by using the information in [Editing an AppLocker Policy](https://technet.microsoft.com/en-us/library/ee791894(v=ws.10).aspx) and [Create Your AppLocker Policies](https://technet.microsoft.com/en-us/library/ee791899.aspx).<br/><br/>
+**Group Policy**. You can disable the Sound Recorder app by using the **Do not allow Sound Recorder to run** Group Policy setting. You can disable other audio recording apps by using AppLocker policies. Create AppLocker policies by using the information in [Editing an AppLocker Policy](https://technet.microsoft.com//library/ee791894(v=ws.10).aspx) and [Create Your AppLocker Policies](https://technet.microsoft.com//library/ee791899.aspx).<br/><br/>
 **Intune**. You can enable or disable the camera by using the **Allow voice recording** policy setting in the **Features** section of a **Windows 10 General Configuration** policy.
 </td>
 </tr>
@@ -989,13 +989,13 @@ Microsoft has several recommended settings for educational institutions. Table 1
 
 Now, you’re ready to configure settings by using Group Policy. The steps in this section assume that you have an AD DS infrastructure. You will configure the Group Policy settings you select in the [Select Microsoft-recommended settings](#select-microsoft-recommended-settings) section.
 
-For more information about Group Policy, see [Group Policy Planning and Deployment Guide](https://technet.microsoft.com/en-us/library/cc754948.aspx).
+For more information about Group Policy, see [Group Policy Planning and Deployment Guide](https://technet.microsoft.com//library/cc754948.aspx).
 
 #### To configure Group Policy settings
 
-1. Create a Group Policy object (GPO) that will contain the Group Policy settings by completing the steps in [Create a new Group Policy object](https://technet.microsoft.com/en-us/library/cc738830.aspx).
-2. Configure the settings in the GPO by completing the steps in [Edit a Group Policy object](https://technet.microsoft.com/en-us/library/cc739902.aspx).
-3. Link the GPO to the appropriate AD DS site, domain, or organizational unit by completing the steps in [Link a Group Policy object to a site, domain, or organizational unit](https://technet.microsoft.com/en-us/library/cc738954(v=ws.10).aspx).
+1. Create a Group Policy object (GPO) that will contain the Group Policy settings by completing the steps in [Create a new Group Policy object](https://technet.microsoft.com//library/cc738830.aspx).
+2. Configure the settings in the GPO by completing the steps in [Edit a Group Policy object](https://technet.microsoft.com//library/cc739902.aspx).
+3. Link the GPO to the appropriate AD DS site, domain, or organizational unit by completing the steps in [Link a Group Policy object to a site, domain, or organizational unit](https://technet.microsoft.com//library/cc738954(v=ws.10).aspx).
 
 ### Configure settings by using Intune
 
@@ -1006,9 +1006,9 @@ For more information about Intune, see [Documentation for Microsoft Intune](http
 #### To configure Intune settings
 
 1. Add Intune to your Office 365 subscription by completing the steps in [Get started with a paid subscription to Microsoft Intune](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune).
-2. Enroll devices with Intune by completing the steps in [Get ready to enroll devices in Microsoft Intune](https://technet.microsoft.com/en-us/library/dn646962.aspx).
-3. Configure the settings in Intune Windows 10 policies by completing the steps in [Manage settings and features on your devices with Microsoft Intune policies](https://technet.microsoft.com/en-us/library/dn646984.aspx).
-4. Manage Windows 10 devices by completing the steps in [Manage Windows PCs with Microsoft Intune](https://technet.microsoft.com/en-us/library/dn646959.aspx). 
+2. Enroll devices with Intune by completing the steps in [Get ready to enroll devices in Microsoft Intune](https://technet.microsoft.com//library/dn646962.aspx).
+3. Configure the settings in Intune Windows 10 policies by completing the steps in [Manage settings and features on your devices with Microsoft Intune policies](https://technet.microsoft.com//library/dn646984.aspx).
+4. Manage Windows 10 devices by completing the steps in [Manage Windows PCs with Microsoft Intune](https://technet.microsoft.com//library/dn646959.aspx). 
 
 ### Deploy apps by using Intune
 
@@ -1041,14 +1041,14 @@ Prior to deployment of Windows 10, ensure that you complete the tasks listed in 
 
 Use the Deployment Wizard to deploy Windows 10. The LTI deployment process is almost fully automated: You provide only minimal information to the Deployment Wizard at the beginning of the process. After the wizard collects the necessary information, the remainder of the process is fully automated. 
 
->**Note:**&nbsp;&nbsp;To fully automate the LTI deployment process, complete the steps in the “Fully Automated LTI Deployment Scenario” section in the [Microsoft Deployment Toolkit Samples Guide](https://technet.microsoft.com/en-us/library/dn781089.aspx).
+>**Note:**&nbsp;&nbsp;To fully automate the LTI deployment process, complete the steps in the “Fully Automated LTI Deployment Scenario” section in the [Microsoft Deployment Toolkit Samples Guide](https://technet.microsoft.com//library/dn781089.aspx).
 
 In most instances, deployments occur without incident. Only in rare occasions do deployments experience problems.
 
 #### To deploy Windows 10
 
 1. **Initiate the LTI deployment process**. Initiate the LTI deployment process booting over the network (PXE boot) or from local media. You selected the method for initiating the LTI deployment process in the [Select a method to initiate deployment](#select-a-method-to-initiate-deployment) section earlier in this guide.
-2. **Complete the Deployment Wizard**. For more information about how to complete the Deployment Wizard, see the “Running the Deployment Wizard” topic in [Using the Microsoft Deployment Toolkit](https://technet.microsoft.com/en-us/library/dn759415.aspx#Running%20the%20Deployment%20Wizard).
+2. **Complete the Deployment Wizard**. For more information about how to complete the Deployment Wizard, see the “Running the Deployment Wizard” topic in [Using the Microsoft Deployment Toolkit](https://technet.microsoft.com//library/dn759415.aspx#Running%20the%20Deployment%20Wizard).
 
 ### Set up printers
 
@@ -1256,8 +1256,8 @@ Now, you have identified the tasks you need to perform monthly, at the end of an
 
 ##Related resources
 <ul>
-<li>[Try it out: Windows 10 deployment (for educational institutions)](http://go.microsoft.com/fwlink/p/?LinkId=623254)</li>
-<li>[Try it out: Windows 10 in the classroom](http://go.microsoft.com/fwlink/p/?LinkId=623255)</li>
-<li>[Chromebook migration guide](http://go.microsoft.com/fwlink/p/?LinkId=623249)</li>
+<li>[Try it out: Windows 10 deployment (for educational institutions)](https://go.microsoft.com/fwlink/p/?LinkId=623254)</li>
+<li>[Try it out: Windows 10 in the classroom](https://go.microsoft.com/fwlink/p/?LinkId=623255)</li>
+<li>[Chromebook migration guide](https://go.microsoft.com/fwlink/p/?LinkId=623249)</li>
 </ul>
 

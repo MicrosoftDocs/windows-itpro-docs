@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
 description: The Internet Explorer 11 Enterprise Mode site list lets you specify document modes for specific websites, helping you fix compatibility issues without changing a single line of code on the site.
-ms.assetid: 4b21bb27-aeac-407f-ae58-ab4c6db2baf6
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: 4b21bb27-aeac-407f-ae58-ab4c6db2baf6
 title: Fix web compatibility issues using document modes and the Enterprise Mode site list (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Fix web compatibility issues using document modes and the Enterprise Mode site list
 The Internet Explorer 11 Enterprise Mode site list lets you specify document modes for specific websites, helping you fix compatibility issues without changing a single line of code on the site. This addition to the site list is a continuation of our commitment to help you upgrade and stay up-to-date on the latest version of Internet Explorer, while still preserving your investments in existing apps.
@@ -16,7 +18,7 @@ The Internet Explorer 11 Enterprise Mode site list lets you specify document mo
 Enterprises can have critical apps that are coded explicitly for a specific browser version and that might not be in their direct control, making it very difficult and expensive to update to modern standards or newer browser versions. Because you can decide which URLs should open using specific document modes, this update helps ensure better compatibility, faster upgrades, and reduced testing and fixing costs.
 
 ## How does this fix work?
-You can continue to use your legacy and orphaned web apps, by specifying a document mode in the centralized Enterprise Mode site list. Then, when IE11 goes to a site on your list, the browser loads the page in the specified document mode just as it would if it were specified through an X-UA-Compatible meta tag on the site. For more information about document modes and X-UA-compatible headers, see [Defining document compatibility](http://go.microsoft.com/fwlink/p/?LinkId=518412).
+You can continue to use your legacy and orphaned web apps, by specifying a document mode in the centralized Enterprise Mode site list. Then, when IE11 goes to a site on your list, the browser loads the page in the specified document mode just as it would if it were specified through an X-UA-Compatible meta tag on the site. For more information about document modes and X-UA-compatible headers, see [Defining document compatibility](https://go.microsoft.com/fwlink/p/?LinkId=518412).
 
 **Important**<br>
 Enterprise Mode takes precedence over document modes, so sites that are already included in the Enterprise Mode site list won’t be affected by this update and will continue to load in Enterprise Mode, as usual.
@@ -38,7 +40,7 @@ To see if this fix might help you, run through this process one step at a time, 
     ![Emulation tool showing document mode selection](images/docmode-f12.png)
 
 2.  Starting with the **11 (Default)** option, test your broken scenario.<br>
-If that doesn’t work, continue down to the next lowest document mode, stopping as soon as you find a document mode that fixes your problems. For more information about the Emulation tool, see [Emulate browsers, screen sizes, and GPS locations](http://go.microsoft.com/fwlink/p/?LinkId=518417).
+If that doesn’t work, continue down to the next lowest document mode, stopping as soon as you find a document mode that fixes your problems. For more information about the Emulation tool, see [Emulate browsers, screen sizes, and GPS locations](https://go.microsoft.com/fwlink/p/?LinkId=518417).
 
 3.  If none of the document modes fix your issue, change the **Browser Profile** to **Enterprise**, pick the mode you want to test with starting with **8** (IE8 Enterprise Mode), and then test your broken scenario.
 
@@ -92,8 +94,8 @@ By default, IE11 uses the **Display intranet sites in Compatibility View** setti
 To help you move forward, you can now use the Enterprise Mode site list to specify sites or web paths to use the IE7 document mode, which goes down to IE5 “Quirks” mode if the page doesn’t have an explicit `DOCTYPE` tag. Using this document mode effectively helps you provide the Compatibility View functionality for single sites or a group of sites, which after thorough testing, can help you turn off Compatibility View as the default setting for your intranet sites.
 
 ## Related topics
-- [Download the Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853)
-- [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
  
 

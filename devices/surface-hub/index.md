@@ -7,6 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Microsoft Surface Hub

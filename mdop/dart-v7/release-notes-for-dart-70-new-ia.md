@@ -37,7 +37,7 @@ We are interested in your feedback on DaRT 7. You can send your feedback to dar
 ## Protect Against Security Vulnerabilities and Viruses
 
 
-To help protect against security vulnerabilities and viruses, we recommend that you install the latest available security updates for any new software being installed. For more information, see [Microsoft Security](http://go.microsoft.com/fwlink/?LinkId=3482) (http://go.microsoft.com/fwlink/?LinkId=3482).
+To help protect against security vulnerabilities and viruses, we recommend that you install the latest available security updates for any new software being installed. For more information, see [Microsoft Security](https://go.microsoft.com/fwlink/?LinkId=3482) (https://go.microsoft.com/fwlink/?LinkId=3482).
 
 ## Known Issues with DaRT 7.0
 
@@ -58,7 +58,7 @@ If you delete a file that has Unicode characters in its file name and try to res
 
 DaRT command-line installation fails silently if run with the quiet mode option unless it is run by using elevated administrator permissions.
 
-**Workaround:** Run the command-line installation by using elevated administrator permissions. DaRT installation supports the typical Windows Installer options for command-line installation. Please see [Command-Line Options](http://go.microsoft.com/fwlink/?LinkId=160689) for Windows Installer for more information about the several available switches.
+**Workaround:** Run the command-line installation by using elevated administrator permissions. DaRT installation supports the typical Windows Installer options for command-line installation. Please see [Command-Line Options](https://go.microsoft.com/fwlink/?LinkId=160689) for Windows Installer for more information about the several available switches.
 
 ### File Search cannot move a folder to a different volume
 

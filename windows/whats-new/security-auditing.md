@@ -7,7 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 author: brianlic-msft
 ms.pagetype: security, mobile
-redirect_url: whats-new-windows-10-version-1507-and-1511.md
+redirect_url: https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511
 ---
 
 # What's new in security auditing?
@@ -21,7 +21,7 @@ Security auditing is one of the most powerful tools that you can use to maintain
 
 ## New features in Windows 10, version 1511
 
--   The [WindowsSecurityAuditing](http://go.microsoft.com/fwlink/p/?LinkId=690517) and [Reporting](http://go.microsoft.com/fwlink/p/?LinkId=690525) configuration service providers allow you to add security audit policies to mobile devices.
+-   The [WindowsSecurityAuditing](https://go.microsoft.com/fwlink/p/?LinkId=690517) and [Reporting](https://go.microsoft.com/fwlink/p/?LinkId=690525) configuration service providers allow you to add security audit policies to mobile devices.
 
 ## New features in Windows 10
 

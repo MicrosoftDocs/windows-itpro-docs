@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # Connect to remote Azure Active Directory-joined PC
@@ -24,7 +25,7 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
 ## Set up
 
 - Both PCs (local and remote) must be running Windows 10, version 1607. Remote connection to an Azure AD-joined PC that is running earlier versions of Windows 10 is not supported.
-- Ensure [Remote Credential Guard](https://tnstage.redmond.corp.microsoft.com/en-us/itpro/windows/keep-secure/remote-credential-guard?branch=bl-7475998), a new feature in Windows 10, version 1607, is turned off on the client PC.
+- Ensure [Remote Credential Guard](../keep-secure/remote-credential-guard.md), a new feature in Windows 10, version 1607, is turned off on the client PC.
 - On the PC that you want to connect to:
   1. Open system properties for the remote PC. 
   2. Enable **Allow remote connections to this computer** and select **Allow connections only from computers running Remote Desktop with Network Level Authentication**. 
@@ -65,9 +66,9 @@ In organizations using only Azure AD, you can connect from an Azure AD-joined PC
 
 ## Related topics
 
-[How to use Remote Desktop](http://windows.microsoft.com/en-us/windows-10/how-to-use-remote-desktop)
+[How to use Remote Desktop](https://support.microsoft.com/instantanswers/ff521c86-2803-4bc0-a5da-7df445788eb9/how-to-use-remote-desktop)
 
-[Remote Desktop Connection: frequently asked questions](http://windows.microsoft.com/en-us/windows/remote-desktop-connection-faq#1TC=windows-8) (Windows 8.1 documentation, still applicable to Windows 10)
+
 
 
  

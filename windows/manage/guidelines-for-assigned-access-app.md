@@ -7,6 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
@@ -23,7 +24,7 @@ The following guidelines may help you choose an appropriate Windows app for your
 
 ## General guidelines
 
-- Windows apps must be provisioned or installed for the assigned access account before they can be selected as the assigned access app. [Learn how to provision and install apps](https://msdn.microsoft.com/en-us/library/windows/hardware/mt228170(v=vs.85).aspx#install_your_apps). 
+- Windows apps must be provisioned or installed for the assigned access account before they can be selected as the assigned access app. [Learn how to provision and install apps](https://msdn.microsoft.com/library/windows/hardware/mt228170.aspx#install_your_apps). 
 
 - Updating a Windows app can sometimes change the Application User Model ID (AUMID) of the app. If this happens, you must update the assigned access settings to launch the updated app, because assigned access uses the AUMID to determine which app to launch. 
 
@@ -71,7 +72,7 @@ Check the guidelines published by your selected app and do the setup accordingly
 
 Assigned access in Windows 10 leverages the new lock framework. When an assigned access user signs in, the selected kiosk app is launched above lock  . The kiosk app is actually running as an above lock screen app. 
 
-Follow the [best practices guidance for developing a kiosk app for assigned access](https://msdn.microsoft.com/en-us/library/windows/hardware/mt633799%28v=vs.85%29.aspx). 
+Follow the [best practices guidance for developing a kiosk app for assigned access](https://msdn.microsoft.com/library/windows/hardware/mt633799%28v=vs.85%29.aspx). 
 
 ## Test your assigned access experience
 

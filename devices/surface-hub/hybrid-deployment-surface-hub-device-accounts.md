@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Hybrid deployment (Surface Hub)
@@ -40,7 +41,7 @@ Use this procedure if you use Exchange on-prem.
     Open your on-prem Exchange Management Shell with administrator permissions, and run this cmdlet.
 
     ```ps1
-    Enable-Mailbox 'HUB01@contoso.com' -RemoteRoutingAddress 'HUB01@contoso.com' -Room
+    Enable-RemoteMailbox 'HUB01@contoso.com' -RemoteRoutingAddress 'HUB01@contoso.com' -Room
     ```
     
 4.  Connect to Microsoft Exchange Online and set some properties for the account in Office 365.

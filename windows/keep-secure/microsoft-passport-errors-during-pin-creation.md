@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Windows Hello errors during PIN creation
@@ -16,11 +17,11 @@ author: jdeckerMS
 -   Windows 10
 -   Windows 10 Mobile
 
-When you set up Windows Hello in Windows 10, you may get an error during the **Create a work PIN** step. This topic lists some of the error codes with recommendations for mitigating the problem. If you get an error code that is not listed here, contact Microsoft Support.
+When you set up Windows Hello in Windows 10, you may get an error during the **Create a PIN** step. This topic lists some of the error codes with recommendations for mitigating the problem. If you get an error code that is not listed here, contact Microsoft Support.
 
 ## Where is the error code?
 
-The following image shows an example of an error during **Create a work PIN**.
+The following image shows an example of an error during **Create a PIN**.
 
 ![](images/pinerror.png)
 
@@ -30,8 +31,8 @@ When a user encounters an error when creating the work PIN, advise the user to t
 1.  Try to create the PIN again. Some errors are transient and resolve themselves.
 2.  Sign out, sign in, and try to create the PIN again.
 3.  Reboot the device and then try to create the PIN again.
-4.  Unjoin the device from Azure Active Directory (Azure AD), rejoin, and then try to create the PIN again. To unjoin a desktop PC, go to **Settings** &gt; **System** &gt; **About** and select **Disconnect from organization**. To unjoin a device running Windows 10 Mobile, you must [reset the device](http://go.microsoft.com/fwlink/p/?LinkId=715697).
-5.  On mobile devices, if you are unable to setup a PIN after multiple attempts, reset your device and start over. For help on how to reset your phone go to [Reset my phone](http://go.microsoft.com/fwlink/p/?LinkId=715697).
+4.  Unjoin the device from Azure Active Directory (Azure AD), rejoin, and then try to create the PIN again. To unjoin a desktop PC, go to **Settings** &gt; **System** &gt; **About** and select **Disconnect from organization**. To unjoin a device running Windows 10 Mobile, you must [reset the device](https://go.microsoft.com/fwlink/p/?LinkId=715697).
+5.  On mobile devices, if you are unable to setup a PIN after multiple attempts, reset your device and start over. For help on how to reset your phone go to [Reset my phone](https://go.microsoft.com/fwlink/p/?LinkId=715697).
 If the error occurs again, check the error code against the following table to see if there is another mitigation for that error. When no mitigation is listed in the table, contact Microsoft Support for assistance.
 
 <table>
@@ -83,7 +84,7 @@ If the error occurs again, check the error code against the following table to s
 <tr class="even">
 <td align="left">0x80090031</td>
 <td align="left">NTE_AUTHENTICATION_IGNORED</td>
-<td align="left">Reboot the device. If the error occurs again after rebooting, [reset the TPM]( http://go.microsoft.com/fwlink/p/?LinkId=619969) or run [Clear-TPM](http://go.microsoft.com/fwlink/p/?LinkId=629650)</td>
+<td align="left">Reboot the device. If the error occurs again after rebooting, [reset the TPM]( https://go.microsoft.com/fwlink/p/?LinkId=619969) or run [Clear-TPM](https://go.microsoft.com/fwlink/p/?LinkId=629650)</td>
 </tr>
 <tr class="odd">
 <td align="left">0x80090035</td>
@@ -98,7 +99,7 @@ If the error occurs again, check the error code against the following table to s
 <tr class="odd">
 <td align="left">0x801C000E</td>
 <td align="left">Registration quota reached</td>
-<td align="left"><p>Unjoin some other device that is currently joined using the same account or [increase the maximum number of devices per user](http://go.microsoft.com/fwlink/p/?LinkId=626933).</p></td>
+<td align="left"><p>Unjoin some other device that is currently joined using the same account or [increase the maximum number of devices per user](https://go.microsoft.com/fwlink/p/?LinkId=626933).</p></td>
 </tr>
 <tr class="even">
 <td align="left">0x801C000F</td>

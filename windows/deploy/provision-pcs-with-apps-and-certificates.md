@@ -7,14 +7,16 @@ ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
+localizationpriority: high
 ---
 
-# Provision PCs with apps and certificates for initial deployment
+# Provision PCs with apps and certificates for initial deployment (advanced provisioning)
 
 
 **Applies to**
 
--   Windows 10
+- Windows 10
+
 
 This topic explains how to create and apply a provisioning package that contains apps and certificates to a device running all desktop editions of Windows 10 except Windows 10 Home. Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more.
 
@@ -33,7 +35,7 @@ You can apply a provisioning package on a USB drive to off-the-shelf devices dur
 
 ## Create the provisioning package
 
-Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK and select **Configuration Designer**.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 
 1. Open Windows ICD (by default, %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
 
@@ -54,7 +56,8 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 3. Go to **Runtime settings** > **ProvisioningCommands** > **DeviceContext** > **CommandLine** and specify the command line that needs to be executed to install the app. This is a single command line (such as a script, executable, or msi) that triggers a silent install of your CommandFiles. Note that the install must execute silently (without displaying any UI). For MSI installers use, the `msiexec /quiet` option. 
 
-> **Note**: If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/mt703295%28v=vs.85%29.aspx). 
+> [!NOTE]
+> If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](https://msdn.microsoft.com/library/windows/hardware/mt703295%28v=vs.85%29.aspx). 
 
 
 ### Add a universal app to your package
@@ -73,13 +76,22 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
     ![required frameworks for offline app package](images/uwp-dependencies.png)
 
-5. For **DeviceContextAppLicense**, enter the **LicenseProductID**. In Windows Store for Business, you generate the license for the app on the app's download page.
+5. For **DeviceContextAppLicense**, enter the **LicenseProductID**. 
 
-    ![generate license for offline app](images/uwp-license.png)
+    - In Windows Store for Business, generate the unencoded license for the app on the app's download page, and change the extension of the license file from **.xml** to **.ms-windows-store-license**.
+
+        ![generate license for offline app](images/uwp-license.png)
+        
+    - Open the license file and search for **LicenseID=** to get the GUID, enter the GUID in the **LicenseProductID** field and click **Add**.
+    
+6. In the **Available customizations** pane, click the **LicenseProductId** that you just added. 
+
+7. For **LicenseInstall**, click **Browse**, navigate to the license file that you renamed *<file name>*.**ms-windows-store-license**, and select the license file.
 
 [Learn more about distributing offline apps from the Windows Store for Business.](../manage/distribute-offline-apps.md)
 
-> **Note:** Removing a provisioning package will not remove any apps installed by device context in that provisioning package.
+> [!NOTE]
+> Removing a provisioning package will not remove any apps installed by device context in that provisioning package.
 
 
 
@@ -100,7 +112,7 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
 ### Add other settings to your package 
 
-For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( http://go.microsoft.com/fwlink/p/?LinkId=619012).
+For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( https://go.microsoft.com/fwlink/p/?LinkId=619012).
 
 ### Build your package
 
@@ -115,8 +127,8 @@ For details about the settings you can customize in provisioning packages, see [
 
 10. Set a value for **Package Version**.
 
-    **Tip**  
-    You can make changes to existing packages and change the version number to update previously applied packages.
+    > [!TIP]  
+    > You can make changes to existing packages and change the version number to update previously applied packages.
 
 11. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
 
@@ -160,13 +172,13 @@ If your build is successful, the name of the provisioning package, output direct
 
 ## Apply package
 
-**During initial setup, from a USB drive**
+### During initial setup, from a USB drive
 
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
     ![The first screen to set up a new PC](images/oobe.jpg)
 
-2. Insert the USB drive and press the Windows key five times. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
+2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
 
     ![Set up device?](images/setupmsg.jpg)
 
@@ -203,18 +215,18 @@ If your build is successful, the name of the provisioning package, output direct
     ![Sign in](images/sign-in-prov.png)
     
 
-**After setup, from a USB drive, network folder, or SharePoint site**
+### After setup, from a USB drive, network folder, or SharePoint site
 
 On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and select the package to install. 
 
 ![add a package option](images/package.png)
 
 ## Learn more
--   [Build and apply a provisioning package]( http://go.microsoft.com/fwlink/p/?LinkId=629651)
+-   [Build and apply a provisioning package]( https://go.microsoft.com/fwlink/p/?LinkId=629651)
 
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](http://go.microsoft.com/fwlink/p/?LinkId=615921)
+-   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
--   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](http://go.microsoft.com/fwlink/p/?LinkId=615922)
+-   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
  
 
 

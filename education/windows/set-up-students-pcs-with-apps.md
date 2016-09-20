@@ -37,7 +37,7 @@ If you want to [provision a school PC to join a domain](set-up-students-pcs-to-j
 
 ## Create a provisioning package to add apps after initial setup
 
-Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
 
 1. Open Windows ICD (by default, %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
 
@@ -73,7 +73,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 ## Add a universal app to your package
 
-Universal apps that you can distribute in the provisioning package can be line-of-business (LOB) apps developed by your organization, Windows Store for Business apps that you acquire with [offline licensing](https://technet.microsoft.com/en-us/itpro/windows/manage/acquire-apps-windows-store-for-business), or third-party apps. This procedure will assume you are distributing apps from the Windows Store for Business. For other apps, obtain the necessary information (such as the package family name) from the app developer. 
+Universal apps that you can distribute in the provisioning package can be line-of-business (LOB) apps developed by your organization, Windows Store for Business apps that you acquire with [offline licensing](https://technet.microsoft.com/itpro/windows/manage/acquire-apps-windows-store-for-business), or third-party apps. This procedure will assume you are distributing apps from the Windows Store for Business. For other apps, obtain the necessary information (such as the package family name) from the app developer. 
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **UniversalAppInstall**. 
 
@@ -91,7 +91,7 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
     ![generate license for offline app](images/uwp-license.png)
 
-[Learn more about distributing offline apps from the Windows Store for Business.](https://technet.microsoft.com/en-us/itpro/windows/manage/distribute-offline-apps)
+[Learn more about distributing offline apps from the Windows Store for Business.](https://technet.microsoft.com/itpro/windows/manage/distribute-offline-apps)
 
 > **Note:** Removing a provisioning package will not remove any apps installed by device context in that provisioning package.
 
@@ -159,7 +159,7 @@ If your build is successful, the name of the provisioning package, output direct
 
     ![The first screen to set up a new PC](images/oobe.jpg)
 
-2. Insert the USB drive and press the Windows key five times. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
+2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
 
     ![Set up device?](images/setupmsg.jpg)
 
@@ -206,12 +206,12 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 
 ## Learn more
 
--  [Develop Universal Windows Education apps](https://msdn.microsoft.com/en-us/windows/uwp/apps-for-education/index)
+-  [Develop Universal Windows Education apps](https://msdn.microsoft.com/windows/uwp/apps-for-education/index)
 
--   [Build and apply a provisioning package]( http://go.microsoft.com/fwlink/p/?LinkId=629651)
+-   [Build and apply a provisioning package]( https://go.microsoft.com/fwlink/p/?LinkId=629651)
 
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](http://go.microsoft.com/fwlink/p/?LinkId=615921)
+-   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
--   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](http://go.microsoft.com/fwlink/p/?LinkId=615922)
+-   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
  
 

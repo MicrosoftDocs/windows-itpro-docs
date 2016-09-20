@@ -4,6 +4,7 @@ description: The simplest path to upgrade PCs currently running Windows 7, Wind
 ms.assetid: F8DF6191-0DB0-4EF5-A9B1-6A11D5DE4878
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
+localizationpriority: high
 ms.mktglfcycl: deploy
 author: mtniehaus
 ---
@@ -34,9 +35,9 @@ System Center 2012 R2 Configuration Manager SP1 adds support to manage and dep
 ## Create the task sequence
 
 
-To help with this process, the Configuration Manager team has published [a blog](http://go.microsoft.com/fwlink/p/?LinkId=620179) that provides a sample task sequence, as well as the [original blog that includes the instructions for setting up the task sequence](http://go.microsoft.com/fwlink/p/?LinkId=620180). To summarize, here are the tasks you need to perform:
+To help with this process, the Configuration Manager team has published [a blog](https://go.microsoft.com/fwlink/p/?LinkId=620179) that provides a sample task sequence, as well as the [original blog that includes the instructions for setting up the task sequence](https://go.microsoft.com/fwlink/p/?LinkId=620180). To summarize, here are the tasks you need to perform:
 
-1.  Download the [Windows10Upgrade1506.zip](http://go.microsoft.com/fwlink/p/?LinkId=620182) file that contains the sample task sequence and related scripts. Extract the contents onto a network share.
+1.  Download the [Windows10Upgrade1506.zip](https://go.microsoft.com/fwlink/p/?LinkId=620182) file that contains the sample task sequence and related scripts. Extract the contents onto a network share.
 2.  Copy the Windows 10 Enterprise RTM x64 media into the extracted but empty **Windows vNext Upgrade Media** folder.
 3.  Using the Configuration Manager Console, right-click the **Task Sequences** node, and then choose **Import Task Sequence**. Select the **Windows-vNextUpgradeExport.zip** file that you extracted in Step 1.
 4.  Distribute the two created packages (one contains the Windows 10 Enterprise x64 media, the other contains the related scripts) to the Configuration Manager distribution point.
@@ -111,7 +112,7 @@ After the task sequence finishes, the computer will be fully upgraded to Windows
 With the next release of System Center Configuration Manager (currently planned for Q4 of 2015), new built-in functionality will be provided to make it even easier to upgrade existing Windows 7, Windows 8, and Windows 8.1 PCs to Windows 10.
 
 **Note**  
-For more details about the next version of Configuration Manager, see the [Configuration Manager Team blog](http://go.microsoft.com/fwlink/p/?LinkId=620205). An [evaluation version is currently available](http://go.microsoft.com/fwlink/p/?LinkId=620206) for you to try. The instructions below are specific to the Technical Preview 2 release and may change after the next version of Configuration Manager is released.
+For more details about the next version of Configuration Manager, see the [Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620205). An [evaluation version is currently available](https://go.microsoft.com/fwlink/p/?LinkId=620206) for you to try. The instructions below are specific to the Technical Preview 2 release and may change after the next version of Configuration Manager is released.
 
  
 
@@ -199,7 +200,7 @@ After the task sequence completes, the computer will be fully upgraded to Window
 
 [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 
-[Configuration Manager Team blog](http://go.microsoft.com/fwlink/p/?LinkId=620109)
+[Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620109)
 
  
 

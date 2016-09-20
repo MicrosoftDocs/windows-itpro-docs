@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Monitor your Microsoft Surface Hub
@@ -15,18 +16,18 @@ author: TrudyHa
 
 Monitoring for Microsoft Surface Hub devices is enabled through Microsoft Operations Management Suite (OMS).
 
-The [Operations Management Suite (OMS)](http://go.microsoft.com/fwlink/?LinkId=718138) is Microsoft's IT management solution that helps you manage and protect your entire IT infrastructure, including your Surface Hubs. You can use OMS to help you track the health of your Surface Hubs as well as understand how they are being used. Log files are read on the devices and sent to the OMS service. Issues like servers being offline, the calendar not syncing, or the device account being unable to log into Skype are shown in OMS in the Surface Hub dashboard. By using the data in the dashboard, you can identify devices that are not running, or that are having other problems, and potentially apply fixes for the detected issues.
+The [Operations Management Suite (OMS)](https://go.microsoft.com/fwlink/?LinkId=718138) is Microsoft's IT management solution that helps you manage and protect your entire IT infrastructure, including your Surface Hubs. You can use OMS to help you track the health of your Surface Hubs as well as understand how they are being used. Log files are read on the devices and sent to the OMS service. Issues like servers being offline, the calendar not syncing, or the device account being unable to log into Skype are shown in OMS in the Surface Hub dashboard. By using the data in the dashboard, you can identify devices that are not running, or that are having other problems, and potentially apply fixes for the detected issues.
 
 ### OMS requirements
 
 In order to manage your Surface Hubs from the Microsoft Operations Management Suite (OMS), you'll need the following:
 
 -   A valid [subscription to OMS](http://www.microsoft.com/server-cloud/operations-management-suite/overview.aspx).
--   [Subscription level](http://go.microsoft.com/fwlink/?LinkId=718139) in line with the number of devices. OMS pricing varies depending on how many devices are enrolled, and how much data it processes. You'll want to take this into consideration when planning your Surface Hub rollout.
+-   [Subscription level](https://go.microsoft.com/fwlink/?LinkId=718139) in line with the number of devices. OMS pricing varies depending on how many devices are enrolled, and how much data it processes. You'll want to take this into consideration when planning your Surface Hub rollout.
 
-Next, you will either add an OMS subscription to your existing Microsoft Azure subscription or create a new workspace directly through the OMS portal. Detailed instructions for setting up the account can be found at: [Onboard in minutes](http://go.microsoft.com/fwlink/?LinkId=718141). Once the OMS subscription is set up, there are two ways to enroll your Surface Hub devices:
+Next, you will either add an OMS subscription to your existing Microsoft Azure subscription or create a new workspace directly through the OMS portal. Detailed instructions for setting up the account can be found at: [Onboard in minutes](https://go.microsoft.com/fwlink/?LinkId=718141). Once the OMS subscription is set up, there are two ways to enroll your Surface Hub devices:
 
-1.  Automatically through [InTune](http://go.microsoft.com/fwlink/?LinkId=718150), or
+1.  Automatically through [InTune](https://go.microsoft.com/fwlink/?LinkId=718150), or
 2.  Manually through Settings.
 
 ### Setting up monitoring

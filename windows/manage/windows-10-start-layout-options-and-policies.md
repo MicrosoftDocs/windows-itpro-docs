@@ -7,6 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Manage Windows 10 Start and taskbar layout
@@ -16,9 +17,11 @@ author: jdeckerMS
 
 -   Windows 10
 
-> **Looking for consumer information?** See [Customize the Start menu](http://windows.microsoft.com/en-us/windows-10/getstarted-see-whats-on-the-menu) and topic-to-be-added-for-taskbars
+> **Looking for consumer information?** See [Customize the Start menu](http://windows.microsoft.com/windows-10/getstarted-see-whats-on-the-menu) 
 
 Organizations might want to deploy a customized Start and taskbar configuration to devices running Windows 10 Enterprise or Windows 10 Education. A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Configuring the taskbar allows the organization to pin useful apps for their employees and to remove apps that are pinned by default.
+
+> **Note:** Taskbar configuration is available starting in Windows 10, version 1607.
 
 ## Start options
 
@@ -121,11 +124,11 @@ Starting in Windows 10, version 1607, you can pin additional apps to the taskbar
 
 There are three categories of apps that might be pinned to a taskbar:
 * Apps pinned by the user
-* Default Windows apps, pinned during operating system installation (Edge, File Explorer, Store)
+* Default Windows apps, pinned during operating system installation (Microsoft Edge, File Explorer, Store)
 * Apps pinned by the enterprise, such as in an unattended Windows setup
 
  **Note**  
-   The earlier method of using [TaskbarLinks](http://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file is deprecated in Windows 10, version 1607.
+   The earlier method of using [TaskbarLinks](https://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file is deprecated in Windows 10, version 1607.
    
 The following example shows how apps will be pinned - Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using XML to the right (green square).
 

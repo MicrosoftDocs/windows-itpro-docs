@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
 description: Set up and turn on Enterprise Mode logging and data collection in your organization.
-ms.assetid: 2e98a280-f677-422f-ba2e-f670362afcde
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: 2e98a280-f677-422f-ba2e-f670362afcde
 title: Set up Enterprise Mode logging and data collection (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Set up Enterprise Mode logging and data collection
 
@@ -34,7 +36,7 @@ When you turn logging on, you need a valid URL that points to a server that can 
 
  ![](images/wedge.gif) **To set up an endpoint server**
 
-1.  Configure an IIS server to work with your Enterprise Mode data collection process. If you’re unsure how to set up IIS, see the [IIS installation webpage](http://go.microsoft.com/fwlink/p/?LinkId=507609).
+1.  Configure an IIS server to work with your Enterprise Mode data collection process. If you’re unsure how to set up IIS, see the [IIS installation webpage](https://go.microsoft.com/fwlink/p/?LinkId=507609).
 
 2.  Open Internet Information Services (IIS) and turn on the ASP components from the **Add Roles and Features Wizard**, **Server Roles** page.<p>
 This lets you create an ASP form that accepts the incoming POST messages.
@@ -70,7 +72,7 @@ This is what your log files will look like after you set everything up and at le
 
 
 ## Using the GitHub sample to collect your data
-Microsoft has created the [EMIE-Data-Collection_Sample](http://go.microsoft.com/fwlink/p/?LinkId=507401) that shows how to collect your Enterprise Mode reports. This sample only shows how to collect data, it doesn’t show how to aggregate the data into your Enterprise Mode site list.<p>
+Microsoft has created the [EMIE-Data-Collection_Sample](https://go.microsoft.com/fwlink/p/?LinkId=507401) that shows how to collect your Enterprise Mode reports. This sample only shows how to collect data, it doesn’t show how to aggregate the data into your Enterprise Mode site list.<p>
 This sample starts with you turning on Enterprise Mode and logging (either through Group Policy, or by manually setting the EnterpriseMode registry key) so that your users can use Enterprise Mode locally. For the steps to do this, go to [Turn on local control and logging for Enterprise Mode](turn-on-local-control-and-logging-for-enterprise-mode.md).
 
 **Note**<br>If you decide to manually change the registry key, you can change the **Enable** setting to `[deployment url]/api/records/`, which automatically sends your reports to this page.
@@ -82,7 +84,7 @@ For logging, you’re going to need a valid URL that points to a server that can
 
 1.  Set up a server to collect your Enterprise Mode information from your users.
 
-2.  Go to the Internet Explorer/[EMIE-Data_Collection_Sample](http://go.microsoft.com/fwlink/p/?LinkId=507401) page on GitHub and tap or click the **Download ZIP** button to download the complete project.
+2.  Go to the Internet Explorer/[EMIE-Data_Collection_Sample](https://go.microsoft.com/fwlink/p/?LinkId=507401) page on GitHub and tap or click the **Download ZIP** button to download the complete project.
 
 3.  Open Microsoft Visual Studio 2013 with Update 2, and then open the PhoneHomeSample.sln file.
 
@@ -141,8 +143,8 @@ If you have errors while you’re publishing your project, you should try to upd
 You may need to do some additional package cleanup to remove older package versions.
 
 ## Related topics
-- [Download the Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853)
-- [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [What is Enterprise Mode?](what-is-enterprise-mode.md)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
 - [Turn on Enterprise Mode and use a site list](turn-on-enterprise-mode-and-use-a-site-list.md)

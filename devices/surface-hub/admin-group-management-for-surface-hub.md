@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub, security
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Admin group management (Surface Hub)

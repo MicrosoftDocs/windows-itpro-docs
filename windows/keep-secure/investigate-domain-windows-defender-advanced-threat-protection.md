@@ -1,22 +1,24 @@
 ---
 title: Investigate Windows Defender Advanced Threat Protection domains
 description: Use the investigation options to see if machines and servers have been communicating with malicious domains.
-keywords: investigate domain, domain, malicious domain, windows defender atp, alert, URL 
+keywords: investigate domain, domain, malicious domain, windows defender atp, alert, URL
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+localizationpriority: high
 ---
 # Investigate a domain associated with a Windows Defender ATP alert
 
 **Applies to:**
 
-- Windows 10 Insider Preview Build 14332 or later
+- Windows 10 Enterprise
+- Windows 10 Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Investigate a domain to see if machines and servers in your enterprise network have been communicating with a known malicious domain.
 

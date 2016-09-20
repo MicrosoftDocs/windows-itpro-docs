@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: support
 description: Info about some of the known issues using the Internet Exporer Customization Wizard and a custom Internet Explorer install package.
-ms.assetid: 9e22cc61-6c63-4cab-bfdf-6fe49db945e4
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: support
-ms.sitesec: library
+ms.assetid: 9e22cc61-6c63-4cab-bfdf-6fe49db945e4
 title: Troubleshoot custom package and IEAK 11 problems (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Troubleshoot custom package and IEAK 11 problems
 While the Internet Explorer Customization Wizard has been around for quite a while, there are still some known issues that you might encounter while deploying or managing your custom IE install package.

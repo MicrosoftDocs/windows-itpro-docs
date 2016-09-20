@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # End a Surface Hub meeting with I'm Done
@@ -61,7 +62,6 @@ User interface (UI) settings are returned to their default values when **I'm Don
 - Reset Quick Actions to default state
 - Clear Toast notifications
 - Reset volume levels
-- Reset Cortana relaunch count
 - Reset sidebar width
 - Reset tablet mode layout
 

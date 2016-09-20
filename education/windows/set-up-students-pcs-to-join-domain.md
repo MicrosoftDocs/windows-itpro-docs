@@ -13,7 +13,7 @@ author: jdeckerMS
 
 -   Windows 10  
 
-If your school uses Active Directory, use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a runtime provisioning package that will configure a PC for student use that is joined to the Active Directory domain. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+If your school uses Active Directory, use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a runtime provisioning package that will configure a PC for student use that is joined to the Active Directory domain. [Install the ADK.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) 
 
 ## Create the provisioning package
 
@@ -71,7 +71,7 @@ If your school uses Active Directory, use the Windows Imaging and Configuration 
 
     ![The first screen to set up a new PC](images/oobe.jpg)
 
-2. Insert the USB drive and press the Windows key five times. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
+2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
 
     ![Set up device?](images/setupmsg.jpg)
 
@@ -87,23 +87,7 @@ If your school uses Active Directory, use the Windows Imaging and Configuration 
 
     ![Do you trust this package?](images/trust-package.png)
     
-6. Read and accept the Microsoft Software License Terms.  
-
-    ![Sign in](images/license-terms.png)
-    
-7. Select **Use Express settings**.
-
-    ![Get going fast](images/express-settings.png)
-
-8. If the PC doesn't use a volume license, you'll see the **Who owns this PC?** screen. Select **My work or school owns it** and tap **Next**.
-
-    ![Who owns this PC?](images/who-owns-pc.png)
-
-9. On the **Choose how you'll connect** screen, select **Join a domain** and tap **Next**.
-
-    ![Connect to Azure AD](images/connect-ad.png)
-
-10. Sign in with  your domain account and password. When you see the progress ring, you can remove the USB drive.
+When you see the progress ring, you can remove the USB drive.
 
     
 

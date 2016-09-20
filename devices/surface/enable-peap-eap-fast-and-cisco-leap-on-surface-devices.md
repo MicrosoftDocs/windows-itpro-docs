@@ -3,6 +3,7 @@ title: Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices (Surface)
 description: Find out how to enable support for PEAP, EAP-FAST, or Cisco LEAP protocols on your Surface device.
 ms.assetid: A281EFA3-1552-467D-8A21-EB151E58856D
 keywords: network, wireless, device, deploy, authentication, protocol
+localizationpriority: high
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
@@ -15,14 +16,14 @@ author: miladCA
 
 Find out how to enable support for PEAP, EAP-FAST, or Cisco LEAP protocols on your Surface device.
 
-If you use PEAP, EAP-FAST, or Cisco LEAP in your enterprise network, you probably already know that these three wireless authentication protocols are not supported by Surface devices out of the box. Some users may discover this when they attempt to connect to your wireless network; others may discover it when they are unable to gain access to resources inside the network, like file shares and internal sites. For more information, see [Extensible Authentication Protocol](http://go.microsoft.com/fwlink/p/?LinkId=716899).
+If you use PEAP, EAP-FAST, or Cisco LEAP in your enterprise network, you probably already know that these three wireless authentication protocols are not supported by Surface devices out of the box. Some users may discover this when they attempt to connect to your wireless network; others may discover it when they are unable to gain access to resources inside the network, like file shares and internal sites. For more information, see [Extensible Authentication Protocol](https://go.microsoft.com/fwlink/p/?LinkId=716899).
 
 You can add support for each protocol by executing a small MSI package from a USB stick or from a file share. For organizations that want to enable EAP support on their Surface devices, the MSI package format supports deployment with many management and deployment tools, like the Microsoft Deployment Toolkit (MDT) and System Center Configuration Manager.
 
 ## <a href="" id="download-peap--eap-fast--or-cisco-leap-installation-files--"></a>Download PEAP, EAP-FAST, or Cisco LEAP installation files
 
 
-You can download the MSI installation files for PEAP, EAP-FAST, or Cisco LEAP in a single zip archive file from the Microsoft Download Center. To download this file, go to the [Surface Tools for IT](http://go.microsoft.com/fwlink/p/?LinkId=618121) page on the Microsoft Download Center, click **Download**, and then select the **Cisco EAP-Supplicant Installer.zip** file.
+You can download the MSI installation files for PEAP, EAP-FAST, or Cisco LEAP in a single zip archive file from the Microsoft Download Center. To download this file, go to the [Surface Tools for IT](https://go.microsoft.com/fwlink/p/?LinkId=618121) page on the Microsoft Download Center, click **Download**, and then select the **Cisco EAP-Supplicant Installer.zip** file.
 
 ## Deploy PEAP, EAP-FAST, or Cisco LEAP with MDT
 
@@ -78,7 +79,7 @@ To specify the protocol(s) explicitly, follow these steps:
 
 For organizations that manage Surface devices with Configuration Manager, it is even easier to deploy PEAP, EAP-FAST, or Cisco LEAP support to Surface devices. Simply import each MSI file as an application from the Software Library and configure a deployment to your Surface device collection.
 
-For more information on how to deploy applications with Configuration Manager see [How to Create Applications in Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=761079) and [How to Deploy Applications in Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=761080).
+For more information on how to deploy applications with Configuration Manager see [How to Create Applications in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=761079) and [How to Deploy Applications in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=761080).
 
  
 

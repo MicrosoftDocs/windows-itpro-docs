@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Microsoft Surface Hub administrator's guide
@@ -38,7 +39,7 @@ Before you power on Microsoft Surface Hub for the first time, make sure you've [
 </tr>
 <tr class="even">
 <td align="left"><p>[Physically install Microsoft Surface Hub](physically-install-your-surface-hub-device.md)</p></td>
-<td align="left"><p>The Surface Hub Readiness Guide will help make sure that your site is ready for the installation. You can download the Guide from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=718144). It includes planning information for both the 55&quot; and 84&quot; devices, as well as info on moving the Surface Hub from receiving to the installation location, mounting options, and a list of what's in the box.</p></td>
+<td align="left"><p>The Surface Hub Readiness Guide will help make sure that your site is ready for the installation. You can download the Guide from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=718144). It includes planning information for both the 55&quot; and 84&quot; devices, as well as info on moving the Surface Hub from receiving to the installation location, mounting options, and a list of what's in the box.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[Prepare your environment for Microsoft Surface Hub](prepare-your-environment-for-surface-hub.md)</p></td>

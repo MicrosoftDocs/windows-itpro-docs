@@ -106,13 +106,13 @@ Some systems may have multiple TPMs and the active TPM may be toggled in the BIO
 
 ## <a href="" id="bkmk-onoff"></a>Turn on or turn off the TPM
 
-Normally, the TPM is turned on as part of the TPM initialization process. You do not normally need to turn the TPM on or off. However, if necessary you can do so by using the TPM MMC.
+Normally, the TPM is turned on as part of the TPM initialization process. You do not normally need to turn the TPM on or off. However, if necessary you can do so by using the TPM MMC. This option is only available with TPM 1.2 and does not apply to TPM 2.0.
 
 ### <a href="" id="turn-on-the-tpm-"></a>Turn on the TPM
 
 If the TPM has been initialized but has never been used, or if you want to use the TPM after you have turned it off, you can use the following procedure to turn on the TPM.
 
-**To turn on the TPM**
+**To turn on the TPM (TPM 1.2 Only)**
 
 1.  Open the TPM MMC (tpm.msc).
 2.  In the **Action** pane, click **Turn TPM On** to display the **Turn on the TPM Security Hardware** page. Read the instructions on this page.
@@ -125,7 +125,7 @@ If the TPM has been initialized but has never been used, or if you want to use t
 If you want to stop using the services that are provided by the TPM, you can use the TPM MMC to turn off the TPM. If you have the TPM owner password, physical access to the computer is not required to turn off the TPM. If you do not have the TPM owner password, you must have physical access to the 
 computer to turn off the TPM.
 
-**To turn off the TPM**
+**To turn off the TPM (TPM 1.2 only)**
 
 1.  Open the TPM MMC (tpm.msc).
 2.  In the **Action** pane, click **Turn TPM Off** to display the **Turn off the TPM security hardware** page.
@@ -156,13 +156,7 @@ Membership in the local Administrators group, or equivalent, is the minimum requ
     
     Clearing the TPM resets it to factory defaults and turns it off. You will lose all created keys and data that is protected by those keys.
      
-4.  In the **Clear the TPM security hardware** dialog box, select one of the following methods to enter your password and clear the TPM:
-    -   If you have the removable storage device with your saved TPM owner password, insert it, and click **I have the owner password file**. In the **Select backup file with the TPM owner password** dialog box, use **Browse** to navigate to the .tpm file that is saved on your removable storage device. Click **Open**, and then click **Clear TPM**.
-    -   If you do not have the removable storage device with your saved password, click **I want to enter the owner password**. In the **Type your TPM owner password** dialog box, type your password (including hyphens), and click **Clear TPM**.
-    -   If you do not know your TPM owner password, click **I don't have the TPM owner password**, and follow the instructions that are provided to clear the TPM without entering the password.
-    >**Note:**  If you have physical access to the computer, you can clear the TPM and perform a limited number of management tasks without entering the TPM owner password.
-     
-    The status of your TPM is displayed under **Status** in TPM MMC.
+4.  You will be prompted to restart the computer. During the restart, you will be prompted by the BIOS or UEFI to press a button to confirm you wish to clear the TPM.
 
 ## <a href="" id="bkmk-tpmcmdlets"></a>Use the TPM cmdlets
 

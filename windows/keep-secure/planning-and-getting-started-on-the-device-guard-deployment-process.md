@@ -4,6 +4,7 @@ description: To help you plan and begin the initial test stages of a deployment 
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 author: brianlic-msft
 ---
 
@@ -15,7 +16,7 @@ author: brianlic-msft
 
 This topic provides a roadmap for planning and getting started on the Device Guard deployment process, with links to topics that provide additional detail. Planning for Device Guard deployment involves looking at both the end-user and the IT pro impact of your choices. Use the following steps to guide you.
 
-**Planning**
+## Planning
 
 1. **Review requirements, especially hardware requirements for VBS**. Review the virtualization-based security (VBS) features described in [How Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats). Then you can assess your end-user systems to see how many support the VBS features you are interested in, as described in [Hardware, firmware, and software requirements for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-device-guard). 
 
@@ -32,7 +33,7 @@ This topic provides a roadmap for planning and getting started on the Device Gua
 
 4.  **Identify LOB applications that are currently unsigned**. Although requiring signed code (through code integrity policies) protects against many threats, your organization might use unsigned LOB applications, for which the process of signing might be difficult. You might also have applications that are signed, but you want to add a secondary signature to them. If so, identify these applications, because you will need to create a catalog file for them. For a basic description of catalog files, see the table in [Introduction to Device Guard: virtualization-based security and code integrity policies](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md). For more background information about catalog files, see [Reviewing your applications: application signing and catalog files](requirements-and-deployment-planning-guidelines-for-device-guard.md#reviewing-your-applications-application-signing-and-catalog-files).
 
-**Getting started on the deployment process**
+## Getting started on the deployment process
 
 1.  **Optionally, create a signing certificate for code integrity policies**. As you deploy code integrity policies, you might need to sign catalog files or code integrity policies internally. To do this, you will either need a publicly issued code signing certificate (that you purchase) or an internal CA. If you choose to use an internal CA, you will need to create a code signing certificate. For more information, see [Optional: Create a code signing certificate for code integrity policies](optional-create-a-code-signing-certificate-for-code-integrity-policies.md).
 

@@ -32,9 +32,9 @@ Provides information about operational tasks for using the Application Virtualiz
 
 For more information about general App-V sequencing best practices, see the following Microsoft Web sites:
 
-MCS Sequencing Guidelines at <http://go.microsoft.com/fwlink/?LinkId=113132>
+MCS Sequencing Guidelines at <https://go.microsoft.com/fwlink/?LinkId=113132>
 
-Best Practices for Sequencing at <http://go.microsoft.com/fwlink/?LinkId=122168>
+Best Practices for Sequencing at <https://go.microsoft.com/fwlink/?LinkId=122168>
 
  
 

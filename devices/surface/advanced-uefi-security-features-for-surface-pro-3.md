@@ -3,6 +3,7 @@ title: Advanced UEFI security features for Surface Pro 3 (Surface)
 description: This article describes how to install and configure the v3.11.760.0 UEFI update to enable additional security options for Surface Pro 3 devices.
 ms.assetid: 90F790C0-E5FC-4482-AD71-60589E3C9C93
 keywords: security, features, configure, hardware, device, custom, script, update
+localizationpriority: high
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
@@ -20,9 +21,9 @@ To address more granular control over the security of Surface devices, the v3.11
 ## Manually install the UEFI update
 
 
-Before you can configure the advanced security features of your Surface device, you must first install the v3.11.760.0 UEFI update. This update is installed automatically if you receive your updates from Windows Update. For more information about how to configure Windows to update automatically by using Windows Update, see [How to configure and use Automatic Updates in Windows]( http://go.microsoft.com/fwlink/p/?LinkID=618030).
+Before you can configure the advanced security features of your Surface device, you must first install the v3.11.760.0 UEFI update. This update is installed automatically if you receive your updates from Windows Update. For more information about how to configure Windows to update automatically by using Windows Update, see [How to configure and use Automatic Updates in Windows]( https://go.microsoft.com/fwlink/p/?LinkID=618030).
 
-To update the UEFI on Surface Pro 3, you can download and install the Surface UEFI updates as part of the Surface Pro 3 Firmware and Driver Pack. These firmware and driver packs are available from the [Surface Pro 3 page](https://www.microsoft.com/en-us/download/details.aspx?id=38826) on the Microsoft Download Center. You can find out more about the firmware and driver packs at [Download the latest firmware and drivers for Surface devices](https://technet.microsoft.com/en-us/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices). The firmware and driver packs are available as both self-contained Windows Installer (.msi) and archive (.zip) formats. You can find out more about these two formats and how you can use them to update your drivers at [Manage Surface driver and firmware updates](https://technet.microsoft.com/en-us/itpro/surface/manage-surface-pro-3-firmware-updates).
+To update the UEFI on Surface Pro 3, you can download and install the Surface UEFI updates as part of the Surface Pro 3 Firmware and Driver Pack. These firmware and driver packs are available from the [Surface Pro 3 page](https://www.microsoft.com/download/details.aspx?id=38826) on the Microsoft Download Center. You can find out more about the firmware and driver packs at [Download the latest firmware and drivers for Surface devices](https://technet.microsoft.com/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices). The firmware and driver packs are available as both self-contained Windows Installer (.msi) and archive (.zip) formats. You can find out more about these two formats and how you can use them to update your drivers at [Manage Surface driver and firmware updates](https://technet.microsoft.com/itpro/surface/manage-surface-pro-3-firmware-updates).
 
 ## Manually configure additional security settings
 
@@ -48,13 +49,13 @@ After the v3.11.760.0 UEFI update is installed on a Surface device, an additiona
 ## Automate additional security settings
 
 
-As an IT professional with administrative privileges, you can automate the configuration of UEFI settings by leveraging [Surface Pro 3 Firmware Tools (476 KB)](http://go.microsoft.com/fwlink/p/?LinkID=618038) available from the Microsoft Download Center. These tools install a .NET assembly that can be called from any custom application or script.
+As an IT professional with administrative privileges, you can automate the configuration of UEFI settings by leveraging [Surface Pro 3 Firmware Tools (476 KB)](https://go.microsoft.com/fwlink/p/?LinkID=618038) available from the Microsoft Download Center. These tools install a .NET assembly that can be called from any custom application or script.
 
 **Prerequisites**
 
 -   The sample scripts below leverage the previously mentioned extension and therefore assume that the tool has been installed on the device being managed.
 -   The scripts must be run with administrative privilege.
--   The Windows PowerShell command [**Set-ExecutionPolicy Unrestricted**](http://go.microsoft.com/fwlink/p/?LinkID=618039) must be called prior to running sample scripts if they are not digitally signed.
+-   The Windows PowerShell command [**Set-ExecutionPolicy Unrestricted**](https://go.microsoft.com/fwlink/p/?LinkID=618039) must be called prior to running sample scripts if they are not digitally signed.
 
 **Sample scripts**
 

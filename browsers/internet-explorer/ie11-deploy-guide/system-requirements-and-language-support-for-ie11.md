@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: Lists the minimum system requirements and supported languages for Internet Explorer 11.
-ms.assetid: 27185e3d-c486-4e4a-9c51-5cb317c0006d
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 27185e3d-c486-4e4a-9c51-5cb317c0006d
 title: System requirements and language support for Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # System requirements and language support for Internet Explorer 11 (IE11)
 
@@ -21,7 +23,7 @@ title: System requirements and language support for Internet Explorer 11 (IE11) 
 Internet Explorer 11 is available for a number of systems and languages. This topic provides info about the minimum system requirements and language support.
 
 ## Minimum system requirements for IE11
-IE11 is pre-installed on Windows 8.1 and Windows Server 2012 R2 and is listed here for reference. It's also supported on Windows 10, but isn't pre-installed. For more info about IE11 on Windows 10, see [Browser: Microsoft Edge and Internet Explorer 11](https://technet.microsoft.com/en-us/library/mt156988.aspx).
+IE11 is pre-installed on Windows 8.1 and Windows Server 2012 R2 and is listed here for reference. It's also supported on Windows 10, but isn't pre-installed. For more info about IE11 on Windows 10, see [Browser: Microsoft Edge and Internet Explorer 11](https://technet.microsoft.com/library/mt156988.aspx).
 
 **Important**<br> 
 IE11 isn't supported on Windows 8 or Windows Server 2012.
@@ -43,7 +45,7 @@ Some of the components in this table might also need additional system resources
 You might experience start up issues where IE11 fails to launch an application that uses managed browser hosting controls with your legacy apps. This is because, starting with Internet Explorer 10, the browser started blocking legacy apps from using the .NET Framework 1.1 and 2.0. To fix this problem, see [.NET Framework problems with Internet Explorer 11](net-framework-problems-with-ie11.md).
 
 ## Support for multiple languages
-IE11 is available in 108 languages for Windows 8.1 and Windows 10 and in 97 languages for Windows 7 with SP1. For the list of languages and download links, see [Available language packs based on operating system](http://go.microsoft.com/fwlink/p/?LinkId=281818).
+IE11 is available in 108 languages for Windows 8.1 and Windows 10 and in 97 languages for Windows 7 with SP1. For the list of languages and download links, see [Available language packs based on operating system](https://go.microsoft.com/fwlink/p/?LinkId=281818).
 
 Computers running localized versions of Windows should run the same version of IE11. For example, if your employees use the Spanish edition of Windows, you should deploy the Spanish version of IE11. On the other hand, if your employees use multiple localized versions of Windows, like Spanish, French, and Catalan, you should install IE11 in one of the languages, and then install language packs for the others.
 

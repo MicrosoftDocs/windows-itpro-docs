@@ -3,6 +3,7 @@ title: Customize the OOBE for Surface deployments (Surface)
 description: This article will walk you through the process of customizing the Surface out-of-box experience for end users in your organization.
 ms.assetid: F6910315-9FA9-4297-8FA8-2C284A4B1D87
 keywords: deploy, customize, automate, network, Pen, pair, boot
+localizationpriority: high
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
@@ -21,12 +22,12 @@ It is common practice in a Windows deployment to customize the user experience f
 
 In some scenarios, you may want to provide complete automation to ensure that at the end of a deployment, computers are ready for use without any interaction from the user. In other scenarios, you may want to leave key elements of the experience for users to perform necessary actions or select between important choices. For administrators deploying to Surface devices, each of these scenarios presents a unique challenge to overcome.
 
-This article provides a summary of the scenarios where a deployment might require additional steps. It also provides the required information to ensure that the desired experience is achieved on any newly deployed Surface device. This article is intended for administrators who are familiar with the deployment process, as well as concepts such as answer files and [reference images](http://go.microsoft.com/fwlink/p/?LinkID=618042).
+This article provides a summary of the scenarios where a deployment might require additional steps. It also provides the required information to ensure that the desired experience is achieved on any newly deployed Surface device. This article is intended for administrators who are familiar with the deployment process, as well as concepts such as answer files and [reference images](https://go.microsoft.com/fwlink/p/?LinkID=618042).
 
->**Note:**&nbsp;&nbsp;Although the OOBE phase of setup is still run during a deployment with an automated deployment solution such as the [Microsoft Deployment Toolkit (MDT)](http://go.microsoft.com/fwlink/p/?LinkId=618117) or System Center Configuration Manager Operating System Deployment (OSD), it is automated by the settings supplied in the Deployment Wizard and task sequence. For more information see:<br/>
-- [Deploy Windows 10 with the Microsoft Deployment Toolkit](http://technet.microsoft.com/en-us/itpro/windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit)
+>**Note:**&nbsp;&nbsp;Although the OOBE phase of setup is still run during a deployment with an automated deployment solution such as the [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=618117) or System Center Configuration Manager Operating System Deployment (OSD), it is automated by the settings supplied in the Deployment Wizard and task sequence. For more information see:<br/>
+- [Deploy Windows 10 with the Microsoft Deployment Toolkit](http://technet.microsoft.com/itpro/windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit)
 <br/>
-- [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](http://technet.microsoft.com/en-us/itpro/windows/deploy/deploy-windows-10-with-system-center-2012-r2-configuration-manager)
+- [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](http://technet.microsoft.com/itpro/windows/deploy/deploy-windows-10-with-system-center-2012-r2-configuration-manager)
 
  
 
@@ -35,7 +36,7 @@ This article provides a summary of the scenarios where a deployment might requir
 
 When a wireless network adapter is present during OOBE, the **Join a wireless network** page is displayed, which prompts a user to connect to a wireless network. This page is not automatically hidden by deployment technologies, including MDT 2013, and therefore will be displayed even when a deployment is configured for complete automation.
 
-To ensure that an automated deployment is not stopped by this page, the page must be hidden by configuring an additional setting in the answer file, **HideWirelessSetupInOOBE**. You can find additional information about the **HideWirelessSetupInOOBE** setting in [Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/p/?LinkID=618044).
+To ensure that an automated deployment is not stopped by this page, the page must be hidden by configuring an additional setting in the answer file, **HideWirelessSetupInOOBE**. You can find additional information about the **HideWirelessSetupInOOBE** setting in [Unattended Windows Setup Reference](https://go.microsoft.com/fwlink/p/?LinkID=618044).
 
 ## Scenario 2: Surface Pen pairing in OOBE
 
@@ -53,7 +54,7 @@ To provide the factory Surface Pen pairing experience in OOBE, you must copy fou
 
  
 
-The step-by-step process for adding these required files to an image is described in [Deploying Surface Pro 3 Pen and OneNote Tips](http://go.microsoft.com/fwlink/p/?LinkID=618045). This blog post also includes tips to ensure that the necessary updates for the Surface Pen Quick Note-Taking Experience are installed, which allows users to send notes to OneNote with a single click.
+The step-by-step process for adding these required files to an image is described in [Deploying Surface Pro 3 Pen and OneNote Tips](https://go.microsoft.com/fwlink/p/?LinkID=618045). This blog post also includes tips to ensure that the necessary updates for the Surface Pen Quick Note-Taking Experience are installed, which allows users to send notes to OneNote with a single click.
 
  
 

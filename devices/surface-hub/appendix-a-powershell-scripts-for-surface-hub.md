@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Appendix: PowerShell (Surface Hub)
@@ -34,7 +35,7 @@ You can check online for updated versions at [Surface Hub device account scripts
 What do the scripts do?
 
 -   Create device accounts for setups using pure single-forest on-premises (Microsoft Exchange and Skype 2013 and later only) or online (Microsoft Office 365), that are configured correctly for your Surface Hub.
--   Validate existing device accounts for any setup (on-premises, online, or hybrid using Exchange or Lync 2010 or later) to make sure they're compatible with Surface Hub.
+-   Validate existing device accounts for any setup (on-premises or online) to make sure they're compatible with Surface Hub.
 -   Provide a base template for anyone wanting to create their own device account creation or validation scripts.
 
 What do you need in order to run the scripts?
@@ -611,7 +612,7 @@ catch
 {
     PrintError "Some dependencies are missing"
     PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to http://www.microsoft.com/download/details.aspx?id=39366" 
-    PrintError "Please install the Azure Active Directory module for PowerShell from http://go.microsoft.com/fwlink/p/?linkid=236297"
+    PrintError "Please install the Azure Active Directory module for PowerShell from https://go.microsoft.com/fwlink/p/?linkid=236297"
     CleanupAndFail
 }
 
@@ -1118,7 +1119,7 @@ if ($fHasOnline)
     }
     catch 
     {
-        CleanupAndFail "To verify accounts in online tenants you need the Azure Active Directory module for PowerShell from http://go.microsoft.com/fwlink/p/?linkid=236297"
+        CleanupAndFail "To verify accounts in online tenants you need the Azure Active Directory module for PowerShell from https://go.microsoft.com/fwlink/p/?linkid=236297"
     }
 }
 
@@ -1517,7 +1518,7 @@ if ($online)
     {
         PrintError "Some dependencies are missing"
         PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to http://www.microsoft.com/download/details.aspx?id=39366" 
-        PrintError "Please install the Azure Active Directory module for PowerShell from http://go.microsoft.com/fwlink/p/?linkid=236297"
+        PrintError "Please install the Azure Active Directory module for PowerShell from https://go.microsoft.com/fwlink/p/?linkid=236297"
         CleanupAndFail
     }
 }

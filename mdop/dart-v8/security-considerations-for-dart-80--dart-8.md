@@ -22,7 +22,7 @@ This topic contains a brief overview about the accounts and groups, log files, a
 
 **Physically secure your computers**. When administrators and help desk workers are not physically at their computers, they should lock their computers and use a secured screen saver.
 
-**Apply the most recent security updates to all computers**. Stay informed about new updates for operating systems by subscribing to the Security Notification service (<http://go.microsoft.com/fwlink/?LinkId=28819>).
+**Apply the most recent security updates to all computers**. Stay informed about new updates for operating systems by subscribing to the Security Notification service (<https://go.microsoft.com/fwlink/?LinkId=28819>).
 
 ## Limit end-user access to DaRT tools
 

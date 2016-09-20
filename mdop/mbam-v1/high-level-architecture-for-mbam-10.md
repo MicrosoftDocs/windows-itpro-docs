@@ -15,7 +15,7 @@ ms.prod: w8
 
 Microsoft BitLocker Administration and Monitoring (MBAM) is a client/server data encryption solution that can help you simplify BitLocker provisioning and deployment, improve BitLocker compliance and reporting, and reduce support costs. MBAM includes the features that are described in this topic.
 
-Additionally, there is a video that provides an overview of the MBAM architecture and MBAM Setup. For more information, see [MBAM Deployment and Architecture Overview](http://go.microsoft.com/fwlink/p/?LinkId=258392).
+Additionally, there is a video that provides an overview of the MBAM architecture and MBAM Setup. For more information, see [MBAM Deployment and Architecture Overview](https://go.microsoft.com/fwlink/p/?LinkId=258392).
 
 ## Architecture Overview
 

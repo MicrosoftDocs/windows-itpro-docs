@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
+localizationpriority: high
 ---
 
 # Sign up for Windows Store for Business
@@ -26,7 +27,7 @@ Before signing up for the Store for Business, make sure you're the global admini
 
 **To sign up for the Store for Business**
 
-1.  Go to [https://www.microsoft.com/business-store](http://go.microsoft.com/fwlink/p/?LinkId=691845), and click **Sign up**.
+1.  Go to [https://www.microsoft.com/business-store](https://go.microsoft.com/fwlink/p/?LinkId=691845), and click **Sign up**.
 
     -   If you start the Store for Business sign up process, and don't have an Azure AD directory for your organization, we'll help you create one. For more info, see [Sign up for Azure AD accounts](#o365-welcome).
 

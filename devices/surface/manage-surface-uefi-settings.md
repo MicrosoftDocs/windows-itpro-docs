@@ -2,6 +2,7 @@
 title: Manage Surface UEFI settings (Surface)
 description: Use Surface UEFI settings to enable or disable devices or components, configure security settings, and adjust Surface device boot settings. 
 keywords: firmware, security, features, configure, hardware
+localizationpriority: high
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -25,7 +26,7 @@ On the **PC information** page, detailed information about your Surface device i
 - **UUID** – This Universally Unique Identification number is specific to your device and is used to identify the device during deployment or management. 
 
 - **Serial Number** – This number is used to identify this specific Surface device for asset tagging and support scenarios.
-- **Asset Tag** – The asset tag is assigned to the Surface device with the [Asset Tag Tool](https://www.microsoft.com/en-us/download/details.aspx?id=44076). 
+- **Asset Tag** – The asset tag is assigned to the Surface device with the [Asset Tag Tool](https://www.microsoft.com/download/details.aspx?id=44076). 
 
 You will also find detailed information about the firmware of your Surface device. Surface devices have several internal components that each run different versions of firmware. The firmware version of each of the following devices is displayed on the **PC information** page (as shown in Figure 1): 
 
@@ -43,7 +44,7 @@ You will also find detailed information about the firmware of your Surface devic
 
 *Figure 1. System information and firmware version information*
 
-You can find up-to-date information about the latest firmware version for your Surface device in the [Surface Update History](https://www.microsoft.com/surface/en-us/support/install-update-activate/surface-update-history) for your device. 
+You can find up-to-date information about the latest firmware version for your Surface device in the [Surface Update History](https://www.microsoft.com/surface/support/install-update-activate/surface-update-history) for your device. 
 
 ##Security 
 
@@ -69,7 +70,7 @@ On the **Security** page you can also change the configuration of Secure Boot on
 
 *Figure 3. Configure Secure Boot*
 
-You can also enable or disable the Trusted Platform Module (TPM) device on the **Security** page, as shown in Figure 4. The TPM is used to authenticate encryption for your device’s data with BitLocker. Read more about [BitLocker](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/bitlocker-overview) in the TechNet Library. 
+You can also enable or disable the Trusted Platform Module (TPM) device on the **Security** page, as shown in Figure 4. The TPM is used to authenticate encryption for your device’s data with BitLocker. Read more about [BitLocker](https://technet.microsoft.com/itpro/windows/keep-secure/bitlocker-overview) in the TechNet Library. 
 
 ![Configure Surface UEFI security settings](images/manage-surface-uefi-fig4.png "Configure Surface UEFI security settings")
 

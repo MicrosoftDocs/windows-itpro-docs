@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: security
 description: Use this section to learn about how to turn on and use IE7 Enterprise Mode or IE8 Enterprise Mode.
-ms.assetid: 238ead3d-8920-429a-ac23-02f089c4384a
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.assetid: 238ead3d-8920-429a-ac23-02f089c4384a
 title: Using IE7 Enterprise Mode or IE8 Enterprise Mode (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Using IE7 Enterprise Mode or IE8 Enterprise Mode
 
@@ -43,8 +45,8 @@ For instructions about how to add IE7 Enterprise Mode or IE8 Enterprise Mode to 
 For instructions and more info about how to fix your compatibility issues using Enterprise Mode, see [Fix web compatibility issues using document modes and the Enterprise Mode site list](fix-compat-issues-with-doc-modes-and-enterprise-mode-site-list.md).
 
 ## Related topics
-- [Download the Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853)
-- [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
  
 

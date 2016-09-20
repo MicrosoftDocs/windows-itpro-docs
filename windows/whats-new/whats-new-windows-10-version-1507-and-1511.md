@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: TrudyHa
+localizationpriority: high
 ---
 
 # What's new in Windows 10, versions 1507 and 1511
@@ -69,7 +70,7 @@ With Windows 10, you can create provisioning packages that let you quickly and e
 ### Easier certificate management
 
 
-For Windows 10-based devices, you can use your MDM server to directly deploy client authentication certificates using Personal Information Exchange (PFX), in addition to enrolling using Simple Certificate Enrollment Protocol (SCEP), including certificates to enable Windows Hello for Business in your enterprise. You'll be able to use MDM to enroll, renew, and delete certificates. As in Windows Phone 8.1, you can use the [Certificates app](http://go.microsoft.com/fwlink/p/?LinkId=615824) to review the details of certificates on your device. [Learn how to install digital certificates on Windows 10 Mobile.](~/keep-secure/installing-digital-certificates-on-windows-10-mobile.md)
+For Windows 10-based devices, you can use your MDM server to directly deploy client authentication certificates using Personal Information Exchange (PFX), in addition to enrolling using Simple Certificate Enrollment Protocol (SCEP), including certificates to enable Windows Hello for Business in your enterprise. You'll be able to use MDM to enroll, renew, and delete certificates. As in Windows Phone 8.1, you can use the [Certificates app](https://go.microsoft.com/fwlink/p/?LinkId=615824) to review the details of certificates on your device. [Learn how to install digital certificates on Windows 10 Mobile.](~/keep-secure/installing-digital-certificates-on-windows-10-mobile.md)
 
 ### Microsoft Passport
 
@@ -81,7 +82,7 @@ Microsoft Passport lets users authenticate to a Microsoft account, an Active Dir
 
 #### New Security auditing features in Windows 10, version 1511
 
--   The [WindowsSecurityAuditing](http://go.microsoft.com/fwlink/p/?LinkId=690517) and [Reporting](http://go.microsoft.com/fwlink/p/?LinkId=690525) configuration service providers allow you to add security audit policies to mobile devices.
+-   The [WindowsSecurityAuditing](https://go.microsoft.com/fwlink/p/?LinkId=690517) and [Reporting](https://go.microsoft.com/fwlink/p/?LinkId=690525) configuration service providers allow you to add security audit policies to mobile devices.
 
 #### New features in Windows 10, version 1507
 
@@ -248,9 +249,9 @@ Windows 10 provides mobile device management (MDM) capabilities for PCs, laptop
 
 MDM policies for Windows 10 align with the policies supported in Windows 8.1 and are expanded to address even more enterprise scenarios, such as managing multiple users who have Microsoft Azure Active Directory (Azure AD) accounts, full control over the Windows Store, VPN configuration, and more. 
 
-MDM support in Windows 10 is based on [Open Mobile Alliance (OMA)](http://go.microsoft.com/fwlink/p/?LinkId=533885) Device Management (DM) protocol 1.2.1 specification.
+MDM support in Windows 10 is based on [Open Mobile Alliance (OMA)](https://go.microsoft.com/fwlink/p/?LinkId=533885) Device Management (DM) protocol 1.2.1 specification.
 
-Corporate-owned devices can be enrolled automatically for enterprises using Azure AD. [Reference for Mobile device management for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=533172)
+Corporate-owned devices can be enrolled automatically for enterprises using Azure AD. [Reference for Mobile device management for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=533172)
 
 ### Unenrollment
 
@@ -271,7 +272,7 @@ Enterprises have the following identity and management choices.
 | Device management | Group Policy; System Center Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
 
  > **Note**  
-With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](http://go.microsoft.com/fwlink/p/?LinkID=613512).
+With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=613512).
 
  
 ### Device lockdown
@@ -297,14 +298,48 @@ A standard, customized Start layout can be useful on devices that are common to 
 
 Administrators can also use mobile device management (MDM) or Group Policy to disable the use of [Windows Spotlight on the lock screen](../manage/windows-spotlight.md).
 
+### Windows Store for Business
+**New in Windows 10, version 1511**
+
+With the Windows Store for Business, organizations can make volume purchases of Windows apps. The Store for Business provides app purchases based on organizational identity, flexible distribution options, and the ability to reclaim or re-use licenses. Organizations can also use the Store for Business to create a private store for their employees that includes apps from the Store, as well private Line-of-Business (LOB) apps. 
+
+For more information, see [Windows Store for Business overview](../manage/windows-store-for-business-overview.md).
+
+
 ## Updates
 
+Windows Update for Business enables information technology administrators to keep the Windows 10-based devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Microsoft’s Windows Update service.
 
-With Windows 10, your enterprise will have more choice and flexibility in applying operating system updates. You can manage and control updates to devices running Windows 10 Pro and Windows 10 Enterprise using MDM policies.
+By using [Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=699279), Windows Update for Business is an easily established and implemented system which enables organizations and administrators to exercise control on how their Windows 10-based devices are updated, by allowing:
 
-While Windows Update provides updates to unmanaged devices, most enterprises prefer to manage and control the flow of updates using their device management solution. You can choose to apply the latest updates as soon as they are available, or you can set a source and schedule for updates that works for your specific requirements.
+-   **Deployment and validation groups**; where administrators can specify which devices go first in an update wave, and which devices will come later (to ensure any quality bars are met).
+
+-   **Peer-to-peer delivery**, which administrators can enable to make delivery of updates to branch offices and remote sites with limited bandwidth very efficient.
+
+-   **Use with existing tools** such as System Center Configuration Manager and the [Enterprise Mobility Suite](https://go.microsoft.com/fwlink/p/?LinkId=699281).
+
+Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](http://technet.microsoft.com/library/hh852345.aspx) and [System Center Configuration Manager](http://technet.microsoft.com/library/gg682129.aspx).
+
+
+Learn more about [Windows Update for Business](../plan/windows-update-for-business.md).
 
 For more information about updating Windows 10, see [Windows 10 servicing options for updates and upgrades](../manage/introduction-to-windows-10-servicing.md).
+
+## Microsoft Edge
+Microsoft Edge takes you beyond just browsing to actively engaging with the web through features like Web Note, Reading View, and Cortana.
+
+-   **Web Note.** Microsoft Edge lets you annotate, highlight, and call things out directly on webpages.
+-   **Reading view.** Microsoft Edge lets you enjoy and print online articles in a distraction-free layout that's optimized for your screen size. While in reading view, you can also save webpages or PDF files to your reading list, for later viewing.
+-   **Cortana.** Cortana is automatically enabled on Microsoft Edge. Microsoft Edge lets you highlight words for more info and gives you one-click access to things like restaurant reservations and reviews, without leaving the webpage.
+-   **Compatibility and security.** Microsoft Edge lets you continue to use IE11 for sites that are on your corporate intranet or that are included on your Enterprise Mode Site List. You must use IE11 to run older, less secure technology, such as ActiveX controls.
+
+### Enterprise guidance
+Microsoft Edge is the default browser experience for Windows 10 and Windows 10 Mobile. However, if you're running web apps that need ActiveX controls, we recommend that you continue to use Internet Explorer 11 for them. If you don't have IE11 installed anymore, you can download it from the Windows Store or from the [Internet Explorer 11 download page](https://go.microsoft.com/fwlink/p/?linkid=290956).
+
+We also recommend that you upgrade to IE11 if you're running any earlier versions of Internet Explorer. IE11 is supported on Windows 7, Windows 8.1, and Windows 10. So any legacy apps that work with IE11 will continue to work even as you migrate to Windows 10.
+
+[Learn more about using Microsoft Edge in the enterprise](https://technet.microsoft.com/itpro/microsoft-edge/enterprise-guidance-using-microsoft-edge-and-ie11)
+
 
 ## Learn more
 

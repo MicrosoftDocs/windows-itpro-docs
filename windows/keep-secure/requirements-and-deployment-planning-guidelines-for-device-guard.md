@@ -4,6 +4,7 @@ description: To help you plan a deployment of Microsoft Device Guard, this artic
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 author: brianlic-msft
 ---
 
@@ -22,7 +23,9 @@ This article describes the following:
 - [Reviewing your applications: application signing and catalog files](#reviewing-your-applications-application-signing-and-catalog-files)
 - [Code integrity policy formats and signing](#code-integrity-policy-formats-and-signing)
 
-The information in this article provides a foundation for [Planning and getting started on the Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
+The information in this article is intended for IT professionals, and provides a foundation for [Planning and getting started on the Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
+
+>**Note**&nbsp;&nbsp;If you are an OEM, see the requirements information at [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514(v=vs.85).aspx).
 
 ## Hardware, firmware, and software requirements for Device Guard
 
@@ -55,7 +58,7 @@ The following tables provide more information about the hardware, firmware, and 
 
 The following tables describes additional hardware and firmware requirements, and the improved security that is available when those requirements are met.
 
-### 2015 Additional Qualification Requirements for Device Guard (Windows 10, version 1507 and Windows 10, version 1511)
+### 2015 Additional Qualification Requirements for Device Guard (starting with Windows 10, version 1507, and Windows Server 2016, Technical Preview 4)
 
 | Protections for Improved Security - requirement         | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
@@ -63,7 +66,7 @@ The following tables describes additional hardware and firmware requirements, an
 
 <br>
 
-### 2016 Additional Qualification Requirements for Device Guard (Windows 10, version 1607)
+### 2016 Additional Qualification Requirements for Device Guard (starting with Windows 10, version 1607, and Windows Server 2016)
 
 > **Important**&nbsp;&nbsp;The following tables list requirements for improved security, beyond the level of protection described in the preceding tables. You can use Device Guard with hardware, firmware, and software that do not support the following protections for improved security. As your systems meet more requirements, more protections become available to them.
 

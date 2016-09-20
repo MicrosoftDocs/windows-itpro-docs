@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # Introduction to configuration service providers (CSPs) for IT pros
@@ -18,12 +19,12 @@ author: jdeckerMS
 
 Configuration service providers (CSPs) expose device configuration settings in Windows 10. This topic is written for people who have no experience with CSPs.
 
-The CSPs are documented on the [Hardware Dev Center](http://go.microsoft.com/fwlink/p/?LinkId=717390) because CSPs are used by mobile device management (MDM) service providers. This topic explains how IT pros and system administrators can take advantage of many settings available through CSPs to configure devices running Windows 10 and Windows 10 Mobile in their organizations.
+The CSPs are documented on the [Hardware Dev Center](https://go.microsoft.com/fwlink/p/?LinkId=717390) because CSPs are used by mobile device management (MDM) service providers. This topic explains how IT pros and system administrators can take advantage of many settings available through CSPs to configure devices running Windows 10 and Windows 10 Mobile in their organizations.
 
 **Note**  
 The explanation of CSPs and CSP documentation also apply to Windows Mobile 5, Windows Mobile 6, Windows Phone 7, and Windows Phone 8, but links to current CSPs are for Windows 10 and Windows 10 Mobile.
 
- [See what's new for CSPs in Windows 10, version 1607.](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056(v=vs.85).aspx#whatsnew_1607)
+ [See what's new for CSPs in Windows 10, version 1607.](https://msdn.microsoft.com/library/windows/hardware/mt299056.aspx#whatsnew_1607)
 
 ## What is a CSP?
 
@@ -32,9 +33,9 @@ A CSP is an interface in the client operating system between configuration setti
 
 Starting in Windows Mobile 5.0, CSPs were used to manage Windows mobile devices. In the Windows 10 platform, the management approach for both desktop and mobile devices converges, taking advantage of the same CSPs to configure and manage all devices running Windows 10.
 
-Each CSP provides access to specific settings. For example, the [Wi-Fi CSP](http://go.microsoft.com/fwlink/p/?LinkId=717438) contains the settings to create a Wi-Fi profile.
+Each CSP provides access to specific settings. For example, the [Wi-Fi CSP](https://go.microsoft.com/fwlink/p/?LinkId=717438) contains the settings to create a Wi-Fi profile.
 
-CSPs are behind many of the management tasks and policies for Windows 10 in Microsoft Intune and non-Microsoft MDM service providers. For example, in Intune, the policy to allow search suggestions in the Microsoft Edge address bar uses **Browser/AllowSearchSuggestionsinAddressBar** in the [Policy CSP](http://go.microsoft.com/fwlink/p/?LinkID=623244).
+CSPs are behind many of the management tasks and policies for Windows 10 in Microsoft Intune and non-Microsoft MDM service providers. For example, in Intune, the policy to allow search suggestions in the Microsoft Edge address bar uses **Browser/AllowSearchSuggestionsinAddressBar** in the [Policy CSP](https://go.microsoft.com/fwlink/p/?LinkID=623244).
 
 ![how intune maps to csp](images/policytocsp.png)
 
@@ -48,7 +49,7 @@ The Open Mobile Alliance Device Management (OMA-DM) protocol uses the XML-based 
 
 The WMI-to-CSP Bridge is a component allowing configuration of Windows 10 CSPs via scripts and traditional enterprise management software such as Configuration Manager using Windows Management Instrumentation (WMI). The bridge is responsible for reading WMI commands and through a component called the common device configurator pass them to a CSP for application on the device.
 
-[Learn how to use the WMI Bridge Provider with PowerShell.](http://go.microsoft.com/fwlink/p/?LinkId=761090)
+[Learn how to use the WMI Bridge Provider with PowerShell.](https://go.microsoft.com/fwlink/p/?LinkId=761090)
 
 ## Why should you learn about CSPs?
 
@@ -57,11 +58,11 @@ Generally, enterprises rely on Group Policy or MDM to configure and manage devic
 
 In addition, you may have unmanaged devices, or a large number of devices that you want to configure before enrolling them in management, or you want to apply custom settings that aren't available through your MDM service. The [CSP documentation](#bkmk-csp-doc) can help you understand the settings that can be configured or queried.
 
-In addition, some of the topics in the [Windows 10 and Windows 10 Mobile](../index.md) library on Technet include links to applicable CSP reference topics, such as [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md) which links to the [Policy CSP](http://go.microsoft.com/fwlink/p/?LinkID=623244). In the CSP topics, you can learn about all of the available configuration settings.
+In addition, some of the topics in the [Windows 10 and Windows 10 Mobile](../index.md) library on Technet include links to applicable CSP reference topics, such as [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md) which links to the [Policy CSP](https://go.microsoft.com/fwlink/p/?LinkID=623244). In the CSP topics, you can learn about all of the available configuration settings.
 
 ### CSPs in Windows Imaging and Configuration Designer (ICD)
 
-You can use Windows Imaging and Configuration Designer (ICD) to create [provisioning packages](http://go.microsoft.com/fwlink/p/?LinkId=717466) to apply settings to devices during the out-of-box-experience (OOBE) and after devices are set up. You can use provisioning packages to configure a device's connectivity and enroll the device in MDM. Many of the runtime settings in Windows ICD are based on CSPs.
+You can use Windows Imaging and Configuration Designer (ICD) to create [provisioning packages](https://go.microsoft.com/fwlink/p/?LinkId=717466) to apply settings to devices during the out-of-box-experience (OOBE) and after devices are set up. You can use provisioning packages to configure a device's connectivity and enroll the device in MDM. Many of the runtime settings in Windows ICD are based on CSPs.
 
 Many settings in Windows ICD will display documentation for that setting in the center pane, and will include a reference to the CSP if the setting uses one, as shown in the following image.
 
@@ -71,20 +72,20 @@ Many settings in Windows ICD will display documentation for that setting in the 
 
 ### CSPs in MDM
 
-Most, if not all, CSPs are surfaced through your MDM service. If you see a CSP that provides a capability that you want to make use of and cannot find that capability in your MDM service, contact your MDM provider for assistance. It might simply be named differently than you expected. You can see the CSPs supported by MDM in the [Configuration service provider reference](http://go.microsoft.com/fwlink/p/?LinkId=717390).
+Most, if not all, CSPs are surfaced through your MDM service. If you see a CSP that provides a capability that you want to make use of and cannot find that capability in your MDM service, contact your MDM provider for assistance. It might simply be named differently than you expected. You can see the CSPs supported by MDM in the [Configuration service provider reference](https://go.microsoft.com/fwlink/p/?LinkId=717390).
 
-When a CSP is available but is not explicitly included in your MDM solution, you may be able to make use of the CSP by using OMA-URI settings. In Intune, for example, you can use [custom policy settings](http://go.microsoft.com/fwlink/p/?LinkID=616316) to deploy settings. Intune documents [a partial list of settings](http://go.microsoft.com/fwlink/p/?LinkID=616317) that you can enter in the **OMA-URI Settings** section of a custom policy, if your MDM service provides that extension. You'll notice that the list doesn't explain the meanings of the allowed and default values, so use the [CSP reference documentation](http://go.microsoft.com/fwlink/p/?LinkId=717390) to locate that information.
+When a CSP is available but is not explicitly included in your MDM solution, you may be able to make use of the CSP by using OMA-URI settings. In Intune, for example, you can use [custom policy settings](https://go.microsoft.com/fwlink/p/?LinkID=616316) to deploy settings. Intune documents [a partial list of settings](https://go.microsoft.com/fwlink/p/?LinkID=616317) that you can enter in the **OMA-URI Settings** section of a custom policy, if your MDM service provides that extension. You'll notice that the list doesn't explain the meanings of the allowed and default values, so use the [CSP reference documentation](https://go.microsoft.com/fwlink/p/?LinkId=717390) to locate that information.
 
 ### CSPs in Lockdown XML
 
-Lockdown XML can be used to configure devices running Windows 10 Mobile. You can manually author a [Lockdown XML file](lockdown-xml.md) to make use of the configuration settings available through the [EnterpriseAssignedAccess configuration service provider (CSP)](http://go.microsoft.com/fwlink/p/?LinkID=618601).
+Lockdown XML can be used to configure devices running Windows 10 Mobile. You can manually author a [Lockdown XML file](lockdown-xml.md) to make use of the configuration settings available through the [EnterpriseAssignedAccess configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=618601).
 
 ## <a href="" id="bkmk-csp-doc"></a>How do you use the CSP documentation?
 
 
-All CSPs in Windows 10 are documented in the [Configuration service provider reference](http://go.microsoft.com/fwlink/p/?LinkId=717390).
+All CSPs in Windows 10 are documented in the [Configuration service provider reference](https://go.microsoft.com/fwlink/p/?LinkId=717390).
 
-The [main CSP topic](http://go.microsoft.com/fwlink/p/?LinkId=717390) tells you which CSPs are supported on each edition of Windows 10, and links to the documentation for each individual CSP.
+The [main CSP topic](https://go.microsoft.com/fwlink/p/?LinkId=717390) tells you which CSPs are supported on each edition of Windows 10, and links to the documentation for each individual CSP.
 
 ![csp per windows edition](images/csptable.png)
 
@@ -92,11 +93,11 @@ The documentation for each CSP follows the same structure. After an introduction
 
 The full path to a specific configuration setting is represented by its Open Mobile Alliance - Uniform Resource Identifier (OMA-URI). The URI is relative to the devices’ root node (MSFT, for example). Features supported by a particular CSP can be set by addressing the complete OMA-URI path.
 
-The following example shows the diagram for the [AssignedAccess CSP](http://go.microsoft.com/fwlink/p/?LinkID=626608). The diagram maps to the XML for that CSP. Notice the different shapes in the diagram: rounded elements are nodes and rectangular elements are settings or policies for which a value must be supplied.
+The following example shows the diagram for the [AssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=626608). The diagram maps to the XML for that CSP. Notice the different shapes in the diagram: rounded elements are nodes and rectangular elements are settings or policies for which a value must be supplied.
 
 ![assigned access csp tree](images/provisioning-csp-assignedaccess.png)
 
-The element in the tree diagram after the root node tells you the name of the CSP. Knowing this structure, you would recognize in XML the parts of the URI path for that CSP and, if you saw it in XML, you would know which CSP reference to look up. For example, in the following OMS-URI path for the kiosk mode app settings, you can see it uses the [AssignedAccess CSP](http://go.microsoft.com/fwlink/p/?LinkID=626608).
+The element in the tree diagram after the root node tells you the name of the CSP. Knowing this structure, you would recognize in XML the parts of the URI path for that CSP and, if you saw it in XML, you would know which CSP reference to look up. For example, in the following OMS-URI path for the kiosk mode app settings, you can see it uses the [AssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=626608).
 
 ```XML
 ./Vendor/MSFT/AssignedAccess/KioskModeApp
@@ -108,7 +109,7 @@ When an element in the diagram uses italic font, it indicates a placeholder for 
 
 After the diagram, the documentation describes each element. For each policy or setting, the valid values are listed.
 
-For example, in the [AssignedAccess CSP](http://go.microsoft.com/fwlink/p/?LinkID=626608), the setting is **KioskModeApp**. The documentation tells you that the value for **KioskModeApp** is a JSON string that contains the user account name and Application User Model ID (AUMID) of the Kiosk mode app.
+For example, in the [AssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=626608), the setting is **KioskModeApp**. The documentation tells you that the value for **KioskModeApp** is a JSON string that contains the user account name and Application User Model ID (AUMID) of the Kiosk mode app.
 
 The documentation for most CSPs will also include an XML example.
 
@@ -117,7 +118,7 @@ The documentation for most CSPs will also include an XML example.
 
 CSPs provide access to a number of settings useful to enterprises. This section introduces two CSPs that an enterprise might find particularly useful.
 
--   [EnterpriseAssignedAccess CSP](http://go.microsoft.com/fwlink/p/?LinkID=618601)
+-   [EnterpriseAssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=618601)
 
     The EnterpriseAssignedAccess configuration service provider allows IT administrators to configure settings on a Windows 10 Mobile device. An enterprise can make use of this CSP to create single-use or limited-use mobile devices, such as a handheld device that only runs a price-checking app.
 
@@ -131,7 +132,7 @@ CSPs provide access to a number of settings useful to enterprises. This section 
     -   Restricting access to the context menu.
     -   Enabling or disabling tile manipulation.
     -   Creating role-specific configurations.
--   [Policy CSP](http://go.microsoft.com/fwlink/p/?LinkID=623244)
+-   [Policy CSP](https://go.microsoft.com/fwlink/p/?LinkID=623244)
 
     The Policy configuration service provider enables the enterprise to configure policies on Windows 10 and Windows 10 Mobile. Some of these policy settings can also be applied using Group Policy, and the CSP documentation lists the equivalent Group Policy settings.
 
@@ -155,67 +156,67 @@ CSPs provide access to a number of settings useful to enterprises. This section 
 
 Here is a list of CSPs supported on Windows 10 Enterprise, Windows 10 Mobile Enterprise, or both:
 
--   [ActiveSync CSP](http://go.microsoft.com/fwlink/p/?LinkId=723219)
--   [Application CSP](http://go.microsoft.com/fwlink/p/?LinkId=723220)
--   [AppLocker CSP](http://go.microsoft.com/fwlink/p/?LinkID=626609)
--   [AssignedAccess CSP](http://go.microsoft.com/fwlink/p/?LinkID=626608)
--   [Bootstrap CSP](http://go.microsoft.com/fwlink/p/?LinkId=723224)
--   [BrowserFavorite CSP](http://go.microsoft.com/fwlink/p/?LinkId=723428)
--   [CellularSettings CSP](http://go.microsoft.com/fwlink/p/?LinkId=723427)
--   [CertificateStore CSP](http://go.microsoft.com/fwlink/p/?LinkId=723225)
--   [ClientCertificateInstall CSP](http://go.microsoft.com/fwlink/p/?LinkId=723226)
--   [CM\_CellularEntries CSP](http://go.microsoft.com/fwlink/p/?LinkId=723426)
--   [CM\_ProxyEntries CSP](http://go.microsoft.com/fwlink/p/?LinkId=723425)
--   [CMPolicy CSP](http://go.microsoft.com/fwlink/p/?LinkId=723424)
--   [Defender CSP](http://go.microsoft.com/fwlink/p/?LinkId=723227)
--   [DevDetail CSP](http://go.microsoft.com/fwlink/p/?LinkId=723228)
--   [DeviceInstanceService CSP](http://go.microsoft.com/fwlink/p/?LinkId=723275)
--   [DeviceLock CSP](http://go.microsoft.com/fwlink/p/?LinkId=723370)
--   [DeviceStatus CSP](http://go.microsoft.com/fwlink/p/?LinkId=723229)
--   [DevInfo CSP](http://go.microsoft.com/fwlink/p/?LinkId=723230)
--   [DiagnosticLog CSP](http://go.microsoft.com/fwlink/p/?LinkId=723231)
--   [DMAcc CSP](http://go.microsoft.com/fwlink/p/?LinkId=723232)
--   [DMClient CSP](http://go.microsoft.com/fwlink/p/?LinkId=723233)
--   [Email2 CSP](http://go.microsoft.com/fwlink/p/?LinkId=723234)
--   [EnterpriseAPN CSP](http://go.microsoft.com/fwlink/p/?LinkId=723235)
--   [EnterpriseAppManagement CSP](http://go.microsoft.com/fwlink/p/?LinkId=723237)
--   [EnterpriseAssignedAccess CSP](http://go.microsoft.com/fwlink/p/?LinkID=618601)
--   [EnterpriseDesktopAppManagement CSP](http://go.microsoft.com/fwlink/p/?LinkId=723236)
--   [EnterpriseExt CSP](http://go.microsoft.com/fwlink/p/?LinkId=723423)
--   [EnterpriseExtFileSystem CSP](http://go.microsoft.com/fwlink/p/?LinkID=703716)
--   [EnterpriseModernAppManagement CSP](http://go.microsoft.com/fwlink/p/?LinkId=723257)
--   [FileSystem CSP](http://go.microsoft.com/fwlink/p/?LinkId=723422)
--   [HealthAttestation CSP](http://go.microsoft.com/fwlink/p/?LinkId=723258)
--   [HotSpot CSP](http://go.microsoft.com/fwlink/p/?LinkId=723421)
--   [Maps CSP](http://go.microsoft.com/fwlink/p/?LinkId=723420)
--   [NAP CSP](http://go.microsoft.com/fwlink/p/?LinkId=723419)
--   [NAPDEF CSP](http://go.microsoft.com/fwlink/p/?LinkId=723371)
--   [NodeCache CSP]( http://go.microsoft.com/fwlink/p/?LinkId=723265)
--   [PassportForWork CSP](http://go.microsoft.com/fwlink/p/?LinkID=692070)
--   [Policy CSP](http://go.microsoft.com/fwlink/p/?LinkID=623244)
--   [PolicyManager CSP]( http://go.microsoft.com/fwlink/p/?LinkId=723418)
--   [Provisioning CSP](http://go.microsoft.com/fwlink/p/?LinkId=723266)
--   [Proxy CSP]( http://go.microsoft.com/fwlink/p/?LinkId=723372)
--   [PXLOGICAL CSP](http://go.microsoft.com/fwlink/p/?LinkId=723374)
--   [Registry CSP](http://go.microsoft.com/fwlink/p/?LinkId=723417)
--   [RemoteFind CSP](http://go.microsoft.com/fwlink/p/?LinkId=723267)
--   [RemoteWipe CSP](http://go.microsoft.com/fwlink/p/?LinkID=703714)
--   [Reporting CSP](http://go.microsoft.com/fwlink/p/?LinkId=723375)
--   [RootCATrustedCertificates CSP](http://go.microsoft.com/fwlink/p/?LinkId=723270)
--   [SecurityPolicy CSP](http://go.microsoft.com/fwlink/p/?LinkId=723376)
--   [Storage CSP](http://go.microsoft.com/fwlink/p/?LinkId=723377)
--   [SUPL CSP](http://go.microsoft.com/fwlink/p/?LinkId=723378)
--   [UnifiedWriteFilter CSP](http://go.microsoft.com/fwlink/p/?LinkId=723272)
--   [Update CSP](http://go.microsoft.com/fwlink/p/?LinkId=723271)
--   [VPN CSP](http://go.microsoft.com/fwlink/p/?LinkId=723416)
--   [VPNv2 CSP](http://go.microsoft.com/fwlink/p/?LinkID=617588)
--   [Wi-Fi CSP](http://go.microsoft.com/fwlink/p/?LinkID=71743)
--   [WindowsLicensing CSP](http://go.microsoft.com/fwlink/p/?LinkId=723274)
--   [WindowsSecurityAuditing CSP](http://go.microsoft.com/fwlink/p/?LinkId=723415)
+-   [ActiveSync CSP](https://go.microsoft.com/fwlink/p/?LinkId=723219)
+-   [Application CSP](https://go.microsoft.com/fwlink/p/?LinkId=723220)
+-   [AppLocker CSP](https://go.microsoft.com/fwlink/p/?LinkID=626609)
+-   [AssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=626608)
+-   [Bootstrap CSP](https://go.microsoft.com/fwlink/p/?LinkId=723224)
+-   [BrowserFavorite CSP](https://go.microsoft.com/fwlink/p/?LinkId=723428)
+-   [CellularSettings CSP](https://go.microsoft.com/fwlink/p/?LinkId=723427)
+-   [CertificateStore CSP](https://go.microsoft.com/fwlink/p/?LinkId=723225)
+-   [ClientCertificateInstall CSP](https://go.microsoft.com/fwlink/p/?LinkId=723226)
+-   [CM\_CellularEntries CSP](https://go.microsoft.com/fwlink/p/?LinkId=723426)
+-   [CM\_ProxyEntries CSP](https://go.microsoft.com/fwlink/p/?LinkId=723425)
+-   [CMPolicy CSP](https://go.microsoft.com/fwlink/p/?LinkId=723424)
+-   [Defender CSP](https://go.microsoft.com/fwlink/p/?LinkId=723227)
+-   [DevDetail CSP](https://go.microsoft.com/fwlink/p/?LinkId=723228)
+-   [DeviceInstanceService CSP](https://go.microsoft.com/fwlink/p/?LinkId=723275)
+-   [DeviceLock CSP](https://go.microsoft.com/fwlink/p/?LinkId=723370)
+-   [DeviceStatus CSP](https://go.microsoft.com/fwlink/p/?LinkId=723229)
+-   [DevInfo CSP](https://go.microsoft.com/fwlink/p/?LinkId=723230)
+-   [DiagnosticLog CSP](https://go.microsoft.com/fwlink/p/?LinkId=723231)
+-   [DMAcc CSP](https://go.microsoft.com/fwlink/p/?LinkId=723232)
+-   [DMClient CSP](https://go.microsoft.com/fwlink/p/?LinkId=723233)
+-   [Email2 CSP](https://go.microsoft.com/fwlink/p/?LinkId=723234)
+-   [EnterpriseAPN CSP](https://go.microsoft.com/fwlink/p/?LinkId=723235)
+-   [EnterpriseAppManagement CSP](https://go.microsoft.com/fwlink/p/?LinkId=723237)
+-   [EnterpriseAssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=618601)
+-   [EnterpriseDesktopAppManagement CSP](https://go.microsoft.com/fwlink/p/?LinkId=723236)
+-   [EnterpriseExt CSP](https://go.microsoft.com/fwlink/p/?LinkId=723423)
+-   [EnterpriseExtFileSystem CSP](https://go.microsoft.com/fwlink/p/?LinkID=703716)
+-   [EnterpriseModernAppManagement CSP](https://go.microsoft.com/fwlink/p/?LinkId=723257)
+-   [FileSystem CSP](https://go.microsoft.com/fwlink/p/?LinkId=723422)
+-   [HealthAttestation CSP](https://go.microsoft.com/fwlink/p/?LinkId=723258)
+-   [HotSpot CSP](https://go.microsoft.com/fwlink/p/?LinkId=723421)
+-   [Maps CSP](https://go.microsoft.com/fwlink/p/?LinkId=723420)
+-   [NAP CSP](https://go.microsoft.com/fwlink/p/?LinkId=723419)
+-   [NAPDEF CSP](https://go.microsoft.com/fwlink/p/?LinkId=723371)
+-   [NodeCache CSP]( https://go.microsoft.com/fwlink/p/?LinkId=723265)
+-   [PassportForWork CSP](https://go.microsoft.com/fwlink/p/?LinkID=692070)
+-   [Policy CSP](https://go.microsoft.com/fwlink/p/?LinkID=623244)
+-   [PolicyManager CSP]( https://go.microsoft.com/fwlink/p/?LinkId=723418)
+-   [Provisioning CSP](https://go.microsoft.com/fwlink/p/?LinkId=723266)
+-   [Proxy CSP]( https://go.microsoft.com/fwlink/p/?LinkId=723372)
+-   [PXLOGICAL CSP](https://go.microsoft.com/fwlink/p/?LinkId=723374)
+-   [Registry CSP](https://go.microsoft.com/fwlink/p/?LinkId=723417)
+-   [RemoteFind CSP](https://go.microsoft.com/fwlink/p/?LinkId=723267)
+-   [RemoteWipe CSP](https://go.microsoft.com/fwlink/p/?LinkID=703714)
+-   [Reporting CSP](https://go.microsoft.com/fwlink/p/?LinkId=723375)
+-   [RootCATrustedCertificates CSP](https://go.microsoft.com/fwlink/p/?LinkId=723270)
+-   [SecurityPolicy CSP](https://go.microsoft.com/fwlink/p/?LinkId=723376)
+-   [Storage CSP](https://go.microsoft.com/fwlink/p/?LinkId=723377)
+-   [SUPL CSP](https://go.microsoft.com/fwlink/p/?LinkId=723378)
+-   [UnifiedWriteFilter CSP](https://go.microsoft.com/fwlink/p/?LinkId=723272)
+-   [Update CSP](https://go.microsoft.com/fwlink/p/?LinkId=723271)
+-   [VPN CSP](https://go.microsoft.com/fwlink/p/?LinkId=723416)
+-   [VPNv2 CSP](https://go.microsoft.com/fwlink/p/?LinkID=617588)
+-   [Wi-Fi CSP](https://go.microsoft.com/fwlink/p/?LinkID=71743)
+-   [WindowsLicensing CSP](https://go.microsoft.com/fwlink/p/?LinkId=723274)
+-   [WindowsSecurityAuditing CSP](https://go.microsoft.com/fwlink/p/?LinkId=723415)
 
 ## Related topics
 
-[What's new in MDM enrollment and management in Windows 10, version 1607](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056(v=vs.85).aspx#whatsnew_1607)
+[What's new in MDM enrollment and management in Windows 10, version 1607](https://msdn.microsoft.com/library/windows/hardware/mt299056.aspx#whatsnew_1607)
 
 [Lock down Windows 10](lock-down-windows-10.md)
 

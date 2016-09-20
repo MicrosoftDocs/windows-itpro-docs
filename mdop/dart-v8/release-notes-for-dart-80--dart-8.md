@@ -19,14 +19,14 @@ Read these release notes thoroughly before you install Microsoft Diagnostics and
 
 These release notes contain information that is required to successfully install DaRT 8.0. The release notes also contain information that is not available in the product documentation. If there is a difference between these release notes and other DaRT documentation, the latest change should be considered authoritative. These release notes supersede the content that is included with this product.
 
-To get the DaRT software, see [How to Get MDOP](http://go.microsoft.com/fwlink/?LinkId=322049).
+To get the DaRT software, see [How to Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## About the product documentation
 
 
-For information about documentation for DaRT, see the [DaRT home page](http://go.microsoft.com/fwlink/?LinkID=252096) on Microsoft TechNet.
+For information about documentation for DaRT, see the [DaRT home page](https://go.microsoft.com/fwlink/?LinkID=252096) on Microsoft TechNet.
 
-To obtain a downloadable copy of DaRT documentation, see <http://go.microsoft.com/fwlink/?LinkID=267420> on the Microsoft Download Center.
+To obtain a downloadable copy of DaRT documentation, see <https://go.microsoft.com/fwlink/?LinkID=267420> on the Microsoft Download Center.
 
 ## Providing feedback
 
@@ -38,9 +38,9 @@ This email address is not a support channel, but your feedback will help us to p
 
  
 
-For the latest information about MDOP and additional learning resources, see the [MDOP Information Experience](http://go.microsoft.com/fwlink/p/?LinkId=236032) page.
+For the latest information about MDOP and additional learning resources, see the [MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032) page.
 
-For more information about new updates or to provide feedback, follow us on [Facebook](http://go.microsoft.com/fwlink/p/?LinkId=242445) or [Twitter](http://go.microsoft.com/fwlink/p/?LinkId=242447).
+For more information about new updates or to provide feedback, follow us on [Facebook](https://go.microsoft.com/fwlink/p/?LinkId=242445) or [Twitter](https://go.microsoft.com/fwlink/p/?LinkId=242447).
 
 ## Known issues with DaRT 8.0
 

@@ -195,5 +195,5 @@ You can fix this by clearing the TPM.
 - [Trusted Platform Module Services Group Policy Settings](trusted-platform-module-services-group-policy-settings.md)
 - [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx)
 - [Schema Extensions for Windows Server 2008 R2 to support AD DS backup of TPM information from Windows 8 clients](ad-ds-schema-extensions-to-support-tpm-backup.md)
-- [TPM WMI providers](http://go.microsoft.com/fwlink/p/?LinkId=93478)
+- [TPM WMI providers](https://go.microsoft.com/fwlink/p/?LinkId=93478)
 - [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](http://technet.microsoft.com/library/jj592683.aspx)

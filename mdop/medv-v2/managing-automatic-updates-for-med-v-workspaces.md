@@ -21,7 +21,7 @@ The MED-V workspace is a virtual machine that contains a separate operating syst
 The MED-V workspace wake-up policy guarantees that the MED-V virtual machine is made available for updates for the time that you specify in your MED-V configuration settings. This applies to both updates that are published from Microsoft through Windows Update and updates deployed and controlled by non-Microsoft solutions, such as antivirus applications.
 
 **Important**  
-The MED-V workspace wake-up policy is optimized for the Microsoft Update infrastructure. If you are using Microsoft System Center Configuration Manager to deploy non-Microsoft updates, we recommend that you also use the System Center Updates Publisher, which takes advantage of the same infrastructure as Microsoft Update and therefore benefits from the MED-V workspace wake-up policy. For more information, see [System Center Updates Publisher](http://go.microsoft.com/fwlink/?LinkId=200035) (http://go.microsoft.com/fwlink/?LinkId=200035).
+The MED-V workspace wake-up policy is optimized for the Microsoft Update infrastructure. If you are using Microsoft System Center Configuration Manager to deploy non-Microsoft updates, we recommend that you also use the System Center Updates Publisher, which takes advantage of the same infrastructure as Microsoft Update and therefore benefits from the MED-V workspace wake-up policy. For more information, see [System Center Updates Publisher](https://go.microsoft.com/fwlink/?LinkId=200035) (https://go.microsoft.com/fwlink/?LinkId=200035).
 
  
 

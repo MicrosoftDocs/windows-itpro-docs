@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Install digital certificates on Windows 10 Mobile
@@ -24,7 +25,7 @@ Certificates in Windows 10 Mobile are primarily used for the following purposes
 
 
 **Warning**  
-In Windows 10, Version 1607, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. [Learn more about this known issue in Version 1607](http://go.microsoft.com/fwlink/p/?LinkId=786764)
+In Windows 10, Version 1607, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. [Learn more about this known issue in Version 1607](https://go.microsoft.com/fwlink/p/?LinkId=786764)
 
 ## Install certificates using Microsoft Edge
 
@@ -37,7 +38,7 @@ The Windows 10 Mobile certificate installer supports .cer, .p7b, .pem, and .pfx
 ## Install certificates using mobile device management (MDM)
 
 Windows 10 Mobile supports root, CA, and client certificate to be configured via MDM. Using MDM, an administrator can directly add, delete, or query root and CA certificates, and configure the device to enroll a client certificate with a certificate enrollment server that supports Simple Certificate Enrollment Protocol (SCEP). SCEP enrolled client certificates are used by Wi-Fi, VPN, email, and browser for certificate-based client authentication. An MDM server can also query and delete SCEP enrolled client certificate (including user installed certificates), or trigger a new enrollment request before the current certificate is expired.
-> **Warning:**  Do not use SCEP for encryption certificates for S/MIME. You must use a PFX certificate profile to support S/MIME on Windows 10 Mobile. For instructions on creating a PFX certificate profile in Microsoft Intune, see [Enable access to company resources using certificate profiles with Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkID=718216).
+> **Warning:**  Do not use SCEP for encryption certificates for S/MIME. You must use a PFX certificate profile to support S/MIME on Windows 10 Mobile. For instructions on creating a PFX certificate profile in Microsoft Intune, see [Enable access to company resources using certificate profiles with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkID=718216).
  
 **Process of installing certificates using MDM**
 

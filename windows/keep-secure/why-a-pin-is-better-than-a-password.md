@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Why a PIN is better than a password
@@ -29,7 +30,7 @@ Even you can't use that PIN anywhere except on that specific device. If you want
 
 A password is transmitted to the server -- it can be intercepted in transmission or stolen from a server. A PIN is local to the device -- it isn't transmitted anywhere and it isn't stored on the server.
 When the PIN is created, it establishes a trusted relationship with the identity provider and creates an asymmetric key pair that is used for authentication. When you enter your PIN, it unlocks the authentication key and uses the key to sign the request that is sent to the authenticating server.
-> **Note:**  For details on how Hello uses asymetric key pairs for authentication, see [Microsoft Passport guide](http://go.microsoft.com/fwlink/p/?LinkId=691928).
+> **Note:**  For details on how Hello uses asymetric key pairs for authentication, see [Microsoft Passport guide](https://go.microsoft.com/fwlink/p/?LinkId=691928).
  
 ## PIN is backed by hardware
 
@@ -69,7 +70,7 @@ If you only had a biometric sign-in configured and, for any reason, were unable 
 
 ## Related topics
 
-[Manage identity verification using Microsoft Passport](manage-identity-verification-using-microsoft-passport.md)
+[Manage identity verification using Windows Hello for Business](manage-identity-verification-using-microsoft-passport.md)
 
 [Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md)
  

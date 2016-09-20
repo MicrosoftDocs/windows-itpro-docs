@@ -14,6 +14,8 @@ author: brianlic-msft
 **Applies to**
 -   Windows 10
 
+>Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
+
 Describes the best practices, location, values, policy management, and security considerations for the **Bypass traverse checking** security policy setting.
 
 ## Reference
@@ -78,7 +80,7 @@ The default configuration for the **Bypass traverse checking** setting is to all
 
 ### Countermeasure
 
-Organizations that are extremely concerned about security may want to remove the Everyone group, and perhaps the Users group, from the list of groups that have the **Bypass traverse checking** user right. Taking explicit control over traversal assignments can be an effective way to limit access to sensitive information. Access–based enumeration can also be used. If you use access–based enumeration, users cannot see any folder or file to which they do not have access. For more info about this feature, see [Access-based Enumeration](http://go.microsoft.com/fwlink/p/?LinkId=100745).
+Organizations that are extremely concerned about security may want to remove the Everyone group, and perhaps the Users group, from the list of groups that have the **Bypass traverse checking** user right. Taking explicit control over traversal assignments can be an effective way to limit access to sensitive information. Access–based enumeration can also be used. If you use access–based enumeration, users cannot see any folder or file to which they do not have access. For more info about this feature, see [Access-based Enumeration](https://go.microsoft.com/fwlink/p/?LinkId=100745).
 
 ### Potential impact
 

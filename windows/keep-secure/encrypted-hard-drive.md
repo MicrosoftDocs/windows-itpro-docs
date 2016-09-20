@@ -12,7 +12,8 @@ author: brianlic-msft
 # Encrypted Hard Drive
 
 **Applies to**
--   Windows 10
+- Windows 10
+- Windows Server 2016
 
 Encrypted Hard Drive uses the rapid encryption that is provided by BitLocker Drive Encryption to enhance data security and management.
 

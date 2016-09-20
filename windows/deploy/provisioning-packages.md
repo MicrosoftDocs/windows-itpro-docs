@@ -7,6 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: mobile
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Provisioning packages for Windows 10
@@ -46,7 +47,8 @@ Windows ICD in Windows 10, Version 1607, supports the following scenarios for IT
     * Mobile Iron (password-string based enrollment) 
     * Other MDMs (cert-based enrollment) 
 
-> **Note:** Windows ICD in Windows 10, Version 1607, also provides a wizard to create provisioning packages for school PCs. To learn more, see [Set up students' PCs to join domain](https://technet.microsoft.com/edu/windows/index).
+> [!NOTE]
+> Windows ICD in Windows 10, Version 1607, also provides a wizard to create provisioning packages for school PCs. To learn more, see [Set up students' PCs to join domain](https://technet.microsoft.com/edu/windows/index).
 
 ## Benefits of provisioning packages
 
@@ -88,30 +90,33 @@ The following table provides some examples of what can be configured using provi
 \* Using a provisioning package for auto-enrollment to System Center Configuration Manager or Configuration Manager/Intune hybrid is not supported. Use the Configuration Manager console to enroll devices.
  
 
-For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( http://go.microsoft.com/fwlink/p/?LinkId=619012).
+For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( https://go.microsoft.com/fwlink/p/?LinkId=619012).
 
 ## Creating a provisioning package
 
 
-With Windows 10, you can use the Windows Imaging and Configuration Designer (ICD) tool to create provisioning packages. To install Windows ICD and create provisioning packages, you must [install the Windows Assessment and Deployment Kit (ADK) for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=526740).
+With Windows 10, you can use the Windows Imaging and Configuration Designer (ICD) tool to create provisioning packages. To install Windows ICD and create provisioning packages, you must [install the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
 
-While running ADKsetup.exe for Windows 10, version 1607, select the following feature from the **Select the features you want to install** dialog box:
+When you run ADKsetup.exe for Windows 10, version 1607, select the following feature from the **Select the features you want to install** dialog box:
 
--   Configuration Designer
+-   **Configuration Designer**
 
-> **Note:** In previous versions of the Windows 10 ADK, you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features.
+![Choose Configuration Designer](images/adk-install.png)
 
-After you install Windows ICD, you can use it to create a provisioning package. For detailed instructions on how to create a provisioning package, see [Build and apply a provisioning package](http://go.microsoft.com/fwlink/p/?LinkID=629651).
+> [!NOTE]
+> In previous versions of the Windows 10 ADK, you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features.
+
+After you install Windows ICD, you can use it to create a provisioning package. For detailed instructions on how to create a provisioning package, see [Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkID=629651).
 
 ## Applying a provisioning package to a device
 
 
-Provisioning packages can be applied both during image deployment and during runtime. For information on how to apply a provisioning package to a Windows 10-based device, see [Build and apply a provisioning package](http://go.microsoft.com/fwlink/p/?LinkID=629651).
+Provisioning packages can be applied both during image deployment and during runtime. For information on how to apply a provisioning package to a Windows 10-based device, see [Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkID=629651).
 
 ## Learn more
 
 
-[Windows 10: Deployment](http://go.microsoft.com/fwlink/p/?LinkId=533708)
+[Windows 10: Deployment](https://go.microsoft.com/fwlink/p/?LinkId=533708)
 
 ## Related topics
 
@@ -122,7 +127,7 @@ Provisioning packages can be applied both during image deployment and during run
 - [Configure devices without MDM](../manage/configure-devices-without-mdm.md)
 - [Set up a device for anyone to use (kiosk mode)](../manage/set-up-a-device-for-anyone-to-use.md)
 - [Customize Windows 10 Start and taskbar with ICD and provisioning packages](../manage/customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-- [Set up student PCs to join domain](https://technet.microsoft.com/en-us/edu/windows/set-up-students-pcs-to-join-domain)
+- [Set up student PCs to join domain](https://technet.microsoft.com/edu/windows/set-up-students-pcs-to-join-domain)
 
 
 

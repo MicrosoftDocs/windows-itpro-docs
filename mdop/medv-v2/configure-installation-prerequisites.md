@@ -31,7 +31,7 @@ If a version of Virtual PC for Windows already exists on the host computer, you 
 
 **To install Windows Virtual PC**
 
-1.  Download [Windows Virtual PC](http://go.microsoft.com/fwlink/?LinkId=195918) from the Microsoft Download Center (http://go.microsoft.com/fwlink/?LinkId=195918).
+1.  Download [Windows Virtual PC](https://go.microsoft.com/fwlink/?LinkId=195918) from the Microsoft Download Center (https://go.microsoft.com/fwlink/?LinkId=195918).
 
 2.  Run the installation file on the host computer, and follow the steps in the wizard.
 
@@ -59,13 +59,13 @@ In addition to the update listed here, we recommend that you review all availabl
 
 1.  Download the required Windows Virtual PC update from the Microsoft Download Center.
 
-    [32-bit Update](http://go.microsoft.com/fwlink/?LinkId=195919) (http://go.microsoft.com/fwlink/?LinkId=195919).
+    [32-bit Update](https://go.microsoft.com/fwlink/?LinkId=195919) (https://go.microsoft.com/fwlink/?LinkId=195919).
 
-    [64-bit Update](http://go.microsoft.com/fwlink/?LinkId=195920) (http://go.microsoft.com/fwlink/?LinkId=195920).
+    [64-bit Update](https://go.microsoft.com/fwlink/?LinkId=195920) (https://go.microsoft.com/fwlink/?LinkId=195920).
 
 2.  Run the installation file on the host computer in elevated mode, and follow the steps in the wizard.
 
-    For more information about the hotfix package for Windows Virtual PC, see [article 977206](http://go.microsoft.com/fwlink/?LinkId=195921) (http://go.microsoft.com/fwlink/?LinkId=195921).
+    For more information about the hotfix package for Windows Virtual PC, see [article 977206](https://go.microsoft.com/fwlink/?LinkId=195921) (https://go.microsoft.com/fwlink/?LinkId=195921).
 
 ## <a href="" id="bkmk-antivirusbackupsoftwareconfiguration"></a>How to Configure Antivirus/Backup Software
 

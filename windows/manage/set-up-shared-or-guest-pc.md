@@ -1,11 +1,12 @@
 ---
 title: Set up a shared or guest PC with Windows 10 (Windows 10)
-description: tbd
+description: Windows 10, version 1607, introduces *shared PC mode*, which optimizes Windows 10 for shared use scenarios.
 keywords: ["shared pc mode"]
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Set up a shared or guest PC with Windows 10
@@ -15,9 +16,10 @@ author: jdeckerMS
 
 -   Windows 10
 
-Windows 10, version 1607, introduces *shared PC mode*, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise  and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Education, and Enterprise.
+Windows 10, version 1607, introduces *shared PC mode*, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise  and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Pro Education, Education, and Enterprise.
 
-> **Note:** If you're interested in using Windows 10 for shared PCs in a school, see [Use Set up School PCs app](https://technet.microsoft.com/en-us/edu/windows/use-set-up-school-pcs-app) which provides a simple way to configure PCs with shared PC mode plus additional settings specific for education.
+> [!NOTE]
+> If you're interested in using Windows 10 for shared PCs in a school, see [Use Set up School PCs app](https://technet.microsoft.com/edu/windows/use-set-up-school-pcs-app) which provides a simple way to configure PCs with shared PC mode plus additional settings specific for education.
 
 ##Shared PC mode concepts
 A Windows 10 PC in shared PC mode is designed to be management- and maintenance-free with high reliability. In shared PC mode, only one user can be signed in at a time. When the PC is locked, the currently signed in user can always be signed out at the lock screen. Users who sign-in are signed in as standard users, not admin users.
@@ -37,7 +39,11 @@ While shared PC mode does not configure Windows Update itself, it is strongly re
 - MDM: Set **Update/AllowAutoUpdate** to `4`. 
 - Provisioning: In Windows Imaging and Configuration Designer (ICD), set **Policies/Update/AllowAutoUpdate** to `4`. 
 
-[Learn more about the AllowAutoUpdate settings](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx#Update_AllowAutoUpdate)
+[Learn more about the AllowAutoUpdate settings](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_AllowAutoUpdate)
+
+###App behavior
+
+Apps can take advantage of shared PC mode by changing their app behavior to align with temporary use scenarios. For example, an app might only download content on demand on a device in shared PC mode, or might skip first run experiences. For information on how an app can query for shared PC mode, see [SharedModeSettings class](https://msdn.microsoft.com/en-us/library/windows/apps/windows.system.profile.sharedmodesettings.aspx).
 
 ###Customization
 Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These customizations are the options that you'll set either using MDM or a provisioning package as explained in [Configuring shared PC mode on Windows](#configuring-shared-pc-mode-on-windows). The options are listed in the following table.
@@ -59,16 +65,18 @@ Shared PC mode exposes a set of customizations to tailor the behavior to your re
 
 ##Configuring shared PC mode on Windows
 You can configure Windows to be in shared PC mode in a couple different ways:
-- Mobile device management (MDM): Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294.aspx). Your MDM policy can contain any of the options listed in the [Customization](#customization) section. The following image shows a Microsoft Intune policy with the shared PC options added as OMA-URI settings. [Learn more about Windows 10 policy settings in Microsoft Intune.](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+- Mobile device management (MDM): Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/mt723294.aspx). Your MDM policy can contain any of the options listed in the [Customization](#customization) section. The following image shows a Microsoft Intune policy with the shared PC options added as OMA-URI settings. [Learn more about Windows 10 policy settings in Microsoft Intune.](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)
+
 ![custom OMA-URI policy in Intune](images/oma-uri-shared-pc.png) 
-- A provisioning package created with the Windows Imaging and Configuration Designer (ICD): You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Imaging and Configuration Designer (ICD). Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt723294.aspx), exposed in ICD as SharedPC.
+
+- A provisioning package created with the Windows Imaging and Configuration Designer (ICD): You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Imaging and Configuration Designer (ICD). Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/mt723294.aspx), exposed in ICD as SharedPC.
 
 ![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
 
 
 ### Create a provisioning package for shared use
 
-Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that configures a device for shared PC mode. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that configures a device for shared PC mode. [Install the ADK and select **Configuration Designer**.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 
 1.  Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe). 
 
@@ -86,14 +94,15 @@ Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (
 8.  On the **Export** menu, select **Provisioning package**.
 9.  Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
 10. Set a value for **Package Version**.
-    > **Tip**  
-    You can make changes to existing packages and change the version number to update previously applied packages.
+    > [!TIP]
+    > You can make changes to existing packages and change the version number to update previously applied packages.
   
-11. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
+11. (*Optional*) In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
     -   **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
     -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
-       > **Important**  
-        We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently.
+    
+       > [!IMPORTANT]  
+       > We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently.
         
 12. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows ICD uses the project folder as the output location.
     Optionally, you can click **Browse** to change the default output location.
@@ -165,7 +174,8 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 
 ![add a package option](images/package.png)
 
-> **Note:** If you apply the setup file to a computer that has already been set up, existing accounts and data might be lost.
+> [!NOTE]
+> If you apply the setup file to a computer that has already been set up, existing accounts and data might be lost.
 
 ## Guidance for accounts on shared PCs
 
@@ -198,7 +208,8 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 ## Policies set by shared PC mode
 Shared PC mode sets local group policies to configure the device. Some of these are configurable using the shared pc mode options.
 
-> **Important**: It is not recommended to set additional policies on PCs configured for **Shared PC Mode**.	The shared PC mode has been optimized to be fast and reliable over time with minimal to no manual maintenance required.
+> [!IMPORTANT]
+> It is not recommended to set additional policies on PCs configured for **Shared PC Mode**.	The shared PC mode has been optimized to be fast and reliable over time with minimal to no manual maintenance required.
 
 <table border="1"> 
 
@@ -241,8 +252,8 @@ Shared PC mode sets local group policies to configure the device. Some of these 
 <tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>System</strong>><strong>User Profiles</strong></p></td></tr> 
 <tr> <td> <p>Turn off the advertising ID</p></td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
 <tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>Windows Components </strong></p></td></tr> 
-<tr> <td> <p>Do not show Windows Tips </p>*Only on Pro, Enterprise, and Education* </td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
-<tr> <td> <p>Turn off Microsoft consumer experiences </p>*Only on Pro, Enterprise, and Education* </td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
+<tr> <td> <p>Do not show Windows Tips </p>*Only on Pro, Enterprise, Pro Education, and Education* </td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
+<tr> <td> <p>Turn off Microsoft consumer experiences </p>*Only on Pro, Enterprise, Pro Education, and Education* </td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
 <tr> <td> <p>Microsoft Passport for Work</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
 <tr> <td> <p>Prevent the usage of OneDrive for file storage</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
 <tr> <td colspan="3"> <p><strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Biometrics</strong></p></td></tr> 

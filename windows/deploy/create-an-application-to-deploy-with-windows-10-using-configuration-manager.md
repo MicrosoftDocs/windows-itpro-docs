@@ -4,7 +4,9 @@ description: Microsoft System Center 2012 R2 Configuration Manager supports depl
 ms.assetid: 2dfb2f39-1597-4999-b4ec-b063e8a8c90c
 keywords: deployment, task sequence, custom, customize
 ms.prod: w10
+localizationpriority: high
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
 ---
@@ -20,15 +22,13 @@ Microsoft System Center 2012 R2 Configuration Manager supports deploying applica
 
 For the purposes of this topic, we will use CM01, a machine running Windows Server 2012 R2 Standard that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
-**Note**  
-Even though the new application model is fully supported to deploy via the task sequence, the most reliable way to deploy software via the task sequence is still the legacy packages, especially if you deploy many applications.
-
- 
+>[!NOTE]  
+>Even though the new application model is fully supported to deploy via the task sequence, the most reliable way to deploy software via the task sequence is still the legacy packages, especially if you deploy many applications.
 
 ## Example: Create the Adobe Reader XI application
 
 
-The steps below show you how to create the Adobe Reader XI application. This section assumes that you have downloaded the MSI version of Adobe Reader XI to the C:\\Setup\\Adobe Reader XI folder on CM01.
+The following steps show you how to create the Adobe Reader XI application. This section assumes that you have downloaded the MSI version of Adobe Reader XI to the C:\\Setup\\Adobe Reader XI folder on CM01.
 
 1.  On CM01, using File Explorer, copy the **C:\\Setup\\Adobe Reader XI** folder to the **E:\\Sources\\Software\\Adobe** folder.
 
@@ -40,17 +40,17 @@ The steps below show you how to create the Adobe Reader XI application. This sec
 
 5.  In the Create Application Wizard, on the **General** page, use the following settings:
 
-    1.  Automatically detect information about this application from installation files
+    * Automatically detect information about this application from installation files
 
-    2.  Type: Windows Installer (\*.msi file)
+    * Type: Windows Installer (\*.msi file)
 
-    3.  Location: \\\\CM01\\Sources$\\Software\\Adobe\\Adobe Reader XI
+    * Location: \\\\CM01\\Sources$\\Software\\Adobe\\Adobe Reader XI
 
-    4.  \\AdbeRdr11000\_en\_US.msi
+    * \\AdbeRdr11000\_en\_US.msi
 
-    ![figure 19](images/mdt-06-fig20.png)
+    ![The Create Application Wizard](images/mdt-06-fig20.png "The Create Application Wizard")
 
-    Figure 19. The Create Application Wizard.
+    *Figure 19. The Create Application Wizard*
 
 6.  Click **Next**, and wait while Configuration Manager parses the MSI file.
 
@@ -58,14 +58,12 @@ The steps below show you how to create the Adobe Reader XI application. This sec
 
 8.  On the **General Information** page, name the application Adobe Reader XI - OSD Install, click **Next** twice, and then click **Close**.
 
-    **Note**  
-    Since it is not possible to reference an application deployment type in the task sequence, you should have a single deployment type for applications deployed by the task sequence. If you are deploying applications via both the task sequence and normal application deployment, and you have multiple deployment types, you should have two applications of the same software. In this section, you add the "OSD Install" suffix to applications that are deployed via the task sequence. If using packages, you can still reference both package and program in the task sequence.
-
-     
-
-    ![figure 20](images/mdt-06-fig21.png)
-
-    Figure 20. Add the "OSD Install" suffix to the application name.
+    >[!NOTE]
+    >Because it is not possible to reference an application deployment type in the task sequence, you should have a single deployment type for applications deployed by the task sequence. If you are deploying applications via both the task sequence and normal application deployment, and you have multiple deployment types, you should have two applications of the same software. In this section, you add the "OSD Install" suffix to applications that are deployed via the task sequence. If using packages, you can still reference both package and program in the task sequence.
+  
+    ![Add the OSD Install suffix to the application name](images/mdt-06-fig21.png "Add the OSD Install suffix to the application name")
+  
+    *Figure 20. Add the "OSD Install" suffix to the application name*
 
 9.  In the **Applications** node, select the Adobe Reader XI - OSD Install application, and click **Properties** on the ribbon bar.
 
