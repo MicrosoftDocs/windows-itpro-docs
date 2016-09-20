@@ -146,7 +146,7 @@ To create a self-signed certificate, you can either use the New-SelfSignedCertif
 Windows PowerShell example:
 
 ```syntax
-New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -Subject "CN=BitLocker Network Unlock certificate" -Provider "Microsoft Software Key Storage Provider" -KeyUsage KeyEncipherment -KeyUsageProperty Decrypt -KeyLength 2048 -HashAlgorithm sha512 -TextExtension @("1.3.6.1.4.1.311.21.10={text}OID=1.3.6.1.4.1.311.67.1.1","2.5.29.37={text}1.3.6.1.4.1.311.67.1.1")
+New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -Subject "CN=BitLocker Network Unlock certificate" -Provider "Microsoft Software Key Storage Provider" -KeyUsage KeyEncipherment -KeyUsageProperty Decrypt,Sign -KeyLength 2048 -HashAlgorithm sha512 -TextExtension @("1.3.6.1.4.1.311.21.10={text}OID=1.3.6.1.4.1.311.67.1.1","2.5.29.37={text}1.3.6.1.4.1.311.67.1.1")
 ```
 
 Certreq example:
@@ -162,7 +162,7 @@ Certreq example:
     Exportable=true
     RequestType=Cert
     KeyUsage="CERT_KEY_ENCIPHERMENT_KEY_USAGE"
-    KeyUsageProperty="NCRYPT_ALLOW_DECRYPT_FLAG"
+    KeyUsageProperty="NCRYPT_ALLOW_DECRYPT_FLAG | NCRYPT_ALLOW_SIGNING_FLAG"
     KeyLength=2048
     SMIME=FALSE
     HashAlgorithm=sha512
@@ -192,7 +192,7 @@ With the certificate and key created, deploy them to the infrastructure to prope
 3.  In the **File to Import** dialog, choose the .pfx file created previously.
 4.  Enter the password used to create the .pfx and complete the wizard.
 
-### Step Six: Configure Group Policy settings for Network Unlock
+### <a href="" id="bkmk-stepsix"></a>Step Six: Configure Group Policy settings for Network Unlock
 
 With certificate and key deployed to the WDS server for Network Unlock, the final step is to use Group Policy settings to deploy the public key certificate to computers that you want to be able to unlock using the Network Unlock key. Group Policy settings for BitLocker can be found under **\\Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption** using the Local Group Policy Editor or the Microsoft Management Console.
 
@@ -346,7 +346,7 @@ The following steps can be used to configure Network Unlock on these older syste
 3.  [Step Three: Install the Network Unlock feature](#bkmk-stepthree)
 4.  [Step Four: Create the Network Unlock certificate](#bkmk-stepfour)
 5.  [Step Five: Deploy the private key and certificate to the WDS server](#bkmk-stepfive)
-6.  **Step Six: Configure registry settings for Network Unlock**
+6.  [Step Six: Configure registry settings for Network Unlock](#bkmk-stepsix)
 
     Apply the registry settings by running the following certutil script on each computer running any of the client operating systems designated in the **Applies To** list at the beginning of this topic.
         certutil -f -grouppolicy -addstore FVE_NKP BitLocker-NetworkUnlock.cer
