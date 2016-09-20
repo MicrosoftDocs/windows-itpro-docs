@@ -14,7 +14,9 @@ localizationpriority: medium
 # Prepare your environment for Microsoft Surface Hub
 
 
-This section contains an overview of the steps required to prepare your environment so that you can use all of the features of Microsoft Surface Hub. See [Intro to Surface Hub](intro-to-surface-hub.md) for a description of how the device and its features interact with your IT environment.
+This section contains an overview of setup dependencies and the setup process.  
+
+See [Intro to Surface Hub](intro-to-surface-hub.md) for a description of how the device and its features interact with your IT environment. 
 
 ## Surface Hub setup dependencies
 
@@ -76,7 +78,8 @@ Review these dependencies to make sure Surface Hub features will work in your en
 </tbody>
 </table>
 
-## Setup process
+## Prep for Surface Hub set up
+Review the info in this section to help you prepare your environment and gather information needed to set up your Surface Hub.  
 
 ### Work with other admins
 
@@ -112,9 +115,7 @@ There are a few more item to consider before you start the [first-run program](f
 
 **Create provisioning packages** (optional) - Your Surface Hub may require certificates for ActiveSync, Skype for Business, network usage, or other authentication. To install certificates, you can either create a provisioning package (in order to install at first run, or after first run in Settings), or deploy them through a mobile device management (MDM) solution (after first run only). 
 
-To install certificates using provisioning packages, see [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md). To install them using MDM, see the documentation for your MDM provider.
-
-Currently, Surface Hub can use provisioning packages only to install certificates and to install Universal Windows Platform (UWP) apps. See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md) for details.You can also use provisioning to sideload apps that don't come from the Windows Store or Windows Store for Business.
+Currently, Surface Hub can use provisioning packages only to install certificates and to install Universal Windows Platform (UWP) apps. See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md) for details.  To install them using MDM, see the documentation for your MDM provider. You can also use provisioning to sideload apps that don't come from the Windows Store or Windows Store for Business.
 
 **Manage admin groups** - Every Surface Hub can be configured individually by opening the Settings app on the device. To prevent people who are not administrators from changing settings, the Settings app requires local administrator credentials to open the app and change settings. See [Admin group management](admin-group-management-for-surface-hub.md) for details on how admin groups are set up and managed.
 
