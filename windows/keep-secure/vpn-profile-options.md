@@ -16,7 +16,10 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Most of the VPN settings in Windows 10 can be configured in VPN profiles using Microsoft Intune or System Center Configuration Manager. All VPN settings in Windows 10 can be configued using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/mt755930.aspx) 
+Most of the VPN settings in Windows 10 can be configured in VPN profiles using Microsoft Intune or System Center Configuration Manager. All VPN settings in Windows 10 can be configued using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) 
+
+>[!NOTE]
+>If you're not familiar with CSPs, read [Introduction to configuration service providers (CSPs)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers) first.
 
 The following table lists the VPN settings and whether the setting can only be configured using **ProfileXML**.
 
@@ -37,6 +40,104 @@ The following table lists the VPN settings and whether the setting can only be c
 | LockDown | no |
 | Windows Information Protection (WIP) | no |
 | Traffic filters | yes |
+
+The sections in this topic provide XML examples for the VPN profile settings in this guide. You can get additional examples in the [ProfileXML XSD](https://msdn.microsoft.com/library/windows/hardware/mt755930.aspx) topic.
+
+
+
+## Connection type
+
+**Example:** set connection type to **Automatic**
+
+```
+NativeProtocolType
+    <!-- Configure VPN Protocol Type (L2tp, Pptp, Ikev2) -->
+      <Add>
+        <CmdID>10002</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/NativeProtocolType</LocURI>
+          </Target>
+          <Data>Automatic</Data>
+        </Item>
+      </Add>
+```
+
+**Example:** set connection type for a Universal Windows Platform (UWP) VPN plug-in
+
+```
+ <!-- Configure VPN Plugin AppX Package ID (ThirdPartyProfileInfo=) -->
+      <Add>
+        <CmdID>10002</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/PluginProfile/PluginPackageFamilyName</LocURI>
+          </Target>
+          <Data>TestVpnPluginApp-SL_8wekyb3d8bbwe</Data>
+        </Item>
+      </Add>
+```
+
+**Example:** add custom configuration for UWP VPN plug-in
+
+```
+<!-- Configure Microsoft's Custom XML (ThirdPartyProfileInfo=) -->
+      <Add>
+        <CmdID>10003</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/PluginProfile/CustomConfiguration</LocURI>
+          </Target>
+          <Data>&lt;pluginschema&gt;&lt;ipAddress&gt;auto&lt;/ipAddress&gt;&lt;port&gt;443&lt;/port&gt;&lt;networksettings&gt;&lt;routes&gt;&lt;includev4&gt;&lt;route&gt;&lt;address&gt;172.10.10.0&lt;/address&gt;&lt;prefix&gt;24&lt;/prefix&gt;&lt;/route&gt;&lt;/includev4&gt;&lt;/routes&gt;&lt;namespaces&gt;&lt;namespace&gt;&lt;space&gt;.vpnbackend.com&lt;/space&gt;&lt;dnsservers&gt;&lt;server&gt;172.10.10.11&lt;/server&gt;&lt;/dnsservers&gt;&lt;/namespace&gt;&lt;/namespaces&gt;&lt;/networksettings&gt;&lt;/pluginschema&gt;</Data>
+        </Item>
+      </Add>
+```
+
+## Split-tunnel routing
+
+
+## Forced-tunnel routing
+
+
+## EAP authentication
+
+
+## Conditional access
+
+
+## NRPT name resolution
+
+
+## DNS suffix name resolution
+
+
+## Persistent name resolution
+
+
+## App trigger
+
+
+## Name trigger
+
+
+## Always On
+
+
+## Trusted network detection
+
+
+## LockDown
+
+
+## Windows Information Protection
+
+
+## Traffic filters
+
+
+
+
+
 
 For more information about ProfileXML including sample profiles (both native and UWP VPN plugin):    
 OMA-DM Uri: /Vendor/MSFT/VPNv2/[Profile Name]/ProfileXML
