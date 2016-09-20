@@ -39,7 +39,7 @@ This table explains the main steps and configuration decisions when you create a
 
 ## Detailed configuration steps 
 
-We recommend setting up your device accounts using remote PowerShell. There are PowerShell scripts available to help create and validate device accounts For more information on PowerShell scripts and instructions, see Appendix [A: PowerShell](appendix-a-powershell-scripts-for-surface-hub.md). 
+We recommend setting up your device accounts using remote PowerShell. There are PowerShell scripts available to help create and validate device accounts For more information on PowerShell scripts and instructions, see [Appendix A: PowerShell](appendix-a-powershell-scripts-for-surface-hub.md). 
 
 For detailed steps using PowerShell to provision a device account, choose an option from the table, based on your organization deployment. 
 
@@ -49,7 +49,8 @@ For detailed steps using PowerShell to provision a device account, choose an opt
 | [On-premises deployment](on-premises-deployment-surface-hub-device-accounts.md) | Your organization has servers that it controls and uses to host Active Directory, Exchange, and Skype for Business (or Lync). |
 | [Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md) | Your organization has a mix of services, with some hosted on-premises and some hosted online through Office 365. |
 
-If you prefer to use a graphical user interface, some steps can be done using UI instead of PowerShell. For more information, see [Creating a device account using UI](create-a-device-account-using-office-365.md).
+If you prefer to use a graphical user interface, some steps can be done using UI instead of PowerShell. 
+For more information, see [Creating a device account using UI](create-a-device-account-using-office-365.md).
 
 
 
