@@ -12,6 +12,7 @@
 ## [Surface Data Eraser](microsoft-surface-data-eraser.md)
 ## [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)
 ### [Step by step: Surface Deployment Accelerator](step-by-step-surface-deployment-accelerator.md)
+### [Using the Surface Deployment Accelerator deployment share](using-the-sda-deployment-share.md)
 ## [Surface Diagnostic Toolkit](surface-diagnostic-toolkit.md)
 ## [Surface Dock Updater](surface-dock-updater.md)
 ## [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
