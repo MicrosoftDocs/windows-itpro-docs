@@ -24,13 +24,13 @@ You can apply a provisioning package using a USB during setup, or through the **
 
 -   Simple to apply.
 
-[Learn more about the benefits and uses of provisioning packages.](https://technet.microsoft.com/en-us/itpro/windows/whats-new/new-provisioning-packages)
+[Learn more about the benefits and uses of provisioning packages.](https://technet.microsoft.com/itpro/windows/whats-new/new-provisioning-packages)
 
 ## Requirements 
 
 To create and apply a provisioning package to a Surface Hub, you'll need the following:
 
--   Access to the **Settings** app on Surface Hub (using admin credentials which were configured at initial setup of the Surface Hub) (is this accurate?).
+-   Access to the **Settings** app on Surface Hub (using admin credentials which were configured at initial setup of the Surface Hub).
 -   Windows Imaging and Configuration Designer (ICD), which is installed as a part of the Windows 10 Assessment and Deployment Kit (ADK).
 -   A PC running Windows 10.
 -   USB flash drive.
@@ -40,10 +40,10 @@ You'll create the provisioning package on a PC runing Windows 10, save the packa
 ## Supported items for Surface Hub provisioning packages
 
 Currently, you can add these items to provisioning packages for Surface Hub:
-- **Certificates** - (why, need info here)
-- **Policies** - Surface Hub supports a subset of the policies in [Policy configuration service provider](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx). Some of those policies can be configured with ICD.
-- **Universal apps** - You can add a universal app to your provisioning package. This can be an offline-licensed app from Windows Store for Business, or an app created by an in-house dev. (Are offline-licensed apps available outside of WSFB?)
-- **Settings** - Surface Hub supports settings in the [WindowsTeam configuration service provider](https://msdn.microsoft.com/en-us/library/windows/hardware/mt733245(v=vs.85).aspx). Some of these settings can be configured with ICD. 
+- **Certificates** - You can add certificates, if needed, to support Skype for Business.
+- **Policies** - Surface Hub supports a subset of the policies in [Policy configuration service provider](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). Some of those policies can be configured with ICD.
+- **Universal apps** - You can add a universal app to your provisioning package. This can be an offline-licensed app from Windows Store for Business, or an app created by an in-house dev.
+- **Settings** - Surface Hub supports settings in the [WindowsTeam configuration service provider](https://msdn.microsoft.com/library/windows/hardware/mt733245.aspx). Some of these settings can be configured with ICD. 
 
 ## Create the provisioning package
 
@@ -59,9 +59,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 4. Select **Common to Windows 10 team edition**, click **Next**, and then click **Finish**.
 
-5. In the project, under **Available customizations**, select **Common Team edition settings**. 
-
-Currently, you can add these items certificate, a policy, a universal app, or a setting to your provisioning package for Surface Hub. 
+5. In the project, under **Available customizations**, select **Common Team edition settings**.  
 
 ### Add a certificate to your package
 You may use provisioning packages to install certificates that will allow the device to authenticate to Microsoft Exchange or Skype for Business, or to sideload apps that don't come from the Windows Store (for example, your own in-house apps).
@@ -81,7 +79,7 @@ You may use provisioning packages to install certificates that will allow the de
 5. For **KeyLocation**, select **Software only**.
 
 ### Add a policy to your package
-Surface Hub supports a subset of the policies in [Policy configuration service provider](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962(v=vs.85).aspx). Some of those policies can be configured with ICD. You'll find them under **Available customizations > Runtime settings > Policies**.
+Surface Hub supports a subset of the policies in [Policy configuration service provider](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). Some of those policies can be configured with ICD. You'll find them under **Available customizations > Runtime settings > Policies**.
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **Policies**.
 
@@ -89,9 +87,8 @@ Surface Hub supports a subset of the policies in [Policy configuration service p
 
 3. Select and set the policy you want to add to your provisioning package.
 
-
 ### Add a universal app to your package
-Before adding a universal app to a provisioning package, you need app package name, the app package (either an .appx, or .appxbundle), dependency files, and the app license. If you acquire your universal app from the Windows Store for Business, you can download these items when you acquire the app. For more information, see [Distribute offline apps](https://technet.microsoft.com/en-us/itpro/windows/manage/distribute-offline-apps).
+Before adding a universal app to a provisioning package, you need app package name, the app package (either an .appx, or .appxbundle), dependency files, and the app license. If you acquire your universal app from the Windows Store for Business, you can download these items when you acquire the app. For more information, see [Distribute offline apps](https://technet.microsoft.com/itpro/windows/manage/distribute-offline-apps).
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **UniversalAppInstall**. 
 
@@ -105,7 +102,7 @@ Before adding a universal app to a provisioning package, you need app package na
 
 ### Add other settings to your package 
 
-You can add some [WindowsTeam CSP settings](https://msdn.microsoft.com/en-us/library/windows/hardware/mt733245(v=vs.85).aspx) to your provisioning package. 
+You can add some [WindowsTeam CSP settings](https://msdn.microsoft.com/library/windows/hardware/mt733245.aspx) to your provisioning package. 
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **WindowsTeamSettings**.
 
@@ -113,7 +110,7 @@ You can add some [WindowsTeam CSP settings](https://msdn.microsoft.com/en-us/lib
 
 3. Select and set the setting you want to add to your provisioning package. 
 
-### Build your package
+## Build your package
 
 1. When you are done configuring the provisioning package, on the **File** menu, click **Save**.
 
