@@ -30,6 +30,7 @@ The following table lists the VPN settings and whether the setting can only be c
 | Routing: forced-tunnel | yes |
 | Authentication (EAP) | yes, if connection type is built-in |
 | Conditional access | yes |
+| Proxy settings | yes, by PAC/WPAD file or server and port |
 | Name resolution: NRPT | yes |
 | Name resolution: DNS suffix | no |
 | Name resolution: persistent | no |
@@ -95,53 +96,160 @@ NativeProtocolType
 
 ## Split-tunnel routing
 
+**Example:** route list and exclusion route
 
-## Forced-tunnel routing
+```
+     <Add>
+        <CmdID>10008</CmdID>
+        <Item>
+          <Target>
+           <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/Address</LocURI>
+          </Target>
+          <Data>192.168.0.0</Data>
+        </Item>
+      </Add>
+      <Add>
+        <CmdID>10009</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/PrefixSize</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">int</Format>
+          </Meta>
+          <Data>24</Data>
+        </Item>
+      </Add>
+      <Add>
+        <CmdID>10010</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/ExclusionRoute</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">bool</Format>
+          </Meta>
+          <Data>true</Data>
+        </Item>
+      </Add>
+```
+
+[!NOTE]
+>Forced-tunnel routing is used if no routes are specified.
 
 
 ## EAP authentication
 
+You can only configure EAP-based authentication if you select a built-in connection type (IKEv2, L2TP, PPTP, or automatic). See [EAP configuration](https://msdn.microsoft.com/library/windows/hardware/mt168513.aspx) for a step-by-step guide for creating an Extensible Authentication Protocol (EAP) configuration XML for the VPN profile.
+
 
 ## Conditional access
 
+**Example:** device compliance for conditional access
+
+```
+<Add>
+        <CmdID>10011</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DeviceCompliance/SSO/Enabled</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">bool</Format>
+          </Meta>
+          <Data>true</Data>
+        </Item>
+      </Add>
+<Add>
+        <CmdID>10011</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DeviceCompliance/SSO/IssuerHash</LocURI>
+          </Target>
+          <Data>ffffffffffffffffffffffffffffffffffffffff;ffffffffffffffffffffffffffffffffffffffee</Data>
+        </Item>
+      </Add>
+<Add>
+        <CmdID>10011</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DeviceCompliance/SSO/EKU</LocURI>
+          </Target>
+          <Data>1.3.6.1.5.5.7.3.2</Data>
+        </Item>
+      </Add>
+
+```
+
+## Proxy settings
+
+**Example:** domain name rule for traffic through proxy server
+
+```
+ <Add>
+        <CmdID>10016</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/5/DomainName</LocURI>  
+          </Target>
+          <Data>.</Data>
+        </Item>
+      </Add>
+      <Add>
+        <CmdID>10017</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/5/WebProxyServers</LocURI>  
+          </Target>
+          <Data>192.168.0.11</Data>
+        </Item>
+      </Add>
+      ```
 
 ## NRPT name resolution
 
+**Example:** 
 
 ## DNS suffix name resolution
 
+**Example:**
 
 ## Persistent name resolution
 
+**Example:**
 
 ## App trigger
 
+**Example:**
 
 ## Name trigger
 
+**Example:**
 
 ## Always On
 
+**Example:**
 
 ## Trusted network detection
 
+**Example:**
 
 ## LockDown
 
+**Example:**
 
 ## Windows Information Protection
 
+**Example:**
 
 ## Traffic filters
 
+**Example:**
 
 
 
 
 
-For more information about ProfileXML including sample profiles (both native and UWP VPN plugin):    
-OMA-DM Uri: /Vendor/MSFT/VPNv2/[Profile Name]/ProfileXML
-The below is a sample Native VPN profile (found in the link above). This blob would fall under the ProfileXML node. Profiles can be created for UWP apps as well. An example can be found in the link above as well.
  
 
 ## Learn more

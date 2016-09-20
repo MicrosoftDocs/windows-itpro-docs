@@ -40,10 +40,10 @@ Windows Information Protection provides capabilities allowing the separation and
 
 The [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) **EdpModeId** node allows a Windows 10 VPN client to integrate with WIP, extending its functionality to remote devices. Use case scenarios for WIP include:
 
-- Core Functionality: File encryption and file access blocking
-- UX Policy Enforcement: Restricting copy/paste, drag/drop, and sharing operations
-- WIP Network Policy Enforcement: Protecting intranet resources over the corporate network and VPN
-- Network Policy Enforcement: Protecting SMB and Internet cloud resources over the corporate network and VPN
+- Core functionality: File encryption and file access blocking
+- UX policy enforcement: Restricting copy/paste, drag/drop, and sharing operations
+- WIP network policy enforcement: Protecting intranet resources over the corporate network and VPN
+- Network policy enforcement: Protecting SMB and Internet cloud resources over the corporate network and VPN
 
 The value of the **EdpModeId** is an Enterprise ID. The networking stack will look for this ID in the app token to determine whether VPN should be triggered for that particular app. 
 
