@@ -47,18 +47,18 @@ Description here.
     Stop-Process -Name Explorer
     ```
 
-## Create a deployment share
+## Create a deployment share and reference image
 
 1. In [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md) the Windows 10 Enterprise .iso file was saved to the c:\VHD directory as **c:\VHD\w10-enterprise.iso**. The first step in creating a deployment share is to mount this file on SRV1.  To mount the Windows 10 Enterprise DVD on SRV1, open an elevated Windows PowerShell prompt on the Hyper-V host computer and type the following command:
 
     ```
     Set-VMDvdDrive -VMName SRV1 -Path c:\VHD\w10-enterprise.iso
     ```
-2. Connect to SRV1 and verify that the Windows Enterprise installation DVD is mounted as driver letter D.
+2. Connect to SRV1 and verify that the Windows Enterprise installation DVD is mounted as drive letter D.
 
-3. The Windows 10 Enterprise installation files will be used to create a deployment share  on SRV1 using the MDT deployment workbench. To open the deployment workbench, click **Start**, type **deployment**, and then click **Deployment Workbench**.
+3. The Windows 10 Enterprise installation files will be used to create a deployment share on SRV1 using the MDT deployment workbench. To open the deployment workbench, click **Start**, type **deployment**, and then click **Deployment Workbench**.
 
-4. In the Deployment Workbench console, right-click Deployment Shares and select New Deployment Share.
+4. In the Deployment Workbench console, right-click **Deployment Shares** and select **New Deployment Share**.
 
 5. Use the following settings for the New Deployment Share Wizard:
     - Deployment share path: **C:\MDTBuildLab**<BR>
