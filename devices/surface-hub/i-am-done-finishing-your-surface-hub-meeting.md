@@ -11,12 +11,12 @@ localizationpriority: medium
 ---
 
 # End a Surface Hub meeting with I'm Done
-Surface Hub is a collaboration device designed to be used simultaneously and sequentially by multiple people. At the end of a Surface Hub meeting, one of the attendees can tap or click **I'm Done** to end the meeting. Tapping **I'm Done** tells Surface Hub to clean up info from the current meeting, so that it will be ready for the next meeting. When a meeting attendee taps **I'm Done**, Surface Hub cleans up, or resets, these states. 
+Surface Hub is a collaboration device designed to be used in meeting spaces by different groups of people. At the end of a meeting, users can tap **I'm Done** to clean up any sensitive data and prepare the device for the next meeting. Surface Hub will clean up, or reset, the following states:
 - Applications
 - Operating system
 - User interface
 
-This topic explains what **I'm Done** resets for each of these states. 
+This topic explains what **I'm Done** resets for each of these states.
 
 ## Applications
 When you start apps on Surface Hub, they are stored in memory and data is stored at the application level. Data is available to all users during that session (or meeting) until date is removed or overwritten. When **I'm done** is selected, Surface Hub application state is cleared out by closing applications, deleting browser history, resetting applications, and removing Skype logs.
@@ -35,6 +35,7 @@ Skype does not store personally-identifiable information on Surface Hub. Informa
 
 ## Operating System
 The operating system hosts a variety of information about the state of the sessions that needs to be cleared after each Surface Hub meeting. 
+
 ### File System
 Meeting attendees have access to a limited set of directories on the Surface Hub. When **I'm Done** is selected, Surface Hub clears these directories:<br>
 - Music
@@ -69,7 +70,7 @@ User interface (UI) settings are returned to their default values when **I'm Don
 Accessibility features and apps are returned to default settings when **I'm Done** is selected.
 - Filter keys
 - High contrast
-- Stickey keys
+- Sticky keys
 - Toggle keys
 - Mouse keys
 - Magnifier
@@ -80,10 +81,10 @@ The clipboard is cleared to remove data that was copied to the clipboard during 
 
 ## Frequently asked questions
 **What happens if I forget to tap I'm Done at the end of a meeting, and someone else uses the Surface Hub later?**<br>
-When you don't tap **I"m Done** at the end of your meeting, Surface Hub enters a Resume state. This is similar to leaving content on a whiteboard in a meeting room, and forgetting to erase the whiteboard. When you return to the meeting room, that content will still be on the whiteboard unless someone erarses it. With Surface Hub, meeting content is still available if an attendee doesn't tap **I'm Done**. However, Surface Hub removes all meeting data during daily maintenance. Any meeting that wasn't ended with **I'm Done** will be cleaned up during maintenance. 
+Surface Hub only cleans up meeting content when users tap **I"m Done**. If you leave the meeting without tapping **I'm Done**, the device will return to the welcome screen after some time. From the welcome screen, you have the option to resume the previous session or start a new one. If you're using the Surface Hub for an all-day meeting, this allows you to resume your work after a break. Or if you forget to tap **I"m Done** at the end of a meeting, the next group of users can easily start a new session.
 
 **Are documents recoverable?**<br> 
-Removing files from the hard drive when **I'm Done** is selected is just like any other file deletion from a hard disk drive. 3rd-party software might be able to recover data from the hard disk drive, but file recovery is not a supported feature on Surface Hub. 
+Removing files from the hard drive when **I'm Done** is selected is just like any other file deletion from a hard disk drive. Third-party software might be able to recover data from the hard disk drive, but file recovery is not a supported feature on Surface Hub. 
 
 **Do the clean-up actions from I'm Done comply with the US Department of Defense clearing and sanitizing standard: DoD 5220.22-M?**<br>
 No. Currently, the clean-up actions from **I'm Done** do not comply with this standard.  
