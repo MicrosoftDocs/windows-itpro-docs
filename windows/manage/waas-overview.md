@@ -95,17 +95,6 @@ When Microsoft officially releases a feature update for Windows 10, that update 
 
 Organizations typically prefer to have a testing cycle before broadly deploying new features to business users. For Windows 10, most pilot testing will be done using the CB servicing branch. In contrast, the CBB servicing branch is typically used for broad deployment. Windows 10 clients in the CBB servicing branch receive the same build of Windows 10 as those in the CB servicing branch, just at a later time. CB releases are transitioned to CBB after about 4 months, indicating that Microsoft, independent software vendors (ISVs), partners, and customers believe that the release is ready for broad deployment. Therefore, CB and CBB have an inherent “staging” effect. Both of these branches have a purpose in the overall deployment process for an enterprise, providing another layer of testing capabilities in addition to the traditional phased deployment methods to specific groups of machines. Microsoft will support two CBB builds at a time, plus a 60 day grace period.  Each feature update release will be supported and updated for a minimum of 18 months.
 
-Figure 2 outlines an example release cycle for Windows 10 feature updates and shows how updates transition from development to the CB and CBB servicing branches. As shown in the key, the dark blue **Evaluate** region represents the time during which a feature update is in development. These builds are accessible for testing through the Windows Insider Program. For details about how to access pre-released builds by enrolling in the Windows Insider Program, see the section Windows Insider. 
-
-The diamond **Release** on each build represents the point at which Microsoft releases a feature update to the CB servicing branch. It identifies the start of the testing, or **Pilot**, phase. The 4 months in this phase is the approximate amount of time before Microsoft releases the feature update to the CBB servicing branch. The **Deploy and Use** phase represents the broad deployment of the Windows 10 feature update to the clients in the CBB servicing branch. Machines are divided into deployment rings, as discussed in the section Ongoing deployment process.
-
-Finally, when a build’s support has ended, as represented by the **arrows**, organizations have a 60 day **grace** period to update to a newer release.
-
-**Figure 2**
-
-![Example release cycle](images/waas-overview-timeline1.png)
-
-
 
 >[!NOTE]
 >Organizations can electively delay CB and CBB updates into as many phases as they wish by using one of the servicing tools mentioned in the section Servicing tools.
