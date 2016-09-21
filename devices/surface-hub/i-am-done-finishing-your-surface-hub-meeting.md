@@ -54,7 +54,7 @@ Surface Hub also clears these directories, since many applications often write t
 - Public Downloads
 
 ### Credentials
-User credentials that are stored in **TokenBroker**, **PasswordVault**, or **Credential Manager** are cleared when you tap I’m done.
+User credentials that are stored in **TokenBroker**, **PasswordVault**, or **Credential Manager** are cleared when you tap **I’m done**.
 
 ## User interface
 User interface (UI) settings are returned to their default values when **I'm Done** is selected. 
@@ -81,12 +81,11 @@ The clipboard is cleared to remove data that was copied to the clipboard during 
 
 ## Frequently asked questions
 **What happens if I forget to tap I'm Done at the end of a meeting, and someone else uses the Surface Hub later?**<br>
-Surface Hub only cleans up meeting content when users tap **I"m Done**. If you leave the meeting without tapping **I'm Done**, the device will return to the welcome screen after some time. From the welcome screen, you have the option to resume the previous session or start a new one. If you're using the Surface Hub for an all-day meeting, this allows you to resume your work after a break. Or if you forget to tap **I"m Done** at the end of a meeting, the next group of users can easily start a new session.
+Surface Hub only cleans up meeting content when users tap **I'm Done**. If you leave the meeting without tapping **I'm Done**, the device will return to the welcome screen after some time. From the welcome screen, users have the option to resume the previous session or start a new one.
 
 **Are documents recoverable?**<br> 
-Removing files from the hard drive when **I'm Done** is selected is just like any other file deletion from a hard disk drive. Third-party software might be able to recover data from the hard disk drive, but file recovery is not a supported feature on Surface Hub. 
+Removing files from the hard drive when **I'm Done** is selected is just like any other file deletion from a hard disk drive. Third-party software might be able to recover data from the hard disk drive, but file recovery is not a supported feature on Surface Hub. To prevent data loss, always save the data you need before leaving a meeting.
 
 **Do the clean-up actions from I'm Done comply with the US Department of Defense clearing and sanitizing standard: DoD 5220.22-M?**<br>
 No. Currently, the clean-up actions from **I'm Done** do not comply with this standard.  
-
   
