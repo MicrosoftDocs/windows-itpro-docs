@@ -30,12 +30,12 @@ This table explains the main steps and configuration decisions when you create a
  
 | Step | Description                     |  Purpose                             |
 |------|---------------------------------|--------------------------------------|
-| 1    | Created a logon-enalbed Exchange resource mailbox (Exchange 2013 or later, or Exchange Online) | This resource mailbox allows the deviceto maintain a meeting calendar, receive meeting requests, and send mail. It must be logon-enalbed to be provisioned to a Surface Hub. |
-| 2    | Configure mailbox properties. | The mailbox must be configured with the correct properties to enable the best meeting experience on Surface Hub. For more information on mailbox properties, see [Mailbox properties](exchange-properties-for-surface-hub-device-accounts.md). |
-| 3    | Apply a compatible mobile device mailbox policy to the mailbox. | Surface Hub is managed using mobile device management (MDM) rather than through mobile device mailbox policies. For compatibility, the device account must have a mobile device mailbox policy where the **PasswordEnabled** setting is set to False. Otherwise, Surface Hub can't sync mail and calendar info.  |
-| 4    | Enable mailbox with Skype for Business.  | Skype for Business must be enabled to use conferencing features like video calls, IM, and screen sharing.  |
-| 5    | (Optional) Whitelist ActiveSync Device ID | Your organization may have a global policy that prevents device accounts from syncing mail and calendar info. If so, you need to whitelist the ActiveSync Device ID of your Surface Hub.    |
-| 6    | (Optional) Disable password expiration.  | To simplify management, you can disable password expiration for the device account and allow Surface Hub to automatically rotate the device account password. For more information about password management, see [Password management](password-management-for-surface-hub-device-accounts.md).  |
+| 1    | Created a logon-enabled Exchange resource mailbox (Exchange 2013 or later, or Exchange Online) | This resource mailbox allows the device to maintain a meeting calendar, receive meeting requests, and send mail. It must be logon-enabled to be provisioned to a Surface Hub. |
+| 2    | Configure mailbox properties | The mailbox must be configured with the correct properties to enable the best meeting experience on Surface Hub. For more information on mailbox properties, see [Mailbox properties](exchange-properties-for-surface-hub-device-accounts.md). |
+| 3    | Apply a compatible mobile device mailbox policy to the mailbox | Surface Hub is managed using mobile device management (MDM) rather than through mobile device mailbox policies. For compatibility, the device account must have a mobile device mailbox policy where the **PasswordEnabled** setting is set to False. Otherwise, Surface Hub can't sync mail and calendar info. |
+| 4    | Enable mailbox with Skype for Business (Lync Server 2013 or later, or Skype Online) | Skype for Business must be enabled to use conferencing features like video calls, IM, and screen sharing.  |
+| 5    | (Optional) Whitelist ActiveSync Device ID | Your organization may have a global policy that prevents device accounts from syncing mail and calendar info. If so, you need to whitelist the ActiveSync Device ID of your Surface Hub. |
+| 6    | (Optional) Disable password expiration | To simplify management, you can turn off password expiration for the device account and allow Surface Hub to automatically rotate the device account password. For more information about password management, see [Password management](password-management-for-surface-hub-device-accounts.md).  |
 
 ## Detailed configuration steps 
 
