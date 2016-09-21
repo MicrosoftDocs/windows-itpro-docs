@@ -38,8 +38,8 @@ Depending on your environment, access to additional ports may be needed:
 - For on-premises installations, see [Skype for Business Server: Ports and protocols for internal servers](https://technet.microsoft.com/library/gg398833.aspx). 
 
 Microsoft collects telemetry to help improve your Surface Hub experience. Add these sites to your allow list:
-- Telemetry client endpoint: https://vortex.data.microsoft.com/
-- Telemetry settings endpoint: https://settings.data.microsoft.com/
+- Telemetry client endpoint: `https://vortex.data.microsoft.com/`
+- Telemetry settings endpoint: `https://settings.data.microsoft.com/`
 
 
 ## Work with other admins
@@ -56,14 +56,16 @@ After you've created your device account, there are a couple of ways to verify t
 - Use the account with the [Lync Windows Store app](https://www.microsoft.com/en-us/store/p/lync/9wzdncrfhvhm). If Lync signs in successfully, then the device account will most likely work with Skype for Business on Surface Hub.
 
 
-## Prepare for first-run program
+## Prepare for first-run program 
 There are a few more item to consider before you start the [first-run program](first-run-program-surface-hub.md).  
 
-**Create provisioning packages** (optional) - Use provisioning packages to add certificates, customize settings and install apps. See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md) for details. You can [install provisioning packages at first-run](first-run-program-surface-hub.md#first-page).
+### Create provisioning packages (optional)
+You can use provisioning packages to add certificates, customize settings and install apps. See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md) for details. You can [install provisioning packages at first-run](first-run-program-surface-hub.md#first-page).
 
-**Setup admin groups** - Every Surface Hub can be configured locally using the Settings app on the device. To prevent unauthorized users from changing settings, the Settings app requires admin credentials to open the app. See [Admin group management](admin-group-management-for-surface-hub.md) for details on how admin groups are set up and managed. You will [set up admins for the device at first run](first-run-program-surface-hub.md#setup-admins)).
+### Set up admin groups
+Every Surface Hub can be configured locally using the Settings app on the device. To prevent unauthorized users from changing settings, the Settings app requires admin credentials to open the app. See [Admin group management](admin-group-management-for-surface-hub.md) for details on how admin groups are set up and managed. You will [set up admins for the device at first run](first-run-program-surface-hub.md#setup-admins)).
 
-**Review and complete Surface Hub setup worksheet** (optional)
+### Review and complete Surface Hub setup worksheet** (optional)
 When you go through the first-run program for your Surface Hub, there's some information that you'll need to supply. The setup worksheet summarizes that info, and provides lists of environment-specific info that you'll need when you go through the first-run program. For more information, see [Setup worksheet](setup-worksheet-surface-hub.md).
 
 
