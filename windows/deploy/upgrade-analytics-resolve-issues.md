@@ -75,7 +75,7 @@ For applications assessed as **Fix available**, review the table below for detai
 
 ### ISV support for applications with Ready for Windows
 
-The [Ready for Windows website](https://www.readyforwindows.com/) lists software solutions that are supported and in use for Windows 10. This site leverages data about application adoption from commercial Windows 10 installations and helps IT managers upgrade to Windows 10 with confidence. For more information, see [Ready for Windows Frequently Asked Questions](https://developer.microsoft.com/windows/ready-for-windows/#/faq/). 
+[Ready for Windows](https://www.readyforwindows.com/) lists software solutions that are supported and in use for Windows 10. This site leverages data about application adoption from commercial Windows 10 installations and helps IT managers upgrade to Windows 10 with confidence. For more information, see [Ready for Windows Frequently Asked Questions](https://developer.microsoft.com/windows/ready-for-windows/#/faq/). 
 
 Click **Review Applications With Known Issues** to see the status of applications for Ready for Windows and corresponding guidance. For example:
 
