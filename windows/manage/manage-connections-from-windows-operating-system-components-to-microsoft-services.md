@@ -270,6 +270,8 @@ Fonts that are included in Windows but that are not stored on the local device c
 
 To turn off font streaming, create a REG\_DWORD registry setting called **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters**, with a value of 1.
 
+> [!NOTE]  
+> After you apply this registry setting, you must restart the device for it to take effect.
 
 ### <a href="" id="bkmk-previewbuilds"></a>6. Insider Preview builds
 

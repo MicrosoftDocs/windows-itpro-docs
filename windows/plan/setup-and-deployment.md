@@ -8,6 +8,7 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: servicing, devices
 author: jdeckerMS
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/manage/waas-manage-updates-wufb
 ---
 
 # Setup and deployment
