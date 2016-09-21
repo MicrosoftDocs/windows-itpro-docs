@@ -249,17 +249,17 @@ The lab architecture is summarized in the following diagram:
     ```
 ### Resize VHD
 
-The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 60GB to support imaging tools. 
+The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 80GB to support installing imaging tools and storing OS images.
 
 1. To add available space for the partition, type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```
-    Resize-VHD –Path c:\VHD\2012R2-poc-2.vhd –SizeBytes 60GB
+    Resize-VHD –Path c:\VHD\2012R2-poc-2.vhd –SizeBytes 80GB
     $x = (Mount-VHD –Path c:\VHD\2012R2-poc-2.vhd -passthru | Get-Disk | Get-Partition | Get-Volume).DriveLetter
     Resize-Partition -DriveLetter $x -Size (Get-PartitionSupportedSize -DriveLetter $x).SizeMax
     ```
 
-2. Verify that the mounted VHD drive is resized to 60 GB, and then dismount the drive:
+2. Verify that the mounted VHD drive is resized to 80 GB, and then dismount the drive:
 
     ```
     Get-Volume -DriveLetter $x
