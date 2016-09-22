@@ -97,10 +97,10 @@ The following table lists possible values for **ReadyForWindows** and what they 
 |  Highly adopted | Granular | This version of this application has been highly adopted within the Windows 10 Enterprise ecosystem. | This application has been installed on at least 100,000 commercial Windows 10 devices. | 
 | Adopted   | Granular | This version of this application has been adopted within the Windows 10 Enterprise ecosystem. | This application has been installed on at least 10,000 commercial Windows 10 devices. |
 | Insufficient Data | Granular | Too few commercial Windows 10 devices are sharing information about this version of this application for Microsoft to categorize its adoption. | N/A |
-| Contact developer | Granular | There may be compatibility issues with this version of the application, so Microsoft recommends contacting the software provider to learn more. | Check the Ready for Windows site for additional information.|
+| Contact developer | Granular | There may be compatibility issues with this version of the application, so Microsoft recommends contacting the software provider to learn more. | Check [Ready for Windows](https://www.readyforwindows.com/) for additional information.|
 |Supported version available | NamePublisher | The software provider has declared support for this application on Windows 10. | The ISV has declared support for a version of this application on Windows 10.|
-|Adoption status available | NamePublisher | A Ready for Windows adoption status is available for one or more versions of this application. Please check the Ready for Windows site to learn more. |Check the Ready for Windows site for adoption information for this application.|
-| Unknown | Any | There is no Ready for Windows information available for this version of this application. Information may be available on the Ready for Windows site for other versions of the application. | N/A |
+|Adoption status available | NamePublisher | A Ready for Windows adoption status is available for one or more versions of this application. Please check Ready for Windows to learn more. |Check [Ready for Windows](https://www.readyforwindows.com/) for adoption information for this application.|
+| Unknown | Any | There is no Ready for Windows information available for this version of this application. Information may be available for other versions of the application at [Ready for Windows](https://www.readyforwindows.com/). | N/A |
 
 ## Review applications with no known issues
 
