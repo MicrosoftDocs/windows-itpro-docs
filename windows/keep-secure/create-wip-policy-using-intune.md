@@ -380,8 +380,8 @@ There are no default locations included with WIP, you must add each of your netw
             </tr>
             <tr>
                 <td>Enterprise Proxy Servers</td>
-                <td>proxy.contoso.com:80;proxy2.contoso.com:137</td>
-                <td>Specify your externally-facing proxy server addresses, along with the port through which traffic accesses the Internet.<p>This list must not include any servers listed in the Enterprise Internal Proxy Servers list, because they’re used for WIP-protected traffic.<p>TThis setting is also required if there’s a chance you could end up behind a proxy server on another network. In this situation, if you don't have a proxy server pre-defined, you might find that enterprise resources are unavailable to your client device, such as when you’re visiting another company and not on the guest network. To make sure this doesn’t happen, the client device also needs to be able to reach the pre-defined proxy server through the VPN network.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>
+                <td>proxy.contoso.com:80;proxy2.contoso.com:443</td>
+                <td>Specify your externally-facing proxy server addresses, along with the port through which traffic accesses the Internet.<p>This list must not include any servers listed in the Enterprise Internal Proxy Servers list, because they’re used for WIP-protected traffic.<p>This setting is also required if there’s a chance you could end up behind a proxy server on another network. In this situation, if you don't have a proxy server pre-defined, you might find that enterprise resources are unavailable to your client device, such as when you’re visiting another company and not on the guest network. To make sure this doesn’t happen, the client device also needs to be able to reach the pre-defined proxy server through the VPN network.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>
             </tr>
             <tr>
                 <td>Enterprise Internal Proxy Servers</td>
