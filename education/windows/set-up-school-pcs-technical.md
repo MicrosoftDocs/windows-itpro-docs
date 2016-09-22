@@ -191,8 +191,6 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr> <td> <p> Turn off the advertising ID </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components </strong></p> </td> 
-</tr> 
 <tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Biometrics</strong></p> </td> 
 </tr> 
 <tr> <td> <p> Allow the use of biometrics </p> </td> <td> <p> Disabled</p> </td>
