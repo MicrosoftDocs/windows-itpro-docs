@@ -69,4 +69,8 @@ This table provides info about the most common problems you might encounter whil
         <td>Apps might encounter access errors while attempting to read a cached, offline file.</td>
         <td>Migrate to use another file synchronization method, such as Work Folders or OneDrive for Business.</td>
     </tr>
+    <tr>
+        <td>You can't upload an enterprise file to a personal location using Microsoft Edge or Internet Explorer.</td>
+        <td>A message appears stating that the content is marked as **Work** and the user isn't given an option to override to **Personal**.</td>
+        <td>Open File Explorer and change the file ownership to **Personal** before you upload.</td>
 </table>                 
