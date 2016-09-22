@@ -52,7 +52,7 @@ Surface Hub interacts with a few different products and services. Depending on t
 A device account is an Exchange resource account that Surface Hub uses to display its meeting calendar, join Skype for Business calls, and send email. See [Create and test a device account](create-and-test-a-device-account-surface-hub.md) for details.
 
 After you've created your device account, there are a couple of ways to verify that it's setup correctly.
-- Run Surface Hub device account validation PowerShell scripts. For more information, see [Surface Hub device account scripts](https://gallery.technet.microsoft.com/scriptcenter/Surface-Hub-device-account-6db77696) in Script Center, or [PowerShell scripts for Surface Hub](appendix-a-powershell-scipts-for-surface-hub.md) later in this guide. 
+- Run Surface Hub device account validation PowerShell scripts. For more information, see [Surface Hub device account scripts](https://gallery.technet.microsoft.com/scriptcenter/Surface-Hub-device-account-6db77696) in Script Center, or [PowerShell scripts for Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md) later in this guide. 
 - Use the account with the [Lync Windows Store app](https://www.microsoft.com/en-us/store/p/lync/9wzdncrfhvhm). If Lync signs in successfully, then the device account will most likely work with Skype for Business on Surface Hub.
 
 
