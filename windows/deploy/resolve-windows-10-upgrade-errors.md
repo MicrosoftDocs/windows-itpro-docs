@@ -26,7 +26,7 @@ Maybe an image here
 
 ## Some troubleshooting information
 
-Blah blah yadda yadda
+Some text here
 
 <table>
 
@@ -41,7 +41,7 @@ Blah blah yadda yadda
 
 <tr class="even">
 <td align="left">0xC1900200</td>
-<td align="left">During the first phase of the upgrade process, setup.exe has detected that the machine does not meet the minimum system requirements.</td>
+<td align="left">Setup.exe has detected that the machine does not meet the minimum system requirements.</td>
 <td align="left">Ensure the system you are trying to upgrade meets the minimum system requirements. <P>See [Windows 10 specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications)  for information.</td>
 </tr>
 
