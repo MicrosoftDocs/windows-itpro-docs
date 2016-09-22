@@ -109,9 +109,9 @@ Before you install AGPM Server, you must be a member of the Domain Admins group 
 
     -   Windows Server 2008 R2 or Windows Server 2008: If the GPMC is not present, it is automatically installed by AGPM.
 
-    -   Windows 7: You must install the GPMC from RSAT before you install AGPM. For more information, see [Remote Server Administration Tools for Windows 7](http://go.microsoft.com/fwlink/?LinkID=131280) (http://go.microsoft.com/fwlink/?LinkID=131280).
+    -   Windows 7: You must install the GPMC from RSAT before you install AGPM. For more information, see [Remote Server Administration Tools for Windows 7](https://go.microsoft.com/fwlink/?LinkID=131280) (https://go.microsoft.com/fwlink/?LinkID=131280).
 
-    -   Windows Vista with SP1: You must install the GPMC from RSAT before you install AGPM. For more information, see [Remote Server Administration Tools for Windows Vista with Service Pack 1](http://go.microsoft.com/fwlink/?LinkID=116179) (http://go.microsoft.com/fwlink/?LinkID=116179).
+    -   Windows Vista with SP1: You must install the GPMC from RSAT before you install AGPM. For more information, see [Remote Server Administration Tools for Windows Vista with Service Pack 1](https://go.microsoft.com/fwlink/?LinkID=116179) (https://go.microsoft.com/fwlink/?LinkID=116179).
 
 -   The .NET Framework 3.5 or later versions
 
@@ -141,9 +141,9 @@ The following Windows features are required by AGPM Client and unless otherwise 
 
     -   Windows Server 2008 R2 or Windows Server 2008: If the GPMC is not present, it is automatically installed by AGPM.
 
-    -   Windows 7: You must install the GPMC from RSAT before you install AGPM. For more information, see [Remote Server Administration Tools for Windows 7](http://go.microsoft.com/fwlink/?LinkID=131280) (http://go.microsoft.com/fwlink/?LinkID=131280).
+    -   Windows 7: You must install the GPMC from RSAT before you install AGPM. For more information, see [Remote Server Administration Tools for Windows 7](https://go.microsoft.com/fwlink/?LinkID=131280) (https://go.microsoft.com/fwlink/?LinkID=131280).
 
-    -   Windows Vista with SP1: You must install the GPMC from RSAT before you install AGPM. For more information, see [Remote Server Administration Tools for Windows Vista with Service Pack 1](http://go.microsoft.com/fwlink/?LinkID=116179) (http://go.microsoft.com/fwlink/?LinkID=116179).
+    -   Windows Vista with SP1: You must install the GPMC from RSAT before you install AGPM. For more information, see [Remote Server Administration Tools for Windows Vista with Service Pack 1](https://go.microsoft.com/fwlink/?LinkID=116179) (https://go.microsoft.com/fwlink/?LinkID=116179).
 
 -   The .NET Framework 3.0 or later version
 

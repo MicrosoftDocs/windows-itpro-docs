@@ -14,7 +14,9 @@ This topic lists new and updated topics in the Internet Explorer 11 documentatio
 ## August 2016
 |New or changed topic | Description |
 |----------------------|-------------|
-[Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md)|Added the Understanding the returned reason codes section to the topic. |
+|[Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md) |Updated to remove the IP range restrictions and to add code examples for both IPv4 and IPv6 addresses. |
+|[Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md) |Updated to remove the IP range restrictions and to add code examples for both IPv4 and IPv6 addresses. |
+|[Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md)|Added the Understanding the returned reason codes section to the topic. |
 
 ## July 2016
 |New or changed topic | Description |

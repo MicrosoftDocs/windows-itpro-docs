@@ -24,7 +24,7 @@ localizationpriority: medium
 
 **Looking for retail activation?**
 
--   [Get Help Activating Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=618644)
+-   [Get Help Activating Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)
 
 *Product activation* is the process of validating software with the manufacturer after it has been installed on a specific computer. Activation confirms that the product is genuine—not a fraudulent copy—and that the product key or serial number is valid and has not been compromised or revoked. Activation also establishes a link or relationship between the product key and the particular installation.
 
@@ -84,7 +84,7 @@ allows permanent activation of computers that are isolated from the KMS or are p
 To use a MAK, the computers to be activated must have a MAK installed. The MAK is used for one-time activation with the Microsoft online hosted activation services, by telephone, or by using VAMT proxy activation.
 In the simplest terms, a MAK acts like a retail key, except that a MAK is valid for activating multiple computers. Each MAK can be used a specific number of times. The VAMT can assist in tracking the number of activations that have been performed with each key and how many remain.
 
-Organizations can download MAK and KMS keys from the [Volume Licensing Service Center](http://go.microsoft.com/fwlink/p/?LinkId=618213) website. Each MAK has a preset number of activations, which are based on a percentage of the count of licenses the organization purchases; however, you can increase the number of activations that are available with your MAK by calling Microsoft.
+Organizations can download MAK and KMS keys from the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkId=618213) website. Each MAK has a preset number of activations, which are based on a percentage of the count of licenses the organization purchases; however, you can increase the number of activations that are available with your MAK by calling Microsoft.
 
 ### Key Management Service
 
@@ -178,8 +178,8 @@ Now it’s time to assemble the pieces into a working solution. By evaluating yo
 ## Choosing and acquiring keys
 
 When you know which keys you need, you must obtain them. Generally speaking, volume licensing keys are collected in two ways:
--   Go to the **Product Keys** section of the [Volume Licensing Service Center](http://go.microsoft.com/fwlink/p/?LinkID=618213) for the following agreements: Open, Open Value, Select, Enterprise, and Services Provider License.
--   Contact your [Microsoft Activation Center](http://go.microsoft.com/fwlink/p/?LinkId=618264).
+-   Go to the **Product Keys** section of the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=618213) for the following agreements: Open, Open Value, Select, Enterprise, and Services Provider License.
+-   Contact your [Microsoft Activation Center](https://go.microsoft.com/fwlink/p/?LinkId=618264).
 
 ### KMS host keys
 

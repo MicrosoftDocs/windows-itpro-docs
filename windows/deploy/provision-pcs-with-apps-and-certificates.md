@@ -7,7 +7,7 @@ ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
-localizationpriority: medium
+localizationpriority: high
 ---
 
 # Provision PCs with apps and certificates for initial deployment (advanced provisioning)
@@ -76,9 +76,17 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
     ![required frameworks for offline app package](images/uwp-dependencies.png)
 
-5. For **DeviceContextAppLicense**, enter the **LicenseProductID**. In Windows Store for Business, you generate the license for the app on the app's download page.
+5. For **DeviceContextAppLicense**, enter the **LicenseProductID**. 
 
-    ![generate license for offline app](images/uwp-license.png)
+    - In Windows Store for Business, generate the unencoded license for the app on the app's download page, and change the extension of the license file from **.xml** to **.ms-windows-store-license**.
+
+        ![generate license for offline app](images/uwp-license.png)
+        
+    - Open the license file and search for **LicenseID=** to get the GUID, enter the GUID in the **LicenseProductID** field and click **Add**.
+    
+6. In the **Available customizations** pane, click the **LicenseProductId** that you just added. 
+
+7. For **LicenseInstall**, click **Browse**, navigate to the license file that you renamed *<file name>*.**ms-windows-store-license**, and select the license file.
 
 [Learn more about distributing offline apps from the Windows Store for Business.](../manage/distribute-offline-apps.md)
 
@@ -104,7 +112,7 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
 ### Add other settings to your package 
 
-For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( http://go.microsoft.com/fwlink/p/?LinkId=619012).
+For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( https://go.microsoft.com/fwlink/p/?LinkId=619012).
 
 ### Build your package
 
@@ -214,11 +222,11 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 ![add a package option](images/package.png)
 
 ## Learn more
--   [Build and apply a provisioning package]( http://go.microsoft.com/fwlink/p/?LinkId=629651)
+-   [Build and apply a provisioning package]( https://go.microsoft.com/fwlink/p/?LinkId=629651)
 
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](http://go.microsoft.com/fwlink/p/?LinkId=615921)
+-   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
--   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](http://go.microsoft.com/fwlink/p/?LinkId=615922)
+-   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
  
 
 

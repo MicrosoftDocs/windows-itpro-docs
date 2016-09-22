@@ -4,6 +4,7 @@ description: This topic describes how to configure a PXE server to load Windows�
 keywords: upgrade, update, windows, windows 10, pxe, WinPE, image, wim
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
@@ -21,7 +22,7 @@ This walkthrough describes how to configure a PXE server to load Windows PE by 
 
 ## Prerequisites
 
-- A deployment computer: A computer with the [Windows Assessment and Deployment Kit](http://go.microsoft.com/fwlink/p/?LinkId=526803) (Windows ADK) installed.
+- A deployment computer: A computer with the [Windows Assessment and Deployment Kit](https://go.microsoft.com/fwlink/p/?LinkId=526803) (Windows ADK) installed.
 - A DHCP server: A DHCP server or DHCP proxy configured to respond to PXE client requests is required.
 - A PXE server: A server running the TFTP service that can host Windows PE boot files that the client will download.
 - A file server: A server hosting a network file share.

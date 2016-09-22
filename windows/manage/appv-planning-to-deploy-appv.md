@@ -9,13 +9,16 @@ ms.prod: w10
 ---
 
 
-# Planning to Deploy App-V
+# Planning to Deploy App-V for Windows 10
 
-You should consider a number of different deployment configurations and prerequisites before you create your deployment plan for App-V. This section includes information that can help you gather the information that you must have to formulate a deployment plan that best meets your business requirements.
+**Applies to**
+-   Windows 10, version 1607
+
+There are a number of different deployment configurations and requirements to consider before you deploy App-V for Windows 10. Review this topic for information about what you'll need to formulate a deployment plan that best meets your business requirements.
 
 ## App-V supported configurations
 
-Describes the minimum hardware and operating system requirements for each App-V components. For information about software prerequisites that you must install before you install App-V, see [App-V Prerequisites](appv-prerequisites.md).
+Describes the minimum hardware and operating system requirements for each App-V components. For information about software that you must install before you install App-V, see [App-V Prerequisites](appv-prerequisites.md).
 
 [App-V Supported Configurations](appv-supported-configurations.md)
 
@@ -37,7 +40,7 @@ Describes the options and requirements for deploying App-V with an electronic so
 
 [Planning to Deploy App-V with an Electronic Software Distribution System](appv-planning-to-deploy-appv-with-electronic-software-distribution-solutions.md)
 
-## Planning for the App-V Server deployment
+## Planning for App-V server deployment
 
 Describes the planning considerations for the App-V Server components and their functions.
 
@@ -53,7 +56,7 @@ Describes the planning considerations for the App-V Client and for the Sequencer
 
 Describes the recommended path for migrating from previous versions of App-V, while ensuring that existing server configurations, packages and clients continue to work in your new App-V environment.
 
-[Planning for Migrating from a Previous Version of App-V](appv-planning-for-migrating-from-a-previous-version-of-appv.md)
+[Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md)
 
 ## Planning for using App-V with Office
 
@@ -72,3 +75,7 @@ Explains how folder redirection works with App-V.
 -   [Planning for App-V](appv-planning-for-appv.md)
 
 -   [Performance Guidance for Application Virtualization](appv-performance-guidance.md)
+
+## Have a suggestion for App-V?
+
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

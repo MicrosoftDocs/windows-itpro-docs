@@ -33,14 +33,14 @@ Installation files for administrative tools, drivers for accessories, and update
 
 Recent additions to the downloads for Surface devices provide you with options to install Windows 10 on your Surface devices and update LTE devices with the latest Windows 10 drivers and firmware.
 
->**Note:**&nbsp;&nbsp;A battery charge of 40% or greater is required before you install firmware to a Surface device. See [Microsoft Support article KB2909710](http://go.microsoft.com/fwlink/p/?LinkId=618106) for more information.
+>**Note:**&nbsp;&nbsp;A battery charge of 40% or greater is required before you install firmware to a Surface device. See [Microsoft Support article KB2909710](https://go.microsoft.com/fwlink/p/?LinkId=618106) for more information.
 
  
 
 ## Surface Book
 
 
-Download the following updates [for Surface Book from the Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=691691).
+Download the following updates [for Surface Book from the Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=691691).
 
 -   SurfaceBook\_Win10\_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
@@ -49,7 +49,7 @@ Download the following updates [for Surface Book from the Microsoft Download Cen
 ## Surface Pro 4
 
 
-Download the following updates for [Surface Pro 4 from the Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=691692).
+Download the following updates for [Surface Pro 4 from the Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=691692).
 
 -   SurfacePro4\_Win10\_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
@@ -58,7 +58,7 @@ Download the following updates for [Surface Pro 4 from the Microsoft Download Ce
 ## <a href="" id="surface-pro-3-"></a>Surface Pro 3
 
 
-Download the following updates [for Surface Pro 3 from the Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=690288).
+Download the following updates [for Surface Pro 3 from the Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=690288).
 
 -   SurfacePro3\_Win10\_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
@@ -85,7 +85,7 @@ Download the following updates [for Surface Pro 3 from the Microsoft Download Ce
 ## Surface 3
 
 
-Download the following updates [for Surface 3 from the Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=690289).
+Download the following updates [for Surface 3 from the Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=690289).
 
 -   Surface3\_Win10\_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
 
@@ -102,7 +102,7 @@ Download the following updates [for Surface 3 from the Microsoft Download Center
 ## Surface 3 LTE
 
 
-Download the following updates [for AT&T 4G LTE versions of Surface 3 from the Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=690290).
+Download the following updates [for AT&T 4G LTE versions of Surface 3 from the Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=690290).
 
 -   Surface3\_US1\_Win10\_xxxxxx.msi – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 10
 
@@ -118,7 +118,7 @@ Download the following updates [for AT&T 4G LTE versions of Surface 3 from the M
 
 -   Wintab-xxxxx-64-bit.zip – Tablet driver update for all supported x64-based versions of Windows 8.1
 
-Download the following updates [for non-AT&T 4G LTE versions of Surface 3 from the Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=690291).
+Download the following updates [for non-AT&T 4G LTE versions of Surface 3 from the Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=690291).
 
 -   Surface3\_NAG\_Win10\_xxxxxx.msi – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 10
 
@@ -134,7 +134,7 @@ Download the following updates [for non-AT&T 4G LTE versions of Surface 3 from t
 
 -   Wintab-xxxxx-64-bit.zip – Tablet driver update for all supported x64-based versions of Windows 8.1
 
-Download the following updates [for 4G LTE Surface 3 versions for regions outside North America from the Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=690292).
+Download the following updates [for 4G LTE Surface 3 versions for regions outside North America from the Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=690292).
 
 -   Surface3\_ROW\_Win10\_xxxxxx.msi – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 10
 
@@ -153,7 +153,7 @@ Download the following updates [for 4G LTE Surface 3 versions for regions outsid
 ## Surface Pro 2
 
 
-Download the following updates [for Surface Pro 2 from the Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=690293).
+Download the following updates [for Surface Pro 2 from the Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=690293).
 
 -   SurfacePro2\_Win10\_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
 
@@ -168,7 +168,7 @@ Download the following updates [for Surface Pro 2 from the Microsoft Download Ce
 ## Surface Pro
 
 
-Download the following updates [for Surface Pro from the Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=690294).
+Download the following updates [for Surface Pro from the Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=690294).
 
 -   SurfacePro\_Win10\_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
 
@@ -185,7 +185,7 @@ Download the following updates [for Surface Pro from the Microsoft Download Cent
 
 There are no downloadable firmware or driver updates available for Surface RT. Updates can only be applied using Windows Update.
 
-If you have additional questions on the driver pack and updates, please contact [Microsoft Surface support for business](http://go.microsoft.com/fwlink/p/?LinkId=618107).
+If you have additional questions on the driver pack and updates, please contact [Microsoft Surface support for business](https://go.microsoft.com/fwlink/p/?LinkId=618107).
 
  
 

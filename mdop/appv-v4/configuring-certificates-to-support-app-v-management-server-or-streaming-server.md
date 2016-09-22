@@ -38,7 +38,7 @@ The App-V certificate is submitted to a certification authority (CA) that is con
 
 This configuration is necessary only when using an NLB cluster. When the client connects to the server, it will connect using the fully qualified domain name (FQDN) of the NLB cluster and not the FQDN of an individual server. If you do not add the SAN property with the FQDN of the server nodes in the cluster, all client connections are refused because the common name of the certificate won’t match the server name.
 
-For more detailed information about configuring certificates with the SAN attribute, see <http://go.microsoft.com/fwlink/?LinkId=133228>.
+For more detailed information about configuring certificates with the SAN attribute, see <https://go.microsoft.com/fwlink/?LinkId=133228>.
 
 ## Related topics
 

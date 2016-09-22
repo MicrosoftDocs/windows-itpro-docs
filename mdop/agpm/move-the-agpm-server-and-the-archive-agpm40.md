@@ -32,7 +32,7 @@ A user account that is a member of the Domain Admins group and has access to the
 
     1.  Stop the AGPM Service. For more information, see [Start and Stop the AGPM Service](start-and-stop-the-agpm-service-agpm40.md).
 
-    2.  Install Microsoft Advanced Group Policy Management - Server on the new server that will host the AGPM Service. During this process, you specify the new archive path, the location for the archive in relation to the AGPM Server. For more information, see [Step-by-Step Guide for Microsoft Advanced Group Policy Management 4.0](http://go.microsoft.com/fwlink/?LinkId=153505) (http://go.microsoft.com/fwlink/?LinkId=153505) and [Planning Guide for Microsoft Advanced Group Policy Management](http://go.microsoft.com/fwlink/?LinkId=156883) (http://go.microsoft.com/fwlink/?LinkId=156883).
+    2.  Install Microsoft Advanced Group Policy Management - Server on the new server that will host the AGPM Service. During this process, you specify the new archive path, the location for the archive in relation to the AGPM Server. For more information, see [Step-by-Step Guide for Microsoft Advanced Group Policy Management 4.0](https://go.microsoft.com/fwlink/?LinkId=153505) (https://go.microsoft.com/fwlink/?LinkId=153505) and [Planning Guide for Microsoft Advanced Group Policy Management](https://go.microsoft.com/fwlink/?LinkId=156883) (https://go.microsoft.com/fwlink/?LinkId=156883).
 
     3.  Either an AGPM Administrator (Full Control) must configure the AGPM Server connection for all Group Policy administrators who will use the new AGPM Server and remove the connection for the old AGPM Server, or else each Group Policy administrator must manually configure the new AGPM Server connection and remove the old AGPM Server connection for the AGPM snap-in on their computer. For more information, see [Configure AGPM Server Connections](configure-agpm-server-connections-agpm40.md).
 
@@ -62,9 +62,9 @@ A user account that is a member of the Domain Admins group and has access to the
 
 -   [Modify the AGPM Service](modify-the-agpm-service-agpm40.md)
 
--   [Step-by-Step Guide for Microsoft Advanced Group Policy Management 4.0](http://go.microsoft.com/fwlink/?LinkId=153505) (http://go.microsoft.com/fwlink/?LinkId=153505)
+-   [Step-by-Step Guide for Microsoft Advanced Group Policy Management 4.0](https://go.microsoft.com/fwlink/?LinkId=153505) (https://go.microsoft.com/fwlink/?LinkId=153505)
 
--   [Planning Guide for Microsoft Advanced Group Policy Management](http://go.microsoft.com/fwlink/?LinkId=156883) (http://go.microsoft.com/fwlink/?LinkId=156883)
+-   [Planning Guide for Microsoft Advanced Group Policy Management](https://go.microsoft.com/fwlink/?LinkId=156883) (https://go.microsoft.com/fwlink/?LinkId=156883)
 
 -   [Performing AGPM Administrator Tasks](performing-agpm-administrator-tasks-agpm40.md)
 

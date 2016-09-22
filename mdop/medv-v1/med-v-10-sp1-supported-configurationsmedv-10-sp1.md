@@ -23,7 +23,7 @@ This topic specifies the requirements necessary to install and run Microsoft Ent
 The following table lists the operating systems that are supported for MED-V 1.0 SP1 client installation.
 
 **Note**  
-Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](http://go.microsoft.com/fwlink/?LinkId=31975) (http://go.microsoft.com/fwlink/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](http://go.microsoft.com/fwlink/?LinkId=31976) (http://go.microsoft.com/fwlink/?LinkId=31976).
+Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/?LinkId=31975) (https://go.microsoft.com/fwlink/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/?LinkId=31976) (https://go.microsoft.com/fwlink/?LinkId=31976).
 
  
 
@@ -146,7 +146,7 @@ MED-V 1.0 SP1 introduces changes to system requirements from those for MED-V 1
 The following table lists the operating systems supported for MED-V 1.0 SP1 workspaces.
 
 **Note**  
-Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](http://go.microsoft.com/fwlink/?LinkId=31975) (http://go.microsoft.com/fwlink/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](http://go.microsoft.com/fwlink/?LinkId=31976) (http://go.microsoft.com/fwlink/?LinkId=31976).
+Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/?LinkId=31975) (https://go.microsoft.com/fwlink/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/?LinkId=31976) (https://go.microsoft.com/fwlink/?LinkId=31976).
 
  
 
@@ -225,7 +225,7 @@ MED-V 1.0 SP1 introduces changes to system requirements from those for MED-V 1
 The following table lists the operating systems supported for MED-V 1.0 SP1 server installations.
 
 **Note**  
-Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](http://go.microsoft.com/fwlink/?LinkId=31975) (http://go.microsoft.com/fwlink/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](http://go.microsoft.com/fwlink/?LinkId=31976) (http://go.microsoft.com/fwlink/?LinkId=31976).
+Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/?LinkId=31975) (https://go.microsoft.com/fwlink/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/?LinkId=31976) (https://go.microsoft.com/fwlink/?LinkId=31976).
 
  
 

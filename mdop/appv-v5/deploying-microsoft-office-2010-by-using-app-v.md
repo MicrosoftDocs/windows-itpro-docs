@@ -73,16 +73,16 @@ The following table shows the App-V versions, methods of Office package creation
 
 Sequencing Office 2010 is one of the main methods for creating an Office 2010 package on App-V 5.0. Microsoft has provided a detailed recipe through a Knowledge Base article. To create an Office 2010 package on App-V 5.0, refer to the following link for detailed instructions:
 
-[How To Sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](http://go.microsoft.com/fwlink/p/?LinkId=330676)
+[How To Sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://go.microsoft.com/fwlink/p/?LinkId=330676)
 
 ## Creating Office 2010 App-V 5.0 packages using package accelerators
 
 
 Office 2010 App-V 5.0 packages can be created through package accelerators. Microsoft has provided package accelerators for creating Office 2010 on Windows 8 and Windows 7. To create Office 2010 packages on App-V using Package accelerators, refer to the following pages to access the appropriate package accelerator:
 
--   [App-V 5.0 Package Accelerator for Office Professional Plus 2010 – Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=330677)
+-   [App-V 5.0 Package Accelerator for Office Professional Plus 2010 – Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=330677)
 
--   [App-V 5.0 Package Accelerator for Office Professional Plus 2010 – Windows 7](http://go.microsoft.com/fwlink/p/?LinkId=330678)
+-   [App-V 5.0 Package Accelerator for Office Professional Plus 2010 – Windows 7](https://go.microsoft.com/fwlink/p/?LinkId=330678)
 
 For detailed instructions on how to create virtual application packages using App-V package accelerators, see [How to Create a Virtual Application Package Using an App-V Package Accelerator](how-to-create-a-virtual-application-package-using-an-app-v-package-accelerator.md).
 
@@ -178,7 +178,7 @@ The following table provides a full list of supported integration points for Off
 </tr>
 <tr class="even">
 <td align="left"><p>Active X Controls:</p></td>
-<td align="left"><p>For more information on ActiveX controls, refer to [ActiveX Control API Reference](http://go.microsoft.com/fwlink/p/?LinkId=331361).</p></td>
+<td align="left"><p>For more information on ActiveX controls, refer to [ActiveX Control API Reference](https://go.microsoft.com/fwlink/p/?LinkId=331361).</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">
@@ -276,19 +276,19 @@ The following table provides a full list of supported integration points for Off
 
 **Office 2013 App-V 5.0 Packages 5.0 Additional Resources**
 
-[Supported scenarios for deploying Microsoft Office as a sequenced App-V Package](http://go.microsoft.com/fwlink/p/?LinkId=330680)
+[Supported scenarios for deploying Microsoft Office as a sequenced App-V Package](https://go.microsoft.com/fwlink/p/?LinkId=330680)
 
 **Office 2010 App-V 5.0 Packages**
 
-[Microsoft Office 2010 Sequencing Kit for Microsoft Application Virtualization 5.0](http://go.microsoft.com/fwlink/p/?LinkId=330681)
+[Microsoft Office 2010 Sequencing Kit for Microsoft Application Virtualization 5.0](https://go.microsoft.com/fwlink/p/?LinkId=330681)
 
-[Known issues when you create or use an App-V 5.0 Office 2010 package](http://go.microsoft.com/fwlink/p/?LinkId=330682)
+[Known issues when you create or use an App-V 5.0 Office 2010 package](https://go.microsoft.com/fwlink/p/?LinkId=330682)
 
-[How to sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](http://go.microsoft.com/fwlink/p/?LinkId=330676)
+[How to sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://go.microsoft.com/fwlink/p/?LinkId=330676)
 
 **Connection Groups**
 
-[Deploying Connection Groups in Microsoft App-V v5](http://go.microsoft.com/fwlink/p/?LinkId=330683)
+[Deploying Connection Groups in Microsoft App-V v5](https://go.microsoft.com/fwlink/p/?LinkId=330683)
 
 [Managing Connection Groups](managing-connection-groups.md)
 

@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+localizationpriority: high
 ---
 
 # Investigate machines in the Windows Defender ATP Machines view
@@ -15,7 +16,7 @@ author: mjcaparas
 **Applies to:**
 
 - Windows 10 Enterprise
-- Windows 10 Enterprise for Education
+- Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
@@ -39,7 +40,7 @@ The Machines view contains the following columns:
 - **Active malware detections** - the number of active malware detections reported by the machine
 
 > [!NOTE]
-> The **Active alerts** and **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
+> The **Active alerts** and **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
 
 Click any column header to sort the view in ascending or descending order.
 

@@ -38,11 +38,11 @@ Microsoft BitLocker Administration and Monitoring (MBAM) provides a simplified a
 <a href="" id="release-notes-for-mbam-1-0"></a>[Release Notes for MBAM 1.0](release-notes-for-mbam-10.md)  
 View updated product information and known issues for MBAM 1.0.
 
-<a href="" id="mdop-techcenter-page"></a>[MDOP TechCenter Page](http://go.microsoft.com/fwlink/p/?LinkId=225286)  
+<a href="" id="mdop-techcenter-page"></a>[MDOP TechCenter Page](https://go.microsoft.com/fwlink/p/?LinkId=225286)  
 Learn about the latest MDOP information and resources.
 
-<a href="" id="mdop-information-experience"></a>[MDOP Information Experience](http://go.microsoft.com/fwlink/p/?LinkId=236032)  
-Find documentation, videos, and other resources for MDOP technologies. You can also [send us feedback](mailto:MDOPDocs@microsoft.com%29 or learn about updates by following us on [Facebook]%28http://go.microsoft.com/fwlink/p/?LinkId=242445%29 or [Twitter]%28http://go.microsoft.com/fwlink/p/?LinkId=242447).
+<a href="" id="mdop-information-experience"></a>[MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032)  
+Find documentation, videos, and other resources for MDOP technologies. You can also [send us feedback](mailto:MDOPDocs@microsoft.com%29 or learn about updates by following us on [Facebook]%28https://go.microsoft.com/fwlink/p/?LinkId=242445%29 or [Twitter]%28https://go.microsoft.com/fwlink/p/?LinkId=242447).
 
  
 

@@ -37,7 +37,7 @@ You may have given these roles different names when you created them. For more i
 
     If the moved drive was configured to use a TPM chip on the original computer, complete the following additional steps. Otherwise, the recovery process is complete.
 
-4.  After unlocking the drive and completing the start process, open a command prompt in WinRE mode and use the `manage-bde` command to decrypt the drive. Using this tool is the only way to remove the TPM plus the PIN protector without the original TPM chip. For information about the `manage-bde` command, see [Manage-bde](http://go.microsoft.com/fwlink/?LinkId=393567).
+4.  After unlocking the drive and completing the start process, open a command prompt in WinRE mode and use the `manage-bde` command to decrypt the drive. Using this tool is the only way to remove the TPM plus the PIN protector without the original TPM chip. For information about the `manage-bde` command, see [Manage-bde](https://go.microsoft.com/fwlink/?LinkId=393567).
 
 5.  When the removal is completed, start the computer normally. The MBAM agent will now enforce the policy to encrypt the drive with the new computer’s TPM plus the PIN.
 

@@ -62,7 +62,6 @@ User interface (UI) settings are returned to their default values when **I'm Don
 - Reset Quick Actions to default state
 - Clear Toast notifications
 - Reset volume levels
-- Reset Cortana relaunch count
 - Reset sidebar width
 - Reset tablet mode layout
 

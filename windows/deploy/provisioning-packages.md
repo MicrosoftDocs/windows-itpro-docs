@@ -7,6 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: mobile
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Provisioning packages for Windows 10
@@ -89,7 +90,7 @@ The following table provides some examples of what can be configured using provi
 \* Using a provisioning package for auto-enrollment to System Center Configuration Manager or Configuration Manager/Intune hybrid is not supported. Use the Configuration Manager console to enroll devices.
  
 
-For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( http://go.microsoft.com/fwlink/p/?LinkId=619012).
+For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( https://go.microsoft.com/fwlink/p/?LinkId=619012).
 
 ## Creating a provisioning package
 
@@ -105,17 +106,17 @@ When you run ADKsetup.exe for Windows 10, version 1607, select the following fea
 > [!NOTE]
 > In previous versions of the Windows 10 ADK, you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features.
 
-After you install Windows ICD, you can use it to create a provisioning package. For detailed instructions on how to create a provisioning package, see [Build and apply a provisioning package](http://go.microsoft.com/fwlink/p/?LinkID=629651).
+After you install Windows ICD, you can use it to create a provisioning package. For detailed instructions on how to create a provisioning package, see [Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkID=629651).
 
 ## Applying a provisioning package to a device
 
 
-Provisioning packages can be applied both during image deployment and during runtime. For information on how to apply a provisioning package to a Windows 10-based device, see [Build and apply a provisioning package](http://go.microsoft.com/fwlink/p/?LinkID=629651).
+Provisioning packages can be applied both during image deployment and during runtime. For information on how to apply a provisioning package to a Windows 10-based device, see [Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkID=629651).
 
 ## Learn more
 
 
-[Windows 10: Deployment](http://go.microsoft.com/fwlink/p/?LinkId=533708)
+[Windows 10: Deployment](https://go.microsoft.com/fwlink/p/?LinkId=533708)
 
 ## Related topics
 

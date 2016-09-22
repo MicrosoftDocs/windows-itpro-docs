@@ -11,11 +11,14 @@ ms.prod: w10
 
 # Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
 
+**Applies to**
+-   Windows 10, version 1607
 
-User Experience Virtualization (UE-V) uses XML settings location templates to define the settings that User Experience Virtualization captures and applies. UE-V includes a set of standard settings location templates. It also includes the UE-V template generator tool that enables you to create custom settings location templates. After you create and deploy settings location templates, you can manage those templates by using Windows PowerShell and the Windows Management Instrumentation (WMI). For a complete list of UE-V PowerShell cmdlets, see [UE-V 2 Cmdlet Reference](https://technet.microsoft.com/library/dn520275.aspx).
+User Experience Virtualization (UE-V) uses XML settings location templates to define the settings that User Experience Virtualization captures and applies. UE-V includes a set of standard settings location templates. It also includes the UE-V template generator tool that enables you to create custom settings location templates. After you create and deploy settings location templates, you can manage those templates by using Windows PowerShell and the Windows Management Instrumentation (WMI). 
+
+> **Note**&nbsp;&nbsp;For a complete list of UE-V cmdlets, see [User Experience Virtualization in Windows PowerShell](https://technet.microsoft.com/library/mt772286.aspx).
 
 ## Manage UE-V settings location templates by using Windows PowerShell
-
 
 The WMI and Windows PowerShell features of UE-V include the ability to enable, disable, register, update, and unregister settings location templates. By using these features, you can automate the process of registering, updating, or unregistering templates with the UE-V service. You can also manually register templates by using WMI and Windows PowerShell commands. By using these features in conjunction with an electronic software distribution solution, Group Policy, or another automated deployment method such as a script, you can further automate that process.
 
@@ -44,11 +47,11 @@ You must have administrator permissions to update, register, or unregister a set
     <td align="left"><p>Lists all the settings location templates that are registered on the computer.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Get-UevTemplate –Application &lt;string&gt;</code></p></td>
+    <td align="left"><p><code>Get-UevTemplate -Application &lt;string&gt;</code></p></td>
     <td align="left"><p>Lists all the settings location templates that are registered on the computer where the application name or template name contains &lt;string&gt;.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><code>Get-UevTemplate –TemplateID &lt;string&gt;</code></p></td>
+    <td align="left"><p><code>Get-UevTemplate -TemplateID &lt;string&gt;</code></p></td>
     <td align="left"><p>Lists all the settings location templates that are registered on the computer where the template ID contains &lt;string&gt;.</p></td>
     </tr>
     <tr class="even">
@@ -76,7 +79,7 @@ You must have administrator permissions to update, register, or unregister a set
     <td align="left"><p>Registers one or more settings location template with UE-V by using relative paths and/or wildcard characters in file paths. After a template is registered, UE-V synchronizes the settings that are defined in the template between computers that have the template registered.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Register-UevTemplate –LiteralPath &lt;template file path&gt;[,&lt;template file path&gt;]</code></p></td>
+    <td align="left"><p><code>Register-UevTemplate -LiteralPath &lt;template file path&gt;[,&lt;template file path&gt;]</code></p></td>
     <td align="left"><p>Registers one or more settings location template with UE-V by using literal paths, where no characters can be interpreted as wildcard characters. After a template is registered, UE-V synchronizes the settings that are defined in the template between computers that have the template registered.</p></td>
     </tr>
     <tr class="odd">
@@ -92,11 +95,11 @@ You must have administrator permissions to update, register, or unregister a set
     <td align="left"><p>Updates one or more settings location templates with a more recent version of the template. Use relative paths and/or wildcard characters in the file paths. The new template should be a newer version than the existing template.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Update-UevTemplate –LiteralPath &lt;template file path&gt;[,&lt;template file path&gt;]</code></p></td>
+    <td align="left"><p><code>Update-UevTemplate -LiteralPath &lt;template file path&gt;[,&lt;template file path&gt;]</code></p></td>
     <td align="left"><p>Updates one or more settings location templates with a more recent version of the template. Use full paths to template files, where no characters can be interpreted as wildcard characters. The new template should be a newer version than the existing template.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><code>Clear-UevAppXPackage –Computer [-PackageFamilyName] &lt;package family name&gt;[,&lt;package family name&gt;]</code></p></td>
+    <td align="left"><p><code>Clear-UevAppXPackage -Computer [-PackageFamilyName] &lt;package family name&gt;[,&lt;package family name&gt;]</code></p></td>
     <td align="left"><p>Removes one or more Windows apps from the computer Windows app list.</p></td>
     </tr>
     <tr class="even">
@@ -104,15 +107,15 @@ You must have administrator permissions to update, register, or unregister a set
     <td align="left"><p>Removes Windows app from the current user Windows app list.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><code>Clear-UevAppXPackage –Computer -All</code></p></td>
+    <td align="left"><p><code>Clear-UevAppXPackage -Computer -All</code></p></td>
     <td align="left"><p>Removes all Windows apps from the computer Windows app list.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Clear-UevAppXPackage [–CurrentComputerUser] [-PackageFamilyName] &lt;package family name&gt;[,&lt;package family name&gt;]</code></p></td>
+    <td align="left"><p><code>Clear-UevAppXPackage [-CurrentComputerUser] [-PackageFamilyName] &lt;package family name&gt;[,&lt;package family name&gt;]</code></p></td>
     <td align="left"><p>Removes one or more Windows apps from the current user Windows app list.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><code>Clear-UevAppXPackage [–CurrentComputerUser] -All</code></p></td>
+    <td align="left"><p><code>Clear-UevAppXPackage [-CurrentComputerUser] -All</code></p></td>
     <td align="left"><p>Removes all Windows apps from the current user Windows app list.</p></td>
     </tr>
     <tr class="even">
@@ -120,11 +123,11 @@ You must have administrator permissions to update, register, or unregister a set
     <td align="left"><p>Disables a settings location template for the current user of the computer.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><code>Disable-UevAppXPackage –Computer [-PackageFamilyName] &lt;package family name&gt;[,&lt;package family name&gt;]</code></p></td>
+    <td align="left"><p><code>Disable-UevAppXPackage -Computer [-PackageFamilyName] &lt;package family name&gt;[,&lt;package family name&gt;]</code></p></td>
     <td align="left"><p>Disables one or more Windows apps in the computer Windows app list.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Disable-UevAppXPackage [–CurrentComputerUser] [-PackageFamilyName] &lt;package family name&gt;[,&lt;package family name&gt;]</code></p></td>
+    <td align="left"><p><code>Disable-UevAppXPackage [-CurrentComputerUser] [-PackageFamilyName] &lt;package family name&gt;[,&lt;package family name&gt;]</code></p></td>
     <td align="left"><p>Disables one or more Windows apps in the current user Windows app list.</p></td>
     </tr>
     <tr class="odd">
@@ -132,11 +135,11 @@ You must have administrator permissions to update, register, or unregister a set
     <td align="left"><p>Enables a settings location template for the current user of the computer.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Enable-UevAppXPackage –Computer [-PackageFamilyName] &lt;package family name&gt;[,&lt;package family name&gt;]</code></p></td>
+    <td align="left"><p><code>Enable-UevAppXPackage -Computer [-PackageFamilyName] &lt;package family name&gt;[,&lt;package family name&gt;]</code></p></td>
     <td align="left"><p>Enables one or more Windows apps in the computer Windows app list.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><code>Enable-UevAppXPackage [–CurrentComputerUser] [-PackageFamilyName] &lt;package family name&gt;[,&lt;package family name&gt;]</code></p></td>
+    <td align="left"><p><code>Enable-UevAppXPackage [-CurrentComputerUser] [-PackageFamilyName] &lt;package family name&gt;[,&lt;package family name&gt;]</code></p></td>
     <td align="left"><p>Enables one or more Windows apps in the current user Windows app list.</p></td>
     </tr>
     <tr class="even">
@@ -144,7 +147,7 @@ You must have administrator permissions to update, register, or unregister a set
     <td align="left"><p>Determines whether one or more settings location templates comply with its XML schema. Can use relative paths and wildcard characters.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><code>Test-UevTemplate –LiteralPath &lt;template file path&gt;[,&lt;template file path&gt;]</code></p></td>
+    <td align="left"><p><code>Test-UevTemplate -LiteralPath &lt;template file path&gt;[,&lt;template file path&gt;]</code></p></td>
     <td align="left"><p>Determines whether one or more settings location templates comply with its XML schema. The path must be a full path to the template file, but does not include wildcard characters.</p></td>
     </tr>
     </tbody>
@@ -213,9 +216,9 @@ The enabled state is set in the current user section of the registry.
 <a href="" id="policymachine"></a>**PolicyMachine**  
 The enabled state is set in the policy section of the local computer section of the registry.
 
-To get the user-configured list of Windows apps, at the Windows PowerShell command prompt, enter: `Get-UevAppxPackage –CurrentComputerUser`
+To get the user-configured list of Windows apps, at the Windows PowerShell command prompt, enter: `Get-UevAppxPackage -CurrentComputerUser`
 
-To get the computer-configured list of Windows apps, at the Windows PowerShell command prompt, enter: `Get-UevAppxPackage –Computer`
+To get the computer-configured list of Windows apps, at the Windows PowerShell command prompt, enter: `Get-UevAppxPackage -Computer`
 
 For either parameter, CurrentComputerUser or Computer, the cmdlet returns a list of the Windows apps that are configured at the user or at the computer level.
 
@@ -257,7 +260,7 @@ User Experience Virtualization provides the following set of WMI commands. Admin
     <td align="left"><p>Lists all the settings location templates that are registered for the computer.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Invoke-WmiMethod –Namespace root\Microsoft\UEV –Class SettingsLocationTemplate –Name GetProcessInfoByTemplateId &lt;template Id&gt;</code></p></td>
+    <td align="left"><p><code>Invoke-WmiMethod -Namespace root\Microsoft\UEV -Class SettingsLocationTemplate -Name GetProcessInfoByTemplateId &lt;template Id&gt;</code></p></td>
     <td align="left"><p>Gets the name of the program and version information, which depends on the template name.</p></td>
     </tr>
     <tr class="odd">
@@ -328,10 +331,12 @@ Where a list of Package Family Names is called by the WMI command, the list must
 
 ## Have a suggestion for UE-V?
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 
 [Administering UE-V with Windows PowerShell and WMI](uev-administering-uev-with-windows-powershell-and-wmi.md)
 
 [Administering UE-V](uev-administering-uev.md)
+
+[User Experience Virtualization in Windows PowerShell](https://technet.microsoft.com/library/mt772286.aspx)

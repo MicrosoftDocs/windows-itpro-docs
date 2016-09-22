@@ -169,7 +169,7 @@ For each app in your inventory, you can view and manage license details. This gi
 
 **To view license details**
 
-1.  Sign in to [Store for Business](http://go.microsoft.com/fwlink/p/?LinkId=691845)
+1.  Sign in to [Store for Business](https://go.microsoft.com/fwlink/p/?LinkId=691845)
 
 2.  Click **Manage**, and then choose **Inventory**.
 

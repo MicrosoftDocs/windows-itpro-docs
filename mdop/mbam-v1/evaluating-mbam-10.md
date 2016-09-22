@@ -69,7 +69,7 @@ BACKUP CERTIFICATE tdeCert TO FILE = &#39;C:\Backup\TDECertificate.cer&#39;
          ENCRYPTION BY PASSWORD = &#39;P@55w0rd&#39;);
 GO</code></pre></td>
 <td align="left"><p>[MBAM 1.0 Deployment Prerequisites](mbam-10-deployment-prerequisites.md)</p>
-<p>[Database Encryption in SQL Server 2008 Enterprise Edition](http://go.microsoft.com/fwlink/?LinkId=269703)</p></td>
+<p>[Database Encryption in SQL Server 2008 Enterprise Edition](https://go.microsoft.com/fwlink/?LinkId=269703)</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="odd">

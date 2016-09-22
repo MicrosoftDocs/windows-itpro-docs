@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: iaanw
+localizationpriority: high
 ---
 
 # Minimum requirements for Windows Defender ATP
@@ -15,7 +16,7 @@ author: iaanw
 **Applies to:**
 
 - Windows 10 Enterprise
-- Windows 10 Enterprise for Education
+- Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
@@ -35,7 +36,7 @@ When you run the onboarding wizard for the first time, you must choose where you
 The Windows Defender ATP agent only supports the following editions of Windows 10:
 
 - Windows 10 Enterprise
-- Windows 10 Enterprise for Education
+- Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
 

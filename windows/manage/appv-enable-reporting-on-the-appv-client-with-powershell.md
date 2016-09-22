@@ -1,6 +1,6 @@
 ---
-title: How to Enable Reporting on the App-V Client by Using PowerShell (Windows 10)
-description: How to Enable Reporting on the App-V Client by Using PowerShell
+title: How to Enable Reporting on the App-V Client by Using Windows PowerShell (Windows 10)
+description: How to Enable Reporting on the App-V Client by Using Windows PowerShell
 author: MaggiePucciEvans
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,8 +9,10 @@ ms.prod: w10
 ---
 
 
-# How to Enable Reporting on the App-V Client by Using PowerShell
+# How to Enable Reporting on the App-V Client by Using Windows PowerShell
 
+**Applies to**
+-   Windows 10, version 1607
 
 Use the following procedure to configure the App-V for reporting.
 
@@ -18,12 +20,12 @@ Use the following procedure to configure the App-V for reporting.
 
 1.  Enable the App-V client. For more information, see [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).
 
-2.  After you have enabled the App-V client, use the **Set-AppvClientConfiguration** PowerShell to configure appropriate Reporting Configuration settings:
+2.  After you have enabled the App-V client, use the **Set-AppvClientConfiguration** cmdlet to configure appropriate Reporting Configuration settings:
 
     <table>
     <colgroup>
-    <col width="50%" />
-    <col width="50%" />
+    <col width="30%" />
+    <col width="70%" />
     </colgroup>
     <thead>
     <tr class="header">
@@ -74,14 +76,14 @@ Use the following procedure to configure the App-V for reporting.
 
 3.  After the appropriate settings have been configured, the computer running the App-V client will automatically collect data and will send the data back to the reporting server.
 
-    Additionally, administrators can manually send the data back in an on-demand manner using the **Send-AppvClientReport** PowerShell cmdlet.
+    Additionally, administrators can manually send the data back in an on-demand manner using the **Send-AppvClientReport** cmdlet.
 
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
 
-[Administering App-V by Using PowerShell](appv-administering-appv-with-powershell.md)
+[Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)

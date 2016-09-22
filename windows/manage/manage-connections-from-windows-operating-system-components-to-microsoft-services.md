@@ -2,7 +2,7 @@
 title: Manage connections from Windows operating system components to Microsoft services (Windows 10)
 description: If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.
 ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
-keywords: privacy, manage connections to Microsoft
+keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,9 +12,12 @@ author: brianlic-msft
 
 # Manage connections from Windows operating system components to Microsoft services
 
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span> 
+
 **Applies to**
 
 -   Windows 10
+-   Windows Server 2016
 
 If you're looking for content on what each telemetry level means and how to configure it in your organization, see [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md).
 
@@ -22,127 +25,14 @@ Learn about the network connections that Windows components make to Microsoft an
 
 If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure telemetry at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
 
-Some of the network connections discussed in this article can be managed in Windows 10 Mobile, Windows 10 Mobile Enterprise, Windows 10, version 1507, and Windows 10, version 1511. However, you must use Windows 10 Enterprise, version 1607 or Windows 10 Education, version 1607 to manage them all.
+You can configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. There are many reason why these communications are enabled by default, such as updating malware definitions and maintain current certificate revocation lists, which is why we strongly recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
 
-You can configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all other connections to Microsoft services as described in this article to prevent Windows from sending any data to Microsoft. We strongly recommend against this, as this data helps us deliver a secure, reliable, and more delightful personalized experience.
+We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
-We are always working on improving Windows 10 for our customers. We invite IT pros to join the [Windows Insider Program](http://insider.windows.com) to give us feedback on what we can do to make Windows 10 work better for your organization.
 
-Here's what's covered in this article:
+## What's new in Windows 10, version 1607 and Windows Server 2016
 
--   [Info management settings](#bkmk-othersettings)
-
-    -   [1. Certificate trust lists](#certificate-trust-lists)
-
-    -   [2. Cortana](#bkmk-cortana)
-
-        -   [2.1 Cortana Group Policies](#bkmk-cortana-gp)
-
-        -   [2.2 Cortana MDM policies](#bkmk-cortana-mdm)
-
-        -   [2.3 Cortana Windows Provisioning](#bkmk-cortana-prov)
-
-    -   [3. Date & Time](#bkmk-datetime)
-
-    -   [4. Device metadata retrieval](#bkmk-devinst)
-
-    -   [5. Font streaming](#font-streaming)
-
-    -   [6. Insider Preview builds](#bkmk-previewbuilds)
-
-    -   [7. Internet Explorer](#bkmk-ie)
-
-        -   [7.1 Internet Explorer Group Policies](#bkmk-ie-gp)
-
-        -   [7.2 ActiveX control blocking](#bkmk-ie-activex)
-
-    -   [8. Live Tiles](#live-tiles)
-    
-    -   [9. Mail synchronization](#bkmk-mailsync)
-
-    -   [10. Microsoft Account](#bkmk-microsoft-account)
-
-    -   [11. Microsoft Edge](#bkmk-edge)
-
-        -   [11.1 Microsoft Edge Group Policies](#bkmk-edgegp)
-
-        -   [11.2 Microsoft Edge MDM policies](#bkmk-edge-mdm)
-
-        -   [11.3 Microsoft Edge Windows Provisioning](#bkmk-edge-prov)
-
-    -   [12. Network Connection Status Indicator](#bkmk-ncsi)
-
-    -   [13. Offline maps](#bkmk-offlinemaps)
-
-    -   [14. OneDrive](#bkmk-onedrive)
-
-    -   [15. Preinstalled apps](#bkmk-preinstalledapps)
-
-    -   [16. Settings &gt; Privacy](#bkmk-settingssection)
-
-        -   [16.1 General](#bkmk-priv-general)
-
-        -   [16.2 Location](#bkmk-priv-location)
-
-        -   [16.3 Camera](#bkmk-priv-camera)
-
-        -   [16.4 Microphone](#bkmk-priv-microphone)
-
-        -   [16.5 Notifications](#bkmk-priv-notifications)
-
-        -   [16.6 Speech, inking, & typing](#bkmk-priv-speech)
-
-        -   [16.7 Account info](#bkmk-priv-accounts)
-
-        -   [16.8 Contacts](#bkmk-priv-contacts)
-
-        -   [16.9 Calendar](#bkmk-priv-calendar)
-
-        -   [16.10 Call history](#bkmk-priv-callhistory)
-
-        -   [16.11 Email](#bkmk-priv-email)
-
-        -   [16.12 Messaging](#bkmk-priv-messaging)
-
-        -   [16.13 Radios](#bkmk-priv-radios)
-
-        -   [16.14 Other devices](#bkmk-priv-other-devices)
-
-        -   [16.15 Feedback & diagnostics](#bkmk-priv-feedback)
-
-        -   [16.16 Background apps](#bkmk-priv-background)
-
-    -   [17. Software Protection Platform](#bkmk-spp)
-
-    -   [18. Sync your settings](#bkmk-syncsettings)
-
-    -   [19. Teredo](#bkmk-teredo)
-
-    -   [20. Wi-Fi Sense](#bkmk-wifisense)
-
-    -   [21. Windows Defender](#bkmk-defender)
-
-    -   [22. Windows Media Player](#bkmk-wmp)
-
-    -   [23. Windows spotlight](#bkmk-spotlight)
-
-    -   [24. Windows Store](#bkmk-windowsstore)
-
-    -   [25. Windows Update Delivery Optimization](#bkmk-updates)
-
-        -   [25.1 Settings &gt; Update & security](#bkmk-wudo-ui)
-
-        -   [25.2 Delivery Optimization Group Policies](#bkmk-wudo-gp)
-
-        -   [25.3 Delivery Optimization MDM policies](#bkmk-wudo-mdm)
-
-        -   [25.4 Delivery Optimization Windows Provisioning](#bkmk-wudo-prov)
-
-    -   [26. Windows Update](#bkmk-wu)
-
-## What's new in Windows 10, version 1607
-
-Here's a list of changes that were made to this article for Windows 10, version 1607:
+Here's a list of changes that were made to this article for Windows 10, version 1607 and Windows Server 2016:
 
 - Added instructions on how to turn off speech recognition and speech synthesis model updates in [14.5 Speech, inking, & typing](#bkmk-priv-speech).
 - Added instructions on how to turn off flip ahead with an Internet Explorer Group Policy.
@@ -156,17 +46,117 @@ Here's a list of changes that were made to this article for Windows 10, version 
     - Turn off unsolicited network traffic on the Offline Maps settings page
     - Turn off all Windows spotlight features
 
-## <a href="" id="bkmk-othersettings"></a>Info management settings
+## <a href="" id="bkmk-othersettings"></a>Settings
 
 
-This section lists the components that make network connections to Microsoft services automatically. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all of these connections. We strongly recommend against this, as this data helps us deliver a secure, reliable, and more delightful personalized experience.
+The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all of these connections.
 
-The settings in this section assume you are using Windows 10, version 1607. They will also be included in the next update for the Long Term Servicing Branch.
+If you're running Windows 10, they will be included in the next update for the Long Term Servicing Branch.
 
-See the following table for a summary of the management settings. For more info, see its corresponding section.
+### Settings for Windows 10 Enterprise, version 1607
 
-![Management settings table](images/settings-table.png)
+See the following table for a summary of the management settings for Windows 10 Enterprise, version 1607.
 
+| Setting | UI | Group Policy | MDM policy | Registry | Command line |
+| - | :-: | :-: | :-: | :-: | :-: |
+| [1. Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | | | |
+| [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
+| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | | ![Check mark](images/checkmark.png) | |
+| [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | | |
+| [5. Font streaming](#font-streaming) | | | | ![Check mark](images/checkmark.png) | |
+| [6. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
+| [7. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| [8. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | | | |
+| [9. Mail synchronization](#bkmk-mailsync) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | | |
+| [10. Microsoft Account](#bkmk-microsoft-account) | | | | ![Check mark](images/checkmark.png) | |
+| [11. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
+| [12. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | | | |
+| [13. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| [14. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [15. Preinstalled apps](#bkmk-preinstalledapps) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
+| [16. Settings > Privacy](#bkmk-settingssection) | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.1 General](#bkmk-priv-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.2 Location](#bkmk-priv-location) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.3 Camera](#bkmk-priv-camera) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.4 Microphone](#bkmk-priv-microphone) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.5 Notifications](#bkmk-priv-notifications) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.6 Speech, inking, & typing](#bkmk-priv-speech) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.7 Account info](#bkmk-priv-accounts) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.8 Contacts](#bkmk-priv-contacts) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.9 Calendar](#bkmk-priv-calendar) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.10 Call history](#bkmk-priv-callhistory) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.11 Email](#bkmk-priv-email) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.12 Messaging](#bkmk-priv-messaging) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.13 Radios](#bkmk-priv-radios) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.14 Other devices](#bkmk-priv-other-devices) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.15 Feedback & diagnostics](#bkmk-priv-feedback) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.16 Background apps](#bkmk-priv-background) | ![Check mark](images/checkmark.png) | | | | |
+| [17. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [18. Sync your settings](#bkmk-syncsettings) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [19. Teredo](#bkmk-teredo) | | | | | ![Check mark](images/checkmark.png) |
+| [20. Wi-Fi Sense](#bkmk-wifisense) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [21. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [22. Windows Media Player](#bkmk-wmp) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
+| [23. Windows spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
+| [24. Windows Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | | | |
+| [25. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+
+### Settings for Windows Server 2016 with Desktop Experience
+
+See the following table for a summary of the management settings for Windows Server 2016 with Desktop Experience.
+
+| Setting | UI | Group Policy | Registry | Command line |
+| - | :-: | :-: | :-: | :-: |
+| [1. Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | |
+| [5. Font streaming](#font-streaming) | | | ![Check mark](images/checkmark.png) | |
+| [6. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [7. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| [8. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | | |
+| [10. Microsoft Account](#bkmk-microsoft-account) | | | ![Check mark](images/checkmark.png) | |
+| [12. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | | |
+| [14. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | |
+| [16. Settings > Privacy](#bkmk-settingssection) | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.1 General](#bkmk-priv-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [17. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | | |
+| [19. Teredo](#bkmk-teredo) | | | | ![Check mark](images/checkmark.png) |
+| [21. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [22. Windows Media Player](#bkmk-wmp) | | | | ![Check mark](images/checkmark.png) |
+| [24. Windows Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | | |
+| [26. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+
+### Settings for Windows Server 2016 Server Core
+
+See the following table for a summary of the management settings for Windows Server 2016 Server Core.
+
+| Setting | Group Policy | Registry | Command line |
+| - | :-: | :-: | :-: | :-: | :-: |
+| [1. Certificate trust lists](#certificate-trust-lists) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [3. Date & Time](#bkmk-datetime) | | ![Check mark](images/checkmark.png) | |
+| [5. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | |
+| [12. Network Connection Status Indicator](#bkmk-ncsi) | ![Check mark](images/checkmark.png) | | |
+| [17. Software Protection Platform](#bkmk-spp) | ![Check mark](images/checkmark.png) | | |
+| [19. Teredo](#bkmk-teredo) | | | ![Check mark](images/checkmark.png) |
+| [21. Windows Defender](#bkmk-defender) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+
+### Settings for Windows Server 2016 Nano Server
+
+See the following table for a summary of the management settings for Windows Server 2016 Nano Server.
+
+| Setting | Registry | Command line |
+| - | :-: | :-: | :-: | :-: | :-: |
+| [1. Certificate trust lists](#certificate-trust-lists) | ![Check mark](images/checkmark.png) | |
+| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | |
+| [19. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) |
+| [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | |
+
+## Settings
+
+Use the following sections for more information about how to configure each setting.
 
 ### <a href="" id="certificate-trust-lists"></a>1. Certificate trust lists
 
@@ -174,40 +164,55 @@ A certificate trust list is a predefined list of items, such as a list of certif
 
 To turn off the automatic download of an updated certificate trust list, you can turn off automatic root updates, which also includes the disallowed certificate list and the pin rules list.
 
+For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 2016 Server Core:
+
 - Enable the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Internet Communication Management** > **Internet Communication Settings** > **Turn off Automatic Root Certificates Update**
 
-    -or-
-
-- Create a REG\_DWORD registry setting called **DisableRootAutoUpdate** in **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot\DisableRootAutoUpdate**, with a value of 1.
-
-After that, do the following in a Group Policy:
+    -and-
 
 1. Navigate to **Computer Configuration** > **Windows Settings** > **Security Settings** > **Public Key Policies**.
 2. Double-click **Certificate Path Validation Settings**.
 3. On the **Network Retrieval** tab, select the **Define these policy settings** check box.
 4. Clear the **Automatically update certificates in the Microsoft Root Certificate Program (recommended)** check box, and then click **OK**.
 
+    -or-
 
-### <a href="" id="bkmk-cortana"></a>2. Cortana
+- Create the registry path **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot** and then add a REG\_DWORD registry setting, called **DisableRootAutoUpdate**, with a value of 1.
 
-Use either Group Policy or MDM policies to manage settings for Cortana. For more info, see [Cortana, Search, and privacy: FAQ](http://go.microsoft.com/fwlink/p/?LinkId=730683).
+    -and-
 
-### <a href="" id="bkmk-cortana-gp"></a>2.1 Cortana Group Policies
+1. Navigate to **Computer Configuration** > **Windows Settings** > **Security Settings** > **Public Key Policies**.
+2. Double-click **Certificate Path Validation Settings**.
+3. On the **Network Retrieval** tab, select the **Define these policy settings** check box.
+4. Clear the **Automatically update certificates in the Microsoft Root Certificate Program (recommended)** check box, and then click **OK**.
+
+On Windows Server 2016 Nano Server:
+
+- Create the registry path **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot** and then add a REG\_DWORD registry setting, called **DisableRootAutoUpdate**, with a value of 1.
+
+>[!NOTE]  
+>CRL and OCSP network traffic is currently whitelisted and will still show up in network traces.  CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of them, but there are many others, such as DigiCert, Thawte, Google, Symantec, and VeriSign.
+
+### <a href="" id="bkmk-cortana"></a>2. Cortana and Search
+
+Use either Group Policy or MDM policies to manage settings for Cortana. For more info, see [Cortana, Search, and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730683).
+
+### <a href="" id="bkmk-cortana-gp"></a>2.1 Cortana and Search Group Policies
 
 Find the Cortana Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Search**.
 
 | Policy                                               | Description                                                                           |
 |------------------------------------------------------|---------------------------------------------------------------------------------------|
-| Allow Cortana                                        | Choose whether to let Cortana install and run on the device.                          |
-| Allow search and Cortana to use location             | Choose whether Cortana and Search can provide location-aware search results.          |
-| Do not allow web search                              | Choose whether to search the web from Windows Desktop Search. <br /> Default: Disabled|
-| Don't search the web or display web results in Search| Choose whether to search the web from Cortana.                                        |
-| Set what information is shared in Search             | Control what information is shared with Bing in Search.                               |
+| Allow Cortana                                        | Choose whether to let Cortana install and run on the device.<br/><br/>Disable this policy to turn off Cortana. |
+| Allow search and Cortana to use location             | Choose whether Cortana and Search can provide location-aware search results.<br/><br/>Disable this policy to block access to location information for Cortana. |
+| Do not allow web search                              | Choose whether to search the web from Windows Desktop Search.<br/><br/>Enable this policy to remove the option to search the Internet from Cortana. |
+| Don't search the web or display web results in Search| Choose whether to search the web from Cortana.<br/><br/>Enable this policy to stop web queries and results from showing in Search. |
+| Set what information is shared in Search             | Control what information is shared with Bing in Search.<br/><br/>If you enable this policy and set it to **Anonymous info**, usage information will be shared but not search history, Microsoft Account information, or specific location. |
 
-In Windows 10, version 1507 and Windows 10, version 1511, When you enable the **Don't search the web or display web results in Search** Group Policy, you can control the behavior of whether Cortana searches the web to display web results. However, this policy only covers whether or not web search is performed. There could still be a small amount of network traffic to Bing.com to evaluate if certain Cortana components are up-to-date or not. In order to turn off that network activity completely, you can create a Windows Firewall rule to prevent outbound traffic.
+In Windows 10, version 1507 and Windows 10, version 1511, when you enable the **Don't search the web or display web results in Search** Group Policy, you can control the behavior of whether Cortana searches the web to display web results. However, this policy only covers whether or not web search is performed. There could still be a small amount of network traffic to Bing.com to evaluate if certain Cortana components are up-to-date or not. In order to turn off that network activity completely, you can create a Windows Firewall rule to prevent outbound traffic.
 
 >[!IMPORTANT]
->These steps are not required for devices running Windows 10, version 1607. 
+>These steps are not required for devices running Windows 10, version 1607 or Windows Server 2016. 
 
 1.  Expand **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Windows Firewall with Advanced Security** &gt; **Windows Firewall with Advanced Security - &lt;LDAP name&gt;**, and then click **Outbound Rules**.
 
@@ -235,18 +240,14 @@ In Windows 10, version 1507 and Windows 10, version 1511, When you enable the **
 
 If your organization tests network traffic, you should not use Fiddler to test Windows Firewall settings. Fiddler is a network proxy and Windows Firewall does not block proxy traffic. You should use a network traffic analyzer, such as WireShark or Message Analyzer.
 
-### <a href="" id="bkmk-cortana-mdm"></a>2.2 Cortana MDM policies
+### <a href="" id="bkmk-cortana-mdm"></a>2.2 Cortana and Search MDM policies
 
-The following Cortana MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
+For Windows 10 only, the following Cortana MDM policies are available in the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Experience/AllowCortana                              | Choose whether to let Cortana install and run on the device.                                        |
 | Search/AllowSearchToUseLocation                      | Choose whether Cortana and Search can provide location-aware search results. <br /> Default: Allowed|
-
-### <a href="" id="bkmk-cortana-prov"></a>2.3 Cortana Windows Provisioning
-
-To use Windows Imaging and Configuration Designer (ICD) to create a provisioning package with the settings for these policies, go to **Runtime settings** &gt; **Policies** to find **Experience** &gt; **AllowCortana** and **Search** &gt; **AllowSearchToUseLocation**.
 
 ### <a href="" id="bkmk-datetime"></a>3. Date & Time
 
@@ -264,16 +265,26 @@ To prevent Windows from retrieving device metadata from the Internet, apply the 
 
 ### <a href="" id="font-streaming"></a>5. Font streaming
 
-Starting with Windows 10, fonts that are included in Windows but that are not stored on the local device can be downloaded on demand.
+Fonts that are included in Windows but that are not stored on the local device can be downloaded on demand.
 
 To turn off font streaming, create a REG\_DWORD registry setting called **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters**, with a value of 1.
 
-> [!NOTE] 
-> This may change in future versions of Windows.
 
 ### <a href="" id="bkmk-previewbuilds"></a>6. Insider Preview builds
 
-To turn off Insider Preview builds if you're running a released version of Windows 10. If you're running a preview version of Windows 10, you must roll back to a released version before you can turn off Insider Preview builds.
+The Windows Insider Preview program lets you help shape the future of Windows, be part of the community, and get early access to releases of Windows 10.
+
+> [!NOTE]  
+> This setting stops communication with the Windows Insider Preview service that checks for new builds. Windows Insider Preview builds only apply to Windows 10 and are not available for Windows Server 2016.
+
+To turn off Insider Preview builds for a released version of Windows 10:
+
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds** &gt; **Toggle user control over Insider builds**.
+
+To turn off Insider Preview builds for Windows 10:
+
+> [!NOTE]  
+> If you're running a preview version of Windows 10, you must roll back to a released version before you can turn off Insider Preview builds.
 
 -   Turn off the feature in the UI: **Settings** > **Update & security** > **Windows Insider Program** > **Stop Insider Preview builds**.
 
@@ -303,11 +314,7 @@ To turn off Insider Preview builds if you're running a released version of Windo
 
 ### <a href="" id="bkmk-ie"></a>7. Internet Explorer
 
-Use Group Policy to manage settings for Internet Explorer.
-
-### <a href="" id="bkmk-ie-gp"></a>7.1 Internet Explorer Group Policies
-
-Find the Internet Explorer Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Internet Explorer**.
+Use Group Policy to manage settings for Internet Explorer.  You can find the Internet Explorer Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Internet Explorer**.
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -324,7 +331,7 @@ There are two more Group Policy objects that are used by Internet Explorer:
 | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Internet Control Panel** > **Advanced Page**  | Turn off the flip ahead with page prediction feature | Choose whether an employee can swipe across a screen or click forward to go to the next pre-loaded page of a website. <br /> Default: Enabled |
 | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **RSS Feeds** | Turn off background synchronization for feeds and Web Slices | Choose whether to have background synchronization for feeds and Web Slices. <br /> Default: Enabled |
 
-### <a href="" id="bkmk-ie-activex"></a>7.2 ActiveX control blocking
+### <a href="" id="bkmk-ie-activex"></a>7.1 ActiveX control blocking
 
 ActiveX control blocking periodically downloads a new list of out-of-date ActiveX controls that should be blocked. You can turn this off by changing the REG\_DWORD registry setting **HKEY\_CURRENT\_USER\\Software\\Microsoft\\Internet Explorer\\VersionManager\\DownloadVersionList** to 0 (zero).
 
@@ -358,12 +365,12 @@ To turn off the Windows Mail app:
 
 To prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways.
 
--   Change the **Start** REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentControlSet\\Services\\wlidsvc** to 4.
+-   Change the **Start** REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\wlidsvc** to 4.
 
 
 ### <a href="" id="bkmk-edge"></a>11. Microsoft Edge
 
-Use either Group Policy or MDM policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](http://go.microsoft.com/fwlink/p/?LinkId=730682).
+Use either Group Policy or MDM policies to manage settings for Microsoft Edge. For more info, see [Microsoft Edge and privacy: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730682).
 
 ### <a href="" id="bkmk-edgegp"></a>11.1 Microsoft Edge Group Policies
 
@@ -407,17 +414,14 @@ The following Microsoft Edge MDM policies are available in the [Policy CSP](http
 | Browser/AllowSearchSuggestionsinAddressBar           | Choose whether the address bar shows search suggestions.. <br /> Default: Allowed                   |
 | Browser/AllowSmartScreen                             | Choose whether SmartScreen is turned on or off.  <br /> Default: Allowed                            |
 
-### <a href="" id="bkmk-edge-prov"></a>11.3 Microsoft Edge Windows Provisioning
-
-Use Windows ICD to create a provisioning package with the settings for these policies, go to **Runtime settings** &gt; **Policies**.
 
 For a complete list of the Microsoft Edge policies, see [Available policies for Microsoft Edge](http://technet.microsoft.com/library/mt270204.aspx).
 
 ### <a href="" id="bkmk-ncsi"></a>12. Network Connection Status Indicator
 
-Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet. For more info about NCIS, see [The Network Connection Status Icon](http://blogs.technet.com/b/networking/archive/2012/12/20/the-network-connection-status-icon.aspx).
+Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet. For more info about NCSI, see [The Network Connection Status Icon](http://blogs.technet.com/b/networking/archive/2012/12/20/the-network-connection-status-icon.aspx).
 
-In versions of Windows 10 prior to Windows 10, version 1607, the URL was http://www.msftncsi.com. 
+In versions of Windows 10 prior to Windows 10, version 1607 and Windows Server 2016, the URL was http://www.msftncsi.com. 
 
 You can turn off NCSI through Group Policy:
 
@@ -615,7 +619,7 @@ To turn off **Turn on SmartScreen Filter to check web content (URLs) that Window
 
     -or-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge** &gt; **Turn off the SmartScreen Filter**.
+-   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge** &gt; **Configure SmartScreen Filter**.
 
     Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **File Explorer** &gt; **Configure Windows SmartScreen**.
 
@@ -663,6 +667,10 @@ To turn off **Let websites provide locally relevant content by accessing my lang
 To turn off **Let apps on my other devices open apps and continue experiences on this devices**:
 
 - Turn off the feature in the UI.
+
+    -or-
+
+-   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Group Policy** &gt; **Continue experiences on this device**.
 
 To turn off **Let apps on my other devices use Bluetooth to open apps and continue experiences on this device**:
 
@@ -945,6 +953,10 @@ To turn off **Let apps automatically share and sync info with wireless devices t
 
 -   Turn off the feature in the UI.
 
+     -or-
+
+-   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps sync with devices**
+
 To turn off **Let your apps use your trusted devices (hardware you've already connected, or comes with your PC, tablet, or phone)**:
 
 -   Turn off the feature in the UI.
@@ -1037,15 +1049,23 @@ To turn off **Let apps run in the background**:
 
 -   Turn off the feature in the UI for each app.
 
+    -   Set the **Select a setting** box to **Force Deny**.
+
 ### <a href="" id="bkmk-spp"></a>17. Software Protection Platform
 
 Enterprise customers can manage their Windows activation status with volume licensing using an on-premise Key Management Server. You can opt out of sending KMS client activation data to Microsoft automatically by doing one of the following:
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Activation**
+For Windows 10:
+
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client AVS Validation**
 
     -or-
 
 -   Apply the Licensing/DisallowKMSClientOnlineAVSValidation MDM policy from the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is disabled (default) and 1 is enabled.
+
+For Windows Server 2016 with Desktop Experience or Windows Server 2016 Server Core:
+
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client AVS Validation**
 
 The Windows activation status will be valid for a rolling period of 180 days with weekly activation status checks to the KMS.
 
@@ -1099,11 +1119,11 @@ To turn off **Connect to suggested open hotspots** and **Connect to networks sha
 
     -or-
 
--   Change the Windows Provisioning setting, WiFISenseAllowed, to 0 (zero). For more info, see the Windows Provisioning Settings reference doc, [WiFiSenseAllowed](http://go.microsoft.com/fwlink/p/?LinkId=620909).
+-   Change the Windows Provisioning setting, WiFISenseAllowed, to 0 (zero). For more info, see the Windows Provisioning Settings reference doc, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620909).
 
     -or-
 
--   Use the Unattended settings to set the value of WiFiSenseAllowed to 0 (zero). For more info, see the Unattended Windows Setup reference doc, [WiFiSenseAllowed](http://go.microsoft.com/fwlink/p/?LinkId=620910).
+-   Use the Unattended settings to set the value of WiFiSenseAllowed to 0 (zero). For more info, see the Unattended Windows Setup reference doc, [WiFiSenseAllowed](https://go.microsoft.com/fwlink/p/?LinkId=620910).
 
 When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings screen, but they’re non-functional and they can’t be controlled by the employee.
 
@@ -1115,7 +1135,7 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 
     -or-
 
--   Apply the Defender/AllowClouldProtection MDM policy from the [Defender CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
+-   For Windows 10 only, apply the Defender/AllowClouldProtection MDM policy from the [Defender CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
 
     -or-
 
@@ -1131,7 +1151,7 @@ You can stop sending file samples back to Microsoft.
 
     -or-
 
--   Apply the Defender/SubmitSamplesConsent MDM policy from the [Defender CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
+-   For Windows 10 only, apply the Defender/SubmitSamplesConsent MDM policy from the [Defender CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
 
     -   **0**. Always prompt.
 
@@ -1153,7 +1173,7 @@ You can stop downloading definition updates:
 
 -   Disable the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender** &gt; **Signature Updates** &gt; **Define file shares for downloading definition updates** and set it to nothing.
 
-You can stop Enhanced Notifications:
+For Windows 10 only, you can stop Enhanced Notifications:
 
 - Turn off the feature in the UI.
 
@@ -1161,11 +1181,15 @@ You can also use the registry to turn off Malicious Software Reporting Tool tele
 
 ### <a href="" id="bkmk-wmp"></a>22. Windows Media Player
 
-To remove Windows Media Player:
+To remove Windows Media Player on Windows 10:
 
 -   From the **Programs and Features** control panel, click **Turn Windows features on or off**, under **Media Features**, clear the **Windows Media Player** check box, and then click **OK**.
 
     -or-
+
+-   Run the following DISM command from an elevated command prompt: **dism /online /Disable-Feature /FeatureName:WindowsMediaPlayer**
+
+To remove Windows Media Player on Windows Server 2016:
 
 -   Run the following DISM command from an elevated command prompt: **dism /online /Disable-Feature /FeatureName:WindowsMediaPlayer**
 
@@ -1212,7 +1236,7 @@ For more info, see [Windows Spotlight on the lock screen](../manage/windows-spot
 
 ### <a href="" id="bkmk-windowsstore"></a>24. Windows Store
 
-You can turn off the ability to launch apps from the Windows Store that were preinstalled or downloaded. This will also turn off automatic app updates, and the Windows Store will be disabled.
+You can turn off the ability to launch apps from the Windows Store that were preinstalled or downloaded. This will also turn off automatic app updates, and the Windows Store will be disabled. On Windows Server 2016, this will block Windows Store calls from Universal Windows Apps.
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Disable all apps from Windows Store**.
 
@@ -1261,7 +1285,7 @@ The following Delivery Optimization MDM policies are available in the [Policy CS
 
 If you don't have an MDM server in your enterprise, you can use Windows Provisioning to configure the Delivery Optimization policies
 
-Use Windows ICD, included with the [Windows Assessment and Deployment Kit (Windows ADK)](http://go.microsoft.com/fwlink/p/?LinkId=526803), to create a provisioning package for Delivery Optimization.
+Use Windows ICD, included with the [Windows Assessment and Deployment Kit (Windows ADK)](https://go.microsoft.com/fwlink/p/?LinkId=526803), to create a provisioning package for Delivery Optimization.
 
 1.  Open Windows ICD, and then click **New provisioning package**.
 
@@ -1271,7 +1295,7 @@ Use Windows ICD, included with the [Windows Assessment and Deployment Kit (Windo
 
 4.  Go to **Runtime settings** &gt; **Policies** &gt; **DeliveryOptimization** to configure the policies.
 
-For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](http://go.microsoft.com/fwlink/p/?LinkId=730684).
+For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730684).
 
 ### <a href="" id="bkmk-wu"></a>26. Windows Update
 
@@ -1294,7 +1318,7 @@ You can turn off automatic updates by doing one of the following. This is not re
 
     -or-
 
--   Apply the Update/AllowAutoUpdate MDM policy from the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
+-   For Windows 10 only, apply the Update/AllowAutoUpdate MDM policy from the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
 
     -   **0**. Notify the user before downloading the update.
 

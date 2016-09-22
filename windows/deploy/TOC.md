@@ -61,6 +61,7 @@
 ### [Monitor activation [client]](monitor-activation-client.md)
 ### [Use the Volume Activation Management Tool [client]](use-the-volume-activation-management-tool-client.md)
 ### [Appendix: Information sent to Microsoft during activation [client]](appendix-information-sent-to-microsoft-during-activation-client.md)
+## [Windows 10 Enterprise E3 in CSP Overview](windows-10-enterprise-e3-overview.md)
 ## [Windows 10 deployment tools reference](windows-10-deployment-tools-reference.md)
 ### [Windows 10 deployment tools](windows-deployment-scenarios-and-tools.md)
 ### [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md)

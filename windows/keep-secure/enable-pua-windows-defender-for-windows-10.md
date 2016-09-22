@@ -8,6 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: detect
 ms.sitesec: library
 ms.pagetype: security
+localizationpriority: medium
 author: dulcemv
 ---
 
@@ -30,13 +31,13 @@ These applications can increase the risk of your network being infected with mal
 
 Since the stakes are higher in an enterprise environment, the potential disaster and potential productivity and performance disruptions that PUA brings can be a cause of concern. Hence, it is important to deliver trusted protection in this field.
 
-##Enable PUA protection in SCCM and Intune
+##Enable PUA protection in System Center Configuration Manager and Intune
 
-The PUA feature is available for enterprise users who are running System Center Configuration Manager (SCCM) or Intune in their infrastructure.
+The PUA feature is available for enterprise users who are running System Center Configuration Manager or Intune in their infrastructure.
 
-###Configure PUA in SCCM
+###Configure PUA in System Center Configuration Manager
 
-For SCCM users, PUA is enabled by default. See the following topics for configuration details:
+For System Center Configuration Manager users, PUA is enabled by default. See the following topics for configuration details:
 
 If you are using these versions | See these topics
 :---|:---
@@ -44,24 +45,24 @@ System Center Configuration Manager (current branch) version 1606 | [Create a ne
 System Center 2012 R2 Endpoint Protection<br>System Center 2012 Configuration Manager<br>System Center 2012 Configuration Manager SP1<br>System Center 2012 Configuration Manager SP2<br>System Center 2012 R2 Configuration Manager<br>System Center 2012 Endpoint Protection SP1<br>System Center 2012 Endpoint Protection<br>System Center 2012 R2 Configuration Manager SP1| [How to Deploy Potentially Unwanted Application Protection Policy for Endpoint Protection in Configuration Manager](https://technet.microsoft.com/library/hh508770.aspx#BKMK_PUA)
 
 <br>
-###Use PUA audit mode in SCCM
+###Use PUA audit mode in System Center Configuration Manager
 
 You can use PowerShell to detect PUA without blocking them. In fact, you can run audit mode on individual machines. This feature is useful if your company is conducting an internal software security compliance check and you’d like to avoid any false positives.
 
-1. Open PowerShell as Administrator <br>
+1. Open PowerShell as Administrator: <br>
 
     a.  Click **Start**, type **powershell**, and press **Enter**.
-
+    
     b.  Click **Windows PowerShell** to open the interface.
-    > [!NOTE]
-    > You may need to open an administrator-level version of PowerShell. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
+    >[!NOTE]
+    >You may need to open an administrator-level version of PowerShell. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
 2. Enter the PowerShell command:
 
   ```text
-  et-mpPreference -puaprotection 2
+  set-mpPreference -puaprotection 2
   ```
 > [!NOTE]
-> PUA events are reported in the Windows Event Viewer and not in SCCM.  
+> PUA events are reported in the Windows Event Viewer and not in System Center Configuration Manager.  
 
 
 ###Configure PUA in Intune
@@ -71,11 +72,26 @@ You can use PowerShell to detect PUA without blocking them. In fact, you can run
 
 ###Use PUA audit mode in Intune
 
- You can detect PUA without blocking them from your client. Gain insights into what can be blocked.
+ You can detect PUA without blocking them from your client so you can gain insights into what can be blocked.
+
+1. Open PowerShell as Administrator: <br>
+
+    a.  Click **Start**, type **powershell**, and press **Enter**.
+    
+    b.  Click **Windows PowerShell** to open the interface.
+    
+    >[!NOTE]
+    >You may need to open an administrator-level version of PowerShell. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
+    
+2. Enter the PowerShell command:
+
+  ```text
+  set-mpPreference -puaprotection 1
+  ```
 
 ##View PUA events
 
-PUA events are reported in the Windows Event Viewer and not in SCCM or Intune. To view PUA events:
+PUA events are reported in the Windows Event Viewer and not in System Center Configuration Manager or Intune. To view PUA events:
 
 1.  Open **Event Viewer**.
 2.  In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Windows Defender**.

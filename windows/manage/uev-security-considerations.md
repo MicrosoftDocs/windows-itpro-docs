@@ -11,6 +11,8 @@ ms.prod: w10
 
 # Security Considerations for UE-V
 
+**Applies to**
+-   Windows 10, version 1607
 
 This topic contains a brief overview of accounts and groups, log files, and other security-related considerations for User Experience Virtualization (UE-V). For more information, follow the links that are provided here.
 
@@ -215,10 +217,22 @@ We strongly recommend that you do not pre-create folders. Instead, let the UE-V 
 
 If you redirect UE-V settings to a user’s home directory or a custom Active Directory (AD) directory, ensure that the permissions on the directory are set appropriately for your organization.
 
+### Review the contents of settings location templates and control access to them as needed
+
+When creating a settings location template, the UE-V generator uses a Lightweight Directory Access Protocol (LDAP) query to get username and email address of the current logged in user. This information is stored in the template as the template author name and template author email. (None of this information is sent to Microsoft.)
+
+If you plan to share settings location templates with anyone outside your organization you should review all the settings locations and ensure the settings location templates do not contain any personal or company information. You can view the contents by opening the settings location template files using any XML viewer. The following are ways you can view and remove any personal or company information from the settings location template files before sharing with anyone outside your company:
+
+-   **Template Author Name** – Specify a general, non-identifying name for the template author name or exclude this data from the template.
+
+-   **Template Author Email** – Specify a general, non-identifying template author email or exclude this data from the template.
+
+To remove the template author name or template author email, you can use the UE-V generator application. From the generator, select **Edit a Settings Location Template**. Select the settings location template to edit from the recently used templates or Browse to the settings template file. Select **Next** to continue. On the Properties page, remove the data from the Template author name or Template author email text fields. Save the settings location template.
+
 ## Have a suggestion for UE-V?
 
 
-Add or vote on suggestions [here](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization). For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
+Add or vote on suggestions on the [User Experience Virtualization feedback site](http://uev.uservoice.com/forums/280428-microsoft-user-experience-virtualization).<br>For UE-V issues, use the [UE-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-us/home?forum=mdopuev&filter=alltypes&sort=lastpostdesc).
 
 ## Related topics
 

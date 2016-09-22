@@ -5,6 +5,7 @@ ms.assetid: 2866fb3c-4909-4c25-b083-6fc1f7869f6f
 keywords: reinstallation, customize, template, script, restore
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
@@ -57,15 +58,16 @@ In this section, you learn to migrate additional data using a custom template. Y
 1.  Back up the **C:\\Data** folder (including all files and folders).
 2.  Scan the local disk for PDF documents (\*.pdf files) and restore them into the **C:\\Data\\PDF Documents** folder on the destination machine.
 The custom USMT template is named MigContosoData.xml, and you can find it in the sample files for this documentation, which include:
--   [Gather script](http://go.microsoft.com/fwlink/p/?LinkId=619361)
--   [Set-OUPermissions](http://go.microsoft.com/fwlink/p/?LinkId=619362) script
--   [MDT Sample Web Service](http://go.microsoft.com/fwlink/p/?LinkId=619363)
+-   [Gather script](https://go.microsoft.com/fwlink/p/?LinkId=619361)
+-   [Set-OUPermissions](https://go.microsoft.com/fwlink/p/?LinkId=619362) script
+-   [MDT Sample Web Service](https://go.microsoft.com/fwlink/p/?LinkId=619363)
 
 ### Add the custom XML template
 
 In order to use the custom MigContosoData.xml USMT template, you need to copy it to the MDT Production deployment share and update the CustomSettings.ini file. In these steps, we assume you have downloaded the MigContosoData.xml file.
 1.  Using File Explorer, copy the MigContosoData.xml file to the **E:\\MDTProduction\\Tools\\x64\\USMT5** folder.
 2.  Using Notepad, edit the E:\\MDTProduction\\Control\\CustomSettings.ini file. After the USMTMigFiles002=MigUser.xml line add the following line:
+
     ``` syntax
     USMTMigFiles003=MigContosoData.xml
     ```
@@ -76,7 +78,7 @@ In order to use the custom MigContosoData.xml USMT template, you need to copy it
 After adding the additional USMT template and configuring the CustomSettings.ini file to use it, you are now ready to refresh a Windows 7 SP1 client to Windows 10. In these steps, we assume you have a Windows 7 SP1 client named PC0001 in your environment that is ready for a refresh to Windows 10.
 
 **Note**  
-MDT also supports an offline computer refresh. For more info on that scenario, see the USMTOfflineMigration property in the [MDT resource page](http://go.microsoft.com/fwlink/p/?LinkId=618117).
+MDT also supports an offline computer refresh. For more info on that scenario, see the USMTOfflineMigration property in the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117).
  
 ### Upgrade (refresh) a Windows 7 SP1 client
 

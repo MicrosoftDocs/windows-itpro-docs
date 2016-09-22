@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 author: TrudyHa
-redirect_url: /whats-new/whats-new-windows-10-version-1507-and-1511
+redirect_url: https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511
 ---
 
 # What's new in Windows Update for Business?
@@ -21,13 +21,13 @@ Windows Update for Business enables information technology administrators to kee
 ## Benefits of Windows Update for Business
 
 
-By using [Group Policy Objects](http://go.microsoft.com/fwlink/p/?LinkId=699279), Windows Update for Business is an easily established and implemented system which enables organizations and administrators to exercise control on how their Windows 10-based devices are updated, by allowing:
+By using [Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=699279), Windows Update for Business is an easily established and implemented system which enables organizations and administrators to exercise control on how their Windows 10-based devices are updated, by allowing:
 
 -   **Deployment and validation groups**; where administrators can specify which devices go first in an update wave, and which devices will come later (to ensure any quality bars are met).
 
 -   **Peer-to-peer delivery**, which administrators can enable to make delivery of updates to branch offices and remote sites with limited bandwidth very efficient.
 
--   **Use with existing tools** such as System Center Configuration Manager and the [Enterprise Mobility Suite](http://go.microsoft.com/fwlink/p/?LinkId=699281).
+-   **Use with existing tools** such as System Center Configuration Manager and the [Enterprise Mobility Suite](https://go.microsoft.com/fwlink/p/?LinkId=699281).
 
 Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](http://technet.microsoft.com/library/hh852345.aspx) and [System Center Configuration Manager](http://technet.microsoft.com/library/gg682129.aspx).
 

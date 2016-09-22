@@ -24,7 +24,7 @@ Before you start, you need to make sure you have the following:
 
 -   Latest cumulative security update (for all supported versions of Internet Explorer):
 
-    1.  Go to the [Microsoft Security Bulletin](http://go.microsoft.com/fwlink/p/?LinkID=718223) page, and change the filter to **Windows Internet Explorer 11**.
+    1.  Go to the [Microsoft Security Bulletin](https://go.microsoft.com/fwlink/p/?LinkID=718223) page, and change the filter to **Windows Internet Explorer 11**.
 
         ![microsoft security bulletin techcenter](images/securitybulletin-filter.png)
 
@@ -34,7 +34,7 @@ Before you start, you need to make sure you have the following:
 
     3.  Click the link that represents both your operating system version and Internet Explorer 11, and then follow the instructions in the **How to get this update** section.
 
--   [Setup and configuration package](http://go.microsoft.com/fwlink/p/?LinkId=517719), including:
+-   [Setup and configuration package](https://go.microsoft.com/fwlink/p/?LinkId=517719), including:
 
     -   Configuration-related PowerShell scripts
 
@@ -138,7 +138,7 @@ You need to set up your computers for data collection by running the provided Po
 
 **To set up Enterprise Site Discovery**
 
-- Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1 by by-passing the PowerShell execution policy, using this command: `powershell -ExecutionPolicy Bypass .\IETElemetrySetUp.ps1`. For more info, see [about Execution Policies](http://go.microsoft.com/fwlink/p/?linkid=517460).
+- Start PowerShell in elevated mode (using admin privileges) and run IETElemetrySetUp.ps1 by by-passing the PowerShell execution policy, using this command: `powershell -ExecutionPolicy Bypass .\IETElemetrySetUp.ps1`. For more info, see [about Execution Policies](https://go.microsoft.com/fwlink/p/?linkid=517460).
 
 ### WMI only: Set up your firewall for WMI data
 If you choose to use WMI as your data output, you need to make sure that your WMI data can travel through your firewall for the domain. If you’re sure, you can skip this section; otherwise, follow these steps:
@@ -465,7 +465,7 @@ You can completely remove the data stored on your employee’s computers.
     -   `Remove-Item -Path 'HKCU:\Software\Microsoft\Internet Explorer\WMITelemetry'`
 
 ## Related topics
-* [Enterprise Mode Site List Manager (schema v.2) download](http://go.microsoft.com/fwlink/?LinkId=746562)
+* [Enterprise Mode Site List Manager (schema v.2) download](https://go.microsoft.com/fwlink/?LinkId=746562)
 * [Enterprise Mode for Internet Explorer 11 (IE11)](enterprise-mode-overview-for-ie11.md)
  
 

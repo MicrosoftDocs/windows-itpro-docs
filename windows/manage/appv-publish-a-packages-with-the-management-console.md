@@ -11,6 +11,8 @@ ms.prod: w10
 
 # How to Publish a Package by Using the Management Console
 
+**Applies to**
+-   Windows 10, version 1607
 
 Use the following procedure to publish an App-V package. Once you publish a package, computers that are running the App-V client can access and run the applications in that package.
 
@@ -31,26 +33,18 @@ The ability to enable only administrators to publish or unpublish packages (desc
 
 1.  Navigate to the following Group Policy Object node:
 
-    **Computer Configuration &gt; Policies &gt; Administrative Templates &gt; System &gt; App-V &gt; Publishing**.
+    **Computer Configuration &gt; Administrative Templates &gt; System &gt; App-V &gt; Publishing**.
 
 2.  Enable the **Require publish as administrator** Group Policy setting.
 
-    To alternatively use PowerShell to set this item, see [How to Manage App-V Packages Running on a Stand-Alone Computer by Using PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#bkmk-admins-pub-pkgs).
+    To instead use Windows PowerShell to set this item, see [How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#bkmk-admins-pub-pkgs).
 
-    **Have a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+## Have a suggestion for App-V?
+
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
-
 
 [Operations for App-V](appv-operations.md)
 
 [How to Configure Access to Packages by Using the Management Console](appv-configure-access-to-packages-with-the-management-console.md)
-
- 
-
- 
-
-
-
-
-

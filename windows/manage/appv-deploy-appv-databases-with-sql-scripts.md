@@ -11,14 +11,17 @@ ms.prod: w10
 
 # How to Deploy the App-V Databases by Using SQL Scripts
 
+**Applies to**
+-   Windows Server 2016
+
 Use the following instructions to use SQL scripts, rather than the Windows Installer, to:
 
 -   Install the App-V databases
 
 -   Upgrade the App-V databases to a later version
 
-> [!NOTE]  
-> If you have already deployed an App-V 5.0 SP3 database or later, the SQL scripts are not required to upgrade to App-V.
+>**Note**  
+> If you have already deployed an App-V 5.0 SP3 database or later, the SQL scripts are not required to upgrade to App-V for Windows.
 
 ## How to install the App-V databases by using SQL scripts
 
@@ -175,7 +178,7 @@ Steps to install "AppVReporting" schema in SQL SERVER.
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

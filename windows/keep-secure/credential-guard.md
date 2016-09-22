@@ -15,7 +15,7 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Credential Guard prevents these attacks by protecting NTLM password hashes and Kerberos Ticket Granting Tickets.
+Introduced in Windows 10 Enterprise and Windows Server 2016, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Credential Guard prevents these attacks by protecting NTLM password hashes and Kerberos Ticket Granting Tickets.
 
 Credential Guard offers the following features and solutions:
 
@@ -35,10 +35,6 @@ Credential Guard also does not allow unconstrained Kerberos delegation, NTLMv1, 
 Here's a high-level overview on how the LSA is isolated by using virtualization-based security:
 
 ![Credential Guard overview](images/credguard.png)
-
-## New and changed functionality
-
-To see what was added or changed in Credential Guard, see [What's new in Credential Guard?](../whats-new/credential-guard.md).
 
 ## Hardware and software requirements
 
@@ -91,7 +87,7 @@ The PC must meet the following hardware and software requirements to use Credent
 <td>TPM 2.0</td>
 </tr>
 <tr>
-<td>Windows 10 version 1511 or later</td>
+<td>Windows 10 version 1511, Windows Server 2016, or later</td>
 <td>TPM 2.0 or TPM 1.2</td>
 </tr>
 </table>
@@ -114,7 +110,7 @@ The PC must meet the following hardware and software requirements to use Credent
 </tr>
 <tr class="even">
 <td align="left"><p>Virtual machine</p></td>
-<td align="left"><p>For PCs running Windows 10, version 1607, you can run Credential Guard on a Generation 2 virtual machine.</p></td>
+<td align="left"><p>For PCs running Windows 10, version 1607 or Windows Server 2016, you can run Credential Guard on a Generation 2 virtual machine.</p></td>
 </tr>
 </tr>
 <tr class="even">
@@ -169,7 +165,7 @@ First, you must add the virtualization-based security features. You can do this 
 > You can also add these features to an online image by using either DISM or Configuration Manager.
 
 
-In Windows 10, version 1607, Isolated User Mode is included with Hyper-V and does not need to be installed separately. If you're running a version of Windows 10 that's earlier than Windows 10, version 1607, you can run the following command to install Isolated User Mode:
+In Windows 10, version 1607 and Windows Server 2016, Isolated User Mode is included with Hyper-V and does not need to be installed separately. If you're running a version of Windows 10 that's earlier than Windows 10, version 1607, you can run the following command to install Isolated User Mode:
 
 ``` syntax
 dism /image:<WIM file name> /Enable-Feature /FeatureName:IsolatedUserMode
@@ -221,14 +217,23 @@ If you have to remove Credential Guard on a PC, you need to do the following:
 
 1.  From an elevated command prompt, type the following commands:
     ``` syntax
+
     mountvol X: /s
+    
     copy %WINDIR%\System32\SecConfig.efi X:\EFI\Microsoft\Boot\SecConfig.efi /Y
+    
     bcdedit /create {0cb3b571-2f2e-4343-a879-d86a476d7215} /d "DebugTool" /application osloader
+    
     bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} path "\EFI\Microsoft\Boot\SecConfig.efi"
+    
     bcdedit /set {bootmgr} bootsequence {0cb3b571-2f2e-4343-a879-d86a476d7215}
+    
     bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO
+    
     bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} device partition=X:
+    
     mountvol X: /d
+    
     ```
 2.  Restart the PC.
 3.  Accept the prompt to disable Credential Guard.
@@ -281,16 +286,20 @@ DG_Readiness_Tool_v2.0.ps1 -Ready
 -   Passwords are still weak so we recommend that your organization deploy Credential Guard and move away from passwords and to other authentication methods, such as physical smart cards, virtual smart cards, Microsoft Passport, or Microsoft Passport for Work.
 -   Some 3rd party Security Support Providers (SSPs and APs) might not be compatible with Credential Guard. Credential Guard does not allow 3rd party SSPs to ask for password hashes from LSA. However, SSPs and APs still get notified of the password when a user logs on and/or changes their password. Any use of undocumented APIs within custom SSPs and APs are not supported. We recommend that custom implementations of SSPs/APs are tested against Credential Guard to ensure that the SSPs and APs do not depend on any undocumented or unsupported behaviors. For example, using the KerbQuerySupplementalCredentialsMessage API is not supported. You should not replace the NTLM or Kerberos SSPs with custom SSPs and APs. For more info, see [Restrictions around Registering and Installing a Security Package](http://msdn.microsoft.com/library/windows/desktop/dn865014.aspx) on MSDN.
 -   As the depth and breadth of protections provided by Credential Guard are increased, subsequent releases of Windows 10 with Credential Guard running may impact scenarios that were working in the past. For example, Credential Guard may block the use of a particular type of credential or a particular component to prevent malwar efrom taking advantage of vulnerabilities. Therefore, we recommend that scenarios required for operations in an organization are tested before upgrading a device that has Credential Guard running.
--   If you are using Wi-Fi and VPN end points that are based on MS-CHAPv2, they are subject to similar attacks as NTLMv1. We recommend that organizations use certificated-based authentication for Wi-Fi and VPN connections.
+
 -   Starting with Windows 10, version 1511, domain credentials that are stored with Credential Manager are protected with Credential Guard. Credential Manager allows you to store credentials, such as user names and passwords that you use to log on to websites or other computers on a network. The following considerations apply to the Credential Guard protections for Credential Manager:
     -   Credentials saved by Remote Desktop Services cannot be used to remotely connect to another machine without supplying the password. Attempts to use saved credentials will fail, displaying the error message "Logon attempt failed".
     -   Applications that extract derived domain credentials from Credential Manager will no longer be able to use those credentials.
     -   You cannot restore credentials using the Credential Manager control panel if the credentials were backed up from a PC that has Credential Guard turned on. If you need to back up your credentials, you must do this before you enable Credential Guard. Otherwise, you won't be able to restore those credentials.
     - Credential Guard uses hardware security so some features, such as Windows To Go, are not supported.
 
+### NTLM & CHAP Considerations
+
+When you enable Credential Guard, you can no longer use NTLM v1 authentication. If you are using WiFi and VPN endpoints that are based on MS-CHAPv2, they are subject to similar attacks as NTLMv1. We recommend that organizations use certificated-based authentication for WiFi and VPN connections.
+
 ### Kerberos Considerations
 
-When you enable Credential Guard, you can no longer use Kerberos unconstrained delegation. Unconstrained delegation could allow attackers to extract Kerberos keys from the isolated LSA process. You must use constrained or resource-based Kerberos delegation instead.
+When you enable Credential Guard, you can no longer use Kerberos unconstrained delegation or DES encryption. Unconstrained delegation could allow attackers to extract Kerberos keys from the isolated LSA process. You must use constrained or resource-based Kerberos delegation instead.
     
 ## Scenarios not protected by Credential Guard
 
@@ -311,34 +320,39 @@ Some ways to store credentials are not protected by Credential Guard, including:
 
 Credential Guard can provide mitigations against attacks on derived credentials and prevent the use of stolen credentials elsewhere. However, PCs can still be vulnerable to certain attacks, even if the derived credentials are protected by Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, reusing previously stolen credentials prior to Device Guard, and abuse of management tools and weak application configurations. Because of this, additional mitigations also need to be deployed to make the domain environment more robust.
 
-Credential theft attacks allow the attacker to steal secrets from one device and use them from another device. By deploying authentication policies with compound authentication in Windows Server 2012 R2 or later domains, users can be restricted to only sign on from specific domain-joined devices. However, since devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Credential Guard, authentication policies can require that the device authenticates with its private key. This prevents shared secrets on stolen devices to be used with stolen user passwords or Kerberos secret keys to sign on as the user.
+### Restricting domain users to specific domain-joined devices
 
-Device certificate authentication has the following requirements:
+Credential theft attacks allow the attacker to steal secrets from one device and use them from another device. If a user can sign on multiple devices then any device could be used to steal credentials. How do you ensure that users only sign on with devices with Credential Guard? By deploying authentication policies which restrict them to specific domain-joined device that have been configured with Credential Guard. For the domain controller to know what device a user is signing on from, Kerberos armoring must be used.
 
--   Device domains are Windows Server 2012 or higher and all domain controllers have certificates, which satisfy strict KDC validation (KDC EKU present and the DNS domain name matches the DNSName field of the SubjectAltName (SAN) extension).
+#### Kerberos armoring
+
+Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring, its TGT is used to protect the user's proof of possession which can mitigate offline dictionary attacks. Kerberos armoring also provides the additional benefit of signed KDC errors this mitigates tampering which can result in things such as downgrade attacks. 
+
+**To enable Kerberos armoring for restricting domain users to specific domain-joined devices**
+
+-   Users need to be in domains which are running Windows Server 2012 R2 or higher
+-   All the domain controllers in these domains must be configured to support Kerberos armoring. Set the **KDC support for claims, compound authentication, and Kerberos armoring** Group Policy setting to either **Supported** or **Always provide claims**.
+-   All the devices with Credential Guard which the users will be restricted to must be configured to support Kerberos armoring. Enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
+
+#### Protecting domain-joined device secrets
+
+Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Credential Guard, the private key can be protected. Then authentication policies can require that users sign on devices which authenticate using those certificates. This prevents shared secrets on stolen from the device to be used with stolen user credentials to sign on as the user.
+
+Domain-joined device certificate authentication has the following requirements:
+-   Devices' accounts are in Windows Server 2012 domain funcational level or higher domains.
+-   All domain controllers in those domains have KDC certificates which satisfy strict KDC validation certificate requirements:
+    -   KDC EKU present
+    -   DNS domain name matches the DNSName field of the SubjectAltName (SAN) extension
 -   Windows 10 devices have the CA issuing the domain controller certificates in the enterprise store.
 -   A process is established to ensure the identity and trustworthiness of the device in a similar manner as you would establish the identity and trustworthiness of a user before issuing them a smartcard.
 
-### Additional Group Policy settings
+##### Deploying domain-joined device certificates
 
-There are a few Group Policy settings that you can enable that provide more protection against credential attacks:
+To guarantee that certificates with the issuance policy required are only on the devices these users must use, they must be deployed manually on each device. The same security procedures used for issuing smart cards to users should be applied to device certificates.
 
--   On the domain controllers, configure the KDC support for claims, compound authentication, and Kerberos armoring system by using Group Policy. Set the **KDC support for claims, compound authentication, and Kerberos armoring** Group Policy setting to either **Supported** or **Always provide claims**.
--   On devices running Windows 10, you can turn it on by using Group Policy as well. To do this, enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** & **Always send compound authentication first system** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
+For example, let's say you wanted to use the High Assurance policy only on these devices. Using a Windows Server Enterprise certificate authority, you would create a new template.
 
-### Compound authentication
-
-Compound authentication adds the device identity to the user’s during authentication to the domain and resources. Without compound authentication, only the user’s secrets are validated. With compound authentication, the Kerberos client has to have both the user’s and device’s secrets.
-Enabling compound authentication also enables Kerberos armoring, which provides two additional benefits:
-
--   User authentication on domain-joined devices will be armored. This means that network captures will contain encrypted Kerberos initial authentication. Without the appropriate device key, Kerberos AS-REQs are protected against offline dictionary attacks.
--   KDC errors are signed, which provides protection against error spoofing attacks.
-
-### Deploying machine certificates
-
-If the domain controllers in your organization are running Windows Server 2016, devices running Windows 10 will automatically enroll a machine certificate when Credential Guard is enabled and the PC is joined to the domain.
-If the domain controllers are running Windows Server 2012 R2, the machine certificates must be provisioned manually on each device. You can do this by creating a certificate template on the domain controller or certificate authority and deploying the machine certificates to each device.
-The same security procedures used for issuing smart cards to users should be applied to machine certificates.
+**Creating a new certificate template**
 
 1.  From the Certificate Manager console, right-click **Certificate Templates**, and then click **Manage.**
 2.  Right-click **Workstation Authentication**, and then click **Duplicate Template**.
@@ -352,7 +366,11 @@ The same security procedures used for issuing smart cards to users should be app
 8.  Under **Issuance Policies**, click**High Assurance**.
 9.  On the **Subject name** tab, clear the **DNS name** check box, and then select the **User Principal Name (UPN)** check box.
 
-On devices that are running Credential Guard, enroll the devices using the machine authentication certificate by running the following command:
+Then on the devices that are running Credential Guard, enroll the devices using the certificate you just created.
+
+**Enrolling devices in a certificate**
+
+Run the following command:
 ``` syntax
 CertReq -EnrollCredGuardCert MachineAuthentication
 ```
@@ -360,53 +378,69 @@ CertReq -EnrollCredGuardCert MachineAuthentication
 > [!NOTE]  
 > You must restart the device after enrolling the machine authentication certificate.
  
-### Link the issuance policies to a group
+#### How a certificate issuance policy can be used for access control
 
-By using an authentication policy, you can ensure that users only sign into devices that are running Credential Guard. Before you deploy the authentication policy though, you must first run a couple of scripts that set up your environment.
+Beginning with the Windows Server 2008 R2 domain functional level, domain controllers support for authentication mechanism assurance provides a way to map certificate issuance policy OIDs to universal security groups. Windows Server 2012 domain controllers with claim support can map them to claims. To learn more about authentication mechanism assurance, see [Authentication Mechanism Assurance for AD DS in Windows Server 2008 R2 Step-by-Step Guide](https://technet.microsoft.com/en-us/library/dd378897(v=ws.10).aspx) on TechNet.
+
+**To see the issuance policies available**
+
 -   The [get-IssuancePolicy.ps1](#bkmk-getscript) shows all of the issuance policies that are available on the certificate authority.
     From a Windows PowerShell command prompt, run the following command:
+
     ``` syntax
     .\get-IssuancePolicy.ps1 –LinkedToGroup:All
     ```
+
+**To link a issuance policy to a universal security group**
+
 -   The [set-IssuancePolicyToGroupLink.ps1](#bkmk-setscript) creates a Universal security group, creates an organizational unit, and links the issuance policy to that Universal security group.
     From a Windows PowerShell command prompt, run the following command:
+
     ``` syntax
-    .\set-IssuancePolicyToGroupLink.ps1 –IssuancePolicyName:”<name of issuance policy>” –groupOU:”<Name of OU to create>” –groupName:”<name of Universal security group to create>”
+    .\set-IssuancePolicyToGroupLink.ps1 –IssuancePolicyName:"<name of issuance policy>" –groupOU:"<Name of OU to create>" –groupName:”<name of Universal security group to create>"
     ```
 
-### Deploy the authentication policy
+#### Restricting user sign on
 
-Before setting up the authentication policy, you should log any failed attempt to apply an authentication policy on the KDC. To do this in Event Viewer, navigate to **Applications and Services Logs\\Microsoft\\Windows\\Authentication, right-click AuthenticationPolicyFailures-DomainController**, and then click **Enable Log**.
+So we now have the following:
 
-Now you can set up an authentication policy to use Credential Guard.
+-   Created a special certificate issuance policy to identify devices which meet the deployment criteria required for the user to be able to sign on
+-   Mapped that policy to a universal security group or claim
+-   Provided a way for domain controllers to get the device authorization data during user sign on using Kerberos armoring-   
+so what is left to do is configuring the access check on the domain controllers. This is done with authentication policies.
 
-**To add an authentication policy for Credential Guard**
+Authentication policies have the following requirements:
+-   User accounts are in a Windows Server 2012 domain functional level or higher domain.
 
-1.  Ensure that your domain controllers are running at least the Windows Server 2012 R2 domain functional level.
-2.  Create a security group that will be used to identify the PCs that will have this authentication policy applied to them.
-3.  Add the computer account to this security group.
-4.  Open Active Directory Administrative Center.
-5.  Click **Authentication**, click **New**, and then click **Authentication Policy**.
-6.  In the **Display name** box, enter a name for this authentication policy.
-7.  Under the **Accounts** heading, click **Add**.
-8.  In the **Select Users, Computers, or Service Accounts** dialog box, type the name of the user account, and then click **OK**.
-9.  Under the **User** heading, click the **Edit** button that applies to user account.
-10. Click **Add a condition**.
-11. In the **Edit Access Control Conditions** box, ensure that it reads **User** &gt; **Group** &gt; **Member of each** &gt; **Value**, and then click **Add items**.
-12. In the **Select Users, Computers, or Service Accounts** dialog box, type the name of the security group that you created with the set-IssuancePolicyToGroupLink script, and then click **OK**.
-13. Click **OK** to close the **Edit Access Control Conditions** box.
-14. Click **OK** to create the authentication policy.
-15. Close Active Directory Administrative Center.
+**Creating an authentication policy restricting to the specific universal security group**
 
+1.  Open Active Directory Administrative Center.
+2.  Click **Authentication**, click **New**, and then click **Authentication Policy**.
+3.  In the **Display name** box, enter a name for this authentication policy.
+4.  Under the **Accounts** heading, click **Add**.
+5.  In the **Select Users, Computers, or Service Accounts** dialog box, type the name of the user account you with to restrict, and then click **OK**.
+6.  Under the **User Sign On** heading, click the **Edit** button.
+7. Click **Add a condition**.
+8. In the **Edit Access Control Conditions** box, ensure that it reads **User** &gt; **Group** &gt; **Member of each** &gt; **Value**, and then click **Add items**.
+9. In the **Select Users, Computers, or Service Accounts** dialog box, type the name of the universal security group that you created with the set-IssuancePolicyToGroupLink script, and then click **OK**.
+10. Click **OK** to close the **Edit Access Control Conditions** box.
+11. Click **OK** to create the authentication policy.
+12. Close Active Directory Administrative Center.
 
 > [!NOTE]  
-> When authentication policies in enforcement mode are deployed with Credential Guard, users will not be able to sign in using devices that do not have the machine authentication certificate provisioned. This applies to both local and remote sign in scenarios.
- 
-### Appendix: Scripts
+> When the authentication policy enforces policy restrictions, users will not be able to sign on using devices that do not have a certificate with the appropriate issuance policy deployed. This applies to both local and remote sign on scenarios. Therefore, it is strongly recommended to first only audit policy restrictions to ensure you don't have unexpected failures.
+
+#### Discovering authentication failures due to authentication policies
+
+To make tracking authentication failures due to authentication policies easier, an operational log exists with just those events. To enable the logs on the domain controllers, in Event Viewer, navigate to **Applications and Services Logs\\Microsoft\\Windows\\Authentication, right-click AuthenticationPolicyFailures-DomainController**, and then click **Enable Log**.
+
+To learn more about authentication policy events, see [Authentication Policies and Authentication Policy Silos](https://technet.microsoft.com/en-us/library/dn486813(v=ws.11).aspx).
+
+## Appendix: Scripts
 
 Here is a list of scripts that are mentioned in this topic.
 
-#### <a href="" id="bkmk-getscript"></a>Get the available issuance policies on the certificate authority
+### <a href="" id="bkmk-getscript"></a>Get the available issuance policies on the certificate authority
 
 Save this script file as get-IssuancePolicy.ps1.
 
@@ -597,7 +631,7 @@ write-host "There are no issuance policies which are not mapped to groups"
 > [!NOTE]  
 > If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
  
-#### <a href="" id="bkmk-setscript"></a>Link an issuance policy to a group
+### <a href="" id="bkmk-setscript"></a>Link an issuance policy to a group
 
 Save the script file as set-IssuancePolicyToGroupLink.ps1.
 

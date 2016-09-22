@@ -52,7 +52,7 @@ We will occasionally update this privacy statement to reflect changes in our pro
 ## For More Information
 
 
-Microsoft welcomes your comments regarding this privacy statement. If you have questions about this statement or believe that we have not adhered to it, please [contact us](http://go.microsoft.com/fwlink/?LinkID=245853).
+Microsoft welcomes your comments regarding this privacy statement. If you have questions about this statement or believe that we have not adhered to it, please [contact us](https://go.microsoft.com/fwlink/?LinkID=245853).
 
 Microsoft PrivacyMicrosoft CorporationOne Microsoft WayRedmond, Washington 98052 USA
 
@@ -68,15 +68,15 @@ Microsoft Update is a service that provides Windows updates as well as updates f
 
 **Information Collected, Processed, or Transmitted:**
 
-For details about what information is collected and how it is used, see the Update Services Privacy Statement at <http://go.microsoft.com/fwlink/?LinkId=244400>.
+For details about what information is collected and how it is used, see the Update Services Privacy Statement at <https://go.microsoft.com/fwlink/?LinkId=244400>.
 
 **Use of Information:**
 
-For details about what information is collected and how it is used, see the Update Services Privacy Statement at <http://go.microsoft.com/fwlink/?LinkId=244400>.
+For details about what information is collected and how it is used, see the Update Services Privacy Statement at <https://go.microsoft.com/fwlink/?LinkId=244400>.
 
 **Choice/Control:**
 
-For details about controlling this feature, see the Update Services Privacy Statement at [http://go.microsoft.com/fwlink/?LinkId=244000](http://go.microsoft.com/fwlink/?LinkId=244400).
+For details about controlling this feature, see the Update Services Privacy Statement at [https://go.microsoft.com/fwlink/?LinkId=244000](https://go.microsoft.com/fwlink/?LinkId=244400).
 
 ## Related topics
 

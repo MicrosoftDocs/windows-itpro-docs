@@ -98,7 +98,7 @@ Before you proceed, make sure your environment includes these requirements for r
 
 Also…
 
--   **MDOP License:** This technology is a part of the Microsoft Desktop Optimization Pack (MDOP). Enterprise customers can get MDOP with Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see How Do I Get MDOP (http://go.microsoft.com/fwlink/p/?LinkId=322049).
+-   **MDOP License:** This technology is a part of the Microsoft Desktop Optimization Pack (MDOP). Enterprise customers can get MDOP with Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see How Do I Get MDOP (https://go.microsoft.com/fwlink/p/?LinkId=322049).
 
 -   **Administrative Credentials** for any computer on which you’ll be installing
 

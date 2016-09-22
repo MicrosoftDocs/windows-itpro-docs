@@ -120,7 +120,7 @@ For a TPM to be usable by BitLocker, it must contain an endorsement key, which i
 
 An endorsement key can be created at various points in the TPM’s lifecycle, but needs to be created only once for the lifetime of the TPM. If an endorsement key does not exist for the TPM, it must be created before TPM ownership can be taken.
 
-For more information about the TPM and the TCG, see the Trusted Computing Group: Trusted Platform Module (TPM) Specifications (<http://go.microsoft.com/fwlink/p/?linkid=69584>).
+For more information about the TPM and the TCG, see the Trusted Computing Group: Trusted Platform Module (TPM) Specifications (<https://go.microsoft.com/fwlink/p/?linkid=69584>).
 
 ## <a href="" id="bkmk-nontpm"></a>Non-TPM hardware configurations
 

@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: DulceMV
+localizationpriority: high
 ---
 
 # Windows Defender Advanced Threat Protection portal overview
@@ -15,7 +16,7 @@ author: DulceMV
 **Applies to:**
 
 - Windows 10 Enterprise
-- Windows 10 Enterprise for Education
+- Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
@@ -38,7 +39,7 @@ When you open the portal, you’ll see the main areas of the application:
  ![Windows Defender Advanced Threat Protection portal](images/portal-image.png)
 
 > [!NOTE]
-> Malware related detections will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/en-us/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
+> Malware related detections will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
 
 You can navigate through the portal using the menu options available in all sections. Refer to the following table for a description of each section.
 

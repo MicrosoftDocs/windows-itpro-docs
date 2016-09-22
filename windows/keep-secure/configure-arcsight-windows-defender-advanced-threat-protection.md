@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+localizationpriority: high
 ---
 
 # Configure HP ArcSight to consume Windows Defender ATP alerts
@@ -15,7 +16,7 @@ author: mjcaparas
 **Applies to:**
 
 - Windows 10 Enterprise
-- Windows 10 Enterprise for Education
+- Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
@@ -56,7 +57,7 @@ The following steps assume that you have completed all the required steps in [Be
 5. In the form fill in the following required fields with these values:
     >[!NOTE]
     >All other values in the form are optional and can be left blank.
-    
+
     <table>
     <tbody style="vertical-align:top;">
     <tr>

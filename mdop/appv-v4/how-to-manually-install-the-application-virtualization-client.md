@@ -48,7 +48,7 @@ For App-V version 4.6 and later, when the App-V client is installed, SFTLDR.DLL
     **Note**  
     For App-V version 4.6 and later, the wizard will also install Microsoft Visual C++ 2008 SP1 Redistributable Package (x86).
 
-    For more information about installing Microsoft Visual C++ 2008 SP1 Redistributable Package (x86), see <http://go.microsoft.com/fwlink/?LinkId=150700> (http://go.microsoft.com/fwlink/?LinkId=150700).
+    For more information about installing Microsoft Visual C++ 2008 SP1 Redistributable Package (x86), see <https://go.microsoft.com/fwlink/?LinkId=150700> (https://go.microsoft.com/fwlink/?LinkId=150700).
 
      
 

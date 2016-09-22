@@ -10,6 +10,9 @@ ms.prod: w10
 
 # Planning to Use Folder Redirection with App-V
 
+**Applies to**
+-   Windows 10, version 1607
+
 Microsoft Application Virtualization (App-V) supports the use of folder redirection, a feature that enables users and administrators to redirect the path of a folder to a new location.
 
 This topic contains the following sections:
@@ -113,8 +116,8 @@ The following table describes how folder redirection works when %AppData% is red
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="30%" />
+<col width="70%" />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -143,4 +146,4 @@ The following table describes how folder redirection works when %AppData% is red
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

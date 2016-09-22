@@ -26,7 +26,7 @@ App-V 4.6 SP2 adds support for Windows 8 and Windows Server 2012 Remote Deskto
 
 **Support for coexistence with App-V 5.0 client**
 
-App-V 4.6 SP2 provides support for coexistence with the Microsoft Application Virtualization 5.0 client. Review the App-V 5.0 documentation for instructions on how to configure the App-V 5.0 client for coexistence with the App-V 4.6 SP2 client. For more information about App-V 5.0, see [Application Virtualization 5](http://go.microsoft.com/fwlink/?LinkId=267599) on TechNet.
+App-V 4.6 SP2 provides support for coexistence with the Microsoft Application Virtualization 5.0 client. Review the App-V 5.0 documentation for instructions on how to configure the App-V 5.0 client for coexistence with the App-V 4.6 SP2 client. For more information about App-V 5.0, see [Application Virtualization 5](https://go.microsoft.com/fwlink/?LinkId=267599) on TechNet.
 
 **Ability to virtualize Adobe Reader X with Protected Mode**
 
@@ -82,7 +82,7 @@ Specify a path to an RTF or TXT file that provides packaging and deployment guid
 
 **Microsoft Application Error Reporting no longer needs to be installed**
 
-When you are installing the App-V 4.6 SP2 client by using setup.msi, you no longer need to install Microsoft Application Error Reporting (dw20shared.msi). App-V 4.6 SP2 now uses Microsoft Error Reporting. For more information, see [How to Install the App-V Client by Using Setup.msi](http://go.microsoft.com/fwlink/?LinkId=267237).
+When you are installing the App-V 4.6 SP2 client by using setup.msi, you no longer need to install Microsoft Application Error Reporting (dw20shared.msi). App-V 4.6 SP2 now uses Microsoft Error Reporting. For more information, see [How to Install the App-V Client by Using Setup.msi](https://go.microsoft.com/fwlink/?LinkId=267237).
 
 **Customer feedback and hotfix rollup**
 
@@ -91,7 +91,7 @@ App-V 4.6 SP2 includes a rollup of fixes to address issues found since the App
 ## In This Section
 
 
-<a href="" id="app-v-4-6-sp2-release-notes"></a>[App-V 4.6 SP2 Release Notes](http://go.microsoft.com/fwlink/?LinkId=267600)  
+<a href="" id="app-v-4-6-sp2-release-notes"></a>[App-V 4.6 SP2 Release Notes](https://go.microsoft.com/fwlink/?LinkId=267600)  
 Provides the most up-to-date information about known issues with App-V 4.6 SP2.
 
  

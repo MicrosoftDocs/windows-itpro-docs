@@ -184,7 +184,10 @@ Description here.
     New-Item -ItemType Directory -Path "C:Sources\OSD\OS"
     New-Item -ItemType Directory -Path "C:\Sources\OSD\Settings"
     New-Item -ItemType Directory -Path "C:\Sources\OSD\Branding"
+    New-Item -ItemType Directory -Path "C:\Sources\OSD\MDT"
+    New-Item -ItemType Directory -Path "C:\Logs"
     New-SmbShare -Name Sources$ -Path C:\Sources -ChangeAccess EVERYONE
+    New-SmbShare -Name Logs$ -Path C:\Logs -ChangeAccess EVERYONE
     ```
 
 ## Enable MDT ConfigMgr integration
@@ -206,10 +209,10 @@ Description here.
 
 1. Deterime the MAC address of the internal network adapter on SRV1. To determine this, type the following command at an elevated Windows PowerShell prompt on SRV1:
 
-```
-(Get-NetAdapter "Ethernet").MacAddress
-```
->If the internal network adapter, assigned an IP address of 192.168.0.2, is not named "Ethernet" then replace the name "Ethernet" in the previous command with the name of this network adapter.
+    ```
+    (Get-NetAdapter "Ethernet").MacAddress
+    ```
+    >If the internal network adapter, assigned an IP address of 192.168.0.2, is not named "Ethernet" then replace the name "Ethernet" in the previous command with the name of this network adapter.
 
 2. In the System Center Configuration Manager console, in the **Administration** workspace, click **Distribution Points**.
 3. In the display pane, right-click **SRV1.CONTOSO.COM** and then click **Properties**.
@@ -234,11 +237,11 @@ Description here.
     wdsmgfw.efi
     wdsnbp.com
     ```
->If these files are not present, type the following command at an elevated Windows PowerShell prompt to open the Configuration Manager Trace Log Tool. In the tool, click **File**, click **Open**, and then open the **distmgr.log** file. If errors are present, they will be highlighted in red:
+    >If these files are not present, type the following command at an elevated Windows PowerShell prompt to open the Configuration Manager Trace Log Tool. In the tool, click **File**, click **Open**, and then open the **distmgr.log** file. If errors are present, they will be highlighted in red:
 
-```
-Invoke-Item 'C:\Program Files\Microsoft Configuration Manager\tools\cmtrace.exe'
-```
+    ```
+    Invoke-Item 'C:\Program Files\Microsoft Configuration Manager\tools\cmtrace.exe'
+    ```
 
 ## Create a branding image file 
 
@@ -449,10 +452,186 @@ If you have not yet created a Windows 10 reference image, complete the following
 
 1. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
 
-```
-New-Item -ItemType Directory -Path "C:Sources\OSD\OS\Windows 10 Enterprise x64"
-```
+    ```
+    New-Item -ItemType Directory -Path "C:Sources\OSD\OS\Windows 10 Enterprise x64"
+    cmd /c copy /z "C:\MDTBuildLab\Captures\REFW10X64-001.wim" "C:\Sources\OSD\OS\Windows 10 Enterprise x64"
+    ```
 
+2. In the Configuration Manager console, in the **Software Library** workspace, expand **Operating Systems**, right-click **Operating System Images**, and then click **Add Operating System Image**.
+
+3. On the Data Source page, under **Path:**, type **\\SRV1\Sources$\OSD\OS\Windows 10 Enterprise x64\REFW10X64-001.wim**, and click **Next**.
+
+4. On the General page, next to **Name:**, type **Windows 10 Enterprise x64**, click **Next** twice, and then click **Close**.
+
+5. Distribute the operating system image to the SRV1 distribution point by right-clicking the **Windows 10 Enterprise x64** operating system image and then clicking **Distribute Content**.
+
+6. In the Distribute Content Wizard, click **Next**, click **Add**, click **Distribution Point**, add the **SRV1.CONTOSO.COM** distribution point, click **OK**, click **Next** twice and then click **Close**.
+
+7. Enter **\Monitoring\Overview\Distribution Status\Content Status** on the location bar, click **Windows 10 Enterprise x64**, and monitor the status of content distribution until it is successful and no longer in progress. Refresh the view with the F5 key or by right-clicking **Windows 10 Enterprise x64** and clicking **Refresh**.
+
+## Create a task sequence
+
+1. In the Configuration Manager console, in the **Software Library** workspace expand **Operating Systems**, right-click **Task Sequences**, and then click **Create MDT Task Sequence**.
+
+2. On the Choose Template page, select the **Client Task Sequence** template and click **Next**.
+
+3. On the General page, type **Windows 10 Enterprise x64** under **Task sequence name:** and then click **Next**.
+
+4. On the Details page, enter the following settings:<BR>
+    - Join a domain: contoso.com<BR>
+    - Account: click **Set**<BR>
+        - User name: contoso\administrator<BR>
+        - Password: pass@word1<BR>
+        - Confirm password: pass@word1<BR>
+        - Click **OK**<BR>
+    - Windows Settings<BR>
+        - User name: Contoso<BR>
+        - Organization name: Contoso<BR>
+        - Product key: \<blank\><BR>
+    - Administrator Account: Enable the account and specify the local administrator password<BR>
+        - Password: pass@word1<BR>
+        - Confirm password: pass@word1<BR>
+    - Click Next<BR>
+ 
+5. On the Capture Settings page, accept the default settings and click **Next**.
+
+6. On the Boot Image page, browse and select the **Zero Touch WinPE x64** boot image package and then click **Next**.
+
+7. On the MDT Package page, select **Create a new Microsoft Deployment Toolkit Files package**, under **Package source folder to be created (UNC Path):**, type **\\SRV1\Sources$\OSD\MDT\MDT 2013**, and then click **Next**.
+
+8. On the MDT Details page, next to **Name:** type **MDT 2013** and then click **Next**.
+
+9. On the OS Image page, browse and select the **Windows 10 Enterprise x64** package, and then click **Next**.
+
+10. On the Deployment Method page, accept the default settings and click **Next**.
+
+11. On the Client Package page, browse and select the **Microsoft Corporation Configuration Manager Client package** and then click **Next**.
+
+12. On the USMT Package page, browse and select the **Microsoft Corporation User State Migration Tool for Windows 8 10.0.14393.0** package, and then click **Next**.
+
+13. On the Settings Package page, select **Create a new settings package**, and under **Package source folder to be created (UNC Path):**, type \\SRV1\Sources$\OSD\Settings\Windows 10 x64 Settings, and then click **Next**.
+
+14. On the Settings Details page, next to **Name:**, type **Windows 10 x64 Settings**, and click **Next**.
+
+15. On the Sysprep Package page, click **Next** twice.
+
+16. On the Confirmation page, click **Finish**.
+
+## Edit the task sequence
+
+1. In the Configuration Manager console, in the Software Library workspace, click Task Sequences, right-click Windows 10 Enterprise x64, and then click Edit.
+
+2. Scroll down to the Install group and click Set Variable for Drive Letter.
+
+3. Change the Value under OSDPreserveDriveLetter from False to True, and click Apply.
+
+4. In the **State Restore** group, click **Set Status 5**, click **Add**, point to **User State**, and click **Request State Store**. This adds a new action immediately after **Set Status 5**.
+
+5. Configure the **Request State Store** action that was just added with the following settings:<BR>
+    - Request state storage location to: **Restore state from another computer**<BR>
+    - Select the **If computer account fails to connect to state store, use the Network Access account** checkbox.<BR>
+    - Options tab: Select the **Continue on error** checkbox.<BR>
+    - Add Condition: **Task Sequence Variable**:<BR>
+        - Variable: **USMTLOCAL** <BR>
+        - Condition: **not equals**<BR>
+        - Value: **True**<BR>
+        - Click **OK**.<BR>
+    - Click **Apply**<BR>.
+
+6. In the **State Restore** group, click **Restore User State**, click **Add**, point to **User State**, and click **Release State Store**.
+
+7. Configure the **Release State Store** action that was just added with the following settings:<BR>
+    - Options tab: Select the **Continue on error** checkbox.<BR>
+    - Add Condition: **Task Sequence Variable**:<BR>
+        - Variable: **USMTLOCAL** <BR>
+        - Condition: **not equals**<BR>
+        - Value: **True**<BR>
+        - Click **OK**.<BR>
+    - Click **OK**<BR>.
+
+
+## Finalize the operating system configuration
+
+1. In the MDT deployment workbench on SRV1, right-click **Deployment Shares** and then click **New Deployment Share**.
+
+2. Use the following settings for the New Deployment Share Wizard:
+    - Deployment share path: **C:\MDTProduction**<BR>
+    - Share name: **MDTProduction$**<BR>
+    - Deployment share description: **MDT Production**<BR>
+    - Options: click **Next** to accept the default<BR>
+    - Summary: click **Next**<BR>
+    - Progress: settings will be applied<BR>
+    - Confirmation: click **Finish**
+
+3. Right-click the **MDT Production** deployment share, and click **Properties**. 
+
+4. Click the **Monitoring** tab, select the **Enable monitoring for this deployment share** checkbox, and then click **OK**.
+
+5. Type the following command at an elevated Windows PowerShell prompt on SRV1:
+
+    ```
+    notepad "C:\Sources\OSD\Settings\Windows 10 x64 Settings\CustomSettings.ini"
+    ```
+6. Replace the contents of the file with the following text:
+
+    ```
+    [Settings]
+    Priority=Default
+    Properties=OSDMigrateConfigFiles,OSDMigrateMode
+
+    [Default]
+    DoCapture=NO
+    ComputerBackupLocation=NONE
+    MachineObjectOU=ou=Workstations,ou=Computers,ou=Contoso,dc=contoso,dc=com
+    OSDMigrateMode=Advanced
+    OSDMigrateAdditionalCaptureOptions=/ue:*\* /ui:CONTOSO\*
+    OSDMigrateConfigFiles=Miguser.xml,Migapp.xml
+    SLSHARE=\\SRV1\Logs$
+    EventService=http://SRV1:9800
+    ApplyGPOPack=NO
+    ```
+7. In the Software Library workspace, expand **Application Management**, click **Packages**, right-click **Windows 10 x64 Settings**, and then click **Update Distribution Points**. Click **OK** in the popup that appears.
+
+8. In the Software Library workspace, expand **Operating Systems**, click **Task Sequences**, right-click **Windows 10 Enterprise x64**, and then click **Distribute Content**.
+
+9. In the Distribute Content Wizard, click **Next**, click **Add**, click **Distribution Point**, add the **SRV1.CONTOSO.COM** distribution point, click **OK**, click **Next** twice and then click **Close**.
+
+10. Enter **\Monitoring\Overview\Distribution Status\Content Status** on the location bar, click **Windows 10 Enterprise x64**, and monitor the status of content distribution until it is successful and no longer in progress. Refresh the view with the F5 key or by right-clicking **Windows 10 Enterprise x64** and clicking **Refresh**.
+
+## Create a deployment for the task sequence
+
+1. In the Software Library workspace, expand **Operating Systems**, click **Task Sequences**, right-click **Windows 10 Enterprise x64**, and then click **Deploy**. 
+
+2. On the General page, next to **Collection**, click **Browse** and select the **All Unknown Computers** collection, then click **Next**.
+
+3. On the Deployment Settings page, use the following settings:<BR>
+    - Purpose: Available<BR>
+    - Make available to the following: Only media and PXE<BR>
+    - Click Next.<BR>
+4. Click **Next** five times to accept defaults on the Scheduling, User Experience, Alerts, and Distribution Points pages.
+
+5. Click **Close**.
+
+## Deploy Windows 10 using PXE and Configuration Manager
+
+1. Type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
+
+    ```
+    New-VM –Name "PC3" –NewVHDPath "c:\vhd\pc3.vhdx" -NewVHDSizeBytes 40GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
+    Set-VMMemory -VMName "PC3" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes 2048MB -Buffer 20
+    Start-VM PC3
+    vmconnect localhost PC3
+    ```
+2. Press ENTER when prompted to start the network boot service.
+
+3. In the Task Sequence Wizard, provide the password: pass@word1, and then click Next.
+
+4. The Windows 10 Enterprise x64 task sequence is selected, click Next.
+
+- ok I have an error that PS100001 cannot be located on a distribution point.
+- I tried going to content status and this seems to bhe the USMT and it says it is successfully distributed
+- I tried software library, boot images, and distribute these - this didn't help
+- I tried software library, application management, packages, distribute content but the distributon point isn't showing up. This is likely the problem.
 
 ## Related Topics
 

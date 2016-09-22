@@ -43,16 +43,16 @@ Review the following for more information about configuring IIS and Network Load
 
 -   Provides information about configuring Internet Information Services (IIS) 7.0.
 
-    [Achieving High Availability and Scalability - ARR and NLB](http://go.microsoft.com/fwlink/?LinkId=316369) (http://go.microsoft.com/fwlink/?LinkId=316369)
+    [Achieving High Availability and Scalability - ARR and NLB](https://go.microsoft.com/fwlink/?LinkId=316369) (https://go.microsoft.com/fwlink/?LinkId=316369)
 
 -   Configuring Microsoft Windows Server
 
-    [Network Load Balancing](http://go.microsoft.com/fwlink/?LinkId=316370) (http://go.microsoft.com/fwlink/?LinkId=316370).
+    [Network Load Balancing](https://go.microsoft.com/fwlink/?LinkId=316370) (https://go.microsoft.com/fwlink/?LinkId=316370).
 
     This information also applies to IIS Network Load Balancing (NLB) clusters in Windows Server 2008, Windows Server 2008 R2, or Windows Server 2012.
 
     **Note**  
-    The IIS Network Load Balancing functionality in Windows Server 2012 is generally the same as in Windows Server 2008 R2. However, some task details are changed in Windows Server 2012. For information on new ways to do tasks, see [Common Management Tasks and Navigation in Windows Server 2012 R2 Preview and Windows Server 2012](http://go.microsoft.com/fwlink/?LinkId=316371) (http://go.microsoft.com/fwlink/?LinkId=316371).
+    The IIS Network Load Balancing functionality in Windows Server 2012 is generally the same as in Windows Server 2008 R2. However, some task details are changed in Windows Server 2012. For information on new ways to do tasks, see [Common Management Tasks and Navigation in Windows Server 2012 R2 Preview and Windows Server 2012](https://go.microsoft.com/fwlink/?LinkId=316371) (https://go.microsoft.com/fwlink/?LinkId=316371).
 
      
 
@@ -77,9 +77,9 @@ The following steps can be used to validate the configuration:
 
 Review the following for more information about configuring Windows Server Failover clusters:
 
--   [Checklist: Create a Clustered File Server](http://go.microsoft.com/fwlink/?LinkId=316372) (http://go.microsoft.com/fwlink/?LinkId=316372).
+-   [Checklist: Create a Clustered File Server](https://go.microsoft.com/fwlink/?LinkId=316372) (https://go.microsoft.com/fwlink/?LinkId=316372).
 
--   [Use Cluster Shared Volumes in a Windows Server 2012 Failover Cluster](http://go.microsoft.com/fwlink/?LinkId=316373) (http://go.microsoft.com/fwlink/?LinkId=316373).
+-   [Use Cluster Shared Volumes in a Windows Server 2012 Failover Cluster](https://go.microsoft.com/fwlink/?LinkId=316373) (https://go.microsoft.com/fwlink/?LinkId=316373).
 
 ## <a href="" id="bkmk-sqlmirroring"></a>Support for Microsoft SQL Server Mirroring
 
@@ -88,9 +88,9 @@ Using Microsoft SQL Server mirroring, where the App-V 5.1 management server data
 
 Review the following for more information about configuring Microsoft SQL Server Mirroring:
 
--   [How to: Prepare a Mirror Database for Mirroring (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=316375) (http://go.microsoft.com/fwlink/?LinkId=316375)
+-   [How to: Prepare a Mirror Database for Mirroring (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=316375) (https://go.microsoft.com/fwlink/?LinkId=316375)
 
--   [Establish a Database Mirroring Session Using Windows Authentication (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=316377) (http://go.microsoft.com/fwlink/?LinkId=316377)
+-   [Establish a Database Mirroring Session Using Windows Authentication (SQL Server Management Studio)](https://go.microsoft.com/fwlink/?LinkId=316377) (https://go.microsoft.com/fwlink/?LinkId=316377)
 
 The following steps can be used to validate the configuration:
 
@@ -124,13 +124,13 @@ This topic describes how to change the Windows registry by using Registry Editor
 
 Click any of the following links for more information:
 
--   [How to: Prepare a Mirror Database for Mirroring (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=394235) (http://go.microsoft.com/fwlink/?LinkId=394235).
+-   [How to: Prepare a Mirror Database for Mirroring (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=394235) (https://go.microsoft.com/fwlink/?LinkId=394235).
 
--   [How to: Configure a Database Mirroring Session (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=394236) (http://go.microsoft.com/fwlink/?LinkId=394236).
+-   [How to: Configure a Database Mirroring Session (SQL Server Management Studio)](https://go.microsoft.com/fwlink/?LinkId=394236) (https://go.microsoft.com/fwlink/?LinkId=394236).
 
--   [Establish a Database Mirroring Session Using Windows Authentication (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=394237) (http://go.microsoft.com/fwlink/?LinkId=394237).
+-   [Establish a Database Mirroring Session Using Windows Authentication (SQL Server Management Studio)](https://go.microsoft.com/fwlink/?LinkId=394237) (https://go.microsoft.com/fwlink/?LinkId=394237).
 
--   [Deprecated Database Engine Features in SQL Server 2012](http://go.microsoft.com/fwlink/?LinkId=394238) (http://go.microsoft.com/fwlink/?LinkId=394238).
+-   [Deprecated Database Engine Features in SQL Server 2012](https://go.microsoft.com/fwlink/?LinkId=394238) (https://go.microsoft.com/fwlink/?LinkId=394238).
 
 ## <a href="" id="bkmk-sqlalwayson"></a>Support for Microsoft SQL Server Always On configuration
 

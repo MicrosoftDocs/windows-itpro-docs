@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 author: jdeckerMS
-localizationpriority: medium
+localizationpriority: high
 ---
 
 # Activate clients running Windows 10
@@ -24,7 +24,7 @@ localizationpriority: medium
 
 **Looking for retail activation?**
 
--   [Get Help Activating Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=618644)
+-   [Get Help Activating Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)
 
 After you have configured Key Management Service (KMS) or Active Directory-based activation on your network, activating a client running Windows 10 is easy. If the computer has been configured with a Generic Volume License Key (GVLK), neither IT nor the user need take any action. It just works.
 Enterprise edition images and installation media should already be configured with the GVLK. When the client computer starts, the Licensing service examines the current licensing condition of the computer.
@@ -84,7 +84,7 @@ KMS hosts on the network need to install a KMS key, and then be activated with M
 
 ### Activating subsequent Key Management Service hosts
 
-Each KMS key can be installed on up to six KMS hosts. These hosts can be physical computers or virtual machines. After activating a KMS host, the same host can be reactivated up to nine times with the same key. If the organization needs more than six KMS hosts, you can request additional activations for your organization’s KMS key by calling a Microsoft Volume [Licensing Activation Center](http://go.microsoft.com/fwlink/p/?LinkID=618264) to request an exception.
+Each KMS key can be installed on up to six KMS hosts. These hosts can be physical computers or virtual machines. After activating a KMS host, the same host can be reactivated up to nine times with the same key. If the organization needs more than six KMS hosts, you can request additional activations for your organization’s KMS key by calling a Microsoft Volume [Licensing Activation Center](https://go.microsoft.com/fwlink/p/?LinkID=618264) to request an exception.
 
 ## How Multiple Activation Key works
 

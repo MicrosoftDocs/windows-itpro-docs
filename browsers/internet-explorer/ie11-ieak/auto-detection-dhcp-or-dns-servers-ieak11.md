@@ -32,12 +32,13 @@ DHCP has a higher priority than DNS for automatic configuration. If DHCP provide
 
 ![](images/wedge.gif) **To set up automatic detection for DHCP servers**
 
--   Open the [DHCP Administrative Tool](http://go.microsoft.com/fwlink/p/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](http://go.microsoft.com/fwlink/p/?LinkId=294649).
-<p>**Examples:**<br>
-http://www.microsoft.com/webproxy.pac<br>
-http://marketing/config.ins<br>
-http://123.4.567.8/account.pac<p>
-For more detailed info about how to set up your DHCP server, see your server documentation.
+-   Open the [DHCP Administrative Tool](https://go.microsoft.com/fwlink/p/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](https://go.microsoft.com/fwlink/p/?LinkId=294649).
+
+    **Examples:**<br>
+    `http://www.microsoft.com/webproxy.pac`<br>
+    `http://marketing/config.ins`<br>
+    `http://123.4.567.8/account.pac`<p>
+    For more detailed info about how to set up your DHCP server, see your server documentation.
 
 ![](images/wedge.gif) **To set up automatic detection for DNS servers**
 
@@ -48,7 +49,7 @@ For more detailed info about how to set up your DHCP server, see your server doc
 `mailserver1 IN A 192.55.200.51`
 <p>**-OR-**<p>
 Create a canonical name (CNAME) alias record, named **WPAD**. This record lets you use more than one name to point to a single host, letting you host both an FTP server and a web server on the same computer. It also includes the resolved name (not the IP address) of the server storing your automatic configuration (.pac) file.<p>
-**Note**<br>For more info about creating a **WPAD** entry, see [Creating a WPAD entry in DNS](http://go.microsoft.com/fwlink/p/?LinkId=294651). 
+**Note**<br>For more info about creating a **WPAD** entry, see [Creating a WPAD entry in DNS](https://go.microsoft.com/fwlink/p/?LinkId=294651). 
 
 2.  After the database file propagates to the server, the DNS name, `wpad.<domain>.com` resolves to the server name that includes your automatic configuration file.
 

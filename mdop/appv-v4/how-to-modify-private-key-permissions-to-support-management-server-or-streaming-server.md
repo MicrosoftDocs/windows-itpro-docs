@@ -15,7 +15,7 @@ ms.prod: w8
 
 To support a more secure App-V installation, you can use the following procedures to modify private keys in either Windows Server 2003 or Windows Server 2008. To modify the permissions of the private key, you can use the Windows Server 2003 Resource Kit tool `WinHttpCertCfg.exe`.
 
-For Windows Server 2003, the procedure requires that a certificate that meets the prerequisites listed in this document is installed on the computer or computers on which you will install the App-V Management or Streaming Server. Additional information about using the `WinHttpCertCfg.exe` tool is available at <http://go.microsoft.com/fwlink/?LinkId=151981>.
+For Windows Server 2003, the procedure requires that a certificate that meets the prerequisites listed in this document is installed on the computer or computers on which you will install the App-V Management or Streaming Server. Additional information about using the `WinHttpCertCfg.exe` tool is available at <https://go.microsoft.com/fwlink/?LinkId=151981>.
 
 In Windows Server 2008, the process of changing the ACLs on the private key is much simpler. The certificate’s user interface can be used to manage private key permissions.
 

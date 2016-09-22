@@ -20,13 +20,13 @@ SDA includes a wizard that automates the creation and configuration of a Microso
 
 SDA is built on the powerful suite of deployment tools available from Microsoft including the Windows Assessment and Deployment Kit (ADK), the Microsoft Deployment Toolkit (MDT), and Windows Deployment Services (WDS). The resulting deployment share encompasses the recommended best practices for managing drivers during deployment and automating image creation and can serve as a starting point upon which you build your own customized deployment solution.
 
-You can find more information about how to deploy to Surface devices, including step-by-step walkthroughs of customized deployment solution implementation, on the Deploy page of the [Surface TechCenter](http://go.microsoft.com/fwlink/p/?LinkId=691693).
+You can find more information about how to deploy to Surface devices, including step-by-step walkthroughs of customized deployment solution implementation, on the Deploy page of the [Surface TechCenter](https://go.microsoft.com/fwlink/p/?LinkId=691693).
 
 **Download Microsoft Surface Deployment Accelerator**
 
 You can download the installation files for SDA from the Microsoft Download Center. To download the installation files:
 
-1.  Go to the [Surface Tools for IT](http://go.microsoft.com/fwlink/p/?LinkId=618121) page on the Microsoft Download Center.
+1.  Go to the [Surface Tools for IT](https://go.microsoft.com/fwlink/p/?LinkId=618121) page on the Microsoft Download Center.
 
 2.  Click the **Download** button, select the **Surface\_Deployment\_Accelerator\_xxxx.msi** file, and then click **Next**.
 
@@ -60,7 +60,7 @@ As you progress through the SDA wizard, you will be asked some basic questions a
 
 When the SDA completes, you can use the deployment share to deploy over the network immediately. Simply boot your Surface device from the network using a Surface Ethernet Adapter and select the Surface deployment share you created with the SDA wizard. Select the **1- Deploy Microsoft Surface** task sequence and the wizard will walk you through an automated deployment of Windows to your Surface device.
 
-You can modify the task sequence in the MDT Deployment Workbench to [include your own apps](http://go.microsoft.com/fwlink/p/?linkid=691700), or to [pause the automated installation routine](http://go.microsoft.com/fwlink/p/?linkid=691701). While the installation is paused, you can make changes to customize your reference image. After the image is captured, you can configure a deployment task sequence and distribute this custom configuration by using the same network boot capabilities as before.
+You can modify the task sequence in the MDT Deployment Workbench to [include your own apps](https://go.microsoft.com/fwlink/p/?linkid=691700), or to [pause the automated installation routine](https://go.microsoft.com/fwlink/p/?linkid=691701). While the installation is paused, you can make changes to customize your reference image. After the image is captured, you can configure a deployment task sequence and distribute this custom configuration by using the same network boot capabilities as before.
 
 >**Note:**&nbsp;&nbsp;With SDA v1.9.0258, Surface Pro 3, Surface Pro 4, and Surface Book are supported for Windows 10 deployment, and Surface Pro 3 is supported for Windows 8.1 deployment.
 
@@ -83,7 +83,7 @@ You can find a full list of available driver downloads at [Download the latest f
 
 ## Changes and updates
 
-SDA is periodically updated by Microsoft. For instructions on how these features are used, see [Step-by-Step: Microsoft Surface Deployment Accelerator](https://technet.microsoft.com/en-us/itpro/surface/step-by-step-surface-deployment-accelerator).
+SDA is periodically updated by Microsoft. For instructions on how these features are used, see [Step-by-Step: Microsoft Surface Deployment Accelerator](https://technet.microsoft.com/itpro/surface/step-by-step-surface-deployment-accelerator).
 
 >**Note:**&nbsp;&nbsp;To install a newer version of SDA on a server with a previous version of SDA installed, you only need to run the installation file for the new version of SDA. The installer will handle the upgrade process automatically. If you used SDA to create a deployment share prior to the upgrade and want to use new features of the new version of SDA, you will need to create a new deployment share. SDA does not support upgrades of an existing deployment share.
  

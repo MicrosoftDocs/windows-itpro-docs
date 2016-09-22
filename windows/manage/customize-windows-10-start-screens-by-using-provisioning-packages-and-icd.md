@@ -19,9 +19,12 @@ localizationpriority: medium
 
 **Looking for consumer information?**
 
--   [Customize the Start menu](http://go.microsoft.com/fwlink/p/?LinkId=623630)
+-   [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
 In Windows 10 Enterprise and Windows 10 Education, version 1607, you can use a provisioning package that you create with Windows Imaging and Configuration Designer (ICD) tool to deploy a customized Start and taskbar layout to users. No reimaging is required, and the Start and taskbar layout can be updated simply by overwriting the .xml file that contains the layout. The provisioning package can be applied to a running device. This enables you to customize Start and taskbar layouts for different departments or organizations, with minimal management overhead.
+
+>[!IMPORTANT]
+>If you use a provisioning package to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration and allow users to make changes that will persist, apply your configuration by using Group Policy.
 
 **Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md)
 
@@ -33,7 +36,7 @@ Three features enable Start and taskbar layout control:
 -   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
     **Note**  
-    To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](http://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
+    To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
 
 -    [You can modify the Start .xml file](configure-windows-10-taskbar.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.
 
@@ -43,7 +46,7 @@ Three features enable Start and taskbar layout control:
 ## <a href="" id="bkmk-domaingpodeployment"></a>Create a provisioning package that contains a customized Start layout
 
 
-Use the [Imaging and Configuration Designer (ICD) tool](http://go.microsoft.com/fwlink/p/?LinkID=525483) included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that applies a customized Start and taskbar layout. [Install the ADK.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+Use the [Imaging and Configuration Designer (ICD) tool](https://go.microsoft.com/fwlink/p/?LinkID=525483) included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that applies a customized Start and taskbar layout. [Install the ADK.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 
 > **Important**
 When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
@@ -61,7 +64,7 @@ When you build a provisioning package, you may include sensitive information in 
 
 6.  Expand **Runtime settings** &gt; **Start**, and click **StartLayout**.
 
-7.  Specify the path and file name of the Start layout .xml that you created with the [Export-StartLayout](http://go.microsoft.com/fwlink/p/?LinkId=620879) cmdlet.
+7.  Specify the path and file name of the Start layout .xml that you created with the [Export-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=620879) cmdlet.
 
 8.  On the **File** menu, select **Save.**
 

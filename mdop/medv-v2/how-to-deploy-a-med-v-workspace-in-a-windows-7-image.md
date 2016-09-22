@@ -19,7 +19,7 @@ The following section provides information and instructions to help you deploy t
 
 **To deploy a MED-V workspace in a Windows 7 image**
 
-1.  Create a standard image of Windows 7. For more information, see [Building a Standard Image of Windows 7: Step-by-Step Guide](http://go.microsoft.com/fwlink/?LinkId=204843) (http://go.microsoft.com/fwlink/?LinkId=204843).
+1.  Create a standard image of Windows 7. For more information, see [Building a Standard Image of Windows 7: Step-by-Step Guide](https://go.microsoft.com/fwlink/?LinkId=204843) (https://go.microsoft.com/fwlink/?LinkId=204843).
 
 2.  In the Windows 7 image, install Windows Virtual PC and the Windows Virtual PC updates. For more information, see [Configure Installation Prerequisites](configure-installation-prerequisites.md).
 

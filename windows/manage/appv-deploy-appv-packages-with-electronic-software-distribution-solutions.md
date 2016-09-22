@@ -10,6 +10,9 @@ ms.prod: w10
 
 # How to deploy App-V packages using electronic software distribution
 
+**Applies to**
+-   Windows 10, version 1607
+
 You can use an electronic software distribution (ESD) system to deploy App-V virtual applications to App-V clients.
 
 For component requirements and options for using an ESD to deploy App-V packages, see [Planning to Deploy App-V with an Electronic Software Distribution System](appv-planning-to-deploy-appv-with-electronic-software-distribution-solutions.md).
@@ -20,7 +23,7 @@ Use one of the following methods to publish packages to App-V client computers w
 | - | - |
 | Functionality provided by a third-party ESD | Use the functionality in a third-party ESD.| 
 | Stand-alone Windows Installer | Install the application on the target client computer by using the associated Windows Installer (.msi) file that is created when you initially sequence an application. The Windows Installer file contains the associated App-V package file information used to configure a package and copies the required package files to the client. |
-| Windows PowerShell | Use Windows PowerShell cmdlets to deploy virtualized applications. For more information about using PowerShell and App-V, see [Administering App-V by using Windows PowerShell](appv-administering-appv-with-powershell.md).| 
+| Windows PowerShell | Use Windows PowerShell cmdlets to deploy virtualized applications. For more information about using Windows PowerShell and App-V, see [Administering App-V by using Windows PowerShell](appv-administering-appv-with-powershell.md).| 
 
  
 
@@ -34,7 +37,7 @@ Use one of the following methods to publish packages to App-V client computers w
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 

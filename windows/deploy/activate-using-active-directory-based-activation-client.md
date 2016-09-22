@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 author: greg-lindsay
-localizationpriority: medium
+localizationpriority: high
 ---
 
 # Activate using Active Directory-based activation
@@ -22,10 +22,10 @@ localizationpriority: medium
 -   Windows Server 2008 R2
 
 **Looking for retail activation?**
--   [Get Help Activating Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=618644)
+-   [Get Help Activating Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)
 
-Active Directory-based activation is implemented as a role service that relies on AD DS to store activation objects. Active Directory-based activation requires that the forest schema be updated by adprep.exe on a computer running Windows Server 2012 R2 or Windows Server 2012, but after the schema is updated, older domain controllers can still activate clients.
-Any domain-joined computers running Windows 10, Windows 8.1, Windows 8, Windows Server 2012 R2, or Windows Server 2012 with a GVLK will be activated automatically and transparently. They will stay activated as long as they remain members of the domain and maintain periodic contact with a domain controller. Activation takes place after the Licensing service starts. When this service starts, the computer contacts AD DS automatically, receives the activation object, and is activated without user intervention.
+Active Directory-based activation is implemented as a role service that relies on AD DS to store activation objects. Active Directory-based activation requires that the forest schema be updated by adprep.exe on a computer running Windows Server 2012 or Windows Server 2012 R2, but after the schema is updated, older domain controllers can still activate clients.
+Any domain-joined computers running Windows 10, Windows 8.1, Windows 8, Windows Server 2012, or Windows Server 2012 R2 with a GVLK will be activated automatically and transparently. They will stay activated as long as they remain members of the domain and maintain periodic contact with a domain controller. Activation takes place after the Licensing service starts. When this service starts, the computer contacts AD DS automatically, receives the activation object, and is activated without user intervention.
 To allow computers with GVLKs to activate themselves, use the Volume Activation Tools console in Windows Server 2012 R2 or the VAMT in earlier versions of Windows Server to create an object in the AD DS forest. You create this activation object by submitting a KMS host key to Microsoft, as shown in Figure 10.
 The process proceeds as follows:
 1.  Perform one of the following tasks:
@@ -38,7 +38,7 @@ The process proceeds as follows:
     
     **Figure 10**. The Active Directory-based activation flow
     
-For environments in which all computers are running Windows 10, Windows 8.1, Windows 8, Windows Server 2012 R2, or Windows Server 2012 R2, and they are joined to a domain, Active Directory-based activation is the best option for activating all client computers and servers, and you may be able to remove any KMS hosts from your environment.
+For environments in which all computers are running Windows 10, Windows 8.1, Windows 8, Windows Server 2012, or Windows Server 2012 R2, and they are joined to a domain, Active Directory-based activation is the best option for activating all client computers and servers, and you may be able to remove any KMS hosts from your environment.
 If an environment will continue to contain earlier volume licensing operating systems and applications or if you have workgroup computers outside the domain, you need to maintain a KMS host to maintain activation status for earlier volume licensing editions of Windows and Office.
 Clients that are activated with Active Directory-based activation will maintain their activated state for up to 180 days since the last contact with the domain, but they will periodically attempt to reactivate before then and at the end of the 180day period. By default, this reactivation event occurs every seven days.
 When a reactivation event occurs, the client queries AD DS for the activation object. Client computers examine the activation object and compare it to the local edition as defined by the GVLK. If the object and GVLK match, reactivation occurs. If the AD DS object cannot be retrieved, client computers use KMS activation. If the computer is removed from the domain, when the computer or the Software Protection service is restarted, the operating system will change the status from activated to not activated, and the computer will try to activate with KMS.

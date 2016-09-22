@@ -37,7 +37,7 @@ For information about the **Get-MbamBitLockerRecoveryKey** and **Get-MbamTPMOwne
 ## <a href="" id="bkmk-load-posh-help"></a>How to load Windows PowerShell Help for MBAM 2.5
 
 
-For a list of the Windows PowerShell cmdlets on TechNet, see [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=392816).
+For a list of the Windows PowerShell cmdlets on TechNet, see [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=392816).
 
 **To load the MBAM 2.5 Help for Windows PowerShell cmdlets after installing the MBAM Server software**
 
@@ -68,15 +68,15 @@ Windows PowerShell Help for MBAM is available in the following formats:
 </tr>
 <tr class="even">
 <td align="left"><p>On TechNet as webpages</p></td>
-<td align="left"><p>http://go.microsoft.com/fwlink/?LinkId=393498</p></td>
+<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393498</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>On the Download Center as a Word .docx file</p></td>
-<td align="left"><p>http://go.microsoft.com/fwlink/?LinkId=393497</p></td>
+<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393497</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>On the Download Center as a .pdf file</p></td>
-<td align="left"><p>http://go.microsoft.com/fwlink/?LinkId=393499</p></td>
+<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393499</p></td>
 </tr>
 </tbody>
 </table>
@@ -193,7 +193,7 @@ Before starting the configuration, complete the following prerequisites.
 <p>This user account must be a part of the local administrators group or the Backup Operators group to register the MBAM Volume Shadow Copy Service (VSS) Writer.</p></td>
 <td align="left"><p>By default, the database administrator or system administrator has the required &quot;create any database&quot; permissions.</p>
 <p></p>
-<p>For more information about VSS Writer, see [Volume Shadow Copy Service](http://go.microsoft.com/fwlink/?LinkId=392814).</p></td>
+<p>For more information about VSS Writer, see [Volume Shadow Copy Service](https://go.microsoft.com/fwlink/?LinkId=392814).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>For the <strong>System Center Configuration Manager Integration</strong> feature only:</p>
@@ -251,7 +251,7 @@ Before starting the configuration, complete the following prerequisites.
 <ul>
 <li><p>Ensure that the MBAM 2.5 Server software has been installed on the remote computer.</p></li>
 <li><p>Use the Credential Security Support Provider (CredSSP) Protocol to open the Windows PowerShell session.</p></li>
-<li><p>Enable Windows Remote Management (WinRM). If you fail to enable WinRM and to configure it correctly, the <strong>New-PSSession</strong> cmdlet that is described in this table displays an error and describes how to fix the issue. For more information about WinRM, see [Using Windows Remote Management](http://go.microsoft.com/fwlink/?LinkId=393064).</p></li>
+<li><p>Enable Windows Remote Management (WinRM). If you fail to enable WinRM and to configure it correctly, the <strong>New-PSSession</strong> cmdlet that is described in this table displays an error and describes how to fix the issue. For more information about WinRM, see [Using Windows Remote Management](https://go.microsoft.com/fwlink/?LinkId=393064).</p></li>
 </ul></td>
 </tr>
 <tr class="odd">

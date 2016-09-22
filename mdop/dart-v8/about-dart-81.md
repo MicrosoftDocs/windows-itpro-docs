@@ -26,7 +26,7 @@ Microsoft Diagnostics and Recovery Toolset (DaRT) 8.1 provides the following enh
 
     -   The DaRT 8.1 image is built on Windows 8.1 Update 1 or later.
 
-    For more information about WIMBoot, see [Windows Image File Boot (WIMBoot) Overview](http://go.microsoft.com/fwlink/?LinkId=517536).
+    For more information about WIMBoot, see [Windows Image File Boot (WIMBoot) Overview](https://go.microsoft.com/fwlink/?LinkId=517536).
 
 -   **Support for Windows Server 2012 R2 and Windows 8.1**
 
@@ -61,7 +61,7 @@ Microsoft Diagnostics and Recovery Toolset (DaRT) 8.1 provides the following enh
 
 -   **Microsoft .NET Framework 4.5.1**
 
-    DaRT 8.1 requires that .NET Framework 4.5.1 is installed. To download, see [Microsoft.NET Framework 4.5.1](http://go.microsoft.com/fwlink/?LinkId=329038) in the Microsoft Download Center.
+    DaRT 8.1 requires that .NET Framework 4.5.1 is installed. To download, see [Microsoft.NET Framework 4.5.1](https://go.microsoft.com/fwlink/?LinkId=329038) in the Microsoft Download Center.
 
 -   **Windows 8.1 Debugging Tools**
 
@@ -99,7 +99,7 @@ DaRT 8.1 is available in the following languages:
 ## How to Get MDOP Technologies
 
 
-DaRT 8.1 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](http://go.microsoft.com/fwlink/?LinkId=322049) (http://go.microsoft.com/fwlink/?LinkId=322049).
+DaRT 8.1 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049) (https://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## Related topics
 

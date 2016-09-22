@@ -11,6 +11,9 @@ ms.prod: w10
 
 # Planning for App-V
 
+**Applies to**
+-   Windows 10, version 1607
+
 Use this information to plan how to deploy App-V so that it does not disrupt your users or the network.
 
 ## Planning information
@@ -21,7 +24,7 @@ Use this information to plan how to deploy App-V so that it does not disrupt you
 
 -   [Planning to Deploy App-V](appv-planning-to-deploy-appv.md)
 
-    This section describes the minimum hardware and software requirements necessary for App-V client, sequencer and server feature installations. Additionally, associated feature planning information is also displayed.
+    This section describes the minimum hardware and software requirements and other planning information for the App-V sequencer and App-V server components.
 
 -   [App-V Planning Checklist](appv-planning-checklist.md)
 
@@ -29,7 +32,7 @@ Use this information to plan how to deploy App-V so that it does not disrupt you
 
 ## Have a suggestion for App-V?
 
-Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Other resources for App-V planning
 

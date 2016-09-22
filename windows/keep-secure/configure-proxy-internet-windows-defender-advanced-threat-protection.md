@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+localizationpriority: high
 ---
 
 
@@ -16,7 +17,7 @@ author: mjcaparas
 **Applies to:**
 
 - Windows 10 Enterprise
-- Windows 10 Enterprise for Education
+- Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
@@ -29,8 +30,15 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 
 - Configure the proxy server manually using a static proxy
 
-## Configure the proxy server manually using a static proxy
-Configure a static proxy to allow only Windows Defender ATP sensor to report telemetry and communicate with Windows Defender ATP services if a computer is not be permitted to connect to the Internet.
+    - Auto-discovery methods:
+        - Transparent proxy
+
+    - Manual static proxy configuration
+      - WinHTTP configured using netsh command
+      -	Registry based configuration
+
+## Configure the proxy server manually using a registry-based static proxy
+Configure a registry-based static proxy to allow only Windows Defender ATP sensor to report telemetry and communicate with Windows Defender ATP services if a computer is not be permitted to connect to the Internet.
 
 The static proxy is configurable through Group Policy (GP). The group policy can be found under: **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**.
 
@@ -45,8 +53,26 @@ For example: 10.0.0.6:8080
 
 If the static proxy settings are configured after onboarding, then you must restart the PC to apply the proxy settings.
 
-## Enable access to Windows Defender ATP service URLs in the proxy server
+## Configure the proxy server manually using netsh command
 
+Use netsh to configure a system-wide static proxy.
+
+> [!NOTE]
+> This will affect all applications including Windows services which use WinHTTP with default proxy.
+
+1. Open an elevated command-line:
+
+    a. Go to **Start** and type **cmd**.
+
+    b. Right-click **Command prompt** and select **Run as administrator**.
+
+4. Enter the following command and press **Enter**:
+```
+netsh winhttp set proxy <proxy>:<port>
+```
+For example: netsh winhttp set proxy 10.0.0.6:8080
+
+## Enable access to Windows Defender ATP service URLs in the proxy server
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service in port 80 and 443:
 
 Primary Domain Controller | .Microsoft.com DNS record
@@ -58,6 +84,10 @@ Primary Domain Controller | .Microsoft.com DNS record
 
  <br>
  If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.
+
+ If you selected US as your region, you should permit anonymous traffic for URLs listed in both Central US and East US (2).
+
+ If you selected EU as your region, you should permit anonymous traffic for URLs listed in both West Europe and North Europe.
 
 
 ## Verify client connectivity to Windows Defender ATP service URLs
@@ -79,7 +109,7 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
     ```
     HardDrivePath\WDATPConnectivityAnalyzer.cmd
     ```
-    Replace *HardDrivePath* with the path where the WDATPConnectivityAnalyzer tool was downloaded to, for example 
+    Replace *HardDrivePath* with the path where the WDATPConnectivityAnalyzer tool was downloaded to, for example
     ```text
     C:\Work\tools\WDATPConnectivityAnalyzer\WDATPConnectivityAnalyzer.cmd
     ```

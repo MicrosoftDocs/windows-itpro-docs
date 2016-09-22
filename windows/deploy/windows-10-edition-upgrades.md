@@ -4,6 +4,7 @@ description: With Windows 10, you can quickly upgrade from one edition of Windo
 ms.assetid: A7642E90-A3E7-4A25-8044-C4E402DC462A
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
@@ -15,7 +16,7 @@ author: greg-lindsay
 -   Windows 10
 -   Windows 10 Mobile
 
-With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported. For information on what edition of Windows 10 is right for you, see [Compare Windows 10 Editions](http://go.microsoft.com/fwlink/p/?LinkID=690882). For a comprehensive list of all possible upgrade paths to Windows 10, see [Windows 10 upgrade paths](windows-10-upgrade-paths.md).
+With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported. For information on what edition of Windows 10 is right for you, see [Compare Windows 10 Editions](https://go.microsoft.com/fwlink/p/?LinkID=690882). For a comprehensive list of all possible upgrade paths to Windows 10, see [Windows 10 upgrade paths](windows-10-upgrade-paths.md).
 
 The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer. **Note**: The reboot requirement for upgrading from Pro to Enterprise was removed in version 1607. 
 
@@ -35,18 +36,18 @@ X = unsupported <BR>
 >**Note**: Each desktop edition in the table also has an N and KN edition. These editions have had media-related functionality removed. Devices with N or KN editions installed can be upgraded to corresponding N or KN editions using the same methods.
 
 ## Upgrade using mobile device management (MDM)
-- To upgrade desktop editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithProductKey** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](http://go.microsoft.com/fwlink/p/?LinkID=690907).
+- To upgrade desktop editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithProductKey** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](https://go.microsoft.com/fwlink/p/?LinkID=690907).
 
-- To upgrade mobile editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithLicense** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](http://go.microsoft.com/fwlink/p/?LinkID=690907).
+- To upgrade mobile editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithLicense** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](https://go.microsoft.com/fwlink/p/?LinkID=690907).
 
 ## Upgrade using a provisioning package
-The Windows Imaging and Configuration Designer (ICD) tool is included in the Windows Assessment and Deployment Kit (ADK) for Windows 10. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+The Windows Imaging and Configuration Designer (ICD) tool is included in the Windows Assessment and Deployment Kit (ADK) for Windows 10. [Install the ADK.](https://go.microsoft.com/fwlink/p/?LinkId=526740)
 
 - To use Windows ICD to create a provisioning package for upgrading desktop editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithProductKey** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
 
 - To use Windows ICD to create a provisioning package for upgrading mobile editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithLicense** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
 
-For more info on creating and applying a provisioning package using Windows ICD, see [Build and apply a provisioning package](http://go.microsoft.com/fwlink/p/?LinkID=533700).
+For more info on creating and applying a provisioning package using Windows ICD, see [Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkID=533700).
 
 ## Upgrade using a command-line tool
 You can run the changepk.exe command-line tool to upgrade devices to a supported edition of Windows 10:

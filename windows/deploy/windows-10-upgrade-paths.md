@@ -4,6 +4,7 @@ description: You can upgrade to Windows 10 from a previous version of Windows if
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+localizationpriority: high
 ms.pagetype: mobile
 author: greg-lindsay
 ---

@@ -13,7 +13,7 @@ ms.prod: w10
 # About App-V 5.0 SP2
 
 
-App-V 5.0 SP2 provides an improved integrated platform, more flexible virtualization, and powerful management for virtualized applications. For more information see, [App-V 5.0 Overview](http://go.microsoft.com/fwlink/p/?LinkId=325265) (http://go.microsoft.com/fwlink/?LinkId=325265).
+App-V 5.0 SP2 provides an improved integrated platform, more flexible virtualization, and powerful management for virtualized applications. For more information see, [App-V 5.0 Overview](https://go.microsoft.com/fwlink/p/?LinkId=325265) (https://go.microsoft.com/fwlink/?LinkId=325265).
 
 ## Changes in Standard App-V 5.0 SP2 Functionality
 
@@ -101,7 +101,7 @@ This document focuses on creating a Microsoft Office 2013 App-V 5.0 Package. How
 
 In previous versions of App-V 5.0 the Client Management User Interface (UI) was provided with the App-V 5.0 Client installation. With App-V 5.0 SP2 this is no longer the case. Administrators now have the option to deploy the App-V 5.0 Client UI as a Virtual Application (using all supported App-V deployment configurations) or as an installed application.
 
-For more information see [Microsoft Application Virtualization 5.0 Client UI Application](http://go.microsoft.com/fwlink/p/?LinkId=386345) (http://go.microsoft.com/fwlink/?LinkId=386345).
+For more information see [Microsoft Application Virtualization 5.0 Client UI Application](https://go.microsoft.com/fwlink/p/?LinkId=386345) (https://go.microsoft.com/fwlink/?LinkId=386345).
 
 ### Side-by-Side (SxS) Assembly Automatic Packaging and Deployment
 
@@ -157,7 +157,7 @@ App-V 5.0 SP2 provides updated documentation for the following scenarios:
 ## How to Get MDOP Technologies
 
 
-App-V 5.0 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](http://go.microsoft.com/fwlink/?LinkId=322049) (http://go.microsoft.com/fwlink/?LinkId=322049).
+App-V 5.0 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049) (https://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## Got a suggestion for App-V?
 

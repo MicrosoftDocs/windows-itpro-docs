@@ -1,5 +1,4 @@
 ---
-localizationpriority: low
 ms.mktglfcycl: plan
 description: IEAK 11 - Internet Explorer Administration Kit 11 Users Guide
 author: eross-msft
@@ -34,5 +33,5 @@ IE11 and IEAK 11 offers differing experiences between Windows 7 and Windows 8.1 
 ## Related topics
 - [Internet Explorer 11 - FAQ for IT Pros](../ie11-faq/faq-for-it-pros-ie11.md)
 - [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md)
-- [Microsoft Edge - Deployment Guide for IT Pros](http://go.microsoft.com/fwlink/p/?LinkId=760643)
+- [Microsoft Edge - Deployment Guide for IT Pros](https://go.microsoft.com/fwlink/p/?LinkId=760643)
 

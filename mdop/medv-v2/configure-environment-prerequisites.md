@@ -28,7 +28,7 @@ The MED-V Guest Agent is only supported in Windows XP SP3.
 The MED-V Host and Guest agents and the MED-V Workspace Packager require the Microsoft .NET Framework 3.5 SP1.
 
 **Important**  
-You must also install the update [KB959209](http://go.microsoft.com/fwlink/?LinkId=204950) (http://go.microsoft.com/fwlink/?LinkId=204950), which addresses several known application compatibility issues.
+You must also install the update [KB959209](https://go.microsoft.com/fwlink/?LinkId=204950) (https://go.microsoft.com/fwlink/?LinkId=204950), which addresses several known application compatibility issues.
 
  
 

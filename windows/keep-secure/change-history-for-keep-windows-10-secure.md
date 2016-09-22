@@ -12,8 +12,19 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## September 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| [Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md) | Clarified how convenience PIN works in Windows 10, version 1607, on domain-joined PCs |
+| [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md) | Corrected certreq ezxample and added a new Windows PowerShell example for creating a self-signed certficate |
+
 ## August 2016
-- [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md) |New |
+|New or changed topic | Description |
+|----------------------|-------------|
+|[Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md) |New |
+|[Testing scenarios for Windows Information Protection (WIP)](testing-scenarios-for-wip.md) |Updated and added additional scenarios for testing |
+|[Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md) |Updated to include info from the original What's New and Overview topics |
 
 ## RELEASE: Windows 10, version 1607
 

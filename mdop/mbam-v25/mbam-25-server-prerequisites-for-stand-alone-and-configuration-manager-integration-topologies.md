@@ -260,7 +260,7 @@ The following table lists the installation prerequisites for the MBAM Administra
 <li><p><strong>.NET Framework 4.5</strong></p>
 <ul>
 <li><p><strong>Windows Server 2012 or Windows Server 2012 R2</strong> - .NET Framework 4.5 is already installed for these versions of Windows Server, but you must enable it.</p></li>
-<li><p><strong>Windows Server 2008 R2</strong> - .NET Framework 4.5 is not included with Windows Server 2008 R2, so you must [download Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkId=392318) and install it separately.</p>
+<li><p><strong>Windows Server 2008 R2</strong> - .NET Framework 4.5 is not included with Windows Server 2008 R2, so you must [download Microsoft .NET Framework 4.5](https://go.microsoft.com/fwlink/?LinkId=392318) and install it separately.</p>
 <div class="alert">
 <strong>Note</strong>  
 <p>If you are upgrading from MBAM 2.0 or MBAM 2.0 SP1 and need to install .NET Framework 4.5, see [Release Notes for MBAM 2.5](release-notes-for-mbam-25.md) for an additional required step to make the websites work.</p>
@@ -327,7 +327,7 @@ Setspn -s http/mbamvirtual.contoso.com contoso\mbamapppooluser</code></pre>
 </tr>
 <tr class="even">
 <td align="left"><p>ASP.NET MVC 4.0</p></td>
-<td align="left"><p>[ASP.NET MVC 4 download](http://go.microsoft.com/fwlink/?LinkId=392271)</p></td>
+<td align="left"><p>[ASP.NET MVC 4 download](https://go.microsoft.com/fwlink/?LinkId=392271)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Web Service IIS Management Tools</p></td>
@@ -371,7 +371,7 @@ Setspn -s http/mbamvirtual.contoso.com contoso\mbamapppooluser</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Before installing the MBAM Client, download the MBAM Group Policy Templates from [How to Get MDOP Group Policy (.admx) Templates](http://go.microsoft.com/fwlink/p/?LinkId=393941) and configure them with the settings that you want to implement in your enterprise for BitLocker Drive Encryption.</p></td>
+<td align="left"><p>Before installing the MBAM Client, download the MBAM Group Policy Templates from [How to Get MDOP Group Policy (.admx) Templates](https://go.microsoft.com/fwlink/p/?LinkId=393941) and configure them with the settings that you want to implement in your enterprise for BitLocker Drive Encryption.</p></td>
 <td align="left"><p>Before installing the MBAM Client, do the following:</p>
 <table>
 <colgroup>

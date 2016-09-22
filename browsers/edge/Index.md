@@ -6,6 +6,7 @@ ms.prod: edge
 ms.mktglfcycl: general
 ms.sitesec: library
 title: Microsoft Edge - Deployment Guide for IT Pros (Microsoft Edge for IT Pros)
+localizationpriority: high
 ---
 
 # Microsoft Edge - Deployment Guide for IT Pros
@@ -14,6 +15,8 @@ title: Microsoft Edge - Deployment Guide for IT Pros (Microsoft Edge for IT Pros
 
 - Windows 10
 - Windows 10 Mobile
+
+>Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
 
 Microsoft Edge is the new, default web browser for Windows 10, helping you to experience modern web standards, better performance, improved security, and increased reliability. Microsoft Edge also introduces new features like Web Note, Reading View, and Cortana that you can use along with your normal web browsing abilities.
 
@@ -47,11 +50,11 @@ However, if you're running web apps that continue to use:
 
 * legacy document modes
 
-You'll need to keep running them using IE11. If you don't have IE11 installed anymore, you can download it from the Windows Store or from the [Internet Explorer 11 download page](http://go.microsoft.com/fwlink/p/?linkid=290956). Alternatively, you can also use Enterprise Mode with Microsoft Edge to transition only the sites that need these technologies to load in IE11. For info about Enterprise Mode and Edge, see [Use Enterprise Mode to improve compatibility](emie-to-improve-compatibility.md).
+You'll need to keep running them using IE11. If you don't have IE11 installed anymore, you can download it from the Windows Store or from the [Internet Explorer 11 download page](https://go.microsoft.com/fwlink/p/?linkid=290956). Alternatively, you can also use Enterprise Mode with Microsoft Edge to transition only the sites that need these technologies to load in IE11. For info about Enterprise Mode and Edge, see [Use Enterprise Mode to improve compatibility](emie-to-improve-compatibility.md).
 
 ## Related topics
 
-- [Download Internet Explorer 11](http://go.microsoft.com/fwlink/p/?linkid=290956)
-- [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](http://go.microsoft.com/fwlink/p/?LinkId=760644)
-- [Internet Explorer 11 - FAQ for IT Pros](http://go.microsoft.com/fwlink/p/?LinkId=760645)
-- [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](http://go.microsoft.com/fwlink/p/?LinkId=760646)
+- [Download Internet Explorer 11](https://go.microsoft.com/fwlink/p/?linkid=290956)
+- [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](https://go.microsoft.com/fwlink/p/?LinkId=760644)
+- [Internet Explorer 11 - FAQ for IT Pros](https://go.microsoft.com/fwlink/p/?LinkId=760645)
+- [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](https://go.microsoft.com/fwlink/p/?LinkId=760646)

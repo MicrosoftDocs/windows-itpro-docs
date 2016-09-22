@@ -27,7 +27,7 @@ This library provides the core content that IT pros need to evaluate, plan, depl
 ## Related topics
 
 
-[Windows 10 TechCenter](http://go.microsoft.com/fwlink/?LinkId=620009)
+[Windows 10 TechCenter](https://go.microsoft.com/fwlink/?LinkId=620009)
 
  
 
