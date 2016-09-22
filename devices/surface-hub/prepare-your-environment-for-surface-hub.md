@@ -63,7 +63,7 @@ There are a few more item to consider before you start the [first-run program](f
 You can use provisioning packages to add certificates, customize settings and install apps. See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md) for details. You can [install provisioning packages at first-run](first-run-program-surface-hub.md#first-page).
 
 ### Set up admin groups
-Every Surface Hub can be configured locally using the Settings app on the device. To prevent unauthorized users from changing settings, the Settings app requires admin credentials to open the app. See [Admin group management](admin-group-management-for-surface-hub.md) for details on how admin groups are set up and managed. You will [set up admins for the device at first run](first-run-program-surface-hub.md#setup-admins)).
+Every Surface Hub can be configured locally using the Settings app on the device. To prevent unauthorized users from changing settings, the Settings app requires admin credentials to open the app. See [Admin group management](admin-group-management-for-surface-hub.md) for details on how admin groups are set up and managed. You will [set up admins for the device at first run](first-run-program-surface-hub.md#setup-admins).
 
 ### Review and complete Surface Hub setup worksheet (optional)
 When you go through the first-run program for your Surface Hub, there's some information that you'll need to supply. The setup worksheet summarizes that info, and provides lists of environment-specific info that you'll need when you go through the first-run program. For more information, see [Setup worksheet](setup-worksheet-surface-hub.md).
