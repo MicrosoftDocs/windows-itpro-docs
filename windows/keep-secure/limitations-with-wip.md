@@ -73,4 +73,5 @@ This table provides info about the most common problems you might encounter whil
         <td>You can't upload an enterprise file to a personal location using Microsoft Edge or Internet Explorer.</td>
         <td>A message appears stating that the content is marked as **Work** and the user isn't given an option to override to **Personal**.</td>
         <td>Open File Explorer and change the file ownership to **Personal** before you upload.</td>
+    </tr>
 </table>                 
