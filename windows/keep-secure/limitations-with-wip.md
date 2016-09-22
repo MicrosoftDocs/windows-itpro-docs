@@ -61,7 +61,7 @@ This table provides info about the most common problems you might encounter whil
     </tr>
     <tr>
         <td>Changing your primary Corporate Identity isn’t supported.</td>
-        <td>You may experience various instabilities, including but not limited to network and file access failures, and potentially granting incorrect access.</td>
+        <td>You might experience various instabilities, including but not limited to network and file access failures, and potentially granting incorrect access.</td>
         <td>Turn off WIP for all devices before changing the primary Corporate Identity (first entry in the list), restarting, and finally redeploying.</td>
     </tr>
     <tr>
