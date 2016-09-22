@@ -106,20 +106,18 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <td align="left">0xC1900101 - 0x4000D</td>
 <td align="left">A driver configuration issue occurred during the Windows setup process and a rollback occurred.</td>
 <td align="left"><p>Review the rollback log and determine the stop code. The rollback log is located in the **C:\$Windows.~BT\Sources\Panther** folder.  Look for text similar to the following:
+<p>
+<BR>Info SP     Crash 0x0000007E detected
+<BR>Info SP       Module name           : 
+<BR>Info SP       Bugcheck parameter 1  : 0xFFFFFFFFC0000005
+<BR>Info SP       Bugcheck parameter 2  : 0xFFFFF8015BC0036A
+<BR>Info SP       Bugcheck parameter 3  : 0xFFFFD000E5D23728
+<BR>Info SP       Bugcheck parameter 4  : 0xFFFFD000E5D22F40
+<BR>Info SP     Cannot recover the system.
+<BR>Info SP     Rollback: Showing splash window with restoring text: Restoring your previous version of Windows.
 
 
-```
-Info SP     Crash 0x0000007E detected
-Info SP       Module name           : 
-Info SP       Bugcheck parameter 1  : 0xFFFFFFFFC0000005
-Info SP       Bugcheck parameter 2  : 0xFFFFF8015BC0036A
-Info SP       Bugcheck parameter 3  : 0xFFFFD000E5D23728
-Info SP       Bugcheck parameter 4  : 0xFFFFD000E5D22F40
-Info SP     Cannot recover the system.
-Info SP     Rollback: Showing splash window with restoring text: Restoring your previous version of Windows.
-```
-
-Typically there is a a dump file for the crash to analyze. If you are not equipped to debug the dump, then attempt the following basic troubleshooting procedures:<BR>
+<P>Typically there is a a dump file for the crash to analyze. If you are not equipped to debug the dump, then attempt the following basic troubleshooting procedures:<BR>
     - Make sure you have enough disk space.<BR>
     - If a driver is identified in the bug check message, disable the driver, or check with the manufacturer for driver updates.<BR>
     - Try changing video adapters.<BR>
@@ -130,7 +128,7 @@ Typically there is a a dump file for the crash to analyze. If you are not equipp
 <tr class="even">
 <td align="left">0x80070020</td>
 <td align="left">The existing process cannot access the file because it is being used by another process.</td>
-<td align="left">Use the MSCONFIG tool to perform a clean boot on the machine and then try to perform the update again. See [How to perform a clean boot in Windows](https://support.microsoft.com/en-us/kb/929135) for more information.</td>
+<td align="left">Use the MSCONFIG tool to perform a clean boot on the machine and then try to perform the update again. For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/en-us/kb/929135).</td>
 </tr>
 <tr class="odd">
 <td align="left">0x80070522</td>
@@ -141,7 +139,7 @@ Typically there is a a dump file for the crash to analyze. If you are not equipp
 <td align="left">0xC1900107</td>
 <td align="left">A cleanup operation from a previous installation attempt is still pending and a system reboot is required in order to continue the upgrade.
 </td>
-<td align="left">Reboot the device and run setup again. If restarting device does not resolve the issue, then use the Disk Cleanup utility and cleanup the temporary as well as the System files. See [Disk cleanup in Windows 10](https://support.microsoft.com/en-us/instantanswers/8fef4121-711b-4be1-996f-99e02c7301c2/disk-cleanup-in-windows-10) for more information.</td>
+<td align="left">Reboot the device and run setup again. If restarting device does not resolve the issue, then use the Disk Cleanup utility and cleanup the temporary as well as the System files. For more information, see [Disk cleanup in Windows 10](https://support.microsoft.com/en-us/instantanswers/8fef4121-711b-4be1-996f-99e02c7301c2/disk-cleanup-in-windows-10).</td>
 </tr>
 <tr class="odd">
 <td align="left">0xC1900209</td>
@@ -179,19 +177,16 @@ Typically there is a a dump file for the crash to analyze. If you are not equipp
 <td align="left">Error 800705B4: This operation returned because the timeout period expired.</td>
 <td align="left">A time out issue set by the task sequence limitation to 180 mins of run time. This can also occur if the System Center client is corrupted.</td>
 <td align="left">Review the SMSTS.log file and verify the following error is displayed:<BR>
-Command line execution failed (800705B4) TSManager 3/30/2016 10:11:29 PM 8920 (0x22D8)
-Failed to run the action: Upgrade Windows.
+Command line execution failed (800705B4) TSManager 3/30/2016 10:11:29 PM 8920 (0x22D8)<BR>
+Failed to run the action: Upgrade Windows.<BR>
 
 <P>To resolve this issue, increase the default task sequence run time and change the task sequence to have the content downloaded locally prior to installation.
 </td>
 </tbody>
 </table>
- 
 
 
 ## Appendix A: Less common errors
-
-
 
 <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;border:none'>
