@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, servicing
 author: jdeckerMS
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/manage/waas-update-windows-10
 ---
 
 # Windows 10 servicing options
