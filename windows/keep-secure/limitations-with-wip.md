@@ -41,8 +41,8 @@ This table provides info about the most common problems you might encounter whil
     </tr>
     <tr>
         <td>Cortana can potentially allow data leakage if it’s on the allowed apps list.</td>
-        <td>Some files might become unexpectedly encrypted after an employee performs a search using Cortana while it's on the allowed apps list. Regardless whether Cortana is on the allowed list, your employees will still be able to use Cortana to search and provide results on enterprise documents and locations.</td>
-        <td>We don’t recommend adding Cortana to your allowed apps list.</td>
+        <td>If Cortana is on the allowed list, some files might become unexpectedly encrypted after an employee performs a search using Cortana. Your employees will still be able to use Cortana to search and provide results on enterprise documents and locations, but results might be sent to Microsoft.</td>
+        <td>We don’t recommend adding Cortana to your allowed apps list. However, if you wish to use Cortana and don't mind whether the results potentially go to Microsoft, you can make Cortana an Exempt app.</td>
     </tr>
     <tr>
         <td>WIP is designed for use by a single user per device.</td>
