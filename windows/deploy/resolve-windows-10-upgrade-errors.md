@@ -22,17 +22,17 @@ This topic provides a brief introduction to Windows 10 installation processes an
 
 The Windows Setup application is used to upgrade a computer to Windows 10, or to perform a clean installation. Windows Setup starts and restarts the computer, gathers information, copies files, and creates or adjusts configuration settings. When performing an operating system upgrade, Windows Setup uses the following phases:
 
-1. Downlevel phase: The downlevel phase is run within the previous operating system. Installation components are gathered.
-2. Safe OS phase: A recovery partition is configured and updates are installed. An OS rollback is prepared if needed.
+1. **Downlevel phase**: The downlevel phase is run within the previous operating system. Installation components are gathered.
+2. **Safe OS phase**: A recovery partition is configured and updates are installed. An OS rollback is prepared if needed.
         - Example error codes during this phase: 0x2000C, 0x20017
-3. First boot phase: Initial settings are applied.
+3. **First boot phase**: Initial settings are applied.
         - Example error codes during this phase: 0x30018, 0x3000D
-4. Second boot phase: Final settings are applied. This is also called the OOBE boot phase.
+4. **Second boot phase**: Final settings are applied. This is also called the **OOBE boot phase**.
         - Example error codes during this phase: 0x4000D, 0x40017
-5. Rollback phase: This phase occurs if upgrade is unsuccessful.
+5. **Rollback phase**: This phase occurs if upgrade is unsuccessful.
         - Example error codes during this phase: 0x50011, 0x50012
 
-Phases of a successful Windows 10 upgrade (rollback is not shown):
+**Figure 1**: Phases of a successful Windows 10 upgrade (rollback is not shown):
 
 ![Upgrade process](images/upgrade-process.png)
 
@@ -47,7 +47,7 @@ Setup will return two codes:
 1. A result code, corresponding to a specific Win32 error.
 2. An extend code, corresponding to the phase and the operation when a failure occurred.
 
-For example, a result code of 0xC1900101 with an extend code of 0x4000D will be returned as: **0xC1900101 - 0x4000D**
+For example, a result code of **0xC1900101** with an extend code of **0x4000D** will be returned as: **0xC1900101 - 0x4000D**
 
 Note: If only a single code is returned, this can be because a tool is being used that does not capture the extend code, for example the [Windows 10 Upgrade Assistant](https://support.microsoft.com/en-us/kb/3159635).
 
@@ -115,7 +115,7 @@ The phase and operation of an extend code maps to the following tables.
 </TR>
 </TABLE>
 
-For example, you can use these tables to interpret extend code of 0x**4**</font>00**0D**</font> as a problem during phase 4 with data migration (**4** = SP_EXECUTION_OOBE_BOOT, **0D** = SP_EXECUTION_OP_MIGRATE_DATE).
+For example: You can use these tables to interpret extend code of 0x**4**</font>00**0D**</font> as a problem during phase 4 with data migration (**4** = SP_EXECUTION_OOBE_BOOT, **0D** = SP_EXECUTION_OP_MIGRATE_DATE).
 
 ## Log files
 
