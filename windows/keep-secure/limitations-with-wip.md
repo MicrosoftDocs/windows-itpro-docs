@@ -53,11 +53,11 @@ This table provides info about the most common problems you might encounter whil
         <td>Installers copied from an enterprise network file share might not work properly.</td>
         <td>An app might fail to properly install because it can’t read a necessary configuration or data file, such as a .cab or .xml file needed for installation, which was protected by the copy action.</td>
         <td>To fix this, you can:
-            <ol>
+            <ul>
                 <li>Start the installer directly from the file share.<p>-OR-</li>
                 <li>Decrypt the locally copied files needed by the installer.<p>-OR-</li>
                 <li>Mark the file share with the installation media as “personal”. To do this, you’ll need to set the Enterprise IP ranges as <strong>Authoritative</strong> and then exclude the IP address of the file server, or you’ll need to put the file server on the Enterprise Proxy Server list.</li>
-            </ol></td>
+            </ul></td>
     </tr>
     <tr>
         <td>Changing your primary Corporate Identity isn’t supported.</td>
