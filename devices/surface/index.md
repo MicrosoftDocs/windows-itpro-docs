@@ -2,6 +2,7 @@
 title: Surface (Surface)
 description: 
 ms.assetid: 2a6aec85-b8e2-4784-8dc1-194ed5126a04
+localizationpriority: high
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices

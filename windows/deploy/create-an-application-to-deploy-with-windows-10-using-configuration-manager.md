@@ -6,7 +6,6 @@ keywords: deployment, task sequence, custom, customize
 ms.prod: w10
 localizationpriority: high
 ms.mktglfcycl: deploy
-localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
 ---
