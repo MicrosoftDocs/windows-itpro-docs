@@ -29,10 +29,10 @@ The Windows Setup application is used to upgrade a computer to Windows 10, or to
         - Example error codes during this phase: 0x30018, 0x3000D
 4. Second boot phase: Final settings are applied. This is also called the OOBE boot phase.
         - Example error codes during this phase: 0x4000D, 0x40017
+5. Rollback phase: This phase occurs if upgrade is unsuccessful.
+        - Example error codes during this phase: 0x50011, 0x50012
 
->The computer can also enter a fifth, rollback (uninstall) phase if the upgrade is unsuccessful.
-
-Four phases of a Windows 10 upgrade:
+Phases of a successful Windows 10 upgrade (rollback is not shown):
 
 ![Upgrade process](images/upgrade-process.png)
 
@@ -42,22 +42,24 @@ WIM = Windows image (Microsoft)
 
 ## Upgrade error codes
 
-Setup will typically return two codes:
+Setup will return two codes:
 
 1. A result code, corresponding to a specific Win32 error.
 2. An extend code, corresponding to the phase and the operation when a failure occurred.
 
 For example, a result code of 0xC1900101 with an extend code of 0x4000D will be returned as: **0xC1900101 - 0x4000D**
 
->If only a single code is returned, this can be because a tool is being used that does not capture the extend code, for example the [Windows 10 Upgrade Assistant](https://support.microsoft.com/en-us/kb/3159635).
+Note: If only a single code is returned, this can be because a tool is being used that does not capture the extend code, for example the [Windows 10 Upgrade Assistant](https://support.microsoft.com/en-us/kb/3159635).
 
 ### Extend codes
 
 The phase and operation of an extend code maps to the following tables.
 
-<TABLE>
+<TABLE class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
 <TR>
-<TD align="left" valign="top"><TABLE>
+<TD align="left" valign="top">
+<TABLE>
 <TR><TD>Hex<TD>Phase
 <TR><TD>0<TD>SP_EXECUTION_UNKNOWN
 <TR><TD>1<TD>SP_EXECUTION_DOWNLEVEL
@@ -67,7 +69,8 @@ The phase and operation of an extend code maps to the following tables.
 <TR><TD>5<TD>SP_EXECUTION_UNINSTALL
 </TABLE>
 </TD>
-<TD align="left" valign="top"><TABLE>
+<TD align="left" valign="top">
+<TABLE>
 <TR><TD>Hex<TD>Operation
 <TR><TD>0<TD>SP_EXECUTION_OP_UNKNOWN
 <TR><TD>1<TD>SP_EXECUTION_OP_COPY_PAYLOAD
@@ -87,7 +90,8 @@ The phase and operation of an extend code maps to the following tables.
 <TR><TD>F<TD>SP_EXECUTION_OP_ADD_UNATTEND
 </TABLE>
 </TD>
-<TD align="left" valign="top"><TABLE>
+<TD align="left" valign="top">
+<TABLE>
 <TR><TD>Hex<TD>Operation
 <TR><TD>10<TD>SP_EXECUTION_OP_ADD_DRIVER
 <TR><TD>11<TD>SP_EXECUTION_OP_ENABLE_FEATURE
