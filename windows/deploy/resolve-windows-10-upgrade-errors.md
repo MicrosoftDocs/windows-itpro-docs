@@ -51,12 +51,12 @@ For example, a result code of **0xC1900101** with an extend code of **0x4000D** 
 
 Note: If only a single code is returned, this can be because a tool is being used that does not capture the extend code, for example the [Windows 10 Upgrade Assistant](https://support.microsoft.com/en-us/kb/3159635).
 
-### Extend codes
+### Result and extend codes
 
-The phase and operation of an extend code maps to the following tables.
+The following tables display the phase corresponding to a result code, and operation assoicated with an extend code:
 
 <TABLE cellspacing=0 cellpadding=0>
-<TR><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Phase codes</B></TD>
+<TR><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Result codes</B></TD>
 <TR><TD style='padding:0in 4pt 0in 4pt'><b>Hex</b><TD style='padding:0in 5.4pt 0in 5.4pt'><span style='padding:0in 1pt 0in 1pt;'><b>Phase</b>
 <TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>0<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
 <TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_DOWNLEVEL
