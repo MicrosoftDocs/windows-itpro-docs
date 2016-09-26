@@ -378,15 +378,15 @@ There are a few more settings that you can turn off that may send telemetry info
 
 FAQs
 
-- [Cortana, Search, and privacy](http://windows.microsoft.com/windows-10/cortana-privacy-faq)
-- [Windows 10 feedback, diagnostics, and privacy](http://windows.microsoft.com/windows-10/feedback-diagnostics-privacy-faq)
-- [Windows 10 camera and privacy](http://windows.microsoft.com/windows-10/camera-privacy-faq)
-- [Windows 10 location service and privacy](http://windows.microsoft.com/windows-10/location-service-privacy)
-- [Microsoft Edge and privacy](http://windows.microsoft.com/windows-10/edge-privacy-faq)
-- [Windows 10 speech, inking, typing, and privacy](http://windows.microsoft.com/windows-10/speech-inking-typing-privacy-faq)
-- [Windows Hello and privacy](http://windows.microsoft.com/windows-10/windows-hello-privacy-faq)
-- [Wi-Fi Sense](http://windows.microsoft.com/windows-10/wi-fi-sense-faq)
-- [Windows Update Delivery Optimization](http://windows.microsoft.com/windows-10/windows-update-delivery-optimization-faq)
+- [Cortana, Search, and privacy](https://privacy.microsoft.com/windows-10-cortana-and-privacy)
+- [Windows 10 feedback, diagnostics, and privacy](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)
+- [Windows 10 camera and privacy](https://privacy.microsoft.com/windows-10-camera-and-privacy)
+- [Windows 10 location service and privacy](https://privacy.microsoft.com/windows-10-location-and-privacy)
+- [Microsoft Edge and privacy](https://privacy.microsoft.com/windows-10-microsoft-edge-and-privacy)
+- [Windows 10 speech, inking, typing, and privacy](https://privacy.microsoft.com/windows-10-speech-inking-typing-and-privacy-faq)
+- [Windows Hello and privacy](https://privacy.microsoft.com/windows-10-windows-hello-and-privacy)
+- [Wi-Fi Sense](https://privacy.microsoft.com/windows-10-about-wifi-sense)
+- [Windows Update Delivery Optimization](https://privacy.microsoft.com/windows-10-windows-update-delivery-optimization)
 
 Blogs
 
@@ -398,7 +398,7 @@ Privacy Statement
 
 TechNet
 
-- [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+- [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 
 Web Pages
 

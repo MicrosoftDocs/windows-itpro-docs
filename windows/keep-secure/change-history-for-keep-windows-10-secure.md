@@ -12,6 +12,16 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## September 2016
+
+| New or changed topic | Description |
+| --- | --- |
+|[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) | New |
+|[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |Updated the networking table to clarify details around Enterprise Cloud Resources and Enterprise Proxy Servers. |
+|[Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) |Updated the networking table to clarify details around Enterprise Cloud Resources and Enterprise Proxy Servers. |
+| [Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md) | Clarified how convenience PIN works in Windows 10, version 1607, on domain-joined PCs |
+| [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md) | Corrected certreq ezxample and added a new Windows PowerShell example for creating a self-signed certficate |
+
 ## August 2016
 |New or changed topic | Description |
 |----------------------|-------------|

@@ -283,28 +283,73 @@ Alternatively, you can turn on Shell Launcher using the Deployment Image Servici
 
 1.  Open a command prompt as an administrator.
 2.  Enter the following command.
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>Dism /online /Enable-Feature /FeatureName:Client-EmbeddedShellLauncher</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+
+    ```
+    Dism /online /Enable-Feature /all /FeatureName:Client-EmbeddedShellLauncher
+    ```
 
 **To set your custom shell**
 
 Modify the following PowerShell script as appropriate. The comments in the sample script explain the purpose of each section and tell you where you will want to change the script for your purposes. Save your script with the extension .ps1, open Windows PowerShell as administrator, and run the script on the kiosk device.
 
 ```
+# Check if shell launcher license is enabled
+function Check-ShellLauncherLicenseEnabled
+{
+    [string]$source = @"
+using System;
+using System.Runtime.InteropServices;
+
+static class CheckShellLauncherLicense
+{
+    const int S_OK = 0;
+
+    public static bool IsShellLauncherLicenseEnabled()
+    {
+        int enabled = 0;
+
+        if (NativeMethods.SLGetWindowsInformationDWORD("EmbeddedFeature-ShellLauncher-Enabled", out enabled) != S_OK) {
+            enabled = 0;
+        }
+        
+        return (enabled != 0);
+    }
+
+    static class NativeMethods
+    {
+        [DllImport("Slc.dll")]
+        internal static extern int SLGetWindowsInformationDWORD([MarshalAs(UnmanagedType.LPWStr)]string valueName, out int value);
+    }
+
+}
+"@
+
+    $type = Add-Type -TypeDefinition $source -PassThru
+
+    return $type[0]::IsShellLauncherLicenseEnabled()
+}
+
+[bool]$result = $false
+
+$result = Check-ShellLauncherLicenseEnabled
+"`nShell Launcher license enabled is set to " + $result
+if (-not($result))
+{
+    "`nThis device doesn't have required license to use Shell Launcher"
+    exit
+}
+
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 
 # Create a handle to the class instance so we can call the static methods.
-$ShellLauncherClass = [wmiclass]"\\$COMPUTER\${NAMESPACE}:WESL_UserSetting"
+try {
+    $ShellLauncherClass = [wmiclass]"\\$COMPUTER\${NAMESPACE}:WESL_UserSetting"
+    } catch [Exception] {
+    write-host $_.Exception.Message; 
+    write-host "Make sure Shell Launcher feature is enabled"
+    exit
+    }
 
 
 # This well-known security identifier (SID) corresponds to the BUILTIN\Administrators group.
@@ -319,7 +364,7 @@ function Get-UsernameSID($AccountName) {
     $NTUserSID = $NTUserObject.Translate([System.Security.Principal.SecurityIdentifier])
 
     return $NTUserSID.Value
-
+    
 }
 
 # Get the SID for a user account named "Cashier". Rename "Cashier" to an existing account on your system to test this script.
