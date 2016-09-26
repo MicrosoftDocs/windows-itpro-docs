@@ -29,13 +29,13 @@ Ensure the following prerequisites are met before using site discovery:
 
     Values:
 
-    0 – Internet Explorer data collection is disabled
-
-    1 – Data collection is enabled for sites in the Local intranet + Trusted sites + Machine local zones
-
-    2 – Data collection is enabled for sites in the Internet + Restricted sites zones
-
-    3 – Data collection is enabled for all sites
+    > *IEOptInLevel = 0 Internet Explorer data collection is disabled*
+    >
+    > *IEOptInLevel = 1 Data collection is enabled for sites in the Local intranet + Trusted sites + Machine local zones*
+    >
+    > *IEOptInLevel = 2 Data collection is enabled for sites in the Internet + Restricted sites zones*
+    >
+    > *IEOptInLevel = 3 Data collection is enabled for all sites*
 
     For more information about Internet Explorer Security Zones, see [About URL Security Zones](https://msdn.microsoft.com/library/ms537183.aspx). 
 
