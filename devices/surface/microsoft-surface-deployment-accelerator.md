@@ -115,6 +115,10 @@ This version is the original release of SDA. This version of SDA includes suppor
 * Windows 8.1
 
 
+## Related topics
 
+[Step by step: Surface Deployment Accelerator](step-by-step-surface-deployment-accelerator.md)
+
+[Using the Surface Deployment Accelerator deployment share](using-the-sda-deployment-share.md)
 
 
