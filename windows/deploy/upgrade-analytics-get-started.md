@@ -99,6 +99,11 @@ The compatibility update KB scans your computers and enables application usage t
 
 IMPORTANT: Restart user computers after you install the compatibility update KBs for the first time.
 
+| **Site discovery** | **KB** |
+|----------------------|-----------------------------------------------------------------------------|
+| [Review site discovery](upgrade-analytics-review-site-discovery.md)         | [KB 3170106](https://support.microsoft.com/en-us/kb/3170106)<br>Site discovery requires July 2016 security update for Internet Explorer.   |
+
+
 ### Automate data collection
 
 To ensure that user computers are receiving the most up to date data from Microsoft, we recommend that you establish the following data sharing and analysis processes.
