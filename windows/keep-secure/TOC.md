@@ -35,6 +35,7 @@
 #### [Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](mandatory-settings-for-wip.md)
 #### [Enlightened apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md)
 #### [Testing scenarios for Windows Information Protection (WIP)](testing-scenarios-for-wip.md)
+#### [Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md)
 ## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-instrusion-detection.md)
 ## [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md)
 ## [VPN technical guide](vpn-guide.md)
