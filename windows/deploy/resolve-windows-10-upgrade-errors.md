@@ -59,13 +59,13 @@ The phase and operation of an extend code maps to the following tables.
 <TR>
 <TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
 <TABLE cellspacing=0 cellpadding=0>
-<TR><TD BGCOLOR="#a0e4fa"><b>Hex</b><TD BGCOLOR="#a0e4fa"><span style='width:200pt;padding:0in 1pt 0in 1pt;'><b>Phase</b>
-<TR><TD><span style='font-size:9.0pt'>0<TD><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
-<TR><TD><span style='font-size:9.0pt'>1<TD><span style='font-size:9.0pt'>SP_EXECUTION_DOWNLEVEL
-<TR><TD><span style='font-size:9.0pt'>2<TD><span style='font-size:9.0pt'>SP_EXECUTION_SAFE_OS
-<TR><TD><span style='font-size:9.0pt'>3<TD><span style='font-size:9.0pt'>SP_EXECUTION_FIRST_BOOT
-<TR><TD><span style='font-size:9.0pt'>4<TD><span style='font-size:9.0pt'>SP_EXECUTION_OOBE_BOOT
-<TR><TD><span style='font-size:9.0pt'>5<TD><span style='font-size:9.0pt'>SP_EXECUTION_UNINSTALL
+<TR style='height:4pt'><TD BGCOLOR="#a0e4fa"><b>Hex</b><TD BGCOLOR="#a0e4fa"><span style='width:200pt;padding:0in 1pt 0in 1pt;'><b>Phase</b>
+<TR style='height:4pt'><TD><span style='font-size:9.0pt'>0<TD><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
+<TR style='height:4pt'><TD><span style='font-size:9.0pt'>1<TD><span style='font-size:9.0pt'>SP_EXECUTION_DOWNLEVEL
+<TR style='height:4pt'><TD><span style='font-size:9.0pt'>2<TD><span style='font-size:9.0pt'>SP_EXECUTION_SAFE_OS
+<TR style='height:4pt'><TD><span style='font-size:9.0pt'>3<TD><span style='font-size:9.0pt'>SP_EXECUTION_FIRST_BOOT
+<TR style='height:4pt'><TD><span style='font-size:9.0pt'>4<TD><span style='font-size:9.0pt'>SP_EXECUTION_OOBE_BOOT
+<TR style='height:4pt'><TD><span style='font-size:9.0pt'>5<TD><span style='font-size:9.0pt'>SP_EXECUTION_UNINSTALL
 </TABLE>
 </TD>
 <TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
