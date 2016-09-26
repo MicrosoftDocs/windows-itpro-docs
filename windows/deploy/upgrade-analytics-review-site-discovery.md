@@ -9,7 +9,7 @@ author: Justinha
 
 This section of the Upgrade Analytics workflow provides an inventory of web sites that are being used by client computers that run Internet Explorer on Windows 8.1 and Windows 7 in your environment. This inventory information is provided as optional data related to upgrading to Windows 10 and Internet Explorer 11, and is meant to help prioritize compatibility testing for web applications. You can make more informed decisions about testing based on usage data. Data from Edge browser is not collected. 
 
-> Note: After you turn on this feature, data is collected on all sites visited by Internet Explorer, except during InPrivate sessions. In addition, the data collection process is silent, without notification to the user. You must also make sure that using this feature complies with all applicable local laws and regulatory requirements.
+> Note: After you turn on this feature, data is collected on all sites visited by Internet Explorer, except during InPrivate sessions. In addition, the data collection process is silent, without notification to the employee. You are responsible for ensuring that your use of this feature complies with all applicable local laws and regulatory requirements, including any requirements to provide notice to employees.
 
 ## Install prerequisite security update for Internet Explorer
 
