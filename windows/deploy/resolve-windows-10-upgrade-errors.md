@@ -51,99 +51,64 @@ For example, a result code of **0xC1900101** with an extend code of **0x4000D** 
 
 Note: If only a single code is returned, this can be because a tool is being used that does not capture the extend code, for example the [Windows 10 Upgrade Assistant](https://support.microsoft.com/en-us/kb/3159635).
 
-### Sample table
-
-<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr style='height:4.1pt'>
-  <td width=305 valign=bottom style='width:229.1pt;border:dotted #A6A6A6 1.0pt;
-  background:#A6A6A6;padding:0in 5.4pt 0in 5.4pt;height:4.1pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;  text-align:center'><a name="_GoBack"><b><span style='font-family:"Segoe UI Light",sans-serif;  color:white'>Error Codes</span></b></a></p>
-  </td>
-  <td width=570 nowrap valign=bottom style='width:427.5pt;border:dotted #A6A6A6 1.0pt;  border-left:none;background:#A6A6A6;padding:0in 5.4pt 0in 5.4pt;height:4.1pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;  text-align:center'><b><span style='font-family:"Segoe UI Light",sans-serif;  color:white'>Cause</span></b></p>
-  </td>
-  <td width=936 valign=bottom style='width:9.75in;border:dotted #A6A6A6 1.0pt;  border-left:none;background:#A6A6A6;padding:0in 5.4pt 0in 5.4pt;height:4.1pt'>
-  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;  text-align:center'><b><span style='font-family:"Segoe UI Light",sans-serif;  color:white'>Mitigation</span></b></p>
-  </td>
- </tr>
- <tr style='height:1.45pt'>
-  <td width=305 style='width:229.1pt;border:dotted #A6A6A6 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;height:1.45pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span  style='font-size:9.0pt;font-family:"Segoe UI Light",sans-serif;color:black'>Contact
-  your system administrator to upgrade Windows Server or Enterprise Editions</span></p>
-  </td>
-  <td width=570 style='width:427.5pt;border-top:none;border-left:none;  border-bottom:dotted #A6A6A6 1.0pt;border-right:dotted #A6A6A6 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:1.45pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span  style='font-size:9.0pt;font-family:"Segoe UI Light",sans-serif;color:black'>This
-  issue occurs if you run the updater tool. The tool works only with the
-  Windows 10 Home, Pro, and Education editions.</span></p>
-  </td>
-  <td width=936 style='width:9.75in;border-top:none;border-left:none;  border-bottom:dotted #A6A6A6 1.0pt;border-right:dotted #A6A6A6 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:1.45pt'>
-  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span  style='font-size:9.0pt;font-family:"Segoe UI Light",sans-serif;color:black'>To
-  resolve this issue, use a different method to upgrade to Windows 10 version
-  1607. For example, download the ISO, and then run Setup from it.</span></p>
-  </td>
- </tr>
- </table>
-
 ### Extend codes
 
 The phase and operation of an extend code maps to the following tables.
 
-<TABLE class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
+<TABLE border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
 <TR>
-<TD align="left" valign="top">
+<TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
 <TABLE>
-<TR><TD>Hex<TD>Phase
-<TR><TD>0<TD>SP_EXECUTION_UNKNOWN
-<TR><TD>1<TD>SP_EXECUTION_DOWNLEVEL
-<TR><TD>2<TD>SP_EXECUTION_SAFE_OS
-<TR><TD>3<TD>SP_EXECUTION_FIRST_BOOT
-<TR><TD>4<TD>SP_EXECUTION_OOBE_BOOT
-<TR><TD>5<TD>SP_EXECUTION_UNINSTALL
+<TR><TD BGCOLOR="#a0e4fa"><b>Hex</b><TD BGCOLOR="#a0e4fa"><b>Phase</b>
+<TR><TD><span style='font-size:9.0pt'>0<TD><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
+<TR><TD><span style='font-size:9.0pt'>1<TD><span style='font-size:9.0pt'>SP_EXECUTION_DOWNLEVEL
+<TR><TD><span style='font-size:9.0pt'>2<TD><span style='font-size:9.0pt'>SP_EXECUTION_SAFE_OS
+<TR><TD><span style='font-size:9.0pt'>3<TD><span style='font-size:9.0pt'>SP_EXECUTION_FIRST_BOOT
+<TR><TD><span style='font-size:9.0pt'>4<TD><span style='font-size:9.0pt'>SP_EXECUTION_OOBE_BOOT
+<TR><TD><span style='font-size:9.0pt'>5<TD><span style='font-size:9.0pt'>SP_EXECUTION_UNINSTALL
 </TABLE>
 </TD>
-<TD align="left" valign="top">
+<TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
 <TABLE>
-<TR><TD>Hex<TD>Operation
-<TR><TD>0<TD>SP_EXECUTION_OP_UNKNOWN
-<TR><TD>1<TD>SP_EXECUTION_OP_COPY_PAYLOAD
-<TR><TD>2<TD>SP_EXECUTION_OP_DOWNLOAD_UPDATES
-<TR><TD>3<TD>SP_EXECUTION_OP_INSTALL_UPDATES
-<TR><TD>4<TD>SP_EXECUTION_OP_INSTALL_RECOVERY_ENVIRONMENT
-<TR><TD>5<TD>SP_EXECUTION_OP_INSTALL_RECOVERY_IMAGE
-<TR><TD>6<TD>SP_EXECUTION_OP_REPLICATE_OC
-<TR><TD>7<TD>SP_EXECUTION_OP_INSTALL_DRVIERS
-<TR><TD>8<TD>SP_EXECUTION_OP_PREPARE_SAFE_OS
-<TR><TD>9<TD>SP_EXECUTION_OP_PREPARE_ROLLBACK
-<TR><TD>A<TD>SP_EXECUTION_OP_PREPARE_FIRST_BOOT
-<TR><TD>B<TD>SP_EXECUTION_OP_PREPARE_OOBE_BOOT
-<TR><TD>C<TD>SP_EXECUTION_OP_APPLY_IMAGE
-<TR><TD>D<TD>SP_EXECUTION_OP_MIGRATE_DATA
-<TR><TD>E<TD>SP_EXECUTION_OP_SET_PRODUCT_KEY
-<TR><TD>F<TD>SP_EXECUTION_OP_ADD_UNATTEND
+<TR><TD BGCOLOR="#a0e4fa"><b>Hex</b><TD BGCOLOR="#a0e4fa"><b>Operation</b>
+<TR><TD><span style='font-size:9.0pt'>0<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_UNKNOWN
+<TR><TD><span style='font-size:9.0pt'>1<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_COPY_PAYLOAD
+<TR><TD><span style='font-size:9.0pt'>2<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_DOWNLOAD_UPDATES
+<TR><TD><span style='font-size:9.0pt'>3<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_UPDATES
+<TR><TD><span style='font-size:9.0pt'>4<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_RECOVERY_ENVIRONMENT
+<TR><TD><span style='font-size:9.0pt'>5<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_RECOVERY_IMAGE
+<TR><TD><span style='font-size:9.0pt'>6<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_REPLICATE_OC
+<TR><TD><span style='font-size:9.0pt'>7<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_DRVIERS
+<TR><TD><span style='font-size:9.0pt'>8<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_SAFE_OS
+<TR><TD><span style='font-size:9.0pt'>9<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_ROLLBACK
+<TR><TD><span style='font-size:9.0pt'>A<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_FIRST_BOOT
+<TR><TD><span style='font-size:9.0pt'>B<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_OOBE_BOOT
+<TR><TD><span style='font-size:9.0pt'>C<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_APPLY_IMAGE
+<TR><TD><span style='font-size:9.0pt'>D<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_MIGRATE_DATA
+<TR><TD><span style='font-size:9.0pt'>E<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_SET_PRODUCT_KEY
+<TR><TD><span style='font-size:9.0pt'>F<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_UNATTEND
 </TABLE>
 </TD>
-<TD align="left" valign="top">
+<TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
 <TABLE>
-<TR><TD>Hex<TD>Operation
-<TR><TD>10<TD>SP_EXECUTION_OP_ADD_DRIVER
-<TR><TD>11<TD>SP_EXECUTION_OP_ENABLE_FEATURE
-<TR><TD>12<TD>SP_EXECUTION_OP_DISABLE_FEATURE
-<TR><TD>13<TD>SP_EXECUTION_OP_REGISTER_ASYNC_PROCESS
-<TR><TD>14<TD>SP_EXECUTION_OP_REGISTER_SYNC_PROCESS
-<TR><TD>15<TD>SP_EXECUTION_OP_CREATE_FILE
-<TR><TD>16<TD>SP_EXECUTION_OP_CREATE_REGISTRY
-<TR><TD>17<TD>SP_EXECUTION_OP_BOOT
-<TR><TD>18<TD>SP_EXECUTION_OP_SYSPREP
-<TR><TD>19<TD>SP_EXECUTION_OP_OOBE
-<TR><TD>1A<TD>SP_EXECUTION_OP_BEGIN_FIRST_BOOT
-<TR><TD>1B<TD>SP_EXECUTION_OP_END_FIRST_BOOT
-<TR><TD>1C<TD>SP_EXECUTION_OP_BEGIN_OOBE_BOOT
-<TR><TD>1D<TD>SP_EXECUTION_OP_END_OOBE_BOOT
-<TR><TD>1E<TD>SP_EXECUTION_OP_PRE_OOBE
-<TR><TD>1F<TD>SP_EXECUTION_OP_POST_OOBE
-<TR><TD>20<TD>SP_EXECUTION_OP_ADD_PROVISIONING_PACKAGE
+<TR><TD BGCOLOR="#a0e4fa"><b>Hex</b><TD BGCOLOR="#a0e4fa"><b>Operation</b>
+<TR><TD><span style='font-size:9.0pt'>10<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_DRIVER
+<TR><TD><span style='font-size:9.0pt'>11<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_ENABLE_FEATURE
+<TR><TD><span style='font-size:9.0pt'>12<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_DISABLE_FEATURE
+<TR><TD><span style='font-size:9.0pt'>13<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_REGISTER_ASYNC_PROCESS
+<TR><TD><span style='font-size:9.0pt'>14<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_REGISTER_SYNC_PROCESS
+<TR><TD><span style='font-size:9.0pt'>15<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_CREATE_FILE
+<TR><TD><span style='font-size:9.0pt'>16<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_CREATE_REGISTRY
+<TR><TD><span style='font-size:9.0pt'>17<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_BOOT
+<TR><TD><span style='font-size:9.0pt'>18<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_SYSPREP
+<TR><TD><span style='font-size:9.0pt'>19<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_OOBE
+<TR><TD><span style='font-size:9.0pt'>1A<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_BEGIN_FIRST_BOOT
+<TR><TD><span style='font-size:9.0pt'>1B<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_END_FIRST_BOOT
+<TR><TD><span style='font-size:9.0pt'>1C<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_BEGIN_OOBE_BOOT
+<TR><TD><span style='font-size:9.0pt'>1D<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_END_OOBE_BOOT
+<TR><TD><span style='font-size:9.0pt'>1E<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_PRE_OOBE
+<TR><TD><span style='font-size:9.0pt'>1F<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_POST_OOBE
+<TR><TD><span style='font-size:9.0pt'>20<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_PROVISIONING_PACKAGE
 </TABLE>
 </TD>
 </TR>
