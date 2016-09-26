@@ -24,13 +24,13 @@ The Windows Setup application is used to upgrade a computer to Windows 10, or to
 
 1. **Downlevel phase**: The downlevel phase is run within the previous operating system. Installation components are gathered.
 2. **Safe OS phase**: A recovery partition is configured and updates are installed. An OS rollback is prepared if needed.
-        - Example error codes during this phase: 0x2000C, 0x20017
+        - Example error codes: 0x2000C, 0x20017
 3. **First boot phase**: Initial settings are applied.
-        - Example error codes during this phase: 0x30018, 0x3000D
+        - Example error codes: 0x30018, 0x3000D
 4. **Second boot phase**: Final settings are applied. This is also called the **OOBE boot phase**.
-        - Example error codes during this phase: 0x4000D, 0x40017
+        - Example error: 0x4000D, 0x40017
 5. **Rollback phase**: This phase occurs if upgrade is unsuccessful.
-        - Example error codes during this phase: 0x50011, 0x50012
+        - Example error: 0x50011, 0x50012
 
 **Figure 1**: Phases of a successful Windows 10 upgrade (rollback is not shown):
 
@@ -50,6 +50,40 @@ Setup will return two codes:
 For example, a result code of **0xC1900101** with an extend code of **0x4000D** will be returned as: **0xC1900101 - 0x4000D**
 
 Note: If only a single code is returned, this can be because a tool is being used that does not capture the extend code, for example the [Windows 10 Upgrade Assistant](https://support.microsoft.com/en-us/kb/3159635).
+
+### Sample table
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:4.1pt'>
+  <td width=305 valign=bottom style='width:229.1pt;border:dotted #A6A6A6 1.0pt;
+  background:#A6A6A6;padding:0in 5.4pt 0in 5.4pt;height:4.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;  text-align:center'><a name="_GoBack"><b><span style='font-family:"Segoe UI Light",sans-serif;  color:white'>Error Codes</span></b></a></p>
+  </td>
+  <td width=570 nowrap valign=bottom style='width:427.5pt;border:dotted #A6A6A6 1.0pt;  border-left:none;background:#A6A6A6;padding:0in 5.4pt 0in 5.4pt;height:4.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;  text-align:center'><b><span style='font-family:"Segoe UI Light",sans-serif;  color:white'>Cause</span></b></p>
+  </td>
+  <td width=936 valign=bottom style='width:9.75in;border:dotted #A6A6A6 1.0pt;  border-left:none;background:#A6A6A6;padding:0in 5.4pt 0in 5.4pt;height:4.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;  text-align:center'><b><span style='font-family:"Segoe UI Light",sans-serif;  color:white'>Mitigation</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.45pt'>
+  <td width=305 style='width:229.1pt;border:dotted #A6A6A6 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;height:1.45pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span  style='font-size:9.0pt;font-family:"Segoe UI Light",sans-serif;color:black'>Contact
+  your system administrator to upgrade Windows Server or Enterprise Editions</span></p>
+  </td>
+  <td width=570 style='width:427.5pt;border-top:none;border-left:none;  border-bottom:dotted #A6A6A6 1.0pt;border-right:dotted #A6A6A6 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:1.45pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span  style='font-size:9.0pt;font-family:"Segoe UI Light",sans-serif;color:black'>This
+  issue occurs if you run the updater tool. The tool works only with the
+  Windows 10 Home, Pro, and Education editions.</span></p>
+  </td>
+  <td width=936 style='width:9.75in;border-top:none;border-left:none;  border-bottom:dotted #A6A6A6 1.0pt;border-right:dotted #A6A6A6 1.0pt;  padding:0in 5.4pt 0in 5.4pt;height:1.45pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span  style='font-size:9.0pt;font-family:"Segoe UI Light",sans-serif;color:black'>To
+  resolve this issue, use a different method to upgrade to Windows 10 version
+  1607. For example, download the ISO, and then run Setup from it.</span></p>
+  </td>
+ </tr>
+ </table>
 
 ### Extend codes
 
