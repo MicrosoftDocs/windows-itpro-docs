@@ -51,12 +51,12 @@ For example, a result code of **0xC1900101** with an extend code of **0x4000D** 
 
 Note: If only a single code is returned, this can be because a tool is being used that does not capture the extend code, for example the [Windows 10 Upgrade Assistant](https://support.microsoft.com/en-us/kb/3159635).
 
-### Result and extend codes
+### Extend codes
 
-The following tables display the phase corresponding to a result code, and operation assoicated with an extend code:
+The following tables display the phase and operation assoicated with an extend code:
 
 <TABLE cellspacing=0 cellpadding=0>
-<TR><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Result codes</B></TD>
+<TR><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: phase</B></TD>
 <TR><TD style='padding:0in 4pt 0in 4pt'><b>Hex</b><TD style='padding:0in 5.4pt 0in 5.4pt'><span style='padding:0in 1pt 0in 1pt;'><b>Phase</b>
 <TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>0<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
 <TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_DOWNLEVEL
@@ -67,7 +67,7 @@ The following tables display the phase corresponding to a result code, and opera
 </TABLE>
 
 <TABLE border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
-<TR><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend codes</B></TD>
+<TR><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: operation</B></TD>
 <TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt'><b>Hex</b><TD style='padding:0in 4pt 0in 4pt'><span style='padding:0in 5.4pt 0in 5.4pt;'><b>Operation</b>
@@ -114,7 +114,7 @@ The following tables display the phase corresponding to a result code, and opera
 </TR>
 </TABLE>
 
-For example: You can use these tables to interpret extend code of 0x**4**</font>00**0D**</font> as a problem during phase 4 with data migration (**4** = SP_EXECUTION_OOBE_BOOT, **0D** = SP_EXECUTION_OP_MIGRATE_DATE).
+For example: A code of 0x**4**</font>00**0D**</font> is a problem during **phase 4** with the **data migration** operation (**4** = SP_EXECUTION_OOBE_BOOT, **0D** = SP_EXECUTION_OP_MIGRATE_DATE).
 
 ## Log files
 
