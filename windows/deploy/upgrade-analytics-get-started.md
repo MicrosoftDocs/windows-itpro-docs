@@ -101,7 +101,7 @@ IMPORTANT: Restart user computers after you install the compatibility update KBs
 
 | **Site discovery** | **KB** |
 |----------------------|-----------------------------------------------------------------------------|
-| [Review site discovery](upgrade-analytics-review-site-discovery.md)         | [KB 317016](https://support.microsoft.com/en-us/kb/3170106)<br>Site discovery requires July 2016 security update for Internet Explorer.   |
+| [Review site discovery](upgrade-analytics-review-site-discovery.md)         | [KB 3170106](https://support.microsoft.com/en-us/kb/3170106)<br>Site discovery requires July 2016 security update for Internet Explorer.   |
 
 
 ### Automate data collection
