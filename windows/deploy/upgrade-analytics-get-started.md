@@ -151,9 +151,19 @@ To run the Upgrade Analytics deployment script:
 
 3.  For troubleshooting, set isVerboseLogging to $true to generate log information that can help with diagnosing issues. By default, isVerboseLogging is set to $false. Ensure the Diagnostics folder is installed in the same directory as the script to use this mode.
 
-4.  Notify users if they need to restart their computers. By default, this is set to off.
+4.  To enable Internet Explorer data collection, set AllowIEData to IEDataOptIn. By default, AllowIEData is set to Disable. Then use one of the following options to determine what Internet Explorer data can be collected:
 
-5.  After you finish editing the parameters in RunConfig.bat, run the script as an administrator.
+    > *IEOptInLevel = 0 Internet Explorer data collection is disabled*
+    >
+    > *IEOptInLevel = 1 Data collection is enabled for sites in the Local intranet + Trusted sites + Machine local zones*
+    >
+    > *IEOptInLevel = 2 Data collection is enabled for sites in the Internet + Restricted sites zones*
+    >
+    > *IEOptInLevel = 3 Data collection is enabled for all sites*
+
+5.  Notify users if they need to restart their computers. By default, this is set to off.
+
+6.  After you finish editing the parameters in RunConfig.bat, run the script as an administrator.
 
 ## Seeing data from computers in Upgrade Analytics
 
