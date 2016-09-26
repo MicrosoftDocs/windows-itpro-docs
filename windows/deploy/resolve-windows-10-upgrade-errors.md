@@ -58,8 +58,8 @@ The phase and operation of an extend code maps to the following tables.
 <TABLE border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
 <TR>
 <TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
-<TABLE>
-<TR><TD BGCOLOR="#a0e4fa"><b>Hex</b><TD BGCOLOR="#a0e4fa"><b>Phase</b>
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD BGCOLOR="#a0e4fa"><b>Hex</b><TD BGCOLOR="#a0e4fa"><span style='width:200pt;padding:0in 1pt 0in 1pt;'><b>Phase</b>
 <TR><TD><span style='font-size:9.0pt'>0<TD><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
 <TR><TD><span style='font-size:9.0pt'>1<TD><span style='font-size:9.0pt'>SP_EXECUTION_DOWNLEVEL
 <TR><TD><span style='font-size:9.0pt'>2<TD><span style='font-size:9.0pt'>SP_EXECUTION_SAFE_OS
@@ -69,8 +69,8 @@ The phase and operation of an extend code maps to the following tables.
 </TABLE>
 </TD>
 <TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
-<TABLE>
-<TR><TD BGCOLOR="#a0e4fa"><b>Hex</b><TD BGCOLOR="#a0e4fa"><b>Operation</b>
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD BGCOLOR="#a0e4fa"><b>Hex</b><TD BGCOLOR="#a0e4fa"><span style='width:200pt;padding:0in 5.4pt 0in 5.4pt;'><b>Operation</b>
 <TR><TD><span style='font-size:9.0pt'>0<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_UNKNOWN
 <TR><TD><span style='font-size:9.0pt'>1<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_COPY_PAYLOAD
 <TR><TD><span style='font-size:9.0pt'>2<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_DOWNLOAD_UPDATES
@@ -90,7 +90,7 @@ The phase and operation of an extend code maps to the following tables.
 </TABLE>
 </TD>
 <TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
-<TABLE>
+<TABLE cellspacing=0 cellpadding=0>
 <TR><TD BGCOLOR="#a0e4fa"><b>Hex</b><TD BGCOLOR="#a0e4fa"><b>Operation</b>
 <TR><TD><span style='font-size:9.0pt'>10<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_DRIVER
 <TR><TD><span style='font-size:9.0pt'>11<TD><span style='font-size:9.0pt'>SP_EXECUTION_OP_ENABLE_FEATURE
