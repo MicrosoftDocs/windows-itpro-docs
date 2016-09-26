@@ -14,7 +14,8 @@ localizationpriority: high
 # Test table
 
 <TABLE cellspacing=0 cellpadding=0>
-<TR style='height:4pt'><TD style="width: 10%"><b>Hex</b><TD><span style='width:100px;padding:0in 1pt 0in 1pt;'><b>Phase</b>
+<TR><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Phase codes</B></TD>
+<TR style='height:4pt'><TD style='padding:0in 4pt 0in 4pt;height:4pt;width:1pt'><b>Hex</b><TD style='padding:0in 5.4pt 0in 5.4pt;height:4.1pt'><span style='width:100px;padding:0in 1pt 0in 1pt;'><b>Phase</b>
 <TR style='height:4pt'><TD><span style='font-size:9.0pt'>0<TD><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
 <TR style='height:4pt'><TD><span style='font-size:9.0pt'>1<TD><span style='font-size:9.0pt'>SP_EXECUTION_DOWNLEVEL
 <TR style='height:4pt'><TD><span style='font-size:9.0pt'>2<TD><span style='font-size:9.0pt'>SP_EXECUTION_SAFE_OS
