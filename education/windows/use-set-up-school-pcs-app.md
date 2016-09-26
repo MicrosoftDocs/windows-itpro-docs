@@ -18,6 +18,8 @@ author: jdeckerMS
 
 Teachers and IT administrators can use the **Set up School PCs** app to quickly set up computers for students. A computer set up using the app is tailored to provide students with the tools they need for learning while removing apps and features that they don't need.
 
+[Download the Set up School PCs app from the Windows Store](https://www.microsoft.com/store/apps/9nblggh4ls40)
+
 ![Run app, turn on PC, insert USB key](images/app1.jpg)
 
 ## What does this app do?
