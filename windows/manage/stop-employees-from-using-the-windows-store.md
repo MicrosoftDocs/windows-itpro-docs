@@ -15,7 +15,7 @@ localizationpriority: high
 
 **Applies to**
 
--   Windows 10
+-   Windows 10 Enterprise
 -   Windows 10 Mobile
 
 IT Pros can configure access to Windows Store for client computers in their organization. For some organizations, business policies require blocking access to Windows Store.
