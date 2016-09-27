@@ -16,7 +16,7 @@ localizationpriority: high
 
 **Applies to**
 
--   Windows 10
+-   Windows 10 Enterprise, Windows 10 Education
 
 Learn how to configure a device running Windows 10 Enterprise or Windows 10 Education so that users can only run a few specific apps. The result is similar to [a kiosk device](set-up-a-device-for-anyone-to-use.md), but with multiple apps available. For example, you might set up a library computer so that users can search the catalog and browse the Internet, but can't run any other apps or change computer settings.
 
