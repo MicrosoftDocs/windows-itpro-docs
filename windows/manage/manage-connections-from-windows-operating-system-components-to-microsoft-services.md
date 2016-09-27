@@ -63,7 +63,7 @@ See the following table for a summary of the management settings for Windows 10 
 | [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | | ![Check mark](images/checkmark.png) | |
 | [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | | |
-| [5. Font streaming](#font-streaming) | | | | ![Check mark](images/checkmark.png) | |
+| [5. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [6. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
 | [7. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
 | [8. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | | | |
@@ -113,7 +113,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | |
-| [5. Font streaming](#font-streaming) | | | ![Check mark](images/checkmark.png) | |
+| [5. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [6. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 | [7. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 | [8. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | | |
@@ -137,7 +137,7 @@ See the following table for a summary of the management settings for Windows Ser
 | - | :-: | :-: | :-: | :-: | :-: |
 | [1. Certificate trust lists](#certificate-trust-lists) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [3. Date & Time](#bkmk-datetime) | | ![Check mark](images/checkmark.png) | |
-| [5. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | |
+| [5. Font streaming](#font-streaming) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [12. Network Connection Status Indicator](#bkmk-ncsi) | ![Check mark](images/checkmark.png) | | |
 | [17. Software Protection Platform](#bkmk-spp) | ![Check mark](images/checkmark.png) | | |
 | [19. Teredo](#bkmk-teredo) | | | ![Check mark](images/checkmark.png) |
@@ -268,10 +268,13 @@ To prevent Windows from retrieving device metadata from the Internet, apply the 
 
 Fonts that are included in Windows but that are not stored on the local device can be downloaded on demand.
 
-To turn off font streaming, create a REG\_DWORD registry setting called **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters**, with a value of 1.
+If you're running Windows 10, version 1607 or Windows Server 2016, disable the Group Policy: **Computer Configuration** > **Administrative Templates** > **Network** > **Fonts** > **Enable Font Providers**.
 
 > [!NOTE]  
-> After you apply this registry setting, you must restart the device for it to take effect.
+> After you apply this policy, you must restart the device for it to take effect.
+
+If you're running Windows 10, version 1507 or Windows 10, version 1511, create a REG\_DWORD registry setting called **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters**, with a value of 1.
+
 
 ### <a href="" id="bkmk-previewbuilds"></a>6. Insider Preview builds
 
