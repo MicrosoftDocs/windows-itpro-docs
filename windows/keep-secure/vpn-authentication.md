@@ -29,6 +29,14 @@ Windows supports a number of EAP authentication methods.
 </table>
 </br>
 
+For a UWP VPN plug-in, the app vendor controls the authentication method to be used. The following credential types can be used:
+
+- Smart card
+- Certificate
+- Windows Hello for Business
+- User name and password
+- One-time password
+- Custom credential type
 
 ## Configure authentication
 

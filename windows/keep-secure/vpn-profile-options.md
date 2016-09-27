@@ -44,9 +44,10 @@ The following table lists the VPN settings and whether the setting can be config
 
 The ProfileXML node was added to the VPNv2 CSP to allow users to deploy VPN profile as a single blob. This is particularly useful for deploying profiles with features that are not yet supported by MDMs. You can get additional examples in the [ProfileXML XSD](https://msdn.microsoft.com/library/windows/hardware/mt755930.aspx) topic.
 
-## Sample VPN profile
 
-The following is a sample Native VPN profile. This blob would fall under the ProfileXML node. Profiles can be created for UWP apps as well. An example can be found in the link above as well.
+## Sample Native VPN profile
+
+The following is a sample Native VPN profile. This blob would fall under the ProfileXML node. 
 
 ```
 <VPNProfile>  
@@ -211,9 +212,90 @@ The following is a sample Native VPN profile. This blob would fall under the Pro
 </VPNProfile> 
 ```
 
+## Sample plug-in VPN profile
+
+The following is a sample plug-in VPN profile. This blob would fall under the ProfileXML node. 
+
+```
+<VPNProfile>
+	<ProfileName>TestVpnProfile</ProfileName>
+	<PluginProfile>
+		<ServerUrlList>testserver1.contoso.com;testserver2.contoso..com</ServerUrlList>
+		<PluginPackageFamilyName>JuniperNetworks.JunosPulseVpn_cw5n1h2txyewy</PluginPackageFamilyName>
+		<CustomConfiguration>&lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;</CustomConfiguration>
+	</PluginProfile>
+	<Route>
+		<Address>192.168.0.0</Address>
+		<PrefixSize>24</PrefixSize>
+	</Route>
+	<Route>
+		<Address>10.10.0.0</Address>
+		<PrefixSize>16</PrefixSize>
+	</Route>
+	<AppTrigger>
+		<App>
+			<Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
+		</App>
+	</AppTrigger>
+	<AppTrigger>
+		<App>
+			<Id>%ProgramFiles%\Internet Explorer\iexplore.exe</Id>
+		</App>
+	</AppTrigger>
+	<TrafficFilter>
+		<App>
+			<Id>%ProgramFiles%\Internet Explorer\iexplore.exe</Id>
+		</App>
+		<Protocol>6</Protocol>
+		<LocalPortRanges>10,20-50,100-200</LocalPortRanges>
+		<RemotePortRanges>20-50,100-200,300</RemotePortRanges>
+		<RemoteAddressRanges>30.30.0.0/16,10.10.10.10-20.20.20.20</RemoteAddressRanges>
+		<!--<RoutingPolicyType>ForceTunnel</RoutingPolicyType>-->
+	</TrafficFilter>
+	<TrafficFilter>
+		<App>
+			<Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
+		</App>
+		<LocalAddressRanges>3.3.3.3/32,1.1.1.1-2.2.2.2</LocalAddressRanges>
+	</TrafficFilter>
+	<TrafficFilter>
+		<App>
+			<Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>
+		</App>
+		<Claims>O:SYG:SYD:(A;;CC;;;AU)</Claims>
+		<!--<RoutingPolicyType>SplitTunnel</RoutingPolicyType>-->
+	</TrafficFilter>
+	<DomainNameInformation>
+		<DomainName>corp.contoso.com</DomainName>
+		<DnsServers>1.2.3.4,5.6.7.8</DnsServers>
+		<WebProxyServers>5.5.5.5</WebProxyServers>
+		<AutoTrigger>false</AutoTrigger>
+	</DomainNameInformation>
+	<DomainNameInformation>
+		<DomainName>corp.contoso.com</DomainName>
+		<DnsServers>10.10.10.10,20.20.20.20</DnsServers>
+		<WebProxyServers>100.100.100.100</WebProxyServers>
+	</DomainNameInformation>
+	<!--<EdpModeId>corp.contoso.com</EdpModeId>-->
+	<RememberCredentials>true</RememberCredentials>
+	<AlwaysOn>false</AlwaysOn>
+	<DnsSuffix>corp.contoso.com</DnsSuffix>
+	<TrustedNetworkDetection>contoso.com,test.corp.contoso.com</TrustedNetworkDetection>
+	<Proxy>
+		<Manual>
+			<Server>HelloServer</Server>
+		</Manual>
+		<AutoConfigUrl>Helloworld.Com</AutoConfigUrl>
+	</Proxy>
+</VPNProfile>  
+
+```
+
 ## Apply ProfileXML using Intune
 
 After you configure the settings that you want using ProfileXML, you can apply it using Intune and a **Custom Configuration (Windows 10 Desktop and Mobile and later)** policy.
+
+The OMS-URI setting to apply ProfileXML is **./user/vendor/MSFT/*VPN profile name*/ProfileXML**.
 
 ![Paste your ProfileXML in OMA-URI Setting value field](images/vpn-profilexml-intune.png)
 

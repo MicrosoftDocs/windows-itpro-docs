@@ -15,7 +15,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Virtual private networks (VPNs) are point-to-point connections across a private or public network, such as the Internet. A VPN client uses special TCP/IP and UDP-based protocols, called *tunneling protocols*, to make a virtual call to a virtual port on a VPN server. In a typical VPN deployment, a client initiates a virtual point-to-point connection to a remote access server over the Internet. The remote access server answers the call, authenticates the caller, and transfers data between the VPN client and the organization’s private network.
+Virtual private networks (VPNs) are point-to-point connections across a private or public network, such as the Internet. A VPN client uses special TCP/IP or UDP-based protocols, called *tunneling protocols*, to make a virtual call to a virtual port on a VPN server. In a typical VPN deployment, a client initiates a virtual point-to-point connection to a remote access server over the Internet. The remote access server answers the call, authenticates the caller, and transfers data between the VPN client and the organization’s private network.
 
 There are many options for VPN clients. In Windows 10, the built-in plug-in and the Universal Windows Platform (UWP) VPN plug-in platform are built on top of the Windows VPN platform. This guide focuses on the Windows VPN platform clients and the features that can be configured. 
 
@@ -27,15 +27,11 @@ There are many options for VPN clients. In Windows 10, the built-in plug-in and 
 
     - [Internet Key Exchange version 2 (IKEv2)](https://technet.microsoft.com/library/ff687731.aspx)
 
-        
-    
-        Configure the IPsec/IKE tunnel cryptographic properties using the **Cryptography Suite** setting in the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
+      Configure the IPsec/IKE tunnel cryptographic properties using the **Cryptography Suite** setting in the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
            
     - [L2TP](https://technet.microsoft.com/library/ff687761.aspx)
 
-        
-    
-        L2TP with pre-shared key (PSK) authentication can be configured using the **L2tpPsk** setting in the [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
+      L2TP with pre-shared key (PSK) authentication can be configured using the **L2tpPsk** setting in the [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
     
     - [PPTP](https://technet.microsoft.com/library/ff687676.aspx)
 

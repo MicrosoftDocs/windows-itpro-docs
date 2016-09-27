@@ -23,15 +23,15 @@ The VPN client is now able to integrate with the cloud-based Conditional Access 
 Conditional Access Platform components used for Device Compliance include the following cloud-based services:
 - [Conditional Access Framework](https://blogs.technet.microsoft.com/tip_of_the_day/2016/03/12/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn/)
 
-- [Azure AD Connect Health](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health/)
+- [Azure AD Connect Health](https://azure.microsoft.com/documentation/articles/active-directory-Azure ADconnect-health/)
 
 - [Windows Health Attestation Service](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices#device-health-attestation)
 
 - Azure AD Certificate Authority - It is a requirement that the client certificate used for the cloud-based device compliance solution be issued by an Azure Active Directory-based Certificate Authority (CA).  An Azure AD CA is essentially a mini-CA cloud tenant in Azure. The Azure AD CA cannot be configured as part of an on-premises Enterprise CA. 
 
-- Azure AD-issued short-lived certificates - When a VPN connection attempt is made, the AAD Token Broker on the local device communicates with Azure Active Directory, which then checks for health based on compliance rules.  If compliant, AAD sends back a short-lived certificate that is used to authenticate the VPN.  Note that certificate authentication methods such as EAP-TLS can be used. 
+- Azure AD-issued short-lived certificates - When a VPN connection attempt is made, the Azure AD Token Broker on the local device communicates with Azure Active Directory, which then checks for health based on compliance rules.  If compliant, Azure AD sends back a short-lived certificate that is used to authenticate the VPN.  Note that certificate authentication methods such as EAP-TLS can be used. 
 
-    Additional details regarding the AAD issued short-lived certificate: 
+    Additional details regarding the Azure AD issued short-lived certificate: 
     - The default lifetime is 60 minutes and is configurable
     - When that certificate expires, the client will again check with Azure AD so that continued health can be validated before a new certificate is issued allowing continuation of the connection
 
@@ -74,6 +74,23 @@ Two client-side configuration service providers are leveraged for VPN device com
    - Forwards the data to the Health Attestation Service (HAS)
    - Provisions the Health Attestation Certificate received from the HAS
    - Upon request, forwards the Health Attestation Certificate (received from HAS) and related runtime information to the MDM server for verification
+   
+## Client connection flow
+
+
+The  VPN client side connection flow works as follows:
+
+![Device compliance workflow when VPN client attempts to connect](images/vpn-device-compliance.png)
+ 
+When a Device Compliance-enabled VPN connection profile is triggered (either manually or automatically):
+
+1.	 The VPN client calls into Windows 10’s AAD Token Broker, identifying itself as a VPN client.
+2.	 The Azure AD Token Broker authenticates to Azure AD and provides it with information about the device trying to connect. The Azure AD Server checks if the device is in compliance with the policies.
+3.	 If compliant, Azure AD requests a short-lived certificate
+4.	 Azure AD pushes down a short-lived certificate to the Certificate Store via the Token Broker. The Token Broker then returns control back over to the VPN client for further connection  processing.
+5. The VPN client uses the Azure AD-issued certificate to authenticate with the VPN server.
+
+
 
 ## Configure conditional access
 
