@@ -58,16 +58,21 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
+<td align="left"><p>Microsoft Windows Server 2016</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012</p></td>
+<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="odd">
+<td align="left"><p>Microsoft Windows Server 2012</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64-bit</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p>Microsoft Windows Server 2008 R2</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>64-bit</p></td>
@@ -147,16 +152,21 @@ The following table lists the operating systems that are supported for the App-V
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
+<td align="left"><p>Microsoft Windows Server 2016</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012</p></td>
+<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="odd">
+<td align="left"><p>Microsoft Windows Server 2012</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64-bit</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p>Microsoft Windows Server 2008 R2</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>64-bit</p></td>
@@ -195,16 +205,21 @@ The following table lists the operating systems that are supported for the App-V
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
+<td align="left"><p>Microsoft Windows Server 2016</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012</p></td>
+<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="odd">
+<td align="left"><p>Microsoft Windows Server 2012</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64-bit</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p>Microsoft Windows Server 2008 R2</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>64-bit</p></td>
@@ -267,6 +282,8 @@ The following table lists the SQL Server versions that are supported for the App
 
 The following table lists the operating systems that are supported for the App-V 5.1 client installation.
 
+**Note:** With the Windows 10 Anniversary release (aka 1607 version), the App-V client is in-box and will block installation of any previous version of the App-V client
+
 <table>
 <colgroup>
 <col width="33%" />
@@ -282,7 +299,7 @@ The following table lists the operating systems that are supported for the App-V
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows 10</p></td>
+<td align="left"><p>Microsoft Windows 10 (pre-1607 version)</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
@@ -292,11 +309,6 @@ The following table lists the operating systems that are supported for the App-V
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows 8</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit or 64-bit</p></td>
-</tr>
-<tr class="even">
 <td align="left"><p>Windows 7</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
@@ -344,16 +356,21 @@ The following table lists the operating systems that are supported for App-V 5.1
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
+<td align="left"><p>Microsoft Windows Server 2016</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Microsoft Windows Server 2012</p></td>
+<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="odd">
+<td align="left"><p>Microsoft Windows Server 2012</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64-bit</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p>Microsoft Windows Server 2008 R2</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>64-bit</p></td>
@@ -393,32 +410,32 @@ The following table lists the operating systems that are supported for the App-V
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
+<td align="left"><p>Microsoft Windows Server 2016</p></td>
 <td align="left"></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p>Microsoft Windows Server 2012 R2</p></td>
+<td align="left"></td>
+<td align="left"><p>64-bit</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>Microsoft Windows Server 2012</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Microsoft Windows Server 2008 R2</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>Microsoft Windows 10</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>32-bit and 64-bit</p></td>
 </tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Windows 8.1</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit and 64-bit</p></td>
-</tr>
 <tr class="even">
-<td align="left"><p>Microsoft Windows 8</p></td>
+<td align="left"><p>Microsoft Windows 8.1</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>32-bit and 64-bit</p></td>
 </tr>

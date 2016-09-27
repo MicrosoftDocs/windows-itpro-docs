@@ -13,7 +13,7 @@ ms.prod: w10
 # Choosing Which Version of AGPM to Install
 
 
-Each release of Microsoft Advanced Group Policy Management (AGPM) supports specific versions of the Windows operating system. We strongly recommend that you run the AGPM Client and AGPM Server on the same line of operating systems, for example, Windows 8.1 with Windows Server 2012 R2, Windows 8 with Windows Server 2012, and so on.
+Each release of Microsoft Advanced Group Policy Management (AGPM) supports specific versions of the Windows operating system. We strongly recommend that you run the AGPM Client and AGPM Server on the same line of operating systems. For example, Windows 10 with Windows Server 2016, Windows 8.1 with Windows Server 2012 R2, and so on.
 
 We recommend that you install the AGPM Server on the most recent version of the operating system in the domain. AGPM uses the Group Policy Management Console (GPMC) to back up and restore Group Policy Objects (GPOs). Because newer versions of the GPMC provide additional policy settings that are not available in earlier versions, you can manage more policy settings by using the most recent version of the operating system.
 
@@ -45,8 +45,8 @@ Table 1 lists the operating systems on which you can install AGPM 4.0 SP3, and 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows 10</p></td>
-<td align="left"><p>Windows 10</p></td>
+<td align="left"><p>Windows Server 2016 or Windows 10</p></td>
+<td align="left"><p>Windows Server 2016 or Windows 10</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="even">
@@ -55,19 +55,19 @@ Table 1 lists the operating systems on which you can install AGPM 4.0 SP3, and 
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Windows Server 2012 R2, Windows Server 2012, Windows 8.1, or Windows 8</p></td>
-<td align="left"><p>Windows Server 2012 or Windows 8</p></td>
+<td align="left"><p>Windows Server 2012 R2, Windows Server 2012, or Windows 8.1</p></td>
+<td align="left"><p>Windows Server 2012 or Windows 8.1</p></td>
 <td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows 8.1</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Windows Server 2008 R2 or Windows 7</p></td>
 <td align="left"><p>Windows Server 2008 R2 or Windows 7</p></td>
-<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows 8.1 or Windows 8</p></td>
+<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows 8.1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Windows Server 2012, Windows Server 2008 R2, Windows 8, or Windows 7</p></td>
+<td align="left"><p>Windows Server 2012, Windows Server 2008 R2, or Windows 7</p></td>
 <td align="left"><p>Windows Server 2008 or Windows Vista with Service Pack 1 (SP1)</p></td>
-<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows 8.1, Windows 8, or Windows 7</p></td>
+<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows 8.1, or Windows 7</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
@@ -77,7 +77,7 @@ Table 1 lists the operating systems on which you can install AGPM 4.0 SP3, and 
 <tr class="odd">
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
-<td align="left"><p>Supported, but cannot report or edit policy settings or preference items that exist only in Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows 8.1, Windows 8, or Windows 7</p></td>
+<td align="left"><p>Supported, but cannot report or edit policy settings or preference items that exist only in Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows 8.1, or Windows 7</p></td>
 </tr>
 </tbody>
 </table>
@@ -113,29 +113,29 @@ Table 1 lists the operating systems on which you can install AGPM 4.0 SP2, and 
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Windows Server 2012 R2, Windows Server 2012, Windows 8.1, or Windows 8</p></td>
-<td align="left"><p>Windows Server 2012 or Windows 8</p></td>
+<td align="left"><p>Windows Server 2012 R2, Windows Server 2012, or Windows 8.1</p></td>
+<td align="left"><p>Windows Server 2012 or Windows 8.1</p></td>
 <td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows 8.1</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Windows Server 2008 R2 or Windows 7</p></td>
 <td align="left"><p>Windows Server 2008 R2 or Windows 7</p></td>
-<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows 8.1 or Windows 8</p></td>
+<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows 8.1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Windows Server 2012, Windows Server 2008 R2, Windows 8, or Windows 7</p></td>
+<td align="left"><p>Windows Server 2012, Windows Server 2008 R2, or Windows 7</p></td>
 <td align="left"><p>Windows Server 2008 or Windows Vista with Service Pack 1 (SP1)</p></td>
-<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows 8.1, Windows 8, or Windows 7</p></td>
+<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows 8.1, or Windows 7</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
-<td align="left"><p>Windows Server 2012, Windows Server 2008 R2, Windows 8, or Windows 7</p></td>
+<td align="left"><p>Windows Server 2012, Windows Server 2008 R2, or Windows 7</p></td>
 <td align="left"><p>Not supported</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
-<td align="left"><p>Supported, but cannot report or edit policy settings or preference items that exist only in Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows 8.1, Windows 8, or Windows 7</p></td>
+<td align="left"><p>Supported, but cannot report or edit policy settings or preference items that exist only in Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows 8.1, or Windows 7</p></td>
 </tr>
 </tbody>
 </table>
@@ -164,29 +164,29 @@ Table 2 lists the operating systems on which you can install AGPM 4.0 SP1, and t
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows Server 2012 or Windows 8</p></td>
-<td align="left"><p>Windows Server 2012 or Windows 8</p></td>
+<td align="left"><p>Windows Server 2012</p></td>
+<td align="left"><p>Windows Server 2012</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Windows Server 2008 R2 or Windows 7</p></td>
 <td align="left"><p>Windows Server 2008 R2 or Windows 7</p></td>
-<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows 8</p></td>
+<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows 8.1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Windows Server 2012, Windows Server 2008 R2, Windows 8, or Windows 7</p></td>
+<td align="left"><p>Windows Server 2012, Windows Server 2008 R2, or Windows 7</p></td>
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
-<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows Server 2008 R2, Windows 8, or Windows 7</p></td>
+<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows Server 2008 R2, or Windows 7</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
-<td align="left"><p>Windows Server 2012, Windows Server 2008 R2, Windows 8, or Windows 7</p></td>
+<td align="left"><p>Windows Server 2012, Windows Server 2008 R2, or Windows 7</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
-<td align="left"><p>Supported, but cannot report or edit policy settings or preference items that exist only in Windows Server 2008 R2, Windows 8, or Windows 7</p></td>
+<td align="left"><p>Supported, but cannot report or edit policy settings or preference items that exist only in Windows Server 2008 R2, or Windows 7</p></td>
 </tr>
 </tbody>
 </table>

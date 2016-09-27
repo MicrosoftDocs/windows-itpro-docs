@@ -88,6 +88,10 @@ If a user who has the Editor role submits a request to deploy a GPO, and the use
 
 **Workaround:** None.
 
+### Added mechanism to override AGPM default behavior of removing GPO permission changes
+
+As of HF02, AGPM has added a registry key to enable overriding the default AGPM GPO permission behavior. For more information, please see [Changes to Group Policy object permissions through AGPM are ignored](https://support.microsoft.com/kb/3174540)
+
 ## Related topics
 
 
