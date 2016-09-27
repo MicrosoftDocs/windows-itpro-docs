@@ -99,6 +99,11 @@ The compatibility update KB scans your computers and enables application usage t
 
 IMPORTANT: Restart user computers after you install the compatibility update KBs for the first time.
 
+| **Site discovery** | **KB** |
+|----------------------|-----------------------------------------------------------------------------|
+| [Review site discovery](upgrade-analytics-review-site-discovery.md)         | [KB 3170106](https://support.microsoft.com/en-us/kb/3170106)<br>Site discovery requires July 2016 security update for Internet Explorer.   |
+
+
 ### Automate data collection
 
 To ensure that user computers are receiving the most up to date data from Microsoft, we recommend that you establish the following data sharing and analysis processes.
@@ -151,9 +156,19 @@ To run the Upgrade Analytics deployment script:
 
 3.  For troubleshooting, set isVerboseLogging to $true to generate log information that can help with diagnosing issues. By default, isVerboseLogging is set to $false. Ensure the Diagnostics folder is installed in the same directory as the script to use this mode.
 
-4.  Notify users if they need to restart their computers. By default, this is set to off.
+4.  To enable Internet Explorer data collection, set AllowIEData to IEDataOptIn. By default, AllowIEData is set to Disable. Then use one of the following options to determine what Internet Explorer data can be collected:
 
-5.  After you finish editing the parameters in RunConfig.bat, run the script as an administrator.
+    > *IEOptInLevel = 0 Internet Explorer data collection is disabled*
+    >
+    > *IEOptInLevel = 1 Data collection is enabled for sites in the Local intranet + Trusted sites + Machine local zones*
+    >
+    > *IEOptInLevel = 2 Data collection is enabled for sites in the Internet + Restricted sites zones*
+    >
+    > *IEOptInLevel = 3 Data collection is enabled for all sites*
+
+5.  Notify users if they need to restart their computers. By default, this is set to off.
+
+6.  After you finish editing the parameters in RunConfig.bat, run the script as an administrator.
 
 ## Seeing data from computers in Upgrade Analytics
 

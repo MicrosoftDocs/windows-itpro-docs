@@ -7,9 +7,9 @@ author: Justinha
 
 # Review site discovery
 
-This section of the Upgrade Analytics workflow provides an inventory of web sites that are being used by client computers that run Internet Explorer on Windows 8.1 and Windows 7 in your environment. This inventory information is provided as optional data related to upgrading to Windows 10 and Internet Explorer 11, and is meant to help prioritize compatibility testing for web applications. You can make more informed decisions about testing based on usage data. Data from Edge browser is not collected. 
+This section of the Upgrade Analytics workflow provides an inventory of web sites that are being used by client computers that run Internet Explorer on Windows 8.1 and Windows 7 in your environment. This inventory information is provided as optional data related to upgrading to Windows 10 and Internet Explorer 11, and is meant to help prioritize compatibility testing for web applications. You can make more informed decisions about testing based on usage data. Data from Microsoft Edge is not collected. 
 
-> Note: After you turn on this feature, data is collected on all sites visited by Internet Explorer, except during InPrivate sessions. In addition, the data collection process is silent, without notification to the user. You must also make sure that using this feature complies with all applicable local laws and regulatory requirements.
+> Note: Site discovery data is disabled by default; you can find documentation on what is collected in the [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965). After you turn on this feature, data is collected on all sites visited by Internet Explorer, except during InPrivate sessions. In addition, the data collection process is silent, without notification to the employee. You are responsible for ensuring that your use of this feature complies with all applicable local laws and regulatory requirements, including any requirements to provide notice to employees.
 
 ## Install prerequisite security update for Internet Explorer
 
@@ -29,13 +29,13 @@ Ensure the following prerequisites are met before using site discovery:
 
     Values:
 
-    0 – Internet Explorer data collection is disabled
-
-    1 – Data collection is enabled for sites in the Local intranet + Trusted sites + Machine local zones
-
-    2 – Data collection is enabled for sites in the Internet + Restricted sites zones
-
-    3 – Data collection is enabled for all sites
+    > *IEOptInLevel = 0 Internet Explorer data collection is disabled*
+    >
+    > *IEOptInLevel = 1 Data collection is enabled for sites in the Local intranet + Trusted sites + Machine local zones*
+    >
+    > *IEOptInLevel = 2 Data collection is enabled for sites in the Internet + Restricted sites zones*
+    >
+    > *IEOptInLevel = 3 Data collection is enabled for all sites*
 
     For more information about Internet Explorer Security Zones, see [About URL Security Zones](https://msdn.microsoft.com/library/ms537183.aspx). 
 
