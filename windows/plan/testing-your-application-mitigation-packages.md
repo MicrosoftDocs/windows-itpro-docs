@@ -84,15 +84,4 @@ At this point, you probably cannot resolve any unresolved application compatibil
     If your developers have insufficient resources to resolve the application compatibility issues, outsource the mitigation effort to another organization within your company.
 
 ## Related topics
-
-
 [Managing Application-Compatibility Fixes and Custom Fix Databases](managing-application-compatibility-fixes-and-custom-fix-databases.md)
-
- 
-
- 
-
-
-
-
-

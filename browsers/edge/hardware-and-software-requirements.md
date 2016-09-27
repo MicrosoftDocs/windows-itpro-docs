@@ -7,17 +7,20 @@ ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: appcompat
 title: Microsoft Edge requirements and language support (Microsoft Edge for IT Pros)
+localizationpriority: high
 ---
 
 # Microsoft Edge requirements and language support
 
 **Applies to:**
 
--   Windows 10
--   Windows 10 Mobile
+- Windows 10
+- Windows 10 Mobile
 
 
 Microsoft Edge is pre-installed on all Windows 10-capable devices that meet the minimum system requirements and are on the supported language list.
+
+>**Note**<br>The Long-Term Servicing Branch (LTSB) versions of Windows, including Windows Server 2016, don't include Microsoft Edge or many other Universal Windows Platform (UWP) apps. These apps and their services are frequently updated with new functionality, and can't be supported on systems running the LTSB operating systems. For customers who require the LTSB for specialized devices, we recommend using Internet Explorer 11.
 
 ## Minimum system requirements
 Some of the components in this table might also need additional system resources. Check the component's documentation for more information.
@@ -26,7 +29,7 @@ Some of the components in this table might also need additional system resources
 | Item               | Minimum requirements          |
 | ------------------ | -------------------------------------------- |
 | Computer/processor | 1 gigahertz (GHz) or faster (32-bit (x86) or 64-bit (x64)) |
-| Operating system   | <ul><li>Windows 10 (32-bit or 64-bit)</li><li>Windows 10 Mobile</li></ul><p>**Note**<br> For specific Windows 10 Mobile requirements, see the [Minimum hardware requirements for Windows 10 Mobile](http://go.microsoft.com/fwlink/p/?LinkID=699266) topic. |
+| Operating system   | <ul><li>Windows 10 (32-bit or 64-bit)</li><li>Windows 10 Mobile</li></ul><p>**Note**<br> For specific Windows 10 Mobile requirements, see the [Minimum hardware requirements for Windows 10 Mobile](https://go.microsoft.com/fwlink/p/?LinkID=699266) topic. |
 | Memory             | <ul><li>Windows 10 (32-bit) - 1 GB</li><li>Windows 10 (64-bit) - 2 GB</li></ul> |
 | Hard drive space   | <ul><li>Windows 10 (32-bit) - 16 GB</li><li>Windows 10 (64-bit) - 20 GB</li></ul> |
 | DVD drive          | DVD-ROM drive (if installing from a DVD-ROM) |

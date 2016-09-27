@@ -34,7 +34,7 @@ With the exception of Collect CEIP Data, these tasks must remain enabled as UE-V
 
 These scheduled tasks are not configurable with the UE-V tools. Administrators who want to change the scheduled task for these items can create a script that uses the Schtasks.exe command-line options.
 
-For more information about Schtasks.exe, see [How to use Schtasks,exe to Schedule Tasks in Windows Server 2003](http://go.microsoft.com/fwlink/?LinkID=264854).
+For more information about Schtasks.exe, see [How to use Schtasks,exe to Schedule Tasks in Windows Server 2003](https://go.microsoft.com/fwlink/?LinkID=264854).
 
 For more information about
 

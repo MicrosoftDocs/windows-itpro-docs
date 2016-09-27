@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: operate
 ms.sitesec: library
 ms.pagetype: security
+localizationpriority: high
 author: brianlic-msft
 ---
 
@@ -13,7 +14,7 @@ author: brianlic-msft
 
 **Applies to**
 - Windows 10
-- Windows Server 2016 Technical Preview
+- Windows Server 2016
 
 User Account Control (UAC) helps prevent malware from damaging a PC and helps organizations deploy a better-managed desktop. With UAC, apps and tasks always run in the security context of a non-administrator account, unless an administrator specifically authorizes administrator-level access to the system. UAC can block the automatic installation of unauthorized apps and prevent inadvertent changes to system settings.
 

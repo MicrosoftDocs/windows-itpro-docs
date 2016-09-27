@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 author: greg-lindsay
+localizationpriority: medium
 ---
 
 # Monitor activation
@@ -23,7 +24,7 @@ author: greg-lindsay
 
 **Looking for retail activation?**
 
--   [Get Help Activating Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=618644)
+-   [Get Help Activating Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)
 
 You can monitor the success of the activation process for a computer running Windows 8.1 in several ways. The most popular methods include:
 -   Using the Volume Licensing Service Center website to track use of MAK keys.

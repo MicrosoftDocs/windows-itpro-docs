@@ -7,7 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: servicing, devices
-author: TrudyHa
+author: jdeckerMS
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/manage/waas-manage-updates-wufb
 ---
 
 # Integration with management solutions

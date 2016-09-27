@@ -60,15 +60,4 @@ You can enable your disabled compatibility fixes at any time.
 2.  On the **Database** menu, click **Enable Entry**.
 
 ## Related topics
-
-
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
-
- 
-
- 
-
-
-
-
-

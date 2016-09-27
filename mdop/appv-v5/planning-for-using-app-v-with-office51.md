@@ -296,7 +296,7 @@ The Office 2013 App-V package supports the following integration points with the
 </tr>
 <tr class="even">
 <td align="left"><p>Active X Controls:</p></td>
-<td align="left"><p>For more information on ActiveX controls, refer to [ActiveX Control API Reference](http://go.microsoft.com/fwlink/p/?LinkId=331361).</p></td>
+<td align="left"><p>For more information on ActiveX controls, refer to [ActiveX Control API Reference](https://go.microsoft.com/fwlink/p/?LinkId=331361).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>   Groove.SiteClient</p></td>

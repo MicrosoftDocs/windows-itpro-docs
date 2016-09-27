@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+localizationpriority: high
 author: brianlic-msft
 ---
 
@@ -14,7 +15,7 @@ author: brianlic-msft
 **Applies to**
 -   Windows 10
 -   Windows 10 Mobile
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 -   Windows 10 IoT Core (IoT Core)
 
 This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows 10.
@@ -83,7 +84,7 @@ For more info, see [fTPM: A Firmware-based TPM 2.0 Implementation](http://resear
 
 ## Is there any importance for TPM for consumer?
 
-For end consumers, TPM is behind the scenes but still very relevant for Hello, Passport and in the future, many other key features in Windows 10. It offers the best Passport experience, helps encrypt passwords, secures streaming high quality 4K content and builds on our overall Windows 10 experience story for security as a critical pillar.  Using Windows on a system with a TPM enables a deeper and broader level of security coverage.
+For end consumers, TPM is behind the scenes but still very relevant for Hello, Passport and in the future, many other key features in Windows 10. It offers the best Passport experience, helps encrypt passwords, and builds on our overall Windows 10 experience story for security as a critical pillar.  Using Windows on a system with a TPM enables a deeper and broader level of security coverage.
 
 ## TPM 2.0 Compliance for Windows 10
 
@@ -104,7 +105,7 @@ For end consumers, TPM is behind the scenes but still very relevant for Hello, P
 
 -   TPM is optional on IoT Core.
 
-### Windows Server 2016 Technical Preview
+### Windows Server 2016
 
 -   TPM is optional for Windows Server SKUs unless the SKU meets the additional qualification (AQ) criteria for the Host Guardian Services scenario in which case TPM 2.0 is required.
 

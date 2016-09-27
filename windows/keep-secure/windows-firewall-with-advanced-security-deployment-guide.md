@@ -13,7 +13,7 @@ author: brianlic-msft
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 You can use the Windows Firewall with Advanced Security MMC snap-in with devices running at least Windows Vista or Windows Server 2008 to help protect the devices and the data that they share across a network.
 

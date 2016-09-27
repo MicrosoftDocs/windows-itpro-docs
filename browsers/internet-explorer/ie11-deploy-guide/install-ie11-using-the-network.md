@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to install the Internet Explorer 11 update using your network
-ms.assetid: 85f6429d-947a-4031-8f93-e26110a35828
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 85f6429d-947a-4031-8f93-e26110a35828
 title: Install Internet Explorer 11 (IE11) using your network (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Install Internet Explorer 11 (IE11) using your network
 You can install Internet Explorer 11 (IE11) over your network by putting your custom IE11 installation package in a shared network folder and letting your employees run the Setup program on their own computers. You can create the network folder structure manually, or you can run Internet Explorer Administration Kit 11 (IEAK 11).

@@ -121,7 +121,7 @@ The following table lists the installation prerequisites for the App-V 5.0 clien
 <li><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784) (http://www.microsoft.com/download/details.aspx?id=40784)</p>
 <p>This prerequisite is only required if you have installed Hotfix Package 4 for Application Virtualization 5.0 SP2 or later.</p>
 <p></p></li>
-<li><p>[The Microsoft Visual C++ 2010 Redistributable](http://www.microsoft.com/download/details.aspx?id=26999) (http://go.microsoft.com/fwlink/?LinkId=26999)</p>
+<li><p>[The Microsoft Visual C++ 2010 Redistributable](http://www.microsoft.com/download/details.aspx?id=26999) (https://go.microsoft.com/fwlink/?LinkId=26999)</p>
 <p></p></li>
 <li><p>[Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](http://www.microsoft.com/download/details.aspx?id=5638) (http://www.microsoft.com/download/details.aspx?id=5638)</p></li>
 </ul></li>
@@ -166,7 +166,7 @@ The following table lists the installation prerequisites for the App-V 5.0 Remot
 <div>
  
 </div></li>
-<li><p>Download and install [KB2533623](http://go.microsoft.com/fwlink/?LinkId=286102 ) (http://go.microsoft.com/fwlink/?LinkId=286102)</p>
+<li><p>Download and install [KB2533623](https://go.microsoft.com/fwlink/?LinkId=286102 ) (https://go.microsoft.com/fwlink/?LinkId=286102)</p>
 <p></p>
 <div class="alert">
 <strong>Important</strong>  
@@ -181,7 +181,7 @@ The following table lists the installation prerequisites for the App-V 5.0 Remot
 <li><p>[Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/download/details.aspx?id=40784) (http://www.microsoft.com/download/details.aspx?id=40784)</p>
 <p>This prerequisite is required only if you have installed Hotfix Package 4 for Application Virtualization 5.0 SP2 or later.</p>
 <p></p></li>
-<li><p>[The Microsoft Visual C++ 2010 Redistributable](http://www.microsoft.com/download/details.aspx?id=26999) (http://go.microsoft.com/fwlink/?LinkId=26999)</p>
+<li><p>[The Microsoft Visual C++ 2010 Redistributable](http://www.microsoft.com/download/details.aspx?id=26999) (https://go.microsoft.com/fwlink/?LinkId=26999)</p>
 <p></p></li>
 <li><p>[Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](http://www.microsoft.com/download/details.aspx?id=5638) (http://www.microsoft.com/download/details.aspx?id=5638)</p></li>
 </ul></li>
@@ -230,7 +230,7 @@ If the system requirements of a locally installed application exceed the require
 <p></p></li>
 <li><p>Download and install [KB2533623](http://support.microsoft.com/kb/2533623) (http://support.microsoft.com/kb/2533623)</p>
 <p></p></li>
-<li><p>For computers running Microsoft Windows Server 2008 R2 SP1, download and install [KB2533623](http://go.microsoft.com/fwlink/?LinkId=286102 ) (http://go.microsoft.com/fwlink/?LinkId=286102)</p>
+<li><p>For computers running Microsoft Windows Server 2008 R2 SP1, download and install [KB2533623](https://go.microsoft.com/fwlink/?LinkId=286102 ) (https://go.microsoft.com/fwlink/?LinkId=286102)</p>
 <p></p>
 <div class="alert">
 <strong>Important</strong>  
@@ -313,7 +313,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
  
 </div></li>
 <li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x64)](http://www.microsoft.com/download/details.aspx?id=13523) (http://www.microsoft.com/download/details.aspx?id=13523)</p></li>
-<li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](http://go.microsoft.com/fwlink/?LinkId=267110) (http://go.microsoft.com/fwlink/?LinkId=267110)</p></li>
+<li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=267110) (https://go.microsoft.com/fwlink/?LinkId=267110)</p></li>
 <li><p>64-bit ASP.NET registration</p></li>
 </ul>
 <p>The App-V 5.0 server components are dependent but they have varying requirements and installation options that must be deployed. Use the following information to prepare your environment to run the App-V 5.0 management server.</p>
@@ -345,7 +345,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 </div>
 <ul>
 <li><p>[Microsoft .NET Framework 4 (Full Package)](http://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
-<li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](http://go.microsoft.com/fwlink/?LinkId=267110)(http://go.microsoft.com/fwlink/?LinkId=267110)</p></li>
+<li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=267110)(https://go.microsoft.com/fwlink/?LinkId=267110)</p></li>
 </ul>
 <p>The App-V 5.0 server components are dependent but they have varying requirements and installation options that must be deployed. Use the following information to prepare your environment to run the App-V 5.0 management database.</p>
 <ul>
@@ -354,14 +354,14 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 <li><p>Custom App-V 5.0 database name (if applicable) – you must specify a unique database name. The default value for the management database is <strong>AppVManagement</strong>.</p></li>
 <li><p>App-V 5.0 management server location – specifies the machine account on which the management server is deployed. This should be specified in the following format <strong>Domain\MachineAccount</strong>.</p></li>
 <li><p>App-V 5.0 management server installation administrator - specifies the account that will be used to install the App-V 5.0 management server. You should use the following format: <strong>Domain\AdministratorLoginName</strong>.</p></li>
-<li><p>Microsoft SQL Server Service Agent - configure the computer running the App-V 5.0 Management Database so that Microsoft SQL Server Agent service is restarted automatically. For more information see [Configure SQL Server Agent to Restart Services Automatically](http://go.microsoft.com/fwlink/?LinkId=273725) (http://go.microsoft.com/fwlink/?LinkId=273725).</p></li>
+<li><p>Microsoft SQL Server Service Agent - configure the computer running the App-V 5.0 Management Database so that Microsoft SQL Server Agent service is restarted automatically. For more information see [Configure SQL Server Agent to Restart Services Automatically](https://go.microsoft.com/fwlink/?LinkId=273725) (https://go.microsoft.com/fwlink/?LinkId=273725).</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Reporting Server</strong></p></td>
 <td align="left"><ul>
 <li><p>[Microsoft .NET Framework 4 (Full Package)](http://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
-<li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](http://go.microsoft.com/fwlink/?LinkId=267110)(http://go.microsoft.com/fwlink/?LinkId=267110)</p></li>
+<li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=267110)(https://go.microsoft.com/fwlink/?LinkId=267110)</p></li>
 <li><div class="alert">
 <strong>Note</strong>  
 <p>To help reduce the risk of unwanted or malicious data being sent to the reporting server, you should restrict access to the Reporting Web Service per your corporate security policy.</p>
@@ -388,7 +388,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 </div>
 <ul>
 <li><p>[Microsoft .NET Framework 4 (Full Package)](http://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
-<li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](http://go.microsoft.com/fwlink/?LinkId=267110)(http://go.microsoft.com/fwlink/?LinkId=267110)</p></li>
+<li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=267110)(https://go.microsoft.com/fwlink/?LinkId=267110)</p></li>
 </ul>
 <p>The App-V 5.0 server components are dependent but they have varying requirements and installation options that must be deployed. Use the following information to prepare your environment to run the App-V 5.0 reporting database.</p>
 <ul>
@@ -404,7 +404,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 <td align="left"><p><strong>Publishing Server</strong></p></td>
 <td align="left"><ul>
 <li><p>[Microsoft .NET Framework 4 (Full Package)](http://www.microsoft.com/download/details.aspx?id=17718) (http://www.microsoft.com/download/details.aspx?id=17718)</p></li>
-<li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](http://go.microsoft.com/fwlink/?LinkId=267110)(http://go.microsoft.com/fwlink/?LinkId=267110)</p></li>
+<li><p>[Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=267110)(https://go.microsoft.com/fwlink/?LinkId=267110)</p></li>
 <li><p>Windows Web Server with the IIS role with the following features: <strong>Common HTTP Features</strong> (static content and default document), <strong>Application Development</strong> (ASP.NET, .NET Extensibility, ISAPI Extensions and ISAPI Filters), <strong>Security</strong> (Windows Authentication, Request Filtering), <strong>Security</strong> (Windows Authentication, Request Filtering), <strong>Management Tools</strong> (IIS Management Console)</p></li>
 <li><p>64-bit ASP.NET registration</p></li>
 </ul>

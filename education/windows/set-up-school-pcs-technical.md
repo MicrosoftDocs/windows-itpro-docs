@@ -9,15 +9,14 @@ ms.pagetype: edu
 author: jdeckerMS
 ---
 
-# Technical reference for the Set up School PCs app (Preview)
+# Technical reference for the Set up School PCs app 
 **Applies to:**
 
--   Windows 10 Insider Preview 
+-   Windows 10 
 
 
-> <span style="color:#ED1C24;">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. ]</span>
 
-The **Set up School PCs** app helps you set up new Windows 10 PCs that work great in your school by configuring shared PC mode, available in Windows 10, version 1607. **Set up School PCs** also configures school-specific settings and policies, described in this topic.
+The **Set up School PCs** app helps you set up new Windows 10 PCs that work great in your school by configuring shared PC mode, available in Windows 10, version 1607.  **Set up School PCs** also configures school-specific settings and policies, described in this topic.
 
 If your school uses Azure Active Directory (Azure AD) or Office 365, the **Set up School PCs** app will create a setup file that connects the computer to your subscription.  You can also use the app to set up school PCs that anyone can use, with or without Internet connectivity. 
 
@@ -91,7 +90,6 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 
 - Saving content locally to the PC is disabled. This prevents data loss by forcing students to save to the cloud.
 - A custom Start layout and sign in background image are set.
-- Prohibits Microsoft Accounts (MSAs) from being created.
 - Prohibits unlocking the PC to developer mode.
 - Prohibits untrusted Windows Store apps from being installed.
 - Prohibits students from removing MDM.
@@ -193,16 +191,6 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr> <td> <p> Turn off the advertising ID </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components </strong></p> </td> 
-</tr> 
-<tr> <td> <p> Do not show Windows Tips </p> </td> <td> <p> Enabled</p> </td> 
-</tr> 
-<tr> <td> <p> Turn off Microsoft consumer experiences </p> </td> <td> <p> Enabled</p> </td> 
-</tr> 
-<tr> <td> <p> Microsoft Passport for Work </p> </td> <td> <p> Disabled</p> </td>
-</tr> 
-<tr> <td> <p> Prevent the usage of OneDrive for file storage </p> </td> <td> <p> Enabled</p> </td>
-</tr> 
 <tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Biometrics</strong></p> </td> 
 </tr> 
 <tr> <td> <p> Allow the use of biometrics </p> </td> <td> <p> Disabled</p> </td>
@@ -210,6 +198,11 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 <tr> <td> <p> Allow users to log on using biometrics </p> </td> <td> <p> Disabled</p> </td> 
 </tr> 
 <tr> <td> <p> Allow domain users to log on using biometrics </p> </td> <td> <p> Disabled</p> </td> 
+</tr> 
+<tr><td colspan="2"><strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Cloud Content</strong></td></tr>
+<tr> <td> <p> Do not show Windows Tips </p> </td> <td> <p> Enabled</p> </td> 
+</tr> 
+<tr> <td> <p> Turn off Microsoft consumer experiences </p> </td> <td> <p> Enabled</p> </td> 
 </tr> 
 <tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Data Collection and Preview Builds</strong></p> </td> 
 </tr> 
@@ -237,13 +230,21 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr> <td> <p> Configure corporate home pages </p> </td> <td> <p> Enabled, about:blank</p> </td> 
 </tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong> > <strong>Windows Components</strong> > <strong>OneDrive</strong></p> </td> 
+</tr> 
+<tr> <td> <p> Prevent the usage of OneDrive for file storage </p> </td> <td> <p> Enabled</p> </td>
+</tr> 
 <tr> <td colspan="2"> <p> <strong>Admin Templates</strong> > <strong>Windows Components</strong> > <strong>Search</strong></p> </td> 
 </tr> 
 <tr> <td> <p> Allow Cortana </p> </td> <td> <p> Disabled</p> </td> 
 </tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong> > <strong>Windows Components</strong> > <strong>Windows Hello for Business</strong></p> </td> 
+</tr> 
+<tr> <td> <p> Use Windows Hello for Business </p> </td> <td> <p> Disabled</p> </td>
+</tr> 
 <tr> <td colspan="2"> <p> <strong>Windows Settings</strong> > <strong>Security Settings</strong> > <strong>Local Policies</strong> > <strong>Security Options</strong></p> </td> 
 </tr> 
-<tr><td><p>Accounts: Block Microsoft accounts</p></td><td><p>Enabled</p></td></tr>
+<tr><td><p>Accounts: Block Microsoft accounts</p><p>**Note** Microsoft accounts can still be used in apps.</p></td><td><p>Enabled</p></td></tr>
 <tr> <td> <p> Interactive logon: Do not display last user name </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
 <tr> <td> <p> Interactive logon: Sign-in last interactive user automatically after a system-initiated restart</p> </td> <td> <p> Disabled</p> </td> 

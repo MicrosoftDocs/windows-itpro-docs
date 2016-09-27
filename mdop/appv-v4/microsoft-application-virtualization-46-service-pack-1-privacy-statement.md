@@ -76,7 +76,7 @@ The Customer Experience Improvement Program (“CEIP”) collects basic informat
 
 ### Information Collected, Processed, or Transmitted:
 
-For more information about the information collected, processed, or transmitted by CEIP, see the CEIP privacy statement at <http://go.microsoft.com/fwlink/?LinkID=52097>.
+For more information about the information collected, processed, or transmitted by CEIP, see the CEIP privacy statement at <https://go.microsoft.com/fwlink/?LinkID=52097>.
 
 ### Use of Information:
 
@@ -99,7 +99,7 @@ Microsoft Error Reporting provides a service that allows you to report problems 
 
 ### Information Collected, Processed, or Transmitted:
 
-For information about the information collected, processed, or transmitted by Microsoft Error Reporting, see the Microsoft Error Reporting privacy statement at <http://go.microsoft.com/fwlink/?LinkID=184782>.
+For information about the information collected, processed, or transmitted by Microsoft Error Reporting, see the Microsoft Error Reporting privacy statement at <https://go.microsoft.com/fwlink/?LinkID=184782>.
 
 ### Use of Information:
 
@@ -107,7 +107,7 @@ We use the error reporting data to solve customer problems and improve our softw
 
 ### Important Information:
 
-App-V does not change your Microsoft Error Reporting settings. If you previously turned on error reporting, it will send the information described above. Enterprise customers can use Group Policy to configure how Microsoft Error Reporting behaves on their computers. Configuration options include the ability to turn off Microsoft Error Reporting. If you are an administrator and wish to configure Group Policy for Microsoft Error Reporting, technical details are available at [http://go.microsoft.com/fwlink/?LinkId=35776](http://go.microsoft.com/fwlink/?LinkID=35776).
+App-V does not change your Microsoft Error Reporting settings. If you previously turned on error reporting, it will send the information described above. Enterprise customers can use Group Policy to configure how Microsoft Error Reporting behaves on their computers. Configuration options include the ability to turn off Microsoft Error Reporting. If you are an administrator and wish to configure Group Policy for Microsoft Error Reporting, technical details are available at [https://go.microsoft.com/fwlink/?LinkId=35776](https://go.microsoft.com/fwlink/?LinkID=35776).
 
 ## Application Package Accelerators
 

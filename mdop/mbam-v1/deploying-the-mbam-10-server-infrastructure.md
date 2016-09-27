@@ -13,7 +13,7 @@ ms.prod: w8
 # Deploying the MBAM 1.0 Server Infrastructure
 
 
-You can install Microsoft BitLocker Administration and Monitoring (MBAM) Server features in different configurations by using one to five servers. Generally, you should use a configuration of three to five servers for production environments, depending on your scalability needs. For more information about performance scalability of MBAM and recommended deployment topologies, see the [MBAM Scalability and High-Availability Guide White Paper](http://go.microsoft.com/fwlink/p/?LinkId=258314).
+You can install Microsoft BitLocker Administration and Monitoring (MBAM) Server features in different configurations by using one to five servers. Generally, you should use a configuration of three to five servers for production environments, depending on your scalability needs. For more information about performance scalability of MBAM and recommended deployment topologies, see the [MBAM Scalability and High-Availability Guide White Paper](https://go.microsoft.com/fwlink/p/?LinkId=258314).
 
 ## Deploy all MBAM 1.0 on a single server
 

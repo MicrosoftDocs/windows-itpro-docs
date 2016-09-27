@@ -78,7 +78,7 @@ If you are concerned about whether your MBAM Servers can support your client bas
 
 The recommended tool for viewing MBAM performance counters is Windows Performance Monitor, which comes with Windows. If you are using Windows PowerShell, you don’t need to enable the counters before viewing them, as they are automatically registered by the Windows PowerShell **Enable-webapplication** cmdlet.
 
-For detailed instructions on how to view performance counters, see [How to View MBAM Performance Counters](http://go.microsoft.com/fwlink/?LinkId=393457).
+For detailed instructions on how to view performance counters, see [How to View MBAM Performance Counters](https://go.microsoft.com/fwlink/?LinkId=393457).
 
 ## Got a suggestion for MBAM?
 

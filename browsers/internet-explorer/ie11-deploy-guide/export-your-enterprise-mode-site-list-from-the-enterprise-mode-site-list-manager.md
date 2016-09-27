@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
 description: After you create your Enterprise Mode site list in the Enterprise Mode Site List Manager, you can export the contents to an Enterprise Mode (.EMIE) file.
-ms.assetid: 9ee7c13d-6fca-4446-bc22-d23a0213a95d
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: 9ee7c13d-6fca-4446-bc22-d23a0213a95d
 title: Export your Enterprise Mode site list from the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Export your Enterprise Mode site list from the Enterprise Mode Site List Manager
 
@@ -32,8 +34,8 @@ This file is not intended for distribution to your managed devices. Instead, it 
 
 ## Related topics
 
-- [Download the Enterprise Mode Site List Manager (schema v.2)](http://go.microsoft.com/fwlink/p/?LinkId=716853)
-- [Download the Enterprise Mode Site List Manager (schema v.1)](http://go.microsoft.com/fwlink/p/?LinkID=394378)
+- [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
+- [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
  
 

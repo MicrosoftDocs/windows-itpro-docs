@@ -15,14 +15,12 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 ## In this section
 |Topic |Description |
 |------|------------|
-|[Change history for Plan for Windows 10 deployment](change-history-for-plan-for-windows-10-deployment.md) |This topic lists new and updated topics in the Plan for Windows 10 deployment documentation for [Windows 10 and Windows 10 Mobile](../index.md). |
-|[Windows 10 servicing overview](windows-10-servicing-options.md) |Windows 10 provides a new model for organizations to deploy and upgrade Windows by providing updates to features and capabilities through a continual process. |
 |[Windows 10 deployment considerations](windows-10-deployment-considerations.md) |There are new deployment options in Windows 10 that help you simplify the deployment process and automate migration of existing settings and applications. |
 |[Windows 10 compatibility](windows-10-compatibility.md) |Windows 10 will be compatible with most existing PC hardware; most devices running Windows 7, Windows 8, or Windows 8.1 will meet the requirements for Windows 10. |
 |[Windows 10 infrastructure requirements](windows-10-infrastructure-requirements.md) |There are specific infrastructure requirements to deploy and manage Windows 10 that should be in place prior to significant Windows 10 deployments within your organization. |
-|[Windows Update for Business](windows-update-for-business.md) |Get an overview of how you can implement and deploy a Windows Update for Business solution and how to maintain enrolled systems. |
 |[Windows To Go: feature overview](windows-to-go-overview.md) |Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs. |
 |[Application Compatibility Toolkit (ACT) Technical Reference](act-technical-reference.md) |The Microsoft® Application Compatibility Toolkit (ACT) helps you determine whether the applications, devices, and computers in your organization are compatible with versions of the Windows® operating system. |
+|[Change history for Plan for Windows 10 deployment](change-history-for-plan-for-windows-10-deployment.md) |This topic lists new and updated topics in the Plan for Windows 10 deployment documentation for [Windows 10 and Windows 10 Mobile](../index.md). |
 
 ## Related topics
 - [Windows 10 servicing options for updates and upgrades](../manage/introduction-to-windows-10-servicing.md)
@@ -30,7 +28,7 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 - [Deploy Windows 10 with Configuration Manager and MDT 2013 Update 1](../deploy/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)
 - [Upgrade to Windows 10 with MDT 2013 Update 1](../deploy/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
 - [Upgrade to Windows 10 with Configuration Manager](../deploy/upgrade-to-windows-10-with-system-center-configuraton-manager.md)
-- [Windows Imaging and Configuration Designer](http://go.microsoft.com/fwlink/p/?LinkId=733911)
+- [Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=733911)
 - [Windows 10 and Windows 10 Mobile](../index.md)
 
  

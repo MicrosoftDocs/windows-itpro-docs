@@ -74,8 +74,6 @@ A compatibility mode includes a set of compatibility fixes and must be deployed 
     The compatibility mode is added to your custom database.
 
 ## Related topics
-
-
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
 
  

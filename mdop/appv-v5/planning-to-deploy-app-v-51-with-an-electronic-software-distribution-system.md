@@ -13,7 +13,7 @@ ms.prod: w10
 # Planning to Deploy App-V 5.1 with an Electronic Software Distribution System
 
 
-If you are using an electronic software distribution system to deploy App-V packages, review the following planning considerations. For information about using System Center Configuration Manager to deploy App-V, see [Introduction to Application Management in Configuration Manager](http://go.microsoft.com/fwlink/?LinkId=281816).
+If you are using an electronic software distribution system to deploy App-V packages, review the following planning considerations. For information about using System Center Configuration Manager to deploy App-V, see [Introduction to Application Management in Configuration Manager](https://go.microsoft.com/fwlink/?LinkId=281816).
 
 Review the following component and architecture requirements options that apply when you use an ESD to deploy App-V packages:
 

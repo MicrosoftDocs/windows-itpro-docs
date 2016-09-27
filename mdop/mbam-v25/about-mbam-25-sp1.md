@@ -45,7 +45,7 @@ The following groups might be interested in using MBAM to manage BitLocker:
 -   Administrators who are responsible for client computers that are running Windows
 
 **Note**  
-BitLocker is not explained in detail in this MBAM documentation. For more information, see [BitLocker Drive Encryption Overview](http://go.microsoft.com/fwlink/p/?LinkId=225013).
+BitLocker is not explained in detail in this MBAM documentation. For more information, see [BitLocker Drive Encryption Overview](https://go.microsoft.com/fwlink/p/?LinkId=225013).
 
  
 
@@ -123,11 +123,11 @@ In MBAM 2.5, support was added for Federal Information Processing Standard (FIP
 The Windows team has backported FIPS-compliant recovery keys with a hotfix, and MBAM 2.5 SP1 has added support for them as well.
 
 **Note**  
-Client computers that are running the Windows 8 operating system still require a DRA protector since the hotfix was not backported to that OS. See [Hotfix Package 2 for BitLocker Administration and Monitoring 2.5](https://support.microsoft.com/kb/3015477) to download and install the BitLocker hotfix for Windows 7 and Windows 8 computers. For information about DRA, see [Using Data Recovery Agents with BitLocker](http://go.microsoft.com/fwlink/?LinkId=393557).
+Client computers that are running the Windows 8 operating system still require a DRA protector since the hotfix was not backported to that OS. See [Hotfix Package 2 for BitLocker Administration and Monitoring 2.5](https://support.microsoft.com/kb/3015477) to download and install the BitLocker hotfix for Windows 7 and Windows 8 computers. For information about DRA, see [Using Data Recovery Agents with BitLocker](https://go.microsoft.com/fwlink/?LinkId=393557).
 
  
 
-To enable FIPS compliance in your organization, you must configure the Federal Information Processing Standard (FIPS) Group Policy settings. For configuration instructions, see [BitLocker Group Policy Settings](http://go.microsoft.com/fwlink/?LinkId=393560).
+To enable FIPS compliance in your organization, you must configure the Federal Information Processing Standard (FIPS) Group Policy settings. For configuration instructions, see [BitLocker Group Policy Settings](https://go.microsoft.com/fwlink/?LinkId=393560).
 
 ### Customize pre-boot recovery message and URL with new Group Policy setting
 
@@ -221,7 +221,7 @@ The compliance calculation logic for "Locked Fixed Data" volumes has been change
 ## How to Get MDOP Technologies
 
 
-MBAM is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of the Microsoft Software Assurance program. For more information about the Microsoft Software Assurance program and how to acquire the MDOP, see [How Do I Get MDOP?](http://go.microsoft.com/fwlink/?LinkId=322049).
+MBAM is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of the Microsoft Software Assurance program. For more information about the Microsoft Software Assurance program and how to acquire the MDOP, see [How Do I Get MDOP?](https://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## MBAM 2.5 SP1 Release Notes
 

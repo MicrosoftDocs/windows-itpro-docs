@@ -1,13 +1,15 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: security
 description: Use the Group Policy setting, Set a default associations configuration file, to set the default browser for your company devices running Windows 10.
-ms.assetid: f486c9db-0dc9-4cd6-8a0b-8cb872b1d361
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.assetid: f486c9db-0dc9-4cd6-8a0b-8cb872b1d361
 title: Set the default browser using Group Policy (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Set the default browser using Group Policy
 You can use the Group Policy setting, **Set a default associations configuration file**, to set the default browser for your company devices running Windows 10.
@@ -15,7 +17,7 @@ You can use the Group Policy setting, **Set a default associations configuration
  ![](images/wedge.gif) **To set the default browser as Internet Explorer 11**
 
 1.  Open your Group Policy editor and go to the **Administrative Templates\\Windows Components\\File Explorer\\Set a default associations configuration file** setting.<p>
-Turning this setting on also requires you to create and store a default associations configuration file, locally or on a network share. For more information about creating this file, see [Export or Import Default Application Associations]( http://go.microsoft.com/fwlink/p/?LinkId=618268).
+Turning this setting on also requires you to create and store a default associations configuration file, locally or on a network share. For more information about creating this file, see [Export or Import Default Application Associations]( https://go.microsoft.com/fwlink/p/?LinkId=618268).
 
     ![set default associations group policy setting](images/setdefaultbrowsergp.png)
 

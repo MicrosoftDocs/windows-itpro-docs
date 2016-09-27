@@ -7,6 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Set up a device for anyone to use (kiosk mode)
@@ -19,7 +20,7 @@ author: jdeckerMS
 
 **Looking for Windows Embedded 8.1 Industry information?**
 
--   [Assigned Access]( http://go.microsoft.com/fwlink/p/?LinkId=613653)
+-   [Assigned Access]( https://go.microsoft.com/fwlink/p/?LinkId=613653)
 
 You can configure a device running Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile, or Windows 10 Mobile Enterprise as a kiosk device, so that users can only interact with a single application that you select.
 
@@ -33,8 +34,8 @@ Do you need a computer that can only do one thing? For example:
 
 The following table identifies the type of application that can be used on each Windows 10 edition to create a kiosk device.
 
-**Note**  
-A Universal Windows app is built on the Universal Windows Platform (UWP), which was first introduced in Windows 8 as the Windows Runtime. A Classic Windows application uses the Classic Windows Platform (CWP) (e.g., COM, Win32, WPF, WinForms, etc.) and is typically launched using an .EXE or .DLL file.
+> [!NOTE]  
+> A Universal Windows app is built on the Universal Windows Platform (UWP), which was first introduced in Windows 8 as the Windows Runtime. A Classic Windows application uses the Classic Windows Platform (CWP) (e.g., COM, Win32, WPF, WinForms, etc.) and is typically launched using an .EXE or .DLL file.
 
  
 

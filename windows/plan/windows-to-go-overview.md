@@ -19,7 +19,7 @@ author: mtniehaus
 
 Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs.
 
-PCs that meet the Windows 7 or later [certification requirements](http://go.microsoft.com/fwlink/p/?LinkId=618711) can run Windows 10 in a Windows To Go workspace, regardless of the operating system running on the PC. Windows To Go workspaces can use the same image enterprises use for their desktops and laptops and can be managed the same way. Windows To Go is not intended to replace desktops, laptops or supplant other mobility offerings. Rather, it provides support for efficient use of resources for alternative workplace scenarios. There are some additional considerations that you should keep in mind before you start to use Windows To Go:
+PCs that meet the Windows 7 or later [certification requirements](https://go.microsoft.com/fwlink/p/?LinkId=618711) can run Windows 10 in a Windows To Go workspace, regardless of the operating system running on the PC. Windows To Go workspaces can use the same image enterprises use for their desktops and laptops and can be managed the same way. Windows To Go is not intended to replace desktops, laptops or supplant other mobility offerings. Rather, it provides support for efficient use of resources for alternative workplace scenarios. There are some additional considerations that you should keep in mind before you start to use Windows To Go:
 
 -   [Differences between Windows To Go and a typical installation of Windows](#bkmk-wtgdif)
 
@@ -63,7 +63,7 @@ The applications that you want to use from the Windows To Go workspace should be
 
 Enterprises install Windows on a large group of computers either by using configuration management software (such as System Center Configuration Manager), or by using standard Windows deployment tools such as DiskPart and the Deployment Image Servicing and Management (DISM) tool.
 
-These same tools can be used to provision Windows To Go drive, just as you would if you were planning for provisioning a new class of mobile PCs. You can use the [Windows Assessment and Deployment Kit](http://go.microsoft.com/fwlink/p/?LinkId=526803) to review deployment tools available.
+These same tools can be used to provision Windows To Go drive, just as you would if you were planning for provisioning a new class of mobile PCs. You can use the [Windows Assessment and Deployment Kit](https://go.microsoft.com/fwlink/p/?LinkId=526803) to review deployment tools available.
 
 **Important**  
 Make sure you use the versions of the deployment tools provided for the version of Windows you are deploying. There have been many enhancements made to support Windows To Go. Using versions of the deployment tools released for earlier versions of Windows to provision a Windows To Go drive is not supported.
@@ -104,26 +104,26 @@ Using a USB drive that has not been certified is not supported
 
  
 
--   IronKey Workspace W700 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w700.html](http://go.microsoft.com/fwlink/p/?LinkId=618714))
+-   IronKey Workspace W700 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w700.html](https://go.microsoft.com/fwlink/p/?LinkId=618714))
 
--   IronKey Workspace W500 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w500.html](http://go.microsoft.com/fwlink/p/?LinkId=618717))
+-   IronKey Workspace W500 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w500.html](https://go.microsoft.com/fwlink/p/?LinkId=618717))
 
--   IronKey Workspace W300 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w300.html](http://go.microsoft.com/fwlink/p/?LinkId=618718))
+-   IronKey Workspace W300 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w300.html](https://go.microsoft.com/fwlink/p/?LinkId=618718))
 
--   Kingston DataTraveler Workspace for Windows To Go ([http://www.kingston.com/wtg/](http://go.microsoft.com/fwlink/p/?LinkId=618719))
+-   Kingston DataTraveler Workspace for Windows To Go ([http://www.kingston.com/wtg/](https://go.microsoft.com/fwlink/p/?LinkId=618719))
 
--   Spyrus Portable Workplace ([http://www.spyruswtg.com/](http://go.microsoft.com/fwlink/p/?LinkId=618720))
+-   Spyrus Portable Workplace ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
 
     We recommend that you run the Spyrus Deployment Suite for Windows To Go to provision the Spyrus Portable Workplace.
 
--   Spyrus Secure Portable Workplace ([http://www.spyruswtg.com/](http://go.microsoft.com/fwlink/p/?LinkId=618720))
+-   Spyrus Secure Portable Workplace ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
 
     **Important**  
-    You must use the Spyrus Deployment Suite for Windows To Go to provision the Spyrus Secure Portable Workplace. For more information about the Spyrus Deployment Suite for Windows To Go please refer to [http://www.spyruswtg.com/](http://go.microsoft.com/fwlink/p/?LinkId=618720).
+    You must use the Spyrus Deployment Suite for Windows To Go to provision the Spyrus Secure Portable Workplace. For more information about the Spyrus Deployment Suite for Windows To Go please refer to [http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720).
 
      
 
--   Spyrus Worksafe ([http://www.spyruswtg.com/](http://go.microsoft.com/fwlink/p/?LinkId=618720))
+-   Spyrus Worksafe ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
 
     **Tip**  
     This device contains an embedded smart card.
@@ -136,11 +136,11 @@ Using a USB drive that has not been certified is not supported
 
     Super Talent Express RC8 for Windows To Go
 
-    ([http://www.supertalent.com/wtg/](http://go.microsoft.com/fwlink/p/?LinkId=618721))
+    ([http://www.supertalent.com/wtg/](https://go.microsoft.com/fwlink/p/?LinkId=618721))
 
--   Western Digital My Passport Enterprise ([http://www.wd.com/wtg](http://go.microsoft.com/fwlink/p/?LinkId=618722))
+-   Western Digital My Passport Enterprise ([http://www.wd.com/wtg](https://go.microsoft.com/fwlink/p/?LinkId=618722))
 
-    We recommend that you run the WD Compass utility to prepare the Western Digital My Passport Enterprise drive for provisioning with Windows To Go.  For more information about the WD Compass utility please refer to [http://www.wd.com/wtg](http://go.microsoft.com/fwlink/p/?LinkId=618722)
+    We recommend that you run the WD Compass utility to prepare the Western Digital My Passport Enterprise drive for provisioning with Windows To Go.  For more information about the WD Compass utility please refer to [http://www.wd.com/wtg](https://go.microsoft.com/fwlink/p/?LinkId=618722)
 
 **For host computers**
 
@@ -249,16 +249,16 @@ In addition to the USB boot support in the BIOS, the Windows 10 image on your W
 ## Additional resources
 
 
--   [Windows 10 forums](http://go.microsoft.com/fwlink/p/?LinkId=618949)
+-   [Windows 10 forums](https://go.microsoft.com/fwlink/p/?LinkId=618949)
 
--   [Windows To Go Step by Step Wiki](http://go.microsoft.com/fwlink/p/?LinkId=618950)
+-   [Windows To Go Step by Step Wiki](https://go.microsoft.com/fwlink/p/?LinkId=618950)
 
--   [Tips for configuring your BIOS settings to work with Windows To Go](http://go.microsoft.com/fwlink/p/?LinkId=618951)
+-   [Tips for configuring your BIOS settings to work with Windows To Go](https://go.microsoft.com/fwlink/p/?LinkId=618951)
 
 ## Related topics
 
 
--   [Deploy Windows To Go in your organization](http://go.microsoft.com/fwlink/p/?LinkId=619975)
+-   [Deploy Windows To Go in your organization](https://go.microsoft.com/fwlink/p/?LinkId=619975)
 
 -   [Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)
 

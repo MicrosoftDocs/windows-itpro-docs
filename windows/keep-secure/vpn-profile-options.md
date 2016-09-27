@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # VPN profile options
@@ -51,10 +52,16 @@ A VPN profile configured with LockDown secures the device to only allow network 
 -   Only one VPN LockDown profile is allowed on a device.
 > **Note:**  For inbox VPN, Lockdown VPN is only available for the Internet Key Exchange version 2 (IKEv2) tunnel type.
  
+## Learn about VPN and the Conditional Access Framework in Azure Active Directory
+
+- [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 1)](https://blogs.technet.microsoft.com/tip_of_the_day/2016/03/12/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn/)
+- [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 2)](https://blogs.technet.microsoft.com/tip_of_the_day/2016/03/14/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-2/)
+- [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 3)](https://blogs.technet.microsoft.com/tip_of_the_day/2016/03/15/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-3/)
+- [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 4)](https://blogs.technet.microsoft.com/tip_of_the_day/2016/03/16/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-4/)
+
 ## Learn more
 
-[VPNv2 configuration service provider (CSP) reference](http://go.microsoft.com/fwlink/p/?LinkId=617588)
+- [Learn how to configure VPN connections in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/vpn-connections-in-microsoft-intune)
+- [VPNv2 configuration service provider (CSP) reference](https://go.microsoft.com/fwlink/p/?LinkId=617588)
+- [How to Create VPN Profiles in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=618028)
 
-[How to Create VPN Profiles in Configuration Manager](http://go.microsoft.com/fwlink/p/?LinkId=618028)
-
-[Help users connect to their work using VPN profiles with Microsoft Intune](http://go.microsoft.com/fwlink/p/?LinkId=618029)

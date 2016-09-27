@@ -43,15 +43,15 @@ In addition to the product documentation available online, supplemental product 
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>MDOP Videos</strong></p></td>
-<td align="left"><p>For a list of available MDOP videos, go to [Microsoft Desktop Optimization Pack Technologies Videos](http://go.microsoft.com/fwlink/?LinkId=234275) (http://go.microsoft.com/fwlink/?LinkId=234275).</p></td>
+<td align="left"><p>For a list of available MDOP videos, go to [Microsoft Desktop Optimization Pack Technologies Videos](https://go.microsoft.com/fwlink/?LinkId=234275) (https://go.microsoft.com/fwlink/?LinkId=234275).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>MDOP Virtual Labs</strong></p></td>
-<td align="left"><p>For a list of available MDOP virtual labs, go to [Microsoft Desktop Optimization Pack (MDOP) Virtual Labs](http://go.microsoft.com/fwlink/?LinkId=234276) (http://go.microsoft.com/fwlink/?LinkId=234276).</p></td>
+<td align="left"><p>For a list of available MDOP virtual labs, go to [Microsoft Desktop Optimization Pack (MDOP) Virtual Labs](https://go.microsoft.com/fwlink/?LinkId=234276) (https://go.microsoft.com/fwlink/?LinkId=234276).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>MDOP TechCenter</strong></p></td>
-<td align="left"><p>For technical whitepapers, evaluation materials, blogs, and additional MDOP resources, go to [MDOP TechCenter](http://go.microsoft.com/fwlink/?LinkId=225286) (http://go.microsoft.com/fwlink/?LinkId=225286)</p>
+<td align="left"><p>For technical whitepapers, evaluation materials, blogs, and additional MDOP resources, go to [MDOP TechCenter](https://go.microsoft.com/fwlink/?LinkId=225286) (https://go.microsoft.com/fwlink/?LinkId=225286)</p>
 <p></p></td>
 </tr>
 </tbody>
@@ -68,7 +68,7 @@ MDOP is a suite of products that can help streamline desktop deployment, managem
 MDOP is also available for test and evaluation to [MSDN](http://msdn.microsoft.com/subscriptions/downloads/default.aspx?PV=42:178) and [TechNet](http://technet.microsoft.com/subscriptions/downloads/default.aspx?PV=42:178) subscribers in accordance with MDSN and TechNet agreements.
 
 <a href="" id="download-mdop"></a>**Download MDOP**  
-MDOP subscribers can download the software at the [Microsoft Volume Licensing website (MVLS)](http://go.microsoft.com/fwlink/?LinkId=166331).
+MDOP subscribers can download the software at the [Microsoft Volume Licensing website (MVLS)](https://go.microsoft.com/fwlink/?LinkId=166331).
 
 <a href="" id="purchase-mdop"></a>**Purchase MDOP**  
 Visit the enterprise [Purchase Windows Enterprise Licensing](http://www.microsoft.com/windows/enterprise/how-to-buy.aspx) website to find out how to purchase MDOP for your business.

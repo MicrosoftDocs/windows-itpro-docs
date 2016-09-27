@@ -8,9 +8,16 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 ms.sitesec: library
 author: eross-msft
+localizationpriority: high
 ---
 
 # Block untrusted fonts in an enterprise
+**Applies to:**
+
+-   Windows 10
+
+>Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
+
 To help protect your company from attacks which may originate from untrusted or attacker controlled font files, we’ve created the Blocking Untrusted Fonts feature. Using this feature, you can turn on a global setting that stops your employees from loading untrusted fonts processed using the Graphics Device Interface (GDI) onto your network. Untrusted fonts are any font installed outside of the `%windir%/Fonts` directory. Blocking untrusted fonts helps prevent both remote (web-based or email-based) and local EOP attacks that can happen during the font file-parsing process.
 
 ## What does this mean for me?
@@ -30,7 +37,7 @@ After you turn this feature on, your employees might experience reduced function
 
 -   Sending a print job to a remote printer server that uses this feature and where the spooler process hasn’t been specifically excluded. In this situation, any fonts that aren’t already available in the server’s %windir%/Fonts folder won’t be used.
 
--   Printing using fonts provided by the installed printer’s graphics .dll file, outside of the %windir%/Fonts folder. For more information, see [Introduction to Printer Graphics DLLs](http://go.microsoft.com/fwlink/p/?LinkId=522302).
+-   Printing using fonts provided by the installed printer’s graphics .dll file, outside of the %windir%/Fonts folder. For more information, see [Introduction to Printer Graphics DLLs](https://go.microsoft.com/fwlink/p/?LinkId=522302).
 
 -   Using first or third-party apps that use memory-based fonts.
 

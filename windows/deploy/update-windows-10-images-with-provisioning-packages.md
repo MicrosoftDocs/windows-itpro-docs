@@ -26,7 +26,7 @@ You can also put a provisioning package on a USB drive or SD card to apply to of
 
 Rather than wiping a device and applying a new system image when you need to change configuration, you can reset the device to its original state and then apply a new provisioning package.
 
-For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( http://go.microsoft.com/fwlink/p/?LinkId=619012).
+For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( https://go.microsoft.com/fwlink/p/?LinkId=619012).
 
 ## Advantages
 -   You can configure new devices without reimaging.
@@ -40,7 +40,7 @@ For details about the settings you can customize in provisioning packages, see [
 -   Ensure compliance and security before a device is enrolled in MDM.
 
 ## Create package
-Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a runtime provisioning package. [Install the ADK.](http://go.microsoft.com/fwlink/p/?LinkId=526740)
+Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a runtime provisioning package. [Install the ADK.](https://go.microsoft.com/fwlink/p/?LinkId=526740)
 
 1.  Open Windows ICD (by default, `%windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe`).
 
@@ -52,7 +52,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 5.  On **New project**, click **Finish**. The workspace for your package opens.
 
-6.  Configure settings. [Learn more about specific settings in provisioning packages.]( http://go.microsoft.com/fwlink/p/?LinkId=615916)
+6.  Configure settings. [Learn more about specific settings in provisioning packages.]( https://go.microsoft.com/fwlink/p/?LinkId=615916)
 
 7.  On the **File** menu, select **Save.**
 
@@ -106,19 +106,19 @@ If your build is successful, the name of the provisioning package, output direct
 ## Add package to image
 **To add a provisioning package to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)**
 
--   Follow the steps in the "To build an image for Windows 10 for desktop editions" section in [Use the Windows ICD command-line interface]( http://go.microsoft.com/fwlink/p/?LinkId=617371).
+-   Follow the steps in the "To build an image for Windows 10 for desktop editions" section in [Use the Windows ICD command-line interface]( https://go.microsoft.com/fwlink/p/?LinkId=617371).
 
 **To add a provisioning package to a Windows 10 Mobile image**
 
--   Follow the steps in the "To build an image for Windows 10 Mobile or Windows 10 IoT Core (IoT Core)" section in [Use the Windows ICD command-line interface]( http://go.microsoft.com/fwlink/p/?LinkId=617371).<p>
+-   Follow the steps in the "To build an image for Windows 10 Mobile or Windows 10 IoT Core (IoT Core)" section in [Use the Windows ICD command-line interface]( https://go.microsoft.com/fwlink/p/?LinkId=617371).<p>
 The provisioning package is placed in the FFU image and is flashed or sector written to the device. During device setup time, the provisioning engine starts and consumes the packages.
 
 ## Learn more
--   [Build and apply a provisioning package]( http://go.microsoft.com/fwlink/p/?LinkId=629651)
+-   [Build and apply a provisioning package]( https://go.microsoft.com/fwlink/p/?LinkId=629651)
 
--   [Provisioning Windows 10 Devices with New Tools](http://go.microsoft.com/fwlink/p/?LinkId=615921)
+-   [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
--   [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](http://go.microsoft.com/fwlink/p/?LinkId=615922)
+-   [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
 
 ## Related topics
 - [Configure devices without MDM](../manage/configure-devices-without-mdm.md)

@@ -38,9 +38,9 @@ The Application Virtualization Management Server and Application Virtualization 
 
 It is recommended that communications between App-V Management Server, Management Service and the data store be secured with Internet Protocol Security (IPsec). Specifically, create policies that secure the communication channel between the data store (SQL) and the Management Server and the data store and the Management Service. You can also deploy server and domain isolation with IPsec, ensuring all App-V infrastructure components communicate only with secure channels. For information about implementing IPsec, refer to the following documentation:
 
--   For Windows Server 2003, see <http://go.microsoft.com/fwlink/?LinkId=133226> (http://go.microsoft.com/fwlink/?LinkId=133226).
+-   For Windows Server 2003, see <https://go.microsoft.com/fwlink/?LinkId=133226> (https://go.microsoft.com/fwlink/?LinkId=133226).
 
--   For Windows Server 2008, see <http://go.microsoft.com/fwlink/?LinkId=133227> (http://go.microsoft.com/fwlink/?LinkId=133227).
+-   For Windows Server 2008, see <https://go.microsoft.com/fwlink/?LinkId=133227> (https://go.microsoft.com/fwlink/?LinkId=133227).
 
 ### Content Directory
 
@@ -65,7 +65,7 @@ Installing or configuring an App-V Management Server or Streaming Server to use 
 -   Certificate fully qualified domain name (FQDN) must match the server on which it is installed. For example, if the client is calling `RTSPS://Myserver.mycompany.com/content/MyApp.sft`, but the certificate **Issued To** field contains `Myserver1.mycompany.com`, the client will not connect to the server and the session is terminated, even if `Myserver.mycompany.com` and `Myserver1.mycompany.com` resolve to the same IP address.
 
     **Note**  
-    If you use App-V in a network load balanced cluster, the certificate must be configured with *Subject Alternate Names* (SANs) to support RTSPS. For information about configuring the certification authority (CA) and creating certificates with SANs, see <http://go.microsoft.com/fwlink/?LinkId=133228> (http://go.microsoft.com/fwlink/?LinkId=133228).
+    If you use App-V in a network load balanced cluster, the certificate must be configured with *Subject Alternate Names* (SANs) to support RTSPS. For information about configuring the certification authority (CA) and creating certificates with SANs, see <https://go.microsoft.com/fwlink/?LinkId=133228> (https://go.microsoft.com/fwlink/?LinkId=133228).
 
      
 
@@ -74,13 +74,13 @@ Installing or configuring an App-V Management Server or Streaming Server to use 
 -   You must change the permissions for the *Certificate Private Key* to enable access by the Server App-V Service. By default, the App-V Management Server and Streaming Server services run under the Network Service account. When a PKCS\#10 is generated on the server, a private key is created. Only the Local System and Administrators groups have access to this key. These default ACLs prevent the App-V server from accepting secure connections.
 
     **Note**  
-    For information about configuring a public key infrastructure (PKI), see <http://go.microsoft.com/fwlink/?LinkId=133229> (http://go.microsoft.com/fwlink/?LinkId=133229).
+    For information about configuring a public key infrastructure (PKI), see <https://go.microsoft.com/fwlink/?LinkId=133229> (https://go.microsoft.com/fwlink/?LinkId=133229).
 
      
 
 ### Configuring IIS Servers with HTTPS
 
-App-V might use IIS servers in certain infrastructure configurations. For more information about configuring IIS servers, see <http://go.microsoft.com/fwlink/?LinkId=133230> (http://go.microsoft.com/fwlink/?LinkId=133230).
+App-V might use IIS servers in certain infrastructure configurations. For more information about configuring IIS servers, see <https://go.microsoft.com/fwlink/?LinkId=133230> (https://go.microsoft.com/fwlink/?LinkId=133230).
 
 **Note**  
 If you are using IIS to publish the ICO and OSD files, configure a MIME type for OSD=TXT; otherwise, IIS will refuse to serve the ICO and OSD files to clients.

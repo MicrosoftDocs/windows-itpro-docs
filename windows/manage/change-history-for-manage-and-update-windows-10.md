@@ -12,11 +12,44 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## September 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| [Update Windows 10 in the enterprise](waas-update-windows-10.md), replaces **Windows 10 servicing options** | New |
+| [Lockdown features from Windows Embedded 8.1 Industry](lockdown-features-windows-10.md) | Added Group Policy setting to replace Gesture Filter |
+| [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added content for Windows Server 2016 |
+| [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Updated the script for setting a custom shell using Shell Launcher. |
+
+## August 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| [Create mandatory user profiles](mandatory-user-profile.md) | New |
+| [Update Windows 10 in the enterprise](waas-update-windows-10.md) | New section |
+| [Configure Windows 10 taskbar](configure-windows-10-taskbar.md) | Updated sample XML for combined Start and taskbar layout; added note to explain the difference between applying taskbar configuration by Group Policy and by provisioning package |
+| [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Updated instructions for exiting assigned access mode. |
+| Application development for Windows as a service  |  Topic moved to MSDN: [Application development for Windows as a service](https://msdn.microsoft.com/windows/uwp/get-started/application-development-for-windows-as-a-service)
+| Windows 10 servicing options | New content replaced this topic; see [Overview of Windows as a service](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-overview) |
+
+## RELEASE: Windows 10, version 1607
+
+The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added: 
+
+- [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md)
+- [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+- [Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md)
+- [Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md)
+- [Application Virtualization (App-V) for Windows 10](appv-for-windows.md)
+- [User Experience Virtualization (UE-V) for Windows 10](uev-for-windows.md)
+
 ## July 2016
 
 | New or changed topic | Description |
 | ---|---|
+| [Manage Windows 10 and Windows Store tips, tricks, and suggestions](manage-tips-and-suggestions.md) | New |
 | [Windows 10 servicing options](introduction-to-windows-10-servicing.md)  | Added detailed content on servicing branches, moved from [Windows 10 servicing overview](../plan/windows-10-servicing-options.md). |
+
 
 ## June 2016
 
@@ -71,7 +104,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | ---|---|
 | [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md) | New |
 | [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) | New |
-|[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md) | New |
+| [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md) | New |
 
 ## November 2015
 

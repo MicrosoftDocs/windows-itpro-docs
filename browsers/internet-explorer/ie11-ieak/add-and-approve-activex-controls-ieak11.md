@@ -1,12 +1,14 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
 description: How to use IEAK 11 to add and approve ActiveX controls for your organization.
-ms.assetid: 33040bd1-f0e4-4541-9fbb-16e0c76752ab
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.assetid: 33040bd1-f0e4-4541-9fbb-16e0c76752ab
 title: Add and approve ActiveX controls using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Add and approve ActiveX controls using IEAK 11
 There are two main approaches to how you can control the use of ActiveX controls in your company. For more info about ActiveX controls, including how to manage the controls using Group Policy, see [Group Policy and ActiveX installation](../ie11-deploy-guide/activex-installation-using-group-policy.md) in the [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](../ie11-deploy-guide/index.md).

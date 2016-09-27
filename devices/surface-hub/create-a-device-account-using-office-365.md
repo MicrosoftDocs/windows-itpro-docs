@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
-localizationpriority: high
+localizationpriority: medium
 ---
 
 # Create a device account using UI (Surface Hub)
@@ -27,7 +27,7 @@ If you prefer to use a graphical user interface, you can create a device account
 
 ### <a href="" id="create-device-acct-o365-admin-ctr"></a>Create the account in the Office 365 Admin Center
 
-1.  Sign in to Office 365 by visiting http://portal.office.com/admin/
+1.  Sign in to Office 365 by visiting http://portal.office.com
 2.  Provide the admin credentials for your Office 365 tenant. This will take you to your Office 365 Admin Center.
 
     ![Office 365 admin center.](images/setupdeviceaccto365-02.png)
@@ -54,7 +54,7 @@ If you prefer to use a graphical user interface, you can create a device account
 
     ![assign license for Skype for Business online.](images/setupdeviceaccto365-07.png)
 
-    From the list, uncheck **Skype for Business Online (plan 2)** (this license may vary depending on your organization), and click **SAVE**.
+    From the list, select **Skype for Business Online (Plan 2)**, and then click **SAVE**. The license may vary depending on your organization (for example, you might have Plan 2, or Plan 3). 
 
 ### <a href="" id="create-device-acct-o365-mbx-policy"></a>Create a mobile device mailbox (ActiveSync) policy from the Exchange Admin Center
 
@@ -100,8 +100,8 @@ From here on, you'll need to finish the account creation process using PowerShel
 
 In order to run cmdlets used by these PowerShell scripts, the following must be installed for the admin PowerShell console:
 
--   [Microsoft Online Services Sign-In Assistant for IT Professionals BETA](http://go.microsoft.com/fwlink/?LinkId=718149)
--   [Windows Azure Active Directory Module for Windows PowerShell](http://go.microsoft.com/fwlink/p/?linkid=236297)
+-   [Microsoft Online Services Sign-In Assistant for IT Professionals BETA](https://go.microsoft.com/fwlink/?LinkId=718149)
+-   [Windows Azure Active Directory Module for Windows PowerShell](https://go.microsoft.com/fwlink/p/?linkid=236297)
 -   [Skype for Business Online, Windows PowerShell Module](http://www.microsoft.com/download/details.aspx?id=39366)
 
 ### Connecting to online services
@@ -133,8 +133,7 @@ In order to run cmdlets used by these PowerShell scripts, the following must be 
 5.  Finally, to connect to Exchange Online Services, run:
 
     ``` syntax
-    $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri
-    "https://outlook.office365.com/powershell-liveid/" -Credential $cred -Authentication "Basic" –AllowRedirection
+    $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri"https://outlook.office365.com/powershell-liveid/" -Credential $cred -Authentication "Basic" –AllowRedirection
     ```
 
     ![Image showing PowerShell cmdlet.](images/setupdeviceaccto365-21.png)

@@ -7,7 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, servicing
-author: greg-lindsay
+author: jdeckerMS
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/manage/waas-update-windows-10
 ---
 
 # Windows 10 servicing options
@@ -108,7 +109,7 @@ At the end of each approximately four month period, Microsoft executes a set of 
 
 **The role of Windows Update for Business**
 
-Although Windows 10 will enable IT administrators to defer installation of new feature upgrades using Windows Update, enterprises may also want additional control over how and when Windows Update installs releases. With this need in mind, Microsoft [announced Windows Update for Business](http://go.microsoft.com/fwlink/p/?LinkId=624798) in May of 2015. Microsoft designed Windows Update for Business to provide IT administrators with additional Windows Update-centric management capabilities, such as the ability to deploy updates to groups of devices and to define maintenance windows for installing releases. This article will be updated with additional information about the role of Windows Update for Business in servicing Windows 10 devices as it becomes available.
+Although Windows 10 will enable IT administrators to defer installation of new feature upgrades using Windows Update, enterprises may also want additional control over how and when Windows Update installs releases. With this need in mind, Microsoft [announced Windows Update for Business](https://go.microsoft.com/fwlink/p/?LinkId=624798) in May of 2015. Microsoft designed Windows Update for Business to provide IT administrators with additional Windows Update-centric management capabilities, such as the ability to deploy updates to groups of devices and to define maintenance windows for installing releases. This article will be updated with additional information about the role of Windows Update for Business in servicing Windows 10 devices as it becomes available.
 
 ## Windows 10 servicing branches
 
@@ -485,8 +486,8 @@ universal apps removed
 
 [Plan for Windows 10 deployment](../plan/index.md)
 
-[Deploy Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=624776)
+[Deploy Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=624776)
 
-[Manage and update Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=624796)
+[Manage and update Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=624796)
  
  

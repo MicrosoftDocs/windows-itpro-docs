@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
+localizationpriority: medium
 author: jasesso
 ---
 
@@ -183,7 +184,7 @@ In Endpoint Protection, you can use the advanced scanning options to configure a
 
 ## Related topics
 
-[Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md)
-[Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)
+- [Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md)
+- [Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)
  
  

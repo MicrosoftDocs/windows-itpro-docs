@@ -16,7 +16,7 @@ author: brianlic-msft
 
 -   Windows 10
 -   Windows 10 Mobile
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 At Microsoft, we use Windows telemetry to inform our decisions and focus our efforts in providing the most robust, most valuable platform for your business and the people who count on Windows to enable them to be as productive as possible. Telemetry gives users a voice in the operating system’s development. This guide describes the importance of Windows telemetry and how we protect that data. Additionally, it differentiates between telemetry and functional data. It also describes the telemetry levels that Windows supports. Of course, you can choose how much telemetry is shared with Microsoft, and this guide demonstrates how.
 
@@ -31,12 +31,13 @@ To frame a discussion about telemetry, it is important to understand Microsoft�
 
 This article applies to Windows and Windows Server telemetry only. Other Microsoft or third-party apps, such as System Center Configuration Manager, System Center Endpoint Protection, or System Center Data Protection Manager, might send data to their cloud services in ways that are inconsistent with this guide. Their publishers are responsible for notifying users of their privacy policies, telemetry controls, and so on. This article describes the types of telemetry we may gather, the ways you might manage it in your organization, and some examples of how telemetry can provide you with valuable insights into your enterprise deployments. Microsoft uses the data to quickly identify and address issues affecting its customers.
 
-
 Use this article to make informed decisions about how you might configure telemetry in your organization. Telemetry is a term that means different things to different people and organizations. For the purpose of this article, we discuss telemetry as system data that is uploaded by the Connected User Experience and Telemetry component. The telemetry data is used to help keep Windows devices secure by identifying malware trends and other threats and to help Microsoft improve the quality of Windows and Microsoft services.
+
+We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
 ## Overview
 
-In previous versions of Windows and Windows Server, Microsoft used telemetry to check for updated or new Windows Defender signatures, check whether Windows Update installations were successful, gather reliability information through the Reliability Analysis Component (RAC), and gather reliability information through the Windows Customer Experience Improvement Program (CEIP) on Windows. In Windows 10 and Windows Server 2016 Technical Preview, you can control telemetry streams by using the Privacy option in Settings, Group Policy, or MDM.
+In previous versions of Windows and Windows Server, Microsoft used telemetry to check for updated or new Windows Defender signatures, check whether Windows Update installations were successful, gather reliability information through the Reliability Analysis Component (RAC), and gather reliability information through the Windows Customer Experience Improvement Program (CEIP) on Windows. In Windows 10 and Windows Server 2016, you can control telemetry streams by using the Privacy option in Settings, Group Policy, or MDM.
 
 For Windows 10, we invite IT pros to join the [Windows Insider Program](http://insider.windows.com) to give us feedback on what we can do to make Windows work better for your organization.
 
@@ -66,7 +67,7 @@ Telemetry can sometimes be confused with functional data. Some Windows component
 
 There are subtle differences between telemetry and functional data. Windows collects and sends telemetry in the background automatically. You can control how much information is gathered by setting the telemetry level. Microsoft tries to avoid collecting personal information wherever possible (for example, if a crash dump is collected and a document was in memory at the time of the crash).    On the other hand, functional data can contain personal information. However, a user action, such as requesting news or asking Cortana a question, usually triggers collection and transmission of functional data.
 
-If you’re an IT pro that wants to manage Windows functional data sent from your organization to Microsoft, see [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/en-us/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services).
+If you’re an IT pro that wants to manage Windows functional data sent from your organization to Microsoft, see [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services).
 
 The following are specific examples of functional data:
 
@@ -94,10 +95,10 @@ Windows telemetry also helps Microsoft better understand how customers use (or d
 
 **These examples show how the use of telemetry data enables Microsoft to build or enhance features which can help organizations increase employee productivity while lowering help desk calls.**
 
-<!--
+
 ### Insights into your own organization
 
-Sharing information with Microsoft helps make Windows and other products better, but it can also help make your internal processes and user experiences better, as well.  Microsoft is in the process of developing a set of analytics customized for your internal use.  The first of these, called Windows 10 Upgrade Analytics, will be available in Summer 2016.
+Sharing information with Microsoft helps make Windows and other products better, but it can also help make your internal processes and user experiences better, as well.  Microsoft is in the process of developing a set of analytics customized for your internal use.  The first of these, called [Windows 10 Upgrade Analytics](../deploy/manage-windows-upgrades-with-upgrade-analytics.md).
 
 #### Windows 10 Upgrade Analytics
 
@@ -119,12 +120,11 @@ Use Upgrade Analytics to get:
 
 The Upgrade Analytics workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.
 
--->
 ## How is telemetry data handled by Microsoft?
 
 ### Data collection
 
-Windows 10 and Windows Server 2016 Technical Preview includes the Connected User Experience and Telemetry component, which uses Event Tracing for Windows (ETW) tracelogging technology that gathers and stores telemetry events and data. The operating system and some Microsoft management solutions, such as System Center, use the same logging technology.
+Windows 10 and Windows Server 2016 includes the Connected User Experience and Telemetry component, which uses Event Tracing for Windows (ETW) tracelogging technology that gathers and stores telemetry events and data. The operating system and some Microsoft management solutions, such as System Center, use the same logging technology.
 
 1. Operating system features and some management applications are instrumented to publish events and data. Examples of management applications include Virtual Machine Manager (VMM), Server Manager, and Storage Spaces.
 2. Events are gathered using public operating system event logging and tracing APIs.
@@ -151,7 +151,7 @@ The following table defines the endpoints for telemetry services:
 
 ### Data use and access
 
-The principle of least privileged access guides access to telemetry data. Microsoft does not share personal data of our customers with third parties, except at the customer’s discretion or for the limited purposes described in the [Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement). Microsoft may share business reports with OEMs and third party partners that include aggregated and anonymized telemetry information. Data-sharing decisions are made by an internal team including privacy, legal, and data management.
+The principle of least privileged access guides access to telemetry data. Microsoft does not share personal data of our customers with third parties, except at the customer’s discretion or for the limited purposes described in the [Privacy Statement](https://privacy.microsoft.com/privacystatement). Microsoft may share business reports with OEMs and third party partners that include aggregated and anonymized telemetry information. Data-sharing decisions are made by an internal team including privacy, legal, and data management.
 
 ### Retention
 
@@ -160,7 +160,7 @@ Microsoft believes in and practices information minimization. We strive to gathe
 ## Telemetry levels
 
 
-This section explains the different telemetry levels in Windows 10, Windows Server 2016 Technical Preview, and System Center. These levels are available on all desktop and mobile editions of Windows 10, with the exception of the **Security** level which is limited to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016 Technical Preview.
+This section explains the different telemetry levels in Windows 10, Windows Server 2016, and System Center. These levels are available on all desktop and mobile editions of Windows 10, with the exception of the **Security** level which is limited to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016.
 
 The telemetry data is categorized into four levels:
 
@@ -172,7 +172,7 @@ The telemetry data is categorized into four levels:
 
 -   **Full**. All data necessary to identify and help to fix problems, plus data from the **Security**, **Basic**, and **Enhanced** levels.
 
-The levels are cumulative and are illustrated in the following diagram. Also, these levels apply to all editions of Windows Server 2016 Technical Preview.
+The levels are cumulative and are illustrated in the following diagram. Also, these levels apply to all editions of Windows Server 2016.
 
 ![breakdown of telemetry levels and types of administrative controls](images/priv-telemetry-levels.png)
 
@@ -180,7 +180,8 @@ The levels are cumulative and are illustrated in the following diagram. Also, th
 
 The Security level gathers only the telemetry info that is required to keep Windows devices, Windows Server, and guests protected with the latest security updates. This level is only available on Windows Server 2016, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and Windos IoT Core editions.
 
-> **Note:**  If your organization relies on Windows Update for updates, you shouldn’t use the **Security** level. Because no Windows Update information is gathered at this level, important information about update failures is not sent. Microsoft uses this information to fix the causes of those failures and improve the quality of our updates.
+> [!NOTE]  
+> If your organization relies on Windows Update for updates, you shouldn’t use the **Security** level. Because no Windows Update information is gathered at this level, important information about update failures is not sent. Microsoft uses this information to fix the causes of those failures and improve the quality of our updates.
 
 Windows Server Update Services (WSUS) and System Center Configuration Manager functionality is not affected at this level, nor is telemetry data about Windows Server features or System Center gathered.
 
@@ -192,14 +193,15 @@ The data gathered at this level includes:
 
 -   **Malicious Software Removal Tool (MSRT)** The MSRT infection report contains information, including device info and IP address.
 
-    >**Note:**  You can turn off the MSRT infection report. No MSRT information is included if MSRT is not used. If Windows Update is turned off, MSRT will not be offered to users. For more info, see Microsoft KB article [891716](http://support.microsoft.com/kb/891716).
+    > [!NOTE]  
+    > You can turn off the MSRT infection report. No MSRT information is included if MSRT is not used. If Windows Update is turned off, MSRT will not be offered to users. For more info, see Microsoft KB article [891716](http://support.microsoft.com/kb/891716).
 
      
 
 -   **Windows Defender/Endpoint Protection**. Windows Defender and System Center Endpoint Protection requires some information to function, including: anti-malware signatures, diagnostic information, User Account Control settings, Unified Extensible Firmware Interface (UEFI) settings, and IP address.
 
-    **Note**  
-    This reporting can be turned off and no information is included if a customer is using third party antimalware software, or if Windows Defender is turned off. For more info, see [Windows Defender](disconnect-your-organization-from-microsoft.md#windows-defender).
+    > [!NOTE]  
+    > This reporting can be turned off and no information is included if a customer is using third party antimalware software, or if Windows Defender is turned off. For more info, see [Windows Defender](disconnect-your-organization-from-microsoft.md#windows-defender).
 
     Microsoft recommends that Windows Update, Windows Defender, and MSRT remain enabled unless the enterprise uses alternative solutions such as Windows Server Update Services, System Center Configuration Manager, or a third party antimalware solution. Windows Update, Windows Defender, and MSRT provide core Windows functionality such as driver and OS updates, including security updates.
 
@@ -215,7 +217,7 @@ The Basic level gathers a limited set of data that’s critical for understandin
 
 The data gathered at this level includes:
 
--   **Basic device data**. Helps provide an understanding about the types of Windows devices and the configurations and types of native and virtualized Windows Server 2016 Technical Preview in the ecosystem. Examples include:
+-   **Basic device data**. Helps provide an understanding about the types of Windows devices and the configurations and types of native and virtualized Windows Server 2016 in the ecosystem. Examples include:
 
     -   Device attributes, such as camera resolution and display type
 
@@ -300,11 +302,12 @@ IT pros can use various methods, including Group Policy and Mobile Device Manage
 
 We do not recommend that you turn off telemetry in your organization as valuable functionality may be impacted, but we recognize that in some scenarios this may be required. Use the steps in this section to do so for Windows, Windows Server, and System Center.
 
->**Important:**  These telemetry levels only apply to Windows, Windows Server, and System Center components and apps that use the Connected User Experience and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these telemetry levels. You should work with your app vendors to understand their telemetry policy, and how you can to opt in or opt out. For more information on how Microsoft Office uses telemetry, see [Overview of Office Telemetry](http://technet.microsoft.com/library/jj863580.aspx).
+> [!IMPORTANT]  
+> These telemetry levels only apply to Windows, Windows Server, and System Center components and apps that use the Connected User Experience and Telemetry component. Non-Windows components, such as Microsoft Office or other 3rd-party apps, may communicate with their cloud services outside of these telemetry levels. You should work with your app vendors to understand their telemetry policy, and how you can to opt in or opt out. For more information on how Microsoft Office uses telemetry, see [Overview of Office Telemetry](http://technet.microsoft.com/library/jj863580.aspx).
 
 You can turn on or turn off System Center telemetry gathering. The default is on and the data gathered at this level represents what is gathered by default when System Center telemetry is turned on. However, setting the operating system telemetry level to **Basic** will turn off System Center telemetry, even if the System Center telemetry switch is turned on.
 
-The lowest telemetry setting level supported through management policies is **Security**. The lowest telemetry setting supported through the Settings UI is **Basic**. The default telemetry setting for Windows Server 2016 Technical Preview is **Enhanced**.
+The lowest telemetry setting level supported through management policies is **Security**. The lowest telemetry setting supported through the Settings UI is **Basic**. The default telemetry setting for Windows Server 2016 is **Enhanced**.
 
 ### Configure the operating system telemetry level
 
@@ -368,21 +371,22 @@ There are a few more settings that you can turn off that may send telemetry info
 
 -   Turn off **Linguistic Data Collection** in **Settings** &gt; **Privacy**. At telemetry levels **Enhanced** and **Full**, Microsoft uses Linguistic Data Collection info to improve language model features such as autocomplete, spellcheck, suggestions, input pattern recognition, and dictionary.
 
-    >**Note:**  Microsoft does not intend to gather sensitive information, such as credit card numbers, usernames and passwords, email addresses, or other similarly sensitive information for Linguistic Data Collection. We guard against such events by using technologies to identify and remove sensitive information before linguistic data is sent from the user's device. If we determine that sensitive information has been inadvertently received, we delete the information.
+    > [!NOTE]  
+    > Microsoft does not intend to gather sensitive information, such as credit card numbers, usernames and passwords, email addresses, or other similarly sensitive information for Linguistic Data Collection. We guard against such events by using technologies to identify and remove sensitive information before linguistic data is sent from the user's device. If we determine that sensitive information has been inadvertently received, we delete the information.
 
 ## Additional resources
 
 FAQs
 
-- [Cortana, Search, and privacy](http://windows.microsoft.com/en-us/windows-10/cortana-privacy-faq)
-- [Windows 10 feedback, diagnostics, and privacy](http://windows.microsoft.com/en-us/windows-10/feedback-diagnostics-privacy-faq)
-- [Windows 10 camera and privacy](http://windows.microsoft.com/en-us/windows-10/camera-privacy-faq)
-- [Windows 10 location service and privacy](http://windows.microsoft.com/en-us/windows-10/location-service-privacy)
-- [Microsoft Edge and privacy](http://windows.microsoft.com/en-us/windows-10/edge-privacy-faq)
-- [Windows 10 speech, inking, typing, and privacy](http://windows.microsoft.com/en-us/windows-10/speech-inking-typing-privacy-faq)
-- [Windows Hello and privacy](http://windows.microsoft.com/en-us/windows-10/windows-hello-privacy-faq)
-- [Wi-Fi Sense](http://windows.microsoft.com/en-us/windows-10/wi-fi-sense-faq)
-- [Windows Update Delivery Optimization](http://windows.microsoft.com/en-us/windows-10/windows-update-delivery-optimization-faq)
+- [Cortana, Search, and privacy](https://privacy.microsoft.com/windows-10-cortana-and-privacy)
+- [Windows 10 feedback, diagnostics, and privacy](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)
+- [Windows 10 camera and privacy](https://privacy.microsoft.com/windows-10-camera-and-privacy)
+- [Windows 10 location service and privacy](https://privacy.microsoft.com/windows-10-location-and-privacy)
+- [Microsoft Edge and privacy](https://privacy.microsoft.com/windows-10-microsoft-edge-and-privacy)
+- [Windows 10 speech, inking, typing, and privacy](https://privacy.microsoft.com/windows-10-speech-inking-typing-and-privacy-faq)
+- [Windows Hello and privacy](https://privacy.microsoft.com/windows-10-windows-hello-and-privacy)
+- [Wi-Fi Sense](https://privacy.microsoft.com/windows-10-about-wifi-sense)
+- [Windows Update Delivery Optimization](https://privacy.microsoft.com/windows-10-windows-update-delivery-optimization)
 
 Blogs
 
@@ -390,11 +394,11 @@ Blogs
 
 Privacy Statement
 
-- [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement)
+- [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
 
 TechNet
 
-- [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/en-us/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+- [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 
 Web Pages
 

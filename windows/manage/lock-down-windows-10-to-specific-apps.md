@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerMS
+localizationpriority: high
 ---
 
 # Lock down Windows 10 to specific apps
@@ -107,12 +108,16 @@ In addition to specifying the apps that users can run, you should also restrict 
 
      
 
-To learn more about locking down features, see [Customizations for Windows 10 Enterprise](http://go.microsoft.com/fwlink/p/?LinkId=691442).
+To learn more about locking down features, see [Customizations for Windows 10 Enterprise](https://go.microsoft.com/fwlink/p/?LinkId=691442).
 
 ## Customize Start screen layout for the device
 
 
 Configure the Start menu on the device to only show tiles for the permitted apps. You will make the changes manually, export the layout to an .xml file, and then apply that file to devices to prevent users from making changes. For instructions, see [Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md).
+
+## Related topics
+
+- [Provisioning packages for Windows 10](../deploy/provisioning-packages.md)
 
  
 

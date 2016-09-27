@@ -1,20 +1,23 @@
 ---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
 description: Use the Enterprise Mode Site List Manager to create and update your Enterprise Mode site list for devices running Windows 7 or Windows 8.1 Update.
-ms.assetid: 17c61547-82e3-48f2-908d-137a71938823
 author: eross-msft
 ms.prod: ie11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: appcompat
+ms.assetid: 17c61547-82e3-48f2-908d-137a71938823
 title: Enterprise Mode schema v.1 guidance (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
+
 
 # Enterprise Mode schema v.1 guidance
 
 **Applies to:**
 
--   Windows 8.1
--   Windows 7
+- Windows 10
+- Windows 8.1
+- Windows 7
 
 Use the Enterprise Mode Site List Manager (schema v.1) to create and update your Enterprise Mode site list for devices running the v.1 version of the schema, or the Enterprise Mode Site List Manager (schema v.2) to create and update your Enterprise Mode site list for devices running the v.2 version of the schema. We strongly recommend moving to the new schema, v.2. For more info, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md). 
 
@@ -84,7 +87,19 @@ This table includes the elements used by the Enterprise Mode schema.
   &lt;emie&gt;
     &lt;domain&gt;contoso.com&lt;/domain&gt;
   &lt;/emie&gt;
-&lt;/rules>&gt;</pre></td>
+&lt;/rules&gt;</pre>
+<strong>-or-</strong>
+<p>For IPv6 ranges:<pre class="syntax">&lt;rules version="205"&gt;
+  &lt;emie&gt;
+    &lt;domain&gt;[10.122.34.99]:8080&lt;/domain&gt;
+  &lt;/emie&gt;
+  &lt;/rules&gt;</pre>
+<strong>-or-</strong>
+<p>For IPv4 ranges:<pre class="syntax">&lt;rules version="205"&gt;
+  &lt;emie&gt;
+    &lt;domain&gt;10.122.34.99:8080&lt;/domain&gt;
+  &lt;/emie&gt;
+  &lt;/rules&gt;</pre></td>
 <td>Internet Explorer 11 and Microsoft Edge</td>
 </tr>
 <tr>
@@ -189,7 +204,6 @@ For example, say you want all of the sites in the contoso.com domain to open usi
 We recommend that you not add any of the following items to your schema because they can make your compatibility list behave in unexpected ways:
 - Don’t use protocols. For example, `http://`, `https://`, or custom protocols. They break parsing.
 - Don’t use wildcards.
-- Don't use IP Addresses.
 - Don’t use query strings, ampersands break parsing.
 
 ## How to use trailing slashes

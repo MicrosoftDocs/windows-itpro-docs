@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: TrudyHa
+localizationpriority: medium
 ---
 
 # Create provisioning packages (Surface Hub)
@@ -34,7 +35,7 @@ Provisioning packages are created using Windows Imaging and Configuration Design
 
 ### <a href="" id="what-can-prov-pkg"></a>What can provisioning packages configure for Surface Hubs?
 
-Currently, you can use provisioning packages to install certificates and to install Universal App Platform (UAP) apps on your Surface Hub. These are the only two supported scenarios.
+Currently, you can use provisioning packages to install certificates and to install Universal Windows Platform (UWP) apps on your Surface Hub. These are the only two supported scenarios.
 
 You may use provisioning packages to install certificates that will allow the device to authenticate to Microsoft Exchange or Skype for Business, or to sideload apps that don't come from the Windows Store (for example, your own in-house apps).
 
@@ -57,7 +58,7 @@ In order to create and deploy provisioning packages, all of the following are re
 
 ### <a href="" id="installing-wicd-prov-pkg"></a>Install the Windows Imaging and Configuration Designer
 
-1.  The Windows Imaging and Configuration Designer (ICD) is installed as part of the Windows 10 ADK. The installer for the ADK can be downloaded from the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=718147).
+1.  The Windows Imaging and Configuration Designer (ICD) is installed as part of the Windows 10 ADK. The installer for the ADK can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=718147).
     >**Note**  The ADK must be installed on a separate PC, not on the Surface Hub.  
 
 2.  Run the installer, and set your preferences for installation. When asked what features you want to install, you will see a checklist like the one in the following figure. Note that **Windows Performance Toolkit** and **Windows Assessment Toolkit** should be unchecked, as they are not needed to run the ICD.
@@ -137,7 +138,7 @@ This example will demonstrate how to create a provisioning package to install a 
 
 ### <a href="" id="creating-prov-pkg-apps"></a>Create a provisioning package for apps
 
-This example will demonstrate how to create a provisioning package to install offline-licensed apps purchased from the Windows Store for Business. For information on offline-licensed apps and what you need to download in order to install them, see [Distribute offline apps](http://go.microsoft.com/fwlink/?LinkId=718148).
+This example will demonstrate how to create a provisioning package to install offline-licensed apps purchased from the Windows Store for Business. For information on offline-licensed apps and what you need to download in order to install them, see [Distribute offline apps](https://go.microsoft.com/fwlink/?LinkId=718148).
 
 For each app you want to install on Surface Hubs, you'll need to download:
 

@@ -31,7 +31,7 @@ The following MBAM features represent the server infrastructure for an MBAM serv
 MBAM server databases and features can be installed in different configurations, depending on your scalability needs. All MBAM Server features can be installed on a single server or distributed across multiple servers. Generally, we recommend that you use a three-server or five-server configuration for production environments, although configurations of two or four servers can also be used, depending on your computing needs.
 
 **Note**  
-For more information about performance scalability of MBAM and recommended deployment topologies, see the MBAM Scalability and High-Availability Guide white paper at <http://go.microsoft.com/fwlink/p/?LinkId=258314>.
+For more information about performance scalability of MBAM and recommended deployment topologies, see the MBAM Scalability and High-Availability Guide white paper at <https://go.microsoft.com/fwlink/p/?LinkId=258314>.
 
  
 

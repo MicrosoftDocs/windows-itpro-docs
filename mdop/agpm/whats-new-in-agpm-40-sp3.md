@@ -34,7 +34,7 @@ AGPM 4.0 SP3 includes a rollup of all fixes up to and including Microsoft Advanc
 
 ### Ability to upgrade to AGPM 4.0 SP3 without re-entering configuration parameters
 
-You can upgrade the AGPM Client or AGPM Server to AGPM 4.0 SP3 without being prompted to re-enter configuration parameters (called the Smart Upgrade) only from AGPM 4.0 and later, as shown in the following table. If you are upgrading to AGPM 4.0 SP3 from other versions of AGPM, as shown in the table, you must use the Classic Upgrade, which requires you to re-enter the configuration parameters. Because each version of AGPM is associated with a particular operating system, see [Choosing Which Version of AGPM to Install](http://go.microsoft.com/fwlink/?LinkId=254350) and make sure that you upgrade your operating system as appropriate before you upgrade AGPM.
+You can upgrade the AGPM Client or AGPM Server to AGPM 4.0 SP3 without being prompted to re-enter configuration parameters (called the Smart Upgrade) only from AGPM 4.0 and later, as shown in the following table. If you are upgrading to AGPM 4.0 SP3 from other versions of AGPM, as shown in the table, you must use the Classic Upgrade, which requires you to re-enter the configuration parameters. Because each version of AGPM is associated with a particular operating system, see [Choosing Which Version of AGPM to Install](https://go.microsoft.com/fwlink/?LinkId=254350) and make sure that you upgrade your operating system as appropriate before you upgrade AGPM.
 
 **AGPM 4.0 SP3 supported upgrades**
 
@@ -231,7 +231,7 @@ If the GPMC is not enabled, the installer enables it during the installation.
 ## How to Get MDOP Technologies
 
 
-AGPM 4.0 SP3 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](http://go.microsoft.com/fwlink/?LinkId=322049) (http://go.microsoft.com/fwlink/?LinkId=322049).
+AGPM 4.0 SP3 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049) (https://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## Related topics
 

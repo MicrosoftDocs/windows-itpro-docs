@@ -565,7 +565,7 @@ After you create the Windows Store for Business portal, configure it by using th
 
 Now that you have created your Windows Store for Business portal, you’re ready to find, acquire, and distribute apps that you will add to your portal. You do this by using the Inventory page in Windows Store for Business.
 
-**Note**&nbsp;&nbsp;Your educational institution can now use a credit card or purchase order to pay for apps in Windows Store for Business.
+**Note**&nbsp;&nbsp;Your educational institution can now use a credit card to pay for apps in Windows Store for Business.
 
 You can deploy apps to individual users or make apps available to users through your private store. Deploying apps to individual users restricts the app to those specified users. Making apps available through your private store allows all your users.
 
@@ -1257,8 +1257,8 @@ Now, you have identified the tasks you need to perform monthly, at the end of an
 
 ##Related resources
 <ul>
-<li>[Try it out: Windows 10 deployment (for educational institutions)](http://go.microsoft.com/fwlink/p/?LinkId=623254)</li>
-<li>[Try it out: Windows 10 in the classroom](http://go.microsoft.com/fwlink/p/?LinkId=623255)</li>
-<li>[Chromebook migration guide](http://go.microsoft.com/fwlink/p/?LinkId=623249)</li>
+<li>[Try it out: Windows 10 deployment (for educational institutions)](https://go.microsoft.com/fwlink/p/?LinkId=623254)</li>
+<li>[Try it out: Windows 10 in the classroom](https://go.microsoft.com/fwlink/p/?LinkId=623255)</li>
+<li>[Chromebook migration guide](https://go.microsoft.com/fwlink/p/?LinkId=623249)</li>
 </ul>
 

@@ -183,7 +183,7 @@ Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-micros
 
 [Operations for App-V 5.0](operations-for-app-v-50.md)
 
-[A simplified Microsoft App-V 5.1 Management Server upgrade procedure](http://go.microsoft.com/fwlink/p/?LinkId=786330)
+[A simplified Microsoft App-V 5.1 Management Server upgrade procedure](https://go.microsoft.com/fwlink/p/?LinkId=786330)
 
  
 

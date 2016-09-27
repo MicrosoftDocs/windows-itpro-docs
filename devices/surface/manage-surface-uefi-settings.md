@@ -14,7 +14,8 @@ author: miladCA
 
 Current and future generations of Surface devices, including Surface Pro 4 and Surface Book, use a unique UEFI firmware engineered by Microsoft specifically for these devices. This firmware allows for significantly greater control of the device’s operation over firmware versions in earlier generation Surface devices, including the support for touch, mouse, and keyboard operation. By using the Surface UEFI settings you can easily enable or disable internal devices or components, configure security to protect UEFI settings from being changed, and adjust the Surface device boot settings. 
 
->**Note:**&nbsp;&nbsp;Surface Pro 3, Surface 3, Surface Pro 2, Surface 2, Surface Pro, and Surface do not use the Surface UEFI and instead use firmware provided by third-party manufacturers, such as AMI.
+>[!NOTE]
+>Surface Pro 3, Surface 3, Surface Pro 2, Surface 2, Surface Pro, and Surface do not use the Surface UEFI and instead use firmware provided by third-party manufacturers, such as AMI.
 
 You can enter the Surface UEFI settings on your Surface device by pressing the **Volume Up** button and the **Power** button simultaneously. Hold the **Volume Up** button until the Surface logo is displayed, which indicates that the device has begun to boot. 
 
@@ -26,7 +27,7 @@ On the **PC information** page, detailed information about your Surface device i
 - **UUID** – This Universally Unique Identification number is specific to your device and is used to identify the device during deployment or management. 
 
 - **Serial Number** – This number is used to identify this specific Surface device for asset tagging and support scenarios.
-- **Asset Tag** – The asset tag is assigned to the Surface device with the [Asset Tag Tool](https://www.microsoft.com/en-us/download/details.aspx?id=44076). 
+- **Asset Tag** – The asset tag is assigned to the Surface device with the [Asset Tag Tool](https://www.microsoft.com/download/details.aspx?id=44076). 
 
 You will also find detailed information about the firmware of your Surface device. Surface devices have several internal components that each run different versions of firmware. The firmware version of each of the following devices is displayed on the **PC information** page (as shown in Figure 1): 
 
@@ -44,7 +45,7 @@ You will also find detailed information about the firmware of your Surface devic
 
 *Figure 1. System information and firmware version information*
 
-You can find up-to-date information about the latest firmware version for your Surface device in the [Surface Update History](https://www.microsoft.com/surface/en-us/support/install-update-activate/surface-update-history) for your device. 
+You can find up-to-date information about the latest firmware version for your Surface device in the [Surface Update History](https://www.microsoft.com/surface/support/install-update-activate/surface-update-history) for your device. 
 
 ##Security 
 
@@ -70,7 +71,7 @@ On the **Security** page you can also change the configuration of Secure Boot on
 
 *Figure 3. Configure Secure Boot*
 
-You can also enable or disable the Trusted Platform Module (TPM) device on the **Security** page, as shown in Figure 4. The TPM is used to authenticate encryption for your device’s data with BitLocker. Read more about [BitLocker](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/bitlocker-overview) in the TechNet Library. 
+You can also enable or disable the Trusted Platform Module (TPM) device on the **Security** page, as shown in Figure 4. The TPM is used to authenticate encryption for your device’s data with BitLocker. Read more about [BitLocker](https://technet.microsoft.com/itpro/windows/keep-secure/bitlocker-overview) in the TechNet Library. 
 
 ![Configure Surface UEFI security settings](images/manage-surface-uefi-fig4.png "Configure Surface UEFI security settings")
 
@@ -137,3 +138,7 @@ Use the **Restart Now** button on the **Exit** page to exit UEFI settings, as sh
 ![Exit Surface UEFI and restart the device](images/manage-surface-uefi-fig8.png "Exit Surface UEFI and restart the device")
 
 *Figure 8. Click Restart Now to exit Surface UEFI and restart the device*
+
+## Related topics
+
+[Advanced UEFI security features for Surface Pro 3](advanced-uefi-security-features-for-surface-pro-3.md)

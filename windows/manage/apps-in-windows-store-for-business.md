@@ -51,7 +51,7 @@ Apps that you acquire from the Store for Business only work on Windows 10-based
 
 Some apps are free, and some apps charge a price. Currently, you can pay for apps with a credit card. We'll be adding more payment options over time.
 
-Some apps which are available to consumers in the Windows Store might not be available to organizations in the Windows Store for Business. App developers can opt-out their apps, and they also need to meet eligibility requirements for Windows Store for Business. For more information, read this info on [Organizational licensing options](https://msdn.microsoft.com/en-us/windows/uwp/publish/organizational-licensing). 
+Some apps which are available to consumers in the Windows Store might not be available to organizations in the Windows Store for Business. App developers can opt-out their apps, and they also need to meet eligibility requirements for Windows Store for Business. For more information, read this info on [Organizational licensing options](https://msdn.microsoft.com/windows/uwp/publish/organizational-licensing). 
 
 **Note**<br>
 We are still setting up the catalog of apps for Windows Store for Business. If you are searching for an app and it isn’t available, please check again in a couple of days.
@@ -80,7 +80,7 @@ Distribution options for online-licensed apps include the ability to:
 
 -   Distribute through a management tool.
 
-**Offline** licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store.
+**Offline** licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store. Admins control whether or not offline apps are available in Store for Business with an offline app visibility setting. For more information, see [offline license visibility](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings#offline-licensing). 
 
 You have the following distribution options for offline-licensed apps:
 
