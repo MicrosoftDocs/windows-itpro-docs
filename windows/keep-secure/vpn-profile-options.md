@@ -21,7 +21,7 @@ Most of the VPN settings in Windows 10 can be configured in VPN profiles using M
 >[!NOTE]
 >If you're not familiar with CSPs, read [Introduction to configuration service providers (CSPs)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers) first.
 
-The following table lists the VPN settings and whether the setting can only be configured using **ProfileXML**.
+The following table lists the VPN settings and whether the setting can be configured in Intune and Configuration Manager, or can only be configured using **ProfileXML**.
 
 | Profile setting | Can be configured in Intune and Configuration Manager | 
 | --- | --- | 
@@ -42,451 +42,180 @@ The following table lists the VPN settings and whether the setting can only be c
 | Windows Information Protection (WIP) | no |
 | Traffic filters | yes |
 
-The sections in this topic provide XML examples for the VPN profile settings in this guide. You can get additional examples in the [ProfileXML XSD](https://msdn.microsoft.com/library/windows/hardware/mt755930.aspx) topic.
+The ProfileXML node was added to the VPNv2 CSP to allow users to deploy VPN profile as a single blob. This is particularly useful for deploying profiles with features that are not yet supported by MDMs. You can get additional examples in the [ProfileXML XSD](https://msdn.microsoft.com/library/windows/hardware/mt755930.aspx) topic.
 
+## Sample VPN profile
 
-
-## Connection type
-
-**Example:** set connection type to **Automatic**
+The following is a sample Native VPN profile. This blob would fall under the ProfileXML node. Profiles can be created for UWP apps as well. An example can be found in the link above as well.
 
 ```
-NativeProtocolType
-    <!-- Configure VPN Protocol Type (L2tp, Pptp, Ikev2) -->
-      <Add>
-        <CmdID>10002</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/NativeProtocolType</LocURI>
-          </Target>
-          <Data>Automatic</Data>
-        </Item>
-      </Add>
+<VPNProfile>  
+  <ProfileName>TestVpnProfile</ProfileName>  
+  <NativeProfile>  
+    <Servers>testServer.VPN.com</Servers>  
+    <NativeProtocolType>IKEv2</NativeProtocolType> 
+    
+    <!--Sample EAP profile (PEAP)--> 
+    <Authentication>  
+      <UserMethod>Eap</UserMethod>  
+      <MachineMethod>Eap</MachineMethod>  
+      <Eap>  
+       <Configuration>
+          <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
+            <EapMethod>
+              <Type xmlns="http://www.microsoft.com/provisioning/EapCommon">25</Type>
+              <VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId>
+              <VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType>
+              <AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
+            </EapMethod>
+            <Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
+              <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
+                <Type>25</Type>
+                <EapType xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV1">
+                  <ServerValidation>
+                    <DisableUserPromptForServerValidation>true</DisableUserPromptForServerValidation>
+                    <ServerNames></ServerNames>
+                    <TrustedRootCA>d2 d3 8e ba 60 ca a1 c1 20 55 a2 e1 c8 3b 15 ad 45 01 10 c2 </TrustedRootCA>
+                    <TrustedRootCA>d1 76 97 cc 20 6e d2 6e 1a 51 f5 bb 96 e9 35 6d 6d 61 0b 74 </TrustedRootCA>
+                  </ServerValidation>
+                  <FastReconnect>true</FastReconnect>
+                  <InnerEapOptional>false</InnerEapOptional>
+                  <Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
+                    <Type>13</Type>
+                    <EapType xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1">
+                      <CredentialsSource>
+                        <CertificateStore>
+                          <SimpleCertSelection>true</SimpleCertSelection>
+                        </CertificateStore>
+                      </CredentialsSource>
+                      <ServerValidation>
+                        <DisableUserPromptForServerValidation>true</DisableUserPromptForServerValidation>
+                        <ServerNames></ServerNames>
+                        <TrustedRootCA>d2 d3 8e ba 60 ca a1 c1 20 55 a2 e1 c8 3b 15 ad 45 01 10 c2 </TrustedRootCA>
+                        <TrustedRootCA>d1 76 97 cc 20 6e d2 6e 1a 51 f5 bb 96 e9 35 6d 6d 61 0b 74 </TrustedRootCA>
+                      </ServerValidation>
+                      <DifferentUsername>false</DifferentUsername>
+                      <PerformServerValidation xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">true</PerformServerValidation>
+                      <AcceptServerName xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">false</AcceptServerName>
+                      <TLSExtensions xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2">
+                        <FilteringInfo xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV3">
+                          <EKUMapping>
+                            <EKUMap>
+                              <EKUName>AAD Conditional Access</EKUName>
+                              <EKUOID>1.3.6.1.4.1.311.87</EKUOID>
+                            </EKUMap>
+                          </EKUMapping>
+                          <ClientAuthEKUList Enabled="true">
+                            <EKUMapInList>
+                              <EKUName>AAD Conditional Access</EKUName>
+                            </EKUMapInList>
+                          </ClientAuthEKUList>
+                        </FilteringInfo>
+                      </TLSExtensions>
+                    </EapType>
+                  </Eap>
+                  <EnableQuarantineChecks>false</EnableQuarantineChecks>
+                  <RequireCryptoBinding>true</RequireCryptoBinding>
+                  <PeapExtensions>
+                    <PerformServerValidation xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">true</PerformServerValidation>
+                    <AcceptServerName xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">false</AcceptServerName>
+                  </PeapExtensions>
+                </EapType>
+              </Eap>
+            </Config>
+          </EapHostConfig>
+        </Configuration>
+      </Eap>  
+    </Authentication>  
+    
+    <!--Sample routing policy: in this case, this is a split tunnel configuration with two routes configured-->
+    <RoutingPolicyType>SplitTunnel</RoutingPolicyType>  
+    <DisableClassBasedDefaultRoute>true</DisableClassBasedDefaultRoute>  
+  </NativeProfile>  
+    <Route>  
+    <Address>192.168.0.0</Address>  
+    <PrefixSize>24</PrefixSize>  
+  </Route>  
+  <Route>  
+    <Address>10.10.0.0</Address>  
+    <PrefixSize>16</PrefixSize>  
+  </Route>  
+  
+  <!--VPN will be triggered for the two apps specified here-->
+  <AppTrigger>  
+    <App>  
+      <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>  
+    </App>  
+  </AppTrigger>  
+  <AppTrigger>  
+    <App>  
+      <Id>C:\windows\system32\ping.exe</Id>  
+    </App>  
+  </AppTrigger>  
+  
+  <!--Example of per-app VPN. This configures traffic filtering rules for two apps. Internet Explorer is configured for force tunnel, meaning that all traffic allowed through this app must go over VPN. Microsoft Edge is configured as split tunnel, so whether data goes over VPN or the physical interface is dictated by the routing configuration.-->
+  <TrafficFilter>  
+    <App>  
+      <Id>%ProgramFiles%\Internet Explorer\iexplore.exe</Id>  
+    </App>  
+    <Protocol>6</Protocol>  
+    <LocalPortRanges>10,20-50,100-200</LocalPortRanges>  
+    <RemotePortRanges>20-50,100-200,300</RemotePortRanges>  
+    <RemoteAddressRanges>30.30.0.0/16,10.10.10.10-20.20.20.20</RemoteAddressRanges>  
+    <RoutingPolicyType>ForceTunnel</RoutingPolicyType>  
+  </TrafficFilter>  
+  <TrafficFilter>  
+    <App>  
+      <Id>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Id>  
+    </App>  
+    <LocalAddressRanges>3.3.3.3/32,1.1.1.1-2.2.2.2</LocalAddressRanges>  
+  </TrafficFilter>  
+  
+  <!--Name resolution configuration. The AutoTrigger node configures name-based triggering. In this profile, the domain "hrsite.corporate.contoso.com" triggers VPN.-->
+  <DomainNameInformation>  
+    <DomainName>hrsite.corporate.contoso.com</DomainName>  
+    <DnsServers>1.2.3.4,5.6.7.8</DnsServers>  
+    <WebProxyServers>5.5.5.5</WebProxyServers>  
+    <AutoTrigger>true</AutoTrigger>  
+  </DomainNameInformation>  
+  <DomainNameInformation>  
+    <DomainName>.corp.contoso.com</DomainName>  
+    <DnsServers>10.10.10.10,20.20.20.20</DnsServers>  
+    <WebProxyServers>100.100.100.100</WebProxyServers>  
+  </DomainNameInformation>  
+  
+  <!--EDPMode is turned on for the enterprise ID "corp.contoso.com". When a user accesses an app with that ID, VPN will be triggered.-->
+  <EdpModeId>corp.contoso.com</EdpModeId>  
+  <RememberCredentials>true</RememberCredentials>  
+  
+  <!--Always On is turned off, and triggering VPN for the apps and domain name specified earlier in the profile will not occur if the user is connected to the trusted network "contoso.com".-->
+  <AlwaysOn>false</AlwaysOn>  
+  <DnsSuffix>corp.contoso.com</DnsSuffix>  
+  <TrustedNetworkDetection>contoso.com</TrustedNetworkDetection>  
+  <Proxy>  
+    <Manual>  
+      <Server>HelloServer</Server>  
+    </Manual>  
+    <AutoConfigUrl>Helloworld.Com</AutoConfigUrl>  
+  </Proxy>  
+  
+  <!--Device compliance is enabled and an alternate certificate is specified for domain resource authentication.-->
+  <DeviceCompliance>  
+        <Enabled>true</Enabled>  
+        <Sso>  
+            <Enabled>true</Enabled>  
+            <Eku>This is my Eku</Eku>  
+            <IssuerHash>This is my issuer hash</IssuerHash>  
+        </Sso>  
+    </DeviceCompliance>  
+</VPNProfile> 
 ```
 
-**Example:** set connection type for a Universal Windows Platform (UWP) VPN plug-in
+## Apply ProfileXML using Intune
 
-```
- <!-- Configure VPN Plugin AppX Package ID (ThirdPartyProfileInfo=) -->
-      <Add>
-        <CmdID>10002</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/PluginProfile/PluginPackageFamilyName</LocURI>
-          </Target>
-          <Data>TestVpnPluginApp-SL_8wekyb3d8bbwe</Data>
-        </Item>
-      </Add>
-```
+After you configure the settings that you want using ProfileXML, you can apply it using Intune and a **Custom Configuration (Windows 10 Desktop and Mobile and later)** policy.
 
-**Example:** add custom configuration for UWP VPN plug-in
-
-```
-<!-- Configure Microsoft's Custom XML (ThirdPartyProfileInfo=) -->
-      <Add>
-        <CmdID>10003</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/PluginProfile/CustomConfiguration</LocURI>
-          </Target>
-          <Data>&lt;pluginschema&gt;&lt;ipAddress&gt;auto&lt;/ipAddress&gt;&lt;port&gt;443&lt;/port&gt;&lt;networksettings&gt;&lt;routes&gt;&lt;includev4&gt;&lt;route&gt;&lt;address&gt;172.10.10.0&lt;/address&gt;&lt;prefix&gt;24&lt;/prefix&gt;&lt;/route&gt;&lt;/includev4&gt;&lt;/routes&gt;&lt;namespaces&gt;&lt;namespace&gt;&lt;space&gt;.vpnbackend.com&lt;/space&gt;&lt;dnsservers&gt;&lt;server&gt;172.10.10.11&lt;/server&gt;&lt;/dnsservers&gt;&lt;/namespace&gt;&lt;/namespaces&gt;&lt;/networksettings&gt;&lt;/pluginschema&gt;</Data>
-        </Item>
-      </Add>
-```
-
-## Split-tunnel routing
-
-**Example:** route list and exclusion route
-
-```
-     <Add>
-        <CmdID>10008</CmdID>
-        <Item>
-          <Target>
-           <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/Address</LocURI>
-          </Target>
-          <Data>192.168.0.0</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10009</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/PrefixSize</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">int</Format>
-          </Meta>
-          <Data>24</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10010</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/ExclusionRoute</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">bool</Format>
-          </Meta>
-          <Data>true</Data>
-        </Item>
-      </Add>
-```
-
->[!NOTE]
->Forced-tunnel routing is used if no routes are specified.
-
-
-## EAP authentication
-
-You can only configure EAP-based authentication if you select a built-in connection type (IKEv2, L2TP, PPTP, or automatic). See [EAP configuration](https://msdn.microsoft.com/library/windows/hardware/mt168513.aspx) for a step-by-step guide for creating an Extensible Authentication Protocol (EAP) configuration XML for the VPN profile.
-
-
-## Conditional access
-
-**Example:** device compliance for conditional access
-
-```
-<Add>
-        <CmdID>10011</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DeviceCompliance/SSO/Enabled</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">bool</Format>
-          </Meta>
-          <Data>true</Data>
-        </Item>
-      </Add>
-<Add>
-        <CmdID>10011</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DeviceCompliance/SSO/IssuerHash</LocURI>
-          </Target>
-          <Data>ffffffffffffffffffffffffffffffffffffffff;ffffffffffffffffffffffffffffffffffffffee</Data>
-        </Item>
-      </Add>
-<Add>
-        <CmdID>10011</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DeviceCompliance/SSO/EKU</LocURI>
-          </Target>
-          <Data>1.3.6.1.5.5.7.3.2</Data>
-        </Item>
-      </Add>
-
-```
-
-## Proxy settings
-
-**Example:** set proxy 
-
-```
-Manual
-      <Add>
-        <CmdID>$CmdID$</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/Proxy/Manual/Server</LocURI>
-          </Target>
-          <Data>192.168.0.100:8888</Data>
-        </Item>
-      </Add>
- 
-  AutoConfigUrl
-      <Add>
-        <CmdID>$CmdID$</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/Proxy/AutoConfigUrl</LocURI>
-          </Target>
-          <Data>HelloWorld.com</Data>
-        </Item>
-      </Add>
-      ```
-
-## NRPT name resolution
-
-**Example:** FQDN match with DNS server
-
-```
-<Add>
-        <CmdID>10016</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/2/DomainName</LocURI>  
-          </Target>
-          <Data>finance.contoso.com</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10017</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/2/DnsServers</LocURI>  
-          </Target>
-          <Data>192.168.0.11,192.168.0.12</Data>
-        </Item>
-      </Add>
-```
-
-**Example:** FQDN match with proxy server
-
-```
-<Add>
-        <CmdID>10016</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/3/DomainName</LocURI>  
-          </Target>
-          <Data>finance.contoso.com</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10017</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/3/WebProxyServers</LocURI>  
-          </Target>
-          <Data>192.168.0.11:8080</Data>
-        </Item>
-      </Add>
-```
-
-## DNS suffix name resolution
-
-**Example:** DNS suffix match with DNS server
-
-```
-<Add>
-        <CmdID>10013</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/DomainName</LocURI>  
-          </Target>
-          <Data>.contoso.com</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10014</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/DnsServers</LocURI>  
-          </Target>
-          <Data>192.168.0.11,192.168.0.12</Data>
-        </Item>
-      </Add>
-```
-
-**Example:** DNS suffix match with proxy server
-
-```
-<Add>
-        <CmdID>10013</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/DomainName</LocURI>  
-          </Target>
-          <Data>.contoso.com</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10015</CmdID>
-        <Item>
-          <Target>
-<LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/WebProxyServers</LocURI>  
-          </Target>
-          <Data>192.168.0.100:8888</Data>
-        </Item>
-      </Add>
-```
-
-## Persistent name resolution
-
-**Example:** persistent name resolution
-
-```
-<Add>
-        <CmdID>10010</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/Persistent</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">bool</Format>
-          </Meta>
-          <Data>true</Data>
-        </Item>
-      </Add>
-```
-
-## App trigger
-
-**Example:** set Internet Explorer and Microsoft Edge to trigger VPN
-
-```
-<!-- Internet Explorer -->
-      <Add>
-        <CmdID>10013</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/0/App/Id</LocURI>
-          </Target>
-          <Data>%PROGRAMFILES%\Internet Explorer\iexplore.exe</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10014</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/1/App/Id</LocURI>
-          </Target>
-          <Data>%PROGRAMFILES% (x86)\Internet Explorer\iexplore.exe</Data>
-        </Item>
-      </Add>
-      <!-- Edge -->
-      <Add>
-        <CmdID>10015</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/2/App/Id</LocURI>
-          </Target>
-          <Data>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Data>
-        </Item>
-      </Add>
-```
-
-## Name trigger
-
-**Example:** set domain name rule to trigger VPN
-
-```
-<Add>
-        <CmdID>10010</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/AutoTrigger</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">bool</Format>
-          </Meta>
-          <Data>true</Data>
-        </Item>
-      </Add>
-```
-
-## Always On
-
-Always On cannot be set with force tunnel.
-
-**Example:** set Always On.
-
-```
-<Add>
-        <CmdID>$CmdID$</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AlwaysOn</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">bool</Format>
-          </Meta>
-          <Data>true</Data>
-        </Item>
-      </Add>
-```
-
-## Trusted network detection
-
-**Example:** configure trusted networks 
-
-```
-      <Add>
-        <CmdID>$CmdID$</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/TrustedNetworkDetection</LocURI>
-          </Target>
-          <Data>Adatum.com</Data>
-        </Item>
-      </Add>
-```
-
-## LockDown
-
-For built-in VPN, Lockdown VPN is only available for the Internet Key Exchange version 2 (IKEv2) connection type.
-
-**Example:** set a LockDown profile. 
-
-```
-<Add>
-        <CmdID>$CmdID$</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/Lockdown</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">bool</Format>
-          </Meta>
-          <Data>true</Data>
-        </Item>
-      </Add>
-```
-
-## Windows Information Protection
-
-If you are using Windows Information Protection (WIP) (formerly known as Enterprise Data Protection), then you should configure VPN first before you configure WIP policies.
-
-**Example:** provide enterprise ID to connect VPN profile with WIP policy
-
-```
-<Add>
-      <CmdID>$CmdID$</CmdID>
-      <Item>
-        <Target>
-          <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/EDPModeID</LocURI>
-        </Target>
-        <Data>corp.contoso.com</Data>
-      </Item>
-    </Add>
-```
-
-## Traffic filters
-
-**Example:** traffic filter for desktop app
-
-```
-<Add>
-        <CmdID>10013</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/TrafficFilterList/0/App/Id</LocURI>
-          </Target>
-          <Data>%ProgramFiles%\Internet Explorer\iexplore.exe</Data>
-        </Item>
-      </Add>
-```
-
-**Example:** traffic filter for UWP app
-
-```
-<Add>
-        <CmdID>10014</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/TrafficFilterList/1/App/Id</LocURI>  
-          </Target>
-          <Data>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Data>
-        </Item>
-      </Add>
-```
-
-
- 
+![Paste your ProfileXML in OMA-URI Setting value field](images/vpn-profilexml-intune.png)
 
 ## Learn more
 

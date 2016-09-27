@@ -32,7 +32,7 @@ A VPN profile configured with LockDown secures the device to only allow network 
 
 Deploy this feature with caution as the resultant connection will not be able to send or receive any network traffic without the VPN being connected. 
 
-Currently, this can only be configured in [custom XML in the ProfileXML node](vpn-profile-options.md). 
+
 
 ## Windows Information Protection (WIP) integration with VPN
 
@@ -49,7 +49,7 @@ The value of the **EdpModeId** is an Enterprise ID. The networking stack will lo
 
 Additionally, when connecting with WIP, the admin does not have to specify AppTriggerList and TrafficFilterList rules separately in this profile (unless more advanced configuration is needed) because the WIP policies and App lists automatically take effect.
 
-Currently, this can only be configured in [custom XML in the ProfileXML node](vpn-profile-options.md).
+
 
 ## Traffic filters
 

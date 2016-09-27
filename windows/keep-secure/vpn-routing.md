@@ -15,7 +15,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Network routes are required to forward traffic across the VPN interface. One of the most important decision points for VPN configuration is whether you want to send all the data through VPN (*force tunnel*) or only some data through the VPN (*split tunnel*). This decision impacts the configuration and the capacity planning, as well as security expectations from the connection. 
+Network routes are required for the stack to understand which interface to use for outbound traffic. One of the most important decision points for VPN configuration is whether you want to send all the data through VPN (*force tunnel*) or only some data through the VPN (*split tunnel*). This decision impacts the configuration and the capacity planning, as well as security expectations from the connection. 
 
 ## Split tunnel configuration
 
@@ -29,8 +29,9 @@ For each route item in the list the following can be specified:
 - **Prefix size**: VPNv2//*ProfileName*/RouteList//*routeRowId*/Prefix
 - **Exclusion route**: VPNv2//*ProfileName*/RouteList//*routeRowId*/ExclusionRoute
    
-   Windows VPN platform now supports the ability to specify exclusion routes that specifically should not go over the physical interface. Currently, this can only be configured in [custom XML in the ProfileXML node](vpn-profile-options.md). 
+   Windows VPN platform now supports the ability to specify exclusion routes that specifically should not go over the physical interface. 
 
+Routes can also be added at connect time through the server for UWP VPN apps.  
 
 ## Force tunnel configuration
 

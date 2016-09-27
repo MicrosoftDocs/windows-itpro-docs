@@ -36,12 +36,17 @@ You can configure a domain name-based rule so that a specific domain name trigge
  
 Name-based auto-trigger can be configured using the VPNv2//*ProfileName*/DomainNameInformationList/dniRowId/AutoTrigger setting in the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
 
-Domain names can even be configured such that VPN must be used to access that resource. If VPN is not connected, that resource will be inaccessible if the persistent node is configured to be true.
+There are four types of name-based triggers:
+
+- Short name: for example, if **HRweb** is configured as a trigger and the stack sees a DNS resolution request for **HRweb**, the VPN will be triggered.
+- Fully-qualified domain name (FQDN): for example, if **HRweb.corp.contoso.com** is configured as a trigger and the stack sees a DNS resolution request for **HRweb.corp.contoso.com**, the VPN will be triggered.
+- Suffix: for example, if **.corp.contoso.com** is configured as a trigger and the stack sees a DNS resolution request with a matching suffix (such as **HRweb.corp.contoso.com**), the VPN will be triggered. For any short name resolution, VPN will be triggered and the DNS server will be queried for the *ShortName*.**corp.contoso.com**.
+- All: if used, all DNS resolution should trigger VPN.
 
 
 ## Always On
 
-Always On is a new feature in Windows 10 which enables the active VPN profile to connect automatically on the following triggers: 
+Always On is a feature in Windows 10 which enables the active VPN profile to connect automatically on the following triggers: 
 
 - User sign-in 
 - Network change 
@@ -49,7 +54,6 @@ Always On is a new feature in Windows 10 which enables the active VPN profile to
 
 When the trigger occurs, VPN tries to connect. If an error occurs or any user input is needed, the user is shown a toast notification for additional interaction.
 
-Currently, this can only be configured in [custom XML in the ProfileXML node](vpn-profile-options.md). 
 
 When a device has multiple profiles with Always On triggers, the user can specify the active profile in **Settings** > **Network & Internet** > **VPN** > *VPN profile* by selecting the **Let apps automatically use this VPN connection** checkbox. By default, the first MDM-configured profile is marked as **Active**. 
 
@@ -59,7 +63,6 @@ This feature configures the VPN such that it would not get triggered if a user i
 
 Trusted network detection  can be configured using the VPNv2//*ProfileName*/TrustedNetworkDetection setting in the [VPNv2 CCSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
 
-Currently, this can only be configured in [custom XML in the ProfileXML node](vpn-profile-options.md).
 
 ## Configure app-triggered VPN
 
