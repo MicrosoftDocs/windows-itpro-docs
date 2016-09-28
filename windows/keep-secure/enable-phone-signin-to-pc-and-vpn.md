@@ -6,7 +6,7 @@ ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerMS
-redirect_url: /hello-enable-phone-signin
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/keep-secure/hello-enable-phone-signin
 ---
 
 # Enable phone sign-in to PC or VPN

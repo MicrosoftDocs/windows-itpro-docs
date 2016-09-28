@@ -8,7 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
-redirect_url: /hello-biometrics-in-enterprise
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/keep-secure/hello-biometrics-in-enterprise
 ---
 
 # Windows Hello biometrics in the enterprise

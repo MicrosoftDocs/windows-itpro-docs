@@ -70,7 +70,12 @@ If you only had a biometric sign-in configured and, for any reason, were unable 
 
 ## Related topics
 
-[Manage identity verification using Windows Hello for Business](manage-identity-verification-using-microsoft-passport.md)
-
-[Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md)
- 
+- [Manage identity verification using Windows Hello for Business](hello-manage-identity-verification.md)
+- [How Windows Hello for Business works](hello-how-it-works.md)
+- [Implement Windows Hello for Business in your organization](hello-implement-in-organization.md)
+- [Enable phone sign-in to PC or VPN](hello-enable-phone-signin.md)
+- [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
+- [Windows Hello and password changes](hello-and-password-changes.md)
+- [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
+- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+- [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)

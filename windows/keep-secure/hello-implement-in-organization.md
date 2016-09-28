@@ -300,6 +300,8 @@ The following table lists the MDM policy settings that you can configure for Win
  
 ## Prerequisites
 
+To deploy Windows Hello for Business, in some modes you must add Windows Server 2016 domain controllers to your Active Directory environment, but you don’t have to replace or remove your existing Active Directory servers — the servers required for Windows Hello for Business build on and add capability to your existing infrastructure. You don’t have to change the domain or forest functional level, and you can either add on-premises servers or use Azure Active Directory to deploy Windows Hello for Business in your network. 
+
 You’ll need this software to set Windows Hello for Business policies in your enterprise.
 <table>
 <colgroup>
@@ -369,21 +371,12 @@ The PIN is managed using the same Windows Hello for Business policies that you c
 
 ## Related topics
 
-[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md)
-
-[Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)
-
-[Manage identity verification using Windows Hello for Business](manage-identity-verification-using-microsoft-passport.md)
-
-[Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md) 
-
-[Prepare people to use Windows Hello](prepare-people-to-use-microsoft-passport.md)
-
-[Windows Hello and password changes](microsoft-passport-and-password-changes.md)
-
-[Windows Hello errors during PIN creation](microsoft-passport-errors-during-pin-creation.md)
-
-[Event ID 300 - Windows Hello successfully created](passport-event-300.md)
-
-[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md)
- 
+- [Manage identity verification using Windows Hello for Business](hello-manage-identity-verification.md)
+- [How Windows Hello for Business works](hello-how-it-works.md)
+- [Enable phone sign-in to PC or VPN](hello-enable-phone-signin.md)
+- [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
+- [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
+- [Windows Hello and password changes](hello-and-password-changes.md)
+- [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
+- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+- [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)

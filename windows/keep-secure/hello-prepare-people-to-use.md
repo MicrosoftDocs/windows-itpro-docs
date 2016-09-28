@@ -97,20 +97,13 @@ You simply connect to VPN as you normally would. If the phone's certificates are
 
 ## Related topics
 
-[Manage identity verification using Windows Hello for Business](manage-identity-verification-using-microsoft-passport.md)
-
-[Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md)
-
-[Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md) 
-
-[Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)
-
-[Windows Hello and password changes](microsoft-passport-and-password-changes.md)
-
-[Windows Hello errors during PIN creation](microsoft-passport-errors-during-pin-creation.md)
-
-[Event ID 300 - Windows Hello successfully created](passport-event-300.md)
-
-[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md) 
-
+- [Manage identity verification using Windows Hello for Business](hello-manage-identity-verification.md)
+- [How Windows Hello for Business works](hello-how-it-works.md)
+- [Implement Windows Hello for Business in your organization](hello-implement-in-organization.md)
+- [Enable phone sign-in to PC or VPN](hello-enable-phone-signin.md)
+- [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
+- [Windows Hello and password changes](hello-and-password-changes.md)
+- [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
+- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+- [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
 

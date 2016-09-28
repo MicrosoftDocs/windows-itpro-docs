@@ -1,6 +1,7 @@
 # [Keep Windows 10 secure](index.md)
 ## [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md)
 ## [Manage identity verification using Windows Hello for Business](hello-manage-identity-verification.md)
+### [How Windows Hello for Business works](hello-how-it-works.md)
 ### [Implement Windows Hello for Business in your organization](hello-implement-in-organization.md)
 ### [Enable phone sign-in to PC or VPN](hello-enable-phone-signin.md)
 ### [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)

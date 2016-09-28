@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
-redirect_url: /hello-implement-in-organization
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/keep-secure/hello-implement-in-organization
 ---
 
 # Implement Windows Hello for Business in your organization
@@ -299,6 +299,8 @@ The following table lists the MDM policy settings that you can configure for Win
 > If policy is not configured to explicitly require letters or special characters, users will be restricted to creating a numeric PIN.
  
 ## Prerequisites
+
+To deploy Windows Hello for Business, in some modes you must add Windows Server 2016 domain controllers to your Active Directory environment, but you don’t have to replace or remove your existing Active Directory servers — the servers required for Windows Hello for Business build on and add capability to your existing infrastructure. You don’t have to change the domain or forest functional level, and you can either add on-premises servers or use Azure Active Directory to deploy Windows Hello for Business in your network. 
 
 You’ll need this software to set Windows Hello for Business policies in your enterprise.
 <table>

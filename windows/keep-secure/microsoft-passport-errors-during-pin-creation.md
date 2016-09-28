@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
-redirect_url: /hello-errors-during-pin-creation
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/keep-secure/hello-errors-during-pin-creation
 ---
 
 # Windows Hello errors during PIN creation

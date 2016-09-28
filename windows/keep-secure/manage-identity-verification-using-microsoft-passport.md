@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 author: jdeckerMS
-redirect_url: /hello-manage-identity-verification
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/keep-secure/hello-manage-identity-verification
 ---
 # Manage identity verification using Windows Hello for Business
 
@@ -37,7 +37,14 @@ After an initial two-step verification of the user during enrollment, Hello is s
 
 As an administrator in an enterprise or educational organization, you can create policies to manage Hello use on Windows 10-based devices that connect to your organization.
 
+ ## Biometric sign-in
  
+ Windows Hello provides reliable, fully integrated biometric authentication based on facial recognition or fingerprint matching. Hello uses a combination of special infrared (IR) cameras and software to increase accuracy and guard against spoofing. Major hardware vendors are shipping devices that have integrated Windows Hello-compatible cameras, and fingerprint reader hardware can be used or added to devices that don’t currently have it. On devices that support Windows Hello, an easy biometric gesture unlocks users’ credentials.
+ 
+ - **Facial recognition**. This type uses special cameras that see in IR light, which allows them to reliably tell the difference between a photograph or scan and a living person. Several vendors are shipping external cameras that incorporate this technology, and major laptop manufacturers are incorporating it into their devices, as well. 
+- **Fingerprint recognition**. This type uses a capacitive fingerprint sensor to scan your fingerprint. Fingerprint readers have been available for Windows computers for years, but the current generation of sensors is significantly more reliable and less error-prone. Most existing fingerprint readers (whether external or integrated into laptops or USB keyboards) work with Windows 10. 
+
+Biometric data used to implement Windows Hello is stored securely on the local device only. It doesn’t roam and is never sent to external devices or servers. Because Windows Hello only stores biometric identification data on the device, there’s no single collection point an attacker can compromise to steal biometric data. 
 
 
 ## The difference between Windows Hello and Windows Hello for Business
@@ -67,8 +74,9 @@ Hello also enables Windows 10 Mobile devices to be used as [a remote credential
 > [!NOTE]
 >  Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
 
- 
-## How Windows Hello for Business works: key points
+
+
+### How Windows Hello for Business works : Key points
 
 -   Hello credentials are based on certificate or asymmetrical key pair. Hello credentials are bound to the device, and the token that is obtained using the credential is also bound to the device.
 -   Identify provider (such as Active Directory, Azure AD, or a Microsoft account) validates user identity and maps Hello's public key to a user account during the registration step.
@@ -79,6 +87,7 @@ Hello also enables Windows 10 Mobile devices to be used as [a remote credential
 -   Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
 -   Certificate private keys can be protected by the Hello container and the Hello gesture.
 
+For a detailed explanation, see [How Windows Hello for Business works](hello-how-it-works.md).
 
 ## Comparing key-based and certificate-based authentication
 
@@ -109,19 +118,13 @@ When identity providers such as Active Directory or Azure AD enroll a certificat
 
 ## Related topics
 
-[Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md)
-
-[Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md)
-
-[Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)
-
-[Prepare people to use Windows Hello](prepare-people-to-use-microsoft-passport.md)
-
-[Windows Hello and password changes](microsoft-passport-and-password-changes.md)
-
-[Windows Hello errors during PIN creation](microsoft-passport-errors-during-pin-creation.md)
-
-[Event ID 300 - Windows Hello successfully created](passport-event-300.md)
-
-[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md)
- 
+- [Manage identity verification using Windows Hello for Business](hello-manage-identity-verification.md)
+- [How Windows Hello for Business works](hello-how-it-works.md)
+- [Implement Windows Hello for Business in your organization](hello-implement-in-organization.md)
+- [Enable phone sign-in to PC or VPN](hello-enable-phone-signin.md)
+- [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
+- [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
+- [Windows Hello and password changes](hello-and-password-changes.md)
+- [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
+- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+- [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)

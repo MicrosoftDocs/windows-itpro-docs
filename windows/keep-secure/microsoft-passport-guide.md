@@ -8,7 +8,7 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: security
 author: challum
-localizationpriority: high
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/keep-secure/hello-implement-in-organization
 ---
 
 # Microsoft Passport guide

@@ -12,6 +12,12 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## Octoboer 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| Microsoft Passport guide | Content merged into [Manage identity verification using Windows Hello for Business](hello-manage-identity-verification.md) topics |
+
 ## September 2016
 
 | New or changed topic | Description |

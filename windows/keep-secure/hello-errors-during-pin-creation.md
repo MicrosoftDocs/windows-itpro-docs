@@ -197,43 +197,37 @@ If the error occurs again, check the error code against the following table to s
 ## Errors with unknown mitigation
 For errors listed in this table, contact Microsoft Support for assistance.
 
-| Hex         | Cause                                                                                                 |
-|-------------|-------------------------------------------------------------------------------------------------------|
-| 0x80072f0c  | Unknown                                                                                               |
+| Hex         | Cause     |
+|-------------|---------|
+| 0x80072f0c  | Unknown    |
 | 0x80070057 | Invalid parameter or argument is passed |
 | 0x80090027  | Caller provided wrong parameter. If third-party code receives this error they must change their code. |
-| 0x8009002D  | NTE\_INTERNAL\_ERROR                                                                                  |
-| 0x80090020  | NTE\_FAIL                                                                                             |
-| 0x801C0001  | ​ADRS server response is not in valid format                                                          |
-| 0x801C0002  | Server failed to authenticate the user                                                                |
-| 0x801C0006  | Unhandled exception from server                                                                       |
-| 0x801C000C  | Discovery failed                                                                                      |
-| 0x801C001B  | ​The device certificate is not found                                                                  |
-| 0x801C000B  | Redirection is needed and redirected location is not a well known server                              |
-| 0x801C0019  | ​The federation provider client configuration is empty                                                |
-| 0x801C001A  | The DRS endpoint in the federation provider client configuration is empty                             |
-| 0x801C0013  | Tenant ID is not found in the token                                                                   |
-| 0x801C0014  | User SID is not found in the token                                                                    |
-| 0x801C03F1  | There is no UPN in the token                                                                          |
-| 0x801C03F0  | ​There is no key registered for the user                                                              |
-| 0x801C03F1  | ​There is no UPN in the token                                                                         |
-| ​0x801C044C | There is no core window for the current thread                                                        |
+| 0x8009002D  | NTE\_INTERNAL\_ERROR   |
+| 0x80090020  | NTE\_FAIL     |
+| 0x801C0001  | ​ADRS server response is not in valid format    |
+| 0x801C0002  | Server failed to authenticate the user   |
+| 0x801C0006  | Unhandled exception from server    |
+| 0x801C000C  | Discovery failed      |
+| 0x801C001B  | ​The device certificate is not found    |
+| 0x801C000B  | Redirection is needed and redirected location is not a well known server   |
+| 0x801C0019  | ​The federation provider client configuration is empty    |
+| 0x801C001A  | The DRS endpoint in the federation provider client configuration is empty   |
+| 0x801C0013  | Tenant ID is not found in the token    |
+| 0x801C0014  | User SID is not found in the token       |
+| 0x801C03F1  | There is no UPN in the token       |
+| 0x801C03F0  | ​There is no key registered for the user   |
+| 0x801C03F1  | ​There is no UPN in the token          |
+| ​0x801C044C | There is no core window for the current thread     |
  
 
 ## Related topics
 
-[Manage identity verification using Windows Hello for Business](manage-identity-verification-using-microsoft-passport.md)
-
-[Implement Windows Hello for Business in your organization](implement-microsoft-passport-in-your-organization.md)
-
-[Enable phone sign-in to PC or VPN](enable-phone-signin-to-pc-and-vpn.md) 
-
-[Why a PIN is better than a password](why-a-pin-is-better-than-a-password.md)
-
-[Prepare people to use Windows Hello](prepare-people-to-use-microsoft-passport.md)
-
-[Windows Hello and password changes](microsoft-passport-and-password-changes.md)
-
-[Event ID 300 - Windows Hello successfully created](passport-event-300.md)
-
-[Windows Hello biometrics in the enterprise](windows-hello-in-enterprise.md) 
+- [Manage identity verification using Windows Hello for Business](hello-manage-identity-verification.md)
+- [How Windows Hello for Business works](hello-how-it-works.md)
+- [Implement Windows Hello for Business in your organization](hello-implement-in-organization.md)
+- [Enable phone sign-in to PC or VPN](hello-enable-phone-signin.md)
+- [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
+- [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
+- [Windows Hello and password changes](hello-and-password-changes.md)
+- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+- [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
