@@ -841,7 +841,6 @@
 ###### [Verify That Network Traffic Is Authenticated](verify-that-network-traffic-is-authenticated.md)
 ## [Enterprise security guides](windows-10-enterprise-security-guides.md)
 ### [Control the health of Windows 10-based devices](protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md)
-### [Microsoft Passport guide](microsoft-passport-guide.md)
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 ### [Windows 10 security overview](windows-10-security-guide.md)
 ## [Change history for Keep Windows 10 secure](change-history-for-keep-windows-10-secure.md)
