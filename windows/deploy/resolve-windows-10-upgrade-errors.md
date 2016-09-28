@@ -45,15 +45,16 @@ WIM = Windows image (Microsoft)
 Setup will return two codes:
 
 1. A result code, corresponding to a specific Win32 error.
-2. An extend code, corresponding to the phase and the operation when a failure occurred.
+2. An extend code, representing the phase when a failure occurred.
+        - The extend code contains information about both the *phase* in which an error occurred, and the *operation* that was being performed when the error occurred.  
 
-For example, a result code of **0xC1900101** with an extend code of **0x4000D** will be returned as: **0xC1900101 - 0x4000D**
+>For example, a result code of **0xC1900101** with an extend code of **0x4000D** will be returned as: **0xC1900101 - 0x4000D**. In this case, the extend code 0x4000D can be evaluated as representing a problem during phase 4 (0x4) with data migration (000D). A list of extend codes and the associated phase and operation is provided below.
 
-Note: If only a single code is returned, this can be because a tool is being used that does not capture the extend code, for example the [Windows 10 Upgrade Assistant](https://support.microsoft.com/en-us/kb/3159635).
+Note: If only a result code is returned, this can be because a tool is being used that was not able to capture the extend code. For example, if you are using the [Windows 10 Upgrade Assistant](https://support.microsoft.com/en-us/kb/3159635) then only a result code might be returned.
 
 ### Extend codes
 
-The following tables display the phase and operation assoicated with an extend code:
+The following tables provide the corresponding phase and operation for values of an extend code:
 
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: phase</B></TD>
@@ -114,30 +115,41 @@ The following tables display the phase and operation assoicated with an extend c
 </TR>
 </TABLE>
 
-For example: A code of 0x**4**</font>00**0D**</font> is a problem during **phase 4** with the **data migration** operation (**4** = SP_EXECUTION_OOBE_BOOT, **0D** = SP_EXECUTION_OP_MIGRATE_DATE).
-
 ## Log files
 
-Various log files are created during each phase of the upgrade process. These log files are essential for detailed troubleshooting of upgrade problems. The most useful log is **setupact.log**, which is located in a different folder depending on the phase in which a problem occurred with the upgrade process. Recall that you can determine the phase from 
-
-See the following table.
+Various log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. The most useful log is **setupact.log**, which is located in a different folder depending on the phase in which a problem occurred with the upgrade process. Recall that you can determine the phase from the extend code. The following table describes some log files and how to use them for troubleshooting purposes:
 
 <TABLE>
 <TR>
-<td BGCOLOR="#a0e4fa"><B>Log file<td BGCOLOR="#a0e4fa"><B>Description<td BGCOLOR="#a0e4fa"><B>Location<td BGCOLOR="#a0e4fa"><B>When to use
-</TR>
-<TR><TD>setupact.log<TD>Contains information about setup actions during the installation.<TD>Down-Level phase: $Windows.~BT\Sources\Panther<TD>All down-level failures and starting point for rollback investigations. 
-</TR>
-<TR><TD>setuperr.log<TD>Contains information about setup errors during the installation.<TD>Same location as setupact.log
-</TR>
-<TR><TD>Setupmem.dmp<TD>If OS bugchecks during upgrade, setup will attempt to extract a mini-dump.<TD>$Windows.~BT\Sources\Rollback
-</TR>
-<TR><TD>miglog.xml<TD>Contains information about the user directory structure. This information includes security identifiers (SIDs).<TD>Windows\Panther
-</TR>
-<TR><TD>Appraiser XML logs<TD>Contains application compatibility information.<TD>$Windows.~BT\Sources\Panther
-</TR>
-<TR><TD>BlueBox.log<TD>Contains information communication between setup.exe and Windows Update.<TD>Windows\Logs\Mosetup</TD>
-</TR>
+<td BGCOLOR="#a0e4fa"><B>Log file<td BGCOLOR="#a0e4fa"><B>Phase: Location<td BGCOLOR="#a0e4fa"><B>Description<td BGCOLOR="#a0e4fa"><B>When to use
+
+<TR><TD rowspan=5>setupact.log<TD>Down-Level:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the downlevel phase. <TD>All down-level failures and starting point for rollback investigations.<BR> This is the most important log for diagnosing setup issues.
+<TR><TD>OOBE:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about actions during the OOBE phase.<TD>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.
+<TR><TD>Rollback:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about actions during rollback.<TD>Investigating generic rollbacks - 0xC1900101.
+<TR><TD>Pre-initialization (prior to downlevel):<BR>$Windows.~BT\Sources\Panther<TD>Contains information about initializing setup.<TD>If setup fails to launch.
+<TR><TD>Post-upgrade (after OOBE):<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the installation.<TD>Investigate post-upgrade related issues.
+
+<TR><TD>setuperr.log<TD>Same as setupact.log<TD>Contains information about setup errors during the installation.<TD>Review all errors encountered during the installation phase.
+
+<TR><TD>miglog.xml<TD>Post-upgrade (after OOBE):<BR>Windows\Panther<TD>Contains information about what was migrated during the installation.<TD>Identify post upgrade data migration issues.
+
+<TR><TD>BlueBox.log<TD>Down-Level:<BR>Windows\Logs\Mosetup<TD>Contains information communication between setup.exe and Windows Update.<TD>Use during WSUS and WU down-level failures or for 0xC1900107.
+
+<TR><TD>Supplemental rollback logs:<BR>
+Setupmem.dmp<BR>
+setupapi.dev.log<BR>
+Event logs (*.evtx)
+
+
+<TD>$Windows.~BT\Sources\Rollback<TD>Additional logs collected during rollback.<TD>
+Setupmem.dmp: If OS bugchecks during upgrade, setup will attempt to extract a mini-dump.<BR>
+Setupapi: Device install issues – 0x30018<BR>
+Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
+
+
+
+
+
 </TABLE>
 
 ## Common error codes and resolution procedures
