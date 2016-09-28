@@ -29,10 +29,10 @@ The Windows Setup application is used to upgrade a computer to Windows 10, or to
         - Example error codes: 0x30018, 0x3000D
 4. **Second boot phase**: Final settings are applied. This is also called the **OOBE boot phase**.
         - Example error: 0x4000D, 0x40017
-5. **Rollback phase**: This phase occurs if upgrade is unsuccessful.
+5. **Uninstall phase**: This phase occurs if upgrade is unsuccessful.
         - Example error: 0x50011, 0x50012
 
-**Figure 1**: Phases of a successful Windows 10 upgrade (rollback is not shown):
+**Figure 1**: Phases of a successful Windows 10 upgrade (uninstall is not shown):
 
 ![Upgrade process](images/upgrade-process.png)
 
@@ -118,29 +118,25 @@ For example: A code of 0x**4**</font>00**0D**</font> is a problem during **phase
 
 ## Log files
 
-During each phase of the upgrade process, setup log files are created in various locations. These log files can be very useful in troubleshooting upgrade problems.
+Various log files are created during each phase of the upgrade process. These log files are essential for detailed troubleshooting of upgrade problems. The most useful log is **setupact.log**, which is located in a different folder depending on the phase in which a problem occurred with the upgrade process. Recall that you can determine the phase from 
+
+See the following table.
 
 <TABLE>
-<TR><td BGCOLOR="#a0e4fa">Log file</TD><td BGCOLOR="#a0e4fa">Description</TD><td BGCOLOR="#a0e4fa">Location</TD>
+<TR>
+<td BGCOLOR="#a0e4fa"><B>Log file<td BGCOLOR="#a0e4fa"><B>Description<td BGCOLOR="#a0e4fa"><B>Location<td BGCOLOR="#a0e4fa"><B>When to use
 </TR>
-<TR><TD>setupact.log</TD><TD>Contains information about setup actions during the installation.<BR>
-<P>This is the most important log for diagnosing setup issues.</TD><TD>
-**Down-Level phase**: $Windows.~BT\Sources\Panther<BR>
-**First & second boot phase**: $Windows.~BT\Sources\Panther\UnattendGC<BR>
-**Rollback phase**: $Windows.~BT\Sources\Rollback<BR>
-**Pre-initialization**: Windows<BR>
-**Post-upgrade**: Windows\Panther
-</TD>
+<TR><TD>setupact.log<TD>Contains information about setup actions during the installation.<TD>Down-Level phase: $Windows.~BT\Sources\Panther<TD>All down-level failures and starting point for rollback investigations. 
 </TR>
-<TR><TD>setuperr.log</TD><TD>Contains information about setup errors during the installation.</TD><TD>Same location as setupact.log</TD>
+<TR><TD>setuperr.log<TD>Contains information about setup errors during the installation.<TD>Same location as setupact.log
 </TR>
-<TR><TD>Setupmem.dmp</TD><TD>If OS bugchecks during upgrade, setup will attempt to extract a mini-dump.</TD><TD>$Windows.~BT\Sources\Rollback</TD>
+<TR><TD>Setupmem.dmp<TD>If OS bugchecks during upgrade, setup will attempt to extract a mini-dump.<TD>$Windows.~BT\Sources\Rollback
 </TR>
-<TR><TD>miglog.xml</TD><TD>Contains information about the user directory structure. This information includes security identifiers (SIDs).</TD><TD>Windows\Panther</TD>
+<TR><TD>miglog.xml<TD>Contains information about the user directory structure. This information includes security identifiers (SIDs).<TD>Windows\Panther
 </TR>
-<TR><TD>Appraiser XML logs</TD><TD>Contains application compatibility information.</TD><TD>$Windows.~BT\Sources\Panther</TD>
+<TR><TD>Appraiser XML logs<TD>Contains application compatibility information.<TD>$Windows.~BT\Sources\Panther
 </TR>
-<TR><TD>BlueBox.log</TD><TD>Contains information communication between setup.exe and Windows Update.</TD><TD>Windows\Logs\Mosetup</TD>
+<TR><TD>BlueBox.log<TD>Contains information communication between setup.exe and Windows Update.<TD>Windows\Logs\Mosetup</TD>
 </TR>
 </TABLE>
 
@@ -499,6 +495,10 @@ Use the Media Creation tool and create an ISO and then start the upgrade of the 
 
 
 </TABLE>
+
+## Appendix A: Example setupact.log
+
+
 
 ## Related topics
 
