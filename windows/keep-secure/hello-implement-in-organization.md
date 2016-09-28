@@ -406,7 +406,7 @@ Which rollout method you choose depends on several factors:
 -** What your current infrastructure looks like**. The individual version of Windows Hello doesn’t require changes to your Active Directory environment, but to support Windows Hello for Business, you may need a compatible MDM system. Depending on the size and composition of your network, mobile enrollment and management services deployment may be a major project in its own right.
 - **Your plans for the cloud**. If you’re already planning a move to the cloud, Azure AD eases the process of Windows Hello for Business deployment, because you can use Azure AD as an IDP alongside your existing on-premises AD DS setup without making significant changes to your on-premises environment. Future versions of Windows Hello for Business will support the ability to simultaneously register devices that are already members of an on-premises AD DS domain in an Azure AD partition so that they use Windows Hello for Business from the cloud. Hybrid deployments that combine AD DS with Azure AD give you the ability to keep machine authentication and policy management against your local AD DS domain while providing the full set of Windows Hello for Business services (and Microsoft Office 365 integration) for your users. If you plan to use on-premises AD DS only, then the design and configuration of your on-premises environment will dictate what kind of changes you may need to make.
 
-## How to use Windows Hello for Business with Azure Ad
+## How to use Windows Hello for Business with Azure Active Directory
 
 There are three scenarios for using Windows Hello for Business in Azure AD–only organizations: 
 
