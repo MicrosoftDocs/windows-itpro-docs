@@ -270,10 +270,10 @@ Fonts that are included in Windows but that are not stored on the local device c
 
 If you're running Windows 10, version 1607 or Windows Server 2016, disable the Group Policy: **Computer Configuration** > **Administrative Templates** > **Network** > **Fonts** > **Enable Font Providers**.
 
+If you're running Windows 10, version 1507 or Windows 10, version 1511, create a REG\_DWORD registry setting called **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters**, with a value of 1.
+
 > [!NOTE]  
 > After you apply this policy, you must restart the device for it to take effect.
-
-If you're running Windows 10, version 1507 or Windows 10, version 1511, create a REG\_DWORD registry setting called **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters**, with a value of 1.
 
 
 ### <a href="" id="bkmk-previewbuilds"></a>6. Insider Preview builds
