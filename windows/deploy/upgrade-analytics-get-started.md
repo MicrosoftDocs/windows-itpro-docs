@@ -95,9 +95,14 @@ The compatibility update KB scans your computers and enables application usage t
 | **Operating System** | **KBs** |
 |----------------------|-----------------------------------------------------------------------------|
 | Windows 8.1          | [KB 2976978](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2976978)<br>Performs diagnostics on the Windows 8.1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues may be encountered when the latest Windows operating system is installed. <br>For more information about this KB, see <https://support.microsoft.com/kb/2976978><br>[KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513)<br>Provides updated configuration and definitions for compatibility diagnostics performed on the system.<br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br>NOTE: KB2976978 must be installed before you can download and install KB3150513.   |
-| Windows 7 SP1        | [KB2952664](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues may be encountered when the latest Windows operating system is installed. <br>For more information about this KB, see <https://support.microsoft.com/kb/2952664><br>[KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513)<br>Provides updated configuration and definitions for compatibility diagnostics performed on the system.<br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br>NOTE: KB2976978 must be installed before you can download and install KB3150513. |
+| Windows 7 SP1        | [KB2952664](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=KB2952664) <br>Performs diagnostics on the Windows 7 SP1 systems that participate in the Windows Customer Experience Improvement Program. These diagnostics help determine whether compatibility issues may be encountered when the latest Windows operating system is installed. <br>For more information about this KB, see <https://support.microsoft.com/kb/2952664><br>[KB 3150513](https://catalog.update.microsoft.com/v7/site/Search.aspx?q=3150513)<br>Provides updated configuration and definitions for compatibility diagnostics performed on the system.<br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br>NOTE: KB2952664 must be installed before you can download and install KB3150513. |
 
 IMPORTANT: Restart user computers after you install the compatibility update KBs for the first time.
+
+| **Site discovery** | **KB** |
+|----------------------|-----------------------------------------------------------------------------|
+| [Review site discovery](upgrade-analytics-review-site-discovery.md)         | [KB 3170106](https://support.microsoft.com/en-us/kb/3170106)<br>Site discovery requires July 2016 security update for Internet Explorer.   |
+
 
 ### Automate data collection
 
@@ -151,9 +156,19 @@ To run the Upgrade Analytics deployment script:
 
 3.  For troubleshooting, set isVerboseLogging to $true to generate log information that can help with diagnosing issues. By default, isVerboseLogging is set to $false. Ensure the Diagnostics folder is installed in the same directory as the script to use this mode.
 
-4.  Notify users if they need to restart their computers. By default, this is set to off.
+4.  To enable Internet Explorer data collection, set AllowIEData to IEDataOptIn. By default, AllowIEData is set to Disable. Then use one of the following options to determine what Internet Explorer data can be collected:
 
-5.  After you finish editing the parameters in RunConfig.bat, run the script as an administrator.
+    > *IEOptInLevel = 0 Internet Explorer data collection is disabled*
+    >
+    > *IEOptInLevel = 1 Data collection is enabled for sites in the Local intranet + Trusted sites + Machine local zones*
+    >
+    > *IEOptInLevel = 2 Data collection is enabled for sites in the Internet + Restricted sites zones*
+    >
+    > *IEOptInLevel = 3 Data collection is enabled for all sites*
+
+5.  Notify users if they need to restart their computers. By default, this is set to off.
+
+6.  After you finish editing the parameters in RunConfig.bat, run the script as an administrator.
 
 ## Seeing data from computers in Upgrade Analytics
 
