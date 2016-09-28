@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
-redirect_url: /hello-event-300/
+redirect_url: /hello-event-300
 ---
 
 # Event ID 300 - Windows Hello successfully created

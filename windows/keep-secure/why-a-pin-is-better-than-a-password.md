@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
-redirect_url: /hello-why-pin-is-better-than-password/
+redirect_url: /hello-why-pin-is-better-than-password
 ---
 
 # Why a PIN is better than a password

@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
-redirect_url: /hello-prepare-people-to-use/
+redirect_url: /hello-prepare-people-to-use
 ---
 
 # Prepare people to use Windows Hello
