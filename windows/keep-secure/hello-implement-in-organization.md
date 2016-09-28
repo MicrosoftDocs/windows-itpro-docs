@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
-redirect_url: /hello-implement-in-organization/
+localizationpriority: high
 ---
 
 # Implement Windows Hello for Business in your organization

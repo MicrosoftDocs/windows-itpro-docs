@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
-redirect_url: /hello-and-password-changes/
+localizationpriority: high
 ---
 # Windows Hello and password changes
 

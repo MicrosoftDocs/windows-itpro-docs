@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 author: jdeckerMS
-redirect_url: /hello-manage-identity-verification/
+localizationpriority: high
 ---
 # Manage identity verification using Windows Hello for Business
 

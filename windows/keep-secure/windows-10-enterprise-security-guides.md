@@ -34,10 +34,6 @@ Get proven guidance to help you better secure and protect your enterprise by usi
 <td align="left"><p>[Control the health of Windows 10-based devices](protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md)</p></td>
 <td align="left"><p>This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows 10-based devices.</p></td>
 </tr>
-<tr class="odd">
-<td align="left"><p>[Microsoft Passport guide](microsoft-passport-guide.md)</p></td>
-<td align="left"><p>This guide describes the new Windows Hello and Microsoft Passport technologies that are part of the Windows 10 operating system. It highlights specific capabilities of these technologies that help mitigate threats from conventional credentials and provides guidance about how to design and deploy these technologies as part of your Windows 10 rollout.</p></td>
-</tr>
 <tr class="even">
 <td align="left"><p>[Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)</p></td>
 <td align="left"><p>This guide provides a detailed description of the most important security features in the Windows 10 Mobile operating system—identity access and control, data protection, malware resistance, and app platform security.</p></td>

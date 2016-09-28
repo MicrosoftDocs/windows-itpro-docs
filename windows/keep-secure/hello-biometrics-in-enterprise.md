@@ -8,7 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
-redirect_url: /hello-biometrics-in-enterprise/
+localizationpriority: high
 ---
 
 # Windows Hello biometrics in the enterprise

@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
-redirect_url: /hello-errors-during-pin-creation/
+localizationpriority: high
 ---
 
 # Windows Hello errors during PIN creation
