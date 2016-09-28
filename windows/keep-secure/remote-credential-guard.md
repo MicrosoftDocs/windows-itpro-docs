@@ -35,7 +35,6 @@ The Remote Desktop client and server must meet the following requirements in ord
 - They must be running at least Windows 10, version 1607 or Windows Server 2016.
 - The Remote Desktop classic Windows app is required. The Remote Desktop Universal Windows Platform app doesn't support Remote Credential Guard.
 
-
 ## Enable Remote Credential Guard
 
 You must enable Remote Credential Guard on the target device by using the registry.
@@ -61,11 +60,12 @@ You can use Remote Credential Guard on the client device by setting a Group Poli
 1. From the Group Policy Management Console, go to **Computer Configuration** -> **Administrative Templates** -> **System** -> **Credentials Delegation**.
 2. Double-click **Restrict delegation of credentials to remote servers**.
 3. In the **Use the following restricted mode** box:
-    - If you want to require either [Restricted Admin mode](http://social.technet.microsoft.com/wiki/contents/articles/32905.how-to-enable-restricted-admin-mode-for-remote-desktop.aspx) or Remote Credential Guard, choose **Require Remote Credential Guard**. In this configuration, Remote Credential Guard is preferred, but it will use Restricted Admin mode (if supported) when Remote Credential Guard cannot be used.
+    - If you want to require either [Restricted Admin mode](http://social.technet.microsoft.com/wiki/contents/articles/32905.how-to-enable-restricted-admin-mode-for-remote-desktop.aspx) or Remote Credential Guard, choose **Prefer Remote Credential Guard**. In this configuration, Remote Credential Guard is preferred, but it will use Restricted Admin mode (if supported) when Remote Credential Guard cannot be used.
 
         > **Note:**  Neither Remote Credential Guard nor Restricted Admin mode will send credentials in clear text to the Remote Desktop server.
         
-    - If you want to allow Remote Credential Guard, choose **Prefer Remote Credential Guard**.
+    - If you want to require Remote Credential Guard, choose **Require Remote Credential Guard**. With this setting, a Remote Desktop connection will succeed only if the remote computer meets the [Hardware and software requirements](#hardware-and-software-requirements) listed earlier in this topic.
+    
 4. Click **OK**.
 
     ![Remote Credential Guard Group Policy](images/remote-credential-guard-gp.png)
