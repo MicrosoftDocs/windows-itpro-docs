@@ -153,21 +153,27 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 
 
 
-## Common errors
+## Common error codes
 
-A common result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the SafeOS phase. 0xC1900101 usually indicates that an incompatible driver is present, which can cause blue screens, system hangs, and unexpected reboots. 
+A common result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the SafeOS phase. 0xC1900101 usually indicates that an incompatible driver is present, which can cause blue screens, system hangs, and unexpected reboots. Analysis of all available supplemental log files is typically helpful in indentifying the incompatible driver. You can also attempt to run setup in the absence of drivers by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process. 
 
-Analysis of all available supplemental log files is typically helpful in indentifying the incompatible driver. You can also attempt to run setup in the absence of drivers by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process. The following general procedures can be used to diagnose a result code of 0xC1900101 during different phases of Windows Setup:
+<P>The following general procedures can be used to diagnose a result code of 0xC1900101 during different phases of Windows Setup:
 
-<TABLE border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
-<TR><TD colspan=2 align="left" valign="top"><B>0xC1900101 - 0x20017</B></TD>
+
+<TABLE border=1 cellspacing=0 cellpadding=0>
 <TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
 <TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt'><B>0xC1900101 - 0x20017</B>
+</TABLE>
+
+<P><TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt'>A driver has caused an illegal operation.
-<BR>Windows was not able to migrate the driver, resulting in a rollback of the operating system.</b>
+<BR>Windows was not able to migrate the driver, resulting in a rollback of the operating system.
 </TABLE>
 </TD>
+
 <TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt'><b>Mitigation</b>
@@ -179,16 +185,18 @@ Analysis of all available supplemental log files is typically helpful in indenti
 </TABLE>
 </TD>
 </TR>
+
+<TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt'><B>0xC1900101 - 0x30018</B>
 </TABLE>
 
-<P><TABLE border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
-<TR><TD colspan=2 align="left" valign="top"><B>0xC1900101 - 0x30018</B></TD>
-<TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
-<TABLE cellspacing=0 cellpadding=0>
+<P><TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt'>A device driver has stopped responding to setup.exe during the upgrade process.</b>
+<TR><TD style='padding:0in 4pt 0in 4pt'>A device driver has stopped responding to setup.exe during the upgrade process.
 </TABLE>
 </TD>
+
 <TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt'><b>Mitigation</b>
@@ -199,16 +207,18 @@ Disconnect all peripheral devices that are connected to the system, except for t
 </TABLE>
 </TD>
 </TR>
+
+<TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt'><B>0xC1900101 - 0x4000D</B>
 </TABLE>
 
-<P><TABLE border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
-<TR><TD colspan=2 align="left" valign="top"><B>0xC1900101 - 0x4000D</B></TD>
-<TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
-<TABLE cellspacing=0 cellpadding=0>
+<P><TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt'>A rollback occurred due to a driver configuration issue.</b>
+<TR><TD style='padding:0in 4pt 0in 4pt'>A rollback occurred due to a driver configuration issue.
 </TABLE>
 </TD>
+
 <TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt'><b>Mitigation</b>
@@ -235,17 +245,20 @@ Disconnect all peripheral devices that are connected to the system, except for t
 </TABLE>
 </TD>
 </TR>
+
+
+<TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt'><B>0xC1900101 - 0x40017</B>
 </TABLE>
 
-<P><TABLE border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
-<TR><TD colspan=2 align="left" valign="top"><B>0xC1900101 - 0x40017</B></TD>
-<TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
-<TABLE cellspacing=0 cellpadding=0>
+<P><TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt'>Windows 10 upgrade failed after the second reboot.
-<BR>This is usually caused by a faulty driver. For example: antivirus filter drivers or encryption drivers.</b>
+<BR>This is usually caused by a faulty driver. For example: antivirus filter drivers or encryption drivers.
 </TABLE>
 </TD>
+
 <TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt'><b>Mitigation</b>
@@ -257,7 +270,29 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 </TABLE>
 </TD>
 </TR>
+
 </TABLE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
