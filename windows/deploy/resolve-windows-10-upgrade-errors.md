@@ -155,7 +155,7 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 
 ## Common error codes
 
-A common result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the SafeOS phase. 0xC1900101 usually indicates that an incompatible driver is present, which can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful in indentifying the incompatible driver. You can also attempt to run setup in the absence of drivers by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process. 
+A common result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the SafeOS phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as the minidump file (($Windows.~bt\Sources\Rollback\setupmem.dmp), event logs (($Windows.~bt\Sources\Rollback\*.evtx), and the device install log ($Windows.~bt\Sources\Rollback\setupapi\setupapi.dev.log). The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  To resolve a rollback due to driver conflicts, run setup in the absence of drivers by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process. 
 
 <P>The following general procedures can be used to diagnose some of the most common error codes that contain a result code of 0xC1900101:
 
@@ -165,13 +165,15 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x20017</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x20017
+
 </TABLE>
 
 <P><TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A driver has caused an illegal operation.
 <BR>Windows was not able to migrate the driver, resulting in a rollback of the operating system.
+
 </TABLE>
 </TD>
 
@@ -293,7 +295,7 @@ Other common codes and mitigation procedures:
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a code</B>
+8007042B - 0x4000D
 
 </TABLE>
 
@@ -324,7 +326,7 @@ Here is a mitigation procedure.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a code
+8007001F - 0x4000D
 
 </TABLE>
 
@@ -355,7 +357,7 @@ Here is a mitigation procedure.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a code
+8007042B - 0x4001E
 
 </TABLE>
 
@@ -387,7 +389,38 @@ Here is a mitigation procedure.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a code
+800704B8 - 0x3001A
+
+</TABLE>
+
+<P><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a cause.
+
+</TABLE>
+</TD>
+
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a mitigation procedure.
+
+</TABLE>
+</TD>
+</TR>
+
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+8000405 - 0x20007
 
 </TABLE>
 
