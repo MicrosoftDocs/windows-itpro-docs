@@ -70,7 +70,7 @@ If upon installation the user or administrator choses to participate in the Cust
 
 ### Monitor Application Settings
 
-The **Monitor Application Settings** task is used to synchronize settings for Windows apps. It is runs at logon but is delayed by 30 seconds to not affect the logon detrimentally. The Monitor Application Status task runs the UevAppMonitor.exe file, which is located in the UE-V Agent installation directory.
+The **Monitor Application Settings** task is used to synchronize settings for Windows apps. It is run at logon but is delayed by 30 seconds to not affect the logon detrimentally. The Monitor Application Status task runs the UevAppMonitor.exe file, which is located in the UE-V Agent installation directory.
 
 <table>
 <colgroup>
@@ -96,7 +96,7 @@ The **Monitor Application Settings** task is used to synchronize settings for Wi
 ### Sync Controller Application
 
 The **Sync Controller Application** task is used to start the Sync Controller to synchronize settings from the computer to the settings storage location. By default, the task runs every 30 minutes. At that time, local settings are synchronized to the settings storage location, and updated settings on the settings storage location are synchronized to the computer. The Sync Controller application runs the Microsoft.Uev.SyncController.exe, which is located in the UE-V Agent installation directory.
-
+**Note:** As per the **Monitor Application Settings** task, this task is run at logon but is delayed by 30 seconds to not affect the logon detrimentally.
 <table>
 <colgroup>
 <col width="50%" />
@@ -305,7 +305,7 @@ The following additional information applies to UE-V scheduled tasks:
 
 -   ll task sequence programs are located in the UE-V Agent installation folder, `%programFiles%\Microsoft User Experience Virtualization\Agent\[architecture]\`, by default.
 
--   The Sync Controller Application Scheduled task is the crucial component when the UE-V SyncMethod is set to “SyncProvider” (UE-V 2 default configuration). This scheduled task keeps the SettingsSToragePath synchronized with the locally cached versions of the settings package files. If users complain that settings do not synchronize often enough, then you can reduce the scheduled task setting to as little as 1 minute.  You can also increase the 30 min default to a higher amount if necessary.
+-   The Sync Controller Application Scheduled task is the crucial component when the UE-V SyncMethod is set to “SyncProvider” (UE-V 2 default configuration). This scheduled task keeps the SettingsSToragePath synchronized with the locally cached versions of the settings package files. If users complain that settings do not synchronize often enough, then you can reduce the scheduled task setting to as little as 1 minute.  You can also increase the 30 min default to a higher amount if necessary. If users complain that settings do not synchronize fast enough on logon, then you can remove the delay setting for the scheduled task. (You can find the delay setting in the **Edit Trigger** dialogue box)
 
 -   You do not need to disable the Template Auto Update scheduled task if you use another method to keep the clients’ templates in sync (i.e. Group Policy or Configuration Manager Baselines). Leaving the SettingsTemplateCatalog property value blank prevents UE-V from checking the settings catalog for custom templates. This scheduled task runs ApplySettingsCatalog.exe and will essentially return immediately.
 
