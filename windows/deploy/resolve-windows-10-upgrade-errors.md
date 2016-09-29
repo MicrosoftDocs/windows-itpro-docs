@@ -161,23 +161,25 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
+<TR><TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+
 <TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt'><B>0xC1900101 - 0x20017</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>0xC1900101 - 0x20017</B>
 </TABLE>
 
 <P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt'>A driver has caused an illegal operation.
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A driver has caused an illegal operation.
 <BR>Windows was not able to migrate the driver, resulting in a rollback of the operating system.
 </TABLE>
 </TD>
 
-<TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
+<TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+
 <TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt'>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 1.	Make sure all that drivers are updated.<BR>
 2.	Open the Setuperr.log and Setupact.log files under the %windir%\Panther directory, and then locate the problem drivers.
 <BR>For more information, see [Understanding Failures and Log Files](https://technet.microsoft.com/en-us/library/ee851579.aspx).<BR>
@@ -186,21 +188,24 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 </TD>
 </TR>
 
-<TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt'><B>0xC1900101 - 0x30018</B>
+<TR><TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>0xC1900101 - 0x30018</B>
 </TABLE>
 
 <P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt'>A device driver has stopped responding to setup.exe during the upgrade process.
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A device driver has stopped responding to setup.exe during the upgrade process.
 </TABLE>
 </TD>
 
-<TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
+<TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+
 <TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt'>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.
 <BR>Contact your hardware vendor to obtain updated device drivers.
 <BR>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process. 
@@ -208,21 +213,24 @@ Disconnect all peripheral devices that are connected to the system, except for t
 </TD>
 </TR>
 
-<TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt'><B>0xC1900101 - 0x4000D</B>
+<TR><TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>0xC1900101 - 0x4000D</B>
 </TABLE>
 
 <P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt'>A rollback occurred due to a driver configuration issue.
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A rollback occurred due to a driver configuration issue.
 </TABLE>
 </TD>
 
-<TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
+<TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+
 <TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt'><p>Review the rollback log and determine the stop code.
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><p>Review the rollback log and determine the stop code.
 <BR>The rollback log is located in the **C:\$Windows.~BT\Sources\Panther** folder.  Look for text similar to the following:
 <p>Info SP     Crash 0x0000007E detected
 <BR>Info SP       Module name           : 
@@ -247,22 +255,25 @@ Disconnect all peripheral devices that are connected to the system, except for t
 </TR>
 
 
-<TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt'><B>0xC1900101 - 0x40017</B>
+<TR><TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>0xC1900101 - 0x40017</B>
 </TABLE>
 
 <P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt'>Windows 10 upgrade failed after the second reboot.
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows 10 upgrade failed after the second reboot.
 <BR>This is usually caused by a faulty driver. For example: antivirus filter drivers or encryption drivers.
 </TABLE>
 </TD>
 
-<TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
+<TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+
 <TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt'>Clean boot into Windows, and then attempt the upgrade to Windows 10.<BR>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Clean boot into Windows, and then attempt the upgrade to Windows 10.<BR>
 
 For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/en-us/kb/929135).
 
@@ -272,26 +283,6 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 </TR>
 
 </TABLE>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
