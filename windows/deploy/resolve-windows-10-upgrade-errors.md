@@ -155,17 +155,17 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 
 ## Common error codes
 
-A common result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the SafeOS phase. 0xC1900101 usually indicates that an incompatible driver is present, which can cause blue screens, system hangs, and unexpected reboots. Analysis of all available supplemental log files is typically helpful in indentifying the incompatible driver. You can also attempt to run setup in the absence of drivers by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process. 
+A common result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the SafeOS phase. 0xC1900101 usually indicates that an incompatible driver is present, which can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful in indentifying the incompatible driver. You can also attempt to run setup in the absence of drivers by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process. 
 
-<P>The following general procedures can be used to diagnose a result code of 0xC1900101 during different phases of Windows Setup:
+<P>The following general procedures can be used to diagnose some of the most common error codes that contain a result code of 0xC1900101:
 
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>0xC1900101 - 0x20017</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x20017</B>
 </TABLE>
 
 <P><TABLE cellspacing=0 cellpadding=0>
@@ -175,7 +175,7 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 </TABLE>
 </TD>
 
-<TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
@@ -188,11 +188,11 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 </TD>
 </TR>
 
-<TR><TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>0xC1900101 - 0x30018</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x30018</B>
 </TABLE>
 
 <P><TABLE cellspacing=0 cellpadding=0>
@@ -201,7 +201,7 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 </TABLE>
 </TD>
 
-<TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
@@ -213,11 +213,11 @@ Disconnect all peripheral devices that are connected to the system, except for t
 </TD>
 </TR>
 
-<TR><TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>0xC1900101 - 0x4000D</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x4000D</B>
 </TABLE>
 
 <P><TABLE cellspacing=0 cellpadding=0>
@@ -226,7 +226,7 @@ Disconnect all peripheral devices that are connected to the system, except for t
 </TABLE>
 </TD>
 
-<TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
@@ -255,11 +255,11 @@ Disconnect all peripheral devices that are connected to the system, except for t
 </TR>
 
 
-<TR><TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>0xC1900101 - 0x40017</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x40017</B>
 </TABLE>
 
 <P><TABLE cellspacing=0 cellpadding=0>
@@ -269,7 +269,7 @@ Disconnect all peripheral devices that are connected to the system, except for t
 </TABLE>
 </TD>
 
-<TD align="left" valign="top" style='border:solid #000000 2.0pt;'>
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
