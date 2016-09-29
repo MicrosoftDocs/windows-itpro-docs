@@ -72,6 +72,8 @@ Event ID | Error Type | Resolution steps
 65 | Insufficient privileges| Run the script again with administrator privileges.
 
 ## Troubleshoot onboarding issues using Microsoft Intune
+If the policy that you configured using Intune does not get propagated on the endpoint, you might need to go to the Azure Active Directory portal settings to configure automatic MDM enrolment. For more information see,
+
 You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.
 
 Use the following tables to understand the possible causes of issues while onboarding:
