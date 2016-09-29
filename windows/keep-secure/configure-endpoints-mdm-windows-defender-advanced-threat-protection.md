@@ -75,7 +75,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
   ![Microsoft Intune manage deployment](images/atp-intune-manage-deployment.png)
 
-The policy is deployed and endpoints will be displayed in the **Machines view**.
+When the policy is deployed and is propagated, endpoints will be shown in the **Machines view**.
 
 You can use the following onboarding policies to deploy configuration settings on endpoints. These policies can be sub-categorized to:
 - Onboarding
