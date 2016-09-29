@@ -121,27 +121,28 @@ Various log files are created during each phase of the upgrade process. These lo
 
 <TABLE>
 <TR>
-<td BGCOLOR="#a0e4fa"><B>Log file<td BGCOLOR="#a0e4fa"><B>Phase: Location<td BGCOLOR="#a0e4fa"><B>Description<td BGCOLOR="#a0e4fa"><B>When to use
+<td BGCOLOR="#a0e4fa"><B><span style='font-size:9.0pt'>Log file<td BGCOLOR="#a0e4fa"><B><span style='font-size:9.0pt'>Phase: Location<td BGCOLOR="#a0e4fa"><B><span style='font-size:9.0pt'>Description<td BGCOLOR="#a0e4fa"><B><span style='font-size:9.0pt'>When to use
 
-<TR><TD rowspan=5>setupact.log<TD>Down-Level:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the downlevel phase. <TD>All down-level failures and starting point for rollback investigations.<BR> This is the most important log for diagnosing setup issues.
-<TR><TD>OOBE:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about actions during the OOBE phase.<TD>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.
-<TR><TD>Rollback:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about actions during rollback.<TD>Investigating generic rollbacks - 0xC1900101.
-<TR><TD>Pre-initialization (prior to downlevel):<BR>$Windows.~BT\Sources\Panther<TD>Contains information about initializing setup.<TD>If setup fails to launch.
-<TR><TD>Post-upgrade (after OOBE):<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the installation.<TD>Investigate post-upgrade related issues.
+<TR><TD rowspan=5><span style='font-size:10.0pt'>setupact.log<TD><span style='font-size:9.0pt'>Down-Level:<BR>$Windows.~BT\Sources\Panther<TD><span style='font-size:9.0pt'>Contains information about setup actions during the downlevel phase. <TD><span style='font-size:9.0pt'>All down-level failures and starting point for rollback investigations.<BR> This is the most important log for diagnosing setup issues.
+<TR><TD><span style='font-size:9.0pt'>OOBE:<BR>$Windows.~BT\Sources\Panther<TD><span style='font-size:9.0pt'>Contains information about actions during the OOBE phase.<TD><span style='font-size:9.0pt'>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.
+<TR><TD><span style='font-size:9.0pt'>Rollback:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about actions during rollback.<TD><span style='font-size:9.0pt'>Investigating generic rollbacks - 0xC1900101.
+<TR><TD><span style='font-size:9.0pt'>Pre-initialization (prior to downlevel):<BR>$Windows.~BT\Sources\Panther<TD><span style='font-size:9.0pt'>Contains information about initializing setup.<TD><span style='font-size:9.0pt'>If setup fails to launch.
+<TR><TD><span style='font-size:9.0pt'>Post-upgrade (after OOBE):<BR>$Windows.~BT\Sources\Panther<TD><span style='font-size:9.0pt'>Contains information about setup actions during the installation.<TD><span style='font-size:9.0pt'>Investigate post-upgrade related issues.
 
-<TR><TD>setuperr.log<TD>Same as setupact.log<TD>Contains information about setup errors during the installation.<TD>Review all errors encountered during the installation phase.
+<TR><TD><span style='font-size:10.0pt'>setuperr.log<TD>Same as setupact.log<TD><span style='font-size:9.0pt'>Contains information about setup errors during the installation.<TD><span style='font-size:9.0pt'>Review all errors encountered during the installation phase.
 
-<TR><TD>miglog.xml<TD>Post-upgrade (after OOBE):<BR>Windows\Panther<TD>Contains information about what was migrated during the installation.<TD>Identify post upgrade data migration issues.
+<TR><TD><span style='font-size:10.0pt'>miglog.xml<TD><span style='font-size:9.0pt'>Post-upgrade (after OOBE):<BR>Windows\Panther<TD><span style='font-size:9.0pt'>Contains information about what was migrated during the installation.<TD><span style='font-size:9.0pt'>Identify post upgrade data migration issues.
 
-<TR><TD>BlueBox.log<TD>Down-Level:<BR>Windows\Logs\Mosetup<TD>Contains information communication between setup.exe and Windows Update.<TD>Use during WSUS and WU down-level failures or for 0xC1900107.
+<TR><TD><span style='font-size:10.0pt'>BlueBox.log<TD><span style='font-size:9.0pt'>Down-Level:<BR>Windows\Logs\Mosetup<TD><span style='font-size:9.0pt'>Contains information communication between setup.exe and Windows Update.<TD><span style='font-size:9.0pt'>Use during WSUS and WU down-level failures or for 0xC1900107.
 
-<TR><TD>Supplemental rollback logs:<BR>
+<TR><TD><span style='font-size:9.0pt'>Supplemental rollback logs:<BR>
 Setupmem.dmp<BR>
 setupapi.dev.log<BR>
 Event logs (*.evtx)
 
 
-<TD>$Windows.~BT\Sources\Rollback<TD>Additional logs collected during rollback.<TD>
+<TD><span style='font-size:9.0pt'>$Windows.~BT\Sources\Rollback<TD>Additional logs collected during rollback.
+<TD><span style='font-size:9.0pt'>
 Setupmem.dmp: If OS bugchecks during upgrade, setup will attempt to extract a mini-dump.<BR>
 Setupapi: Device install issues – 0x30018<BR>
 Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
@@ -158,14 +159,14 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 
 <TABLE>
 <tr>
-<td BGCOLOR="#a0e4fa">Error code</th>
-<td BGCOLOR="#a0e4fa">Cause</th>
-<td BGCOLOR="#a0e4fa">Mitigation</th>
+<td BGCOLOR="#a0e4fa"><B><span style='font-size:9.0pt'>Error code</th>
+<td BGCOLOR="#a0e4fa"><B><span style='font-size:9.0pt'>Cause</th>
+<td BGCOLOR="#a0e4fa"><B><span style='font-size:9.0pt'>Mitigation</th>
 </tr>
 <tr>
-<td>0xC1900101 - 0x20017</td>
-<td>A driver has caused an illegal operation and Windows was not able to migrate the driver, resulting in a rollback of the operating system.</td>
-<td>To resolve this issue:<BR>
+<td><span style='font-size:9.0pt'>0xC1900101 - 0x20017</td>
+<td><span style='font-size:9.0pt'>A driver has caused an illegal operation and Windows was not able to migrate the driver, resulting in a rollback of the operating system.</td>
+<td><span style='font-size:9.0pt'>To resolve this issue:<BR>
 
 1.	Make sure all that drivers are updated.<BR>
 2.	Open the Setuperr.log and Setupact.log files under the %windir%\Panther directory, and then locate the problem drivers. Refer: [Understanding Failures and Log Files](https://technet.microsoft.com/en-us/library/ee851579.aspx)<BR>
@@ -174,18 +175,18 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 </tr>
 
 <tr>
-<td>0xC1900101 - 0x30018</td>
-<td>A device driver has stopped responding to setup.exe during the upgrade process.</td>
-<td>Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display. Contact your hardware vendor to obtain updated device drivers. 
+<td><span style='font-size:9.0pt'>0xC1900101 - 0x30018</td>
+<td><span style='font-size:9.0pt'>A device driver has stopped responding to setup.exe during the upgrade process.</td>
+<td><span style='font-size:9.0pt'>Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display. Contact your hardware vendor to obtain updated device drivers. 
 <P>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.
 </td>
 </tr>
 
 <tr>
-<td>0xC1900101 - 0x4000D</td>
-<td>A driver configuration issue occurred during the Windows setup process and a rollback occurred.</td>
-<td><p>Review the rollback log and determine the stop code. The rollback log is located in the **C:\$Windows.~BT\Sources\Panther** folder.  Look for text similar to the following:
-<p>
+<td><span style='font-size:9.0pt'>0xC1900101 - 0x4000D</td>
+<td><span style='font-size:9.0pt'>A driver configuration issue occurred during the Windows setup process and a rollback occurred.</td>
+<td><p><span style='font-size:9.0pt'>Review the rollback log and determine the stop code. The rollback log is located in the **C:\$Windows.~BT\Sources\Panther** folder.  Look for text similar to the following:
+<p><span style='font-size:9.0pt'>
 <BR>Info SP     Crash 0x0000007E detected
 <BR>Info SP       Module name           : 
 <BR>Info SP       Bugcheck parameter 1  : 0xFFFFFFFFC0000005
@@ -196,7 +197,7 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 <BR>Info SP     Rollback: Showing splash window with restoring text: Restoring your previous version of Windows.
 
 
-<P>Typically there is a a dump file for the crash to analyze. If you are not equipped to debug the dump, then attempt the following basic troubleshooting procedures:<BR>
+<P><span style='font-size:9.0pt'>Typically there is a a dump file for the crash to analyze. If you are not equipped to debug the dump, then attempt the following basic troubleshooting procedures:<BR>
 
 1. Make sure you have enough disk space.<BR>
 2. If a driver is identified in the bug check message, disable the driver, or check with the manufacturer for driver updates.<BR>
@@ -206,9 +207,9 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 </p></td>
 </tr>
 <tr>
-<td>0xC1900101 - 0x40017</td>
-<td>Windows 10 upgrade fails after the second reboot, which is most like to be caused by a faulty driver, for example antivirus filter drivers or encryption drivers.</td>
-<td>Clean boot into Windows, and then attempt the upgrade to Windows 10.<BR>
+<td><span style='font-size:9.0pt'>0xC1900101 - 0x40017</td>
+<td><span style='font-size:9.0pt'>Windows 10 upgrade fails after the second reboot, which is most like to be caused by a faulty driver, for example antivirus filter drivers or encryption drivers.</td>
+<td><span style='font-size:9.0pt'>Clean boot into Windows, and then attempt the upgrade to Windows 10.<BR>
 
 For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/en-us/kb/929135).
 
@@ -217,9 +218,9 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 </tr>
 
 <tr>
-<td>0x8007002C - 0x4000D</td>
-<td>The user cancelled an interactive dialog.</td>
-<td>Start the upgrade process again again.</td>
+<td><span style='font-size:9.0pt'>0x8007002C - 0x4000D</td>
+<td><span style='font-size:9.0pt'>The user cancelled an interactive dialog.</td>
+<td><span style='font-size:9.0pt'>Start the upgrade process again again.</td>
 </tr>
 
 
