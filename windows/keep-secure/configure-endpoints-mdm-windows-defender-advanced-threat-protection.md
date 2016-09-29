@@ -33,15 +33,51 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Click **Endpoint Management** on the **Navigation pane**.
+    a.  Select **Endpoint Management** on the **Navigation pane**.
 
-    b.  Select **Mobile Device Management/Microsoft Intune**, click **Download package** and save the .zip file.
+    b.  Select **Mobile Device Management/Microsoft Intune** > **Download package** and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named  *WindowsDefenderATP.onboarding*.
 
 3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings. For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 
-Onboarding - Use the onboarding policies to deploy configuration settings on endpoints. These policies can be sub-categorized to:
+  a. Select **Policy** > **Configuration Policies** > **Add**.
+  ![Microsoft Intune Configuration Policies](images/atp-intune-add-policy.png)
+
+  b. Under **Windows**, select **Custom Configuration (Windows 10 Desktop and Mobile and later)** > **Create and Deploy a Custom Policy** > **Create Policy**.
+
+  ![Microsoft Intune Configuration Policies](images/atp-intune-new-policy.png)
+
+  c. Type a name and description for the policy.
+  ![Microsoft Intune Create Policy](images/atp-intune-policy-name.png)
+
+  d. Under OMA-URI settings, select **Add...**.
+  ![Microsoft Intune add OMC-URI](images/atp-intune-add-oma.png)
+
+  e. Type the following values then select **OK**:
+
+  ![Microsoft Intune save policy](images/atp-intune-oma-uri-setting.png)
+
+  - **Setting name**: Type a name for the setting.
+  - **Setting description**: Type a description for the setting.
+  - **Data type**: Select **String**.
+  - **OMA-URI**:  *./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Onboarding*
+  - **Value**: Use the value from the *WindowsDefenderATP.onboarding* file you downloaded.
+
+
+  f. Save the policy.
+  ![Microsoft Intune save policy](images/atp-intune-save-policy.png)
+
+  g. Deploy the policy.
+  ![Microsoft Intune deploy policy](images/atp-intune-deploy-policy.png)
+
+  h. Select the device group to deploy the policy to:
+
+  ![Microsoft Intune manage deployment](images/atp-intune-manage-deployment.png)
+
+The policy is deployed and endpoints will be displayed in the **Machines view**.
+
+You can use the following onboarding policies to deploy configuration settings on endpoints. These policies can be sub-categorized to:
 - Onboarding
 - Health Status for onboarded machines
 - Configuration for onboarded machines
