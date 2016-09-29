@@ -117,7 +117,7 @@ The following tables provide the corresponding phase and operation for values of
 
 ## Log files
 
-Various log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. The most useful log is **setupact.log**, which is located in a different folder depending on the phase in which a problem occurred with the upgrade process. Recall that you can determine the phase from the extend code. 
+Various log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. The most useful log is **setupact.log**. These logs are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
 
 <P>The following table describes some log files and how to use them for troubleshooting purposes:
 
@@ -149,47 +149,72 @@ Setupmem.dmp: If OS bugchecks during upgrade, setup will attempt to extract a mi
 Setupapi: Device install issues – 0x30018<BR>
 Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 
-
-
-
-
 </TABLE>
 
-## Common error codes and resolution procedures
 
-A common result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, except for the SafeOS phase. Therefore, it can be associated with several different extend codes. A result code of 0xC1900101 usually indicates that an incompatible driver is present, which can cause blue screens, system hangs, and unexpected reboots. Analysis of all available supplemental log files is typically helpful in indentifying the incompatible driver. You can also attempt to run setup in the absence of drivers by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process.
 
-<TABLE>
-<tr>
-<td BGCOLOR="#a0e4fa"><B>Error code</th>
-<td BGCOLOR="#a0e4fa"><B>Cause</th>
-<td BGCOLOR="#a0e4fa"><B>Mitigation</th>
-</tr>
-<tr>
-<td>0xC1900101 - 0x20017</td>
-<td>A driver has caused an illegal operation and Windows was not able to migrate the driver, resulting in a rollback of the operating system.</td>
-<td>To resolve this issue:<BR>
+## Common errors
 
+A common result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the SafeOS phase. 0xC1900101 usually indicates that an incompatible driver is present, which can cause blue screens, system hangs, and unexpected reboots. 
+
+Analysis of all available supplemental log files is typically helpful in indentifying the incompatible driver. You can also attempt to run setup in the absence of drivers by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process. The following general procedures can be used to diagnose a result code of 0xC1900101 during different phases of Windows Setup:
+
+<TABLE border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
+<TR><TD colspan=2 align="left" valign="top"><B>0xC1900101 - 0x20017</B></TD>
+<TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt'>A driver has caused an illegal operation.
+<BR>Windows was not able to migrate the driver, resulting in a rollback of the operating system.</b>
+</TABLE>
+</TD>
+<TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt'>
 1.	Make sure all that drivers are updated.<BR>
-2.	Open the Setuperr.log and Setupact.log files under the %windir%\Panther directory, and then locate the problem drivers. Refer: [Understanding Failures and Log Files](https://technet.microsoft.com/en-us/library/ee851579.aspx)<BR>
+2.	Open the Setuperr.log and Setupact.log files under the %windir%\Panther directory, and then locate the problem drivers.
+<BR>For more information, see [Understanding Failures and Log Files](https://technet.microsoft.com/en-us/library/ee851579.aspx).<BR>
 3.	Update or uninstall the problem drivers.
-</td>
-</tr>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
 
-<tr>
-<td>0xC1900101 - 0x30018</td>
-<td>A device driver has stopped responding to setup.exe during the upgrade process.</td>
-<td>Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display. Contact your hardware vendor to obtain updated device drivers. 
-<P>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.
-</td>
-</tr>
+<P><TABLE border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
+<TR><TD colspan=2 align="left" valign="top"><B>0xC1900101 - 0x30018</B></TD>
+<TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt'>A device driver has stopped responding to setup.exe during the upgrade process.</b>
+</TABLE>
+</TD>
+<TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt'>
+Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.
+<BR>Contact your hardware vendor to obtain updated device drivers.
+<BR>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process. 
+</TABLE>
+</TD>
+</TR>
+</TABLE>
 
-<tr>
-<td>0xC1900101 - 0x4000D</td>
-<td>A driver configuration issue occurred during the Windows setup process and a rollback occurred.</td>
-<td><p>Review the rollback log and determine the stop code. The rollback log is located in the **C:\$Windows.~BT\Sources\Panther** folder.  Look for text similar to the following:
-<p>
-<BR>Info SP     Crash 0x0000007E detected
+<P><TABLE border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
+<TR><TD colspan=2 align="left" valign="top"><B>0xC1900101 - 0x4000D</B></TD>
+<TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt'>A rollback occurred due to a driver configuration issue.</b>
+</TABLE>
+</TD>
+<TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt'><p>Review the rollback log and determine the stop code.
+<BR>The rollback log is located in the **C:\$Windows.~BT\Sources\Panther** folder.  Look for text similar to the following:
+<p>Info SP     Crash 0x0000007E detected
 <BR>Info SP       Module name           : 
 <BR>Info SP       Bugcheck parameter 1  : 0xFFFFFFFFC0000005
 <BR>Info SP       Bugcheck parameter 2  : 0xFFFFF8015BC0036A
@@ -202,31 +227,39 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 <P>Typically there is a a dump file for the crash to analyze. If you are not equipped to debug the dump, then attempt the following basic troubleshooting procedures:<BR>
 
 1. Make sure you have enough disk space.<BR>
-2. If a driver is identified in the bug check message, disable the driver, or check with the manufacturer for driver updates.<BR>
+2. If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.<BR>
 3. Try changing video adapters.<BR>
 4. Check with your hardware vendor for any BIOS updates.<BR>
 5. Disable BIOS memory options such as caching or shadowing.
-</p></td>
-</tr>
-<tr>
-<td>0xC1900101 - 0x40017</td>
-<td>Windows 10 upgrade fails after the second reboot, which is most like to be caused by a faulty driver, for example antivirus filter drivers or encryption drivers.</td>
-<td>Clean boot into Windows, and then attempt the upgrade to Windows 10.<BR>
+</p>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+
+<P><TABLE border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
+<TR><TD colspan=2 align="left" valign="top"><B>0xC1900101 - 0x40017</B></TD>
+<TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt'>Windows 10 upgrade failed after the second reboot.
+<BR>This is usually caused by a faulty driver. For example: antivirus filter drivers or encryption drivers.</b>
+</TABLE>
+</TD>
+<TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt'>Clean boot into Windows, and then attempt the upgrade to Windows 10.<BR>
 
 For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/en-us/kb/929135).
 
 <P>Ensure you select the option to "Download and install updates (recommended)."
-</td>
-</tr>
-
-<tr>
-<td>0x8007002C - 0x4000D</td>
-<td>The user cancelled an interactive dialog.</td>
-<td>Start the upgrade process again again.</td>
-</tr>
-
-
 </TABLE>
+</TD>
+</TR>
+</TABLE>
+
+
 
 ## Common errors I've edited but don't know how to classify
 
