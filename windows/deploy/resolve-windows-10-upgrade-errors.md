@@ -284,7 +284,135 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 
 </TABLE>
 
+Other common codes and mitigation procedures:
 
+<TABLE border=1 cellspacing=0 cellpadding=0>
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a code</B>
+
+</TABLE>
+
+<P><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a cause
+
+</TABLE>
+</TD>
+
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a mitigation procedure.
+
+</TABLE>
+</TD>
+</TR>
+
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a code
+
+</TABLE>
+
+<P><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a cause.
+
+</TABLE>
+</TD>
+
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a mitigation procedure.
+
+</TABLE>
+</TD>
+</TR>
+
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a code
+
+</TABLE>
+
+<P><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a cause.
+
+</TABLE>
+</TD>
+
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a mitigation procedure.
+
+</TABLE>
+</TD>
+</TR>
+
+
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a code
+
+</TABLE>
+
+<P><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a cause.
+
+</TABLE>
+</TD>
+
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a mitigation procedure.
+
+</TABLE>
+</TD>
+</TR>
+
+</TABLE>
 
 
 ## Common errors I've edited but don't know how to classify
