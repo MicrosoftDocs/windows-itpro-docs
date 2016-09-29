@@ -48,7 +48,7 @@ Setup will return two codes:
 2. An extend code, representing the phase when a failure occurred.
         - The extend code contains information about both the *phase* in which an error occurred, and the *operation* that was being performed when the error occurred.  
 
->For example, a result code of **0xC1900101** with an extend code of **0x4000D** will be returned as: **0xC1900101 - 0x4000D**. In this case, the extend code 0x4000D can be evaluated as representing a problem during phase 4 (0x4) with data migration (000D). A list of extend codes and the associated phase and operation is provided below.
+>For example, a result code of **0xC1900101** with an extend code of **0x4000D** will be returned as: **0xC1900101 - 0x4000D**. In this case, the extend code **0x4000D** can be evaluated as representing a problem during phase 4 (**0x4**) with data migration (**000D**). A list of extend codes with phase and operation associations is provided below.
 
 Note: If only a result code is returned, this can be because a tool is being used that was not able to capture the extend code. For example, if you are using the [Windows 10 Upgrade Assistant](https://support.microsoft.com/en-us/kb/3159635) then only a result code might be returned.
 
@@ -154,6 +154,8 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 
 ## Common error codes and resolution procedures
 
+A common result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, except for the SafeOS phase. Therefore, it can be associated with several different extend codes. A result code of 0xC1900101 usually indicates that an incompatible driver is present, which can cause blue screens, system hangs, and unexpected reboots. Analysis of all available supplemental log files is typically helpful in indentifying the incompatible driver. You can also attempt to run setup in the absence of drivers by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process.
+
 <TABLE>
 <tr>
 <td BGCOLOR="#a0e4fa">Error code</th>
@@ -177,13 +179,6 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 <td>Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display. Contact your hardware vendor to obtain updated device drivers. 
 <P>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.
 </td>
-</tr>
-
-
-<tr>
-<td>0x8007002C - 0x4000D</td>
-<td>The user cancelled an interactive dialog.</td>
-<td>Start the upgrade process again again.</td>
 </tr>
 
 <tr>
@@ -220,6 +215,14 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 <P>Ensure you select the option to "Download and install updates (recommended)."
 </td>
 </tr>
+
+<tr>
+<td>0x8007002C - 0x4000D</td>
+<td>The user cancelled an interactive dialog.</td>
+<td>Start the upgrade process again again.</td>
+</tr>
+
+
 </TABLE>
 
 ## Common errors I've edited but don't know how to classify
