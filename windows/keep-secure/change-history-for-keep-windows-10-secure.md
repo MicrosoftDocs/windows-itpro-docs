@@ -12,6 +12,12 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## October 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| [VPN technical guide](vpn-guide.md) | Multiple new topics, replacing previous **VPN profile options** topic |
+
 ## September 2016
 
 | New or changed topic | Description |
