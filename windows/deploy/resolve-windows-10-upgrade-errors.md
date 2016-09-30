@@ -155,12 +155,41 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 
 ## Common error codes
 
+### 0xC1900101
+
 A common result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the SafeOS phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as the minidump file (($Windows.~bt\Sources\Rollback\setupmem.dmp), event logs (($Windows.~bt\Sources\Rollback\*.evtx), and the device install log ($Windows.~bt\Sources\Rollback\setupapi\setupapi.dev.log). The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  To resolve a rollback due to driver conflicts, run setup in the absence of drivers by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process. 
 
-<P>The following general procedures can be used to diagnose some of the most common error codes that contain a result code of 0xC1900101:
+<P>See the following general troubleshooting procedures associated with a result code of 0xC1900101:
 
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
+
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x2000c</B>
+</TABLE>
+
+<P><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows Setup encountered an unspecified error during the WinPE phase.
+<BR>This is generally caused by out-of-date drivers. 
+</TABLE>
+</TD>
+
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.
+<BR>Contact your hardware vendor to obtain updated device drivers.
+<BR>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process. 
+</TABLE>
+</TD>
+</TR>
+
+
 <TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <TABLE cellspacing=0 cellpadding=0>
@@ -182,10 +211,10 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-1.	Make sure all that drivers are updated.<BR>
-2.	Open the Setuperr.log and Setupact.log files under the %windir%\Panther directory, and then locate the problem drivers.
-<BR>For more information, see [Understanding Failures and Log Files](https://technet.microsoft.com/en-us/library/ee851579.aspx).<BR>
-3.	Update or uninstall the problem drivers.
+Ensure that all that drivers are updated.<BR>
+Open the Setuperr.log and Setupact.log files in the %windir%\Panther directory, and then locate the problem drivers.
+<BR>For more information, see [Understanding Failures and Log Files](https://technet.microsoft.com/en-us/library/ee851579.aspx).
+<BR>Update or uninstall the problem drivers.
 </TABLE>
 </TD>
 </TR>
@@ -286,7 +315,9 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 
 </TABLE>
 
-Other common codes and mitigation procedures:
+### 0x800xxxxx
+
+
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
 <TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
