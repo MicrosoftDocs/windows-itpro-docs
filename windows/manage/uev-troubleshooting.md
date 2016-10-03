@@ -14,7 +14,10 @@ ms.prod: w10
 **Applies to**
 -   Windows 10, version 1607
 
+
 For information that can help with troubleshooting UE-V for Windows 10, see:
+
+- [UE-V FAQ Wiki](http://social.technet.microsoft.com/wiki/contents/articles/35333.ue-v-important-changes-in-ue-v-functionality-after-the-windows-10-anniversary-update.aspx)
 
 - [UE-V: List of Microsoft Support Knowledge Base Articles](http://social.technet.microsoft.com/wiki/contents/articles/14271.ue-v-list-of-microsoft-support-knowledge-base-articles.aspx)
 
