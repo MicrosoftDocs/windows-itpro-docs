@@ -146,7 +146,7 @@ In this example, you use three security groups from Table 1 in [Build deployment
 8. Because the **Ring 2 Pilot Business Users** deployment ring receives the CB feature updates after 14 days, in the **OMA-URI Settings** section, click **Add** to add another OMA-URI setting. 
 
 8. In **Setting name**, type **Defer feature updates for 14 days**, and then select **Integer** from the **Data type** list.
-10.	In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatePeriodInDays**.
+10.	In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatesPeriodInDays**.
 11.	In the **Value** box, type **14**, and then click **OK**.
 
     ![Settings for this policy](images/waas-wufb-intune-step11a.png)
@@ -186,7 +186,7 @@ You have now configured the **Ring 2 Pilot Business Users** deployment ring to e
 
 8. In **Setting name**, type **Defer feature updates for 0 days**, and then select **Integer** from the **Data type** list.
 
-10.	In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatePeriodInDays**.
+10.	In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatesPeriodInDays**.
 
 11.	In the **Value** box, type **0**, and then click **OK**.
 
@@ -228,7 +228,7 @@ You have now configured the **Ring 3 Broad IT** deployment ring to receive CBB f
 
 8. In **Setting name**, type **Defer quality updates for 7 days**, and then select **Integer** from the **Data type** list.
 
-10.	In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/DeferQualityUpdatePeriodInDays**.
+10.	In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/DeferQualityUpdatesPeriodInDays**.
 
 11.	In the **Value** box, type **7**, and then click **OK**.
 
@@ -236,7 +236,7 @@ You have now configured the **Ring 3 Broad IT** deployment ring to receive CBB f
 
 8. In **Setting name**, type **Defer feature updates for 30 days**, and then select **Integer** from the **Data type** list.
 
-10.	In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatePeriodInDays**.
+10.	In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatesPeriodInDays**.
 
 11.	In the **Value** box, type **30**, and then click **OK**.
 

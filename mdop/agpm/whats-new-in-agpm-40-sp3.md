@@ -22,7 +22,7 @@ AGPM 4.0 SP3 supports the following features and functionality.
 
 ### Support for Windows 10
 
-AGPM 4.0 SP3 adds support for the Windows 10 operating systems.
+AGPM 4.0 SP3 adds support for the Windows 10 and Windows Server 2016 operating systems.
 
 ### Support for PowerShell
 
@@ -111,7 +111,7 @@ You can upgrade the AGPM Client or AGPM Server to AGPM 4.0 SP3 without being pr
 ## Supported configurations
 
 
-AGPM 4.0 SP3 supports the configurations in the following table. Although AGPM supports mixed configurations, we strongly recommend that you run the AGPM Client and AGPM Server on the same operating system line—for example, Windows 10 only, Windows 8.1 with Windows Server 2012 R2, and so on.
+AGPM 4.0 SP3 supports the configurations in the following table. Although AGPM supports mixed configurations, we strongly recommend that you run the AGPM Client and AGPM Server on the same operating system line—for example, Windows 10 with Windows Server 2016, Windows 8.1 with Windows Server 2012 R2, and so on.
 
 **AGPM 4.0 SP3 supported operating systems and policy settings**
 
@@ -130,7 +130,7 @@ AGPM 4.0 SP3 supports the configurations in the following table. Although AGPM 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows 10</p></td>
+<td align="left"><p>Windows Server 2016 or Windows 10</p></td>
 <td align="left"><p>Windows 10</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
@@ -140,29 +140,29 @@ AGPM 4.0 SP3 supports the configurations in the following table. Although AGPM 
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Windows Server 2012 R2, Windows Server 2012, Windows 8.1, or Windows 8</p></td>
-<td align="left"><p>Windows Server 2012 or Windows 8</p></td>
+<td align="left"><p>Windows Server 2012 R2, Windows Server 2012, or Windows 8.1</p></td>
+<td align="left"><p>Windows Server 2012</p></td>
 <td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows 8.1</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Windows Server 2008 R2 or Windows 7</p></td>
 <td align="left"><p>Windows Server 2008 R2 or Windows 7</p></td>
-<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows 8.1 or Windows 8</p></td>
+<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows 8.1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Windows Server 2012, Windows Server 2008 R2, Windows 8, or Windows 7</p></td>
+<td align="left"><p>Windows Server 2012, Windows Server 2008 R2, or Windows 7</p></td>
 <td align="left"><p>Windows Server 2008 or Windows Vista with Service Pack 1 (SP1)</p></td>
-<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows 8.1, Windows 8, or Windows 7</p></td>
+<td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows 8.1, or Windows 7</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
-<td align="left"><p>Windows Server 2012, Windows Server 2008 R2, Windows 8, or Windows 7</p></td>
+<td align="left"><p>Windows Server 2012, Windows Server 2008 R2, or Windows 7</p></td>
 <td align="left"><p>Not supported</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
-<td align="left"><p>Supported, but cannot report or edit policy settings or preference items that exist only in Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows 8.1, Windows 8, or Windows 7</p></td>
+<td align="left"><p>Supported, but cannot report or edit policy settings or preference items that exist only in Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows 8.1, or Windows 7</p></td>
 </tr>
 </tbody>
 </table>
@@ -190,7 +190,7 @@ The following table describes the behavior of AGPM 4.0 SP3 Client and Server in
 
 **Remote Server Administration Tools**
 
-**Windows 10**
+**Windows 10 or Windows Server 2016**
 
 If the .NET Framework 4.5.1 is not enabled or installed, the installer blocks the installation.
 
