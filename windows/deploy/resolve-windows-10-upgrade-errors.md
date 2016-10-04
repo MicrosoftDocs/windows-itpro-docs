@@ -42,17 +42,39 @@ WIM = Windows image (Microsoft)
 
 ## Upgrade error codes
 
-Setup will return two codes:
+If the upgrade process is not successful, Windows Setup will return two codes:
 
-1. A result code, corresponding to a specific Win32 error.
-2. An extend code, representing the phase when a failure occurred.
-        - The extend code contains information about both the *phase* in which an error occurred, and the *operation* that was being performed when the error occurred.  
+1. **A result code**: The result code corresponds to a specific Win32 error.
+2. **An extend code**: The extend code contains information about both the *phase* in which an error occurred, and the *operation* that was being performed when the error occurred.  
 
->For example, a result code of **0xC1900101** with an extend code of **0x4000D** will be returned as: **0xC1900101 - 0x4000D**. In this case, the extend code **0x4000D** can be evaluated as representing a problem during phase 4 (**0x4**) with data migration (**000D**). A list of extend codes with phase and operation associations is provided below.
+>For example, a result code of **0xC1900101** with an extend code of **0x4000D** will be returned as: **0xC1900101 - 0x4000D**.
 
 Note: If only a result code is returned, this can be because a tool is being used that was not able to capture the extend code. For example, if you are using the [Windows 10 Upgrade Assistant](https://support.microsoft.com/en-us/kb/3159635) then only a result code might be returned.
 
+### Result codes
+
+>A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. <BR>To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Common error codes](#common-error-codes) section later in this topic.
+
+Result codes can be matched to the type of error encountered. To match a result code to an error:
+
+1. Identify the error code type, using the first hexidecimal digit:
+        <BR>8 = Win32 error code (ex: 0x**8**0070070)
+        <BR>C = NTSTATUS value (ex: 0x**C**1900107)
+2. Write down the last 4 digits of the error code (ex: 0x8007**0070** = 0070). These digits correspond to the last 16 bits of the [HRESULT](https://msdn.microsoft.com/en-us/library/cc231198.aspx) or the [NTSTATUS](https://msdn.microsoft.com/en-us/library/cc231200.aspx) structure.
+3. Based on the type of error code determined in the first step, match the 4 digits derived from the second step to either a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx), or an [NTSTATUS value](https://msdn.microsoft.com/en-us/library/cc704588.aspx). 
+
+For example:
+- 0x80070070 = Win32 = 0070 = 0x00000070 = ERROR_DISK_FULL
+- 0xC1900107 = NTSTATUS = 0107 = 0x00000107 = STATUS_SOME_NOT_MAPPED
+
+
 ### Extend codes
+
+Extend codes can be matched to the phase and operation when an error occurred. To match an extend code to the phase and operation:
+
+1. Use the first digit to identify the phase (ex: 0x4000D  = 4).
+2. Use the last two digits to identify the operation (ex: 0x4000D  = 0D).
+3. Match the phase and operation to values in the tables provided below.
 
 The following tables provide the corresponding phase and operation for values of an extend code:
 
@@ -115,6 +137,8 @@ The following tables provide the corresponding phase and operation for values of
 </TR>
 </TABLE>
 
+For example: An extend code of **0x4000D**, represents a problem during phase 4 (**0x4**) with data migration (**000D**).
+
 ## Log files
 
 Various log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. The most useful log is **setupact.log**. These logs are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
@@ -152,7 +176,6 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 </TABLE>
 
 
-
 ## Common error codes
 
 ### 0xC1900101
@@ -163,6 +186,32 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
+
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x20004</B>
+</TABLE>
+
+<P><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows Setup encountered an error during the SAFE_OS with the INSTALL_RECOVERY_ENVIRONMENT operation
+<BR>This is generally caused by out-of-date drivers. 
+</TABLE>
+</TD>
+
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Uninstall antivirus applications.
+<BR>Remove all unused SATA devices.
+<BR>Remove all unused devices and drivers.
+<BR>Update drivers and BIOS.
+</TABLE>
+</TD>
+</TR>
 
 <TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
@@ -240,6 +289,32 @@ Open the Setuperr.log and Setupact.log files in the %windir%\Panther directory, 
 Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.
 <BR>Contact your hardware vendor to obtain updated device drivers.
 <BR>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process. 
+</TABLE>
+</TD>
+</TR>
+
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x3000D</B>
+</TABLE>
+
+<P><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Installation failed during the FIRST_BOOT phase while attempting the MIGRATE_DATA operation.
+<BR>This can occur due to a problem with a display driver.
+
+</TABLE>
+</TD>
+
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.
+<BR>Update or uninstall the display driver.
 </TABLE>
 </TD>
 </TR>
@@ -365,7 +440,8 @@ Here is a mitigation procedure.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a cause.
+The installation failed during the second boot phase while attempting the MIGRATE_DATA operation. 
+<BR>This issue can occur due to an application or driver incompatibility.  
 
 </TABLE>
 </TD>
@@ -376,7 +452,11 @@ Here is a cause.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a mitigation procedure.
+Clean boot into Windows, and then attempt the upgrade to Windows 10.<BR>
+
+For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/en-us/kb/929135).
+
+<P>Ensure you select the option to "Download and install updates (recommended)."
 
 </TABLE>
 </TD>
