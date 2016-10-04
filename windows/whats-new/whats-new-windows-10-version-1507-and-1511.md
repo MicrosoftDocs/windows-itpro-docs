@@ -197,7 +197,7 @@ Event ID 6416 has been added to track when an external device is detected throug
 The following sections describe the new and changed functionality in the TPM for Windows 10:
 -   [Device health attestation](#bkmk-dha)
 -   [Microsoft Passport](microsoft-passport.md) support
--   [Device Guard](device-guard-overview.md) support
+-   [Device Guard](../keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md) support
 -   [Credential Guard](../keep-secure/credential-guard.md) support
 
 ### <a href="" id="bkmk-dha"></a>Device health attestation

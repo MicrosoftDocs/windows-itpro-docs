@@ -36,14 +36,3 @@ Documents related to the Microsoft Surface Hub.
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
