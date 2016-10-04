@@ -191,16 +191,6 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr> <td> <p> Turn off the advertising ID </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
-<tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components </strong></p> </td> 
-</tr> 
-<tr> <td> <p> Do not show Windows Tips </p> </td> <td> <p> Enabled</p> </td> 
-</tr> 
-<tr> <td> <p> Turn off Microsoft consumer experiences </p> </td> <td> <p> Enabled</p> </td> 
-</tr> 
-<tr> <td> <p> Microsoft Passport for Work </p> </td> <td> <p> Disabled</p> </td>
-</tr> 
-<tr> <td> <p> Prevent the usage of OneDrive for file storage </p> </td> <td> <p> Enabled</p> </td>
-</tr> 
 <tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Biometrics</strong></p> </td> 
 </tr> 
 <tr> <td> <p> Allow the use of biometrics </p> </td> <td> <p> Disabled</p> </td>
@@ -208,6 +198,11 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 <tr> <td> <p> Allow users to log on using biometrics </p> </td> <td> <p> Disabled</p> </td> 
 </tr> 
 <tr> <td> <p> Allow domain users to log on using biometrics </p> </td> <td> <p> Disabled</p> </td> 
+</tr> 
+<tr><td colspan="2"><strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Cloud Content</strong></td></tr>
+<tr> <td> <p> Do not show Windows Tips </p> </td> <td> <p> Enabled</p> </td> 
+</tr> 
+<tr> <td> <p> Turn off Microsoft consumer experiences </p> </td> <td> <p> Enabled</p> </td> 
 </tr> 
 <tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>Windows Components</strong>><strong>Data Collection and Preview Builds</strong></p> </td> 
 </tr> 
@@ -235,9 +230,17 @@ The **Set up School PCs** app produces a specialized provisioning package that m
 </tr> 
 <tr> <td> <p> Configure corporate home pages </p> </td> <td> <p> Enabled, about:blank</p> </td> 
 </tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong> > <strong>Windows Components</strong> > <strong>OneDrive</strong></p> </td> 
+</tr> 
+<tr> <td> <p> Prevent the usage of OneDrive for file storage </p> </td> <td> <p> Enabled</p> </td>
+</tr> 
 <tr> <td colspan="2"> <p> <strong>Admin Templates</strong> > <strong>Windows Components</strong> > <strong>Search</strong></p> </td> 
 </tr> 
 <tr> <td> <p> Allow Cortana </p> </td> <td> <p> Disabled</p> </td> 
+</tr> 
+<tr> <td colspan="2"> <p> <strong>Admin Templates</strong> > <strong>Windows Components</strong> > <strong>Windows Hello for Business</strong></p> </td> 
+</tr> 
+<tr> <td> <p> Use Windows Hello for Business </p> </td> <td> <p> Disabled</p> </td>
 </tr> 
 <tr> <td colspan="2"> <p> <strong>Windows Settings</strong> > <strong>Security Settings</strong> > <strong>Local Policies</strong> > <strong>Security Options</strong></p> </td> 
 </tr> 

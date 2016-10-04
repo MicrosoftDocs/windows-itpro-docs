@@ -5,6 +5,7 @@ ms.assetid: d82902e4-de9c-4bc4-afe0-41d649b83ce7
 keywords: settings, database, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus

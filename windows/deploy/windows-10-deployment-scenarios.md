@@ -5,6 +5,7 @@ ms.assetid: 7A29D546-52CC-482C-8870-8123C7DC04B5
 keywords: upgrade, in-place, configuration, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
 ---

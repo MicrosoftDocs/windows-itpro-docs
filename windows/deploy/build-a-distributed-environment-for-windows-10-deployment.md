@@ -5,6 +5,7 @@ ms.assetid: a6cd5657-6a16-4fff-bfb4-44760902d00c
 keywords: replication, replicate, deploy, configure, remote
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
@@ -76,6 +77,7 @@ Setting up DFS-R for replication is a quick and straightforward process. You pre
     ![figure 3](images/mdt-10-fig03.png)
 
     Figure 3. Sharing the **E:\\MDTProduction folder** on MDT02.
+
 ### Configure the deployment share
 
 When you have multiple deployment servers sharing the same content, you need to configure the Bootstrap.ini file with information about which server to connect to based on where the client is located. In MDT, that can be done by using the DefaultGateway property.
@@ -146,6 +148,7 @@ Once the MDT01 and MDT02 servers are prepared, you are ready to configure the ac
     1.  In the **Staging** tab, set the quota to **20480 MB**.
     2.  In the **Advanced** tab, set the quota to **8192 MB**.
         In this scenario the size of the deployment share is known, but you might need to change the values for your environment. A good rule of thumb is to get the size of the 16 largest files and make sure they fit in the staging area. Here is a Windows PowerShell example that calculates the size of the 16 largest files in the E:\\MDTProduction deployment share:
+        
         ``` syntax
         (Get-ChildItem E:\MDTProduction -Recurse | Sort-Object Length -Descending | Select-Object -First 16 | Measure-Object -Property Length -Sum).Sum /1GB
         ```

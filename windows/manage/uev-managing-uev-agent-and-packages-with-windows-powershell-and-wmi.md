@@ -14,7 +14,9 @@ ms.prod: w10
 **Applies to**
 -   Windows 10, version 1607
 
-You can use Windows Management Instrumentation (WMI) and Windows PowerShell to manage User Experience Virtualization (UE-V) service configuration and synchronization behavior. For a complete list of UE-V PowerShell cmdlets, see [UE-V Cmdlet Reference](https://technet.microsoft.com/library/dn520275.aspx).
+You can use Windows Management Instrumentation (WMI) and Windows PowerShell to manage User Experience Virtualization (UE-V) service configuration and synchronization behavior. 
+
+>**Note**&nbsp;&nbsp;For a complete list of UE-V cmdlets, see [User Experience Virtualization in Windows PowerShell](https://technet.microsoft.com/library/mt772286.aspx).
 
 
 ## To configure the UE-V service with Windows PowerShell
@@ -67,23 +69,23 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     <td align="left"><p>Gets the details for each configuration setting. Displays where the setting is configured or if it uses the default value. Is displayed if the current setting is valid.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Set-UevConfiguration -Computer –EnableDontSyncWindows8AppSettings</code></p></td>
+    <td align="left"><p><code>Set-UevConfiguration -Computer -EnableDontSyncWindows8AppSettings</code></p></td>
     <td align="left"><p>Configures the UE-V service to not synchronize any Windows apps for all users on the computer.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><code>Set-UevConfiguration -CurrentComputerUser – EnableDontSyncWindows8AppSettings</code></p></td>
+    <td align="left"><p><code>Set-UevConfiguration -CurrentComputerUser -EnableDontSyncWindows8AppSettings</code></p></td>
     <td align="left"><p>Configures the UE-V service to not synchronize any Windows apps for the current computer user.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Set-UevConfiguration -Computer –EnableFirstUseNotification</code></p></td>
+    <td align="left"><p><code>Set-UevConfiguration -Computer -EnableFirstUseNotification</code></p></td>
     <td align="left"><p>Configures the UE-V service to display notification the first time the service runs for all users on the computer.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><code>Set-UevConfiguration -Computer –DisableFirstUseNotification</code></p></td>
+    <td align="left"><p><code>Set-UevConfiguration -Computer -DisableFirstUseNotification</code></p></td>
     <td align="left"><p>Configures the UE-V service to not display notification the first time that the service runs for all users on the computer.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Set-UevConfiguration -Computer –EnableSettingsImportNotify</code></p></td>
+    <td align="left"><p><code>Set-UevConfiguration -Computer -EnableSettingsImportNotify</code></p></td>
     <td align="left"><p>Configures the UE-V service to notify all users on the computer when settings synchronization is delayed.</p>
     <p>Use the <em>DisableSettingsImportNotify</em> parameter to disable notification.</p></td>
     </tr>
@@ -93,27 +95,27 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     <p>Use the <em>DisableSettingsImportNotify</em> parameter to disable notification.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Set-UevConfiguration -Computer –EnableSyncUnlistedWindows8Apps</code></p></td>
-    <td align="left"><p>Configures the UE-V service to synchronize all Windows apps that are not explicitly disabled by the Windows app list for all users of the computer. For more information, see &quot;Get-UevAppxPackage&quot; in [Managing UE-V 2.x Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).</p>
+    <td align="left"><p><code>Set-UevConfiguration -Computer -EnableSyncUnlistedWindows8Apps</code></p></td>
+    <td align="left"><p>Configures the UE-V service to synchronize all Windows apps that are not explicitly disabled by the Windows app list for all users of the computer. For more information, see &quot;Get-UevAppxPackage&quot; in [Managing UE-V Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).</p>
     <p>Use the <em>DisableSyncUnlistedWindows8Apps</em> parameter to configure the UE-V service to synchronize only Windows apps that are explicitly enabled by the Windows App List.</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p><code>Set-UevConfiguration -CurrentComputerUser - EnableSyncUnlistedWindows8Apps</code></p></td>
-    <td align="left"><p>Configures the UE-V service to synchronize all Windows apps that are not explicitly disabled by the Windows app list for the current user on the computer. For more information, see &quot;Get-UevAppxPackage&quot; in [Managing UE-V 2.x Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).</p>
+    <td align="left"><p>Configures the UE-V service to synchronize all Windows apps that are not explicitly disabled by the Windows app list for the current user on the computer. For more information, see &quot;Get-UevAppxPackage&quot; in [Managing UE-V Settings Location Templates Using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).</p>
     <p>Use the <em>DisableSyncUnlistedWindows8Apps</em> parameter to configure the UE-V service to synchronize only Windows apps that are explicitly enabled by the Windows App List.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Set-UevConfiguration –Computer –DisableSync</code></p></td>
+    <td align="left"><p><code>Set-UevConfiguration -Computer -DisableSync</code></p></td>
     <td align="left"><p>Disables UE-V for all the users on the computer.</p>
     <p>Use the <em>EnableSync</em> parameter to enable or re-enable.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><code>Set-UevConfiguration –CurrentComputerUser -DisableSync</code></p></td>
+    <td align="left"><p><code>Set-UevConfiguration -CurrentComputerUser -DisableSync</code></p></td>
     <td align="left"><p>Disables UE-V for the current user on the computer.</p>
     <p>Use the <em>EnableSync</em> parameter to enable or re-enable.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Set-UevConfiguration -Computer –EnableTrayIcon</code></p></td>
+    <td align="left"><p><code>Set-UevConfiguration -Computer -EnableTrayIcon</code></p></td>
     <td align="left"><p>Enables the UE-V icon in the notification area for all users of the computer.</p>
     <p>Use the <em>DisableTrayIcon</em> parameter to disable the icon.</p></td>
     </tr>
@@ -142,7 +144,7 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     <td align="left"><p>Defines a per-user settings storage location.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><code>Set-UevConfiguration –Computer –SettingsTemplateCatalogPath &lt;path to catalog&gt;</code></p></td>
+    <td align="left"><p><code>Set-UevConfiguration -Computer -SettingsTemplateCatalogPath &lt;path to catalog&gt;</code></p></td>
     <td align="left"><p>Sets the settings template catalog path for all users of the computer.</p></td>
     </tr>
     <tr class="even">
@@ -162,11 +164,11 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     <td align="left"><p>Set the synchronization time-out for the current user.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Clear-UevConfiguration –Computer -&lt;setting name&gt;</code></p></td>
+    <td align="left"><p><code>Clear-UevConfiguration -Computer -&lt;setting name&gt;</code></p></td>
     <td align="left"><p>Clears the specified setting for all users on the computer.</p></td>
     </tr>
     <tr class="odd">
-    <td align="left"><p><code>Clear-UevConfiguration –CurrentComputerUser -&lt;setting name&gt;</code></p></td>
+    <td align="left"><p><code>Clear-UevConfiguration -CurrentComputerUser -&lt;setting name&gt;</code></p></td>
     <td align="left"><p>Clears the specified setting for the current user only.</p></td>
     </tr>
     <tr class="even">
@@ -244,7 +246,7 @@ You can use Windows Management Instrumentation (WMI) and Windows PowerShell to m
     <td align="left"><p>Displays the UE-V service configuration that is defined for a computer.</p></td>
     </tr>
     <tr class="even">
-    <td align="left"><p><code>Get-WmiObject –Namespace root\Microsoft\Uev ConfigurationItem</code></p></td>
+    <td align="left"><p><code>Get-WmiObject -Namespace root\Microsoft\Uev ConfigurationItem</code></p></td>
     <td align="left"><p>Displays the details for each configuration item.</p></td>
     </tr>
     <tr class="odd">
@@ -349,3 +351,5 @@ Add or vote on suggestions on the [User Experience Virtualization feedback site]
 [Administering UE-V with Windows PowerShell and WMI](uev-administering-uev-with-windows-powershell-and-wmi.md)
 
 [Administering UE-V](uev-administering-uev.md)
+
+[User Experience Virtualization in Windows PowerShell](https://technet.microsoft.com/library/mt772286.aspx)

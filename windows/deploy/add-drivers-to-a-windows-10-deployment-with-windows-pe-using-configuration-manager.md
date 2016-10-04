@@ -4,6 +4,7 @@ description: In this topic, you will learn how to configure the Windows Preinsta
 ms.assetid: 97b3ea46-28d9-407e-8c42-ded2e45e8d5c
 keywords: deploy, task sequence
 ms.prod: w10
+localizationpriority: high
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus
@@ -35,13 +36,12 @@ This section will show you how to import some network and storage drivers for Wi
 
 5.  On the **Select drivers to include in the boot image** page, select the **Zero Touch WinPE x64** boot image. Also select the **Update distribution points when finished** check box, and click **Next** twice.
 
-![figure 21](images/fig21-add-drivers.png)
+![Add drivers to Windows PE](images/fig21-add-drivers.png "Add drivers to Windows PE")
 
-Figure 21. Add drivers to Windows PE.
+*Figure 21. Add drivers to Windows PE*
 
-**Note**  
-The Updating Boot Image part of the wizard will appear to hang when displaying Done. It will complete in a minute or two.
-
+>[!NOTE]  
+>The Updating Boot Image part of the wizard will appear to hang when displaying Done. It will complete in a minute or two.
  
 
 ## <a href="" id="sec02"></a>Add drivers for Windows 10
@@ -55,31 +55,28 @@ This section illustrates how to add drivers for Windows 10 through an example in
 
 3.  On the **Specify the details for the imported driver** page, click **Categories**, create a category named Windows 10 x64 - HP EliteBook 8560w, and then click **Next**.
 
-    ![figure 22](images/fig22-createcategories.png)
+    ![Create driver categories](images/fig22-createcategories.png "Create driver categories")
 
-    Figure 22. Create driver categories.
+    *Figure 22. Create driver categories*
 
 4.  On the **Select the packages to add the imported driver** page, click **New Package**, use the following settings for the package, and then click **Next**:
 
-    1.  Name: Windows 10 x64 - HP EliteBook 8560w
+    * Name: Windows 10 x64 - HP EliteBook 8560w
 
-    2.  Path: \\\\CM01\\Sources$\\OSD\\DriverPackages\\Windows 10 x64\\HP EliteBook 8560w
+    * Path: \\\\CM01\\Sources$\\OSD\\DriverPackages\\Windows 10 x64\\HP EliteBook 8560w
 
-    **Note**  
-    The package path does not yet exist, so you have to type it in. The wizard will create the new package in that folder.
-
+    >[!NOTE]  
+    >The package path does not yet exist, so you have to type it in. The wizard will create the new package in that folder.
      
 
 5.  On the **Select drivers to include in the boot image** page, do not select anything, and click **Next** twice. After the package has been created, click **Close**.
 
-**Note**  
-If you want to monitor the driver import process more closely, you can open the SMSProv.log file during driver import.
-
- 
-
-![figure 23](images/mdt-06-fig26.png)
-
-Figure 23. Drivers imported and a new driver package created.
+    >[!NOTE]  
+    >If you want to monitor the driver import process more closely, you can open the SMSProv.log file during driver import.
+  
+    ![Drivers imported and a new driver package created](images/mdt-06-fig26.png "Drivers imported and a new driver package created")
+  
+    *Figure 23. Drivers imported and a new driver package created*
 
 ## Related topics
 

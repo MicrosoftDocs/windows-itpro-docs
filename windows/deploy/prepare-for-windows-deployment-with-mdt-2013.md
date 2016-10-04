@@ -5,6 +5,7 @@ ms.assetid: 5103c418-0c61-414b-b93c-a8e8207d1226
 keywords: deploy, system requirements
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
@@ -91,9 +92,10 @@ By default MDT stores the log files locally on the client. In order to capture a
 
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create and share the **E:\\Logs** folder by running the following commands in an elevated Windows PowerShell prompt:
+
     ``` syntax
     New-Item -Path E:\Logs -ItemType directory
-    New-SmbShare ?Name Logs$ ?Path E:\Logs -ChangeAccess EVERYONE
+    New-SmbShare -Name Logs$ -Path E:\Logs -ChangeAccess EVERYONE
     icacls E:\Logs /grant '"MDT_BA":(OI)(CI)(M)'
     ```
 

@@ -9,6 +9,7 @@
 #### [Prepare your environment](upgrade-analytics-prepare-your-environment.md)
 #### [Resolve application and driver issues](upgrade-analytics-resolve-issues.md)
 #### [Deploy Windows](upgrade-analytics-deploy-windows.md)
+#### [Review site discovery](upgrade-analytics-review-site-discovery.md)
 ### [Troubleshoot Upgrade Analytics](troubleshoot-upgrade-analytics.md)
 ## [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 ### [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)

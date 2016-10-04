@@ -5,6 +5,7 @@ ms.assetid: B0FA27D9-A206-4E35-9AE6-74E70748BE64
 keywords: deploy, upgrade, update, hardware
 ms.prod: w10
 ms.mktglfcycl: plan
+localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
 ---

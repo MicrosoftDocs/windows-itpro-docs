@@ -5,6 +5,7 @@ ms.assetid: 57c81667-1019-4711-b3de-15ae9c5387c7
 keywords: upgrade, install, installation, computer refresh
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
 ---

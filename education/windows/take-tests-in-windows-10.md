@@ -9,7 +9,7 @@ ms.pagetype: edu
 author: jdeckerMS
 ---
 
-# Take tests in Windows 10 
+# Take tests in Windows 10
 **Applies to:**
 
 -   Windows 10   
@@ -42,7 +42,6 @@ Many schools use online testing for formative and summative assessments. It's cr
 
 ## Related topics
 
+[Create tests using Microsoft Forms](create-tests-using-microsoft-forms.md)
+
 [Take a Test app technical reference](take-a-test-app-technical.md)
-
-
-

@@ -100,6 +100,7 @@ Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (
 11. (*Optional*) In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
     -   **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
     -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
+    
        > [!IMPORTANT]  
        > We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently.
         

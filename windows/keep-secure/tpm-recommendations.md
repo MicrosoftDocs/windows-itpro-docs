@@ -84,7 +84,7 @@ For more info, see [fTPM: A Firmware-based TPM 2.0 Implementation](http://resear
 
 ## Is there any importance for TPM for consumer?
 
-For end consumers, TPM is behind the scenes but still very relevant for Hello, Passport and in the future, many other key features in Windows 10. It offers the best Passport experience, helps encrypt passwords, secures streaming high quality 4K content and builds on our overall Windows 10 experience story for security as a critical pillar.  Using Windows on a system with a TPM enables a deeper and broader level of security coverage.
+For end consumers, TPM is behind the scenes but still very relevant for Hello, Passport and in the future, many other key features in Windows 10. It offers the best Passport experience, helps encrypt passwords, and builds on our overall Windows 10 experience story for security as a critical pillar.  Using Windows on a system with a TPM enables a deeper and broader level of security coverage.
 
 ## TPM 2.0 Compliance for Windows 10
 

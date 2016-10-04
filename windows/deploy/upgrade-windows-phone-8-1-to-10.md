@@ -4,6 +4,7 @@ description: This article describes how to upgrade eligible Windows Phone 8.1 de
 keywords: upgrade, update, windows, phone, windows 10, mdm, mobile
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: Jamiejdt
