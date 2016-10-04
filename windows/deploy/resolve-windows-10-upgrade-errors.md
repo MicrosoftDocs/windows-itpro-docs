@@ -480,7 +480,8 @@ Here is a mitigation procedure.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a cause
+The installation failed during the second boot phase while attempting the MIGRATE_DATA operation. 
+<BR>This issue can occur due to an application or driver incompatibility.
 
 </TABLE>
 </TD>
@@ -491,7 +492,9 @@ Here is a cause
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a mitigation procedure.
+Clean boot into Windows, and then attempt the upgrade to Windows 10. For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/en-us/kb/929135).
+
+<P>Ensure you select the option to "Download and install updates (recommended)."
 
 </TABLE>
 </TD>
@@ -511,8 +514,7 @@ Here is a mitigation procedure.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-The installation failed during the second boot phase while attempting the MIGRATE_DATA operation. 
-<BR>This issue can occur due to an application or driver incompatibility.  
+Need cause here.  
 
 </TABLE>
 </TD>
@@ -523,11 +525,7 @@ The installation failed during the second boot phase while attempting the MIGRAT
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Clean boot into Windows, and then attempt the upgrade to Windows 10.<BR>
-
-For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/en-us/kb/929135).
-
-<P>Ensure you select the option to "Download and install updates (recommended)."
+Need mitigation here.
 
 </TABLE>
 </TD>
