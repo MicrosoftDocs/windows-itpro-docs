@@ -57,7 +57,7 @@ Note: If only a result code is returned, this can be because a tool is being use
 
 Result codes can be matched to the type of error encountered. To match a result code to an error:
 
-1. Identify the error code type, using the first hexidecimal digit:
+1. Identify the error code type, either Win32 or NTSTATUS, using the first hexidecimal digit:
         <BR>8 = Win32 error code (ex: 0x**8**0070070)
         <BR>C = NTSTATUS value (ex: 0x**C**1900107)
 2. Write down the last 4 digits of the error code (ex: 0x8007**0070** = 0070). These digits correspond to the last 16 bits of the [HRESULT](https://msdn.microsoft.com/en-us/library/cc231198.aspx) or the [NTSTATUS](https://msdn.microsoft.com/en-us/library/cc231200.aspx) structure.
@@ -180,7 +180,13 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 
 ### 0xC1900101
 
-A common result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the SafeOS phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as the minidump file (($Windows.~bt\Sources\Rollback\setupmem.dmp), event logs (($Windows.~bt\Sources\Rollback\*.evtx), and the device install log ($Windows.~bt\Sources\Rollback\setupapi\setupapi.dev.log). The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  To resolve a rollback due to driver conflicts, run setup in the absence of drivers by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process. 
+A common result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the Downlevel phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as:<BR>
+
+- The minidump file: $Windows.~bt\Sources\Rollback\setupmem.dmp, 
+- Event logs: $Windows.~bt\Sources\Rollback\*.evtx 
+- The device install log: $Windows.~bt\Sources\Rollback\setupapi\setupapi.dev.log
+
+The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  To resolve a rollback due to driver conflicts, run setup in the absence of drivers by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process. 
 
 <P>See the following general troubleshooting procedures associated with a result code of 0xC1900101:
 
@@ -392,9 +398,74 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 
 ### 0x800xxxxx
 
+Result codes starting with the digits 0x800 are also relatively common. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
 
+<P>See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
+
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+8000405 - 0x20007
+
+</TABLE>
+
+<P><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a cause.
+
+</TABLE>
+</TD>
+
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a mitigation procedure.
+
+</TABLE>
+</TD>
+</TR>
+
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+800704B8 - 0x3001A
+
+</TABLE>
+
+<P><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a cause.
+
+</TABLE>
+</TD>
+
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Here is a mitigation procedure.
+
+</TABLE>
+</TD>
+</TR>
+
 <TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <TABLE cellspacing=0 cellpadding=0>
@@ -494,67 +565,9 @@ Here is a mitigation procedure.
 </TR>
 
 
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-800704B8 - 0x3001A
 
-</TABLE>
-
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
-Here is a cause.
-
-</TABLE>
-</TD>
-
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
-
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
-Here is a mitigation procedure.
-
-</TABLE>
-</TD>
-</TR>
-
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
-
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
-8000405 - 0x20007
-
-</TABLE>
-
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
-Here is a cause.
-
-</TABLE>
-</TD>
-
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
-
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
-Here is a mitigation procedure.
-
-</TABLE>
-</TD>
-</TR>
 
 </TABLE>
 
