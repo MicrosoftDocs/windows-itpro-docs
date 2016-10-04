@@ -18,6 +18,21 @@ localizationpriority: high
 
 This topic provides a brief introduction to Windows 10 installation processes and provides resolution procedures you can use to resolve common problems.
 
+## In this topic
+
+The following topics and procedures are provided in this guide:
+
+- [The Windows 10 upgrade process](#the-windows-10-upgrade-process): An explanation of phases used during the upgrade process.<BR>
+- [Quick fixes](#quick-fixes): Steps you can take to eliminate common Windows upgrade errors.<BR>
+- [Upgrade error codes](#upgrade-error-codes): The composition of an error code is explained.
+    - [Result codes](#result-codes): Information about result codes.
+    - [Extend codes](#extend-codes): Information about extend codes.
+- [Log files](#log-files): A list and description of log files useful for troubleshooting.
+- [Common error codes](#common-error-codes): Causes and mitigation procedures associated with some common error codes.
+    - [0xC1900101](#0xC1900101): Information about the 0xC1900101 result code.
+    - [0x800xxxxx](#0x800xxxxx): Information about result codes that start with 0x800.
+- [Other error codes](#less-common-error-codes): Some additional causes and mitigation procedures associated with various error codes.
+
 ## The Windows 10 upgrade process
 
 The Windows Setup application is used to upgrade a computer to Windows 10, or to perform a clean installation. Windows Setup starts and restarts the computer, gathers information, copies files, and creates or adjusts configuration settings. When performing an operating system upgrade, Windows Setup uses the following phases:
@@ -39,6 +54,20 @@ The Windows Setup application is used to upgrade a computer to Windows 10, or to
 DU = Driver/device updates.<BR>
 OOBE = Out of box experience.<BR>
 WIM = Windows image (Microsoft)
+
+## Quick fixes
+
+The following steps can resolve many common Windows upgrade problems.
+
+1. Update Windows so that all available recommended updates are installed.
+2. Uninstall non-Microsoft antivirus software. 
+<BR>    - Use Windows Defender for protection during the upgrade. 
+<BR>    - Verify compatibility information and re-install antivirus applications after the upgrade. 
+3. Uninstall all nonessential software. 
+4. Remove nonessential external hardware. 
+5. Update firmware and drivers.
+6. Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.
+
 
 ## Upgrade error codes
 
@@ -570,7 +599,7 @@ Here is a mitigation procedure.
 </TABLE>
 
 
-## Common errors I've edited but don't know how to classify
+## Other error codes
 
 <table>
 
