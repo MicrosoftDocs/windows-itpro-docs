@@ -204,6 +204,9 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 
 </TABLE>
 
+### Analyzing log files
+
+
 
 ## Common error codes
 
@@ -447,7 +450,7 @@ Result codes starting with the digits 0x800 are also relatively common. These er
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a cause.
+An unspecified error occurred with a driver during the SafeOS phase.
 
 </TABLE>
 </TD>
@@ -458,7 +461,7 @@ Here is a cause.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a mitigation procedure.
+Analyze logs.
 
 </TABLE>
 </TD>
@@ -489,7 +492,7 @@ Here is a cause.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a mitigation procedure.
+Disable AV, disconnect devices, clean boot.
 
 </TABLE>
 </TD>
@@ -884,9 +887,6 @@ Use the Media Creation tool and create an ISO and then start the upgrade of the 
 
 
 </TABLE>
-
-## Appendix A: Example setupact.log
-
 
 
 ## Related topics
