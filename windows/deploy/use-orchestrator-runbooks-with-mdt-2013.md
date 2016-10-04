@@ -5,6 +5,7 @@ ms.assetid: 68302780-1f6f-4a9c-9407-b14371fdce3f
 keywords: web services, database
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
@@ -139,6 +140,7 @@ Make sure the account you are using has permissions to run runbooks on the Orche
  
 1.  On PC0001, log on as **CONTOSO\\MDT\_BA**.
 2.  Using an elevated command prompt (run as Administrator), type the following command:
+
     ``` syntax
     cscript \\MDT01\MDTProduction$\Scripts\Litetouch.vbs
     ```

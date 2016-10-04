@@ -33,7 +33,7 @@ You should fill out one list for each Surface Hub you need to configure, althoug
 <p>If your network uses a proxy for network and/or Internet access, you must provide a script or server/port information.</p>
 </td>
 <td>
-<p>Proxy script: http://contoso/proxy.pa </br>
+<p>Proxy script: <code>http://contoso/proxy.pa</code> </br>
 - OR - </br>
 Server and port info: 10.10.10.100, port 80
 </p>

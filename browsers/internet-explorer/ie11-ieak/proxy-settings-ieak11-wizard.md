@@ -20,7 +20,7 @@ Using a proxy server lets you limit access to the Internet. You can also use the
 1.  Check the **Enable proxy settings** box if you want to use proxy servers for any of your services.
 
 2.  Type the address of the proxy server you want to use for your services into the **Address of proxy** box. In most cases, a single proxy server is used for all of your services.<p>
-Proxy locations that don’t begin with a protocol (like, http:// or ftp://) are assumed to be a CERN-type HTTP proxy. For example, the entry *proxy* is treated the same as the entry *http://proxy*.
+Proxy locations that don’t begin with a protocol (like, http:// or ftp://) are assumed to be a CERN-type HTTP proxy. For example, the entry *proxy* is treated the same as the entry `http://proxy`.
 
 3.  Type the port for each service. The default value is *80*.
 

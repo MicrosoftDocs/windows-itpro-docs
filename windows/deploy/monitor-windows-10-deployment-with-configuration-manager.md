@@ -5,6 +5,7 @@ ms.assetid: 4863c6aa-6369-4171-8e1a-b052ca195fce
 keywords: deploy, upgrade
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
 ---
@@ -24,32 +25,28 @@ To monitor an operating system deployment conducted through System Center 2012 R
 
 1.  On CM01, using the Deployment Workbench, expand **MDT Production**, and use the **Monitoring** node to view the deployment process (press **F5** to refresh).
 
-    **Note**  
-    It takes a little while for the task sequence to start reporting monitor information, so if PC0001 does not appear when you press F5 the first time, wait 20 seconds and try again.
+    >[!NOTE]
+    >It takes a little while for the task sequence to start reporting monitor information, so if PC0001 does not appear when you press F5 the first time, wait 20 seconds and try again.
 
-     
-
-    ![figure 33](images/mdt-06-fig39.png)
-
-    Figure 33. PC0001 being deployed by Configuration Manager.
+    ![PC0001 being deployed by Configuration Manager](images/mdt-06-fig39.png)
+    
+    *Figure 33. PC0001 being deployed by Configuration Manager*
 
 2.  When you see the PC0001 entry, double-click **PC0001**, and then click **DaRT Remote Control** and review the **Remote Control** option.
 
 3.  The task sequence will now run and do the following:
 
-    1.  Install the Windows 10 operating system.
+    * Install the Windows 10 operating system.
 
-    2.  Install the Configuration Manager client and the client hotfix.
+    * Install the Configuration Manager client and the client hotfix.
 
-    3.  Join the machine to the domain.
+    * Join the machine to the domain.
 
-    4.  Install the application added to the task sequence.
-
-    **Note**  
-    You also can use the built-in reports to get information about ongoing deployments. For example, a task sequence report gives you a quick overview of the task sequence progress.
-
-     
-
+    * Install the application added to the task sequence.
+    
+    >[!NOTE]
+    >You also can use the built-in reports to get information about ongoing deployments. For example, a task sequence report gives you a quick overview of the task sequence progress.
+  
 4.  If time permits, allow the deployment of PC0001 to complete. Then log in as Administrator in the CONTOSO domain and verify that Adobe Reader XI was installed.
 
 ## Related topics

@@ -5,6 +5,7 @@ ms.assetid: fb93f514-5b30-4f4b-99dc-58e6860009fa
 keywords: deployment, image, UEFI, task sequence
 ms.prod: w10
 ms.mktglfcycl: deploy
+localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
 ---

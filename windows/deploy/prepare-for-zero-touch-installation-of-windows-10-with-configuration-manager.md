@@ -4,6 +4,7 @@ description: This topic will walk you through the process of integrating Microso
 ms.assetid: 06e3a221-31ef-47a5-b4da-3b927cb50d08
 keywords: install, configure, deploy, deployment
 ms.prod: w10
+localizationpriority: high
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus

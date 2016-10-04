@@ -29,14 +29,11 @@ You should read and understand the following information before reading this doc
 **Note**  
 Some terms used in this document may have different meanings depending on external source and context. For more information about terms used in this document followed by an asterisk <strong>*</strong> review the [Application Virtualization Performance Guidance Terminology](#bkmk-terms1) section of this document.
 
- 
-
 Finally, this document will provide you with the information to configure the computer running App-V client and the environment for optimal performance. Optimize your virtual application packages for performance using the sequencer, and to understand how to use User Experience Virtualization (UE-V) or other user environment management technologies to provide the optimal user experience with App-V in both Remote Desktop Services (RDS) and non-persistent virtual desktop infrastructure (VDI).
 
 To help determine what information is relevant to your environment you should review each section’s brief overview and applicability checklist.
 
 ## <a href="" id="---------app-v-5-1-in-stateful--non-persistent-deployments"></a> App-V in stateful\* non-persistent deployments
-
 
 This section provides information about an approach that helps ensure a user will have access to all virtual applications within seconds after logging in. This is achieved by uniquely addressing the often long-running App-V publishing refresh. As you will discover the basis of the approach, the fastest publishing refresh, is one that doesn’t have to actually do anything. A number of conditions must be met and steps followed to provide the optimal user experience.
 
@@ -125,7 +122,7 @@ IT Administration
 
  
 
-### <a href="" id="bkmk-us"></a>Usage Scenario
+### <a href="" id="bkmk-us"></a>Usage Scenarios
 
 As you review the two scenarios, keep in mind that these approach the extremes. Based on your usage requirements, you may choose to apply these steps to a subset of users, virtual application packages, or both.
 
@@ -143,9 +140,9 @@ As you review the two scenarios, keep in mind that these approach the extremes. 
 <tbody>
 <tr class="odd">
 <td align="left"><p>To provide the most optimal user experience, this approach leverages the capabilities of a UPM solution and requires additional image preparation and can incur some additional image management overhead.</p>
-<p>The following describes many performance improvements in stateful non-persistent deployments. For more information, see the <strong>Sequencing Steps to Optimize Packages for Publishing Performance</strong> and reference to <strong>App-V Sequencing Guide</strong> in the <strong>See Also section of this document</strong>.</p></td>
+<p>The following describes many performance improvements in stateful non-persistent deployments. For more information, see [Sequencing Steps to Optimize Packages for Publishing Performance](#sequencing-steps-to-optimize-packages-for-publishing-performance) later in this topic.</p></td>
 <td align="left"><p>The general expectations of the previous scenario still apply here. However, keep in mind that VM images are typically stored in very costly arrays; a slight alteration has been made to the approach. Do not pre-configure user-targeted virtual application packages in the base image.</p>
-<p>The impact of this alteration is detailed in the User Experience Walkthrough section of this document.</p></td>
+<p>The impact of this alteration is detailed in the [User Experience Walk-through](#bkmk-uewt) section of this document.</p></td>
 </tr>
 </tbody>
 </table>
@@ -443,13 +440,11 @@ In a non-persistent environment, it is unlikely these pended operations will be 
 
 The following section contains lists with information about Microsoft documentation and downloads that may be useful when optimizing your environment for performance.
 
-**.NET NGEN Blog and Script (Highly Recommended)**
+<!-- Following bold text used to say **.NET NGEN Blog and Script (Highly Recommended)**  but the script doesn't seem to exist any more. The link to the script was [Script](http://aka.ms/DrainNGenQueue)  -->
 
-About NGEN technology
+**.NET NGEN Blog (Highly Recommended)**
 
--   [How to speed up NGEN optimaztion](http://blogs.msdn.com/b/dotnet/archive/2013/08/06/wondering-why-mscorsvw-exe-has-high-cpu-usage-you-can-speed-it-up.aspx)
-
--   [Script](http://aka.ms/DrainNGenQueue)
+-   [How to speed up NGEN optimization](http://blogs.msdn.com/b/dotnet/archive/2013/08/06/wondering-why-mscorsvw-exe-has-high-cpu-usage-you-can-speed-it-up.aspx)
 
 **Windows Server and Server Roles**
 
@@ -483,7 +478,6 @@ Server Performance Tuning Guidelines for
 
 ## Sequencing Steps to Optimize Packages for Publishing Performance
 
-
 Several App-V features facilitate new scenarios or enable new customer deployment scenarios. These following features can impact the performance of the publishing and launch operations.
 
 <table>
@@ -504,7 +498,7 @@ Several App-V features facilitate new scenarios or enable new customer deploymen
 <tbody>
 <tr class="odd">
 <td align="left"><p>No Feature Block 1 (FB1, also known as Primary FB)</p></td>
-<td align="left"><p>No FB1 means the application will launch immediately and stream fault (application requires file, DLL and must pull down over the network) during launch.If there are network limitations, FB1 will:</p>
+<td align="left"><p>No FB1 means the application will launch immediately and stream fault (application requires file, DLL and must pull down over the network) during launch. If there are network limitations, FB1 will:</p>
 <ul>
 <li><p>Reduce the number of stream faults and network bandwidth used when you launch an application for the first time.</p></li>
 <li><p>Delay launch until the entire FB1 has been streamed.</p></li>
