@@ -7,7 +7,6 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 localizationpriority: high
 ms.sitesec: library
-localizationpriority: high
 ms.pagetype: mdt
 author: mtniehaus
 ---
