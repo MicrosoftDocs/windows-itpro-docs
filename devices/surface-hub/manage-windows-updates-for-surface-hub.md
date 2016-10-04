@@ -17,6 +17,8 @@ New releases of the Surface Hub operating system are published through Windows U
 - **Windows Update for Business** - New in Windows 10, Windows Update for Business is a set of features designed to provide enterprises additional control over how and when Windows Update installs releases, while reducing device management costs. Using this method, Surface Hubs are directly connected to Microsoft’s Windows Update service.
 - **Windows Server Update Services (WSUS)** - Set of services that enable IT administrators to obtain the updates that Windows Update determines are applicable to the devices in their enterprise, perform additional testing and evaluation on the updates, and select the updates they want to install. Using this method, Surface Hubs will receive updates from WSUS rather than Windows Update.
 
+You can also configure Surface Hub to receive updates from both Windows Update for Business and WSUS. See [Integrate Windows Update for Business with Windows Server Update Services](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-integrate-wufb#integrate-windows-update-for-business-with-windows-server-update-services) for details.
+
 | Capabilities | Windows Update for Business | Windows server Update Services (WSUS) |
 | ------------ | --------------------------- | ------------------------------------- |
 | Receive updates directly from Microsoft's Windows Update service, with no additional infrastructure required.  | Yes  | No  |
@@ -24,8 +26,8 @@ New releases of the Surface Hub operating system are published through Windows U
 | Deploy updates to select groups of devices. | Yes | Yes |
 | Define maintenance windows for installing updates. | Yes  | Yes  |
 
-> [!NOTE]
-> You can configure Surface Hub to receive updates from both Windows Update and WSUS. See [Integrate Windows Update for Business with Windows Server Update Services](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-integrate-wufb#integrate-windows-update-for-business-with-windows-server-update-services) for details.
+> [!TIP]
+> Use peer-to-peer content sharing to reduce bandwidth issues during updates. See [Optimize update delivery for Windows 10 updates](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-optimize-windows-10-updates) for details.
 
 > [!NOTE]
 > Surface Hub does not currently support rolling back updates.
