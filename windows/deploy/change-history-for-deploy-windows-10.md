@@ -15,7 +15,7 @@ This topic lists new and updated topics in the [Deploy Windows 10](index.md) doc
 | New or changed topic | Description |
 |----------------------|-------------|
 | [Windows 10 Enterprise E3 in CSP Overview](windows-10-enterprise-e3-overview.md) | New | 
-| [Get started with Upgrade Analytics](upgrade-analytics-get-started) | Updated with prerequisites for site discovery |
+| [Get started with Upgrade Analytics](upgrade-analytics-get-started.md) | Updated with prerequisites for site discovery |
 | [Resolve application and driver issues](upgrade-analytics-resolve-issues.md) | Updated with app status info for Ready For Windows |
 | [Review site discovery](upgrade-analytics-review-site-discovery.md) | New |
 
