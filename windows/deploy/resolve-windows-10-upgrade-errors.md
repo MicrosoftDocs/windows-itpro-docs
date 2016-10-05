@@ -260,7 +260,7 @@ To analyze Windows Setup log files:
 
 For example, assume that searching for the result code "8007042B" reveals the following content from the setuperr.log file:
 
->Some lines in the text below are shortened for readability. In addition, the date and time at the start of each line, formatted as: 2016-09-08 09:20:05, is shortened to minutes and seconds.
+>Some lines in the text below are shortened for readability. In addition, the date and time at the start of each line (ex: 2016-09-08 09:20:05) is shortened to minutes and seconds.
 
 <P><B>setuperr.log</B> content:
 
@@ -294,7 +294,7 @@ Therefore, Windows Setup failed because it was not able to migrate the **C:\User
 
 <P><B>setupact.log</B> content:
 
-<pre style="font-size: 12px; overflow: scroll; white-space:nowrap">
+<pre style="font-size: 12px; overflow: scroll; white-space:nowrap; overflow-y: visible">
 23:50, Warning                 RECAPPLY: Error while moving \\?\C:\Windows.old\Users\user1\Cookies to \\?\C:\Users\user1\Cookies. Error: 0x000000B7
 23:50, Info             MIG    Cannot apply recursively object: C:\Users\user1\Cookies: Win32Exception: Cannot create a file when that file already exists.
 23:50, Warning          MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.
