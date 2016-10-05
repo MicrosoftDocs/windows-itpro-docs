@@ -266,7 +266,7 @@ For example, assume that searching for the result code "8007042B" reveals the fo
 
 <div style="font-family: Consolas; font-size: x-small; line-height: normal; white-space: normal;">
 
-<PRE>
+<pre style="font-size: 10px">
 20:05, Error            SP     Error READ, 0x00000002 while gathering/applying object: 
 23:33, Error            MIG    COnlineWinNTPlatform::AddPathToSearchIndexer - Failed to create CSearchManager instance, error: 0x80070422[gle=0x000003f0]
 23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
