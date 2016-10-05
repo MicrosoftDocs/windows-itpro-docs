@@ -282,7 +282,7 @@ For example, assume that searching for the result code "8007042B" reveals the fo
 
 In the previous text, the third line indicates there was an error **0x00000497** with the folder **C:\Users\user1\Cookies**:
 
-<pre style="font-size: 10px">
+<pre style="font-size: 10px; overflow-y: visible">
 23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
 </PRE>
 
