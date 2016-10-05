@@ -25,9 +25,9 @@ Routes can be configured using the VPNv2/*ProfileName*/RouteList setting in the 
  
 For each route item in the list the following can be specified: 
 
-- **Address**: VPNv2/*ProfileName*/RouteList//*routeRowId*/Address
-- **Prefix size**: VPNv2/*ProfileName*/RouteList//*routeRowId*/Prefix
-- **Exclusion route**: VPNv2/*ProfileName*/RouteList//*routeRowId*/ExclusionRoute
+- **Address**: VPNv2/*ProfileName*/RouteList/*routeRowId*/Address
+- **Prefix size**: VPNv2/*ProfileName*/RouteList/*routeRowId*/Prefix
+- **Exclusion route**: VPNv2/*ProfileName*/RouteList/*routeRowId*/ExclusionRoute
    
    Windows VPN platform now supports the ability to specify exclusion routes that specifically should not go over the physical interface. 
 
