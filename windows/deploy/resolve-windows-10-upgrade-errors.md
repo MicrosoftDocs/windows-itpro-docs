@@ -242,7 +242,7 @@ To analyze Windows Setup log files:
 
 For example, assume that searching for the result code "8007042B" reveals the following content from the setuperr.log file:
 
-<div style="font-family: Consolas; font-size: small; line-height: normal; white-space: normal;">
+<div style="font-family: Consolas; font-size: x-small; line-height: normal; white-space: normal;">
 
 <PRE>
 2016-09-08 09:20:05, Error                 SP     Error READ, 0x00000002 while gathering/applying object: apply-success, Action,CMXEPlugin,C:\$WINDOWS.~BT\Sources\ReplacementManifests,Microsoft-Windows-DirectoryServices-ADAM-Client\adammigrate.dll,{43CCF250-2A74-48c6-9620-FC312EC475D6},Apartment. Will return 2[gle=0x000000cb]
