@@ -242,9 +242,9 @@ To analyze Windows Setup log files:
 
 For example, assume that searching for the result code "8007042B" reveals the following content from the setuperr.log file:
 
-<div style="font-family: Consolas; font-size: x-small; line-height: normal; white-space: normal;">
 
-<PRE>
+
+```text
 2016-09-08 09:20:05, Error                 SP     Error READ, 0x00000002 while gathering/applying object: apply-success, Action,CMXEPlugin,C:\$WINDOWS.~BT\Sources\ReplacementManifests,Microsoft-Windows-DirectoryServices-ADAM-Client\adammigrate.dll,{43CCF250-2A74-48c6-9620-FC312EC475D6},Apartment. Will return 2[gle=0x000000cb]
 2016-09-08 09:23:33, Error                 MIG    COnlineWinNTPlatform::AddPathToSearchIndexer - Failed to create CSearchManager instance, error: 0x80070422[gle=0x000003f0]
 2016-09-08 09:23:50, Error                 SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
@@ -257,24 +257,19 @@ For example, assume that searching for the result code "8007042B" reveals the fo
 2016-09-08 09:23:52, Error                 SP     Operation execution failed: 13. hr = 0x8007042B[gle=0x000000b7]
 2016-09-08 09:23:52, Error                 SP     Operation execution failed.[gle=0x000000b7]
 2016-09-08 09:23:52, Error                 SP     CSetupPlatformPrivate::Execute: Failed to deserialize/execute pre-OOBEBoot operations. Error: 0x8007042B[gle=0x000000b7]
-</PRE>
+```
 
-</div>
+In the previous text, the third line indicates there was an error **0x00000497** with the folder **C:\Users\user1\Cookies**:
 
-In this example, the third line indicates there was an error **0x00000497** with the folder **C:\Users\user1\Cookies**:
-
-<div style="font-family: Consolas; font-size: small; line-height: normal; white-space: normal;">
-<PRE>
+```text
 2016-09-08 09:23:50, Error                 SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
-</PRE>
-</div>
+```
 
 </B>The error 0x00000497 is a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) corresponding to: 
 <UL><LI>ERROR_UNABLE_TO_REMOVE_REPLACED: Unable to remove the file to be replaced.</UL> 
 Therefore, Windows Setup failed because it was not able to migrate the **C:\Users\user1\Cookies** folder.  Searching the setupact.log file for additional details, the following text is found:
 
-<div style="font-family: Consolas; font-size: small; line-height: normal; white-space: normal;">
-<PRE>
+```text
 2016-09-08 09:23:50, Warning                      RECAPPLY: Error while moving \\?\C:\Windows.old\Users\user1\Cookies to \\?\C:\Users\user1\Cookies. Error: 0x000000B7
 2016-09-08 09:23:50, Info                  MIG    Cannot apply recursively object: C:\Users\user1\Cookies: Win32Exception: Cannot create a file when that file already exists. [0x000000B7] void __cdecl Mig::CUpgradeTransportStreamProxy::CreateFolder(class UnBCL::String *,int,int *,struct ILocalProgress *)
 2016-09-08 09:23:50, Warning               MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed. Exception class Mig::TargetExistsException: (no exception message provided) void __cdecl Mig::CFileDataStore::Create(class Mig::CDataUnit *)
@@ -282,16 +277,13 @@ Therefore, Windows Setup failed because it was not able to migrate the **C:\User
 2016-09-08 09:23:50, Error                 SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1b\Cookies. Will return 0
 2016-09-08 09:23:50, Error                 MIG    Error 1175 while applying object C:\Users\user1\Cookies. Shell application requested abort
 2016-09-08 09:23:50, Error      [0x08097b] MIG    Abandoning apply due to error for object: C:\Users\user1\Cookies
-</PRE>
-</div>
+```
 
 The setupact.log file also contains information detailing the configuration of files and folders. By searching for "C:\Users\user1\Cookies" we are able to determine that this folder is not installed in the default location:
 
-<div style="font-family: Consolas; font-size: small; line-height: normal; white-space: normal;">
-<PRE>
+```text
 2016-09-08 08:49:12, Info                  MIG    Known folder CSIDL_COOKIES: C:\Users\user1\Cookies, default location: No
-</PRE>
-</div>
+```
 
 This error can be resolved by configuring the folder to use its default location.
 
