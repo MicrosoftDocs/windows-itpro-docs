@@ -59,15 +59,36 @@ WIM = Windows image (Microsoft)
 
 The following steps can resolve many common Windows upgrade problems.
 
-1. Update Windows so that all available recommended updates are installed.
-2. Uninstall non-Microsoft antivirus software. 
+1. [Repair system files](#repair-system-files).
+2. Update Windows so that all available recommended updates are installed.
+3. Uninstall non-Microsoft antivirus software. 
 <BR>    - Use Windows Defender for protection during the upgrade. 
 <BR>    - Verify compatibility information and re-install antivirus applications after the upgrade. 
-3. Uninstall all nonessential software. 
-4. Remove nonessential external hardware. 
-5. Update firmware and drivers.
-6. Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.
+4. Uninstall all nonessential software. 
+5. Remove nonessential external hardware. 
+6. Update firmware and drivers.
+7. Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.
 
+### Repair system files
+
+Use the following commands to repair system files. 
+<BR>It may take several minutes for the command operations to be completed.
+
+To repair damaged system files:
+
+1. Open an elevated command prompt.
+2. Type the following command, and then press ENTER.
+
+```
+DISM.exe /Online /Cleanup-image /Restorehealth
+```
+
+3. Type the following command, and then press ENTER.
+
+```
+sfc /scannow
+```
+For more information, see [Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/en-us/kb/947821).
 
 ## Upgrade error codes
 
@@ -96,6 +117,7 @@ For example:
 - 0x80070070 = Win32 = 0070 = 0x00000070 = ERROR_DISK_FULL
 - 0xC1900107 = NTSTATUS = 0107 = 0x00000107 = STATUS_SOME_NOT_MAPPED
 
+Some result codes are self-explanatory, whereas others are more generic and require further analysis. In the examples shown above, ERROR_DISK_FULL indicates that the hard drive is full and additional room is needed to complete Windows upgrade. The message STATUS_SOME_NOT_MAPPED is more abiguous, and means that an action is pending. In this case, the action pending is often the cleanup operation from a previous installation attempt, which can be resolved with a system reboot. 
 
 ### Extend codes
 
@@ -170,7 +192,7 @@ For example: An extend code of **0x4000D**, represents a problem during phase 4 
 
 ## Log files
 
-Various log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. The most useful log is **setupact.log**. These logs are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
+Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
 
 <P>The following table describes some log files and how to use them for troubleshooting purposes:
 
@@ -204,9 +226,75 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 
 </TABLE>
 
-### Analyzing log files
+### Analyze log files
 
+To analyze Windows Setup log files:
 
+<OL>
+<LI>Determine the Windows Setup error code.
+<LI>Based on the extend code portion of the error code, determine the type and location of a log files to investigate.
+<UL><LI>Review the [Extend codes](#extend-codes) and [Log files](#log-files) sections in this topic for more information.</UL>
+<LI>Open the log file in a text editor, such as notepad.
+<LI>Using the result code portion of the Windows Setup error code, search for the result code in the file and fine the last occurrence of the code.
+<LI>To find the last occurrence of the result code:
+  <OL type="a">
+  <LI>Scroll to the bottom of the file and click after the last character
+  <LI>Click Edit
+  <LI>Click Find
+  <LI>Type the result code
+  <LI>Select Up under Direction
+  <LI>Click Find Next
+  </OL>
+<LI> When you have located the last occurrence of the result code, scroll up a few lines from this location in the file and review the processes that failed just prior to generating the result code.
+<LI> Search for the following important text strings:
+  <UL>
+  <LI><B>Shell application requested abort</B>
+  <LI><B>Abandoning apply due to error for object</B>
+  </UL>
+<LI> Decode other Win32 errors that appear in this section.
+<LI> Search other log files for additional information related to your findings.
+</OL>
+
+For example, assume that searching for the result code "8007042B" reveals the following content from the setuperr.log file:
+
+```
+2016-09-08 09:20:05, Error                 SP     Error READ, 0x00000002 while gathering/applying object: apply-success, Action,CMXEPlugin,C:\$WINDOWS.~BT\Sources\ReplacementManifests,Microsoft-Windows-DirectoryServices-ADAM-Client\adammigrate.dll,{43CCF250-2A74-48c6-9620-FC312EC475D6},Apartment. Will return 2[gle=0x000000cb]
+2016-09-08 09:23:33, Error                 MIG    COnlineWinNTPlatform::AddPathToSearchIndexer - Failed to create CSearchManager instance, error: 0x80070422[gle=0x000003f0]
+2016-09-08 09:23:50, Error                 SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
+2016-09-08 09:23:50, Error                 MIG    Error 1175 while applying object C:\Users\user1\Cookies. Shell application requested abort
+2016-09-08 09:23:50, Error      [0x08097b] MIG    Abandoning apply due to error for object: C:\Users\user1\Cookies
+2016-09-08 09:23:51, Error                        Apply failed. Last error: 0x00000000
+2016-09-08 09:23:51, Error                 SP     pSPDoOnlineApply: Apply operation failed. Error: 0x0000002C
+2016-09-08 09:23:52, Error                 SP     Apply: Migration phase failed. Result: 44
+2016-09-08 09:23:52, Error                 SP     Operation failed: OOBE boot apply. Error: 0x8007042B[gle=0x000000b7]
+2016-09-08 09:23:52, Error                 SP     Operation execution failed: 13. hr = 0x8007042B[gle=0x000000b7]
+2016-09-08 09:23:52, Error                 SP     Operation execution failed.[gle=0x000000b7]
+2016-09-08 09:23:52, Error                 SP     CSetupPlatformPrivate::Execute: Failed to deserialize/execute pre-OOBEBoot operations. Error: 0x8007042B[gle=0x000000b7]
+```
+
+In this example, the third line indicates there was an error 0x00000497 with the folder **C:\Users\user1\Cookies**:
+
+<P>Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0 
+
+The error 0x00000497 is a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) corresponding to: ERROR_UNABLE_TO_REMOVE_REPLACED, Unable to remove the file to be replaced. Therefore, it appears that Windows Setup failed because it was not able to migrate the "C:\Users\user1\Cookies" folder.  Searching the setupact.log file for additional details, the following text is found:
+
+```
+2016-09-08 09:23:50, Warning                      RECAPPLY: Error while moving \\?\C:\Windows.old\Users\user1\Cookies to \\?\C:\Users\user1\Cookies. Error: 0x000000B7
+2016-09-08 09:23:50, Info                  MIG    Cannot apply recursively object: C:\Users\user1\Cookies: Win32Exception: Cannot create a file when that file already exists. [0x000000B7] void __cdecl Mig::CUpgradeTransportStreamProxy::CreateFolder(class UnBCL::String *,int,int *,struct ILocalProgress *)
+2016-09-08 09:23:50, Warning               MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed. Exception class Mig::TargetExistsException: (no exception message provided) void __cdecl Mig::CFileDataStore::Create(class Mig::CDataUnit *)
+2016-09-08 09:23:50, Info                  MIG    Error 1175 during apply of object C:\Users\user1\Cookies. Will ask shell application for resolution.
+2016-09-08 09:23:50, Error                 SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1b\Cookies. Will return 0
+2016-09-08 09:23:50, Error                 MIG    Error 1175 while applying object C:\Users\user1\Cookies. Shell application requested abort
+2016-09-08 09:23:50, Error      [0x08097b] MIG    Abandoning apply due to error for object: C:\Users\user1\Cookies
+```
+
+The setupact.log file also contains information detailing the configuration of files and folders. By searching for "C:\Users\user1\Cookies" we are able to determine that this folder is not installed in the default location:
+
+```
+2016-09-08 08:49:12, Info                  MIG    Known folder CSIDL_COOKIES: C:\Users\user1\Cookies, default location: No
+```
+
+This error can be resolved by configuring the folder to use its default location.
 
 ## Common error codes
 
@@ -602,7 +690,7 @@ Here is a mitigation procedure.
 </TABLE>
 
 
-## Other error codes
+## Other result codes
 
 <table>
 
@@ -683,12 +771,7 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 </td>
 </tr>
 
-<tr>
-<td>display is not compatible</td>
-<td>The display card installed is not compatible with Windows 10.</td>
-<td>Uninstall the display adapter and start the upgrade again. When setup completes successfully, install the latest display adapter driver using Windows Update or by downloading from the computer manufacturers website. Use compatibility mode if necessary.
-</td>
-</tr>
+
 <tr>
 <td>0x8007002 </td>
 <td>This error is specific to upgrades using System Center Configuration Manager 2012 R2 SP1 CU3 (5.00.8238.1403)</td>
@@ -699,18 +782,10 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <P>To resolve this issue, try the OS Deployment test on a client in same VLAN as the Configuration Manager server. Check the network configuration for random client-server connection issues happening on the remote VLAN.
 </td>
 </tr>
-<tr>
-<td>Error 800705B4: This operation returned because the timeout period expired.</td>
-<td>A time out issue set by the task sequence limitation to 180 mins of run time. This can also occur if the System Center client is corrupted.</td>
-<td>Review the SMSTS.log file and verify the following error is displayed:<BR>
-Command line execution failed (800705B4) TSManager 3/30/2016 10:11:29 PM 8920 (0x22D8)<BR>
-Failed to run the action: Upgrade Windows.<BR>
 
-<P>To resolve this issue, increase the default task sequence run time and change the task sequence to have the content downloaded locally prior to installation.
-</td>
 </table>
 
-## Appendix A: Less common errors I haven't edited yet
+## Other error codes
 
 <TABLE>
 
@@ -776,117 +851,7 @@ Some important points to remember if you choose to use an external storage drive
 
 </TABLE>
 
-## Appendix B: Less common errors I haven't edited and don't know how to classify
 
-<TABLE>
-
-<TR><td BGCOLOR="#a0e4fa">Error Codes<td BGCOLOR="#a0e4fa">Cause<td BGCOLOR="#a0e4fa">Mitigation</TD></TR>
-<TR><TD>Contact your system administrator to upgrade Windows Server or Enterprise Editions<TD>This issue occurs if you run the updater tool. The tool works only with the Windows 10 Home, Pro, and Education editions.<TD>To resolve this issue, use a different method to upgrade to Windows 10 version 1607. For example, download the ISO, and then run Setup from it.</TD></TR>
-<TR><TD>When doing an upgrade to Windows Version 1607 is it supported to use a custom install.wim (sysprepped) instead of the default install.wim that comes with Windows Version 1607 <TD>Unsupported<TD>It is not supported to replace the install.wim with custom wim (sysprepped or not). It is supported to do some minor changes to the default install.wim such as injecting latest cumulative update or remove inbox apps. </TD></TR>
-<TR><TD>0xC1420127<TD>The typical conversion of the error means that the specified image in the specified wim is already mounted for read/write access. When we launch the setup.exe, it checks the registry key. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WIMMount\Mounted Images to check for any previously mounted WIM files on the system and if the image is mounted we will get this error.<TD>This error would be very rare on Upgrades of WIN10 specially when upgrading to the Anniversary 1607 Build. This issue has been fixed with the Cumulative updates released in June 2016 for Windows 10. When we perform an Upgrade, it is recommended to Perform a Windows Update first and apply all important updates on the current OS and then start the Upgrade process for Windows 10.</TD></TR>
-<TR><TD>0x8004100E<TD>This error code indicates that there is a problem with an Application that has an Invalid WMI Namespace<TD>In order to fix this problem, we need to open Application Event log and Check for Errors for various applications that could be causing this error. You can use WMIDIAG tool and make sure that the WMI is working well. The step by step instructions are available at: https://technet.microsoft.com/en-us/library/ff404265.aspx</TD></TR>
-<TR><TD>0x80070057<TD>This error means that One or more arguments are invalid<TD>This is a very generic error, and it could be due to any of the issues that we would have on the machine. This error may not be related to Upgrade only. It could be due to any programs; device drivers etc. There is no specific resolution for this error</TD></TR>
-<TR><TD>0x8007007e<TD>The error indicates one of the modules required to upgrade to Windows 10 was not found, some of these modules could be manifest files, COM Classes, DLL or any app packages that may be missing.<TD>"When we start the upgrade of the OS, the Setup engine is responsible to check and confirm that all OS components / modules are running in good health, so that the upgrade succeeds. When we have any issues being reported with manifest files, COM Classes, DLL or any app packages, the setup engine would give this error. In order to fix this error, we would suggest to follow the solutions as below and then start the upgrade again.
-
-Solution 1: System File Checker
-Follow the detailed steps as in: https://support.microsoft.com/en-us/kb/929833
-
-Solution 2: Integrated CHKSUR
-Run DISM Command to verify the health of the system:
-1. Go to Start
-2. Search for """"Command Prompt""""
-3. Right Click and select """"Run as Administrator""""
-4. On the prompt type command: Dism /Online /Cleanup-Image /CheckHealth
-5. Hit Enter.
-6. When you use the /CheckHealth argument, the DISM tool will report whether the image is healthy, repairable, or non-repairable. If the image is non-repairable, you should discard the image and start again. 
-7. If the image is repairable, you can use the /RestoreHealth argument to repair the image. Dism /Online /Cleanup-Image /RestoreHealth.
-"</TD></TR>
-<TR><TD>0x8007045d<TD>This error indicates that we ran into an I/O device error.<TD>"Please ensure that all I/O devices are working correctly. Please review the Device Manager for any errors and troubleshoot accordingly.
-Refer: https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations
-
-Additionally, you can review the following logs to verify which I/O device is causing the problem.
- ""%systemroot%\$Windows.~BT\Sources\Panther\setupact.log"" 
-
-If unable to review the logs, post on Windows 10 TechNet Forum (https://social.technet.microsoft.com/Forums/en-us/home?forum=win10itprogeneral&filter=alltypes&sort=lastpostdesc)
-"</TD></TR>
-<TR><TD>0x80070542<TD>The user executing the Setup.exe does not have all permissions required to complete the upgrade. <TD>"Please ensure the user performing the upgrade is part of Local Administrators group or is a Local Admin.
-
-Additionally, to troubleshoot further you may need to identify which process is preventing access to certain resources required for upgrade process. That can be identify by using Process Monitor (https://technet.microsoft.com/en-us/sysinternals/processmonitor).
-Use this (https://support.microsoft.com/en-us/kb/939896) to understand how to use Process Monitor and then post the results to Windows 10 TechNet Forum (https://social.technet.microsoft.com/Forums/en-us/home?forum=win10itprogeneral&filter=alltypes&sort=lastpostdesc)
-"</TD></TR>
-<TR><TD>0x80070652 <TD>This error occurs when another program is being installed at the same time as the upgrade.<TD>Ensure that the are no other installation currently in progress. If there is, wait for the installation to complete. Restart the computer and do the upgrade to Windows 10.</TD></TR>
-<TR><TD>0x800F0923<TD>This error code indicates that the user entered Safe Mode during the upgrade process.<TD>In order to complete the upgrade successfully, we recommend that you reboot the system in normal mode. If a roll-back occurs, re-initiate the upgrade.</TD></TR>
-<TR><TD>0x80200056<TD>This error indicates when the upgrade attempts to use a security token for some of the operations, but the token is not currently available. <TD>You can attempt to re-login to the machine with a local administrator privileges and attempt to re-run the upgrade. Ensure that you do not logoff until the upgrade is complete.</TD></TR>
-<TR><TD>0xC0000005<TD>The error indicates that the setup process lead to an access violation<TD>"Please ensure the user performing the upgrade is part of Local Administrators group or is a Local Admin.
-
-Additionally, to troubleshoot further you may need to identify which process is preventing access to certain resources required for upgrade process. That can be identify by using Process Monitor (https://technet.microsoft.com/en-us/sysinternals/processmonitor).
-Use this (https://support.microsoft.com/en-us/kb/939896) to understand how to use Process Monitor and then post the results to Windows 10 TechNet Forum (https://social.technet.microsoft.com/Forums/en-us/home?forum=win10itprogeneral&filter=alltypes&sort=lastpostdesc)
-"</TD></TR>
-<TR><TD>0XC0000428<TD>"This error occurs when the digital signatures for one of the Boot Critical Drivers has not been verified. In most cases, we will see an error on Bootup which will be similar to as below:
-File: \Windows\system32\boot\winload.exe
-Status:0xc0000428
-Info: Windows cannot verify the digital signature for this file."<TD>"In order to fix this error, we need to look for the file that is causing the issue. The file listed in the cause section may vary as well. When this error occurs, the machine / device will show a bluescreen and will not be in a useable state. At this point, we would need to perform Automatic Repair using Windows 10 installation media. The Drivers, conflicts with other programs, malware, and memory can all cause startup problems. 
-Automatic repair can detect and fix problems that prevent your PC from starting. Refer to the steps:
-
-a. Insert the installation USB media and boot Windows Technical Preview from it.
-b. In the ‘Windows setup’ page select the ‘language to install’, ‘Time and currency format’ and the ‘keyboard or input method’ and click on ‘next’.
-c. Click on ‘Repair your computer’ and select ‘Troubleshoot’.
-d. Select ‘Automatic Repair’ and select the operating system.
-e. You will then see a blue screen and an option to choose. Choose the option Troubleshoot and select advanced options.
- f. You may choose Automatic Repair from Advanced boot option.
- g. Follow the instructions.
-
-The above steps should fix the issue and get the driver signatures back as well for the corrupted drivers. If that does not help, then we may not have any other option than performing a Clean Install of Windows 10 on the machine / device. You can create a Windows 10 installation Disc and perform a clean installation on the computer. To create a please find the below link:
-https://www.microsoft.com/en-us/software-download/windows10 
-
-Once the media is created by the tool, it will walk you through how to set up Windows 10 on your PC. During setup, you might be asked to enter a product key.
- If you bought Windows 10 and are installing it for the first time, you’ll need to enter the Windows 10 product key you received in the confirmation email after your purchase. If you don’t have a product key and you’ve not previously upgraded to Windows 10, select I need to buy a Windows 10 product key.
-"</TD></TR>
-<TR><TD>0xc1900106<TD>This indicate that upgrade process was forcefully terminated either by Rebooting or forcefully canceling the setup. <TD>"We recommended that when the Windows 10 Upgrade is initiated, one should not terminate the process at any time until the Setup completes. Before initiating the setup, we should make sure:
-1. The device (Laptop or Surface) it should be connected to power source and adequately charged.
-2. The user is not cancelling the setup on the Black Screen, when the setup.exe is installing devices and configuring user settings.
-PS: It takes time on the device configuration and migration depending upon the Speed of the CPU and the amount of RAM on the system. 
-"</TD></TR>
-<TR><TD>0xC1900208 -1047526904<TD>This error occurs when the computer does not pass the compatibility check for upgrading to Windows 10.<TD>"This error comes when there is software/driver which is not yet certified to be compatible with windows 10. Hence you might want to re-run the compatibility check before initiating the Upgrade. 
-Refer AskCore Blog: Using the Windows 10 Compatibility Reports to understand upgrade issues (https://blogs.technet.microsoft.com/askcore/2016/01/21/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues/)
-
-Once you have found the in-compatible software/drivers:
-1. Uninstall incompatible software or hardware or driver, 
-2. Now re-run the compatibility check just to verify that there no more in-compatible software/driver on the machine. 
-3. If it comes clean, initiate the upgrade.
-4. Else, repeat the steps until the compatibility check is clean.
-"</TD></TR>
-<TR><TD>Couldn't Update System Reserved Partition<TD>This error occurs because the System Reserved Partition (SRP) is full.<TD>Free up 15MB of space on the SRP using the appropriate method described in Knowledge Base article 3086249, and then try the upgrade again.</TD></TR>
-<TR><TD>MismatchedLanguage, found HardBlock<TD>This error code indicates that the Current Language installed on the machine is not Supported for the Upgrade to start.<TD>We need to have English as the base Language in order to upgrade to Windows 10. There is a Hard block for the Upgrade to be performed and the compatibility scan data is saved to %Systemroot%\$WINDOWS.~BT\Sources\Panther\CompatData_YYYY.txt</TD></TR>
-<TR><TD>Setup couldn’t start properly. Please reboot your PC and try running Windows 10 Setup again<TD>This error occurs if the upgrade files are corrupt due to a failed Windows 10 download.<TD>"The Setup.exe initializes the temporary folders to copy the data and prepare the machine for upgrade. The specific folders that are initialized are:
-
-1. C:\$Windows ~BT (Hidden Folder)
-2. C:\$Windows~WS (Hidden Folder)
-
-In order to delete the above folders we would suggest that we use the Disk Clean Up tool and delete the folders and then try to run the upgrade again.
-https://support.microsoft.com/en-us/help/17421/windows-free-up-drive-space 
-"</TD></TR>
-<TR><TD>Unable to resurrect NewSystem object. hr=0x80070002<TD>"This error occurs when the setup.exe is unable to create the newsystem data file when the upgrade starts. If we look at the C:\$Windows.~BT\Sources\Panther\diagerr.xml, we should see something like:
-CSetupPlatform::ResurrectNewSystem: 
-Failure: Win32Exception: \\?\C:\$Windows.~BT\Sources\NewSystem.dat: 
-The system cannot find the file specified. [0x00000002] __cdecl    
-UnBCL::FileStream::FileStream(const class UnBCL::String *,enum 
-UnBCL::FileMode,enum UnBCL::FileAccess,enum UnBCL::FileShare,unsigned long)"<TD>"The NewSystem.dat is an operational file that is created at the beginning of the upgrade process and used at various points in the setup phase like driver migrations; disk space detections; Platforms detections and creating a base image of the new OS that is extracted from the INSTALL.WIM, which is the source file for the upgrade.
-There are couple of solutions for this issue:
-Solution 1: Disk Space
-Check and Make sure that we have good amount of free disk space on the OS partition. Disk space requirements:
-a. For 32-bit: Greater than 16gb
-b. For 64-Bit: Greater than 20gb
-
-Solution 2: Upgrade Path
-We need to make sure that we are upgrading the existing OS, to the New Version as per the guidelines described in https://technet.microsoft.com/en-us/itpro/windows/deploy/windows-10-upgrade-paths?f=255&MSPPError=-2147217396
-
-Solution: Media Creation Tool
-Use the Media Creation tool and create an ISO and then start the upgrade of the OS. The tool can be downloaded from: http://go.microsoft.com/fwlink/?LinkId=691209
-"</TD></TR>
-
-
-</TABLE>
 
 
 ## Related topics
