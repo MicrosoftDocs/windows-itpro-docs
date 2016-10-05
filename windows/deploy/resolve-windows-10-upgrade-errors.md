@@ -264,8 +264,6 @@ For example, assume that searching for the result code "8007042B" reveals the fo
 
 <P><B>setuperr.log</B> content:
 
-<div style="font-family: Consolas; font-size: x-small; line-height: normal; white-space: normal;">
-
 <pre style="font-size: 10px">
 20:05, Error            SP     Error READ, 0x00000002 while gathering/applying object: 
 23:33, Error            MIG    COnlineWinNTPlatform::AddPathToSearchIndexer - Failed to create CSearchManager instance, error: 0x80070422[gle=0x000003f0]
@@ -281,13 +279,12 @@ For example, assume that searching for the result code "8007042B" reveals the fo
 23:52, Error            SP     CSetupPlatformPrivate::Execute: Failed to deserialize/execute pre-OOBEBoot operations. Error: 0x8007042B[gle=0x000000b7]
 </PRE>
 
-</div>
 
 In the previous text, the third line indicates there was an error **0x00000497** with the folder **C:\Users\user1\Cookies**:
 
-```text
+<pre style="font-size: 10px">
 23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
-```
+</PRE>
 
 </B>The error 0x00000497 is a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) corresponding to: 
 
@@ -297,7 +294,7 @@ Therefore, Windows Setup failed because it was not able to migrate the **C:\User
 
 <P><B>setupact.log</B> content:
 
-```text
+<pre style="font-size: 10px">
 23:50, Warning                 RECAPPLY: Error while moving \\?\C:\Windows.old\Users\user1\Cookies to \\?\C:\Users\user1\Cookies. Error: 0x000000B7
 23:50, Info             MIG    Cannot apply recursively object: C:\Users\user1\Cookies: Win32Exception: Cannot create a file when that file already exists.
 23:50, Warning          MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.
@@ -305,13 +302,13 @@ Therefore, Windows Setup failed because it was not able to migrate the **C:\User
 23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1b\Cookies. Will return 0
 23:50, Error            MIG    Error 1175 while applying object C:\Users\user1\Cookies. Shell application requested abort
 23:50, Error [0x08097b] MIG    Abandoning apply due to error for object: C:\Users\user1\Cookies
-```
+</PRE>
 
 The setupact.log file also contains information detailing the configuration of files and folders. By searching for "C:\Users\user1\Cookies" we are able to determine that this folder is not installed in the default location:
 
-```text
+<pre style="font-size: 10px">
 49:12, Info             MIG    Known folder CSIDL_COOKIES: C:\Users\user1\Cookies, default location: No
-```
+</PRE>
 
 This error can be resolved by configuring the folder to use its default location.
 
