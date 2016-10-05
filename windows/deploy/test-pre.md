@@ -1,5 +1,5 @@
 ---
-title: Test table
+title: Test pre tag
 description: Test table
 ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
 keywords: deploy, error, troubleshoot, windows, 10
@@ -88,7 +88,7 @@ localizationpriority: high
 23:52, Error            SP     CSetupPlatformPrivate::Execute: Failed to deserialize/execute pre-OOBEBoot operations. Error: 0x8007042B[gle=0x000000b7]
 </PRE>
 
-<pre style="font-size: 12px; white-space: nowrap">
+<pre style="font-size: 12px; overflow: auto">
 20:05, Error            SP     Error READ, 0x00000002 while gathering/applying object: 
 23:33, Error            MIG    COnlineWinNTPlatform::AddPathToSearchIndexer - Failed to create CSearchManager instance, error: 0x80070422[gle=0x000003f0]
 23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
