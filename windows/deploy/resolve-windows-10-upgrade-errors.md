@@ -246,47 +246,53 @@ To analyze Windows Setup log files:
 
 For example, assume that searching for the result code "8007042B" reveals the following content from the setuperr.log file:
 
->Some lines in the text below are shortened for readability. The date and time at the start of each entry, which is formatted as: 2016-09-08 09:20:05, is replaced with [##].
+>Some lines in the text below are shortened for readability. In addition, the date and time at the start of each line, formatted as: 2016-09-08 09:20:05, is shortened to include only the minutes and seconds, i.e.: 20:05.
+
+<P><B>setuperr.log</B> content:
 
 ```text
-[##], Error            SP     Error READ, 0x00000002 while gathering/applying object: 
-[##], Error            MIG    COnlineWinNTPlatform::AddPathToSearchIndexer - Failed to create CSearchManager instance, error: 0x80070422[gle=0x000003f0]
-[##], Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
-[##], Error            MIG    Error 1175 while applying object C:\Users\user1\Cookies. Shell application requested abort
-[##], Error [0x08097b] MIG    Abandoning apply due to error for object: C:\Users\user1\Cookies
-[##], Error                   Apply failed. Last error: 0x00000000
-[##], Error            SP     pSPDoOnlineApply: Apply operation failed. Error: 0x0000002C
-[##], Error            SP     Apply: Migration phase failed. Result: 44
-[##], Error            SP     Operation failed: OOBE boot apply. Error: 0x8007042B[gle=0x000000b7]
-[##], Error            SP     Operation execution failed: 13. hr = 0x8007042B[gle=0x000000b7]
-[##], Error            SP     Operation execution failed.[gle=0x000000b7]
-[##], Error            SP     CSetupPlatformPrivate::Execute: Failed to deserialize/execute pre-OOBEBoot operations. Error: 0x8007042B[gle=0x000000b7]
+20:05, Error            SP     Error READ, 0x00000002 while gathering/applying object: 
+23:33, Error            MIG    COnlineWinNTPlatform::AddPathToSearchIndexer - Failed to create CSearchManager instance, error: 0x80070422[gle=0x000003f0]
+23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
+23:50, Error            MIG    Error 1175 while applying object C:\Users\user1\Cookies. Shell application requested abort
+23:50, Error [0x08097b] MIG    Abandoning apply due to error for object: C:\Users\user1\Cookies
+23:51, Error                   Apply failed. Last error: 0x00000000
+23:51, Error            SP     pSPDoOnlineApply: Apply operation failed. Error: 0x0000002C
+23:52, Error            SP     Apply: Migration phase failed. Result: 44
+23:52, Error            SP     Operation failed: OOBE boot apply. Error: 0x8007042B[gle=0x000000b7]
+23:52, Error            SP     Operation execution failed: 13. hr = 0x8007042B[gle=0x000000b7]
+23:52, Error            SP     Operation execution failed.[gle=0x000000b7]
+23:52, Error            SP     CSetupPlatformPrivate::Execute: Failed to deserialize/execute pre-OOBEBoot operations. Error: 0x8007042B[gle=0x000000b7]
 ```
 
 In the previous text, the third line indicates there was an error **0x00000497** with the folder **C:\Users\user1\Cookies**:
 
 ```text
-2016-09-08 09:23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
+23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
 ```
 
 </B>The error 0x00000497 is a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) corresponding to: 
-<UL><LI>ERROR_UNABLE_TO_REMOVE_REPLACED: Unable to remove the file to be replaced.</UL> 
+
+<P>ERROR_UNABLE_TO_REMOVE_REPLACED: Unable to remove the file to be replaced.
+
 Therefore, Windows Setup failed because it was not able to migrate the **C:\Users\user1\Cookies** folder.  Searching the setupact.log file for additional details, the following text is found:
 
+<P><B>setupact.log</B> content:
+
 ```text
-[##], Warning                 RECAPPLY: Error while moving \\?\C:\Windows.old\Users\user1\Cookies to \\?\C:\Users\user1\Cookies. Error: 0x000000B7
-[##], Info             MIG    Cannot apply recursively object: C:\Users\user1\Cookies: Win32Exception: Cannot create a file when that file already exists.
-[##], Warning          MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.
-[##], Info             MIG    Error 1175 during apply of object C:\Users\user1\Cookies. Will ask shell application for resolution.
-[##], Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1b\Cookies. Will return 0
-[##], Error            MIG    Error 1175 while applying object C:\Users\user1\Cookies. Shell application requested abort
-[##], Error [0x08097b] MIG    Abandoning apply due to error for object: C:\Users\user1\Cookies
+23:50, Warning                 RECAPPLY: Error while moving \\?\C:\Windows.old\Users\user1\Cookies to \\?\C:\Users\user1\Cookies. Error: 0x000000B7
+23:50, Info             MIG    Cannot apply recursively object: C:\Users\user1\Cookies: Win32Exception: Cannot create a file when that file already exists.
+23:50, Warning          MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.
+23:50, Info             MIG    Error 1175 during apply of object C:\Users\user1\Cookies. Will ask shell application for resolution.
+23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1b\Cookies. Will return 0
+23:50, Error            MIG    Error 1175 while applying object C:\Users\user1\Cookies. Shell application requested abort
+23:50, Error [0x08097b] MIG    Abandoning apply due to error for object: C:\Users\user1\Cookies
 ```
 
 The setupact.log file also contains information detailing the configuration of files and folders. By searching for "C:\Users\user1\Cookies" we are able to determine that this folder is not installed in the default location:
 
 ```text
-[##], Info             MIG    Known folder CSIDL_COOKIES: C:\Users\user1\Cookies, default location: No
+49:12, Info             MIG    Known folder CSIDL_COOKIES: C:\Users\user1\Cookies, default location: No
 ```
 
 This error can be resolved by configuring the folder to use its default location.
