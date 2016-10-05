@@ -28,6 +28,7 @@ The following topics and procedures are provided in this guide:
     - [Result codes](#result-codes): Information about result codes.
     - [Extend codes](#extend-codes): Information about extend codes.
 - [Log files](#log-files): A list and description of log files useful for troubleshooting.
+    - [Analyzing log files](#analyzing-log-files): General procedures for log file analysis with an example.
 - [Common error codes](#common-error-codes): Causes and mitigation procedures associated with some common error codes.
     - [0xC1900101](#0xC1900101): Information about the 0xC1900101 result code.
     - [0x800xxxxx](#0x800xxxxx): Information about result codes that start with 0x800.
@@ -59,7 +60,13 @@ WIM = Windows image (Microsoft)
 
 The following steps can resolve many common Windows upgrade problems.
 
-1. [Repair system files](#repair-system-files).
+1. Attept to repair system files by typing the following commands at an elevated command prompt. It may take several minutes for the command operations to be completed. 
+
+```
+DISM.exe /Online /Cleanup-image /Restorehealth
+sfc /scannow
+```
+
 2. Update Windows so that all available recommended updates are installed.
 3. Uninstall non-Microsoft antivirus software. 
 <BR>    - Use Windows Defender for protection during the upgrade. 
@@ -68,27 +75,6 @@ The following steps can resolve many common Windows upgrade problems.
 5. Remove nonessential external hardware. 
 6. Update firmware and drivers.
 7. Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.
-
-### Repair system files
-
-Use the following commands to repair system files. 
-<BR>It may take several minutes for the command operations to be completed.
-
-To repair damaged system files:
-
-1. Open an elevated command prompt.
-2. Type the following command, and then press ENTER.
-
-```
-DISM.exe /Online /Cleanup-image /Restorehealth
-```
-
-3. Type the following command, and then press ENTER.
-
-```
-sfc /scannow
-```
-For more information, see [Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/en-us/kb/947821).
 
 ## Upgrade error codes
 
@@ -226,24 +212,23 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 
 </TABLE>
 
-### Analyze log files
+### Analyzing log files
 
 To analyze Windows Setup log files:
 
 <OL>
 <LI>Determine the Windows Setup error code.
-<LI>Based on the extend code portion of the error code, determine the type and location of a log files to investigate.
-<UL><LI>Review the [Extend codes](#extend-codes) and [Log files](#log-files) sections in this topic for more information.</UL>
+<LI>Based on the [extend code](#extend-codes) portion of the error code, determine the type and location of a [log files](#log-files) to investigate.
 <LI>Open the log file in a text editor, such as notepad.
-<LI>Using the result code portion of the Windows Setup error code, search for the result code in the file and fine the last occurrence of the code.
+<LI>Using the result code portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code.
 <LI>To find the last occurrence of the result code:
   <OL type="a">
-  <LI>Scroll to the bottom of the file and click after the last character
-  <LI>Click Edit
-  <LI>Click Find
-  <LI>Type the result code
-  <LI>Select Up under Direction
-  <LI>Click Find Next
+  <LI>Scroll to the bottom of the file and click after the last character.
+  <LI>Click **Edit**.
+  <LI>Click **Find**.
+  <LI>Type the result code.
+  <LI>Under **Direction** select **Up**.
+  <LI>Click **Find Next**.
   </OL>
 <LI> When you have located the last occurrence of the result code, scroll up a few lines from this location in the file and review the processes that failed just prior to generating the result code.
 <LI> Search for the following important text strings:
@@ -257,7 +242,7 @@ To analyze Windows Setup log files:
 
 For example, assume that searching for the result code "8007042B" reveals the following content from the setuperr.log file:
 
-```
+<PRE>
 2016-09-08 09:20:05, Error                 SP     Error READ, 0x00000002 while gathering/applying object: apply-success, Action,CMXEPlugin,C:\$WINDOWS.~BT\Sources\ReplacementManifests,Microsoft-Windows-DirectoryServices-ADAM-Client\adammigrate.dll,{43CCF250-2A74-48c6-9620-FC312EC475D6},Apartment. Will return 2[gle=0x000000cb]
 2016-09-08 09:23:33, Error                 MIG    COnlineWinNTPlatform::AddPathToSearchIndexer - Failed to create CSearchManager instance, error: 0x80070422[gle=0x000003f0]
 2016-09-08 09:23:50, Error                 SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
@@ -270,15 +255,19 @@ For example, assume that searching for the result code "8007042B" reveals the fo
 2016-09-08 09:23:52, Error                 SP     Operation execution failed: 13. hr = 0x8007042B[gle=0x000000b7]
 2016-09-08 09:23:52, Error                 SP     Operation execution failed.[gle=0x000000b7]
 2016-09-08 09:23:52, Error                 SP     CSetupPlatformPrivate::Execute: Failed to deserialize/execute pre-OOBEBoot operations. Error: 0x8007042B[gle=0x000000b7]
-```
+</PRE>
 
-In this example, the third line indicates there was an error 0x00000497 with the folder **C:\Users\user1\Cookies**:
+In this example, the third line indicates there was an error **0x00000497** with the folder **C:\Users\user1\Cookies**:
 
-<P>Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0 
+<PRE>
+2016-09-08 09:23:50, Error                 SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
+</PRE>
 
-The error 0x00000497 is a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) corresponding to: ERROR_UNABLE_TO_REMOVE_REPLACED, Unable to remove the file to be replaced. Therefore, it appears that Windows Setup failed because it was not able to migrate the "C:\Users\user1\Cookies" folder.  Searching the setupact.log file for additional details, the following text is found:
+</B>The error 0x00000497 is a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) corresponding to: 
+<UL><LI>ERROR_UNABLE_TO_REMOVE_REPLACED: Unable to remove the file to be replaced.</UL> 
+Therefore, Windows Setup failed because it was not able to migrate the **C:\Users\user1\Cookies** folder.  Searching the setupact.log file for additional details, the following text is found:
 
-```
+<PRE>
 2016-09-08 09:23:50, Warning                      RECAPPLY: Error while moving \\?\C:\Windows.old\Users\user1\Cookies to \\?\C:\Users\user1\Cookies. Error: 0x000000B7
 2016-09-08 09:23:50, Info                  MIG    Cannot apply recursively object: C:\Users\user1\Cookies: Win32Exception: Cannot create a file when that file already exists. [0x000000B7] void __cdecl Mig::CUpgradeTransportStreamProxy::CreateFolder(class UnBCL::String *,int,int *,struct ILocalProgress *)
 2016-09-08 09:23:50, Warning               MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed. Exception class Mig::TargetExistsException: (no exception message provided) void __cdecl Mig::CFileDataStore::Create(class Mig::CDataUnit *)
@@ -286,13 +275,13 @@ The error 0x00000497 is a [Win32 error code](https://msdn.microsoft.com/en-us/li
 2016-09-08 09:23:50, Error                 SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1b\Cookies. Will return 0
 2016-09-08 09:23:50, Error                 MIG    Error 1175 while applying object C:\Users\user1\Cookies. Shell application requested abort
 2016-09-08 09:23:50, Error      [0x08097b] MIG    Abandoning apply due to error for object: C:\Users\user1\Cookies
-```
+</PRE>
 
 The setupact.log file also contains information detailing the configuration of files and folders. By searching for "C:\Users\user1\Cookies" we are able to determine that this folder is not installed in the default location:
 
-```
+<PRE>
 2016-09-08 08:49:12, Info                  MIG    Known folder CSIDL_COOKIES: C:\Users\user1\Cookies, default location: No
-```
+</PRE>
 
 This error can be resolved by configuring the folder to use its default location.
 
