@@ -216,6 +216,20 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 
 </TABLE>
 
+### Log entry structure
+
+A setupact.log or setuperr.log entry includes the following elements:
+
+<OL>
+<LI>The date and time. For example: 2016-09-08 09:20:05.
+<LI>The log level: Info, Warning, Error, Fatal Error.
+<LI>The logging component: CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS.
+<UL>
+<LI>The logging components SP (setup platform) and MIG (migration engine) are particularly useful for troubleshooting Windows Setup errors.
+</UL>
+<LI>The message. For example: Operation completed successfully.
+</OL>
+
 ### Analyzing log files
 
 To analyze Windows Setup log files:
@@ -246,11 +260,11 @@ To analyze Windows Setup log files:
 
 For example, assume that searching for the result code "8007042B" reveals the following content from the setuperr.log file:
 
->Some lines in the text below are shortened for readability. In addition, the date and time at the start of each line, formatted as: 2016-09-08 09:20:05, is shortened to include only the minutes and seconds, i.e.: 20:05.
+>Some lines in the text below are shortened for readability. In addition, the date and time at the start of each line, formatted as: 2016-09-08 09:20:05, is shortened to minutes and seconds.
 
 <P><B>setuperr.log</B> content:
 
-<div style="width:2000px;overflow:auto">
+<div style="font-family: Consolas; font-size: x-small; line-height: normal; white-space: normal;">
 
 <PRE>
 20:05, Error            SP     Error READ, 0x00000002 while gathering/applying object: 
