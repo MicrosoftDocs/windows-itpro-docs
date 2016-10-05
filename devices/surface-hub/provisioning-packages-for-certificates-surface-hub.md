@@ -156,7 +156,7 @@ Depending on the app, you may or may not need to download a new app framework.
 
     ![icd tiles](images/wicd-screen-apps-02a.png)
 
-    Select the settings that are **Common to all Windows editions**, and click **Next**.
+    Select the settings that are **Common to all Windows desktop editions**, and click **Next**.
 
     ![icd tiles](images/wicd-screen02b.png)
 
