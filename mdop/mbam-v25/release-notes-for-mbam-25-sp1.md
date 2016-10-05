@@ -119,7 +119,16 @@ If Internet Explorer Enhanced Security Configuration (ESC) is turned on, an "Acc
 **Workaround:** If the "Access Denied" error message appears when you try to view reports on the MBAM Server, you can set a Group Policy Object or change the default manually in your image to disable Enhanced Security Configuration. You can also alternatively view the reports from another computer on which ESC is not enabled.
 
 ### Support for Bitlocker XTS-AES encryption algorithm
-Bitlocker added support for the XTS-AES encryption algorithm in Windows 10, version 1511. As of HF02, MBAM now supports this Bitlocker option.
+Bitlocker added support for the XTS-AES encryption algorithm in Windows 10, version 1511. 
+As of HF02, MBAM now supports this Bitlocker option and is a client-only update.
+However, there are two known limitations:
+
+* MBAM will correctly report compliance status but the **Cipher Strength** field in MBAM reports will be empty. 
+MBAM pre-built reports and compliance charts won’t break but the **Cipher Strength** column will be empty for XTS machines. 
+Also, if a customer has a custom report that uses this particular field, they may have to make adjustments to accommodate this update.  
+
+* Customers must use the same encryption strength for OS and data volumes on the same machine.
+If different encryption strengths are used, MBAM will report the machine as **non-compliant**.
 
 ### Self-Service Portal automatically adds "-" on Key ID entry
 As of HF02, the MBAM Self-Service Portal automatically adds the '-' on Key ID entry.  
