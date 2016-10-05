@@ -30,11 +30,9 @@ If you’ve been approved and are part of the Enrollment for Education Solutions
 
     <!-- ![Click Get the app](images/it-get-app.png) --> 
 
-2. Enter your email address, and select Educator, Administrator, or Student.
+2. Enter your email address, and select Educator, Administrator, or Student. </br> If your email address isn't associated to an Azure AD or Office 365 Education tenant, you'll be asked to create one.
 
     <!-- ![Enter school email address](images/enter-email.png) -->
-    
-    - If your email address isn't associated to an Azure AD or Office 365 Education tenant, you'll be asked to create one.  
     
 3. Select **Get the app**. This will take you to the Windows Store for Business to download the app. You will also receive an email with instructions and a link to the Store.
 
