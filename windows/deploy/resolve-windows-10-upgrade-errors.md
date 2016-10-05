@@ -294,7 +294,7 @@ Therefore, Windows Setup failed because it was not able to migrate the **C:\User
 
 <P><B>setupact.log</B> content:
 
-<pre style="font-size: 12px; overflow: scroll">
+<pre style="font-size: 12px; overflow: scroll; white-space:nowrap">
 23:50, Warning                 RECAPPLY: Error while moving \\?\C:\Windows.old\Users\user1\Cookies to \\?\C:\Users\user1\Cookies. Error: 0x000000B7
 23:50, Info             MIG    Cannot apply recursively object: C:\Users\user1\Cookies: Win32Exception: Cannot create a file when that file already exists.
 23:50, Warning          MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.
