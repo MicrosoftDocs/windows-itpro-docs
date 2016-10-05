@@ -250,9 +250,9 @@ For example, assume that searching for the result code "8007042B" reveals the fo
 
 <P><B>setuperr.log</B> content:
 
+<div style="width:200px;overflow:auto">
 
-
-<PRE width="155">
+<PRE>
 20:05, Error            SP     Error READ, 0x00000002 while gathering/applying object: 
 23:33, Error            MIG    COnlineWinNTPlatform::AddPathToSearchIndexer - Failed to create CSearchManager instance, error: 0x80070422[gle=0x000003f0]
 23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
@@ -266,6 +266,8 @@ For example, assume that searching for the result code "8007042B" reveals the fo
 23:52, Error            SP     Operation execution failed.[gle=0x000000b7]
 23:52, Error            SP     CSetupPlatformPrivate::Execute: Failed to deserialize/execute pre-OOBEBoot operations. Error: 0x8007042B[gle=0x000000b7]
 </PRE>
+
+</div>
 
 In the previous text, the third line indicates there was an error **0x00000497** with the folder **C:\Users\user1\Cookies**:
 
