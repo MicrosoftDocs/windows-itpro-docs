@@ -31,7 +31,7 @@ There are 3 types of name matches that can  set up for NRPT:
 
 - Any resolution should attempt to first resolve with the proxy server/DNS server with this entry
 
-NRPT is set using the **VPNv2//*ProfileName*/DomainNameInformationList** node. This node also configures Web proxy server or domain name servers. 
+NRPT is set using the **VPNv2/*ProfileName*/DomainNameInformationList** node. This node also configures Web proxy server or domain name servers. 
 
 [Learn more about NRPT](https://technet.microsoft.com/library/ee649207%28v=ws.10%29.aspx)
 
@@ -40,7 +40,7 @@ NRPT is set using the **VPNv2//*ProfileName*/DomainNameInformationList** node. T
 
 This setting is used to configure the primary DNS suffix for the VPN interface and the suffix search list after the VPN connection is established.
 
-Primary DNS suffix is set using the **VPNv2//*ProfileName*/DnsSuffix** node.
+Primary DNS suffix is set using the **VPNv2/*ProfileName*/DnsSuffix** node.
 
 
 
@@ -50,7 +50,7 @@ Primary DNS suffix is set using the **VPNv2//*ProfileName*/DnsSuffix** node.
 
 You can also configure *persistent* name resolution rules. Name resolution for specified items will only  performed over VPN.
 
-Persistent name resolution is set using the **VPNv2//*ProfileName*/DomainNameInformationList//*dniRowId*/Persistent** node.
+Persistent name resolution is set using the **VPNv2/*ProfileName*/DomainNameInformationList//*dniRowId*/Persistent** node.
 
 
 
@@ -66,9 +66,9 @@ The fields in **Add or edit DNS rule** in the Intune profile correspond to the X
 
 | Field | XML |
 | --- | --- |
-| **Name** | **VPNv2//*ProfileName*/DomainNameInformationList//*dniRowId*/DomainName**  |
-| **Servers (comma separated)** | **VPNv2//*ProfileName*/DomainNameInformationList//*dniRowId*/DnsServers**  |
-| **Proxy server** |  **VPNv2//*ProfileName*/DomainNameInformationList//*dniRowId*/WebServers**  |
+| **Name** | **VPNv2/*ProfileName*/DomainNameInformationList//*dniRowId*/DomainName**  |
+| **Servers (comma separated)** | **VPNv2/*ProfileName*/DomainNameInformationList//*dniRowId*/DnsServers**  |
+| **Proxy server** |  **VPNv2/*ProfileName*/DomainNameInformationList//*dniRowId*/WebServers**  |
 
 ## Related topics
 

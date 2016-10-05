@@ -21,13 +21,13 @@ Network routes are required for the stack to understand which interface to use f
 
 In a split tunnel configuration, routes can be specified to go over VPN and all other traffic will go over the physical interface. 
 
-Routes can be configured using the VPNv2//*ProfileName*/RouteList setting in the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
+Routes can be configured using the VPNv2/*ProfileName*/RouteList setting in the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
  
 For each route item in the list the following can be specified: 
 
-- **Address**: VPNv2//*ProfileName*/RouteList//*routeRowId*/Address
-- **Prefix size**: VPNv2//*ProfileName*/RouteList//*routeRowId*/Prefix
-- **Exclusion route**: VPNv2//*ProfileName*/RouteList//*routeRowId*/ExclusionRoute
+- **Address**: VPNv2/*ProfileName*/RouteList//*routeRowId*/Address
+- **Prefix size**: VPNv2/*ProfileName*/RouteList//*routeRowId*/Prefix
+- **Exclusion route**: VPNv2/*ProfileName*/RouteList//*routeRowId*/ExclusionRoute
    
    Windows VPN platform now supports the ability to specify exclusion routes that specifically should not go over the physical interface. 
 
