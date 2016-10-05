@@ -32,7 +32,7 @@ The following topics and procedures are provided in this guide:
 - [Common error codes](#common-error-codes): Causes and mitigation procedures associated with some common error codes.
     - [0xC1900101](#0xC1900101): Information about the 0xC1900101 result code.
     - [0x800xxxxx](#0x800xxxxx): Information about result codes that start with 0x800.
-- [Other error codes](#less-common-error-codes): Some additional causes and mitigation procedures associated with various error codes.
+- [Other error codes](#less-common-error-codes): Some causes and mitigation procedures are provided for other error codes.
 
 ## The Windows 10 upgrade process
 
@@ -60,21 +60,25 @@ WIM = Windows image (Microsoft)
 
 The following steps can resolve many common Windows upgrade problems.
 
-1. Attept to repair system files by typing the following commands at an elevated command prompt. It may take several minutes for the command operations to be completed. 
+<OL>
+<LI>Attept to repair system files by typing the following commands at an elevated command prompt. It may take several minutes for the command operations to be completed.</LI>
 
 ```
 DISM.exe /Online /Cleanup-image /Restorehealth
 sfc /scannow
 ```
 
-2. Update Windows so that all available recommended updates are installed.
-3. Uninstall non-Microsoft antivirus software. 
-<BR>    - Use Windows Defender for protection during the upgrade. 
-<BR>    - Verify compatibility information and re-install antivirus applications after the upgrade. 
-4. Uninstall all nonessential software. 
-5. Remove nonessential external hardware. 
-6. Update firmware and drivers.
-7. Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.
+<LI>Update Windows so that all available recommended updates are installed.</LI>
+<LI>Uninstall non-Microsoft antivirus software.
+  <UL> 
+  <LI>Use Windows Defender for protection during the upgrade. 
+  <LI>Verify compatibility information and re-install antivirus applications after the upgrade.</LI></LI>
+  </UL>
+<LI>Uninstall all nonessential software.</LI>
+<LI>Remove nonessential external hardware.</LI> 
+<LI>Update firmware and drivers.</LI>
+<LI>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.</LI>
+</OL>
 
 ## Upgrade error codes
 
@@ -242,27 +246,27 @@ To analyze Windows Setup log files:
 
 For example, assume that searching for the result code "8007042B" reveals the following content from the setuperr.log file:
 
-
+>Some lines in the text below are shortened for readability. The date and time at the start of each entry, which is formatted as: 2016-09-08 09:20:05, is replaced with [##].
 
 ```text
-2016-09-08 09:20:05, Error                 SP     Error READ, 0x00000002 while gathering/applying object: apply-success, Action,CMXEPlugin,C:\$WINDOWS.~BT\Sources\ReplacementManifests,Microsoft-Windows-DirectoryServices-ADAM-Client\adammigrate.dll,{43CCF250-2A74-48c6-9620-FC312EC475D6},Apartment. Will return 2[gle=0x000000cb]
-2016-09-08 09:23:33, Error                 MIG    COnlineWinNTPlatform::AddPathToSearchIndexer - Failed to create CSearchManager instance, error: 0x80070422[gle=0x000003f0]
-2016-09-08 09:23:50, Error                 SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
-2016-09-08 09:23:50, Error                 MIG    Error 1175 while applying object C:\Users\user1\Cookies. Shell application requested abort
-2016-09-08 09:23:50, Error      [0x08097b] MIG    Abandoning apply due to error for object: C:\Users\user1\Cookies
-2016-09-08 09:23:51, Error                        Apply failed. Last error: 0x00000000
-2016-09-08 09:23:51, Error                 SP     pSPDoOnlineApply: Apply operation failed. Error: 0x0000002C
-2016-09-08 09:23:52, Error                 SP     Apply: Migration phase failed. Result: 44
-2016-09-08 09:23:52, Error                 SP     Operation failed: OOBE boot apply. Error: 0x8007042B[gle=0x000000b7]
-2016-09-08 09:23:52, Error                 SP     Operation execution failed: 13. hr = 0x8007042B[gle=0x000000b7]
-2016-09-08 09:23:52, Error                 SP     Operation execution failed.[gle=0x000000b7]
-2016-09-08 09:23:52, Error                 SP     CSetupPlatformPrivate::Execute: Failed to deserialize/execute pre-OOBEBoot operations. Error: 0x8007042B[gle=0x000000b7]
+[##], Error            SP     Error READ, 0x00000002 while gathering/applying object: 
+[##], Error            MIG    COnlineWinNTPlatform::AddPathToSearchIndexer - Failed to create CSearchManager instance, error: 0x80070422[gle=0x000003f0]
+[##], Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
+[##], Error            MIG    Error 1175 while applying object C:\Users\user1\Cookies. Shell application requested abort
+[##], Error [0x08097b] MIG    Abandoning apply due to error for object: C:\Users\user1\Cookies
+[##], Error                   Apply failed. Last error: 0x00000000
+[##], Error            SP     pSPDoOnlineApply: Apply operation failed. Error: 0x0000002C
+[##], Error            SP     Apply: Migration phase failed. Result: 44
+[##], Error            SP     Operation failed: OOBE boot apply. Error: 0x8007042B[gle=0x000000b7]
+[##], Error            SP     Operation execution failed: 13. hr = 0x8007042B[gle=0x000000b7]
+[##], Error            SP     Operation execution failed.[gle=0x000000b7]
+[##], Error            SP     CSetupPlatformPrivate::Execute: Failed to deserialize/execute pre-OOBEBoot operations. Error: 0x8007042B[gle=0x000000b7]
 ```
 
 In the previous text, the third line indicates there was an error **0x00000497** with the folder **C:\Users\user1\Cookies**:
 
 ```text
-2016-09-08 09:23:50, Error                 SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
+2016-09-08 09:23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
 ```
 
 </B>The error 0x00000497 is a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) corresponding to: 
@@ -270,19 +274,19 @@ In the previous text, the third line indicates there was an error **0x00000497**
 Therefore, Windows Setup failed because it was not able to migrate the **C:\Users\user1\Cookies** folder.  Searching the setupact.log file for additional details, the following text is found:
 
 ```text
-2016-09-08 09:23:50, Warning                      RECAPPLY: Error while moving \\?\C:\Windows.old\Users\user1\Cookies to \\?\C:\Users\user1\Cookies. Error: 0x000000B7
-2016-09-08 09:23:50, Info                  MIG    Cannot apply recursively object: C:\Users\user1\Cookies: Win32Exception: Cannot create a file when that file already exists. [0x000000B7] void __cdecl Mig::CUpgradeTransportStreamProxy::CreateFolder(class UnBCL::String *,int,int *,struct ILocalProgress *)
-2016-09-08 09:23:50, Warning               MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed. Exception class Mig::TargetExistsException: (no exception message provided) void __cdecl Mig::CFileDataStore::Create(class Mig::CDataUnit *)
-2016-09-08 09:23:50, Info                  MIG    Error 1175 during apply of object C:\Users\user1\Cookies. Will ask shell application for resolution.
-2016-09-08 09:23:50, Error                 SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1b\Cookies. Will return 0
-2016-09-08 09:23:50, Error                 MIG    Error 1175 while applying object C:\Users\user1\Cookies. Shell application requested abort
-2016-09-08 09:23:50, Error      [0x08097b] MIG    Abandoning apply due to error for object: C:\Users\user1\Cookies
+[##], Warning                 RECAPPLY: Error while moving \\?\C:\Windows.old\Users\user1\Cookies to \\?\C:\Users\user1\Cookies. Error: 0x000000B7
+[##], Info             MIG    Cannot apply recursively object: C:\Users\user1\Cookies: Win32Exception: Cannot create a file when that file already exists.
+[##], Warning          MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.
+[##], Info             MIG    Error 1175 during apply of object C:\Users\user1\Cookies. Will ask shell application for resolution.
+[##], Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1b\Cookies. Will return 0
+[##], Error            MIG    Error 1175 while applying object C:\Users\user1\Cookies. Shell application requested abort
+[##], Error [0x08097b] MIG    Abandoning apply due to error for object: C:\Users\user1\Cookies
 ```
 
 The setupact.log file also contains information detailing the configuration of files and folders. By searching for "C:\Users\user1\Cookies" we are able to determine that this folder is not installed in the default location:
 
 ```text
-2016-09-08 08:49:12, Info                  MIG    Known folder CSIDL_COOKIES: C:\Users\user1\Cookies, default location: No
+[##], Info             MIG    Known folder CSIDL_COOKIES: C:\Users\user1\Cookies, default location: No
 ```
 
 This error can be resolved by configuring the folder to use its default location.
