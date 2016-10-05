@@ -25,7 +25,7 @@ Conditional Access Platform components used for Device Compliance include the fo
 
 - [Azure AD Connect Health](https://azure.microsoft.com/documentation/articles/active-directory-Azure ADconnect-health/)
 
-- [Windows Health Attestation Service](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices#device-health-attestation)
+- [Windows Health Attestation Service](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices#device-health-attestation) (optional)
 
 - Azure AD Certificate Authority - It is a requirement that the client certificate used for the cloud-based device compliance solution be issued by an Azure Active Directory-based Certificate Authority (CA).  An Azure AD CA is essentially a mini-CA cloud tenant in Azure. The Azure AD CA cannot be configured as part of an on-premises Enterprise CA. 
 

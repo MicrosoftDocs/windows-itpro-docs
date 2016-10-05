@@ -49,6 +49,7 @@ The value of the **EdpModeId** is an Enterprise ID. The networking stack will lo
 
 Additionally, when connecting with WIP, the admin does not have to specify AppTriggerList and TrafficFilterList rules separately in this profile (unless more advanced configuration is needed) because the WIP policies and App lists automatically take effect.
 
+[Learn more about Windows Information Protection](protect-enterprise-data-using-wip.md)
 
 
 ## Traffic filters

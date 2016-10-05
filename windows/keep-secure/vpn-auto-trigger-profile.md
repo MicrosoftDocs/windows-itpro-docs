@@ -61,7 +61,7 @@ When a device has multiple profiles with Always On triggers, the user can specif
 
 This feature configures the VPN such that it would not get triggered if a user is on a trusted corporate network. The value of this setting is a list of DNS suffices. The VPN stack will look at the DNS suffix on the physical interface and if it matches any in the configured list and the network is private or provisioned by MDM, then VPN will not get triggered.
 
-Trusted network detection  can be configured using the VPNv2/*ProfileName*/TrustedNetworkDetection setting in the [VPNv2 CCSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
+Trusted network detection can be configured using the VPNv2/*ProfileName*/TrustedNetworkDetection setting in the [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
 
 
 ## Configure app-triggered VPN

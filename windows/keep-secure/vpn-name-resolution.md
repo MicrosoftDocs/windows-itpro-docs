@@ -31,7 +31,7 @@ There are 3 types of name matches that can  set up for NRPT:
 
 - Any resolution should attempt to first resolve with the proxy server/DNS server with this entry
 
-NRPT is set using the **VPNv2/*ProfileName*/DomainNameInformationList** node. This node also configures Web proxy server or domain name servers. 
+NRPT is set using the **VPNv2/*ProfileName*/DomainNameInformationList** node of the [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx). This node also configures Web proxy server or domain name servers. 
 
 [Learn more about NRPT](https://technet.microsoft.com/library/ee649207%28v=ws.10%29.aspx)
 
@@ -66,9 +66,9 @@ The fields in **Add or edit DNS rule** in the Intune profile correspond to the X
 
 | Field | XML |
 | --- | --- |
-| **Name** | **VPNv2/*ProfileName*/DomainNameInformationList//*dniRowId*/DomainName**  |
-| **Servers (comma separated)** | **VPNv2/*ProfileName*/DomainNameInformationList//*dniRowId*/DnsServers**  |
-| **Proxy server** |  **VPNv2/*ProfileName*/DomainNameInformationList//*dniRowId*/WebServers**  |
+| **Name** | **VPNv2/*ProfileName*/DomainNameInformationList/*dniRowId*/DomainName**  |
+| **Servers (comma separated)** | **VPNv2/*ProfileName*/DomainNameInformationList/*dniRowId*/DnsServers**  |
+| **Proxy server** |  **VPNv2/*ProfileName*/DomainNameInformationList/*dniRowId*/WebServers**  |
 
 ## Related topics
 
