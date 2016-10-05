@@ -250,7 +250,7 @@ For example, assume that searching for the result code "8007042B" reveals the fo
 
 <P><B>setuperr.log</B> content:
 
-<div style="width:200px;overflow:auto">
+<div style="width:2000px;overflow:auto">
 
 <PRE>
 20:05, Error            SP     Error READ, 0x00000002 while gathering/applying object: 
