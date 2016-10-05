@@ -264,7 +264,7 @@ For example, assume that searching for the result code "8007042B" reveals the fo
 
 <P><B>setuperr.log</B> content:
 
-<pre style="font-size: 12px; overflow: scroll; overflow-y: visible">
+<pre style="font-size: 10px">
 20:05, Error            SP     Error READ, 0x00000002 while gathering/applying object: 
 23:33, Error            MIG    COnlineWinNTPlatform::AddPathToSearchIndexer - Failed to create CSearchManager instance, error: 0x80070422[gle=0x000003f0]
 23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
@@ -282,7 +282,7 @@ For example, assume that searching for the result code "8007042B" reveals the fo
 
 In the previous text, the third line indicates there was an error **0x00000497** with the folder **C:\Users\user1\Cookies**:
 
-<pre style="font-size: 10px; overflow-y: visible">
+<pre style="font-size: 10px">
 23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
 </PRE>
 
@@ -294,7 +294,7 @@ Therefore, Windows Setup failed because it was not able to migrate the **C:\User
 
 <P><B>setupact.log</B> content:
 
-<pre style="font-size: 12px; overflow: scroll; white-space: nowrap; overflow-y: visible">
+<pre style="font-size: 10px">
 23:50, Warning                 RECAPPLY: Error while moving \\?\C:\Windows.old\Users\user1\Cookies to \\?\C:\Users\user1\Cookies. Error: 0x000000B7
 23:50, Info             MIG    Cannot apply recursively object: C:\Users\user1\Cookies: Win32Exception: Cannot create a file when that file already exists.
 23:50, Warning          MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.
