@@ -20,7 +20,7 @@ This topic provides a brief introduction to Windows 10 installation processes an
 
 ## In this topic
 
-The following topics and procedures are provided in this guide:
+The following sections and procedures are provided in this guide:
 
 - [The Windows 10 upgrade process](#the-windows-10-upgrade-process): An explanation of phases used during the upgrade process.<BR>
 - [Quick fixes](#quick-fixes): Steps you can take to eliminate common Windows upgrade errors.<BR>
