@@ -64,7 +64,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
   - **Setting description**: Type a description for the setting.
   - **Data type**: Select **String**.
   - **OMA-URI**:  *./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Onboarding*
-  - **Value**: Use the value from the *WindowsDefenderATP.onboarding* file you downloaded.
+  - **Value**: Copy and paste the contents of the *WindowsDefenderATP.onboarding* file you downloaded.
 
 
   f. Save the policy.
