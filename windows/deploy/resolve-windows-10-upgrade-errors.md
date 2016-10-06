@@ -62,7 +62,7 @@ WIM = Windows image (Microsoft)
 The following steps can resolve many common Windows upgrade problems.
 
 <OL>
-<LI>Check all internal hard drives for errors and attempt repairs. To automatically repair hard drives, open an elevated command prompt, switch to the drive you wish to repair, and type the following command. You will be required to reboot the computer if the hard drive being repairs is also the system drive.
+<LI>Check all hard drives for errors and attempt repairs. To automatically repair hard drives, open an elevated command prompt, switch to the drive you wish to repair, and type the following command. You will be required to reboot the computer if the hard drive being repairs is also the system drive.
 
 <P>chkdsk /F
 
@@ -78,7 +78,7 @@ The following steps can resolve many common Windows upgrade problems.
   <LI>Verify compatibility information and re-install antivirus applications after the upgrade.</LI></LI>
   </UL>
 <LI>Uninstall all nonessential software.</LI>
-<LI>Remove nonessential external hardware.</LI> 
+<LI>Remove nonessential external hardware, such as docks and USB devices.</LI> 
 <LI>Update firmware and drivers.</LI>
 <LI>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.</LI>
 </OL>
