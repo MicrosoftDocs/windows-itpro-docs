@@ -62,13 +62,14 @@ WIM = Windows image (Microsoft)
 The following steps can resolve many common Windows upgrade problems.
 
 <OL>
-<LI>Attept to repair system files by typing the following commands at an elevated command prompt. It may take several minutes for the command operations to be completed.</LI>
+<LI>Check all internal hard drives for errors and attempt repairs. To automatically repair hard drives, open an elevated command prompt, switch to the drive you wish to repair, and type the following command. You will be required to reboot the computer if the hard drive being repairs is also the system drive.
 
+<P>chkdsk /F
 
-<code>
-DISM.exe /Online /Cleanup-image /Restorehealth
-sfc /scannow
-</code>
+<LI>Attept to restore and repair system files by typing the following commands at an elevated command prompt. It may take several minutes for the command operations to be completed.
+
+<P>DISM.exe /Online /Cleanup-image /Restorehealth
+<BR>sfc /scannow
 
 <LI>Update Windows so that all available recommended updates are installed.</LI>
 <LI>Uninstall non-Microsoft antivirus software.
@@ -81,6 +82,8 @@ sfc /scannow
 <LI>Update firmware and drivers.</LI>
 <LI>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.</LI>
 </OL>
+
+
 
 ## Upgrade error codes
 
