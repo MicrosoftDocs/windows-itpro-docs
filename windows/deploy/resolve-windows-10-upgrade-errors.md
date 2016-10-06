@@ -63,14 +63,16 @@ The following steps can resolve many common Windows upgrade problems.
 
 <OL>
 <LI>Check all hard drives for errors and attempt repairs. To automatically repair hard drives, open an elevated command prompt, switch to the drive you wish to repair, and type the following command. You will be required to reboot the computer if the hard drive being repaired is also the system drive.
-<BR>
-<P>chkdsk /F
-
+<UL>
+<LI>chkdsk /F</LI>
+</UL>
+</LI>
 <LI>Attept to restore and repair system files by typing the following commands at an elevated command prompt. It may take several minutes for the command operations to be completed.
-<BR>
-<P>DISM.exe /Online /Cleanup-image /Restorehealth
-<BR>sfc /scannow
-
+<UL>
+<LI>DISM.exe /Online /Cleanup-image /Restorehealth</LI>
+<LI>sfc /scannow</LI>
+</UL>
+</LI>
 <LI>Update Windows so that all available recommended updates are installed.</LI>
 <LI>Uninstall non-Microsoft antivirus software.
   <UL> 
@@ -236,7 +238,7 @@ A setupact.log or setuperr.log entry includes the following elements:
 <LI><B>The message</B> - Operation completed successfully.
 </OL>
 
-An example log entry is shown below:
+See the following example:
 
 <P>2016-09-08 09:23:50, Warning          MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.
 
