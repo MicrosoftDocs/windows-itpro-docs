@@ -65,10 +65,10 @@ The following steps can resolve many common Windows upgrade problems.
 <LI>Attept to repair system files by typing the following commands at an elevated command prompt. It may take several minutes for the command operations to be completed.</LI>
 
 
-```
+<code>
 DISM.exe /Online /Cleanup-image /Restorehealth
 sfc /scannow
-```
+</code>
 
 <LI>Update Windows so that all available recommended updates are installed.</LI>
 <LI>Uninstall non-Microsoft antivirus software.
