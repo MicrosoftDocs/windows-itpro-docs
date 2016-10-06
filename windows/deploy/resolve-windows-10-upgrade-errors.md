@@ -237,9 +237,9 @@ A setupact.log or setuperr.log entry includes the following elements:
 </OL>
 
 An example log entry is shown below:
-<PRE>
-2016-09-08 09:23:50, Warning          MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.
-</PRE>
+
+<P>2016-09-08 09:23:50, Warning          MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.
+
 
 ### Analyze log files
 
