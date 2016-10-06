@@ -62,12 +62,12 @@ WIM = Windows image (Microsoft)
 The following steps can resolve many common Windows upgrade problems.
 
 <OL>
-<LI>Check all hard drives for errors and attempt repairs. To automatically repair hard drives, open an elevated command prompt, switch to the drive you wish to repair, and type the following command. You will be required to reboot the computer if the hard drive being repairs is also the system drive.
-
+<LI>Check all hard drives for errors and attempt repairs. To automatically repair hard drives, open an elevated command prompt, switch to the drive you wish to repair, and type the following command. You will be required to reboot the computer if the hard drive being repaired is also the system drive.
+<BR>
 <P>chkdsk /F
 
 <LI>Attept to restore and repair system files by typing the following commands at an elevated command prompt. It may take several minutes for the command operations to be completed.
-
+<BR>
 <P>DISM.exe /Online /Cleanup-image /Restorehealth
 <BR>sfc /scannow
 
