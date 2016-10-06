@@ -47,7 +47,7 @@ The Windows Setup application is used to upgrade a computer to Windows 10, or to
 4. **Second boot phase**: Final settings are applied. This is also called the **OOBE boot phase**.
         - Example error: 0x4000D, 0x40017
 5. **Uninstall phase**: This phase occurs if upgrade is unsuccessful.
-        - Example error: 0x50011, 0x50012
+        - Example error: 0x50000
 
 **Figure 1**: Phases of a successful Windows 10 upgrade (uninstall is not shown):
 
@@ -198,11 +198,13 @@ Several log files are created during each phase of the upgrade process. These lo
 <TR>
 <td BGCOLOR="#a0e4fa"><B>Log file<td BGCOLOR="#a0e4fa"><B>Phase: Location<td BGCOLOR="#a0e4fa"><B>Description<td BGCOLOR="#a0e4fa"><B>When to use
 
-<TR><TD rowspan=5>setupact.log<TD>Down-Level:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the downlevel phase. <TD>All down-level failures and starting point for rollback investigations.<BR> This is the most important log for diagnosing setup issues.
-<TR><TD>OOBE:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about actions during the OOBE phase.<TD>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.
-<TR><TD>Rollback:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about actions during rollback.<TD>Investigating generic rollbacks - 0xC1900101.
-<TR><TD>Pre-initialization (prior to downlevel):<BR>$Windows.~BT\Sources\Panther<TD>Contains information about initializing setup.<TD>If setup fails to launch.
-<TR><TD>Post-upgrade (after OOBE):<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the installation.<TD>Investigate post-upgrade related issues.
+<TR><TD rowspan=5>setupact.log<TD>Down-Level:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the downlevel phase. 
+<TD>All down-level failures and starting point for rollback investigations.<BR> This is the most important log for diagnosing setup issues.
+<TR><TD>OOBE:<BR>$Windows.~BT\Sources\Panther\UnattendGC
+<TD>Contains information about actions during the OOBE phase.<TD>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.
+<TR><TD>Rollback:<BR>$Windows.~BT\Sources\Rollback<TD>Contains information about actions during rollback.<TD>Investigating generic rollbacks - 0xC1900101.
+<TR><TD>Pre-initialization (prior to downlevel):<BR>Windows\<TD>Contains information about initializing setup.<TD>If setup fails to launch.
+<TR><TD>Post-upgrade (after OOBE):<BR>Windows\Panther<TD>Contains information about setup actions during the installation.<TD>Investigate post-upgrade related issues.
 
 <TR><TD>setuperr.log<TD>Same as setupact.log<TD>Contains information about setup errors during the installation.<TD>Review all errors encountered during the installation phase.
 
@@ -272,56 +274,59 @@ To analyze Windows Setup log files:
 <LI> Search other log files for additional information matching these timestamps or errors.
 </OL>
 
-For example, assume that searching for the result code "8007042B" reveals the following content from the setuperr.log file:
+For example, assume that the error code for an error is 0x8007042B - 0x2000D. Searching for "8007042B" reveals the following content from the setuperr.log file:
 
->Some lines in the text below are shortened to enhance readability. The date and time at the start of each line (ex: 2016-09-08 09:20:05) is shortened to minutes and seconds.
+>Some lines in the text below are shortened to enhance readability. The date and time at the start of each line (ex: 2016-10-05 15:27:08) is shortened to minutes and seconds, and the certificate file name which is a long text string is shortened to just "CN."
 
 <P><B>setuperr.log</B> content:
 
 <pre style="font-size: 10px; overflow-y: visible">
-20:05, Error            SP     Error READ, 0x00000002 while gathering/applying object: 
-23:33, Error            MIG    COnlineWinNTPlatform::AddPathToSearchIndexer - Failed to create CSearchManager instance, error: 0x80070422[gle=0x000003f0]
-23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
-23:50, Error            MIG    Error 1175 while applying object C:\Users\user1\Cookies. Shell application requested abort
-23:50, Error [0x08097b] MIG    Abandoning apply due to error for object: C:\Users\user1\Cookies
-23:51, Error                   Apply failed. Last error: 0x00000000
-23:51, Error            SP     pSPDoOnlineApply: Apply operation failed. Error: 0x0000002C
-23:52, Error            SP     Apply: Migration phase failed. Result: 44
-23:52, Error            SP     Operation failed: OOBE boot apply. Error: 0x8007042B[gle=0x000000b7]
-23:52, Error            SP     Operation execution failed: 13. hr = 0x8007042B[gle=0x000000b7]
-23:52, Error            SP     Operation execution failed.[gle=0x000000b7]
-23:52, Error            SP     CSetupPlatformPrivate::Execute: Failed to deserialize/execute pre-OOBEBoot operations. Error: 0x8007042B[gle=0x000000b7]
+27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
+27:08, Error           MIG    Error 1392 while gathering object C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Shell application requested abort![gle=0x00000570]
+27:08, Error                  Gather failed. Last error: 0x00000000
+27:08, Error           SP     SPDoFrameworkGather: Gather operation failed. Error: 0x0000002C
+27:09, Error           SP     CMigrateFramework: Gather framework failed. Status: 44
+27:09, Error           SP     Operation failed: Migrate framework (Full). Error: 0x8007042B[gle=0x000000b7]
+27:09, Error           SP     Operation execution failed: 13. hr = 0x8007042B[gle=0x000000b7]
+27:09, Error           SP     CSetupPlatformPrivate::Execute: Execution of operations queue failed, abandoning. Error: 0x8007042B[gle=0x000000b7]
 </PRE>
 
-The third line indicates there was an error **0x00000497** with the folder **C:\Users\user1\Cookies** (shown below):
+The first line indicates there was an error **0x00000570** with the file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]** (shown below):
 
 <pre style="font-size: 10px; overflow-y: visible">
-23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
+27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
 </PRE>
 
-</B>The error 0x00000497 is a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) corresponding to: ERROR_UNABLE_TO_REMOVE_REPLACED: Unable to remove the file to be replaced.
+</B>The error 0x00000570 is a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) corresponding to: ERROR_FILE_CORRUPT: The file or directory is corrupted and unreadable.
 
-Therefore, Windows Setup failed because it was not able to migrate the **C:\Users\user1\Cookies** folder.  Searching the setupact.log file for additional details, the following text is found confirming our suspicion that this file is the cause of the upgrade failure:
+Therefore, Windows Setup failed because it was not able to migrate the corrupt file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN]**.  This file is a local system certificate and can be safely deleted. Searching the setupact.log file for additional details, the phrase "Shell application requested abort" is found in a location with the same timestamp as the lines in setuperr.log. This confirms our suspicion that this file is the cause of the upgrade failure:
 
 <P><B>setupact.log</B> content:
 
 <pre style="font-size: 10px; overflow-y: visible">
-23:50, Warning                 RECAPPLY: Error while moving \\?\C:\Windows.old\Users\user1\Cookies to \\?\C:\Users\user1\Cookies. Error: 0x000000B7
-23:50, Info             MIG    Cannot apply recursively object: C:\Users\user1\Cookies:Win32Exception:Cannot create a file when that file already exists.
-23:50, Warning          MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.
-23:50, Info             MIG    Error 1175 during apply of object C:\Users\user1\Cookies. Will ask shell application for resolution.
-23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1b\Cookies. Will return 0
-23:50, Error            MIG    Error 1175 while applying object C:\Users\user1\Cookies. Shell application requested abort
-23:50, Error [0x08097b] MIG    Abandoning apply due to error for object: C:\Users\user1\Cookies
+27:00, Info                   Gather started at 10/5/2016 23:27:00
+27:00, Info [0x080489] MIG    Setting system object filter context (System)
+27:00, Info [0x0803e5] MIG    Not unmapping HKCU\Software\Classes; it is not mapped
+27:00, Info [0x0803e5] MIG    Not unmapping HKCU; it is not mapped
+27:00, Info            SP     ExecuteProgress: Elapsed events:1 of 4, Percent: 12
+27:00, Info [0x0802c6] MIG    Processing GATHER for migration unit: <System>\UpgradeFramework (CMXEAgent)
+27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
+27:08, Error           MIG    Error 1392 while gathering object C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Shell application requested abort![gle=0x00000570]
+27:08, Info            SP     ExecuteProgress: Elapsed events:2 of 4, Percent: 25
+27:08, Info            SP     ExecuteProgress: Elapsed events:3 of 4, Percent: 37
+27:08, Info [0x080489] MIG    Setting system object filter context (System)
+27:08, Info [0x0803e5] MIG    Not unmapping HKCU\Software\Classes; it is not mapped
+27:08, Info [0x0803e5] MIG    Not unmapping HKCU; it is not mapped
+27:08, Info            MIG    COutOfProcPluginFactory::FreeSurrogateHost: Shutdown in progress.
+27:08, Info            MIG    COutOfProcPluginFactory::LaunchSurrogateHost::CommandLine: -shortened-
+27:08, Info            MIG    COutOfProcPluginFactory::LaunchSurrogateHost: Successfully launched host and got control object.
+27:08, Error                  Gather failed. Last error: 0x00000000
+27:08, Info                   Gather ended at 10/5/2016 23:27:08 with result 44
+27:08, Info                   Leaving MigGather method
+27:08, Error           SP     SPDoFrameworkGather: Gather operation failed. Error: 0x0000002C
 </PRE>
 
-The setupact.log file also contains information detailing the configuration of files and folders. By searching for "C:\Users\user1\Cookies" we are able to determine that this folder is not installed in the default location:
-
-<pre style="font-size: 10px; overflow-y: visible">
-49:12, Info             MIG    Known folder CSIDL_COOKIES: C:\Users\user1\Cookies, default location: No
-</PRE>
-
-This analysis indicates that the Windows upgrade error can be resolved by configuring the C:\Users\user1\Cookies folder to use its default location.
+This analysis indicates that the Windows upgrade error can be resolved by deleting the C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN] file. Note: In this example, the full, unshortened file name is  C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f. 
 
 ## Common error codes
 
@@ -333,7 +338,7 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 - Event logs: $Windows.~bt\Sources\Rollback\*.evtx 
 - The device install log: $Windows.~bt\Sources\Rollback\setupapi\setupapi.dev.log
 
-The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  To resolve a rollback due to driver conflicts, run setup in the absence of drivers by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process. 
+The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  To resolve a rollback due to driver conflicts, try running setup using a minimal set of drivers and startup programs by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process. 
 
 <P>See the following general troubleshooting procedures associated with a result code of 0xC1900101:
 
@@ -375,7 +380,7 @@ The device install log is particularly helpful if rollback occurs during the sys
 
 <P><TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows Setup encountered an unspecified error during the WinPE phase.
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows Setup encountered an unspecified error during Wim apply in the WinPE phase.
 <BR>This is generally caused by out-of-date drivers. 
 </TABLE>
 </TD>
@@ -404,7 +409,7 @@ The device install log is particularly helpful if rollback occurs during the sys
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A driver has caused an illegal operation.
 <BR>Windows was not able to migrate the driver, resulting in a rollback of the operating system.
-
+<P>This is a safeOS boot failure, typically caused by drivers or non-Microsoft disk encryption software. 
 </TABLE>
 </TD>
 
@@ -482,6 +487,10 @@ Disconnect all peripheral devices that are connected to the system, except for t
 <P><TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A rollback occurred due to a driver configuration issue.
+<P>Installation failed during the second boot phase while attempting the MIGRATE_DATA operation.  
+
+<P>This can occur due to incompatible drivers.  
+
 </TABLE>
 </TD>
 
@@ -489,8 +498,10 @@ Disconnect all peripheral devices that are connected to the system, except for t
 
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><p>Review the rollback log and determine the stop code.
-<BR>The rollback log is located in the **C:\$Windows.~BT\Sources\Panther** folder.  Look for text similar to the following:
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<P>Check supplemental rollback logs for a setupmem.dmp file, or event logs for any unexpected reboots or errors. 
+<p>Review the rollback log and determine the stop code.
+<BR>The rollback log is located in the **C:\$Windows.~BT\Sources\Panther** folder.  An example analysis is shown below. This example is not representative of all cases:
 <p>Info SP     Crash 0x0000007E detected
 <BR>Info SP       Module name           : 
 <BR>Info SP       Bugcheck parameter 1  : 0xFFFFFFFFC0000005
@@ -628,7 +639,7 @@ Disable or uninstall non-Microsoft antivirus applications, disconnect all unnece
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 The installation failed during the second boot phase while attempting the MIGRATE_DATA operation. 
-<BR>This issue can occur due to an application or driver incompatibility.
+<BR>This issue can occur due to file system, application, or driver issues.
 
 </TABLE>
 </TD>
@@ -639,9 +650,7 @@ The installation failed during the second boot phase while attempting the MIGRAT
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Perform a [clean boot](https://support.microsoft.com/en-us/kb/929135), and reattempt the upgrade.
-
-<P>Ensure you select the option to "Download and install updates (recommended)."
+[Analyze log files](#analyze-log-files) in order to determine the file, application, or driver that is not able to be migrated. Disconnect, update, remove, or replace the device or object.
 
 </TABLE>
 </TD>
@@ -812,12 +821,13 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <TABLE>
 
 <TR><td BGCOLOR="#a0e4fa">Error Codes<td BGCOLOR="#a0e4fa">Cause<td BGCOLOR="#a0e4fa">Mitigation</TD></TR>
-<TR><TD>0x80070003- 0x20007<TD>This error occurs when there is problem with the Internet connection during the Windows 10 upgrade.
+<TR><TD>0x80070003- 0x20007
+<TD>This is a failure during SafeOS phase driver installation. 
 
-<TD>Repair network connectivity issues and reattempt the upgrade process.
-<BR>Alternatively, create installation media for an offline upgrade using the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10). Download the Windows 10 image using a computer that is connected to the Internet.
+<TD>[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations) on the computer, and [analyze log files](#analyze-log-files) to determine the problem driver.
 </TD></TR>
-<TR><TD>0x8007025D - 0x2000C<TD>This error occurs if the ISO file's metadata is corrupt.<TD>"Re-download the ISO/Media and re-attempt the upgrade.
+<TR><TD>0x8007025D - 0x2000C
+<TD>This error occurs if the ISO file's metadata is corrupt.<TD>"Re-download the ISO/Media and re-attempt the upgrade.
 
 Alternatively, re-create installation media the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10).
 
@@ -827,12 +837,10 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 <TD>[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations) on the computer, and [analyze log files](#analyze-log-files) to determine the problem driver.
 
 </TD></TR>
-<TR><TD>0xC1900101 - 0x2000B<TD>One or more device drivers are blocking creating of the migration file list.
-
-<TD>Disconnect unnecessary devices and upgrade device drivers.</TD></TR>
 <TR><TD>0xC1900101 - 0x2000c
-<TD>An unspecified error occurred during the WINPE Phase. This is due to an outdated driver.
-<TD>Update drivers on the computer, and select "Download and install updates (recommended)" during the upgrade process. Disconnect devices other than the mouse, keyboard and display.</TD></TR>
+<TD>An unspecified error occurred in the SafeOS phase during WIM apply. This can be caused by an outdated driver or disk corruption.
+<TD>Run checkdisk to repair the file system. For more information, see the [quick fixes](#quick-fixes) section in this guide.
+<P>Update drivers on the computer, and select "Download and install updates (recommended)" during the upgrade process. Disconnect devices other than the mouse, keyboard and display.</TD></TR>
 <TR><TD>0xC1900200 - 0x20008
 
 <TD>The computer doesn’t meet the minimum requirements to download or upgrade to Windows 10.
@@ -840,26 +848,19 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 <TD>See [Windows 10 Specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications) and verify the computer meets minimum requirements.
 
 <BR>Review logs for [compatibility information](https://blogs.technet.microsoft.com/askcore/2016/01/21/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues/).</TD></TR>
-<TR><TD>0x80070004 - 0x3000D<TD>A reserved name is used as the computer name.
+<TR><TD>0x80070004 - 0x3000D
+<TD>This is a problem with data migration during the first boot phase. There are multiple possible causes.
 
-<TD>Ensure that you do not use a [reserved name](https://support.microsoft.com/en-us/kb/3086101) as the computer name. System, Local, Self, and Network are reserved names that can’t be used as the computer name.</TD></TR>
-<TR><TD>0xC1900101 - 0x40001
-<TD>A device driver did not handle power state transition requests properly while shutting down, suspending or resuming from standby, or suspending or resuming from hibernation.
-
-<TD>Update, remove, or disable the following devices which frequently cause power state transition errors:
-<OL><LI>Internal WIFI Modems.
-<LI>Externally connected USB devices such as webcams, printers, and USB hard drives.</OL>
-<BR>Also, verify all devices are on the [Hardware Compatibility List](http://sysdev.microsoft.com/EN-US/HARDWARE/LPL/DEFAULT.ASPX) (HCL) and have WHQL signed and certified drivers. Analyze [log files](#log-files) if needed to determine the problem device or driver.
-</TD></TR>
+<TD>[Analyze log files](#analyze-log-files) to determine the issue.</TD></TR>
 <TR><TD>0xC1900101 - 0x4001E
 <TD>Installation failed in the SECOND_BOOT phase with an error during PRE_OOBE operation.
 <TD>This is a generic error that occurs during the OOBE phase of setup. See the [0xC1900101](#0xC1900101) section of this guide and review general troubleshooting procedures described in that section.</TD></TR>
 <TR><TD>0x80070005 - 0x4000D
-<TD>The installation failed in the SECOND_BOOT phase with an error in during MIGRATE_DATA operation. This can be caused by an incompatible application or driver.
-<TD>Perform a [clean boot](https://support.microsoft.com/en-us/kb/929135) and then attempt the upgrade.</TD></TR>
+<TD>The installation failed in the SECOND_BOOT phase with an error in during MIGRATE_DATA operation. This error indicates that access was denied while attempting to migrate data.
+<TD>[Analyze log files](#analyze-log-files) to determine the data point that is reporting access denied.</TD></TR>
 <TR><TD>0x80070004 - 0x50012
-<TD>The computer account for the system has an invalid name. 
-<TD>Ensure that the [computer name](https://technet.microsoft.com/en-us/library/cc749460.aspx) does not contain invalid characters, and is not a [reserved name](https://support.microsoft.com/en-us/kb/3086101).</TD></TR>
+<TD>Windows Setup failed to open a file. 
+<TD>[Analyze log files](#analyze-log-files) to determine the data point that is reporting access problems.</TD></TR>
 <TR><TD>0xC190020e 
 <BR>0x80070070 - 0x50011
 <BR>0x80070070 - 0x50012
