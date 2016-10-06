@@ -108,7 +108,7 @@ Find and acquire the app you want, then download the offline-licensed app packag
 ### Provisioning package
 Use Windows Imaging and Configuration Designer (WICD) to create a provisioning package containing the app package and license file that you downloaded from the Store for Business. For more information, see Create provisioning packages to learn more.
 
-### Use System Center Configuration Manager
+### System Center Configuration Manager
 If your organization uses Configuration Manager SP1, System Center 2012 R2 Configuration Manager, or System Center Configuration Manager (current branch), you can use it to deploy apps remotely to Surface Hubs in your organization.
  
 1. Enroll your Surface Hubs to Configuration Manager. For more information, see [Enroll a Surface Hub into MDM](manage-settings-with-mdm-for-surface-hub.md).
