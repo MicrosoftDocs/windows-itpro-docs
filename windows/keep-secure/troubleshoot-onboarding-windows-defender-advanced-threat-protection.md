@@ -74,6 +74,8 @@ Event ID | Error Type | Resolution steps
 ## Troubleshoot onboarding issues using Microsoft Intune
 You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.
 
+If you have configured policies in Intune and they are not propagated on endpoints, you might need to configure automatic MDM enrollment. For more information, see the [Configure automatic MDM enrollment](https://go.microsoft.com/fwlink/?linkid=829597) section.
+
 Use the following tables to understand the possible causes of issues while onboarding:
 
 - Microsoft Intune error codes and OMA-URIs table
