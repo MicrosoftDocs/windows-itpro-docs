@@ -81,6 +81,7 @@ The following steps can resolve many common Windows upgrade problems.
 <LI>Remove nonessential external hardware, such as docks and USB devices.</LI> 
 <LI>Update firmware and drivers.</LI>
 <LI>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.</LI>
+<LI>Verify at least 16 GB of free space is available to upgrade a 32-bit OS, or 20 GB for a 64-bit OS.
 </OL>
 
 
