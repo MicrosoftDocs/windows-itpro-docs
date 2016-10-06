@@ -28,7 +28,8 @@ The following topics and procedures are provided in this guide:
     - [Result codes](#result-codes): Information about result codes.
     - [Extend codes](#extend-codes): Information about extend codes.
 - [Log files](#log-files): A list and description of log files useful for troubleshooting.
-    - [Analyzing log files](#analyzing-log-files): General procedures for log file analysis with an example.
+    - [Log entry structure](#log-entry-structure): The format of a log entry is described.
+    - [Analyze log files](#analyze-log-files): General procedures for log file analysis, and an example.
 - [Common error codes](#common-error-codes): Causes and mitigation procedures associated with some common error codes.
     - [0xC1900101](#0xC1900101): Information about the 0xC1900101 result code.
     - [0x800xxxxx](#0x800xxxxx): Information about result codes that start with 0x800.
@@ -62,6 +63,7 @@ The following steps can resolve many common Windows upgrade problems.
 
 <OL>
 <LI>Attept to repair system files by typing the following commands at an elevated command prompt. It may take several minutes for the command operations to be completed.</LI>
+
 
 ```
 DISM.exe /Online /Cleanup-image /Restorehealth
@@ -225,12 +227,12 @@ A setupact.log or setuperr.log entry includes the following elements:
 <LI>The log level: Info, Warning, Error, Fatal Error.
 <LI>The logging component: CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS.
 <UL>
-<LI>The logging components SP (setup platform) and MIG (migration engine) are particularly useful for troubleshooting Windows Setup errors.
+<LI>The logging components SP (setup platform), MIG (migration engine), and CONX (compatibility information) are particularly useful for troubleshooting Windows Setup errors.
 </UL>
 <LI>The message. For example: Operation completed successfully.
 </OL>
 
-### Analyzing log files
+### Analyze log files
 
 To analyze Windows Setup log files:
 
@@ -254,13 +256,14 @@ To analyze Windows Setup log files:
   <LI><B>Shell application requested abort</B>
   <LI><B>Abandoning apply due to error for object</B>
   </UL>
-<LI> Decode other Win32 errors that appear in this section.
-<LI> Search other log files for additional information related to your findings.
+<LI> Decode Win32 errors that appear in this section.
+<LI> Write down the timestamp for the observed errors in this section.
+<LI> Search other log files for additional information matching these timestamps or errors.
 </OL>
 
 For example, assume that searching for the result code "8007042B" reveals the following content from the setuperr.log file:
 
->Some lines in the text below are shortened for readability. In addition, the date and time at the start of each line (ex: 2016-09-08 09:20:05) is shortened to minutes and seconds.
+>Some lines in the text below are shortened to enhance readability. The date and time at the start of each line (ex: 2016-09-08 09:20:05) is shortened to minutes and seconds.
 
 <P><B>setuperr.log</B> content:
 
@@ -296,7 +299,7 @@ Therefore, Windows Setup failed because it was not able to migrate the **C:\User
 
 <pre style="font-size: 10px; overflow-y: visible">
 23:50, Warning                 RECAPPLY: Error while moving \\?\C:\Windows.old\Users\user1\Cookies to \\?\C:\Users\user1\Cookies. Error: 0x000000B7
-23:50, Info             MIG    Cannot apply recursively object: C:\Users\user1\Cookies: Win32Exception: Cannot create a file when that file already exists.
+23:50, Info             MIG    Cannot apply recursively object: C:\Users\user1\Cookies:Win32Exception:Cannot create a file when that file already exists.
 23:50, Warning          MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.
 23:50, Info             MIG    Error 1175 during apply of object C:\Users\user1\Cookies. Will ask shell application for resolution.
 23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1b\Cookies. Will return 0
@@ -565,7 +568,7 @@ An unspecified error occurred with a driver during the SafeOS phase.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Analyze logs.
+This error has more than one possible cause. Attempt [quick fixes](#quick-fixes), and if not successful, [analyze log files](#analyze-log-files) in order to determine the problem and solution.
 
 </TABLE>
 </TD>
@@ -585,7 +588,7 @@ Analyze logs.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a cause.
+An extended error has occurred during the first boot phase.
 
 </TABLE>
 </TD>
@@ -596,7 +599,7 @@ Here is a cause.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Disable AV, disconnect devices, clean boot.
+Disable or uninstall non-Microsoft antivirus applications, disconnect all unnecessary devices, and perform a [clean boot](https://support.microsoft.com/en-us/kb/929135).
 
 </TABLE>
 </TD>
@@ -628,7 +631,7 @@ The installation failed during the second boot phase while attempting the MIGRAT
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Clean boot into Windows, and then attempt the upgrade to Windows 10. For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/en-us/kb/929135).
+Perform a [clean boot](https://support.microsoft.com/en-us/kb/929135), and reattempt the upgrade.
 
 <P>Ensure you select the option to "Download and install updates (recommended)."
 
@@ -650,7 +653,7 @@ Clean boot into Windows, and then attempt the upgrade to Windows 10. For more in
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Need cause here.  
+General failure, a device attached to the system is not functioning.  
 
 </TABLE>
 </TD>
@@ -661,7 +664,7 @@ Need cause here.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Need mitigation here.
+[Analyze log files](#analyze-log-files) in order to determine the device that is not functioning properly. Disconnect, update, or replace the device.
 
 </TABLE>
 </TD>
@@ -681,7 +684,7 @@ Need mitigation here.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a cause.
+The installation failed during the second boot phase while attempting the PRE_OOBE operation.
 
 </TABLE>
 </TD>
@@ -692,16 +695,11 @@ Here is a cause.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a mitigation procedure.
+This error has more than one possible cause. Attempt [quick fixes](#quick-fixes), and if not successful, [analyze log files](#analyze-log-files) in order to determine the problem and solution.
 
 </TABLE>
 </TD>
 </TR>
-
-
-
-
-
 
 </TABLE>
 
@@ -806,64 +804,63 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <TABLE>
 
 <TR><td BGCOLOR="#a0e4fa">Error Codes<td BGCOLOR="#a0e4fa">Cause<td BGCOLOR="#a0e4fa">Mitigation</TD></TR>
-<TR><TD>0x80070003- 0x20007<TD>This error occurs when there is problem with the Internet connection during the Windows 10 upgrade.<TD>"Since this error indicates that the internet connection ran into a problem, you may attempt to fix the connectivity issues and reattempt the download of the files.
-Alternatively, you may re-create installation media using ""Media Creation Tool"" from a different connected system. Refer: https://www.microsoft.com/en-us/software-download/windows10
+<TR><TD>0x80070003- 0x20007<TD>This error occurs when there is problem with the Internet connection during the Windows 10 upgrade.
 
-You can either create a USB drive or an ISO.
-"</TD></TR>
+<TD>Repair network connectivity issues and reattempt the upgrade process.
+<BR>Alternatively, create installation media for an offline upgrade using the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10). Download the Windows 10 image using a computer that is connected to the Internet.
+</TD></TR>
 <TR><TD>0x8007025D - 0x2000C<TD>This error occurs if the ISO file's metadata is corrupt.<TD>"Re-download the ISO/Media and re-attempt the upgrade.
 
-You may alternatively, re-create installation media using ""Media Creation Tool"" Refer: https://www.microsoft.com/en-us/software-download/windows10
+Alternatively, re-create installation media the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10).
 
-You can either create a USB drive or an ISO using the Media Creation Tool.
-"</TD></TR>
-<TR><TD>0x80070490 - 0x20007<TD>The error comes up during driver installation phase and it means that some of the device driver is incompatible.<TD>"Please ensure that all the devices are working correctly. Please review the Device Manager for any errors and troubleshoot accordingly.
-Refer: https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations
+</TD></TR>
+<TR><TD>0x80070490 - 0x20007<TD>An incompatible device driver is present.
 
-Additionally, you can review the following logs to verify which I/O device is causing the problem.
- ""%systemroot%\$Windows.~BT\Sources\Panther\setupact.log"" 
+<TD>[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations) on the computer, and [analyze log files](#analyze-log-files) to determine the problem driver.
 
-If unable to review the logs, post on Windows 10 TechNet Forum (https://social.technet.microsoft.com/Forums/en-us/home?forum=win10itprogeneral&filter=alltypes&sort=lastpostdesc)
-"</TD></TR>
-<TR><TD>0xC1900101 - 0x2000B<TD>This error occurs when the device drivers of the hardware connected to the computer prevent the Windows 10 upgrade from building the migration file list.<TD>We recommended you disconnect the devices that aren't in use when you upgrade the computer.</TD></TR>
-<TR><TD>0xC1900101 - 0x2000c<TD>The Setup Platform has encountered an unspecified error during the WINPE Phase. This is generally caused by drivers which are not updated at the time when the upgrade was started.<TD>It is recommended to select "Download and install updates (recommended)" during the upgrade process. Additionally, you can contact the Hardware Vendor and get the updates for the device drivers that are connected to the system. Ensure all the devices other than the Mouse; Keyboard and Display are disconnected during upgrade process. Then start setup again.</TD></TR>
-<TR><TD>0xC1900200 - 0x20008<TD>This error occurs when the computer doesn’t meet the minimum requirements to download or upgrade to Windows 10.<TD>"Refer http://www.microsoft.com/en-us/windows/windows-10-specifications?OCID=win10_null_vanity_win10specs and make sure that the machine, on which the upgrade is being initiated, meets the minimum requirement.
+</TD></TR>
+<TR><TD>0xC1900101 - 0x2000B<TD>One or more device drivers are blocking creating of the migration file list.
 
-Secondly use the Windows 10 Compatibility Reports to understand upgrade issues (https://blogs.technet.microsoft.com/askcore/2016/01/21/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues/)
-"</TD></TR>
-<TR><TD>0x80070004 - 0x3000D<TD>SYSTEM, LOCAL, SELF, System, and Network are reserved names that can’t be used for Computer Name.<TD>"Ensure that you do not use the reserved names as the Computer names. Rename the system to a valid Computer name.
-See KB 3086101 for more details.
-"</TD></TR>
-<TR><TD>0xC1900101 - 0x40001<TD>"This error indicates that we saw an error in the OOBE Phase - Stop 9F. This behavior occurs when device drivers do not handle power state transition requests properly. The error message most often occurs during one of the following actions: 1. Shutting down
-2. Suspending or resuming from Standby mode
-3. Suspending or resuming from Hibernate mode"<TD>"The most common causes for this error would be the connected devices on the machine / device as below and it would have suggested that we disable / disconnect them from the device /machine before performing the upgrade:
-1. Internal WIFI Modem
-2. Any External connected USB devices such as WEBCAMS; Printers; USB Hard Drives
-3. Check to be sure your computer and all devices are on the Hardware Compatibility List (HCL) and have WHQL signed and certified drivers.
+<TD>Disconnect unnecessary devices and upgrade device drivers.</TD></TR>
+<TR><TD>0xC1900101 - 0x2000c
+<TD>An unspecified error occurred during the WINPE Phase. This is due to an outdated driver.
+<TD>Update drivers on the computer, and select "Download and install updates (recommended)" during the upgrade process. Disconnect devices other than the mouse, keyboard and display.</TD></TR>
+<TR><TD>0xC1900200 - 0x20008
 
-The setup.exe will perform a rollback of the OS and would return to the older OS. Once the rollback is complete if we find the problem causing driver than we need to check for %SystemDrive%\$Windows.~bt\sources\Rollback\setupmem.dmp file and have a Microsoft Support Professional look into the same.
-"</TD></TR>
-<TR><TD>0xC1900101 - 0x4001E<TD>This error indicates that the installation failed in the SECOND_BOOT phase with an error during PRE_OOBE operation.<TD>This is a generic error that occurs during the OOBE phase of Setup. We recommend you to review the FAQ for Upgrade to Windows 10 (https://support.microsoft.com/en-us/help/12435/windows-10-upgrade-faq)</TD></TR>
-<TR><TD>0x80070005 - 0x4000D<TD>This error code means The installation failed in the SECOND_BOOT phase with an error in during MIGRATE_DATA operation.<TD>This issue may occur if we have any application / driver that is causing an issue while the upgrade to Windows 10 is going on.  Preform a clean boot on the system. Refer https://support.microsoft.com/en-us/kb/929135 for steps to perform a Clean boot.</TD></TR>
-<TR><TD>0x80070004 - 0x50012<TD>The Computer account for the system has an invalid name. <TD>Please ensure that the machine name does not have any invalid characters (See https://technet.microsoft.com/en-us/library/cc749460(v=ws.10).aspx). Additionally, the names should not be any of the reserved names for systems. Rename the system to a valid computer name and try the Setup again. See KB 3086101 for more details.</TD></TR>
-<TR><TD>"0xC190020e 0x80070070 - 0x50011
-0x80070070 - 0x50012
-0x80070070 - 0x60000"<TD>These errors would occur if your computer doesn’t have enough free space available to install the upgrade.<TD>"Typically to upgrade to Windows 10, you need free space of 16 GB for 32-bit OS and 20 GB for 64-bit OS. If there is not enough space refer the following article:
-https://support.microsoft.com/en-us/help/17421/windows-free-up-drive-space 
+<TD>The computer doesn’t meet the minimum requirements to download or upgrade to Windows 10.
+
+<TD>See [Windows 10 Specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications) and verify the computer meets minimum requirements.
+
+<BR>Review logs for [compatibility information](https://blogs.technet.microsoft.com/askcore/2016/01/21/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues/).</TD></TR>
+<TR><TD>0x80070004 - 0x3000D<TD>A reserved name is used as the computer name.
+
+<TD>Ensure that you do not use a [reserved name](https://support.microsoft.com/en-us/kb/3086101) as the computer name. System, Local, Self, and Network are reserved names that can’t be used as the computer name.</TD></TR>
+<TR><TD>0xC1900101 - 0x40001
+<TD>A device driver did not handle power state transition requests properly while shutting down, suspending or resuming from standby, or suspending or resuming from hibernation.
+
+<TD>Update, remove, or disable the following devices which frequently cause power state transition errors:
+<OL><LI>Internal WIFI Modems.
+<LI>Externally connected USB devices such as webcams, printers, and USB hard drives.</OL>
+<BR>Also, verify all devices are on the [Hardware Compatibility List](http://sysdev.microsoft.com/EN-US/HARDWARE/LPL/DEFAULT.ASPX) (HCL) and have WHQL signed and certified drivers. Analyze [log files](#log-files) if needed to determine the problem device or driver.
+</TD></TR>
+<TR><TD>0xC1900101 - 0x4001E
+<TD>Installation failed in the SECOND_BOOT phase with an error during PRE_OOBE operation.
+<TD>This is a generic error that occurs during the OOBE phase of setup. See the [0xC1900101](#0xC1900101) section of this guide and review general troubleshooting procedures described in that section.</TD></TR>
+<TR><TD>0x80070005 - 0x4000D
+<TD>The installation failed in the SECOND_BOOT phase with an error in during MIGRATE_DATA operation. This can be caused by an incompatible application or driver.
+<TD>Perform a [clean boot](https://support.microsoft.com/en-us/kb/929135) and then attempt the upgrade.</TD></TR>
+<TR><TD>0x80070004 - 0x50012
+<TD>The computer account for the system has an invalid name. 
+<TD>Ensure that the [computer name](https://technet.microsoft.com/en-us/library/cc749460.aspx) does not contain invalid characters, and is not a [reserved name](https://support.microsoft.com/en-us/kb/3086101).</TD></TR>
+<TR><TD>0xC190020e 
+<BR>0x80070070 - 0x50011
+<BR>0x80070070 - 0x50012
+<BR>0x80070070 - 0x60000
+<TD>These errors indicate the computer does not have enough free space available to install the upgrade.
+<TD>To upgrade a computer to Windows 10, it requires 16 GB of free hard drive space for a 32-bit OS, and 20 GB for a 64-bit OS. If there is not enough space, attempt to [free up drive space](https://support.microsoft.com/en-us/help/17421/windows-free-up-drive-space) before proceeding with the upgrade.
  
-Note: Once the deletion is complete, initiate the upgrade and this time you should not receive the error if sufficient space has been made. If that is not enough 
-then, you can implement solution as mentioned below.
- 
-Using External Drive
-If your device allows it, you can use an external USB drive for the upgrade process. Windows setup will backup the previous version of Windows to a USB external drive. The external drive must be at least 8GB – but having 16GB is recommended. 
-Some important points to remember if you choose to use an external storage drive for installing Windows 10:
- - We recommend that the external drive is formatted in NTFS.  Drives that are formatted in FAT32 may run into errors due to FAT32 file size limitations.  To learn   how to format in NTFS, click here.
-- USB drives are preferred over SD cards because drivers for SD cards are not migrated if the device does not support Connected Standby.
-"</TD></TR>
-
-
-
-
+<P>Note: If your device allows it, you can use an external USB drive for the upgrade process. Windows setup will back up the previous version of Windows to a USB external drive. The external drive must be at least 8GB (16GB is recommended). The external drive should be formatted using NTFS.  Drives that are formatted in FAT32 may run into errors due to FAT32 file size limitations. USB drives are preferred over SD cards because drivers for SD cards are not migrated if the device does not support Connected Standby.
+</TD></TR>
 
 </TABLE>
 
@@ -872,6 +869,7 @@ Some important points to remember if you choose to use an external storage drive
 
 ## Related topics
 
-•	Windows 10 FAQ for IT professionals
-•	Windows 10 Enterprise system requirements
-•	Windows 10 IT pro forums
+[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/en-us/windows/dn798755.aspx)
+<BR>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/en-us/windows/dn798752.aspx)
+<BR>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
+<BR>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
