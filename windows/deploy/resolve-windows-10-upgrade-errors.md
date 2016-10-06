@@ -223,14 +223,19 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 A setupact.log or setuperr.log entry includes the following elements:
 
 <OL>
-<LI>The date and time. For example: 2016-09-08 09:20:05.
-<LI>The log level: Info, Warning, Error, Fatal Error.
-<LI>The logging component: CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS.
+<LI><B>The date and time</B> - 2016-09-08 09:20:05.
+<LI><B>The log level</B> - Info, Warning, Error, Fatal Error.
+<LI><B>The logging component</B> - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS.
 <UL>
 <LI>The logging components SP (setup platform), MIG (migration engine), and CONX (compatibility information) are particularly useful for troubleshooting Windows Setup errors.
 </UL>
-<LI>The message. For example: Operation completed successfully.
+<LI><B>The message</B> - Operation completed successfully.
 </OL>
+
+An example log entry is shown below:
+<PRE>
+2016-09-08 09:23:50, Warning          MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.
+</PRE>
 
 ### Analyze log files
 
