@@ -245,7 +245,7 @@ To analyze Windows Setup log files:
 <LI>Determine the Windows Setup error code.
 <LI>Based on the [extend code](#extend-codes) portion of the error code, determine the type and location of a [log files](#log-files) to investigate.
 <LI>Open the log file in a text editor, such as notepad.
-<LI>Using the result code portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code.
+<LI>Using the result code portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the "abort" and abandoning" text strings described in step 7 below.
 <LI>To find the last occurrence of the result code:
   <OL type="a">
   <LI>Scroll to the bottom of the file and click after the last character.
@@ -287,18 +287,15 @@ For example, assume that searching for the result code "8007042B" reveals the fo
 23:52, Error            SP     CSetupPlatformPrivate::Execute: Failed to deserialize/execute pre-OOBEBoot operations. Error: 0x8007042B[gle=0x000000b7]
 </PRE>
 
-
-In the previous text, the third line indicates there was an error **0x00000497** with the folder **C:\Users\user1\Cookies**:
+The third line indicates there was an error **0x00000497** with the folder **C:\Users\user1\Cookies** (shown below):
 
 <pre style="font-size: 10px; overflow-y: visible">
 23:50, Error            SP     Error WRITE, 0x00000497 while gathering/applying object: File, C:\Users\user1\Cookies. Will return 0
 </PRE>
 
-</B>The error 0x00000497 is a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) corresponding to: 
+</B>The error 0x00000497 is a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) corresponding to: ERROR_UNABLE_TO_REMOVE_REPLACED: Unable to remove the file to be replaced.
 
-<P>ERROR_UNABLE_TO_REMOVE_REPLACED: Unable to remove the file to be replaced.
-
-Therefore, Windows Setup failed because it was not able to migrate the **C:\Users\user1\Cookies** folder.  Searching the setupact.log file for additional details, the following text is found:
+Therefore, Windows Setup failed because it was not able to migrate the **C:\Users\user1\Cookies** folder.  Searching the setupact.log file for additional details, the following text is found confirming our suspicion that this file is the cause of the upgrade failure:
 
 <P><B>setupact.log</B> content:
 
@@ -318,7 +315,7 @@ The setupact.log file also contains information detailing the configuration of f
 49:12, Info             MIG    Known folder CSIDL_COOKIES: C:\Users\user1\Cookies, default location: No
 </PRE>
 
-This error can be resolved by configuring the folder to use its default location.
+This analysis indicates that the Windows upgrade error can be resolved by configuring the C:\Users\user1\Cookies folder to use its default location.
 
 ## Common error codes
 
