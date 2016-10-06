@@ -2,7 +2,7 @@
 title: Resolve common Windows 10 upgrade errors
 description: Resolve common Windows 10 upgrade errors
 ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
-keywords: deploy, error, troubleshoot, windows, 10
+keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -33,7 +33,7 @@ The following sections and procedures are provided in this guide:
 - [Common error codes](#common-error-codes): Causes and mitigation procedures associated with some common error codes.
     - [0xC1900101](#0xC1900101): Information about the 0xC1900101 result code.
     - [0x800xxxxx](#0x800xxxxx): Information about result codes that start with 0x800.
-- [Other result codes](#less-common-error-codes): Some causes and mitigation procedures are provided for other result codess.
+- [Other result codes](#less-common-error-codes): Some causes and mitigation procedures are provided for other result codes.
 - [Other error codes](#less-common-error-codes): Some causes and mitigation procedures are provided for other error codes.
 
 ## The Windows 10 upgrade process
