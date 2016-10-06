@@ -47,7 +47,6 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
   ![Microsoft Intune Configuration Policies](images/atp-intune-add-policy.png)
 
   b. Under **Windows**, select **Custom Configuration (Windows 10 Desktop and Mobile and later)** > **Create and Deploy a Custom Policy** > **Create Policy**.
-
   ![Microsoft Intune Configuration Policies](images/atp-intune-new-policy.png)
 
   c. Type a name and description for the policy.
@@ -57,7 +56,6 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
   ![Microsoft Intune add OMC-URI](images/atp-intune-add-oma.png)
 
   e. Type the following values then select **OK**:
-
   ![Microsoft Intune save policy](images/atp-intune-oma-uri-setting.png)
 
   - **Setting name**: Type a name for the setting.
@@ -68,9 +66,11 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
 
   f. Save the policy.
+
   ![Microsoft Intune save policy](images/atp-intune-save-policy.png)
 
   g. Deploy the policy.
+
   ![Microsoft Intune deploy policy](images/atp-intune-deploy-policy.png)
 
   h. Select the device group to deploy the policy to:
