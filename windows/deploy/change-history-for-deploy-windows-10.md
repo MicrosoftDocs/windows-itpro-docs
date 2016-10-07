@@ -29,6 +29,11 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 =======
 
+## October 2016
+| New or changed topic | Description |
+|----------------------|-------------|
+| [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) | New | 
+
 ## August 2016
 | New or changed topic | Description |
 |----------------------|-------------|
