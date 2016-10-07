@@ -253,11 +253,10 @@ See the following example:
 </TABLE>
 
 
-
-
 ### Analyze log files
 
-To analyze Windows Setup log files:
+
+<P>To analyze Windows Setup log files:
 
 <OL>
 <LI>Determine the Windows Setup error code.
