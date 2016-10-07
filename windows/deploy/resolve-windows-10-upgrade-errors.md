@@ -68,7 +68,7 @@ The following steps can resolve many Windows upgrade problems.
 <LI>chkdsk /F</LI>
 </UL>
 </LI>
-<LI>Attept to restore and repair system files by typing the following commands at an elevated command prompt. It may take several minutes for the command operations to be completed.
+<LI>Attept to restore and repair system files by typing the following commands at an elevated command prompt. It may take several minutes for the command operations to be completed. For more information, see [Repair a Windows Image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/repair-a-windows-image).
 <UL>
 <LI>DISM.exe /Online /Cleanup-image /Restorehealth</LI>
 <LI>sfc /scannow</LI>
@@ -119,6 +119,8 @@ For example:
 Some result codes are self-explanatory, whereas others are more generic and require further analysis. In the examples shown above, ERROR_DISK_FULL indicates that the hard drive is full and additional room is needed to complete Windows upgrade. The message STATUS_SOME_NOT_MAPPED is more ambiguous, and means that an action is pending. In this case, the action pending is often the cleanup operation from a previous installation attempt, which can be resolved with a system reboot. 
 
 ### Extend codes
+
+>Important: Extend codes reflect the current Windows 10 upgrade process, and might change in future releases of Windows 10. The codes discussed in this section apply to Windows 10 version 1607, also known as the Anniversary Update.
 
 Extend codes can be matched to the phase and operation when an error occurred. To match an extend code to the phase and operation:
 
@@ -243,8 +245,9 @@ A setupact.log or setuperr.log entry includes the following elements:
 
 See the following example:
 
-<P>2016-09-08 09:23:50, Warning          MIG    Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.
-
+<P><TABLE>
+<TR><TD>2016-09-08 09:23:50</TD><TD>Warning<TD>MIG<TD>Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.</TR>
+</TABLE>
 
 ### Analyze log files
 
