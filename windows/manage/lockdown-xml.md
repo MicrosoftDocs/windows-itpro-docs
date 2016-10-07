@@ -88,7 +88,7 @@ The following example is a complete lockdown XML file that disables Action Cente
 
 ![XML for Apps](images/AppsXML.png)
 
-The Apps setting serves as an allow list and specifies the applications that will be available in the All apps list. Apps that are not included in this setting are hidden from the user and blocked from running. test
+The Apps setting serves as an allow list and specifies the applications that will be available in the All apps list. Apps that are not included in this setting are hidden from the user and blocked from running. 
 
 You provide the product ID for each app in your file. The product ID identifies an app package, and an app package can contain multiple apps, so you should also provide the App User Model ID (AUMID) to differentiate the app. Optionally, you can set an app to run automatically. [Get product ID and AUMID for apps in Windows 10 Mobile.](product-ids-in-windows-10-mobile.md)
 
