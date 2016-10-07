@@ -246,7 +246,7 @@ A setupact.log or setuperr.log entry includes the following elements:
 See the following example:
 
 <P><TABLE BORDER=1>
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>2016-09-08 09:23:50</TD>
+<TR><TD style='padding:0in 4pt 0in 4pt'> <span style='font-size:9.0pt'>2016-09-08 09:23:50</TD>
 <TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>Warning</TD>
 <TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>MIG</TD>
 <TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.</TD></TR>
