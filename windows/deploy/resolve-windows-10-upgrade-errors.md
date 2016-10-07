@@ -16,7 +16,7 @@ localizationpriority: high
 **Applies to**
 -   Windows 10
 
-This topic provides a brief introduction to Windows 10 installation processes and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade.
+This topic provides a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade.
 
 ## In this topic
 
