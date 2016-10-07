@@ -298,7 +298,6 @@ Table 1. Deployment requirements for Microsoft Passport
 <th align="left">Microsoft Passport method</th>
 <th align="left">Azure AD</th>
 <th align="left">Hybrid Active Directory</th>
-<th align="left">On-premises Active Directory only</th>
 </tr>
 </thead>
 <tbody>
@@ -312,8 +311,6 @@ Table 1. Deployment requirements for Microsoft Passport
 <li>A management solution, such as Configuration Manager, Group Policy, or MDM</li>
 <li>Active Directory Certificate Services (AD CS) without Network Device Enrollment Service (NDES)</li>
 </ul></td>
-<td align="left"><p>One or more Windows Server 2016 Technical Preview domain controllers</p>
-<p>AD FS of Windows Server 2016 Technical Preview</p></td>
 </tr>
 <tr class="even">
 <td align="left">Certificate-based</td>
@@ -326,9 +323,6 @@ Table 1. Deployment requirements for Microsoft Passport
 <li>AD CS with NDES</li>
 <li>Configuration Manager (current branch) or Configuration Manager 2016 Technical Preview for domain-joined certificate enrollment, or InTune for non-domain-joined devices, or a non-Microsoft MDM service that supports Passport for Work</li>
 </ul></td>
-<td align="left"><p>AD DS Windows Server 2016 Technical Preview schema </p>
-<p>AD FS of Windows Server 2016 Technical Preview</p>
-<p>PKI infrastructure  System Center 2012 R2 Configuration Manager with SP2 or later</p></td>
 </tr>
 </tbody>
 </table>
