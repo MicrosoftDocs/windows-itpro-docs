@@ -209,14 +209,10 @@ The lab architecture is summarized in the following diagram:
 
     ```
     C:\>mkdir VHD
-
     C:\>cd VHD
-
     C:\VHD>ren 9600*.vhd 2012R2-poc-1.vhd
-
     C:\VHD>copy 2012R2-poc-1.vhd 2012R2-poc-2.vhd
             1 file(s) copied.
-
     C:\VHD ren *.iso w10-enterprise.iso
     C:\VHD>dir /B
     2012R2-poc-1.vhd
