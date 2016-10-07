@@ -24,7 +24,7 @@ The following sections and procedures are provided in this guide:
 
 - [The Windows 10 upgrade process](#the-windows-10-upgrade-process): An explanation of phases used during the upgrade process.<BR>
 - [Quick fixes](#quick-fixes): Steps you can take to eliminate many Windows upgrade errors.<BR>
-- [Upgrade error codes](#upgrade-error-codes): The composition of an error code is explained.
+- [Upgrade error codes](#upgrade-error-codes): The components of an error code are explained.
     - [Result codes](#result-codes): Information about result codes.
     - [Extend codes](#extend-codes): Information about extend codes.
 - [Log files](#log-files): A list and description of log files useful for troubleshooting.
@@ -246,7 +246,10 @@ A setupact.log or setuperr.log entry includes the following elements:
 See the following example:
 
 <P><TABLE BORDER=1>
-<TR><TD>2016-09-08 09:23:50</TD><TD>Warning<TD>MIG<TD>Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.</TR>
+<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>2016-09-08 09:23:50</TD>
+<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>Warning</TD>
+<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>MIG</TD>
+<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.</TD></TR>
 </TABLE>
 
 ### Analyze log files
