@@ -250,9 +250,20 @@ See the following example:
 <TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>Warning</TD>
 <TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>MIG</TD>
 <TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.</TD></TR>
-</TABLE>
+</TABLE><BR>
 
 ### Analyze log files
+
+
+
+
+
+
+
+
+
+
+
 
 <P>To analyze Windows Setup log files:
 
