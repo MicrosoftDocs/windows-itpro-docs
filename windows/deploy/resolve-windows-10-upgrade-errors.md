@@ -252,6 +252,9 @@ See the following example:
 <TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.</TD></TR>
 </TABLE>
 
+
+
+
 ### Analyze log files
 
 To analyze Windows Setup log files:
