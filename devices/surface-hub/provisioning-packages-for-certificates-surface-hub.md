@@ -46,7 +46,7 @@ Currently, you can add these items to provisioning packages for Surface Hub:
 - **Certificates** - You can add certificates, if needed, to support Microsoft Exchange and UWP apps downloaded from the Windows Store for Business.
 - **Universal Windows Platform (UWP) apps** - You can install UWP apps. This can be an offline-licensed app from the Windows Store for Business, or an app created by an in-house dev.
 - **Policies** - Surface Hub supports a subset of the policies in the [Policy configuration service provider](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). Some of those policies can be configured with ICD.
-- **Settings** - You can configure any setting in the [SurfaceHub configuration service provider](https://msdn.microsoft.com/en-us/library/windows/hardware/mt608323.aspx).
+- **Settings** - You can configure any setting in the [SurfaceHub configuration service provider](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx).
 
 
 ## Create the provisioning package
@@ -73,7 +73,8 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 ### Add a certificate to your package
 You can use provisioning packages to install certificates that will allow the device to authenticate to Microsoft Exchange, or to install apps downloaded from the Windows Store.
 
-> **Note**  Provisioning packages can only install certificates to the device (local machine) store, and not to the user store. If your organization requires that certificates must be installed to the user store, use Mobile Device Management (MDM) to deploy these certificates. See your MDM solution documentation for details.
+> [!NOTE]
+> Provisioning packages can only install certificates to the device (local machine) store, and not to the user store. If your organization requires that certificates must be installed to the user store, use Mobile Device Management (MDM) to deploy these certificates. See your MDM solution documentation for details.
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **Certificates** > **ClientCertificates**. 
 
@@ -122,7 +123,7 @@ Surface Hub supports a subset of the policies in the [Policy configuration servi
 
 ### Add Surface Hub settings to your package 
 
-You can add settings from the [SurfaceHub configuration service provider](https://msdn.microsoft.com/en-us/library/windows/hardware/mt608323.aspx) to your provisioning package. 
+You can add settings from the [SurfaceHub configuration service provider](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx) to your provisioning package. 
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **WindowsTeamSettings**.
 
@@ -137,7 +138,8 @@ You can add settings from the [SurfaceHub configuration service provider](https:
 
 2. Read the warning that project files may contain sensitive information, and click **OK**.
 
-    > **Important**  When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+    > [!IMPORTANT]
+    > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
 3. On the **Export** menu, click **Provisioning package**.
 
@@ -145,7 +147,8 @@ You can add settings from the [SurfaceHub configuration service provider](https:
 
 5. Set a value for **Package Version**, and then select **Next.**
 
-    > [!TIP]  You can make changes to existing packages and change the version number to update previously applied packages.
+    > [!TIP]
+    > You can make changes to existing packages and change the version number to update previously applied packages.
 
 6. Optional: You can choose to encrypt the package and enable package signing.
 
@@ -153,7 +156,8 @@ You can add settings from the [SurfaceHub configuration service provider](https:
 
     -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Browse...** and choosing the certificate you want to use to sign the package.
 
-        > **Important**  We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently. 
+        > [!IMPORTANT]
+        > We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently. 
 
 7. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows ICD uses the project folder as the output location.<p>
 Optionally, you can click **Browse** to change the default output location.
@@ -175,12 +179,13 @@ If your build is successful, the name of the provisioning package, output direct
 
 ## Apply a provisioning package to Surface Hub
 
-There are two options for deploying provisioning packages to a Surface Hub.
+There are two options for deploying provisioning packages to a Surface Hub. You can apply a provisioning packing [during the first run wizard](#apply-a-provisioning-package-during-first-run), or using [Settings](#apply-a-package-using-settings). 
 
 
 ### Apply a provisioning package during first run
 
-> **Important**  Only use provisioning packages to install certificates during first run. Use the **Settings** app to install apps and apply other settings.
+> [!IMPORTANT]
+> Only use provisioning packages to install certificates during first run. Use the **Settings** app to install apps and apply other settings.
 
 1. When you turn on the Surface Hub for the first time, the first-run program will display the [**Hi there page**](first-run-program-surface-hub.md#first-page). Make sure that the settings are properly configured before proceeding.
 
