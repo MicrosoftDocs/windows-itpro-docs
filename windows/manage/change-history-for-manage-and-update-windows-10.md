@@ -12,6 +12,12 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## October 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| [Manage device restarts after updates](waas-restart.md) | New |
+
 ## September 2016
 
 | New or changed topic | Description |
