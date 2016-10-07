@@ -245,7 +245,7 @@ A setupact.log or setuperr.log entry includes the following elements:
 
 See the following example:
 
-<P><TABLE>
+<P><TABLE BORDER=1>
 <TR><TD>2016-09-08 09:23:50</TD><TD>Warning<TD>MIG<TD>Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.</TR>
 </TABLE>
 
@@ -886,3 +886,4 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 <BR>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/en-us/windows/dn798752.aspx)
 <BR>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
 <BR>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
+<BR>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
