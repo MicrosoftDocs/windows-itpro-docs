@@ -13,9 +13,9 @@ localizationpriority: high
 As an admin, you can acquire apps from the Windows Store for Business for your employees. Some apps are free, and some have a price. For info on app types that are supported, see [Apps in the Windows Store for Business](apps-in-windows-store-for-business.md).
 
 ## App licensing model
-The Business store supports two options to license apps: online and offline. **Online** licensing is the default licensing model and is similar to the Windows Store. Online licensed apps require users and devices to connect to the Store for Business service to acquire an app and its license. **Offline** licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center.
+The Business store supports two options to license apps: online and offline. **Online** licensing is the default licensing model and is similar to the Windows Store. Online licensed apps require users and devices to connect to the Store for Business service to acquire an app and its license. **Offline** licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Admins control whether or not offline apps are available in Store for Business with an offline app visibility setting. For more information, see [offline license visibility](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings#offline-licensing). 
 
-For more information, see [Apps in the Windows Store for Business](apps-in-windows-store-for-business.md). 
+For more information on the Store for Business licensing model, see [licensing model](https://technet.microsoft.com/itpro/windows/manage/apps-in-windows-store-for-business#licensing-model).
 
 ## Payment options
 Some apps are free, and some have a price. Apps can be purchased in the Windows Store for Business using your credit card. You can enter your credit card information on **Account Information**, or when you purchase an app. Currently, we accept these credit cards:
