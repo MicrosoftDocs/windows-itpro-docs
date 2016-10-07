@@ -204,7 +204,7 @@ Several log files are created during each phase of the upgrade process. These lo
 <TR><TD>OOBE:<BR>$Windows.~BT\Sources\Panther\UnattendGC
 <TD>Contains information about actions during the OOBE phase.<TD>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.
 <TR><TD>Rollback:<BR>$Windows.~BT\Sources\Rollback<TD>Contains information about actions during rollback.<TD>Investigating generic rollbacks - 0xC1900101.
-<TR><TD>Pre-initialization (prior to downlevel):<BR>Windows\<TD>Contains information about initializing setup.<TD>If setup fails to launch.
+<TR><TD>Pre-initialization (prior to downlevel):<BR>Windows</TD><TD>Contains information about initializing setup.<TD>If setup fails to launch.
 <TR><TD>Post-upgrade (after OOBE):<BR>Windows\Panther<TD>Contains information about setup actions during the installation.<TD>Investigate post-upgrade related issues.
 
 <TR><TD>setuperr.log<TD>Same as setupact.log<TD>Contains information about setup errors during the installation.<TD>Review all errors encountered during the installation phase.
