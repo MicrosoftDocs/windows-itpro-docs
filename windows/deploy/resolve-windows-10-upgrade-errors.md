@@ -1,6 +1,6 @@
 ---
-title: Resolve common Windows 10 upgrade errors
-description: Resolve common Windows 10 upgrade errors
+title: Resolve Windows 10 upgrade errors
+description: Resolve Windows 10 upgrade errors
 ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback
 ms.prod: w10
@@ -11,30 +11,30 @@ author: greg-lindsay
 localizationpriority: high
 ---
 
-# Resolve common Windows 10 upgrade errors
+# Resolve Windows 10 upgrade errors
 
 **Applies to**
 -   Windows 10
 
-This topic provides a brief introduction to Windows 10 installation processes and provides resolution procedures you can use to resolve common problems.
+This topic provides a brief introduction to Windows 10 installation processes and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade.
 
 ## In this topic
 
 The following sections and procedures are provided in this guide:
 
 - [The Windows 10 upgrade process](#the-windows-10-upgrade-process): An explanation of phases used during the upgrade process.<BR>
-- [Quick fixes](#quick-fixes): Steps you can take to eliminate common Windows upgrade errors.<BR>
+- [Quick fixes](#quick-fixes): Steps you can take to eliminate many Windows upgrade errors.<BR>
 - [Upgrade error codes](#upgrade-error-codes): The composition of an error code is explained.
     - [Result codes](#result-codes): Information about result codes.
     - [Extend codes](#extend-codes): Information about extend codes.
 - [Log files](#log-files): A list and description of log files useful for troubleshooting.
     - [Log entry structure](#log-entry-structure): The format of a log entry is described.
     - [Analyze log files](#analyze-log-files): General procedures for log file analysis, and an example.
-- [Common error codes](#common-error-codes): Causes and mitigation procedures associated with some common error codes.
+- [Resolution procedures](#resolution-procedures): Causes and mitigation procedures associated with specific error codes.
     - [0xC1900101](#0xC1900101): Information about the 0xC1900101 result code.
     - [0x800xxxxx](#0x800xxxxx): Information about result codes that start with 0x800.
-- [Other result codes](#less-common-error-codes): Some causes and mitigation procedures are provided for other result codes.
-- [Other error codes](#less-common-error-codes): Some causes and mitigation procedures are provided for other error codes.
+    - [Other result codes](#other-result-codes): Additional causes and mitigation procedures are provided for some result codes.
+    - [Other error codes](#other-error-codes): Additional causes and mitigation procedures are provided for some error codes.
 
 ## The Windows 10 upgrade process
 
@@ -60,7 +60,7 @@ WIM = Windows image (Microsoft)
 
 ## Quick fixes
 
-The following steps can resolve many common Windows upgrade problems.
+The following steps can resolve many Windows upgrade problems.
 
 <OL>
 <LI>Check all hard drives for errors and attempt repairs. To automatically repair hard drives, open an elevated command prompt, switch to the drive you wish to repair, and type the following command. You will be required to reboot the computer if the hard drive being repaired is also the system drive.
@@ -102,7 +102,7 @@ Note: If only a result code is returned, this can be because a tool is being use
 
 ### Result codes
 
->A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. <BR>To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Common error codes](#common-error-codes) section later in this topic.
+>A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. <BR>To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Other error codes](#other-error-codes) section later in this topic.
 
 Result codes can be matched to the type of error encountered. To match a result code to an error:
 
@@ -329,11 +329,11 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 
 This analysis indicates that the Windows upgrade error can be resolved by deleting the C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN] file. Note: In this example, the full, unshortened file name is  C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f. 
 
-## Common error codes
+## Resolution procedures
 
 ### 0xC1900101
 
-A common result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the Downlevel phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as:<BR>
+A frequently observed result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the downlevel phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as:<BR>
 
 - The minidump file: $Windows.~bt\Sources\Rollback\setupmem.dmp, 
 - Event logs: $Windows.~bt\Sources\Rollback\*.evtx 
@@ -557,7 +557,7 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 
 ### 0x800xxxxx
 
-Result codes starting with the digits 0x800 are also relatively common. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
+Result codes starting with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
 
 <P>See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:
 
@@ -722,7 +722,7 @@ This error has more than one possible cause. Attempt [quick fixes](#quick-fixes)
 </TABLE>
 
 
-## Other result codes
+### Other result codes
 
 <table>
 
@@ -817,7 +817,7 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 
 </table>
 
-## Other error codes
+### Other error codes
 
 <TABLE>
 
