@@ -224,10 +224,12 @@ The lab architecture is summarized in the following diagram:
 
 **Important**:Before you convert a PC to VHD, verify that you have access to a local administrator account on the computer. Alternatively you can use a domain account with administrative rights if these credentials are cached on the computer and your domain policy allows the use of cached credentials for login.
 
->For purposes of the test lab, you must use a PC with a single hard drive that is assigned a drive letter of C:. Systems with multiple hard drives or non-standard configurations can also be upgraded using PC refresh and replace scenarios, but these systems require more advanced deployment task sequences than those used in this lab.
+>For purposes of the test lab, you must use a PC with a single hard drive that is assigned a drive letter of C. Systems with multiple hard drives or non-standard configurations can also be upgraded using PC refresh and replace scenarios, but these systems require more advanced deployment task sequences than those used in this lab.
 
 1. Download the [Disk2vhd utility](https://technet.microsoft.com/en-us/library/ee656415.aspx), extract the .zip file and copy disk2vhd.exe to a flash drive or other location that is accessible from the computer you wish to convert.
+
     >Note: You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media.
+
 2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
 3. Select checkboxes next to the volumes you wish to copy and specify a location to save the resulting VHD or VHDX file. If your Hyper-V host is running Windows Server 2008 R2 you must choose VHD, otherwise choose VHDX.
 4. Click **Create** to start creating a VHDX file.
