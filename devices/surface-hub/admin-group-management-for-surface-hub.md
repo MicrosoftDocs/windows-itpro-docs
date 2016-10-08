@@ -37,12 +37,13 @@ Note that the local admin account information is not backed by any directory ser
 
 You can domain join the Surface Hub to your AD domain to allow users from a specified security group to configure settings. During first run, choose to use [Active Directory Domain Services](first-run-program-surface-hub.md#a-href-iduse-active-directoryause-active-directory-domain-services). You'll need to provide credentials that are capable of joining the domain of your choice, and the name of an existing security group. Anyone who is a member of that security group can enter their credentials and unlock Settings.
 
-> [!NOTE]
-> **What happens when you domain join your Surface Hub?** Surface Hubs use domain join to:
-> - Grant admin rights to members of a specified security group in AD.
-> - Backup the device's BitLocker recovery key by storing it under the computer object in AD. See [Save your BitLocker key](save-bitlocker-key-surface-hub.md) for details.
-> - Synchronize the system clock with the domain controller for encrypted communication
-> Surface Hub does not support applying group policies or certificates from the domain controller.
+#### What happens when you domain join your Surface Hub?
+Surface Hubs use domain join to:
+- Grant admin rights to members of a specified security group in AD.
+- Backup the device's BitLocker recovery key by storing it under the computer object in AD. See [Save your BitLocker key](save-bitlocker-key-surface-hub.md) for details.
+- Synchronize the system clock with the domain controller for encrypted communication
+
+Surface Hub does not support applying group policies or certificates from the domain controller.
 
 > [!NOTE]
 > If your Surface Hub loses trust with the domain (for example, if you remove the Surface Hub from the domain after it is domain joined), you won't be able to authenticate into the device and open up Settings. If you decide to remove the trust relationship of the Surface Hub with your domain, [reset the device](device-reset-surface-hub.md) first.
@@ -58,12 +59,12 @@ By default, all **global administrators** will be given admin rights on an Azure
 3.  Click **Add**, and select the users you want to add as administrators on your Surface Hub and other Azure AD joined devices.
 4.  When you have finished, click the checkmark button to save your change.
 
-> [!NOTE]
-> **What happens when you Azure AD join your Surface Hub?** Surface Hubs use Azure AD join to:
-> - Grant admin rights to the appropriate users in your Azure AD tenant.
-> - Backup the device's BitLocker recovery key by storing it under the account that was used to Azure AD join the device. See [Save your BitLocker key](save-bitlocker-key-surface-hub.md) for details.
+#### What happens when you Azure AD join your Surface Hub?
+Surface Hubs use Azure AD join to:
+- Grant admin rights to the appropriate users in your Azure AD tenant.
+- Backup the device's BitLocker recovery key by storing it under the account that was used to Azure AD join the device. See [Save your BitLocker key](save-bitlocker-key-surface-hub.md) for details.
 
-> [!NOTE]
+> [!IMPORTANT]
 > If your Azure AD organization is configured to automatically enroll devices into mobile device management (MDM), you will need to disable this for the Surface Hubs you plan to join to Azure AD, and manually enroll into MDM using Settings. A known issue prevents Surface Hubs from supporting this setting.
 
 
@@ -74,10 +75,12 @@ If your organization is using AD or Azure AD, we recommend you either domain joi
 
 ### Summary
 
+
+
 | Option                                            | Requirements                            | Which credentials can be used to access the Settings app?  |
 |---------------------------------------------------|-----------------------------------------|-------|
 | Create a local admin account                      | None                                    | The user name and password specified during first run |
 | Domain join to Active Directory (AD)              | Your organization uses AD               | Any AD user from a specific security group in your domain |
 | Azure Active Directory (Azure AD) join the device | Your organization uses Azure AD Basic   | Global administators only |
-|                                                   | Your organization uses Azure AD Premium or Enterprise Mobility Suite (EMS) | Global administrators and additional administrators |
+| &nbsp;                                            | Your organization uses Azure AD Premium or Enterprise Mobility Suite (EMS) | Global administrators and additional administrators |
 
