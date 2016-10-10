@@ -88,7 +88,7 @@ For a list of all languages supported for client and server in MBAM 2.5 and MBAM
 
 ### Support for Windows 10
 
-MBAM 2.5 SP1 adds support for Windows 10, in addition to the same software that is supported in earlier versions of MBAM.
+MBAM 2.5 SP1 adds support for Windows 10 and Windows Server 2016, in addition to the same software that is supported in earlier versions of MBAM.
 
 Windows 10 is supported in both MBAM 2.5 and MBAM 2.5 SP1.
 
@@ -216,6 +216,7 @@ After installation, the service will now set the MBAM agent service to use delay
 ### Locked Fixed Data volumes now report as Compliant
 
 The compliance calculation logic for "Locked Fixed Data" volumes has been changed to report the volumes as "Compliant," but with a Protector State and Encryption State of "Unknown" and with a Compliance Status Detail of "Volume is locked". Previously, locked volumes were reported as “Non-Compliant”, a Protector State of "Encrypted", an Encryption State of "Unknown", and a Compliance Status Detail of "An unknown error".
+
 
 ## How to Get MDOP Technologies
 
