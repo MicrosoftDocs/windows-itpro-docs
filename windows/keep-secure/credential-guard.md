@@ -30,7 +30,9 @@ Credential Guard isolates secrets that previous versions of Windows stored in th
 
 For security reasons, the isolated LSA process doesn't host any device drivers. Instead, it only hosts a small subset of operating system binaries that are needed for security and nothing else. All of these binaries are signed with a certificate that is trusted by virtualization-based security and these signatures are validated before launching the file in the protected environment.
 
-Credential Guard also does not allow unconstrained Kerberos delegation, NTLMv1, MS-CHAPv2, Digest, CredSSP, and Kerberos DES encryption.
+Credential Guard prevents NTLMv1, MS-CHAPv2, Digest, and CredSSP from using sign-on credentials. Thus, single sign-on does not work with these protocols. However, Credential guard allows these protocols to be used with prompted credentials or those saved in Credential Manager. It is strongly recommended that valuable credentials, such as the sign-on credentials, not be used with any of these protocols. If these protocols must be used by domain users, secondary credentials should be provisioned for these use cases.
+
+Credential Guard does not allow unconstrained Kerberos delegation or Kerberos DES encryption at all. Neither sign-on nor prompted/saved credentials may be used.
 
 Here's a high-level overview on how the LSA is isolated by using virtualization-based security:
 

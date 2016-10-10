@@ -28,19 +28,19 @@ This section will walk you through the process of creating the E:\\MDTProduction
 
 1.  On CM01, using the Deployment Workbench, right-click **Deployment Shares** and select **New Deployment Share**. Use the following settings for the New Deployment Share Wizard:
 
-    1.  Deployment share path: E:\\MDTProduction
+    * Deployment share path: E:\\MDTProduction
 
-    2.  Share name: MDTProduction$
+    * Share name: MDTProduction$
 
-    3.  Deployment share description: MDT Production
+    * Deployment share description: MDT Production
 
-    4.  Options: &lt;default settings&gt;
+    * Options: &lt;default settings&gt;
 
 2.  Right-click the **MDT Production** deployment share, and select **Properties**. In the **Monitoring** tab, select the **Enable monitoring for this deployment share** check box, and click **OK**.
 
-![figure 26](images/mdt-06-fig31.png)
+    ![Enable MDT monitoring for Configuration Manager](images/mdt-06-fig31.png)
 
-Figure 26. Enabling MDT monitoring for Configuration Manager.
+    *Figure 26. Enable MDT monitoring for Configuration Manager*
 
 ## <a href="" id="sec02"></a>Create and share the Logs folder
 
@@ -82,14 +82,14 @@ This section will show you how to configure the rules (the Windows 10 x64 Settin
     ApplyGPOPack=NO
     ```
 
-    ![figure 27](images/fig30-settingspack.png)
+    ![Settings package during deployment](images/fig30-settingspack.png)
 
-    Figure 27. The Settings package, holding the rules and the Unattend.xml template used during deployment
+    *Figure 27. The Settings package, holding the rules and the Unattend.xml template used during deployment*
 
 3.  Update the distribution point for the **Windows 10 x64 Settings** package by right-clicking the **Windows 10 x64 Settings** package and selecting **Update Distribution Points**.
 
-**Note**  
-Although you have not yet added a distribution point, you still need to select Update Distribution Points. That process also updates the Configuration Manager 2012 content library with changes.
+  >[!NOTE]  
+  >Although you have not yet added a distribution point, you still need to select Update Distribution Points. That process also updates the Configuration Manager 2012 content library with changes.
 
  
 
@@ -115,13 +115,13 @@ This sections provides steps to help you create a deployment for the task sequen
 
 3.  On the **Deployment Settings** page, use the following settings and then click **Next**:
 
-    1.  Purpose: Available
+    * Purpose: Available
 
-    2.  Make available to the following: Only media and PXE
+    * Make available to the following: Only media and PXE
 
-    ![figure 28](images/mdt-06-fig33.png)
-
-    Figure 28. Configure the deployment settings.
+    ![Configure the deployment settings](images/mdt-06-fig33.png)
+    
+    *Figure 28. Configure the deployment settings*
 
 4.  On the **Scheduling** page, accept the default settings and click **Next**.
 
@@ -131,9 +131,9 @@ This sections provides steps to help you create a deployment for the task sequen
 
 7.  On the **Distribution Points** page, accept the default settings, click **Next** twice, and then click **Close**.
 
-![figure 29](images/fig32-deploywiz.png)
+   ![Task sequence deployed](images/fig32-deploywiz.png)
 
-Figure 29. The Windows 10 Enterprise x64 RTM task sequence deployed to the All Unknown Computers collections available for media and PXE.
+   *Figure 29. The Windows 10 Enterprise x64 RTM task sequence deployed to the All Unknown Computers collections available for media and PXE*
 
 ## <a href="" id="sec06"></a>Configure Configuration Manager to prompt for the computer name during deployment (optional)
 
@@ -146,20 +146,18 @@ This section provides steps to help you configure the All Unknown Computers coll
 
 2.  In the **Collection Variables** tab, create a new variable with the following settings:
 
-    1.  Name: OSDComputerName
+    * Name: OSDComputerName
 
-    2.  Clear the **Do not display this value in the Configuration Manager console** check box.
+    * Clear the **Do not display this value in the Configuration Manager console** check box.
 
 3.  Click **OK**.
 
-**Note**  
-Configuration Manager can prompt for information in many ways. Using a collection variable with an empty value is just one of them. Another option is the User-Driven Installation (UDI) wizard.
-
- 
-
-![figure 30](images/mdt-06-fig35.png)
-
-Figure 30. Configure a collection variable.
+   >[!NOTE]  
+   >Configuration Manager can prompt for information in many ways. Using a collection variable with an empty value is just one of them. Another option is the User-Driven Installation (UDI) wizard.
+   
+   ![Configure a collection variable](images/mdt-06-fig35.png)
+   
+   *Figure 30. Configure a collection variable*
 
 ## Related topics
 

@@ -54,7 +54,7 @@ If you prefer to use a graphical user interface, you can create a device account
 
     ![assign license for Skype for Business online.](images/setupdeviceaccto365-07.png)
 
-    From the list, uncheck **Skype for Business Online (plan 2)** (this license may vary depending on your organization), and click **SAVE**.
+    From the list, select **Skype for Business Online (Plan 2)**, and then click **SAVE**. The license may vary depending on your organization (for example, you might have Plan 2, or Plan 3). 
 
 ### <a href="" id="create-device-acct-o365-mbx-policy"></a>Create a mobile device mailbox (ActiveSync) policy from the Exchange Admin Center
 
@@ -133,8 +133,7 @@ In order to run cmdlets used by these PowerShell scripts, the following must be 
 5.  Finally, to connect to Exchange Online Services, run:
 
     ``` syntax
-    $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri
-    "https://outlook.office365.com/powershell-liveid/" -Credential $cred -Authentication "Basic" –AllowRedirection
+    $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri"https://outlook.office365.com/powershell-liveid/" -Credential $cred -Authentication "Basic" –AllowRedirection
     ```
 
     ![Image showing PowerShell cmdlet.](images/setupdeviceaccto365-21.png)

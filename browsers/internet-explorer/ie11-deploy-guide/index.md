@@ -6,6 +6,7 @@ ms.prod: ie11
 ms.assetid: bddc2d97-c38d-45c5-9588-1f5bbff2e9c3
 title: Internet Explorer 11 (IE11) - Deployment Guide for IT Pros (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+localizationpriority: low
 ---
 
 

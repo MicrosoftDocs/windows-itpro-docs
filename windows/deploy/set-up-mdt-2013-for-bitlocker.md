@@ -85,6 +85,7 @@ If you consistently get the error "Windows BitLocker Drive Encryption Informatio
 In addition to the Group Policy created previously, you need to configure permissions in Active Directory to be able to store the TPM recovery information. In these steps, we assume you have downloaded the [Add-TPMSelfWriteACE.vbs script](https://go.microsoft.com/fwlink/p/?LinkId=167133) from Microsoft to C:\\Setup\\Scripts on DC01.
 1.  On DC01, start an elevated PowerShell prompt (run as Administrator).
 2.  Configure the permissions by running the following command:
+
     ``` syntax
     cscript C:\Setup\Scripts\Add-TPMSelfWriteACE.vbs
     ```
@@ -106,10 +107,12 @@ cctk.exe --tpm=on --valsetuppwd=Password1234
 ### Add tools from HP
 
 The HP tools are part of HP System Software Manager. The executable file from HP is named BiosConfigUtility.exe. This utility uses a configuration file for the BIOS settings. Here is a sample command to enable TPM and set a BIOS password using the BiosConfigUtility.exe tool:
+
 ``` syntax
 BIOSConfigUtility.EXE /SetConfig:TPMEnable.REPSET /NewAdminPassword:Password1234
 ```
 And the sample content of the TPMEnable.REPSET file:
+
 ``` syntax
 English
 Activate Embedded Security On Next Boot

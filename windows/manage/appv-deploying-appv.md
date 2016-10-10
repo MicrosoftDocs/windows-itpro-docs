@@ -30,6 +30,11 @@ App-V supports a number of different deployment options. Review this topic for i
 
     This section provides a deployment checklist that can be used to assist with installing App-V.
 
+-   [Deploying Microsoft Office 2013 by Using App-V](appv-deploying-microsoft-office-2013-with-appv.md)<br>
+[Deploying Microsoft Office 2010 by Using App-V](appv-deploying-microsoft-office-2010-wth-appv.md)
+
+    These sections describe how to use App-V to deliver Microsoft Office as a virtualized application to computers in your organization.
+
 ## Other Resources for Deploying App-V
 
 

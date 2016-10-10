@@ -140,6 +140,7 @@ Make sure the account you are using has permissions to run runbooks on the Orche
  
 1.  On PC0001, log on as **CONTOSO\\MDT\_BA**.
 2.  Using an elevated command prompt (run as Administrator), type the following command:
+
     ``` syntax
     cscript \\MDT01\MDTProduction$\Scripts\Litetouch.vbs
     ```
