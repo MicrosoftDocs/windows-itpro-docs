@@ -15,7 +15,8 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
->Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
+> [!NOTE]
+> Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
 
 The world’s first personal digital assistant helps users get things done, even at work. Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and enterprise environments.
 
@@ -23,6 +24,10 @@ The world’s first personal digital assistant helps users get things done, even
 Cortana in Windows 10 is already great at letting your employees quickly see what the day is going to look like, see where and when their meetings are going to be, get a sense of travel times to and from work, and even get updates from a calendar for upcoming trips.
 
 But Cortana works even harder when she connects to Office 365, helping employees prepare for meetings, learn about co-workers, and receive reminders about where they need to be so they won’t be late.
+
+> [!IMPORTANT]
+> Before your employees can use Cortana with Office 365, they must sign into Cortana using a Microsoft account (such as, @outlook.com), and then they must go to the **Connected Accounts** section of Cortana’s notebook to turn on and connect to Office 365.
+
 
 **More info:**
 
