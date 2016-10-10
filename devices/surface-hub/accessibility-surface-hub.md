@@ -14,52 +14,22 @@ localizationpriority: medium
 # Accessibility (Surface Hub)
 
 
-Accessibility settings for the Microsoft Surface Hub can be changed by using the Settings app. You'll find them under **Ease of Access**. Your Surface Hub has the same accessibility options as Windows 10.
+Accessibility settings for the Microsoft Surface Hub can be changed by using **Quick actions** from the status bar. Your Surface Hub has the same accessibility options as Windows 10.
 
 The default accessibility settings for Surface Hub include:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Accessibility feature</th>
-<th align="left">Default setting</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Narrator</strong></p></td>
-<td align="left"><p>Off</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Magnifier</strong></p></td>
-<td align="left"><p>Off</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>High contrast</strong></p></td>
-<td align="left"><p>No theme selected</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Closed captions</strong></p></td>
-<td align="left"><p>Defaults selected for <strong>Font</strong> and <strong>Background and window</strong>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Keyboard</strong></p></td>
-<td align="left"><p>On-screen <strong>Keyboard</strong>, <strong>Sticky Keys</strong>, <strong>Toggle Keys</strong>, and <strong>Filter Keys</strong> are all off.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Mouse</strong></p></td>
-<td align="left"><p>Defaults selected for <strong>Pointer size</strong>, <strong>Pointer color</strong> and <strong>Mouse keys</strong>.</p></td>
-</tr>
-</tbody>
-</table>
+| Accessibility feature | Default setting |
+| --------------------- | --------------- |
+| Narrator | Off |
+| Magnifier | Off |
+| High contrast | No theme selected |
+| Closed caption | Defaults selected for Font and Background and window |
+| Keyboard | **On-screen Keyboard**, **Sticky Keys**, **Toggle Keys**, and **Filter Keys** are all off. |
+| Mouse | Defaults selected for **Pointer size**, **Pointer color** and **Mouse keys**. | 
 
- 
+You'll find these and other settings under **Ease of Access** in **Quick Actions**.
 
-You'll find additional settings under **Ease of Access** &gt; **Other options**.
+![Image showing Quick Action center on Surface Hub](images/sh-quick-action.png)
 
 ## Related topics
 
@@ -67,12 +37,3 @@ You'll find additional settings under **Ease of Access** &gt; **Other options**.
 [Manage Microsoft Surface Hub](manage-surface-hub.md)
 
 [Microsoft Surface Hub administrator's guide](surface-hub-administrators-guide.md)
-
- 
-
- 
-
-
-
-
-
