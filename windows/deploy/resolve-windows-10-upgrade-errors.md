@@ -224,7 +224,7 @@ Event logs (*.evtx)
 <TD>$Windows.~BT\Sources\Rollback<TD>Additional logs collected during rollback.
 <TD>
 Setupmem.dmp: If OS bugchecks during upgrade, setup will attempt to extract a mini-dump.<BR>
-Setupapi: Device install issues – 0x30018<BR>
+Setupapi: Device install issues - 0x30018<BR>
 Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 
 </TABLE>
@@ -245,16 +245,12 @@ A setupact.log or setuperr.log entry includes the following elements:
 
 See the following example:
 
-<P><TABLE BORDER=1>
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>2016-09-08 09:23:50</TD>
-<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>Warning</TD>
-<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>MIG</TD>
-<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.</TD></TR>
-</TABLE>
+| Date/Time | Log level | Component | Message |
+|------|------------|------------|------------|
+|2016-09-08 09:23:50,|  Warning |         MIG  |   Could not replace object C:\Users\name\Cookies. Target Object cannot be removed.|
 
 
 ### Analyze log files
-
 
 <P>To analyze Windows Setup log files:
 
@@ -335,7 +331,7 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 27:08, Error           SP     SPDoFrameworkGather: Gather operation failed. Error: 0x0000002C
 </PRE>
 
-This analysis indicates that the Windows upgrade error can be resolved by deleting the C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN] file. Note: In this example, the full, unshortened file name is  C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f. 
+<P>This analysis indicates that the Windows upgrade error can be resolved by deleting the C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN] file. Note: In this example, the full, unshortened file name is  C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f. 
 
 ## Resolution procedures
 
