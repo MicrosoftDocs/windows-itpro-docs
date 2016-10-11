@@ -738,7 +738,7 @@ This error has more than one possible cause. Attempt [quick fixes](#quick-fixes)
 
 <tr>
 <td>0xC1800118</td>
-<td>WSUS has downloaded content that it cannot use.</td>
+<td>WSUS has downloaded content that it cannot use due to a missing decryption key.</td>
 <td>See [Steps to resolve error 0xC1800118](https://blogs.technet.microsoft.com/wsus/2016/09/21/resolving-error-0xc1800118/) for information.</td>
 </tr>
 
