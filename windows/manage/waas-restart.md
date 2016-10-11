@@ -22,13 +22,16 @@ You can use Group Policy settings or mobile device management (MDM) to configure
 
 When you set the **Configure Automatic Updates** policy to **Auto download and schedule the install**, you also configure the day and time for installation or you specify that installation will occur during the automatic maintenance time (configured using **Computer Configuration\Administrative Templates\Windows Components\Maintenance Scheduler**).
 
-When **Configure Automatic Updates** is enabled, you can enable additional policies to manage device restart:
+When **Configure Automatic Updates** is enabled, you can enable one of the following additional policies to manage device restart:
 
-- Turn off auto-restart for updates during active hours
+- **Turn off auto-restart for updates during active hours** prevents automatic restart during active hours.
+- **Always automatically restart at the scheduled time** lets you configure a timer to warn a signed-in user that a restart is going to occur.
+- **Specify deadline before auto-restart for update installation** ...I dunno why/when to use this?
+- **No auto-restart with logged on users for scheduled automatic updates installations** prevents automatic restart when a user is signed in.
 
 ## Configure active hours
 
-*Active hours* identify the period of time when you expect the device to be in use. Automatic restarts after an update will occur outside of the active hours. 
+You can configure active hours for devices without setting the **Configure Automatic Updates** policy. *Active hours* identify the period of time when you expect the device to be in use. Automatic restarts after an update will occur outside of the active hours. 
 
 To configure active hours using Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and open the **Turn off auto-restart for updates during active hours** policy setting. When the policy is enabled, you can set the start and end times for active hours.
 
