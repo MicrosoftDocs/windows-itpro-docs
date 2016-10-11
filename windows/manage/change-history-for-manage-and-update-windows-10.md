@@ -17,6 +17,9 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | New or changed topic | Description |
 | --- | --- |
 | [Manage device restarts after updates](waas-restart.md) | New |
+| [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md) |Added an important note about Cortana and Office 365 integration. |
+| [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added link to the Windows Restricted Traffic Limited Functionality Baseline. |
+
 
 ## September 2016
 
