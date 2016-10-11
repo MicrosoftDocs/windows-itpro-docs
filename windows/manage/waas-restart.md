@@ -16,10 +16,15 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile 
 
-You can use Group Policy settings or mobile device management (MDM) to configure when devices running Windows 10 will restart after an update is installed. 
+You can use Group Policy settings or mobile device management (MDM) to configure when devices running Windows 10 will restart after an update is installed. You can schedule update installation and set policies for restart, you can configure active hours for when restarts will not occur, or you can do both.
 
-- Group Policy settings are under **Computer Configuration\Administrative Templates\Windows Components\Windows Update**.
-- MDM settings use the [Policy configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx).
+## Schedule update installation
+
+When you set the **Configure Automatic Updates** policy to **Auto download and schedule the install**, you also configure the day and time for installation or you specify that installation will occur during the automatic maintenance time (configured using **Computer Configuration\Administrative Templates\Windows Components\Maintenance Scheduler**).
+
+When **Configure Automatic Updates** is enabled, you can enable additional policies to manage device restart:
+
+- Turn off auto-restart for updates during active hours
 
 ## Configure active hours
 
@@ -35,20 +40,22 @@ To configure active hours manually on a single device, go to **Settings** > **Up
 
 ![Change active hours](images/waas-active-hours.png)
 
-## Other Group Policy settings for restart
+## Group Policy settings for restart
 
 In the Group Policy editor, you will see a number of policy settings that pertain to restart behavior in **Computer Configuration\Administrative Templates\Windows Components\Windows Update**. The following table shows which policies apply to Windows 10.
 
 | Policy | Applies to Windows 10 | Notes |
 | --- | --- | --- |
-| Turn off auto-restart for updates during active hours | ![yes](images/checkmark.png) | Use this policy to configure active hours, during which the device will not be restarted. |
+| Turn off auto-restart for updates during active hours | ![yes](images/checkmark.png) | Use this policy to configure active hours, during which the device will not be restarted. This policy has no effect if the **No auto-restart with logged on users for scheduled automatic updates installations** or "Always automatically restart at the scheduled time"" policies are enabled.  |
 | Always automatically restart at the scheduled time | ![yes](images/checkmark.png) | Use this policy to configure a restart timer (between 15 and 180 minutes) that will start immediately after Windows Update installs important updates. This policy has no effect if the **No auto-restart with logged on users for scheduled automatic updates installations** policy is enabled. |
 | Specify deadline before auto-restart for update installation | ![yes](images/checkmark.png)  | Use this policy to specify how many days (between 2 and 14) an automatic restart can be delayed. This policy has no effect if the **No auto-restart with logged on users for scheduled automatic updates installations** or "Always automatically restart at the scheduled time"" policies are enabled.  |
-| No auto-restart with logged on users for scheduled automatic updates installations | ![yes](images/checkmark.png) | Use this policy to prevent automatic restart when a user is logged on. This policy applies only when the **Configure Automatic Updates** policy is configured to perform scheduled installations of updates.  |
+| No auto-restart with logged on users for scheduled automatic updates installations | ![yes](images/checkmark.png) | Use this policy to prevent automatic restart when a user is logged on. This policy applies only when the **Configure Automatic Updates** policy is configured to perform scheduled installations of updates, however this policy does not apply for **mandatory** updates.  |
 | Re-prompt for restart with scheduled installations | ![no](images/crossmark.png) |   |
 | Delay Restart for scheduled installations | ![no](images/crossmark.png) |   |
 | Reschedule Automatic Updates scheduled installations | ![no](images/crossmark.png) |   |
 
+>[!NOTE]
+>If you set conflicting restart policies, the actual restart behavior may not be what you expected. 
 
 
 
