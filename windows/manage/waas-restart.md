@@ -16,7 +16,7 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile 
 
-You can use Group Policy settings or mobile device management (MDM) to configure when devices running Windows 10 will restart after an update is installed. You can schedule update installation and set policies for restart, you can configure active hours for when restarts will not occur, or you can do both.
+You can use Group Policy settings or mobile device management (MDM) to configure when devices will restart after a Windows 10 update is installed. You can schedule update installation and set policies for restart, you can configure active hours for when restarts will not occur, or you can do both.
 
 ## Schedule update installation
 
