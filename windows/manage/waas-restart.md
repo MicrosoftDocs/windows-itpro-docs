@@ -16,7 +16,7 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile 
 
-You can use Group Policy settings or mobile device management (MDM) to configure when devices will restart after a Windows 10 update is installed. You can schedule update installation and set policies for restart, you can configure active hours for when restarts will not occur, or you can do both.
+You can use Group Policy settings or mobile device management (MDM) to configure when devices will restart after a Windows 10 update is installed. You can schedule update installation and set policies for restart, configure active hours for when restarts will not occur, or you can do both.
 
 ## Schedule update installation
 
@@ -26,12 +26,13 @@ When **Configure Automatic Updates** is enabled, you can enable one of the follo
 
 - **Turn off auto-restart for updates during active hours** prevents automatic restart during active hours.
 - **Always automatically restart at the scheduled time** lets you configure a timer to warn a signed-in user that a restart is going to occur.
-- **Specify deadline before auto-restart for update installation** ...I dunno why/when to use this?
 - **No auto-restart with logged on users for scheduled automatic updates installations** prevents automatic restart when a user is signed in.
 
 ## Configure active hours
 
 You can configure active hours for devices without setting the **Configure Automatic Updates** policy. *Active hours* identify the period of time when you expect the device to be in use. Automatic restarts after an update will occur outside of the active hours. 
+
+By default, active hours are from 7 AM to 5 PM on PCS and from 5 AM to 11 PM on phones. Users can change the active hours manually. Additionally, administrators can use Group Policy or MDM to set active hours for managed devices.
 
 To configure active hours using Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and open the **Turn off auto-restart for updates during active hours** policy setting. When the policy is enabled, you can set the start and end times for active hours.
 
@@ -43,6 +44,10 @@ To configure active hours manually on a single device, go to **Settings** > **Up
 
 ![Change active hours](images/waas-active-hours.png)
 
+## Limit restart delays
+
+By default, after an update is installed, automatic restart outside of active hours occurs after 7 days unless the user restarts the PC sooner. You can use the **Specify deadline before auto-restart for update installation** policy to change the delay to a number of days between 2 and 14.
+
 ## Group Policy settings for restart
 
 In the Group Policy editor, you will see a number of policy settings that pertain to restart behavior in **Computer Configuration\Administrative Templates\Windows Components\Windows Update**. The following table shows which policies apply to Windows 10.
@@ -52,7 +57,7 @@ In the Group Policy editor, you will see a number of policy settings that pertai
 | Turn off auto-restart for updates during active hours | ![yes](images/checkmark.png) | Use this policy to configure active hours, during which the device will not be restarted. This policy has no effect if the **No auto-restart with logged on users for scheduled automatic updates installations** or **Always automatically restart at the scheduled time** policies are enabled.  |
 | Always automatically restart at the scheduled time | ![yes](images/checkmark.png) | Use this policy to configure a restart timer (between 15 and 180 minutes) that will start immediately after Windows Update installs important updates. This policy has no effect if the **No auto-restart with logged on users for scheduled automatic updates installations** policy is enabled. |
 | Specify deadline before auto-restart for update installation | ![yes](images/checkmark.png)  | Use this policy to specify how many days (between 2 and 14) an automatic restart can be delayed. This policy has no effect if the **No auto-restart with logged on users for scheduled automatic updates installations** or **Always automatically restart at the scheduled time** policies are enabled.  |
-| No auto-restart with logged on users for scheduled automatic updates installations | ![yes](images/checkmark.png) | Use this policy to prevent automatic restart when a user is logged on. This policy applies only when the **Configure Automatic Updates** policy is configured to perform scheduled installations of updates, however this policy does not apply for **mandatory** updates.  |
+| No auto-restart with logged on users for scheduled automatic updates installations | ![yes](images/checkmark.png) | Use this policy to prevent automatic restart when a user is logged on. This policy applies only when the **Configure Automatic Updates** policy is configured to perform scheduled installations of updates, however this policy does not apply for **mandatory** updates. <br>There is no equivalent MDM policy setting for Windows 10 Mobile. |
 | Re-prompt for restart with scheduled installations | ![no](images/crossmark.png) |   |
 | Delay Restart for scheduled installations | ![no](images/crossmark.png) |   |
 | Reschedule Automatic Updates scheduled installations | ![no](images/crossmark.png) |   |
