@@ -102,7 +102,7 @@ Note: If only a result code is returned, this can be because a tool is being use
 
 ### Result codes
 
->A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. <BR>To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Other error codes](#other-error-codes) section later in this topic.
+>A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. <BR>To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Resolution procedures](#resolution-procedures) section later in this topic.
 
 Result codes can be matched to the type of error encountered. To match a result code to an error:
 
