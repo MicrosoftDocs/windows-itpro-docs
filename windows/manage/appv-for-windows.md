@@ -35,6 +35,7 @@ The topics in this section provide information and step-by-step procedures to he
 - [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md)
 - [Deploying the App-V Server](appv-deploying-the-appv-server.md)
 - [App-V Deployment Checklist](appv-deployment-checklist.md)
+- [Deploying Microsoft Office 2016 by Using App-V](appv-deploying-microsoft-office-2016-with-appv.md)
 - [Deploying Microsoft Office 2013 by Using App-V](appv-deploying-microsoft-office-2013-with-appv.md)
 - [Deploying Microsoft Office 2010 by Using App-V](appv-deploying-microsoft-office-2010-wth-appv.md)
 
