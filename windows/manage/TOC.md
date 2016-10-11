@@ -86,6 +86,7 @@
 ##### [About App-V Reporting](appv-reporting.md)
 ##### [How to install the Reporting Server on a Standalone Computer and Connect it to the Database](appv-install-the-reporting-server-on-a-standalone-computer.md)
 #### [App-V Deployment Checklist](appv-deployment-checklist.md)
+#### [Deploying Microsoft Office 2016 by Using App-V](appv-deploying-microsoft-office-2016-with-appv.md)
 #### [Deploying Microsoft Office 2013 by Using App-V](appv-deploying-microsoft-office-2013-with-appv.md)
 #### [Deploying Microsoft Office 2010 by Using App-V](appv-deploying-microsoft-office-2010-wth-appv.md)
 ### [Operations for App-V](appv-operations.md)
