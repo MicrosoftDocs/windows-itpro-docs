@@ -47,7 +47,7 @@ In this example, you use two security groups to manage your updates: **Ring 3 Br
 
 5. In **Setting name**, type **Enable Clients for CBB**, and then select **Integer** from the **Data type** list.
 
-6. In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/RequireDeferUpgrade**.
+6. In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/RequireDeferUpgrade**.
 
 7. In the **Value** box, type **1**, and then click **OK**.
 
@@ -78,7 +78,7 @@ You have now configured the **Ring 3 Broad IT** deployment ring to enable the CB
     
 4.	In **Setting name**, type **Enable Clients for CBB**, and then in the **Data type** list, select **Integer**.
 
-6.	In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/RequireDeferUpgrade**. Then, in the **Value** box, type **1**.
+6.	In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/RequireDeferUpgrade**. Then, in the **Value** box, type **1**.
 
 7.	Click **OK** to save the setting.
 
@@ -86,7 +86,7 @@ You have now configured the **Ring 3 Broad IT** deployment ring to enable the CB
 
 9.	For this setting, in **Setting name**, type **Defer Updates for 1 Week**, and then in the **Data type** list, select **Integer**.
 
-11.	In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/DeferUpdatePeriod**. 
+11.	In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/DeferUpdatePeriod**. 
 
 12.	In the **Value** box, type **1**.
 
@@ -96,7 +96,7 @@ You have now configured the **Ring 3 Broad IT** deployment ring to enable the CB
 
 15.	For this setting, in **Setting name**, type **Defer Upgrades for 1 Month**, and then in the **Data type** list, select **Integer**.
 
-17.	In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod**.
+17.	In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod**.
 
 18.	In the **Value** box, type **1**.
 
@@ -134,7 +134,7 @@ In this example, you use three security groups from Table 1 in [Build deployment
 
 4. In **Setting name**, type **Enable Clients for CB**, and then select **Integer** from the **Data type** list.
 
-6. In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/BranchReadinessLevel**.
+6. In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/BranchReadinessLevel**.
 
 7. In the **Value** box, type **0**, and then click **OK**.
 
@@ -146,7 +146,7 @@ In this example, you use three security groups from Table 1 in [Build deployment
 8. Because the **Ring 2 Pilot Business Users** deployment ring receives the CB feature updates after 14 days, in the **OMA-URI Settings** section, click **Add** to add another OMA-URI setting. 
 
 8. In **Setting name**, type **Defer feature updates for 14 days**, and then select **Integer** from the **Data type** list.
-10.	In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatesPeriodInDays**.
+10.	In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatesPeriodInDays**.
 11.	In the **Value** box, type **14**, and then click **OK**.
 
     ![Settings for this policy](images/waas-wufb-intune-step11a.png)
@@ -174,7 +174,7 @@ You have now configured the **Ring 2 Pilot Business Users** deployment ring to e
 
 4. In **Setting name**, type **Enable Clients for CBB**, and then select **Integer** from the **Data type** list.
 
-6. In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/BranchReadinessLevel**.
+6. In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/BranchReadinessLevel**.
 
 7. In the **Value** box, type **1**, and then click **OK**.
 
@@ -186,7 +186,7 @@ You have now configured the **Ring 2 Pilot Business Users** deployment ring to e
 
 8. In **Setting name**, type **Defer feature updates for 0 days**, and then select **Integer** from the **Data type** list.
 
-10.	In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatesPeriodInDays**.
+10.	In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatesPeriodInDays**.
 
 11.	In the **Value** box, type **0**, and then click **OK**.
 
@@ -216,7 +216,7 @@ You have now configured the **Ring 3 Broad IT** deployment ring to receive CBB f
 
 4. In **Setting name**, type **Enable Clients for CBB**, and then select **Integer** from the **Data type** list.
 
-6. In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/BranchReadinessLevel**.
+6. In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/BranchReadinessLevel**.
 
 7. In the **Value** box, type **1**, and then click **OK**.
 
@@ -228,7 +228,7 @@ You have now configured the **Ring 3 Broad IT** deployment ring to receive CBB f
 
 8. In **Setting name**, type **Defer quality updates for 7 days**, and then select **Integer** from the **Data type** list.
 
-10.	In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/DeferQualityUpdatesPeriodInDays**.
+10.	In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/DeferQualityUpdatesPeriodInDays**.
 
 11.	In the **Value** box, type **7**, and then click **OK**.
 
@@ -236,7 +236,7 @@ You have now configured the **Ring 3 Broad IT** deployment ring to receive CBB f
 
 8. In **Setting name**, type **Defer feature updates for 30 days**, and then select **Integer** from the **Data type** list.
 
-10.	In the **OMA-URI** box, type **.Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatesPeriodInDays**.
+10.	In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatesPeriodInDays**.
 
 11.	In the **Value** box, type **30**, and then click **OK**.
 
