@@ -13,26 +13,43 @@ localizationpriority: medium
 
 # Accessibility (Surface Hub)
 
+Microsoft Surface Hub has the same accessibility options as Windows 10.
 
-Accessibility settings for the Microsoft Surface Hub can be changed by using **Quick actions** from the status bar. Your Surface Hub has the same accessibility options as Windows 10.
 
-The default accessibility settings for Surface Hub include:
+## Default accessibility settings
 
-| Accessibility feature | Default setting |
-| --------------------- | --------------- |
-| Narrator | Off |
-| Magnifier | Off |
-| High contrast | No theme selected |
-| Closed caption | Defaults selected for Font and Background and window |
-| Keyboard | **On-screen Keyboard**, **Sticky Keys**, **Toggle Keys**, and **Filter Keys** are all off. |
-| Mouse | Defaults selected for **Pointer size**, **Pointer color** and **Mouse keys**. | 
+The full list of accessibility settings are available to IT admins in the **Settings** app. The default accessibility settings for Surface Hub include:
 
-You'll find these and other settings under **Ease of Access** in **Quick Actions**.
+| Accessibility feature | Default settings  |
+| --------------------- | ----------------- |
+| Narrator              | Off               |
+| Magnifier             | Off               |
+| High contrast         | No theme selected |
+| Closed captions       | Defaults selected for Font and Background and window |
+| Keyboard              | **On-screen Keyboard**, **Sticky Keys**, **Toggle Keys**, and **Filter Keys** are all off. |
+| Mouse                 | Defaults selected for **Pointer size**, **Pointer color** and **Mouse keys**. |
+| Other options         | Defaults selected for **Visual options** and **Touch feedback**. |
 
-![Image showing Quick Action center on Surface Hub](images/sh-quick-action.png)
+Additionally, these accessibility features and apps are returned to default settings when users press [**I'm Done**](i-am-done-finishing-your-surface-hub-meeting.md):
+- Narrator
+- Magnifier
+- High contrast
+- Filter keys
+- Sticky keys
+- Toggle keys
+- Mouse keys
+
+
+## Change accessibility settings during a meeting
+
+During a meeting, users can toggle accessibility features and apps in a couple ways:
+- [Keyboard shortcuts](https://support.microsoft.com/en-us/help/13813/windows-10-microsoft-surface-hub-keyboard-shortcuts)
+- **Quick Actions** > **Ease of Access** from the status bar
+
+> ![Image showing Quick Action center on Surface Hub](images/sh-quick-action.png)
+
 
 ## Related topics
-
 
 [Manage Microsoft Surface Hub](manage-surface-hub.md)
 
