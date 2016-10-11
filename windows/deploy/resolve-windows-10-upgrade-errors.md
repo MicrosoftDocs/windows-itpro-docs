@@ -737,6 +737,12 @@ This error has more than one possible cause. Attempt [quick fixes](#quick-fixes)
 </tr>
 
 <tr>
+<td>0xC1800118</td>
+<td>WSUS has downloaded content that it cannot use due to a missing decryption key.</td>
+<td>See [Steps to resolve error 0xC1800118](https://blogs.technet.microsoft.com/wsus/2016/09/21/resolving-error-0xc1800118/) for information.</td>
+</tr>
+
+<tr>
 <td>0xC1900200</td>
 <td>Setup.exe has detected that the machine does not meet the minimum system requirements.</td>
 <td>Ensure the system you are trying to upgrade meets the minimum system requirements. <P>See [Windows 10 specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications)  for information.</td>
