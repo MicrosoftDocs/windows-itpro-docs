@@ -312,7 +312,6 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <tr class="header">
 <th align="left">Windows Hello for Business mode</th>
 <th align="left">Azure AD</th>
-<th align="left">Active Directory (AD) on-premises (available with production release of Windows Server 2016)</th>
 <th align="left">Azure AD/AD hybrid (available with production release of Windows Server 2016)</th>
 </tr>
 </thead>
@@ -320,11 +319,6 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <tr class="odd">
 <td align="left">Key-based authentication</td>
 <td align="left">Azure AD subscription</td>
-<td align="left"><ul>
-<li>Active Directory Federation Service (AD FS) (Windows Server 2016)</li>
-<li>A few Windows Server 2016 domain controllers on-site</li>
-<li>Microsoft System Center 2012 R2 Configuration Manager SP2</li>
-</ul></td>
 <td align="left"><ul>
 <li>Azure AD subscription</li>
 <li>[Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
@@ -339,12 +333,6 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <li>Azure AD subscription</li>
 <li>Intune or non-Microsoft mobile device management (MDM) solution</li>
 <li>PKI infrastructure</li>
-</ul></td>
-<td align="left"><ul>
-<li>ADFS (Windows Server 2016)</li>
-<li>Active Directory Domain Services (AD DS) Windows Server 2016 schema</li>
-<li>PKI infrastructure</li>
-<li>Configuration Manager SP2, Intune, or non-Microsoft MDM solution</li>
 </ul></td>
 <td align="left"><ul>
 <li>Azure AD subscription</li>
