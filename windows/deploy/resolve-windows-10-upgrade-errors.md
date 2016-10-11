@@ -771,7 +771,7 @@ This error has more than one possible cause. Attempt [quick fixes](#quick-fixes)
 <tr>
 <td>0x80246007</td>
 <td>The update was not downloaded successfully.</td>
-<td>Attempt other methods of upgrading the operatign system.<BR>
+<td>Attempt other methods of upgrading the operating system.<BR>
 Download and run the media creation tool. See [Download windows 10](https://www.microsoft.com/en-us/software-download/windows10). 
 <BR>Attempt to upgrade using .ISO or USB.<BR>
 **Note**: Windows 10 Enterprise isn’t available in the media creation tool. For more information, go to the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx).
