@@ -67,12 +67,13 @@ Isolated User Mode is now included with Hyper-V so you don't have to install it 
 
 ### Windows Hello for Business
 
-When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name in Windows 10, version 1607. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
+When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name in Windows 10, version 1607. Customers who have already deployed Microsoft Passport for Work will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
 
 Additional changes for Windows Hello in Windows 10, version 1607:
 
 - Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys.
 - Group Policy settings for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**.
+- Beginning in version 1607, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN for Windows 10, version 1607, enable the Group Policy setting **Turn on convenience PIN sign-in**. 
 <!--- Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.-->
 
 [Learn more about Windows Hello for Business.](../keep-secure/manage-identity-verification-using-microsoft-passport.md)
