@@ -30,7 +30,7 @@ Initiating a reset will return the device to the last cumulative Windows update,
 -   Local admins on the device
 -   Configurations from MDM or the Settings app
 
-**To reset a Surface Hub**
+## Reset a Surface Hub
 1.	On your Surface Hub, open **Settings**. 
 
     ![Image showing Settings app for Surface Hub.](images/sh-settings.png)
@@ -43,7 +43,12 @@ Initiating a reset will return the device to the last cumulative Windows update,
 
     ![Image showing Reset device option in Settings app for Surface Hub.](images/sh-settings-reset-device.png) 
 
-**To reset a Surface Hub from Windows Recovery Environment**
+> [!IMPORTANT]
+> Performing a device reset may take up to 2 hours. Do not interrupt the reset process. Interrupting the process will render the device inoperable, requiring warranty service to return to normal functionality.
+
+After the reset, Surface Hub restarts the [first run program](first-run-program-surface-hub.md) again.
+
+## Reset a Surface Hub from Windows Recovery Environment
  
 On rare occasions, a Surface Hub may encounter an error while cleaning up user and app data at the end of a session. When this happens, the device will automatically reboot and try again. But if this operation fails repeatedly, the device will be automatically locked to protect user data. To unlock it, you must reset the device from [Windows Recovery Environment](https://technet.microsoft.com/library/cc765966.aspx) (Windows RE). 
 
@@ -51,11 +56,6 @@ On rare occasions, a Surface Hub may encounter an error while cleaning up user a
 2. The device should automatically boot into Windows RE. Select **Advanced Repair**.
 3. Select **Reset**.
 4. If prompted, enter your device's BitLocker key. 
-
-> [!IMPORTANT]
-> Performing a device reset may take up to 2 hours. Do not interrupt the reset process. Interrupting the process will render the device inoperable, requiring warranty service to return to normal functionality.
-
-After the reset, Surface Hub restarts the [first run program](first-run-program-surface-hub.md) again. 
 
 ## Related topics
 
