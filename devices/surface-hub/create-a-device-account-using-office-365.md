@@ -133,7 +133,7 @@ In order to run cmdlets used by these PowerShell scripts, the following must be 
 5.  Finally, to connect to Exchange Online Services, run:
 
     ``` syntax
-    $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri"https://outlook.office365.com/powershell-liveid/" -Credential $cred -Authentication "Basic" –AllowRedirection
+    $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $cred -Authentication "Basic" –AllowRedirection
     ```
 
     ![Image showing PowerShell cmdlet.](images/setupdeviceaccto365-21.png)
@@ -202,7 +202,7 @@ Now that you're connected to the online services, you can finish setting up the 
 
     ``` syntax
     Set-CalendarProcessing -Identity $acctUpn -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
-    Set-CalendarProcessing -Identity $acctUpn -AddAdditionalResponse $true -AdditionalResponse "This is a <tla rid="surface_hub"/> room!"
+    Set-CalendarProcessing -Identity $acctUpn -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
     ![Image showing PowerShell cmdlet.](images/setupdeviceaccto365-26.png)
@@ -350,7 +350,7 @@ Now that you're connected to the online services, you can finish setting up the 
 
     ``` syntax
     Set-CalendarProcessing -Identity $acctUpn -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
-    Set-CalendarProcessing -Identity $acctUpn -AddAdditionalResponse $true -AdditionalResponse "This is a <tla rid="surface_hub"/> room!"
+    Set-CalendarProcessing -Identity $acctUpn -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
 5.  Now we have to set some properties in AD. To do that, you need the alias of the account (this is the part of the UPN that becomes before the “@”).

@@ -80,11 +80,6 @@ The following table lists the different parts of Start and any applicable policy
 <td align="left">Group Policy: <strong>Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands</strong></td>
 <td align="left">None</td>
 </tr>
-<tr class="odd">
-<td align="left">All apps</td>
-<td align="left">Group Policy: <strong>Remove All Programs list from the Start menu</strong></td>
-<td align="left">None</td>
-</tr>
 <tr class="even">
 <td align="left">Start layout</td>
 <td align="left"><p>MDM: <strong>Start layout</strong></p>
