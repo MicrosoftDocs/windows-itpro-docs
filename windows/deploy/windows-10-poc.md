@@ -14,28 +14,33 @@ author: greg-lindsay
 
 -   Windows 10
 
-If you have a computer running Windows 8.1 or later with 16GB of RAM, then you have everything you need to set up a Windows 10 test lab. This guide provides step-by-step instructions for configuring a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Simple to use Windows PowerShell commands are provided for setting up the test lab.
+If you have a computer running Windows 8.1 or later with 16GB of RAM, then you have everything you need to set up a Windows 10 test lab. This guide provides step-by-step instructions for configuring a proof of concept (PoC) environment where you can deploy Windows 10. 
 
-## In this guide
-
-The following topics and procedures are provided in this guide:
-
-- [Hardware and software requirements](#hardware-and-software-requirements): Prerequisites to complete this guide.<BR>
-- [Lab setup](#lab-setup): A description and diagram of the PoC environment that is configured.<BR>
-- [Configure the PoC environment](#configure-the-poc-environment): Step by step guidance for the following procedures:
-    - [Verify support and install Hyper-V](#verify-support-and-install-hyper-v): Verify that installation of Hyper-V is supported, and install the Hyper-V server role.
-    - [Download VHD and ISO files](#download-vhd-and-iso-files): Download evaluation versions of Windows Server 2012 R2 and Windows 10 and prepare these files to be used on the Hyper-V host.
-    - [Convert PC to VHD](#convert-pc-to-vhd): Convert a physical computer on your network to a VHDX file and prepare it to be used on the Hyper-V host.
-    - [Resize VHD](#resize-vhd): Increase the storage capacity for one of the Windows Server VMs.
-    - [Configure Hyper-V](#configure-hyper-v): Create virtual switches, determine available RAM for virtual machines, and add virtual machines.
-    - [Configure VHDs](#configure-vhds): Start virtual machines and configure all services and settings.
-- [Appendix A: Verify the configuration](#appendix-a-verify-the-configuration): Verify and troubleshoot network connectivity and services in the PoC environment.
-- [Appendix B: Configuring Hyper-V on Windows Server 2008 R2](#appendix-b-configuring-hyper-v-on-windows-server-2008-r2): Information about using this guide with a Hyper-V host running Windows Server 2008 R2.
-
-When you have completed the steps in this guide, see the following topics for step by step instructions to deploy Windows 10 using the PoC environment under common scenarios with current deployment tools:
+When you have completed the steps in this guide, the following topics provide step by step instructions to deploy Windows 10 using the PoC environment and current deployment tools:
 
 - [Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)
 - [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)
+
+The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Simple to use Windows PowerShell commands are provided for setting up the test lab.
+
+## In this guide
+
+The following topics and procedures are provided in this guide. An estimate of the time required to complete each procedure is also provided. The amount of time required to complete these procedures will vary greatly depending on the resources available to the Hyper-V host, and subsequently to the hosted VMs, such as processor speed, disk speed, and network speed. 
+
+<TABLE>
+<TR><TH>Topic<TH>Description<TH>Time required
+<TR><TD>[Hardware and software requirements](#hardware-and-software-requirements)<TD>Prerequisites to complete this guide.<TD>10 minutes
+<TR><TD>[Lab setup](#lab-setup)<TD>A description and diagram of the PoC environment that is configured.<TD>5 minutes
+<TR><TD>[Configure the PoC environment](#configure-the-poc-environment)<TD>Parent topic for procedures.<TD>
+<TR><TD>[Verify support and install Hyper-V](#verify-support-and-install-hyper-v)<TD>Verify that installation of Hyper-V is supported, and install the Hyper-V server role.<TD>10 minutes
+<TR><TD>[Download VHD and ISO files](#download-vhd-and-iso-files)<TD>Download evaluation versions of Windows Server 2012 R2 and Windows 10 and prepare these files to be used on the Hyper-V host.<TD>30 minutes
+<TR><TD>[Convert PC to VHD](#convert-pc-to-vhd)<TD>Convert a physical computer on your network to a VHDX file and prepare it to be used on the Hyper-V host.<TD>30 minutes
+<TR><TD>[Resize VHD](#resize-vhd)<TD>Increase the storage capacity for one of the Windows Server VMs.<TD>5 minutes
+<TR><TD>[Configure Hyper-V](#configure-hyper-v)<TD>Create virtual switches, determine available RAM for virtual machines, and add virtual machines.<TD>15 minutes
+<TR><TD>[Configure VHDs](#configure-vhds)<TD>Start virtual machines and configure all services and settings.<TD>60 minutes
+<TR><TD>[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)<TD>Verify and troubleshoot network connectivity and services in the PoC environment.<TD>30 minutes
+<TR><TD>[Appendix B: Configuring Hyper-V on Windows Server 2008 R2](#appendix-b-configuring-hyper-v-on-windows-server-2008-r2)<TD>Information about using this guide with a Hyper-V host running Windows Server 2008 R2.<TD>
+</TABLE>
 
 ## Hardware and software requirements
 
@@ -45,7 +50,7 @@ The second computer is used to clone and mirror a client computer (computer 2) f
 
 <table border="1" cellpadding="2">
     <tr>
-        <td></td>
+        <TD style='border:dotted #FFFFFF 0.0pt;'></td>
         <td BGCOLOR="#a0e4fa">**Computer 1** (required)</td>
         <td BGCOLOR="#a0e4fa">**Computer 2** (recommended)</td>
     </tr>
@@ -61,7 +66,7 @@ The second computer is used to clone and mirror a client computer (computer 2) f
     </tr>
     <tr>
         <td BGCOLOR="#a0e4fa">OS</td>
-        <td>Windows 8/8.1/10 or Windows Server 2012/2012 R2/2016<B>*</B></td>
+        <td>Windows 8.1/10 or Windows Server 2012/2012 R2/2016<B>*</B></td>
         <td>Windows 7 or a later</td>
     </tr>
     <tr>
@@ -76,7 +81,8 @@ The second computer is used to clone and mirror a client computer (computer 2) f
     </tr>
     <tr>
         <td BGCOLOR="#a0e4fa">RAM</td>
-        <td>8 GB RAM (16 GB recommended)</td>
+        <td>8 GB RAM (16 GB recommended) to test Windows 10 deployment with MDT.
+        <BR>16 GB RAM to test Windows 10 deployment with System Center Configuration Manager.</td>
         <td>Any</td>
     </tr>
     <tr>
@@ -98,7 +104,7 @@ The second computer is used to clone and mirror a client computer (computer 2) f
 
 >Retaining applications and settings during the upgrade process requires that architecture (32 or 64-bit) is the same before and after the upgrade.
 
-<B>*</B>The Hyper-V server role can also be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2, therefore you cannot use many of the steps provided in this guide to configure Hyper-V. The performance and features of the Hyper-V role are also much improved on later operating systems. If your host must be running Windows Server 2008 R2, see [Appendix A: Configuring Hyper-V settings on 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2).
+<B>*</B><I>The Hyper-V server role can also be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2, therefore you cannot use many of the steps provided in this guide to configure Hyper-V. The performance and features of the Hyper-V role are also much improved on later operating systems. If your host must be running Windows Server 2008 R2, see [Appendix B: Configuring Hyper-V settings on 2008 R2](#appendix-b-configuring-hyper-v-on-windows-server-2008-r2).</I>
 
 The Hyper-V role cannot be installed on Windows 7 or earlier versions of Windows.
 
