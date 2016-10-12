@@ -14,7 +14,7 @@ localizationpriority: medium
 # Monitor your Microsoft Surface Hub
 
 
-Monitoring for Microsoft Surface Hub devices is enabled through Microsoft Operations Management Suite (OMS). The [Operations Management Suite (OMS)](https://go.microsoft.com/fwlink/?LinkId=718138) is Microsoft's IT management solution that helps you manage and protect your entire IT infrastructure, including your Surface Hubs.
+Monitoring for Microsoft Surface Hub devices is enabled through Microsoft Operations Management Suite (OMS). The [Operations Management Suite](https://go.microsoft.com/fwlink/?LinkId=718138) is Microsoft's IT management solution that helps you manage and protect your entire IT infrastructure, including your Surface Hubs.
 
 Surface Hub is offered as a Log Analytics solution in OMS, allowing you to collect and view usage and reliability data across all your Surface Hubs. Use the Surface Hub solution to:
 - Inventory your Surface Hubs.
