@@ -58,9 +58,9 @@ This table includes info about how unenlightened apps might behave, based on you
         </ul>
     </td>
    </tr>
-    <tr align="left">
+    <tr align="left" colspan="2">
      <td><strong>Not required.</strong> App connects using hostname.</td>
-     <td colspan="2">
+     <td>
         <ul>
             <li>App is blocked from accessing enterprise cloud resources, but can access other network resources.</li>
             <li>No encryption is applied.</li>
