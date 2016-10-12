@@ -25,8 +25,8 @@ When you set the **Configure Automatic Updates** policy to **Auto download and s
 When **Configure Automatic Updates** is enabled, you can enable one of the following additional policies to manage device restart:
 
 - **Turn off auto-restart for updates during active hours** prevents automatic restart during active hours.
-- **Always automatically restart at the scheduled time** lets you configure a timer to warn a signed-in user that a restart is going to occur.
-- **No auto-restart with logged on users for scheduled automatic updates installations** prevents automatic restart when a user is signed in.
+- **Always automatically restart at the scheduled time** forces a restart after the specified installation time and lets you configure a timer to warn a signed-in user that a restart is going to occur.
+- **No auto-restart with logged on users for scheduled automatic updates installations** prevents automatic restart when a user is signed in. If a user schedules the restart in the update notification, the device will restart at the time the user specifies even if a user is signed in at the time. 
 
 ## Configure active hours
 
@@ -57,7 +57,7 @@ In the Group Policy editor, you will see a number of policy settings that pertai
 | Turn off auto-restart for updates during active hours | ![yes](images/checkmark.png) | Use this policy to configure active hours, during which the device will not be restarted. This policy has no effect if the **No auto-restart with logged on users for scheduled automatic updates installations** or **Always automatically restart at the scheduled time** policies are enabled.  |
 | Always automatically restart at the scheduled time | ![yes](images/checkmark.png) | Use this policy to configure a restart timer (between 15 and 180 minutes) that will start immediately after Windows Update installs important updates. This policy has no effect if the **No auto-restart with logged on users for scheduled automatic updates installations** policy is enabled. |
 | Specify deadline before auto-restart for update installation | ![yes](images/checkmark.png)  | Use this policy to specify how many days (between 2 and 14) an automatic restart can be delayed. This policy has no effect if the **No auto-restart with logged on users for scheduled automatic updates installations** or **Always automatically restart at the scheduled time** policies are enabled.  |
-| No auto-restart with logged on users for scheduled automatic updates installations | ![yes](images/checkmark.png) | Use this policy to prevent automatic restart when a user is logged on. This policy applies only when the **Configure Automatic Updates** policy is configured to perform scheduled installations of updates, however this policy does not apply for **mandatory** updates. <br>There is no equivalent MDM policy setting for Windows 10 Mobile. |
+| No auto-restart with logged on users for scheduled automatic updates installations | ![yes](images/checkmark.png) | Use this policy to prevent automatic restart when a user is logged on. This policy applies only when the **Configure Automatic Updates** policy is configured to perform scheduled installations of updates. <br>There is no equivalent MDM policy setting for Windows 10 Mobile. |
 | Re-prompt for restart with scheduled installations | ![no](images/crossmark.png) |   |
 | Delay Restart for scheduled installations | ![no](images/crossmark.png) |   |
 | Reschedule Automatic Updates scheduled installations | ![no](images/crossmark.png) |   |
