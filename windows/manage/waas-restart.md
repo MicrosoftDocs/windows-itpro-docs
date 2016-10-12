@@ -32,7 +32,7 @@ When **Configure Automatic Updates** is enabled, you can enable one of the follo
 
 You can configure active hours for devices without setting the **Configure Automatic Updates** policy. *Active hours* identify the period of time when you expect the device to be in use. Automatic restarts after an update will occur outside of the active hours. 
 
-By default, active hours are from 8 AM to 5 PM on PCS and from 5 AM to 11 PM on phones. Users can change the active hours manually. Additionally, administrators can use Group Policy or MDM to set active hours for managed devices.
+By default, active hours are from 8 AM to 5 PM on PCs and from 5 AM to 11 PM on phones. Users can change the active hours manually. Additionally, administrators can use Group Policy or MDM to set active hours for managed devices.
 
 To configure active hours using Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and open the **Turn off auto-restart for updates during active hours** policy setting. When the policy is enabled, you can set the start and end times for active hours.
 
