@@ -43,7 +43,7 @@ You'll create the provisioning package on a PC running Windows 10, save the pack
 ## Supported items for Surface Hub provisioning packages
 
 Currently, you can add these items to provisioning packages for Surface Hub:
-- **Certificates** - You can add certificates, if needed, to support Microsoft Exchange and UWP apps downloaded from the Windows Store for Business.
+- **Certificates** - You can add certificates, if needed, to authenticate to Microsoft Exchange.
 - **Universal Windows Platform (UWP) apps** - You can install UWP apps. This can be an offline-licensed app from the Windows Store for Business, or an app created by an in-house dev.
 - **Policies** - Surface Hub supports a subset of the policies in the [Policy configuration service provider](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). Some of those policies can be configured with ICD.
 - **Settings** - You can configure any setting in the [SurfaceHub configuration service provider](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx).
@@ -57,21 +57,21 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 2. Click **Advanced provisioning**.
 
-  ![ICD start options](images/ICDstart-option.PNG)  
+    ![ICD start options](images/ICDstart-option.PNG)  
   
 3. Name your project and click **Next**.
 
 4. Select **Common to Windows 10 Team edition**, click **Next**, and then click **Finish**.
 
-  ![ICD new project](images/icd-new-project.png)
+    ![ICD new project](images/icd-new-project.png)
 
 5. In the project, under **Available customizations**, select **Common Team edition settings**.
 
-  ![ICD common settings](images/icd-common-settings.png)
+    ![ICD common settings](images/icd-common-settings.png)
 
 
 ### Add a certificate to your package
-You can use provisioning packages to install certificates that will allow the device to authenticate to Microsoft Exchange, or to install apps downloaded from the Windows Store.
+You can use provisioning packages to install certificates that will allow the device to authenticate to Microsoft Exchange.
 
 > [!NOTE]
 > Provisioning packages can only install certificates to the device (local machine) store, and not to the user store. If your organization requires that certificates must be installed to the user store, use Mobile Device Management (MDM) to deploy these certificates. See your MDM solution documentation for details.

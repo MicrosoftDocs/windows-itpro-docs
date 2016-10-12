@@ -13,8 +13,8 @@ localizationpriority: medium
 
 # Monitor your Microsoft Surface Hub
 
-
 Monitoring for Microsoft Surface Hub devices is enabled through Microsoft Operations Management Suite (OMS). The [Operations Management Suite](https://go.microsoft.com/fwlink/?LinkId=718138) is Microsoft's IT management solution that helps you manage and protect your entire IT infrastructure, including your Surface Hubs.
+
 
 Surface Hub is offered as a Log Analytics solution in OMS, allowing you to collect and view usage and reliability data across all your Surface Hubs. Use the Surface Hub solution to:
 - Inventory your Surface Hubs.
@@ -22,49 +22,52 @@ Surface Hub is offered as a Log Analytics solution in OMS, allowing you to colle
 - Create custom alerts to respond quickly if your Surface Hubs report software or hardware issues.
 
 ## Add Surface Hub to Operations Management Suite
-If you are already using OMS, you'll find Surface Hub solutions in the Solutions Gallery. Select the **Surface Hub** tile in the gallery, and then click **Add** in the solution's details page. If you're not using OMS, you'll need to add Surface Hub to the Solutions Gallery. For more information, see [Get Started with Updgrade Analytics](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-get-started). 
 
-**To add Surface Hub to Operations Management Suite**
 1. **Sign in to Operations Management Suite (OMS)**. You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
-2. **Create a new OMS workspace**. Enter a name for the workspace, select the workspace region, and provide the email address that you want associated with this workspace. Select Create.
+2. **Create a new OMS workspace**. Enter a name for the workspace, select the workspace region, and provide the email address that you want associated with this workspace. Select **Create**.
 3. **Link Azure subscription to your workspace**. If your organization already has an Azure subscription, you can link it to your workspace. Note that you may need to request access from your organization’s Azure administrator.
-> [!NOTE] 
-> If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. Your workspace opens.
-4. **Add Surface Hub solution**. In the Solutions Galler, select the Surface Hub tile in the gallery and then select **Add** on the solution’s details page. The solution is now visible on your workspace.
+    > [!NOTE] 
+    > If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. Your workspace opens.
+4. **Add Surface Hub solution**. In the Solutions Gallery, select the **Surface Hub** tile in the gallery and then select **Add** on the solution’s details page. The solution is now visible on your workspace.
 
 ## Use the Surface Hub dashboard
-From the **Overview** page in your OMS workspace, click the Surface Hub tile to see the Surface Hub dashboard. Use the dashboard to get a snapshot of usage and reliability data across your Surface Hubs.
-
-Click into each view on the dashboard to see detailed data, modify the query as desired, export the data to Power BI, and create alerts.
+From the **Overview** page in your OMS workspace, click the Surface Hub tile to see the Surface Hub dashboard. Use the dashboard to get a snapshot of usage and reliability data across your Surface Hubs. Click into each view on the dashboard to see detailed data, modify the query as desired, and create alerts.
 
 > [!NOTE]
 > Most of these views show data for the past 30 days, but this is subject to your subscription's data retention policy.
 
 **Active Surface Hubs**
+
 Use this view to get an inventory of all your Surface Hubs. Once connected to OMS, each Surface Hub periodically sends a "heartbeat" event to the server. This view shows Surface Hubs that have reported a heartbeat in the past 24 hours.
- 
+
 **Skype meetings**
+
 Use this view to get usage data for Skype over the past 30 days. The graph shows the total number of Skype Meetings started across your Surface Hubs, and a breakdown between scheduled meetings, ad hoc meetings, and PSTN calls.
  
 **Wireless projection**
+
 Use this view to get usage and reliability data for wireless projection over the past 30 days. The graph shows the total number of wireless connections across all your Surface Hubs, which provides an indication whether people in your organization are using this feature. If it's a low number, it may suggest a need to provide training to help people in your organization learn how to wirelessly connect to a Surface Hub.
  
-Also, the graph shows a breakdown of successful and unsuccessful connections. If you see a high number of unsuccessful connections, devices may not properly support wireless projection using Miracast. For best performance,Microsoft suggests that devices run a WDI Wi-Fi driver and a WDDM 2.0 graphics driver. Use the details view to learn if wireless projection problems are common.
+Also, the graph shows a breakdown of successful and unsuccessful connections. If you see a high number of unsuccessful connections, devices may not properly support wireless projection using Miracast. For best performance, Microsoft suggests that devices run a WDI Wi-Fi driver and a WDDM 2.0 graphics driver. Use the details view to learn if wireless projection problems are common with particular devices.
  
 When a connection fails, users can also do the following if they are using a Windows laptop or phone:
-- Remove the paired device from Settings > Devices > Connected devices, then try to connect again.
+- Remove the paired device from **Settings** > **Devices** > **Connected devices**, then try to connect again.
 - Reboot the device.
  
 **Wired projection**
+
 Use this view to get usage and reliability data for wired projection over the past 30 days. If the graph shows a high number of unsuccessful connections, it may indicate a connectivity issue in your audio-visual pipeline. For example, if you use a HDMI repeater or a center-of-room control panel, they may need to be restarted.
  
 **Application usage**
-Use this view to get usage data for apps on your Surface Hubs over the past 30 days. The data comes from app launches on your Surface Hubs not including Skype for Business. This view helps you understand which Surface Hub apps are the most valuable in your organization. If you are deploying new line-of-business apps in your environment, this can also help you understand how often they are being used.
+
+Use this view to get usage data for apps on your Surface Hubs over the past 30 days. The data comes from app launches on your Surface Hubs, not including Skype for Business. This view helps you understand which Surface Hub apps are the most valuable in your organization. If you are deploying new line-of-business apps in your environment, this can also help you understand how often they are being used.
  
 **Application Crashes**
+
 Use this view to get reliability data for apps on your Surface Hubs over the past 30 days. The data comes from app crashes on your Surface Hubs. This view helps you detect and notify app developers of poorly behaving in-box and line-of-business apps.
  
 **Sample Queries**
+
 Use this to create custom alerts based on a recommended set of queries. Alerts help you respond quickly if your Surface Hubs report software or hardware issues. For more inforamtion, see [Set up alerts using sample queries](#set-up-alerts-with-sample-queries).
 
 ## Set up alerts with sample queries
@@ -77,36 +80,36 @@ This table describes the sample queries in the Surface Hub solution:
 
 | Alert type | Impact | Recommended remediation | Details |
 | ---------- | ------ | ----------------------- | ------- |
-| Software  | Error | **Reboot the device**. <br> Reboot manually, or using Reboot CSP. <br> Suggest doing this between meetings to minimize impact to your people in your organization.  | Trigger conditions: <br> - A critical process in the Surface Hub operating system, such as the shell, projection, or Skype, crashes or becomes non-responsive. <br> - The device hasn't reported a heartbeat in the past 24 hours. This may be due to network connectivity issue or network-related hardware failure, or an error with the telemetry reporting system. |
-| Software  | Error | **Check your Exchange service**. <br> Verify: <br> - The service is available <br> - The device account password is up to date – see [Password management](password-management-for-surface-hub-device-accounts.md) for details.| Triggers when there's an error syncing the device calendar with Exchange. |
-| Software  | Error | **Check your Skype for Business service**. <br> Verify: <br> - The service is available <br> - The device account password is up to date – see [Password management](password-management-for-surface-hub-device-accounts.md) for details. <br> - The domain name for Skype for Business is properly configured.| Triggers when Skype fails to sign in. |
-| Software  | Error | **Reset the device**. <br> This takes some time, so you should take the device offline. <br> For more information, see [Device reset](device-reset-surface-hub.md).| Triggers when there is an error cleaning up user and app data at the end of a session. When this operation repeatedly fails, the device is locked to protect user data. You must reset the device to continue. |
-| Hardware  | Warning | **None**. Indicates negligible impact to functionality.| Triggers when there is an error with any of the following hardware components: <br> - Virtual pen slots <br> - NFC driver <br> - USB hub driver <br> - Bluetooth driver <br> - Proximity sensor <br> - Graphical performance (video card driver) <br> - Mismatched hard drive <br> - No keyboard/mouse detected |
-| Hardware  | Warning | **Contact Microsoft support**. Indicates impact to core functionality (such as Skype, projection, touch, and internet connectivity). <br> **Note** Some events, including heartbeat, include the device’s serial number that you can use when contacting support.| Triggers when there is an error with any of the following hardware components. <br> **Components that affect Skype**: <br> - Speaker driver <br> - Microphone driver <br> - Camera driver <br> **Components that affect wired and wireless projection**: <br> - Wired touchback driver <br> - Wired ingest driver <br> - Wireless adapter driver <br> - Wi-Fi Direct error <br> **Other components**: <br> - Touch digitizer driver <br> - Network adapter error (not reported to OMS)|
+| Software   | Error  | **Reboot the device**. <br> Reboot manually, or using the [Reboot configuration service provider](https://msdn.microsoft.com/en-us/library/windows/hardware/mt720802(v=vs.85).aspx). <br> Suggest doing this between meetings to minimize impact to your people in your organization. | Trigger conditions: <br> - A critical process in the Surface Hub operating system, such as the shell, projection, or Skype, crashes or becomes non-responsive. <br> - The device hasn't reported a heartbeat in the past 24 hours. This may be due to network connectivity issue or network-related hardware failure, or an error with the telemetry reporting system. |
+| Software   | Error  | **Check your Exchange service**. <br> Verify: <br> - The service is available. <br> - The device account password is up to date – see [Password management](password-management-for-surface-hub-device-accounts.md) for details.| Triggers when there's an error syncing the device calendar with Exchange. |
+| Software   | Error  | **Check your Skype for Business service**. <br> Verify: <br> - The service is available. <br> - The device account password is up to date – see [Password management](password-management-for-surface-hub-device-accounts.md) for details. <br> - The domain name for Skype for Business is properly configured - see [Configure a domain name](use-fully-qualified-domain-name-surface-hub.md). | Triggers when Skype fails to sign in. |
+| Software   | Error  | **Reset the device**. <br> This takes some time, so you should take the device offline. <br> For more information, see [Device reset](device-reset-surface-hub.md).| Triggers when there is an error cleaning up user and app data at the end of a session. When this operation repeatedly fails, the device is locked to protect user data. You must reset the device to continue. |
+| Hardware   | Warning | **None**. Indicates negligible impact to functionality.| Triggers when there is an error with any of the following hardware components: <br> - Virtual pen slots <br> - NFC driver <br> - USB hub driver <br> - Bluetooth driver <br> - Proximity sensor <br> - Graphical performance (video card driver) <br> - Mismatched hard drive <br> - No keyboard/mouse detected |
+| Hardware   | Error | **Contact Microsoft support**. <br> Indicates impact to core functionality (such as Skype, projection, touch, and internet connectivity). <br> **Note** Some events, including heartbeat, include the device’s serial number that you can use when contacting support.| Triggers when there is an error with any of the following hardware components. <br> **Components that affect Skype**: <br> - Speaker driver <br> - Microphone driver <br> - Camera driver <br> **Components that affect wired and wireless projection**: <br> - Wired touchback driver <br> - Wired ingest driver <br> - Wireless adapter driver <br> - Wi-Fi Direct error <br> **Other components**: <br> - Touch digitizer driver <br> - Network adapter error (not reported to OMS)|
 
-**To set up an alert**:
+**To set up an alert**
 1.	From the Surface Hub solution, select one of the sample queries.
 2.	Modify the query as desired. See Log Analytics search reference to learn more.
-3.	Click **Alert** at the top of the page to open the **Add Alert Rule** screen. See Alerts in Log Analytics for details on the options to configure the alert.
+3.	Click **Alert** at the top of the page to open the **Add Alert Rule** screen. See [Alerts in Log Analytics](https://azure.microsoft.com/en-us/documentation/articles/log-analytics-alerts/) for details on the options to configure the alert.
 4.	Click **Save** to complete the alert rule. It will start running immediately.
 
 ## Enroll your Surface Hub
 
 For Surface Hub to connect to and register with the OMS service, it must have access to the port number of your domains and the URLs. This table list the ports that OMS needs. For more information, see [Configure proxy and firewall settings in Log Analytics](https://azure.microsoft.com/documentation/articles/log-analytics-proxy-firewall/).
 
-| Agent resource             | Ports | Bypass HTTPS insepction? |
-| -------------------------- | ----- | ------------------------ |
-| *.ods.opinsights.azure.com | 443 | Yes |
-| *.oms.opinsights.azure.com | 443 | Yes |
-| *.blob.core.windows.net | 443 | Yes |
-| ods.systemcenteradvisor.com | 443 | No |
+| Agent resource              | Ports | Bypass HTTPS inspection? |
+| --------------------------- | ----- | ------------------------ |
+| *.ods.opinsights.azure.com  | 443   | Yes |
+| *.oms.opinsights.azure.com  | 443   | Yes |
+| *.blob.core.windows.net     | 443   | Yes |
+| ods.systemcenteradvisor.com | 443   | No  |
 
-The Microsoft Monitoring Agent, used to connect devicnstall any additional clients to connect Surface Hub to OMS.
+The Microsoft Monitoring Agent, used to connect devices to OMS, is integrated with the Surface Hub operating system, so there is no need to install additional clients to connect Surface Hub to OMS.
  
 Once your OMS workspace is set up, there are several ways to enroll your Surface Hub devices:
 - [Settings app](#enroll-using-the-settings-app)
 - [Provisioning package](#enroll-using-a-provisioning-package)
-- [Management solution](#enroll-using-a-management-solution), such as Microsoft Intune and Configuration Manager
+- [MDM provider](#enroll-using-a-mdm-provider), such as Microsoft Intune and Configuration Manager
  
 You'll need the workspace ID and primary key of your OMS workspace. You can get these from the OMS portal.
  
@@ -127,7 +130,7 @@ A confirmation dialog will appear telling you whether or not the OMS configurati
 ### Enroll using a provisioning package
 You can use a provisioning package to enroll your Surface Hub. For more infomation, see [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md).
  
-### Enroll using a management solution
+### Enroll using a MDM provider
 You can enroll Surface Hub into OMS using the SurfaceHub CSP. Intune and Configuration Manager provide built-in experiences to help create policy templates for Surface Hub. For more information, see [Manage Surface Hub settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md).
 
 ## Related topics
