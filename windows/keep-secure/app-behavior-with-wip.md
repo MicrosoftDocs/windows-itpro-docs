@@ -38,8 +38,8 @@ This table includes info about how unenlightened apps might behave, based on you
    </tr>
    <tr>
         <th>&nbsp;</th>
-        <th align="center">Name-based policies, without the /*AppCompat*/ string</th>
-        <th align="center">Name-based policies, using the /*AppCompat*/ string or proxy-based policies</th>
+        <th align="center">Name-based policies, without the <code>/*AppCompat*/</code> string</th>
+        <th align="center">Name-based policies, using the <code>/*AppCompat*/</code> string or proxy-based policies</th>
     </tr>
    <tr align="left">
      <td><strong>Not required.</strong> App connects directly using IP address.</td>
@@ -60,7 +60,7 @@ This table includes info about how unenlightened apps might behave, based on you
    </tr>
     <tr align="left">
      <td><strong>Not required.</strong> App connects using hostname.</td>
-     <td colspan="2">
+     <td>
         <ul>
             <li>App is blocked from accessing enterprise cloud resources, but can access other network resources.</li>
             <li>No encryption is applied.</li>
@@ -71,7 +71,7 @@ This table includes info about how unenlightened apps might behave, based on you
    </tr>
     <tr align="left">
      <td><strong>Allow.</strong> App connects using IP address or hostnames.</td>
-     <td colspan="2">
+     <td>
         <ul>
             <li>App can access both personal and enterprise cloud resources.</li>
             <li>Auto-encryption is applied.</li>
@@ -82,7 +82,7 @@ This table includes info about how unenlightened apps might behave, based on you
    </tr>
     <tr align="left">
      <td><strong>Exempt.</strong> App connects using IP address or hostnames.</td>
-     <td colspan="2">
+     <td>
         <ul>
             <li>App can access both personal and enterprise cloud resources.</li>
             <li>No encryption is applied.</li>
@@ -99,12 +99,8 @@ This table includes info about how enlightened apps might behave, based on your 
 <table>
    <tr>
      <th>App rule setting</th>
-     <th>Networking policy configuration</th>
+     <th>Networking policy configuration for name-based policies, possibly using the <code>/*AppCompat*/</code> string, or proxy-based policies</th>
    </tr>
-   <tr>
-        <th>&nbsp;</th>
-        <th align="center">Name-based policies, possibly using the /*AppCompat*/ string, or proxy-based policies</th>
-    </tr>
     <tr>
         <td><strong>Not required.</strong> App connects using IP address or hostnames.</td>
         <td>
