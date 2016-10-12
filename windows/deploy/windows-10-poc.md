@@ -29,6 +29,7 @@ The following topics and procedures are provided in this guide. An estimate of t
 
 <TABLE>
 <TR><TH>Topic<TH>Description<TH>Time required
+<TR><TD>[Terminology](#terminology)<TD>Definition terms used in this guide.<TD>
 <TR><TD>[Hardware and software requirements](#hardware-and-software-requirements)<TD>Prerequisites to complete this guide.<TD>10 minutes
 <TR><TD>[Lab setup](#lab-setup)<TD>A description and diagram of the PoC environment that is configured.<TD>5 minutes
 <TR><TD>[Configure the PoC environment](#configure-the-poc-environment)<TD>Parent topic for procedures.<TD>
@@ -40,6 +41,19 @@ The following topics and procedures are provided in this guide. An estimate of t
 <TR><TD>[Configure VHDs](#configure-vhds)<TD>Start virtual machines and configure all services and settings.<TD>60 minutes
 <TR><TD>[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)<TD>Verify and troubleshoot network connectivity and services in the PoC environment.<TD>30 minutes
 <TR><TD>[Appendix B: Configuring Hyper-V on Windows Server 2008 R2](#appendix-b-configuring-hyper-v-on-windows-server-2008-r2)<TD>Information about using this guide with a Hyper-V host running Windows Server 2008 R2.<TD>
+</TABLE>
+
+## Terminology
+
+<TABLE>
+<TR><TH>Term<TH>Definition
+<TR><TD>Hyper-V<TD>Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.
+<TR><TD>Hyper-V host<TD>The computer where Hyper-V is installed.
+<TR><TD>Hyper-V Manager<TD>The user-interface console used to view and configure Hyper-V.
+<TR><TD>Proof of concept (PoC)<TD>Verification of a proposal.
+<TR><TD>Virtual machine (VM)<TD>A VM is a virtual computer with its own operating system, running on the Hyper-V host.
+<TR><TD>Virtual switch<TD>A virtual network connection used to connect VMs to each other and to physical network adapters on the Hyper-V host.
+<TR><TD>VM snapshot<TD>A point in time image of a VM that includes its disk, memory and device state. It can be used to return a virtual machine to a former state corresponding to the time the snapshot was taken.
 </TABLE>
 
 ## Hardware and software requirements
