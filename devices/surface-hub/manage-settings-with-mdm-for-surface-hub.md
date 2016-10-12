@@ -153,7 +153,7 @@ The following tables include info on Windows 10 settings have been validated wit
 | ----------- | ---------------- | --------------------------- |-------------------------- | ---------------------------------------- | ------------------------- |
 | Log collection | Use to remotely collect ETW logs from Surface Hub.| [DiagnosticLog CSP](https://msdn.microsoft.com/library/windows/hardware/mt219118.aspx) | No| No| Yes |
 
-## Example: Manage Surface Hub settings with Micosoft Intune
+<!-- ## Example: Manage Surface Hub settings with Micosoft Intune
 
 You can Use Intune to create a configuration policy from a template, or create a custom configuration policy to manage some Surface Hub settings. 
 
@@ -197,8 +197,7 @@ The current branch of System Center Configuration Manager supports managing mode
 4. Type a name and a description for the configuration item. 
 5. Under **Settings for devices managed without the Configuration Manager client**, select **Windows 8.1 and Windows 10**, and then click **Next**.
 6. On **Supported Platforms**, select **Supported Platforms**, expand **Windows 10**, select **All Windows 10 Team and higher**, and then click **Next**.
-7. On **Windows 10 team**, under **Device settings**, select **Windows 10 Team**. A new tab labelled **Windows 10 Team** will appear on the left-hand side.
-
+7. On **Windows 10 team**, under **Device settings**, select **Windows 10 Team**. A new tab labelled **Windows 10 Team** will appear on the left-hand side. -->
 
 ## Related topic
 
