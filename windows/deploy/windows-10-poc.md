@@ -64,7 +64,7 @@ The second computer is used to clone and mirror a client computer (computer 2) f
 
 <table border="1" cellpadding="2">
     <tr>
-        <TD style='border:dotted #FFFFFF 0.0pt;'></td>
+        <TD style='border:dotted 0.0pt;'></td>
         <td BGCOLOR="#a0e4fa">**Computer 1** (required)</td>
         <td BGCOLOR="#a0e4fa">**Computer 2** (recommended)</td>
     </tr>
