@@ -67,7 +67,6 @@ This table includes info about how unenlightened apps might behave, based on you
             <li>App can’t access local Work files.</li>
         </ul>
     </td>
-    <td>nbsp;</td>
    </tr>
     <tr align="left">
      <td><strong>Allow.</strong> App connects using IP address or hostnames.</td>
@@ -81,7 +80,7 @@ This table includes info about how unenlightened apps might behave, based on you
    </tr>
     <tr align="left" colspan="2">
      <td><strong>Exempt.</strong> App connects using IP address or hostnames.</td>
-     <td>
+     <td colspan="2">
         <ul>
             <li>App can access both personal and enterprise cloud resources.</li>
             <li>No encryption is applied.</li>
