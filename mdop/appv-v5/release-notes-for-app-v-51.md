@@ -143,6 +143,44 @@ The App-V 5.x Sequencer cannot sequence applications with filenames matching "CO
 
 **Workaround**: Use a different filename
 
+## Intermittent "File Not Found" error when Mounting a Package
+
+
+Occassionally when mounting a package, a "File Not Found" (0x80070002) error is generated. Typically, this occurs when a folder in an App-V package contains many files ( i.e. 20K or more). This can cause streaming to take longer than expected and to time out which generates the "File Not Found" error.
+
+**Workaround**: Starting with HF06, a new registry key has been introduced to enable extending this time-out period.
+
+<table>
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<tbody>
+<tr>
+<td align="left">Path</td>
+<td align="left">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\Streaming</td>
+</tr>
+<tr>
+<td align="left">Setting</td>
+<td align="left">StreamResponseWaitTimeout</td>
+</tr>
+<tr>
+<td align="left">DataType</td>
+<td align="left">DWORD</td>
+</tr>
+<tr>
+<td align="left">Units</td>
+<td align="left">Seconds</td>
+</tr>
+<tr>
+<td align="left">Default</td>
+<td align="left">5<br />
+**Note**: this value is the default if the registry key is not defined or a value <=5 is specified.
+</td>
+</tr>
+</tbody>
+</table>
+
 ## Got a suggestion for App-V?
 
 
