@@ -27,12 +27,12 @@ You can enroll your Surface Hubs using automatic, bulk, or manual enrollment.
 
 > [!NOTE]
 > You can join your Surface Hub to Azure Active Directory (Azure AD) to manage admin groups on the device. However, Surface Hub does not currently support automatic enrollment to Microsoft Intune through Azure AD join. If your organization automatically enrolls Azure AD joined devices into Intune, you must disable this policy for Surface Hub before joining the device to Azure AD.
-> **To disable automatic enrollment for Microsoft Intune**
-> 1. In the [Azure classic portal](https://manage.windowsazure.com/), navigate to the **Active Directory** node and select your directory.
-> 2. Click the **Applications** tab, then click **Microsoft Intune**.
-> 3. Under **Manage devices for these users**, click **Groups**.
-> 4. Click **Select Groups**, then select the groups of users you want to automatically enroll into Intune. Do not include accounts that are used to enroll Surface Hubs into Intune.
-> 5. Click the checkmark button, then click **Save**.
+
+**To disable automatic enrollment for Microsoft Intune**
+1. In the [Azure classic portal](https://manage.windowsazure.com/), navigate to the **Active Directory** node and select your directory. 
+2. Click the **Applications** tab, then click **Microsoft Intune**.
+3. Under **Manage devices for these users**, click **Groups**. 
+4. Click **Select Groups**, then select the groups of users you want to automatically enroll into Intune. Do not include accounts that are used to enroll Surface Hubs into Intune. 5. Click the checkmark button, then click **Save**.
 
 ### Bulk enrollment
 **To configure bulk enrollment**
