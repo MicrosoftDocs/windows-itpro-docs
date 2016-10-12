@@ -74,7 +74,7 @@ For more information, see [SurfaceHub configuration service provider](https://ms
 | Device account, including password rotation | DeviceAccount/\<name of policy\> <br> See [SurfaceHub CSP](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). | No | No | Yes |
 
 
-### Supported Windows 10 settings 
+<!-- ### Supported Windows 10 settings
 
 In addition to Surface Hub specific settings, there are numerous settings common to all Windows 10 devices. These settings are defined in the [Configuration service provider reference](https://msdn.microsoft.com/en-us/library/windows/hardware/dn920025.aspx). 
 
@@ -157,7 +157,7 @@ For example, the OMA URI for the setting to enable wireless projection is `./Ven
 The data type is also stated in the CSP documentation. The most common data types are:
 - char (String)
 - int (Integer)
-- bool (Boolean)
+- bool (Boolean) -->
 
 ## Example: Manage Surface Hub settings with Micosoft Intune
 
@@ -216,8 +216,7 @@ System Center Configuration Manager supports managing modern devices that do not
 18. Once you're done, on the **Browse Settings** dialog, click **Close**.
 19. Complete the wizard. <br> You can view the new configuration item in the **Configuration Items** node of the **Assets and Compliance** workspace.
 
-For more information, see [Create configuration items for Windows 8.1 and Windows 10 devices managed without the System Center Configuration Manager client](https://docs.microsoft.com/en-us/sccm/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client).
-
+For more information, see [Create configuration items for Windows 8.1 and Windows 10 devices managed without the System Center Configuration Manager client](https://docs.microsoft.com/sccm/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client).
 
 ## Related topics
 
