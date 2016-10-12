@@ -32,14 +32,14 @@ We strongly suggest that the only unenlightened apps you add to your allowed app
 This table includes info about how unenlightened apps might behave, based on your Windows Information Protection (WIP) networking policies, your app configuration, and potentially whether the app connects to network resources directly by using IP addresses or by using hostnames.
 
 <table>
-   <tr colgroup span="3" style="background:#002060"></colgroup>
+   <tr>
      <th>App rule setting</th>
      <th align="center" colspan="2">Networking policy configuration</th>
    </tr>
    <tr>
         <th>&nbsp;</th>
-        <th align="center" style="background:#2E75B6">Name-based policies, without the /*AppCompat*/ string</th>
-        <th align="center" style="background:#2E75B6">Name-based policies, using the /*AppCompat*/ string or proxy-based policies</th>
+        <th align="center">Name-based policies, without the /*AppCompat*/ string</th>
+        <th align="center">Name-based policies, using the /*AppCompat*/ string or proxy-based policies</th>
     </tr>
    <tr align="left">
      <td><strong>Not required.</strong> App connects directly using IP address.</td>
@@ -97,13 +97,13 @@ This table includes info about how unenlightened apps might behave, based on you
 This table includes info about how enlightened apps might behave, based on your Windows Information Protection (WIP) networking policies, your app configuration, and potentially whether the app connects to network resources directly by using IP addresses or by using hostnames.
 
 <table>
-   <tr colgroup span="2" style="background:#002060"></colgroup>
+   <tr>
      <th>App rule setting</th>
      <th>Networking policy configuration</th>
    </tr>
    <tr>
         <th>&nbsp;</th>
-        <th align="center" style="background:#2E75B6">Name-based policies, possibly using the /*AppCompat*/ string, or proxy-based policies</th>
+        <th align="center">Name-based policies, possibly using the /*AppCompat*/ string, or proxy-based policies</th>
     </tr>
     <tr>
         <td><strong>Not required.</strong> App connects using IP address or hostnames.</td>
