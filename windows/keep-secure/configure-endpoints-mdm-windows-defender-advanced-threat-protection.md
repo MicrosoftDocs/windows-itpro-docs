@@ -56,6 +56,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
   ![Microsoft Intune add OMC-URI](images/atp-intune-add-oma.png)
 
   e. Type the following values then select **OK**:
+  
   ![Microsoft Intune save policy](images/atp-intune-oma-uri-setting.png)
 
   - **Setting name**: Type a name for the setting.
