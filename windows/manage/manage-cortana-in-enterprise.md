@@ -24,6 +24,10 @@ Cortana in Windows 10 is already great at letting your employees quickly see wh
 
 But Cortana works even harder when she connects to Office 365, helping employees prepare for meetings, learn about co-workers, and receive reminders about where they need to be so they won’t be late.
 
+>**Important**<br>
+>Before your employees can use Cortana with Office 365, they must sign into Cortana using a Microsoft account (such as, @outlook.com), and then they must go to the **Connected Accounts** section of Cortana’s notebook to turn on and connect to Office 365.
+
+
 **More info:**
 
 -   For specific info about what you need to know as a company administrator, including how to turn off Cortana with Office 365, see the [Cortana integration with Office 365](https://go.microsoft.com/fwlink/p/?LinkId=717378) support topic.
