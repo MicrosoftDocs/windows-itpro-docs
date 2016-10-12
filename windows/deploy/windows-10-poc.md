@@ -14,13 +14,9 @@ author: greg-lindsay
 
 -   Windows 10
 
-If you are interested in upgrading to Windows 10 and want to know more about the upgrade process, then keep reading...
-
-Do you have a computer running Windows 8 or later with 16GB of RAM? If so, then you have everything you need to set up a Windows 10 test lab. You can even clone computers from your network and see exactly what happens when they are upgraded to Windows 10. 
+If you have a computer running Windows 8.1 or later with 16GB of RAM, then you have everything you need to set up a Windows 10 test lab. This guide provides step-by-step instructions for configuring a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Simple to use Windows PowerShell commands are provided for setting up the test lab.
 
 ## In this guide
-
-This guide provides step-by-step instructions for configuring a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Simple to use Windows PowerShell commands are provided for setting up the test lab.
 
 The following topics and procedures are provided in this guide:
 
@@ -33,10 +29,8 @@ The following topics and procedures are provided in this guide:
     - [Resize VHD](#resize-vhd): Increase the storage capacity for one of the Windows Server VMs.
     - [Configure Hyper-V](#configure-hyper-v): Create virtual switches, determine available RAM for virtual machines, and add virtual machines.
     - [Configure VHDs](#configure-vhds): Start virtual machines and configure all services and settings.
-
-The following optional topics are also available:
-- [Appendix A: Configuring Hyper-V on Windows Server 2008 R2](#appendix-a-configuring-hyper-v-on-windows-server-2008-r2): Information about using this guide with a Hyper-V host running Windows Server 2008 R2.
-- [Appendix B: Verify the configuration](#appendix-b-verify-the-configuration): Verify and troubleshoot network connectivity and services in the PoC environment.
+- [Appendix A: Verify the configuration](#appendix-a-verify-the-configuration): Verify and troubleshoot network connectivity and services in the PoC environment.
+- [Appendix B: Configuring Hyper-V on Windows Server 2008 R2](#appendix-b-configuring-hyper-v-on-windows-server-2008-r2): Information about using this guide with a Hyper-V host running Windows Server 2008 R2.
 
 When you have completed the steps in this guide, see the following topics for step by step instructions to deploy Windows 10 using the PoC environment under common scenarios with current deployment tools:
 
@@ -576,44 +570,7 @@ Instructions to "type" commands provided in this guide can be typed, but in most
     Restart-Computer
     ```
 
-## Appendix A: Configuring Hyper-V on Windows Server 2008 R2
-
-If your Hyper-V host is running Windows Server 2008 R2, several of the steps in this guide will not work because they use the Hyper-V Module for Windows PowerShell, which is not available on Windows Server 2008 R2.
-
-To manage Hyper-V on Windows Server 2008 R2, you can use Hyper-V WMI, or you can use the Hyper-V Manager console.  
-
-An example that uses Hyper-V WMI to create a virtual switch on Windows Server 2008 R2 is provided below. Converting all Hyper-V module commands used in this guide to Hyper-V WMI is beyond the scope of the guide.  If you must use a Hyper-V host running Windows Server 2008 R2, the steps in the guide can be accomplished by using the Hyper-V Manager console.
-
-```
-$SwitchFriendlyName = "poc-internal"
-$InternalEthernetPortFriendlyName = $SwitchFriendlyName
-$InternalSwitchPortFriendlyName = "poc"
-$SwitchName = [guid]::NewGuid().ToString()
-$InternalSwitchPortName = [guid]::NewGuid().ToString()
-$InternalEthernetPortName = [guid]::NewGuid().ToString()
-$NumLearnableAddresses = 1024
-$ScopeOfResidence = ""
-$VirtualSwitchManagementService = gwmi Msvm_VirtualSwitchManagementService -namespace "root\virtualization"
-$Result = $VirtualSwitchManagementService.CreateSwitch($SwitchName, $SwitchFriendlyName, $NumLearnableAddresses, $ScopeOfResidence) 
-$Switch = [WMI]$Result.CreatedVirtualSwitch 
-$Result = $VirtualSwitchManagementService.CreateSwitchPort($Switch, $InternalSwitchPortName, $InternalSwitchPortFriendlyName, $ScopeOfResidence)
-$InternalSwitchPort = [WMI]$Result.CreatedSwitchPort 
-$Result = $VirtualSwitchManagementService.CreateInternalEthernetPortDynamicMac($InternalEthernetPortName, $InternalEthernetPortFriendlyName)
-$InternalEthernetPort = [WMI]$Result.CreatedInternalEthernetPort
-$query = "Associators of {$InternalEthernetPort} Where ResultClass=CIM_LanEndpoint"
-$InternalLanEndPoint = gwmi -namespace root\virtualization -query $query
-$Result = $VirtualSwitchManagementService.ConnectSwitchPort($InternalSwitchPort, $InternalLanEndPoint)
-$filter = "SettingID='" + $InternalEthernetPort.DeviceID +"'"
-$NetworkAdapterConfiguration = gwmi Win32_NetworkAdapterConfiguration -filter $filter
-```
-To install Hyper-V on Windows Server 2008 R2, you can use the Add-WindowsFeature cmdlet:
-
-```
-Add-WindowsFeature -Name Hyper-V
-```
-For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
-
-## Appendix B: Verify the configuration
+## Appendix A: Verify the configuration
 
 Use the following procedures to verify that the PoC environment is configured properly and working as expected.
 
@@ -667,6 +624,45 @@ Use the following procedures to verify that the PoC environment is configured pr
     **nslookup** displays the DNS server used for the query, and the results of the query. For example, server dc1.contoso.com, address 192.168.0.1, Name e2847.dspb.akamaiedge.net.<BR>
     **ping** displays if the source can resolve the target name, and whether or not the target responds to ICMP. If it cannot be resolved, "..could not find host" will be diplayed and if the target is found and also responds to ICMP, you will see "Reply from" and the IP address of the target.<BR>
     **tracert** displays the path to reach the destination, for example srv1.contoso.com [192.168.0.2] followed by a list of hosts and IP addresses corresponding to subsequent routing nodes between the source and the destination.
+
+## Appendix B: Configuring Hyper-V on Windows Server 2008 R2
+
+If your Hyper-V host is running Windows Server 2008 R2, several of the steps in this guide will not work because they use the Hyper-V Module for Windows PowerShell, which is not available on Windows Server 2008 R2.
+
+To manage Hyper-V on Windows Server 2008 R2, you can use Hyper-V WMI, or you can use the Hyper-V Manager console.  
+
+An example that uses Hyper-V WMI to create a virtual switch on Windows Server 2008 R2 is provided below. Converting all Hyper-V module commands used in this guide to Hyper-V WMI is beyond the scope of the guide.  If you must use a Hyper-V host running Windows Server 2008 R2, the steps in the guide can be accomplished by using the Hyper-V Manager console.
+
+```
+$SwitchFriendlyName = "poc-internal"
+$InternalEthernetPortFriendlyName = $SwitchFriendlyName
+$InternalSwitchPortFriendlyName = "poc"
+$SwitchName = [guid]::NewGuid().ToString()
+$InternalSwitchPortName = [guid]::NewGuid().ToString()
+$InternalEthernetPortName = [guid]::NewGuid().ToString()
+$NumLearnableAddresses = 1024
+$ScopeOfResidence = ""
+$VirtualSwitchManagementService = gwmi Msvm_VirtualSwitchManagementService -namespace "root\virtualization"
+$Result = $VirtualSwitchManagementService.CreateSwitch($SwitchName, $SwitchFriendlyName, $NumLearnableAddresses, $ScopeOfResidence) 
+$Switch = [WMI]$Result.CreatedVirtualSwitch 
+$Result = $VirtualSwitchManagementService.CreateSwitchPort($Switch, $InternalSwitchPortName, $InternalSwitchPortFriendlyName, $ScopeOfResidence)
+$InternalSwitchPort = [WMI]$Result.CreatedSwitchPort 
+$Result = $VirtualSwitchManagementService.CreateInternalEthernetPortDynamicMac($InternalEthernetPortName, $InternalEthernetPortFriendlyName)
+$InternalEthernetPort = [WMI]$Result.CreatedInternalEthernetPort
+$query = "Associators of {$InternalEthernetPort} Where ResultClass=CIM_LanEndpoint"
+$InternalLanEndPoint = gwmi -namespace root\virtualization -query $query
+$Result = $VirtualSwitchManagementService.ConnectSwitchPort($InternalSwitchPort, $InternalLanEndPoint)
+$filter = "SettingID='" + $InternalEthernetPort.DeviceID +"'"
+$NetworkAdapterConfiguration = gwmi Win32_NetworkAdapterConfiguration -filter $filter
+```
+To install Hyper-V on Windows Server 2008 R2, you can use the Add-WindowsFeature cmdlet:
+
+```
+Add-WindowsFeature -Name Hyper-V
+```
+For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
+
+
 
 ## Related Topics
 
