@@ -58,19 +58,20 @@ This table includes info about how unenlightened apps might behave, based on you
         </ul>
     </td>
    </tr>
-    <tr align="left" colspan="2">
+    <tr align="left">
      <td><strong>Not required.</strong> App connects using hostname.</td>
-     <td>
+     <td colspan="2">
         <ul>
             <li>App is blocked from accessing enterprise cloud resources, but can access other network resources.</li>
             <li>No encryption is applied.</li>
             <li>App can’t access local Work files.</li>
         </ul>
     </td>
+    <td>nbsp;</td>
    </tr>
-    <tr align="left" colspan="2">
+    <tr align="left">
      <td><strong>Allow.</strong> App connects using IP address or hostnames.</td>
-     <td>
+     <td colspan="2">
         <ul>
             <li>App can access both personal and enterprise cloud resources.</li>
             <li>Auto-encryption is applied.</li>
