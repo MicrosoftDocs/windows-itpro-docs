@@ -32,9 +32,9 @@ In this topic, you will create a backup-only task sequence that you run on PC000
 
 3.  On the **General** page, assign the following settings and click **Next**:
 
-    1.  Task sequence name: Replace Task Sequence
+    * Task sequence name: Replace Task Sequence
 
-    2.  Task sequence comments: USMT backup only
+    * Task sequence comments: USMT backup only
 
 4.  On the **Boot Image** page, browse and select the **Zero Touch WinPE x64** boot image package. Then click **Next**.
 
@@ -48,9 +48,11 @@ In this topic, you will create a backup-only task sequence that you run on PC000
 
 9.  On the **Confirmation** page, click **Finish**.
 
-10. Review the Replace Task Sequence. Note: This task sequence has many fewer actions than the normal client task sequence. If it doesn't seem different, make sure you selected the Client Replace Task Sequence template when creating the task sequence.
+10. Review the Replace Task Sequence. 
+>[!NOTE]
+>This task sequence has many fewer actions than the normal client task sequence. If it doesn't seem different, make sure you selected the Client Replace Task Sequence template when creating the task sequence.
 
-![figure 34](images/mdt-06-fig42.png)
+![The back-up only task sequence](images/mdt-06-fig42.png "The back-up only task sequence")
 
 Figure 34. The backup-only task sequence (named Replace Task Sequence).
 
@@ -67,13 +69,13 @@ This section walks you through the process of associating a blank machine, PC000
 
 4.  On the **Single Computer** page, use the following settings and then click **Next**:
 
-    1.  Computer Name: PC0006
+    * Computer Name: PC0006
 
-    2.  MAC Address: &lt;the mac address from step 1&gt;
+    * MAC Address: &lt;the mac address from step 1&gt;
 
-    3.  Source Computer: PC0004
+    * Source Computer: PC0004
 
-    ![figure 35](images/mdt-06-fig43.png)
+    ![Create the computer association](images/mdt-06-fig43.png "Create the computer association")
 
     Figure 35. Creating the computer association between PC0004 and PC0006.
 
@@ -96,25 +98,25 @@ This section walks you through the process of associating a blank machine, PC000
 
 1.  On CM01, using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings.
 
-    1.  General
+    * General
 
-    2.  Name: USMT Backup (Replace)
+    * Name: USMT Backup (Replace)
 
-    3.  Limited Collection: All Systems
+    * Limited Collection: All Systems
 
-    4.  Membership rules:
+    * Membership rules:
 
-    5.  Direct rule
+    * Direct rule
 
-    6.  Resource Class: System Resource
+    * Resource Class: System Resource
 
-    7.  Attribute Name: Name
+    * Attribute Name: Name
 
-    8.  Value: PC0004
+    * Value: PC0004
 
-    9.  Select **Resources**
+    * Select **Resources**
 
-    10. Select **PC0004**
+    * Select **PC0004**
 
 2.  Review the USMT Backup (Replace) collection. Do not continue until you see the PC0004 machine in the collection.
 
@@ -158,10 +160,8 @@ This section assumes that you have a machine named PC0004 with the Configuration
 
 2.  In the **Actions** tab, select the **Machine Policy Retrieval & Evaluation Cycle**, select **Run Now**, and click **OK**.
 
-    **Note**  
-    You also can use the Client Notification option in the Configuration Manager console, as shown in [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md).
-
-     
+    >[!NOTE]  
+    >You also can use the Client Notification option in the Configuration Manager console, as shown in [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md).
 
 3.  Using the Software Center, select the **Replace Task Sequence** deployment and click **INSTALL**.
 
@@ -173,8 +173,8 @@ This section assumes that you have a machine named PC0004 with the Configuration
 
 7.  Using the Configuration Manager console, in the Asset and Compliance workspace, select the **User State Migration** node, right-click the **PC0004/PC0006** association, and select **View Recovery Information**. Note that the object now also has a user state store location.
 
-**Note**  
-It may take a few minutes for the user state store location to be populated.
+    >[!NOTE]  
+    >It may take a few minutes for the user state store location to be populated.
 
  
 
@@ -183,21 +183,21 @@ It may take a few minutes for the user state store location to be populated.
 
 1.  Start the PC0006 virtual machine, press **F12** to Pre-Boot Execution Environment (PXE) boot when prompted. Allow it to boot Windows Preinstallation Environment (Windows PE), and then complete the deployment wizard using the following settings:
 
-    1.  Password: P@ssw0rd
+    * Password: P@ssw0rd
 
-    2.  Select a task sequence to execute on this computer: Windows 10 Enterprise x64 Custom Image
+    * Select a task sequence to execute on this computer: Windows 10 Enterprise x64 Custom Image
 
 2.  The setup now starts and does the following:
 
-    1.  Installs the Windows 10 operating system
+    * Installs the Windows 10 operating system
 
-    2.  Installs the Configuration Manager client
+    * Installs the Configuration Manager client
 
-    3.  Joins it to the domain
+    * Joins it to the domain
 
-    4.  Installs the applications
+    * Installs the applications
 
-    5.  Restores the PC0004 backup
+    * Restores the PC0004 backup
 
 When the process is complete, you will have a new Windows 10 machine in your domain with user data and settings restored.
 
