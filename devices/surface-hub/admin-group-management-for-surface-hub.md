@@ -65,7 +65,7 @@ Surface Hubs use Azure AD join to:
 - Backup the device's BitLocker recovery key by storing it under the account that was used to Azure AD join the device. See [Save your BitLocker key](save-bitlocker-key-surface-hub.md) for details.
 
 > [!IMPORTANT]
-> If your Azure AD organization is configured to automatically enroll devices into mobile device management (MDM), you will need to disable this for the Surface Hubs you plan to join to Azure AD, and manually enroll into MDM using Settings. A known issue prevents Surface Hubs from supporting this setting.
+> Surface Hub does not currently support automatic enrollment to Microsoft Intune through Azure AD join. If your organization automatically enrolls Azure AD joined devices into Intune, you must disable this policy for Surface Hub before joining the device to Azure AD.
 
 
 ### Which should I choose?
