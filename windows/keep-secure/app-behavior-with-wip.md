@@ -90,7 +90,7 @@ This table includes info about how unenlightened apps might behave, based on you
    </tr>
 </table>
 
-## Elightened app behavior
+## Enlightened app behavior
 This table includes info about how enlightened apps might behave, based on your Windows Information Protection (WIP) networking policies, your app configuration, and potentially whether the app connects to network resources directly by using IP addresses or by using hostnames.
 
 <table>
