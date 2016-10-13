@@ -33,4 +33,5 @@
 #### [Wireless network management](wireless-network-management-for-surface-hub.md)
 ### [Troubleshoot Microsoft Surface Hub](troubleshoot-surface-hub.md)
 ### [Appendix: PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)
+### [Change history for Surface Hub](change-history-surface-hub.md)
 
