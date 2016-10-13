@@ -14,19 +14,16 @@ author: greg-lindsay
 
 -   Windows 10
 
-If you have a computer running Windows 8.1 or later with 16GB of RAM, then you have everything you need to set up a Windows 10 test lab. This guide provides step-by-step instructions for configuring a proof of concept (PoC) environment where you can deploy Windows 10. 
+This guide provides step-by-step instructions for configuring a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Simple to use Windows PowerShell commands are provided for setting up the test lab.
 
-When you have completed the steps in this guide, the following topics provide step by step instructions to deploy Windows 10 using the PoC environment and current deployment tools:
+To complete this guide, you will need a Hyper-V-capable computer running Windows 8.1 or later with 16GB of RAM. A full list of requirements is provided below. When you have completed configuring the PoC environment, additional topics are provided that use the PoC environment to deploy Windows 10 with current deployment tools.
 
-- [Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)
-- [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)
-
-The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Simple to use Windows PowerShell commands are provided for setting up the test lab.
 
 ## In this guide
 
-The following topics and procedures are provided in this guide. An estimate of the time required to complete each procedure is also provided. The amount of time required to complete these procedures will vary greatly depending on the resources available to the Hyper-V host, and subsequently to the hosted VMs, such as processor speed, disk speed, and network speed. 
+The following topics and procedures are provided in this guide. An estimate of the time required to complete each procedure is also provided. The amount of time required to complete these procedures will vary depending on the resources available to the Hyper-V host, and subsequently to the hosted VMs, such as processor speed, disk speed, and network speed. 
 
+<span style='font-size:9.0pt'>
 <TABLE>
 <TR><TH>Topic<TH>Description<TH>Time required
 <TR><TD>[Terminology](#terminology)<TD>Definition terms used in this guide.<TD>
@@ -42,9 +39,11 @@ The following topics and procedures are provided in this guide. An estimate of t
 <TR><TD>[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)<TD>Verify and troubleshoot network connectivity and services in the PoC environment.<TD>30 minutes
 <TR><TD>[Appendix B: Configuring Hyper-V on Windows Server 2008 R2](#appendix-b-configuring-hyper-v-on-windows-server-2008-r2)<TD>Information about using this guide with a Hyper-V host running Windows Server 2008 R2.<TD>
 </TABLE>
+</span>
 
 ## Terminology
 
+<span style='font-size:9.0pt'>
 <TABLE>
 <TR><TH>Term<TH>Definition
 <TR><TD>Hyper-V<TD>Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.
@@ -55,6 +54,7 @@ The following topics and procedures are provided in this guide. An estimate of t
 <TR><TD>Virtual switch<TD>A virtual network connection used to connect VMs to each other and to physical network adapters on the Hyper-V host.
 <TR><TD>VM snapshot<TD>A point in time image of a VM that includes its disk, memory and device state. It can be used to return a virtual machine to a former state corresponding to the time the snapshot was taken.
 </TABLE>
+</span>
 
 ## Hardware and software requirements
 
@@ -62,9 +62,10 @@ One computer that meets the hardware and software specifications below is requir
 
 The second computer is used to clone and mirror a client computer (computer 2) from your corporate network to the POC environment. Alternatively, you can use an arbitrary VM to represent this computer, therefore this computer is not required to complete the lab.
 
+<span style='font-size:9.0pt'>
 <table border="1" cellpadding="2">
     <tr>
-        <TD style='border:dotted 0.0pt;'></td>
+        <TD style='border:none 0.0pt;'></td>
         <td BGCOLOR="#a0e4fa">**Computer 1** (required)</td>
         <td BGCOLOR="#a0e4fa">**Computer 2** (recommended)</td>
     </tr>
@@ -115,6 +116,7 @@ The second computer is used to clone and mirror a client computer (computer 2) f
         <td>Any</td>
     </tr>
 </table>
+</span>
 
 >Retaining applications and settings during the upgrade process requires that architecture (32 or 64-bit) is the same before and after the upgrade.
 
@@ -686,6 +688,8 @@ For more information about the Hyper-V Manager interface in Windows Server 2008 
 
 ## Related Topics
 
+[Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)<BR>
+[Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)<BR>
 [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
  
 
