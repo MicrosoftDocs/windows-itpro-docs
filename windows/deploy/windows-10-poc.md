@@ -58,11 +58,13 @@ The following topics and procedures are provided in this guide. An estimate of t
 
 ## Hardware and software requirements
 
+<span style='font-size:9.0pt'>
+
 One computer that meets the hardware and software specifications below is required to complete the guide; A second computer is recommended to validate the upgrade process. 
 
 The second computer is used to clone and mirror a client computer (computer 2) from your corporate network to the POC environment. Alternatively, you can use an arbitrary VM to represent this computer, therefore this computer is not required to complete the lab.
 
-<span style='font-size:9.0pt'>
+
 <table border="1" cellpadding="2">
     <tr>
         <TD style='border:none 0.0pt;'></td>
