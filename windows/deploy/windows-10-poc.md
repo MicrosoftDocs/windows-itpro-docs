@@ -51,7 +51,7 @@ The following topics and procedures are provided in this guide. An estimate of t
 <TR><TD>Hyper-V<TD>Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.
 <TR><TD>Hyper-V host<TD>The computer where Hyper-V is installed.
 <TR><TD>Hyper-V Manager<TD>The user-interface console used to view and configure Hyper-V.
-<TR><TD>Proof of concept (PoC)<TD>Verification of a proposal.
+<TR><TD>Proof of concept (PoC)<TD>Confirmation that a process or idea works as intended. A PoC is carried out in a test environment to learn about and verify a process. 
 <TR><TD>Virtual machine (VM)<TD>A VM is a virtual computer with its own operating system, running on the Hyper-V host.
 <TR><TD>Virtual switch<TD>A virtual network connection used to connect VMs to each other and to physical network adapters on the Hyper-V host.
 <TR><TD>VM snapshot<TD>A point in time image of a VM that includes its disk, memory and device state. It can be used to return a virtual machine to a former state corresponding to the time the snapshot was taken.
@@ -63,7 +63,7 @@ The following topics and procedures are provided in this guide. An estimate of t
 
 One computer that meets the hardware and software specifications below is required to complete the guide; A second computer is recommended to validate the upgrade process. 
 
-The second computer is used to clone and mirror a client computer (computer 2) from your corporate network to the POC environment. Alternatively, you can use an arbitrary VM to represent this computer, therefore this computer is not required to complete the lab.
+The second computer (computer 2) is a client computer from your corporate network that is used to create VM that can be added to the POC environment. The VM is a mirror image of the computer on your corporate network, providing a realistic simulation of the upgrade process. If you do not have a computer to use for this simulation, you can create an arbitrary VM to represent this computer.
 
 <div style='font-size:9.0pt'>
 
@@ -131,7 +131,7 @@ The Hyper-V role cannot be installed on Windows 7 or earlier versions of Windows
 
 ## Lab setup
 
-- The Hyper-V host computer (computer 1) is configured to host four VMs on a private, proof of concept network. 
+- The Hyper-V host computer (computer 1) is configured to host four VMs on a private, PoC network. 
     - Two VMs are running Windows Server 2012 R2 with required network services and tools installed.
     - Two VMs are client systems: One VM is intended to mirror a host on your corporate network (computer 2) and one VM is running Windows 10 Enterprise to demonstrate the hardware replacement scenario.
 - Links are provided to download trial versions of Windows Server 2012, Windows 10 Enterprise, and all deployment tools necessary to complete the lab.
@@ -141,7 +141,7 @@ The lab architecture is summarized in the following diagram:
 ![PoC](images/poc.png)
 
 **Note**:
->If you have an existing Hyper-V host, you can use this host if desired and skip the Hyper-V installation section in this guide.
+>If you have an existing Hyper-V host, you can use this host and skip the Hyper-V installation section in this guide.
 
 >The two Windows Server VMs can be combined into a single VM to conserve RAM and disk space if required. However, instructions in this guide assume two server systems are used. Using two servers enables Active Directory Domain Services and DHCP to be installed on a server that is not directly connected to the corporate network. This mitigates the risk of clients on the corporate network receiving DHCP leases from the PoC network (i.e. "rogue" DHCP), and limits NETBIOS service broadcasts.
 
@@ -175,7 +175,7 @@ The lab architecture is summarized in the following diagram:
     ```   
     In this example, the computer supports SLAT and Hyper-V. 
     
-    If one or more requirements are evaluated as "No" then the computer does not support installing Hyper-V.  However, if only the virtualization setting is incompatible, you might be able to enable virtualization in the BIOS and change the "Virtualization Enabled In Firmware" setting from "No" to "Yes." The location of this setting will depend on the manufacturer and BIOS version, but is typically found associated with the BIOS security settings.
+    If one or more requirements are evaluated as "No" then the computer does not support installing Hyper-V.  However, if only the virtualization setting is incompatible, you might be able to enable virtualization in the BIOS and change the **Virtualization Enabled In Firmware** setting from "No" to "Yes." The location of this setting will depend on the manufacturer and BIOS version, but is typically found associated with the BIOS security settings.
 
     You can also identify Hyper-V support using [tools](https://blogs.msdn.microsoft.com/taylorb/2008/06/19/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v/) provided by the processor manufacturer, the [msinfo32](https://technet.microsoft.com/en-us/library/cc731397.aspx) tool, or you can download the [coreinfo](http://technet.microsoft.com/en-us/sysinternals/cc835722) utility and run it, as shown in the following example:
 
@@ -194,7 +194,7 @@ The lab architecture is summarized in the following diagram:
     EPT             *       Supports Intel extended page tables (SLAT)
     ```   
 
-    Note: A 64-bit operating system is requried to run Hyper-V.
+    Note: A 64-bit operating system is required to run Hyper-V.
 
 2. Enable Hyper-V.
 
@@ -203,56 +203,72 @@ The lab architecture is summarized in the following diagram:
     ```
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All
     ```
-    When you are prompted to restart the computer, choose Yes. The computer might restart more than once.
+    This command works on all operating systems that support Hyper-V. When you are prompted to restart the computer, choose **Yes**. The computer might restart more than once.
     
-    You can also install Hyper-V using the Control Panel in Windows under **Turn Windows features on or off** (client OS), or using Server Manager's **Add Roles and Features Wizard** (server OS), as shown below:
+    You can also install Hyper-V using the Control Panel in Windows under **Turn Windows features on or off** for a client operating system, or using Server Manager's **Add Roles and Features Wizard** on a server operating system, as shown below:
     
     ![hyper-v feature](images/hyper-v-feature.png)
 
     ![hyper-v](images/svr_mgr2.png)
 
+    <P>If you choose to install Hyper-V using Server Manager, accept all default selections. 
+
 ### Download VHD and ISO files
+
+When you have completed installation of Hyper-V on the host computer, begin configuration of Hyper-V by downloading VHD and ISO files to the computer. These files will be used to create the VMs used in the lab.
+
+>Before you can download VHD and ISO files, you will need to register and sign in to the [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/) using your Microsoft account.
 
 1. Create a directory on your Hyper-V host named C:\VHD and download a single [Windows Server 2012 R2 VHD](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2012-r2) from the TechNet Evaluation Center to the C:\VHD directory. 
 
     **Important**: This guide assumes that VHDs are stored in the **C:\VHD** directory on the Hyper-V host. If you use a different directory to store VHDs, you must adjust steps in this guide appropriately.
 
-    After completing registration you will be able to download the 7.47 GB Windows Server 2012 R2 evaluation VHD.
+    After completing registration you will be able to download the 7.47 GB Windows Server 2012 R2 evaluation VHD. An example of the download is shown below.
 
     ![VHD](images/download_vhd.png)
 
-2. Rename the VHD file that you downloaded to **2012R2-poc-1.vhd**. This is not required, but is done to make the filename simpler to recognize.
+2. When the download is complete, rename the VHD file that you downloaded to **2012R2-poc-1.vhd**. This is done to make the filename simpler to recognize and type.
 3. Copy the VHD to a second file also in the C:\VHD directory and name this VHD **2012R2-poc-2.vhd**.
-4. Download the [Windows 10 Enterprise ISO](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise) from the TechNet Evaluation Center to the C:\VHD directory on your Hyper-V host. During registration, you must specify the type, version, and language of installation media to download. In this example, a Windows 10 Enterprise, 64 bit, English VHD is chosen. You can choose a different version if desired. Note that Windows 10 in-place upgrade is only possible if the source operating system and installation media are both 32-bit or both 64-bit, so you should download the file version that corresponds to the version of your source computer for upgrade testing. 
-5. Rename the ISO file that you downloaded to **w10-enterprise.iso**. Again, this is done so that the filename is simpler to type and recognize. After completing registration you will be able to download the 3.63 GB Windows 10 Enterprise evaluation ISO. 
-    
-    The following commands and output display the procedures described in this section:
+4. Download the [Windows 10 Enterprise ISO](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise) from the TechNet Evaluation Center to the C:\VHD directory on your Hyper-V host. 
 
-    ```
-    C:\>mkdir VHD
-    C:\>cd VHD
-    C:\VHD>ren 9600*.vhd 2012R2-poc-1.vhd
-    C:\VHD>copy 2012R2-poc-1.vhd 2012R2-poc-2.vhd
-            1 file(s) copied.
-    C:\VHD ren *.iso w10-enterprise.iso
-    C:\VHD>dir /B
-    2012R2-poc-1.vhd
-    2012R2-poc-2.vhd
-    w10-enterprise.iso
-    ```
+    - During registration, you must specify the type, version, and language of installation media to download. In this example, a Windows 10 Enterprise, 64 bit, English VHD is chosen. You can choose a different version if desired. Note that Windows 10 in-place upgrade is only possible if the source operating system and installation media are both 32-bit or both 64-bit, so you should download the file version that corresponds to the version of your source computer for upgrade testing. 
+
+5. Rename the ISO file that you downloaded to **w10-enterprise.iso**. Again, this is done so that the filename is simpler to type and recognize. After completing registration you will be able to download the 3.63 GB Windows 10 Enterprise evaluation ISO. 
+
+After completing these steps, you will have three files in the C:\VHD directory: 2012R2-poc-1.vhd, 2012R2-poc-2.vhd, w10-enterprise.iso.
+    
+The following commands and output display the procedures described in this section:
+
+
+```
+C:\>mkdir VHD
+C:\>cd VHD
+C:\VHD>ren 9600*.vhd 2012R2-poc-1.vhd
+C:\VHD>copy 2012R2-poc-1.vhd 2012R2-poc-2.vhd
+   1 file(s) copied.
+C:\VHD ren *.iso w10-enterprise.iso
+C:\VHD>dir /B
+2012R2-poc-1.vhd
+2012R2-poc-2.vhd
+w10-enterprise.iso
+```
+
 
 ### Convert PC to VHD
 
-**Important**:Before you convert a PC to VHD, verify that you have access to a local administrator account on the computer. Alternatively you can use a domain account with administrative rights if these credentials are cached on the computer and your domain policy allows the use of cached credentials for login.
+**Important**: Before you convert a PC to VHD, verify that you have access to a local administrator account on the computer. Alternatively you can use a domain account with administrative rights if these credentials are cached on the computer and your domain policy allows the use of cached credentials for login. After converting the computer to a VM, you must be able to sign in on this VM with local administrator privileges, while disconnected from the corporate network.
 
->For purposes of the test lab, you must use a PC with a single hard drive that is assigned a drive letter of C. Systems with multiple hard drives or non-standard configurations can also be upgraded using PC refresh and replace scenarios, but these systems require more advanced deployment task sequences than those used in this lab.
+>For purposes of the test lab, use a PC that is assigned a drive letter of C. Systems with non-standard configurations can also be upgraded using PC refresh and replace scenarios, but these systems require more advanced deployment task sequences than those used in this lab. If the computer has multiple hard drives, then only choose the C drive for conversion.
 
-1. Download the [Disk2vhd utility](https://technet.microsoft.com/en-us/library/ee656415.aspx), extract the .zip file and copy disk2vhd.exe to a flash drive or other location that is accessible from the computer you wish to convert.
+1. Download the [Disk2vhd utility](https://technet.microsoft.com/en-us/library/ee656415.aspx), extract the .zip file and copy **disk2vhd.exe** to a flash drive or other location that is accessible from the computer you wish to convert.
 
-    >Note: You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media.
+    >You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media.
 
 2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
-3. Select checkboxes next to the volumes you wish to copy and specify a location to save the resulting VHD or VHDX file. If your Hyper-V host is running Windows Server 2008 R2 you must choose VHD, otherwise choose VHDX.
+3. Select checkboxes next to the **C** and **system** volumes and specify a location to save the resulting VHD or VHDX file. If your Hyper-V host is running Windows Server 2008 R2 you must choose VHD, otherwise choose VHDX.  See the following example:
+
+    ![disk2vhd](images/disk2vhd.png)
+
 4. Click **Create** to start creating a VHDX file.
 
     >Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
@@ -658,7 +674,7 @@ If your Hyper-V host is running Windows Server 2008 R2, several of the steps in 
 
 To manage Hyper-V on Windows Server 2008 R2, you can use Hyper-V WMI, or you can use the Hyper-V Manager console.  
 
-An example that uses Hyper-V WMI to create a virtual switch on Windows Server 2008 R2 is provided below. Converting all Hyper-V module commands used in this guide to Hyper-V WMI is beyond the scope of the guide.  If you must use a Hyper-V host running Windows Server 2008 R2, the steps in the guide can be accomplished by using the Hyper-V Manager console.
+An example that uses Hyper-V WMI to create a virtual switch on Windows Server 2008 R2 is provided below. 
 
 ```
 $SwitchFriendlyName = "poc-internal"
@@ -687,8 +703,10 @@ To install Hyper-V on Windows Server 2008 R2, you can use the Add-WindowsFeature
 ```
 Add-WindowsFeature -Name Hyper-V
 ```
-For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
 
+Converting all Hyper-V module commands used in this guide to Hyper-V WMI is beyond the scope of the guide.  If you must use a Hyper-V host running Windows Server 2008 R2, the steps in the guide can be accomplished by using the Hyper-V Manager console. These steps are not provided at this time in the guide.
+
+For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
 
 
 ## Related Topics
