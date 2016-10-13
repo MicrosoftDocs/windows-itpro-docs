@@ -20,14 +20,14 @@ To complete this guide, you will need a Hyper-V capable computer running Windows
 
 ## In this guide
 
-The following topics and procedures are provided in this guide. An estimate of the time required to complete each procedure is also provided. The amount of time required to complete these procedures will vary depending on the resources available to the Hyper-V host, and subsequently to the hosted VMs, such as processor speed, disk speed, and network speed. 
+The following topics and procedures are provided in this guide. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed. 
 
 <div style='font-size:9.0pt'>
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TH>Topic<TH>Description<TH>Time required
-<TR><TD>[Terminology used in this guide](#terminology-used-in-this-guide)<TD>Terms used in this guide.<TD>
-<TR><TD>[Hardware and software requirements](#hardware-and-software-requirements)<TD>Prerequisites to complete this guide.<TD>10 minutes
+<TR><TH>Topic<TH>Description<TH>Time
+<TR><TD>[Terminology in this guide](#terminology-in-this-guide)<TD>Terms used in this guide.<TD>
+<TR><TD>[Hardware and software requirements](#hardware-and-software-requirements)<TD>Prerequisites to complete this guide.<TD>
 <TR><TD>[Lab setup](#lab-setup)<TD>A description and diagram of the PoC environment that is configured.<TD>5 minutes
 <TR><TD>[Configure the PoC environment](#configure-the-poc-environment)<TD>Parent topic for procedures.<TD>
 <TR><TD>[Verify support and install Hyper-V](#verify-support-and-install-hyper-v)<TD>Verify that installation of Hyper-V is supported, and install the Hyper-V server role.<TD>10 minutes
@@ -42,9 +42,11 @@ The following topics and procedures are provided in this guide. An estimate of t
 
 </div>
 
-### Terminology used in this guide
+### Terminology in this guide
 
-<TABLE>
+<div style='font-size:9.0pt'>
+
+<TABLE border=1 cellspacing=0 cellpadding=0>
 <TR><TH>Term<TH>Definition
 <TR><TD>Hyper-V<TD>Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.
 <TR><TD>Hyper-V host<TD>The computer where Hyper-V is installed.
@@ -55,14 +57,17 @@ The following topics and procedures are provided in this guide. An estimate of t
 <TR><TD>VM snapshot<TD>A point in time image of a VM that includes its disk, memory and device state. It can be used to return a virtual machine to a former state corresponding to the time the snapshot was taken.
 </TABLE>
 
+</div>
+
 ## Hardware and software requirements
 
 One computer that meets the hardware and software specifications below is required to complete the guide; A second computer is recommended to validate the upgrade process. 
 
 The second computer is used to clone and mirror a client computer (computer 2) from your corporate network to the POC environment. Alternatively, you can use an arbitrary VM to represent this computer, therefore this computer is not required to complete the lab.
 
+<div style='font-size:9.0pt'>
 
-<table border="1" cellpadding="0">
+<TABLE border=1 cellspacing=0 cellpadding=0>
     <tr>
         <TD></td>
         <td BGCOLOR="#a0e4fa">**Computer 1** (required)</td>
@@ -115,6 +120,8 @@ The second computer is used to clone and mirror a client computer (computer 2) f
         <td>Any</td>
     </tr>
 </table>
+
+</div>
 
 >Retaining applications and settings during the upgrade process requires that architecture (32 or 64-bit) is the same before and after the upgrade.
 
