@@ -42,7 +42,7 @@ This table includes info about how unenlightened apps might behave, based on you
         <th align="center">Name-based policies, using the <code>/*AppCompat*/</code> string or proxy-based policies</th>
     </tr>
    <tr align="left">
-     <td><strong>Not required.</strong> App connects directly using IP address.</td>
+     <td><strong>Not required.</strong> App connects to enterprise cloud resources directly, using an IP address.</td>
      <td>
         <ul>
             <li>App is entirely blocked from both personal and enterprise cloud resources.</li>
@@ -59,7 +59,7 @@ This table includes info about how unenlightened apps might behave, based on you
     </td>
    </tr>
     <tr align="left">
-     <td><strong>Not required.</strong> App connects using hostname.</td>
+     <td><strong>Not required.</strong> App connects to enterprise cloud resources, using a hostname.</td>
      <td colspan="2">
         <ul>
             <li>App is blocked from accessing enterprise cloud resources, but can access other network resources.</li>
@@ -69,7 +69,7 @@ This table includes info about how unenlightened apps might behave, based on you
     </td>
    </tr>
     <tr align="left">
-     <td><strong>Allow.</strong> App connects using IP address or hostnames.</td>
+     <td><strong>Allow.</strong> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
      <td colspan="2">
         <ul>
             <li>App can access both personal and enterprise cloud resources.</li>
@@ -79,7 +79,7 @@ This table includes info about how unenlightened apps might behave, based on you
     </td>
    </tr>
     <tr align="left" colspan="2">
-     <td><strong>Exempt.</strong> App connects using IP address or hostnames.</td>
+     <td><strong>Exempt.</strong> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
      <td colspan="2">
         <ul>
             <li>App can access both personal and enterprise cloud resources.</li>
@@ -99,7 +99,7 @@ This table includes info about how enlightened apps might behave, based on your 
      <th>Networking policy configuration for name-based policies, possibly using the <code>/*AppCompat*/</code> string, or proxy-based policies</th>
    </tr>
     <tr>
-        <td><strong>Not required.</strong> App connects using IP address or hostnames.</td>
+        <td><strong>Not required.</strong> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
         <td>
             <ul>
                 <li>App is blocked from accessing enterprise cloud resources, but can access other network resources.</li>
@@ -109,7 +109,7 @@ This table includes info about how enlightened apps might behave, based on your 
         </td>
     </tr>
     <tr>
-        <td><strong>Allow.</strong> App connects using IP address or hostnames.</td>
+        <td><strong>Allow.</strong> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
         <td>
             <ul>
                 <li>App can access both personal and enterprise cloud resources.</li>
@@ -119,7 +119,7 @@ This table includes info about how enlightened apps might behave, based on your 
         </td>
     </tr>
     <tr>
-        <td><strong>Exempt.</strong> App connects using IP address or hostnames.</td>
+        <td><strong>Exempt.</strong> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
         <td>
             <ul>
                 <li>App can access both personal and enterprise cloud resources.</li>
