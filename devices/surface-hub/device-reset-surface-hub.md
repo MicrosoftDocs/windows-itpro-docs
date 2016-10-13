@@ -30,6 +30,8 @@ Initiating a reset will return the device to the last cumulative Windows update,
 -   Local admins on the device
 -   Configurations from MDM or the Settings app
 
+## Reset a Surface Hub from Settings
+
 **To reset a Surface Hub**
 1.	On your Surface Hub, open **Settings**. 
 
@@ -43,9 +45,11 @@ Initiating a reset will return the device to the last cumulative Windows update,
 
     ![Image showing Reset device option in Settings app for Surface Hub.](images/sh-settings-reset-device.png) 
 
-**To reset a Surface Hub from Windows Recovery Environment**
+## Reset a Surface Hub from Windows Recovery Environment
  
 On rare occasions, a Surface Hub may encounter an error while cleaning up user and app data at the end of a session. When this happens, the device will automatically reboot and try again. But if this operation fails repeatedly, the device will be automatically locked to protect user data. To unlock it, you must reset the device from [Windows Recovery Environment](https://technet.microsoft.com/library/cc765966.aspx) (Windows RE). 
+
+**To reset a Surface Hub from Windows Recovery Environment**
 
 1.  From the welcome screen, toggle the Surface Hub's power switch 3 times. Wait a few seconds between each toggle. See the [Surface Hub Site Readiness Guide](https://www.microsoft.com/surface/support/surface-hub/surface-hub-site-readiness-guide) for help with locating the power switch. 
 2. The device should automatically boot into Windows RE. Select **Advanced Repair**.
