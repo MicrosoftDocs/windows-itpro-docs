@@ -18,15 +18,16 @@ This guide provides step-by-step instructions for configuring a proof of concept
 
 To complete this guide, you will need a Hyper-V-capable computer running Windows 8.1 or later with 16GB of RAM. A full list of requirements is provided below. When you have completed configuring the PoC environment, additional topics are provided that use the PoC environment to deploy Windows 10 with current deployment tools.
 
-
 ## In this guide
+
+<div style='font-size:9.0pt'>
 
 The following topics and procedures are provided in this guide. An estimate of the time required to complete each procedure is also provided. The amount of time required to complete these procedures will vary depending on the resources available to the Hyper-V host, and subsequently to the hosted VMs, such as processor speed, disk speed, and network speed. 
 
-<span style='font-size:9.0pt'>
+
 <TABLE>
 <TR><TH>Topic<TH>Description<TH>Time required
-<TR><TD>[Terminology](#terminology)<TD>Definition terms used in this guide.<TD>
+<TR><TD>[Terminology used in this guide](#terminology-used-in-this-guide)<TD>Terms used in this guide.<TD>
 <TR><TD>[Hardware and software requirements](#hardware-and-software-requirements)<TD>Prerequisites to complete this guide.<TD>10 minutes
 <TR><TD>[Lab setup](#lab-setup)<TD>A description and diagram of the PoC environment that is configured.<TD>5 minutes
 <TR><TD>[Configure the PoC environment](#configure-the-poc-environment)<TD>Parent topic for procedures.<TD>
@@ -39,11 +40,11 @@ The following topics and procedures are provided in this guide. An estimate of t
 <TR><TD>[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)<TD>Verify and troubleshoot network connectivity and services in the PoC environment.<TD>30 minutes
 <TR><TD>[Appendix B: Configuring Hyper-V on Windows Server 2008 R2](#appendix-b-configuring-hyper-v-on-windows-server-2008-r2)<TD>Information about using this guide with a Hyper-V host running Windows Server 2008 R2.<TD>
 </TABLE>
-</span>
 
-## Terminology
+</div>
 
-<span style='font-size:9.0pt'>
+### Terminology used in this guide
+
 <TABLE>
 <TR><TH>Term<TH>Definition
 <TR><TD>Hyper-V<TD>Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.
@@ -54,11 +55,8 @@ The following topics and procedures are provided in this guide. An estimate of t
 <TR><TD>Virtual switch<TD>A virtual network connection used to connect VMs to each other and to physical network adapters on the Hyper-V host.
 <TR><TD>VM snapshot<TD>A point in time image of a VM that includes its disk, memory and device state. It can be used to return a virtual machine to a former state corresponding to the time the snapshot was taken.
 </TABLE>
-</span>
 
 ## Hardware and software requirements
-
-<span style='font-size:9.0pt'>
 
 One computer that meets the hardware and software specifications below is required to complete the guide; A second computer is recommended to validate the upgrade process. 
 
@@ -118,7 +116,6 @@ The second computer is used to clone and mirror a client computer (computer 2) f
         <td>Any</td>
     </tr>
 </table>
-</span>
 
 >Retaining applications and settings during the upgrade process requires that architecture (32 or 64-bit) is the same before and after the upgrade.
 
