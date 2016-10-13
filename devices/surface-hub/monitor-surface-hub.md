@@ -40,9 +40,11 @@ From the **Overview** page in your OMS workspace, click the Surface Hub tile to 
 
 Use this view to get an inventory of all your Surface Hubs. Once connected to OMS, each Surface Hub periodically sends a "heartbeat" event to the server. This view shows Surface Hubs that have reported a heartbeat in the past 24 hours.
 
+<!--
 **Skype meetings**
 
 Use this view to get usage data for Skype over the past 30 days. The graph shows the total number of Skype Meetings started across your Surface Hubs, and a breakdown between scheduled meetings, ad hoc meetings, and PSTN calls.
+-->
  
 **Wireless projection**
 
