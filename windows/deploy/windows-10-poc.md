@@ -14,18 +14,17 @@ author: greg-lindsay
 
 -   Windows 10
 
-This guide provides step-by-step instructions for configuring a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured using Hyper-V and a minimum amount of resources. Simple to use Windows PowerShell commands are provided for setting up the test lab.
+This guide provides step-by-step instructions for setting up a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured by using Hyper-V and requires a minimum amount of resources. Simple to use Windows PowerShell commands are provided for setting up the test lab.
 
-To complete this guide, you will need a Hyper-V-capable computer running Windows 8.1 or later with 16GB of RAM. A full list of requirements is provided below. When you have completed configuring the PoC environment, additional topics are provided that use the PoC environment to deploy Windows 10 with current deployment tools.
+To complete this guide, you will need a Hyper-V capable computer running Windows 8.1 or later with 16GB of RAM. Detailed requirements are provided [below](#hardware-and-software-requirements). When you have completed configuring the PoC environment, additional topics are provided that use the PoC environment to deploy Windows 10 with current deployment tools.
 
 ## In this guide
 
-<div style='font-size:9.0pt'>
-
 The following topics and procedures are provided in this guide. An estimate of the time required to complete each procedure is also provided. The amount of time required to complete these procedures will vary depending on the resources available to the Hyper-V host, and subsequently to the hosted VMs, such as processor speed, disk speed, and network speed. 
 
+<div style='font-size:9.0pt'>
 
-<TABLE>
+<TABLE border=1 cellspacing=0 cellpadding=0>
 <TR><TH>Topic<TH>Description<TH>Time required
 <TR><TD>[Terminology used in this guide](#terminology-used-in-this-guide)<TD>Terms used in this guide.<TD>
 <TR><TD>[Hardware and software requirements](#hardware-and-software-requirements)<TD>Prerequisites to complete this guide.<TD>10 minutes
