@@ -37,9 +37,6 @@ U.S. region:
 - daasmon-eus-prd.cloudapp.net			
 - dataaccess-cus-prd.cloudapp.net			
 - dataaccess-eus-prd.cloudapp.net			
-- onboardingservice-prd.trafficmanager.net			
-- sevillefeedback-prd.trafficmanager.net			
-- sevillesettings-prd.trafficmanager.net			
 - threatintel-cus-prd.cloudapp.net			
 - threatintel-eus-prd.cloudapp.net
 - winatpauthorization.windows.com
@@ -51,9 +48,6 @@ EU region:
 
 - dataaccess-neu-prd.cloudapp.net
 - dataaccess-weu-prd.cloudapp.net
-- onboardingservice-prd.trafficmanager.net
-- sevillefeedback-prd.trafficmanager.net
-- sevillesettings-prd.trafficmanager.net
 - threatintel-neu-prd.cloudapp.net
 - threatintel-weu-prd.cloudapp.net
 - winatpauthorization.windows.com
