@@ -62,9 +62,9 @@ One computer that meets the hardware and software specifications below is requir
 The second computer is used to clone and mirror a client computer (computer 2) from your corporate network to the POC environment. Alternatively, you can use an arbitrary VM to represent this computer, therefore this computer is not required to complete the lab.
 
 
-<table border="1" cellpadding="2">
+<table border="1" cellpadding="0">
     <tr>
-        <TD style='border:none 0.0pt;'></td>
+        <TD></td>
         <td BGCOLOR="#a0e4fa">**Computer 1** (required)</td>
         <td BGCOLOR="#a0e4fa">**Computer 2** (recommended)</td>
     </tr>
