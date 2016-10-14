@@ -14,7 +14,7 @@ author: jdeckerMS
 
 [Windows 10 Education and Windows 10 Pro Education](https://www.microsoft.com/en-us/education/products/windows/default.aspx) empowers staff, administrators, teachers, and students to do great things.
 
-## ![Learn more about Windows](images/lightbulb.png) Learn
+## ![Learn more about Windows](images/education.png) Learn
 
 <div class="side-by-side"> <div class="side-by-side-content">
 <div class="side-by-side-content-left"><p>
@@ -23,7 +23,7 @@ author: jdeckerMS
 <b>[Get Windows 10 Education or Windows 10 Pro Education](https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools)</b><br />When you've made your decision, find out how to buy Windows for your school.</p></div>
  </div></div>
 
-## ![Plan for Windows 10 in your school](images/list.png) Plan
+## ![Plan for Windows 10 in your school](images/clipboard.png) Plan
 
 <div class="side-by-side"> <div class="side-by-side-content">
 <div class="side-by-side-content-left"><p>
