@@ -31,3 +31,4 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | [Create and test a device account (Surface Hub)](create-and-test-a-device-account-surface-hub.md) | Reorganize and streamline guidance on creating a device account.  |
 | [Introduction to Surface Hub](intro-to-surface-hub.md) | Move Surface Hub dependencies table to [Prepare your environment for Surface Hub](prepare-your-environment-for-surface-hub.md). |
 | [Prepare your environment for Surface Hub](prepare-your-environment-for-surface-hub.md) | Add dependency table and reorganize topic. | 
+| [Local management for Surface Hub settings](local-management-surface-hub-settings.md) | New topic. |
