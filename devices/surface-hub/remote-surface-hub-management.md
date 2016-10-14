@@ -16,6 +16,6 @@ localizationpriority: medium
 
 |Topic | Description|
 | ------ | --------------- |
-| [Windows updates](https://technet.microsoft.com/itpro/surface-hub/manage-windows-updates-for-surface-hub) | You can manage Windows updates on your Surface Hub by setting the maintenance window, deferring updates, or using WSUS.|
 | [Manage settings with an MDM provider]( https://technet.microsoft.com/itpro/surface-hub/manage-settings-with-mdm-for-surface-hub) | Surface Hub provides an enterprise management solution to help IT administrators manage policies and business applications on these devices using a mobile device management (MDM) solution.|
 | [Monitor your Surface Hub]( https://technet.microsoft.com/itpro/surface-hub/monitor-surface-hub) | Monitoring for Surface Hub devices is enabled through Microsoft Operations Management Suite.|
+| [Windows updates](https://technet.microsoft.com/itpro/surface-hub/manage-windows-updates-for-surface-hub) | You can manage Windows updates on your Surface Hub by setting the maintenance window, deferring updates, or using WSUS.|

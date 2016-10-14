@@ -17,8 +17,8 @@ localizationpriority: medium
 |Topic | Description|
 | ------ | --------------- |
 | [Local management for Surface Hub settings](local-management-surface-hub-settings.md) | Learn about Surface Hub settings.  |
-| [Accessibility](https://technet.microsoft.com/itpro/surface-hub/accessibility-surface-hub) | Accessibility settings for the Surface Hub can be changed by using the Settings app. You'll find them under Ease of Access. Your Surface Hub has the same accessibility options as Windows 10.|
-| [Change the Surface Hub device account](https://technet.microsoft.com/itpro/surface-hub/change-surface-hub-device-account) | You can change the device account in Settings to either add an account if one was not already provisioned, or to change any properties of an account that was already provisioned.|
-| [Device reset]( https://technet.microsoft.com/en-us/itpro/surface-hub/device-reset-suface-hub) | You may need to reset your Surface Hub.|
-| [Use fully qualified domain name with Surface Hub]() | Options to configure domain name with Surface Hub.  |
-| [Wireless network management](https://technet.microsoft.com/itpro/surface-hub/wireless-network-management-for-surface-hub) | Surface Hub offers two options for network connectivity to your corporate network and Internet: wireless, and wired. While both provide network access, we recommend you use a wired connection. |
+| [Accessibility](accessibility-surface-hub.md) | Accessibility settings for the Surface Hub can be changed by using the Settings app. You'll find them under Ease of Access. Your Surface Hub has the same accessibility options as Windows 10.|
+| [Change the Surface Hub device account](change-surface-hub-device-account.md) | You can change the device account in Settings to either add an account if one was not already provisioned, or to change any properties of an account that was already provisioned.|
+| [Device reset](device-reset-surface-hub.md) | You may need to reset your Surface Hub.|
+| [Use fully qualified domain name with Surface Hub](use-fully-qualified-domain-name-surface-hub.md) | Options to configure domain name with Surface Hub.  |
+| [Wireless network management](wireless-network-management-for-surface-hub.md) | Surface Hub offers two options for network connectivity to your corporate network and Internet: wireless, and wired. While both provide network access, we recommend you use a wired connection. |
