@@ -29,6 +29,9 @@ Configure your browser to allow cookies.
 ### No data is shown on the portal
 If no data is displayed on the Dashboard portal even if no errors were encountered in the portal logs or in the browser console, you'll need to whitelist the threat intelligence, data access, and detonation endpoints that also use this protocol.
 
+> [!NOTE]
+> You must use the HTTPS protocol when adding the following endpoints.
+
 Depending on your region, add the following endpoints to the whitelist:
 
 U.S. region:
