@@ -1,6 +1,7 @@
 ---
 title: Windows 10 for Education (Windows 10)
-description: Learn about using Windows 10 in schools.
+description: Learn how to use Windows 10 in schools.
+keywords: Windows 10, education
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,24 +10,37 @@ author: jdeckerMS
 ---
 
 # Windows 10 for Education
-[Windows 10 Education and Windows 10 Pro Education](https://www.microsoft.com/en-us/education/products/windows/default.aspx) empowers staff, administrators, teachers and students to do great things.
+<link rel="stylesheet" href="https://az835927.vo.msecnd.net/sites/uwp/Resources/css/custom.css">
 
-[Find out how to get Windows 10 Education or Windows 10 Pro Education for your school](https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools)
+[Windows 10 Education and Windows 10 Pro Education](https://www.microsoft.com/en-us/education/products/windows/default.aspx) empowers staff, administrators, teachers, and students to do great things.
 
-[Learn more about what features and functionality are supported in each Windows edition](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)
+## Learn
 
-## In this section
+<div class="side-by-side"> <div class="side-by-side-content">
+<div class="side-by-side-content-left"><p>
+<b>[Windows 10 editions for education customers](windows-editions-for-education-customers.md)</b><br />Windows 10, version 1607 introduces two editions designed for the unique needs of K-12 institutions: Windows 10 Pro Education and Windows 10 Education. These editions provide education-specific default settings for the evolving landscape in K-12 education IT environments.</p><p>
+<b>[Get Windows 10 Education or Windows 10 Pro Education](https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools)</b><br />When you've made your decision, find out how to buy Windows for your school.</p></div>
+<div class="side-by-side-content-right"><p><b>[Compare each Windows edition](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)</b><br />Find out more about the features and functionality we support in each edition of Windows.</p></div>
+ </div></div>
 
-|Topic |Description |
-|------|------------|
-| [Windows 10 editions for education customers](windows-editions-for-education-customers.md) | Windows 10, version 1607 introduces two editions designed for the unique needs of K-12 institutions: Windows 10 Pro Education and Windows 10 Education.  |
-| [Provisioning options for Windows 10](set-up-windows-10.md) | Learn about your options for setting up Windows 10.  |
-| [Get Minecraft Education Edition](get-minecraft-for-education.md) | Learn how to get early access to **Minecraft Education Edition**. |
-| [Take tests in Windows 10](take-tests-in-windows-10.md) | Learn how to configure and use the **Take a Test** app in Windows 10 |
-| [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md) | Learn how to customize the OS privacy settings, Skype, and Xbox for Windows-based devices used in schools so that you can choose what information is shared with Microsoft. |
-| [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md) | Learn how to deploy Windows 10 in a school. |
-| [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md) |Learn how to deploy Windows 10 in a school district.|
-| [Chromebook migration guide](chromebook-migration-guide.md) | Learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment. |
+## Plan
+
+<div class="side-by-side"> <div class="side-by-side-content">
+<div class="side-by-side-content-left"><p>
+<b>[Provisioning options for Windows 10](set-up-windows-10.md)</b><br />Depending on your school's device management needs, Windows offers a variety of options that you can use to set up Windows 10 on your devices.</p><p>
+<b>[Get Minecraft Education Edition](get-minecraft-for-education.md)</b><br />Minecraft Education Edition is built for learning. Learn how to get early access and add it to your Microsoft Store for Business for distribution.</p></div>
+<div class="side-by-side-content-right"><p><b>[Take tests in Windows 10](take-tests-in-windows-10.md)</b><br />Take a Test is a new app that lets you create the right environment for taking tests. Learn how to use and get it set up.</p>
+<p><b>[Chromebook migration guide](chromebook-migration-guide.md)</b><br />Find out how you can migrate a Chromebook-based learning environment to a Windows 10-based learning environment.</p></div>
+ </div></div>
+
+ ## Deploy
+
+ <div class="side-by-side"> <div class="side-by-side-content">
+ <div class="side-by-side-content-left"><p>
+ <b>[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)</b><br />Get step-by-step guidance to help you deploy Windows 10 in a school environment.</p><p>
+ <b>[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)</b><br />Get step-by-step guidance on how to deploy Windows 10 to PCs and devices across a school district.</p></div>
+ <div class="side-by-side-content-right"><p><b>[Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)</b><br />Learn how to customize the OS privacy settings, Skype, and Xbox for Windows-based devices used in schools so that you can choose what information is shared with Microsoft.</p></div>
+  </div></div>
 
 ## Related topics
 
