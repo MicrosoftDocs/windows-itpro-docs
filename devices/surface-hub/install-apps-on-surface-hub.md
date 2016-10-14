@@ -59,7 +59,7 @@ During app submission, developers need to set **Device family availability** and
     - **Windows 10 Desktop** (other device families are optional)
     - **Let Microsoft decide whether to make the app available to any future device families**
   
-> ![Image showing Device family availability page - part of Windows Store app submission process.](images/sh-device-family-availability.png)  
+![Image showing Device family availability page - part of Windows Store app submission process.](images/sh-device-family-availability.png)  
     
 For more information, see [Device family availability](https://msdn.microsoft.com/windows/uwp/publish/upload-app-packages#device-family-availability).
 
@@ -68,7 +68,7 @@ For more information, see [Device family availability](https://msdn.microsoft.co
 2. Select **Pricing and availability**.
 3. Under Organizational licensing, select **Allow disconnected (offline) licensing for organizations**.
 
-> ![Image showing Organizational licensing page - part of Windows Store app submission process.](images/sh-org-licensing.png)
+![Image showing Organizational licensing page - part of Windows Store app submission process.](images/sh-org-licensing.png)
 
 > [!NOTE]
 > **Make my app available to organizations with Store-managed (online) licensing and distribution** is selected by default.
