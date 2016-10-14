@@ -17,6 +17,7 @@
 #### [Setup worksheet](setup-worksheet-surface-hub.md)
 #### [First-run program](first-run-program-surface-hub.md)
 ### [Manage Microsoft Surface Hub](manage-surface-hub.md)
+#### [Local management for Surface Hub settings](local-management-surface-hub-settings.md)
 #### [Remote Surface Hub management]()
 ##### [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md)
 ##### [Monitor your Surface Hub](monitor-surface-hub.md)
