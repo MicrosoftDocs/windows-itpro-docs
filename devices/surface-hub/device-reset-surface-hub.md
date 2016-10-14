@@ -30,6 +30,12 @@ Initiating a reset will return the device to the last cumulative Windows update,
 -   Local admins on the device
 -   Configurations from MDM or the Settings app
 
+> [!IMPORTANT]
+> Performing a device reset may take up to 2 hours. Do not interrupt the reset process. Interrupting the process will render the device inoperable, requiring warranty service to return to normal functionality.
+
+After the reset, Surface Hub restarts the [first run program](first-run-program-surface-hub.md) again. 
+
+
 ## Reset a Surface Hub from Settings
 
 **To reset a Surface Hub**
@@ -56,10 +62,6 @@ On rare occasions, a Surface Hub may encounter an error while cleaning up user a
 3. Select **Reset**.
 4. If prompted, enter your device's BitLocker key. 
 
-> [!IMPORTANT]
-> Performing a device reset may take up to 2 hours. Do not interrupt the reset process. Interrupting the process will render the device inoperable, requiring warranty service to return to normal functionality.
-
-After the reset, Surface Hub restarts the [first run program](first-run-program-surface-hub.md) again. 
 
 ## Related topics
 
