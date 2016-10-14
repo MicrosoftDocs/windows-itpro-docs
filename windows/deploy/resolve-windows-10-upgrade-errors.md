@@ -18,7 +18,7 @@ localizationpriority: high
 
 This topic provides a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade.
 
-If you are not an IT administrator, you can try the [quick fixes](#quick-fixes) listed in this topic.
+If you are not an IT administrator, you can try the [quick fixes](#quick-fixes) listed in this topic. If the quick fixes do not resolve your issue, see [Get help with Windows 10 upgrade and installation errors](https://support.microsoft.com/en-us/help/10587/windows-10-get-help-with-upgrade-installation-errors) for more information.
 
 ## In this topic
 
