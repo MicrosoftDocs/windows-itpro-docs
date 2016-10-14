@@ -14,16 +14,16 @@ author: jdeckerMS
 
 [Windows 10 Education and Windows 10 Pro Education](https://www.microsoft.com/en-us/education/products/windows/default.aspx) empowers staff, administrators, teachers, and students to do great things.
 
-## Learn
+## ![Learn more about Windows](images/lightbulb.png) Learn
 
 <div class="side-by-side"> <div class="side-by-side-content">
 <div class="side-by-side-content-left"><p>
-<b>[Windows 10 editions for education customers](windows-editions-for-education-customers.md)</b><br />Windows 10, version 1607 introduces two editions designed for the unique needs of K-12 institutions: Windows 10 Pro Education and Windows 10 Education. These editions provide education-specific default settings for the evolving landscape in K-12 education IT environments.</p><p>
+<b>[Windows 10 editions for education customers](windows-editions-for-education-customers.md)</b><br />Windows 10, version 1607 introduces two editions designed for the unique needs of K-12 institutions: Windows 10 Pro Education and Windows 10 Education. These editions provide education-specific default settings for the evolving landscape in K-12 education IT environments.</p></div>
+<div class="side-by-side-content-right"><p><b>[Compare each Windows edition](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)</b><br />Find out more about the features and functionality we support in each edition of Windows.</p><p>
 <b>[Get Windows 10 Education or Windows 10 Pro Education](https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools)</b><br />When you've made your decision, find out how to buy Windows for your school.</p></div>
-<div class="side-by-side-content-right"><p><b>[Compare each Windows edition](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)</b><br />Find out more about the features and functionality we support in each edition of Windows.</p></div>
  </div></div>
 
-## Plan
+## ![Plan for Windows 10 in your school](images/list.png) Plan
 
 <div class="side-by-side"> <div class="side-by-side-content">
 <div class="side-by-side-content-left"><p>
@@ -33,14 +33,14 @@ author: jdeckerMS
 <p><b>[Chromebook migration guide](chromebook-migration-guide.md)</b><br />Find out how you can migrate a Chromebook-based learning environment to a Windows 10-based learning environment.</p></div>
  </div></div>
 
- ## Deploy
+ ## ![Deploy Windows 10 for education](images/PCicon.png) Deploy
 
  <div class="side-by-side"> <div class="side-by-side-content">
- <div class="side-by-side-content-left"><p>
+ <div class="side-by-side-content-left"><p><b>[Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)</b><br />Learn how to customize the OS privacy settings, Skype, and Xbox for Windows-based devices used in schools so that you can choose what information is shared with Microsoft.</p></div>
+ <div class="side-by-side-content-right"><p>
  <b>[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)</b><br />Get step-by-step guidance to help you deploy Windows 10 in a school environment.</p><p>
  <b>[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)</b><br />Get step-by-step guidance on how to deploy Windows 10 to PCs and devices across a school district.</p></div>
- <div class="side-by-side-content-right"><p><b>[Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)</b><br />Learn how to customize the OS privacy settings, Skype, and Xbox for Windows-based devices used in schools so that you can choose what information is shared with Microsoft.</p></div>
-  </div></div>
+   </div></div>
 
 ## Related topics
 
