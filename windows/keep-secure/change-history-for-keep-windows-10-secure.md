@@ -16,6 +16,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 
 | New or changed topic | Description |
 | --- | --- |
+|[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |Added content about using ActiveX controls. |
 |[Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](app-behavior-with-wip.md) |New |
 |[VPN technical guide](vpn-guide.md) | Multiple new topics, replacing previous **VPN profile options** topic |
 
