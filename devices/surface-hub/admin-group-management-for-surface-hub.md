@@ -32,7 +32,6 @@ To create a local admin, [choose to use a local admin during first run](first-ru
 
 Note that the local admin account information is not backed by any directory service. We recommend you only choose a local admin if the device does not have access to Active Directory (AD) or Azure Active Directory (Azure AD). If you decide to change the local admin’s password, you can do so in Settings. However, if you want to change from using the local admin account to using a group from your domain or Azure AD tenant, then you’ll need to [reset the device](device-reset-surface-hub.md) and go through the first-time program again.
 
-
 ### Domain join the device to Active Directory (AD)
 
 You can domain join the Surface Hub to your AD domain to allow users from a specified security group to configure settings. During first run, choose to use [Active Directory Domain Services](first-run-program-surface-hub.md#a-href-iduse-active-directoryause-active-directory-domain-services). You'll need to provide credentials that are capable of joining the domain of your choice, and the name of an existing security group. Anyone who is a member of that security group can enter their credentials and unlock Settings.
@@ -67,15 +66,9 @@ Surface Hubs use Azure AD join to:
 > [!IMPORTANT]
 > Surface Hub does not currently support automatic enrollment to Microsoft Intune through Azure AD join. If your organization automatically enrolls Azure AD joined devices into Intune, you must disable this policy for Surface Hub before joining the device to Azure AD.
 
-
 ### Which should I choose?
 
 If your organization is using AD or Azure AD, we recommend you either domain join or Azure AD join, primarily for security reasons. People will be able to authenticate and unlock Settings with their own credentials, and can be moved in or out of the security groups associated with your domain.
-
-
-### Summary
-
-
 
 | Option                                            | Requirements                            | Which credentials can be used to access the Settings app?  |
 |---------------------------------------------------|-----------------------------------------|-------|
@@ -83,4 +76,5 @@ If your organization is using AD or Azure AD, we recommend you either domain joi
 | Domain join to Active Directory (AD)              | Your organization uses AD               | Any AD user from a specific security group in your domain |
 | Azure Active Directory (Azure AD) join the device | Your organization uses Azure AD Basic   | Global administators only |
 | &nbsp;                                            | Your organization uses Azure AD Premium or Enterprise Mobility Suite (EMS) | Global administrators and additional administrators |
+
 

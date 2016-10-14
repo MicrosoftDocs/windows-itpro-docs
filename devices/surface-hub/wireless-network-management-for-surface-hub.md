@@ -36,10 +36,7 @@ If a wired network connection is not available, the Surface Hub can use a wirele
 
 1.  On the Surface Hub, open **Settings** and enter your admin credentials.
 2.  Click **System**, click **Network & Internet**, then **Wi-Fi**, and then click **Advanced options**.
-
-    ![Image showing where to find Advanced options for Network & Internect, Wi-Fi settings.](images/networkmgtwireless-03.png)
-
-3.  The system will show you the properties for the wireless network connection.
+3.  Surface Hub shows you the properties for the wireless network connection.
 
     ![Image showing properties for connected Wi-Fi.](images/networkmgtwireless-04.png)
 
