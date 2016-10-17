@@ -52,7 +52,7 @@ You can manually enroll with an MDM using the **Settings** app on your Surface H
 
 ## Manage Surface Hub settings with MDM
 
-You can use MDM to manage some [Surface Hub CSP settings](#supported-surface-hub-csp-settings)<!-- , and some [Windows 10 settings](#supported-windows-10-settings)-->. Depending on the MDM provider that you use, you may set these settings using a built-in user interface, or by deploying custom SyncML. Microsoft Intune and System Center Configuration Manager provide built-in experiences to help create policy templates for Surface Hub. Refer to documentation from your MDM provider to learn how to create and deploy SyncML.
+You can use MDM to manage some [Surface Hub CSP settings](#supported-surface-hub-csp-settings). Depending on the MDM provider that you use, you may set these settings using a built-in user interface, or by deploying custom SyncML. Microsoft Intune and System Center Configuration Manager provide built-in experiences to help create policy templates for Surface Hub. Refer to documentation from your MDM provider to learn how to create and deploy SyncML.
 
 ### Supported Surface Hub CSP settings
 
