@@ -82,6 +82,7 @@ During a computer replace, these are the high-level steps that occur:
     1.  Select a task sequence to execute on this computer: Backup Only Task Sequence
         * Specify where to save your data and settings: Specify a location
         * Location: \\\\MDT01\\MigData$\\PC0002
+        
         >[!NOTE]  
         >If you are replacing the computer at a remote site you should create the MigData folder on MDT02 and use that share instead.
          
