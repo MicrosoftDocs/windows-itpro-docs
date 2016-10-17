@@ -49,25 +49,25 @@ To configure permissions for the various service accounts needed for operating s
 
 2.  Select the Service Accounts OU and create the CM\_JD account using the following settings:
 
-    1.  Name: CM\_JD
+    * Name: CM\_JD
 
-    2.  User logon name: CM\_JD
+    * User logon name: CM\_JD
 
-    3.  Password: P@ssw0rd
+    * Password: P@ssw0rd
 
-    4.  User must change password at next logon: Clear
+    * User must change password at next logon: Clear
 
-    5.  User cannot change password: Select
+    * User cannot change password: Select
 
-    6.  Password never expires: Select
+    * Password never expires: Select
 
 3.  Repeat the step, but for the CM\_NAA account.
 
 4.  After creating the accounts, assign the following descriptions:
 
-    1.  CM\_JD: Configuration Manager Join Domain Account
+    * CM\_JD: Configuration Manager Join Domain Account
 
-    2.  CM\_NAA: Configuration Manager Network Access Account
+    * CM\_NAA: Configuration Manager Network Access Account
 
 ![figure 6](images/mdt-06-fig06.png)
 
@@ -93,39 +93,37 @@ In order for the Configuration Manager Join Domain Account (CM\_JD) to join mach
 
 3.  The Set-OUPermissions.ps1 script allows the CM\_JD user account permissions to manage computer accounts in the Contoso / Computers / Workstations OU. The following is a list of the permissions being granted:
 
-    1.  Scope: This object and all descendant objects
+    * Scope: This object and all descendant objects
 
-    2.  Create Computer objects
+    * Create Computer objects
 
-    3.  Delete Computer objects
+    * Delete Computer objects
 
-    4.  Scope: Descendant Computer objects
+    * Scope: Descendant Computer objects
 
-    5.  Read All Properties
+    * Read All Properties
 
-    6.  Write All Properties
+    * Write All Properties
 
-    7.  Read Permissions
+    * Read Permissions
 
-    8.  Modify Permissions
+    * Modify Permissions
 
-    9.  Change Password
+    * Change Password
 
-    10. Reset Password
+    * Reset Password
 
-    11. Validated write to DNS host name
+    * Validated write to DNS host name
 
-    12. Validated write to service principal name
+    * Validated write to service principal name
 
 ## <a href="" id="sec03"></a>Review the Sources folder structure
 
 
 To support the packages you create in this section, the following folder structure should be created on the Configuration Manager primary site server (CM01):
 
-**Note**  
-In most production environments, the packages are stored on a Distributed File System (DFS) share or a "normal" server share, but in a lab environment you can store them on the site server.
-
- 
+>[!NOTE]  
+>In most production environments, the packages are stored on a Distributed File System (DFS) share or a "normal" server share, but in a lab environment you can store them on the site server.
 
 -   E:\\Sources
 
@@ -168,9 +166,9 @@ To extend the Configuration Manager console with MDT 2013 Update 2 wizards and t
 
 5.  From the Start screen, run Configure ConfigManager Integration with the following settings:
 
-    1.  Site Server Name: CM01.contoso.com
+    * Site Server Name: CM01.contoso.com
 
-    2.  Site code: PS1
+    * Site code: PS1
 
 ![figure 8](images/mdt-06-fig08.png)
 
@@ -221,15 +219,15 @@ Configuration Manager has many options for starting a deployment, but starting v
 
 3.  In the **PXE** tab, select the following settings:
 
-    1.  Enable PXE support for clients
+    * Enable PXE support for clients
 
-    2.  Allow this distribution point to respond to incoming PXE requests
+    * Allow this distribution point to respond to incoming PXE requests
 
-    3.  Enable unknown computer support
+    * Enable unknown computer support
 
-    4.  Require a password when computers use PXE
+    * Require a password when computers use PXE
 
-    5.  Password and Confirm password: Passw0rd!
+    * Password and Confirm password: Passw0rd!
 
     ![figure 12](images/mdt-06-fig13.png)
 

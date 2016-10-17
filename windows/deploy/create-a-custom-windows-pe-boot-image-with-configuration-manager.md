@@ -47,10 +47,8 @@ By using the MDT wizard to create the boot image in Configuration Manager, you g
 
 2.  On the **Package Source** page, in the **Package source folder to be created (UNC Path):** text box, type **\\\\CM01\\Sources$\\OSD\\Boot\\Zero Touch WinPE x64** and click **Next**.
 
-    **Note**  
-    The Zero Touch WinPE x64 folder does not yet exist. The folder will be created later by the wizard.
-
-     
+    >[!NOTE]
+    >The Zero Touch WinPE x64 folder does not yet exist. The folder will be created later by the wizard.
 
 3.  On the **General Settings** page, assign the name **Zero Touch WinPE x64** and click **Next**.
 
@@ -58,16 +56,14 @@ By using the MDT wizard to create the boot image in Configuration Manager, you g
 
 5.  On the **Components** page, in addition to the default selected **Microsoft Data Access Components (MDAC/ADO)** support, select the **Microsoft Diagnostics and Recovery Toolkit (DaRT)** check box.
 
-    ![figure 15](images/mdt-06-fig16.png)
+    ![Add the DaRT component to the Configuration Manager boot image](images/mdt-06-fig16.png "Add the DaRT component to the Configuration Manager boot image")
 
     Figure 15. Add the DaRT component to the Configuration Manager boot image.
 
 6.  On the **Customization** page, select the **Use a custom background bitmap file** check box, and in the **UNC path:** text box, browse to **\\\\CM01\\Sources$\\OSD\\Branding\\ ContosoBackground.bmp**. Then click **Next** twice.
 
-    **Note**  
-    It will take a few minutes to generate the boot image.
-
-     
+    >[!NOTE]
+    >It will take a few minutes to generate the boot image.
 
 7.  Distribute the boot image to the CM01 distribution point by selecting the **Boot images** node, right-clicking the **Zero Touch WinPE x64** boot image, and selecting **Distribute Content**.
 
@@ -75,9 +71,9 @@ By using the MDT wizard to create the boot image in Configuration Manager, you g
 
 9.  Using Configuration Manager Trace, review the E:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file. Do not continue until you can see that the boot image is distributed. Look for the line that reads STATMSG: ID=2301. You also can view Content Status in the Configuration Manager Console by selecting **the Zero Touch WinPE x86** boot image.
 
-    ![figure 16](images/fig16-contentstatus.png)
+    ![Content status for the Zero Touch WinPE x64 boot image](images/fig16-contentstatus.png "Content status for the Zero Touch WinPE x64 boot image")
 
-    Figure 16. Content status for the Zero Touch WinPE x64 boot image.
+    Figure 16. Content status for the Zero Touch WinPE x64 boot image
 
 10. Using the Configuration Manager Console, right-click the **Zero Touch WinPE x64** boot image and select **Properties**.
 
