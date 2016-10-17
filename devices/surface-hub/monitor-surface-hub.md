@@ -26,8 +26,10 @@ Surface Hub is offered as a Log Analytics solution in OMS, allowing you to colle
 1. **Sign in to Operations Management Suite (OMS)**. You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
 2. **Create a new OMS workspace**. Enter a name for the workspace, select the workspace region, and provide the email address that you want associated with this workspace. Select **Create**.
 3. **Link Azure subscription to your workspace**. If your organization already has an Azure subscription, you can link it to your workspace. Note that you may need to request access from your organization’s Azure administrator.
+
     > [!NOTE] 
     > If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. Your workspace opens.
+
 4. **Add Surface Hub solution**. In the Solutions Gallery, select the **Surface Hub** tile in the gallery and then select **Add** on the solution’s details page. The solution is now visible on your workspace.
 
 ## Use the Surface Hub dashboard
