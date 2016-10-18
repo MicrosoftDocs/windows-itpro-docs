@@ -52,7 +52,7 @@ You can manually enroll with an MDM using the **Settings** app on your Surface H
 
 ## Manage Surface Hub settings with MDM
 
-You can use MDM to manage some [Surface Hub CSP settings](#supported-surface-hub-csp-settings). Depending on the MDM provider that you use, you may set these settings using a built-in user interface, or by deploying custom SyncML. Microsoft Intune and System Center Configuration Manager provide built-in experiences to help create policy templates for Surface Hub. Refer to documentation from your MDM provider to learn how to create and deploy SyncML.
+You can use MDM to manage some [Surface Hub CSP settings](#supported-surface-hub-csp-settings)<!---, and some [Windows 10 settings](#supported-windows-10-settings)-->. Depending on the MDM provider that you use, you may set these settings using a built-in user interface, or by deploying custom SyncML. Microsoft Intune and System Center Configuration Manager provide built-in experiences to help create policy templates for Surface Hub. Refer to documentation from your MDM provider to learn how to create and deploy SyncML.
 
 ### Supported Surface Hub CSP settings
 
@@ -61,7 +61,7 @@ You can configure the Surface Hub settings in the following table using MDM. The
 For more information, see [SurfaceHub configuration service provider](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). 
 
 | Setting              | Node in the SurfaceHub CSP         | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML? |
-| -------------------- | -----------------------|-------------------------- | ---------------------------------------- | ------------------------- |
+| -------------------- | ---------------------------------- | ------------------------- | ---------------------------------------- | ------------------------- |
 | Maintenance hours | MaintenanceHoursSimple/Hours/StartTime <br> MaintenanceHoursSimple/Hours/Duration | Yes | Yes | Yes |
 | Automatically turn on the screen using motion sensors | InBoxApps/Welcome/AutoWakeScreen | Yes | Yes | Yes |
 | Require a pin for wireless projection | InBoxApps/WirelessProjection/PINRequired | Yes | Yes | Yes |
@@ -71,7 +71,9 @@ For more information, see [SurfaceHub configuration service provider](https://ms
 | Welcome screen background image | InBoxApps/Welcome/CurrentBackgroundPath | Yes | Yes.<br> Use a custom setting. | Yes |
 | Meeting information displayed on the welcome screen | InBoxApps/Welcome/MeetingInfoOption | Yes | Yes.<br> Use a custom setting. | Yes |
 | Friendly name for wireless projection | Properties/FriendlyName | Yes. <br> Use a custom policy. | Yes.<br> Use a custom setting. | Yes |
-| Device account, including password rotation | DeviceAccount/\<name of policy\> <br> See [SurfaceHub CSP](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). | No | No | Yes |
+| Device account, including password rotation | DeviceAccount/*`<name_of_policy>`* <br> See [SurfaceHub CSP](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). | No | No | Yes |
+
+
 
 ## Example: Manage Surface Hub settings with Micosoft Intune
 
