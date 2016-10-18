@@ -73,13 +73,13 @@ For more information, see [SurfaceHub configuration service provider](https://ms
 | Friendly name for wireless projection | Properties/FriendlyName | Yes. <br> Use a custom policy. | Yes.<br> Use a custom setting. | Yes |
 | Device account, including password rotation | DeviceAccount/*`<name_of_policy>`* <br> See [SurfaceHub CSP](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). | No | No | Yes |
 
- <!--
+
  ### Supported Windows 10 settings
 
 In addition to Surface Hub specific settings, there are numerous settings common to all Windows 10 devices. These settings are defined in the [Configuration service provider reference](https://msdn.microsoft.com/library/windows/hardware/dn920025.aspx). 
 
 The following tables include info on Windows 10 settings that have been validated with Surface Hub. There is a table with settings for these areas: security, browser, Windows Updates, Windows Defender, remote reboot, certificates, and logs. Each table also tells if the setting is supported with Microsoft Intune, System Center Configuration Manager, or SyncML.
--->
+
 
 <!--
 #### Security settings 
