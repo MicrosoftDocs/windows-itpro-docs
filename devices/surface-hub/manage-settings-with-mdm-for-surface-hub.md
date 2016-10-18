@@ -81,6 +81,7 @@ In addition to Surface Hub specific settings, there are numerous settings common
 The following tables include info on Windows 10 settings that have been validated with Surface Hub. There is a table with settings for these areas: security, browser, Windows Updates, Windows Defender, remote reboot, certificates, and logs. Each table also tells if the setting is supported with Microsoft Intune, System Center Configuration Manager, or SyncML.
 -->
 
+<!--
 #### Security settings 
 
 | Setting  | Details  | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML? |
@@ -90,6 +91,7 @@ The following tables include info on Windows 10 settings that have been validate
 | Allow camera | Keep this enabled for Skype for Business. | [Camera/AllowCamera](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Camera_AllowCamera) | Yes. <br> Use a custom policy. | Yes.<br> Use a custom setting. | Yes |
 | Allow location | Keep this enabled to support apps such as Maps. | [System/AllowLocation](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#System_AllowLocation) | Yes. <br> Use a custom policy. | Yes.<br> Use a custom setting. | Yes |
 | Allow telemetry | Keep this enabled to help Microsoft improve Surface Hub. | [System/AllowTelemetry](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#System_AllowTelemetry) | Yes. <br> Use a custom policy. | Yes.<br> Use a custom setting. | Yes |
+-->
 
 #### Browser settings
 
