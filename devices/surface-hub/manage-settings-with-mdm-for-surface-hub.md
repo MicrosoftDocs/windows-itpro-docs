@@ -61,7 +61,7 @@ You can configure the Surface Hub settings in the following table using MDM. The
 For more information, see [SurfaceHub configuration service provider](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). 
 
 | Setting              | Node in the SurfaceHub CSP         | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML? |
-| -------------------- | -----------------------|-------------------------- | ---------------------------------------- | ------------------------- |
+| -------------------- | ---------------------------------- | ------------------------- | ---------------------------------------- | ------------------------- |
 | Maintenance hours | MaintenanceHoursSimple/Hours/StartTime <br> MaintenanceHoursSimple/Hours/Duration | Yes | Yes | Yes |
 | Automatically turn on the screen using motion sensors | InBoxApps/Welcome/AutoWakeScreen | Yes | Yes | Yes |
 | Require a pin for wireless projection | InBoxApps/WirelessProjection/PINRequired | Yes | Yes | Yes |
@@ -73,7 +73,7 @@ For more information, see [SurfaceHub configuration service provider](https://ms
 | Friendly name for wireless projection | Properties/FriendlyName | Yes. <br> Use a custom policy. | Yes.<br> Use a custom setting. | Yes |
 | Device account, including password rotation | DeviceAccount/*`<name_of_policy>`* <br> See [SurfaceHub CSP](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). | No | No | Yes |
 
- <!-- ### Supported Windows 10 settings
+ ### Supported Windows 10 settings
 
 In addition to Surface Hub specific settings, there are numerous settings common to all Windows 10 devices. These settings are defined in the [Configuration service provider reference](https://msdn.microsoft.com/library/windows/hardware/dn920025.aspx). 
 
@@ -156,7 +156,7 @@ For example, the OMA URI for the setting to enable wireless projection is `./Ven
 The data type is also stated in the CSP documentation. The most common data types are:
 - char (String)
 - int (Integer)
-- bool (Boolean) -->
+- bool (Boolean)
 
 ## Example: Manage Surface Hub settings with Micosoft Intune
 
