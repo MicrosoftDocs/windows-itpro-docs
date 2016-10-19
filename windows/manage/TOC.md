@@ -19,6 +19,7 @@
 ### [Manage Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)
 ### [Manage device restarts after updates](waas-restart.md)
 ## [Manage corporate devices](manage-corporate-devices.md)
+### [Manage Windows 10 in your organization - transitioning to modern management](manage-windows-10-in-your-organization-modern-management.md)
 ### [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md)
 ### [Manage Windows 10 and Windows Store tips, tricks, and suggestions](manage-tips-and-suggestions.md)
 ### [New policies for Windows 10](new-policies-for-windows-10.md)
