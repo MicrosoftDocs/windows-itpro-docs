@@ -267,15 +267,18 @@ w10-enterprise.iso
     >You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media.
 
 2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
-3. Select checkboxes next to the **C** and **system** volumes and specify a location to save the resulting VHD or VHDX file. If your Hyper-V host is running Windows Server 2008 R2 you must choose VHD, otherwise choose VHDX.  See the following example:
+3. Select the checkboxes next to the **C** and the **system reserved** (BIOS/MBR) or **recovery** (UEFI/GPT) volumes. The system volumes are not typically assigned a drive letter, but will be displayed in the Disk2VHD tool with a volume label.
+4. Specify a location to save the resulting VHD or VHDX file (F:\VHD\w7.vhdx in the following example) and click **Create**. If your Hyper-V host is running Windows Server 2008 R2 you must choose VHD, otherwise choose VHDX.  See the following example:
 
     ![disk2vhd](images/disk2vhd.png)
 
-4. Click **Create** to start creating a VHDX file.
+    >Important: You must include the system reserved or recovery volume in order to create a bootable VHD. If this volume is not displayed in the disk2vhd tool, see [Appendix C: Disk2VHD](#appendix-c-disk2vhd). 
+
+5. Click **Create** to start creating a VHDX file.
 
     >Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
 
-5. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (w7.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
+6. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (w7.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
 
     ```
     C:\vhd>dir /B
@@ -725,6 +728,19 @@ Converting all Hyper-V module commands used in this guide to Hyper-V WMI is beyo
 
 For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
 
+## Appendix C: Disk2VHD
+
+If the EFI System Partition is not visible in the Disk2VHD tool, use the following procedure to temporarily make it visible and include it in the conversion.
+
+1. Open an elevated command prompt and type the following command. The command assumes that S: is an available drive letter. If it is not available, replace the letter with an available one (ex: mountvol T: /S):
+
+    ```
+    mountvol S: /S
+    ```
+
+2. Close and restart the Disk2VHD application.
+3. Clear the **Use Volume Shadow Copy** checkbox.
+4. Select the C: and S: drives to convert, and then click **Create**.
 
 ## Related Topics
 
