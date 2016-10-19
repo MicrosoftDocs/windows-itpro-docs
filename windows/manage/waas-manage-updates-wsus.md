@@ -349,3 +349,4 @@ or [Manage Windows 10 updates using System Center Configuration Manager](waas-ma
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
 - [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
 - [Manage Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)
+- [Manage device restarts after updates](waas-restart.md)
