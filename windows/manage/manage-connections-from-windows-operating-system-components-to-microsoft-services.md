@@ -11,9 +11,7 @@ author: brianlic-msft
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span> 
-
+ 
 **Applies to**
 
 -   Windows 10
@@ -94,7 +92,7 @@ See the following table for a summary of the management settings for Windows 10 
 | &nbsp;&nbsp;&nbsp;&nbsp;[16.17 Motion](#bkmk-priv-motion) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
 | [17. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 | [18. Sync your settings](#bkmk-syncsettings) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
-| [19. Teredo](#bkmk-teredo) | | | | | ![Check mark](images/checkmark.png) |
+| [19. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | | | ![Check mark](images/checkmark.png) |
 | [20. Wi-Fi Sense](#bkmk-wifisense) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [21. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [22. Windows Media Player](#bkmk-wmp) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
@@ -123,7 +121,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [16. Settings > Privacy](#bkmk-settingssection) | | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[16.1 General](#bkmk-priv-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [17. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | | |
-| [19. Teredo](#bkmk-teredo) | | | | ![Check mark](images/checkmark.png) |
+| [19. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
 | [21. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [22. Windows Media Player](#bkmk-wmp) | | | | ![Check mark](images/checkmark.png) |
 | [24. Windows Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | | |
@@ -140,7 +138,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [5. Font streaming](#font-streaming) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [12. Network Connection Status Indicator](#bkmk-ncsi) | ![Check mark](images/checkmark.png) | | |
 | [17. Software Protection Platform](#bkmk-spp) | ![Check mark](images/checkmark.png) | | |
-| [19. Teredo](#bkmk-teredo) | | | ![Check mark](images/checkmark.png) |
+| [19. Teredo](#bkmk-teredo) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
 | [21. Windows Defender](#bkmk-defender) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 
@@ -1117,7 +1115,14 @@ To turn off Messaging cloud sync:
 
 ### <a href="" id="bkmk-teredo"></a>19. Teredo
 
-You can disable Teredo by using the netsh.exe command. For more info on Teredo, see [Internet Protocol Version 6, Teredo, and Related Technologies](http://technet.microsoft.com/library/cc722030.aspx).
+You can disable Teredo by using Group Policy or by using the netsh.exe command. For more info on Teredo, see [Internet Protocol Version 6, Teredo, and Related Technologies](http://technet.microsoft.com/library/cc722030.aspx).
+
+>[!NOTE]  
+>If you disable Teredo, some XBOX gaming features and Windows Update Delivery Optimization will not work.
+
+-   Enable the Group Policy: **Computer Configuration** > **Administrative Templates** > **Network** &gt; **TCPIP Settings** &gt; **IPv6 Transition Technologies** &gt; **Set Teredo State** and set it to **Disabled State**.
+
+    -or-
 
 -   From an elevated command prompt, run **netsh interface teredo set state disabled**
 

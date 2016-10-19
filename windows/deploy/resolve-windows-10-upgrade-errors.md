@@ -18,6 +18,8 @@ localizationpriority: high
 
 This topic provides a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade.
 
+If you are not an IT administrator, you can try the [quick fixes](#quick-fixes) listed in this topic. If the quick fixes do not resolve your issue, see [Get help with Windows 10 upgrade and installation errors](https://support.microsoft.com/en-us/help/10587/windows-10-get-help-with-upgrade-installation-errors) for more information.
+
 ## In this topic
 
 The following sections and procedures are provided in this guide:
@@ -63,6 +65,7 @@ WIM = Windows image (Microsoft)
 The following steps can resolve many Windows upgrade problems.
 
 <OL>
+<LI>Remove nonessential external hardware, such as docks and USB devices.</LI> 
 <LI>Check all hard drives for errors and attempt repairs. To automatically repair hard drives, open an elevated command prompt, switch to the drive you wish to repair, and type the following command. You will be required to reboot the computer if the hard drive being repaired is also the system drive.
 <UL>
 <LI>chkdsk /F</LI>
@@ -81,12 +84,10 @@ The following steps can resolve many Windows upgrade problems.
   <LI>Verify compatibility information and re-install antivirus applications after the upgrade.</LI></LI>
   </UL>
 <LI>Uninstall all nonessential software.</LI>
-<LI>Remove nonessential external hardware, such as docks and USB devices.</LI> 
 <LI>Update firmware and drivers.</LI>
 <LI>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.</LI>
 <LI>Verify at least 16 GB of free space is available to upgrade a 32-bit OS, or 20 GB for a 64-bit OS.
 </OL>
-
 
 
 ## Upgrade error codes
@@ -737,6 +738,12 @@ This error has more than one possible cause. Attempt [quick fixes](#quick-fixes)
 </tr>
 
 <tr>
+<td>0xC1800118</td>
+<td>WSUS has downloaded content that it cannot use due to a missing decryption key.</td>
+<td>See [Steps to resolve error 0xC1800118](https://blogs.technet.microsoft.com/wsus/2016/09/21/resolving-error-0xc1800118/) for information.</td>
+</tr>
+
+<tr>
 <td>0xC1900200</td>
 <td>Setup.exe has detected that the machine does not meet the minimum system requirements.</td>
 <td>Ensure the system you are trying to upgrade meets the minimum system requirements. <P>See [Windows 10 specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications)  for information.</td>
@@ -765,7 +772,7 @@ This error has more than one possible cause. Attempt [quick fixes](#quick-fixes)
 <tr>
 <td>0x80246007</td>
 <td>The update was not downloaded successfully.</td>
-<td>Attempt other methods of upgrading the operatign system.<BR>
+<td>Attempt other methods of upgrading the operating system.<BR>
 Download and run the media creation tool. See [Download windows 10](https://www.microsoft.com/en-us/software-download/windows10). 
 <BR>Attempt to upgrade using .ISO or USB.<BR>
 **Note**: Windows 10 Enterprise isn’t available in the media creation tool. For more information, go to the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx).

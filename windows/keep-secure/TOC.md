@@ -34,6 +34,7 @@
 ### [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
 #### [Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](mandatory-settings-for-wip.md)
 #### [Enlightened apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md)
+#### [Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](app-behavior-with-wip.md)
 #### [Testing scenarios for Windows Information Protection (WIP)](testing-scenarios-for-wip.md)
 #### [Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md)
 ## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-instrusion-detection.md)

@@ -81,9 +81,9 @@ An added work account provides the same SSO experience in browser apps like Offi
 
     An MDM service is required for managing Azure AD-joined devices. You can use MDM to push settings to devices, as well as application and certificates used by VPN, Wi-Fi, etc. Azure AD Premium or [Enterprise Mobility Suite (EMS)](https://go.microsoft.com/fwlink/p/?LinkID=723984) licenses are required to set up your Azure AD-joined devices to automatically enroll in MDM. [Learn more about setting up your Azure AD tenant for MDM auto-enrollment.](https://go.microsoft.com/fwlink/p/?LinkID=691615)
 
--   **Microsoft Passport**
+-   **Windows Hello**
 
-    Creating a Microsoft Passport (PIN) is required on Windows 10 Mobile by default and cannot be disabled. [You can control Microsoft Passport policies](https://go.microsoft.com/fwlink/p/?LinkId=735079) using controls in MDM, such as Intune. Because the device is joined using organizational credentials, the device must have a PIN to unlock the device. Windows Hello (biometrics such as fingerprint or iris) can be used for Passport authentication. Creating a Microsoft Passport requires the user to perform an multi-factor authentication since the PIN is a strong authentication credential. [Learn more about Microsoft Passport for Azure AD.](https://go.microsoft.com/fwlink/p/?LinkId=735004)
+    Creating a Windows Hello (PIN) is required on Windows 10 Mobile by default and cannot be disabled. You can control Windows Hello policiesusing controls in MDM, such as Intune. Because the device is joined using organizational credentials, the device must have a PIN to unlock the device. Biometrics such as fingerprint or iris can be used for authentication. Creating a Windows Hello requires the user to perform an multi-factor authentication since the PIN is a strong authentication credential. [Learn more about Windows Hello for Azure AD.](https://go.microsoft.com/fwlink/p/?LinkId=735004)
 
 -   **Conditional access**
 
