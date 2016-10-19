@@ -404,3 +404,4 @@ or Manage Windows 10 updates using System Center Configuration Manager (this top
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
 - [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
 - [Manage Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
+- [Manage device restarts after updates](waas-restart.md)
