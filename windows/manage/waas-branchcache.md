@@ -64,3 +64,4 @@ In addition to these steps, there is one requirement for WSUS to be able to use 
 - [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
 - [Manage Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
 - [Manage Windows 10 updates using Configuration Manager](waas-manage-updates-configuration-manager.md)
+- [Manage device restarts after updates](waas-restart.md)
