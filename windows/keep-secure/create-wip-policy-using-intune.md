@@ -457,11 +457,11 @@ After you've decided where your protected apps can access enterprise data on you
 
 	    - **No, or not configured (recommended).** Stops Windows Search from searching and indexing encrypted corporate data and Store apps.
 
-    - **Show the Windows Information Protection icon overlay.** Determines whether the Windows Information Protection icon overlay appears on corporate files or in the **Start** menu, on top of the tiles for your unenlightened protected apps. The options are:
+    - **Show the Windows Information Protection icon overlay.** Determines whether the Windows Information Protection icon overlay appears on corporate files in the Save As and File Explore views. The options are:
 
-    	- **Yes (recommended).** Allows the Windows Information Protection icon overlay to appear for files or on top of the tiles for your unenlightened protected apps in the **Start** menu.
+    	- **Yes (recommended).** Allows the Windows Information Protection icon overlay to appear on corporate files in the Save As and File Explore views.
 
-	    - **No, or not configured.** Stops the Windows Information Protection icon overlay from appearing for files or on top of the tiles for your unenlightened protected apps in the **Start** menu.
+	    - **No, or not configured.** Stops the Windows Information Protection icon overlay from appearing on corporate files in the Save As and File Explore views.
 
 2. Click **Save Policy**.
 
