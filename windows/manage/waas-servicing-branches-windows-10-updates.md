@@ -25,7 +25,7 @@ Current Branch is the default servicing branch for all Windows 10 devices except
 | --- | --- | --- | --- | --- |
 | Home | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 | Pro | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Enterprise | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png)) | ![yes](images/checkmark.png) |
+| Enterprise | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 | Enterprise LTSB | ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) |
 | Pro Education | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 | Education | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
