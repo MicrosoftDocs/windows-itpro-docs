@@ -2,28 +2,28 @@
 title: Get started with Upgrade Analytics (Windows 10)
 description: Explains how to get started with Upgrade Analytics.
 ms.prod: w10
-author: MaggiePucciEvans
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: deploy
+author: greg-lindsay
 ---
 
 # Get started with Upgrade Analytics
 
-Use Upgrade Analytics to plan and manage your upgrade project end to end. After you’ve established communications between user computers and Microsoft, Upgrade Analytics collects computer, application, and driver data for analysis. We use this data to identify compatibility issues that can block your upgrade and suggest fixes that are known to Microsoft.
+you can use Upgrade Analytics to plan and manage your upgrade project end to end. After you’ve established communications between user computers and Microsoft, Upgrade Analytics collects computer, application, and driver data for analysis. This data is used to identify compatibility issues that can block your upgrade and to suggest fixes that are known to Microsoft.
 
-For system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what telemetry data Microsoft collects and how that data is used and protected by Microsoft, see:
+To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what telemetry data Microsoft collects and how that data is used and protected by Microsoft, see the following topics:
 
 - [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization)
-
 - [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-
 - [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
 
 
-This topic explains how to obtain and set up Upgrade Analytics components. If you haven’t done so already, see [Upgrade Analytics requirements](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-requirements) for information about requirements for using Upgrade Analytics.
+This topic explains how to obtain and set up Upgrade Analytics components. If you haven’t done so already, see [Upgrade Analytics requirements](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-requirements) for information about requirements for using Upgrade Analytics. Also, check out the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/UpgradeAnalytics) for new announcements and helpful tips for using Upgrade Analytics.  
 
 To configure Upgrade Analytics, you’ll need to:
 
 -   Add the Upgrade Analytics solution to a workspace in the Operations Management Suite portal
-
 -   Establish communications and enable data sharing between your organization and Microsoft
 
 Each task is explained in detail in the following sections.
@@ -109,9 +109,7 @@ IMPORTANT: Restart user computers after you install the compatibility update KBs
 To ensure that user computers are receiving the most up to date data from Microsoft, we recommend that you establish the following data sharing and analysis processes.
 
 -   Enable automatic updates for the compatibility update and related KBs. These KBs are updated frequently to include the latest application and driver issue information as we discover it during testing.
-
 -   Schedule the Upgrade Analytics deployment script to automatically run so that you don’t have to manually initiate an inventory scan each time the compatibility update KBs are updated. Computers are re-scanned only when the compatibility KBs are updated, so if your inventory changes significantly between KB releases you won’t see the changes in Upgrade Analytics until you run the script again.
-
 -   Schedule monthly user computer scans to view monthly active computer and usage information.
 
 ## Run the Upgrade Analytics deployment script
@@ -169,6 +167,40 @@ To run the Upgrade Analytics deployment script:
 5.  Notify users if they need to restart their computers. By default, this is set to off.
 
 6.  After you finish editing the parameters in RunConfig.bat, run the script as an administrator.
+
+The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered. 
+
+<div style='font-size:10.0pt'>
+
+<TABLE border=1 cellspacing=0 cellpadding=0>
+<TR><TH BGCOLOR="#a0e4fa">Exit code<TH BGCOLOR="#a0e4fa">Meaning
+<TR><TD>0<TD>Success
+<TR><TD>1<TD>Unexpected error occurred while executing the script
+<TR><TD>2<TD>Error when logging to console. $logMode = 0.
+<TR><TD>3<TD>Error when logging to console and file. $logMode = 1.
+<TR><TD>4<TD>Error when logging to file. $logMode = 2.
+<TR><TD>5<TD>Error when logging to console and file. $logMode = unknown.
+<TR><TD>6<TD>The commercialID parameter is set to unknown. Modify the script.
+<TR><TD>7<TD>Function -CheckCommercialId: Unexpected failure.
+<TR><TD>8<TD>Failure to create registry key path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection.
+<TR><TD>9<TD>Error when writing CommercialId to registry.
+<TR><TD>10<TD>Error when writing CommercialDataOptIn to registry.
+<TR><TD>11<TD>Function -SetupCommercialId: Unexpected failure.
+<TR><TD>12<TD>Can’t connect to Microsoft – Vortex. Check your network/proxy settings.
+<TR><TD>13<TD>Can’t connect to Microsoft – setting. Check your network/proxy settings.
+<TR><TD>14<TD>Can’t connect to Microsoft – compatexchange. Check your network/proxy settings.
+<TR><TD>15<TD>Error connecting to Microsoft. Check your network/proxy settings.
+<TR><TD>16<TD>Machine requires reboot.
+<TR><TD>17<TD>Function -CheckRebootRequired: Unexpected failure.
+<TR><TD>18<TD>Outdated compatibility update KB package. Update via Windows Update/WSUS.
+<TR><TD>19<TD>This machine doesn’t have the proper KBs installed. Make sure you have recent compatibility update KB downloaded.
+<TR><TD>20<TD>Error writing RequestAllAppraiserVersions registry key.
+<TR><TD>21<TD>Function – SetRequestAllAppraiserVersions: Unexpected failure.
+<TR><TD>22<TD>Error when running inventory scan.
+<TR><TD>23<TD>Error finding system variable %WINDIR%.
+</TABLE>
+
+</div>
 
 ## Seeing data from computers in Upgrade Analytics
 
