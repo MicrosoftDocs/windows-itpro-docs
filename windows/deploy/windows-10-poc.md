@@ -28,7 +28,7 @@ The following topics and procedures are provided in this guide. An estimate of t
 <TR><TH>Topic<TH>Description<TH>Time
 <TR><TD>[Terminology in this guide](#terminology-in-this-guide)<TD>Terms used in this guide.<TD>
 <TR><TD>[Hardware and software requirements](#hardware-and-software-requirements)<TD>Prerequisites to complete this guide.<TD>
-<TR><TD>[Lab setup](#lab-setup)<TD>A description and diagram of the PoC environment that is configured.<TD>5 minutes
+<TR><TD>[Lab setup](#lab-setup)<TD>A description and diagram of the PoC environment.<TD>
 <TR><TD>[Configure the PoC environment](#configure-the-poc-environment)<TD>Parent topic for procedures.<TD>
 <TR><TD>[Verify support and install Hyper-V](#verify-support-and-install-hyper-v)<TD>Verify that installation of Hyper-V is supported, and install the Hyper-V server role.<TD>10 minutes
 <TR><TD>[Download VHD and ISO files](#download-vhd-and-iso-files)<TD>Download evaluation versions of Windows Server 2012 R2 and Windows 10 and prepare these files to be used on the Hyper-V host.<TD>30 minutes
@@ -38,6 +38,7 @@ The following topics and procedures are provided in this guide. An estimate of t
 <TR><TD>[Configure VHDs](#configure-vhds)<TD>Start virtual machines and configure all services and settings.<TD>60 minutes
 <TR><TD>[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)<TD>Verify and troubleshoot network connectivity and services in the PoC environment.<TD>30 minutes
 <TR><TD>[Appendix B: Configuring Hyper-V on Windows Server 2008 R2](#appendix-b-configuring-hyper-v-on-windows-server-2008-r2)<TD>Information about using this guide with a Hyper-V host running Windows Server 2008 R2.<TD>
+<TR><TD>[Appendix C: Disk2VHD](#appendix-c-disk2vhd)<TD>Information about the Disk2VHD application.<TD>
 </TABLE>
 
 </div>
@@ -267,12 +268,11 @@ w10-enterprise.iso
     >You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media.
 
 2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
-3. Select the checkboxes next to the **C** and the **system reserved** (BIOS/MBR) or **recovery** (UEFI/GPT) volumes. The system volumes are not typically assigned a drive letter, but will be displayed in the Disk2VHD tool with a volume label.
+3. Select the checkboxes next to the **C:\** and the **system reserved** (BIOS/MBR) volumes. The system volume is not assigned a drive letter, but will be displayed in the Disk2VHD tool with a volume label similar to **\\?\Volume{** - see the example below. **Important**: You must include the system volume in order to create a bootable VHD. If this volume is not displayed in the disk2vhd tool, see [Appendix C: Disk2VHD](#appendix-c-disk2vhd). 
 4. Specify a location to save the resulting VHD or VHDX file (F:\VHD\w7.vhdx in the following example) and click **Create**. If your Hyper-V host is running Windows Server 2008 R2 you must choose VHD, otherwise choose VHDX.  See the following example:
 
     ![disk2vhd](images/disk2vhd.png)
 
-    >Important: You must include the system reserved or recovery volume in order to create a bootable VHD. If this volume is not displayed in the disk2vhd tool, see [Appendix C: Disk2VHD](#appendix-c-disk2vhd). 
 
 5. Click **Create** to start creating a VHDX file.
 
@@ -470,7 +470,7 @@ Instructions to "type" commands provided in this guide can be typed, but in most
 18. When the new network adapter driver has completed installation, you will receive an alert to set a network location for the contoso.com network. Select **Work network** and then click **Close**. When you receive an alert that a restart is required, click **Restart Later**.
 19. Open an elevated Windows PowerShell prompt on PC1 and verify that the client VM has received a DHCP lease and can communicate with the consoto.com domain controller.
 
-    To open Windows PowerShell on Windows 7, click **Start**, and search for "**power**."
+    To open Windows PowerShell on Windows 7, click **Start**, and search for "**power**." Right-click **Windows PowerShell** and then click **Pin to Taskbar** so that it is simpler to use Windows Powershell during this lab. Click **Windows PowerShell** on the taskbar, and then type **ipconfig** at the prompt to see the client's current IP address. Also type **ping dc1.contoso.com** and **nltest /dsgetdc:contoso.com** to verify that it can reach the domain controller. See the following examples of a successful network connection:
     
     ```
     ipconfig
@@ -504,7 +504,7 @@ Instructions to "type" commands provided in this guide can be typed, but in most
     ```
 >If PC1 is running Windows 7, enhanced session mode is not available, which means that you cannot copy and paste commands from the Hyper-V host to a Windows PowerShell prompt on PC1. However, it is possible to use integration services to copy a file from the Hyper-V host to a VM. The next procedure demonstrates this. If the Copy-VMFile command fails, then type the commands below at an elevated Windows PowerShell prompt on PC1 instead of saving them to a script to run remotely. If PC1 is running Windows 8 or a later operating system, you can use enhanced session mode to copy and paste these commands instead of typing them.
 
-20. Open an elevated Windows PowerShell ISE window on the Hyper-V host (right-click Windows PowerShell and then click Run ISE as Administrator) and type the following commands in the (upper) script editor pane: 
+20. Minimize the PC1 window and switch to the Hyper-V host computer. Open an elevated Windows PowerShell ISE window on the Hyper-V host (right-click Windows PowerShell and then click Run ISE as Administrator) and type the following commands in the (upper) script editor pane: 
 
     ```
     (Get-WmiObject Win32_ComputerSystem).UnjoinDomainOrWorkgroup($null,$null,0)
@@ -515,6 +515,8 @@ Instructions to "type" commands provided in this guide can be typed, but in most
     Restart-Computer
     ```
 
+    >If you do not see the script pane, click **View** and then click **Show Script Pane Top**.
+    
     See the following example:
 
     ![ISE](images/ISE.png)
@@ -525,7 +527,8 @@ Instructions to "type" commands provided in this guide can be typed, but in most
     ```
     Copy-VMFile "PC1" –SourcePath "C:\VHD\pc1.ps1"  –DestinationPath "C:\pc1.ps1" –CreateFullPath –FileSource Host
     ```
-    >In order for this command to work properly, PC1 must be running the vmicguestinterface (Hyper-V Guest Service Interface) service.
+    >In order for this command to work properly, PC1 must be running the vmicguestinterface (Hyper-V Guest Service Interface) service. If this service is not installed, you can try updating integration services on the VM. This can be done by mounting the Hyper-V Integration Services Setup (vmguest.iso), which is located in C:\Windows\System32 on Windows Server operating systems that are running the Hyper-V role service. Otherwise, just create the file c:\pc1.ps1 on the VM and type the commands into this file manually. Be sure to save the file as a Windows PowerShell script file with the .ps1 extension and not as a text (.txt) file.
+
 23. On PC1, type the following commands at an elevated Windows PowerShell prompt:
 
     ```
@@ -534,7 +537,7 @@ Instructions to "type" commands provided in this guide can be typed, but in most
 
     >PC1 is removed from its domain in this step while not connected to the corporate network so as to ensure the computer object in the corporate domain is unaffected. We have not also renamed PC1 to "PC1" in system properties so that it maintains some of its mirrored identity. However, if desired you can also rename the computer.
 
-24. After PC1 restarts, sign in to the contoso.com domain with the (user1) account you created in step 11 of this section.
+24. The script will take a minute or two to run. After PC1 restarts, sign in to the contoso.com domain using the **Switch User** option, with the **user1** account you created in step 11 of this section.
     >The settings that will be used to migrate user data specifically select only accounts that belong to the CONTOSO domain. If you wish to test migration of user data and settings with an account other than the user1 account, you must copy this account's profile to the user1 profile.
 25. Minimize the PC1 window but do not turn it off while the second Windows Server 2012 R2 VM (SRV1) is configured. This verifies that the Hyper-V host has enough resources to run all VMs simultaneously. Next, SRV1 will be started, joined to the contoso.com domain, and configured with RRAS and DNS services. 
 26. On the Hyper-V host computer, at an elevated Windows PowerShell prompt, type the following commands:
@@ -730,7 +733,7 @@ For more information about the Hyper-V Manager interface in Windows Server 2008 
 
 ## Appendix C: Disk2VHD
 
-If the EFI System Partition is not visible in the Disk2VHD tool, use the following procedure to temporarily make it visible and include it in the conversion.
+If the system partition is not visible in the Disk2VHD tool, this usually means that the client is using EFI firmware and has a GPT partition. Unfortunately, the GPT partition is will not boot as a VM when converted by the Disk2VHD tool. To resolve this issue, select a client that is using MBR or complete the following procedure to move the Windows image from GPT to MBR.
 
 1. Open an elevated command prompt and type the following command. The command assumes that S: is an available drive letter. If it is not available, replace the letter with an available one (ex: mountvol T: /S):
 
@@ -741,6 +744,24 @@ If the EFI System Partition is not visible in the Disk2VHD tool, use the followi
 2. Close and restart the Disk2VHD application.
 3. Clear the **Use Volume Shadow Copy** checkbox.
 4. Select the C: and S: drives to convert, and then click **Create**.
+
+mount-vhd -path D:\vhd\w7.VHDX
+
+dism /Capture-Image /ImageFile:d:\w7.wim /CaptureDir:H:\ /Name:w7 <--this takes a long time
+
+ mount-vhd -path 'D:\vhd\w7-gen1\Virtual Hard Disks\w7-gen1.vhdx'
+
+ New simple volume, created drive G: ----
+
+dism /Apply-Image /ImageFile:D:\w7.wim /Index:1 /ApplyDir:G:\
+
+boot to install disk and repair this
+
+the idea here is to create a MBR VHD, then restore the wim to that.
+
+--note another possible option is to create a backup, choose USB as the destination, then create VM, boot from DVD, and restore from backup usign tools.
+
+--also try https://community.spiceworks.com/topic/435119-can-i-virtualize-a-uefi-server-into-a-hyper-v-virtual-machine <-- does not work
 
 ## Related Topics
 
