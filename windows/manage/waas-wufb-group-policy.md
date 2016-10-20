@@ -33,12 +33,13 @@ In this example, you use two security groups to manage your updates: **Ring 4 Br
 - The **Ring 5 Broad business users #2** group consists of the first line-of-business (LOB) users, who consume quality updates after 1 week and feature updates 1 month after the CBB release.
 
 >[!NOTE]
->Although the [sample deployment rings](waas-deployment-rings-windows-10-updates.md) specify a feature update deferral of 2 weeks for Ring 5, deferrals in Windows 10, version 1511 are in increments of months only. 
+>Although the [sample deployment rings](waas-deployment-rings-windows-10-updates.md) specify a feature update deferral of 2 weeks for Ring 5, deferrals in Windows 10, version 1511 are in increments of months only.
+> 
 >Windows 10 version 1511 does not support deferment of CB builds of Windows 10, so you can establish only one CB deployment ring. In version 1607 and later, CB builds can be delayed, making it possible to have multiple CB deployment rings.
 
  Complete the following steps on a PC running the Remote Server Administration Tools or on a domain controller. 
  
- ### Configure the Ring 3 Broad IT deployment ring for CBB with no deferral
+ ### Configure the Ring 4 Broad business users deployment ring for CBB with no deferral
 
 1. Open GPMC (gpmc.msc).
 
@@ -112,7 +113,7 @@ In this example, you use two security groups to manage your updates: **Ring 4 Br
     </tr>
     </table> 
 
-    Simply enabling the **Defer Upgrades and Updates** policy sets the receiving client to the CBB servicing branch, which is what you want for your first deployment ring, **Ring 3 Broad IT**.
+    Simply enabling the **Defer Upgrades and Updates** policy sets the receiving client to the CBB servicing branch, which is what you want for your first deployment ring, **Ring 4 Broad business users**.
     
 8. Enable the **Defer Updates and Upgrades** setting, and then click **OK**.
 
