@@ -261,14 +261,21 @@ w10-enterprise.iso
 
 **Important**: Before you convert a PC to VHD, verify that you have access to a local administrator account on the computer. Alternatively you can use a domain account with administrative rights if these credentials are cached on the computer and your domain policy allows the use of cached credentials for login. After converting the computer to a VM, you must be able to sign in on this VM with local administrator privileges, while disconnected from the corporate network.
 
->For purposes of the test lab, use a PC that is assigned a drive letter of C. Systems with non-standard configurations can also be upgraded using PC refresh and replace scenarios, but these systems require more advanced deployment task sequences than those used in this lab. If the computer has multiple hard drives, then only choose the C drive for conversion.
+####Client computer requirements for this lab:
+
+1. You must use a PC that is assigned a system/boot drive letter of **C:**. Computers with other configurations can also be upgraded using PC refresh and replace scenarios, but these systems require more advanced deployment task sequences than those used in this lab. If the computer has multiple hard drives, then only choose the **C:** drive for conversion.
+2. If the PC is running Windows 7, then it must use the Master Boot Record (MBR) method for storing partition information, not the GUID Partition Table (GPT) method. This is because a generation 2 VM is required to support GPT, and Windows 7 is not supported for generation 2 VMs. Alternatively, you can convert the VHD to use MBR, but this procedure is somewhat complex. If you must create a bootable generation 1 VHD from a physical host that uses GPT, see [Appendix C: Convert GPT to MBR](#appendix-c-convert-gpt-to-mbr)
+    - To determine the storage method on a computer running Windows 7, open a command prompt and type **DISKPART**, then type **list disk**. Disks that use GPT will have an asterisk under **Gpt** in the command output.  If the computer is running Windows 8 or a later OS, you can also type **Get-Disk** at an elevated Windows PowerShell prompt to identify the partition style. 
+3. If the PC is running Windows 8 or later and uses the GPT method for storing partition information, then you must create a generation 2 VM to mirror the PC in Hyper-V.
+
+####To convert a PC to VHD:
 
 1. Download the [Disk2vhd utility](https://technet.microsoft.com/en-us/library/ee656415.aspx), extract the .zip file and copy **disk2vhd.exe** to a flash drive or other location that is accessible from the computer you wish to convert.
 
-    >You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media.
+    >You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media such as a USB drive.
 
 2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
-3. Select the checkboxes next to the **C:\** and the **system reserved** (BIOS/MBR) volumes. The system volume is not assigned a drive letter, but will be displayed in the Disk2VHD tool with a volume label similar to **\\?\Volume{** - see the example below. **Important**: You must include the system volume in order to create a bootable VHD. If this volume is not displayed in the disk2vhd tool, see [Appendix C: Disk2VHD](#appendix-c-disk2vhd). 
+3. Select the checkboxes next to the **C:\** and the **system reserved** (BIOS/MBR) volumes. The system volume is not assigned a drive letter, but will be displayed in the Disk2VHD tool with a volume label similar to **\\?\Volume{** - see the example below. **Important**: You must include the system volume in order to create a bootable VHD. If this volume is not displayed in the disk2vhd tool, then the computer is using the GPT partition method. In this case, see the [requirements](#client-computer-requirements-for-this-lab) in this section for more information. 
 4. Specify a location to save the resulting VHD or VHDX file (F:\VHD\w7.vhdx in the following example) and click **Create**. If your Hyper-V host is running Windows Server 2008 R2 you must choose VHD, otherwise choose VHDX.  See the following example:
 
     ![disk2vhd](images/disk2vhd.png)
@@ -731,11 +738,11 @@ Converting all Hyper-V module commands used in this guide to Hyper-V WMI is beyo
 
 For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
 
-## Appendix C: Disk2VHD
+## Appendix C: Convert GPT to MBR
 
-If the system partition is not visible in the Disk2VHD tool, this usually means that the client is using EFI firmware and has a GPT partition. Unfortunately, the GPT partition is will not boot as a VM when converted by the Disk2VHD tool. To resolve this issue, select a client that is using MBR or complete the following procedure to move the Windows image from GPT to MBR.
+>Conversion of a disk directly from GPT to MBR without data loss is not possible without the use of external, specialized applications and tools.  However, it is possible to create an image of the GPT disk and then restore this image to an MBR disk using standard tools. At a high level, this can be done by obtaining an image of the source drive, creating a blank MBR-formatted disk, applying the source drive image to the MBR disk, and then configuring the MBR disk to boot the applied image. This procedure is described below:
 
-1. Open an elevated command prompt and type the following command. The command assumes that S: is an available drive letter. If it is not available, replace the letter with an available one (ex: mountvol T: /S):
+1. Open an elevated command prompt and type the following command:
 
     ```
     mountvol S: /S
