@@ -16,6 +16,8 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 
 | New or changed topic | Description |
 | --- | --- |
+|[Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) and [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |Updated the text about the icon overlay option. This icon now only appears on corporate files in the Save As and File Explore views. |
+|[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |Added content about using ActiveX controls.|
 |[Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](app-behavior-with-wip.md) |New |
 |[VPN technical guide](vpn-guide.md) | Multiple new topics, replacing previous **VPN profile options** topic |
 

@@ -101,7 +101,7 @@ IMPORTANT: Restart user computers after you install the compatibility update KBs
 
 | **Site discovery** | **KB** |
 |----------------------|-----------------------------------------------------------------------------|
-| [Review site discovery](upgrade-analytics-review-site-discovery.md)         | Site discovery requires the [July 2016 security update for Internet Explorer](https://support.microsoft.com/en-us/kb/3170106) (KB3170106) or later.  |
+| [Review site discovery](upgrade-analytics-review-site-discovery.md)         | Install the latest [Windows Monthly Rollup](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup). This functionality has been included in Internet Explorer 11 starting with the July 2016 Cumulative Update.  |
 
 
 ### Automate data collection
