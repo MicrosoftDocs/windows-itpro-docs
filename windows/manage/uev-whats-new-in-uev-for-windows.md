@@ -78,6 +78,8 @@ While earlier versions of UE-V roamed taskbar settings between Windows 10 device
 
 In addition, UE-for Windows does not synchronize settings between the Microsoft Calculator in Windows 10 and the Microsoft Calculator in previous versions of Windows.
 
+The Windows modern apps settings (DontSyncWindows8AppSettings) group policy is enabled by default and therefore, modern apps will not roam unless this policy is changed to disabled.
+
 ## Support Added for Roaming Network Printers
 
 Users can now print to their saved network printers from any network device, including their default network printer.
