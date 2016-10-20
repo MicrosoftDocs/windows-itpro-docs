@@ -185,7 +185,7 @@ Regardless of the method by which you deploy Windows 10 feature updates to your 
 >[!IMPORTANT]
 >Windows Insider PCs are discovered the same way as CB or CBB devices. If you have Windows Insider PCs that you use Configuration Manager to manage, then you should create a collection of those PCs and exclude them from this collection. You can create the membership for the Windows Insider collection either manually or by using a query where the operating system build doesn’t equal any of the current CB or CBB build numbers. You would have to update each periodically to include new devices or new operating system builds.
 
-After you have updated the membership, this new collection will contain all managed clients on the CBB servicing branch. You will use this collection as a limiting collection for future CBB-based collections and the **Ring 4 Broad broad business users** collection. Complete the following steps to create the Ring 4 Broad business users device collection, which you’ll use as a CBB deployment ring for servicing plans or task sequences.
+After you have updated the membership, this new collection will contain all managed clients on the CBB servicing branch. You will use this collection as a limiting collection for future CBB-based collections and the **Ring 4 Broad broad business users** collection. Complete the following steps to create the **Ring 4 Broad business users** device collection, which you’ll use as a CBB deployment ring for servicing plans or task sequences.
 
 1.	In the Configuration Manager console, go to Assets and Compliance\Overview\Device Collections.
 
@@ -201,7 +201,7 @@ After you have updated the membership, this new collection will contain all mana
 
 7.	In the **Value** field, type all or part of the name of a device to add, and then click **Next**.
 
-8.	Select the computer that will be part of the **Ring 3 Broad IT** deployment ring, and then click **Next**.
+8.	Select the computer that will be part of the **Ring 4 Broad business users** deployment ring, and then click **Next**.
 
 9.	Click **Next**, and then click **Close**.
 
