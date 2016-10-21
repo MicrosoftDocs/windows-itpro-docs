@@ -36,6 +36,9 @@ For example, hardware that includes CPU virtualization extensions and SLAT will 
 
 You can deploy Device Guard in phases, and plan these phases in relation to the computer purchases you plan for your next hardware refresh.
 
+> [!WARNING]
+>  Virtualization-based protection of code integrity may be incompatible with some devices and applications. We strongly recommend testing this configuration in your lab before enabling virtualization-based protection of code integrity on production systems. Failure to do so may result in unexpected failures up to and including data loss or a blue screen error (also called a stop error).
+
 The following tables provide more information about the hardware, firmware, and software required for deployment of various Device Guard features. The tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, available in 2016, and announced as options for 2017.
 
 > **Notes**

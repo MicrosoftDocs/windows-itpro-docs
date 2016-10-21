@@ -25,7 +25,8 @@ Current Branch is the default servicing branch for all Windows 10 devices except
 | --- | --- | --- | --- | --- |
 | Home | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 | Pro | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Enterprise | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) |
+| Enterprise | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+| Enterprise LTSB | ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) |
 | Pro Education | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 | Education | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 | Mobile | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
@@ -124,5 +125,6 @@ or [Manage Windows 10 updates using System Center Configuration Manager](waas-ma
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
 - [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
+- [Manage device restarts after updates](waas-restart.md)
 
 

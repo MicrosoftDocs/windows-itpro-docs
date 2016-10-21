@@ -1,5 +1,6 @@
 # [Surface](index.md)
 ## [Deploy Surface devices](deploy.md)
+### [Long-Term Servicing Branch for Surface devices](ltsb-for-surface.md)
 ### [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md)
 ### [Upgrade Surface devices to Windows 10 with MDT](upgrade-surface-devices-to-windows-10-with-mdt.md)
 ### [Customize the OOBE for Surface deployments](customize-the-oobe-for-surface-deployments.md)
@@ -21,5 +22,6 @@
 ### [Unenroll Surface devices from SEMM](unenroll-surface-devices-from-semm.md)
 ## [Surface Diagnostic Toolkit](surface-diagnostic-toolkit.md)
 ## [Surface Data Eraser](microsoft-surface-data-eraser.md)
+## [Change history for Surface documentation](change-history-for-surface.md)
 
 
