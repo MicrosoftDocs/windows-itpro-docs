@@ -20,7 +20,7 @@ LTSB prevents Surface devices from receiving critical Windows 10 feature updates
 
 General-purpose Surface devices are intended to run CB or CBB to receive full servicing and firmware updates and forward compatibility with the introduction of new Surface features. With CB, feature updates are available as soon as Microsoft releases them. Customers in the CBB servicing model receive the same build of Windows 10 as those in CB, at a later date.
 
-Surface devices in specialized scenarios – such as PCs that control medical equipment, point-of-sale systems, and ATMs – may consider the use of LTSB. These special-purpose systems typically perform a single task and do not require feature updates as frequently as other devices in the organization. 
+Surface devices in specialized scenarios–such as PCs that control medical equipment, point-of-sale systems, and ATMs–may consider the use of LTSB. These special-purpose systems typically perform a single task and do not require feature updates as frequently as other devices in the organization. 
 
 
 
