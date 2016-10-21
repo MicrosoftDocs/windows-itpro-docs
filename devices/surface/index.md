@@ -29,6 +29,7 @@ For more information on planning for, deploying, and managing Surface devices in
 | [Surface Enterprise Management Mode](surface-enterprise-management-mode.md) | See how this feature of Surface devices with Surface UEFI allows you to secure and manage firmware settings within your organization. |
 | [Surface Diagnostic Toolkit](surface-diagnostic-toolkit.md) | Find out how you can use the Microsoft Surface Diagnostic Toolkit to test the hardware of your Surface device. |
 | [Surface Data Eraser](microsoft-surface-data-eraser.md) | Find out how the Microsoft Surface Data Eraser tool can help you securely wipe data from your Surface devices. |
+| [Change history for Surface documentation](change-history-for-surface.md) | This topic lists new and updated topics in the Surface documentation library. |
 
 
 

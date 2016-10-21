@@ -16,6 +16,7 @@ Get deployment guidance for your Surface devices including information about MDT
 
 | Topic | Description |
 | --- | --- |
+| [Long-Term Servicing Branch for Surface devices](ltsb-for-surface.md) | Explains that LTSB is not supported for general-purpose Surface devices and should be used for specialized devices only. | 
 | [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md) | Walk through the recommended process of how to deploy Windows 10 to your Surface devices with the Microsoft Deployment Toolkit.|
 | [Upgrade Surface devices to Windows 10 with MDT](upgrade-surface-devices-to-windows-10-with-mdt.md)| Find out how to perform a Windows 10 upgrade deployment to your Surface devices. |
 | [Customize the OOBE for Surface deployments](customize-the-oobe-for-surface-deployments.md)| Walk through the process of customizing the Surface out-of-box experience for end users in your organization.|
