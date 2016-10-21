@@ -10,7 +10,9 @@ author: greg-lindsay
 
 # Get started with Upgrade Analytics
 
-you can use Upgrade Analytics to plan and manage your upgrade project end to end. After you’ve established communications between user computers and Microsoft, Upgrade Analytics collects computer, application, and driver data for analysis. This data is used to identify compatibility issues that can block your upgrade and to suggest fixes that are known to Microsoft.
+This topic explains how to obtain and set up Upgrade Analytics components. If you haven’t done so already, see [Upgrade Analytics requirements](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-requirements) for information about requirements for using Upgrade Analytics. Also, check out the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/UpgradeAnalytics) for new announcements and helpful tips for using Upgrade Analytics.  
+
+You can use Upgrade Analytics to plan and manage your upgrade project end to end. After you’ve established communications between user computers and Microsoft, Upgrade Analytics collects computer, application, and driver data for analysis. This data is used to identify compatibility issues that can block your upgrade and to suggest fixes that are known to Microsoft.
 
 To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what telemetry data Microsoft collects and how that data is used and protected by Microsoft, see the following topics:
 
@@ -18,16 +20,12 @@ To enable system, application, and driver data to be shared with Microsoft, you 
 - [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 - [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
 
-
-This topic explains how to obtain and set up Upgrade Analytics components. If you haven’t done so already, see [Upgrade Analytics requirements](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-requirements) for information about requirements for using Upgrade Analytics. Also, check out the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/UpgradeAnalytics) for new announcements and helpful tips for using Upgrade Analytics.  
-
 To configure Upgrade Analytics, you’ll need to:
 
 -   Add the Upgrade Analytics solution to a workspace in the Operations Management Suite portal
 -   Establish communications and enable data sharing between your organization and Microsoft
 
 Each task is explained in detail in the following sections.
-
 
 ## Add Upgrade Analytics to Operations Management Suite
 
