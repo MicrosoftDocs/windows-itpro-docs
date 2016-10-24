@@ -20,6 +20,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |Added content about using ActiveX controls.|
 |[Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](app-behavior-with-wip.md) |New |
 |[VPN technical guide](vpn-guide.md) | Multiple new topics, replacing previous **VPN profile options** topic |
+| [Windows security baselines](windows-security-baselines.md) | Added Windows 10, version 1607 and Windows Server 2016 baseline |
 
 ## September 2016
 
