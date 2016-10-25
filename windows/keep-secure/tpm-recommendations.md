@@ -77,13 +77,13 @@ Windows uses any compatible TPM in the same way.  Microsoft does not take a posi
 
 ## Is there any importance for TPM for consumer?
 
-For end consumers, TPM is behind the scenes but is still very relevant.  TPM is used for Windows Hello, Windows Passport and in the future, will be a components of many other key security features in Windows. TPM secures the PIN for Passport, helps encrypt passwords, and builds on our overall Windows 10 experience story for security as a critical pillar.  Using Windows on a system with a TPM enables a deeper and broader level of security coverage.
+For end consumers, TPM is behind the scenes but is still very relevant.  TPM is used for Windows Hello, Windows Hello for Business and in the future, will be a components of many other key security features in Windows. TPM secures the PIN, helps encrypt passwords, and builds on our overall Windows 10 experience story for security as a critical pillar.  Using Windows on a system with a TPM enables a deeper and broader level of security coverage.
 
 ## TPM 2.0 Compliance for Windows 10
 
 ### Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 
-- As of July 28, 2016, all new device models, lines or series (or if you are updating the hardware configuration of a existing model, line or series with a major update, such as CPU, graphic cards) must implement and enable by default TPM 2.0 (details in section 3.7, https://msdn.microsoft.com/library/windows/hardware/dn915086(v=vs.85).aspx)
+- Since July 28, 2016, all new device models, lines or series (or if you are updating the hardware configuration of a existing model, line or series with a major update, such as CPU, graphic cards) must implement and enable by default TPM 2.0 (details in section 3.7, https://msdn.microsoft.com/library/windows/hardware/dn915086(v=vs.85).aspx)
  
 ### IoT Core
 
