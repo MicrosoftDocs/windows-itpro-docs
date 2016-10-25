@@ -382,7 +382,7 @@ There are no default locations included with WIP, you must add each of your netw
 2.	Type a name for your corporate network element into the **Name** box, and then pick what type of network element it is, from the **Network element** drop-down box. This can include any of the options in the following table.
 
     ![Add or edit corporate network definition box, Add your enterprise network locations](images/wip-sccm-add-network-domain.png)
-
+    
     <table>
         <tr>
             <th>Network location type</th>
@@ -401,13 +401,8 @@ There are no default locations included with WIP, you must add each of your netw
         </tr>
         <tr>
             <td>Enterprise Proxy Servers</td>
-<<<<<<< HEAD
-            <td>proxy.contoso.com:80;proxy2.contoso.com:137</td>
-            <td>Specify your externally-facing proxy server addresses, along with the port through which traffic accesses the Internet.<p>This list must not include any servers listed in the Enterprise Internal Proxy Servers list, because they’re used for WIP-protected traffic.<p>TThis setting is also required if there’s a chance you could end up behind a proxy server on another network. In this situation, if you don't have a proxy server pre-defined, you might find that enterprise resources are unavailable to your client device, such as when you’re visiting another company and not on the guest network. To make sure this doesn’t happen, the client device also needs to be able to reach the pre-defined proxy server through the VPN network.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>
-=======
             <td>proxy.contoso.com:80;proxy2.contoso.com:443</td>
             <td>Specify your externally-facing proxy server addresses, along with the port through which traffic is allowed and protected with WIP.<p>This list shouldn’t include any servers listed in the Enterprise Internal Proxy Servers list, which are used for WIP-protected traffic.<p>This setting is also required if you use a proxy in your network. If you don't have a proxy server, you might find that enterprise resources are unavailable when a client is behind a proxy, such as when you’re visiting another company and not on that company’s guest network.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>
->>>>>>> refs/remotes/origin/master
         </tr>
         <tr>
             <td>Enterprise Internal Proxy Servers</td>
@@ -443,7 +438,7 @@ There are no default locations included with WIP, you must add each of your netw
 
         - **Enterprise IP Ranges list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the IP ranges you specified in the network boundary definition as the complete list of IP ranges available on your network. If you clear this box, Windows will search for additional IP ranges on any domain-joined devices connected to your network.
 
-        - **Show the Windows Information Protection icon overlay on your allowed apps that are WIP-unaware on corporate file icons in the File Explorer.** Click this box if you want the Windows Information Protection icon overlay to appear on corporate files in the Save As and File Explore views.
+        - **Show the Windows Information Protection icon overlay on your allowed apps that are WIP-unaware on corporate files in the File Explorer.** Click this box if you want the Windows Information Protection icon overlay to appear on corporate files in the Save As and File Explore views of File Explorer.
 
 5.	In the required **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
     
