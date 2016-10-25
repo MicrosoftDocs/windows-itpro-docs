@@ -75,10 +75,9 @@ If a proxy or firewall is blocking all traffic by default and allowing only spec
 
 Primary Domain Controller | .Microsoft.com DNS record
 :---|:---
- US | winatp-gw-cus.microsoft.com <br> us.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net <br> winatp-gw-eus.microsoft.com <br> us.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net
-Europe | winatp-gw-weu.microsoft.com <br> eu.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net <br> winatp-gw-neu.microsoft.com <br> eu.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net
+ US | ```winatp-gw-cus.microsoft.com``` <br> ```us.vortex-win.data.microsoft.com``` <br> ```crl.microsoft.com``` <br>```*.blob.core.windows.net``` <br> ```winatp-gw-eus.microsoft.com``` <br> ```us.vortex-win.data.microsoft.com``` <br> ```crl.microsoft.com``` <br>```*.blob.core.windows.net```
+Europe | ```winatp-gw-weu.microsoft.com``` <br> ```eu.vortex-win.data.microsoft.com``` <br> ```crl.microsoft.com``` <br>```*.blob.core.windows.net``` <br> ```winatp-gw-neu.microsoft.com``` <br> ```eu.vortex-win.data.microsoft.com``` <br> ```crl.microsoft.com``` <br>```*.blob.core.windows.net``` <br>
 
- <br>
  If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.
 
  If you selected US as your region, you should permit anonymous traffic for URLs listed in both Central US and East US (2).
