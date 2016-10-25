@@ -430,7 +430,7 @@ There are no default locations included with WIP, you must add each of your netw
 
     The **Add or edit corporate network definition** box closes.
 
-4.	Decide if you want to Windows to look for additional network settings.
+4.	Decide if you want to Windows to look for additional network settings and if you want to show the WIP icon on your corporate files while in File Explorer.
 
     ![Create Configuration Item wizard, Add whether to search for additional network settings](images/wip-sccm-optsettings.png)
 
