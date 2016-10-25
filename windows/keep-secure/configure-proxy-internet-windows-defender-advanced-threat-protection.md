@@ -28,14 +28,13 @@ The embedded Windows Defender ATP sensor runs in system context using the LocalS
 
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
-- Configure the proxy server manually using a static proxy
 
-    - Auto-discovery methods:
-        - Transparent proxy
+- Auto-discovery methods:
+    - Transparent proxy
 
-    - Manual static proxy configuration
-      - WinHTTP configured using netsh command
-      -	Registry based configuration
+ - Manual static proxy configuration
+    - WinHTTP configured using netsh command
+    - Registry based configuration
 
 ## Configure the proxy server manually using a registry-based static proxy
 Configure a registry-based static proxy to allow only Windows Defender ATP sensor to report telemetry and communicate with Windows Defender ATP services if a computer is not be permitted to connect to the Internet.
