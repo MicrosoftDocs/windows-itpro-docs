@@ -29,7 +29,7 @@ The embedded Windows Defender ATP sensor runs in system context using the LocalS
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
 
-- Auto-discovery methods:
+ - Auto-discovery methods:
     - Transparent proxy
 
  - Manual static proxy configuration
