@@ -36,7 +36,7 @@ The following topics and procedures are provided in this guide. An estimate of t
 <div style='font-size:9.0pt'>
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TH BGCOLOR="#a0e4fa">Topic<TH BGCOLOR="#a0e4fa">Description<TH BGCOLOR="#a0e4fa">Time
+<TR><TD BGCOLOR="#a0e4fa"><B>Topic</B><TD BGCOLOR="#a0e4fa"><B>Description</B><TD BGCOLOR="#a0e4fa"><B>Time</B>
 <TR><TD>[Terminology in this guide](#terminology-in-this-guide)<TD>Terms used in this guide.<TD>
 <TR><TD>[Hardware and software requirements](#hardware-and-software-requirements)<TD>Prerequisites to complete this guide.<TD>
 <TR><TD>[Lab setup](#lab-setup)<TD>A description and diagram of the PoC environment.<TD>
@@ -59,7 +59,7 @@ The following topics and procedures are provided in this guide. An estimate of t
 <div style='font-size:9.0pt'>
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TH BGCOLOR="#a0e4fa">Term<TH BGCOLOR="#a0e4fa">Definition
+<TR><TD BGCOLOR="#a0e4fa"><B>Term</B><TD BGCOLOR="#a0e4fa"><B>Definition</B>
 <TR><TD>GPT<TD>GUID partition table (GPT) is an updated hard-disk formatting scheme that enables the use of newer hardware. GPT is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions.
 <TR><TD>Hyper-V<TD>Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.
 <TR><TD>Hyper-V host<TD>The computer where Hyper-V is installed.
@@ -77,7 +77,7 @@ The following topics and procedures are provided in this guide. An estimate of t
 
 One computer that meets the hardware and software specifications below is required to complete the guide; A second computer is recommended to validate the upgrade process. 
 
-The second computer (computer 2) is a client computer from your corporate network that is used to create VM that can be added to the POC environment. The VM is a mirror image of the computer on your corporate network, providing a realistic simulation of the upgrade process. If you do not have a computer to use for this simulation, you can create an arbitrary VM to represent this computer.
+>The second computer (computer 2) is a client computer from your corporate network that is used to create VM that can be added to the POC environment. The VM is a mirror image of the computer on your corporate network, providing a realistic simulation of the upgrade process. If you do not have a computer to use for this simulation, you can create an arbitrary VM to represent this computer. Later guides use this computer to simulate Windows 10 replace and refresh scenarios, so the VM is required even if you cannot create one that is mirrored from computer 2.
 
 <div style='font-size:9.0pt'>
 
@@ -110,7 +110,7 @@ The second computer (computer 2) is a client computer from your corporate networ
     <tr>
         <td BGCOLOR="#a0e4fa">Architecture</td>
         <td>64-bit</td>
-        <td>Any</td>
+        <td>Any<BR>Note: Retaining applications and settings during the upgrade process requires that architecture (32 or 64-bit) is the same before and after the upgrade.</td>
     </tr>
     <tr>
         <td BGCOLOR="#a0e4fa">RAM</td>
@@ -137,9 +137,7 @@ The second computer (computer 2) is a client computer from your corporate networ
 
 </div>
 
->Retaining applications and settings during the upgrade process requires that architecture (32 or 64-bit) is the same before and after the upgrade.
-
-<B>*</B><I>The Hyper-V server role can also be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2, therefore you cannot use many of the steps provided in this guide to configure Hyper-V. The performance and features of the Hyper-V role are also much improved on later operating systems. If your host must be running Windows Server 2008 R2, see [Appendix B: Configuring Hyper-V settings on 2008 R2](#appendix-b-configuring-hyper-v-on-windows-server-2008-r2).</I>
+<B>*</B><I>The Hyper-V server role can also be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2, therefore you cannot use many of the steps provided in this guide to configure Hyper-V. To manage Hyper-V on Windows Server 2008 R2, you can use Hyper-V WMI, or you can use the Hyper-V Manager console. Converting all Hyper-V module commands used in this guide to Hyper-V WMI is beyond the scope of the guide. If you must use a Hyper-V host running Windows Server 2008 R2, the steps in the guide can be accomplished by using the Hyper-V Manager console. These steps are not provided at this time in the guide. For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.</I>
 
 The Hyper-V role cannot be installed on Windows 7 or earlier versions of Windows.
 
@@ -712,9 +710,15 @@ Use the following procedures to verify that the PoC environment is configured pr
 
 ## Appendix B: Configuring Hyper-V on Windows Server 2008 R2
 
-If your Hyper-V host is running Windows Server 2008 R2, several of the steps in this guide will not work because they use the Hyper-V Module for Windows PowerShell, which is not available on Windows Server 2008 R2.
+This section is a placeholder for instructions to configure Hyper-V on Windows Server 2008 R2. Full documentation of these procedures is currently out of scope for this guide, due to significant differences in the Hyper-V role in Windows Server 2008 R2.
 
-To manage Hyper-V on Windows Server 2008 R2, you can use Hyper-V WMI, or you can use the Hyper-V Manager console.  
+If your Hyper-V host is running Windows Server 2008 R2, several of the steps in this guide will not work because they use the Hyper-V Module for Windows PowerShell, which is not available on Windows Server 2008 R2. The performance and features of the Hyper-V role are also much improved on later operating systems. 
+
+To install Hyper-V on Windows Server 2008 R2, you can use the Add-WindowsFeature cmdlet:
+
+```
+Add-WindowsFeature -Name Hyper-V
+```
 
 An example that uses Hyper-V WMI to create a virtual switch on Windows Server 2008 R2 is provided below. 
 
@@ -740,15 +744,6 @@ $Result = $VirtualSwitchManagementService.ConnectSwitchPort($InternalSwitchPort,
 $filter = "SettingID='" + $InternalEthernetPort.DeviceID +"'"
 $NetworkAdapterConfiguration = gwmi Win32_NetworkAdapterConfiguration -filter $filter
 ```
-To install Hyper-V on Windows Server 2008 R2, you can use the Add-WindowsFeature cmdlet:
-
-```
-Add-WindowsFeature -Name Hyper-V
-```
-
-Converting all Hyper-V module commands used in this guide to Hyper-V WMI is beyond the scope of the guide.  If you must use a Hyper-V host running Windows Server 2008 R2, the steps in the guide can be accomplished by using the Hyper-V Manager console. These steps are not provided at this time in the guide.
-
-For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
 
 ## Appendix C: Convert GPT to MBR
 
