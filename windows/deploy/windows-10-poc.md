@@ -169,7 +169,7 @@ The lab architecture is summarized in the following diagram:
                                Virtualization Enabled In Firmware: Yes
                                Second Level Address Translation: Yes
                                Data Execution Prevention Available: Yes
-    </PRE>  
+    </pre>  
     
     In this example, the computer supports SLAT and Hyper-V. 
     
@@ -177,7 +177,7 @@ The lab architecture is summarized in the following diagram:
 
     You can also identify Hyper-V support using [tools](https://blogs.msdn.microsoft.com/taylorb/2008/06/19/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v/) provided by the processor manufacturer, the [msinfo32](https://technet.microsoft.com/en-us/library/cc731397.aspx) tool, or you can download the [coreinfo](http://technet.microsoft.com/en-us/sysinternals/cc835722) utility and run it, as shown in the following example:
 
-    ```
+    <pre style="overflow-y: visible">
     C:\>coreinfo -v
 
     Coreinfo v3.31 - Dump information on system CPU and memory topology
@@ -190,7 +190,7 @@ The lab architecture is summarized in the following diagram:
     HYPERVISOR      -       Hypervisor is present
     VMX             *       Supports Intel hardware-assisted virtualization
     EPT             *       Supports Intel extended page tables (SLAT)
-    ```   
+    </pre>   
 
     Note: A 64-bit operating system is required to run Hyper-V.
 
