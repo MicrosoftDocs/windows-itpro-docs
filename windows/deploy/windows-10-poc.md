@@ -14,9 +14,20 @@ author: greg-lindsay
 
 -   Windows 10
 
-This guide provides step-by-step instructions for setting up a proof of concept (PoC) environment where you can deploy Windows 10. The PoC enviroment is configured by using Hyper-V and requires a minimum amount of resources. Simple to use Windows PowerShell commands are provided for setting up the test lab.
+<P>This guide provides step-by-step instructions for setting up a proof of concept (PoC) environment where you test the tools and procedures necessary to deploy Windows 10. The PoC enviroment is configured by using Hyper-V and requires a minimum amount of resources. Windows PowerShell commands are provided to set up the test lab quickly and easily.
 
-To complete this guide, you will need a Hyper-V capable computer running Windows 8.1 or later with 16GB of RAM. Detailed requirements are provided [below](#hardware-and-software-requirements). When you have completed configuring the PoC environment, additional topics are provided that use the PoC environment to deploy Windows 10 with current deployment tools.
+Overview of procedures in this guide:
+<UL>
+<LI>The Hyper-V role is installed.  
+<LI>Hyper-V network and virtual machine (VM) settings are configured.
+<LI>Network services and settings are installed and configured on VMs.
+</UL>
+
+Completing this guide enables you to test Windows 10 deployment procedures with current tools, documented in the following guides:<BR>
+- [Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)<BR>
+- [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)<BR>
+
+To complete this guide, you will need a Hyper-V capable computer running Windows 8.1 or later with 16GB of RAM. Detailed requirements are provided [below](#hardware-and-software-requirements). 
 
 ## In this guide
 
@@ -25,7 +36,7 @@ The following topics and procedures are provided in this guide. An estimate of t
 <div style='font-size:9.0pt'>
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TH>Topic<TH>Description<TH>Time
+<TR><TH BGCOLOR="#a0e4fa">Topic<TH BGCOLOR="#a0e4fa">Description<TH BGCOLOR="#a0e4fa">Time
 <TR><TD>[Terminology in this guide](#terminology-in-this-guide)<TD>Terms used in this guide.<TD>
 <TR><TD>[Hardware and software requirements](#hardware-and-software-requirements)<TD>Prerequisites to complete this guide.<TD>
 <TR><TD>[Lab setup](#lab-setup)<TD>A description and diagram of the PoC environment.<TD>
@@ -43,15 +54,17 @@ The following topics and procedures are provided in this guide. An estimate of t
 
 </div>
 
-### Terminology in this guide
+### Terminology used in this guide
 
 <div style='font-size:9.0pt'>
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TH>Term<TH>Definition
+<TR><TH BGCOLOR="#a0e4fa">Term<TH BGCOLOR="#a0e4fa">Definition
+<TR><TD>GPT<TD>GUID partition table (GPT) is an updated hard-disk formatting scheme that enables the use of newer hardware. GPT is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions.
 <TR><TD>Hyper-V<TD>Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.
 <TR><TD>Hyper-V host<TD>The computer where Hyper-V is installed.
 <TR><TD>Hyper-V Manager<TD>The user-interface console used to view and configure Hyper-V.
+<TR><TD>MBR<TD>Master Boot Record (MBR) is a legacy hard-disk formatting scheme that limits support for newer hardware. MBR is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions. MBR is in the process of being replaced by the GPT partition format.
 <TR><TD>Proof of concept (PoC)<TD>Confirmation that a process or idea works as intended. A PoC is carried out in a test environment to learn about and verify a process. 
 <TR><TD>Virtual machine (VM)<TD>A VM is a virtual computer with its own operating system, running on the Hyper-V host.
 <TR><TD>Virtual switch<TD>A virtual network connection used to connect VMs to each other and to physical network adapters on the Hyper-V host.
@@ -107,8 +120,8 @@ The second computer (computer 2) is a client computer from your corporate networ
     </tr>
     <tr>
         <td BGCOLOR="#a0e4fa">Disk</td>
-        <td>50 GB available hard disk space (100 GB recommended)</td>
-        <td>Any</td>
+        <td>50 GB available hard disk space (100 GB recommended), any format.</td>
+        <td>Any size, MBR formatted.</td>
     </tr>
     <tr>
         <td BGCOLOR="#a0e4fa">CPU</td>
@@ -157,8 +170,7 @@ The lab architecture is summarized in the following diagram:
 [Convert PC to VHD](#convert-pc-to-vhd)<BR>
 [Resize VHD](#resize-vhd)<BR>
 [Configure Hyper-V](#configure-hyper-v)<BR>
-[Convert PC to VHD](#convert-pc-to-vhd)<BR>
-[Configure VHDs](#configure-vhds)<BR>
+[Configure VMs](#configure-vms)<BR>
 
 ### Verify support and install Hyper-V
 
@@ -375,7 +387,7 @@ Instructions to "type" commands provided in this guide can be typed, but in most
     
     **Note**: The RAM values assigned to VMs in this step are not permanent, and can be easily increased or decreased later if needed to address performance issues. 
 
-### Configure VHDs 
+### Configure VMs 
 
 1. At an elevated Windows PowerShell prompt on the Hyper-V host, start the first VM by typing the following command:
 
@@ -772,8 +784,7 @@ the idea here is to create a MBR VHD, then restore the wim to that.
 
 ## Related Topics
 
-[Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)<BR>
-[Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)<BR>
+
 [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
  
 
