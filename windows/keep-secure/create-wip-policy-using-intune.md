@@ -455,13 +455,13 @@ After you've decided where your protected apps can access enterprise data on you
 
 	    - **Yes.** Allows Windows Search to search and index encrypted corporate data and Store apps.
 
-	    - **No, or not configured (recommended).** Stops Windows Search from searching and indexing encrypted corporate data and Store apps.
+	    - **No, or not configured (recommended).** Stops Windows Search from searching and indexing encrypted corporate data and Store apps. 
 
     - **Show the Windows Information Protection icon overlay.** Determines whether the Windows Information Protection icon overlay appears on corporate files in the **Save As** and File Explorer views. The options are:
 
-    	- **Yes (recommended).** Allows the Windows Information Protection icon overlay to appear on corporate files in the **Save As** and File Explorer views. Additionally, for unenlightened but allowed apps, the icon overlay also appears on the app tile and with **Managed** text on the app name in the **Start** menu.
+    	- **Yes.** Allows the Windows Information Protection icon overlay to appear on corporate files in the **Save As** and File Explorer views. Additionally, for unenlightened but allowed apps, the icon overlay also appears on the app tile and with **Managed** text on the app name in the **Start** menu.
 
-	    - **No, or not configured.** Stops the Windows Information Protection icon overlay from appearing on corporate files or unenlightened, but allowed apps.
+        - **No, or not configured (recommended).** Stops the Windows Information Protection icon overlay from appearing on corporate files or unenlightened, but allowed apps. Not configured is the default option.
 
 2. Click **Save Policy**.
 
