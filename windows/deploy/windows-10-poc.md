@@ -14,20 +14,21 @@ author: greg-lindsay
 
 -   Windows 10
 
-<P>This guide provides step-by-step instructions for setting up a proof of concept (PoC) environment where you test the tools and procedures necessary to deploy Windows 10. The PoC enviroment is configured by using Hyper-V and requires a minimum amount of resources. Windows PowerShell commands are provided to set up the test lab quickly and easily.
+<P>This guide provides step-by-step instructions for setting up a proof of concept (PoC) environment where you test the tools and procedures necessary to deploy Windows 10. The PoC enviroment is configured by using Hyper-V and requires a minimum amount of resources. Windows PowerShell commands are provided to set up the test lab quickly. The guide contains detailed instructions for three general procedures:
 
-Overview of procedures in this guide:
 <UL>
-<LI>The Hyper-V role is installed.  
-<LI>Hyper-V network and virtual machine (VM) settings are configured.
-<LI>Network services and settings are installed and configured on VMs.
+<LI>Install Hyper-V.  
+<LI>Configure Hyper-V network and virtual machine (VM) settings.
+<LI>Install and configure network services and settings on VMs.
 </UL>
 
-Completing this guide enables you to test Windows 10 deployment procedures with current tools, documented in the following guides:<BR>
+If you already have a computer running Hyper-V, you can use this computer. After completing the instructions in this guide, you will have a PoC environment that enables you to test Windows 10 deployment procedures with current tools, as documented in subsequent guides:<BR>
 - [Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)<BR>
 - [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)<BR>
 
-To complete this guide, you will need a Hyper-V capable computer running Windows 8.1 or later with 16GB of RAM. Detailed requirements are provided [below](#hardware-and-software-requirements). 
+Links are provided to download trial versions of Windows Server 2012, Windows 10 Enterprise, and all deployment tools necessary to complete the lab.
+
+To complete this guide, you will need a Hyper-V capable computer running Windows 8.1 or later with 16GB of RAM. Detailed [requirements](#hardware-and-software-requirements) are provided below. 
 
 ## In this guide
 
@@ -37,7 +38,7 @@ The following topics and procedures are provided in this guide. An estimate of t
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
 <TR><TD BGCOLOR="#a0e4fa"><B>Topic</B><TD BGCOLOR="#a0e4fa"><B>Description</B><TD BGCOLOR="#a0e4fa"><B>Time</B>
-<TR><TD>[Terminology in this guide](#terminology-in-this-guide)<TD>Terms used in this guide.<TD>
+
 <TR><TD>[Hardware and software requirements](#hardware-and-software-requirements)<TD>Prerequisites to complete this guide.<TD>
 <TR><TD>[Lab setup](#lab-setup)<TD>A description and diagram of the PoC environment.<TD>
 <TR><TD>[Configure the PoC environment](#configure-the-poc-environment)<TD>Parent topic for procedures.<TD>
@@ -50,25 +51,7 @@ The following topics and procedures are provided in this guide. An estimate of t
 <TR><TD>[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)<TD>Verify and troubleshoot network connectivity and services in the PoC environment.<TD>30 minutes
 <TR><TD>[Appendix B: Configuring Hyper-V on Windows Server 2008 R2](#appendix-b-configuring-hyper-v-on-windows-server-2008-r2)<TD>Information about using this guide with a Hyper-V host running Windows Server 2008 R2.<TD>
 <TR><TD>[Appendix C: Disk2VHD](#appendix-c-disk2vhd)<TD>Information about the Disk2VHD application.<TD>
-</TABLE>
-
-</div>
-
-### Terminology used in this guide
-
-<div style='font-size:9.0pt'>
-
-<TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TD BGCOLOR="#a0e4fa"><B>Term</B><TD BGCOLOR="#a0e4fa"><B>Definition</B>
-<TR><TD>GPT<TD>GUID partition table (GPT) is an updated hard-disk formatting scheme that enables the use of newer hardware. GPT is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions.
-<TR><TD>Hyper-V<TD>Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.
-<TR><TD>Hyper-V host<TD>The computer where Hyper-V is installed.
-<TR><TD>Hyper-V Manager<TD>The user-interface console used to view and configure Hyper-V.
-<TR><TD>MBR<TD>Master Boot Record (MBR) is a legacy hard-disk formatting scheme that limits support for newer hardware. MBR is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions. MBR is in the process of being replaced by the GPT partition format.
-<TR><TD>Proof of concept (PoC)<TD>Confirmation that a process or idea works as intended. A PoC is carried out in a test environment to learn about and verify a process. 
-<TR><TD>Virtual machine (VM)<TD>A VM is a virtual computer with its own operating system, running on the Hyper-V host.
-<TR><TD>Virtual switch<TD>A virtual network connection used to connect VMs to each other and to physical network adapters on the Hyper-V host.
-<TR><TD>VM snapshot<TD>A point in time image of a VM that includes its disk, memory and device state. It can be used to return a virtual machine to a former state corresponding to the time the snapshot was taken.
+<TR><TD>[Appendix D: Terminology in this guide](#appendix-d-terminology-in-this-guide)<TD>Terms used in this guide.<TD>
 </TABLE>
 
 </div>
@@ -77,7 +60,7 @@ The following topics and procedures are provided in this guide. An estimate of t
 
 One computer that meets the hardware and software specifications below is required to complete the guide; A second computer is recommended to validate the upgrade process. 
 
->The second computer (computer 2) is a client computer from your corporate network that is used to create VM that can be added to the POC environment. The VM is a mirror image of the computer on your corporate network, providing a realistic simulation of the upgrade process. If you do not have a computer to use for this simulation, you can create an arbitrary VM to represent this computer. Later guides use this computer to simulate Windows 10 replace and refresh scenarios, so the VM is required even if you cannot create one that is mirrored from computer 2.
+>Computer 2 is a client computer from your corporate network that is "shadow copied" to create a VM that can be added to the POC environment. This enables you to use a VM that is a mirror image of the computer on your corporate network, providing a realistic simulation of the upgrade process. If you do not have a computer to use for this simulation, you can create an arbitrary VM to represent this computer. Later guides use this computer to simulate Windows 10 replace and refresh scenarios, so the VM is required even if you cannot create one that is mirrored from computer 2.
 
 <div style='font-size:9.0pt'>
 
@@ -135,18 +118,19 @@ One computer that meets the hardware and software specifications below is requir
     </tr>
 </table>
 
-</div>
 
-<B>*</B><I>The Hyper-V server role can also be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2, therefore you cannot use many of the steps provided in this guide to configure Hyper-V. To manage Hyper-V on Windows Server 2008 R2, you can use Hyper-V WMI, or you can use the Hyper-V Manager console. Converting all Hyper-V module commands used in this guide to Hyper-V WMI is beyond the scope of the guide. If you must use a Hyper-V host running Windows Server 2008 R2, the steps in the guide can be accomplished by using the Hyper-V Manager console. These steps are not provided at this time in the guide. For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.</I>
+
+<B>*</B><I>The Hyper-V server role can also be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2, therefore you cannot use many of the steps provided in this guide to configure Hyper-V. To manage Hyper-V on Windows Server 2008 R2, you can use Hyper-V WMI, or you can use the Hyper-V Manager console. Providing all steps in this guide as Hyper-V WMI or as 2008 R2 Hyper-V Manager procedures is beyond the scope of the guide.</I>
 
 The Hyper-V role cannot be installed on Windows 7 or earlier versions of Windows.
 
+</div>
+
 ## Lab setup
 
-- The Hyper-V host computer (computer 1) is configured to host four VMs on a private, PoC network. 
+- Computer 1 is configured to host four VMs on a private, PoC network. 
     - Two VMs are running Windows Server 2012 R2 with required network services and tools installed.
     - Two VMs are client systems: One VM is intended to mirror a host on your corporate network (computer 2) and one VM is running Windows 10 Enterprise to demonstrate the hardware replacement scenario.
-- Links are provided to download trial versions of Windows Server 2012, Windows 10 Enterprise, and all deployment tools necessary to complete the lab.
 
 The lab architecture is summarized in the following diagram:
 
@@ -178,14 +162,15 @@ The lab architecture is summarized in the following diagram:
     
     See the following example:
     
-    ```
+    <pre style="overflow-y: visible">
     C:\>systeminfo
     ...
     Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
                                Virtualization Enabled In Firmware: Yes
                                Second Level Address Translation: Yes
                                Data Execution Prevention Available: Yes
-    ```   
+    </PRE>  
+    
     In this example, the computer supports SLAT and Hyper-V. 
     
     If one or more requirements are evaluated as "No" then the computer does not support installing Hyper-V.  However, if only the virtualization setting is incompatible, you might be able to enable virtualization in the BIOS and change the **Virtualization Enabled In Firmware** setting from "No" to "Yes." The location of this setting will depend on the manufacturer and BIOS version, but is typically found associated with the BIOS security settings.
@@ -710,9 +695,9 @@ Use the following procedures to verify that the PoC environment is configured pr
 
 ## Appendix B: Configuring Hyper-V on Windows Server 2008 R2
 
-This section is a placeholder for instructions to configure Hyper-V on Windows Server 2008 R2. Full documentation of these procedures is currently out of scope for this guide, due to significant differences in the Hyper-V role in Windows Server 2008 R2.
-
 If your Hyper-V host is running Windows Server 2008 R2, several of the steps in this guide will not work because they use the Hyper-V Module for Windows PowerShell, which is not available on Windows Server 2008 R2. The performance and features of the Hyper-V role are also much improved on later operating systems. 
+
+This section is a placeholder for instructions to configure Hyper-V on Windows Server 2008 R2. Full documentation of these procedures is currently out of scope for this guide, due to significant differences in the Hyper-V role in Windows Server 2008 R2. For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
 
 To install Hyper-V on Windows Server 2008 R2, you can use the Add-WindowsFeature cmdlet:
 
@@ -776,6 +761,28 @@ the idea here is to create a MBR VHD, then restore the wim to that.
 --note another possible option is to create a backup, choose USB as the destination, then create VM, boot from DVD, and restore from backup usign tools.
 
 --also try https://community.spiceworks.com/topic/435119-can-i-virtualize-a-uefi-server-into-a-hyper-v-virtual-machine <-- does not work
+
+### Appendix D: Terminology used in this guide
+
+See the following table for a list of terms used in this guide.
+
+<div style='font-size:9.0pt'>
+
+<TABLE border=1 cellspacing=0 cellpadding=0>
+<TR><TD BGCOLOR="#a0e4fa"><B>Term</B><TD BGCOLOR="#a0e4fa"><B>Definition</B>
+<TR><TD>GPT<TD>GUID partition table (GPT) is an updated hard-disk formatting scheme that enables the use of newer hardware. GPT is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions.
+<TR><TD>Hyper-V<TD>Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.
+<TR><TD>Hyper-V host<TD>The computer where Hyper-V is installed.
+<TR><TD>Hyper-V Manager<TD>The user-interface console used to view and configure Hyper-V.
+<TR><TD>MBR<TD>Master Boot Record (MBR) is a legacy hard-disk formatting scheme that limits support for newer hardware. MBR is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions. MBR is in the process of being replaced by the GPT partition format.
+<TR><TD>Proof of concept (PoC)<TD>Confirmation that a process or idea works as intended. A PoC is carried out in a test environment to learn about and verify a process. 
+<TR><TD>Shadow copy<TD>A copy or "snapshot" of a computer at a point in time, created by the Volume Shadow Copy Service (VSS), typically for backup purposes.
+<TR><TD>Virtual machine (VM)<TD>A VM is a virtual computer with its own operating system, running on the Hyper-V host.
+<TR><TD>Virtual switch<TD>A virtual network connection used to connect VMs to each other and to physical network adapters on the Hyper-V host.
+<TR><TD>VM snapshot<TD>A point in time image of a VM that includes its disk, memory and device state. It can be used to return a virtual machine to a former state corresponding to the time the snapshot was taken.
+</TABLE>
+
+</div>
 
 ## Related Topics
 
