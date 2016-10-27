@@ -33,7 +33,7 @@ There are a couple of things we need to know when you pay for apps. You can add 
 You can add payment info on **Account information**. If you don’t have one saved with your account, you’ll be prompted to provide one when you buy an app.
 
 ## Acquire apps
-To acquire an app  
+**To acquire an app**  
 1.	Log in to http://businessstore.microsoft.com
 2.	Click Shop, or use Search to find an app. 
 3.	Click the app you want to purchase. 
@@ -42,7 +42,7 @@ To acquire an app
 6.	If you don’t have a payment method saved in Account settings, Store for Business will prompt you for one.
 7.	Add your credit card or debit card info, and click **Next**. Your card info is saved as a payment option on **Account information**.
 
-You’ll also need to have your business address saved on **Account information**. The address is used to generate tax rates. For more information on taxes for apps, see organization tax information. 
+You’ll also need to have your business address saved on **Account information**. The address is used to generate tax rates. For more information on taxes for apps, see [organization tax information](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings#organization-tax-information). 
 
 Store for Business adds the app to your inventory. From **Inventory**, you can:
 - Distribute the app: add to private store, or assign licenses
