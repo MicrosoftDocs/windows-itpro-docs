@@ -118,7 +118,7 @@ You can use Group Policy to enable Credential Guard. This will add and enable th
 
 To enforce processing of the group policy, you can run ```gpupdate /force```. 
 
-#### Turn on Credential Guard by using the registy
+#### Turn on Credential Guard by using the registry
 
 If you don't use Group Policy, you can enable Credential Guard by using the registry. Credential Guard uses virtualization-based security features which have to be enabled first on some operating systems.
 
@@ -154,8 +154,6 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 
 > [!NOTE]  
 > You can also add these features to an online image by using either DISM or Configuration Manager.
-
-In Windows 10, version 1607 and Windows Server 2016, Isolated User Mode is included with Hyper-V and does not need to be installed separately. If you're running a version of Windows 10 that's earlier than Windows 10, version 1607, you can run the following command to install Isolated User Mode:
 
 ##### Enable virtualization-based security and Credential Guard
 
