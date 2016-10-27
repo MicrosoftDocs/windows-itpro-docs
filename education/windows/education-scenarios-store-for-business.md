@@ -20,16 +20,17 @@ Learn about education scenarios for Windows Store for Business. IT admins and te
 
 ### Access to Windows Store for Business
 Applies to: IT admins
+
 By default, when a teacher with a work or school account acquires Minecraft: Education Edition,they are automatically signed up for Window Store for Business, and the **Basic Purchaser** role is assigned to them. **Basic Purchaser** role allows teachers to acquire Minecraft: Education Edition and to distribute it to students. 
 
-However, tenant admins can control whether or not teachers automatically sign up for Windows Store for Business, and get the **Basic Purchaser** role. You can configure this with the **Allow educators in my organization to sign up for the Windows Store for Business.** You'll find this on the **Permissions** page. 
+However, tenant admins can control whether or not teachers automatically sign up for Windows Store for Business, and get the **Basic Purchaser** role. You can configure this with **Allow educators in my organization to sign up for the Windows Store for Business.** You'll find this on the **Permissions** page. 
 
-To prevent educators from automatically signing up for Windows Store for Business
+**To manage educator access to Windows Store for Business**
 1.  In Windows Store for Business, click **Settings**, and then click **Permissions**. 
 
     ![Permission page for Windows Store for Business](images/minecraft-admin-permissions.png)
 
-2. Click **Allow educators in my organization to sign up for the Windows Store for Business.**
+2. Select, or clear **Allow educators in my organization to sign up for the Windows Store for Business**.
 
 ### Windows Store for Business permissions
 Applies to: IT admins
@@ -96,9 +97,18 @@ Teachers and IT administrators can now get trials or subscriptions to Minecraft:
 - [For teachers – Minecraft: Education Edition](https://technet.microsoft.com/edu/windows/teacher-get-minecraft)
 
 
-
-
 ## Manage WSfB inventory – EDU
+Applies to: IT admins and teachers
+
+
+
+You can manage current app licenses, or purchase more licenses for apps in your inventory. 
+
 **To purchase additional app licenses**
+1. From **Inventory**, click an app. 
+2. On the app page, click **View app details**. 
+3. From this page, you can choose to buy more licenses, or manage current licenses. You'll have a summary of current license availability.  
 
 ## Manage WSfB order history – EDU
+
+
