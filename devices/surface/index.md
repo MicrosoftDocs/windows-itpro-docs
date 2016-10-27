@@ -23,6 +23,7 @@ For more information on planning for, deploying, and managing Surface devices in
 | --- | --- |
 | [Deploy Surface devices](deploy.md) | Get deployment guidance for your Surface devices including information about MDT, OOBE customization, Ethernet adaptors, and Surface Deployment Accelerator. |
 | [Surface firmware and driver updates](update.md) | Find out how to download and manage the latest firmware and driver updates for your Surface device. |
+| [Considerations for Surface and System Center Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md) | Get guidance on how to deploy and manage Surface devices with System Center Configuration Manager. |
 | [Deploy Surface app with Windows Store for Business](deploy-surface-app-with-windows-store-for-business.md) | Find out how to add and download Surface app with Windows Store for Business, as well as install Surface app with PowerShell and MDT. |
 | [Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices](enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md) | Find out how to enable support for PEAP, EAP-FAST, or Cisco LEAP protocols on your Surface device. |
 | [Manage Surface UEFI settings](manage-surface-uefi-settings.md) | Use Surface UEFI settings to enable or disable devices, configure security settings, and adjust Surface device boot settings. |
