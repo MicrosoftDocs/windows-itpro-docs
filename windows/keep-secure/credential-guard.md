@@ -183,7 +183,7 @@ DG_Readiness_Tool_v2.0.ps1 -Enable -AutoReboot
 
 #### Credential Guard deployment in virtual machines
 
-Credential Guard can protect secrets in a Hyper-V virtual machine, just as it would a physical machine. The enablement steps are the same from within the virtual machine.
+Credential Guard can protect secrets in a Hyper-V virtual machine, just as it would on a physical machine. The enablement steps are the same from within the virtual machine.
 
 Credential Guard protects secrets from non-priviledged access inside the VM. It does not provide additional protection from the host administrator. From the host, you can disable Credential Guard for a virtual machine:
 
