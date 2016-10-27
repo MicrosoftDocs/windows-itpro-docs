@@ -94,9 +94,8 @@ The following tables describes additional hardware and firmware requirements, an
 
 ### 2017 Additional Qualification Requirements for Credential Guard (announced as options for future Windows operating systems for 2017) 
 
-| Protections for Improved Security - requirement         | Description                                        |
+| Protection for Improved Security - requirement         | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
-| Firmware: **UEFI NX Protections**  | **Requirements**:<br>- All UEFI memory that is marked executable must be read only. Memory marked writable must not be executable.<br><br>UEFI Runtime Services:<br>- Must implement the UEFI 2.6 EFI_MEMORY_ATTRIBUTES_TABLE. The entire UEFI runtime must be described by this table.<br>- All entries must include attributes EFI_MEMORY_RO, EFI_MEMORY_XP, or both.<br>- No entries may be left with neither of the above attributes, indicating memory that is both executable and writable. Memory MUST be either readable and executable OR writeable and non-executable.<br><br>**Security benefits**:<br>- Protects against potential vulnerabilities in UEFI runtime in functions such as Update Capsule, Set Variables, and so on, so they can't compromise VBS.<br>- Reduces attack surface to VBS from system firmware. |
 | Firmware: **Firmware support for SMM protection** | **Requirements**: The [Windows SMM Security Mitigations Table (WSMT) specification](http://download.microsoft.com/download/1/8/A/18A21244-EB67-4538-BAA2-1A54E0E490B6/WSMT.docx) contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features.<br><br>**Security benefits**:<br>- Protects against potential vulnerabilities in UEFI runtime in functions such as Update Capsule, Set Variables, and so on, so they can't compromise VBS.<br>- Reduces attack surface to VBS from system firmware.<br>- Blocks additional security attacks against SMM. |
 
 ## Manage Credential Guard

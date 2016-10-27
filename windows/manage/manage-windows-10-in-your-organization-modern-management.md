@@ -58,10 +58,9 @@ You can envision user and device management as falling into these two categories
 
 -   **Corporate (CYOD) or personal (BYOD) devices used by mobile users for SaaS apps such as Office 365.** With Windows 10, your employees can self-provision their devices:
 
--   For corporate devices, they can set up corporate access with Azure AD Join. When you offer them Azure AD Join with automatic Intune MDM enrollment, they can bring devices into a corporate-managed state in [*one step*](https://blogs.technet.microsoft.com/ad/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/), all from the cloud.
-    Azure AD Join is also a great solution for temporary staff, partners, or other part-time employees. These accounts can be kept separate from the on-premises AD domain but still access needed corporate resources.
+    -   For corporate devices, they can set up corporate access with Azure AD Join. When you offer them Azure AD Join with automatic Intune MDM enrollment, they can bring devices into a corporate-managed state in [*one step*](https://blogs.technet.microsoft.com/ad/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/), all from the cloud.<br>Azure AD Join is also a great solution for temporary staff, partners, or other part-time employees. These accounts can be kept separate from the on-premises AD domain but still access needed corporate resources.
 
--   Likewise, for personal devices, employees can use a new, simplified BYOD experience to add their work account to Windows, then access work resources on the device.
+    -   Likewise, for personal devices, employees can use a new, simplified BYOD experience to add their work account to Windows, then access work resources on the device.
 
 -   **Domain joined PCs and tablets used for traditional applications and access to important resources.** These may be traditional applications and resources that require authentication or accessing highly sensitive or classified resources on-premises.
     With Windows 10, if you have an on-premises Active Directory domain that’s integrated with Azure AD, when employee devices are joined, they automatically register with Azure AD. This provides:
