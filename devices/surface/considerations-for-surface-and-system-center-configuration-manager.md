@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: miladCA
+author: Scottmca
 ---
 
 # Considerations for Surface and System Center Configuration Manager
