@@ -35,7 +35,7 @@ However, tenant admins can control whether or not teachers automatically sign up
 ### Windows Store for Business permissions
 Applies to: IT admins
 
-Minecraft: Education Edition adds a new role for teachers: **Basic Purchaser**. As an Admin, you can assign this role to teachers in your organization. When a teacher has been granted this role, they can:
+**Minecraft: Education Edition** adds a new role for teachers: **Basic Purchaser**. As an Admin, you can assign this role to teachers in your organization. When a teacher has been granted this role, they can:
 - View the Minecraft: Education Edition product description page 
 - Acquire and manage Minecraft: Education Edition, and other apps from Store for Business
 - Use info on Support page (including links to documentation and access to support through customer service)
@@ -91,24 +91,77 @@ For more information on payment options, see [payment options](https://technet.m
 For more information on tax rates, see [tax information](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings#organization-tax-information). 
 
 ### Get started with Minecraft: Education Edition
-Teachers and IT administrators can now get trials or subscriptions to Minecraft: Education Edition and add it their Microsoft Store for Business for distribution.
+Teachers and IT administrators can now get trials or subscriptions to Minecraft: Education Edition and add it to Windows Store for Business for distribution.
 - [Get started with Minecraft: Education Edition](https://technet.microsoft.com/edu/windows/get-minecraft-for-education)
 - [For IT admins – Minecraft: Education Edition](https://technet.microsoft.com/edu/windows/school-get-minecraft)
 - [For teachers – Minecraft: Education Edition](https://technet.microsoft.com/edu/windows/teacher-get-minecraft)
 
 
-## Manage WSfB inventory – EDU
+## Manage WSfB inventory – education
 Applies to: IT admins and teachers
 
+### Manage purchases
+IT admins and teachers in educational settings can purchase apps from Windows Store for Business. Teachers need to have the Basic purchaser role, but if they've acquired Minecraft: Education Edition, they have the role by default. 
 
+While both groups can purchase apps, they can't manage purchases made by the other group. 
+
+Admins can:
+- Manage and distribute apps they purchased and apps that are purchased by other admins in the organization. 
+- View apps purchased by teachers. 
+
+Teachers can:
+- Manage and distribute apps they purchased. 
+
+> [!NOTE]
+> Teachers can't manage or view apps purchased by other teachers, or purchased by admins. Teachers can only work with the apps they purchased. 
+
+### Distribute apps - education
+
+Manage and distribute apps to students and others in your organization. Different options are avaialble for admins and teachers. 
+
+Applies to: IT admins
+
+**To manage and distribute apps**
+- For info on how to distribute **Minecraft: Education Edition**, see [For IT admins – Minecraft: Education Edition](https://technet.microsoft.com/edu/windows/school-get-minecraft#distribute_minecraft)
+- For info on how to manage and distribute other apps, see [App inventory management - Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/app-inventory-management-windows-store-for-business)
+
+Applies to: Teachers
+
+For info on how to distribute **Minecraft: Education Edition**, see [For teachers – Minecraft: Education Edition](https://technet.microsoft.com/edu/windows/teacher-get-minecraft#distribute-minecraft). 
+
+**To assign an app to a student**
+
+1. Sign in to the Store for Business.
+2. Click **Manage**, and then choose **Inventory**.
+3. Find an app, click the ellipses under **Action**, and then choose **Assign to people**.
+4. Type the email address, or name for the student that you're assigning the app to, and click **Confirm**.
+
+Employees will receive an email with a link that will install the app on their device. Click the link to start the Windows Store app, and then click **Install**. Also, in the Windows Store app, they can find the app under **My Library**.
+
+### Purchase additional licenses - education
+Applies to: IT admins and teachers
 
 You can manage current app licenses, or purchase more licenses for apps in your inventory. 
 
 **To purchase additional app licenses**
 1. From **Inventory**, click an app. 
 2. On the app page, click **View app details**. 
-3. From this page, you can choose to buy more licenses, or manage current licenses. You'll have a summary of current license availability.  
+3. From this page, click **Buy more** to purchase more licenses</br>
+-OR-</br>
+Click **Manage** to distribute or reclaim current licenses. 
 
-## Manage WSfB order history – EDU
+You'll have a summary of current license availability.  
 
+**Minecraft: Education Edition subscriptions**
 
+Similarly, you can purchase additional subscriptions of **Minecraft: Education Edition** through Windows Store for Business. Find **Minecraft: Education Edition** in your inventory and use the previous steps for purchasing additional app licenses. 
+
+## Manage WSfB order history – education
+Applies to: IT admins and teachers
+
+You can manage your orders through Windows Store for Business. For info on order history and how to refund an order, see [Manage app orders in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/manage-orders-windows-store-for-business). 
+
+It can take up to 24 hours after a purchase, before a receipt is available on your **Order history page**. 
+
+> [!NOTE]
+For **Minecraft: Education Edition**, you can request a refund through Windows Store for Business for two months from the purchase date. After two months, refunds require a support call. 
