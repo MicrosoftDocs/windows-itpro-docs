@@ -105,6 +105,7 @@ Credential Guard can be enabled by using Group Policy, the registry, or the Devi
 ### Turn on Credential Guard by using Group Policy
 
 You can use Group Policy to enable Credential Guard. This will add and enable the virtualization-based security features for you if needed.
+
 1.  From the Group Policy Management Console, go to **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Device Guard**.
 2.  Double-click **Turn On Virtualization Based Security**, and then click the **Enabled** option.
 3.  **Select Platform Security Level** box, choose **Secure Boot** or **Secure Boot and DMA Protection**.
@@ -130,6 +131,7 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 > If you enable Credential Guard by using Group Policy, these steps are not required. Group Policy will install the features for you.
  
 **Add the virtualization-based security features by using Programs and Features**
+
 1.  Open the Programs and Features control panel.
 2.  Click **Turn Windows feature on or off**.
 3.  Go to **Hyper-V** -&gt; **Hyper-V Platform**, and then select the **Hyper-V Hypervisor** check box.
@@ -137,6 +139,7 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 5.  Click **OK**.
 
 **Add the virtualization-based security features to an offline image by using DISM**
+
 1.  Open an elevated command prompt.
 2.  Add the Hyper-V Hypervisor by running the following command:
     ``` syntax
@@ -177,6 +180,7 @@ DG_Readiness_Tool_v2.0.ps1 -Enable -AutoReboot
 ```
 
 ### Credential Guard deployment in virtual machines
+
 Credential Guard can protect secrets in a Hyper-V virtual machine, just as it would a physical machine. The enablement steps are the same from within the virtual machine.
 
 Credential Guard protects secrets from non-priviledged access inside the VM. It does not provide additional protection from the host administrator. From the host, you can disable Credential Guard for a virtual machine:
