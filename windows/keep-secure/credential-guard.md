@@ -129,6 +129,7 @@ If you are using Windows 10 1507 (RTM) or Windows 10 1511, Windows features have
 You can do this by using either the Control Panel or the Deployment Image Servicing and Management tool (DISM).
 > [!NOTE]  
 > If you enable Credential Guard by using Group Policy, these steps are not required. Group Policy will install the features for you.
+
  
 **Add the virtualization-based security features by using Programs and Features**
 
