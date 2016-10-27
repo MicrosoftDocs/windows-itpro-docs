@@ -100,9 +100,10 @@ The following tables describes additional hardware and firmware requirements, an
 
 ## Manage Credential Guard
 
+### Enable Credential Guard
 Credential Guard can be enabled by using Group Policy, the registry, or the Device Guard and Credential Guard hardware readiness tool.   
 
-### Turn on Credential Guard by using Group Policy
+#### Turn on Credential Guard by using Group Policy
 
 You can use Group Policy to enable Credential Guard. This will add and enable the virtualization-based security features for you if needed.
 
@@ -117,11 +118,11 @@ You can use Group Policy to enable Credential Guard. This will add and enable th
 
 To enforce processing of the group policy, you can run ```gpupdate /force```. 
 
-### Turn on Credential Guard by using the registy
+#### Turn on Credential Guard by using the registy
 
 If you don't use Group Policy, you can enable Credential Guard by using the registry. Credential Guard uses virtualization-based security features which have to be enabled first on some operating systems.
 
-#### Add the virtualization-based security features
+##### Add the virtualization-based security features
 
 Starting with Windows 10 1607 and Windows Server 2016, enabling Windows features to use virtualization-based security is not necessary and this step can be skipped.
 
@@ -156,7 +157,7 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 
 In Windows 10, version 1607 and Windows Server 2016, Isolated User Mode is included with Hyper-V and does not need to be installed separately. If you're running a version of Windows 10 that's earlier than Windows 10, version 1607, you can run the following command to install Isolated User Mode:
 
-#### Enable virtualization-based security and Credential Guard
+##### Enable virtualization-based security and Credential Guard
 
 1.  Open Registry Editor.
 2.  Enable virtualization-based security:
@@ -172,7 +173,7 @@ In Windows 10, version 1607 and Windows Server 2016, Isolated User Mode is inclu
 > [!NOTE]  
 > You can also turn on Credential Guard by setting the registry entries in the [FirstLogonCommands](http://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
 
-### Turn on Credential Guard by using the Device Guard and Credential Guard hardware readiness tool
+#### Turn on Credential Guard by using the Device Guard and Credential Guard hardware readiness tool
 
 You can also enable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
@@ -180,7 +181,7 @@ You can also enable Credential Guard by using the [Device Guard and Credential G
 DG_Readiness_Tool_v2.0.ps1 -Enable -AutoReboot
 ```
 
-### Credential Guard deployment in virtual machines
+#### Credential Guard deployment in virtual machines
 
 Credential Guard can protect secrets in a Hyper-V virtual machine, just as it would a physical machine. The enablement steps are the same from within the virtual machine.
 
