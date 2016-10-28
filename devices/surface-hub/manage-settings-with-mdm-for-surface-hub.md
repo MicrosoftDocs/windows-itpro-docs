@@ -32,7 +32,8 @@ You can enroll your Surface Hubs using bulk or manual enrollment.
 > 1. In the [Azure classic portal](https://manage.windowsazure.com/), navigate to the **Active Directory** node and select your directory. 
 > 2. Click the **Applications** tab, then click **Microsoft Intune**.
 > 3. Under **Manage devices for these users**, click **Groups**. 
-> 4. Click **Select Groups**, then select the groups of users you want to automatically enroll into Intune. Do not include accounts that are used to enroll Surface Hubs into Intune. 5. Click the checkmark button, then click **Save**.
+> 4. Click **Select Groups**, then select the groups of users you want to automatically enroll into Intune. Do not include accounts that are used to enroll Surface Hubs into Intune. 
+> 5. Click the checkmark button, then click **Save**.
 
 ### Bulk enrollment
 **To configure bulk enrollment**
@@ -54,7 +55,7 @@ You can use MDM to manage some [Surface Hub CSP settings](#supported-surface-hub
 
 ### Supported Surface Hub CSP settings
 
-You can configure the Surface Hub settings in the following table using MDM. The table also tells if the setting is supported with Microsoft Intune, System Center Configuration Manager, or SyncML.
+You can configure the Surface Hub settings in the following table using MDM. The table identifies if the setting is supported with Microsoft Intune, System Center Configuration Manager, or SyncML.
 
 For more information, see [SurfaceHub configuration service provider](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). 
 
@@ -73,9 +74,9 @@ For more information, see [SurfaceHub configuration service provider](https://ms
 
 ### Supported Windows 10 settings
 
-In addition to Surface Hub specific settings, there are numerous settings common to all Windows 10 devices. These settings are defined in the [Configuration service provider reference](https://msdn.microsoft.com/library/windows/hardware/dn920025.aspx). 
+In addition to Surface Hub-specific settings, there are numerous settings common to all Windows 10 devices. These settings are defined in the [Configuration service provider reference](https://msdn.microsoft.com/library/windows/hardware/dn920025.aspx). 
 
-The following tables include info on Windows 10 settings that have been validated with Surface Hub. There is a table with settings for these areas: security, browser, Windows Updates, Windows Defender, remote reboot, certificates, and logs. Each table also tells if the setting is supported with Microsoft Intune, System Center Configuration Manager, or SyncML.
+The following tables include info on Windows 10 settings that have been validated with Surface Hub. There is a table with settings for these areas: security, browser, Windows Updates, Windows Defender, remote reboot, certificates, and logs. Each table identifies if the setting is supported with Microsoft Intune, System Center Configuration Manager, or SyncML.
 
 #### Security settings
 | Setting  | Details  | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML? |
