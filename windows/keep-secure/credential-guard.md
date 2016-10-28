@@ -100,11 +100,13 @@ The following tables describes additional hardware and firmware requirements, an
 
 ## Manage Credential Guard
 
-Credential Guard uses virtualization-based security features that must be enabled on each PC before you can use it.
+### Enable Credential Guard
+Credential Guard can be enabled by using Group Policy, the registry, or the Device Guard and Credential Guard hardware readiness tool.   
 
-### Turn on Credential Guard by using Group Policy
+#### Turn on Credential Guard by using Group Policy
 
-You can use Group Policy to enable Credential Guard because it will add the virtualization-based security features for you.
+You can use Group Policy to enable Credential Guard. This will add and enable the virtualization-based security features for you if needed.
+
 1.  From the Group Policy Management Console, go to **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Device Guard**.
 2.  Double-click **Turn On Virtualization Based Security**, and then click the **Enabled** option.
 3.  **Select Platform Security Level** box, choose **Secure Boot** or **Secure Boot and DMA Protection**.
@@ -114,43 +116,46 @@ You can use Group Policy to enable Credential Guard because it will add the virt
     
 5.  Close the Group Policy Management Console.
 
-### Add Credential Guard to an image
+To enforce processing of the group policy, you can run ```gpupdate /force```. 
 
-If you would like to add Credential Guard to an image, you can do this by adding the virtualization-based security features and then turning on Credential Guard.
+#### Turn on Credential Guard by using the registry
 
-### Add the virtualization-based security features
+If you don't use Group Policy, you can enable Credential Guard by using the registry. Credential Guard uses virtualization-based security features which have to be enabled first on some operating systems.
 
-First, you must add the virtualization-based security features. You can do this by using either the Control Panel or the Deployment Image Servicing and Management tool (DISM).
+##### Add the virtualization-based security features
+
+Starting with Windows 10 1607 and Windows Server 2016, enabling Windows features to use virtualization-based security is not necessary and this step can be skipped.
+
+If you are using Windows 10 1507 (RTM) or Windows 10 1511, Windows features have to be enabled to use virtualization-based security. 
+You can do this by using either the Control Panel or the Deployment Image Servicing and Management tool (DISM).
 > [!NOTE]  
 > If you enable Credential Guard by using Group Policy, these steps are not required. Group Policy will install the features for you.
+
  
 **Add the virtualization-based security features by using Programs and Features**
+
 1.  Open the Programs and Features control panel.
 2.  Click **Turn Windows feature on or off**.
 3.  Go to **Hyper-V** -&gt; **Hyper-V Platform**, and then select the **Hyper-V Hypervisor** check box.
-4.  Click **OK**.
+4.  Select the **Isolated User Mode** check box at the top level of the feature selection. 
+5.  Click **OK**.
 
 **Add the virtualization-based security features to an offline image by using DISM**
+
 1.  Open an elevated command prompt.
 2.  Add the Hyper-V Hypervisor by running the following command:
     ``` syntax
     dism /image:<WIM file name> /Enable-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /all
     ```
+3. Add the Isolated User Mode feature by running the following command:
+    ``` syntax
+    dism /image:<WIM file name> /Enable-Feature /FeatureName:IsolatedUserMode
+    ```
 
 > [!NOTE]  
 > You can also add these features to an online image by using either DISM or Configuration Manager.
 
-
-In Windows 10, version 1607 and Windows Server 2016, Isolated User Mode is included with Hyper-V and does not need to be installed separately. If you're running a version of Windows 10 that's earlier than Windows 10, version 1607, you can run the following command to install Isolated User Mode:
-
-``` syntax
-dism /image:<WIM file name> /Enable-Feature /FeatureName:IsolatedUserMode
-```
-### Turn on Credential Guard
-
-If you don't use Group Policy, you can enable Credential Guard by using the registry.
-
-**Turn on Credential Guard by using the registry**
+##### Enable virtualization-based security and Credential Guard
 
 1.  Open Registry Editor.
 2.  Enable virtualization-based security:
@@ -166,14 +171,29 @@ If you don't use Group Policy, you can enable Credential Guard by using the regi
 > [!NOTE]  
 > You can also turn on Credential Guard by setting the registry entries in the [FirstLogonCommands](http://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
 
-**Turn on Credential Guard by using the Device Guard and Credential Guard hardware readiness tool**
+#### Turn on Credential Guard by using the Device Guard and Credential Guard hardware readiness tool
 
 You can also enable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
 DG_Readiness_Tool_v2.0.ps1 -Enable -AutoReboot
 ```
- 
+
+#### Credential Guard deployment in virtual machines
+
+Credential Guard can protect secrets in a Hyper-V virtual machine, just as it would on a physical machine. The enablement steps are the same from within the virtual machine.
+
+Credential Guard protects secrets from non-priviledged access inside the VM. It does not provide additional protection from the host administrator. From the host, you can disable Credential Guard for a virtual machine:
+
+``` PowerShell
+Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
+```
+
+Requirements for running Credential Guard in Hyper-V virtual machines
+- The Hyper-V host must have an IOMMU, and run at least Windows Server 2016 or Windows 10 version 1607.
+- The Hyper-V virtual machine must be Generation 2, have an enabled virtual TPM, and running at least Windows Server 2016 or Windows 10. 
+
+
 ### Remove Credential Guard
 
 If you have to remove Credential Guard on a PC, you need to do the following:
