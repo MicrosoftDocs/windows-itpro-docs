@@ -101,7 +101,7 @@ The following tables describes additional hardware and firmware requirements, an
 ## Manage Credential Guard
 
 ### Enable Credential Guard
-Credential Guard can be enabled by using [Group Policy](#turn-on-credential-guard-by-using-group-policy), the [registry](#turn-on-credential-guard-by-using-the-registry), or the Device Guard and Credential Guard hardware [readiness tool](#hardware-readiness-tool).
+Credential Guard can be enabled by using [Group Policy](#turn-on-credential-guard-by-using-group-policy), the [registry](#turn-on-credential-guard-by-using-the-registry), or the Device Guard and Credential Guard [hardware readiness tool](#hardware-readiness-tool).
 
 #### Turn on Credential Guard by using Group Policy
 
@@ -171,7 +171,7 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 > [!NOTE]  
 > You can also turn on Credential Guard by setting the registry entries in the [FirstLogonCommands](http://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
 
-<span id="hardware-readiness-tool"/>
+<span id="hardware-readiness-tool" />
 #### Turn on Credential Guard by using the Device Guard and Credential Guard hardware readiness tool
 
 You can also enable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
