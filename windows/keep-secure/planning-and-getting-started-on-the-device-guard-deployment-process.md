@@ -53,5 +53,9 @@ This topic provides a roadmap for planning and getting started on the Device Gua
     - [Enforce code integrity policies](deploy-code-integrity-policies-steps.md#enforce-code-integrity-policies)
     - [Deploy and manage code integrity policies with Group Policy](deploy-code-integrity-policies-steps.md#deploy-and-manage-code-integrity-policies-with-group-policy)<br>
 
-8.  **Enable desired hardware (VBS) security features**. Hardware-based security features—also called virtualization-based security (VBS) features—strengthen the protections offered by code integrity policies, as described in [How Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats). For information about enabling VBS features, see [Deploy Device Guard: enable virtualization-based security](deploy-device-guard-enable-virtualization-based-security.md).
+8.  **Enable desired hardware (VBS) security features**. Hardware-based security features—also called virtualization-based security (VBS) features—strengthen the protections offered by code integrity policies, as described in [How Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats). 
 
+    > [!WARNING]
+    >  Virtualization-based protection of code integrity may be incompatible with some devices and applications. We strongly recommend testing this configuration in your lab before enabling virtualization-based protection of code integrity on production systems. Failure to do so may result in unexpected failures up to and including data loss or a blue screen error (also called a stop error).
+
+    For information about enabling VBS features, see [Deploy Device Guard: enable virtualization-based security](deploy-device-guard-enable-virtualization-based-security.md).

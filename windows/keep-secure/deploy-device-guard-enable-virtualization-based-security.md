@@ -22,63 +22,41 @@ Hardware-based security features, also called virtualization-based security or V
 
 3.  **Enable the necessary Windows features**. There are several ways to enable the Windows features required for hardware-based security. You can use the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337), or see the following section, [Windows feature requirements for virtualization-based security](#windows-feature-requirements-for-virtualization-based-security).
 
-4.  **Enable additional features as desired**. When the necessary Windows features have been enabled, you can enable additional hardware-based security features as desired. You can use the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337), or see [Enable virtualization-based security (VBS)](#enable-virtualization-based-security-vbs), later in this topic. 
+4.  **Enable additional features as desired**. When the necessary Windows features have been enabled, you can enable additional hardware-based security features as desired. You can use the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337), or see [Enable virtualization-based security (VBS)](#enable-virtualization-based-security-vbs-and-device-guard), later in this topic. 
 
 For information about enabling Credential Guard, see [Protect derived domain credentials with Credential Guard](credential-guard.md).
 
-## Windows feature requirements for virtualization-based security
+## Windows feature requirements for virtualization-based security and Device Guard
 
-In addition to the hardware requirements found in [Hardware, firmware, and software requirements for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-device-guard), you must enable certain operating system features before you can enable VBS:
+In addition to the hardware requirements found in [Hardware, firmware, and software requirements for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-device-guard), you must confirm that certain operating system features are enabled before you can enable VBS:
 
 - With Windows 10, version 1607 or Windows Server 2016:<br> 
-Hyper-V Hypervisor  (shown in Figure 1).
+Hyper-V Hypervisor, which is enabled automatically. No further action is needed.
 
 - With an earlier version of Windows 10, or Windows Server 2016 Technical Preview 5 or earlier:<br> 
-Hyper-V Hypervisor and Isolated User Mode (not shown).
+Hyper-V Hypervisor and Isolated User Mode (shown in Figure 1).
 
-> **Note**&nbsp;&nbsp;You can configure these features manually by using Windows PowerShell or Deployment Image Servicing and Management. For specific information about these methods, see [Protect derived domain credentials with Credential Guard](credential-guard.md).
+> **Note**&nbsp;&nbsp;You can configure these features by using Group Policy or Deployment Image Servicing and Management, or manually by using Windows PowerShell or the Windows Features dialog box.
  
 ![Turn Windows features on or off](images/dg-fig1-enableos.png)
 
-Figure 1. Enable operating system feature for VBS
+**Figure 1. Enable operating system features for VBS, Windows 10, version 1511**
 
 After you enable the feature or features, you can enable VBS for Device Guard, as described in the following sections.
 
-## Enable Virtualization Based Security (VBS)
+## Enable Virtualization Based Security (VBS) and Device Guard
 
 Before you begin this process, verify that the target device meets the hardware and firmware requirements for the features that you want, as described in [Hardware, firmware, and software requirements for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-device-guard). Also, confirm that you have enabled the Windows features discussed in the previous section, [Windows feature requirements for virtualization-based security](#windows-feature-requirements-for-virtualization-based-security).
 
-There are multiple ways to configure VBS features for Device Guard. You can use the [readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337) rather than the procedures in this topic, or you can use the following procedures, either to configure the appropriate registry keys manually or to use Group Policy.
+There are multiple ways to configure VBS features for Device Guard: 
 
-> **Important**&nbsp;&nbsp;
-> - The settings in the following procedure include **Secure Boot** and **Secure Boot with DMA**. In most situations we recommend that you simply choose **Secure Boot**. This option provides secure boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have secure boot with DMA protection. A computer without IOMMUs will simply have secure boot enabled.<br>In contrast, with **Secure Boot with DMA**, the setting will enable secure boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS (hardware-based) protection, although it can still have code integrity policies enabled.<br>For information about how VBS uses the hypervisor to strengthen protections provided by a code integrity policy, see [How Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats).<br>
-> - All drivers on the system must be compatible with virtualization-based protection of code integrity; otherwise, your system may fail. We recommend that you enable these features on a group of test computers before you enable them on users' computers.
-
-**To configure VBS manually**
-
-1.  Navigate to the **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard** registry subkey.
-
-2.  Set the **EnableVirtualizationBasedSecurity DWORD** value to **1**.
-
-3.  Set the **RequirePlatformSecurityFeatures DWORD** value as appropriate:
-
-    | **With Windows 10, version 1607, <br>or Windows Server 2016** | **With an earlier version of Windows 10, <br>or Windows Server 2016 Technical Preview 5 or earlier** |
-    | ---------------- | ---------------- |
-    | **1** enables the **Secure Boot** option<br>**3** enables the **Secure Boot and DMA protection** option | **1** enables the **Secure Boot** option<br>**2** enables the **Secure Boot and DMA protection** option |
-
-4. With a supported operating system earlier than Windows 10, version 1607, or Windows Server 2016, skip this step, and remain in the same registry subkey.
-
-    With Windows 10, version 1607, or Windows Server 2016, navigate to **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard\\Scenarios**.
-
-5. Set the **HypervisorEnforcedCodeIntegrity DWORD** value to **1**.
-
-6.  Restart the client computer.
-
-Unfortunately, it would be time consuming to perform these steps manually on every protected computer in your enterprise. Group Policy offers a much simpler way to deploy these features to your organization. This example creates a test organizational unit (OU) called *DG Enabled PCs*. If you want, you can instead link the policy to an existing OU, and then scope the GPO by using appropriately named computer security groups.
+- You can use the [readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337) rather than the procedures in this topic.
+- You can use Group Policy, as described in the procedure that follows.
+- You can configure VBS manually, as described in [Use registry keys to enable VBS and Device Guard](#use-registry-keys-to-enable-vbs-and-device-guard), later in this topic.
 
 > **Note**&nbsp;&nbsp;We recommend that you test-enable these features on a group of test computers before you enable them on users' computers. If untested, there is a possibility that this feature can cause system instability and ultimately cause the client operating system to fail.
 
-### Use Group Policy to enable VBS
+### Use Group Policy to enable VBS and Device Guard
 
 1.  To create a new GPO, right-click the OU to which you want to link the GPO, and then click **Create a GPO in this domain, and Link it here**.
 
@@ -104,7 +82,12 @@ Unfortunately, it would be time consuming to perform these steps manually on eve
 
     > **Important**&nbsp;&nbsp;These settings include **Secure Boot** and **Secure Boot with DMA**. In most situations we recommend that you choose **Secure Boot**. This option provides secure boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have secure boot with DMA protection. A computer without IOMMUs will simply have secure boot enabled.<br>In contrast, with **Secure Boot with DMA**, the setting will enable secure boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS (hardware-based) protection, although it can have code integrity policies enabled.<br>For information about how VBS uses the hypervisor to strengthen protections provided by a code integrity policy, see [How Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats).
 
-6. For **Virtualization Based Protection of Code Integrity**, select the appropriate option:
+6. For **Virtualization Based Protection of Code Integrity**, select the appropriate option.
+
+    > [!WARNING]
+    >  Virtualization-based protection of code integrity may be incompatible with some devices and applications. We strongly recommend testing this configuration in your lab before enabling virtualization-based protection of code integrity on production systems. Failure to do so may result in unexpected failures up to and including data loss or a blue screen error (also called a stop error).
+    
+    Select an option as follows:
 
     - With Windows 10, version 1607 or Windows Server 2016, choose an appropriate option:<br>For an initial deployment or test deployment, we recommend **Enabled without lock**.<br>When your deployment is stable in your environment, we recommend changing to **Enabled with lock**. This option helps protect the registry from tampering, either through malware or by an unauthorized person.
 
@@ -120,6 +103,116 @@ Unfortunately, it would be time consuming to perform these steps manually on eve
 
     Processed Device Guard policies are logged in event viewer at **Applications and Services Logs\\Microsoft\\Windows\\DeviceGuard-GPEXT\\Operational**. When the **Turn On Virtualization Based Security** policy is successfully processed, event ID 7000 is logged, which contains the selected settings within the policy.
 
+>**Note**&nbsp;&nbsp;Events will be logged in this event channel only when Group Policy is used to enable Device Guard features, not through other methods. If other methods such as registry keys are used, Device Guard features will be enabled but the events won’t be logged in this event channel.
+
+### Use registry keys to enable VBS and Device Guard
+
+Set the following registry keys to enable VBS and Device Guard. This provides exactly the same set of configuration options provided by Group Policy.
+
+> [!WARNING]
+>  Virtualization-based protection of code integrity (controlled through the registry key **HypervisorEnforcedCodeIntegrity**) may be incompatible with some devices and applications. We strongly recommend testing this configuration in your lab before enabling virtualization-based protection of code integrity on production systems. Failure to do so may result in unexpected failures up to and including data loss or a blue screen error (also called a stop error).
+
+<!--This comment ensures that the Important above and the Warning below don't merge together. -->
+
+> **Important**&nbsp;&nbsp;
+> - Among the commands that follow, you can choose settings for **Secure Boot** and **Secure Boot with DMA**. In most situations we recommend that you simply choose **Secure Boot**. This option provides secure boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have secure boot with DMA protection. A computer without IOMMUs will simply have secure boot enabled.<br>In contrast, with **Secure Boot with DMA**, the setting will enable secure boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS (hardware-based) protection, although it can still have code integrity policies enabled.<br>For information about how VBS uses the hypervisor to strengthen protections provided by a code integrity policy, see [How Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats).<br>
+> - All drivers on the system must be compatible with virtualization-based protection of code integrity; otherwise, your system may fail. We recommend that you enable these features on a group of test computers before you enable them on users' computers.
+
+#### For Windows 1607 and above
+
+Recommended settings (to enable virtualization-based protection of Code Integrity policies, without UEFI Lock):
+
+``` commands
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
+
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
+
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 0 /f
+
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 1 /f
+
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 0 /f
+```
+
+If you want to customize the preceding recommended settings, use the following settings.
+
+**To enable VBS**
+
+``` command
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
+```
+
+**To enable VBS and require Secure boot only (value 1)**
+
+``` command
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
+```
+
+> To enable **VBS with Secure Boot and DMA (value 2)**, in the preceding command, change **/d 1** to **/d 2**.
+
+**To enable VBS without UEFI lock (value 0)**
+
+``` command
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 0 /f
+```
+
+> To enable **VBS with UEFI lock (value 1)**, in the preceding command, change **/d 0** to **/d 1**.
+
+**To enable virtualization-based protection of Code Integrity policies**
+
+``` command
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 1 /f
+```
+
+**To enable virtualization-based protection of Code Integrity policies without UEFI lock (value 0)**
+
+``` command
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 0 /f
+```
+
+> To enable **virtualization-based protection of Code Integrity policies with UEFI lock (value 1)**, in the preceding command, change **/d 0** to **/d 1**.
+
+#### For Windows 1511 and below
+
+Recommended settings (to enable virtualization-based protection of Code Integrity policies, without UEFI Lock):
+
+``` command
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
+
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
+
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "HypervisorEnforcedCodeIntegrity" /t REG_DWORD /d 1 /f
+
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v " Unlocked" /t REG_DWORD /d 1 /f
+```
+
+If you want to customize the preceding recommended settings, use the following settings.
+
+**To enable VBS (it is always locked to UEFI)**
+
+``` command
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
+```
+
+**To enable VBS and require Secure boot only (value 1)**
+
+``` command
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
+```
+
+> To enable **VBS with Secure Boot and DMA (value 2)**, in the preceding command, change **/d 1** to **/d 2**.
+
+**To enable virtualization-based protection of Code Integrity policies (with the default, UEFI lock)**
+
+``` command
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "HypervisorEnforcedCodeIntegrity" /t REG_DWORD /d 1 /f
+```
+
+**To enable virtualization-based protection of Code Integrity policies without UEFI lock**
+
+``` command
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v " Unlocked" /t REG_DWORD /d 1 /f
+```
 
 ### Validate enabled Device Guard hardware-based security features
 

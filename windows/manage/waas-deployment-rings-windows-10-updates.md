@@ -26,7 +26,7 @@ Table 1 provides an example of the deployment rings you might use.
 
 **Table 1**
 
-| Deployment ring | Servicing branch | Total weeks after Current Branch (CB) or Current Brandh for Business (CBB) release |
+| Deployment ring | Servicing branch | Total weeks after Current Branch (CB) or Current Branch for Business (CBB) release |
 | --- | --- | --- |
 | Preview | Windows Insider | Pre-CB |
 | Ring 1 Pilot IT | CB | CB + 0 weeks |
