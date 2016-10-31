@@ -30,10 +30,10 @@ Table 1 provides an example of the deployment rings you might use.
 | --- | --- | --- |
 | Preview | Windows Insider | Pre-CB |
 | Ring 1 Pilot IT | CB | CB + 0 weeks |
-| Ring 2 Pilot business users | CB | CB + 2 weeks |
-| Ring 3 Broad IT | CBB | CBB + 0 weeks |
-| Ring 4 Broad business users | CBB | CBB + 4 weeks |
-| Ring 5 Broad business users #2 | CBB | CBB + 8 weeks |
+| Ring 2 Pilot business users | CB | CB + 4 weeks |
+| Ring 3 Broad IT | CB | CB + 6 weeks |
+| Ring 4 Broad business users | CBB | CBB + 0 weeks |
+| Ring 5 Broad business users #2 | CBB | CBB + 2 weeks as required by capacity or other constraints |
 
 >[!NOTE]
 >In this example, there are no rings made up of the long-term servicing branch (LTSB). The LTSB servicing branch does not receive feature updates. 
