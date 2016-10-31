@@ -106,13 +106,16 @@ While both groups can purchase apps, they can't manage purchases made by the oth
 
 Admins can:
 - Manage and distribute apps they purchased and apps that are purchased by other admins in the organization. 
-- View apps purchased by teachers. 
+- View apps purchased by teachers.
+- View and manage apps on **Inventory**, under **Admin purchases**. 
 
 Teachers can:
-- Manage and distribute apps they purchased. 
+- Manage and distribute apps they purchased.
+- View and manage apps on **Inventory**, under **User purchases**. 
 
 > [!NOTE]
-> Teachers can't manage or view apps purchased by other teachers, or purchased by admins. Teachers can only work with the apps they purchased. 
+> Teachers can't manage or view apps purchased by other teachers, or purchased by admins. Teachers can only work with the apps they purchased.
+ 
 
 ### Distribute apps - education
 
