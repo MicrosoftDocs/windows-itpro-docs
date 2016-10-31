@@ -40,7 +40,7 @@ Applies to: IT admins
 
 **To assign Basic Purchaser role**
 
-1. Sign in to Store for Business
+1. Sign in to Store for Business </br>
 > [!NOTE]
 > You need to be a Global Administrator, or have the Store for Business Admin role to access the **Permissions** page.
 2. Click **Settings**, and then choose **Permissions**.
@@ -55,7 +55,9 @@ Applies to: IT admins
     ![Permission page for Windows Store for Business](images/minecraft-assign-roles-2.png)
 
 ### Private store
+
 Applies to: IT admins
+
 When you create you Windows Store for Business account, you'll have a set of apps included for free in your private store. Apps in your private store are available for all people in your organization to install and use. 
 
 These apps will automatically be in your private store:
@@ -76,6 +78,7 @@ Find apps for your school using Windows Store for Business. Admins in an educati
  
 **To acquire apps**
 - For info on how to acquire apps, see [Acquire apps in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/acquire-apps-windows-store-for-business#acquire-apps) 
+
 
 ** To add a payment method**
 
