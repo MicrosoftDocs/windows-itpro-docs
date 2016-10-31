@@ -101,7 +101,7 @@ The following tables describes additional hardware and firmware requirements, an
 ## Manage Credential Guard
 
 ### Enable Credential Guard
-Credential Guard can be enabled by using Group Policy, the registry, or the Device Guard and Credential Guard hardware readiness tool.   
+Credential Guard can be enabled by using [Group Policy](#turn-on-credential-guard-by-using-group-policy), the [registry](#turn-on-credential-guard-by-using-the-registry), or the Device Guard and Credential Guard [hardware readiness tool](#hardware-readiness-tool).
 
 #### Turn on Credential Guard by using Group Policy
 
@@ -124,9 +124,9 @@ If you don't use Group Policy, you can enable Credential Guard by using the regi
 
 ##### Add the virtualization-based security features
 
-Starting with Windows 10 1607 and Windows Server 2016, enabling Windows features to use virtualization-based security is not necessary and this step can be skipped.
+Starting with Windows 10, version 1607 and Windows Server 2016, enabling Windows features to use virtualization-based security is not necessary and this step can be skipped.
 
-If you are using Windows 10 1507 (RTM) or Windows 10 1511, Windows features have to be enabled to use virtualization-based security. 
+If you are using Windows 10, version 1507 (RTM) or Windows 10, version 1511, Windows features have to be enabled to use virtualization-based security. 
 You can do this by using either the Control Panel or the Deployment Image Servicing and Management tool (DISM).
 > [!NOTE]  
 > If you enable Credential Guard by using Group Policy, these steps are not required. Group Policy will install the features for you.
@@ -171,6 +171,7 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 > [!NOTE]  
 > You can also turn on Credential Guard by setting the registry entries in the [FirstLogonCommands](http://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
 
+<span id="hardware-readiness-tool" />
 #### Turn on Credential Guard by using the Device Guard and Credential Guard hardware readiness tool
 
 You can also enable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
