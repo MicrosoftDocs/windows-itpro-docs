@@ -12,10 +12,6 @@ author: trudyha
 
 Learn about education scenarios for Windows Store for Business. IT admins and teachers can use Windows Store for Business to find, acquire, distribute, and manage apps. 
 
-## EDU eligibility
-
-## Viral invite – needs new wording –Assign apps to students without O365 accounts
-
 ## Manage Windows Store for Business settings
 
 ### Access to Windows Store for Business
