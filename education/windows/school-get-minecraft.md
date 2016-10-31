@@ -14,7 +14,7 @@ author: jdeckerMS
 
 -   Windows 10  
 
-When you sign up for early access to [Minecraft: Education Edition](http://education.minecraft.net), Minecraft will be added to the inventory in your Windows Store for Business, a private version of Windows Store associated with your Azure Active Directory (Azure AD) tenant. Your Store for Business is only displayed to members of your organization.
+When you sign up for a [Minecraft: Education Edition](http://education.minecraft.net) trial, or purchase a[Minecraft: Education Edition](http://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Windows Store for Business, a private version of Windows Store associated with your Azure Active Directory (Azure AD) tenant. Your Store for Business is only displayed to members of your organization.
 
 > **Note**: If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans). 
 
@@ -97,7 +97,10 @@ Enter email addresses for your students, and each student will get an email with
     ![Assign to people](images/minecraft-assign-to-people.png)
 4. Type the name, or email address of the student you want to assign the app to, and then click **Assign**.
 
-    You can only assign the app to students with work or school accounts. If you don't find the student, you might need to add a work or school account for the student.
+    You can assign the app to students with work or school accounts. </br>
+    If you don't find the student, you can still assign the app to them. Students will receive an email with a link to Office 365 portal where they can create an account. </br>
+    OR </br>
+    As an admin, you can create a work or school account for the student.
     
     ![Assign to people showing student name](images/minecraft-assign-to-people-name.png)
 

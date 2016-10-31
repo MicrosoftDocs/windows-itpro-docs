@@ -73,7 +73,8 @@ Enter email addresses for your students, and each student will get an email with
     
 4. Type the name, or email address of the student you want to assign the app to, and then click **Assign**.
 
-   You can only assign the app to students with work or school accounts. If you don't find the student, contact your IT admin to add a work or school account for the student.
+   You can assign the app to students with work or school accounts. </br>
+   If you don't find the student, you can still assign the app to them. Students will receive an email with a link to Office 365 portal where they can create an account, and then install **Minecraft: Education Edition**
 
     ![Assign to people showing student name](images/minecraft-assign-to-people-name.png)
 
