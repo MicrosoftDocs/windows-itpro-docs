@@ -35,7 +35,7 @@ A malicious user might install malware that looks like the standard logon dialog
 
 ### Best practices
 
--   It is advisable to set **Disable CTRL+ALT+DEL requirement for logon** to **Disabled**. Unless they are using a smart card to log on, users will have to simultaneously press three keys before the logon dialog box appears.
+-   It is advisable to set **Disable CTRL+ALT+DEL requirement for logon** to **Not configured**.
 
 ### Location
 

@@ -21,7 +21,7 @@ localizationpriority: high
 Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your allowed apps list.
 
 ## Enlightened versus unenlightened apps
-Apps can be enlightened (policy-aware) or unenlightened (policy-unaware).
+Apps can be enlightened (also referred to as WIP-aware) or unenlightened (also referred to as WIP-unaware).
 
 -   **Enlightened apps** can differentiate between corporate and personal data, correctly determining which to protect, based on your policies.
 
@@ -34,27 +34,29 @@ Apps can be enlightened (policy-aware) or unenlightened (policy-unaware).
 ## List of enlightened Microsoft apps
 Microsoft has made a concerted effort to enlighten several of our more popular apps, including the following:
 
--   Microsoft Edge
+- Microsoft Edge
 
--   Internet Explorer 11
+- Internet Explorer 11
 
--   Microsoft People
+- Microsoft People
 
--   Mobile Office apps, including Word, Excel, PowerPoint, OneNote, and Outlook Mail and Calendar
+- Mobile Office apps, including Word, Excel, PowerPoint, OneNote, and Outlook Mail and Calendar
 
--   Microsoft Photos
+- Microsoft Photos
 
 <!-- Microsoft OneDrive -->
 
--   Groove Music
+- Groove Music
 
--   Notepad
+- Notepad
 
--   Microsoft Paint
+- Microsoft Paint
 
--   Microsoft Movies & TV
+- Microsoft Movies & TV
 
--   Microsoft Messaging
+- Microsoft Messaging
+
+- Microsoft Remote Desktop
 
 ## Adding enlightened Microsoft apps to the allowed apps list
 You can add any or all of the enlightened Microsoft apps to your allowed apps list. Included here is the **Publisher name**, **Product or File name**, and **App Type** info for both Microsoft Intune and System Center Configuration Manager.
@@ -76,3 +78,4 @@ You can add any or all of the enlightened Microsoft apps to your allowed apps li
 |Microsoft OneDrive |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** onedrive.exe<br>**App Type:** Desktop app|
 |Notepad |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** notepad.exe<br>**App Type:** Desktop app |
 |Microsoft Paint |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** mspaint.exe<br>**App Type:** Desktop app |
+|Microsoft Remote Desktop |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** mstsc.exe<br>**App Type:** Desktop app |

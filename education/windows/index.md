@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
-author: jdeckerMS
+author: CelesteDG
 ---
 
 # Windows 10 for Education

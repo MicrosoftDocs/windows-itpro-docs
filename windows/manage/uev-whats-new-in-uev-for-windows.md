@@ -76,7 +76,11 @@ Additionally, to enable Windows 10 and UE-V to work together, configure these po
 
 While earlier versions of UE-V roamed taskbar settings between Windows 10 devices, UE-V for Windows 10, version 1607 does not synchronize taskbar settings between devices running Windows 10 and devices running previous versions of Windows.
 
-In addition, UE-for Windows does not synchronize settings between the Microsoft Calculator in Windows 10 and the Microsoft Calculator in previous versions of Windows.
+In addition, UE-V for Windows has removed support for the Windows calculator application.
+
+The Windows modern apps settings (DontSyncWindows8AppSettings) group policy is enabled by default and therefore, modern apps will not roam unless this policy is changed to disabled.
+
+Please note, UE-V will roam any AppX apps that use the WinRT settings roaming API, provided that they have been opted in to roam at the time of development by the developer so there is no definitive list.
 
 ## Support Added for Roaming Network Printers
 
