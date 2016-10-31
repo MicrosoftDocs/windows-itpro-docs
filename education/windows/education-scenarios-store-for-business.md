@@ -71,6 +71,16 @@ These apps will automatically be in your private store:
 
 As an admin, you can remove any of these apps from the private store if you'd prefer to control how apps are distributed.
 
+## Manage domain settings 
+
+Applies to: IT admins
+
+### Self-service sign up
+Self-service sign up makes it easier for teachers and students in your organization to get started with **Minecraft: Education Edition**. If you have self-service sign up enabled in your tenant, teachers can assign **Minecraft: Education Edition** to students before they have a work or school account. Students receive an email that steps them through the process of signing up for a work or school account. For more information on self-service sign up, see [Using self-service sign up in your organization](https://support.office.com/article/Using-self-service-sign-up-in-your-organization-4f8712ff-9346-4c6c-bb63-a21ad7a62cbd?ui=en-US&rs=en-US&ad=US).
+
+### Domain verification
+For education organizations, domain verification ensures you are on the academic verification list. As an admin, you might need to verify your domain using the Office 365 portal. For more information, see [Verify your Office 365 domain to prove ownership, nonprofit or education status](https://support.office.com/article/Verify-your-Office-365-domain-to-prove-ownership-nonprofit-or-education-status-or-to-activate-Yammer-87d1844e-aa47-4dc0-a61b-1b773fd4e590?ui=en-US&rs=en-US&ad=US).
+
 ## Acquire apps
 Applies to: IT admins and teachers
 

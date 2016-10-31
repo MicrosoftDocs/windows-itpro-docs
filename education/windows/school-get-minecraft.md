@@ -87,6 +87,7 @@ You can install the app on your PC. This gives you a chance to test the app and 
 ### Assign to others
 Enter email addresses for your students, and each student will get an email with a link to install the app. This option is best for older, more tech-savvy students who will always use the same PC at school. You can assign the app to individuals, groups, or add it to your private store, where students and teachers in your organization can download the app. 
 
+
 **To assign to others**
 1. Sign in to Windows Store for Business. 
 2. Click **Manage**.
@@ -95,13 +96,10 @@ Enter email addresses for your students, and each student will get an email with
 3. Click **Assign to people**.
  
     ![Assign to people](images/minecraft-assign-to-people.png)
-4. Type the name, or email address of the student you want to assign the app to, and then click **Assign**.
+4. Type the name, or email address of the student you want to assign the app to, and then click **Assign**. 
 
-    You can assign the app to students with work or school accounts. </br>
-    If you don't find the student, you can still assign the app to them. Students will receive an email with a link to Office 365 portal where they can create an account. </br>
-    OR </br>
-    As an admin, you can create a work or school account for the student.
-    
+    You can only assign the app to students with work or school accounts. If you don't find the student, you might need to add a work or school account for the student.    
+   
     ![Assign to people showing student name](images/minecraft-assign-to-people-name.png)
 
 **To finish Minecraft install (for students)**
