@@ -25,11 +25,11 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 In this topic:
 
--   [Add the test devices to the GPO membership groups](#to-add-domain-devices-to-the-gpo-membership-group)
+-   [Add the test devices to the GPO membership groups](#to-add-test-devices-to-the-gpo-membership-group)
 
 -   [Refresh Group Policy on the devices in each membership group](#to-refresh-group-policy-on-a-device)
 
--   [Check which GPOs apply to a device](#to-see-what-gpos-are-applied-to-a-device)
+-   [Check which GPOs apply to a device](#to-see-which-gpos-are-applied-to-a-device)
 
 ## To add test devices to the GPO membership groups
 
