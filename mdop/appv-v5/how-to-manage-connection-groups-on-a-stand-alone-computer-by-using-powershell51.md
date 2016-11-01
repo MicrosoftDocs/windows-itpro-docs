@@ -35,7 +35,7 @@ This topic explains the following procedures:
 
 2.  Repeat **step 1** of this procedure for each package in the connection group.
 
-<a href="" id="add-enable-cg-on-clt"></a>**To add and enable the connection group on the App-V client**
+<a href="" id="bkmk-add-enable-cg-on-clt"></a>**To add and enable the connection group on the App-V client**
 
 1.  Add the connection group by typing the following command:
 
