@@ -20,8 +20,8 @@ Included examples:
 - [Example 4: Connect directly if the host is in specified subnet](#example-4-connect-directly-if-the-host-is-in-specified-subnet)
 - [Example 5: Determine the connection type based on the host domain](#example-5-determine-the-connection-type-based-on-the-host-domain)
 - [Example 6: Determine the connection type based on the protocol](#example-6-determine-the-connection-type-based-on-the-protocol)
-- [Example 7: Determine the proxy server based on the host name matching the IP address](#example-7-determine-the-proxy-server-based-on-the-host-name-matching-the-IP-address)
-- [Example 8: Connect using a proxy server if the host IP address matches the specified IP address](#example-8-connect-using-a-proxy-server-if-the-host-IP-address-matches-the-specified-IP-address)
+- [Example 7: Determine the proxy server based on the host name matching the IP address](#example-7-determine-the-proxy-server-based-on-the-host-name-matching-the-ip-address)
+- [Example 8: Connect using a proxy server if the host IP address matches the specified IP address](#example-8-connect-using-a-proxy-server-if-the-host-IP-address-matches-the-specified-ip-address)
 - [Example 9: Connect using a proxy server if there are periods in the host name](#example-9-connect-using-a-proxy-server-if-there-are-periods-in-the-host-name)
 - [Example 10: Connect using a proxy server based on specific days of the week](#example-10-connect-using-a-proxy-server-based-on-specific-days-of-the-week)
 
