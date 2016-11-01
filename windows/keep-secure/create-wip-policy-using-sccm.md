@@ -80,7 +80,7 @@ For this example, we’re going to add Microsoft OneNote, a store app, to the **
 
 3.	Click **Allow** from the **Windows Information Protection mode** drop-down list.
 
-    Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. If you want to exempt an app, you can follow the steps in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip) section.
+    Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. If you want to exempt an app, you can follow the steps in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip-restrictions) section.
 
 4.	Pick **Store App** from the **Rule template** drop-down list.
 
@@ -164,7 +164,7 @@ For this example, we’re going to add Internet Explorer, a desktop app, to the 
 
 3.	Click **Allow** from the **Windows Information Protection mode** drop-down list.
 
-    Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. If you want to exempt an app, you can follow the steps in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip) section.
+    Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. If you want to exempt an app, you can follow the steps in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip-restrictions) section.
 
 4.	Pick **Desktop App** from the **Rule template** drop-down list.
 
@@ -304,7 +304,7 @@ For this example, we’re going to add an AppLocker XML file to the **App Rules*
 
 3.	Click **Allow** from the **Windows Information Protection mode** drop-down list.
 
-    Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. If you want to exempt an app, you can follow the steps in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip) section.
+    Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. If you want to exempt an app, you can follow the steps in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip-restrictions) section.
 
 4.	Pick the **AppLocker policy file** from the **Rule template** drop-down list.
 

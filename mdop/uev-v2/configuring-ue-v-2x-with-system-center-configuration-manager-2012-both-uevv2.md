@@ -103,9 +103,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 
 2.  In the **User Agent** tab, set the **PowerShell Execution Policy** to **Bypass**
 
- 
-
-**Create the First UE-V Policy Configuration Item**
+<a href="" id="create"></a>**Create the First UE-V Policy Configuration Item**
 
 1.  Copy the default settings configuration file from the UE-V Config Pack installation directory to a location visible to your ConfigMgr Admin Console:
 
@@ -173,8 +171,6 @@ It might be necessary to change the PowerShell execution policy to allow these s
 3.  Reimport the CAB file. The version in ConfigMgr will be updated.
 
 ## Generate a UE-V Template Baseline
-
-
 UE-V templates are distributed using a baseline containing multiple configuration items. Each configuration item contains the discovery and remediation scripts needed to install one UE-V template. The actual UE-V template is embedded within the remediation script for distribution using standard Configuration Item functionality.
 
 The UE-V template baseline is created using the UevTemplateBaselineGenerator.exe command line tool, which has these parameters:
@@ -195,7 +191,7 @@ The UE-V template baseline is created using the UevTemplateBaselineGenerator.exe
 
 The result is a baseline CAB file that is ready for import into Configuration Manager. If at a future date, you update or add a template, you can rerun the command using the same baseline name. Importing the CAB results in CI version updates on the changed templates.
 
-### <a href="" id="create2"></a>Create the First UE-V Template Baseline
+<a href="" id="create2"></a>### Create the First UE-V Template Baseline
 
 1.  Create a “master” set of UE-V templates in a stable folder location visible to the machine running your ConfigMgr Admin Console. As templates are added or updated, this folder is where they are pulled for distribution. The initial list of templates can be copied from a machine with UE-V installed. The default template location is C:\\Program Files\\Microsoft User Experience Virtualization\\Templates.
 

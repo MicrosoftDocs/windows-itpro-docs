@@ -15,7 +15,7 @@ ms.prod: w10
 
 Use the following procedure to install the Microsoft Application Virtualization (App-V) 5.1 client and Remote Desktop Services client. You must install the version of the client that matches the operating system of the target computer.
 
-**What to do before you start**
+<a href="" id="bkmk-clt-install-prereqs"></a>**What to do before you start**
 
 1.  Review and install the software prerequisites:
 
@@ -142,8 +142,6 @@ Use the following procedure to install the Microsoft Application Virtualization 
 
     **Note**  
     The client Windows Installer (.msi) supports the same set of switches, except for the **/LOG** parameter.
-
-     
 
     <table>
     <colgroup>

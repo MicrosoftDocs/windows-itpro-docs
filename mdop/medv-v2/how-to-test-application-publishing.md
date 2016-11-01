@@ -15,7 +15,7 @@ ms.prod: w7
 
 After your test of first time setup finishes, you can verify that the application publishing functionality is working as expected by performing the following tasks.
 
-**To test application publishing**
+<a href="" id="bkmk-apppub"></a>**To test application publishing**
 
 1.  Verify that the applications that you specified for publishing are visible.
 
@@ -34,8 +34,6 @@ After your test of first time setup finishes, you can verify that the applicatio
     **Important**  
     Because Windows Virtual PC does not support creating a share from a folder that is already shared, redirection does not occur for any documents that open from a shared folder, such as a My Documents folder that is located on the network. For more information, see [Operations Troubleshooting](operations-troubleshooting-medv2.md).
 
-     
-
 After you have verified that published applications are installed and functioning correctly, you can test whether applications can be added or removed from the MED-V workspace.
 
 **To test that an application can be added or removed**
@@ -51,14 +49,11 @@ After you have verified that published applications are installed and functionin
 **Note**  
 If you encounter any problems when verifying your application publication settings, see [Operations Troubleshooting](operations-troubleshooting-medv2.md).
 
- 
-
 After you have completed testing application publishing, you can test other MED-V workspace configurations to verify that they function as intended.
 
 After you have completed testing your MED-V workspace package and have verified that it is functioning as intended, you can deploy the MED-V workspace to your enterprise.
 
 ## Related topics
-
 
 [How to Test URL Redirection](how-to-test-url-redirection.md)
 

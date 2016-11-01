@@ -18,7 +18,6 @@ After you deploy User Experience Virtualization (UE-V) and its required features
 
 ## UE-V Configuration Pack supported features
 
-
 The UE-V Configuration Pack includes tools to:
 
 -   Create or update UE-V settings location template distribution baselines
@@ -103,10 +102,9 @@ It might be necessary to change the PowerShell execution policy to allow these s
 1.  Select **Administration &gt; Client Settings &gt; Properties**
 
 2.  In the **User Agent** tab, set the **PowerShell Execution Policy** to **Bypass**
-
  
 
-**Create the first UE-V policy configuration item**
+<a href="" id="create"></a>**Create the first UE-V policy configuration item**
 
 1.  Copy the default settings configuration file from the UE-V Config Pack installation directory to a location visible to your ConfigMgr Admin Console:
 
@@ -173,8 +171,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 
 3.  Reimport the CAB file. The version in ConfigMgr will be updated.
 
-## Generate a UE-V Template Baseline
-
+<a href="" id="create2"></a>## Generate a UE-V Template Baseline
 
 UE-V templates are distributed using a baseline containing multiple configuration items. Each configuration item contains the discovery and remediation scripts needed to install one UE-V template. The actual UE-V template is embedded within the remediation script for distribution using standard Configuration Item functionality.
 

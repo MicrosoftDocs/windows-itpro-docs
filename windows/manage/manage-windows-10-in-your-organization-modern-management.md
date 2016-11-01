@@ -42,7 +42,7 @@ With Windows 10, you can continue to use traditional OS deployment, but you can 
 
 <!-- The phrase "Windows Imaging and Configuration Designer (ICD)" below might need to be changed to "Windows Configuration Designer" -->
 
--   Avoid reimaging by using dynamic provisioning, enabled by a cloud-based device management services like Microsoft Intune.
+-   Avoid reimaging by using dynamic provisioning, enabled by a cloud-based device management services like [Microsoft Intune](https://docs.microsoft.com/intune/understand-explore/introduction-to-microsoft-intune).
 
 -   Create self-contained provisioning packages built with the [Windows Imaging and Configuration Designer (ICD)](https://msdn.microsoft.com/library/windows/hardware/dn916113(v=vs.85).aspx).
 
