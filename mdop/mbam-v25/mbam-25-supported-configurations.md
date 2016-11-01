@@ -283,16 +283,21 @@ MBAM supports the following versions of Configuration Manager.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft System Center 2012 R2 Configuration Manager</p></td>
+<td align="left"><p>Microsoft System Center Configuration Manager (Current Branch), version 1606</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p>Microsoft System Center 2012 R2 Configuration Manager</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64-bit</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>Microsoft System Center 2012 Configuration Manager</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Microsoft System Center Configuration Manager 2007 R2 or later</p></td>
 <td align="left"><p>SP1 or later</p></td>
 <td align="left"><p>64-bit</p>
