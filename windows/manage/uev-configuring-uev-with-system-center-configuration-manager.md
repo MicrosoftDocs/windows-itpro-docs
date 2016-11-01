@@ -104,7 +104,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 2.  In the **User Agent** tab, set the **PowerShell Execution Policy** to **Bypass**
  
 
-<a href="" id="bkmk-create"></a>**Create the first UE-V policy configuration item**
+<a href="" id="create"></a>**Create the first UE-V policy configuration item**
 
 1.  Copy the default settings configuration file from the UE-V Config Pack installation directory to a location visible to your ConfigMgr Admin Console:
 
@@ -171,7 +171,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 
 3.  Reimport the CAB file. The version in ConfigMgr will be updated.
 
-<a href="" id="bkmk-create2"></a>## Generate a UE-V Template Baseline
+<a href="" id="create2"></a>## Generate a UE-V Template Baseline
 
 UE-V templates are distributed using a baseline containing multiple configuration items. Each configuration item contains the discovery and remediation scripts needed to install one UE-V template. The actual UE-V template is embedded within the remediation script for distribution using standard Configuration Item functionality.
 
