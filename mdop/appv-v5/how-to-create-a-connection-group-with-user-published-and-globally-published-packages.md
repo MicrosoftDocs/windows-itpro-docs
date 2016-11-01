@@ -11,8 +11,6 @@ ms.prod: w10
 
 
 # How to Create a Connection Group with User-Published and Globally Published Packages
-
-
 You can create user-entitled connection groups that contain both user-published and globally published packages, using either of the following methods:
 
 -   [How to use PowerShell cmdlets to create the user-entitled connection groups](#bkmk-posh-userentitled-cg)
@@ -46,8 +44,7 @@ You can create user-entitled connection groups that contain both user-published 
 </table>
 
  
-
-**How to use PowerShell cmdlets to create user-entitled connection groups**
+<a href="" id="bkmk-posh-userentitled-cg"></a>**How to use PowerShell cmdlets to create user-entitled connection groups**
 
 1.  Add and publish packages by using the following commands:
 
@@ -67,7 +64,7 @@ You can create user-entitled connection groups that contain both user-published 
 
     **Enable-AppvClientConnectionGroup  -GroupId CG\_Group\_ID -VersionId CG\_Version\_ID**
 
-**How to use the App-V Server to create user-entitled connection groups**
+<a href="" id="bkmk-appvserver-userentitled-cg"></a>**How to use the App-V Server to create user-entitled connection groups**
 
 1.  Open the App-V 5.0 Management Console.
 

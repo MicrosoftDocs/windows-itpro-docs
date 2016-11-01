@@ -74,7 +74,7 @@ When finished, the files will be saved to your desktop. You can double-click the
 
 To trust this catalog file within a code integrity policy, the catalog must first be signed. Then, the signing certificate can be added to the code integrity policy, and the catalog file can be distributed to the individual client computers. 
 
-For information about signing catalog files by using a certificate and SignTool.exe, a free tool available in the Windows SDK, see the next section, [Catalog signing with SignTool.exe](#catalog-signing-with-signtoolexe.
+For information about signing catalog files by using a certificate and SignTool.exe, a free tool available in the Windows SDK, see the next section, [Catalog signing with SignTool.exe](#catalog-signing-with-signtoolexe).
 
 For information about adding the signing certificate to a code integrity policy, see [Add a catalog signing certificate to a code integrity policy](deploy-code-integrity-policies-steps.md#add-a-catalog-signing-certificate-to-a-code-integrity-policy).
 
