@@ -15,9 +15,6 @@ This topic explains how to use the Administration and Monitoring Website (also r
 
 To recover a moved drive, you must use the **Drive Recovery** area of the Administration and Monitoring Website. To access the **Drive Recovery** area, you must be assigned the MBAM Helpdesk Users role or the MBAM Advanced Helpdesk Users role. For more information about these roles, see [Planning for MBAM 2.5 Groups and Accounts](planning-for-mbam-25-groups-and-accounts.md#bkmk-helpdesk-roles).
 
-**Note**  
-You may have given these roles different names when you created them. For more information, see [Access accounts for the Administration and Monitoring Website (Help Desk)](#bkmk-helpdesk-roles).
-
 **To recover a moved drive**
 1.  On the computer that contains the moved drive, start the computer in Windows Recovery Environment (WinRE) mode, or start the computer by using the Microsoft Diagnostic and Recovery Toolset (DaRT).
 

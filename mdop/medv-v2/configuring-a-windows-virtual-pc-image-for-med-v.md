@@ -51,7 +51,7 @@ Follow these steps to configure your MED-V image for running first time setup:
 
 After you have completed customization of your MED-V image, you are ready to seal the image by using Sysprep.
 
-**Sealing the MED-V Image by Using Sysprep**
+<a href="" id="bkmk-seal"></a>**Sealing the MED-V Image by Using Sysprep**
 
 1.  The System Preparation tool (Sysprep) is a technology that you can use to perform image-based installations throughout the network with minimal intervention by an administrator or IT-Professional.
 
