@@ -25,8 +25,6 @@ Whether you want to synchronize settings for only default Windows applications o
 
 -   [Define a settings storage location](uev-deploy-required-features.md#ssl)
 
--   [Decide how to manage UE-V configurations](#config)
-
 -   [Enable the UE-V service](uev-deploy-required-features.md#enable-the-ue-v-service) on user computers
 
 If you want to use UE-V to synchronize user-defined settings for custom applications (third-party or line-of-business), you’ll need to install and configure these optional additional UE-V features:
