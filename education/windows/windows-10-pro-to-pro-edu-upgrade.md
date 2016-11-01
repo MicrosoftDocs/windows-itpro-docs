@@ -1,5 +1,5 @@
 ---
-title: Windows 10: Pro to Pro Education upgrade
+title: Windows 10 Pro to Pro Education upgrade
 description: Describes how IT Pros can opt into a Windows 10 Pro Education upgrade from the Windows Store for Business.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: edu
 author: CelesteDG
 ---
+
 
 # Upgrade Windows 10 Pro to Pro Education from Windows Store for Business
 
@@ -60,7 +61,7 @@ In summary, the Windows 10 Pro Education free upgrade through the Windows Store
 
 In Windows 10, version 1607, the Windows 10 Pro Education edition contains the same features as the Windows 10 Pro edition except for the following differences:
 
-- Cortana is removed from Windows 10 Pro Education
+- Windows 10 Pro Education Cortana is removed from Windows 10 Pro Education
 - Options to manage Windows 10 tips and tricks and Windows Store suggestions
 
 See [Windows 10 editions for education customers](windows-editions-for-education-customers.md) for more info about Windows 10 Pro Education and you can also [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare) to find out more about the features we support in other editions of Windows 10.
@@ -150,10 +151,13 @@ Once the device is joined to your Azure AD subscription, the user will sign in b
 
 ### Step 3: Verify that Pro Education edition is enabled
 
+> [!IMPORTANT]  
+> **TBD - Reviewers:** The screenshots in this section need to be updated for Pro Education and not Enterprise E3 (original source)
+
 You can verify the Windows 10 Pro Education in **Settings &gt; Update & Security &gt; Activation**, as illustrated in **Figure 9**.
 
 <span id="win-10-activated-subscription-active"/>
-#### Figure 9 - Windows 10 Pro Education in Settings
+**Figure 9** - Windows 10 Pro Education in Settings
 
 <img src="images/enterprise-e3-win-10-activated-enterprise-subscription-active.png" alt="Windows 10 activated and subscription active" width="624" height="407" />
 
@@ -169,26 +173,27 @@ In some instances, users may experience problems with the Windows 10 Pro Educat
 
 Use the following figures to help you troubleshoot when users experience these common problems:
 
-- [Figure 9](#win-10-activated-subscription-active) illustrates a device in a healthy state, where Windows 10 Pro, version 1607 is activated and the Windows 10 Pro Education upgrade is active.
 
-- [Figure 10](#win-10-not-activated) illustrates a device on which Windows 10 Pro, version 1607 is not activated, but the Windows 10 Pro Education upgrade is active.
+<span id="win-10-activated-subscription-active"/>
+**[Figure 9](#win-10-activated-subscription-active)** - Illustrates a device in a healthy state, where Windows 10 Pro, version 1607 is activated and the Windows 10 Pro Education upgrade is active.
 
-- [Figure 11](#subscription-not-active) illustrates a device on which Windows 10 Pro, version 1607 is activated, but the Windows 10 Pro Education upgrade is lapsed or removed.
-
-- [Figure 12](#win-10-not-activated-subscription-not-active) illustrates a device on which Windows 10 Pro, version 1607 license is not activated and the Windows 10 Pro Education upgrade is lapsed or removed.
+<img src="images/enterprise-e3-win-10-activated-enterprise-subscription-active.png" alt="Windows 10 activated and subscription active" width="624" height="407" />
 
 <span id="win-10-not-activated"/>
-### Figure 10 - Windows 10 Pro, version 1607 edition not activated in Settings
+
+**[Figure 10](#win-10-not-activated)** - Illustrates a device on which Windows 10 Pro, version 1607 is not activated, but the Windows 10 Pro Education upgrade is active.
 
 <img src="images/enterprise-e3-win-10-not-activated-enterprise-subscription-active.png" alt="Windows 10 not activated and subscription active" width="624" height="407" /><br><br>
 
 <span id="subscription-not-active"/>
-### Figure 11 - Windows 10 Pro Education upgrade lapsed or removed in Settings
+
+**[Figure 11](#subscription-not-active)** - Illustrates a device on which Windows 10 Pro, version 1607 is activated, but the Windows 10 Pro Education upgrade is lapsed or removed.
 
 <img src="images/enterprise-e3-win-10-activated-enterprise-subscription-not-active.png" alt="Windows 10 activated and subscription not active" width="624" height="407" /><br><br>
 
 <span id="win-10-not-activated-subscription-not-active"/>
-### Figure 12 - Windows 10 Pro, version 1607 edition not activated and Windows 10 Pro Education upgrade lapsed or removed in Settings
+
+**[Figure 12](#win-10-not-activated-subscription-not-active)** - Illustrates a device on which Windows 10 Pro, version 1607 license is not activated and the Windows 10 Pro Education upgrade is lapsed or removed.
 
 <img src="images/enterprise-e3-win-10-not-activated-enterprise-subscription-not-active.png" alt="Windows 10 not activated and subscription not active" width="624" height="407" /><br><br>
 
@@ -209,12 +214,12 @@ Devices must be running Windows 10 Pro, version 1607, and be Azure Active Direct
 
     A popup window will display the Windows 10 version number and detailed OS build information.
 
-    If a device is running a previous version of Windows 10 Pro (for example, version 1511), it will not be upgraded to Windows 10 Enterprise when a user signs in, even if the user has been assigned a subscription in the CSP portal.
+    If a device is running a previous version of Windows 10 Pro (for example, version 1511), it will not be upgraded to Windows 10 Pro Education when a user signs in, even if the user has been assigned a license.
 
 ## Related topics
 
-[Connect domain-joined devices to Azure AD for Windows 10 experiences](https://azure.microsoft.com/en-us/documentation/articles/active-directory-azureadjoin-devices-group-policy/)
+[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)
+
+[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)
 
 [Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)
-
-[Windows for business](https://www.microsoft.com/en-us/windowsforbusiness/default.aspx)
