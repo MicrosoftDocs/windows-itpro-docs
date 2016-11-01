@@ -8,7 +8,7 @@ ms.pagetype: edu
 author: CelesteDG
 ---
 
-# Upgrade Windows 10 Pro to Windows 10 Pro Education from Windows Store for Business
+# Upgrade Windows 10 Pro to Pro Education from Windows Store for Business
 
 Windows 10 Pro Education is a new offering in Windows 10 Anniversary Update (Windows 10, version 1607). This edition builds on the commercial version of Windows 10 Pro and provides important management controls needed in schools by providing education-specific default settings.
 
@@ -58,83 +58,12 @@ In summary, the Windows 10 Pro Education free upgrade through the Windows Store
 
 ## Compare Windows 10 Pro and Pro Education editions
 
-Windows 10 Enterprise edition has a number of features that are unavailable in Windows 10 Pro. Table 1 lists the Windows 10 Enterprise features not found in Windows 10 Pro. Many of these features are security-related, whereas others enable finer-grained device management.
+In Windows 10, version 1607, the Windows 10 Pro Education edition contains the same features as the Windows 10 Pro edition except for the following differences:
 
-*Table 1. Windows 10 Enterprise features not found in Windows 10 Pro*
+- Cortana is removed from Windows 10 Pro Education
+- Options to manage Windows 10 tips and tricks and Windows Store suggestions
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Feature</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Credential Guard<strong>\*</strong></p></td>
-<td align="left"><p>This feature uses virtualization-based security to help protect security secrets (for example, NTLM password hashes, Kerberos Ticket Granting Tickets) so that only privileged system software can access them. This helps prevent Pass-the-Hash or Pass-the-Ticket attacks.</p>
-<p>Credential Guard has the following features:</p>
-<ul>
-<li><p>**Hardware-level security**.&nbsp;&nbsp;Credential Guard uses hardware platform security features (such as Secure Boot and virtualization) to help protect derived domain credentials and other secrets.</p></li>
-<li><p>**Virtualization-based security**.&nbsp;&nbsp;Windows services that access derived domain credentials and other secrets run in a virtualized, protected environment that is isolated.</p></li>
-<li><p>**Improved protection against persistent threats**.&nbsp;&nbsp;Credential Guard works with other technologies (e.g., Device Guard) to help provide further protection against attacks, no matter how persistent.</p></li>
-<li><p>**Improved manageability**.&nbsp;&nbsp;Credential Guard can be managed through Group Policy, Windows Management Instrumentation (WMI), or Windows PowerShell.</p></li>
-</ul>
-<p>For more information, see [Protect derived domain credentials with Credential Guard](http://technet.microsoft.com/itpro/windows/keep-secure/credential-guard).</p>
-<p>\* <i>Credential Guard requires UEFI 2.3.1 or greater with Trusted Boot; Virtualization Extensions such as Intel VT-x, AMD-V, and SLAT must be enabled; x64 version of Windows; IOMMU, such as Intel VT-d, AMD-Vi; BIOS Lockdown; TPM 2.0 recommended for device health attestation (will use software if TPM 2.0 not present)</i></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Device Guard</p></td>
-<td align="left"><p>This feature is a combination of hardware and software security features that allows only trusted applications to run on a device. Even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to run executable code. Device Guard can use virtualization-based security (VBS) in Windows 10 Enterprise edition to isolate the Code Integrity service from the Windows kernel itself. With VBS, even if malware gains access to the kernel, the effects can be severely limited, because the hypervisor can prevent the malware from executing code.</p>
-<p>Device Guard does the following:</p>
-<ul>
-<li><p>Helps protect against malware</p></li>
-<li><p>Helps protect the Windows system core from vulnerability and zero-day exploits</p></li>
-<li><p>Allows only trusted apps to run</p></li>
-</ul>
-<p>For more information, see [Introduction to Device Guard](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies).</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>AppLocker management</p></td>
-<td align="left"><p>This feature helps IT pros determine which applications and files users can run on a device (also known as “whitelisting”). The applications and files that can be managed include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.</p>
-<p>For more information, see [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Application Virtualization (App-V)</p></td>
-<td align="left"><p>This feature makes applications available to end users without installing the applications directly on users’ devices. App-V transforms applications into centrally managed services that are never installed and don't conflict with other applications. This feature also helps ensure that applications are kept current with the latest security updates.</p>
-<p>For more information, see [Getting Started with App-V for Windows 10](https://technet.microsoft.com/itpro/windows/manage/appv-getting-started).</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>User Experience Virtualization (UE-V)</p></td>
-<td align="left"><p>With this feature, you can capture user-customized Windows and application settings and store them on a centrally managed network file share. When users log on, their personalized settings are applied to their work session, regardless of which device or virtual desktop infrastructure (VDI) sessions they log on to.</p>
-<p>UE-V provides the ability to do the following:</p>
-<ul>
-<li><p>Specify which application and Windows settings synchronize across user devices</p></li>
-<li><p>Deliver the settings anytime and anywhere users work throughout the enterprise</p></li>
-<li><p>Create custom templates for your third-party or line-of-business applications</p></li>
-<li><p>Recover settings after hardware replacement or upgrade, or after re-imaging a virtual machine to its initial state</p></li>
-</ul>
-<p>For more information, see [User Experience Virtualization (UE-V) for Windows 10 overview](https://technet.microsoft.com/itpro/windows/manage/uev-for-windows).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Managed User Experience</p></td>
-<td align="left"><p>This feature helps customize and lock down a Windows device’s user interface to restrict it to a specific task. For example, you can configure a device for a controlled scenario such as a kiosk or classroom device. The user experience would be automatically reset once a user signs off. You can also restrict access to services including Cortana or the Windows Store, and manage Start layout options, such as:</p>
-<ul>
-<li><p>Removing and preventing access to the Shut Down, Restart, Sleep, and Hibernate commands</p></li>
-<li><p>Removing Log Off (the User tile) from the Start menu</p></li>
-<li><p>Removing frequent programs from the Start menu</p></li>
-<li><p>Removing the All Programs list from the Start menu</p></li>
-<li><p>Preventing users from customizing their Start screen</p></li>
-<li><p>Forcing Start menu to be either full-screen size or menu size</p></li>
-<li><p>Preventing changes to Taskbar and Start menu settings</p></li>
-</ul>
-</tr>
-</tbody>
-</table>
+See [Windows 10 editions for education customers](windows-editions-for-education-customers.md) for more info about Windows 10 Pro Education and you can also [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare) to find out more about the features we support in other editions of Windows 10.
 
 ## Preparing for deployment of Windows 10 Pro Education licenses
 
