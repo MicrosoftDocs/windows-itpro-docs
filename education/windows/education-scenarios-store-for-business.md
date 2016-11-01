@@ -105,7 +105,7 @@ Teachers and IT administrators can now get trials or subscriptions to Minecraft:
 - [For teachers – Minecraft: Education Edition](https://technet.microsoft.com/edu/windows/teacher-get-minecraft)
 
 
-## Manage WSfB inventory – education
+## Manage WSfB inventory
 Applies to: IT admins and teachers
 
 ### Manage purchases
@@ -126,7 +126,7 @@ Teachers can:
 > Teachers can't manage or view apps purchased by other teachers, or purchased by admins. Teachers can only work with the apps they purchased.
  
 
-### Distribute apps - education
+### Distribute apps
 
 Manage and distribute apps to students and others in your organization. Different options are avaialble for admins and teachers. 
 
@@ -149,7 +149,7 @@ For info on how to distribute **Minecraft: Education Edition**, see [For teacher
 
 Employees will receive an email with a link that will install the app on their device. Click the link to start the Windows Store app, and then click **Install**. Also, in the Windows Store app, they can find the app under **My Library**.
 
-### Purchase additional licenses - education
+### Purchase additional licenses
 Applies to: IT admins and teachers
 
 You can manage current app licenses, or purchase more licenses for apps in your inventory. 
@@ -167,7 +167,7 @@ You'll have a summary of current license availability.
 
 Similarly, you can purchase additional subscriptions of **Minecraft: Education Edition** through Windows Store for Business. Find **Minecraft: Education Edition** in your inventory and use the previous steps for purchasing additional app licenses. 
 
-## Manage WSfB order history – education
+## Manage WSfB order history
 Applies to: IT admins and teachers
 
 You can manage your orders through Windows Store for Business. For info on order history and how to refund an order, see [Manage app orders in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/manage-orders-windows-store-for-business). 
