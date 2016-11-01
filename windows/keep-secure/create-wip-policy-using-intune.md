@@ -160,7 +160,7 @@ For this example, we’re going to add Internet Explorer, a desktop app, to the 
         </tr>
         <tr>
             <td>All fields left as “*”</td>
-            <td>All files signed by any publisher. (Not recommended.)</td>
+            <td>All files signed by any publisher. (Not recommended)</td>
         </tr>
         <tr>
             <td><strong>Publisher</strong> selected</td>
