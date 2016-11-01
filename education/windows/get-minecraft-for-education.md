@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Get Minecraft Education Edition
+# Get Minecraft: Education Edition
 
 **Applies to:**
 
