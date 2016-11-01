@@ -32,7 +32,7 @@ If you specify an &lt;exclude&gt; rule, always specify a corresponding &lt;inclu
 
 -   [Example 1: How to migrate all files from C:\\ except .mp3 files](#example-1-how-to-migrate-all-files-from-c-except-mp3-files)
 
--   [Example 2: How to migrate all files located in C:\\Data except files in C:\\Data\\tmp](#example-2-how-to-migrate-all-files-located-in-c-data-except-files-in-c-data-tmp)
+-   [Example 2: How to migrate all files located in C:\\Data except files in C:\\Data\\tmp](#example-2-how-to-migrate-all-files-located-in-cdata-except-files-in-cdatatmp)
 
 -   [Example 3: How to exclude the files in a folder but include all subfolders](#example-3-how-to-exclude-the-files-in-a-folder-but-include-all-subfolders)
 
