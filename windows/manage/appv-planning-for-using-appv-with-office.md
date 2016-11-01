@@ -35,7 +35,7 @@ Microsoft Visio and Microsoft Project do not provide support for the Thai Langua
 
 ## <a href="" id="bkmk-office-vers-supp-appv"></a>Supported versions of Microsoft Office
 
-<!-- As of February 28, 2017, the table should be updated, because at that point, support for the Office 2013 version of Office 365 will end. It might also be good to have a link to this KB article: https://support.microsoft.com/kb/3199744 -->
+<!-- As of February 28, 2017, the first row of the table should be updated, because at that point, support for the Office 2013 version of Office 365 will end. It might also be good to have a link to this KB article: https://support.microsoft.com/kb/3199744 -->
 
 The following table lists the versions of Microsoft Office that App-V supports, methods of Office package creation, supported licensing, and supported deployments.
 
