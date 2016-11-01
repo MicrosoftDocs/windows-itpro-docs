@@ -31,8 +31,6 @@ You can use the App-V Sequencer to create plug-in packages for Language Packs, L
 **Note**  
 Microsoft Visio and Microsoft Project do not provide support for the Thai Language Pack.
 
- 
-
 ## <a href="" id="bkmk-office-vers-supp-appv"></a>Supported versions of Microsoft Office
 
 <!-- As of February 28, 2017, the first row of the table should be updated, because at that point, support for the Office 2013 version of Office 365 will end. It might also be good to have a link to this KB article: https://support.microsoft.com/kb/3199744 -->
@@ -233,6 +231,8 @@ To bypass the auto-registration operation for native Word 2010, follow these ste
 7.  In the **Valuedata** box, type **1**, and then click **OK**.
 
 8.  On the File menu, click **Exit** to close Registry Editor.
+
+
 
 ## <a href="" id="bkmk-office-integration-win"></a>How Office integrates with Windows when you use App-V to deploy Office
 
