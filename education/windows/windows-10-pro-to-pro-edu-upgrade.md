@@ -75,6 +75,7 @@ You might ask why you need to synchronize these identities. The answer is so tha
 **Figure 1** illustrates the integration between the on-premises AD DS domain with Azure AD. [Microsoft Azure Active Directory Connect](http://www.microsoft.com/en-us/download/details.aspx?id=47594) (Azure AD Connect) is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
 
 ![Illustration of Azure Active Directory Connect](images/enterprise-e3-ad-connect.png)
+
 **Figure 1** - On-premises AD DS integrated with Azure AD
 
 For more information about integrating on-premises AD DS domains with Azure AD, see the following resources:
@@ -96,16 +97,19 @@ To upgrade your school's licenses from Windows 10 Pro to Windows 10 Pro Educatio
 2. Select **Launch for your organization**.
 
   ![Upgrade to Windows 10 Pro Education](images/wsfb_win10_pro_education_launch.png)
+
   **Figure 2** - Launch Windows 10 Pro Education from the Windows Store for Business
 
 3. Select **Close** once your order is confirmed.
 
   ![Windows 10 Pro Education order confirmation](images/wsfb_win10_pro_education_order_confirmation.png)
+
   **Figure 3** - Windows 10 Pro Education order confirmation
 
 4. In the Store description, verify that you can see **Windows 10 Pro Education is enabled for your organization**.
 
   ![Windows 10 Pro Education enabled for organization](images/wsfb_win10_pro_education_enabled_for_org.png)
+
   **Figure 4** - Windows 10 Pro Education is now enabled
 
 
@@ -122,16 +126,19 @@ Users can join a device to Azure AD the first time they start the device (during
 1.  During the initial setup, on the **Who owns this PC?** page, select **My organization**, and then click **Next**, as illustrated in **Figure 5**.
 
     <img src="images/enterprise-e3-who-owns.png" alt="Who owns this PC? page in Windows 10 setup" width="624" height="351" />
+
     **Figure 5** - The “Who owns this PC?” page in initial Windows 10 setup
 
 2.  On the **Choose how you’ll connect** page, select **Join Azure AD**, and then click **Next**, as illustrated in **Figure 6**.
 
     <img src="images/enterprise-e3-choose-how.png" alt="Choose how you'll connect - page in Windows 10 setup" width="624" height="351" />
+
     **Figure 6** - The “Choose how you’ll connect” page in initial Windows 10 setup
 
 3.  On the **Let’s get you signed in** page, enter the Azure AD credentials, and then click **Sign in**, as illustrated in **Figure 7**.
 
     <img src="images/enterprise-e3-lets-get.png" alt="Let's get you signed in - page in Windows 10 setup" width="624" height="351" />
+
     **Figure 7** - The “Let’s get you signed in” page in initial Windows 10 setup
 
 Now the device is Azure AD joined to the company’s subscription.
@@ -141,16 +148,19 @@ Now the device is Azure AD joined to the company’s subscription.
 1.  Go to **Settings &gt; Accounts &gt; Access work or school**, as illustrated in **Figure 8**.
 
     <img src="images/enterprise-e3-connect-to-work-or-school.png" alt="Connect to work or school configuration" width="624" height="482" />
+
     **Figure 8** - Connect to work or school configuration in Settings
 
 2.  In **Set up a work or school account**, click **Join this device to Azure Active Directory**, as illustrated in **Figure 9**.
 
     <img src="images/enterprise-e3-set-up-work-or-school.png" alt="Set up a work or school account" width="624" height="603" />
+
     **Figure 9** - Set up a work or school account
 
 3.  On the **Let’s get you signed in** page, enter the Azure AD credentials, and then click **Sign in**, as illustrated in **Figure 10**.
 
     <img src="images/enterprise-e3-lets-get-2.png" alt="Let's get you signed in - dialog box" width="624" height="603" />
+
     **Figure 10** - The “Let’s get you signed in” dialog box
 
 Now the device is Azure AD joined to the company’s subscription.
@@ -160,6 +170,7 @@ Now the device is Azure AD joined to the company’s subscription.
 Once the device is joined to your Azure AD subscription, the user will sign in by using his or her Azure AD account, as illustrated in **Figure 11**. The Windows 10 Pro Education license associated with the user will enable Windows 10 Enterprise edition capabilities on the device.
 
 <img src="images/enterprise-e3-sign-in.png" alt="Sign in, Windows 10" width="624" height="351" />
+
 **Figure 11** - Sign in by using Azure AD account
 
 ### Step 3: Verify that Pro Education edition is enabled
@@ -170,6 +181,7 @@ Once the device is joined to your Azure AD subscription, the user will sign in b
 You can verify the Windows 10 Pro Education in **Settings &gt; Update & Security &gt; Activation**, as illustrated in **Figure 12**.
 
 <span id="win-10-activated-subscription-active"/>
+
 **Figure 12** - Windows 10 Pro Education in Settings
 
 <img src="images/enterprise-e3-win-10-activated-enterprise-subscription-active.png" alt="Windows 10 activated and subscription active" width="624" height="407" />
@@ -188,6 +200,7 @@ Use the following figures to help you troubleshoot when users experience these c
 
 
 <span id="win-10-activated-subscription-active"/>
+
 **[Figure 12]** - Illustrates a device in a healthy state, where Windows 10 Pro, version 1607 is activated and the Windows 10 Pro Education upgrade is active.
 
 <img src="images/enterprise-e3-win-10-activated-enterprise-subscription-active.png" alt="Windows 10 activated and subscription active" width="624" height="407" />
@@ -238,15 +251,18 @@ If you upgraded from Windows 10 Pro to Windows 10 Pro Education, you can roll ba
 3. Select the **+** next to the **Purchased** order status to bring up more options for the order.
 
   ![Select + to bring up other order options](images/wsfb_win10_pro_education_order_options.png)
+
   **Figure 16** - Select **+** to see more options.
 
 4. Select **Refund order** to roll back the order for Windows 10 Pro Education.
 
   ![Roll back the opt-in to Windows 10 Pro Education](images/wsfb_win10_pro_education_refund_order.png)
+
   **Figure 17** - Select **+** to see more options.
 5. In the **Order history** page, confirm that the order status has changed to **Refunded**.
 
   ![Confirm the refund](images/wsfb_win10_pro_education_refund_confirmation.png)
+  
   **Figure 18** - Check the change in **Order status**.
 
 
