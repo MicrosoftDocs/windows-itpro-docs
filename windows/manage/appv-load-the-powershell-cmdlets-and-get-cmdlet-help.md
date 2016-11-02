@@ -75,9 +75,9 @@ Review the following requirements for using the Windows PowerShell cmdlets:
 <p>To configure these cmdlets to require an elevated command prompt, use one of the following methods:</p>
 <ul>
 <li><p>Run the <strong>Set-AppvClientConfiguration</strong> cmdlet with the <strong>-RequirePublishAsAdmin</strong> parameter.</p>
-<p>For more information, see:<br>[How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell](appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell.md#bkmk-admin-only-posh-topic-cg)<br>[How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#bkmk-admins-pub-pkgs).</p></li>
+<p>For more information, see:<br>[How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell](appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell.md)<br>[How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md#bkmk-admins-pub-pkgs).</p></li>
 <li><p>Enable the “Require publish as administrator” Group Policy setting for App-V Clients.</p>
-<p>For more information, see [How to Publish a Package by Using the Management Console](appv-publish-a-packages-with-the-management-console.md#bkmk-admin-pub-pkg-only-posh)</p></li>
+<p>For more information, see [How to Publish a Package by Using the Management Console](appv-publish-a-packages-with-the-management-console.md)</p></li>
 </ul>
 </td>
 </tr>

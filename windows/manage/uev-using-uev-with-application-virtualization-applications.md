@@ -23,7 +23,7 @@ UE-V monitors when an application opens by the program name and, optionally, by 
 
  **To implement settings synchronization for a virtualized application**
 
-1.  Run the UE-V template generator to collect the settings of the locally installed application whose settings you want to synchronize between computers. This process creates a settings location template. If you use a built-in template such as a Microsoft Office template, skip this step. For more information about using the UE-V template generator, see [Deploy UE-V for custom applications](uev-deploy-uev-for-custom-applications.md#createcustomtemplates).
+1.  Run the UE-V template generator to collect the settings of the locally installed application whose settings you want to synchronize between computers. This process creates a settings location template. If you use a built-in template such as a Microsoft Office template, skip this step. For more information about using the UE-V template generator, see [Deploy UE-V for custom applications](uev-deploy-uev-for-custom-applications.md).
 
 2.  Install the App-V application package if you have not already done so.
 

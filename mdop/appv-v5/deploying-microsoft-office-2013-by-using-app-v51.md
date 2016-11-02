@@ -62,7 +62,6 @@ Use the following table to get information about supported versions of Office an
 </table>
 
  
-
 ### <a href="" id="bkmk-pkg-pub-reqs"></a>Packaging, publishing, and deployment requirements
 
 Before you deploy Office by using App-V, review the following requirements.
@@ -811,7 +810,7 @@ The following table describes the requirements and options for deploying Visio 2
 <tr class="odd">
 <td align="left"><p>How do I package and publish Visio 2013 and Project 2013 with Office?</p></td>
 <td align="left"><p>You must include Visio 2013 and Project 2013 in the same package with Office.</p>
-<p>If you aren’t deploying Office, you can create a package that contains Visio and/or Project, as long as you follow the [Virtualizing Microsoft Office 2013 for Application Virtualization (App-V) 5.0](../solutions/virtualizing-microsoft-office-2013-for-application-virtualization--app-v--50-solutions.md).</p></td>
+<p>If you aren’t deploying Office, you can create a package that contains Visio and/or Project, as long as you follow [Deploying Microsoft Office 2010 by Using App-V](../appv-v5/deploying-microsoft-office-2010-by-using-app-v.md).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>How can I deploy Visio 2013 and Project 2013 to specific users?</p></td>

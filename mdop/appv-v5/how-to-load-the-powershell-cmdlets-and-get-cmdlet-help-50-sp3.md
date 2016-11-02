@@ -93,7 +93,7 @@ Review the following requirements for using the App-V PowerShell cmdlets:
 </tr>
 <tr class="even">
 <td align="left"><p>Enable the “Require publish as administrator” Group Policy setting for App-V Clients.</p></td>
-<td align="left"><p>[How to Publish a Package by Using the Management Console](how-to-publish-a-package-by-using-the-management-console-50.md#bkmk-admin-pub-pkg-only-posh)</p></td>
+<td align="left"><p>[How to Publish a Package by Using the Management Console](how-to-publish-a-package-by-using-the-management-console-50.md) </p></td>
 </tr>
 </tbody>
 </table>
@@ -105,8 +105,6 @@ Review the following requirements for using the App-V PowerShell cmdlets:
  
 
 ## <a href="" id="bkmk-load-cmdlets"></a>Loading the PowerShell cmdlets
-
-
 To load the PowerShell cmdlet modules:
 
 1.  Open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE).
@@ -143,8 +141,6 @@ To load the PowerShell cmdlet modules:
  
 
 ## <a href="" id="bkmk-get-cmdlet-help"></a>Getting help for the PowerShell cmdlets
-
-
 Starting in App-V 5.0 SP3, cmdlet help is available in two formats:
 
 <table>
@@ -204,15 +200,13 @@ Starting in App-V 5.0 SP3, cmdlet help is available in two formats:
  
 
 ## <a href="" id="bkmk-display-help-cmdlet"></a>Displaying the help for a PowerShell cmdlet
-
-
 To display help for a specific PowerShell cmdlet:
 
 1.  Open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE).
 
 2.  Type **Get-Help** &lt;*cmdlet*&gt;, for example, **Get-Help Publish-AppvClientPackage**.
 
-**Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+**Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue**? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
  
 

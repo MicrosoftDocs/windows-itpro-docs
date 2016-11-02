@@ -191,7 +191,7 @@ The UE-V template baseline is created using the UevTemplateBaselineGenerator.exe
 
 The result is a baseline CAB file that is ready for import into Configuration Manager. If at a future date, you update or add a template, you can rerun the command using the same baseline name. Importing the CAB results in CI version updates on the changed templates.
 
-<a href="" id="create2"></a>### Create the First UE-V Template Baseline
+### <a href="" id="create2"></a>Create the First UE-V Template Baseline
 
 1.  Create a “master” set of UE-V templates in a stable folder location visible to the machine running your ConfigMgr Admin Console. As templates are added or updated, this folder is where they are pulled for distribution. The initial list of templates can be copied from a machine with UE-V installed. The default template location is C:\\Program Files\\Microsoft User Experience Virtualization\\Templates.
 
