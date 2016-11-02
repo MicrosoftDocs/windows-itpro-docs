@@ -82,7 +82,7 @@ This URL will match that seen in the Firewall or network activity.</td>
 <td>Windows Defender Advanced Threat Protection service failed to connect to the server at ```variable```.</td>
 <td>Variable = URL of the Windows Defender ATP processing servers.<br>
 The service could not contact the external processing servers at that URL.</td>
-<td>Check the connection to the URL. See [Configure proxy and Internet connectivity](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#configure-proxy-and-Internet-connectivity).</td>
+<td>Check the connection to the URL. See [Configure proxy and Internet connectivity](configure-proxy-internet-windows-defender-advanced-threat-protection.md).</td>
 </tr>
 <tr>
 <td>6</td>
@@ -145,7 +145,7 @@ It may take several hours for the endpoint to appear in the portal.</td>
 <td>Windows Defender Advanced Threat Protection cannot start command channel with URL: ```variable```.</td>
 <td>Variable = URL of the Windows Defender ATP processing servers.<br>
 The service could not contact the external processing servers at that URL.</td>
-<td>Check the connection to the URL. See [Configure proxy and Internet connectivity](#configure-proxy-and-Internet-connectivity).</td>
+<td>Check the connection to the URL. See [Configure proxy and Internet connectivity](configure-proxy-internet-windows-defender-advanced-threat-protection.md).</td>
 </tr>
 <tr>
 <td>17</td>
