@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-author: TrudyHa
+author: eross-msft
 ---
 
 # Application Compatibility Toolkit (ACT) Technical Reference
