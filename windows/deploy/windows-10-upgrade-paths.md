@@ -23,7 +23,7 @@ This topic provides a summary of available upgrade paths to Windows 10. You can 
 
 >**Windows N/KN**: Windows "N" and "KN" editions follow the same upgrade paths shown below. If the pre-upgrade and post-upgrade editions are not the same type (e.g. Windows 8.1 Pro N to Windows 10 Pro), personal data will be kept but applications and settings will be removed during the upgrade process.  
 
->**Free upgrade**: The Windows 10 free upgrade offer expired on July 29, 2016. For more information, see [Free upgrade paths](#Free-upgrade-paths).
+>**Free upgrade**: The Windows 10 free upgrade offer expired on July 29, 2016. For more information, see [Free upgrade paths](#free-upgrade-paths).
 
 ✔ = Full upgrade is supported including personal data, settings, and applications.<BR>
 D = Edition downgrade; personal data is maintained, applications and settings are removed.
