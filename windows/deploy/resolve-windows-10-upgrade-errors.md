@@ -33,7 +33,7 @@ The following sections and procedures are provided in this guide:
     - [Log entry structure](#log-entry-structure): The format of a log entry is described.
     - [Analyze log files](#analyze-log-files): General procedures for log file analysis, and an example.
 - [Resolution procedures](#resolution-procedures): Causes and mitigation procedures associated with specific error codes.
-    - [0xC1900101](#0xC1900101): Information about the 0xC1900101 result code.
+    - [0xC1900101](#0xc1900101): Information about the 0xC1900101 result code.
     - [0x800xxxxx](#0x800xxxxx): Information about result codes that start with 0x800.
     - [Other result codes](#other-result-codes): Additional causes and mitigation procedures are provided for some result codes.
     - [Other error codes](#other-error-codes): Additional causes and mitigation procedures are provided for some error codes.
@@ -866,7 +866,7 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 <TD>[Analyze log files](#analyze-log-files) to determine the issue.</TD></TR>
 <TR><TD>0xC1900101 - 0x4001E
 <TD>Installation failed in the SECOND_BOOT phase with an error during PRE_OOBE operation.
-<TD>This is a generic error that occurs during the OOBE phase of setup. See the [0xC1900101](#0xC1900101) section of this guide and review general troubleshooting procedures described in that section.</TD></TR>
+<TD>This is a generic error that occurs during the OOBE phase of setup. See the [0xC1900101](#0xc1900101) section of this guide and review general troubleshooting procedures described in that section.</TD></TR>
 <TR><TD>0x80070005 - 0x4000D
 <TD>The installation failed in the SECOND_BOOT phase with an error in during MIGRATE_DATA operation. This error indicates that access was denied while attempting to migrate data.
 <TD>[Analyze log files](#analyze-log-files) to determine the data point that is reporting access denied.</TD></TR>
