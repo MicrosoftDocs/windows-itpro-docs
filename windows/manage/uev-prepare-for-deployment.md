@@ -23,7 +23,7 @@ Whether you want to synchronize settings for only default Windows applications o
 
 [Deploy required UE-V features](uev-deploy-required-features.md)
 
--   [Define a settings storage location](uev-deploy-required-features.md#ssl)
+-   [Define a settings storage location](uev-deploy-required-features.md)
 
 -   [Enable the UE-V service](uev-deploy-required-features.md#enable-the-ue-v-service) on user computers
 
@@ -33,9 +33,9 @@ If you want to use UE-V to synchronize user-defined settings for custom applicat
 
 - [Install the UE-V template generator](uev-deploy-uev-for-custom-applications.md#install-the-uev-template-generator) so you can create, edit, and validate the custom settings location templates required to synchronize custom application settings
 
-- [Create custom settings location templates](uev-deploy-uev-for-custom-applications.md#createcustomtemplates) with the UE-V template generator
+- [Create custom settings location templates](uev-deploy-uev-for-custom-applications.md) with the UE-V template generator 
 
-- [Deploy a UE-V settings template catalog](uev-deploy-uev-for-custom-applications.md#deploycatalogue) to store your custom settings location templates
+- [Deploy a UE-V settings template catalog](uev-deploy-uev-for-custom-applications.md) to store your custom settings location templates
 
 The workflow diagram below illustrates a typical UE-V deployment and the decisions you need to be prepared to make.
 
@@ -310,7 +310,7 @@ The UE-V settings storage location and settings template catalog support storing
 
     In addition, because SYSVOL uses DFSR for replication, SYSVOL cannot be used for UE-V data file replication.
 
--   Configure the share permissions and NTFS access control lists (ACLs) as specified in [Deploying the settings storage location for UE-V](uev-deploy-required-features.md#ssl).
+-   Configure the share permissions and NTFS access control lists (ACLs) as specified in [Deploying the settings storage location for UE-V](uev-deploy-required-features.md).
 
 -   Use file server clustering along with the UE-V service to provide access to copies of user state data in the event of communications failures.
 

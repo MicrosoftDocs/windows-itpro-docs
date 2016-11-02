@@ -109,7 +109,7 @@ Review the following information before you start the upgrade:
 <td align="left"><p>You must first upgrade to App-V 5.0. You cannot upgrade directly from App-V 4.x to App-V 5.0 SP3.</p>
 <p>For more information, see:</p>
 <ul>
-<li><p>[About App-V 5.0](about-app-v-50.md#bkmk-diff-46-50)</p></li>
+<li><p>[About App-V 5.0](about-app-v-50.md) </p></li>
 <li><p>[Planning for Migrating from a Previous Version of App-V](planning-for-migrating-from-a-previous-version-of-app-v.md)</p></li>
 </ul>
 <p></p></td>
