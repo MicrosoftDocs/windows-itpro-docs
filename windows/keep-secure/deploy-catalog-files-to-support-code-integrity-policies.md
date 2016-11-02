@@ -76,7 +76,7 @@ To trust this catalog file within a code integrity policy, the catalog must firs
 
 For information about signing catalog files by using a certificate and SignTool.exe, a free tool available in the Windows SDK, see the next section, [Catalog signing with SignTool.exe](#catalog-signing-with-signtoolexe).
 
-For information about adding the signing certificate to a code integrity policy, see [Add a catalog signing certificate to a code integrity policy](deploy-code-integrity-policies-steps.md#add-a-catalog-signing-certificate-to-a-code-integrity-policy).
+For information about adding the signing certificate to a code integrity policy, see [Add a catalog signing certificate to a code integrity policy](#add-a-catalog-signing-certificate-to-a-code-integrity-policy).
 
 ## Catalog signing with SignTool.exe
 

@@ -171,7 +171,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 
 3.  Reimport the CAB file. The version in ConfigMgr will be updated.
 
-<a href="" id="create2"></a>## Generate a UE-V Template Baseline
+## <a href="" id="create2"></a>Generate a UE-V Template Baseline
 
 UE-V templates are distributed using a baseline containing multiple configuration items. Each configuration item contains the discovery and remediation scripts needed to install one UE-V template. The actual UE-V template is embedded within the remediation script for distribution using standard Configuration Item functionality.
 
