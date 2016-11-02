@@ -23,7 +23,7 @@ Whether you want to synchronize settings for only default Windows applications o
 
 [Deploy required UE-V features](uev-deploy-required-features.md)
 
--   [Define a settings storage location](uev-deploy-required-features.md#)
+-   [Define a settings storage location](uev-deploy-required-features.md)
 
 -   [Enable the UE-V service](uev-deploy-required-features.md#enable-the-ue-v-service) on user computers
 
