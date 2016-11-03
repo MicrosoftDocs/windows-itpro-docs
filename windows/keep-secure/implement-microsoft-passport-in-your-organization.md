@@ -131,7 +131,7 @@ The following table lists the Group Policy settings that you can configure for H
 </td>
 </tr>
 <tr>
-<td><a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone Sign-in</a></td>
+<td><a href="prepare-people-to-use-microsoft-passport.md#bmk-remote">Phone Sign-in</a></td>
 <td>
 <p>Use Phone Sign-in</p>
 <div class="alert"><b>Note</b>  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.</div>
@@ -289,8 +289,8 @@ The following table lists the MDM policy settings that you can configure for Win
 <td>Device or user</td>
 <td>False</td>
 <td>
-<p>True: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone sign-in</a> is enabled.</p>
-<p>False: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone sign-in</a> is disabled.</p>
+<p>True: <a href="prepare-people-to-use-microsoft-passport.md#bmk-remote">Phone sign-in</a> is enabled.</p>
+<p>False: <a href="prepare-people-to-use-microsoft-passport.md#bmk-remote">Phone sign-in</a> is disabled.</p>
 </td>
 </tr>
 </table>
@@ -314,7 +314,6 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <tr class="header">
 <th align="left">Windows Hello for Business mode</th>
 <th align="left">Azure AD</th>
-<th align="left">Active Directory (AD) on-premises (available with production release of Windows Server 2016)</th>
 <th align="left">Azure AD/AD hybrid (available with production release of Windows Server 2016)</th>
 </tr>
 </thead>
@@ -322,11 +321,6 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <tr class="odd">
 <td align="left">Key-based authentication</td>
 <td align="left">Azure AD subscription</td>
-<td align="left"><ul>
-<li>Active Directory Federation Service (AD FS) (Windows Server 2016)</li>
-<li>A few Windows Server 2016 domain controllers on-site</li>
-<li>Microsoft System Center 2012 R2 Configuration Manager SP2</li>
-</ul></td>
 <td align="left"><ul>
 <li>Azure AD subscription</li>
 <li>[Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
@@ -341,12 +335,6 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <li>Azure AD subscription</li>
 <li>Intune or non-Microsoft mobile device management (MDM) solution</li>
 <li>PKI infrastructure</li>
-</ul></td>
-<td align="left"><ul>
-<li>ADFS (Windows Server 2016)</li>
-<li>Active Directory Domain Services (AD DS) Windows Server 2016 schema</li>
-<li>PKI infrastructure</li>
-<li>Configuration Manager SP2, Intune, or non-Microsoft MDM solution</li>
 </ul></td>
 <td align="left"><ul>
 <li>Azure AD subscription</li>

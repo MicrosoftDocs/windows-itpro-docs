@@ -1,8 +1,8 @@
 ---
-title: Resolve common Windows 10 upgrade errors
-description: Resolve common Windows 10 upgrade errors
+title: Resolve Windows 10 upgrade errors
+description: Resolve Windows 10 upgrade errors
 ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
-keywords: deploy, error, troubleshoot, windows, 10
+keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -11,12 +11,32 @@ author: greg-lindsay
 localizationpriority: high
 ---
 
-# Resolve common Windows 10 upgrade errors
+# Resolve Windows 10 upgrade errors
 
 **Applies to**
 -   Windows 10
 
-This topic provides a brief introduction to Windows 10 installation processes and provides resolution procedures you can use to resolve common problems.
+This topic provides a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade.
+
+If you are not an IT administrator, you can try the [quick fixes](#quick-fixes) listed in this topic. If the quick fixes do not resolve your issue, see [Get help with Windows 10 upgrade and installation errors](https://support.microsoft.com/en-us/help/10587/windows-10-get-help-with-upgrade-installation-errors) for more information.
+
+## In this topic
+
+The following sections and procedures are provided in this guide:
+
+- [The Windows 10 upgrade process](#the-windows-10-upgrade-process): An explanation of phases used during the upgrade process.<BR>
+- [Quick fixes](#quick-fixes): Steps you can take to eliminate many Windows upgrade errors.<BR>
+- [Upgrade error codes](#upgrade-error-codes): The components of an error code are explained.
+    - [Result codes](#result-codes): Information about result codes.
+    - [Extend codes](#extend-codes): Information about extend codes.
+- [Log files](#log-files): A list and description of log files useful for troubleshooting.
+    - [Log entry structure](#log-entry-structure): The format of a log entry is described.
+    - [Analyze log files](#analyze-log-files): General procedures for log file analysis, and an example.
+- [Resolution procedures](#resolution-procedures): Causes and mitigation procedures associated with specific error codes.
+    - [0xC1900101](#0xc1900101): Information about the 0xC1900101 result code.
+    - [0x800xxxxx](#0x800xxxxx): Information about result codes that start with 0x800.
+    - [Other result codes](#other-result-codes): Additional causes and mitigation procedures are provided for some result codes.
+    - [Other error codes](#other-error-codes): Additional causes and mitigation procedures are provided for some error codes.
 
 ## The Windows 10 upgrade process
 
@@ -30,7 +50,7 @@ The Windows Setup application is used to upgrade a computer to Windows 10, or to
 4. **Second boot phase**: Final settings are applied. This is also called the **OOBE boot phase**.
         - Example error: 0x4000D, 0x40017
 5. **Uninstall phase**: This phase occurs if upgrade is unsuccessful.
-        - Example error: 0x50011, 0x50012
+        - Example error: 0x50000
 
 **Figure 1**: Phases of a successful Windows 10 upgrade (uninstall is not shown):
 
@@ -39,6 +59,36 @@ The Windows Setup application is used to upgrade a computer to Windows 10, or to
 DU = Driver/device updates.<BR>
 OOBE = Out of box experience.<BR>
 WIM = Windows image (Microsoft)
+
+## Quick fixes
+
+The following steps can resolve many Windows upgrade problems.
+
+<OL>
+<LI>Remove nonessential external hardware, such as docks and USB devices.</LI> 
+<LI>Check all hard drives for errors and attempt repairs. To automatically repair hard drives, open an elevated command prompt, switch to the drive you wish to repair, and type the following command. You will be required to reboot the computer if the hard drive being repaired is also the system drive.
+<UL>
+<LI>chkdsk /F</LI>
+</UL>
+</LI>
+<LI>Attept to restore and repair system files by typing the following commands at an elevated command prompt. It may take several minutes for the command operations to be completed. For more information, see [Repair a Windows Image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/repair-a-windows-image).
+<UL>
+<LI>DISM.exe /Online /Cleanup-image /Restorehealth</LI>
+<LI>sfc /scannow</LI>
+</UL>
+</LI>
+<LI>Update Windows so that all available recommended updates are installed.</LI>
+<LI>Uninstall non-Microsoft antivirus software.
+  <UL> 
+  <LI>Use Windows Defender for protection during the upgrade. 
+  <LI>Verify compatibility information and re-install antivirus applications after the upgrade.</LI></LI>
+  </UL>
+<LI>Uninstall all nonessential software.</LI>
+<LI>Update firmware and drivers.</LI>
+<LI>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.</LI>
+<LI>Verify at least 16 GB of free space is available to upgrade a 32-bit OS, or 20 GB for a 64-bit OS.
+</OL>
+
 
 ## Upgrade error codes
 
@@ -53,11 +103,11 @@ Note: If only a result code is returned, this can be because a tool is being use
 
 ### Result codes
 
->A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. <BR>To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Common error codes](#common-error-codes) section later in this topic.
+>A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. <BR>To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Resolution procedures](#resolution-procedures) section later in this topic.
 
 Result codes can be matched to the type of error encountered. To match a result code to an error:
 
-1. Identify the error code type, using the first hexidecimal digit:
+1. Identify the error code type, either Win32 or NTSTATUS, using the first hexidecimal digit:
         <BR>8 = Win32 error code (ex: 0x**8**0070070)
         <BR>C = NTSTATUS value (ex: 0x**C**1900107)
 2. Write down the last 4 digits of the error code (ex: 0x8007**0070** = 0070). These digits correspond to the last 16 bits of the [HRESULT](https://msdn.microsoft.com/en-us/library/cc231198.aspx) or the [NTSTATUS](https://msdn.microsoft.com/en-us/library/cc231200.aspx) structure.
@@ -67,8 +117,11 @@ For example:
 - 0x80070070 = Win32 = 0070 = 0x00000070 = ERROR_DISK_FULL
 - 0xC1900107 = NTSTATUS = 0107 = 0x00000107 = STATUS_SOME_NOT_MAPPED
 
+Some result codes are self-explanatory, whereas others are more generic and require further analysis. In the examples shown above, ERROR_DISK_FULL indicates that the hard drive is full and additional room is needed to complete Windows upgrade. The message STATUS_SOME_NOT_MAPPED is more ambiguous, and means that an action is pending. In this case, the action pending is often the cleanup operation from a previous installation attempt, which can be resolved with a system reboot. 
 
 ### Extend codes
+
+>Important: Extend codes reflect the current Windows 10 upgrade process, and might change in future releases of Windows 10. The codes discussed in this section apply to Windows 10 version 1607, also known as the Anniversary Update.
 
 Extend codes can be matched to the phase and operation when an error occurred. To match an extend code to the phase and operation:
 
@@ -141,7 +194,7 @@ For example: An extend code of **0x4000D**, represents a problem during phase 4 
 
 ## Log files
 
-Various log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. The most useful log is **setupact.log**. These logs are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
+Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
 
 <P>The following table describes some log files and how to use them for troubleshooting purposes:
 
@@ -149,11 +202,13 @@ Various log files are created during each phase of the upgrade process. These lo
 <TR>
 <td BGCOLOR="#a0e4fa"><B>Log file<td BGCOLOR="#a0e4fa"><B>Phase: Location<td BGCOLOR="#a0e4fa"><B>Description<td BGCOLOR="#a0e4fa"><B>When to use
 
-<TR><TD rowspan=5>setupact.log<TD>Down-Level:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the downlevel phase. <TD>All down-level failures and starting point for rollback investigations.<BR> This is the most important log for diagnosing setup issues.
-<TR><TD>OOBE:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about actions during the OOBE phase.<TD>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.
-<TR><TD>Rollback:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about actions during rollback.<TD>Investigating generic rollbacks - 0xC1900101.
-<TR><TD>Pre-initialization (prior to downlevel):<BR>$Windows.~BT\Sources\Panther<TD>Contains information about initializing setup.<TD>If setup fails to launch.
-<TR><TD>Post-upgrade (after OOBE):<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the installation.<TD>Investigate post-upgrade related issues.
+<TR><TD rowspan=5>setupact.log<TD>Down-Level:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the downlevel phase. 
+<TD>All down-level failures and starting point for rollback investigations.<BR> This is the most important log for diagnosing setup issues.
+<TR><TD>OOBE:<BR>$Windows.~BT\Sources\Panther\UnattendGC
+<TD>Contains information about actions during the OOBE phase.<TD>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.
+<TR><TD>Rollback:<BR>$Windows.~BT\Sources\Rollback<TD>Contains information about actions during rollback.<TD>Investigating generic rollbacks - 0xC1900101.
+<TR><TD>Pre-initialization (prior to downlevel):<BR>Windows</TD><TD>Contains information about initializing setup.<TD>If setup fails to launch.
+<TR><TD>Post-upgrade (after OOBE):<BR>Windows\Panther<TD>Contains information about setup actions during the installation.<TD>Investigate post-upgrade related issues.
 
 <TR><TD>setuperr.log<TD>Same as setupact.log<TD>Contains information about setup errors during the installation.<TD>Review all errors encountered during the installation phase.
 
@@ -170,17 +225,126 @@ Event logs (*.evtx)
 <TD>$Windows.~BT\Sources\Rollback<TD>Additional logs collected during rollback.
 <TD>
 Setupmem.dmp: If OS bugchecks during upgrade, setup will attempt to extract a mini-dump.<BR>
-Setupapi: Device install issues – 0x30018<BR>
+Setupapi: Device install issues - 0x30018<BR>
 Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 
 </TABLE>
 
+### Log entry structure
 
-## Common error codes
+A setupact.log or setuperr.log entry includes the following elements:
+
+<OL>
+<LI><B>The date and time</B> - 2016-09-08 09:20:05.
+<LI><B>The log level</B> - Info, Warning, Error, Fatal Error.
+<LI><B>The logging component</B> - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS.
+<UL>
+<LI>The logging components SP (setup platform), MIG (migration engine), and CONX (compatibility information) are particularly useful for troubleshooting Windows Setup errors.
+</UL>
+<LI><B>The message</B> - Operation completed successfully.
+</OL>
+
+See the following example:
+
+| Date/Time | Log level | Component | Message |
+|------|------------|------------|------------|
+|2016-09-08 09:23:50,|  Warning |         MIG  |   Could not replace object C:\Users\name\Cookies. Target Object cannot be removed.|
+
+
+### Analyze log files
+
+<P>To analyze Windows Setup log files:
+
+<OL>
+<LI>Determine the Windows Setup error code.
+<LI>Based on the [extend code](#extend-codes) portion of the error code, determine the type and location of a [log files](#log-files) to investigate.
+<LI>Open the log file in a text editor, such as notepad.
+<LI>Using the result code portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the "abort" and abandoning" text strings described in step 7 below.
+<LI>To find the last occurrence of the result code:
+  <OL type="a">
+  <LI>Scroll to the bottom of the file and click after the last character.
+  <LI>Click **Edit**.
+  <LI>Click **Find**.
+  <LI>Type the result code.
+  <LI>Under **Direction** select **Up**.
+  <LI>Click **Find Next**.
+  </OL>
+<LI> When you have located the last occurrence of the result code, scroll up a few lines from this location in the file and review the processes that failed just prior to generating the result code.
+<LI> Search for the following important text strings:
+  <UL>
+  <LI><B>Shell application requested abort</B>
+  <LI><B>Abandoning apply due to error for object</B>
+  </UL>
+<LI> Decode Win32 errors that appear in this section.
+<LI> Write down the timestamp for the observed errors in this section.
+<LI> Search other log files for additional information matching these timestamps or errors.
+</OL>
+
+For example, assume that the error code for an error is 0x8007042B - 0x2000D. Searching for "8007042B" reveals the following content from the setuperr.log file:
+
+>Some lines in the text below are shortened to enhance readability. The date and time at the start of each line (ex: 2016-10-05 15:27:08) is shortened to minutes and seconds, and the certificate file name which is a long text string is shortened to just "CN."
+
+<P><B>setuperr.log</B> content:
+
+<pre style="font-size: 10px; overflow-y: visible">
+27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
+27:08, Error           MIG    Error 1392 while gathering object C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Shell application requested abort![gle=0x00000570]
+27:08, Error                  Gather failed. Last error: 0x00000000
+27:08, Error           SP     SPDoFrameworkGather: Gather operation failed. Error: 0x0000002C
+27:09, Error           SP     CMigrateFramework: Gather framework failed. Status: 44
+27:09, Error           SP     Operation failed: Migrate framework (Full). Error: 0x8007042B[gle=0x000000b7]
+27:09, Error           SP     Operation execution failed: 13. hr = 0x8007042B[gle=0x000000b7]
+27:09, Error           SP     CSetupPlatformPrivate::Execute: Execution of operations queue failed, abandoning. Error: 0x8007042B[gle=0x000000b7]
+</PRE>
+
+The first line indicates there was an error **0x00000570** with the file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]** (shown below):
+
+<pre style="font-size: 10px; overflow-y: visible">
+27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
+</PRE>
+
+</B>The error 0x00000570 is a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx) corresponding to: ERROR_FILE_CORRUPT: The file or directory is corrupted and unreadable.
+
+Therefore, Windows Setup failed because it was not able to migrate the corrupt file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN]**.  This file is a local system certificate and can be safely deleted. Searching the setupact.log file for additional details, the phrase "Shell application requested abort" is found in a location with the same timestamp as the lines in setuperr.log. This confirms our suspicion that this file is the cause of the upgrade failure:
+
+<P><B>setupact.log</B> content:
+
+<pre style="font-size: 10px; overflow-y: visible">
+27:00, Info                   Gather started at 10/5/2016 23:27:00
+27:00, Info [0x080489] MIG    Setting system object filter context (System)
+27:00, Info [0x0803e5] MIG    Not unmapping HKCU\Software\Classes; it is not mapped
+27:00, Info [0x0803e5] MIG    Not unmapping HKCU; it is not mapped
+27:00, Info            SP     ExecuteProgress: Elapsed events:1 of 4, Percent: 12
+27:00, Info [0x0802c6] MIG    Processing GATHER for migration unit: <System>\UpgradeFramework (CMXEAgent)
+27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
+27:08, Error           MIG    Error 1392 while gathering object C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Shell application requested abort![gle=0x00000570]
+27:08, Info            SP     ExecuteProgress: Elapsed events:2 of 4, Percent: 25
+27:08, Info            SP     ExecuteProgress: Elapsed events:3 of 4, Percent: 37
+27:08, Info [0x080489] MIG    Setting system object filter context (System)
+27:08, Info [0x0803e5] MIG    Not unmapping HKCU\Software\Classes; it is not mapped
+27:08, Info [0x0803e5] MIG    Not unmapping HKCU; it is not mapped
+27:08, Info            MIG    COutOfProcPluginFactory::FreeSurrogateHost: Shutdown in progress.
+27:08, Info            MIG    COutOfProcPluginFactory::LaunchSurrogateHost::CommandLine: -shortened-
+27:08, Info            MIG    COutOfProcPluginFactory::LaunchSurrogateHost: Successfully launched host and got control object.
+27:08, Error                  Gather failed. Last error: 0x00000000
+27:08, Info                   Gather ended at 10/5/2016 23:27:08 with result 44
+27:08, Info                   Leaving MigGather method
+27:08, Error           SP     SPDoFrameworkGather: Gather operation failed. Error: 0x0000002C
+</PRE>
+
+<P>This analysis indicates that the Windows upgrade error can be resolved by deleting the C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN] file. Note: In this example, the full, unshortened file name is  C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f. 
+
+## Resolution procedures
 
 ### 0xC1900101
 
-A common result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the SafeOS phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as the minidump file (($Windows.~bt\Sources\Rollback\setupmem.dmp), event logs (($Windows.~bt\Sources\Rollback\*.evtx), and the device install log ($Windows.~bt\Sources\Rollback\setupapi\setupapi.dev.log). The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  To resolve a rollback due to driver conflicts, run setup in the absence of drivers by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process. 
+A frequently observed result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the downlevel phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as:<BR>
+
+- The minidump file: $Windows.~bt\Sources\Rollback\setupmem.dmp, 
+- Event logs: $Windows.~bt\Sources\Rollback\*.evtx 
+- The device install log: $Windows.~bt\Sources\Rollback\setupapi\setupapi.dev.log
+
+The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  To resolve a rollback due to driver conflicts, try running setup using a minimal set of drivers and startup programs by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process. 
 
 <P>See the following general troubleshooting procedures associated with a result code of 0xC1900101:
 
@@ -222,7 +386,7 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 
 <P><TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows Setup encountered an unspecified error during the WinPE phase.
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows Setup encountered an unspecified error during Wim apply in the WinPE phase.
 <BR>This is generally caused by out-of-date drivers. 
 </TABLE>
 </TD>
@@ -251,7 +415,7 @@ A common result code is 0xC1900101. This result code can be thrown at any stage 
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A driver has caused an illegal operation.
 <BR>Windows was not able to migrate the driver, resulting in a rollback of the operating system.
-
+<P>This is a safeOS boot failure, typically caused by drivers or non-Microsoft disk encryption software. 
 </TABLE>
 </TD>
 
@@ -329,6 +493,10 @@ Disconnect all peripheral devices that are connected to the system, except for t
 <P><TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A rollback occurred due to a driver configuration issue.
+<P>Installation failed during the second boot phase while attempting the MIGRATE_DATA operation.  
+
+<P>This can occur due to incompatible drivers.  
+
 </TABLE>
 </TD>
 
@@ -336,8 +504,10 @@ Disconnect all peripheral devices that are connected to the system, except for t
 
 <TABLE cellspacing=0 cellpadding=0>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><p>Review the rollback log and determine the stop code.
-<BR>The rollback log is located in the **C:\$Windows.~BT\Sources\Panther** folder.  Look for text similar to the following:
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<P>Check supplemental rollback logs for a setupmem.dmp file, or event logs for any unexpected reboots or errors. 
+<p>Review the rollback log and determine the stop code.
+<BR>The rollback log is located in the **C:\$Windows.~BT\Sources\Panther** folder.  An example analysis is shown below. This example is not representative of all cases:
 <p>Info SP     Crash 0x0000007E detected
 <BR>Info SP       Module name           : 
 <BR>Info SP       Bugcheck parameter 1  : 0xFFFFFFFFC0000005
@@ -392,9 +562,74 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 
 ### 0x800xxxxx
 
+Result codes starting with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
 
+<P>See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
+
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+8000405 - 0x20007
+
+</TABLE>
+
+<P><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+An unspecified error occurred with a driver during the SafeOS phase.
+
+</TABLE>
+</TD>
+
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+This error has more than one possible cause. Attempt [quick fixes](#quick-fixes), and if not successful, [analyze log files](#analyze-log-files) in order to determine the problem and solution.
+
+</TABLE>
+</TD>
+</TR>
+
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+800704B8 - 0x3001A
+
+</TABLE>
+
+<P><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+An extended error has occurred during the first boot phase.
+
+</TABLE>
+</TD>
+
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+Disable or uninstall non-Microsoft antivirus applications, disconnect all unnecessary devices, and perform a [clean boot](https://support.microsoft.com/en-us/kb/929135).
+
+</TABLE>
+</TD>
+</TR>
+
 <TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <TABLE cellspacing=0 cellpadding=0>
@@ -409,7 +644,8 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a cause
+The installation failed during the second boot phase while attempting the MIGRATE_DATA operation. 
+<BR>This issue can occur due to file system, application, or driver issues.
 
 </TABLE>
 </TD>
@@ -420,7 +656,7 @@ Here is a cause
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a mitigation procedure.
+[Analyze log files](#analyze-log-files) in order to determine the file, application, or driver that is not able to be migrated. Disconnect, update, remove, or replace the device or object.
 
 </TABLE>
 </TD>
@@ -440,8 +676,7 @@ Here is a mitigation procedure.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-The installation failed during the second boot phase while attempting the MIGRATE_DATA operation. 
-<BR>This issue can occur due to an application or driver incompatibility.  
+General failure, a device attached to the system is not functioning.  
 
 </TABLE>
 </TD>
@@ -452,11 +687,7 @@ The installation failed during the second boot phase while attempting the MIGRAT
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Clean boot into Windows, and then attempt the upgrade to Windows 10.<BR>
-
-For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/en-us/kb/929135).
-
-<P>Ensure you select the option to "Download and install updates (recommended)."
+[Analyze log files](#analyze-log-files) in order to determine the device that is not functioning properly. Disconnect, update, or replace the device.
 
 </TABLE>
 </TD>
@@ -476,7 +707,7 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a cause.
+The installation failed during the second boot phase while attempting the PRE_OOBE operation.
 
 </TABLE>
 </TD>
@@ -487,70 +718,7 @@ Here is a cause.
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-Here is a mitigation procedure.
-
-</TABLE>
-</TD>
-</TR>
-
-
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
-
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
-800704B8 - 0x3001A
-
-</TABLE>
-
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
-Here is a cause.
-
-</TABLE>
-</TD>
-
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
-
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
-Here is a mitigation procedure.
-
-</TABLE>
-</TD>
-</TR>
-
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
-
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
-8000405 - 0x20007
-
-</TABLE>
-
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
-Here is a cause.
-
-</TABLE>
-</TD>
-
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
-
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
-Here is a mitigation procedure.
+This error has more than one possible cause. Attempt [quick fixes](#quick-fixes), and if not successful, [analyze log files](#analyze-log-files) in order to determine the problem and solution.
 
 </TABLE>
 </TD>
@@ -559,7 +727,7 @@ Here is a mitigation procedure.
 </TABLE>
 
 
-## Common errors I've edited but don't know how to classify
+### Other result codes
 
 <table>
 
@@ -567,6 +735,12 @@ Here is a mitigation procedure.
 <td BGCOLOR="#a0e4fa"><B>Error code</th>
 <td BGCOLOR="#a0e4fa"><B>Cause</th>
 <td BGCOLOR="#a0e4fa"><B>Mitigation</th>
+</tr>
+
+<tr>
+<td>0xC1800118</td>
+<td>WSUS has downloaded content that it cannot use due to a missing decryption key.</td>
+<td>See [Steps to resolve error 0xC1800118](https://blogs.technet.microsoft.com/wsus/2016/09/21/resolving-error-0xc1800118/) for information.</td>
 </tr>
 
 <tr>
@@ -598,7 +772,7 @@ Here is a mitigation procedure.
 <tr>
 <td>0x80246007</td>
 <td>The update was not downloaded successfully.</td>
-<td>Attempt other methods of upgrading the operatign system.<BR>
+<td>Attempt other methods of upgrading the operating system.<BR>
 Download and run the media creation tool. See [Download windows 10](https://www.microsoft.com/en-us/software-download/windows10). 
 <BR>Attempt to upgrade using .ISO or USB.<BR>
 **Note**: Windows 10 Enterprise isn’t available in the media creation tool. For more information, go to the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx).
@@ -640,12 +814,7 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 </td>
 </tr>
 
-<tr>
-<td>display is not compatible</td>
-<td>The display card installed is not compatible with Windows 10.</td>
-<td>Uninstall the display adapter and start the upgrade again. When setup completes successfully, install the latest display adapter driver using Windows Update or by downloading from the computer manufacturers website. Use compatibility mode if necessary.
-</td>
-</tr>
+
 <tr>
 <td>0x8007002 </td>
 <td>This error is specific to upgrades using System Center Configuration Manager 2012 R2 SP1 CU3 (5.00.8238.1403)</td>
@@ -656,201 +825,73 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <P>To resolve this issue, try the OS Deployment test on a client in same VLAN as the Configuration Manager server. Check the network configuration for random client-server connection issues happening on the remote VLAN.
 </td>
 </tr>
-<tr>
-<td>Error 800705B4: This operation returned because the timeout period expired.</td>
-<td>A time out issue set by the task sequence limitation to 180 mins of run time. This can also occur if the System Center client is corrupted.</td>
-<td>Review the SMSTS.log file and verify the following error is displayed:<BR>
-Command line execution failed (800705B4) TSManager 3/30/2016 10:11:29 PM 8920 (0x22D8)<BR>
-Failed to run the action: Upgrade Windows.<BR>
 
-<P>To resolve this issue, increase the default task sequence run time and change the task sequence to have the content downloaded locally prior to installation.
-</td>
 </table>
 
-## Appendix A: Less common errors I haven't edited yet
+### Other error codes
 
 <TABLE>
 
 <TR><td BGCOLOR="#a0e4fa">Error Codes<td BGCOLOR="#a0e4fa">Cause<td BGCOLOR="#a0e4fa">Mitigation</TD></TR>
-<TR><TD>0x80070003- 0x20007<TD>This error occurs when there is problem with the Internet connection during the Windows 10 upgrade.<TD>"Since this error indicates that the internet connection ran into a problem, you may attempt to fix the connectivity issues and reattempt the download of the files.
-Alternatively, you may re-create installation media using ""Media Creation Tool"" from a different connected system. Refer: https://www.microsoft.com/en-us/software-download/windows10
+<TR><TD>0x80070003- 0x20007
+<TD>This is a failure during SafeOS phase driver installation. 
 
-You can either create a USB drive or an ISO.
-"</TD></TR>
-<TR><TD>0x8007025D - 0x2000C<TD>This error occurs if the ISO file's metadata is corrupt.<TD>"Re-download the ISO/Media and re-attempt the upgrade.
+<TD>[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations) on the computer, and [analyze log files](#analyze-log-files) to determine the problem driver.
+</TD></TR>
+<TR><TD>0x8007025D - 0x2000C
+<TD>This error occurs if the ISO file's metadata is corrupt.<TD>"Re-download the ISO/Media and re-attempt the upgrade.
 
-You may alternatively, re-create installation media using ""Media Creation Tool"" Refer: https://www.microsoft.com/en-us/software-download/windows10
+Alternatively, re-create installation media the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10).
 
-You can either create a USB drive or an ISO using the Media Creation Tool.
-"</TD></TR>
-<TR><TD>0x80070490 - 0x20007<TD>The error comes up during driver installation phase and it means that some of the device driver is incompatible.<TD>"Please ensure that all the devices are working correctly. Please review the Device Manager for any errors and troubleshoot accordingly.
-Refer: https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations
+</TD></TR>
+<TR><TD>0x80070490 - 0x20007<TD>An incompatible device driver is present.
 
-Additionally, you can review the following logs to verify which I/O device is causing the problem.
- ""%systemroot%\$Windows.~BT\Sources\Panther\setupact.log"" 
+<TD>[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations) on the computer, and [analyze log files](#analyze-log-files) to determine the problem driver.
 
-If unable to review the logs, post on Windows 10 TechNet Forum (https://social.technet.microsoft.com/Forums/en-us/home?forum=win10itprogeneral&filter=alltypes&sort=lastpostdesc)
-"</TD></TR>
-<TR><TD>0xC1900101 - 0x2000B<TD>This error occurs when the device drivers of the hardware connected to the computer prevent the Windows 10 upgrade from building the migration file list.<TD>We recommended you disconnect the devices that aren't in use when you upgrade the computer.</TD></TR>
-<TR><TD>0xC1900101 - 0x2000c<TD>The Setup Platform has encountered an unspecified error during the WINPE Phase. This is generally caused by drivers which are not updated at the time when the upgrade was started.<TD>It is recommended to select "Download and install updates (recommended)" during the upgrade process. Additionally, you can contact the Hardware Vendor and get the updates for the device drivers that are connected to the system. Ensure all the devices other than the Mouse; Keyboard and Display are disconnected during upgrade process. Then start setup again.</TD></TR>
-<TR><TD>0xC1900200 - 0x20008<TD>This error occurs when the computer doesn’t meet the minimum requirements to download or upgrade to Windows 10.<TD>"Refer http://www.microsoft.com/en-us/windows/windows-10-specifications?OCID=win10_null_vanity_win10specs and make sure that the machine, on which the upgrade is being initiated, meets the minimum requirement.
+</TD></TR>
+<TR><TD>0xC1900101 - 0x2000c
+<TD>An unspecified error occurred in the SafeOS phase during WIM apply. This can be caused by an outdated driver or disk corruption.
+<TD>Run checkdisk to repair the file system. For more information, see the [quick fixes](#quick-fixes) section in this guide.
+<P>Update drivers on the computer, and select "Download and install updates (recommended)" during the upgrade process. Disconnect devices other than the mouse, keyboard and display.</TD></TR>
+<TR><TD>0xC1900200 - 0x20008
 
-Secondly use the Windows 10 Compatibility Reports to understand upgrade issues (https://blogs.technet.microsoft.com/askcore/2016/01/21/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues/)
-"</TD></TR>
-<TR><TD>0x80070004 - 0x3000D<TD>SYSTEM, LOCAL, SELF, System, and Network are reserved names that can’t be used for Computer Name.<TD>"Ensure that you do not use the reserved names as the Computer names. Rename the system to a valid Computer name.
-See KB 3086101 for more details.
-"</TD></TR>
-<TR><TD>0xC1900101 - 0x40001<TD>"This error indicates that we saw an error in the OOBE Phase - Stop 9F. This behavior occurs when device drivers do not handle power state transition requests properly. The error message most often occurs during one of the following actions: 1. Shutting down
-2. Suspending or resuming from Standby mode
-3. Suspending or resuming from Hibernate mode"<TD>"The most common causes for this error would be the connected devices on the machine / device as below and it would have suggested that we disable / disconnect them from the device /machine before performing the upgrade:
-1. Internal WIFI Modem
-2. Any External connected USB devices such as WEBCAMS; Printers; USB Hard Drives
-3. Check to be sure your computer and all devices are on the Hardware Compatibility List (HCL) and have WHQL signed and certified drivers.
+<TD>The computer doesn’t meet the minimum requirements to download or upgrade to Windows 10.
 
-The setup.exe will perform a rollback of the OS and would return to the older OS. Once the rollback is complete if we find the problem causing driver than we need to check for %SystemDrive%\$Windows.~bt\sources\Rollback\setupmem.dmp file and have a Microsoft Support Professional look into the same.
-"</TD></TR>
-<TR><TD>0xC1900101 - 0x4001E<TD>This error indicates that the installation failed in the SECOND_BOOT phase with an error during PRE_OOBE operation.<TD>This is a generic error that occurs during the OOBE phase of Setup. We recommend you to review the FAQ for Upgrade to Windows 10 (https://support.microsoft.com/en-us/help/12435/windows-10-upgrade-faq)</TD></TR>
-<TR><TD>0x80070005 - 0x4000D<TD>This error code means The installation failed in the SECOND_BOOT phase with an error in during MIGRATE_DATA operation.<TD>This issue may occur if we have any application / driver that is causing an issue while the upgrade to Windows 10 is going on.  Preform a clean boot on the system. Refer https://support.microsoft.com/en-us/kb/929135 for steps to perform a Clean boot.</TD></TR>
-<TR><TD>0x80070004 - 0x50012<TD>The Computer account for the system has an invalid name. <TD>Please ensure that the machine name does not have any invalid characters (See https://technet.microsoft.com/en-us/library/cc749460(v=ws.10).aspx). Additionally, the names should not be any of the reserved names for systems. Rename the system to a valid computer name and try the Setup again. See KB 3086101 for more details.</TD></TR>
-<TR><TD>"0xC190020e 0x80070070 - 0x50011
-0x80070070 - 0x50012
-0x80070070 - 0x60000"<TD>These errors would occur if your computer doesn’t have enough free space available to install the upgrade.<TD>"Typically to upgrade to Windows 10, you need free space of 16 GB for 32-bit OS and 20 GB for 64-bit OS. If there is not enough space refer the following article:
-https://support.microsoft.com/en-us/help/17421/windows-free-up-drive-space 
+<TD>See [Windows 10 Specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications) and verify the computer meets minimum requirements.
+
+<BR>Review logs for [compatibility information](https://blogs.technet.microsoft.com/askcore/2016/01/21/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues/).</TD></TR>
+<TR><TD>0x80070004 - 0x3000D
+<TD>This is a problem with data migration during the first boot phase. There are multiple possible causes.
+
+<TD>[Analyze log files](#analyze-log-files) to determine the issue.</TD></TR>
+<TR><TD>0xC1900101 - 0x4001E
+<TD>Installation failed in the SECOND_BOOT phase with an error during PRE_OOBE operation.
+<TD>This is a generic error that occurs during the OOBE phase of setup. See the [0xC1900101](#0xc1900101) section of this guide and review general troubleshooting procedures described in that section.</TD></TR>
+<TR><TD>0x80070005 - 0x4000D
+<TD>The installation failed in the SECOND_BOOT phase with an error in during MIGRATE_DATA operation. This error indicates that access was denied while attempting to migrate data.
+<TD>[Analyze log files](#analyze-log-files) to determine the data point that is reporting access denied.</TD></TR>
+<TR><TD>0x80070004 - 0x50012
+<TD>Windows Setup failed to open a file. 
+<TD>[Analyze log files](#analyze-log-files) to determine the data point that is reporting access problems.</TD></TR>
+<TR><TD>0xC190020e 
+<BR>0x80070070 - 0x50011
+<BR>0x80070070 - 0x50012
+<BR>0x80070070 - 0x60000
+<TD>These errors indicate the computer does not have enough free space available to install the upgrade.
+<TD>To upgrade a computer to Windows 10, it requires 16 GB of free hard drive space for a 32-bit OS, and 20 GB for a 64-bit OS. If there is not enough space, attempt to [free up drive space](https://support.microsoft.com/en-us/help/17421/windows-free-up-drive-space) before proceeding with the upgrade.
  
-Note: Once the deletion is complete, initiate the upgrade and this time you should not receive the error if sufficient space has been made. If that is not enough 
-then, you can implement solution as mentioned below.
- 
-Using External Drive
-If your device allows it, you can use an external USB drive for the upgrade process. Windows setup will backup the previous version of Windows to a USB external drive. The external drive must be at least 8GB – but having 16GB is recommended. 
-Some important points to remember if you choose to use an external storage drive for installing Windows 10:
- - We recommend that the external drive is formatted in NTFS.  Drives that are formatted in FAT32 may run into errors due to FAT32 file size limitations.  To learn   how to format in NTFS, click here.
-- USB drives are preferred over SD cards because drivers for SD cards are not migrated if the device does not support Connected Standby.
-"</TD></TR>
-
-
-
-
+<P>Note: If your device allows it, you can use an external USB drive for the upgrade process. Windows setup will back up the previous version of Windows to a USB external drive. The external drive must be at least 8GB (16GB is recommended). The external drive should be formatted using NTFS.  Drives that are formatted in FAT32 may run into errors due to FAT32 file size limitations. USB drives are preferred over SD cards because drivers for SD cards are not migrated if the device does not support Connected Standby.
+</TD></TR>
 
 </TABLE>
 
-## Appendix B: Less common errors I haven't edited and don't know how to classify
-
-<TABLE>
-
-<TR><td BGCOLOR="#a0e4fa">Error Codes<td BGCOLOR="#a0e4fa">Cause<td BGCOLOR="#a0e4fa">Mitigation</TD></TR>
-<TR><TD>Contact your system administrator to upgrade Windows Server or Enterprise Editions<TD>This issue occurs if you run the updater tool. The tool works only with the Windows 10 Home, Pro, and Education editions.<TD>To resolve this issue, use a different method to upgrade to Windows 10 version 1607. For example, download the ISO, and then run Setup from it.</TD></TR>
-<TR><TD>When doing an upgrade to Windows Version 1607 is it supported to use a custom install.wim (sysprepped) instead of the default install.wim that comes with Windows Version 1607 <TD>Unsupported<TD>It is not supported to replace the install.wim with custom wim (sysprepped or not). It is supported to do some minor changes to the default install.wim such as injecting latest cumulative update or remove inbox apps. </TD></TR>
-<TR><TD>0xC1420127<TD>The typical conversion of the error means that the specified image in the specified wim is already mounted for read/write access. When we launch the setup.exe, it checks the registry key. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WIMMount\Mounted Images to check for any previously mounted WIM files on the system and if the image is mounted we will get this error.<TD>This error would be very rare on Upgrades of WIN10 specially when upgrading to the Anniversary 1607 Build. This issue has been fixed with the Cumulative updates released in June 2016 for Windows 10. When we perform an Upgrade, it is recommended to Perform a Windows Update first and apply all important updates on the current OS and then start the Upgrade process for Windows 10.</TD></TR>
-<TR><TD>0x8004100E<TD>This error code indicates that there is a problem with an Application that has an Invalid WMI Namespace<TD>In order to fix this problem, we need to open Application Event log and Check for Errors for various applications that could be causing this error. You can use WMIDIAG tool and make sure that the WMI is working well. The step by step instructions are available at: https://technet.microsoft.com/en-us/library/ff404265.aspx</TD></TR>
-<TR><TD>0x80070057<TD>This error means that One or more arguments are invalid<TD>This is a very generic error, and it could be due to any of the issues that we would have on the machine. This error may not be related to Upgrade only. It could be due to any programs; device drivers etc. There is no specific resolution for this error</TD></TR>
-<TR><TD>0x8007007e<TD>The error indicates one of the modules required to upgrade to Windows 10 was not found, some of these modules could be manifest files, COM Classes, DLL or any app packages that may be missing.<TD>"When we start the upgrade of the OS, the Setup engine is responsible to check and confirm that all OS components / modules are running in good health, so that the upgrade succeeds. When we have any issues being reported with manifest files, COM Classes, DLL or any app packages, the setup engine would give this error. In order to fix this error, we would suggest to follow the solutions as below and then start the upgrade again.
-
-Solution 1: System File Checker
-Follow the detailed steps as in: https://support.microsoft.com/en-us/kb/929833
-
-Solution 2: Integrated CHKSUR
-Run DISM Command to verify the health of the system:
-1. Go to Start
-2. Search for """"Command Prompt""""
-3. Right Click and select """"Run as Administrator""""
-4. On the prompt type command: Dism /Online /Cleanup-Image /CheckHealth
-5. Hit Enter.
-6. When you use the /CheckHealth argument, the DISM tool will report whether the image is healthy, repairable, or non-repairable. If the image is non-repairable, you should discard the image and start again. 
-7. If the image is repairable, you can use the /RestoreHealth argument to repair the image. Dism /Online /Cleanup-Image /RestoreHealth.
-"</TD></TR>
-<TR><TD>0x8007045d<TD>This error indicates that we ran into an I/O device error.<TD>"Please ensure that all I/O devices are working correctly. Please review the Device Manager for any errors and troubleshoot accordingly.
-Refer: https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations
-
-Additionally, you can review the following logs to verify which I/O device is causing the problem.
- ""%systemroot%\$Windows.~BT\Sources\Panther\setupact.log"" 
-
-If unable to review the logs, post on Windows 10 TechNet Forum (https://social.technet.microsoft.com/Forums/en-us/home?forum=win10itprogeneral&filter=alltypes&sort=lastpostdesc)
-"</TD></TR>
-<TR><TD>0x80070542<TD>The user executing the Setup.exe does not have all permissions required to complete the upgrade. <TD>"Please ensure the user performing the upgrade is part of Local Administrators group or is a Local Admin.
-
-Additionally, to troubleshoot further you may need to identify which process is preventing access to certain resources required for upgrade process. That can be identify by using Process Monitor (https://technet.microsoft.com/en-us/sysinternals/processmonitor).
-Use this (https://support.microsoft.com/en-us/kb/939896) to understand how to use Process Monitor and then post the results to Windows 10 TechNet Forum (https://social.technet.microsoft.com/Forums/en-us/home?forum=win10itprogeneral&filter=alltypes&sort=lastpostdesc)
-"</TD></TR>
-<TR><TD>0x80070652 <TD>This error occurs when another program is being installed at the same time as the upgrade.<TD>Ensure that the are no other installation currently in progress. If there is, wait for the installation to complete. Restart the computer and do the upgrade to Windows 10.</TD></TR>
-<TR><TD>0x800F0923<TD>This error code indicates that the user entered Safe Mode during the upgrade process.<TD>In order to complete the upgrade successfully, we recommend that you reboot the system in normal mode. If a roll-back occurs, re-initiate the upgrade.</TD></TR>
-<TR><TD>0x80200056<TD>This error indicates when the upgrade attempts to use a security token for some of the operations, but the token is not currently available. <TD>You can attempt to re-login to the machine with a local administrator privileges and attempt to re-run the upgrade. Ensure that you do not logoff until the upgrade is complete.</TD></TR>
-<TR><TD>0xC0000005<TD>The error indicates that the setup process lead to an access violation<TD>"Please ensure the user performing the upgrade is part of Local Administrators group or is a Local Admin.
-
-Additionally, to troubleshoot further you may need to identify which process is preventing access to certain resources required for upgrade process. That can be identify by using Process Monitor (https://technet.microsoft.com/en-us/sysinternals/processmonitor).
-Use this (https://support.microsoft.com/en-us/kb/939896) to understand how to use Process Monitor and then post the results to Windows 10 TechNet Forum (https://social.technet.microsoft.com/Forums/en-us/home?forum=win10itprogeneral&filter=alltypes&sort=lastpostdesc)
-"</TD></TR>
-<TR><TD>0XC0000428<TD>"This error occurs when the digital signatures for one of the Boot Critical Drivers has not been verified. In most cases, we will see an error on Bootup which will be similar to as below:
-File: \Windows\system32\boot\winload.exe
-Status:0xc0000428
-Info: Windows cannot verify the digital signature for this file."<TD>"In order to fix this error, we need to look for the file that is causing the issue. The file listed in the cause section may vary as well. When this error occurs, the machine / device will show a bluescreen and will not be in a useable state. At this point, we would need to perform Automatic Repair using Windows 10 installation media. The Drivers, conflicts with other programs, malware, and memory can all cause startup problems. 
-Automatic repair can detect and fix problems that prevent your PC from starting. Refer to the steps:
-
-a. Insert the installation USB media and boot Windows Technical Preview from it.
-b. In the ‘Windows setup’ page select the ‘language to install’, ‘Time and currency format’ and the ‘keyboard or input method’ and click on ‘next’.
-c. Click on ‘Repair your computer’ and select ‘Troubleshoot’.
-d. Select ‘Automatic Repair’ and select the operating system.
-e. You will then see a blue screen and an option to choose. Choose the option Troubleshoot and select advanced options.
- f. You may choose Automatic Repair from Advanced boot option.
- g. Follow the instructions.
-
-The above steps should fix the issue and get the driver signatures back as well for the corrupted drivers. If that does not help, then we may not have any other option than performing a Clean Install of Windows 10 on the machine / device. You can create a Windows 10 installation Disc and perform a clean installation on the computer. To create a please find the below link:
-https://www.microsoft.com/en-us/software-download/windows10 
-
-Once the media is created by the tool, it will walk you through how to set up Windows 10 on your PC. During setup, you might be asked to enter a product key.
- If you bought Windows 10 and are installing it for the first time, you’ll need to enter the Windows 10 product key you received in the confirmation email after your purchase. If you don’t have a product key and you’ve not previously upgraded to Windows 10, select I need to buy a Windows 10 product key.
-"</TD></TR>
-<TR><TD>0xc1900106<TD>This indicate that upgrade process was forcefully terminated either by Rebooting or forcefully canceling the setup. <TD>"We recommended that when the Windows 10 Upgrade is initiated, one should not terminate the process at any time until the Setup completes. Before initiating the setup, we should make sure:
-1. The device (Laptop or Surface) it should be connected to power source and adequately charged.
-2. The user is not cancelling the setup on the Black Screen, when the setup.exe is installing devices and configuring user settings.
-PS: It takes time on the device configuration and migration depending upon the Speed of the CPU and the amount of RAM on the system. 
-"</TD></TR>
-<TR><TD>0xC1900208 -1047526904<TD>This error occurs when the computer does not pass the compatibility check for upgrading to Windows 10.<TD>"This error comes when there is software/driver which is not yet certified to be compatible with windows 10. Hence you might want to re-run the compatibility check before initiating the Upgrade. 
-Refer AskCore Blog: Using the Windows 10 Compatibility Reports to understand upgrade issues (https://blogs.technet.microsoft.com/askcore/2016/01/21/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues/)
-
-Once you have found the in-compatible software/drivers:
-1. Uninstall incompatible software or hardware or driver, 
-2. Now re-run the compatibility check just to verify that there no more in-compatible software/driver on the machine. 
-3. If it comes clean, initiate the upgrade.
-4. Else, repeat the steps until the compatibility check is clean.
-"</TD></TR>
-<TR><TD>Couldn't Update System Reserved Partition<TD>This error occurs because the System Reserved Partition (SRP) is full.<TD>Free up 15MB of space on the SRP using the appropriate method described in Knowledge Base article 3086249, and then try the upgrade again.</TD></TR>
-<TR><TD>MismatchedLanguage, found HardBlock<TD>This error code indicates that the Current Language installed on the machine is not Supported for the Upgrade to start.<TD>We need to have English as the base Language in order to upgrade to Windows 10. There is a Hard block for the Upgrade to be performed and the compatibility scan data is saved to %Systemroot%\$WINDOWS.~BT\Sources\Panther\CompatData_YYYY.txt</TD></TR>
-<TR><TD>Setup couldn’t start properly. Please reboot your PC and try running Windows 10 Setup again<TD>This error occurs if the upgrade files are corrupt due to a failed Windows 10 download.<TD>"The Setup.exe initializes the temporary folders to copy the data and prepare the machine for upgrade. The specific folders that are initialized are:
-
-1. C:\$Windows ~BT (Hidden Folder)
-2. C:\$Windows~WS (Hidden Folder)
-
-In order to delete the above folders we would suggest that we use the Disk Clean Up tool and delete the folders and then try to run the upgrade again.
-https://support.microsoft.com/en-us/help/17421/windows-free-up-drive-space 
-"</TD></TR>
-<TR><TD>Unable to resurrect NewSystem object. hr=0x80070002<TD>"This error occurs when the setup.exe is unable to create the newsystem data file when the upgrade starts. If we look at the C:\$Windows.~BT\Sources\Panther\diagerr.xml, we should see something like:
-CSetupPlatform::ResurrectNewSystem: 
-Failure: Win32Exception: \\?\C:\$Windows.~BT\Sources\NewSystem.dat: 
-The system cannot find the file specified. [0x00000002] __cdecl    
-UnBCL::FileStream::FileStream(const class UnBCL::String *,enum 
-UnBCL::FileMode,enum UnBCL::FileAccess,enum UnBCL::FileShare,unsigned long)"<TD>"The NewSystem.dat is an operational file that is created at the beginning of the upgrade process and used at various points in the setup phase like driver migrations; disk space detections; Platforms detections and creating a base image of the new OS that is extracted from the INSTALL.WIM, which is the source file for the upgrade.
-There are couple of solutions for this issue:
-Solution 1: Disk Space
-Check and Make sure that we have good amount of free disk space on the OS partition. Disk space requirements:
-a. For 32-bit: Greater than 16gb
-b. For 64-Bit: Greater than 20gb
-
-Solution 2: Upgrade Path
-We need to make sure that we are upgrading the existing OS, to the New Version as per the guidelines described in https://technet.microsoft.com/en-us/itpro/windows/deploy/windows-10-upgrade-paths?f=255&MSPPError=-2147217396
-
-Solution: Media Creation Tool
-Use the Media Creation tool and create an ISO and then start the upgrade of the OS. The tool can be downloaded from: http://go.microsoft.com/fwlink/?LinkId=691209
-"</TD></TR>
-
-
-</TABLE>
-
-## Appendix A: Example setupact.log
 
 
 
 ## Related topics
 
-•	Windows 10 FAQ for IT professionals
-•	Windows 10 Enterprise system requirements
-•	Windows 10 IT pro forums
+[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/en-us/windows/dn798755.aspx)
+<BR>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/en-us/windows/dn798752.aspx)
+<BR>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
+<BR>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
+<BR>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)

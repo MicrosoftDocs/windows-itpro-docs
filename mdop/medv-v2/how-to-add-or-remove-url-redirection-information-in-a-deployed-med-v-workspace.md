@@ -29,7 +29,7 @@ You can add and remove URL redirection information by performing one of the foll
 
 -   [Edit the URL Redirection Text File and Rebuild the MED-V Workspace](#bkmk-edittext)
 
-**To update URL Redirection information by using Group Policy**
+<a href="" id="bkmk-editreg"></a>**To update URL Redirection information by using Group Policy**
 
 1.  Edit the registry key multi-string value that is named `RedirectUrls`. This value is typically located at:
 
@@ -44,7 +44,7 @@ This method of editing URL redirection information is a MED-V best practice.
 
  
 
-**To rebuild the MED-V workspace by using an updated URL text file**
+<a href="" id="bkmk-edittext"></a>**To rebuild the MED-V workspace by using an updated URL text file**
 
 -   Another method of adding and removing URLs from the redirection list is to update the URL redirection text file and then use it to build a new MED-V workspace. You can then redeploy the MED-V workspace as before, by using your standard process of deployment, such as an ESD system.
 

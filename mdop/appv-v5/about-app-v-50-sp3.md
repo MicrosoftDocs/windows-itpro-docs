@@ -109,7 +109,7 @@ Review the following information before you start the upgrade:
 <td align="left"><p>You must first upgrade to App-V 5.0. You cannot upgrade directly from App-V 4.x to App-V 5.0 SP3.</p>
 <p>For more information, see:</p>
 <ul>
-<li><p>[About App-V 5.0](about-app-v-50.md#bkmk-diffs-46-50)</p></li>
+<li><p>[About App-V 5.0](about-app-v-50.md) </p></li>
 <li><p>[Planning for Migrating from a Previous Version of App-V](planning-for-migrating-from-a-previous-version-of-app-v.md)</p></li>
 </ul>
 <p></p></td>
@@ -521,7 +521,7 @@ You can manage connection groups more easily by using optional packages and othe
 <tbody>
 <tr class="odd">
 <td align="left"><p>Management console</p></td>
-<td align="left"><p>[How to Publish a Package by Using the Management Console](how-to-publish-a-package-by-using-the-management-console-50.md#bkmk-admin-pub-pkg-only-posh)</p></td>
+<td align="left"><p>[How to Publish a Package by Using the Management Console](how-to-publish-a-package-by-using-the-management-console-50.md)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>PowerShell</p></td>

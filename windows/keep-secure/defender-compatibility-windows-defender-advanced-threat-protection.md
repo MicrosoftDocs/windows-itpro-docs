@@ -30,4 +30,4 @@ Windows Defender will continue to receive updates, and the *mspeng.exe* process 
 
 The Windows Defender interface will be disabled, and users on the endpoint will not be able to use Windows Defender to perform on-demand scans or configure most options.
 
-For more information, see the **Compatibility** section in the [Windows Defender in Windows 10 topic](windows-defender-in-windows-10.md# compatibility-with-windows-defender-advanced-threat-protection).
+For more information, see the **Compatibility** section in the [Windows Defender in Windows 10 topic](windows-defender-in-windows-10.md).

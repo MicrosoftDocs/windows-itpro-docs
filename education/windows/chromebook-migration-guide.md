@@ -35,8 +35,8 @@ App migration or replacement is an essential part of your Chromebook migration. 
 
 Before you can do any analysis or make decisions about which apps to migrate or replace, you need to identify which apps are currently in use on the Chromebook devices. You will create a list of apps that are currently in use (also called an app portfolio).
 
-**Note**  
-The majority of Chromebook apps are web apps. For these apps you need to first perform Microsoft Edge compatibility testing and then publish the web app URL to the Windows users. For more information, see the [Perform app compatibility testing for web apps](#perform-testing-webapps) section.
+> [!NOTE]  
+> The majority of Chromebook apps are web apps. For these apps you need to first perform Microsoft Edge compatibility testing and then publish the web app URL to the Windows users. For more information, see the [Perform app compatibility testing for web apps](#perform-testing-webapps) section.
 
  
 

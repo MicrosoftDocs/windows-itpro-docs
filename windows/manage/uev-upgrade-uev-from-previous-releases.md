@@ -19,9 +19,11 @@ If you’re already using UE-V 2.x and you’re planning to upgrade user devices
 
 2.	Verify that UE-V settings were migrated correctly.
 
-3.	Enable the UE-V service on user devices.
+3.  Set the template storage path to your current template store.
 
-4.	Install the UE-V template generator if you want to synchronize application settings for custom applications.
+4.	Enable the UE-V service on user devices.
+
+5.	Install the UE-V template generator if you want to synchronize application settings for custom applications.
 
 > **Important**&nbsp;&nbsp;You can upgrade your existing UE-V installation to Windows 10, version 1607 from UE-V versions 2.1 or 2.0 only. If you are using a previous version of UE-V, you’ll need to upgrade from that version to UE-V 2.x before you upgrade to Windows 10, version 1607..   
 
@@ -49,7 +51,11 @@ After upgrading a user device to Windows 10, version 1607, it’s important to v
 
 2.	Navigate to **HKEY_LOCAL_MACHINE\Software\Microsoft\UEV\Agent\Configuration.**
 
-3.	Verify that the settings storage path and the settings template catalog path are pointing to the same locations as before you upgraded the device to Windows 10. 
+3.	Verify that the settings storage path and the settings template catalog path are pointing to the same locations as before you upgraded the device to Windows 10.
+
+## Set the template storage path to your current template store
+
+Template Settings Storage Path will not automatically migrate. Run Set-UEVConfiguration in PowerShell or use the settings storage path Group Policy to configure and point to your current settings storage folder.
 
 ## Enable the UE-V service on user devices
 

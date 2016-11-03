@@ -28,7 +28,8 @@ To update the UEFI on Surface Pro 3, you can download and install the Surface UE
 ## Manually configure additional security settings
 
 
->**Note:**&nbsp;&nbsp;To enter firmware setup on a Surface device, begin with the device powered off, press and hold the **Volume Up** button, then press and release the **Power** button, then release the **Volume Up** button after the device has begun to boot.
+>[!NOTE]
+>To enter firmware setup on a Surface device, begin with the device powered off, press and hold the **Volume Up** button, then press and release the **Power** button, then release the **Volume Up** button after the device has begun to boot.
 
 After the v3.11.760.0 UEFI update is installed on a Surface device, an additional UEFI menu named **Advanced Device Security** becomes available. If you click this menu, the following options are displayed:
 

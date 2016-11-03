@@ -20,6 +20,7 @@ This article describes the following:
     - [Device Guard requirements for baseline protections](#device-guard-requirements-for-baseline-protections)
     - [Device Guard requirements for improved security](#device-guard-requirements-for-improved-security)
 - [Device Guard deployment in different scenarios: types of devices](#device-guard-deployment-in-different-scenarios-types-of-devices)	
+- [Device Guard deployment in virtual machines](#device-guard-deployment-in-virtual-machines)
 - [Reviewing your applications: application signing and catalog files](#reviewing-your-applications-application-signing-and-catalog-files)
 - [Code integrity policy formats and signing](#code-integrity-policy-formats-and-signing)
 
@@ -34,6 +35,9 @@ To deploy Device Guard in a way that uses all of its virtualization-based securi
 For example, hardware that includes CPU virtualization extensions and SLAT will be hardened against malware that attempts to gain access to the kernel, but without protected BIOS options such as “Boot only from internal hard drive,” the computer could be booted (by a malicious person who has physical access) into an operating system on bootable media. For an outline of how VBS-related hardware strengthens the hardening offered by Device Guard, see [Introduction to Device Guard: virtualization-based security and code integrity policies](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md).
 
 You can deploy Device Guard in phases, and plan these phases in relation to the computer purchases you plan for your next hardware refresh.
+
+> [!WARNING]
+>  Virtualization-based protection of code integrity may be incompatible with some devices and applications. We strongly recommend testing this configuration in your lab before enabling virtualization-based protection of code integrity on production systems. Failure to do so may result in unexpected failures up to and including data loss or a blue screen error (also called a stop error).
 
 The following tables provide more information about the hardware, firmware, and software required for deployment of various Device Guard features. The tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, available in 2016, and announced as options for 2017.
 
@@ -95,6 +99,19 @@ Typically, deployment of Device Guard happens best in phases, rather than being 
 | **Fully managed devices**: Allowed software is restricted by IT department.<br>Users can request additional software, or install from a list of applications provided by IT department.<br>Examples: locked-down, company-owned desktops and laptops. | An initial baseline code integrity policy can be established and enforced. Whenever the IT department approves additional applications, it will update the code integrity policy and (for unsigned LOB applications) the catalog.<br>Code integrity policies are supported by the HVCI service. | - VBS (hardware-based) protections, enabled.<br><br>- Code integrity policies in enforced mode, with UMCI enabled. |
 | **Lightly managed devices**: Company-owned, but users are free to install software.<br>Devices are required to run organization's antivirus solution and client management tools. | Device Guard can be used to help protect the kernel, and to monitor (audit) for problem applications rather than limiting the applications that can be run. | - VBS (hardware-based) protections, enabled. When enabled with a code integrity policy in audit mode only, VBS means the hypervisor helps enforce the default kernel-mode code integrity policy, which protects against unsigned drivers or system files.<br><br>- Code integrity policies, with UMCI enabled, but running in audit mode only. This means applications are not blocked—the policy just logs an event whenever an application outside the policy is started.  |
 | **Bring Your Own Device**: Employees are allowed to bring their own devices, and also use those devices away from work. | Device Guard does not apply. Instead, you can explore other hardening and security features with MDM-based conditional access solutions, such as Microsoft Intune. | N/A | 
+
+## Device Guard deployment in virtual machines
+
+Device Guard can protect a Hyper-V virtual machine, just as it would a physical machine. The enablement steps are the same from within the virtual machine.
+
+Device Guard protects against malware running in the guest virtual machine. It does not provide additional protection from the host administrator. From the host, you can disable Device Guard for a virtual machine:
+
+` Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true`
+
+
+### Requirements for running Device Guard in Hyper-V virtual machines 
+ -   The Hyper-V host must run at least Windows Server 2016 or Windows 10 version 1607.
+ -   The Hyper-V virtual machine must be Generation 2, and running at least Windows Server 2016 or Windows 10. 
 
 ## Reviewing your applications: application signing and catalog files 
 
