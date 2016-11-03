@@ -41,7 +41,7 @@ Applies to: IT admins
 **To assign Basic Purchaser role**
 
 1. Sign in to Store for Business </br>
-    > [!NOTE]
+    > [!NOTE] </br>
     > You need to be a Global Administrator, or have the Store for Business Admin role to access the **Permissions** page.
 2. Click **Settings**, and then choose **Permissions**.
 
