@@ -12,7 +12,7 @@ localizationpriority: medium
 ---
 
 # Hybrid deployment (Surface Hub)
-A hybrid deployment requires special processing in order to set up a device account for your Microsoft Surface Hub. If you’re using a hybrid deployment, in which your organization has a mix of services, with some hosted on-premises and some hosted online, then your configuration will depend on where each service is hosted. This topic covers hybrid deployments for [Exchange hosted on-prem](#exchange-on-prem), and [Exchange hosted online](#exchange-online). Because there are so many different variations in this type of deployment, it's not possible to provide detailed instructions for all of them. The following process will work for many configurations. If the process isn't right for your setup, we recommend that you use PowerShell (see [Appendix: PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)) to achieve the same end result as documented here, and for other deployment options. You should then use the provided Powershell script to verify your Surface Hub setup. (See [Account Verification Script](appendix-a-powershell-scripts-for-surface-hub.md#acct-verification-ps-scripts).)
+A hybrid deployment requires special processing in order to set up a device account for your Microsoft Surface Hub. If you’re using a hybrid deployment, in which your organization has a mix of services, with some hosted on-premises and some hosted online, then your configuration will depend on where each service is hosted. This topic covers hybrid deployments for [Exchange hosted on-prem](#exchange-on-prem), [Exchange hosted online](#exchange-online), and [Skype for Business hybrid](#skype-for-business-hybrid). Because there are so many different variations in this type of deployment, it's not possible to provide detailed instructions for all of them. The following process will work for many configurations. If the process isn't right for your setup, we recommend that you use PowerShell (see [Appendix: PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)) to achieve the same end result as documented here, and for other deployment options. You should then use the provided Powershell script to verify your Surface Hub setup. (See [Account Verification Script](appendix-a-powershell-scripts-for-surface-hub.md#acct-verification-ps-scripts).)
 
 ## Exchange on-prem
 Use this procedure if you use Exchange on-prem.
@@ -314,3 +314,20 @@ Use this procedure if you use Exchange online.
         >**Note** You can also use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
 For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.
+
+## Skype for Business hybrid
+
+If your organization has set up [hybrid connectivity between Skype for Business Server and Skype for Business Online](https://technet.microsoft.com/library/jj205403.aspx), the guidance for creating accounts differs from a standard Surface Hub deployment.
+
+The Surface Hub requires a Skype account of the type *meetingroom*, while a normal user would use a *user* type account in Skype. If your Skype server is set up for hybrid where you might have users on the local Skype server as well as users hosted in Office 365, you might run into a few issues when trying to create a Surface Hub account.
+ 
+In a hybrid Skype environment, you have to create the user on-prem first, then move the user to the cloud. This means that your user is present in both environments (which makes SIP routing possible). The move from on-prem to online is done via the [Move-CsUser](https://technet.microsoft.com/library/gg398528.aspx) cmdlet which can only be used against user type accounts, not meetingroom type accounts. Because of this, you will not be able to move a Surface Hub account that has a meetingroom type of account. You might think of using the [Move-CsMeetingRoom](https://technet.microsoft.com/library/jj204889.aspx?f=255&MSPPError=-2147217396) cmdlet, unfortunately this will not work between the on-prem Skype server and Office 365 - it only works across on-prem Skype pools.
+ 
+In order to have a functional Surface Hub account in a Skype hybrid configuration, create the Skype account as a normal user type account, instead of creating the account as a meetingroom. First follow the Exchange steps - either [online](#exchange-online) or [on-prem](#exchange-on-prem) - and, instead of enabling the user for Skype for Business Online as described, [enable the account](https://technet.microsoft.com/library/gg398711.aspx) on the on-prem Skype server:
+
+``` 
+Enable-CsUser -Identity "Pilar Ackerman" -RegistrarPool "atl-cs-001.litwareinc.com" -SipAddressType UserPrincipalName
+```
+ 
+After the Surface Hub account is enabled for Skype for Business on-premises, you can keep the account on-premises or you can move the Surface Hub account to Office 365, using the Move-CsUser cmdlet. [Learn more about moving a Skype user to Office 365](https://technet.microsoft.com/library/jj204969.aspx).
+
