@@ -35,4 +35,5 @@
 #### [Using a room control system](use-room-control-system-with-surface-hub.md)
 ### [Troubleshoot Microsoft Surface Hub](troubleshoot-surface-hub.md)
 ### [Appendix: PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)
-### [Change history for Surface Hub](change-history-surface-hub.md)
+## [Differences between Surface Hub and Windows 10 Enterprise](differences-between-surface-hub-and-windows-10-enterprise.md)
+## [Change history for Surface Hub](change-history-surface-hub.md)
