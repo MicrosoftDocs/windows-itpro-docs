@@ -30,7 +30,7 @@ To run the reports, you must be a member of the **MBAM Report Users** group, whi
 
  
 
-**To open the Administration and Monitoring Website**
+<a href="" id="bkmk-openadmin"></a>**To open the Administration and Monitoring Website**
 
 1.  Open a web browser and navigate to the Administration and Monitoring Website. The default URL for the Administration and Monitoring Website is:
 
@@ -47,7 +47,7 @@ To run the reports, you must be a member of the **MBAM Report Users** group, whi
 
      
 
-**To generate an Enterprise Compliance Report**
+<a href="" id="bkmk-enterprise"></a>**To generate an Enterprise Compliance Report**
 
 1.  From the Administration and Monitoring Website, select the **Reports** node from the left navigation pane, select **Enterprise Compliance Report**, and select the filters that you want to use. The available filters for the Enterprise Compliance Report are:
 
@@ -61,7 +61,7 @@ To run the reports, you must be a member of the **MBAM Report Users** group, whi
 
 4.  Select the plus sign (+) next to the computer name to view information about the volumes on the computer.
 
-**To generate a Computer Compliance Report**
+<a href="" id="bkmk-computercomp"></a>**To generate a Computer Compliance Report**
 
 1.  From the Administration and Monitoring Website, select the **Report** node from the left navigation pane, and then select **Computer Compliance Report**. Use the Computer Compliance Report to search for **User name** or **Computer name**.
 
@@ -74,9 +74,7 @@ To run the reports, you must be a member of the **MBAM Report Users** group, whi
     **Note**  
     An MBAM client computer is considered compliant if the computer matches or exceeds the requirements of the MBAM Group Policy settings.
 
-     
-
-**To generate a Recovery Key Audit Report**
+<a href="" id="bkmk-recoverykey"></a>**To generate a Recovery Key Audit Report**
 
 1.  From the Administration and Monitoring Website, select the **Report** node in the left navigation pane, and then select **Recovery Audit Report**. Select the filters for your Recovery Key Audit Report. The available filters for recovery key audits are as follows:
 

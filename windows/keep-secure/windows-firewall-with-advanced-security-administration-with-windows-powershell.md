@@ -36,7 +36,7 @@ This guide is intended for IT pros, system administrators, and IT managers, and 
 
 | Section | Description |
 | - | - |
-| [Set profile global defaults](#set-profile-global-defaults) | Enable and control firewall behavior|
+| [Set profile global defaults](#bkmk-profileglobaldefaults) | Enable and control firewall behavior|
 | [Deploy basic firewall rules](#deploy-basic-firewall-rules)| How to create, modify, and delete firewall rules| 
 | [Manage Remotely](#manage-remotely) | Remote management by using `-CimSession`| 
 | [Deploy basic IPsec rule settings](#deploy-basic-ipsec-rule-settings) | IPsec rules and associated parameters| 

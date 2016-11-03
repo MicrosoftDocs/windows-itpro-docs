@@ -216,3 +216,4 @@ Enabling allows user to set deferral periods for upgrades and updates.  It also 
 - [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
 - [Manage Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
 - [Manage Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)
+- [Manage device restarts after updates](waas-restart.md)

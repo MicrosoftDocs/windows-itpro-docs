@@ -137,6 +137,8 @@ The following tables show the languages that are supported for the MBAM Client (
 
 ### MBAM Server operating system requirements
 
+We strongly recommend that you run the MBAM Client and MBAM Server on the same line of operating systems. For example, Windows 10 with Windows Server 2016, Windows 8.1 with Windows Server 2012 R2, and so on.
+
 The following table lists the operating systems that are supported for the MBAM Server installation.
 
 <table>
@@ -156,21 +158,27 @@ The following table lists the operating systems that are supported for the MBAM 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows Server 2008 R2</p></td>
-<td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
-<td align="left"><p>SP1</p></td>
+<td align="left"><p>Windows Server 2016</p></td>
+<td align="left"><p>Standard or Datacenter</p></td>
+<td align="left"></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p>Windows Server 2012 R2</p></td>
+<td align="left"><p>Standard or Datacenter</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64-bit</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>Windows Server 2012</p></td>
 <td align="left"><p>Standard or Datacenter</p></td>
 <td align="left"></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Windows Server 2012 R2</p></td>
-<td align="left"><p>Standard or Datacenter</p></td>
-<td align="left"><p></p></td>
+<td align="left"><p>Windows Server 2008 R2</p></td>
+<td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
+<td align="left"><p>SP1</p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 </tbody>
@@ -275,16 +283,21 @@ MBAM supports the following versions of Configuration Manager.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Microsoft System Center 2012 R2 Configuration Manager</p></td>
+<td align="left"><p>Microsoft System Center Configuration Manager (Current Branch), version 1606</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p>Microsoft System Center 2012 R2 Configuration Manager</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64-bit</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>Microsoft System Center 2012 Configuration Manager</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Microsoft System Center Configuration Manager 2007 R2 or later</p></td>
 <td align="left"><p>SP1 or later</p></td>
 <td align="left"><p>64-bit</p>
@@ -441,6 +454,8 @@ The following table lists the server processor, RAM, and disk space requirements
 
 ### Client operating system requirements
 
+We strongly recommend that you run the MBAM Client and MBAM Server on the same line of operating systems. For example, Windows 10 with Windows Server 2016, Windows 8.1 with Windows Server 2012 R2, and so on.
+
 The following table lists the operating systems that are supported for MBAM Client installation. The same requirements apply to the Stand-alone and the Configuration Manager Integration topologies.
 
 <table>
@@ -472,20 +487,14 @@ The following table lists the operating systems that are supported for MBAM Clie
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Windows 8</p></td>
-<td align="left"><p>Enterprise</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit or 64-bit</p></td>
-</tr>
-<tr class="even">
 <td align="left"><p>Windows 7</p></td>
 <td align="left"><p>Enterprise or Ultimate</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Windows To Go</p></td>
-<td align="left"><p>Windows 8, Windows 8.1, and Windows 10 Enterprise</p></td>
+<td align="left"><p>Windows 8.1 and Windows 10 Enterprise</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
@@ -532,30 +541,24 @@ The following table lists the operating systems that are supported for MBAM Grou
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Windows 8</p></td>
-<td align="left"><p>Enterprise, or Pro</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>32-bit or 64-bit</p></td>
-</tr>
-<tr class="even">
 <td align="left"><p>Windows 7</p></td>
 <td align="left"><p>Enterprise, or Ultimate</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Windows Server 2012 R2</p></td>
 <td align="left"><p>Standard or Datacenter</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>Windows Server 2012</p></td>
 <td align="left"><p>Standard or Datacenter</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Windows Server 2008 R2</p></td>
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
 <td align="left"><p>SP1</p></td>

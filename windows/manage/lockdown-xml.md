@@ -88,7 +88,7 @@ The following example is a complete lockdown XML file that disables Action Cente
 
 ![XML for Apps](images/AppsXML.png)
 
-The Apps setting serves as an allow list and specifies the applications that will be available in the All apps list. Apps that are not included in this setting are hidden from the user and blocked from running. If you don't include the Apps setting in the file, all apps on the device are available to the user.
+The Apps setting serves as an allow list and specifies the applications that will be available in the All apps list. Apps that are not included in this setting are hidden from the user and blocked from running. 
 
 You provide the product ID for each app in your file. The product ID identifies an app package, and an app package can contain multiple apps, so you should also provide the App User Model ID (AUMID) to differentiate the app. Optionally, you can set an app to run automatically. [Get product ID and AUMID for apps in Windows 10 Mobile.](product-ids-in-windows-10-mobile.md)
 
@@ -385,7 +385,7 @@ For a list of the settings and quick actions that you can allow or block, see [S
  
  You can add custom configurations by role. In addition to the role configuration, you must also install a login application on the device. The app displays a list of available roles on the device; the user taps a role, such as "Manager"; the configuration defined for the "Manager" role is applied.
  
- [Learn how to create a login application that will work with your Lockdown XML file.](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DeviceLockdownAzureLogin)
+ [Learn how to create a login application that will work with your Lockdown XML file.](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DeviceLockdownAzureLogin) For reference, see the [Windows.Embedded.DeviceLockdown API](https://msdn.microsoft.com/library/windows/apps/windows.embedded.devicelockdown).
  
  In the XML file, you define each role with a GUID and name, as shown in the following example:
  

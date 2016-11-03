@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# For teachers: get Minecraft Education Edition
+# For teachers - get Minecraft: Education Edition
 
 **Applies to:**
 
@@ -18,29 +18,29 @@ Learn how teachers can get and distribute Minecraft: Education Edition.
 
 ## Add Minecraft to your Windows Store for Business 
 
-1. Go to [http://education.minecraft.net/](http://education.minecraft.net/) and select **Get the app**.
+1. Go to [http://education.minecraft.net/](http://education.minecraft.net/) and select **GET STARTED**.
 
-    ![Click Get the app](images/teacher-get-app.png) 
+    <!-- ![Click Get the app](images/teacher-get-app.png) -->
 
 2. Enter your email address.
 
-    ![Enter school email address](images/enter-email.png)
+    <!-- ![Enter school email address](images/enter-email.png) -->
     
 3. Select **Get the app**. This will take you to the Windows Store for Business to download the app. You will also receive an email with instructions and a link to the Store.
 
-    ![You can get the app now](images/get-the-app.png)
+    <!-- ![You can get the app now](images/get-the-app.png) -->
 
 4. Sign in to Windows Store for Business with your email address.
 
 5. Read and accept the Windows Store for Business Service Agreement, and then select **Next**.
 
-6. **Minecraft Education Edition** opens in the Windows Store for Business. Select **Get the app**. This places **Minecraft Education Edition** in your Store inventory.
+6. **Minecraft: Education Edition** opens in the Windows Store for Business. Select **Get the app**. This places **Minecraft: Education Edition** in your Windows Store for Business inventory.
 
     ![Get Minecraft app in Store](images/minecraft-get-the-app.png)
     
 ## Distribute Minecraft
 
-After Minecraft Education Edition is added to your Windows Store for Business, you have three options:
+After Minecraft: Education Edition is added to your Windows Store for Business inventory, you have three options:
 
 - You can install the app on your PC.
 - You can assign the app to others.  
@@ -52,7 +52,7 @@ After Minecraft Education Edition is added to your Windows Store for Business, y
 You can install the app on your PC. This gives you a chance to work with the app before using it with your students.   
 
 1. Sign in to Windows Store for Business. 
-2. Click **Manage**, and then click **Install for me**.
+2. Click **Manage**, and then click **Install**.
 
     ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)
 
@@ -65,17 +65,17 @@ Enter email addresses for your students, and each student will get an email with
 1. Sign in to Windows Store for Business. 
 2. Click **Manage**.
 
-    ![Minecraft Education Edition product page](images/mc-assign-to-others-teacher.png)
+    ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)
 
-3. Click **Assign to people**.
- 
-    ![Assign to people](images/minecraft-assign-to-people.png)
+3. Click **Invite people**.
     
 4. Type the name, or email address of the student you want to assign the app to, and then click **Assign**.
 
-   You can only assign the app to students with work or school accounts. If you don't find the student, contact your IT admin to add a work or school account for the student.
+   ![Assign to people showing student name](images/minecraft-assign-to-people-name.png)
+   
+   You can assign the app to students with work or school accounts. </br>
+   If you don't find the student, you can still assign the app to them if self-service sign up is supported for your domain. Students will receive an email with a link to Office 365 portal where they can create an account, and then install **Minecraft: Education Edition**. Questions about self-service sign up? Check with your admin. 
 
-    ![Assign to people showing student name](images/minecraft-assign-to-people-name.png)
 
 **To finish Minecraft install (for students)**
 
@@ -97,7 +97,7 @@ Students will receive an email with a link that will install the app on their PC
     ![My Library for example student](images/minecraft-my-library.png)  
 
 ### Download for others
-Download for others allows teachers or IT admins to download a packages that they can install on student PCs. This will install Minecraft: Education Edition on the PC, and allows anyone with a Windows account to use the app on that PC. This option is best for younger students, and for shared computers. Choose this option when:
+Download for others allows teachers or IT admins to download a packages that they can install on student PCs. This will install Minecraft: Education Edition on the PC, and allows anyone with a Windows account to use the app on that PC. This option is best for students, and for shared computers. Choose this option when:
 - You have administrative permissions to install apps on the PC. 
 - You want to install this app on each of your student's Windows 10 (at least version 1511) PCs. 
 - Your students share Windows 10 computers, but sign in with their own Windows account. 
@@ -152,8 +152,8 @@ If you are still having trouble installing the app, you can get more help on our
 
 ## Related topics
 
-[Get Minecraft Education Edition](get-minecraft-for-education.md)
+[Get Minecraft: Education Edition](get-minecraft-for-education.md)
 
-[For IT admins: get Minecraft Education Edition](school-get-minecraft.md)
+[For IT admins: get Minecraft: Education Edition](school-get-minecraft.md)
 
 

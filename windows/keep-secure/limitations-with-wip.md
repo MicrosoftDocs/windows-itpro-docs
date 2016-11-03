@@ -71,7 +71,12 @@ This table provides info about the most common problems you might encounter whil
     </tr>
     <tr>
         <td>You can't upload an enterprise file to a personal location using Microsoft Edge or Internet Explorer.</td>
-        <td>A message appears stating that the content is marked as **Work** and the user isn't given an option to override to **Personal**.</td>
-        <td>Open File Explorer and change the file ownership to **Personal** before you upload.</td>
+        <td>A message appears stating that the content is marked as <strong>Work</strong> and the user isn't given an option to override to <strong>Personal</strong>.</td>
+        <td>Open File Explorer and change the file ownership to <strong>Personal</strong> before you upload.</td>
+    </tr>
+    <tr>
+        <td>ActiveX controls should be used with caution.</td>
+        <td>Webpages that use ActiveX controls can potentially communicate with other outside processes that aren’t protected by using WIP.</td>
+        <td>We recommend that you switch to using Microsoft Edge, the more secure and safer browser that prevents the use of ActiveX controls. We also recommend that you limit the usage of Internet Explorer 11 to only those line-of-business apps that require legacy technology.<p>For more info, see [Out-of-date ActiveX control blocking](https://technet.microsoft.com/en-us/itpro/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking).</td>
     </tr>
 </table>                 

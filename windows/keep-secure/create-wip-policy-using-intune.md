@@ -160,7 +160,7 @@ For this example, we’re going to add Internet Explorer, a desktop app, to the 
         </tr>
         <tr>
             <td>All fields left as “*”</td>
-            <td>All files signed by any publisher. (Not recommended.)</td>
+            <td>All files signed by any publisher. (Not recommended)</td>
         </tr>
         <tr>
             <td><strong>Publisher</strong> selected</td>
@@ -455,13 +455,13 @@ After you've decided where your protected apps can access enterprise data on you
 
 	    - **Yes.** Allows Windows Search to search and index encrypted corporate data and Store apps.
 
-	    - **No, or not configured (recommended).** Stops Windows Search from searching and indexing encrypted corporate data and Store apps.
+	    - **No, or not configured (recommended).** Stops Windows Search from searching and indexing encrypted corporate data and Store apps. 
 
-    - **Show the Windows Information Protection icon overlay.** Determines whether the Windows Information Protection icon overlay appears on corporate files or in the **Start** menu, on top of the tiles for your unenlightened protected apps. The options are:
+    - **Show the Windows Information Protection icon overlay.** Determines whether the Windows Information Protection icon overlay appears on corporate files in the Save As and File Explorer views. The options are:
 
-    	- **Yes (recommended).** Allows the Windows Information Protection icon overlay to appear for files or on top of the tiles for your unenlightened protected apps in the **Start** menu.
+    	- **Yes.** Allows the Windows Information Protection icon overlay to appear on corporate files in the Save As and File Explorer views. Additionally, for unenlightened but allowed apps, the icon overlay also appears on the app tile and with *Managed* text on the app name in the **Start** menu.
 
-	    - **No, or not configured.** Stops the Windows Information Protection icon overlay from appearing for files or on top of the tiles for your unenlightened protected apps in the **Start** menu.
+        - **No, or not configured (recommended).** Stops the Windows Information Protection icon overlay from appearing on corporate files or unenlightened, but allowed apps. Not configured is the default option.
 
 2. Click **Save Policy**.
 

@@ -11,9 +11,7 @@ author: brianlic-msft
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span> 
-
+ 
 **Applies to**
 
 -   Windows 10
@@ -75,7 +73,7 @@ See the following table for a summary of the management settings for Windows 10 
 | [14. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [15. Preinstalled apps](#bkmk-preinstalledapps) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
 | [16. Settings > Privacy](#bkmk-settingssection) | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[16.1 General](#bkmk-priv-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.1 General](#bkmk-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[16.2 Location](#bkmk-priv-location) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[16.3 Camera](#bkmk-priv-camera) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[16.4 Microphone](#bkmk-priv-microphone) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
@@ -94,7 +92,7 @@ See the following table for a summary of the management settings for Windows 10 
 | &nbsp;&nbsp;&nbsp;&nbsp;[16.17 Motion](#bkmk-priv-motion) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
 | [17. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 | [18. Sync your settings](#bkmk-syncsettings) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
-| [19. Teredo](#bkmk-teredo) | | | | | ![Check mark](images/checkmark.png) |
+| [19. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | | | ![Check mark](images/checkmark.png) |
 | [20. Wi-Fi Sense](#bkmk-wifisense) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [21. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [22. Windows Media Player](#bkmk-wmp) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
@@ -121,9 +119,9 @@ See the following table for a summary of the management settings for Windows Ser
 | [12. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | | |
 | [14. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | |
 | [16. Settings > Privacy](#bkmk-settingssection) | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[16.1 General](#bkmk-priv-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[16.1 General](#bkmk-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [17. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | | |
-| [19. Teredo](#bkmk-teredo) | | | | ![Check mark](images/checkmark.png) |
+| [19. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
 | [21. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [22. Windows Media Player](#bkmk-wmp) | | | | ![Check mark](images/checkmark.png) |
 | [24. Windows Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | | |
@@ -140,7 +138,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [5. Font streaming](#font-streaming) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [12. Network Connection Status Indicator](#bkmk-ncsi) | ![Check mark](images/checkmark.png) | | |
 | [17. Software Protection Platform](#bkmk-spp) | ![Check mark](images/checkmark.png) | | |
-| [19. Teredo](#bkmk-teredo) | | | ![Check mark](images/checkmark.png) |
+| [19. Teredo](#bkmk-teredo) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
 | [21. Windows Defender](#bkmk-defender) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [26. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 
@@ -270,10 +268,10 @@ Fonts that are included in Windows but that are not stored on the local device c
 
 If you're running Windows 10, version 1607 or Windows Server 2016, disable the Group Policy: **Computer Configuration** > **Administrative Templates** > **Network** > **Fonts** > **Enable Font Providers**.
 
+If you're running Windows 10, version 1507 or Windows 10, version 1511, create a REG\_DWORD registry setting called **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters**, with a value of 1.
+
 > [!NOTE]  
 > After you apply this policy, you must restart the device for it to take effect.
-
-If you're running Windows 10, version 1507 or Windows 10, version 1511, create a REG\_DWORD registry setting called **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters**, with a value of 1.
 
 
 ### <a href="" id="bkmk-previewbuilds"></a>6. Insider Preview builds
@@ -1117,7 +1115,14 @@ To turn off Messaging cloud sync:
 
 ### <a href="" id="bkmk-teredo"></a>19. Teredo
 
-You can disable Teredo by using the netsh.exe command. For more info on Teredo, see [Internet Protocol Version 6, Teredo, and Related Technologies](http://technet.microsoft.com/library/cc722030.aspx).
+You can disable Teredo by using Group Policy or by using the netsh.exe command. For more info on Teredo, see [Internet Protocol Version 6, Teredo, and Related Technologies](http://technet.microsoft.com/library/cc722030.aspx).
+
+>[!NOTE]  
+>If you disable Teredo, some XBOX gaming features and Windows Update Delivery Optimization will not work.
+
+-   Enable the Group Policy: **Computer Configuration** > **Administrative Templates** > **Network** &gt; **TCPIP Settings** &gt; **IPv6 Transition Technologies** &gt; **Set Teredo State** and set it to **Disabled State**.
+
+    -or-
 
 -   From an elevated command prompt, run **netsh interface teredo set state disabled**
 
@@ -1353,3 +1358,5 @@ You can turn off automatic updates by doing one of the following. This is not re
     -   **5**. Turn off automatic updates.
 
 To learn more, see [Device update management](http://msdn.microsoft.com/library/windows/hardware/dn957432.aspx) and [Configure Automatic Updates by using Group Policy](http://technet.microsoft.com/library/cc720539.aspx).
+
+To help make it easier to deploy settings to restrict connections from Windows 10 to Microsoft, you can apply the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887). This baseline was created in the same way as the [Windows security baselines](../keep-secure/windows-security-baselines.md) that are often used to efficiently configure Windows to a known secure state. Running the Windows Restricted Traffic Limited Functionality Baseline on devices in your organization will allow you to quickly configure all of the settings covered in this document. However, some of the settings reduce the functionality and security configuration of your device and are therefore not recommended. Make sure should you've chosen the right settings configuration for your environment before applying.

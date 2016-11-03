@@ -45,9 +45,7 @@ You can create user-entitled connection groups that contain both user-published 
 </tbody>
 </table>
 
- 
-
-**How to use PowerShell cmdlets to create user-entitled connection groups**
+<a href="" id="bkmk-posh-userentitled-cg"></a>**How to use PowerShell cmdlets to create user-entitled connection groups**
 
 1.  Add and publish packages by using the following commands:
 
@@ -67,7 +65,7 @@ You can create user-entitled connection groups that contain both user-published 
 
     **Enable-AppvClientConnectionGroup  -GroupId CG\_Group\_ID -VersionId CG\_Version\_ID**
 
-**How to use the App-V Server to create user-entitled connection groups**
+<a href="" id="bkmk-appvserver-userentitled-cg"></a>**How to use the App-V Server to create user-entitled connection groups**
 
 1.  Open the App-V 5.1 Management Console.
 

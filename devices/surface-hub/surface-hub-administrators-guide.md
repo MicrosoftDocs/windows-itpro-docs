@@ -16,7 +16,7 @@ localizationpriority: medium
 
 This guide covers the installation and administration of devices running Surface Hub, and is intended for use by anyone responsible for these tasks, including IT administrators and developers.
 
-Before you power on Microsoft Surface Hub for the first time, make sure you've [completed the checklist](prepare-your-environment-for-surface-hub.md#prepare-checklist) at the end of the [Prepare your environment for Surface Hub](prepare-your-environment-for-surface-hub.md) section, and that you have the information listed in the [Setup worksheet](setup-worksheet-surface-hub.md). When you do power it on, the device will walk you through a series of setup screens. If you haven't properly set up your environment, or don't have the required information, you'll have to do extra work afterward making sure the settings are correct.
+Before you power on Microsoft Surface Hub for the first time, make sure you've [completed preparation items](prepare-your-environment-for-surface-hub.md), and that you have the information listed in the [Setup worksheet](setup-worksheet-surface-hub.md). When you do power it on, the device will walk you through a series of setup screens. If you haven't properly set up your environment, or don't have the required information, you'll have to do extra work afterward making sure the settings are correct.
 
 ## In this section
 

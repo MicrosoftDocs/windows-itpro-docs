@@ -11,10 +11,18 @@ author: greg-lindsay
 # Change history for Deploy Windows 10
 This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## October 2016
+| New or changed topic | Description |
+|----------------------|-------------|
+| [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) | New | 
+
 ## September 2016
 | New or changed topic | Description |
 |----------------------|-------------|
 | [Windows 10 Enterprise E3 in CSP Overview](windows-10-enterprise-e3-overview.md) | New | 
+| [Get started with Upgrade Analytics](upgrade-analytics-get-started.md) | Updated with prerequisites for site discovery |
+| [Resolve application and driver issues](upgrade-analytics-resolve-issues.md) | Updated with app status info for Ready For Windows |
+| [Review site discovery](upgrade-analytics-review-site-discovery.md) | New |
 
 ## RELEASE: Windows 10, version 1607
 

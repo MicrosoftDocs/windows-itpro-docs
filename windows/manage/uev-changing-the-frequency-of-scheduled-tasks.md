@@ -246,4 +246,4 @@ Add or vote on suggestions on the [User Experience Virtualization feedback site]
 
 [Administering UE-V](uev-administering-uev.md)
 
-[Deploy UE-V for Custom Applications](uev-deploy-uev-for-custom-applications.md#deploycatalogue)
+[Deploy UE-V for Custom Applications](uev-deploy-uev-for-custom-applications.md)

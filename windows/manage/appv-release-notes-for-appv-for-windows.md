@@ -30,17 +30,19 @@ MSI packages that were generated using an App-V sequencer from previous versions
     
     - For the standalone Windows 10 SDK without other tools, see [Standalone Windows 10 SDK](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
 
-3. From an elevated Windows PowerShell prompt, navigate to the following folder:
+3. Copy msidb.exe from the default path of the Windows SDK installation (**C:\Program Files (x86)\Windows Kits\10**) to a different directory. For example: **C:\MyMsiTools\bin**
+
+4. From an elevated Windows PowerShell prompt, navigate to the following folder:
  
     &lt;Windows Kits 10 installation folder&gt;**\Microsoft Application Virtualization\Sequencer\** 
 
     By default, this path will be:<br>**C:\Program Files (x86)\Windows Kits\10\Microsoft Application Virtualization\Sequencer** 
 
-4. Run the following command:
+5. Run the following command:
 
-    `Update-AppvPackageMsi -MsiPackage "<path to App-V Package .msi file>" -MsSdkPath "<path to Windows SDK installation>"` 
+    `Update-AppvPackageMsi -MsiPackage "<path to App-V Package .msi file>" -MsSdkPath "<path>"` 
 
-    By default, the path to the Windows SDK installation will be:<br>**C:\Program Files (x86)\Windows Kits\10**
+    where the path is to the new directory (**C:\MyMsiTools\ for this example**).
 
 ## Error occurs during publishing refresh between App-V 5.0 SP3 Management Server and App-V Client on Windows 10
 
