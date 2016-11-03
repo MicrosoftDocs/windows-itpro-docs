@@ -131,7 +131,7 @@ The following table lists the Group Policy settings that you can configure for H
 </td>
 </tr>
 <tr>
-<td><a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone Sign-in</a></td>
+<td><a href="prepare-people-to-use-microsoft-passport.md#bmk-remote">Phone Sign-in</a></td>
 <td>
 <p>Use Phone Sign-in</p>
 <div class="alert"><b>Note</b>  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.</div>
@@ -289,8 +289,8 @@ The following table lists the MDM policy settings that you can configure for Win
 <td>Device or user</td>
 <td>False</td>
 <td>
-<p>True: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone sign-in</a> is enabled.</p>
-<p>False: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone sign-in</a> is disabled.</p>
+<p>True: <a href="prepare-people-to-use-microsoft-passport.md#bmk-remote">Phone sign-in</a> is enabled.</p>
+<p>False: <a href="prepare-people-to-use-microsoft-passport.md#bmk-remote">Phone sign-in</a> is disabled.</p>
 </td>
 </tr>
 </table>

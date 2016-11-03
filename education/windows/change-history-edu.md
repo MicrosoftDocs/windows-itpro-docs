@@ -12,6 +12,14 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
 
+## November 2016
+
+| New or changed topic | Description|
+| --- | --- |
+| [Working with Windows Store for Business – education scenarios](education-scenarios-store-for-business.md)  | New. Learn about education scenarios for Windows Store for Business.  |
+| [For teachers - get Minecraft: Education Edition](teacher-get-minecraft.md)  | Updates. Subscription support for Minecraft: Education Edition.  |
+| [For IT administrators - get Minecraft: Education Edition](school-get-minecraft.md)  | Updates. Subscription support for Minecraft: Education Edition.  |
+
 ## September 2016
 
 | New or changed topic | Description|

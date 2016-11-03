@@ -8,13 +8,13 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# For IT administrators: get Minecraft: Education Edition
+# For IT administrators - get Minecraft: Education Edition
 
 **Applies to:**
 
 -   Windows 10  
 
-When you sign up for early access to [Minecraft: Education Edition](http://education.minecraft.net), Minecraft will be added to the inventory in your Windows Store for Business, a private version of Windows Store associated with your Azure Active Directory (Azure AD) tenant. Your Store for Business is only displayed to members of your organization.
+When you sign up for a [Minecraft: Education Edition](http://education.minecraft.net) trial, or purchase a[Minecraft: Education Edition](http://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Windows Store for Business, a private version of Windows Store associated with your Azure Active Directory (Azure AD) tenant. Your Store for Business is only displayed to members of your organization.
 
 > **Note**: If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans). 
 
@@ -87,6 +87,7 @@ You can install the app on your PC. This gives you a chance to test the app and 
 ### Assign to others
 Enter email addresses for your students, and each student will get an email with a link to install the app. This option is best for older, more tech-savvy students who will always use the same PC at school. You can assign the app to individuals, groups, or add it to your private store, where students and teachers in your organization can download the app. 
 
+
 **To assign to others**
 1. Sign in to Windows Store for Business. 
 2. Click **Manage**.
@@ -95,10 +96,10 @@ Enter email addresses for your students, and each student will get an email with
 3. Click **Assign to people**.
  
     ![Assign to people](images/minecraft-assign-to-people.png)
-4. Type the name, or email address of the student you want to assign the app to, and then click **Assign**.
+4. Type the name, or email address of the student you want to assign the app to, and then click **Assign**. 
 
-    You can only assign the app to students with work or school accounts. If you don't find the student, you might need to add a work or school account for the student.
-    
+    You can only assign the app to students with work or school accounts. If you don't find the student, you might need to add a work or school account for the student.    
+   
     ![Assign to people showing student name](images/minecraft-assign-to-people-name.png)
 
 **To finish Minecraft install (for students)**
@@ -159,9 +160,9 @@ You'll download a .zip file, extract the files, and then use one of the files to
 6. **Restart**. Once installation is complete, restart each PC. Minecraft: Education Edition app is now ready for any student to use.
 
 
-## Manage Minecraft: Education Edition
+<!--- ## Manage Minecraft: Education Edition -->
 
-### Access to Windows Store for Business
+<!--- ### Access to Windows Store for Business
 By default, when a teacher with a work or school account acquires Minecraft: Education Edition, they are automatically signed up for Window Store for Business, and the **Basic Purchaser** role is assigned to them. **Basic Purchaser** role allows teachers to acquire Minecraft: Education Edition and to distribute it to students. 
 
 However, tenant admins can control whether or not teachers automatically sign up for Windows Store for Business, and get the **Basic Purchaser** role. You can configure this with the **Allow educators in my organization to sign up for the Windows Store for Business.** You'll find this on the **Permissions** page. 
@@ -173,7 +174,9 @@ To prevent educators from automatically signing up for Windows Store for Busines
 
 2. Click **Allow educators in my organization to sign up for the Windows Store for Business.**
 
-### Roles and permissions
+-->
+
+<!--- ### Roles and permissions
 Minecraft: Education Edition adds a new role for teachers: **Basic Purchaser**. When a teacher has been granted this role, they can:
 - View the Minecraft product description page 
 - Acquire and manage the app
@@ -200,7 +203,9 @@ Minecraft: Education Edition adds a new role for teachers: **Basic Purchaser**. 
     
     ![Permission page for Windows Store for Business](images/minecraft-assign-roles-2.png)
 
-## <a href="" id="private-store"></a>Private store
+-->
+
+<!--- ## <a href="" id="private-store"></a>Private store
 
 When you create you Windows Store for Business account, you'll have a set of apps included for free in your private store. Apps in your private store are available for all people in your organization to install and use. 
 
@@ -213,9 +218,9 @@ These apps will automatically be in your private store:
 - Fresh Paint
 - Minecraft: Education Edition
 
-As an admin, you can remove any of these apps from the private store if you'd prefer to control how apps are distributed.  
+As an admin, you can remove any of these apps from the private store if you'd prefer to control how apps are distributed. --> 
 
-<!-- ## Need more copies of Minecraft: Education Edition?
+<!--- ## Need more copies of Minecraft: Education Edition?
 You can purchase more licenses by working with your channel partner. Licenses are available at a lower rate than the price for individual copies that are available through Windows Store for Business. Individual copies are also available through Windows Store for Business. 
 
 If you’ve purchased a volume license, be sure to let other basic purchasers in your organization know about the volume license. That should help prevent unnecessary purchases of individual copies. -->

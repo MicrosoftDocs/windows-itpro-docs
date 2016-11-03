@@ -27,7 +27,7 @@ This topic explains the following procedures:
 
 -   [To allow only administrators to enable connection groups](#bkmk-admin-only-posh-topic-cg)
 
-**To add and publish the App-V packages in the connection group**
+<a href="" id="bkmk-add-pub-pkgs-in-cg"></a>**To add and publish the App-V packages in the connection group**
 
 1.  To add and publish the App-V 5.0 packages to the computer running the App-V client, type the following command:
 
@@ -35,7 +35,7 @@ This topic explains the following procedures:
 
 2.  Repeat **step 1** of this procedure for each package in the connection group.
 
-**To add and enable the connection group on the App-V client**
+<a href="" id="bkmk-add-enable-cg-on-clt"></a>**To add and enable the connection group on the App-V client**
 
 1.  Add the connection group by typing the following command:
 
@@ -47,7 +47,7 @@ This topic explains the following procedures:
 
     When any virtual applications that are in the member packages are run on the target computer, they will run inside the connection group’s virtual environment and will be available to all the virtual applications in the other packages in the connection group.
 
-**To enable or disable a connection group for a specific user**
+<a href="" id="bkmk-enable-cg-for-user-poshtopic"></a>**To enable or disable a connection group for a specific user**
 
 1.  Review the parameter description and requirements:
 
@@ -88,9 +88,7 @@ This topic explains the following procedures:
     </tbody>
     </table>
 
-     
-
-**To allow only administrators to enable connection groups**
+<a href="" id="bkmk-admin-only-posh-topic-cg"></a>**To allow only administrators to enable connection groups**
 
 1.  Review the description and requirement for using this cmdlet:
 
@@ -125,8 +123,6 @@ This topic explains the following procedures:
     </tr>
     </tbody>
     </table>
-
-     
 
     **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 

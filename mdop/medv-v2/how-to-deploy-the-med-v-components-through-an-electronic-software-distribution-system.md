@@ -47,21 +47,15 @@ You must install the MED-V workspace packager and build your MED-V workspaces be
     3.  **MED-V Host Agent Installation File** – installs the Host Agent (MED-V\_HostAgent\_Setup installation file). For more information, see [How to Manually Install the MED-V Host Agent](how-to-manually-install-the-med-v-host-agent.md).
 
         **Warning**  
-        Close Internet Explorer before you install the MED-V Host Agent, otherwise conflicts can occur later with URL redirection. You can also do this by specifying a computer restart during a distribution.
-
-         
+        Close Internet Explorer before you install the MED-V Host Agent, otherwise conflicts can occur later with URL redirection. You can also do this by specifying a computer restart during a distribution.   
 
     4.  **MED-V Workspace Installer, VHD, and Setup Executable** – created in the **MED-V Workspace Packager**. For more information, see [Create a MED-V Workspace Package](create-a-med-v-workspace-package.md).
 
         **Important**  
         The compressed virtual hard disk file (.medv) and the Setup executable program (setup.exe) must be in the same folder as the MED-V workspace installer. Then, install the MED-V workspace installer by running setup.exe.
 
-         
-
         **Tip**  
-        Because problems that can occur when you install MED-V from a network location, we recommend that you copy the MED-V workspace setup files locally and then run setup.exe.
-
-         
+        Because problems that can occur when you install MED-V from a network location, we recommend that you copy the MED-V workspace setup files locally and then run setup.exe.       
 
 3.  Configure the packages to run in silent mode (no user interaction is required).
 
@@ -70,14 +64,10 @@ You must install the MED-V workspace packager and build your MED-V workspaces be
     **Note**  
     Installation of Windows Virtual PC requires you to restart the computer. You can create a single installation process and install all the components at the same time if you suppress the restart and ignore the prerequisites necessary for MED-V to install. You can also do this by using command-line arguments. For an example of these arguments, see [To install the MED-V components by using a batch file](#bkmk-batch). MED-V automatically starts when the computer is restarted.
 
-     
-
 4.  Install MED-V and its components before installing Windows Virtual PC. See the example batch file later in this topic.
 
     **Important**  
     Select the **IGNORE\_PREREQUISITES** option as shown in the example batch file so that the MED-V components can be installed prior to the required VPC components. Install the MED-V components in this order to allow for the single restart.
-
-     
 
 5.  Identify any other requirements necessary for the installation and for your software distribution system, such as target platforms and the free disk space.
 
@@ -91,7 +81,7 @@ You must install the MED-V workspace packager and build your MED-V workspaces be
 
 First time setup starts and might take several minutes to finish, depending on the size of the virtual hard disk that you specified and the number of policies applied to the MED-V workspace on startup. The end user can track the progress by watching the MED-V icon in the notification area. For more information about first time setup, see [MED-V 2.0 Deployment Overview](med-v-20-deployment-overview.md).
 
-**To install the MED-V components by using a batch file**
+<a href="" id="bkmk-batch"></a>**To install the MED-V components by using a batch file**
 
 1.  Run the installation at a command prompt with administrative credentials.
 

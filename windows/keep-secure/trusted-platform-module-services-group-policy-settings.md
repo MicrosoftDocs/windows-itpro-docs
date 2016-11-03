@@ -30,8 +30,8 @@ The TPM Services Group Policy settings are located at:
 | [Ignore the local list of blocked TPM commands](#bkmk-tpmgp-illb) | X| X| X| X| X| X| 
 | [Configure the level of TPM owner authorization information available to the operating system](#bkmk-tpmgp-oauthos)| | X| X| X|||  
 | [Standard User Lockout Duration](#bkmk-tpmgp-suld)| X| X| X| X|||  
-| [Standard User Individual Lockout Threshold](#bkmk-tpmgp-suilt)| X| X| X| X|||  
-| [Standard User Total Lockout Threshold](#bkmk-tpmgpsutlt)| X| X| X| X||||
+| [Standard User Individual Lockout Threshold](#bkmk-individual)| X| X| X| X|||  
+| [Standard User Total Lockout Threshold](#bkmk-total)| X| X| X| X||||
 
 ### <a href="" id="bkmk-tpmgp-addsbu"></a>Turn on TPM backup to Active Directory Domain Services
 
