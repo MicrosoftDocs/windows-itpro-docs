@@ -151,7 +151,7 @@ The service could not contact the external processing servers at that URL.</td>
 <td>17</td>
 <td>Windows Defender Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: ```variable```.</td>
 <td>An error occurred with the Windows telemetry service.</td>
-<td>[Ensure the telemetry service is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-the-telemetry-and-diagnostics-service-is-enabled).<br>
+<td>[Ensure the telemetry service is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-telemetry-and-diagnostics-service-is-enabled).<br>
 Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md).</td>
 </tr>
@@ -202,7 +202,7 @@ Ensure real-time antimalware protection is running properly.</td>
 <td>28</td>
 <td>Windows Defender Advanced Threat Protection Connected User Experiences and Telemetry service registration failed. Failure code: ```variable```.</td>
 <td>An error occurred with the Windows telemetry service.</td>
-<td>[Ensure the telemetry service is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-the-telemetry-and-diagnostics-service-is-enabled).<br>
+<td>[Ensure the telemetry service is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-telemetry-and-diagnostics-service-is-enabled).<br>
 Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md).</td>
 </tr>
@@ -218,7 +218,7 @@ Ensure real-time antimalware protection is running properly.</td>
 <td>31</td>
 <td>Windows Defender Advanced Threat Protection Connected User Experiences and Telemetry service unregistration failed. Failure code: ```variable```.</td>
 <td>An error occurred with the Windows telemetry service during onboarding. The offboarding process continues.</td>
-<td>[Check for errors with the Windows telemetry service](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-the-telemetry-and-diagnostics-service-is-enabled).</td>
+<td>[Check for errors with the Windows telemetry service](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-telemetry-and-diagnostics-service-is-enabled).</td>
 </tr>
 <tr>
 <td>32</td>
@@ -237,7 +237,7 @@ If the identifier does not persist, the same machine might appear twice in the p
 <td>34</td>
 <td>Windows Defender Advanced Threat Protection service failed to add itself as a dependency on the Connected User Experiences and Telemetry service, causing onboarding process to fail. Failure code: ```variable```.</td>
 <td>An error occurred with the Windows telemetry service.</td>
-<td>[Ensure the telemetry service is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-the-telemetry-and-diagnostics-service-is-enabled).<br>
+<td>[Ensure the telemetry service is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-telemetry-and-diagnostics-service-is-enabled).<br>
 Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md).</td>
 </tr>
