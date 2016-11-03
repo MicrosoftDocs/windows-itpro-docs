@@ -85,12 +85,12 @@ For Surface Hub to be used in communal spaces, such as meeting rooms, its custom
 
 Surface Hub implements these Windows 10 security features:
 - [UEFI Secure Boot](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview)
-- [User Mode Code Integrity (UMCI) with Device Guard](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies)
-- [Application restriction policies using AppLocker](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/applocker-overview)
-- [BitLocker Drive Encryption](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/bitlocker-overview)
-- [Trusted Platform Module (TPM)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/trusted-platform-module-overview)
-- [Windows Defender](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/windows-defender-in-windows-10)
-- [User Account Control (UAC)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/user-account-control-overview) for access to the Settings app
+- [User Mode Code Integrity (UMCI) with Device Guard](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies)
+- [Application restriction policies using AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview)
+- [BitLocker Drive Encryption](https://technet.microsoft.com/itpro/windows/keep-secure/bitlocker-overview)
+- [Trusted Platform Module (TPM)](https://technet.microsoft.com/itpro/windows/keep-secure/trusted-platform-module-overview)
+- [Windows Defender](https://technet.microsoft.com/itpro/windows/keep-secure/windows-defender-in-windows-10)
+- [User Account Control (UAC)](https://technet.microsoft.com/itpro/windows/keep-secure/user-account-control-overview) for access to the Settings app
 
 These Surface Hub features provide additional security:
 - Custom UEFI firmware
@@ -157,6 +157,6 @@ Users can sign in to Microsoft Edge to access intranet sites and online resource
 
 ### Telemetry
 
-The Surface Hub OS uses the Windows 10 Connected User Experience and Telemetry component to gather and transmit telemetry data. For more information, see [Configure Windows telemetry in your organization](https://technet.microsoft.com/en-us/itpro/windows/manage/configure-windows-telemetry-in-your-organization).
+The Surface Hub OS uses the Windows 10 Connected User Experience and Telemetry component to gather and transmit telemetry data. For more information, see [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization).
 
 *Organization policies that this may affect:* <br> Configure telemetry levels for Surface Hub in the same way as you do for Windows 10 Enterprise.
