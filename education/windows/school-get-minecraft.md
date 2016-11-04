@@ -70,7 +70,7 @@ Admins can also add Minecraft: Education Edition to the private store. This allo
 
 Here's the page you'll see for Minecraft: Education Edition licenses purchased directly through the Windows Store for Business. 
 
-![App distribution options - individual copies](images/mc-install-for-me-admin.png)
+![App distribution options - individual copies](images/mc-install-for-me-teacher.png)
 
 Here's the page you'll see for Minecraft: Education Edition licenses purchased through volume licensing.
 
@@ -80,9 +80,9 @@ Here's the page you'll see for Minecraft: Education Edition licenses purchased t
 You can install the app on your PC. This gives you a chance to test the app and know how you might help others in your organization use the app.   
 
 1. Sign in to Windows Store for Business. 
-2. Click **Manage**, and then click **Install for me**.
+2. Click **Manage**, and then click **Install**.
 
-    ![Minecraft Education Edition product page](images/mc-install-for-me-admin.png)
+    ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)
 
 3. Click **Install**.  
 
@@ -94,8 +94,8 @@ Enter email addresses for your students, and each student will get an email with
 1. Sign in to Windows Store for Business. 
 2. Click **Manage**.
 
-    ![Minecraft Education Edition product page](images/minecraft-assign-to-others.png)
-3. Click **Assign to people**.
+    ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)
+3. Click **Invite people**.
  
     ![Assign to people](images/minecraft-assign-to-people.png)
 4. Type the name, or email address of the student or group you want to assign the app to, and then click **Assign**. 
@@ -153,7 +153,7 @@ You'll download a .zip file, extract the files, and then use one of the files to
 
 1. **Download Minecraft Education Edition.zip**. From the **Minecraft: Education Edition** page, click **Download for others** tab, and then click **Download**.
 
-    ![Windows Store app showing access to My Library](images/mc-dnld-others-admin.png)
+    ![Windows Store app showing access to My Library](images/mc-dnld-others-teacher.png)
  
 2. **Extract files**. Find the .zip file that you downloaded and extract the files. This is usually your **Downloads** folder, unless you chose to save the .zip file to a different location. Right-click the file and choose **Extract all**.
 3. **Save to USB drive**. After you've extracted the files, save the Minecraft: Education Edition folder to a USB drive, or to a network location that you can access from each PC.  
