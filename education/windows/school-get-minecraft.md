@@ -14,7 +14,7 @@ author: jdeckerMS
 
 -   Windows 10  
 
-When you sign up for a [Minecraft: Education Edition](http://education.minecraft.net) trial, or purchase a[Minecraft: Education Edition](http://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Windows Store for Business, a private version of Windows Store associated with your Azure Active Directory (Azure AD) tenant. Your Store for Business is only displayed to members of your organization.
+When you sign up for a [Minecraft: Education Edition](http://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](http://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Windows Store for Business, a private version of Windows Store associated with your Azure Active Directory (Azure AD) tenant. Your Store for Business is only displayed to members of your organization.
 
 > **Note**: If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans). 
 
@@ -48,6 +48,8 @@ If you’ve been approved and are part of the Enrollment for Education Solutions
 
 Now that the app is in your Store for Business inventory, you can choose how to distribute Minecraft. For more information on distribution options, see [Distribute Minecraft](#distribute-minecraft).
 
+If you need additional licenses for **Minecraft: Education Edition**, see [Purchase additional licenses](https://technet.microsoft.com/edu/windows/education-scenarios-store-for-business#purchase-additional-licenses).
+
 ### <a href="" id="volume-license"></a>Minecraft: Education Edition - volume licensing
 
 Qualified education institutions can purchase Minecraft: Education Edition licenses through their Microsoft channel partner. Schools need to be part of the Enrollment for Education Solutions (EES) volume licensing program. Educational institutions should work with their channel partner to determine which Minecraft: Education Edition licensing offer is best for their institution. The process looks like this: 
@@ -68,7 +70,7 @@ Admins can also add Minecraft: Education Edition to the private store. This allo
 
 Here's the page you'll see for Minecraft: Education Edition licenses purchased directly through the Windows Store for Business. 
 
-![App distribution options - individual copies](images/mc-install-for-me-admin.png)
+![App distribution options - individual copies](images/mc-install-for-me-teacher.png)
 
 Here's the page you'll see for Minecraft: Education Edition licenses purchased through volume licensing.
 
@@ -78,9 +80,9 @@ Here's the page you'll see for Minecraft: Education Edition licenses purchased t
 You can install the app on your PC. This gives you a chance to test the app and know how you might help others in your organization use the app.   
 
 1. Sign in to Windows Store for Business. 
-2. Click **Manage**, and then click **Install for me**.
+2. Click **Manage**, and then click **Install**.
 
-    ![Minecraft Education Edition product page](images/mc-install-for-me-admin.png)
+    ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)
 
 3. Click **Install**.  
 
@@ -92,11 +94,11 @@ Enter email addresses for your students, and each student will get an email with
 1. Sign in to Windows Store for Business. 
 2. Click **Manage**.
 
-    ![Minecraft Education Edition product page](images/minecraft-assign-to-others.png)
-3. Click **Assign to people**.
+    ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)
+3. Click **Invite people**.
  
     ![Assign to people](images/minecraft-assign-to-people.png)
-4. Type the name, or email address of the student you want to assign the app to, and then click **Assign**. 
+4. Type the name, or email address of the student or group you want to assign the app to, and then click **Assign**. 
 
     You can only assign the app to students with work or school accounts. If you don't find the student, you might need to add a work or school account for the student.    
    
@@ -151,7 +153,7 @@ You'll download a .zip file, extract the files, and then use one of the files to
 
 1. **Download Minecraft Education Edition.zip**. From the **Minecraft: Education Edition** page, click **Download for others** tab, and then click **Download**.
 
-    ![Windows Store app showing access to My Library](images/mc-dnld-others-admin.png)
+    ![Windows Store app showing access to My Library](images/mc-dnld-others-teacher.png)
  
 2. **Extract files**. Find the .zip file that you downloaded and extract the files. This is usually your **Downloads** folder, unless you chose to save the .zip file to a different location. Right-click the file and choose **Extract all**.
 3. **Save to USB drive**. After you've extracted the files, save the Minecraft: Education Edition folder to a USB drive, or to a network location that you can access from each PC.  
@@ -226,6 +228,8 @@ You can purchase more licenses by working with your channel partner. Licenses ar
 If you’ve purchased a volume license, be sure to let other basic purchasers in your organization know about the volume license. That should help prevent unnecessary purchases of individual copies. -->
 
 ## Learn more
+[Working with Windows Store for Business – education scenarios](education-scenarios-store-for-business.md) </br>
+Learn about overall Windows Store for Business management: manage settings, shop for apps, distribute apps, manage inventory, and manage order history.  
 
 [Roles and permissions in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business)
 
