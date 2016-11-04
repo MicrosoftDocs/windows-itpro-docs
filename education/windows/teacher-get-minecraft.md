@@ -38,6 +38,8 @@ Learn how teachers can get and distribute Minecraft: Education Edition.
 
     ![Get Minecraft app in Store](images/minecraft-get-the-app.png)
     
+If you need additional licenses for **Minecraft: Education Edition**, see [Purchase additional licenses](https://technet.microsoft.com/edu/windows/education-scenarios-store-for-business#purchase-additional-licenses).
+    
 ## Distribute Minecraft
 
 After Minecraft: Education Edition is added to your Windows Store for Business inventory, you have three options:
@@ -69,7 +71,7 @@ Enter email addresses for your students, and each student will get an email with
 
 3. Click **Invite people**.
     
-4. Type the name, or email address of the student you want to assign the app to, and then click **Assign**.
+4. Type the name, or email address of the student or group you want to assign the app to, and then click **Assign**.
 
    ![Assign to people showing student name](images/minecraft-assign-to-people-name.png)
    
@@ -151,6 +153,9 @@ If you ran **InstallMinecraftEducationEdition.bat** and Minecraft: Education Edi
 If you are still having trouble installing the app, you can get more help on our [Support page](https://go.microsoft.com/fwlink/?LinkID=799757). 
 
 ## Related topics
+
+[Working with Windows Store for Business – education scenarios](education-scenarios-store-for-business.md) </br>
+Learn about overall Windows Store for Business management: manage settings, shop for apps, distribute apps, manage inventory, and manage order history.
 
 [Get Minecraft: Education Edition](get-minecraft-for-education.md)
 
