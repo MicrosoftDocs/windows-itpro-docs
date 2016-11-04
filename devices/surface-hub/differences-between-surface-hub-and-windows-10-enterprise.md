@@ -39,7 +39,14 @@ Surface Hub is designed to be used in communal spaces, such as meeting rooms. Un
 
 ### Saving and browsing files
 
-Users can only access files and folders under My Documents. Files saved locally during a session are deleted when users press **I'm done**. To save content created during a meeting, users should save files to a USB drive or to OneDrive.
+Users have access to a limited set of directories on the Surface Hub:
+- Music
+- Videos
+- Documents
+- Pictures
+- Downloads
+
+Files saved locally in these directories are deleted when users press **I'm done**. To save content created during a meeting, users should save files to a USB drive or to OneDrive.
 
 *Organization policies that this may affect:* <br> Policies related to access permissions and ownership of files and folders don't apply for Surface Hub. Users can't browse and save files to system directories and network folders.
 
@@ -69,7 +76,7 @@ UWP apps pre-installed on Surface Hub:
 - Whiteboard*
 - Word Mobile
 
-*Apps with an asterisk (\*) are unique to Surface Hub*
+*Apps with an asterisk (&ast;) are unique to Surface Hub*
 
 *Organization policies that this may affect:* <br> Use guidelines for Windows 10 Enterprise to determine the features and network requirements for default apps on the Surface Hub.
 
