@@ -14,7 +14,7 @@ author: jdeckerMS
 
 -   Windows 10  
 
-When you sign up for a [Minecraft: Education Edition](http://education.minecraft.net) trial, or purchase a[Minecraft: Education Edition](http://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Windows Store for Business, a private version of Windows Store associated with your Azure Active Directory (Azure AD) tenant. Your Store for Business is only displayed to members of your organization.
+When you sign up for a [Minecraft: Education Edition](http://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](http://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Windows Store for Business, a private version of Windows Store associated with your Azure Active Directory (Azure AD) tenant. Your Store for Business is only displayed to members of your organization.
 
 > **Note**: If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans). 
 
@@ -47,6 +47,8 @@ If you’ve been approved and are part of the Enrollment for Education Solutions
     <!-- ![Get Minecraft app in Store](images/minecraft-get-the-app.png) -->
 
 Now that the app is in your Store for Business inventory, you can choose how to distribute Minecraft. For more information on distribution options, see [Distribute Minecraft](#distribute-minecraft).
+
+If you need additional licenses for **Minecraft: Education Edition**, see [Purchase additional licenses](https://technet.microsoft.com/edu/windows/education-scenarios-store-for-business#purchase-additional-licenses).
 
 ### <a href="" id="volume-license"></a>Minecraft: Education Edition - volume licensing
 
@@ -96,7 +98,7 @@ Enter email addresses for your students, and each student will get an email with
 3. Click **Assign to people**.
  
     ![Assign to people](images/minecraft-assign-to-people.png)
-4. Type the name, or email address of the student you want to assign the app to, and then click **Assign**. 
+4. Type the name, or email address of the student or group you want to assign the app to, and then click **Assign**. 
 
     You can only assign the app to students with work or school accounts. If you don't find the student, you might need to add a work or school account for the student.    
    
@@ -226,6 +228,8 @@ You can purchase more licenses by working with your channel partner. Licenses ar
 If you’ve purchased a volume license, be sure to let other basic purchasers in your organization know about the volume license. That should help prevent unnecessary purchases of individual copies. -->
 
 ## Learn more
+[Working with Windows Store for Business – education scenarios](education-scenarios-store-for-business.md) </br>
+Learn about overall Windows Store for Business management: manage settings, shop for apps, distribute apps, manage inventory, and manage order history.  
 
 [Roles and permissions in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business)
 
