@@ -157,7 +157,6 @@ Complete the following steps to create an Office 2013 package for App-V 5.0 or l
 **Important**  
 In App-V 5.0 and later, you must the Office Deployment Tool to create a package. You cannot use the Sequencer to create packages.
 
- 
 
 ### Review prerequisites for using the Office Deployment Tool
 
@@ -189,11 +188,9 @@ The computer on which you are installing the Office Deployment Tool must have:
 </tbody>
 </table>
 
- 
 
 **Note**  
 In this topic, the term “Office 2013 App-V package” refers to subscription licensing and volume licensing.
-
  
 
 ### Create Office 2013 App-V Packages Using Office Deployment Tool
@@ -241,8 +238,6 @@ The XML file that is included in the Office Deployment Tool specifies the produc
 
         **Note**  
         The configuration XML is a sample XML file. The file includes lines that are commented out. You can “uncomment” these lines to customize additional settings with the file.
-
-         
 
         The above XML configuration file specifies that Office 2013 ProPlus 32-bit edition, including Visio ProPlus, will be downloaded in English to the \\\\server\\Office 2013, which is the location where Office applications will be saved to. Note that the Product ID of the applications will not affect the final licensing of Office. Office 2013 App-V packages with various licensing can be created from the same applications through specifying licensing in a later stage. The table below summarizes the customizable attributes and elements of XML file:
 
@@ -299,8 +294,6 @@ The XML file that is included in the Office Deployment Tool specifies the produc
         </tr>
         </tbody>
         </table>
-
-         
 
         After editing the configuration.xml file to specify the desired product, languages, and also the location which the Office 2013 applications will be saved onto, you can save the configuration file, for example, as Customconfig.xml.
 
@@ -811,7 +804,7 @@ The following table describes the requirements and options for deploying Visio 2
 <tr class="odd">
 <td align="left"><p>How do I package and publish Visio 2013 and Project 2013 with Office?</p></td>
 <td align="left"><p>You must include Visio 2013 and Project 2013 in the same package with Office.</p>
-<p>If you aren’t deploying Office, you can create a package that contains Visio and/or Project, as long as you follow the [Virtualizing Microsoft Office 2013 for Application Virtualization (App-V) 5.0](../solutions/virtualizing-microsoft-office-2013-for-application-virtualization--app-v--50-solutions.md#bkmk-pkg-pub-reqs).</p></td>
+<p>If you aren’t deploying Office, you can create a package that contains Visio and/or Project, as long as you follow [Deploying Microsoft Office 2010 by Using App-V](../appv-v5/deploying-microsoft-office-2010-by-using-app-v.md).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>How can I deploy Visio 2013 and Project 2013 to specific users?</p></td>

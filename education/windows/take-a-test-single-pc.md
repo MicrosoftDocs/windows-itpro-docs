@@ -25,10 +25,8 @@ The **Take a Test** app in Windows 10, Version 1607, creates the right environme
 - Students can’t change settings, extend their display, see notifications, get updates, or use autofill features.
 - Cortana is turned off.
 
-> **Tip!**
+> [!TIP]  
 > To exit **Take a Test**, press Ctrl+Alt+Delete. 
-
- 
 
 ## How you use Take a Test
 
@@ -47,7 +45,10 @@ The **Take a Test** app in Windows 10, Version 1607, creates the right environme
 1. Sign into the device with an administrator account.
 2. Go to **Settings** > **Accounts** > **Work or school access** > **Set up an account for taking tests**.
 3. Select an existing account to use as the dedicated testing account.
-    >**Note**: If you don't have an account on the device, you can create a new account. To do this, go to **Settings** > **Accounts** > **Other Users** > **Add someone else to this PC** > **I don’t have this person’s sign-in information** > **Add a user without a Microsoft account**.
+
+ > [!NOTE]  
+ > If you don't have an account on the device, you can create a new account. To do this, go to **Settings** > **Accounts** > **Other Users** > **Add someone else to this PC** > **I don’t have this person’s sign-in information** > **Add a user without a Microsoft account**.
+ 
 4. Specify an assessment URL.  
 
 5. Click **Save**.

@@ -88,12 +88,12 @@ Review the following requirements for using the App-V PowerShell cmdlets:
 <td align="left"><p>Run the <strong>Set-AppvClientConfiguration</strong> cmdlet with the <strong>-RequirePublishAsAdmin</strong> parameter.</p></td>
 <td align="left"><ul>
 <li><p>[How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell](how-to-manage-connection-groups-on-a-stand-alone-computer-by-using-powershell51.md#bkmk-admin-only-posh-topic-cg)</p></li>
-<li><p>[How to Manage App-V 5.1 Packages Running on a Stand-Alone Computer by Using PowerShell](how-to-manage-app-v-51-packages-running-on-a-stand-alone-computer-by-using-powershell.md#bkmk-admins-pub-pkgs)</p></li>
+<li><p>[How to Manage App-V 5.1 Packages Running on a Stand-Alone Computer by Using PowerShell](how-to-manage-app-v-51-packages-running-on-a-stand-alone-computer-by-using-powershell.md)</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Enable the “Require publish as administrator” Group Policy setting for App-V Clients.</p></td>
-<td align="left"><p>[How to Publish a Package by Using the Management Console](how-to-publish-a-package-by-using-the-management-console-51.md#bkmk-admin-pub-pkg-only-posh)</p></td>
+<td align="left"><p>[How to Publish a Package by Using the Management Console](how-to-publish-a-package-by-using-the-management-console-51.md)</p></td>
 </tr>
 </tbody>
 </table>
@@ -105,7 +105,6 @@ Review the following requirements for using the App-V PowerShell cmdlets:
  
 
 ## <a href="" id="bkmk-load-cmdlets"></a>Loading the PowerShell cmdlets
-
 
 To load the PowerShell cmdlet modules:
 
@@ -140,11 +139,7 @@ To load the PowerShell cmdlet modules:
 </tbody>
 </table>
 
- 
-
 ## <a href="" id="bkmk-get-cmdlet-help"></a>Getting help for the PowerShell cmdlets
-
-
 Starting in App-V 5.0 SP3, cmdlet help is available in two formats:
 
 <table>
@@ -201,11 +196,7 @@ Starting in App-V 5.0 SP3, cmdlet help is available in two formats:
 </tbody>
 </table>
 
- 
-
 ## <a href="" id="bkmk-display-help-cmdlet"></a>Displaying the help for a PowerShell cmdlet
-
-
 To display help for a specific PowerShell cmdlet:
 
 1.  Open Windows PowerShell or Windows PowerShell Integrated Scripting Environment (ISE).

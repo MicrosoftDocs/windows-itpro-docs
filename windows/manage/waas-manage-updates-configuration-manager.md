@@ -126,7 +126,7 @@ This policy will now be deployed to every device in the **Windows 10 – Current
 
 ## Create collections for deployment rings
 
-Regardless of the method by which you deploy Windows 10 feature updates to your environment, you must start the Windows 10 servicing process by creating collections of computers that represent your deployment rings. In this example, you create two collections: **Windows 10 – All Current Branch for Business** and **Ring 3 Broad IT**. You’ll use the **Windows 10 – All Current Branch for Business** collection for reporting and deployments that should go to all CBB clients. You’ll use the **Ring 3 Broad IT** collection as a deployment ring for the first CBB users, IT pros.
+Regardless of the method by which you deploy Windows 10 feature updates to your environment, you must start the Windows 10 servicing process by creating collections of computers that represent your deployment rings. In this example, you create two collections: **Windows 10 – All Current Branch for Business** and **Ring 4 Broad business users**. You’ll use the **Windows 10 – All Current Branch for Business** collection for reporting and deployments that should go to all CBB clients. You’ll use the **Ring 4 Broad business users** collection as a deployment ring for the first CBB users.
 
 >[!NOTE]
 >The following procedures use the groups from Table 1 in [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) as examples.
@@ -185,13 +185,13 @@ Regardless of the method by which you deploy Windows 10 feature updates to your 
 >[!IMPORTANT]
 >Windows Insider PCs are discovered the same way as CB or CBB devices. If you have Windows Insider PCs that you use Configuration Manager to manage, then you should create a collection of those PCs and exclude them from this collection. You can create the membership for the Windows Insider collection either manually or by using a query where the operating system build doesn’t equal any of the current CB or CBB build numbers. You would have to update each periodically to include new devices or new operating system builds.
 
-After you have updated the membership, this new collection will contain all managed clients on the CBB servicing branch. You will use this collection as a limiting collection for future CBB-based collections and the **Ring 3 Broad IT** collection. Complete the following steps to create the Ring 3 Broad IT device collection, which you’ll use as a CBB deployment ring for servicing plans or task sequences.
+After you have updated the membership, this new collection will contain all managed clients on the CBB servicing branch. You will use this collection as a limiting collection for future CBB-based collections and the **Ring 4 Broad broad business users** collection. Complete the following steps to create the **Ring 4 Broad business users** device collection, which you’ll use as a CBB deployment ring for servicing plans or task sequences.
 
 1.	In the Configuration Manager console, go to Assets and Compliance\Overview\Device Collections.
 
 2.	On the Ribbon, in the **Create** group, click **Create Device Collection**.
 
-3.	In the Create Device Collection Wizard, in the **name** box, type **Ring 3 Broad IT**.
+3.	In the Create Device Collection Wizard, in the **name** box, type **Ring 4 Broad business users**.
 
 4.	Click **Browse** to select the limiting collection, and then click **Windows 10 – All Current Branch for Business**.
 
@@ -201,7 +201,7 @@ After you have updated the membership, this new collection will contain all mana
 
 7.	In the **Value** field, type all or part of the name of a device to add, and then click **Next**.
 
-8.	Select the computer that will be part of the **Ring 3 Broad IT** deployment ring, and then click **Next**.
+8.	Select the computer that will be part of the **Ring 4 Broad business users** deployment ring, and then click **Next**.
 
 9.	Click **Next**, and then click **Close**.
 
@@ -212,17 +212,17 @@ After you have updated the membership, this new collection will contain all mana
 
 ## Use Windows 10 servicing plans to deploy Windows 10 feature updates
 
-There are two ways to deploy Windows 10 feature updates with System Center onfiguration Manager. The first is to use servicing plans, which provide an automated method to update devices consistently in their respective deployment rings, similar to Automatic Deployment Rules for software updates. 
+There are two ways to deploy Windows 10 feature updates with System Center Configuration Manager. The first is to use servicing plans, which provide an automated method to update devices consistently in their respective deployment rings, similar to Automatic Deployment Rules for software updates. 
 
-**To configure Windows feature updates for CBB clients in the Ring 3 Broad IT deployment ring using a servicing plan**
+**To configure Windows feature updates for CBB clients in the Ring 4 Broad business users deployment ring using a servicing plan**
 
 1.	In the Configuration Manager console, go to Software Library\Overview\Windows 10 Servicing, and then click **Servicing Plans**.
 
 2.	On the Ribbon, in the **Create** group, click **Create Servicing Plan**.
 
-3.	Name the plan **Ring 3 Broad IT Servicing Plan**, and then click **Next**.
+3.	Name the plan **Ring 4 Broad business users Servicing Plan**, and then click **Next**.
 
-4.	On the **Servicing Plan page**, click **Browse**. Select the **Ring 3 Broad IT** collection, which you created in the [Create collections for deployment rings](#create-collections-for-deployment-rings) section, click **OK**, and then click **Next**.
+4.	On the **Servicing Plan page**, click **Browse**. Select the **Ring 4 Broad business users** collection, which you created in the [Create collections for deployment rings](#create-collections-for-deployment-rings) section, click **OK**, and then click **Next**.
 
     >[!IMPORTANT]
     >Microsoft added a new protection feature to Configuration Manager that prevents accidental installation of high-risk deployments such as operating system upgrades on site systems. If you select a collection (All Systems in this example) that has a site system in it, you may receive the following message.
@@ -233,7 +233,7 @@ There are two ways to deploy Windows 10 feature updates with System Center onfig
 
 5.	On the **Deployment Ring** page, select the **Business Ready (Current Branch for Business)** readiness state, leave the delay at **0 days**, and then click **Next**.
 
-    Doing so deploys CBB feature updates to the IT deployment ring immediately after they are released to CBB.
+    Doing so deploys CBB feature updates to the broad business users deployment ring immediately after they are released to CBB.
 
     On the Upgrades page, you specify filters for the feature updates to which this servicing plan is applicable. For example, if you wanted this plan to be only for Windows 10 Enterprise, you could select **Title**, and then type **Enterprise**.
     
@@ -260,7 +260,7 @@ There are two ways to deploy Windows 10 feature updates with System Center onfig
 11.	Click **Summary**, click **Next** to complete the servicing plan, and then click **Close**.
 
 
-You have now created a servicing plan for the **Ring 3 Broad IT** deployment ring. By default, this rule is evaluated each time the software update point is synchronized, but you can modify this schedule by viewing the service plan’s properties on the **Evaluation Schedule** tab.
+You have now created a servicing plan for the **Ring 4 Broad business users** deployment ring. By default, this rule is evaluated each time the software update point is synchronized, but you can modify this schedule by viewing the service plan’s properties on the **Evaluation Schedule** tab.
 
 ![Example of UI](images/waas-sccm-fig12.png) 
 
@@ -331,7 +331,7 @@ Now that the upgrade package has been created and its contents distributed, crea
 
 10.	On the **Completion** page, click **Close**.
 
-With the task sequence created, you’re ready to deploy it. If you’re using this method to deploy most of your Windows 10 feature updates, you may want to create deployment rings to stage the deployment of this task sequence, with delays appropriate for the respective deployment ring. In this example, you deploy the task sequence to the **Ring 3 Broad IT collection**.
+With the task sequence created, you’re ready to deploy it. If you’re using this method to deploy most of your Windows 10 feature updates, you may want to create deployment rings to stage the deployment of this task sequence, with delays appropriate for the respective deployment ring. In this example, you deploy the task sequence to the **Ring 4 Broad business users collection**.
 
 >[!IMPORTANT]
 >This process deploys a Windows 10 operating system feature update to the affected devices. If you’re testing, be sure to select the collection to which you deploy this task sequence carefully.
@@ -381,7 +381,9 @@ or Manage Windows 10 updates using System Center Configuration Manager (this top
 </tbody></table>
 </br>
 
+## See also
 
+[Manage Windows as a service using System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/manage-windows-as-a-service)
 
 
 
@@ -397,7 +399,7 @@ or Manage Windows 10 updates using System Center Configuration Manager (this top
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Manage updates for Windows 10 Mobile Enterprise](waas-mobile-updates.md) 
+- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Manage updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)

@@ -117,7 +117,7 @@ When you need to recover the TPM owner information from AD DS and use it to man
 **To obtain TPM owner backup information from AD DS and create a password file**
 
 1.  Sign in to a domain controller by using domain administrator credentials.
-2.  Copy the sample script file, [Get-TPMOwnerInfo.vbs](#ms-tpm-ownerinformation), to a location on your computer.
+2.  Copy the sample script file, [Get-TPMOwnerInfo.vbs](#bkmk-get-tpmownerinfo), to a location on your computer.
 3.  Open a Command Prompt window, and change the default location to the location of the sample script files you saved in the previous step.
 4.  At the command prompt, type **cscript Get-TPMOwnerInfo.vbs**.
 

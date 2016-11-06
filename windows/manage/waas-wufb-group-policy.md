@@ -27,17 +27,19 @@ To use Group Policy to manage quality and feature updates in your environment, y
 
 ## Configure Windows Update for Business in Windows 10 version 1511
 
-In this example, you use two security groups to manage your updates: **Ring 3 Broad IT** and **Ring 4 Broad Business Users** from  Table 1 in [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md). 
+In this example, you use two security groups to manage your updates: **Ring 4 Broad business users** and **Ring 5 Broad business users #2** from  Table 1 in [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md). 
 
-- The **Ring 3 Broad IT** group contains PCs of IT members who test the updates as soon as they’re released for Windows clients in the Current Branch for Business (CBB) servicing branch. This phase typically occurs after testing on Current Branch (CB) devices.
-- The **Ring 4 Broad Business Users** group consists of the first line-of-business (LOB) users, who consume quality updates after 1 week and feature updates 1 month after the CBB release.
+- The **Ring 4 Broad business users** group contains PCs of IT members who test the updates as soon as they’re released for Windows clients in the Current Branch for Business (CBB) servicing branch. This phase typically occurs after testing on Current Branch (CB) devices.
+- The **Ring 5 Broad business users #2** group consists of the first line-of-business (LOB) users, who consume quality updates after 1 week and feature updates 1 month after the CBB release.
 
 >[!NOTE]
+>Although the [sample deployment rings](waas-deployment-rings-windows-10-updates.md) specify a feature update deferral of 2 weeks for Ring 5, deferrals in Windows 10, version 1511 are in increments of months only.
+> 
 >Windows 10 version 1511 does not support deferment of CB builds of Windows 10, so you can establish only one CB deployment ring. In version 1607 and later, CB builds can be delayed, making it possible to have multiple CB deployment rings.
 
  Complete the following steps on a PC running the Remote Server Administration Tools or on a domain controller. 
  
- ### Configure the Ring 3 Broad IT deployment ring for CBB with no deferral
+ ### Configure the Ring 4 Broad business users deployment ring for CBB with no deferral
 
 1. Open GPMC (gpmc.msc).
 
@@ -111,27 +113,27 @@ In this example, you use two security groups to manage your updates: **Ring 3 Br
     </tr>
     </table> 
 
-    Simply enabling the **Defer Upgrades and Updates** policy sets the receiving client to the CBB servicing branch, which is what you want for your first deployment ring, **Ring 3 Broad IT**.
+    Simply enabling the **Defer Upgrades and Updates** policy sets the receiving client to the CBB servicing branch, which is what you want for your first deployment ring, **Ring 4 Broad business users**.
     
 8. Enable the **Defer Updates and Upgrades** setting, and then click **OK**.
 
 9. Close the Group Policy Management Editor.
 
-Because the **Windows Update for Business - CBB1** GPO contains a computer policy and you only want to apply it to computers in the **Ring 3 Broad IT** group, use **Security Filtering** to scope the policy’s effect.
+Because the **Windows Update for Business - CBB1** GPO contains a computer policy and you only want to apply it to computers in the **Ring 4 Broad business users** group, use **Security Filtering** to scope the policy’s effect.
 
-### Scope the policy to the Ring 3 Broad IT group
+### Scope the policy to the Ring 4 Broad business users group
 
 1.  In the GPMC, select the **Windows Update for Business - CBB1** policy.
 
-2. In **Security Filtering** on the **Scope** tab, remove the default **AUTHENTICATED USERS** security group, and add the **Ring 3 Broad IT** group. 
+2. In **Security Filtering** on the **Scope** tab, remove the default **AUTHENTICATED USERS** security group, and add the **Ring 4 Broad business users** group. 
 
     ![Scope policy to group](images/waas-wufb-gp-scope.png)
     
 
-The **Ring 3 Broad IT** deployment ring has now been configured. Next, configure **Ring 4 Broad Business Users** to accommodate a 1-week delay for quality updates and a 1-month delay for feature updates. 
+The **Ring 4 Broad business users** deployment ring has now been configured. Next, configure **Ring 5 Broad business users #2** to accommodate a 1-week delay for quality updates and a 2-week delay for feature updates. 
 
 
-### Configure the Ring 4 Broad Business Users deployment ring for CBB with deferrals
+### Configure the Ring 5 Broad business users \#2 deployment ring for CBB with deferrals
 
 1. Open GPMC (gpmc.msc).
 
@@ -158,11 +160,11 @@ The **Ring 3 Broad IT** deployment ring has now been configured. Next, configure
 9. Click **OK** and close the Group Policy Management Editor.
 
 
-### Scope the policy to the Ring 4 Broad Business Users group
+### Scope the policy to the Ring 5 Broad business users \#2 group
 
 1.  In the GPMC, select the **Windows Update for Business - CBB2** policy.
 
-2. In **Security Filtering** on the **Scope** tab, remove the default **AUTHENTICATED USERS** security group, and add the **Ring 4 Broad Business Users** group. 
+2. In **Security Filtering** on the **Scope** tab, remove the default **AUTHENTICATED USERS** security group, and add the **Ring 5 Broad business users \#2** group. 
 
 ## Configure Windows Update for Business in Windows 10 version 1607
 
@@ -170,9 +172,9 @@ To use Group Policy to manage quality and feature updates in your environment, y
 
 In this example, you use three security groups from Table 1 in [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) to manage your updates: 
 
-- **Ring 2 Pilot Business Users** contains the PCs of business users which are part of the pilot testing process, receiving CB builds just 14 days after they are released.
-- **Ring 3 Broad IT** consists of IT members who receive updates after Microsoft releases a Windows 10 build to the CBB servicing branch.
-- **Ring 4 Broad Business Users** consists of LOB users on CBB, who receive quality updates after 7 days and feature updates after 30 days. 
+- **Ring 2 Pilot Business Users** contains the PCs of business users which are part of the pilot testing process, receiving CB builds 4 weeks after they are released.
+- **Ring 4 Broad business users** consists of IT members who receive updates after Microsoft releases a Windows 10 build to the CBB servicing branch.
+- **Ring 5 Broad business users #2** consists of LOB users on CBB, who receive quality updates after 7 days and feature updates after 14 days. 
 
 In this example, you configure and scope the update schedules for all three groups. 
 
@@ -199,7 +201,7 @@ In this example, you configure and scope the update schedules for all three grou
 
 7. Right-click **Select when Feature Updates are received**, and then click **Edit**.
 
-8. In the **Select when Feature Updates are received** policy, enable it, select a branch readiness level of **CB**, set the feature update delay to **14** days, and then click **OK**.
+8. In the **Select when Feature Updates are received** policy, enable it, select a branch readiness level of **CB**, set the feature update delay to **28** days, and then click **OK**.
 
     ![Settings for this GPO](images/waas-wufb-gp-cb2-settings.png)
     
@@ -258,9 +260,9 @@ Because the **Windows Update for Business – CB2** GPO contains a computer poli
 
     ![Scope policy to group](images/waas-wufb-gp-scope-cb2.png) 
 
-The **Ring 2 Pilot Business Users** deployment ring has now been configured. Next, configure **Ring 3 Broad IT** to set those clients into the CBB servicing branch so that they receive feature updates as soon as they’re made available for the CB servicing branch.
+The **Ring 2 Pilot Business Users** deployment ring has now been configured. Next, configure **Ring 4 Broad business users** to set those clients into the CBB servicing branch so that they receive feature updates as soon as they’re made available for the CBB servicing branch.
 
-### Configure Ring 3 Broad IT policy
+### Configure Ring 4 Broad business users policy
 
 1. Open GPMC (gpmc.msc).
 
@@ -284,16 +286,16 @@ The **Ring 2 Pilot Business Users** deployment ring has now been configured. Nex
 
 
 
-### Scope the policy to the Ring 3 Broad IT group
+### Scope the policy to the Ring 4 Broad business users group
 
 1.  In the GPMC, select the **Windows Update for Business - CBB1** policy.
 
-2. In **Security Filtering** on the **Scope** tab, remove the default **AUTHENTICATED USERS** security group, and add the **Ring 3 Broad IT** group.
+2. In **Security Filtering** on the **Scope** tab, remove the default **AUTHENTICATED USERS** security group, and add the **Ring 4 Broad business users** group.
 
 
-The **Ring 3 Broad IT** deployment ring has now been configured. Finally, configure **Ring 4 Broad Business Users** to accommodate a 7-day delay for quality updates and a 30-day delay for feature updates
+The **Ring 4 Broad business users** deployment ring has now been configured. Finally, configure **Ring 5 Broad business users #2** to accommodate a 7-day delay for quality updates and a 14-day delay for feature updates
 
-### Configure Ring 4 Broad Business Users policy
+### Configure Ring 5 Broad business users \#2 policy
 
 1. Open GPMC (gpmc.msc).
 
@@ -309,7 +311,7 @@ The **Ring 3 Broad IT** deployment ring has now been configured. Finally, config
 
 7. Right-click **Select when Feature Updates are received**, and then click **Edit**.
 
-8. In the **Select when Feature Updates are received** policy, enable it, select a branch readiness level of **CBB**, set the feature update delay to **30** days, and then click **OK**.
+8. In the **Select when Feature Updates are received** policy, enable it, select a branch readiness level of **CBB**, set the feature update delay to **14** days, and then click **OK**.
 
     ![Settings for this GPO](images/waas-wufb-gp-cbb2-settings.png)
 
@@ -323,11 +325,11 @@ The **Ring 3 Broad IT** deployment ring has now been configured. Finally, config
 
 
 
-### Scope the policy to the Ring 4 Broad IT group
+### Scope the policy to the Ring 5 Broad business users \#2 group
 
 1.  In the GPMC, select the **Windows Update for Business - CBB2** policy.
 
-2. In **Security Filtering** on the **Scope** tab, remove the default **AUTHENTICATED USERS** security group, and add the **Ring 4 Broad Business Users** group.
+2. In **Security Filtering** on the **Scope** tab, remove the default **AUTHENTICATED USERS** security group, and add the **Ring 5 Broad business users #2** group.
 
 ## Related topics
 
@@ -339,7 +341,7 @@ The **Ring 3 Broad IT** deployment ring has now been configured. Finally, config
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Manage updates for Windows 10 Mobile Enterprise](waas-mobile-updates.md) 
+- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Manage updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)

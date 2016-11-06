@@ -319,7 +319,7 @@ When an administrator selects the **Require BitLocker backup to AD DS** check b
 
 For more info, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
 
-When an administrator clears these check boxes, the administrator is allowing a drive to be BitLocker-protected without having the recovery information successfully backed up to AD DS; however, BitLocker will not automatically retry the backup if it fails. Instead, administrators can create a script for the backup, as described earlier in [What if BitLocker is enabled on a computer before the computer has joined the domain?](#bkmk-adretro) to capture the information after connectivity is restored.
+When an administrator clears these check boxes, the administrator is allowing a drive to be BitLocker-protected without having the recovery information successfully backed up to AD DS; however, BitLocker will not automatically retry the backup if it fails. Instead, administrators can create a script for the backup, as described earlier in [What if BitLocker is enabled on a computer before the computer has joined the domain?](#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain) to capture the information after connectivity is restored.
 
 ## <a href="" id="bkmk-security"></a>Security
 
