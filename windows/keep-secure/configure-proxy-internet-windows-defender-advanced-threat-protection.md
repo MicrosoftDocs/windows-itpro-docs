@@ -28,14 +28,17 @@ The embedded Windows Defender ATP sensor runs in system context using the LocalS
 
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
-- Configure the proxy server manually using a static proxy
+ - Auto-discovery methods:
+    - Transparent proxy
+    - Web Proxy Auto-discovery Protocol (WPAD)
 
-    - Auto-discovery methods:
-        - Transparent proxy
+> [!NOTE]
+> If you're using Transparent proxy or WPAD in your network topology, you don't need special endpoint configuration settings. For more information on Windows Defender ATP URL exclusions in the proxy, see [Enable access to Windows Defender ATP service URLs in the proxy server](#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server).
 
-    - Manual static proxy configuration
-      - WinHTTP configured using netsh command
-      -	Registry based configuration
+
+ - Manual static proxy configuration:
+    - WinHTTP configured using netsh command
+    - Registry based configuration
 
 ## Configure the proxy server manually using a registry-based static proxy
 Configure a registry-based static proxy to allow only Windows Defender ATP sensor to report telemetry and communicate with Windows Defender ATP services if a computer is not be permitted to connect to the Internet.
@@ -77,12 +80,9 @@ If a proxy or firewall is blocking all traffic by default and allowing only spec
 
 Primary Domain Controller | .Microsoft.com DNS record
 :---|:---
- Central US | winatp-gw-cus.microsoft.com <br> us.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net
- East US (2)| winatp-gw-eus.microsoft.com <br> us.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net
- West Europe | winatp-gw-weu.microsoft.com <br> eu.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net
- North Europe | winatp-gw-neu.microsoft.com <br> eu.vortex-win.data.microsoft.com <br> crl.microsoft.com <br>*.blob.core.windows.net
+ US |```*.blob.core.windows.net``` <br>```crl.microsoft.com```<br> ```us.vortex-win.data.microsoft.com```<br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com```
+Europe |```*.blob.core.windows.net```<br>```crl.microsoft.com```<br> ```eu.vortex-win.data.microsoft.com```<br>```winatp-gw-neu.microsoft.com```<br> ```winatp-gw-weu.microsoft.com```<br>
 
- <br>
  If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.
 
  If you selected US as your region, you should permit anonymous traffic for URLs listed in both Central US and East US (2).
