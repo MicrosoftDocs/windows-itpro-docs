@@ -92,7 +92,7 @@ The following tables describes additional hardware and firmware requirements, an
 
 <br>
 
-### 2017 Additional Qualification Requirements for Credential Guard (starting with next major release of Windows 10) 
+### 2017 Additional Qualification Requirements for Credential Guard (starting with the next major release of Windows 10) 
 
 | Protection for Improved Security - requirement         | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
