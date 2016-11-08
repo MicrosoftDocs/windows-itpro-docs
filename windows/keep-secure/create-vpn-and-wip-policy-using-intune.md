@@ -91,7 +91,7 @@ The final step to making your VPN configuration work with WIP, is to link your t
 
     -   **Data type.** Pick the **String** data type.
 
-    -   **OMA-URI.** Type `./Vendor/MSFT/VPNv2/VPNProfileName/EDPModeId`, replacing *VPNProfileName* with the name you gave to your VPN policy. For example, `./Vendor/MSFT/VPNv2/W10-Checkpoint-VPN1/EDPModeId`.
+    -   **OMA-URI.** Type `./Vendor/MSFT/VPNv2/<VPNProfileName>/EDPModeId`, replacing &lt;*VPNProfileName*&gt; with the name you gave to your VPN policy. For example, `./Vendor/MSFT/VPNv2/W10-Checkpoint-VPN1/EDPModeId`.
 
     -   **Value.** Your fully-qualified domain that should be used by the OMA-URI setting.
 
