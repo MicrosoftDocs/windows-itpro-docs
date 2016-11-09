@@ -50,6 +50,10 @@ You can use System Center Configuration Manager’s existing functionality to cr
 4. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/library/gg682178.aspx) topic.
 
     a. Choose a predefined device collection to deploy the package to.
+    
+> [!NOTE]
+> Onboarding couldn't be completed during OOBE. Make sure users pass OOBE after running Windows installation or upgrade.
+
 
 ### Configure sample collection settings
 For each endpoint, you can set a configuration value to state whether samples can be collected from the endpoint when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
