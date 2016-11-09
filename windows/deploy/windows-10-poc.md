@@ -227,8 +227,8 @@ When you have completed installation of Hyper-V on the host computer, begin conf
 
     **Important**: This guide assumes that VHDs are stored in the **C:\VHD** directory on the Hyper-V host. If you use a different directory to store VHDs, you must adjust steps in this guide appropriately.
 
-    After completing registration you will be able to download the 7.47 GB Windows Server 2012 R2 evaluation VHD. An example of the download is shown below.
-    
+    After completing registration you will be able to download the 7.47 GB Windows Server 2012 R2 evaluation VHD. An example of the download offering is shown below.
+
     <TABLE BORDER=1>
     <TR><TD>![VHD](images/download_vhd.png)
     </TABLE>
@@ -659,7 +659,13 @@ As mentioned previously: instructions to "type" commands provided in this guide 
     
     <pre style="overflow-y: visible">
 
+    ping dc1.contoso.com
+
     Pinging dc1.contoso.com [192.168.0.1] with 32 bytes of data:
+    Reply from 192.168.0.1: bytes=32 time<1ms TTL=128
+    Reply from 192.168.0.1: bytes=32 time<1ms TTL=128
+    Reply from 192.168.0.1: bytes=32 time<1ms TTL=128
+    Reply from 192.168.0.1: bytes=32 time<1ms TTL=128
 
     </pre>
 
