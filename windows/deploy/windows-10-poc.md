@@ -48,7 +48,7 @@ The following topics and procedures are provided in this guide. An estimate of t
 <TR><TD>[Configure the PoC environment](#configure-the-poc-environment)<TD>Parent topic for procedures.<TD>
 <TR><TD>[Verify support and install Hyper-V](#verify-support-and-install-hyper-v)<TD>Verify that installation of Hyper-V is supported, and install the Hyper-V server role.<TD>10 minutes
 <TR><TD>[Download VHD and ISO files](#download-vhd-and-iso-files)<TD>Download evaluation versions of Windows Server 2012 R2 and Windows 10 and prepare these files to be used on the Hyper-V host.<TD>30 minutes
-<TR><TD>[Convert PC to VHD](#convert-pc-to-vhd)<TD>Convert a physical computer on your network to a VHDX file and prepare it to be used on the Hyper-V host.<TD>30 minutes
+<TR><TD>[Convert PC to VM](#convert-pc-to-vm)<TD>Convert a physical computer on your network to a VM hosted in Hyper-V.<TD>30 minutes
 <TR><TD>[Resize VHD](#resize-vhd)<TD>Increase the storage capacity for one of the Windows Server VMs.<TD>5 minutes
 <TR><TD>[Configure Hyper-V](#configure-hyper-v)<TD>Create virtual switches, determine available RAM for virtual machines, and add virtual machines.<TD>15 minutes
 <TR><TD>[Configure VHDs](#configure-vhds)<TD>Start virtual machines and configure all services and settings.<TD>60 minutes
@@ -258,31 +258,136 @@ w10-enterprise.iso
 </pre>
 
 
-### Convert PC to VHD
+### Convert PC to VM
 
-If you do not have a PC available to convert to VHD, see [Appendix E: Create PC1 VM](#appendix-e-create-pc1-vm).
+If you do not have a PC available to convert to VM, see [Appendix E: Create PC1 VM](#appendix-e-create-pc1-vm).
 
-**Important**: Before you convert a PC to VHD, verify that you have access to a local administrator account on the computer. Alternatively you can use a domain account with administrative rights if these credentials are cached on the computer and your domain policy allows the use of cached credentials for login. After converting the computer to a VM, you must be able to sign in on this VM with local administrator privileges, while disconnected from the corporate network.
+If you have a PC available to convert to VM:
 
-#### Client computer requirements for this lab:
+1. Verify that you have access to a local administrator account on the computer. Alternatively you can use a domain account with administrative rights, if these credentials are cached on the computer and your domain policy allows the use of cached credentials for login. After converting the computer to a VM, you must be able to sign in on this VM with local administrator privileges, while disconnected from the corporate network.
+2. Determine the VM generation that is required. See below.
+3. Based on the VM generation, perform the appropriate conversion procedure.
 
-1. You must use a PC that is assigned a system/boot drive letter of **C**. Computers with other configurations can also be upgraded using PC refresh and replace scenarios, but these systems require more advanced deployment task sequences than the sample ones used in this lab. If the computer has multiple hard drives, then only choose the **C** drive for conversion.
-2. If the PC is running Windows 7, then it must use the Master Boot Record (MBR) method for storing partition information, not the GUID Partition Table (GPT) method. This is because a generation 2 VM is required to support GPT, and Windows 7 is not supported in Hyper-V as a generation 2 VM. Alternatively, you can convert the VHD to use MBR, but this procedure is complex. If you must create a bootable generation 1 VHD from a physical host that uses GPT, see [Appendix C: Convert GPT to MBR](#appendix-c-convert-gpt-to-mbr)
-    >To determine the storage method on a computer running Windows 7, open a command prompt and type **DISKPART**, then type **list disk**. Disks that use GPT will have an asterisk under **Gpt** in the command output.  If the computer is running Windows 8 or a later OS, you can also type **Get-Disk** at an elevated Windows PowerShell prompt to identify the partition style.
-3. If the PC is running Windows 8 or later and uses the GPT method for storing partition information, then you must create a generation 2 VM to mirror the PC in Hyper-V.
+#### Determine VM generation
 
-#### To convert a PC to VHD:
+When creating a VM in Hyper-V, you must specify either generation 1 or generation 2. The following table describes requirements for these two types of VMs.
+
+<div style='font-size:9.0pt'>
+
+<TABLE border=1 cellspacing=0 cellpadding=0>
+    <tr>
+        <td>Generation</td>
+        <td>Architecture</td>
+        <td>Operating system</td>
+        <td>Partition style</td>
+    </tr>
+    <tr>
+        <td>Generation 1</td>
+        <td>32-bit or 64-bit</td>
+        <td>Windows 7 or later</td>
+        <td>MBR</td>
+    </tr>
+    <tr>
+        <td>Generation 2</td>
+        <td>64-bit</td>
+        <td>Windows 8 or later</td>
+        <td>MBR or GPT</td>
+    </tr>
+</table>
+
+</div>
+
+To determine the OS and architecture of a PC, type **systeminfo** at a command prompt and review the output next to **OS Name** and **System Type**.
+
+To determine the partition style, open a Windows PowerShell prompt on the PC and type the following command:
+
+<pre style="overflow-y: visible">
+Get-WmiObject -Class Win32_DiskPartition | Select-Object -Property SystemName,Caption,Type
+</pre>
+
+If the **Type** column does not indicate GPT, then the disk partition format is MBR ("Installable File System" = MBR).
+
+>On a computer running Windows 8 or later, you can also type **Get-Disk** at a Windows PowerShell prompt to discover the partition style. The default output of this cmdlet displays the partition style for all attached disks.
+
+**Choosing a VM generation**
+
+The following table displays the Hyper-V VM generation to choose based on the OS, architecture, and partition style. Links to procedures to create the corresponding VMs are included.
+
+<div style='font-size:9.0pt'>
+
+<TABLE border=1 cellspacing=0 cellpadding=0>
+    <tr>
+        <td>OS</td>
+        <td>Partition style</td>
+        <td>Architecture</td>
+        <td>VM generation</td>
+        <td>Procedures</td>
+    </tr>
+    <tr>
+        <td rowspan=4>Windows 7</td>
+        <td rowspan=2>MBR</td>
+        <td>32</td>
+        <td>1</td>
+        <td>A</td>
+    </tr>
+    <tr>
+        <td>64</td>
+        <td>1</td>
+        <td>A</td>
+    </tr>
+    <tr>
+        <td rowspan=2>GPT</td>
+        <td>32</td>
+        <td>N/A</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>64</td>
+        <td>1</td>
+        <td>C, A</td>
+    </tr>
+    <tr>
+        <td rowspan=4>Windows 8 or later</td>
+        <td rowspan=2>MBR</td>
+        <td>32</td>
+        <td>1</td>
+        <td>A</td>
+    </tr>
+    <tr>
+        <td>64</td>
+        <td>1, 2</td>
+        <td>A</td>
+    </tr>
+    <tr>
+        <td rowspan=2>GPT</td>
+        <td>32</td>
+        <td>1</td>
+        <td>C, A</td>
+    </tr>
+    <tr>
+        <td>64</td>
+        <td>2</td>
+        <td>B</td>
+    </tr>
+</table>
+
+</div>
+
+>If the PC is running Windows 7, it can only be converted and hosted in Hyper-V as a generation 1 VM. If the Windows 7 PC is also using a GPT partition style, the disk contents must be captured and then used to create a VHD with the MBR partition style. If this is required, see [Appendix C: Convert GPT to MBR](#appendix-c-convert-gpt-to-mbr).
+><BR>If the PC is running Windows 8 or later and uses the GPT partition style, you can capture the disk image and create a generation 2 VM. To do this, you must temporarily mount the EFI system partition which is a simple procedure using the mountvol command.
+><BR>If the PC is using an MBR partition style, you can convert the disk to VHD and use it to create a generation 1 VM. If you use the Disk2VHD tool described in this guide, it is not necessary to mount the MBR system partition, but it is still necessary to capture it.
+
+#### Prepare a generation 1 VM
 
 1. Download the [Disk2vhd utility](https://technet.microsoft.com/en-us/library/ee656415.aspx), extract the .zip file and copy **disk2vhd.exe** to a flash drive or other location that is accessible from the computer you wish to convert.
 
     >You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media such as a USB drive.
 
 2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
-3. Select the checkboxes next to the **C:\** and the **system reserved** (BIOS/MBR) volumes. The system volume is not assigned a drive letter, but will be displayed in the Disk2VHD tool with a volume label similar to **\\?\Volume{**. See the following example. **Important**: You must include the system volume in order to create a bootable VHD. If this volume is not displayed in the disk2vhd tool, then the computer is using the GPT partition method. In this case, see the second item in the [requirements](#client-computer-requirements-for-this-lab) list in this section for more information. 
+3. Select the checkboxes next to the **C:\** and the **system reserved** (BIOS/MBR) volumes. The system volume is not assigned a drive letter, but will be displayed in the Disk2VHD tool with a volume label similar to **\\?\Volume{**. See the following example. **Important**: You must include the system volume in order to create a bootable VHD. If this volume is not displayed in the disk2vhd tool, then the computer is likely to be using the GPT partition style. In this case, see [Determine VM generation](#determine-vm-generation). 
 4. Specify a location to save the resulting VHD or VHDX file (F:\VHD\w7.vhdx in the following example) and click **Create**. Note: Hyper-V on Windows Server 2008 R2 does not support VHDX. See the following example:
 
     ![disk2vhd](images/disk2vhd.png)
-
 
 5. Click **Create** to start creating a VHDX file.
 
@@ -296,6 +401,43 @@ If you do not have a PC available to convert to VHD, see [Appendix E: Create PC1
     2012R2-poc-2.vhd
     w10-enterprise.iso
     w7.VHDX
+    </pre>
+
+#### Prepare a generation 2 VM
+
+1. Download the [Disk2vhd utility](https://technet.microsoft.com/en-us/library/ee656415.aspx), extract the .zip file and copy **disk2vhd.exe** to a flash drive or other location that is accessible from the computer you wish to convert.
+
+    >You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media such as a USB drive.
+
+2. On the computer you wish to convert, open an elevated command prompt and type the following command:
+
+    <pre style="overflow-y: visible">
+    mountvol s: /s
+    </pre>
+
+    >This command temporarily assigns a drive letter of S to the system volume and mounts it. If the letter S is already assigned to a different volume on the computer, then choose one that is available (ex: mountvol z: /s).
+
+2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
+3. Select the checkboxes next to the **C:\** and the **S:\** volumes, and clear the **Use Volume Shadow Copy checkbox**. Volume shadow copy will not work if the EFI system partition is selected.
+
+    **Important**: You must include the EFI system partition in order to create a bootable VHD. The Windows RE tools partition is not requried, but it can also be converted if desired.
+
+4. Specify a location to save the resulting VHD or VHDX file (F:\VHD\PC1.vhdx in the following example) and click **Create**. Note: Hyper-V on Windows Server 2008 R2 does not support VHDX. See the following example:
+
+    ![disk2vhd](images/disk2vhd-gen2.png)
+
+5. Click **Create** to start creating a VHDX file.
+
+    >Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
+
+6. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (PC1.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
+
+    <pre style="overflow-y: visible">
+    C:\vhd>dir /B
+    2012R2-poc-1.vhd
+    2012R2-poc-2.vhd
+    w10-enterprise.iso
+    PC1.VHDX
     </pre>
 
 ### Resize VHD
@@ -360,7 +502,7 @@ As mentioned previously: instructions to "type" commands provided in this guide 
 
     In this example, VMs can use a maximum of 2700 MB of RAM each, to run four VMs simultaneously. 
 
-4. At the elevated Windows PowerShell prompt, type the following command to create three new VMs. The fourth VM will be added later. 
+4. At the elevated Windows PowerShell prompt, type the following command to create two new VMs. Other VMs will be added later. 
     >**Important**: Replace the value of 2700MB for $maxRAM in the first command below with the RAM value that you calculated in the previous step.
 
     <pre style="overflow-y: visible">
@@ -372,13 +514,28 @@ As mentioned previously: instructions to "type" commands provided in this guide 
     Add-VMNetworkAdapter -VMName "SRV1" -SwitchName "poc-external"
     Set-VMMemory -VMName "SRV1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 80
     Enable-VMIntegrationService -Name "Guest Service Interface" -VMName SRV1
-    New-VM -Name "PC1" -VHDPath c:\vhd\w7.vhdx -SwitchName poc-internal
-    Set-VMMemory -VMName "PC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
-    Enable-VMIntegrationService -Name "Guest Service Interface" -VMName PC1
     </pre>
     
     **Note**: The RAM values assigned to VMs in this step are not permanent, and can be easily increased or decreased later if needed to address performance issues. 
 
+5. Using the same elevated Windows PowerShell prompt that was used in the previous step, type one of the following sets of commands, depending on the type of VM that was prepared in the [Determine VM generation](#determine-vm-generation) section, either generation 1 or generation 2.
+
+    To create a generation 1 VM:
+
+    <pre style="overflow-y: visible">
+    New-VM -Name "PC1" -VHDPath c:\vhd\w7.vhdx -SwitchName poc-internal
+    Set-VMMemory -VMName "PC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
+    Enable-VMIntegrationService -Name "Guest Service Interface" -VMName PC1
+    </pre>
+
+    To create a generation 2 VM:
+
+    <pre style="overflow-y: visible">
+    New-VM -Name "PC1" -Generation 2 -VHDPath c:\vhd\PC1.vhdx -SwitchName poc-internal
+    Set-VMMemory -VMName "PC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
+    Enable-VMIntegrationService -Name "Guest Service Interface" -VMName PC1
+    </pre>
+    
 ### Configure VMs 
 
 1. At an elevated Windows PowerShell prompt on the Hyper-V host, start the first VM by typing the following command:
@@ -773,9 +930,47 @@ $NetworkAdapterConfiguration = gwmi Win32_NetworkAdapterConfiguration -filter $f
 
 ## Appendix C: Convert GPT to MBR
 
+This appendix provides a procedure to convert physical disk that is using the GPT partition style to a VHD that can be used to create a generation 1 VM in Hyper-V. Because generation 1 VMs require an MBR partition style, the physical disk is saved and then converted.
+
 >Conversion of a disk directly from GPT to MBR without data loss is not possible without the use of external, specialized applications and tools.  However, it is possible to create an image of the GPT disk and then restore this image to an MBR disk using standard tools. At a high level, this can be done by obtaining an image of the source drive, creating a blank MBR-formatted disk, applying the source drive image to the MBR disk, and then configuring the MBR disk to boot the applied image. This procedure is described below:
 
-First I capture a VSS image of the GPT disk:
+1. Download the [Disk2vhd utility](https://technet.microsoft.com/en-us/library/ee656415.aspx), extract the .zip file and copy **disk2vhd.exe** to a flash drive or other location that is accessible from the computer you wish to convert.
+
+    >You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media such as a USB drive.
+
+2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
+3. Select the checkbox next to the **C:\** volume. On a computer using the GPT partition style, the system volume will not be displayed in the Disk2VHD tool.  
+4. Specify a location to save the resulting VHDX file (F:\VHD\w7-convert.vhdx in the following example) and click **Create**. See the following example:
+
+    ![disk2vhd](images/disk2vhd-convert.png)
+
+5. Click **Create** to start creating a VHDX file.
+
+    >Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
+
+
+--here is where I need to insert the procedure to convert this to a bootable disk, given a vhdx file.
+
+How shall I do this?
+
+
+
+6. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (w7.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
+
+    <pre style="overflow-y: visible">
+    C:\vhd>dir /B
+    2012R2-poc-1.vhd
+    2012R2-poc-2.vhd
+    w10-enterprise.iso
+    w7.VHDX
+    </pre>
+
+
+First I capture a VSS image of the GPT disk using disk2vhd
+
+Then I create a new VHD using the command below, attach both, robocopy from one to the other, detach the original and load the second.
+
+
 
 
 1. Create VHD (function thanks to Senthil Rajaram).
@@ -786,6 +981,9 @@ function CreateVHD ($VHDPath, $Size)
               Mount-VHD -Passthru |  `
               get-disk -number {$_.DiskNumber} | `
               Initialize-Disk -PartitionStyle MBR -PassThru | `
+              New-Partition -Size 100MB -AssignDriveLetter:$False -MbrType FAT32 -IsActive | `
+              Format-Volume -Confirm:$false -FileSystem FAT32 -force | `
+              get-partition | `
               New-Partition -UseMaximumSize -AssignDriveLetter:$False -MbrType IFS | `
               Format-Volume -Confirm:$false -FileSystem NTFS -force | `
               get-partition | `
