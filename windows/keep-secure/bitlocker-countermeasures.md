@@ -131,6 +131,9 @@ While the features listed above protect the Windows boot process from malware th
 
 Windows InstantGo–certified devices do not have DMA ports, eliminating the risk of DMA attacks. On other devices, you can disable FireWire, Thunderbolt, or other ports that support DMA.
 
+> [!NOTE]
+> Starting with Windows 10 version 1607 it is possible to use the DataProtection/AllowDirectMemoryAccess MDM policy to block DMA ports when the device is starting and as long as the machine is locked. However, it is currently not possible to configure this via GPO settings.
+
 ## See also
 -   [Types of Attacks for Volume Encryption Keys](types-of-attacks-for-volume-encryption-keys.md)
 -   [Choose the right BitLocker countermeasure](choose-the-right-bitlocker-countermeasure.md)
