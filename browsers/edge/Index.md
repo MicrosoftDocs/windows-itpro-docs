@@ -23,8 +23,7 @@ Microsoft Edge is the new, default web browser for Windows 10, helping you to e
 Microsoft Edge lets you stay up-to-date through the Windows Store and to manage your enterprise through Group Policy or your mobile device management (MDM) tools.
 <p>**Note**<br>This content isn't meant to be a step-by-step guide, so not everything that's talked about in this guide will be necessary for you to manage and deploy Microsoft Edge in your company.
 
-> [NOTE!]
-> For more info about the potential impact of using Microsoft Edge in a large organization, you can download an infographic from here: [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/en-us/download/details.aspx?id=53892).
+> **Note**<br>For more info about the potential impact of using Microsoft Edge in a large organization, you can download an infographic from here: [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/en-us/download/details.aspx?id=53892).
 
 ## In this section
 
