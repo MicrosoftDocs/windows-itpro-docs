@@ -228,8 +228,10 @@ When you have completed installation of Hyper-V on the host computer, begin conf
     **Important**: This guide assumes that VHDs are stored in the **C:\VHD** directory on the Hyper-V host. If you use a different directory to store VHDs, you must adjust steps in this guide appropriately.
 
     After completing registration you will be able to download the 7.47 GB Windows Server 2012 R2 evaluation VHD. An example of the download is shown below.
-
-    ![VHD](images/download_vhd.png)
+    
+    <TABLE BORDER=1>
+    <TR><TD>![VHD](images/download_vhd.png)
+    </TABLE>
 
 2. Download the file to the C:\VHD directory. When the download is complete, rename the VHD file that you downloaded to **2012R2-poc-1.vhd**. This is done to make the filename simpler to recognize and type.
 3. Copy the VHD to a second file also in the C:\VHD directory and name this VHD **2012R2-poc-2.vhd**.
