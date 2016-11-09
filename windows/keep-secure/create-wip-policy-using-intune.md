@@ -21,14 +21,14 @@ Microsoft Intune helps you create and deploy your Windows Information Protection
 ## Important note about the June service update for Insider Preview
 We've received some great feedback from you, our Windows 10 Insider Preview customers, about our Windows Information Protection experiences and processes. Because of that feedback, we're delighted to deliver an enhanced apps policy experience with the June service update. This means that when you open an existing Windows Information Protection policy after we release the June service update in your test environment, your existing Windows 10 Windows Information Protection app rules (formerly in the **Protected Apps** area) will be removed.<p>To prepare for this change, we recommend that you make an immediate backup of your current app rules as they are today, so you can use them to help reconfigure your app rules with the enhanced experience. When you open an existing Windows Information Protection policy after we release the June service update, you'll get a dialog box telling you about this change. Click the **OK** button to close the box and to begin reconfiguring your app rules.
 
->**Note**<br>To be able to successfully create and apply a Windows Information Protection policy make sure to use the English language Intune management portal. You must change your regional and language settings to Enligsh (United States) and set that as default for the Intune management portal to be automatically switched to English.
-
 ![Microsoft Intune: Reconfigure app rules list dialog box](images/wip-intune-app-reconfig-warning.png)
 
 Note that if you exit the **Policy** page before you've saved your new policy, your existing deployments won't be affected. However, if you save the policy without reconfiguring your apps, an updated policy will be deployed to your employees with an empty app rules list.
  
 ## Add a WIP policy
 After you’ve set up Intune for your organization, you must create a WIP-specific policy.
+
+>**Note**<br>To be able to successfully create and apply a Windows Information Protection policy make sure to use the English language Intune management portal. You must change your regional and language settings to Enligsh (United States) and set that as default for the Intune management portal to be automatically switched to English.
 
 **To add a WIP policy**
 1.  Open the Intune administration console, and go to the **Policy** node, and then click **Add Policy** from the **Tasks** area.
