@@ -662,10 +662,10 @@ As mentioned previously: instructions to "type" commands provided in this guide 
     ping dc1.contoso.com
 
     Pinging dc1.contoso.com [192.168.0.1] with 32 bytes of data:
-    Reply from 192.168.0.1: bytes=32 time\<1ms TTL=128
-    Reply from 192.168.0.1: bytes=32 time\<1ms TTL=128
-    Reply from 192.168.0.1: bytes=32 time\<1ms TTL=128
-    Reply from 192.168.0.1: bytes=32 time\<1ms TTL=128
+    Reply from 192.168.0.1: bytes=32 time 1ms TTL=128
+    Reply from 192.168.0.1: bytes=32 time 1ms TTL=128
+    Reply from 192.168.0.1: bytes=32 time 1ms TTL=128
+    Reply from 192.168.0.1: bytes=32 time 1ms TTL=128
 
     </pre>
 
