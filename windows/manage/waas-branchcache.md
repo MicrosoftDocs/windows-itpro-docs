@@ -56,7 +56,7 @@ In addition to these steps, there is one requirement for WSUS to be able to use 
 - [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
-- [Manage updates for Windows 10 Mobile Enterprise](waas-mobile-updates.md) 
+- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Manage updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
@@ -64,3 +64,4 @@ In addition to these steps, there is one requirement for WSUS to be able to use 
 - [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
 - [Manage Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
 - [Manage Windows 10 updates using Configuration Manager](waas-manage-updates-configuration-manager.md)
+- [Manage device restarts after updates](waas-restart.md)

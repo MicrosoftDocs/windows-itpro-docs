@@ -11,6 +11,11 @@ author: greg-lindsay
 # Change history for Deploy Windows 10
 This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## October 2016
+| New or changed topic | Description |
+|----------------------|-------------|
+| [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) | New | 
+
 ## September 2016
 | New or changed topic | Description |
 |----------------------|-------------|
@@ -28,11 +33,6 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 - [Provision PCs with common settings for initial deployment](provision-pcs-for-initial-deployment.md)
 
 =======
-
-## October 2016
-| New or changed topic | Description |
-|----------------------|-------------|
-| [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) | New | 
 
 ## August 2016
 | New or changed topic | Description |

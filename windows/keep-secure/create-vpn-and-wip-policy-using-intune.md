@@ -30,7 +30,7 @@ Follow these steps to create the VPN policy you want to use with WIP.
 
     ![Microsoft Intune, Create a new policy using the New Policy screen](images/intune-vpn-createpolicy.png)
 
-3.  Type *WIPModeID* into the **Name** box, along with an optional description for your policy into the **Description** box.
+3.  Type *Contoso_VPN_Win10* into the **Name** box, along with an optional description for your policy into the **Description** box.
 
     ![Microsoft Intune: Fill in the required Name and optional Description for your policy](images/intune-vpn-titledescription.png)
 
@@ -69,7 +69,7 @@ The added people move to the **Selected Groups** list on the right-hand pane.
 The policy is deployed to the selected users' devices.
 
 ## Link your WIP and VPN policies and deploy the custom configuration policy
-The final step to making your VPN configuration work with WIP, is to link your two policies together. To do this, you must first create a custom configuration policy, setting it to use your **WIPModeID** setting, and then deploying the policy to the same group you deployed your WIP and VPN policies
+The final step to making your VPN configuration work with WIP, is to link your two policies together. To do this, you must first create a custom configuration policy, setting it to use your **EDPModeID** setting, and then deploying the policy to the same group you deployed your WIP and VPN policies
 
 **To link your VPN policy**
 
@@ -83,19 +83,19 @@ The final step to making your VPN configuration work with WIP, is to link your t
 
     ![Microsoft Intune: Fill in the required Name and optional Description for your policy](images/intune-vpn-wipmodeid.png)
 
-4.  In the **OMA-URI Settings** area, click **Add** to add your **WIPModeID** info.
+4.  In the **OMA-URI Settings** area, click **Add** to add your **EDPModeID** info.
 
 5.  In the **OMA-URI Settings** area, type the following info:
 
-    -   **Setting name.** Type **WIPModeID** as the name.
+    -   **Setting name.** Type **EDPModeID** as the name.
 
     -   **Data type.** Pick the **String** data type.
 
-    -   **OMA-URI.** Type `./Vendor/MSFT/VPNv2/<your_wip_policy_name>/WIPModeId`, replacing *&lt;your\_wip\_policy\_name&gt;* with the name you gave to your WIP policy. For example, `./Vendor/MSFT/VPNv2/W10-Checkpoint-VPN1/WIPModeId`.
+    -   **OMA-URI.** Type `./Vendor/MSFT/VPNv2/<VPNProfileName>/EDPModeId`, replacing &lt;*VPNProfileName*&gt; with the name you gave to your VPN policy. For example, `./Vendor/MSFT/VPNv2/W10-Checkpoint-VPN1/EDPModeId`.
 
     -   **Value.** Your fully-qualified domain that should be used by the OMA-URI setting.
 
-        ![Microsoft Intune: Fill in the OMA-URI Settings for the WIPModeID setting](images/intune-vpn-omaurisettings.png)
+        ![Microsoft Intune: Fill in the OMA-URI Settings for the EMPModeID setting](images/intune-vpn-omaurisettings.png)
 
 6.  Click **OK** to save your new OMA-URI setting, and then click **Save Policy.**
 

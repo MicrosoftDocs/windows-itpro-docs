@@ -44,6 +44,7 @@ IE11 offers enterprises additional security, manageability, performance, backwar
 -   **Administration.** IE11 can use the Internet Explorer Administration Kit (IEAK) 11 or MSIs for deployment, and includes more than 1,600 Group Policies and preferences for granular control.
 
 ## Related topics
+- [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/en-us/download/details.aspx?id=53892)
 - [Web Application Compatibility Lab Kit for Internet Explorer 11](https://technet.microsoft.com/en-us/browser/mt612809.aspx)
 - [Download Internet Explorer 11](http://windows.microsoft.com/en-US/internet-explorer/download-ie)
 - [Microsoft Edge - Deployment Guide for IT Pros](https://technet.microsoft.com/itpro/microsoft-edge/index)

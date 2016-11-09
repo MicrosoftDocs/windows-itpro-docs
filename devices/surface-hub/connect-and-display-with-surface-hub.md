@@ -233,7 +233,7 @@ Surface Hub is compatible with a range of hardware. Choose the processor and mem
 
 ### Graphics adapter
 
-In replacement PC mode, Surface Hub supports any graphics adapter that can produce a DisplayPort signal. You'll improve your experience with a graphics adapter that can match Surface Hub's resolution and refresh rate. For example, though the best and recommended replacement PC experience on the Surface Hub is with a 120Hz video signal, 60Hz video signals are also supported.
+In replacement PC mode, Surface Hub supports any graphics adapter that can produce a DisplayPort signal. You'll improve your experience with a graphics adapter that can match Surface Hub's resolution and refresh rate. For example, the best and recommended replacement PC experience on the Surface Hub is with a 120Hz video signal.
 
 **55" Surface Hubs** - For best experience, use a graphics card capable of 1080p resolution at 120Hz.
 
@@ -295,7 +295,7 @@ Replacement PC ports on 55" Surface Hub.
 <tr class="odd">
 <td><p>PC video</p></td>
 <td><p>Video input</p></td>
-<td><p>DisplayPort 1.2</p></td>
+<td><p>DP 1.2</p></td>
 <td><ul>
 <li><p>Full screen display of 1080p at 120 Hz, plus audio</p></li>
 <li><p>HDCP compliant</p></li>
@@ -352,7 +352,7 @@ Replacement PC ports on 84" Surface Hub.
 <tr class="odd">
 <td><p>PC video</p></td>
 <td><p>Video input</p></td>
-<td><p>DisplayPort 1.2 (2x)</p></td>
+<td><p>DP 1.2 (2x)</p></td>
 <td><ul>
 <li><p>Full screen display of 2160p at 120 Hz, plus audio</p></li>
 <li><p>HDCP compliant</p></li>

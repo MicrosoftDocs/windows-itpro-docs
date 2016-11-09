@@ -225,7 +225,7 @@ To specify which devices are preferred, you can set the **Max Cache Age** config
 
 On devices that are not preferred, you can choose to set the following policy to prioritize data coming from local peers instead of the Internet:
 
--  Set **DOBackgroundQoS** with a low value, for example `65536` which is the equivalent of 64 KB/s.
+-  Set **DOMinBackgroundQoS** with a low value, for example `65536` which is the equivalent of 64 KB/s.
 
 ## Learn more
 
@@ -241,7 +241,7 @@ On devices that are not preferred, you can choose to set the following policy to
 - [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Manage updates for Windows 10 Mobile Enterprise](waas-mobile-updates.md) 
+- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Manage updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
@@ -249,3 +249,4 @@ On devices that are not preferred, you can choose to set the following policy to
 - [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
 - [Manage Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
 - [Manage Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)
+- [Manage device restarts after updates](waas-restart.md)

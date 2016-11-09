@@ -26,14 +26,14 @@ Table 1 provides an example of the deployment rings you might use.
 
 **Table 1**
 
-| Deployment ring | Servicing branch | Total weeks after Current Branch (CB) or Current Brandh for Business (CBB) release |
+| Deployment ring | Servicing branch | Total weeks after Current Branch (CB) or Current Branch for Business (CBB) release |
 | --- | --- | --- |
 | Preview | Windows Insider | Pre-CB |
 | Ring 1 Pilot IT | CB | CB + 0 weeks |
-| Ring 2 Pilot business users | CB | CB + 2 weeks |
-| Ring 3 Broad IT | CBB | CBB + 0 weeks |
-| Ring 4 Broad business users | CBB | CBB + 4 weeks |
-| Ring 5 Broad business users #2 | CBB | CBB + 8 weeks |
+| Ring 2 Pilot business users | CB | CB + 4 weeks |
+| Ring 3 Broad IT | CB | CB + 6 weeks |
+| Ring 4 Broad business users | CBB | CBB + 0 weeks |
+| Ring 5 Broad business users #2 | CBB | CBB + 2 weeks as required by capacity or other constraints |
 
 >[!NOTE]
 >In this example, there are no rings made up of the long-term servicing branch (LTSB). The LTSB servicing branch does not receive feature updates. 
@@ -66,11 +66,12 @@ or [Manage Windows 10 updates using System Center Configuration Manager](waas-ma
 ## Related topics
 
 - [Update Windows 10 in the enterprise](waas-update-windows-10.md)
-- [Manage updates for Windows 10 Mobile Enterprise](waas-mobile-updates.md) 
+- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
 - [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
+- [Manage device restarts after updates](waas-restart.md)
 

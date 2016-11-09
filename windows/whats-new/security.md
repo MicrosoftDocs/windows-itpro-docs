@@ -10,8 +10,8 @@ ms.pagetype: security
 author: TrudyHa
 ---
 
-
 # What's new in Windows 10 security
+
 There are several key client security improvements Microsoft has made in Windows 10. These improvements focus on three key areas — threat resistance, information protection, and identity protection and access control. In addition to an overview of the features themselves, this article discusses the hardware requirements for each new feature and offers configuration recommendations and links to more detailed resources.
 
 Microsoft designed the Windows 10 operating system to be the most secure version of the Windows operating system to date. To achieve this goal, Windows 10 employs advanced and now widely available hardware features to help protect users and devices against modern cyber threats. With thousands of new malware variants discovered daily and malicious hacking techniques evolving rapidly, never before has Windows client security been more important. In Windows 10, organizations can deploy new threat-resistant security features that harden the operating system in ways that can benefit Bring Your Own Device (BYOD) and corporate-owned device scenarios, as well as devices for special use cases, such as kiosks, ATMs, and point-of-sale (PoS) systems. These new threat-resistant features are modular—that is, they’re designed to be deployed together, although you can also implement them individually. With all these new features enabled together, organizations can protect themselves immediately against a majority of today’s most sophisticated threats and malware.
@@ -26,26 +26,27 @@ Today’s security threat landscape is one of aggressive and tenacious threats. 
 
 Windows 10 introduces several new security features that help mitigate modern threats and protect organizations against cyber attackers, regardless of their motive. Microsoft has made significant investments in Windows 10 to make it the most malware-resistant Windows operating system to date. Rather than simply adding defenses to the operating system, as was the case in previous Windows releases, Microsoft introduces architectural changes in Windows 10 that address entire classes of threats. By fundamentally changing the way the operating system works, Microsoft seeks to make Windows 10 much more difficult for modern attackers to exploit. New features in Windows 10 include Device Guard, configurable code integrity, virtualization-based security (VBS), and improvements to Windows Defender, to name just a few. By enabling all these new features together, organizations can immediately protect themselves against the types of malware responsible for approximately 95 percent of modern attacks.
 
-### <a href="" id="virtualization-security"></a>Virtualization-based security
+### Virtualization-based security
 
 In the server world, virtualization technologies like Microsoft Hyper-V have proven extremely effective in isolating and protecting virtual machines (VMs) in the data center. Now, with those virtualization capabilities becoming more pervasive in modern client devices, there is an incredible opportunity for new Windows client security scenarios. Windows 10 can use virtualization technology to isolate core operating system services in a segregated, virtualized environment, similar to a VM. This additional level of protection, called virtualization-based security, ensures that no one can manipulate those services, even if the kernel mode of the host operating system is compromised.
 
 Just like with client Hyper-V, Windows itself can now take advantage of processors equipped with second-level address translation (SLAT) technology and virtualization extensions, such as Intel Virtualization Technology (VT) x and AMD V, to create a secure execution environment for sensitive Windows functions and data. This VBS environment protects the following services:
--   **Hypervisor Code Integrity (HVCI).** The HVCI service in Windows 10 determines whether code executing in kernel mode is securely designed and trustworthy. It offers Zero Day and vulnerability exploit protection capabilities by ensuring that all software running in kernel mode, including drivers, securely allocate memory and operate as they are intended. In Windows 10, kernel mode code integrity is configurable, which allows organizations to scope preboot code execution to their desired configuration. For more information about configurable code integrity in Windows 10, see the [Configurable code integrity](#config-code) section.
--   **Local Security Authority (LSA).** The LSA service in Windows manages authentication operations, including NT LAN Manager (NTLM) and Kerberos mechanisms. In Windows 10, the Credential Guard feature isolates a portion of this service and helps mitigate the pass-the-hash and pass-the-ticket techniques by protecting domain credentials. In addition to logon credentials, this protection is extended to credentials stored within Credential Manager. For more information about Credential Guard, see the [Credential Guard](#credential-guard) section.
-**Note**  
 
+-   **Hypervisor Code Integrity (HVCI).** The HVCI service in Windows 10 determines whether code executing in kernel mode is securely designed and trustworthy. It offers Zero Day and vulnerability exploit protection capabilities by ensuring that all software running in kernel mode, including drivers, securely allocate memory and operate as they are intended. In Windows 10, kernel mode code integrity is configurable, which allows organizations to scope preboot code execution to their desired configuration. For more information about configurable code integrity in Windows 10, see the [Configurable code integrity](#configurable-code-integrity) section.
+-   **Local Security Authority (LSA).** The LSA service in Windows manages authentication operations, including NT LAN Manager (NTLM) and Kerberos mechanisms. In Windows 10, the Credential Guard feature isolates a portion of this service and helps mitigate the pass-the-hash and pass-the-ticket techniques by protecting domain credentials. In addition to logon credentials, this protection is extended to credentials stored within Credential Manager. For more information about Credential Guard, see the [Credential Guard](#credential-guard) section.
+
+**Note**<br>
 To determine whether virtualization is supported for a client machine model, simply run **systeminfo** from a command prompt window.
  
 VBS provides the core framework for some of the most impactful mitigations Windows 10 offers. Having client machines within your organization that can employ this functionality is crucial to modern threat resistance. For more information about the specific hardware features that each Windows 10 feature requires, including VBS, see the [Windows 10 hardware considerations](#hardware) section.
 
 ### Device Guard
 
-Microsoft Device Guard is a feature set that combines system integrity–hardening features that revolutionize Windows security by taking advantage of new VBS options to protect the system core and a trust-nothing model often seen in mobile operating systems. This feature set takes advantage of the best preexisting Windows hardening features (for example, Unified Extensible Firmware Interface \[UEFI\] Secure Boot, Windows Trusted Boot), and then combines them with powerful new app control features like the VBS-powered HVCI service and configurable code integrity, which together help prevent vulnerability exploits and unauthorized apps from running on the device in both user and kernel modes. For more information about VBS in Windows 10 and the additional features that use it, see the [Virtualization-based security](#virtualization-security) section. For more information about configurable code integrity, see the [Configurable code integrity](#config-code) section.
+Microsoft Device Guard is a feature set that combines system integrity–hardening features that revolutionize Windows security by taking advantage of new VBS options to protect the system core and a trust-nothing model often seen in mobile operating systems. This feature set takes advantage of the best preexisting Windows hardening features (for example, Unified Extensible Firmware Interface \[UEFI\] Secure Boot, Windows Trusted Boot), and then combines them with powerful new app control features like the VBS-powered HVCI service and configurable code integrity, which together help prevent vulnerability exploits and unauthorized apps from running on the device in both user and kernel modes. For more information about VBS in Windows 10 and the additional features that use it, see the [Virtualization-based security](#virtualization-based-security) section. For more information about configurable code integrity, see the [Configurable code integrity](#configurable-code-integrity) section.
 
 Although Microsoft intends the Device Guard feature set to run alongside new Windows security features such as Credential Guard, it can run independently. Depending on your organization’s client resources, you can selectively choose which features make sense for your environment and device compatibility. For information about the hardware requirements for Device Guard and other Windows 10 security features, see the [Windows 10 hardware considerations](#hardware) section. For more information about Credential Guard, see the [Credential Guard](#credential-guard) section.
 
-For most organizations, implementing specific Device Guard functionality will depend on the role of the device and its primary user, employing more features on single-workload devices, such as kiosks, and fewer features on administrative machines over which users are allowed full control. By using this model, IT organizations can categorize users into groups that align with Device Guard security policies relating to device security and code integrity restrictions. For more information about configurable code integrity, see the [Configurable code integrity](#config-code) section.
+For most organizations, implementing specific Device Guard functionality will depend on the role of the device and its primary user, employing more features on single-workload devices, such as kiosks, and fewer features on administrative machines over which users are allowed full control. By using this model, IT organizations can categorize users into groups that align with Device Guard security policies relating to device security and code integrity restrictions. For more information about configurable code integrity, see the [Configurable code integrity](#configurable-code-integrity) section.
 
 New desktops and laptops will be available to expedite your Device Guard implementation efforts. Device Guard-ready devices will require the least amount of physical interaction with the actual device before it’s ready for use. 
 
@@ -56,19 +57,19 @@ Going forward, all devices will fall into one of the following three categories:
 
 For more information about how to prepare for, manage, and deploy Device Guard, see the [Device Guard deployment guide](../keep-secure/device-guard-deployment-guide.md).
 
-### <a href="" id="config-code"></a>Configurable code integrity
+### Configurable code integrity
 
 *Code integrity* is the Windows component that verifies that the code Windows is running is trusted and safe. Like the operating modes found in Windows itself, Windows code integrity contains two primary components: kernel mode code integrity (KMCI) and user mode code integrity (UMCI). Microsoft has used KMCI in recent versions of Windows to prevent the Windows kernel from executing unsigned drivers. Although this approach is effective, drivers aren’t the only route malware can take to penetrate the operating system’s kernel mode space. So, for Windows 10, Microsoft has raised the standard for kernel mode code out of the box by requiring the use of security best practices regarding memory management and has provided enterprises with a way to set their own UMCI and KMCI standards.
 
 Historically, UMCI has been available only for Windows RT and Windows Phone devices, which made it difficult for attackers to infect such devices with viruses and malware. This reduced infection rate results from the way the operating system determines which code to execute. Natively, binaries follow a process to prove to the operating system that they are trustworthy before the operating system allows them to execute. This process is intended to restrict the execution of arbitrary code and thereby decrease the risk of malware infection. This successful trust-nothing operating system model is now available in Windows 10 through a feature called *configurable code integrity*.
 Configurable code integrity allows IT organizations to create and deploy code integrity policies that stipulate exactly which binaries can run in their environment. Administrators can manage this trust at a certification authority or publisher level down to the individual hash values for each executed binary. This level of customization allows organizations to create policies that are as restrictive as they desire. In addition, organizations can choose to provide different levels of restriction for certain types of machines. For example, fixed-workload devices such as kiosks and PoS systems would likely receive a strict policy, because their purpose is to provide the same service day after day. Administrators can manage devices that have more variable workloads, such as users’ PCs, at a higher level, providing certain software publishers’ applications for installation or aligning those devices with the organization’s software catalog.
 
-**Note**  
+**Note**<br>
 Configurable code integrity is not intended to replace technologies that allow or block programs such as AppLocker or an organization’s antivirus software. Rather, it complements such technologies by establishing a baseline of security, and then using those additional technologies to fine-tune client security.
  
 Configurable code integrity is not limited to Windows Store applications. In fact, it is not even limited to existing signed applications. Windows 10 gives you a way to sign line-of-business or third-party applications without having to repackage them: you can monitor the application’s installation and initial execution to create a list of binaries called a catalog file. When created, you sign these catalog files and add the signing certificate to the code integrity policy so that those binaries contained within the catalog files are allowed to execute. Then, you can use Group Policy, Configuration Manager, or any other familiar management tool to distribute these catalog files to your client machines. Historically, most malware has been unsigned; simply by deploying code integrity policies, your organization can immediately protect itself against unsigned malware, which is responsible for most modern attacks.
 
-**Note**  
+**Note**<br>
 For detailed deployment and planning information about configurable code integrity, see the [Device Guard deployment guide](../keep-secure/device-guard-deployment-guide.md).
  
 The process to create, test, and deploy a code integrity policy is as follows:
@@ -78,7 +79,7 @@ The process to create, test, and deploy a code integrity policy is as follows:
 4.  **Enforce and sign the policy.** After you create, audit, and merge the resulting code integrity policies, it’s time to enforce your policy. To do so, run the **Set-RuleOption** cmdlet to remove the **Unsigned Policy** rule. When enforced, no binaries that are exceptions to the policy will be allowed to run. In addition to enforcing a policy, signed policies offer an additional level of protection. Signed code integrity policies inherently protect themselves against manipulation and deletion, even by administrators.
 5.  **Deploy the code integrity policy.** When you have enforced and optionally signed your code integrity policy, it’s ready for deployment. To deploy your code integrity policies, you can use Microsoft client management technologies, mobile device management solutions, or Group Policy, or you can simply copy the file to the correct location on your client computers. For Group Policy deployment, a new administrative template is available in Windows 10 and the Windows Server 2016 operating system to simplify the deployment process.
 
-**Note**  
+**Note**<br>
 Configurable code integrity is available in Windows 10 Enterprise and Windows 10 Education.
  
 You can enable configurable code integrity as part of a Device Guard deployment or as a stand-alone component. In addition, you can run configurable code integrity on hardware that is compatible with the Windows 7 operating system, even if such hardware is not Device Guard ready. Code integrity policies can align with an existing application catalog, existing corporate imaging strategy, or with any other method that provides the organization’s desired levels of restriction. For more information about configurable code integrity with Device Guard, see the [Device Guard deployment guide](../keep-secure/device-guard-deployment-guide.md).
@@ -96,6 +97,7 @@ Measured Boot by itself does not prevent malware from loading during the startup
 For Windows 10, Microsoft has revamped Windows Defender and combined it with Microsoft System Center Endpoint Protection. Unlike with Microsoft System Center 2012 R2, there will be no System Center Endpoint Protection client to deploy to Windows 10 machines because Windows Defender is built into the operating system and enabled by default.
 
 In addition to simplified deployment, Windows Defender contains several improvements. The most important improvements to Windows Defender are:
+
 -   **Early Launch Antimalware (ELAM) compatible.** After Secure Boot has verified that the loading operating system is trusted, ELAM can start a registered and signed antimalware application before any other operating system components. Windows Defender is compatible with ELAM.
 -   **Local context for detections and centralized sensory data.** Unlike most antimalware software and previous versions of Windows Defender, Windows Defender in Windows 10 reports additional information about the context of discovered threats. This information includes the source of the content that contains the threat as well as the historical movement of the malware throughout the system. When collection is complete, Windows Defender reports this information (when users elect to enable cloud-based protection) and uses it to mitigate threats more quickly.
 -   **User Account Control (UAC) integration.** Windows Defender is now closely integrated with the UAC mechanism in Windows 10. Whenever a UAC request is made, Windows Defender automatically scans the threat before prompting the user, which helps prevent users from providing elevated privileges to malware.
@@ -103,19 +105,19 @@ In addition to simplified deployment, Windows Defender contains several improvem
 
 ## Information protection
 
-Protecting the integrity of company data as well as preventing the inappropriate disclosure and sharing of that data are a top priority for IT organizations. Trends like BYOD and mobility make the task of information protection more challenging than ever before. Windows 10 includes several improvements to built-in information protection, including a new Enterprise Data Protection (EDP) feature that offers DLP capability. This feature allows an organizations’ users to classify data themselves and gives you the ability to automatically classify data as it ingresses from business resources. It can also help prevent users from copying business content to unauthorized locations such as personal documents or websites.
+Protecting the integrity of company data as well as preventing the inappropriate disclosure and sharing of that data are a top priority for IT organizations. Trends like BYOD and mobility make the task of information protection more challenging than ever before. Windows 10 includes several improvements to built-in information protection, including a new Windows Information Protection (WIP) feature that offers DLP capability. This feature allows an organizations’ users to classify data themselves and gives you the ability to automatically classify data as it ingresses from business resources. It can also help prevent users from copying business content to unauthorized locations such as personal documents or websites.
 
-Unlike some current DLP solutions, EDP does not require users to switch modes or apps or work within containers to protect data, and the protection happens behind the scenes without altering the user experience that your users have grown accustomed to in Windows. For more information about EDP in Windows 10, see the [Enterprise Data Protection](#enterprise) section.
+Unlike some current DLP solutions, WIP does not require users to switch modes or apps or work within containers to protect data, and the protection happens behind the scenes without altering the user experience that your users have grown accustomed to in Windows. For more information about WIP in Windows 10, see the [Windows Information Protection](#windows-information-protection) section.
 
-In addition to EDP, Microsoft has made substantial improvements to BitLocker, including simplified manageability through Microsoft BitLocker Administration and Monitoring (MBAM), used-space-only encryption, and single sign-on (SSO) capability. For more information about BitLocker improvements in Windows 10, see the [Improvements to BitLocker](#bitlocker) section.
+In addition to WIP, Microsoft has made substantial improvements to BitLocker, including simplified manageability through Microsoft BitLocker Administration and Monitoring (MBAM), used-space-only encryption, and single sign-on (SSO) capability. For more information about BitLocker improvements in Windows 10, see the [Improvements in BitLocker](#bitlocker) section.
 
-### <a href="" id="enterprise"></a>Enterprise Data Protection
+### Windows Information Protection
 
-DLP systems are intended to protect sensitive corporate data through encryption and managed use while the data is in use, in motion, or at rest. Traditional DLP software is typically invasive and frustrating for users and can be complicated for administrators to configure and deploy. Windows 10 now includes an EDP feature that offers DLP capabilities and is built in and simple to use. This solution gives you the flexibility to define policies that will help determine what kind of data to protect as business data and what should be considered personal. Based on these policies, you can also choose what to do, either automatically or manually, whenever you suspect that data is about to be or has been compromised. For example, if an employee has a personal but managed device that contains business data, an IT organization could block that user from copying and pasting business data to nonbusiness documents and locations or could even selectively wipe the business data from the device at any time without affecting the personal data on the device.
+DLP systems are intended to protect sensitive corporate data through encryption and managed use while the data is in use, in motion, or at rest. Traditional DLP software is typically invasive and frustrating for users and can be complicated for administrators to configure and deploy. Windows 10 now includes a Windows Information Protection (WIP) feature that offers DLP capabilities and is built in and simple to use. This solution gives you the flexibility to define policies that will help determine what kind of data to protect as business data and what should be considered personal. Based on these policies, you can also choose what to do, either automatically or manually, whenever you suspect that data is about to be or has been compromised. For example, if an employee has a personal but managed device that contains business data, an IT organization could block that user from copying and pasting business data to nonbusiness documents and locations or could even selectively wipe the business data from the device at any time without affecting the personal data on the device.
 
-You can configure EDP policies to encrypt and protect files automatically based on the network source from which the content was acquired, such as an email server, file share, or a Microsoft SharePoint site. The policies can work with on-premises resources as well as those that originate from the Internet. When specified, any data retrieved from internal network resources will always be protected as business data; even if that data is copied to portable storage, such as a flash drive or CD, the protection remains. In an effort to allow easy corrections of misclassified data, users who feel that EDP has incorrectly protected their personal data can modify the data’s classification. When such a modification occurs, you have access to audit data on the client machine. You can also use a policy to prevent users from reclassifying data. The EDP feature in Windows 10 also includes policy controls that allow you to define which apps have access to business data and even which have access to the corporate virtual private network (VPN).
+You can configure WIP policies to encrypt and protect files automatically based on the network source from which the content was acquired, such as an email server, file share, or a Microsoft SharePoint site. The policies can work with on-premises resources as well as those that originate from the Internet. When specified, any data retrieved from internal network resources will always be protected as business data; even if that data is copied to portable storage, such as a flash drive or CD, the protection remains. In an effort to allow easy corrections of misclassified data, users who feel that WIP has incorrectly protected their personal data can modify the data’s classification. When such a modification occurs, you have access to audit data on the client machine. You can also use a policy to prevent users from reclassifying data. The WIP feature in Windows 10 also includes policy controls that allow you to define which apps have access to business data and even which have access to the corporate virtual private network (VPN).
 
-To manage EDP, you use the same system management tools you probably already use to manage your Windows client computers, such as Configuration Manager and Intune. For more information about EDP, see [Enterprise data protection (EDP) overview](edp-whats-new-overview.md).
+To manage WIP, you use the same system management tools you probably already use to manage your Windows client computers, such as Configuration Manager and Intune. For more information about WIP, see [Protect your enterprise data using Windows Information Protection](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 ### <a href="" id="bitlocker"></a>Improvements in BitLocker
 
@@ -162,15 +164,18 @@ Pass the hash is the most commonly used derived credential attack today. This at
 
 Credential Guard is another new feature in Windows 10 Enterprise that employs VBS to protect domain credentials against theft, even when the host operating system is compromised. To achieve such protection, Credential Guard isolates a portion of the LSA service, which is responsible for managing authentication, inside a virtualized container. This container is similar to a VM running on a hypervisor but is extremely lightweight and contains only those files and components required to operate the LSA and other isolated services. By isolating a portion of the LSA service within this virtualized environment, credentials are protected even if the system kernel is compromised, removing the attack vector for pass the hash.
 
-For more information about the hardware requirements for Credential Guard, see the [Windows 10 hardware considerations](#hardware) section. For more information about VBS in Windows 10, see the [Virtualization-based security](#virtualization-security) section.
-**Note**  
-Because it requires isolated user mode and a Hyper-V hypervisor, you cannot configure Credential Guard on a VM, only on a physical computer.
+For more information about the hardware requirements for Credential Guard, see the [Windows 10 hardware considerations](#hardware) section. For more information about VBS in Windows 10, see the [Virtualization-based security](#virtualization-based-security) section.
+
+> [!NOTE]  
+> Starting in Windows 10, version 1607, you can configure Credential Guard on a VM.
+
  
 The Credential Guard feature is targeted at resisting the use of pass-the-hash and pass-the-ticket techniques. By employing a MFA option such as Microsoft Passport with Credential Guard, you can gain additional protection against such threats. For more in-depth information about how Credential Guard works and the specific mitigations it provides, see [Protect derived domain credentials with Credential Guard](../keep-secure/credential-guard.md).
 
 ## <a href="" id="hardware"></a>Windows 10 hardware considerations
 
 Most of the features this article describes rely on specific hardware to maximize their capabilities. By purchasing hardware that includes these features during your next purchase cycle, you will be able to take advantage of the most comprehensive client security package Windows 10 has to offer. Careful consideration about which hardware vendor and specific models to purchase is vital to the success of your organization’s client security portfolio. Table 1 contains a list of each new Windows 10 security feature and its hardware requirements.
+
 Table 1. Windows 10 hardware requirements
 
 | Windows 10 feature                              | TPM | Input/output memory management unit | Virtualization extensions | SLAT | UEFI 2.3.1 | x64 architecture only |
@@ -186,15 +191,15 @@ Table 1. Windows 10 hardware requirements
 | Device health attestation through Measured Boot | Y\* | N                                   | N                         | N    | Y          | Y                     |
  
 \* Requires use of TPM 2.0.
-**Note**  
+
+**Note**<br>
 In this table, **R** stands for *recommended*, **Y** means that the hardware component is *required* for that Windows 10 feature, and **N** means that the hardware component is *not used* with that Windows 10 feature.
  
 ## Related topics
-[Windows 10 Specifications](https://go.microsoft.com/fwlink/p/?LinkId=717550)
-[Making Windows 10 More Personal and More Secure with Windows Hello](https://go.microsoft.com/fwlink/p/?LinkId=717551)
-[Protect BitLocker from pre-boot attacks](../keep-secure/protect-bitlocker-from-pre-boot-attacks.md)
-[BitLocker Countermeasures](../keep-secure/bitlocker-countermeasures.md)
-[Device Guard deployment guide](../keep-secure/device-guard-deployment-guide.md)
-[Protect derived domain credentials with Credential Guard](../keep-secure/credential-guard.md)
- 
- 
+
+- [Windows 10 Specifications](https://go.microsoft.com/fwlink/p/?LinkId=717550)
+- [Making Windows 10 More Personal and More Secure with Windows Hello](https://go.microsoft.com/fwlink/p/?LinkId=717551)
+- [Protect BitLocker from pre-boot attacks](../keep-secure/protect-bitlocker-from-pre-boot-attacks.md)
+- [BitLocker Countermeasures](../keep-secure/bitlocker-countermeasures.md)
+- [Device Guard deployment guide](../keep-secure/device-guard-deployment-guide.md)
+- [Protect derived domain credentials with Credential Guard](../keep-secure/credential-guard.md)

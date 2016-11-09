@@ -29,6 +29,9 @@ Configure your browser to allow cookies.
 ### No data is shown on the portal
 If no data is displayed on the Dashboard portal even if no errors were encountered in the portal logs or in the browser console, you'll need to whitelist the threat intelligence, data access, and detonation endpoints that also use this protocol.
 
+> [!NOTE]
+> You must use the HTTPS protocol when adding the following endpoints.
+
 Depending on your region, add the following endpoints to the whitelist:
 
 U.S. region:
@@ -37,9 +40,6 @@ U.S. region:
 - daasmon-eus-prd.cloudapp.net			
 - dataaccess-cus-prd.cloudapp.net			
 - dataaccess-eus-prd.cloudapp.net			
-- onboardingservice-prd.trafficmanager.net			
-- sevillefeedback-prd.trafficmanager.net			
-- sevillesettings-prd.trafficmanager.net			
 - threatintel-cus-prd.cloudapp.net			
 - threatintel-eus-prd.cloudapp.net
 - winatpauthorization.windows.com
@@ -51,9 +51,6 @@ EU region:
 
 - dataaccess-neu-prd.cloudapp.net
 - dataaccess-weu-prd.cloudapp.net
-- onboardingservice-prd.trafficmanager.net
-- sevillefeedback-prd.trafficmanager.net
-- sevillesettings-prd.trafficmanager.net
 - threatintel-neu-prd.cloudapp.net
 - threatintel-weu-prd.cloudapp.net
 - winatpauthorization.windows.com

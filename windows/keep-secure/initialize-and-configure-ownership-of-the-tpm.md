@@ -40,7 +40,7 @@ Membership in the local Administrators group, or equivalent, is the minimum requ
 2.  On the **Action** menu, click **Initialize TPM** to start the TPM Initialization Wizard.
 3.  If the TPM has never been initialized or is turned off, the TPM Initialization Wizard displays the **Turn on the TPM security hardware** dialog box. This dialog box provides guidance for initializing or turning on the TPM. Follow the instructions in the wizard.
 
-    >**Note:**  If the TPM is already turned on, the TPM Initialization Wizard displays the **Create the TPM owner password** dialog box. Skip the remainder of this procedure and continue with the [To set ownership of the TPM](#bkmk-setownership) procedure.
+    >**Note:**  If the TPM is already turned on, the TPM Initialization Wizard displays the **Create the TPM owner password** dialog box. Skip the remainder of this procedure and continue with the **To set ownership of the TPM** procedure.
      
     >**Note:**  If the TPM Initialization Wizard detects that you do not have a compatible BIOS, you cannot continue with the TPM Initialization Wizard, and you are alerted to consult the computer manufacturer's documentation for instructions to initialize the TPM.
      
@@ -57,7 +57,7 @@ To finish initializing the TPM for use, you must set an owner for the TPM. The p
 
 **To set ownership of the TPM**
 
-1.  If you are not continuing immediately from the last procedure, start the TPM Initialization Wizard. If you need to review the steps to do so, see the previous procedure [To start the TPM Initialization Wizard](#bkmk-starttpminitwizard).
+1.  If you are not continuing immediately from the last procedure, start the TPM Initialization Wizard. If you need to review the steps to do so, see the previous procedure **To start the TPM Initialization Wizard**.
 2.  In the **Create the TPM owner password** dialog box, click **Automatically create the password (recommended)**.
 3.  In the **Save your TPM owner password** dialog box, click **Save the password**.
 4.  In the **Save As** dialog box, select a location to save the password, and then click **Save**. The password file is saved as *computer\_name.tpm*.

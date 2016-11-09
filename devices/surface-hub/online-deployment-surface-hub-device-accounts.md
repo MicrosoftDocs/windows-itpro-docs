@@ -57,17 +57,17 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     Once you have a compatible policy, then you will need to apply the policy to the device account. However, policies can only be applied to user accounts and not resource mailboxes. You need to convert the mailbox into a user type, apply the policy, and then convert it back into a mailbox—you may need to re-enable it and set the password again too.
 
     ```PowerShell
-    Set-Mailbox $acctUpn -Type Regular
-    Set-CASMailbox $acctUpn -ActiveSyncMailboxPolicy $easPolicy.Id
-    Set-Mailbox $acctUpn -Type Room
-    Set-Mailbox $credNewAccount.UserName -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
+    Set-Mailbox 'HUB01@contoso.com' -Type Regular
+    Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy.Id
+    Set-Mailbox 'HUB01@contoso.com' -Type Room
+    Set-Mailbox 'HUB01@contoso.com' -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force) -EnableRoomMailboxAccount $true
     ```
 
 4.  Various Exchange properties must be set on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
 
     ```PowerShell
-    Set-CalendarProcessing -Identity $acctUpn -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
-    Set-CalendarProcessing -Identity $acctUpn -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
+    Set-CalendarProcessing -Identity 'HUB01@contoso.com' -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
+    Set-CalendarProcessing -Identity 'HUB01@contoso.com' -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
 5.  Connect to Azure AD.
@@ -81,7 +81,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
 6.  If you decide to have the password not expire, you can set that with PowerShell cmdlets too. See [Password management](password-management-for-surface-hub-device-accounts.md) for more information.
 
     ```PowerShell
-    Set-MsolUser -UserPrincipalName $acctUpn -PasswordNeverExpires $true
+    Set-MsolUser -UserPrincipalName 'HUB01@contoso.com' -PasswordNeverExpires $true
     ```
 
 7.  The device account needs to have a valid Office 365 (O365) license, or Exchange and Skype for Business will not work. If you have the license, you need to assign a usage location to your device account—this determines what license SKUs are available for your account.
@@ -91,9 +91,9 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     Once you list out the SKUs, you can add a license using the `Set-MsolUserLicense` cmdlet. In this case, `$strLicense` is the SKU code that you see (for example, *contoso:STANDARDPACK*).
 
     ```PowerShell
-    Set-MsolUser -UserPrincipalName $acctUpn -UsageLocation "US"
+    Set-MsolUser -UserPrincipalName 'HUB01@contoso.com' -UsageLocation "US"
     Get-MsolAccountSku
-    Set-MsolUserLicense -UserPrincipalName $acctUpn -AddLicenses $strLicense
+    Set-MsolUserLicense -UserPrincipalName 'HUB01@contoso.com' -AddLicenses $strLicense
     ```
 
 8.  Enable the device account with Skype for Business.
@@ -118,14 +118,14 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     -   To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
         ```PowerShell
-        Enable-CsMeetingRoom -Identity $rm -RegistrarPool  
+        Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool  
         "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
         ```
 
         If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
 
         ```PowerShell
-        Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
+        Get-CsOnlineUser -Identity ‘alice@contoso.com’| fl *registrarpool*
         ```
 
 9.  Assign Skype for Business license to your Surface Hub account.

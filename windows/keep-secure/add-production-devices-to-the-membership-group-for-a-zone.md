@@ -37,7 +37,7 @@ In this topic:
 
 -   [Refresh Group Policy on the devices in the membership group](#to-refresh-group-policy-on-a-device)
 
--   [Check which GPOs apply to a device](#to-see-what-gpos-are-applied-to-a-device)
+-   [Check which GPOs apply to a device](#to-see-which-gpos-are-applied-to-a-device)
 
 ## To add domain devices to the GPO membership group
 

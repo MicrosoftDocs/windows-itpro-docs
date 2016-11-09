@@ -15,7 +15,7 @@ This section of the Upgrade Analytics workflow provides an inventory of web site
 
 Ensure the following prerequisites are met before using site discovery:
 
-1. Install the latest Internet Explorer 11 Cumulative Update. This update provides the capability for site discovery and is available in the [July 2016 cumulative update](https://support.microsoft.com/kb/3170106) and later.
+1. Install the latest [Windows Monthly Rollup](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup). This functionality has been included in Internet Explorer 11 starting with the July 2016 Cumulative Update. 
 2. Install the update for customer experience and diagnostic telemetery ([KB3080149](https://support.microsoft.com/kb/3080149)).
 3. Enable Internet Explorer data collection, which is disabled by default. The best way to enable it is to modify the [Upgrade Analytics deployment script](upgrade-analytics-get-started.md#run-the-upgrade-analytics-deployment-script) to allow Internet Explorer data collection before you run it. 
 

@@ -68,13 +68,13 @@ You must be a member of the local Administrators group on all computers mentione
     
 6.  Enter your KMS host key and (optionally) a display name (Figure 14).
 
-    ![Entering your KMS host key](images/volumeactivationforwindows81-14.jpg)
+    ![Choosing how to activate your product](images/volumeactivationforwindows81-15.jpg)
     
     **Figure 14**. Entering your KMS host key
     
 7.  Activate your KMS host key by phone or online (Figure 15).
 
-    ![Choosing how to activate your product](images/volumeactivationforwindows81-15.jpg)
+    ![Entering your KMS host key](images/volumeactivationforwindows81-14.jpg)
     
     **Figure 15**. Choosing how to activate your product
     
@@ -91,7 +91,7 @@ To verify your Active Directory-based activation configuration, complete the fol
 6.  Scroll down to the **Windows activation** section, and verify that this client has been activated.
 
     **Note**<br>
-    If you are using both KMS and Active Directory-based activation, it may be difficult to see whether a client has been activated by KMS or by Active Directory-based activation. Consider disabling KMS during the test, or make sure that you are using a client computer that has not already been activated by KMS. The **slmrg.vbs /dlv** command also indicates whether KMS has been used.
+    If you are using both KMS and Active Directory-based activation, it may be difficult to see whether a client has been activated by KMS or by Active Directory-based activation. Consider disabling KMS during the test, or make sure that you are using a client computer that has not already been activated by KMS. The **slmgr.vbs /dlv** command also indicates whether KMS has been used.
     
 ## See also
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)

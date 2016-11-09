@@ -18,6 +18,8 @@ localizationpriority: high
 
 This topic provides a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade.
 
+If you are not an IT administrator, you can try the [quick fixes](#quick-fixes) listed in this topic. If the quick fixes do not resolve your issue, see [Get help with Windows 10 upgrade and installation errors](https://support.microsoft.com/en-us/help/10587/windows-10-get-help-with-upgrade-installation-errors) for more information.
+
 ## In this topic
 
 The following sections and procedures are provided in this guide:
@@ -31,7 +33,7 @@ The following sections and procedures are provided in this guide:
     - [Log entry structure](#log-entry-structure): The format of a log entry is described.
     - [Analyze log files](#analyze-log-files): General procedures for log file analysis, and an example.
 - [Resolution procedures](#resolution-procedures): Causes and mitigation procedures associated with specific error codes.
-    - [0xC1900101](#0xC1900101): Information about the 0xC1900101 result code.
+    - [0xC1900101](#0xc1900101): Information about the 0xC1900101 result code.
     - [0x800xxxxx](#0x800xxxxx): Information about result codes that start with 0x800.
     - [Other result codes](#other-result-codes): Additional causes and mitigation procedures are provided for some result codes.
     - [Other error codes](#other-error-codes): Additional causes and mitigation procedures are provided for some error codes.
@@ -63,6 +65,7 @@ WIM = Windows image (Microsoft)
 The following steps can resolve many Windows upgrade problems.
 
 <OL>
+<LI>Remove nonessential external hardware, such as docks and USB devices.</LI> 
 <LI>Check all hard drives for errors and attempt repairs. To automatically repair hard drives, open an elevated command prompt, switch to the drive you wish to repair, and type the following command. You will be required to reboot the computer if the hard drive being repaired is also the system drive.
 <UL>
 <LI>chkdsk /F</LI>
@@ -81,12 +84,10 @@ The following steps can resolve many Windows upgrade problems.
   <LI>Verify compatibility information and re-install antivirus applications after the upgrade.</LI></LI>
   </UL>
 <LI>Uninstall all nonessential software.</LI>
-<LI>Remove nonessential external hardware, such as docks and USB devices.</LI> 
 <LI>Update firmware and drivers.</LI>
 <LI>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.</LI>
 <LI>Verify at least 16 GB of free space is available to upgrade a 32-bit OS, or 20 GB for a 64-bit OS.
 </OL>
-
 
 
 ## Upgrade error codes
@@ -102,7 +103,7 @@ Note: If only a result code is returned, this can be because a tool is being use
 
 ### Result codes
 
->A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. <BR>To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Other error codes](#other-error-codes) section later in this topic.
+>A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. <BR>To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Resolution procedures](#resolution-procedures) section later in this topic.
 
 Result codes can be matched to the type of error encountered. To match a result code to an error:
 
@@ -245,15 +246,12 @@ A setupact.log or setuperr.log entry includes the following elements:
 
 See the following example:
 
-<P><TABLE BORDER=1>
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>2016-09-08 09:23:50</TD>
-<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>Warning</TD>
-<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>MIG</TD>
-<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>Could not replace object C:\Users\user1\Cookies. Target Object cannot be removed.</TD></TR>
-</TABLE>
+| Date/Time | Log level | Component | Message |
+|------|------------|------------|------------|
+|2016-09-08 09:23:50,|  Warning |         MIG  |   Could not replace object C:\Users\name\Cookies. Target Object cannot be removed.|
+
 
 ### Analyze log files
-
 
 <P>To analyze Windows Setup log files:
 
@@ -336,12 +334,9 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 
 <P>This analysis indicates that the Windows upgrade error can be resolved by deleting the C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN] file. Note: In this example, the full, unshortened file name is  C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f. 
 
-
 ## Resolution procedures
 
-
 ### 0xC1900101
-
 
 A frequently observed result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the downlevel phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as:<BR>
 
@@ -743,6 +738,12 @@ This error has more than one possible cause. Attempt [quick fixes](#quick-fixes)
 </tr>
 
 <tr>
+<td>0xC1800118</td>
+<td>WSUS has downloaded content that it cannot use due to a missing decryption key.</td>
+<td>See [Steps to resolve error 0xC1800118](https://blogs.technet.microsoft.com/wsus/2016/09/21/resolving-error-0xc1800118/) for information.</td>
+</tr>
+
+<tr>
 <td>0xC1900200</td>
 <td>Setup.exe has detected that the machine does not meet the minimum system requirements.</td>
 <td>Ensure the system you are trying to upgrade meets the minimum system requirements. <P>See [Windows 10 specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications)  for information.</td>
@@ -771,7 +772,7 @@ This error has more than one possible cause. Attempt [quick fixes](#quick-fixes)
 <tr>
 <td>0x80246007</td>
 <td>The update was not downloaded successfully.</td>
-<td>Attempt other methods of upgrading the operatign system.<BR>
+<td>Attempt other methods of upgrading the operating system.<BR>
 Download and run the media creation tool. See [Download windows 10](https://www.microsoft.com/en-us/software-download/windows10). 
 <BR>Attempt to upgrade using .ISO or USB.<BR>
 **Note**: Windows 10 Enterprise isn’t available in the media creation tool. For more information, go to the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx).
@@ -865,7 +866,7 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 <TD>[Analyze log files](#analyze-log-files) to determine the issue.</TD></TR>
 <TR><TD>0xC1900101 - 0x4001E
 <TD>Installation failed in the SECOND_BOOT phase with an error during PRE_OOBE operation.
-<TD>This is a generic error that occurs during the OOBE phase of setup. See the [0xC1900101](#0xC1900101) section of this guide and review general troubleshooting procedures described in that section.</TD></TR>
+<TD>This is a generic error that occurs during the OOBE phase of setup. See the [0xC1900101](#0xc1900101) section of this guide and review general troubleshooting procedures described in that section.</TD></TR>
 <TR><TD>0x80070005 - 0x4000D
 <TD>The installation failed in the SECOND_BOOT phase with an error in during MIGRATE_DATA operation. This error indicates that access was denied while attempting to migrate data.
 <TD>[Analyze log files](#analyze-log-files) to determine the data point that is reporting access denied.</TD></TR>

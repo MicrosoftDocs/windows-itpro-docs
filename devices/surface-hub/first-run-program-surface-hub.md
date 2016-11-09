@@ -169,17 +169,19 @@ On this page, the Surface Hub will ask for credentials for the device account th
 
 >**Note**  This section does not cover specific errors that can happen during first run. See [Troubleshoot Surface Hub](troubleshoot-surface-hub.md) for more information on errors.
 
- 
 
 ![Image showing Enter device account info page.](images/setupdeviceacct.png)
 
 ### Details
 
-Use either a **user principal name (UPN)** or a **domain\\user name** as the account identifier in the first entry field.
+Use either a **user principal name (UPN)** or a **domain\\user name** as the account identifier in the first entry field. Use the format that matches your environment, and enter the password.
 
--   **User principal name:** This is the UPN of the device account for this Surface Hub. If you’re using Azure Active Directory (Azure AD) or a hybrid deployment, then you must enter the UPN of the device account.
--   **Domain\\user name:** This is the identity of the device account for this Surface Hub, in domain\\user name format. If you’re using an Active Directory (AD) deployment, then you must enter the account in this format.
--   **Password:** Enter the device account password.
+| Environment  | Required format for device account|
+| ------------ | ----------------------------------|
+| Device account is hosted only online.  | username@domain.com|
+| Device account is hosted only on-prem.  | DOMAIN\username|
+| Device account is hosted online and on-prem (hybrid).  |  DOMAIN\username|
+
 
 Click **Skip setting up a device account** to skip setting up a device account. However, if you don't set up a device account, the device will not be fully integrated into your infrastructure. For example, people won't be able to:
 
@@ -423,7 +425,7 @@ This page will attempt to create a new admin account using the credentials that 
 
 In order to get the latest features and fixes, you should update your Surface Hub as soon as you finish all of the preceding first-run steps.
 
-1.  Make sure the device has access to the Windows Update servers or to Windows Server Update Services (WSUS). To configure WSUS, see [Using WSUS](manage-windows-updates-for-surface-hub.md#using-wsus).
+1.  Make sure the device has access to the Windows Update servers or to Windows Server Update Services (WSUS). To configure WSUS, see [Using WSUS](manage-windows-updates-for-surface-hub.md#use-windows-server-update-services).
 2.  Open Settings, click **Update & security**, then **Windows Update**, and then click **Check for updates**.
 3.  If updates are available, they will be downloaded. Once downloading is complete, click the **Update now** button to install the updates.
 4.  Follow the onscreen prompts after the updates are installed. You may need to restart the device.

@@ -209,6 +209,19 @@ For each app in your inventory, you can view and manage license details. This gi
 
         Store for Business updates the list of assigned licenses.
 
+### Purchase additional licenses
+You can purchase additional licenses for apps in your Inventory. 
+
+**To purchase additional app licenses**
+
+1. Sign in to [Store for Business](https://go.microsoft.com/fwlink/p/?LinkId=691845)
+2. Click **Manage**, and then choose **Inventory**.
+3. From **Inventory**, click an app. 
+4. On the app page, click **View app details**. 
+5. From this page, click **Buy more** for additional licenses, or click **Manage** to work with your current licenses.  
+
+You'll have a summary of current license availability. 
+
 ### <a href="" id="download-offline-licensed-apps"></a>Download offline-licensed app
 
 Offline licensing is a new feature in Windows 10 and allows apps to be deployed to devices that are not connected to the Internet. This means organizations can deploy apps when users or devices do not have connectivity to the Store.

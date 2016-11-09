@@ -16,11 +16,11 @@ ms.prod: w10
 
 This topic explains how to:
 
--   [Update an application in an existing virtual application package](#bkmk-update-app-in-pkg)
+-   [Update an application in an existing virtual application package](#update-an-application-in-an-existing-virtual-application-package)
 
--   [Modify the properties associated with an existing virtual application package](#bkmk-chg-props-in-pkg)
+-   [Modify the properties associated with an existing virtual application package](#modify-the-properties-associated-with-an-existing-virtual-application-package)
 
--   [Add a new application to an existing virtual application package](#bkmk-add-app-to-pkg)
+-   [Add a new application to an existing virtual application package](#add-a-new-application-to-an-existing-virtual-application-package)
 
 **Before you update a package:**
 
@@ -32,7 +32,7 @@ This topic explains how to:
 
 -   If you click **Modify an Existing Virtual Application Package** in the Sequencer in order to edit a package, but then make no changes and close the package, the streaming behavior of the package is changed. The primary feature block is removed from the StreamMap.xml file, and any files that were listed in the publishing feature block are removed. Users who receive the edited package experience that package as if it were stream-faulted, regardless of how the original package was configured.
 
-**Update an application in an existing virtual application package**
+## Update an application in an existing virtual application package
 
 1.  On the computer that runs the sequencer, click **All Programs**, point to **Microsoft Application Virtualization**, and then click **Microsoft Application Virtualization Sequencer**.
 
@@ -47,25 +47,17 @@ This topic explains how to:
     **Important**  
     If you are required to disable virus scanning software, first scan the computer that runs the sequencer to ensure that no unwanted or malicious files are added to the package.
 
-     
-
 6.  On the **Select Installer** page, click **Browse** and specify the update installation file for the application. If the update does not have an associated installer file, and if you plan to run all installation steps manually, select the **Select this option to perform a custom installation** check box, and then click **Next**.
 
 7.  On the **Installation** page, when the sequencer and application installer are ready you can proceed to install the application update so the sequencer can monitor the installation process. If additional installation files must be run as part of the installation, click **Run**, and then locate and run the additional installation files. When you are finished with the installation, select **I am finished installing**. Click **Next**.
 
-    **Note**  
-    The sequencer monitors all changes and installations that occur on the computer that runs the sequencer. This includes any changes and installations that are performed outside of the sequencing wizard.
-
-     
+    >**Note**&nbsp;&nbsp;The sequencer monitors all changes and installations that occur on the computer that runs the sequencer. This includes any changes and installations that are performed outside of the sequencing wizard.
 
 8.  On the **Installation Report** page, you can review information about the updated virtual application. In **Additional Information**, double-click the event to obtain more detailed information. To proceed, click **Next**.
 
 9.  On the **Streaming** page, run each program so that it can be optimized and run more efficiently on target computers. It can take several minutes for all of the applications to run. After all applications have run, close each of the applications, and then click **Next**.
 
-    **Note**  
-    You can stop an application from loading during this step. In the **Application Launch** dialog box, click **Stop**, and then select either **Stop all applications** or **Stop this application only**.
-
-     
+    >**Note**&nbsp;&nbsp;You can stop an application from loading during this step. In the **Application Launch** dialog box, click **Stop**, and then select either **Stop all applications** or **Stop this application only**.
 
 10. On the **Create Package** page, to modify the package without saving it, select the check box for **Continue to modify package without saving using the package editor**. When you select this option, the package opens in the App-V Sequencer console, where you can modify the package before it is saved. Click **Next**.
 
@@ -73,7 +65,8 @@ This topic explains how to:
 
 11. On the **Completion** page, click **Close** to close the wizard. The package is now available in the sequencer.
 
-**Modify the properties associated with an existing virtual application package**
+
+## Modify the properties associated with an existing virtual application package
 
 1.  On the computer that runs the sequencer, click **All Programs**, point to **Microsoft Application Virtualization**, and then click **Microsoft Application Virtualization Sequencer**.
 
@@ -109,14 +102,11 @@ This topic explains how to:
 
     -   Add or edit shortcuts and file type associations.
 
-        **Note**  
-        To edit shortcuts or file type associations, you must first open the package for upgrade to add a new application, and then proceed to the final editing page.
-
-         
+        >**Note**&nbsp;&nbsp;To edit shortcuts or file type associations, you must first open the package for upgrade to add a new application, and then proceed to the final editing page.
 
 6.  When you finish changing the package properties, click **File** &gt; **Save** to save the package.
 
-**Add a new application to an existing virtual application package**
+## Add a new application to an existing virtual application package
 
 1.  On the computer that runs the sequencer, click **All Programs**, point to **Microsoft Application Virtualization**, and then click **Microsoft Application Virtualization Sequencer**.
 
@@ -128,19 +118,13 @@ This topic explains how to:
 
 5.  On the **Prepare Computer** page, review the issues that could cause the package creation to fail or cause the revised package to contain unnecessary data. Resolve all potential issues before you continue. After making any corrections and resolving all potential issues, click **Refresh** &gt; **Next**.
 
-    **Important**  
-    If you are required to disable virus scanning software, first scan the computer that runs the sequencer to ensure that no unwanted or malicious files can be added to the package.
-
-     
+    >**Important**&nbsp;&nbsp;If you are required to disable virus scanning software, first scan the computer that runs the sequencer to ensure that no unwanted or malicious files can be added to the package.
 
 6.  On the **Select Installer** page, click **Browse** and specify the installation file for the application. If the application does not have an associated installer file and you plan to run all installation steps manually, select the **Select this option to perform a custom installation** check box, and then click **Next**.
 
 7.  On the **Installation** page, when the sequencer and application installer are ready, install the application so that the sequencer can monitor the installation process. If additional installation files must be run as part of the installation, click **Run**, and locate and run the additional installation files. When you finish the installation, select **I am finished installing** &gt; **Next**. In the **Browse for Folder** dialog box, specify the primary directory where the application will be installed. Ensure that this is a new location so that you don’t overwrite the existing version of the virtual application package.
 
-    **Note**  
-    The sequencer monitors all changes and installations that occur on the computer that runs the sequencer. This includes any changes and installations that are performed outside of the sequencing wizard.
-
-     
+    >**Note**&nbsp;&nbsp;The sequencer monitors all changes and installations that occur on the computer that runs the sequencer. This includes any changes and installations that are performed outside of the sequencing wizard.
 
 8.  On the **Configure Software** page, optionally run the programs contained in the package. This step completes any associated license or configuration tasks that are required to run the application before you deploy and run the package on target computers. To run all the programs at the same time, select at least one program, and then click **Run All**. To run specific programs, select the program or programs you want to run, and then click **Run Selected**. Complete the required configuration tasks and then close the applications. It can take several minutes for all programs to run. Click **Next**.
 
@@ -152,10 +136,7 @@ This topic explains how to:
 
 11. On the **Streaming** page, run each program so that it can be optimized and run more efficiently on target computers. It can take several minutes for all the applications to run. After all applications have run, close each of the applications, and then click **Next**.
 
-    **Note**  
-    You can stop an application from loading during this step. In the **Application Launch** dialog box, click **Stop** and then select either **Stop all applications** or **Stop this application only**.
-
-     
+    >**Note**&nbsp;&nbsp;You can stop an application from loading during this step. In the **Application Launch** dialog box, click **Stop** and then select either **Stop all applications** or **Stop this application only**.
 
 12. On the **Create Package** page, to modify the package without saving it, select the **Continue to modify package without saving using the package editor** check box. Selecting this option opens the package in the App-V Sequencer console, where you can modify the package before saving it. Click **Next**.
 
