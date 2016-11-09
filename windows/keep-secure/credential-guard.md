@@ -48,7 +48,8 @@ The following tables provide more information about the hardware, firmware, and 
 
 > [!NOTE]  
 > For new computers running Windows 10, Trusted Platform Module (TPM 2.0) must be enabled by default. This requirement is not restated in the tables that follow.<br>
-> If you are an OEM, see the requirements information at [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514(v=vs.85).aspx).
+> If you are an OEM, see the requirements information at [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514(v=vs.85).aspx).<br>
+> Starting in Widows 10, 1607, TPM 2.0 is required.
 
 
 ## Credential Guard requirements for baseline protections
@@ -92,7 +93,7 @@ The following tables describes additional hardware and firmware requirements, an
 
 <br>
 
-### 2017 Additional Qualification Requirements for Credential Guard (starting with next major release of Windows 10) 
+### 2017 Additional Qualification Requirements for Credential Guard (starting with the next major release of Windows 10) 
 
 | Protection for Improved Security - requirement         | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
