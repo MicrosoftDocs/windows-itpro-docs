@@ -1,4 +1,4 @@
----
+--
 title: Create a Windows Information Protection (WIP) policy using Microsoft Intune (Windows 10)
 description: Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.
 ms.assetid: 4b307c99-3016-4d6a-9ae7-3bbebd26e721
@@ -18,12 +18,7 @@ localizationpriority: high
 
 Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network.
 
-## Important note about the June service update for Insider Preview
-We've received some great feedback from you, our Windows 10 Insider Preview customers, about our Windows Information Protection experiences and processes. Because of that feedback, we're delighted to deliver an enhanced apps policy experience with the June service update. This means that when you open an existing Windows Information Protection policy after we release the June service update in your test environment, your existing Windows 10 Windows Information Protection app rules (formerly in the **Protected Apps** area) will be removed.<p>To prepare for this change, we recommend that you make an immediate backup of your current app rules as they are today, so you can use them to help reconfigure your app rules with the enhanced experience. When you open an existing Windows Information Protection policy after we release the June service update, you'll get a dialog box telling you about this change. Click the **OK** button to close the box and to begin reconfiguring your app rules.
 
-![Microsoft Intune: Reconfigure app rules list dialog box](images/wip-intune-app-reconfig-warning.png)
-
-Note that if you exit the **Policy** page before you've saved your new policy, your existing deployments won't be affected. However, if you save the policy without reconfiguring your apps, an updated policy will be deployed to your employees with an empty app rules list.
  
 ## Add a WIP policy
 After you’ve set up Intune for your organization, you must create a WIP-specific policy.
