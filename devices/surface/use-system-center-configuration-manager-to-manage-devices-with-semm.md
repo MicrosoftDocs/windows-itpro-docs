@@ -341,15 +341,15 @@ To add the SEMM Configuration Manager scripts to Configuration Manager as an app
 
 2. Proceed through The Create Application Wizard as follows:
 
-   * **General** – Select **Manually specify the application information**, and then click **Next**.
+   - **General** – Select **Manually specify the application information**, and then click **Next**.
 
-   * **General Information** – Enter a name for the application (for example SEMM) and any other information you want such as publisher, version, or comments on this page. Click **Next** to proceed.
+   - **General Information** – Enter a name for the application (for example SEMM) and any other information you want such as publisher, version, or comments on this page. Click **Next** to proceed.
 
-   * **Application Catalog** – The fields on this page can be left with their default values. Click **Next**.
+   - **Application Catalog** – The fields on this page can be left with their default values. Click **Next**.
 
-   * **Deployment Types** – Click **Add** to start the Create Deployment Type Wizard.
+   - **Deployment Types** – Click **Add** to start the Create Deployment Type Wizard.
 
-   * Proceed through the steps of the Create Deployment Type Wizard, as follows:
+   - Proceed through the steps of the Create Deployment Type Wizard, as follows:
 
      * **General** – Click **Script Installer** from the **Type** drop-down menu. The **Manually specify the deployment type information** option will automatically be selected. Click Next to proceed.
      * **General Information** – Enter a name for the deployment type (for example SEMM Configuration Scripts), and then click Next to continue.
@@ -359,20 +359,20 @@ To add the SEMM Configuration Manager scripts to Configuration Manager as an app
 
      *Figure 2. Set the SEMM Configuration Manager scripts as the install and uninstall commands*
 
-     * **Detection Method** – Click **Add Clause** to add the SEMM Configuration Manager script registry key detection rule. The **Detection Rule** window is displayed, as shown in Figure 3.
+     * **Detection Method** – Click **Add Clause** to add the SEMM Configuration Manager script registry key detection rule. The **Detection Rule** window is displayed, as shown in Figure 3. Use the following settings:
+
+       - Click **Registry** from the **Setting Type** drop-down menu.
+       - Click **HKEY_LOCAL_MACHINE** from the **Hive** drop-down menu.
+       - Enter **SOFTWARE\Microsoft\Surface\SEMM** in the **Key** field.
+       - Enter **Enabled_Version1000** in the **Value** field.
+       - Click **String** from the **Data Type** drop-down menu.
+       - Click the **This registry setting must satisfy the following rule to indicate the presence of this application** button.
+       - Enter **1** in the **Value** field.
+       - Click **OK** to close the **Detection Rule** window.
 
      ![Use a registry key to identify devices enrolled in SEMM](images/config-mgr-semm-fig3.png "Use a registry key to identify devices enrolled in SEMM")
      
      *Figure 3. Use a registry key to identify devices enrolled in SEMM*
-
-       1. Click **Registry** from the **Setting Type** drop-down menu.
-       2. Click **HKEY_LOCAL_MACHINE** from the **Hive** drop-down menu.
-       3. Enter **SOFTWARE\Microsoft\Surface\SEMM** in the **Key** field.
-       4. Enter **Enabled_Version1000** in the **Value** field.
-       5. Click **String** from the **Data Type** drop-down menu.
-       6. Click the **This registry setting must satisfy the following rule to indicate the presence of this application** button.
-       7. Enter **1** in the **Value** field.
-       8. Click **OK** to close the **Detection Rule** window.
 
      * Click **Next** to proceed to the next page.
      
@@ -381,13 +381,14 @@ To add the SEMM Configuration Manager scripts to Configuration Manager as an app
      * **Requirements** – The ConfigureSEMM.ps1 script automatically verifies that the device is a Surface device before attempting to enable SEMM. However, if you intend to deploy this script application to a collection with devices other than those to be managed with SEMM, you could add requirements here to ensure this application would run only on Surface devices or devices you intend to manage with SEMM. Click **Next** to continue.
      
      * **Dependencies** – Click **Add** to open the **Add Dependency** window.
-       1. Click **Add** to open the **Specify Required Application** window.
 
-          a. Enter a name for the SEMM dependencies in the **Dependency Group Name** field (for example, *SEMM Assemblies*).
+       * Click **Add** to open the **Specify Required Application** window.
 
-          b. Click **Microsoft Surface UEFI Manager** from the list of **Available Applications** and the MSI deployment type, and then click **OK** to close the **Specify Required Application** window.
+          - Enter a name for the SEMM dependencies in the **Dependency Group Name** field (for example, *SEMM Assemblies*).
+
+          - Click **Microsoft Surface UEFI Manager** from the list of **Available Applications** and the MSI deployment type, and then click **OK** to close the **Specify Required Application** window.
           
-        2.	Keep the **Auto Install** check box selected if you want Microsoft Surface UEFI Manager installed automatically on devices when you attempt to enable SEMM with the Configuration Manager scripts. Click **OK** to close the **Add Dependency** window.
+        *	Keep the **Auto Install** check box selected if you want Microsoft Surface UEFI Manager installed automatically on devices when you attempt to enable SEMM with the Configuration Manager scripts. Click **OK** to close the **Add Dependency** window.
 
      * Click **Next** to proceed.
      
