@@ -16,7 +16,7 @@ This topic for IT professional provides an overview of the virtual smart card te
 
 **Did you mean…**
 
--   [Smart Cards](https://technet.microsoft.com/windows-server-docs/security/smart-cards/smart-card-overview)
+-   [Smart Cards](smart-card-windows-smart-card-technical-reference.md)
 
 ## Feature description
 

@@ -36,11 +36,11 @@ Smart cards provide:
 
 Smart cards can be used to sign in to domain accounts only, not local accounts. When you use a password to sign in interactively to a domain account, Windows uses the Kerberos version 5 (v5) protocol for authentication. If you use a smart card, the operating system uses Kerberos v5 authentication with X.509 v3 certificates.
 
-Virtual smart cards   Virtual smart cards were introduced in Windows Server 2012 and Windows 8 to alleviate the need for a physical smart card, the smart card reader, and the associated administration of that hardware. For information about virtual smart card technology, see [Virtual Smart Card Overview](https://technet.microsoft.com/en-us/library/dn593708(v=ws.11).aspx).
+**Virtual smart cards** were introduced in Windows Server 2012 and Windows 8 to alleviate the need for a physical smart card, the smart card reader, and the associated administration of that hardware. For information about virtual smart card technology, see [Virtual Smart Card Overview](virtual-smart-card-overview.md).
 
 ## In this technical reference
 
-This reference contains the following topics, which apply to versions of the Windows operating system that are designated in the **Applies To** list at the beginning of each topic.
+This reference contains the following topics.
 
 -   [How Smart Card Sign-in Works in Windows](smart-card-how-smart-card-sign-in-works-in-windows.md)
 
