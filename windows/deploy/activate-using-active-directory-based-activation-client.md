@@ -68,13 +68,13 @@ You must be a member of the local Administrators group on all computers mentione
     
 6.  Enter your KMS host key and (optionally) a display name (Figure 14).
 
-    ![Entering your KMS host key](images/volumeactivationforwindows81-14.jpg)
+    ![Choosing how to activate your product](images/volumeactivationforwindows81-15.jpg)
     
     **Figure 14**. Entering your KMS host key
     
 7.  Activate your KMS host key by phone or online (Figure 15).
 
-    ![Choosing how to activate your product](images/volumeactivationforwindows81-15.jpg)
+    ![Entering your KMS host key](images/volumeactivationforwindows81-14.jpg)
     
     **Figure 15**. Choosing how to activate your product
     
