@@ -19,7 +19,9 @@ localizationpriority: high
 If you have specific web sites and apps that you know have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list so that the web sites will automatically open using Internet Explorer 11. Additionally, if you know that your intranet sites aren't going to work properly with Microsoft Edge, you can set all intranet sites to automatically open using IE11.
 
 Using Enterprise Mode means that you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working on IE11.
-<p>**Note**<br>If you want to use Group Policy to set Internet Explorer as your default browser, you can find the info here, [Set the default browser using Group Policy]( https://go.microsoft.com/fwlink/p/?LinkId=620714).
+
+> **Note**<br>
+>If you want to use Group Policy to set Internet Explorer as your default browser, you can find the info here, [Set the default browser using Group Policy]( https://go.microsoft.com/fwlink/p/?LinkId=620714).
 
 ## Fix specific websites
 
@@ -42,6 +44,9 @@ Microsoft Edge doesn't support ActiveX controls, Browser Helper Objects, VBScrip
 ### Set up Microsoft Edge to use the Enterprise Mode site list
 
 You must turn on the **Use Enterprise Mode Site List** Group Policy setting before Microsoft Edge can use the Enterprise Mode site list. This Group Policy applies to both Microsoft Edge and IE11, letting Microsoft Edge switch to IE11 as needed, based on the Enterprise Mode site list. For more info about IE11 and Enterprise Mode, see [Enterprise Mode for Internet Explorer 11 (IE11)](https://go.microsoft.com/fwlink/p/?linkid=618377).
+
+> **Note**<br>
+> If there’s an .xml file in the cache container, IE waits 65 seconds and then checks the local cache for a newer version of the file from the server, based on standard caching rules. If the server file has a different version number than the version in the cache container, the server file is used and stored in the cache container.<p>If you’re already using a site list, enterprise mode continues to work during the 65 second wait; it just uses your existing site list instead of your new one.
 
 **To turn on Enterprise Mode using Group Policy**
 
@@ -67,13 +72,12 @@ You must turn on the **Use Enterprise Mode Site List** Group Policy setting befo
 
 3.  Refresh your policy in your organization and then view the affected sites in Microsoft Edge.<p>The site shows a message in Microsoft Edge, saying that the page needs IE. At the same time, the page opens in IE11; in a new frame if it's not yet running, or in a new tab if it is.
 
-    **Note**<br>
-    If there’s an .xml file in the cache container, IE waits 65 seconds and then checks the local cache for a newer version of the file from the server, based on standard caching rules. If the server file has a different version number than the version in the cache container, the server file is used and stored in the cache container.<p>If you’re already using a site list, enterprise mode continues to work during the 65 second wait; it just uses your existing site list instead of your new one.
-
 ## Fix your intranet sites
 
 You can add the **Send all intranet traffic over to Internet Explorer** Group Policy setting for Windows 10 so that all of your intranet sites open in IE11. This means that even if your employees are using Microsoft Edge, they will automatically switch to IE11 while viewing the intranet.
-<p>**Note**<br>If you want to use Group Policy to set IE as the default browser for Internet sites, you can find the info here, [Set the default browser using Group Policy]( https://go.microsoft.com/fwlink/p/?LinkId=620714).
+
+> **Note**<br>
+> If you want to use Group Policy to set IE as the default browser for Internet sites, you can find the info here, [Set the default browser using Group Policy]( https://go.microsoft.com/fwlink/p/?LinkId=620714).
 
 **To turn on Sends all intranet traffic over to Internet Explorer using Group Policy**
 
