@@ -28,7 +28,7 @@ We also recommend that you upgrade to IE11 if you're running any earlier version
 If you're having trouble deciding whether Microsoft Edge is good for your organization, you can take a look at this infographic about the potential impact of using Microsoft Edge in a large organization.
 
 ![Microsoft Edge infographic](images/microsoft-edge-infographic-sm.png)<br>
-[Click to enlarge](microsoft-edge-infographic-lg)
+[Click to enlarge](img-microsoft-edge-infographic-lg.md)
 
 ### Microsoft Edge
 Microsoft Edge takes you beyond just browsing to actively engaging with the web through features like Web Note, Reading View, and Cortana.
