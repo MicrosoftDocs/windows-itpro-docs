@@ -655,10 +655,12 @@ As mentioned previously: instructions to "type" commands provided in this guide 
     >If the client was configured with a static address, you must change this to a dynamic one so that it can obtain a DHCP lease. 
 
 18. When the new network adapter driver has completed installation, you will receive an alert to set a network location for the contoso.com network. Select **Work network** and then click **Close**. When you receive an alert that a restart is required, click **Restart Later**.
-19. Open an elevated Windows PowerShell prompt on PC1 and verify that the client VM has received a DHCP lease and can communicate with the consoto.com domain controller. To open Windows PowerShell on Windows 7, click **Start**, and search for "**power**." Right-click **Windows PowerShell** and then click **Pin to Taskbar** so that it is simpler to use Windows Powershell during this lab. Click **Windows PowerShell** on the taskbar, and then type **ipconfig** at the prompt to see the client's current IP address. Also type **ping dc1.contoso.com** and **nltest /dsgetdc:contoso.com** to verify that it can reach the domain controller. See the following examples of a successful network connection:
 
-    
-    <pre style="overflow-y: visible">
+19. Open an elevated Windows PowerShell prompt on PC1 and verify that the client VM has received a DHCP lease and can communicate with the consoto.com domain controller. 
+
+To open Windows PowerShell on Windows 7, click **Start**, and search for "**power**." Right-click **Windows PowerShell** and then click **Pin to Taskbar** so that it is simpler to use Windows Powershell during this lab. Click **Windows PowerShell** on the taskbar, and then type **ipconfig** at the prompt to see the client's current IP address. Also type **ping dc1.contoso.com** and **nltest /dsgetdc:contoso.com** to verify that it can reach the domain controller. See the following examples of a successful network connection:
+
+```
     ipconfig
 
     Windows IP Configuration
@@ -687,9 +689,9 @@ As mentioned previously: instructions to "type" commands provided in this guide 
      Dc Site Name: Default-First-Site-Name
     Our Site Name: Default-First-Site-Name
             Flags: PDC GC DS LDAP KDC TIMESERV WRITABLE DNS_FOREST CLOSE_SITE FULL_SECRET WS 0xC000
-    </pre>
+```
 
-    >If PC1 is running Windows 7, enhanced session mode is not available, which means that you cannot copy and paste commands from the Hyper-V host to a Windows PowerShell prompt on PC1. However, it is possible to use integration services to copy a file from the Hyper-V host to a VM. The next procedure demonstrates this. If the Copy-VMFile command fails, then type the commands below at an elevated Windows PowerShell prompt on PC1 instead of saving them to a script to run remotely. If PC1 is running Windows 8 or a later operating system, you can use enhanced session mode to copy and paste these commands instead of typing them.
+>If PC1 is running Windows 7, enhanced session mode is not available, which means that you cannot copy and paste commands from the Hyper-V host to a Windows PowerShell prompt on PC1. However, it is possible to use integration services to copy a file from the Hyper-V host to a VM. The next procedure demonstrates this. If the Copy-VMFile command fails, then type the commands below at an elevated Windows PowerShell prompt on PC1 instead of saving them to a script to run remotely. If PC1 is running Windows 8 or a later operating system, you can use enhanced session mode to copy and paste these commands instead of typing them.
 
 20. Minimize the PC1 window and switch to the Hyper-V host computer. Open an elevated Windows PowerShell ISE window on the Hyper-V host (right-click Windows PowerShell and then click Run ISE as Administrator) and type the following commands in the (upper) script editor pane: 
 
@@ -976,6 +978,8 @@ Then I create a new VHD using the command below, attach both, robocopy from one 
 
 1. Create VHD (function thanks to Senthil Rajaram).
 
+
+<pre style="overflow-y: visible">
 function CreateVHD ($VHDPath, $Size)
 {
   $drive = (New-VHD -path $vhdpath -SizeBytes $size -Dynamic   | `
@@ -992,11 +996,13 @@ function CreateVHD ($VHDPath, $Size)
               get-volume).DriveLetter 
     Dismount-VHD $VHDPath
 }
+</pre>
 
 Be sure to use a size sufficient for the backup (i.e. 100GB) and specify a path to a USB drive.  For Windows 7 to mount the drive it must be .vhd not .vhdx.
 
+<pre style="overflow-y: visible">
 CreateVHD F:\pc1.vhd 100GB
-
+</pre>
 
 
 2. Insert USB into client and mount using disk management. It is possible also using diskpart but easier with disk manager. Note the drive letter of the mount. Assuming G:
