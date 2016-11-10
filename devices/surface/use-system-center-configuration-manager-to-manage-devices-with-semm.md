@@ -135,13 +135,13 @@ On line 67, replace the value of the **$password** variable, from 1234, to the p
 
 Administrators with access to the certificate file (.pfx) can read the thumbprint at any time by opening the .pfx file in CertMgr. To view the thumbprint with CertMgr, follow this process:
 
-  1. Right-click the .pfx file, and then click **Open**.
-  2. Expand the folder in the navigation pane.
-  3. Click **Certificates**.
-  4. Right-click your certificate in the main pane, and then click **Open**.
-  5. Click the **Details** tab.
-  6. **<All>** or **Properties Only** must be selected in the **Show** drop-down menu.
-  7. Select the field **Thumbprint**.
+1. Right-click the .pfx file, and then click **Open**.
+2. Expand the folder in the navigation pane.
+3. Click **Certificates**.
+4. Right-click your certificate in the main pane, and then click **Open**.
+5. Click the **Details** tab.
+6. **<All>** or **Properties Only** must be selected in the **Show** drop-down menu.
+7. Select the field **Thumbprint**.
 
 >[!NOTE]
 >The SEMM certificate name and password must also be entered in this section of the ResetSEMM.ps1 script to enable Configuration Manager to remove SEMM from the device with the uninstall action.
@@ -356,8 +356,7 @@ To add the SEMM Configuration Manager scripts to Configuration Manager as an app
      * **General** – Click **Script Installer** from the **Type** drop-down menu. The **Manually specify the deployment type information** option will automatically be selected. Click **Next** to proceed.
      * **General Information** – Enter a name for the deployment type (for example SEMM Configuration Scripts), and then click **Next** to continue.
      * **Content** – Click **Browse** next to the **Content Location** field, and then click the folder where your SEMM Configuration Manager scripts are located. In the **Installation Program** field, type the [installation command](#deploy-semm-configuration-manager-scripts) found earlier in this article. In the **Uninstall Program** field, enter the [uninstallation command](#deploy-semm-configuration-manager-scripts) found earlier in this article (shown in Figure 2). Click **Next** to move to the next page.
-     
-
+    
      ![Set the SEMM Configuration Manager scripts as the install and uninstall commands](images/config-mgr-semm-fig2.png "Set the SEMM Configuration Manager scripts as the install and uninstall commands")
 
      *Figure 2. Set the SEMM Configuration Manager scripts as the install and uninstall commands*
@@ -374,7 +373,6 @@ To add the SEMM Configuration Manager scripts to Configuration Manager as an app
        - Click **OK** to close the **Detection Rule** window.
 
      ![Use a registry key to identify devices enrolled in SEMM](images/config-mgr-semm-fig3.png "Use a registry key to identify devices enrolled in SEMM")
-     
      
      *Figure 3. Use a registry key to identify devices enrolled in SEMM*
 
