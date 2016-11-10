@@ -12,7 +12,7 @@ localizationpriority: medium
 ---
 
 # Hybrid deployment (Surface Hub)
-A hybrid deployment requires special processing in order to set up a device account for your Microsoft Surface Hub. If you’re using a hybrid deployment, in which your organization has a mix of services, with some hosted on-premises and some hosted online, then your configuration will depend on where each service is hosted. This topic covers hybrid deployments for [Exchange hosted on-prem](#exchange-on-prem), [Exchange hosted online](#exchange-online), and [Skype for Business hybrid](#skype-for-business-hybrid). Because there are so many different variations in this type of deployment, it's not possible to provide detailed instructions for all of them. The following process will work for many configurations. If the process isn't right for your setup, we recommend that you use PowerShell (see [Appendix: PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)) to achieve the same end result as documented here, and for other deployment options. You should then use the provided Powershell script to verify your Surface Hub setup. (See [Account Verification Script](appendix-a-powershell-scripts-for-surface-hub.md#acct-verification-ps-scripts).)
+A hybrid deployment requires special processing to set up a device account for your Microsoft Surface Hub. If you’re using a hybrid deployment, in which your organization has a mix of services, with some hosted on-premises and some hosted online, then your configuration will depend on where each service is hosted. This topic covers hybrid deployments for [Exchange hosted on-prem](#exchange-on-prem), [Exchange hosted online](#exchange-online), and [Skype for Business hybrid](#skype-for-business-hybrid). Because there are so many different variations in this type of deployment, it's not possible to provide detailed instructions for all of them. The following process will work for many configurations. If the process isn't right for your setup, we recommend that you use PowerShell (see [Appendix: PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)) to achieve the same end result as documented here, and for other deployment options. You should then use the provided Powershell script to verify your Surface Hub setup. (See [Account Verification Script](appendix-a-powershell-scripts-for-surface-hub.md#acct-verification-ps-scripts).)
 
 ## Exchange on-prem
 Use this procedure if you use Exchange on-prem.
@@ -52,26 +52,31 @@ Use this procedure if you use Exchange on-prem.
 
     ```ps1
     Set-ExecutionPolicy Unrestricted
-    $org='contoso.com'
-    $cred=Get-Credential $admin@$org
+    $cred=Get-Credential -Message "Please use your Office 365 admin credentials"
     $sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri 'https://outlook.office365.com/ps1-liveid/' -Credential $cred -Authentication Basic -AllowRedirection
     Import-PSSession $sess
     ```
 
 5.  Create a new Exchange ActiveSync policy, or use a compatible existing policy.
 
+    After setting up the mailbox, you will need to either create a new Exchange ActiveSync policy or use a compatible existing policy.
+    
     Surface Hubs are only compatible with device accounts that have an ActiveSync policy where the **PasswordEnabled** property is set to False. If this isn’t set properly, then Exchange services on the Surface Hub (mail, calendar, and joining meetings), will not be enabled.
 
-    If you haven’t created a compatible policy yet, use the following cmdlet—this one creates a policy called "Surface Hubs". Once it’s created, you can apply the same policy to other device accounts.
+    If you haven’t created a compatible policy yet, use the following cmdlet—-this one creates a policy called "Surface Hubs". Once it’s created, you can apply the same policy to other device accounts.
 
     ```ps1
     $easPolicy = New-MobileDeviceMailboxPolicy -Name “SurfaceHubs” -PasswordEnabled $false
     ```
 
-    Once you have a compatible policy, then you will need to apply the policy to the device account.
+    Once you have a compatible policy, then you will need to apply the policy to the device account. However, policies can only be applied to user accounts and not to resource mailboxes. You'll need to convert the mailbox into a user type, apply the policy, and then convert it back into a mailbox; you may need to re-enable it and set the password again too.
 
     ```ps1
+    Set-Mailbox 'HUB01@contoso.com' -Type Regular
     Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy
+    Set-Mailbox 'HUB01@contoso.com' -Type Room
+    $credNewAccount = Get-Credential -Message “Please provide the Surface Hub username and password”
+    Set-Mailbox 'HUB01@contoso.com' -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
     ```
 
 6.  Set Exchange properties.
@@ -105,18 +110,18 @@ Use this procedure if you use Exchange on-prem.
     Set-MsolUserLicense -UserPrincipalName 'HUB01@contoso.com' -AddLicenses $strLicense
     ```
 
-9.  Enable the device account with Skype for Business.
+9.  Enable the device account with Skype for Business Online, Skyp for Business on-prem, or Skype hybrid.
 
-    In order to enable Skype for Business, your environment will need to meet the following prerequisites:
+    To enable Skype for Business online, your environment will need to meet the following prerequisites:
     -   You'll need to have Lync Online (Plan 2) or higher in your O365 plan. The plan needs to support conferencing capability.
     
     -   If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Lync Online (Plan 3).
     
-    -   Your tenant users must have Exchange mailboxes.
+    -   Your tenant users must have Exchange mailboxes (at least one Exchange mailbox in the tenant is required).
     
     -   Your Surface Hub account does require a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
 
-    -   Start by creating a remote PowerShell session from a PC.
+    -   Start by creating a remote PowerShell session from a PC to the Skype for Business online environment.
 
         ```ps1
         Import-Module LyncOnlineConnector  
@@ -127,14 +132,13 @@ Use this procedure if you use Exchange on-prem.
     -   To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
         ```ps1
-        Enable-CsMeetingRoom -Identity $rm -RegistrarPool  
-        'sippoolbl20a04.infra.lync.com&' -SipAddressType EmailAddress
+        Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool 'sippoolbl20a04.infra.lync.com' -SipAddressType UserPrincipalName
         ```
         
         If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
 
         ```ps1
-        Get-CsOnlineUser -Identity ‘alice@contoso.com’| fl *registrarpool*
+        Get-CsOnlineUser -Identity ‘HUB01@contoso.com’| fl *registrarpool*
         ```
 
 10. Assign Skype for Business license to your Surface Hub account.
@@ -154,7 +158,7 @@ Use this procedure if you use Exchange on-prem.
 
     >**Note** You can also use the Windows Azure Active Directory Module for Windows Powershell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
-For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.
+For validation, you should be able to use any Skype for Business client (PC, Android, etc.) to sign in to this account.
 
 ## Exchange online
 Use this procedure if you use Exchange online.
@@ -313,7 +317,7 @@ Use this procedure if you use Exchange online.
 
         >**Note** You can also use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
-For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.
+For validation, you should be able to use any Skype for Business client (PC, Android, etc) to sign in to this account.
 
 ## Skype for Business hybrid
 
