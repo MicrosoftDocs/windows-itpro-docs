@@ -74,9 +74,9 @@ To create a new application and deploy it to a collection that contains your Sur
    *Figure 1. Information from Microsoft Surface UEFI Manager setup is automatically parsed*
 
    * **General Information** – You can modify the name of the application and information about the publisher and version, or add comments on this page. The installation command for Microsoft Surface UEFI Manager is displayed in the Installation Program field. The default installation behavior of Install for system will allow Microsoft Surface UEFI Manager to install the required assemblies for SEMM even if a user is not logged on to the Surface device. Click Next to proceed.
-   * **Summary** – The information that was parsed in the Import Application step and your selections from the General Information step is displayed on this page. Click Next to confirm your selections and create the application.
+   * **Summary** – The information that was parsed in the **Import Information** step and your selections from the **General Information** step is displayed on this page. Click **Next** to confirm your selections and create the application.
    * **Progress** – Displays a progress bar and status as the application is imported and added to the Software Library.
-   * **Completion** – Confirmation of the successful application creation is displayed when the application creation process is complete. Click Close to finish the Create Application Wizard.
+   * **Completion** – Confirmation of the successful application creation is displayed when the application creation process is complete. Click **Close** to finish the Create Application Wizard.
 
 After the application is created in Configuration Manager, you can distribute it to your distribution points and deploy it to the collections including your Surface devices. This application will not install or enable SEMM on the Surface device – it only provides the assemblies required for SEMM to be enabled via PowerShell script.
 
