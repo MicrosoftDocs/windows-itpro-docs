@@ -11,6 +11,14 @@ This topic lists new and updated topics in the Microsoft Edge documentation for 
 
 For a detailed feature list of what's in the current Microsoft Edge releases, the Windows Insider Preview builds, and what was introduced in previous releases, see the [Microsoft Edge changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/).
 
+## November 2016
+|New or changed topic | Description |
+|----------------------|-------------|
+|[Use Enterprise Mode to improve compatibility](emie-to-improve-compatibility.md) |Added a note about the 65 second wait before checking for a newer version of the site list .XML file. |
+|[Available policies for Microsoft Edge](available-policies.md) |Added notes to the Configure the Enterprise Mode Site List Group Policy and the EnterpriseModeSiteList MDM policy about the 65 second wait before checking for a newer version of the site list .XML file. |
+|[Microsoft Edge - Deployment Guide for IT Pros](index.md) |Added a link to the Microsoft Edge infographic, helping you to evaluate the potential impact of using Microsoft Edge in your large organization. |
+|[Browser: Microsoft Edge and Internet Explorer 11](enterprise-guidance-using-microsoft-edge-and-ie11.md) |Added a link to the Microsoft Edge infographic, helping you to evaluate the potential impact of using Microsoft Edge in your large organization. |
+
 ## July 2016
 |New or changed topic | Description |
 |----------------------|-------------|
