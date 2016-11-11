@@ -269,7 +269,6 @@ For more information about how to configure Network Unlock, see [BitLocker: How 
 
 ### Microsoft BitLocker Administration and Monitoring
 
->>>>>>> refs/remotes/origin/master
 Part of the Microsoft Desktop Optimization Pack, MBAM makes it easier to manage and support BitLocker and BitLocker To Go. MBAM 2.5 with Service Pack 1, the latest version, has the following key features:
 
 * Enables administrators to automate the process of encrypting volumes on client computers across the enterprise.
