@@ -73,7 +73,7 @@ Use this procedure if you use Exchange on-prem.
 
     ```ps1
     Set-Mailbox 'HUB01@contoso.com' -Type Regular
-    Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy
+    Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy.id
     Set-Mailbox 'HUB01@contoso.com' -Type Room
     $credNewAccount = Get-Credential -Message “Please provide the Surface Hub username and password”
     Set-Mailbox 'HUB01@contoso.com' -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
@@ -233,7 +233,7 @@ Use this procedure if you use Exchange online.
 
     ```ps1
     Set-Mailbox 'HUB01@contoso.com' -Type Regular
-    Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy
+    Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy.id
     Set-Mailbox 'HUB01@contoso.com' -Type Room
     $credNewAccount = Get-Credential -Message "Please provide the Surface Hub username and password"
     Set-Mailbox 'HUB01@contoso.com' -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
