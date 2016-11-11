@@ -81,7 +81,9 @@ You can add the **Send all intranet traffic over to Internet Explorer** Group Po
 
 **To turn on Sends all intranet traffic over to Internet Explorer using Group Policy**
 
-1.  Open your Group Policy editor and go to the `Administrative Templates\Windows Components\Microsoft Edge\Sends all intranet traffic over to Internet Explorer` setting.<p>![Local Group Policy Editor with setting to send all intranet traffic to IE11](images/sendintranettoie.png)
+1.  Open your Group Policy editor and go to the `Administrative Templates\Windows Components\Microsoft Edge\Sends all intranet traffic over to Internet Explorer` setting.
+
+    ![Local Group Policy Editor with setting to send all intranet traffic to IE11](images/sendintranettoie.png)
 
 2.  Click **Enabled**.
 
