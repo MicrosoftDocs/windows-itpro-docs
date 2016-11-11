@@ -683,7 +683,7 @@ As mentioned previously: instructions to "type" commands provided in this guide 
 
 19. Open an elevated Windows PowerShell prompt on PC1 and verify that the client VM has received a DHCP lease and can communicate with the consoto.com domain controller. 
 
-To open Windows PowerShell on Windows 7, click **Start**, and search for "**power**." Right-click **Windows PowerShell** and then click **Pin to Taskbar** so that it is simpler to use Windows Powershell during this lab. Click **Windows PowerShell** on the taskbar, and then type **ipconfig** at the prompt to see the client's current IP address. Also type **ping dc1.contoso.com** and **nltest /dsgetdc:contoso.com** to verify that it can reach the domain controller. See the following examples of a successful network connection:
+    To open Windows PowerShell on Windows 7, click **Start**, and search for "**power**." Right-click **Windows PowerShell** and then click **Pin to Taskbar** so that it is simpler to use Windows Powershell during this lab. Click **Windows PowerShell** on the taskbar, and then type **ipconfig** at the prompt to see the client's current IP address. Also type **ping dc1.contoso.com** and **nltest /dsgetdc:contoso.com** to verify that it can reach the domain controller. See the following examples of a successful network connection:
 
     ```
     ipconfig
