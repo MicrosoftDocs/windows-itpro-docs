@@ -1,13 +1,13 @@
 ---
 title: Hybrid deployment (Surface Hub)
-description: A hybrid deployment requires special processing in order to set up a device account for your Microsoft Surface Hub.
+description: A hybrid deployment requires special processing to set up a device account for your Microsoft Surface Hub.
 ms.assetid: 7BFBB7BE-F587-422E-9CE4-C9DDF829E4F1
 keywords: hybrid deployment, device account for Surface Hub, Exchange hosted on-prem, Exchange hosted online
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: surfacehub
-author: TrudyHa
+author: jdeckerMS
 localizationpriority: medium
 ---
 
