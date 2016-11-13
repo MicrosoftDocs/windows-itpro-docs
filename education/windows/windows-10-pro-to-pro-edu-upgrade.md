@@ -24,6 +24,7 @@ When you upgrade to Windows 10 Pro Education, you get the following benefits:
 -   **Support from one to hundreds of users**. The Windows 10 Pro Education program does not have a limitation on the number of licenses an organization can have.
 -   **Roll back to Windows 10 Pro at any time**. When a user leaves the domain or the license is revoked, the Windows 10 Pro Education device reverts seamlessly to Windows 10 Pro edition (after a grace period of up to 90 days).
 -   **Move licenses between users**. Licenses can be quickly and easily reallocated from one user to another user, allowing you to optimize your licensing investment against changing needs.
+
   > [!IMPORTANT]  
   > **TBD - Comment from Lee:** Pablo can confirm if there is user license management. This may not apply.
 
