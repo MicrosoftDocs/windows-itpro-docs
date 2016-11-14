@@ -25,7 +25,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     ```PowerShell
     Set-ExecutionPolicy Unrestricted
     $org='contoso.microsoft.com'
-    $cred=Get-Credential $admin@$org
+    $cred=Get-Credential admin@$org
     $sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $cred -Authentication Basic -AllowRedirection
     Import-PSSession $sess
     ```
@@ -51,7 +51,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     If you haven’t created a compatible policy yet, use the following cmdlet—this one creates a policy called "Surface Hubs". Once it’s created, you can apply the same policy to other device accounts.
 
     ```PowerShell
-    $easPolicy = New-MobileDeviceMailboxPolicy -Name “SurfaceHubs” -PasswordEnabled $false
+    $easPolicy = New-MobileDeviceMailboxPolicy -Name "SurfaceHubs" -PasswordEnabled $false -AllowNonProvisionableDevices $True
     ```
 
     Once you have a compatible policy, then you will need to apply the policy to the device account. However, policies can only be applied to user accounts and not resource mailboxes. You need to convert the mailbox into a user type, apply the policy, and then convert it back into a mailbox—you may need to re-enable it and set the password again too.
@@ -125,7 +125,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
         If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
 
         ```PowerShell
-        Get-CsOnlineUser -Identity ‘alice@contoso.com’| fl *registrarpool*
+        Get-CsOnlineUser -Identity 'alice@contoso.com'| fl *registrarpool*
         ```
 
 9.  Assign Skype for Business license to your Surface Hub account.
