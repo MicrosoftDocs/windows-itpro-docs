@@ -53,7 +53,7 @@ Table 1. Windows 10 solutions to typical access control challenges
 <td align="left"><p>Windows Hello on biometric-capable devices and Microsoft Passport enable simpler MFA.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Tablet users must type their password on a touchscreen, which is error prone and less efficient than a keyboard. Windows Hello enables secure facial recognition–based authentication.</p></td>
+<td align="left"><p>Tablet users must type their password on a touchscreen, which is error prone and less efficient than a keyboard.</p></td>
 <td align="left"><p>Windows Hello enables secure facial recognition–based authentication.</p></td>
 </tr>
 <tr class="odd">
