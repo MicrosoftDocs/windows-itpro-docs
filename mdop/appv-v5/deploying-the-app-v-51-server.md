@@ -1,3 +1,4 @@
+
 ---
 title: Deploying the App-V 5.1 Server
 description: Deploying the App-V 5.1 Server
@@ -9,6 +10,21 @@ ms.sitesec: library
 ms.prod: w10
 ---
 
+# Obtaining the App-V 5.1 installation sources
+
+The installation sources are available at MSDN Subscriber Downloads. There are two deployment types, for Desktops and for Remote Desktop Services.
+
+ISO for Desktops: Application Virtualization Hosting for Desktops 5.1 (x86 and x64) - CD (Multiple Languages)
+ISO for Remote Desktop Services: Application Virtualization for Remote Desktop Services 5.1 (x86 and x64) - CD (Multiple Languages)
+
+The installation sources contains 3 setup folders:
+- APPV CLIENT 5.1
+- APPV SEQUENCER 5.1
+- APPV SERVER 5.1
+
+An updated version of the App-V Sequencer Setup can be obtained from https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit.
+
+Note: When installing the App-V 5.1 Management Server on Windows Server 2016 hotfix KB3168628 is required after the installation is complete. There is a known problem that when adding a packing an error occurs. The hotfix can be requested here: https://support.microsoft.com/en-us/kb/3168628.
 
 # Deploying the App-V 5.1 Server
 
