@@ -39,7 +39,7 @@ Management of SEMM with Configuration Manager requires the installation of Micro
 
 #### Download SEMM scripts for Configuration Manager
 
-After Microsoft Surface UEFI Manager is installed on the client Surface device, SEMM is deployed and managed with PowerShell scripts. You can download samples of the [SEMM management scripts](https://gallery.technet.microsoft.com/scriptcenter) from the TechNet Gallery Script Center.
+After Microsoft Surface UEFI Manager is installed on the client Surface device, SEMM is deployed and managed with PowerShell scripts. You can download samples of the [SEMM management scripts](https://gallery.technet.microsoft.com/Sample-PowerShell-for-5eb5f03c) from the TechNet Gallery Script Center.
 
 ## Deploy Microsoft Surface UEFI Manager
 
@@ -266,7 +266,7 @@ The following code fragment, found on lines 352-363, is used to write this regis
 
 ### Settings names and IDs
 
-To configure Surface UEFI settings or permissions for Surface UEFI settings, you must refer to each setting by either its setting name or setting ID. With each new update for Surface UEFI, new settings may be added. The best way to get a complete list of the settings available on a Surface device, along with the settings name and settings IDs, is to use the ShowSettingsOptions.ps1 script from [SEMM Management Scripts for Configuration Manager](https://gallery.technet.microsoft.com/scriptcenter) in the TechNet Gallery Script Center.
+To configure Surface UEFI settings or permissions for Surface UEFI settings, you must refer to each setting by either its setting name or setting ID. With each new update for Surface UEFI, new settings may be added. The best way to get a complete list of the settings available on a Surface device, along with the settings name and settings IDs, is to use the ShowSettingsOptions.ps1 script from [SEMM Management Scripts for Configuration Manager](https://gallery.technet.microsoft.com/Sample-PowerShell-for-5eb5f03c) in the TechNet Gallery Script Center.
 
 The computer where ShowSettingsOptions.ps1 is run must have Microsoft Surface UEFI Manager installed, but the script does not require a Surface device.
 
