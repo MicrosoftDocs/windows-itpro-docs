@@ -921,9 +921,7 @@ Use the following procedures to verify that the PoC environment is configured pr
 
 ## Appendix B: Configuring Hyper-V on Windows Server 2008 R2
 
-If your Hyper-V host is running Windows Server 2008 R2, several of the steps in this guide will not work because they use the Hyper-V Module for Windows PowerShell, which is not available on Windows Server 2008 R2. The performance and features of the Hyper-V role are also much improved on later operating systems. 
-
-This section is a placeholder for instructions to configure Hyper-V on Windows Server 2008 R2. Full documentation of these procedures is currently out of scope for this guide, due to significant differences in the Hyper-V role in Windows Server 2008 R2. For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library.
+Full documentation of procedures to configure the PoC in Hyper-V on Windows Server 2008 R2 is currently out of scope for this guide, due to significant differences in the Hyper-V role in Windows Server 2008 R2. For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library. A limited number of procedures are provided in this section.
 
 To install Hyper-V on Windows Server 2008 R2, you can use the Add-WindowsFeature cmdlet:
 
@@ -1007,17 +1005,17 @@ Then I create a new VHD using the command below, attach both, robocopy from one 
 <pre style="overflow-y: visible">
 function CreateVHD ($VHDPath, $Size)
 {
-  $drive = (New-VHD -path $vhdpath -SizeBytes $size -Dynamic   | `
-              Mount-VHD -Passthru |  `
-              get-disk -number {$_.DiskNumber} | `
-              Initialize-Disk -PartitionStyle MBR -PassThru | `
-              New-Partition -Size 100MB -AssignDriveLetter:$False -MbrType FAT32 -IsActive | `
-              Format-Volume -Confirm:$false -FileSystem FAT32 -force | `
-              get-partition | `
-              New-Partition -UseMaximumSize -AssignDriveLetter:$False -MbrType IFS | `
-              Format-Volume -Confirm:$false -FileSystem NTFS -force | `
-              get-partition | `
-              Add-PartitionAccessPath -AssignDriveLetter -PassThru | `
+  $drive = (New-VHD -path $vhdpath -SizeBytes $size -Dynamic   |
+              Mount-VHD -Passthru |
+              get-disk -number {$_.DiskNumber} |
+              Initialize-Disk -PartitionStyle MBR -PassThru |
+              New-Partition -Size 100MB -AssignDriveLetter:$False -MbrType FAT32 -IsActive |
+              Format-Volume -Confirm:$false -FileSystem FAT32 -force |
+              get-partition |
+              New-Partition -UseMaximumSize -AssignDriveLetter:$False -MbrType IFS |
+              Format-Volume -Confirm:$false -FileSystem NTFS -force |
+              get-partition |
+              Add-PartitionAccessPath -AssignDriveLetter -PassThru |
               get-volume).DriveLetter 
     Dismount-VHD $VHDPath
 }
