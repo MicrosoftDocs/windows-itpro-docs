@@ -14,11 +14,15 @@ author: greg-lindsay
 
 -   Windows 10
 
-<P>This guide provides step-by-step instructions for setting up a proof of concept (PoC) environment where you can test the tools and procedures necessary to deploy Windows 10. To complete this guide, you will need a Hyper-V capable computer running Windows 8.1 or later with 16GB of RAM. Detailed [requirements](#hardware-and-software-requirements) are provided below. You will also need to have a [Microsoft account](https://www.microsoft.com/account) to use for downloading evaluation software. The guide requires a minimum of about 3 hours to complete.
+<P>This guide provides step-by-step instructions for IT administrators to set up a proof of concept (PoC) environment for testing the tools and procedures necessary to deploy Windows 10. The guide requires about 3 hours to complete.
 
-The PoC enviroment is configured by using Hyper-V and requires a minimum amount of resources. Windows PowerShell commands are provided to set up the test lab quickly. Instructions to "type" Windows PowerShell commands provided in this guide can be typed, but in most cases the preferred method is to copy and paste these commands. If you are not familiar with Hyper-V, review the [terms](#appendix-d-terminology-in-this-guide) used in this guide before starting. 
+To complete this guide, you will need a Hyper-V capable computer running Windows 8.1 or later with 16GB of RAM. Detailed [requirements](#hardware-and-software-requirements) are provided below. You will also need to have a [Microsoft account](https://www.microsoft.com/account) to use for downloading evaluation software.
 
-The guide contains detailed instructions for three general procedures:
+The PoC enviroment is configured by using Hyper-V and requires a minimum amount of resources. Windows PowerShell commands are provided to set up the test lab quickly. Instructions to "type" Windows PowerShell commands provided in this guide can be typed, but in most cases the preferred method is to copy and paste these commands. If you are not familiar with Hyper-V, review the [terminology](#appendix-d-terminology-in-this-guide) used in this guide before starting. 
+
+## In this guide
+
+This guide contains detailed instructions for three general procedures:
 
 <OL>
 <LI>Install Hyper-V.  
@@ -34,9 +38,7 @@ After completing the instructions in this guide, you will have a PoC environment
 
 Links are provided to download trial versions of Windows Server 2012, Windows 10 Enterprise, and all deployment tools necessary to complete the lab.
 
-## In this guide
-
-The following table describes topics and procedures in this guide. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed. 
+Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed. 
 
 <div style='font-size:9.0pt'>
 
@@ -147,7 +149,7 @@ The lab architecture is summarized in the following diagram:
 
 ## Configure the PoC environment
 
-**Hint**: Before you begin, ensure that Windows PowerShell is pinned to the taskbar for easy access. If the Hyper-V host is running Windows Server then Windows PowerShell is automatically pinned to the taskbar. To pin Windows PowerShell to the taskbar on Windows 8.1 or Windows 10: Click **Start**, type **power**, right click **Windows PowerShell**, and then click **Pin to taskbar**. After Windows PowerShell is pinned to the taskbar, you can open an elevated Windows PowerShell prompt by right-clicking the icon on the taskbar and then clicking **Run as Administrator**.
+>**Hint**: Before you begin, ensure that Windows PowerShell is pinned to the taskbar for easy access. If the Hyper-V host is running Windows Server then Windows PowerShell is automatically pinned to the taskbar. To pin Windows PowerShell to the taskbar on Windows 8.1 or Windows 10: Click **Start**, type **power**, right click **Windows PowerShell**, and then click **Pin to taskbar**. After Windows PowerShell is pinned to the taskbar, you can open an elevated Windows PowerShell prompt by right-clicking the icon on the taskbar and then clicking **Run as Administrator**.
 
 ### Procedures in this section
 
@@ -318,19 +320,19 @@ Both commands are shown in the following example. The client computer is running
 <pre style="overflow-y: visible">
 PS C:\> Get-WmiObject -Class Win32_DiskPartition | Select-Object -Property SystemName,Caption,Type
 
-SystemName                                       Caption                                              Type
-----------                                       -------                                              ----
-PC-X1                                            Disk #0, Partition #0                                GPT: Unknown
-PC-X1                                            Disk #0, Partition #1                                GPT: System
-PC-X1                                            Disk #0, Partition #2                                GPT: Basic Data
-PC-X1                                            Disk #0, Partition #3                                GPT: Basic Data
-PC-X1                                            Disk #0, Partition #4                                GPT: Basic Data
+SystemName                            Caption                               Type
+----------                            -------                               ----
+PC-X1                                 Disk #0, Partition #0                 GPT: Unknown
+PC-X1                                 Disk #0, Partition #1                 GPT: System
+PC-X1                                 Disk #0, Partition #2                 GPT: Basic Data
+PC-X1                                 Disk #0, Partition #3                 GPT: Basic Data
+PC-X1                                 Disk #0, Partition #4                 GPT: Basic Data
 
 PS C:\> Get-Disk
 
-Number Friendly Name                            OperationalStatus                                               Total Size Partition Style
------- -------------                            -----------------                                               ---------- ---------------
-0      INTEL SSDSCMMW240A3L                     Online                                                           223.57 GB GPT
+Number Friendly Name                  OperationalStatus                     Total Size Partition Style
+------ -------------                  -----------------                     ---------- ---------------
+0      INTEL SSDSCMMW240A3L           Online                                223.57 GB GPT
 </pre>
 
 **Choosing a VM generation**
