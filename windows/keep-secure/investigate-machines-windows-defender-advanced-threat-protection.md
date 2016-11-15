@@ -69,7 +69,7 @@ The threat category filter lets you filter the view by the following categories:
 - Threat
 - Low severity
 
-For more information on the description of each category see, [Investigate machines with active alerts](dashboard-windows-defender-advanced-threat-protection.md#investigate-machines-with-active-malware-detections).
+For more information on the description of each category see, [Investigate machines with active alerts](dashboard-windows-defender-advanced-threat-protection.md#machines-with-active-malware-detections).
 
 You can also download a full list of all the machines in your organization, in CSV format. Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) to download the entire list as a CSV file.
 
@@ -81,7 +81,7 @@ Investigate the details of an alert raised on a specific machine to identify oth
 
 You can click on affected machines whenever you see them in the portal to open a detailed report about that machine. Affected machines are identified in the following areas:
 
-- The [Machines view](#Investigate-machines-in-the-Windows-Defender-ATP-Machines-view)
+- The [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md)
 - The [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
 - The [Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - Any individual alert
@@ -104,7 +104,7 @@ You'll see an aggregated view of alerts, a short description of the alert, detai
 
 This feature also enables you to selectively drill down into a behavior or event that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a specified time period.
 
-You can also use the [Alerts spotlight](investigate-alerts-windows-defender-advanced-threat-protection.md#alerts-spotlight) feature to see the correlation between alerts and events on a specific machine.
+You can also use the [Alerts spotlight](investigate-alerts-windows-defender-advanced-threat-protection.md#alert-spotlight) feature to see the correlation between alerts and events on a specific machine.
 
 ![The timeline shows an interactive history of the alerts seen on a machine](images/timeline.png)
 

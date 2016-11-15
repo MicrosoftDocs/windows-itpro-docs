@@ -45,7 +45,7 @@ This workflow diagram provides a high-level understanding of a UE-V deployment a
 
 ![deploymentworkflow](images/deploymentworkflow.png)
 
-**Planning a UE-V deployment:** First, you want to do a little bit of planning so that you can determine which UE-V components you’ll be deploying. Planning a UE-V deployment involves these things:
+<a href="" id="planning"></a>**Planning a UE-V deployment:** First, you want to do a little bit of planning so that you can determine which UE-V components you’ll be deploying. Planning a UE-V deployment involves these things:
 
 -   [Decide whether to synchronize settings for custom applications](#deciding)
 

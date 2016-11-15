@@ -48,7 +48,8 @@ The following tables provide more information about the hardware, firmware, and 
 
 > [!NOTE]  
 > For new computers running Windows 10, Trusted Platform Module (TPM 2.0) must be enabled by default. This requirement is not restated in the tables that follow.<br>
-> If you are an OEM, see the requirements information at [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514(v=vs.85).aspx).
+> If you are an OEM, see the requirements information at [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514(v=vs.85).aspx).<br>
+> Starting in Widows 10, 1607, TPM 2.0 is required.
 
 
 ## Credential Guard requirements for baseline protections
@@ -57,11 +58,9 @@ The following tables provide more information about the hardware, firmware, and 
 |---------------------------------------------|----------------------------------------------------|
 | Hardware: **64-bit CPU**              | A 64-bit computer is required for the Windows hypervisor to provide VBS. |
 | Hardware: **CPU virtualization extensions**,<br>plus **extended page tables** | **Requirements**: These hardware features are required for VBS:<br>One of the following virtualization extensions:<br>- VT-x (Intel) or<br>- AMD-V<br>And:<br>- Extended page tables, also called Second Level Address Translation (SLAT).<br><br>**Security benefits**: VBS provides isolation of secure kernel from normal operating system. Vulnerabilities and Day 0s in normal operating system cannot be exploited because of this isolation. |
-| Hardware: **IOMMU** (input/output memory management unit)  |  **Requirement**: VT-D or AMD Vi IOMMU<br><br>**Security benefits**: An IOMMU can enhance system resiliency against memory attacks. For more information, see [ACPI description tables](https://msdn.microsoft.com/windows/hardware/drivers/bringup/acpi-system-description-tables). |
 | Hardware: **Trusted Platform Module (TPM)**  |  **Requirement**: TPM 1.2 or TPM 2.0, either discrete or firmware.<br><br>**Security benefits**: A TPM provides protection for VBS encryption keys that are stored in the firmware. This helps protect against attacks involving a physically present user with BIOS access. |
 | Firmware: **UEFI firmware version 2.3.1.c or higher with UEFI Secure Boot** | **Requirements**: See the following Windows Hardware Compatibility Program requirement: [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot)<br><br>**Security benefits**: UEFI Secure Boot helps ensure that the device boots only authorized code. This can prevent boot kits and root kits from installing and persisting across reboots.  |
 | Firmware: **Secure firmware update process**      | **Requirements**: UEFI firmware must support secure firmware update found under the following Windows Hardware Compatibility Program requirement: [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot).<br><br>**Security benefits**: UEFI firmware just like software can have security vulnerabilities that, when found, need to be patched through firmware updates. Patching helps prevent root kits from getting installed. |
-| Firmware: **Secure MOR implementation**  |  **Requirement**: Secure MOR implementation<br><br>**Security benefits**: A secure MOR bit prevents advanced memory attacks. For more information, see [Secure MOR implementation](https://msdn.microsoft.com/windows/hardware/drivers/bringup/device-guard-requirements). |
 | Software: Qualified **Windows operating system**  | **Requirement**: Windows 10 Enterprise, Windows 10 Education, Windows 2016 Server, or Windows Enterprise IoT<br><br>**Security benefits**: Support for VBS and for management features that simplify configuration of Credential Guard. |
 
 > [!IMPORTANT]
@@ -75,7 +74,9 @@ The following tables describes additional hardware and firmware requirements, an
 
 | Protections for Improved Security - requirement         | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
+| Hardware: **IOMMU** (input/output memory management unit)  |  **Requirement**: VT-D or AMD Vi IOMMU<br><br>**Security benefits**: An IOMMU can enhance system resiliency against memory attacks. For more information, see [ACPI description tables](https://msdn.microsoft.com/windows/hardware/drivers/bringup/acpi-system-description-tables). |
 | Firmware: **Securing Boot Configuration and Management** | **Requirements**:<br>- BIOS password or stronger authentication must be supported.<br>- In the BIOS configuration, BIOS authentication must be set.<br>- There must be support for protected BIOS option to configure list of permitted boot devices (for example, “Boot only from internal hard drive”) and boot device order, overriding BOOTORDER modification made by operating system.<br>- In the BIOS configuration, BIOS options related to security and boot options (list of permitted boot devices, boot order) must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings.<br><br>**Security benefits**:<br>- BIOS password or stronger authentication helps ensure that only authenticated Platform BIOS administrators can change BIOS settings. This helps protect against a physically present user with BIOS access.<br>- Boot order when locked provides protection against the computer being booted into WinRE or another operating system on bootable media. |
+| Firmware: **Secure MOR implementation**  |  **Requirement**: Secure MOR implementation<br><br>**Security benefits**: A secure MOR bit prevents advanced memory attacks. For more information, see [Secure MOR implementation](https://msdn.microsoft.com/windows/hardware/drivers/bringup/device-guard-requirements). |
 
 <br>
 
@@ -92,7 +93,7 @@ The following tables describes additional hardware and firmware requirements, an
 
 <br>
 
-### 2017 Additional Qualification Requirements for Credential Guard (announced as options for future Windows operating systems for 2017) 
+### 2017 Additional Qualification Requirements for Credential Guard (starting with the next major release of Windows 10) 
 
 | Protection for Improved Security - requirement         | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
@@ -101,7 +102,7 @@ The following tables describes additional hardware and firmware requirements, an
 ## Manage Credential Guard
 
 ### Enable Credential Guard
-Credential Guard can be enabled by using Group Policy, the registry, or the Device Guard and Credential Guard hardware readiness tool.   
+Credential Guard can be enabled by using [Group Policy](#turn-on-credential-guard-by-using-group-policy), the [registry](#turn-on-credential-guard-by-using-the-registry), or the Device Guard and Credential Guard [hardware readiness tool](#hardware-readiness-tool).
 
 #### Turn on Credential Guard by using Group Policy
 
@@ -124,9 +125,9 @@ If you don't use Group Policy, you can enable Credential Guard by using the regi
 
 ##### Add the virtualization-based security features
 
-Starting with Windows 10 1607 and Windows Server 2016, enabling Windows features to use virtualization-based security is not necessary and this step can be skipped.
+Starting with Windows 10, version 1607 and Windows Server 2016, enabling Windows features to use virtualization-based security is not necessary and this step can be skipped.
 
-If you are using Windows 10 1507 (RTM) or Windows 10 1511, Windows features have to be enabled to use virtualization-based security. 
+If you are using Windows 10, version 1507 (RTM) or Windows 10, version 1511, Windows features have to be enabled to use virtualization-based security. 
 You can do this by using either the Control Panel or the Deployment Image Servicing and Management tool (DISM).
 > [!NOTE]  
 > If you enable Credential Guard by using Group Policy, these steps are not required. Group Policy will install the features for you.
@@ -171,6 +172,7 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 > [!NOTE]  
 > You can also turn on Credential Guard by setting the registry entries in the [FirstLogonCommands](http://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
 
+<span id="hardware-readiness-tool" />
 #### Turn on Credential Guard by using the Device Guard and Credential Guard hardware readiness tool
 
 You can also enable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).

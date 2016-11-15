@@ -728,7 +728,7 @@ To implement this method, perform the following steps:
    Put the student information in the format the bulk-import feature requires.
 2. Bulk-import the student information into Azure AD.
 
-   For more information about how to perform this step, see the [Bulk-import user and group accounts in Office 365](#bulk-import-user-and-group-accounts-in-office-365) section.
+   For more information about how to perform this step, see the [Bulk-import user and group accounts into Office 365](#bulk-import-user-and-group-accounts-into-office-365) section.
 
 #### Summary
 

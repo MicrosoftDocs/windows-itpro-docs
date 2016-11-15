@@ -18,9 +18,7 @@ After your test of first time setup finishes, you can verify that the URL redire
 **Important**  
 The MED-V Host Agent must be running for URL redirection to function correctly.
 
- 
-
-**To test URL Redirection**
+<a href="" id="bkmk-urlredir"></a>**To test URL Redirection**
 
 1.  Open an Internet Explorer browser in the host computer and enter a URL that you specified for redirection.
 
@@ -45,19 +43,14 @@ The MED-V Host Agent must be running for URL redirection to function correctly.
         **Note**  
         It can take several seconds for the URL redirection changes to take place.
 
-         
-
 **Note**  
 If you encounter any problems when verifying your URL redirection settings, see [Operations Troubleshooting](operations-troubleshooting-medv2.md).
-
- 
 
 After you have completed testing URL redirection in your MED-V workspace, you can test other configurations to verify that they function as intended.
 
 After you have completed testing your MED-V workspace package and have verified that it is functioning as intended, you can deploy the MED-V workspace to your enterprise.
 
 ## Related topics
-
 
 [How to Test Application Publishing](how-to-test-application-publishing.md)
 

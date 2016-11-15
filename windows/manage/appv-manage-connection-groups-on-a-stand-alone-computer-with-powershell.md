@@ -20,15 +20,15 @@ A connection group XML file defines the connection group for the App-V client. F
 
 This topic explains the following procedures:
 
--   [To add and publish the App-V packages in the connection group](#bkmk-add-pub-pkgs-in-cg)
+-   [To add and publish the App-V packages in the connection group](#to-add-and-publish-the-app-v-packages-in-the-connection-group)
 
--   [To add and enable the connection group on the App-V client](#bkmk-add-enable-cg-on-clt)
+-   [To add and enable the connection group on the App-V client](#to-add-and-enable-the-connection-group-on-the-app-v-client)
 
--   [To enable or disable a connection group for a specific user](#bkmk-enable-cg-for-user-poshtopic)
+-   [To enable or disable a connection group for a specific user](#to-enable-or-disable-a-connection-group-for-a-specific-user)
 
--   [To allow only administrators to enable connection groups](#bkmk-admin-only-posh-topic-cg)
+-   [To allow only administrators to enable connection groups](#to-allow-only-administrators-to-enable-connection-groups)
 
-**To add and publish the App-V packages in the connection group**
+## To add and publish the App-V packages in the connection group
 
 1.  To add and publish the App-V packages to the computer running the App-V client, type the following command:
 
@@ -36,7 +36,7 @@ This topic explains the following procedures:
 
 2.  Repeat **step 1** of this procedure for each package in the connection group.
 
-**To add and enable the connection group on the App-V client**
+## To add and enable the connection group on the App-V client
 
 1.  Add the connection group by typing the following command:
 
@@ -48,7 +48,7 @@ This topic explains the following procedures:
 
     When any virtual applications that are in the member packages are run on the target computer, they will run inside the connection group’s virtual environment and will be available to all the virtual applications in the other packages in the connection group.
 
-**To enable or disable a connection group for a specific user**
+## To enable or disable a connection group for a specific user
 
 1.  Review the parameter description and requirements:
 
@@ -89,9 +89,7 @@ This topic explains the following procedures:
     </tbody>
     </table>
 
-     
-
-**To allow only administrators to enable connection groups**
+## To allow only administrators to enable connection groups
 
 1.  Review the description and requirement for using this cmdlet:
 

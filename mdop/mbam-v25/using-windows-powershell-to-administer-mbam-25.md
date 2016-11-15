@@ -66,7 +66,7 @@ Windows PowerShell Help for MBAM cmdlets is available in the following formats:
 <tbody>
 <tr class="odd">
 <td align="left"><p>At a Windows PowerShell command prompt, type <strong>Get-Help</strong> &lt;<em>cmdlet</em>&gt;</p></td>
-<td align="left"><p>To upload the latest Windows PowerShell cmdlets, follow the instructions in [Configuring MBAM 2.5 Server Features by Using Windows PowerShell](configuring-mbam-25-server-features-by-using-windows-powershell.md#bkmk-loadposhhelp)</p></td>
+<td align="left"><p>To upload the latest Windows PowerShell cmdlets, follow the instructions in [Configuring MBAM 2.5 Server Features by Using Windows PowerShell](configuring-mbam-25-server-features-by-using-windows-powershell.md)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>On TechNet as webpages</p></td>

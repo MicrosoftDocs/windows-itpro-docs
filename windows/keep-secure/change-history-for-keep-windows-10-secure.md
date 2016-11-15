@@ -12,16 +12,23 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## November 2016
+| New or changed topic | Description |
+| --- | --- |
+|[Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md), [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md), and [Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) |Added additional details about what happens when you turn off WIP. |
+|[Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-vpn-and-wip-policy-using-intune.md) |Changed WIPModeID to EDPModeID, to match the CSP. |
+
+
 ## October 2016
 
 | New or changed topic | Description |
 | --- | --- |
 |[List of enlightened Microsoft apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md) |Added Microsoft Remote Desktop information. |
-|[Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) and [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |Updated the text about the icon overlay option. This icon now only appears on corporate files in the Save As and File Explore views |
+|[Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) and [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |Updated the text about where the optioanl icon overlay appears.|
 |[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |Added content about using ActiveX controls.|
 |[Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](app-behavior-with-wip.md) |New |
 |[VPN technical guide](vpn-guide.md) | Multiple new topics, replacing previous **VPN profile options** topic |
-| [Windows security baselines](windows-security-baselines.md) | Added Windows 10, version 1607 and Windows Server 2016 baseline |
+|[Windows security baselines](windows-security-baselines.md) | Added Windows 10, version 1607 and Windows Server 2016 baseline |
 
 ## September 2016
 

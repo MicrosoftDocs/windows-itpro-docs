@@ -166,8 +166,9 @@ Credential Guard is another new feature in Windows 10 Enterprise that employs V
 
 For more information about the hardware requirements for Credential Guard, see the [Windows 10 hardware considerations](#hardware) section. For more information about VBS in Windows 10, see the [Virtualization-based security](#virtualization-based-security) section.
 
-**Note**<br>
-Because it requires isolated user mode and a Hyper-V hypervisor, you cannot configure Credential Guard on a VM, only on a physical computer.
+> [!NOTE]  
+> Starting in Windows 10, version 1607, you can configure Credential Guard on a VM.
+
  
 The Credential Guard feature is targeted at resisting the use of pass-the-hash and pass-the-ticket techniques. By employing a MFA option such as Microsoft Passport with Credential Guard, you can gain additional protection against such threats. For more in-depth information about how Credential Guard works and the specific mitigations it provides, see [Protect derived domain credentials with Credential Guard](../keep-secure/credential-guard.md).
 

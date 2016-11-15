@@ -14,6 +14,12 @@ localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
+## November 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| [Differences between Surface Hub and Windows 10 Enterprise](differences-between-surface-hub-and-windows-10-enterprise.md) | New |
+
 ## RELEASE: Windows Anniversary Update for Surface Hub (Windows 10, version 1607)
 The topics in this library have been updated for Windows 10, version 1607 (also known as Windows Anniversary Update for Surface Hub). These topics had significant updates for this release:
 - [Windows Updates (Surface Hub)](manage-windows-updates-for-surface-hub.md)
