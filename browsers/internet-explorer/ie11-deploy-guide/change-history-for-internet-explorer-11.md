@@ -12,7 +12,8 @@ ms.sitesec: library
 This topic lists new and updated topics in the Internet Explorer 11 documentation for both Windows 10 and Windows 10 Mobile.
 
 ## November 2016
-
+|New or changed topic | Description |
+|----------------------|-------------|
 |[Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md) |Updated the DocMode reason section to correct Code 8 and to add Code 9.|
 
 ## August 2016
