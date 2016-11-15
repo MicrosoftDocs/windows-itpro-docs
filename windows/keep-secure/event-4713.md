@@ -21,7 +21,7 @@ author: Mir0sh
 
 ***Event Description:***
 
-This event generates when [Kerberos policy](https://technet.microsoft.com/en-us/library/cc782061(v=ws.10).aspx) was changed.
+This event generates when [Kerberos](https://msdn.microsoft.com/library/windows/desktop/aa378747.aspx) policy was changed.
 
 This event is generated only on domain controllers.
 
