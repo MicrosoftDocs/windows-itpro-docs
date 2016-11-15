@@ -12,9 +12,9 @@ author: CelesteDG
 
 Windows 10 Pro Education is a new offering in Windows 10 Anniversary Update (Windows 10, version 1607). This edition builds on the commercial version of Windows 10 Pro and provides important management controls needed in schools by providing education-specific default settings.
 
-If you have an education tenant and use Windows 10 Pro in your schools now, IT Pros can opt-in to a free upgrade to Windows 10 Pro Education through the Windows Store for Business. To take advantage of this offering, make sure you meet the [Requirements for upgrade](#requirements-for-upgrade).
+If you have an education tenant and use Windows 10 Pro in your schools now, global administrators can opt-in to a free upgrade to Windows 10 Pro Education through the Windows Store for Business. To take advantage of this offering, make sure you meet the [Requirements for upgrade](#requirements-for-upgrade).
 
-Starting with Windows 10, version 1607, you can easily move from Windows 10 Pro to Windows 10 Pro Education—no keys and no reboots. After one of your users enters the Azure AD credentials associated with a Windows 10 Pro Education license, the operating system turns from Windows 10 Pro to Windows 10 Pro Education and all the appropriate Windows 10 Pro Education features are unlocked. When a license expires or is transferred to another user, the Windows 10 Pro Education device seamlessly steps back down to Windows 10 Pro.
+Starting with Windows 10, version 1607, academic institutions can easily move from Windows 10 Pro to Windows 10 Pro Education—no keys and no reboots. After one of your users enters the Azure AD credentials associated with a Windows 10 Pro Education license, the operating system turns from Windows 10 Pro to Windows 10 Pro Education and all the appropriate Windows 10 Pro Education features are unlocked. When a license expires or is transferred to another user, the Windows 10 Pro Education device seamlessly steps back down to Windows 10 Pro.
 
 Previously, only schools or organizations purchasing devices as part of the Shape the Future K-12 program or with a Microsoft Volume Licensing Agreement could deploy Windows 10 Pro Education to their users. Now, if you have an education tenant, you can take advantage of the Windows 10 Pro Education features.
 
@@ -23,27 +23,6 @@ When you upgrade to Windows 10 Pro Education, you get the following benefits:
 -   **Windows 10 Pro Education edition**. Devices currently running Windows 10 Pro, version 1607 can get Windows 10 Pro Education Current Branch (CB). This benefit does not include Long Term Service Branch (LTSB).
 -   **Support from one to hundreds of users**. The Windows 10 Pro Education program does not have a limitation on the number of licenses an organization can have.
 -   **Roll back to Windows 10 Pro at any time**. When a user leaves the domain or the license is revoked, the Windows 10 Pro Education device reverts seamlessly to Windows 10 Pro edition (after a grace period of up to 90 days).
--   **Move licenses between users**. Licenses can be quickly and easily reallocated from one user to another user, allowing you to optimize your licensing investment against changing needs.
-
-  > [!IMPORTANT]  
-  > **TBD - Comment from Lee:** Pablo can confirm if there is user license management. This may not apply.
-
-> [!IMPORTANT]  
-> **TBD - Reviewers:** Does the following section apply to Pro Education? **Comment from Lee:** - I don't think this applies. Pablo, can you confirm?
-
-How does the Windows 10 Pro to Pro Education upgrade program compare with Microsoft Volume Licensing Agreements and Software Assurance?
-
--   [Microsoft Volume Licensing](http://www.microsoft.com/en-us/licensing/default.aspx) programs are broader in scope, providing organizations with access to licensing for all Microsoft products.
-
--   [Software Assurance](http://www.microsoft.com/en-us/Licensing/licensing-programs/software-assurance-default.aspx) provides organizations with the following categories of benefits:
-
-  -   **Deployment and management**. These benefits include planning services, Microsoft Desktop Optimization (MDOP), Windows Virtual Desktop Access Rights, Windows-To-Go Rights, Windows Roaming Use Rights, Windows Thin PC, Windows RT Companion VDA Rights, and other benefits.
-
-  -   **Training**. These benefits include training vouchers, online e-learning, and a home use program.
-
-  -   **Support**. These benefits include 24x7 problem resolution support, backup capabilities for disaster recovery, System Center Global Service Monitor, and a passive secondary instance of SQL Server.
-
-  -   **Specialized**. These benefits include step-up licensing availability (which enables you to migrate software from an earlier edition to a higher-level edition) and to spread license and Software Assurance payments across three equal, annual sums.
 
 In summary, the Windows 10 Pro Education free upgrade through the Windows Store for Business is an upgrade offering that provides organizations easier, more flexible access to the benefits of Windows 10 Pro Education edition.
 
@@ -69,7 +48,7 @@ Before you upgrade from Windows 10 Pro to Windows 10 Pro Education, make sure yo
 
 To upgrade your school's licenses from Windows 10 Pro to Windows 10 Pro Education, follow these steps.
 
-1. Launch the Windows Store for Business and search for **Windows 10 Pro Education**.
+1. Sign in to your Windows Store for Business account and search for **Windows 10 Pro Education**.
 2. Select **Launch for your organization**.
 
   ![Upgrade to Windows 10 Pro Education](images/wsfb_win10_pro_education_launch.png)
@@ -107,19 +86,19 @@ Users can join a device to Azure AD the first time they start the device (during
 
 1.  During the initial setup, on the **Who owns this PC?** page, select **My organization**, and then click **Next**, as illustrated in **Figure 4**.
 
-    <img src="images/enterprise-e3-who-owns.png" alt="Who owns this PC? page in Windows 10 setup" width="624" height="351" />
+    <img src="images/windows-who-owns.png" alt="Who owns this PC? page in Windows 10 setup" width="624" height="351" />
 
     **Figure 4** - The “Who owns this PC?” page in initial Windows 10 setup
 
 2.  On the **Choose how you’ll connect** page, select **Join Azure AD**, and then click **Next**, as illustrated in **Figure 5**.
 
-    <img src="images/enterprise-e3-choose-how.png" alt="Choose how you'll connect - page in Windows 10 setup" width="624" height="351" />
+    <img src="images/windows-choose-how.png" alt="Choose how you'll connect - page in Windows 10 setup" width="624" height="351" />
 
     **Figure 5** - The “Choose how you’ll connect” page in initial Windows 10 setup
 
 3.  On the **Let’s get you signed in** page, enter the Azure AD credentials, and then click **Sign in**, as illustrated in **Figure 6**.
 
-    <img src="images/enterprise-e3-lets-get.png" alt="Let's get you signed in - page in Windows 10 setup" width="624" height="351" />
+    <img src="images/windows-lets-get.png" alt="Let's get you signed in - page in Windows 10 setup" width="624" height="351" />
 
     **Figure 6** - The “Let’s get you signed in” page in initial Windows 10 setup
 
@@ -129,19 +108,19 @@ Now the device is Azure AD joined to the company’s subscription.
 
 1.  Go to **Settings &gt; Accounts &gt; Access work or school**, as illustrated in **Figure 7**.
 
-    <img src="images/enterprise-e3-connect-to-work-or-school.png" alt="Connect to work or school configuration" width="624" height="482" />
+    <img src="images/windows-connect-to-work-or-school.png" alt="Connect to work or school configuration" width="624" height="482" />
 
     **Figure 7** - Connect to work or school configuration in Settings
 
 2.  In **Set up a work or school account**, click **Join this device to Azure Active Directory**, as illustrated in **Figure 8**.
 
-    <img src="images/enterprise-e3-set-up-work-or-school.png" alt="Set up a work or school account" width="624" height="603" />
+    <img src="images/windows-set-up-work-or-school.png" alt="Set up a work or school account" width="624" height="603" />
 
     **Figure 8** - Set up a work or school account
 
 3.  On the **Let’s get you signed in** page, enter the Azure AD credentials, and then click **Sign in**, as illustrated in **Figure 9**.
 
-    <img src="images/enterprise-e3-lets-get-2.png" alt="Let's get you signed in - dialog box" width="624" height="603" />
+    <img src="images/windows-lets-get-2.png" alt="Let's get you signed in - dialog box" width="624" height="603" />
 
     **Figure 9** - The “Let’s get you signed in” dialog box
 
@@ -149,9 +128,9 @@ Now the device is Azure AD joined to the company’s subscription.
 
 #### Step 2: Sign in using Azure AD account
 
-Once the device is joined to your Azure AD subscription, the user will sign in by using his or her Azure AD account, as illustrated in **Figure 10**. The Windows 10 Pro Education license associated with the user will enable Windows 10 Enterprise edition capabilities on the device.
+Once the device is joined to your Azure AD subscription, the user will sign in by using his or her Azure AD account, as illustrated in **Figure 10**. The Windows 10 Pro Education license associated with the user will enable Windows 10 Pro Education edition capabilities on the device.
 
-<img src="images/enterprise-e3-sign-in.png" alt="Sign in, Windows 10" width="624" height="351" />
+<img src="images/windows-sign-in.png" alt="Sign in, Windows 10" width="624" height="351" />
 
 **Figure 10** - Sign in by using Azure AD account
 
@@ -166,7 +145,7 @@ You can verify the Windows 10 Pro Education in **Settings &gt; Update & Securit
 
 **Figure 11** - Windows 10 Pro Education in Settings
 
-<img src="images/enterprise-e3-win-10-activated-enterprise-subscription-active.png" alt="Windows 10 activated and subscription active" width="624" height="407" />
+<img src="images/win-10-activated-enterprise-subscription-active.png" alt="Windows 10 activated and subscription active" width="624" height="407" />
 
 If there are any problems with the Windows 10 Pro Education license or the activation of the license, the **Activation** panel will display the appropriate error message or status. You can use this information to help you diagnose the licensing and activation process.
 
@@ -184,25 +163,25 @@ Use the following figures to help you troubleshoot when users experience these c
 
 **[Figure 11]** - Illustrates a device in a healthy state, where Windows 10 Pro, version 1607 is activated and the Windows 10 Pro Education upgrade is active.
 
-<img src="images/enterprise-e3-win-10-activated-enterprise-subscription-active.png" alt="Windows 10 activated and subscription active" width="624" height="407" />
+<img src="images/win-10-activated-enterprise-subscription-active.png" alt="Windows 10 activated and subscription active" width="624" height="407" />
 
 <span id="win-10-not-activated"/>
 
 **[Figure 12]** - Illustrates a device on which Windows 10 Pro, version 1607 is not activated, but the Windows 10 Pro Education upgrade is active.
 
-<img src="images/enterprise-e3-win-10-not-activated-enterprise-subscription-active.png" alt="Windows 10 not activated and subscription active" width="624" height="407" /><br><br>
+<img src="images/win-10-not-activated-enterprise-subscription-active.png" alt="Windows 10 not activated and subscription active" width="624" height="407" /><br><br>
 
 <span id="subscription-not-active"/>
 
 **[Figure 13]** - Illustrates a device on which Windows 10 Pro, version 1607 is activated, but the Windows 10 Pro Education upgrade is lapsed or removed.
 
-<img src="images/enterprise-e3-win-10-activated-enterprise-subscription-not-active.png" alt="Windows 10 activated and subscription not active" width="624" height="407" /><br><br>
+<img src="images/win-10-activated-enterprise-subscription-not-active.png" alt="Windows 10 activated and subscription not active" width="624" height="407" /><br><br>
 
 <span id="win-10-not-activated-subscription-not-active"/>
 
 **[Figure 14]** - Illustrates a device on which Windows 10 Pro, version 1607 license is not activated and the Windows 10 Pro Education upgrade is lapsed or removed.
 
-<img src="images/enterprise-e3-win-10-not-activated-enterprise-subscription-not-active.png" alt="Windows 10 not activated and subscription not active" width="624" height="407" /><br><br>
+<img src="images/win-10-not-activated-enterprise-subscription-not-active.png" alt="Windows 10 not activated and subscription not active" width="624" height="407" /><br><br>
 
 ### Review requirements on devices
 
@@ -255,7 +234,7 @@ You need to synchronize these identities so that users will have a *single ident
 
 **Figure 18** illustrates the integration between the on-premises AD DS domain with Azure AD. [Microsoft Azure Active Directory Connect](http://www.microsoft.com/en-us/download/details.aspx?id=47594) (Azure AD Connect) is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
 
-![Illustration of Azure Active Directory Connect](images/enterprise-e3-ad-connect.png)
+![Illustration of Azure Active Directory Connect](images/windows-ad-connect.png)
 
 **Figure 18** - On-premises AD DS integrated with Azure AD
 
