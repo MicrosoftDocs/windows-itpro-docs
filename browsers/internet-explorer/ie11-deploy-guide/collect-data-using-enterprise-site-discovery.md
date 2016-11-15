@@ -84,7 +84,7 @@ The codes in this table can tell you what document mode was set by IE for a webp
 |6 |Page appears on an active **Compatibility View** list. |
 |7 |Page is using native XML parsing. |
 |8 |Page is using a special Quirks Mode Emulation (QME) mode that uses the modern layout engine, but the quirks behavior of Internet Explorer 5. |
-|9 |Page state is set by the browser mode and page's DOCTYPE. |
+|9 |Page state is set by the browser mode and page's DOCTYPE.|
 
 #### Browser state reason
 The codes in this table can tell you why the browser is in its current state. Also called “browser mode”.<br>These codes only apply to Internet Explorer 10 and Internet Explorer 11.

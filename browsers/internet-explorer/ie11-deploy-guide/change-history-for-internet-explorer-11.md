@@ -13,7 +13,7 @@ This topic lists new and updated topics in the Internet Explorer 11 documentatio
 
 ## November 2016
 
-|[Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md) |Updated the DocMode reason section to correct Code 8 and to add Code 9. |
+|[Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md) |Updated the DocMode reason section to correct Code 8 and to add Code 9.|
 
 ## August 2016
 |New or changed topic | Description |
