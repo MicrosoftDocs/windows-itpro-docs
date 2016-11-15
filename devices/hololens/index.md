@@ -26,7 +26,7 @@ author: jdeckerMS
 | [Set up HoloLens in kiosk mode](hololens-kiosk.md) | Enable kiosk mode for HoloLens, which limits the user's ability to launch new apps or change the running app  |
 | [Configure HoloLens using a provisioning package](hololens-provisioning.md) | Provisioning packages make it easy for IT administrators to configure HoloLens devices without imaging |
 | [Install apps on HoloLens](hololens-install-apps.md) | Use Windows Store for Business, mobile device management (MDM), or the Windows Device Portal to install apps on HoloLens|
-
+</br>
 
 ## Related resources
 
