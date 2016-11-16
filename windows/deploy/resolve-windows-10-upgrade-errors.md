@@ -16,7 +16,7 @@ localizationpriority: high
 **Applies to**
 -   Windows 10
 
->**Important**: This topic contains technical instructions for IT administrators. If you are not an IT administrator, see [Get help with Windows 10 upgrade and installation errors](https://support.microsoft.com/en-us/help/10587/windows-10-get-help-with-upgrade-installation-errors) for more information.  Do not attempt the procedures in this topic.  
+>**Important**: This topic contains technical instructions for IT administrators. If you are not an IT administrator, see [Get help with Windows 10 upgrade and installation errors](https://support.microsoft.com/en-us/help/10587/windows-10-get-help-with-upgrade-installation-errors) for more information.
 
 ## In this topic
 
