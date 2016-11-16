@@ -97,9 +97,12 @@ The compatibility update KB scans your computers and enables application usage t
 
 IMPORTANT: Restart user computers after you install the compatibility update KBs for the first time.
 
+If you are planning to enable IE Site Discovery, you will need to install a few additional KBs.
+
 | **Site discovery** | **KB** |
 |----------------------|-----------------------------------------------------------------------------|
-| [Review site discovery](upgrade-analytics-review-site-discovery.md)         | Install the latest [Windows Monthly Rollup](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup). This functionality has been included in Internet Explorer 11 starting with the July 2016 Cumulative Update.  |
+| [Review site discovery](upgrade-analytics-review-site-discovery.md)         | [KB3080149](http://www.catalog.update.microsoft.com/Search.aspx?q=3080149)<br>Updates the Diagnostic and Telemetry tracking service to existing devices. This update is only necessary on Windows 7 and Windows 8.1 devices. <br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br><br>Install the latest [Windows Monthly Rollup](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup). This functionality has been included in Internet Explorer 11 starting with the July 2016 Cumulative Update.  |
+
 
 
 ### Automate data collection
