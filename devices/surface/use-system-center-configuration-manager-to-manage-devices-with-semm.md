@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: jdeckerMS
+author: KiranDavane
 ---
 
 # Use System Center Configuration Manager to manage devices with SEMM
