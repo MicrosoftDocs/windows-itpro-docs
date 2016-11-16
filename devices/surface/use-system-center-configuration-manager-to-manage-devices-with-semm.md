@@ -140,7 +140,7 @@ Administrators with access to the certificate file (.pfx) can read the thumbprin
 3. Click **Certificates**.
 4. Right-click your certificate in the main pane, and then click **Open**.
 5. Click the **Details** tab.
-6. **<All>** or **Properties Only** must be selected in the **Show** drop-down menu.
+6. **All** or **Properties Only** must be selected in the **Show** drop-down menu.
 7. Select the field **Thumbprint**.
 
 >[!NOTE]
@@ -266,7 +266,7 @@ The following code fragment, found on lines 352-363, is used to write this regis
 
 ### Settings names and IDs
 
-To configure Surface UEFI settings or permissions for Surface UEFI settings, you must refer to each setting by either its setting name or setting ID. With each new update for Surface UEFI, new settings may be added. The best way to get a complete list of the settings available on a Surface device, along with the settings name and settings IDs, is to use the ShowSettingsOptions.ps1 script from [SEMM Management Scripts for Configuration Manager](https://gallery.technet.microsoft.com/Sample-PowerShell-for-5eb5f03c) in the TechNet Gallery Script Center.
+To configure Surface UEFI settings or permissions for Surface UEFI settings, you must refer to each setting by either its setting name or setting ID. With each new update for Surface UEFI, new settings may be added. The best way to get a complete list of the settings available on a Surface device, along with the settings name and settings IDs, is to use the ShowSettingsOptions.ps1 script from [SEMM management scripts for Configuration Manager](https://gallery.technet.microsoft.com/Sample-PowerShell-for-5eb5f03c) in the TechNet Gallery Script Center.
 
 The computer where ShowSettingsOptions.ps1 is run must have Microsoft Surface UEFI Manager installed, but the script does not require a Surface device.
 
@@ -327,7 +327,7 @@ After your scripts are prepared to configure and enable SEMM on the client devic
 
 * ConfigureSEMM.ps1
 * ResetSEMM.ps1
-* Your SEMM certificate, for example SEMMCertificate.pfx
+* Your SEMM certificate (for example SEMMCertificate.pfx)
 
 The SEMM Configuration Manager scripts will be added to Configuration Manager as a script application. The command to install SEMM with ConfigureSEMM.ps1 is:
 
@@ -410,6 +410,6 @@ After the script application is available in the Software Library of Configurati
 
 When you deploy SEMM using this script application and with a configuration that is visible to the end user, the PowerShell script will start and the thumbprint for the certificate will be displayed by the PowerShell window. You can have your users record this thumbprint and enter it when prompted by Surface UEFI after the device reboots.
 
-Alternatively, you can configure the application installation to reboot automatically and to install invisibly to the user – in this scenario, a technician will be required to enter the thumbprint on each device as it reboots. Any technician with access to the certificate file can read the thumbprint by viewing the certificate with CertMgr. Instructions for viewing the thumbprint with CertMgr are in the [Create or Modify the SEMM Configuration Manager Scripts](#create-or-modify-the-semm-configuration-manager-scripts) section of this article.
+Alternatively, you can configure the application installation to reboot automatically and to install invisibly to the user – in this scenario, a technician will be required to enter the thumbprint on each device as it reboots. Any technician with access to the certificate file can read the thumbprint by viewing the certificate with CertMgr. Instructions for viewing the thumbprint with CertMgr are in the [Create or modify the SEMM Configuration Manager scripts](#create-or-modify-the-semm-configuration-manager-scripts) section of this article.
 
 Removal of SEMM from a device deployed with Configuration Manager using these scripts is as easy as uninstalling the application with Configuration Manager. This action starts the ResetSEMM.ps1 script and properly unenrolls the device with the same certificate file that was used during the deployment of SEMM.
