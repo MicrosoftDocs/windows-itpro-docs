@@ -14,15 +14,21 @@ author: greg-lindsay
 
 -   Windows 10
 
-<P>This guide provides step-by-step instructions for IT administrators to set up a proof of concept (PoC) environment for testing the tools and procedures necessary to deploy Windows 10. The guide requires about 3 hours to complete.
+<P>The following guides provide step-by-step instructions for IT administrators to test Windows 10 deployment procedures in a proof of concept (PoC) environment:
 
-To complete this guide, you will need a Hyper-V capable computer running Windows 8.1 or later with 16GB of RAM. Detailed [requirements](#hardware-and-software-requirements) are provided below. You will also need to have a [Microsoft account](https://www.microsoft.com/account) to use for downloading evaluation software.
+- Step by step guide: Deploy Windows 10 in a test lab (this guide): Configure the PoC environment.<BR>
+- [Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md): Use the Microsoft Deployment Toolkit (MDT) to deploy Windows 10 in the PoC environment.<BR>
+- [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md): Use System Center Configuration Manager to deploy Windows 10 in the PoC environment.<BR>
 
-The PoC enviroment is configured by using Hyper-V and requires a minimum amount of resources. Windows PowerShell commands are provided to set up the test lab quickly. Instructions to "type" Windows PowerShell commands provided in this guide can be typed, but in most cases the preferred method is to copy and paste these commands. If you are not familiar with Hyper-V, review the [terminology](#appendix-d-terminology-in-this-guide) used in this guide before starting. 
+This guide requires about 3 hours to complete. You will need a Hyper-V capable computer running Windows 8.1 or later with at least 16GB of RAM. Detailed [requirements](#hardware-and-software-requirements) are provided below. You will also need to have a [Microsoft account](https://www.microsoft.com/account) to use for downloading evaluation software.
+
+The PoC enviroment is configured by using Hyper-V and requires a minimum amount of resources. Windows PowerShell commands are provided to set up the test lab quickly. You do not need to be an expert in Windows PowerShell to complete the steps in the guide, however you are required to customize some commands to your environment.
+
+Instructions to "type" Windows PowerShell commands provided in this guide can be typed, but in most cases the preferred method is to copy and paste these commands. If you are not familiar with Hyper-V, review the [terminology](#appendix-c-terminology-in-this-guide) used in this guide before starting. 
 
 ## In this guide
 
-This guide contains detailed instructions for three general procedures:
+This guide contains instructions for three general procedures:
 
 <OL>
 <LI>Install Hyper-V.  
@@ -30,13 +36,7 @@ This guide contains detailed instructions for three general procedures:
 <LI>Configure VMs.
 </OL>
 
-If you already have a computer running Hyper-V, you can use this computer and skip the first procedure.
-
-After completing the instructions in this guide, you will have a PoC environment that enables you to test Windows 10 deployment procedures with current tools, as documented in subsequent guides:<BR>
-- [Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)<BR>
-- [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)<BR>
-
-Links are provided to download trial versions of Windows Server 2012, Windows 10 Enterprise, and all deployment tools necessary to complete the lab.
+If you already have a computer running Hyper-V, you can use this computer and skip the first procedure. After completing the instructions in this guide, you will have a PoC environment that enables you to test Windows 10 deployment procedures with current tools, as documented in subsequent guides. Links are provided to download trial versions of Windows Server 2012, Windows 10 Enterprise, and all deployment tools necessary to complete the lab.
 
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed. 
 
@@ -45,9 +45,9 @@ Topics and procedures in this guide are summarized in the following table. An es
 <TABLE border=1 cellspacing=0 cellpadding=0>
 <TR><TD BGCOLOR="#a0e4fa"><B>Topic</B><TD BGCOLOR="#a0e4fa"><B>Description</B><TD BGCOLOR="#a0e4fa"><B>Time</B>
 
-<TR><TD>[Hardware and software requirements](#hardware-and-software-requirements)<TD>Prerequisites to complete this guide.<TD>
-<TR><TD>[Lab setup](#lab-setup)<TD>A description and diagram of the PoC environment.<TD>
-<TR><TD>[Configure the PoC environment](#configure-the-poc-environment)<TD>Parent topic for procedures.<TD>
+<TR><TD>[Hardware and software requirements](#hardware-and-software-requirements)<TD>Prerequisites to complete this guide.<TD>Informational
+<TR><TD>[Lab setup](#lab-setup)<TD>A description and diagram of the PoC environment.<TD>Informational
+<TR><TD>[Configure the PoC environment](#configure-the-poc-environment)<TD>Parent topic for procedures.<TD>Informational
 <TR><TD>[Verify support and install Hyper-V](#verify-support-and-install-hyper-v)<TD>Verify that installation of Hyper-V is supported, and install the Hyper-V server role.<TD>10 minutes
 <TR><TD>[Download VHD and ISO files](#download-vhd-and-iso-files)<TD>Download evaluation versions of Windows Server 2012 R2 and Windows 10 and prepare these files to be used on the Hyper-V host.<TD>30 minutes
 <TR><TD>[Convert PC to VM](#convert-pc-to-vm)<TD>Convert a physical computer on your network to a VM hosted in Hyper-V.<TD>30 minutes
@@ -55,9 +55,8 @@ Topics and procedures in this guide are summarized in the following table. An es
 <TR><TD>[Configure Hyper-V](#configure-hyper-v)<TD>Create virtual switches, determine available RAM for virtual machines, and add virtual machines.<TD>15 minutes
 <TR><TD>[Configure VHDs](#configure-vhds)<TD>Start virtual machines and configure all services and settings.<TD>60 minutes
 <TR><TD>[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)<TD>Verify and troubleshoot network connectivity and services in the PoC environment.<TD>30 minutes
-<TR><TD>[Appendix B: Configuring Hyper-V on Windows Server 2008 R2](#appendix-b-configuring-hyper-v-on-windows-server-2008-r2)<TD>Information about using this guide with a Hyper-V host running Windows Server 2008 R2.<TD>
-<TR><TD>[Appendix C: Disk2VHD](#appendix-c-disk2vhd)<TD>Information about the Disk2VHD application.<TD>
-<TR><TD>[Appendix D: Terminology in this guide](#appendix-d-terminology-in-this-guide)<TD>Terms used in this guide.<TD>
+<TR><TD>[Appendix B: Create generation 1 VM from GPT disk](#appendix-b-create-generation-1-vm-from-gpt-disk)<TD>Solution to boot a GPT formatted disk as a generation 1 VM.<TD>Optional
+<TR><TD>[Appendix C: Terminology in this guide](#appendix-d-terminology-in-this-guide)<TD>Terms used in this guide.<TD>Informational
 </TABLE>
 
 </div>
@@ -66,7 +65,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 One computer that meets the hardware and software specifications below is required to complete the guide; A second computer is recommended to validate the upgrade process. 
 
->Computer 2 is a client computer from your corporate network that is copied to create a VM that can be added to the PoC environment. This enables you to test a VM that is a mirror image of the computer on your network. If you do not have a computer to use for this simulation, you can create an arbitrary VM to represent this computer. Later guides use this computer to simulate Windows 10 replace and refresh scenarios, so the VM is required even if you cannot create this VM using computer 2.
+>Computer 2 is a client computer from your corporate network that is copied to create a VM that can be added to the PoC environment. This enables you to test a VM that is a mirror image of the computer on your network. If you do not have a computer to use for this simulation, you can download an evaluation VHD and use it to represent this computer. Later guides use this computer to simulate Windows 10 replace and refresh scenarios, so the VM is required even if you cannot create this VM using computer 2.
 
 <div style='font-size:9.0pt'>
 
@@ -128,24 +127,23 @@ One computer that meets the hardware and software specifications below is requir
 
 <B>*</B><I>The Hyper-V server role can also be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2, therefore you cannot use many of the steps provided in this guide to configure Hyper-V. To manage Hyper-V on Windows Server 2008 R2, you can use Hyper-V WMI, or you can use the Hyper-V Manager console. Providing all steps in this guide as Hyper-V WMI or as 2008 R2 Hyper-V Manager procedures is beyond the scope of the guide.</I>
 
-The Hyper-V role cannot be installed on Windows 7 or earlier versions of Windows.
+<P>The Hyper-V role cannot be installed on Windows 7 or earlier versions of Windows.
 
 </div>
 
 ## Lab setup
 
-- Computer 1 is configured to host four VMs on a private, PoC network. 
-    - Two VMs are running Windows Server 2012 R2 with required network services and tools installed.
-    - Two VMs are client systems: One VM is intended to mirror a host on your corporate network (computer 2) and one VM is running Windows 10 Enterprise to demonstrate the hardware replacement scenario.
-
 The lab architecture is summarized in the following diagram:
 
 ![PoC](images/poc.png)
 
-**Note**:
+- Computer 1 is configured to host four VMs on a private, PoC network. 
+    - Two VMs are running Windows Server 2012 R2 with required network services and tools installed.
+    - Two VMs are client systems: One VM is intended to mirror a host on your corporate network (computer 2) and one VM is running Windows 10 Enterprise to demonstrate the hardware replacement scenario.
+
 >If you have an existing Hyper-V host, you can use this host and skip the Hyper-V installation section in this guide.
 
->The two Windows Server VMs can be combined into a single VM to conserve RAM and disk space if required. However, instructions in this guide assume two server systems are used. Using two servers enables Active Directory Domain Services and DHCP to be installed on a server that is not directly connected to the corporate network. This mitigates the risk of clients on the corporate network receiving DHCP leases from the PoC network (i.e. "rogue" DHCP), and limits NETBIOS service broadcasts.
+<I>The two Windows Server VMs can be combined into a single VM to conserve RAM and disk space if required. However, instructions in this guide assume two server systems are used. Using two servers enables Active Directory Domain Services and DHCP to be installed on a server that is not directly connected to the corporate network. This mitigates the risk of clients on the corporate network receiving DHCP leases from the PoC network (i.e. "rogue" DHCP), and limits NETBIOS service broadcasts.</I>
 
 ## Configure the PoC environment
 
@@ -162,11 +160,9 @@ The lab architecture is summarized in the following diagram:
 
 ### Verify support and install Hyper-V
 
-1. Verify that the computer supports Hyper-V.
+Starting with Windows 8, the host computer’s microprocessor must support second level address translation (SLAT) to install Hyper-V. See [Hyper-V: List of SLAT-Capable CPUs for Hosts](http://social.technet.microsoft.com/wiki/contents/articles/1401.hyper-v-list-of-slat-capable-cpus-for-hosts.aspx) for more information. 
 
-    Starting with Windows 8, the host computer’s microprocessor must support second level address translation (SLAT) to install Hyper-V. See [Hyper-V: List of SLAT-Capable CPUs for Hosts](http://social.technet.microsoft.com/wiki/contents/articles/1401.hyper-v-list-of-slat-capable-cpus-for-hosts.aspx) for more information. To verify your computer supports SLAT, open an administrator command prompt,  type systeminfo, press ENTER, and review the section displayed at the bottom of the output, next to Hyper-V Requirements. 
-    
-    See the following example:
+1. To verify your computer supports SLAT, open an administrator command prompt,  type systeminfo, press ENTER, and review the section displayed at the bottom of the output, next to Hyper-V Requirements. See the following example:
     
     <pre style="overflow-y: visible">
     C:\>systeminfo
@@ -201,9 +197,7 @@ The lab architecture is summarized in the following diagram:
 
     Note: A 64-bit operating system is required to run Hyper-V.
 
-2. Enable Hyper-V.
-
-    The Hyper-V feature is not installed by default. To install it, open an elevated Windows PowerShell window and type the following command:
+2. The Hyper-V feature is not installed by default. To install it, open an elevated Windows PowerShell window and type the following command:
 
     <pre style="overflow-y: visible">
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All
@@ -234,21 +228,20 @@ When you have completed installation of Hyper-V on the host computer, begin conf
     After completing registration you will be able to download the 7.47 GB Windows Server 2012 R2 evaluation VHD. An example of the download offering is shown below.
 
     <TABLE BORDER=1>
-    <TR><TD>![VHD](images/download_vhd.png)
+    <TR><TD> ![VHD](images/download_vhd.png) </TD></TR>
     </TABLE>
 
 2. Download the file to the **C:\VHD** directory. When the download is complete, rename the VHD file that you downloaded to **2012R2-poc-1.vhd**. This is done to make the filename simple to recognize and type.
 3. Copy the VHD to a second file also in the **C:\VHD** directory and name this VHD **2012R2-poc-2.vhd**.
 4. Download the [Windows 10 Enterprise ISO](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise) from the TechNet Evaluation Center to the **C:\VHD** directory on your Hyper-V host. 
 
-    >During registration, you must specify the type, version, and language of installation media to download. In this example, a Windows 10 Enterprise, 64 bit, English ISO is chosen. You can choose a different version if desired. Note that Windows 10 in-place upgrade is only possible if the source operating system and installation media are both 32-bit or both 64-bit, so you should download the file version that corresponds to the version of your source computer (computer 2) for upgrade testing. 
+    >During registration, you must specify the type, version, and language of installation media to download. In this example, a Windows 10 Enterprise, 64 bit, English ISO is chosen. You can choose a different version if desired. **Note: The evaluation version of Windows 10 does not support in-place upgrade**. 
 
 5. Rename the ISO file that you downloaded to **w10-enterprise.iso**. Again, this is done so that the filename is simple to type and recognize. After completing registration you will be able to download the 3.63 GB Windows 10 Enterprise evaluation ISO. 
 
 After completing these steps, you will have three files in the **C:\VHD** directory: **2012R2-poc-1.vhd**, **2012R2-poc-2.vhd**, **w10-enterprise.iso**.
     
 The following commands and output display the procedures described in this section, both before and after downloading files:
-
 
 <pre style="overflow-y: visible">
 C:\>mkdir VHD
@@ -263,14 +256,24 @@ C:\VHD>dir /B
 w10-enterprise.iso
 </pre>
 
-
 ### Convert PC to VM
 
-If you do not have a PC available to convert to VM, see [Appendix E: Create PC1 VM](#appendix-e-create-pc1-vm).
+If you do not have a PC available to convert to VM, you can download a VM using the following steps. Skip these steps if you have a PC to convert.
+
+<OL>
+<LI>Open the [Download virtual machines](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) page.
+<LI>Under **Virtual machine**, choose **IE11 on Win7**. 
+<LI>Under **Select platform** choose **HyperV (Windows)**.
+<LI>Click **Download .zip**. The download is 3.31 GB.
+<LI>Extract the zip file. Three directories are created.
+<LI>Open the **Virtual Hard Disks** directory and then copy **IE11 - Win7.vhd** to the **C:\VHD** directory.
+<LI>Rename **IE11 - Win7.vhd** to **w7.vhd** (**do not rename the file to w7.vhdx**).
+<LI>Create a generation 1 VM as described in step 5 of the [Configure Hyper-V](#configure-hyper-v) section, replacing the VHD file name **w7.vhdx** with **w7.vhd**.
+</OL>
 
 If you have a PC available to convert to VM:
 
-1. Verify that you have access to a local administrator account on the computer. Alternatively you can use a domain account with administrative rights, if these credentials are cached on the computer and your domain policy allows the use of cached credentials for login. After converting the computer to a VM, you must be able to sign in on this VM with local administrator privileges, while disconnected from the corporate network.
+1. Sign in to the computer using an account with Administrator privileges. You can use a local computer account, or a domain account with administrative rights if domain policy allows the use of cached credentials. After converting the computer to a VM, you must be able to sign in on this VM with Administrator rights while the VM is disconnected from the corporate network.
 2. [Determine the VM generation](#determine-the-vm-generation) that is required.
 3. Based on the VM generation, perform the appropriate conversion procedure.
 
@@ -315,7 +318,7 @@ If the **Type** column does not indicate GPT, then the disk partition format is 
 
 >On a computer running Windows 8 or later, you can also type **Get-Disk** at a Windows PowerShell prompt to discover the partition style. The default output of this cmdlet displays the partition style for all attached disks.
 
-Both commands are shown in the following example. The client computer is running Windows 8.1 and uses a GPT style partition format:
+Both commands are displayed below. In this example, the client computer is running Windows 8.1 and uses a GPT style partition format:
 
 <pre style="overflow-y: visible">
 PS C:\> Get-WmiObject -Class Win32_DiskPartition | Select-Object -Property SystemName,Caption,Type
@@ -921,143 +924,13 @@ Use the following procedures to verify that the PoC environment is configured pr
     **ping** displays if the source can resolve the target name, and whether or not the target responds to ICMP. If it cannot be resolved, "..could not find host" will be diplayed and if the target is found and also responds to ICMP, you will see "Reply from" and the IP address of the target.<BR>
     **tracert** displays the path to reach the destination, for example srv1.contoso.com [192.168.0.2] followed by a list of hosts and IP addresses corresponding to subsequent routing nodes between the source and the destination.
 
-## Appendix B: Configuring Hyper-V on Windows Server 2008 R2
-
-Full documentation of procedures to configure the PoC in Hyper-V on Windows Server 2008 R2 is currently out of scope for this guide, due to significant differences in the Hyper-V role in Windows Server 2008 R2. For more information about the Hyper-V Manager interface in Windows Server 2008 R2, see [Hyper-V](https://technet.microsoft.com/library/cc730764.aspx) in the Windows Server TechNet Library. A limited number of procedures are provided in this section.
-
-To install Hyper-V on Windows Server 2008 R2, you can use the Add-WindowsFeature cmdlet:
-
-<pre style="overflow-y: visible">
-Add-WindowsFeature -Name Hyper-V
-</pre>
-
-An example that uses Hyper-V WMI to create a virtual switch on Windows Server 2008 R2 is provided below. 
-
-<pre style="overflow-y: visible">
-$SwitchFriendlyName = "poc-internal"
-$InternalEthernetPortFriendlyName = $SwitchFriendlyName
-$InternalSwitchPortFriendlyName = "poc"
-$SwitchName = [guid]::NewGuid().ToString()
-$InternalSwitchPortName = [guid]::NewGuid().ToString()
-$InternalEthernetPortName = [guid]::NewGuid().ToString()
-$NumLearnableAddresses = 1024
-$ScopeOfResidence = ""
-$VirtualSwitchManagementService = gwmi Msvm_VirtualSwitchManagementService -namespace "root\virtualization"
-$Result = $VirtualSwitchManagementService.CreateSwitch($SwitchName, $SwitchFriendlyName, $NumLearnableAddresses, $ScopeOfResidence) 
-$Switch = [WMI]$Result.CreatedVirtualSwitch 
-$Result = $VirtualSwitchManagementService.CreateSwitchPort($Switch, $InternalSwitchPortName, $InternalSwitchPortFriendlyName, $ScopeOfResidence)
-$InternalSwitchPort = [WMI]$Result.CreatedSwitchPort 
-$Result = $VirtualSwitchManagementService.CreateInternalEthernetPortDynamicMac($InternalEthernetPortName, $InternalEthernetPortFriendlyName)
-$InternalEthernetPort = [WMI]$Result.CreatedInternalEthernetPort
-$query = "Associators of {$InternalEthernetPort} Where ResultClass=CIM_LanEndpoint"
-$InternalLanEndPoint = gwmi -namespace root\virtualization -query $query
-$Result = $VirtualSwitchManagementService.ConnectSwitchPort($InternalSwitchPort, $InternalLanEndPoint)
-$filter = "SettingID='" + $InternalEthernetPort.DeviceID +"'"
-$NetworkAdapterConfiguration = gwmi Win32_NetworkAdapterConfiguration -filter $filter
-</pre>
-
-## Appendix C: Convert GPT to MBR
-
-This appendix provides a procedure to convert physical disk that is using the GPT partition style to a VHD that can be used to create a generation 1 VM in Hyper-V. Because generation 1 VMs require an MBR partition style, the physical disk is saved and then converted.
-
->Conversion of a disk directly from GPT to MBR without data loss is not possible without the use of external, specialized applications and tools.  However, it is possible to create an image of the GPT disk and then restore this image to an MBR disk using standard tools. At a high level, this can be done by obtaining an image of the source drive, creating a blank MBR-formatted disk, applying the source drive image to the MBR disk, and then configuring the MBR disk to boot the applied image. This procedure is described below:
-
-1. Download the [Disk2vhd utility](https://technet.microsoft.com/en-us/library/ee656415.aspx), extract the .zip file and copy **disk2vhd.exe** to a flash drive or other location that is accessible from the computer you wish to convert.
-
-    >You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media such as a USB drive.
-
-2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
-3. Select the checkbox next to the **C:\** volume. On a computer using the GPT partition style, the system volume will not be displayed in the Disk2VHD tool.  
-4. Specify a location to save the resulting VHDX file (F:\VHD\w7-convert.vhdx in the following example) and click **Create**. See the following example:
-
-    ![disk2vhd](images/disk2vhd-convert.png)
-
-5. Click **Create** to start creating a VHDX file.
-
-    >Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
-
-
---here is where I need to insert the procedure to convert this to a bootable disk, given a vhdx file.
-
-How shall I do this?
-
-
-
-6. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (w7.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
-
-    <pre style="overflow-y: visible">
-    C:\vhd>dir /B
-    2012R2-poc-1.vhd
-    2012R2-poc-2.vhd
-    w10-enterprise.iso
-    w7.VHDX
-    </pre>
-
-
-First I capture a VSS image of the GPT disk using disk2vhd
-
-Then I create a new VHD using the command below, attach both, robocopy from one to the other, detach the original and load the second.
+## Appendix B: Create generation 1 VM from GPT disk
 
 
 
 
-1. Create VHD (function thanks to Senthil Rajaram).
 
-
-<pre style="overflow-y: visible">
-function CreateVHD ($VHDPath, $Size)
-{
-  $drive = (New-VHD -path $vhdpath -SizeBytes $size -Dynamic   |
-              Mount-VHD -Passthru |
-              get-disk -number {$_.DiskNumber} |
-              Initialize-Disk -PartitionStyle MBR -PassThru |
-              New-Partition -Size 100MB -AssignDriveLetter:$False -MbrType FAT32 -IsActive |
-              Format-Volume -Confirm:$false -FileSystem FAT32 -force |
-              get-partition |
-              New-Partition -UseMaximumSize -AssignDriveLetter:$False -MbrType IFS |
-              Format-Volume -Confirm:$false -FileSystem NTFS -force |
-              get-partition |
-              Add-PartitionAccessPath -AssignDriveLetter -PassThru |
-              get-volume).DriveLetter 
-    Dismount-VHD $VHDPath
-}
-</pre>
-
-Be sure to use a size sufficient for the backup (i.e. 100GB) and specify a path to a USB drive.  For Windows 7 to mount the drive it must be .vhd not .vhdx.
-
-<pre style="overflow-y: visible">
-CreateVHD F:\pc1.vhd 100GB
-</pre>
-
-
-2. Insert USB into client and mount using disk management. It is possible also using diskpart but easier with disk manager. Note the drive letter of the mount. Assuming G:
-
-wbadmin start backup -backupTarget:g: -include:c: -quiet
-
-- this takes a few minutes then you see:
-
-Creating a backup of volume C(C:), copied (98%).
-Creating a backup of volume C(C:), copied (98%).
-Creating a backup of volume C(C:), copied (99%).
-Creating a backup of volume C(C:), copied (99%).
-Creating a backup of volume C(C:), copied (100%).
-The backup operation successfully completed.
-Summary of the backup operation:
-------------------
-
-The backup of volume C(C:) successfully completed.
-
-C:\>
-
-Note: Alternatively you can back up the client to a network share, then access the network share from system restore. 
-
-3. Detatch the VHD, remove the USB, insert USB in Hyper-V host.
-
-4. Create new VM with blank VHD, add the usb vhd as secondary. remove it later...no need to keep the image on the same disk.
-
-
-
-### Appendix D: Terminology used in this guide
+### Appendix C: Terminology used in this guide
 
 See the following table for a list of terms used in this guide.
 
@@ -1078,10 +951,6 @@ See the following table for a list of terms used in this guide.
 </TABLE>
 
 </div>
-
-### Appendix E: Create PC1 VM
-
-Here is where I provide a procedure to create a blank client VM.
 
 ## Related Topics
 
