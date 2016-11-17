@@ -1,6 +1,4 @@
 ---
-title: SMB
-description: SMB
+title: SMB placeholder
+description: SMB placeholder
 ---
-
-#SMB
