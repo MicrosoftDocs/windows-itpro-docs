@@ -38,34 +38,57 @@ See [Windows 10 editions for education customers](windows-editions-for-education
 ## Requirements for upgrade
 
 Before you upgrade from Windows 10 Pro to Windows 10 Pro Education, make sure you meet these requirements:
-- Devices must be running Windows 10 Pro, version 1607, and be Azure Active Directory joined, or domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. For more information, see [Review requirements on devices](#review-requirements-on-devices).
+- Devices must be:
+  - Running Windows 10 Pro, version 1607
+  - Must be Azure Active Directory joined, or domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. For more information, see [Review requirements on devices](#review-requirements-on-devices).
 
-  If you haven't domain joined your devices already, [prepare for deployment of Windows 10 Pro Education licenses](#preparing-for-deployment-of-windows-10-pro-education-licenses).
+    If you haven't domain joined your devices already, [prepare for deployment of Windows 10 Pro Education licenses](#preparing-for-deployment-of-windows-10-pro-education-licenses).
+- The user making the changes must be a member of the Azure AD global administrator group.
 - The Azure AD tenant must be recognized as an education approved tenant.
-- You must have a Windows Store for Business account. If you don't have one, [sign up for Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/sign-up-windows-store-for-business).
+- You must have a Windows Store for Business account.
 
 ## Upgrade from Windows 10 Pro to Windows 10 Pro Education
+Once you enable the setting to upgrade Windows 10 Pro to Windows 10 Pro Education, the upgrade will begin only after a user signs in to their device. The setting applies to the entire organization so you cannot select which users will receive the upgrade.
 
-To upgrade your school's licenses from Windows 10 Pro to Windows 10 Pro Education, follow these steps.
+**To turn on the automatic upgrade from Windows 10 Pro to Windows 10 Pro Education**
+1. Sign in to Windows Store for Business with your work or school account.
 
-1. Sign in to your Windows Store for Business account and search for **Windows 10 Pro Education**.
-2. Select **Launch for your organization**.
+  If this is the first time you're signing into the Store, you'll be prompted to accept the Windows Store for Business Terms of Use.
+2. Go to **Manage > Account information**.
+3. In the **Account information** page, look for the **Upgrade Windows 10 Pro to Windows 10 Pro Education** section and follow the link.
 
-  ![Upgrade to Windows 10 Pro Education](images/wsfb_win10_pro_education_launch.png)
+  You will see the following page informing you that your school is eligible for a free automatic upgrade from Windows 10 Pro to Windows 10 Pro Education.
 
-  **Figure 1** - Launch Windows 10 Pro Education from the Windows Store for Business
+  ![Eligible for free Windows 10 Pro to Windows 10 Pro Education upgrade](images/wsfb_win10_pro_to proedu_upgrade_eligibility_page.png)
 
-3. Select **Close** once your order is confirmed.
+  **Figure 1** - Upgrade Windows 10 Pro to Windows 10 Pro Education
 
-  ![Windows 10 Pro Education order confirmation](images/wsfb_win10_pro_education_order_confirmation.png)
+4. Select **I understand enabling this setting will impact all devices running Windows 10 Pro in my organization**.
+5. **Optional.** To receive an email with a link to the upgrade, click **Send me email with a link to enable this upgrade** to receive an email.
 
-  **Figure 2** - Windows 10 Pro Education order confirmation
+  ![Email with Windows 10 Pro to Pro Education upgrade link](images/wsfb_win10_pro_to_proedu_email_upgrade_link.png)
 
-4. In the Store description, verify that you can see **Windows 10 Pro Education is enabled for your organization**.
+  **Figure 2** - Email notification with a link to enable the upgrade
 
-  ![Windows 10 Pro Education enabled for organization](images/wsfb_win10_pro_education_enabled_for_org.png)
+6. Click **Enable the automatic upgrade now** to turn on automatic upgrades.
 
-  **Figure 3** - Windows 10 Pro Education is now enabled
+    ![Enable the automatic upgrade](images/wsfb_win10_pro_to proedu_upgrade_enable.png).
+
+    **Figure 3** - Enable the automatic upgrade
+
+    Enabling the automatic upgrade also triggers an email message notifying all global administrators in your organization about the upgrade. It also contains a link that enables any global administrators to cancel the upgrade, if they choose. For more info about rolling back or canceling the upgrade, see [Roll back Windows 10 Pro Education to Windows 10 Pro](#roll-back-windows-10-pro-education-to-windows-10-pro).
+
+    ![Email informing other global admins about the upgrade](images/wsfb_win10_pro_to proedu_upgrade_email_global_admins.png).
+
+    **Figure 4** - Notification email sent to all global administrators
+
+7. Click **Close** in the **Confirmation** page.
+
+  In the **Upgrade Windows 10 Pro to Windows 10 Pro Education** page, you will see a message informing you when the upgrade was enabled and the name of the admin who enabled the upgrade.
+
+  ![Summary page about the upgrade](images/wsfb_win10_pro_to proedu_upgrade_summary.png)
+
+  **Figure 5** - Details about the automatic upgrade
 
 
 ## Explore the upgrade experience
@@ -84,66 +107,66 @@ Users can join a device to Azure AD the first time they start the device (during
 
 **To join a device to Azure AD the first time the device is started**
 
-1.  During the initial setup, on the **Who owns this PC?** page, select **My organization**, and then click **Next**, as illustrated in **Figure 4**.
+1.  During the initial setup, on the **Who owns this PC?** page, select **My organization**, and then click **Next**, as illustrated in **Figure 6**.
 
     <img src="images/windows-who-owns.png" alt="Who owns this PC? page in Windows 10 setup" width="624" height="351" />
 
-    **Figure 4** - The “Who owns this PC?” page in initial Windows 10 setup
+    **Figure 6** - The “Who owns this PC?” page in initial Windows 10 setup
 
-2.  On the **Choose how you’ll connect** page, select **Join Azure AD**, and then click **Next**, as illustrated in **Figure 5**.
+2.  On the **Choose how you’ll connect** page, select **Join Azure AD**, and then click **Next**, as illustrated in **Figure 7**.
 
     <img src="images/windows-choose-how.png" alt="Choose how you'll connect - page in Windows 10 setup" width="624" height="351" />
 
-    **Figure 5** - The “Choose how you’ll connect” page in initial Windows 10 setup
+    **Figure 7** - The “Choose how you’ll connect” page in initial Windows 10 setup
 
-3.  On the **Let’s get you signed in** page, enter the Azure AD credentials, and then click **Sign in**, as illustrated in **Figure 6**.
+3.  On the **Let’s get you signed in** page, enter the Azure AD credentials, and then click **Sign in**, as illustrated in **Figure 8**.
 
     <img src="images/windows-lets-get.png" alt="Let's get you signed in - page in Windows 10 setup" width="624" height="351" />
 
-    **Figure 6** - The “Let’s get you signed in” page in initial Windows 10 setup
+    **Figure 8** - The “Let’s get you signed in” page in initial Windows 10 setup
 
 Now the device is Azure AD joined to the company’s subscription.
 
 **To join a device to Azure AD when the device already has Windows 10 Pro, version 1607 installed and set up**
 
-1.  Go to **Settings &gt; Accounts &gt; Access work or school**, as illustrated in **Figure 7**.
+1.  Go to **Settings &gt; Accounts &gt; Access work or school**, as illustrated in **Figure 9**.
 
     <img src="images/windows-connect-to-work-or-school.png" alt="Connect to work or school configuration" width="624" height="482" />
 
-    **Figure 7** - Connect to work or school configuration in Settings
+    **Figure 9** - Connect to work or school configuration in Settings
 
-2.  In **Set up a work or school account**, click **Join this device to Azure Active Directory**, as illustrated in **Figure 8**.
+2.  In **Set up a work or school account**, click **Join this device to Azure Active Directory**, as illustrated in **Figure 10**.
 
     <img src="images/windows-set-up-work-or-school.png" alt="Set up a work or school account" width="624" height="603" />
 
-    **Figure 8** - Set up a work or school account
+    **Figure 10** - Set up a work or school account
 
-3.  On the **Let’s get you signed in** page, enter the Azure AD credentials, and then click **Sign in**, as illustrated in **Figure 9**.
+3.  On the **Let’s get you signed in** page, enter the Azure AD credentials, and then click **Sign in**, as illustrated in **Figure 11**.
 
     <img src="images/windows-lets-get-2.png" alt="Let's get you signed in - dialog box" width="624" height="603" />
 
-    **Figure 9** - The “Let’s get you signed in” dialog box
+    **Figure 11** - The “Let’s get you signed in” dialog box
 
 Now the device is Azure AD joined to the company’s subscription.
 
 #### Step 2: Sign in using Azure AD account
 
-Once the device is joined to your Azure AD subscription, the user will sign in by using his or her Azure AD account, as illustrated in **Figure 10**. The Windows 10 Pro Education license associated with the user will enable Windows 10 Pro Education edition capabilities on the device.
+Once the device is joined to your Azure AD subscription, the user will sign in by using his or her Azure AD account, as illustrated in **Figure 12**. The Windows 10 Pro Education license associated with the user will enable Windows 10 Pro Education edition capabilities on the device.
 
 <img src="images/windows-sign-in.png" alt="Sign in, Windows 10" width="624" height="351" />
 
-**Figure 10** - Sign in by using Azure AD account
+**Figure 12** - Sign in by using Azure AD account
 
 #### Step 3: Verify that Pro Education edition is enabled
 
 > [!IMPORTANT]  
 > **TBD - Reviewers:** The screenshots in this section need to be updated for Pro Education and not Enterprise E3 (original source)
 
-You can verify the Windows 10 Pro Education in **Settings &gt; Update & Security &gt; Activation**, as illustrated in **Figure 11**.
+You can verify the Windows 10 Pro Education in **Settings &gt; Update & Security &gt; Activation**, as illustrated in **Figure 13**.
 
 <span id="win-10-activated-subscription-active"/>
 
-**Figure 11** - Windows 10 Pro Education in Settings
+**Figure 13** - Windows 10 Pro Education in Settings
 
 <img src="images/win-10-activated-enterprise-subscription-active.png" alt="Windows 10 activated and subscription active" width="624" height="407" />
 
@@ -161,25 +184,25 @@ Use the following figures to help you troubleshoot when users experience these c
 
 <span id="win-10-activated-subscription-active"/>
 
-**[Figure 11]** - Illustrates a device in a healthy state, where Windows 10 Pro, version 1607 is activated and the Windows 10 Pro Education upgrade is active.
+**Figure 13** - Illustrates a device in a healthy state, where Windows 10 Pro, version 1607 is activated and the Windows 10 Pro Education upgrade is active.
 
 <img src="images/win-10-activated-enterprise-subscription-active.png" alt="Windows 10 activated and subscription active" width="624" height="407" />
 
 <span id="win-10-not-activated"/>
 
-**[Figure 12]** - Illustrates a device on which Windows 10 Pro, version 1607 is not activated, but the Windows 10 Pro Education upgrade is active.
+**Figure 14** - Illustrates a device on which Windows 10 Pro, version 1607 is not activated, but the Windows 10 Pro Education upgrade is active.
 
 <img src="images/win-10-not-activated-enterprise-subscription-active.png" alt="Windows 10 not activated and subscription active" width="624" height="407" /><br><br>
 
 <span id="subscription-not-active"/>
 
-**[Figure 13]** - Illustrates a device on which Windows 10 Pro, version 1607 is activated, but the Windows 10 Pro Education upgrade is lapsed or removed.
+**Figure 15** - Illustrates a device on which Windows 10 Pro, version 1607 is activated, but the Windows 10 Pro Education upgrade is lapsed or removed.
 
 <img src="images/win-10-activated-enterprise-subscription-not-active.png" alt="Windows 10 activated and subscription not active" width="624" height="407" /><br><br>
 
 <span id="win-10-not-activated-subscription-not-active"/>
 
-**[Figure 14]** - Illustrates a device on which Windows 10 Pro, version 1607 license is not activated and the Windows 10 Pro Education upgrade is lapsed or removed.
+**Figure 16** - Illustrates a device on which Windows 10 Pro, version 1607 license is not activated and the Windows 10 Pro Education upgrade is lapsed or removed.
 
 <img src="images/win-10-not-activated-enterprise-subscription-not-active.png" alt="Windows 10 not activated and subscription not active" width="624" height="407" /><br><br>
 
@@ -204,27 +227,25 @@ Devices must be running Windows 10 Pro, version 1607, and be Azure Active Direct
 
 ## Roll back Windows 10 Pro Education to Windows 10 Pro
 
-If you upgraded from Windows 10 Pro to Windows 10 Pro Education, and you decide to roll back to Windows 10 Pro, you can roll back the opt-in through your organization's Windows Store for Business page.
+If your organization has the Windows 10 Pro to Windows 10 Pro Education upgrade enabled, and you decide to roll back to Windows 10 Pro or to cancel the upgrade, you can do this by:
+- Logging into Windows Store for Business page and turning off the automatic upgrade.
+- Selecting the link to turn off the automatic upgrade from the notification email sent to all global administrators.
 
-**To roll back from Windows 10 Pro Education to Windows 10 Pro**
-1. Launch the Windows Store for Business and select **Manage**.
-2. Review your organization's **Order history** and find the order for **Windows 10 Pro Education**.
-3. Select the **+** next to the **Purchased** order status to bring up more options for the order.
+Once the automatic upgrade to Windows 10 Pro Education is turned off, the change is effective immediately. Devices that were upgraded will revert to Windows 10 Pro only after the license has been refreshed (every 30 days) and the next time the user signs in. This means that a user whose device was upgraded may not immediately see Windows 10 Pro Education rolled back to Windows 10 Pro for up to 30 days. However, users who haven't signed in during the time that an upgrade was enabled and then turned off will never see their device change from Windows 10 Pro.
 
-  ![Select + to bring up other order options](images/wsfb_win10_pro_education_order_options.png)
+**To roll back Windows 10 Pro Education to Windows 10 Pro**
+1. Log in to Windows Store for Business with your school or work account, or follow the link from the notification email to turn off the automatic upgrade.
+2. In the **Upgrade Windows 10 Pro to Windows 10 Pro Education** page, select **Turn off the automatic upgrade to Windows 10 Pro Education**.
 
-  **Figure 15** - Select **+** to see more options.
+  ![Turn off automatic upgrade to Windows 10 Pro Education](images/wsfb_win10_pro_to proedu_upgrade_disable.png)
 
-4. Select **Refund order** to roll back the order for Windows 10 Pro Education.
+  **Figure 17** - Link to turn off the automatic upgrade
 
-  ![Roll back the opt-in to Windows 10 Pro Education](images/wsfb_win10_pro_education_refund_order.png)
+3. You will be asked if you're sure that you want to turn off automatic upgrades to Windows 10 Pro Education. Click **Yes**.
+4. Click **Close** in the **Confirmation** page.
+5. In the **Upgrade Windows 10 Pro to Windows 10 Pro Education** page, you will see information on when the upgrade was disabled and who disabled the upgrade.
 
-  **Figure 16** - Select **+** to see more options.
-5. In the **Order history** page, confirm that the order status has changed to **Refunded**.
-
-  ![Confirm the refund](images/wsfb_win10_pro_education_refund_confirmation.png)
-
-  **Figure 17** - Check the change in **Order status**.
+  If you decide later that you want to turn on automatic upgrades again, you can do this from the **Upgrade Windows 10 Pro to Windows 10 Pro Education**.
 
 ## Preparing for deployment of Windows 10 Pro Education licenses
 
