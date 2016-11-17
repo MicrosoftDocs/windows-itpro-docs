@@ -1,1 +1,4 @@
-# Welcome to smb!
+---
+title: SMB placeholder
+description: SMB placeholder
+---
