@@ -31,7 +31,7 @@
       "build_output_subfolder": "devices/hololens",
       "locale": "en-us",
       "version": 0,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
