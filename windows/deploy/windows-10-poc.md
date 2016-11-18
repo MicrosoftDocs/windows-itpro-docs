@@ -270,7 +270,7 @@ If you have a PC available to convert to VM (computer 2):
 
 1. Sign in to computer 2 using an account with Administrator privileges.  
 
->You can use a local computer account, or a domain account with administrative rights if domain policy allows the use of cached credentials. After converting the computer to a VM, you must be able to sign in on this VM with Administrator rights while the VM is disconnected from the corporate network.
+>Important: the account used in this step must have local administrator privileges. You can use a local computer account, or a domain account with administrative rights if domain policy allows the use of cached credentials. After converting the computer to a VM, you must be able to sign in on this VM with Administrator rights while the VM is disconnected from the corporate network.
 
 2. [Determine the VM generation and partition type](#determine-the-vm-generation-and-partition-type) that is required.
 3. Based on the VM generation and partition type, perform one of the following procedures: [Prepare a generation 1 VM](#prepare-a-generation-1-vm), [Prepare a generation 2 VM](#prepare-a-generation-2-vm), or [prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk).
@@ -312,7 +312,16 @@ To determine the partition style, open a Windows PowerShell prompt on the PC and
 Get-WmiObject -Class Win32_DiskPartition | Select-Object -Property SystemName,Caption,Type
 </pre>
 
-If the **Type** column does not indicate GPT, then the disk partition format is MBR ("Installable File System" = MBR).
+If the **Type** column does not indicate GPT, then the disk partition format is MBR ("Installable File System" = MBR). In the following example, the disk is GPT:
+
+<pre style="overflow-y: visible">
+PS C:\> Get-WmiObject -Class Win32_DiskPartition | Select-Object -Property SystemName,Caption,Type
+
+SystemName                           Caption                                 Type
+----------                           -------                                 ----
+USER-PC1                             Disk #0, Partition #0                   GPT: System
+USER-PC1                             Disk #0, Partition #1                   GPT: Basic Data
+</pre>
 
 On a computer running Windows 8 or later, you can also type **Get-Disk** at a Windows PowerShell prompt to discover the partition style. The default output of this cmdlet displays the partition style for all attached disks. Both commands are displayed below. In this example, the client computer is running Windows 8.1 and uses a GPT style partition format:
 
@@ -492,6 +501,10 @@ Notes:<BR>
 
 ### Resize VHD
 
+**Important**: You should take advantage of [enhanced session mode](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) when completing instructions in this guide. Enhanced session mode enables you to copy and paste the commands from the Hyper-V host to VMs, between VMs, and between RDP sessions. After copying some text, you can paste into a Windows PowerShell window by simply right-clicking. Before right-clicking, do not left click other locations as this can empty the clipboard. You can also copy and paste <U>files</U> directly from one computer to another by right-clicking and selecting copy on one computer, then right-clicking and selecting paste on another computer.
+
+As mentioned previously: instructions to "type" commands provided in this guide can be typed, but the preferred method is to copy and paste these commands. Most of the commands to this point in the guide have been brief, but many commands in sections below are longer and more complex.
+
 The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 80GB to support installing imaging tools and storing OS images.
 
 1. To add available space for the partition, type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
@@ -510,10 +523,6 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     </pre>
 
 ### Configure Hyper-V
-
-**Important**: You should take advantage of [enhanced session mode](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) when completing instructions in this guide. Enhanced session mode enables you to copy and paste the commands from the Hyper-V host to VMs and between VMs. After copying some text, you can paste into a Windows PowerShell window by simply right-clicking. Before right-clicking, do not left click other locations as this can empty the clipboard. You can also copy and paste <U>files</U> directly from one computer to another by right-clicking and selecting copy on one computer, then right-clicking and selecting paste on another computer.
-
-As mentioned previously: instructions to "type" commands provided in this guide can be typed, but the preferred method is to copy and paste these commands.
 
 1. Open an elevated Windows PowerShell window and type the following command to create two virtual switches named "poc-internal" and "poc-external":
 
