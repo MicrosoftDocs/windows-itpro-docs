@@ -8,7 +8,7 @@ ms.pagetype: deploy
 author: greg-lindsay
 ---
 
-# Step by step guide: Deploy Windows 10 in a test lab
+# Step by step guide: Configure a test lab to deploy Windows 10
 
 **Applies to**
 
@@ -16,21 +16,19 @@ author: greg-lindsay
 
 <P>The following guides provide step-by-step instructions for IT administrators to test Windows 10 deployment procedures in a proof of concept (PoC) environment:
 
-- (This guide) Step by step guide: Deploy Windows 10 in a test lab.<BR>
+- (This guide) Step by step guide: Configure a test lab to deploy Windows 10.<BR>
 - [Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md).<BR>
 - [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md).<BR>
 
-The first guide contains instructions to configure the PoC environment. The second and third guides contains steps to deploy Windows 10 in this environment with current tools. 
+This guide contains instructions to configure a PoC/test environment using Hyper-V that requires a minimum amount of resources. Subsequent companion guides contain steps to deploy Windows 10 using this environment. Approximately 3 hours are required to configure the PoC environment. You will need a Hyper-V capable computer running Windows 8.1 or later with at least 16GB of RAM. Detailed [requirements](#hardware-and-software-requirements) are provided below. You will also need to have a [Microsoft account](https://www.microsoft.com/account) to use for downloading evaluation software.
 
-Approximately 3 hours are required to configure the PoC environment. You will need a Hyper-V capable computer running Windows 8.1 or later with at least 16GB of RAM. Detailed [requirements](#hardware-and-software-requirements) are provided below. You will also need to have a [Microsoft account](https://www.microsoft.com/account) to use for downloading evaluation software.
+Windows PowerShell commands are provided to set up the PoC environment quickly. You do not need to be an expert in Windows PowerShell to complete the steps in the guide, however you are required to customize some commands to fit your environment. Instructions to "type" Windows PowerShell commands provided in this guide can be followed literally by typing the commands, but when it is possible the preferred method is to copy and paste these commands. 
 
-The PoC enviroment is configured by using Hyper-V and requires a minimum amount of resources. Windows PowerShell commands are provided to set up the test lab quickly. You do not need to be an expert in Windows PowerShell to complete the steps in the guide, however you are required to customize some commands to fit your environment.
-
-Instructions to "type" Windows PowerShell commands provided in this guide can be typed, but in most cases the preferred method is to copy and paste these commands. If you are not familiar with Hyper-V, review the [terminology](#appendix-b-terminology-in-this-guide) used in this guide before starting. 
+Hyper-V is installed, configured and used extensively in this guide. If you are not familiar with Hyper-V, review the [terminology](#appendix-b-terminology-in-this-guide) used in this guide before starting. 
 
 ## In this guide
 
-This guide contains instructions for three general procedures: Install Hyper-V, configure Hyper-V, and configure VMs. If you already have a computer running Hyper-V, you can use this computer and skip the first procedure. 
+This guide contains instructions for three general procedures: Install Hyper-V, configure Hyper-V, and configure VMs. If you already have a computer running Hyper-V, you can use this computer and skip the first procedure. In this case, virtual switch settings must be modified to match those used in this guide, or the steps can be modified to use your existing Hyper-V settings.
 
 After completing the instructions in this guide, you will have a PoC environment that enables you to test Windows 10 deployment procedures with current tools, as documented in subsequent guides. Links are provided to download trial versions of Windows Server 2012, Windows 10 Enterprise, and all deployment tools necessary to complete the lab.
 
@@ -60,8 +58,8 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 One computer that meets the hardware and software specifications below is required to complete the guide; A second computer is recommended to validate the upgrade process. 
 
-- Computer 1 is the computer you will use to run Hyper-V and host virtual machines. It is recommended that this computer have 16 GB or more of installed RAM and a multi-core processor.
-- Computer 2 is a client computer from your corporate network that is shadow-copied to create a VM that can be added to the PoC environment. This procedure enables you to test a VM that is a mirror image of the computer on your network. If you do not have a computer to use for this simulation, you can download an evaluation VHD and use it to represent this computer. Subsequent guides use this computer to simulate Windows 10 replace and refresh scenarios, so the VM is required even if you cannot create this VM using computer 2.
+- **Computer 1**: the computer you will use to run Hyper-V and host virtual machines. This computer should have 16 GB or more of installed RAM and a multi-core processor.
+- **Computer 2**: a client computer from your corporate network. It is shadow-copied to create a VM that can be added to the PoC environment, enabling you to test a mirror image of a computer on your network. If you do not have a computer to use for this simulation, you can download an evaluation VHD and use it to represent this computer. Subsequent guides use this computer to simulate Windows 10 replace and refresh scenarios, so the VM is required even if you cannot create this VM using computer 2.
 
 Harware requirements are displayed below:
 
@@ -81,7 +79,7 @@ Harware requirements are displayed below:
     <tr>
         <td BGCOLOR="#a0e4fa">**Description**</td>
         <td>This computer will run Hyper-V, the Hyper-V management tools, and the Hyper-V Windows PowerShell module.</td>
-        <td>This computer is a Windows 7 or Windows 8/8.1 client on your corporate network that will be converted to a VHD for upgrade demonstration purposes.</td>
+        <td>This computer is a Windows 7 or Windows 8/8.1 client on your corporate network that will be converted to a VM to demonstrate the upgrade process.</td>
     </tr>
     <tr>
         <td BGCOLOR="#a0e4fa">**OS**</td>
@@ -96,7 +94,7 @@ Harware requirements are displayed below:
     <tr>
         <td BGCOLOR="#a0e4fa">**Architecture**</td>
         <td>64-bit</td>
-        <td>Any<BR>Note: Retaining applications and settings during the upgrade process requires that architecture (32 or 64-bit) is the same before and after the upgrade.</td>
+        <td>Any<BR><I>Note: Retaining applications and settings requires that architecture (32 or 64-bit) is the same before and after the upgrade.</I></td>
     </tr>
     <tr>
         <td BGCOLOR="#a0e4fa">**RAM**</td>
@@ -253,15 +251,7 @@ w10-enterprise.iso
 
 ### Convert PC to VM
 
-If you have a PC available to convert to VM (computer 2):
-
-1. Sign in to computer 2 using an account with Administrator privileges.  
-
->You can use a local computer account, or a domain account with administrative rights if domain policy allows the use of cached credentials. After converting the computer to a VM, you must be able to sign in on this VM with Administrator rights while the VM is disconnected from the corporate network.
-
-2. [Determine the VM generation and partition type](#determine-the-vm-generation-and-partition-type) that is required.
-3. Based on the VM generation and partition type, perform one of the following procedures: [Prepare a generation 1 VM](#prepare-a-generation-1-vm), [Prepare a generation 2 VM](#prepare-a-generation-2-vm), or [prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk).
-
+<TABLE BORDER=2><TR><TD>
 If you do not have a PC available to convert to VM, perform the following steps to download an evaluation VM:
 
 <OL>
@@ -274,6 +264,16 @@ If you do not have a PC available to convert to VM, perform the following steps 
 <LI>Rename **IE11 - Win7.vhd** to **w7.vhd** (do not rename the file to w7.vhdx).
 <LI>In step 5 of the [Configure Hyper-V](#configure-hyper-v) section, replace the VHD file name **w7.vhdx** with **w7.vhd**.
 </OL>
+</TABLE>
+
+If you have a PC available to convert to VM (computer 2):
+
+1. Sign in to computer 2 using an account with Administrator privileges.  
+
+>You can use a local computer account, or a domain account with administrative rights if domain policy allows the use of cached credentials. After converting the computer to a VM, you must be able to sign in on this VM with Administrator rights while the VM is disconnected from the corporate network.
+
+2. [Determine the VM generation and partition type](#determine-the-vm-generation-and-partition-type) that is required.
+3. Based on the VM generation and partition type, perform one of the following procedures: [Prepare a generation 1 VM](#prepare-a-generation-1-vm), [Prepare a generation 2 VM](#prepare-a-generation-2-vm), or [prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk).
 
 #### Determine the VM generation and partition type
 
