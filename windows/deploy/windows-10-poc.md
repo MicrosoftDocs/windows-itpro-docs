@@ -16,11 +16,11 @@ author: greg-lindsay
 
 <P>The following guides provide step-by-step instructions for IT administrators to test Windows 10 deployment procedures in a proof of concept (PoC) environment:
 
-- (This guide) Step by step guide: Deploy Windows 10 in a test lab: Configure the PoC environment.<BR>
-- [Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md): Use the Microsoft Deployment Toolkit (MDT) to deploy Windows 10 in the PoC environment.<BR>
-- [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md): Use System Center Configuration Manager to deploy Windows 10 in the PoC environment.<BR>
+- (This guide) Step by step guide: Deploy Windows 10 in a test lab.<BR>
+- [Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md).<BR>
+- [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md).<BR>
 
-Configuring the PoC:
+The first guide contains instructions to configure the PoC environment. The second and third guides contains steps to deploy Windows 10 in this environment with current tools. 
 
 Approximately 3 hours are required to configure the PoC environment. You will need a Hyper-V capable computer running Windows 8.1 or later with at least 16GB of RAM. Detailed [requirements](#hardware-and-software-requirements) are provided below. You will also need to have a [Microsoft account](https://www.microsoft.com/account) to use for downloading evaluation software.
 
@@ -60,7 +60,10 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 One computer that meets the hardware and software specifications below is required to complete the guide; A second computer is recommended to validate the upgrade process. 
 
->Computer 2 is a client computer from your corporate network that is shadow-copied to create a VM that can be added to the PoC environment. This enables you to test a VM that is a mirror image of the computer on your network. If you do not have a computer to use for this simulation, you can download an evaluation VHD and use it to represent this computer. Subsequent guides use this computer to simulate Windows 10 replace and refresh scenarios, so the VM is required even if you cannot create this VM using computer 2.
+- Computer 1 is the computer you will use to run Hyper-V and host virtual machines. It is recommended that this computer have 16 GB or more of installed RAM and a multi-core processor.
+- Computer 2 is a client computer from your corporate network that is shadow-copied to create a VM that can be added to the PoC environment. This procedure enables you to test a VM that is a mirror image of the computer on your network. If you do not have a computer to use for this simulation, you can download an evaluation VHD and use it to represent this computer. Subsequent guides use this computer to simulate Windows 10 replace and refresh scenarios, so the VM is required even if you cannot create this VM using computer 2.
+
+Harware requirements are displayed below:
 
 <div style='font-size:9.0pt'>
 
@@ -252,14 +255,12 @@ w10-enterprise.iso
 
 If you have a PC available to convert to VM (computer 2):
 
-<OL>
-<LI>Sign in to computer 2 using an account with Administrator privileges.  
+1. Sign in to computer 2 using an account with Administrator privileges.  
 
 >You can use a local computer account, or a domain account with administrative rights if domain policy allows the use of cached credentials. After converting the computer to a VM, you must be able to sign in on this VM with Administrator rights while the VM is disconnected from the corporate network.
 
-<LI>[Determine the VM generation and partition type](#determine-the-vm-generation-and-partition-type) that is required.
-<LI>Based on the VM generation and partition type, perform one of the following: prepare a generation 1 VM, prepare a generation 2 VM, or prepare a generation 1 VM from a GPT disk.
-</OL>
+2. [Determine the VM generation and partition type](#determine-the-vm-generation-and-partition-type) that is required.
+3. Based on the VM generation and partition type, perform one of the following: [Prepare a generation 1 VM](#prepare-a-generation-1-vm), [Prepare a generation 2 VM](#prepare-a-generation-2-vm), or prepare a generation 1 VM from a GPT disk.
 
 If you do not have a PC available to convert to VM, perform the following steps to download an evaluation VM:
 
@@ -345,7 +346,7 @@ The following table displays the Hyper-V VM generation to choose based on the OS
         <td>Partition style</td>
         <td>Architecture</td>
         <td>VM generation</td>
-        <td>Procedures</td>
+        <td>Procedure</td>
     </tr>
     <tr>
         <td rowspan=4>Windows 7</td>
@@ -368,8 +369,7 @@ The following table displays the Hyper-V VM generation to choose based on the OS
     <tr>
         <td>64</td>
         <td>1</td>
-        <td>[Appendix C: Convert GPT to MBR](#appendix-c-convert-gpt-to-mbr)
-        <BR>[Prepare a generation 1 VM](#prepare-a-generation-1-vm)</td>
+        <td>[Prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk)</td>
     </tr>
     <tr>
         <td rowspan=4>Windows 8 or later</td>
@@ -387,8 +387,7 @@ The following table displays the Hyper-V VM generation to choose based on the OS
         <td rowspan=2>GPT</td>
         <td>32</td>
         <td>1</td>
-        <td>[Appendix C: Convert GPT to MBR](#appendix-c-convert-gpt-to-mbr)
-        <BR>[Prepare a generation 1 VM](#prepare-a-generation-1-vm)</td>
+        <td>[Prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk)</td>
     </tr>
     <tr>
         <td>64</td>
@@ -401,9 +400,9 @@ The following table displays the Hyper-V VM generation to choose based on the OS
 
 Notes:<BR>
 <UL>
-<LI>If the PC is running Windows 7, it can only be converted and hosted in Hyper-V as a generation 1 VM. This Hyper-V requirement means that if the Windows 7 PC is also using a GPT partition style, the disk contents must be captured and then used to create a VHD with the MBR partition style. In this case, see [Appendix C: Convert GPT to MBR](#appendix-c-convert-gpt-to-mbr).
-<LI>If the PC is running Windows 8 or later and uses the GPT partition style, you can capture the disk image and create a generation 2 VM. To do this, you must temporarily mount the EFI system partition which is accomplished using the **mountvol** command.
-<LI>If the PC is using an MBR partition style, you can convert the disk to VHD and use it to create a generation 1 VM. If you use the Disk2VHD tool described in this guide, it is not necessary to mount the MBR system partition, but it is still necessary to capture it.
+<LI>If the PC is running Windows 7, it can only be converted and hosted in Hyper-V as a generation 1 VM. This Hyper-V requirement means that if the Windows 7 PC is also using a GPT partition style, the OS disk can be shadow copied, but a new system partition must be created. In this case, see [Prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk).
+<LI>If the PC is running Windows 8 or later and uses the GPT partition style, you can capture the disk image and create a generation 2 VM. To do this, you must temporarily mount the EFI system partition which is accomplished using the **mountvol** command. In this case, see [Prepare a generation 2 VM](#prepare-a-generation-2-vm).
+<LI>If the PC is using an MBR partition style, you can convert the disk to VHD and use it to create a generation 1 VM. If you use the Disk2VHD tool described in this guide, it is not necessary to mount the MBR system partition, but it is still necessary to capture it. In this case, see [Prepare a generation 1 VM](#prepare-a-generation-1-vm).
 </UL>
 
 #### Prepare a generation 1 VM
@@ -418,11 +417,9 @@ Notes:<BR>
 
     ![disk2vhd](images/disk2vhd.png)
 
-5. Click **Create** to start creating a VHDX file.
-
     >Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
 
-6. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (w7.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
+5. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (w7.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
 
     <pre style="overflow-y: visible">
     C:\vhd>dir /B
@@ -444,18 +441,16 @@ Notes:<BR>
     mountvol s: /s
     </pre>
 
-    >This command temporarily assigns a drive letter of S to the system volume and mounts it. If the letter S is already assigned to a different volume on the computer, then choose one that is available (ex: mountvol z: /s).
+    This command temporarily assigns a drive letter of S to the system volume and mounts it. If the letter S is already assigned to a different volume on the computer, then choose one that is available (ex: mountvol z: /s).
 
-2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
-3. Select the checkboxes next to the **C:\** and the **S:\** volumes, and clear the **Use Volume Shadow Copy checkbox**. Volume shadow copy will not work if the EFI system partition is selected.
+3. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
+4. Select the checkboxes next to the **C:\** and the **S:\** volumes, and clear the **Use Volume Shadow Copy checkbox**. Volume shadow copy will not work if the EFI system partition is selected.
 
     **Important**: You must include the EFI system partition in order to create a bootable VHD. The Windows RE tools partition (shown below) is not required, but it can also be converted if desired.
 
-4. Specify a location to save the resulting VHD or VHDX file (F:\VHD\PC1.vhdx in the following example) and click **Create**. Note: Hyper-V on Windows Server 2008 R2 does not support VHDX. See the following example:
+5. Specify a location to save the resulting VHD or VHDX file (F:\VHD\PC1.vhdx in the following example) and click **Create**. Note: Hyper-V on Windows Server 2008 R2 does not support VHDX. See the following example:
 
     ![disk2vhd](images/disk2vhd-gen2.png)
-
-5. Click **Create** to start creating a VHDX file.
 
     >Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
 
@@ -481,11 +476,9 @@ Notes:<BR>
 
     ![disk2vhd](images/disk2vhd4.png)
 
-5. Click **Create** to start creating a VHD file.
-
     >Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
 
-6. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHD file (w7.vhd) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
+5. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHD file (w7.vhd) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
 
     <pre style="overflow-y: visible">
     C:\vhd>dir /B
@@ -495,7 +488,7 @@ Notes:<BR>
     w7.VHD
     </pre>
 
-    >Note: In its current state, the w7.VHD file is not bootable. The VHD will be used to create a bootable VM later in this guide in the [Configure Hyper-V](#configure-hyper-v) section.
+    >In its current state, the w7.VHD file is not bootable. The VHD will be used to create a bootable VM later in the [Configure Hyper-V](#configure-hyper-v) section.
 
 ### Resize VHD
 
@@ -523,6 +516,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 As mentioned previously: instructions to "type" commands provided in this guide can be typed, but the preferred method is to copy and paste these commands.
 
 1. Open an elevated Windows PowerShell window and type the following command to create two virtual switches named "poc-internal" and "poc-external":
+
     >If the Hyper-V host already has an external virtual switch bound to a physical NIC, do not attempt to add a second external virtual switch. Attempting to add a second external switch will result in an error indicating that the NIC is **already bound to the Microsoft Virtual Switch protocol.** In this case, choose one of the following options:<BR>
     &nbsp;&nbsp;&nbsp;A) Remove the existing external virtual switch, then add the poc-external switch<BR> 
     &nbsp;&nbsp;&nbsp;B) Rename the existing external switch to "poc-external"<BR>
@@ -544,7 +538,7 @@ As mentioned previously: instructions to "type" commands provided in this guide 
     (Get-VMHostNumaNode).MemoryAvailable
     </pre>
 
-    >This command will display the megabytes of RAM available. On a Hyper-V host computer with 16 GB of physical RAM installed, 10,000 MB of RAM or greater should be available if the computer is not also running other applications. On a computer with 8 GB of physical RAM installed, at least 4000 MB should be available. If the computer has less RAM available than this, try closing applications to free up more memory.
+    This command will display the megabytes of RAM available. On a Hyper-V host computer with 16 GB of physical RAM installed, 10,000 MB of RAM or greater should be available if the computer is not also running other applications. On a computer with 8 GB of physical RAM installed, at least 4000 MB should be available. If the computer has less RAM available than this, try closing applications to free up more memory.
 
 3. Determine the available memory for VMs by dividing the available RAM by 4.  For example:
 
@@ -591,7 +585,7 @@ As mentioned previously: instructions to "type" commands provided in this guide 
 
     To create a generation 1 VM from a GPT disk (using c:\vhd\w7.vhd):
 
-    Type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host. Do not forget to type the pipe "|" at the end of commands 1-5:
+    Type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host. Do not forget to include the pipe "|" at the end of commands 1-5:
 
     <pre style="overflow-y: visible">
     New-VHD -Path c:\vhd\s.vhd -SizeBytes 100MB |
@@ -619,7 +613,7 @@ As mentioned previously: instructions to "type" commands provided in this guide 
     vmconnect localhost PC1
     </pre>
 
-    Press a key to boot from DVD. The VM will boot into Windows Setup.
+    In the PC1 window, press a key to boot from DVD. The VM will boot into Windows Setup.
 
     1. Click **Next**.
     2. Click **Repair your computer**.
@@ -633,12 +627,12 @@ As mentioned previously: instructions to "type" commands provided in this guide 
     >If there is an error at this stage, ensure that the system partition VHD (c:\vhd\s.vdh) is correctly formatted and attached to the VM.
 
     7. Type **exit**.
-    8. Click **Continue**. Do not boot from the DVD again. The VM will boot into the OS partition that was expored to c:\vhd\w7.vhd.
-    9. On the PC1 virtual machine connection menu, click Media, point to DVD drive, and then click Eject w10-enterprise.iso.
+    8. Click **Continue**. Do not boot from the DVD again. The VM will boot into the OS partition that was exported to c:\vhd\w7.vhd.
+    9. On the PC1 virtual machine connection menu, click **Media**, point to **DVD drive**, and then click **Eject w10-enterprise.iso**.
     
 ### Configure VMs 
 
-1. At an elevated Windows PowerShell prompt on the Hyper-V host, start the first VM by typing the following command:
+1. At an elevated Windows PowerShell prompt on the Hyper-V host, start the first Windows Server VM by typing the following command:
 
     <pre style="overflow-y: visible">
     Start-VM DC1
@@ -735,14 +729,14 @@ As mentioned previously: instructions to "type" commands provided in this guide 
 
     Next, the client VM will be started and joined to the contoso.com domain. This is done before adding a gateway to the PoC network so that there is no danger of duplicate DNS registrations for the physical client and its cloned VM in the corporate domain.
 
-15. Using an elevated Windows PowerShell prompt on the Hyper-V host, start the client VM (PC1), and connect to it:
+15. If the PC1 VM is not started yet, using an elevated Windows PowerShell prompt on the Hyper-V host, start the client VM (PC1), and connect to it:
 
     <pre style="overflow-y: visible">
     Start-VM PC1
     vmconnect localhost PC1
     </pre>
 
-16. Sign on to PC1 using an account that has local administrator rights.
+16. Sign in to PC1 using an account that has local administrator rights.
 
     >PC1 will be disconnected from its current domain, so you cannot use a domain account to sign on unless these credentials are cached and the use of cached credentials is permitted by Group Policy. If cached credentials are available and permitted, you can use these credentials to sign in. Otherwise, use an existing local administrator account.
 
@@ -789,7 +783,7 @@ As mentioned previously: instructions to "type" commands provided in this guide 
             Flags: PDC GC DS LDAP KDC TIMESERV WRITABLE DNS_FOREST CLOSE_SITE FULL_SECRET WS 0xC000
     ```
 
-    >If PC1 is running Windows 7, enhanced session mode is not available, which means that you cannot copy and paste commands from the Hyper-V host to a Windows PowerShell prompt on PC1. However, it is possible to use integration services to copy a file from the Hyper-V host to a VM. The next procedure demonstrates this. If the Copy-VMFile command fails, then type the commands below at an elevated Windows PowerShell prompt on PC1 instead of saving them to a script to run remotely. If PC1 is running Windows 8 or a later operating system, you can use enhanced session mode to copy and paste these commands instead of typing them.
+    >If PC1 is running Windows 7, enhanced session mode might not be available, which means that you cannot copy and paste commands from the Hyper-V host to a Windows PowerShell prompt on PC1. However, it is possible to use integration services to copy a file from the Hyper-V host to a VM. The next procedure demonstrates this. If the Copy-VMFile command fails, then type the commands below at an elevated Windows PowerShell prompt on PC1 instead of saving them to a script to run remotely. If PC1 is running Windows 8 or a later operating system, you can use enhanced session mode to copy and paste these commands instead of typing them.
 
 20. Minimize the PC1 window and switch to the Hyper-V host computer. Open an elevated Windows PowerShell ISE window on the Hyper-V host (right-click Windows PowerShell and then click Run ISE as Administrator) and type the following commands in the (upper) script editor pane: 
 
@@ -994,8 +988,6 @@ Use the following procedures to verify that the PoC environment is configured pr
 
 
 ### Appendix B: Terminology used in this guide
-
-See the following table for a list of terms used in this guide.
 
 <div style='font-size:9.0pt'>
 
