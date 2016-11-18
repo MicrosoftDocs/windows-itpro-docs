@@ -260,7 +260,7 @@ If you have a PC available to convert to VM (computer 2):
 >You can use a local computer account, or a domain account with administrative rights if domain policy allows the use of cached credentials. After converting the computer to a VM, you must be able to sign in on this VM with Administrator rights while the VM is disconnected from the corporate network.
 
 2. [Determine the VM generation and partition type](#determine-the-vm-generation-and-partition-type) that is required.
-3. Based on the VM generation and partition type, perform one of the following: [Prepare a generation 1 VM](#prepare-a-generation-1-vm), [Prepare a generation 2 VM](#prepare-a-generation-2-vm), or prepare a generation 1 VM from a GPT disk.
+3. Based on the VM generation and partition type, perform one of the following procedures: [Prepare a generation 1 VM](#prepare-a-generation-1-vm), [Prepare a generation 2 VM](#prepare-a-generation-2-vm), or [prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk).
 
 If you do not have a PC available to convert to VM, perform the following steps to download an evaluation VM:
 
@@ -271,8 +271,8 @@ If you do not have a PC available to convert to VM, perform the following steps 
 <LI>Click **Download .zip**. The download is 3.31 GB.
 <LI>Extract the zip file. Three directories are created.
 <LI>Open the **Virtual Hard Disks** directory and then copy **IE11 - Win7.vhd** to the **C:\VHD** directory.
-<LI>Rename **IE11 - Win7.vhd** to **w7.vhd** (**do not rename the file to w7.vhdx**).
-<LI>Create a generation 1 VM as described in step 5 of the [Configure Hyper-V](#configure-hyper-v) section, replacing the VHD file name **w7.vhdx** with **w7.vhd**.
+<LI>Rename **IE11 - Win7.vhd** to **w7.vhd** (do not rename the file to w7.vhdx).
+<LI>In step 5 of the [Configure Hyper-V](#configure-hyper-v) section, replace the VHD file name **w7.vhdx** with **w7.vhd**.
 </OL>
 
 #### Determine the VM generation and partition type
@@ -448,7 +448,7 @@ Notes:<BR>
 
     **Important**: You must include the EFI system partition in order to create a bootable VHD. The Windows RE tools partition (shown below) is not required, but it can also be converted if desired.
 
-5. Specify a location to save the resulting VHD or VHDX file (F:\VHD\PC1.vhdx in the following example) and click **Create**. Note: Hyper-V on Windows Server 2008 R2 does not support VHDX. See the following example:
+5. Specify a location to save the resulting VHD or VHDX file (F:\VHD\PC1.vhdx in the following example) and click **Create**. See the following example:
 
     ![disk2vhd](images/disk2vhd-gen2.png)
 
@@ -471,7 +471,7 @@ Notes:<BR>
     >You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media such as a USB drive.
 
 2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface. 
-3. Select the checkbox next to the **C:\** volume and clear the checkbox next to **Use Vhdx**. Note: no system volume is copied in this scenario. 
+3. Select the checkbox next to the **C:\** volume and clear the checkbox next to **Use Vhdx**. Note: the system volume is not copied in this scenario, it will be added later.
 4. Specify a location to save the resulting VHD file (F:\VHD\w7.vhd in the following example) and click **Create**. See the following example:
 
     ![disk2vhd](images/disk2vhd4.png)
@@ -585,7 +585,7 @@ As mentioned previously: instructions to "type" commands provided in this guide 
 
     To create a generation 1 VM from a GPT disk (using c:\vhd\w7.vhd):
 
-    Type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host. Do not forget to include the pipe "|" at the end of commands 1-5:
+    Type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host. Do not forget to include the pipe "|" at the end of the first five commands:
 
     <pre style="overflow-y: visible">
     New-VHD -Path c:\vhd\s.vhd -SizeBytes 100MB |
@@ -624,10 +624,10 @@ As mentioned previously: instructions to "type" commands provided in this guide 
 
     ![scanos](images/scanos.png)
 
-    >If there is an error at this stage, ensure that the system partition VHD (c:\vhd\s.vdh) is correctly formatted and attached to the VM.
+    >If there is an error at this stage, ensure that the system partition VHD (c:\vhd\s.vdh) is correctly formatted, marked as active, and attached to the VM. Note: the OS drive is only temporarily assigned a letter of D.
 
     7. Type **exit**.
-    8. Click **Continue**. Do not boot from the DVD again. The VM will boot into the OS partition that was exported to c:\vhd\w7.vhd.
+    8. Click **Continue**. Do not press a key to boot from the DVD again. The VM will boot into the OS partition that was exported to c:\vhd\w7.vhd.
     9. On the PC1 virtual machine connection menu, click **Media**, point to **DVD drive**, and then click **Eject w10-enterprise.iso**.
     
 ### Configure VMs 
@@ -987,7 +987,9 @@ Use the following procedures to verify that the PoC environment is configured pr
     **tracert** displays the path to reach the destination, for example srv1.contoso.com [192.168.0.2] followed by a list of hosts and IP addresses corresponding to subsequent routing nodes between the source and the destination.
 
 
-### Appendix B: Terminology used in this guide
+## Appendix B: Terminology used in this guide
+
+<P>&nbsp;
 
 <div style='font-size:9.0pt'>
 
