@@ -14,7 +14,7 @@ author: greg-lindsay
 
 -   Windows 10
 
-**Important**: This guide leverages the proof of concept (PoC) environment configured using procedures in [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md). Please complete all steps in the prerequisite guide before attempting the procedures in this guide.
+**Important**: This guide leverages the proof of concept (PoC) environment configured using procedures in [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md). Please complete all steps in the prerequisite guide before attempting the procedures in this guide.
 
 The PoC environment is a virtual network running on Hyper-V with three virtual machines:
 - **DC1**: A contoso.com domain controller, DNS server, and DHCP server.
@@ -25,7 +25,7 @@ This guide leverages the Hyper-V server role to perform procedures. If you do no
 
 ## In this guide
 
-Description here.
+This guide provides instructions to install and configure the Microsoft Deployment Toolkit (MDT) to deploy a Windows 10 image.
 
 ## Install the Microsoft Deployment Toolkit (MDT)
 
