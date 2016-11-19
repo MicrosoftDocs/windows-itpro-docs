@@ -16,13 +16,13 @@ If you have an education tenant and use Windows 10 Pro in your schools now, glob
 
 Starting with Windows 10, version 1607, academic institutions can easily move from Windows 10 Pro to Windows 10 Pro Education—no keys and no reboots. After one of your users enters the Azure AD credentials associated with a Windows 10 Pro Education license, the operating system turns from Windows 10 Pro to Windows 10 Pro Education and all the appropriate Windows 10 Pro Education features are unlocked. When a license expires or is transferred to another user, the Windows 10 Pro Education device seamlessly steps back down to Windows 10 Pro.
 
-Previously, only schools or organizations purchasing devices as part of the Shape the Future K-12 program or with a Microsoft Volume Licensing Agreement could deploy Windows 10 Pro Education to their users. Now, if you have an education tenant, you can take advantage of the Windows 10 Pro Education features.
+Previously, only schools or organizations purchasing devices as part of the Shape the Future K-12 program or with a Microsoft Volume Licensing Agreement could deploy Windows 10 Pro Education to their users. Now, if you have a Azure AD for your organization, you can take advantage of the Windows 10 Pro Education features.
 
 When you upgrade to Windows 10 Pro Education, you get the following benefits:
 
 -   **Windows 10 Pro Education edition**. Devices currently running Windows 10 Pro, version 1607 can get Windows 10 Pro Education Current Branch (CB). This benefit does not include Long Term Service Branch (LTSB).
 -   **Support from one to hundreds of users**. The Windows 10 Pro Education program does not have a limitation on the number of licenses an organization can have.
--   **Roll back to Windows 10 Pro at any time**. When a user leaves the domain or the license is revoked, the Windows 10 Pro Education device reverts seamlessly to Windows 10 Pro edition (after a grace period of up to 90 days).
+-   **Roll back to Windows 10 Pro at any time**. When a user leaves the domain or you turn off the setting to automatic upgrade to Windows 10 Pro Education, the device reverts seamlessly to Windows 10 Pro edition (after a grace period of up to 30 days).
 
 In summary, the Windows 10 Pro Education free upgrade through the Windows Store for Business is an upgrade offering that provides organizations easier, more flexible access to the benefits of Windows 10 Pro Education edition.
 
@@ -51,11 +51,11 @@ Before you upgrade from Windows 10 Pro to Windows 10 Pro Education, make sure yo
 Once you enable the setting to upgrade Windows 10 Pro to Windows 10 Pro Education, the upgrade will begin only after a user signs in to their device. The setting applies to the entire organization so you cannot select which users will receive the upgrade.
 
 **To turn on the automatic upgrade from Windows 10 Pro to Windows 10 Pro Education**
-1. Sign in to Windows Store for Business with your work or school account.
+1. Sign in to [Windows Store for Business](https://businessstore.microsoft.com/en-us/Store/Apps) with your work or school account.
 
   If this is the first time you're signing into the Store, you'll be prompted to accept the Windows Store for Business Terms of Use.
 2. Go to **Manage > Account information**.
-3. In the **Account information** page, look for the **Upgrade Windows 10 Pro to Windows 10 Pro Education** section and follow the link.
+3. In the **Account information** page, look for the **Automatic Windows 10 Pro Education upgrade** section and follow the link.
 
   You will see the following page informing you that your school is eligible for a free automatic upgrade from Windows 10 Pro to Windows 10 Pro Education.
 
@@ -64,7 +64,7 @@ Once you enable the setting to upgrade Windows 10 Pro to Windows 10 Pro Educatio
   **Figure 1** - Upgrade Windows 10 Pro to Windows 10 Pro Education
 
 4. Select **I understand enabling this setting will impact all devices running Windows 10 Pro in my organization**.
-5. **Optional.** To receive an email with a link to the upgrade, click **Send me email with a link to enable this upgrade** to receive an email.
+5. Click **Send me email with a link to enable this upgrade** to receive an email with a link to the upgrade.
 
   ![Email with Windows 10 Pro to Pro Education upgrade link](images/wsfb_win10_pro_to_proedu_email_upgrade_link.png)
 
@@ -82,7 +82,7 @@ Once you enable the setting to upgrade Windows 10 Pro to Windows 10 Pro Educatio
 
     **Figure 4** - Notification email sent to all global administrators
 
-7. Click **Close** in the **Confirmation** page.
+7. Click **Close** in the **Success** page.
 
   In the **Upgrade Windows 10 Pro to Windows 10 Pro Education** page, you will see a message informing you when the upgrade was enabled and the name of the admin who enabled the upgrade.
 
@@ -99,7 +99,7 @@ So what will the users experience? How will they upgrade their devices?
 Existing Azure AD domain joined devices will be upgraded from Windows 10 Pro to Windows 10 Pro Education the next time the user logs in. That's it! No additional steps are needed.
 
 ### For new devices that are not Azure AD domain joined
-Now that you've upgraded from Pro to Pro Education, and Windows 10 Pro Education licenses have been assigned to users, the users are ready to upgrade their devices running Windows 10 Pro, version 1607 edition to Windows 10 Pro Education edition.
+Now that you've turned on the setting to automatically upgrade Windows 10 Pro to Windows 10 Pro Education, the users are ready to upgrade their devices running Windows 10 Pro, version 1607 edition to Windows 10 Pro Education edition.
 
 #### Step 1: Join users’ devices to Azure AD
 
@@ -234,16 +234,17 @@ If your organization has the Windows 10 Pro to Windows 10 Pro Education upgrade 
 Once the automatic upgrade to Windows 10 Pro Education is turned off, the change is effective immediately. Devices that were upgraded will revert to Windows 10 Pro only after the license has been refreshed (every 30 days) and the next time the user signs in. This means that a user whose device was upgraded may not immediately see Windows 10 Pro Education rolled back to Windows 10 Pro for up to 30 days. However, users who haven't signed in during the time that an upgrade was enabled and then turned off will never see their device change from Windows 10 Pro.
 
 **To roll back Windows 10 Pro Education to Windows 10 Pro**
-1. Log in to Windows Store for Business with your school or work account, or follow the link from the notification email to turn off the automatic upgrade.
-2. In the **Upgrade Windows 10 Pro to Windows 10 Pro Education** page, select **Turn off the automatic upgrade to Windows 10 Pro Education**.
+1. Log in to [Windows Store for Business](https://businessstore.microsoft.com/en-us/Store/Apps) with your school or work account, or follow the link from the notification email to turn off the automatic upgrade.
+2. Select **Manage > Account information** and locate the section **Automatic Windows 10 Pro Education upgrade** and follow the link.
+3. In the **Upgrade Windows 10 Pro to Windows 10 Pro Education** page, select **Turn off the automatic upgrade to Windows 10 Pro Education**.
 
   ![Turn off automatic upgrade to Windows 10 Pro Education](images/wsfb_win10_pro_to proedu_upgrade_disable.png)
 
   **Figure 17** - Link to turn off the automatic upgrade
 
-3. You will be asked if you're sure that you want to turn off automatic upgrades to Windows 10 Pro Education. Click **Yes**.
-4. Click **Close** in the **Confirmation** page.
-5. In the **Upgrade Windows 10 Pro to Windows 10 Pro Education** page, you will see information on when the upgrade was disabled and who disabled the upgrade.
+4. You will be asked if you're sure that you want to turn off automatic upgrades to Windows 10 Pro Education. Click **Yes**.
+5. Click **Close** in the **Success** page.
+6. In the **Upgrade Windows 10 Pro to Windows 10 Pro Education** page, you will see information on when the upgrade was disabled.
 
   If you decide later that you want to turn on automatic upgrades again, you can do this from the **Upgrade Windows 10 Pro to Windows 10 Pro Education**.
 
