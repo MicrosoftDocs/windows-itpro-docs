@@ -253,7 +253,7 @@ w10-enterprise.iso
 
 <TABLE BORDER=2><TR><TD>
 If you do not have a PC available to convert to VM, perform the following steps to download an evaluation VM:
-
+<BR>
 <OL>
 <LI>Open the [Download virtual machines](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) page.
 <LI>Under **Virtual machine**, choose **IE11 on Win7**. 
@@ -268,9 +268,9 @@ If you do not have a PC available to convert to VM, perform the following steps 
 
 If you have a PC available to convert to VM (computer 2):
 
-1. Sign in to computer 2 using an account with Administrator privileges.  
+1. Sign in on computer 2 using an account with Administrator privileges.  
 
->Important: the account used in this step must have local administrator privileges. You can use a local computer account, or a domain account with administrative rights if domain policy allows the use of cached credentials. After converting the computer to a VM, you must be able to sign in on this VM with Administrator rights while the VM is disconnected from the corporate network.
+>Important: the account used in this step must have local administrator privileges. You can use a local computer account, or a domain account with administrative rights if domain policy allows the use of cached credentials. After converting the computer to a VM, you must be able to sign in on this VM with administrator rights while the VM is disconnected from the corporate network.
 
 2. [Determine the VM generation and partition type](#determine-the-vm-generation-and-partition-type) that is required.
 3. Based on the VM generation and partition type, perform one of the following procedures: [Prepare a generation 1 VM](#prepare-a-generation-1-vm), [Prepare a generation 2 VM](#prepare-a-generation-2-vm), or [prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk).
@@ -615,7 +615,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     <pre style="overflow-y: visible">
     New-VM -Name "PC1" -VHDPath c:\vhd\s.vhd -SwitchName poc-internal
     Add-VMHardDiskDrive -VMName PC1 -Path c:\vhd\w7.vhd
-    Add-VMDvdDrive -VMName PC1 -Path c:\vhd\w10-enterprise.iso
+    Set-VMDvdDrive -VMName PC1 -Path c:\vhd\w10-enterprise.iso
     Set-VMMemory -VMName "PC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
     Enable-VMIntegrationService -Name "Guest Service Interface" -VMName PC1
     Start-VM PC1
@@ -638,25 +638,21 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     7. Type **exit**.
     8. Click **Continue**. Do not press a key to boot from the DVD again. The VM will boot into the OS partition that was exported to c:\vhd\w7.vhd.
     9. On the PC1 virtual machine connection menu, click **Media**, point to **DVD drive**, and then click **Eject w10-enterprise.iso**.
+    10. In the upper left corner click **Ctrl+Alt+Del** and then in the bottom right corner click **Shut down**.
     
 ### Configure VMs 
 
-1. At an elevated Windows PowerShell prompt on the Hyper-V host, start the first Windows Server VM by typing the following command:
+1. At an elevated Windows PowerShell prompt on the Hyper-V host, start the first Windows Server VM and connect to it by typing the following commands:
 
     <pre style="overflow-y: visible">
     Start-VM DC1
-    </pre>
-
-2. Wait for the VM to complete starting up, and then connect to it either using the Hyper-V Manager console (virtmgmt.msc) or using an elevated command prompt on the Hyper-V host:
-
-    <pre style="overflow-y: visible">
     vmconnect localhost DC1
     </pre>
 
-3. Click **Next** to accept the default settings, read the license terms and click **I accept**, provide an administrator password of **pass@word1**, and click **Finish**. 
-4. Click the **Ctrl+Alt+Del** button in the upper left corner of the virtual machine connection window, and then sign in to DC1 using the local administrator account. 
-5. Right-click **Start**, point to **Shut down or sign out**, and click **Sign out**. The VM connection will reset and a new connection dialog box will appear enabling you to choose a custom display configuration. Select a desktop size, click **Connect** and sign in again with the local Administrator account. Note: Signing in this way ensures that [enhanced session mode](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) is enabled. It is only necessary to do this the first time you sign in to a new VM.
-6. If DC1 is configured as described in this guide, it will currently be assigned an APIPA address, have a randomly generated hostname, and a single network adapter named "Ethernet." Open an elevated Windows PowerShell prompt on DC1 and type or paste the following commands to provide a new hostname and configure a static IP address and gateway:
+2. Click **Next** to accept the default settings, read the license terms and click **I accept**, provide an administrator password of **pass@word1**, and click **Finish**. 
+3. Click **Ctrl+Alt+Del** in the upper left corner of the virtual machine connection window, and then sign in to DC1 using the Administrator account. 
+4. Right-click **Start**, point to **Shut down or sign out**, and click **Sign out**. The VM connection will reset and a new connection dialog box will appear enabling you to choose a custom display configuration. Select a desktop size, click **Connect** and sign in again with the local Administrator account. Note: Signing in this way ensures that [enhanced session mode](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) is enabled. It is only necessary to do this the first time you sign in to a new VM.
+5. If DC1 is configured as described in this guide, it will currently be assigned an APIPA address, have a randomly generated hostname, and a single network adapter named "Ethernet." Open an elevated Windows PowerShell prompt on DC1 and type or paste the following commands to provide a new hostname and configure a static IP address and gateway:
 
     <pre style="overflow-y: visible">
     Rename-Computer DC1
@@ -666,19 +662,21 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     >The default gateway at 192.168.0.2 will be configured later in this guide.
 
-7. Install the Active Directory Domain Services role by typing the following command at an elevated Windows PowerShell prompt:
+    >Note: A list of available tasks for an app will be populated the first time you run it on the taskbar. Because these tasks aren't available until the App has been run, you will not see the Run as Administrator task until you have left-clicked Windows PowerShell for the first time. In this newly created VM, you will need to left-click Windows PowerShell one time, and then you can right-click and choose Run as Administrator to open an elevated Windows PowerShell prompt.
+
+6. Install the Active Directory Domain Services role by typing the following command at an elevated Windows PowerShell prompt:
 
     <pre style="overflow-y: visible">
     Install-WindowsFeature -Name AD-Domain-Services -IncludeAllSubFeature -IncludeManagementTools
     </pre>
 
-8. Before promoting DC1 to a Domain Controller, you must reboot so that the name change in step 3 above takes effect. To restart the computer, type the following command at an elevated Windows PowerShell prompt:
+7. Before promoting DC1 to a Domain Controller, you must reboot so that the name change in step 3 above takes effect. To restart the computer, type the following command at an elevated Windows PowerShell prompt:
 
     <pre style="overflow-y: visible">
     Restart-Computer
     </pre>
 
-9. When DC1 has rebooted, sign in again and open an elevated Windows PowerShell prompt. Now you can promote the server to be a domain controller. The directory services restore mode password must be entered as a secure string. Type the following commands at the elevated Windows PowerShell prompt:
+8. When DC1 has rebooted, sign in again and open an elevated Windows PowerShell prompt. Now you can promote the server to be a domain controller. The directory services restore mode password must be entered as a secure string. Type the following commands at the elevated Windows PowerShell prompt:
 
     <pre style="overflow-y: visible">
     $pass = "pass@word1" | ConvertTo-SecureString -AsPlainText -Force
@@ -687,7 +685,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     Ignore any warnings that are displayed. The computer will automatically reboot upon completion.
 
-10. When the reboot has completed, reconnect to DC1, sign in using the CONTOSO\Administrator account, open an elevated Windows PowerShell prompt, and use the following commands to add a reverse lookup zone for the PoC network, add the DHCP Server role, authorize DHCP in Active Directory, and supress the post-DHCP-install alert:
+9. When the reboot has completed, reconnect to DC1, sign in using the CONTOSO\Administrator account, open an elevated Windows PowerShell prompt, and use the following commands to add a reverse lookup zone for the PoC network, add the DHCP Server role, authorize DHCP in Active Directory, and supress the post-DHCP-install alert:
 
     <pre style="overflow-y: visible">
     Add-DnsServerPrimaryZone -NetworkID "192.168.0.0/24" -ReplicationScope Forest
@@ -698,7 +696,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Set-ItemProperty –Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ServerManager\Roles\12 –Name ConfigurationState –Value 2
     </pre>
 
-11. Next, add a DHCP scope and set option values:
+10. Next, add a DHCP scope and set option values:
 
     <pre style="overflow-y: visible">
     Add-DhcpServerv4Scope -Name "PoC Scope" -StartRange 192.168.0.100 -EndRange 192.168.0.199 -SubnetMask 255.255.255.0 -Description "Windows 10 PoC" -State Active
@@ -706,13 +704,13 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     </pre>
 
     >The -Force option is necessary when adding scope options to skip validation of 192.168.0.2 as a DNS server because we have not configured it yet. The scope should immediately begin issuing leases on the PoC network. The first DHCP lease that will be issued is to vEthernet interface on the Hyper-V host, which is a member of the internal network. You can verify this by using the command: Get-DhcpServerv4Lease -ScopeId 192.168.0.0.
-12. Add a user account to the contoso.com domain that can be used with client computers:
+11. Add a user account to the contoso.com domain that can be used with client computers:
 
     <pre style="overflow-y: visible">
     New-ADUser -Name "User1" -UserPrincipalName user1 -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -Enabled $true
     </pre>
 
-13. The DNS server role will also be installed on the member server, SRV1, at 192.168.0.2 so that we can forward DNS queries from DC1 to SRV1 to resolve Internet names without having to configure a forwarder outside the PoC network. Since the IP address of SRV1 already exists on DC1's network adapter, it will be automatically added during the DCPROMO process. To verify this server-level DNS forwarder on DC1, type the following command at an elevated Windows PowerShell prompt on DC1:
+12. The DNS server role will also be installed on the member server, SRV1, at 192.168.0.2 so that we can forward DNS queries from DC1 to SRV1 to resolve Internet names without having to configure a forwarder outside the PoC network. Since the IP address of SRV1 already exists on DC1's network adapter, it will be automatically added during the DCPROMO process. To verify this server-level DNS forwarder on DC1, type the following command at an elevated Windows PowerShell prompt on DC1:
 
     <pre style="overflow-y: visible">
     Get-DnsServerForwarder
@@ -734,30 +732,30 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Add-DnsServerForwarder -IPAddress 192.168.0.2
     </pre>
 
-14. Minimize the DC1 VM window but **do not stop** the VM.
+13. Minimize the DC1 VM window but **do not stop** the VM.
 
     Next, the client VM will be started and joined to the contoso.com domain. This is done before adding a gateway to the PoC network so that there is no danger of duplicate DNS registrations for the physical client and its cloned VM in the corporate domain.
 
-15. If the PC1 VM is not started yet, using an elevated Windows PowerShell prompt on the Hyper-V host, start the client VM (PC1), and connect to it:
+14. If the PC1 VM is not started yet, using an elevated Windows PowerShell prompt on the Hyper-V host, start the client VM (PC1), and connect to it:
 
     <pre style="overflow-y: visible">
     Start-VM PC1
     vmconnect localhost PC1
     </pre>
 
-16. Sign in to PC1 using an account that has local administrator rights.
+15. Sign in to PC1 using an account that has local administrator rights.
 
     >PC1 will be disconnected from its current domain, so you cannot use a domain account to sign on unless these credentials are cached and the use of cached credentials is permitted by Group Policy. If cached credentials are available and permitted, you can use these credentials to sign in. Otherwise, use an existing local administrator account.
 
-17. After signing in, the operating system detects that it is running in a new environment. New drivers will be automatically installed, including the network adapter driver. The network adapter driver must be updated before you can proceed, so that you will be able to join the contoso.com domain. Depending on the resources allocated to PC1, installing the network adapter driver might take a few minutes. You can monitor device driver installation by clicking **Show hidden icons** in the notification area.
+16. After signing in, the operating system detects that it is running in a new environment. New drivers will be automatically installed, including the network adapter driver. The network adapter driver must be updated before you can proceed, so that you will be able to join the contoso.com domain. Depending on the resources allocated to PC1, installing the network adapter driver might take a few minutes. You can monitor device driver installation by clicking **Show hidden icons** in the notification area.
 
     ![PoC](images/installing-drivers.png)
 
     >If the client was configured with a static address, you must change this to a dynamic one so that it can obtain a DHCP lease. 
 
-18. When the new network adapter driver has completed installation, you will receive an alert to set a network location for the contoso.com network. Select **Work network** and then click **Close**. When you receive an alert that a restart is required, click **Restart Later**.
+17. When the new network adapter driver has completed installation, you will receive an alert to set a network location for the contoso.com network. Select **Work network** and then click **Close**. When you receive an alert that a restart is required, click **Restart Later**.
 
-19. Open an elevated Windows PowerShell prompt on PC1 and verify that the client VM has received a DHCP lease and can communicate with the consoto.com domain controller. 
+18. Open an elevated Windows PowerShell prompt on PC1 and verify that the client VM has received a DHCP lease and can communicate with the consoto.com domain controller. 
 
     To open Windows PowerShell on Windows 7, click **Start**, and search for "**power**." Right-click **Windows PowerShell** and then click **Pin to Taskbar** so that it is simpler to use Windows Powershell during this lab. Click **Windows PowerShell** on the taskbar, and then type **ipconfig** at the prompt to see the client's current IP address. Also type **ping dc1.contoso.com** and **nltest /dsgetdc:contoso.com** to verify that it can reach the domain controller. See the following examples of a successful network connection:
 
@@ -794,7 +792,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     >If PC1 is running Windows 7, enhanced session mode might not be available, which means that you cannot copy and paste commands from the Hyper-V host to a Windows PowerShell prompt on PC1. However, it is possible to use integration services to copy a file from the Hyper-V host to a VM. The next procedure demonstrates this. If the Copy-VMFile command fails, then type the commands below at an elevated Windows PowerShell prompt on PC1 instead of saving them to a script to run remotely. If PC1 is running Windows 8 or a later operating system, you can use enhanced session mode to copy and paste these commands instead of typing them.
 
-20. Minimize the PC1 window and switch to the Hyper-V host computer. Open an elevated Windows PowerShell ISE window on the Hyper-V host (right-click Windows PowerShell and then click Run ISE as Administrator) and type the following commands in the (upper) script editor pane: 
+19. Minimize the PC1 window and switch to the Hyper-V host computer. Open an elevated Windows PowerShell ISE window on the Hyper-V host (right-click Windows PowerShell and then click **Run ISE as Administrator**) and type the following commands in the (upper) script editor pane: 
 
     <pre style="overflow-y: visible">
     (Get-WmiObject Win32_ComputerSystem).UnjoinDomainOrWorkgroup($null,$null,0)
@@ -811,8 +809,8 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     ![ISE](images/ISE.png)
 
-21. Click **File**, click **Save As**, and save the commands as **c:\VHD\pc1.ps1** on the Hyper-V host.
-22. In the (lower) terminal input window, type the following command to copy the script to PC1 using integration services:
+20. Click **File**, click **Save As**, and save the commands as **c:\VHD\pc1.ps1** on the Hyper-V host.
+21. In the (lower) terminal input window, type the following command to copy the script to PC1 using integration services:
 
     <pre style="overflow-y: visible">
     Copy-VMFile "PC1" –SourcePath "C:\VHD\pc1.ps1"  –DestinationPath "C:\pc1.ps1" –CreateFullPath –FileSource Host
@@ -820,27 +818,27 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     >In order for this command to work properly, PC1 must be running the vmicguestinterface (Hyper-V Guest Service Interface) service. If this service is not installed, you can try updating integration services on the VM. This can be done by mounting the Hyper-V Integration Services Setup (vmguest.iso), which is located in C:\Windows\System32 on Windows Server operating systems that are running the Hyper-V role service. Otherwise, just create the file c:\pc1.ps1 on the VM and type the commands into this file manually. Be sure to save the file as a Windows PowerShell script file with the .ps1 extension and not as a text (.txt) file.
 
-23. On PC1, type the following commands at an elevated Windows PowerShell prompt:
+22. On PC1, type the following commands at an elevated Windows PowerShell prompt:
 
     <pre style="overflow-y: visible">
     Get-Content c:\pc1.ps1 | powershell.exe -noprofile - 
     </pre>
 
-    >PC1 is removed from its domain in this step while not connected to the corporate network so as to ensure the computer object in the corporate domain is unaffected. We have not also renamed PC1 to "PC1" in system properties so that it maintains some of its mirrored identity. However, if desired you can also rename the computer.
+    >The commands might take a few moments to complete. If an error is displayed, check that you typed the command correctly, paying close attention to spaces. PC1 is removed from its domain in this step while not connected to the corporate network so as to ensure the computer object in the corporate domain is unaffected. PC1 is also not renamed to "PC1" in system properties so that it maintains some of its mirrored identity. However, if desired you can also rename the computer.
 
-24. The script will take a minute or two to run. After PC1 restarts, sign in to the contoso.com domain using the **Switch User** option, with the **user1** account you created in step 11 of this section.
+23. After PC1 restarts, sign in to the contoso.com domain using the **Switch User** option, with the **user1** account you created in step 11 of this section.
     >The settings that will be used to migrate user data specifically select only accounts that belong to the CONTOSO domain. If you wish to test migration of user data and settings with an account other than the user1 account, you must copy this account's profile to the user1 profile.
-25. Minimize the PC1 window but do not turn it off while the second Windows Server 2012 R2 VM (SRV1) is configured. This verifies that the Hyper-V host has enough resources to run all VMs simultaneously. Next, SRV1 will be started, joined to the contoso.com domain, and configured with RRAS and DNS services. 
-26. On the Hyper-V host computer, at an elevated Windows PowerShell prompt, type the following commands:
+24. Minimize the PC1 window but do not turn it off while the second Windows Server 2012 R2 VM (SRV1) is configured. This verifies that the Hyper-V host has enough resources to run all VMs simultaneously. Next, SRV1 will be started, joined to the contoso.com domain, and configured with RRAS and DNS services. 
+25. On the Hyper-V host computer, at an elevated Windows PowerShell prompt, type the following commands:
 
     <pre style="overflow-y: visible">
     Start-VM SRV1
     vmconnect localhost SRV1
     </pre>
 
-27. Accept the default settings, read license terms and accept them, provide an administrator password of **pass@word1**, and click **Finish**. When you are prompted about finding PCs, devices, and content on the network, click **Yes**.
-28. Sign in to SRV1 using the local administrator account. In the same way that was done on DC1, sign out of SRV1 and then sign in again to enable enhanced session mode. This will enable you to copy and paste Windows PowerShell commands from the Hyper-V host to the VM.
-29. Open an elevated Windows PowerShell prompt on SRV1 and type the following commands:
+26. Accept the default settings, read license terms and accept them, provide an administrator password of **pass@word1**, and click **Finish**. When you are prompted about finding PCs, devices, and content on the network, click **Yes**.
+27. Sign in to SRV1 using the local administrator account. In the same way that was done on DC1, sign out of SRV1 and then sign in again to enable enhanced session mode. This will enable you to copy and paste Windows PowerShell commands from the Hyper-V host to the VM.
+28. Open an elevated Windows PowerShell prompt on SRV1 and type the following commands:
 
     <pre style="overflow-y: visible">
     Rename-Computer SRV1
@@ -849,9 +847,9 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Restart-Computer
     </pre>
 
-30. Wait for the computer to restart, then type or paste the following commands at an elevated Windows PowerShell prompt:
+29. Wait for the computer to restart, sign in again, then type the following commands at an elevated Windows PowerShell prompt:
 
-    <pre style="overflow-y: visible">  
+    <pre style="overflow-y: visible">
     $pass = "pass@word1" | ConvertTo-SecureString -AsPlainText -Force
     $user = "contoso\administrator"
     $cred = New-Object System.Management.Automation.PSCredential($user,$pass)
@@ -859,7 +857,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Restart-Computer
     </pre>
 
-31. Sign in to the contoso.com domain on SRV1 using the domain administrator account (enter contoso\administrator as the user), open an elevated Windows PowerShell prompt, and type the following commands:
+30. Sign in to the contoso.com domain on SRV1 using the domain administrator account (enter contoso\administrator as the user), open an elevated Windows PowerShell prompt, and type the following commands:
 
     <pre style="overflow-y: visible">
     Install-WindowsFeature -Name DNS -IncludeManagementTools
@@ -867,7 +865,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Install-WindowsFeature -Name Routing -IncludeManagementTools
     </pre>
 
-32. Before configuring the routing service that was just installed, verify that network interfaces were added to SRV1 in the right order, resulting in an interface alias of "Ethernet" for the private interface, and an interface alias of "Ethernet 2" for the public interface. Also verify that the external interface has a valid external DHCP IP address lease.
+31. Before configuring the routing service that was just installed, verify that network interfaces were added to SRV1 in the right order, resulting in an interface alias of "Ethernet" for the private interface, and an interface alias of "Ethernet 2" for the public interface. Also verify that the external interface has a valid external DHCP IP address lease.
 
     To view a list of interfaces, associated interface aliases, and IP addresses on SRV1, type the following Windows PowerShell command. Example output of the command is also shown below:
 
@@ -882,7 +880,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     In this example, the poc-internal network interface at 192.168.0.2 is associated with the "Ethernet" interface and the Internet-facing poc-external interface is associated with the "Ethernet 2" interface. If your interfaces are different, you must adjust the commands provided in the next step appropriately to configure routing services.
 
-33. To configure SRV1 with routing capability for the PoC network, type or paste the following commands at an elevated Windows PowerShell prompt on SRV1:
+32. To configure SRV1 with routing capability for the PoC network, type or paste the following commands at an elevated Windows PowerShell prompt on SRV1:
 
     <pre style="overflow-y: visible">
     Install-RemoteAccess -VpnType Vpn
@@ -892,13 +890,13 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     cmd /c netsh routing ip nat add interface name="Internal" mode=PRIVATE
     </pre>
 
-34. The DNS service on SRV1 also needs to resolve hosts in the contoso.com domain. This can be accomplished with a conditional forwarder. Open an elevated Windows PowerShell prompt on SRV1 and type the following command:
+33. The DNS service on SRV1 also needs to resolve hosts in the contoso.com domain. This can be accomplished with a conditional forwarder. Open an elevated Windows PowerShell prompt on SRV1 and type the following command:
 
     <pre style="overflow-y: visible">
     Add-DnsServerConditionalForwarderZone -Name contoso.com -MasterServers 192.168.0.1
     </pre>
 
-35. In most cases, this completes configuration of the PoC network. However, if your corporate network has a firewall that filters queries from local DNS servers, you will also need to configure a server-level DNS forwarder on SRV1 to resolve Internet names. To test whether or not DNS is working without this forwarder, try to reach a name on the Internet from DC1 or PC1, which are only using DNS services on the PoC network. You can test DNS with the ping command, for example:
+34. In most cases, this completes configuration of the PoC network. However, if your corporate network has a firewall that filters queries from local DNS servers, you will also need to configure a server-level DNS forwarder on SRV1 to resolve Internet names. To test whether or not DNS is working without this forwarder, try to reach a name on the Internet from DC1 or PC1, which are only using DNS services on the PoC network. You can test DNS with the ping command, for example:
 
     <pre style="overflow-y: visible">
     ping www.microsoft.com
@@ -912,7 +910,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Add-DnsServerForwarder -IPAddress (Get-DnsClientServerAddress -InterfaceAlias "Ethernet 2").ServerAddresses
     </pre>
 
-36. If DNS and routing are both working correctly, you will see the following on DC1 and PC1:
+35. If DNS and routing are both working correctly, you will see the following on DC1 and PC1 (the IP address might be different, but that is OK):
 
     <pre style="overflow-y: visible">
     PS C:\> ping www.microsoft.com
@@ -929,11 +927,11 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
         Minimum = 1ms, Maximum = 3ms, Average = 2ms
     </pre>
 
-37. Verify that all three VMs can reach each other, and the Internet. See [Appendix A: Verify the configuration](#appendix-b-verify-the-configuration) for more information. 
-38. Lastly, because the client computer has different hardware after copying it to a VM, its Windows activation will be invalidated and you might receive a message that you must activate Windows in 3 days.  To extend this period to 30 days, type the following commands at an elevated Windows PowerShell prompt on PC1:
+36. Verify that all three VMs can reach each other, and the Internet. See [Appendix A: Verify the configuration](#appendix-b-verify-the-configuration) for more information. 
+37. Lastly, because the client computer has different hardware after copying it to a VM, its Windows activation will be invalidated and you might receive a message that you must activate Windows in 3 days.  To extend this period to 30 days, type the following commands at an elevated Windows PowerShell prompt on PC1:
 
     <pre style="overflow-y: visible">
-    slmgr -rearm
+    runas /noprofile /env /user:administrator@contoso.com "cmd slmgr -rearm"
     Restart-Computer
     </pre>
 
