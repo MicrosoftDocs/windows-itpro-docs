@@ -318,7 +318,7 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <tbody>
 <tr class="odd">
 <td align="left">Key-based authentication</td>
-<td align="left">[[Azure AD subscription](https://docs.microsoft.com/azure/active-directory/active-directory-howto-tenant)</td>
+<td align="left">[Azure AD subscription](https://docs.microsoft.com/azure/active-directory/active-directory-howto-tenant)</td>
 <td align="left"><ul>
 <li>[Azure AD subscription](https://docs.microsoft.com/azure/active-directory/active-directory-howto-tenant)</li>
 <li>[Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
