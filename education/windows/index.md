@@ -9,10 +9,10 @@ ms.pagetype: edu
 author: CelesteDG
 ---
 
+![Windows 10 Education and Windows 10 Pro Education](images/windows-10-for-education-banner.png)
+
 # Windows 10 for Education
 <link rel="stylesheet" href="https://az835927.vo.msecnd.net/sites/uwp/Resources/css/custom.css">
-
-[Windows 10 Education and Windows 10 Pro Education](https://www.microsoft.com/en-us/education/products/windows/default.aspx) empowers staff, administrators, teachers, and students to do great things.
 
 ## ![Learn more about Windows](images/education.png) Learn
 

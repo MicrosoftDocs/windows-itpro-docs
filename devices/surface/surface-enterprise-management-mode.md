@@ -101,7 +101,7 @@ These characters are the last two characters of the certificate thumbprint and s
 
 *Figure 6. Enrollment confirmation in SEMM with the SEMM certificate thumbprint*
 
-To enroll a Surface device in SEMM or to apply the UEFI configuration from a configuration package, all you need to do is run the .msi file on the intended Surface device. You can use application deployment or operating system deployment technologies such as [System Center Configuration Manager](https://technet.microsoft.com/library/mt346023) or the [Microsoft Deployment Toolkit](https://technet.microsoft.com/en-us/windows/dn475741). When you enroll a device in SEMM you must be present to confirm the enrollment on the device. User interaction is not required when you apply a configuration to devices that are already enrolled in SEMM.
+To enroll a Surface device in SEMM or to apply the UEFI configuration from a configuration package, all you need to do is run the .msi file on the intended Surface device. You can use application deployment or operating system deployment technologies such as [System Center Configuration Manager](https://technet.microsoft.com/library/mt346023) or the [Microsoft Deployment Toolkit](https://technet.microsoft.com/windows/dn475741). When you enroll a device in SEMM you must be present to confirm the enrollment on the device. User interaction is not required when you apply a configuration to devices that are already enrolled in SEMM.
 
 ### Reset package
 
