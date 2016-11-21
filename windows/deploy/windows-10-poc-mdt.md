@@ -1,6 +1,6 @@
 ---
-title: Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit
-description: Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit 
+title: Step by step: Deploy Windows 10 in a test lab using MDT
+description: Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit (MDT)
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
