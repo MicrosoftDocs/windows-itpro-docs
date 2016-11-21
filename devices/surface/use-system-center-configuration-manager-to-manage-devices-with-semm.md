@@ -22,20 +22,20 @@ For organizations with System Center Configuration Manager, there is an alternat
 
 Before you begin the process outlined in this article, it is expected that you are familiar with the following technologies and tools:
 
-* [Surface UEFI](https://technet.microsoft.com/en-us/itpro/surface/manage-surface-uefi-settings)
-* [Surface Enterprise Management Mode (SEMM)](https://technet.microsoft.com/en-us/itpro/surface/surface-enterprise-management-mode)
-* [PowerShell scripting](https://technet.microsoft.com/en-us/scriptcenter/dd742419)
-* [System Center Configuration Manager application deployment](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/deploy-applications)
+* [Surface UEFI](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings)
+* [Surface Enterprise Management Mode (SEMM)](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode)
+* [PowerShell scripting](https://technet.microsoft.com/scriptcenter/dd742419)
+* [System Center Configuration Manager application deployment](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications)
 * Certificate management
 
 >[!Note]
->You will also need access to the certificate that you intend to use to secure SEMM. For details about the requirements for this certificate, see [Surface Enterprise Management Mode certificate requirements](https://technet.microsoft.com/en-us/itpro/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements).
+>You will also need access to the certificate that you intend to use to secure SEMM. For details about the requirements for this certificate, see [Surface Enterprise Management Mode certificate requirements](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements).
 
 >It is very important that this certificate be kept in a safe location and properly backed up. If this certificate becomes lost or unusable, it is not possible to reset Surface UEFI, change managed Surface UEFI settings, or remove SEMM from an enrolled Surface device.
 
 #### Download Microsoft Surface UEFI Manager
 
-Management of SEMM with Configuration Manager requires the installation of Microsoft Surface UEFI Manager on each client Surface device. You can download Microsoft Surface UEFI Manager (SurfaceUEFIManager.msi) from the [Surface Tools for IT](https://www.microsoft.com/en-us/download/details.aspx?id=46703) page on the Microsoft Download Center.
+Management of SEMM with Configuration Manager requires the installation of Microsoft Surface UEFI Manager on each client Surface device. You can download Microsoft Surface UEFI Manager (SurfaceUEFIManager.msi) from the [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) page on the Microsoft Download Center.
 
 #### Download SEMM scripts for Configuration Manager
 

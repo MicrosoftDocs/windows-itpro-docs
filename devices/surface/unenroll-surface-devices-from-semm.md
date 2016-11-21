@@ -15,7 +15,7 @@ When a Surface device is enrolled in Surface Enterprise Management Mode (SEMM), 
 
 >**Warning:**&nbsp;&nbsp;To unenroll a device from SEMM and restore user control of Surface UEFI settings, you must have the SEMM certificate that was used to enroll the device in SEMM. If this certificate becomes lost or corrupted, it is not possible to unenroll from SEMM. Back up and protect your SEMM certificate accordingly.
 
-For more information about SEMM, see [Microsoft Surface Enterprise Management Mode](https://technet.microsoft.com/en-us/itpro/surface/surface-enterprise-management-mode).
+For more information about SEMM, see [Microsoft Surface Enterprise Management Mode](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode).
 
 ## Unenroll a Surface device from SEMM with a Surface UEFI reset package
 
