@@ -1,5 +1,5 @@
 ---
-title: Deploy Windows 10 in a test lab (Windows 10)
+title: Configure a test lab to deploy Windows 10
 description: Concepts and procedures for deploying Windows 10 in a proof of concept lab environment.
 ms.prod: w10
 ms.mktglfcycl: deploy
