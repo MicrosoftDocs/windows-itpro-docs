@@ -45,7 +45,7 @@ The TPM has several Group Policy settings that can be used to manage how it is u
 
 ## <a href="" id="bkmk-new"></a>New and changed functionality
 
-For more info on new and changed functionality for Trusted Platform Module in Windows 10, see [What's new in Trusted Platform Module?](../whats-new/trusted-platform-module.md).
+For more info on new and changed functionality for Trusted Platform Module in Windows 10, see [What's new in Trusted Platform Module?](../whats-new/whats-new-windows-10-version-1507-and-1511.md#trusted-platform-module).
 
 ## <a href="" id="bkmk-dha"></a>Device health attestation
 
