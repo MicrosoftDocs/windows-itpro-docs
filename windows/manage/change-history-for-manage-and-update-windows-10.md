@@ -16,6 +16,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 | New or changed topic | Description |
 | --- | --- |
+| [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) | Added guidance for switching devices between servicing branches |
 | [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) | Added Windows 10 IoT Mobile |
 
 ## October 2016
