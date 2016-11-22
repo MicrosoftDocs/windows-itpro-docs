@@ -56,11 +56,13 @@ This guide provides instructions to install and configure the Microsoft Deployme
     ```
 2. On SRV1, verify that the Windows Enterprise installation DVD is mounted as drive letter D.
 
-3. The Windows 10 Enterprise installation files will be used to create a deployment share on SRV1 using the MDT deployment workbench. To open the deployment workbench, click **Start**, type **deployment**, and then click **Deployment Workbench**. Note: To enable quick access to the application, right-click **Deployment Workbench** on the taskbar and then click **Pin this program to the taskbar**.
+3. The Windows 10 Enterprise installation files will be used to create a deployment share on SRV1 using the MDT deployment workbench. To open the deployment workbench, click **Start**, type **deployment**, and then click **Deployment Workbench**.
 
-4. In the Deployment Workbench console, right-click **Deployment Shares** and select **New Deployment Share**.
+4. To enable quick access to the application, right-click **Deployment Workbench** on the taskbar and then click **Pin this program to the taskbar**.
 
-5. Use the following settings for the New Deployment Share Wizard:
+5. In the Deployment Workbench console, right-click **Deployment Shares** and select **New Deployment Share**.
+
+6. Use the following settings for the New Deployment Share Wizard:
     - Deployment share path: **C:\MDTBuildLab**<BR>
     - Share name: **MDTBuildLab$**<BR>
     - Deployment share description: **MDT build lab**<BR>
@@ -70,13 +72,13 @@ This guide provides instructions to install and configure the Microsoft Deployme
     - Confirmation: click **Finish**
 
 
-6. Expand the **Deployment Shares** node, and then expand **MDT build lab**.
+7. Expand the **Deployment Shares** node, and then expand **MDT build lab**.
 
-7. Right-click the **Operating Systems** node, and then click **New Folder**. Name the new folder **Windows 10**. Complete the wizard using default values and click **Finish**.
+8. Right-click the **Operating Systems** node, and then click **New Folder**. Name the new folder **Windows 10**. Complete the wizard using default values and click **Finish**.
 
-7. Right-click the **Windows 10** folder created in the previous step, and then click **Import Operating System**.
+9. Right-click the **Windows 10** folder created in the previous step, and then click **Import Operating System**.
 
-8. Use the following settings for the Import Operating System Wizard: 
+10. Use the following settings for the Import Operating System Wizard: 
     - OS Type: **Full set of source files**<BR>
     - Source: **D:\\** <BR>
     - Destination: **W10Ent_x64**<BR>
@@ -85,9 +87,9 @@ This guide provides instructions to install and configure the Microsoft Deployme
     - Confirmation: click **Finish**
 
 
-9. For purposes of this test lab, we will not add applications (such as Microsoft Office) to the deployment share. For information about adding applications, see the [Add applications](https://technet.microsoft.com/en-us/itpro/windows/deploy/create-a-windows-10-reference-image#sec03) section of the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic in the TechNet library.
+>For purposes of this test lab, we will not add applications (ex: Microsoft Office) to the deployment share. For information about adding applications, see the [Add applications](https://technet.microsoft.com/en-us/itpro/windows/deploy/create-a-windows-10-reference-image#sec03) section of the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic in the TechNet library.
 
-10. The next step is to create a task sequence to reference the operating system that was imported. To create a task sequence, right-click the **Task Sequences** node and then click **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
+11. The next step is to create a task sequence to reference the operating system that was imported. To create a task sequence, right-click the **Task Sequences** node and then click **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
     - Task sequence ID: **REFW10X64-001**<BR>
     - Task sequence name: **Windows 10 Enterprise x64 Default Image** <BR>
     - Task sequence comments: **Reference Build**<BR>
@@ -101,24 +103,25 @@ This guide provides instructions to install and configure the Microsoft Deployme
     - Summary: click **Next**
     - Confirmation: click **Finish**
 
-11. Edit the task sequence to add the Microsoft NET Framework 3.5, which is required by many applications. To edit the task sequence, double-click **Windows 10 Enterprise x64 Default Image** that was created in the previous step.
 
-12. Click the **Task Sequence** tab. Under **State Restore** click **Tatto** to highlight it, then click **Add** and choose **New Group**.
+12. Edit the task sequence to add the Microsoft NET Framework 3.5, which is required by many applications. To edit the task sequence, double-click **Windows 10 Enterprise x64 Default Image** that was created in the previous step.
 
-13. On the Properties tab of the group that was created in the previous step, change the Name from New Group to **Custom Tasks (Pre-Windows Update)** and then click **Apply**.
+13. Click the **Task Sequence** tab. Under **State Restore** click **Tatto** to highlight it, then click **Add** and choose **New Group**.
 
-14. Click the **Custom Tasks (Pre-Windows Update)** group again, click **Add**, point to **Roles**, and then click **Install Roles and Features**. 
+14. On the Properties tab of the group that was created in the previous step, change the Name from New Group to **Custom Tasks (Pre-Windows Update)** and then click **Apply**.
 
-15. Under **Select the roles and features that should be installed**, select **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** and then click **Apply**.
+15. Click the **Custom Tasks (Pre-Windows Update)** group again, click **Add**, point to **Roles**, and then click **Install Roles and Features**.
 
-16. Enable Windows Update in the task sequence by clicking the **Windows Update (Post-Application Installation)** step, clicking the **Options** tab, and clearing the **Disable this step** checkbox.
+16. Under **Select the roles and features that should be installed**, select **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** and then click **Apply**.
+
+17. Enable Windows Update in the task sequence by clicking the **Windows Update (Post-Application Installation)** step, clicking the **Options** tab, and clearing the **Disable this step** checkbox.
     >Note: Since we are not installing applications in this test lab, there is no need to enable the Windows Update Pre-Application Installation step. However, you should enable this step if you are also installing applications.
 
-17. Click **OK** to complete editing the task sequence.
+18. Click **OK** to complete editing the task sequence.
 
-18. The next step is to configure the MDT deployment share rules. To configure rules in the Deployment Workbench, right-click MDT build lab (C:\MDTBuildLab) and click **Properties**, and then click the **Rules** tab.
+19. The next step is to configure the MDT deployment share rules. To configure rules in the Deployment Workbench, right-click MDT build lab (C:\MDTBuildLab) and click **Properties**, and then click the **Rules** tab.
 
-19. Replace the default rules with the following text:
+20. Replace the default rules with the following text:
 
     ```
     [Settings]
@@ -152,7 +155,7 @@ This guide provides instructions to install and configure the Microsoft Deployme
     SkipFinalSummary=YES
     ```
 
-20. Click **Apply** and then click **Edit Bootstrap.ini**. Replace the contents of the Bootstrap.ini file with the following text, and save the file:
+21. Click **Apply** and then click **Edit Bootstrap.ini**. Replace the contents of the Bootstrap.ini file with the following text, and save the file:
 
     ```
     [Settings]
@@ -166,17 +169,17 @@ This guide provides instructions to install and configure the Microsoft Deployme
     SkipBDDWelcome=YES
     ```
 
-21. Click **OK** to complete the configuration of the deployment share.
+22. Click **OK** to complete the configuration of the deployment share.
 
-22. Right-click **MDT build lab (C:\MDTBuildLab)** and then click **Update Deployment Share**.
+23. Right-click **MDT build lab (C:\MDTBuildLab)** and then click **Update Deployment Share**.
 
-23. Accept all default values in the Update Deployment Share Wizard by clicking **Next**.  The update process will take 5 to 10 minutes. When it has completed, click **Finish**.
+24. Accept all default values in the Update Deployment Share Wizard by clicking **Next**.  The update process will take 5 to 10 minutes. When it has completed, click **Finish**.
 
-24. Copy **c:\MDTBuildLab\Boot\LiteTouchPE_x86.iso** on SRV1 to the **c:\VHD** directory on the Hyper-V host computer. Note that in MDT, the x86 boot image can deploy both x86 and x64 operating systems, except on computers based on Unified Extensible Firmware Interface (UEFI).
+25. Copy **c:\MDTBuildLab\Boot\LiteTouchPE_x86.iso** on SRV1 to the **c:\VHD** directory on the Hyper-V host computer. Note that in MDT, the x86 boot image can deploy both x86 and x64 operating systems, except on computers based on Unified Extensible Firmware Interface (UEFI).
 
 >Hint: Top copy the file, right-click the **LiteTouchPE_x86.iso** file and click **Copy** on SRV1, then open the **c:\VHD** folder on the Hyper-V host, right-click inside the folder and click **Paste**.
 
-25. Open a Windows PowerShell prompt on the Hyper-V host computer and type the following commands:
+26. Open a Windows PowerShell prompt on the Hyper-V host computer and type the following commands:
 
     ```
     New-VM –Name REFW10X64-001 -SwitchName poc-internal -NewVHDPath "c:\VHD\REFW10X64-001.vhdx" -NewVHDSizeBytes 60GB 
@@ -185,9 +188,9 @@ This guide provides instructions to install and configure the Microsoft Deployme
     Start-VM REFW10X64-001
     vmconnect localhost REFW10X64-001
     ```
-26. In the Windows Deployment Wizard, select **Windows 10 Enterprise x64 Default Image**, and then click **Next**.
+27. In the Windows Deployment Wizard, select **Windows 10 Enterprise x64 Default Image**, and then click **Next**.
 
-27. Accept the default values on the Capture Image page, and click **Next**. Operating system installation will complete after 5 to 10 minutes and then the VM will reboot automatically. Allow the system to boot normally (do not press a key). The process is fully automated.
+28. Accept the default values on the Capture Image page, and click **Next**. Operating system installation will complete after 5 to 10 minutes and then the VM will reboot automatically. Allow the system to boot normally (do not press a key). The process is fully automated.
 
     Additional system restarts will occur to complete updating and preparing the operating system. Setup will complete the following procedures:
 
@@ -201,7 +204,7 @@ This guide provides instructions to install and configure the Microsoft Deployme
 
     This step requires from 30 minutes to 2 hours, depending on the speed of the Hyper-V host. After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep. The image is located in the C:\MDTBuildLab\Captures folder on your deployment server. The file name is **REFW10X64-001.wim**.
 
- ## Deploy a Windows 10 image using MDT
+## Deploy a Windows 10 image using MDT
 
 This procedure will demonstrate how to deploy the reference image to the PoC environment using MDT.
 
