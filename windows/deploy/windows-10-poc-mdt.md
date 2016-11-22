@@ -14,7 +14,7 @@ author: greg-lindsay
 
 -   Windows 10
 
-**Important**: This guide leverages the proof of concept (PoC) environment configured using procedures in [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md). Please complete all steps in the prerequisite guide before attempting the procedures in this guide.
+**Important**: This guide leverages the proof of concept (PoC) environment configured using procedures in [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md). Please complete all steps in the prerequisite guide before starting this guide.
 
 The PoC environment is a virtual network running on Hyper-V with three virtual machines:
 - **DC1**: A contoso.com domain controller, DNS server, and DHCP server.
@@ -49,14 +49,14 @@ This guide provides instructions to install and configure the Microsoft Deployme
 
 ## Create a deployment share and reference image
 
-1. In [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md) the Windows 10 Enterprise .iso file was saved to the c:\VHD directory as **c:\VHD\w10-enterprise.iso**. The first step in creating a deployment share is to mount this file on SRV1.  To mount the Windows 10 Enterprise DVD on SRV1, open an elevated Windows PowerShell prompt on the Hyper-V host computer and type the following command:
+1. In [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md), the Windows 10 Enterprise .iso file was saved to the c:\VHD directory as **c:\VHD\w10-enterprise.iso**. The first step in creating a deployment share is to mount this file on SRV1.  To mount the Windows 10 Enterprise DVD on SRV1, open an elevated Windows PowerShell prompt on the Hyper-V host computer and type the following command:
 
     ```
     Set-VMDvdDrive -VMName SRV1 -Path c:\VHD\w10-enterprise.iso
     ```
-2. Connect to SRV1 and verify that the Windows Enterprise installation DVD is mounted as drive letter D.
+2. On SRV1, verify that the Windows Enterprise installation DVD is mounted as drive letter D.
 
-3. The Windows 10 Enterprise installation files will be used to create a deployment share on SRV1 using the MDT deployment workbench. To open the deployment workbench, click **Start**, type **deployment**, and then click **Deployment Workbench**.
+3. The Windows 10 Enterprise installation files will be used to create a deployment share on SRV1 using the MDT deployment workbench. To open the deployment workbench, click **Start**, type **deployment**, and then click **Deployment Workbench**. Note: To enable quick access to the application, right-click **Deployment Workbench** on the taskbar and then click **Pin this program to the taskbar**.
 
 4. In the Deployment Workbench console, right-click **Deployment Shares** and select **New Deployment Share**.
 
@@ -69,18 +69,21 @@ This guide provides instructions to install and configure the Microsoft Deployme
     - Progress: settings will be applied<BR>
     - Confirmation: click **Finish**
 
-6. Expand the Deployment Shares node, and then expand MDT build lab.
 
-7. Right-click the Operating Systems node, and then click New Folder. Name the new folder **Windows 10**. Complete the wizard using default values and click **Finish**.
+6. Expand the **Deployment Shares** node, and then expand **MDT build lab**.
 
-7. Right-click the Windows 10 folder created in the previous step, and then click **Import Operating System**.
+7. Right-click the **Operating Systems** node, and then click **New Folder**. Name the new folder **Windows 10**. Complete the wizard using default values and click **Finish**.
+
+7. Right-click the **Windows 10** folder created in the previous step, and then click **Import Operating System**.
 
 8. Use the following settings for the Import Operating System Wizard: 
     - OS Type: **Full set of source files**<BR>
     - Source: **D:\\** <BR>
     - Destination: **W10Ent_x64**<BR>
     - Summary: click **Next**
+    - Progress: wait for files to be copied
     - Confirmation: click **Finish**
+
 
 9. For purposes of this test lab, we will not add applications (such as Microsoft Office) to the deployment share. For information about adding applications, see the [Add applications](https://technet.microsoft.com/en-us/itpro/windows/deploy/create-a-windows-10-reference-image#sec03) section of the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic in the TechNet library.
 
