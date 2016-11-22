@@ -191,10 +191,10 @@ This guide provides instructions to install and configure the Microsoft Deployme
     Start-VM REFW10X64-001
     vmconnect localhost REFW10X64-001
     ```
-    
+
 27. In the Windows Deployment Wizard, select **Windows 10 Enterprise x64 Default Image**, and then click **Next**.
 
-28. Accept the default values on the Capture Image page, and click **Next**. Operating system installation will complete after 5 to 10 minutes and then the VM will reboot automatically. Allow the system to boot normally (do not press a key). The process is fully automated.
+28. Accept the default values on the Capture Image page, and click **Next**. Operating system installation will complete after 5 to 10 minutes, and then the VM will reboot automatically. Allow the system to boot normally (do not press a key). The process is fully automated.
 
     Additional system restarts will occur to complete updating and preparing the operating system. Setup will complete the following procedures:
 
@@ -205,6 +205,7 @@ This guide provides instructions to install and configure the Microsoft Deployme
     - Run System Preparation (Sysprep) and reboot into Windows PE.
     - Capture the installation to a Windows Imaging (WIM) file.
     - Turn off the virtual machine.
+
 
     This step requires from 30 minutes to 2 hours, depending on the speed of the Hyper-V host. After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep. The image is located in the C:\MDTBuildLab\Captures folder on your deployment server. The file name is **REFW10X64-001.wim**.
 
