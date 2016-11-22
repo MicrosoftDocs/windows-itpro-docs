@@ -19,7 +19,7 @@ New releases of the Surface Hub operating system are published through Windows U
 
 You can also configure Surface Hub to receive updates from both Windows Update for Business and WSUS. See [Integrate Windows Update for Business with Windows Server Update Services](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-integrate-wufb#integrate-windows-update-for-business-with-windows-server-update-services) for details.
 
-| Capabilities | Windows Update for Business | Windows server Update Services (WSUS) |
+| Capabilities | Windows Update for Business | Windows Server Update Services (WSUS) |
 | ------------ | --------------------------- | ------------------------------------- |
 | Receive updates directly from Microsoft's Windows Update service, with no additional infrastructure required.  | Yes  | No  |
 | Defer updates to provide additional time for testing and evaluation. | Yes  | Yes  |
