@@ -71,7 +71,7 @@ Use this procedure if you use Exchange on-prem.
     Once you have a compatible policy, then you will need to apply the policy to the device account.
 
     ```ps1
-    Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy
+    Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy.id
     ```
 
 6.  Set Exchange properties.
@@ -127,7 +127,7 @@ Use this procedure if you use Exchange on-prem.
     -   To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
         ```ps1
-        Enable-CsMeetingRoom -Identity $rm -RegistrarPool  
+        Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool  
         'sippoolbl20a04.infra.lync.com&' -SipAddressType EmailAddress
         ```
         
@@ -203,7 +203,7 @@ Use this procedure if you use Exchange online.
 
     ```ps1
     Set-Mailbox $acctUpn -Type Regular
-    Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy
+    Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy.id
     Set-Mailbox 'HUB01@contoso.com' -Type Room
     Set-Mailbox 'HUB01@contoso.com' -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
     ```
@@ -285,7 +285,7 @@ Use this procedure if you use Exchange online.
      To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
         ```ps1
-        Enable-CsMeetingRoom -Identity $rm -RegistrarPool  
+        Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool  
         'sippoolbl20a04.infra.lync.com' -SipAddressType EmailAddress
         ```
 
