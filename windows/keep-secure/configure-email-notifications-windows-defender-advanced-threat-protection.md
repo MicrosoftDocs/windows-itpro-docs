@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: jcaparas
+author: mjcaparas
 localizationpriority: high
 ---
 
