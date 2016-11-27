@@ -1,19 +1,17 @@
 ---
-title: Configure Email Notifications
-description: Use Group Policy to deploy the configuration package on endpoints so that they are onboarded to the service.
-keywords: configure endpoints using group policy, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints, group policy
+title: Configure email notifications
+description: Send email notifications to specified recipients to receive new alerts.
+keywords: email notifications, alert notifications, alerts, notification
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: eavena
+author: jcaparas
 localizationpriority: high
 ---
 
 # Configure email notifications
-
-## second
 
 **Applies to:**
 
@@ -23,39 +21,41 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Windows Defender ATP supports email notifications to be sent to recipients list on every new alert in the portal. 
-Email notifications are equivalent to ‘New Alerts’ queue, so that every new alert added to the queue will be sent over email to recipients according to the chosen severities.
-Every email includes basic information on the new alert and a link to the portal specific alert’s page for further investigation.
+You can configure Windows Defender ATP to send email notifications to specified recipients for new alerts. This feature enables you to identify a group of individuals who will immediately be informed and can act on alerts based on their severity.
 
-To configure email notifications open email notifications preferences page on the right pane:
-Preferences Setup  Email Notifications 
-In email notifications preferences page, you can define the following:
-    
-    1.	Alert Severity - severity of alerts to be notified on.  By default, High and Medium alerts will be sent.
+You can set the severity level that triggers notifications for specific recipients. When you turn enable the email notifications feature, it’s set to high and medium alerts by default.
 
-    2.	Email recipients - define the email recipients within your organization to be notified on new alerts.
-    
-    3.	Click ‘Save Preferences’.
-Note: to check that email recipients are able to receive the emails click ‘Send a test Email’.
-Emails are sent from <no-reply>@WDATP.microsoft.com
+You can also add or remove recipients of the email notification. New recipients get notified about alerts encountered after they are added. For more information about alerts, see [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md).
 
-Troubleshooting: consider adding info in case emails are not received (maybe due to rules blocking the domain, emails moved to junk/….)
+The email notification includes basic information about the alert and a link to the portal where you can do further investigation.
 
+## Set up email notifications for alerts
+The email notifications feature is turned off by default. Turn it on to start receiving email notifications.
 
-1.
+1. On the navigation pane, select **Preferences Setup** > **Email Notifications**.
+2. Toggle the setting between **On** and **Off**.
+3.	Select the alert severity level that you’d like your recipients to receive:
+  - **High (high alerts only)** – Select this level if you’d like to limit notifications to threats often associated with advanced persistent threats (APT).
+  - **Medium** – Select this level to receive notifications that were flagged as medium severity.
+  - **Low** - Select this level to receive notifications that were flagged as low severity.
+4.	In **Email recipients to notify on new alerts**, type the email address then select the + sign.
+5.	Click **Save preferences** when you’ve completed adding all the recipients.
 
-2. 
+Check that email recipients are able to receive the email notifications by selecting **Send test email**.
 
-3. 
+## Delete email recipients
 
-- one
-- two
+1. Select the trash bin icon beside the email address you’d like to remove.
+2.  Click **Save preferences**.
 
-><!NOTE>
-> Not a note 
+## Troubleshoot email notifications for alerts
+This section lists various issues that you may encounter when using email notifications for alerts.
 
-gfghf
---- | ---|
+**Intended recipients do not receive the email alerts**
 
+**Problem:** Intended recipients report they are not getting the notifications, even if you can successfully send the test email from the Windows ATP portal.
 
-[Hyperlink](actual link)
+**Solution:** Make sure that the notifications are not blocked by email filters:
+1.	Check that the Windows Defender ATP email notifications are not sent to the Junk Email folder. Mark them as Not junk.
+2.	Check that your email security product is not blocking the email notifications from Windows Defender ATP.
+3.	Check your Outlook rules for any rule that are catching and moving your Windows Defender ATP email notifications.
