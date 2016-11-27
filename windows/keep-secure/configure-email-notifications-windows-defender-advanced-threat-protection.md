@@ -23,7 +23,7 @@ localizationpriority: high
 
 You can configure Windows Defender ATP to send email notifications to specified recipients for new alerts. This feature enables you to identify a group of individuals who will immediately be informed and can act on alerts based on their severity.
 
-You can set the severity level that triggers notifications for specific recipients. When you turn enable the email notifications feature, it’s set to high and medium alerts by default.
+You can set the alert severity levels that trigger notifications. When you turn enable the email notifications feature, it’s set to high and medium alerts by default.
 
 You can also add or remove recipients of the email notification. New recipients get notified about alerts encountered after they are added. For more information about alerts, see [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md).
 
@@ -35,9 +35,9 @@ The email notifications feature is turned off by default. Turn it on to start re
 1. On the navigation pane, select **Preferences Setup** > **Email Notifications**.
 2. Toggle the setting between **On** and **Off**.
 3.	Select the alert severity level that you’d like your recipients to receive:
-  - **High (high alerts only)** – Select this level if you’d like to limit notifications to threats often associated with advanced persistent threats (APT).
-  - **Medium** – Select this level to receive notifications that were flagged as medium severity.
-  - **Low** - Select this level to receive notifications that were flagged as low severity.
+  - **High** – Select this level if you’d like to limit notifications to threats often associated with advanced persistent threats (APT).
+  - **Medium** – Select this level to send notifications for medium-severity alerts.
+  - **Low** - Select this level to sebd notifications for low-severity alerts.
 4.	In **Email recipients to notify on new alerts**, type the email address then select the + sign.
 5.	Click **Save preferences** when you’ve completed adding all the recipients.
 
@@ -58,4 +58,4 @@ This section lists various issues that you may encounter when using email notifi
 **Solution:** Make sure that the notifications are not blocked by email filters:
 1.	Check that the Windows Defender ATP email notifications are not sent to the Junk Email folder. Mark them as Not junk.
 2.	Check that your email security product is not blocking the email notifications from Windows Defender ATP.
-3.	Check your Outlook rules for any rule that are catching and moving your Windows Defender ATP email notifications.
+3.	Check your email application rules that might be catching and moving your Windows Defender ATP email notifications.
