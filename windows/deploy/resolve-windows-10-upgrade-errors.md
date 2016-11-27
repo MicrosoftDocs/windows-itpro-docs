@@ -16,13 +16,11 @@ localizationpriority: high
 **Applies to**
 -   Windows 10
 
-This topic provides a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade.
-
-If you are not an IT administrator, you can try the [quick fixes](#quick-fixes) listed in this topic. If the quick fixes do not resolve your issue, see [Get help with Windows 10 upgrade and installation errors](https://support.microsoft.com/en-us/help/10587/windows-10-get-help-with-upgrade-installation-errors) for more information.
+>**Important**: This topic contains technical instructions for IT administrators. If you are not an IT administrator, see [Get help with Windows 10 upgrade and installation errors](https://support.microsoft.com/en-us/help/10587/windows-10-get-help-with-upgrade-installation-errors) for more information.
 
 ## In this topic
 
-The following sections and procedures are provided in this guide:
+This topic contains a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade. The following sections and procedures are provided in this guide:
 
 - [The Windows 10 upgrade process](#the-windows-10-upgrade-process): An explanation of phases used during the upgrade process.<BR>
 - [Quick fixes](#quick-fixes): Steps you can take to eliminate many Windows upgrade errors.<BR>
@@ -33,7 +31,7 @@ The following sections and procedures are provided in this guide:
     - [Log entry structure](#log-entry-structure): The format of a log entry is described.
     - [Analyze log files](#analyze-log-files): General procedures for log file analysis, and an example.
 - [Resolution procedures](#resolution-procedures): Causes and mitigation procedures associated with specific error codes.
-    - [0xC1900101](#0xC1900101): Information about the 0xC1900101 result code.
+    - [0xC1900101](#0xc1900101): Information about the 0xC1900101 result code.
     - [0x800xxxxx](#0x800xxxxx): Information about result codes that start with 0x800.
     - [Other result codes](#other-result-codes): Additional causes and mitigation procedures are provided for some result codes.
     - [Other error codes](#other-error-codes): Additional causes and mitigation procedures are provided for some error codes.
@@ -866,7 +864,7 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 <TD>[Analyze log files](#analyze-log-files) to determine the issue.</TD></TR>
 <TR><TD>0xC1900101 - 0x4001E
 <TD>Installation failed in the SECOND_BOOT phase with an error during PRE_OOBE operation.
-<TD>This is a generic error that occurs during the OOBE phase of setup. See the [0xC1900101](#0xC1900101) section of this guide and review general troubleshooting procedures described in that section.</TD></TR>
+<TD>This is a generic error that occurs during the OOBE phase of setup. See the [0xC1900101](#0xc1900101) section of this guide and review general troubleshooting procedures described in that section.</TD></TR>
 <TR><TD>0x80070005 - 0x4000D
 <TD>The installation failed in the SECOND_BOOT phase with an error in during MIGRATE_DATA operation. This error indicates that access was denied while attempting to migrate data.
 <TD>[Analyze log files](#analyze-log-files) to determine the data point that is reporting access denied.</TD></TR>

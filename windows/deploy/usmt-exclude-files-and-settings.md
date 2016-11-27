@@ -32,7 +32,7 @@ If you specify an &lt;exclude&gt; rule, always specify a corresponding &lt;inclu
 
 -   [Example 1: How to migrate all files from C:\\ except .mp3 files](#example-1-how-to-migrate-all-files-from-c-except-mp3-files)
 
--   [Example 2: How to migrate all files located in C:\\Data except files in C:\\Data\\tmp](#example-2-how-to-migrate-all-files-located-in-c-data-except-files-in-c-data-tmp)
+-   [Example 2: How to migrate all files located in C:\\Data except files in C:\\Data\\tmp](#example-2-how-to-migrate-all-files-located-in-cdata-except-files-in-cdatatmp)
 
 -   [Example 3: How to exclude the files in a folder but include all subfolders](#example-3-how-to-exclude-the-files-in-a-folder-but-include-all-subfolders)
 
@@ -246,7 +246,7 @@ The following .xml file unconditionally excludes the system folders of `C:\Windo
    </component>
 </migration>
 ```
-## Create a Config.xml File
+## Create a Config XML File
 You can create and modify a Config.xml file if you want to exclude components from the migration. Excluding components using this file is easier than modifying the migration .xml files because you do not need to be familiar with the migration rules and syntax. Config.xml is an optional file that you can create using the **/genconfig** command-line option with the ScanState tool. For example, you can use the Config.xml file to exclude the settings for one of the default applications. In addition, creating and modifying this file is the only way to exclude the operating-system settings that are migrated to computers running Windows.
 
 -   **To exclude the settings for a default application:** Specify `migrate="no"` for the application under the &lt;Applications&gt; section of the Config.xml file.
