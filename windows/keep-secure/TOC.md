@@ -744,6 +744,7 @@
 ##### [Configure an Azure Active Directory application for SIEM integration](configure-aad-windows-defender-advanced-threat-protection.md)
 ##### [Configure Splunk to consume Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
 ##### [Configure HP ArcSight to consume Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
+#### [Configure email notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot Windows Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md)
 #### [Review events and errors on endpoints with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
 #### [Windows Defender compatibility](defender-compatibility-windows-defender-advanced-threat-protection.md)
