@@ -20,6 +20,8 @@ This topic lists new and updated topics in the [Surface Hub Admin Guide]( surfac
 | --- | --- |
 | [Differences between Surface Hub and Windows 10 Enterprise](differences-between-surface-hub-and-windows-10-enterprise.md) | New |
 | [Connect other devices and display with Surface Hub](connect-and-display-with-surface-hub.md) | Added information for Video Out and a table to help select a display method. |
+| [Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md) | Added instructions for creating accounts for Surface Hub in a Skype for Business hybrid environment. |
+
 
 ## RELEASE: Windows Anniversary Update for Surface Hub (Windows 10, version 1607)
 The topics in this library have been updated for Windows 10, version 1607 (also known as Windows Anniversary Update for Surface Hub). These topics had significant updates for this release:
