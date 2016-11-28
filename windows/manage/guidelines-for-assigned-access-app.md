@@ -54,8 +54,8 @@ If you use a web browser as your assigned access app, consider the following tip
 2.	Press **Enter** or click the gpedit icon to launch the group policy editor.
 3.	In the group policy editor, navigate to **User Configuration** > **Administrative Templates** > **Start Menu and Taskbar**.
 4.	Select **Remove Run menu from Start Menu**, select **Disabled**, and click **Apply**. Disabling this policy prevents users from entering the following into the Internet Explorer Address Bar:
-   - A UNC path (\\<server>\<share>)
-   - A local drive (C:\)
+   - A UNC path (\\\\*server*\\\\*share*)
+   - A local drive (C:\\)
    - A local folder (\temp)
 
 
