@@ -59,6 +59,7 @@ This section lists various issues that you may encounter when using email notifi
 **Problem:** Intended recipients report they are not getting the notifications.
 
 **Solution:** Make sure that the notifications are not blocked by email filters:
+
 1.	Check that the Windows Defender ATP email notifications are not sent to the Junk Email folder. Mark them as Not junk.
 2.	Check that your email security product is not blocking the email notifications from Windows Defender ATP.
 3.	Check your email application rules that might be catching and moving your Windows Defender ATP email notifications.
