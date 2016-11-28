@@ -835,7 +835,7 @@ Apply the Speech/AllowSpeechModelUpdate MDM policy from the [Policy CSP](https:/
 
    -or-
 
-- Create a REG\_DWORD registry setting called **AllowSpeechModelUpdate** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\Current\\Device\\Speech**, with a value of 0 (zero).
+- Create a REG\_DWORD registry setting called **ModelDownloadAllowed** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Speech_OneCore\\Preferences**, with a value of 0 (zero).
 
 ### <a href="" id="bkmk-priv-accounts"></a>16.7 Account info
 
