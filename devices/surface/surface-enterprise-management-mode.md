@@ -115,7 +115,7 @@ These characters are the last two characters of the certificate thumbprint and s
 
 To enroll a Surface device in SEMM or to apply the UEFI configuration from a configuration package, all you need to do is run the .msi file on the intended Surface device. You can use application deployment or operating system deployment technologies such as [System Center Configuration Manager](https://technet.microsoft.com/library/mt346023) or the [Microsoft Deployment Toolkit](https://technet.microsoft.com/windows/dn475741). When you enroll a device in SEMM you must be present to confirm the enrollment on the device. User interaction is not required when you apply a configuration to devices that are already enrolled in SEMM.
 
-For a step-by-step walkthrough of enrolling a Surface device in SEMM or applying a Surface UEFI configuration with SEMM, see [Enroll and configure Surface devices with SEMM](https://technet.microsoft.com/en-us/itpro/surface/enroll-and-configure-surface-devices-with-semm).
+For a step-by-step walkthrough of how to enroll a Surface device in SEMM or apply a Surface UEFI configuration with SEMM, see [Enroll and configure Surface devices with SEMM](https://technet.microsoft.com/en-us/itpro/surface/enroll-and-configure-surface-devices-with-semm).
 
 ### Reset package
 
@@ -134,7 +134,7 @@ When you use the process on the **Enterprise Management** page to reset SEMM on 
 >[!NOTE]
 >A Reset Request expires two hours after it is created.
 
-For a detailed step-by-step walkthrough of unenrolling Surface devices from SEMM, see [Unenroll Surface devices from SEMM](https://technet.microsoft.com/en-us/itpro/surface/unenroll-surface-devices-from-semm).
+For a step-by-step walkthrough of how to unenroll Surface devices from SEMM, see [Unenroll Surface devices from SEMM](https://technet.microsoft.com/en-us/itpro/surface/unenroll-surface-devices-from-semm).
 
 ## Surface Enterprise Management Mode certificate requirements
 
