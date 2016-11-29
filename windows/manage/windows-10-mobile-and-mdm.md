@@ -21,11 +21,11 @@ Employees increasingly depend on smartphones to complete daily work tasks, but t
 Windows 10 supports end-to-end device lifecycle management to give companies control over their devices, data, and apps. Devices can easily be incorporated into standard lifecycle practices, from device enrollment, configuration, and application management to maintenance, monitoring, and retirement using a comprehensive mobile device management solution.
 
 **In this article**
--	Deploy
--	Configure
--	Apps
--	Manage
--	Retire
+-	[Deploy](#deploy)
+-	[Configure](#configure)
+-	[Apps](#apps)
+-	[Manage](#manage)
+-	[Retire](#retire)
 
 
 ## Deploy
@@ -73,7 +73,7 @@ The way in which personal and corporate devices are enrolled into an MDM system 
 <td align="left">Organization</td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>Device Innitialization</strong>
+<td align="left"><strong>Device Initialization</strong>
 
 In the Out-of-the-Box Experience (OOBE), the first time the employee starts the device, they are requested to add a cloud identity to the device.</td>
 <td align="left">The primary identity on the device is a personal identity. Personal devices are initiated with a Microsoft Account (MSA), which uses a personal email address. </td>

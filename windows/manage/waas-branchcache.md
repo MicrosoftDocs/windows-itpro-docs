@@ -31,8 +31,6 @@ For detailed information about how Distributed Cache mode and Hosted Cache mode 
 
 Whether you use BranchCache with Configuration Manager or WSUS, each client that uses BranchCache must be configured to do so. You typically make your configurations through Group Policy. For step-by-step instructions on how to use Group Policy to configure BranchCache for Windows clients, see [Client Configuration](https://technet.microsoft.com/library/dd637820%28v=ws.10%29.aspx) in the [BranchCache Early Adopter’s Guide](https://technet.microsoft.com/library/dd637762(v=ws.10).aspx).
 
-Whether you use BranchCache with Configuration Manager or with WSUS, each client that uses BranchCache must be configured to do so. You typically make your configurations through Group Policy. For step-by-step instructions on how to use Group Policy to configure BranchCache for Windows clients, see Client Configuration in the BranchCache Early Adopter’s Guide.
-
 In Windows 10, version 1607, the Windows Update Agent uses Delivery Optimization by default, even when the updates are retrieved from WSUS. When using BranchCache with Windows 10, simply set the Delivery Optimization mode to Bypass to allow clients to use the Background Intelligent Transfer Service (BITS) protocol with BranchCache instead. For instructions on how to use BranchCache in Distributed Cache mode with WSUS, see the section WSUS and Configuration Manager with BranchCache in Distributed Cache mode.
 
 ## Configure servers for BranchCache
@@ -56,7 +54,7 @@ In addition to these steps, there is one requirement for WSUS to be able to use 
 - [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
-- [Manage updates for Windows 10 Mobile Enterprise](waas-mobile-updates.md) 
+- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Manage updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)

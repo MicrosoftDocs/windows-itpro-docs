@@ -31,7 +31,7 @@
       "build_output_subfolder": "devices/hololens",
       "locale": "en-us",
       "version": 0,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -93,6 +93,20 @@
       "type_mapping": {
         "Conceptual": "Content"
       }
+    },
+    {
+      "docset_name": "smb",
+      "build_source_folder": "smb",
+      "build_output_subfolder": "smb",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "op"
     }
   ],
   "notification_subscribers": [
@@ -104,5 +118,6 @@
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/windows-itpro-docs",
   "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
-  "dependent_repositories": []
+  "dependent_repositories": [],
+  "need_generate_pdf_url_template": false
 }
