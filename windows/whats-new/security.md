@@ -188,9 +188,8 @@ Table 1. Windows 10 hardware requirements
 | Windows Hello                                   | R   | N                                   | N                         | N    | N          | N                     |
 | VBS                                             | N   | Y                                   | Y                         | Y    | N          | Y                     |
 | UEFI Secure Boot                                | R   | N                                   | N                         | N    | Y          | N                     |
-| Device health attestation through Measured Boot | Y\* | N                                   | N                         | N    | Y          | Y                     |
+| Device health attestation through Measured Boot | Y   | N                                   | N                         | N    | Y          | Y                     |
  
-\* Requires use of TPM 2.0.
 
 **Note**<br>
 In this table, **R** stands for *recommended*, **Y** means that the hardware component is *required* for that Windows 10 feature, and **N** means that the hardware component is *not used* with that Windows 10 feature.
