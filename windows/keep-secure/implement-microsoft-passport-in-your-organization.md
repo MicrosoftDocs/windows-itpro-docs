@@ -346,7 +346,7 @@ You’ll need this software to set Windows Hello for Business policies in your e
  
 Configuration Manager and MDM provide the ability to manage Windows Hello for Business policy and to deploy and manage certificates protected by Windows Hello for Business.
 
-Azure AD provides the ability to register devices with your enterprise and to provision Windows Hello for Business for organization accounts.
+[Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-passport) provides the ability to register devices with your enterprise and to provision Windows Hello for Business for organization accounts.
 
 [Learn more about enabling Windows Hello for Business in an Azure AD/AD hybrid environment.](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-passport-deployment)
 
