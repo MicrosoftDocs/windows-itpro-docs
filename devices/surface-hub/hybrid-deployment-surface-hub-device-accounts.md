@@ -114,14 +114,15 @@ Next, you enable the device account with [Skype for Business Online](#skype-for-
 
 ### Skype for Business Online
 
-    To enable Skype for Business online, your environment will need to meet the following prerequisites:
-    -   You need to have Lync Online (Plan 2) or higher in your O365 plan. The plan needs to support conferencing capability.
+To enable Skype for Business online, your environment will need to meet the following prerequisites:
+
+-   You need to have Lync Online (Plan 2) or higher in your O365 plan. The plan needs to support conferencing capability.
     
-    -   If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Lync Online (Plan 3).
+-   If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Lync Online (Plan 3).
     
-    -   Your tenant users must have Exchange mailboxes (at least one Exchange mailbox in the tenant is required).
+-   Your tenant users must have Exchange mailboxes (at least one Exchange mailbox in the tenant is required).
     
-    -   Your Surface Hub account does require a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
+-   Your Surface Hub account does require a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
 
 1. Start by creating a remote PowerShell session from a PC to the Skype for Business online environment.
 
@@ -137,7 +138,7 @@ Next, you enable the device account with [Skype for Business Online](#skype-for-
         Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool 'sippoolbl20a04.infra.lync.com' -SipAddressType UserPrincipalName
         ```
         
-        If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
+    If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
 
         ```ps1
         Get-CsOnlineUser -Identity ‘HUB01@contoso.com’| fl *registrarpool*
@@ -146,6 +147,7 @@ Next, you enable the device account with [Skype for Business Online](#skype-for-
 2. Assign Skype for Business license to your Surface Hub account.
 
     Once you've completed the preceding steps to enable your Surface Hub account in Skype for Business Online, you need to assign a license to the Surface Hub. Using the O365 administrative portal, assign either a Skype for Business Online (Plan 2) or a Skype for Business Online (Plan 3) to the device.
+    
     -   Login as a tenant administrator, open the O365 Administrative Portal, and click on the Admin app.
     
     -   Click on **Users and Groups** and then **Add users, reset passwords, and more**.
@@ -158,7 +160,8 @@ Next, you enable the device account with [Skype for Business Online](#skype-for-
     
     -   Click **Save**.
 
-    >**Note** You can also use the Windows Azure Active Directory Module for Windows Powershell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
+    >[!NOTE]
+    >You can also use the Windows Azure Active Directory Module for Windows Powershell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
 For validation, you should be able to use any Skype for Business client (PC, Android, etc.) to sign in to this account.
 
@@ -267,7 +270,7 @@ Use this procedure if you use Exchange online.
 
         ![Image with account name, logon name, and password options for new user.](images/hybriddeployment-03a.png)
 
-6.  Directory synchronization.
+6.  Run directory synchronization.
 
     After you've created the account, run a directory synchronization. When it's complete, go to the users page and verify that the two accounts created in the previous steps have merged.
 
@@ -300,13 +303,13 @@ Next, you enable the device account with [Skype for Business Online](#sfb-online
     
 In order to enable Skype for Business, your environment will need to meet the following prerequisites:
 
-    - You'll need to have Lync Online (Plan 2) or higher in your O365 plan. The plan needs to support conferencing capability.
+- You'll need to have Lync Online (Plan 2) or higher in your O365 plan. The plan needs to support conferencing capability.
     
-    - If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Lync Online (Plan 3).
+- If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Lync Online (Plan 3).
     
-    - Your tenant users must have Exchange mailboxes (at least one Exchange mailbox in the tenant is required).
+- Your tenant users must have Exchange mailboxes (at least one Exchange mailbox in the tenant is required).
     
-    - Your Surface Hub account does require a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
+- Your Surface Hub account does require a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
 
 1. Start by creating a remote PowerShell session to the Skype for Business online environment from a PC.
 
