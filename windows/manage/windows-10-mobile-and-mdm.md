@@ -21,11 +21,11 @@ Employees increasingly depend on smartphones to complete daily work tasks, but t
 Windows 10 supports end-to-end device lifecycle management to give companies control over their devices, data, and apps. Devices can easily be incorporated into standard lifecycle practices, from device enrollment, configuration, and application management to maintenance, monitoring, and retirement using a comprehensive mobile device management solution.
 
 **In this article**
--	Deploy
--	Configure
--	Apps
--	Manage
--	Retire
+-	[Deploy](#deploy)
+-	[Configure](#configure)
+-	[Apps](#apps)
+-	[Manage](#manage)
+-	[Retire](#retire)
 
 
 ## Deploy
