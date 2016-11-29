@@ -31,8 +31,6 @@ For detailed information about how Distributed Cache mode and Hosted Cache mode 
 
 Whether you use BranchCache with Configuration Manager or WSUS, each client that uses BranchCache must be configured to do so. You typically make your configurations through Group Policy. For step-by-step instructions on how to use Group Policy to configure BranchCache for Windows clients, see [Client Configuration](https://technet.microsoft.com/library/dd637820%28v=ws.10%29.aspx) in the [BranchCache Early Adopter’s Guide](https://technet.microsoft.com/library/dd637762(v=ws.10).aspx).
 
-Whether you use BranchCache with Configuration Manager or with WSUS, each client that uses BranchCache must be configured to do so. You typically make your configurations through Group Policy. For step-by-step instructions on how to use Group Policy to configure BranchCache for Windows clients, see Client Configuration in the BranchCache Early Adopter’s Guide.
-
 In Windows 10, version 1607, the Windows Update Agent uses Delivery Optimization by default, even when the updates are retrieved from WSUS. When using BranchCache with Windows 10, simply set the Delivery Optimization mode to Bypass to allow clients to use the Background Intelligent Transfer Service (BITS) protocol with BranchCache instead. For instructions on how to use BranchCache in Distributed Cache mode with WSUS, see the section WSUS and Configuration Manager with BranchCache in Distributed Cache mode.
 
 ## Configure servers for BranchCache
