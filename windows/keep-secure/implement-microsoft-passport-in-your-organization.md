@@ -275,7 +275,7 @@ The following table lists the MDM policy settings that you can configure for Win
 <td>Device or user</td>
 <td>1</td>
 <td>
-<p>1: Uppercase letters are not allowed </p>
+<p>1: Uppercase letters are not allowed. </p>
 <p>2: At least one uppercase letter is required</p>
 </td>
 </tr>
