@@ -321,7 +321,7 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <td align="left">[Azure AD subscription](https://docs.microsoft.com/azure/active-directory/active-directory-howto-tenant)</td>
 <td align="left"><ul>
 <li>[Azure AD subscription](https://docs.microsoft.com/azure/active-directory/active-directory-howto-tenant)</li>
-<li>[Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
+<li>[Azure AD Connect](https://docs.microsoft.com/azure/active-directory/active-directory-aadconnect)</li>
 <li>A few Windows Server 2016 domain controllers on-site</li>
 <li>A management solution, such as [Configuration Manager](https://docs.microsoft.com/sccm/index), Group Policy, or MDM</li>
 <li>[Active Directory Certificate Services](https://technet.microsoft.com/windowsserver/dd448615.aspx) (AD CS) without Network Device Enrollment Service (NDES)</li>
@@ -336,7 +336,7 @@ You’ll need this software to set Windows Hello for Business policies in your e
 </ul></td>
 <td align="left"><ul>
 <li>[Azure AD subscription](https://docs.microsoft.com/azure/active-directory/active-directory-howto-tenant)</li>
-<li>[Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
+<li>[Azure AD Connect](https://docs.microsoft.com/azure/active-directory/active-directory-aadconnect)</li>
 <li>[AD CS](https://technet.microsoft.com/windowsserver/dd448615.aspx) with NDES</li>
 <li>[Configuration Manager](https://docs.microsoft.com/sccm/index) for domain-joined certificate enrollment, or [InTune](https://docs.microsoft.com/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) for non-domain-joined devices, or a non-Microsoft MDM service that supports Hello for Business</li>
 </ul></td>
