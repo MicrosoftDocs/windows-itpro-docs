@@ -73,7 +73,7 @@ The way in which personal and corporate devices are enrolled into an MDM system 
 <td align="left">Organization</td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>Device Innitialization</strong>
+<td align="left"><strong>Device Initialization</strong>
 
 In the Out-of-the-Box Experience (OOBE), the first time the employee starts the device, they are requested to add a cloud identity to the device.</td>
 <td align="left">The primary identity on the device is a personal identity. Personal devices are initiated with a Microsoft Account (MSA), which uses a personal email address. </td>
