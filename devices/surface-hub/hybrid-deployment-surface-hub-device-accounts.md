@@ -313,24 +313,24 @@ In order to enable Skype for Business, your environment will need to meet the fo
 
 1. Start by creating a remote PowerShell session to the Skype for Business online environment from a PC.
 
-        ```ps1
-        Import-Module LyncOnlineConnector  
-        $cssess=New-CsOnlineSession -Credential $cred  
-        Import-PSSession $cssess -AllowClobber
-        ```
+   ```
+   Import-Module LyncOnlineConnector  
+   $cssess=New-CsOnlineSession -Credential $cred  
+   Import-PSSession $cssess -AllowClobber
+   ```
 
 2. To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
-        ```ps1
-        Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool  
-        'sippoolbl20a04.infra.lync.com' -SipAddressType UserPrincipalName
-        ```
+   ```
+   Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool  
+   'sippoolbl20a04.infra.lync.com' -SipAddressType UserPrincipalName
+   ```
 
-     If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
+   If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
 
-        ```ps1
-        Get-CsOnlineUser -Identity 'HUB01@contoso.com'| fl *registrarpool*
-        ```
+   ```
+   Get-CsOnlineUser -Identity 'HUB01@contoso.com'| fl *registrarpool*
+   ```
 
 10. Assign Skype for Business license to your Surface Hub account
 
