@@ -231,11 +231,12 @@ In Windows 10, User Account Control has added some improvements.
 ### VPN profile options
 
 Windows 10 provides a set of VPN features that both increase enterprise security and provide an improved user experience, including:
-•	Always-on auto connection behavior 
-•	App=triggered VPN 
-•	VPN traffic filters
-•	Lock down VPN
-•	Integration with Microsoft Passport for Work
+
+- Always-on auto connection behavior 
+- App=triggered VPN 
+- VPN traffic filters
+- Lock down VPN
+- Integration with Microsoft Passport for Work
 
 [Learn more about the VPN options in Windows 10.](../keep-secure/vpn-profile-options.md)
 
