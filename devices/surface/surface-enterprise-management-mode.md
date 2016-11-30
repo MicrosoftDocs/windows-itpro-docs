@@ -18,6 +18,8 @@ Microsoft Surface Enterprise Management Mode (SEMM) is a feature of Surface devi
 
 When Surface devices are configured by SEMM and secured with the SEMM certificate, they are considered *enrolled* in SEMM. When the SEMM certificate is removed and control of UEFI settings is returned to the user of the device, the Surface device is considered *unenrolled* in SEMM.
 
+There are two administrative options you can use to manage SEMM and enrolled Surface devices – a standalone tool or integration with System Center Configuration Manager. The SEMM standalone tool, called the Microsoft Surface UEFI Configurator, is described in this article. For more information about how to manage SEMM with System Center Configuration Manager, see [Use System Center Configuration Manager to manage devices with SEMM](https://technet.microsoft.com/en-us/itpro/surface/use-system-center-configuration-manager-to-manage-devices-with-semm).
+
 ## Microsoft Surface UEFI Configurator
 
 The primary workspace of SEMM is Microsoft Surface UEFI Configurator, as shown in Figure 1. Microsoft Surface UEFI Configurator is a tool that is used to create Windows Installer (.msi) packages that are used to enroll, configure, and unenroll SEMM on a Surface device. These packages contain a configuration file where the settings for UEFI are specified. SEMM packages also contain a certificate that is installed and stored in firmware and used to verify the signature of configuration files before UEFI settings are applied.
@@ -101,7 +103,19 @@ These characters are the last two characters of the certificate thumbprint and s
 
 *Figure 6. Enrollment confirmation in SEMM with the SEMM certificate thumbprint*
 
+>[!NOTE]
+>Administrators with access to the certificate file (.pfx) can read the thumbprint at any time by opening the .pfx file in CertMgr. To view the thumbprint with CertMgr, follow this process:
+>1. Right-click the .pfx file, and then click **Open**.
+>2. Expand the folder in the navigation pane.
+>3. Click **Certificates**.
+>4. Right-click your certificate in the main pane, and then click **Open**.
+>5. Click the **Details** tab.
+>6. **All** or **Properties Only** must be selected in the **Show** drop-down menu.
+>7. Select the field **Thumbprint**.
+
 To enroll a Surface device in SEMM or to apply the UEFI configuration from a configuration package, all you need to do is run the .msi file on the intended Surface device. You can use application deployment or operating system deployment technologies such as [System Center Configuration Manager](https://technet.microsoft.com/library/mt346023) or the [Microsoft Deployment Toolkit](https://technet.microsoft.com/windows/dn475741). When you enroll a device in SEMM you must be present to confirm the enrollment on the device. User interaction is not required when you apply a configuration to devices that are already enrolled in SEMM.
+
+For a step-by-step walkthrough of how to enroll a Surface device in SEMM or apply a Surface UEFI configuration with SEMM, see [Enroll and configure Surface devices with SEMM](https://technet.microsoft.com/en-us/itpro/surface/enroll-and-configure-surface-devices-with-semm).
 
 ### Reset package
 
@@ -119,6 +133,8 @@ When you use the process on the **Enterprise Management** page to reset SEMM on 
 
 >[!NOTE]
 >A Reset Request expires two hours after it is created.
+
+For a step-by-step walkthrough of how to unenroll Surface devices from SEMM, see [Unenroll Surface devices from SEMM](https://technet.microsoft.com/en-us/itpro/surface/unenroll-surface-devices-from-semm).
 
 ## Surface Enterprise Management Mode certificate requirements
 
