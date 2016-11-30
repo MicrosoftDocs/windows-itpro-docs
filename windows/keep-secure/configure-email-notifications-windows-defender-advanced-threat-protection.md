@@ -1,7 +1,7 @@
 ---
-title: Configure email notifications
-description: Send email notifications to specified recipients to receive new alerts.
-keywords: email notifications, alert notifications, alerts, notification
+title: Configure email notifications in Windows Defender ATP
+description: Send email notifications to specified recipients to receive new alerts based on severity with Windows Defender ATP on Windows 10 Enterprise, Pro, and Education editions.
+keywords: email notifications, configure alert notifications, windows defender atp notifications, windows defender atp alerts, windows 10 enterprise, windows 10 education
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
