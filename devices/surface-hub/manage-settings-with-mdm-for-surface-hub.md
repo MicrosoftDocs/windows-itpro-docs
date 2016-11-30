@@ -183,11 +183,11 @@ You'll use the **Windows 10 Team general configuration policy** as the template.
 2. On the left-hand navigation menu, click **Policy**.
 3. In the Overview page, click **Add Policy**.
 4. On **Select a template for the new policy**, expand **Windows**, select **General Configuration (Windows 10 Team and later)**, and then click **Create Policy**.
+
     ![template for Windows 10 Team](images/intune-template.png)
-    
 5. Configure your policy, then click **Save Policy**
+   
     ![save policy](images/intune-save-policy.png)
-    
 6. When prompted, click **Yes** to deploy your new policy to a user or device group. For more information, see [Use groups to manage users and devices in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 **To create a custom configuration policy**
@@ -203,7 +203,6 @@ You’ll need to create a custom policy using the **Custom Configuration (Window
 7. Complete the form to create a new setting, and then click **OK**.
 
     ![example of OMA URI form](images/oma-uri.png)
-    
 8. Repeat Steps 6 and 7 for each setting you want to configure with this policy.
 9. After you're done, click **Save Policy** and deploy it to a user or device group. 
 
@@ -222,22 +221,18 @@ System Center Configuration Manager supports managing modern devices that do not
 4. Under **Settings for devices managed without the Configuration Manager client**, select **Windows 8.1 and Windows 10**, and then click **Next**.
 
     ![example of UI](images/sccm-create.png)
-
 5. On the **Supported Platforms** page, expand **Windows 10** and select **All Windows 10 Team and higher**. Unselect the other Windows platforms, and then click **Next**.
 
     ![select platform](images/sccm-platform.png)
- 
 7. On the **Device Settings** page, under **Device settings groups**, select **Windows 10 Team**.
 
 
 8. On the **Windows 10 Team** page, configure the settings you require.
 
     ![Windows 10 Team](images/sccm-team.png)
-
 9. You'll need to create custom settings to manage settings that are not available in the Windows 10 Team page. On the **Device Settings** page, select the check box **Configure additional settings that are not in the default setting groups**.
 
     ![additional settings](images/sccm-additional.png)
-
 10. On the **Additional Settings** page, click **Add**.
 11. In the **Browse Settings** dialog, click **Create Setting**.
 12. In the **Create Setting** dialog, under the **General** tab, specify a name and optional description for the custom setting.
@@ -245,7 +240,6 @@ System Center Configuration Manager supports managing modern devices that do not
 14. Complete the form to create a new setting, and then click **OK**.
 
     ![OMA URI setting](images/sccm-oma-uri.png)
-
 15. On the **Browse Settings** dialog, under **Available settings**, select the new setting you created, and then click **Select**.
 16. On the **Create Rule** dialog, complete the form to specify a rule for the setting, and then click **OK**.
 17. Repeat steps 9 to 15 for each custom setting you want to add to the configuration item.
