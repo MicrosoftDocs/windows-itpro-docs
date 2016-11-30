@@ -66,7 +66,9 @@ Anything hosted on the web can be presented in a locked down manner, not just as
 ``` 
 ms-edu-secureassessment:<URL>!enforceLockdown
  ```
-
+   > [!NOTE]  
+   > You may want to remove !enforceLockdown for tests that utilizes our lockdown API that checks for running processes before locking down. Removing !enforceLockdown will result in the app not locking down immediately which allows you to close apps that are not allowed to run during lockdown. The test web application may lock down the device once you have closed the apps. 
+   
 2. Distribute the link. You can use the web, email, OneNote, or any other method of your choosing.
 3. To take the test, the student clicks on the link and provides user consent.
 
