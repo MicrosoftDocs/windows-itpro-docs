@@ -16,6 +16,8 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+
 You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices. The sections in this topic provide the Group Policy and MDM policies for both Windows 10, version 1511, and Windows 10, version 1607. The MDM policies use the OMA-URI setting from the [Policy CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx).  
 
 >[!IMPORTANT]
