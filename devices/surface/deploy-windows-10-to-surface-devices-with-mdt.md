@@ -29,31 +29,31 @@ By automating each aspect of the deployment process, you not only greatly decrea
 
 ## Deployment tools
 
-The deployment process described in this article leverages a number of Microsoft deployment tools and technologies. Some of these tools and technologies are included in Windows client and Windows Server, such as Hyper-V and Windows Deployment Services (WDS), while others are available as free downloads from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/windows.aspx).
+The deployment process described in this article leverages a number of Microsoft deployment tools and technologies. Some of these tools and technologies are included in Windows client and Windows Server, such as Hyper-V and Windows Deployment Services (WDS), while others are available as free downloads from the [Microsoft Download Center](https://www.microsoft.com/download/windows.aspx).
 
 #### Microsoft Deployment Toolkit
 
 The Microsoft Deployment Toolkit (MDT) is the primary component of a Windows deployment. It serves as a unified interface for most of the Microsoft deployment tools and technologies, such as the Windows Assessment and Deployment Kit (Windows ADK), Windows System Image Manager (Windows SIM), Deployment Image Servicing and Management (DISM), User State Migration Tool (USMT), and many other tools and technologies. Each of these is discussed throughout this article. The unified interface, called the *Deployment Workbench*, facilitates automation of the deployment process through a series of stored deployment procedures, known as a *task sequence*. Along with these task sequences and the many scripts and tools that MDT provides, the resources for a Windows deployment (driver files, application installation files, and image files) are stored in a network share known as the *deployment share*. 
 
-You can download and find out more about MDT at [Microsoft Deployment Toolkit](https://technet.microsoft.com/en-us/windows/dn475741).
+You can download and find out more about MDT at [Microsoft Deployment Toolkit](https://technet.microsoft.com/windows/dn475741).
 
 #### Windows Assessment and Deployment Kit
 
 Although MDT is the tool you will interact with most during the deployment process, the deployment tools found in the Windows ADK perform most of the deployment tasks during the deployment process. The resources for deployment are held within the MDT deployment share, but it is the collection of tools included in Windows ADK that access the image files, stage drivers and Windows updates, run the deployment experience, provide instructions to Windows Setup, and back up and restore user data.
 
-You can download and find out more about the Windows ADK at [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit#windowsadk).
+You can download and find out more about the Windows ADK at [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#windowsadk).
 
 #### Windows 10 installation media
 
 Before you can perform a deployment with MDT, you must first supply a set of operating system installation files and an operating system image. These files and image can be found on the physical installation media (DVD) for Windows 10. You can also find these files in the disk image (ISO file) for Windows 10, which you can download from the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
->**Note:**&nbsp;&nbsp;The installation media generated from the [Get Windows 10](https://www.microsoft.com/en-us/software-download/windows10/) page differs from physical media or media downloaded from the VLSC, in that it contains an image file in Electronic Software Download (ESD) format rather than in the Windows Imaging (WIM) format. Installation media with an image file in WIM format is required for use with MDT. Installation media from the Get Windows 10 page cannot be used for Windows deployment with MDT.
+>**Note:**&nbsp;&nbsp;The installation media generated from the [Get Windows 10](https://www.microsoft.com/software-download/windows10/) page differs from physical media or media downloaded from the VLSC, in that it contains an image file in Electronic Software Download (ESD) format rather than in the Windows Imaging (WIM) format. Installation media with an image file in WIM format is required for use with MDT. Installation media from the Get Windows 10 page cannot be used for Windows deployment with MDT.
 
 #### Windows Server
 
 Although MDT can be installed on a Windows client, to take full advantage of Windows Deployment Services’ ability to network boot, a full Windows Server environment is recommended. To provide network boot for UEFI devices like Surface with WDS, you will need Windows Server 2008 R2 or later.
 
->**Note:**&nbsp;&nbsp;To evaluate the deployment process for Surface devices or to test the deployment process described in this article with the upcoming release of Windows Server 2016, you can download evaluation and preview versions from the [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter).
+>**Note:**&nbsp;&nbsp;To evaluate the deployment process for Surface devices or to test the deployment process described in this article with the upcoming release of Windows Server 2016, you can download evaluation and preview versions from the [TechNet Evaluation Center](https://www.microsoft.com/evalcenter).
 
 #### Windows Deployment Services
 
@@ -67,13 +67,13 @@ The process of creating a reference image should always be performed in a virtua
 
 Because customizations are performed by MDT at the time of deployment, the goal of reference image creation is not to perform customization but to increase performance during deployment by reducing the number of actions that need to occur on each deployed device. The biggest action that can slow down an MDT deployment is the installation of Windows updates. When MDT performs this step during the deployment process, it downloads the updates on each deployed device and installs them. By installing Windows updates in your reference image, the updates are already installed when the image is deployed to the device and the MDT update process only needs to install updates that are new since the image was created or are applicable to products other than Windows (for example, Microsoft Office updates).
 
->**Note:**&nbsp;&nbsp;Hyper-V is available not only on Windows Server, but also on Windows clients, including Professional and Enterprise editions of Windows 8, Windows 8.1, and Windows 10. Find out more at [Client Hyper-V on Windows 10](https://msdn.microsoft.com/virtualization/hyperv_on_windows/windows_welcome) and [Client Hyper-V on Windows 8 and Windows 8.1](https://technet.microsoft.com/library/hh857623) in the TechNet Library.  Hyper-V is also available as a standalone product, Microsoft Hyper-V Server, at no cost. You can download [Microsoft Hyper-V Server 2012 R2](https://www.microsoft.com/en-us/evalcenter/evaluate-hyper-v-server-2012-r2) or [Microsoft Hyper-V Server 2016 Technical Preview](https://www.microsoft.com/en-us/evalcenter/evaluate-hyper-v-server-technical-preview) from the TechNet Evaluation Center.
+>**Note:**&nbsp;&nbsp;Hyper-V is available not only on Windows Server, but also on Windows clients, including Professional and Enterprise editions of Windows 8, Windows 8.1, and Windows 10. Find out more at [Client Hyper-V on Windows 10](https://msdn.microsoft.com/virtualization/hyperv_on_windows/windows_welcome) and [Client Hyper-V on Windows 8 and Windows 8.1](https://technet.microsoft.com/library/hh857623) in the TechNet Library.  Hyper-V is also available as a standalone product, Microsoft Hyper-V Server, at no cost. You can download [Microsoft Hyper-V Server 2012 R2](https://www.microsoft.com/evalcenter/evaluate-hyper-v-server-2012-r2) or [Microsoft Hyper-V Server 2016 Technical Preview](https://www.microsoft.com/evalcenter/evaluate-hyper-v-server-technical-preview) from the TechNet Evaluation Center.
 
 #### Surface firmware and drivers
 
 For your deployed Windows environment to function correctly on your Surface devices, you will need to install the drivers used by Windows to communicate with the components of your device. These drivers are available for download in the Microsoft Download Center for each Surface device. You can find the correct Microsoft Download Center page for your device at [Download the latest firmware and drivers for Surface devices](https://technet.microsoft.com/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices).
 
-When you browse to the specific Microsoft Download Center page for your device, you will notice that there are two files available for download. One file is a Windows Installer (.msi) file. This file is used to update drivers on devices that are already running Windows or that have device management solutions. The other file is an archive (.zip) file. This file contains the individual driver files that are used during deployment, or for manual installation with Device Manager. The file that you will need to download is the .zip archive file. You can read more about the difference between the firmware and driver pack file types at [Manage Surface driver and firmware updates](https://technet.microsoft.com/en-us/itpro/surface/manage-surface-pro-3-firmware-updates).
+When you browse to the specific Microsoft Download Center page for your device, you will notice that there are two files available for download. One file is a Windows Installer (.msi) file. This file is used to update drivers on devices that are already running Windows or that have device management solutions. The other file is an archive (.zip) file. This file contains the individual driver files that are used during deployment, or for manual installation with Device Manager. The file that you will need to download is the .zip archive file. You can read more about the difference between the firmware and driver pack file types at [Manage Surface driver and firmware updates](https://technet.microsoft.com/itpro/surface/manage-surface-pro-3-firmware-updates).
 
 
 In addition to the driver files that help Windows communicate with the hardware components of the Surface device, the .zip file you download will also contain firmware updates. These firmware updates will update the instructions used by the device hardware to communicate between components and Windows. The firmware of Surface device components is updated by installation of specific driver files and thus is installed along with the other drivers during deployment. The firmware of an out-of-date Surface device is thus updated when the device reboots during and after the Windows deployment process.
@@ -88,7 +88,7 @@ In addition to the drivers that are used by Windows to communicate with the Surf
 
 #### Microsoft Surface Deployment Accelerator
 
-If you want to deploy only to Surface devices or you want an accelerated method to perform deployment to Surface devices, you can use the Microsoft Surface Deployment Accelerator to generate an MDT deployment share complete with Surface device drivers, Surface apps, and pre-configured task sequences to create a reference image and perform deployment to Surface devices. Microsoft Surface Deployment Accelerator can automatically import boot images into WDS and prepare WDS for network boot (PXE). You can download the Microsoft Surface Deployment Accelerator from the [Surface Tools for IT](https://www.microsoft.com/en-us/download/details.aspx?id=46703) page in the Microsoft Download Center.
+If you want to deploy only to Surface devices or you want an accelerated method to perform deployment to Surface devices, you can use the Microsoft Surface Deployment Accelerator to generate an MDT deployment share complete with Surface device drivers, Surface apps, and pre-configured task sequences to create a reference image and perform deployment to Surface devices. Microsoft Surface Deployment Accelerator can automatically import boot images into WDS and prepare WDS for network boot (PXE). You can download the Microsoft Surface Deployment Accelerator from the [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) page in the Microsoft Download Center.
 
 ### Install the deployment tools
 
@@ -120,7 +120,7 @@ Using the Windows Deployment Services Configuration Wizard, configure WDS to fit
 
 #### Install Windows Assessment and Deployment Kit
 
-To install Windows ADK, run the Adksetup.exe file that you downloaded from [Download the Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit#adkwin10). Windows ADK must be installed before MDT. You should always download and use the most recent version of Windows ADK. A new version is usually released corresponding with each new version of Windows.
+To install Windows ADK, run the Adksetup.exe file that you downloaded from [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#adkwin10). Windows ADK must be installed before MDT. You should always download and use the most recent version of Windows ADK. A new version is usually released corresponding with each new version of Windows.
 
 >**Note:**&nbsp;&nbsp;You can also use the Adksetup.exe file to download the Windows ADK installation files locally for use on other devices.
 
@@ -409,7 +409,7 @@ Now that your updated reference image is imported, it is time to prepare your de
 
 Before you can deploy your updated reference image to Surface devices, or any physical environment, you need to supply MDT with the drivers that Windows will use to communicate with that physical environment. For Surface devices you can download all of the drivers required by Windows in a single archive (.zip) file in a format that is ready for deployment. In addition to the drivers that are used by Windows to communicate with the hardware and components, Surface firmware and driver packs also include updates for the firmware of those components. By installing the Surface firmware and driver pack, you will also bring your device’s firmware up to date. If you have not done so already, download the drivers for your Surface device listed at [Download the latest firmware and drivers for Surface devices](https://technet.microsoft.com/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices).
 
-Many devices require that you import drivers specifically for WinPE in order for the MDT boot media to communicate with the deployment share and to boot properly on that device. Even Surface Pro 3 required that network drivers be imported specifically for WinPE for deployment of Windows 8.1. Fortunately, for Windows 10 deployments to Surface devices, all of the required drivers for operation of WinPE are contained within the out-of-box drivers that are built into Windows 10. It is still a good idea to prepare your environment with folder structure and selection profiles that allow you to specify drivers for use in WinPE. You can read more about that folder structure in **Step 5: Prepare the drivers repository** in [Deploy a Windows 10 image using MDT 2013 Update 2](https://technet.microsoft.com/en-us/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt/#sec05).
+Many devices require that you import drivers specifically for WinPE in order for the MDT boot media to communicate with the deployment share and to boot properly on that device. Even Surface Pro 3 required that network drivers be imported specifically for WinPE for deployment of Windows 8.1. Fortunately, for Windows 10 deployments to Surface devices, all of the required drivers for operation of WinPE are contained within the out-of-box drivers that are built into Windows 10. It is still a good idea to prepare your environment with folder structure and selection profiles that allow you to specify drivers for use in WinPE. You can read more about that folder structure in **Step 5: Prepare the drivers repository** in [Deploy a Windows 10 image using MDT 2013 Update 2](https://technet.microsoft.com/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt/#sec05).
 
 To import the Surface drivers (in this example, Surface Pro 4) into MDT, follow these steps:
 
@@ -445,7 +445,7 @@ To import the Surface drivers (in this example, Surface Pro 4) into MDT, follow 
 
 ### Import applications
 
-You can import any number of applications into MDT for installation on your devices during the deployment process. You can configure your applications and task sequences to prompt you during deployment to pick and choose which applications are installed, or you can use your task sequence to explicitly define which applications are installed. For more information, see **Step 4: Add an application** in [Deploy a Windows 10 image using MDT 2013 Update 2](https://technet.microsoft.com/en-us/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt/#sec04).
+You can import any number of applications into MDT for installation on your devices during the deployment process. You can configure your applications and task sequences to prompt you during deployment to pick and choose which applications are installed, or you can use your task sequence to explicitly define which applications are installed. For more information, see **Step 4: Add an application** in [Deploy a Windows 10 image using MDT 2013 Update 2](https://technet.microsoft.com/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt/#sec04).
 
 #### Import Microsoft Office 365 Installer
 
@@ -499,9 +499,9 @@ Now that the installation and configuration files are prepared, the application 
 
 #### Import Surface app installer
 
-The Surface app is a Windows Store app that provides the user with greater control over specific Surface device functions and capabilities (for example, control over the sensitivity of the Surface Pen). It is a highly recommended app for Surface devices to provide end users with the best experience and greatest control over their device. Find out more about the Surface app at [Install and use the Surface app](https://www.microsoft.com/surface/en-us/support/apps-and-windows-store/surface-app?os=windows-10).
+The Surface app is a Windows Store app that provides the user with greater control over specific Surface device functions and capabilities (for example, control over the sensitivity of the Surface Pen). It is a highly recommended app for Surface devices to provide end users with the best experience and greatest control over their device. Find out more about the Surface app at [Install and use the Surface app](https://www.microsoft.com/surface/support/apps-and-windows-store/surface-app?os=windows-10).
 
-To perform a deployment of the Surface app, you will need to download the app files through Windows Store for Business. You can find detailed instructions on how to download the Surface app through Windows Store for Business at [Deploy Surface app with Windows Store for Business](https://technet.microsoft.com/en-us/itpro/surface/deploy-surface-app-with-windows-store-for-business).
+To perform a deployment of the Surface app, you will need to download the app files through Windows Store for Business. You can find detailed instructions on how to download the Surface app through Windows Store for Business at [Deploy Surface app with Windows Store for Business](https://technet.microsoft.com/itpro/surface/deploy-surface-app-with-windows-store-for-business).
 
 After you have downloaded the installation files for Surface app, including the AppxBundle and license files, you can import these files into the deployment share through the same process as a desktop application like Microsoft Office. Both the AppxBundle and license files must be together in the same folder for the import process to complete successfully. Use the following command on the **Command Details** page to install the Surface app:
    ```

@@ -21,9 +21,29 @@ You can use Remote Credential Guard in the following ways:
 
 - Helpdesk employees in your organization must connect to domain-joined devices that could be compromised. With Remote Credential Guard, the helpdesk employee can use RDP to connect to the target device without compromising their credentials to malware.
 
-Use the following diagrams to help understand how Remote Credential Guard works and what it helps protect against.
+## Comparing Remote Credential Guard with a server protected with Credential Guard
+
+Use the following diagrams to help understand how Remote Credential Guard works, what it helps protect against, and how it compares with using a server protected with Credential Guard. As the diagram shows, Remote Credential Guard blocks NTLM (allowing only Kerberos), prevents Pass the Hash, and prevents usage of a credential after disconnection.
 
 ![Remote Credential Guard](images/remote-credential-guard.png)
+
+## Comparing Remote Credential Guard with other options for Remote Desktop connections
+
+Use the following table to compare different security options for Remote Desktop connections.
+
+> [!NOTE]
+> This table compares different options than are shown in the previous diagram.
+
+| Remote Desktop with Credential Delegation | Remote Credential Guard | Restricted Admin mode |
+|---|---|---|
+| Protection: Provides **less protection** than other modes in this table. | Protection: Provides **moderate protection**, compared to other modes in this table. | Protection: Provides **the most protection** of the modes in this table. However, it also requires you to be in the local “Administrators” group on the remote computer. |
+| Version support: The remote computer can be running **any operating system that supports credential delegation**, which was introduced in Windows Vista. | Version support: The remote computer must be running **at least Windows 10, version 1607, or Windows Server 2016**. | Version support: The remote computer must be running **at least patched Windows 7 or patched Windows Server 2008 R2**.<br><br>For more information about patches (software updates) related to Restricted Admin mode, see  [Microsoft Security Advisory 2871997](https://technet.microsoft.com/library/security/2871997.aspx). |
+| NA | Helps prevent:<br><br>- **Pass the Hash**<br>- Usage of a **credential after disconnection** | Prevents:<br><br>- **Pass the Hash**<br>- Usage of **domain identity during connection** |
+| Credentials supported from the remote desktop client device:<br><br>- **Signed on** credentials<br>- **Supplied** credentials<br>- **Saved** credentials | Credentials supported from the remote desktop client device:<br><br>- **Signed on** credentials only | Credentials supported from the remote desktop client device:<br><br>- **Signed on** credentials<br>- **Supplied** credentials<br>- **Saved** credentials |
+| Access: **Users allowed**, that is, members of remote desktop users group of remote host. | Access: **Users allowed**, that is, members of remote desktop users group of remote host. | Access: **Administrators only**, that is, only members in administrators group of remote host.  |
+| Network identity: Remote desktop session **connects to other resources as signed on user**. | Network identity: Remote desktop session **connects to other resources as signed on user**. | Network identity: Remote desktop session **connects to other resources as remote host’s identity**.  |
+| Multi-hop: From the remote desktop, you **can connect through Remote Desktop to another computer**. | Multi-hop: From the remote desktop, you **can connect through Remote Desktop to another computer**. | No multi-hop: From the remote desktop, you **cannot connect through Remote Desktop to another computer**. |
+| Supported authentication protocol: **Any negotiable protocol**. | Supported authentication protocol: **Kerberos only**. | Supported authentication protocol: **Any negotiable protocol**. |
 
 ## Hardware and software requirements
 
@@ -58,7 +78,11 @@ You can use Remote Credential Guard on the client device by setting a Group Poli
 ### Turn on Remote Credential Guard by using Group Policy
 
 1. From the Group Policy Management Console, go to **Computer Configuration** -> **Administrative Templates** -> **System** -> **Credentials Delegation**.
+
 2. Double-click **Restrict delegation of credentials to remote servers**.
+
+    ![Remote Credential Guard Group Policy](images/remote-credential-guard-gp.png)
+
 3. Under **Use the following restricted mode**:
     - If you want to require either [Restricted Admin mode](http://social.technet.microsoft.com/wiki/contents/articles/32905.how-to-enable-restricted-admin-mode-for-remote-desktop.aspx) or Remote Credential Guard, choose **Prefer Remote Credential Guard**. In this configuration, Remote Credential Guard is preferred, but it will use Restricted Admin mode (if supported) when Remote Credential Guard cannot be used.
 
@@ -66,9 +90,9 @@ You can use Remote Credential Guard on the client device by setting a Group Poli
         
     - If you want to require Remote Credential Guard, choose **Require Remote Credential Guard**. With this setting, a Remote Desktop connection will succeed only if the remote computer meets the [Hardware and software requirements](#hardware-and-software-requirements) listed earlier in this topic.
     
+    - If you  want to require Restricted Admin mode, choose **Require Restricted Admin**. For information about Restricted Admin mode, see the table in [Comparing Remote Credential Guard with other options for Remote Desktop connections](#comparing-remote-credential-guard-with-other-options-for-remote-desktop-connections), earlier in this topic.
+    
 4. Click **OK**.
-
-    ![Remote Credential Guard Group Policy](images/remote-credential-guard-gp.png)
 
 5. Close the Group Policy Management Console.
 
@@ -96,7 +120,7 @@ mstsc.exe /remoteGuard
 
 - Remote Desktop Gateway is not compatible with Remote Credential Guard.
 
-- You cannot used saved credentials or credentials that are different than yours. You must use the credentials of the user who is logged into the device.
+- You cannot use saved credentials or credentials that are different than yours. You must use the credentials of the user who is logged into the device.
 
 - Both the client and the server must be joined to the same domain or the domains must have a trust relationship.
 
