@@ -21,7 +21,7 @@ This article shows you how to install Microsoft Surface Deployment Accelerator (
 
 For information about prerequisites and instructions for how to download and install SDA, see [Microsoft Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md).
 
-1.  Download SDA, which is included in [Surface Tools for IT](https://go.microsoft.com/fwlink/p/?LinkId=618121) on the Microsoft Download Center.
+1.  Download SDA, which is included in [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) on the Microsoft Download Center.
 
 2.  Run the SDA installation file, named **Surface\_Deployment\_Accelerator\_*xxxx*.msi**, where *xxxx* is the current version number.
 
@@ -77,7 +77,7 @@ The following steps show you how to create a deployment share for Windows 10 th
 
     -   **Windows 10 Deployment Services**
 
-        -   Select the **Import boot media into the local Windows Deployment Service** check box if you would like to boot your Surface devices from the network to perform the Windows deployment. Windows Deployment Services must be installed and configured to respond to PXE boot requests. See [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://go.microsoft.com/fwlink/p/?LinkId=761072) for more information about how to configure Windows Deployment Services for PXE boot.
+        -   Select the **Import boot media into the local Windows Deployment Service** check box if you would like to boot your Surface devices from the network to perform the Windows deployment. Windows Deployment Services must be installed and configured to respond to PXE boot requests. See [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/library/jj648426.aspx) for more information about how to configure Windows Deployment Services for PXE boot.
 
     -   **Windows 10 Source Files**
 

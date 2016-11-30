@@ -21,11 +21,11 @@ The name resolution setting in the VPN profile configures how name resolution sh
 
 ## Name Resolution Policy table (NRPT)
  
-The NRPT is a table of namespaces that determines the DNS client’s havior when issuing name resolution queries and processing responses. It is the first place that the stack will look after the DNSCache.
+The NRPT is a table of namespaces that determines the DNS client’s behavior when issuing name resolution queries and processing responses. It is the first place that the stack will look after the DNSCache.
 
 There are 3 types of name matches that can  set up for NRPT:
 
-- Fully qualified domain name (FQDN) that can  used for direct matching to a name
+- Fully qualified domain name (FQDN) that can be used for direct matching to a name
 
 - Suffix match results in either a comparison of suffixes (for FQDN resolution) or the appending of the suffix (in case of a short name)
 

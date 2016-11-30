@@ -83,7 +83,7 @@ An added work account provides the same SSO experience in browser apps like Offi
 
 -   **Windows Hello**
 
-    Creating a Windows Hello (PIN) is required on Windows 10 Mobile by default and cannot be disabled. You can control Windows Hello policiesusing controls in MDM, such as Intune. Because the device is joined using organizational credentials, the device must have a PIN to unlock the device. Biometrics such as fingerprint or iris can be used for authentication. Creating a Windows Hello requires the user to perform an multi-factor authentication since the PIN is a strong authentication credential. [Learn more about Windows Hello for Azure AD.](https://go.microsoft.com/fwlink/p/?LinkId=735004)
+    Creating a Windows Hello (PIN) is required on Windows 10 Mobile by default and cannot be disabled. You can control Windows Hello policies using controls in MDM, such as Intune. Because the device is joined using organizational credentials, the device must have a PIN to unlock the device. Biometrics such as fingerprint or iris can be used for authentication. Creating a Windows Hello requires the user to perform an multi-factor authentication since the PIN is a strong authentication credential. [Learn more about Windows Hello for Azure AD.](https://go.microsoft.com/fwlink/p/?LinkId=735004)
 
 -   **Conditional access**
 

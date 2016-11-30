@@ -58,6 +58,7 @@ You'll need to keep running them using IE11. If you don't have IE11 installed an
 
 ## Related topics
 
+- [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/en-us/download/details.aspx?id=53892)
 - [Download Internet Explorer 11](https://go.microsoft.com/fwlink/p/?linkid=290956)
 - [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](https://go.microsoft.com/fwlink/p/?LinkId=760644)
 - [Internet Explorer 11 - FAQ for IT Pros](https://go.microsoft.com/fwlink/p/?LinkId=760645)

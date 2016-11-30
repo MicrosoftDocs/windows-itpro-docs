@@ -63,7 +63,7 @@ TPM 2.0 products and systems have important security advantages over TPM 1.2, in
     -   TPM 1.2 implementations vary in policy settings. This may result in support issues as lockout policies vary.
     -   TPM 2.0 lockout policy is configured by Windows, ensuring a consistent dictionary attack protection guarantee.
 
--   While TPM 1.2 parts are discrete silicon components which are typically soldered on the motherboard, TPM 2.0 is available as a **discrete (dTPM)** silicon component in a sinple semiconductor package, an **integrated** component incorporated in one or more semiconductor packages - alongside other logic units in the same package(s) - and as a **firmware (fTPM)** based component running in a trusted execution environment (TEE) on a general purpose SoC.
+-   While TPM 1.2 parts are discrete silicon components which are typically soldered on the motherboard, TPM 2.0 is available as a **discrete (dTPM)** silicon component in a single semiconductor package, an **integrated** component incorporated in one or more semiconductor packages - alongside other logic units in the same package(s) - and as a **firmware (fTPM)** based component running in a trusted execution environment (TEE) on a general purpose SoC.
 
 ## Discrete, Integrated or Firmware TPM?
 
