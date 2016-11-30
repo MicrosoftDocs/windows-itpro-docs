@@ -54,8 +54,6 @@ Check that email recipients are able to receive the email notifications by selec
 ## Troubleshoot email notifications for alerts
 This section lists various issues that you may encounter when using email notifications for alerts.
 
-**Intended recipients do not receive the email alerts**
-
 **Problem:** Intended recipients report they are not getting the notifications.
 
 **Solution:** Make sure that the notifications are not blocked by email filters:
