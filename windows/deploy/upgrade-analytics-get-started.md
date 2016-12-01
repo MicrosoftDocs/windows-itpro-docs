@@ -117,7 +117,7 @@ To ensure that user computers are receiving the most up to date data from Micros
 
 To automate many of the steps outlined above and to troubleshoot data sharing issues, you can run the [Upgrade Analytics deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409), developed by Microsoft.
 
-> The following guidance applies to version 11.30.16 or later of the Upgrade Analytics deployment script. If you are using an older version, please download the latest from [Download Center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409).
+> The following guidance applies to version 11.11.16 or later of the Upgrade Analytics deployment script. If you are using an older version, please download the latest from [Download Center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409).
 
 The Upgrade Analytics deployment script does the following:
 
