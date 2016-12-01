@@ -93,7 +93,7 @@ This section is an overview that describes different parts of the end-to-end sec
 
 | Number | Part of the solution | Description |
 | - | - | - |
-| **1** | Windows 10-based device | The first time a Windows 10-based device is powered on, the out-of-box experience (OOBE) screen is displayed. During setup, the device can be automatically registered into Azure Active Directory (AD) and enrolled in MDM.<br/>A Windows 10-based device with TPM 2.0 can report health status at any time by using the Health Attestation Service available with all editions of Windows 10.|
+| **1** | Windows 10-based device | The first time a Windows 10-based device is powered on, the out-of-box experience (OOBE) screen is displayed. During setup, the device can be automatically registered into Azure Active Directory (AD) and enrolled in MDM.<br/>A Windows 10-based device with a TPM can report health status at any time by using the Health Attestation Service available with all editions of Windows 10.|
 | **2** | Identity provider | Azure AD contains users, registered devices, and registered application of organization’s tenant. A device always belongs to a user and a user can have multiple devices. A device is represented as an object with different attributes like the compliance status of the device. A trusted MDM can update the compliance status.<br/>Azure AD is more than a repository. Azure AD is able to authenticate users and devices and can also authorize access to managed resources. Azure AD has a conditional access control engine that leverages the identity of the user, the location of the device and also the compliance status of the device when making a trusted access decision.|
 | **3**|Mobile device management| Windows 10 has MDM support that enables the device to be managed out-of-box without deploying any agent.<br/>MDM can be Microsoft Intune or any third-party MDM solution that is compatible with Windows 10.|
 | **4** | Remote health attestation | The Health Attestation Service is a trusted cloud service operated by Microsoft that performs a series of health checks and reports to MDM what Windows 10 security features are enabled on the device.<br/>Security verification includes boot state (WinPE, Safe Mode, Debug/test modes) and components that manage security and integrity of runtime operations (BitLocker, Device Guard).|
@@ -125,7 +125,7 @@ Windows 10 supports features to help prevent sophisticated low-level malware li
 
     Windows 10 uses the TPM for cryptographic calculations as part of health attestation and to protect the keys for BitLocker, Windows Hello, virtual smart cards, and other public key certificates. For more information, see [TPM requirements in Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=733948).
 
-    Windows 10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 supports only TPM 2.0. TPM 2.0 is required for device health attestation.
+    Windows 10 recognizes versions 1.2 and 2.0 TPM specifications produced by the TCG. For the most recent and modern security features, Windows 10 supports only TPM 2.0. 
 
     TPM 2.0 provides a major revision to the capabilities over TPM 1.2:
 
@@ -201,8 +201,6 @@ Windows 10 supports features to help prevent sophisticated low-level malware li
     For more information, see [Secured Boot and Measured Boot: Hardening Early Boot Components Against Malware](https://go.microsoft.com/fwlink/p/?LinkId=733950).
 
     During each subsequent boot, the same components are measured, which allows comparison of the measurements against an expected baseline. For additional security, the values measured by the TPM can be signed and transmitted to a remote server, which can then perform the comparison. This process, called *remote device health attestation*, allows the server to verify health status of the Windows device.
-
-    Health attestation requires the presence of TPM 2.0. On Windows 10, TPM 2.0 also requires UEFI firmware.
 
     Although Secure Boot is a proactive form of protection, health attestation is a reactive form of boot protection. Health attestation ships disabled in Windows and is enabled by an antimalware or an MDM vendor. Unlike Secure Boot, health attestation will not stop the boot process and enter remediation when a measurement does not work. But with conditional access control, health attestation will help to prevent access to high-value assets.
 
@@ -317,7 +315,7 @@ MDM solutions are becoming prevalent as a light-weight device management technol
 
 ### Device health attestation
 
-Device health attestation leverages the TPM 2.0 to provide cryptographically strong and verifiable measurements of the chain of software used to boot the device.
+Device health attestation leverages the TPM to provide cryptographically strong and verifiable measurements of the chain of software used to boot the device.
 
 For Windows 10-based devices, Microsoft introduces a new public API that will allow MDM software to access a remote attestation service called Windows Health Attestation Service. A health attestation result, in addition with other elements, can be used to allow or deny access to networks, apps, or services, based on whether devices prove to be healthy.
 
@@ -380,7 +378,7 @@ As of today, many organizations only consider devices to be compliant with compa
 
 The biggest challenge with rootkits is that they can be undetectable to the client. Because they start before antimalware, and they have system-level privileges, they can completely disguise themselves while continuing to access system resources. As a result, traditional computers infected with rootkits appear to be healthy, even with antimalware running.
 
-As previously discussed, the health attestation feature of Windows 10 uses the TPM 2.0 hardware component to securely record a measurement of every boot-related component, including firmware, Windows 10 kernel, and even early boot drivers. Because, health attestation leverages the hardware-based security capabilities of TPM, the log of all boot measured components remains out of the reach of any malware.
+As previously discussed, the health attestation feature of Windows 10 uses the TPM hardware component to securely record a measurement of every boot-related component, including firmware, Windows 10 kernel, and even early boot drivers. Because, health attestation leverages the hardware-based security capabilities of TPM, the log of all boot measured components remains out of the reach of any malware.
 
 By attesting a trusted boot state, devices can prove that they are not running low-level malware that could spoof later compliance checks. TPM-based health attestation provides a reliable anchor of trust for assets that contain high-value data.
 
@@ -404,7 +402,7 @@ This is the most secure approach available for Windows 10-based devices to dete
 
 A relying party like an MDM can inspect the report generated by the remote health attestation service.
 
->**Note:**  To use the health attestation feature of Windows 10, the device must be equipped with a discrete or firmware TPM 2.0. There is no restriction on any particular edition of Windows 10.
+>**Note:**  To use the health attestation feature of Windows 10, the device must be equipped with a discrete or firmware TPM. There is no restriction on any particular edition of Windows 10.
  
 Windows 10 supports health attestation scenarios by allowing applications access to the underlying health attestation configuration service provider (CSP) so that applications can request a health attestation token. The measurement of the boot sequence can be checked at any time locally by an antimalware or an MDM agent.
 
@@ -438,7 +436,7 @@ The number of retained logs may be set with the registry **REG\_DWORD** value **
  
 The following process describes how health boot measurements are sent to the health attestation service:
 
-1.  The client (a Windows 10-based device with a TPM 2.0) initiates the request with the remote device health attestation service. Because the health attestation server is expected to be a Microsoft cloud service, the URI is already pre-provisioned in the client.
+1.  The client (a Windows 10-based device with a TPM) initiates the request with the remote device health attestation service. Because the health attestation server is expected to be a Microsoft cloud service, the URI is already pre-provisioned in the client.
 2.  The client then sends the TCG log, the AIK signed data (PCR values, boot counter) and the AIK certificate information.
 3.  The remote device heath attestation service then:
 
@@ -492,7 +490,7 @@ For certain devices that use firmware-based TPM produced by Intel or Qualcomm, t
 
 Because the endorsement certificate is unique for each device and does not change, the usage of it may present privacy concerns because it's theoretically possible to track a specific device. To avoid this privacy problem, Windows 10 issues a derived attestation anchor based on the endorsement certificate. This intermediate key, which can be attested to an endorsement key, is the Attestation Identity Key (AIK) and the corresponding certificate is called the AIK certificate. This AIK certificate is issued by a Microsoft cloud service.
 
->**Note:**  Before the device can report its health using the TPM 2.0 attestation functions, an AIK certificate must be provisioned in conjunction with a third-party service like the Microsoft Cloud CA service. After it is provisioned, the AIK private key can be used to report platform configuration. Windows 10 creates a signature over the platform log state (and a monotonic counter value) at each boot by using the AIK.
+>**Note:**  Before the device can report its health using the TPM attestation functions, an AIK certificate must be provisioned in conjunction with a third-party service like the Microsoft Cloud CA service. After it is provisioned, the AIK private key can be used to report platform configuration. Windows 10 creates a signature over the platform log state (and a monotonic counter value) at each boot by using the AIK.
  
 The AIK is an asymmetric (public/private) key pair that is used as a substitute for the EK as an identity for the TPM for privacy purposes. The private portion of an AIK is never revealed or used outside the TPM and can only be used inside the TPM for a limited set of operations. Furthermore, it can only be used for signing, and only for limited, TPM-defined operations.
 
