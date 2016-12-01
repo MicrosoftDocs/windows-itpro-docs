@@ -21,7 +21,8 @@ localizationpriority: high
 
 Organizations might want to deploy a customized Start and taskbar configuration to devices running Windows 10 Enterprise or Windows 10 Education. A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Configuring the taskbar allows the organization to pin useful apps for their employees and to remove apps that are pinned by default.
 
-> **Note:** Taskbar configuration is available starting in Windows 10, version 1607.
+>[!NOTE]
+>Taskbar configuration is available starting in Windows 10, version 1607.
 
 ## Start options
 
