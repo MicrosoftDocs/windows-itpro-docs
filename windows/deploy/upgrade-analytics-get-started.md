@@ -115,7 +115,9 @@ To ensure that user computers are receiving the most up to date data from Micros
 
 ## Run the Upgrade Analytics deployment script
 
-To automate many of the steps outlined above and to troubleshoot data sharing issues, you can run the Upgrade Analytics deployment script, developed by Microsoft.
+To automate many of the steps outlined above and to troubleshoot data sharing issues, you can run the [Upgrade Analytics deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409), developed by Microsoft.
+
+> The following guidance applies to version 11.30.16 or later of the Upgrade Analytics deployment script. If you are using an older version, please download the latest from [Download Center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409).
 
 The Upgrade Analytics deployment script does the following:
 
@@ -125,7 +127,7 @@ The Upgrade Analytics deployment script does the following:
 
 3.  Checks whether the computer has a pending restart.  
 
-4.  Verifies that the latest version of KB package 10.0.x is installed (requires 10.0.14348 or subsequent releases).
+4.  Verifies that the latest version of KB package 10.0.x is installed (version 10.0.14348 or later is required, but version 10.0.14913 or later is recommended).
 
 5.  If enabled, turns on verbose mode for troubleshooting.
 
@@ -135,17 +137,15 @@ The Upgrade Analytics deployment script does the following:
 
 To run the Upgrade Analytics deployment script:
 
-1.  Download the [Upgrade Analytics deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract UpgradeAnalytics.zip. The files in the Diagnostics folder are necessary only if you plan to run the script in troubleshooting mode.
+1.  Download the [Upgrade Analytics deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract UpgradeAnalytics.zip. Inside, there are two folders: Pilot and Deployment. The Pilot folder contains advanced logging that can help troubleshoot issues and is inteded to be run from an elevated command prompt. The Deployment folder offers a lightweight script intended for broad deployment through ConfigMgr or other software deployment system. We recommend manually running the Pilot version of the script on 5-10 machines to verify that everything is configured correctly.  Once you have confirmed that data is flowing successfully, proceed to run the Deployment version throughout your organization.
 
 2.  Edit the following parameters in RunConfig.bat:
 
-    1.  Provide a storage location for log information. Example: %SystemDrive%\\UADiagnostics
+    1.  Provide a storage location for log information. You can store log information on a remote file share or a local directory. If the script is blocked from creating the log file for the given path, it creates the log files in the drive with the Windows directory. Example: %SystemDrive%\\UADiagnostics
 
-    2.  You can store log information on a remote file share or a local directory. If the script is blocked from creating the log file for the given path, it creates the log files in the drive with the Windows directory.
+    2.  Input your commercial ID key. This can be found in your OMS workspace under Settings -> Connected Sources -> Windows Telemetry.
 
-    3.  Input your commercial ID key.
-
-    4.  By default, the script sends log information to both the console and the log file. To change the default behavior, use one of the following options:
+    3.  By default, the script sends log information to both the console and the log file. To change the default behavior, use one of the following options:
 
         > *logMode = 0 log to console only*
 >
@@ -153,9 +153,7 @@ To run the Upgrade Analytics deployment script:
 >
         > *logMode = 2 log to file only*
 
-3.  For troubleshooting, set isVerboseLogging to $true to generate log information that can help with diagnosing issues. By default, isVerboseLogging is set to $false. Ensure the Diagnostics folder is installed in the same directory as the script to use this mode.
-
-4.  To enable Internet Explorer data collection, set AllowIEData to IEDataOptIn. By default, AllowIEData is set to Disable. Then use one of the following options to determine what Internet Explorer data can be collected:
+3.  To enable Internet Explorer data collection, set AllowIEData to IEDataOptIn. By default, AllowIEData is set to Disable. Then use one of the following options to determine what Internet Explorer data can be collected:
 
     > *IEOptInLevel = 0 Internet Explorer data collection is disabled*
     >
@@ -165,9 +163,7 @@ To run the Upgrade Analytics deployment script:
     >
     > *IEOptInLevel = 3 Data collection is enabled for all sites*
 
-5.  Notify users if they need to restart their computers. By default, this is set to off.
-
-6.  After you finish editing the parameters in RunConfig.bat, run the script as an administrator.
+4.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script.  If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
 
 The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered. 
 
@@ -197,8 +193,12 @@ The deployment script displays the following exit codes to let you know if it wa
 <TR><TD>19<TD>This machine doesn’t have the proper KBs installed. Make sure you have recent compatibility update KB downloaded.
 <TR><TD>20<TD>Error writing RequestAllAppraiserVersions registry key.
 <TR><TD>21<TD>Function – SetRequestAllAppraiserVersions: Unexpected failure.
-<TR><TD>22<TD>Error when running inventory scan.
+<TR><TD>22<TD>RunAppraiser failed with unexpected exception.
 <TR><TD>23<TD>Error finding system variable %WINDIR%.
+<TR><TD>24<TD>SetIEDataOptIn failed when writing IEDataOptIn to registry.
+<TR><TD>25<TD>SetIEDataOptIn failed with unexpected exception.
+<TR><TD>26<TD>The operating system is LTSB SKU. The script does not support LTSB SKUs.
+<TR><TD>27<TD>The operating system is Server SKU. The script does not support Server SKUs.
 </TABLE>
 
 </div>
