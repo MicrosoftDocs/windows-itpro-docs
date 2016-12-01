@@ -211,10 +211,7 @@ For more information, see [Manage settings in the Store for Business](../manage/
 
 ## Supported markets
 
-
 Store for Business is currently available in these markets.
-
-</br>
 
 <table>
    <tr>
@@ -354,9 +351,22 @@ Store for Business is currently available in these markets.
    </tr>
 </table>
 
-|Support for free apps only|
-|--------------------------|
-|Brazil<br>India<br>Russia<br>Taiwan<br>Ukraine|
+<table>
+   <tr>
+        <th align="center">Support for free apps only</th>
+   </tr>
+   <tr align="left">
+     <td>
+        <ul>
+            <li>Brazil</li>
+            <li>India</li>
+            <li>Russia</li>
+            <li>Taiwan</li>
+            <li>Ukraine</li>
+        </ul>
+    </td>
+   </tr>
+</table>
 
   
 ## <a href="" id="isv-wsfb"></a>ISVs and the Store for Business
