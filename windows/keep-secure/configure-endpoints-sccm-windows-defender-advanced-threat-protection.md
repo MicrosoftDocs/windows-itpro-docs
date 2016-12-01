@@ -50,9 +50,9 @@ You can use System Center Configuration Manager’s existing functionality to cr
 4. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/library/gg682178.aspx) topic.
 
     a. Choose a predefined device collection to deploy the package to.
-    
+
 > [!NOTE]
-> Onboarding couldn't be completed during OOBE. Make sure users pass OOBE after running Windows installation or upgrade.
+> Onboarding couldn't be completed during Out-Of-Box Experience (OOBE). Make sure users pass OOBE after running Windows installation or upgrading.
 
 
 ### Configure sample collection settings
