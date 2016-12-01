@@ -18,7 +18,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can download apps and their licenses to deploy within their network, or on devices that are not connected to the Internet. ISVs or devs can opt-in their apps for offline licensing when they submit them to the Windows Dev Center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in the Windows Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store.
+Offline licensing is a new licensing option for Windows 10 Store for Business. With offline licenses, organizations can download apps and their licenses to deploy within their network, or on devices that are not connected to the Internet. ISVs or devs can opt-in their apps for offline licensing when they submit them to the Windows Dev Center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in the Windows Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store.
 
 ## Why offline-licensed apps?
 

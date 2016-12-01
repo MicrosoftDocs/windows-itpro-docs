@@ -11,9 +11,9 @@ author: Scottmca
 
 # Using the Microsoft Surface Deployment Accelerator deployment share
 
-With Microsoft Surface Deployment Accelerator (SDA), you can quickly and easily set up a deployment solution that is ready to deploy Windows to Surface devices. The prepared environment is built on powerful deployment technologies available from Microsoft, such as the [Microsoft Deployment Toolkit (MDT)](https://technet.microsoft.com/en-us/windows/dn475741), and is capable of immediately performing a deployment after configuration. See [Step-by-Step: Surface Deployment Accelerator](https://technet.microsoft.com/en-us/itpro/surface/step-by-step-surface-deployment-accelerator) for a comprehensive walkthrough of using the SDA wizard to set up a deployment share and perform a deployment.
+With Microsoft Surface Deployment Accelerator (SDA), you can quickly and easily set up a deployment solution that is ready to deploy Windows to Surface devices. The prepared environment is built on powerful deployment technologies available from Microsoft, such as the [Microsoft Deployment Toolkit (MDT)](https://technet.microsoft.com/windows/dn475741), and is capable of immediately performing a deployment after configuration. See [Step-by-Step: Surface Deployment Accelerator](https://technet.microsoft.com/itpro/surface/step-by-step-surface-deployment-accelerator) for a comprehensive walkthrough of using the SDA wizard to set up a deployment share and perform a deployment.
 
-For more information about SDA and information on how to download SDA, see [Microsoft Surface Deployment Accelerator (SDA)](https://technet.microsoft.com/en-us/itpro/surface/microsoft-surface-deployment-accelerator).
+For more information about SDA and information on how to download SDA, see [Microsoft Surface Deployment Accelerator (SDA)](https://technet.microsoft.com/itpro/surface/microsoft-surface-deployment-accelerator).
 
 Using SDA provides these primary benefits:
 
@@ -21,7 +21,7 @@ Using SDA provides these primary benefits:
 
 * With SDA, you prepare a deployment environment built on the industry leading deployment solution of MDT. With MDT you can scale from a relatively basic deployment of a few Surface devices to a solution capable of deploying to thousands of devices including all of the different makes and models in your organization and all of the applications required by each device and user.
 
-This article explores four scenarios where you can use SDA to meet the needs of your organization. See [Deploy Windows 10](https://technet.microsoft.com/en-us/itpro/windows/deploy/index) to explore the capabilities of MDT and the Windows deployment technologies available from Microsoft in greater detail. 
+This article explores four scenarios where you can use SDA to meet the needs of your organization. See [Deploy Windows 10](https://technet.microsoft.com/itpro/windows/deploy/index) to explore the capabilities of MDT and the Windows deployment technologies available from Microsoft in greater detail. 
 
 ## Perform a Proof of Concept deployment
 
@@ -41,7 +41,7 @@ Some recommendations for a successful PoC with SDA are:
 
 * Use offline files with SDA to further reduce installation times.
 
-* For help with your PoC, contact [Surface Support](https://www.microsoft.com/surface/en-us/support/contact-us-business).
+* For help with your PoC, contact [Surface Support](https://www.microsoft.com/surface/support/contact-us-business).
 
 ## Perform a pilot deployment
 
@@ -52,7 +52,7 @@ A pilot deployment differs from a PoC. Where a PoC is usually a closed demonstra
 
 For example, you are tasked with deploying Surface devices to mobile workers and you want to test the organization’s MDT deployment process by providing a small number of devices to executives. You can use SDA to create an isolated Surface deployment environment and then copy the task sequence, applications, and drivers needed from the production deployment share. This not only enables you to quickly create a Surface deployment, but it also minimizes the risk to the production deployment process used for other types of devices.
 
-For small organizations, the pilot deployment environment of SDA may suffice as a complete deployment solution. Even if you do not have an existing deployment environment, you can import drivers and applications (covered later in this article) to provide a complete deployment solution based on MDT. Even without previous knowledge of MDT or Windows deployment, you can follow the [Step-by-Step: Surface Deployment Accelerator](https://technet.microsoft.com/en-us/itpro/surface/step-by-step-surface-deployment-accelerator) article to get started with a deployment to Surface devices.
+For small organizations, the pilot deployment environment of SDA may suffice as a complete deployment solution. Even if you do not have an existing deployment environment, you can import drivers and applications (covered later in this article) to provide a complete deployment solution based on MDT. Even without previous knowledge of MDT or Windows deployment, you can follow the [Step-by-Step: Surface Deployment Accelerator](https://technet.microsoft.com/itpro/surface/step-by-step-surface-deployment-accelerator) article to get started with a deployment to Surface devices.
 
 ## Import additional drivers
 
@@ -97,7 +97,7 @@ To import drivers for a peripheral device:
 After the drivers are imported for the Surface model, the deployment task sequence will automatically select the drivers during the deployment process and include them in the Windows environment. When you connect your device, such as the barcode scanner in the example, Windows should automatically detect the device and you should be able to use it immediately.
 
 >[!NOTE]
->You can even import drivers for other computer makes and models to support other devices. See **Step 5: Prepare the drivers repository** in [Deploy a Windows 10 image using MDT 2013 Update 2](https://technet.microsoft.com/en-us/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt) for more information about how to import drivers for other makes and models.
+>You can even import drivers for other computer makes and models to support other devices. See **Step 5: Prepare the drivers repository** in [Deploy a Windows 10 image using MDT 2013 Update 2](https://technet.microsoft.com/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt) for more information about how to import drivers for other makes and models.
 
 ## Import additional applications
 

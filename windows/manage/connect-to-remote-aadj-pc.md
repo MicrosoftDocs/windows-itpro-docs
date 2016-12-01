@@ -32,7 +32,10 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
 
    ![Allow remote connections to this computer](images/allow-rdp.png)
 
-  3. If the user who joined the PC to Azure AD is the only one who is going to connect remotely, no additional configuration is needed. To allow additional users, click **Select Users**.
+  3. If the user who joined the PC to Azure AD is the only one who is going to connect remotely, no additional configuration is needed. To allow additional users to connect to the PC, you must allow remote connections for the local **Authenticated Users** group. Click **Select Users**.
+  >[!NOTE]
+  >You cannot specify individual Azure AD accounts for remote connections.
+
   4. Enter **Authenticated Users**, then click **Check Names**. If the **Name Not Found** window opens, click **Locations** and select this PC.
 
  

@@ -16,12 +16,14 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+
 You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices. The sections in this topic provide the Group Policy and MDM policies for both Windows 10, version 1511, and Windows 10, version 1607. The MDM policies use the OMA-URI setting from the [Policy CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx).  
 
 >[!IMPORTANT]
 >For Windows Update for Business policies to be honored, the Telemetry level of the device must be set to **1 (Basic)** or higher.  If it is set to **0 (Security)**, Windows Update for Business policies will have no effect. For instructions, see [Configure the operating system telemetry level](https://technet.microsoft.com/en-us/itpro/windows/manage/configure-windows-telemetry-in-your-organization#configure-the-operating-system-telemetry-level).
 
-Configuration of Windows 10 Mobile devices is limited to the feature set pertaining to Quality Updates only.  That is, Windows Mobile Feature Updates are categorized the same as Quality Updates, and can only be deferred by setting the Quality Update deferral period, for a maximum period of 30 days.
+Some Windows Update for Business policies are not applicable or behave differently for devices running Windows 10 Mobile Enterprise. Specifically, policies pertaining to Feature Updates will not be applied to Windows 10 Mobile Enterprise. All Windows 10 Mobile updates are recognized as Quality Updates, and can only be deferred or paused using the Quality Update policy settings. Additional information is provided in this topic and in [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md).
 
 ## Start by grouping devices
 
@@ -49,6 +51,9 @@ With Windows Update for Business, you can set a device to be on either the Curre
 
 After you configure the servicing branch (CB or CBB), you can then define if, and for how long, you would like to defer receiving Feature Updates following their availability from Microsoft on Windows Update.  You can defer receiving these Feature Updates for a period of 180 days from their release by setting the `DeferFeatureUpdatesPeriodinDays` value.  
 
+>[!IMPORTANT]
+>This policy does not apply to Windows 10 Mobile Enterprise.
+
 **Examples**
 
 | Settings | Scenario and behavior |
@@ -70,6 +75,9 @@ After you configure the servicing branch (CB or CBB), you can then define if, an
 ## Pause Feature Updates
 
 You can also pause a device from receiving Feature Updates by a period of up to 60 days from when the value is set. After 60 days has passed, pause functionality will automatically expire and the device will scan Windows Update for applicable Feature Updates. Following this scan, Feature Updates for the device can then be paused again.
+
+>[!IMPORTANT]
+>This policy does not apply to Windows 10 Mobile Enterprise.
 
 **Pause Feature Updates policies**
 
@@ -98,6 +106,9 @@ Quality Updates are typically published the first Tuesday of every month, though
 
 You can set your system to receive updates for other Microsoft products—known as Microsoft Updates (such as Microsoft Office, Visual Studio)—along with Windows Updates by setting the **AllowMUUpdateService** policy. When this is done, these Microsoft Updates will follow the same deferral and pause rules as all other Quality Updates.
 
+>[!IMPORTANT]
+>This policy defers both Feature and Quality Updates on Windows 10 Mobile Enterprise.
+
 **Defer Quality Updates policies**
 
 | Policy | Sets registry key under **HKLM\Software** |
@@ -105,12 +116,15 @@ You can set your system to receive updates for other Microsoft products—known 
 | GPO for version 1607: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Quality Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\DeferQualityUpdates</br>\Policies\Microsoft\Windows\WindowsUpdate\DeferQualityUpdatesPeriodInDays  |
 | GPO for version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\DeferUpdatePeriod |
 | MDM for version 1607: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferQualityUpdates** | \Microsoft\PolicyManager\default\Update\DeferQualityUpdatesPeriodInDays |
-| MDM for version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferUpgrade** | \Microsoft\PolicyManager\default\Update\RequireDeferUpdate |
+| MDM for version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferUpgrade** | \Microsoft\PolicyManager\default\Update\RequireDeferUpdate  |
 
 
 ## Pause Quality Updates
 
 You can also pause a system from receiving Quality Updates for a period of up to 35 days from when the value is set.  After 35 days has passed, pause functionality will automatically expire and the system will scan Windows Updates for applicable Quality Updates. Following this scan, Quality Updates for the device can then be paused again.
+
+>[!IMPORTANT]
+>This policy pauses both Feature and Quality Updates on Windows 10 Mobile Enterprise.
 
 **Pause Quality Updates policies**
 
@@ -122,9 +136,9 @@ You can also pause a system from receiving Quality Updates for a period of up to
 | MDM for version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferUpgrade** | \Microsoft\PolicyManager\default\Update\Pause |
 
 
-You can check what date Quality Updates were paused at by checking the registry key **PausedQualityDate** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**. 
+You can check the date that Quality Updates were paused at by checking the registry key **PausedQualityDate** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**. 
 
-The local group policy editor (GPEdit.msc) will not reflect if your Quality Update Pause period has expired. Although the device will resume Quality Updates after 60 days automatically, the pause checkbox will remain checked in the policy editor.  To see if a device has auto-resumed taking Quality Updates, you can check the status registry key **PausedQualityStatus** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**.
+The local group policy editor (GPEdit.msc) will not reflect if your Quality Update Pause period has expired. Although the device will resume Quality Updates after 35 days automatically, the pause checkbox will remain checked in the policy editor.  To see if a device has auto-resumed taking Quality Updates, you can check the status registry key **PausedQualityStatus** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**.
 
 | Value | Status|
 | --- | --- |

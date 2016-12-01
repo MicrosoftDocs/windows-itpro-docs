@@ -11,6 +11,15 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## November 2016
+
+|New or changed topic | Description |
+| --- | --- |
+|[Surface Enterprise Management Mode](surface-enterprise-management-mode.md) | Added procedure for viewing certificate thumbprint. |
+|[Use System Center Configuration Manager to manage devices with SEMM](use-system-center-configuration-manager-to-manage-devices-with-semm.md) | New |
+
+
+
 ## October 2016
 
 | New or changed topic | Description |

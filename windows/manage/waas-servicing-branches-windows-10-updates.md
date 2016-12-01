@@ -16,6 +16,8 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+
 >[!TIP]
 >If you're not familiar with the Windows 10 servicing or release branches, read [Servicing branches](waas-overview.md#servicing-branches) first.
 
@@ -99,6 +101,80 @@ To prevent devices in your enterprise from being enrolled in the Insider Program
 
 - Group Policy: Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds\\**Toggle user control over Insider builds**
 - MDM: Policy CSP - [System/AllowBuildPreview](https://msdn.microsoft.com/library/windows/hardware/dn904962%28v=vs.85%29.aspx#System_AllowBuildPreview)
+
+## Switching branches
+
+During the life of a device, it may be necessary or desirable to switch between the available branches. Depending on the branch you are using, the exact mechanism for doing this can be different; some will be simple, others more involved.
+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">From this branch</th>
+<th align="left">To this branch</th>
+<th align="left">You need to</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left" rowspan="3">Windows Insider Program</td>
+<td align="left">Current Branch</td>
+<td align="left">Wait for the final Current Branch release.</td>
+</tr>
+<tr class="even">
+<td align="left">Current Branch for Business</td>
+<td align="left">Not directly possible, because Windows Insider Program machines are automatically upgraded to the Current Branch release at the end of the development cycle.</td>
+</tr>
+<tr class="odd">
+<td align="left">Long-Term Servicing Branch</td>
+<td align="left">Not directly possible (requires wipe-and-load).</td>
+</tr>
+<tr class="even">
+<td align="left" rowspan="3">Current Branch</td>
+<td align="left">Insider</td>
+<td align="left">Use the Settings app to enroll the device in the Windows Insider Program.</td>
+</tr>
+<tr class="odd">
+<td align="left">Current Branch for Business</td>
+<td align="left">Select the <strong>Defer upgrade</strong> setting, or move the PC to a target group or flight that will not receive the next upgrade until it is business ready. Note that this change will not have any immediate impact; it only prevents the installation of the next Current Branch release.</td>
+</tr>
+<tr class="even">
+<td align="left">Long-Term Servicing Branch</td>
+<td align="left">Not directly possible (requires wipe-and-load).</td>
+</tr>
+<tr class="odd">
+<td align="left" rowspan="3">Current Branch for Business</td>
+<td align="left">Insider</td>
+<td align="left">Use the Settings app to enroll the device in the Windows Insider Program.</td>
+</tr>
+<tr class="even">
+<td align="left">Current Branch</td>
+<td align="left">Disable the <strong>Defer upgrade</strong> setting, or move the PC to a target group or flight that will receive the latest Current Branch release.</td>
+</tr>
+<tr class="odd">
+<td align="left">Long-Term Servicing Branch</td>
+<td align="left">Not directly possible (requires wipe-and-load).</td>
+</tr>
+<tr class="even">
+<td align="left" rowspan="3">Long-Term Servicing Branch</td>
+<td align="left">Insider</td>
+<td align="left">Use media to upgrade to the latest Windows Insider Program build.</td>
+</tr>
+<tr class="odd">
+<td align="left">Current Branch</td>
+<td align="left">Use media to upgrade to a later Current Branch build. (Note that the Current Branch build must be a later build.)</td>
+</tr>
+<tr class="even">
+<td align="left">Current Branch for Business</td>
+<td align="left">Use media to upgrade to a later Current Branch for Business build (Current Branch build plus fixes). Note that it must be a later build.</td>
+</tr>
+</tbody>
+</table>
+
 
 ## Steps to manage updates for Windows 10
 

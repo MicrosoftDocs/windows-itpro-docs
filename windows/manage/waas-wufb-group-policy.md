@@ -15,6 +15,7 @@ localizationpriority: high
 
 - Windows 10
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 Using Group Policy to manage Windows Update for Business is simple and familiar: use the same Group Policy Management Console (GPMC) you use to manage other device and user policy settings in your environment. Before configuring the Windows Update for Business Group Policy settings, consider a [deployment strategy](waas-servicing-strategy-windows-10-updates.md) for updates and feature updates in your environment. 
 
@@ -34,7 +35,7 @@ In this example, you use two security groups to manage your updates: **Ring 4 Br
 
 >[!NOTE]
 >Although the [sample deployment rings](waas-deployment-rings-windows-10-updates.md) specify a feature update deferral of 2 weeks for Ring 5, deferrals in Windows 10, version 1511 are in increments of months only.
-> 
+>
 >Windows 10 version 1511 does not support deferment of CB builds of Windows 10, so you can establish only one CB deployment ring. In version 1607 and later, CB builds can be delayed, making it possible to have multiple CB deployment rings.
 
  Complete the following steps on a PC running the Remote Server Administration Tools or on a domain controller. 
