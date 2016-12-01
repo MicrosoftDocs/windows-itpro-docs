@@ -11,6 +11,12 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## December 2016
+
+|New or changed topic | Description |
+| --- | --- |
+|[Wake on LAN for Surface devices](wake-on-lan-for-surface-devices.md) | New |
+
 ## November 2016
 
 |New or changed topic | Description |
