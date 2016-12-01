@@ -15,7 +15,7 @@ This topic lists new and updated topics in the Surface documentation library.
 
 |New or changed topic | Description |
 | --- | --- |
-|[Wake on LAN for Surface devices](wake-on-lan-for-surface-devices.md) | New |
+|[Wake On LAN for Surface devices](wake-on-lan-for-surface-devices.md) | New |
 
 ## November 2016
 

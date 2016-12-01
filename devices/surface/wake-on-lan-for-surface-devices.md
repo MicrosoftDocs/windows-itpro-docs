@@ -1,6 +1,6 @@
 ---
 title: Wake On LAN for Surface devices (Surface)
-description: See how you can use Wake on LAN to remotely wake up devices to perform management or maintenance tasks, or to enable management solutions automatically – even if the devices are powered down.
+description: See how you can use Wake On LAN to remotely wake up devices to perform management or maintenance tasks, or to enable management solutions automatically – even if the devices are powered down.
 keywords: update, deploy, driver, wol
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -30,7 +30,7 @@ The following devices are supported for Wake On LAN:
 
 ## Wake On LAN driver
 
-To enable Wake On LAN support on Surface devices, a specific driver for the Surface Ethernet adapter is required. This driver is not included in the standard driver and firmware pack for Surface devices – you must download and install it separately. You can download the Surface Wake On LAN driver, SurfaceWOL.msi, from the [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) page in the Microsoft Download Center.
+To enable Wake On LAN support on Surface devices, a specific driver for the Surface Ethernet adapter is required. This driver is not included in the standard driver and firmware pack for Surface devices – you must download and install it separately. You can download the Surface Wake On LAN driver (SurfaceWOL.msi) from the [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) page in the Microsoft Download Center.
 
 You can run this Microsoft Windows Installer (.msi) file on a Surface device to install the Surface Wake On LAN driver, or you can distribute it to Surface devices with an application deployment solution, such as System Center Configuration Manager. To include the Surface Wake On LAN driver during deployment, you can install the .msi file as an application during the deployment process. You can also extract the Surface Wake On LAN driver files to include them in the deployment process. For example, you can include them in your Microsoft Deployment Toolkit (MDT) deployment share. You can read more about Surface deployment with MDT in [Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/surface/deploy-windows-10-to-surface-devices-with-mdt).
 
@@ -40,7 +40,8 @@ You can run this Microsoft Windows Installer (.msi) file on a Surface device to 
 >**HKLM\SYSTEM\CurrentControlSet\Control\Power AllowSystemRequiredPowerRequests** 
 
 To extract the contents of SurfaceWOL.msi, use the MSIExec administrative installation option (**/a**), as shown in the following example, to extract the contents to the **C:\WOL\** folder:
-**msiexec /a surfacewol.msi targetdir=C:\WOL /qn**
+
+   `msiexec /a surfacewol.msi targetdir=C:\WOL /qn`
 
 ## Using Surface Wake On LAN
 
