@@ -2,6 +2,7 @@
 ## [Administrative Tools in Windows 10](administrative-tools-in-windows-10.md)
 ## [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md)
 ## [Update Windows 10 in the enterprise](waas-update-windows-10.md)
+### [Quick guide to Windows as a service](waas-quick-start.md)
 ### [Overview of Windows as a service](waas-overview.md)
 ### [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md)
 ### [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md)
