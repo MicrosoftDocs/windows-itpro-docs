@@ -14,13 +14,12 @@ author: greg-lindsay
 
 -   Windows 10
 
-<P>The following guides provide step-by-step instructions for IT administrators to test Windows 10 deployment procedures in a proof of concept (PoC) environment:
+This guide contains instructions to configure a proof of concept (PoC) environment using Hyper-V that requires a minimum amount of resources. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, also see the following guides:
 
-- (This guide) Step by step guide: Configure a test lab to deploy Windows 10.<BR>
 - [Step by step: Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md).<BR>
 - [Step by step: Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md).<BR>
 
-This guide contains instructions to configure a PoC/test environment using Hyper-V that requires a minimum amount of resources. Subsequent companion guides contain steps to deploy Windows 10 using this environment. Approximately 3 hours are required to configure the PoC environment. You will need a Hyper-V capable computer running Windows 8.1 or later with at least 16GB of RAM. Detailed [requirements](#hardware-and-software-requirements) are provided below. You will also need to have a [Microsoft account](https://www.microsoft.com/account) to use for downloading evaluation software.
+Approximately 3 hours are required to configure the PoC environment. You will need a Hyper-V capable computer running Windows 8.1 or later with at least 16GB of RAM. Detailed [requirements](#hardware-and-software-requirements) are provided below. You will also need to have a [Microsoft account](https://www.microsoft.com/account) to use for downloading evaluation software.
 
 Windows PowerShell commands are provided to set up the PoC environment quickly. You do not need to be an expert in Windows PowerShell to complete the steps in the guide, however you are required to customize some commands to fit your environment. Instructions to "type" Windows PowerShell commands provided in this guide can be followed literally by typing the commands, but when it is possible the preferred method is to copy and paste these commands. 
 
