@@ -65,7 +65,7 @@ Event ID | Error Type | Resolution steps
 5 | Offboarding data was found but couldn't be deleted | Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```.
 10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically<br> ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat```.<br>Verify that the script was ran as an administrator.
 15 |  Failed to start SENSE service |Check the service status (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights).
-15 | Failed to start SENSE service | If the message of the error is: System error 577 has occurred. You need to enable the Windows Defender ELAM driver, see [Ensure the Windows Defender ELAM driver is enabled](#ensure-the-windows-defender-elam-driver-is-enabled) for instructions.
+15 | Failed to start SENSE service | If the message of the error is: System error 577 has occurred. You need to enable the Windows Defender ELAM driver, see [Ensure that Windows Defender is not disabled by a policy](#ensure-that-windows-defender-is-not-disabled-by-a-policy) for instructions.
 30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
 35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location<br>```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```.<br>The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
 40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
@@ -222,98 +222,26 @@ To ensure that sensor has service connectivity, follow the steps described in th
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) topic.
 
-### Ensure the Windows Defender ELAM driver is enabled
-If your endpoints are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled.
+### Ensure that Windows Defender is not disabled by a policy
+If your endpoints are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled. You must ensure that it's not disabled in system policy.
 
-**Check the ELAM driver status:**
+- Ensure that the policy is not disabled.
 
-1.	Open a command-line prompt on the endpoint:
+  Depending on the tool that you use to implement policies, you'll need to verify that the following policy is set to ```false```, for example:
 
-  a. Click **Start**, type **cmd**, and select **Command prompt**.
+  ```<DisableAntiSpyware>true</DisableAntiSpyware>
+  ```
+[ERAN TO PROVIDE THE EXACT NAME OF SPECIFIC POLICY]
+-  If you find that the policy is disabled in system policy, you'll need to enable it.
 
-2.	Enter the following command, and press Enter:
-    ```
-    sc qc WdBoot
-    ```
-    If the ELAM driver is enabled, the output will be:
+- Check the following registry key values to verify that ```DisableAntiSpyware``` is set to ```0```.
 
-    ```
-    [SC] QueryServiceConfig SUCCESS
+[ERAN, IS THIS CORRECT? PLEASE CHECK. OR SHOULD I JUST SAY DELETE THE VALUE DisableAntiSpyware?]
 
-    SERVICE_NAME: WdBoot
-            TYPE               : 1  KERNEL_DRIVER
-            START_TYPE         : 0   BOOT_START
-            ERROR_CONTROL      : 1   NORMAL
-            BINARY_PATH_NAME   : \SystemRoot\system32\drivers\WdBoot.sys
-            LOAD_ORDER_GROUP   : Early-Launch
-            TAG                : 0
-            DISPLAY_NAME       : Windows Defender Boot Driver
-            DEPENDENCIES       :
-            SERVICE_START_NAME :
-    ```
-    If the ELAM driver is disabled the output will be:
-    ```
-    [SC] QueryServiceConfig SUCCESS
+  ![Image of registry key for Windows Defender](images/atp-disableantispyware-regkey.png)
 
-    SERVICE_NAME: WdBoot
-            TYPE               : 1  KERNEL_DRIVER
-            START_TYPE         : 0   DEMAND_START
-            ERROR_CONTROL      : 1   NORMAL
-            BINARY_PATH_NAME   : \SystemRoot\system32\drivers\WdBoot.sys
-            LOAD_ORDER_GROUP   : _Early-Launch
-            TAG                : 0
-            DISPLAY_NAME       : Windows Defender Boot Driver
-            DEPENDENCIES       :
-            SERVICE_START_NAME :
-    ```
 
-#### Enable the ELAM driver
 
-1. Open an elevated PowerShell console on the endpoint:
-
-  a. Click **Start**, type **powershell**.
-
-  b. Right-click **Command prompt** and select **Run as administrator**.
-
-2. Run the following PowerShell cmdlet:
-
-    ```text
-    'Set-ExecutionPolicy -ExecutionPolicy Bypass’
-    ```
-3. Run the following PowerShell script:
-
-    ```text
-    Add-Type @'
-    using System;
-    using System.IO;
-    using System.Runtime.InteropServices;
-    using Microsoft.Win32.SafeHandles;
-    using System.ComponentModel;
-
-    public static class Elam{
-        [DllImport("Kernel32", CharSet=CharSet.Auto, SetLastError=true)]
-        public static extern bool InstallELAMCertificateInfo(SafeFileHandle handle);
-
-        public static void InstallWdBoot(string path)
-        {
-            Console.Out.WriteLine("About to call create file on {0}", path);
-            var stream = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.Read);
-            var handle = stream.SafeFileHandle;
-
-            Console.Out.WriteLine("About to call InstallELAMCertificateInfo on handle {0}", handle.DangerousGetHandle());
-            if (!InstallELAMCertificateInfo(handle))
-            {
-                Console.Out.WriteLine("Call failed.");
-                throw new Win32Exception(Marshal.GetLastWin32Error());
-            }
-            Console.Out.WriteLine("Call successful.");
-        }
-    }
-    '@
-
-    $driverPath = $env:SystemRoot + "\System32\Drivers\WdBoot.sys"
-    [Elam]::InstallWdBoot($driverPath)
-    ```
 
 
 
