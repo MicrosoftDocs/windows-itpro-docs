@@ -225,9 +225,7 @@ If the verification fails and your environment is using a proxy to connect to th
 ### Ensure that Windows Defender is not disabled by a policy
 If your endpoints are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled. You must ensure that it's not disabled in system policy.
 
-- Ensure that the policy is not disabled.
-
-  Depending on the tool that you use to implement policies, you'll need to verify that the following policy is set to ```false```, for example:
+- Depending on the tool that you use to implement policies, you'll need to verify that the following policy is set to ```false```, for example:
 
   ```<DisableAntiSpyware>true</DisableAntiSpyware>
   ```
@@ -239,9 +237,6 @@ If your endpoints are running a third-party antimalware client, the Windows Defe
 [ERAN, IS THIS CORRECT? PLEASE CHECK. OR SHOULD I JUST SAY DELETE THE VALUE DisableAntiSpyware?]
 
   ![Image of registry key for Windows Defender](images/atp-disableantispyware-regkey.png)
-
-
-
 
 
 
