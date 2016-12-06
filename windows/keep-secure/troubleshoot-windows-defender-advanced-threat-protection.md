@@ -46,6 +46,7 @@ U.S. region:
 - winatpfeedback.windows.com
 - winatpmanagement.windows.com
 - winatponboarding.windows.com
+- winatpservicehealth.windows.com
 
 EU region:
 
@@ -57,6 +58,7 @@ EU region:
 - winatpfeedback.windows.com
 - winatpmanagement.windows.com
 - winatponboarding.windows.com
+- winatpservicehealth.windows.com
 
 ### Windows Defender ATP service shows event or error logs in the Event Viewer
 
