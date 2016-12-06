@@ -244,7 +244,7 @@ For more info on virtualization-based security and Device Guard, see [Device Gua
 
 **Turn off Credential Guard by using the Device Guard and Credential Guard hardware readiness tool**
 
-You can also enable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
+You can also disable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
 DG_Readiness_Tool_v2.0.ps1 -Disable -AutoReboot
