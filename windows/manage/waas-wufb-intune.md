@@ -16,6 +16,7 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 You can use Intune to configure Windows Update for Business even if you don’t have on-premises infrastructure when you use Intune in conjunction with Azure AD. Before configuring Windows Update for Business, consider a [deployment strategy](waas-servicing-strategy-windows-10-updates.md) for updates and feature updates in your environment. 
 
@@ -264,7 +265,7 @@ You have now configured the **Ring 4 Broad business users** deployment ring to r
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Manage updates for Windows 10 Mobile Enterprise](waas-mobile-updates.md) 
+- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Manage updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)

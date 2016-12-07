@@ -17,19 +17,25 @@ author: jdeckerMS
 
 The **Take a Test** app in Windows 10, Version 1607, creates the right environment for taking a test:
 
-- A Microsoft Edge browser window opens, showing just the test and nothing else.
-- The clipboard is cleared.
+- Take a Test shows just the test and nothing else.
+- Take a Test clears the clipboard.
 - Students aren’t able to go to other websites.
 - Students can’t open or access other apps.
 - Students can't share, print, or record their screens.
 - Students can’t change settings, extend their display, see notifications, get updates, or use autofill features.
 - Cortana is turned off.
 
+<<<<<<< HEAD
 > **Tip!**
 > To exit **Take a Test**, press Ctrl+Alt+Delete.
 
 
 
+=======
+> [!TIP]  
+> To exit **Take a Test**, press Ctrl+Alt+Delete. 
+
+>>>>>>> f50c53382577edc4df9f4e8c3f911e5a8da4bc83
 ## How you use Take a Test
 
 ![Use test account or test url in Take a Test](images/take-a-test-flow.png)
@@ -47,7 +53,10 @@ The **Take a Test** app in Windows 10, Version 1607, creates the right environme
 1. Sign into the device with an administrator account.
 2. Go to **Settings** > **Accounts** > **Work or school access** > **Set up an account for taking tests**.
 3. Select an existing account to use as the dedicated testing account.
-    >**Note**: If you don't have an account on the device, you can create a new account. To do this, go to **Settings** > **Accounts** > **Other Users** > **Add someone else to this PC** > **I don’t have this person’s sign-in information** > **Add a user without a Microsoft account**.
+
+ > [!NOTE]  
+ > If you don't have an account on the device, you can create a new account. To do this, go to **Settings** > **Accounts** > **Other Users** > **Add someone else to this PC** > **I don’t have this person’s sign-in information** > **Add a user without a Microsoft account**.
+ 
 4. Specify an assessment URL.  
 
 5. Click **Save**.
@@ -65,7 +74,9 @@ Anything hosted on the web can be presented in a locked down manner, not just as
 ```
 ms-edu-secureassessment:<URL>!enforceLockdown
  ```
-
+   > [!NOTE]  
+   > You may want to remove !enforceLockdown for tests that utilizes our lockdown API that checks for running processes before locking down. Removing !enforceLockdown will result in the app not locking down immediately which allows you to close apps that are not allowed to run during lockdown. The test web application may lock down the device once you have closed the apps. 
+   
 2. Distribute the link. You can use the web, email, OneNote, or any other method of your choosing.
 3. To take the test, the student clicks on the link and provides user consent.
 

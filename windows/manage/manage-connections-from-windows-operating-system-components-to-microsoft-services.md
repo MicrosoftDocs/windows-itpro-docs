@@ -23,7 +23,7 @@ Learn about the network connections that Windows components make to Microsoft an
 
 If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure telemetry at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
 
-You can configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. There are many reason why these communications are enabled by default, such as updating malware definitions and maintain current certificate revocation lists, which is why we strongly recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
+You can configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. There are many reasons why these communications are enabled by default, such as updating malware definitions and maintain current certificate revocation lists, which is why we strongly recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
@@ -237,7 +237,8 @@ In Windows 10, version 1507 and Windows 10, version 1511, when you enable the **
 
     -   For **Remote port**, choose **All ports**.
 
-If your organization tests network traffic, you should not use Fiddler to test Windows Firewall settings. Fiddler is a network proxy and Windows Firewall does not block proxy traffic. You should use a network traffic analyzer, such as WireShark or Message Analyzer.
+
+If your organization tests network traffic, do not use a network proxy as Windows Firewall does not block proxy traffic. Instead, use a network traffic analyzer. Based on your needs, there are many network traffic analyzers available at no cost.
 
 ### <a href="" id="bkmk-cortana-mdm"></a>2.2 Cortana and Search MDM policies
 
@@ -835,7 +836,7 @@ Apply the Speech/AllowSpeechModelUpdate MDM policy from the [Policy CSP](https:/
 
    -or-
 
-- Create a REG\_DWORD registry setting called **AllowSpeechModelUpdate** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\Current\\Device\\Speech**, with a value of 0 (zero).
+- Create a REG\_DWORD registry setting called **ModelDownloadAllowed** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Speech_OneCore\\Preferences**, with a value of 0 (zero).
 
 ### <a href="" id="bkmk-priv-accounts"></a>16.7 Account info
 

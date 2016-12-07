@@ -16,6 +16,7 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 System Center Configuration Manager provides maximum control over quality and feature updates for Windows 10. Unlike other servicing tools, Configuration Manager has capabilities that extend beyond servicing, such as application deployment, antivirus management, software metering, and reporting, and provides a secondary deployment method for LTSB clients. Configuration Manager can effectively control bandwidth usage and content distribution through a combination of BranchCache and distribution points. Microsoft encourages organizations currently using Configuration Manager for Windows update management to continue doing so for Windows 10 client computers.
 
@@ -399,7 +400,7 @@ or Manage Windows 10 updates using System Center Configuration Manager (this top
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Manage updates for Windows 10 Mobile Enterprise](waas-mobile-updates.md) 
+- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Manage updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)

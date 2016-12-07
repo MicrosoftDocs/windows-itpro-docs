@@ -12,6 +12,19 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## December 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| [Quick guide to Windows as a service](waas-quick-start.md) | New |
+
+## November 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) | Added guidance for switching devices between servicing branches |
+| [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) | Added Windows 10 IoT Mobile |
+
 ## October 2016
 
 | New or changed topic | Description |
@@ -21,6 +34,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md) |Added an important note about Cortana and Office 365 integration. |
 | [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) | Fixed the explanation for Start behavior when the .xml file containing the layout is not available when the user signs in. | 
 | [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added link to the Windows Restricted Traffic Limited Functionality Baseline. Added Teredo Group Policy. |
+| [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) | Added Current Branch for Business (CBB) support for Windows 10 IoT Mobile. |
 
 
 ## September 2016

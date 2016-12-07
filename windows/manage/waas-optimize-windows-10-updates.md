@@ -15,6 +15,7 @@ localizationpriority: high
 
 - Windows 10
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 When considering your content distribution strategy for Windows 10, think about enabling a form of peer-to-peer content sharing to reduce bandwidth issues during updates. Windows 10 offers two peer-to-peer options for update content distribution: Delivery Optimization and BranchCache. These technologies can be used with several of the servicing tools for Windows 10.
 
@@ -63,7 +64,7 @@ or [Manage Windows 10 updates using System Center Configuration Manager](waas-ma
 ## Related topics
 
 - [Update Windows 10 in the enterprise](waas-update-windows-10.md)
-- [Manage updates for Windows 10 Mobile Enterprise](waas-mobile-updates.md) 
+- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)

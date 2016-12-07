@@ -16,6 +16,8 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile 
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+
 You can use Group Policy settings or mobile device management (MDM) to configure when devices will restart after a Windows 10 update is installed. You can schedule update installation and set policies for restart, configure active hours for when restarts will not occur, or you can do both.
 
 ## Schedule update installation
@@ -73,7 +75,7 @@ In the Group Policy editor, you will see a number of policy settings that pertai
 
 - [Update Windows 10 in the enterprise](waas-update-windows-10.md)
 - [Overview of Windows as a service](waas-overview.md)
-- [Manage updates for Windows 10 Mobile Enterprise](waas-mobile-updates.md) 
+- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)

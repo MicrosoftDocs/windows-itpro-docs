@@ -14,6 +14,22 @@ localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
+## December 2016
+
+| New or changed topic | Description|
+| --- | --- |
+| [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md) | Updated example procedures to include screenshots. |
+
+## November 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| [Differences between Surface Hub and Windows 10 Enterprise](differences-between-surface-hub-and-windows-10-enterprise.md) | New |
+| [Connect other devices and display with Surface Hub](connect-and-display-with-surface-hub.md) | Added information for Video Out and a table to help select a display method. |
+| [Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md) | Added instructions for creating accounts for Surface Hub in a Skype for Business hybrid environment. |
+
+
+
 ## RELEASE: Windows Anniversary Update for Surface Hub (Windows 10, version 1607)
 The topics in this library have been updated for Windows 10, version 1607 (also known as Windows Anniversary Update for Surface Hub). These topics had significant updates for this release:
 - [Windows Updates (Surface Hub)](manage-windows-updates-for-surface-hub.md)

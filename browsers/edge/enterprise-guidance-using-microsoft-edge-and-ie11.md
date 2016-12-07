@@ -25,6 +25,12 @@ Microsoft Edge is the default browser experience for Windows 10 and Windows 10 M
 
 We also recommend that you upgrade to IE11 if you're running any earlier versions of Internet Explorer. IE11 is supported on Windows 7, Windows 8.1, and Windows 10. So any legacy apps that work with IE11 will continue to work even as you migrate to Windows 10.
 
+If you're having trouble deciding whether Microsoft Edge is good for your organization, you can take a look at this infographic about the potential impact of using Microsoft Edge in an organization.
+
+![Microsoft Edge infographic](images/microsoft-edge-infographic-sm.png)<br>
+[Click to enlarge](img-microsoft-edge-infographic-lg.md)<br>
+[Click to download image](https://www.microsoft.com/en-us/download/details.aspx?id=53892)
+
 ### Microsoft Edge
 Microsoft Edge takes you beyond just browsing to actively engaging with the web through features like Web Note, Reading View, and Cortana.
 
@@ -44,6 +50,7 @@ IE11 offers enterprises additional security, manageability, performance, backwar
 -   **Administration.** IE11 can use the Internet Explorer Administration Kit (IEAK) 11 or MSIs for deployment, and includes more than 1,600 Group Policies and preferences for granular control.
 
 ## Related topics
+- [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/en-us/download/details.aspx?id=53892)
 - [Web Application Compatibility Lab Kit for Internet Explorer 11](https://technet.microsoft.com/en-us/browser/mt612809.aspx)
 - [Download Internet Explorer 11](http://windows.microsoft.com/en-US/internet-explorer/download-ie)
 - [Microsoft Edge - Deployment Guide for IT Pros](https://technet.microsoft.com/itpro/microsoft-edge/index)

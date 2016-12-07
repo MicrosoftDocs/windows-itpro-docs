@@ -21,7 +21,11 @@ localizationpriority: high
 Microsoft Edge is the new, default web browser for Windows 10, helping you to experience modern web standards, better performance, improved security, and increased reliability. Microsoft Edge also introduces new features like Web Note, Reading View, and Cortana that you can use along with your normal web browsing abilities.
 
 Microsoft Edge lets you stay up-to-date through the Windows Store and to manage your enterprise through Group Policy or your mobile device management (MDM) tools.
-<p>**Note**<br>This content isn't meant to be a step-by-step guide, so not everything that's talked about in this guide will be necessary for you to manage and deploy Microsoft Edge in your company.
+
+> **Note**<br>This content isn't meant to be a step-by-step guide, so not everything that's talked about in this guide will be necessary for you to manage and deploy Microsoft Edge in your company.
+
+
+> **Note**<br>For more info about the potential impact of using Microsoft Edge in a large organization, you can download an infographic from here: [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/en-us/download/details.aspx?id=53892).
 
 ## In this section
 
@@ -54,7 +58,9 @@ You'll need to keep running them using IE11. If you don't have IE11 installed an
 
 ## Related topics
 
+- [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/en-us/download/details.aspx?id=53892)
 - [Download Internet Explorer 11](https://go.microsoft.com/fwlink/p/?linkid=290956)
 - [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](https://go.microsoft.com/fwlink/p/?LinkId=760644)
 - [Internet Explorer 11 - FAQ for IT Pros](https://go.microsoft.com/fwlink/p/?LinkId=760645)
 - [Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide](https://go.microsoft.com/fwlink/p/?LinkId=760646)
+

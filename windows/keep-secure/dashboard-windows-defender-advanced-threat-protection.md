@@ -51,7 +51,7 @@ This tile shows you a list of machines with the highest number of active alerts.
 
 ![The Machines at risk tile shows a list of machines with the highest number of alerts, and a breakdown of the severity of the alerts](images/machines-at-risk.png)
 
-Click the name of the machine to see details about that machine. For more information see, [Investigate Windows Defender ATP alerts](investigate-alerts-windows-defender-advanced-threat-protection.md#investigate-a-machine).
+Click the name of the machine to see details about that machine. For more information see, [Investigate machines in the Windows Defender Advanced Threat Protection Machines view](investigate-machines-windows-defender-advanced-threat-protection.md).
 
 You can also click **Machines view** at the top of the tile to go directly to the **Machines view**, sorted by the number of active alerts. For more information see, [Investigate machines in the Windows Defender Advanced Threat Protection Machines view](investigate-machines-windows-defender-advanced-threat-protection.md).
 

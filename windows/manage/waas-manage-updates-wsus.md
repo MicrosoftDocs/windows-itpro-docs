@@ -15,6 +15,7 @@ localizationpriority: high
 
 - Windows 10
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 WSUS is a Windows Server role available in the Windows Server operating systems. It provides a single hub for Windows updates within an organization. WSUS allows companies not only to defer updates but also to selectively approve them, choose when they’re delivered, and determine which individual devices or groups of devices receive them. WSUS provides additional control over Windows Update for Business but does not provide all the scheduling options and deployment flexibility that System Center Configuration Manager provides.
 
@@ -24,7 +25,7 @@ When you choose WSUS as your source for Windows updates, you use Group Policy to
 
 ## Requirements for Windows 10 servicing with WSUS
 
-To be able to use WSUS to manage and deploy Windows 10 feature updates, you must have WSUS 4.0, which is available in the Windows Server 2012 R2 and Windows Server 2012 operating systems. In addition to WSUS 4.0, you must install the [KB3095113](https://support.microsoft.com/kb/3095113) and [KB3148812](https://support.microsoft.com/kb/3159706) patches on the WSUS server. 
+To be able to use WSUS to manage and deploy Windows 10 feature updates, you must have WSUS 4.0, which is available in the Windows Server 2012 R2 and Windows Server 2012 operating systems. In addition to WSUS 4.0, you must install the [KB3095113](https://support.microsoft.com/kb/3095113) and [KB3159706](https://support.microsoft.com/kb/3159706) patches on the WSUS server. 
 
 ## WSUS scalability
 
@@ -342,7 +343,7 @@ or [Manage Windows 10 updates using System Center Configuration Manager](waas-ma
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Manage updates for Windows 10 Mobile Enterprise](waas-mobile-updates.md) 
+- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Manage updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)

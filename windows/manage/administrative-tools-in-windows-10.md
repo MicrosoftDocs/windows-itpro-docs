@@ -32,7 +32,7 @@ If the content that is linked to a tool in the following list doesn't provide th
  
 
 -   [Component Services]( https://go.microsoft.com/fwlink/p/?LinkId=708489)
--   [Computer Management](https://go.microsoft.com/fwlink/p/?LinkId=708490)
+-   [Computer Management](https://support.microsoft.com/kb/308423)
 -   [Defragment and Optimize Drives](https://go.microsoft.com/fwlink/p/?LinkId=708488)
 -   [Disk Cleanup](https://go.microsoft.com/fwlink/p/?LinkID=698648)
 -   [Event Viewer](https://go.microsoft.com/fwlink/p/?LinkId=708491)

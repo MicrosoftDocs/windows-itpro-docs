@@ -26,15 +26,14 @@ Use the following information to plan how to deploy Office by using Microsoft Ap
 
 ## <a href="" id="bkmk-lang-pack"></a>App-V support for Language Packs
 
-You can use the App-V Sequencer to create plug-in packages for Language Packs, Language Interface Packs, Proofing Tools and ScreenTip Languages. You can then include the plug-in packages in a Connection Group, along with the Office 2013 package that you create by using the Office Deployment Toolkit. The Office applications and the plug-in Language Packs interact seamlessly in the same connection group, just like any other packages that are grouped together in a connection group.
+You can use the App-V Sequencer to create plug-in packages for Language Packs, Language Interface Packs, Proofing Tools and ScreenTip Languages. You can then include the plug-in packages in a Connection Group, along with the Office package that you create by using the Office Deployment Toolkit. The Office applications and the plug-in Language Packs interact seamlessly in the same connection group, just like any other packages that are grouped together in a connection group.
 
 **Note**  
 Microsoft Visio and Microsoft Project do not provide support for the Thai Language Pack.
 
- 
-
 ## <a href="" id="bkmk-office-vers-supp-appv"></a>Supported versions of Microsoft Office
 
+<!-- As of February 28, 2017, the first row of the table should be updated, because at that point, support for the Office 2013 version of Office 365 will end. It might also be good to have a link to this KB article: https://support.microsoft.com/kb/3199744 -->
 
 The following table lists the versions of Microsoft Office that App-V supports, methods of Office package creation, supported licensing, and supported deployments.
 
@@ -55,7 +54,7 @@ The following table lists the versions of Microsoft Office that App-V supports, 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Office 365 ProPlus</p>
+<td align="left"><p>Office 365 ProPlus (either the Office 2013 or the Office 2016 version)</p>
 <p>Also supported:</p>
 <ul>
 <li><p>Visio Pro for Office 365</p></li>
@@ -71,6 +70,22 @@ The following table lists the versions of Microsoft Office that App-V supports, 
 </ul></td>
 </tr>
 <tr class="even">
+<td align="left"><ul>
+<li><p>Visio Professional 2016 (C2R-P)</p></li>
+<li><p>Visio Standard 2016 (C2R-P)</p></li>
+<li><p>Project Professional 2016 (C2R-P)</p></li>
+<li><p>Project Standard 2016 (C2R-P)</p></li>
+</ul></td>
+<td align="left"><p>Office Deployment Tool</p></td>
+<td align="left"><p>Volume Licensing</p></td>
+<td align="left"><ul>
+<li><p>Desktop</p></li>
+<li><p>Personal VDI</p></li>
+<li><p>Pooled VDI</p></li>
+<li><p>RDS</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>Office Professional Plus 2013</p>
 <p>Also supported:</p>
 <ul>
@@ -89,12 +104,9 @@ The following table lists the versions of Microsoft Office that App-V supports, 
 </tbody>
 </table>
 
- 
-
 ## <a href="" id="bkmk-plan-coexisting"></a>Planning for using App-V with coexisting versions of Office
 
-
-You can install more than one version of Microsoft Office side by side on the same computer by using “Microsoft Office coexistence.” You can implement Office coexistence with combinations of all major versions of Office and with installation methods, as applicable, by using the Windows Installer-based (MSi) version of Office, Click-to-Run, and App-V. However, using Office coexistence is not recommended by Microsoft.
+You can install more than one version of Microsoft Office side by side on the same computer by using “Microsoft Office coexistence.” You can implement Office coexistence with combinations of all major versions of Office and with installation methods, as applicable, by using the Windows Installer-based (MSI) version of Office, Click-to-Run, and App-V. However, using Office coexistence is not recommended by Microsoft.
 
 Microsoft’s recommended best practice is to avoid Office coexistence completely to prevent compatibility issues. However, when you are migrating to a newer version of Office, issues occasionally arise that can’t be resolved immediately, so you can temporarily implement coexistence to help facilitate a faster migration to the latest product version. Using Office coexistence on a long-term basis is never recommended, and your organization should have a plan to fully transition in the immediate future.
 
@@ -115,19 +127,22 @@ Before implementing Office coexistence, review the following Office documentatio
 </thead>
 <tbody>
 <tr class="odd">
+<td align="left"><p>Office 2016</p></td>
+<td align="left"><p>[Information about how to use Outlook 2016 or 2013 and an earlier version of Outlook installed on the same computer](https://support.microsoft.com/kb/2782408)</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p>Office 2013</p></td>
 <td align="left"><p>[Information about how to use Office 2013 suites and programs (MSI deployment) on a computer that is running another version of Office](http://support.microsoft.com/kb/2784668)</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>Office 2010</p></td>
 <td align="left"><p>[Information about how to use Office 2010 suites and programs on a computer that is running another version of Office](http://support.microsoft.com/kb/2121447)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
 
-The Office documentation provides extensive guidance on coexistence for Windows Installer-based (MSi) and Click-to-Run installations of Office. This App-V topic on coexistence supplements the Office guidance with information that is more specific to App-V deployments.
+The Office documentation provides extensive guidance on coexistence for Windows Installer-based (MSI) and Click-to-Run installations of Office. This App-V topic on coexistence supplements the Office guidance with information that is more specific to App-V deployments.
 
 ### Supported Office coexistence scenarios
 
@@ -166,10 +181,12 @@ The Windows Installer-based and Click-to-Run Office installation methods integra
 <td align="left"><p>Office 2013</p></td>
 <td align="left"><p>Always integrated. Windows operating system integrations cannot be disabled.</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p>Office 2016</p></td>
+<td align="left"><p>Always integrated. Windows operating system integrations cannot be disabled.</p></td>
+</tr>
 </tbody>
 </table>
-
- 
 
 Microsoft recommends that you deploy Office coexistence with only one integrated Office instance. For example, if you’re using App-V to deploy Office 2010 and Office 2013, you should sequence Office 2010 in non-integrated mode. For more information about sequencing Office in non-integration (isolated) mode, see [How to sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](http://support.microsoft.com/kb/2830069).
 
@@ -183,9 +200,9 @@ The following limitations can occur when you install the following versions of O
 
 -   Office 2010 by using the Windows Installer-based version
 
--   Office 2013 by using App-V
+-   Office 2013 or Office 2016 by using App-V
 
-After you publish Office 2013 by using App-V side by side with an earlier version of the Windows Installer-based Office 2010 might also cause the Windows Installer to start. This is because the Windows Installer-based or Click-to-Run version of Office 2010 is trying to automatically register itself to the computer.
+After you publish Office 2013 or Office 2016 by using App-V side by side with an earlier version of the Windows Installer-based Office 2010, it might also cause the Windows Installer to start. This is because the Windows Installer-based or Click-to-Run version of Office 2010 is trying to automatically register itself to the computer.
 
 To bypass the auto-registration operation for native Word 2010, follow these steps:
 
@@ -215,12 +232,13 @@ To bypass the auto-registration operation for native Word 2010, follow these ste
 
 8.  On the File menu, click **Exit** to close Registry Editor.
 
+
+
 ## <a href="" id="bkmk-office-integration-win"></a>How Office integrates with Windows when you use App-V to deploy Office
 
+When you deploy Office 2013 or Office 2016 by using App-V, Office is fully integrated with the operating system, which provides end users with the same features and functionality as Office has when it is deployed without App-V.
 
-When you deploy Office 2013 by using App-V, Office is fully integrated with the operating system, which provides end users with the same features and functionality as Office has when it is deployed without App-V.
-
-The Office 2013 App-V package supports the following integration points with the Windows operating system:
+The Office 2013 or Office 2016 App-V package supports the following integration points with the Windows operating system:
 
 <table>
 <colgroup>
@@ -235,8 +253,8 @@ The Office 2013 App-V package supports the following integration points with the
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Lync meeting Join Plug-in for Firefox and Chrome</p></td>
-<td align="left"><p>User can join Lync meetings from Firefox and Chrome</p></td>
+<td align="left"><p>Skype for Business (formerly Lync) meeting Join Plug-in for Firefox and Chrome</p></td>
+<td align="left"><p>User can join Skype meetings from Firefox and Chrome</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Sent to OneNote Print Driver</p></td>
@@ -251,8 +269,8 @@ The Office 2013 App-V package supports the following integration points with the
 <td align="left"><p>User can send to OneNote from IE</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Firewall Exception for Lync and Outlook</p></td>
-<td align="left"><p>Firewall Exception for Lync and Outlook</p></td>
+<td align="left"><p>Firewall Exception for Skype for Business (formerly Lync) and Outlook</p></td>
+<td align="left"><p>Firewall Exception for Skype for Business (formerly Lync) and Outlook</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MAPI Client</p></td>
@@ -307,6 +325,6 @@ Add or vote on suggestions on the [Application Virtualization feedback site](htt
 
 ## Related topics
 
+- [Deploying Microsoft Office 2016 by Using App-V](appv-deploying-microsoft-office-2016-with-appv.md)
 - [Deploying Microsoft Office 2013 by Using App-V](appv-deploying-microsoft-office-2013-with-appv.md)
-
 - [Deploying Microsoft Office 2010 by Using App-V](appv-deploying-microsoft-office-2010-wth-appv.md)

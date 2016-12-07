@@ -15,6 +15,7 @@ localizationpriority: high
 
 - Windows 10
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 Delivery Optimization is a self-organizing distributed cache solution for businesses looking to reduce bandwidth consumption for operating system updates, operating system upgrades, and applications by allowing clients to download those elements from alternate sources (such as other peers on the network) in addition to the traditional Internet-based Windows Update servers. You can use Delivery Optimization in conjunction with stand-alone Windows Update, Windows Server Update Services (WSUS), and Windows Update for Business. This functionality is similar to BranchCache in other systems, such as System Center Configuration Manager. 
 
@@ -241,7 +242,7 @@ On devices that are not preferred, you can choose to set the following policy to
 - [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Manage updates for Windows 10 Mobile Enterprise](waas-mobile-updates.md) 
+- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Manage updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)

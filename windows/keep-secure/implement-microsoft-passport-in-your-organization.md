@@ -20,9 +20,9 @@ localizationpriority: high
 You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello on devices running Windows 10.
 
 >[!IMPORTANT]
->The Group Policy setting **Turn on PIN sign-in** does not apply to Windows Hello for Business. It still prevents or enables the creation of a convenience PIN for Windows 10, version 1507 and 1511. 
+>The Group Policy setting **Turn on PIN sign-in** does not apply to Windows Hello for Business. Use the **Turn on PIN sign-in** setting to allow or deny the use of a convenience PIN for Windows 10, versions 1507, 1511, and 1607. 
 >
->Beginning in version 1607, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN for Windows 10, version 1607, enable the Group Policy setting **Turn on convenience PIN sign-in**. 
+>Beginning in version 1607, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN for Windows 10, version 1607, enable the Group Policy setting **Turn on convenience PIN sign-in**. Learn more in the blog post [Changes to Convenience PIN/Windows Hello Behavior in Windows 10, version 1607](https://blogs.technet.microsoft.com/ash/2016/08/13/changes-to-convenience-pin-and-thus-windows-hello-behaviour-in-windows-10-version-1607/).
 >
 >Use **Windows Hello for Business** policy settings to manage PINs for Windows Hello for Business.
  
@@ -131,7 +131,7 @@ The following table lists the Group Policy settings that you can configure for H
 </td>
 </tr>
 <tr>
-<td><a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone Sign-in</a></td>
+<td><a href="prepare-people-to-use-microsoft-passport.md#bmk-remote">Phone Sign-in</a></td>
 <td>
 <p>Use Phone Sign-in</p>
 <div class="alert"><b>Note</b>  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.</div>
@@ -275,7 +275,7 @@ The following table lists the MDM policy settings that you can configure for Win
 <td>Device or user</td>
 <td>1</td>
 <td>
-<p>1: Uppercase letters are not allowed </p>
+<p>1: Uppercase letters are not allowed. </p>
 <p>2: At least one uppercase letter is required</p>
 </td>
 </tr>
@@ -289,8 +289,8 @@ The following table lists the MDM policy settings that you can configure for Win
 <td>Device or user</td>
 <td>False</td>
 <td>
-<p>True: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone sign-in</a> is enabled.</p>
-<p>False: <a href="prepare-people-to-use-microsoft-passport.md#BMK_remote">Phone sign-in</a> is disabled.</p>
+<p>True: <a href="prepare-people-to-use-microsoft-passport.md#bmk-remote">Phone sign-in</a> is enabled.</p>
+<p>False: <a href="prepare-people-to-use-microsoft-passport.md#bmk-remote">Phone sign-in</a> is disabled.</p>
 </td>
 </tr>
 </table>
@@ -318,27 +318,27 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <tbody>
 <tr class="odd">
 <td align="left">Key-based authentication</td>
-<td align="left">Azure AD subscription</td>
+<td align="left">[Azure AD subscription](https://docs.microsoft.com/azure/active-directory/active-directory-howto-tenant)</td>
 <td align="left"><ul>
-<li>Azure AD subscription</li>
-<li>[Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
+<li>[Azure AD subscription](https://docs.microsoft.com/azure/active-directory/active-directory-howto-tenant)</li>
+<li>[Azure AD Connect](https://docs.microsoft.com/azure/active-directory/active-directory-aadconnect)</li>
 <li>A few Windows Server 2016 domain controllers on-site</li>
-<li>A management solution, such as Configuration Manager, Group Policy, or MDM</li>
-<li>Active Directory Certificate Services (AD CS) without Network Device Enrollment Service (NDES)</li>
+<li>A management solution, such as [Configuration Manager](https://docs.microsoft.com/sccm/index), Group Policy, or MDM</li>
+<li>[Active Directory Certificate Services](https://technet.microsoft.com/windowsserver/dd448615.aspx) (AD CS) without Network Device Enrollment Service (NDES)</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left">Certificate-based authentication</td>
 <td align="left"><ul>
-<li>Azure AD subscription</li>
+<li>[Azure AD subscription](https://docs.microsoft.com/azure/active-directory/active-directory-howto-tenant)</li>
 <li>Intune or non-Microsoft mobile device management (MDM) solution</li>
-<li>PKI infrastructure</li>
+<li>[PKI infrastructure](https://msdn.microsoft.com/library/windows/desktop/bb427432(v=vs.85).aspx)</li>
 </ul></td>
 <td align="left"><ul>
-<li>Azure AD subscription</li>
-<li>[Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
-<li>AD CS with NDES</li>
-<li>Configuration Manager for domain-joined certificate enrollment, or InTune for non-domain-joined devices, or a non-Microsoft MDM service that supports Passport for Work</li>
+<li>[Azure AD subscription](https://docs.microsoft.com/azure/active-directory/active-directory-howto-tenant)</li>
+<li>[Azure AD Connect](https://docs.microsoft.com/azure/active-directory/active-directory-aadconnect)</li>
+<li>[AD CS](https://technet.microsoft.com/windowsserver/dd448615.aspx) with NDES</li>
+<li>[Configuration Manager](https://docs.microsoft.com/sccm/index) for domain-joined certificate enrollment, or [InTune](https://docs.microsoft.com/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) for non-domain-joined devices, or a non-Microsoft MDM service that supports Hello for Business</li>
 </ul></td>
 </tr>
 </tbody>
@@ -346,7 +346,9 @@ You’ll need this software to set Windows Hello for Business policies in your e
  
 Configuration Manager and MDM provide the ability to manage Windows Hello for Business policy and to deploy and manage certificates protected by Windows Hello for Business.
 
-Azure AD provides the ability to register devices with your enterprise and to provision Windows Hello for Business for organization accounts.
+[Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-passport) provides the ability to register devices with your enterprise and to provision Windows Hello for Business for organization accounts.
+
+[Learn more about enabling Windows Hello for Business in an Azure AD/AD hybrid environment.](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-passport-deployment)
 
 
 ## Windows Hello for BYOD

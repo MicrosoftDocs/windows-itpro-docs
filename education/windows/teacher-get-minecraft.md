@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# For teachers: get Minecraft: Education Edition
+# For teachers - get Minecraft: Education Edition
 
 **Applies to:**
 
@@ -38,6 +38,8 @@ Learn how teachers can get and distribute Minecraft: Education Edition.
 
     ![Get Minecraft app in Store](images/minecraft-get-the-app.png)
     
+If you need additional licenses for **Minecraft: Education Edition**, see [Purchase additional licenses](https://technet.microsoft.com/edu/windows/education-scenarios-store-for-business#purchase-additional-licenses).
+    
 ## Distribute Minecraft
 
 After Minecraft: Education Edition is added to your Windows Store for Business inventory, you have three options:
@@ -52,7 +54,7 @@ After Minecraft: Education Edition is added to your Windows Store for Business i
 You can install the app on your PC. This gives you a chance to work with the app before using it with your students.   
 
 1. Sign in to Windows Store for Business. 
-2. Click **Manage**, and then click **Install for me**.
+2. Click **Manage**, and then click **Install**.
 
     ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)
 
@@ -65,17 +67,17 @@ Enter email addresses for your students, and each student will get an email with
 1. Sign in to Windows Store for Business. 
 2. Click **Manage**.
 
-    ![Minecraft Education Edition product page](images/mc-assign-to-others-teacher.png)
+    ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)
 
-3. Click **Assign to people**.
- 
-    ![Assign to people](images/minecraft-assign-to-people.png)
+3. Click **Invite people**.
     
-4. Type the name, or email address of the student you want to assign the app to, and then click **Assign**.
+4. Type the name, or email address of the student or group you want to assign the app to, and then click **Assign**.
 
-   You can only assign the app to students with work or school accounts. If you don't find the student, contact your IT admin to add a work or school account for the student.
+   ![Assign to people showing student name](images/minecraft-assign-to-people-name.png)
+   
+   You can assign the app to students with work or school accounts. </br>
+   If you don't find the student, you can still assign the app to them if self-service sign up is supported for your domain. Students will receive an email with a link to Office 365 portal where they can create an account, and then install **Minecraft: Education Edition**. Questions about self-service sign up? Check with your admin. 
 
-    ![Assign to people showing student name](images/minecraft-assign-to-people-name.png)
 
 **To finish Minecraft install (for students)**
 
@@ -151,6 +153,9 @@ If you ran **InstallMinecraftEducationEdition.bat** and Minecraft: Education Edi
 If you are still having trouble installing the app, you can get more help on our [Support page](https://go.microsoft.com/fwlink/?LinkID=799757). 
 
 ## Related topics
+
+[Working with Windows Store for Business – education scenarios](education-scenarios-store-for-business.md) </br>
+Learn about overall Windows Store for Business management: manage settings, shop for apps, distribute apps, manage inventory, and manage order history.
 
 [Get Minecraft: Education Edition](get-minecraft-for-education.md)
 

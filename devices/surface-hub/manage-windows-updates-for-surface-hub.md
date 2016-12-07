@@ -19,7 +19,7 @@ New releases of the Surface Hub operating system are published through Windows U
 
 You can also configure Surface Hub to receive updates from both Windows Update for Business and WSUS. See [Integrate Windows Update for Business with Windows Server Update Services](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-integrate-wufb#integrate-windows-update-for-business-with-windows-server-update-services) for details.
 
-| Capabilities | Windows Update for Business | Windows server Update Services (WSUS) |
+| Capabilities | Windows Update for Business | Windows Server Update Services (WSUS) |
 | ------------ | --------------------------- | ------------------------------------- |
 | Receive updates directly from Microsoft's Windows Update service, with no additional infrastructure required.  | Yes  | No  |
 | Defer updates to provide additional time for testing and evaluation. | Yes  | Yes  |
@@ -92,9 +92,9 @@ Once you've determined deployment rings for your Surface Hubs, configure update 
 > If you encounter issues during the update rollout, you can pause updates using [Update/PauseFeatureUpdates](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_PauseFeatureUpdates) and [Update/PauseQualityUpdates](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_PauseQualityUpdates).
 
 
-## Use Windows Server Update Services (WSUS)
+## Use Windows Server Update Services
 
-You can connect Surface Hub to your WSUS server to manage updates. Updates will be controlled through approvals or automatic deployment rules configured in your WSUS server, so new upgrades will not be deployed until you choose to deploy them.
+You can connect Surface Hub to your indows Server Update Services (WSUS) server to manage updates. Updates will be controlled through approvals or automatic deployment rules configured in your WSUS server, so new upgrades will not be deployed until you choose to deploy them.
 
 **To manually connect a Surface Hub to a WSUS server:**
 1. Open **Settings** on your Surface Hub.
