@@ -42,8 +42,10 @@ The **Current issues** tab shows the current state of the Windows Defender ATP s
 - Next steps
 - Expected resolution time
 
+When an issue is resolved, it gets recorded in the **Status history** tab.
+
 ## Status history
-When an issue is resolved, it gets recorded in the **Status history** tab. The **Status history** tab reflects all the historical issues that were seen and resolved. The following service details are shown to help you gain better insight about the historical issues:
+The **Status history** tab reflects all the historical issues that were seen and resolved. The following service details are shown to help you gain better insight about the historical issues:
 
 - Date and time for when the issue was detected
 - Preliminary root cause
