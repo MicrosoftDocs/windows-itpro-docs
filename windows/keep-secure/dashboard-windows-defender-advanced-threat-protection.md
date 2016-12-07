@@ -60,7 +60,7 @@ The **Status** tile informs you if the service is active or if there are issues 
 
 ![The Status tile shows an overall indicator of the service and the total number of machines reporting to the service](images/status-tile.png)
 
-For more information on the service status, see [Check the Windows Defender ATP service status](service-status-windows-defender-defender-advanced-threat-protection.md).
+For more information on the service status, see [Check the Windows Defender ATP service status](service-status-windows-defender-advanced-threat-protection.md).
 
 ## Machines reporting
 The **Machines reporting** tile shows a bar graph that represents the number of machines reporting alerts daily. Hover over individual bars on the graph to see the exact number of machines reporting in each day.
