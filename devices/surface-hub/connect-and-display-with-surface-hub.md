@@ -13,7 +13,7 @@ localizationpriority: medium
 # Connect other devices and display with Surface Hub
 
 
-You can connect other devices to your Microsoft Surface Hub to display content. This topic describes the Guest Mode, Replacement PC Mode, and Video Out functionality available through wired connections.
+You can connect other devices to your Microsoft Surface Hub to display content. This topic describes the Guest Mode, Replacement PC Mode, and Video Out functionality available through wired connections, and also lists accessories that you can connect to Surface Hub using [Bluetooth](#bluetooth-accessories).
 
 ## Which method should I choose?
 
@@ -470,3 +470,11 @@ Video Out port on the 84" Surface Hub
 </tbody>
 </table>
 
+## Bluetooth accessories
+
+You can connect the following accessories to Surface Hub using Bluetooth:
+
+- Mice
+- Keyboards
+- Headsets
+- Speakers
