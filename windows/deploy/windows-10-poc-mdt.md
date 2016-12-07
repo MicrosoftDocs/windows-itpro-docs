@@ -21,8 +21,7 @@ The PoC environment is a virtual network running on Hyper-V with three virtual m
 - **SRV1**: A dual-homed contoso.com domain member server, DNS server, and default gateway providing NAT service for the PoC network.
 - **PC1**: A contoso.com member computer running Windows 7, Windows 8, or Windows 8.1 that has been shadow-copied from a physical computer on your corporate network.
 
->This guide leverages the Hyper-V server role to perform procedures. 
->- If you do not complete all steps in a single session, consider using [checkpoints](https://technet.microsoft.com/library/dn818483.aspx) and [saved states](https://technet.microsoft.com/library/ee247418.aspx) to pause, resume, or restart your work.
+>This guide leverages the Hyper-V server role to perform procedures. If you do not complete all steps in a single session, consider using [checkpoints](https://technet.microsoft.com/library/dn818483.aspx) and [saved states](https://technet.microsoft.com/library/ee247418.aspx) to pause, resume, or restart your work.
 
 ## In this guide
 
@@ -115,7 +114,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     - Confirmation: click **Finish**
 
 
->For purposes of this test lab, we will only add the prerequisite .NET Framework feature. Commerical applications (ex: Microsoft Office) will not be added to the deployment share. For information about adding applications, see the [Add applications](https://technet.microsoft.com/en-us/itpro/windows/deploy/create-a-windows-10-reference-image#sec03) section of the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic in the TechNet library.
+    >For purposes of this test lab, we will only add the prerequisite .NET Framework feature. Commerical applications (ex: Microsoft Office) will not be added to the deployment share. For information about adding applications, see the [Add applications](https://technet.microsoft.com/en-us/itpro/windows/deploy/create-a-windows-10-reference-image#sec03) section of the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic in the TechNet library.
 
 11. The next step is to create a task sequence to reference the operating system that was imported. To create a task sequence, right-click the **Task Sequences** node and then click **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
     - Task sequence ID: **REFW10X64-001**<BR>
@@ -207,18 +206,20 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 
 25. Copy **c:\MDTBuildLab\Boot\LiteTouchPE_x86.iso** on SRV1 to the **c:\VHD** directory on the Hyper-V host computer. Note that in MDT, the x86 boot image can deploy both x86 and x64 operating systems, except on computers based on Unified Extensible Firmware Interface (UEFI).
 
->Hint: Top copy the file, right-click the **LiteTouchPE_x86.iso** file and click **Copy** on SRV1, then open the **c:\VHD** folder on the Hyper-V host, right-click inside the folder and click **Paste**.
+    >Hint: To copy the file, right-click the **LiteTouchPE_x86.iso** file and click **Copy** on SRV1, then open the **c:\VHD** folder on the Hyper-V host, right-click inside the folder and click **Paste**.
 
 26. Open a Windows PowerShell prompt on the Hyper-V host computer and type the following commands:
 
 
-    ```
+    <pre style="overflow-y: visible">
     New-VM –Name REFW10X64-001 -SwitchName poc-internal -NewVHDPath "c:\VHD\REFW10X64-001.vhdx" -NewVHDSizeBytes 60GB 
     Set-VMMemory -VMName REFW10X64-001 -DynamicMemoryEnabled $true -MinimumBytes 1024MB -MaximumBytes 1024MB -Buffer 20
     Set-VMDvdDrive -VMName REFW10X64-001 -Path c:\VHD\LiteTouchPE_x86.iso
     Start-VM REFW10X64-001
     vmconnect localhost REFW10X64-001
-    ```
+    </pre>
+
+    The VM will require a few minutes to prepare devices and boot from the LiteTouchPE_x86.iso file. 
 
 27. In the Windows Deployment Wizard, select **Windows 10 Enterprise x64 Default Image**, and then click **Next**.
 
@@ -233,7 +234,6 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     - Run System Preparation (Sysprep) and reboot into Windows PE.
     - Capture the installation to a Windows Imaging (WIM) file.
     - Turn off the virtual machine.
-
 
     This step requires from 30 minutes to 2 hours, depending on the speed of the Hyper-V host. After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep. The image is located in the C:\MDTBuildLab\Captures folder on your deployment server. The file name is **REFW10X64-001.wim**.
 
