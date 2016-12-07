@@ -124,7 +124,7 @@ If the deployment tools used does not indicate an error in the onboarding proces
 - [Ensure the telemetry and diagnostics service is enabled](#ensure-the-telemetry-and-diagnostics-service-is-enabled)
 - [Ensure the service is set to start](#ensure-the-service-is-set-to-start)
 - [Ensure the endpoint has an Internet connection](#ensure-the-endpoint-has-an-internet-connection)
-- [Ensure the Windows Defender ELAM driver is enabled](#ensure-the-windows-defender-elam-driver-is-enabled)
+[Ensure that Windows Defender is not disabled by a policy](#ensure-that-windows-defender-is-not-disabled-by-a-policy)
 
 
 ### View agent onboarding errors in the endpoint event log
@@ -225,13 +225,13 @@ If the verification fails and your environment is using a proxy to connect to th
 ### Ensure that Windows Defender is not disabled by a policy
 If your endpoints are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled. You must ensure that it's not disabled in system policy.
 
-- Depending on the tool that you use to implement policies, you'll need to verify that the Windows Defender policy ```DisableAntiSpyware``` is set to ```0```.
+- Depending on the tool that you use to implement policies, you'll need to verify that the Windows Defender policy ```DisableAntiSpyware``` is set to ```0``` or that the settings are cleared.
 
   For example, in Group Policy:
 
   ```<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiSpyware"/></Key>
   ```
--  If you find that the policy is disabled in system policy, you'll need to enable it.
+-  After clearing the policy, run the onboarding steps again on the endpoint.
 
 - You can also check the following registry key values to verify that the policy is disabled:
 
