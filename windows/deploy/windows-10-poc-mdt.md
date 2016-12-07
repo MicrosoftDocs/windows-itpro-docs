@@ -36,7 +36,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 <TR><TD>[About MDT](#about-mdt)<TD>A high-level overview of the Microsoft Deployment Toolkit (MDT).<TD>Informational
 <TR><TD>[Install MDT](#install-mdt)<TD>Download and install MDT.<TD>40 minutes
-<TR><TD>[Create a deployment share and reference image](#create-a-deployment-share-and-reference-image)<TD>A reference image is created to serve as the template for deploying new images.<TD>60 minutes
+<TR><TD>[Create a deployment share and reference image](#create-a-deployment-share-and-reference-image)<TD>A reference image is created to serve as the template for deploying new images.<TD>90 minutes
 <TR><TD>[Deploy a Windows 10 image using MDT](#deploy-a-windows-10-image-using-mdt)<TD>The reference image is deployed in the PoC environment.<TD>60 minutes
 <TR><TD>[Refresh a computer with Windows 10](#refresh-a-computer-with-windows-10)<TD>Export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings.<TD>30 minutes
 <TR><TD>[Replace a computer with Windows 10](#replace-a-computer-with-windows-10)<TD>Back up an existing client computer, then restore this backup to a new computer.<TD>30 minutes
@@ -129,8 +129,6 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     - Admin Password: **Do not specify an Administrator password at this time**
     - Summary: click **Next**
     - Confirmation: click **Finish**
-
-
 
 12. Edit the task sequence to add the Microsoft NET Framework 3.5, which is required by many applications. To edit the task sequence, double-click **Windows 10 Enterprise x64 Default Image** that was created in the previous step.
 
@@ -235,7 +233,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     - Capture the installation to a Windows Imaging (WIM) file.
     - Turn off the virtual machine.
 
-    This step requires from 30 minutes to 2 hours, depending on the speed of the Hyper-V host. After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep. The image is located in the C:\MDTBuildLab\Captures folder on your deployment server. The file name is **REFW10X64-001.wim**.
+    This step requires from 30 minutes to 2 hours, depending on the speed of the Hyper-V host. After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep. The image is located in the C:\MDTBuildLab\Captures folder on your deployment server (SRV1). The file name is **REFW10X64-001.wim**.
 
 ## Deploy a Windows 10 image using MDT
 
@@ -247,29 +245,31 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
      - **Deployment share description**: MDT Production
      - **Options**: accept the default
 
-2. Click **Finish** and verify the new deployment share was added successfully.
+2. Click **Next**, verify the new deployment share was added successfully, then click **Finish**.
 
 3. In the Deployment Workbench console, expand the MDT Production deployment share, right-click **Operating Systems**, and then click **New Folder**. Name the new folder **Windows 10** and complete the wizard using default values.
 
-4. Right-click the Windows 10 folder created in the previous step, and then click **Import Operating System**.
+4. Right-click the **Windows 10** folder created in the previous step, and then click **Import Operating System**.
 
 5. On the **OS Type** page, choose **Custom image file** and then click **Next**.
 
-6. On the Image page, browse to the C:\MDTBuildLab\Captures\REFW10X64-001.wim file created in the previous procedure, click **Open**, and then click **Next**.
+6. On the Image page, browse to the **C:\MDTBuildLab\Captures\REFW10X64-001.wim** file created in the previous procedure, click **Open**, and then click **Next**.
 
 7. On the Setup page, select **Copy Windows 7, Windows Server 2008 R2, or later setup files from the specified path**. 
 
 8. Under **Setup source directory**, browse to **C:\MDTBuildLab\Operating Systems\W10Ent_x64** click **OK** and then click **Next**.
 
-9. On the Destination page, accept the default Destination directory name of **REFW10X64-001**, click **Next** twice, and then click **Finish**.
+9. On the Destination page, accept the default Destination directory name of **REFW10X64-001**, click **Next** twice, wait for the import process to complete, and then click **Finish**.
 
-10. In the Operating Systems > Windows 10 node, double-click the operating system that was added to view its Properties. Change the Operating system name to **Windows 10 Enterprise x64 Custom Image** and then click **OK**.
+10. In the **Operating Systems** > **Windows 10** node, double-click the operating system that was added to view its properties. Change the operating system name to **Windows 10 Enterprise x64 Custom Image** and then click **OK**. See the following example:
+
+    ![custom image](images/image.png)
 
 ### Create the deployment task sequence
 
-1. Using the Deployment Workbench, select Task Sequences in the MDT Production node, and create a folder named **Windows 10**.
+1. Using the Deployment Workbench, right-click **Task Sequences** under the **MDT Production** node, click **New Folder** and create a folder with the name: **Windows 10**.
 
-2. Right-click the Windows 10 folder created in the previous step, and then click **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
+2. Right-click the **Windows 10** folder created in the previous step, and then click **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
     - Task sequence ID: W10-X64-001
     - Task sequence name: Windows 10 Enterprise x64 Custom Image
     - Task sequence comments: Production Image
@@ -289,43 +289,43 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     copy-item "C:\Program Files\Microsoft Deployment Toolkit\Templates\Bootstrap.ini" C:\MDTProd\Control\Bootstrap.ini -Force
     copy-item "C:\Program Files\Microsoft Deployment Toolkit\Templates\CustomSettings.ini" C:\MDTProd\Control\CustomSettings.ini -Force
     ``` 
-2. In the Deployment Workbench console on SRV1, right-click the **MDT Production** deployment share and then click Properties.
+2. In the Deployment Workbench console on SRV1, right-click the **MDT Production** deployment share and then click **Properties**.
 
-3. Click the **Rules** tab and replace the rules with the following text:
+3. Click the **Rules** tab and replace the rules with the following text (don't click OK yet):
 
     ```
-    [Settings] 
-    Priority=Default 
+    [Settings]
+    Priority=Default
 
-    [Default] 
-    _SMSTSORGNAME=Contoso 
-    OSInstall=YES 
-    UserDataLocation=AUTO 
+    [Default]
+    _SMSTSORGNAME=Contoso
+    OSInstall=YES
+    UserDataLocation=AUTO
     TimeZoneName=Pacific Standard Time
     OSDComputername=#Left("PC-%SerialNumber%",7)#
-    AdminPassword=pass@word1 
-    JoinDomain=contoso.com 
+    AdminPassword=pass@word1
+    JoinDomain=contoso.com
     DomainAdmin=administrator
     DomainAdminDomain=CONTOSO
-    DomainAdminPassword=pass@word1 
+    DomainAdminPassword=pass@word1
     ScanStateArgs=/ue:*\* /ui:CONTOSO\*
     USMTMigFiles001=MigApp.xml
     USMTMigFiles002=MigUser.xml
-    HideShell=YES 
-    ApplyGPOPack=NO 
-    SkipAppsOnUpgrade=NO 
+    HideShell=YES
+    ApplyGPOPack=NO
+    SkipAppsOnUpgrade=NO
     SkipAdminPassword=YES
-    SkipProductKey=YES 
-    SkipComputerName=YES 
+    SkipProductKey=YES
+    SkipComputerName=YES
     SkipDomainMembership=YES
-    SkipUserData=YES 
-    SkipLocaleSelection=YES 
-    SkipTaskSequence=NO 
-    SkipTimeZone=YES 
-    SkipApplications=NO 
-    SkipBitLocker=YES 
-    SkipSummary=YES 
-    SkipCapture=YES 
+    SkipUserData=YES
+    SkipLocaleSelection=YES
+    SkipTaskSequence=NO
+    SkipTimeZone=YES
+    SkipApplications=NO
+    SkipBitLocker=YES
+    SkipSummary=YES
+    SkipCapture=YES
     SkipFinalSummary=NO
     EventService=http://SRV1:9800
     ```
@@ -336,12 +336,12 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 4. Click **Edit Bootstap.ini** and replace text in the file with the following text:
 
     ```
-    [Settings] 
-    Priority=Default 
+    [Settings]
+    Priority=Default
 
-    [Default] 
-    DeployRoot=\\SRV1\MDTProd$ 
-    UserDomain=CONTOSO 
+    [Default]
+    DeployRoot=\\SRV1\MDTProd$
+    UserDomain=CONTOSO
     UserID=administrator
     UserPassword=pass@word1
     SkipBDDWelcome=YES
@@ -377,13 +377,17 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 2. Click **Start**, type **Windows Deployment**, and then click **Windows Deployment Services**.
 
-3. In the Windows Deployment Services console, expand Servers, expand SRV1.contoso.com, right-click **Boot Images**, and then click **Add Boot Image**.
+3. In the Windows Deployment Services console, expand **Servers**, expand **SRV1.contoso.com**, right-click **Boot Images**, and then click **Add Boot Image**.
 
 4. Browse to the **C:\MDTProd\Boot\LiteTouchPE_x64.wim** file, click **Open**, click **Next**, and accept the defaults in the Add Image Wizard. Click **Finish** to complete adding a boot image.
 
 ### Deploy the client image
 
-1. Before using WDS to deploy a client image, you must temporarily disable the external network adapter on SRV1. This is just an artifact of the lab environment. In a typical deployment environment WDS would not be installed on the default gateway. **Note**: Do not disable the *internal* network interface. To disable the *external* interface on SRV1, open a Windows PowerShell prompt on SRV1 and type the following command:
+1. Before using WDS to deploy a client image, you must temporarily disable the external network adapter on SRV1. This is just an artifact of the lab environment. In a typical deployment environment WDS would not be installed on the default gateway. 
+
+    >**Note**: Do not disable the *internal* network interface. To quickly view IP addresses and interface names configured on the VM, **type Get-NetIPAddress | ft interfacealias, ipaddress**
+    
+    Assuming the external interface is named "Ethernet 2", to disable the *external* interface on SRV1, open a Windows PowerShell prompt on SRV1 and type the following command:
 
     ```
     Disable-NetAdapter "Ethernet 2" -Confirm:$false
@@ -393,7 +397,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
     ```
     New-VM –Name "PC2" –NewVHDPath "c:\vhd\pc2.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
-    Set-VMMemory -VMName "PC2" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes 2048MB -Buffer 20
+    Set-VMMemory -VMName "PC2" -DynamicMemoryEnabled $true -MinimumBytes 720MB -MaximumBytes 2048MB -Buffer 20
     ```
     >Dynamic memory is configured on the VM to conserve resources. However, this can cause memory allocation to be reduced past what is required to install an operating system. If this happens, reset the VM and begin the OS installation task sequence immediately. This ensures the VM memory allocation is not decreased too much while it is idle.
 
@@ -405,21 +409,21 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     ```
 4. When prompted, hit ENTER to start the network boot process.
 
-5. Choose the **Windows 10 Enterprise x64 Custom Image** and then click **Next**.
+5. In the Windows Deployment Wizard, choose the **Windows 10 Enterprise x64 Custom Image** and then click **Next**.
 
 6. After MDT lite touch installation has started, be sure to re-enable the external network adapter on SRV1. This is needed so the client can use Windows Update after operating system installation is complete.To re-enable the external network interface, open an elevated Windows PowerShell prompt on SRV1 and type the following command:
 
     ```
     Enable-NetAdapter "Ethernet 2"
     ```
-7. On SRV1, in the Deployment Workbench console, click on **Monitoring** and view the status of installation.
-8. When OS installation is complete, the system will reboot automatically and begin configuring devices.  When the new client computer is finished updating, click **Finish**. You will be automatically signed in to the local computer as administrator. 
+7. On SRV1, in the Deployment Workbench console, click on **Monitoring** and view the status of installation. Right-click **Monitoring** and click **Refresh** if no data is displayed.
+8. OS installation requires about 10 minutes. When the installation is complete, the system will reboot automatically, configure devices, and install updates, requiring another 10-20 minutes.  When the new client computer is finished updating, click **Finish**. You will be automatically signed in to the local computer as administrator. 
 
-9. Turn off the PC2 VM before starting the next section.  To turn off the VM, right-click **Start**, point to **Shut down or sign out**, and then click **Shut down**.
+This completes the demonstration of how to deploy a reference image to the network. To conserve resources, turn off the PC2 VM before starting the next section.
 
 ## Refresh a computer with Windows 10
 
-This topic will demonstrate how to export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings. The scenario will use PC1, a computer that was cloned from a physical device to a VM, as described in [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md). 
+This section will demonstrate how to export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings. The scenario will use PC1, a computer that was cloned from a physical device to a VM, as described in [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md). 
 
 1. Create a checkpoint for the PC1 VM so that it can easily be reverted to its current state for troubleshooting purposes and to perform additional scenarios.  Checkpoints are also known as snapshots. To create a checkpoint for the PC1 VM, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
@@ -574,7 +578,7 @@ You can review WDS events in Event Viewer at: **Applications and Services Logs >
 
 Tools for viewing log files, and to assist with troubleshooting are available in the [System Center 2012 R2 Configuration Manager Toolkit](https://www.microsoft.com/en-us/download/details.aspx?id=50012)
 
-Also see [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors) for detailed troubleshooting information.
+Also see [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for detailed troubleshooting information.
 
 ## Related Topics
 
