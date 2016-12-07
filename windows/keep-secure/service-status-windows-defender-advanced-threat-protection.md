@@ -21,7 +21,7 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-The **Service health** provides information on the current status of the Window Defender ATP service. You'll be able to verify that the service status is healthy or if there are current issues and the details related to the issue such as when the issue was detected, what the preliminary root cause is, and the expected resolution time.
+The **Service health** provides information on the current status of the Window Defender ATP service. You'll be able to verify that the service status is healthy or if there are current issues. If there are issues, you'll see details related to the issue such as when the issue was detected, what the preliminary root cause is, and the expected resolution time.
 
 You'll also see information on historical issues that have been resolved and details such as the date and time when the issue was resolved. When there are no issues on the service, you'll see a healthy status.
 
@@ -33,7 +33,7 @@ The **Service health** details page has the following tabs:
 - **Status History**
 
 ## Current issues
-The **Current issues** tab shows the current state of the Windows Defender ATP service. When the service is running smoothly a healthy service status is shown. If there are issues seen on telemetry or detection functionality, and the **Deep analysis** feature, the following service details are shown to help you gain better insight about the issue:
+The **Current issues** tab shows the current state of the Windows Defender ATP service. When the service is running smoothly a healthy service status is shown. If there are issues seen, the following service details are shown to help you gain better insight about the issue:
 
 - Date and time for when the issue was detected
 - A short description of the issue
@@ -43,15 +43,12 @@ The **Current issues** tab shows the current state of the Windows Defender ATP s
 - Next steps
 - Expected resolution time
 
+The status is constantly updated to reflect the ongoing status of an issue such as updates on estimated resolution times or what the next steps might be.
+
 When an issue is resolved, it gets recorded in the **Status history** tab.
 
 ## Status history
-The **Status history** tab reflects all the historical issues that were seen and resolved. The following service details are shown to help you gain better insight about the historical issues:
-
-- Date and time for when the issue was detected
-- Preliminary root cause
-- Next steps
-- Resolution time
+The **Status history** tab reflects all the historical issues that were seen and resolved. You'll see details of the resolved issues along with the other information that were included while it was being resolved.
 
 ### Related topic
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
