@@ -27,6 +27,7 @@ Windows as a service provides a new way to think about building, deploying, and 
 
 | Topic | Description|
 | --- | --- |
+| [Quick guide to Windows as a service](waas-quick-start.md) | Provides a brief summary of the key points for the new servicing model for Windows 10. |
 | [Overview of Windows as a service](waas-overview.md) | Explains the differences in building, deploying, and servicing Windows 10; introduces feature updates, quality updates, and the different servicing branches; compares servicing tools. |
 | [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) | Explains the decisions you need to make in your servicing strategy.  |
 | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) | Explains how to make use of servicing branches and update deferrals to manage Windows 10 updates.  |
