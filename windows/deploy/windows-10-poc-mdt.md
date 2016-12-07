@@ -16,19 +16,44 @@ author: greg-lindsay
 
 **Important**: This guide leverages the proof of concept (PoC) environment configured using procedures in [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md). Please complete all steps in the prerequisite guide before starting this guide.
 
-The PoC environment is a virtual network running on Hyper-V with three virtual machines:
+The PoC environment is a virtual network running on Hyper-V with three virtual machines (VMs):
 - **DC1**: A contoso.com domain controller, DNS server, and DHCP server.
 - **SRV1**: A dual-homed contoso.com domain member server, DNS server, and default gateway providing NAT service for the PoC network.
-- **PC1**: A contoso.com member computer running Windows 7, Windows 8, or Windows 8.1 that has been shadow-copied from a physical computer on your corporate network for use in this guide.
+- **PC1**: A contoso.com member computer running Windows 7, Windows 8, or Windows 8.1 that has been shadow-copied from a physical computer on your corporate network.
 
-This guide leverages the Hyper-V server role to perform procedures. 
-- If you do not complete all steps in a single session, consider using [checkpoints](https://technet.microsoft.com/library/dn818483.aspx) and [saved states](https://technet.microsoft.com/library/ee247418.aspx) to pause, resume, or restart your work.
+>This guide leverages the Hyper-V server role to perform procedures. 
+>- If you do not complete all steps in a single session, consider using [checkpoints](https://technet.microsoft.com/library/dn818483.aspx) and [saved states](https://technet.microsoft.com/library/ee247418.aspx) to pause, resume, or restart your work.
 
 ## In this guide
 
 This guide provides instructions to install and configure the Microsoft Deployment Toolkit (MDT) to deploy a Windows 10 image.
 
-## Install the Microsoft Deployment Toolkit (MDT)
+Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
+
+<div style='font-size:9.0pt'>
+
+<TABLE border=1 cellspacing=0 cellpadding=0>
+<TR><TD BGCOLOR="#a0e4fa"><B>Topic</B><TD BGCOLOR="#a0e4fa"><B>Description</B><TD BGCOLOR="#a0e4fa"><B>Time</B>
+
+<TR><TD>[About MDT](#about-mdt)<TD>A high-level overview of the Microsoft Deployment Toolkit (MDT).<TD>Informational
+<TR><TD>[Install MDT](#install-mdt)<TD>Download and install MDT.<TD>40 minutes
+<TR><TD>[Create a deployment share and reference image](#create-a-deployment-share-and-reference-image)<TD>A reference image is created to serve as the template for deploying new images.<TD>60 minutes
+<TR><TD>[Deploy a Windows 10 image using MDT](#deploy-a-windows-10-image-using-mdt)<TD>The reference image is deployed in the PoC environment.<TD>60 minutes
+<TR><TD>[Refresh a computer with Windows 10](#refresh-a-computer-with-windows-10)<TD>Export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings.<TD>30 minutes
+<TR><TD>[Replace a computer with Windows 10](#replace-a-computer-with-windows-10)<TD>Back up an existing client computer, then restore this backup to a new computer.<TD>30 minutes
+<TR><TD>[Troubleshooting logs, events, and utilities](#troubleshooting-logs-events-and-utilities)<TD>Log locations and troubleshooting hints.<TD>Informational
+</TABLE>
+
+</div>
+
+## About MDT
+
+MDT performs deployments by using the Lite Touch Installation (LTI), Zero Touch Installation (ZTI), and User-Driven Installation (UDI) deployment methods. 
+- LDI is the deployment method used in the current guide, requiring only MDT and performed with a minimum amount of user interaction.
+- ZTI is fully automated, requiring no user interaction and is performed using MDT and System Center Configuration Manager. After completing the steps in the current guide, see [Step by step: Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md) to use the ZTI deployment method in the PoC environment.
+- UDI requires manual intervention to respond to installation prompts such as machine name, password and language settings. UDI requires MDT and System Center Configuration Manager. 
+
+## Install MDT
 
 1. On SRV1, temporarily disable IE Enhanced Security Configuration for Administrators by typing the following commands at an elevated Windows PowerShell prompt:
 
@@ -49,6 +74,8 @@ This guide provides instructions to install and configure the Microsoft Deployme
     ```
 
 ## Create a deployment share and reference image
+
+A reference image serves as the foundation for Windows 10 devices in your organization.
 
 1. In [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md), the Windows 10 Enterprise .iso file was saved to the c:\VHD directory as **c:\VHD\w10-enterprise.iso**. The first step in creating a deployment share is to mount this file on SRV1.  To mount the Windows 10 Enterprise DVD on SRV1, open an elevated Windows PowerShell prompt on the Hyper-V host computer and type the following command:
 
@@ -390,7 +417,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 9. Turn off the PC2 VM before starting the next section.  To turn off the VM, right-click **Start**, point to **Shut down or sign out**, and then click **Shut down**.
 
-### Refresh a computer with Windows 10
+## Refresh a computer with Windows 10
 
 This topic will demonstrate how to export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings. The scenario will use PC1, a computer that was cloned from a physical device to a VM, as described in [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md). 
 
@@ -441,7 +468,7 @@ This topic will demonstrate how to export user data from an existing client comp
     ```
 10. Sign in to PC1 using the contoso\administrator account.
 
-### Replace a computer with Windows 10
+## Replace a computer with Windows 10
 
 At a high level, the computer replace process consists of:<BR>
 - A special replace task sequence that runs the USMT backup and an optional full Window Imaging (WIM) backup.<BR>
@@ -536,7 +563,7 @@ At a high level, the computer replace process consists of:<BR>
     ```
 7. Setup will install the Windows 10 Enterprise operating system, update via Windows Update, and restore the user settings and data from PC1.
 
-#### Troubleshooting logs, events, and utilities
+## Troubleshooting logs, events, and utilities
 
 Deployment logs are available on the client computer in the following locations:
 - Before the image is applied: X:\MININT\SMSOSD\OSDLOGS
@@ -546,6 +573,8 @@ Deployment logs are available on the client computer in the following locations:
 You can review WDS events in Event Viewer at: **Applications and Services Logs > Microsoft > Windows > Deployment-Services-Diagnostics**. By default, only the **Admin** and **Operational** logs are enabled. To enable other logs, right-click the log and then click **Enable Log**.
 
 Tools for viewing log files, and to assist with troubleshooting are available in the [System Center 2012 R2 Configuration Manager Toolkit](https://www.microsoft.com/en-us/download/details.aspx?id=50012)
+
+Also see [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors) for detailed troubleshooting information.
 
 ## Related Topics
 
