@@ -1,3 +1,4 @@
+---
 title: Check the Windows Defender ATP service status
 description: Check Windows Defender ATP service status, see if the service is experiencing issues and review previous issues that have been resolved.
 keywords: dashboard, service, issues, service status, current issues, status history, summary of impact, preliminary root cause, resolution, resolution time, expected resolution time
