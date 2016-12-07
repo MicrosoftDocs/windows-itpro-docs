@@ -18,6 +18,7 @@ This topic lists new and updated topics in the [Surface Hub Admin Guide]( surfac
 
 | New or changed topic | Description|
 | --- | --- |
+| [Connect other devices and display with Surface Hub](connect-and-display-with-surface-hub.md) | Added information about Bluetooth accessories. |
 | [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md) | Updated example procedures to include screenshots. |
 
 ## November 2016
