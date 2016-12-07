@@ -17,6 +17,8 @@ localizationpriority: high
 - Windows 10 Mobile
 - Windows 10 IoT Mobile
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+
 The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers. These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time. 
 
 ## Building
@@ -170,6 +172,7 @@ or [Manage Windows 10 updates using System Center Configuration Manager](waas-ma
 ## Related topics
 
 - [Update Windows 10 in the enterprise](waas-update-windows-10.md)
+- [Quick guide to Windows as a service](waas-quick-start.md)
 - [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
