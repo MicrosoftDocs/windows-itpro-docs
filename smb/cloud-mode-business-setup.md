@@ -9,7 +9,7 @@ ms.pagetype: smb
 author: CelesteDG
 ---
 
-![Are you ready to move to the cloud?](images/cloud-mode-graphic.png)
+![Are you ready to move to the cloud?](images/business-cloud-mode-graphic.png)
 
 # Get started: Deploy and manage a full cloud IT solution for your business
 **Applies to:**
@@ -19,17 +19,15 @@ author: CelesteDG
 > [!IMPORTANT]  
 > This is placeholder content only. Everything is TBD.
 
-In this walkthrough, we'll show you how to deploy and manage a full cloud IT solution for your school using Microsoft Azure AD, Intune, Office 365, Windows, Classroom, and more. We'll show you the basics on how to:
-- Acquire an Office 365 education domain
-- Add Microsoft Classroom, Intune, and Azure Active Directory (AD) Premium licenses to your education tenant
-- Import school student, teacher, and class data through School Data Sync (SDS)
+In this walkthrough, we'll show you how to deploy and manage a full cloud IT solution for your business using Microsoft Azure AD, Intune, Office 365, and Windows. We'll show you the basics on how to:
+- Acquire an Office 365 business domain
+- Add Microsoft Intune and Azure Active Directory (AD) Premium licenses to your business tenant
 - Set up Windows Store for Business and manage app deployment and sync with Intune
 - Add users and groups in Azure AD and Intune
 - Create policies and app deployment rules
-- Log in as a teacher, create a class notebook and assignments
-- Log in as a student and use the device
+- Log in as a user and start using the device
 
-Go to the [Microsoft Education site](https://www.microsoft.com/en-us/education) to learn more about these products. See [How to buy](https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools) to learn about pricing and purchasing options for schools, students, and teachers as well as academic pricing and offers for qualified K-12 and higher education institutions.
+Go to the [Microsoft Education site](https://www.microsoft.com/en-us/education) to learn more about these products. See [How to buy](https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools) to learn about pricing and purchasing options for businesses.
 
 ## 1. Get ready
 Here's a few things to keep in mind before you get started:
@@ -61,21 +59,6 @@ Follow the steps in [Add Microsoft Classroom Preview to your Office 365 Educatio
 
 **Figure 2** - Select **Classroom** in the Office 365 portal to add Classroom Preview
 ![Add Classroom Preview](images/office365_start_page_classroom.png)
-
-### 2.3 Use SDS to import data into Office 365
-Use School Data Sync (SDS) to import Student Information System (SIS) data into Office 365. To learn more about School Data Sync (SDS) and the deployment methods available to you, see [Overview of School Data Sync and Classroom](https://aka.ms/sdsoverview).
-
-We recommend using comma separated value (CSV) files with SDS to synchronize SIS users with Office 365. Follow the steps in [How to deploy School Data Sync by using CSV files](https://aka.ms/sdscsv) for more info.
-
-To get started, you can download and use sample CSV files by following [this link](http://download.microsoft.com/download/A/C/2/AC259A5B-B3B6-4248-BABC-6C5171F02581/Sample SDS CSV Files.zip).
-
-  > [!IMPORTANT]
-  > The sample CSV files uses sample accounts and passwords. If you are using the sample files for testing, remember the accounts and their corresponding passwords. You may be asked to change the password during your first sign in. If you are modifying the sample CSV files to use in your organization, change the accounts and passwords to match the user accounts and passwords in your organization.
-
-**Figure 3** - Add users into SDS
-![Use CSV files to add users](images/sds_import_users_csv_files.png)
-
-[CSV files for School Data Sync](https://aka.ms/sdscsvattributes) provides more info about the CSV files that are required and what you need to include in each file. If you run into any issues, see [School Data Sync errors and troubleshooting](https://aka.ms/sdserrors).
 
 ### 2.4 Add Microsoft Intune to your domain
 In the Office 365 admin center, select **Admin centers > Intune**.
@@ -319,7 +302,7 @@ Adding a new device to your cloud-based tenant is easy. For new devices, you can
 **To connect a device to your work or school**
 1. On your Windows device, go to **Settings > Accounts**.
 2. Select **Work access** and then click **Add a work or school account** to add an Azure AD account to the device.
-3. Enter the work or school credentials for the account to authenticate the user.
+3. Enter the work credentials for the account to authenticate the user.
 4. If it appears, accept the MDM terms prescribed by the organization to allow the device to be managed.
   Once this is done, the device should be registered in Azure AD and enrolled in MDM and the account should have access to the organization's resources.
 
@@ -328,34 +311,3 @@ Adding a new device to your cloud-based tenant is easy. For new devices, you can
 You can add new users to your tenant simply by adding them to the Office 365 groups. Adding new users to Office 365 groups automatically adds them to the corresponding groups in Microsoft Intune.
 
 See [Add users to Office 365](https://support.office.com/en-us/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc?ui=en-US&rs=en-US&ad=US&fromAR=1) to learn more. Once you're done adding new users, go to the Intune admin portal and verify that the same users were added to the Intune groups as well.
-
-## 6. Set up Classroom
-
-### 6.1 Tasks for IT administrator
-School IT administrators can find more support documents about Microsoft Classroom by visiting [https://aka.ms/classroomsupport](https://aka.ms/classroomsupport).
-
-To verify that Classroom is set up properly, we recommend going through these tasks:
-- [Personalize Classroom](https://edu.uservoice.com/knowledgebase/articles/942180-personalize-classroom)
-- [Set up the class notebook](https://edu.uservoice.com/knowledgebase/articles/942195-class-notebooks-in-classroom)
-- [Check the calendar](https://edu.uservoice.com/knowledgebase/articles/942186-calendar-in-classroom)
-
-### 6.2 Tasks for teachers and students
-Teachers and students can find one-time setup instructions for Microsoft Classroom, info on how to use it, and other resources in [Get Started with Microsoft Classroom](https://support.officeppe.com/en-us/article/Get-started-with-Microsoft-Classroom-dd5d064f-6c22-41e0-b721-9d359857d037?ui=en-US&rs=en-US&ad=US).
-
-  > [!NOTE]
-  > The Get Started link leads to a pre-production page. We'll update this link when the information is publically available.
-
-## Get more info
-
-### For IT admins
-To learn more about the services and tools mentioned in this walkthrough, follow these links:
-- [School Data Sync and Classroom introductory video](http://aka.ms/sdsdemo)
-
-### For teachers
-Whether it's in the classroom, getting the most out of your devices, or learning some of the cool things you can do, we've got teachers covered. Follow these links for more info:
-- [Windows 10 online resources for teachers](https://education.microsoft.com/windows-10-online-resources-for-teachers)
-
-
-## Related topics
-
-[Windows 10 for Education](index.md)
