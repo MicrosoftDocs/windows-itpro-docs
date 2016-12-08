@@ -41,7 +41,7 @@ The compatibility improvements made in IE11 lets older websites just work in the
 This flowchart shows how IE11 works when document modes are used.
 
 ![Flowchart detailing how document modes are chosen in IE11](images/docmode-decisions-sm.png)<br>
-[Click to enlarge](img-microsoft-edge-docmode-lg.md)
+[Click this link to enlarge image](img-microsoft-edge-docmode-lg.md)
 
 ## Known Issues with Internet Explorer 8 document mode in Enterprise Mode
 The default document mode for Enterprise Mode is Internet Explorer 8. While this mode provides a strong emulation of that browser, it isn’t an exact match. For example, Windows Internet Explorer 9 fundamentally changed how document modes work with iframes and document modes can’t undo architectural changes. It’s also a known issue that Windows 10 supports GDI font rendering while using Enterprise Mode, but uses natural metrics once outside of Enterprise Mode.
