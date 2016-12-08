@@ -43,7 +43,7 @@ The **Current issues** tab shows the current state of the Windows Defender ATP s
 - Next steps
 - Expected resolution time
 
-The status is constantly updated to reflect the ongoing status of an issue such as updates on estimated resolution times or what the next steps might be.
+Updates on the progress of an issue is reflected on the page as the issue gets resolved. You'll see updates on information such as an updated estimate resolution time or next steps.
 
 When an issue is resolved, it gets recorded in the **Status history** tab.
 
