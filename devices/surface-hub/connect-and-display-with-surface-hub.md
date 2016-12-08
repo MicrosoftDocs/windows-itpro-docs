@@ -478,3 +478,6 @@ You can connect the following accessories to Surface Hub using Bluetooth:
 - Keyboards
 - Headsets
 - Speakers
+
+>[!NOTE]
+>After you connect a Bluetooth headset or speaker, you might need to change the [default microphone and speaker settings](local-management-surface-hub-settings.md).
