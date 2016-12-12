@@ -74,7 +74,7 @@ If your organization is using AD or Azure AD, we recommend you either domain joi
 |---------------------------------------------------|-----------------------------------------|-------|
 | Create a local admin account                      | None                                    | The user name and password specified during first run |
 | Domain join to Active Directory (AD)              | Your organization uses AD               | Any AD user from a specific security group in your domain |
-| Azure Active Directory (Azure AD) join the device | Your organization uses Azure AD Basic   | Global administators only |
+| Azure Active Directory (Azure AD) join the device | Your organization uses Azure AD Basic   | Global administrators only |
 | &nbsp;                                            | Your organization uses Azure AD Premium or Enterprise Mobility Suite (EMS) | Global administrators and additional administrators |
 
 
