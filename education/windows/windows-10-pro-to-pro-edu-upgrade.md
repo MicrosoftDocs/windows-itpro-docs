@@ -131,19 +131,19 @@ Now the device is Azure AD joined to the company’s subscription.
 
 1.  Go to **Settings &gt; Accounts &gt; Access work or school**, as illustrated in **Figure 9**.
 
-    <img src="images/windows-connect-to-work-or-school.png" alt="Connect to work or school configuration" width="624" height="482" />
+    <img src="images/win-10-connect-to-work-or-school.png" alt="Connect to work or school configuration" />
 
     **Figure 9** - Connect to work or school configuration in Settings
 
 2.  In **Set up a work or school account**, click **Join this device to Azure Active Directory**, as illustrated in **Figure 10**.
 
-    <img src="images/windows-set-up-work-or-school.png" alt="Set up a work or school account" width="624" height="603" />
+    <img src="images/win-10-set-up-work-or-school.png" alt="Set up a work or school account" />
 
     **Figure 10** - Set up a work or school account
 
 3.  On the **Let’s get you signed in** page, enter the Azure AD credentials, and then click **Sign in**, as illustrated in **Figure 11**.
 
-    <img src="images/windows-lets-get-2.png" alt="Let's get you signed in - dialog box" width="624" height="603" />
+    <img src="images/win-10-lets-get-2.png" alt="Let's get you signed in - dialog box" />
 
     **Figure 11** - The “Let’s get you signed in” dialog box
 
