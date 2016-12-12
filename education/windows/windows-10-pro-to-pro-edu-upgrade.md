@@ -159,9 +159,6 @@ Once the device is joined to your Azure AD subscription, the user will sign in b
 
 #### Step 3: Verify that Pro Education edition is enabled
 
-> [!IMPORTANT]  
-> **TBD - Reviewers:** The screenshots in this section need to be updated for Pro Education and not Enterprise E3 (original source)
-
 You can verify the Windows 10 Pro Education in **Settings &gt; Update & Security &gt; Activation**, as illustrated in **Figure 13**.
 
 <span id="win-10-activated-subscription-active"/>
@@ -194,17 +191,6 @@ Use the following figures to help you troubleshoot when users experience these c
 
 <img src="images/win-10-not-activated-enterprise-subscription-active.png" alt="Windows 10 not activated and subscription active" width="624" height="407" /><br><br>
 
-<span id="subscription-not-active"/>
-
-**Figure 15** - Illustrates a device on which Windows 10 Pro, version 1607 is activated, but the Windows 10 Pro Education upgrade is lapsed or removed.
-
-<img src="images/win-10-activated-enterprise-subscription-not-active.png" alt="Windows 10 activated and subscription not active" width="624" height="407" /><br><br>
-
-<span id="win-10-not-activated-subscription-not-active"/>
-
-**Figure 16** - Illustrates a device on which Windows 10 Pro, version 1607 license is not activated and the Windows 10 Pro Education upgrade is lapsed or removed.
-
-<img src="images/win-10-not-activated-enterprise-subscription-not-active.png" alt="Windows 10 not activated and subscription not active" width="624" height="407" /><br><br>
 
 ### Review requirements on devices
 
@@ -240,7 +226,7 @@ Once the automatic upgrade to Windows 10 Pro Education is turned off, the change
 
   ![Turn off automatic upgrade to Windows 10 Pro Education](images/wsfb_win10_pro_to proedu_upgrade_disable.png)
 
-  **Figure 17** - Link to turn off the automatic upgrade
+  **Figure 15** - Link to turn off the automatic upgrade
 
 4. You will be asked if you're sure that you want to turn off automatic upgrades to Windows 10 Pro Education. Click **Yes**.
 5. Click **Close** in the **Success** page.
@@ -254,11 +240,11 @@ If you have on-premises Active Directory Domain Services (AD DS) domains, users 
 
 You need to synchronize these identities so that users will have a *single identity* that they can use to access their on-premises apps and cloud services that use Azure AD (such as Windows 10 Pro Education). This means that users can use their existing credentials to sign in to Azure AD and access the cloud services that you provide and manage for them.
 
-**Figure 18** illustrates the integration between the on-premises AD DS domain with Azure AD. [Microsoft Azure Active Directory Connect](http://www.microsoft.com/en-us/download/details.aspx?id=47594) (Azure AD Connect) is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
+**Figure 16** illustrates the integration between the on-premises AD DS domain with Azure AD. [Microsoft Azure Active Directory Connect](http://www.microsoft.com/en-us/download/details.aspx?id=47594) (Azure AD Connect) is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
 
 ![Illustration of Azure Active Directory Connect](images/windows-ad-connect.png)
 
-**Figure 18** - On-premises AD DS integrated with Azure AD
+**Figure 16** - On-premises AD DS integrated with Azure AD
 
 For more information about integrating on-premises AD DS domains with Azure AD, see these resources:
 -   [Integrating your on-premises identities with Azure Active Directory](http://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/)
