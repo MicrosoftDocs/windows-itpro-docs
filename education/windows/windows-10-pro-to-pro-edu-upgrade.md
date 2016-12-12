@@ -165,7 +165,7 @@ You can verify the Windows 10 Pro Education in **Settings &gt; Update & Securit
 
 **Figure 13** - Windows 10 Pro Education in Settings
 
-<img src="images/win-10-activated-enterprise-subscription-active.png" alt="Windows 10 activated and subscription active" width="624" height="407" />
+<img src="images/win-10-pro-edu-activated-subscription-active.png" alt="Windows 10 activated and subscription active" />
 
 If there are any problems with the Windows 10 Pro Education license or the activation of the license, the **Activation** panel will display the appropriate error message or status. You can use this information to help you diagnose the licensing and activation process.
 
@@ -183,13 +183,13 @@ Use the following figures to help you troubleshoot when users experience these c
 
 **Figure 13** - Illustrates a device in a healthy state, where Windows 10 Pro, version 1607 is activated and the Windows 10 Pro Education upgrade is active.
 
-<img src="images/win-10-activated-enterprise-subscription-active.png" alt="Windows 10 activated and subscription active" width="624" height="407" />
+<img src="images/win-10-pro-edu-activated-subscription-active.png" alt="Windows 10 activated and subscription active" />
 
 <span id="win-10-not-activated"/>
 
 **Figure 14** - Illustrates a device on which Windows 10 Pro, version 1607 is not activated, but the Windows 10 Pro Education upgrade is active.
 
-<img src="images/win-10-not-activated-enterprise-subscription-active.png" alt="Windows 10 not activated and subscription active" width="624" height="407" /><br><br>
+<img src="images/win-10-pro-edu-not-activated-subscription-active.png" alt="Windows 10 not activated and subscription active" /><br><br>
 
 
 ### Review requirements on devices
