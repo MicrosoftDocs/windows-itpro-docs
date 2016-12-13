@@ -193,9 +193,7 @@ Starting with Windows 8, the host computer’s microprocessor must support secon
 
 2. The Hyper-V feature is not installed by default. To install it, open an elevated Windows PowerShell window and type the following command:
 
-    <pre style="overflow-y: visible">
-    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All
-    </pre>
+    <pre style="overflow-y: visible">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All</pre>
     
     This command works on all operating systems that support Hyper-V. 
     
@@ -445,9 +443,7 @@ Notes:<BR>
 
 2. On the computer you wish to convert, open an elevated command prompt and type the following command:
 
-    <pre style="overflow-y: visible">
-    mountvol s: /s
-    </pre>
+    <pre style="overflow-y: visible">mountvol s: /s</pre>
 
     This command temporarily assigns a drive letter of S to the system volume and mounts it. If the letter S is already assigned to a different volume on the computer, then choose one that is available (ex: mountvol z: /s).
 
@@ -518,8 +514,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     <pre style="overflow-y: visible">
     Get-Volume -DriveLetter $x
-    Dismount-VHD –Path c:\VHD\2012R2-poc-2.vhd
-    </pre>
+    Dismount-VHD –Path c:\VHD\2012R2-poc-2.vhd</pre>
 
 ### Configure Hyper-V
 
@@ -634,10 +629,19 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     >If there is an error at this stage, ensure that the system partition VHD (c:\vhd\s.vdh) is correctly formatted, marked as active, and attached to the VM. Note: the OS drive is only temporarily assigned a letter of D.
 
-    7. Type **exit**.
-    8. Click **Continue**. Do not press a key to boot from the DVD again. The VM will boot into the OS partition that was exported to c:\vhd\w7.vhd.
-    9. On the PC1 virtual machine connection menu, click **Media**, point to **DVD drive**, and then click **Eject w10-enterprise.iso**.
-    10. In the upper left corner click **Ctrl+Alt+Del** and then in the bottom right corner click **Shut down**.
+    7. Next, automounting of new volumes needs to be disabled so that the GPT system volume is not assigned a drive letter after rebooting. To disable automounting, type the following commands at the current command prompt:
+
+    <pre style="overflow-y: visible">
+    diskpart
+    automount disable
+    automount scrub
+    exit
+    </pre>    
+
+    8. Type **exit** to quit the command prompt.
+    9. Click **Continue**. Do not press a key to boot from the DVD again. The VM will boot into the OS partition that was exported to c:\vhd\w7.vhd.
+    10. On the PC1 virtual machine connection menu, click **Media**, point to **DVD drive**, and then click **Eject w10-enterprise.iso**.
+    11. In the upper left corner click **Ctrl+Alt+Del** and then in the bottom right corner click **Shut down**.
     
 ### Configure VMs 
 

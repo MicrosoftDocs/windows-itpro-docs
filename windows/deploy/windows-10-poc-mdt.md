@@ -419,6 +419,8 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 7. On SRV1, in the Deployment Workbench console, click on **Monitoring** and view the status of installation. Right-click **Monitoring** and click **Refresh** if no data is displayed.
 8. OS installation requires about 10 minutes. When the installation is complete, the system will reboot automatically, configure devices, and install updates, requiring another 10-20 minutes.  When the new client computer is finished updating, click **Finish**. You will be automatically signed in to the local computer as administrator. 
 
+    ![finish](images/deploy-finish.png)
+
 This completes the demonstration of how to deploy a reference image to the network. To conserve resources, turn off the PC2 VM before starting the next section.
 
 ## Refresh a computer with Windows 10
@@ -454,7 +456,7 @@ This section will demonstrate how to export user data from an existing client co
     - Update the operating system via Windows Update.
     - Restore user settings and data using USMT.
 
-    You can review the progress of installation on SRV1 by clicking on the **Monitoring** node in the deployment workbench. When OS installation is complete, the computer will restart, set up devices, and configure settings. 
+    You can review the progress of installation on SRV1 by clicking on the **Monitoring** node in the deployment workbench. When OS installation is complete, the computer will restart, set up devices, and configure settings.
 
 7. Sign in with the CONTOSO\Administrator account and verify that all CONTOSO domain user accounts and data have been migrated to the new operating system.
 
