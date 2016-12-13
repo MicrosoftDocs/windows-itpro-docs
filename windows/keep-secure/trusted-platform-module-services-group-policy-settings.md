@@ -71,6 +71,7 @@ For information how to enforce or ignore the default and local lists of blocked 
 
 -   [Ignore the default list of blocked TPM commands](#bkmk-tpmgp-idlb)
 -   [Ignore the local list of blocked TPM commands](#bkmk-tpmgp-illb)
+
 ### <a href="" id="bkmk-tpmgp-idlb"></a>Ignore the default list of blocked TPM commands
 
 This policy setting allows you to enforce or ignore the computer's default list of blocked Trusted Platform Module (TPM) commands.
