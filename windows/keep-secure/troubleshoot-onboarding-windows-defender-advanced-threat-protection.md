@@ -223,9 +223,18 @@ To ensure that sensor has service connectivity, follow the steps described in th
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) topic.
 
 ### Ensure that Windows Defender is not disabled by a policy
+**Problem**: The Windows Defender ATP service does not start after onboarding.
+
+**Symptoms**:
+- Onboarding successfully completes, but you see error 577 when trying to start the service.
+
+**Solution**:
 If your endpoints are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled. You must ensure that it's not disabled in system policy.
 
-- Depending on the tool that you use to implement policies, you'll need to verify that the Windows Defender policy ```DisableAntiSpyware``` is set to ```0``` or that the settings are cleared.
+- Depending on the tool that you use to implement policies, you'll need to verify that the following Windows Defender policies are set to ```0``` or that the settings are cleared:
+
+  - ```DisableAntiSpyware```
+  - ```DisableAntiVirus```
 
   For example, in Group Policy:
 
