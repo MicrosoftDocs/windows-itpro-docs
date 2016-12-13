@@ -58,6 +58,20 @@ Qualified education institutions can purchase Minecraft: Education Edition licen
 - You’ll receive an email with a link to Windows Store for Business. 
 - Sign in to [Windows Store for Business](https://www.microsoft.com/business-store) to distribute and manage the Minecraft: Education Edition licenses. For more information on distribution options, see [Distribute Minecraft](#distribute-minecraft)
 
+## Minecraft: Education Edition payment options
+You can pay for Minecraft: Education Edition with a debit or credit card, or with an invoice. 
+
+**Debit or credit cards**
+
+During the purchase, click **Get started! Add a way to pay.** Provide the info needed for your debit or credit card.
+
+**Invoices**
+
+Invoices are now a supported payment method for Minecraft: Education Edition. There are a few requirements:
+- Admins only (not supported for Teachers)
+- $500 invoice minimum
+- $15,000 invoice maximum (for all invoices within your organization)
+
 ## <a href="" id="distribute-minecraft"></a>Distribute Minecraft
 
 After Minecraft: Education Edition is added to your Windows Store for Business inventory, you have three options:
