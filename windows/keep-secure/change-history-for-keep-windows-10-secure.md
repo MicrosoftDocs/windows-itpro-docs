@@ -12,6 +12,12 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## December 2016
+|New or changed topic |Description |
+|---------------------|------------|
+|[Recommended Office 365 Mail and Calendar apps configuration with Windows Information Protection (WIP)](recommended-office-365-configurations-for-wip.md) |New |
+
+
 ## November 2016
 | New or changed topic | Description |
 | --- | --- |
