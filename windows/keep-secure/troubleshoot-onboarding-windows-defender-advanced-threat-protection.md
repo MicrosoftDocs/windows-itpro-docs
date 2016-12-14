@@ -124,7 +124,7 @@ If the deployment tools used does not indicate an error in the onboarding proces
 - [Ensure the telemetry and diagnostics service is enabled](#ensure-the-telemetry-and-diagnostics-service-is-enabled)
 - [Ensure the service is set to start](#ensure-the-service-is-set-to-start)
 - [Ensure the endpoint has an Internet connection](#ensure-the-endpoint-has-an-internet-connection)
-[Ensure that Windows Defender is not disabled by a policy](#ensure-that-windows-defender-is-not-disabled-by-a-policy)
+- [Ensure that Windows Defender is not disabled by a policy](#ensure-that-windows-defender-is-not-disabled-by-a-policy)
 
 
 ### View agent onboarding errors in the endpoint event log
