@@ -123,7 +123,7 @@ To enforce processing of the group policy, you can run ```gpupdate /force```.
 
 If you don't use Group Policy, you can enable Credential Guard by using the registry. Credential Guard uses virtualization-based security features which have to be enabled first on some operating systems.
 
-##### Add the virtualization-based security features
+#### Add the virtualization-based security features
 
 Starting with Windows 10, version 1607 and Windows Server 2016, enabling Windows features to use virtualization-based security is not necessary and this step can be skipped.
 
@@ -156,7 +156,7 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 > [!NOTE]  
 > You can also add these features to an online image by using either DISM or Configuration Manager.
 
-##### Enable virtualization-based security and Credential Guard
+#### Enable virtualization-based security and Credential Guard
 
 1.  Open Registry Editor.
 2.  Enable virtualization-based security:
