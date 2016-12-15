@@ -9,7 +9,7 @@ ms.pagetype: smb
 author: CelesteDG
 ---
 
-![Are you ready to move to the cloud?](images/business-cloud-mode-graphic.png)
+![Are you ready to move to the cloud?](images/business-cloud-mode.png)
 
 # Get started: Deploy and manage a full cloud IT solution for your business
 **Applies to:**
@@ -19,7 +19,7 @@ author: CelesteDG
 > [!IMPORTANT]  
 > This is placeholder content only. Everything is TBD.
 
-In this walkthrough, we'll show you how to deploy and manage a full cloud IT solution for your business using Microsoft Azure AD, Intune, Office 365, and Windows. We'll show you the basics on how to:
+In this walkthrough, we'll show you how to deploy and manage a full cloud IT solution for your small to medium business using Microsoft Azure AD, Intune, Office 365, and Windows. We'll show you the basics on how to:
 - Acquire an Office 365 business domain
 - Add Microsoft Intune and Azure Active Directory (AD) Premium licenses to your business tenant
 - Set up Windows Store for Business and manage app deployment and sync with Intune
@@ -27,40 +27,54 @@ In this walkthrough, we'll show you how to deploy and manage a full cloud IT sol
 - Create policies and app deployment rules
 - Log in as a user and start using the device
 
-Go to the [Microsoft Education site](https://www.microsoft.com/en-us/education) to learn more about these products. See [How to buy](https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools) to learn about pricing and purchasing options for businesses.
+Go to the [Microsoft Business site](http://business.microsoft.com) and select **Products** to learn more about pricing and purchasing options for businesses.
 
 ## 1. Get ready
 Here's a few things to keep in mind before you get started:
-- You must own and have a registered education domain
-
-  > [!NOTE]
-  > If you are a participant in the MEs Demo, you can skip this part. You can set up your tenant and complete this walkthrough without having your own registered fully qualified domain name (FQDN).
-
-- **TBD - what else?**
+- You'll need a registered domain to successfully go through the walkthrough.
+  - If you already own a domain, you can add this during the Office 365 setup.
+  - If you don't already own a domain, you'll have the option to purchase a domain from the Office 365 admin center. We'll show how to do this as part of the walkthrough.
+- You'll need an email address to create your Office 365 tenant.
 
 ## 2. Set up your cloud infrastructure
 To set up a cloud infrastructure for your organization, follow the steps in this section.
 
 ### 2.1 Set up Office 365 Education tenant
-To set up your Office 365 Education tenant, see [Get Started with Office 365 Education](https://support.office.com/en-US/article/Get-started-with-Office-365-Education-AB02ABE5-A1EE-458C-B749-5B44416CCF14).
+To set up your Office 365 business tenant, see [Get Started with Office 365 for business](https://support.office.com/en-us/article/Get-started-with-Office-365-for-Business-d6466f0d-5d13-464a-adcb-00906ae87029).
 
-If this is the first time you're setting this up, you'll need to create an account and a user ID and password to use to sign into your account. Save your sign-in info so you can use it to sign into https://portal.office.com (the sign-in page).
+If this is the first time you're setting this up, you can follow these steps to get started:
+1. Go to the [Office 365](https://business.microsoft.com/en-us/products/office-365) page in the [Microsoft Business site](http://business.microsoft.com). Select **Try now** to use the Office 365 Business Premium Trial or select **Buy now** to sign up for Office 365 Business Premium. In this walkthrough, we'll select **Try now**.
 
-After you've set up your account, log into the Office 365 admin center.
+  **Figure 1** - Office 365 Business Premium Trial sign up page
 
-**Figure 1** - Office 365 admin center
-![Office 365 admin center](images/office365_admin_center.png)
+  ![Office 365 Business Premium Trial sign up](images/office365_signup_page.png)
 
-  > [!NOTE]
-  > You may need to [verify your Office 365 domain to prove ownership or education status](https://support.office.com/en-us/article/Verify-your-Office-365-domain-to-prove-ownership-nonprofit-or-education-status-87d1844e-aa47-4dc0-a61b-1b773fd4e590).
+2. Fill out the sign up form and provide information about you and your company.
+3. Create a user ID and password to use to sign into your account.
+  This step creates an onmicrosoft.com email address. You can use this email address to sign in to the various admin centers. Save your sign-in info so you can use it to sign into https://portal.office.com (the admin portal).
 
-### 2.2 Add Classroom Preview to your Office 365 tenant
-Follow the steps in [Add Microsoft Classroom Preview to your Office 365 Education tenant](http://aka.ms/classroomsetup).
+  **Figure 2** - Office 365 user ID
 
-**Figure 2** - Select **Classroom** in the Office 365 portal to add Classroom Preview
-![Add Classroom Preview](images/office365_start_page_classroom.png)
+  ![Create your Office 365 user ID](images/office365_create_userid.png)
 
-### 2.4 Add Microsoft Intune to your domain
+4. Select **Create my account** and then enter the phone number you used in step 2 to verify your identity. You'll be asked to enter your verification code.
+5. Select **You're ready to go...** which will take you to the Office 365 portal.
+  Icons that are greyed out are still installing and may take up to a half hour to install.
+
+  **Figure 3** - Office 365 portal
+
+  ![Office 365 portal](images/office365_portal.png)
+
+6. Select the **Admin** tile to go to the Office 365 admin center.
+7. In the admin center, click **Next** to see the highlights and welcome info for the admin center. When you're done, click **Go to setup** to complete the Office 365 setup.
+
+  **Figure 4** - Office 365 admin center
+
+  ![Office 365 admin center](images/office365_admin_center.png)
+
+
+
+### 2.2 Add Microsoft Intune to your domain
 In the Office 365 admin center, select **Admin centers > Intune**.
 
   > [!NOTE]
@@ -71,7 +85,7 @@ Once you've successfully added Intune, you will see the Intune dashboard.
 **Figure 4** - Microsoft Intune dashboard
 ![Microsoft Intune dashboard](images/intune_dashboard.png)
 
-### 2.5 Add Azure AD to your domain
+### 2.3 Add Azure AD to your domain
 In the Office 365 admin center, select **Admin centers > Azure AD**.
 
   > [!NOTE]
@@ -82,7 +96,7 @@ You should see the Microsoft Azure portal once you've successfully added Azure A
 **Figure 5** - Microsoft Azure portal
 ![Microsoft Azure portal](images/azure_ad_portal.png)
 
-### 2.6 Assign licenses to users
+### 2.4 Assign licenses to users
 Users need product licenses assigned to them to use services such as Microsoft Classroom and Office 365. You can assign product licenses to users in bulk or individually. For more info on how to do this, see the sections *Step 2: Assign licenses to global admins* and *Step 3: Assign licenses to teachers and students* in [Add Microsoft Classroom Preview and School Data Sync Preview to your Office 365 Education tenant](https://aka.ms/classroomsetup)
 
 > [!TIP]
@@ -93,7 +107,7 @@ Users need product licenses assigned to them to use services such as Microsoft C
 **Figure 6** - Assign product licenses to users
 ![Assign product licenses to users](images/office365_admin_center_product_licenses.png)
 
-### 2.7 Configure automatic MDM enrollment with Azure AD and Intune
+### 2.5 Configure automatic MDM enrollment with Azure AD and Intune
 Read [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/) to learn how you can combine login, Azure AD Join, and Intune MDM enrollment into an easy step so that you can bring your devices into a managed state that complies with the policies for your organization. We will use the blog post as our guide for this part of the walkthrough and we'll show how you can add new groups.
 
   > [!NOTE]
@@ -147,7 +161,7 @@ Read [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/201
 
 4. After you've chosen how to manage devices for users, select **Save** to enable automatic MDM enrollment with Intune.
 
-### 2.8 Configure Windows Store for Business for app distribution
+### 2.6 Configure Windows Store for Business for app distribution
 To distribute apps with a management tool, Configure Windows Store for Business. Follow the steps in [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune) to associate your Windows Store for Business account with Intune and configure Windows Store for Business synchronization.
 
 **To associate your Windows Store for Business account with Intune**
@@ -186,12 +200,7 @@ If you have other apps that you want to deploy or manage, you must add it to Mic
 
 In the following example, we'll show you how to buy apps through the Windows Store for Business and then add the apps to Intune.
 
-**Example 1 - Minecraft: Education Edition**
-1. Go to the [Minecraft: Education Edition Get Started](http://education.minecraft.net/get-started/) page and select **I'm an administrator**.
-2. Enter your school email address.
-3. Follow the steps in [For IT administrators - get Minecraft: Education Edition](https://technet.microsoft.com/en-us/edu/windows/school-get-minecraft) to add Minecraft to your inventory.
-
-**Example 2 - Duolingo and Khan Academy**
+**Example - Duolingo and Khan Academy**
 1. In the Windows Store for Business page, search the Store for the free **Duolingo - Learn Languages for Free** app, and then select the app from the search result(s).
 2. In the app's Store page, select the license type and then select **Get the app**.
 3. You should see a dialog that confirms your order. Click **Close**.
@@ -210,19 +219,9 @@ In the following example, we'll show you how to buy apps through the Windows Sto
 ## 3. Set up devices
 
 ### 3.1 Set up new devices
-To set up new Windows devices, choose from one of these options:
-- **Option 1: [Use the Set up School PCs app](#usesetupschoolpcs)** - You can use the app to create a setup file that you can use to set up your Windows 10 devices.
-- **Option 2: [Go through Windows OOBE](#usewindowsoobe)** - You can go through a typical Windows device setup or first-run experience to configure your device.
+To set up new Windows devices, go through the Windows initial device setup or first-run experience to configure your device.
 
-**<a name="usesetupschoolpcs"></a>To set up a device using the Set up School PCs app**
-- Follow the steps in [Use the Set up School PCs app](use-set-up-school-pcs-app.md) to create a provisioning package that you can use to provision your Windows 10 devices.
-  - In the *Create the setup file in the app* section, you will create a provisioning package that contains the settings that will be applied to the Windows PCs that you want to set up.
-  - In the *Apply the setup file to PCs* section, you'll need to insert the USB drive that contains the provisioning package or setup file into the PC that you want to set up, and then restart or reset the PC so you are presented with the Windows first-run screen and then you go through device setup.
-
-    > [!NOTE]
-    > When you are applying the setup file to the PC, in the **Who owns this PC?** screen, make sure to select **My work or school owns it**.
-
-**<a name="usewindowsoobe"></a>To set up a device using OOBE**
+**<a name="usewindowsoobe"></a>To set up a device**
 1. Go through the Windows device setup experience. On a new or reset device, this starts with the **Hi there** screen.
 2. If you don't have a Wi-Fi network configured, make sure you connect the device to the Internet through a wired/Ethernet connection.
 3. Select the option to **Join this device to Azure Active Directory**.
@@ -232,7 +231,7 @@ To set up new Windows devices, choose from one of these options:
 Verify that the device is set up correctly and boots without any issues.
 
 **To verify that the device was set up correctly**
-1. Confirm that the Start menu contains a simple configuration and shows **School essentials**.
+1. Click on the **Start** menu and select some of the options to make sure everything launches properly.
 2. Confirm that the Store and built-in apps are working.
 
 ### 3.3 Verify the device is Azure AD joined
