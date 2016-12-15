@@ -18,6 +18,6 @@ localizationpriority: high
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
 
-We recommend that you update your network settings for both the Enteprise Cloud and Neutral resources.
+We recommend that you add the following URLs to your network settings for both the Enteprise Cloud and Neutral resources.
 
 ## Recommended Enterprise Cloud Resources 

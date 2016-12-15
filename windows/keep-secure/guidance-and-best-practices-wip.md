@@ -22,7 +22,8 @@ This section includes info about the enlightened Microsoft apps, including how t
 ## In this section
 |Topic |Description |
 |------|------------|
-|[Mandatory settings for Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |A list of all of the tasks and settings that are required for the operating system to turn on Windows Information Protection (WIP), formerly known as enterprise data protection (EDP), in your enterprise. |
-|[Enlightened apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md) |Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your allowed apps list. |
-|[Testing scenarios for Windows Information Protection (WIP)](testing-scenarios-for-wip.md) |We've come up with a list of suggested testing scenarios that you can use to test WIP in your company. |
-|[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |The most common problems you might encounter while using Windows Information Protection (WIP). |
+|[Enlightened apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md) |Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your allowed apps list. | 
+|[Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](app-behavior-with-wip.md) |Learn the difference between enlightened and unenlightened app behavior. |
+|[Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](app-behavior-with-wip.md) |An explanation about enlightened and unenlightened app behavior with Windows Information Protection (WIP). |
+|[Recommended Office 365 Mail and Calendar apps configuration with Windows Information Protection (WIP)](recommended-office-365-configurations-for-wip.md) |A list of recommended Windows Information Protection (WIP) configurations for use with Office 2016 and the Office 365 Mail and Calendar apps. |
+|[Recommended Enterprise Cloud and Neutral network settings with Windows Information Protection (WIP)](recommended-network-definitions-for-wip.md) |A list of recommended URLs to add to your network settings for both the Enteprise Cloud and Neutral resources. |
