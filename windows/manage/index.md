@@ -14,6 +14,9 @@ author: jdeckerMS
 
 Learn about managing and updating Windows 10.
 
+>[!NOTE]
+>Information for Windows 10 Enterprise also applies to Windows 10 IoT Enterprise, and information for Windows 10 Mobile Enterprise also applies to Windows 10 IoT Mobile. For information about managing devices running Windows 10 IoT Core, see [Azure and Internet of Things](https://docs.microsoft.com/azure/iot-hub/iot-hub-what-is-azure-iot).
+
 ## In this section
 
 <table>
