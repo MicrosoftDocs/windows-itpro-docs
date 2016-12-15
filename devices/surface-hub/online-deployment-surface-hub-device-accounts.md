@@ -127,12 +127,12 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
 
 Alternatively, You can assign a license to the Surface Hub through the Office 365 administrators portal:
 
-1. Login as a tenant administrator, open the O365 Administrative Portal, and click on the Admin app.
-1. Click on Users and Groups and then Add users, reset passwords, and more.
+1. Sign in as a tenant administrator, open the O365 Administrative Portal, and click the Admin app.
+1. Click **Users and Groups** and then **Add users, reset passwords, and more**.
 1. Select the Surface Hub account, and then click or tap the pen icon, which means edit.
-1. Click on the Licenses option.
-1. In the Assign licenses section, you need to select an appropriate license that meets the requirements in step 7 depending on your licensing and what you've decided in terms of needing Enterprise Voice.
-1. Click Save and you're done.
+1. Click the **Licenses** option.
+1. In the **Assign licenses** section, select an appropriate license that meets the requirements in step 7 depending on your licensing and what you've decided in terms of needing Enterprise Voice.
+1. Click **Save** and you're done.
 
 
 
