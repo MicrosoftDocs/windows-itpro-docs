@@ -21,7 +21,7 @@ localizationpriority: high
 We recommend that you add the following URLs to your network settings for both the Enteprise Cloud and Neutral resources.
 
 ## Recommended Enterprise Cloud Resources
-This table includes the recommended URLs to add to your Enterprise Cloud Resources network setting, based on what you use in your organization.
+This table includes the recommended URLs to add to your Enterprise Cloud Resources network setting, based on the apps you use in your organization.
 
 |If your organization uses... |Add these entries to your Enterprise Cloud Resources network setting<br>(Replace "contoso" with your domain name(s) |
 |-----------------------------|---------------------------------------------------------------------|
@@ -32,7 +32,8 @@ This table includes the recommended URLs to add to your Enterprise Cloud Resourc
 |Power BI |contoso.powerbi.com |
 
 ## Recommended Neutral Resources
-This table includes the recommended URLs to add to your Neutral Resources network setting, based on what you use in your organization.
-
-|If your organization uses... |Add these entries to your Enterprise Cloud Resources network setting<br>(Replace "contoso" with your domain name(s) |
-|-----------------------------|---------------------------------------------------------------------|
+We recommended adding these URLs if you use the Neutral Resources network setting with Windows Information Protection (WIP).
+<ul>
+    <li>login.microsoftonline.com</li>
+    <li>login.windows.net</li>
+</ul>
