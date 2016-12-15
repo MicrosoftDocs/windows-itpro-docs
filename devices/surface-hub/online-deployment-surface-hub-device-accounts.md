@@ -84,7 +84,10 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     Set-MsolUser -UserPrincipalName 'HUB01@contoso.com' -PasswordNeverExpires $true
     ```
 
-7.  The device account needs to have a valid Office 365 (O365) license, or Exchange and Skype for Business will not work. If you have the license, you need to assign a usage location to your device account—this determines what license SKUs are available for your account.
+7.  Surface Hub requires a license for Skype for Business functionality.
+    - Your Surface Hub account requires a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
+    - You'll need to have Lync Online (Plan 2) or higher in your O365 plan. The plan needs to support conferencing capability.
+    - If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Lync Online (Plan 3).    
 
     Next, you can use `Get-MsolAccountSku` to retrieve a list of available SKUs for your O365 tenant.
 
@@ -98,15 +101,6 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
 
 8.  Enable the device account with Skype for Business.
 
-    In order to enable Skype for Business, your environment will need to meet the following prerequisites:
-
-    -   You'll need to have Lync Online (Plan 2) or higher in your O365 plan. The plan needs to support conferencing capability.
-    -   If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Lync Online (Plan 3).
-    -   Your tenant users must have Exchange mailboxes.
-    -   Your device account needs a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
-
-    <!-- -->
-
     -   Start by creating a remote PowerShell session from a PC.
 
         ```PowerShell
@@ -115,29 +109,32 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
         Import-PSSession $cssess -AllowClobber
         ```
 
-    -   To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
-
-        ```PowerShell
-        Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool  
-        "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
-        ```
-
-        If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
+     - Next, if you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet (for example, *alice@contoso.com*):
 
         ```PowerShell
         Get-CsOnlineUser -Identity ‘alice@contoso.com’| fl *registrarpool*
+        OR by setting a variable
+        $strRegistrarPool = (Get-CsOnlineUser -Identity ‘alice@contoso.com’).RegistrarPool
+        ```
+        
+      - Enable the Surface Hub account with the following cmdlet:
+      
+        ```PowerShell
+        Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool yourRegistrarPool -SipAddressType EmailAddress
+        OR using the $strRegistarPool variable from above
+        Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool $strRegistrarPool -SipAddressType EmailAddress
         ```
 
-9.  Assign Skype for Business license to your Surface Hub account.
+Alternatively, You can assign a license to the Surface Hub through the Office 365 administrators portal:
 
-    Once you've completed the preceding steps to enable your Surface Hub account in Skype for Business Online, you need to assign a license to the Surface Hub. Using the O365 administrative portal, assign either a Skype for Business Online (Plan 2) or a Skype for Business Online (Plan 3) to the device.
+1. Login as a tenant administrator, open the O365 Administrative Portal, and click on the Admin app.
+1. Click on Users and Groups and then Add users, reset passwords, and more.
+1. Select the Surface Hub account, and then click or tap the pen icon, which means edit.
+1. Click on the Licenses option.
+1. In the Assign licenses section, you need to select an appropriate license that meets the requirements in step 7 depending on your licensing and what you've decided in terms of needing Enterprise Voice.
+1. Click Save and you're done.
 
-    -   Login as a tenant administrator, open the O365 Administrative Portal, and click on the Admin app.
-    -   Click on **Users and Groups** and then **Add users, reset passwords, and more**.
-    -   Select the Surface Hub account, and then click or tap the pen icon, which means edit.
-    -   Click on the **Licenses** option.
-    -   In the **Assign licenses** section, you need to select Skype for Business (Plan 2) or Skype for Business (Plan 3), depending on your licensing and what you've decided in terms of needing Enterprise Voice. You'll have to use a Plan 3 license if you want to use Enterprise Voice on your Surface Hub.
-    -   Click **Save** and you're done.
+
 
 >[!NOTE]
 >It's also possible to use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
