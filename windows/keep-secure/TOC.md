@@ -35,7 +35,7 @@
 #### [Enlightened apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md)
 #### [Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](app-behavior-with-wip.md)
 #### [Recommended Office 365 Mail and Calendar apps configuration with Windows Information Protection (WIP)](recommended-office-365-configurations-for-wip.md)
-#### [Recommended Enterprise Cloud and Neutral network settings with Windows Information Protection (WIP)](recommended-network-definitions-for-wip.md)
+#### [Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](recommended-network-definitions-for-wip.md)
 ### [Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](mandatory-settings-for-wip.md)
 ### [Testing scenarios for Windows Information Protection (WIP)](testing-scenarios-for-wip.md)
 ### [Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md)

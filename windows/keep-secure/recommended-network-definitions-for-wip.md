@@ -1,7 +1,7 @@
 ---
-title: Recommended Enterprise Cloud and Neutral network settings with Windows Information Protection (WIP) (Windows 10)
-description: Recommendations about additions to make to the Enterprise Cloud and Neutral network settings with Windows Information Protection (WIP).
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP and Neutral resources, WIP and Enterprise Cloud Resources
+title: Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP) (Windows 10)
+description: Recommended additions for the Enterprise Cloud Resources and Neutral Resources network settings used with Windows Information Protection (WIP).
+keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP and Neutral Resources, WIP and Enterprise Cloud Resources
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 ---
 
-# Recommended Enterprise Cloud and Neutral network settings with Windows Information Protection (WIP)
+# Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)
 
 **Applies to:**
 
@@ -20,4 +20,19 @@ localizationpriority: high
 
 We recommend that you add the following URLs to your network settings for both the Enteprise Cloud and Neutral resources.
 
-## Recommended Enterprise Cloud Resources 
+## Recommended Enterprise Cloud Resources
+This table includes the recommended URLs to add to your Enterprise Cloud Resources network setting, based on what you use in your organization.
+
+|If your organization uses... |Add these entries to your Enterprise Cloud Resources network setting<br>(Replace "contoso" with your domain name(s) |
+|-----------------------------|---------------------------------------------------------------------|
+|Office 365 for Business |<ul><li>contoso.sharepoint.com</li><li>contoso-my.sharepoint.com</li><li>contoso-files.sharepoint.com</li><li>tasks.office.com</li><li>lists.office.com</li><li>collabdb.com</li><li>www.collabdb.com</li><li>protection.office.com</li><li>meet.lync.com</li><li>teams.microsoft.com</li></ul> |
+|Yammer |<ul><li>www.yammer.com</li><li>yammer.com</li><li>persona.yammer.com</li></ul> |
+|Microsoft Dynamics |contoso.crm.dynamics.com |
+|Visual Studio Online |contoso.visualstudio.com |
+|Power BI |contoso.powerbi.com |
+
+## Recommended Neutral Resources
+This table includes the recommended URLs to add to your Neutral Resources network setting, based on what you use in your organization.
+
+|If your organization uses... |Add these entries to your Enterprise Cloud Resources network setting<br>(Replace "contoso" with your domain name(s) |
+|-----------------------------|---------------------------------------------------------------------|
