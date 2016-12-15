@@ -109,7 +109,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
         Import-PSSession $cssess -AllowClobber
         ```
 
-     - Next, if you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet (for example, *alice@contoso.com*):
+   - Next, if you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet (for example, *alice@contoso.com*):
 
         ```PowerShell
         Get-CsOnlineUser -Identity ‘alice@contoso.com’| fl *registrarpool*
@@ -117,7 +117,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
         $strRegistrarPool = (Get-CsOnlineUser -Identity ‘alice@contoso.com’).RegistrarPool
         ```
         
-      - Enable the Surface Hub account with the following cmdlet:
+    - Enable the Surface Hub account with the following cmdlet:
       
         ```PowerShell
         Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool yourRegistrarPool -SipAddressType EmailAddress
