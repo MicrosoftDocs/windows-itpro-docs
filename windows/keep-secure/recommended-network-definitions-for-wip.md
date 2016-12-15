@@ -1,6 +1,6 @@
 ---
 title: Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP) (Windows 10)
-description: Recommended additions for the Enterprise Cloud Resources and Neutral Resources network settings used with Windows Information Protection (WIP).
+description: Recommended URLs to add to your Enterprise Cloud Resources and Neutral Resources network settings, when used with Windows Information Protection (WIP).
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP and Neutral Resources, WIP and Enterprise Cloud Resources
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -18,7 +18,7 @@ localizationpriority: high
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
 
-We recommend that you add the following URLs to your network settings for both the Enteprise Cloud and Neutral resources.
+We recommend that you add the following URLs to the Enterprise Cloud Resources and Neutral Resources network settings, when used with Windows Information Protection (WIP).
 
 ## Recommended Enterprise Cloud Resources
 This table includes the recommended URLs to add to your Enterprise Cloud Resources network setting, based on the apps you use in your organization.
