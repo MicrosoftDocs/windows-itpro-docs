@@ -139,7 +139,7 @@ Alternatively, You can assign a license to the Surface Hub through the Office 36
 >[!NOTE]
 >It's also possible to use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
-For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.
+For validation, you should be able to use any Skype for Business client (PC, Android, etc) to sign in to this account.
 
 
 
