@@ -59,7 +59,8 @@ If this is the first time you're setting this up, you can follow these steps to 
 
 4. Select **Create my account** and then enter the phone number you used in step 2 to verify your identity. You'll be asked to enter your verification code.
 5. Select **You're ready to go...** which will take you to the Office 365 portal.
-  Icons that are greyed out are still installing and may take up to a half hour to install.
+
+  Icons that are greyed out are still installing.
 
   **Figure 3** - Office 365 portal
 
@@ -68,9 +69,30 @@ If this is the first time you're setting this up, you can follow these steps to 
 6. Select the **Admin** tile to go to the Office 365 admin center.
 7. In the admin center, click **Next** to see the highlights and welcome info for the admin center. When you're done, click **Go to setup** to complete the Office 365 setup.
 
+  This may take a half hour to complete.
+
   **Figure 4** - Office 365 admin center
 
   ![Office 365 admin center](images/office365_admin_center.png)
+
+8. Go back to the main admin center page. If you already have a domain, select **Go to setup** and skip to step X. Otherwise, buy a domain by following these steps:
+  1. From the admin center, select the **Domains** option.
+
+    **Figure 5** - Buy a new domain
+
+    ![Buy a domain through the admin center](images/office365_domains.png)
+
+  2. Select **+ Buy domain** to buy a domain. You'll be required to upgrade your trial plan in order to buy a domain.
+  3. Select **Office 365 Business Premium** (the current trial plan) and click **Buy now**.
+  4. Choose the subscription plan you want to use for your business: monthly or annual subscription. Click **Add to cart**.
+  5. In the **Checkout** screen, provide the details to complete your order.
+
+    **Figure 6** - Buy a new domain
+
+    ![Complete checkout](images/office365_plan_subscription_checkout.png)
+
+  6. TBD
+
 
 
 
