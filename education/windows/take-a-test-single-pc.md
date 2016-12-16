@@ -25,17 +25,10 @@ The **Take a Test** app in Windows 10, Version 1607, creates the right environme
 - Students can’t change settings, extend their display, see notifications, get updates, or use autofill features.
 - Cortana is turned off.
 
-<<<<<<< HEAD
-> **Tip!**
-> To exit **Take a Test**, press Ctrl+Alt+Delete.
-
-
-
-=======
 > [!TIP]  
 > To exit **Take a Test**, press Ctrl+Alt+Delete. 
 
->>>>>>> f50c53382577edc4df9f4e8c3f911e5a8da4bc83
+
 ## How you use Take a Test
 
 ![Use test account or test url in Take a Test](images/take-a-test-flow.png)
