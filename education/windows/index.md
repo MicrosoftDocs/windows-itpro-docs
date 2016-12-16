@@ -42,6 +42,13 @@ author: CelesteDG
  <b>[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)</b><br />Get step-by-step guidance on how to deploy Windows 10 to PCs and devices across a school district.</p></div>
    </div></div>
 
+ ## ![Deploy Windows 10 for education](images/windows.png) Upgrade
+
+ <div class="side-by-side"> <div class="side-by-side-content">
+ <div class="side-by-side-content-left"><p><b>[Upgrade Windows 10 Pro to Pro Education from Windows Store for Business](windows-10-pro-to-pro-edu-upgrade.md)</b><br />If you have an education tenant and use Windows 10 Pro in your schools now, find out how you can opt-in to a free upgrade to Windows 10 Pro Education.</p></div>
+ </div>
+
+
 ## Related topics
 
 - [Try it out: virtual labs and how-to videos for Windows 10 Education](https://technet.microsoft.com/en-us/windows/dn610356)
