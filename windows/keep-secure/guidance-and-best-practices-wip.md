@@ -27,3 +27,6 @@ This section includes info about the enlightened Microsoft apps, including how t
 |[Enlightened apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md) |Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your allowed apps list. |
 |[Testing scenarios for Windows Information Protection (WIP)](testing-scenarios-for-wip.md) |We've come up with a list of suggested testing scenarios that you can use to test WIP in your company. |
 |[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |The most common problems you might encounter while using Windows Information Protection (WIP). |
+
+>[!NOTE]
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
