@@ -163,4 +163,7 @@ You can try any of the processes included in these scenarios, but you should foc
             </ul>
         </td>
     </tr>
-</table>    
+</table>
+
+>[!NOTE]
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

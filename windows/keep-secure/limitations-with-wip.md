@@ -79,4 +79,7 @@ This table provides info about the most common problems you might encounter whil
         <td>Webpages that use ActiveX controls can potentially communicate with other outside processes that aren’t protected by using WIP.</td>
         <td>We recommend that you switch to using Microsoft Edge, the more secure and safer browser that prevents the use of ActiveX controls. We also recommend that you limit the usage of Internet Explorer 11 to only those line-of-business apps that require legacy technology.<p>For more info, see [Out-of-date ActiveX control blocking](https://technet.microsoft.com/en-us/itpro/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking).</td>
     </tr>
-</table>                 
+</table>
+
+>[!NOTE]
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).       

@@ -24,6 +24,9 @@ This section includes info about the enlightened Microsoft apps, including how t
 |------|------------|
 |[Enlightened apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md) |Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your allowed apps list. | 
 |[Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](app-behavior-with-wip.md) |Learn the difference between enlightened and unenlightened app behaviors. |
-|[Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](app-behavior-with-wip.md) |An explanation about enlightened and unenlightened app behavior with Windows Information Protection (WIP). |
 |[Recommended Office 365 Mail and Calendar apps configuration with Windows Information Protection (WIP)](recommended-office-365-configurations-for-wip.md) |Recommended Windows Information Protection (WIP) configurations for use with Office 2016 and the Office 365 Mail and Calendar apps. |
 |[Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](recommended-network-definitions-for-wip.md) |Recommended additions for the Enterprise Cloud Resources and Neutral Resources network settings, when used with Windows Information Protection (WIP). |
+
+>[!NOTE]
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
+>>>>>>> refs/remotes/origin/master
