@@ -211,56 +211,162 @@ For more information, see [Manage settings in the Store for Business](../manage/
 
 ## Supported markets
 
-
 Store for Business is currently available in these markets.
 
-|Country or locale|Paid apps|Free apps|
-|-----------------|---------|---------|
-|Argentina|X|X|
-|Australia|X|X|
-|Austria|X|X|
-|Belgium (Dutch, French)|X|X|
-|Brazil| |X|
-|Canada (English, French)|X|X|
-|Chile|X|X|
-|Columbia|X|X|
-|Croatia|X|X|
-|Czech Republic|X|X|
-|Denmark|X|X|
-|Finland|X|X|
-|France|X|X|
-|Germany|X|X|
-|Greece|X|X|
-|Hong Kong SAR|X|X|
-|Hungary|X|X|
-|India| |X|
-|Indonesia|X|X|
-|Ireland|X|X|
-|Italy|X|X|
-|Japan|X|X|
-|Malaysia|X|X|
-|Mexico|X|X|
-|Netherlands|X|X|
-|New Zealand|X|X|
-|Norway|X|X|
-|Philippines|X|X|
-|Poland|X|X|
-|Portugal|X|X|
-|Romania|X|X|
-|Russia| |X|
-|Singapore|X|X|
-|Slovakia|X|X|
-|South Africa|X|X|
-|Spain|X|X|
-|Sweden|X|X|
-|Switzerland (French, German)|X|X|
-|Taiwan| |X|
-|Thailand|X|X|
-|Turkey|X|X|
-|Ukraine| |X|
-|United Kingdom|X|X|
-|United States|X|X|
-|Vietnam|X|X|
+<table>
+   <tr>
+        <th align="center" colspan="4">Support for free and paid apps</th>
+   </tr>
+   <tr align="left">
+     <td>
+        <ul>
+            <li>Algeria</li>
+            <li>Angola</li>
+            <li>Argentina</li>
+            <li>Australia</li>
+            <li>Austria</li>
+            <li>Bahamas</li>
+            <li>Bahrain</li>
+            <li>Bangladesh</li>
+            <li>Barbados</li>
+            <li>Belgium</li>
+            <li>Belize</li>
+            <li>Bermuda</li>
+            <li>Bolivia</li>
+            <li>Botswana</li>
+            <li>Brunei Darussalam</li>
+            <li>Bulgaria</li>
+            <li>Cameroon</li>
+            <li>Canada</li>
+            <li>Cape Verde</li>
+            <li>Cayman Islands</li>
+            <li>Chile</li>
+            <li>Colombia</li>
+            <li>Costa Rica</li>
+            <li>C&ocirc;te D'ivoire</li>
+            <li>Croatia</li>
+            <li>Cur&ccedil;ao</li>
+            <li>Cyprus</li>
+            <li>Czech Republic</li>
+            <li>Denmark</li>
+        </ul>
+    </td>
+     <td>
+        <ul>
+            <li>Dominican Republic</li>
+            <li>Ecuador</li>
+            <li>Egypt</li>
+            <li>El Salvador</li>
+            <li>Estonia</li>
+            <li>Faroe Islands</li>
+            <li>Fiji</li>
+            <li>Finland</li>
+            <li>France</li>
+            <li>Germany</li>
+            <li>Ghana</li>
+            <li>Greece</li>
+            <li>Guatemala</li>
+            <li>Honduras</li>
+            <li>Hong Kong</li>
+            <li>Hungary</li>
+            <li>Iceland</li>
+            <li>Indonesia</li>
+            <li>Iraq</li>
+            <li>Ireland</li>
+            <li>Israel</li>
+            <li>Italy</li>
+            <li>Jamaica</li>
+            <li>Japan</li>
+            <li>Jordan</li>
+            <li>Kenya</li>
+            <li>Kuwait</li>
+            <li>Latvia</li>
+            <li>Lebanon</li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>Libya</li>
+            <li>Liechtenstein</li>
+            <li>Lithuania</li>
+            <li>Luxembourg</li>
+            <li>Malaysia</li>
+            <li>Malta</li>
+            <li>Mexico</li>
+            <li>Mongolia</li>
+            <li>Montenegro</li>
+            <li>Morocco</li>
+            <li>Namibia</li>
+            <li>Netherlands</li>
+            <li>New Zealand</li>
+            <li>Nicaragua</li>
+            <li>Nigeria</li>
+            <li>Norway</li>
+            <li>Oman</li>
+            <li>Pakistan</li>
+            <li>Palestinian Territory</li>
+            <li>Panama</li>
+            <li>Paraguay</li>
+            <li>Peru</li>
+            <li>Philippines</li>
+            <li>Poland</li>
+            <li>Portugal</li>
+            <li>Puerto Rico</li>
+            <li>Qatar</li>
+            <li>Romania</li>
+            <li>Rwanda</li>
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>Saint Kitts and Nevis</li>
+            <li>Saudi Arabia</li>
+            <li>Senegal</li>
+            <li>Serbia</li>
+            <li>Singapore</li>
+            <li>Slovakia</li>
+            <li>Slovenia</li>
+            <li>South Africa</li>
+            <li>Spain</li>
+            <li>Sweden</li>
+            <li>Switzerland</li>
+            <li>Tanzania</li>
+            <li>Thailand</li>
+            <li>Trinidad and Tobago</li>
+            <li>Tunisia</li>
+            <li>Turkey</li>
+            <li>Uganda</li>
+            <li>United Arab Emirates</li>
+            <li>United Kingdom</li>
+            <li>United States</li>
+            <li>Uruguay</li>
+            <li>Viet Nam</li>
+            <li>Virgin Islands, U.S.</li>
+            <li>Zambia</li>
+            <li>Zimbabwe<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</li>
+            
+        </ul>
+    </td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+        <th align="center">Support for free apps only</th>
+   </tr>
+   <tr align="left">
+     <td>
+        <ul>
+            <li>Brazil</li>
+            <li>India</li>
+            <li>Russia</li>
+            <li>Taiwan</li>
+            <li>Ukraine</li>
+        </ul>
+    </td>
+   </tr>
+</table>
+
   
 ## <a href="" id="isv-wsfb"></a>ISVs and the Store for Business
 
