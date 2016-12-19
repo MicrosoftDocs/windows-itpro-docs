@@ -37,8 +37,6 @@
 ### [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
 #### [Enlightened apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md)
 #### [Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](app-behavior-with-wip.md)
-#### [Recommended Office 365 Mail and Calendar apps configuration with Windows Information Protection (WIP)](recommended-office-365-configurations-for-wip.md)
-#### [Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](recommended-network-definitions-for-wip.md)
 ## [VPN technical guide](vpn-guide.md)
 ### [VPN connection types](vpn-connection-type.md)
 ### [VPN routing decisions](vpn-routing.md)
