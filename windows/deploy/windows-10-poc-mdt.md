@@ -8,19 +8,6 @@ ms.pagetype: deploy
 author: greg-lindsay
 ---
 
-<style type="text/css">
-pre {
-  width: 40%;
-  max-height: 400px;
-  color: #444;
-  padding: 10px;
-  background: #eee;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  word-wrap: normal;
-  overflow: auto;
-}
-</style>
 
 # Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit
 
@@ -222,6 +209,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 
 26. Open a Windows PowerShell prompt on the Hyper-V host computer and type the following commands:
 
+<div style='font-size:9.0pt'>
 
 	<pre style="overflow-y: visible">
     New-VM -Name REFW10X64-001 -SwitchName poc-internal -NewVHDPath "c:\VHD\REFW10X64-001.vhdx" -NewVHDSizeBytes 60GB
@@ -230,6 +218,8 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     Start-VM REFW10X64-001
     vmconnect localhost REFW10X64-001
 	</pre>
+
+</div>
     
     The VM will require a few minutes to prepare devices and boot from the LiteTouchPE_x86.iso file. 
 
