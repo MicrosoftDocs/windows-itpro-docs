@@ -37,7 +37,7 @@ Recent additions to the downloads for Surface devices provide you with options t
 
 ## Surface Studio
 
-Download the following updates for Surface Studio from the Microsoft Download Center.
+Download the following updates for [Surface Studio from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=54311).
 
 * SurfaceStudio_Win10_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
@@ -96,9 +96,9 @@ Download the following updates [for Surface 3 from the Microsoft Download Center
 
 -   Surface3_WiFi_Win10_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
 
--   Surface3_WiFiWin8x_xxxxxx.msi – Cumulative firmware and driver update package for Windows 8.1 Pro
+-   Surface3_WiFi_Win8x_xxxxxx.msi – Cumulative firmware and driver update package for Windows 8.1 Pro
 
--   Surface3_WiFiWin8x_xxxxxx.zip – Cumulative firmware and driver update package for Windows 8.1 Pro
+-   Surface3_WiFi_Win8x_xxxxxx.zip – Cumulative firmware and driver update package for Windows 8.1 Pro
 
 -   Surface 3 AssetTag.zip – UEFI Asset Tag management tool
 
