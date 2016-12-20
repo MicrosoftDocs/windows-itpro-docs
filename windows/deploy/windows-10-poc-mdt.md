@@ -223,14 +223,13 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 26. Open a Windows PowerShell prompt on the Hyper-V host computer and type the following commands:
 
 
-    <pre>
+    ```
     New-VM –Name REFW10X64-001 -SwitchName poc-internal -NewVHDPath "c:\VHD\REFW10X64-001.vhdx" -NewVHDSizeBytes 60GB 
     Set-VMMemory -VMName REFW10X64-001 -DynamicMemoryEnabled $true -MinimumBytes 1024MB -MaximumBytes 1024MB -Buffer 20
     Set-VMDvdDrive -VMName REFW10X64-001 -Path c:\VHD\LiteTouchPE_x86.iso
     Start-VM REFW10X64-001
     vmconnect localhost REFW10X64-001
-    </pre>
-
+    ```
 
 
     The VM will require a few minutes to prepare devices and boot from the LiteTouchPE_x86.iso file. 
