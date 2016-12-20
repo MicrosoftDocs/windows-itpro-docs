@@ -54,7 +54,7 @@ In addition, BitLocker offers the option to lock the normal startup process unti
 
 On computers that do not have a TPM version 1.2 or higher, you can still use BitLocker to encrypt the Windows operating system volume. However, this implementation will require the user to insert a USB startup key to start the computer or resume from hibernation, and does not provide the pre-startup system integrity verification offered by BitLocker working with a TPM.
 
-**BitLocker key protectors**
+### BitLocker key protectors
 
 | Key protector | Description |
 | - | - |
@@ -65,7 +65,7 @@ On computers that do not have a TPM version 1.2 or higher, you can still use Bi
 | Recovery password | A 48-digit number used to unlock a volume when it is in recovery mode. Numbers can often be typed on a regular keyboard, if the numbers on the normal keyboard are not responding you can always use the function keys (F1-F10) to input the numbers.| 
 | Recovery key| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume.| 
  
-**BitLocker authentication methods**
+### BitLocker authentication methods
 
 | Authentication method | Requires user interaction | Description |
 | - | - | - |
