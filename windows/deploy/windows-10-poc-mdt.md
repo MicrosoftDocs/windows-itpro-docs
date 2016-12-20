@@ -231,7 +231,6 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     vmconnect localhost REFW10X64-001
     ```
 
-
     The VM will require a few minutes to prepare devices and boot from the LiteTouchPE_x86.iso file. 
 
 27. In the Windows Deployment Wizard, select **Windows 10 Enterprise x64 Default Image**, and then click **Next**.
