@@ -129,6 +129,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     - Summary: click **Next**
     - Confirmation: click **Finish**
 
+
 12. Edit the task sequence to add the Microsoft NET Framework 3.5, which is required by many applications. To edit the task sequence, double-click **Windows 10 Enterprise x64 Default Image** that was created in the previous step.
 
 13. Click the **Task Sequence** tab. Under **State Restore** click **Tatto** to highlight it, then click **Add** and choose **New Group**.
@@ -207,13 +208,13 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 
 26. Open a Windows PowerShell prompt on the Hyper-V host computer and type the following commands:
 
-    <pre style="overflow: auto;">
+    ```
     New-VM –Name REFW10X64-001 -SwitchName poc-internal -NewVHDPath "c:\VHD\REFW10X64-001.vhdx" -NewVHDSizeBytes 60GB 
     Set-VMMemory -VMName REFW10X64-001 -DynamicMemoryEnabled $true -MinimumBytes 1024MB -MaximumBytes 1024MB -Buffer 20
     Set-VMDvdDrive -VMName REFW10X64-001 -Path c:\VHD\LiteTouchPE_x86.iso
     Start-VM REFW10X64-001
     vmconnect localhost REFW10X64-001
-    </pre>
+    ```
 
     The VM will require a few minutes to prepare devices and boot from the LiteTouchPE_x86.iso file. 
 
@@ -231,6 +232,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     - Capture the installation to a Windows Imaging (WIM) file.
     - Turn off the virtual machine.
 
+
     This step requires from 30 minutes to 2 hours, depending on the speed of the Hyper-V host. After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep. The image is located in the C:\MDTBuildLab\Captures folder on your deployment server (SRV1). The file name is **REFW10X64-001.wim**.
 
 ## Deploy a Windows 10 image using MDT
@@ -242,6 +244,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
      - **Share name**: MDTProd$
      - **Deployment share description**: MDT Production
      - **Options**: accept the default
+
 
 2. Click **Next**, verify the new deployment share was added successfully, then click **Finish**.
 
@@ -262,6 +265,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 10. In the **Operating Systems** > **Windows 10** node, double-click the operating system that was added to view its properties. Change the operating system name to **Windows 10 Enterprise x64 Custom Image** and then click **OK**. See the following example:
 
     ![custom image](images/image.png)
+
 
 ### Create the deployment task sequence
 
