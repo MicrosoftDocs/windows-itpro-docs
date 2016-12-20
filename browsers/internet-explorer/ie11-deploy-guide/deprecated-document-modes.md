@@ -10,7 +10,6 @@ title: Deprecated document modes and Internet Explorer 11 (Internet Explorer 11 
 ms.sitesec: library
 ---
 
-
 # Deprecated document modes and Internet Explorer 11
 
 **Applies to:**
@@ -25,8 +24,8 @@ Windows Internet Explorer 8 introduced document modes as a way to move from the
 
 This means that while Internet Explorer 11 will continue to support document modes, Microsoft Edge won’t. And because of that, it also means that if you want to use Microsoft Edge, you’re going to have to update your legacy webpages and apps to support modern features, browsers, and devices.
 
-**Note**<br>
-For specific details about the technologies and APIs that are no longer supported in Microsoft Edge, see [A break from the past, part 2: Saying goodbye to ActiveX, VBScript, attachEvent](https://go.microsoft.com/fwlink/p/?LinkId=615953).
+>**Note**<br>
+>For specific details about the technologies and APIs that are no longer supported in Microsoft Edge, see [A break from the past, part 2: Saying goodbye to ActiveX, VBScript, attachEvent](https://go.microsoft.com/fwlink/p/?LinkId=615953).
 
 ## What is document mode?
 Each release after Internet Explorer 8 has helped with the transition by introducing additional document modes that emulated previously supported versions, while also introducing support for features defined by industry standards. During this time, numerous websites and apps were updated to the latest and greatest industry standards, while many other sites and apps continued to simply rely on document modes to work properly.
@@ -41,7 +40,8 @@ The compatibility improvements made in IE11 lets older websites just work in the
 ## Document mode selection flowchart
 This flowchart shows how IE11 works when document modes are used.
 
-![Flowchart detailing how document modes are chosen in IE11](images/docmodeflow2.png)
+![Flowchart detailing how document modes are chosen in IE11](images/docmode-decisions-sm.png)<br>
+[Click this link to enlarge image](img-ie11-docmode-lg.md)
 
 ## Known Issues with Internet Explorer 8 document mode in Enterprise Mode
 The default document mode for Enterprise Mode is Internet Explorer 8. While this mode provides a strong emulation of that browser, it isn’t an exact match. For example, Windows Internet Explorer 9 fundamentally changed how document modes work with iframes and document modes can’t undo architectural changes. It’s also a known issue that Windows 10 supports GDI font rendering while using Enterprise Mode, but uses natural metrics once outside of Enterprise Mode.
