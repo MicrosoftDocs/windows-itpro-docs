@@ -113,7 +113,6 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     - Progress: wait for files to be copied
     - Confirmation: click **Finish**
 
-
     >For purposes of this test lab, we will only add the prerequisite .NET Framework feature. Commerical applications (ex: Microsoft Office) will not be added to the deployment share. For information about adding applications, see the [Add applications](https://technet.microsoft.com/en-us/itpro/windows/deploy/create-a-windows-10-reference-image#sec03) section of the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic in the TechNet library.
 
 11. The next step is to create a task sequence to reference the operating system that was imported. To create a task sequence, right-click the **Task Sequences** node and then click **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
