@@ -197,8 +197,9 @@ The deployment script displays the following exit codes to let you know if it wa
 <TR><TD>23<TD>Error finding system variable %WINDIR%.
 <TR><TD>24<TD>SetIEDataOptIn failed when writing IEDataOptIn to registry.
 <TR><TD>25<TD>SetIEDataOptIn failed with unexpected exception.
-<TR><TD>26<TD>The operating system is LTSB SKU. The script does not support LTSB SKUs.
-<TR><TD>27<TD>The operating system is Server SKU. The script does not support Server SKUs.
+<TR><TD>26<TD>The operating system is Server or LTSB SKU. The script does not support Server or LTSB SKUs.
+<TR><TD>27<TD>The script is not running under System account.  The Upgrade Analytics configuration script must be run as system.
+<TR><TD>28<TD>Could not create log file at the specified logPath.
 </TABLE>
 
 </div>
