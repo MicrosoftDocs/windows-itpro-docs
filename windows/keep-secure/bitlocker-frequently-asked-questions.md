@@ -198,9 +198,9 @@ Any number of internal, fixed data drives can be protected with BitLocker. On so
 
 ## <a href="" id="bkmk-keymanagement"></a>Key management
 
-### <a href="" id="bkmk-key"></a>What is the difference between a TPM owner password, recovery password, recovery key, password, PIN, enhanced PIN, and startup key?
+### <a href="" id="bkmk-key"></a>What is the difference between a recovery password, recovery key, PIN, enhanced PIN, and startup key?
 
-There are multiple keys that can be generated and used by BitLocker. Some keys are required and some are optional protectors you can choose to use depending on the level of security you require.
+For tables that list and describe elements such as a recovery password, recovery key, and PIN, see [BitLocker key protectors](prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-key-protectors) and [BitLocker authentication methods](prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-authentication-methods). 
 
 ### <a href="" id="bkmk-recoverypass"></a>How can the recovery password and recovery key be stored?
 
