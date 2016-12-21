@@ -235,6 +235,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 	- Capture the installation to a Windows Imaging (WIM) file.
 	- Turn off the virtual machine.
     
+    
     This step requires from 30 minutes to 2 hours, depending on the speed of the Hyper-V host. After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep. The image is located in the C:\MDTBuildLab\Captures folder on your deployment server (SRV1). The file name is **REFW10X64-001.wim**.
 
 
@@ -424,7 +425,9 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 7. On SRV1, in the Deployment Workbench console, click on **Monitoring** and view the status of installation. Right-click **Monitoring** and click **Refresh** if no data is displayed.
 8. OS installation requires about 10 minutes. When the installation is complete, the system will reboot automatically, configure devices, and install updates, requiring another 10-20 minutes.  When the new client computer is finished updating, click **Finish**. You will be automatically signed in to the local computer as administrator. 
 
+
     ![finish](images/deploy-finish.png)
+
 
 This completes the demonstration of how to deploy a reference image to the network. To conserve resources, turn off the PC2 VM before starting the next section.
 
