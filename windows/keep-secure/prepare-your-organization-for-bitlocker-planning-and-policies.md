@@ -48,13 +48,13 @@ BitLocker helps prevent unauthorized access to data on lost or stolen computers 
 -   Encrypting the entire Windows operating system volume on the hard disk.
 -   Verifying the boot process integrity.
 
-The trusted platform module (TPM)is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect user data and to ensure that a computer has not been tampered with while the system was offline.
+The trusted platform module (TPM) is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect user data and to ensure that a computer has not been tampered with while the system was offline.
 
 In addition, BitLocker offers the option to lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable USB device, such as a flash drive, that contains a startup key. These additional security measures provide multifactor authentication and assurance that the computer will not start or resume from hibernation until the correct PIN or startup key is presented.
 
 On computers that do not have a TPM version 1.2 or higher, you can still use BitLocker to encrypt the Windows operating system volume. However, this implementation will require the user to insert a USB startup key to start the computer or resume from hibernation, and does not provide the pre-startup system integrity verification offered by BitLocker working with a TPM.
 
-**BitLocker key protectors**
+### BitLocker key protectors
 
 | Key protector | Description |
 | - | - |
@@ -65,7 +65,7 @@ On computers that do not have a TPM version 1.2 or higher, you can still use Bi
 | Recovery password | A 48-digit number used to unlock a volume when it is in recovery mode. Numbers can often be typed on a regular keyboard, if the numbers on the normal keyboard are not responding you can always use the function keys (F1-F10) to input the numbers.| 
 | Recovery key| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume.| 
  
-**BitLocker authentication methods**
+### BitLocker authentication methods
 
 | Authentication method | Requires user interaction | Description |
 | - | - | - |
