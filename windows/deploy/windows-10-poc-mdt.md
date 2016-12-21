@@ -214,7 +214,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 
     New-VM REFW10X64-001 -SwitchName poc-internal -NewVHDPath "c:\VHD\REFW10X64-001.vhdx" -NewVHDSizeBytes 60GB
     Set-VMMemory REFW10X64-001 -DynamicMemoryEnabled $true -MinimumBytes 1024MB -MaximumBytes 1024MB -Buffer 20
-    Set-VMDvdDrive -VMName REFW10X64-001 -Path c:\VHD\LiteTouchPE_x86.iso
+    Set-VMDvdDrive REFW10X64-001 -Path c:\VHD\LiteTouchPE_x86.iso
     Start-VM REFW10X64-001
     vmconnect localhost REFW10X64-001
 	</pre>
@@ -234,7 +234,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 	- Stage Windows PE on the local disk.
 	- Run System Preparation (Sysprep) and reboot into Windows PE.
 	- Capture the installation to a Windows Imaging (WIM) file.
-	- Turn off the virtual machine.
+	- Turn off the virtual machine.<BR><BR>
 
     This step requires from 30 minutes to 2 hours, depending on the speed of the Hyper-V host. After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep. The image is located in the C:\MDTBuildLab\Captures folder on your deployment server (SRV1). The file name is **REFW10X64-001.wim**.
 
