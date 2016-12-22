@@ -1,5 +1,5 @@
 ---
-title: Accounts Guest account status (Windows 10)
+title: Accounts Guest account status - security policy setting (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Accounts Guest account status security policy setting.
 ms.assetid: 07e53fc5-b495-4d02-ab42-5b245d10d0ce
 ms.prod: w10
@@ -9,7 +9,7 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Accounts: Guest account status
+# Accounts: Guest account status - security policy setting
 
 **Applies to**
 -   Windows 10
