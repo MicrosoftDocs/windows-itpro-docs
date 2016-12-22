@@ -1667,7 +1667,7 @@ This retrieves device information for every device that the account has been pro
 For a device account to automatically accept or decline meeting requests based on its availability, the **AutomateProcessing** attribute must be set to **AutoAccept**. This is recommended as to prevent overlapping meetings.
 
 ```PowerShell
-Set-CalendarProcessing $ strRoomUpn -AutomateProcessing AutoAccept
+Set-CalendarProcessing $strRoomUpn -AutomateProcessing AutoAccept
 ```
 
 ### <a href="" id="accept-ext-meetings-cmdlet"></a>Accepting external meeting requests
