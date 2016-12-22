@@ -47,6 +47,8 @@ Yes, BitLocker supports multifactor authentication for operating system drives. 
 
 ### <a href="" id="bkmk-hsrequirements"></a>What are the BitLocker hardware and software requirements?
 
+For requirements, see [System requirements](https://technet.microsoft.com/itpro/windows/keep-secure/bitlocker-overview#system-requirements).
+
 > **Note:**  Dynamic disks are not supported by BitLocker. Dynamic data volumes will not be displayed in the Control Panel. Although the operating system volume will always be displayed in the Control Panel, regardless of whether it is a Dynamic disk, if it is a dynamic disk it is cannot be protected by BitLocker.
  
 ### <a href="" id="bkmk-partitions"></a>Why are two partitions required? Why does the system drive have to be so large?
