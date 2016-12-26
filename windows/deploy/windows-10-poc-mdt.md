@@ -390,7 +390,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 1. Before using WDS to deploy a client image, you must temporarily disable the external network adapter on SRV1. This is just an artifact of the lab environment. In a typical deployment environment WDS would not be installed on the default gateway. 
 
-    >**Note**: Do not disable the *internal* network interface. To quickly view IP addresses and interface names configured on the VM, **type Get-NetIPAddress | ft interfacealias, ipaddress**
+    >**Note**: Do not disable the *internal* network interface. To quickly view IP addresses and interface names configured on the VM, type **Get-NetIPAddress | ft interfacealias, ipaddress**
     
     Assuming the external interface is named "Ethernet 2", to disable the *external* interface on SRV1, open a Windows PowerShell prompt on SRV1 and type the following command:
 
@@ -422,9 +422,8 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     Enable-NetAdapter "Ethernet 2"
     ```
 7. On SRV1, in the Deployment Workbench console, click on **Monitoring** and view the status of installation. Right-click **Monitoring** and click **Refresh** if no data is displayed.
-8. OS installation requires about 10 minutes. When the installation is complete, the system will reboot automatically, configure devices, and install updates, requiring another 10-20 minutes.  When the new client computer is finished updating, click **Finish**. You will be automatically signed in to the local computer as administrator. 
-
-
+8. OS installation requires about 10 minutes. When the installation is complete, the system will reboot automatically, configure devices, and install updates, requiring another 10-20 minutes.  When the new client computer is finished updating, click **Finish**. You will be automatically signed in to the local computer as administrator.
+    
     ![finish](images/deploy-finish.png)
 
 
