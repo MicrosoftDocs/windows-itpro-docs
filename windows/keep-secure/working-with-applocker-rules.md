@@ -123,7 +123,7 @@ When you choose the file hash rule condition, the system computes a cryptographi
 
 ## AppLocker default rules
 
-AppLocker includes default rules, which are intended to help ensure that the files that are required for Windows to operate properly are allowed in an AppLocker rule collection. For background, see [Understanding AppLocker default rules](understanding-applocker-default-rules), and for steps, see [Create AppLocker default rules](create-applocker-default-rules.md).
+AppLocker includes default rules, which are intended to help ensure that the files that are required for Windows to operate properly are allowed in an AppLocker rule collection. For background, see [Understanding AppLocker default rules](understanding-applocker-default-rules.md), and for steps, see [Create AppLocker default rules](create-applocker-default-rules.md).
 
 Executable default rule types include:
 
