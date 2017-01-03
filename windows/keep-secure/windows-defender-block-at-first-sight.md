@@ -25,7 +25,7 @@ author: iaanw
 test2
 
 <iframe
-src="https://hubs-video.ssl.catalog.video.msn.com/embed/9673727b-89ef-4a54-8228-dad41dbd8201/IA?csid=ux-en-us&MsnPlayerLeadsWith=html&PlaybackMode=Inline&MsnPlayerDisplayShareBar=false&MsnPlayerDisplayInfoButton=false&iframe=true&QualityOverride=HD" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+src="http://videoplayercdn.osi.office.net/embed/uuid=df196dbe-ae57-44f3-aba8-539568434331" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
 Block at First Sight is a feature of Windows Defender cloud protection that provides a way to detect and block new malware within seconds. 
 
@@ -40,8 +40,8 @@ with a **youtube** video embedded
 
 https://www.microsoft.com/showcase/video.aspx?uuid=df196dbe-ae57-44f3-aba8-539568434331
 
-<iframe src="http://videoplayercdn.osi.office.net/embed/uuid=df196dbe-ae57-44f3-aba8-539568434331">
-</iframe>
+<iframe 
+src="http://videoplayercdn.osi.office.net/embed/uuid=df196dbe-ae57-44f3-aba8-539568434331"></iframe>
 
 
 <script type="text/javascript" language="javascript" src="//c.microsoft.com/ms.js" >
