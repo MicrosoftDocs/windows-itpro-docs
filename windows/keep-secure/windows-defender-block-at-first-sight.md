@@ -30,7 +30,25 @@ test
 
 ​https://www.microsoft.com/showcase/video.aspx?uuid=df196dbe-ae57-44f3-aba8-539568434331
 
-<iframe src="http://videoplayercdn.osi.office.net/embed/uuid=df196dbe-ae57-44f3-aba8-539568434331?width="600"&height="480"&autoplay="false"&mkt="en-us"&linkoverride="Link"&csid=ux-"en-us""></iframe>
+<iframe src="http://videoplayercdn.osi.office.net/embed/uuid=df196dbe-ae57-44f3-aba8-539568434331?width='600'&height='480'&autoplay='false'&mkt='en-us'&linkoverride='Link'&csid=ux-'en-us'">
+</iframe>
+
+
+<script type="text/javascript" language="javascript" src="//c.microsoft.com/ms.js" >
+</script>
+
+<div id="DivID">
+<script type="text/javascript" language="javascript" src=" videoplayercdn.osi.office.net/s/js/vxp.js">
+</script>
+<script type="text/javascript">            
+     MsnVideoUx.render(
+     "MSNShowCase2",    
+      "DivID",  
+      { "Width": "X", "Height": "Y",   "AutoPlayVideo": "true/false",    "DefaultVideo": "videobyuuids.aspx?uuids=UUID"  },
+      { csid: "ux-cms-en-us-msoffice" }
+                       );               
+</script>
+</div>
 
 ## How it works
 
