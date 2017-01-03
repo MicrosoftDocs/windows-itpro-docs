@@ -33,6 +33,9 @@ The added people move to the **Selected Groups** list on the right-hand pane.
 3.  After you've picked all of the employees and groups that should get the policy, click **OK**.<p>
 The policy is deployed to the selected users' devices.
 
+>[!NOTE]
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
+
 ## Related topics
 - [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md)
 - [Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md)
