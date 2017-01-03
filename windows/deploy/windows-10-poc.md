@@ -14,20 +14,22 @@ author: greg-lindsay
 
 -   Windows 10
 
-This guide contains instructions to configure a proof of concept (PoC) environment using Hyper-V that requires a minimum amount of resources. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, see the following guides:
+This guide contains instructions to configure a proof of concept (PoC) environment requiring a minimum amount of resources. The guide makes extensive use of Windows PowerShell and Hyper-V. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, see the following Windows 10 deployment guides:
 
 - [Step by step: Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md).<BR>
 - [Step by step: Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md).<BR>
 
 Approximately 3 hours are required to configure the PoC environment. You will need a Hyper-V capable computer running Windows 8.1 or later with at least 16GB of RAM. Detailed [requirements](#hardware-and-software-requirements) are provided below. You will also need to have a [Microsoft account](https://www.microsoft.com/account) to use for downloading evaluation software.
 
-Windows PowerShell commands are provided to set up the PoC environment quickly. You do not need to be an expert in Windows PowerShell to complete the steps in the guide, however you are required to customize some commands to fit your environment. Instructions to "type" Windows PowerShell commands provided in this guide can be followed literally by typing the commands, but when it is possible the preferred method is to copy and paste these commands. 
+Windows PowerShell commands are provided to set up the PoC environment quickly. You do not need to be an expert in Windows PowerShell to complete the steps in the guide, however you are required to customize some commands to your environment. 
+
+>Instructions to "type" Windows PowerShell commands provided in this guide can be followed literally by typing the commands, but the preferred method is to copy and paste these commands. 
 
 Hyper-V is installed, configured and used extensively in this guide. If you are not familiar with Hyper-V, review the [terminology](#appendix-b-terminology-in-this-guide) used in this guide before starting. 
 
 ## In this guide
 
-This guide contains instructions for three general procedures: Install Hyper-V, configure Hyper-V, and configure VMs. If you already have a computer running Hyper-V, you can use this computer and skip the first procedure. In this case, virtual switch settings must be modified to match those used in this guide, or the steps can be modified to use your existing Hyper-V settings.
+This guide contains instructions for three general procedures: Install Hyper-V, configure Hyper-V, and configure VMs. If you already have a computer running Hyper-V, you can use this computer and skip the first procedure. In this case, your virtual switch settings must be modified to match those used in this guide, or the steps in this guide can be modified to use your existing Hyper-V settings.
 
 After completing the instructions in this guide, you will have a PoC environment that enables you to test Windows 10 deployment procedures with current tools, as documented in subsequent guides. Links are provided to download trial versions of Windows Server 2012, Windows 10 Enterprise, and all deployment tools necessary to complete the lab.
 
@@ -209,7 +211,7 @@ Starting with Windows 8, the host computer’s microprocessor must support secon
 
 ### Download VHD and ISO files
 
-When you have completed installation of Hyper-V on the host computer, begin configuration of Hyper-V by downloading VHD and ISO files to the computer. These files will be used to create the VMs used in the lab. Before you can download VHD and ISO files, you will need to register and sign in to the [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/) using your Microsoft account.
+When you have completed installation of Hyper-V on the host computer, begin configuration of Hyper-V by downloading VHD and ISO files to the Hyper-V host. These files will be used to create the VMs used in the lab. Before you can download VHD and ISO files, you will need to register and sign in to the [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/) using your Microsoft account.
 
 1. Create a directory on your Hyper-V host named **C:\VHD** and download a single [Windows Server 2012 R2 VHD](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2012-r2) from the TechNet Evaluation Center to the **C:\VHD** directory. 
 
@@ -301,9 +303,10 @@ When creating a VM in Hyper-V, you must specify either generation 1 or generatio
 
 </div>
 
-In summary, if the PC is running a 32-bit OS or the OS is Windows 7, it must be converted to a generation 1 VM. Otherwise, it can be converted to a generation 2 VM. To determine the OS and architecture of a PC, type **systeminfo** at a command prompt and review the output next to **OS Name** and **System Type**.
+If the PC is running a 32-bit OS or the OS is Windows 7, it must be converted to a generation 1 VM. Otherwise, it can be converted to a generation 2 VM. 
 
-To determine the partition style, open a Windows PowerShell prompt on the PC and type the following command:
+- To determine the OS and architecture of a PC, type **systeminfo** at a command prompt and review the output next to **OS Name** and **System Type**.
+- To determine the partition style, open a Windows PowerShell prompt on the PC and type the following command:
 
 <pre style="overflow-y: visible">
 Get-WmiObject -Class Win32_DiskPartition | Select-Object -Property SystemName,Caption,Type
@@ -541,7 +544,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     (Get-VMHostNumaNode).MemoryAvailable
     </pre>
 
-    This command will display the megabytes of RAM available. On a Hyper-V host computer with 16 GB of physical RAM installed, 10,000 MB of RAM or greater should be available if the computer is not also running other applications. On a computer with 8 GB of physical RAM installed, at least 4000 MB should be available. If the computer has less RAM available than this, try closing applications to free up more memory.
+    This command will display the megabytes of RAM available for VMs. On a Hyper-V host computer with 16 GB of physical RAM installed, 10,000 MB of RAM or greater should be available if the computer is not also running other applications. On a computer with 8 GB of physical RAM installed, at least 4000 MB should be available. If the computer has less RAM available than this, try closing applications to free up more memory.
 
 3. Determine the available memory for VMs by dividing the available RAM by 4.  For example:
 
@@ -588,7 +591,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     To create a generation 1 VM from a GPT disk (using c:\vhd\w7.vhd):
 
-    >Note: The following procedure is longer because it includes steps to convert the OS partition from GPT to MBR format. A temporary, blank VHD is created, the OS image is saved to this drive, the OS drive is reformatted to MBR, the OS image restored, and then the temporary drive is removed.
+    >Note: The following procedure is more complex because it includes steps to convert the OS partition from GPT to MBR format. Steps are included to create a temporary VHD and attach it to the VM, the OS image is saved to this drive, the OS drive is then reformatted to MBR, the OS image restored, and the temporary drive is removed.
 
     First, type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host to create a temporary VHD that will be used to save the OS image. Do not forget to include a pipe (|) at the end of the first five commands:
 
@@ -681,7 +684,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     >The default gateway at 192.168.0.2 will be configured later in this guide.
 
-    >Note: A list of available tasks for an app will be populated the first time you run it on the taskbar. Because these tasks aren't available until the App has been run, you will not see the Run as Administrator task until you have left-clicked Windows PowerShell for the first time. In this newly created VM, you will need to left-click Windows PowerShell one time, and then you can right-click and choose Run as Administrator to open an elevated Windows PowerShell prompt.
+    >Note: A list of available tasks for an app will be populated the first time you run it on the taskbar. Because these tasks aren't available until the App has been run, you will not see the **Run as Administrator** task until you have left-clicked Windows PowerShell for the first time. In this newly created VM, you will need to left-click Windows PowerShell one time, and then you can right-click and choose Run as Administrator to open an elevated Windows PowerShell prompt.
 
 6. Install the Active Directory Domain Services role by typing the following command at an elevated Windows PowerShell prompt:
 
