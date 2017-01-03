@@ -11,6 +11,13 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## December 2016
+
+|New or changed topic | Description |
+| --- | --- |
+|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)  | Added driver info for Surface Studio; updated info for Surface Book and Surface Pro 4 (Windows 10 .zip cumulative update), Surface Pro 3 (Windows8.1-KB2969817-x64.msu), and Surface 3 (UEFI Asset Tag management tool)|
+
+
 ## November 2016
 
 |New or changed topic | Description |
