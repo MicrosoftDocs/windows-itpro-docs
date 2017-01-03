@@ -26,6 +26,10 @@ Block at First Sight is a feature of Windows Defender cloud protection that prov
 
 It is enabled by default when certain pre-requisite settings are also enabled. In most cases, these pre-requisite settings are also enabled by default, so the feature is running without any intervention.
 
+​https://www.microsoft.com/showcase/video.aspx?uuid=df196dbe-ae57-44f3-aba8-539568434331
+
+<iframe src="http://videoplayercdn.osi.office.net/embed/uuid=df196dbe-ae57-44f3-aba8-539568434331?width="600"&height="480"&autoplay="false"&mkt="en-us"&linkoverride="Link"&csid=ux-"en-us""></iframe>
+
 ## How it works
 
 When a Windows Defender client encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean.
@@ -128,6 +132,3 @@ You may choose to disable the Block at First Sight feature if you want to retain
 - [Windows Defender in Windows 10](windows-defender-in-windows-10.md)
 
 
-​https://www.microsoft.com/showcase/video.aspx?uuid=df196dbe-ae57-44f3-aba8-539568434331
-
-<iframe src="http://videoplayercdn.osi.office.net/embed/uuid=df196dbe-ae57-44f3-aba8-539568434331?width="600"&height="480"&autoplay="false"&mkt="en-us"&linkoverride="Link"&csid=ux-"en-us""></iframe>
