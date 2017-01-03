@@ -53,7 +53,7 @@ Use this procedure if you use Exchange on-prem.
     ```ps1
     Set-ExecutionPolicy Unrestricted
     $cred=Get-Credential -Message "Please use your Office 365 admin credentials"
-    $sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri 'https://outlook.office365.com/ps1-liveid/' -Credential $cred -Authentication Basic -AllowRedirection
+    $sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri 'https://ps.outlook.com/powershell' -Credential $cred -Authentication Basic -AllowRedirection
     Import-PSSession $sess
     ```
 

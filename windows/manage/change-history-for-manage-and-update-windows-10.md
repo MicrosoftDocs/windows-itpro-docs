@@ -12,6 +12,15 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+>If you're looking for **update history** for Windows 10, see [Windows 10 and Windows Server 2016 update history](https://support.microsoft.com/help/12387/windows-10-update-history).
+
+## December 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| [Quick guide to Windows as a service](waas-quick-start.md) | New |
+| [Manage Windows 10 in your organization - transitioning to modern management](manage-windows-10-in-your-organization-modern-management.md)  | Added video demonstration of the latest in modern management for Windows 10 |
+
 ## November 2016
 
 | New or changed topic | Description |

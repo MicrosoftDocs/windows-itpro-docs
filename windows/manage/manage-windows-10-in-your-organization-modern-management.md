@@ -18,6 +18,10 @@ Your organization might have considered bringing in Windows 10 devices and downg
 
 Your organization can support various operating systems across a wide range of device types, and manage them through a common set of tools such as System Center Configuration Manager, Microsoft Intune, or other third-party products. This “managed diversity” enables you to empower your users to benefit from the productivity enhancements available on their new Windows 10 devices (including rich touch and ink support), while still maintaining your standards for security and manageability. It can help you and your organization benefit from Windows 10 much faster.
 
+This six-minute video demonstrates how users can bring in a new retail device and be up and working with their personalized settings and a managed experience in a few minutes, without being on the corporate network. It also demonstrates how IT can apply policies and configurations to ensure device compliance.
+
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/g1rIcBhhxpA" frameborder="0" allowfullscreen></iframe> 
+
 This topic offers guidance on strategies for deploying and managing Windows 10, including deploying Windows 10 in a mixed environment. The topic covers [management options](#reviewing-the-management-options-with-windows-10) plus the four stages of the device lifecycle:
 
 -   [Deployment and Provisioning](#deployment-and-provisioning)
