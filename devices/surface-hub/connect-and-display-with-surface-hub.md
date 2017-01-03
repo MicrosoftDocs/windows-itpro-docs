@@ -470,6 +470,11 @@ Video Out port on the 84" Surface Hub
 </tbody>
 </table>
 
+## Cables
+
+Both the 55” and 84” Surface Hub devices have been tested to work with Certified DisplayPort and HDMI cables.  While vendors do sell longer cables that may work with the Surface Hub, only those cables that have been certified by testing labs are certain to work with the Hub. For example, DisplayPort cables are certified only up to 3 meters, however many vendors sell cables that are 3 times that length. If a long cable is necessary, we strongly suggest using HDMI.  HDMI has many cost-effective solutions for long-haul cables, including the use of repeaters. Nearly every DisplayPort source will automatically switch to HDMI signaling if a HDMI sink is detected.
+
+
 ## Bluetooth accessories
 
 You can connect the following accessories to Surface Hub using Bluetooth:
