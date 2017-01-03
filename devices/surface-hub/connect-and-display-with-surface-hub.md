@@ -273,7 +273,7 @@ Check directly with graphics card vendors for the latest drivers.
 </tr>
 <tr class="even">
 <td><p>AMD</p></td>
-<td><p>[http://support.amd.com/download](http://support.amd.com/en-us/download)</p></td>
+<td><p>[http://support.amd.com/en-us/download](http://support.amd.com/en-us/download)</p></td>
 </tr>
 <tr class="odd">
 <td><p>Intel</p></td>
