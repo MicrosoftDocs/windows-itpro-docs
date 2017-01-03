@@ -89,6 +89,7 @@ The following table describes how a publisher condition is applied.
 
 
 | Option | The publisher condition allows or denies… |
+|---|---|
 | **All signed files** | All files that are signed by any publisher.| 
 | **Publisher only**| All files that are signed by the named publisher.| 
 | **Publisher and product name**| All files for the specified product that are signed by the named publisher.| 
