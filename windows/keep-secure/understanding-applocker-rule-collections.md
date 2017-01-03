@@ -33,3 +33,5 @@ For info about how to enable the DLL rule collection, see [Enable the DLL rule c
 ## Related topics
 
 - [How AppLocker works](how-applocker-works-techref.md)
+- [Understanding AppLocker default rules](understanding-applocker-default-rules.md)
+
