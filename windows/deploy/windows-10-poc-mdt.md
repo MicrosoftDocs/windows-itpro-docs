@@ -433,6 +433,8 @@ This completes the demonstration of how to deploy a reference image to the netwo
 
 This section will demonstrate how to export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings. The scenario will use PC1, a computer that was cloned from a physical device to a VM, as described in [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md). 
 
+>**Important**: If the client computer that was cloned to a VM is a Windows 7 PC with a GPT-formatted OS drive, and you used the procedure [prepare a generation 1 VM from a GPT disk](#windows-10-poc?branch=vso-7992313a#prepare-a-generation-1-vm-from-a-gpt-disk) to create a bootable VM, the VM must be recreated before proceeding. We can do this using DISM which is installed on SRV1. To recreate the PC1 VM, see [Migrate GPT to MBR](#migrate-gpt-to-mbr). If PC1 is running Windows 8 or later, or has a GPT-formatted OS drive, you do not need to perform the GPT to MBR migration and can continue with the current procedure.
+
 1. Create a checkpoint for the PC1 VM so that it can easily be reverted to its current state for troubleshooting purposes and to perform additional scenarios.  Checkpoints are also known as snapshots. To create a checkpoint for the PC1 VM, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```
@@ -574,6 +576,33 @@ At a high level, the computer replace process consists of:<BR>
     Enable-NetAdapter "Ethernet 2"
     ```
 7. Setup will install the Windows 10 Enterprise operating system, update via Windows Update, and restore the user settings and data from PC1.
+
+## Migrate GPT to MBR
+
+You can use this procedure to convert a GPT-formatted OS drive to an MBR-formatted one. This procedure is only necessary if the client computer (PC1) is running Windows 7 and has a GPT-formatted partition table. To migrate the GPT-formated VHD to an MBR-formatted one:
+
+1. Verify that the PC1 VM is turned OFF on the Hyper-V host. The disk cannot be in use while performing the migration.
+
+    >In its current configuration, PC1 has two attached VHDs: c:\vhd\s.vhd (the boot disk) and c:\vhd\w7.vhd (the OS disk). The VM will be migrated to have a single boot/OS disk.
+
+2. On the Hyper-V host, type the following commands:
+
+cmd /c "icacls c:\vhd\w7.vhd /grant Everyone:(OI)(CI)F"
+
+
+
+
+
+
+2. On the Hyper-V host, type the following commands:
+
+Stop-VM SRV1
+Add-VMHardDiskDrive SRV1 -Path c:\vhd\w7.vhd
+Start-VM SRV1
+vmconnect localhost SRV1
+
+3. Sign in to SRV1 using the CONTOSO\Administrator account.
+4. 
 
 ## Troubleshooting logs, events, and utilities
 

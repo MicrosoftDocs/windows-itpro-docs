@@ -14,7 +14,7 @@ author: greg-lindsay
 
 -   Windows 10
 
-This guide contains instructions to configure a proof of concept (PoC) environment using Hyper-V that requires a minimum amount of resources. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, also see the following guides:
+This guide contains instructions to configure a proof of concept (PoC) environment using Hyper-V that requires a minimum amount of resources. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, see the following guides:
 
 - [Step by step: Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md).<BR>
 - [Step by step: Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md).<BR>
@@ -301,7 +301,7 @@ When creating a VM in Hyper-V, you must specify either generation 1 or generatio
 
 </div>
 
-To determine the OS and architecture of a PC, type **systeminfo** at a command prompt and review the output next to **OS Name** and **System Type**.
+In summary, if the PC is running a 32-bit OS or the OS is Windows 7, it must be converted to a generation 1 VM. Otherwise, it can be converted to a generation 2 VM. To determine the OS and architecture of a PC, type **systeminfo** at a command prompt and review the output next to **OS Name** and **System Type**.
 
 To determine the partition style, open a Windows PowerShell prompt on the PC and type the following command:
 
@@ -588,27 +588,25 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     To create a generation 1 VM from a GPT disk (using c:\vhd\w7.vhd):
 
-    Type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host. Do not forget to include the pipe "|" at the end of the first five commands:
+    >Note: The following procedure is longer because it includes steps to convert the OS partition from GPT to MBR format. A temporary, blank VHD is created, the OS image is saved to this drive, the OS drive is reformatted to MBR, the OS image restored, and then the temporary drive is removed.
+
+    First, type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host to create a temporary VHD that will be used to save the OS image. Do not forget to include a pipe (|) at the end of the first five commands:
 
     <pre style="overflow-y: visible">
-    New-VHD -Path c:\vhd\s.vhd -SizeBytes 100MB |
+    New-VHD -Path c:\vhd\d.vhd -SizeBytes 1TB |
     Mount-VHD -Passthru |
     Get-Disk -Number {$_.DiskNumber} |
     Initialize-Disk -PartitionStyle MBR -PassThru |
-    New-Partition -UseMaximumSize -IsActive |
+    New-Partition -UseMaximumSize |
     Format-Volume -Confirm:$false -FileSystem NTFS -force
-    Dismount-VHD -Path c:\vhd\s.vhd
+    Dismount-VHD -Path c:\vhd\d.vhd
     </pre>
 
-    The previous set of commands creates a VHD with an MBR formatted system partition. System files are not yet copied to the partition.  
-    
-    >It is possible to copy system files directly onto this partition by mounting the OS partition (w7.vhd) and using the bcdboot tool. However, this approach is not as safe as running bcdboot by accessing OS repair options for the VM. The following steps use this safer method.
-
-    Type the following command at an elevated Windows PowerShell prompt ($maxram was defined previously):
+    Next, create the PC1 VM with two attached VHDs, and boot to DVD ($maxram must be defined previously using the same Windows PowerShell promt):
 
     <pre style="overflow-y: visible">
-    New-VM -Name "PC1" -VHDPath c:\vhd\s.vhd -SwitchName poc-internal
-    Add-VMHardDiskDrive -VMName PC1 -Path c:\vhd\w7.vhd
+    New-VM -Name "PC1" -VHDPath c:\vhd\w7.vhd -SwitchName poc-internal
+    Add-VMHardDiskDrive -VMName PC1 -Path c:\vhd\d.vhd
     Set-VMDvdDrive -VMName PC1 -Path c:\vhd\w10-enterprise.iso
     Set-VMMemory -VMName "PC1" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes $maxRAM -Buffer 20
     Enable-VMIntegrationService -Name "Guest Service Interface" -VMName PC1
@@ -616,33 +614,51 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     vmconnect localhost PC1
     </pre>
 
-    In the PC1 window, press a key to boot from DVD. The VM will boot into Windows Setup.
+    The VM will automatically boot into Windows Setup. In the PC1 window: 
 
     1. Click **Next**.
     2. Click **Repair your computer**.
     3. Click **Troubleshoot**.
     4. Click **Command Prompt**.
-    5. Type **bootrec /scanos** and verify that **D:\Windows** is found.
-    6. Type **bcdboot D:\Windows** and verify that **Boot files successfully created** is displayed. See the following example:
+    5. Type the following command to save an image of the OS drive:
 
-    ![scanos](images/scanos.png)
+    <pre style="overflow-y: visible">
+    dism /Capture-Image /ImageFile:D:\c.wim /CaptureDir:C:\ /Name:Drive-C
+    </pre>
 
-    >If there is an error at this stage, ensure that the system partition VHD (c:\vhd\s.vdh) is correctly formatted, marked as active, and attached to the VM. Note: the OS drive is only temporarily assigned a letter of D.
-
-    7. Next, automounting of new volumes needs to be disabled so that the GPT system volume is not assigned a drive letter after rebooting. To disable automounting, type the following commands at the current command prompt:
+    6. Wait for the OS image to complete saving, and then type the following commands to convert the C: drive to MBR:
 
     <pre style="overflow-y: visible">
     diskpart
-    automount disable
-    automount scrub
+    select disk 0
+    clean
+    convert MBR
+    create partition primary size=100
+    format fs=ntfs quick
+    active
+    create partition primary
+    format fs=ntfs quick label=OS
+    assign letter=c
     exit
-    </pre>    
+    </pre>
 
-    8. Type **exit** to quit the command prompt.
-    9. Click **Continue**. Do not press a key to boot from the DVD again. The VM will boot into the OS partition that was exported to c:\vhd\w7.vhd.
-    10. On the PC1 virtual machine connection menu, click **Media**, point to **DVD drive**, and then click **Eject w10-enterprise.iso**.
-    11. In the upper left corner click **Ctrl+Alt+Del** and then in the bottom right corner click **Shut down**.
-    
+    7. Type the following commands to restore the OS image and boot files: 
+
+    <pre style="overflow-y: visible">
+    dism /Apply-Image /ImageFile:D:\c.wim /Index:1 /ApplyDir:C:\
+    bcdboot c:\windows
+    exit
+    </pre>
+
+    8. Click **Continue** and verify the VM boots successfully (do not boot from DVD).
+    9. Click **Ctrl+Alt+Del**, and then in the bottom right corner, click **Shut down**.
+    10. Type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host to remove the temporary disks and drives from PC1:
+
+    <pre style="overflow-y: visible">
+    Remove-VMHardDiskDrive -VMName PC1 -ControllerType IDE -ControllerNumber 0 -ControllerLocation 1
+    Set-VMDvdDrive -VMName PC1 -Path $null
+    </pre>
+
 ### Configure VMs 
 
 1. At an elevated Windows PowerShell prompt on the Hyper-V host, start the first Windows Server VM and connect to it by typing the following commands:
