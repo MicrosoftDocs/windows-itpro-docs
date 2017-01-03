@@ -195,10 +195,9 @@ Requirements for running Credential Guard in Hyper-V virtual machines
 - The Hyper-V host must have an IOMMU, and run at least Windows Server 2016 or Windows 10 version 1607.
 - The Hyper-V virtual machine must be Generation 2, have an enabled virtual TPM, and running at least Windows Server 2016 or Windows 10. 
 
-
 ### Remove Credential Guard
 
-If you have to remove Credential Guard on a PC, you need to do the following:
+If you have to remove Credential Guard on a PC, you can use the following set of procedures, or you can [use the Device Guard and Credential Guard hardware readiness tool](#turn-off-with-hardware-readiness-tool).
 
 1.  If you used Group Policy, disable the Group Policy setting that you used to enable Credential Guard (**Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Device Guard** -&gt; **Turn on Virtualization Based Security**).
 2.  Delete the following registry settings:
@@ -242,7 +241,8 @@ If you have to remove Credential Guard on a PC, you need to do the following:
 
 For more info on virtualization-based security and Device Guard, see [Device Guard deployment guide](device-guard-deployment-guide.md).
 
-**Turn off Credential Guard by using the Device Guard and Credential Guard hardware readiness tool**
+<span id="turn-off-with-hardware-readiness-tool" />
+#### Turn off Credential Guard by using the Device Guard and Credential Guard hardware readiness tool
 
 You can also disable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
