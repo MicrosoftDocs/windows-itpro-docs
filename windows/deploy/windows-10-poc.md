@@ -726,10 +726,12 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     </pre>
 
     >The -Force option is necessary when adding scope options to skip validation of 192.168.0.2 as a DNS server because we have not configured it yet. The scope should immediately begin issuing leases on the PoC network. The first DHCP lease that will be issued is to vEthernet interface on the Hyper-V host, which is a member of the internal network. You can verify this by using the command: Get-DhcpServerv4Lease -ScopeId 192.168.0.0.
-11. Add a user account to the contoso.com domain that can be used with client computers:
+11. Add a user account to the contoso.com domain that can be used with client computers, and set passwords to never expire:
 
     <pre style="overflow-y: visible">
     New-ADUser -Name "User1" -UserPrincipalName user1 -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -Enabled $true
+    Set-ADUser -Identity user1 -PasswordNeverExpires $true
+    Set-ADUser -Identity administrator -PasswordNeverExpires $true
     </pre>
 
 12. The DNS server role will also be installed on the member server, SRV1, at 192.168.0.2 so that we can forward DNS queries from DC1 to SRV1 to resolve Internet names without having to configure a forwarder outside the PoC network. Since the IP address of SRV1 already exists on DC1's network adapter, it will be automatically added during the DCPROMO process. To verify this server-level DNS forwarder on DC1, type the following command at an elevated Windows PowerShell prompt on DC1:
@@ -838,7 +840,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Copy-VMFile "PC1" –SourcePath "C:\VHD\pc1.ps1"  –DestinationPath "C:\pc1.ps1" –CreateFullPath –FileSource Host
     </pre>
 
-    >In order for this command to work properly, PC1 must be running the vmicguestinterface (Hyper-V Guest Service Interface) service. If this service is not installed, you can try updating integration services on the VM. This can be done by mounting the Hyper-V Integration Services Setup (vmguest.iso), which is located in C:\Windows\System32 on Windows Server operating systems that are running the Hyper-V role service. Otherwise, just create the file c:\pc1.ps1 on the VM and type the commands into this file manually. Be sure to save the file as a Windows PowerShell script file with the .ps1 extension and not as a text (.txt) file.
+    >In order for this command to work properly, PC1 must be running the vmicguestinterface (Hyper-V Guest Service Interface) service. If this service is not installed, you can try updating integration services on the VM. This can be done by mounting the Hyper-V Integration Services Setup (vmguest.iso), which is located in C:\Windows\System32 on Windows Server operating systems that are running the Hyper-V role service. Otherwise, just create the file c:\pc1.ps1 on the VM by typing the commands into this file manually. Be sure to save the file as a Windows PowerShell script file with the .ps1 extension and not as a text (.txt) file.
 
 22. On PC1, type the following commands at an elevated Windows PowerShell prompt:
 
@@ -846,9 +848,9 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Get-Content c:\pc1.ps1 | powershell.exe -noprofile - 
     </pre>
 
-    >The commands might take a few moments to complete. If an error is displayed, check that you typed the command correctly, paying close attention to spaces. PC1 is removed from its domain in this step while not connected to the corporate network so as to ensure the computer object in the corporate domain is unaffected. PC1 is also not renamed to "PC1" in system properties so that it maintains some of its mirrored identity. However, if desired you can also rename the computer.
+    >The commands in this script might take a few moments to complete. If an error is displayed, check that you typed the command correctly, paying close attention to spaces. PC1 is removed from its domain in this step while not connected to the corporate network so as to ensure the computer object in the corporate domain is unaffected. PC1 is also not renamed to "PC1" in system properties so that it maintains some of its mirrored identity. However, if desired you can also rename the computer.
 
-23. After PC1 restarts, sign in to the contoso.com domain using the **Switch User** option, with the **user1** account you created in step 11 of this section.
+23. Upon completion of the script, PC1 will automatically restart. When it has restarted, sign in to the contoso.com domain using the **Switch User** option, with the **user1** account you created in step 11 of this section.
     >The settings that will be used to migrate user data specifically select only accounts that belong to the CONTOSO domain. If you wish to test migration of user data and settings with an account other than the user1 account, you must copy this account's profile to the user1 profile.
 24. Minimize the PC1 window but do not turn it off while the second Windows Server 2012 R2 VM (SRV1) is configured. This verifies that the Hyper-V host has enough resources to run all VMs simultaneously. Next, SRV1 will be started, joined to the contoso.com domain, and configured with RRAS and DNS services. 
 25. On the Hyper-V host computer, at an elevated Windows PowerShell prompt, type the following commands:

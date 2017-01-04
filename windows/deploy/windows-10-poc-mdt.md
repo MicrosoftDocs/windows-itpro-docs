@@ -39,8 +39,8 @@ Topics and procedures in this guide are summarized in the following table. An es
 <TR><TD>[Install MDT](#install-mdt)<TD>Download and install MDT.<TD>40 minutes
 <TR><TD>[Create a deployment share and reference image](#create-a-deployment-share-and-reference-image)<TD>A reference image is created to serve as the template for deploying new images.<TD>90 minutes
 <TR><TD>[Deploy a Windows 10 image using MDT](#deploy-a-windows-10-image-using-mdt)<TD>The reference image is deployed in the PoC environment.<TD>60 minutes
-<TR><TD>[Refresh a computer with Windows 10](#refresh-a-computer-with-windows-10)<TD>Export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings.<TD>30 minutes
-<TR><TD>[Replace a computer with Windows 10](#replace-a-computer-with-windows-10)<TD>Back up an existing client computer, then restore this backup to a new computer.<TD>30 minutes
+<TR><TD>[Refresh a computer with Windows 10](#refresh-a-computer-with-windows-10)<TD>Export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings.<TD>60 minutes
+<TR><TD>[Replace a computer with Windows 10](#replace-a-computer-with-windows-10)<TD>Back up an existing client computer, then restore this backup to a new computer.<TD>60 minutes
 <TR><TD>[Troubleshooting logs, events, and utilities](#troubleshooting-logs-events-and-utilities)<TD>Log locations and troubleshooting hints.<TD>Informational
 </TABLE>
 
@@ -338,6 +338,20 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     
     >In this example a **MachineObjectOU** entry is not provided. Normally this entry describes the specific OU where new client computer objects are created in Active Directory. However, for the purposes of this test lab clients are added to the default computers OU, which requires that this parameter be unspecified.
 
+    If desired, edit the follow line to include or exclude other users when migrating settings. Currently, the command is set to user exclude (ue) all users except for CONTOSO users specified by the user include option (ui):
+    
+    ```
+    ScanStateArgs=/ue:*\* /ui:CONTOSO\*
+    ```
+
+    For example, to migrate **all** users on the computer, replace this line with the following:
+
+    ```
+    ScanStateArgs=/all
+    ```   
+
+    For more information, see [ScanState Syntax](https://technet.microsoft.com/library/cc749015.aspx).
+
 4. Click **Edit Bootstap.ini** and replace text in the file with the following text:
 
     ```
@@ -433,13 +447,18 @@ This completes the demonstration of how to deploy a reference image to the netwo
 
 This section will demonstrate how to export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings. The scenario will use PC1, a computer that was cloned from a physical device to a VM, as described in [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md). 
 
->**Important**: If the client computer that was cloned to a VM is a Windows 7 PC with a GPT-formatted OS drive, and you used the procedure [prepare a generation 1 VM from a GPT disk](#windows-10-poc?branch=vso-7992313a#prepare-a-generation-1-vm-from-a-gpt-disk) to create a bootable VM, the VM must be recreated before proceeding. We can do this using DISM which is installed on SRV1. To recreate the PC1 VM, see [Migrate GPT to MBR](#migrate-gpt-to-mbr). If PC1 is running Windows 8 or later, or has a GPT-formatted OS drive, you do not need to perform the GPT to MBR migration and can continue with the current procedure.
+If the PC1 VM is not already running, then start and connect to it:
 
-1. Create a checkpoint for the PC1 VM so that it can easily be reverted to its current state for troubleshooting purposes and to perform additional scenarios.  Checkpoints are also known as snapshots. To create a checkpoint for the PC1 VM, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+    <pre style="overflow-y: visible">
+    Start-VM PC1
+    vmconnect localhost PC1
+    </pre>
 
-    ```
+1. Switch back to the Hyper-V host and create a checkpoint for the PC1 VM so that it can easily be reverted to its current state for troubleshooting purposes and to perform additional scenarios.  Checkpoints are also known as snapshots. To create a checkpoint for the PC1 VM, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+
+    <pre style="overflow-y: visible">
     Checkpoint-VM -Name PC1 -SnapshotName BeginState
-    ```
+    </pre>
 
 2. Sign on to PC1 using the CONTOSO\Administrator account.
 
@@ -466,7 +485,7 @@ This section will demonstrate how to export user data from an existing client co
 
     You can review the progress of installation on SRV1 by clicking on the **Monitoring** node in the deployment workbench. When OS installation is complete, the computer will restart, set up devices, and configure settings.
 
-7. Sign in with the CONTOSO\Administrator account and verify that all CONTOSO domain user accounts and data have been migrated to the new operating system.
+7. Sign in with the CONTOSO\Administrator account and verify that all CONTOSO domain user accounts and data have been migrated to the new operating system, or other user accounts as specified [previously](#configure-the-mdt-production-deployment-share).
 
 8. Create another checkpoint for the PC1 VM so that you can review results of the computer refresh later. To create a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
@@ -504,8 +523,8 @@ At a high level, the computer replace process consists of:<BR>
 6. Right-click the **Other** folder and then click **New Task Sequence**. Use the following values in the wizard:
     - **Task sequence ID**: REPLACE-001
     - **Task sequence name**: Backup Only Task Sequence
-    - **Task sequence comments**: Run USMT to backup user data and settings
-    - **Template**: Standard Client Replace Task Sequence
+    - **Task sequence comments**: Run USMT to back up user data and settings
+    - **Template**: Standard Client Replace Task Sequence (note: this is not the default template)
 7. Accept defaults for the rest of the wizard and then click **Finish**. The replace task sequence will skip OS selection and settings.
 8. Open the new task sequence that was created and review it. Note the type of capture and backup tasks that are present. Click **OK** when you are finished reviewing the task sequence.
 
@@ -516,7 +535,7 @@ At a high level, the computer replace process consists of:<BR>
     ```
     whoami
     ```
-2. To ensure a clean environment before running the backup task sequence, type the following at an elevated Windows PowerShell prompt:
+2. To ensure a clean environment before running the backup task sequence, type the following at an elevated Windows PowerShell prompt on PC1:
 
     ```
     Remove-Item c:\minint -recurse
@@ -577,32 +596,6 @@ At a high level, the computer replace process consists of:<BR>
     ```
 7. Setup will install the Windows 10 Enterprise operating system, update via Windows Update, and restore the user settings and data from PC1.
 
-## Migrate GPT to MBR
-
-You can use this procedure to convert a GPT-formatted OS drive to an MBR-formatted one. This procedure is only necessary if the client computer (PC1) is running Windows 7 and has a GPT-formatted partition table. To migrate the GPT-formated VHD to an MBR-formatted one:
-
-1. Verify that the PC1 VM is turned OFF on the Hyper-V host. The disk cannot be in use while performing the migration.
-
-    >In its current configuration, PC1 has two attached VHDs: c:\vhd\s.vhd (the boot disk) and c:\vhd\w7.vhd (the OS disk). The VM will be migrated to have a single boot/OS disk.
-
-2. On the Hyper-V host, type the following commands:
-
-cmd /c "icacls c:\vhd\w7.vhd /grant Everyone:(OI)(CI)F"
-
-
-
-
-
-
-2. On the Hyper-V host, type the following commands:
-
-Stop-VM SRV1
-Add-VMHardDiskDrive SRV1 -Path c:\vhd\w7.vhd
-Start-VM SRV1
-vmconnect localhost SRV1
-
-3. Sign in to SRV1 using the CONTOSO\Administrator account.
-4. 
 
 ## Troubleshooting logs, events, and utilities
 
