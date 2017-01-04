@@ -24,8 +24,8 @@ Certificates in Windows 10 Mobile are primarily used for the following purposes
 -   For installation and licensing of applications (from the Windows Phone Store or a custom company distribution site).
 
 
-**Warning**  
-In Windows 10, Version 1607, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. [Learn more about this known issue in Version 1607](https://go.microsoft.com/fwlink/p/?LinkId=786764)
+>[!WARNING}  
+>In Windows 10, Version 1607, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. [Learn more about this known issue in Version 1607](https://go.microsoft.com/fwlink/p/?LinkId=786764)
 
 ## Install certificates using Microsoft Edge
 
@@ -33,12 +33,13 @@ A certificate can be posted on a website and made available to users through a d
 
 ## Install certificates using email
 
-The Windows 10 Mobile certificate installer supports .cer, .p7b, .pem, and .pfx files. To install certificates via email, make sure your mail filters do not block .cer files. Certificates that are sent via email appear as message attachments. When a certificate is received, a user can tap to review the contents and then tap to install the certificate. Typically, when an identity certificate is installed, the user is prompted for the password (or passphrase) that protects it.
+The Windows 10 Mobile certificate installer supports .cer, .p7b, .pem, and .pfx files. Some email programs block .cer files for security reasons. If this is the case in your organization, use an alternative method to deploy the certificate. Certificates that are sent via email appear as message attachments. When a certificate is received, a user can tap to review the contents and then tap to install the certificate. Typically, when an identity certificate is installed, the user is prompted for the password (or passphrase) that protects it.
 
 ## Install certificates using mobile device management (MDM)
 
 Windows 10 Mobile supports root, CA, and client certificate to be configured via MDM. Using MDM, an administrator can directly add, delete, or query root and CA certificates, and configure the device to enroll a client certificate with a certificate enrollment server that supports Simple Certificate Enrollment Protocol (SCEP). SCEP enrolled client certificates are used by Wi-Fi, VPN, email, and browser for certificate-based client authentication. An MDM server can also query and delete SCEP enrolled client certificate (including user installed certificates), or trigger a new enrollment request before the current certificate is expired.
-> **Warning:**  Do not use SCEP for encryption certificates for S/MIME. You must use a PFX certificate profile to support S/MIME on Windows 10 Mobile. For instructions on creating a PFX certificate profile in Microsoft Intune, see [Enable access to company resources using certificate profiles with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkID=718216).
+>[!WARNING]
+>Do not use SCEP for encryption certificates for S/MIME. You must use a PFX certificate profile to support S/MIME on Windows 10 Mobile. For instructions on creating a PFX certificate profile in Microsoft Intune, see [Enable access to company resources using certificate profiles with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkID=718216).
  
 **Process of installing certificates using MDM**
 
@@ -50,14 +51,17 @@ Windows 10 Mobile supports root, CA, and client certificate to be configured vi
 6.  The device connects to Internet-facing point exposed by MDM server.
 7.  MDM server creates a certificate that is signed with proper CA certificate and returns it to device.
 
-    > **Note:**  The device supports the pending function to allow server side to do additional verification before issuing the cert. In this case, a pending status is sent back to the device. The device will periodically contact the server, based on preconfigured retry count and retry period parameters. Retrying ends when either:
-    A certificate is successfully received from the server
-    The server returns an error
-    The number of retries reaches the preconfigured limit
+    >[!NOTE]
+    >The device supports the pending function to allow server side to do additional verification before issuing the cert. In this case, a pending status is sent back to the device. The device will periodically contact the server, based on preconfigured retry count and retry period parameters. Retrying ends when either:
+    >
+    >- A certificate is successfully received from the server
+    >- The server returns an error
+    >- The number of retries reaches the preconfigured limit
      
 8.  The cert is installed in the device. Browser, Wi-Fi, VPN, email, and other first party applications have access to this certificate.
 
-    > **Note:**  If MDM requested private key being stored in Trusted Process Module (TPM) (configured during enrollment request), the private key will be saved in TPM. Note that SCEP enrolled cert protected by TPM isn’t guarded by a PIN. However, if the certificate is imported to the Passport for Work Key Storage Provider (KSP), it is guarded by the Passport PIN.
+    >[!NOTE]
+    >If MDM requested private key being stored in Trusted Process Module (TPM) (configured during enrollment request), the private key will be saved in TPM. Note that SCEP enrolled cert protected by TPM isn’t guarded by a PIN. However, if the certificate is imported to the Windows Hello for Business Key Storage Provider (KSP), it is guarded by the Hello PIN.
      
 ## Related topics
 
