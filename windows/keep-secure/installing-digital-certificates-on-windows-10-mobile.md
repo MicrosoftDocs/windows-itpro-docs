@@ -24,7 +24,7 @@ Certificates in Windows 10 Mobile are primarily used for the following purposes
 -   For installation and licensing of applications (from the Windows Phone Store or a custom company distribution site).
 
 
->[!WARNING}  
+>[!WARNING]  
 >In Windows 10, Version 1607, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. [Learn more about this known issue in Version 1607](https://go.microsoft.com/fwlink/p/?LinkId=786764)
 
 ## Install certificates using Microsoft Edge
