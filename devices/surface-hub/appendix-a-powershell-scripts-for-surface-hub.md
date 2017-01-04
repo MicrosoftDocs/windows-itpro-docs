@@ -1620,7 +1620,7 @@ In the following cmdlets, `$strPolicy` is the name of the ActiveSync policy, and
 
 Note that in order to run the cmdlets, you need to set up a remote PowerShell session and:
 
--   Your admin account must be remote-PowerShell-enabled. This allows the admin to use the PowerShell cmdlets that are needed by the script. (This permission can be set using set-user `$admin -RemotePowerShellEnabled $true`)
+-   Your admin account must be remote-PowerShell-enabled. This allows the admin to use the PowerShell cmdlets that are needed by the script. (This permission can be set using `set-user $admin -RemotePowerShellEnabled $true`)
 -   Your admin account must have the "Reset Password" role if you plan to run the creation scripts. This allows the admin to change the password of the account, which is needed for the script. The Reset Password Role can be enabled using the Exchange Admin Center.
 
 Create the policy.
@@ -1667,7 +1667,7 @@ This retrieves device information for every device that the account has been pro
 For a device account to automatically accept or decline meeting requests based on its availability, the **AutomateProcessing** attribute must be set to **AutoAccept**. This is recommended as to prevent overlapping meetings.
 
 ```PowerShell
-Set-CalendarProcessing $ strRoomUpn -AutomateProcessing AutoAccept
+Set-CalendarProcessing $strRoomUpn -AutomateProcessing AutoAccept
 ```
 
 ### <a href="" id="accept-ext-meetings-cmdlet"></a>Accepting external meeting requests
