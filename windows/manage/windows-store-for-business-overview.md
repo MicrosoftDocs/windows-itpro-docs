@@ -238,7 +238,7 @@ Store for Business is currently available in these markets.
             <li>Bulgaria</li>
             <li>Cameroon</li>
             <li>Canada</li>
-            <li>Cape Verde</li>
+            <li>Republic of Cabo Verde</li>
             <li>Cayman Islands</li>
             <li>Chile</li>
             <li>Colombia</li>
@@ -267,7 +267,7 @@ Store for Business is currently available in these markets.
             <li>Greece</li>
             <li>Guatemala</li>
             <li>Honduras</li>
-            <li>Hong Kong</li>
+            <li>Hong Kong SAR</li>
             <li>Hungary</li>
             <li>Iceland</li>
             <li>Indonesia</li>
@@ -304,7 +304,7 @@ Store for Business is currently available in these markets.
             <li>Norway</li>
             <li>Oman</li>
             <li>Pakistan</li>
-            <li>Palestinian Territory</li>
+            <li>Palestinian Authority</li>
             <li>Panama</li>
             <li>Paraguay</li>
             <li>Peru</li>
