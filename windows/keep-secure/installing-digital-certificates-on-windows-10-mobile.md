@@ -61,7 +61,7 @@ Windows 10 Mobile supports root, CA, and client certificate to be configured vi
 8.  The cert is installed in the device. Browser, Wi-Fi, VPN, email, and other first party applications have access to this certificate.
 
     >[!NOTE]
-    >If MDM requested private key being stored in Trusted Process Module (TPM) (configured during enrollment request), the private key will be saved in TPM. Note that SCEP enrolled cert protected by TPM isn’t guarded by a PIN. However, if the certificate is imported to the Windows Hello for Business Key Storage Provider (KSP), it is guarded by the Hello PIN.
+    >If MDM requested private key stored in Trusted Process Module (TPM) (configured during enrollment request), the private key will be saved in TPM. Note that SCEP enrolled cert protected by TPM isn’t guarded by a PIN. However, if the certificate is imported to the Windows Hello for Business Key Storage Provider (KSP), it is guarded by the Hello PIN.
      
 ## Related topics
 
