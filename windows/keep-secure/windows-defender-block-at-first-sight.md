@@ -22,35 +22,11 @@ author: iaanw
 
 - Network administrators
 
-test2
 
-<iframe
-src="https://videoplayercdn.osi.office.net/embed/uuid=df196dbe-ae57-44f3-aba8-539568434331" width="720" height="405" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
 Block at First Sight is a feature of Windows Defender cloud protection that provides a way to detect and block new malware within seconds. 
 
 It is enabled by default when certain pre-requisite settings are also enabled. In most cases, these pre-requisite settings are also enabled by default, so the feature is running without any intervention.
-
-<iframe 
-src="http://videoplayercdn.osi.office.net/embed/uuid=df196dbe-ae57-44f3-aba8-539568434331"></iframe>
-
-
-<script 
-type="text/javascript" language="javascript" src="//c.microsoft.com/ms.js" ></script>
-<div 
-id="vid3290">
-<script 
-type="text/javascript" language="javascript" src=" videoplayercdn.osi.office.net/s/js/vxp.js"></script>
-<script 
-type="text/javascript">            
-MsnVideoUx.render(
-"MSNShowCase2",    
-"vid3290",  
-{ "Width": "640", "Height": "480",   "AutoPlayVideo": "false",    "DefaultVideo": "videobyuuids.aspx?uuids=df196dbe-ae57-44f3-aba8-539568434331"  },
-{ csid: "ux-cms-en-us-msoffice" }
-);</script>
-</div>
-
 
 ## How it works
 
