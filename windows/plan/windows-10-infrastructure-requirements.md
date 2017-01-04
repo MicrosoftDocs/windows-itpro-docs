@@ -94,9 +94,11 @@ Windows 10 volume license editions of Windows 10 will continue to support all 
 | Windows 10                             | None                                                                                        |
 | Windows Server 2012 R2 and Windows 8.1 | [https://support.microsoft.com/kb/3058168](https://go.microsoft.com/fwlink/p/?LinkId=625087) |
 | Windows Server 2012 and Windows 8      | [https://support.microsoft.com/kb/3058168](https://go.microsoft.com/fwlink/p/?LinkId=625087) |
-| Windows Server 2008 R2 and Windows 7   | Available by October 2015                                                                   |
+| Windows Server 2008 R2 and Windows 7   | [https://support.microsoft.com/kb/3079821](https://support.microsoft.com/kb/3079821)                                                                   |
 
  
+
+Also see: [Windows Server 2016 Volume Activation Tips](https://blogs.technet.microsoft.com/askcore/2016/10/19/windows-server-2016-volume-activation-tips/)
 
 Additionally, new product keys will be needed for all types of volume license activation (KMS, MAK, and AD-based Activation); these keys are available on the Volume Licensing Service Center (VLSC) for customers with rights to the Windows 10 operating system. To find the needed keys:
 
@@ -112,10 +114,8 @@ Note that Windows 10 Enterprise and Windows 10 Enterprise LTSB installations u
 
 
 [Windows 10 servicing options](windows-10-servicing-options.md)
-
-[Windows 10 deployment considerations](windows-10-deployment-considerations.md)
-
-[Windows 10 compatibility](windows-10-compatibility.md)
+<BR>[Windows 10 deployment considerations](windows-10-deployment-considerations.md)
+<BR>[Windows 10 compatibility](windows-10-compatibility.md)
 
  
 
