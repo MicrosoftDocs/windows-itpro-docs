@@ -1,4 +1,4 @@
-﻿---
+---
 title: Get started with Upgrade Analytics (Windows 10)
 description: Explains how to get started with Upgrade Analytics.
 ms.prod: w10
@@ -53,7 +53,7 @@ If you are not using OMS:
 
 After you’ve signed in to Operations Management Suite and added the Upgrade Analytics solution to your workspace, complete the following tasks to establish communication and enable data sharing between user computers, Microsoft secure data centers, and Upgrade Analytics.
 
-## Generate your commercial ID key 
+## Generate your commercial ID key
 
 Microsoft uses a unique commercial ID to map information from user computers to your OMS workspace. Generate your commercial ID key in OMS and then deploy it to user computers.
 
@@ -77,7 +77,7 @@ For Upgrade Analytics to receive and display upgrade readiness data from Microso
 
 To enable data sharing, whitelist the following endpoints. Note that you may need to get approval from your security group to do this.
 
-Note: The compatibility update KB runs under the computer’s system account and does not support user authenticated proxies.
+Note: The compatibility update KB runs under the computer’s system account. If you are using user authenticated proxies, read [this blog post]()to learn what you need to do to run it under the logged on user account.
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
@@ -137,7 +137,7 @@ The Upgrade Analytics deployment script does the following:
 
 To run the Upgrade Analytics deployment script:
 
-1.  Download the [Upgrade Analytics deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract UpgradeAnalytics.zip. Inside, there are two folders: Pilot and Deployment. The Pilot folder contains advanced logging that can help troubleshoot issues and is inteded to be run from an elevated command prompt. The Deployment folder offers a lightweight script intended for broad deployment through ConfigMgr or other software deployment system. We recommend manually running the Pilot version of the script on 5-10 machines to verify that everything is configured correctly.  Once you have confirmed that data is flowing successfully, proceed to run the Deployment version throughout your organization.
+1.  Download the [Upgrade Analytics deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract UpgradeAnalytics.zip. Inside, there are two folders: Pilot and Deployment. The Pilot folder contains advanced logging that can help troubleshoot issues and is intended to be run from an elevated command prompt. The Deployment folder offers a lightweight script intended for broad deployment through ConfigMgr or other software deployment system. We recommend manually running the Pilot version of the script on 5-10 machines to verify that everything is configured correctly.  Once you have confirmed that data is flowing successfully, proceed to run the Deployment version throughout your organization.
 
 2.  Edit the following parameters in RunConfig.bat:
 
@@ -165,7 +165,7 @@ To run the Upgrade Analytics deployment script:
 
 4.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script.  If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
 
-The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered. 
+The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered.
 
 <div style='font-size:10.0pt'>
 
@@ -200,6 +200,9 @@ The deployment script displays the following exit codes to let you know if it wa
 <TR><TD>26<TD>The operating system is Server or LTSB SKU. The script does not support Server or LTSB SKUs.
 <TR><TD>27<TD>The script is not running under System account.  The Upgrade Analytics configuration script must be run as system.
 <TR><TD>28<TD>Could not create log file at the specified logPath.
+<TR><TD>29<TD> Connectivity check failed. and the most likely cause is the updates required for authentication proxy are not installed.  Install the cumulative updates on the machine and enable the authentication proxy settings through registry settings.  You can find the instructions and the updates here:  [Win 7](https://support.microsoft.com/en-us/kb/3192403), [Win 8.1](https://support.microsoft.com/en-us/kb/3192404), [Win 10 Build 1511 (TH2)](https://support.microsoft.com/en-us/kb/3192441). For information on running the deployment script in environments that use authentication proxy, see [this blog post] ().
+<TR><TD>30<TD>This means that the connectivity check failed, and the most likely cause is that the registry key is not set correctly. For instructions on setting the registry keys, see [Win 7](https://support.microsoft.com/en-us/kb/3192403), [Win 8.1](https://support.microsoft.com/en-us/kb/3192404), [Win 10 Build 1511 (TH2)](https://support.microsoft.com/en-us/kb/3192441). For information on running the deployment script in environments that use authentication proxy, see [this blog post] ().
+<TR><TD>30<TD>There is already an instance of CompatTelRunner.exe running on the machine. Check the Windows Task Manager to verify that the CompatTelRunner.exe is no longer running before running the script again.  You may also have a scheduled task that is running the script, so you should verify to make sure that you don't have Upgrade Analytics scripts scheduled to run at the same time.
 </TABLE>
 
 </div>
@@ -207,4 +210,3 @@ The deployment script displays the following exit codes to let you know if it wa
 ## Seeing data from computers in Upgrade Analytics
 
 After data is sent from computers to Microsoft, it generally takes 48 hours for the data to populate in Upgrade Analytics. The compatibility update KB takes several minutes to run. If the KB does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Upgrade Analytics. For this reason, you can expect most your computers to be populated in OMS in about 1-2 weeks after deploying the KB and configuration to user computers.
-
