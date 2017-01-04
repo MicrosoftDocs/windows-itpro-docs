@@ -507,7 +507,7 @@ At a high level, the computer replace process consists of:<BR>
 - A special replace task sequence that runs the USMT backup and an optional full Window Imaging (WIM) backup.<BR>
 - A standard OS deployment on a new computer. At the end of the deployment, the USMT backup from the old computer is restored.
 
-#### Create a backup-only task sequence
+### Create a backup-only task sequence
 
 1. On SRV1, in the deployment workbench console, right-click the MDT Production deployment share, click **Properties**, click the **Rules** tab, and change the line **SkipUserData=YES** to **SkipUserData=NO**.
 2. Click **OK**, right-click **MDT Production**, click **Update Deployment Share** and accept the default options in the wizard to update the share.
@@ -528,7 +528,7 @@ At a high level, the computer replace process consists of:<BR>
 7. Accept defaults for the rest of the wizard and then click **Finish**. The replace task sequence will skip OS selection and settings.
 8. Open the new task sequence that was created and review it. Note the type of capture and backup tasks that are present. Click **OK** when you are finished reviewing the task sequence.
 
-#### Run the backup-only task sequence
+### Run the backup-only task sequence
 
 1. If you are not already signed on to PC1 as **contoso\administrator**, sign in using this account. To verify the currently signed in account, type the following command at an elevated command prompt:
 
@@ -564,7 +564,7 @@ At a high level, the computer replace process consists of:<BR>
     ----                -------------     ------ ----
     -a---          9/6/2016  11:34 AM   14248685 USMT.MIG
     ```
-#### Deploy PC3 
+### Deploy PC3 
 
 1. On the Hyper-V host, type the following commands at an elevated Windows PowerShell prompt:
 
@@ -596,6 +596,9 @@ At a high level, the computer replace process consists of:<BR>
     ```
 7. Setup will install the Windows 10 Enterprise operating system, update via Windows Update, and restore the user settings and data from PC1.
 
+8. When PC3 has completed installing the OS, sign in to PC3 using the contoso\administrator account. When the PC completes updating, click **Finish**.
+
+9. Verify that settings have been migrated from PC1, and then shut down PC3 in preparation for the next procedure.
 
 ## Troubleshooting logs, events, and utilities
 
