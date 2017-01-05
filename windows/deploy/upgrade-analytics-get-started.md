@@ -81,10 +81,10 @@ Note: The compatibility update KB runs under the computer’s system account. If
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-| `https://v10.vortex-win.data.microsoft.com/collect/v1`                                                                                                                             | Connected User Experience and Telemetry component endpoint. User computers send data to Microsoft through this endpoint.             |
-| `https://settings-win.data.microsoft.com/settings`                                                                                                                                 | Enables the compatibility update KB to send data to Microsoft.                                                                       |
-| `https://go.microsoft.com/fwlink/?LinkID=544713`<br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc/extended`                                        | This service provides driver information about whether there will be a driver available post-upgrade for the hardware on the system. |
-| `https://vortex.data.microsoft.com/health/keepalive` <br>`https://settings.data.microsoft.com/qos` <br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc` | These endpoints are used to validate that user computers are sharing data with Microsoft.                                            |
+| `https://v10.vortex-win.data.microsoft.com/collect/v1`(Windows 10)  <br><br>                       `https://Vortex-win.data.microsoft.com/health/keepalive` (Windows 7, and Windows 8.1)                                                                                                     | Connected User Experience and Telemetry component endpoint. User computers send data to Microsoft through this endpoint.             |
+| `https://settings.data.microsoft.com/qos` (Windows 7, Windows 8.1 and Windows 10)                                                                                                                                 | Enables the compatibility update KB to send data to Microsoft.                                                                       |
+| `https://go.microsoft.com/fwlink/?LinkID=544713`<br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc` (Windows 7, Windows 8.1 and Windows 10)                                        | This service provides driver information about whether there will be a driver available post-upgrade for the hardware on the system. |
+
 
 ## Deploy the compatibility update and related KBs
 
@@ -178,19 +178,18 @@ The deployment script displays the following exit codes to let you know if it wa
 <TR><TD>4<TD>Error when logging to file. $logMode = 2.
 <TR><TD>5<TD>Error when logging to console and file. $logMode = unknown.
 <TR><TD>6<TD>The commercialID parameter is set to unknown. Modify the script.
-<TR><TD>7<TD>Function -CheckCommercialId: Unexpected failure.
 <TR><TD>8<TD>Failure to create registry key path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection.
 <TR><TD>9<TD>Error when writing CommercialId to registry.
 <TR><TD>10<TD>Error when writing CommercialDataOptIn to registry.
 <TR><TD>11<TD>Function -SetupCommercialId: Unexpected failure.
 <TR><TD>12<TD>Can’t connect to Microsoft – Vortex. Check your network/proxy settings.
-<TR><TD>13<TD>Can’t connect to Microsoft – setting. Check your network/proxy settings.
-<TR><TD>14<TD>Can’t connect to Microsoft – compatexchange. Check your network/proxy settings.
-<TR><TD>15<TD>Error connecting to Microsoft. Check your network/proxy settings.
+<TR><TD>13<TD>Can’t connect to Microsoft – setting. Verify that the required endpoints are whitelisted correctly.
+<TR><TD>14<TD>Can’t connect to Microsoft – compatexchange. Verify that the required endpoints are whitelisted.
+<TR><TD>15<TD>Error connecting to Microsoft:Unexpected failure.
 <TR><TD>16<TD>Machine requires reboot.
 <TR><TD>17<TD>Function -CheckRebootRequired: Unexpected failure.
 <TR><TD>18<TD>Outdated compatibility update KB package. Update via Windows Update/WSUS.
-<TR><TD>19<TD>This machine doesn’t have the proper KBs installed. Make sure you have recent compatibility update KB downloaded.
+<TR><TD>19<TD>The compatibility update failed with unexpected exception.
 <TR><TD>20<TD>Error writing RequestAllAppraiserVersions registry key.
 <TR><TD>21<TD>Function – SetRequestAllAppraiserVersions: Unexpected failure.
 <TR><TD>22<TD>RunAppraiser failed with unexpected exception.
@@ -200,9 +199,10 @@ The deployment script displays the following exit codes to let you know if it wa
 <TR><TD>26<TD>The operating system is Server or LTSB SKU. The script does not support Server or LTSB SKUs.
 <TR><TD>27<TD>The script is not running under System account.  The Upgrade Analytics configuration script must be run as system.
 <TR><TD>28<TD>Could not create log file at the specified logPath.
-<TR><TD>29<TD> Connectivity check failed. and the most likely cause is the updates required for authentication proxy are not installed.  Install the cumulative updates on the machine and enable the authentication proxy settings through registry settings.  You can find the instructions and the updates here:  [Win 7](https://support.microsoft.com/en-us/kb/3192403), [Win 8.1](https://support.microsoft.com/en-us/kb/3192404), [Win 10 Build 1511 (TH2)](https://support.microsoft.com/en-us/kb/3192441). For information on running the deployment script in environments that use authentication proxy, see [this blog post] ().
-<TR><TD>30<TD>This means that the connectivity check failed, and the most likely cause is that the registry key is not set correctly. For instructions on setting the registry keys, see [Win 7](https://support.microsoft.com/en-us/kb/3192403), [Win 8.1](https://support.microsoft.com/en-us/kb/3192404), [Win 10 Build 1511 (TH2)](https://support.microsoft.com/en-us/kb/3192441). For information on running the deployment script in environments that use authentication proxy, see [this blog post] ().
-<TR><TD>30<TD>There is already an instance of CompatTelRunner.exe running on the machine. Check the Windows Task Manager to verify that the CompatTelRunner.exe is no longer running before running the script again.  You may also have a scheduled task that is running the script, so you should verify to make sure that you don't have Upgrade Analytics scripts scheduled to run at the same time.
+<TR><TD>29<TD> Connectivity check failed for proxy authentication. Install the cumulative updates on the machine and enable the authentication proxy settings :  [Win 7](https://support.microsoft.com/en-us/kb/3192403), [Win 8.1](https://support.microsoft.com/en-us/kb/3192404), [Win 10 Build 1511 (TH2)](https://support.microsoft.com/en-us/kb/3192441).
+For more information on authentication proxy support, see [this blog post] ().
+<TR><TD>30<TD>This means that the connectivity check failed, and the most likely cause is that the proxy setting is not enabled correctly. For instructions on setting the registry keys, see [Win 7](https://support.microsoft.com/en-us/kb/3192403), [Win 8.1](https://support.microsoft.com/en-us/kb/3192404), [Win 10 Build 1511 (TH2)](https://support.microsoft.com/en-us/kb/3192441). For more information on authentication proxy support, see [this blog post] ().
+<TR><TD>30<TD>There is more than one instance of the Upgrade Analytics data collector running at the same time on this machine. This could be because a scheduled task was running when the script was run, or a second instance of the script was launched before the first one was completed.
 </TABLE>
 
 </div>
