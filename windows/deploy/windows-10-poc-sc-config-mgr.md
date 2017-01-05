@@ -177,7 +177,7 @@ Description here.
     - **Settings Summary**: Review settings and click **Next**.
     - **Prerequisite Check**: No failures should be listed. Ignore any warnings and click **Begin Install**.
 
-    >There should be at most three warnings present: WSUS on site server, configuration for SQL Server memory usage, and SQL Server process memory allocation.
+    >There should be at most three warnings present: WSUS on site server, configuration for SQL Server memory usage, and SQL Server process memory allocation. These warnings can safely be ignored.
 
     Depending on the speed of the Hyper-V host and resources allocated to SRV1, installation can require approximately one hour. Click **Close** when installation is complete. 
 
