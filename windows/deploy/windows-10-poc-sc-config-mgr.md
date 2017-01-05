@@ -1,5 +1,5 @@
 ---
-title: Placeholder (Windows 10)
+title: Deploy Windows 10 using System Center Configuration Manager
 description: Deploy Windows 10 in a test lab using System Center Configuration Manager 
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,7 +14,7 @@ author: greg-lindsay
 
 -   Windows 10
 
-**Important**: This guide leverages the proof of concept (PoC) environment configured using procedures in [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md) and requires that you have completed completed procedures in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md). Please complete all steps in these guides before attempting the procedures in this guide.
+**Important**: This guide leverages the proof of concept (PoC) environment configured using procedures in [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md) and requires that you have completed completed procedures in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md). Please complete all steps in these guides before attempting the procedures in this guide. If you wish to skip the Windows 10 deployment procedures in the MDT guide and move directly to this guide, you must at least install MDT and the Windows ADK before performing procedures in this guide.
 
 The PoC environment is a virtual network running on Hyper-V with three virtual machines (VMs):
 - **DC1**: A contoso.com domain controller, DNS server, and DHCP server.
@@ -53,20 +53,23 @@ Description here.
     ```
     D:\setup.exe /q /ACTION=Install /ERRORREPORTING="False" /FEATURES=SQLENGINE,RS,IS,SSMS,TOOLS,ADV_SSMS,CONN /INSTANCENAME=MSSQLSERVER /INSTANCEDIR="C:\Program Files\Microsoft SQL Server" /SQLSVCACCOUNT="NT AUTHORITY\System" /SQLSYSADMINACCOUNTS="BUILTIN\ADMINISTRATORS" /SQLSVCSTARTUPTYPE=Automatic /AGTSVCACCOUNT="NT AUTHORITY\SYSTEM" /AGTSVCSTARTUPTYPE=Automatic /RSSVCACCOUNT="NT AUTHORITY\System" /RSSVCSTARTUPTYPE=Automatic /ISSVCACCOUNT="NT AUTHORITY\System" /ISSVCSTARTUPTYPE=Disabled /ASCOLLATION="Latin1_General_CI_AS" /SQLCOLLATION="SQL_Latin1_General_CP1_CI_AS" /TCPENABLED="1" /NPENABLED="1" /IAcceptSQLServerLicenseTerms
     ```
-    Installation might take several minutes. When installation is complete, the following output will be displayed:
+    Installation will take several minutes. When installation is complete, the following output will be displayed:
 
     ```
     Microsoft (R) SQL Server 2014 12.00.5000.00
     Copyright (c) Microsoft Corporation.  All rights reserved.
-
+    
     Microsoft (R) .NET Framework CasPol 2.0.50727.7905
     Copyright (c) Microsoft Corporation.  All rights reserved.
-
+    
     Success
     Microsoft (R) .NET Framework CasPol 2.0.50727.7905
     Copyright (c) Microsoft Corporation.  All rights reserved.
-
+    
     Success
+    One or more affected files have operations pending.
+    You should restart your computer to complete this process.
+    PS C:\>
     ```
 5. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
 
@@ -77,20 +80,22 @@ Description here.
     New-NetFirewallRule -DisplayName “SQL Service Broker” -Direction Inbound –Protocol TCP –LocalPort 4022 -Action allow
     New-NetFirewallRule -DisplayName “SQL Debugger/RPC” -Direction Inbound –Protocol TCP –LocalPort 135 -Action allow
     ```
-6. On SRV1, temporarily disable IE Enhanced Security Configuration for Administrators by typing the following commands at an elevated Windows PowerShell prompt:
+
+7. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1607. Installation might require several minutes to acquire all components.   
+
+## Install System Center Configuration Manager
+
+1. On SRV1, temporarily disable IE Enhanced Security Configuration for Administrators by typing the following commands at an elevated Windows PowerShell prompt:
 
     ```
     $AdminKey = "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}"
     Set-ItemProperty -Path $AdminKey -Name “IsInstalled” -Value 0
     Stop-Process -Name Explorer
     ```
-7. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1607. Installation might require several minutes to acquire all components.   
 
-## Install System Center Configuration Manager
+2. Download [System Center Configuration Manager and Endpoint Protection](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) on SRV1 (download the executable file anywhere on SRV1), double-click the file, enter **C:\configmgr** for **Unzip to folder**, and click **Unzip**. The C:\configmgr directory will be automatically created. Click **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
 
-1. Download [System Center Configuration Manager and Endpoint Protection](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) on SRV1, double-click the file, enter **C:\configmgr** for **Unzip to folder**, and click **Unzip**. The C:\configmgr directory will be automatically created. Click **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
-
-2. Before starting the installation, verify that WMI is working on SRV1. See the following examples. Verify that **Running** is displayed under **Status** and **True** is displayed next to **TcpTestSucceeded**:
+3. Before starting the installation, verify that WMI is working on SRV1. See the following examples. Verify that **Running** is displayed under **Status** and **True** is displayed next to **TcpTestSucceeded**:
 
     ```
     Get-Service Winmgmt
@@ -118,12 +123,46 @@ Description here.
 
     If the WMI service is not started, attempt to start it or reboot the computer.  If WMI is running but errors are present, see [WMIDiag](https://blogs.technet.microsoft.com/askperf/2015/05/12/wmidiag-2-2-is-here/) for troubleshooting information.
 
-2. To start Configuration Manager installation, type the following command at an elevated Windows PowerShell prompt:
+4. To extend the Active Directory schema, type the following command at an elevated Windows PowerShell prompt:
+
+    ```
+    cmd /c C:\configmgr\SMSSETUP\BIN\X64\extadsch.exe
+    ```
+
+5. Temporarily switch to the DC1 VM, and type the following command at an elevated command prompt on DC1:
+
+    ```
+    adsiedit.msc
+    ```
+
+6. Right-click **ADSI Edit**, click **Connect to**, select **Default** under **Computer** and then click **OK**.
+
+7. Expand **Default naming context**>**DC=contoso,DC=com**, right-click **CN=System**, point to **New**, and then click **Object**.
+
+8. Click **container** and then click **Next**.
+
+9. Next to **Value**, type **System Management**, click **Next**, and then click **Finish**.
+
+10. Right-click **CN=system Management** and then click **Properties**.
+
+11. On the **Security** tab, click **Add**, click **Object Types**, select **Computers**, and click **OK**.
+
+12. Under **Enter the object names to select**, type **SRV1** and click **OK**.
+
+13. The **SRV1** computer account will be highlighted, select **Allow** next to **Full control**.
+
+14. Click **Advanced**, click **SRV1 (CONTOSO\SRV1$)** and click **Edit**.
+
+15. Next to **Applies to**, choose **This object and all descendant objects**, and then click **OK** three times.
+
+16. Close the ADSI Edit console and switch back to SRV1.
+
+17. To start Configuration Manager installation, type the following command at an elevated Windows PowerShell prompt on SRV1:
 
     ```
     cmd /c C:\configmgr\SMSSETUP\BIN\X64\Setup.exe
     ```
-3. Provide the following in the System Center Configuration Manager Setup Wizard:
+18. Provide the following in the System Center Configuration Manager Setup Wizard:
     - **Before You Begin**: Read the text and click *Next*.
     - **Getting Started**: Choose **Install a Configuration Manager primary site** and select the **Use typical installation options for a stand-alone primary site** checkbox.
         - Click **Yes** in response to the popup window.
@@ -138,13 +177,11 @@ Description here.
     - **Settings Summary**: Review settings and click **Next**.
     - **Prerequisite Check**: No failures should be listed. Ignore any warnings and click **Begin Install**.
 
+    >There should be at most three warnings present: WSUS on site server, configuration for SQL Server memory usage, and SQL Server process memory allocation.
+
     Depending on the speed of the Hyper-V host and resources allocated to SRV1, installation can require approximately one hour. Click **Close** when installation is complete. 
 
-## Download and install MDT  
-
-1. Download and install the 64-bit version of [Microsoft Deployment Toolkit (MDT) 2013 Update 2](https://www.microsoft.com/en-us/download/details.aspx?id=50407) on SRV1 using the default options.
-
-2. If desired, re-enable IE Enhanced Security Configuration at this time on SRV1:
+19. If desired, re-enable IE Enhanced Security Configuration at this time on SRV1:
 
     ```
     Set-ItemProperty -Path $AdminKey -Name “IsInstalled” -Value 1
