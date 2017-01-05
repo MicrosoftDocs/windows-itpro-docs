@@ -227,16 +227,16 @@ Description here.
 
 ## Enable MDT ConfigMgr integration
 
-1. Click **Start**, type **configmgr**, and then click **Configure ConfigMgr Integration**.
+1. On SRV1, click **Start**, type **configmgr**, and then click **Configure ConfigMgr Integration**.
 2. Type **PS1** next to **Site code**, and then click **Next**.
 3. Verify **The process completed successfully** is displayed, and then click **Finish**.
 
 ## Configure client settings
 
-1. Click **Start**, type **configuration manager**, right-click **Configuration Manager Console**, and then click **Pin to Taskbar**.
+1. On SRV1, click **Start**, type **configuration manager**, right-click **Configuration Manager Console**, and then click **Pin to Taskbar**.
 2. Click **Desktop**, and then launch the Configuration Manager console from the taskbar.
 3. If the console notifies you that an update is available, click **OK**. It is not necessary to install updates to complete this lab.
-4. In the console tree, open the **Administration** workspace and click **Client Settings**.
+4. In the console tree, open the **Administration** workspace (in the lower left corner) and click **Client Settings**.
 5. In the display pane, double-click **Default Client Settings**.
 6. Click **Computer Agent**, next to **Organization name displayed in Software Center** type **Contoso**, and then click **OK**.
 
@@ -247,7 +247,7 @@ Description here.
     ```
     (Get-NetAdapter "Ethernet").MacAddress
     ```
-    >If the internal network adapter, assigned an IP address of 192.168.0.2, is not named "Ethernet" then replace the name "Ethernet" in the previous command with the name of this network adapter.
+    >If the internal network adapter, assigned an IP address of 192.168.0.2, is not named "Ethernet" then replace the name "Ethernet" in the previous command with the name of this network adapter. You can review the names of network adapters and the IP addresses assigned to them by typing **ipconfig**.
 
 2. In the System Center Configuration Manager console, in the **Administration** workspace, click **Distribution Points**.
 3. In the display pane, right-click **SRV1.CONTOSO.COM** and then click **Properties**.
@@ -258,6 +258,11 @@ Description here.
     - Require a password when computers use PXE
     - Password and Confirm password: pass@word1
     - Respond to PXE requests on specific network interfaces: Enter the MAC address determined in the first step of this procedure.
+
+    See the following example:
+
+    <img src="images/sccm-pxe.png" alt="Config Mgr PXE"/>
+
 5. Click **OK**.
 6. Type the following command at an elevated Windows PowerShell prompt on SRV1, and verify that the files displayed are present:
 
@@ -278,6 +283,9 @@ Description here.
     Invoke-Item 'C:\Program Files\Microsoft Configuration Manager\tools\cmtrace.exe'
     ```
 
+    The log file will updated continuously while Configuration Manager is running. Wait for Configuration Manager to repair any issues that are present, and periodically re-check that the files are present in the C:\RemoteInstall\SMSBoot\x64 directory. Close the Configuration Manager Trace Log Tool when done.
+
+
 ## Create a branding image file 
 
 1. If you have a bitmap (.BMP) image for suitable use as a branding image, copy it to the C:\Sources\OSD\Branding folder on SRV1. Otherwise, use the following step to copy a simple branding image.
@@ -290,7 +298,7 @@ Description here.
 
 ## Create a boot image for Configuration Manager 
 
-1. In the Configuration Manager console, in the Software Library workspace, expand **Operating Systems**, right-click **Boot Images**, and then click **Create Boot Image using MDT**.
+1. In the Configuration Manager console, in the **Software Library** workspace, expand **Operating Systems**, right-click **Boot Images**, and then click **Create Boot Image using MDT**.
 2. On the Package Source page, under **Package source folder to be created (UNC Path):**, type **\\SRV1\Sources$\OSD\Boot\Zero Touch WinPE x64**, and then click **Next**.
     - The Zero Touch WinPE x64 folder does not yet exist. The folder will be created later.
 3. On the General Settings page, type **Zero Touch WinPE x64** next to **Name**, and click **Next**.
