@@ -50,7 +50,7 @@ The following sections provide an overview of the technologies that support the 
 -   [How the TPM mitigates dictionary attacks](#how-the-tpm-mitigates-dictionary-attacks)
 
 The following topic describes the TPM Services that can be controlled centrally by using Group Policy settings:
-[TPM Group Policy Settings](trusted-platform-module-services-group-policy-settings.md)
+[TPM Group Policy Settings](trusted-platform-module-services-group-policy-settings.md).
 
 ## Measured Boot with support for attestation
 

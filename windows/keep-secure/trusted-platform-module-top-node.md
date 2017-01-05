@@ -24,7 +24,7 @@ Trusted Platform Module (TPM) technology is designed to provide hardware-based, 
 | [Trusted Platform Module Overview](trusted-platform-module-overview.md) | Provides an overview of the Trusted Platform Module (TPM) and how Windows uses it for access control and authentication. |
 | [TPM fundamentals](tpm-fundamentals.md) | Provides background about how a TPM can work with cryptographic keys. Also describes technologies that work with the TPM, such as TPM-based virtual smart cards. |
 | [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md) | Describes TPM services that can be controlled centrally by using Group Policy settings. |
-| [Backup the TPM recovery information to AD DS](backup-tpm-recovery-information-to-ad-ds.md) | For Windows 10, version 1511 and Windows 10, version 1507 only, describes how to back up a computer’s TPM information to Active Directory Domain Services. |
+| [Back up the TPM recovery information to AD DS](backup-tpm-recovery-information-to-ad-ds.md) | For Windows 10, version 1511 and Windows 10, version 1507 only, describes how to back up a computer’s TPM information to Active Directory Domain Services. |
 | [Manage TPM commands](manage-tpm-commands.md) | Describes methods by which a local or domain administrator can block or allow specific TPM commands. |
 | [Manage TPM lockout](manage-tpm-lockout.md) | Describes how TPM lockout works (to help prevent tampering or malicious attacks), and outlines ways to work with TPM lockout settings. |
 | [Change the TPM owner password](change-the-tpm-owner-password.md) | In most cases, applies to Windows 10, version 1511 and Windows 10, version 1507 only. Tells how to change the TPM owner password. |
