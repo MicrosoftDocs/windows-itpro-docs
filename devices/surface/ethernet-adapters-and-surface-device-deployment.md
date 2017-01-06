@@ -55,7 +55,8 @@ To boot a Surface device from an alternative boot device, follow these steps:
 3.  Press and release the **Power** button.
 4.  After the system begins to boot from the USB stick or Ethernet adapter, release the **Volume Down** button.
 
->**Note:**&nbsp;&nbsp;In addition to an Ethernet adapter, a keyboard must also be connected to the Surface device to enter the preinstallation environment and navigate the deployment wizard.
+>[!NOTE]
+>In addition to an Ethernet adapter, a keyboard must also be connected to the Surface device to enter the preinstallation environment and navigate the deployment wizard.
 
  
 For Windows 10, version 1511 and later – including the Windows Assessment and Deployment Kit (Windows ADK) for Windows 10, version 1511 – the drivers for Microsoft Surface Ethernet Adapters are present by default. If you are using a deployment solution that uses Windows Preinstallation Environment (WinPE), like the Microsoft Deployment Toolkit, and booting from the network with PXE, ensure that your deployment solution is using the latest version of the Windows ADK.
