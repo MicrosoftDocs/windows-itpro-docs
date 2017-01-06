@@ -1,4 +1,4 @@
-﻿---
+---
 title: Upgrade Analytics requirements (Windows 10)
 description: Provides requirements for Upgrade Analytics.
 ms.prod: w10
@@ -42,6 +42,8 @@ See [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields
 **Whitelist telemetry endpoints.** To enable telemetry data to be sent to Microsoft, you’ll need to whitelist the following Microsoft telemetry endpoints on your proxy server or firewall. You may need to get approval from your security group to do this.
 
 `https://v10.vortex-win.data.microsoft.com/collect/v1`
+
+`https://vortex-win.data.microsoft.com/health/keepalive`
 
 `https://settings-win.data.microsoft.com/settings`
 
