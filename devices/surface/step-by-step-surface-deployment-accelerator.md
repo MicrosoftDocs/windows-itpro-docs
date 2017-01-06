@@ -40,7 +40,7 @@ The tool installs in the SDA program group, as shown in Figure 2.
 *Figure 2. The SDA program group and icon*
 
 >[!NOTE]
->At this point the tool has not yet prepared any deployment environment or downloaded any materials from the Internet.
+>At this point, the tool has not yet prepared any deployment environment or downloaded any materials from the Internet.
 
  
 
