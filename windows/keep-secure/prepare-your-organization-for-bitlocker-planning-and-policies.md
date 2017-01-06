@@ -97,22 +97,9 @@ The protection differences provided by multifactor authentication methods cannot
 
 In your deployment plan, identify what TPM-based hardware platforms will be supported. Document the hardware models from an OEM of your choice, so that their configurations can be tested and supported. TPM hardware requires special consideration during all aspects of planning and deployment.
 
-### TPM states of existence
+### TPM 1.2 states and initialization
 
-For each of the TPM states of existence, the TPM can transition into another state (for example, moving from disabled to enabled). The states are not exclusive.
-
-| State | Description |
-| - | - |
-| Enabled| Most features of the TPM are available.<br/>The TPM may be enabled and disabled multiple times within a boot period, if ownership is taken.| 
-| Disabled | The TPM restricts most operations. Exceptions include the ability to report TPM capabilities, extend and reset Platform Configuration Register (PCR) functions, and to perform hashing and basic initialization.<br/>The TPM may be enabled and disabled multiple times within a boot period.| 
-| Activated| Most features of the TPM are available. The TPM may be activated and deactivated only through physical presence which requires a reboot.| 
-| Deactivated| Similar to disabled, with the exception that ownership can be taken while deactivated and enabled. The TPM may be activated and deactivated only through physical presence which requires a reboot.| 
-| Owned| Most features of the TPM are available. The TPM has an endorsement key and storage root key, and the owner knows information about owner authorization data.| 
-| Un-owned| The TPM does not have a storage root key and may or may not have an endorsement key.| 
- 
->**Important:**  BitLocker cannot use the TPM until it is in the following state: enabled, activated, and owned. When the TPM is in this state and only when it is in this state, all operations are available.
- 
-The state of the TPM exists independent of the computer’s operating system. Once the TPM is enabled, activated, and owned, the state of the TPM is preserved if the operating system is reinstalled.
+For TPM 1.2, there are multiple possible states. Windows 10 automatically initializes the TPM, which brings it to an enabled, activated, and owned state. This is the state that BitLocker requires before it can use the TPM.
 
 ### Endorsement keys
 
