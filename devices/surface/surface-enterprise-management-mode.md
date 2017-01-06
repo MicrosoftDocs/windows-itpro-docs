@@ -14,7 +14,7 @@ author: jobotto
 Microsoft Surface Enterprise Management Mode (SEMM) is a feature of Surface devices with Surface UEFI that allows you to secure and manage firmware settings within your organization. With SEMM, IT professionals can prepare configurations of UEFI settings and install them on a Surface device. In addition to the ability to configure UEFI settings, SEMM also uses a certificate to protect the configuration from unauthorized tampering or removal.
 
 >[!NOTE]
->SEMM is only available on devices with Surface UEFI firmware, such as Surface Pro 4 and Surface Book. For more information about Surface UEFI, see [Manage Surface UEFI Settings](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings).
+>SEMM is only available on devices with Surface UEFI firmware, such as Surface Pro 4, Surface Book, and Surface Studio. For more information about Surface UEFI, see [Manage Surface UEFI Settings](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings).
 
 When Surface devices are configured by SEMM and secured with the SEMM certificate, they are considered *enrolled* in SEMM. When the SEMM certificate is removed and control of UEFI settings is returned to the user of the device, the Surface device is considered *unenrolled* in SEMM.
 
