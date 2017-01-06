@@ -39,7 +39,9 @@ Here's a few things to keep in mind before you get started:
 ## 2. Set up your cloud infrastructure
 To set up a cloud infrastructure for your organization, follow the steps in this section.
 
-### 2.1 Set up Office 365 Education tenant
+### 2.1 Set up Office 365 for business
+See [Set up Office 365 for business](https://support.office.com/en-us/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) to learn more about the steps for businesses and nonprofits who have Office 365. You can watch the videos and learn about the steps you need to create Office 365 accounts and how to add your domain.
+
 To set up your Office 365 business tenant, see [Get Started with Office 365 for business](https://support.office.com/en-us/article/Get-started-with-Office-365-for-Business-d6466f0d-5d13-464a-adcb-00906ae87029).
 
 If this is the first time you're setting this up, you can follow these steps to get started:
