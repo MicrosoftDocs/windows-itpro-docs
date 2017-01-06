@@ -122,11 +122,11 @@ Figure 14. ZTIGather.log displaying the application GUID belonging to the Adobe 
 ## Related topics
 
 [Set up MDT for BitLocker](set-up-mdt-2013-for-bitlocker.md)
-[Configure MDT deployment share rules](configure-mdt-deployment-share-rules.md)
-[Configure MDT for UserExit scripts](configure-mdt-2013-for-userexit-scripts.md)
-[Simulate a Windows 10 deployment in a test environment](simulate-a-windows-10-deployment-in-a-test-environment.md)
-[Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-10-deployment-information.md)
-[Use web services in MDT](use-web-services-in-mdt-2013.md)
-[Use Orchestrator runbooks with MDT](use-orchestrator-runbooks-with-mdt-2013.md)
+<BR>[Configure MDT deployment share rules](configure-mdt-deployment-share-rules.md)
+<BR>[Configure MDT for UserExit scripts](configure-mdt-2013-for-userexit-scripts.md)
+<BR>[Simulate a Windows 10 deployment in a test environment](simulate-a-windows-10-deployment-in-a-test-environment.md)
+<BR>[Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-10-deployment-information.md)
+<BR>[Use web services in MDT](use-web-services-in-mdt-2013.md)
+<BR>[Use Orchestrator runbooks with MDT](use-orchestrator-runbooks-with-mdt-2013.md)
  
  
