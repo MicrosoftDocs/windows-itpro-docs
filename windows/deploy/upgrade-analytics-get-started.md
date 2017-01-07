@@ -81,9 +81,9 @@ Note: The compatibility update KB runs under the computer’s system account. If
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-| `https://v10.vortex-win.data.microsoft.com/collect/v1`(Windows 10)  <br><br>                       `https://Vortex-win.data.microsoft.com/health/keepalive` (Windows 7, and Windows 8.1)                                                                                                     | Connected User Experience and Telemetry component endpoint. User computers send data to Microsoft through this endpoint.             |
-| `https://settings.data.microsoft.com/qos` (Windows 7, Windows 8.1 and Windows 10)                                                                                                                                 | Enables the compatibility update KB to send data to Microsoft.                                                                       |
-| `https://go.microsoft.com/fwlink/?LinkID=544713`<br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc` (Windows 7, Windows 8.1 and Windows 10)                                        | This service provides driver information about whether there will be a driver available post-upgrade for the hardware on the system. |
+| `https://v10.vortex-win.data.microsoft.com/collect/v1`  <br><br>                       `https://Vortex-win.data.microsoft.com/health/keepalive`                                                                                                      | Connected User Experience and Telemetry component endpoint. User computers send data to Microsoft through this endpoint.             |
+| `https://settings.data.microsoft.com/qos`                                                                                                                                  | Enables the compatibility update KB to send data to Microsoft.                                                                       |
+| `https://go.microsoft.com/fwlink/?LinkID=544713`<br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc`                                         | This service provides driver information about whether there will be a driver available post-upgrade for the hardware on the system. |
 
 
 ## Deploy the compatibility update and related KBs
@@ -189,7 +189,7 @@ The deployment script displays the following exit codes to let you know if it wa
 <TR><TD>16<TD>Machine requires reboot.<TD> The reboot is required to complete the installation of the compatibility update and related KBs. Reboot the machine before running the Upgrade Analytics deployment script.
 <TR><TD>17<TD>Function -CheckRebootRequired: Unexpected failure.<TD>he reboot is required to complete the installation of the compatibility update and related KBs. Reboot the machine before running the Upgrade Analytics deployment script.
 <TR><TD>18<TD>Outdated compatibility update KB package. Update via Windows Update/WSUS.<TD>
-The configuration script detected a version of the Compatibility update module that is older than the minimum required to correctly collect the data required by Upgrade Analytics solution. Use the latest version of the Compatibility update for Windows 7 SP1/Windows 8.1. On Windows 10, the Compatibility update is part of the cumulative updates and is not available as a separate package.
+The configuration script detected a version of the Compatibility update module that is older than the minimum required to correctly collect the data required by Upgrade Analytics solution. Use the latest version of the Compatibility update for Windows 7 SP1/Windows 8.1.
 <TR><TD>19<TD>The compatibility update failed with unexpected exception.<TD> The files in the deployment script are likely corrupted.  Download the latest script from the [download center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and try again.
 <TR><TD>20<TD>Error writing RequestAllAppraiserVersions registry key.<TD> This registry key is required for data collection to work correctly. Verify that the configuration script has access to this location.
 <TR><TD>21<TD>Function – SetRequestAllAppraiserVersions: Unexpected failure.<TD>This registry key is required for data collection to work correctly. Verify that the configuration script has access to this location.
