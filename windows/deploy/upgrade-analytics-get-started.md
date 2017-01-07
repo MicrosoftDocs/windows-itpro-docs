@@ -77,7 +77,7 @@ For Upgrade Analytics to receive and display upgrade readiness data from Microso
 
 To enable data sharing, whitelist the following endpoints. Note that you may need to get approval from your security group to do this.
 
-Note: The compatibility update KB runs under the computer’s system account. If you are using user authenticated proxies, read [this blog post]()to learn what you need to do to run it under the logged on user account.
+Note: The compatibility update KB runs under the computer’s system account. If you are using user authenticated proxies, read [this blog post](https://go.microsoft.com/fwlink/?linkid=838688)to learn what you need to do to run it under the logged on user account.
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
@@ -170,39 +170,40 @@ The deployment script displays the following exit codes to let you know if it wa
 <div style='font-size:10.0pt'>
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TH BGCOLOR="#a0e4fa">Exit code<TH BGCOLOR="#a0e4fa">Meaning
-<TR><TD>0<TD>Success
-<TR><TD>1<TD>Unexpected error occurred while executing the script
-<TR><TD>2<TD>Error when logging to console. $logMode = 0.
-<TR><TD>3<TD>Error when logging to console and file. $logMode = 1.
-<TR><TD>4<TD>Error when logging to file. $logMode = 2.
-<TR><TD>5<TD>Error when logging to console and file. $logMode = unknown.
-<TR><TD>6<TD>The commercialID parameter is set to unknown. Modify the script.
-<TR><TD>8<TD>Failure to create registry key path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection.
-<TR><TD>9<TD>Error when writing CommercialId to registry.
-<TR><TD>10<TD>Error when writing CommercialDataOptIn to registry.
-<TR><TD>11<TD>Function -SetupCommercialId: Unexpected failure.
-<TR><TD>12<TD>Can’t connect to Microsoft – Vortex. Check your network/proxy settings.
-<TR><TD>13<TD>Can’t connect to Microsoft – setting. Verify that the required endpoints are whitelisted correctly.
-<TR><TD>14<TD>Can’t connect to Microsoft – compatexchange. Verify that the required endpoints are whitelisted.
-<TR><TD>15<TD>Error connecting to Microsoft:Unexpected failure.
-<TR><TD>16<TD>Machine requires reboot.
-<TR><TD>17<TD>Function -CheckRebootRequired: Unexpected failure.
-<TR><TD>18<TD>Outdated compatibility update KB package. Update via Windows Update/WSUS.
-<TR><TD>19<TD>The compatibility update failed with unexpected exception.
-<TR><TD>20<TD>Error writing RequestAllAppraiserVersions registry key.
-<TR><TD>21<TD>Function – SetRequestAllAppraiserVersions: Unexpected failure.
-<TR><TD>22<TD>RunAppraiser failed with unexpected exception.
-<TR><TD>23<TD>Error finding system variable %WINDIR%.
-<TR><TD>24<TD>SetIEDataOptIn failed when writing IEDataOptIn to registry.
-<TR><TD>25<TD>SetIEDataOptIn failed with unexpected exception.
-<TR><TD>26<TD>The operating system is Server or LTSB SKU. The script does not support Server or LTSB SKUs.
-<TR><TD>27<TD>The script is not running under System account.  The Upgrade Analytics configuration script must be run as system.
-<TR><TD>28<TD>Could not create log file at the specified logPath.
-<TR><TD>29<TD> Connectivity check failed for proxy authentication. Install the cumulative updates on the machine and enable the authentication proxy settings :  [Win 7](https://support.microsoft.com/en-us/kb/3192403), [Win 8.1](https://support.microsoft.com/en-us/kb/3192404), [Win 10 Build 1511 (TH2)](https://support.microsoft.com/en-us/kb/3192441).
-For more information on authentication proxy support, see [this blog post] ().
-<TR><TD>30<TD>This means that the connectivity check failed, and the most likely cause is that the proxy setting is not enabled correctly. For instructions on setting the registry keys, see [Win 7](https://support.microsoft.com/en-us/kb/3192403), [Win 8.1](https://support.microsoft.com/en-us/kb/3192404), [Win 10 Build 1511 (TH2)](https://support.microsoft.com/en-us/kb/3192441). For more information on authentication proxy support, see [this blog post] ().
-<TR><TD>30<TD>There is more than one instance of the Upgrade Analytics data collector running at the same time on this machine. This could be because a scheduled task was running when the script was run, or a second instance of the script was launched before the first one was completed.
+<TR><TH BGCOLOR="#a0e4fa">Exit code<TH BGCOLOR="#a0e4fa">Meaning<TH BGCOLOR="#a0e4fa">Suggest fix
+<TR><TD>0<TD>Success<TD>
+<TR><TD>1<TD>Unexpected error occurred while executing the script<TD> The files in the deployment script are likely corrupted.  Download the latest script from the [download center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and try again.
+<TR><TD>2<TD>Error when logging to console. $logMode = 0.<TD> Try changing the $logMode value to **1** and try again.
+<TR><TD>3<TD>Error when logging to console and file. $logMode = 1.<TD>Verify that you have set the logPath parameter in RunConfig.bat, and that the configuration script has access to connect and write to this location.
+<TR><TD>4<TD>Error when logging to file. $logMode = 2.<TD>Verify that you have set the logPath parameter in RunConfig.bat, and that the configuration script has access to connect and write to this location.
+<TR><TD>5<TD>Error when logging to console and file. $logMode = unknown.<TD>Verify that you have set the logPath parameter in RunConfig.bat, and that the configuration script has access to connect and write to this location.
+<TR><TD>6<TD>The commercialID parameter is set to unknown. Modify the script.<TD>Set the value for CommercialID in runconfig.bat file.
+<TR><TD>8<TD>Failure to create registry key path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection. <TD> Verify that the configuration script has access to this location.
+<TR><TD>9<TD>Error when writing CommercialId to registry.<TD>Verify that the configuration script has access to this location.
+<TR><TD>10<TD>Error when writing CommercialDataOptIn to registry.<TD>Verify that the configuration script has access to this location.
+<TR><TD>11<TD>Function -SetupCommercialId: Unexpected failure.<TD>Verify that the configuration script has access to this location.
+<TR><TD>12<TD>Can’t connect to Microsoft – Vortex. Check your network/proxy settings.<TD>Verify that the required endpoints are whitelisted correctly.
+<TR><TD>13<TD>Can’t connect to Microsoft – setting. <TD>Verify that the required endpoints  are whitelisted correctly.
+<TR><TD>14<TD>Can’t connect to Microsoft – compatexchange.<TD> Verify that the required endpoints are whitelisted.
+<TR><TD>15<TD>Error connecting to Microsoft:Unexpected failure.<TD>
+<TR><TD>16<TD>Machine requires reboot.<TD> The reboot is required to complete the installation of the compatibility update and related KBs. Reboot the machine before running the Upgrade Analytics deployment script.
+<TR><TD>17<TD>Function -CheckRebootRequired: Unexpected failure.<TD>he reboot is required to complete the installation of the compatibility update and related KBs. Reboot the machine before running the Upgrade Analytics deployment script.
+<TR><TD>18<TD>Outdated compatibility update KB package. Update via Windows Update/WSUS.<TD>
+The configuration script detected a version of the Compatibility update module that is older than the minimum required to correctly collect the data required by Upgrade Analytics solution. Use the latest version of the Compatibility update for Windows 7 SP1/Windows 8.1. On Windows 10, the Compatibility update is part of the cumulative updates and is not available as a separate package.
+<TR><TD>19<TD>The compatibility update failed with unexpected exception.<TD> The files in the deployment script are likely corrupted.  Download the latest script from the [download center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and try again.
+<TR><TD>20<TD>Error writing RequestAllAppraiserVersions registry key.<TD> This registry key is required for data collection to work correctly. Verify that the configuration script has access to this location.
+<TR><TD>21<TD>Function – SetRequestAllAppraiserVersions: Unexpected failure.<TD>This registry key is required for data collection to work correctly. Verify that the configuration script has access to this location.
+<TR><TD>22<TD>RunAppraiser failed with unexpected exception.<TD> Check %windr%\System32 directory for a file called CompatTelRunner.exe.  If the file does not exist, reinstall the required compatibility updates which include this file, and check your organization group policy to make sure it does not remove this file.
+<TR><TD>23<TD>Error finding system variable %WINDIR%.<TD> Make sure that this environment variable is available on the machine.
+<TR><TD>24<TD>SetIEDataOptIn failed when writing IEDataOptIn to registry.<TD> Verify that the deployment script in running in a context that has access to the registry key.
+<TR><TD>25<TD>SetIEDataOptIn failed with unexpected exception.<TD> The files in the deployment script are likely corrupted.  Download the latest script from the [download center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and try again.
+<TR><TD>26<TD>The operating system is Server or LTSB SKU.<TD> The script does not support Server or LTSB SKUs.
+<TR><TD>27<TD>The script is not running under System account.<TD>The Upgrade Analytics configuration script must be run as system.  
+<TR><TD>28<TD>Could not create log file at the specified logPath.<TD> Make sure the deployment script has access to the location specified in the logPath parameter.
+<TR><TD>29<TD> Connectivity check failed for proxy authentication. <TD> Install the cumulative updates on the machine and enable the `DisableEnterpriseAuthProxy` authentication proxy setting. The `DisableEnterpriseAuthProxy` is enabled by default for Windows 7.  For Windows 8.1 machines, set the `DisableEnterpriseAuthProxy` to **0** (not disabled). For more information on authentication proxy support, see [this blog post](https://go.microsoft.com/fwlink/?linkid=838688).
+<TR><TD>30<TD>Connectivity check failed. Registry key property `DisableEnterpriseAuthProxy` is not enabled.<TD> The `DisableEnterpriseAuthProxy` is enabled by default for Windows 7.  For Windows 8.1 machines, set the `DisableEnterpriseAuthProxy` to **0** (not disabled).For more information on authentication proxy support, see [this blog post](https://go.microsoft.com/fwlink/?linkid=838688).
+<TR><TD>30<TD>There is more than one instance of the Upgrade Analytics data collector running at the same time on this machine. <TD>  Use the Windows Task Manager to check if CompatTelRunner.exe is running, and wait until it has completed to rerun the script.  
+**The Upgrade Analytics task is scheduled to run daily at 3 a.m.**
 </TABLE>
 
 </div>
