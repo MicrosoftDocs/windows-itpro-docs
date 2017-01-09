@@ -318,7 +318,7 @@ Description here.
         ```
         STATMSG: ID=2301 SEV=I LEV=M SOURCE="SMS Server" COMP="SMS_DISTRIBUTION_MANAGER" SYS=SRV1.CONTOSO.COM SITE=PS1 PID=2476 TID=4636 GMTDATE=Wed Sep 14 22:11:09.363 2016 ISTR0="Configuration Manager Client Upgrade Package" ISTR1="PS100003" ISTR2="" ISTR3="" ISTR4="" ISTR5="" ISTR6="" ISTR7="" ISTR8="" ISTR9="" NUMATTRS=1 AID0=400 AVAL0="PS100003"	SMS_DISTRIBUTION_MANAGER	9/14/2016 3:11:09 PM	4636 (0x121C)
         ```
-11. You can also review status by clicking the **Zero Touch WinPE x64** image, and then clicking **Content Status** under **Related Objects**, or by entering **\Monitoring\Overview\Distribution Status\Content Status** on the location bar in the console. Click **Zero Touch WinPE x64** under **Content Status** in the console tree and verify that a status of **Successfully distributed content** is displayed on the **Success** tab.
+11. You can also review status by clicking the **Zero Touch WinPE x64** image, and then clicking **Content Status** under **Related Objects** in the bottom right-hand corner of the console, or by entering **\Monitoring\Overview\Distribution Status\Content Status** on the location bar in the console. Doublt-click **Zero Touch WinPE x64** under **Content Status** in the console tree and verify that a status of **Successfully distributed content** is displayed on the **Success** tab.
 12. In the **Software Library** workspace, double-click **Zero Touch WinPE x64** and then click the **Data Source** tab.
 13. Select the **Deploy this boot image from the PXE-enabled distribution point** checkbox, and click **OK**.
 14. Review the distmgr.log file again for "**STATMSG: ID=2301**" and verify that there are three folders under **C:\RemoteInstall\SMSImages** with boot images. See the following example:
@@ -338,9 +338,7 @@ Description here.
 
 ## Create a Windows 10 reference image
 
-If you have already completed steps in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) then you have already created a Windows 10 reference image. Copy the reference image file (REFW10-X64-001.wim) from C:\MDTBuildLab\Captures\REFW10X64-001.wim to C:\Sources\OSD\OS\Windows 10 Enterprise x64\REFW10X64-001.wim.
-
-If you have not yet created a Windows 10 reference image, complete the following steps.
+If you have already completed steps in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) then you have already created a Windows 10 reference image. In this case, skip to the next procedure in this guide: [Add a Windows 10 operating system image](#add-a-windows-10-operating-system-image). If you have not yet created a Windows 10 reference image, complete the steps in this section.
 
 1. In [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md) the Windows 10 Enterprise .iso file was saved to the c:\VHD directory as **c:\VHD\w10-enterprise.iso**. The first step in creating a deployment share is to mount this file on SRV1.  To mount the Windows 10 Enterprise DVD on SRV1, open an elevated Windows PowerShell prompt on the Hyper-V host computer and type the following command:
 
@@ -502,7 +500,7 @@ If you have not yet created a Windows 10 reference image, complete the following
 
 2. In the Configuration Manager console, in the **Software Library** workspace, expand **Operating Systems**, right-click **Operating System Images**, and then click **Add Operating System Image**.
 
-3. On the Data Source page, under **Path:**, type **\\SRV1\Sources$\OSD\OS\Windows 10 Enterprise x64\REFW10X64-001.wim**, and click **Next**.
+3. On the Data Source page, under **Path:**, type or browse to **\\SRV1\Sources$\OSD\OS\Windows 10 Enterprise x64\REFW10X64-001.wim**, and click **Next**.
 
 4. On the General page, next to **Name:**, type **Windows 10 Enterprise x64**, click **Next** twice, and then click **Close**.
 
@@ -510,9 +508,13 @@ If you have not yet created a Windows 10 reference image, complete the following
 
 6. In the Distribute Content Wizard, click **Next**, click **Add**, click **Distribution Point**, add the **SRV1.CONTOSO.COM** distribution point, click **OK**, click **Next** twice and then click **Close**.
 
-7. Enter **\Monitoring\Overview\Distribution Status\Content Status** on the location bar, click **Windows 10 Enterprise x64**, and monitor the status of content distribution until it is successful and no longer in progress. Refresh the view with the F5 key or by right-clicking **Windows 10 Enterprise x64** and clicking **Refresh**.
+7. Enter **\Monitoring\Overview\Distribution Status\Content Status** on the location bar, click **Windows 10 Enterprise x64**, and monitor the status of content distribution until it is successful and no longer in progress. Refresh the view with the F5 key or by right-clicking **Windows 10 Enterprise x64** and clicking **Refresh**. Processing of the image on the site server can take several minutes.
+
+    >If content distribution is not successful, verify that sufficient disk space is available.
 
 ## Create a task sequence
+
+>Complete this section slowly. There are a large number of similar settings from which to choose.
 
 1. In the Configuration Manager console, in the **Software Library** workspace expand **Operating Systems**, right-click **Task Sequences**, and then click **Create MDT Task Sequence**.
 
@@ -546,13 +548,13 @@ If you have not yet created a Windows 10 reference image, complete the following
 
 9. On the OS Image page, browse and select the **Windows 10 Enterprise x64** package, and then click **Next**.
 
-10. On the Deployment Method page, accept the default settings and click **Next**.
+10. On the Deployment Method page, accept the default settings for **Zero Touch Installation** and click **Next**.
 
 11. On the Client Package page, browse and select the **Microsoft Corporation Configuration Manager Client package** and then click **Next**.
 
 12. On the USMT Package page, browse and select the **Microsoft Corporation User State Migration Tool for Windows 8 10.0.14393.0** package, and then click **Next**.
 
-13. On the Settings Package page, select **Create a new settings package**, and under **Package source folder to be created (UNC Path):**, type \\SRV1\Sources$\OSD\Settings\Windows 10 x64 Settings, and then click **Next**.
+13. On the Settings Package page, select **Create a new settings package**, and under **Package source folder to be created (UNC Path):**, type **\\SRV1\Sources$\OSD\Settings\Windows 10 x64 Settings**, and then click **Next**.
 
 14. On the Settings Details page, next to **Name:**, type **Windows 10 x64 Settings**, and click **Next**.
 
@@ -562,13 +564,13 @@ If you have not yet created a Windows 10 reference image, complete the following
 
 ## Edit the task sequence
 
-1. In the Configuration Manager console, in the Software Library workspace, click Task Sequences, right-click Windows 10 Enterprise x64, and then click Edit.
+1. In the Configuration Manager console, in the **Software Library** workspace, click **Task Sequences**, right-click **Windows 10 Enterprise x64**, and then click **Edit**.
 
-2. Scroll down to the Install group and click Set Variable for Drive Letter.
+2. Scroll down to the **Install** group and click the **Set Variable for Drive Letter** action.
 
-3. Change the Value under OSDPreserveDriveLetter from False to True, and click Apply.
+3. Change the Value under **OSDPreserveDriveLetter** from **False** to **True**, and then click **Apply**.
 
-4. In the **State Restore** group, click **Set Status 5**, click **Add**, point to **User State**, and click **Request State Store**. This adds a new action immediately after **Set Status 5**.
+4. In the **State Restore** group, click the **Set Status 5** action, click **Add** in the upper left corner, point to **User State**, and click **Request State Store**. This adds a new action immediately after **Set Status 5**.
 
 5. Configure the **Request State Store** action that was just added with the following settings:<BR>
     - Request state storage location to: **Restore state from another computer**<BR>
@@ -595,6 +597,8 @@ If you have not yet created a Windows 10 reference image, complete the following
 
 ## Finalize the operating system configuration
 
+>If you completed all procedures in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) then the MDT deployment share is already present on SRV1.  In this case, skip the first four steps below and begin with step 5 to edit CustomSettings.ini.
+
 1. In the MDT deployment workbench on SRV1, right-click **Deployment Shares** and then click **New Deployment Share**.
 
 2. Use the following settings for the New Deployment Share Wizard:
@@ -615,7 +619,7 @@ If you have not yet created a Windows 10 reference image, complete the following
     ```
     notepad "C:\Sources\OSD\Settings\Windows 10 x64 Settings\CustomSettings.ini"
     ```
-6. Replace the contents of the file with the following text:
+6. Replace the contents of the file with the following text, and then save the file:
 
     ```
     [Settings]
@@ -625,7 +629,6 @@ If you have not yet created a Windows 10 reference image, complete the following
     [Default]
     DoCapture=NO
     ComputerBackupLocation=NONE
-    MachineObjectOU=ou=Workstations,ou=Computers,ou=Contoso,dc=contoso,dc=com
     OSDMigrateMode=Advanced
     OSDMigrateAdditionalCaptureOptions=/ue:*\* /ui:CONTOSO\*
     OSDMigrateConfigFiles=Miguser.xml,Migapp.xml
@@ -633,24 +636,24 @@ If you have not yet created a Windows 10 reference image, complete the following
     EventService=http://SRV1:9800
     ApplyGPOPack=NO
     ```
-7. In the Software Library workspace, expand **Application Management**, click **Packages**, right-click **Windows 10 x64 Settings**, and then click **Update Distribution Points**. Click **OK** in the popup that appears.
+7. Return to the Configuration Manager console, and in the Software Library workspace, expand **Application Management**, click **Packages**, right-click **Windows 10 x64 Settings**, and then click **Update Distribution Points**. Click **OK** in the popup that appears.
 
 8. In the Software Library workspace, expand **Operating Systems**, click **Task Sequences**, right-click **Windows 10 Enterprise x64**, and then click **Distribute Content**.
 
-9. In the Distribute Content Wizard, click **Next**, click **Add**, click **Distribution Point**, add the **SRV1.CONTOSO.COM** distribution point, click **OK**, click **Next** twice and then click **Close**.
+9. In the Distribute Content Wizard, click **Next** twice, click **Add**, click **Distribution Point**, select the **SRV1.CONTOSO.COM** distribution point, click **OK**, click **Next** twice and then click **Close**.
 
-10. Enter **\Monitoring\Overview\Distribution Status\Content Status** on the location bar, click **Windows 10 Enterprise x64**, and monitor the status of content distribution until it is successful and no longer in progress. Refresh the view with the F5 key or by right-clicking **Windows 10 Enterprise x64** and clicking **Refresh**.
+10. Enter **\Monitoring\Overview\Distribution Status\Content Status\Windows 10 Enterprise x64** on the location bar, double-click **Windows 10 Enterprise x64**, and monitor the status of content distribution until it is successful and no longer in progress. Refresh the view with the F5 key or by right-clicking **Windows 10 Enterprise x64** and clicking **Refresh**.
 
 ## Create a deployment for the task sequence
 
 1. In the Software Library workspace, expand **Operating Systems**, click **Task Sequences**, right-click **Windows 10 Enterprise x64**, and then click **Deploy**. 
 
-2. On the General page, next to **Collection**, click **Browse** and select the **All Unknown Computers** collection, then click **Next**.
+2. On the General page, next to **Collection**, click **Browse**, select the **All Unknown Computers** collection, click **OK**, and then click **Next**.
 
 3. On the Deployment Settings page, use the following settings:<BR>
-    - Purpose: Available<BR>
-    - Make available to the following: Only media and PXE<BR>
-    - Click Next.<BR>
+    - Purpose: **Available**<BR>
+    - Make available to the following: **Only media and PXE**<BR>
+    - Click **Next**.<BR>
 4. Click **Next** five times to accept defaults on the Scheduling, User Experience, Alerts, and Distribution Points pages.
 
 5. Click **Close**.
@@ -660,11 +663,16 @@ If you have not yet created a Windows 10 reference image, complete the following
 1. Type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```
-    New-VM –Name "PC3" –NewVHDPath "c:\vhd\pc3.vhdx" -NewVHDSizeBytes 40GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
-    Set-VMMemory -VMName "PC3" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes 2048MB -Buffer 20
-    Start-VM PC3
-    vmconnect localhost PC3
+    New-VM –Name "PC4" –NewVHDPath "c:\vhd\pc4.vhdx" -NewVHDSizeBytes 40GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
+    Set-VMMemory -VMName "PC4" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes 2048MB -Buffer 20
+    Start-VM PC4
+    vmconnect localhost PC4
     ```
+
+Problems here, first I got UEFI compatible not found
+I tried stopping WDSServer and this caused nothing to be found
+Now I'm having difficulty starting WDSServer again...
+
 2. Press ENTER when prompted to start the network boot service.
 
 3. In the Task Sequence Wizard, provide the password: pass@word1, and then click Next.
