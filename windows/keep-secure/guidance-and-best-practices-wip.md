@@ -29,4 +29,3 @@ This section includes info about the enlightened Microsoft apps, including how t
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
->>>>>>> refs/remotes/origin/master
