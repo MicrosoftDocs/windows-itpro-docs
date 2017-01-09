@@ -170,7 +170,7 @@ The deployment script displays the following exit codes to let you know if it wa
 <div style='font-size:10.0pt'>
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TH BGCOLOR="#a0e4fa">Exit code<TH BGCOLOR="#a0e4fa">Meaning<TH BGCOLOR="#a0e4fa">Suggest fix
+<TR><TH BGCOLOR="#a0e4fa">Exit code<TH BGCOLOR="#a0e4fa">Meaning<TH BGCOLOR="#a0e4fa">Suggested fix
 <TR><TD>0<TD>Success<TD>
 <TR><TD>1<TD>Unexpected error occurred while executing the script<TD> The files in the deployment script are likely corrupted.  Download the latest script from the [download center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and try again.
 <TR><TD>2<TD>Error when logging to console. $logMode = 0.<TD> Try changing the $logMode value to **1** and try again.
