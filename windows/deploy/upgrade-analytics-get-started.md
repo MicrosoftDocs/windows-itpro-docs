@@ -1,4 +1,4 @@
-﻿---
+---
 title: Get started with Upgrade Analytics (Windows 10)
 description: Explains how to get started with Upgrade Analytics.
 ms.prod: w10
@@ -53,7 +53,7 @@ If you are not using OMS:
 
 After you’ve signed in to Operations Management Suite and added the Upgrade Analytics solution to your workspace, complete the following tasks to establish communication and enable data sharing between user computers, Microsoft secure data centers, and Upgrade Analytics.
 
-## Generate your commercial ID key 
+## Generate your commercial ID key
 
 Microsoft uses a unique commercial ID to map information from user computers to your OMS workspace. Generate your commercial ID key in OMS and then deploy it to user computers.
 
@@ -77,14 +77,14 @@ For Upgrade Analytics to receive and display upgrade readiness data from Microso
 
 To enable data sharing, whitelist the following endpoints. Note that you may need to get approval from your security group to do this.
 
-Note: The compatibility update KB runs under the computer’s system account and does not support user authenticated proxies.
+Note: The compatibility update KB runs under the computer’s system account. If you are using user authenticated proxies, read [this blog post](https://go.microsoft.com/fwlink/?linkid=838688)to learn what you need to do to run it under the logged on user account.
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-| `https://v10.vortex-win.data.microsoft.com/collect/v1` <br>`https://vortex-win.data.microsoft.com/health/keepalive`                                                                                                                             | Connected User Experience and Telemetry component endpoint. User computers send data to Microsoft through this endpoint.             |
-| `https://settings-win.data.microsoft.com/settings`                                                                                                                                 | Enables the compatibility update KB to send data to Microsoft.                                                                       |
-| `https://go.microsoft.com/fwlink/?LinkID=544713`<br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc/extended`                                        | This service provides driver information about whether there will be a driver available post-upgrade for the hardware on the system. |
-| `https://vortex.data.microsoft.com/health/keepalive` <br>`https://settings.data.microsoft.com/qos` <br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc` | These endpoints are used to validate that user computers are sharing data with Microsoft.                                            |
+| `https://v10.vortex-win.data.microsoft.com/collect/v1`  <br><br>                       `https://Vortex-win.data.microsoft.com/health/keepalive`                                                                                                      | Connected User Experience and Telemetry component endpoint. User computers send data to Microsoft through this endpoint.             |
+| `https://settings.data.microsoft.com/qos`                                                                                                                                  | Enables the compatibility update KB to send data to Microsoft.                                                                       |
+| `https://go.microsoft.com/fwlink/?LinkID=544713`<br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc`                                         | This service provides driver information about whether there will be a driver available post-upgrade for the hardware on the system. |
+
 
 ## Deploy the compatibility update and related KBs
 
@@ -137,7 +137,7 @@ The Upgrade Analytics deployment script does the following:
 
 To run the Upgrade Analytics deployment script:
 
-1.  Download the [Upgrade Analytics deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract UpgradeAnalytics.zip. Inside, there are two folders: Pilot and Deployment. The Pilot folder contains advanced logging that can help troubleshoot issues and is inteded to be run from an elevated command prompt. The Deployment folder offers a lightweight script intended for broad deployment through ConfigMgr or other software deployment system. We recommend manually running the Pilot version of the script on 5-10 machines to verify that everything is configured correctly.  Once you have confirmed that data is flowing successfully, proceed to run the Deployment version throughout your organization.
+1.  Download the [Upgrade Analytics deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract UpgradeAnalytics.zip. Inside, there are two folders: Pilot and Deployment. The Pilot folder contains advanced logging that can help troubleshoot issues and is intended to be run from an elevated command prompt. The Deployment folder offers a lightweight script intended for broad deployment through ConfigMgr or other software deployment system. We recommend manually running the Pilot version of the script on 5-10 machines to verify that everything is configured correctly.  Once you have confirmed that data is flowing successfully, proceed to run the Deployment version throughout your organization.
 
 2.  Edit the following parameters in RunConfig.bat:
 
@@ -165,41 +165,45 @@ To run the Upgrade Analytics deployment script:
 
 4.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script.  If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
 
-The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered. 
+The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered.
 
 <div style='font-size:10.0pt'>
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TH BGCOLOR="#a0e4fa">Exit code<TH BGCOLOR="#a0e4fa">Meaning
-<TR><TD>0<TD>Success
-<TR><TD>1<TD>Unexpected error occurred while executing the script
-<TR><TD>2<TD>Error when logging to console. $logMode = 0.
-<TR><TD>3<TD>Error when logging to console and file. $logMode = 1.
-<TR><TD>4<TD>Error when logging to file. $logMode = 2.
-<TR><TD>5<TD>Error when logging to console and file. $logMode = unknown.
-<TR><TD>6<TD>The commercialID parameter is set to unknown. Modify the script.
-<TR><TD>7<TD>Function -CheckCommercialId: Unexpected failure.
-<TR><TD>8<TD>Failure to create registry key path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection.
-<TR><TD>9<TD>Error when writing CommercialId to registry.
-<TR><TD>10<TD>Error when writing CommercialDataOptIn to registry.
-<TR><TD>11<TD>Function -SetupCommercialId: Unexpected failure.
-<TR><TD>12<TD>Can’t connect to Microsoft – Vortex. Check your network/proxy settings.
-<TR><TD>13<TD>Can’t connect to Microsoft – setting. Check your network/proxy settings.
-<TR><TD>14<TD>Can’t connect to Microsoft – compatexchange. Check your network/proxy settings.
-<TR><TD>15<TD>Error connecting to Microsoft. Check your network/proxy settings.
-<TR><TD>16<TD>Machine requires reboot.
-<TR><TD>17<TD>Function -CheckRebootRequired: Unexpected failure.
-<TR><TD>18<TD>Outdated compatibility update KB package. Update via Windows Update/WSUS.
-<TR><TD>19<TD>This machine doesn’t have the proper KBs installed. Make sure you have recent compatibility update KB downloaded.
-<TR><TD>20<TD>Error writing RequestAllAppraiserVersions registry key.
-<TR><TD>21<TD>Function – SetRequestAllAppraiserVersions: Unexpected failure.
-<TR><TD>22<TD>RunAppraiser failed with unexpected exception.
-<TR><TD>23<TD>Error finding system variable %WINDIR%.
-<TR><TD>24<TD>SetIEDataOptIn failed when writing IEDataOptIn to registry.
-<TR><TD>25<TD>SetIEDataOptIn failed with unexpected exception.
-<TR><TD>26<TD>The operating system is Server or LTSB SKU. The script does not support Server or LTSB SKUs.
-<TR><TD>27<TD>The script is not running under System account.  The Upgrade Analytics configuration script must be run as system.
-<TR><TD>28<TD>Could not create log file at the specified logPath.
+<TR><TH BGCOLOR="#a0e4fa">Exit code<TH BGCOLOR="#a0e4fa">Meaning<TH BGCOLOR="#a0e4fa">Suggest fix
+<TR><TD>0<TD>Success<TD>
+<TR><TD>1<TD>Unexpected error occurred while executing the script<TD> The files in the deployment script are likely corrupted.  Download the latest script from the [download center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and try again.
+<TR><TD>2<TD>Error when logging to console. $logMode = 0.<TD> Try changing the $logMode value to **1** and try again.
+<TR><TD>3<TD>Error when logging to console and file. $logMode = 1.<TD>Verify that you have set the logPath parameter in RunConfig.bat, and that the configuration script has access to connect and write to this location.
+<TR><TD>4<TD>Error when logging to file. $logMode = 2.<TD>Verify that you have set the logPath parameter in RunConfig.bat, and that the configuration script has access to connect and write to this location.
+<TR><TD>5<TD>Error when logging to console and file. $logMode = unknown.<TD>Verify that you have set the logPath parameter in RunConfig.bat, and that the configuration script has access to connect and write to this location.
+<TR><TD>6<TD>The commercialID parameter is set to unknown. Modify the script.<TD>Set the value for CommercialID in runconfig.bat file.
+<TR><TD>8<TD>Failure to create registry key path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection. <TD> Verify that the configuration script has access to this location.
+<TR><TD>9<TD>Error when writing CommercialId to registry.<TD>Verify that the configuration script has access to this location.
+<TR><TD>10<TD>Error when writing CommercialDataOptIn to registry.<TD>Verify that the configuration script has access to this location.
+<TR><TD>11<TD>Function -SetupCommercialId: Unexpected failure.<TD>Verify that the configuration script has access to this location.
+<TR><TD>12<TD>Can’t connect to Microsoft – Vortex. Check your network/proxy settings.<TD>Verify that the required endpoints are whitelisted correctly.
+<TR><TD>13<TD>Can’t connect to Microsoft – setting. <TD>Verify that the required endpoints  are whitelisted correctly.
+<TR><TD>14<TD>Can’t connect to Microsoft – compatexchange.<TD> Verify that the required endpoints are whitelisted.
+<TR><TD>15<TD>Error connecting to Microsoft:Unexpected failure.<TD>
+<TR><TD>16<TD>Machine requires reboot.<TD> The reboot is required to complete the installation of the compatibility update and related KBs. Reboot the machine before running the Upgrade Analytics deployment script.
+<TR><TD>17<TD>Function -CheckRebootRequired: Unexpected failure.<TD>he reboot is required to complete the installation of the compatibility update and related KBs. Reboot the machine before running the Upgrade Analytics deployment script.
+<TR><TD>18<TD>Outdated compatibility update KB package. Update via Windows Update/WSUS.<TD>
+The configuration script detected a version of the Compatibility update module that is older than the minimum required to correctly collect the data required by Upgrade Analytics solution. Use the latest version of the Compatibility update for Windows 7 SP1/Windows 8.1.
+<TR><TD>19<TD>The compatibility update failed with unexpected exception.<TD> The files in the deployment script are likely corrupted.  Download the latest script from the [download center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and try again.
+<TR><TD>20<TD>Error writing RequestAllAppraiserVersions registry key.<TD> This registry key is required for data collection to work correctly. Verify that the configuration script has access to this location.
+<TR><TD>21<TD>Function – SetRequestAllAppraiserVersions: Unexpected failure.<TD>This registry key is required for data collection to work correctly. Verify that the configuration script has access to this location.
+<TR><TD>22<TD>RunAppraiser failed with unexpected exception.<TD> Check %windr%\System32 directory for a file called CompatTelRunner.exe.  If the file does not exist, reinstall the required compatibility updates which include this file, and check your organization group policy to make sure it does not remove this file.
+<TR><TD>23<TD>Error finding system variable %WINDIR%.<TD> Make sure that this environment variable is available on the machine.
+<TR><TD>24<TD>SetIEDataOptIn failed when writing IEDataOptIn to registry.<TD> Verify that the deployment script in running in a context that has access to the registry key.
+<TR><TD>25<TD>SetIEDataOptIn failed with unexpected exception.<TD> The files in the deployment script are likely corrupted.  Download the latest script from the [download center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and try again.
+<TR><TD>26<TD>The operating system is Server or LTSB SKU.<TD> The script does not support Server or LTSB SKUs.
+<TR><TD>27<TD>The script is not running under System account.<TD>The Upgrade Analytics configuration script must be run as system.  
+<TR><TD>28<TD>Could not create log file at the specified logPath.<TD> Make sure the deployment script has access to the location specified in the logPath parameter.
+<TR><TD>29<TD> Connectivity check failed for proxy authentication. <TD> Install the cumulative updates on the machine and enable the `DisableEnterpriseAuthProxy` authentication proxy setting. The `DisableEnterpriseAuthProxy` is enabled by default for Windows 7.  For Windows 8.1 machines, set the `DisableEnterpriseAuthProxy` to **0** (not disabled). For more information on authentication proxy support, see [this blog post](https://go.microsoft.com/fwlink/?linkid=838688).
+<TR><TD>30<TD>Connectivity check failed. Registry key property `DisableEnterpriseAuthProxy` is not enabled.<TD> The `DisableEnterpriseAuthProxy` is enabled by default for Windows 7.  For Windows 8.1 machines, set the `DisableEnterpriseAuthProxy` to **0** (not disabled).For more information on authentication proxy support, see [this blog post](https://go.microsoft.com/fwlink/?linkid=838688).
+<TR><TD>30<TD>There is more than one instance of the Upgrade Analytics data collector running at the same time on this machine. <TD>  Use the Windows Task Manager to check if CompatTelRunner.exe is running, and wait until it has completed to rerun the script.  
+**The Upgrade Analytics task is scheduled to run daily at 3 a.m.**
 </TABLE>
 
 </div>
@@ -207,4 +211,3 @@ The deployment script displays the following exit codes to let you know if it wa
 ## Seeing data from computers in Upgrade Analytics
 
 After data is sent from computers to Microsoft, it generally takes 48 hours for the data to populate in Upgrade Analytics. The compatibility update KB takes several minutes to run. If the KB does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Upgrade Analytics. For this reason, you can expect most your computers to be populated in OMS in about 1-2 weeks after deploying the KB and configuration to user computers.
-
