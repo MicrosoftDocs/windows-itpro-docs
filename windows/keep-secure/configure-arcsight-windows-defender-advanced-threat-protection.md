@@ -25,11 +25,16 @@ You'll need to configure HP ArcSight so that it can consume Windows Defender ATP
 
 ## Before you begin
 
-- Get the following information from your Azure Active Directory (AAD) application by selecting the **View Endpoint** on the application configuration page:
+1. Get the following information from your Azure Active Directory (AAD) application by selecting the **View Endpoint** on the application configuration page:
     - OAuth 2 Token refresh URL
     - OAuth 2 Client ID
     - OAuth 2 Client secret
-- Create your OAUth 2 Client properties file or get it from your Windows Defender ATP contact. For more information, see the ArcSight FlexConnector Developer's guide.
+2. Download the [wdatp-connector.properties](WDATP-connector.properties) file and update the values according to the following:
+
+  - client_ID value: OAuth 2 Client ID
+  - client_secret value: OAuth 2 Client secret
+  - auth_url value: Append the following to the value you obtained from the AAD app: ```?resource=https%3A%2F%2FWDATPAlertExport.Seville.onmicrosoft.com ```
+  - redirect_uri value: Keep default value
 
   > [!NOTE]
   > **For the authorization URL**: Append the following to the value you got from the AAD app: ```?resource=https%3A%2F%2FWDATPAlertExport.Seville.onmicrosoft.com``` <br>
