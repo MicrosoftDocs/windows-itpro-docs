@@ -79,3 +79,6 @@ You can add any or all of the enlightened Microsoft apps to your allowed apps li
 |Notepad |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** notepad.exe<br>**App Type:** Desktop app |
 |Microsoft Paint |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** mspaint.exe<br>**App Type:** Desktop app |
 |Microsoft Remote Desktop |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** mstsc.exe<br>**App Type:** Desktop app |
+
+>[!NOTE]
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

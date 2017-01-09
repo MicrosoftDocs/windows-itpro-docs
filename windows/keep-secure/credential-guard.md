@@ -123,7 +123,7 @@ To enforce processing of the group policy, you can run ```gpupdate /force```.
 
 If you don't use Group Policy, you can enable Credential Guard by using the registry. Credential Guard uses virtualization-based security features which have to be enabled first on some operating systems.
 
-##### Add the virtualization-based security features
+#### Add the virtualization-based security features
 
 Starting with Windows 10, version 1607 and Windows Server 2016, enabling Windows features to use virtualization-based security is not necessary and this step can be skipped.
 
@@ -156,7 +156,7 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 > [!NOTE]  
 > You can also add these features to an online image by using either DISM or Configuration Manager.
 
-##### Enable virtualization-based security and Credential Guard
+#### Enable virtualization-based security and Credential Guard
 
 1.  Open Registry Editor.
 2.  Enable virtualization-based security:
@@ -195,10 +195,9 @@ Requirements for running Credential Guard in Hyper-V virtual machines
 - The Hyper-V host must have an IOMMU, and run at least Windows Server 2016 or Windows 10 version 1607.
 - The Hyper-V virtual machine must be Generation 2, have an enabled virtual TPM, and running at least Windows Server 2016 or Windows 10. 
 
-
 ### Remove Credential Guard
 
-If you have to remove Credential Guard on a PC, you need to do the following:
+If you have to remove Credential Guard on a PC, you can use the following set of procedures, or you can [use the Device Guard and Credential Guard hardware readiness tool](#turn-off-with-hardware-readiness-tool).
 
 1.  If you used Group Policy, disable the Group Policy setting that you used to enable Credential Guard (**Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Device Guard** -&gt; **Turn on Virtualization Based Security**).
 2.  Delete the following registry settings:
@@ -242,7 +241,8 @@ If you have to remove Credential Guard on a PC, you need to do the following:
 
 For more info on virtualization-based security and Device Guard, see [Device Guard deployment guide](device-guard-deployment-guide.md).
 
-**Turn off Credential Guard by using the Device Guard and Credential Guard hardware readiness tool**
+<span id="turn-off-with-hardware-readiness-tool" />
+#### Turn off Credential Guard by using the Device Guard and Credential Guard hardware readiness tool
 
 You can also disable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 

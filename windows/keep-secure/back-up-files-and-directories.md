@@ -1,5 +1,5 @@
 ---
-title: Back up files and directories (Windows 10)
+title: Back up files and directories - security policy setting (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Back up files and directories security policy setting.
 ms.assetid: 1cd6bdd5-1501-41f4-98b9-acf29ac173ae
 ms.prod: w10
@@ -9,7 +9,7 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Back up files and directories
+# Back up files and directories - security policy setting
 
 **Applies to**
 -   Windows 10

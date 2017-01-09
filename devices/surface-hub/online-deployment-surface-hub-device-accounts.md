@@ -103,7 +103,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     -   You'll need to have Lync Online (Plan 2) or higher in your O365 plan. The plan needs to support conferencing capability.
     -   If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Lync Online (Plan 3).
     -   Your tenant users must have Exchange mailboxes.
-    -   Your Surface Hub account does require a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
+    -   Your device account needs a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
 
     <!-- -->
 
@@ -139,7 +139,8 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     -   In the **Assign licenses** section, you need to select Skype for Business (Plan 2) or Skype for Business (Plan 3), depending on your licensing and what you've decided in terms of needing Enterprise Voice. You'll have to use a Plan 3 license if you want to use Enterprise Voice on your Surface Hub.
     -   Click **Save** and you're done.
 
->**Note**: It's also possible to use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
+>[!NOTE]
+>It's also possible to use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
 For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.
 

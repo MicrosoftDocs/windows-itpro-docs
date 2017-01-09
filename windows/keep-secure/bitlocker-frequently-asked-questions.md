@@ -47,6 +47,8 @@ Yes, BitLocker supports multifactor authentication for operating system drives. 
 
 ### <a href="" id="bkmk-hsrequirements"></a>What are the BitLocker hardware and software requirements?
 
+For requirements, see [System requirements](https://technet.microsoft.com/itpro/windows/keep-secure/bitlocker-overview#system-requirements).
+
 > **Note:**  Dynamic disks are not supported by BitLocker. Dynamic data volumes will not be displayed in the Control Panel. Although the operating system volume will always be displayed in the Control Panel, regardless of whether it is a Dynamic disk, if it is a dynamic disk it is cannot be protected by BitLocker.
  
 ### <a href="" id="bkmk-partitions"></a>Why are two partitions required? Why does the system drive have to be so large?
@@ -198,9 +200,9 @@ Any number of internal, fixed data drives can be protected with BitLocker. On so
 
 ## <a href="" id="bkmk-keymanagement"></a>Key management
 
-### <a href="" id="bkmk-key"></a>What is the difference between a TPM owner password, recovery password, recovery key, password, PIN, enhanced PIN, and startup key?
+### <a href="" id="bkmk-key"></a>What is the difference between a recovery password, recovery key, PIN, enhanced PIN, and startup key?
 
-There are multiple keys that can be generated and used by BitLocker. Some keys are required and some are optional protectors you can choose to use depending on the level of security you require.
+For tables that list and describe elements such as a recovery password, recovery key, and PIN, see [BitLocker key protectors](prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-key-protectors) and [BitLocker authentication methods](prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-authentication-methods). 
 
 ### <a href="" id="bkmk-recoverypass"></a>How can the recovery password and recovery key be stored?
 
