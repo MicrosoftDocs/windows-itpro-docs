@@ -871,4 +871,5 @@
 ### [Microsoft Passport guide](microsoft-passport-guide.md)
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 ### [Windows 10 security overview](windows-10-security-guide.md)
+### [Windows 10 Credential Theft Mitigation Guide Abstract](windows-credential-theft-mitigation-guide-abstract.md)
 ## [Change history for Keep Windows 10 secure](change-history-for-keep-windows-10-secure.md)
