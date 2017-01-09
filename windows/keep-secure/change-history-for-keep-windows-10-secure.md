@@ -15,8 +15,8 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 ## January 2017
 |New or changed topic |Description |
 |---------------------|------------|
-|[Recommended Office 365 Mail and Calendar apps configuration with Windows Information Protection (WIP)](recommended-office-365-configurations-for-wip.md) |New |
 |[Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](recommended-network-definitions-for-wip.md) |New |
+|[Using Outlook Web Access with Windows Information Protection (WIP)](using-owa-with-wip.md) |New |
 
 ## December 2016
 |New or changed topic |Description |
