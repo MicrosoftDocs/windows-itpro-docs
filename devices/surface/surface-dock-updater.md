@@ -20,7 +20,8 @@ The [Microsoft Surface Dock Updater](https://www.microsoft.com/download/details.
 
 When you run the Microsoft Surface Dock Updater installer you will be prompted to accept an End User License Agreement (EULA).
 
->**Note:**&nbsp;&nbsp;Updating Surface Dock firmware requires connectivity to the Surface Dock, available only on Surface Pro 3, Surface Pro 4, and Surface Book devices. A Surface Pro 3, Surface Pro 4, or Surface Book is required to successfully install Microsoft Surface Dock Updater.
+>[!NOTE]
+>Updating Surface Dock firmware requires connectivity to the Surface Dock, available only on Surface Pro 3, Surface Pro 4, and Surface Book devices. A Surface Pro 3, Surface Pro 4, or Surface Book is required to successfully install Microsoft Surface Dock Updater.
 
 ## Update a Surface Dock with Microsoft Surface Dock Updater
 
@@ -75,7 +76,8 @@ To update a Surface Dock with Microsoft Surface Dock Updater, follow these steps
 
 9.  If you want to update multiple Surface Docks in one sitting, you can click the **Update another Surface Dock** button to begin the process on the next Surface Dock.
 
-    >**Note:**&nbsp;&nbsp;The LED in the Ethernet port of the dock will blink while the update is in progress. Please wait until the LED stops blinking before you unplug your Surface Dock from power.
+    >[!NOTE]
+    >The LED in the Ethernet port of the dock will blink while the update is in progress. Please wait until the LED stops blinking before you unplug your Surface Dock from power.
 
      
 
