@@ -673,6 +673,11 @@ Problems here, first I got UEFI compatible not found
 I tried stopping WDSServer and this caused nothing to be found
 Now I'm having difficulty starting WDSServer again...
 
+If I change to gen 1, it is loading PS100006.wim but I must press F12
+Seems to be the correct image
+And it popped up with contoso and asked me for the password
+Ugh.. I got program files for PS100001 cannot be located on a distribution point again.
+
 2. Press ENTER when prompted to start the network boot service.
 
 3. In the Task Sequence Wizard, provide the password: pass@word1, and then click Next.
