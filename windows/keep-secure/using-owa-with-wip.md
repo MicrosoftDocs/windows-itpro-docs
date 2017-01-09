@@ -1,5 +1,5 @@
 ---
-title: Using Outlook Web Access with Windows Information Protection (WIP) (Windows 10)
+title: Recommended Office 365 Mail and Calendar apps configuration with Windows Information Protection (WIP) (Windows 10)
 description: Recommendations about how to configure Office 365 Mail and Calendar apps, including Outlook Web Access (OWA) and the various client apps, with Windows Information Protection (WIP).
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP and Office 2016 configuration, WIP and Office 365 Mail app
 ms.prod: w10
@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 ---
 
-# Using Outlook Web Access with Windows Information Protection (WIP)
+# Recommended Office 365 Mail and Calendar apps configuration with Windows Information Protection (WIP)
 **Applies to:**
 
 -   Windows 10, version 1607
