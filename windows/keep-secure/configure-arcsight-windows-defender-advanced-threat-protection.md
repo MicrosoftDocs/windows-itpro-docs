@@ -30,7 +30,7 @@ You'll need to configure HP ArcSight so that it can consume Windows Defender ATP
     - OAuth 2 Client ID
     - OAuth 2 Client secret
 
-2. Download the [wdatp-connector.properties](WDATP-connector.properties) file and update the values according to the following:
+2. Download the wdatp-connector.properties file and update the values according to the following:
 (JOEY: UPLOAD FILE IN DOWNLOAD CENTER - PUT EMPTY PROPERTIES FILE. PUT WITH THE FOLLOWING VALUES.)
 
   - **client_ID**: OAuth 2 Client ID
@@ -41,7 +41,7 @@ You'll need to configure HP ArcSight so that it can consume Windows Defender ATP
   - **redirect_uri**: ```https://localhost:44300/wdatpconnector```
   - **scope**: Can be left blank but must be present
 
-3. Download the [wdatp-connector.json.properties](wdatp-connector.json.properties) file. This file is used to parse the information from Windows Defender ATP to HP ArcSight consumable format.
+3. Download the wdatp-connector.json.properties file. This file is used to parse the information from Windows Defender ATP to HP ArcSight consumable format.
 (JOEY: UPLOAD FILE IN DOWNLOAD CENTER)
 
 ## Install and configure HP ArcSight SmartConnector
