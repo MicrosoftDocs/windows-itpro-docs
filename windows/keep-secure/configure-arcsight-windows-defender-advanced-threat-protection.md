@@ -29,13 +29,20 @@ You'll need to configure HP ArcSight so that it can consume Windows Defender ATP
     - OAuth 2 Token refresh URL
     - OAuth 2 Client ID
     - OAuth 2 Client secret
+
 2. Download the [wdatp-connector.properties](WDATP-connector.properties) file and update the values according to the following:
+(JOEY: UPLOAD FILE IN DOWNLOAD CENTER - PUT EMPTY PROPERTIES FILE. PUT WITH THE FOLLOWING VALUES.)
 
   - **client_ID**: OAuth 2 Client ID
   - **client_secret**: OAuth 2 Client secret
   - **auth_url**: Append the following to the value you obtained from the AAD app: ```?resource=https%3A%2F%2FWDATPAlertExport.Seville.onmicrosoft.com ```
+
+    For example: `https://<url>/<value>/oauth2/authorize?resource=https%3A%2F%2FWDATPAlertExport.Seville.onmicrosoft.com`
   - **redirect_uri**: ```https://localhost:44300/wdatpconnector```
+  - **scope**: Can be left blank but must be present
+
 3. Download the [wdatp-connector.json.properties](wdatp-connector.json.properties) file. This file is used to parse the information from Windows Defender ATP to HP ArcSight consumable format.
+(JOEY: UPLOAD FILE IN DOWNLOAD CENTER)
 
 ## Install and configure HP ArcSight SmartConnector
 The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin).
@@ -43,8 +50,6 @@ The following steps assume that you have completed all the required steps in [Be
 1. Install the latest 32-bit Windows SmartConnector installer. how to get? JOEY: Hi Aviv, is it this one: https://marketplace.saas.hpe.com/arcsight/content/connector ?
 
 2. Follow the on-screen instructions. The tool is typically installed in `C:\ArcSightSmartConnectors\<descriptive_name>\`.
->[!NOTE]
->Don't install icons.
 
 3. Open File Explorer to the installation location and put the two configuration files the following location:
 
@@ -95,7 +100,7 @@ Note: To be sure kill the process again (ctrl-c), start again, and no browser wi
 e) To verify events are flowing (a good filter initially is Device Product = Windows Defender ATP).  If so kill the process again and go to Windows Services and start the ArcSight FlexConnector REST for WDATP
 
 ## HP ArcSight
-JOEY: what is this section going to talk about? Settings? 
+JOEY: what is this section going to talk about? Settings?
 
 
 ## Related topics
