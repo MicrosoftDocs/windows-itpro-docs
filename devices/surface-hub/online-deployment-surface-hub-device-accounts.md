@@ -54,13 +54,10 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     $easPolicy = New-MobileDeviceMailboxPolicy -Name “SurfaceHubs” -PasswordEnabled $false
     ```
 
-    Once you have a compatible policy, then you will need to apply the policy to the device account. However, policies can only be applied to user accounts and not resource mailboxes. You need to convert the mailbox into a user type, apply the policy, and then convert it back into a mailbox—you may need to re-enable it and set the password again too.
+    Once you have a compatible policy, then you will need to apply the policy to the device account.
 
     ```PowerShell
-    Set-Mailbox 'HUB01@contoso.com' -Type Regular
     Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy.Id
-    Set-Mailbox 'HUB01@contoso.com' -Type Room
-    Set-Mailbox 'HUB01@contoso.com' -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force) -EnableRoomMailboxAccount $true
     ```
 
 4.  Various Exchange properties must be set on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
@@ -113,7 +110,9 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
 
         ```PowerShell
         Get-CsOnlineUser -Identity ‘alice@contoso.com’| fl *registrarpool*
+        ```
         OR by setting a variable
+        ```PowerShell
         $strRegistrarPool = (Get-CsOnlineUser -Identity ‘alice@contoso.com’).RegistrarPool
         ```
         
@@ -128,11 +127,10 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
 Alternatively, You can assign a license to the Surface Hub through the Office 365 administrators portal:
 
 1. Sign in as a tenant administrator, open the O365 Administrative Portal, and click the Admin app.
-1. Click **Users and Groups** and then **Add users, reset passwords, and more**.
-1. Select the Surface Hub account, and then click or tap the pen icon, which means edit.
-1. Click the **Licenses** option.
-1. In the **Assign licenses** section, select an appropriate license that meets the requirements in step 7 depending on your licensing and what you've decided in terms of needing Enterprise Voice.
-1. Click **Save** and you're done.
+1. Click **Users** > **Active users**. 
+1. Select the Surface Hub account. Under **Product licenses** (or **Assigned Licenses** if you’re using the old admin center), click **Edit**. 
+1. Select an appropriate license that meets the requirements in Step 7.
+1. Click **Save**.
 
 
 
