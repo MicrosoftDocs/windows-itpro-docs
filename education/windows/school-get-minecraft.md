@@ -69,8 +69,10 @@ During the purchase, click **Get started! Add a way to pay.** Provide the info n
 
 Invoices are now a supported payment method for Minecraft: Education Edition. There are a few requirements:
 - Admins only (not supported for Teachers)
-- $500 invoice minimum
+- $500 invoice minimum for your initial purchase
 - $15,000 invoice maximum (for all invoices within your organization)
+
+**Finding your invoice**
 
 ## <a href="" id="distribute-minecraft"></a>Distribute Minecraft
 
