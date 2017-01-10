@@ -14,6 +14,12 @@ localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
+## January 2017
+
+| New or changed topic | Description |
+| --- | --- |
+| [Connect other devices and display with Surface Hub](connect-and-display-with-surface-hub.md) | Added graphics cards verified to work with 84" Surface Hubs and added information about the lengths of cables. |
+
 ## December 2016
 
 | New or changed topic | Description|
