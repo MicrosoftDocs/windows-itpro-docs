@@ -74,20 +74,26 @@ Invoices are now a supported payment method for Minecraft: Education Edition. Th
 
 During the purchase, click **Get started! Add a way to pay.**  
 
-![Invoice ](images/mcee-add-payment-method.png)
+![Buy page for an app, showing the link for Get started! Add a way to pay.](images/mcee-add-payment-method.png)
 
-Select the Invoice option, and provide the info needed for an invoice. 
+Select the Invoice option, and provide the info needed for an invoice. The **PO number** item allows you to add a tracking number or info that is meaningful to your organization.
 
-![Invoice ](images/mcee-invoice-info.png)
-
-The **PO number** item allows you to add a tracking number or info that is meaningful to your organization.
+![Invoice Details page showing items that need to be completed for an invoice. PO number is highlighted.](images/mcee-invoice-info.png)
 
 ## Find your invoice
 
-After you've finised the purchase, you can find your bill by checking Minecraft: Education Edition in your inventory. 
+After you've finised the purchase, you can find your bill by checking **Minecraft: Education Edition** in your **Inventory**. 
 
 > **Note**: After you complete a purchase, it can take up to twenty-four hours for the app to appear in **Inventory**.
 
+**To view your bill**
+1. In Windows Store for Business, click **Manage** and then click **Inventory**. 
+2. Click **Minecraft: Education Edition** in the list of apps. 
+3. On **Minecraft: Education Edition**, click **View Bills**.
+
+![Minecraft: Education Edition app details page with view bills link highlighted](images/mcee-view-bills.png) 
+
+4. On **Invoice Bills**, click the invoice number you want to view and download your invoice.  
 
 ## <a href="" id="distribute-minecraft"></a>Distribute Minecraft
 
