@@ -27,7 +27,7 @@ Because Outlook Web Access (OWA) can be used both personally and as part of your
 |Add outlook.office.com to the Enterprise Cloud Resources network element in your WIP policy. |All mailboxes are automatically marked as corporate. This means any personal inboxes hosted on Office 365 are also automatically marked as corporate data. |
 
 >[!NOTE]
->These limitations don’t apply to Outlook 2016 or to the Office365 Mail and Calendar apps. These apps will work properly, marking an employee’s mailbox as corporate data, regardless of how you’ve configured outlook.office.com in your network settings. 
+>These limitations don’t apply to Outlook 2016 or to the Office 365 Mail and Calendar apps. These apps will work properly, marking an employee’s mailbox as corporate data, regardless of how you’ve configured outlook.office.com in your network settings. 
 
 
 
