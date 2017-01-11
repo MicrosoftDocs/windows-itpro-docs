@@ -98,8 +98,10 @@ If this is the first time you're setting this up, and you'd like to see how it's
 
     ![Verify your domains in O365 admin center](images/office365_additional_domain.png)
 
-### 2.2 Add users
-Once you've set up Office and added your domain, it's time to add users so they have access to Office 365.
+### 2.2 Add users individually or in bulk
+Once you've set up Office and added your domain, it's time to add users so they have access to Office 365. People in your organization need an account before they can sign in and access Office 365. The easiest way to add users is to add them one at a time in the Office 365 admin center.
+
+When adding users, you can also assign admin privileges to certain users in your team. You'll also want to assign **Product licenses** to each user so that subscriptions can be assigned to the person.
 
 1. In the [Office 365 admin center page](https://portal.office.com/AdminPortal/Home?switchtomoderndefault=true#/homepage), select **Users > Active users**.
 
@@ -108,9 +110,9 @@ Once you've set up Office and added your domain, it's time to add users so they 
   ![Add Office 365 users](images/office365_users.png)
 
 2. In the **Home > Active users** page, you can add users individually or in bulk.
-  - To add users one-by-one, select **+ Add a user**.
+  - To add users one at a time, select **+ Add a user**.
 
-    If you select this option, you'll see the **New user** screen and you can add details about the new user including their name, user name, role, and so on.
+    If you select this option, you'll see the **New user** screen and you can add details about the new user including their name, user name, role, and so on. You also have the opportunity to assign **Product licenses**. For detailed step-by-step info on adding a user account, see *Add a user account in the Office 365 admin center* in [Add users individually or in bulk to Office 365 - Admin Help](https://support.office.com/en-us/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
     **Figure 8** - Add an individual user
 
@@ -118,17 +120,11 @@ Once you've set up Office and added your domain, it's time to add users so they 
 
   - To add multiple users at once, select **More** and then choose **+ Import multiple users**. If you select this option, you'll need to create and upload a CSV file containing the list of users.
 
-    The **Import multiple users** screen includes a link where you can learn more about importing multiple users and also links for downloading a sample CSV file (one with headers only and another with headers and sample user information).
+    The **Import multiple users** screen includes a link where you can learn more about importing multiple users and also links for downloading a sample CSV file (one with headers only and another with headers and sample user information). For detailed step-by-step info on adding multiple users to Office 365, see [Add several users at the same time to Office 365 - Admin Help](https://support.office.com/en-us/article/Add-several-users-at-the-same-time-to-Office-365-Admin-Help-1f5767ed-e717-4f24-969c-6ea9d412ca88). Once you've added all the users, don't forget to assign **Product licenses** to the new users.
 
     **Figure 9** - Import multiple users
 
     ![Import multiple users](images/office365_import_multiple_users.png)
-
-> [!IMPORTANT]
-> **The following sections are not verified yet. CelesteD is still writing this portion of the walkthrough**
-
-### 2.3 Assign licenses to users
-TBD
 
 ### 2.3 Add Azure AD to your domain
 In the Office 365 admin center, select **Admin centers > Azure AD**.
