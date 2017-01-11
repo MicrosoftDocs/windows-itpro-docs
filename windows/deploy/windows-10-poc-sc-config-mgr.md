@@ -299,12 +299,12 @@ Description here.
 ## Create a boot image for Configuration Manager 
 
 1. In the Configuration Manager console, in the **Software Library** workspace, expand **Operating Systems**, right-click **Boot Images**, and then click **Create Boot Image using MDT**.
-2. On the Package Source page, under **Package source folder to be created (UNC Path):**, type **\\SRV1\Sources$\OSD\Boot\Zero Touch WinPE x64**, and then click **Next**.
+2. On the Package Source page, under **Package source folder to be created (UNC Path):**, type **\\\SRV1\Sources$\OSD\Boot\Zero Touch WinPE x64**, and then click **Next**.
     - The Zero Touch WinPE x64 folder does not yet exist. The folder will be created later.
 3. On the General Settings page, type **Zero Touch WinPE x64** next to **Name**, and click **Next**.
 4. On the Options page, under **Platform** choose **x64**, and click **Next**.
 5. On the Components page, in addition to the default selection of **Microsoft Data Access Components (MDAC/ADO) support**, select the **Microsoft Diagnostics and Recovery Toolkit (DaRT)** checkbox, and click **Next**.
-6. On the Customization page, select the **Use a custom background bitmap file** checkbox, and under **UNC path**, type or browse to **\\SRV1\Sources$\OSD\Branding\contoso.bmp**, and then click **Next** twice. It will take a few minutes to generate the boot image.
+6. On the Customization page, select the **Use a custom background bitmap file** checkbox, and under **UNC path**, type or browse to **\\\SRV1\Sources$\OSD\Branding\contoso.bmp**, and then click **Next** twice. It will take a few minutes to generate the boot image.
 7. Click **Finish**.
 8. Right-click the **Zero Touch WinPE x64** boot image, and then click **Distribute Content**.
 9. In the Distribute Content Wizard, click **Next**, click **Add** and select **Distribution Point**, select the **SRV1.CONTOSO.COM** checkbox, click **OK**, click **Next** twice, and then click **Close**.
@@ -500,7 +500,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
 2. In the Configuration Manager console, in the **Software Library** workspace, expand **Operating Systems**, right-click **Operating System Images**, and then click **Add Operating System Image**.
 
-3. On the Data Source page, under **Path:**, type or browse to **\\SRV1\Sources$\OSD\OS\Windows 10 Enterprise x64\REFW10X64-001.wim**, and click **Next**.
+3. On the Data Source page, under **Path:**, type or browse to **\\\SRV1\Sources$\OSD\OS\Windows 10 Enterprise x64\REFW10X64-001.wim**, and click **Next**.
 
 4. On the General page, next to **Name:**, type **Windows 10 Enterprise x64**, click **Next** twice, and then click **Close**.
 
