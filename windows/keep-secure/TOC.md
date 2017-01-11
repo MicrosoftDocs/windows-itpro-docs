@@ -876,4 +876,5 @@
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 ### [Windows 10 security overview](windows-10-security-guide.md)
 ### [Windows 10 credential theft mitigation guide abstract](windows-credential-theft-mitigation-guide-abstract.md)
+### [How to use single sign-on (SSO) over VPN and Wi-Fi connections](how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections.md)
 ## [Change history for Keep Windows 10 secure](change-history-for-keep-windows-10-secure.md)
