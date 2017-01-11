@@ -14,7 +14,7 @@ author: justinha
 **Applies to**
 -   Windows 10
 
-This topic provides a summary of the Windows 10 credential theft mitigation guide, which can be downloaded from the Microsoft Download Center. 
+This topic provides a summary of the Windows 10 credential theft mitigation guide, which can be downloaded from the [Microsoft Download Center](http://download.microsoft.com/download/C/1/4/C14579CA-E564-4743-8B51-61C0882662AC/Windows 10 credential theft mitigation guide.docx). 
 This guide explains how credential theft attacks occur and the strategies and countermeasures you can implement to mitigate them, following these security stages:
 
 - Identify high-value assets

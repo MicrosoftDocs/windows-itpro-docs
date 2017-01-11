@@ -61,7 +61,7 @@ Before you configure endpoints, the telemetry and diagnostics service must be en
 
 ### Telemetry and diagnostics settings
 You must ensure that the telemetry and diagnostics service is enabled on all the endpoints in your organization.
-By default, this service is enabled, but it's good practice to check to ensure that you'll get telemetry from them.
+By default, this service is enabled, but it's good practice to check to ensure that you'll get sensor data from them.
 
 **Use the command line to check the Windows 10 telemetry and diagnostics service startup type**:
 

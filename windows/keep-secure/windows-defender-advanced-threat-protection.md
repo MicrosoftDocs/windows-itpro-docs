@@ -32,7 +32,7 @@ Windows Defender ATP uses the following combination of technology built into Win
 -   **Endpoint behavioral sensors**: Embedded in Windows 10, these sensors
     collect and process behavioral signals from the operating system
     (for example, process, registry, file, and network communications)
-    and sends this telemetry to your private, isolated, cloud instance of Windows Defender ATP.
+    and sends this sensor data to your private, isolated, cloud instance of Windows Defender ATP.
 
 
 -   **Cloud security analytics**: Leveraging big-data, machine-learning, and
@@ -47,7 +47,7 @@ Windows Defender ATP uses the following combination of technology built into Win
     and augmented by threat intelligence provided by partners, threat
     intelligence enables Windows Defender ATP to identify attacker
     tools, techniques, and procedures, and generate alerts when these
-    are observed in collected telemetry.
+    are observed in collected sensor data.
 
 The following diagram shows these Windows Defender ATP service
 components:
