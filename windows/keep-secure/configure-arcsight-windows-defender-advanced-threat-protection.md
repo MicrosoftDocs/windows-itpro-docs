@@ -55,20 +55,20 @@ The following steps assume that you have completed all the required steps in [Be
   - WDATP-connector.jsonparser.properties: `C:\ArcSightSmartConnectors\<descriptive_name>\current\user\agent\flexagent\`
   - WDATP-connector.properties: `C:\ArcSightSmartConnectors\<descriptive_name>\`
 
-[AVIV - I BELIEVE THERE ARE SEVERAL SCREENS BEFORE THE CONNECTOR SETUP IS DISPLAYED. CAN YOU PROVIDE THOSE PLEASE?]
+  [AVIV - I BELIEVE THERE ARE SEVERAL SCREENS BEFORE THE CONNECTOR SETUP IS DISPLAYED. CAN YOU PROVIDE THOSE PLEASE?]
 
 3. In the Connector Setup window, select **Add a Connector**.
 
  ![Connector Setup window - select Add a Connector](images/hp-1.png)
 
-4. Select the ArcSight FlexConnector REST connector.
+4. Select the **ArcSight FlexConnector REST** connector and click **Next**.
 ![Connector Setup window - select ArcSight FlexConnector REST](images/hp-2.png)
 
 5. Generate a refresh token to use in the installer:
 
-    a. Open a command prompt.  Browse to `C:\ArcSightSmartConnectors\<descriptive_name>\current\bin`
+    a. Open a command prompt.  Browse to `C:\ArcSightSmartConnectors\<descriptive_name>\current\bin`.
 
-    b. Type: `arcsight restutil token -config C:\ArcSightSmartConnectors_Prod\WDATP\WDATP-connector.properties`
+    b. Type: `arcsight restutil token -config C:\ArcSightSmartConnectors_Prod\WDATP\WDATP-connector.properties`.
     A Web browser window will open.
 
     c.  Type in your credentials then click on the password field to let the page redirect.
@@ -77,7 +77,7 @@ The following steps assume that you have completed all the required steps in [Be
 
     f.	Save the token in a secure location.
 
-6.	Type the following required parameters in the parameter details form. All other values in the form are optional and can be left blank.
+6.	Type the following information in the parameter details form. All other values in the form are optional and can be left blank.
 
 ![Connector Setup - Enter parameter details](images/hp-3.png)
 
@@ -90,10 +90,11 @@ OAuth 2 Client Properties file	| Select wdatp-connector.properties.
 Refresh Token	| Paste the refresh token you generated in the previous step.
 
 You can leave the destination parameter fields with the default values.
+![Connector Setup - Enter parameter details](images/hp-5.png)
 
 Type in a name for the connector. You can leave the other fields blank.
 ![Connector Setup - Enter connector details](images/hp-6.png)
-[JOEY: REMOVE WDATP FROM IMAGE]
+[JOEY: REMOVE WDATP FROM IMAGE & UPDATE STEP NUMBERING]
 
 [AVIV - NEED SCREENSHOTS FOR STEPS 7-13]
 
