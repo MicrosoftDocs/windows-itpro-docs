@@ -21,16 +21,19 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-You'll need to configure HP ArcSight so that it can consume Windows Defender ATP alerts.
+You'll need to install and configure some files and tools to use HP ArcSight so that it can consume Windows Defender ATP alerts.
 
 ## Before you begin
+Configuring the HP ArcSight Connector tool requires several configuration files for it to consume and parse alerts from your Azure Active Directory (AAD) application.
 
-1. Get the following information from your Azure Active Directory (AAD) application by selecting the **View Endpoint** on the application configuration page:
+This section guides you in getting the necessary information to set and use the required configuration files correctly.
+
+1. Get the following information from your AAD application by selecting the **View Endpoint** on the application configuration page:
     - OAuth 2 Token refresh URL
     - OAuth 2 Client ID
     - OAuth 2 Client secret
 
-2. Download the wdatp-connector.properties file and update the values according to the following:
+2. Download the wdatp-connector.properties file and update the following values:
 (JOEY: UPLOAD FILE IN DOWNLOAD CENTER - PUT EMPTY PROPERTIES FILE. PUT WITH THE FOLLOWING VALUES.)
 
   - **client_ID**: OAuth 2 Client ID
@@ -49,6 +52,8 @@ You'll need to configure HP ArcSight so that it can consume Windows Defender ATP
 The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin).
 
 1. Install the latest 32-bit Windows SmartConnector installer. You can find this in the HPE Software center. The tool is typically installed in `C:\ArcSightSmartConnectors\<descriptive_name>\`.
+[AVIV, NEED ALL THE SCREENSHOTS HERE]
+[AVIV/BRIAN - WHAT IF THEY WANT TO USE 64-BIT? CAN I THEN JUST REMOVE THE WORDS 32-BIT?]
 
 2. Open File Explorer and put the two configuration files in the installation location, for example:
 
