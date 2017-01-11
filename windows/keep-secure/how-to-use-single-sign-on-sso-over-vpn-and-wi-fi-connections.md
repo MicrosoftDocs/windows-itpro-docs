@@ -1,11 +1,11 @@
 ---
 title: How to use single sign on (SSO) over VPN and Wi-Fi connections (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Accounts Guest account status security policy setting.
+description: Explains requirements to enable Single Sign-On (SSO) to on-premises domain resources over WiFi or VPN connections.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: brianlic-msft
+author: justinha
 ---
 
 # How to use single sign on (SSO) over VPN and Wi-Fi connections
