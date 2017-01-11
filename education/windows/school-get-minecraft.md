@@ -61,18 +61,33 @@ Qualified education institutions can purchase Minecraft: Education Edition licen
 ## Minecraft: Education Edition payment options
 You can pay for Minecraft: Education Edition with a debit or credit card, or with an invoice. 
 
-**Debit or credit cards**
+## Debit or credit cards
 
 During the purchase, click **Get started! Add a way to pay.** Provide the info needed for your debit or credit card.
 
-**Invoices**
+## Invoices
 
 Invoices are now a supported payment method for Minecraft: Education Edition. There are a few requirements:
 - Admins only (not supported for Teachers)
 - $500 invoice minimum for your initial purchase
 - $15,000 invoice maximum (for all invoices within your organization)
 
-**Finding your invoice**
+During the purchase, click **Get started! Add a way to pay.**  
+
+![Invoice ](images/mcee-add-payment-method.png)
+
+Select the Invoice option, and provide the info needed for an invoice. 
+
+![Invoice ](images/mcee-invoice-info.png)
+
+The **PO number** item allows you to add a tracking number or info that is meaningful to your organization.
+
+## Find your invoice
+
+After you've finised the purchase, you can find your bill by checking Minecraft: Education Edition in your inventory. 
+
+> **Note**: After you complete a purchase, it can take up to twenty-four hours for the app to appear in **Inventory**.
+
 
 ## <a href="" id="distribute-minecraft"></a>Distribute Minecraft
 
