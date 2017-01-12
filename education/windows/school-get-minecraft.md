@@ -91,9 +91,14 @@ After you've finised the purchase, you can find your bill by checking **Minecraf
 2. Click **Minecraft: Education Edition** in the list of apps. 
 3. On **Minecraft: Education Edition**, click **View Bills**.
 
-![Minecraft: Education Edition app details page with view bills link highlighted](images/mcee-view-bills.png) 
+    ![Minecraft: Education Edition app details page with view bills link highlighted](images/mcee-view-bills.png) 
 
-4. On **Invoice Bills**, click the invoice number you want to view and download your invoice.  
+4. On **Invoice Bills**, click the invoice number to view and download your invoice. It downloads as a .pdf.
+
+  ![Minecraft: Education Edition app details page with view bills link highlighted](images/mcee-invoice-bills.png)
+
+The **Payment Instructions** section on the first page of the invoice has information on invoice amount, due date, and how to pay with electronic funds transfer, or with a check. 
+
 
 ## <a href="" id="distribute-minecraft"></a>Distribute Minecraft
 
