@@ -124,7 +124,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
         Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool $strRegistrarPool -SipAddressType EmailAddress
         ```
 
-Alternatively, You can assign a license to the Surface Hub through the Office 365 administrators portal:
+Alternatively, you can assign a license to the Surface Hub through the Office 365 administrators portal:
 
 1. Sign in as a tenant administrator, open the O365 Administrative Portal, and click the Admin app.
 1. Click **Users** > **Active users**. 
