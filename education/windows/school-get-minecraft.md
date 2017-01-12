@@ -61,11 +61,12 @@ Qualified education institutions can purchase Minecraft: Education Edition licen
 ## Minecraft: Education Edition payment options
 You can pay for Minecraft: Education Edition with a debit or credit card, or with an invoice. 
 
-## Debit or credit cards
+
+### Debit or credit cards
 
 During the purchase, click **Get started! Add a way to pay.** Provide the info needed for your debit or credit card.
 
-## Invoices
+### Invoices
 
 Invoices are now a supported payment method for Minecraft: Education Edition. There are a few requirements:
 - Admins only (not supported for Teachers)
@@ -80,7 +81,7 @@ Select the Invoice option, and provide the info needed for an invoice. The **PO 
 
 ![Invoice Details page showing items that need to be completed for an invoice. PO number is highlighted.](images/mcee-invoice-info.png)
 
-## Find your invoice
+### Find your invoice
 
 After you've finised the purchase, you can find your bill by checking **Minecraft: Education Edition** in your **Inventory**. 
 
