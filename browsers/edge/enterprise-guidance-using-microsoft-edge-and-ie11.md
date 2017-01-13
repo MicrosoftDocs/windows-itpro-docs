@@ -44,7 +44,7 @@ IE11 offers enterprises additional security, manageability, performance, backwar
 
 -   **Backward compatibility.** IE11 supports 9 document modes that include high-fidelity emulations for older versions of IE.
 -   **Modern web standards.** IE11 supports modern web technologies like HTML5, CSS3, and WebGL, which help to ensure today's modern websites and apps work just as well as your old, legacy websites and apps.
--   **More secure.** IE11 was designed with security in mind and is more secure than older versions. Using security features like Windows Defender SmartScreen and Enhanced Protected Mode can help IE11 reduce your risk.
+-   **More secure.** IE11 was designed with security in mind and is more secure than older versions. Using security features like SmartScreen and Enhanced Protected Mode can help IE11 reduce your risk.
 -   **Faster.** IE11 is significantly faster than previous versions of Internet Explorer, taking advantage of network optimization and hardware-accelerated text, graphics, and JavaScript rendering.
 -   **Easier migration to Windows 10.** IE11 is the only version of IE that runs on Windows 7, Windows 8.1, and Windows 10. Upgrading to IE11 on Windows 7 can also help your organization support the next generation of software, services, and devices.
 -   **Administration.** IE11 can use the Internet Explorer Administration Kit (IEAK) 11 or MSIs for deployment, and includes more than 1,600 Group Policies and preferences for granular control.
