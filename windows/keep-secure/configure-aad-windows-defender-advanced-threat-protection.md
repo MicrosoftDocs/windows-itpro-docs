@@ -48,14 +48,21 @@ You need to add an application in your Azure Active Directory (AAD) tenant then 
 
 12. Type the following URLs in the **Reply URL** field:
 
-  - `https://DataAccess-PRD.trafficmanager.net:444/api/FetchAccessTokenFromAuthCode`
+  - Depending on the location of your datacenter, select either the EU or the US URL:
+      - For EU: `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/FetchAccessTokenFromAuthCode`
+      - For US:  `https://wdatp-alertexporter-us.securitycenter.windows.com/api/FetchAccessTokenFromAuthCode`
   - `https://localhost:44300/WDATPconnector`
 
 13. Click **Save** and copy the key in a safe place. You'll need this key to authenticate the client application on Azure Active Directory.
 
 14. Open a web browser and connect to the following URL: <br>
+  - For EU:
 ```text
-https://DataAccess-PRD.trafficmanager.net:444/api/FetchToken?clientId=f7c1acd8-0458-48a0-a662-dba6de049d1c&tenantId=<tenant ID>&clientSecret=1234
+https://wdatp-alertexporter-eu.securitycenter.windows.com/api/FetchToken?clientId=f7c1acd8-0458-48a0-a662-dba6de049d1c&tenantId=<tenant ID>&clientSecret=1234
+```
+  - For US:
+```text
+https://wdatp-alertexporter-us.securitycenter.windows.com/api/FetchToken?clientId=f7c1acd8-0458-48a0-a662-dba6de049d1c&tenantId=<tenant ID>&clientSecret=1234
 ```
 An Azure login page appears.
 > [!NOTE]

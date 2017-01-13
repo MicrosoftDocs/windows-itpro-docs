@@ -56,7 +56,8 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
   </tr>
   <tr>
   <td>Endpoint URL</td>
-  <td> https://<i></i>DataAccess-PRD.trafficmanager.net:444/api/alerts</td>
+  <td>For EU:  https://<i></i>wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts </br></br> For US: https://<i></i>wdatp-alertexporter-us.securitycenter.windows.com/api/alerts</td>
+
   </tr>
   <tr>
   <td>HTTP Method</td>
