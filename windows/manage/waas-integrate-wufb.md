@@ -39,8 +39,8 @@ For Windows 10, version 1607, devices can now be configured to receive updates f
 - Admin has also put 3rd party drivers on WSUS
 
 <table><thead><th>Content</th><th>Metadata source</th><th>Payload source</th><th>Deferred?</th><th></th></thead>
-<tbody><tr><td>Windows Update</td><td>Windows Update</td><td>Windows Update</td><td>Yes</td><td rowspan="3">![diagram of content flow](images/wufb-config1a.png)</td></tr>
-<tr><td>Microsoft Update (such as Office updates)</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
+<tbody><tr><td>Updates to Windows</td><td>Windows Update</td><td>Windows Update</td><td>Yes</td><td rowspan="3">![diagram of content flow](images/wufb-config1a.png)</td></tr>
+<tr><td>Updates to Office and other products</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 <tr><td>Third-party drivers</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 </table>
 
@@ -54,10 +54,9 @@ For Windows 10, version 1607, devices can now be configured to receive updates f
 
 
 <table><thead><th>Content</th><th>Metadata source</th><th>Payload source</th><th>Deferred?</th><th></th></thead>
-<tbody><tr><td>Windows Update (exclude driver)</td><td>Windows Update</td><td>Windows Update</td><td>Yes</td><td rowspan="4">![diagram of content flow](images/wufb-config2.png)</td></tr>
-<tr><td>Windows Update drivers</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
-<tr><td>Microsoft Update (such as Office updates)</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
-<tr><td>Windows drivers, third-party drivers</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
+<tbody><tr><td>Updates to Windows (excluding drivers)</td><td>Microsoft Update</td><td>Microsoft Update</td><td>Yes</td><td rowspan="4">![diagram of content flow](images/wufb-config2.png)</td></tr>
+<tr><td>Updates to Office and other products</td><td>Microsoft Update</td><td>Microsoft Update</td><td>No</td></tr>
+<tr><td>Drivers</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 
 </table>
 
