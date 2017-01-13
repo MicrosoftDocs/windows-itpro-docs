@@ -69,7 +69,7 @@ The following steps assume that you have completed all the required steps in [Be
     <td>Type in the name of the client property file. It must match the client property file.</td>
     </tr>
     <td>Events URL</td>
-    <td>`https://DataAccess-PRD.trafficmanager.net:444/api/alerts`</td>
+    <td>For EU:  https://<i></i>wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts </br></br> For US: https://<i></i>wdatp-alertexporter-us.securitycenter.windows.com/api/alerts</td>
     <tr>
     <td>Authentication Type</td>
     <td>OAuth 2</td>
