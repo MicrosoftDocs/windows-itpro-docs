@@ -54,8 +54,8 @@ For Windows 10, version 1607, devices can now be configured to receive updates f
 
 
 <table><thead><th>Content</th><th>Metadata source</th><th>Payload source</th><th>Deferred?</th><th></th></thead>
-<tbody><tr><td>Updates to Windows (excluding drivers)</td><td>Microsoft Update</td><td>Microsoft Update</td><td>Yes</td><td rowspan="4">![diagram of content flow](images/wufb-config2.png)</td></tr>
-<tr><td>Updates to Office and other products</td><td>Microsoft Update</td><td>Microsoft Update</td><td>No</td></tr>
+<tbody><tr><td>Updates to Windows (excluding drivers)</td><td>Windows Update</td><td>Windows Update</td><td>Yes</td><td rowspan="4">![diagram of content flow](images/wufb-config2.png)</td></tr>
+<tr><td>Updates to Office and other products</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 <tr><td>Drivers</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 
 </table>
@@ -74,8 +74,8 @@ In this example, the Microsoft Update deferral behavior is slightly different th
 
 
 <table><thead><th>Content</th><th>Metadata source</th><th>Payload source</th><th>Deferred?</th><th></th></thead>
-<tbody><tr><td>Windows Update (exclude drivers)</td><td>Windows Update</td><td>Windows Update</td><td>Yes</td><td rowspan="3">![diagram of content flow](images/wufb-config3a.png)</td></tr>
-<tr><td>Microsoft Update (such as Office updates)</td><td>Microsoft Update</td><td>Microsoft Update</td><td>No</td></tr>
+<tbody><tr><td>Updates to Windows (excluding drivers)</td><td>Microsoft Update</td><td>Microsoft Update</td><td>Yes</td><td rowspan="3">![diagram of content flow](images/wufb-config3a.png)</td></tr>
+<tr><td>Updates to Office and other products</td><td>Microsoft Update</td><td>Microsoft Update</td><td>No</td></tr>
 <tr><td>Drivers, third-party</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 </table>
 
