@@ -27,7 +27,7 @@ When you set the **Configure Automatic Updates** policy to **Auto download and s
 When **Configure Automatic Updates** is enabled, you can enable one of the following additional policies to manage device restart:
 
 - **Turn off auto-restart for updates during active hours** prevents automatic restart during active hours.
-- **Always automatically restart at the scheduled time** forces a restart after the specified installation time and lets you configure a timer to warn a signed-in user that a restart is going to occur.
+- **Always automatically restart at the scheduled time** forces a restart after the specified installation time and lets you configure a timer to warn a signed-in user that a restart is going to occur. To set the time, you need to go **Configure Automatic Updates**, select option **4 - Auto download and schedule the install**, and then enter a time in the **Scheduled install time** dropdown.
 - **No auto-restart with logged on users for scheduled automatic updates installations** prevents automatic restart when a user is signed in. If a user schedules the restart in the update notification, the device will restart at the time the user specifies even if a user is signed in at the time. This policy only applies when **Configure Automatic Updates** is set to option **4-Auto download and schedule the install**. 
 
 ## Configure active hours
