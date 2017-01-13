@@ -148,6 +148,7 @@ The following table defines the endpoints for telemetry services:
 | Connected User Experience and Telemetry component | v10.vortex-win.data.microsoft.com<br />settings-win.data.microsoft.com |
 | [Windows Error Reporting](http://msdn.microsoft.com/library/windows/desktop/bb513641.aspx) | watson.telemetry.microsoft.com |
 | [Online Crash Analysis](http://msdn.microsoft.com/library/windows/desktop/ee416349.aspx) | oca.telemetry.microsoft.com |
+| OneDrive UWP app (used by Windows 10 Mobile only) | vortex.data.microsoft.com/collect/v1 |
 
 ### Data use and access
 
