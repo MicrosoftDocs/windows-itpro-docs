@@ -13,7 +13,7 @@ localizationpriority: high
 -   Windows 10 Mobile, Windows Insider Program
 
 >[!IMPORTANT]
->The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.Test Scenario 2: Perform a quick search with Cortana
+>The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.
 
 This scenario helps you set up, review, and edit a reminder based on a location. For example, reminding yourself to grab your expense report receipts before you leave the house.
 

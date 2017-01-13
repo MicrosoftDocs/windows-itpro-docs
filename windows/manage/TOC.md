@@ -5,6 +5,7 @@
 #### [Test scenario 1 - Sign-in to Azure AD and use Cortana to manage the notebook](cortana-at-work-scenario-1.md)
 #### [Test scenario 2 - Test scenario 2 - Perform a quick search with Cortana at work](cortana-at-work-scenario-2.md)
 #### [Test scenario 3 - Set a reminder for a specific location using Cortana at work](cortana-at-work-scenario-3.md)
+#### [Test scenario 4 - Use Cortana at work to find your upcoming meetings](cortana-at-work-scenario-4.md)
 ## [Update Windows 10 in the enterprise](waas-update-windows-10.md)
 ### [Quick guide to Windows as a service](waas-quick-start.md)
 ### [Overview of Windows as a service](waas-overview.md)

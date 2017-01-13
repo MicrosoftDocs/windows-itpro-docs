@@ -13,9 +13,9 @@ localizationpriority: high
 -   Windows 10 Mobile, Windows Insider Program
 
 >[!IMPORTANT]
->The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.Test Scenario 2: Perform a quick search with Cortana
+>The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.
 
-This scenario helps you perform a quick search using Cortana, both typing and through voice commands.
+This scenario helps you perform a quick search using Cortana, both by typing and through voice commands.
 
 ## Search using Cortana
 This process helps you use Cortana to perform a quick search.

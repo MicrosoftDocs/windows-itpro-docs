@@ -15,7 +15,7 @@ localizationpriority: high
 >[!IMPORTANT]
 >The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.
 
-This scenario turns on Azure AD, letting your employee use Cortana to manage an entry in the notebook.
+This scenario turns on Azure AD and let's your employee use Cortana to manage an entry in the notebook.
 
 ## Turn on Azure AD
 This process helps you to sign out of a Microsoft Account and to sign into an Azure AD account.
