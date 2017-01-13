@@ -17,7 +17,9 @@ localizationpriority: high
 
 This scenario turns on Azure AD, letting your employee use Cortana to manage an entry in the notebook.
 
-**To turn on Azure AD**
+## Turn on Azure AD
+This process helps you to sign out of a Microsoft Account and to sign into an Azure AD account.
+
 1.	Click on the **Cortana** icon in the taskbar, click the **Notebook**, and then click **About Me**.
 
 2.	Click your email address.
@@ -37,7 +39,9 @@ This scenario turns on Azure AD, letting your employee use Cortana to manage an 
     >[!IMPORTANT]
     >If there’s no Azure AD account listed, you’ll need to go to W**indows Settings > Accounts > Email & app accounts**, and then click **Add a work or school account** to add it.
 
-**To use Cortana to manage the notebook content**
+## Use Cortana to manage the notebook content
+This process helps you to manage the content Cortana shows in your Notebook.
+
 1.	Click on the **Cortana** icon in the taskbar, click the **Notebook**, scroll down and click **Weather**.
 
 2.	In the **Weather** settings, scroll down to the **Cities your tracking** area, and then click **Add a city**.
