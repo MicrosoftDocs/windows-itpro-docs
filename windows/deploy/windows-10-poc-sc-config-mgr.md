@@ -437,7 +437,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     SkipSummary=YES
     SkipRoles=YES
     SkipCapture=NO
-    SkipFinalSummary=YES
+    SkipFinalSummary=NO
     ```
 
 20. Click **Apply** and then click **Edit Bootstrap.ini**. Replace the contents of the Bootstrap.ini file with the following text, and save the file:
@@ -449,7 +449,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     [Default]
     DeployRoot=\\SRV1\MDTBuildLab$
     UserDomain=CONTOSO
-    UserID=administrator
+    UserID=MDT_BA
     UserPassword=pass@word1
     SkipBDDWelcome=YES
     ```
@@ -699,25 +699,31 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     vmconnect localhost PC4
     ```
 
-Problems here, first I got UEFI compatible not found
-I tried stopping WDSServer and this caused nothing to be found
-Now I'm having difficulty starting WDSServer again...
-
-If I change to gen 1, it is loading PS100006.wim but I must press F12
-Seems to be the correct image
-And it popped up with contoso and asked me for the password
-Ugh.. I got program files for PS100001 cannot be located on a distribution point again.
-
 2. Press ENTER when prompted to start the network boot service.
 
-3. In the Task Sequence Wizard, provide the password: pass@word1, and then click Next.
+3. In the Task Sequence Wizard, provide the password: **pass@word1**, and then click **Next**.
 
-4. The Windows 10 Enterprise x64 task sequence is selected, click Next.
+4. Before you click Next in the Task Sequence Wizard, press the **F8** key. A command prompt will open.
 
-- ok I have an error that PS100001 cannot be located on a distribution point.
-- I tried going to content status and this seems to bhe the USMT and it says it is successfully distributed
-- I tried software library, boot images, and distribute these - this didn't help
-- I tried software library, application management, packages, distribute content but the distributon point isn't showing up. This is likely the problem.
+5. At the command prompt, type **explorer.exe** and review the Windows PE file structure. 
+
+7. The smsts.log file is critical for troubleshooting any installation problems that might be encountered. Depending on the deployment phase, the smsts.log file is created in different locations:
+    - X:\windows\temp\SMSTSLog\smsts.log before disks are formatted.
+    - x:\smstslog\smsts.log after disks are formatted.
+    - c:\_SMSTaskSequence\Logs\Smstslog\smsts.log before the System Center Configuration Manager client is installed.
+    - c:\windows\ccm\logs\Smstslog\smsts.log after the System Center Configuration Manager client is installed.
+    - c:\windows\ccm\logs\smsts.log when the task sequence is complete.
+
+    Note: If a reboot is pending on the client, the reboot will be blocked as long as the command window is open.
+
+7. In the explorer window, click **Tools** and then click **Map Network Drive**.
+
+8. Do not map a network drive at this time. If you need to save the smsts.log file, you can use this method to save the file to a location on SRV1.
+
+9. Close the Map Network Drive window, the Explorer window, and the command prompt.
+
+4. The **Windows 10 Enterprise x64** task sequence is selected in the Task Sequenc Wizard. Click **Next** to continue with the deployment.
+
 
 ## Related Topics
 

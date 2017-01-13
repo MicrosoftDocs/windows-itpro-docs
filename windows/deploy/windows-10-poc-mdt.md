@@ -49,7 +49,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 ## About MDT
 
 MDT performs deployments by using the Lite Touch Installation (LTI), Zero Touch Installation (ZTI), and User-Driven Installation (UDI) deployment methods. 
-- LDI is the deployment method used in the current guide, requiring only MDT and performed with a minimum amount of user interaction.
+- LTI is the deployment method used in the current guide, requiring only MDT and performed with a minimum amount of user interaction.
 - ZTI is fully automated, requiring no user interaction and is performed using MDT and System Center Configuration Manager. After completing the steps in the current guide, see [Step by step: Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md) to use the ZTI deployment method in the PoC environment.
 - UDI requires manual intervention to respond to installation prompts such as machine name, password and language settings. UDI requires MDT and System Center Configuration Manager. 
 
@@ -180,7 +180,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     SkipSummary=YES
     SkipRoles=YES
     SkipCapture=NO
-    SkipFinalSummary=YES
+    SkipFinalSummary=NO
     ```
 
 21. Click **Apply** and then click **Edit Bootstrap.ini**. Replace the contents of the Bootstrap.ini file with the following text, and save the file:
