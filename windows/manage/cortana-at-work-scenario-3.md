@@ -18,8 +18,7 @@ localizationpriority: high
 This scenario helps you set up, review, and edit a reminder based on a location. For example, reminding yourself to grab your expense report receipts before you leave the house.
 
 >[!NOTE]
->You can set each reminder location individually as you create the reminders, or you can go into the **About me** screen and add both **Work** and **Home** addresses as favorites. Make sure that you use real addresses since you’ll need to go to these locations to complete your testing scenario.
->Additionally, if you’ve turned on the **Meeting & reminder cards & notifications** option (in the **Meetings & reminders** option of your Notebook), you’ll also see your pending reminders on the Cortana **Home** page.
+>You can set each reminder location individually as you create the reminders, or you can go into the **About me** screen and add both **Work** and **Home** addresses as favorites. Make sure that you use real addresses since you’ll need to go to these locations to complete your testing scenario.<p>Additionally, if you’ve turned on the **Meeting & reminder cards & notifications** option (in the **Meetings & reminders** option of your Notebook), you’ll also see your pending reminders on the Cortana **Home** page.
 
 ## Create a reminder for a specific location
 This process helps you to create a reminder based on a specific location.
@@ -75,6 +74,10 @@ This process helps you to edit or archive and existing or completed reminder.
 
 1. Click on the **Cortana** icon in the taskbar, click on the **Notebook** icon, and then click **Reminders**.
 
+    ![Cortana at work, showing the list of pending reminders](images/cortana-reminder-list.png)
 
+2. Click the pending reminder you want to edit.
 
+    ![Cortana at work, showing the reminder editing screen](images/cortana-reminder-edit.png)
 
+3.	Change any text that you want to change, click **Add photo** if you want to add or replace an image, click **Delete** if you want to delete the entire reminder, click **Save** to save your changes, and click **Complete and move to History** if you want to save a completed reminder in your **Reminder History**.
