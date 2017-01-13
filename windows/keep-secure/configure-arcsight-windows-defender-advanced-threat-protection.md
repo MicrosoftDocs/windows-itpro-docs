@@ -29,47 +29,57 @@ Configuring the HP ArcSight Connector tool requires several configuration files 
 This section guides you in getting the necessary information to set and use the required configuration files correctly.
 
 1. Get the following information from your AAD application by selecting the **View Endpoint** on the application configuration page:
-    - OAuth 2 Token refresh URL
-    - OAuth 2 Client ID
-    - OAuth 2 Client secret
+    - OAuth 2.0 Token refresh URL
+    - OAuth 2.0 Client ID
+    - OAuth 2.0 Client secret
 
 2. Download the wdatp-connector.properties file and update the following values:
-(JOEY: UPLOAD FILE IN DOWNLOAD CENTER - PUT EMPTY PROPERTIES FILE. PUT WITH THE FOLLOWING VALUES.)
+(JOEY: PUT IN THE LINK FROM DOWNLOAD MANAGEMENT STUDIO)
 
   - **client_ID**: OAuth 2 Client ID
   - **client_secret**: OAuth 2 Client secret
-  - **auth_url**:  ```https://login.microsoftonline.com/<tenanID>?resource=https%3A%2F%2FWDATPAlertExport.Seville.onmicrosoft.com ```
+  - **auth_url**:  ```https://login.microsoftonline.com/<tenantID>?resource=https%3A%2F%2FWDATPAlertExport.Seville.onmicrosoft.com ```
+
+    >!NOTE
+    >Replace *tenantID* with your tenant ID.
 
   - **token_url**: `https://login.microsoftonline.com/<tenantID>/oauth2/token`
+
+    >!NOTE
+    >Replace the *tenantID* value with your tenant ID.
+
   - **redirect_uri**: ```https://localhost:44300/wdatpconnector```
   - **scope**: Leave the value blank
 
 3. Download the wdatp-connector.json.properties file. This file is used to parse the information from Windows Defender ATP to HP ArcSight consumable format.
-(JOEY: UPLOAD FILE IN DOWNLOAD CENTER)
+(JOEY: PUT IN THE LINK FROM DOWNLOAD MANAGEMENT STUDIO)
 
 ## Install and configure HP ArcSight SmartConnector
 The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin).
 
 1. Install the latest 32-bit Windows SmartConnector installer. You can find this in the HPE Software center. The tool is typically installed in `C:\ArcSightSmartConnectors\<descriptive_name>\`.
 
-[JOEY: follow how HP doc'd it. just put the bullet list.]
+  >!NOTE
+  >Replace *descriptive_name* with your preferred location name.
 
->!NOTE:
-> descriptive_name is based on the the name of the installer location.
+2. Follow the installation wizard through the following tasks:
+  - Introduction
+  - Choose Install Folder
+  - Choose Install Set
+  - Choose Shortcut Folder
+  - Pre-Installation Summary
+  - Installing...
 
-2. Open File Explorer and put the two configuration files in the installation location, for example:
+  You can keep the default values for each of these tasks.
+
+3. Open File Explorer and put the two configuration files in the installation location, for example:
 
   - WDATP-connector.jsonparser.properties: `C:\ArcSightSmartConnectors\<descriptive_name>\current\user\agent\flexagent\`
   - WDATP-connector.properties: `C:\ArcSightSmartConnectors\<descriptive_name>\`
 
-  [AVIV - I BELIEVE THERE ARE SEVERAL SCREENS BEFORE THE CONNECTOR SETUP IS DISPLAYED. CAN YOU PROVIDE THOSE PLEASE? yes, Aviv to provide, but joey to doc only - CELA]
+4. After the installation of the core connector completes, the Connector Setup window opens. In the Connector Setup window, select **Add a Connector**.
 
-3.After installation completes, the Connector Setup window opens. In the Connector Setup window, select **Add a Connector**.
-
- ![Connector Setup window - select Add a Connector](images/hp-1.png)
-
-4. Select the **ArcSight FlexConnector REST** connector and click **Next**.
-![Connector Setup window - select ArcSight FlexConnector REST](images/hp-2.png)
+5. Select the **ArcSight FlexConnector REST** connector and click **Next**.
 
 6.	Type the following information in the parameter details form. All other values in the form are optional and can be left blank.
 
@@ -79,9 +89,7 @@ Configuration File | Type in the name of the client property file. It must match
 Events URL |	https://DataAccess-PRD.trafficmanager.net:444/api/alerts
 Authentication Type |	OAuth 2
 OAuth 2 Client Properties file	| Select wdatp-connector.properties.
-Refresh Token	| [JOEY fix this part!!] User either the URL or the restutil tool. <br> a. Open a command prompt.  Browse to `C:\ArcSightSmartConnectors\<descriptive_name>\current\bin`. b. Type: `arcsight restutil token -config C:\ArcSightSmartConnectors_Prod\WDATP\WDATP-connector.properties`.A Web browser window will open. c.  A browser will open. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. d.	A refresh token is provided in the command prompt.
-
-![Connector Setup - Enter parameter details](images/hp-3.png)
+Refresh Token	| Use either the Windows Defender ATP token URL or the restutil tool to get your refresh token. <br> **Get your refresh token using the Windows Defender ATP token URL:** </br> Open a browser and connect to the following URL: `https://DataAccess-PRD.trafficmanager.net:444/api/FetchToken?clientId=f7c1acd8-0458-48a0-a662-dba6de049d1c&tenantId=<tenant ID>&clientSecret=<clientSecret>`</br> </br>NOTE: Replace the *tenantID* value with your tenant ID.</br> **Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to `C:\ArcSightSmartConnectors\<descriptive_name>\current\bin`. </br> b. Type: `arcsight restutil token -config C:\ArcSightSmartConnectors_Prod\WDATP\WDATP-connector.properties`.A Web browser window will open. </br> c. A web browser will open. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> d.	A refresh token is provided in the command prompt.
 
 7. You can leave the destination parameter fields with the default values.
 ![Connector Setup - Enter parameter details](images/hp-5.png)
