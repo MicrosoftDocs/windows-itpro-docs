@@ -85,7 +85,7 @@ Invoices are now a supported payment method for Minecraft: Education Edition. Th
 
 ### Find your invoice
 
-After you've finised the purchase, you can find your invoice by checking **Minecraft: Education Edition** in your **Inventory**. 
+After you've finished the purchase, you can find your invoice by checking **Minecraft: Education Edition** in your **Inventory**. 
 
 > **Note**: After you complete a purchase, it can take up to twenty-four hours for the app to appear in **Inventory**.
 
