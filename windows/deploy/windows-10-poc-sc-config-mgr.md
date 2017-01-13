@@ -418,7 +418,8 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     DoCapture=YES
     OSInstall=Y
     AdminPassword=pass@word1
-    TimeZoneName=Pacific Standard Time 
+    TimeZoneName=Pacific Standard TimeZoneName
+    OSDComputername=#Left("PC-%SerialNumber%",7)#
     JoinWorkgroup=WORKGROUP
     HideShell=YES
     FinishAction=SHUTDOWN
@@ -707,7 +708,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
 5. At the command prompt, type **explorer.exe** and review the Windows PE file structure. 
 
-7. The smsts.log file is critical for troubleshooting any installation problems that might be encountered. Depending on the deployment phase, the smsts.log file is created in different locations:
+6. The smsts.log file is critical for troubleshooting any installation problems that might be encountered. Depending on the deployment phase, the smsts.log file is created in different locations:
     - X:\windows\temp\SMSTSLog\smsts.log before disks are formatted.
     - x:\smstslog\smsts.log after disks are formatted.
     - c:\_SMSTaskSequence\Logs\Smstslog\smsts.log before the System Center Configuration Manager client is installed.
@@ -722,8 +723,49 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
 9. Close the Map Network Drive window, the Explorer window, and the command prompt.
 
-4. The **Windows 10 Enterprise x64** task sequence is selected in the Task Sequenc Wizard. Click **Next** to continue with the deployment.
+10. The **Windows 10 Enterprise x64** task sequence is selected in the Task Sequenc Wizard. Click **Next** to continue with the deployment.
 
+11. The task sequence will require several minutes to complete. You can monitor progress of the task sequence using the MDT Deployment Workbench under Deployment Shares > MDTProduction > Monitoring. The task sequence will:
+    - Install Windows 10
+    - Install the Configuration Manager client and hotfix
+    - Join the computer to the contoso.com domain
+    - Install any applications that were specified in the reference image
+
+12. When Windows 10 installation has completed, sign in to PC4 using the **contoso\administrator** account.
+
+13. Right-click **Start**, click **Run**, type **control appwiz.cpl**, press ENTER, click Turn Windows features on or off, and verify that **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** is installed. This is a feature included in the reference image.
+
+14. Shut down the PC4 VM.
+
+## Refresh a client with Windows 10 using Configuration Manager
+
+1. Verify that PC1 is in its original state, which was saved as a checkpoint in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md).
+
+2. If a PC1 checkpoint has not already been saved, then save a checkpoint by typing the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
+
+    ```
+    Checkpoint-VM -Name PC1 -SnapshotName BeginState
+    ```
+
+3. Sign in to PC using the contoso\administrator account and type the following at an elevated command prompt:
+
+
+
+CCMSetup.exe /mp:PS1 /logon SMSSITECODE=AUTO
+
+3. On SRV1, in the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections** and then click **Create Device Collection**.
+
+4. Use the following settings in the **Create Device Collection Wizard**:
+    - General > Name: **Install Windows 10 Enterprise x64**<BR>
+    - Geneneral > Limiting collection: **All Systems**<BR>
+    - Membership Rules > Add Rule: **Direct Rule**<BR>
+    - The **Create Direct Membership Rule Wizard** opens, click **Next**<BR>
+    - Search for Resources > Resource class: **System Resource**<BR>
+    - Search for Resources > Attribute name: **Name**<BR>
+    - Search for Resources > Value: **PC1**<BR>
+    - Select Resources > Value: **PC1**<BR>
+
+## Replace a client with Windows 10 using Configuration Manager
 
 ## Related Topics
 

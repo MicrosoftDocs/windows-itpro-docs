@@ -161,7 +161,8 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     DoCapture=YES
     OSInstall=Y
     AdminPassword=pass@word1
-    TimeZoneName=Pacific Standard Time 
+    TimeZoneName=Pacific Standard Time
+    OSDComputername=#Left("PC-%SerialNumber%",7)#
     JoinWorkgroup=WORKGROUP
     HideShell=YES
     FinishAction=SHUTDOWN

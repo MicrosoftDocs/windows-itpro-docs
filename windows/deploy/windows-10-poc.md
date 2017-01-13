@@ -14,10 +14,12 @@ author: greg-lindsay
 
 -   Windows 10
 
-This guide contains instructions to configure a proof of concept (PoC) environment requiring a minimum amount of resources. The guide makes extensive use of Windows PowerShell and Hyper-V. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, see the following Windows 10 deployment guides:
+This guide contains instructions to configure a proof of concept (PoC) environment requiring a minimum amount of resources. The guide makes extensive use of Windows PowerShell and Hyper-V. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, see the following Windows 10 PoC deployment guides:
 
 - [Step by step: Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)<BR>
 - [Step by step: Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)<BR>
+
+The PoC deployment guides are intended to provide a demonstration of Windows 10 deployment tools and processes for IT professionals that are not familiar with these tools, and those that are interested in configuring a proof of concept environment for their own purposes. The instructions in this guide should not be used in a production setting, and are not meant to replace the instructions found in production deployment guidance.
 
 Approximately 3 hours are required to configure the PoC environment. You will need a Hyper-V capable computer running Windows 8.1 or later with at least 16GB of RAM. Detailed [requirements](#hardware-and-software-requirements) are provided below. You will also need to have a [Microsoft account](https://www.microsoft.com/account) to use for downloading evaluation software.
 
@@ -31,7 +33,7 @@ Hyper-V is installed, configured and used extensively in this guide. If you are 
 
 This guide contains instructions for three general procedures: Install Hyper-V, configure Hyper-V, and configure VMs. If you already have a computer running Hyper-V, you can use this computer and skip the first procedure. In this case, your virtual switch settings must be modified to match those used in this guide, or the steps in this guide can be modified to use your existing Hyper-V settings.
 
-After completing the instructions in this guide, you will have a PoC environment that enables you to test Windows 10 deployment procedures with current tools, as documented in subsequent guides. Links are provided to download trial versions of Windows Server 2012, Windows 10 Enterprise, and all deployment tools necessary to complete the lab.
+After completing the instructions in this guide, you will have a PoC environment that enables you to test Windows 10 deployment procedures by following instructions in companion guides that are written to use the PoC environment. Links are provided to download trial versions of Windows Server 2012, Windows 10 Enterprise, and all deployment tools necessary to complete the lab.
 
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed. 
 
@@ -249,6 +251,8 @@ w10-enterprise.iso
 </pre>
 
 ### Convert PC to VM
+
+>Important: Do not attempt to use the VM resulting from the following procedure as a reference image. Also, to avoid conflicts with existing clients, do not start the VM outside the PoC network.
 
 <TABLE BORDER=2><TR><TD>
 If you do not have a PC available to convert to VM, perform the following steps to download an evaluation VM:
