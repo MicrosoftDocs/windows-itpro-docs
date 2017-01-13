@@ -22,7 +22,7 @@ The PoC environment is a virtual network running on Hyper-V with three virtual m
 - **SRV1**: A dual-homed contoso.com domain member server, DNS server, and default gateway providing NAT service for the PoC network.
 - **PC1**: A contoso.com member computer running Windows 7, Windows 8, or Windows 8.1 that has been shadow-copied from a physical computer on your corporate network.
 
->This guide leverages the Hyper-V server role to perform procedures. If you do not complete all steps in a single session, consider using [checkpoints](https://technet.microsoft.com/library/dn818483.aspx) and [saved states](https://technet.microsoft.com/library/ee247418.aspx) to pause, resume, or restart your work.
+>This guide uses the Hyper-V server role. If you do not complete all steps in a single session, consider using [checkpoints](https://technet.microsoft.com/library/dn818483.aspx) and [saved states](https://technet.microsoft.com/library/ee247418.aspx) to pause, resume, or restart your work.
 
 ## In this guide
 
@@ -192,7 +192,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     [Default]
     DeployRoot=\\SRV1\MDTBuildLab$
     UserDomain=CONTOSO
-    UserID=administrator
+    UserID=MDT_BA
     UserPassword=pass@word1
     SkipBDDWelcome=YES
     ```
@@ -361,7 +361,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     [Default]
     DeployRoot=\\SRV1\MDTProd$
     UserDomain=CONTOSO
-    UserID=administrator
+    UserID=MDT_BA
     UserPassword=pass@word1
     SkipBDDWelcome=YES
     ```

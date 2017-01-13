@@ -542,7 +542,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
 6. On the Boot Image page, browse and select the **Zero Touch WinPE x64** boot image package and then click **Next**.
 
-7. On the MDT Package page, select **Create a new Microsoft Deployment Toolkit Files package**, under **Package source folder to be created (UNC Path):**, type **\\SRV1\Sources$\OSD\MDT\MDT 2013**, and then click **Next**.
+7. On the MDT Package page, select **Create a new Microsoft Deployment Toolkit Files package**, under **Package source folder to be created (UNC Path):**, type **\\\SRV1\Sources$\OSD\MDT\MDT 2013**, and then click **Next**.
 
 8. On the MDT Details page, next to **Name:** type **MDT 2013** and then click **Next**.
 
@@ -657,6 +657,36 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 4. Click **Next** five times to accept defaults on the Scheduling, User Experience, Alerts, and Distribution Points pages.
 
 5. Click **Close**.
+
+## Configure a boundary group
+
+1. In the Administration workspace, right-click **Boundaries** and then click **Create Boundary**.
+
+2. Next to **Description**, type **PS1**, next to **Type** choose **Active Directory Site**, and then click **Browse**.
+
+3. Choose **Default-First-Site-Name** and then click **OK**.
+
+4. In the Administration workspace, right-click **Boundary Groups** and then click **Create Boundary Group**.
+
+5. Next to **Name**, type **PS1 Site Assignment and Content Location**, click **Add**, select the **Default-First-Site-Name** boundary and then click **OK**.
+
+6. On the **References** tab in the **Create Boundary Group** window select the **Use this boundary group for site assignment** checkbox.
+
+7. Click **Add**, select the **\\\SRV1.contoso.com** checkbox, and then click **OK** twice.
+
+## Configure the network access account
+
+1. In the Administration workspace, expand **Site Configuration** and click **Sites**.
+
+2. On the **Home** ribbon at the top of the console window, click **Configure Site Components** and then click **Software Distribution**.
+
+3. On the **Network Access Account** tab, choose **Specify the account that accesses network locations**.
+
+4. Click the yellow starburst and then click **New Account**.
+
+5. Click **Browse** and then under **Enter the object name to select**, type **CM_NAA** and click **OK**.
+
+6. Next to **Password** and **Confirm Password**, type **pass@word1**, and then click **OK** twice.
 
 ## Deploy Windows 10 using PXE and Configuration Manager
 
