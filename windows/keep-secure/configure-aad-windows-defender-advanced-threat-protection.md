@@ -53,11 +53,10 @@ You need to add an application in your Azure Active Directory (AAD) tenant then 
 
 13. Click **Save** and copy the key in a safe place. You'll need this key to authenticate the client application on Azure Active Directory.
 
-14. Open a web browser and connect to the following URL: `https://DataAccess-PRD.trafficmanager.net:444/api/FetchToken?clientId=<clientID>&tenantId=<tenant ID>&clientSecret=1234`<br>
+14. Open a web browser and connect to the following URL: `https://DataAccess-PRD.trafficmanager.net:444/api/FetchToken?clientId=f7c1acd8-0458-48a0-a662-dba6de049d1c&tenantId=<tenant ID>&clientSecret=1234`<br>
 
   An Azure login page appears.
   > [!NOTE]
-  > - Replace *clientID* with your client ID.
   > - Replace *tenant ID* with your actual tenant ID.  
   > - Keep the *clientSecret* as is. This is a dummy value, but the parameter must appear.
 
