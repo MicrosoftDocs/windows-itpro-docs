@@ -107,6 +107,8 @@ You'll use these values to generate the refresh token.
 
 3.  Save the refresh token value in a safe place. You'll need this value when configuring your SIEM tool.
 
+After configuring your AAD application and generating a refresh token, you can proceed to configure your SIEM tool.
+
 ## Related topics
 - [Configure security information and events management (SIEM) tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)
 - [Configure Splunk to consume alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
