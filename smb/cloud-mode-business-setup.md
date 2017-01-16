@@ -134,6 +134,30 @@ When adding users, you can also assign admin privileges to certain users in your
 
   ![Verify users and assigned product licenses](images/o365_active_users.png)
 
+### 2.3 Add Microsoft Intune
+Intune...
+
+**To add Microsoft Intune**
+
+1. In the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">Office 365 admin center</a>, select **Billing > Purchase services**.
+2. In the **Home > Purchase services** screen, search for **Microsoft Intune**. Hover over **Microsoft Intune** to see the options to start a free 30-day trial or to buy now.
+3. Confirm your order to enable access to Microsoft Intune.
+4. In the admin center, the Intune licenses will show as available and ready to be assigned to users. Select **Users > Active users** and then edit the product licenses assigned to the users to turn on **Intune A Direct**.
+
+  **Figure 11** - Assign Intune licenses
+
+  ![Assign Microsoft Intune licenses to users](images/o365_assign_intune_license.png)
+
+5. In the admin center, confirm that **Intune** shows up in the list under **Admin centers**. If it doesn't, sign out and then sign back in and then check again.
+6. Select **Intune**. This will take you to the Intune management portal.
+
+  **Figure 12** - Microsoft Intune management portal
+
+  ![Microsoft Intune management portal](images/intune_portal_home.png)
+
+7. TBD - To be continued
+
+
 ### 2.3 Add Azure AD to your domain
 Microsoft Azure is an open and flexible cloud platform that enables you to quickly build, deploy, and manage apps across a global network of Microsoft-managed datacenters. In this walkthrough, we won't be using the full power of Azure and we'll primarily use it to create groups that we then use for provisioning through Intune. 
 
@@ -146,21 +170,21 @@ Microsoft Azure is an open and flexible cloud platform that enables you to quick
 
 2. If you have not signed up for Azure AD before, you will see the following message. To proceed with the rest of the walkthrough, you need to activate an Azure subscription.
 
-  **Figure 11** - Access to Azure AD is not available
+  **Figure 13** - Access to Azure AD is not available
 
   ![Access to Azure AD not available](images/azure_ad_access_not_available.png)
 
 3. From the error message, select the country/region for your business. This should match with the location you specified when you signed up for Office 365.
 4. Click **Azure subscription**. This will take you to a free trial sign up screen.
 
-  **Figure 12** - Sign up for Microsoft Azure
+  **Figure 14** - Sign up for Microsoft Azure
 
   ![Sign up for Microsoft Azure](images/azure_ad_sign_up_screen.png)
 
 5. In the **Free trial sign up** screen, fill in the required information and then click **Sign up**.
 6. After you sign up, you should see the message that your subscription is ready. Click **Start managing my service**.
 
-  **Figure 13** - Start managing your Azure subscription
+  **Figure 15** - Start managing your Azure subscription
 
   ![Start managing your Azure subscription](images/azure_ad_successful_signup.png)
 
@@ -177,26 +201,26 @@ You can use the group(s) you add in Azure AD as the group you use for provisioni
 
   Afterwards, you should see a list of active directories. In the following example, **Fabrikam Design** is the active directory.
 
-  **Figure 14** - Azure first sign-in screen
+  **Figure 16** - Azure first sign-in screen
 
   ![Select Azure AD](images/azure_portal_classic_configure_directory.png)
 
 2. Select the directory (such as Fabrikam Design) to go to the directory's home page.
 
-  **Figure 15** - Directory home page
+  **Figure 17** - Directory home page
 
   ![Directory home page](images/azure_portal_classic_directory_ready.png)
 
 3. From the menu options on top, select **Groups**.
 
-  **Figure 16** - Azure AD groups
+  **Figure 18** - Azure AD groups
 
   ![Add groups in Azure AD](images/azure_portal_classic_groups.png)
 
 4. Select **Add a group** (from the top) or **Add group** at the bottom.
 5. In the **Add Group** window, add a name, group type, and description for the group and click the checkmark to save your changes. The new group will appear on the groups list.
 
-  **Figure 17** - Newly added group in Azure AD
+  **Figure 19** - Newly added group in Azure AD
 
   ![Verify the new group appears on the list](images/azure_portal_classic_all_users_group.png)
 
@@ -204,7 +228,7 @@ You can use the group(s) you add in Azure AD as the group you use for provisioni
 
   The members that were added to the group will appear on the list.
 
-  **Figure 18** - Members in the new group
+  **Figure 20** - Members in the new group
 
   ![Members added to the new group](images/azure_portal_classic_members_added.png)
 
@@ -224,14 +248,14 @@ You can read <a href="https://blogs.technet.microsoft.com/enterprisemobility/201
 
   The list of applications for your company will appear. **Microsoft Intune** will be one of the applications on the list.
 
-  **Figure 19** - List of applications for your company
+  **Figure 21** - List of applications for your company
 
   ![List of applications for your company](images/azure_portal_classic_applications.png)
 
 2. Select **Microsoft Intune** to configure the application.
 3. In the Microsoft Intune configuration page, click **Configure** to start automatic MDM enrollment configuration with Intune.
 
-  **Figure 20** - Configure Microsoft Intune in Azure
+  **Figure 22** - Configure Microsoft Intune in Azure
 
   ![Configure Microsoft Intune in Azure](images/azure_portal_classic_configure_intune_app.png)
 
@@ -250,12 +274,22 @@ You can read <a href="https://blogs.technet.microsoft.com/enterprisemobility/201
 
 5. After you've chosen how to manage devices for users, select **Save** to enable automatic MDM enrollment with Intune.
 
-  **Figure 21** - Configure Microsoft Intune
+  **Figure 23** - Configure Microsoft Intune
 
   ![Configure automatic MDM enrollment with Intune](images/azure_portal_classic_configure_intune_mdm_enrollment.png)
 
 ### 2.6 Configure Windows Store for Business for app distribution
-TBD
+Next, you'll need to configure Windows Store for Business to distribute apps with a management tool such as Intune.
+
+In this part of the walkthrough, we'll be working on the <a href="https://manage.microsoft.com/" target="_blank">Microsoft Intune management portal</a> and <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Windows Store for Business</a>.
+
+**To associate your Store account with Intune and configure synchronization**
+
+1. From the <a href="https://manage.microsoft.com/" target="_blank">Microsoft Intune management portal</a>, select **Admin**.
+2. Sign into <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Windows Store for Business</a> using the same tenant account that you used to sign into Intune.
+3. Accept the EULA.
+5. In the Store portal, select **Settings > Management tools** to go to the management tools page.\
+6. TBD - To be continued.
 
 ## 3. Set up devices
 
