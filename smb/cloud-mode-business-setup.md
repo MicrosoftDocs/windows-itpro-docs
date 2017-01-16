@@ -27,7 +27,7 @@ In this walkthrough, we'll show you how to deploy and manage a full cloud IT sol
 - Create policies and app deployment rules
 - Log in as a user and start using the device
 
-Go to the [Microsoft Business site](http://business.microsoft.com) and select **Products** to learn more about pricing and purchasing options for businesses.
+Go to the <a href="http://business.microsoft.com" target="_blank">Microsoft Business site</a> and select **Products** to learn more about pricing and purchasing options for businesses.
 
 ## 1. Get ready
 Here's a few things to keep in mind before you get started:
@@ -40,15 +40,15 @@ Here's a few things to keep in mind before you get started:
 To set up a cloud infrastructure for your organization, follow the steps in this section.
 
 ### 2.1 Set up Office 365 for business
-See [Set up Office 365 for business](https://support.office.com/en-us/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) to learn more about the setup steps for businesses and nonprofits who have Office 365. You can watch video and learn how to:
+See <a href="https://support.office.com/en-us/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa" target="_blank">Set up Office 365 for business</a> to learn more about the setup steps for businesses and nonprofits who have Office 365. You can watch video and learn how to:
 - Plan your setup
 - Create Office 365 accounts and how to add your domain.
 - Install Office
 
-To set up your Office 365 business tenant, see [Get Started with Office 365 for business](https://support.office.com/en-us/article/Get-started-with-Office-365-for-Business-d6466f0d-5d13-464a-adcb-00906ae87029).
+To set up your Office 365 business tenant, see <a href="https://support.office.com/en-us/article/Get-started-with-Office-365-for-Business-d6466f0d-5d13-464a-adcb-00906ae87029" target="_blank">Get Started with Office 365 for business</a>.
 
 If this is the first time you're setting this up, and you'd like to see how it's done, you can follow these steps to get started:
-1. Go to the [Office 365](https://business.microsoft.com/en-us/products/office-365) page in the [Microsoft Business site](http://business.microsoft.com). Select **Try now** to use the Office 365 Business Premium Trial or select **Buy now** to sign up for Office 365 Business Premium. In this walkthrough, we'll select **Try now**.
+1. Go to the <a href="https://business.microsoft.com/en-us/products/office-365" target="_blank">Office 365</a> page in the <a href="http://business.microsoft.com" target="_blank">Microsoft Business site</a>. Select **Try now** to use the Office 365 Business Premium Trial or select **Buy now** to sign up for Office 365 Business Premium. In this walkthrough, we'll select **Try now**.
 
   **Figure 1** - Try or buy Office 365
 
@@ -56,7 +56,7 @@ If this is the first time you're setting this up, and you'd like to see how it's
 
 2. Fill out the sign up form and provide information about you and your company.
 3. Create a user ID and password to use to sign into your account.
-  This step creates an onmicrosoft.com email address. You can use this email address to sign in to the various admin centers. Save your sign-in info so you can use it to sign into https://portal.office.com (the admin portal).
+  This step creates an onmicrosoft.com email address. You can use this email address to sign in to the various admin centers. Save your sign-in info so you can use it to sign into <a href="https://portal.office.com" target="_blank">https://portal.office.com</a> (the admin portal).
 4. Select **Create my account** and then enter the phone number you used in step 2 to verify your identity. You'll be asked to enter your verification code.
 5. Select **You're ready to go...** which will take you to the Office 365 portal.
 
@@ -76,7 +76,7 @@ If this is the first time you're setting this up, and you'd like to see how it's
 
   ![Office 365 admin center](images/office365_admin_portal.png)
 
-8. Go back to the [Office 365 admin center page](https://portal.office.com/AdminPortal/Home?switchtomoderndefault=true#/homepage) to add or buy a domain.
+8. Go back to the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">Office 365 admin center</a> to add or buy a domain.
   1. Select the **Domains** option.
 
     **Figure 4** - Option to add or buy a domain
@@ -98,21 +98,23 @@ If this is the first time you're setting this up, and you'd like to see how it's
 
     ![Verify your domains in O365 admin center](images/office365_additional_domain.png)
 
-### 2.2 Add users individually or in bulk
+### 2.2 Add users and assign product licenses
 Once you've set up Office and added your domain, it's time to add users so they have access to Office 365. People in your organization need an account before they can sign in and access Office 365. The easiest way to add users is to add them one at a time in the Office 365 admin center.
 
 When adding users, you can also assign admin privileges to certain users in your team. You'll also want to assign **Product licenses** to each user so that subscriptions can be assigned to the person.
 
-1. In the [Office 365 admin center page](https://portal.office.com/AdminPortal/Home?switchtomoderndefault=true#/homepage), select **Users > Active users**.
+**To add users and assign product licenses**
+
+1. In the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">Office 365 admin center</a>, select **Users > Active users**.
 
   **Figure 7** - Add users
 
   ![Add Office 365 users](images/office365_users.png)
 
-2. In the **Home > Active users** page, you can add users individually or in bulk.
+2. In the **Home > Active users** page, add users individually or in bulk.
   - To add users one at a time, select **+ Add a user**.
 
-    If you select this option, you'll see the **New user** screen and you can add details about the new user including their name, user name, role, and so on. You also have the opportunity to assign **Product licenses**. For detailed step-by-step info on adding a user account, see *Add a user account in the Office 365 admin center* in [Add users individually or in bulk to Office 365 - Admin Help](https://support.office.com/en-us/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+    If you select this option, you'll see the **New user** screen and you can add details about the new user including their name, user name, role, and so on. You also have the opportunity to assign **Product licenses**. For detailed step-by-step info on adding a user account, see *Add a user account in the Office 365 admin center* in <a href="https://support.office.com/en-us/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec" target="_blank">Add users individually or in bulk to Office 365 - Admin Help</a>.
 
     **Figure 8** - Add an individual user
 
@@ -120,28 +122,137 @@ When adding users, you can also assign admin privileges to certain users in your
 
   - To add multiple users at once, select **More** and then choose **+ Import multiple users**. If you select this option, you'll need to create and upload a CSV file containing the list of users.
 
-    The **Import multiple users** screen includes a link where you can learn more about importing multiple users and also links for downloading a sample CSV file (one with headers only and another with headers and sample user information). For detailed step-by-step info on adding multiple users to Office 365, see [Add several users at the same time to Office 365 - Admin Help](https://support.office.com/en-us/article/Add-several-users-at-the-same-time-to-Office-365-Admin-Help-1f5767ed-e717-4f24-969c-6ea9d412ca88). Once you've added all the users, don't forget to assign **Product licenses** to the new users.
+    The **Import multiple users** screen includes a link where you can learn more about importing multiple users and also links for downloading a sample CSV file (one with headers only and another with headers and sample user information). For detailed step-by-step info on adding multiple users to Office 365, see <a href="https://support.office.com/en-us/article/Add-several-users-at-the-same-time-to-Office-365-Admin-Help-1f5767ed-e717-4f24-969c-6ea9d412ca88" target="_blank">Add several users at the same time to Office 365 - Admin Help</a>. Once you've added all the users, don't forget to assign **Product licenses** to the new users.
 
     **Figure 9** - Import multiple users
 
     ![Import multiple users](images/office365_import_multiple_users.png)
 
+3. Verify that all the users you added appear in the list of **Active users**. The **Status** should indicate the product licenses that were assigned to them.
+
+  **Figure 10** - List of active users
+
+  ![Verify users and assigned product licenses](images/o365_active_users.png)
+
 ### 2.3 Add Azure AD to your domain
-In the Office 365 admin center, select **Admin centers > Azure AD**.
+Microsoft Azure is an open and flexible cloud platform that enables you to quickly build, deploy, and manage apps across a global network of Microsoft-managed datacenters. In this walkthrough, we won't be using the full power of Azure and we'll primarily use it to create groups that we then use for provisioning through Intune. 
+
+**To add Azure AD to your domain**
+
+1. In the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">Office 365 admin center</a>, select **Admin centers > Azure AD**.
 
   > [!NOTE]
   > You will need Azure AD Premium to configure automatic MDM enrollment with Intune.
 
-You should see the Microsoft Azure portal once you've successfully added Azure AD.
+2. If you have not signed up for Azure AD before, you will see the following message. To proceed with the rest of the walkthrough, you need to activate an Azure subscription.
 
-**Figure 5** - Microsoft Azure portal
-![Microsoft Azure portal](images/azure_ad_portal.png)
+  **Figure 11** - Access to Azure AD is not available
+
+  ![Access to Azure AD not available](images/azure_ad_access_not_available.png)
+
+3. From the error message, select the country/region for your business. This should match with the location you specified when you signed up for Office 365.
+4. Click **Azure subscription**. This will take you to a free trial sign up screen.
+
+  **Figure 12** - Sign up for Microsoft Azure
+
+  ![Sign up for Microsoft Azure](images/azure_ad_sign_up_screen.png)
+
+5. In the **Free trial sign up** screen, fill in the required information and then click **Sign up**.
+6. After you sign up, you should see the message that your subscription is ready. Click **Start managing my service**.
+
+  **Figure 13** - Start managing your Azure subscription
+
+  ![Start managing your Azure subscription](images/azure_ad_successful_signup.png)
+
+  This will take you to the <a href="https://portal.azure.com" target="_blank">Microsoft Azure portal</a>.
 
 ### 2.4 Add groups in Azure AD
-TBD
+To add Azure AD group(s), we will use the <a href="https://manage.windowsazure.com/" target="_blank">classic Azure portal (https://manage.windowsazure.com)</a>. See <a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-manage-groups" target="_blank">Managing groups in Azure Active Directory</a> for more information about managing groups.
+
+You can use the group(s) you add in Azure AD as the group you use for provisioning settings or apps through Intune.
+
+**To add groups in Azure AD**
+
+1. If this is the first time you're setting up your directory, when you navigate to the **Azure Active Directory** node in the <a href="https://manage.windowsazure.com/" target="_blank">classic Azure portal</a>, you will see a screen informing you that your directory is ready for use.
+
+  Afterwards, you should see a list of active directories. In the following example, **Fabrikam Design** is the active directory.
+
+  **Figure 14** - Azure first sign-in screen
+
+  ![Select Azure AD](images/azure_portal_classic_configure_directory.png)
+
+2. Select the directory (such as Fabrikam Design) to go to the directory's home page.
+
+  **Figure 15** - Directory home page
+
+  ![Directory home page](images/azure_portal_classic_directory_ready.png)
+
+3. From the menu options on top, select **Groups**.
+
+  **Figure 16** - Azure AD groups
+
+  ![Add groups in Azure AD](images/azure_portal_classic_groups.png)
+
+4. Select **Add a group** (from the top) or **Add group** at the bottom.
+5. In the **Add Group** window, add a name, group type, and description for the group and click the checkmark to save your changes. The new group will appear on the groups list.
+
+  **Figure 17** - Newly added group in Azure AD
+
+  ![Verify the new group appears on the list](images/azure_portal_classic_all_users_group.png)
+
+6. In the **Groups** tab, select the arrow next to the group (such as **All users**), add members to the group, and then save your changes.
+
+  The members that were added to the group will appear on the list.
+
+  **Figure 18** - Members in the new group
+
+  ![Members added to the new group](images/azure_portal_classic_members_added.png)
+
+7. Repeat steps 2-6 to add other groups. You can add groups based on their roles in your company, based on the apps that each group can use, and so on.
 
 ### 2.5 Configure automatic MDM enrollment with Intune
-TBD
+Now that you have Azure AD Premium and have it properly configured, you can configure automatic MDM enrollment with Intune, which allows users to enroll their Windows devices into Intune management, join their devices directly to Azure AD, and get access to Office 365 resources after sign in.
+
+You can read <a href="https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/" target="_blank">this blog post</a> to learn how you can combine login, Azure AD Join, and Intune MDM enrollment into an easy step so that you can bring your devices into a managed state that complies with the policies for your organization. We will use this blog post as our guide for this part of the walkthrough.
+
+> [!IMPORTANT]  
+> We will use the classic Azure portal instead of the new portal to configure automatic MDM enrollment with Intune.
+
+**To enable automatic MDM enrollment**
+
+1. In to the <a href="https://manage.windowsazure.com/" target="_blank">classic Azure portal</a>, click on your company's Azure Active Directory to go back to the main window. Select **Applications** from the list of directory menu options. 
+
+  The list of applications for your company will appear. **Microsoft Intune** will be one of the applications on the list.
+
+  **Figure 19** - List of applications for your company
+
+  ![List of applications for your company](images/azure_portal_classic_applications.png)
+
+2. Select **Microsoft Intune** to configure the application.
+3. In the Microsoft Intune configuration page, click **Configure** to start automatic MDM enrollment configuration with Intune.
+
+  **Figure 20** - Configure Microsoft Intune in Azure
+
+  ![Configure Microsoft Intune in Azure](images/azure_portal_classic_configure_intune_app.png)
+
+4. In the Microsoft Intune configuration page:
+  - In the **Properties** section, you should see a list of URLs for MDM discovery, MDM terms of use, and MDM compliance.
+
+    > [!NOTE]  
+    > The URLs are automatically configured for your Azure AD tenant so you don't need to change them.
+
+  - In the **Manage devices for these users** section, you can specify which users' devices should be managed by Intune.
+    - **All** will enable all users' Windows 10 devices to be managed by Intune.
+    - **Groups** let you select whether only users that belong to a specific group will have their devices managed by Intune.
+
+    > [!NOTE]  
+    > In this step, choose the group that contains all the users in your organization as members. This is the **All** group.
+
+5. After you've chosen how to manage devices for users, select **Save** to enable automatic MDM enrollment with Intune.
+
+  **Figure 21** - Configure Microsoft Intune
+
+  ![Configure automatic MDM enrollment with Intune](images/azure_portal_classic_configure_intune_mdm_enrollment.png)
 
 ### 2.6 Configure Windows Store for Business for app distribution
 TBD
