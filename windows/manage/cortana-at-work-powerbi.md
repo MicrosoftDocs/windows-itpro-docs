@@ -74,7 +74,7 @@ Before you can start this testing scenario, you must first set up your test envi
 
 9.	Click **Q&A and Cortana**, check the **Allow Cortana to access this dataset** box, and then click **Apply**.
 
-    ![Cortana at work, showing where to find the Cortana-related options](images/cortana-powerbi-retail-analysis-dataset.png)
+    ![Cortana at work, showing where to find the dataset options](images/cortana-powerbi-retail-analysis-dataset.png)
 
     >[!NOTE]
     >It can take up to 30 minutes for a new dataset to appear for Power BI and Cortana. Logging in and out of Windows 10, or otherwise restarting Cortana, causes the new content to appear immediately.<p>If you enable a dataset for Cortana, and that dataset is part of a content pack you own, you’ll need to re-publish for your colleagues to also use it with Cortana.
@@ -84,32 +84,55 @@ You must create special reports, known as _Answer Pages_, to display the most co
 
 After you’ve finished creating your Answer Page, you can continue to the included testing scenarios.
 
-Note
-It can take up to 30 minutes for a custom Answer Page to appear for Power BI and Cortana. Logging in and out of Windows 10, or otherwise restarting Cortana, causes the new content to appear immediately.
-To create a custom sales data Answer Page for Cortana
-1.	In Power BI, click My Workspace, click Create, and then click Report.
+    >[!NOTE]
+    >It can take up to 30 minutes for a custom Answer Page to appear for Power BI and Cortana. Logging in and out of Windows 10, or otherwise restarting Cortana, causes the new content to appear immediately.
+
+**To create a custom sales data Answer Page for Cortana**
+1.	In Power BI, click **My Workspace**, click **Create**, and then click **Report**.
+
+    ![Cortana at work, showing where to create the new report](images/cortana-powerbi-create-report.png)
  
-2.	In the Create Report screen, click the Retail Analysis Sample, and then click Create.
-A blank report page appears.
-3.	In the Visualizations pane, click the paint roller icon, expand Page Size, and then pick Cortana from the Type drop-down list.
+2.	In the **Create Report** screen, click the **Retail Analysis Sample**, and then click **Create**.
+
+    A blank report page appears.
+
+3.	In the **Visualizations** pane, click the paint roller icon, expand **Page Size**, and then pick **Cortana** from the **Type** drop-down list.
+
+    ![Cortana at work, showing the Visualizations options](images/cortana-powerbi-pagesize.png)
+
+4.	In the **Fields** pane, click to expand **Sales**, expand **This year sales**, and then add both **Value** and **Goal**.
+
+    ![Cortana at work, showing the Field options](images/cortana-powerbi-field-selection.png)
  
-4.	In the Fields pane, click to expand Sales, expand This year sales, and then add both Value and Goal.
- 
-The automatically generated graph is added to your blank report. You have the option to change colors, add borders, add additional visualizations, and modify this page so that it answers the question about sales data as precisely, and in as custom a way, as you want. You just need to make sure that it all stays within the page borders.
-5.	In the Visualizations pane, click the paint roller icon again, expand Page Information, type Sales data 2016 into the Name box, turn on Q&A, and then add alternate report names (separated by commas) into the text box. 
-The alternate names help Cortana to know what questions to look for and when to show this report. To also improve your results, you should avoid using the names of your report columns.
- 
-6.	Click File, click Save as, and save the report as Sales data 2016. 
-Because this is part of the Retail Analysis Sample, it will automatically be included as part of the dataset you included for Cortana. However, you will still need to log in and out of Windows 10, or otherwise restart Cortana, before the new content appears.
-Test Scenario: Use Cortana to show info from Power BI in your organization
+    The automatically generated graph is added to your blank report. You have the option to change colors, add borders, add additional visualizations, and modify this page so that it answers the question about sales data as precisely, and in as custom a way, as you want. You just need to make sure that it all stays within the page borders.
+
+5.	In the **Visualizations** pane, click the paint roller icon again, expand **Page Information**, type _Sales data 2016_ into the **Name** box, turn on **Q&A**, and then add alternate report names (separated by commas) into the text box.
+
+    The alternate names help Cortana to know what questions to look for and when to show this report. To also improve your results, you should avoid using the names of your report columns.
+
+    ![Cortana at work, showing the page info for your specific report](images/cortana-powerbi-report-qna.png)
+    
+6.	Click **File**, click **Save as**, and save the report as _Sales data 2016_. 
+
+    Because this is part of the Retail Analysis Sample, it will automatically be included as part of the dataset you included for Cortana. However, you will still need to log in and out of Windows 10, or otherwise restart Cortana, before the new content appears.
+
+## Test Scenario: Use Cortana to show info from Power BI in your organization
 Now that you’ve set up your device, you can use Cortana to show your info from within Power BI.
-To use Cortana with Power BI
-1.	Click on the Cortana icon in the taskbar, and then click in the Search bar.
-2.	Type This year in sales.
- 	Cortana shows you the available results.
+
+**To use Cortana with Power BI**
+1.	Click on the **Cortana** icon in the taskbar, and then click in the **Search** bar.
+
+2.	Type _This year in sales_.
+
+    Cortana shows you the available results.
+
+    ![Cortana at work, showing the best matches based on the Power BI data](images/cortana-powerbi-search.png)
  	 
-3.	In the Power BI area, click This year in sales – in Retail Analysis Sample
+3.	In the **Power BI** area, click **This year in sales – in Retail Analysis Sample**.
+
  	Cortana returns your custom report.
+
+    ![Cortana at work, showing your custom report from Power BI](images/cortana-powerbi-myreport.png)
  	 
- 	Note
-For more info about how to connect your own data, build your own custom Power BI cards and answer pages for Cortana, and how to share the cards with everyone in your organization, see Use Power BI to create a custom Answer Page for Cortana.
+>[!NOTE]
+>For more info about how to connect your own data, build your own custom Power BI cards and Answer Pages for Cortana, and how to share the cards with everyone in your organization, see [Use Power BI to create a custom Answer Page for Cortana](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-cortana-desktop-entity-cards/).
