@@ -19,7 +19,7 @@ This guide contains instructions to configure a proof of concept (PoC) environme
 - [Step by step: Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)<BR>
 - [Step by step: Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)<BR>
 
-The PoC deployment guides are intended to provide a demonstration of Windows 10 deployment tools and processes for IT professionals that are not familiar with these tools, and those that are interested in configuring a proof of concept environment for their own purposes. The instructions in this guide should not be used in a production setting, and are not meant to replace the instructions found in production deployment guidance.
+The PoC deployment guides are intended to provide a demonstration of Windows 10 deployment tools and processes for IT professionals that are not familiar with these tools, and those that are interested in setting up a proof of concept environment. The instructions in this guide should not be used in a production setting, and are not meant to replace the instructions found in production deployment guidance.
 
 Approximately 3 hours are required to configure the PoC environment. You will need a Hyper-V capable computer running Windows 8.1 or later with at least 16GB of RAM. Detailed [requirements](#hardware-and-software-requirements) are provided below. You will also need to have a [Microsoft account](https://www.microsoft.com/account) to use for downloading evaluation software.
 
