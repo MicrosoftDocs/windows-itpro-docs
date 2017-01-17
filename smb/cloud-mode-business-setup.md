@@ -16,9 +16,6 @@ author: CelesteDG
 
 -   Windows 10
 
-> [!IMPORTANT]  
-> This is placeholder content only. Everything is TBD.
-
 In this walkthrough, we'll show you how to deploy and manage a full cloud IT solution for your small to medium business using Microsoft Azure AD, Intune, Office 365, and Windows. We'll show you the basics on how to:
 - Acquire an Office 365 business domain
 - Add Microsoft Intune and Azure Active Directory (AD) Premium licenses to your business tenant
@@ -35,6 +32,7 @@ Here's a few things to keep in mind before you get started:
   - If you already own a domain, you can add this during the Office 365 setup.
   - If you don't already own a domain, you'll have the option to purchase a domain from the Office 365 admin center. We'll show how to do this as part of the walkthrough.
 - You'll need an email address to create your Office 365 tenant.
+- We recommend that you use Internet Explorer for the entire walkthrough. Right click on Internet Explorer and then choose **Start InPrivate Browsing**.
 
 ## 2. Set up your cloud infrastructure
 To set up a cloud infrastructure for your organization, follow the steps in this section.
@@ -135,9 +133,9 @@ When adding users, you can also assign admin privileges to certain users in your
   ![Verify users and assigned product licenses](images/o365_active_users.png)
 
 ### 2.3 Add Microsoft Intune
-Intune...
+Microsoft Intune provides mobile device management, app management, and PC management capabilities from the cloud. Using Intune, organizations can provide their employees with access to apps, data, and corporate resources from anywhere on almost any device while helping to keep corporate information secure. To learn more, see <a href="https://docs.microsoft.com/en-us/intune/understand-explore/introduction-to-microsoft-intune" target="_blank">What is Intune?</a>
 
-**To add Microsoft Intune**
+**To add Microsoft Intune to your tenant**
 
 1. In the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">Office 365 admin center</a>, select **Billing > Purchase services**.
 2. In the **Home > Purchase services** screen, search for **Microsoft Intune**. Hover over **Microsoft Intune** to see the options to start a free 30-day trial or to buy now.
@@ -155,8 +153,7 @@ Intune...
 
   ![Microsoft Intune management portal](images/intune_portal_home.png)
 
-7. TBD - To be continued
-
+Intune should now be added to your tenant. We'll come back to Intune later when we [Configure Windows Store for Business for app distribution](#26-configure-windows-store-for-business-for-app-distribution).
 
 ### 2.3 Add Azure AD to your domain
 Microsoft Azure is an open and flexible cloud platform that enables you to quickly build, deploy, and manage apps across a global network of Microsoft-managed datacenters. In this walkthrough, we won't be using the full power of Azure and we'll primarily use it to create groups that we then use for provisioning through Intune. 
@@ -191,9 +188,9 @@ Microsoft Azure is an open and flexible cloud platform that enables you to quick
   This will take you to the <a href="https://portal.azure.com" target="_blank">Microsoft Azure portal</a>.
 
 ### 2.4 Add groups in Azure AD
-To add Azure AD group(s), we will use the <a href="https://manage.windowsazure.com/" target="_blank">classic Azure portal (https://manage.windowsazure.com)</a>. See <a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-manage-groups" target="_blank">Managing groups in Azure Active Directory</a> for more information about managing groups.
+This section is the walkthrough is optional. However, we recommend that you create groups in Azure AD to manage access to corporate resources, such as apps, policies and settings, and so on. For more information, see <a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups" target="_blank">Managing access to resources with Azure Active Directory groups</a>.
 
-You can use the group(s) you add in Azure AD as the group you use for provisioning settings or apps through Intune.
+To add Azure AD group(s), we will use the <a href="https://manage.windowsazure.com/" target="_blank">classic Azure portal (https://manage.windowsazure.com)</a>. See <a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-manage-groups" target="_blank">Managing groups in Azure Active Directory</a> for more information about managing groups.
 
 **To add groups in Azure AD**
 
@@ -286,10 +283,42 @@ In this part of the walkthrough, we'll be working on the <a href="https://manage
 **To associate your Store account with Intune and configure synchronization**
 
 1. From the <a href="https://manage.microsoft.com/" target="_blank">Microsoft Intune management portal</a>, select **Admin**.
-2. Sign into <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Windows Store for Business</a> using the same tenant account that you used to sign into Intune.
-3. Accept the EULA.
-5. In the Store portal, select **Settings > Management tools** to go to the management tools page.\
-6. TBD - To be continued.
+2. In the **Administration** workspace, click **Mobile Device Management**. If this is the first tiem you're using the portal, click **manage mobile devices** in the **Mobile Device Management** window. The page will refresh and you'll have new options under **Mobile Device Management**.
+
+  **Figure 24** - Mobile device management
+
+  ![Set up mobile device management in Intune](images/intune_admin_mdm_configure.png)
+
+3. Sign into <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Windows Store for Business</a> using the same tenant account that you used to sign into Intune.
+4. Accept the EULA.
+5. In the Store portal, select **Settings > Management tools** to go to the management tools page.
+6. In the **Management tools** page, find **Microsoft Intune** on the list and click **Activate** to get Intune ready to use with Windows Store for Business.
+
+  **Figure 25** - Activate Intune as the Store management tool
+
+  ![Activate Intune from the Store portal](images/wsfb_management_tools_activate.png)
+
+7. Go back to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Admin > Mobile Device Management**, expand **Windows**, and then choose **Store for Business**.
+8. In the **Windows Store for Business** page, select **Configure Sync** to sync your Store for Business volume-purchased apps with Intune.
+
+  **Figure 26** - Configure Store for Business sync in Intune
+
+  ![Configure Store for Business sync in Intune](images/intune_admin_mdm_store_sync.png)
+
+9. In the **Configure Windows Store for Business app sync** dialog box, check **Enable Windows Store for Business sync**. In the **Language** dropdown list, choose the language in which you want apps from the Store to be displayed in the Intune console and then click **OK**.
+
+  **Figure 27** - Enable Windows Store for Business sync in Intune
+
+  ![Enable Store for Business sync in Intune](images/intune_configure_store_app_sync_dialog.png)
+
+  The **Windows Store for Business** page will refresh and it will show the details from the sync.
+
+**To buy apps from the Store**
+TBD
+
+> [!IMPORTANT]  
+> CelesteD is working in this section and the walkthrough is not done yet.
+
 
 ## 3. Set up devices
 
