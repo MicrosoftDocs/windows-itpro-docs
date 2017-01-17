@@ -1,13 +1,13 @@
 ---
-title: Set up and use Cortana with Office 365 in your organization (Windows 10)
-description: Cortana connects to Office 365, helping employees to be notified about unusual events, such as meetings over lunch or during a typical commute time, and about early meetings, even setting an alarm so the employee isn’t late.
+title: Set up and test Cortana with Office 365 in your organization (Windows 10)
+description: How to connect Cortana to Office 365 so your employees are notified about regular meetings, unusual events, such as meetings over lunch or during a typical commute time, and about early meetings, even setting an alarm so the employee isn’t late.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 localizationpriority: high
 ---
 
-# Set up and use Cortana with Office 365 in your organization
+# Set up and test Cortana with Office 365 in your organization
 **Applies to:**
 
 -   Windows 10, Windows Insider Program 
