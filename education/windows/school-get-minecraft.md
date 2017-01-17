@@ -58,6 +58,51 @@ Qualified education institutions can purchase Minecraft: Education Edition licen
 - You’ll receive an email with a link to Windows Store for Business. 
 - Sign in to [Windows Store for Business](https://www.microsoft.com/business-store) to distribute and manage the Minecraft: Education Edition licenses. For more information on distribution options, see [Distribute Minecraft](#distribute-minecraft)
 
+## Minecraft: Education Edition payment options
+You can pay for Minecraft: Education Edition with a debit or credit card, or with an invoice. 
+
+
+### Debit or credit cards
+
+During the purchase, click **Get started! Add a way to pay.** Provide the info needed for your debit or credit card.
+
+### Invoices
+
+Invoices are now a supported payment method for Minecraft: Education Edition. There are a few requirements:
+- Admins only (not supported for Teachers)
+- $500 invoice minimum for your initial purchase
+- $15,000 invoice maximum (for all invoices within your organization)
+
+**To pay with an invoice**
+
+1. During the purchase, click **Get started! Add a way to pay.**  
+
+    ![Buy page for an app, showing the link for Get started! Add a way to pay.](images/mcee-add-payment-method.png)
+
+2. Select the Invoice option, and provide the info needed for an invoice. The **PO number** item allows you to add a tracking number or info that is meaningful to your organization.
+
+    ![Invoice Details page showing items that need to be completed for an invoice. PO number is highlighted.](images/mcee-invoice-info.png)
+
+### Find your invoice
+
+After you've finished the purchase, you can find your invoice by checking **Minecraft: Education Edition** in your **Inventory**. 
+
+> **Note**: After you complete a purchase, it can take up to twenty-four hours for the app to appear in **Inventory**.
+
+**To view your invoice**
+1. In Windows Store for Business, click **Manage** and then click **Inventory**. 
+2. Click **Minecraft: Education Edition** in the list of apps. 
+3. On **Minecraft: Education Edition**, click **View Bills**.
+
+    ![Minecraft: Education Edition app details page with view bills link highlighted](images/mcee-view-bills.png) 
+
+4. On **Invoice Bills**, click the invoice number to view and download your invoice. It downloads as a .pdf.
+
+  ![Minecraft: Education Edition app details page with view bills link highlighted](images/mcee-invoice-bills.png)
+
+The **Payment Instructions** section on the first page of the invoice has information on invoice amount, due date, and how to pay with electronic funds transfer, or with a check. 
+
+
 ## <a href="" id="distribute-minecraft"></a>Distribute Minecraft
 
 After Minecraft: Education Edition is added to your Windows Store for Business inventory, you have three options:
