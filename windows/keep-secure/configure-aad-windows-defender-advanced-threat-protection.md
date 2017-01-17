@@ -80,10 +80,10 @@ You need to add an application in your Azure Active Directory (AAD) tenant then 
 
 23. Save the application changes.
 
-After configuring the application in AAD, you'll need to obtain a refresh token to be used when you configure the connector for your SIEM tool in the next steps. The token lets the connector access Windows Defender ATP events to be consumed by your SIEM.
+After configuring the application in AAD, you'll need to obtain a refresh token. You'll need to use the token when you configure the connector for your SIEM tool in the next steps. The token lets the connector access Windows Defender ATP events to be consumed by your SIEM.
 
 ## Obtain a refresh token
-This section provides information on how you can use an events URL to obtain a refresh token. Obtain a refresh token used to retrieve the Windows Defender Advanced Threat Protection events to your SIEM.
+Obtain a refresh token used to retrieve the Windows Defender Advanced Threat Protection events to your SIEM. This section provides information on how you can use an events URL to obtain the required refresh token. 
 >[!NOTE]
 >For HP ArcSight, you can obtain a refresh token using the restutil tool.
 
