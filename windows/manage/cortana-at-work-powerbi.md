@@ -64,19 +64,26 @@ Before you can start this testing scenario, you must first set up your test envi
 
 6.	Click **Dashboards** from the left pane of the **Power BI** screen, and then click **Retail Analysis Sample**.
 
-    ![Cortana at work, showing the Samples link](images/cortana-powerbi-getdata-samples.png)    
+    ![Cortana at work, showing a dashboard view of the sample data](images/cortana-powerbi-retail-analysis-dashboard.png)    
  
-7.	In the upper right-hand menu, click the Settings icon, and then click Settings.
- 
-8.	Click the Datasets tab, and then pick the Retail Analysis Sample dataset from the list.
-9.	Click Q&A and Cortana, check the Allow Cortana to access this dataset box, and then click Apply.
- 
-Note
-It can take up to 30 minutes for a new dataset to appear for Power BI and Cortana. Logging in and out of Windows 10, or otherwise restarting Cortana, causes the new content to appear immediately.
-If you enable a dataset for Cortana, and that dataset is part of a content pack you own, you’ll need to re-publish for your colleagues to also use it with Cortana.
-Create a custom Answer Page for Cortana
-You must create special reports, known as Answer Pages, to display the most commonly asked answers in Cortana. For example, if you want Cortana to quickly show sales data to your employees, you can create a 2016 sales data Answer Page that shows sales data, with various pivots, in Cortana.
+7.	In the upper right-hand menu, click the **Settings** icon, and then click **Settings**.
+
+    ![Cortana at work, showing where to find the Settings option](images/cortana-powerbi-settings.png) 
+
+8.	Click the **Datasets** tab, and then pick the **Retail Analysis Sample** dataset from the list.
+
+9.	Click **Q&A and Cortana**, check the **Allow Cortana to access this dataset** box, and then click **Apply**.
+
+    ![Cortana at work, showing where to find the Cortana-related options](images/cortana-powerbi-retail-analysis-dataset.png)
+
+    >[!NOTE]
+    >It can take up to 30 minutes for a new dataset to appear for Power BI and Cortana. Logging in and out of Windows 10, or otherwise restarting Cortana, causes the new content to appear immediately.<p>If you enable a dataset for Cortana, and that dataset is part of a content pack you own, you’ll need to re-publish for your colleagues to also use it with Cortana.
+
+## Create a custom Answer Page for Cortana
+You must create special reports, known as _Answer Pages_, to display the most commonly asked answers in Cortana. For example, if you want Cortana to quickly show sales data to your employees, you can create a 2016 sales data Answer Page that shows sales data, with various pivots, in Cortana.
+
 After you’ve finished creating your Answer Page, you can continue to the included testing scenarios.
+
 Note
 It can take up to 30 minutes for a custom Answer Page to appear for Power BI and Cortana. Logging in and out of Windows 10, or otherwise restarting Cortana, causes the new content to appear immediately.
 To create a custom sales data Answer Page for Cortana
