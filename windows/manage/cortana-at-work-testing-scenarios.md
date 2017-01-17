@@ -13,6 +13,9 @@ localizationpriority: high
 -   Windows 10, Windows Insider Program 
 -   Windows 10 Mobile, Windows Insider Program
 
+>[!IMPORTANT]
+>Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 We've come up with a list of suggested testing scenarios that you can use to test Cortana in your organization. After you complete all the scenarios, you should be able to:
 
 - Sign-in to Cortana using Azure AD, manage entries in the notebook, and search for content across your device, Bing, and the cloud, using Cortana.

@@ -13,12 +13,15 @@ localizationpriority: high
 -   Windows 10 Mobile, Windows Insider Program
 
 >[!IMPORTANT]
+>Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+>[!IMPORTANT]
 >The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.
 
 This scenario helps you perform a quick search using Cortana, both by typing and through voice commands.
 
 ## Search using Cortana
-This process helps you use Cortana to perform a quick search.
+This process helps you use Cortana at work to perform a quick search.
 
 1. Click on the **Cortana** icon in the taskbar, and then click in the **Search** bar.
 
@@ -29,7 +32,7 @@ This process helps you use Cortana to perform a quick search.
     ![Cortana at work, showing the weather in New York, New York](images/cortana-newyork-weather.png)    
  
 ## Search with Cortana, by using voice commands
-This process helps you to use Cortana and voice commands to perform a quick search.
+This process helps you to use Cortana at work and voice commands to perform a quick search.
 
 1. Click on the **Cortana** icon in the taskbar, and then click the **Microphone** icon (to the right of the **Search** box).
 
