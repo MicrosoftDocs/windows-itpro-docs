@@ -23,11 +23,35 @@ The PoC environment is a virtual network running on Hyper-V with three virtual m
 
 This guide leverages the Hyper-V server role to perform procedures. If you do not complete all steps in a single session, consider using [checkpoints](https://technet.microsoft.com/library/dn818483.aspx) and [saved states](https://technet.microsoft.com/library/ee247418.aspx) to pause, resume, or restart your work.
 
->Multiple features and services are installed on SRV1 in this guide. If less than 4 GB of RAM is allocated to SRV1, some procedures will require more time to complete. If resources are limited on the Hyper-V host, consider reducing RAM allocation on DC1 and PC1 to 2 GB and 1 GB respectively, and then increasing the RAM allocation on SRV1. You can adjust RAM allocation for a VM by right-clicking the VM in the Hyper-V Manager console, clicking **Settings**, clicking **Memory**, and modifying the value next to **Maximum RAM**.
+>Multiple features and services are installed on SRV1 in this guide. If less than 4 GB of RAM is allocated to SRV1 in the Hyper-V console, some procedures will require more time to complete. If resources are limited on the Hyper-V host, consider reducing RAM allocation on DC1 and PC1 to 2 GB and 1 GB respectively, and then increasing the RAM allocation on SRV1. You can adjust RAM allocation for a VM by right-clicking the VM in the Hyper-V Manager console, clicking **Settings**, clicking **Memory**, and modifying the value next to **Maximum RAM**.
 
 ## In this guide
 
-Description here.
+This guide provides instructions to install and configure the Microsoft Deployment Toolkit (MDT) to deploy a Windows 10 image.
+
+Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
+
+<div style='font-size:9.0pt'>
+
+<TABLE border=1 cellspacing=0 cellpadding=0>
+<TR><TD BGCOLOR="#a0e4fa"><B>Topic</B><TD BGCOLOR="#a0e4fa"><B>Description</B><TD BGCOLOR="#a0e4fa"><B>Time</B>
+
+<TR><TD>[Install prerequisites](#install-prerequisites)<TD>Install prerequisite Windows Server roles and features, download, install and configure SQL Server, configure firewall rules, and install the Windows ADK.<TD>60 minutes
+<TR><TD>[Install System Center Configuration Manager](#install-system-center-configuration-manager)<TD>Download System Center Configuration Manager, configure prerequisites, and install the package.<TD>45 minutes
+<TR><TD>[Download MDOP and install DaRT](#download-mdop-and-install-dart)<TD>Download the Microsoft Desktop Optimization Pack 2015 and install DaRT 10.<TD>15 minutes
+<TR><TD>[Prepare for Zero Touch installation](#prepare-for-zero-touch-installation)<TD>Multiple procedures to support Zero Touch installation.<TD>60 minutes
+<TR><TD>[Create a boot image for Configuration Manager](#create-a-boot-image-for-configuration-manager)<TD>Use the MDT wizard to create the boot image in Configuration Manager.<TD>20 minutes
+<TR><TD>[Create a Windows 10 reference image](#something)<TD>This procedure can be skipped if it was done previously, otherwise instructions are provided to create a reference image.<TD>0-60 minutes
+<TR><TD>[Add a Windows 10 operating system image](#something)<TD>Add a Windows 10 operating system image and distribute it.<TD>10 minutes
+<TR><TD>[Create a task sequence](#something)<TD>Create a Configuration Manager task sequence with MDT integration using the MDT wizard<TD>15 minutes
+<TR><TD>[Finalize the operating system configuration](#something)<TD>Enable monitoring, configure rules, and distribute content.<TD>30 minutes
+<TR><TD>[Deploy Windows 10 using PXE and Configuration Manager](#something)<TD>Deploy Windows 10 using Configuration Manager deployment packages and task sequences.<TD>90 minutes
+<TR><TD>[Refresh a client with Windows 10 using Configuration Manager](#something)<TD>Use a task sequence to refresh a client with Windows 10 using Configuration Manager and MDT<TD>90 minutes
+<TR><TD>[Replace a client with Windows 10 using Configuration Manager](#something)<TD>Replace a client computer with Windows 10 using Configuration Manager.<TD>90 minutes
+
+</TABLE>
+
+</div>
 
 ## Install prerequisites
 
@@ -136,27 +160,16 @@ Description here.
     ```
 
 6. Right-click **ADSI Edit**, click **Connect to**, select **Default** under **Computer** and then click **OK**.
-
 7. Expand **Default naming context**>**DC=contoso,DC=com**, right-click **CN=System**, point to **New**, and then click **Object**.
-
 8. Click **container** and then click **Next**.
-
 9. Next to **Value**, type **System Management**, click **Next**, and then click **Finish**.
-
 10. Right-click **CN=system Management** and then click **Properties**.
-
 11. On the **Security** tab, click **Add**, click **Object Types**, select **Computers**, and click **OK**.
-
 12. Under **Enter the object names to select**, type **SRV1** and click **OK**.
-
 13. The **SRV1** computer account will be highlighted, select **Allow** next to **Full control**.
-
 14. Click **Advanced**, click **SRV1 (CONTOSO\SRV1$)** and click **Edit**.
-
 15. Next to **Applies to**, choose **This object and all descendant objects**, and then click **OK** three times.
-
 16. Close the ADSI Edit console and switch back to SRV1.
-
 17. To start Configuration Manager installation, type the following command at an elevated Windows PowerShell prompt on SRV1:
 
     ```
@@ -210,7 +223,11 @@ Description here.
     Copy-Item "C:\Program Files\Microsoft DaRT\v10\Toolsx86.cab" -Destination "C:\Program Files\Microsoft Deployment Toolkit\Templates\Distribution\Tools\x86"
     ```
 
-## Create a folder structure
+## Prepare for Zero Touch installation
+
+This section contains several procedures to support Zero Touch installation with System Center Configuration Manager.
+
+### Create a folder structure
 
 1. Type the following commands at a Windows PowerShell prompt on SRV1:
 
@@ -225,13 +242,13 @@ Description here.
     New-SmbShare -Name Logs$ -Path C:\Logs -ChangeAccess EVERYONE
     ```
 
-## Enable MDT ConfigMgr integration
+### Enable MDT ConfigMgr integration
 
 1. On SRV1, click **Start**, type **configmgr**, and then click **Configure ConfigMgr Integration**.
 2. Type **PS1** next to **Site code**, and then click **Next**.
 3. Verify **The process completed successfully** is displayed, and then click **Finish**.
 
-## Configure client settings
+### Configure client settings
 
 1. On SRV1, click **Start**, type **configuration manager**, right-click **Configuration Manager Console**, and then click **Pin to Taskbar**.
 2. Click **Desktop**, and then launch the Configuration Manager console from the taskbar.
@@ -240,7 +257,26 @@ Description here.
 5. In the display pane, double-click **Default Client Settings**.
 6. Click **Computer Agent**, next to **Organization name displayed in Software Center** type **Contoso**, and then click **OK**.
 
-## Enable PXE on the distribution point
+### Configure the network access account
+
+1. In the Administration workspace, expand **Site Configuration** and click **Sites**.
+2. On the **Home** ribbon at the top of the console window, click **Configure Site Components** and then click **Software Distribution**.
+3. On the **Network Access Account** tab, choose **Specify the account that accesses network locations**.
+4. Click the yellow starburst and then click **New Account**.
+5. Click **Browse** and then under **Enter the object name to select**, type **CM_NAA** and click **OK**.
+6. Next to **Password** and **Confirm Password**, type **pass@word1**, and then click **OK** twice.
+
+### Configure a boundary group
+
+1. In the Administration workspace, right-click **Boundaries** and then click **Create Boundary**.
+2. Next to **Description**, type **PS1**, next to **Type** choose **Active Directory Site**, and then click **Browse**.
+3. Choose **Default-First-Site-Name** and then click **OK**.
+4. In the Administration workspace, right-click **Boundary Groups** and then click **Create Boundary Group**.
+5. Next to **Name**, type **PS1 Site Assignment and Content Location**, click **Add**, select the **Default-First-Site-Name** boundary and then click **OK**.
+6. On the **References** tab in the **Create Boundary Group** window select the **Use this boundary group for site assignment** checkbox.
+7. Click **Add**, select the **\\\SRV1.contoso.com** checkbox, and then click **OK** twice.
+
+### Enable PXE on the distribution point
 
 1. Deterime the MAC address of the internal network adapter on SRV1. To determine this, type the following command at an elevated Windows PowerShell prompt on SRV1:
 
@@ -286,7 +322,7 @@ Description here.
     The log file will updated continuously while Configuration Manager is running. Wait for Configuration Manager to repair any issues that are present, and periodically re-check that the files are present in the C:\RemoteInstall\SMSBoot\x64 directory. Close the Configuration Manager Trace Log Tool when done.
 
 
-## Create a branding image file 
+### Create a branding image file 
 
 1. If you have a bitmap (.BMP) image for suitable use as a branding image, copy it to the C:\Sources\OSD\Branding folder on SRV1. Otherwise, use the following step to copy a simple branding image.
 2. Type the following command at an elevated Windows PowerShell prompt:
@@ -295,6 +331,7 @@ Description here.
     copy "C:\ProgramData\Microsoft\User Account Pictures\user.bmp" "C:\Sources\OSD\Branding\contoso.bmp"
     ```
     >You can open C:\Sources\OSD\Branding\contoso.bmp in MSPaint.exe if desired to customize this image.
+
 
 ## Create a boot image for Configuration Manager 
 
@@ -563,7 +600,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
 16. On the Confirmation page, click **Finish**.
 
-## Edit the task sequence
+### Edit the task sequence
 
 1. In the Configuration Manager console, in the **Software Library** workspace, click **Task Sequences**, right-click **Windows 10 Enterprise x64**, and then click **Edit**.
 
@@ -645,7 +682,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
 10. Enter **\Monitoring\Overview\Distribution Status\Content Status\Windows 10 Enterprise x64** on the location bar, double-click **Windows 10 Enterprise x64**, and monitor the status of content distribution until it is successful and no longer in progress. Refresh the view with the F5 key or by right-clicking **Windows 10 Enterprise x64** and clicking **Refresh**.
 
-## Create a deployment for the task sequence
+### Create a deployment for the task sequence
 
 1. In the Software Library workspace, expand **Operating Systems**, click **Task Sequences**, right-click **Windows 10 Enterprise x64**, and then click **Deploy**. 
 
@@ -658,36 +695,6 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 4. Click **Next** five times to accept defaults on the Scheduling, User Experience, Alerts, and Distribution Points pages.
 
 5. Click **Close**.
-
-## Configure a boundary group
-
-1. In the Administration workspace, right-click **Boundaries** and then click **Create Boundary**.
-
-2. Next to **Description**, type **PS1**, next to **Type** choose **Active Directory Site**, and then click **Browse**.
-
-3. Choose **Default-First-Site-Name** and then click **OK**.
-
-4. In the Administration workspace, right-click **Boundary Groups** and then click **Create Boundary Group**.
-
-5. Next to **Name**, type **PS1 Site Assignment and Content Location**, click **Add**, select the **Default-First-Site-Name** boundary and then click **OK**.
-
-6. On the **References** tab in the **Create Boundary Group** window select the **Use this boundary group for site assignment** checkbox.
-
-7. Click **Add**, select the **\\\SRV1.contoso.com** checkbox, and then click **OK** twice.
-
-## Configure the network access account
-
-1. In the Administration workspace, expand **Site Configuration** and click **Sites**.
-
-2. On the **Home** ribbon at the top of the console window, click **Configure Site Components** and then click **Software Distribution**.
-
-3. On the **Network Access Account** tab, choose **Specify the account that accesses network locations**.
-
-4. Click the yellow starburst and then click **New Account**.
-
-5. Click **Browse** and then under **Enter the object name to select**, type **CM_NAA** and click **OK**.
-
-6. Next to **Password** and **Confirm Password**, type **pass@word1**, and then click **OK** twice.
 
 ## Deploy Windows 10 using PXE and Configuration Manager
 
@@ -747,13 +754,37 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     Checkpoint-VM -Name PC1 -SnapshotName BeginState
     ```
 
-3. Sign in to PC using the contoso\administrator account and type the following at an elevated command prompt:
+3. Sign in to PC1 using the contoso\administrator account and type the following at an elevated command prompt to remove any pre-existing client configuration, if it exists:
 
+    ```
+    sc stop ccmsetup
+    "\\SRV1\c$\Program Files\Microsoft Configuration Manager\Client\CCMSetup.exe" /Uninstall
+    ```
 
+4. On PC1, temporarily stop Windows Update from queuing items for download and clear all BITS jobs from the queue:
 
-CCMSetup.exe /mp:PS1 /logon SMSSITECODE=AUTO
+    ```
+    net stop wuauserv
+    net stop BITS
+    ```
 
-3. On SRV1, in the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections** and then click **Create Device Collection**.
+    Verify that both services were stopped successfully, then type the following at an elevated command prompt:
+
+    ```
+    del "%ALLUSERSPROFILE%\Application Data\Microsoft\Network\Downloader\qmgr*.dat"
+    net start BITS
+    bitsadmin /list /allusers
+    ```
+
+    Verify that BITSAdmin displays 0 jobs. 
+
+3. To install the Configuration Manager client as a standalone process, type the following at an elevated command prompt:
+
+    ```
+    "\\SRV1\c$\Program Files\Microsoft Configuration Manager\Client\CCMSetup.exe" /mp:SRV1.contoso.com /logon SMSSITECODE=PS1
+    ```
+
+4. On SRV1, in the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections** and then click **Create Device Collection**.
 
 4. Use the following settings in the **Create Device Collection Wizard**:
     - General > Name: **Install Windows 10 Enterprise x64**<BR>
