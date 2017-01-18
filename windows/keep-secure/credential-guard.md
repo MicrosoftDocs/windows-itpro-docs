@@ -38,7 +38,11 @@ Here's a high-level overview on how the LSA is isolated by using virtualization-
 
 ![Credential Guard overview](images/credguard.png)
 
-## Hardware and software requirements
+## Requirements
+
+For Credential Guard to provide protections, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements which we will refer to as "Hardware and software requirements". Additionally Credential Guard blocks specific authentication capabilities, so applications which require blocked capabilities will break. We will refer to this as "Application requirements". Beyond that, computers can meet additional hardware and firmware requirements, and receive additional protection—those computers will be more hardened against certain threats. To keep this section brief, those will be in Security Considerations.
+
+### Hardware and software requirements
 
 To deploy Credential Guard, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements. Beyond that, computers can meet additional hardware and firmware requirements, and receive additional protection—those computers will be more hardened against certain threats. 
 
