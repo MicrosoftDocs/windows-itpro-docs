@@ -26,6 +26,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | --- | --- |
 | [Quick guide to Windows as a service](waas-quick-start.md) | New |
 | [Manage Windows 10 in your organization - transitioning to modern management](manage-windows-10-in-your-organization-modern-management.md)  | Added video demonstration of the latest in modern management for Windows 10 |
+| [Windows Store for Business overview](windows-store-for-business-overview.md)   | Updated list of supported markets. |
 
 ## November 2016
 
