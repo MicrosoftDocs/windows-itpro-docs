@@ -33,8 +33,7 @@ This section guides you in getting the necessary information to set and use the 
     - OAuth 2.0 Client ID
     - OAuth 2.0 Client secret
 
-2. Download the wdatp-connector.properties file and update the following values:
-(JOEY: PUT IN THE LINK FROM DOWNLOAD MANAGEMENT STUDIO)
+2. Download the [WDATP-connector.properties](http://download.microsoft.com/download/3/9/C/39C703C2-487C-4C3E-AFD8-14C2253C2F12/WDATP-connector.properties) file and update the following values:
 
   - **client_ID**: OAuth 2 Client ID
   - **client_secret**: OAuth 2 Client secret
@@ -51,8 +50,7 @@ This section guides you in getting the necessary information to set and use the 
   - **redirect_uri**: ```https://localhost:44300/wdatpconnector```
   - **scope**: Leave the value blank
 
-3. Download the wdatp-connector.json.properties file. This file is used to parse the information from Windows Defender ATP to HP ArcSight consumable format.
-(JOEY: PUT IN THE LINK FROM DOWNLOAD MANAGEMENT STUDIO)
+3. Download the [WDATP-connector.jsonparser.properties](http://download.microsoft.com/download/0/8/A/08A4957D-0923-4353-B25F-395EAE363E8C/WDATP-connector.jsonparser.properties) file. This file is used to parse the information from Windows Defender ATP to HP ArcSight consumable format.
 
 ## Install and configure HP ArcSight SmartConnector
 The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin).
@@ -83,22 +81,17 @@ The following steps assume that you have completed all the required steps in [Be
 
 6.	Type the following information in the parameter details form. All other values in the form are optional and can be left blank.
 
-Field	| Value
-:---|:---
-Configuration File | Type in the name of the client property file. It must match the client property file.
-Events URL |	https://DataAccess-PRD.trafficmanager.net:444/api/alerts
-Authentication Type |	OAuth 2
-OAuth 2 Client Properties file	| Select wdatp-connector.properties.
-Refresh Token	| Use either the Windows Defender ATP token URL or the restutil tool to get your refresh token. <br> **Get your refresh token using the Windows Defender ATP token URL:** </br> Open a browser and connect to the following URL: `https://DataAccess-PRD.trafficmanager.net:444/api/FetchToken?clientId=f7c1acd8-0458-48a0-a662-dba6de049d1c&tenantId=<tenant ID>&clientSecret=<clientSecret>`</br> </br>NOTE: Replace the *tenantID* value with your tenant ID.</br> **Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to `C:\ArcSightSmartConnectors\<descriptive_name>\current\bin`. </br> b. Type: `arcsight restutil token -config C:\ArcSightSmartConnectors_Prod\WDATP\WDATP-connector.properties`.A Web browser window will open. </br> c. A web browser will open. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> d.	A refresh token is provided in the command prompt.
 
+  Field	| Value
+  :---|:---
+  Configuration File | Type in the name of the client property file. It must match the client property file.
+  Events URL |	https://DataAccess-PRD.trafficmanager.net:444/api/alerts
+  Authentication Type |	OAuth 2
+  OAuth 2 Client Properties file	| Select wdatp-connector.properties.
+  Refresh Token	| Use either the Windows Defender ATP token URL or the restutil tool to get your refresh token. <br> **Get your refresh token using the Windows Defender ATP token URL:** </br> Open a browser and connect to the following URL: `https://DataAccess-PRD.trafficmanager.net:444/api/FetchToken?clientId=f7c1acd8-0458-48a0-a662-dba6de049d1c&tenantId=<tenant ID>&clientSecret=<clientSecret>`</br> </br>NOTE: Replace the *tenantID* value with your tenant ID.</br> **Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to `C:\ArcSightSmartConnectors\<descriptive_name>\current\bin`. </br> b. Type: `arcsight restutil token -config C:\ArcSightSmartConnectors_Prod\WDATP\WDATP-connector.properties`.A Web browser window will open. </br> c. A web browser will open. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> d.	A refresh token is provided in the command prompt.
 7. You can leave the destination parameter fields with the default values.
-![Connector Setup - Enter parameter details](images/hp-5.png)
-
+[JOEY: CHECK THE HP GUIDE AND YOUTUBE VIDEO ON HOW THE SCREENS FOR THE PRECEEDING STEPS]
 Type in a name for the connector. You can leave the other fields blank.
-![Connector Setup - Enter connector details](images/hp-6.png)
-[JOEY: REMOVE WDATP FROM IMAGE & UPDATE STEP NUMBERING]
-
-[AVIV - NEED SCREENSHOTS FOR STEPS 7-13]
 
 7. Destination: ArcSight Manager (encrypted)
 8.	Connector details
@@ -111,9 +104,8 @@ Type in a name for the connector. You can leave the other fields blank.
 
 15. Verify events are flowing by setting the initial filter to Device Product = Windows Defender ATP.  If so stop the process again and go to Windows Services and start the ArcSight FlexConnector REST.
 
-[BRIAN/AVIV - I CREATED A TROUBLSHOOTING SECTION AND MOVED SOME CONTENT THERE. CAN YOU VERIFY IF MY UNDERSTANTING IS CORRECT PLEASE?]
 
-## HP ArcSight queries [AVIV, SHOULD WE CALL IT QUERY?]
+## Run HP ArcSight queries [AVIV, SHOULD WE CALL IT QUERY?]
 You can now run queries in the HP ArcSight console.
 
 In the HP ArcSight console, create a Windows Defender ATP channel with intervals and properties suitable to your enterprise needs.
@@ -121,7 +113,7 @@ In the HP ArcSight console, create a Windows Defender ATP channel with intervals
 Windows Defender ATP alerts will appear as discrete events, with "Microsoft” as the vendor and “Windows Defender ATP” as the device name.
 
 
-## Troubleshooting HP ArcSight connection [AVIV/BRIAN - SHOULD WE CALL IT CONNECTION?]
+## Troubleshooting HP ArcSight connection
 **Problem:** Failed to refresh the token.
 
 **Symptom:** You get the following error message:

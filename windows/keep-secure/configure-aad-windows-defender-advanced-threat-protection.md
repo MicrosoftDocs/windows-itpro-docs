@@ -24,7 +24,9 @@ localizationpriority: high
 
 You need to add an application in your Azure Active Directory (AAD) tenant then authorize the Windows Defender ATP Alerts Export application  to communicate with it so that your security information and events management (SIEM) tool can consume alerts from Windows Defender ATP portal.
 
-1. Login to the [Azure management portal](https://manage.windowsazure.com).
+1. Login to the [Azure management portal](https://ms.portal.azure.com).
+  >!NOTE:
+  >Use your Azure credentials not the Windows Defender Advanced Threat protection portal credentials.
 
 2. Select **Active Directory**.
 
