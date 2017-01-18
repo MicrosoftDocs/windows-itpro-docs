@@ -12,6 +12,11 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
 
+## January 2017
+| New or changed topic | Description |
+| --- | --- |
+| [For IT administrators - get Minecraft: Education Edition](school-get-minecraft.md) | Updates. Learn how schools can use invoices to pay for Minecraft: Education Edition. |
+
 ## December 2016
 | New or changed topic | Description |
 | --- | --- |
