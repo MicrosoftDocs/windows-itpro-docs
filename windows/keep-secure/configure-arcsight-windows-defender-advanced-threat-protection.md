@@ -46,7 +46,7 @@ You'll need to configure HP ArcSight so that it can consume Windows Defender ATP
   - **redirect_uri**: ```https://localhost:44300/wdatpconnector```
   - **scope**: Leave the value blank
 
-- Download the [WDATP-connector.jsonparser.properties file](http://download.microsoft.com/download/0/8/A/08A4957D-0923-4353-B25F-395EAE363E8C/WDATP-connector.jsonparser.properties). This file is used to parse the information from Windows Defender ATP to HP ArcSight consumable format.
+- Download the [WDATP-connector.jsonparser.properties](http://download.microsoft.com/download/0/8/A/08A4957D-0923-4353-B25F-395EAE363E8C/WDATP-connector.jsonparser.properties) file. This file is used to parse the information from Windows Defender ATP to HP ArcSight consumable format.
 - Install the HP ArcSight REST FlexConnector package. You can find this in the HPE Software center. Install the package on a server that has access to the Internet.
 
 ## Configure HP ArcSight
