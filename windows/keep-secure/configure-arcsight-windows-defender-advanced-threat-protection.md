@@ -77,7 +77,7 @@ The following steps assume that you have completed all the required steps in [Be
 
 4. After the installation of the core connector completes, the Connector Setup window opens. In the Connector Setup window, select **Add a Connector**.
 
-5. Select the **ArcSight FlexConnector REST** connector and click **Next**.
+5. Select the **ArcSight FlexConnector REST** connector type and click **Next**.
 
 6.	Type the following information in the parameter details form. All other values in the form are optional and can be left blank.
 
@@ -88,7 +88,7 @@ The following steps assume that you have completed all the required steps in [Be
   Events URL |	https://DataAccess-PRD.trafficmanager.net:444/api/alerts
   Authentication Type |	OAuth 2
   OAuth 2 Client Properties file	| Select wdatp-connector.properties.
-  Refresh Token	| Use either the Windows Defender ATP token URL or the restutil tool to get your refresh token. <br> **Get your refresh token using the Windows Defender ATP token URL:** </br> Open a browser and connect to the following URL: `https://DataAccess-PRD.trafficmanager.net:444/api/FetchToken?clientId=f7c1acd8-0458-48a0-a662-dba6de049d1c&tenantId=<tenant ID>&clientSecret=<clientSecret>`</br> </br>NOTE: Replace the *tenantID* value with your tenant ID.</br> **Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to `C:\ArcSightSmartConnectors\<descriptive_name>\current\bin`. </br> b. Type: `arcsight restutil token -config C:\ArcSightSmartConnectors_Prod\WDATP\WDATP-connector.properties`.A Web browser window will open. </br> c. A web browser will open. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> d.	A refresh token is provided in the command prompt.
+  Refresh Token	| Use either the Windows Defender ATP token URL or the restutil tool to obtain your refresh token. For more information, see JOEY ADD LINK HERE. </br> **Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to `C:\ArcSightSmartConnectors\<descriptive_name>\current\bin`. </br> b. Type: `arcsight restutil token -config C:\ArcSightSmartConnectors_Prod\WDATP\WDATP-connector.properties`.A Web browser window will open. </br> c. A web browser will open. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> d.	A refresh token is provided in the command prompt.      
 7. You can leave the destination parameter fields with the default values.
 [JOEY: CHECK THE HP GUIDE AND YOUTUBE VIDEO ON HOW THE SCREENS FOR THE PRECEEDING STEPS]
 Type in a name for the connector. You can leave the other fields blank.
