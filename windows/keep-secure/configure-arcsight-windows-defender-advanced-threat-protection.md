@@ -89,23 +89,35 @@ The following steps assume that you have completed all the required steps in [Be
   Authentication Type |	OAuth 2
   OAuth 2 Client Properties file	| Select wdatp-connector.properties.
   Refresh Token	| Use either the Windows Defender ATP token URL or the restutil tool to obtain your refresh token. For more information, see JOEY ADD LINK HERE. </br> **Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to `C:\ArcSightSmartConnectors\<descriptive_name>\current\bin`. </br> b. Type: `arcsight restutil token -config C:\ArcSightSmartConnectors_Prod\WDATP\WDATP-connector.properties`.A Web browser window will open. </br> c. A web browser will open. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> d.	A refresh token is provided in the command prompt.      
-7. You can leave the destination parameter fields with the default values.
-[JOEY: CHECK THE HP GUIDE AND YOUTUBE VIDEO ON HOW THE SCREENS FOR THE PRECEEDING STEPS]
-Type in a name for the connector. You can leave the other fields blank.
+7. A browser window is opened by the connector. Login with your application credentials. After you log in, you'll be asked to give permission to your OAuth2 Client. You must give permission to your OAuth 2 Client so that the connector configuration can authenticate. </br></br>
+If the `redirect_uri` is a https URL, you'll be redirected to a URL on the local host. You'll see a page that requests for you to trust the certificate supplied by the connector running on the local host. You'll need to trust this certificate if the redirec_uri is a https. </br></br> If however you specify a http URL for the redirect_uri, you do not need to provide consent in trusting the certificate.
 
-7. Destination: ArcSight Manager (encrypted)
-8.	Connector details
-9.			Name: WDATP
-10.	Import the ESM certificate
-11.	Install as a service
-12.			Internal Name: WDATP
-13.	Finish with the installer.
-14. Run the connector by running the following command from the installation directory, for example: ` C:\ArcSightSmartConnectors\<descriptive_name>\current\bin, run: arcsight.bat connectors`
+8. Continue with the connector setup by returning to the HP ArchSight Connector Setup window.
 
-15. Verify events are flowing by setting the initial filter to Device Product = Windows Defender ATP.  If so stop the process again and go to Windows Services and start the ArcSight FlexConnector REST.
+9. Select the **ArchSight Manager (encrypted)** as the destination and click **Next**.
+
+10. Type in your credentials in the destination parameters form. All other values in the form are optional and can be left blank. Click **Next**.
+
+11. Type in a name for the connector in the connector details form. All other values in the form are optional and can be left blank. Click **Next**.
+
+11.	The ESM Manager import certificate window is shown. Select **Import the certificate to the connector from destination** and click **Next**. The **Add connector Summary** window is displayed and the certificate is imported.
+
+12. Verify that the details in the **Add connector Summary** window is correct, then click **Next**.
+
+13. Select **Install as a service** and click **Next**.
+
+14.	Type a name in the **Service Internal Name** field. All other values in the form can be retained with the default values or left blank . Click **Next**.
+
+13.	Type in the service parameters and click **Next**. A window with the **Install Service Summary** is shown. Click **Next**.
+
+14. Finish the installation by selecting **Exit** and **Next**.
+
+15. Run the connector by running the following command from the installation directory, for example: ` C:\ArcSightSmartConnectors\<descriptive_name>\current\bin, run: arcsight.bat connectors`
+
+16. Verify events are flowing by setting the initial filter to Device Product = Windows Defender ATP.  If so stop the process again and go to Windows Services and start the ArcSight FlexConnector REST.
 
 
-## Run HP ArcSight queries [AVIV, SHOULD WE CALL IT QUERY?]
+## Run HP ArcSight queries
 You can now run queries in the HP ArcSight console.
 
 In the HP ArcSight console, create a Windows Defender ATP channel with intervals and properties suitable to your enterprise needs.
