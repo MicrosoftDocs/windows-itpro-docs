@@ -35,6 +35,8 @@ The following events trigger provisioning on Windows 10 devices:
 
 Targets describe keying for a variant and must be described or pre-declared before being referenced by the variant.
 
+![Target with multiple target states and conditions](images/multi-target.png)
+
 - You can define multiple **Target** child elements for each **Id** that you need for the customization setting.
 
 - Within a **Target** you can define multiple **TargetState** elements.
