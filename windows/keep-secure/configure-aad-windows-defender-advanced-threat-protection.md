@@ -25,8 +25,6 @@ localizationpriority: high
 You need to add an application in your Azure Active Directory (AAD) tenant then authorize the Windows Defender ATP Alerts Export application  to communicate with it so that your security information and events management (SIEM) tool can consume alerts from Windows Defender ATP portal.
 
 1. Login to the [Azure management portal](https://ms.portal.azure.com).
-  >!NOTE:
-  >Use your Azure credentials not the Windows Defender Advanced Threat protection portal credentials.
 
 2. Select **Active Directory**.
 
@@ -83,7 +81,7 @@ You need to add an application in your Azure Active Directory (AAD) tenant then 
 After configuring the application in AAD, you'll need to obtain a refresh token. You'll need to use the token when you configure the connector for your SIEM tool in the next steps. The token lets the connector access Windows Defender ATP events to be consumed by your SIEM.
 
 ## Obtain a refresh token
-Obtain a refresh token used to retrieve the Windows Defender Advanced Threat Protection events to your SIEM. This section provides information on how you can use an events URL to obtain the required refresh token. 
+Obtain a refresh token used to retrieve the Windows Defender Advanced Threat Protection events to your SIEM. This section provides information on how you can use an events URL to obtain the required refresh token.
 >[!NOTE]
 >For HP ArcSight, you can obtain a refresh token using the restutil tool.
 
@@ -108,9 +106,7 @@ You'll use these values to obtain a refresh token.
 
 2. Click **Accept**. When you authenticate, a web page opens with your refresh token.
 
-  ![Image of web page with refresh token](images/atp-refresh-token.png)
-
-3.  Save the refresh token value in a safe place. You'll need this value when configuring your SIEM tool.
+3.  Save the refresh token which you'll find it the `<RefreshToken></RefreshToken>`value. You'll need this value when configuring your SIEM tool.
 
 After configuring your AAD application and generating a refresh token, you can proceed to configure your SIEM tool.
 
