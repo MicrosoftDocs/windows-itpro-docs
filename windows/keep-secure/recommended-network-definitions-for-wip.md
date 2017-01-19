@@ -25,7 +25,7 @@ This table includes the recommended URLs to add to your Enterprise Cloud Resourc
 
 |If your organization uses... |Add these entries to your Enterprise Cloud Resources network setting<br>(Replace "contoso" with your domain name(s) |
 |-----------------------------|---------------------------------------------------------------------|
-|Office 365 for Business |<ul><li>contoso.sharepoint.com</li><li>contoso-my.sharepoint.com</li><li>contoso-files.sharepoint.com</li><li>tasks.office.com</li><li>lists.office.com</li><li>collabdb.com</li><li>www.collabdb.com</li><li>protection.office.com</li><li>meet.lync.com</li><li>teams.microsoft.com</li></ul> |
+|Office 365 for Business |<ul><li>contoso.sharepoint.com</li><li>contoso-my.sharepoint.com</li><li>contoso-files.sharepoint.com</li><li>tasks.office.com</li><li>protection.office.com</li><li>meet.lync.com</li><li>teams.microsoft.com</li></ul> |
 |Yammer |<ul><li>www.yammer.com</li><li>yammer.com</li><li>persona.yammer.com</li></ul> |
 |Microsoft Dynamics |contoso.crm.dynamics.com |
 |Visual Studio Online |contoso.visualstudio.com |
