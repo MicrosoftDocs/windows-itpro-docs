@@ -27,7 +27,7 @@ This table provides info about the most common problems you might encounter whil
     <tr>
         <td>Enterprise data on USB drives is tied to the device it was protected on.</td>
         <td>Data in the new location remains encrypted, but becomes inaccessible on other devices and for other users. For example, the file won't open or the file opens, but doesn't contain readable text.</td>
-        <td>Share files with fellow employees through enterprise file servers or enterprise cloud locations. If data must be shared via USB, employees can decrypt protected files, but it will be audited.<p>We strongly recommend educating employees about how to limit or eliminate the need for this decryption.<p><strong>Important</strong><br>If you're running WIP with Azure Rights Management (Azure RMS), you'll only be able to open protected files from a USB drive on computers running Windows 10, version 1703 and greater.</td>
+        <td>Share files with fellow employees through enterprise file servers or enterprise cloud locations. If data must be shared via USB, employees can decrypt protected files, but it will be audited.<p>We strongly recommend educating employees about how to limit or eliminate the need for this decryption.<p><strong>Important</strong><br>If you're running WIP with Azure Rights Management (Azure RMS), you'll only be able to open protected files from a USB drive on computers running the latest version from the Windows Insider Program.</td>
     </tr>
     <tr>
         <td>Direct Access is incompatible with WIP.</td>
