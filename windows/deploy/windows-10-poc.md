@@ -507,17 +507,17 @@ Notes:<BR>
 
 As mentioned previously: instructions to "type" commands provided in this guide can be typed, but the preferred method is to copy and paste these commands. Most of the commands to this point in the guide have been brief, but many commands in sections below are longer and more complex.
 
-The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 80GB to support installing imaging tools and storing OS images.
+The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 100GB to support installing imaging tools and storing OS images.
 
 1. To add available space for the partition, type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     <pre style="overflow-y: visible">
-    Resize-VHD –Path c:\VHD\2012R2-poc-2.vhd –SizeBytes 80GB
+    Resize-VHD –Path c:\VHD\2012R2-poc-2.vhd –SizeBytes 100GB
     $x = (Mount-VHD –Path c:\VHD\2012R2-poc-2.vhd -passthru | Get-Disk | Get-Partition | Get-Volume).DriveLetter
     Resize-Partition -DriveLetter $x -Size (Get-PartitionSupportedSize -DriveLetter $x).SizeMax
     </pre>
 
-2. Verify that the mounted VHD drive is resized to 80 GB, and then dismount the drive:
+2. Verify that the mounted VHD drive is resized to 100 GB, and then dismount the drive:
 
     <pre style="overflow-y: visible">
     Get-Volume -DriveLetter $x
@@ -848,7 +848,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     >The commands in this script might take a few moments to complete. If an error is displayed, check that you typed the command correctly, paying close attention to spaces. PC1 is removed from its domain in this step while not connected to the corporate network so as to ensure the computer object in the corporate domain is unaffected. PC1 is also not renamed to "PC1" in system properties so that it maintains some of its mirrored identity. However, if desired you can also rename the computer.
 
 22. Upon completion of the script, PC1 will automatically restart. When it has restarted, sign in to the contoso.com domain using the **Switch User** option, with the **user1** account you created in step 11 of this section.
-    >The settings that will be used to migrate user data specifically select only accounts that belong to the CONTOSO domain. If you wish to test migration of user data and settings with an account other than the user1 account, you must copy this account's profile to the user1 profile.
+    >**Important**: The settings that will be used later to migrate user data specifically select only accounts that belong to the CONTOSO domain. However, this can be changed to migrate all use accounts, or only other specific accounts. If you wish to test migration of user data and settings with accounts other than those in the CONTOSO domain, you must specify these accounts or domains when you configure the value of **ScanStateArgs** in the MDT test lab guide. This value is specifically called out when you get to that step. If you wish to only migrate CONTOSO accounts, then you can log in with the user1 account or the administrator account at this time and modify some of the files and settings for later use in migration testing.
 23. Minimize the PC1 window but do not turn it off while the second Windows Server 2012 R2 VM (SRV1) is configured. This verifies that the Hyper-V host has enough resources to run all VMs simultaneously. Next, SRV1 will be started, joined to the contoso.com domain, and configured with RRAS and DNS services. 
 24. On the Hyper-V host computer, at an elevated Windows PowerShell prompt, type the following commands:
 

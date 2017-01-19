@@ -14,7 +14,11 @@ author: greg-lindsay
 
 -   Windows 10
 
-**Important**: This guide leverages the proof of concept (PoC) environment configured using procedures in [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md) and requires that you have completed completed procedures in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md). Please complete all steps in these guides before attempting the procedures in this guide. If you wish to skip the Windows 10 deployment procedures in the MDT guide and move directly to this guide, you must at least install MDT and the Windows ADK before performing procedures in this guide.
+**Important**: This guide leverages the proof of concept (PoC) environment, and some settings that are configured in the following guides:
+- [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md)
+- [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
+
+Please complete all steps in these guides before attempting the procedures in this guide. If you wish to skip the Windows 10 deployment procedures in the MDT guide and move directly to this guide, you must at least install MDT and the Windows ADK before performing procedures in this guide.
 
 The PoC environment is a virtual network running on Hyper-V with three virtual machines (VMs):
 - **DC1**: A contoso.com domain controller, DNS server, and DHCP server.
@@ -23,7 +27,7 @@ The PoC environment is a virtual network running on Hyper-V with three virtual m
 
 This guide leverages the Hyper-V server role to perform procedures. If you do not complete all steps in a single session, consider using [checkpoints](https://technet.microsoft.com/library/dn818483.aspx) and [saved states](https://technet.microsoft.com/library/ee247418.aspx) to pause, resume, or restart your work.
 
->Multiple features and services are installed on SRV1 in this guide. If less than 4 GB of RAM is allocated to SRV1 in the Hyper-V console, some procedures will require more time to complete. If resources are limited on the Hyper-V host, consider reducing RAM allocation on DC1 and PC1 to 2 GB and 1 GB respectively, and then increasing the RAM allocation on SRV1. You can adjust RAM allocation for a VM by right-clicking the VM in the Hyper-V Manager console, clicking **Settings**, clicking **Memory**, and modifying the value next to **Maximum RAM**.
+>Multiple features and services are installed on SRV1 in this guide. If less than 4 GB of RAM is allocated to SRV1 in the Hyper-V console, some procedures will be extremely slow to complete. If resources are limited on the Hyper-V host, consider reducing RAM allocation on DC1 and PC1, and then increasing the RAM allocation on SRV1. You can adjust RAM allocation for a VM by right-clicking the VM in the Hyper-V Manager console, clicking **Settings**, clicking **Memory**, and modifying the value next to **Maximum RAM**.
 
 ## In this guide
 
@@ -746,13 +750,26 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
 ## Refresh a client with Windows 10 using Configuration Manager
 
-1. Verify that PC1 is in its original state, which was saved as a checkpoint in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md).
+>Before starting this section, you can delete computer objects from Active Directory that were created as part of previous deployment procedures. Use the Active Directory Users and Computers console to remove stale entries under contoto.com\Computers, but **do not delete the computer account for PC1**. There should be at least two computer accounts present in the contoso.com\Computers container: one for SRV1, and one for the computer name of PC1.  It is not required to delete the stale entries, this is only done to remove clutter.
+
+### Install the Configuration Manager client on PC1
+
+1. Verify that PC1 is in its original state, which was saved as a checkpoint and then restored in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md).
 
 2. If a PC1 checkpoint has not already been saved, then save a checkpoint by typing the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```
     Checkpoint-VM -Name PC1 -SnapshotName BeginState
     ```
+3. On SRV1, in the Configuration Manager console, in the Administration workspace, expand **Hierarcy Configuration** and click on **Discovery Methods**.
+4. Double-click **Active Directory System Discovery** and on the **General** tab select the **Enable Active Directory System Discovery** checkbox.
+5. Click the yellow starburst, click **Browse**, select **contoso\Computers**, and then click **OK** three times.
+6. When a popup dialog box asks if you want to run full discovery, click **Yes**. 
+7. In the Assets and Compliance workspace, expand Devices and click All Systems. Verify that a computer account for SRV1 and PC1 are displayed. See the following example:
+
+    ![assets](images/sccm-assets.png)
+
+    The **Client** column indicates that the Configuration Manager client is not currently installed. This procedure will be carried out next.
 
 3. Sign in to PC1 using the contoso\administrator account and type the following at an elevated command prompt to remove any pre-existing client configuration, if it exists:
 
@@ -760,6 +777,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     sc stop ccmsetup
     "\\SRV1\c$\Program Files\Microsoft Configuration Manager\Client\CCMSetup.exe" /Uninstall
     ```
+    >If PC1 still has Configuration Manager registry settings that were applied by Group Policy, startup scripts, or other policies in its previous domain, these might not all be removed by CCMSetup /Uninstall and can cause problems with installation or registration of the client in its new environment. It might be necessary to manually remove these settings if they are present. For more information, see [Manual removal of the SCCM client](https://blogs.technet.microsoft.com/michaelgriswold/2013/01/02/manual-removal-of-the-sccm-client/).
 
 4. On PC1, temporarily stop Windows Update from queuing items for download and clear all BITS jobs from the queue:
 
@@ -783,24 +801,199 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     ```
     "\\SRV1\c$\Program Files\Microsoft Configuration Manager\Client\CCMSetup.exe" /mp:SRV1.contoso.com /logon SMSSITECODE=PS1
     ```
+4. On PC1, using file explorer, open the C:\Windows\ccmsetup directory. During client installation, files will be downloaded here. 
+5. Installation progress will be captured in the file: **c:\windows\ccmsetup\logs\ccmsetup.log**. You can periodically open this file in notepad, or you can type the following command at an elevated Windows PowerShell prompt to monitor installation progress:
 
-4. On SRV1, in the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections** and then click **Create Device Collection**.
+    ```
+    Get-Content -Path c:\windows\ccmsetup\logs\ccmsetup.log -Wait
+    ```
+    
+    Installation might require several minutes. When setup is complete, verify that **CcmSetup is existing with return code 0** is displayed on the last line of the ccmsetup.log file and then press **CTRL-C** to break out of the -Wait Get-Content operation. A return code of 0 indicates that installation was successful and you should now see a directory created at C:\Windows\CCM that contains files used in registration of the client with its site.
 
-4. Use the following settings in the **Create Device Collection Wizard**:
+6. On PC1, open the Configuration Manager control panel applet by typing the following command:
+
+    ```
+    control smscfgrc
+    ```
+
+7. Click the Site tab and click Find Site. The client should report that it has found the PS1 site. See the following example:
+
+    ![site](images/sccm-site.png)
+
+    If the client is not able to find the PS1 site, review any error messages that are displayed in C:\Windows\CCM\Logs\ClientIDManagerStartup.log and LocationServices.log.
+
+8. On SRV1, in the Assets and Compliance workspace, click **All Desktop and Server Clients** and verify that the computer account for PC1 is displayed here with **Yes** and **Active** in the **Client** and **Client Activity** columns, respectively. You might have to refresh the view and wait few minutes for the client to appear here.  See the following example:
+
+    ![client](images/sccm-client.png)
+
+9. When the client has completed installation, create a checkpoint for PC1 so that you can restore it later. To create a checkpoint, type the following at an elevated Windows PowerShell prompt on the Hyper-V host:
+
+    ```
+    Checkpoint-VM -Name PC1 -SnapshotName Client-installed
+    ```
+
+### Create a device collection and deployment
+
+1. On SRV1, in the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections** and then click **Create Device Collection**.
+
+2. Use the following settings in the **Create Device Collection Wizard**:
     - General > Name: **Install Windows 10 Enterprise x64**<BR>
-    - Geneneral > Limiting collection: **All Systems**<BR>
+    - General > Limiting collection: **All Systems**<BR>
     - Membership Rules > Add Rule: **Direct Rule**<BR>
     - The **Create Direct Membership Rule Wizard** opens, click **Next**<BR>
     - Search for Resources > Resource class: **System Resource**<BR>
     - Search for Resources > Attribute name: **Name**<BR>
-    - Search for Resources > Value: **PC1**<BR>
-    - Select Resources > Value: **PC1**<BR>
+    - Search for Resources > Value: **%**<BR>
+    - Select Resources > Value: Select the computername associated with the PC1 VM<BR>
+    - Click **Next** twice and then click **Close** in both windows.
+
+3. Double-click the Install Windows 10 Enterprise x64 device collection and verify that the PC1 computer account is displayed.
+
+4. In the Software Library workspace, expand **Operating Systems**, click **Task Sequences**, right-click **Windows 10 Enterprise x64** and then click **Deploy**.
+
+5. Use the following settings in the Deploy Sofware wizard:
+    - General > Collection: Click Browse and select **Install Windows 10 Enterprise x64**<BR>
+    - Deployment Settings > Purpose: **Available**<BR>
+    - Deployment Settings > Make available to the following: **Configuration Manager clients, media and PXE**<BR>
+    - Scheduling > Click **Next**<BR>
+    - User Experience > Click **Next**<BR>
+    - Alerts > Click **Next**<BR>
+    - Distribution Points > Click **Next**<BR>
+    - Summary > Click **Next**<BR>
+    - Verify that the wizard completed successfully and then click **Close**
+
+### Initiate the computer refresh
+
+1. In the Assets and Compliance workspace, click **Device Collections** and then double-click **Install Windows 10 Enterprise x64**.
+2. Right-click the computer account for PC1, point to **Client Notification**, click **Download Computer Policy**, and click **OK** in the popup dialog box.
+3. On PC1, in the notification area, click **New sofware is available** and then click **Open Sofware Center**.
+4. In the Sofware Center, click **Operating Systems**, click **Windows 10 Enterprise x64**, click **Install** and then click **INSTALL OPERATING SYSTEM**. See the following example:
+
+    ![installOS](images/sccm-install-os.png)
+
+The computer will restart several times during the installation process. When installation has completed, sign in using the contoso\administrator account and verify that applications and settings have been successfully backed up and restored to the new operating system.
+
+5. Save a checkpoint of the computer for later reference. To save a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+
+    ```
+    Checkpoint-VM -Name PC1 -SnapshotName RefreshState2
+    ```
 
 ## Replace a client with Windows 10 using Configuration Manager
 
+Before starting the replace procedure, restore PC1 to the checkpoint created in the previous procedure. To restore the checkpoint, type the following at an elevated Windows PowerShell prompt on the Hyper-V host:
+
+    ```
+    Restore-VMSnapshot -VMName PC1 -Name Client-installed -Confirm:$false
+    Start-VM PC1
+    vmconnect localhost PC1
+    ```
+
+>Restoring a checkpoint for PC1 back to a different OS will create two entries for PC1 in the Configuration Manager console. One entry will have OS build version 10.x.xxxxx and the other will display the older OS that was installed on PC before it was upgraded. This is OK, but you can also delete the entry that is out of date.
+
+### Create a replace task sequence
+
+1. On SRV1, in the Configuration Manager console, in the Software Library workspace, expand **Operating Systems**, right-click **Task Sequences**, and then click **Create MDT Task Sequence**.
+
+
+2. On the Choose Template page, select **Client Replace Task Sequence** and click **Next**.
+
+3. On the General page, type the following:
+- Task sequence name: **Replace Task Sequence**
+- Task sequence comments: **USMT backup only**
+
+4. Click **Next**, and on the Boot Image page, browse and select the **Zero Touch WinPE x64** boot image package. Click **OK** and then click **Next** to continue.
+
+5. On the MDT Package page, browse and select the **MDT 2013** package. Click **OK** and then click **Next** to continue.
+
+6. On the USMT Package page, browse and select the **Microsoft Corporation User State Migration Tool for Windows** package. Click **OK** and then click **Next** to continue.
+
+7. On the Settings Package page, browse and select the **Windows 10 x64 Settings** package. Click **OK** and then click **Next** to continue.
+
+8. On the Summary page, review the details and then click **Next**.
+
+9. On the Confirmation page, click **Finish**.
+
+### Deploy PC4
+
+Create a VM named PC4 to receive the applications and settings from PC1. This VM represents a new computer that will replace PC1. To create this VM, type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
+
+```
+New-VM –Name "PC4" –NewVHDPath "c:\vhd\pc4.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
+Set-VMMemory -VMName "PC4" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes 2048MB -Buffer 20
+Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
+```
+
+>Hyper-V enables us to define a static MAC address on PC4. In a real-world scenario you must determine the MAC address of the new computer.
+
+### Associate PC4 with PC1
+
+1. On SRV1 in the Configuration Manager console, in the Assets and Compliance workspace, right-click **Devices** and then click **Import Computer Information**.
+
+2. On the Select Source page, choose **Import single computer** and click **Next**.
+
+3. On the Single Computer page, use the following settings:
+- Computer Name: **PC4**
+- MAC Address: **00:15:5D:83:26:FF**
+- Source Computer: <type the hostname of PC1, or click Search twice, click the hostname, and click OK>
+
+4. Click **Next**, and then on the User Accounts page choose **Capture and restore all user accounts**. Click **Next** twice to continue.
+
+5. On the Choose Target Collection page, choose **Add computers to the following collection**, click **Browse**, choose **Install Windows 10 Enterprise x64**, click **OK**, click **Next** twice, and then click **Close**.
+
+6. Select the User State Migration node and review the computer association in the display pane.
+
+7. Right-click the association in the display pane and then click **View Recovery Information**. A recovery key has been assigned, but a user state store location has not. Click **Close**.
+
+8. Click **Device Collections** and then double-click **Install Windows 10 Enterprise x64**. Verify that **PC4** is displayed in the collection. You might have to update and refresh the collection, or wait a few minutes, but do not proceed until PC4 is available. If you did not delete the PC1 hostname from the console this will also be displayed here as an inactive computer. See the following example:
+
+    ![collection](images/sccm-collection.png)
+
+### Create a device collection for PC1
+
+1. On SRV1, in the Configuration Manager console, in the Assets and Compliance workspace, right-click **Device Collections** and then click **Create Device Collection**.
+
+2. Use the following settings in the **Create Device Collection Wizard**:
+    - General > Name: **USMT Backup (Replace)**<BR>
+    - General > Limiting collection: **All Systems**<BR>
+    - Membership Rules > Add Rule: **Direct Rule**<BR>
+    - The **Create Direct Membership Rule Wizard** opens, click **Next**<BR>
+    - Search for Resources > Resource class: **System Resource**<BR>
+    - Search for Resources > Attribute name: **Name**<BR>
+    - Search for Resources > Value: **%**<BR>
+    - Select Resources > Value: Select the computername associated with the PC1 VM.<BR>
+        - If there is an entry that is obsolete, do not select this entry.<BR>
+    - Click **Next** twice and then click **Close** in both windows.
+
+3. Click **Device Collections** and then double-click **USMT Backup (Replace)**. Verify that the computer name/hostname associated with PC1 is displayed in the collection. Do not proceed until this name is displayed.  
+
+### Create a new deployment
+
+In the Configuration Manager console, in the Software Library workspace, click Task Sequences, right-click Replace Task Sequence, click Deploy, and use the following settings:
+- General > Collection: **USMT Backup (Replace)**<BR>
+- Deployment Settings > Purpose: **Available**<BR>
+- Deployment Settings > Make available to the following: **Only Configuration Manager Clients**<BR>
+- Scheduling: Click **Next**<BR>
+- User Experience: Click **Next**<BR>
+- Alerts: Click **Next**<BR>
+- Distribution Points: Click **Next**<BR>
+- Click **Next** and then click **Close**.
+
+### Verify the backup
+
+1. On PC1, open the Configuration Manager control panel applet by typing the following command:
+
+    ```
+    control smscfgrc
+    ```
+2. On the **Actions** tab, click **Machine Policy Retrieval & Evaluation Cycle**, click **Run Now**, click **OK**, and then click **OK** again.
+
+3. 
+
+
 ## Related Topics
 
- 
+[System Center 2012 Configuration Manager Survival Guide](https://social.technet.microsoft.com/wiki/contents/articles/7075.system-center-2012-configuration-manager-survival-guide.aspx#Step-by-Step_Guides)
 
  
 

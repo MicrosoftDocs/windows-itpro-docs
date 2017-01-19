@@ -15,7 +15,11 @@ author: greg-lindsay
 
 -   Windows 10
 
-**Important**: This guide leverages the proof of concept (PoC) environment configured using procedures in [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md). Please complete all steps in the prerequisite guide before starting this guide.
+**Important**: This guide leverages the proof of concept (PoC) environment configured using procedures in the following guide: 
+- [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md)
+
+Please complete all steps in the prerequisite guide before starting this guide. After completing the current guide, also see the companion guide:
+- [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)
 
 The PoC environment is a virtual network running on Hyper-V with three virtual machines (VMs):
 - **DC1**: A contoso.com domain controller, DNS server, and DHCP server.
@@ -457,9 +461,9 @@ If the PC1 VM is not already running, then start and connect to it:
 
 1. Switch back to the Hyper-V host and create a checkpoint for the PC1 VM so that it can easily be reverted to its current state for troubleshooting purposes and to perform additional scenarios.  Checkpoints are also known as snapshots. To create a checkpoint for the PC1 VM, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
-    <pre style="overflow-y: visible">
+    ```
     Checkpoint-VM -Name PC1 -SnapshotName BeginState
-    </pre>
+    ```
 
 2. Sign on to PC1 using the CONTOSO\Administrator account.
 
@@ -470,6 +474,7 @@ If the PC1 VM is not already running, then start and connect to it:
     ```
     cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
     ```
+
     **Note**: Litetouch.vbs must be able to create the C:\MININT directory on the local computer.
 
 4. Choose the **Windows 10 Enterprise x64 Custom Image** and then click **Next**.
@@ -493,6 +498,7 @@ If the PC1 VM is not already running, then start and connect to it:
     ```
     Checkpoint-VM -Name PC1 -SnapshotName RefreshState
     ```
+
 9. Restore the PC1 VM to it's previous state in preparation for the replace procedure. To restore a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```
@@ -500,6 +506,7 @@ If the PC1 VM is not already running, then start and connect to it:
     Start-VM PC1
     vmconnect localhost PC1
     ```
+    
 10. Sign in to PC1 using the contoso\administrator account.
 
 ## Replace a computer with Windows 10
