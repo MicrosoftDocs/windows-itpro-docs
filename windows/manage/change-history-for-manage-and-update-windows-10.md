@@ -15,7 +15,6 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 >If you're looking for **update history** for Windows 10, see [Windows 10 and Windows Server 2016 update history](https://support.microsoft.com/help/12387/windows-10-update-history).
 
 ## January 2017
-<<<<<<< HEAD
 
 | New or changed topic | Description |
 | --- | --- |
