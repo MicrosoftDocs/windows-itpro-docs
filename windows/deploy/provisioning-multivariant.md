@@ -89,7 +89,7 @@ A variant setting that matches a **TargetState** with a lower priority is applie
 
 The **TargetState** priority is assigned based on the conditions priority and the priority evaluation rules are as followed:
 
-1. T**TargetState** with P0 conditions is higher than **TargetState** without P0 conditions.
+1. **TargetState** with P0 conditions is higher than **TargetState** without P0 conditions.
 
 
 2. **TargetState** with P1 conditions is higher than **TargetState** without P0 and P1 conditions.
