@@ -18,7 +18,7 @@ author: greg-lindsay
 **Important**: This guide leverages the proof of concept (PoC) environment configured using procedures in the following guide: 
 - [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md)
 
-Please complete all steps in the prerequisite guide before starting this guide. After completing the current guide, also see the companion guide:
+Please complete all steps in the prerequisite guide before starting this guide. This guide requires about 5 hours to complete, but can require less time or more time depending on the speed of the Hyper-V host. After completing the current guide, also see the companion guide:
 - [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)
 
 The PoC environment is a virtual network running on Hyper-V with three virtual machines (VMs):
