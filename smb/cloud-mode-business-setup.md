@@ -314,11 +314,55 @@ In this part of the walkthrough, we'll be working on the <a href="https://manage
   The **Windows Store for Business** page will refresh and it will show the details from the sync.
 
 **To buy apps from the Store**
-TBD
 
-> [!IMPORTANT]  
-> CelesteD is working in this section and the walkthrough is not done yet.
+In your <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Windows Store for Business</a> portal, you can see the list of apps that you own by going to **Manage > Inventory**. You should see the following apps in your inventory:
+- Sway
+- OneNote
+- PowerPoint Mobile
+- Excel Mobile
+- Word Mobile
 
+In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Apps > Apps > Volume-Purchased Apps** and verify that you can see the same list of apps appear on Intune.
+
+In the following example, we'll show you how to buy apps through the Windows Store for Business and then make sure the apps appear on Intune.
+
+**Example 1 - Add other apps like Reader and InstaNote**
+
+1. In the <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Windows Store for Business</a> portal, click **Shop**, scroll down to the **Made by Microsoft** category, and click **Show all** to see all the Microsoft apps in the list.
+
+  **Figure 28** - Shop for Store apps
+
+  ![Shop for Store apps](images/wsfb_shop_microsoft_apps.png)
+
+2. Click to select an app, such as **Reader**. This opens the app page.
+3. In the app's Store page, click **Get the app**. You should see a dialog that confirms your order. Click **Close**. This will refresh the app's Store page.
+4. In the app's Store page, click **Add to private store**.
+5. Next, search for another app by name (such as **InstaNote**) or repeat steps 1-4 for the **InstaNote** app.
+6. Go to **Manage > Inventory** and verify that the apps you purchased appear in your inventory.
+
+  **Figure 29** - App inventory shows the purchased apps
+
+  ![Confirm that your inventory shows purchased apps](images/wsfb_manage_inventory_newapps.png)
+
+  > [!NOTE]
+  > Sync happens automatically, but it may take up to 24 hours for your organization's private store and 12 hours for Intune to sync all your purchased apps. You can force a sync to make this process happen faster. For more info, see [To sync recently purchased apps](#forceappsync).
+
+**<a name="forceappsync"></a>To sync recently purchased apps**
+
+If you need to sync your most recently purchased apps and have it appear in your catalog, you can do this by forcing a sync.
+
+1. In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Admin > Mobile Device Management > Windows > Store for Business**.
+2. In the **Windows Store for Business** page, click **Sync now** to force a sync.
+
+  **Figure 30** - Force a sync in Intune
+
+  ![Force a sync in Intune](images/intune_admin_mdm_forcesync.png)
+
+**To view purchased apps**
+- In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Apps > Apps** and then choose **Volume-Purchased Apps** to see the list of available apps. Verify that the apps you purchased were imported correctly.
+
+**To add more apps**
+- If you have other apps that you want to deploy or manage, you must add it to Microsoft Intune. To deploy Win32 apps and Web links, see <a href="https://docs.microsoft.com/en-us/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune" target="_blank">Add apps for enrolled devices to Intune</a> for more info on how to do this.
 
 ## 3. Set up devices
 
