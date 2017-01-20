@@ -1,6 +1,6 @@
 ---
 title: Create a provisioning package with multivariant settings (Windows 10)
-description: Create a provisioning package with multivariant settings to customize the provisioned settings.
+description: Create a provisioning package with multivariant settings to customize the provisioned settings for defined conditions.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,39 +16,34 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Multivariant provisioning packages enable you to create a single provisioning package that can work for multiple locales.
 
-To provision multivariant settings, you must create a provisioning package with defined **Conditions** and **Settings** that are tied to these conditions. When you install this package on a Windows 10 device, the provisioning engine applies the matching condition settings at every event and triggers provisioning.
+In your organization, you might have different configuration requirements for devices that you manage. You can create separate provisioning packages for each group of devices in your organization that have different requirements. Or, you can create a multivariant provisioning package, a single provisioning package that can work for multiple conditions. For example, in a single provisioning package, you can define one set of customization settings that will apply to devices set up for French and a different set of customization settings for devices set up for Japanese. 
 
-The following events trigger provisioning on Windows 10 devices:
+To provision multivariant settings, you use Windows Imaging and Configuration Designer (ICD) to create a provisioning package that contains all of the customization settings that you want to apply to any of your devices. Next, you manually edit the .XML file for that project to define each set of devices (a **Target**). For each **Target**, you specify at least one **Condition** with a value, which identifies the devices to receive the configuration. Finally, for each **Target**, you provide the customization settings to be applied to those devices.
 
-| Event | Windows 10 Mobile | Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) |
-| --- | --- | --- |
-| System boot | Supported | Supported |
-| Operating system update | Supported | Planned |
-| Package installation during device first run experience | Supported | Supported |
-| Detection of SIM presence or update | Supported | Not supported |
-| Package installation at runtime | Supported | Supported |
-| Roaming detected | Supported | Not supported |
+Let's begin by learning how to define a **Target**.
 
-## Target, TargetState, Condition, and priorities
 
-Targets describe keying for a variant and must be described or pre-declared before being referenced by the variant.
+## Define a target
+
+In the XML file, you provide an **Id**, or friendly name, for each **Target**. Each **Target** is defined by at least one **TargetState** which contains at least one **Condition**. A **Target** can have more than one **TargetState**, and a **TargetState** can have more than one **Condition**. A **Condition** element defines the matching type between the condition and the specified value.
 
 ![Target with multiple target states and conditions](images/multi-target.png)
 
-- You can define multiple **Target** child elements for each **Id** that you need for the customization setting.
+- When *all* **Condition** elements are TRUE, **TargetState** is TRUE.
 
-- Within a **Target** you can define multiple **TargetState** elements.
+  ![Target state is true when all conditions are true](images/icd-multi-targetstate-true.png)
 
-- Within a **TargetState** element you can create multiple **Condition** elements.
+- If *any* of the **TargetState** elements is TRUE, **Target** is TRUE (**OR** logic), and **Id** can be used for the setting customization.
 
-- A **Condition** element defines the matching type between the condition and the specified value.
+  ![Target is true if any target state is true](images/icd-multi-target-true.png)
+
+### Conditions
 
 The following table shows the conditions supported in Windows 10 provisioning:
 
 >[!NOTE]
->You can use any of these supported conditions when defining your **TargetState**.
+>You can use any supported conditions when defining your **TargetState**.
 
 | Condition Name | Condition priority | Windows 10 Mobile | Windows 10 for desktop editions | Value type | Value description |
 | --- | --- | --- | --- | --- | --- |
@@ -80,10 +75,7 @@ The matching types supported in Windows 10 are:
 | Numeric range match | Matching type is prefixed by "!Range:" | &lt;Condition Name="MNC" Value="!Range:400, 550" /&gt; |
  
 
-- When all **Condition** elements are TRUE, **TargetState** is TRUE (**AND** logic).
-
-- If any of the **TargetState** elements is TRUE, **Target** is TRUE (**OR** logic), and **Id** can be used for the setting customization.
-
+### TargetState priorities
 
 You can define more than one **TargetState** within a provisioning package to apply variant settings that match device conditions. When the provisioning engine evalues each **TargetState**, more than one **TargetState** may fit current device conditions. To determine the order in which the variant settings are applied, the system assigns a priority to every **TargetState**. 
 
@@ -291,7 +283,20 @@ In this example, the **StoreFile** corresponds to the location of the settings s
 
  
 
+## Events that trigger provisioning
 
+When you install the multivariant provisioning package on a Windows 10 device, the provisioning engine applies the matching condition settings at every event and triggers provisioning.
+
+The following events trigger provisioning on Windows 10 devices:
+
+| Event | Windows 10 Mobile | Windows 10 for desktop editions |
+| --- | --- | --- |
+| System boot | Supported | Supported |
+| Operating system update | Supported | Planned |
+| Package installation during device first run experience | Supported | Supported |
+| Detection of SIM presence or update | Supported | Not supported |
+| Package installation at runtime | Supported | Supported |
+| Roaming detected | Supported | Not supported |
  
 
  
