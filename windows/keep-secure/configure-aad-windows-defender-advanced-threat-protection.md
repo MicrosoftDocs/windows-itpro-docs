@@ -25,8 +25,6 @@ localizationpriority: high
 You need to add an application in your Azure Active Directory (AAD) tenant then authorize the Windows Defender ATP Alerts Export application  to communicate with it so that your security information and events management (SIEM) tool can consume alerts from Windows Defender ATP portal.
 
 1. Login to the [Azure management portal](https://ms.portal.azure.com).
-  >!NOTE:
-  >Use your Azure credentials not the Windows Defender Advanced Threat protection portal credentials.
 
 2. Select **Active Directory**.
 
@@ -82,7 +80,37 @@ An Azure login page appears.
 
 23. Save the application changes.
 
-After configuring the application in AAD, you can continue to configure the SIEM tool that you want to use.
+After configuring the application in AAD, you'll need to obtain a refresh token. You'll need to use the token when you configure the connector for your SIEM tool in the next steps. The token lets the connector access Windows Defender ATP events to be consumed by your SIEM.
+
+## Obtain a refresh token using an events URL
+Obtain a refresh token used to retrieve the Windows Defender Advanced Threat Protection events to your SIEM. This section provides information on how you can use an events URL to obtain the required refresh token.
+>[!NOTE]
+>For HP ArcSight, you can obtain a refresh token using the restutil tool. For more information, see [Configure HP ArcSight to consume alerts](configure-arcsight-windows-defender-advanced-threat-protection.md).
+
+### Before you begin
+Get the following information from your Azure Active Directory (AAD) application by selecting the **View Endpoint** on the application configuration page:
+
+    - OAuth 2 Client ID
+    - OAuth 2 Client secret
+
+You'll use these values to obtain a refresh token.
+
+>[!IMPORTANT]
+>Before using the OAuth 2 Client secret described in the next steps, you **must** encode it. Use a URL encoder to transform the OAuth 2 client secret.
+
+### Obtain a refresh token
+1. Open a web browser and connect to the following URL: `https://DataAccess-PRD.trafficmanager.net:444/api/FetchToken?clientId=<client ID>&tenantId=<tenant ID>&clientSecret=<client secret>`
+
+  >[!NOTE]
+  >- Replace the *client ID* value with the one you got from your AAD application.
+  >- Replace *tenant ID* with your actual tenant ID.
+  >- Replace *client secret* with your encoded client secret. The client secret **must** be pasted encoded.
+
+2. Click **Accept**. When you authenticate, a web page opens with your refresh token.
+
+3.  Save the refresh token which you'll find it the `<RefreshToken></RefreshToken>`value. You'll need this value when configuring your SIEM tool.
+
+After configuring your AAD application and generating a refresh token, you can proceed to configure your SIEM tool.
 
 ## Related topics
 - [Configure security information and events management (SIEM) tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)
