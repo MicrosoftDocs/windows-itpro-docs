@@ -53,7 +53,7 @@ Using the digital signature, UEFI verifies that the bootloader was signed using 
 
 If the bootloader passes these two tests, UEFI knows that the bootloader isn’t a bootkit and starts it. At this point, Trusted Boot takes over, and the Windows bootloader, using the same cryptographic technologies that UEFI used to verify the bootloader, then verifies that the Windows system files haven’t been changed.
 
-All Windows 8–certified devices must meet several requirements related to UEFI-based Secure Boot:
+Starting with Windows 8, certified devices must meet several requirements related to UEFI-based Secure Boot:
 
 -   They must have Secure Boot enabled by default.
 -   They must trust Microsoft’s certificate (and thus any bootloader Microsoft has signed).
