@@ -35,12 +35,12 @@ You'll need to configure HP ArcSight so that it can consume Windows Defender ATP
   - **client_secret**: OAuth 2 Client secret
   - **auth_url**:  ```https://login.microsoftonline.com/<tenantID>?resource=https%3A%2F%2FWDATPAlertExport.Seville.onmicrosoft.com ```
 
-    >!NOTE
+    >[!NOTE]
     >Replace *tenantID* with your tenant ID.
 
   - **token_url**: `https://login.microsoftonline.com/<tenantID>/oauth2/token`
 
-    >!NOTE
+    >[!NOTE]
     >Replace the *tenantID* value with your tenant ID.
 
   - **redirect_uri**: ```https://localhost:44300/wdatpconnector```
