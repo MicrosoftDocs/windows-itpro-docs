@@ -119,7 +119,7 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
 
     *Figure 4. Booting the Microsoft Surface Data Eraser USB stick*
 
-4.  Read the software license terms, and then close the notepad file.
+4.  Read the software license terms, and then close the Notepad file.
 
 5.  Accept or decline the software license terms by typing **Accept** or **Decline**. You must accept the license terms to continue.
 
