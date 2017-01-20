@@ -103,11 +103,14 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
 2.  Boot your Surface device from the Microsoft Surface Data Eraser USB stick. To boot your device from the USB stick follow these steps:
 
     a. Turn off your Surface device.
-    b. Press and hold the **Volume Down** button.
-    c. Press and release the **Power** button.
-    d. Release the **Volume Down** button.
 
-    >[NOTE]
+    b. Press and hold the **Volume Down** button.
+
+    c. Press and release the **Power** button.
+
+    d. Release the **Volume Down** button.
+    
+    >[!NOTE]
     >If your device does not boot to USB using these steps, you may need to turn on the **Enable Alternate Boot Sequence** option in Surface UEFI. You can read more about Surface UEFI boot configuration in [Manage Surface UEFI Settings](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings).
 
 3.  When the Surface device boots, a **SoftwareLicenseTerms** text file is displayed, as shown in Figure 4.
@@ -118,11 +121,11 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
 
 4.  Read the software license terms, and then close the notepad file.
 
-5.  Accept or Decline the Software License Terms by typing **Accept** or **Decline**. You must accept the license terms to continue.
+5.  Accept or decline the software license terms by typing **Accept** or **Decline**. You must accept the license terms to continue.
 
 6.  The Microsoft Surface Data Eraser script detects the storage devices that are present in your Surface device and displays the details of the native storage device. To continue, press **Y** (this action runs Microsoft Surface Data Eraser and removes all data from the storage device) or press **N** (this action shuts down the device without removing data).
 
-  >[NOTE]
+  >[!NOTE]
   >The Microsoft Surface Data Eraser tool will delete all data, including Windows operating system files required to boot the device, in a secure and unrecoverable way. To boot a Surface device that has been wiped with Microsoft Surface Data Eraser, you will first need to reinstall the Windows operating system. To remove data from a Surface device without removing the Windows operating system, you can use the **Reset your PC** function. However, this does not prevent your data from being recovered with forensic or data recovery capabilities. See [Recovery options in Windows 10](https://support.microsoft.com/help/12415/windows-10-recovery-options) for more information.
 
   ![Partition to be erased is displayed](images/sda-fig5-erase.png "Partition to be erased is displayed")
