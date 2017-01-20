@@ -75,11 +75,13 @@ The matching types supported in Windows 10 are:
 
 ### TargetState priorities
 
-You can define more than one **TargetState** within a provisioning package to apply variant settings that match device conditions. When the provisioning engine evalues each **TargetState**, more than one **TargetState** may fit current device conditions. To determine the order in which the variant settings are applied, the system assigns a priority to every **TargetState**. 
+You can define more than one **TargetState** within a provisioning package to apply settings to devices that match device conditions. When the provisioning engine evalues each **TargetState**, more than one **TargetState** may fit current device conditions. To determine the order in which the settings are applied, the system assigns a priority to every **TargetState**. 
 
-A variant setting that matches a **TargetState** with a lower priority is applied before the variant that matches a **TargetState** with a higher priority. Variant settings that match more than one **TargetState** with equal priority are applied according to the order that each **TargetState** is defined in the provisioning package.
+A setting that matches a **TargetState** with a lower priority is applied before the setting that matches a **TargetState** with a higher priority. This means that a setting for the **TargetState** with the higher priority can overwrite a setting for the **TargetState** with the lower priority.
 
-The **TargetState** priority is assigned based on the conditions priority and the priority evaluation rules are as followed:
+Settings that match more than one **TargetState** with equal priority are applied according to the order that each **TargetState** is defined in the provisioning package.
+
+The **TargetState** priority is assigned based on the conditions priority (see the [Conditions table](#conditions) for priorities). The priority evaluation rules are as followed:
 
 1. **TargetState** with P0 conditions is higher than **TargetState** without P0 conditions.
 
@@ -104,17 +106,15 @@ The **TargetState** priority is assigned based on the conditions priority and th
 Follow these steps to create a provisioning package with multivariant capabilities.
 
 
-1. Build a provisioning package and configure the customizations you need to apply during certain conditions. For more information, see [Create a provisioning package](provisioning-create-package.md).
-
+1. Build a provisioning package and configure the customizations you want to apply during certain conditions. For more information, see [Create a provisioning package](provisioning-create-package.md).
 
 2. After you've [configured the settings](provisioning-create-package.md#configure-settings), save the project.
 
-
-3. Open the project folder and copy the customizations.xml file. 
+3. Open the project folder and copy the customizations.xml file (TO WHERE? DOES IT MATTER?). 
 
 4. Use an XML or text editor to open the customizations.xml file.
 
-    The customizations.xml file holds the package metadata (including the package owner and rank) and the settings that you configured when you created your provisioning package. The Customizations node contains a Common section, which contains the customization settings.
+    The customizations.xml file holds the package metadata (including the package owner and rank) and the settings that you configured when you created your provisioning package. The **Customizations** node of the file contains a **Common** section, which contains the customization settings.
 
     The following example shows the contents of a sample customizations.xml file.
 
@@ -145,7 +145,7 @@ Follow these steps to create a provisioning package with multivariant capabiliti
 </WindowsCustomizatons> 
     ```
 
-4. Edit the customizations.xml file and create a **Targets** section to describe the conditions that will handle your multivariant settings. 
+4. Edit the customizations.xml file to create a **Targets** section to describe the conditions that will handle your multivariant settings. 
 
     The following example shows the customizations.xml, which has been modified to include several conditions including **ProcessorName**, **ProcessorType**, **MCC**, and **MNC**.
     
@@ -202,10 +202,10 @@ Follow these steps to create a provisioning package with multivariant capabiliti
 
     c. Move compliant settings from the **Common** section to the **Variant** section.
 
-    If any of the TargetRef elements matches the Target, all settings in the Variant are applied (OR logic).
+    If any of the **TargetRef** elements matches the **Target**, all settings in the **Variant** are applied.
 
     >[!NOTE]
-    >You can define multiple Variant sections. Settings that reside in the **Common** section are applied unconditionally on every triggering event.
+    >You can define multiple **Variant** sections. Settings that reside in the **Common** section are applied unconditionally on every triggering event.
 
     The following example shows the customizations.xml updated to include a **Variant** section and the moved settings that will be applied if the conditions for the variant are met.
 
