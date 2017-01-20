@@ -954,9 +954,9 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 2. On the Select Source page, choose **Import single computer** and click **Next**.
 
 3. On the Single Computer page, use the following settings:
-- Computer Name: **PC4**
-- MAC Address: **00:15:5D:83:26:FF**
-- Source Computer: <type the hostname of PC1, or click Search twice, click the hostname, and click OK>
+    - Computer Name: **PC4**
+    - MAC Address: **00:15:5D:83:26:FF**
+    - Source Computer: <type the hostname of PC1, or click Search twice, click the hostname, and click OK>
 
 4. Click **Next**, and then on the User Accounts page choose **Capture and restore all user accounts**. Click **Next** twice to continue.
 

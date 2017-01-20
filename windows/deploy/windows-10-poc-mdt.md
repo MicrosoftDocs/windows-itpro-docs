@@ -454,10 +454,10 @@ This section will demonstrate how to export user data from an existing client co
 
 If the PC1 VM is not already running, then start and connect to it:
 
-    <pre style="overflow-y: visible">
+    ```
     Start-VM PC1
     vmconnect localhost PC1
-    </pre>
+    ```
 
 1. Switch back to the Hyper-V host and create a checkpoint for the PC1 VM so that it can easily be reverted to its current state for troubleshooting purposes and to perform additional scenarios.  Checkpoints are also known as snapshots. To create a checkpoint for the PC1 VM, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
