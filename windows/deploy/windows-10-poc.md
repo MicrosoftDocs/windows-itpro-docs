@@ -109,7 +109,7 @@ Harware requirements are displayed below:
     </tr>
     <tr>
         <td BGCOLOR="#a0e4fa">**Disk**</td>
-        <td>50 GB available hard disk space (100 GB recommended), any format.</td>
+        <td>200 GB available hard disk space, any format.</td>
         <td>Any size, MBR formatted.</td>
     </tr>
     <tr>

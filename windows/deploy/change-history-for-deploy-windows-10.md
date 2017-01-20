@@ -14,6 +14,9 @@ This topic lists new and updated topics in the [Deploy Windows 10](index.md) doc
 ## January 2017
 | New or changed topic | Description |
 |----------------------|-------------|
+| [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md) | New | 
+| [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) | New | 
+| [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md) | New | 
 | [Apply a provisioning package](provisioning-apply-package.md) | New (previously published in other topics) | 
 | [Create a provisioning package for Windows 10](provisioning-create-package.md) | New (previously published in Hardware Dev Center on MSDN) | 
 | [Create a provisioning package with multivariant settings](provisioning-multivariant.md) | New (previously published in Hardware Dev Center on MSDN) | 
