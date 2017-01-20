@@ -52,16 +52,16 @@ The following table shows the conditions supported in Windows 10 provisioning fo
 | GID1 | P0 | Supported | N/A | Digit string | Use to target settings based on the Group Identifier (level 1) value. |
 | ICCID | P0 | Supported | N/A | Digit string | Use to target settings based on the Integrated Circuit Card Identifier (ICCID) value. |
 | Roaming | P0 | Supported | N/A | Boolean | Use to specify roaming. Set the value to **1** (roaming) or **0** (non-roaming). | 
-| UICC | P0 | Supported | N/A | Enumeration | Use to specify the UICC state. Set the value to one of the following:</br></br></br>- 0 - Empty</br>- 1 - Ready</br>- 2 - Locked |
+| UICC | P0 | Supported | N/A | Enumeration | Use to specify the Universal Integrated Circuit Card (UICC) state. Set the value to one of the following:</br></br></br>- 0 - Empty</br>- 1 - Ready</br>- 2 - Locked |
 | UICCSLOT | P0 | Supported | N/A | Digit string | Use to specify the UICC slot. Set the value one of the following:</br></br></br>- 0 - Slot 0</br>- 1 - Slot 1 |
 | ProcessorType | P1 | Supported | Supported | String | Use to target settings based on the processor type. |
 | ProcessorName | P1 | Supported | Supported | String | Use to target settings based on the processor name. |
-| AoAc | P1 | Supported | Supported | Boolean | Set the value to 0 or 1. |
-| PowerPlatformRole | P1 | Supported | Supported | Enumeration | Indicates the preferred power management profile. Set the value based on the POWER_PLATFORM_ROLE enumeration. |
+| AoAc | P1 | Supported | Supported | Boolean | Set the value to 0 or 1. WHAT DOES 0 MEAN? WHAT DOES 1 MEAN? WHAT DOES THIS CONDITION EVEN MEAN?|
+| PowerPlatformRole | P1 | Supported | Supported | Enumeration | Indicates the preferred power management profile. Set the value based on the POWER_PLATFORM_ROLE enumeration. WHERE DO THEY FIND THAT ENUMERATION? |
 | Architecture | P1 | Supported | Supported | String | Matches the PROCESSOR_ARCHITECTURE environment variable. |
-| Server | P1 | Supported | Supported | Boolean | Set the value to 0 or 1. |
-| Region | P1 | Supported | Supported | Enumeration | Use to target settings based on country/region. |
-| Lang | P1 | Supported | Supported | Enumeration | Use to target settings based on language code. |
+| Server | P1 | Supported | Supported | Boolean | Set the value to 0 or 1. WHAT DOES 0 MEAN? WHAT DOES 1 MEAN? WHAT DOES THIS CONDITION EVEN MEAN?|
+| Region | P1 | Supported | Supported | Enumeration | Use to target settings based on country/region. NEED REFERENCE FOR REGION CODES TO USE|
+| Lang | P1 | Supported | Supported | Enumeration | Use to target settings based on language code. IS THIS CORRECT REFERENCE FOR LANG CODES? [https://msdn.microsoft.com/en-us/library/cc233965.aspx](https://msdn.microsoft.com/en-us/library/cc233965.aspx) |
 | ROMLANG | P1 | Supported | N/A | Digit string | Use to specify the PhoneROMLanguage that's set for DeviceTargeting. This condition is used primarily to detect variants for China. For example, you can use this condition and set the value to "0804". |
 
 The matching types supported in Windows 10 are:
