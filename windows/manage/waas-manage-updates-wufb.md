@@ -37,7 +37,7 @@ Windows Update for Business provides three types of updates to Windows 10 device
 - **Quality Updates**: these are traditional operating system updates, typically released the second Tuesday of each month (though they can be released at any time).  These include security, critical, and driver updates. Windows Update for Business also treats non-Windows updates (such as those for Microsoft Office or Visual Studio) as Quality Updates. These non-Windows Updates are known as *Microsoft Updates* and devices can be optionally configured to receive such updates along with their Windows Updates.
 - **Non-deferrable updates**: Currently, antimalware and antispyware Definition Updates from Windows Update cannot be deferred.
  
-Both Feature and Quality Updates can be deferred from deploying to client devices by a Windows Update for Business administrator within a bounded rage of time from when those updates are first made available on the Windows Update Service. This deferral capability allows administrators to validate deployments as they are pushed to all client devices configured for Windows Update for Business.
+Both Feature and Quality Updates can be deferred from deploying to client devices by a Windows Update for Business administrator within a bounded range of time from when those updates are first made available on the Windows Update Service. This deferral capability allows administrators to validate deployments as they are pushed to all client devices configured for Windows Update for Business.
 
 <table>
 <tr>
