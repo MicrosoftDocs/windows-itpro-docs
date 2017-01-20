@@ -30,20 +30,18 @@ In the XML file, you provide an **Id**, or friendly name, for each **Target**. E
 
 ![Target with multiple target states and conditions](images/multi-target.png)
 
-- When *all* **Condition** elements are TRUE, **TargetState** is TRUE.
+- When all **Condition** elements are TRUE, **TargetState** is TRUE.
 
   ![Target state is true when all conditions are true](images/icd-multi-targetstate-true.png)
 
-- If *any* of the **TargetState** elements is TRUE, **Target** is TRUE (**OR** logic), and **Id** can be used for the setting customization.
+- If any of the **TargetState** elements is TRUE, **Target** is TRUE, and the **Id** can be used for setting customizations.
 
   ![Target is true if any target state is true](images/icd-multi-target-true.png)
 
 ### Conditions
 
-The following table shows the conditions supported in Windows 10 provisioning:
+The following table shows the conditions supported in Windows 10 provisioning for a **TargetState**:
 
->[!NOTE]
->You can use any supported conditions when defining your **TargetState**.
 
 | Condition Name | Condition priority | Windows 10 Mobile | Windows 10 for desktop editions | Value type | Value description |
 | --- | --- | --- | --- | --- | --- |
@@ -71,7 +69,7 @@ The matching types supported in Windows 10 are:
 | Matching type | Syntax | Example |
 | --- | --- | --- |
 | Straight match | Matching type is specified as-is | &lt;Condition Name="ProcessorName" Value="Barton" /&gt; |
-| Regex match | Matching type is prefixed by "Pattern:" | &lt;Condition Name="ProcessorName" Value="Pattern:.*Celeron.*" /&gt; |
+| Regular expression (Regex) match | Matching type is prefixed by "Pattern:" | &lt;Condition Name="ProcessorName" Value="Pattern:.*Celeron.*" /&gt; |
 | Numeric range match | Matching type is prefixed by "!Range:" | &lt;Condition Name="MNC" Value="!Range:400, 550" /&gt; |
  
 
