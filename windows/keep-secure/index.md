@@ -29,13 +29,8 @@ Learn about keeping Windows 10 and Windows 10 Mobile secure.
 |[Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md) |Use Group Policy to override individual **Process Mitigation Options** settings and help to enforce specific app-related security policies. |
 | [VPN technical guide](vpn-guide.md) | Virtual private networks (VPN) let you give your users secure remote access to your company network. Windows 10 adds useful new VPN profile options to help you manage how users connect. |
 | [Windows security baselines](windows-security-baselines.md) | Learn why you should use security baselines in your organization. |
-<<<<<<< HEAD
-| [Security technologies](security-technologies.md) | Learn more about the different security technologies that are available in Windows 10 and Windows 10 Mobile. |
-| [Enterprise security guides](windows-10-enterprise-security-guides.md) | Get proven guidance to help you better secure and protect your enterprise by using technologies such as Credential Guard and Device Guard. This section offers technology overviews and step-by-step guides. |
-=======
 | [Security technologies](security-technologies.md) | Learn more about the different security technologies that are available in Windows 10 and Windows 10 Mobile. For example, learn about AppLocker, BitLocker, and Security auditing. |
 | [Enterprise security guides](windows-10-enterprise-security-guides.md) | Review technology overviews that help you understand Windows 10 security technologies in the context of the enterprise. |
->>>>>>> refs/remotes/origin/master
 | [Change history for Keep Windows 10 secure](change-history-for-keep-windows-10-secure.md) | This topic lists new and updated topics in the Keep Windows 10 secure documentation for [Windows 10 and Windows 10 Mobile](../index.md). |
  
 ## Related topics
