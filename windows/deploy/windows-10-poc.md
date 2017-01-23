@@ -201,7 +201,9 @@ Starting with Windows 8, the host computer’s microprocessor must support secon
 
     <pre style="overflow-y: visible">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All</pre>
     
-    This command works on all operating systems that support Hyper-V. 
+    This command works on all operating systems that support Hyper-V, but on Windows Server operating systems you must type an additional command to add the Hyper-V Windows PowerShell module and the Hyper-V Manager console. This command will also install Hyper-V if it isn't already installed, so if desired you can just type the following command on Windows Server 2012 or 2016 instead of using the Enable-WindowsOptionalFeature command:
+
+    <pre style="overflow-y: visible">Install-WindowsFeature -Name Hyper-V -IncludeManagementTools</pre>
     
     When you are prompted to restart the computer, choose **Yes**. The computer might restart more than once. After installation is complete, you can open Hyper-V Manager by typing **virtmgmt.msc** at an elevated command prompt.
     
@@ -211,7 +213,7 @@ Starting with Windows 8, the host computer’s microprocessor must support secon
 
     ![hyper-v](images/svr_mgr2.png)
 
-    <P>If you choose to install Hyper-V using Server Manager, accept all default selections. 
+    <P>If you choose to install Hyper-V using Server Manager, accept all default selections. Also be sure to install both items under **Role Administration Tools\Hyper-V Management Tools**.
 
 ### Download VHD and ISO files
 
