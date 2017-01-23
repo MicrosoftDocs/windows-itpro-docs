@@ -713,8 +713,8 @@ Microsoft aspires to update Windows 10 Mobile devices with the latest updates au
 <td align="left"><strong>Cellular</strong></td>
 <td align="left">Device is only connected to a cellular network (standard data charges apply)</td>
 <td align="left">Will skip a daily scan if scan was successfully completed in the last 5 days</td>	      
-<td align="left">Will only occur if update package is small and does not exceed the mobile operator data limit or the user clicks “download now”.</td>
-<td align="left">Yes, if the user clicked “download now”</td>	      
+<td align="left">Will only occur if update package is small and does not exceed the mobile operator data limit.</td>
+<td align="left">Yes</td>	      
 <td align="left">Idem</td>	      
 </tr>
 <tr class="even">
