@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerMS
-redirect_url: https://technet.microsoft.com/en-us/itpro/windows/keep-secure/hello-implement-in-organization
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/keep-secure/hello-manage-in-organization
 ---
 
 # Implement Windows Hello for Business in your organization

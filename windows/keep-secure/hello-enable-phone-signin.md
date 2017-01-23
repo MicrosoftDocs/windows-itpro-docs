@@ -63,9 +63,9 @@ If you want to distribute the **Microsoft Authenticator** app, your organization
 
 ## Related topics
 
-- [Manage identity verification using Windows Hello for Business](hello-manage-identity-verification.md)
+- [Windows Hello for Business](hello-identity-verification.md)
 - [How Windows Hello for Business works](hello-how-it-works.md)
-- [Implement Windows Hello for Business in your organization](hello-implement-in-organization.md)
+- [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)

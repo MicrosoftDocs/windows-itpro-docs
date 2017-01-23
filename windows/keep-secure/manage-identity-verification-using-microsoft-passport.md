@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 author: jdeckerMS
-redirect_url: https://technet.microsoft.com/en-us/itpro/windows/keep-secure/hello-manage-identity-verification
+redirect_url: https://technet.microsoft.com/en-us/itpro/windows/keep-secure/hello-identity-verification
 ---
 # Manage identity verification using Windows Hello for Business
 

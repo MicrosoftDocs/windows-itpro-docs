@@ -1,5 +1,5 @@
 ---
-title: Implement Windows Hello in your organization (Windows 10)
+title: Manage Windows Hello in your organization (Windows 10)
 description: You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello for Business on devices running Windows 10.
 ms.assetid: 47B55221-24BE-482D-BD31-C78B22AC06D8
 keywords: identity, PIN, biometric, Hello
@@ -11,7 +11,7 @@ author: jdeckerMS
 localizationpriority: high
 ---
 
-# Implement Windows Hello for Business in your organization
+# Manage Windows Hello for Business in your organization
 
 **Applies to**
 -   Windows 10
@@ -420,7 +420,7 @@ If you want to use Windows Hello for Business with certificates, you’ll need a
 
 ## Related topics
 
-- [Manage identity verification using Windows Hello for Business](hello-manage-identity-verification.md)
+- [Windows Hello for Business](hello-identity-verification.md)
 - [How Windows Hello for Business works](hello-how-it-works.md)
 - [Enable phone sign-in to PC or VPN](hello-enable-phone-signin.md)
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)

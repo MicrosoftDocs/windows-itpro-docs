@@ -26,7 +26,7 @@ A goal of Windows Hello is to allow a user to open a brand-new device, securely 
  The registration process works like this: 
  
 1. The user configures an account on the device. This account can be a local account on the device, a domain account stored in the on-premises Active Directory domain, a Microsoft account, or an Azure AD account. For a new device, this step may be as simple as signing in with a Microsoft account. Signing in with a Microsoft account on a Windows 10 device automatically sets up Windows Hello on the device; users don’t have to do anything extra to enable it. 
-2. To sign in using that account, the user has to enter the existing credentials for it. The IDP that “owns” the account receives the credentials and authenticates the user. This IDP authentication may include the use of an existing second authentication factor, or proof. For example, a user who registers a new device by using an Azure AD account will have to provide an SMS-based proof that Azure AD sends. 
+2. To sign in using that account, the user has to enter the existing credentials for it. The identity provider (IDP) that “owns” the account receives the credentials and authenticates the user. This IDP authentication may include the use of an existing second authentication factor, or proof. For example, a user who registers a new device by using an Azure AD account will have to provide an SMS-based proof that Azure AD sends. 
 3. When the user has provided the proof to the IDP, the user enables PIN authentication. The PIN will be associated with this particular credential. When the user sets the PIN, it becomes usable immediately 
 
 Remember that Windows Hello depends on pairing a device and a credential, so the PIN chosen is associated only with the combination of the active account and that specific device. The PIN must comply with whatever length and complexity policy the account administrator has configured; this policy is enforced on the device side. Other registration scenarios that Windows Hello supports are:
@@ -112,8 +112,8 @@ Windows Hello depends on having compatible IDPs available to it. As of this writ
 
 ## Related topics
 
-- [Manage identity verification using Windows Hello for Business](hello-manage-identity-verification.md)
-- [Implement Windows Hello for Business in your organization](hello-implement-in-organization.md)
+- [Windows Hello for Business](hello-identity-verification.md)
+- [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
 - [Enable phone sign-in to PC or VPN](hello-enable-phone-signin.md)
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
