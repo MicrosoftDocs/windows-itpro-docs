@@ -289,7 +289,9 @@ The resulting taskbar for computers in any other country region:
 
 ## Related topics
 
-[Manage Windows 10 Start and taskbar layout ](windows-10-start-layout-options-and-policies.md)[Customize and export Start layout](customize-and-export-start-layout.md)
+[Manage Windows 10 Start and taskbar layout ](windows-10-start-layout-options-and-policies.md)
+
+[Customize and export Start layout](customize-and-export-start-layout.md)
 
 [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 

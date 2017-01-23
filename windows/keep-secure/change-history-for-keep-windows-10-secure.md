@@ -12,10 +12,20 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
-## December 2016
-| New or changed topic | Description |
-| --- | --- |
+
+## January 2017
+|New or changed topic |Description |
+|---------------------|------------|
+|[Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](recommended-network-definitions-for-wip.md) |New |
+|[Using Outlook Web Access with Windows Information Protection (WIP)](using-owa-with-wip.md) |New |
 | Microsoft Passport guide | Content merged into [Manage identity verification using Windows Hello for Business](hello-manage-identity-verification.md) topics |
+
+## December 2016
+|New or changed topic |Description |
+|---------------------|------------|
+|[Create WMI Filters for the GPO](create-wmi-filters-for-the-gpo.md) |Added filter examples for Windows 10 and Windows Server 2016. |
+
+
 
 ## November 2016
 | New or changed topic | Description |

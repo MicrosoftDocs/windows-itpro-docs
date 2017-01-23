@@ -231,7 +231,7 @@ The following steps detail how to create a certificate template for use with Bit
 
 1.  Open the Certificates Template snap-in (certtmpl.msc).
 2.  Locate the User template. Right-click the template name and select **Duplicate Template**.
-3.  On the **Compatibility** tab, change the **Certification Authority** and **Certificate recipient** fields to Windows Server 2012 and Windows 8respectively. Ensure the **Show resulting changes** dialog box is selected.
+3.  On the **Compatibility** tab, change the **Certification Authority** and **Certificate recipient** fields to Windows Server 2012 and Windows 8 respectively. Ensure the **Show resulting changes** dialog box is selected.
 4.  Select the **General** tab of the template. The **Template display name** and **Template name** should clearly identify that the template will be used for Network Unlock. Clear the checkbox for the **Publish certificate in Active Directory** option.
 5.  Select the **Request Handling** tab. Select **Encryption** from the **Purpose** drop down menu. Ensure the **Allow private key to be exported** option is selected.
 6.  Select the **Cryptography** tab. Set the **Minimum key size** to 2048. (Any Microsoft cryptographic provider that supports RSA can be used for this template, but for simplicity and forward compatibility we recommend using the **Microsoft Software Key Storage Provider**.)

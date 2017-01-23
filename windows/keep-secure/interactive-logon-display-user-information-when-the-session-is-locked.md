@@ -35,7 +35,7 @@ When a session is locked in a Windows operating system (meaning the user at the 
 
 -   Blank.
 
-    Default setting. This translates to “Not defined,” but it will display the user’s full name in the same manner as the **User display name, domain and user names** option. When an option is set, you cannot reset this policy to blank, or not defined.
+    Default setting. This translates to “Not defined,” but it will display the user’s full name in the same manner as the **User display name** option. When an option is set, you cannot reset this policy to blank, or not defined.
 
 ### Best practices
 
