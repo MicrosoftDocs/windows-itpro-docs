@@ -158,19 +158,17 @@ You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop ap
 
     The following example shows how to pin the Command Prompt:
 
-```XML
-<start:DesktopApplicationTile
+    ```XML
+    <start:DesktopApplicationTile
           DesktopApplicationLinkPath="%appdata%\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk"
           Size="2x2"
           Row="0"
           Column="4"/>
-```
-
+    ```
     
     You must set the **DesktopApplicationLinkPath** attribute to the .lnk file that points to the Windows desktop application. The path also supports environment variables.
 
     If you are pointing to a third-party Windows desktop application, you must put the .lnk file in a legacy Start Menu directory before first boot; for example, "%APPDATA%\Microsoft\Windows\Start Menu\Programs\" or the all users profile "%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\".
-
 
 - By using the application's application user model ID, if this is known. If the Windows desktop application doesn't have one, use the shortcut link option.
 
@@ -178,13 +176,14 @@ You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop ap
 
     The following example shows how to pin the Internet Explorer Windows desktop application:
 
-```XML
-<start:DesktopApplicationTile
+    ```XML
+    <start:DesktopApplicationTile
           DesktopApplicationID="Microsoft.Windows.Explorer"
           Size="2x2"
           Row="0"
           Column="2"/>
-```
+    ```
+    
 
 You can also use the **start:DesktopApplicationTile** tag as one of the methods for pinning a Web link to Start. The other method is to use a Microsoft Edge secondary tile.
 

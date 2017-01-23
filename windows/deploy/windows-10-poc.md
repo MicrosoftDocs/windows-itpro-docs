@@ -109,7 +109,7 @@ Harware requirements are displayed below:
     </tr>
     <tr>
         <td BGCOLOR="#a0e4fa">**Disk**</td>
-        <td>50 GB available hard disk space (100 GB recommended), any format.</td>
+        <td>200 GB available hard disk space, any format.</td>
         <td>Any size, MBR formatted.</td>
     </tr>
     <tr>
@@ -201,7 +201,9 @@ Starting with Windows 8, the host computer’s microprocessor must support secon
 
     <pre style="overflow-y: visible">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V –All</pre>
     
-    This command works on all operating systems that support Hyper-V. 
+    This command works on all operating systems that support Hyper-V, but on Windows Server operating systems you must type an additional command to add the Hyper-V Windows PowerShell module and the Hyper-V Manager console. This command will also install Hyper-V if it isn't already installed, so if desired you can just type the following command on Windows Server 2012 or 2016 instead of using the Enable-WindowsOptionalFeature command:
+
+    <pre style="overflow-y: visible">Install-WindowsFeature -Name Hyper-V -IncludeManagementTools</pre>
     
     When you are prompted to restart the computer, choose **Yes**. The computer might restart more than once. After installation is complete, you can open Hyper-V Manager by typing **virtmgmt.msc** at an elevated command prompt.
     
@@ -211,7 +213,7 @@ Starting with Windows 8, the host computer’s microprocessor must support secon
 
     ![hyper-v](images/svr_mgr2.png)
 
-    <P>If you choose to install Hyper-V using Server Manager, accept all default selections. 
+    <P>If you choose to install Hyper-V using Server Manager, accept all default selections. Also be sure to install both items under **Role Administration Tools\Hyper-V Management Tools**.
 
 ### Download VHD and ISO files
 
@@ -507,7 +509,19 @@ Notes:<BR>
 
 **Important**: You should take advantage of [enhanced session mode](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) when completing instructions in this guide. Enhanced session mode enables you to copy and paste the commands from the Hyper-V host to VMs, between VMs, and between RDP sessions. After copying some text, you can paste into a Windows PowerShell window by simply right-clicking. Before right-clicking, do not left click other locations as this can empty the clipboard. You can also copy and paste <U>files</U> directly from one computer to another by right-clicking and selecting copy on one computer, then right-clicking and selecting paste on another computer.
 
-As mentioned previously: instructions to "type" commands provided in this guide can be typed, but the preferred method is to copy and paste these commands. Most of the commands to this point in the guide have been brief, but many commands in sections below are longer and more complex.
+<<<<<<< HEAD
+To verify that enhanced session mode is enabled on your Hyper-V host, type the following command at an elevated Windows PowerShell prompt:
+
+<pre style="overflow-y: visible">Set-VMhost -EnableEnhancedSessionMode $TRUE</pre>
+
+If enhanced session mode was previously disabled, you must close and re-open VM connections after enabling it. As mentioned previously: instructions to "type" commands provided in this guide can be typed, but the preferred method is to copy and paste these commands. Most of the commands to this point in the guide have been brief, but many commands in sections below are longer and more complex.
+=======
+To verify that enhanced session mode is enabled on the Hyper-V host, type the following command at an elevated Windows PowerShell prompt:
+
+<pre style="overflow-y: visible">Set-VMhost -EnableEnhancedSessionMode $TRUE</pre>
+
+If enhanced session mode was not previously enabled, you must close any existing virtual machine connections and re-open them to enable access to enhanced session mode. As mentioned previously: instructions to "type" commands provided in this guide can be typed, but the preferred method is to copy and paste these commands. Most of the commands to this point in the guide have been brief, but many commands in sections below are longer and more complex.
+>>>>>>> vso-7992313a
 
 The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 100GB to support installing imaging tools and storing OS images.
 
