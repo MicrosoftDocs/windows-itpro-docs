@@ -21,7 +21,7 @@ To use Windows Hello to sign in with an identity provider (IDP), a user needs a 
 A goal of Windows Hello is to allow a user to open a brand-new device, securely join an organizational network to download and manage organizational data, and create a new Hello gesture to secure the device. Microsoft refers to the process of setting up a device for use with Windows Hello as registration.
  
 > [!NOTE]
->This is separate from the organizational configuration required to use Windows Hello with Active Directory or Azure Active Directory (Azure AD); that configuration information is in [Implement Windows Hello for Business in your organization](hello-implement-in-organization.md). Organizational configuration must be completed before users can begin to register.  
+>This is separate from the organizational configuration required to use Windows Hello with Active Directory or Azure Active Directory (Azure AD); that configuration information is in [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md). Organizational configuration must be completed before users can begin to register.  
 
  The registration process works like this: 
  

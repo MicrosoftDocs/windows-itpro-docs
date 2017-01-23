@@ -19,7 +19,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |Updated to include info about USB drives and Azure RMS (Windows Insider Program only) and to add more info about Work Folders and Offline files. |
 |[Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](recommended-network-definitions-for-wip.md) |New |
 |[Using Outlook Web Access with Windows Information Protection (WIP)](using-owa-with-wip.md) |New |
-| Microsoft Passport guide | Content merged into [Manage identity verification using Windows Hello for Business](hello-manage-identity-verification.md) topics |
+| Microsoft Passport guide | Content merged into [MWindows Hello for Business](hello-identity-verification.md) topics |
 
 ## December 2016
 |New or changed topic |Description |
