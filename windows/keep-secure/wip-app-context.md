@@ -1,6 +1,6 @@
 ---
-title: Determine what Windows Information Protection (WIP) mode is running for an app (Windows 10)
-description: Use the Task Manager to determine which Windows Information Protection (WIP) mode is running for a specific app.
+title: Determine the Windows Information Protection (WIP) context for an app (Windows 10)
+description: Use the Task Manager to determine whether an app is considered work, personal or exempt by Windows Information Protection (WIP).
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP and Task Manager, app context
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 ---
 
-# Using Outlook Web Access with Windows Information Protection (WIP)
+# Determine the Windows Information Protection (WIP) Enterprise Context for an app
 **Applies to:**
 
 -   Windows 10, version 1607
@@ -17,17 +17,22 @@ localizationpriority: high
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
 
-Because Outlook Web Access (OWA) can be used both personally and as part of your organization, you have the following options to configure it with Windows Information Protection (WIP):
+Check the context of your apps while running in Windows Information Protection (WIP) to make sure that your organization's policies are applied and running correctly. Using Task Manager you can now see a specific app's context, including Work, Personal, or Exempt.
 
-|Option |OWA behavior |
-|-------|-------------|
-|Disable OWA. Employees can only use Microsoft Outlook 2016 or the Office 365 Mail app. | Disabled. |
-|Don't configure outlook.office.com in any of your networking settings. |All mailboxes are automatically marked as personal. This means employees attempting to copy work content into OWA receive prompts and that files downloaded from OWA aren't automatically protected as corporate data. |
-|Do all of the following:<ul><li>Create a domain (such as mail.contoso.com, redirecting to outlook.office.com) that can be used by your employees to access work email.</li><li>Add the new domain to the Enterprise Cloud Resources network element in your WIP policy.</li><li>Add the following URLs to the Neutral Resources network element in your WIP policy:<ul><li>outlook.office365.com</li><li>outlook.office.com</li><li>outlook-sdf.office.com</li><li>attachment.outlook.office.net</li></ul></li></ul> |Inbox content accessed through the new domain is automatically marked as corporate data, while content accessed through personal email is automatically marked as personal. |
-|Add outlook.office.com to the Enterprise Cloud Resources network element in your WIP policy. |All mailboxes are automatically marked as corporate. This means any personal inboxes hosted on Office 365 are also automatically marked as corporate data. |
+>[!IMPORTANT]
+>Enlightened apps can change between Work and Personal, depending on the data being touched. For example, Microsoft Word 2016 shows as **Personal** when an employee opens a personal letter, but changes to **Work** when that same employee opens the company financials.
 
->[!NOTE]
->These limitations don’t apply to Outlook 2016 or to the Office 365 Mail and Calendar apps. These apps will work properly, marking an employee’s mailbox as corporate data, regardless of how you’ve configured outlook.office.com in your network settings. 
+Viewing the Enterprise Context column in Task Manager
+
+Steps to enable:
+Go to task manager > Details  tab, right click to select columns
+ 
+Add “Enterprise Context” column to see which mode your app is running in. 
+
+Work – Corp.microsoft.com can freely touch and open work data and resources
+Personal – Personal, not allowed to touch work data
+Exempt – WIP policies does not apply to these apps, most likely system components
+
 
 
 
