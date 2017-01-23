@@ -183,6 +183,7 @@ You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop ap
           Row="0"
           Column="2"/>
     ```
+    
 
 You can also use the **start:DesktopApplicationTile** tag as one of the methods for pinning a Web link to Start. The other method is to use a Microsoft Edge secondary tile.
 
