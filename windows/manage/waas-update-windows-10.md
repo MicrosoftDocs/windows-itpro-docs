@@ -21,7 +21,9 @@ localizationpriority: high
 Windows as a service provides a new way to think about building, deploying, and servicing the Windows operating system. The Windows as a service model is focused on continually providing new capabilities and updates while maintaining a high level of hardware and software compatibility. Deploying new versions of Windows is simpler than ever before: Microsoft releases new features two to three times per year rather than the traditional upgrade cycle where new features are only made available every few years. Ultimately, this model replaces the need for traditional Windows deployment projects, which can be disruptive and costly, and spreads the required effort out into a continuous updating process, reducing the overall effort required to maintain Windows 10 devices in your environment. In addition, with the Windows 10 operating system, organizations have the chance to try out “flighted” builds of Windows as Microsoft develops them, gaining insight into new features and the ability to provide continual feedback about them. 
 
 >[!TIP]
->See [Windows 10 update history](https://support.microsoft.com/help/12387/windows-10-update-history) for details about each Windows 10 update released to date.  
+>See [Windows 10 update history](https://support.microsoft.com/help/12387/windows-10-update-history) for details about each Windows 10 update released to date. 
+
+ 
 
 ## In this section
 

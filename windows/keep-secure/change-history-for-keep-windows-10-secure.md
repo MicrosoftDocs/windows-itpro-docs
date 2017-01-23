@@ -15,6 +15,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 ## January 2017
 |New or changed topic |Description |
 |---------------------|------------|
+|[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |Updated to include info about USB drives and Azure RMS (Windows Insider Program only) and to add more info about Work Folders and Offline files. |
 |[Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](recommended-network-definitions-for-wip.md) |New |
 |[Using Outlook Web Access with Windows Information Protection (WIP)](using-owa-with-wip.md) |New |
 
