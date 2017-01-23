@@ -1,7 +1,7 @@
 ---
-title: Determine the Windows Information Protection (WIP) Enterprise Context for an app (Windows 10)
+title: Determine the Enterprise Context of an app running in Windows Information Protection (WIP) (Windows 10)
 description: Use the Task Manager to determine whether an app is considered work, personal or exempt by Windows Information Protection (WIP).
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP and Task Manager, app context
+keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP and Task Manager, app context, enterprise context
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.pagetype: security
 localizationpriority: high
 ---
 
-# Determine the Windows Information Protection (WIP) Enterprise Context for an app
+# Determine the Enterprise Context of an app running in Windows Information Protection (WIP)
 **Applies to:**
 
 -   Windows 10, version 1607
@@ -32,7 +32,7 @@ Using Task Manager you can now see a specific app's context, including:
 
 ## Viewing the Enterprise Context column in Task Manager
 
-1. Verify that you have an active WIP policy deployed and turned on in your organization.
+1. Make sure that you have an active WIP policy deployed and turned on in your organization.
 
 2. Open the Task Manager (taskmgr.exe), click the **Details** tab, right-click in the column heading area, and click **Select columns**.
 
