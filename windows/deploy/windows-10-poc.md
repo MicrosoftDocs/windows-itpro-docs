@@ -987,6 +987,8 @@ Set-ADUser -Identity CM_JD -PasswordNeverExpires $true
 Set-ADUser -Identity CM_NAA -PasswordNeverExpires $true
 </pre>
 
+This completes configuration of the starting PoC environment. Additional services and tools are installed in subsequent guides.
+
 ## Appendix A: Verify the configuration
 
 Use the following procedures to verify that the PoC environment is configured properly and working as expected.
