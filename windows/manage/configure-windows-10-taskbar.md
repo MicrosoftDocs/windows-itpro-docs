@@ -10,7 +10,7 @@ localizationpriority: high
 ---
 # Configure Windows 10 taskbar
 
-Starting in Windows 10, version 1607, administrators can pin additional apps to the taskbar and remove default pinned apps from the taskbar by adding a `<TaskbarLayout>` section to a layout-modification XML file. This method never removes user-pinned apps from the taskbar.
+Starting in Windows 10, version 1607, administrators can pin additional apps to the taskbar and remove default pinned apps from the taskbar by adding a `<TaskbarLayout>` section to a layout modification XML file. This method never removes user-pinned apps from the taskbar.
 
 > [!NOTE]
 > The only aspect of the taskbar that can currently be configured by the layout modification XML file is the layout.
@@ -34,21 +34,21 @@ The following example shows how apps will be pinned: Windows default apps to the
 To configure the taskbar:
 1. Create the XML file.
    * If you are also [customizing the Start layout](customize-and-export-start-layout.md), use `Export-StartLayout` to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from the following sample to the file.
-   * If you are only configuring the taskbar, use the following sample to create a layout-modification XML file.
+   * If you are only configuring the taskbar, use the following sample to create a layout modification XML file.
 2. Edit and save the XML file. You can use [AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867) or Desktop Application Link Path to identify the apps to pin to the taskbar.
    * Use `<taskbar:UWA>` and [AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867) to pin Universal Windows Platform apps.
    * Use `<taskbar:DesktopApp>` and Desktop Application Link Path to pin desktop applications. 
-3. Apply the layout-modification XML file to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
+3. Apply the layout modification XML file to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
 
 >[!IMPORTANT]
->If you use a provisioning package to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user then unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration that allows users to make changes that will persist, apply your configuration  using Group Policy.
+>If you use a provisioning package to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user then unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration that allows users to make changes that will persist, apply your configuration by using Group Policy.
 
 ### Tips for finding AUMID and Desktop Application Link Path
 
-In the layout-modification XML file, you will need to add entries for applications in the XML markup. In order to pin an application, you need either its AUMID or Desktop Application Link Path. 
+In the layout modification XML file, you will need to add entries for applications in the XML markup. In order to pin an application, you need either its AUMID or Desktop Application Link Path. 
 
 The easiest way to find this data for an application is to:
-1.	Pin the application to the Start menu on a reference/testing machine.
+1.	Pin the application to the Start menu on a reference or testing PC.
 2. 	Open Windows PowerShell and run the `Export-StartLayout` cmdlet. 
 3.	Open the generated XML file. 
 4.	Look for an entry corresponding to the app you pinned.
@@ -75,7 +75,7 @@ The easiest way to find this data for an application is to:
  </CustomTaskbarLayoutCollection>
 </LayoutModificationTemplate>
 ```
-### Sample taskbar configuration added to Start-layout XML file
+### Sample taskbar configuration added to Start layout XML file
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -139,7 +139,7 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
  
  ![additional apps pinned to taskbar](images/taskbar-default-plus.png)
 
-##Remove default apps and add your own
+## Remove default apps and add your own
 
 By adding `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`, you remove all default pinned apps; only the apps that you specify will be pinned to the taskbar.
 
