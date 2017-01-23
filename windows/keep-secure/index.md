@@ -15,7 +15,7 @@ Learn about keeping Windows 10 and Windows 10 Mobile secure.
 ## In this section
 
 | Topic | Description |
-| - | - |
+| --- | --- |
 | [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md) | To help protect your company from attacks which may originate from untrusted or attacker controlled font files, we’ve created the Blocking Untrusted Fonts feature. Using this feature, you can turn on a global setting that stops your employees from loading untrusted fonts processed using the Graphics Device Interface (GDI) onto your network. Untrusted fonts are any font installed outside of the %windir%/Fonts directory. Blocking untrusted fonts helps prevent both remote (web-based or email-based) and local EOP attacks that can happen during the font file-parsing process. |
 | [Device Guard certification and compliance](device-guard-certification-and-compliance.md) | Device Guard is a combination of hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications. If the app isn’t trusted it can’t run, period. It also means that even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to be able to run malicious executable code after the computer restarts because of how decisions are made about what can run and when. |
 | [Windows Hello for Business](hello-identity-verification.md) | In Windows 10, Windows Hello replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and a biometric or PIN. |
