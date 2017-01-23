@@ -41,8 +41,8 @@ In IE, press **ALT+V** to show the **View** menu, press **T** to enter the **Too
 ## Where did the search box go?
 IE11 uses the **One Box** feature, which lets users type search terms directly into the **Address bar**. Any text entered into the **Address bar** that doesn't appear to be a URL is automatically sent to the currently selected search provider.
 
-**Note**<br>
-Depending on how you've set up your intranet search, the text entry might resolve to an intranet site. For more information about this, see  [Intranet problems with Internet Explorer 11](intranet-problems-and-ie11.md).
+>[!NOTE]
+>Depending on how you've set up your intranet search, the text entry might resolve to an intranet site. For more information about this, see  [Intranet problems with Internet Explorer 11](intranet-problems-and-ie11.md).
 
  
 
