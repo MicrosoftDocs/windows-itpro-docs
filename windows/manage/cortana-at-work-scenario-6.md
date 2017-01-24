@@ -1,13 +1,13 @@
 ---
-title: Test scenario 6 - Use Cortana and Windows Information Protection (WIP) to help protect your organization’s data on a device (Windows 10)
-description: An optional test scenario about how to use Cortana at work with Windows Information Protection (WIP).
+title: Test scenario 6 - Use Cortana to automatically create suggested reminders from email (Windows 10)
+description: A test scenario about how to use Cortana with the Suggested reminders feature.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 localizationpriority: high
 ---
 
-# Test scenario 6 - Use Cortana and Windows Information Protection (WIP) to help protect your organization’s data on a device
+# Test scenario 6 - Use Cortana to automatically create suggested reminders from email
 
 -   Windows 10, Windows Insider Program 
 -   Windows 10 Mobile, Windows Insider Program
@@ -18,20 +18,25 @@ localizationpriority: high
 >[!IMPORTANT]
 >The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.
 
-This optional scenario helps you to protect your organization’s data on a device, based on an inspection by Cortana.
+Cortana can automatically create a suggested reminder, based on commitments made in email. For example, Cortana recognizes that if an employee includes the text, I’ll get this to you by the end of the week, he or she is making a commitment to provide something by a specific date. Cortana can now automatically create a suggested reminder, letting the employee decide whether to keep it or to cancel it.
 
-## Use Cortana and WIP to protect your organization’s data 
+## Use Cortana to set suggested reminders based on email commitments
 
-1.	Create and deploy an WIP policy to your organization. For info about how to do this, see [Protect your enterprise data using Windows Information Protection (WIP)](../keep-secure/protect-enterprise-data-using-wip.md).
+1. Click on the **Cortana** search box in the taskbar, click the **Notebook** icon, and then click **Permissions**.
 
-2.	Create a new email from a non-protected or personal mailbox, including the text _I’ll send you that presentation tomorrow_.
+2. Make sure the **Contacts, email, calendar, and communication history** option is turned on.
 
-3.	Wait up to 2 hours to make sure everything has updated, click the **Cortana** icon in the taskbar, and then click in the **Search** bar.
+    ![Permissions options for Cortana at work](images/cortana-communication-history-permissions.png)
 
-    Cortana automatically pulls your commitment to sending the presentation out of your email, showing it to you.
+3. Click the **Notebook** icon again, click the **Suggested reminders** option, and then click the **Remind me about things I’ve committed to doing** box, and then click **Save**.
 
-4.	Create a new email from a protected mailbox, including the same text as above, _I’ll send you that presentation tomorrow_.
+    ![Suggested reminders options for Cortana at work](images/cortana-suggested-reminder-settings.png)
 
-5.	Wait until everything has updated again, click the **Cortana** icon in the taskbar, and then click in the **Search** bar.
+4. Create and send an email to yourself (so you can see the suggested reminder), including the text, _I’ll finish this project by end of day today_.
 
-    Because it was in an WIP-protected email, the presentation info isn’t pulled out and it isn’t shown to you.
+5.	After you get the email, click on the Cortana **Home** icon, and scroll to today’s events.
+
+    From here, you can view the email where you made the promise, set aside time on your calendar, officially set the reminder, or mark the reminder as completed.
+
+    ![Cortana Home screen with your suggested reminder showing](images/cortana-suggested-reminder.png)    
+
