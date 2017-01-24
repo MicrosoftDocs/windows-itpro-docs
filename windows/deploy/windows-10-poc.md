@@ -528,6 +528,7 @@ If enhanced session mode was not previously enabled, you must close any existing
 >>>>>>> vso-7992313a
 =======
 >If enhanced session mode was not previously enabled, close any existing virtual machine connections and re-open them to enable access to enhanced session mode. As mentioned previously: instructions to "type" commands provided in this guide can be typed, but the preferred method is to copy and paste these commands. Most of the commands to this point in the guide have been brief, but many commands in sections below are longer and more complex.
+
 <HR>
 >>>>>>> vso-7992313a
 
