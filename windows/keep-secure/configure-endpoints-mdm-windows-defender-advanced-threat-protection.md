@@ -44,7 +44,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 3. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings. For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 
   a. Select **Policy** > **Configuration Policies** > **Add**.
-  ![Microsoft Intune Configuration Policies](images/atp-intune-add-policy.png)
+  ![Microsoft Intune Configuration Policies](images/atp-add-intune-policy.png)
 
   b. Under **Windows**, select **Custom Configuration (Windows 10 Desktop and Mobile and later)** > **Create and Deploy a Custom Policy** > **Create Policy**.
   ![Microsoft Intune Configuration Policies](images/atp-intune-new-policy.png)
