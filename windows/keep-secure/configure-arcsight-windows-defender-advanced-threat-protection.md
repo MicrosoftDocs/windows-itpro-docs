@@ -81,7 +81,6 @@ The following steps assume that you have completed all the required steps in [Be
 
 6.	Type the following information in the parameter details form. All other values in the form are optional and can be left blank.
 
-
   Field	| Value
   :---|:---
   Configuration File | Type in the name of the client property file. It must match the client property file.
