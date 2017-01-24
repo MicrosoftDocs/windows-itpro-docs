@@ -507,7 +507,10 @@ Notes:<BR>
 
 ### Resize VHD
 
-**Important**: You should take advantage of [enhanced session mode](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) when completing instructions in this guide. Enhanced session mode enables you to copy and paste the commands from the Hyper-V host to VMs, between VMs, and between RDP sessions. After copying some text, you can paste into a Windows PowerShell window by simply right-clicking. Before right-clicking, do not left click other locations as this can empty the clipboard. You can also copy and paste <U>files</U> directly from one computer to another by right-clicking and selecting copy on one computer, then right-clicking and selecting paste on another computer.
+<HR>
+**Enhanced session mode**
+
+**Important**: Before proceeding, verify that you can take advantage of [enhanced session mode](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) when completing instructions in this guide. Enhanced session mode enables you to copy and paste the commands from the Hyper-V host to VMs, between VMs, and between RDP sessions. After copying some text, you can paste into a Windows PowerShell window by simply right-clicking. Before right-clicking, do not left click other locations as this can empty the clipboard. You can also copy and paste <U>files</U> directly from one computer to another by right-clicking and selecting copy on one computer, then right-clicking and selecting paste on another computer.
 
 <<<<<<< HEAD
 To verify that enhanced session mode is enabled on your Hyper-V host, type the following command at an elevated Windows PowerShell prompt:
@@ -520,7 +523,12 @@ To verify that enhanced session mode is enabled on the Hyper-V host, type the fo
 
 <pre style="overflow-y: visible">Set-VMhost -EnableEnhancedSessionMode $TRUE</pre>
 
+<<<<<<< HEAD
 If enhanced session mode was not previously enabled, you must close any existing virtual machine connections and re-open them to enable access to enhanced session mode. As mentioned previously: instructions to "type" commands provided in this guide can be typed, but the preferred method is to copy and paste these commands. Most of the commands to this point in the guide have been brief, but many commands in sections below are longer and more complex.
+>>>>>>> vso-7992313a
+=======
+>If enhanced session mode was not previously enabled, close any existing virtual machine connections and re-open them to enable access to enhanced session mode. As mentioned previously: instructions to "type" commands provided in this guide can be typed, but the preferred method is to copy and paste these commands. Most of the commands to this point in the guide have been brief, but many commands in sections below are longer and more complex.
+<HR>
 >>>>>>> vso-7992313a
 
 The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 100GB to support installing imaging tools and storing OS images.
