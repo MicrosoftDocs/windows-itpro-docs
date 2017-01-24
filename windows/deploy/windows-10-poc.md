@@ -517,6 +517,7 @@ To verify that enhanced session mode is enabled on the Hyper-V host, type the fo
 <pre style="overflow-y: visible">Set-VMhost -EnableEnhancedSessionMode $TRUE</pre>
 
 >If enhanced session mode was not previously enabled, close any existing virtual machine connections and re-open them to enable access to enhanced session mode. As mentioned previously: instructions to "type" commands provided in this guide can be typed, but the preferred method is to copy and paste these commands. Most of the commands to this point in the guide have been brief, but many commands in sections below are longer and more complex.
+
 <HR>
 
 The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 100GB to support installing imaging tools and storing OS images.
