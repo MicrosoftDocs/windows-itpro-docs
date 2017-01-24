@@ -37,7 +37,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
     b.  Select **Mobile Device Management/Microsoft Intune** > **Download package** and save the .zip file.
 
-      ![Endpoint onboarding](images/atp-onboard-mdm.png)
+      ![Endpoint onboarding](images/atp-mdm-onboarding.png)
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named  *WindowsDefenderATP.onboarding*.
 
@@ -56,7 +56,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
   ![Microsoft Intune add OMC-URI](images/atp-intune-add-oma.png)
 
   e. Type the following values then select **OK**:
-  
+
   ![Microsoft Intune save policy](images/atp-intune-oma-uri-setting.png)
 
   - **Setting name**: Type a name for the setting.
