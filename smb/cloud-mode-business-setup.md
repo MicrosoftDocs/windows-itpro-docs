@@ -397,6 +397,7 @@ To set up new Windows devices, go through the Windows initial device setup or fi
 
 5. If this is the first time you're signing in, you will be asked to update your password. Update the password and continue with sign-in and setup.
 
+  Windows will continue with setup and you may be asked to set up a PIN for Windows Hello if your organization has it enabled.
 
 ### 3.2 Verify correct device setup
 Verify that the device is set up correctly and boots without any issues.
@@ -406,31 +407,49 @@ Verify that the device is set up correctly and boots without any issues.
 2. Confirm that the Store and built-in apps are working.
 
 ### 3.3 Verify the device is Azure AD joined
-In the Intune management console, verify that the device is joined to Azure AD and shows up as being managed in Microsoft Intune.
+In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, verify that the device is joined to Azure AD and shows up as being managed in Microsoft Intune.
 
 **To verify if the device is joined to Azure AD**
-1. Log in to the Intune management console.
-2. Select **Groups** and go to **Groups > All Devices > All Mobile Devices**.
-3. Select **All Direct Managed Devices** and then select the **Devices** tab.
-4. See the list of devices and verify that the device you're signed into appears on the list.
+1. Check the device name on your PC. To do this, on your Windows PC, select **Settings > System > About** and then check **PC name**.
 
-  **Figure XX** - List of all direct managed devices
-  ![Verify that PC is managed in Intune](images/intune_portal_direct_managed_devices_list.png)
+  **Figure 34** - Check the PC name on your device
+
+  ![Check the PC name on your device](images/win10_settings_pcname.png)
+  
+2. Log in to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>.
+3. Select **Groups** and then go to **Devices**.
+4. In the **All Devices** page, look at the list of devices and select the entry that matches the name of your PC. 
+  - Check that the device name appears in the list. Select the device and it will also show the user that's currently logged in in the **General Information** section.
+  - Check the **Management Channel** column and confirm that it says **Managed by Microsoft Intune**.
+  - Check the **AAD Registered** column and confirm that it says **Yes**.
+
+  **Figure 35** - Check that the device appears in Intune
+
+  ![Check that the device appears in Intune](images/intune_groups_devices_list.png)
 
 ### 3.4 Reconfigure app deployment settings
 In some cases, if an app is missing from the device, you need to reconfigure the deployment settings for the app and set the app to require installation as soon as possible.
 
 **To reconfigure app deployment settings**
-1. In the Intune management console, select **Apps** and go to **Apps > Volume-Purchased Apps**.
+1. In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Apps** and go to **Apps > Volume-Purchased Apps**.
 2. Select the app, right-click, then select **Manage Deployment...**.
-3. Select the group(s) whose apps will be managed.
-4. Check the **Deployment Action** setting for the app.
+3. Select the group(s) whose apps will be managed, and then click **Add** to add the group.
+4. Click **Next** at the bottom of the app deployment settings window or select **Deployment Action** on the left column to check the deployment settings for the app.
 5. For each group that you selected, set **Approval** to **Required Install**. This automatically sets **Deadline** to **As soon as possible**. If **Deadline** is not automatically set, set it to **As soon as possible**.
 
-  **Figure XX** - Reconfigure an app's deployment setting in Intune
-  ![Reconfigure app deployment settings in Intune](images/intune_app_deployment_action.png)
+  **Figure 36** - Reconfigure an app's deployment setting in Intune
 
-6. Verify that the app shows up on the device. You can check which users and devices have the app installed by selecting the app and checking the status in the **General** tab or selecting the **Devices** or **Users** tab.
+  ![Reconfigure app deployment settings in Intune](images/intune_apps_deploymentaction.png)
+
+6. Click **Finish**.
+7. Repeat steps 2-6 for other apps that you want to deploy to the device(s) as soon as possible.
+6. Verify that the app shows up on the device. To do this:
+  - Make sure you're logged in to the Windows device.
+  - Click the **Start** button and check the apps that appear in the **Recently added** section. If you don't see the apps that you deployed in Intune, give it a few minutes. Only apps that aren't already deployed on the device will appear in the **Recently added** section.
+
+    **Figure 37** - Confirm that additional apps were deployed to the device
+
+    ![Confirm that additiional apps were deployed to the device](images/win10_deploy_apps_immediately.png)
 
 ## 4. Manage device settings and features
 You can use Microsoft Intune admin settings and policies to manage features on your organization's mobile devices and computers. For more info, see [Manage settings and features on your devices with Microsoft Intune policies](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
