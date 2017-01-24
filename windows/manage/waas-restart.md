@@ -65,11 +65,28 @@ In the Group Policy editor, you will see a number of policy settings that pertai
 | Reschedule Automatic Updates scheduled installations | ![no](images/crossmark.png) |   |
 
 >[!NOTE]
->If you set conflicting restart policies, the actual restart behavior may not be what you expected. 
+>If you set conflicting restart policies, the actual restart behavior may not be what you expected.
 
+## Summary: Registry keys used to manage restarts after updates
+Below are quick-reference tables of the supported registry values, that correspond to group policy settings, used to manage restarts after updates in Windows 10.
 
+**HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate**
 
+| Registry key |	Key type | Value |
+| --- | --- | --- |
+| ActiveHoursEnd	| REG_DWORD | 0-23: set active hours to end at a specific hour</br>starts with 12 AM (0) and ends with 11 PM (23) |
+| ActiveHoursStart | REG_DWORD | 0-23: set active hours to start at a specific hour</br>starts with 12 AM (0) and ends with 11 PM (23) | 
+| SetActiveHours | REG_DWORD | 0: disable automatic restart after updates outside of active hours</br>1: enable automatic restart after updates outside of active hours |
 
+**HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate\AU**
+
+| Registry key | Key type | Value |
+| --- | --- | --- |
+| AlwaysAutoRebootAtScheduledTime | REG_DWORD | TBP |
+| AlwaysAutoRebootAtScheduledTimeMinutes | REG_DWORD | TBP |
+| AUOptions | REG_DWORD | 2: notify for download and automatically install updates</br>3: automatically download and notify for instllation of updates</br>4: Automatically download and schedule installation of updates</br>5: allow the local admin to configure these settings |
+| NoAutoRebootWithLoggedOnUsers | REG_DWORD | 0: disable do not reboot if users are logged on</br>1: do not reboot after an update installation if a user is logged on</br>**Note:** If disabled : Automatic Updates will notify the user that the computer will automatically restarts in 5 minutes to complete the installation  |
+| ScheduledInstallTime | REG_DWORD | 0-23: schedule update installation time to a specific hour</br>starts with 12 AM (0) and ends with 11 PM (23) |
 
 ## Related topics
 
