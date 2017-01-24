@@ -370,10 +370,33 @@ If you need to sync your most recently purchased apps and have it appear in your
 To set up new Windows devices, go through the Windows initial device setup or first-run experience to configure your device.
 
 **<a name="usewindowsoobe"></a>To set up a device**
-1. Go through the Windows device setup experience. On a new or reset device, this starts with the **Hi there** screen.
-2. If you don't have a Wi-Fi network configured, make sure you connect the device to the Internet through a wired/Ethernet connection.
-3. Select the option to **Join this device to Azure Active Directory**.
-4. Sign in using one of the accounts you set up for your education tenant.
+1. Go through the Windows device setup experience. On a new or reset device, this starts with the **Hi there** screen on devices running Windows 10, version 1607 (Anniversary Update). The setup lets you:
+  - Fill in the details in the **Hi there** screen including your home country/region, preferred language, keyboard layout, and timezone
+  - Accept the EULA
+  - Customize the setup or use Express settings
+
+  **Figure 31** - First screen in Windows device setup
+
+  ![First screen in Windows device setup](images/win10_hithere.png)
+
+  > [!NOTE]  
+  > During setup, if you don't have a Wi-Fi network configured, make sure you connect the device to the Internet through a wired/Ethernet connection.
+
+2. In the **Who owns this PC?** screen, select **My work or school owns it** and click **Next**.
+3. In the **Choose how you'll connect** screen, select **Join Azure Active Directory** and click **Next**.
+
+  **Figure 32** - Choose how you'll connect your Windows device
+
+  ![Choose how you'll connect the Windows device](images/win10_choosehowtoconnect.png)
+
+4. In the **Let's get you signed in** screen, sign in using one of the user accounts you added in section [2.2 Add users and assign product licenses](#22_add_users_and_assign_product_licenses). We suggest signing in as one of the global administrators. Later, sign in on another device using one of the non-admin accounts.
+
+  **Figure 33** - Sign in using one of the accounts you added
+
+  ![Sign in using one of the accounts you added](images/win10_signin_admin_account.png)
+
+5. If this is the first time you're signing in, you will be asked to update your password. Update the password and continue with sign-in and setup.
+
 
 ### 3.2 Verify correct device setup
 Verify that the device is set up correctly and boots without any issues.
