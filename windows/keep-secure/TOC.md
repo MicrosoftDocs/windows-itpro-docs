@@ -31,6 +31,7 @@
 ##### [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-vpn-and-wip-policy-using-intune.md)
 #### [Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md)
 #### [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md)
+#### [Determine the Enterprise Context of an app running in Windows Information Protection (WIP)](wip-app-enterprise-context.md)
 ### [Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](mandatory-settings-for-wip.md)
 ### [Testing scenarios for Windows Information Protection (WIP)](testing-scenarios-for-wip.md)
 ### [Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md)
