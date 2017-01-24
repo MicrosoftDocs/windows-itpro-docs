@@ -23,7 +23,9 @@ Let's suppose that you have set up a PIN for your Microsoft account on **Device 
 Because you were using **Device A** when you changed your password, the PIN on **Device A** will continue to work with no other action on your part.
 
 Suppose instead that you sign in on **Device B** and change your password for your Microsoft account. The next time that you try to sign in on **Device A** using your PIN, sign-in will fail because the account credentials that Hello on **Device A** knows will be outdated.
-> **Note:**  This example also applies to an Active Directory account when [Windows Hello for Business is not implemented](implement-microsoft-passport-in-your-organization.md).
+
+>[!NOTE]
+>This example also applies to an Active Directory account when [Windows Hello for Business is not implemented](implement-microsoft-passport-in-your-organization.md).
  
 ## How to update Hello after you change your password on another device
 

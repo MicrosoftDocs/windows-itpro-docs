@@ -14,11 +14,11 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-To use Windows Hello to sign in with an identity provider (IDP), a user needs a configured device, which means that the Windows Hello life cycle starts when you register a new user or device. When the device is set up, its user can use the device to authenticate to services. This topic explains how device registration works, what happens when a user requests authentication, how key material is stored and processed, and which servers and infrastructure components are involved in different parts of this process.
+TWindows Hello for Business requires a registered device. When the device is set up, its user can use the device to authenticate to services. This topic explains how device registration works, what happens when a user requests authentication, how key material is stored and processed, and which servers and infrastructure components are involved in different parts of this process.
 
 ## Register a new user or device
 
-A goal of Windows Hello is to allow a user to open a brand-new device, securely join an organizational network to download and manage organizational data, and create a new Hello gesture to secure the device. Microsoft refers to the process of setting up a device for use with Windows Hello as registration.
+A goal of device registration is to allow a user to open a brand-new device, securely join an organizational network to download and manage organizational data, and create a new Windows Hello gesture to secure the device. Microsoft refers to the process of setting up a device for use with Windows Hello as registration.
  
 > [!NOTE]
 >This is separate from the organizational configuration required to use Windows Hello with Active Directory or Azure Active Directory (Azure AD); that configuration information is in [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md). Organizational configuration must be completed before users can begin to register.  
