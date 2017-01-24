@@ -509,7 +509,19 @@ Notes:<BR>
 
 **Important**: You should take advantage of [enhanced session mode](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) when completing instructions in this guide. Enhanced session mode enables you to copy and paste the commands from the Hyper-V host to VMs, between VMs, and between RDP sessions. After copying some text, you can paste into a Windows PowerShell window by simply right-clicking. Before right-clicking, do not left click other locations as this can empty the clipboard. You can also copy and paste <U>files</U> directly from one computer to another by right-clicking and selecting copy on one computer, then right-clicking and selecting paste on another computer.
 
-As mentioned previously: instructions to "type" commands provided in this guide can be typed, but the preferred method is to copy and paste these commands. Most of the commands to this point in the guide have been brief, but many commands in sections below are longer and more complex.
+<<<<<<< HEAD
+To verify that enhanced session mode is enabled on your Hyper-V host, type the following command at an elevated Windows PowerShell prompt:
+
+<pre style="overflow-y: visible">Set-VMhost -EnableEnhancedSessionMode $TRUE</pre>
+
+If enhanced session mode was previously disabled, you must close and re-open VM connections after enabling it. As mentioned previously: instructions to "type" commands provided in this guide can be typed, but the preferred method is to copy and paste these commands. Most of the commands to this point in the guide have been brief, but many commands in sections below are longer and more complex.
+=======
+To verify that enhanced session mode is enabled on the Hyper-V host, type the following command at an elevated Windows PowerShell prompt:
+
+<pre style="overflow-y: visible">Set-VMhost -EnableEnhancedSessionMode $TRUE</pre>
+
+If enhanced session mode was not previously enabled, you must close any existing virtual machine connections and re-open them to enable access to enhanced session mode. As mentioned previously: instructions to "type" commands provided in this guide can be typed, but the preferred method is to copy and paste these commands. Most of the commands to this point in the guide have been brief, but many commands in sections below are longer and more complex.
+>>>>>>> vso-7992313a
 
 The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 100GB to support installing imaging tools and storing OS images.
 
@@ -828,7 +840,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Restart-Computer
     </pre>
 
-    >If you do not see the script pane, click **View** and then click **Show Script Pane Top**.
+    >If you do not see the script pane, click **View** and verify **Show Script Pane Top** is enabled. Click **File** and then click **New**. 
     
     See the following example:
 
@@ -841,7 +853,9 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Copy-VMFile "PC1" –SourcePath "C:\VHD\pc1.ps1"  –DestinationPath "C:\pc1.ps1" –CreateFullPath –FileSource Host
     </pre>
 
-    >In order for this command to work properly, PC1 must be running the vmicguestinterface (Hyper-V Guest Service Interface) service. If this service is not installed, you can try updating integration services on the VM. This can be done by mounting the Hyper-V Integration Services Setup (vmguest.iso), which is located in C:\Windows\System32 on Windows Server operating systems that are running the Hyper-V role service. Otherwise, just create the file c:\pc1.ps1 on the VM by typing the commands into this file manually. Be sure to save the file as a Windows PowerShell script file with the .ps1 extension and not as a text (.txt) file.
+    >In order for this command to work properly, PC1 must be running the vmicguestinterface (Hyper-V Guest Service Interface) service. If this service is not installed, you can try updating integration services on the VM. This can be done by mounting the Hyper-V Integration Services Setup (vmguest.iso), which is located in C:\Windows\System32 on Windows Server operating systems that are running the Hyper-V role service. 
+    
+    If the copy-vmfile command does not work and you cannot properly upgrade integration services on PC1, then create the file c:\pc1.ps1 on the VM by typing the commands into this file manually. The copy-vmfile command is only used in this procedure as a demonstration. After typing the script file manually, be sure to save the file as a Windows PowerShell script file with the .ps1 extension and not as a text (.txt) file.
 
 21. On PC1, type the following commands at an elevated Windows PowerShell prompt:
 
@@ -956,7 +970,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 36. Lastly, because the client computer has different hardware after copying it to a VM, its Windows activation will be invalidated and you might receive a message that you must activate Windows in 3 days.  To extend this period to 30 days, type the following commands at an elevated Windows PowerShell prompt on PC1:
 
     <pre style="overflow-y: visible">
-    runas /noprofile /env /user:administrator@contoso.com "cmd slmgr -rearm"
+    runas /noprofile /env /user:administrator@contoso.com "cmd /c slmgr -rearm"
     Restart-Computer
     </pre>
 
@@ -980,6 +994,8 @@ Set-ADUser -Identity MDT_BA -PasswordNeverExpires $true
 Set-ADUser -Identity CM_JD -PasswordNeverExpires $true
 Set-ADUser -Identity CM_NAA -PasswordNeverExpires $true
 </pre>
+
+This completes configuration of the starting PoC environment. Additional services and tools are installed in subsequent guides.
 
 ## Appendix A: Verify the configuration
 
