@@ -27,6 +27,8 @@ If you want to stop using Upgrade Analytics and stop sending telemetry data to M
 
 1.  Unsubscribe from the Upgrade Analytics solution in the OMS portal. In the OMS portal, go to **Settings** > **Connected Sources** > **Windows Telemetry** and choose the **Unsubscribe** option.
 
+  ![Upgrade Analytics unsubscribe](images/upgrade-analytics-unsubscribe.png)
+
 2.  Disable the Commercial Data Opt-in Key on computers running Windows 7 SP1 or 8.1. On computers running Windows 10, set the telemetry level to **Security**:
 
   **Windows 7 and Windows 8.1**: Delete CommercialDataOptIn registry property from *HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection*
