@@ -48,6 +48,24 @@ To deploy Credential Guard, the computers you are protecting must meet certain b
 
 You can deploy Credential Guard in phases, and plan these phases in relation to the computer purchases you plan for your next hardware refresh.
 
+### Application requirements
+
+When Credential Guard is enabled, specific authentication capabilities are blocked, so applications which require blocked capabilities will break. Applications should be tested prior to deployment to ensure compatiblity with the reduced functionality. 
+
+>[!WARNING] Enabling Credential Guard on Domain Controllers is not supported
+> The domain controller hosts authentication services which integrate with processes isolated when Credential Guard is enabled. Credential Guard does not provide protections for the Active Directory database or the Security Accounts Manager (SAM). The credentials protected by Kerberos and NTLM when Credential Guard is enabled are also in the Active Directory database. 
+
+Applications will break if they require:
+- Kerberos DES encryption support
+- Kerberos unconstrained delegation
+- Extracting the Kerberos TGT
+- NTLMv1
+
+Applications will prompt & expose credentials to risk if they require:
+- Digest authentication
+- Credential delegation
+- MS-CHAPv2
+
 The following tables provide more information about the hardware, firmware, and software required for deployment of Credential Guard. The tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, available in 2016, and announced as options for 2017.
 
 > [!NOTE]  
