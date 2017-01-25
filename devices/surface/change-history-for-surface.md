@@ -11,7 +11,7 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the Surface documentation library.
 
-## December 2016
+## January 2017
 
 |New or changed topic | Description |
 | --- | --- |
