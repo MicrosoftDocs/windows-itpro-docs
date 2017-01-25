@@ -29,7 +29,7 @@ The credentials are also cleaned up when the WiFi or VPN connection is disconnec
 When the user tries to access a domain resource, using Edge for example, Edge has the right Enterprise Authentication capability so [WinInet](https://msdn.microsoft.com/library/windows/desktop/aa385483.aspx) can release the credentials that it gets from the Credential Manager to the SSP that is requesting it. 
 For more information about the Enterprise Authentication capability, see [App capability declarations](https://msdn.microsoft.com/windows/uwp/packaging/app-capability-declarations). 
 
-WinInet will look at the device application, such as a Universal Windows Platform (UWP) application, to see if it has the right capability. 
+The local security authority will look at the device application, such as a Universal Windows Platform (UWP) application, to see if it has the right capability. 
 If the app is not UWP, it does not matter. 
 But if it is a UWP app, it will look at the device capability for Enterprise Authentication. 
 If it does have that capability and if the resource that you are trying to access is in the Intranet zone in the Internet Options (ZoneMap), then the credential will be released.
