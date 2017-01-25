@@ -81,9 +81,15 @@ The following table describes how a publisher condition is applied.
 | **Publisher, product name, file name, and file version** | **And above**<br/>The specified version of the named file and any new releases for the product that are signed by the publisher.| 
 | **Publisher, product name, file name, and file version**| **And below**<br/>The specified version of the named file and any older versions for the product that are signed by the publisher.| 
 | **Custom** | You can edit the **Publisher**, **Product name**, **File name**, and **Version** fields to create a custom rule.| 
- 
-For an overview of the three types of AppLocker rule conditions and explanations of the advantages and disadvantages of each, see [Understanding AppLocker rule condition types](understanding-applocker-rule-condition-types.md).
 
+**Further notes:**
+
+-    The same algorithm is used to extract rule data on computers at execution time and recorded in the AppLocker event log, and by the policy rule creation wizard and stored in the 'Publisher' properties.  Only O= and higher fields (not CN= field) is extracted for the rule, and matched at run-time. 
+
+-    Free Open Source Software (FOSS) certificates issued by Certum use common name "O=Open Source Developer".  This common name is not granular enough to whitelist at the 'real' publisher level.  The publisher's name is set in the certificate's CN field that is ignored.  FOSS application publishers cannot be distinguished from one another by the O= field, and so may be more securely protected by hash (rather than publisher) for every application and version released.
+
+For an overview of the three types of AppLocker rule conditions and explanations of the advantages and disadvantages of each, see [Understanding AppLocker rule condition types](understanding-applocker-rule-condition-types.md).
+ 
 ## Related topics
 
 - [How AppLocker works](how-applocker-works-techref.md)
