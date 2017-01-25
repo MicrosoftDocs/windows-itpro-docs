@@ -493,7 +493,7 @@ In this walkthrough, we'll show you how to add a new policy that will disable th
   > [!NOTE]
   > This policy is a tenant-wide Intune setting. It disables Windows Hello and required PINs during setup for all enrolled devices in a tenant.
 
-To test whether these policies get successfully deployed to your tenant, go through [5. Add more devices and users](#5-add-more-devices-and-users) and log on as another user on a second device. For users and devices that were already managed by Intune before the policies were added, the policies will take effect  will also 
+To test whether these policies get successfully deployed to your tenant, go through [5. Add more devices and users](#5-add-more-devices-and-users) and setup another Windows device and login as one of the users. 
 
 ## 5. Add more devices and users
 After your cloud infrastructure is set up and you have a device management strategy in place, you may need to add more devices or users and you want the same policies to apply to these new devices and users. In this section, we'll show you how to do this.
