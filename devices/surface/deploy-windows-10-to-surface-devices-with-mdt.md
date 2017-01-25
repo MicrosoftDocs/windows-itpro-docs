@@ -11,8 +11,7 @@ author: Scottmca
 
 # Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit
 
-**Applies to**
-- Surface Studio
+#### Applies to
 * Surface Pro 4
 * Surface Book
 * Surface 3
@@ -48,19 +47,13 @@ You can download and find out more about the Windows ADK at [Download the Window
 
 Before you can perform a deployment with MDT, you must first supply a set of operating system installation files and an operating system image. These files and image can be found on the physical installation media (DVD) for Windows 10. You can also find these files in the disk image (ISO file) for Windows 10, which you can download from the [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
-
->[!NOTE]
->The installation media generated from the [Get Windows 10](https://www.microsoft.com/en-us/software-download/windows10/) page differs from physical media or media downloaded from the VLSC, in that it contains an image file in Electronic Software Download (ESD) format rather than in the Windows Imaging (WIM) format. Installation media with an image file in WIM format is required for use with MDT. Installation media from the Get Windows 10 page cannot be used for Windows deployment with MDT.
-
+>**Note:**&nbsp;&nbsp;The installation media generated from the [Get Windows 10](https://www.microsoft.com/software-download/windows10/) page differs from physical media or media downloaded from the VLSC, in that it contains an image file in Electronic Software Download (ESD) format rather than in the Windows Imaging (WIM) format. Installation media with an image file in WIM format is required for use with MDT. Installation media from the Get Windows 10 page cannot be used for Windows deployment with MDT.
 
 #### Windows Server
 
 Although MDT can be installed on a Windows client, to take full advantage of Windows Deployment Services’ ability to network boot, a full Windows Server environment is recommended. To provide network boot for UEFI devices like Surface with WDS, you will need Windows Server 2008 R2 or later.
 
-
->[!NOTE]
->To evaluate the deployment process for Surface devices or to test the deployment process described in this article with the upcoming release of Windows Server 2016, you can download evaluation and preview versions from the [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter).
-
+>**Note:**&nbsp;&nbsp;To evaluate the deployment process for Surface devices or to test the deployment process described in this article with the upcoming release of Windows Server 2016, you can download evaluation and preview versions from the [TechNet Evaluation Center](https://www.microsoft.com/evalcenter).
 
 #### Windows Deployment Services
 
@@ -70,15 +63,11 @@ Windows Deployment Services (WDS) is leveraged to facilitate network boot capabi
 
 The process of creating a reference image should always be performed in a virtual environment. When you use a virtual machine as the platform to build your reference image, you eliminate the need for installation of additional drivers. The drivers for a Hyper-V virtual machine are included by default in the factory Windows 10 image. When you avoid the installation of additional drivers – especially complex drivers that include application components like control panel applications – you ensure that the image created by your reference image process will be as universally compatible as possible.
 
->[!NOTE]
->A Generation 1 virtual machine is recommended for the preparation of a reference image in a Hyper-V virtual environment.
+>**Note:**&nbsp;&nbsp;A Generation 1 virtual machine is recommended for the preparation of a reference image in a Hyper-V virtual environment.
 
 Because customizations are performed by MDT at the time of deployment, the goal of reference image creation is not to perform customization but to increase performance during deployment by reducing the number of actions that need to occur on each deployed device. The biggest action that can slow down an MDT deployment is the installation of Windows updates. When MDT performs this step during the deployment process, it downloads the updates on each deployed device and installs them. By installing Windows updates in your reference image, the updates are already installed when the image is deployed to the device and the MDT update process only needs to install updates that are new since the image was created or are applicable to products other than Windows (for example, Microsoft Office updates).
 
-
->[!NOTE]
->Hyper-V is available not only on Windows Server, but also on Windows clients, including Professional and Enterprise editions of Windows 8, Windows 8.1, and Windows 10. Find out more at [Client Hyper-V on Windows 10](https://msdn.microsoft.com/virtualization/hyperv_on_windows/windows_welcome) and [Client Hyper-V on Windows 8 and Windows 8.1](https://technet.microsoft.com/library/hh857623) in the TechNet Library.  Hyper-V is also available as a standalone product, Microsoft Hyper-V Server, at no cost. You can download [Microsoft Hyper-V Server 2012 R2](https://www.microsoft.com/en-us/evalcenter/evaluate-hyper-v-server-2012-r2) or [Microsoft Hyper-V Server 2016 Technical Preview](https://www.microsoft.com/en-us/evalcenter/evaluate-hyper-v-server-technical-preview) from the TechNet Evaluation Center.
-
+>**Note:**&nbsp;&nbsp;Hyper-V is available not only on Windows Server, but also on Windows clients, including Professional and Enterprise editions of Windows 8, Windows 8.1, and Windows 10. Find out more at [Client Hyper-V on Windows 10](https://msdn.microsoft.com/virtualization/hyperv_on_windows/windows_welcome) and [Client Hyper-V on Windows 8 and Windows 8.1](https://technet.microsoft.com/library/hh857623) in the TechNet Library.  Hyper-V is also available as a standalone product, Microsoft Hyper-V Server, at no cost. You can download [Microsoft Hyper-V Server 2012 R2](https://www.microsoft.com/evalcenter/evaluate-hyper-v-server-2012-r2) or [Microsoft Hyper-V Server 2016 Technical Preview](https://www.microsoft.com/evalcenter/evaluate-hyper-v-server-technical-preview) from the TechNet Evaluation Center.
 
 #### Surface firmware and drivers
 
@@ -89,15 +78,13 @@ When you browse to the specific Microsoft Download Center page for your device, 
 
 In addition to the driver files that help Windows communicate with the hardware components of the Surface device, the .zip file you download will also contain firmware updates. These firmware updates will update the instructions used by the device hardware to communicate between components and Windows. The firmware of Surface device components is updated by installation of specific driver files and thus is installed along with the other drivers during deployment. The firmware of an out-of-date Surface device is thus updated when the device reboots during and after the Windows deployment process.
 
->[!NOTE]
->Beginning in Windows 10, the drivers for Surface devices are included in the Windows Preinstallation Environment (WinPE). In earlier versions of Windows, specific drivers (like network drivers) had to be imported and configured in MDT for use in WinPE to successfully deploy to Surface devices.
+>**Note:**&nbsp;&nbsp;Beginning in Windows 10, the drivers for Surface devices are included in the Windows Preinstallation Environment (WinPE). In earlier versions of Windows, specific drivers (like network drivers) had to be imported and configured in MDT for use in WinPE to successfully deploy to Surface devices.
 
 #### Application installation files
 
 In addition to the drivers that are used by Windows to communicate with the Surface device’s hardware and components, you will also need to provide the installation files for any applications that you want to install on your deployed Surface devices. To automate the deployment of an application, you will also need to determine the command-line instructions for that application to perform a silent installation. In this article, the Surface app and Microsoft Office 365 will be installed as examples of application installation. The application installation process can be used with any application with installation files that can be launched from command line.
 
->[!NOTE]
->If the application files for your application are stored on your organization’s network and will be accessible from your Surface devices during the deployment process, you can deploy that application directly from that network location. To use installation files from a network location, use the **Install Application Without Source Files or Elsewhere on the Network** option in the MDT New Application Wizard, which is described in the [Import applications](#import-applications) section later in this article.
+>**Note:**&nbsp;&nbsp;If the application files for your application are stored on your organization’s network and will be accessible from your Surface devices during the deployment process, you can deploy that application directly from that network location. To use installation files from a network location, use the **Install Application Without Source Files or Elsewhere on the Network** option in the MDT New Application Wizard, which is described in the [Import applications](#import-applications) section later in this article.
 
 #### Microsoft Surface Deployment Accelerator
 
@@ -109,8 +96,7 @@ Before you can configure the deployment environment with Windows images, drivers
 
 To boot from the network with either your reference virtual machines or your Surface devices, your deployment environment must include a Windows Server environment. The Windows Server environment is required to install WDS and the WDS PXE server. Without PXE support, you will be required to create physical boot media, such as a USB stick to perform your deployment – MDT and Windows ADK will still be required, but Windows Server is not required. Both MDT and Windows ADK can be installed on a Windows client and perform a Windows deployment.
 
->[!NOTE]
->To download deployment tools directly to Windows Server, you must disable [Internet Explorer Enhanced Security Configuration](https://technet.microsoft.com/library/dd883248). On Windows Server 2012 R2, this can be performed directly through the **Server Manager** option on the **Local Server** tab. In the **Properties** section, **IE Enhanced Security Configuration** can be found on the right side. You may also need to enable the **File Download** option for the **Internet** zone through the **Security** tab of **Internet Options**.
+>**Note:**&nbsp;&nbsp;To download deployment tools directly to Windows Server, you must disable [Internet Explorer Enhanced Security Configuration](https://technet.microsoft.com/library/dd883248). On Windows Server 2012 R2, this can be performed directly through the **Server Manager** option on the **Local Server** tab. In the **Properties** section, **IE Enhanced Security Configuration** can be found on the right side. You may also need to enable the **File Download** option for the **Internet** zone through the **Security** tab of **Internet Options**.
 
 #### Install Windows Deployment Services
 
@@ -126,20 +112,17 @@ After the WDS role is installed, you need to configure WDS. You can begin the co
 
 *Figure 2. Configure PXE response for Windows Deployment Services*
 
->[!NOTE]
->Before you configure WDS make sure you have a local NTFS volume that is not your system drive (C:) available for use with WDS. This volume is used to store WDS boot images, deployment images, and configuration.
+>**Note:**&nbsp;&nbsp;Before you configure WDS make sure you have a local NTFS volume that is not your system drive (C:) available for use with WDS. This volume is used to store WDS boot images, deployment images, and configuration.
 
 Using the Windows Deployment Services Configuration Wizard, configure WDS to fit the needs of your organization. You can find detailed instructions for the installation and configuration of WDS at [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/library/jj648426). On the **PXE Server Initial Settings** page, be sure to configure WDS so that it will respond to your Surface devices when they attempt to boot from the network. If you have already installed WDS or need to change your PXE server response settings, you can do so on the **PXE Response** tab of the **Properties** of your server in the Windows Deployment Services Management Console.
 
->[!NOTE]
->You will add boot images to WDS when you update your boot images in MDT. You do not need to add boot images or Windows images to WDS when you configure the role.
+>**Note:**&nbsp;&nbsp;You will add boot images to WDS when you update your boot images in MDT. You do not need to add boot images or Windows images to WDS when you configure the role.
 
 #### Install Windows Assessment and Deployment Kit
 
 To install Windows ADK, run the Adksetup.exe file that you downloaded from [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#adkwin10). Windows ADK must be installed before MDT. You should always download and use the most recent version of Windows ADK. A new version is usually released corresponding with each new version of Windows.
 
->[!NOTE]
->You can also use the Adksetup.exe file to download the Windows ADK installation files locally for use on other devices.
+>**Note:**&nbsp;&nbsp;You can also use the Adksetup.exe file to download the Windows ADK installation files locally for use on other devices.
 
 When you get to the **Select the features you want to install** page, you only need to select the **Deployment Tools** and **Windows Preinstallation Environment (Windows PE)** check boxes to deploy Windows 10 using MDT, as shown in Figure 3. 
 
@@ -187,16 +170,13 @@ To create the deployment share, follow these steps:
 
   * **Path** – Specify a local folder where the deployment share will reside, and then click **Next**.
 
-      >[!NOTE]
-      >Like the WDS remote installation folder, it is recommended that you put this folder on an NTFS volume that is not your system volume.
+      >**Note:**&nbsp;&nbsp;Like the WDS remote installation folder, it is recommended that you put this folder on an NTFS volume that is not your system volume.
 
   * **Share** – Specify a name for the network share under which the local folder specified on the **Path** page will be shared, and then click **Next**.
 
-      >[!NOTE]
-      >The share name cannot contain spaces.
+      >**Note:**&nbsp;&nbsp;The share name cannot contain spaces.
 
-      >[!NOTE]
-      >You can use a Dollar Sign (**$**) to hide your network share so that it will not be displayed when users browse the available network shares on the server in File Explorer.
+      >**Note:**&nbsp;&nbsp;You can use a Dollar Sign (**$**) to hide your network share so that it will not be displayed when users browse the available network shares on the server in File Explorer.
 
   * **Descriptive Name** – Enter a descriptive name for the network share (this descriptive name can contain spaces), and then click **Next**. The descriptive name will be the name of the folder as it appears in the Deployment Workbench.
   * **Options** – You can accept the default options on this page. Click **Next**.
@@ -209,8 +189,7 @@ To create the deployment share, follow these steps:
 
 To secure the deployment share and prevent unauthorized access to the deployment resources, you can create a local user on the deployment share host and configure permissions for that user to have read-only access to the deployment share only. It is especially important to secure access to the deployment share if you intend to automate the logon to the deployment share during the deployment boot process. By automating the logon to the deployment share during the boot of deployment media, the credentials for that logon are stored in plaintext in the bootstrap.ini file on the boot media.
 
->[!NOTE]
->If you intend to capture images (such as the reference image) with this user, the user must also have write permission on the Captures folder in the MDT deployment share.
+>**Note:**&nbsp;&nbsp;If you intend to capture images (such as the reference image) with this user, the user must also have write permission on the Captures folder in the MDT deployment share.
 
 You now have an empty deployment share that is ready for you to add the resources that will be required for reference image creation and deployment to Surface devices.
 
@@ -218,8 +197,7 @@ You now have an empty deployment share that is ready for you to add the resource
 
 The first resources that are required to perform a deployment of Windows are the installation files from Windows 10 installation media. Even if you have an already prepared reference image, you still need to supply the unaltered installation files from your installation media. The source of these files can be a physical disk, or it can be an ISO file like the download from the Volume Licensing Service Center (VLSC).
 
->[!NOTE]
->A 64-bit operating system is required for compatibility with Surface Studio, Surface Pro 4, Surface Book, Surface Pro 3, and Surface 3.
+>**Note:**&nbsp;&nbsp;A 64-bit operating system is required for compatibility with Surface Pro 4, Surface Book, Surface Pro 3, and Surface 3.
 
 To import Windows 10 installation files, follow these steps:
 
@@ -256,8 +234,7 @@ Now that you’ve imported the installation files from the installation media, y
 
 As described in the [Deployment tools](#deployment-tools) section of this article, the goal of creating a reference image is to keep the Windows environment as simple as possible while performing tasks that would be common to all devices being deployed. You should now have a basic MDT deployment share configured with default options and a set of unaltered, factory installation files for Windows 10. This simple configuration is perfect for reference image creation because the deployment share contains no applications or drivers to interfere with the process.
 
->[!NOTE]
->For some organizations keeping a simple deployment share without applications or drivers is the simplest solution for creation of reference images. You can easily connect to more than one deployment share from a single Deployment Workbench and copy images from a simple, reference-image-only deployment share to a production deployment share complete with drivers and applications.
+>**Note:**&nbsp;&nbsp;For some organizations keeping a simple deployment share without applications or drivers is the simplest solution for creation of reference images. You can easily connect to more than one deployment share from a single Deployment Workbench and copy images from a simple, reference-image-only deployment share to a production deployment share complete with drivers and applications.
 
 To create the reference image task sequence, follow these steps:
 
@@ -269,15 +246,13 @@ To create the reference image task sequence, follow these steps:
 
 2. The New Task Sequence Wizard presents a series of steps, as follows:
   * **General Settings** – Enter an identifier for the reference image task sequence in the **Task Sequence ID** field, a name for the reference image task sequence in the **Task Sequence Name** field, and any comments for the reference image task sequence in the **Task Sequence Comments** field, and then click **Next**.
-  >[!NOTE]
-  >The **Task Sequence ID** field cannot contain spaces and can be a maximum of 16 characters.
+  >**Note:**&nbsp;&nbsp;The **Task Sequence ID** field cannot contain spaces and can be a maximum of 16 characters.
   * **Select Template** – Select **Standard Client Task Sequence** from the drop-down menu, and then click **Next**.
   * **Select OS** – Navigate to and select the Windows 10 image you imported with the Windows 10 installation files, and then click **Next**.
   * **Specify Product Key** – Click **Do Not Specify a Product Key at This Time**, and then click **Next**.
   * **OS Settings** – Enter a name, organization, and home page URL in the **Full Name**, **Organization**, and **Internet Explorer Home Page** fields, and then click **Next**.
   * **Admin Password** – Click **Use the Specified Local Administrator Password**, enter a password in the provided field, and then click **Next**.
-  >[!NOTE]
-  >During creation of a reference image, any specified Administrator password will be automatically removed when the image is prepared for capture with Sysprep. During reference image creation, a password is not necessary, but is recommended to remain in line with best practices for production deployment environments.
+  >**Note:**&nbsp;&nbsp;During creation of a reference image, any specified Administrator password will be automatically removed when the image is prepared for capture with Sysprep. During reference image creation, a password is not necessary, but is recommended to remain in line with best practices for production deployment environments.
   * **Summary** – Review the specified configuration on this page before you click **Next** to begin creation of the task sequence.
   * **Progress** – While the task sequence is created, a progress bar is displayed on this page.
   * **Confirmation** – When the task sequence creation completes, the success of the process is displayed on this page. Click **Finish** to complete the New Task Sequence Wizard.
@@ -307,8 +282,7 @@ To update the MDT boot media, follow these steps:
 
 2. Use the Update Deployment Share Wizard to create boot images with the following process:
   * **Options** – Click **Completely Regenerate the Boot Images**, and then click **Next**.
-  >[!NOTE]
-  >Because this is the first time the newly created deployment share has been updated, new boot images will be generated regardless of which option you select on the **Options** page.
+  >**Note:**&nbsp;&nbsp;Because this is the first time the newly created deployment share has been updated, new boot images will be generated regardless of which option you select on the **Options** page.
   * **Summary** – Review the specified options on this page before you click **Next** to begin generation of boot images.
   * **Progress** – While the boot images are being generated, a progress bar is displayed on this page.
   * **Confirmation** – When the boot images have been generated, the success of the process is displayed on this page. Click **Finish** to complete the Update Deployment Share Wizard.
@@ -345,20 +319,17 @@ To import the MDT boot media into WDS for PXE boot, follow these steps:
   * **Summary** – Review your selections to import a boot image into WDS, and then click **Next**.
   * **Task Progress** – A progress bar is displayed as the selected image file is copied into the WDS remote installation folder. Click **Finish** when the task is complete to close the Add Image Wizard.
 
->[!NOTE]
->Only the 32-bit boot image, LiteTouchPE_x86.wim, is required to boot from BIOS devices, including Generation 1 Hyper-V virtual machines like the reference virtual machine.
+>**Note:**&nbsp;&nbsp;Only the 32-bit boot image, LiteTouchPE_x86.wim, is required to boot from BIOS devices, including Generation 1 Hyper-V virtual machines like the reference virtual machine.
 
 If your WDS configuration is properly set up to respond to PXE clients, you should now be able to boot from the network with any device with a network adapter properly configured for network boot (PXE).
 
->[!NOTE]
->If your WDS server resides on the same server as DHCP or in a different subnet than the devices you are attempting to boot, additional configuration may be required. For more information, see [Managing Network Boot Programs](https://technet.microsoft.com/library/cc732351).
+>**Note:**&nbsp;&nbsp;If your WDS server resides on the same server as DHCP or in a different subnet than the devices you are attempting to boot, additional configuration may be required. For more information, see [Managing Network Boot Programs](https://technet.microsoft.com/library/cc732351).
 
 ### Deploy and capture a reference image
 
 Your deployment environment is now set up to create a reference image for Windows 10 complete with Windows Updates.
 
->[!NOTE]
->You cannot install version updates (such as Windows 10, Version 1511) in a reference image. To create a reference image with a new version of Windows, you must use installation files from that version of Windows. When  you install a version update in Windows, it effectively performs an upgrade to a new version of Windows, and upgraded installations of Windows cannot be prepared for deployment with Sysprep.<br/><br/>
+>**Note:**&nbsp;&nbsp;You cannot install version updates (such as Windows 10, Version 1511) in a reference image. To create a reference image with a new version of Windows, you must use installation files from that version of Windows. When  you install a version update in Windows, it effectively performs an upgrade to a new version of Windows, and upgraded installations of Windows cannot be prepared for deployment with Sysprep.<br/><br/>
 By using a fully automated task sequence in an MDT deployment share dedicated to reference image creation, you can greatly reduce the time and effort required to create new reference images and it is the best way to ensure that your organization is ready for feature updates and new versions of Windows 10.
 
 You can now boot from the network with a virtual machine to run the prepared task sequence and generate a reference image. When you prepare your virtual machine in Hyper-V for reference image creation, consider the following:
@@ -405,8 +376,7 @@ As the task sequence processes the deployment, it will automatically perform the
 * Reboot into WinPE
 * Capture an image of the Windows 10 environment and store it in the Captures folder in the MDT deployment share
 
->[!NOTE]
->The Windows Update process can take some time to complete as it searches the Internet for updates, downloads those updates, and then installs them. By performing this process now, in the reference environment, you eliminate the need to perform these tasks on each deployed device and significantly reduce the amount of time and bandwidth required to perform your deployment. 
+>**Note:**&nbsp;&nbsp;The Windows Update process can take some time to complete as it searches the Internet for updates, downloads those updates, and then installs them. By performing this process now, in the reference environment, you eliminate the need to perform these tasks on each deployed device and significantly reduce the amount of time and bandwidth required to perform your deployment. 
 
 When the task sequence completes, your virtual machine will be off and a new reference image complete with updates will be ready in your MDT deployment share for you to import it and prepare your deployment environment for deployment to Surface devices.
 
@@ -431,8 +401,7 @@ To import the reference image for deployment, use the following steps:
   * **Confirmation** – When the import process completes, the success of the process is displayed on this page. Click **Finish** to complete the Import Operating System Wizard.
 3.	Expand the folder in which you imported the image to verify that the import completed successfully.
 
->[!NOTE]
->You can import the reference image into the same deployment share that you used to create your reference image, or you could import the reference image into a new deployment share for deployment to your Surface devices. If you chose to create a new deployment share for deployment of your reference image, remember that you still need to import a full set of installation files from installation media.
+>**Note:**&nbsp;&nbsp;You can import the reference image into the same deployment share that you used to create your reference image, or you could import the reference image into a new deployment share for deployment to your Surface devices. If you chose to create a new deployment share for deployment of your reference image, remember that you still need to import a full set of installation files from installation media.
 
 Now that your updated reference image is imported, it is time to prepare your deployment environment for deployment to Surface devices complete with drivers, applications, and automation.
 
@@ -547,8 +516,7 @@ To create the deployment task sequence, follow these steps:
 1. In the Deployment Workbench, under your Deployment Share, right-click the **Task Sequences** folder, and then click **New Task Sequence** to start the New Task Sequence Wizard.
 2. Use these steps to create the deployment task sequence with the New Task Sequence Wizard:
   * **General Settings** – Enter an identifier for the deployment task sequence in the **Task Sequence ID** field, a name for the deployment task sequence in the **Task Sequence Name** field, and any comments for the deployment task sequence in the **Task Sequence Comments** field, then click **Next**.
-  >[!NOTE]
-  >The **Task Sequence ID** field cannot contain spaces and can be a maximum of 16 characters.
+  >**Note:**&nbsp;&nbsp;The **Task Sequence ID** field cannot contain spaces and can be a maximum of 16 characters.
   * **Select Template** – Click **Standard Client Task Sequence** from the drop-down menu, and then click **Next**.
   * **Select OS** – Navigate to and select the reference image that you imported, and then click **Next**.
   * **Specify Product Key** – Select the product key entry that fits your organization's licensing system. The **Do Not Specify a Product Key at This Time** option can be used for systems that will be activated via Key Management Services (KMS) or Active Directory Based Activation (ADBA). A product key can be specified specifically if your organization uses Multiple Activation Keys (MAK). Click **Next**.
@@ -585,7 +553,7 @@ After the task sequence is created it can be modified for increased automation, 
 
    ![Configure a new Set Task Sequence Variable step in the deployment task sequence](images\surface-deploymdt-fig22.png "Configure a new Set Task Sequence Variable step in the deployment task sequence")
 
-   *Figure 22. Configure a new Set Task Sequence Variable step in the deployment task sequence*
+   Figure 22. Configure a new Set Task Sequence Variable step in the deployment task sequence
 
 15.	Select the **Inject Drivers** step, the next step in the task sequence.
 16.	On the **Properties** tab of the **Inject Drivers** step (as shown in Figure 23), configure the following options:
@@ -759,15 +727,13 @@ To import the updated MDT boot media into WDS for PXE boot, follow these steps:
   * **Summary** – Review your selections to import a boot image into WDS, and then click **Next**.
   * **Task Progress** – A progress bar is displayed as the selected image file is copied into the WDS remote installation folder. Click **Finish** when the task is complete to close the Add Image Wizard.
 
->[!NOTE]
->Although it is a best practice to replace and update the boot images in WDS whenever the MDT deployment share is updated, for deployment to Surface devices the 32-bit boot image, LiteTouchPE_x86.wim, is not required. Only the 64-bit boot image is required for 64-bit UEFI devices.
+>**Note:**&nbsp;&nbsp;Although it is a best practice to replace and update the boot images in WDS whenever the MDT deployment share is updated, for deployment to Surface devices the 32-bit boot image, LiteTouchPE_x86.wim, is not required. Only the 64-bit boot image is required for 64-bit UEFI devices.
 
 ### Deploy Windows to Surface
 
 With all of the automation provided by the deployment share rules and task sequence, performing the deployment on each Surface device becomes as easy as a single touch.
 
->[!NOTE]
->For the deployment to require only a single touch, the Surface devices must be connected to a keyboard, connected to the network with a Microsoft Surface USB Ethernet Adapter or Surface Dock, and configured with PXE boot as the first boot option, as shown in Figure 25.
+>**Note:**&nbsp;&nbsp;For the deployment to require only a single touch, the Surface devices must be connected to a keyboard, connected to the network with a Microsoft Surface USB Ethernet Adapter or Surface Dock, and configured with PXE boot as the first boot option, as shown in Figure 25.
 
 ![Set boot priority for PXE boot](images\surface-deploymdt-fig25.png "Set boot priority for PXE boot")
 
@@ -784,8 +750,7 @@ On a properly configured Surface device, simply turn on the device and press Ent
 * Windows Update will run, installing any new Windows Updates or updates for installed applications, like Microsoft Office
 * The task sequence will complete silently and log out of the device
 
->[!NOTE]
->For Surface devices not configured to boot to the network as the first boot option, you can hold Volume Down and press Power to boot the system immediately to a USB or network device.
+>**Note:**&nbsp;&nbsp;For Surface devices not configured to boot to the network as the first boot option, you can hold Volume Down and press Power to boot the system immediately to a USB or network device.
 
 The resulting configuration is a Surface device that is logged out and ready for an end user to enter their credentials, log on, and get right to work. The applications and drivers they need are already installed and up to date.
 

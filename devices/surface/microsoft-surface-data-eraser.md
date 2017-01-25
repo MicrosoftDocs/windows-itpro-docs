@@ -20,19 +20,17 @@ Find out how the Microsoft Surface Data Eraser tool can help you securely wipe d
 
 Compatible Surface devices include:
 
-- Surface Studio
+-   Surface Book
 
-- Surface Book
+-   Surface Pro 4
 
-- Surface Pro 4
+-   Surface Pro3
 
-- Surface Pro3
+-   Surface 3
 
-- Surface 3
+-   Surface 3 LTE
 
-- Surface 3 LTE
-
-- Surface Pro 2
+-   Surface Pro 2
 
 Some scenarios where Microsoft Surface Data Eraser can be helpful include:
 
@@ -44,11 +42,9 @@ Some scenarios where Microsoft Surface Data Eraser can be helpful include:
 
 -   Standard practice when performing reimaging for devices used with sensitive data
 
->[!NOTE]
->Third-party devices, Surface devices running Windows RT (including Surface and Surface 2), and Surface Pro are not compatible with Microsoft Surface Data Eraser.
+>**Note:**&nbsp;&nbsp;Third-party devices, Surface devices running Windows RT (including Surface and Surface 2), and Surface Pro are not compatible with Microsoft Surface Data Eraser.
 
->[!NOTE]
->Because the ability to boot to USB is required to run Microsoft Surface Data Eraser, if the device is not configured to boot from USB or if the device is unable to boot or POST successfully, the Microsoft Surface Data Eraser tool will not function.
+>**Note:**&nbsp;&nbsp;Because the ability to boot to USB is required to run Microsoft Surface Data Eraser, if the device is not configured to boot from USB or if the device is unable to boot or POST successfully, the Microsoft Surface Data Eraser tool will not function.
 
 
 ## How to create a Microsoft Surface Data Eraser USB stick
@@ -75,9 +71,7 @@ After the creation tool is installed, follow these steps to create a Microsoft S
     *Figure 1. Start the Microsoft Surface Data Eraser tool*
 
 4.  Select the USB drive of your choice from the **USB Thumb Drive Selection** page as shown in Figure 2, and then click **Start** to begin the USB creation process. The drive you select will be formatted and any existing data on this drive will be lost.
-
-  >[!NOTE]
-  >If the Start button is disabled, check that your removable drive has a total capacity of at least 4 GB.
+  >**Note:**&nbsp;&nbsp;If the Start button is disabled, check that your removable drive has a total capacity of at least 4 GB.
   
     ![USB thumb drive selection](images/dataeraser-usb-selection.png "USB thumb drive selection")
 

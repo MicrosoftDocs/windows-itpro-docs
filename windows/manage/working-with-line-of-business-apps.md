@@ -12,6 +12,7 @@ localizationpriority: high
 
 # Working with line-of-business apps
 
+
 **Applies to**
 
 -   Windows 10

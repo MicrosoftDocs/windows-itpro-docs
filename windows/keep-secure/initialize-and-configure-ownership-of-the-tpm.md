@@ -1,6 +1,6 @@
 ---
-title: View status, clear, or troubleshoot the TPM (Windows 10)
-description: This topic for the IT professional describes how to view status for, clear, or troubleshoot the Trusted Platform Module (TPM).
+title: Initialize and configure ownership of the TPM (Windows 10)
+description: This topic for the IT professional describes how to initialize and set the ownership the Trusted Platform Module (TPM), turn the TPM on and off, and clear TPM keys.
 ms.assetid: 1166efaf-7aa3-4420-9279-435d9c6ac6f8
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -9,146 +9,156 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-# View status, clear, or troubleshoot the TPM
+# Initialize and configure ownership of the TPM
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
 
-This topic for the IT professional describes actions you can take through the Trusted Platform Module (TPM) snap-in, **TPM.msc**:
+This topic for the IT professional describes how to initialize and set the ownership the Trusted Platform Module (TPM), turn the TPM on and off, and clear TPM keys. It also explains how to troubleshoot issues that you might encounter as a result of using these procedures.
 
--   [View the status of the TPM](#view-the-status-of-the-tpm)
+## <a href="" id="bkmk-init"></a>About TPM initialization and ownership
 
--   [Troubleshoot TPM initialization](#troubleshoot-tpm-initialization)
+The TPM must be initialized and ownership must be taken before it can be used to help secure your computer. The owner of the TPM is the user who possesses the owner password and is able to set it and change it. Only one owner password exists per TPM. The owner of the TPM can make full use of TPM capabilities. Taking ownership of the TPM can be done as part of the initialization process.
 
--   [Clear all the keys from the TPM](#clear-all-the-keys-from-the-tpm)
+When you start the TPM Initialization Wizard, which is accessed through the TPM Microsoft Management Console (MMC), you can determine whether the computer's TPM has been initialized. You can also view the TPM properties.
 
-With TPM 1.2 and Windows 10, version 1507 or 1511, you can also take the following actions:
+This topic contains procedures for the following tasks:
 
--   [Turn on or turn off the TPM](#turn-on-or-turn-off)
+-   [Initialize the TPM and set ownership](#bkmk-initializetpm)
+-   [Troubleshoot TPM initialization](#bkmk-troubleshootinit)
+-   [Turn on or turn off the TPM](#bkmk-onoff)
+-   [Clear all the keys from the TPM](#bkmk-clear1)
+-   [Use the TPM cmdlets](#bkmk-tpmcmdlets)
 
-This topic also provides information about [using the TPM cmdlets](#use-the-tpm-cmdlets).
+## <a href="" id="bkmk-initializetpm"></a>Initialize the TPM and set ownership
 
-## About TPM initialization and ownership
+Membership in the local Administrators group, or equivalent, is the minimum required to complete this procedure. In addition, the computer must be equipped with a Trusted Computing Group-compliant BIOS.
 
-Starting with Windows 10, the operating system automatically initializes and takes ownership of the TPM. This is a change from previous operating systems, where you would initialize the TPM and create an owner password. Therefore, with Windows 10, in most cases, we recommend that you avoid configuring the TPM through **TPM.msc**. The one exception is that in certain circumstances you might use **TPM.msc** to clear the TPM. For more information, see [Clear all the keys from the TPM](#clear-all-the-keys-from-the-tpm), later in this topic.
+**To start the TPM Initialization Wizard**
 
-## View the status of the TPM
+1.  Open the TPM Management console (tpm.msc). If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then click **Yes**.
+2.  On the **Action** menu, click **Initialize TPM** to start the TPM Initialization Wizard.
+3.  If the TPM has never been initialized or is turned off, the TPM Initialization Wizard displays the **Turn on the TPM security hardware** dialog box. This dialog box provides guidance for initializing or turning on the TPM. Follow the instructions in the wizard.
 
-To view the status of the TPM, open the TPM Management console (TPM.msc). In the center pane, find the **Status** box.
+    >**Note:**  If the TPM is already turned on, the TPM Initialization Wizard displays the **Create the TPM owner password** dialog box. Skip the remainder of this procedure and continue with the **To set ownership of the TPM** procedure.
+     
+    >**Note:**  If the TPM Initialization Wizard detects that you do not have a compatible BIOS, you cannot continue with the TPM Initialization Wizard, and you are alerted to consult the computer manufacturer's documentation for instructions to initialize the TPM.
+     
+4.  Click **Restart**.
+5.  Follow the BIOS screen prompts. An acceptance prompt is displayed to ensure that a user has physical access to the computer and that no malicious software is attempting to turn on the TPM.
+    
+    >**Note:**  BIOS screen prompts and the required keystrokes vary by computer manufacturer.
+     
+6.  After the computer restarts, sign in to the computer with the same administrative credentials that you used to start this procedure.
+7.  The TPM Initialization Wizard automatically restarts. If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then click **Yes**.
+8.  Continue with the next procedure to take ownership of the TPM.
 
-In most cases, the status will be **Ready**. If the status is ready but “**with reduced functionality**,” see [Clear all the keys from the TPM](#clear-all-the-keys-from-the-tpm), later in this topic.
+To finish initializing the TPM for use, you must set an owner for the TPM. The process of taking ownership includes creating an owner password for the TPM.
 
-If the status is **Not ready**, you can try the steps in [Clear all the keys from the TPM](#clear-all-the-keys-from-the-tpm), later in this topic. If this does not bring it to a **Ready** state, contact the manufacturer, and see the troubleshooting suggestions in the next section.
+**To set ownership of the TPM**
 
-## Troubleshoot TPM initialization
+1.  If you are not continuing immediately from the last procedure, start the TPM Initialization Wizard. If you need to review the steps to do so, see the previous procedure **To start the TPM Initialization Wizard**.
+2.  In the **Create the TPM owner password** dialog box, click **Automatically create the password (recommended)**.
+3.  In the **Save your TPM owner password** dialog box, click **Save the password**.
+4.  In the **Save As** dialog box, select a location to save the password, and then click **Save**. The password file is saved as *computer\_name.tpm*.
 
-If you find that Windows is not able to initialize the TPM automatically, review the following information:
+    >**Important:**  We highly recommend saving the TPM owner password to a removable storage device and storing it in a safe location.
+     
+5.  Click **Print the password** if you want to print a copy of your password.
+    >**Important:**  We highly recommend printing a copy of your TPM owner password and storing it in a safe location.
+     
+6.  Click **Initialize**.
+    >**Note:**  The process of initializing the TPM might take a few minutes to complete.
+     
+7.  Click **Close**.
+    >**Caution:**  Do not lose your password. If you do, you will be unable to make administrative changes unless you clear the TPM, which can result in data loss.
+     
+## <a href="" id="bkmk-troubleshootinit"></a>Troubleshoot TPM initialization
 
--   You can try clearing the TPM to the factory default values and allowing Windows to re-initialize it. For important precautions for this process, and instructions for completing it, see [Clear all the keys from the TPM](#clear-all-the-keys-from-the-tpm), later in this topic.
+Managing the Trusted Platform Module (TPM) is usually a straightforward procedure. If are unable to complete the initialization procedure, review the following information:
 
--   If the TPM is a TPM 2.0 and is not detected by Windows, verify that your computer hardware contains a Unified Extensible Firmware Interface (UEFI) that is Trusted Computing Group-compliant. Also, ensure that in the UEFI settings, the TPM has not been disabled or hidden from the operating system.
+-   If the TPM is not detected by Windows, verify that your computer hardware contains a Trusted Computing Group-compliant BIOS. Ensure that no BIOS settings have been used to hide the TPM from the operating system.
+-   If you are attempting to initialize the TPM as part of the BitLocker setup, check which TPM driver is installed on the computer. We recommend always using one of the TPM drivers that is provided by Microsoft and is protected with BitLocker. If a non-Microsoft TPM driver is installed, it may prevent the default TPM driver from loading and cause BitLocker to report that a TPM is not present on the computer. If you have a non-Microsoft driver installed, remove it and then try to initialize the TPM. The following table lists the three standard TPM drivers that are provided by Microsoft.
 
--   If you have TPM 1.2 with Windows 10, version 1507 or 1511, the TPM might be turned off, and need to be turned back on, as described in [Turn on the TPM](#turn-on-the-tpm). When it is turned back on, Windows will re-initialize it.
+| Driver name | Manufacturer |
+| - | - |
+| Trusted Platform Module 1.2 | (Standard)| 
+| Broadcom Trusted Platform Module (A1), v1.2 | Broadcom| 
+| Broadcom Trusted Platform Module (A2), v1.2 | Broadcom| 
+     
+-   If the TPM has been previously initialized and you do not have the owner password, you may have to clear or reset the TPM to the factory default values. For more information, see [Clear all the keys from the TPM](#bkmk-clear1).
+    > **Caution:**  Clearing the TPM can result in data loss. To avoid data loss, make sure that you have a backup or recovery method for any data that is protected or encrypted by the TPM.
+     
+Because your TPM security hardware is a physical part of your computer, you may want to read the manuals or instructions that came with your computer, or search the manufacturer's website.
 
--   If you are attempting to set up BitLocker with the TPM, check which TPM driver is installed on the computer. We recommend always using one of the TPM drivers that is provided by Microsoft and is protected with BitLocker. If a non-Microsoft TPM driver is installed, it may prevent the default TPM driver from loading and cause BitLocker to report that a TPM is not present on the computer. If you have a non-Microsoft driver installed, remove it and then allow the operating system to initialize the TPM.
+**Network connection**
 
-### Troubleshoot network connection issues for Windows 10, versions 1507 and 1511
-
-If you have Windows 10, version 1507 or 1511, the initialization of the TPM cannot complete when your computer has network connection issues and both of the following conditions exist:
+You cannot complete the initialization of the Trusted Platform Module (TPM) when your computer is disconnected from your organization's network if either of the following conditions exist:
 
 -   An administrator has configured your computer to require that TPM recovery information be saved in Active Directory Domain Services (AD DS). This requirement can be configured through Group Policy.
-
 -   A domain controller cannot be reached. This can occur on a computer that is currently disconnected from the network, separated from the domain by a firewall, or experiencing a network component failure (such as an unplugged cable or a faulty network adapter).
 
-If these issues occur, an error message appears, and you cannot complete the initialization process. To avoid this issue, allow Windows to initialize the TPM while you are connected to the corporate network and you can contact a domain controller.
+In either case, an error message appears, and you cannot complete the initialization process. To avoid this issue, initialize the TPM while you are connected to the corporate network and you can contact a domain controller.
 
-### Troubleshoot systems with multiple TPMs
+**Systems with multiple TPMs**
 
-Some systems may have multiple TPMs and the active TPM may be toggled in UEFI. Windows 10 does not support this behavior. If you switch TPMs, Windows might not properly detect or interact with the new TPM. If you plan to switch TPMs you should toggle to the new TPM, clear it, and reinstall Windows. For more information, see [Clear all the keys from the TPM](#clear-all-the-keys-from-the-tpm), later in this topic.
+Some systems may have multiple TPMs and the active TPM may be toggled in the BIOS. Windows 10 does not support this behavior. If you switch TPMs, functionality that depends on the TPM will not work with the new TPM unless it is cleared and put through provisioning. Performing this clear may cause data loss, in particular of keys and certificates associated with the previous TPM. For example, toggling TPMs will cause Bitlocker to enter recovery mode. It is strongly recommended that, on systems with two TPMs, one TPM is selected to be used and the selection is not changed.
 
-For example, toggling TPMs will cause BitLocker to enter recovery mode. We strongly recommend that, on systems with two TPMs, one TPM is selected to be used and the selection is not changed.
+## <a href="" id="bkmk-onoff"></a>Turn on or turn off the TPM
 
-## Clear all the keys from the TPM
+Normally, the TPM is turned on as part of the TPM initialization process. You do not normally need to turn the TPM on or off. However, if necessary you can do so by using the TPM MMC. This option is only available with TPM 1.2 and does not apply to TPM 2.0.
 
-With Windows 10, in most cases, we recommend that you avoid configuring the TPM through TPM.msc. The one exception is that you can use TPM.msc to clear the TPM, for example, as a troubleshooting step, or as a final preparation before a clean installation of a new operating system. Preparing for a clean installation in this way helps ensure that the new operating system can fully deploy any TPM-based functionality that it includes, for example, attestation. However, even if the TPM is not cleared before a new operating system is installed, most TPM functionality will probably work correctly.
+### <a href="" id="turn-on-the-tpm-"></a>Turn on the TPM
 
-Clearing the TPM resets it to an unowned state. After you clear the TPM, the Windows 10 operating system will automatically re-initialize it and take ownership again.
+If the TPM has been initialized but has never been used, or if you want to use the TPM after you have turned it off, you can use the following procedure to turn on the TPM.
 
-> [!WARNING]
-> Clearing the TPM can result in data loss. For more information, see the next section, “Precautions to take before clearing the TPM.”
+**To turn on the TPM (TPM 1.2 Only)**
 
-There are several ways to clear the TPM:
+1.  Open the TPM MMC (tpm.msc).
+2.  In the **Action** pane, click **Turn TPM On** to display the **Turn on the TPM Security Hardware** page. Read the instructions on this page.
+3.  Click **Shutdown** (or **Restart**), and then follow the BIOS screen prompts.
 
--   **Clear the TPM as part of a complete reset of the computer**: You might want to remove all files from the computer and completely reset it, for example, in preparation for a clean installation. To do this, we recommend that you use the **Reset** option in **Settings**. When you perform a reset and use the **Remove everything** option, it will clear the TPM as part of the reset. You might be prompted to press a key before the TPM can be cleared. For more information, see the “Reset this PC” section in [Recovery options in Windows 10](https://support.microsoft.com/en-us/help/12415/windows-10-recovery-options).
+    After the computer restarts, but before you sign in to Windows, you will be prompted to accept the reconfiguration of the TPM. This ensures that the user has physical access to the computer and that malicious software is not attempting to make changes to the TPM.
 
--   **Clear the TPM to fix “reduced functionality” or “Not ready” TPM status**: If you open TPM.msc and see that the TPM status is something other than **Ready**, you can can try using TPM.msc to clear the TPM and fix the status. However, be sure to review the precautions in the next section.
+### <a href="" id="turn-off-the-tpm-"></a>Turn off the TPM
 
-### Precautions to take before clearing the TPM
+If you want to stop using the services that are provided by the TPM, you can use the TPM MMC to turn off the TPM. If you have the TPM owner password, physical access to the computer is not required to turn off the TPM. If you do not have the TPM owner password, you must have physical access to the 
+computer to turn off the TPM.
 
-Clearing the TPM can result in data loss. To protect against such loss, review the following precautions:
+**To turn off the TPM (TPM 1.2 only)**
 
--   Clearing the TPM causes you to lose all created keys associated with the TPM, and data protected by those keys, such as a virtual smart card or a login PIN. Make sure that you have a backup and recovery method for any data that is protected or encrypted by the TPM.
+1.  Open the TPM MMC (tpm.msc).
+2.  In the **Action** pane, click **Turn TPM Off** to display the **Turn off the TPM security hardware** page.
+3.  In the **Turn off the TPM security hardware** dialog box, select a method to enter your owner password and turning off the TPM:
 
--   Do not clear the TPM on a device you do not own, such as a work or school PC, without being instructed to do so by your IT administrator.
+    -   If you saved your TPM owner password on a removable storage device, insert it, and then click **I have the owner password file**. In the **Select backup file with the TPM owner password** dialog box, click **Browse** to locate the .tpm file that is saved on your removable storage device, click **Open**, and then click **Turn TPM Off**.
+    -   If you do not have the removable storage device with your saved TPM owner password, click **I want to enter the password**. In the **Type your TPM owner password** dialog box, type your password (including hyphens), and then click **Turn TPM Off**.
+    -   If you do not know your TPM owner password, click **I do not have the TPM owner password**, and follow the instructions that are provided in the dialog box and subsequent BIOS screens to turn off the TPM without entering the password.
 
--   If you want to temporarily suspend TPM operations and you have TPM 1.2 with Windows 10, version 1507 or 1511, you can turn off the TPM. For more information, see [Turn off the TPM](#turn-off-the-tpm), later in this topic.
+## <a href="" id="bkmk-clear1"></a>Clear all the keys from the TPM
 
--   Always use functionality in the operating system (such as TPM.msc) to the clear the TPM. Do not clear the TPM directly from UEFI.
+Clearing the TPM resets it to an unowned state. After clearing the TPM, you need to complete the TPM initialization process before using software that relies on the TPM, such as BitLocker Drive Encryption. By default, the TPM is initialized automatically.
 
--   Because your TPM security hardware is a physical part of your computer, before clearing the TPM, you might want to read the manuals or instructions that came with your computer, or search the manufacturer's website.
+>**Important:**  Clearing the TPM can result in data loss. To avoid data loss, make sure that you have a backup or recovery method for any data that is protected or encrypted by the TPM.
+ 
+After the TPM is cleared, it is also turned off.
+
+To temporarily suspend TPM operations, turn off the TPM instead of clearing it.
 
 Membership in the local Administrators group, or equivalent, is the minimum required to complete this procedure.
 
 **To clear the TPM**
 
 1.  Open the TPM MMC (tpm.msc).
-
 2.  If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then click **Yes**.
-
 3.  Under **Actions**, click **Clear TPM**.
+    >**Warning:**  If the TPM is off, reinitialize it before clearing it.
+    
+    Clearing the TPM resets it to factory defaults and turns it off. You will lose all created keys and data that is protected by those keys.
+     
+4.  You will be prompted to restart the computer. During the restart, you will be prompted by the BIOS or UEFI to press a button to confirm you wish to clear the TPM.
 
-4.  You will be prompted to restart the computer. During the restart, you might be prompted by the UEFI to press a button to confirm that you wish to clear the TPM.
-
-5.  After the PC restarts, your TPM will be automatically prepared for use by Windows 10.
-
-## <a href="" id="turn-on-or-turn-off"></a>Turn on or turn off the TPM (TPM 1.2 with Windows 10, version 1507 or 1511)
-
-Normally, the TPM is turned on as part of the TPM initialization process. You do not normally need to turn the TPM on or off. However, if necessary you can do so by using the TPM MMC.
-
-### Turn on the TPM
-
-If you want to use the TPM after you have turned it off, you can use the following procedure to turn on the TPM.
-
-**To turn on the TPM (TPM 1.2 with Windows 10, version 1507 or 1511 only)**
-
-1.  Open the TPM MMC (tpm.msc).
-
-2.  In the **Action** pane, click **Turn TPM On** to display the **Turn on the TPM Security Hardware** page. Read the instructions on this page.
-
-3.  Click **Shutdown** (or **Restart**), and then follow the UEFI screen prompts.
-
-    After the computer restarts, but before you sign in to Windows, you will be prompted to accept the reconfiguration of the TPM. This ensures that the user has physical access to the computer and that malicious software is not attempting to make changes to the TPM.
-
-### Turn off the TPM
-
-If you want to stop using the services that are provided by the TPM, you can use the TPM MMC to turn off the TPM.
-
-**To turn off the TPM (TPM 1.2 with Windows 10, version 1507 or 1511 only)**
-
-1.  Open the TPM MMC (tpm.msc).
-
-2.  In the **Action** pane, click **Turn TPM Off** to display the **Turn off the TPM security hardware** page.
-
-3.  In the **Turn off the TPM security hardware** dialog box, select a method to enter your owner password and turning off the TPM:
-
-  -   If you saved your TPM owner password on a removable storage device, insert it, and then click **I have the owner password file**. In the **Select backup file with the TPM owner password** dialog box, click **Browse** to locate the .tpm file that is saved on your removable storage device, click **Open**, and then click **Turn TPM Off**.
-
-  -   If you do not have the removable storage device with your saved TPM owner password, click **I want to enter the password**. In the **Type your TPM owner password** dialog box, type your password (including hyphens), and then click **Turn TPM Off**.
-
-  -   If you did not save your TPM owner password or no longer know it, click **I do not have the TPM owner password**, and follow the instructions that are provided in the dialog box and subsequent UEFI screens to turn off the TPM without entering the password.
-
-## Use the TPM cmdlets
+## <a href="" id="bkmk-tpmcmdlets"></a>Use the TPM cmdlets
 
 If you are using Windows PowerShell to manage your computers, you can also manage the TPM by using Windows PowerShell. To install the TPM cmdlets, type the following command:
 
@@ -156,6 +166,6 @@ If you are using Windows PowerShell to manage your computers, you can also manag
 
 For details about the individual cmdlets, see [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx).
 
-## Related topics
+## Additional resources
 
-- [Trusted Platform Module](trusted-platform-module-top-node.md) (list of topics)
+For more info about TPM, see [Trusted Platform Module Technology Overview](trusted-platform-module-overview.md#bkmk-additionalresources).

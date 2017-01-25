@@ -184,7 +184,7 @@ In Replacement PC mode, the power states are only Ready and Off and only change 
 </tr>
 <tr class="even">
 <td align="left"><p>5</p></td>
-<td align="left"><p>S0</p></td>
+<td align="left"><p>50</p></td>
 <td align="left"><p>Ready</p></td>
 </tr>
 </tbody>

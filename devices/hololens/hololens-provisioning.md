@@ -6,7 +6,6 @@ ms.mktglfcycl: manage
 ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerMS
-localizationpriority: medium
 ---
 
 # Configure HoloLens using a provisioning package
@@ -101,7 +100,7 @@ When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration D
 
 Provisioning packages make use of configuration service providers (CSPs). If you're not familiar with CSPs, see [Introduction to configuration service providers (CSPs) for IT pros](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 
-In Windows ICD, when you create a provisioning package for Windows Holographic, the settings in **Available customizations** are based on [CSPs that are supported in Windows Holographic](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens). The following table describes settings that you might want to configure for HoloLens.
+In Windows ICD, when you create a provisioning package for Windows Holographic, the settings in **Available customizations** are based on [CSPs that are supported in Windows Holographic](https://msdn.microsoft.co/library/windows/hardware/dn920025.aspx#HoloLens). The following table describes settings that you might want to configure for HoloLens.
 
 ![Common runtime settings for HoloLens](images/icd-settings.png)
 

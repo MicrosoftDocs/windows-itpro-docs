@@ -42,7 +42,7 @@ BitLocker control panel, and they are appropriate to use for automated deploymen
 
 ## <a href="" id="bkmk-new"></a>New and changed functionality
 
-To find out what's new in BitLocker for Windows 10, see the [BitLocker](https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in "What's new in Windows 10, versions 1507 and 1511."
+To find out what's new in BitLocker for Windows 10, see [What's new in BitLocker?](../whats-new/bitlocker.md)
  
 ## System requirements
 
@@ -74,10 +74,9 @@ When installing the BitLocker optional component on a server you will also need 
 | [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md) | This topic for the IT professional describes how BitLocker Network Unlock works and how to configure it. |
 | [BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md)| This topic for the IT professional describes how to use tools to manage BitLocker.| 
 | [BitLocker: Use BitLocker Recovery Password Viewer](bitlocker-use-bitlocker-recovery-password-viewer.md) | This topic for the IT professional describes how to use the BitLocker Recovery Password Viewer. |
-| [BitLocker Group Policy settings](bitlocker-group-policy-settings.md) | This topic for IT professionals describes the function, location, and effect of each Group Policy setting that is used to manage BitLocker. |
 | [BCD settings and BitLocker](bcd-settings-and-bitlocker.md) | This topic for IT professionals describes the BCD settings that are used by BitLocker.| 
 | [BitLocker Recovery Guide](bitlocker-recovery-guide-plan.md)| This topic for IT professionals describes how to recover BitLocker keys from AD DS. |
 | [Protect BitLocker from pre-boot attacks](protect-bitlocker-from-pre-boot-attacks.md)| This detailed guide will help you understand the circumstances under which the use of pre-boot authentication is recommended for devices running Windows 10, Windows 8.1, Windows 8, or Windows 7; and when it can be safely omitted from a device’s configuration. |
 | [Protecting cluster shared volumes and storage area networks with BitLocker](protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md)| This topic for IT pros describes how to protect CSVs and SANs with BitLocker.| 
 
-If you're looking for info on how to use it with Windows 10 IoT Core, see [Enabling Secure Boot and BitLocker Device Encryption on Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/docs/securebootandbitlocker).
+If you're looking for info on how to use it with Windows 10 IoT Core, see [Enabling Secure Boot and BitLocker Device Encryption on Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/win10/SB_BL.htm).

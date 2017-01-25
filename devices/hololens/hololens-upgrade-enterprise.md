@@ -1,15 +1,14 @@
 ---
-title: Unlock Windows Holographic Enterprise features (HoloLens)
+title: Upgrade to Windows Holographic Enterprise (HoloLens)
 description: HoloLens provides extra features designed for business when you upgrade to Windows Holographic Enterprise.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerMS
-localizationpriority: medium
 ---
 
-# Unlock Windows Holographic Enterprise features
+# Upgrade to Windows Holographic Enterprise
 
 Microsoft HoloLens is available in the *Development Edition*, which runs Windows Holographic (an edition of Windows 10 designed for HoloLens), and in the [Commercial Suite](https://developer.microsoft.com/windows/holographic/release_notes#introducing_microsoft_hololens_commercial_suite), which provides extra features designed for business. 
 

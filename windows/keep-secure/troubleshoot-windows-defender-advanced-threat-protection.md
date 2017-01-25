@@ -46,7 +46,6 @@ U.S. region:
 - winatpfeedback.windows.com
 - winatpmanagement.windows.com
 - winatponboarding.windows.com
-- winatpservicehealth.windows.com
 
 EU region:
 
@@ -58,17 +57,10 @@ EU region:
 - winatpfeedback.windows.com
 - winatpmanagement.windows.com
 - winatponboarding.windows.com
-- winatpservicehealth.windows.com
 
 ### Windows Defender ATP service shows event or error logs in the Event Viewer
 
 See the topic [Review events and errors on endpoints with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md) for a list of event IDs that are reported by the Windows Defender ATP service. The topic also contains troubleshooting steps for event errors.
-
-### Windows Defender ATP service fails to start after a reboot and shows error 577
-
-If onboarding endpoints successfully completes but Windows Defender ATP does not start after a reboot and shows error 577, check that Windows Defender is not disabled by a policy.
-
-For more information, see [Ensure that Windows Defender is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-is-not-disabled-by-a-policy).
 
 
 ### Related topic

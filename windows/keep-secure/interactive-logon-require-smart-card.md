@@ -1,5 +1,5 @@
 ---
-title: Interactive logon Require smart card - security policy setting (Windows 10)
+title: Interactive logon Require smart card (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Interactive logon Require smart card security policy setting.
 ms.assetid: c6a8c040-cbc7-472d-8bc5-579ddf3cbd6c
 ms.prod: w10
@@ -9,7 +9,7 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Interactive logon: Require smart card - security policy setting
+# Interactive logon: Require smart card
 
 **Applies to**
 -   Windows 10

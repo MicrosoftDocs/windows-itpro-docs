@@ -13,11 +13,6 @@ author: TrudyHa
 
 This topic lists new and updated topics in the [Plan for Windows 10 deployment](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
-## January 2017
-| New or changed topic | Description |
-|----------------------|-------------|
-| [Windows 10 Infrastructure Requirements](windows-10-infrastructure-requirements.md) | Added link for Windows Server 2008 R2 and Windows 7 activation and a link to Windows Server 2016 Volume Activation Tips | 
-
 ## September 2016
 
 | New or changed topic | Description |

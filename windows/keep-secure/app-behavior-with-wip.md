@@ -129,6 +129,3 @@ This table includes info about how enlightened apps might behave, based on your 
         </td>
     </tr>
 </table>
-
->[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

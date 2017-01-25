@@ -23,7 +23,6 @@ localizationpriority: high
 
 You need to onboard to Windows Defender ATP before you can use the service.
 
-For more information, see [Onboard your Windows 10 endpoints to Windows Defender ATP](https://www.youtube.com/watch?v=JT7VGYfeRlA&feature=youtu.be). 
 
 ## In this section
 Topic | Description

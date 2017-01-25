@@ -61,7 +61,7 @@ The following table compares the features and functions of Software Restriction 
 <tr class="odd">
 <td align="left"><p>Enforcement mode</p></td>
 <td align="left"><p>SRP works in the “deny list mode” where administrators can create rules for files that they do not want to allow in this Enterprise whereas the rest of the file are allowed to run by default.</p>
-<p>SRP can also be configured in the “allow list mode” so that by default all files are blocked and administrators need to create allow rules for files that they want to allow.</p></td>
+<p>SRP can also be configured in the “allow list mode” such that the by default all files are blocked and administrators need to create allow rules for files that they want to allow.</p></td>
 <td align="left"><p>AppLocker by default works in the “allow list mode” where only those files are allowed to run for which there is a matching allow rule.</p></td>
 </tr>
 <tr class="even">

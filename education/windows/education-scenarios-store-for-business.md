@@ -91,9 +91,9 @@ Find apps for your school using Windows Store for Business. Admins in an educati
 **To acquire apps**
 - For info on how to acquire apps, see [Acquire apps in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/acquire-apps-windows-store-for-business#acquire-apps) 
 
-**To add a payment method - debit or credit card**
+**To add a payment method**
 
-If the app you purchase has a price, you’ll need to provide a payment method. 
+If you the app you purchase has a price, you’ll need to provide a payment method. 
 - Click **Get started! Add a way to pay.** Provide the info needed for your debit or credit card.
  
 For more information on payment options, see [payment options](https://technet.microsoft.com/itpro/windows/manage/acquire-apps-windows-store-for-business#payment-options). 

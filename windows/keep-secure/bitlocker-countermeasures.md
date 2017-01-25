@@ -23,9 +23,9 @@ The sections that follow provide more detailed information about the different t
 
 ### Protection before startup
 
-Before Windows starts, you must rely on security features implemented as part of the device hardware, including TPM and Secure Boot. Fortunately, many modern computers feature TPM.
+Before Windows starts, you must rely on security features implemented as part of the device hardware, including TPM andSecure Boot. Fortunately, many modern computers feature TPM.
 
-#### Trusted Platform Module
+**Trusted Platform Module**
 
 Software alone isn’t sufficient to protect a system. After an attacker has compromised software, the software might be unable to detect the compromise. Therefore, a single successful software compromise results in an untrusted system that might never be detected. Hardware, however, is much more difficult to modify.
 
@@ -33,7 +33,7 @@ A TPM is a microchip designed to provide basic security-related functions, prima
 By binding the BitLocker encryption key with the TPM and properly configuring the device, it’s nearly impossible for an attacker to gain access to the BitLocker-encrypted data without obtaining an authorized user’s credentials. Therefore, computers with a TPM can provide a high level of protection against attacks that attempt to directly retrieve the BitLocker encryption key.
 For more info about TPM, see [Trusted Platform Module](trusted-platform-module-overview.md).
 
-#### UEFI and Secure Boot
+**UEFI and Secure Boot**
 
 No operating system can protect a device when the operating system is offline. For that reason, Microsoft worked closely with hardware vendors to require firmware-level protection against boot and rootkits that might compromise an encryption solution’s encryption keys.
 
@@ -53,7 +53,7 @@ Using the digital signature, UEFI verifies that the bootloader was signed using 
 
 If the bootloader passes these two tests, UEFI knows that the bootloader isn’t a bootkit and starts it. At this point, Trusted Boot takes over, and the Windows bootloader, using the same cryptographic technologies that UEFI used to verify the bootloader, then verifies that the Windows system files haven’t been changed.
 
-Starting with Windows 8, certified devices must meet several requirements related to UEFI-based Secure Boot:
+All Windows 8–certified devices must meet several requirements related to UEFI-based Secure Boot:
 
 -   They must have Secure Boot enabled by default.
 -   They must trust Microsoft’s certificate (and thus any bootloader Microsoft has signed).

@@ -47,7 +47,7 @@ Before modifying a policy, evaluate how the policy is currently implemented. For
 
 ### Step 2: Export the AppLocker policy from the GPO
 
-Updating an AppLocker policy that is currently enforced in your production environment can have unintended results. Therefore, export the policy from the GPO and update the rule or rules by using AppLocker on your AppLocker reference or test computer. To prepare an AppLocker policy for modification, see [Export an AppLocker policy from a GPO](export-an-applocker-policy-from-a-gpo.md).
+Updating an AppLocker policy that is currently enforced in your production environment can have unintended results. Therefore, export the policy from the GPO and update the rule or rules by using AppLocker on your AppLocker reference or test computer. To prepare an AppLocker policy for modification, see [Export an AppLocker policy from a GPO](export-an-applocker-policy-from-a-gpo.md)
 
 ### Step 3: Update the AppLocker policy by editing the appropriate AppLocker rule
 

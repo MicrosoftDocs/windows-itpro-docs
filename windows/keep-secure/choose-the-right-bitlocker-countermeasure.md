@@ -17,105 +17,19 @@ author: brianlic-msft
 This section outlines the best countermeasures you can use to protect your organization from bootkits and rootkits, brute force sign-in, Direct Memory Access (DMA) attacks, Hyberfil.sys attacks, and memory remanence attacks.
 You can use BitLocker to protect your Windows 10 PCs. Whichever operating system you’re using, Microsoft and Windows-certified devices provide countermeasures to address attacks and improve your data security. In most cases, this protection can be implemented without the need for pre-boot authentication.
 
-Tables 1 and 2 summarize the recommended mitigations for different types of attacks against PCs running recent versions of Windows. The orange blocks indicate that the system requires additional configuration from the default settings.
+Figures 2, 3, and 4 summarize the recommended mitigations for different types of attacks against PCs running recent versions of Windows. The orange blocks indicate that the system requires additional configuration from the default 
+settings.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="25%" />
-<col width="55%" />
-</colgroup>
-<tr>
-<td></td>
-<td BGCOLOR="#01BCF3">
-<p><font color="#FFFFFF"><strong>Windows 8.1<br>without TPM</strong></font></p></td>
-<td BGCOLOR="#01BCF3">
-<p><font color="#FFFFFF"><strong>Windows 8.1 Certified<br>(with TPM)</strong></font></p></td>
-</tr>
-<tr class="odd">
-<td BGCOLOR="#FF8C01">
-<p><font color="#FFFFFF">Bootkits and<br>Rootkits</p></font></td>
-<td BGCOLOR="#FED198"><p>Without TPM, boot integrity checking is not available</p></td>
-<td BGCOLOR="#99E4FB"><p>Secure by default when UEFI-based Secure Boot is enabled and a firmware password is required to change settings</p></td>
-</tr>
-<tr class="even">
-<td BGCOLOR="FF8C01">
-<p><font color="#FFFFFF">Brute Force<br>Sign-in</font></p></td>
-<td BGCOLOR="#99E4FB"><p>Secure by default, and can be improved with account lockout Group Policy</p></td>
-<td BGCOLOR="#99E4FB"><p>Secure by default, and can be improved with account lockout and device lockout Group Policy settings</p></td>
-</tr>
-<tr class="odd">
-<td BGCOLOR="#FF8C01">
-<p><font color="#FFFFFF">DMA<br>Attacks</p></font></td>
-<td BGCOLOR="#99E4FB"><p>If policy is deployed, secure by default for all lost or stolen devices because new DMA devices are granted access only when an authorized user is signed in</p></td>
-<td BGCOLOR="#99E4FB"><p>If policy is deployed, secure by default for all lost or stolen devices because new DMA devices are granted access only when an authorized user is signed in</p></td>
-</tr>
-<tr class="even">
-<td BGCOLOR="FF8C01">
-<p><font color="#FFFFFF">Hyberfil.sys<br>Attacks</font></p></td>
-<td BGCOLOR="#99E4FB"><p>Secure by default; hyberfil.sys secured on encrypted volume</p></td>
-<td BGCOLOR="#99E4FB"><p>Secure by default; hyberfil.sys secured on encrypted volume</p></td>
-</tr>
-<tr class="odd">
-<td BGCOLOR="#FF8C01">
-<p><font color="#FFFFFF">Memory<br>Remanence<br>Attacks</p></font></td>
-<td BGCOLOR="#FED198"><p>Password protect the firmware and disable booting from external media. If an attack is viable, consider pre-boot authentication</p></td>
-<td BGCOLOR="#99E4FB"><p>Password protect the firmware and ensure Secure Boot is enabled. If an attack is viable, consider pre-boot authentication</p></td>
-</tr>
-</table>
+![how to choose best countermeasures for windows 7](images/bitlockerprebootprotection-counterwin7.jpg)
 
-**Table 1.**&nbsp;&nbsp;How to choose the best countermeasures for Windows 8.1<br><br>
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="25%" />
-<col width="55%" />
-</colgroup>
-<tr>
-<td></td>
-<td BGCOLOR="#01BCF3">
-<p><font color="#FFFFFF"><strong>Windows 10<br>without TPM</strong></font></p></td>
-<td BGCOLOR="#01BCF3">
-<p><font color="#FFFFFF"><strong>Windows 10 Certified<br>(with TPM)</strong></font></p></td>
-</tr>
-<tr class="odd">
-<td BGCOLOR="#FF8C01">
-<p><font color="#FFFFFF">Bootkits and<br>Rootkits</p></font></td>
-<td BGCOLOR="#FED198"><p>Without TPM, boot integrity checking is not available</p></td>
-<td BGCOLOR="#99E4FB"><p>Secure by default when UEFI-based Secure Boot is enabled and a firmware password is required to change settings</p></td>
-</tr>
-<tr class="even">
-<td BGCOLOR="FF8C01">
-<p><font color="#FFFFFF">Brute Force<br>Sign-in</font></p></td>
-<td BGCOLOR="#99E4FB"><p>Secure by default, and can be improved with account lockout Group Policy</p></td>
-<td BGCOLOR="#99E4FB"><p>Secure by default, and can be improved with account lockout and device lockout Group Policy settings</p></td>
-</tr>
-<tr class="odd">
-<td BGCOLOR="#FF8C01">
-<p><font color="#FFFFFF">DMA<br>Attacks</p></font></td>
-<td BGCOLOR="#99E4FB"><p>If policy is deployed, secure by default for all lost or stolen devices because new DMA devices are granted access only when an authorized user is signed in</p></td>
-<td BGCOLOR="#99E4FB"><p>Secure by default; certified devices do not expose vulnerable DMA busses.<br>Can be additionally secured by deploying policy to restrict DMA devices:</p>
-<ul>
-<li><p><a href="https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#DataProtection_AllowDirectMemoryAccess">DataProtection/AllowDirectMemoryAccess</a></p></li>
-<li><p><a href="https://support.microsoft.com/en-us/kb/2516445">Block 1394 and Thunderbolt</a></p></li></ul>
-</td>
-</tr>
-<tr class="even">
-<td BGCOLOR="FF8C01">
-<p><font color="#FFFFFF">Hyberfil.sys<br>Attacks</font></p></td>
-<td BGCOLOR="#99E4FB"><p>Secure by default; hyberfil.sys secured on encrypted volume</p></td>
-<td BGCOLOR="#99E4FB"><p>Secure by default; hyberfil.sys secured on encrypted volume</p></td>
-</tr>
-<tr class="odd">
-<td BGCOLOR="#FF8C01">
-<p><font color="#FFFFFF">Memory<br>Remanence<br>Attacks</p></font></td>
-<td BGCOLOR="#FED198"><p>Password protect the firmware and disable booting from external media. If an attack is viable, consider pre-boot authentication</p></td>
-<td BGCOLOR="#99E4FB"><p>Password protect the firmware and ensure Secure Boot is enabled.<br>The most effective mitigation, which we advise for high-security devices, is to configure a TPM+PIN protector, disable Standby power management, and shut down or hibernate the device before it leaves the control of an authorized user.</p></td>
-</tr>
-</table>
+![how to choose countermeasures for windows 8](images/bitlockerprebootprotection-counterwin8.jpg)
 
-**Table 2.**&nbsp;&nbsp;How to choose the best countermeasures for Windows 10
+**Figure 3.** How to choose the best countermeasures for Windows 8
+
+![how to choose countermeasures for windows 8.1](images/bitlockerprebootprotection-counterwin81.jpg)
+
+**Figure 4.** How to choose the best countermeasures for Windows 8.1
 
 The latest InstantGo devices, primarily tablets, are designed to be secure by default against all attacks that might compromise the BitLocker encryption key. Other Windows devices can be, too. DMA port–based attacks, which represent the attack vector of choice, are not possible on InstantGo devices, because these port types are prohibited. The inclusion of DMA ports on even non-InstantGo devices is extremely rare on recent devices, particularly on mobile ones. This could change if Thunderbolt is broadly adopted, so IT should consider this when purchasing new devices. In any case DMA ports can be disabled entirely, which is an increasingly popular option because the use of 
 DMA ports is infrequent in the non-developer space.

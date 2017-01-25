@@ -22,8 +22,6 @@ If you define this policy setting, you can specify whether to audit successes, a
 
 To set this value to **No auditing**, in the **Properties** dialog box for this policy setting, select the **Define these policy settings** check box and clear the **Success** and **Failure** check boxes.
 
-For information about advanced security policy settings for logon events, see the [Logon/logoff](advanced-security-audit-policy-settings.md#logonlogoff) section in [Advanced security audit policy settings](advanced-security-audit-policy-settings.md).
-
 ## Configure this audit setting
 
 You can configure this security setting by opening the appropriate policy under Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Audit Policy.

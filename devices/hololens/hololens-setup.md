@@ -6,7 +6,6 @@ ms.mktglfcycl: manage
 ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerMS
-localizationpriority: medium
 ---
 
 # Set up HoloLens

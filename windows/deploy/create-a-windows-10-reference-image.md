@@ -167,7 +167,7 @@ If you need to add many applications, you can take advantage of the PowerShell s
 2.  Import the snap-in and create the PSDrive by running the following commands in an elevated PowerShell prompt:
 
     ``` syntax
-    Import-Module "C:\Program Files\Microsoft Deployment Toolkit\bin\MicrosoftDeploymentToolkit.psd1"
+    Import-Topic "C:\Program Files\Microsoft Deployment Toolkit\bin\MicrosoftDeploymentToolkit.psd1"
     New-PSDrive -Name "DS001" -PSProvider MDTProvider -Root "E:\MDTBuildLab"
     ```
 

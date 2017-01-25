@@ -21,12 +21,12 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-The **Machines view** shows a list of the machines in your network, the corresponding number of active alerts for each machine categorized by alert severity levels, and the number of active malware detections. This view allows you to identify machines with the highest risk at a glance, and keep track of all the machines that are reporting sensor data in your network.
+The **Machines view** shows a list of the machines in your network, the corresponding number of active alerts for each machine categorized by alert severity levels, and the number of active malware detections. This view allows you to identify machines with the highest risk at a glance, and keep track of all the machines that are reporting telemetry in your network.
 
 Use the Machines view in these two main scenarios:
 
 - **During onboarding**
-  - During the onboarding process, the Machines view gradually gets populated with endpoints as they begin to report sensor data. Use this view to track your onboarded endpoints as they appear. Use the available features to sort and filer to see which endpoints have most recently reported sensor data, or download the complete endpoint list as a CSV file for offline analysis.
+  - During the onboarding process, the Machines view gradually gets populated with endpoints as they begin to report telemetry. Use this view to track your onboarded endpoints as they appear. Use the available features to sort and filer to see which endpoints have most recently reported telemetry, or download the complete endpoint list as a CSV file for offline analysis.
 - **Day-to-day work**
   - The **Machines view** enables you to identify machines that are most at risk in a glance. High-risk machines are those with the greatest number and highest-severity alerts. By sorting the machines by risk, you'll be able to identify the most vulnerable machines and take action on them.
 
@@ -34,7 +34,7 @@ The Machines view contains the following columns:
 
 - **Machine name** - the name or GUID of the machine
 - **Domain** - the domain the machine belongs to
-- **Last seen** - when the machine last reported sensor data
+- **Last seen** - when the machine last reported telemetry
 - **Internal IP** - the local internal Internet Protocol (IP) address of the machine
 - **Active Alerts** - the number of alerts reported by the machine by severity
 - **Active malware detections** - the number of active malware detections reported by the machine
@@ -59,7 +59,7 @@ You can filter the view by the following time periods:
 - 6 months
 
 > [!NOTE]
-> When you select a time period, the list will only display machines that reported within the selected time period. For example, selecting 1 day will only display a list of machines that reported sensor data within the last 24-hour period.
+> When you select a time period, the list will only display machines that reported within the selected time period. For example, selecting 1 day will only display a list of machines that reported telemetry within the last 24-hour period.
 
 The threat category filter lets you filter the view by the following categories:
 
@@ -94,7 +94,7 @@ When you investigate a specific machine, you'll see:
 - **Alerts related to this machine**
 - **Machine timeline**
 
-The machine details, IP, and reporting sections display some attributes of the machine such as its name, domain, OS, IP address, and how long it's been reporting sensor data to the Windows Defender ATP service.
+The machine details, IP, and reporting sections display some attributes of the machine such as its name, domain, OS, IP address, and how long it's been reporting telemetry to the Windows Defender ATP service.
 
 The **Alerts related to this machine** section provides a list of alerts that are associated with the machine. This list is a simplified version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows the date that the alert was detected, a short description of the alert, the alert's severity, the alert's threat category, and the alert's status in the queue.
 

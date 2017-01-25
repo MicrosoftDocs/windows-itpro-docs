@@ -45,11 +45,8 @@ Performing an upgrade deployment of Windows 10 requires the same tools and resou
 You will also need to have available the following resources:
 
 * Windows 10 installation files, such as the installation media downloaded from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx)
-
-   >[!NOTE]
-   >Installation media for use with MDT must contain a Windows image in Windows Imaging Format (.wim). Installation media produced by the [Get Windows 10](https://www.microsoft.com/en-us/software-download/windows10/) page does not use a .wim file, instead using an Electronic Software Download (.esd) file, which is not compatible with MDT.
-* [Surface firmware and drivers](https://technet.microsoft.com/en-us/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices) for Windows 10
-
+   >**Note:**&nbsp;&nbsp;Installation media for use with MDT must contain a Windows image in Windows Imaging Format (.wim). Installation media produced by the [Get Windows 10](https://www.microsoft.com/software-download/windows10/) page does not use a .wim file, instead using an Electronic Software Download (.esd) file, which is not compatible with MDT.
+* [Surface firmware and drivers](https://technet.microsoft.com/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices) for Windows 10
 * Application installation files for any applications you want to install, such as the Surface app
 
 ## Prepare the upgrade deployment
@@ -105,8 +102,7 @@ Create the upgrade task sequence with the following process:
 1. In the Deployment Workbench under your Deployment Share, right-click the **Task Sequences** folder, and then click **New Task Sequence** to start the New Task Sequence Wizard.
 2. Use these steps to create the deployment task sequence with the New Task Sequence Wizard:
   - **General Settings** – Enter an identifier for the deployment task sequence in the Task Sequence ID field, a name for the deployment task sequence in the Task Sequence Name field, and any comments for the deployment task sequence in the **Task Sequence Comments** field, and then click **Next**.
-  >[!NOTE]
-  >The **Task Sequence ID** field cannot contain spaces and can be a maximum of 16 characters.
+  >**Note:**&nbsp;&nbsp;The **Task Sequence ID** field cannot contain spaces and can be a maximum of 16 characters.
   - **Select Template** – Select **Standard Client Upgrade Task Sequence** from the drop-down menu, and then click **Next**.
   - **Select OS** – Navigate to and select the Windows image that you imported, and then click **Next**.
   - **Specify Product Key** – Select the product key entry that fits your organization’s licensing system. The **Do Not Specify a Product Key at This Time** option can be used for systems that will be activated via Key Management Services (KMS) or Active Directory Based Activation (ADBA). A product key can be specified specifically if your organization uses Multiple Activation Keys (MAK). Click **Next**.

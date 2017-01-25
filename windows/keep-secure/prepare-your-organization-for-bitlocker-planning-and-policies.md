@@ -48,13 +48,13 @@ BitLocker helps prevent unauthorized access to data on lost or stolen computers 
 -   Encrypting the entire Windows operating system volume on the hard disk.
 -   Verifying the boot process integrity.
 
-The trusted platform module (TPM) is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect user data and to ensure that a computer has not been tampered with while the system was offline.
+The trusted platform module (TPM)is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect user data and to ensure that a computer has not been tampered with while the system was offline.
 
 In addition, BitLocker offers the option to lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable USB device, such as a flash drive, that contains a startup key. These additional security measures provide multifactor authentication and assurance that the computer will not start or resume from hibernation until the correct PIN or startup key is presented.
 
 On computers that do not have a TPM version 1.2 or higher, you can still use BitLocker to encrypt the Windows operating system volume. However, this implementation will require the user to insert a USB startup key to start the computer or resume from hibernation, and does not provide the pre-startup system integrity verification offered by BitLocker working with a TPM.
 
-### BitLocker key protectors
+**BitLocker key protectors**
 
 | Key protector | Description |
 | - | - |
@@ -65,7 +65,7 @@ On computers that do not have a TPM version 1.2 or higher, you can still use Bi
 | Recovery password | A 48-digit number used to unlock a volume when it is in recovery mode. Numbers can often be typed on a regular keyboard, if the numbers on the normal keyboard are not responding you can always use the function keys (F1-F10) to input the numbers.| 
 | Recovery key| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume.| 
  
-### BitLocker authentication methods
+**BitLocker authentication methods**
 
 | Authentication method | Requires user interaction | Description |
 | - | - | - |
@@ -97,9 +97,22 @@ The protection differences provided by multifactor authentication methods cannot
 
 In your deployment plan, identify what TPM-based hardware platforms will be supported. Document the hardware models from an OEM of your choice, so that their configurations can be tested and supported. TPM hardware requires special consideration during all aspects of planning and deployment.
 
-### TPM 1.2 states and initialization
+### TPM states of existence
 
-For TPM 1.2, there are multiple possible states. Windows 10 automatically initializes the TPM, which brings it to an enabled, activated, and owned state. This is the state that BitLocker requires before it can use the TPM.
+For each of the TPM states of existence, the TPM can transition into another state (for example, moving from disabled to enabled). The states are not exclusive.
+
+| State | Description |
+| - | - |
+| Enabled| Most features of the TPM are available.<br/>The TPM may be enabled and disabled multiple times within a boot period, if ownership is taken.| 
+| Disabled | The TPM restricts most operations. Exceptions include the ability to report TPM capabilities, extend and reset Platform Configuration Register (PCR) functions, and to perform hashing and basic initialization.<br/>The TPM may be enabled and disabled multiple times within a boot period.| 
+| Activated| Most features of the TPM are available. The TPM may be activated and deactivated only through physical presence which requires a reboot.| 
+| Deactivated| Similar to disabled, with the exception that ownership can be taken while deactivated and enabled. The TPM may be activated and deactivated only through physical presence which requires a reboot.| 
+| Owned| Most features of the TPM are available. The TPM has an endorsement key and storage root key, and the owner knows information about owner authorization data.| 
+| Un-owned| The TPM does not have a storage root key and may or may not have an endorsement key.| 
+ 
+>**Important:**  BitLocker cannot use the TPM until it is in the following state: enabled, activated, and owned. When the TPM is in this state and only when it is in this state, all operations are available.
+ 
+The state of the TPM exists independent of the computer’s operating system. Once the TPM is enabled, activated, and owned, the state of the TPM is preserved if the operating system is reinstalled.
 
 ### Endorsement keys
 

@@ -18,7 +18,7 @@ author: jasesso
 Windows Defender in Windows 10 is a built-in antimalware solution that provides security and antimalware management for desktops, portable computers, and servers.
 This topic provides an overview of Windows Defender, including a list of system requirements and new features.
 
-For more important information about running Windows Defender on a server platform, see [Windows Defender Overview for Windows Server](https://technet.microsoft.com/windows-server-docs/security/windows-defender/windows-defender-overview-windows-server).
+For more important information about running Windows Defender on a server platform, see [Windows Defender Overview for Windows Server Technical Preview](https://technet.microsoft.com/library/dn765478.aspx).
 
 Take advantage of Windows Defender by configuring settings and definitions using the following tools:
 -   Microsoft Active Directory *Group Policy* for settings

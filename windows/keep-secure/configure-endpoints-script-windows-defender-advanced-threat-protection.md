@@ -45,7 +45,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 
 5.  Press the **Enter** key or click **OK**.
 
-For for information on how you can manually validate that the endpoint is compliant and correctly reports sensor data see, [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
+For for information on how you can manually validate that the endpoint is compliant and correctly reports telemetry see, [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md).
 
 ## Configure sample collection settings
 For each endpoint, you can set a configuration value to state whether samples can be collected from the endpoint when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.

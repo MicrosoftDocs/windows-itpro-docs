@@ -2222,7 +2222,7 @@ Description of the error. </dt>
 <td colspan="2">
 <p>The support for your operating system has expired. Windows Defender is no longer supported on your operating system, has stopped functioning, and is not protecting against malware threats.</p>
 </td>
-</tr><tr><th rowspan="3">Event ID: 2050</th><td><p>Symbolic name:</p></td><td colspan="2"><p><b>MALWAREPROTECTION_SAMPLESUBMISSION_UPLOADED</b></p></td></tr><tr><td><p>Message:</p></td><td colspan="2"><p><b>The antimalware engine has uploaded a file for further analysis.<br />Filename &lt;uploaded filename&gt;<br />Sha256: &lt;file SHA&gt;</b></p></td></tr><tr><td><p>Description:</p></td><td colspan="2"><p>A file was uploaded to the Windows Defender Antimalware cloud for further analysis or processing.</p></td></tr>
+</tr>
 <tr>
 <th rowspan="4">Event ID: 3002</th>
 <td>

@@ -1,5 +1,5 @@
 ---
-title: Access this computer from the network - security policy setting (Windows 10)
+title: Access this computer from the network (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Access this computer from the network security policy setting.
 ms.assetid: f6767bc2-83d1-45f1-847c-54f5362db022
 ms.prod: w10
@@ -9,7 +9,7 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Access this computer from the network - security policy setting
+# Access this computer from the network
 
 **Applies to**
 -   Windows 10

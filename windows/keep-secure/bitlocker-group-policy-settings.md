@@ -1509,6 +1509,7 @@ If the **Require BitLocker backup to AD DS** option is not selected, AD DS bac
 TPM initialization might be needed during the BitLocker setup. Enable the **Turn on TPM backup to Active Directory Domain Services** policy setting in **Computer Configuration\\Administrative Templates\\System\\Trusted Platform Module Services** to ensure that TPM information is also backed up.
 
 For more information about this setting, see [TPM Group Policy settings](trusted-platform-module-services-group-policy-settings.md).
+If you are using domain controllers running Windows Server 2003 with Service Pack 1, you must first set up appropriate schema extensions and access control settings on the domain before a backup to AD DS can succeed. For more info, see [Backup the TPM recovery Information to AD DS](backup-tpm-recovery-information-to-ad-ds.md).
 
 ### <a href="" id="bkmk-rec4"></a>Choose default folder for recovery password
 

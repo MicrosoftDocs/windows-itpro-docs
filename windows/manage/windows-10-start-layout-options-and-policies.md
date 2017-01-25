@@ -68,12 +68,12 @@ The following table lists the different parts of Start and any applicable policy
 </tr>
 <tr class="even">
 <td align="left">Recently added</td>
-<td align="left">not applicable</td>
+<td align="left"></td>
 <td align="left"><strong>Settings</strong> &gt; <strong>Personalization</strong> &gt; <strong>Start</strong> &gt; <strong>Show recently added apps</strong></td>
 </tr>
 <tr class="odd">
 <td align="left">Pinned folders</td>
-<td align="left">not applicable</td>
+<td align="left"></td>
 <td align="left"><strong>Settings</strong> &gt; <strong>Personalization</strong> &gt; <strong>Start</strong> &gt; <strong>Choose which folders appear on Start</strong></td>
 </tr>
 <tr class="even">

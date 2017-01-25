@@ -8,7 +8,6 @@ Welcome! This repository houses the docs that are written for IT professionals f
 - [Surface](https://technet.microsoft.com/itpro/surface)
 - [Surface Hub](https://technet.microsoft.com/itpro/surface-hub)
 - [Windows 10 for Education](https://technet.microsoft.com/edu/windows)
-- [HoloLens](https://technet.microsoft.com/itpro/hololens)
 - [Microsoft Desktop Optimization Pack](https://technet.microsoft.com/itpro/mdop) 
 
 ## Contributing

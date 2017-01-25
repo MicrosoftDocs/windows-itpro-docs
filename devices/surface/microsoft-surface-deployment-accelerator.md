@@ -62,8 +62,7 @@ When the SDA completes, you can use the deployment share to deploy over the netw
 
 You can modify the task sequence in the MDT Deployment Workbench to [include your own apps](https://technet.microsoft.com/itpro/windows/deploy/deploy-a-windows-10-image-using-mdt#sec04), or to [pause the automated installation routine](https://blogs.technet.microsoft.com/mniehaus/2009/06/26/mdt-2010-new-feature-3-suspend-and-resume-a-lite-touch-task-sequence/). While the installation is paused, you can make changes to customize your reference image. After the image is captured, you can configure a deployment task sequence and distribute this custom configuration by using the same network boot capabilities as before.
 
->[!NOTE]
->With SDA v1.9.0258, Surface Pro 3, Surface Pro 4, and Surface Book are supported for Windows 10 deployment, and Surface Pro 3 is supported for Windows 8.1 deployment.
+>**Note:**&nbsp;&nbsp;With SDA v1.9.0258, Surface Pro 3, Surface Pro 4, and Surface Book are supported for Windows 10 deployment, and Surface Pro 3 is supported for Windows 8.1 deployment.
 
  
 
@@ -78,18 +77,15 @@ For environments where the SDA server will not be able to connect to the Interne
 
 You can find a full list of available driver downloads at [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 
->[!NOTE]
->Downloaded files do not need to be extracted. The downloaded files can be left as .zip files as long as they are stored in one folder.
+>**Note:**&nbsp;&nbsp;Downloaded files do not need to be extracted. The downloaded files can be left as .zip files as long as they are stored in one folder.
 
->[!NOTE]
->Using files from a local directory is not supported when including Office 365 in your deployment share. To include Office 365 in your deployment share, select the **Download from the Internet** check box. 
+>**Note:**&nbsp;&nbsp;Using files from a local directory is not supported when including Office 365 in your deployment share. To include Office 365 in your deployment share, select the **Download from the Internet** check box. 
 
 ## Changes and updates
 
 SDA is periodically updated by Microsoft. For instructions on how these features are used, see [Step-by-Step: Microsoft Surface Deployment Accelerator](https://technet.microsoft.com/itpro/surface/step-by-step-surface-deployment-accelerator).
 
->[!NOTE]
->To install a newer version of SDA on a server with a previous version of SDA installed, you only need to run the installation file for the new version of SDA. The installer will handle the upgrade process automatically. If you used SDA to create a deployment share prior to the upgrade and want to use new features of the new version of SDA, you will need to create a new deployment share. SDA does not support upgrades of an existing deployment share.
+>**Note:**&nbsp;&nbsp;To install a newer version of SDA on a server with a previous version of SDA installed, you only need to run the installation file for the new version of SDA. The installer will handle the upgrade process automatically. If you used SDA to create a deployment share prior to the upgrade and want to use new features of the new version of SDA, you will need to create a new deployment share. SDA does not support upgrades of an existing deployment share.
  
 ### Version 1.96.0405
 This version of SDA adds support for the following:

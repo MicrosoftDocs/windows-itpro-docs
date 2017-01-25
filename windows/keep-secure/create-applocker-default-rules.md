@@ -27,7 +27,3 @@ You can perform this task by using the Group Policy Management Console for an Ap
 1.  Open the AppLocker console.
 2.  Right-click the appropriate rule type for which you want to automatically generate default rules. You can automatically generate rules for executable, Windows Installer, script rules and Packaged app rules.
 3.  Click **Create Default Rules**.
-
-## Related topics
-
-- [Understanding AppLocker default rules](understanding-applocker-default-rules.md)

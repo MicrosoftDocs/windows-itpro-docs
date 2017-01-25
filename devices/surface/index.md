@@ -33,9 +33,7 @@ For more information on planning for, deploying, and managing Surface devices in
 | [Change history for Surface documentation](change-history-for-surface.md) | This topic lists new and updated topics in the Surface documentation library. |
 
 
-## Learn more
 
-[Certifying Surface Pro 4 and Surface Book as standard devices at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/849/Certifying-Surface-Pro-4-and-Surface-Book-as-standard-devices-at-Microsoft)
 
 
 

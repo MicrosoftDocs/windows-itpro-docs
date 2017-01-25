@@ -237,8 +237,7 @@ In Windows 10, version 1507 and Windows 10, version 1511, when you enable the **
 
     -   For **Remote port**, choose **All ports**.
 
-
-If your organization tests network traffic, do not use a network proxy as Windows Firewall does not block proxy traffic. Instead, use a network traffic analyzer. Based on your needs, there are many network traffic analyzers available at no cost.
+If your organization tests network traffic, you should not use Fiddler to test Windows Firewall settings. Fiddler is a network proxy and Windows Firewall does not block proxy traffic. You should use a network traffic analyzer, such as WireShark or Message Analyzer.
 
 ### <a href="" id="bkmk-cortana-mdm"></a>2.2 Cortana and Search MDM policies
 

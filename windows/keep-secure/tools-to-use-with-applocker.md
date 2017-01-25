@@ -24,7 +24,7 @@ The following tools can help you administer the application control policies cre
 
 -   **Generate Default Rules tool**
 
-    AppLocker includes default rules for each rule collection accessed through the Local Security Policy snap-in. These rules are intended to help ensure that the files that are required for Windows to operate properly are allowed in an AppLocker rule collection. For info about how to use this tool, see [Create AppLocker default rules](create-applocker-default-rules.md). For a list of the default rules, see [AppLocker default rules](working-with-applocker-rules.md#applocker-default-rules).
+    AppLocker includes default rules for each rule collection accessed through the Local Security Policy snap-in. These rules are intended to help ensure that the files that are required for Windows to operate properly are allowed in an AppLocker rule collection. For info about how to use this tool, see [Create AppLocker default rules](create-applocker-default-rules.md).
 
 -   **Automatically Generate AppLocker Rules wizard**
 

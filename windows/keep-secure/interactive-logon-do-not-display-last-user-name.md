@@ -34,6 +34,8 @@ If this policy is disabled, the full name of the last user to log on is displaye
 
 Your implementation of this policy depends on your security requirements for displayed logon information. If you have devices that store sensitive data, with monitors displayed in unsecured locations, or if you have devices with sensitive data that are remotely accessed, revealing logged on user’s full names or domain account names might contradict your overall security policy.
 
+Depending on your security policy, you might also want to enable the [Interactive logon: Display user information when the session is locked](interactive-logon-display-user-information-when-the-session-is-locked.md) policy, which will prevent the Windows operating system from displaying the logon name when the session is locked or started.
+
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
