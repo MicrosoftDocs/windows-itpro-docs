@@ -14,7 +14,7 @@ author: CelesteDG
 # Get started: Deploy and manage a full cloud IT solution for your business
 **Applies to:**
 
--   Windows 10
+-   Office 365 Business Premium, Azure AD Premium, Intune, Windows Store for Business, Windows 10
 
 In this walkthrough, we'll show you how to deploy and manage a full cloud IT solution for your small to medium business using Microsoft Azure AD, Intune, Office 365, and Windows. We'll show you the basics on how to:
 - Acquire an Office 365 business domain
@@ -389,7 +389,7 @@ To set up new Windows devices, go through the Windows initial device setup or fi
 
   ![Choose how you'll connect the Windows device](images/win10_choosehowtoconnect.png)
 
-4. In the **Let's get you signed in** screen, sign in using one of the user accounts you added in section [2.2 Add users and assign product licenses](#22_add_users_and_assign_product_licenses). We suggest signing in as one of the global administrators. Later, sign in on another device using one of the non-admin accounts.
+4. In the **Let's get you signed in** screen, sign in using one of the user accounts you added in section [2.2 Add users and assign product licenses](#22-add-users-and-assign-product-licenses). We suggest signing in as one of the global administrators. Later, sign in on another device using one of the non-admin accounts.
 
   **Figure 33** - Sign in using one of the accounts you added
 
@@ -457,33 +457,51 @@ You can use Microsoft Intune admin settings and policies to manage features on y
 In this walkthrough, we'll show you how to add a new policy that will disable the camera for the Intune-managed devices and turn off Windows Hello and PINs during setup.
 
 **To disable the camera**
-1. In the Intune admin console, choose **Policy > Configuration Policies > Add**.
-2. On the **Create a New Policy** page, select **Windows > General Configuration (Windows 10 Desktop and Mobile and later)**.
-3. Click **Create Policy**.
+1. In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Policy > Configuration Policies**.
+2. In the **Policies** window, click **Add** to create a new policy.
+3. On the **Create a New Policy** page, click **Windows** to expand the group, select **General Configuration (Windows 10 Desktop and Mobile and later)**, choose **Create and Deploy a Custom Policy**, and then click **Create Policy**.
 4. On the **Create Policy** page, select **Device Capabilities**.
 5. In the **General** section, add a name and description for this policy. For example:
   - **Name**: Test Policy - Disable Camera
   - **Description**: Disables the camera
-6. In the **Hardware** section, configure **Allow camera** and choose **No** from the dropdown list.
-7. Click **Save Policy**.
-8. On the **Deploy Policy** dialog box, select **Yes** to deploy the policy now.
-9. On the **Management Deployment** dialog box, select the user group(s) or device group(s) that you want to apply the policy to. For example, select **All Students**.
-10. Click **OK**.
+6. Scroll down to the **Hardware** section, find **Allow camera is not configured**, toggle the button so that it changes to **Allow camera** and choose **No** from the dropdown list.
+
+  **Figure 38** - Add a configuration policy
+
+  ![Add a configuration policy](images/intune_policy_disablecamera.png)
+
+7. Click **Save Policy**. A confirmation window will pop up.
+8. On the **Deploy Policy** confirmation window, select **Yes** to deploy the policy now.
+9. On the **Management Deployment** window, select the user group(s) or device group(s) that you want to apply the policy to (for example, **All Users**), and then click **Add**. 
+10. Click **OK** to close the window. 
+
+  **Figure 39** - The new policy should appear in the **Policies** list.
+
+  ![New policy appears on the list](images/intune_policies_newpolicy_deployed.png)
 
 **To turn off Windows Hello and PINs during device setup**
-1. In the Intune admin console, select **Admin**.
-2. Navigate to **Mobile Device Management > Windows > Windows Hello for Business**.
+1. In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Admin**.
+2. Go to **Mobile Device Management > Windows > Windows Hello for Business**.
 3. In the **Windows Hello for Business** page, select **Disable Windows Hello for Business on enrolled devices**.
+
+  **Figure 40** - Policy to disable Windows Hello for Business
+
+  ![Disable Windows Hello for Business](images/intune_policy_disable_windowshello.png)
+
 4. Click **Save**.
 
   > [!NOTE]
   > This policy is a tenant-wide Intune setting. It disables Windows Hello and required PINs during setup for all enrolled devices in a tenant.
 
+To test whether these policies get successfully deployed to your tenant, go through [5. Add more devices and users](#5-add-more-devices-and-users) and log on as another user on a second device. For users and devices that were already managed by Intune before the policies were added, the policies will take effect  will also 
+
 ## 5. Add more devices and users
 After your cloud infrastructure is set up and you have a device management strategy in place, you may need to add more devices or users and you want the same policies to apply to these new devices and users. In this section, we'll show you how to do this.
 
 ### 5.1 Connect other devices to your cloud infrastructure
-Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [3. Set up devices](#3-set-up-devices). For other devices, such as those personally-owned by teachers who need to connect to the school network to access work or school resources (BYOD), you can follow the steps in this section to get these devices connected.
+Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [3. Set up devices](#3-set-up-devices). 
+
+For other devices, such as those personally-owned by employees who need to connect to the corporate network to access corporate resources (BYOD), you can follow the steps in this section to get these devices connected.
 
   > [!NOTE]
   > These steps enable users to get access to the organization's resources, but it also gives the organization some control over the device.
