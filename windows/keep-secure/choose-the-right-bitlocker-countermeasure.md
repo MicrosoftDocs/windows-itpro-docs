@@ -64,7 +64,7 @@ Tables 1 and 2 summarize the recommended mitigations for different types of atta
 </tr>
 </table>
 
-**Table 1.**&nbsp;&nbsp;How to choose the best countermeasures for Windows 8.1
+**Table 1.**&nbsp;&nbsp;How to choose the best countermeasures for Windows 8.1<br><br>
 
 <table>
 <colgroup>
