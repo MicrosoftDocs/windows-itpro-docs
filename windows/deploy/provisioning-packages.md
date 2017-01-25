@@ -3,9 +3,8 @@ title: Provisioning packages (Windows 10)
 description: With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 ms.assetid: 287706E5-063F-4AB5-902C-A0DF6D0730BC
 ms.prod: w10
-ms.mktglfcycl: explore
+ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.pagetype: mobile
 author: jdeckerMS
 localizationpriority: high
 ---
@@ -18,15 +17,17 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using Windows Provisioning, an IT administrator can easily specify desired configuration and settings required to enroll the devices into management (through a wizard-driven user interface) and then apply that configuration to target devices in a matter of minutes. It is best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers. 
+Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using Windows provisioning, an IT administrator can easily specify desired configuration and settings required to enroll the devices into management and then apply that configuration to target devices in a matter of minutes. It is best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers. 
 
-With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
+A provisioning package (.ppkg) is a container for a collection of configuration settings. With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 
 Provisioning packages are simple enough that with a short set of written instructions, a student or non-technical employee can use them to configure their device. This can result in a significant reduction in the time required to configure multiple devices in your organization.
 
+The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Imaging and Configuration Designer (ICD), a tool for configuring provisioning packages. 
+
 ## New in Windows 10, Version 1607
 
-The Windows Assessment and Deployment Kit (ADK) for Windows 10 includes the Imaging and Configuration Designer (ICD), a tool for configuring images and runtime settings which are then built into provisioning packages. Windows ICD for Windows 10, Version 1607, simplifies common provisioning scenarios. 
+Windows ICD for Windows 10, Version 1607, simplifies common provisioning scenarios. 
 
 ![Configuration Designer options](images/icd.png)
 
@@ -74,7 +75,7 @@ Provisioning packages can be:
 ## What you can configure
 
 
-The following table provides some examples of what can be configured using provisioning packages.
+The following table provides some examples of what you can configure using provisioning packages.
 
 | Customization options    | Examples                                                                                      |
 |--------------------------|-----------------------------------------------------------------------------------------------|
@@ -92,42 +93,26 @@ The following table provides some examples of what can be configured using provi
 
 For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( https://go.microsoft.com/fwlink/p/?LinkId=619012).
 
-## Creating a provisioning package
-
-
-With Windows 10, you can use the Windows Imaging and Configuration Designer (ICD) tool to create provisioning packages. To install Windows ICD and create provisioning packages, you must [install the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
-
-When you run ADKsetup.exe for Windows 10, version 1607, select the following feature from the **Select the features you want to install** dialog box:
-
--   **Configuration Designer**
-
-![Choose Configuration Designer](images/adk-install.png)
-
-> [!NOTE]
-> In previous versions of the Windows 10 ADK, you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features.
-
-After you install Windows ICD, you can use it to create a provisioning package. For detailed instructions on how to create a provisioning package, see [Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkID=629651).
-
-## Applying a provisioning package to a device
-
-
-Provisioning packages can be applied both during image deployment and during runtime. For information on how to apply a provisioning package to a Windows 10-based device, see [Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkID=629651).
-
 ## Learn more
 
+-   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
-[Windows 10: Deployment](https://go.microsoft.com/fwlink/p/?LinkId=533708)
+-   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
 
 ## Related topics
 
-- [Provision PCs with common settings for initial deployment](provision-pcs-for-initial-deployment.md)
-- [Provision PCs with apps and certificates for initial deployments](provision-pcs-with-apps-and-certificates.md)
-- [Configure devices without MDM](../manage/configure-devices-without-mdm.md)
-- [Set up a shared or guest PC with Windows 10](../manage/set-up-shared-or-guest-pc.md)
-- [Configure devices without MDM](../manage/configure-devices-without-mdm.md)
-- [Set up a device for anyone to use (kiosk mode)](../manage/set-up-a-device-for-anyone-to-use.md)
-- [Customize Windows 10 Start and taskbar with ICD and provisioning packages](../manage/customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-- [Set up student PCs to join domain](https://technet.microsoft.com/edu/windows/set-up-students-pcs-to-join-domain)
+- [How provisioning works in Windows 10](provisioning-how-it-works.md)
+- [Install Windows Imaging and Configuration Designer](provisioning-install-icd.md)
+- [Create a provisioning package](provisioning-create-package.md)
+- [Apply a provisioning package](provisioning-apply-package.md)
+- [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
+- [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
+- [Provision PCs with apps and certificates for initial deployments (advanced provisioning)](provision-pcs-with-apps-and-certificates.md)
+- [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
+- [NFC-based device provisioning](provisioning-nfc.md)
+- [Windows ICD command-line interface (reference)](provisioning-command-line.md)
+- [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
+
 
 
 

@@ -25,9 +25,9 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
 
 ## Before you begin
 
-- Install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/) in Splunk
-- Contact the Windows Defender ATP team to get your refresh token
-- Get the following information from your Azure Active Directory (AAD) application by selecting the **View Endpoint** on the application configuration page:
+- Install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/) in Splunk.
+- Obtain your refresh token. For more information, see [Obtain a refresh token](configure-aad-windows-defender-advanced-threat-protection.md#obtain-a-refresh-token).
+- Get the following information from your Azure Active Directory (AAD) application by selecting **View Endpoint** on the application configuration page:
     - OAuth 2 Token refresh URL
     - OAuth 2 Client ID
     - OAuth 2 Client secret
@@ -56,7 +56,8 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
   </tr>
   <tr>
   <td>Endpoint URL</td>
-  <td> https://<i></i>DataAccess-PRD.trafficmanager.net:444/api/alerts</td>
+  <td>Depending on the location of your datacenter, select either the EU or the US URL: </br></br> **For EU**:  https://<i></i>wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts </br>**For US:** https://<i></i>wdatp-alertexporter-us.securitycenter.windows.com/api/alerts
+
   </tr>
   <tr>
   <td>HTTP Method</td>

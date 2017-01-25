@@ -25,8 +25,8 @@ This table provides info about the most common problems you might encounter whil
         <th>Workaround</th>
     </tr>
     <tr>
-        <td>Enterprise data on USB drives is tied to the device it was protected on.</td>
-        <td>Data in the new location remains encrypted, but becomes inaccessible on other devices and for other users. For example, the file won't open or the file opens, but doesn't contain readable text.</td>
+        <td>Your enterprise data on USB drives might be tied to the device it was protected on, based on your Azure RMS configuration.</td>
+        <td><strong>If you’re using Azure RMS:</strong> Authenticated users can open enterprise data on USB drives, on computers running the latest build from the Windows Insider Program.<p><strong>If you’re not using Azure RMS:</strong> Data in the new location remains encrypted, but becomes inaccessible on other devices and for other users. For example, the file won't open or the file opens, but doesn't contain readable text.</td>
         <td>Share files with fellow employees through enterprise file servers or enterprise cloud locations. If data must be shared via USB, employees can decrypt protected files, but it will be audited.<p>We strongly recommend educating employees about how to limit or eliminate the need for this decryption.</td>
     </tr>
     <tr>
@@ -67,7 +67,7 @@ This table provides info about the most common problems you might encounter whil
     <tr>
         <td>Redirected folders with Client Side Caching are not compatible with WIP.</td>
         <td>Apps might encounter access errors while attempting to read a cached, offline file.</td>
-        <td>Migrate to use another file synchronization method, such as Work Folders or OneDrive for Business.</td>
+        <td>Migrate to use another file synchronization method, such as Work Folders or OneDrive for Business.<p><strong>Note</strong><br>For more info about Work Folders and Offline Files, see the blog, [Work Folders and Offline Files support for Windows Information Protection](https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/). If you're having trouble opening files offline while using Offline Files and WIP, see the support article, [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/en-us/kb/3187045).</td>
     </tr>
     <tr>
         <td>You can't upload an enterprise file to a personal location using Microsoft Edge or Internet Explorer.</td>
@@ -79,4 +79,7 @@ This table provides info about the most common problems you might encounter whil
         <td>Webpages that use ActiveX controls can potentially communicate with other outside processes that aren’t protected by using WIP.</td>
         <td>We recommend that you switch to using Microsoft Edge, the more secure and safer browser that prevents the use of ActiveX controls. We also recommend that you limit the usage of Internet Explorer 11 to only those line-of-business apps that require legacy technology.<p>For more info, see [Out-of-date ActiveX control blocking](https://technet.microsoft.com/en-us/itpro/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking).</td>
     </tr>
-</table>                 
+</table>
+
+>[!NOTE]
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).       

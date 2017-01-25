@@ -58,11 +58,14 @@ When you build a provisioning package, you may include sensitive information in 
 
 3.  Name your project, and click **Next**.
 
-4.  Choose **Common to all Windows desktop editions** and click **Next**.
+4.  Choose **All Windows desktop editions** and click **Next**.
 
 5.  On **New project**, click **Finish**. The workspace for your package opens.
 
 6.  Expand **Runtime settings** &gt; **Start**, and click **StartLayout**.
+
+    >[!TIP]
+    >If **Start** is not listed, check the type of settings you selected in step 4. You must create the project using settings for **All Windows desktop editions**.
 
 7.  Specify the path and file name of the Start layout .xml that you created with the [Export-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=620879) cmdlet.
 

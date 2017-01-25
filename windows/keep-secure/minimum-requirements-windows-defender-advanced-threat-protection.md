@@ -61,7 +61,7 @@ Before you configure endpoints, the telemetry and diagnostics service must be en
 
 ### Telemetry and diagnostics settings
 You must ensure that the telemetry and diagnostics service is enabled on all the endpoints in your organization.
-By default, this service is enabled, but it's good practice to check to ensure that you'll get telemetry from them.
+By default, this service is enabled, but it's good practice to check to ensure that you'll get sensor data from them.
 
 **Use the command line to check the Windows 10 telemetry and diagnostics service startup type**:
 
@@ -113,4 +113,4 @@ When Windows Defender is not the active antimalware in your organization and you
 ## Windows Defender Early Launch Antimalware (ELAM) driver is enabled
 If you're running Windows Defender as the primary antimalware product on your endpoints, the Windows Defender ATP agent will successfully onboard.
 
-If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender ELAM driver is enabled. For more information on how to validate and enable the Windows Defender ELAM driver see, [Ensure the Windows Defender ELAM driver is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-windows-defender-elam-driver-is-enabled).
+If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender ELAM driver is enabled. For more information, see [Ensure that Windows Defender is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-is-not-disabled-by-a-policy).

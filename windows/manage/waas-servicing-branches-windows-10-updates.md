@@ -127,7 +127,7 @@ During the life of a device, it may be necessary or desirable to switch between 
 </tr>
 <tr class="even">
 <td align="left">Current Branch for Business</td>
-<td align="left">Not directly possible, because Windows Insider Program machines are automatically upgraded to the Current Branch release at the end of the development cycle.</td>
+<td align="left">Not directly possible, because Windows Insider Program devices are automatically upgraded to the Current Branch release at the end of the development cycle.</td>
 </tr>
 <tr class="odd">
 <td align="left">Long-Term Servicing Branch</td>
@@ -153,7 +153,7 @@ During the life of a device, it may be necessary or desirable to switch between 
 </tr>
 <tr class="even">
 <td align="left">Current Branch</td>
-<td align="left">Disable the <strong>Defer upgrade</strong> setting, or move the PC to a target group or flight that will receive the latest Current Branch release.</td>
+<td align="left">Disable the <strong>Defer upgrade</strong> setting, or move the device to a target group or flight that will receive the latest Current Branch release.</td>
 </tr>
 <tr class="odd">
 <td align="left">Long-Term Servicing Branch</td>

@@ -42,5 +42,4 @@ These permissions settings are applied to this folder for app compatibility. How
 ## Related topics
 
 - [How AppLocker works](how-applocker-works-techref.md)
- 
- 
+- [Create AppLocker default rules](create-applocker-default-rules.md)

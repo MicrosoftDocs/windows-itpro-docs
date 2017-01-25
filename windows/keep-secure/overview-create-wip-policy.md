@@ -24,3 +24,7 @@ Microsoft Intune and System Center Configuration Manager helps you create and de
 |[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |Intune helps you create and deploy your WIP policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network. |
 |[Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) |System Center Configuration Manager helps you create and deploy your WIP policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network. |
 |[Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md) |Steps to create, verify, and perform a quick recovery using a Encrypting File System (EFS) Data Recovery Agent (DRA) certificate. |
+|[Determine the Enterprise Context of an app running in Windows Information Protection (WIP)](wip-app-enterprise-context.md) |Use the Task Manager to determine whether an app is considered work, personal or exempt by Windows Information Protection (WIP). |
+
+>[!NOTE]
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

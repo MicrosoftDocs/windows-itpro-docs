@@ -89,6 +89,7 @@ The following table describes how a publisher condition is applied.
 
 
 | Option | The publisher condition allows or denies… |
+|---|---|
 | **All signed files** | All files that are signed by any publisher.| 
 | **Publisher only**| All files that are signed by the named publisher.| 
 | **Publisher and product name**| All files for the specified product that are signed by the named publisher.| 
@@ -123,7 +124,7 @@ When you choose the file hash rule condition, the system computes a cryptographi
 
 ## AppLocker default rules
 
-AppLocker allows you to generate default rules for each rule collection.
+AppLocker includes default rules, which are intended to help ensure that the files that are required for Windows to operate properly are allowed in an AppLocker rule collection. For background, see [Understanding AppLocker default rules](understanding-applocker-default-rules.md), and for steps, see [Create AppLocker default rules](create-applocker-default-rules.md).
 
 Executable default rule types include:
 

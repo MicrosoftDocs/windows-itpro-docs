@@ -13,7 +13,7 @@ localizationpriority: medium
 # Connect other devices and display with Surface Hub
 
 
-You can connect other devices to your Microsoft Surface Hub to display content. This topic describes the Guest Mode, Replacement PC Mode, and Video Out functionality available through wired connections.
+You can connect other devices to your Microsoft Surface Hub to display content. This topic describes the Guest Mode, Replacement PC Mode, and Video Out functionality available through wired connections, and also lists accessories that you can connect to Surface Hub using [Bluetooth](#bluetooth-accessories).
 
 ## Which method should I choose?
 
@@ -251,7 +251,7 @@ In Replacement PC Mode, Surface Hub supports any graphics adapter that can produ
 
 **55" Surface Hubs** - For best experience, use a graphics card capable of 1080p resolution at 120Hz.
 
-**84" Surface Hubs** - For best experience, use a graphics card capable of outputting four DisplayPort 1.2 streams to produce 2160p at 120Hz (3840 x 2160 at 120Hz vertical refresh). We've verified that this works with the NVIDIA Quadro K2200, NVIDIA Quadro K4200, and NVIDIA Quadro M6000. These are not the only graphics cards - others are available from other vendors. 
+**84" Surface Hubs** - For best experience, use a graphics card capable of outputting four DisplayPort 1.2 streams to produce 2160p at 120Hz (3840 x 2160 at 120Hz vertical refresh). We've verified that this works with the NVIDIA Quadro K2200, NVIDIA Quadro K4200, NVIDIA Quadro M6000, AMD FirePro W5100, AMD FirePro W7100, and AMD FirePro W9100. These are not the only graphics cards - others are available from other vendors. 
 
 Check directly with graphics card vendors for the latest drivers.
 
@@ -273,7 +273,7 @@ Check directly with graphics card vendors for the latest drivers.
 </tr>
 <tr class="even">
 <td><p>AMD</p></td>
-<td><p>[http://support.amd.com/download](http://support.amd.com/download)</p></td>
+<td><p>[http://support.amd.com/en-us/download](http://support.amd.com/en-us/download)</p></td>
 </tr>
 <tr class="odd">
 <td><p>Intel</p></td>
@@ -470,3 +470,19 @@ Video Out port on the 84" Surface Hub
 </tbody>
 </table>
 
+## Cables
+
+Both the 55” and 84” Surface Hub devices have been tested to work with Certified DisplayPort and HDMI cables.  While vendors do sell longer cables that may work with the Surface Hub, only those cables that have been certified by testing labs are certain to work with the Hub. For example, DisplayPort cables are certified only up to 3 meters, however many vendors sell cables that are 3 times that length. If a long cable is necessary, we strongly suggest using HDMI.  HDMI has many cost-effective solutions for long-haul cables, including the use of repeaters. Nearly every DisplayPort source will automatically switch to HDMI signaling if a HDMI sink is detected.
+
+
+## Bluetooth accessories
+
+You can connect the following accessories to Surface Hub using Bluetooth:
+
+- Mice
+- Keyboards
+- Headsets
+- Speakers
+
+>[!NOTE]
+>After you connect a Bluetooth headset or speaker, you might need to change the [default microphone and speaker settings](local-management-surface-hub-settings.md).

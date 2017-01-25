@@ -17,9 +17,7 @@ localizationpriority: high
 
 -   Windows 10
 
-**Looking for consumer information?**
-
--   [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
+>**Looking for consumer information?** See [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
 The easiest method for creating a customized Start layout to apply to other Windows 10 devices is to set up the Start screen on a test computer and then export the layout.
 
@@ -29,7 +27,8 @@ When a full Start layout is applied, the users cannot pin, unpin, or uninstall a
 
 When [a partial Start layout](#configure-a-partial-start-layout) is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
 
-**Note**  Partial Start layout is only supported on Windows 10, version 1511 and later.
+>[!NOTE]
+>Partial Start layout is only supported on Windows 10, version 1511 and later.
 
  
 
@@ -50,7 +49,7 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 
 1.  Set up a test computer on which to customize the Start layout. Your test computer should have the operating system that is installed on the users’ computers (Windows 10 Enterprise or Windows 10 Education). Install all apps and services that the Start layout should display.
 
-   2.  Create a new user account that you will use to customize the Start layout.
+2.  Create a new user account that you will use to customize the Start layout.
 
 <a href="" id="bmk-customize-start"></a>
 **To customize Start**

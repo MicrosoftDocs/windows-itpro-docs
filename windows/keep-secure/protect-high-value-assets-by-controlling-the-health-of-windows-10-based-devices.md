@@ -364,7 +364,7 @@ The following table details the hardware requirements for both virtualization-ba
 <td align="left"><p>Support for the IOMMU in Windows 10 enhances system resiliency against DMA attacks.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Trusted Platform Module (TPM) 2.0</p></td>
+<td align="left"><p>Trusted Platform Module (TPM) </p></td>
 <td align="left"><p>Required to support health attestation and necessary for additional key protections for virtualization-based security.</p></td>
 </tr>
 </tbody>
@@ -455,7 +455,7 @@ The device health attestation solution involves different components that are TP
 
 ### <a href="" id="trusted-platform-module-"></a>Trusted Platform Module
 
-*It’s all about TPM 2.0 and endorsement certificates.* This section describes how PCRs (that contain system configuration data), endorsement key (EK) (that act as an identity card for TPM), SRK (that protect keys) and AIKs (that can report platform state) are used for health attestation reporting.
+This section describes how PCRs (that contain system configuration data), endorsement key (EK) (that act as an identity card for TPM), SRK (that protect keys) and AIKs (that can report platform state) are used for health attestation reporting.
 
 In a simplified manner, the TPM is a passive component with limited resources. It can calculate random numbers, RSA keys, decrypt short data, store hashes taken when booting the device.
 

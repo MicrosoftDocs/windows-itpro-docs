@@ -4,7 +4,7 @@ description: Create a provisioning package to apply common settings to a PC runn
 ms.assetid: 66D14E97-E116-4218-8924-E2A326C9367E
 keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: W10
-ms.mktglfcycl: manage
+ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerMS
 localizationpriority: high
@@ -92,40 +92,30 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 > [!IMPORTANT]
 > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-## Apply package
 
-1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
-
-    ![The first screen to set up a new PC](images/oobe.jpg)
-
-2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
-
-    ![Set up device?](images/setupmsg.jpg)
-
-3. The next screen asks you to select a provisioning source. Select **Removable Media** and tap **Next**.
-
-    ![Provision this device](images/prov.jpg)
-    
-4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
-
-    ![Choose a package](images/choose-package.png)
-
-5. Select **Yes, add it**.
-
-    ![Do you trust this package?](images/trust-package.png)
-    
+ **Next step**: [How to apply a provisioning package](provisioning-apply-package.md)   
 
 
 ## Learn more
--   [Build and apply a provisioning package]( https://go.microsoft.com/fwlink/p/?LinkId=629651)
 
 -   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
 -   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
 
  
+## Related topics
 
- 
+- [Provisioning packages for Windows 10](provisioning-packages.md)
+- [How provisioning works in Windows 10](provisioning-how-it-works.md)
+- [Install Windows Imaging and Configuration Designer](provisioning-install-icd.md)
+- [Create a provisioning package](provisioning-create-package.md)
+- [Apply a provisioning package](provisioning-apply-package.md)
+- [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
+- [Provision PCs with apps and certificates for initial deployments (advanced provisioning)](provision-pcs-with-apps-and-certificates.md)
+- [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
+- [NFC-based device provisioning](provisioning-nfc.md)
+- [Windows ICD command-line interface (reference)](provisioning-command-line.md)
+- [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
 
 
 
