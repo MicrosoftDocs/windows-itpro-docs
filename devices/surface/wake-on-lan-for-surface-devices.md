@@ -39,7 +39,7 @@ You can run this Microsoft Windows Installer (.msi) file on a Surface device to 
 
 >**HKLM\SYSTEM\CurrentControlSet\Control\Power AllowSystemRequiredPowerRequests** 
 
-To extract the contents of SurfaceWOL.msi, use the MSIExec administrative installation option (**/a**), as shown in the following example, to extract the contents to the **C:\WOL\** folder:
+To extract the contents of SurfaceWOL.msi, use the MSIExec administrative installation option (**/a**), as shown in the following example, to extract the contents to the C:\WOL\ folder:
 
    `msiexec /a surfacewol.msi targetdir=C:\WOL /qn`
 
