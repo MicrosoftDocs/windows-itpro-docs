@@ -12,6 +12,16 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
 
+## January 2017
+| New or changed topic | Description |
+| --- | --- |
+| [For IT administrators - get Minecraft: Education Edition](school-get-minecraft.md) | Updates. Learn how schools can use invoices to pay for Minecraft: Education Edition. |
+
+## December 2016
+| New or changed topic | Description |
+| --- | --- |
+| [Upgrade Windows 10 Pro to Pro Education from Windows Store for Business](windows-10-pro-to-pro-edu-upgrade.md) | New. Learn how to opt-in to a free upgrade to Windows 10 Pro Education. |
+
 ## November 2016
 
 | New or changed topic | Description|

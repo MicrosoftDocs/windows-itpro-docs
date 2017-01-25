@@ -65,7 +65,7 @@ However, issues may arise when organizations intend to use versions of Windows t
 
 ## Apply an asset tag during deployment
 
-Surface Book, Surface Pro 4, Surface Pro 3, and Surface 3 devices all support the application of an asset tag in UEFI. This asset tag can be used to identify the device from UEFI even if the operating system fails, and it can also be queried from within the operating system. To read more about the Surface Asset Tag function, see the [Asset Tag Tool for Surface Pro 3](https://blogs.technet.microsoft.com/askcore/2014/10/20/asset-tag-tool-for-surface-pro-3/) blog post.
+Surface Studio, Surface Book, Surface Pro 4, Surface Pro 3, and Surface 3 devices all support the application of an asset tag in UEFI. This asset tag can be used to identify the device from UEFI even if the operating system fails, and it can also be queried from within the operating system. To read more about the Surface Asset Tag function, see the [Asset Tag Tool for Surface Pro 3](https://blogs.technet.microsoft.com/askcore/2014/10/20/asset-tag-tool-for-surface-pro-3/) blog post.
 
 To apply an asset tag using the [Surface Asset Tag CLI Utility](https://www.microsoft.com/download/details.aspx?id=44076) during a Configuration Manager deployment task sequence, use the script and instructions found in the [Set Surface Asset Tag During a Configuration Manager Task Sequence](https://blogs.technet.microsoft.com/jchalfant/set-surface-pro-3-asset-tag-during-a-configuration-manager-task-sequence/) blog post.
 

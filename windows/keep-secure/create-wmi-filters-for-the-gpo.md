@@ -51,7 +51,7 @@ First, create the WMI filter and configure it to look for a specified version (o
     select * from Win32_OperatingSystem where Version like "6.%"
     ```
 
-    This query will return **true** for devices running at least Windows Vista and Windows Server 2008. To set a filter for just Windows 8 and Windows Server 2012, use "6.2%". To specify multiple versions, combine them with or, as shown in the following:
+    This query will return **true** for devices running at least Windows Vista and Windows Server 2008. To set a filter for just Windows 8 and Windows Server 2012, use "6.2%". For Windows 10 and Windows Server 2016, use "10.%". To specify multiple versions, combine them with or, as shown in the following:
 
     ``` syntax
     ... where Version like "6.1%" or Version like "6.2%"
@@ -65,16 +65,16 @@ First, create the WMI filter and configure it to look for a specified version (o
     ... where ProductType="1" or ProductType="3"
     ```
 
-    The following complete query returns **true** for all devices running Windows 8, and returns **false** for any server operating system or any other client operating system.
+    The following complete query returns **true** for all devices running Windows 10, and returns **false** for any server operating system or any other client operating system.
 
     ``` syntax
-    select * from Win32_OperatingSystem where Version like "6.2%" and ProductType="1"
+    select * from Win32_OperatingSystem where Version like "10.%" and ProductType="1"
     ```
 
-    The following query returns **true** for any device running Windows Server 2012, except domain controllers:
+    The following query returns **true** for any device running Windows Server 2016, except domain controllers:
 
     ``` syntax
-    select * from Win32_OperatingSystem where Version like "6.2%" and ProductType="3"
+    select * from Win32_OperatingSystem where Version like "10.%" and ProductType="3"
     ```
 
 9.  Click **OK** to save the query to the filter.

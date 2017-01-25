@@ -9,7 +9,7 @@ ms.pagetype: edu
 author: jdeckerMS
 ---
 
-# Set up Take a Test on a single PC 
+# Set up Take a Test on a single PC
 **Applies to:**
 
 -   Windows 10  
@@ -17,8 +17,8 @@ author: jdeckerMS
 
 The **Take a Test** app in Windows 10, Version 1607, creates the right environment for taking a test:
 
-- A Microsoft Edge browser window opens, showing just the test and nothing else.
-- The clipboard is cleared.
+- Take a Test shows just the test and nothing else.
+- Take a Test clears the clipboard.
 - Students aren’t able to go to other websites.
 - Students can’t open or access other apps.
 - Students can't share, print, or record their screens.
@@ -27,6 +27,7 @@ The **Take a Test** app in Windows 10, Version 1607, creates the right environme
 
 > [!TIP]  
 > To exit **Take a Test**, press Ctrl+Alt+Delete. 
+
 
 ## How you use Take a Test
 
@@ -38,7 +39,7 @@ The **Take a Test** app in Windows 10, Version 1607, creates the right environme
 ## Set up a dedicated test account
 
 
-    
+
 
 
 
@@ -60,10 +61,10 @@ The **Take a Test** app in Windows 10, Version 1607, creates the right environme
 
 ## Provide link to test
 
-Anything hosted on the web can be presented in a locked down manner, not just assessments. To lock down online content, just embed a URL with a specific prefix and devices will be locked down when users follow the link. We recommend using this method for lower stakes assessments. 
+Anything hosted on the web can be presented in a locked down manner, not just assessments. To lock down online content, just embed a URL with a specific prefix and devices will be locked down when users follow the link. We recommend using this method for lower stakes assessments.
 
 1. Create a link to the test URL. Use **ms-edu-secureassessment:** before the URL and **!enforceLockdown** after the URL.
-``` 
+```
 ms-edu-secureassessment:<URL>!enforceLockdown
  ```
    > [!NOTE]  
@@ -79,9 +80,3 @@ ms-edu-secureassessment:<URL>!enforceLockdown
 [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md)
 
 [Take a Test app technical reference](take-a-test-app-technical.md)
-
-
-
-
-
-

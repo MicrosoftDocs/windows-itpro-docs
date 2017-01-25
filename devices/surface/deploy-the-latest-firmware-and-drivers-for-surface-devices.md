@@ -28,21 +28,34 @@ Driver and firmware updates for Surface devices are released in one of two ways:
 
 Installation files for administrative tools, drivers for accessories, and updates for Windows are also available for some devices and are detailed here in this article.
 
->**Note:**&nbsp;&nbsp;To simplify the process of locating drivers for your device, downloads for Surface devices have been reorganized to separate pages for each model. Bookmark the Microsoft Download Center page for your device from the links provided on this page. Many of the filenames contain a placeholder denoted with *xxxxxx*, which identifies the current version number or date of the file.
+>[!NOTE]
+>To simplify the process of locating drivers for your device, downloads for Surface devices have been reorganized to separate pages for each model. Bookmark the Microsoft Download Center page for your device from the links provided on this page. Many of the filenames contain a placeholder denoted with *xxxxxx*, which identifies the current version number or date of the file.
  
 
 Recent additions to the downloads for Surface devices provide you with options to install Windows 10 on your Surface devices and update LTE devices with the latest Windows 10 drivers and firmware.
 
->**Note:**&nbsp;&nbsp;A battery charge of 40% or greater is required before you install firmware to a Surface device. See [Microsoft Support article KB2909710](https://support.microsoft.com/en-us/kb/2909710) for more information.
 
- 
+
+>[!NOTE]
+>A battery charge of 40% or greater is required before you install firmware to a Surface device. See [Microsoft Support article KB2909710](https://go.microsoft.com/fwlink/p/?LinkId=618106) for more information.
+
+
+
+## Surface Studio
+
+Download the following updates for [Surface Studio from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=54311).
+
+* SurfaceStudio_Win10_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
+
 
 ## Surface Book
 
 
 Download the following updates [for Surface Book from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49497).
 
--   SurfaceBook\_Win10\_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
+-   SurfaceBook_Win10_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
+
+-	SurfaceBook_Win10_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
 
 -   Wintab-xxxxx-64-bit.zip – Tablet driver update for all supported x64-based versions of Windows 8.1
 
@@ -51,7 +64,9 @@ Download the following updates [for Surface Book from the Microsoft Download Cen
 
 Download the following updates for [Surface Pro 4 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49498).
 
--   SurfacePro4\_Win10\_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
+-   SurfacePro4_Win10_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
+
+-	SurfacePro4_Win10_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
 
 -   Wintab-xxxxx-64-bit.zip – Tablet driver update for all supported x64-based versions of Windows 8.1
 
@@ -60,25 +75,21 @@ Download the following updates for [Surface Pro 4 from the Microsoft Download Ce
 
 Download the following updates [for Surface Pro 3 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=38826).
 
--   SurfacePro3\_Win10\_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
+-   SurfacePro3_Win10_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
--   SurfacePro3\_Win10\_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
+-   SurfacePro3_Win10_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
 
--   SurfacePro3\_xxxxxx.msi – Cumulative firmware and driver update package for Windows 8.1 Pro
+-   SurfacePro3_Win8x_xxxxxx.msi – Cumulative firmware and driver update package for Windows 8.1 Pro
 
--   SurfacePro3\_xxxxxx.zip – Cumulative firmware and driver update package for Windows 8.1 Pro
+-   SurfacePro3_Win8x_xxxxxx.zip – Cumulative firmware and driver update package for Windows 8.1 Pro
 
 -   Surface Firmware Tool.msi – Firmware tools for UEFI management
 
--   Surface Ethernet Adapter.zip – x64 Ethernet adapter drivers
-
--   Surface Gigabit Ethernet Adapter.zip – x64 Ethernet adapter drivers
-
 -   Surface Pro 3 AssetTag.zip – UEFI Asset Tag management tool
 
--   Surface Pro 3 Driver Set.ppkg – Deployment Asset Provisioning Package for Windows 10
-
 -   Surface Pro 3 KB2978002.zip – Update for Quick Note-Taking Experience feature in Windows 8.1
+
+-   Windows8.1-KB2969817-x64.msu – Fixes an issue that causes Surface devices to reboot twice after firmware updates are installed on all supported x64-based versions of Windows 8.1
 
 -   Wintab-xxxxx-64-bit.zip – Tablet driver update for all supported x64-based versions of Windows 8.1
 
@@ -87,15 +98,15 @@ Download the following updates [for Surface Pro 3 from the Microsoft Download Ce
 
 Download the following updates [for Surface 3 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49040).
 
--   Surface3\_Win10\_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
+-  Surface3_WiFi_Win10_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10  
 
--   Surface3\_Win8x\_xxxxxx.msi – Cumulative firmware and driver update package for Windows 8.1 Pro
+-   Surface3_WiFi_Win10_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
 
--   Surface3\_Win8x\_xxxxxx.zip – Cumulative firmware and driver update package for Windows 8.1 Pro
+-   Surface3_WiFi_Win8x_xxxxxx.msi – Cumulative firmware and driver update package for Windows 8.1 Pro
 
--   Surface Ethernet Adapter.zip – x64 Ethernet adapter drivers
+-   Surface3_WiFi_Win8x_xxxxxx.zip – Cumulative firmware and driver update package for Windows 8.1 Pro
 
--   Surface Gigabit Ethernet Adapter.zip – x64 Ethernet adapter drivers
+-   Surface 3 AssetTag.zip – UEFI Asset Tag management tool
 
 -   Wintab-xxxxx-64-bit.zip – Tablet driver update for all supported x64-based versions of Windows 8.1
 
@@ -104,49 +115,43 @@ Download the following updates [for Surface 3 from the Microsoft Download Center
 
 Download the following updates [for AT&T 4G LTE versions of Surface 3 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49039).
 
--   Surface3\_US1\_Win10\_xxxxxx.msi – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 10
+-   Surface3_4GLTE-ATT_Win10_xxxxxx.msi – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 10
 
--   Surface3\_US1\_Win10\_xxxxxx.zip – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 10
+-   Surface3_4GLTE-ATT_Win10_xxxxxx.zip – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 10
 
--   Surface3\_US1\_Win8x\_xxxxxx.msi – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 8.1 Pro
+-   Surface3_4GLTE-ATT_Win8x_xxxxxx.msi – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 8.1 Pro
 
--   Surface3\_US1\_Win8x\_xxxxxx.zip – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 8.1 Pro
+-   Surface3_4GLTE-ATT_Win8x_xxxxxx.zip – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 8.1 Pro
 
--   Surface Ethernet Adapter.zip – x64 Ethernet adapter drivers
-
--   Surface Gigabit Ethernet Adapter.zip – x64 Ethernet adapter drivers
+-   Surface 3 AssetTag.zip – UEFI Asset Tag management tool
 
 -   Wintab-xxxxx-64-bit.zip – Tablet driver update for all supported x64-based versions of Windows 8.1
 
 Download the following updates [for non-AT&T 4G LTE versions of Surface 3 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49037).
 
--   Surface3\_NAG\_Win10\_xxxxxx.msi – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 10
+-   Surface3_4GLTE-NorthAmericaUnlocked_Win10_xxxxxx.msi – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 10
 
--   Surface3\_NAG\_Win10\_xxxxxx.zip – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 10
+-   Surface3_4GLTE-NorthAmericaUnlocked_Win10_xxxxxx.zip – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 10
 
--   Surface3\_NAG\_Win8x\_xxxxxx.msi – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 8.1 Pro
+-   Surface3_4GLTE-NorthAmericaUnlocked_Win8x_xxxxxx.msi – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 8.1 Pro
 
--   Surface3\_NAG\_Win8x\_xxxxxx.zip – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 8.1 Pro
+-   Surface3_4GLTE-NorthAmericaUnlocked_Win8x_xxxxxx.zip – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 8.1 Pro
 
--   Surface Ethernet Adapter.zip – x64 Ethernet adapter drivers
-
--   Surface Gigabit Ethernet Adapter.zip – x64 Ethernet adapter drivers
+-   Surface 3 AssetTag.zip – UEFI Asset Tag management tool
 
 -   Wintab-xxxxx-64-bit.zip – Tablet driver update for all supported x64-based versions of Windows 8.1
 
 Download the following updates [for 4G LTE Surface 3 versions for regions outside North America from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49041).
 
--   Surface3\_ROW\_Win10\_xxxxxx.msi – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 10
+-   Surface3_4GLTE-RestOfTheWorld_Win10_xxxxxx.msi – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 10
 
--   Surface3\_ROW\_Win10\_xxxxxx.zip – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 10
+-   Surface3_4GLTE-RestOfTheWorld_Win10_xxxxxx.zip – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 10
 
--   Surface3\_ROW\_Win8x\_xxxxxx.msi – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 8.1 Pro
+-   Surface3_4GLTE-RestOfTheWorld_Win8x_xxxxxx.msi – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 8.1 Pro
 
--   Surface3\_ROW\_Win8x\_xxxxxx.zip – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 8.1 Pro
+-   Surface3_4GLTE-RestOfTheWorld_Win8x_xxxxxx.zip – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 8.1 Pro
 
--   Surface Ethernet Adapter.zip – x64 Ethernet adapter drivers
-
--   Surface Gigabit Ethernet Adapter.zip – x64 Ethernet adapter drivers
+-   Surface 3 AssetTag.zip – UEFI Asset Tag management tool
 
 -   Wintab-xxxxx-64-bit.zip – Tablet driver update for all supported x64-based versions of Windows 8.1
 
