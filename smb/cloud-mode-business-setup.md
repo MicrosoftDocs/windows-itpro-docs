@@ -506,14 +506,43 @@ For other devices, such as those personally-owned by employees who need to conne
   > [!NOTE]
   > These steps enable users to get access to the organization's resources, but it also gives the organization some control over the device.
 
-**To connect a device to your work or school**
+**To connect a personal device to your work or school**
 1. On your Windows device, go to **Settings > Accounts**.
-2. Select **Work access** and then click **Add a work or school account** to add an Azure AD account to the device.
-3. Enter the work credentials for the account to authenticate the user.
-4. If it appears, accept the MDM terms prescribed by the organization to allow the device to be managed.
-  Once this is done, the device should be registered in Azure AD and enrolled in MDM and the account should have access to the organization's resources.
+2. Select **Access work or school** and then click **Connect** in the **Connect to work or school** page.
+3. In the **Set up a work or school account** window, click **Join this device to Azure Active Directory** to add an Azure AD account to the device.
+
+  **Figure 41** - Add an Azure AD account to the device
+
+  ![Add an Azure AD account to the device](images/win10_add_new_user_join_aad.png)
+
+4. In the **Let's get you signed in** window, enter the work credentials for the account and then click **Sign in** to authenticate the user.
+
+  **Figure 42** - Enter the account details
+
+  ![Enter the account details](images/win10_add_new_user_account_aadwork.png)
+
+5. You will be asked to update the password so enter a new password.
+6. Verify the details to make sure you're connecting to the right organization and then click **Join**.
+
+  **Figure 43** - Make sure this is your organization
+
+  ![Make sure this is your organization](images/win10_confirm_organization_details.png)
+
+7. You will see a confirmation window that says the device is now connected to your organization. Click **Done**.
+
+  **Figure 44** - Confirmation that the device is now connected
+
+  ![Confirmation that the device is now connected](images/win10_confirm_device_connected_to_org.png)
+
+8. The **Connect to work or school** window will refresh and will now include an entry that shows you're connected to your organization's Azure AD. This means the device is now registered in Azure AD and enrolled in MDM and the account should have access to the organization's resources.
+
+  **Figure 45** - Device is now enrolled in Azure AD
+
+  ![Device is enrolled in Azure AD](images/win10_device_enrolled_in_aad.png)
+
+9. You can confirm that the new device and user are showing up as Intune-managed by going to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a> and following the steps in [3.3 Verify the device is Azure AD joined](#33-verify-the-device-is-azure-ad-joined). It may take several minutes before the new device shows up so check again later.
 
 ### 5.2 Add a new user
 You can add new users to your tenant simply by adding them to the Office 365 groups. Adding new users to Office 365 groups automatically adds them to the corresponding groups in Microsoft Intune.
 
-See [Add users to Office 365](https://support.office.com/en-us/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc?ui=en-US&rs=en-US&ad=US&fromAR=1) to learn more. Once you're done adding new users, go to the Intune admin portal and verify that the same users were added to the Intune groups as well.
+See [Add users to Office 365](https://support.office.com/en-us/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc?ui=en-US&rs=en-US&ad=US&fromAR=1) to learn more. Once you're done adding new users, go to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a> and verify that the same users were added to the Intune groups as well.
