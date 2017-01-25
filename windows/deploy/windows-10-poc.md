@@ -153,7 +153,7 @@ The lab architecture is summarized in the following diagram:
 
 [Verify support and install Hyper-V](#verify-support-and-install-hyper-v)<BR>
 [Download VHD and ISO files](#download-vhd-and-iso-files)<BR>
-[Convert PC to VHD](#convert-pc-to-vhd)<BR>
+[Convert PC to VM](#convert-pc-to-vm)<BR>
 [Resize VHD](#resize-vhd)<BR>
 [Configure Hyper-V](#configure-hyper-v)<BR>
 [Configure VMs](#configure-vms)<BR>
