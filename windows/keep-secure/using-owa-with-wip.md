@@ -23,7 +23,6 @@ Because Outlook Web Access (OWA) can be used both personally and as part of your
 |-------|-------------|
 |Disable OWA. Employees can only use Microsoft Outlook 2016 or the Office 365 Mail app. | Disabled. |
 |Don't configure outlook.office.com in any of your networking settings. |All mailboxes are automatically marked as personal. This means employees attempting to copy work content into OWA receive prompts and that files downloaded from OWA aren't automatically protected as corporate data. |
-|Do all of the following:<ul><li>Create a domain (such as mail.contoso.com, redirecting to outlook.office.com) that can be used by your employees to access work email.</li><li>Add the new domain to the Enterprise Cloud Resources network element in your WIP policy.</li><li>Add the following URLs to the Neutral Resources network element in your WIP policy:<ul><li>outlook.office365.com</li><li>outlook.office.com</li><li>outlook-sdf.office.com</li><li>attachment.outlook.office.net</li></ul></li></ul> |Inbox content accessed through the new domain is automatically marked as corporate data, while content accessed through personal email is automatically marked as personal. |
 |Add outlook.office.com to the Enterprise Cloud Resources network element in your WIP policy. |All mailboxes are automatically marked as corporate. This means any personal inboxes hosted on Office 365 are also automatically marked as corporate data. |
 
 >[!NOTE]
