@@ -72,10 +72,9 @@ The following tables provide more information about the hardware, firmware, and 
 > If you are an OEM, see the requirements information at [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514(v=vs.85).aspx).<br>
 > Starting in Widows 10, 1607, TPM 2.0 is required.
 
+### Baseline protection recommendations
 
-## Credential Guard requirements for baseline protections
-
-|Baseline Protections - requirement           | Description                                        |
+|Baseline Protections                   | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
 | Hardware: **64-bit CPU**              | A 64-bit computer is required for the Windows hypervisor to provide VBS. |
 | Hardware: **CPU virtualization extensions**,<br>plus **extended page tables** | **Requirements**: These hardware features are required for VBS:<br>One of the following virtualization extensions:<br>- VT-x (Intel) or<br>- AMD-V<br>And:<br>- Extended page tables, also called Second Level Address Translation (SLAT).<br><br>**Security benefits**: VBS provides isolation of secure kernel from normal operating system. Vulnerabilities and Day 0s in normal operating system cannot be exploited because of this isolation. |
@@ -87,13 +86,9 @@ The following tables provide more information about the hardware, firmware, and 
 > [!IMPORTANT]
 > The preceding table lists requirements for baseline protections. The following tables list requirements for improved security. You can use Credential Guard with hardware, firmware, and software that support baseline protections, even if they do not support protections for improved security. However, we strongly recommend meeting the requirements for improved security, to significantly strengthen the level of security that Credential Guard can provide.
 
-## Credential Guard requirements for improved security
+### 2015 Additional Security Recommendations (starting with Windows 10, version 1507, and Windows Server 2016, Technical Preview 4)
 
-The following tables describes additional hardware and firmware requirements, and the improved security that is available when those requirements are met.
-
-### 2015 Additional Qualification Requirements for Credential Guard (starting with Windows 10, version 1507, and Windows Server 2016, Technical Preview 4)
-
-| Protections for Improved Security - requirement         | Description                                        |
+| Protections for Improved Security          | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
 | Hardware: **IOMMU** (input/output memory management unit)  |  **Requirement**: VT-D or AMD Vi IOMMU<br><br>**Security benefits**: An IOMMU can enhance system resiliency against memory attacks. For more information, see [ACPI description tables](https://msdn.microsoft.com/windows/hardware/drivers/bringup/acpi-system-description-tables). |
 | Firmware: **Securing Boot Configuration and Management** | **Requirements**:<br>- BIOS password or stronger authentication must be supported.<br>- In the BIOS configuration, BIOS authentication must be set.<br>- There must be support for protected BIOS option to configure list of permitted boot devices (for example, “Boot only from internal hard drive”) and boot device order, overriding BOOTORDER modification made by operating system.<br>- In the BIOS configuration, BIOS options related to security and boot options (list of permitted boot devices, boot order) must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings.<br><br>**Security benefits**:<br>- BIOS password or stronger authentication helps ensure that only authenticated Platform BIOS administrators can change BIOS settings. This helps protect against a physically present user with BIOS access.<br>- Boot order when locked provides protection against the computer being booted into WinRE or another operating system on bootable media. |
@@ -101,12 +96,12 @@ The following tables describes additional hardware and firmware requirements, an
 
 <br>
 
-### 2016 Additional Qualification Requirements for Credential Guard (starting with Windows 10, version 1607, and Windows Server 2016)
+### 2016 Additional Security Recommendations (starting with Windows 10, version 1607, and Windows Server 2016)
 
 > [!IMPORTANT]
 > The following tables list requirements for improved security, beyond the level of protection described in the preceding tables. You can use Credential Guard with hardware, firmware, and software that do not support the following protections for improved security. As your systems meet more requirements, more protections become available to them.
 
-| Protections for Improved Security - requirement         | Description                                        |
+| Protections for Improved Security         | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
 | Firmware: **Hardware Rooted Trust Platform Secure Boot** | **Requirements**:<br>Boot Integrity (Platform Secure Boot) must be supported. See the Windows Hardware Compatibility Program requirements under [System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby](https://msdn.microsoft.com/library/windows/hardware/dn932807(v=vs.85).aspx#system_fundamentals_firmware_cs_uefisecureboot_connectedstandby)<br>- The Hardware Security Test Interface (HSTI) must be implemented. See [Hardware Security Testability Specification](https://msdn.microsoft.com/en-us/library/windows/hardware/mt712332(v=vs.85).aspx).<br><br>**Security benefits**:<br>- Boot Integrity (Platform Secure Boot) from Power-On provides protections against physically present attackers, and defense-in-depth against malware.<br>- HSTI provides additional security assurance for correctly secured silicon and platform. |
 | Firmware: **Firmware Update through Windows Update** | **Requirements**: Firmware must support field updates through Windows Update and UEFI encapsulation update.<br><br>**Security benefits**: Helps ensure that firmware updates are fast, secure, and reliable. |
@@ -114,9 +109,9 @@ The following tables describes additional hardware and firmware requirements, an
 
 <br>
 
-### 2017 Additional Qualification Requirements for Credential Guard (starting with the next major release of Windows 10) 
+### 2017 Additional Security Recommendations (starting with the next major release of Windows 10) 
 
-| Protection for Improved Security - requirement         | Description                                        |
+| Protection for Improved Security          | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
 | Firmware: **Firmware support for SMM protection** | **Requirements**: The [Windows SMM Security Mitigations Table (WSMT) specification](http://download.microsoft.com/download/1/8/A/18A21244-EB67-4538-BAA2-1A54E0E490B6/WSMT.docx) contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features.<br><br>**Security benefits**:<br>- Protects against potential vulnerabilities in UEFI runtime in functions such as Update Capsule, Set Variables, and so on, so they can't compromise VBS.<br>- Reduces attack surface to VBS from system firmware.<br>- Blocks additional security attacks against SMM. |
 
