@@ -5,6 +5,7 @@ ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+localizationpriority: high
 author: greg-lindsay
 ---
 

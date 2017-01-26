@@ -3,6 +3,7 @@ title: Windows 10 and Windows 10 Mobile (Windows 10)
 description: This library provides the core content that IT pros need to evaluate, plan, deploy, and manage devices running Windows 10 or Windows 10 Mobile.
 ms.assetid: 345A4B4E-BC1B-4F5C-9E90-58E647D11C60
 ms.prod: w10
+localizationpriority: high
 author: brianlic-msft
 ---
 
