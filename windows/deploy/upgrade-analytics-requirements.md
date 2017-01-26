@@ -33,6 +33,10 @@ If you are not using OMS, go to [the Upgrade Analytics page on Microsoft.com](ht
 
 Important: You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory, use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
 
+## System Center Configuration Manager integration
+
+Upgrade Analytics can be integrated with your installation of Configuration Manager. For more information, see [Integrate Upgrade Analytics with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
+
 ## Telemetry and data sharing 
 
 After you’ve signed in to Operations Management Suite and added the Upgrade Analytics solution to your workspace, you’ll need to complete the following tasks to allow user computer data to be shared with and assessed by Upgrade Analytics.
