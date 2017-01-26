@@ -546,3 +546,20 @@ For other devices, such as those personally-owned by employees who need to conne
 You can add new users to your tenant simply by adding them to the Office 365 groups. Adding new users to Office 365 groups automatically adds them to the corresponding groups in Microsoft Intune.
 
 See [Add users to Office 365](https://support.office.com/en-us/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc?ui=en-US&rs=en-US&ad=US&fromAR=1) to learn more. Once you're done adding new users, go to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a> and verify that the same users were added to the Intune groups as well.
+
+## Get more info
+
+### For IT admins
+To learn more about the services and tools mentioned in this walkthrough, and learn what other tasks you can do, follow these links:
+- <a href="https://support.office.com/en-us/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa" target="_blank">Set up Office 365 for business</a>
+- Common admin tasks in Office 365 including email and OneDrive in <a href="https://support.office.com/en-us/article/Common-management-tasks-for-Office-365-46c667f7-5073-47b9-a75f-05a60cf77d91" target="_blank">Manage Office 365</a>
+- More info about managing devices, apps, data, troubleshooting, and more in <a href="https://docs.microsoft.com/en-us/intune/" target="_blank">Intune documentation</a>
+- Learn more about Windows 10 in <a href="http://technet.microsoft.com/windows/windows10.aspx" target="_blank">Windows 10 guide for IT pros</a>
+- Info about distributing apps to your employees, managing apps, managing settings, and more in <a href="https://technet.microsoft.com/en-us/itpro/windows/manage/windows-store-for-business" target="_blank">Windows Store for Business</a>
+
+### For information workers
+Whether it's in the classroom, getting the most out of your devices, or learning some of the cool things you can do, we've got teachers covered. Follow these links for more info:
+- <a href="https://support.office.com/" target="_blank">Office help and training</a>
+- <a href="https://support.microsoft.com/en-us/products/windows?os=windows-10" target="_blank">Windows 10 help</a>
+
+
