@@ -9,7 +9,7 @@
 #### [Prepare your environment](upgrade-analytics-prepare-your-environment.md)
 #### [Resolve application and driver issues](upgrade-analytics-resolve-issues.md)
 #### [Deploy Windows](upgrade-analytics-deploy-windows.md)
-#### [Review site discovery](upgrade-analytics-review-site-discovery.md)
+#### [Additional insights](upgrade-analytics-additional-insights.md)
 ### [Troubleshoot Upgrade Analytics](troubleshoot-upgrade-analytics.md)
 ## [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md)
 ### [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
