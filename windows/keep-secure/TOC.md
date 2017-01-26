@@ -197,7 +197,7 @@
 ###### [Monitor claim types](monitor-claim-types.md)
 ##### [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
 ###### [Audit Credential Validation](audit-credential-validation.md)
-####### [Event 4774 S: An account was mapped for logon.](event-4774.md)
+####### [Event 4774 S, F: An account was mapped for logon.](event-4774.md)
 ####### [Event 4775 F: An account could not be mapped for logon.](event-4775.md)
 ####### [Event 4776 S, F: The computer attempted to validate the credentials for an account.](event-4776.md)
 ####### [Event 4777 F: The domain controller failed to validate the credentials for an account.](event-4777.md)
