@@ -126,4 +126,4 @@ We hope you like Computer Groups in Upgrade Analytics. If you have feedback, ple
 
 ## Related topics
 
-[Upgrade Analytics release notes](upgrade-analytics-requirements#important-information-about-this-release)
+[Upgrade Analytics release notes](upgrade-analytics-release-notes.md)
