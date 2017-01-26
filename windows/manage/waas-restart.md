@@ -18,25 +18,38 @@ localizationpriority: high
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
-You can use Group Policy settings or mobile device management (MDM) to configure when devices will restart after a Windows 10 update is installed. You can schedule update installation and set policies for restart, configure active hours for when restarts will not occur, or you can do both.
+You can use Group Policy settings, mobile device management (MDM) or Registry (not recommended) to configure when devices will restart after a Windows 10 update is installed. You can schedule update installation and set policies for restart, configure active hours for when restarts will not occur, or you can do both.
 
 ## Schedule update installation
 
-When you set the **Configure Automatic Updates** policy to **Auto download and schedule the install**, you also configure the day and time for installation or you specify that installation will occur during the automatic maintenance time (configured using **Computer Configuration\Administrative Templates\Windows Components\Maintenance Scheduler**).
+In Group Policy, within **Configure Automatic Updates**, you can configure a forced restart after a specified instllation time. 
 
-When **Configure Automatic Updates** is enabled, you can enable one of the following additional policies to manage device restart:
+To set the time, you need to go to **Configure Automatic Updates**, select option **4 - Auto download and schedule the instal**, and then enter a time in the **Scheduled install time** dropdown. Alternatively, you can specify that installtion will occur during the automatic maintenance time (configured using **Computer Configuration\Administrative Templates\Windows Components\Maintenance Scheduler**).
+
+**Always automatically restart at the scheduled time** forces a restart after the specified installation time and lets you configure a timer to warn a signed-in user that a restart is going to occur.
+
+While not recommended, the same result can be achieved through Registry. Under **HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate\AU**, set **AuOptions** to **4**, set the install time with **ScheduledInstallTime**, enable **AlwaysAutoRebootAtScheduledTime** and specify the delay in minutes through **AlwaysAutoRebootAtScheduledTimeMinutes**. Similar to Group Policy, **AlwaysAutoRebootAtScheduledTimeMinutes** sets the timer to warn a signed-in user that a restart is going to occur.
+
+For a detailed description of these regsitry keys, see [Registry keys used to manage restart](#registry-keys-used-to-manage-restart).
+
+## Delay automatic reboot
+
+When **Configure Automatic Updates** is enabled in Group Policy, you can enable one of the following additional policies to delay an automatic reboot after update installtion:
 
 - **Turn off auto-restart for updates during active hours** prevents automatic restart during active hours.
-- **Always automatically restart at the scheduled time** forces a restart after the specified installation time and lets you configure a timer to warn a signed-in user that a restart is going to occur. To set the time, you need to go **Configure Automatic Updates**, select option **4 - Auto download and schedule the install**, and then enter a time in the **Scheduled install time** dropdown.
 - **No auto-restart with logged on users for scheduled automatic updates installations** prevents automatic restart when a user is signed in. If a user schedules the restart in the update notification, the device will restart at the time the user specifies even if a user is signed in at the time. This policy only applies when **Configure Automatic Updates** is set to option **4-Auto download and schedule the install**. 
+
+You can also use Registry, to prevent automatic restarts when a user is signed in. Under **HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate\AU**, set **AuOptions** to **4** and enable **NoAutoRebootWithLoggedOnUsers**. As with Group Policy, if a user schedules the restart in the update notification, it will override this setting.
+
+For a detailed description of these regsitry keys, see [Registry keys used to manage restart](#registry-keys-used-to-manage-restart).
 
 ## Configure active hours
 
-You can configure active hours for devices without setting the **Configure Automatic Updates** policy. *Active hours* identify the period of time when you expect the device to be in use. Automatic restarts after an update will occur outside of the active hours. 
+*Active hours* identify the period of time when you expect the device to be in use. Automatic restarts after an update will occur outside of the active hours. 
 
 By default, active hours are from 8 AM to 5 PM on PCs and from 5 AM to 11 PM on phones. Users can change the active hours manually. 
 
-Additionally, administrators can use multiple ways to set active hours for managed devices:
+Administrators can use multiple ways to set active hours for managed devices:
 
 - You can use Group Policy, as described in the procedure that follows.
 - You can use MDM, as described in [Configuring active hours with MDM](#configuring-active-hours-with-mdm).
@@ -54,13 +67,13 @@ MDM uses the [Update/ActiveHoursStart and Update/ActiveHoursEnd](https://msdn.mi
 
 ### Configuring active hours through Registry
 
-This method is not recommended, and should be used when neither Group Policy or MDM are available.
+This method is not recommended, and should only be used when neither Group Policy or MDM are available.
 Any settings configured through Registry may conflict with any existing configuration that uses any of the methods mentioned above.
 
 You should set a combination of the following registry values, in order to configure active hours.
 Under **HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate** use **SetActiveHours** to enable or disable active hours and **ActiveHoursStart**,**ActiveHoursEnd** to specify the range of active hours.
 
-For a detailed description of these regsitry keys, see [Summary: Registry keys used to manage restarts after updates](#summary-registry-keys-used-to-manage-restarts-after-updates).
+For a detailed description of these regsitry keys, see [Registry keys used to manage restart](#registry-keys-used-to-manage-restart).
 
 >[!NOTE]
 >To configure active hours manually on a single device, go to **Settings** > **Update & security** > **Windows Update** and select **Change active hours**.
@@ -86,9 +99,11 @@ In the Group Policy editor, you will see a number of policy settings that pertai
 | Reschedule Automatic Updates scheduled installations | ![no](images/crossmark.png) |   |
 
 >[!NOTE]
+>You can only choose one path for restart behavior.
+>
 >If you set conflicting restart policies, the actual restart behavior may not be what you expected.
 
-## Summary: Registry keys used to manage restarts after updates
+## Registry keys used to manage restart
 The following tables list registry values that correspond to the Group Policy settings for controlling restarts after updates in Windows 10.
 
 **HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate**
