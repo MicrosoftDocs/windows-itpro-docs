@@ -26,13 +26,14 @@ The credentials are put in Credential Manager as a "`*Session`" credential.
 A "`*Session`" credential implies that it is valid for the current user session. 
 The credentials are also cleaned up when the WiFi or VPN connection is disconnected. 
 
-When the user tries to access a domain resource, using Edge for example, Edge has the right Enterprise Authentication capability so WinInit.exe can release the credentials that it gets from the Credential Manager to the SSP that is requesting it. 
+When the user tries to access a domain resource, using Edge for example, Edge has the right Enterprise Authentication capability so [WinInet](https://msdn.microsoft.com/library/windows/desktop/aa385483.aspx) can release the credentials that it gets from the Credential Manager to the SSP that is requesting it. 
 For more information about the Enterprise Authentication capability, see [App capability declarations](https://msdn.microsoft.com/windows/uwp/packaging/app-capability-declarations). 
 
-WinInit.exe will look at the device application, such as a Universal Windows Platform (UWP) application, to see if it has the right capability. 
+The local security authority will look at the device application, such as a Universal Windows Platform (UWP) application, to see if it has the right capability. 
 If the app is not UWP, it does not matter. 
 But if it is a UWP app, it will look at the device capability for Enterprise Authentication. 
-If it does have that capability and if the resource that you are trying to access is in the Intranet zone in the Internet Options (ZoneMap), then the credential will be released. 
+If it does have that capability and if the resource that you are trying to access is in the Intranet zone in the Internet Options (ZoneMap), then the credential will be released.
+This behavior helps prevent credentials from being misused by untrusted third parties.  
 
 ## Intranet zone
 
@@ -68,9 +69,26 @@ The username should also include a domain that can be reached over the connectio
 
 If the credentials are certificate-based, then the elements in the following table need to be configured for the certificate templates to ensure they can also be used for Kerberos client authentication.
 
-| TEmplate element | Configuration |
+| Template element | Configuration |
 |------------------|---------------|
 | SubjectName | The user’s distinguished name (DN) where the domain components of the distinguished name reflects the internal DNS namespace when the SubjectAlternativeName does not have the fully qualified UPN required to find the domain controller. </br>This requirement is particularly relevant in multi-forest environments as it ensures a domain controller can be located. |
 | SubjectAlternativeName | The user’s fully qualified UPN where a domain name component of the user’s UPN matches the organizations internal domain’s DNS namespace.</br>This requirement is particularly relevant in multi-forest environments as it ensures a domain controller can be located when the SubjectName does not have the DN required to find the domain controller. |
-| Key Storage Provider (KSP) | If the device is joined to Azure AD, a discrete SSO certificate is used. This certificate must be issued using the PassportForWork CSP. |
-| EnhancedKeyUsage | One or more of the following EKUs is required: </br>- Client Authentication (for the VPN) </br>- EAP Filtering OID (for PassportForWork)</br>- SmartCardLogon (for Azure AD joined devices)</br>If the domain controllers require smart card EKU either:</br>- SmartCardLogon</br>- id-pkinit-KPClientAuth (1.3.6.1.5.2.3.4)</br>Otherwise:</br>- TLS/SSL Client Authentication (1.3.6.1.5.5.7.3.2) |
+| Key Storage Provider (KSP) | If the device is joined to Azure AD, a discrete SSO certificate is used. |
+| EnhancedKeyUsage | One or more of the following EKUs is required: </br>- Client Authentication (for the VPN) </br>- EAP Filtering OID (for Windows Hello for Business)</br>- SmartCardLogon (for Azure AD joined devices)</br>If the domain controllers require smart card EKU either:</br>- SmartCardLogon</br>- id-pkinit-KPClientAuth (1.3.6.1.5.2.3.4)</br>Otherwise:</br>- TLS/SSL Client Authentication (1.3.6.1.5.5.7.3.2) |
+
+## NDES server configuration
+
+The NDES server is required to be configured so that incoming SCEP requests can be mapped to the correct template to be used. 
+For more information, see [Configure certificate infrastructure for SCEP](https://docs.microsoft.com/en-us/intune/deploy-use/Configure-certificate-infrastructure-for-scep). 
+
+## Active Directory requirements
+
+You need IP connectivity to a DNS server and domain controller over the network interface so that authentication can succeed as well. 
+
+The domain controllers will need to have appropriate KDC certificates for the client to trust them as domain controllers, and since phones are not domain-joined, the root CA of the KDC’s certificate must be in the Third-Party Root CA or Smart Card Trusted Roots store.
+
+The domain controllers must be using certificates based on the updated KDC certificate template Kerberos Authentication. 
+This is because Windows 10 Mobile requires strict KDC validation to be enabled. 
+This requires that all authenticating domain controllers run Windows Server 2016, or you'll need to enable strict KDC validation on domain controllers that run previous versions of Windows Server. 
+For more information, see [Enabling Strict KDC Validation in Windows Kerberos](https://www.microsoft.com/download/details.aspx?id=6382). 
+

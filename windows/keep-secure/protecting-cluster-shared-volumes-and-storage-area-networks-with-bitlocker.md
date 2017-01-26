@@ -33,8 +33,7 @@ Windows PowerShell or the manage-bde command line interface is the preferred met
 
 >**Note:**  Mount points can be used to support remote mount points on SMB based network shares. This type of share is not supported for BitLocker encryption.
  
-For thinly provisioned storage, such as a Dynamic Virtual Hard Disk (VHD), BitLocker runs in Used Disk Space Only encryption mode. You cannot use the **manage-bde –WipeFreeSpace** command to transition the volume to full-volume encryption on these types of volumes. This occurs because Full 
-Encryption requires an end marker for the volume and dynamically expanding VHDs do not have a static end of volume marker.
+For thinly provisioned storage, such as a Dynamic Virtual Hard Disk (VHD), BitLocker runs in Used Disk Space Only encryption mode. You cannot use the **manage-bde -WipeFreeSpace** command to transition the volume to full-volume encryption on these types of volumes. This is blocked in order to avoid expanding thinly provisioned volumes to occupy the entire backing store while wiping the unoccupied (free) space.
 
 ### Active Directory-based protector
 
@@ -57,28 +56,22 @@ BitLocker encryption is available for disks before or after addition to a cluste
 
 1.  Install the BitLocker Drive Encryption feature if it is not already installed.
 2.  Ensure the disk is formatted NTFS and has a drive letter assigned to it.
-3.  Enable BitLocker on the volume using your choice of protector. A password protector is used in the Windows PowerShell script example below.
-
-    ``` syntax
-    Enable-BitLocker E: -PasswordProtector -Password $pw
-    ```
-
-4.  Identify the name of the cluster with Windows PowerShell.
+3.  Identify the name of the cluster with Windows PowerShell.
 
     ``` syntax
     Get-Cluster
 
     ```
-5.  Add an **ADAccountOrGroup**protector to the volume using the cluster name using a command such as:
+4.  Enable BitLocker on the volume of your choice with an **ADAccountOrGroup** protector, using the cluster name. For example, use a command such as:
 
     ``` syntax
-    Add-BitLockerProtector E: -ADAccountOrGroupProtector -ADAccountOrGroup CLUSTER$
+    Enable-BitLocker E: -ADAccountOrGroupProtector -ADAccountOrGroup CLUSTER$
     ```
 
-    >**Warning:**  You must add an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker enabled volume to either be shared in a Cluster Shared Volume or to failover properly in a traditional failover cluster.
+    >**Warning:**  You must configure an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker enabled volume to either be shared in a Cluster Shared Volume or to fail over properly in a traditional failover cluster.
      
-6.  Repeat steps 1-6 for each disk in the cluster.
-7.  Add the volume(s) to the cluster.
+5.  Repeat the preceding steps for each disk in the cluster.
+6.  Add the volume(s) to the cluster.
 
 ### Turning on BitLocker for a clustered disk using Windows PowerShell
 
@@ -97,28 +90,26 @@ When the cluster service owns a disk resource already, it needs to be set into m
     Get-ClusterResource "Cluster Disk 1" | Suspend-ClusterResource
     ```
 
-4.  Enable BitLocker on the volume using your choice of protector. A password protector is used in the example below.
-
-    ``` syntax
-    Enable-BitLocker E: -PasswordProtector -Password $pw
-    ```
-
-5.  Identify the name of the cluster with Windows PowerShell
+4.  Identify the name of the cluster with Windows PowerShell.
 
     ``` syntax
     Get-Cluster
     ```
 
-6.  Add an **ADAccountOrGroup** protector with the Cluster Name Object (CNO) to the volume using a command such as:
+5.  Enable BitLocker on the volume of your choice with an **ADAccountOrGroup** protector, using the cluster name. For example, use a command such as:
 
     ``` syntax
-    Add-BitLockerProtector E: -ADAccountOrGroupProtector -ADAccountOrGroup CLUSTER$
-
+    Enable-BitLocker E: -ADAccountOrGroupProtector -ADAccountOrGroup CLUSTER$
     ```
-    >**Warning:**  You must add an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker enabled volume to either be shared in a Cluster Shared Volume or to failover properly in a traditional failover cluster.
+    >**Warning:**  You must configure an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker enabled volume to either be shared in a Cluster Shared Volume or to fail over properly in a traditional failover cluster.
      
-7.  Repeat steps 1-6 for each disk in the cluster.
-8.  Add the volume(s) to the cluster
+6.  Use **Resume-ClusterResource** to take the physical disk resource back out of maintenance mode:
+
+    ``` syntax
+    Get-ClusterResource "Cluster Disk 1" | Resume-ClusterResource
+    ```
+
+7.  Repeat the preceding steps for each disk in the cluster.
 
 ### Adding BitLocker encrypted volumes to a cluster using manage-bde
 
