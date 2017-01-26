@@ -45,7 +45,15 @@ For Credential Guard to provide protections, the computers you are protecting mu
 
 To deploy Credential Guard, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements. Beyond that, computers can meet additional hardware and firmware requirements, and receive additional protection—those computers will be more hardened against certain threats. 
 
-You can deploy Credential Guard in phases, and plan these phases in relation to the computer purchases you plan for your next hardware refresh.
+To provide basic protection against OS level attempts to read Credential Manager domain credentials, NTLM and Kerberos derived credentials, Credential Manager uses:
+- Support for Virtualization-based security (required)
+- TPM 2.0 either discrete or firmware (preferred - provides binding to hardware)
+- UEFI lock (preferred - prevents attacker from disabling with a simple registry key change)
+
+The Virtualization-based security requires:
+- 64 bit CPU
+- CPU virtualization extensions plu extended page tables
+- Windows hypervisor
 
 ### Application requirements
 
