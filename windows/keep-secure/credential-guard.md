@@ -65,6 +65,8 @@ Applications will prompt & expose credentials to risk if they require:
 - Credential delegation
 - MS-CHAPv2
 
+### Security considerations
+
 The following tables provide more information about the hardware, firmware, and software required for deployment of Credential Guard. The tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, available in 2016, and announced as options for 2017.
 
 > [!NOTE]  
@@ -72,7 +74,7 @@ The following tables provide more information about the hardware, firmware, and 
 > If you are an OEM, see the requirements information at [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).<br>
 > Starting in Widows 10, 1607, TPM 2.0 is required.
 
-### Baseline protection recommendations
+#### Baseline protection recommendations
 
 |Baseline Protections                   | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
@@ -86,7 +88,7 @@ The following tables provide more information about the hardware, firmware, and 
 > [!IMPORTANT]
 > The preceding table lists requirements for baseline protections. The following tables list requirements for improved security. You can use Credential Guard with hardware, firmware, and software that support baseline protections, even if they do not support protections for improved security. However, we strongly recommend meeting the requirements for improved security, to significantly strengthen the level of security that Credential Guard can provide.
 
-### 2015 Additional Security Recommendations (starting with Windows 10, version 1507, and Windows Server 2016, Technical Preview 4)
+#### 2015 Additional Security Recommendations (starting with Windows 10, version 1507, and Windows Server 2016, Technical Preview 4)
 
 | Protections for Improved Security          | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
@@ -96,7 +98,7 @@ The following tables provide more information about the hardware, firmware, and 
 
 <br>
 
-### 2016 Additional Security Recommendations (starting with Windows 10, version 1607, and Windows Server 2016)
+#### 2016 Additional Security Recommendations (starting with Windows 10, version 1607, and Windows Server 2016)
 
 > [!IMPORTANT]
 > The following tables list requirements for improved security, beyond the level of protection described in the preceding tables. You can use Credential Guard with hardware, firmware, and software that do not support the following protections for improved security. As your systems meet more requirements, more protections become available to them.
@@ -109,7 +111,7 @@ The following tables provide more information about the hardware, firmware, and 
 
 <br>
 
-### 2017 Additional Security Recommendations (starting with the next major release of Windows 10) 
+#### 2017 Additional Security Recommendations (starting with the next major release of Windows 10) 
 
 | Protection for Improved Security          | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
