@@ -47,7 +47,7 @@ For third-party MDM providers or management servers, check your product document
 
 ## Download an offline-licensed app
 
-There are several items to download or create for offline-licensed apps. You'll need all of these items to distribute offline apps to your employees. This section includes more info on each item, and tells you how to download an offline-licensed app.
+There are several items to download or create for offline-licensed apps. The app package and app license are required; app metadata and app frameworks are optional. This section includes more info on each item, and tells you how to download an offline-licensed app.
 
 -   **App metadata** - App metadata is optional. The metadata includes app details, links to icons, product id, localized product ids, and other items. Devs who plan to use an app as part of another app or tool, might want the app metadata. 
 
