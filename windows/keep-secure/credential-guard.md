@@ -15,24 +15,23 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-Introduced in Windows 10 Enterprise and Windows Server 2016, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Credential Guard prevents these attacks by protecting NTLM password hashes and Kerberos Ticket Granting Tickets.
+Introduced in Windows 10 Enterprise and Windows Server 2016, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Credential Guard prevents these attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets & credentials stored by applications as domain credentials.
 
-Credential Guard offers the following features and solutions:
+By enabling Credential Guard the following features and solutions are provided:
 
--   **Hardware security** Credential Guard increases the security of derived domain credentials by taking advantage of platform security features including, Secure Boot and virtualization.
--   **Virtualization-based security** Windows services that manage derived domain credentials and other secrets run in a protected environment that is isolated from the running operating system.
--   **Better protection against advanced persistent threats** Securing derived domain credentials using the virtualization-based security blocks the credential theft attack techniques and tools used in many targeted attacks. Malware running in the operating system with administrative privileges cannot extract secrets that are protected by virtualization-based security. While Credential Guard is a powerful mitigation, persistent threat attacks will likely shift to new attack techniques and you should also incorporate Device Guard and other security strategies and architectures.
--   **Manageability** You can manage Credential Guard by using Group Policy, WMI, from a command prompt, and Windows PowerShell.
+-   **Hardware security** NTLM, Kerberos and Credential Manager take advantage of platform security features including, Secure Boot and virtualization to protect credentials.
+-   **Virtualization-based security** Windows NTLM and Kerberos derived credentials and other secrets run in a protected environment that is isolated from the running operating system.
+-   **Better protection against advanced persistent threats** When Credential Manager domain credentials, NTLM and Kerberos derived credentials are protected using virtualization-based security, the credential theft attack techniques and tools used in many targeted attacks are blocked. Malware running in the operating system with administrative privileges cannot extract secrets that are protected by virtualization-based security. While Credential Guard is a powerful mitigation, persistent threat attacks will likely shift to new attack techniques and you should also incorporate Device Guard and other security strategies and architectures.
 
 ## How it works
 
-Credential Guard isolates secrets that previous versions of Windows stored in the Local Security Authority (LSA) by using virtualization-based security. Prior to Windows 10, the LSA stored secrets used by the operating system in its process memory. With Credential Guard, the LSA process in the operating system talks to a new component called the isolated LSA process that stores and protects those secrets. Data stored by the isolated LSA process is protected using virtualization-based security and is not accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
+Kerberos, NTLM and Credential manager isolates secrets that previous versions of Windows stored in the Local Security Authority (LSA) by using virtualization-based security. Prior to Windows 10, the LSA stored secrets used by the operating system in its process memory. With Credential Guard enabled, the LSA process in the operating system talks to a new component called the isolated LSA process that stores and protects those secrets. Data stored by the isolated LSA process is protected using virtualization-based security and is not accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
 
 For security reasons, the isolated LSA process doesn't host any device drivers. Instead, it only hosts a small subset of operating system binaries that are needed for security and nothing else. All of these binaries are signed with a certificate that is trusted by virtualization-based security and these signatures are validated before launching the file in the protected environment.
 
-Credential Guard prevents NTLMv1, MS-CHAPv2, Digest, and CredSSP from using sign-on credentials. Thus, single sign-on does not work with these protocols. However, Credential guard allows these protocols to be used with prompted credentials or those saved in Credential Manager. It is strongly recommended that valuable credentials, such as the sign-on credentials, not be used with any of these protocols. If these protocols must be used by domain users, secondary credentials should be provisioned for these use cases.
+When Credential Guard is enabled, NTLMv1, MS-CHAPv2, Digest, and CredSSP cannot use the signed in credentials. Thus, single sign-on does not work with these protocols. However, applications can prompt for credentials or use credentials stored in the Windows Vault which are not protected by Credential Guard with any of these protocol. It is strongly recommended that valuable credentials, such as the sign-in credentials, not be used with any of these protocols. If these protocols must be used by domain or AAD users, secondary credentials should be provisioned for these use cases.
 
-Credential Guard does not allow unconstrained Kerberos delegation or Kerberos DES encryption at all. Neither sign-on nor prompted/saved credentials may be used.
+When Credential Guard is enabled, Kerberos does not allow unconstrained Kerberos delegation or DES encryption not only for signed-in credentials, but also prompted or saved credentials either.
 
 Here's a high-level overview on how the LSA is isolated by using virtualization-based security:
 
