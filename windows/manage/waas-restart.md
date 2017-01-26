@@ -34,17 +34,38 @@ When **Configure Automatic Updates** is enabled, you can enable one of the follo
 
 You can configure active hours for devices without setting the **Configure Automatic Updates** policy. *Active hours* identify the period of time when you expect the device to be in use. Automatic restarts after an update will occur outside of the active hours. 
 
-By default, active hours are from 8 AM to 5 PM on PCs and from 5 AM to 11 PM on phones. Users can change the active hours manually. Additionally, administrators can use Group Policy or MDM to set active hours for managed devices.
+By default, active hours are from 8 AM to 5 PM on PCs and from 5 AM to 11 PM on phones. Users can change the active hours manually. 
+
+Additionally, administrators can use multiple ways to set active hours for managed devices:
+
+- You can use Group Policy, as described in the procedure that follows.
+- You can use MDM, as described in [Configuring active hours with MDM](#configuring-active-hours-with-mdm).
+- While not recommended, you can also configure active hours, as descrbied in [Configuring active hours through Registry](#configuring-active-hours-through-registry).
+
+### Configuring active hours with Group Policy
 
 To configure active hours using Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and open the **Turn off auto-restart for updates during active hours** policy setting. When the policy is enabled, you can set the start and end times for active hours.
 
 ![Use Group Policy to configure active hours](images/waas-active-hours-policy.png)
 
+### Configuring active hours with MDM
+
 MDM uses the [Update/ActiveHoursStart and Update/ActiveHoursEnd](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_ActiveHoursEnd) settings in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) to configure active hours.
 
-To configure active hours manually on a single device, go to **Settings** > **Update & security** > **Windows Update** and select **Change active hours**.
+### Configuring active hours through Registry
 
-![Change active hours](images/waas-active-hours.png)
+This method is not recommended, and should be used when neither Group Policy or MDM are available.
+Any settings configured through Registry may conflict with any existing configuration that uses any of the methods mentioned above.
+
+You should set a combination of the following registry values, in order to configure active hours.
+Under **HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate** use **SetActiveHours** to enable or disable active hours and **ActiveHoursStart**,**ActiveHoursEnd** to specify the range of active hours.
+
+For a detailed description of these regsitry keys, see [Summary: Registry keys used to manage restarts after updates](#summary-registry-keys-used-to-manage-restarts-after-updates).
+
+>[!NOTE]
+>To configure active hours manually on a single device, go to **Settings** > **Update & security** > **Windows Update** and select **Change active hours**.
+>
+>![Change active hours](images/waas-active-hours.png)
 
 ## Limit restart delays
 
@@ -68,7 +89,7 @@ In the Group Policy editor, you will see a number of policy settings that pertai
 >If you set conflicting restart policies, the actual restart behavior may not be what you expected.
 
 ## Summary: Registry keys used to manage restarts after updates
-Below are quick-reference tables of the supported registry values, that correspond to group policy settings, used to manage restarts after updates in Windows 10.
+The following tables list registry values that correspond to the Group Policy settings for controlling restarts after updates in Windows 10.
 
 **HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate**
 
@@ -82,8 +103,8 @@ Below are quick-reference tables of the supported registry values, that correspo
 
 | Registry key | Key type | Value |
 | --- | --- | --- |
-| AlwaysAutoRebootAtScheduledTime | REG_DWORD | TBP |
-| AlwaysAutoRebootAtScheduledTimeMinutes | REG_DWORD | TBP |
+| AlwaysAutoRebootAtScheduledTime | REG_DWORD | 0: disable automatic reboot after update installation at scheduled time</br>1: enable automatic reboot after update installation at ascheduled time |
+| AlwaysAutoRebootAtScheduledTimeMinutes | REG_DWORD | 15-180: set automatic reboot to occur after given minutes |
 | AUOptions | REG_DWORD | 2: notify for download and automatically install updates</br>3: automatically download and notify for instllation of updates</br>4: Automatically download and schedule installation of updates</br>5: allow the local admin to configure these settings |
 | NoAutoRebootWithLoggedOnUsers | REG_DWORD | 0: disable do not reboot if users are logged on</br>1: do not reboot after an update installation if a user is logged on</br>**Note:** If disabled : Automatic Updates will notify the user that the computer will automatically restarts in 5 minutes to complete the installation  |
 | ScheduledInstallTime | REG_DWORD | 0-23: schedule update installation time to a specific hour</br>starts with 12 AM (0) and ends with 11 PM (23) |
