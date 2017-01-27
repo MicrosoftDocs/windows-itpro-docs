@@ -11,7 +11,6 @@ This topic provides information on additional features that are available in Upg
 
 - [Site discovery](#site-discovery): An inventory of web sites that are accessed by client computers running Windows 7 or Windows 8.1 using Internet Explorer.
 - [Office add-ins](#office-add-ins): A list of the Microsoft Office add-ins that are installed on client computers.
-- [Target OS](#target-os):  The target OS setting is used to evaluate the number of computers that are already running the default version of Windows 10, or a later version.
 
 ## Site discovery
 
@@ -76,22 +75,6 @@ You can run predefined queries to capture more info, such as sites that have Ent
 ## Office add-ins
 
 Office add-ins provides a list of the Microsoft Office add-ins in your environment, and enumerates the computers that have these add-ins installed.  This information should not affect the upgrade decision workflow, but can be helpful to an administrator.
-
-## Target OS:
-
-The default target OS in Upgrade Analytics is set to the released version of the Current Branch for Business (CBB). CBB can be determined by reviewing [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx). The target OS setting is used to evaluate the number of computers that are already running this version of Windows, or a later version. 
-
-The number displayed under **Computers upgraded** in the Upgrade Overview blade is the total number of computers that are already running the same or a later version of Windows compared to the target OS. It also is used in the evaluation of apps and drivers: Known issues and guidance for the apps and drivers in Upgrade Analytics is based on the target OS version.
-
-You now have the ability to change the Windows 10 version you wish to target. The available options currently are: Windows 10 version 1507, Windows 10 version 1511, and Windows version 1610.
-
-To change the target OS setting, click on **Solutions Settings**, which appears at the top when you open you Upgrade Analytics solution:
-
-![Target OS](images/ua-cg-08.png)
-
-On the **Upgrade Analytics Settings** page, choose one of the options in the drop down box and click **Save**. The changes in the target OS setting are reflected in evaluations when a new snapshot is uploaded to your workspace.
-
-![Target OS](images/ua-cg-09.png)
 
 ## Related topics
 

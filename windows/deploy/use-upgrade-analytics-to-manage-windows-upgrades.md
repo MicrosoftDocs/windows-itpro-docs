@@ -26,4 +26,26 @@ The Upgrade Analytics solution provides compatibility and usage information abou
 
 - [Additional insights](upgrade-analytics-additional-insights.md)
 
+The Upgrade Analytics workflow is also affected by the settings that you use. See the **Target OS** section below for more information.
 
+## Target OS
+
+The target OS setting is used to evaluate the number of computers that are already running the default version of Windows 10, or a later version.
+
+The default target OS in Upgrade Analytics is set to the released version of the Current Branch for Business (CBB). CBB can be determined by reviewing [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx). The target OS setting is used to evaluate the number of computers that are already running this version of Windows, or a later version. 
+
+The number displayed under **Computers upgraded** in the Upgrade Overview blade is the total number of computers that are already running the same or a later version of Windows compared to the target OS. It also is used in the evaluation of apps and drivers: Known issues and guidance for the apps and drivers in Upgrade Analytics is based on the target OS version.
+
+You now have the ability to change the Windows 10 version you wish to target. The available options currently are: Windows 10 version 1507, Windows 10 version 1511, and Windows version 1610.
+
+To change the target OS setting, click on **Solutions Settings**, which appears at the top when you open you Upgrade Analytics solution:
+
+![Target OS](images/ua-cg-08.png)
+
+>You must be signed in to Upgrade Analytics as an administrator to view settings.
+
+On the **Upgrade Analytics Settings** page, choose one of the options in the drop down box and click **Save**. The changes in the target OS setting are reflected in evaluations when a new snapshot is uploaded to your workspace.
+
+![Target OS](images/ua-cg-09.png)
+
+- [Target OS](#target-os):  
