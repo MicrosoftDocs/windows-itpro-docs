@@ -101,6 +101,9 @@ This table describes the sample queries in the Surface Hub solution:
 
 For Surface Hub to connect to and register with the OMS service, it must have access to the port number of your domains and the URLs. This table list the ports that OMS needs. For more information, see [Configure proxy and firewall settings in Log Analytics](https://azure.microsoft.com/documentation/articles/log-analytics-proxy-firewall/).
 
+>[!NOTE]
+>Surface Hub does not currently support the use of a proxy server to communicate with the OMS service.
+
 | Agent resource              | Ports | Bypass HTTPS inspection? |
 | --------------------------- | ----- | ------------------------ |
 | *.ods.opinsights.azure.com  | 443   | Yes |

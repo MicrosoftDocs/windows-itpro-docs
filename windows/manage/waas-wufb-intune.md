@@ -4,7 +4,7 @@ description: Configure Windows Update for Business settings using Microsoft Intu
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
