@@ -35,6 +35,7 @@ You use Windows Imaging and Configuration Designer (ICD) to create a provisionin
     
     - The **Simple provisioning** and **Provision school devices** options provide wizard-style walkthroughs for creating a provisioning package based on a set of common settings. 
     - The **Advanced provisioning** option opens a new project with all **Runtime settings** available. 
+    
     >[!TIP]
     >You can start a project in the simple editor and then switch the project to the advanced editor.
     >
