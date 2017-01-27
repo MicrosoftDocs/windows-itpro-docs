@@ -7,14 +7,15 @@ author: greg-lindsay
 
 # Additional insights
 
-This topic provides information on additional features that are available in Upgrade Analytics that provide insights for your environment. These include:
+This topic provides information on additional features that are available in Upgrade Analytics to provide insights into your environment. These include:
 
 - [Site discovery](#site-discovery): An inventory of web sites that are accessed by client computers running Windows 7 or Windows 8.1 using Internet Explorer.
-- [Computer groups](#computer-groups): Computer groups is a feature available in OMS and enabled in Upgrade Analytics that enables you to segment client systems in your environment into custom groups.
+- [Office add-ins](#office-add-ins): A list of the Microsoft Office add-ins that are installed on client computers.
+- [Target OS](#target-os):  The target OS setting is used to evaluate the number of computers that are already running the default version of Windows 10, or a later version.
 
 ## Site discovery
 
-This feature of Upgrade Analytics workflow provides an inventory of web sites that are being used by client computers that run Internet Explorer on Windows 8.1 and Windows 7 in your environment. This inventory information is provided as optional data related to upgrading to Windows 10 and Internet Explorer 11, and is meant to help prioritize compatibility testing for web applications. You can make more informed decisions about testing based on usage data. Data from Microsoft Edge is not collected. 
+The site discovery feature in Upgrade Analytics provides an inventory of web sites that are accessed by client computers using Internet Explorer on Windows 8.1 and Windows 7. Site discovery does not include sites that are accessed using other Web browsers, such as Microsoft Edge. Site inventory information is provided as optional data related to upgrading to Windows 10 and Internet Explorer 11, and is meant to help prioritize compatibility testing for web applications. You can make more informed decisions about testing based on usage data.
 
 > Note: Site discovery data is disabled by default; you can find documentation on what is collected in the [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965). After you turn on this feature, data is collected on all sites visited by Internet Explorer, except during InPrivate sessions. In addition, the data collection process is silent, without notification to the employee. You are responsible for ensuring that your use of this feature complies with all applicable local laws and regulatory requirements, including any requirements to provide notice to employees.
 
@@ -72,57 +73,25 @@ You can run predefined queries to capture more info, such as sites that have Ent
 
 ![](images/upgrade-analytics-query-activex-name.png)
 
-## Computer groups
+## Office add-ins
 
-We are happy to announce that Computer Groups are now available in Upgrade Analytics. Computer Groups allow you to segment your environment by creating Computer Groups based on OMS Log Search results or by importing Groups from Active Directory, WSUS or System Center Configuration Manager. Computer Groups are an OMS feature, more information is available here. 
+Office add-ins provides a list of the Microsoft Office add-ins in your environment, and enumerates the computers that have these add-ins installed.  This information should not affect the upgrade decision workflow, but can be helpful to an administrator.
 
-In our initial release of the Computer Groups feature for Upgrade Analytics, we recommend you use query based Computer Groups. We are working with the Configuration Manager create a feature in the Configuration Manager Upgrade Analytics Connector that allows you to sync ConfigMgr Collections as Computer Groups into OMS.
+## Target OS:
 
-### Getting started with Computer Groups
+The default target OS in Upgrade Analytics is set to the released version of the Current Branch for Business (CBB). CBB can be determined by reviewing [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx). The target OS setting is used to evaluate the number of computers that are already running this version of Windows, or a later version. 
 
-When you log in to OMS, you will see a new Computer Groups blade.
+The number displayed under **Computers upgraded** in the Upgrade Overview blade is the total number of computers that are already running the same or a later version of Windows compared to the target OS. It also is used in the evaluation of apps and drivers: Known issues and guidance for the apps and drivers in Upgrade Analytics is based on the target OS version.
 
-![Computer groups](images/ua-cg-01.png)
+You now have the ability to change the Windows 10 version you wish to target. The available options currently are: Windows 10 version 1507, Windows 10 version 1511, and Windows version 1610.
 
-In order to create a Computer Group, head over to Log Search and create a query based on the Type UAComputer, for example:
+To change the target OS setting, click on **Solutions Settings**, which appears at the top when you open you Upgrade Analytics solution:
 
-```
-Type=UAComputer Manufacturer=DELL
-```
+![Target OS](images/ua-cg-08.png)
 
-![Computer groups](images/ua-cg-02.png)
+On the **Upgrade Analytics Settings** page, choose one of the options in the drop down box and click **Save**. The changes in the target OS setting are reflected in evaluations when a new snapshot is uploaded to your workspace.
 
-Once you are satisfied with your computer query, add
-
-```
-| measure count() by Computer
-```
-
-This will ensure every computer only shows up once. Then save your group using the save button.
-
-![Computer groups](images/ua-cg-03.png)
-
-You will now see your new Computer Group in Upgrade Analytics.
-
-![Computer groups](images/ua-cg-04.png)
-
-### Using Computer Groups
-
-When you drill into a Computer Group, you will see that we split the Computers by UpgradeDecision. Note that for Computers with the status “Review in Progress” or “Won’t Upgrade” you have an option of drilling into the issues that cause computers to be in that category or show the list of the computers with that UpgradeDecision. For Computers that are “Ready to Upgrade, you can go directly to the list of Computers that are ready.
-
-![Computer groups](images/ua-cg-05.png)
-
-Drilling into the computers in a certain status is self-explanatory, so let’s look at what happens when you click the details link – on “Review in Progress” in this case:
-
-![Computer groups](images/ua-cg-06.png)
-
-As you can see, the next step is to select if you want to see Application Issues or Driver issues. Let’s select UAApp:
-
-![Computer groups](images/ua-cg-07.png)
-
-And there you have it: A list of the apps you still need to review in order to get the your Dell Computers ready to upgrade to Windows 10.
-
-We hope you like Computer Groups in Upgrade Analytics. If you have feedback, please use Windows Feedback Hub, our Category is Windows Installation, Update, and Recovery -> Upgrade Analytics for Enterprise. 
+![Target OS](images/ua-cg-09.png)
 
 ## Related topics
 
