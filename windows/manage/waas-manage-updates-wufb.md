@@ -4,7 +4,7 @@ description: Windows Update for Business lets you manage when devices received u
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
