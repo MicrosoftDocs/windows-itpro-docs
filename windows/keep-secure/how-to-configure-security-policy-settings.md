@@ -31,9 +31,9 @@ When a local setting is inaccessible, it indicates that a GPO currently controls
 3.  When you find the policy setting in the details pane, double-click the security policy that you want to modify.
 4.  Modify the security policy setting, and then click **OK**.
 
-    **Note**  
-    -   Some security policy settings require that the device be restarted before the setting takes effect.
-    -   Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
+    > [!NOTE]
+    > -   Some security policy settings require that the device be restarted before the setting takes effect.
+    > -   Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
      
 ## <a href="" id="bkmk-domain"></a>To configure a security policy setting using the Local Group Policy Editor console
 
@@ -48,11 +48,13 @@ You must have the appropriate permissions to install and use the Microsoft Manag
 
 4.  In the details pane, double-click the security policy setting that you want to modify.
 
-    >**Note:**  If this security policy has not yet been defined, select the **Define these policy settings** check box.
+    > [!NOTE]
+    > If this security policy has not yet been defined, select the **Define these policy settings** check box.
      
 5.  Modify the security policy setting, and then click **OK**.
 
->**Note:**  If you want to configure security settings for many devices on your network, you can use the Group Policy Management Console.
+> [!NOTE]
+> If you want to configure security settings for many devices on your network, you can use the Group Policy Management Console.
  
 ## <a href="" id="bkmk-dc"></a>To configure a setting for a domain controller
 
@@ -65,13 +67,15 @@ The following procedure describes how to configure a security policy setting for
     -   Click **Local Policies** to edit the **Audit Policy**, a **User Rights Assignment**, or **Security Options**.
 
 3.  In the details pane, double-click the security policy that you want to modify.
-    >**Note**  If this security policy has not yet been defined, select the **Define these policy settings** check box.
+
+    > [!NOTE]
+    > If this security policy has not yet been defined, select the **Define these policy settings** check box.
      
 4.  Modify the security policy setting, and then click **OK**.
 
-**Important**  
--   Always test a newly created policy in a test organizational unit before you apply it to your network.
--   When you change a security setting through a GPO and click **OK**, that setting will take effect the next time you refresh the settings.
+> [!IMPORTANT]  
+> -   Always test a newly created policy in a test organizational unit before you apply it to your network.
+> -   When you change a security setting through a GPO and click **OK**, that setting will take effect the next time you refresh the settings.
  
 ## Related topics
 
