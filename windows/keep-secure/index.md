@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+localizationpriority: high
 author: brianlic-msft
 ---
 # Keep Windows 10 secure
