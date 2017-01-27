@@ -4,7 +4,7 @@ description: Delivery Optimization is a new peer-to-peer distribution method in 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
