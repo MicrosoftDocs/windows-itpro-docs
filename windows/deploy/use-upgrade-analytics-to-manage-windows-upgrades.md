@@ -2,7 +2,7 @@
 title: Use Upgrade Analytics to manage Windows upgrades (Windows 10)
 description: Describes how to use Upgrade Analytics to manage Windows upgrades.
 ms.prod: w10
-author: MaggiePucciEvans
+author: greg-lindsay
 ---
 
 # Use Upgrade Analytics to manage Windows upgrades
@@ -23,6 +23,6 @@ The Upgrade Analytics workflow gives you compatibility and usage information abo
 
 3.  [Identifying computers that are upgrade ready](upgrade-analytics-deploy-windows.md)
 
-4.  [Review site discovery](upgrade-analytics-review-site-discovery.md)
+4.  [Additional insights](upgrade-analytics-additional-insights.md)
 
 
