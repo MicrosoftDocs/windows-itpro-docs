@@ -120,9 +120,15 @@ The following tables list registry values that correspond to the Group Policy se
 | --- | --- | --- |
 | AlwaysAutoRebootAtScheduledTime | REG_DWORD | 0: disable automatic reboot after update installation at scheduled time</br>1: enable automatic reboot after update installation at ascheduled time |
 | AlwaysAutoRebootAtScheduledTimeMinutes | REG_DWORD | 15-180: set automatic reboot to occur after given minutes |
-| AUOptions | REG_DWORD | 2: notify for download and automatically install updates</br>3: automatically download and notify for instllation of updates</br>4: Automatically download and schedule installation of updates</br>5: allow the local admin to configure these settings |
+| AUOptions | REG_DWORD | 2: notify for download and automatically install updates</br>3: automatically download and notify for instllation of updates</br>4: Automatically download and schedule installation of updates</br>5: allow the local admin to configure these settings</br>**Note:** To configure restart behavior, set this value to **4** |
 | NoAutoRebootWithLoggedOnUsers | REG_DWORD | 0: disable do not reboot if users are logged on</br>1: do not reboot after an update installation if a user is logged on</br>**Note:** If disabled : Automatic Updates will notify the user that the computer will automatically restarts in 5 minutes to complete the installation  |
 | ScheduledInstallTime | REG_DWORD | 0-23: schedule update installation time to a specific hour</br>starts with 12 AM (0) and ends with 11 PM (23) |
+
+There are 3 different registry combination for controlling restart:
+
+- To set active hours, **SetActiveHours** should be **1**, while **ActiveHoursStart** and **ActiveHoursEnd** should define the time range.
+- To schedule a specific instllation and reboot time, **AUOptions** should be **4**, **ScheduledInstallTime** should specify the installation time, **AlwaysAutoRebootAtScheduledTime** set to **1** and **AlwaysAutoRebootAtScheduledTimeMinutes** should specify number of minutes to wait before rebooting.
+- To delay rebooting if a user is logged on, **AUOptions** should be **4**, while **NoAutoRebootWithLoggedOnUsers** is set to **1**. 
 
 ## Related topics
 
