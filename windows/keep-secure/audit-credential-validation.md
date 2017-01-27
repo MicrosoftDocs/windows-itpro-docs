@@ -42,7 +42,7 @@ The main reason to enable this auditing subcategory is to handle local accounts 
 
 **Events List:**
 
--   [4774](event-4774.md)(S): An account was mapped for logon.
+-   [4774](event-4774.md)(S, F): An account was mapped for logon.
 
 -   [4775](event-4775.md)(F): An account could not be mapped for logon.
 
