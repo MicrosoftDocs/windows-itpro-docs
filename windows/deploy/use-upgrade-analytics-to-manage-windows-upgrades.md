@@ -15,14 +15,15 @@ You and your IT team can use the Upgrade Analytics workflow to prioritize and wo
 
 Information is refreshed daily so you can monitor upgrade progress. Any changes your team makes, such as assigning application importance and marking applications as ready to upgrade, are reflected 24 hours after you make them.
 
-The Upgrade Analytics workflow gives you compatibility and usage information about computers, applications, and drivers and walks you through these high-level tasks. Each task is described in more detail in the topics that follow.
+The Upgrade Analytics solution provides compatibility and usage information about computers, applications, and drivers. A workflow is also provided to walk you through the high-level tasks required during the upgrade process. See the following topics for more information:
 
-1.  [Preparing your environment](upgrade-analytics-prepare-your-environment.md)
+- [Upgrade overview](upgrade-analytics-upgrade-overview.md)
 
-2.  [Resolving application and driver issues](upgrade-analytics-resolve-issues.md)
+- Upgrade Analytics workflow:
+    - [Step 1: Identify important apps](upgrade-analytics-identify-apps.md)
+    - [Step 2: Resolve issues](upgrade-analytics-resolve-issues.md)
+    - [Step 3: Deploy](upgrade-analytics-deploy-windows.md)
 
-3.  [Identifying computers that are upgrade ready](upgrade-analytics-deploy-windows.md)
-
-4.  [Additional insights](upgrade-analytics-additional-insights.md)
+- [Additional insights](upgrade-analytics-additional-insights.md)
 
 
