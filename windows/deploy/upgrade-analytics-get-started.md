@@ -10,12 +10,15 @@ author: greg-lindsay
 
 # Get started with Upgrade Analytics
 
-This topic explains how to obtain and configure Upgrade Analytics in your organization. Before starting, you should also review the following topics: 
+This topic explains how to obtain and configure Upgrade Analytics for your organization. 
 
-- [Upgrade Analytics requirements](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-requirements): provides information about requirements for using Upgrade Analytics.
-- [Upgrade Analytics blog](https://blogs.technet.microsoft.com/UpgradeAnalytics): contains announcements of new features and provides helpful tips for using Upgrade Analytics.
+Before you begin, consider reviewing the following helpful information:<BR>
+    - [Upgrade Analytics requirements](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-requirements): Provides detailed requirements to use Upgrade Analytics.<BR>
+    - [Upgrade Analytics blog](https://blogs.technet.microsoft.com/UpgradeAnalytics): Contains announcements of new features and provides helpful tips for using Upgrade Analytics.
 
-If you are using System Center Configuration Manager, also check out information about how to integrate Upgrade Analytics with Configuration Manager: [Integrate Upgrade Analytics with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
+>If you are using System Center Configuration Manager, also check out information about how to integrate Upgrade Analytics with Configuration Manager: [Integrate Upgrade Analytics with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
+
+## About Upgrade Analytics
 
 You can use Upgrade Analytics to plan and manage your upgrade project end-to-end. Upgrade Analytics works by establishing communications between computers in your organization and Microsoft. Upgrade Analytics collects computer, application, and driver data for analysis. This data is used to identify compatibility issues that can block your upgrade and to suggest fixes that are known to Microsoft.
 
