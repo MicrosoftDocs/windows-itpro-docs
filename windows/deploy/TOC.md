@@ -5,6 +5,7 @@
 ### [Upgrade Analytics requirements](upgrade-analytics-requirements.md)
 ### [Upgrade Analytics release notes](upgrade-analytics-release-notes.md)
 ### [Get started with Upgrade Analytics](upgrade-analytics-get-started.md)
+#### [Upgrade Analytics deployment script](upgrade-analytics-deployment-script.md)
 ### [Use Upgrade Analytics to manage Windows upgrades](use-upgrade-analytics-to-manage-windows-upgrades.md)
 #### [Upgrade overview](upgrade-analytics-upgrade-overview.md)
 #### [Step 1: Identify apps](upgrade-analytics-identify-apps.md)
