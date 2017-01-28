@@ -11,9 +11,15 @@ All of your work up to now involved reviewing and resolving application and driv
 
 The blades in the **Deploy** section are:
 
+- [Deploy eligible computers](#deploy-eligible-computers)
+- [Deploy computers by group](#computer-groups)
+
 ## Deploy eligible computers
 
-Computers grouped by deployment decision are listed.
+In this blade, computers grouped by upgrade decision are listed. The upgrade decision on the machines is a calculated value based on the upgrade decision status for the apps and drivers installed on the computer.  This value cannot be modified directly. The upgrade decision is calculated in the following ways:
+- **Review in progress**:  At least one app or driver installed on the computer is marked **Review in progress**.
+- **Ready to upgrade**:  All apps and drivers installed on the computer are marked as **Ready to Upgrade**.
+- **Won’t upgrade**:  At least one app or driver installed on the computer is marked as **Won’t upgrade**, or a system requirement is not met.
 
 <!-- PRESERVING ORIGINAL IMAGE CODING JUST IN CASE
 <img src="media/image9.png" width="195" height="316" />
