@@ -58,7 +58,7 @@ If you are not using OMS:
 
 After you’ve signed in to Operations Management Suite and added the Upgrade Analytics solution to your workspace, complete the following tasks to establish communication and enable data sharing between user computers, Microsoft secure data centers, and Upgrade Analytics.
 
->If desired, you can use the [Upgrade Analytics deployment script](upgrade-analytics-deployment-script) to automate the steps below. If you choose to use this script, then skip the following manual procedures.
+>If desired, you can use the [Upgrade Analytics deployment script](upgrade-analytics-deployment-script.md) to automate the steps below. If you choose to use this script, then skip the following manual procedures.
 
 ### Generate your commercial ID key
 
@@ -80,7 +80,7 @@ For Upgrade Analytics to receive and display upgrade readiness data from Microso
 
 1.  Click **Overview** on the Settings Dashboard to return to your OMS workspace portal. The Upgrade Analytics tile now displays summary data. Click the tile to open Upgrade Analytics.
 
-## Whitelist select endpoints
+### Whitelist select endpoints
 
 To enable data sharing, whitelist the following endpoints. Note that you may need to get approval from your security group to do this.
 
