@@ -2,7 +2,7 @@
 title: Upgrade Analytics architecture (Windows 10)
 description: Describes Upgrade Analytics architecture.
 ms.prod: w10
-author: MaggiePucciEvans
+author: greg-lindsay
 ---
 
 # Upgrade Analytics architecture

@@ -5,7 +5,7 @@ ms.prod: w10
 author: greg-lindsay
 ---
 
-# Step 3: Deploy
+# Step 3: Deploy Windows
 
 All of your work up to now involved reviewing and resolving application and driver issues. Along the way, as you’ve resolved issues and decided which applications and drivers are ready to upgrade, you’ve been building a list of computers that are upgrade ready.
 

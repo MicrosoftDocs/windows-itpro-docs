@@ -2,7 +2,7 @@
 title: Upgrade Analytics requirements (Windows 10)
 description: Provides requirements for Upgrade Analytics.
 ms.prod: w10
-author: MaggiePucciEvans
+author: greg-lindsay
 ---
 
 # Upgrade Analytics requirements

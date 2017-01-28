@@ -2,7 +2,7 @@
 title: Upgrade Analytics - Resolve application and driver issues (Windows 10)
 description: Describes how to resolve application and driver issues that can occur during an upgrade with Upgrade Analytics.
 ms.prod: w10
-author: MaggiePucciEvans
+author: greg-lindsay
 ---
 
 # Upgrade Analytics - Resolve application and driver issues

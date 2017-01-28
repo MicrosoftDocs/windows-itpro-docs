@@ -2,7 +2,7 @@
 title: Troubleshoot Upgrade Analytics (Windows 10)
 description: Provides troubleshooting information for Upgrade Analytics.
 ms.prod: w10
-author: MaggiePucciEvans
+author: greg-lindsay
 ---
 
 # Troubleshoot Upgrade Analytics
