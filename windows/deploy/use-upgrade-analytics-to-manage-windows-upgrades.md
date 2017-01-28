@@ -23,10 +23,10 @@ The Upgrade Analytics solution provides compatibility and usage information abou
     - [Step 1: Identify important apps](upgrade-analytics-identify-apps.md)
     - [Step 2: Resolve issues](upgrade-analytics-resolve-issues.md)
     - [Step 3: Deploy](upgrade-analytics-deploy-windows.md)
-
+<BR>
 - [Additional insights](upgrade-analytics-additional-insights.md)
 
-The Upgrade Analytics workflow is also affected by the settings that you use. See the **Target OS** section below for more information.
+>**Important**: The Upgrade Analytics workflow is affected by the **Target OS** setting. See the following section for more information.
 
 ## Target OS
 
