@@ -4,7 +4,7 @@ description: You can use Group Policy or your mobile device management (MDM) ser
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
