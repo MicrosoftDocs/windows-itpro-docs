@@ -1,6 +1,6 @@
 ---
 title: Unlock Windows Holographic for Business features (HoloLens)
-description: HoloLens provides extra features designed for business when you upgrade to Windows Holographic Enterprise.
+description: HoloLens provides extra features designed for business when you upgrade to Windows Holographic for Business.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: hololens, devices
@@ -13,7 +13,7 @@ localizationpriority: medium
 
 Microsoft HoloLens is available in the *Development Edition*, which runs Windows Holographic (an edition of Windows 10 designed for HoloLens), and in the [Commercial Suite](https://developer.microsoft.com/windows/holographic/release_notes#introducing_microsoft_hololens_commercial_suite), which provides extra features designed for business. 
 
-When you purchase the Commercial Suite, you receive a license that upgrades Windows Holographic to Windows Holographic Efor business. This license can be applied to the device either through the organization's [mobile device management (MDM) provider](#edition-upgrade-using-mdm) or a [provisioning package](#edition-upgrade-using-a-provisioning-package).
+When you purchase the Commercial Suite, you receive a license that upgrades Windows Holographic to Windows Holographic for Business. This license can be applied to the device either through the organization's [mobile device management (MDM) provider](#edition-upgrade-using-mdm) or a [provisioning package](#edition-upgrade-using-a-provisioning-package).
 
 >[!TIP]
 >You can tell that the HoloLens has been upgraded to the business edition in **Settings** > **Network & Internet**. The **VPN** option is only available in Windows Holographic for Business.
