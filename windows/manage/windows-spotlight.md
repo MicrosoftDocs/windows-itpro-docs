@@ -57,8 +57,8 @@ Windows 10, version 1607, provides three new Group Policy settings to help you m
 
 Windows Spotlight is enabled by default. Administrators can replace Windows Spotlight with a selected image using the Group Policy setting **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Force a specific default lock screen image**.
 
-> [!NOTE]
-> Only in Windows 10, version 1607, this Group Policy's expected behavior does not occur due to a bug. Instead, the policy incorrectly prohibits users from choosing their own lock screen image. This behavior is corrected in feature updates released after Windows 10, version 1607.
+>[!WARNING]
+> In Windows 10, version 1607, the **Force a specific default lock screen image** policy setting will prevent users from changing the lock screen image. This behavior will be corrected in a future release.
 
 ![lockscreen policy details](images/lockscreenpolicy.png)
 
