@@ -55,15 +55,12 @@ This section guides you in getting the necessary information to set and use the 
 ## Install and configure HP ArcSight SmartConnector
 The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin).
 
-1. Install the latest 32-bit Windows SmartConnector installer. You can find this in the HPE Software center. The tool is typically installed in `C:\ArcSightSmartConnectors\<descriptive_name>\`.
-
-  >!NOTE
-  >Replace *descriptive_name* with your preferred location name.
+1. Install the latest 32-bit Windows SmartConnector installer. You can find this in the HPE Software center. The tool is typically installed in `C:\Program Files\ArcSightSmartConnectors\current\bin`.
 
 2. Follow the installation wizard through the following tasks:
   - Introduction
   - Choose Install Folder
-  - Choose Install Set
+  - Choose Install Typical
   - Choose Shortcut Folder
   - Pre-Installation Summary
   - Installing...
@@ -72,8 +69,10 @@ The following steps assume that you have completed all the required steps in [Be
 
 3. Open File Explorer and put the two configuration files in the installation location, for example:
 
-  - WDATP-connector.jsonparser.properties: `C:\ArcSightSmartConnectors\<descriptive_name>\current\user\agent\flexagent\`
-  - WDATP-connector.properties: `C:\ArcSightSmartConnectors\<descriptive_name>\`
+  - WDATP-connector.jsonparser.properties: `C:\Program Files\ArcSightSmartConnectors\current\user\agent\flexagent\`
+    >[!NOTE]
+    > This location is mandatory.
+  - WDATP-connector.properties: C:\ArcSightSmartConnectors\ _descriptive-name_\
 
 4. After the installation of the core connector completes, the Connector Setup window opens. In the Connector Setup window, select **Add a Connector**.
 
@@ -84,11 +83,11 @@ The following steps assume that you have completed all the required steps in [Be
 
   Field	| Value
   :---|:---
-  Configuration File | Type in the name of the client property file. It must match the client property file.
+  Configuration File | Type in the name of the client property file. It must match the client property file. For example, if the configuration file in "flexagent" directory is named "WDATP-Connector.jsonparser.properties", the field must be names as the suffix which is "WDATP-Connector".
   Events URL | Depending on the location of your datacenter, select either the EU or the US URL: </br></br> **For EU**: `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME` </br></br>**For US**: `https://wdatp-alertexporter-us.securitycenter.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`
   Authentication Type |	OAuth 2
-  OAuth 2 Client Properties file	| Select wdatp-connector.properties.
-  Refresh Token	| Use either the Windows Defender ATP token URL or the restutil tool to obtain your refresh token. For more information, see see [Obtain a refresh token](configure-aad-windows-defender-advanced-threat-protection.md#obtain-a-refresh-token). </br> </br> **Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to `C:\ArcSightSmartConnectors\<descriptive_name>\current\bin`. </br> b. Type: `arcsight restutil token -config C:\ArcSightSmartConnectors_Prod\WDATP\WDATP-connector.properties`. A Web browser window will open. </br> c. A web browser will open. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> d.	A refresh token is provided in the command prompt.     
+  OAuth 2 Client Properties file	| Browse to the location of the wdatp-connector.properties file.
+  Refresh Token	| Use either the Windows Defender ATP token URL or the restutil tool to obtain your refresh token. For more information, see see [Obtain a refresh token](configure-aad-windows-defender-advanced-threat-protection.md#obtain-a-refresh-token). </br> </br> **Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to `C:\Program Files\ArcSightSmartConnectors\current\bin`. </br> b. Type: `arcsight restutil token -config C:\ArcSightSmartConnectors_Prod\WDATP\WDATP-connector.properties`. A Web browser window will open. </br> c. A web browser will open. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> d.	A refresh token is provided in the command prompt. </br> e. Copy and paste it into the **Refresh Token** field.
 
 7. A browser window is opened by the connector. Login with your application credentials. After you log in, you'll be asked to give permission to your OAuth2 Client. You must give permission to your OAuth 2 Client so that the connector configuration can authenticate. </br></br>
 If the `redirect_uri` is a https URL, you'll be redirected to a URL on the local host. You'll see a page that requests for you to trust the certificate supplied by the connector running on the local host. You'll need to trust this certificate if the redirec_uri is a https. </br></br> If however you specify a http URL for the redirect_uri, you do not need to provide consent in trusting the certificate.
@@ -123,14 +122,14 @@ Windows Defender ATP alerts will appear as discrete events, with "Microsoft” a
 
 
 ## Troubleshooting HP ArcSight connection
-**Problem:** Failed to refresh the token.
+**Problem:** Failed to refresh the token. You can find the log located in `C:Program Files\ArcSightSmartConnectors\current\logs (default path)`. The log called _agent.log_. Open the log and look for `ERROR/FATAL/WARN`.
 
 **Symptom:** You get the following error message:
 
 `Failed to refresh the token. Set reauthenticate to true: com.arcsight.common.al.e: Failed to refresh access token: status=HTTP/1.1 400 Bad Request FATAL EXCEPTION: Could not refresh the access token`
 
 **Solution:**
-1. Stop the process.
+1. Stop the process by clicking Ctrl + C on the Connector window. Click **Y** when asked "Terminate batch job Y/N?".
 2. Edit the properties file: `C:\ArcSightSmartConnectors_Prod\<descriptive_name>\WDATP-connector.properties` and add the following value:
 `reauthenticate=true`.
 
