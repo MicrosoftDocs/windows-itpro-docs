@@ -24,9 +24,9 @@ Success events do not appear to occur. Failure event [has been reported](http://
 
 *Authentication Package:Schannel*
 
-*Account UPN:%2*
+*Account UPN:*<*Acccount*>@<*Domain*>
 
-*Mapped Name:%3*
+*Mapped Name:*<*Account*>
 
 ***Required Server Roles:*** no information.
 
