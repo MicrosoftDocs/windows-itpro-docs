@@ -20,7 +20,7 @@ User changes are processed once every 24 hours and display as: **Up to date** in
 <TABLE BORDER=2>
 <TH>Case 1: Default view<TH>Case 2: Outside of SLA
 <TR><TD>Everything is running as expected. <BR>Data has been refreshed within the past 24 hours.<TD>Data processing is delayed.<BR>Data has not been refreshed within the last 24 hours.
-<TR><TD><img src="images/upgrade-analytics-overview.png"><TD><img src="images/ua-cg-11.png">
+<TR><TD VALIGN="top"><img src="images/ua-cg-13.png"><TD VALIGN="top"><img src="images/ua-cg-11.png">
 </TABLE>
 
 If data processing is delayed, you can continue using your workspace as normal. However, any changes or additional information that is added might not be displayed. Data is typically refreshed and the display will return to normal again within 24 hours.
