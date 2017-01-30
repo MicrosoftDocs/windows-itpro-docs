@@ -17,6 +17,20 @@ localizationpriority: high
 
 -   Windows 10
 
+to add for RS2:
+Experience/AllowWindowsSpotlightOnActionCenter :
+https://microsoft.sharepoint.com/teams/osg_core_ens/mgmt/Shared%20Documents/DM%20Policy%20Review/DM%20Policy%20Review%20-%20Action%20Center.xlsx?web=1
+ 
+Experience/AllowWindowsSpotlightPersonalization
+This is renamed to Experience/AllowTailoredExperiencesWithDiagnosticData.Will share policy spreadsheet shortly.
+https://microsoft.sharepoint.com/teams/osg_core_ens/mgmt/Shared%20Documents/DM%20Policy%20Review/DM%20Policy%20Review%20-%20Tailored%20Experiences%20RS2.xlsx?web=1
+ 
+ 
+ 
+Experience/AllowWindowsSpotlightWindowsWelcomeExperience
+https://microsoft.sharepoint.com/teams/osg_core_ens/mgmt/Shared%20Documents/DM%20Policy%20Review/DM%20Policy%20Review%20-%20Early%20Bird.xlsx?web=1
+
+
 Windows Spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen. Windows Spotlight is available in all desktop editions of Windows 10. 
 
 For managed devices running Windows 10 Enterprise and Windows 10 Education, enterprise administrators can configure a mobile device management (MDM) or Group Policy setting to prevent users from using the Windows Spotlight background. For managed devices running Windows 10 Pro, version 1607, administrators can disable suggestions for third party apps.
