@@ -93,3 +93,6 @@ Topic | Description
 [Troubleshoot Windows Defender Advanced Threat Protection](troubleshoot-windows-defender-advanced-threat-protection.md) | This topic contains information to help IT Pros find workarounds for the known issues and troubleshoot issues in Windows Defender ATP.
 [Review events and errors on endpoints with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)| Review events and errors associated with event IDs to determine if further troubleshooting steps are required.
 [Windows Defender compatibility](defender-compatibility-windows-defender-advanced-threat-protection.md) | Learn about how Windows Defender works in conjunction with Windows Defender ATP.
+
+## Related topic
+[Windows Defender ATP helps detect sophisticated threats](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)
