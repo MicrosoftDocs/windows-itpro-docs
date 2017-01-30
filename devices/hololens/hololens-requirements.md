@@ -36,7 +36,7 @@ When you develop for HoloLens, there are [system requirements and tools](https:/
    - Wi-Fi network
    - Intune or a 3rd party mobile device management (MDM) provider that uses Microsoft MDM APIs
    
-## Upgrade to Windows Holographic for business 
+## Upgrade to Windows Holographic for Business 
 - HoloLens Enterprise license XML file
 
 

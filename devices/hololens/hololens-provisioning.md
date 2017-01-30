@@ -14,7 +14,7 @@ localizationpriority: medium
 Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. The Windows Assessment and Deployment Kit (ADK) for Windows 10 includes the Imaging and Configuration Designer (ICD), a tool for configuring images and runtime settings which are then built into provisioning packages. 
 
 Some of the HoloLens configurations that you can apply in a provisioning package: 
-- Upgrade to Windows Holographic for business
+- Upgrade to Windows Holographic for Business
 - Set up a local account
 - Set up a Wi-Fi connection
 - Apply certificatess to the device
@@ -32,7 +32,7 @@ When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration D
 ## Create a provisioning package for HoloLens
 
 >[!NOTE]
->Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for business or if [the device has already been upgraded to Windows Holographic for business](hololens-upgrade-enterprise.md).
+>Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
 1. On the Windows ICD start page, select **Advanced provisioning**.
 
@@ -110,7 +110,7 @@ In Windows ICD, when you create a provisioning package for Windows Holographic, 
 | **Accounts**  | Create a local account. HoloLens currently supports a single user only. Creating multiple local accounts in a provisioning package is not supported. <br><br>**IMPORTANT**<br>If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in. If the user account is locked out, you must [perform a full device recovery](https://developer.microsoft.com/windows/holographic/reset_or_recover_your_hololens#perform_a_full_device_recovery). |
 | **Certificates** | Deploy a certificate to HoloLens.  |
 | **ConnectivityProfiles** | Deploy a Wi-Fi profile to HoloLens.   |
-| **EditionUpgrade** | [Upgrade to Windows Holographic for business.](hololens-upgrade-enterprise.md)  |
+| **EditionUpgrade** | [Upgrade to Windows Holographic for Business.](hololens-upgrade-enterprise.md)  |
 | **Policies** | Allow or prevent developer mode on HoloLens.  |
 
 >[!NOTE]

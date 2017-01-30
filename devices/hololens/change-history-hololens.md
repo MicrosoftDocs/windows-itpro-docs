@@ -18,4 +18,4 @@ This topic lists new and updated topics in the [Microsoft HoloLens documentation
 
 | New or changed topic | Description |
 | --- | --- |
-| All topics | Changed all references from **Windows Holographic Enterprise** to **Windows Holographic for business** |
+| All topics | Changed all references from **Windows Holographic Enterprise** to **Windows Holographic for Business** |
