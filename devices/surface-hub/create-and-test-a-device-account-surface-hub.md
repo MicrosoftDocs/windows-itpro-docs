@@ -46,7 +46,8 @@ For detailed steps using PowerShell to provision a device account, choose an opt
 | Organization deployment             |  Description                  |
 |---------------------------------|--------------------------------------|
 | [Online deployment (Office 365)](online-deployment-surface-hub-device-accounts.md) | Your organization's environment is deployed entirely on Office 365. |
-| [On-premises deployment](on-premises-deployment-surface-hub-device-accounts.md) | Your organization has servers that it controls and uses to host Active Directory, Exchange, and Skype for Business (or Lync). |
+| [On-premises deployment (single-forest)](on-premises-deployment-surface-hub-device-accounts.md) | Your organization has servers that it controls and uses to host Active Directory, Exchange, and Skype for Business (or Lync) in a single-forest environment. |
+| [On-premises deployment (multiple forests)](on-premises-deployment-surface-hub-multi-forest.md) | Your organization has servers that it controls and uses to host Active Directory, Exchange, and Skype for Business (or Lync) in a multi-forest environment. |
 | [Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md) | Your organization has a mix of services, with some hosted on-premises and some hosted online through Office 365. |
 
 If you prefer to use a graphical user interface, some steps can be done using UI instead of PowerShell. 
