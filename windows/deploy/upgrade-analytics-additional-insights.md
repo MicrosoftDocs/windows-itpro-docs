@@ -5,7 +5,7 @@ ms.prod: w10
 author: greg-lindsay
 ---
 
-# Additional insights
+# Upgrade Analytics - Additional insights
 
 This topic provides information on additional features that are available in Upgrade Analytics to provide insights into your environment. These include:
 

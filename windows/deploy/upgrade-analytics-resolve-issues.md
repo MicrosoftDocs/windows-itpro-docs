@@ -5,7 +5,7 @@ ms.prod: w10
 author: greg-lindsay
 ---
 
-# Upgrade Analytics - Resolve application and driver issues
+# Upgrade Analytics - Step 2: Resolve app and driver issues
 
 This section of the Upgrade Analytics workflow reports application and driver inventory and shows you which applications have known issues, which applications have no known issues, and which drivers have issues. We identify applications and drivers that need attention and suggest fixes when we know about them.
 
