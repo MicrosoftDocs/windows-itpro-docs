@@ -37,7 +37,7 @@ This section guides you in getting the necessary information to set and use the 
 
   - **client_ID**: OAuth 2 Client ID
   - **client_secret**: OAuth 2 Client secret
-  - **auth_url**:  ```https://login.microsoftonline.com/<tenantID>?resource=https%3A%2F%2FWDATPAlertExport.Seville.onmicrosoft.com ```
+  - **auth_url**:  `https://login.microsoftonline.com/ <tenantID>?resource=https%3A%2F%2FWDATPAlertExport.Seville.onmicrosoft.com`
 
     >!NOTE
     >Replace *tenantID* with your tenant ID.
@@ -49,29 +49,32 @@ This section guides you in getting the necessary information to set and use the 
 
   - **redirect_uri**: ```https://localhost:44300/wdatpconnector```
   - **scope**: Leave the value blank
+  - **reauthenticate**: Set to `true`
 
 3. Download the [WDATP-connector.jsonparser.properties](http://download.microsoft.com/download/0/8/A/08A4957D-0923-4353-B25F-395EAE363E8C/WDATP-connector.jsonparser.properties) file. This file is used to parse the information from Windows Defender ATP to HP ArcSight consumable format.
 
 ## Install and configure HP ArcSight SmartConnector
 The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin).
 
-1. Install the latest 32-bit Windows SmartConnector installer. You can find this in the HPE Software center. The tool is typically installed in `C:\Program Files\ArcSightSmartConnectors\current\bin`.
+1. Install the latest 32-bit Windows SmartConnector installer. You can find this in the HPE Software center. The tool is typically installed in `C:\Program Files\ArcSightSmartConnectors\current\bin` (default path).
 
 2. Follow the installation wizard through the following tasks:
   - Introduction
-  - Choose Install Folder
-  - Choose Install Typical
-  - Choose Shortcut Folder
-  - Pre-Installation Summary
+  - Choose Install Folder: Use default path or select your preferred path
+  - Choose Install Set: Typical
+  - Choose Shortcut Folder: Specify where to create icons or choose not to create icons
+  - Pre-Installation Summary: Review installation information
   - Installing...
 
-  You can keep the default values for each of these tasks.
+  You can keep the default values for each of these tasks or modify the selection to suit your requirements.
 
 3. Open File Explorer and put the two configuration files in the installation location, for example:
 
-  - WDATP-connector.jsonparser.properties: `C:\Program Files\ArcSightSmartConnectors\current\user\agent\flexagent\`
+  - WDATP-connector.jsonparser.properties: `C:\Program Files\ArcSightSmartConnectors\flexagent\`
+
     >[!NOTE]
-    > This location is mandatory.
+    >This location is mandatory.
+
   - WDATP-connector.properties: C:\ArcSightSmartConnectors\ _descriptive-name_\
 
 4. After the installation of the core connector completes, the Connector Setup window opens. In the Connector Setup window, select **Add a Connector**.
