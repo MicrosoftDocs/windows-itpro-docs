@@ -1,5 +1,5 @@
 ---
-title: 4774(S) An account was mapped for logon. (Windows 10)
+title: 4774(S, F) An account was mapped for logon. (Windows 10)
 description: Describes security event 4774(S, F) An account was mapped for logon.
 ms.pagetype: security
 ms.prod: w10
