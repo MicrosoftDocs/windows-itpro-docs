@@ -13,23 +13,24 @@ Based on telemetry data from user computers, Upgrade Analytics identifies applic
 
 Information is refreshed daily so you can monitor upgrade progress. Any changes your team makes, such as assigning application importance and marking applications as ready to upgrade, are reflected 24 hours after you make them.
 
-When you are ready to begin the upgrade process, a workflow is provided to guide you through critical high-level tasks. Each step in the workflow is enumerated using blue tiles. Helpful data is provided on white tiles to help you get started, and to complete each step.
+When you are ready to begin the upgrade process, a workflow is provided to guide you through critical high-level tasks. 
 
 ![Workflow](images/ua-cg-14.png)
 
+Each step in the workflow is enumerated using blue tiles. Helpful data is provided on white tiles to help you get started, monitor progress, and to complete each step.
+
 >**Important**: Before starting the Upgrade Analytics workflow, you should define a [Target OS](#target-os).
 
-An [Upgrade overview](upgrade-analytics-upgrade-overview.md) is provided that you can use to review compatibility and usage information about computers, applications, and drivers before starting the upgrade process, and at any stage along the way.
+The following information and workflow is provided:
 
-See the following topics for information about steps in the workflow:
-
-- [Step 1: Identify important apps](upgrade-analytics-identify-apps.md)
-- [Step 2: Resolve issues](upgrade-analytics-resolve-issues.md)
-- [Step 3: Deploy](upgrade-analytics-deploy-windows.md)
+- [Upgrade overview](upgrade-analytics-upgrade-overview.md): Compatibility and usage information about computers, applications, and drivers.
+- [Step 1: Identify important apps](upgrade-analytics-identify-apps.md): Assign importance levels to prioritize your applications.
+- [Step 2: Resolve issues](upgrade-analytics-resolve-issues.md): Identify and resolve problems with applications.
+- [Step 3: Deploy](upgrade-analytics-deploy-windows.md): Start the upgrade process.
 
 Also see the following topic for information about additional components of your environment that can be affected by the upgrade process:
 
-- [Additional insights](upgrade-analytics-additional-insights.md)
+- [Additional insights](upgrade-analytics-additional-insights.md): Find out which MS Office add-ins are installed, and review web site activity.
 
 ## Target OS
 
