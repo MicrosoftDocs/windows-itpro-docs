@@ -19,56 +19,18 @@ When users travel, their organization’s confidential data goes with them. Wher
 
 Table 2 lists specific data-protection concerns and how they are addressed in Windows 10 and Windows 7.
 
-Table 2. Data Protection in Windows 10 and Windows 7
+**Table 2. Data Protection in Windows 10 and Windows 7**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Windows 7</th>
-<th align="left">Windows 10</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>When BitLocker is used with a PIN to protect startup, PCs such as kiosks cannot be restarted remotely.</p></td>
-<td align="left"><p>Modern Windows devices are increasingly protected with device encryption out of the box and support SSO to seamlessly protect the BitLocker encryption keys from cold boot attacks.</p>
-<p>Network Unlock allows PCs to start automatically when connected to the internal network.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Users must contact the IT department to change their BitLocker PIN or password.</p></td>
-<td align="left"><p>Modern Windows devices no longer require a PIN in the pre-boot environment to protect BitLocker encryption keys from cold boot attacks.</p>
-<p>Users who have standard privileges can change their BitLocker PIN or password on legacy devices that require a PIN.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>When BitLocker is enabled, the provisioning process can take several hours.</p></td>
-<td align="left"><p>BitLocker pre-provisioning, encrypting hard drives, and Used Space Only encryption allow administrators to enable BitLocker quickly on new computers.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>There is no support for using BitLocker with self-encrypting drives (SEDs).</p></td>
-<td align="left"><p>BitLocker supports offloading encryption to encrypted hard drives.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Administrators have to use separate tools to manage encrypted hard drives.</p></td>
-<td align="left"><p>BitLocker supports encrypted hard drives with onboard encryption hardware built in, which allows administrators to use the familiar BitLocker administrative tools to manage them.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Encrypting a new flash drive can take more than 20 minutes.</p></td>
-<td align="left"><p>Used Space Only encryption in BitLocker To Go allows users to encrypt drives in seconds.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>BitLocker could require users to enter a recovery key when system configuration changes occur.</p></td>
-<td align="left"><p>BitLocker requires the user to enter a recovery key only when disk corruption occurs or when he or she loses the PIN or password.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Users need to enter a PIN to start the PC, and then their password to sign in to Windows.</p></td>
-<td align="left"><p>Modern Windows devices are increasingly protected with device encryption out of the box and support SSO to help protect the BitLocker encryption keys from cold boot attacks.</p></td>
-</tr>
-</tbody>
-</table>
+| Windows 7 | Windows 10 |
+|---|---|
+| When BitLocker is used with a PIN to protect startup, PCs such as kiosks cannot be restarted remotely. | Modern Windows devices are increasingly protected with device encryption out of the box and support SSO to seamlessly protect the BitLocker encryption keys from cold boot attacks.<br><br>Network Unlock allows PCs to start automatically when connected to the internal network. |
+| Users must contact the IT department to change their BitLocker PIN or password. | Modern Windows devices no longer require a PIN in the pre-boot environment to protect BitLocker encryption keys from cold boot attacks.<br><br>Users who have standard privileges can change their BitLocker PIN or password on legacy devices that require a PIN. |
+| When BitLocker is enabled, the provisioning process can take several hours. | BitLocker pre-provisioning, encrypting hard drives, and Used Space Only encryption allow administrators to enable BitLocker quickly on new computers. |
+| There is no support for using BitLocker with self-encrypting drives (SEDs). | BitLocker supports offloading encryption to encrypted hard drives. |
+| Administrators have to use separate tools to manage encrypted hard drives. | BitLocker supports encrypted hard drives with onboard encryption hardware built in, which allows administrators to use the familiar BitLocker administrative tools to manage them. |
+| Encrypting a new flash drive can take more than 20 minutes. | Used Space Only encryption in BitLocker To Go allows users to encrypt drives in seconds. |
+| BitLocker could require users to enter a recovery key when system configuration changes occur. | BitLocker requires the user to enter a recovery key only when disk corruption occurs or when he or she loses the PIN or password. |
+| Users need to enter a PIN to start the PC, and then their password to sign in to Windows. | Modern Windows devices are increasingly protected with device encryption out of the box and support SSO to help protect the BitLocker encryption keys from cold boot attacks. |
 
 The sections that follow describe these improvements in more detail.
 
