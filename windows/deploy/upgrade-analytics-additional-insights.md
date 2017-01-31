@@ -1,5 +1,5 @@
 ---
-title: Additional insights
+title: Upgrade Analytics - Additional insights
 description: Explains additional features of Upgrade Analytics.
 ms.prod: w10
 author: greg-lindsay

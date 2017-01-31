@@ -15,7 +15,11 @@ You and your IT team can use the Upgrade Analytics workflow to prioritize and wo
 
 Information is refreshed daily so you can monitor upgrade progress. Any changes your team makes, such as assigning application importance and marking applications as ready to upgrade, are reflected 24 hours after you make them.
 
-The Upgrade Analytics solution provides compatibility and usage information about computers, applications, and drivers. A workflow is also provided to walk you through the high-level tasks required during the upgrade process. See the following topics for more information:
+The Upgrade Analytics solution provides compatibility and usage information about computers, applications, and drivers. You can use the workflow to walk through high-level tasks that are required during the upgrade process. Steps in the workflow are enumerated using blue tiles, and white tiles provide the data necessary for you to get started and then complete each step.
+
+![Target OS](images/ua-cg-14.png)
+
+See the following topics for more information:
 
 - [Upgrade overview](upgrade-analytics-upgrade-overview.md)
 

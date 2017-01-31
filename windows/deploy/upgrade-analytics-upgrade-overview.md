@@ -9,7 +9,9 @@ author: greg-lindsay
 
 The first blade in the Upgrade Analytics solution is the **UPGRADE OVERVIEW** blade. This blade displays the total count of computers sharing data with Microsoft, and the count of computers upgraded. As you successfully upgrade computers, the count of computers upgraded increases.
 
-Check this blade for data refresh status, including the date and time of the most recent data update and whether user changes are reflected. If a user change is pending when changing the upgrade assessment or importance level of an application or driver, **Data refresh pending** is displayed in amber. 
+The upgrade overivew blade displays data refresh status, including the date and time of the most recent data update and whether user changes are reflected. 
+
+If a user change is pending when changing the upgrade assessment or importance level of an application or driver, **Data refresh pending** is displayed in amber. 
 
 User changes are processed once every 24 hours and display as: **Up to date** in green when there are no pending changes.  A banner color of amber indicates that data processing is delayed. See the following examples:
 
