@@ -22,14 +22,14 @@ Add preface and cover page here (Steve May to provide)
 
 The fields in this section contain common device data that is added to every event.
 
-### Common data - Device extension**
+### Common data - Device extension
 
 | Field | Description |
 | - | - |
 | localId | Represents a locally defined unique ID for the device, not the human readable device name. Most likely equal to the value stored at HKLM\Software\Microsoft\SQMClient\MachineId |
 | deviceClass | Represents the classification of the device, the device “family”.  For example, Desktop, Server, or Mobile.|
 
-### Common data - Envelope extension**
+### Common data - Envelope extension
 
 | Field | Description |
 | - | - |
@@ -48,13 +48,13 @@ The fields in this section contain common device data that is added to every eve
 | cV | Represents the Correlation Vector: A single field for tracking partial order of related telemetry events across component boundaries.|
 | tags | Represents the pre-release build "flight ID" |
 
-### Common data - OS extension**
+### Common data - OS extension
 
 | Field | Description |
 | - | - |
 | expId | Represents the “experiment ID”. The standard for associating a flight, such as an OS flight (pre-release build), or an experiment, such as a web site UX experiment, with an event is to record the flight / experiment IDs in Part A of the common schema.|
 
-### Common data - Telemetry extension**
+### Common data - Telemetry extension
 
 | Field | Description |
 | - | - |
@@ -65,7 +65,7 @@ The fields in this section contain common device data that is added to every eve
 | cat | Represents a bitmask of the ETW Keywords associated with the event.|
 | flags | Represents the bitmap that captures various Windows specific flags.|
 
-### Common data - User extension**
+### Common data - User extension
 
 | Field | Description |
 | - | - |
@@ -169,7 +169,7 @@ This event sends true/false compatibility decision data about a file to help kee
 | SdbReinstallUpgradeWarn | The file is tagged as needing to be reinstalled after upgrade with a warning in the SDB (but not blocking upgrade). Example: FALSE
 | SoftBlock | The file is softblocked in the SDB and has a warning uplevel. Example: FALSE
 
-**Microsoft.Windows.Appraiser.General.DatasourceApplicationFileAdd**
+### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileAdd
 
 This event represents the compatibility information (database entries, registered as anti-virus, predicted to be compatible) for a file.
 
@@ -196,7 +196,7 @@ This event represents the compatibility information (database entries, registere
 | SdbEntries_item_SdbUpgradeMode | Example: Swap |
 | SdbEntries_item_SdbUxBlocktypeOverride | Example: SDB_UX_BLOCKTYPE_OVERRIDE_MIG_FIXED |
 
-**Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoBlockAdd**
+### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoBlockAdd
 
 This event sends blocking data about any compatibility blocking entries hit on the system that are not directly related to specific applications or devices, to help keep Windows up to date.
 
@@ -212,7 +212,7 @@ This event sends blocking data about any compatibility blocking entries hit on t
 | SdbEntries_item_SdbUpgradeMode | Example: Swap |
 | SdbEntries_item_SdbUxBlocktypeOverride | Example: SDB_UX_BLOCKTYPE_OVERRIDE_UPGRADE_UNTIL_UPDATE_BLOCK |
 
-**Microsoft.Windows.Appraiser.General.DecisionMatchingInfoBlockAdd**
+### Microsoft.Windows.Appraiser.General.DecisionMatchingInfoBlockAdd
 
 This event sends true/false compatibility decision data about blocking entries on the system that are not keyed by either applications or devices, to help keep Windows up to date.
 
@@ -226,7 +226,7 @@ This event sends true/false compatibility decision data about blocking entries o
 | SdbBlockUpgradeCanReinstall | Indicates if a matching info block blocks upgrade but has the can reinstall tag. Example: FALSE |
 | SdbBlockUpgradeUntilUpdate | Indicates if a matching info block blocks upgrade but has the until update tag. Example: FALSE |
 
-**Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPassiveAdd**
+### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPassiveAdd
 
 This event sends compatibility database information about non-blocking compatibility entries on the system that are not keyed by either applications or devices, to help keep Windows up to date.
 
@@ -246,7 +246,7 @@ This event sends compatibility database information about non-blocking compatibi
 | SdbEntries_item_SdbUpgradeMode | Example: Swap |
 | SdbEntries_item_SdbUxBlocktypeOverride | Example: SDB_UX_BLOCKTYPE_OVERRIDE_MIG_FIXED |
 
-**Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPostUpgradeAdd**
+### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPostUpgradeAdd
 
 This event sends compatibility database information about entries requiring reinstallation after an upgrade on the system that are not keyed by either applications or devices, to help keep Windows up to date.
 
@@ -263,7 +263,7 @@ This event sends compatibility database information about entries requiring rein
 | SdbEntries_item_SdbUpgradeMode | Example: Swap |
 | SdbEntries_item_SdbUxBlocktypeOverride | Example: SDB_UX_BLOCKTYPE_OVERRIDE_REINSTALL_BLOCK |
 
-**Microsoft.Windows.Appraiser.General.DecisionMatchingInfoPostUpgradeAdd**
+### Microsoft.Windows.Appraiser.General.DecisionMatchingInfoPostUpgradeAdd
 
 This event sends results of compatibility decisions (true/false) about entries requiring reinstallation after upgrade that are not keyed by applications or devices, to help keep Windows up to date.
 
@@ -275,7 +275,7 @@ This event sends results of compatibility decisions (true/false) about entries r
 | NeedsReinstallPostUpgradeData | Example: FALSE |
 | SdbReinstallUpgrade | Example: TRUE |
 
-**Microsoft.Windows.Appraiser.General.InventoryApplicationIeAddonAdd**
+### Microsoft.Windows.Appraiser.General.InventoryApplicationIeAddonAdd
 
 This event sends basic metadata about an Internet Explorer add-on installed on the system, to help resolve issues in deployment and OS upgrades. 
 
