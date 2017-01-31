@@ -22,19 +22,21 @@ Cortana can automatically create a Suggested reminder, based on commitments made
 
 ## Use Cortana to set Suggested reminders based on email commitments
 
-1. Click on the **Cortana** search box in the taskbar, click the **Notebook** icon, and then click **Permissions**.
+1. Make sure that you've connected Cortana to Office 365 [Set up and test Cortana with Office 365 in your organization](cortana-at-work-o365.md).
 
-2. Make sure the **Contacts, email, calendar, and communication history** option is turned on.
+2. Click on the **Cortana** search box in the taskbar, click the **Notebook** icon, and then click **Permissions**.
+
+3. Make sure the **Contacts, email, calendar, and communication history** option is turned on.
 
     ![Permissions options for Cortana at work](images/cortana-communication-history-permissions.png)
 
-3. Click the **Notebook** icon again, click the **Suggested reminders** option, and then click the **Remind me about things I’ve committed to doing** box, and then click **Save**.
+4. Click the **Notebook** icon again, click the **Suggested reminders** option, and then click the **Remind me about things I’ve committed to doing** box, and then click **Save**.
 
     ![Suggested reminders options for Cortana at work](images/cortana-suggested-reminder-settings.png)
 
-4. Create and send an email to yourself (so you can see the Suggested reminder), including the text, _I’ll finish this project by end of day today_.
+5. Create and send an email to yourself (so you can see the Suggested reminder), including the text, _I’ll finish this project by end of day today_.
 
-5.	After you get the email, click on the Cortana **Home** icon, and scroll to today’s events.
+6.	After you get the email, click on the Cortana **Home** icon, and scroll to today’s events.
 
     From here, you can view the email where you made the promise, set aside time on your calendar, officially set the reminder, or mark the reminder as completed.
 
