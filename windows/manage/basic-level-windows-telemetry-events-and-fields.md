@@ -97,7 +97,6 @@ This User Account Control (UAC) event collects information on elevations that or
 
 Appraiser Core Data events provide an inventory of what is on the device for the purposes of understanding compatibility and upgrade issues. This device inventory gathers information such as all the applications on the device, IE Add-ons, drivers on the device, and peripherals attached to the device. Appraiser reviews the device inventory to see if it is compatible/ready for upgrade, and for problems that might need to be addressed by the upgrade.
 
-
 **Microsoft.Windows.Appraiser.General.InventoryApplicationAdd**
 
 This event represents the basic metadata about an application installed on the system.  
@@ -150,25 +149,25 @@ This event sends true/false compatibility decision data about a file to help kee
 
 | Field | Description |
 | - | - |
-| objectInstanceId	LongPathHash: A hash of the full file path including the file name. Example: 000062da165862855691751758b333cc4b4d2b3adc60 
-| BlockAlreadyInbox	Indicates that the uplevel runtime block on the file already existed on the current OS and is therefore not a regression. Example: FALSE
-| BlockingApplication	Indicates if there are any application issues that interfere with upgrade due to the file in question. Example: FALSE
-| DisplayGenericMessage	Indicates if there will be a generic message shown for this file.  Example: FALSE
-| HardBlock	The file is hardblocked in the SDB and can't run uplevel. Example: FALSE
-| HasUxBlockOverride	The file has a block that is overridden by a tag in the SDB to have it not show up in reports or to the user (e.g. Intel CPL). Example: FALSE
-| MigApplication	The file has a MigXML from the SDB associated with it that applies to the current upgrade mode. Example: FALSE
-| MigRemoval	The file has a MigXML from the SDB that will cause the app to be removed on upgrade.  Example: FALSE
-| NeedsDismissAction	Indicates the file will be bubbled up to setup as a dismissible action. Example: FALSE
-| NeedsInstallPostUpgradeData	Indicates that after upgrade, this file will have a post-upgrade notification to install a replacement for the application (requires a situation that the file must be uninstalled to upgrade). Example: FALSE
-| NeedsNotifyPostUpgradeData	Indicates the file has a notification mig that should be surfaced in post-upgrade. Example: FALSE
-| NeedsReinstallPostUpgradeData	Indicates that after upgrade, this file will have a post-upgrade notification to reinstall the app. Example: FALSE
-| NeedsUninstallAction	The file must be uninstalled to upgrade. Example: FALSE
-| SdbBlockUpgrade	The file is tagged as blocking upgrade in the SDB. Example: FALSE
-| SdbBlockUpgradeCanReinstall	The file is tagged as blocking upgrade in the SDB but can be reinstalled after upgrade. Example: FALSE
-| SdbBlockUpgradeUntilUpdate	The file is tagged as blocking upgrade in the SDB but if the app is updated the upgrade can proceed. Example: FALSE
-| SdbReinstallUpgrade	The file is tagged as needing to be reinstalled after upgrade in the SDB (but not blocking upgrade). Example: FALSE
-| SdbReinstallUpgradeWarn	The file is tagged as needing to be reinstalled after upgrade with a warning in the SDB (but not blocking upgrade). Example: FALSE
-| SoftBlock	The file is softblocked in the SDB and has a warning uplevel. Example: FALSE
+| objectInstanceId | LongPathHash: A hash of the full file path including the file name. Example: 000062da165862855691751758b333cc4b4d2b3adc60 
+| BlockAlreadyInbox | Indicates that the uplevel runtime block on the file already existed on the current OS and is therefore not a regression. Example: FALSE
+| BlockingApplication | Indicates if there are any application issues that interfere with upgrade due to the file in question. Example: FALSE
+| DisplayGenericMessage | Indicates if there will be a generic message shown for this file.  Example: FALSE
+| HardBlock | The file is hardblocked in the SDB and can't run uplevel. Example: FALSE
+| HasUxBlockOverride | The file has a block that is overridden by a tag in the SDB to have it not show up in reports or to the user (e.g. Intel CPL). Example: FALSE
+| MigApplication | The file has a MigXML from the SDB associated with it that applies to the current upgrade mode. Example: FALSE
+| MigRemoval | The file has a MigXML from the SDB that will cause the app to be removed on upgrade.  Example: FALSE
+| NeedsDismissAction | Indicates the file will be bubbled up to setup as a dismissible action. Example: FALSE
+| NeedsInstallPostUpgradeData | Indicates that after upgrade, this file will have a post-upgrade notification to install a replacement for the application (requires a situation that the file must be uninstalled to upgrade). Example: FALSE
+| NeedsNotifyPostUpgradeData | Indicates the file has a notification mig that should be surfaced in post-upgrade. Example: FALSE
+| NeedsReinstallPostUpgradeData | Indicates that after upgrade, this file will have a post-upgrade notification to reinstall the app. Example: FALSE
+| NeedsUninstallAction | The file must be uninstalled to upgrade. Example: FALSE
+| SdbBlockUpgrade | The file is tagged as blocking upgrade in the SDB. Example: FALSE
+| SdbBlockUpgradeCanReinstall | The file is tagged as blocking upgrade in the SDB but can be reinstalled after upgrade. Example: FALSE
+| SdbBlockUpgradeUntilUpdate | The file is tagged as blocking upgrade in the SDB but if the app is updated the upgrade can proceed. Example: FALSE
+| SdbReinstallUpgrade | The file is tagged as needing to be reinstalled after upgrade in the SDB (but not blocking upgrade). Example: FALSE
+| SdbReinstallUpgradeWarn | The file is tagged as needing to be reinstalled after upgrade with a warning in the SDB (but not blocking upgrade). Example: FALSE
+| SoftBlock | The file is softblocked in the SDB and has a warning uplevel. Example: FALSE
 
 **Microsoft.Windows.Appraiser.General.DatasourceApplicationFileAdd**
 
@@ -215,6 +214,8 @@ This event sends blocking data about any compatibility blocking entries hit on t
 
 **Microsoft.Windows.Appraiser.General.DecisionMatchingInfoBlockAdd**
 
+This event sends true/false compatibility decision data about blocking entries on the system that are not keyed by either applications or devices, to help keep Windows up to date.
+
 | Field | Description |
 | - | - |
 | objectInstanceId | Will always be "BlockingMatchingInfo" |
@@ -224,3 +225,571 @@ This event sends blocking data about any compatibility blocking entries hit on t
 | SdbBlockUpgrade | Indicates if a matching info block blocks upgrade. Example: FALSE |
 | SdbBlockUpgradeCanReinstall | Indicates if a matching info block blocks upgrade but has the can reinstall tag. Example: FALSE |
 | SdbBlockUpgradeUntilUpdate | Indicates if a matching info block blocks upgrade but has the until update tag. Example: FALSE |
+
+**Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPassiveAdd**
+
+This event sends compatibility database information about non-blocking compatibility entries on the system that are not keyed by either applications or devices, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "PassiveMatchingInfo." |
+| SdbEntries | An array of fields indicating the SDB entries that apply to this file. |
+| SdbEntries_item_MigShimCommand | The command line to be passed to the MigShim if one is applicable. |
+| SdbEntries_item_MigShimName | Example: MigrateVCRuntimeShim |
+| SdbEntries_item_MigXmlName | Example: Intel_Rapid_Storage_Technolgy_Enterprise_Filter_Driver__3__PART |
+| SdbEntries_item_MigXmlType | Example: MIG_XML_TYPE_FIXED |
+| SdbEntries_item_SdbAppGuid | Example: {03760bce-35d7-47a3-b83b-de673fdb6ab4} |
+| SdbEntries_item_SdbAppName | Example: VC Runtime |
+| SdbEntries_item_SdbAppVendor | Example: Microsoft |
+| SdbEntries_item_SdbBlockType | Example: BlockUpgradeUntilUpdate |
+| SdbEntries_item_SdbEntryGuid | Example: {00b0c9b2-3f04-4795-a8ac-5b7bd5ea2ea8} |
+| SdbEntries_item_SdbUpgradeMode | Example: Swap |
+| SdbEntries_item_SdbUxBlocktypeOverride | Example: SDB_UX_BLOCKTYPE_OVERRIDE_MIG_FIXED |
+
+**Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPostUpgradeAdd**
+
+This event sends compatibility database information about entries requiring reinstallation after an upgrade on the system that are not keyed by either applications or devices, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "PostUpgradeMatchingInfo" |
+| SdbEntries | An array of fields indicating the SDB entries that apply to this file. |
+| SdbEntries_item_ReinstallUpgradeMessage | Example: Resource: 10022 |
+| SdbEntries_item_SdbAppGuid | Example: {0ba2f09d-5288-45fa-be32-001857cc020f} |
+| SdbEntries_item_SdbAppName | Example: Virtual Machine Manager Self-Service Client |
+| SdbEntries_item_SdbAppVendor | Example: Microsoft Corporation |
+| SdbEntries_item_SdbBlockType | Example: ReinstallAfterUpgrade |
+| SdbEntries_item_SdbEntryGuid | Example: {2a1cc617-9ee0-4dff-b3c0-a09cfc13543a} |
+| SdbEntries_item_SdbUpgradeMode | Example: Swap |
+| SdbEntries_item_SdbUxBlocktypeOverride | Example: SDB_UX_BLOCKTYPE_OVERRIDE_REINSTALL_BLOCK |
+
+**Microsoft.Windows.Appraiser.General.DecisionMatchingInfoPostUpgradeAdd**
+
+This event sends results of compatibility decisions (true/false) about entries requiring reinstallation after upgrade that are not keyed by applications or devices, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "PostUpgradeMatchingInfo" |
+| NeedsInstallPostUpgradeData | Example: FALSE |
+| NeedsNotifyPostUpgradeData | Example: FALSE |
+| NeedsReinstallPostUpgradeData | Example: FALSE |
+| SdbReinstallUpgrade | Example: TRUE |
+
+**Microsoft.Windows.Appraiser.General.InventoryApplicationIeAddonAdd**
+
+This event sends basic metadata about an Internet Explorer add-on installed on the system, to help resolve issues in deployment and OS upgrades. 
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Example: {BDEADEF5-C265-11D0-BCED-00A0C90AB50F} |
+| BinFileVersion | Example: 15.0.4625.1000 |
+| FileBinProductVersion | Example: 15.0.4625.0 |
+| FileBinaryType | Example: PE32_I386 |
+| FileCompanyName | Example: Microsoft Corporation |
+| FileDescription | Example: Microsoft Office Just-In-Time Virtualization Interceptor |
+| FileId | Example: 0000c633db3fd3733674d7ffc16c69ef81f0e4969978 |
+| FileLinkDate | Example: 5/20/2014  8:29:19 AM |
+| FileLowerCaseLongPath | Example: c:\\program files\\microsoft office 15\\root\\office15\\interceptor.dll |
+| FileName | Example: Interceptor.dll |
+| FileOsComponent | If the file is an OS component |
+| FilePeChecksum | Example: 0x1f699 |
+| FilePeHeaderHash | Example: 010111e422259d3e46ad4c56fc9c2424f9de617e40a0 |
+| FileProductName | Example: Microsoft Office |
+| FileProductVersion | Example: 15.0.4625.1000 |
+| FileSize | Example: 0x1eaf8 |
+| FileSizeOfImage | Example: 0x22000 |
+| FileSwitchBackContext | Example: 0x0100000000000601 |
+| FileVerLanguage | Example: 1033 |
+| FileVersion | Example: 15.0.4625.1000 |
+| Name | Example: Microsoft Silverlight |
+| Publisher | Example: Microsoft Corporation |
+| Type | Example: ActiveX |
+
+**Microsoft.Windows.Appraiser.General.Device.InventoryDeviceContainerAdd**
+
+This event sends basic metadata about a device container (such as a monitor or printer as opposed to a PNP device) to help keep Windows up to date. 
+
+| Field | Description |
+| - | - |
+| objectInstanceId | ContainerId. Example: {552dd320-0dae-2794-2b41-df42fee22488} |
+| Categories | A list of functional categories that the container belongs to. Comma separated. Example: communication.phone,storage |
+| DeviceDataId | It is a hash from DeviceModelId, manufacturer, model name, primary category, and categories. Example: {f80f0f7f-d602-5b93-f740-a3e30a9a7840} |
+| DeviceModelId | It is a hash of all of the child devices' hwid. Example: {697805c1-6c6f-306e-4393-78cc9430d314} |
+| DiscoveryMethod | No value most of time. Example: "" |
+| FriendlyName | The name of container. Example: "Windows Phone" |
+| Icon | Path and/or index to icon file. Example: C:\\windows\\system32\\config\\systemprofile\\appdata\\local\\microsoft\\device metadata\\dmrccache\\en-us\\99f54e5c-a243-4854-a5a5-8a35b2a843cf\\DeviceInformation\\CX300.ico |
+| IsActive | IsConnected OR the device is last-seen less than 14 days. Example: 1 |
+| IsConnected | More than IsPresent. For physically attached device, IsConnected is the same as IsPresent. For wireless device, IsConnected has communication link while IsPresent may not. Example: 1 |
+| IsMachineContainer | Whether the container is the root machine itself. Example: 0 |
+| IsNetworked | Networked device, e.g., a network printer. Example: 0 |
+| IsPaired | This is for AEP (Association End Point) device, which is a type of devices that needs association(pairing) and authentication before use. Example: 0 |
+| Manufacturer | Manufacturer name. Example: Polycom, Inc. |
+| ModelId | GUID for model. Example: "{da09b4cb-2391-a76e-4bb3-5f0fdc02c278}" |
+| ModelName | Name for model. Example: Polycom CX300 |
+| ModelNumber | Not common, but is the model number for the device if set. Example: CX300 |
+| PrimaryCategory | Primary category. Example: communication.phone |
+
+**Microsoft.Windows.Appraiser.General.Device.InventoryDevicePnpAdd**
+
+This event sends basic metadata about a PNP device and its associated driver to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | The Device Instance ID of the device (uniquely identifies a device in the system). | Example: pci\ven_8086&dev_0085&subsys_13118086&rev_34\4&2dded11c&0&00e1 |
+| COMPID | A JSON array the provides the value and order of the compatible ID tree for the device.  Orders are integers, COMPIDs look like "usb\class_03&subclass_01&prot_01" |
+| ContainerId | System-supplied GUID that uniquely groups the functional devices associated with a single-function or multifunction device installed in the computer. Example: {27db0821-3bf9-f71a-f96f-a53403857690} |
+| Excluded | Excluded from the inventory report. Example: Never |
+| HWID | A JSON array that provides the value and order of the HWID tree for the device. Orders are integers, HWIDs look like "hid\vid_049f&pid_000e&rev_0102&mi_01&col04" |
+| STACKID_item_Value | A JSON array that provides the value and order of the STACKID tree for the device. Orders are integers, STACKIDs look like "\driver\hidusb" |
+| audioCaptureDriver | A value indicates that the device loaded an Audio capture driver: wdma_bt.inf:997b70458bdb4031:BthHfAud:6.3.9600.17397:bthhfenum\\bthhfpaudio |
+| audioRenderDriver | A value indicates that the device loaded an Audio render driver. Example: wdma_bt.inf:997b70458bdb4031:BthHfAud:6.3.9600.17397:bthhfenum\\bthhfpaudio |
+| class | The device setup class of the driver loaded for the device. Example: net |
+| classGuid | The GUID for the device setup class. Example: {4d36e972-e325-11ce-bfc1-08002be10318} |
+| description | The device description from the driver INF. Example: Marvell AVASTAR Wireless-AC Network Controller |
+| deviceState | DeviceState is a bitmask of the following: DEVICE_IS_CONNECTED 0x0001 (currently only for container). DEVICE_IS_NETWORK_DEVICE 0x0002 (currently only for container). DEVICE_IS_PAIRED 0x0004 (currently only for container). DEVICE_IS_ACTIVE 0x0008 (currently never set). DEVICE_IS_MACHINE 0x0010 (currently only for container). DEVICE_IS_PRESENT 0x0020 (currently always set). DEVICE_IS_HIDDEN 0x0040. DEVICE_IS_PRINTER 0x0080 (currently only for container). DEVICE_IS_WIRELESS 0x0100. DEVICE_IS_WIRELESS_FAT 0x0200. The most common values are therefore: 32 (0x20)= device is present. 96 (0x60)= device is present but hidden. 288 (0x120)= device is a wireless device that is present. |
+| displayDxLevel | The supported d3d feature level. One of the values in https://msdn.microsoft.com/en-us/library/windows/desktop/ff476329(v=vs.85).aspx. Example: 45312 |
+| displayHybridSupport | Whether the GPU is integrated or discrete in the hybrid system. Example: Integrated |
+| displayWddmVersion | Windows Display Driver Model version. Example: 1300 |
+| driverId | Used to join with InventoryDriverBinary (on its key). Example: 0000f768ad5256cc5ef4b070bb5b99d1742028ca2bd3 |
+| driverInBox | Is the driver an inbox driver? Example: 1 |
+| driverIsKernelMode | Is it kernel mode driver? Example: 1 |
+| driverPackageId | Used to join with InventoryDriverPackage (on its key). Example: 0000128aa9f80512fef91fd1bd7f8c2ab8fee9a07689 |
+| driverPackageStrongName | The immediate parent directory name in the Directory field of InventoryDriverPackage. Example: wmiacpi.inf_amd64_de775fdac0374d06 |
+| driverSigned | Signing. Example: 1 |
+| driverVerDate | The DriverTimestamp (from InventoryDriverBinary) converted to a Date format, not the date from DriverVer in the driver INF. Example: 12/13/2014 |
+| driverVerVersion | The DriverVersion (from InventoryDriverBinary), not the version from DriverVer in the driver INF. Example: 6.3.9600.17617 |
+| enumerator | The bus that enumerated the device. Example: pci |
+| fileName | Driver file name. Example: wificlass.sys |
+| infPath | INF file name (the name could be renamed by OS, such as oemXX.inf) |
+| installState | Device installation state. One of these values: https://msdn.microsoft.com/en-us/library/windows/hardware/ff543130(v=vs.85).aspx. Example: 0 |
+| lowerClassFilters | Lower class filter drivers' IDs, comma separated. Example: 00001deece9fa1408e84e5e6a54bf95869cb9e721172,0000f7c911352df091e37b4fd5f9864a558053bf325e |
+| lowerFilters | Lower filter drivers' IDs, comma separated. Example: 00006f14b11f10d09b4c67f7a7189375cefece51c54a |
+| manufacturer | Manufacturer name. Example: Marvell Semiconductor. Inc. |
+| matchingID | Represents the hardware ID or compatible ID that Windows uses to install a device instance. Example: pci\\ven_11ab&dev_2b38&subsys_045e0001 |
+| model | Model name. Example: Marvell AVASTAR Wireless-AC Network Controller |
+| originalInf | Original inf name from driver store. Example: mrvlpcie8897.inf |
+| parentId | Device instance id of the parent of the device. Example: pci\\ven_8086&dev_9c14&subsys_9c141414&rev_e4\\3&11583659&1&e0 |
+| printerDriver | Example: Xerox Office XPS Color Class Driver V1.2 |
+| printerIeee1284DeviceId | Example:  MFG:Xerox;CMD:PCL, PJL, PostScript;MDL:WorkCentre 7855;CLS:Printer;DES:Xerox WorkCentre 7855;CID:XR_PS_Office_Color |
+| problemCode | One of the CM_PROB_Xxx problem codes that are defined in \public\shared\inc\Cfg.h. Example: 0 |
+| provider | Driver provider company. Example: Microsoft Corporation |
+| service | The name of the service that is installed for the device. Example: wificlass |
+| subClass | The subclass of the device, currently this is only set for devices that load a native WLAN or Mobile Broadband driver. Example: net.wlan.native |
+| upperClassFilters | Upper class filter drivers' IDs, comma separated. Example: 0000044ebee0e8bdf295fd4cd4e9f98962a7254b6e8d |
+| upperFilters | Upper filter drivers' IDs, comma separated. Example: 000011bd6e7f93660e7046714c8d025e28e5cb540984 |
+
+
+**Microsoft.Windows.Appraiser.General.Device.DatasourceDevicePnpAdd**
+
+This event sends compatibility data (database entries, is boot critical, has a driver up-level) for a PNP device, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | The Device Instance ID of the device (uniquely identifies a device in the system). Example: pci\ven_8086&dev_0085&subsys_13118086&rev_34\4&2dded11c&0&00e1 |
+| ActiveNetworkConnection | Is the device an active network device? Example: TRUE |
+| CosDeviceRating | Enumeration indicating if there is a driver on the target operating system.  Example: 80 |
+| CosDeviceSolution | Enumeration indicating how a driver on the target operating system is available.  Example: 12 |
+| CosDeviceSolutionUrl | Empty string |
+| CosPopulatedFromId | The expected uplevel driver matching ID based on driver coverage data. Example: hid_device_upr:ff00-ffff |
+| IsBootCritical | Is the device boot critical? Example: TRUE |
+| SdbEntries | An array of fields indicating the SDB entries that apply to this device. |
+| SdbEntries_item_SdbAppGuid | Example: {0ba2f09d-5288-45fa-be32-001857cc020f} |
+| SdbEntries_item_SdbAppName | Example: Virtual Machine Manager Self-Service Client |
+| SdbEntries_item_SdbAppVendor | Example: Microsoft Corporation |
+| SdbEntries_item_SdbBlockType | Example: ReinstallAfterUpgrade |
+| SdbEntries_item_SdbEntryGuid | Example: {2a1cc617-9ee0-4dff-b3c0-a09cfc13543a} |
+| SdbEntries_item_SdbUpgradeMode | Example: Swap |
+| SdbEntries_item_SdbUxBlocktypeOverride | Example: SDB_UX_BLOCKTYPE_OVERRIDE_REINSTALL_BLOCK |
+| UplevelInboxDriver | Is there a driver uplevel for this device? Example: TRUE |
+| WuDriverCoverage | Is there a driver uplevel for this device according to Windows Update? Example: TRUE |
+
+**Microsoft.Windows.Appraiser.General.Device.DecisionDevicePnpAdd**
+
+This event sends true/false compatibility decision data about a PNP device to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | The Device Instance ID of the device (uniquely identifies a device in the system). Example: pci\ven_8086&dev_0085&subsys_13118086&rev_34\4&2dded11c&0&00e1 |
+| AssociatedDriverIsBlocked | Indicates if the driver associated with this PNP device is blocked. Example: FALSE |
+| BlockAssociatedDriver | Indicates if the driver associated with this PNP device should be blocked based on a driver block authored against this PNP device. Example: FALSE |
+| BlockUpgradeIfDriverBlocked | Indicates if the PNP device is both boot critical and does not have an uplevel driver inbox. Example: FALSE |
+| BlockUpgradeIfDriverBlockedAndOnlyActiveNetwork | If this PNP device's driver is found to be blocked, this device will cause an upgrade block if there are no other unblocked active network devices on the system. Example: FALSE |
+| BlockingDevice | Indicates if the PNP device is blocking upgrade. Example: FALSE |
+| DisplayGenericMessage | Indicates if a generic message would be presented during setup for this PNP device.  Example: FALSE |
+| DriverAvailableInbox | Is there an inbox driver available uplevel for this PNP device? Example: FALSE |
+| DriverAvailableOnline | Is there a WU driver available uplevel for this PNP device? Example: FALSE |
+| DriverAvailableUplevel | Is there an uplevel driver on WU or inbox for this PNP device? Example: FALSE |
+| DriverBlockOverridden | Indicates if there is a driver block on the device that has been overrided.  Example: FALSE |
+| NeedsDismissAction | Indicates if the user would need to dismiss something during setup for this device. Example: FALSE |
+| NotRegressed | Indicates if the device has a problem code on the source OS that is no better than the one it would have on the target OS.  Example: FALSE |
+| SdbDeviceBlockUpgrade | Indicates if the PNP device has an SDB block that blocks upgrade for the current upgrade mode. Example: FALSE |
+| SdbDriverBlockOverridden | Indicates if the PNP device has an SDB block that blocks upgrade for the current upgrade mode, but that block has been overridden. Example: FALSE |
+
+**Microsoft.Windows.Appraiser.General.Driver.DatasourceDriverPackageAdd**
+
+These events send data about driver usage on the system in order determine whether apps and devices will work after an OS upgrade, and then to make improvements to ensure that upgrades are successful.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | DriverPackageId, used for uniquely identifying a driver package on a system.  Example: 0000ce5aae60f3a60a9b9a715a6cee2053e305e7869c |
+| SdbEntries | An array of fields indicating the SDB entries that apply to this driver package. |
+| SdbEntries_item_SdbAppGuid | Example: {5f29791d-ad69-40a4-9783-6edbdf66bd4b} |
+| SdbEntries_item_SdbAppName | Example: Microsoft PDF/XPS Printer |
+| SdbEntries_item_SdbAppVendor | Example: Microsoft |
+| SdbEntries_item_SdbBlockType | Example: BlockDriver |
+| SdbEntries_item_SdbEntryGuid | Example: {380213ca-97c8-4fdc-b194-b4f714006796} |
+| SdbEntries_item_SdbUpgradeMode | Example: Service |
+| SdbEntries_item_SdbUxBlocktypeOverride | Example: SDB_UX_BLOCKTYPE_OVERRIDE_NO_BLOCK |
+
+**Microsoft.Windows.Appraiser.General.Driver.DecisionDriverPackageAdd**
+
+This event sends true/false decision data about driver package compatibility to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | DriverPackageId, used for uniquely identifying a driver package on a system.  Example: 0000ce5aae60f3a60a9b9a715a6cee2053e305e7869c |
+| DriverBlockOverridden | Indicates if the driver package has an SDB block that blocks it from migrating, but that block has been overridden. Example: FALSE |
+| DriverIsDeviceBlocked | Indicates if the driver package was blocked because of a device block. Example: FALSE |
+| DriverIsDriverBlocked | Indicates that the driver package has a driver block from the SDB (or is class blocked) Example: FALSE |
+| DriverShouldNotMigrate | Indicates if the driver package should not be migrated during upgrade. Example: FALSE |
+| SdbDriverBlockOverridden | Indicates if the driver package has an SDB block that blocks it from migrating, but that block has been overridden. Example: FALSE |
+
+**Microsoft.Windows.Appraiser.General.Driver.InventoryDriverBinaryAdd**
+
+This event sends basic metadata about driver binaries running on the system to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Can be used to join with InventoryDevicePnp (on driverId, upperFilters, etc.). Example: 000038dbe54a022b6c73edbdb8bf5cba32a882d2df2a |
+| DriverCheckSum | Driver file checksum. Example: 242561 |
+| DriverCompany | Company name. Example: Advanced Micro Devices, Inc. |
+| DriverName | Driver file name. Example:  1394ohci.sys |
+| DriverPackageId | Package id. Example: 0000ac7d4445e02036880297d09945b84b0e203af804 |
+| DriverPackageStrongName | Driver package StrongName.  Example: acpi.inf_amd64_b82068c7a43a101f |
+| DriverTimeStamp | The low 32 bits of the time stamp of the image. This represents the date and time the image was created by the linker. The value is represented in the number of seconds elapsed since midnight (00:00:00), January 1, 1970, Universal Coordinated Time, according to the system clock. Example: 1429917363 |
+| DriverType | Bitfield of driver attributes: 1. define DRIVER_MAP_DRIVER_TYPE_PRINTER 0x0001 2. define DRIVER_MAP_DRIVER_TYPE_KERNEL 0x0002 3. define DRIVER_MAP_DRIVER_TYPE_USER 0x0004 4. define DRIVER_MAP_DRIVER_IS_SIGNED 0x0008 5. define DRIVER_MAP_DRIVER_IS_INBOX 0x0010 6. define  RIVER_MAP_DRIVER_IS_WINQUAL 0x0040 7. define DRIVER_MAP_DRIVER_IS_SELF_SIGNED 0x0020 8. define DRIVER_MAP_DRIVER_IS_CI_SIGNED 0x0080 9. define DRIVER_MAP_DRIVER_HAS_BOOT_SERVICE 0x0100 10. define DRIVER_MAP_DRIVER_TYPE_I386 0x10000 11. define DRIVER_MAP_DRIVER_TYPE_IA64 0x20000 12. define  RIVER_MAP_DRIVER_TYPE_AMD64 0x40000 13. define DRIVER_MAP_DRIVER_TYPE_ARM 0x10000014. define DRIVER_MAP_DRIVER_TYPE_THUMB 0x200000 15. define DRIVER_MAP_DRIVER_TYPE_ARMNT 0x400000 16. define DRIVER_MAP_DRIVER_IS_TIME_STAMPED 0x800000 Example: 8650778"|
+| DriverVersion | Version. Example: 10.0.10074.0 |
+| ImageSize | File size. Example: 602112 |
+| NdisVersion | Network Driver Interface Specification (NDIS) framework version. Example: 6.3 |
+| Product | Product name that is obtained from file info. Example: QLogic 10 GigE |
+| ProductVersion | Driver version that is obtained from file info. Usually the same as DriverVersion. Example: 7.12.2.3 |
+| WdfVersion | Windows Driver Framework (WDF) version. Example: 1.15 |
+
+**Microsoft.Windows.Appraiser.General.Driver.InventoryDriverPackageAdd**
+
+This event sends basic metadata about drive packages installed on the system  to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Used to join with InventoryDevicePnp (on driverPackageId). Example: 0000ce5aae60f3a60a9b9a715a6cee2053e305e7869c |
+| Class | Same as in InventoryDevicePnp. Example: printer |
+| ClassGuid | Same as in InventoryDevicePnp. Example: {4d36e979-e325-11ce-bfc1-08002be10318} |
+| Date | The manufacturer's build date of the driver. Note this could be earlier than DriverTimeStamp in the InventoryDriverBinary. Example: 5/28/2012 |
+| Directory | Package directory full path. Example: C:\Windows\System32\DriverStore\FileRepository\hdxmb3hd.inf_amd64_cabd3ee20f1ff1b9 |
+| Inf | Same as InfPath in InventoryDevicePnp. Example: oem9.inf |
+| InfSections_item_InfCharacteristics | Network component characteristics. Values see: https://msdn.microsoft.com/en-us/library/windows/hardware/ff547832(v=vs.85).aspx. Example: 40 |
+| InfSections_item_InfClass | Network component class. Example: nettrans |
+| InfSections_item_InfDisplayName | Name of a network component that displays in the property sheet dialog box for a network connection. Example: Internet Protocol Version 6 (TCP/IPv6) |
+| InfSections_item_InfDriverId | The driver id in InventoryDriverBinary. Example: 0000b7c8a1a4c6576910a14963528689c598f0dc4183 |
+| InfSections_item_InfInterfaceId | Instance GUID of a network component. Example: {65060815-3298-4178-9575-582f793f2e1c} |
+| InfSections_item_InfName | String ID for the network component. Example: ms_tcpip6 |
+| InfSections_item_InfService | Service name for the network component. Example: NdisCap |
+| OriginalInf | Same as OriginalInf in InventoryDevicePnp. Example: abc.inf |
+| Provider | Provider for the package. Example: Microsoft |
+| SubmissionId | Driver package submission ID. Example: 1633333 |
+| Version | Version of the package. Example: 6.0.7503.1 |
+
+**Microsoft.Windows.Appraiser.General.System.InventorySystemMachineAdd**
+
+This event sends basic metadata about the operating system to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "Machine" |
+| osArchitecture | Architecture for currently running OS from GetSystemInfo. 0 = x86 9 = AMD64 Example: 9 |
+| osBuild | Build number from RtlGetVersion. Example: 7601 |
+| osLangId | Return from GetSystemDefaultLangID. Example: 1033 |
+| osMajor | OS major version from RtlGetVersion. Example: 6 |
+| osMinor | OS minor version from RtlGetVersion. Example: 1 |
+| osSpMajor | Service pack major version from RtlGetVersion. Example: 1 |
+| osSpMinor | Service pack minor version from RtlGetVersion. Example: 0 |
+
+**Microsoft.Windows.Appraiser.General.System.SystemMemoryAdd**
+
+This event sends data on the amount of memory on the system and whether it meets requirements, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "Memory" |
+| Blocking | Is the machine blocked from upgrade due to memory restrictions? Example: FALSE |
+| MemoryRequirementViolated | Indicates if a memory requirement was violated. Example: FALSE |
+| pageFile | The current committed memory limit for the system or the current process, whichever is smaller, in bytes. Example: 19650113536 |
+| ram | Amount of RAM on the system. Example: 17099976704 |
+| ramKB | ram/1024. Example: 16777216 |
+| virtual | The size of the user-mode portion of the virtual address space of the calling process, in bytes. Example: 140737488224256 |
+| virtualKB | virtual/1024. Example: 137438953344 |
+
+**Microsoft.Windows.Appraiser.General.System.InventorySystemProcessorAdd**
+
+This event sends basic metadata about the processor in the system to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "Processor" |
+| architecture | Processor architecture. Example: x64 |
+| caption | Processor caption. Example: Intel64 Family 6 Model 30 Stepping 5 |
+| family | Processor family. Example: 198 |
+| level | Number of cache levels. Example: 6 |
+| level2CacheSize | Processor L2 cache size. Example: 1024 |
+| level2CacheSpeed | Processor L2 cache speed. Example: 3647205776 |
+| mhz | Processor speed in MHz. Example: 2799 |
+| name | Processor name. Example: Intel(R) Core(TM) i5 CPU 750 @ 2.67GHz |
+| processorId | Processor ID. Example: BFEBFBFF000106E5 |
+| stepping | Chip revision. Example: 4 |
+| type | Processor type. Example: 3 |
+| vendor | Processor vendor. Example: GenuineIntel |
+
+**Microsoft.Windows.Appraiser.General.System.InventorySystemBiosAdd**
+
+This event sends basic metadata about the BIOS to determine whether it has a compatibility block. 
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "Bios" |
+| biosDate | Release date of the Windows BIOS in the Coordinated Universal Time (UTC) format of YYYYMMDDHHMMSS.MMMMMM(+-)OOO from Win32_BIOS. Example: 20100607000000.000000+000 |
+| biosName | Name field from Win32_BIOS. Example: Ver 1.00PARTTBLx |
+| manufacturer | Manufacturer field from Win32_ComputerSystem. Example: LENOVO |
+| model | Model field from Win32_ComputerSystem. Example: 2537J35 |
+
+**Microsoft.Windows.Appraiser.General.System.DatasourceSystemBiosAdd**
+
+This event sends compatibility database information about the BIOS to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "Bios" |
+| SdbEntries| An array of fields indicating the SDB entries that apply to this BIOS. |
+| SdbEntries_item_SdbBlockType| Example: BiosBlock |
+| SdbEntries_item_SdbEntryGuid| Example: {b77118fd-0d87-4f63-a836-d5c6bd8eed4c} |
+| SdbEntries_item_SdbUpgradeMode| Example: Swap |
+
+**Microsoft.Windows.Appraiser.General.System.DecisionSystemBiosAdd**
+
+This event sends true/false compatibility decision data about the BIOS to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "Bios" |
+| Blocking| Indicates if the device is blocked from upgrade due to a BIOS block. Example: FALSE |
+| HasBiosBlock| Does the device have a BIOS block? Example: FALSE |
+
+**Microsoft.Windows.Appraiser.General.System.DecisionSystemBiosAdd**
+
+This event sends defunct data. It always reads false.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "Processor" |
+| Blocking | Will always be FALSE |
+| ProcessorRequirementViolated | Will always be FALSE |
+
+**Microsoft.Windows.Appraiser.General.System.DecisionSystemProcessorCompareExchangeAdd**
+
+This event sends data indicating whether the system supports the CompareExchange128 CPU requirement, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "CompareExchange128" |
+| Blocking | Indicates if upgrade is blocked due to this CPU check. Example: FALSE |
+| CompareExchange128Support | Indicates if the CPU supports CompareExchange128. Example: TRUE |
+
+**Microsoft.Windows.Appraiser.General.System.SystemProcessorLahfSahfAdd**
+
+This event sends data indicating whether the system supports the LahfSahf CPU requirement, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "LahfSahf" |
+| Blocking | Indicates if upgrade is blocked due to this CPU check. Example: FALSE |
+| LahfSahfSupport | Indicates if the CPU supports LAHF/SAHF.  Example: TRUE |
+
+**Microsoft.Windows.Appraiser.General.System.SystemProcessorNxAdd**
+
+This event sends data indicating whether the system supports the NX CPU requirement, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "NX" |
+| Blocking | Indicates if upgrade is blocked due to this CPU check. Example: FALSE |
+| NXDriverResult | Provides the result of the driver used to check for NX support when not deterministic.  Example: NotApplicable |
+| NXProcessorSupport | Indicates if the CPU supports NX. Example: TRUE |
+
+**Microsoft.Windows.Appraiser.General.System.SystemProcessorPrefetchWAdd**
+
+This event sends data indicating whether the system supports the PrefetchW CPU requirement, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "PrefetchW" |
+| Blocking | Indicates if upgrade is blocked due to this CPU check. Example: FALSE |
+| PrefetchWSupport | Indicates if the CPU supports PrefetchW. Example: TRUE |
+
+**Microsoft.Windows.Appraiser.General.System.SystemProcessorSse2Add**
+
+This event sends data indicating whether the system supports the SSE2 CPU requirement, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "SSE2" |
+| Blocking | Indicates if upgrade is blocked due to this CPU check. Example: FALSE |
+| SSE2ProcessorSupport | Indicates if the CPU supports SSE2. Example: TRUE |
+
+**Microsoft.Windows.Appraiser.General.System.SystemTouchAdd**
+
+This event sends data indicating whether the system supports touch, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "Touch" |
+| IntegratedTouchDigitizerPresent | Indicates if there is an integrated touch digitizer present. Example: FALSE |
+| MaximumTouches | Maximum number of touch points supported by the device hardware. Example: 1 |
+
+**Microsoft.Windows.Appraiser.General.System.SystemWimAdd**
+
+This event sends data indicating whether the operating system is running from a compressed Window Imaging Format (WIM) file, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "Wim" |
+| IsWimBoot | Indicates if the current operating system is running from a compressed Windows Imaging Format (WIM) file. Example: FALSE |
+| RegistryWimBootValue | Raw value from registry used to indicate if system is running from a WIM. Example: 0 |
+
+**Microsoft.Windows.Appraiser.General.System.SystemWindowsActivationStatusAdd**
+
+This event sends data indicating whether the current operating system is activated, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "WindowsActivationStatus" |
+| WindowsIsLicensedApiValue | Result from API used to indicate if operating system is activated. Example: TRUE |
+| WindowsNotActivatedDecision | Indicates if the current operating system is activated. Example: FALSE |
+
+**Microsoft.Windows.Appraiser.General.System.SystemWlanAdd**
+
+This event sends data indicating whether the system has WLAN, and if so, whether it uses an emulated driver that could block an upgrade, to help keep Windows up to date. 
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "Wlan" |
+| Blocking | Indicates if upgrade is blocked due to an emulated WLAN driver. Example: FALSE |
+| HasWlanBlock | Indicates if upgrade is blocked due to an emulated WLAN driver. Example: FALSE |
+| WlanEmulatedDriver | Indicates if the system has an emulated WLAN driver. Example: FALSE |
+| WlanExists | Indicates if the device supports WLAN at all. Example: TRUE |
+| WlanModulePresent | Indicates if any WLAN modules are present. Example: TRUE |
+| WlanNativeDriver | Indicates if the system has a non-emulated WLAN driver. Example: TRUE |
+
+**Microsoft.Windows.Appraiser.General.System.InventoryMiscellaneousUexIndicator**
+
+This event sends value data about the markers on custom devices, to help keep Windows up to date. The formal name for markers is UEX Indicators. See marker list for definitions. 
+
+| Field | Description |
+| - | - |
+| Key | Name of the marker/indicator |
+| IndicatorValue | Value of the marker/indicator |
+
+**Microsoft.Windows.Appraiser.General.System.InventoryLanguagePackAdd**
+
+This event sends data about the number of language packs installed on the system, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "LanguagePack" |
+| HasLanguagePack | Is LanguagePackCount >=2? Indicates the presence of a language pack. Example: FALSE |
+| LanguagePackCount | The count of language packs. Calculated by calling EnumUILanguages with MUI_ALL_INSTALLED_LANGUAGES. Example: 1 |
+
+**Microsoft.Windows.Appraiser.General.System.InventoryMediaCenterAdd**
+
+This event sends true/false data about decision points used to understand whether Windows Media Center is used on the system, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "MediaCenter" |
+| EverLaunched | Has Media Center ever been launched? Example: FALSE |
+| HasConfiguredTv | Has the user configured a TV tuner through Media Center? Example: FALSE |
+| HasExtendedUserAccounts | Are any Media Center Extender user accounts set up? Example: FALSE |
+| HasWatchedFolders | Are any folders configured for Media Center to watch? Example: FALSE |
+| IsDefaultLauncher | Is Media Center the default app for opening music or video files? Example: FALSE |
+| IsPaid | Is the user running a Media Center SKU that implies they paid for Media Center? Example: FALSE |
+| IsSupported | Does the running OS even support MediaCenter? Example: FALSE |
+
+**Microsoft.Windows.Appraiser.General.System.DecisionMediaCenterAdd**
+
+This event sends true/false result data about all compatibility decisions about the presence of Windows Media Center, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "MediaCenter" |
+| BlockingApplication | Indicates if there are any application issues that interfere with upgrade due to MediaCenter. Will equal MediaCenterInUse. Example: FALSE |
+| MediaCenterActivelyUsed | Indicates if MediaCenter is supported on the SKU, has been run at least once, and has the MediaCenterIndicators as true. Example: FALSE |
+| MediaCenterInUse | Indicates if MediaCenter being used should be bubbled up. This is the top-level indicator and is equal to MediaCenterPaidOrActivelyUsed. Example: FALSE |
+| MediaCenterIndicators | True if any of the signals indicating media center use are true (default launcher, watched folders, extender accounts, tv tuner). Example: FALSE |
+| MediaCenterPaidOrActivelyUsed | Equals IsPaid (running on a media center SKU) OR MediaCenterActivelyUsed. Example: FALSE |
+| NeedsDismissAction | Indicates if there are any dismissible actions coming from MediaCenter. Will equal MediaCenterInUse. Example: FALSE |
+
+**Microsoft.Windows.Appraiser.General.GatedDownloadSuccess**
+
+This event sends data indicating that the download of a set of instructions for quick-blocking has succeeded, to help keep Windows up to date. The download has run a check to see if there are any issues on this device that would make the device ineligible for upgrade. At a future date the scan could be successful if the blocking issue has been fixed.
+
+| Field | Description |
+| - | - |
+| Time | The client time of the event. |
+| CensusId | An ID for the system calculated from the Sqm ID, WER ID, and RAC IDs.  Example: {654e6838-9772-4f41-aafc-01642afb4081}. |
+| Target | The URL of the CAB that was downloaded to run the scan. |
+
+**Microsoft.Windows.Appraiser.General.GatedNewTarget**
+
+This event sends data indicating that a new set of instructions for quick-blocking is available, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| Time | The client time of the event. |
+| CensusId | An ID for the system calculated from the Sqm ID, WER ID, and RAC IDs.  Example: {654e6838-9772-4f41-aafc-01642afb4081}. |
+| Target | The URL of the CAB that will be downloaded to run the scan. |
+
+**Microsoft.Windows.Appraiser.General.GatedRegChange**
+
+This event sends data about the results of running a set of quick-blocking instructions, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| Time | The client time of the event. |
+| CensusId | An ID for the system calculated from the Sqm ID, WER ID, and RAC IDs.  Example: {654e6838-9772-4f41-aafc-01642afb4081}. |
+| RegKey | The registry key name for which a result is being sent. |
+| RegValue | The registry value for which a result is being sent. |
+| OldData | The previous data in the registry value before the scan ran. |
+| NewData | The data in the registry value after the scan completed. |
+
+**Microsoft.Windows.Appraiser.General.GatedRunEnd**
+
+This event sends data indicating that a quick-blocking run has completed, and also provides the result, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| Time | The client time of the event. |
+| CensusId | An ID for the system calculated from the Sqm ID, WER ID, and RAC IDs.  Example: {654e6838-9772-4f41-aafc-01642afb4081}. |
+| Target | The URL that provided the CAB that will be used to run the scan. |
+| Success | Whether or not the scan was successful. Example: 1. |
+| Result | The hresult from the scan.  Example: 0. |
+
+**Microsoft.Windows.Appraiser.General.GatedRunStart**
+
+This event sends data indicating that a quick-blocking run has started, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| Time | The client time of the event. |
+| CensusId | An ID for the system calculated from the Sqm ID, WER ID, and RAC IDs.  Example: {654e6838-9772-4f41-aafc-01642afb4081}. |
+| Target | The URL that provided the CAB that will be used to run the scan. |
+
+
+
