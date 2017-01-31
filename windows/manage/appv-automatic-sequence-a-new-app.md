@@ -36,7 +36,24 @@ You have 2 options for provisioning an VM for auto-sequencing:
 - Provision an existing VM
 
 ### Provision a new VM for auto-sequencing by using a VHD file
-The tasks of setting up user account, enabling auto-login, enabling remote PowerShell scripting, installing the App-V Sequencer, etc., will be covered by this OS provisioning stage. This stage is premised on a base OS being available in the form of VHD image
+Provisioning your new VM includes setting up a user account, turning on remote PowerShell scripting, and installing the App-V Sequencer.
+
+>[!IMPORTANT]
+>For this process to work, you must have a base operating system available as a VHD image file. If you need a tool to create your VHD file, you can use the [Convert-WindowsImage.ps1](https://gallery.technet.microsoft.com/scriptcenter/Convert-WindowsImageps1-0fe23a8f) command-line tool. This tool is now a Function, so it must first be loaded and then called by its name, without the extension. Code examples and more info about the tool are included on the download site.<p>Additionally, when you run this tool to create your file, you must explicitly specify the parameter 'VHDPartitionStyle' as 'MBR'. The default partition value, 'GPT' will cause a boot failure in your VHD file. 
+
+**On the Host device**
+1. Install Windows 10, version 1703 and the matching ADK version, making sure that you've selected to install the **Microsoft Application Virtualization (App-V) Auto Sequencer** component.
+
+2. Make sure that Hyper-V is turned on. For more info about turning on and using Hyper-V, see [Hyper-V on Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server)
+
+3. Open PowerShell as an admin and run the **New-AppVSequencerVM** cmdlet, using the required parameters:
+
+    ```
+    New-AppVSequencerVM -VMName <NameForVM> -ADKPath <PathToADKInstallerFolder> -VHDPath <PathToVHD> [-VMSwitch <NameForNetworkSwitch>] [-VMMemory <VMMemorySize>] [-CPUCount <CPUCoreCount>] [-SessionSetupTimeout <TimeoutValueInMinutes>] [UseADKWebInstaller]
+    ```
+    Where the VHD file and matching ADK tools are located on the Host device and referenced in the 'ADKPath' and the 'VHDPath' parameters.
+
+A new Hyper-V VM file is created out of the provisioned VHD, creating a "clean" checkpoint, from where all of the sequencing and updating will start.
 
 ### Provision an existing VM for auto-sequencing
  
