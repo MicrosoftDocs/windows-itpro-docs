@@ -15,22 +15,23 @@ You and your IT team can use the Upgrade Analytics workflow to prioritize and wo
 
 Information is refreshed daily so you can monitor upgrade progress. Any changes your team makes, such as assigning application importance and marking applications as ready to upgrade, are reflected 24 hours after you make them.
 
-The Upgrade Analytics solution provides compatibility and usage information about computers, applications, and drivers. You can use the workflow to walk through high-level tasks that are required during the upgrade process. Steps in the workflow are enumerated using blue tiles, and white tiles provide the data necessary for you to get started and then complete each step.
+>**Important**: Before starting the Upgrade Analytics workflow, you should define a [Target OS](#target-os).
 
-![Target OS](images/ua-cg-14.png)
+When you are ready to begin the upgrade process, a workflow is provided to guide you through critical high-level tasks. Each step is enumerated using blue tiles. Helpful data is provided on white tiles to help you get started, and to complete each step.
 
-See the following topics for more information:
+![Workflow](images/ua-cg-14.png)
 
-- [Upgrade overview](upgrade-analytics-upgrade-overview.md)
+An [Upgrade overview](upgrade-analytics-upgrade-overview.md) is provided that you can use to review compatibility and usage information about computers, applications, and drivers before starting the upgrade process, and at any stage along the way.
 
-- Upgrade Analytics workflow:
-    - [Step 1: Identify important apps](upgrade-analytics-identify-apps.md)
-    - [Step 2: Resolve issues](upgrade-analytics-resolve-issues.md)
-    - [Step 3: Deploy](upgrade-analytics-deploy-windows.md)
-<P>
+See the following topics for information about steps in the workflow:
+
+- [Step 1: Identify important apps](upgrade-analytics-identify-apps.md)
+- [Step 2: Resolve issues](upgrade-analytics-resolve-issues.md)
+- [Step 3: Deploy](upgrade-analytics-deploy-windows.md)
+
+Also see the following topic for information about additional components of your environment that can be affected by the upgrade process:
+
 - [Additional insights](upgrade-analytics-additional-insights.md)
-
->**Important**: The Upgrade Analytics workflow is affected by the **Target OS** setting. See the following section for more information.
 
 ## Target OS
 
