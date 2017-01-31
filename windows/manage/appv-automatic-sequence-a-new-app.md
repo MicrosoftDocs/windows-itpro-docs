@@ -41,8 +41,8 @@ Provisioning your new VM includes setting up a user account, turning on remote P
 >[!IMPORTANT]
 >For this process to work, you must have a base operating system available as a VHD image file. If you need a tool to create your VHD file, you can use the [Convert-WindowsImage.ps1](https://gallery.technet.microsoft.com/scriptcenter/Convert-WindowsImageps1-0fe23a8f) command-line tool. This tool is now a Function, so it must first be loaded and then called by its name, without the extension. Code examples and more info about the tool are included on the download site.<p>Additionally, when you run this tool to create your file, you must explicitly specify the parameter 'VHDPartitionStyle' as 'MBR'. The default partition value, 'GPT' will cause a boot failure in your VHD file. 
 
-**On the Host device**
-1. Install Windows 10, version 1703 and the matching ADK version, making sure that you've selected to install the **Microsoft Application Virtualization (App-V) Auto Sequencer** component.
+**To provision your VM using a VHD file**
+1. On the Host device, install Windows 10, version 1703 and the matching ADK version, making sure that you've selected to install the **Microsoft Application Virtualization (App-V) Auto Sequencer** component.
 
 2. Make sure that Hyper-V is turned on. For more info about turning on and using Hyper-V, see [Hyper-V on Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server)
 
