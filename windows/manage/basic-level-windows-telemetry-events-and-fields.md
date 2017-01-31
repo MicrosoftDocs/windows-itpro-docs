@@ -107,24 +107,24 @@ This event represents the basic metadata about an application installed on the s
 
 | Field | Description |
 | - | - |
-| objectInstanceId | ProgramId (a hash of Name, Version, Publisher, and Language of an application used to identify it). Example: 00000144865763f3de24c2ae5a289fde6db300000904
-| HiddenArp | Indicates whether a program hides itself from showing up in ARP. Example: TRUE
-| InstallDate | The date the application was installed (a best guess based on folder creation date heuristics) Example: 4/12/2015 01:27:52
-| InstallDateArpLastModified | The date of the registry ARP key for a given application. Hints at install date but not always accurate. Passed as an array. Example: 4/11/2015  00:00:00
-| InstallDateFromLinkFile | The estimated date of install based on the links to the files.  Passed as an array. Example: 4/8/2015  01:06:11
-| InstallDateMsi | The install date if the application was installed via MSI. Passed as an array. Example: 4/11/2015  00:00:00
-| Language | The language code of the program. Language codes can be found at http://support.microsoft.com/kb/221435 Example: 1033
-| MsiPackageCode | A GUID that describes the MSI Package. Multiple 'Products' (apps) can make up an MsiPackage. Example: {1BCC5142-D98C-430B-B74A-484A0328A7CE}
-| MsiProductCode | A GUID that describe the MSI Product. Example: {365812a8-44d6-422e-b737-d540451e5f4e}
-| Name | The name of the application. Location pulled from depends on 'Source' field. Example: 
-| OSVersionAtInstallTime | The four octets from the OS version at the time of the application's install. Example: 
-| PackageFullName | The package full name for a Store application.  Example: Microsoft.Hexic_1.2.0.36_x86__8wekyb3d8bbwe
-| ProgramInstanceId | A hash of the file IDs in a program.  Used to identify application install footprint.  Example: 00002a54cb9c5bc6946b99d4180fec12d6c1103ad849
-| Publisher | The Publisher of the application. Location pulled from depends on the 'Source' field. Example: Neudesic 
-| RootDirPath | The path to the root directory where the program was installed. Example:  %ProgramFiles% (x86)\Neudesic\Azure Storage Explorer 6
-| Source | Where the data for the application was found, such as Add/Remove Programs (ARP), MSI, AppxPackage, etc. Example: Msi
+| objectInstanceId | ProgramId (a hash of Name, Version, Publisher, and Language of an application used to identify it). Example: 00000144865763f3de24c2ae5a289fde6db300000904 |
+| HiddenArp | Indicates whether a program hides itself from showing up in ARP. Example: TRUE |
+| InstallDate | The date the application was installed (a best guess based on folder creation date heuristics) Example: 4/12/2015 01:27:52 |
+| InstallDateArpLastModified | The date of the registry ARP key for a given application. Hints at install date but not always accurate. Passed as an array. Example: 4/11/2015  00:00:00 |
+| InstallDateFromLinkFile | The estimated date of install based on the links to the files.  Passed as an array. Example: 4/8/2015  01:06:11 |
+| InstallDateMsi | The install date if the application was installed via MSI. Passed as an array. Example: 4/11/2015  00:00:00 |
+| Language | The language code of the program. Language codes can be found at http://support.microsoft.com/kb/221435 Example: 1033 |
+| MsiPackageCode | A GUID that describes the MSI Package. Multiple 'Products' (apps) can make up an MsiPackage. Example: {1BCC5142-D98C-430B-B74A-484A0328A7CE} |
+| MsiProductCode | A GUID that describe the MSI Product. Example: {365812a8-44d6-422e-b737-d540451e5f4e} |
+| Name | The name of the application. Location pulled from depends on 'Source' field. Example:  |
+| OSVersionAtInstallTime | The four octets from the OS version at the time of the application's install. Example:  |
+| PackageFullName | The package full name for a Store application.  Example: Microsoft.Hexic_1.2.0.36_x86__8wekyb3d8bbwe |
+| ProgramInstanceId | A hash of the file IDs in a program.  Used to identify application install footprint.  Example: 00002a54cb9c5bc6946b99d4180fec12d6c1103ad849 |
+| Publisher | The Publisher of the application. Location pulled from depends on the 'Source' field. Example: Neudesic  |
+| RootDirPath | The path to the root directory where the program was installed. Example:  %ProgramFiles% (x86)\Neudesic\Azure Storage Explorer 6 |
+| Source | Where the data for the application was found, such as Add/Remove Programs (ARP), MSI, AppxPackage, etc. Example: Msi |
 | Type | One of ("Application", "Hotfix", "BOE", "Service", "Unknown"). Application indicates Win32 or Appx app, Hotfix indicates app updates (KBs), BOE indicates it's an app with no ARP or MSI entry, Service indicates that it is a service. Application and BOE are the ones most likely seen. Example: Application|
-| Version | The version number of the program. Example: 6.00.0003|
+| Version | The version number of the program. Example: 6.00.000 3|
 
 **Microsoft.Windows.Appraiser.General.InventoryApplicationFileAdd**
 
