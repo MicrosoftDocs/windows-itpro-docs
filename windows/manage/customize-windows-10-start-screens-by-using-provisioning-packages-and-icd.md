@@ -21,7 +21,12 @@ localizationpriority: medium
 
 -   [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
-In Windows 10 Enterprise and Windows 10 Education, version 1607, you can use a provisioning package that you create with Windows Imaging and Configuration Designer (ICD) tool to deploy a customized Start and taskbar layout to users. No reimaging is required, and the Start and taskbar layout can be updated simply by overwriting the .xml file that contains the layout. The provisioning package can be applied to a running device. This enables you to customize Start and taskbar layouts for different departments or organizations, with minimal management overhead.
+In Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, version 1607, you can use a provisioning package that you create with Windows Imaging and Configuration Designer (ICD) tool to deploy a customized Start and taskbar layout to users. No reimaging is required, and the Start and taskbar layout can be updated simply by overwriting the .xml file that contains the layout. The provisioning package can be applied to a running device. This enables you to customize Start and taskbar layouts for different departments or organizations, with minimal management overhead.
+
+>[!NOTE]
+>Taskbar configuration is available starting in Windows 10, version 1607.
+>
+>Start and taskbar configuration are available for Windows 10 Pro in version 170#.
 
 >[!IMPORTANT]
 >If you use a provisioning package to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration and allow users to make changes that will persist, apply your configuration by using Group Policy.
@@ -35,8 +40,8 @@ Three features enable Start and taskbar layout control:
 
 -   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
-    **Note**  
-    To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
+    >[!NOTE]  
+    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
 
 -    [You can modify the Start .xml file](configure-windows-10-taskbar.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.
 
@@ -48,13 +53,12 @@ Three features enable Start and taskbar layout control:
 
 Use the [Imaging and Configuration Designer (ICD) tool](https://go.microsoft.com/fwlink/p/?LinkID=525483) included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that applies a customized Start and taskbar layout. [Install the ADK.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 
-> **Important**
-When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+>[!IMPORTANT]
+>When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
 1.  Open ICD (by default, %systemdrive%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+
 2. Choose **Advanced provisioning**.
-
-
 
 3.  Name your project, and click **Next**.
 
@@ -104,14 +108,13 @@ When you build a provisioning package, you may include sensitive information in 
 
 ## Related topics
 
-
-[Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
-
-[Customize and export Start layout](customize-and-export-start-layout.md)
-
-[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-
-[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+- [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
+- [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+- [Customize and export Start layout](customize-and-export-start-layout.md)
+- [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
+- [Start layout XML for mobile editions of Windows 10 (reference)](start-layout-xml-mobile.md)
+- [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
  
 

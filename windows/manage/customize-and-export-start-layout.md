@@ -47,7 +47,7 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 
 **To prepare a test computer**
 
-1.  Set up a test computer on which to customize the Start layout. Your test computer should have the operating system that is installed on the users’ computers (Windows 10 Enterprise or Windows 10 Education). Install all apps and services that the Start layout should display.
+1.  Set up a test computer on which to customize the Start layout. Your test computer should have the operating system that is installed on the users’ computers (Windows 10 Pro, Windows 10 Enterprise, or Windows 10 Education). Install all apps and services that the Start layout should display.
 
 2.  Create a new user account that you will use to customize the Start layout.
 
@@ -147,17 +147,13 @@ If the Start layout is applied by Group Policy or MDM, and the policy is removed
 ## Related topics
 
 
-[Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md)
-
-[Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
-
-[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-
-[Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-
-[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
-
-[Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)
+- [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
+- [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+- [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
+- [Start layout XML for mobile editions of Windows 10 (reference)](start-layout-xml-mobile.md)
+- [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+- [Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
  
 

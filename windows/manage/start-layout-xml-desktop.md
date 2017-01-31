@@ -18,7 +18,7 @@ localizationpriority: high
 
 >**Looking for consumer information?** See [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
-On Windows 10 for desktop editions, the customized Start works by:
+On Windows 10 for desktop editions (Pro, Enterprise, Education), the customized Start works by:
 
 - Windows 10 checks the chosen base default layout, such as the desktop edition and whether Cortana is supported for the country/region.
 
@@ -470,18 +470,13 @@ Once you have created the LayoutModification.xml file and it is present in the d
 ## Related topics
 
 
-[Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md)
-
-[Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
-
-[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-
-[Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-
-[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
-
-[Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)
-
+- [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
+- [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+- [Customize and export Start layout](customize-and-export-start-layout.md)
+- [Start layout XML for mobile editions of Windows 10 (reference)](start-layout-xml-mobile.md)
+- [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+- [Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
  
 
  

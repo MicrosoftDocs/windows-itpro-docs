@@ -1,6 +1,6 @@
 ---
 title: Customize Windows 10 Start with mobile device management (MDM) (Windows 10)
-description: In Windows 10 Enterprise and Windows 10 Education, you can use a mobile device management (MDM) policy to deploy a customized Start layout to users.
+description: You can use a mobile device management (MDM) policy to deploy a customized Start layout to users.
 ms.assetid: F487850D-8950-41FB-9B06-64240127C1E4
 keywords: ["start screen", "start menu"]
 ms.prod: w10
@@ -21,14 +21,17 @@ localizationpriority: medium
 
 -   [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
-In Windows 10 Enterprise and Windows 10 Education, you can use a mobile device management (MDM) policy to deploy a customized Start layout to users. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
+In Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, you can use a mobile device management (MDM) policy to deploy a customized Start layout to users. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
 
-> **Note:** Customized taskbar configuration cannot be applied using MDM at this time.
+>[!NOTE]
+>Taskbar configuration is available starting in Windows 10, version 1607.
+>
+>Start and taskbar configuration are available for Windows 10 Pro in version 170#.
 
 **Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md)
 
-**Warning**  
-When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
+>[!WARNING]
+>When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
 
  
 
@@ -39,11 +42,9 @@ Two features enable Start layout control:
 
 -   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
-    **Note**  
-    To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
-
-     
-
+    >[!NOTE]  
+    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
+  
 -   In MDM, you set the path to the .xml file that defines the Start layout using an OMA-URI setting, which is based on the [Policy configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=623244).
 
 ## <a href="" id="bkmk-domaingpodeployment"></a>Create a policy for your customized Start layout
@@ -120,8 +121,6 @@ This example uses Microsoft Intune to configure an MDM policy that applies a cus
     | **OMA-URI (case sensitive)** | **./User/Vendor/MSFT/Policy/Config/Start/StartLayout**                                                            |
     | **Value**                    | Paste the contents of the Start layout .xml file that you created.                                                              |
 
-     
-
 7.  Click **OK** to save the setting and return to the **Create Policy** page.
 
 8.  Click **Save Policy**.
@@ -129,22 +128,13 @@ This example uses Microsoft Intune to configure an MDM policy that applies a cus
 ## Related topics
 
 
-[Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
-
-[Customize and export Start layout](customize-and-export-start-layout.md)
-
-[Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
-
-[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-
-[Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-
-[Use Windows 10 custom policies to manage device settings with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkID=616316)
-
- 
-
- 
-
+- [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
+- [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+- [Customize and export Start layout](customize-and-export-start-layout.md)
+- [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
+- [Start layout XML for mobile editions of Windows 10 (reference)](start-layout-xml-mobile.md)
+- [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+- [Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 
 
 

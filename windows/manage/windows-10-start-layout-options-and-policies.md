@@ -1,6 +1,6 @@
 ---
 title: Manage Windows 10 Start and taskbar layout  (Windows 10)
-description: Organizations might want to deploy a customized Start and taskbar layout to devices running Windows 10 Enterprise or Windows 10 Education.
+description: Organizations might want to deploy a customized Start and taskbar layout to devices running Windows 10 (Pro, Enterprise, Education).
 ms.assetid: 2E94743B-6A49-463C-9448-B7DD19D9CD6A
 keywords: ["start screen", "start menu"]
 ms.prod: w10
@@ -19,10 +19,12 @@ localizationpriority: high
 
 > **Looking for consumer information?** See [Customize the Start menu](http://windows.microsoft.com/windows-10/getstarted-see-whats-on-the-menu) 
 
-Organizations might want to deploy a customized Start and taskbar configuration to devices running Windows 10 Enterprise or Windows 10 Education. A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Configuring the taskbar allows the organization to pin useful apps for their employees and to remove apps that are pinned by default.
+Organizations might want to deploy a customized Start and taskbar configuration to devices running Windows 10 Pro, Windows 10 Enterprise, or Windows 10 Education. A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Configuring the taskbar allows the organization to pin useful apps for their employees and to remove apps that are pinned by default.
 
 >[!NOTE]
 >Taskbar configuration is available starting in Windows 10, version 1607.
+>
+>Start and taskbar configuration are available for Windows 10 Pro in version 170#.
 
 ## Start options
 
@@ -123,12 +125,13 @@ There are three categories of apps that might be pinned to a taskbar:
 * Default Windows apps, pinned during operating system installation (Microsoft Edge, File Explorer, Store)
 * Apps pinned by the enterprise, such as in an unattended Windows setup
 
- **Note**  
-   The earlier method of using [TaskbarLinks](https://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file is deprecated in Windows 10, version 1607.
+ >[!NOTE]
+ >The earlier method of using [TaskbarLinks](https://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file is deprecated in Windows 10, version 1607.
    
 The following example shows how apps will be pinned - Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using XML to the right (green square).
 
-> **Note**  In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
+>[!NOTE]
+>In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
 
 ![Windows left, user center, enterprise to the right](images/taskbar-generic.png)
 
@@ -155,21 +158,13 @@ The new taskbar layout for upgrades to Windows 10, version 1607 or later, will a
 
 ## Related topics
 
-
-[Customize and export Start layout](customize-and-export-start-layout.md)
-
-[Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
-
-[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-
-[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
-
-[Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-
-[Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)
-
- 
-
+- [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+- [Customize and export Start layout](customize-and-export-start-layout.md)
+- [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
+- [Start layout XML for mobile editions of Windows 10 (reference)](start-layout-xml-mobile.md)
+- [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+- [Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
  
 
 
