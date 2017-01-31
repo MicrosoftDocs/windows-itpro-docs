@@ -22,14 +22,14 @@ Add preface and cover page here (Steve May to provide)
 
 The fields in this section contain common device data that is added to every event.
 
-**Common data - Device extension**
+### Common data - Device extension**
 
 | Field | Description |
 | - | - |
 | localId | Represents a locally defined unique ID for the device, not the human readable device name. Most likely equal to the value stored at HKLM\Software\Microsoft\SQMClient\MachineId |
 | deviceClass | Represents the classification of the device, the device “family”.  For example, Desktop, Server, or Mobile.|
 
-**Common data - Envelope extension**
+### Common data - Envelope extension**
 
 | Field | Description |
 | - | - |
@@ -48,13 +48,13 @@ The fields in this section contain common device data that is added to every eve
 | cV | Represents the Correlation Vector: A single field for tracking partial order of related telemetry events across component boundaries.|
 | tags | Represents the pre-release build "flight ID" |
 
-**Common data - OS extension**
+### Common data - OS extension**
 
 | Field | Description |
 | - | - |
 | expId | Represents the “experiment ID”. The standard for associating a flight, such as an OS flight (pre-release build), or an experiment, such as a web site UX experiment, with an event is to record the flight / experiment IDs in Part A of the common schema.|
 
-**Common data - Telemetry extension**
+### Common data - Telemetry extension**
 
 | Field | Description |
 | - | - |
@@ -65,7 +65,7 @@ The fields in this section contain common device data that is added to every eve
 | cat | Represents a bitmask of the ETW Keywords associated with the event.|
 | flags | Represents the bitmap that captures various Windows specific flags.|
 
-**Common data - User extension**
+### Common data - User extension**
 
 | Field | Description |
 | - | - |
@@ -97,7 +97,7 @@ This User Account Control (UAC) event collects information on elevations that or
 
 Appraiser Core Data events provide an inventory of what is on the device for the purposes of understanding compatibility and upgrade issues. This device inventory gathers information such as all the applications on the device, IE Add-ons, drivers on the device, and peripherals attached to the device. Appraiser reviews the device inventory to see if it is compatible/ready for upgrade, and for problems that might need to be addressed by the upgrade.
 
-**Microsoft.Windows.Appraiser.General.InventoryApplicationAdd**
+### Microsoft.Windows.Appraiser.General.InventoryApplicationAdd
 
 This event represents the basic metadata about an application installed on the system.  
 
@@ -122,7 +122,7 @@ This event represents the basic metadata about an application installed on the s
 | Type | One of ("Application", "Hotfix", "BOE", "Service", "Unknown"). Application indicates Win32 or Appx app, Hotfix indicates app updates (KBs), BOE indicates it's an app with no ARP or MSI entry, Service indicates that it is a service. Application and BOE are the ones most likely seen. Example: Application|
 | Version | The version number of the program. Example: 6.00.000 3|
 
-**Microsoft.Windows.Appraiser.General.InventoryApplicationFileAdd**
+### Microsoft.Windows.Appraiser.General.InventoryApplicationFileAdd
 
 This event represents the basic metadata about a file on the system.  The file must be part of an app and either have a block in the compatibility database or are part of an anti-virus program.
 
@@ -143,7 +143,7 @@ This event represents the basic metadata about a file on the system.  The file m
 | ProductVersion | The Product version field from the file metadata under Properties -> Details. Example: 12.0.31101.0 |
 | ProgramId | A hash of Name, Version, Publisher, and Language of an application used to identify it. Example: 00004a73716911b8bb891ec1f536f2bf500b00000904 |
 
-**Microsoft.Windows.Appraiser.General.DecisionApplicationFileAdd**
+### Microsoft.Windows.Appraiser.General.DecisionApplicationFileAdd
 
 This event sends true/false compatibility decision data about a file to help keep Windows up to date. 
 
@@ -790,6 +790,8 @@ This event sends data indicating that a quick-blocking run has started, to help 
 | Time | The client time of the event. |
 | CensusId | An ID for the system calculated from the Sqm ID, WER ID, and RAC IDs.  Example: {654e6838-9772-4f41-aafc-01642afb4081}. |
 | Target | The URL that provided the CAB that will be used to run the scan. |
+
+## Census events
 
 
 
