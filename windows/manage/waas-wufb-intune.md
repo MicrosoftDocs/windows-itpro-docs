@@ -4,7 +4,7 @@ description: Configure Windows Update for Business settings using Microsoft Intu
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
@@ -16,6 +16,7 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 You can use Intune to configure Windows Update for Business even if you don’t have on-premises infrastructure when you use Intune in conjunction with Azure AD. Before configuring Windows Update for Business, consider a [deployment strategy](waas-servicing-strategy-windows-10-updates.md) for updates and feature updates in your environment. 
 

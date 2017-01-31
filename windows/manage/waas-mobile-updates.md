@@ -4,7 +4,7 @@ description: tbd
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
@@ -16,6 +16,7 @@ localizationpriority: high
 - Windows 10 Mobile
 - [Windows 10 IoT Mobile](https://www.microsoft.com/en-us/WindowsForBusiness/windows-iot)
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 >[!TIP]
 >If you're not familiar with the Windows 10 servicing or release branches, read [Servicing branches](waas-overview.md#servicing-branches) first.

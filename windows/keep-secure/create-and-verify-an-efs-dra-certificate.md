@@ -19,8 +19,8 @@ If you don’t already have an EFS DRA certificate, you’ll need to create and 
 
 The recovery process included in this topic only works for desktop devices. WIP deletes the data on Windows 10 Mobile devices.   
 
->**Important**<br>
-If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy. For more info about when to use a PKI and the general strategy you should use to deploy DRA certificates, see the [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx) article on TechNet. For more general info about EFS protection, see [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/library/cc875821.aspx).<p>If your DRA certificate has expired, you won’t be able to encrypt your files with it. To fix this, you'll need to create a new certificate, using the steps in this topic, and then deploy it through policy.
+>[!IMPORTANT]
+>If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy. For more info about when to use a PKI and the general strategy you should use to deploy DRA certificates, see the [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx) article on TechNet. For more general info about EFS protection, see [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/library/cc875821.aspx).<p>If your DRA certificate has expired, you won’t be able to encrypt your files with it. To fix this, you'll need to create a new certificate, using the steps in this topic, and then deploy it through policy.
 
 **To manually create an EFS DRA certificate**
 
@@ -36,13 +36,13 @@ If you already have an EFS DRA certificate for your organization, you can skip c
 
     The EFSDRA.cer and EFSDRA.pfx files are created in the location you specified in Step 1.
 
-    >**Important**<br> 
-    Because the private keys in your DRA .pfx files can be used to decrypt any WIP file, you must protect them accordingly. We highly recommend storing these files offline, keeping copies on a smart card with strong protection for normal use and master copies in a secured physical location.
+    >[!IMPORTANT]
+    >Because the private keys in your DRA .pfx files can be used to decrypt any WIP file, you must protect them accordingly. We highly recommend storing these files offline, keeping copies on a smart card with strong protection for normal use and master copies in a secured physical location.
 
 4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as Microsoft Intune or System Center Configuration Manager. 
 
-    >**Note**<br>
-    To add your EFS DRA certificate to your policy by using Microsoft Intune, see the [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) topic. To add your EFS DRA certificate to your policy by using System Center Configuration Manager, see the [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) topic.
+    >[!NOTE]
+    >To add your EFS DRA certificate to your policy by using Microsoft Intune, see the [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) topic. To add your EFS DRA certificate to your policy by using System Center Configuration Manager, see the [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) topic.
 
 **To verify your data recovery certificate is correctly set up on a WIP client computer**
 
@@ -73,7 +73,8 @@ If you already have an EFS DRA certificate for your organization, you can skip c
 **To quickly recover WIP-protected desktop data after unenrollment**<br>
 It's possible that you might revoke data from an unenrolled device only to later want to restore it all. This can happen in the case of a missing device being returned or if an unenrolled employee enrolls again. If the employee enrolls again using the original user profile, and the revoked key store is still on the device, all of the revoked data can be restored at once, by following these steps.
 
->**Important**<br>To maintain control over your enterprise data, and to be able to revoke again in the future, you must only perform this process after the employee has re-enrolled the device. 
+>[!IMPORTANT]
+>To maintain control over your enterprise data, and to be able to revoke again in the future, you must only perform this process after the employee has re-enrolled the device. 
 
 1. Have your employee sign in to the unenrolled device, open a command prompt, and type:
     
@@ -92,6 +93,9 @@ It's possible that you might revoke data from an unenrolled device only to later
 4. Ask the employee to lock and unlock the device.
 
     The Windows Credential service automatically recovers the employee’s previously revoked keys from the `Recovery\Input` location.
+
+>[!NOTE]
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
 
 ## Related topics
 - [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx)

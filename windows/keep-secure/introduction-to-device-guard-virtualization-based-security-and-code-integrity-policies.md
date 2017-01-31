@@ -75,5 +75,5 @@ Another Windows 10 feature that employs VBS is [Credential Guard](credential-gua
 
 Credential Guard is targeted at resisting pass-the-hash and pass-the-ticket techniques. By employing multifactor authentication with Credential Guard, organizations can gain additional protection against such threats. 
 
-In addition to the client-side enabling of Credential Guard, organizations can deploy mitigations at both the CA and domain controller level to help prevent credential theft. For more information, see the [Additional mitigations](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/credential-guard#additional-mitigations) section in “Protect derived domain credentials with Credential Guard.”
+
 

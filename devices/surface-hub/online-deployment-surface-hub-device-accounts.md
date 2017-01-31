@@ -54,13 +54,10 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     $easPolicy = New-MobileDeviceMailboxPolicy -Name "SurfaceHubs" -PasswordEnabled $false -AllowNonProvisionableDevices $True
     ```
 
-    Once you have a compatible policy, then you will need to apply the policy to the device account. However, policies can only be applied to user accounts and not resource mailboxes. You need to convert the mailbox into a user type, apply the policy, and then convert it back into a mailbox—you may need to re-enable it and set the password again too.
+    Once you have a compatible policy, then you will need to apply the policy to the device account.
 
     ```PowerShell
-    Set-Mailbox 'HUB01@contoso.com' -Type Regular
     Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy.Id
-    Set-Mailbox 'HUB01@contoso.com' -Type Room
-    Set-Mailbox 'HUB01@contoso.com' -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force) -EnableRoomMailboxAccount $true
     ```
 
 4.  Various Exchange properties must be set on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
@@ -84,7 +81,10 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     Set-MsolUser -UserPrincipalName 'HUB01@contoso.com' -PasswordNeverExpires $true
     ```
 
-7.  The device account needs to have a valid Office 365 (O365) license, or Exchange and Skype for Business will not work. If you have the license, you need to assign a usage location to your device account—this determines what license SKUs are available for your account.
+7.  Surface Hub requires a license for Skype for Business functionality.
+    - Your Surface Hub account requires a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
+    - You'll need to have Lync Online (Plan 2) or higher in your O365 plan. The plan needs to support conferencing capability.
+    - If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Lync Online (Plan 3).    
 
     Next, you can use `Get-MsolAccountSku` to retrieve a list of available SKUs for your O365 tenant.
 
@@ -98,15 +98,6 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
 
 8.  Enable the device account with Skype for Business.
 
-    In order to enable Skype for Business, your environment will need to meet the following prerequisites:
-
-    -   You'll need to have Lync Online (Plan 2) or higher in your O365 plan. The plan needs to support conferencing capability.
-    -   If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Lync Online (Plan 3).
-    -   Your tenant users must have Exchange mailboxes.
-    -   Your Surface Hub account does require a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
-
-    <!-- -->
-
     -   Start by creating a remote PowerShell session from a PC.
 
         ```PowerShell
@@ -115,33 +106,30 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
         Import-PSSession $cssess -AllowClobber
         ```
 
-    -   To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
+   - Next, if you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet (for example, *alice@contoso.com*):
 
         ```PowerShell
-        Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool  
-        "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
+        Get-CsOnlineUser -Identity ‘alice@contoso.com’| fl *registrarpool*
         ```
-
-        If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
-
+        OR by setting a variable
+        
         ```PowerShell
-        Get-CsOnlineUser -Identity 'alice@contoso.com'| fl *registrarpool*
+        $strRegistrarPool = (Get-CsOnlineUser -Identity ‘alice@contoso.com’).RegistrarPool
+        ```
+        
+    - Enable the Surface Hub account with the following cmdlet:
+      
+        ```PowerShell
+        Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool yourRegistrarPool -SipAddressType EmailAddress
+        ```
+        
+        OR using the $strRegistarPool variable from above
+        
+        ```PowerShell
+        Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool $strRegistrarPool -SipAddressType EmailAddress
         ```
 
-9.  Assign Skype for Business license to your Surface Hub account.
-
-    Once you've completed the preceding steps to enable your Surface Hub account in Skype for Business Online, you need to assign a license to the Surface Hub. Using the O365 administrative portal, assign either a Skype for Business Online (Plan 2) or a Skype for Business Online (Plan 3) to the device.
-
-    -   Login as a tenant administrator, open the O365 Administrative Portal, and click on the Admin app.
-    -   Click on **Users and Groups** and then **Add users, reset passwords, and more**.
-    -   Select the Surface Hub account, and then click or tap the pen icon, which means edit.
-    -   Click on the **Licenses** option.
-    -   In the **Assign licenses** section, you need to select Skype for Business (Plan 2) or Skype for Business (Plan 3), depending on your licensing and what you've decided in terms of needing Enterprise Voice. You'll have to use a Plan 3 license if you want to use Enterprise Voice on your Surface Hub.
-    -   Click **Save** and you're done.
-
->**Note**: It's also possible to use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
-
-For validation, you should be able to use any Skype for Business client (PC, Android, etc) to log in to this account.
+For validation, you should be able to use any Skype for Business client (PC, Android, etc) to sign in to this account.
 
 
 

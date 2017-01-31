@@ -6,6 +6,7 @@ ms.mktglfcycl: manage
 ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerMS
+localizationpriority: medium
 ---
 
 # Microsoft HoloLens in the enterprise: requirements
@@ -35,7 +36,7 @@ When you develop for HoloLens, there are [system requirements and tools](https:/
    - Wi-Fi network
    - Intune or a 3rd party mobile device management (MDM) provider that uses Microsoft MDM APIs
    
-## Upgrade to Windows Holographic Enterprise 
+## Upgrade to Windows Holographic for Business 
 - HoloLens Enterprise license XML file
 
 

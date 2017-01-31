@@ -4,7 +4,7 @@ description: Configure Windows Update for Business settings using Group Policy.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
@@ -15,6 +15,7 @@ localizationpriority: high
 
 - Windows 10
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 Using Group Policy to manage Windows Update for Business is simple and familiar: use the same Group Policy Management Console (GPMC) you use to manage other device and user policy settings in your environment. Before configuring the Windows Update for Business Group Policy settings, consider a [deployment strategy](waas-servicing-strategy-windows-10-updates.md) for updates and feature updates in your environment. 
 

@@ -4,7 +4,7 @@ description: System Center Configuration Manager provides maximum control over q
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
@@ -16,6 +16,7 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 System Center Configuration Manager provides maximum control over quality and feature updates for Windows 10. Unlike other servicing tools, Configuration Manager has capabilities that extend beyond servicing, such as application deployment, antivirus management, software metering, and reporting, and provides a secondary deployment method for LTSB clients. Configuration Manager can effectively control bandwidth usage and content distribution through a combination of BranchCache and distribution points. Microsoft encourages organizations currently using Configuration Manager for Windows update management to continue doing so for Windows 10 client computers.
 

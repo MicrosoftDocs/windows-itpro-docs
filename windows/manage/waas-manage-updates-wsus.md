@@ -4,7 +4,7 @@ description: WSUS allows companies to defer, selectively approve, choose when de
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
@@ -15,6 +15,7 @@ localizationpriority: high
 
 - Windows 10
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 WSUS is a Windows Server role available in the Windows Server operating systems. It provides a single hub for Windows updates within an organization. WSUS allows companies not only to defer updates but also to selectively approve them, choose when they’re delivered, and determine which individual devices or groups of devices receive them. WSUS provides additional control over Windows Update for Business but does not provide all the scheduling options and deployment flexibility that System Center Configuration Manager provides.
 
@@ -24,11 +25,11 @@ When you choose WSUS as your source for Windows updates, you use Group Policy to
 
 ## Requirements for Windows 10 servicing with WSUS
 
-To be able to use WSUS to manage and deploy Windows 10 feature updates, you must have WSUS 4.0, which is available in the Windows Server 2012 R2 and Windows Server 2012 operating systems. In addition to WSUS 4.0, you must install the [KB3095113](https://support.microsoft.com/kb/3095113) and [KB3148812](https://support.microsoft.com/kb/3159706) patches on the WSUS server. 
+To be able to use WSUS to manage and deploy Windows 10 feature updates, you must have WSUS 4.0, which is available in the Windows Server 2012 R2 and Windows Server 2012 operating systems. In addition to WSUS 4.0, you must install the [KB3095113](https://support.microsoft.com/kb/3095113) and [KB3159706](https://support.microsoft.com/kb/3159706) patches on the WSUS server. 
 
 ## WSUS scalability
 
-To use WSUS to manage all Windows updates, some organizations may need access to WSUS from a demilitarized zone, or they might have some other complex scenario. WSUS is highly scalable and configurable for organizations of any size or site layout. For specific information about scaling WSUS, including upstream and downstream server configuration, branch offices, WSUS load balancing, and other complex scenarios, see [Choose a Type of WSUS Deployment](https://technet.microsoft.com/library/cc720448%28v=ws.10%29.aspx).
+To use WSUS to manage all Windows updates, some organizations may need access to WSUS from a perimeter network, or they might have some other complex scenario. WSUS is highly scalable and configurable for organizations of any size or site layout. For specific information about scaling WSUS, including upstream and downstream server configuration, branch offices, WSUS load balancing, and other complex scenarios, see [Choose a Type of WSUS Deployment](https://technet.microsoft.com/library/cc720448%28v=ws.10%29.aspx).
  
 
 ## Express Installation Files
