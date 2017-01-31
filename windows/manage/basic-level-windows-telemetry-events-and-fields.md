@@ -97,9 +97,6 @@ This User Account Control (UAC) event collects information on elevations that or
 
 Appraiser Core Data events provide an inventory of what is on the device for the purposes of understanding compatibility and upgrade issues. This device inventory gathers information such as all the applications on the device, IE Add-ons, drivers on the device, and peripherals attached to the device. Appraiser reviews the device inventory to see if it is compatible/ready for upgrade, and for problems that might need to be addressed by the upgrade.
 
-### Microsoft.Windows.Appraiser.General
-
-These events represent the basic metadata about an application installed on the system.
 
 **Microsoft.Windows.Appraiser.General.InventoryApplicationAdd**
 
@@ -146,3 +143,84 @@ This event represents the basic metadata about a file on the system.  The file m
 | ProductName | The Product name field from the file metadata under Properties -> Details. Example: Microsoft® Visual Studio® 2013 |
 | ProductVersion | The Product version field from the file metadata under Properties -> Details. Example: 12.0.31101.0 |
 | ProgramId | A hash of Name, Version, Publisher, and Language of an application used to identify it. Example: 00004a73716911b8bb891ec1f536f2bf500b00000904 |
+
+**Microsoft.Windows.Appraiser.General.DecisionApplicationFileAdd**
+
+This event sends true/false compatibility decision data about a file to help keep Windows up to date. 
+
+| Field | Description |
+| - | - |
+| objectInstanceId	LongPathHash: A hash of the full file path including the file name. Example: 000062da165862855691751758b333cc4b4d2b3adc60 
+| BlockAlreadyInbox	Indicates that the uplevel runtime block on the file already existed on the current OS and is therefore not a regression. Example: FALSE
+| BlockingApplication	Indicates if there are any application issues that interfere with upgrade due to the file in question. Example: FALSE
+| DisplayGenericMessage	Indicates if there will be a generic message shown for this file.  Example: FALSE
+| HardBlock	The file is hardblocked in the SDB and can't run uplevel. Example: FALSE
+| HasUxBlockOverride	The file has a block that is overridden by a tag in the SDB to have it not show up in reports or to the user (e.g. Intel CPL). Example: FALSE
+| MigApplication	The file has a MigXML from the SDB associated with it that applies to the current upgrade mode. Example: FALSE
+| MigRemoval	The file has a MigXML from the SDB that will cause the app to be removed on upgrade.  Example: FALSE
+| NeedsDismissAction	Indicates the file will be bubbled up to setup as a dismissible action. Example: FALSE
+| NeedsInstallPostUpgradeData	Indicates that after upgrade, this file will have a post-upgrade notification to install a replacement for the application (requires a situation that the file must be uninstalled to upgrade). Example: FALSE
+| NeedsNotifyPostUpgradeData	Indicates the file has a notification mig that should be surfaced in post-upgrade. Example: FALSE
+| NeedsReinstallPostUpgradeData	Indicates that after upgrade, this file will have a post-upgrade notification to reinstall the app. Example: FALSE
+| NeedsUninstallAction	The file must be uninstalled to upgrade. Example: FALSE
+| SdbBlockUpgrade	The file is tagged as blocking upgrade in the SDB. Example: FALSE
+| SdbBlockUpgradeCanReinstall	The file is tagged as blocking upgrade in the SDB but can be reinstalled after upgrade. Example: FALSE
+| SdbBlockUpgradeUntilUpdate	The file is tagged as blocking upgrade in the SDB but if the app is updated the upgrade can proceed. Example: FALSE
+| SdbReinstallUpgrade	The file is tagged as needing to be reinstalled after upgrade in the SDB (but not blocking upgrade). Example: FALSE
+| SdbReinstallUpgradeWarn	The file is tagged as needing to be reinstalled after upgrade with a warning in the SDB (but not blocking upgrade). Example: FALSE
+| SoftBlock	The file is softblocked in the SDB and has a warning uplevel. Example: FALSE
+
+**Microsoft.Windows.Appraiser.General.DatasourceApplicationFileAdd**
+
+This event represents the compatibility information (database entries, registered as anti-virus, predicted to be compatible) for a file.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | LongPathHash: A hash of the full file path including the file name. Example: 0000eb6aa77318dd7af6737658f6045a9ddd80339602 |
+| AvDisplayName | The display name for the app if it is an AV.  Example: System Center Endpoint Protection |
+| CompatModelIndex | The compatibility prediction for this file.  Will always be an empty string. |
+| HasCitData | Whether or not the file is present in CIT data.  Example: FALSE |
+| HasUpgradeExe | Whether or not the AV has an upgrade.exe. Example: TRUE |
+| IsAv | Whether or not the file is an AV reporting EXE.  Example: TRUE |
+| ResolveAttempted | Will always be an empty string when sending telemetry. |
+| SdbEntries | An array of fields indicating the SDB entries that apply to this file. |
+| SdbEntries_item_MigShimCommand | The command line to be passed to the MigShim if one is applicable. |
+| SdbEntries_item_MigShimName | Example: DevenvDotnetCacheRebuildShim |
+| SdbEntries_item_MigXmlName | Example: MicrosoftForefrontEndpointProtection__4_6__PART |
+| SdbEntries_item_MigXmlType | Example: MIG_XML_TYPE_REMOVED |
+| SdbEntries_item_ReinstallUpgradeMessage | Example: Resource: 10022 |
+| SdbEntries_item_SdbAppGuid | Example: {551f8360-14dd-4ea5-bd29-74b0c21abfde} |
+| SdbEntries_item_SdbAppName | Example: Visual Studio |
+| SdbEntries_item_SdbAppVendor | Example: Microsoft |
+| SdbEntries_item_SdbBlockType | Example: ReinstallAfterUpgradeInfo |
+| SdbEntries_item_SdbEntryGuid | Example: {84e92468-a463-4c02-93a6-20171694b8a8} |
+| SdbEntries_item_SdbUpgradeMode | Example: Swap |
+| SdbEntries_item_SdbUxBlocktypeOverride | Example: SDB_UX_BLOCKTYPE_OVERRIDE_MIG_FIXED |
+
+**Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoBlockAdd**
+
+This event sends blocking data about any compatibility blocking entries hit on the system that are not directly related to specific applications or devices, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "BlockingMatchingInfo." |
+| SdbEntries | An array of fields indicating the SDB entries that apply to this file. |
+| SdbEntries_item_SdbAppGuid | Example: {4cca1f6c-74f8-4bfd-9fb4-3d4b65f23f98} |
+| SdbEntries_item_SdbAppName | Example: Intel(R)DynamicPowerPerformanceManagement |
+| SdbEntries_item_SdbAppVendor | Example: Intel |
+| SdbEntries_item_SdbBlockType | Example: BlockUpgradeUntilUpdate |
+| SdbEntries_item_SdbEntryGuid | Example: {4be49993-88ec-4003-b9a6-9f8812e94c50} |
+| SdbEntries_item_SdbUpgradeMode | Example: Swap |
+| SdbEntries_item_SdbUxBlocktypeOverride | Example: SDB_UX_BLOCKTYPE_OVERRIDE_UPGRADE_UNTIL_UPDATE_BLOCK |
+
+**Microsoft.Windows.Appraiser.General.DecisionMatchingInfoBlockAdd**
+
+| Field | Description |
+| - | - |
+| objectInstanceId | Will always be "BlockingMatchingInfo" |
+| BlockingApplication | Indicates if there are any application issues that interfere with upgrade due to matching info blocks. Example: FALSE |
+| DisplayGenericMessage | Indicates if there will be a generic message shown for this block.  Example: FALSE |
+| NeedsUninstallAction | Does the user need to take an action in setup due to a matching info block? Example: FALSE |
+| SdbBlockUpgrade | Indicates if a matching info block blocks upgrade. Example: FALSE |
+| SdbBlockUpgradeCanReinstall | Indicates if a matching info block blocks upgrade but has the can reinstall tag. Example: FALSE |
+| SdbBlockUpgradeUntilUpdate | Indicates if a matching info block blocks upgrade but has the until update tag. Example: FALSE |
