@@ -22,7 +22,7 @@ Cortana can automatically create a Suggested reminder, based on commitments made
 
 ## Use Cortana to set Suggested reminders based on email commitments
 
-1. Make sure that you've connected Cortana to Office 365 [Set up and test Cortana with Office 365 in your organization](cortana-at-work-o365.md).
+1. Make sure that you've connected Cortana to Office 365. For the steps to connect, see [Set up and test Cortana with Office 365 in your organization](cortana-at-work-o365.md).
 
 2. Click on the **Cortana** search box in the taskbar, click the **Notebook** icon, and then click **Permissions**.
 
@@ -30,7 +30,7 @@ Cortana can automatically create a Suggested reminder, based on commitments made
 
     ![Permissions options for Cortana at work](images/cortana-communication-history-permissions.png)
 
-4. Click the **Notebook** icon again, click the **Suggested reminders** option, and then click the **Remind me about things I’ve committed to doing** box, and then click **Save**.
+4. Click the **Notebook** icon again, click the **Suggested reminders** option, click to turn on the **All reminder suggestions cards** option, click the **Notify me when something I mentioned doing is coming up** box, and then click **Save**.
 
     ![Suggested reminders options for Cortana at work](images/cortana-suggested-reminder-settings.png)
 
