@@ -156,5 +156,5 @@ For information that can help with troubleshooting App-V for Windows 10, see:
 ## Have a suggestion for App-V?
 Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
-![https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md](images/button.png)
+<a href="https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md" class="button big">Help us to improve</a>
 
