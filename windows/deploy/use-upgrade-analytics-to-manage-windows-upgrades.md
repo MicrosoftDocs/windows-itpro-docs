@@ -22,7 +22,7 @@ Each step in the workflow is enumerated using blue tiles. Helpful data is provid
 
 The following information and workflow is provided:
 
-- [Upgrade overview](upgrade-analytics-upgrade-overview.md): Compatibility and usage information about computers, applications, and drivers.
+- [Upgrade overview](upgrade-analytics-upgrade-overview.md): Review compatibility and usage information about computers, applications, and drivers.
 - [Step 1: Identify important apps](upgrade-analytics-identify-apps.md): Assign importance levels to prioritize your applications.
 - [Step 2: Resolve issues](upgrade-analytics-resolve-issues.md): Identify and resolve problems with applications.
 - [Step 3: Deploy](upgrade-analytics-deploy-windows.md): Start the upgrade process.
