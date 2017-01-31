@@ -52,15 +52,19 @@ To provide basic protection against OS level attempts to read Credential Manager
 
 The Virtualization-based security requires:
 - 64 bit CPU
-- CPU virtualization extensions plu extended page tables
+- CPU virtualization extensions plus extended page tables
 - Windows hypervisor
 
 ### Application requirements
 
 When Credential Guard is enabled, specific authentication capabilities are blocked, so applications which require blocked capabilities will break. Applications should be tested prior to deployment to ensure compatiblity with the reduced functionality. 
 
->[!WARNING] Enabling Credential Guard on Domain Controllers is not supported
-> The domain controller hosts authentication services which integrate with processes isolated when Credential Guard is enabled. Credential Guard does not provide protections for the Active Directory database or the Security Accounts Manager (SAM). The credentials protected by Kerberos and NTLM when Credential Guard is enabled are also in the Active Directory database. 
+>[!WARNING] 
+> Enabling Credential Guard on Domain Controllers is not supported <br>
+> The domain controller hosts authentication services which integrate with processes isolated when Credential Guard is enabled causing crashes. 
+
+>[!NOTE]
+> Credential Guard does not provide protections for the Active Directory database or the Security Accounts Manager (SAM). The credentials protected by Kerberos and NTLM when Credential Guard is enabled are also in the Active Directory database (on domain controllers) and the SAM (for local accounts). 
 
 Applications will break if they require:
 - Kerberos DES encryption support
@@ -72,6 +76,8 @@ Applications will prompt & expose credentials to risk if they require:
 - Digest authentication
 - Credential delegation
 - MS-CHAPv2
+
+Applications may cause performance issues when they attempt to hook the isolated Credential Guard process. 
 
 ### Security considerations
 
