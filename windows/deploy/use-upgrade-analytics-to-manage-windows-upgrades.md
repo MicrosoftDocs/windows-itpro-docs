@@ -7,19 +7,17 @@ author: greg-lindsay
 
 # Use Upgrade Analytics to manage Windows upgrades
 
-This topic explains how to use the Upgrade Analytics solution to plan, manage, and deploy Windows upgrades.
+You can use Upgrade Analytics to prioritize and work through application and driver issues, assign and track issue resolution status, and identify computers that are ready to upgrade. Upgrade Analytics enables you to deploy Windows with confidence, knowing that you’ve addressed potential blocking issues.
 
 Based on telemetry data from user computers, Upgrade Analytics identifies application and driver compatibility issues that may block Windows upgrades, allowing you to make data-driven decisions about your organization’s upgrade readiness.
 
-You and your IT team can use the Upgrade Analytics workflow to prioritize and work through application and driver issues, assign and track issue resolution status, and identify computers that are ready to upgrade. You can then export the list of upgrade-ready computers and start deploying Windows with confidence, knowing that you’ve addressed potential blocking issues.
-
 Information is refreshed daily so you can monitor upgrade progress. Any changes your team makes, such as assigning application importance and marking applications as ready to upgrade, are reflected 24 hours after you make them.
 
->**Important**: Before starting the Upgrade Analytics workflow, you should define a [Target OS](#target-os).
-
-When you are ready to begin the upgrade process, a workflow is provided to guide you through critical high-level tasks. Each step is enumerated using blue tiles. Helpful data is provided on white tiles to help you get started, and to complete each step.
+When you are ready to begin the upgrade process, a workflow is provided to guide you through critical high-level tasks. Each step in the workflow is enumerated using blue tiles. Helpful data is provided on white tiles to help you get started, and to complete each step.
 
 ![Workflow](images/ua-cg-14.png)
+
+>**Important**: Before starting the Upgrade Analytics workflow, you should define a [Target OS](#target-os).
 
 An [Upgrade overview](upgrade-analytics-upgrade-overview.md) is provided that you can use to review compatibility and usage information about computers, applications, and drivers before starting the upgrade process, and at any stage along the way.
 
