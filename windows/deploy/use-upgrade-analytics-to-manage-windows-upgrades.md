@@ -9,15 +9,14 @@ author: greg-lindsay
 
 You can use Upgrade Analytics to prioritize and work through application and driver issues, assign and track issue resolution status, and identify computers that are ready to upgrade. Upgrade Analytics enables you to deploy Windows with confidence, knowing that you’ve addressed potential blocking issues.
 
-Based on telemetry data from user computers, Upgrade Analytics identifies application and driver compatibility issues that may block Windows upgrades, allowing you to make data-driven decisions about your organization’s upgrade readiness.
-
-Information is refreshed daily so you can monitor upgrade progress. Any changes your team makes, such as assigning application importance and marking applications as ready to upgrade, are reflected 24 hours after you make them.
+- Based on telemetry data from user computers, Upgrade Analytics identifies application and driver compatibility issues that may block Windows upgrades, allowing you to make data-driven decisions about your organization’s upgrade readiness.
+- Information is refreshed daily so you can monitor upgrade progress. Any changes your team makes, such as assigning application importance and marking applications as ready to upgrade, are reflected 24 hours after you make them.
 
 When you are ready to begin the upgrade process, a workflow is provided to guide you through critical high-level tasks. 
 
 ![Workflow](images/ua-cg-14.png)
 
-Each step in the workflow is enumerated using blue tiles. Helpful data is provided on white tiles to help you get started, monitor progress, and to complete each step.
+Each step in the workflow is enumerated using blue tiles. Helpful data is provided on white tiles to help you get started, to monitor your progress, and to complete each step.
 
 >**Important**: Before starting the Upgrade Analytics workflow, you should define a [Target OS](#target-os).
 
@@ -28,7 +27,7 @@ The following information and workflow is provided:
 - [Step 2: Resolve issues](upgrade-analytics-resolve-issues.md): Identify and resolve problems with applications.
 - [Step 3: Deploy](upgrade-analytics-deploy-windows.md): Start the upgrade process.
 
-Also see the following topic for information about additional components of your environment that can be affected by the upgrade process:
+Also see the following topic for information about additional items that can be affected by the upgrade process:
 
 - [Additional insights](upgrade-analytics-additional-insights.md): Find out which MS Office add-ins are installed, and review web site activity.
 
@@ -51,5 +50,3 @@ To change the target OS setting, click on **Solutions Settings**, which appears 
 On the **Upgrade Analytics Settings** page, choose one of the options in the drop down box and click **Save**. The changes in the target OS setting are reflected in evaluations when a new snapshot is uploaded to your workspace.
 
 ![Target OS](images/ua-cg-09.png)
-
-- [Target OS](#target-os):  
