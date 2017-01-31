@@ -24,7 +24,7 @@ localizationpriority: high
 There are some minimum requirements for onboarding your network and endpoints.
 
 ## Minimum requirements
-You must be on Windows 10, version 1607 at a minimum, and must purchase Windows 10 Enterprise E5 edition to use the service.
+You must be on Windows 10, version 1607 at a minimum.
 For more information, see [Windows 10 Enterprise edition](https://www.microsoft.com/en-us/WindowsForBusiness/buy).
 
 ### Network and data storage and configuration requirements
