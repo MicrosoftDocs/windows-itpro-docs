@@ -37,17 +37,17 @@ This section guides you in getting the necessary information to set and use the 
 
   - **client_ID**: OAuth 2 Client ID
   - **client_secret**: OAuth 2 Client secret
-  - **auth_url**:  `https://login.microsoftonline.com/ <tenantID>?resource=https%3A%2F%2FWDATPAlertExport.Seville.onmicrosoft.com`
+  - **auth_url**:  https://<span></span>login.microsoftonline.com/_tenantID_?resource=https%3A%2F%2FWDATPAlertExport.Seville.onmicrosoft.com
 
     >!NOTE
     >Replace *tenantID* with your tenant ID.
 
-  - **token_url**: `https://login.microsoftonline.com/<tenantID>/oauth2/token`
+  - **token_url**: https://<span></span>login.microsoftonline.com/_tenantID_/oauth2/token
 
     >!NOTE
     >Replace the *tenantID* value with your tenant ID.
 
-  - **redirect_uri**: ```https://localhost:44300/wdatpconnector```
+  - **redirect_uri**: https://<span></span>localhost:44300/wdatpconnector
   - **scope**: Leave the value blank
   - **reauthenticate**: Set to `true`
 
@@ -75,18 +75,18 @@ The following steps assume that you have completed all the required steps in [Be
     >[!NOTE]
     >This location is mandatory.
 
-  - WDATP-connector.properties: C:\ArcSightSmartConnectors\ _descriptive-name_\
+  - WDATP-connector.properties: C:\\ArcSightSmartConnectors\\*descriptive-name*\
 
 4. After the installation of the core connector completes, the Connector Setup window opens. In the Connector Setup window, select **Add a Connector**.
 
-5. Select the **ArcSight FlexConnector REST** connector type and click **Next**.
+5. Select Type: **ArcSight FlexConnector REST** and click **Next**.
 
 6.	Type the following information in the parameter details form. All other values in the form are optional and can be left blank.
 
 
   Field	| Value
   :---|:---
-  Configuration File | Type in the name of the client property file. It must match the client property file. For example, if the configuration file in "flexagent" directory is named "WDATP-Connector.jsonparser.properties", the field must be names as the suffix which is "WDATP-Connector".
+  Configuration File | Type in the name of the client property file. It must match the client property file. </br></br> For example, if the configuration file in "flexagent" directory is named "WDATP-Connector.jsonparser.properties", the field must be names as the suffix which is "WDATP-Connector".
   Events URL | Depending on the location of your datacenter, select either the EU or the US URL: </br></br> **For EU**: `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME` </br></br>**For US**: `https://wdatp-alertexporter-us.securitycenter.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`
   Authentication Type |	OAuth 2
   OAuth 2 Client Properties file	| Browse to the location of the wdatp-connector.properties file.
@@ -115,7 +115,7 @@ If the `redirect_uri` is a https URL, you'll be redirected to a URL on the local
 
 14. Finish the installation by selecting **Exit** and **Next**.
 
-15. Run the connector by running the following command from the installation directory, for example: ` C:\ArcSightSmartConnectors\<descriptive_name>\current\bin, run: arcsight.bat connectors`
+15. Run the connector by running the following command from the installation directory, for example:  C:\\ArcSightSmartConnectors\\*descriptive_name*\\current\\bin, run: arcsight.bat connectors
 
 16. Verify events are flowing by setting the initial filter to Device Product = Windows Defender ATP.  If so stop the process again and go to Windows Services and start the ArcSight FlexConnector REST.
 
