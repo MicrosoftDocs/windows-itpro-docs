@@ -93,11 +93,11 @@ This User Account Control (UAC) event collects information on elevations that or
 | fileVersionMS | Represents the major version of the file requesting elevation |
 | fileVersionLS | Represents the minor version of the file requesting elevation |
 
-## Appraiser
+## Appraiser events
 
 Appraiser Core Data events provide an inventory of what is on the device for the purposes of understanding compatibility and upgrade issues. This device inventory gathers information such as all the applications on the device, IE Add-ons, drivers on the device, and peripherals attached to the device. Appraiser reviews the device inventory to see if it is compatible/ready for upgrade, and for problems that might need to be addressed by the upgrade.
 
-### Microsoft.Windows.Appraiser.General.InventoryApplicationAdd
+**Microsoft.Windows.Appraiser.General.InventoryApplicationAdd**
 
 This event represents the basic metadata about an application installed on the system.  
 
@@ -122,7 +122,7 @@ This event represents the basic metadata about an application installed on the s
 | Type | One of ("Application", "Hotfix", "BOE", "Service", "Unknown"). Application indicates Win32 or Appx app, Hotfix indicates app updates (KBs), BOE indicates it's an app with no ARP or MSI entry, Service indicates that it is a service. Application and BOE are the ones most likely seen. Example: Application|
 | Version | The version number of the program. Example: 6.00.000 3|
 
-### Microsoft.Windows.Appraiser.General.InventoryApplicationFileAdd
+**Microsoft.Windows.Appraiser.General.InventoryApplicationFileAdd**
 
 This event represents the basic metadata about a file on the system.  The file must be part of an app and either have a block in the compatibility database or are part of an anti-virus program.
 
@@ -143,7 +143,7 @@ This event represents the basic metadata about a file on the system.  The file m
 | ProductVersion | The Product version field from the file metadata under Properties -> Details. Example: 12.0.31101.0 |
 | ProgramId | A hash of Name, Version, Publisher, and Language of an application used to identify it. Example: 00004a73716911b8bb891ec1f536f2bf500b00000904 |
 
-### Microsoft.Windows.Appraiser.General.DecisionApplicationFileAdd
+**Microsoft.Windows.Appraiser.General.DecisionApplicationFileAdd**
 
 This event sends true/false compatibility decision data about a file to help keep Windows up to date. 
 
@@ -169,7 +169,7 @@ This event sends true/false compatibility decision data about a file to help kee
 | SdbReinstallUpgradeWarn | The file is tagged as needing to be reinstalled after upgrade with a warning in the SDB (but not blocking upgrade). Example: FALSE
 | SoftBlock | The file is softblocked in the SDB and has a warning uplevel. Example: FALSE
 
-### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileAdd
+**Microsoft.Windows.Appraiser.General.DatasourceApplicationFileAdd**
 
 This event represents the compatibility information (database entries, registered as anti-virus, predicted to be compatible) for a file.
 
@@ -196,7 +196,7 @@ This event represents the compatibility information (database entries, registere
 | SdbEntries_item_SdbUpgradeMode | Example: Swap |
 | SdbEntries_item_SdbUxBlocktypeOverride | Example: SDB_UX_BLOCKTYPE_OVERRIDE_MIG_FIXED |
 
-### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoBlockAdd
+**Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoBlockAdd**
 
 This event sends blocking data about any compatibility blocking entries hit on the system that are not directly related to specific applications or devices, to help keep Windows up to date.
 
@@ -212,7 +212,7 @@ This event sends blocking data about any compatibility blocking entries hit on t
 | SdbEntries_item_SdbUpgradeMode | Example: Swap |
 | SdbEntries_item_SdbUxBlocktypeOverride | Example: SDB_UX_BLOCKTYPE_OVERRIDE_UPGRADE_UNTIL_UPDATE_BLOCK |
 
-### Microsoft.Windows.Appraiser.General.DecisionMatchingInfoBlockAdd
+**Microsoft.Windows.Appraiser.General.DecisionMatchingInfoBlockAdd**
 
 This event sends true/false compatibility decision data about blocking entries on the system that are not keyed by either applications or devices, to help keep Windows up to date.
 
@@ -226,7 +226,7 @@ This event sends true/false compatibility decision data about blocking entries o
 | SdbBlockUpgradeCanReinstall | Indicates if a matching info block blocks upgrade but has the can reinstall tag. Example: FALSE |
 | SdbBlockUpgradeUntilUpdate | Indicates if a matching info block blocks upgrade but has the until update tag. Example: FALSE |
 
-### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPassiveAdd
+**Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPassiveAdd**
 
 This event sends compatibility database information about non-blocking compatibility entries on the system that are not keyed by either applications or devices, to help keep Windows up to date.
 
@@ -246,7 +246,7 @@ This event sends compatibility database information about non-blocking compatibi
 | SdbEntries_item_SdbUpgradeMode | Example: Swap |
 | SdbEntries_item_SdbUxBlocktypeOverride | Example: SDB_UX_BLOCKTYPE_OVERRIDE_MIG_FIXED |
 
-### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPostUpgradeAdd
+**Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPostUpgradeAdd**
 
 This event sends compatibility database information about entries requiring reinstallation after an upgrade on the system that are not keyed by either applications or devices, to help keep Windows up to date.
 
@@ -263,7 +263,7 @@ This event sends compatibility database information about entries requiring rein
 | SdbEntries_item_SdbUpgradeMode | Example: Swap |
 | SdbEntries_item_SdbUxBlocktypeOverride | Example: SDB_UX_BLOCKTYPE_OVERRIDE_REINSTALL_BLOCK |
 
-### Microsoft.Windows.Appraiser.General.DecisionMatchingInfoPostUpgradeAdd
+**Microsoft.Windows.Appraiser.General.DecisionMatchingInfoPostUpgradeAdd**
 
 This event sends results of compatibility decisions (true/false) about entries requiring reinstallation after upgrade that are not keyed by applications or devices, to help keep Windows up to date.
 
@@ -275,7 +275,7 @@ This event sends results of compatibility decisions (true/false) about entries r
 | NeedsReinstallPostUpgradeData | Example: FALSE |
 | SdbReinstallUpgrade | Example: TRUE |
 
-### Microsoft.Windows.Appraiser.General.InventoryApplicationIeAddonAdd
+**Microsoft.Windows.Appraiser.General.InventoryApplicationIeAddonAdd**
 
 This event sends basic metadata about an Internet Explorer add-on installed on the system, to help resolve issues in deployment and OS upgrades. 
 
@@ -793,5 +793,286 @@ This event sends data indicating that a quick-blocking run has started, to help 
 
 ## Census events
 
+These events send high level census data about the apps, hardware, batteries, display, and other attributes of the device, to help keep Windows up to date.
 
+**Census.App**
+
+This event sends version data about the Apps running on this device, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| CensusVersion | The version of Census that generated the current data for this device. |
+| IE Version | Retrieves which version of Internet Explorer is running on this device. |
+
+**Census.Battery**
+
+This event sends type and capacity data about the battery on the device, as well as the number of connected standby devices in use, type to help keep Windows up to date. 
+
+| Field | Description |
+| - | - |
+| InternalBatteryCapablities | Represents information about what the battery is capable of doing. |
+| InternalBatteryCapacityCurrent | Represents the battery's current fully charged capacity in mWh (or relative). Compare this value to DesignedCapacity  to estimate the battery's wear. |
+| InternalBatteryCapacityDesign | Represents the theoretical capacity of the battery when new, in mWh. |
+| IsAlwaysOnAlwaysConnectedCapable | Represents whether the battery enables the device to be AlwaysOnAlwaysConnected . Boolean value. |
+
+**Census.Camera**
+
+This event sends data about the resolution of cameras on the device, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| FrontFacingCameraResolution | Represents the resolution of the front facing camera in megapixels. If a front facing camera does not exist, then the value is 0. |
+| RearFacingCameraResolution | Represents the resolution of the rear facing camera in megapixels. If a rear facing camera does not exist, then the value is 0. |
+
+**Census.Enterprise**
+
+This event sends data about Azure presence, type, and cloud domain use in order to provide an understanding of the use and integration of devices in an enterprise, cloud, and server environment. 
+
+| Field | Description |
+| - | - |
+| AzureOSIDPresent | Represents the field used to identify an Azure machine. |
+| AzureVMType | Represents whether the instance is Azure VM PAAS, Azure VM IAAS or any other VMs. |
+| CommercialId | Represents the GUID for the commercial entity which the device is a member of.  Will be used to reflect insights back to customers. |
+| HashedDomain | The hashed representation of the user domain used for login.  |
+| IsCloudDomainJoined | Is this device joined to an Azure Active Directory (AAD) tenant? true/false  |
+| IsDERequirementMet | Represents if the device can do device encryption. |
+| IsDeviceProtected | Represents if Device protected by BitLocker/Device Encryption |
+| IsDomainJoined | Indicates whether a machine is joined to a domain.  |
+| IsEDPEnabled | Represents if Enterprise data protected on the device. |
+| IsMDMEnrolled | Whether the device has been MDM Enrolled or not.  |
+| MPNId | Returns the Partner ID/MPN ID from Regkey. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DeployID |
+| SCCMClientId | This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an Enterprise SCCM environment.  |
+| ServerFeatures | Represents the features installed on a Windows   Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers. |
+| SystemCenterID | The SCCM ID is an anonymized one-way hash of the Active Directory Organization identifier. |
+| CDJType | Represents the type of cloud domain joined for the machine. |
+
+**Census.Firmware**
+
+This event sends data about the BIOS and startup embedded in the device, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| FirmwareManufacturer | Represents the manufacturer of the device’s firmware (BIOS). |
+| FirmwareReleaseDate | Represents the date the current firmware was released. |
+| FirmwareType | Represents the firmware type. The various types can be unknown, BIOS, UEFI. |
+| FirmwareVersion | Represents the version of the current firmware. |
+
+**Census.Flighting**
+
+This event sends Windows Insider build data from customers participating in improvement testing and feedback programs, to help keep Windows up to date. 
+
+| Field | Description |
+| - | - |
+| DeviceSampleRate | Represents the telemetry sample rate assigned to the machine |
+| EnablePreviewBuilds | Represents the field is used to enable flighting (pre-release build) of preview builds on a machine. |
+| FlightIds | Represents the list of the different flights (pre-release builds) on this device. |
+| FlightingBranchName | Represents the name of the branch that the device is flighting (pre-release builds). |
+| IsFlightsDisabled | Represents if the device is participating in flighting (pre-release builds). |
+| SSRK | Retieves the mobile targetting settings. |
+| MSA_Accounts | Represents a list of hashed IDs of the Microsoft Accounts that are flighting (pre-release builds) on this device. |
+
+**Census.Hardware**
+
+This event sends data about the device, including hardware type, OEM brand, model line, model, telemetry level setting, and TPM support, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| SoCName | Firmware manufacturer of phone. |
+| DeviceForm | This indicates the form as per the Device classification. |
+| DigitizerSupport | Friendly name of Digitizer Support. If deviceFamily is of Windows Mobile type, we default digitizer support to be true.  |
+| ChassisType | Retrieves a numeric representation of what type of chassis the machine has. A value of 0 means xx, 1 means yy, 2 means zz .  |
+| ComputerHardwareID | Identifies a class of machines, as a hash of 9 different SMBIOS fields.  |
+| DeviceColor | Indicates the color of the LUMIA phones |
+| VoiceSupported | Indicates if the device has a cell radio capable of making voice calls (in simple terms - a phone).  |
+| PowerPlatformRole | Indicates the OEM preferred power management profile. This value helps identify the basic form factor of the device.  |
+| TPMVersion | Retrieves the supported Trusted Platform Module (TPM), 0 if no TPM is present.  |
+| OEMManufacturerName | Manufacturer Name of machine.  The OEMName for an inactive machine is not reprocessed even if the clean OEM name is changed at a later date.  |
+| OEMModelNumber | Model number of machine.  |
+| OEMModelName | Model name of machine.  |
+| OEMModelSKU | SKU of machine as defined by manufacturer.  |
+| OEMOptionalIdentifier | Microsoft assigned value representing a specific OEM subsidiary. |
+| OEMSerialNumber | Serial number of machine as set by manufacturer. Sourced from SMBIOS. |
+| PhoneManufacturer | Friendly name of the phone OEM. This is useful when the ODM (Original Device Manufacturer such as Foxconn,LongCheer) is not the same as the OEM.  |
+| DeviceName | Device Name of the machine as set by the user.  |
+| OEMDigitalMarkerFileName | Retrieves the name of the file placed in the \Windows\system32\drivers directory that specifies the OEM and model name of the machine.  |
+| DUID | Device Unique ID. This is the Microsoft issued unique IDs of phones.  |
+| InventoryId | Device ID used for Compatibility testing. |
+| StudyID | Used to identify retail/non retail phones.  |
+| TelemetryLevel | The telemetry level the user has opted into, such as Basic or Enhanced.  |
+| TelemetrySettingAuthority | Determines who set the telemetry level (GPM, MDM, User) |
+| OEMModelBaseBoard | Indicates the baseboard model used by the OEM's |
+| OEMModelSystemFamily | Indicates the System family set on the machine by OEM's. |
+
+**Census.Memory**
+
+This event sends data about the memory on the device, including ROM and RAM, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| TotalPhysicalRAM | Represents the physical RAM in MB. |
+| TotalVisibleMemory| Represents the visible memory -memory that is not reserved by the system. |
+
+**Census.Network**
+
+This event sends data about the mobile and cellular network used by the device (mobile service provider, network, device ID, and service cost factors), to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| IMEI0IMEI1 | Represents the International Mobile Station Equipment Identity. This number is usually unique and used by the mobile operator to distinguish different phone hardware. Microsoft does not have access to mobile operator billing data so collecting this data does not expose or identify the user. The two fields represent phone with dual sim coverage. |
+| MobileOperatorBilling | Represents the telephone company that provides services for mobile phone users. |
+| MobileOperatorCommercialized | Represents which reseller and geography the phone is commercialized for. This is the set of values on the phone for who and where it was intended to be used. For example, the commercialized mobile operator code AT&T in the US would be ATT-US. |
+| MobileOperatorNetwork0MobileOperatorNetwork1 | Represents the operator of the current mobile network that the device is used on. (AT&T, T-Mobile, Vodafone). The two fields represent phone with dual sim coverage. |
+| NetworkCost | Represents the network cost associated with a connection. |
+| MCC0MCC1 | Represents the Mobile Country Code (MCC). It used with the Mobile Network Code (MNC) to uniquely identify a mobile network operator. The two fields represent phone with dual sim coverage. |
+| MEID | Represents the Mobile Equipment Identity (MEID). MEID is a worldwide unique phone ID assigned to CDMA phones. MEID replaces electronic serial number (ESN), and is equivalent to IMEI for GSM and WCDMA phones. Microsoft does not have access to mobile operator billing data so collecting this data does not expose or identify the user. |
+| MNC0MNC1 | Retrieves the Mobile Network Code (MNC). It used with the Mobile Country Code (MCC) to uniquely identify a mobile network operator. The two fields represent phone with dual sim coverage. |
+| SPN0SPN1 | Retrieves the Service Provider Name (SPN). For example, these might be AT&T, Sprint, T-Mobile, or Verizon. The two fields represent phone with dual sim coverage. |
+
+**Census.OS**
+
+This event sends data about the operating system such as the version, locale, update service configuration, when and how it was originally installed, and whether it is a virtual device, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| GenuineState | Retrieves the ID Value specifying the OS Genuine check. |
+| IsPortableOperatingSystem | Retrieves whether OS is running via "Windows-To-Go". |
+| IsSecureBootEnabled | Retrieves whether Boot chain is signed under UEFI. |
+| OSEdition | Retrieves the version of the current OS. |
+| InstallationType | Retrieves the type of OS installation. (Clean, Upgrade, Reset, Refresh, Update). |
+| OSInstallDateTime | Retrieves the date the OS was installed using ISO 8601 (Date part) == yyyy-mm-dd |
+| OSInstallType | Retrieves a numeric description of what install was used on the device i.e. clean, upgrade, refresh, reset, etc |
+| OSOOBEDateTime | Retrieves Out of Box Experience (OOBE) Date in Coordinated Universal Time (UTC). |
+| OSSKU | Retrieves the Friendly Name of OS Edition. |
+| OSTimeZoneBiasInMins | Retrieves the time zone set on machine. |
+| OSUILocale | Retrieves the locale of the UI that is currently used by the OS. |
+| RACw7Id | Retrieves the Microsoft Reliability Analysis Component (RAC) Win7 Identifier. RAC is used to monitor and analyze system usage and reliability. |
+| CompactOS | Indicates if the Compact OS feature from Win10 is enabled.  |
+| Signature | Retrieves if it is a signature machine sold by Microsoft store. |
+| IsDeviceRetailDemo | Retrieves if the device is running in demo mode. |
+| OA3xOriginalProductKey | Retrieves the License key stamped by the OEM to the machine. |
+| ProductKeyID2 | Retrieves the License key if the machine is updated with a new license key. |
+| ServiceMachineIP | Retrieves the IP address of the KMS host used for anti-piracy. |
+| ActivationChannel | Retrieves the retail license key or Volume license key for a machine. |
+| LicenseStateReason | Retrieves why (or how) a system is licensed or unlicensed.  The HRESULT may indicate an error code that indicates a key blocked error, or it may indicate that we are running an OS License granted by the MS store. |
+| LanguagePacks | The list of language packages installed on the device. |
+| InstallLanguage | The first language installed on the user machine. |
+| ServiceProductKeyID | Retrieves the License key of the KMS |
+| SharedPCMode | Returns Boolean for education devices used as shared cart |
+| IsEduData | Returns Boolean if the education data policy is enabled. |
+| SLICVersion | Returns OS type/version from SLIC table. |
+| ProductActivationTime | Returns the OS Activation time for tracking piracy issues.  |
+| ProductActivationResult | Returns Boolean if the OS Activation was successful. |
+| OSSubscriptionTypeId | Returns boolean for enterprise subscription feature for selected PRO machines. |
+| OSSubscriptionStatus | Represents the existing status for enterprise subscription feature for PRO machines. |
+| SLICStatus | Whether a SLIC table exists on the device.  |
+
+**Census.Processor**
+
+This event sends data about the processor (architecture, speed, number of cores, manufacturer, and model number), to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| ProcessorArchitecture | Retrieves the processor architecture of the installed operating system. The complete list of values can be found in DimProcessorArchitecture.| 
+| ProcessorClockSpeed | Retrieves the clock speed of the processor in MHz.| 
+| ProcessorCores | Retrieves the number of cores in the processor.| 
+| ProcessorManufacturer | Retrieves the name of the processor's manufacturer.| 
+| ProcessorModel | Retrieves the name of the processor model.| 
+| SocketCount | Number of physical CPU sockets of the machine.| 
+| ProcessorPhysicalCores | Number of physical cores in the processor. | 
+
+**Census.Storage**
+
+This event sends data about the total capacity of the system volume and primary disk, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| PrimaryDiskTotalCapacity | Retrieves the amount of disk space on the primary disk of the device in MB. |
+| PrimaryDiskType | Retrieves an enumerator value of type STORAGE_BUS_TYPE that indicates the type of bus to which the device is connected. This should be used to interpret the raw device properties at the end of this structure (if any). |
+| SystemVolumeTotalCapacity | Retrieves the size of the partition that the System volume is installed on in MB. |
+
+**Census.UserDefault**
+
+This event sends data about the current user’s default preferences for browser and several of the most popular extensions and protocols, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| DefaultBrowserProgId | The ProgramId of the current user's default browser |
+| DefaultApp | The current uer's default program selected for the following extension or protocol: .html,.htm,.jpg,.jpeg,.png,.mp3,.mp4, .mov,.pdf |
+
+
+**Census.UserDisplay**
+
+This event sends data about the logical/physical display size, resolution and number of internal/external displays, and VRAM on the system, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| VRAMDedicated | Represents the video RAM in MB.
+| VRAMDedicatedSystem | Represents the amount of memory on the dedicated video card. |
+| VRAMSharedSystem | Represents the amount of RAM memory that the video card can use. |
+| NumberofExternalDisplays | Retrieves the number of external displays connected to the machine. |
+| InternalPrimaryDisplayLogicalDPIX | Represents the logical DPI in the x-direction of the internal display. |
+| InternalPrimaryDisplayLogicalDPIY | Represents the logical DPI in the y-direction of the internal display. |
+| InternalPrimaryDisplayPhysicalDPIX | Represents the physical DPI in the x-direction of the internal display. |
+| InternalPrimaryDisplayPhysicalDPIY | Represents the physical DPI in the y-direction of the internal display. |
+| InternalPrimaryDisplayResolutionHorizontal | Represents the number of pixels in the horizontal direction of the internal display. |
+| InternalPrimaryDisplayResolutionVertical | Represents the number of pixels in the vertical direction of the internal display. |
+| InternalPrimaryDisplaySizePhysicalH | Represents the physical horizontal length of the display in mm. Used for calculating the diagonal length in inches.  |
+| InternalPrimaryDisplaySizePhysicalY | Represents the physical vertical length of the display in mm. Used for calculating the diagonal length in inches |
+| InternalPrimaryDisplayType | Represents the type of technology used in the monitor, such as Plasma, LED, LCOS, etc. |
+| NumberofInternalDisplays | Represents the number of internal displays in a device. |
+
+**Census.UserNLS**
+
+This event sends data about the default app language, input, and display language preferences set by the user, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| DefaultAppLanguage | The current user Default App Language. |
+| DisplayLanguage | The current user preferred Windows Display Language. |
+| HomeLocation | The current user location, which is populated using GetUserGeoId() function.   |
+| KeyboardInputLanguages | The Keyboard input languages installed on the device. |
+| SpeechInputLanguages | The Speech Input languages installed on the device. |
+
+
+**Census.VM**
+
+This event sends data indicating whether virtualization is enabled on the device, and its various characteristics, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| IOMMUPresent | Represents if an input/output memory management unit (IOMMU) is present. |
+| SLATSupported | Represents whether Second Level Address Translation (SLAT) is supported by the hardware. |
+| VirtualizationFirmwareEnabled | Represents whether virtualization is enabled in the firmware. |
+| HyperVisor | Retrieves whether the current OS is running on top of a Hypervisor.  |
+| IsVirtualDevice | Retrieves that when the Hypervisor is Microsoft's Hyper-V Hypervisor or other Hv#1 Hypervisor, this field will be set to FALSE for the Hyper-V host OS and TRUE for any guest OS's. This field should not be relied upon for non-Hv#1 Hypervisors. |
+
+**Census.WU**
+
+This event sends data about the Windows update server and other App store policies, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| AppStoreAutoUpdate | Retrieves the Appstore settings for auto upgrade. (Enable/Disabled). |
+| AppStoreAutoUpdateMDM | Retrieves the App Auto Update value for MDM<br>0 - Disallowed<br>1 - Allowed<br>2 - Not configured<br>Default value: 2 |
+| AppStoreAutoUpdatePolicy | Retrieves the Windows Store App Auto Update group policy setting |
+| DelayUpgrade | Retrieves the Windows upgrade flag for delaying upgrades. |
+| OSWUAutoUpdateOptions | Retrieves the auto update settings on the device. | 
+| UpdateServiceURLConfigured | Retrieves if the device is managed by Windows Server Update Services (WSUS). |
+| WUDeferUpdatePeriod | Retrieves if deferral is set for Updates |
+| WUDeferUpgradePeriod | Retrieves if deferral is set for Upgrades |
+| WUDODownloadMode | Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded WU updates to other devices on the same network.  |
+| WUMachineId | Retrieves the Windows Update (WU) Machine Identifier. |
+| WUPauseState | Retrieves WU setting to determine if updates are paused |
+| WUServer | Retrieves the HTTP(S) URL of the WSUS server that is used by Automatic Updates and API callers (by default). |
+
+**Census.XBOX**
+
+This event sends data about the Xbox Console, such as Serial Number and DeviceId, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| XboxConsolePreferredLanguage | Retrieves the preferred language selected by the user on Xbox console. |
+| XboxConsoleSerialNumber | Retrieves the serial number of the Xbox console. |
+| XboxLiveDeviceId | Retrieves the unique device id of the console. |
+| XboxLiveSandboxId | Retrieves the developer sandbox id if the device is internal to Microsoft. |
 
