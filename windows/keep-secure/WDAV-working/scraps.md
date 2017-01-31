@@ -1,6 +1,6 @@
 ---
 title: Update and manage Windows Defender in Windows 10 (Windows 10)
-description: IT professionals can manage Windows Defender on WindowsÂ 10 endpoints in their organization using Microsoft Active Directory or Windows Server Update Services (WSUS), apply updates to endpoints, and manage scans using Group Policy SettingsWindows Management Instrumentation (WMI)PowerShell.
+description: IT professionals can manage Windows Defender on Windows 10 endpoints in their organization using Microsoft Active Directory or Windows Server Update Services (WSUS), apply updates to endpoints, and manage scans using Group Policy SettingsWindows Management Instrumentation (WMI)PowerShell.
 ms.assetid: 045F5BF2-87D7-4522-97E1-C1D508E063A7
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -13,9 +13,9 @@ author: jasesso
 # Update and manage Windows Defender in Windows 10
 
 **Applies to**
--   WindowsÂ 10
+-   Windows 10
 
-IT professionals can manage Windows Defender on WindowsÂ 10 endpoints in their organization using Microsoft Active Directory or Windows Server Update Services (WSUS), apply updates to endpoints, and manage scans using:
+IT professionals can manage Windows Defender on Windows 10 endpoints in their organization using Microsoft Active Directory or Windows Server Update Services (WSUS), apply updates to endpoints, and manage scans using:
 
 -   Group Policy Settings
 -   Windows Management Instrumentation (WMI)
@@ -23,14 +23,14 @@ IT professionals can manage Windows Defender on WindowsÂ 10 endpoints in their o
 
 ## Manage Windows Defender endpoints through Active Directory and WSUS
 
-All WindowsÂ 10 endpoints are installed with Windows Defender and include support for management through:
+All Windows 10 endpoints are installed with Windows Defender and include support for management through:
 -   Active Directory
 -   WSUS
 
 You can use the Active Directory to configure the settings; Group policies can be used for centralized configuration and enforcement of many Windows Defender settings including client user interface, scan settings, and exclusions.
 WSUS can be used to view basic update compliance and deploy updates manually or through automatic rules.
 
-Note that System CenterÂ 2012Â R2 Configuration Manager SP1, System Center 2012 Configuration Manager SP2, and Microsoft Intune can provide centralized management of Windows Defender, including:
+Note that System Center 2012 R2 Configuration Manager SP1, System Center 2012 Configuration Manager SP2, and Microsoft Intune can provide centralized management of Windows Defender, including:
 
 -   Settings management
 -   Definition update management
@@ -43,8 +43,8 @@ When you enable *Endpoint Protection* on your clients, it will install an additi
 -   [Endpoint Protection in Configuration Manager](https://technet.microsoft.com/library/hh508760.aspx)
 
 Read more about System Center Configuration Manager in [Introduction to Endpoint Protection in Configuration Manager](https://technet.microsoft.com/library/hh508781.aspx).
-> **Important:**Â Â You must be licensed to use *Endpoint Protection* to manage clients in your Configuration Manager hierarchy.
-Â 
+> **Important:**  You must be licensed to use *Endpoint Protection* to manage clients in your Configuration Manager hierarchy.
+ 
 ## Apply updates to Windows Defender endpoints
 
 It is important to keep Windows Defender endpoints updated to ensure they are protected. All Windows Defender updates, including General Distribution Release (GDR) updates, are now applied as operating system updates.
@@ -53,18 +53,18 @@ You can manage the distribution of updates through the [Windows Server Update Se
 ## Manage email scans in Windows Defender
 
 You can use Windows Defender to scan email files. Malware can install itself and hide in email files, and although real-time protection offers you the best protection from email malware, you can also scan emails stored on your PC or server with Windows Defender.
-> **Important:**Â Â Mail scanning only applies to on-demand and scheduled scans, not on-access scans.
-Â 
-Windows Defender scans Microsoft Office OutlookÂ 2003 and older email files. We identify the file type at run-time based on the content of the file, not on location or extension.
-> **Note: **Â Â Scanning email files might increase the time required to complete a scan.
-Â 
+> **Important:**  Mail scanning only applies to on-demand and scheduled scans, not on-access scans.
+ 
+Windows Defender scans Microsoft Office Outlook 2003 and older email files. We identify the file type at run-time based on the content of the file, not on location or extension.
+> **Note: **  Scanning email files might increase the time required to complete a scan.
+ 
 Windows Defender can extract embedded objects within a file (attachments and archived files, for example) and scan internally.
-> **Note:**Â Â While Windows Defender can be configured to scan email files, it can only remediate threats detected inside certain files, for example:
+> **Note:**  While Windows Defender can be configured to scan email files, it can only remediate threats detected inside certain files, for example:
 -   DBX
 -   MBX
 -   MIME
-Â 
-You can configure Windows Defender to scan PST files used by OutlookÂ 2003 or older versions (where the archive type is set to non-uni-code), but Windows Defender cannot remediate threats detected inside PST files. We recommend using real-time protection to protect against email malware.
+ 
+You can configure Windows Defender to scan PST files used by Outlook 2003 or older versions (where the archive type is set to non-uni-code), but Windows Defender cannot remediate threats detected inside PST files. We recommend using real-time protection to protect against email malware.
 
 If Windows Defender detects a threat inside an email, it will show you the following information to assist you in identifying the compromised email, so you can remediate the threat:
 -   Email subject
@@ -73,10 +73,10 @@ Email scanning in Windows Defender is turned off by default. There are three way
 -   *Group Policy* settings
 -   WMI
 -   PowerShell
-> **Important:**Â Â There are some risks associated with scanning some Microsoft Outlook files and email messages. You can read about tips and risks associated with scanning Outlook files and email messages in the following articles:
+> **Important:**  There are some risks associated with scanning some Microsoft Outlook files and email messages. You can read about tips and risks associated with scanning Outlook files and email messages in the following articles:
 -   [Scanning Outlook files in Outlook 2013](https://technet.microsoft.com/library/dn769141.aspx#bkmk-1)
 -   [Scanning email messages in Outlook 2013](https://technet.microsoft.com/library/dn769141.aspx#bkmk-2)
-Â 
+ 
 ## Use *Group Policy* settings to enable email scans
 
 This policy setting allows you to turn on email scanning. When email scanning is enabled, the engine will parse the mailbox and mail files to analyze the mail bodies and attachments.
@@ -117,16 +117,16 @@ Read more about this in:
 ## Manage archive scans in Windows Defender
 
 You can use Windows Defender to scan archive files. Malware can install itself and hide in archive files, and although real-time protection offers you the best protection from malware, you can also scan archives stored on your PC or server with Windows Defender.
-> **Important:**Â Â Archive scanning only applies to on-demand and scheduled scans, not on-access scans.
-Â 
+> **Important:**  Archive scanning only applies to on-demand and scheduled scans, not on-access scans.
+ 
 Archive scanning in Windows Defender is turned on by default. There are four ways you can manage scans through Windows Defender:
 -   *Group Policy* settings
 -   WMI
 -   PowerShell
 -   Endpoint Protection
-> **Note:**Â Â Scanning archive files might increase the time required to complete a scan.
-Â 
-If you exclude an archive file type by using the **Extensions** box, Windows Defender will not scan files with that extension (no matter what the content is), even when you have selected the **Scan archive files** check box. For example, if you exclude .rar files but thereâ€™s a .r00 file thatâ€™s actually .rar content, it will still be scanned if archive scanning is enabled.
+> **Note:**  Scanning archive files might increase the time required to complete a scan.
+ 
+If you exclude an archive file type by using the **Extensions** box, Windows Defender will not scan files with that extension (no matter what the content is), even when you have selected the **Scan archive files** check box. For example, if you exclude .rar files but there’s a .r00 file that’s actually .rar content, it will still be scanned if archive scanning is enabled.
 
 ## Use *Group Policy* settings to enable archive scans
 
@@ -186,5 +186,5 @@ In Endpoint Protection, you can use the advanced scanning options to configure a
 
 - [Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md)
 - [Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)
-Â 
-Â 
+ 
+ 
