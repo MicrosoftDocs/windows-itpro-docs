@@ -69,13 +69,58 @@ After you have a VHD file, you must provision your VM for auto-sequencing.
 
 A new Hyper-V VM file is created out of the provisioned VHD, creating a "clean" checkpoint, from where all of the sequencing and updating will start.
 
-### Provision an existing VM for auto-sequencing
- 
 
+## Provision an existing VM for auto-sequencing
+If your apps require custom prerequesites, such as Microsoft SQL Server, we recommend that you preinstall the prerequisites on your VM and then use that VM for auto-sequencing. Using these steps will establish a connection to your existing VM, install the Microsoft Application Virtualization (App-V) Auto Sequencer from the ADK tools, and provision your VM for auto-sequencing.
+
+**To connect to your existing VM**
+- Open PowerShell as an admin and run the following commands on your existing VM:
+
+    - **Set the network category of your connection profile on the VM to `Private`:** 
+    
+        `Get-netconnectionprofile | set-netconnectionprofile -NetworkCategory Private`
+        
+    - **Set the Windows Firewall rules for the display groups, `Remote Desktop` and `Windows Remote Management`:** 
+    
+        `Enable-NetFirewallRule -DisplayGroup “Remote Desktop”` and `Enable-NetFirewallRule -DisplayGroup “Windows Remote Management”`
+
+    - **Set the VM to receive remote commands without a confirmation prompt:**
+    
+        `Enable-PSRemoting –Force`
+
+    These commands turn on [PowerShell Remoting](https://msdn.microsoft.com/powershell/reference/5.1/Microsoft.PowerShell.Core/about/about_Remote) and turn on the necessary Windows Firewall rules so you can connect to your VM.
+
+**To provision an existing VM**
+1. On the Host device, install Windows 10, version 1703 and the matching ADK version, making sure that you've selected to install the **Microsoft Application Virtualization (App-V) Auto Sequencer** component.
+
+2. Open PowerShell as an admin and run the **New-AppVSequencerVM** cmdlet, using the following parameters:
+
+    ```ps1
+    New-AppVSequencerVM -VMName "<name_of_vm>" -VMComputerName "<computer_name_for_vm>" -ADKPath "<path_to_adk_install_folder>"
+    ```
+    
+    Where `VMName` is the name of the VM granted during its creation and shown in the Hyper-V Manager tool, and the `VMComputerName` is the name of the VM, assigned after its creation and shown on the **Computer name** field of the **System Properties** screen.
+
+A new Hyper-V VM file is created from the existing VM, creating a "clean" checkpoint, from where all of the sequencing and updating will start.
+
+## Reviewing the provisioning log files
+The 2 types of provisioning log files, located at `“%temp%\AutoSequencer\Logs”`, are:
+
+- **New-AppVSequencerVM-<time_stamp>.txt**: Includes info about the provisioning activities, such as "Waiting for VM session", "Copying installer for Sequencer", and so on.
+
+- **New-AppVSequencerVM-report-<time_stamp>.txt**: Includes info about the connections made to the VM, showing whether there were any failures.
 
 ## Have a suggestion for App-V?
 Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
+- [Convert-WindowsImage.ps1](https://gallery.technet.microsoft.com/scriptcenter/Convert-WindowsImageps1-0fe23a8f)
+
+- [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+
 - [Install the App-V Sequencer](appv-install-the-sequencer.md)
-- [Operations for App-V](appv-operations.md)
+
+- [Hyper-V on Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server)
+
+- [Manually sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md)
+
