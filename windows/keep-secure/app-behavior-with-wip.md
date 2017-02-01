@@ -38,8 +38,8 @@ This table includes info about how unenlightened apps might behave, based on you
    </tr>
    <tr>
         <th>&nbsp;</th>
-        <th align="center">Name-based policies, without the <code>/*AppCompat*/</code> string</th>
-        <th align="center">Name-based policies, using the <code>/*AppCompat*/</code> string or proxy-based policies</th>
+        <th align="center">Name-based policies, without the /&#42;AppCompat&#42;/ string</th>
+        <th align="center">Name-based policies, using the /&#42;AppCompat&#42;/ string or proxy-based policies</th>
     </tr>
    <tr align="left">
      <td><strong>Not required.</strong> App connects to enterprise cloud resources directly, using an IP address.</td>
@@ -96,7 +96,7 @@ This table includes info about how enlightened apps might behave, based on your 
 <table>
    <tr>
      <th>App rule setting</th>
-     <th>Networking policy configuration for name-based policies, possibly using the <code>/*AppCompat*/</code> string, or proxy-based policies</th>
+     <th>Networking policy configuration for name-based policies, possibly using the /&#42;AppCompat&#42;/ string, or proxy-based policies</th>
    </tr>
     <tr>
         <td><strong>Not required.</strong> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
