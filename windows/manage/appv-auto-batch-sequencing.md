@@ -74,6 +74,9 @@ Sequencing multipe apps at the same time requires that you create a **ConfigFile
         ```     
 3. Save your completed file, using the name **ConfigFile**.
 
+**To start the App-V Sequencer interface and app installation process**
+[Liz] Text here
+
 
 ### Sequence multiple apps by using the App-V Sequencer interface
 Sequencing multipe apps at the same time requires that you create a **ConfigFIle** to collect all of the info related to each round of sequencing. This file is then used by the App-V Sequencer interface after creating a "clean" checkpoint on your VM.
