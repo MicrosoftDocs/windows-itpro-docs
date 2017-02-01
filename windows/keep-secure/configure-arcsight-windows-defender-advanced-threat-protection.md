@@ -56,27 +56,25 @@ This section guides you in getting the necessary information to set and use the 
 ## Install and configure HP ArcSight SmartConnector
 The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin).
 
-1. Install the latest 32-bit Windows SmartConnector installer. You can find this in the HPE Software center. The tool is typically installed in `C:\Program Files\ArcSightSmartConnectors\current\bin` (default path).
+1. Install the latest 32-bit Windows SmartConnector installer. You can find this in the HPE Software center. The tool is typically installed in the following default location: `C:\Program Files\ArcSightSmartConnectors\current\bin`.</br></br>You can choose where to save the tool, for example C:\\*folder_location*\current\bin where *folder_location* represents the installation location.
 
 2. Follow the installation wizard through the following tasks:
   - Introduction
-  - Choose Install Folder: Use default path or select your preferred path
-  - Choose Install Set: Typical
-  - Choose Shortcut Folder: Specify where to create icons or choose not to create icons
-  - Pre-Installation Summary: Review installation information
+  - Choose Install Folder
+  - Choose Install Set
+  - Choose Shortcut Folder
+  - Pre-Installation Summary
   - Installing...
 
   You can keep the default values for each of these tasks or modify the selection to suit your requirements.
 
 3. Open File Explorer and put the two configuration files in the installation location, for example:
 
-  - WDATP-connector.jsonparser.properties: `C:\Program Files\ArcSightSmartConnectors\flexagent\`
+  - WDATP-connector.jsonparser.properties: C:\\*folder_location*\current\user\agent\flexagent\
 
-    >[!NOTE]
-    >This location is mandatory.
+  - WDATP-connector.properties: C:\\*folder_location*\current\user\agent\flexagent\
 
-  - WDATP-connector.properties: C:\\ArcSightSmartConnectors\\*descriptive-name*\
-
+  >[!NOTE]
 4. After the installation of the core connector completes, the Connector Setup window opens. In the Connector Setup window, select **Add a Connector**.
 
 5. Select Type: **ArcSight FlexConnector REST** and click **Next**.
@@ -99,11 +97,11 @@ If the `redirect_uri` is a https URL, you'll be redirected to a URL on the local
 
 9. Select the **ArchSight Manager (encrypted)** as the destination and click **Next**.
 
-10. Type in your credentials in the destination parameters form. All other values in the form are optional and can be left blank. Click **Next**.
+10. Type in the destination IP/hostname in **Manager Hostname** and your credentials in the parameters form. All other values in the form should be retained with the default values. Click **Next**.
 
 11. Type in a name for the connector in the connector details form. All other values in the form are optional and can be left blank. Click **Next**.
 
-11.	The ESM Manager import certificate window is shown. Select **Import the certificate to the connector from destination** and click **Next**. The **Add connector Summary** window is displayed and the certificate is imported.
+11.	The ESM Manager import certificate window is shown. Select **Import the certificate to connector from destination** and click **Next**. The **Add connector Summary** window is displayed and the certificate is imported.
 
 12. Verify that the details in the **Add connector Summary** window is correct, then click **Next**.
 
@@ -115,9 +113,33 @@ If the `redirect_uri` is a https URL, you'll be redirected to a URL on the local
 
 14. Finish the installation by selecting **Exit** and **Next**.
 
-15. Run the connector by running the following command from the installation directory, for example:  C:\\ArcSightSmartConnectors\\*descriptive_name*\\current\\bin, run: arcsight.bat connectors
+## Install and configure the HP ArcSight console
+1. Follow the installation wizard through the following tasks:
+  - Introduction
+  - License Agreement
+  - Special Notice
+  - Choose ArcSight installation directory
+  - Choose Shortcut Folder
+  - Pre-Installation Summary
 
-16. Verify events are flowing by setting the initial filter to Device Product = Windows Defender ATP.  If so stop the process again and go to Windows Services and start the ArcSight FlexConnector REST.
+2. Click **Install**. After the installation completes, the ArcSight Console Configuration Wizard opens.
+
+3. Type localhost in **Manager Host Name** and 8443 in **Manager Port** then click **Next**.
+
+4. Select **Use direct connection**, then click **Next**.
+
+5. Select **Password Based Authentication**, then click **Next**.
+
+6. Select **This is a single user installation. (Recommended)**, then click **Next**.
+
+7. Click **Done** to quit the installer.
+
+8. Login to the HP ArcSight console.
+
+9. Navigate to **Active channel set** > **New Condition** > **Device**
+> **Device Product**.
+
+10. Set **Device Product = Windows Defender ATP**. When you've verified that events are flowing, stop the process again and go to Windows Services and start the ArcSight FlexConnector REST.
 
 You can now run queries in the HP ArcSight console.
 
