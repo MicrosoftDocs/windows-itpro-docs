@@ -21,7 +21,7 @@ By enabling Credential Guard, the following features and solutions are provided:
 
    **Hardware security** NTLM, Kerberos, and Credential Manager take advantage of platform security features, including Secure Boot and virtualization, to protect credentials.
 -   **Virtualization-based security** Windows NTLM and Kerberos derived credentials and other secrets run in a protected environment that is isolated from the running operating system.
--   **Better protection against advanced persistent threats** When Credential Manager domain credentials, NTLM, and Kerberos derived credentials are protected using virtualization-based security, the credential theft attack techniques and tools used in many targeted attacks are blocked. Malware running in the operating system with administrative privileges cannot extract secrets that are protected by virtualization-based security. While Credential Guard is a powerful mitigation, persistent threat attacks will likely shift to new attack techniques and you should also incorporate Device Guard and other security strategies and architectures.
+,-   **Better protection against advanced persistent threats** When Credential Manager domain credentials, NTLM, and Kerberos derived credentials are protected using virtualization-based security, the credential theft attack techniques and tools used in many targeted attacks are blocked. Malware running in the operating system with administrative privileges cannot extract secrets that are protected by virtualization-based security. While Credential Guard is a powerful mitigation, persistent threat attacks will likely shift to new attack techniques and you should also incorporate Device Guard and other security strategies and architectures.
 
 ## How it works
 
@@ -61,7 +61,7 @@ When Credential Guard is enabled, specific authentication capabilities are block
 
 >[!WARNING] 
 > Enabling Credential Guard on domain controllers is not supported <br>
-> The domain controller hosts authentication services which integrate with processes isolated when Credential Guard is enabled causing crashes. 
+> The domain controller hosts authentication services which integrate with processes isolated when Credential Guard is enabled, causing crashes. 
 
 >[!NOTE]
 > Credential Guard does not provide protections for the Active Directory database or the Security Accounts Manager (SAM). The credentials protected by Kerberos and NTLM when Credential Guard is enabled are also in the Active Directory database (on domain controllers) and the SAM (for local accounts). 
