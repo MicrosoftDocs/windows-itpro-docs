@@ -76,7 +76,7 @@ elevation-of-privilege attacks from untrusted fonts</td>
 <td><strong>OS key pinning</strong>,<br />
 which mitigates against<br />
 man-in-the-middle attacks that leverage PKI</td>
-<td><p>With OS key pinning, you can “pin” (associate) an X.509 certificate and its public key to its legitimate Certification Authority (root or leaf). This provides validation for digitally signed certificates (SSL certifcates) used while browsing, and mitigates against man-in the-middle attacks that involve these certificates.</p>
+<td><p>With OS key pinning, you can “pin” (associate) an X.509 certificate and its public key to its legitimate Certification Authority (root or leaf). This provides validation for digitally signed certificates (SSL certificates) used while browsing, and mitigates against man-in the-middle attacks that involve these certificates.</p>
 <p><strong>More</strong> <strong>information</strong>: OS_KEY_PINNING_LINK.</p></td>
 </tr>
 <tr class="even">
@@ -127,7 +127,7 @@ exploitation of buffer overruns</td>
 which mitigates against<br />
 overwrites of the Structured Exception Handler</td>
 <td><p><strong>Structured Exception Handling Overwrite Protection (SEHOP)</strong> is designed to block exploits that use the Structured Exception Handler (SEH) overwrite technique. Because this protection mechanism is provided at run-time, it helps protect applications regardless of whether they have been compiled with the latest improvements. Although some applications have compatibility problems with SEHOP, the vast majority of applications do not.</p>
-<p>For more information, see <a href="#structured-exception-handling">Structured Exception Handling Overwrite Protection</a>, later in this topic.</p>
+<p>For more information, see <a href="#structured-exception-handling-overwrite-protection">Structured Exception Handling Overwrite Protection</a>, later in this topic.</p>
 <p><strong>Group Policy setting for this mitigation</strong>: See <a href="https://technet.microsoft.com/itpro/windows/keep-secure/override-mitigation-options-for-app-related-security-policies">Override Process Mitigation Options to help enforce app-related security policies</a>.</p></td>
 </tr>
 <tr class="odd">
@@ -162,6 +162,8 @@ Because of the importance of DEP, users cannot install Windows 10 on a computer
 5.  Click **OK**.
 
 You can now see which processes have DEP enabled. Figure 1 shows the processes running on a Windows 10 PC with a single process that does not support DEP.
+
+<!-- This might be a good place to mention the cmdlet that lets you see the same kind of output. -->
 
 ![Processes with DEP enabled in Windows 10](images/security-fig5-dep.png)
 
@@ -243,7 +245,7 @@ Windows included Windows Defender, a robust inbox antimalware solution, starting
 
 -   **Extensive global sensors** help keep Windows Defender current and aware of even the newest malware. This is accomplished in two ways: by collecting the rich local context data from end points and by centrally analyzing that data. The goal is to identify new, emerging malware and block it in the first critical hours of its lifetime to limit exposure to the broader PC ecosystem.
 
--   **Tamper proofing** helps guard Windows Defender itself against malware attacks. For example, Windows Defender uses Protected Processes, which prevents untrusted processes from attempting to tamper with Windows Defender components, its registry keys, and so on. (For information about Protected Processes, see [Additional memory protections](#_Additional_memory_protections_1), earlier in this topic.)
+-   **Tamper proofing** helps guard Windows Defender itself against malware attacks. For example, Windows Defender uses Protected Processes, which prevents untrusted processes from attempting to tamper with Windows Defender components, its registry keys, and so on. (For information about Protected Processes, see [Additional memory protections](#additional-memory-protections), later in this topic.)
 
 -   **Enterprise-level features** give IT pros the tools and configuration options necessary to make Windows Defender an enterprise-class antimalware solution.
 
@@ -290,9 +292,9 @@ exploits based on flow between code locations in memory</td>
 <tr class="even">
 <td><strong>Additional memory protections</strong>,<br />
 such as protections against<br />
-NULL page derefences</td>
+NULL page dereferences</td>
 <td><p>Windows 10 includes a variety of memory protections, such as reserving the lowest 64 KB of process memory for the system, which helps protect against the “NULL dereference” technique and other threats.</p>
-<p>For more information, see <a href="#additional-memory-protections">Additional memory protections</a>, later in this topic</p></td>
+<p>For more information, see <a href="#additional-memory-protections">Additional memory protections</a>, later in this topic.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>Universal Windows apps protections</strong>,<br />
@@ -453,6 +455,11 @@ to Windows 10 features</strong></th>
 <li><p>Heap Spray</p></li>
 <li><p>EAF</p></li>
 <li><p>EAF+</p></li>
+</ul></td>
+<td>Windows 10 does not include mitigations that map specifically to these EMET features. However, in the current security environment, exploits related to these EMET features are unlikely to occur, and improved memory management and other features in Windows 10 make such exploit attempts unlikely to succeed. Microsoft remains committed to monitoring the security environment as new exploits appear and taking steps to harden the operating system against them.</td>
+</tr>
+<tr class="odd">
+<td><ul>
 <li><p>Caller Check</p></li>
 <li><p>Simulate Execution Flow</p></li>
 <li><p>Stack Pivot</p></li>
