@@ -19,7 +19,7 @@ localizationpriority: high
 
 >**Looking for consumer information?** See [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
-In Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, you can use a Group Policy Object (GPO) to deploy a customized Start and taskbar layout to users in a domain. No reimaging is required, and the layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start and taskbar layouts for different departments or organizations, with minimal management overhead.
+In Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, version 170#, you can use a Group Policy Object (GPO) to deploy a customized Start and taskbar layout to users in a domain. No reimaging is required, and the layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start and taskbar layouts for different departments or organizations, with minimal management overhead.
 
 >[!NOTE]
 >Taskbar configuration is available starting in Windows 10, version 1607.
