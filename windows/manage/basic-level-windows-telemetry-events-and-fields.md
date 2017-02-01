@@ -1353,6 +1353,148 @@ This event sends data about the health and quality of the telemetry data from th
 | VortexFailuresTimeout | Incremented each time a Vortex communication results in the error ERROR_WINHTTP_TIMOUT. |
 | VortexHttpFailures5xx | Incremented each time a Vortex communication results in a 500-599 HTTP error code. |
 
+## Kernel process events
+
+**KernelProcess.AppStateChange**
+
+This event sends data about the life cycle of an application’s process (e.g. launch, suspend, resumer, terminate), to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| AppSessionGuid | Unique identifier for the specific application session (starts on process creation and ends on process termination). |
+| CommandLineHash | A one-way hash of the command line parameters. |
+| CommitCharge | On termination state – private virtual memory commit charge. |
+| CommitChargePeak | On termination state – peak private virtual memory commit charge for the process instance. |
+| CPUCycleCount | On termination state – CPU cycles consumed by process instance. |
+| Crashed | On termination state – has the process crashed. |
+| EventSequence | A data quality control measure; incrementing ordinal for each event per epoch. |
+| ExitStatus | On termination state – process exit code. |
+| HandleCount | On termination state – outstanding OS handle count. |
+| HangCount | On termination state – reported hangs. |
+| HardFaultCount | On termination state – disk page fault count. |
+| PreviousState | Application state being exited in this transition. |
+| ProcessSequence | Process sequence on this OS boot. |
+| ProcessStartKey | Process identifier based on process sequence and boot id. |
+| ReadCount | On termination state – Read IO count for process. |
+| ReadSizeInKB | On termination state – Read IO bytes for process. |
+| StateDurationMS | Amount of time (in milliseconds) that the application was in the previous state (the state being exited). |
+| TargetAppId | The ID of the application whose usage is being described. |
+| TargetAppType | Not used at this time. |
+| TargetAppVer | Additional information about the specific version of the application whose usage is being described. |
+| TotalDurationMS | A data quality control measure; the sum of all state durations (in milliseconds) for this particular application session. |
+| TotalSuspendedMS | A data quality control measure; the sum of all the suspend state durations (in milliseconds) for this particular application session. |
+| TotalUptimeMS | A data quality control measure; the sum of all the running state durations (in milliseconds) for this particular application session. |
+| UptimeDeltaMS | A data quality control measure. |
+| WriteCount | On termination state – Write IO count for process. |
+| WriteSizeInKB | On termination state – Write IO bytes for process. |
+
+## Sleep study events
 
 
+**Microsoft.Windows.Power.SleepStudy.SleepStudySessionSummary**
 
+| Field | Description |
+| - | - |
+| dripsPercentage | Percent of time OS spent in the ‘deepest runtime idle power state’ during this connected standby session. |
+| duration | Duration of connected standby session, in minutes. |
+| energyChange | Amount of energy drained, in milliWatt hours, while on battery, during a connected standby session. |
+| energyChangeRate | Approximate rate of energy change, in milliWatts, while on battery, during a connected standby session. |
+| hwDripsPercentage | Percent of time hardware spent in the ‘deepest runtime idle power state’ during this connected standby session. |
+| packedAsULong | Indicates status of ac/critical battery/time spent listening to audio during connected standby session, most commonly 0 for session on battery, or 1 for session on AC. See this for bit expansion. |
+| startTime | Start time of the connected standby session. |
+
+**Microsoft.Windows.Power.SleepStudy.SleepStudyTopOffenders**
+
+| Field | Description |
+| - | - |
+| activeTimePercentage | Percent of connected standby session that activator was present. |
+| designCapacity | Size of system battery in milliWatt hours. |
+| dripsPercentage  | Percent of time OS spent in the ‘deepest runtime idle power state’ during this connected standby session. |
+| duration | Duration of connected standby session, in minutes. |
+| energyChange | Amount of energy drained, in milliWatt hours, while on battery, during a connected standby session. |
+| energyChangeRate | Approximate rate of energy change, in milliWatts, while on battery, during a connected standby session. |
+| hwDripsPercentage | Percent of time hardware spent in the ‘deepest runtime idle power state’ during this connected standby session. |
+| level | Level of offender in hierarchy, 1-3. |
+| name | Name of offender. |
+| onAc | 1 if session was on AC, 0 if on DC. |
+| startTime | Start time of the connected standby session. |
+| type | The type of the PDC activator that is blocking connected standby |
+| vetoCount | Number of times the PEP veto’d the kernel from entering DRIPS during this session. |
+
+## Windows Error Reporting events
+
+**Microsoft.Windows.WindowsErrorReporting.AppCrashEvent**
+
+This event sends data about crashes for both native and managed applications, to help keep Windows up to date. The data includes information about the crashing process and a summary of its exception record. It does not contain any Watson bucketing information. The bucketing information is recorded in a Windows Error Reporting (WER) event that is generated when the WER client reports the crash to the Watson service, and the WER event will contain the same ReportID (see field 14 of crash event, field 19 of WER event) as the crash event for the crash being reported. AppCrash is emitted once for each crash handled by WER (e.g. from an unhandled exception or FailFast or ReportException). Note that Generic Watson event types (e.g. from PLM) that may be considered "crashes" by a user DO NOT emit this event.
+
+| Field | Description |
+| - | - |
+| AppName | Application executable name (e.g. excel.exe) |
+| AppSessionGuid | ID of the application session for BI correlation purposes. The appSessionGuid uniquely identifies a session from Launch to Terminate (Close or Crash). |
+| AppTimeStamp | Application executable image timestamp (UNIX epoch). |
+| AppVersion | Four 16-bit tuple identifying the application version |
+| ExceptionCode | NTSTATUS exception code. |
+| ExceptionOffset | NTSTATUS exception code. |
+| Flags | Bitmask containing control and routing flags |
+| ModName | Exception module name (e.g. test.dll). |
+| ModTimeStamp | Module image timestamp (UNIX epoch). |
+| ModVersion | Four 16-bit tuple identifying the module version. |
+| PackageFullName | Store application identity. |
+| PackageRelativeAppId | Store application identity. |
+| ProcessArchitecture | Architecture of the crashing process, as one of the PROCESSOR_ARCHITECTURE_* constants:<br>0: PROCESSOR_ARCHITECTURE_INTEL<br>5: PROCESSOR_ARCHITECTURE_ARM<br>9: PROCESSOR_ARCHITECTURE_AMD64<br>12: PROCESSOR_ARCHITECTURE_ARM64 |
+| ProcessCreateTime | Process creation time (UTC) of the crashing process. |
+| ProcessId | Process ID of the crashing process. |
+| ReportId | Unique report ID (usually a GUID) |
+| UTCReplace_TargetAppId | The kernel reported AppId of the application being reported. |
+| UTCReplace_TargetAppVer | The specific version of the application being reported. |
+
+
+**Microsoft.Windows.WindowsErrorReporting.AppHangEvent**
+
+This event sends data about hangs for both native and managed applications, to help keep Windows up to date. It does not contain any Watson bucketing information. The bucketing information is recorded in a Windows Error Reporting (WER) event that is generated when the WER client reports the hang to the Watson service, and the WER event will contain the same ReportID (see field 13 of hang event, field 19 of WER event) as the hang event for the hang being reported. AppHang is reported only on PC devices. It handles classic Win32 hangs and is emitted only once per report. Some behaviors that may be perceived by a user as a hang are reported by app managers (e.g. PLM/RM/EM) as Watson Generics and will not produce AppHang events.
+
+| Field | Description |
+| - | - |
+| AppSessionGuid | ID of the application session for BI correlation purposes. The appSessionGuid should uniquely identify a session from Launch to Terminate (Close or Hang). |
+| AppName | Application executable name (e.g. foo.exe). |
+| AppVersion | Four 16-bit tuple identifying the application version. |
+| PackageFullName | Store application identity. |
+| PackageRelativeAppId | Store application identity.  |
+| ProcessArchitecture | Architecture of the hung process, as one of the PROCESSOR_ARCHITECTURE_* constants:<br>0: PROCESSOR_ARCHITECTURE_INTEL<br>5: PROCESSOR_ARCHITECTURE_ARM<br>9: PROCESSOR_ARCHITECTURE_AMD64<br>12: PROCESSOR_ARCHITECTURE_ARM64 |
+| ProcessCreateTime | Process creation time (UTC) of the hung process
+| ProcessId | Process ID of the hung process.
+| ReportId | Unique report ID (usually a GUID).
+| TypeCode | Bitmap describing the hang type.
+| WaitingOnAppName | Application executable name (e.g. foo.exe).
+| WaitingOnAppVersion | Four 16-bit tuple identifying the application version.
+| WaitingOnPackageFullName | Store application identity.
+| WaitingOnPackageRelativeAppId | Store application identity.
+| UTCReplace_TargetAppId | The kernel reported AppId of the application being reported.
+| UTCReplace_TargetAppVer | The specific version of the application being reported.
+
+**Microsoft.Windows.WindowsErrorReporting.WerEvent**
+
+This event sends data about all reports, such as crashes, hangs, generic reports, etc., to help keep Windows up to date. This data includes a summary of the report's signatures, Watson bucket information, and various other fields describing the state of the report. For crashes and hangs, the WER event will contain the same ReportID as the preceding crash or hang event for the given failure being reported. WerEvent is emitted zero or more times per report, depending on processing status; it is not guaranteed to contain any particular ReportStatus value for all reports.
+
+| Field | Description |
+| - | - |
+| BucketHash | Watson bucket hash (practically a hash of all bucketing parameters concatenated). |
+| BucketId | Watson iBucket number (practically a 64-bit signed integer). |
+| BucketTable | Watson iBucketTable number (practically a small unsigned integer). |
+| CabId | Watson iCab number (practically a 64-bit signed integer or guid). |
+| EventName | Event name. |
+| PayloadSizeInBytes | The size of the report archive in bytes. |
+| ReportId | Unique report ID (usually a GUID). |
+| ReportStatus | 32-bit bitmap describing the report |
+| Response | Response URL. |
+| SignatureParameter01 | Signature parameter 1 of 10. May be null. |
+| SignatureParameter02 | Signature parameter 2 of 10. May be null. |
+| SignatureParameter03 | Signature parameter 3 of 10. May be null. |
+| SignatureParameter04 | Signature parameter 4 of 10. May be null. |
+| SignatureParameter05 | Signature parameter 5 of 10. May be null. |
+| SignatureParameter06 | Signature parameter 6 of 10. May be null. |
+| SignatureParameter07 | Signature parameter 7 of 10. May be null. |
+| SignatureParameter08 | Signature parameter 8 of 10. May be null. |
+| SignatureParameter09 | Signature parameter 9 of 10. May be null. |
+| SignatureParameter10 | Signature parameter 10 of 10. May be null. |
+| SignatureParameterCount | Number of signature parameters set. A number between 0 and 10, inclusive. |
