@@ -1,7 +1,7 @@
 ---
 description: Use this article to make informed decisions about how you can configure telemetry in your organization.
 title: Basic level Windows telemetry events and fields (Windows 10)
-keywords: privacy
+keywords: privacy, telemetry
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,7 +14,7 @@ author: brianlic-msft
 
 **Applies to**
 
--   Windows 10
+-   Windows 10, version 1703
 
 Add preface and cover page here (Steve May to provide)
 
