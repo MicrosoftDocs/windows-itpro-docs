@@ -17,9 +17,9 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 ## February 2017
 | New or changed topic | Description |
 | --- | --- |
-|[Automatically sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-automatic-sequence-a-new-app.md) |New |
-|[Automatically sequence multiple apps at the same time](appv-auto-batch-sequencing.md) |New |
-|[Automatically update multiple apps at the same time](appv-auto-batch-updating.md) |New |
+|[Automatically sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-sequence-a-new-app.md) |New |
+|[Automatically sequence multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md) |New |
+|[Automatically update multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md) |New |
 |[](appv-template-improvements.md) |New |
 
 ## January 2017

@@ -111,7 +111,7 @@
 ### [Operations for App-V](appv-operations.md)
 #### [Creating and Managing App-V Virtualized Applications](appv-creating-and-managing-virtualized-applications.md)
 ##### [Manually sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md)
-##### [Automatically sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-automatic-sequence-a-new-app.md)
+##### [Automatically sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-sequence-a-new-app.md)
 ###### [Automatically sequence multiple apps at the same time](appv-auto-batch-sequencing.md)
 ###### [Automatically update multiple apps at the same time](appv-auto-batch-updating.md)
 ##### [How to Modify an Existing Virtual Application Package](appv-modify-an-existing-virtual-application-package.md)

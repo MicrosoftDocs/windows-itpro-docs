@@ -20,9 +20,9 @@ Using the automatic sequencer to package your apps provides:
 
 - Automatic virtual machine (VM) provisioning of the sequencing environment. The process for this is covered in this topic.
 
-- Batch-sequencing of packages. This means that multiple apps can be sequenced at the same time, in a single group. For info about this, see [Automatically sequence multiple apps at the same time](appv-auto-batch-sequencing.md).
+- Batch-sequencing of packages. This means that multiple apps can be sequenced at the same time, in a single group. For info about this, see [Automatically sequence multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md).
 
-- Batch-updating of packages. This means that multiple apps can be updated at the same time, in a single group. For info about this, see [Automatically update multiple apps at the same time](appv-auto-batch-updating.md).
+- Batch-updating of packages. This means that multiple apps can be updated at the same time, in a single group. For info about this, see [Automatically update multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md).
 
 ## Automatic VM provisioning of the sequencing environment
 You have 2 options for provisioning an VM for auto-sequencing:
@@ -136,4 +136,3 @@ The 2 types of provisioning log files, located at â€œ%temp%\AutoSequencer\Logsâ€
 
 **Have a suggestion for App-V?**<p>
 Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
-

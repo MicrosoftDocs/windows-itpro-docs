@@ -1,6 +1,6 @@
 ---
-title: Automatically sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
-description: How to automatically sequence a new app using the App-V Sequencer
+title: Automatically sequence multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
+description: How to automatically sequence multiple apps at the same time using the Microsoft Application Virtualization Sequencer.
 author: eross-msft
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,28 +9,18 @@ ms.prod: w10
 ---
 
 
-# Automatically sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)
+# Automatically sequence multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)
 
 **Applies to**
 -   Windows 10, version 1703
 
-Previous versions of the App-V Sequencer have required you to manually sequence your app packages. This was time-consuming and required extensive interaction, causing many companies to deploy brand-new packages rather than update an existing one. Windows 10, version 1703 introduces an updated App-V Sequencer that automatically sequences your app packages, improving your overall experience by streamlining the provisioning of the prerequisite environment, automating app installation, and expediting the package updating setup.
-
-Using the automatic sequencer to package your apps provides:
-
-- Automatic virtual machine (VM) provisioning of the sequencing environment. The process for this is covered in this topic.
-
-- Batch-sequencing of packages. This means that multiple apps can be sequenced at the same time, in a single group. For info about this, see ...
-
-- Batch-updating of packages. This means that multiple apps can be updated at the same time, in a single group. For info about this, see ...
-
-## Automatic VM provisioning of the sequencing environment
-You have 2 options for provisioning an VM for auto-sequencing:
-- Using a Virtual Hard Disk (VHD)
+Sequencing multiple apps at the same time
+There are 2 approaches to sequencing multiple apps at the same time:
+- Using a cmdlet in PowerShell
 
     -OR-
 
-- Updating an existing VM
+- Using the UI provided by the App-V Sequencer
 
 ### Provision a new VM by using a VHD file
 Provisioning your new VM includes creating a VHD file, setting up a user account, turning on remote PowerShell scripting, and installing the App-V Sequencer.
@@ -132,7 +122,5 @@ The 2 types of provisioning log files, located at â€œ%temp%\AutoSequencer\Logsâ€
 
 - [Manually sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md)
 
-**Have a suggestion for App-V?**
-
+**Have a suggestion for App-V?**<p>
 Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
-
