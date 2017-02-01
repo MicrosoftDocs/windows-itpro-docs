@@ -19,7 +19,7 @@ Introduced in Windows 10 Enterprise and Windows Server 2016, Credential Guard u
 
 By enabling Credential Guard, the following features and solutions are provided:
 
--   **Hardware security** NTLM, Kerberos, and Credential Manager take advantage of platform security features, including Secure Boot and virtualization, to protect credentials.
+   **Hardware security** NTLM, Kerberos, and Credential Manager take advantage of platform security features, including Secure Boot and virtualization, to protect credentials.
 -   **Virtualization-based security** Windows NTLM and Kerberos derived credentials and other secrets run in a protected environment that is isolated from the running operating system.
 -   **Better protection against advanced persistent threats** When Credential Manager domain credentials, NTLM, and Kerberos derived credentials are protected using virtualization-based security, the credential theft attack techniques and tools used in many targeted attacks are blocked. Malware running in the operating system with administrative privileges cannot extract secrets that are protected by virtualization-based security. While Credential Guard is a powerful mitigation, persistent threat attacks will likely shift to new attack techniques and you should also incorporate Device Guard and other security strategies and architectures.
 
@@ -60,7 +60,7 @@ The Virtualization-based security requires:
 When Credential Guard is enabled, specific authentication capabilities are blocked, so applications which require blocked capabilities will break. Applications should be tested prior to deployment to ensure compatiblity with the reduced functionality. 
 
 >[!WARNING] 
-> Enabling Credential Guard on Domain Controllers is not supported <br>
+> Enabling Credential Guard on domain controllers is not supported <br>
 > The domain controller hosts authentication services which integrate with processes isolated when Credential Guard is enabled causing crashes. 
 
 >[!NOTE]
@@ -100,7 +100,7 @@ The following tables provide more information about the hardware, firmware, and 
 | Software: Qualified **Windows operating system**  | **Requirement**: Windows 10 Enterprise, Windows 10 Education, Windows 2016 Server, or Windows Enterprise IoT<br><blockquote><p><strong>Important:</strong><br> Windows Server 2016 running as a domain controller does not support Credential Guard. Only Device Guard is supported in this configuration.</p></blockquote><br>**Security benefits**: Support for VBS and for management features that simplify configuration of Credential Guard. |
 
 > [!IMPORTANT]
-> The preceding table lists requirements for baseline protections. The following tables list requirements for improved security. You can use Credential Guard with hardware, firmware, and software that support baseline protections, even if they do not support protections for improved security. However, we strongly recommend meeting the requirements for improved security, to significantly strengthen the level of security that Credential Guard can provide.
+> The preceding table lists requirements for baseline protections. The following tables list requirements for improved security. You can use Credential Guard with hardware, firmware, and software that support baseline protections, even if they do not support protections for improved security. However, we strongly recommend meeting the requirements for improved security to significantly strengthen the level of security that Credential Guard can provide.
 
 #### 2015 Additional Security Recommendations (starting with Windows 10, version 1507, and Windows Server 2016, Technical Preview 4)
 
