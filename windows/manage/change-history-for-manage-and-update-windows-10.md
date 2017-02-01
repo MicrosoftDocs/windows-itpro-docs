@@ -18,7 +18,9 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | New or changed topic | Description |
 | --- | --- |
 |[Automatically sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-automatic-sequence-a-new-app.md) |New |
-
+|[Automatically sequence multiple apps at the same time](appv-auto-batch-sequencing.md) |New |
+|[Automatically update multiple apps at the same time](appv-auto-batch-updating.md) |New |
+|[](appv-template-improvements.md) |New |
 
 ## January 2017
 
@@ -29,8 +31,6 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | [Start layout XML for mobile editions of Windows 10](start-layout-xml-mobile.md) | New (previously published in Hardware Dev Center on MSDN) |
 | [Quick guide to Windows as a service](waas-quick-start.md) | Added video that explains how Windows as a service works. |
 | [Manage device restarts after updates](waas-restart.md) | Added Registry keys for controlling restarts. |
-
-
 
 ## December 2016
 
