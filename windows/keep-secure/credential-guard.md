@@ -1,4 +1,4 @@
-,,---
+s,,---
 title: Protect derived domain credentials with Credential Guard (Windows 10)
 description: Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
 ms.assetid: 4F1FE390-A166-4A24-8530-EA3369FEB4B1
@@ -29,9 +29,9 @@ Kerberos, NTLM, and Credential manager isolate secrets that previous versions of
 
 For security reasons, the isolated LSA process doesn't host any device drivers. Instead, it only hosts a small subset of operating system binaries that are needed for security and nothing else. All of these binaries are signed with a certificate that is trusted by virtualization-based security and these signatures are validated before launching the file in the protected environment.
 
-When Credential Guard is enabled, NTLMv1, MS-CHAPv2, Digest, and CredSSP cannot use the signed in credentials. Thus, single sign-on does not work with these protocols. However, applications can prompt for credentials or use credentials stored in the Windows Vault which are not protected by Credential Guard with any of these protocol. It is strongly recommended that valuable credentials, such as the sign-in credentials, not be used with any of these protocols. If these protocols must be used by domain or AAD users, secondary credentials should be provisioned for these use cases.
+When Credential Guard is enabled, NTLMv1, MS-CHAPv2, Digest, and CredSSP cannot use the signed-in credentials. Thus, single sign-on does not work with these protocols. However, applications can prompt for credentials or use credentials stored in the Windows Vault which are not protected by Credential Guard with any of these protocol. It is strongly recommended that valuable credentials, such as the sign-in credentials, not be used with any of these protocols. If these protocols must be used by domain or Azure AD users, secondary credentials should be provisioned for these use cases.
 
-When Credential Guard is enabled, Kerberos does not allow unconstrained Kerberos delegation or DES encryption not only for signed-in credentials, but also prompted or saved credentials either.
+When Credential Guard is enabled, Kerberos does not allow unconstrained Kerberos delegation or DES encryption, not only for signed-in credentials, but also prompted or saved credentials.
 
 Here's a high-level overview on how the LSA is isolated by using virtualization-based security:
 
