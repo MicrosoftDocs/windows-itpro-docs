@@ -1,4 +1,4 @@
----
+,---
 title: Protect derived domain credentials with Credential Guard (Windows 10)
 description: Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
 ms.assetid: 4F1FE390-A166-4A24-8530-EA3369FEB4B1
@@ -17,7 +17,7 @@ author: brianlic-msft
 
 Introduced in Windows 10 Enterprise and Windows Server 2016, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Credential Guard prevents these attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets, and credentials stored by applications as domain credentials.
 
-By enabling Credential Guard the following features and solutions are provided:
+By enabling Credential Guard, the following features and solutions are provided:
 
 -   **Hardware security** NTLM, Kerberos and Credential Manager take advantage of platform security features including, Secure Boot and virtualization to protect credentials.
 -   **Virtualization-based security** Windows NTLM and Kerberos derived credentials and other secrets run in a protected environment that is isolated from the running operating system.
