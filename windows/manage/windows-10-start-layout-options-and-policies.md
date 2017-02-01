@@ -24,7 +24,7 @@ Organizations might want to deploy a customized Start and taskbar configuration 
 >[!NOTE]
 >Taskbar configuration is available starting in Windows 10, version 1607.
 >
->Start and taskbar configuration are available for Windows 10 Pro in version 170#.
+>Start and taskbar configuration are available for Windows 10 Pro in version 1703.
 
 ## Start options
 

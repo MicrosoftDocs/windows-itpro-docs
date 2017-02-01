@@ -23,13 +23,13 @@ localizationpriority: medium
 -   [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
 
-In Windows 10 Mobile, Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, version 170#, you can use a mobile device management (MDM) policy to deploy a customized Start and taskbar layout to users. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
+In Windows 10 Mobile, Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, version 1703, you can use a mobile device management (MDM) policy to deploy a customized Start and taskbar layout to users. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
 
 
 >[!NOTE]
 >Taskbar configuration is available starting in Windows 10, version 1607.
 >
->Start and taskbar configuration are available for Windows 10 Pro in version 170#.
+>Start and taskbar configuration are available for Windows 10 Pro in version 1703.
 
 **Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md) for desktop editions or [create a Start layout XML](start-layout-xml-mobile.md) for mobile.
 
