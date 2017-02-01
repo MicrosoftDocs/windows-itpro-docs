@@ -14,6 +14,12 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 >If you're looking for **update history** for Windows 10, see [Windows 10 and Windows Server 2016 update history](https://support.microsoft.com/help/12387/windows-10-update-history).
 
+## February 2017
+| New or changed topic | Description |
+| --- | --- |
+|[Automatically sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-automatic-sequence-a-new-app.md) |New |
+
+
 ## January 2017
 
 | New or changed topic | Description |
