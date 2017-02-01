@@ -1,4 +1,4 @@
-,---
+,,---
 title: Protect derived domain credentials with Credential Guard (Windows 10)
 description: Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
 ms.assetid: 4F1FE390-A166-4A24-8530-EA3369FEB4B1
@@ -19,13 +19,13 @@ Introduced in Windows 10 Enterprise and Windows Server 2016, Credential Guard u
 
 By enabling Credential Guard, the following features and solutions are provided:
 
--   **Hardware security** NTLM, Kerberos and Credential Manager take advantage of platform security features including, Secure Boot and virtualization to protect credentials.
+-   **Hardware security** NTLM, Kerberos, and Credential Manager take advantage of platform security features, including Secure Boot and virtualization, to protect credentials.
 -   **Virtualization-based security** Windows NTLM and Kerberos derived credentials and other secrets run in a protected environment that is isolated from the running operating system.
--   **Better protection against advanced persistent threats** When Credential Manager domain credentials, NTLM and Kerberos derived credentials are protected using virtualization-based security, the credential theft attack techniques and tools used in many targeted attacks are blocked. Malware running in the operating system with administrative privileges cannot extract secrets that are protected by virtualization-based security. While Credential Guard is a powerful mitigation, persistent threat attacks will likely shift to new attack techniques and you should also incorporate Device Guard and other security strategies and architectures.
+-   **Better protection against advanced persistent threats** When Credential Manager domain credentials, NTLM, and Kerberos derived credentials are protected using virtualization-based security, the credential theft attack techniques and tools used in many targeted attacks are blocked. Malware running in the operating system with administrative privileges cannot extract secrets that are protected by virtualization-based security. While Credential Guard is a powerful mitigation, persistent threat attacks will likely shift to new attack techniques and you should also incorporate Device Guard and other security strategies and architectures.
 
 ## How it works
 
-Kerberos, NTLM and Credential manager isolates secrets that previous versions of Windows stored in the Local Security Authority (LSA) by using virtualization-based security. Prior to Windows 10, the LSA stored secrets used by the operating system in its process memory. With Credential Guard enabled, the LSA process in the operating system talks to a new component called the isolated LSA process that stores and protects those secrets. Data stored by the isolated LSA process is protected using virtualization-based security and is not accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
+Kerberos, NTLM, and Credential manager isolate secrets that previous versions of Windows stored in the Local Security Authority (LSA) by using virtualization-based security. Prior to Windows 10, the LSA stored secrets used by the operating system in its process memory. With Credential Guard enabled, the LSA process in the operating system talks to a new component called the isolated LSA process that stores and protects those secrets. Data stored by the isolated LSA process is protected using virtualization-based security and is not accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
 
 For security reasons, the isolated LSA process doesn't host any device drivers. Instead, it only hosts a small subset of operating system binaries that are needed for security and nothing else. All of these binaries are signed with a certificate that is trusted by virtualization-based security and these signatures are validated before launching the file in the protected environment.
 
