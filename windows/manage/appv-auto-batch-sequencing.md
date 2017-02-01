@@ -1,6 +1,6 @@
 ---
 title: Automatically sequence multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
-description: How to automatically sequence multiple apps at the same time using the Microsoft Application Virtualization Sequencer.
+description: How to automatically sequence multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer).
 author: eross-msft
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -14,113 +14,141 @@ ms.prod: w10
 **Applies to**
 -   Windows 10, version 1703
 
-Sequencing multiple apps at the same time
+Sequencing apps requires you to install and start the Microsoft Application Virtualization Sequencer (App-V Sequencer), install the necessary apps, and to collect any changes made to the operating system during the installation and building of the App-V package.
+
 There are 2 approaches to sequencing multiple apps at the same time:
+
 - Using a cmdlet in PowerShell
 
     -OR-
 
-- Using the UI provided by the App-V Sequencer
+- Using the user-interface provided by the App-V Sequencer
 
-### Provision a new VM by using a VHD file
-Provisioning your new VM includes creating a VHD file, setting up a user account, turning on remote PowerShell scripting, and installing the App-V Sequencer.
+### Sequence multiple apps by using a PowerShell cmdlet
+Sequencing multipe apps at the same time requires that you create a **ConfigFile** to collect all of the info related to each round of sequencing. This file is then used by the sequencing cmdlet to start the VM at a "clean" checkpoint, to copy the installer from the Host device to the VM by using the `copy-item` command, and then starting the App-V Sequencer and your specified app installations.
 
-#### Create a VHD file
-For this process to work, you must have a base operating system available as a VHD image file, we recommend using the [Convert-WindowsImage.ps1](https://gallery.technet.microsoft.com/scriptcenter/Convert-WindowsImageps1-0fe23a8f) command-line tool.
+**To create your ConfigFile for use by the PowerShell cmdlet**
+1. Determine the apps that need to be included in your App-V sequencing package, and then open a text editor, such as Notepad.
 
-**To create a VHD file by using the Convert-WindowsImage command-line tool**
-1. Open PowerShell as an admin and run the Convert-WindowsImage tool, using the following commands:
+2. Add the following XML info for each app:
+
+    - **&lt;Name&gt;.** The name of the app you're adding to the package.
+    
+    - **&lt;InstallerFolder&gt;.** The file path to the folder with the app installer.
+
+    - **&lt;Installer&gt;.** The file name for the app executable. This will typically be an .exe or .msi file.
+
+    - **&lt;InstallerOptions&gt;.** The command-line options required for the app installation. This only applies to cmdlet sequencing, it doesn't apply if you use the App-V Sequencer interface. [Liz] What are the options here?
+
+    - **&lt;TimeoutInMinutes&gt;.** The maximum time interval that the cmdlet should wait for sequencing to complete. You can enter a different value for each app, based on the size and complexity of the app itself. [Liz] Is this optional?
+
+    - **&lt;Cmdlet&gt;.** Determines whether the sequencer uses the cmdlet or the App-V Sequencer interface. **True** tells the sequencer to usea cmdlet-based sequencing, while **False** tells the sequencer to use the App-V Sequencer UI. You can use both the cmdlet and the UI together in the same ConfigFile, for different apps.
+    
+    - **&lt;Enabled&gt;.** Allows the app to be sequenced by either the cmdlet or the App-V Sequencer interface. [Liz] Guessing. This wasn't called out in the text.
+
+        **Example:**
+
+        ```XML
+        <?xml version="1.0"?>
+            <Applications>
+                <Application>
+                    <Name>Notepad</Name>
+                    <InstallerFolder>C:\Windows</InstallerFolder>
+                    <Installer>notepad.exe</Installer>
+                    <InstallerOptions>/S</InstallerOptions>
+                    <TimeoutInMinutes>20</TimeoutInMinutes>
+                    <Cmdlet>True</Cmdlet>
+                    <Enabled>True</Enabled>
+                </Application>
+                <Application>
+                    <Name>Word 2016</Name>
+                    <InstallerFolder>C:\Program Files (x86)\Microsoft Office\root\Office16</InstallerFolder>
+                    <Installer>winword.exe</Installer>
+                    <InstallerOptions>/S</InstallerOptions>
+                    <TimeoutInMinutes>20</TimeoutInMinutes>
+                    <Cmdlet>True</Cmdlet>
+                    <Enabled>True</Enabled>
+                </Application>
+            </Applications>
+        </xml>
+        ```     
+3. Save your completed file, using the name **ConfigFile**.
+
+
+### Sequence multiple apps by using the App-V Sequencer interface
+Sequencing multipe apps at the same time requires that you create a **ConfigFIle** to collect all of the info related to each round of sequencing. This file is then used by the App-V Sequencer interface after creating a "clean" checkpoint on your VM.
+
+**To create your ConfigFile for use by the App-V Sequencer interface**
+1. Determine the apps that need to be included in your App-V sequencing package, and then open a text editor, such as Notepad.
+
+2. Add the following XML info for each app:
+
+    - **&lt;Name&gt;.** The name of the app you're adding to the package.
+    
+    - **&lt;InstallerFolder&gt;.** The file path to the folder with the app installer.
+
+    - **&lt;Installer&gt;.** The file name for the app executable. This will typically be an .exe or .msi file.
+
+    - **&lt;TimeoutInMinutes&gt;.** The maximum time interval that the cmdlet should wait for sequencing to complete. You can enter a different value for each app, based on the size and complexity of the app itself. [Liz] Is this optional?
+
+    - **&lt;Cmdlet&gt;.** Determines whether the sequencer uses the cmdlet or the App-V Sequencer interface. **True** tells the sequencer to usea cmdlet-based sequencing, while **False** tells the sequencer to use the App-V Sequencer UI. You can use both the cmdlet and the UI together in the same ConfigFile, for different apps.
+    
+    - **&lt;Enabled&gt;.** Allows the app to be sequenced by either the cmdlet or the App-V Sequencer UI. [Liz] Guessing. This wasn't called out in the text.
+
+        **Example:**
+
+        ```XML
+        <?xml version="1.0"?>
+            <Applications>
+                <Application>
+                    <Name>Notepad</Name>
+                    <InstallerFolder>C:\Windows</InstallerFolder>
+                    <Installer>notepad.exe</Installer>
+                    <TimeoutInMinutes>20</TimeoutInMinutes>
+                    <Cmdlet>False</Cmdlet>
+                    <Enabled>True</Enabled>
+                </Application>
+                <Application>
+                    <Name>Word 2016</Name>
+                    <InstallerFolder>C:\Program Files (x86)\Microsoft Office\root\Office16</InstallerFolder>
+                    <Installer>winword.exe</Installer>
+                    <TimeoutInMinutes>20</TimeoutInMinutes>
+                    <Cmdlet>False</Cmdlet>
+                    <Enabled>True</Enabled>
+                </Application>
+            </Applications>
+        </xml>
+        ```
+**To start the App-V Sequencer interface and app installation process**
+- Open PowerShell as an admin on the Host computer and run the following commands to start the batch sequencing:
 
     ```ps1
-    Convert-WindowsImage -SourcePath "<path_to_iso_image>" -VHDFormat "VHD" -VHDPartitionStyle "MBR"
+    New-BatchAppVSequencerPackages –ConfigFile <path_to_configfile> –VMName <name_of_vm> -OutputPath <path_to_your_output> 
     ```
-    Where _SourcePath_ is the full file path to your ISO image, _VHDFormat_ is *VHD*, and _VHDPartitionStyle_ is *MBR*. 
-    
-    >[!IMPORTANT]
-    >You must specify the _VHDPartitionStyle_ as **MBR**. Using the default value, **GPT**, will cause a boot failure in your VHD image.
+    Where _VMName_ is the name of the virtual machine (VM) where you'll run the batch sequencing and _OutputPath_ is the full file path to where the sequenced packages should be copied.
 
-#### Provision your VM using your VHD file
-After you have a VHD file, you must provision your VM for auto-sequencing.
+    The cmdlet creates a "clean" checkpoint on the VM, the first app installer listed in the ConfigFile is copied from the Host computer to the VM, and then a new session of the VM opens and the App-V Sequencer is started so you can start the sequencing process. After completing all of the app sequencing and package creation for the first app on the VM, you'll be prompted in the PowerShell window to provide the full file path to the output folder on the Host computer, where the final package is copied. The cmdlet then goes to the second app on your list, reverting the VM back to a "clean" checkpoint and then running through all of the steps again, until the final package is copied to your output folder. This continues until all of the apps included in your list are done. After the last app, the VM is reverted back to a "clean" checkpoint and turned off. [Liz] Didn't they put the output location into the command in step 1? Why do they need to put it there AND in the prompt?
 
-**To provision your VM using your VHD file**
-1. On the Host device, install Windows 10, version 1703 and the matching ADK version, making sure that you've selected to install the **Microsoft Application Virtualization (App-V) Auto Sequencer** component.
+### Review the log files
+There are 3 types of log files that occur when you sequence multiple apps at the same time:
 
-    >[!NOTE]
-    >The App-V Sequencer is included with the Windows ADK. For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
+- **“%temp%\AutoSequencer\Logs” – ‘New-BatchAppVSequencerPackages-<time stamp>.txt** [Liz] Text here
 
-2. Make sure that Hyper-V is turned on. For more info about turning on and using Hyper-V, see [Hyper-V on Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server).
+- **“OutputPath” folder – ‘New-BatchAppVSequencerPackages-report-<time stamp>.txt** [Liz] Text here
 
-3. Open PowerShell as an admin and run the **New-AppVSequencerVM** cmdlet, using the following parameters:
+- **Output Package” folder** [Liz] Text here
 
-    ```ps1
-    New-AppVSequencerVM -VMName "<name_of_new_vm>" -ADKPath "<path_to_adk_install_folder>" -VHDPath "<path_to_vhd_file>" -VMMemory <vm_memory_size> -VMSwitch "<name_of_network_switch>"
-    ```
-    
-    Where you create a unique name for your VM, ensure that the VHD file and matching ADK tools are located on the Host device and referenced in the _ADKPath_ and the _VHDPath_ parameters, determine the amount of memory to be allocated for use by your VM, and provide the name of your network switch.
-
-A new Hyper-V VM file is created out of the provisioned VHD, creating a "clean" checkpoint, from where all of the sequencing and updating will start.
-
-
-### Provision an existing VM for auto-sequencing
-If your apps require custom prerequesites, such as Microsoft SQL Server, we recommend that you preinstall the prerequisites on your VM and then use that VM for auto-sequencing. Using these steps will establish a connection to your existing VM, install the Microsoft Application Virtualization (App-V) Auto Sequencer from the ADK tools, and provision your VM for auto-sequencing.
-
-**To connect to your existing VM**
-- Open PowerShell as an admin and run the following commands on your existing VM:
-
-    - **Set the network category of your connection profile on the VM to _Private_:** 
-    
-        ```ps1
-        Get-netconnectionprofile | set-netconnectionprofile -NetworkCategory Private
-        ```
-        
-    - **Set the Windows Firewall rules for the display groups, _Remote Desktop_ and _Windows Remote Management_:** 
-    
-        ```ps1
-        Enable-NetFirewallRule -DisplayGroup “Remote Desktop” 
-        Enable-NetFirewallRule -DisplayGroup “Windows Remote Management”
-        ```
-
-    - **Set the VM to receive remote commands without a confirmation prompt:**
-    
-        ```ps1
-        Enable-PSRemoting –Force
-        ```
-
-    These commands turn on [PowerShell Remoting](https://msdn.microsoft.com/powershell/reference/5.1/Microsoft.PowerShell.Core/about/about_Remote) and turn on the necessary Windows Firewall rules so you can connect to your VM.
-
-**To provision an existing VM**
-1. On the Host device, install Windows 10, version 1703 and the matching ADK version, making sure that you've selected to install the **Microsoft Application Virtualization (App-V) Auto Sequencer** component.
-
-    >[!NOTE]
-    >The App-V Sequencer is included with the Windows ADK. For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
-
-2. Open PowerShell as an admin and run the **New-AppVSequencerVM** cmdlet, using the following parameters:
-
-    ```ps1
-    New-AppVSequencerVM -VMName "<name_of_vm>" -VMComputerName "<computer_name_for_vm>" -ADKPath "<path_to_adk_install_folder>"
-    ```
-    
-    Where _VMName_ is the name of the VM granted during its creation and shown in the Hyper-V Manager tool, and the _VMComputerName_ is the name of the VM, assigned after its creation and shown on the **Computer name** field of the **System Properties** screen.
-
-A new Hyper-V VM file is created from the existing VM, creating a "clean" checkpoint, from where all of the sequencing and updating will start.
-
-### Review the provisioning log files
-The 2 types of provisioning log files, located at “%temp%\AutoSequencer\Logs”, are:
-
-- **New-AppVSequencerVM-<time_stamp>.txt**: Includes info about the provisioning activities, such as "Waiting for VM session", "Copying installer for Sequencer", and so on.
-
-- **New-AppVSequencerVM-report-<time_stamp>.txt**: Includes info about the connections made to the VM, showing whether there were any failures.
 
 ### Related topics
-- [Download the Convert-WindowsImage tool](https://gallery.technet.microsoft.com/scriptcenter/Convert-WindowsImageps1-0fe23a8f)
-
 - [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 
 - [How to install the App-V Sequencer](appv-install-the-sequencer.md)
 
 - [Learn about Hyper-V on Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server)
 
-- [Manually sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md)
+- [Automatically sequence a single app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-sequence-a-new-app.md)
+
+- [Manually sequence a single app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md) [Liz] Do we want to continue to point to the manual steps? Is there a reason to do one over the other?
 
 **Have a suggestion for App-V?**<p>
 Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

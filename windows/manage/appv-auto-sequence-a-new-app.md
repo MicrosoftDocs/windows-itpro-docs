@@ -1,6 +1,6 @@
 ---
 title: Automatically sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
-description: How to automatically sequence a new app using the App-V Sequencer
+description: How to automatically sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer).
 author: eross-msft
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
