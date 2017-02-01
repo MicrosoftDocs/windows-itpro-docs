@@ -16,11 +16,14 @@ localizationpriority: high
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 >[!IMPORTANT]
->The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.
+>The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering. For more info, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and the [Microsoft Services Agreement](https://www.microsoft.com/en-us/servicesagreement).
 
-Cortana can automatically create a Suggested reminder, based on commitments made in email. For example, Cortana recognizes that if an employee includes the text, I’ll get this to you by the end of the week, he or she is making a commitment to provide something by a specific date. Cortana can now automatically create a Suggested reminder, letting the employee decide whether to keep it or to cancel it.
+Cortana can automatically create a Suggested reminder, based on commitments made in email. For example, Cortana recognizes that if an employee includes the text, _I’ll get this to you by the end of the week_, he or she is making a commitment to provide something by a specific date. Cortana can now automatically create a Suggested reminder, letting the employee decide whether to keep it or to cancel it.
 
-## Use Cortana to set Suggested reminders based on email commitments
+>[!NOTE]
+>The Suggested reminders feature is currently only available in English (en-us). 
+
+## Use Cortana to get Suggested reminders based on emailed commitments
 
 1. Make sure that you've connected Cortana to Office 365. For the steps to connect, see [Set up and test Cortana with Office 365 in your organization](cortana-at-work-o365.md).
 
