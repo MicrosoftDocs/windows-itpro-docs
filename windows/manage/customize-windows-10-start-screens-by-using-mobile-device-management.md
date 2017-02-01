@@ -1,5 +1,5 @@
 ---
-title: Customize Windows 10 Start with mobile device management (MDM) (Windows 10)
+title: Customize Windows 10 Start and taskbar with mobile device management (MDM) (Windows 10)
 description: You can use a mobile device management (MDM) policy to deploy a customized Start layout to users.
 ms.assetid: F487850D-8950-41FB-9B06-64240127C1E4
 keywords: ["start screen", "start menu"]
@@ -23,7 +23,7 @@ localizationpriority: medium
 -   [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
 
-In Windows 10 Mobile, Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, version 170#, you can use a mobile device management (MDM) policy to deploy a customized Start layout to users. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
+In Windows 10 Mobile, Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, version 170#, you can use a mobile device management (MDM) policy to deploy a customized Start and taskbar layout to users. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
 
 
 >[!NOTE]
