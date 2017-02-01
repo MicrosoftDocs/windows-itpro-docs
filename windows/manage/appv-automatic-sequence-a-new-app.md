@@ -19,14 +19,15 @@ ms.prod: w10
 
 Previous versions of the App-V Sequencer have required you to manually sequence your app packages. This was time-consuming and required extensive interaction, causing many companies to deploy brand-new packages rather than update an existing one. Windows 10, version 1703 introduces an updated App-V Sequencer that automatically sequences your app packages, improving your overall experience by streamlining the provisioning of the prerequisite environment, automating app installation, and expediting the package updating setup.
 
-Using the automatic sequence to package your apps provides:
+Using the automatic sequencer to package your apps provides:
 
-- Automatic virtual machine (VM) provisioning of the sequencing environment.
+- Automatic virtual machine (VM) provisioning of the sequencing environment. The process for this is covered in this topic.
 
-- Batch-sequencing of packages. This means that multiple apps can be sequenced at the same time, in a single group.
+- Batch-sequencing of packages. This means that multiple apps can be sequenced at the same time, in a single group. For info about this, see ...
 
-- Batch-updating of packages. This means that multiple apps can be updated at the same time, in a single group.
+- Batch-updating of packages. This means that multiple apps can be updated at the same time, in a single group. For info about this, see ...
 
+## Automatic VM provisioning of the sequencing environment
 You have 2 options for provisioning an VM for auto-sequencing:
 - Using a Virtual Hard Disk (VHD)
 
@@ -34,10 +35,10 @@ You have 2 options for provisioning an VM for auto-sequencing:
 
 - Updating an existing VM
 
-## Provision a new VM by using a VHD file
+### Provision a new VM by using a VHD file
 Provisioning your new VM includes creating a VHD file, setting up a user account, turning on remote PowerShell scripting, and installing the App-V Sequencer.
 
-### Create a VHD file
+#### Create a VHD file
 For this process to work, you must have a base operating system available as a VHD image file, we recommend using the [Convert-WindowsImage.ps1](https://gallery.technet.microsoft.com/scriptcenter/Convert-WindowsImageps1-0fe23a8f) command-line tool.
 
 **To create a VHD file by using the Convert-WindowsImage command-line tool**
@@ -51,7 +52,7 @@ For this process to work, you must have a base operating system available as a V
     >[!IMPORTANT]
     >You must specify the _VHDPartitionStyle_ as **MBR**. Using the default value, **GPT**, will cause a boot failure in your VHD image.
 
-### Provision your VM using your VHD file
+#### Provision your VM using your VHD file
 After you have a VHD file, you must provision your VM for auto-sequencing.
 
 **To provision your VM using your VHD file**
@@ -70,7 +71,7 @@ After you have a VHD file, you must provision your VM for auto-sequencing.
 A new Hyper-V VM file is created out of the provisioned VHD, creating a "clean" checkpoint, from where all of the sequencing and updating will start.
 
 
-## Provision an existing VM for auto-sequencing
+### Provision an existing VM for auto-sequencing
 If your apps require custom prerequesites, such as Microsoft SQL Server, we recommend that you preinstall the prerequisites on your VM and then use that VM for auto-sequencing. Using these steps will establish a connection to your existing VM, install the Microsoft Application Virtualization (App-V) Auto Sequencer from the ADK tools, and provision your VM for auto-sequencing.
 
 **To connect to your existing VM**
@@ -110,14 +111,14 @@ If your apps require custom prerequesites, such as Microsoft SQL Server, we reco
 
 A new Hyper-V VM file is created from the existing VM, creating a "clean" checkpoint, from where all of the sequencing and updating will start.
 
-## Review the provisioning log files
+### Review the provisioning log files
 The 2 types of provisioning log files, located at “%temp%\AutoSequencer\Logs”, are:
 
 - **New-AppVSequencerVM-<time_stamp>.txt**: Includes info about the provisioning activities, such as "Waiting for VM session", "Copying installer for Sequencer", and so on.
 
 - **New-AppVSequencerVM-report-<time_stamp>.txt**: Includes info about the connections made to the VM, showing whether there were any failures.
 
-## Related topics
+### Related topics
 - [Download the Convert-WindowsImage tool](https://gallery.technet.microsoft.com/scriptcenter/Convert-WindowsImageps1-0fe23a8f)
 
 - [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
@@ -128,6 +129,7 @@ The 2 types of provisioning log files, located at “%temp%\AutoSequencer\Logs�
 
 - [Manually sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md)
 
-## Have a suggestion for App-V?
+**Have a suggestion for App-V?**
+
 Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
