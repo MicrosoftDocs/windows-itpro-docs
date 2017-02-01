@@ -137,10 +137,9 @@ If the `redirect_uri` is a https URL, you'll be redirected to a URL on the local
 
 8. Login to the HP ArcSight console.
 
-9. Navigate to **Active channel set** > **New Condition** > **Device**
-> **Device Product**.
+9. Navigate to **Active channel set** > **New Condition** > **Device** > **Device Product**.
 
-10. Set **Device Product = Windows Defender ATP**. When you've verified that events are flowing, stop the process again and go to Windows Services and start the ArcSight FlexConnector REST.
+10. Set **Device Product = Windows Defender ATP**. When you've verified that events are flowing to the tool, stop the process again and go to Windows Services and start the ArcSight FlexConnector REST.
 
 You can now run queries in the HP ArcSight console.
 
