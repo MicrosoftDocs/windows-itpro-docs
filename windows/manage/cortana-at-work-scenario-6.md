@@ -7,7 +7,7 @@ ms.sitesec: library
 localizationpriority: high
 ---
 
-# Test scenario 6 - Use Cortana to automatically create Suggested reminders from email
+# Test scenario 6 - Use Cortana to create Suggested reminders based on what you've promised to do in email
 
 -   Windows 10, Windows Insider Program 
 -   Windows 10 Mobile, Windows Insider Program
@@ -23,7 +23,7 @@ Cortana can automatically create a Suggested reminder, based on commitments made
 >[!NOTE]
 >The Suggested reminders feature is currently only available in English (en-us). 
 
-## Use Cortana to create Suggested reminders based on what you've promised to do in email
+**To use Cortana to create Suggested reminders**
 
 1. Make sure that you've connected Cortana to Office 365. For the steps to connect, see [Set up and test Cortana with Office 365 in your organization](cortana-at-work-o365.md).
 
@@ -39,9 +39,9 @@ Cortana can automatically create a Suggested reminder, based on commitments made
 
 5. Create and send an email to yourself (so you can see the Suggested reminder), including the text, _I’ll finish this project by end of day today_.
 
-6.	After you get the email, click on the Cortana **Home** icon, and scroll to today’s events. If the reminder has a specific date or time associated with it, like end of day, Cortana notifies you at the appropriate time and puts the reminder into the Action Center.
+6.	After you get the email, click on the Cortana **Home** icon, and scroll to today’s events. 
 
-    Also from the **Home** screen, you can view the email where you made the promise, set aside time on your calendar, officially set the reminder, or mark the reminder as completed.
+    If the reminder has a specific date or time associated with it, like end of day, Cortana notifies you at the appropriate time and puts the reminder into the Action Center. Also from the Home screen, you can view the email where you made the promise, set aside time on your calendar, officially set the reminder, or mark the reminder as completed.
 
     ![Cortana Home screen with your suggested reminder showing](images/cortana-suggested-reminder.png)    
 
