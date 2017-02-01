@@ -22,14 +22,14 @@ Add preface and cover page here (Steve May to provide)
 
 The fields in this section contain common device data that is added to every event.
 
-### Common data - Device extension
+**Common data - Device extension**
 
 | Field | Description |
 | - | - |
 | localId | Represents a locally defined unique ID for the device, not the human readable device name. Most likely equal to the value stored at HKLM\Software\Microsoft\SQMClient\MachineId |
 | deviceClass | Represents the classification of the device, the device “family”.  For example, Desktop, Server, or Mobile.|
 
-### Common data - Envelope extension
+**Common data - Envelope extension**
 
 | Field | Description |
 | - | - |
@@ -48,13 +48,13 @@ The fields in this section contain common device data that is added to every eve
 | cV | Represents the Correlation Vector: A single field for tracking partial order of related telemetry events across component boundaries.|
 | tags | Represents the pre-release build "flight ID" |
 
-### Common data - OS extension
+**Common data - OS extension**
 
 | Field | Description |
 | - | - |
 | expId | Represents the “experiment ID”. The standard for associating a flight, such as an OS flight (pre-release build), or an experiment, such as a web site UX experiment, with an event is to record the flight / experiment IDs in Part A of the common schema.|
 
-### Common data - Telemetry extension
+**Common data - Telemetry extension**
 
 | Field | Description |
 | - | - |
@@ -65,7 +65,7 @@ The fields in this section contain common device data that is added to every eve
 | cat | Represents a bitmask of the ETW Keywords associated with the event.|
 | flags | Represents the bitmap that captures various Windows specific flags.|
 
-### Common data - User extension
+**Common data - User extension**
 
 | Field | Description |
 | - | - |
@@ -1075,4 +1075,284 @@ This event sends data about the Xbox Console, such as Serial Number and DeviceId
 | XboxConsoleSerialNumber | Retrieves the serial number of the Xbox console. |
 | XboxLiveDeviceId | Retrieves the unique device id of the console. |
 | XboxLiveSandboxId | Retrieves the developer sandbox id if the device is internal to Microsoft. |
+
+## Setup360telemetry events
+
+**Setup360telemetry.Downlevel**
+
+This event sends data indicating that the device has invoked the downlevel phase of the upgrade, to help keep Windows up to date. 
+
+| Field | Description |
+| - | - |
+| ClientId | In the Windows Update scenario, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value. |
+| InstanceId | Unique GUID that identifies each instance of setuphost.exe |
+| ReportId | In the Windows Update scenario, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim. |
+| WuId | This is the Windows Update Client ID. In the Windows Update scenario, this is the same as the clientId. |
+| TestId | String to uniquely identify a group of events, such as all events for the upgrade fair. |
+| State | Exit state of given Setup360 run (succeeded, failed, blocked, cancelled) |
+| HostOsSkuName | OS SKU which is running Setup360 instance (downlevel OS) |
+| HostOsBuildNumber | Build number of downlevel OS |
+| Setup360Scenario | Setup360 flow type (Boot, Media, Update, MCT) |
+| Setup360Mode | Phase of Setup360 (Predownload, Install, Finalize, Rollback etc.) |
+| Setup360Result | Result of Setup360 (HRESULT used to diagnose errors) |
+| Setup360Extended | Extension of result - more granular information about phase/action when the potential failure happened |
+| SetupVersionBuildNumber | Build number of Setup360 (build number of target OS). |
+
+
+**Setup360telemetry.Finalize**
+
+This event sends data indicating that the device has invoked the finalize phase of the upgrade, to help keep Windows up to date. 
+
+| Field | Description |
+| - | - |
+| ClientId | In the Windows Update scenario, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value. |
+| InstanceId | Unique GUID that identifies each instance of setuphost.exe |
+| ReportId | In the Windows Update scenario, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim. |
+| WuId | This is the Windows Update Client ID. In the Windows Update scenario, this is the same as the clientId. |
+| TestId | String to uniquely identify a group of events, such as all events for the upgrade fair. |
+| State | Exit state of given Setup360 run (succeeded, failed, blocked, cancelled) |
+| HostOsSkuName | OS SKU which is running Setup360 instance (downlevel OS) |
+| HostOsBuildNumber | Build number of downlevel OS |
+| Setup360Scenario | Setup360 flow type (Boot, Media, Update, MCT) |
+| Setup360Mode | Phase of Setup360 (Predownload, Install, Finalize, Rollback etc.) |
+| Setup360Result | Result of Setup360 (HRESULT used to diagnose errors) |
+| Setup360Extended | Extension of result - more granular information about phase/action when the potential failure happened |
+| SetupVersionBuildNumber | Build number of Setup360 (build number of target OS). |
+
+**Setup360telemetry.PostRebootInstall**
+
+This event sends data indicating that the device has invoked the postrebootinstall phase of the upgrade, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| ClientId | In the Windows Update scenario, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value. |
+| InstanceId | Unique GUID that identifies each instance of setuphost.exe |
+| ReportId | In the Windows Update scenario, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim. |
+| WuId | This is the Windows Update Client ID. In the Windows Update scenario, this is the same as the clientId. |
+| TestId | String to uniquely identify a group of events, such as all events for the upgrade fair. |
+| State | Exit state of given Setup360 run (succeeded, failed, blocked, cancelled) |
+| HostOsSkuName | OS SKU which is running Setup360 instance (downlevel OS) |
+| HostOsBuildNumber | Build number of downlevel OS |
+| Setup360Scenario | Setup360 flow type (Boot, Media, Update, MCT) |
+| Setup360Mode | Phase of Setup360 (Predownload, Install, Finalize, Rollback etc.) |
+| Setup360Result | Result of Setup360 (HRESULT used to diagnose errors) |
+| Setup360Extended | Extension of result - more granular information about phase/action when the potential failure happened |
+| SetupVersionBuildNumber | Build number of Setup360 (build number of target OS). |
+
+**Setup360telemetry.PreDownloadQuiet**
+
+This event sends data indicating that the device has invoked the predownloadquiet phase of the upgrade, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| ClientId | In the Windows Update scenario, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value. |
+| InstanceId | Unique GUID that identifies each instance of setuphost.exe |
+| ReportId | In the Windows Update scenario, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim. |
+| WuId | This is the Windows Update Client ID. In the Windows Update scenario, this is the same as the clientId. |
+| TestId | String to uniquely identify a group of events, such as all events for the upgrade fair. |
+| State | Exit state of given Setup360 run (succeeded, failed, blocked, cancelled) |
+| HostOsSkuName | OS SKU which is running Setup360 instance (downlevel OS) |
+| HostOsBuildNumber | Build number of downlevel OS |
+| Setup360Scenario | Setup360 flow type (Boot, Media, Update, MCT) |
+| Setup360Mode | Phase of Setup360 (Predownload, Install, Finalize, Rollback etc.) |
+| Setup360Result | Result of Setup360 (HRESULT used to diagnose errors) |
+| Setup360Extended | Extension of result - more granular information about phase/action when the potential failure happened |
+| SetupVersionBuildNumber | Build number of Setup360 (build number of target OS). |
+
+**Setup360telemetry.PreInstallQuiet**
+
+This event sends data indicating that the device has invoked the preinstallquiet phase of the upgrade, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| ClientId | In the Windows Update scenario, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value. |
+| InstanceId | Unique GUID that identifies each instance of setuphost.exe |
+| ReportId | In the Windows Update scenario, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim. |
+| WuId | This is the Windows Update Client ID. In the Windows Update scenario, this is the same as the clientId. |
+| TestId | String to uniquely identify a group of events, such as all events for the upgrade fair. |
+| State | Exit state of given Setup360 run (succeeded, failed, blocked, cancelled) |
+| HostOsSkuName | OS SKU which is running Setup360 instance (downlevel OS) |
+| HostOsBuildNumber | Build number of downlevel OS |
+| Setup360Scenario | Setup360 flow type (Boot, Media, Update, MCT) |
+| Setup360Mode | Phase of Setup360 (Predownload, Install, Finalize, Rollback etc.) |
+| Setup360Result | Result of Setup360 (HRESULT used to diagnose errors) |
+| Setup360Extended | Extension of result - more granular information about phase/action when the potential failure happened |
+| SetupVersionBuildNumber | Build number of Setup360 (build number of target OS). |
+
+**Setup360telemetry.UnexpectedEvent**
+
+This event sends data indicating that the device has invoked the unexpectedevent phase of the upgrade, to help keep Windows up to date. 
+
+| Field | Description |
+| - | - |
+| ClientId | In the Windows Update scenario, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value. |
+| InstanceId | Unique GUID that identifies each instance of setuphost.exe |
+| ReportId | In the Windows Update scenario, this is the updateID that is passed to Setup. In media setup, this is the GUID for the install.wim. |
+| WuId | This is the Windows Update Client ID. In the Windows Update scenario, this is the same as the clientId. |
+| TestId | String to uniquely identify a group of events, such as all events for the upgrade fair. |
+| State | Exit state of given Setup360 run (succeeded, failed, blocked, cancelled) |
+| HostOsSkuName | OS SKU which is running Setup360 instance (downlevel OS) |
+| HostOsBuildNumber | Build number of downlevel OS |
+| Setup360Scenario | Setup360 flow type (Boot, Media, Update, MCT) |
+| Setup360Mode | Phase of Setup360 (Predownload, Install, Finalize, Rollback etc.) |
+| Setup360Result | Result of Setup360 (HRESULT used to diagnose errors) |
+| Setup360Extended | Extension of result - more granular information about phase/action when the potential failure happened |
+| SetupVersionBuildNumber | Build number of Setup360 (build number of target OS). |
+
+**Setup360telemetry.Setup360**
+
+This event sends data indicating that the device has invoked the unexpectedevent phase of the upgrade, to help keep Windows up to date. 
+
+| Field | Description |
+| - | - |
+| ClientId | Retrieves the upgrade ID:<br>Upgrades via WU - specifies the WU clientID<br>Upgrades via China Partners  - specifies a unique string that classifies these events<br>All other deployment - static string. |
+| FieldName | Retrieves the event name/data point |
+| FlightData | Specifies a unique identifier for each group of flights (pre-release builds) |
+| InstanceId | Retrieves a unique identifier for each instance of a setup session |
+| ReportId | Retrieves the report ID: |
+| ScenarioId | Retrieves the deployment scenario |
+| Value | Retrieves the value associated with the corresponding FieldName  |
+
+##SetupPlatform events
+
+**SetupPlatformTelEvent**
+
+This event sends data generated by SetupPlatform, the engine that drives the various deployment scenarios, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| FieldName | Retrieves the event name/data point. Examples: InstallStartTime, InstallEndtime, OverallResult etc . |
+| GroupName | Retrieves the groupname the event belongs to. Example: Install Information, DU Information, Disk Space Information etc. |
+| Value | Retrieves the value associated with the corresponding event name (Field Name). For example: For time related events this will include the system time. |
+| Name | Retrieves the activity name; for Dynamic Update operations events are categorized based on an activity name. |
+
+**SetupPlatformTelActivityEvent**
+
+This event sends a unique ID that can be used to bind Setup Platform events together, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| ActivityId | Provides a unique Id to correlate events that occur between a activity start event, and a stop event |
+| ActivityName | Provides a friendly name of the package type that belongs to the ActivityId (Setup, LanguagePack, GDR, Driver, etc.) |
+
+## TelClientSynthetic events
+
+**TelClientSynthetic.AbnormalShutdown_0**
+
+This event sends data about boot IDs for which a normal clean shutdown was not observed, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| AbnormalShutdownBootId | Retrieves the Boot ID for which the abnormal shutdown was observed. |
+| CurrentBootId | Retrieves the current boot ID. |
+| LastSuccessfullyShutdownBootId | Retrieves the last successfully/cleanly shutdown boot ID. |
+| PowerButtonLastPressBootId | BootId of the last time the Power Button was detected to have been pressed ("pressed" not to be confused with "released") |
+| PowerButtonLastPressTime | Date/time of the last time the Power Button was detected to have been pressed ("pressed" not to be confused with "released") |
+| PowerButtonLastReleaseTime | Date/time of the last time the Power Button was detected to have been released ("released" not to be confused with "pressed") |
+| PowerButtonCumulativePressCount | Number of times the Power Button was detected to have been pressed ("pressed" not to be confused with "released") for the BootId specified in PowerButtonLastPressBootId |
+| PowerButtonCumulativeReleaseCount | Number of times the Power Button was detected to have been released ("released" not to be confused with "pressed") for the BootId specified in PowerButtonLastReleaseBootId |
+| PowerButtonLastReleaseBootId | BootId of the last time the Power Button was detected to have been released ("released" not to be confused with "pressed") |
+| PowerButtonErrorCount | Indicates the number of times there was an error attempting to record Power Button metrics (e.g. due to a failure to lock/update the bootstat file) |
+| TransitionInfoBootId | BootId of the captured "Transition Info"; important to match AbnormalShutdownBootId for analysis or the Transition Info in the event does not correlate with the rest of the information |
+| TransitionInfoSystemRunning | At the time the last marker was saved,the system was running |
+| TransitionInfoSleepInProgress | At the time the last marker was saved,the system was in or entering Sleep mode |
+| TransitionInfoCSInProgress | At the time the last marker was saved,the system was in or entering Connected Standby mode |
+TransitionInfoCSCount | Total number of times the system transitioned from Connected Standby mode to "on" at the time the last marker was saved |
+| TransitionInfoSleepTranstionsToOn | Total number of times the system transitioned from Sleep mode to "on" at the time the last marker was saved |
+| TransitionInfoPowerButtonTimestamp | Date/time of the last time the Power Button was detected to have been pressed (collected via a different mechanism than PowerButtonLastPressTime) |
+| TransitionInfoLastReferenceTimestamp | Date/time the marker was last saved |
+| TransitionInfoLastReferenceTimeChecksum | Checksum of TransitionInfoLastReferenceTimestamp |
+| FirmwareType | ID of the FirmwareType as enumerated in DimFirmwareType |
+| CrashDumpEnabled | OS configuration of the type of crash dump enabled; 0 = "not enabled" |
+| LastBugCheckBootId | bootId of the captured "Last Bug Check"; important to match AbnormalShutdownBootId for analysis or the Last Bug Check info in the event does not correlate with the rest of the information |
+| LastBugCheckProgress | Progress towards writing out the last crashdump; non-zero value indicates an attempt; LastBugCheck data is only available on UEFI-enabled systems (as indicated by FirmwareTypeId == 2) because it is saved in an EFI variable; LastBugCheck data is only available if crashdumping is enabled (as indicated by CrashDumpEnabled .> 0) |
+| LastBugCheckCode | Bug Check code indicating the type of error; LastBugCheck data is only available on UEFI-enabled systems (as indicated by FirmwareTypeId == 2) because it is saved in an EFI variable; LastBugCheck data is only available if crashdumping is enabled (as indicated by CrashDumpEnabled > 0) |
+| LastBugCheckParameter1 | First Bug Check parameter with additional info on the type of the error; LastBugCheck data is only available on UEFI-enabled systems (as indicated by FirmwareTypeId == 2) because it is saved in an EFI variable; LastBugCheck data is only available if crashdumping is enabled (as indicated by CrashDumpEnabled > 0) |
+| LastBugCheckOriginalDumpType | Type of crashdump the system intended to save; LastBugCheck data is only available on UEFI-enabled systems (as indicated by FirmwareTypeId == 2) because it is saved in an EFI variable; LastBugCheck data is only available if crashdumping is enabled (as indicated by CrashDumpEnabled > 0) |
+| LastBugCheckOtherSettings | Other crashdump settings; LastBugCheck data is only available on UEFI-enabled systems (as indicated by FirmwareTypeId == 2) because it is saved in an EFI variable; LastBugCheck data is only available if crashdumping is enabled (as indicated by CrashDumpEnabled > 0) |
+| LastBugCheckContextFlags | Additional crashdump settings; LastBugCheck data is only available on UEFI-enabled systems (as indicated by FirmwareTypeId == 2) because it is saved in an EFI variable; LastBugCheck data is only available if crashdumping is enabled (as indicated by CrashDumpEnabled > 0) |
+| CumulativeCrashCount | Cumulative count of OS crashes since the BootId reset |
+| PowerButtonPressIsShutdownInProgress | Indicates whether a system shutdown was in progress at the last time the Power Button was pressed |
+| PowerButtonPressLastPowerWatchdogStage | Progress while monitor/display is being turned on; ranges from 0 (no progress) to 0x50 (completion); if PowerButtonPressPowerWatchdogArmed == TRUE (armed), the value represents the current stage whereas if PowerButtonPressPowerWatchdogArmed == FALSE (not armed),the value represents the last completed stage at the time of the last Power Button press, |
+| PowerButtonPressPowerWatchdogArmed | Indicates whether or not the watchdog for the monitor/display was active at the time of the last Power Button press |
+| TransitionInfoCSEntryReason | Indicates the reason the device last entered Connected Standby mode |
+| TransitionInfoCSExitReason | Indicates the reason the device last exited Connected Standby mode  |
+
+**TelClientSynthetic.AuthorizationInfo_RunTimeTransition**
+
+This event sends data indicating that a device has undergone a change of telemetry opt-in level during the runtime of the device (not at UTC boot or offline), to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| TransitionFromEverythingOff | True if this transition is moving from not allowing core telemetry to allowing core telemetry. |
+| CanCollectAnyTelemetry | True if UTC is allowed to collect non-OS telemetry. Non-OS telemetry is responsible for providing its own opt-in mechanism. |
+| CanCollectHeartbeats | True if UTC is allowed to collect heartbeats. |
+| CanCollectCoreTelemetry | True if UTC is allowed to collect data which is tagged with both MICROSOFT_KEYWORD_CRITICAL_DATA and MICROSOFT_EVENTTAG_CORE_DATA. |
+| CanCollectOsTelemetry  | True if UTC is allowed to collect telemetry from the OS provider groups (often called Microsoft Telemetry). |
+| CanReportScenarios  | True if UTC is allowed to load and report scenario completion, failure, and cancellation events. |
+| CanAddMsaToMsTelemetry  | True if UTC is allowed to add MSA user identity onto telemetry from the OS provider groups. |
+| CanPerformTraceEscalations | 	True if UTC is allowed to perform scenario escalations with tracing actions. |
+| CanPerformDiagnosticEscalations | 	True if UTC is allowed to perform all scenario escalations. |
+
+**TelClientSynthetic.AuthorizationInfo_Startup **
+
+This event sends data indicating that a device has undergone a change of telemetry opt-in level detected at UTC startup, to help keep Windows up to date.
+
+| Field | Description |
+| - | - |
+| TransitionFromEverythingOff | True if this transition is moving from not allowing core telemetry to allowing core telemetry. |
+| CanCollectAnyTelemetry | True if UTC is allowed to collect non-OS telemetry. Non-OS telemetry is responsible for providing its own opt-in mechanism. |
+| CanCollectHeartbeats | True if UTC is allowed to collect heartbeats. |
+| CanCollectCoreTelemetry | True if UTC is allowed to collect data which is tagged with both MICROSOFT_KEYWORD_CRITICAL_DATA and MICROSOFT_EVENTTAG_CORE_DATA. |
+| CanCollectOsTelemetry  | True if UTC is allowed to collect telemetry from the OS provider groups (often called Microsoft Telemetry). |
+| CanReportScenarios  | True if UTC is allowed to load and report scenario completion, failure, and cancellation events. |
+| CanAddMsaToMsTelemetry | 	True if UTC is allowed to add MSA user identity onto telemetry from the OS provider groups. |
+| CanPerformTraceEscalations | 	True if UTC is allowed to perform scenario escalations with tracing actions. |
+| CanPerformDiagnosticEscalations | True if UTC is allowed to perform all scenario escalations. |
+
+**TelClientSynthetic.ConnectivityHeartBeat_0**
+
+This event sends data about the connectivity status of the Connected User Experience and Telemetry component that uploads telemetry events. If an unrestricted free network (such as Wi-Fi) is available, this event updates the last successful upload time. Otherwise, it checks whether a Connectivity Heartbeat event was fired in the past 24 hours, and if not, it fires an event. A Connectivity Heartbeat event also fires when a device recovers from costed network to free network.
+
+| Field | Description |
+| - | - |
+| LastConntectivityLossTime | Retrieves the last time the device lost free network. |
+| NetworkState | Retrieves the network state:<br>0 = No network.<br>1 = Restricted network.<br>2 = Free network. |
+| NoNetworkTime | Retrieves the time spent with no network (since the last time) in seconds. |
+| CensusTaskEnabled | Returns Boolean value for the census task (Enable/Disable) on client machine. |
+| CensusExitCode | Returns last execution codes from census client run. |
+| CensusStartTime  | Returns timestamp corresponding to last successful census run. |
+| RestrictedNetworkTime | Retrieves the time spent on a metered (cost restricted) network in seconds. |
+
+**TelClientSynthetic.HeartBeat_5**
+
+This event sends data about the health and quality of the telemetry data from the given device, to help keep Windows up to date. It also enables data analysts to determine how “trusted” the data is from a given device. 
+
+| Field | Description |
+| - | - |
+| CriticalOverflowEntersCounter | Retrieves the number of times we have entered critical overflow mode. |
+| DbCriticalDroppedCount | Retrieves the number of events marked with critical persistence that have been dropped due to disk size and/or bandwidth limitations. |
+| DbDroppedCount | Retrieves the number of events dropped by the local service due to disk size and/or bandwidth limitations. |
+| DecodingDroppedCount | Retrieves the number of events dropped due to ETW Decoding failures. |
+| EnteringCriticalOverflowDroppedCounter | Retrieves the sum of bytes dropped from normal buffers due to entering critical overflow. |
+| EtwDroppedCount | Retrieves the number of events dropped in ETW buffer. |
+| EventSubStoreResetCounter | Retrieves the number of times an event substore was reset. |
+| EventSubStoreResetSizeSum | Retrieves the sum of sizes (in bytes) of all event substores reset. |
+| EventsUploaded | Retrieves the total number of events uploaded since last successful upload. |
+| InvalidHttpCodeCount | Retrieves the total number of failed responses from the Microsoft Data Management Service servers. |
+| LastEventSizeOffender | Retrieves the name of the last event to exceed the allowed single-upload event payload size. |
+| LastInvalidHttpCode | Retrieves the last HTTP error received from Microsoft Data Management Service servers when attempting to upload. |
+| MaxInUseScenarioCounter | Retrieves the maximum # of concurrent in use scenarios during this timeframe since last heartbeat. |
+| PreviousHeartBeatTime | Retrieves the timestamp of the last heart beat which was fired. |
+| SettingsHttpAttempts | Retrieves the number of times the Connected User Experience and Telemetry  component attempted to connect to OneSettings. |
+| SettingsHttpFailures | Retrieves the number of times the Connected User Experience and Telemetry component failed to connect to OneSettings. |
+| ThrottledDroppedCount | Retrieves the number of events which were dropped due to throttling. |
+| UploaderDroppedCount | Retrieves the number of dropped events due to the upload buffer. |
+| VortexHttpAttempts | Retrieves the number of attempts the Connected User Experience and Telemetry component attempted to upload data to Microsoft Data Management servers. |
+| VortexHttpeFailures4xx | Retrieves the count, which increases each time the client receives a 400-499 code back from the service. |
+| VortexFailuresTimeout | Incremented each time a Vortex communication results in the error ERROR_WINHTTP_TIMOUT. |
+| VortexHttpFailures5xx | Incremented each time a Vortex communication results in a 500-599 HTTP error code. |
+
+
+
 
