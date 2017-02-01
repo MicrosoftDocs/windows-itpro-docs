@@ -14,9 +14,6 @@ ms.prod: w10
 **Applies to**
 -   Windows 10, version 1703
 
->[!NOTE]
->In Windows 10, version 1703, the App-V Sequencer is included with the Windows ADK. For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
-
 Previous versions of the App-V Sequencer have required you to manually sequence your app packages. This was time-consuming and required extensive interaction, causing many companies to deploy brand-new packages rather than update an existing one. Windows 10, version 1703 introduces an updated App-V Sequencer that automatically sequences your app packages, improving your overall experience by streamlining the provisioning of the prerequisite environment, automating app installation, and expediting the package updating setup.
 
 Using the automatic sequencer to package your apps provides:
@@ -57,6 +54,9 @@ After you have a VHD file, you must provision your VM for auto-sequencing.
 
 **To provision your VM using your VHD file**
 1. On the Host device, install Windows 10, version 1703 and the matching ADK version, making sure that you've selected to install the **Microsoft Application Virtualization (App-V) Auto Sequencer** component.
+
+    >[!NOTE]
+    >The App-V Sequencer is included with the Windows ADK. For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
 
 2. Make sure that Hyper-V is turned on. For more info about turning on and using Hyper-V, see [Hyper-V on Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server).
 
@@ -101,6 +101,9 @@ If your apps require custom prerequesites, such as Microsoft SQL Server, we reco
 **To provision an existing VM**
 1. On the Host device, install Windows 10, version 1703 and the matching ADK version, making sure that you've selected to install the **Microsoft Application Virtualization (App-V) Auto Sequencer** component.
 
+    >[!NOTE]
+    >The App-V Sequencer is included with the Windows ADK. For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
+
 2. Open PowerShell as an admin and run the **New-AppVSequencerVM** cmdlet, using the following parameters:
 
     ```ps1
@@ -123,7 +126,7 @@ The 2 types of provisioning log files, located at â€œ%temp%\AutoSequencer\Logsâ€
 
 - [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 
-- [Install the App-V Sequencer](appv-install-the-sequencer.md)
+- [How to install the App-V Sequencer](appv-install-the-sequencer.md)
 
 - [Learn about Hyper-V on Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server)
 
