@@ -13,7 +13,9 @@ localizationpriority: high
 
 Below is a list of some of the new and updated features included in  the initial release of Windows 10 (version 1507) and the Windows 10 update to version 1511.
 
-> **Note:** For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
+>[!NOTE]
+>For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
+ 
 
 ## Deployment
 
