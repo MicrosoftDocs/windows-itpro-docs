@@ -30,6 +30,9 @@ The specified app must be an above lock screen app. For details on building an a
 
 Apps Corner lets you set up a custom Start screen on your Windows 10 Mobile or Windows 10 Mobile Enterprise device, where you can share only the apps you choose with the people you let use your device. You configure a device for kiosk mode by selecting a single app to use in Apps Corner.
 
+>[!NOTE]
+>Apps Corner is only available in Windows 10 Mobile, version 1607, and earlier.
+
 **To set up Apps Corner**
 
 1.  On Start ![start](images/starticon.png), swipe over to the App list, then tap **Settings** ![settings](images/settingsicon.png) &gt; **Accounts** &gt; **Apps Corner**.
