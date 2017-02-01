@@ -75,7 +75,7 @@ The following steps assume that you have completed all the required steps in [Be
   - WDATP-connector.properties: C:\\*folder_location*\current\user\agent\flexagent\
 
   >[!NOTE]
-  >Where *folder_location* represents the location where you installed the tool. You must put the configuration files in the same location where you installed the tool. 
+  >You must put the configuration files in this location, where *folder_location* represents the location where you installed the tool. 
 4. After the installation of the core connector completes, the Connector Setup window opens. In the Connector Setup window, select **Add a Connector**.
 
 5. Select Type: **ArcSight FlexConnector REST** and click **Next**.
