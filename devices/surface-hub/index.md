@@ -13,7 +13,9 @@ localizationpriority: medium
 # Microsoft Surface Hub
 
 
-Documents related to the Microsoft Surface Hub.
+Documents related to deploying and managing the Microsoft Surface Hub in your organization.
+
+>[Looking for the user's guide for Surface Hub?](https://www.microsoft.com/surface/support/surface-hub)
 
 ## In this section
 

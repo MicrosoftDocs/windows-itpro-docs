@@ -29,8 +29,8 @@ You can use these tools to configure access to Windows Store: AppLocker or Group
 
 ## <a href="" id="block-store-applocker"></a>Block Windows Store using AppLocker
 
+Applies to: Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile
 
-Applies to: Windows 10 Enterprise, Windows 10 Mobile
 
 AppLocker provides policy-based access control management for applications. You can block access to Windows Store app with AppLocker by creating a rule for packaged apps. You'll give the name of the Windows Store app as the packaged app that you want to block from client computers.
 
@@ -59,7 +59,10 @@ For more information on AppLocker, see [What is AppLocker?](../keep-secure/what-
 ## <a href="" id="block-store-group-policy"></a>Block Windows Store using Group Policy
 
 
-Applies to: Windows 10 Enterprise, version 1511
+Applies to: Windows 10 Enterprise, version 1511, Windows 10 Education 
+
+> [!Note]
+> Not supported on Windows 10 Pro.
 
 You can also use Group Policy to manage access to Windows Store.
 
@@ -89,7 +92,7 @@ When your MDM tool supports Windows Store for Business, the MDM can use these CS
 For more information, see [Configure an MDM provider](configure-mdm-provider-windows-store-for-business.md).
 
 ## Show private store only using Group Policy 
-Applies to Windows 10 Enterprise, version 1607.
+Applies to Windows 10 Enterprise, version 1607, Windows 10 Education
 
 If you're using Windows Store for Business and you want employees to only see apps you're managing in your private store, you can use Group Policy to show only the private store. Windows Store app will still be available, but employees can't view or purchase apps. Employees can view and install apps that the admin has added to your organization's private store. 
 

@@ -1,5 +1,5 @@
 ---
-title: 4774(S) An account was mapped for logon. (Windows 10)
+title: 4774(S, F) An account was mapped for logon. (Windows 10)
 description: Describes security event 4774(S, F) An account was mapped for logon.
 ms.pagetype: security
 ms.prod: w10
@@ -24,9 +24,9 @@ Success events do not appear to occur. Failure event [has been reported](http://
 
 *Authentication Package:Schannel*
 
-*Account UPN:%2*
+*Account UPN:*<*Acccount*>@<*Domain*>
 
-*Mapped Name:%3*
+*Mapped Name:*<*Account*>
 
 ***Required Server Roles:*** no information.
 
