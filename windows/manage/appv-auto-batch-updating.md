@@ -37,15 +37,15 @@ Updating multipe apps at the same time requires that you create a **ConfigFile**
 
     - **&lt;Installer&gt;.** The file name for the app executable. This will typically be an .exe or .msi file.
 
-    - **&lt;InstallerOptions&gt;.** The command-line options required for the app installation. <!-- [Liz] What are the options here? -->    
+    - **&lt;InstallerOptions&gt;.** The command-line options required for the app installation. <!-- [Liz] Add the command-line improvements section as a subheading here -->
 
     - **&lt;Package&gt;.** The file path to the location of your App-V packages. These packages were created when you sequenced your apps.
 
-    - **&lt;TimeoutInMinutes&gt;.** The maximum time interval that the cmdlet should wait for updating to complete. You can enter a different value for each app, based on the size and complexity of the app itself. <!-- [Liz] Is this optional? -->
+    - **&lt;TimeoutInMinutes&gt;.** The maximum time interval that the cmdlet should wait for updating to complete. You can enter a different value for each app, based on the size and complexity of the app itself.
 
     - **&lt;Cmdlet&gt;.** Determines whether the sequencer uses the cmdlet or the App-V Sequencer interface. **True** tells the sequencer to use cmdlet-based updating, while **False** tells the sequencer to use the App-V Sequencer interface. You can use both the cmdlet and the interface together in the same ConfigFile, for different apps.
     
-    - **&lt;Enabled&gt;.** Allows the app to be updated by either the cmdlet or the App-V Sequencer interface. <!-- [Liz] Guessing. This wasn't called out in the text. -->
+    - **&lt;Enabled&gt;.** AIndicates whether the app is included in the batch process. You can include as many apps as you want in the batch file, but optionally enable only a few of them.
 
         **Example:**
 
@@ -104,11 +104,11 @@ Updating multipe apps at the same time requires that you create a **ConfigFile**
 
     - **&lt;Package&gt;.** The file path to the location of your App-V packages. These packages were created when you sequenced your apps.    
 
-    - **&lt;TimeoutInMinutes&gt;.** The maximum time interval that the cmdlet should wait for updating to complete. You can enter a different value for each app, based on the size and complexity of the app itself. <!-- [Liz] Is this optional? -->
+    - **&lt;TimeoutInMinutes&gt;.** The maximum time interval that the cmdlet should wait for updating to complete. You can enter a different value for each app, based on the size and complexity of the app itself.
 
     - **&lt;Cmdlet&gt;.** Determines whether the sequencer uses the cmdlet or the App-V Sequencer interface. **True** tells the sequencer to usea cmdlet-based updating, while **False** tells the sequencer to use the App-V Sequencer interface. You can use both the cmdlet and the interface together in the same ConfigFile, for different apps.
     
-    - **&lt;Enabled&gt;.** Allows the app to be updated by either the cmdlet or the App-V Sequencer interface. <!-- [Liz] Guessing. This wasn't called out in the text. -->
+    - **&lt;Enabled&gt;.** Indicates whether the app is included in the batch process. You can include as many apps as you want in the batch file, but optionally enable only a few of them.
 
         **Example:**
 
@@ -145,7 +145,7 @@ Updating multipe apps at the same time requires that you create a **ConfigFile**
     ```
     Where _VMName_ is the name of the virtual machine (VM) where you'll run the batch updating and _OutputPath_ is the full file path to where the updated packages should be copied.
 
-    The cmdlet creates a "clean" checkpoint on the VM, the first app installer listed in the ConfigFile is copied from the Host computer to the VM, and then a new session of the VM opens and the App-V Sequencer is started so you can start the updating process. After completing all of the app updating and package creation for the first app on the VM, you'll be prompted in the PowerShell window to provide the full file path to the output folder on the Host computer, where the final package is copied. The cmdlet then goes to the second app on your list, reverting the VM back to a "clean" checkpoint and running through all of the steps again, until the second app package is copied to your output folder. This process continues until all apps included in your list are done. After the last app, the VM is reverted back to a "clean" checkpoint and turned off. <!-- [Liz] Didn't they put the output location into the command in step 1? Why do they need to put it there AND in the prompt? -->
+    The cmdlet creates a "clean" checkpoint on the VM, the first app installer listed in the ConfigFile is copied from the Host computer to the VM, and then a new session of the VM opens and the App-V Sequencer is started so you can start the updating process. After completing all of the app updating and package creation for the first app on the VM, you'll be prompted in the PowerShell window to provide the full file path to the output folder on the Host computer, where the final package is copied. The cmdlet then goes to the second app on your list, reverting the VM back to a "clean" checkpoint and running through all of the steps again, until the second app package is copied to your output folder. This process continues until all apps included in your list are done. After the last app, the VM is reverted back to a "clean" checkpoint and turned off.
 
 ### Review the log files <!-- Do these apply for updating, too? -->
 There are 3 types of log files that occur when you sequence multiple apps at the same time:
