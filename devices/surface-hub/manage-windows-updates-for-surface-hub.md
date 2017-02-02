@@ -90,6 +90,7 @@ Once you've determined deployment rings for your Surface Hubs, configure update 
 - To defer quality updates, set an appropriate [Update/DeferQualityUpdatesPeriodInDays](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_DeferQualityUpdatesPeriodInDays) policy for each ring.
 
 > [!NOTE]
+
 > If you encounter issues during the update rollout, you can pause updates using [Update/PauseFeatureUpdates](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_PauseFeatureUpdates) and [Update/PauseQualityUpdates](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_PauseQualityUpdates).
 
 
@@ -106,6 +107,7 @@ You can connect Surface Hub to your Windows Server Update Services (WSUS) server
 To connect Surface Hub to a WSUS server using MDM, set an appropriate [Update/UpdateServiceUrl](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_UpdateServiceUrl) policy.
 
 **If you use a proxy server or other method to block URLs**
+
 If you use a method other than WSUS to block specific URLs and prevent updates, you will need to add the following Windows update trusted site URLs to the “allow list”:
 - http(s)://*.update.microsoft.com
 - http://download.windowsupdate.com 
