@@ -76,7 +76,7 @@ This table gives examples of deployment rings.
 
 ### Configure Surface Hub to use Current Branch or Current Branch for Business
 By default, Surface Hubs are configured to receive updates from Current Branch (CB). CB receives feature updates as soon as they are released by Microsoft. Current Branch for Business (CBB), on the other hand, receives feature updates at least four months after they have been initially offered to CB devices, and includes all of the quality updates that have been released in the interim. For more information on the differences between CB and CBB, see [Servicing branches](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-overview#servicing-branches).
-*
+
 **To manually configure Surface Hub to use CB or CBB:**
 1. Open **Settings** > **Update & Security** > **Windows Update**, and then select **Advanced Options**. 
 2. Select **Defer feature updates**.
@@ -107,9 +107,9 @@ To connect Surface Hub to a WSUS server using MDM, set an appropriate [Update/Up
 
 **If you use a proxy server or other method to block URLs**
 If you use a method other than WSUS to block specific URLs and prevent updates, you will need to add the following Windows update trusted site URLs to the “allow list”:
-- http(s)://\*.update.microsoft.com
-- http://download.windowsupdate.com 
-- http://windowsupdate.microsoft.com
+- `http(s)://\*.update.microsoft.com`
+- `http://download.windowsupdate.com` 
+- `http://windowsupdate.microsoft.com`
 
 Once the Windows 10 Team Anniversary Update is installed, you can remove these addresses to return your Surface Hub to its previous state.
 
