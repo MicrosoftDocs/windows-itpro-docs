@@ -115,11 +115,11 @@ If your apps require custom prerequesites, such as Microsoft SQL Server, we reco
 A new Hyper-V VM file is created from the existing VM, creating a "clean" checkpoint, from where all of the sequencing and updating will start.
 
 ### Review the provisioning log files
-The 2 types of provisioning log files, located at “%temp%\AutoSequencer\Logs”, are:
+The 2 types of provisioning log files, located at %temp%\AutoSequencer\Logs, are:
 
-- **New-AppVSequencerVM-<time_stamp>.txt**: Includes info about the provisioning activities, such as "Waiting for VM session", "Copying installer for Sequencer", and so on.
+- **New-AppVSequencerVM-<time_stamp>.txt**. Includes info about the provisioning activities, such as "Waiting for VM session", "Copying installer for Sequencer", and so on.
 
-- **New-AppVSequencerVM-report-<time_stamp>.txt**: Includes info about the connections made to the VM, showing whether there were any failures.
+- **New-AppVSequencerVM-report-<time_stamp>.txt**. Includes info about the connections made to the VM, showing whether there were any failures.
 
 
 ### Related topics
