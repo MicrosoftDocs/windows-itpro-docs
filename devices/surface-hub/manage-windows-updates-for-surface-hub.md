@@ -57,6 +57,7 @@ Surface Hubs, like all Windows 10 devices, include **Windows Update for Business
 2. [Configure when Surface Hub receives updates](#configure-when-surface-hub-receives-updates).
 
 > [!NOTE]
+
 > You can use Microsoft Intune, System Center Configuration Manager, or a supported third-party MDM provider to set up WUfB. [Walkthrough: use Microsoft Intune to configure Windows Update for Business.](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-wufb-intune)
 
 
@@ -104,6 +105,13 @@ You can connect Surface Hub to your Windows Server Update Services (WSUS) server
 
 To connect Surface Hub to a WSUS server using MDM, set an appropriate [Update/UpdateServiceUrl](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_UpdateServiceUrl) policy.
 
+**If you use a proxy server or other method to block URLs**
+If you use a method other than WSUS to block specific URLs and prevent updates, you will need to add the following Windows update trusted site URLs to the “allow list”:
+- `http(s)://*.update.microsoft.com`
+- `http://download.windowsupdate.com` 
+- `http://windowsupdate.microsoft.com`
+
+Once the Windows 10 Team Anniversary Update is installed, you can remove these addresses to return your Surface Hub to its previous state.
 
 ## Maintenance window
 
