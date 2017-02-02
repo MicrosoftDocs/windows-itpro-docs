@@ -742,6 +742,8 @@
 ##### [Investigate files](investigate-files-windows-defender-advanced-threat-protection.md)
 ##### [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md)
 ##### [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md)
+##### [Check sensor status](check-sensor-status-windows-defender-advanced-threat-protection.md)
+###### [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
 ##### [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
 #### [Windows Defender ATP settings](settings-windows-defender-advanced-threat-protection.md)
 #### [Windows Defender ATP service status](service-status-windows-defender-advanced-threat-protection.md)
