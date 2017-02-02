@@ -182,9 +182,9 @@ Below are quick-reference tables of the supported Windows Update for Business po
 | MDM Key | Key type | Value |
 | --- | --- | --- |
 | BranchReadinessLevel | REG_DWORD | 16: systems take Feature Updates for the Current Branch (CB)</br>32: systems take Feature Updates for the Current Branch for Business (CBB)</br>Note: Other value or absent: receive all applicable updates (CB) |
-| DeferQualityUpdatesPeriod | REG_DWORD | 0-30: defer quality updates by given days |
+| DeferQualityUpdatesPeriodinDays | REG_DWORD | 0-30: defer quality updates by given days |
 | PauseQualityUpdates | REG_DWORD | 1: pause quality updates</br>Other value or absent: don’t pause quality updates |
-| DeferFeatureUpdatesPeriod | REG_DWORD | 0-180: defer feature updates by given days |
+| DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-180: defer feature updates by given days |
 | PauseFeatureUpdates | REG_DWORD | 1: pause feature updates</br>Other value or absent: don’t pause feature updates |
 | ExcludeWUDriversinQualityUpdate | REG_DWORD | 1: exclude Windows Update drivers</br>Other value or absent: offer Windows Update drivers |
 
