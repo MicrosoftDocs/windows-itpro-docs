@@ -9,6 +9,18 @@ author: greg-lindsay
 
 All of your work up to now involved reviewing and resolving application and driver issues. Along the way, as you’ve resolved issues and decided which applications and drivers are ready to upgrade, you’ve been building a list of computers that are upgrade ready.
 
+Be sure to review upgrade assessment and guidance details, explained in more detail in the table below.
+
+| Upgrade assessment    | Action required before or after upgrade pilot? | Issue    | What it means   | Guidance      |
+|-----------------------|------------------------------------------------|----------|-----------------|---------------|
+| No known issues                                 | No                                             | None                                             | Computers will upgrade seamlessly.<br>                                                                                                                                         | OK to use as-is in pilot.                                                                                                                                                                                                                                                                                                                 |
+| OK to pilot, fixed during upgrade               | No, for awareness only                         | Application or driver will not migrate to new OS | The currently installed version of an application or driver won’t migrate to the new operating system; however, a compatible version is installed with the new operating system. | OK to use as-is in pilot.                                                                                                                                                                                                                                                                                                                 |
+| OK to pilot with new driver from Windows Update | Yes                                            | Driver will not migrate to new OS                | The currently installed version of a driver won’t migrate to the new operating system; however, a newer, compatible version is available from Windows Update.                    | Although a compatible version of the driver is installed during upgrade, a newer version is available from Windows Update. <br><br>If the computer automatically receives updates from Windows Update, no action is required. Otherwise, replace the new in-box driver with the Windows Update version after upgrading. <br> <br> |
+
+Select **Export computers** to view pilot-ready computers organized by operating system. After you select the computers you want to use in a pilot, click Export to generate and save a comma-separated value (csv) file.
+
+>**Important**> When viewing inventory items in table view, the maximum number of rows that can be viewed and exported is limited to 5,000. If you need to view or export more than 5,000 items, reduce the scope of the query so you can export fewer items at a time.
+
 The blades in the **Deploy** section are:
 
 - [Deploy eligible computers](#deploy-eligible-computers)
