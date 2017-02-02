@@ -41,7 +41,7 @@ Sequencing multipe apps at the same time requires that you create a **ConfigFile
 
     - **&lt;TimeoutInMinutes&gt;.** The maximum time interval that the cmdlet should wait for sequencing to complete. You can enter a different value for each app, based on the size and complexity of the app itself. <!-- [Liz] Is this optional? -->
 
-    - **&lt;Cmdlet&gt;.** Determines whether the sequencer uses the cmdlet or the App-V Sequencer interface. **True** tells the sequencer to usea cmdlet-based sequencing, while **False** tells the sequencer to use the App-V Sequencer interface. You can use both the cmdlet and the interface together in the same ConfigFile, for different apps.
+    - **&lt;Cmdlet&gt;.** Determines whether the sequencer uses the cmdlet or the App-V Sequencer interface. **True** tells the sequencer to use cmdlet-based sequencing, while **False** tells the sequencer to use the App-V Sequencer interface. You can use both the cmdlet and the interface together in the same ConfigFile, for different apps.
     
     - **&lt;Enabled&gt;.** Allows the app to be sequenced by either the cmdlet or the App-V Sequencer interface. <!-- [Liz] Guessing. This wasn't called out in the text. -->
 
