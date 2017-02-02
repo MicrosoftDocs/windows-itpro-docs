@@ -16,7 +16,7 @@ ms.prod: w10
 Starting with Windows 10, version 1703, you can save an App-V project template (.appvt) file as part of a sequenced App-V package, so it's automatically loaded every time the package opens for editing or updates. Your template can include general option settings, file exclusion list settings, and target operating system settings.
 
 >[!NOTE]
->App-V project templates differ from App-V Package Accelerators because App-V Package Accelerators are application-specific, while App-V project templates can be applied to multiple applications. For more info about Package Accelerators, see the [How to create a Package Accelerator](appv-create-a-package-accelerator) topic.
+>App-V project templates differ from App-V Package Accelerators because App-V Package Accelerators are application-specific, while App-V project templates can be applied to multiple applications. For more info about Package Accelerators, see the [How to create a Package Accelerator](appv-create-a-package-accelerator.md) topic.
 
 
 
