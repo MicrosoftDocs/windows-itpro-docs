@@ -1,5 +1,5 @@
 ---
-title: Test scenario 6 - Use Cortana to automatically create Suggested reminders from email (Windows 10)
+title: Test scenario 6 - Use Cortana to create suggested reminders for you, based on what you’ve promised in email (Windows 10)
 description: A test scenario about how to use Cortana with the Suggested reminders feature.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -7,7 +7,7 @@ ms.sitesec: library
 localizationpriority: high
 ---
 
-# Test scenario 6 - Use Cortana to create Suggested reminders based on what you've promised to do in email
+# Test scenario 6 - Use Cortana to create suggested reminders for you based on what you’ve promised in email
 
 -   Windows 10, Windows Insider Program 
 -   Windows 10 Mobile, Windows Insider Program
@@ -23,7 +23,7 @@ Cortana can automatically create a Suggested reminder, based on commitments made
 >[!NOTE]
 >The Suggested reminders feature is currently only available in English (en-us). 
 
-**To use Cortana to create Suggested reminders**
+**To use Cortana to create Suggested reminders for you**
 
 1. Make sure that you've connected Cortana to Office 365. For the steps to connect, see [Set up and test Cortana with Office 365 in your organization](cortana-at-work-o365.md).
 
