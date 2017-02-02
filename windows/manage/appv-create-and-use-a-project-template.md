@@ -1,28 +1,30 @@
 ---
-title: How to Create and Use a Project Template (Windows 10)
-description: How to Create and Use a Project Template
-author: MaggiePucciEvans
+title: Create and apply an App-V project template to a sequenced App-V package (Windows 10)
+description: Steps for how to create and apply an App-V project template (.appvt) to a sequenced App-V package.
+author: eross-msft
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ---
 
-
-# How to Create and Use a Project Template
+# Create and apply an App-V project template to a sequenced App-V package
 
 **Applies to**
--   Windows 10, version 1607
+-   Windows 10, version 1703
 
-You can use an App-V project template to save commonly applied settings associated with an existing virtual application package. These settings can then be applied when you create new virtual application packages in your environment. Using a project template can streamline the process of creating virtual application packages.
+Starting with Windows 10, version 1703, you can save an App-V project template (.appvt) file as part of a sequenced App-V package, so it's automatically loaded every time the package opens for editing or updates. Your template can include general option settings, file exclusion list settings, and target operating system settings.
 
-> **Note**&nbsp;&nbsp;You can, and often should apply an App-V project template during a package upgrade. For example, if you sequenced an application with a custom exclusion list, it is recommended that an associated template is created and saved for later use while upgrading the sequenced application.
+>[!NOTE]
+>App-V project templates differ from App-V Package Accelerators because App-V Package Accelerators are application-specific, while App-V project templates can be applied to multiple applications. For more info about Package Accelerators, see the [How to create a Package Accelerator](appv-create-a-package-accelerator) topic.
 
-App-V project templates differ from App-V Application Accelerators because App-V Application Accelerators are application-specific, and App-V project templates can be applied to multiple applications.
 
-Use the following procedures to create and apply a new template.
 
-**To create a project template**
+
+
+
+## Create a project template
+
 
 1.  To start the App-V sequencer, on the computer that is running the sequencer, click **Start** / **All Programs** / **Microsoft Application Virtualization** / **Microsoft Application Virtualization Sequencer**.
 
