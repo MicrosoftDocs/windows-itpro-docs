@@ -73,6 +73,7 @@ Sequencing multipe apps at the same time requires that you create a **ConfigFile
         ```     
 3. Save your completed file, using the name **ConfigFile**.
 
+
 **To start the App-V Sequencer interface and app installation process**
 - Open PowerShell as an admin on the Host computer and run the following commands to start the batch sequencing:
 
@@ -127,6 +128,8 @@ Sequencing multipe apps at the same time requires that you create a **ConfigFIle
             </Applications>
         </xml>
         ```
+
+
 **To start the App-V Sequencer interface and app installation process**
 - Open PowerShell as an admin on the Host computer and run the following commands to start the batch sequencing:
 
