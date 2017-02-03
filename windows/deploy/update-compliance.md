@@ -51,18 +51,13 @@ If you are not yet using OMS:
 
 1.	Go to Operations Management Suite’s page on Microsoft.com and click Sign in.
 
-
-
 2.	Sign in to Operations Management Suite (OMS). You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
-
 
 3.	Create a new OMS workspace. 
 
 4.	Enter a name for the workspace, select the workspace region, and provide the email address that you want associated with this workspace. Select Create.
 
-
 5.	If your organization already has an Azure subscription, you can link it to your workspace. Note that you may need to request access from your organization’s Azure administrator. If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. If you do not yet have an Azure subscription, follow this guide to create and link an Azure subscription to an OMS workspace.
-
 
 6.	To add the Update Compliance solution to your workspace, go to the Solutions Gallery. 
 
@@ -72,11 +67,8 @@ If you are not yet using OMS:
 
 9.	Click “Subscribe” to subscribe to OMS Update Compliance. You will then need to distribute your Commercial ID across all your organization’s devices. More information on the Commercial ID is provided below.
 
-
 After you are subscribed to OMS Update Compliance and your devices have a Commercial ID, you will begin receiving data. It will typically take 24 hours for the first data to begin appearing. The following section explains how to deploy your Commercial ID to your Windows 10 devices.
 
-
- 
 Deploy your Commercial ID to your Windows 10 devices
 For your devices to show up in Windows Analytics: Update Compliance, they must be configured with your organization’s Commercial ID. This is so that Microsoft knows that a given device is a member of your organization and to feed that device’s data back to you. There are two primary methods for widespread deployment of your Commercial ID: using Microsoft’s Group Policy (GP) and using Microsoft Mobile Device Management (MDM). 
 
@@ -102,9 +94,8 @@ Within Update Compliance, we have these primary blades:
 5.	CB, CBB, LTSB Deployment Status
 6.	List of Queries
 
- 
-
 OS Update Overview
+
 The first blade of OMS Update Compliance is the General OS Update Overview blade. This blade is divided into three sections: Device Summary, Needs Attention Summary, and Device Update Summary.
 
 The Device Summary displays the total number of devices in your organization. These devices have the commercial ID configured, telemetry enabled, and have sent telemetry to Microsoft within the last 28 days. The tile also shows the devices that Need Attention. 
@@ -157,10 +148,8 @@ Note: All devices in this category for Previous Security Update Status are missi
 Update Failed	The count of devices that were In Progress for the given security update, but failed at some point in the process. They will no longer be shown as “In Progress or deferred” in this case, and only be counted as “Update failed”.
 Status Unknown	If a device should be, in some way, progressing toward this security update, but it’s status cannot be inferred, it will count as “Status Unknown”. Devices not using Windows Update are the most likely devices to fall into this category. 
 
-
- 
-
 Overall Feature Update Status
+
 Windows 10 has two main update types: Quality and Feature updates. The third blade in Update Compliance provides the most essential data about your organization’s devices for feature updates. 
 
 Microsoft has developed terms to help specify the state of a given device for how it fits into the Windows as a Service (WaaS) model. There are three update states for a device: Current, Up-to-date, and Not up-to-date. Refer to the Update Status Summary section for definitions of these terms. 
@@ -169,7 +158,6 @@ This blade focuses around whether your devices are Current or not.
 The devices are broken down by their OS Version (e.g., 1607), with a count as to how many are Current, how many are Not Current, and how many have Update Failures. Clicking on any of these will allow you to view all those devices, as well as select the “Update Deployment Status” perspective, shown and explained below. 
 CB, CBB, LTSB Deployment Status
 Following the overview of with respect to how Current your organization’s devices are, there are three tables that show feature update deployment for all devices. The devices are split up by which branch they are on, as this directly impacts whether they are supported (for example, 1607 may be supported under CBB, but not under CB). This allows you a quick glance at how deployment is progressing across your organization with respect to feature updates.
-
 
 The three tables break down devices by Feature update. For each OS version, the following columns provide counts of the various states they can be in:
 Deployment Status	Description
@@ -187,15 +175,6 @@ Example: Device X running CB 1507 could be installing CB 1607. X then encounters
 Status Unknown	For devices not using Windows Update to get updates, some information on deployment progress cannot be known. It is possible to know the current installed Feature Update for a device, but not which devices are “In Progress”, “Scheduled next 7 days”, or devices with “Update Failed”.
 
 Devices that Update Compliance knows belongs to your organization, but it does not know update failures or installation progress, will be counted here. 
-
-
-
-
-
-
-
-
-
 
 Quality Update Perspective
 
@@ -241,20 +220,11 @@ RebootInitiated	The device has reported to have initiated the reboot process for
 Update completed	The device has completed installing, rebooting, and applying the update. 
 Detailed Deployment Status categories
 
-
-
-
- 
 Feature Update Perspective
 
 Like Quality Updates, the Feature Update Deployment Status perspective is a breakdown of information most essential to the user. This information is viewed by clicking on a given build on the Feature Update Status blade and then navigating to the “Update Deployment Status” pane as displayed above. In Update Compliance, a perspective is assigned to a query; the query used to generate the perspective can be altered to show other information, if desired. 
 Every piece of data shown in this view can be clicked; when clicked, it will alter the query to focus only on the data you need. If the perspective is not meaningful after the query is altered, you can use the other data views like the List and Table. 
 
-
-
-
-
- 
 Feature Update Build Summary
 
 The Build Summary blade provides a summary for all devices on the given build. It gives a count of all devices, as well as a count of all devices that need attention. Below the counts, you can see why the devices need attention, with a count of devices that fall into each category. 
@@ -325,8 +295,6 @@ The configuration is in days. 0 days means the device has WUfB deferrals configu
 Pause configurations for Quality Update	This query provides to a chart view displaying the breakdown of devices that are either paused, or not paused for quality updates.
 
 “Not configured” means the device is not paused. “Paused” means it is currently paused.
-
-
 
 Appendix
 Architecture
