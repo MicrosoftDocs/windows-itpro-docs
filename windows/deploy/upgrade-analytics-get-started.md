@@ -22,7 +22,7 @@ Before you begin, consider reviewing the following helpful information:<BR>
 
 When you are ready to begin using Upgrade Analytics, perform the following steps:
 
-1. Review information about [data collection and privacy](#data-collection-and-privacy).
+1. Review [data collection and privacy](#data-collection-and-privacy) information.
 2. [Add Upgrade Analytics to OMS](#add-upgrade-analytics-to-operations-management-suite).
 3. [Enable data sharing](#enable-data-sharing).
 4. [Deploy required updates](#deploy-the-compatibility-update-and-related-kbs) to computers, and validate using a pilot deployment.
@@ -130,7 +130,7 @@ To ensure that user computers are receiving the most up to date data from Micros
 
 ### Distribute the deployment script at scale
 
-Use a software distribution system such as System Center Configuration Manager to distribute the Upgrade Analytics deployment script at scale. For more information, see the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/)
+Use a software distribution system such as System Center Configuration Manager to distribute the Upgrade Analytics deployment script at scale. For more information, see the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/).
 
 
 
