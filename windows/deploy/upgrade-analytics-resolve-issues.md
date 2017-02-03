@@ -41,13 +41,9 @@ Applications with issues known to Microsoft are listed, grouped by upgrade asses
 To change an application's upgrade decision:
 
 1. Select **Decide upgrade readiness** to view applications with issues. 
-
-2. In the table view, sort on **UpgradeAssessment** to group applications into **Attention needed** and **Fix available**. 
-
-3. Select **User changes** to change the upgrade decision for each application.
-
+2. In the table view, select an **UpgradeDecision** value. 
+3. Select **Decide upgrade readiness** to change the upgrade decision for each application.
 4. Select the applications you want to change to a specific upgrade decision and then then select the appropriate option from the **Select upgrade decision** list.
-
 5. Click **Save** when finished.  
 
 IMORTANT: Ensure that you have the most recent versions of the compatibility update and related KBs installed to get the most up-to-date compatibility information.

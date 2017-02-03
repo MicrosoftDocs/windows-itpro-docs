@@ -19,13 +19,9 @@ Select **Assign importance** to change an application’s importance level. By d
 
 To change an application’s importance level:
 
-1.  Select **Not reviewed** or **Low install count** on the **Prioritize applications** blade to view the list of applications with that importance level. Select **Table** to view the list in a table.
-
-2.  Select **User changes** to enable user input.
-
-3.  Select the applications you want to change to a specific importance level and then select the appropriate option from the **Select importance level** list.
-
-4.  Click **Save** when finished.
+1.  Select **Not reviewed** or **Low install count** on the **Prioritize applications** blade to view the list of applications with that importance level.
+2.  Select the applications you want to change to a specific importance level and then select the appropriate option from the **Select importance level** list.
+3.  Click **Save** when finished.
 
 Importance levels include:
 
