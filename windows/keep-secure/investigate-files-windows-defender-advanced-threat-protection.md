@@ -124,7 +124,7 @@ The Action center shows the submission information:
   -	**Status** -Indicates whether the file was added to or removed from the blacklist.
 
 When the file is blocked, there will be a new event in the machine timeline.</br>
- 
+
 **Notification on machine user**:</br>
 When a file is being blocked on the endpoint, the following notification is displayed to inform the user that the file was blocked:
 
