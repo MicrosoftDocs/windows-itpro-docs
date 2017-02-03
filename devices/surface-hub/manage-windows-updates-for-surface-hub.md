@@ -90,7 +90,6 @@ Once you've determined deployment rings for your Surface Hubs, configure update 
 - To defer quality updates, set an appropriate [Update/DeferQualityUpdatesPeriodInDays](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_DeferQualityUpdatesPeriodInDays) policy for each ring.
 
 > [!NOTE]
-
 > If you encounter issues during the update rollout, you can pause updates using [Update/PauseFeatureUpdates](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_PauseFeatureUpdates) and [Update/PauseQualityUpdates](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_PauseQualityUpdates).
 
 
