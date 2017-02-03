@@ -44,7 +44,7 @@ For this process to work, you must have a base operating system available as a V
     ```ps1
     Convert-WindowsImage -SourcePath "<path_to_iso_image>" -VHDFormat "VHD" -VHDPartitionStyle "MBR"
     ```
-    Where _SourcePath_ is the full file path to your ISO image, _VHDFormat_ is *VHD*, and _VHDPartitionStyle_ is *MBR*. 
+    Where _SourcePath_ is the full path to your ISO image, _VHDFormat_ is *VHD*, and _VHDPartitionStyle_ is *MBR*. 
     
     >[!IMPORTANT]
     >You must specify the _VHDPartitionStyle_ as **MBR**. Using the default value, **GPT**, will cause a boot failure in your VHD image.
