@@ -53,58 +53,73 @@ Two features enable Start layout control:
 ## <a href="" id="bkmk-domaingpodeployment"></a>Create a policy for your customized Start layout
 
 
-This example uses Microsoft Intune to configure an MDM policy that applies a customized Start layout. See the documentation for your MDM solution for help in applying the policy.
+This example uses Microsoft Intune to configure an MDM policy that applies a customized Start and taskbar layout. See the documentation for your MDM solution for help in applying the policy.
 
-1.  In the Start layout file created when you ran **Export-StartLayout**, replace markup characters with escape characters, and save the file. (You can replace the characters manually or use an online tool.)
+1.  In your customized Start and taskbar layout XML file, replace markup characters with escape characters, and save the file. (You can replace the characters manually or use an online tool.)
 
-    Example of a layout file produced by Export-StartLayout:
-
-    <span codelanguage="XML"></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">XML</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>&lt;LayoutModificationTemplate Version=&quot;1&quot; xmlns=&quot;http://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
-      &lt;DefaultLayoutOverride&gt;
-        &lt;StartLayoutCollection&gt;
-          &lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot; xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot;&gt;
-            &lt;start:Group Name=&quot;Life at a glance&quot; xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot;&gt;
-              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge&quot; /&gt;
-              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI&quot; /&gt;
-              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-            &lt;/start:Group&gt;        
-          &lt;/defaultlayout:StartLayout&gt;
-        &lt;/StartLayoutCollection&gt;
-      &lt;/DefaultLayoutOverride&gt;
-    &lt;/LayoutModificationTemplate&gt;</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
-
-    Example of the same layout file with escape characters replacing the markup characters:
-
-```
-    &amp;lt;wdcml:p xmlns:wdcml=&amp;quot;http://microsoft.com/wdcml&amp;quot;&amp;gt;Example of a layout file produced by Export-StartLayout:&amp;lt;/wdcml:p&amp;gt;&amp;lt;wdcml:snippet xmlns:wdcml=&amp;quot;http://microsoft.com/wdcml&amp;quot;&amp;gt;&amp;lt;![CDATA[&amp;lt;LayoutModificationTemplate Version=&amp;quot;1&amp;quot; xmlns=&amp;quot;http://schemas.microsoft.com/Start/2014/LayoutModification&amp;quot;&amp;gt;
-      &amp;lt;DefaultLayoutOverride&amp;gt;
-        &amp;lt;StartLayoutCollection&amp;gt;
-          &amp;lt;defaultlayout:StartLayout GroupCellWidth=&amp;quot;6&amp;quot; xmlns:defaultlayout=&amp;quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&amp;quot;&amp;gt;
-            &amp;lt;start:Group Name=&amp;quot;Life at a glance&amp;quot; xmlns:start=&amp;quot;http://schemas.microsoft.com/Start/2014/StartLayout&amp;quot;&amp;gt;
-              &amp;lt;start:Tile Size=&amp;quot;2x2&amp;quot; Column=&amp;quot;0&amp;quot; Row=&amp;quot;0&amp;quot; AppUserModelID=&amp;quot;Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge&amp;quot; /&amp;gt;
-              &amp;lt;start:Tile Size=&amp;quot;2x2&amp;quot; Column=&amp;quot;4&amp;quot; Row=&amp;quot;0&amp;quot; AppUserModelID=&amp;quot;Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI&amp;quot; /&amp;gt;
-              &amp;lt;start:Tile Size=&amp;quot;2x2&amp;quot; Column=&amp;quot;2&amp;quot; Row=&amp;quot;0&amp;quot; AppUserModelID=&amp;quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&amp;quot; /&amp;gt;
-            &amp;lt;/start:Group&amp;gt;        
-          &amp;lt;/defaultlayout:StartLayout&amp;gt;
-        &amp;lt;/StartLayoutCollection&amp;gt;
-      &amp;lt;/DefaultLayoutOverride&amp;gt;
-    &amp;lt;/LayoutModificationTemplate&amp;gt;]]&amp;gt;&amp;lt;/wdcml:snippet&amp;gt;
-```
+    Example of a layout file:
+    
+    ```xml
+<?xml version="1.0" encoding="utf-8"?>
+  <LayoutModificationTemplate
+    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+    Version="1">
+  <LayoutOptions StartTileGroupCellWidth="6" StartTileGroupsColumnCount="1" />
+  <DefaultLayoutOverride>
+    <StartLayoutCollection>
+      <defaultlayout:StartLayout GroupCellWidth="6" xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout">
+        <start:Group Name="Life at a glance" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout">
+          <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+          <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI" />
+          <start:Tile Size="2x2" Column="2" Row="0" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+        </start:Group>        
+      </defaultlayout:StartLayout>
+    </StartLayoutCollection>
+  </DefaultLayoutOverride>
+    <CustomTaskbarLayoutCollection>
+      <defaultlayout:TaskbarLayout>
+        <taskbar:TaskbarPinList>
+          <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+          <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk" />
+        </taskbar:TaskbarPinList>
+      </defaultlayout:TaskbarLayout>
+    </CustomTaskbarLayoutCollection>
+  </LayoutModificationTemplate>
+  ```
+  Example of the same layout file with escape characters replacing the markup characters:
+    
+    ```
+    &lt;LayoutModificationTemplate
+    xmlns=&quot;http://schemas.microsoft.com/Start/2014/LayoutModification&quot;
+    xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot;
+    xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot;
+    xmlns:taskbar=&quot;http://schemas.microsoft.com/Start/2014/TaskbarLayout&quot;
+    Version=&quot;1&quot;&gt;
+  &lt;LayoutOptions StartTileGroupCellWidth=&quot;6&quot; StartTileGroupsColumnCount=&quot;1&quot; /&gt;
+  &lt;DefaultLayoutOverride&gt;
+    &lt;StartLayoutCollection&gt;
+      &lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot; xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot;&gt;
+        &lt;start:Group Name=&quot;Life at a glance&quot; xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot;&gt;
+          &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge&quot; /&gt;
+          &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI&quot; /&gt;
+          &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
+        &lt;/start:Group&gt;        
+      &lt;/defaultlayout:StartLayout&gt;
+    &lt;/StartLayoutCollection&gt;
+  &lt;/DefaultLayoutOverride&gt;
+    &lt;CustomTaskbarLayoutCollection&gt;
+      &lt;defaultlayout:TaskbarLayout&gt;
+        &lt;taskbar:TaskbarPinList&gt;
+          &lt;taskbar:UWA AppUserModelID=&quot;Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge&quot; /&gt;
+          &lt;taskbar:DesktopApp DesktopApplicationLinkPath=&quot;%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk&quot; /&gt;
+        &lt;/taskbar:TaskbarPinList&gt;
+      &lt;/defaultlayout:TaskbarLayout&gt;
+    &lt;/CustomTaskbarLayoutCollection&gt;
+  &lt;/LayoutModificationTemplate&gt;
+    ```
 
 2.  In the Microsoft Intune administration console, click **Policy** &gt; **Add Policy**.
 
