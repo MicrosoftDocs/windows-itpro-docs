@@ -88,9 +88,8 @@ The following table show which locations are supported in Windows libraries.
 |Supported Locations|Unsupported Locations|
 |---|---|
 |Fixed local volumes (NTFS/FAT)|Removable drives|
-|Shares that are indexed (departmental servers*, Windows home PCs)|Removable media (such as DVDs)|
-|Network shares that are accessible through DFS Namespaces or are part of a failover cluster|Shares that are available offline (redirected folders that use Offline Files)|
-|Network shares that aren't available offline or remotely indexed|NAS Drives|
+|Shares that are indexed (departmental servers*, Windows home PCs)|Removable media (such as DVDs)<br><br>Network shares that are accessible through DFS Namespaces or are part of a failover cluster|
+|Shares that are available offline (redirected folders that use Offline Files)|Network shares that aren't available offline or remotely indexed <br><br>Network Attached Storage (NAS) devices|
 ||Other data sources: SharePoint, Exchange, etc.|
 
 \* For shares that are indexed on a departmental server, Windows Search works well in workgroups or on a domain server that has similar characteristics to a workgroup server. For example, Windows Search works well on a single share departmental server with the following characteristics:
