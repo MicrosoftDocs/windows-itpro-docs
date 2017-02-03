@@ -127,7 +127,7 @@ The Upgrade Analytics deployment script does the following:
 
 3.  Checks whether the computer has a pending restart.  
 
-4.  Verifies that the latest version of KB package 10.0.x is installed (version 10.0.14348 or later is required, but version 10.0.14913 or later is recommended).
+4.  Verifies that the latest version of KB package 10.0.x is installed (version 10.0.14913 or later is required).
 
 5.  If enabled, turns on verbose mode for troubleshooting.
 

@@ -19,6 +19,10 @@ localizationpriority: high
 
 Delivery Optimization is a self-organizing distributed cache solution for businesses looking to reduce bandwidth consumption for operating system updates, operating system upgrades, and applications by allowing clients to download those elements from alternate sources (such as other peers on the network) in addition to the traditional Internet-based Windows Update servers. You can use Delivery Optimization in conjunction with stand-alone Windows Update, Windows Server Update Services (WSUS), and Windows Update for Business. This functionality is similar to BranchCache in other systems, such as System Center Configuration Manager. 
 
+Delivery Optimization is a cloud managed solution. Having access to the Delivery Optimization cloud services, is a requirement for it to be enabled. This mean that in order to utilize the peer-to-peer functionality of Delivery Optimization, machines need to have access to the internet.
+
+For more details, see [Download mode](#download-mode).
+
 >[!NOTE]
 >WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
 
@@ -33,17 +37,19 @@ You can use Group Policy or an MDM solution like Intune to configure Delivery Op
 
 Several Delivery Optimization features are configurable.
 
+<span id="download-mode"/>
+
 ### Download mode (DODownloadMode)
 
 Download mode dictates which download sources clients are allowed to use when downloading Windows updates in addition to Windows Update servers.  The following table shows the available download mode options and what they do.
 
 | Download mode option | Functionality when set |
 | --- | --- |
-| HTTP Only (0) | This setting disables peer content sharing but still allows Delivery Optimization to download content from Windows Update servers or WSUS servers. |
+| HTTP Only (0) | This setting disables peer-to-peer caching but still allows Delivery Optimization to download content from Windows Update servers or WSUS servers. This mode uses additional metadata provided by the Delivery Optimization cloud services for a peerless reliable and efficient download experience. |
 | LAN (1 – Default) | This default operating mode for Delivery Optimization enables peer sharing on the same network. | 
 | Group (2) | When group mode is set, the group is automatically selected based on the device’s Active Directory Domain Services (AD DS) site (Windows 10, version 1607) or the domain the device is authenticated to (Windows 10, version 1511). In group mode, peering occurs across internal subnets, between devices that belong to the same group, including devices in remote offices. You can use the GroupID option to create your own custom group independently of domains and AD DS sites. Group download mode is the recommended option for most organizations looking to achieve the best bandwidth optimization with Delivery Optimization. |
 | Internet (3) | Enable Internet peer sources for Delivery Optimization. |
-| Simple (99) | Simple mode disables the use of Delivery Optimization cloud services completely (for offline environments). Delivery Optimization switches to this mode automatically when the Delivery Optimization cloud services are unavailable or unreachable. |
+| Simple (99) | Simple mode disables the use of Delivery Optimization cloud services completely (for offline environments). Delivery Optimization switches to this mode automatically when the Delivery Optimization cloud services are unavailable, unreachable or when the content file size is less than 10 MB. In this mode, Delivery Optimization provides a reliable download experience, with no peer-to-peer caching. |
 |Bypass (100) |	Bypass Delivery Optimization and use BITS, instead. For example, select this mode so that clients can use BranchCache. |
 
 >[!NOTE]
