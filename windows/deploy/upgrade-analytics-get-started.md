@@ -12,28 +12,29 @@ author: greg-lindsay
 
 This topic explains how to obtain and configure Upgrade Analytics for your organization. 
 
+You can use Upgrade Analytics to plan and manage your upgrade project end-to-end. Upgrade Analytics works by establishing communications between computers in your organization and Microsoft. Upgrade Analytics collects computer, application, and driver data for analysis. This data is used to identify compatibility issues that can block your upgrade and to suggest fixes that are known to Microsoft.
+
 Before you begin, consider reviewing the following helpful information:<BR>
     - [Upgrade Analytics requirements](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-requirements): Provides detailed requirements to use Upgrade Analytics.<BR>
     - [Upgrade Analytics blog](https://blogs.technet.microsoft.com/UpgradeAnalytics): Contains announcements of new features and provides helpful tips for using Upgrade Analytics.
 
 >If you are using System Center Configuration Manager, also check out information about how to integrate Upgrade Analytics with Configuration Manager: [Integrate Upgrade Analytics with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
 
-## About Upgrade Analytics
+When you are ready to begin using Upgrade Analytics, perform the following steps:
 
-You can use Upgrade Analytics to plan and manage your upgrade project end-to-end. Upgrade Analytics works by establishing communications between computers in your organization and Microsoft. Upgrade Analytics collects computer, application, and driver data for analysis. This data is used to identify compatibility issues that can block your upgrade and to suggest fixes that are known to Microsoft.
+1. Review information about [data collection and privacy](#data-collection-and-privacy).
+2. [Add Upgrade Analytics to OMS](#add-upgrade-analytics-to-operations-management-suite).
+3. [Enable data sharing](#enable-data-sharing).
+4. [Deploy required updates](#deploy-the-compatibility-update-and-related-kbs) to computers, and validate using a pilot deployment.
+5. [Deploy Upgrade Analytics at scale](#deploy-upgrade-analytics-at-scale).
+
+## Data collection and privacy 
 
 To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what telemetry data Microsoft collects and how that data is used and protected by Microsoft, see the following topics:
 
 - [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization)
 - [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 - [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
-
-To configure Upgrade Analytics, you’ll need to:
-
-1. Add the Upgrade Analytics solution to a workspace in the Operations Management Suite portal
-2. Establish communications and enable data sharing between your organization and Microsoft
-
-These tasks are explained in detail in the following sections.
 
 ## Add Upgrade Analytics to Operations Management Suite
 
@@ -57,12 +58,6 @@ If you are not using OMS:
 
 2.  Click the **Upgrade Analytics** tile to configure the solution. The **Settings Dashboard** opens.
 
-## Enable data sharing between your organization and Upgrade Analytics
-
-After you’ve signed in to Operations Management Suite and added the Upgrade Analytics solution to your workspace, complete the following tasks to establish communication and enable data sharing between user computers, Microsoft secure data centers, and Upgrade Analytics.
-
->If desired, you can use the [Upgrade Analytics deployment script](upgrade-analytics-deployment-script.md) to automate the steps below. If you choose to use this script, then skip the following manual procedures.
-
 ### Generate your commercial ID key
 
 Microsoft uses a unique commercial ID to map information from user computers to your OMS workspace. Generate your commercial ID key in OMS and then deploy it to user computers.
@@ -83,7 +78,7 @@ For Upgrade Analytics to receive and display upgrade readiness data from Microso
 
 1.  Click **Overview** on the Settings Dashboard to return to your OMS workspace portal. The Upgrade Analytics tile now displays summary data. Click the tile to open Upgrade Analytics.
 
-### Whitelist select endpoints
+## Enable data sharing
 
 To enable data sharing, whitelist the following endpoints. Note that you may need to get approval from your security group to do this.
 
@@ -96,7 +91,7 @@ Note: The compatibility update KB runs under the computer’s system account. If
 | `https://go.microsoft.com/fwlink/?LinkID=544713`<br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc`                                         | This service provides driver information about whether there will be a driver available post-upgrade for the hardware on the system. |
 
 
-### Deploy the compatibility update and related KBs
+## Deploy the compatibility update and related KBs
 
 The compatibility update KB scans your computers and enables application usage tracking. If you don’t already have these KBs installed, you can download the applicable version from the Microsoft Update Catalog or deploy it using Windows Server Update Services (WSUS) or your software distribution solution, such as System Center Configuration Manager.
 
@@ -113,6 +108,17 @@ If you are planning to enable IE Site Discovery, you will need to install a few 
 |----------------------|-----------------------------------------------------------------------------|
 | [Review site discovery](upgrade-analytics-review-site-discovery.md)         | [KB3080149](http://www.catalog.update.microsoft.com/Search.aspx?q=3080149)<br>Updates the Diagnostic and Telemetry tracking service to existing devices. This update is only necessary on Windows 7 and Windows 8.1 devices. <br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br><br>Install the latest [Windows Monthly Rollup](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup). This functionality has been included in Internet Explorer 11 starting with the July 2016 Cumulative Update.  |
 
+### Deploy the Upgrade Analytics deployment script
+
+You can use the Upgrade Analytics deployment script to automate and verify your deployment. 
+
+See [Upgrade Analytics deployment script](upgrade-analytics-deployment-script.md) for information on obtaining and running the script, and for a description of the error codes that can be displayed.
+
+>After data is sent from computers to Microsoft, it generally takes 48 hours for the data to populate in Upgrade Analytics. The compatibility update KB takes several minutes to run. If the KB does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Upgrade Analytics. For this reason, you can expect most your computers to be populated in OMS in about 1-2 weeks after deploying the KB and configuration to user computers.
+
+## Deploy Upgrade Analytics at scale
+
+When you have completed a pilot deployment, you are ready to automate data collection and distribute the deployment script to the remaining computers in your organization.
 
 ### Automate data collection
 
@@ -122,7 +128,11 @@ To ensure that user computers are receiving the most up to date data from Micros
 -   Schedule the Upgrade Analytics deployment script to automatically run so that you don’t have to manually initiate an inventory scan each time the compatibility update KBs are updated. Computers are re-scanned only when the compatibility KBs are updated, so if your inventory changes significantly between KB releases you won’t see the changes in Upgrade Analytics until you run the script again.
 -   Schedule monthly user computer scans to view monthly active computer and usage information.
 
-## Seeing data from computers in Upgrade Analytics
+### Distribute the deployment script at scale
 
-After data is sent from computers to Microsoft, it generally takes 48 hours for the data to populate in Upgrade Analytics. The compatibility update KB takes several minutes to run. If the KB does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Upgrade Analytics. For this reason, you can expect most your computers to be populated in OMS in about 1-2 weeks after deploying the KB and configuration to user computers.
+Use a software distribution system such as System Center Configuration Manager to distribute the Upgrade Analytics deployment script at scale. For more information, see the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/)
+
+
+
+
 
