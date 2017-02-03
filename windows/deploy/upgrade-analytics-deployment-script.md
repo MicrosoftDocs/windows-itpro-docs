@@ -19,17 +19,11 @@ For detailed information about using the upgrade analytics deployment script, al
 The Upgrade Analytics deployment script does the following:
 
 1.  Sets commercial ID key + CommercialDataOptIn + RequestAllAppraiserVersions keys.
-
 2.  Verifies that user computers can send data to Microsoft.
-
 3.  Checks whether the computer has a pending restart.  
-
 4.  Verifies that the latest version of KB package 10.0.x is installed (version 10.0.14348 or later is required, but version 10.0.14913 or later is recommended).
-
 5.  If enabled, turns on verbose mode for troubleshooting.
-
 6.  Initiates the collection of the telemetry data that Microsoft needs to assess your organization’s upgrade readiness.
-
 7.  If enabled, displays the script’s progress in a cmd window, providing you immediate visibility into issues (success or fail for each step) and/or writes to log file.
 
 To run the Upgrade Analytics deployment script:
