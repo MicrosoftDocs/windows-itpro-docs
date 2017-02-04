@@ -32,8 +32,10 @@ Use the Machines view in these two main scenarios:
 - **Day-to-day work**
   - The **Machines view** enables you to identify machines that are most at risk in a glance. High-risk machines are those with the greatest number and highest-severity alerts. By sorting the machines by risk, you'll be able to identify the most vulnerable machines and take action on them.
 
-## Sort and filter the Machines view
+## Sort, filter, and download the list of machines from the Machines view
 You can filter and sort (or “pivot”) the Machines view by clicking any column header to sort the view in ascending or descending order.
+
+You can also download the entire list using the export feature.
 
 ![Image of machines view with list of machines](images/atp-machines-view-list.png)
 
@@ -77,7 +79,11 @@ Filter the list to view specific machines grouped together by the following mach
 -	**Misconfigured** – Machines that have impaired communication with service or are unable to send sensor data. For more information on how to address issues on misconfigured machines see,  [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
 -	**Inactive** – Machines that have completely stopped sending signals for more than 7 days.
 
-You can also download a full list of all the machines in your organization, in CSV format. Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) to download the entire list as a CSV file.
+## Export machine list to CSV
+You can  download a full list of all the machines in your organization, in CSV format. Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) to download the entire list as a CSV file.
+
+**Note**: Exporting the list depends on the number of machines in your organization. It can take a significant amount of time to download, depending on how large your organization is.
+Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all machines in the organization, regardless of any filtering applied in the view itself.
 
 ## Investigate machines
 Investigate the details of an alert raised on a specific machine to identify other behaviors or events that might be related to the alert or the potential scope of breach.
@@ -110,10 +116,17 @@ Clicking on the number of total logged on users in the Logged on user tile opens
 
 The **Alerts related to this machine** section provides a list of alerts that are associated with the machine. This list is a simplified version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows the date when the last activity was detected, a short description of the alert, the user associated with the alert, the alert's severity, the alert's status in the queue, and who is addressing the alert.
 
+## Machine timeline
+
 The **Machine timeline** section provides a chronological view of the events and associated alerts that have been observed on the machine.
 
 This feature also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a specified time period.
 
+![Image of machine timeline with events](images/atp-machine-timeline.png)
+
+Windows Defender ATP monitors and captures questionable behavior on Windows 10 machines and displays the process tree flow in the **Machine timeline**. This gives you better context of the behavior which can contribute to understanding the correlation between events, files, and IP addresses in relation to the machine.
+
+### Search for specific alerts
 Use the search bar to look for specific alerts or files associated with the machine:
 
 -	**Value** – Type in any search keyword to filter the timeline with the attribute you’re searching for.
@@ -127,22 +140,22 @@ Use the search bar to look for specific alerts or files associated with the mach
   -	Network
   -	Local service
 
+### Filter events from a specific date
 Use the time-based slider to filter events from a specific date. By default, the machine timeline is set to display the events of the current day.
 
 Using the slider updates the listed alerts to the date that you select. Displayed events are filtered from that date and older.
 
 The slider is helpful when you're investigating a particular alert on a machine. You can navigate from the **Alerts view** and click on the machine associated with the alert to jump to the specific date when the alert was observed, enabling you to investigate the events that took place around the alert.
 
+### Export machine timeline events
 You can also export detailed event data from the machine timeline to conduct offline analysis. You can choose to export the machine timeline for the current date or specify a date range. You can export up to 7 days of data and specify the specific time between the two dates.
 
-**Note**: Exporting the list depends on the number of machines in your organization. It can take a significant amount of time to download, depending on how large your organization is.
-Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all machines in the organization, regardless of any filtering applied in the view itself.
+![Image of export machine timeline events](images/atp-export-machine-timeline-events.png)
 
-Use the events per page drop-down to choose the number of alerts you’d like to see on the page. You can choose to display 20, 50, or 100 events per page. You can also move between pages by clicking Older or Newer.
+### Navigate between pages
+Use the events per page drop-down to choose the number of alerts you’d like to see on the page. You can choose to display 20, 50, or 100 events per page. You can also move between pages by clicking **Older** or **Newer**.
 
-Windows Defender ATP monitors and captures questionable behavior on Windows 10 machines and displays the process tree flow in the **Machine timeline**. This gives you better context of the behavior which can contribute to understanding the correlation between events, files, and IP addresses in relation to the machine.
-
-From the **Machine view**, you can also navigate to the file, IP, or URL view and the timeline associated with an alert is retained, helping you view the investigation from different angles and retain the context of the event time line.
+From the **Machines view**, you can also navigate to the file, IP, or URL view and the timeline associated with an alert is retained, helping you view the investigation from different angles and retain the context of the event time line.
 
 From the list of events that are displayed in the timeline, you can examine the behaviors or events in to help identify indicators of interests such as files and IP addresses to help determine the scope of a breach. You can then use the information to respond to events and keep your system secure.
 
@@ -256,6 +269,7 @@ The Action center provides information on actions that were taken on a machine o
 You’ll also be able to view if a machine was isolated and if an investigation package is available from a machine. All related details are also shown, for example, submission time, submitting user, and if the action succeeded or failed.
 
 ![Image of action center with information](images/atp-action-center-with-info.png)
+
 
 ### Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)

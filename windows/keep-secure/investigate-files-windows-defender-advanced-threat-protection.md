@@ -199,7 +199,7 @@ Depending on the severity of the attack and the state of the machine you can cho
 
 3.	Type a comment (optional) and select **Yes** to take action on the file. The machine will be reconnected to the network.
 
-## Collect investigation package from machines
+## Collect an investigation package from a machine
 As part of the investigation or response process, you can collect an investigation package from a machine. By collecting the investigation package, you can identify the current state of the machine and further understand the tools and techniques used by the attacker.
 
 You can download the package (Zip file) and investigate the events that occurred on a machine.
@@ -263,7 +263,7 @@ Deep analysis of a file takes several minutes. When the file analysis is complet
 
 Results of deep analysis are matched against threat intelligence and any matches will generate appropriate alerts.
 
-## Submit files for analysis
+### Submit files for analysis
 
 Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available in the context of the file view.
 
@@ -296,7 +296,7 @@ A progress bar is displayed and provides information on the different stages of 
 > [!NOTE]
 > Depending on machine availability, sample collection time can vary. There is a 3-hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 machine reporting at that time. You can re-submit files for deep analysis to get fresh data on the file.
 
-## View deep analysis report
+## View deep analysis reports
 
 View the deep analysis report that Windows Defender ATP provides to see the details of the deep analysis that was conducted on the file you submitted. This feature is available in the file view context.
 
@@ -307,7 +307,6 @@ You can view the comprehensive report that provides details on:
 
 The details provided can help you investigate if there are indications of a potential attack.
 
-**View deep analysis reports:**
 
 1. Select the file you submitted for deep analysis.
 2. Click **See the report below**. Information on the analysis is displayed.
@@ -318,7 +317,6 @@ The details provided can help you investigate if there are indications of a pote
 
 If you encounter a problem when trying to submit a file, try each of the following troubleshooting steps.
 
-**Troubleshoot deep analysis:**
 
 1. Ensure the file is a PE. PE files typically have _.exe_ or _.dll_ extensions (executable programs or applications).
 2. Ensure the service has access to the file, that it still exists, and has not been corrupted or modified.
