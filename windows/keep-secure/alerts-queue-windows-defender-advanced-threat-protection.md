@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# View and organize the Windows Defender Advanced Threat Protection Alerts queue
+# Alerts overview
 
 **Applies to:**
 
@@ -23,50 +23,81 @@ localizationpriority: high
 
 As a security operations team member, you can manage Windows Defender ATP alerts as part of your routine activities. Alerts will appear in queues according to their current status.
 
+## Alerts queue
+Alerts are organized in three queues, by their workflow status:
+
+- **New**
+- **In progress**
+- **Resolved**
+- **Assigned to me**
+
 To see a list of alerts, click any of the queues under the **Alerts queue** option in the navigation pane.
 
 > [!NOTE]
 > By default, the queues are sorted from newest to oldest.
 
+The alerts view contains the following columns:
+-	Title – [Ask Daniel if we can change this to just Alert] a brief description of the alert
+-	Machine and user – machine where the alert was seen and the user entity associated with the alert
+-	Severity – the alert severity level
+-	Last activity – last seen activity related to the alert
+-	Time in queue – number of days the alert has been in the queue
+-	Status – indicates the queue status
+-	Assigned to – shows the security operations administrator handling the alert
+
+
 The following table and screenshot demonstrate the main areas of the **Alerts queue**.
 
-![Screenshot of the Dashboard showing the New Alerts list and navigation bar](images/alertsq2.png)
+![Screenshot of the Dashboard showing the New Alerts list and navigation bar](images/atp-alerts-q.png)
 
 Highlighted area|Area name|Description
 :---|:---|:---
 (1)|**Alerts queue**| Select to show **New**, **In Progress**, or **Resolved alerts**
-(2)|Alerts|Each alert shows:<ul><li>The severity of an alert as a colored bar</li><li>A short description of the alert, including the name of the threat actor (in cases where the attribution is possible)</li><li>The last occurrence of the alert on any machine</li><li>The number of days the alert has been in the queue</li><li>The severity of the alert</li><li>The general category or type of alert, or the alert's kill-chain stage</li><li>The affected machine (if there are multiple machines, the number of affected machines will be shown)</li><li>A **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) that allows you to update the alert's status and add comments</li></ul>Clicking an alert expands to display more information about the threat and brings you to the date in the timeline when the alert was detected.
-(3)|Alerts sorting and filters | You can sort alerts by: <ul><li>**Newest** (when the threat was last seen on your network)</li><li>**Time in queue** (how long the threat has been in your queue)</li><li>**Severity**</li></ul>You can also filter the displayed alerts by:<ul><li>Severity</li><li>Time period</li></ul>See [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md) for more details.
+(2)|Alerts|Each alert shows:<ul><li>The severity of an alert as a colored bar</li><li>A short description of the alert, including the category and name of the threat actor (in cases where the attribution is possible)</li><li>The machine and user associated to the alert</li><li>The severity of the alert</li><li>The date when the last activity was seen</li><li>The number of days the alert has been in the queue</li><li>The status of the alert in the queue</li><li>Who the alert is assigned to</li><li>A **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) that allows you to manage the alert and go to the machine timeline</li></ul>Selecting an alert brings up the alert management pane which shows information on the alert such as its status in the queue, alert classification, who is addressing the alert, related activity on the machine, and historical information.
+(3)|Alerts sorting and filters | You can sort alerts by: <ul><li>**Severity**</li><li>**Detection source**</li><li>**Time period** </li><li>**Group view or Flat view**  </li></ul> For more information, see [Sort and filter the Alerts queue](#sort-and-filter-the-alerts-queue) for more details.
 
-##Sort and filter the Alerts queue
+## Alert severity levels
+Alert severity | Description
+:---|:---
+High (Red) | Threats often associated with advanced persistent threats (APT). These alerts indicate a high risk due to the severity of damage they can inflict on endpoints.
+Medium (Orange) | Threats rarely observed in the organization, such as anomalous registry change, execution of suspicious files, and observed behaviors typical of attack stages.
+Low (Yellow) | Threats associated with prevalent malware and hack-tools that do not appear to indicate an advanced threat targeting the organization.
+
+Reviewing the various alerts and their severity can help you decide on the appropriate action to protect your organization's endpoints.
+
+## Sort and filter the Alerts queue
 You can filter and sort (or "pivot") the Alerts queue to identify specific alerts based on certain criteria.
-There are three mechanisms to pivot the queue against:
 
-1. Sort the queue by opening the drop-down menu in the **Sort by** field and choosing:
+![Alerts queue with numbers](images/alerts-queue-numbered.png)
 
-  - **Newest** - Sorts alerts based on when the alert was last seen on an endpoint.
-  - **Time in queue** - Sorts alerts by the length of time an alert has been in the queue.
-  - **Severity** - Sorts alerts by their level of severity.
+(1) Sorting and filtering
+- **Severity** - Low, medium, or high
+- **Detection source** - Windows Defender Antivirus or Windows Defender
+- **Time period** - 1, 3, 7, 30 days, or 6 months
+- **Group view or Flat view**
+  - Flat view - lists alerts individually with alerts that has the latest activity displayed at the top
+  - Group view - sorts the alerts by alert ID, file hash, malware family and others to enable more efficient alert triage and management. Alert grouping reduces the number of rows in the queue by aggregating categories together.
 
-2. Filter alerts by their **Severity** by opening the drop-down menu in the **Filter by** field and selecting one or more of the check boxes:
+(2) Alert management pane </br>
+You can take immediate action on an alert and see details about an alert from the Alert management pane. You can change the status of an alert from new, in progress, or resolved.
 
-  - High (Red) - Threats often associated with advanced persistent threats (APT). These alerts indicate a high risk due to the severity of damage they can inflict on endpoints.
-  - Medium (Orange) - Threats rarely observed in the organization, such as anomalous registry change, execution of suspicious files, and observed behaviors typical of attack stages.
-  - Low (Yellow) - Threats associated with prevalent malware and hack-tools that do not appear to indicate an advanced threat targeting the organization.
+(3) Alert classification </br>
+You can also select the alert classification to indicate if the alert is a true alert or a false alert.
 
-3. Limit the queue to see alerts from various set periods by clicking the drop-down menu in the date range field (by default, this is selected as **6 months**):
+You can also assign the alert to yourself if the alert is not yet being addressed, and view related activity on the machine.
 
-  - **1 day**
-  - **3 days**
-  - **7 days**
-  - **30 days**
-  - **6 months**
+(4) Select alert </br>
+Selecting an alert brings up the Alert management pane.
 
-  > [!NOTE]
-  > You can change the sort order (for example, from most recent to least recent) by clicking the sort order icon ![the sort order icon looks like two arrows on top of each other](images/sort-order-icon.png)
+(5) Comments and history </br>
+View comments from other security operations personnel and see historical information about the alert or add your own comments.  
+
+You can also edit alerts by bulk by selecting multiple alerts (Ctrl or Shift select) and manage or edit them together, which allows resolving multiple similar alerts in one go.
+
+![Alerts queue bulk edit](images/alerts-q-bulk.png)
 
 ### Related topics
-- [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [Understand the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
 - [Investigate machines in the Windows Defender ATP Machines view](investigate-machines-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
