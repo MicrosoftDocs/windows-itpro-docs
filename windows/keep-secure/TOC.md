@@ -739,7 +739,7 @@
 ##### [Alerts overview](alerts-queue-windows-defender-advanced-threat-protection.md)
 ##### [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
 ##### [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-##### [Machines overview](machines-overview-windows-defender-advanced-threat-protection.md)
+##### [Machines overview](machines-view-overview-windows-defender-advanced-threat-protection.md)
 ##### [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md)
 ##### [Investigate files](investigate-files-windows-defender-advanced-threat-protection.md)
 ##### [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md)
