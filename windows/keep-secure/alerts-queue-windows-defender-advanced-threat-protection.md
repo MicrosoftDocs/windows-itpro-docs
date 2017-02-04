@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Alerts overview
+# Alerts queue overview
 
 **Applies to:**
 
@@ -23,7 +23,7 @@ localizationpriority: high
 
 As a security operations team member, you can manage Windows Defender ATP alerts as part of your routine activities. Alerts will appear in queues according to their current status.
 
-## Alerts queue
+## Organize the alerts queue
 Alerts are organized in three queues, by their workflow status:
 
 - **New**
