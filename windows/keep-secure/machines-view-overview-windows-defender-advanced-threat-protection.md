@@ -1,4 +1,4 @@
---
+---
 title: Machines view overview
 description: Understand the available features that you can use from the Machines view such as sorting, filtering, and exporting the machine list which can enhance investigations.
 keywords: sort, filter, export, csv, machine name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
