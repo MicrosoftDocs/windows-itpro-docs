@@ -66,7 +66,6 @@ The alert spotlight feature helps ease investigations by highlighting alerts rel
 
 You can click on the machine link from the alert view to see the alerts related to the machine.
 
-
   > [!NOTE]
   > This shortcut is not available from the Incident graph machine links.  
 
