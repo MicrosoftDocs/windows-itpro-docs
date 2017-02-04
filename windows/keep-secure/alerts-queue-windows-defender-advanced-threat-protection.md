@@ -39,6 +39,9 @@ To see a list of alerts, click any of the queues under the **Alerts queue** opti
 ## Sort and filter the alerts
 You can sort and filter the alerts by using the available filters or clicking columns that allow you to sort the view in ascending or descending order.
 
+![Image of alerts queue grouped](images/atp-alerts-group.png)
+
+
 The alerts view contains the following columns:
 -	**Title** – A brief description of the alert
 -	**Machine and user** – Machine where the alert was seen and the user entity associated with the alert
@@ -76,7 +79,7 @@ Informational alerts are those that might not be considered harmful to the netwo
 - Flat view - Shows alerts in a chronological order as an alert surfaces.
 - Grouped view - Groups alerts based on commonalities such as alert ID, file hash, or malware family.
 
-The group view allows for efficient alert triage and management. 
+The group view allows for efficient alert triage and management.
 
 
 
