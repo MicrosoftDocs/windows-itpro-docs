@@ -264,7 +264,7 @@ CollectionSummaryReport.xls | This file is a summary of the investigation packag
     You can also search for historical packages in the machine timeline.
 
 ## Check activity details in Action center
-The Action center provides information on actions that were taken on a machine or file. You’ll be able to view the details on the last action that were taken on a file such as stopped and quarantined files or blocked files.
+The **Action center** provides information on actions that were taken on a machine or file. You’ll be able to view the details on the last action that were taken on a file such as stopped and quarantined files or blocked files.
 
 You’ll also be able to view if a machine was isolated and if an investigation package is available from a machine. All related details are also shown, for example, submission time, submitting user, and if the action succeeded or failed.
 
