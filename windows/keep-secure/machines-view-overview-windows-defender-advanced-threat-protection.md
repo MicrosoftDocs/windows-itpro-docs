@@ -39,20 +39,6 @@ You can also download the entire list using the export feature.
 
 ![Image of machines view with list of machines](images/atp-machines-view-list.png)
 
-### Sort the Machines view
-You can sort the **Machines view** by the following columns:
-
-- **Machine name** - Name or GUID of the machine
-- **Domain** - Domain the machine belongs to
-- **Last seen** - Date and time when the machine last reported sensor data
-- **Internal IP** - Local internal Internet Protocol (IP) address of the machine
-- **Health State** – Indicates if the machine is misconfigured or is not sending sensor data
-- **Active Alerts** - Number of alerts reported by the machine by severity
-- **Active malware detections** - Number of active malware detections reported by the machine
-
-> [!NOTE]
-> The **Active alerts** and **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](windows-defender-in-windows-10.md) as the default real-time protection antimalware product.
-
 ### Filter the Machines view
 You can use the following filters to limit the list of machines displayed during an investigation:
 
@@ -84,6 +70,21 @@ You can  download a full list of all the machines in your organization, in CSV f
 
 **Note**: Exporting the list depends on the number of machines in your organization. It can take a significant amount of time to download, depending on how large your organization is.
 Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all machines in the organization, regardless of any filtering applied in the view itself.
+
+### Sort the Machines view
+You can sort the **Machines view** by the following columns:
+
+- **Machine name** - Name or GUID of the machine
+- **Domain** - Domain the machine belongs to
+- **Last seen** - Date and time when the machine last reported sensor data
+- **Internal IP** - Local internal Internet Protocol (IP) address of the machine
+- **Health State** – Indicates if the machine is misconfigured or is not sending sensor data
+- **Active Alerts** - Number of alerts reported by the machine by severity
+- **Active malware detections** - Number of active malware detections reported by the machine
+
+> [!NOTE]
+> The **Active alerts** and **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](windows-defender-in-windows-10.md) as the default real-time protection antimalware product.
+
 
 ### Related topics
 - [Understand the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)

@@ -36,14 +36,48 @@ To see a list of alerts, click any of the queues under the **Alerts queue** opti
 > [!NOTE]
 > By default, the queues are sorted from newest to oldest.
 
+## Sort and filter the alerts
+You can sort and filter the alerts by using the available filters or clicking columns that allow you to sort the view in ascending or descending order.
+
 The alerts view contains the following columns:
--	Title – [Ask Daniel if we can change this to just Alert] a brief description of the alert
--	Machine and user – machine where the alert was seen and the user entity associated with the alert
--	Severity – the alert severity level
--	Last activity – last seen activity related to the alert
--	Time in queue – number of days the alert has been in the queue
--	Status – indicates the queue status
--	Assigned to – shows the security operations administrator handling the alert
+-	**Title** – A brief description of the alert
+-	**Machine and user** – Machine where the alert was seen and the user entity associated with the alert
+-	**Severity** – Alert severity level
+-	**Last activity** – Last seen activity related to the alert
+-	**Time in queue** – Number of days the alert has been in the queue
+-	**Status** – Indicates the queue status
+-	**Assigned to** – Shows who is addressing the alert
+
+### Filter the alerts list
+You can use the following filters to limit the list of alerts displayed during an investigation:
+
+**Severity**</br>
+- Low
+- Medium
+- High
+- Informational
+
+Informational alerts are those that might not be considered harmful to the network but might be good to keep track of.
+
+**Detection source**</br>
+- Windows Defender AV
+- Windows Defender ATP
+
+>[!NOTE] The Windows Defender AV filter will only appear if your endpoints are using Windows Defender as the default real-time protection antimalware product.
+
+**Time period**</br>
+- 1 day
+- 3 days
+- 7 days
+- 30 days
+- 6 months
+
+**View**</br>
+- Flat view - Shows alerts in a chronological order as an alert surfaces.
+- Grouped view - Groups alerts based on commonalities such as alert ID, file hash, or malware family.
+
+The group view allows for efficient alert triage and management. 
+
 
 
 The following table and screenshot demonstrate the main areas of the **Alerts queue**.
