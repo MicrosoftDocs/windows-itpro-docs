@@ -21,6 +21,8 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
 The **Alerts queue** shows a list of alerts that were flagged from endpoints in your network. Alerts appear in queues according to their current status. In any of the queues, you'll see details such as the severity of alerts and the number of machines where the alerts were seen.
 
 Alerts are organized in three queues, by their workflow status:
@@ -40,8 +42,13 @@ You can sort and filter the alerts by using the available filters or clicking co
 
 ![Alerts queue with numbers](images/alerts-queue-numbered.png)
 
+Highlighted area|Area name|Description
+:---|:---|:---
+1 | Alert filters | Filter the list of alerts by severity, detection source, time period, or change the view from flat to grouped.
+2 | Alert selected | Select an alert to bring up the **Alert management pane** to manage and see details about the alert.
+3 | Alert management pane | View and manage alerts without leaving the alerts queue view.
+
 ### Filter the alerts list
-(1) Alert filters </br>
 You can use the following filters to limit the list of alerts displayed during an investigation:
 
 **Severity**</br>
@@ -74,12 +81,10 @@ Reviewing the various alerts and their severity can help you decide on the appro
 
 The group view allows for efficient alert triage and management.
 
-### Use the Alert management pane [JOEY - FIX THE NUMBERING, SELECT ALERT FIRST, MAKE NUMBER 4 TO NUMBER 2]
-(2) Alert selected </br>  
-Selecting an alert brings up the **Alert management** pane where details about the alert is displayed. You can also take action on alerts using the **Alert management** pane.
+### Use the Alert management pane
+Selecting an alert brings up the **Alert management** pane where you can manage alerts and see details about the alert.
 
-(3) Alert management pane
-You can take the following management actions an alert and see other details about an alert from the Alert management pane:
+You can take the following management actions on an alert from the **Alert management** pane:
 
 - Change the status of an alert from new, in progress, or resolved
 - Specify the alert classification from true alert or false alert
@@ -99,61 +104,3 @@ Select multiple alerts (Ctrl or Shift select) and manage or edit alerts together
 - [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
 - [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
 - [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
-
-
-
-====================
-
-The alerts view contains the following columns:
--	**Title** – A brief description of the alert
--	**Machine and user** – Machine where the alert was seen and the user entity associated with the alert
--	**Severity** – Alert severity level
--	**Last activity** – Last seen activity related to the alert
--	**Time in queue** – Number of days the alert has been in the queue
--	**Status** – Indicates the queue status
--	**Assigned to** – Shows who is addressing the alert
-
-
-## Sort and filter the Alerts queue
-You can filter and sort (or "pivot") the Alerts queue to identify specific alerts based on certain criteria.
-
-![Alerts queue with numbers](images/alerts-queue-numbered.png)
-
-(1) Sorting and filtering
-- **Severity** - Low, medium, or high
-- **Detection source** - Windows Defender Antivirus or Windows Defender
-- **Time period** - 1, 3, 7, 30 days, or 6 months
-- **Group view or Flat view**
-  - Flat view -
-  - Group view - sorts the alerts
-
-(2) Alert management pane </br>
-You can take immediate action on an alert and see details about an alert from the Alert management pane. You can change the status of an alert from new, in progress, or resolved.
-
-(3) Alert classification </br>
-You can also select the alert classification to indicate if the alert is a true alert or a false alert.
-
-You can also assign the alert to yourself if the alert is not yet being addressed, and view related activity on the machine.
-
-(4) Select alert </br>
-Selecting an alert brings up the Alert management pane.
-
-(5) Comments and history </br>
-View comments from other security operations personnel and see historical information about the alert or add your own comments.  
-
-You can also edit alerts by bulk by selecting multiple alerts (Ctrl or Shift select) and manage or edit them together, which allows resolving multiple similar alerts in one go.
-
-![Alerts queue bulk edit](images/alerts-q-bulk.png)
-
-
-
-
-The following table and screenshot demonstrate the main areas of the **Alerts queue**.
-
-![Screenshot of the Dashboard showing the New Alerts list and navigation bar](images/atp-alerts-q.png)
-
-Highlighted area|Area name|Description
-:---|:---|:---
-(1)|**Alerts queue**| Select to show **New**, **In Progress**, **Resolved alerts**, or **Assigned to me**
-(2)|Alerts|Each alert shows:<ul><li>The severity of an alert as a colored bar</li><li>A short description of the alert, including the category and name of the threat actor (in cases where the attribution is possible)</li><li>The machine and user associated to the alert</li><li>The severity of the alert</li><li>The date when the last activity was seen</li><li>The number of days the alert has been in the queue</li><li>The status of the alert in the queue</li><li>Who the alert is assigned to</li><li>A **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) that allows you to manage the alert and go to the machine timeline</li></ul>Selecting an alert brings up the alert management pane which shows information on the alert such as its status in the queue, alert classification, who is addressing the alert, related activity on the machine, and historical information.
-(3)|Alerts sorting and filters | You can sort alerts by: <ul><li>**Severity**</li><li>**Detection source**</li><li>**Time period** </li><li>**Group view or Flat view**  </li></ul> For more information, see [Sort and filter the Alerts queue](#sort-and-filter-the-alerts-queue) for more details.
