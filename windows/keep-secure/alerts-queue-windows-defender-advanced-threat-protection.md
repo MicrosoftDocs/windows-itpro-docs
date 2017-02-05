@@ -41,7 +41,8 @@ You can sort and filter the alerts by using the available filters or clicking co
 ![Alerts queue with numbers](images/alerts-queue-numbered.png)
 
 ### Filter the alerts list
-(1) You can use the following filters to limit the list of alerts displayed during an investigation:
+(1) Alert filters </br>
+You can use the following filters to limit the list of alerts displayed during an investigation:
 
 **Severity**</br>
 
@@ -74,18 +75,16 @@ Reviewing the various alerts and their severity can help you decide on the appro
 The group view allows for efficient alert triage and management.
 
 ### Use the Alert management pane [JOEY - FIX THE NUMBERING, SELECT ALERT FIRST, MAKE NUMBER 4 TO NUMBER 2]
-(2) Select alert </br>
-Selecting an alert brings up the Alert management pane.
+(2) Alert selected </br>  
+Selecting an alert brings up the **Alert management** pane where details about the alert is displayed. You can also take action on alerts using the **Alert management** pane.
 
-(3) You can take immediate action on an alert and see details about an alert from the Alert management pane. You can change the status of an alert from new, in progress, or resolved.
+(3) Alert management pane
+You can take the following management actions an alert and see other details about an alert from the Alert management pane:
 
-(4) Alert classification </br>
-You can also select the alert classification to indicate if the alert is a true alert or a false alert.
-
-You can also assign the alert to yourself if the alert is not yet being addressed, and view related activity on the machine.
-
-(5) Comments and history </br>
-View comments from other security operations personnel and see historical information about the alert or add your own comments.
+- Change the status of an alert from new, in progress, or resolved
+- Specify the alert classification from true alert or false alert
+- See related activity on the machine
+- Add and view comments about the alert
 
 ### Bulk edit alerts
 Select multiple alerts (Ctrl or Shift select) and manage or edit alerts together, which allows resolving multiple similar alerts in one go.
