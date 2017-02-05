@@ -24,7 +24,7 @@ In Windows 10, Windows Defender Offline can be run with one click directly from 
 
 ## Pre-requisites and requirements
 
-Windows Defender Offline in Windows 10 has the same hardware requirements as Windows 10. 
+Windows Defender Offline in Windows 10 has the same hardware requirements as Windows 10, version 1607. 
 
 For more information about Windows 10 requirements, see the following topics:
 
