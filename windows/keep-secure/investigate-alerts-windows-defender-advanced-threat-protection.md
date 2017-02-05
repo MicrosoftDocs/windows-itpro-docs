@@ -21,32 +21,9 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Alerts in Windows Defender ATP indicate possible security breaches on endpoints in your organization.
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-There are three alert severity levels, described in the following table.
-
-Alert severity | Description
-:---|:---
-High (Red) | Threats often associated with advanced persistent threats (APT). These alerts indicate a high risk due to the severity of damage they can inflict on endpoints.
-Medium (Orange) | Threats rarely observed in the organization, such as anomalous registry change, execution of suspicious files, and observed behaviors typical of attack stages.
-Low (Yellow) | Threats associated with prevalent malware and hack-tools that do not appear to indicate an advanced threat targeting the organization.
-
-Reviewing the various alerts and their severity can help you decide on the appropriate action to protect your organization's endpoints.
-
-Alerts are organized in three queues, by their workflow status:
-
-- **New**
-- **In progress**
-- **Resolved**
-
-To begin investigating, click on an alert in [any of the alert queues](alerts-queue-windows-defender-advanced-threat-protection.md).
-
-Details displayed about the alert include:
-- When the alert was last observed
-- Alert description
-- Recommended actions
-- The incident graph
-- The indicators that triggered the alert
+You can click an alert in any of the [alert queues](alerts-queue-windows-defender-advanced-threat-protection.md) to begin an investigation. Selecting an alert brings up the **Alert management pane**, while clicking an alert brings you the alert details view where general information about the alert, some recommended actions, an alert process tree, an incident graph, and an alert timeline is shown.  
 
 Alerts attributed to an adversary or actor display a colored tile with the actor name.
 
@@ -55,6 +32,19 @@ Click on the actor's name to see a threat intelligence profile of the actor, inc
 Some actor profiles include a link to download a more comprehensive threat intelligence report.
 
 ![A detailed view of an alert when clicked](images/alert-details.png)
+
+## Alert process tree
+The **Alert process tree** takes alert triage and investigation to the next level by displaying the alert and its evidence with other events that occurred in the same execution context and time. This broad triage context of the alert and surrounding events is available on the alert page.
+
+![Image of the alert process tree](images/atp-alert-process-tree.png)
+
+The alert process tree expands to display the execution path of the alert, its evidence, and related events that occurred in proximity - before and after - the alert.
+
+You’ll see markers (thunderbolt icon) that indicate related events.
+
+>[!NOTE]
+>The alert process tree might not be available in some alerts.
+
 
 ## Incident graph
 The incident graph provides a visual representation of where an alert was seen, events that triggered the alert, and which other machines are affected by the event. It provides an illustrated alert footprint on the original machine and expands to show the footprint of each alert event on other machines.

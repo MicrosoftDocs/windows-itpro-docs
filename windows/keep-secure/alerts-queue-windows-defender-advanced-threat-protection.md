@@ -91,6 +91,9 @@ You can take the following management actions on an alert from the **Alert manag
 - See related activity on the machine
 - Add and view comments about the alert
 
+>[!NOTE]
+>You can also access the **Alert management** pane from the machine details view by selecting an alert in the **Alerts related to this machine** section.
+
 ### Bulk edit alerts
 Select multiple alerts (Ctrl or Shift select) and manage or edit alerts together, which allows resolving multiple similar alerts in one go.
 
