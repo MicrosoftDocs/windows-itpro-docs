@@ -338,6 +338,12 @@ You must install SQL Server with the **SQL\_Latin1\_General\_CP1\_CI\_AS** coll
 </tr>
 </thead>
 <tbody>
+<tr class="even">
+<td align="left"><p>Microsoft SQL Server 2014</p></td>
+<td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
+<td align="left"><p>SP2</p></td>
+<td align="left"><p>64-bit</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>Microsoft SQL Server 2014</p></td>
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
