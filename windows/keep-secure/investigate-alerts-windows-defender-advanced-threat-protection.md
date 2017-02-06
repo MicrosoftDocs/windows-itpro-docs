@@ -27,11 +27,11 @@ You can click an alert in any of the [alert queues](alerts-queue-windows-defende
 
 Alerts attributed to an adversary or actor display a colored tile with the actor name.
 
+![A detailed view of an alert when clicked](images/alert-details.png)
+
 Click on the actor's name to see a threat intelligence profile of the actor, including a brief overview of the actor, their interests or targets, tools, tactics, and processes (TTPs) as well as areas where it's active worldwide. You will also see a set of recommended actions to take.
 
 Some actor profiles include a link to download a more comprehensive threat intelligence report.
-
-![A detailed view of an alert when clicked](images/alert-details.png)
 
 ## Alert process tree
 The **Alert process tree** takes alert triage and investigation to the next level by displaying the alert and its evidence with other events that occurred in the same execution context and time. This broad triage context of the alert and surrounding events is available on the alert page.
@@ -40,10 +40,19 @@ The **Alert process tree** takes alert triage and investigation to the next leve
 
 The alert process tree expands to display the execution path of the alert, its evidence, and related events that occurred in proximity - before and after - the alert.
 
-You’ll see markers (thunderbolt icon) that indicate related events.
+You’ll see markers ![Image of thunderbolt icon](images/atp-thunderbolt-icon.png)that indicate related events. These icons also indicate the events that triggered the alert.
 
 >[!NOTE]
 >The alert process tree might not be available in some alerts.
+
+Selecting an indicator within the alert process tree brings up the **Alert details** pane where you can take a deeper look at the details about the alert.
+
+You can take the following management actions on an alert from the **Alert management** pane:
+
+
+
+
+
 
 
 ## Incident graph
