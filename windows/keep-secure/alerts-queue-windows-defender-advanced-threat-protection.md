@@ -82,7 +82,7 @@ Reviewing the various alerts and their severity can help you decide on the appro
 The group view allows for efficient alert triage and management.
 
 ### Use the Alert management pane
-Selecting an alert brings up the **Alert management** pane where you can manage alerts and see details about the alert.
+Selecting an alert brings up the **Alert management** pane where you can manage and see details about the alert.
 
 You can take the following management actions on an alert from the **Alert management** pane:
 
