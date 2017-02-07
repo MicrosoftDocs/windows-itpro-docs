@@ -14,7 +14,7 @@ You can use Upgrade Analytics to prioritize and work through application and dri
 
 When you are ready to begin the upgrade process, a workflow is provided to guide you through critical high-level tasks. 
 
-![Workflow](images/ua-cg-15.png)
+<A HREF="images/ua-cg-15.png">![Workflow](images/ua-cg-15.png)</A>
 
 Each step in the workflow is enumerated using blue tiles. Helpful data is provided on white tiles to help you get started, to monitor your progress, and to complete each step.
 
