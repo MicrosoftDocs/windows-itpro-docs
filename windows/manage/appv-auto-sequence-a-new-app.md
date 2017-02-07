@@ -32,6 +32,9 @@ You have 2 options for provisioning an VM for auto-sequencing:
 
 - Updating an existing VM
 
+   >[!NOTE]
+   >We have reduced the number of environmental checks performed by the App-V Sequencer, narrowing down the list of apps that need to be disabled or turned off for a clean sequencing experience. We've also suppressed antivirus and other similar app warnings.
+
 ### Provision a new VM by using a VHD file
 Provisioning your new VM includes creating a VHD file, setting up a user account, turning on remote PowerShell scripting, and installing the App-V Sequencer.
 
