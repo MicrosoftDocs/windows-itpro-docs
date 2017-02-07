@@ -51,9 +51,9 @@ Sequencing multiple apps at the same time requires that you create a **ConfigFil
         <?xml version="1.0"?>
             <Applications>
                 <Application>
-                    <Name>Skype</Name>
-                    <InstallerFolder>Need to get</InstallerFolder>
-                    <Installer>Need to get</Installer>
+                    <Name>Skype for Windows</Name>
+                    <InstallerFolder>D:\Installers\New\Skype for Windows</InstallerFolder>
+                    <Installer>SkypeSetup.exe</Installer>
                     <InstallerOptions>/S</InstallerOptions>
                     <TimeoutInMinutes>20</TimeoutInMinutes>
                     <Cmdlet>True</Cmdlet>
@@ -61,8 +61,8 @@ Sequencing multiple apps at the same time requires that you create a **ConfigFil
                 </Application>
                 <Application>
                     <Name>Power BI</Name>
-                    <InstallerFolder>Need to get</InstallerFolder>
-                    <Installer>Need to get</Installer>
+                    <InstallerFolder>D:\Installers\New\Microsoft Power BI</InstallerFolder>
+                    <Installer>PBIDesktop.msi</Installer>
                     <InstallerOptions>/S</InstallerOptions>
                     <TimeoutInMinutes>20</TimeoutInMinutes>
                     <Cmdlet>True</Cmdlet>
@@ -110,17 +110,17 @@ Sequencing multipe apps at the same time requires that you create a **ConfigFIle
         <?xml version="1.0"?>
             <Applications>
                 <Application>
-                    <Name>Skype</Name>
-                    <InstallerFolder>Need to get</InstallerFolder>
-                    <Installer>Need to get</Installer>
+                    <Name>Skype for Windows</Name>
+                    <InstallerFolder>D:\Installers\New\Skype for Windows</InstallerFolder>
+                    <Installer>SkypeSetup.exe</Installer>
                     <TimeoutInMinutes>20</TimeoutInMinutes>
                     <Cmdlet>False</Cmdlet>
                     <Enabled>True</Enabled>
                 </Application>
                 <Application>
                     <Name>Power BI</Name>
-                    <InstallerFolder>Need to get</InstallerFolder>
-                    <Installer>Need to get</Installer>
+                    <InstallerFolder>D:\Installers\New\Microsoft Power BI</InstallerFolder>
+                    <Installer>PBIDesktop.msi</Installer>
                     <TimeoutInMinutes>20</TimeoutInMinutes>
                     <Cmdlet>False</Cmdlet>
                     <Enabled>True</Enabled>
