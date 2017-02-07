@@ -26,7 +26,7 @@ In this blade, computers grouped by upgrade decision are listed. The upgrade dec
 <img src="media/image9.png" width="195" height="316" />
 -->
 
-![Deploy eligible computers](images/upgrade-analytics-deploy-eligible.png)
+![Deploy eligible computers](images/ua-cg-16.png)
 
 Select **Export computers** for more details, including computer name, manufacturer and model, and Windows edition currently running on the computer. Sort or further query the data and then select **Export** to generate and save a comma-separated value (csv) list of upgrade-ready computers.
 
