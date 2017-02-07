@@ -57,12 +57,17 @@ Using Group Policy, you can turn on the **Enable automatic cleanup of unused app
 **To turn on the Enable automatic cleanup of unused appv packages setting**
 1. Open your Group Policy editor and double-click the Administrative Templates\System\App-V\PackageManagement\Enable automatic cleanup of unused appv packages setting.
 
-2.Click **Enabled**, and then click **OK**.
+2. Click **Enabled**, and then click **OK**.
 
     The setting is turned on and will cleanup any unpublished App-V packages on the App-V Client after restarting.
 
 ### Related topics
 - [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+
+- [Download the Microsoft Application Virtualization 5.0 Client UI Application](https://www.microsoft.com/en-us/download/details.aspx?id=41186)
+
+- [Using the App-V Client Management Console](appv-using-the-client-management-console.md)
+
 
 **Have a suggestion for App-V?**<p>
 Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
