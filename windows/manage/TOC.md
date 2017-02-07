@@ -144,6 +144,7 @@
 ##### [How to deploy App-V Packages Using Electronic Software Distribution](appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md)
 ##### [How to Enable Only Administrators to Publish Packages by Using an ESD](appv-enable-administrators-to-publish-packages-with-electronic-software-distribution-solutions.md)
 #### [Using the App-V Client Management Console](appv-using-the-client-management-console.md)
+##### [Automatically clean-up unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md)
 #### [Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md)
 ##### [How to Convert a Package Created in a Previous Version of App-V](appv-convert-a-package-created-in-a-previous-version-of-appv.md)
 #### [Maintaining App-V](appv-maintaining-appv.md)
