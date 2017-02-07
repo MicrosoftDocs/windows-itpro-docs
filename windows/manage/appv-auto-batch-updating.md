@@ -62,11 +62,11 @@ Updating multiple apps at the same time requires that you create a **ConfigFile*
                     <Enabled>True</Enabled>
                 </Application>
                 <Application>
-                    <Name>Power BI Update</Name>
-                    <InstallerFolder>D:\Install\Update\MicrosoftPowerBI</InstallerFolder>
+                    <Name>Microsoft Power BI Update</Name>
+                    <InstallerFolder>D:\Install\Update\PowerBI</InstallerFolder>
                     <Installer>PBIDesktop.msi</Installer>
                     <InstallerOptions>/S</InstallerOptions>
-                    <Package>C:\App-V_Package\Microsoft_Apps\powerbiupdate.appv</Package>                    
+                    <Package>C:\App-V_Package\MS_Apps\powerbiupdate.appv</Package>
                     <TimeoutInMinutes>20</TimeoutInMinutes>
                     <Cmdlet>True</Cmdlet>
                     <Enabled>True</Enabled>
@@ -120,17 +120,17 @@ Updating multipe apps at the same time requires that you create a **ConfigFile**
                     <InstallerFolder>D:\Install\Update\SkypeforWindows</InstallerFolder>
                     <Installer>SkypeSetup.exe</Installer>
                     <InstallerOptions>/S</InstallerOptions>
-                    <Package>C:\App-V_Package\Microsoft_Apps\skypeupdate.appv</Package>                    
+                    <Package>C:\App-V_Package\Microsoft_Apps\skypeupdate.appv</Package>
                     <TimeoutInMinutes>20</TimeoutInMinutes>
                     <Cmdlet>False</Cmdlet>
                     <Enabled>True</Enabled>
                 </Application>
                 <Application>
-                    <Name>Power BI Update</Name>
-                    <InstallerFolder>D:\Install\Update\MicrosoftPowerBI</InstallerFolder>
+                    <Name>Microsoft Power BI Update</Name>
+                    <InstallerFolder>D:\Install\Update\PowerBI</InstallerFolder>
                     <Installer>PBIDesktop.msi</Installer>
                     <InstallerOptions>/S</InstallerOptions>
-                    <Package>C:\App-V_Package\Microsoft_Apps\powerbiupdate.appv</Package>                    
+                    <Package>C:\App-V_Package\MS_Apps\powerbiupdate.appv</Package>                    
                     <TimeoutInMinutes>20</TimeoutInMinutes>
                     <Cmdlet>False</Cmdlet>
                     <Enabled>True</Enabled>
