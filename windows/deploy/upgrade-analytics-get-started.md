@@ -131,8 +131,3 @@ To ensure that user computers are receiving the most up to date data from Micros
 ### Distribute the deployment script at scale
 
 Use a software distribution system such as System Center Configuration Manager to distribute the Upgrade Analytics deployment script at scale. For more information, see the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/).
-
-
-
-
-
