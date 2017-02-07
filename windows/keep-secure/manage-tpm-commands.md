@@ -77,11 +77,7 @@ The following procedures describe how to manage the TPM command lists. You must 
 
 ## Use the TPM cmdlets
 
-If you are using Windows PowerShell to manage your computers, you can also manage the TPM by using Windows PowerShell. To install the TPM cmdlets, type the following command:
-
-`dism /online /enable-feature /FeatureName:tpm-psh-cmdlets`
-
-For details about the individual cmdlets, see [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx).
+You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx).
 
 ## Related topics
 
