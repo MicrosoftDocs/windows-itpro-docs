@@ -66,7 +66,8 @@ Reviewing the various alerts and their severity can help you decide on the appro
 - Windows Defender AV
 - Windows Defender ATP
 
->[!NOTE] The Windows Defender AV filter will only appear if your endpoints are using Windows Defender as the default real-time protection antimalware product.
+>[!NOTE]
+>The Windows Defender AV filter will only appear if your endpoints are using Windows Defender as the default real-time protection antimalware product.
 
 **Time period**</br>
 - 1 day
