@@ -185,8 +185,3 @@ To run the Upgrade Analytics deployment script:
 >>>>>>> vso-10281673
 
 Use a software distribution system such as System Center Configuration Manager to distribute the Upgrade Analytics deployment script at scale. For more information, see the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/).
-
-
-
-
-
