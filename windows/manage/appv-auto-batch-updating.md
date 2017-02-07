@@ -53,7 +53,7 @@ Updating multiple apps at the same time requires that you create a **ConfigFile*
             <Applications>
                 <Application>
                     <Name>Skype for Windows Update</Name>
-                    <InstallerFolder>D:\Installers\Update\Skype for Windows</InstallerFolder>
+                    <InstallerFolder>D:\Installers\Update\SkypeforWindows</InstallerFolder>
                     <Installer>SkypeSetup.exe</Installer>
                     <InstallerOptions>/S</InstallerOptions>
                     <Package>C:\App-V_Packages\Microsoft_Apps\skype_update.appv</Package>                    
@@ -63,7 +63,7 @@ Updating multiple apps at the same time requires that you create a **ConfigFile*
                 </Application>
                 <Application>
                     <Name>Power BI Update</Name>
-                    <InstallerFolder>D:\Installers\Update\Microsoft Power BI</InstallerFolder>
+                    <InstallerFolder>D:\Installers\Update\MicrosoftPowerBI</InstallerFolder>
                     <Installer>PBIDesktop.msi</Installer>
                     <InstallerOptions>/S</InstallerOptions>
                     <Package>C:\App-V_Packages\Microsoft_Apps\power_bi_update.appv</Package>                    
@@ -117,7 +117,7 @@ Updating multipe apps at the same time requires that you create a **ConfigFile**
             <Applications>
                 <Application>
                     <Name>Skype for Windows Update</Name>
-                    <InstallerFolder>D:\Installers\Update\Skype for Windows</InstallerFolder>
+                    <InstallerFolder>D:\Installers\Update\SkypeforWindows</InstallerFolder>
                     <Installer>SkypeSetup.exe</Installer>
                     <InstallerOptions>/S</InstallerOptions>
                     <Package>C:\App-V_Packages\Microsoft_Apps\skype_update.appv</Package>                    
@@ -127,7 +127,7 @@ Updating multipe apps at the same time requires that you create a **ConfigFile**
                 </Application>
                 <Application>
                     <Name>Power BI Update</Name>
-                    <InstallerFolder>D:\Installers\Update\Microsoft Power BI</InstallerFolder>
+                    <InstallerFolder>D:\Installers\Update\MicrosoftPowerBI</InstallerFolder>
                     <Installer>PBIDesktop.msi</Installer>
                     <InstallerOptions>/S</InstallerOptions>
                     <Package>C:\App-V_Packages\Microsoft_Apps\power_bi_update.appv</Package>                    

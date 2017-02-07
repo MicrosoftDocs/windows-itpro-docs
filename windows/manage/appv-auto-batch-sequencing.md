@@ -52,7 +52,7 @@ Sequencing multiple apps at the same time requires that you create a **ConfigFil
             <Applications>
                 <Application>
                     <Name>Skype for Windows</Name>
-                    <InstallerFolder>D:\Installers\New\Skype for Windows</InstallerFolder>
+                    <InstallerFolder>D:\Installers\New\SkypeforWindows</InstallerFolder>
                     <Installer>SkypeSetup.exe</Installer>
                     <InstallerOptions>/S</InstallerOptions>
                     <TimeoutInMinutes>20</TimeoutInMinutes>
@@ -61,7 +61,7 @@ Sequencing multiple apps at the same time requires that you create a **ConfigFil
                 </Application>
                 <Application>
                     <Name>Power BI</Name>
-                    <InstallerFolder>D:\Installers\New\Microsoft Power BI</InstallerFolder>
+                    <InstallerFolder>D:\Installers\New\MicrosoftPowerBI</InstallerFolder>
                     <Installer>PBIDesktop.msi</Installer>
                     <InstallerOptions>/S</InstallerOptions>
                     <TimeoutInMinutes>20</TimeoutInMinutes>
@@ -111,7 +111,7 @@ Sequencing multipe apps at the same time requires that you create a **ConfigFIle
             <Applications>
                 <Application>
                     <Name>Skype for Windows</Name>
-                    <InstallerFolder>D:\Installers\New\Skype for Windows</InstallerFolder>
+                    <InstallerFolder>D:\Installers\New\SkypeforWindows</InstallerFolder>
                     <Installer>SkypeSetup.exe</Installer>
                     <TimeoutInMinutes>20</TimeoutInMinutes>
                     <Cmdlet>False</Cmdlet>
@@ -119,7 +119,7 @@ Sequencing multipe apps at the same time requires that you create a **ConfigFIle
                 </Application>
                 <Application>
                     <Name>Power BI</Name>
-                    <InstallerFolder>D:\Installers\New\Microsoft Power BI</InstallerFolder>
+                    <InstallerFolder>D:\Installers\New\MicrosoftPowerBI</InstallerFolder>
                     <Installer>PBIDesktop.msi</Installer>
                     <TimeoutInMinutes>20</TimeoutInMinutes>
                     <Cmdlet>False</Cmdlet>
