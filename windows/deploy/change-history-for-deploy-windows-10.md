@@ -14,6 +14,14 @@ This topic lists new and updated topics in the [Deploy Windows 10](index.md) doc
 ## January 2017
 | New or changed topic | Description |
 |----------------------|-------------|
+| [Get started with Upgrade Analytics](upgrade-analytics-get-started.md) | Updated structure and content | 
+| [Upgrade Analytics deployment script](upgrade-analytics-deployment-script.md) | Added as a separate page from get started | 
+| [Use Upgrade Analytics to manage Windows upgrades](use-upgrade-analytics-to-manage-windows-upgrades.md) | Updated with links to new content and information about the target OS setting | 
+| [Upgrade Analytics - Upgrade overview](upgrade-analytics-upgrade-overview.md) | New | 
+| [Upgrade Analytics - Step 1: Identify important apps](upgrade-analytics-identify-apps.md) | Updated topic title and content | 
+| [Upgrade Analytics - Step 2: Resolve app and driver issues](upgrade-analytics-resolve-issues.md) | New | 
+| [Upgrade Analytics - Step 3: Deploy Windows](upgrade-analytics-deploy-windows.md) | New | 
+| [Upgrade Analytics - Additional insights](upgrade-analytics-additional-insights.md) | New | 
 | [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md) | New | 
 | [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) | New | 
 | [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md) | New | 
