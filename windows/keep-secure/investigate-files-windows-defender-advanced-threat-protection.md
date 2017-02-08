@@ -216,7 +216,7 @@ The details provided can help you investigate if there are indications of a pote
 
 ![The deep analysis report shows detailed information across a number of categories](images/analysis-results.png)
 
-## Troubleshooting deep analysis
+### Troubleshooting deep analysis
 
 If you encounter a problem when trying to submit a file, try each of the following troubleshooting steps.
 
