@@ -13,9 +13,9 @@ author: greg-lindsay
 This topic explains the necessary steps to set up and prepare your environment for Windows Analytics: Update Compliance. 
 
 The steps are broken down into sections that follow the recommended setup process:
-1.	Ensuring you meet the prerequisites
-2.	Adding Update Compliance to Microsoft Operations Management Suite
-3.	Deploying your Commercial ID to your organization’s devices
+1.	Ensuring you meet the [prerequisites](#update-compliance-prerequisites)
+2.	[Adding Update Compliance](#add-update-compliance-to-microsoft-operatiions-management-suite) to Microsoft Operations Management Suite
+3.	[Deploying your Commercial ID](#deploy-your-commercial-id-to-your-windows-10-devices) to your organization’s devices
 
 ## Update Compliance Prerequisites
 
@@ -39,7 +39,6 @@ Update Compliance is offered as a solution in the Microsoft Operations Managemen
 If you are already using OMS, you’ll find Update Compliance in the Solutions Gallery. Select the Update Compliance tile in the gallery and then click Add on the solution's details page. Update Compliance is now visible in your workspace.
 
 If you are not yet using OMS:
-
 
 1.	Go to Operations Management Suite’s page on Microsoft.com and click Sign in.
 
