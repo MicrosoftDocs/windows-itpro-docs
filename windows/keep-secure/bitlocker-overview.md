@@ -42,7 +42,7 @@ BitLocker control panel, and they are appropriate to use for automated deploymen
 
 ## <a href="" id="bkmk-new"></a>New and changed functionality
 
-To find out what's new in BitLocker for Windows 10, see the [BitLocker](https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in "What's new in Windows 10, versions 1507 and 1511."
+To find out what's new in BitLocker for Windows 10, such as support for the XTS-AES encryption algorithm, see the [BitLocker](https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in "What's new in Windows 10, versions 1507 and 1511."
  
 ## System requirements
 
