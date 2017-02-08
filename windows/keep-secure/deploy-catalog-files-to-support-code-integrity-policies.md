@@ -124,8 +124,6 @@ To sign the existing catalog file, copy each of the following commands into an e
 
 After the catalog file is signed, add the signing certificate to a code integrity policy, as described in the following steps.
 
-<!-- All options below need to be confirmed. -->
-
 1.  If you have not already verified the catalog file digital signature, right-click the catalog file, and then click **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with the algorithm you expect.
 
 2.  If you already have an XML policy file that you want to add the signing certificate to, skip to the next step. Otherwise, use [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) to create a code integrity policy that you will later merge into another policy (not deploy as-is). This example creates a policy called **CatalogSignatureOnly.xml** in the location **C:\\PolicyFolder**:
@@ -134,7 +132,7 @@ After the catalog file is signed, add the signing certificate to a code integrit
 
     > **Note**&nbsp;&nbsp;Include the **-UserPEs** parameter to ensure that the policy includes user mode code integrity.
 
-3.  Use [Add-SignerRule](https://technet.microsoft.com/library/mt634479.aspx) to add the signing certificate to the code integrity policy, filling in the correct path and filenames for *<policypath>* and *<certpath>*:
+3.  Use [Add-SignerRule](https://technet.microsoft.com/library/mt634479.aspx) to add the signing certificate to the code integrity policy, filling in the correct path and filenames for `<policypath>` and `<certpath>`:
 
     ` Add-SignerRule -FilePath <policypath> -CertificatePath <certpath> -User `
 
