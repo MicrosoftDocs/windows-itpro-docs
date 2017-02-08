@@ -1,12 +1,10 @@
 ﻿# Overview of threat mitigations in Windows 10
 
-This topic provides an overview of software and firmware threats faced in the current security landscape, and the mitigations that Windows 10 offers in response to these threats.
-
-For information about related types of protection offered by Windows and Office, see [Related topics](#related-topics).
+This topic provides an overview of software and firmware threats faced in the current security landscape, and the mitigations that Windows 10 offers in response to these threats. For information about related types of protection offered by Windows and Office, see [Related topics](#related-topics).
 
 | **Section**  | **Contents** |
 |--------------|-------------------------|
-| [The security threat landscape](#the-security-threat-landscape) | Describes the current nature of the security threat landscape, and outlines the basic ways that Windows 10 is designed to mitigate against software exploits and other similar threats.  |
+| [The security threat landscape](#the-security-threat-landscape) | Describes the current nature of the security threat landscape, and outlines the basic ways that Windows 10 is designed to mitigate against software exploits and similar threats.  |
 | [Windows 10 mitigations that you can configure](#windows-10-mitigations-that-you-can-configure) | Provides tables of configurable threat mitigations with links to more information. Product features such as Device Guard appear in [Table 1](#windows-10-mitigations-that-you-can-configure), and memory protection options such as Data Execution Prevention appear in [Table 2](#table-2). |
 | [Windows 10 mitigations that need no configuration](#windows-10-mitigations-that-need-no-configuration) | Provides descriptions of Windows 10 mitigations that require no configuration—they are built into the operating system. For example, heap protections and kernel pool protections are built into Windows 10. |
 | [Understanding Windows 10 in relation to the Enhanced Mitigation Experience Toolkit](#understanding-windows-10-in-relation-to-the-enhanced-mitigation-experience-toolkit) | For IT professionals who are familiar with the [Enhanced Mitigation Experience Toolkit (EMET)](https://support.microsoft.com/en-us/kb/2458544), describes how the mitigations in EMET correspond to features built into Windows 10. It also describes how to convert an XML settings file created in EMET into mitigation policies for Windows 10. |
