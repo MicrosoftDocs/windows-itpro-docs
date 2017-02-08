@@ -18,17 +18,11 @@ With Windows telemetry enabled, Upgrade Analytics collects system, application, 
 Use Upgrade Analytics to get:
 
 -   A visual workflow that guides you from pilot to production
-
 -   Detailed computer and application inventory
-
 -   Powerful computer level search and drill-downs
-
 -   Guidance and insights into application and driver compatibility issues, with suggested fixes
-
 -   Data driven application rationalization tools
-
 -   Application usage information, allowing targeted validation; workflow to track validation progress and decisions
-
 -   Data export to commonly used software deployment tools, including System Center Configuration Manager
 
 The Upgrade Analytics workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.
@@ -36,22 +30,14 @@ The Upgrade Analytics workflow steps you through the discovery and rationalizati
 **Important**  For system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what telemetry data Microsoft collects and how that data is used and protected by Microsoft, see:
 
 - [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization)
-
 - [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-
 - [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
 
 ##**Related topics**
 
-[Upgrade Analytics architecture](upgrade-analytics-architecture.md)
-
-[Upgrade Analytics requirements](upgrade-analytics-requirements.md)
-
-[Upgrade Analytics release notes](upgrade-analytics-release-notes.md)
-
-[Get started with Upgrade Analytics](upgrade-analytics-get-started.md)
-
-[Use Upgrade Analytics to manage Windows upgrades](use-upgrade-analytics-to-manage-windows-upgrades.md)
-
-[Troubleshoot Upgrade Analytics](troubleshoot-upgrade-analytics.md)
-
+[Upgrade Analytics architecture](upgrade-analytics-architecture.md)<BR>
+[Upgrade Analytics requirements](upgrade-analytics-requirements.md)<BR>
+[Upgrade Analytics release notes](upgrade-analytics-release-notes.md)<BR>
+[Get started with Upgrade Analytics](upgrade-analytics-get-started.md)<BR>
+[Use Upgrade Analytics to manage Windows upgrades](use-upgrade-analytics-to-manage-windows-upgrades.md)<BR>
+[Troubleshoot Upgrade Analytics](troubleshoot-upgrade-analytics.md)<BR>

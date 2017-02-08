@@ -45,11 +45,8 @@ If you are already using OMS, you’ll find Upgrade Analytics in the Solutions G
 If you are not using OMS:
 
 1.  Go to the [Upgrade Analytics page on Microsoft.com](https://go.microsoft.com/fwlink/?LinkID=799190&clcid=0x409) and click **Sign up** to kick off the onboarding process.
-
 2.  Sign in to Operations Management Suite (OMS). You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
-
 3.  Create a new OMS workspace. Enter a name for the workspace, select the workspace region, and provide the email address that you want associated with this workspace. Select **Create**.
-
 4.  If your organization already has an Azure subscription, you can link it to your workspace. Note that you may need to request access from your organization’s Azure administrator.
 
     > If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. Your workspace opens.
@@ -86,7 +83,7 @@ Note: The compatibility update KB runs under the computer’s system account. If
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-| `https://v10.vortex-win.data.microsoft.com/collect/v1`  <br><br>                       `https://Vortex-win.data.microsoft.com/health/keepalive`                                                                                                      | Connected User Experience and Telemetry component endpoint. User computers send data to Microsoft through this endpoint.             |
+| `https://v10.vortex-win.data.microsoft.com/collect/v1`<br>`https://Vortex-win.data.microsoft.com/health/keepalive`                                                                                                      | Connected User Experience and Telemetry component endpoint. User computers send data to Microsoft through this endpoint.             |
 | `https://settings.data.microsoft.com/qos`                                                                                                                                  | Enables the compatibility update KB to send data to Microsoft.                                                                       |
 | `https://go.microsoft.com/fwlink/?LinkID=544713`<br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc`                                         | This service provides driver information about whether there will be a driver available post-upgrade for the hardware on the system. |
 
@@ -124,64 +121,10 @@ When you have completed a pilot deployment, you are ready to automate data colle
 
 To ensure that user computers are receiving the most up to date data from Microsoft, we recommend that you establish the following data sharing and analysis processes.
 
--   Enable automatic updates for the compatibility update and related KBs. These KBs are updated frequently to include the latest application and driver issue information as we discover it during testing.
--   Schedule the Upgrade Analytics deployment script to automatically run so that you don’t have to manually initiate an inventory scan each time the compatibility update KBs are updated. Computers are re-scanned only when the compatibility KBs are updated, so if your inventory changes significantly between KB releases you won’t see the changes in Upgrade Analytics until you run the script again.
--   Schedule monthly user computer scans to view monthly active computer and usage information.
+- Enable automatic updates for the compatibility update and related KBs. These KBs are updated frequently to include the latest application and driver issue information as we discover it during testing.
+- Schedule the Upgrade Analytics deployment script to automatically run so that you don’t have to manually initiate an inventory scan each time the compatibility update KBs are updated. Computers are re-scanned only when the compatibility KBs are updated, so if your inventory changes significantly between KB releases you won’t see the changes in Upgrade Analytics until you run the script again.
+- Schedule monthly user computer scans to view monthly active computer and usage information.
 
-<<<<<<< HEAD
-## Run the Upgrade Analytics deployment script
-
-To automate many of the steps outlined above and to troubleshoot data sharing issues, you can run the [Upgrade Analytics deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409), developed by Microsoft.
-
-> The following guidance applies to version 11.11.16 or later of the Upgrade Analytics deployment script. If you are using an older version, please download the latest from [Download Center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409).
-
-The Upgrade Analytics deployment script does the following:
-
-1.  Sets commercial ID key + CommercialDataOptIn + RequestAllAppraiserVersions keys.
-
-2.  Verifies that user computers can send data to Microsoft.
-
-3.  Checks whether the computer has a pending restart.  
-
-4.  Verifies that the latest version of KB package 10.0.x is installed (version 10.0.14913 or later is required).
-
-5.  If enabled, turns on verbose mode for troubleshooting.
-
-6.  Initiates the collection of the telemetry data that Microsoft needs to assess your organization’s upgrade readiness.
-
-7.  If enabled, displays the script’s progress in a cmd window, providing you immediate visibility into issues (success or fail for each step) and/or writes to log file.
-
-To run the Upgrade Analytics deployment script:
-
-1.  Download the [Upgrade Analytics deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract UpgradeAnalytics.zip. Inside, there are two folders: Pilot and Deployment. The Pilot folder contains advanced logging that can help troubleshoot issues and is intended to be run from an elevated command prompt. The Deployment folder offers a lightweight script intended for broad deployment through ConfigMgr or other software deployment system. We recommend manually running the Pilot version of the script on 5-10 machines to verify that everything is configured correctly.  Once you have confirmed that data is flowing successfully, proceed to run the Deployment version throughout your organization.
-
-2.  Edit the following parameters in RunConfig.bat:
-
-    1.  Provide a storage location for log information. You can store log information on a remote file share or a local directory. If the script is blocked from creating the log file for the given path, it creates the log files in the drive with the Windows directory. Example: %SystemDrive%\\UADiagnostics
-
-    2.  Input your commercial ID key. This can be found in your OMS workspace under Settings -> Connected Sources -> Windows Telemetry.
-
-    3.  By default, the script sends log information to both the console and the log file. To change the default behavior, use one of the following options:
-
-        > *logMode = 0 log to console only*
->
-        > *logMode = 1 log to file and console*
->
-        > *logMode = 2 log to file only*
-
-3.  To enable Internet Explorer data collection, set AllowIEData to IEDataOptIn. By default, AllowIEData is set to Disable. Then use one of the following options to determine what Internet Explorer data can be collected:
-
-    > *IEOptInLevel = 0 Internet Explorer data collection is disabled*
-    >
-    > *IEOptInLevel = 1 Data collection is enabled for sites in the Local intranet + Trusted sites + Machine local zones*
-    >
-    > *IEOptInLevel = 2 Data collection is enabled for sites in the Internet + Restricted sites zones*
-    >
-    > *IEOptInLevel = 3 Data collection is enabled for all sites*
-
-4.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script.  If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
-=======
 ### Distribute the deployment script at scale
->>>>>>> vso-10281673
 
 Use a software distribution system such as System Center Configuration Manager to distribute the Upgrade Analytics deployment script at scale. For more information, see the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/).
