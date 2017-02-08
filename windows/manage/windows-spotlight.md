@@ -1,5 +1,5 @@
 ---
-title: Windows Spotlight on the lock screen (Windows 10)
+title: Configure Windows Spotlight on the lock screen (Windows 10)
 description: Windows Spotlight is an option for the lock screen background that displays different background images on the lock screen.
 ms.assetid: 1AEA51FA-A647-4665-AD78-2F3FB27AD46A
 keywords: ["lockscreen"]
@@ -10,25 +10,12 @@ author: jdeckerMS
 localizationpriority: high
 ---
 
-# Windows Spotlight on the lock screen
+# Configure Windows Spotlight on the lock screen
 
 
 **Applies to**
 
 -   Windows 10
-
-to add for RS2:
-Experience/AllowWindowsSpotlightOnActionCenter :
-https://microsoft.sharepoint.com/teams/osg_core_ens/mgmt/Shared%20Documents/DM%20Policy%20Review/DM%20Policy%20Review%20-%20Action%20Center.xlsx?web=1
- 
-Experience/AllowWindowsSpotlightPersonalization
-This is renamed to Experience/AllowTailoredExperiencesWithDiagnosticData.Will share policy spreadsheet shortly.
-https://microsoft.sharepoint.com/teams/osg_core_ens/mgmt/Shared%20Documents/DM%20Policy%20Review/DM%20Policy%20Review%20-%20Tailored%20Experiences%20RS2.xlsx?web=1
- 
- 
- 
-Experience/AllowWindowsSpotlightWindowsWelcomeExperience
-https://microsoft.sharepoint.com/teams/osg_core_ens/mgmt/Shared%20Documents/DM%20Policy%20Review/DM%20Policy%20Review%20-%20Early%20Bird.xlsx?web=1
 
 
 Windows Spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen. Windows Spotlight is available in all desktop editions of Windows 10. 
@@ -47,6 +34,8 @@ For managed devices running Windows 10 Enterprise and Windows 10 Education, en
 -   **Feature suggestions, fun facts, tips**
 
     The lock screen background will occasionally suggest Windows 10 features that the user hasn't tried yet, such as **Snap assist**.
+    
+    ![fun facts](images/funfacts.png)
 
 ## How do you turn off Windows Spotlight locally?
 
@@ -58,18 +47,19 @@ To turn off Windows Spotlight locally, go to **Settings** &gt; **Personalization
 ## How do you disable Windows Spotlight for managed devices?
 
 
-Windows 10, version 1607, provides three new Group Policy settings to help you manage Windows Spotlight on enterprise computers.
+Windows Spotlight is enabled by default. Windows 10 provides Group Policy and mobile device management (MDM) settings to help you manage Windows Spotlight on enterprise computers.
 
-**Windows 10 Pro, Enterprise, and Education**
+| Group Policy | MDM | Description | Applies to |
+| --- | --- | --- | --- |
+| **User Configuration\Administrative Templates\Windows Components\Cloud Content\Do not suggest third-party content in Windows spotlight** | **Experience/AllowThirdPartySuggestionsInWindowsSpotlight** | Enables enterprises to restrict suggestions to Microsoft apps and services | Windows 10 Pro, Enterprise, and Education, version 1607 and later |
+| **User Configuration\Administrative Templates\Windows Components\Cloud Content\Turn off all Windows Spotlight features** | **Experience/AllowWindowsSpotlight** | Enables enterprises to completely disable all Windows Spotlight features in a single setting | Windows 10 Enterprise and Education, version 1607 and later |
+| **User Configuration\Administrative Templates\Windows Components\Cloud Content\Configure Spotlight on lock screen** | **Experience/ConfigureWindowsSpotlightOnLockScreen** | Specifically controls the use of the dynamic Windows Spotlight image on the lock screen, and can be enabled or disabled | Windows 10 Enterprise and Education, version 1607 and later | 
+| **Administrative Templates \ Windows Components \ Cloud Content \ Turn off the Windows Spotlight on Action Center** | **Experience/AllowWindowsSpotlightOnActionCenter** |  Turn off Suggestions from Microsoft that show after each clean install, upgrade, or on an on-going basis to introduce users to what is new or changed | Windows 10, version 1703 |
+| **User Configuration \ Administrative Templates \ Windows Components \ Cloud Content \ Do not use diagnostic data for tailored experiences** | **Experience/AllowTailoredExperiencesWithDiagnosticData** | Prevent Windows from using diagnostic data to provide tailored experiences to the user | Windows 10, version 1703 |
+| **User Configuration \ Administrative Templates \ Windows Components \ Cloud Content \ Turn off the Windows Welcome Experience** | **Experience/AllowWindowsSpotlightWindowsWelcomeExperience** | Turn off the Windows Spotlight Windows Welcome experience which helps introduce users to Windows, such as launching Microsoft Edge with a web page highlighting new features | Windows 10, version 1703 |
 
-- **User Configuration\Administrative Templates\Windows Components\Cloud Content\Do not suggest third-party content in Windows spotlight** enables enterprises to restrict suggestions to Microsoft apps and services.
 
-**Windows 10 Enterprise and Education**
-
-* **User Configuration\Administrative Templates\Windows Components\Cloud Content\Turn off all Windows Spotlight features** enables enterprises to completely disable all Windows Spotlight features in a single setting.
-* **User Configuration\Administrative Templates\Windows Components\Cloud Content\Configure Spotlight on lock screen** specifically controls the use of the dynamic Windows Spotlight image on the lock screen, and can be enabled or disabled. (The Group Policy setting **Enterprise Spotlight** does not work in Windows 10, version 1607.)
-
-Windows Spotlight is enabled by default. Administrators can replace Windows Spotlight with a selected image using the Group Policy setting **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Force a specific default lock screen image**.
+ In addition to the specific policy settings for Windows Spotlight, administrators can replace Windows Spotlight with a selected image using the Group Policy setting **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Force a specific default lock screen image**.
 
 >[!WARNING]
 > In Windows 10, version 1607, the **Force a specific default lock screen image** policy setting will prevent users from changing the lock screen image. This behavior will be corrected in a future release.
@@ -78,7 +68,7 @@ Windows Spotlight is enabled by default. Administrators can replace Windows Spot
 
 Pay attention to the checkbox in **Options**. In addition to providing the path to the lock screen image, administrators can choose to allow or **Turn off fun facts, tips, tricks, and more on lock screen**. If the checkbox is not selected, users will see the lock screen image that is defined in the policy setting, and will also see occasional messages, such as the example in the following image.
 
-![fun facts](images/funfacts.png)
+
 
 ## Related topics
 
