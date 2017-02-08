@@ -71,7 +71,7 @@
 ## [Configure devices without MDM](configure-devices-without-mdm.md)
 ## [Application Virtualization (App-V) for Windows](appv-for-windows.md)
 ### [Getting Started with App-V](appv-getting-started.md)
-#### [What's new in App-V](appv-about-appv.md)
+#### [What's new in App-V for Windows 10, version 1703 and earlier](appv-about-appv.md)
 ##### [Release Notes for App-V for Windows 10, version 1607](appv-release-notes-for-appv-for-windows.md)
 ##### [Release Notes for App-V for Windows 10, version 1703](appv-release-notes-for-appv-for-windows-1703.md)
 #### [Evaluating App-V](appv-evaluating-appv.md)
