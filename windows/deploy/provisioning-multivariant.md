@@ -26,17 +26,16 @@ Let's begin by learning how to define a **Target**.
 
 ## Define a target
 
-In the XML file, you provide an **Id**, or friendly name, for each **Target**. Each **Target** is defined by at least one **TargetState** which contains at least one **Condition**. A **Target** can have more than one **TargetState**, and a **TargetState** can have more than one **Condition**. A **Condition** element defines the matching type between the condition and the specified value.
+In the XML file, you provide an **Id**, or friendly name, for each **Target**. Each **Target** is defined by at least one **TargetState** which contains at least one **Condition**. A **Condition** element defines the matching type between the condition and the specified value.
+
+A **Target** can have more than one **TargetState**, and a **TargetState** can have more than one **Condition**. 
 
 ![Target with multiple target states and conditions](images/multi-target.png)
 
-- When all **Condition** elements are TRUE, **TargetState** is TRUE.
+The following table describes the logic for the target definition.
 
-  ![Target state is true when all conditions are true](images/icd-multi-targetstate-true.png)
-
-- If any of the **TargetState** elements is TRUE, **Target** is TRUE, and the **Id** can be used for setting customizations.
-
-  ![Target is true if any target state is true](images/icd-multi-target-true.png)
+<table><tr><td>When all **Condition** elements are TRUE, **TargetState** is TRUE.</td><td>![Target state is true when all conditions are true](images/icd-multi-targetstate-true.png)</td></tr>
+<tr><td>If any of the **TargetState** elements is TRUE, **Target** is TRUE, and the **Id** can be used for setting customizations.</td><td>![Target is true if any target state is true](images/icd-multi-target-true.png)</td></tr></table>
 
 ### Conditions
 
