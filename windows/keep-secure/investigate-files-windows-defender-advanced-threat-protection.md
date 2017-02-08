@@ -199,7 +199,7 @@ A progress bar is displayed and provides information on the different stages of 
 > [!NOTE]
 > Depending on machine availability, sample collection time can vary. There is a 3-hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 machine reporting at that time. You can re-submit files for deep analysis to get fresh data on the file.
 
-## View deep analysis reports
+### View deep analysis reports
 
 View the deep analysis report that Windows Defender ATP provides to see the details of the deep analysis that was conducted on the file you submitted. This feature is available in the file view context.
 
@@ -238,7 +238,7 @@ HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
 > [!NOTE]
 > If the value *AllowSampleCollection* is not available, the client will allow sample collection by default.
 
-### Related topics
+## Related topics
 - [Understand the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - [Alerts overview](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)

@@ -113,7 +113,6 @@ This machine isolation feature disconnects the compromised machine from the netw
 >[!NOTE]
 >You’ll be able to reconnect the machine back to the network at any time.
 
-## Isolate machine
 1.	Select the machine that you want to isolate. You can select or search for a machine from any of the following views:
 
   -	**Dashboard** – Select the machine name from the Top machines with active alerts section.
@@ -176,7 +175,6 @@ Temp Directories | Contains a set of text files that lists the files located in 
 Users and Groups | Provides a list of files that each represent a group and its members.
 CollectionSummaryReport.xls | This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code in case of failure. You can use this report to track if the package includes all the expected data and identify if there were any errors.
 
-## Collect investigation package
 1.	Select the machine that you want to investigate. You can select or search for a machine from any of the following views:
 
   -	**Dashboard** – Select the machine name from the Top machines with active alerts section.
@@ -207,7 +205,7 @@ The **Action center** provides information on actions that were taken on a machi
 ![Image of action center with information](images/atp-action-center-with-info.png)
 
 
-### Related topics
+## Related topics
 - [Understand the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - [Alerts overview](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
