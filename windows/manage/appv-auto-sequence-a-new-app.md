@@ -136,6 +136,12 @@ The 2 types of provisioning log files, located at %temp%\AutoSequencer\Logs, are
 
 - [Manually sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md)
 
+- [Automatically sequence multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md)
+
+- [Automatically update multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md)
+
+- [Automatically cleanup unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md)
+
 
 **Have a suggestion for App-V?**<p>
 Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).

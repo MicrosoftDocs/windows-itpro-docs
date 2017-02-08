@@ -23,6 +23,9 @@ There are 2 approaches to sequencing multiple apps at the same time:
 
 - Using the user-interface provided by the App-V Sequencer
 
+>[!NOTE]
+If you're trying to update multiple apps at the same time, see the [Automatically update multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md) topic.
+
 ### Sequence multiple apps by using a PowerShell cmdlet
 Sequencing multiple apps at the same time requires that you create a **ConfigFile** with info related to each round of sequencing. This file is then used by the cmdlet to start the VM at a "clean" checkpoint, to copy the installer from the Host device to the VM, and then to start the App-V Sequencer to monitor your specified app installations.
 
@@ -156,9 +159,13 @@ There are 3 types of log files that occur when you sequence multiple apps at the
 
 - [Learn about Hyper-V on Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server)
 
-- [Automatically sequence a single app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-sequence-a-new-app.md)
+- [Automatic VM provisioning of the sequencing environment](appv-auto-sequence-a-new-app.md)
 
 - [Manually sequence a single app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md)
+
+- [Automatically update multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md)
+
+- [Automatically cleanup unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md)
 
 **Have a suggestion for App-V?**<p>
 Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
