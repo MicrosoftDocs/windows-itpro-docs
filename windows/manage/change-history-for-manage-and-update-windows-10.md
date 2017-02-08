@@ -18,10 +18,13 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | New or changed topic | Description |
 | --- | --- |
 |[Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) | Added Group Policy setting that blocks user access to Windows Update. |
+|[What's new in App-V for Windows 10, version 1703 and earlier](appv-about-appv.md)|Updated to include new features in App-V for Windows 10, version 1703. |
+|[Release Notes for App-V for Windows 10, version 1703](appv-release-notes-for-appv-for-windows-1703.md)|New |
 |[Automatically sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-sequence-a-new-app.md) |New |
 |[Automatically sequence multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md) |New |
 |[Automatically update multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md) |New |
 |[Automatically clean-up unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md) |New |
+
 
 ## January 2017
 
