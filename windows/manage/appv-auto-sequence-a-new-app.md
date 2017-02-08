@@ -14,15 +14,15 @@ ms.prod: w10
 **Applies to**
 -   Windows 10, version 1703
 
-Previous versions of the App-V Sequencer have required you to manually sequence your app packages. This was time-consuming and required extensive interaction, causing many companies to deploy brand-new packages rather than update an existing one. Windows 10, version 1703 introduces an updated App-V Sequencer that automatically sequences your app packages, improving your overall experience by streamlining the provisioning of the prerequisite environment, automating app installation, and expediting the package updating setup.
+Previous versions of the App-V Sequencer have required you to manually sequence and update your app packages. This was time-consuming and required extensive interaction, causing many companies to deploy brand-new packages rather than update an existing one. Windows 10, version 1703 introduces the App-V Auto-Sequencer, which automatically sequences your app packages, improving your overall experience by streamlining the provisioning of the prerequisite environment, automating app installation, and expediting the package updating setup.
 
 Using the automatic sequencer to package your apps provides:
 
 - Automatic virtual machine (VM) provisioning of the sequencing environment. The process for this is covered in this topic.
 
-- Batch-sequencing of packages. This means that multiple apps can be sequenced at the same time, in a single group. For info about this, see [Automatically sequence multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md).
+- Batch-sequencing of packages. This means that multiple apps can be sequenced at the same time, in a single group. For info about this, see [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md).
 
-- Batch-updating of packages. This means that multiple apps can be updated at the same time, in a single group. For info about this, see [Automatically update multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md).
+- Batch-updating of packages. This means that multiple apps can be updated at the same time, in a single group. For info about this, see [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md).
 
 ## Automatic VM provisioning of the sequencing environment
 You have 2 options for provisioning an VM for auto-sequencing:
@@ -56,10 +56,7 @@ For this process to work, you must have a base operating system available as a V
 After you have a VHD file, you must provision your VM for auto-sequencing.
 
 **To provision your VM using your VHD file**
-1. On the Host device, install Windows 10, version 1703 and the matching ADK version, making sure that you've selected to install the **Microsoft Application Virtualization (App-V) Auto Sequencer** component.
-
-    >[!NOTE]
-    >The App-V Sequencer is included with the Windows ADK. For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
+1. On the Host device, install Windows 10, version 1703 and the **Microsoft Application Virtualization (App-V) Auto Sequencer** component from the matching version of the Windows Assessment and Deployment Kit (ADK). For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
 
 2. Make sure that Hyper-V is turned on. For more info about turning on and using Hyper-V, see [Hyper-V on Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server).
 
@@ -69,13 +66,11 @@ After you have a VHD file, you must provision your VM for auto-sequencing.
     New-AppVSequencerVM -VMName "<name_of_new_vm>" -ADKPath "<path_to_adk_install_folder>" -VHDPath "<path_to_vhd_file>" -VMMemory <vm_memory_size> -VMSwitch "<name_of_network_switch>"
     ```
     
-    Where you create a unique name for your VM, ensure that the VHD file and matching ADK tools are located on the Host device and referenced in the _ADKPath_ and the _VHDPath_ parameters, determine the amount of memory to be allocated for use by your VM, and provide the name of your network switch.
-
-A new Hyper-V VM file is created out of the provisioned VHD, creating a "clean" checkpoint, from where all of the sequencing and updating will start.
+This command creates a new Hyper-V VM file using the provided VHD file and also creates a "clean" checkpoint, from where all sequencing and updating will start.
 
 
 ### Provision an existing VM for auto-sequencing
-If your apps require custom prerequesites, such as Microsoft SQL Server, we recommend that you preinstall the prerequisites on your VM and then use that VM for auto-sequencing. Using these steps will establish a connection to your existing VM, install the Microsoft Application Virtualization (App-V) Auto Sequencer from the ADK tools, and provision your VM for auto-sequencing.
+If your apps require custom prerequisites, such as Microsoft SQL Server, we recommend that you preinstall the prerequisites on your VM and then use that VM for auto-sequencing. Using these steps will establish a connection to your existing VM.
 
 **To connect to your existing VM**
 - Open PowerShell as an admin and run the following commands on your existing VM:
@@ -86,7 +81,7 @@ If your apps require custom prerequesites, such as Microsoft SQL Server, we reco
         Get-netconnectionprofile | set-netconnectionprofile -NetworkCategory Private
         ```
         
-    - **Set the Windows Firewall rules for the display groups, _Remote Desktop_ and _Windows Remote Management_:** 
+    - **Enable firewall rules for _Remote Desktop_ and _Windows Remote Management_:** 
     
         ```ps1
         Enable-NetFirewallRule -DisplayGroup “Remote Desktop” 
@@ -99,30 +94,26 @@ If your apps require custom prerequesites, such as Microsoft SQL Server, we reco
         Enable-PSRemoting –Force
         ```
 
-    These commands turn on [PowerShell Remoting](https://msdn.microsoft.com/powershell/reference/5.1/Microsoft.PowerShell.Core/about/about_Remote) and turn on the necessary Windows Firewall rules so you can connect to your VM.
-
 **To provision an existing VM**
-1. On the Host device, install Windows 10, version 1703 and the matching ADK version, making sure that you've selected to install the **Microsoft Application Virtualization (App-V) Auto Sequencer** component.
+1. On the Host device, install Windows 10, version 1703 and the **Microsoft Application Virtualization (App-V) Auto Sequencer** component from the matching version of the Windows Assessment and Deployment Kit (ADK). For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
 
-    >[!NOTE]
-    >The App-V Sequencer is included with the Windows ADK. For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
-
-2. Open PowerShell as an admin and run the **New-AppVSequencerVM** cmdlet, using the following parameters:
+2. Open PowerShell as an admin and run the **Connect-AppvSequencerVM** cmdlet, using the following parameters:
 
     ```ps1
-    New-AppVSequencerVM -VMName "<name_of_vm>" -VMComputerName "<computer_name_for_vm>" -ADKPath "<path_to_adk_install_folder>"
+    Connect-AppvSequencerVM -VMName "<name_of_vm>" -ADKPath "<path_to_adk_install_folder>"
     ```
     
     Where _VMName_ is the name of the VM granted during its creation and shown in the Hyper-V Manager tool, and the _VMComputerName_ is the name of the VM, assigned after its creation and shown on the **Computer name** field of the **System Properties** screen.
 
-A new Hyper-V VM file is created from the existing VM, creating a "clean" checkpoint, from where all of the sequencing and updating will start.
+This command creates a new Hyper-V VM file using the provided VHD file and also creates a "clean" checkpoint, from where all sequencing and updating will start.
+
 
 ### Review the provisioning log files
 The 2 types of provisioning log files, located at %temp%\AutoSequencer\Logs, are:
 
-- **New-AppVSequencerVM-<time_stamp>.txt**. Includes info about the provisioning activities, such as "Waiting for VM session", "Copying installer for Sequencer", and so on.
+- **New-AppVSequencerVM-&lt;*time_stamp*&gt;.txt**. Includes info about the provisioning activities, such as "Waiting for VM session", "Copying installer for Sequencer", and so on.
 
-- **New-AppVSequencerVM-report-<time_stamp>.txt**. Includes info about the connections made to the VM, showing whether there were any failures.
+- **Connect-AppvSequencerVM-report-&lt;*time_stamp*&gt;.txt**. Includes info about the connections made to the VM, showing whether there were any failures.
 
 
 ### Related topics
