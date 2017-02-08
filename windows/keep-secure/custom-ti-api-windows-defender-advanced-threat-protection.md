@@ -34,7 +34,7 @@ You can call and specify the resource URLs using one of the following operations
 All Custom TI API requests use the following basic URL pattern:
 
 ```
-    https://wdatp-tiapi-prd.trafficmanager.net/{version}/{resource}?[query_parameters]
+    https://TI.SecurityCenter.Windows.com/{version}/{resource}?[query_parameters]
 ```
 
 For this URL:
