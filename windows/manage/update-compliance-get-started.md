@@ -38,9 +38,12 @@ Update Compliance is offered as a solution in the Microsoft Operations Managemen
 
 If you are already using OMS, you’ll find Update Compliance in the Solutions Gallery. Select the **Update Compliance** tile in the gallery and then click **Add** on the solution's details page. Update Compliance is now visible in your workspace.
 
-If you are not yet using OMS:
+If you are not yet using OMS, use the following steps to subscribe to OMS Update Compliance:
 
-1.	Go to Operations Management Suite’s page on Microsoft.com and click **Sign in**.
+1.	Go to [Operations Management Suite’s page](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.
+
+
+
 2.	Sign in to Operations Management Suite (OMS). You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
 3.	Create a new OMS workspace. 
 4.	Enter a name for the workspace, select the workspace region, and provide the email address that you want associated with this workspace. Select Create.
