@@ -26,9 +26,7 @@ You must first create and save a project template, including a virtual app packa
     >[!NOTE]
     >If the virtual app package is currently open in the App-V Sequencer console, skip to Step 3 of this procedure.
 
-2. On the **File** menu, click **Open**, click **Edit Package**, browse for the virtual app package that includes the settings you want to save with the App-V project template, and then click **Edit**.
-
--- What happens in between here? You've said you want to edit your package and then you want to save your template file. This feels like there's something missing. What are you editing? --
+2. On the **File** menu, click **Open**, click **Edit Package**, browse for the virtual app package that includes the settings you want to save with the App-V project template, and then click **Edit** to change any of the settings or info included in the file.
 
 3. On the **File** menu, click **Save As Template**, review the settings associated with the new template, click **OK**, name your new template, and then click **Save**.
 
