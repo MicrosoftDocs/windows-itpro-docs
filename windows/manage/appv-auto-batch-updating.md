@@ -156,9 +156,9 @@ Updating multipe apps at the same time requires that you create a **ConfigFile**
 ### Review the log files
 There are 3 types of log files that occur when you sequence multiple apps at the same time:
 
-- **New-BatchAppVSequencerPackages-<time stamp>.txt**. Located in the %temp%\AutoSequencer\Logs directory. This log contains info about the updating activities, such as "Copying installer to VM", "Scheduling updating task", and so on for each app. Additionally, if an app times out, this log contains the failure along with the checkpoint for troubleshooting the problem.
+- **New-BatchAppVSequencerPackages-&lt;*time_stamp*&gt;.txt**. Located in the %temp%\AutoSequencer\Logs directory. This log contains info about the updating activities, such as "Copying installer to VM", "Scheduling updating task", and so on for each app. Additionally, if an app times out, this log contains the failure along with the checkpoint for troubleshooting the problem.
 
-- **New-BatchAppVSequencerPackages-report-<time stamp>.txt**. Located in the **OutputPath** folder you specified earlier. This log contains info about the connections made to the VM, showing if there were any failures. Additionally, it briefly includes success or failure info for all of the apps.
+- **New-BatchAppVSequencerPackages-report-&lt;*time_stamp*&gt;.txt**. Located in the **OutputPath** folder you specified earlier. This log contains info about the connections made to the VM, showing if there were any failures. Additionally, it briefly includes success or failure info for all of the apps.
 
 - **Log.txt file**. Located in the **Output Package** folder. This file contains all code included in the NewAppVSequencerPackage cmdlet, including the allowed parameters.
 
