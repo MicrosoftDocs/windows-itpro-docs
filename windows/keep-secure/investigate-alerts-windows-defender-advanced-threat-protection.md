@@ -38,43 +38,38 @@ The **Alert process tree** takes alert triage and investigation to the next leve
 
 ![Image of the alert process tree](images/atp-alert-process-tree.png)
 
-The alert process tree expands to display the execution path of the alert, its evidence, and related events that occurred in proximity - before and after - the alert.
+The **Alert process tree** expands to display the execution path of the alert, its evidence, and related events that occurred in proximity - before and after - the alert.
 
-You’ll see markers ![Image of thunderbolt icon](images/atp-thunderbolt-icon.png)that indicate related events. These icons also indicate the events that triggered the alert.
+You’ll see markers ![Image of thunderbolt icon](images/atp-thunderbolt-icon.png) that indicate related events. These icons also indicate the events that triggered the alert.
 
 >[!NOTE]
 >The alert process tree might not be available in some alerts.
 
-Selecting an indicator within the alert process tree brings up the **Alert details** pane where you can take a deeper look at the details about the alert.
-
-You can take the following management actions on an alert from the **Alert management** pane:
-
-
-
-
-
+Selecting an indicator within the alert process tree brings up the **Alert details** pane where you can take a deeper look at the details about the alert. It displays rich information about the selected process, file, IP address, and other details – while remaining on the alert page, so you never leave the current context of your investigation.
 
 
 ## Incident graph
-The incident graph provides a visual representation of where an alert was seen, events that triggered the alert, and which other machines are affected by the event. It provides an illustrated alert footprint on the original machine and expands to show the footprint of each alert event on other machines.
+The **Incident graph** provides a visual representation of where an alert was seen, events that triggered the alert, and which other machines are affected by the event. It provides an illustrated alert footprint on the original machine and expands to show the footprint of each alert event on other machines.
 
-You can click the circles on the incident graph to expand the nodes and view the associated events or files related to the alert.
+![Image of the Incident graph](images/atp-incident-graph.png)
 
-## Alert spotlight
-The alert spotlight feature helps ease investigations by highlighting alerts related to a specific machine and events. You can highlight an alert and its related events in the machine timeline to increase your focus during an investigation.
+You can click the circles on the incident graph to expand the nodes and view the associated events or files related to the alert. It expands alert evidence to connect to other machines it was observed on by file and process.
 
-You can click on the machine link from the alert view to see the alerts related to the machine.
+The Windows Defender ATP service keeps track of "known processes" such as system files like PowerShell and others, that often trigger alerts. These alerts can be considered benign and very prevalent (on almost all machines) – so there is little to no value in expanding the **Incident graph** to other machines these files were observed on.
 
-  > [!NOTE]
-  > This shortcut is not available from the Incident graph machine links.  
+Alerts related to these processes include specific command lines that are generally the basis for the alert. You can use command lines as a criterion for expanding to other machines.
 
-Alerts related to the machine are displayed under the **Alerts related to this machine** section.
-Clicking on an alert row takes you the to the date in which the alert was flagged on **Machine timeline**. This eliminates the need to manually filter and drag the machine timeline marker to when the alert was seen on that machine.
+The **Incident graph** also shows that ‘the same command’ (for the same known process) was observed on other machines, ensuring the accuracy and value of the Incident Graph’s expansion.
 
-You can also choose to highlight an alert from the **Alerts related to this machine** or from the  **Machine timeline** section to see the correlation between the alert and other events that occurred on the machine. Right-click on any alert from either section and select **Mark related events**. This highlights alerts and events that are related and helps differentiate between the other alerts listed in the timeline. Highlighted events are displayed in all filtering modes whether you choose to view the timeline by **Detections**, **Behaviours**, or **Verbose**.
+The **Incident graph** also supports IP Addresses as a criterion of expansion, showing the potential scope of alert evidence without having to change context by navigating to the IP Address page.
 
-You can also remove the highlight by right-clicking a highlighted alert and selecting **Unmark related events**.
 
+## Alert timeline
+The **Alert timeline** feature helps ease investigations by highlighting alerts related to a specific machine and events.
+
+![Image of alert timeline](images/atp-alert-timeline.png)
+
+Selecting an alert detail brings up the **Details pane** where you'll be able to see more information about the alert such as file details, detections, instances of it observed worldwide, and in the organization.
 
 ### Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
