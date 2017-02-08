@@ -1,6 +1,6 @@
 ---
 title: Get started with Update Compliance (Windows 10)
-description: Explains how to get started with Update Compliance.
+description: Explains how to configure Update Compliance.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,27 +9,31 @@ author: greg-lindsay
 ---
 
 # Get started with Upgrade Compliance
- 
-## Update Compliance
 
-This topic explains the necessary steps to set up and prepare your environment for Windows Analytics: Update Compliance. The steps are broken down into sections that follow the recommended setup process:
+This topic explains the necessary steps to set up and prepare your environment for Windows Analytics: Update Compliance. 
+
+The steps are broken down into sections that follow the recommended setup process:
 1.	Ensuring you meet the prerequisites
 2.	Adding Update Compliance to Microsoft Operations Management Suite
 3.	Deploying your Commercial ID to your organization’s devices
 
-Update Compliance Prerequisites
+## Update Compliance Prerequisites
+
 There are a few prerequisites for getting the most out of Update Compliance. 
-1)	Update Compliance is only compatible with Windows 10 devices – currently, the solution is only meant to be used with desktop devices (Windows 10 workstations and laptops). 
-2)	The solution requires Windows 10 telemetry to be enabled on all devices that are intended to be seen by the solution. These devices must have at least the basic level of telemetry enabled. To learn more about Windows telemetry, read this article on configuring Windows telemetry in your organization. 
-3)	The telemetry of your organization’s Windows devices must make it to Microsoft. Microsoft has specified endpoints for different aspects of telemetry, which must be whitelisted by your organization so the data can make it to Microsoft. The following table was taken from the article on telemetry endpoints and summarizes what each endpoint is used for:
-Service	Endpoint
-Connected User Experience and Telemetry component	v10.vortex-win.data.microsoft.com
-settings-win.data.microsoft.com
-Windows Error Reporting	watson.telemetry.microsoft.com
-Online Crash Analysis	oca.telemetry.microsoft.com
+1. Update Compliance is currently only compatible with Windows 10 devices. The solution is intended to be used with desktop devices (Windows 10 workstations and laptops). 
+2. The solution requires that Windows 10 telemetry is enabled on all devices that are intended to be displayed in the solution. These devices must have at least the basic level of telemetry enabled. To learn more about Windows telemetry, read this article on configuring Windows telemetry in your organization. 
+3. The telemetry of your organization’s Windows devices must make it to Microsoft. Microsoft has specified endpoints for different aspects of telemetry, which must be whitelisted by your organization so the data can make it to Microsoft. The following table was taken from the article on telemetry endpoints and summarizes what each endpoint is used for:
 
+    <TABLE BORDER=3>
+    <TR><TH>Service<TH>Endpoint
+    <TR><TD>Connected User Experience and Telemetry component	<TD>v10.vortex-win.data.microsoft.com
+    <BR>settings-win.data.microsoft.com
+    <TR><TD>Windows Error Reporting	<TD>watson.telemetry.microsoft.com
+    <TR><TD>Online Crash Analysis	<TD>oca.telemetry.microsoft.com
+    </TABLE>
 
-Add Update Compliance to Microsoft Operations Management Suite
+## Add Update Compliance to Microsoft Operations Management Suite
+
 Update Compliance is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premises and cloud environments. For more information about OMS, see Operations Management Suite overview. 
 
 If you are already using OMS, you’ll find Update Compliance in the Solutions Gallery. Select the Update Compliance tile in the gallery and then click Add on the solution's details page. Update Compliance is now visible in your workspace.
@@ -57,16 +61,17 @@ If you are not yet using OMS:
 
 After you are subscribed to OMS Update Compliance and your devices have a Commercial ID, you will begin receiving data. It will typically take 24 hours for the first data to begin appearing. The following section explains how to deploy your Commercial ID to your Windows 10 devices.
 
-Deploy your Commercial ID to your Windows 10 devices
+## Deploy your Commercial ID to your Windows 10 devices
+
 For your devices to show up in Windows Analytics: Update Compliance, they must be configured with your organization’s Commercial ID. This is so that Microsoft knows that a given device is a member of your organization and to feed that device’s data back to you. There are two primary methods for widespread deployment of your Commercial ID: using Microsoft’s Group Policy (GP) and using Microsoft Mobile Device Management (MDM). 
 
-Using Microsoft Group Policy (GP)
+- Using Microsoft Group Policy (GP)
 Deploying your Commercial ID using GP can be accomplished through Microsoft Group Policy Management Console (GPMC), or through an individual device’s Local Group Policy Editor.
-1)	From the user interface, navigate to Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds
-2)	Double-click Commercial ID
-3)	In the Options box, provide the Commercial ID GUID provided to you, and then click OK.
+    1. From the user interface, navigate to Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds
+    2. Double-click Commercial ID
+    3. In the Options box, provide the Commercial ID GUID provided to you, and then click OK.
 
-Using Microsoft Mobile Device Management (MDM)
+- Using Microsoft Mobile Device Management (MDM)
 Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under Provider/ProviderID/CommercialID. More information on deployment through MDM can be found here.  
 
 

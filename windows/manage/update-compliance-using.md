@@ -1,6 +1,6 @@
 ---
-title: Get started with Update Compliance (Windows 10)
-description: Explains how to get started with Update Compliance.
+title: Using Update Compliance (Windows 10)
+description: Explains how to begin usihg Update Compliance.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -8,9 +8,7 @@ ms.pagetype: deploy
 author: greg-lindsay
 ---
 
-# Using Update Compliance
-
-Use Update Compliance to monitor Windows Updates
+# Use Update Compliance to monitor Windows Updates
 
 This section details how to use Update Compliance to monitor update compliance and troubleshoot update failures across Windows 10 devices.
 Based on telemetry gathered from user devices, Update Compliance forms an all-up view of your organization, allowing you to maintain a high-level perspective on the progress and status of updates across all your organization’s devices.
@@ -25,7 +23,7 @@ Within Update Compliance, we have these primary blades:
 5.	CB, CBB, LTSB Deployment Status
 6.	List of Queries
 
-OS Update Overview
+## OS Update Overview
 
 The first blade of OMS Update Compliance is the General OS Update Overview blade. This blade is divided into three sections: Device Summary, Needs Attention Summary, and Device Update Summary.
 

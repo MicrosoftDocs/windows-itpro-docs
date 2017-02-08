@@ -1,6 +1,6 @@
 ---
-title: Get started with Update Compliance (Windows 10)
-description: Explains how to get started with Update Compliance.
+title: Update Compliance Architecture (Windows 10)
+description: Update Compliance workflow
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
