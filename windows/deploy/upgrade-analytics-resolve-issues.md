@@ -2,10 +2,10 @@
 title: Upgrade Analytics - Resolve application and driver issues (Windows 10)
 description: Describes how to resolve application and driver issues that can occur during an upgrade with Upgrade Analytics.
 ms.prod: w10
-author: MaggiePucciEvans
+author: greg-lindsay
 ---
 
-# Upgrade Analytics - Resolve application and driver issues
+# Upgrade Analytics - Step 2: Resolve app and driver issues
 
 This section of the Upgrade Analytics workflow reports application and driver inventory and shows you which applications have known issues, which applications have no known issues, and which drivers have issues. We identify applications and drivers that need attention and suggest fixes when we know about them.
 
@@ -15,10 +15,10 @@ Upgrade decisions include:
 
 | Upgrade decision   | When to use it    | Guidance    |
 |--------------------|-------------------|-------------|
-| Not reviewed       | When you start to investigate an application or a driver to determine upgrade readiness, change their upgrade decision to **Review in progress.** <br><br> <br>                                                                                                                                                                                      | Some applications are automatically assigned upgrade decisions based on information known to Microsoft. <br><br>All drivers are marked not reviewed by default.<br><br>                                                                                                                                                                                           |
-| Review in progress | When you start to investigate an application or a driver to determine upgrade readiness, change their upgrade decision to **Review in progress**.<br><br>Until you’ve determined that applications and drivers will migrate successfully or you’ve resolved blocking issues, leave the upgrade decision status as **Review in progress**. <br><br> | Once you’ve fixed any issues and validated that the application or driver will migrate successfully, change the upgrade decision to **Ready to upgrade**. <br>                                                                                                                                                                                                          |
-| Ready to upgrade   | Mark applications and drivers **Ready to upgrade** once you’ve resolved all blocking issues and you’re confident that they will upgrade successfully, or if you’ve decided to upgrade them as-is.                                                                                                                                                          | Applications with no known issues or with low installation rates are marked **Ready to upgrade** by default.<br><br>Be sure to review low install count applications for any business critical or important applications that are not yet upgrade-ready, despite their low installation rates. <br><br>All drivers are marked **Not reviewed** by default. <br> |
-| Won’t upgrade      | By default, no applications or drivers are marked **Won’t upgrade** because only you can make that determination. <br><br>Use **Won’t upgrade** for applications and drivers you don’t want to upgrade. <br>                                                                                                                                                        | If, during your investigation into an application or driver, you determine that they should not or cannot be upgraded, mark them **Won’t upgrade**. <br><br>                                                                                                                                                                                                                    |
+| Not reviewed       | All drivers are marked as Not reviewed by default.<br><br>Any app that has not been marked **Low install count** will also have an upgrade decision of **Not reviewed** by default. <br>                                                                                                                                                                                      | Apps you have not yet reviewed or are waiting to review later should be marked as **Not reviewed**. When you start to investigate an application or a driver to determine upgrade readiness, change their upgrade decision to **Review in progress**.<br><br>                                                                                                                                                                                           |
+| Review in progress | When you start to investigate an application or a driver to determine upgrade readiness, change its upgrade decision to **Review in progress**.<br><br>Until you’ve determined that applications and drivers will migrate successfully or you’ve resolved blocking issues, leave the upgrade decision status as **Review in progress**. <br><br> | Once you’ve fixed any issues and validated that the application or driver will migrate successfully, change the upgrade decision to **Ready to upgrade**. <br>                                                                                                                                                                                                          |
+| Ready to upgrade   | Mark applications and drivers **Ready to upgrade** once you’ve resolved all blocking issues and you’re confident that they will upgrade successfully, or if you’ve decided to upgrade them as-is.                                                                                                                                                          | Applications with no known issues and with low installation rates are marked **Ready to upgrade** by default.<br><br>In Step 1, you might have marked some of your apps as **Ignore**.  These should be marked as **Ready to upgrade**. Apps with low installation rates are marked as **Ready to upgrade** by default.  Be sure to review any low install count applications for any business critical or important applications that are not yet upgrade-ready, despite their low installation rates. <br> |
+| Won’t upgrade      | By default, no applications or drivers are marked **Won’t upgrade** because only you can make that determination. <br><br>Use **Won’t upgrade** for applications and drivers that you do not work on your target operating system, or that you are unable to upgrade.<br>                                                                                                                                                        | If, during your investigation into an application or driver, you determine that they should not or cannot be upgraded, mark them **Won’t upgrade**. <br><br>                                                                                                                                                                                                                    |
 
 The blades in the **Resolve issues** section are:
 
@@ -26,7 +26,7 @@ The blades in the **Resolve issues** section are:
 - Review applications with no known issues
 - Review drivers with known issues
 
-As you review applications with known issues, you can also see ISV support of applications for [Ready for Windows](https://www.readyforwindows.com/).
+As you review applications with known issues, you can also see ISV support statements or applications using [Ready for Windows](https://www.readyforwindows.com/).
 
 ## Review applications with known issues
 
@@ -41,13 +41,9 @@ Applications with issues known to Microsoft are listed, grouped by upgrade asses
 To change an application's upgrade decision:
 
 1. Select **Decide upgrade readiness** to view applications with issues. 
-
-2. In the table view, sort on **UpgradeAssessment** to group applications into **Attention needed** and **Fix available**. 
-
-3. Select **User changes** to change the upgrade decision for each application.
-
+2. In the table view, select an **UpgradeDecision** value. 
+3. Select **Decide upgrade readiness** to change the upgrade decision for each application.
 4. Select the applications you want to change to a specific upgrade decision and then then select the appropriate option from the **Select upgrade decision** list.
-
 5. Click **Save** when finished.  
 
 IMORTANT: Ensure that you have the most recent versions of the compatibility update and related KBs installed to get the most up-to-date compatibility information.

@@ -2,7 +2,7 @@
 title: Upgrade Analytics requirements (Windows 10)
 description: Provides requirements for Upgrade Analytics.
 ms.prod: w10
-author: MaggiePucciEvans
+author: greg-lindsay
 ---
 
 # Upgrade Analytics requirements
@@ -32,6 +32,10 @@ If you’re already using OMS, you’ll find Upgrade Analytics in the Solutions 
 If you are not using OMS, go to [the Upgrade Analytics page on Microsoft.com](https://www.microsoft.com/en-us/WindowsForBusiness/upgrade-analytics) and select **Sign up** to kick off the OMS onboarding process. During the onboarding process, you’ll create an OMS workspace and add the Upgrade Analytics solution to it.
 
 Important: You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory, use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
+
+## System Center Configuration Manager integration
+
+Upgrade Analytics can be integrated with your installation of Configuration Manager. For more information, see [Integrate Upgrade Analytics with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
 
 ## Telemetry and data sharing 
 
