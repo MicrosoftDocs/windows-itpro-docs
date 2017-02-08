@@ -2,7 +2,7 @@
 title: Manage Windows upgrades with Upgrade Analytics (Windows 10)
 description: Provides an overview of the process of managing Windows upgrades with Upgrade Analytics.
 ms.prod: w10
-author: MaggiePucciEvans
+author: greg-lindsay
 ---
 
 # Manage Windows upgrades with Upgrade Analytics
