@@ -756,7 +756,7 @@
 ##### [Remove file from quarantine](investigate-files-windows-defender-advanced-threat-protection.md#remove-file-from-quarantine)
 ##### [Block files in your network](investigate-files-windows-defender-advanced-threat-protection.md#block-files-in-your-network)
 ##### [Check activity details in Action center](investigate-files-windows-defender-advanced-threat-protection.md#check-activity-details-in-action-center)
-##### [Deep analysis]((investigate-files-windows-defender-advanced-threat-protection.md#deep-analysis)
+##### [Deep analysis](investigate-files-windows-defender-advanced-threat-protection.md#deep-analysis)
 ###### [Submit files for analysis](investigate-files-windows-defender-advanced-threat-protection.md#submit-files-for-analysis)
 ###### [View deep analysis reports](investigate-files-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](investigate-files-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
