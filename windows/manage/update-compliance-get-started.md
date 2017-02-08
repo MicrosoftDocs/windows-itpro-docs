@@ -42,7 +42,7 @@ If you are not yet using OMS, use the following steps to subscribe to OMS Update
 
 <TABLE>
 <TR><TH>Step<TH>Procedure<TH>Example (click image to view)
-<TR><TD VALIGN=top>1<TD VALIGN=top>Go to [Operations Management Suite’s page](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.<TD><A HREF="images/uc-02.png" onClick="MyWindow=window.open('images/uc-02.png','MyWindow','width=60,heig‌​ht=40'); return false;"><img src="images/uc-02.png" width="213"></A>
+<TR><TD VALIGN=top>1<TD VALIGN=top>Go to [Operations Management Suite’s page](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.<TD><A HREF="images/uc-02.png" onClick="MyWindow=window.open('images/uc-02.png','MyWindow',resizable=yes); return false;"><img src="images/uc-02.png" width="213"></A>
 </TABLE>
 
 1.	Go to [Operations Management Suite’s page](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.
