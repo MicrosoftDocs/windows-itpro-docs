@@ -2,7 +2,7 @@
 title: Troubleshoot Upgrade Analytics (Windows 10)
 description: Provides troubleshooting information for Upgrade Analytics.
 ms.prod: w10
-author: MaggiePucciEvans
+author: greg-lindsay
 ---
 
 # Troubleshoot Upgrade Analytics
@@ -13,7 +13,7 @@ If you still don’t see data in Upgrade Analytics, follow these steps:
 
 1.  Download and extract UpgradeAnalytics.zip. Ensure the “Diagnostics” folder is included.
 
-2.  Edit the script as described in [Run the Upgrade Analytics deployment script](upgrade-analytics-get-started.md#run-the-upgrade-analytics-deployment-script).
+2.  Edit the script as described in [Upgrade Analytics deployment script](upgrade-analytics-deployment-script.md).
 
 3.  Check that isVerboseLogging is set to $true.
 

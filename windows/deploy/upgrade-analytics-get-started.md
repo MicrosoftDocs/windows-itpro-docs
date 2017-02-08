@@ -10,22 +10,31 @@ author: greg-lindsay
 
 # Get started with Upgrade Analytics
 
-This topic explains how to obtain and set up Upgrade Analytics components. If you haven’t done so already, see [Upgrade Analytics requirements](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-requirements) for information about requirements for using Upgrade Analytics. Also, check out the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/UpgradeAnalytics) for new announcements and helpful tips for using Upgrade Analytics.  
+This topic explains how to obtain and configure Upgrade Analytics for your organization. 
 
-You can use Upgrade Analytics to plan and manage your upgrade project end to end. After you’ve established communications between user computers and Microsoft, Upgrade Analytics collects computer, application, and driver data for analysis. This data is used to identify compatibility issues that can block your upgrade and to suggest fixes that are known to Microsoft.
+You can use Upgrade Analytics to plan and manage your upgrade project end-to-end. Upgrade Analytics works by establishing communications between computers in your organization and Microsoft. Upgrade Analytics collects computer, application, and driver data for analysis. This data is used to identify compatibility issues that can block your upgrade and to suggest fixes that are known to Microsoft.
+
+Before you begin, consider reviewing the following helpful information:<BR>
+    - [Upgrade Analytics requirements](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-requirements): Provides detailed requirements to use Upgrade Analytics.<BR>
+    - [Upgrade Analytics blog](https://blogs.technet.microsoft.com/UpgradeAnalytics): Contains announcements of new features and provides helpful tips for using Upgrade Analytics.
+
+>If you are using System Center Configuration Manager, also check out information about how to integrate Upgrade Analytics with Configuration Manager: [Integrate Upgrade Analytics with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
+
+When you are ready to begin using Upgrade Analytics, perform the following steps:
+
+1. Review [data collection and privacy](#data-collection-and-privacy) information.
+2. [Add Upgrade Analytics to OMS](#add-upgrade-analytics-to-operations-management-suite).
+3. [Enable data sharing](#enable-data-sharing).
+4. [Deploy required updates](#deploy-the-compatibility-update-and-related-kbs) to computers, and validate using a pilot deployment.
+5. [Deploy Upgrade Analytics at scale](#deploy-upgrade-analytics-at-scale).
+
+## Data collection and privacy 
 
 To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what telemetry data Microsoft collects and how that data is used and protected by Microsoft, see the following topics:
 
 - [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization)
 - [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 - [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
-
-To configure Upgrade Analytics, you’ll need to:
-
--   Add the Upgrade Analytics solution to a workspace in the Operations Management Suite portal
--   Establish communications and enable data sharing between your organization and Microsoft
-
-Each task is explained in detail in the following sections.
 
 ## Add Upgrade Analytics to Operations Management Suite
 
@@ -49,11 +58,7 @@ If you are not using OMS:
 
 2.  Click the **Upgrade Analytics** tile to configure the solution. The **Settings Dashboard** opens.
 
-## Enable data sharing between your organization and Upgrade Analytics
-
-After you’ve signed in to Operations Management Suite and added the Upgrade Analytics solution to your workspace, complete the following tasks to establish communication and enable data sharing between user computers, Microsoft secure data centers, and Upgrade Analytics.
-
-## Generate your commercial ID key
+### Generate your commercial ID key
 
 Microsoft uses a unique commercial ID to map information from user computers to your OMS workspace. Generate your commercial ID key in OMS and then deploy it to user computers.
 
@@ -65,7 +70,7 @@ Microsoft uses a unique commercial ID to map information from user computers to 
 
     >**Important**<br> Regenerate a commercial ID key only if your original ID key can no longer be used. Regenerating a commercial ID key resets the data in your workspace for all solutions that use the ID. Additionally, you’ll need to deploy the new commercial ID key to user computers again.
 
-## Subscribe to Upgrade Analytics
+### Subscribe to Upgrade Analytics
 
 For Upgrade Analytics to receive and display upgrade readiness data from Microsoft, subscribe your OMS workspace to Upgrade Analytics.
 
@@ -73,7 +78,7 @@ For Upgrade Analytics to receive and display upgrade readiness data from Microso
 
 1.  Click **Overview** on the Settings Dashboard to return to your OMS workspace portal. The Upgrade Analytics tile now displays summary data. Click the tile to open Upgrade Analytics.
 
-## Whitelist select endpoints
+## Enable data sharing
 
 To enable data sharing, whitelist the following endpoints. Note that you may need to get approval from your security group to do this.
 
@@ -103,7 +108,17 @@ If you are planning to enable IE Site Discovery, you will need to install a few 
 |----------------------|-----------------------------------------------------------------------------|
 | [Review site discovery](upgrade-analytics-review-site-discovery.md)         | [KB3080149](http://www.catalog.update.microsoft.com/Search.aspx?q=3080149)<br>Updates the Diagnostic and Telemetry tracking service to existing devices. This update is only necessary on Windows 7 and Windows 8.1 devices. <br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br><br>Install the latest [Windows Monthly Rollup](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup). This functionality has been included in Internet Explorer 11 starting with the July 2016 Cumulative Update.  |
 
+### Deploy the Upgrade Analytics deployment script
 
+You can use the Upgrade Analytics deployment script to automate and verify your deployment. 
+
+See [Upgrade Analytics deployment script](upgrade-analytics-deployment-script.md) for information on obtaining and running the script, and for a description of the error codes that can be displayed.
+
+>After data is sent from computers to Microsoft, it generally takes 48 hours for the data to populate in Upgrade Analytics. The compatibility update KB takes several minutes to run. If the KB does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Upgrade Analytics. For this reason, you can expect most your computers to be populated in OMS in about 1-2 weeks after deploying the KB and configuration to user computers.
+
+## Deploy Upgrade Analytics at scale
+
+When you have completed a pilot deployment, you are ready to automate data collection and distribute the deployment script to the remaining computers in your organization.
 
 ### Automate data collection
 
@@ -113,6 +128,7 @@ To ensure that user computers are receiving the most up to date data from Micros
 -   Schedule the Upgrade Analytics deployment script to automatically run so that you don’t have to manually initiate an inventory scan each time the compatibility update KBs are updated. Computers are re-scanned only when the compatibility KBs are updated, so if your inventory changes significantly between KB releases you won’t see the changes in Upgrade Analytics until you run the script again.
 -   Schedule monthly user computer scans to view monthly active computer and usage information.
 
+<<<<<<< HEAD
 ## Run the Upgrade Analytics deployment script
 
 To automate many of the steps outlined above and to troubleshoot data sharing issues, you can run the [Upgrade Analytics deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409), developed by Microsoft.
@@ -127,7 +143,7 @@ The Upgrade Analytics deployment script does the following:
 
 3.  Checks whether the computer has a pending restart.  
 
-4.  Verifies that the latest version of KB package 10.0.x is installed (version 10.0.14348 or later is required, but version 10.0.14913 or later is recommended).
+4.  Verifies that the latest version of KB package 10.0.x is installed (version 10.0.14913 or later is required).
 
 5.  If enabled, turns on verbose mode for troubleshooting.
 
@@ -164,50 +180,8 @@ To run the Upgrade Analytics deployment script:
     > *IEOptInLevel = 3 Data collection is enabled for all sites*
 
 4.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script.  If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
+=======
+### Distribute the deployment script at scale
+>>>>>>> vso-10281673
 
-The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered.
-
-<div style='font-size:10.0pt'>
-
-<TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TH BGCOLOR="#a0e4fa">Exit code<TH BGCOLOR="#a0e4fa">Meaning<TH BGCOLOR="#a0e4fa">Suggested fix
-<TR><TD>0<TD>Success<TD>
-<TR><TD>1<TD>Unexpected error occurred while executing the script<TD> The files in the deployment script are likely corrupted.  Download the [latest script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) from the download center and try again.
-<TR><TD>2<TD>Error when logging to console. $logMode = 0.<TD> Try changing the $logMode value to **1** and try again.
-<TR><TD>3<TD>Error when logging to console and file. $logMode = 1.<TD>Verify that you have set the logPath parameter in RunConfig.bat, and that the configuration script has access to connect and write to this location.
-<TR><TD>4<TD>Error when logging to file. $logMode = 2.<TD>Verify that you have set the logPath parameter in RunConfig.bat, and that the configuration script has access to connect and write to this location.
-<TR><TD>5<TD>Error when logging to console and file. $logMode = unknown.<TD>Verify that you have set the logPath parameter in RunConfig.bat, and that the configuration script has access to connect and write to this location.
-<TR><TD>6<TD>The commercialID parameter is set to unknown. Modify the script.<TD>Set the value for CommercialID in runconfig.bat file.
-<TR><TD>8<TD>Failure to create registry key path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection. <TD> Verify that the configuration script has access to this location.
-<TR><TD>9<TD>Error when writing CommercialId to registry.<TD>Verify that the configuration script has access to this location.
-<TR><TD>10<TD>Error when writing CommercialDataOptIn to registry.<TD>Verify that the configuration script has access to this location.
-<TR><TD>11<TD>Function -SetupCommercialId: Unexpected failure.<TD>Verify that the configuration script has access to this location.
-<TR><TD>12<TD>Can’t connect to Microsoft – Vortex. Check your network/proxy settings.<TD>Verify that the required endpoints are whitelisted correctly.
-<TR><TD>13<TD>Can’t connect to Microsoft – setting. <TD>Verify that the required endpoints  are whitelisted correctly.
-<TR><TD>14<TD>Can’t connect to Microsoft – compatexchange.<TD> Verify that the required endpoints are whitelisted.
-<TR><TD>15<TD>Error connecting to Microsoft:Unexpected failure.<TD>
-<TR><TD>16<TD>Machine requires reboot.<TD> The reboot is required to complete the installation of the compatibility update and related KBs. Reboot the machine before running the Upgrade Analytics deployment script.
-<TR><TD>17<TD>Function -CheckRebootRequired: Unexpected failure.<TD>The reboot is required to complete the installation of the compatibility update and related KBs. Reboot the machine before running the Upgrade Analytics deployment script.
-<TR><TD>18<TD>Outdated compatibility update KB package. Update via Windows Update/WSUS.<TD>
-The configuration script detected a version of the Compatibility update module that is older than the minimum required to correctly collect the data required by Upgrade Analytics solution. Use the latest version of the Compatibility update for Windows 7 SP1/Windows 8.1.
-<TR><TD>19<TD>The compatibility update failed with unexpected exception.<TD> The files in the deployment script are likely corrupted.  Download the [latest script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) from the download center and try again.
-<TR><TD>20<TD>Error writing RequestAllAppraiserVersions registry key.<TD> This registry key is required for data collection to work correctly. Verify that the configuration script has access to this location.
-<TR><TD>21<TD>Function – SetRequestAllAppraiserVersions: Unexpected failure.<TD>This registry key is required for data collection to work correctly. Verify that the configuration script has access to this location.
-<TR><TD>22<TD>RunAppraiser failed with unexpected exception.<TD> Check %windir%\System32 directory for a file called CompatTelRunner.exe.  If the file does not exist, reinstall the required compatibility updates which include this file, and check your organization group policy to make sure it does not remove this file.
-<TR><TD>23<TD>Error finding system variable %WINDIR%.<TD> Make sure that this environment variable is available on the machine.
-<TR><TD>24<TD>SetIEDataOptIn failed when writing IEDataOptIn to registry.<TD> Verify that the deployment script in running in a context that has access to the registry key.
-<TR><TD>25<TD>SetIEDataOptIn failed with unexpected exception.<TD> The files in the deployment script are likely corrupted.  Download the latest script from the [download center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and try again.
-<TR><TD>26<TD>The operating system is Server or LTSB SKU.<TD> The script does not support Server or LTSB SKUs.
-<TR><TD>27<TD>The script is not running under System account.<TD>The Upgrade Analytics configuration script must be run as system.  
-<TR><TD>28<TD>Could not create log file at the specified logPath.<TD> Make sure the deployment script has access to the location specified in the logPath parameter.
-<TR><TD>29<TD> Connectivity check failed for proxy authentication. <TD> Install the cumulative updates on the machine and enable the `DisableEnterpriseAuthProxy` authentication proxy setting. The `DisableEnterpriseAuthProxy` setting is enabled by default for Windows 7.  For Windows 8.1 machines, set the `DisableEnterpriseAuthProxy` setting to **0** (not disabled). For more information on authentication proxy support, see [this blog post](https://go.microsoft.com/fwlink/?linkid=838688).
-<TR><TD>30<TD>Connectivity check failed. Registry key property `DisableEnterpriseAuthProxy` is not enabled.<TD> The `DisableEnterpriseAuthProxy` setting is enabled by default for Windows 7.  For Windows 8.1 machines, set the `DisableEnterpriseAuthProxy` setting to **0** (not disabled). For more information on authentication proxy support, see [this blog post](https://go.microsoft.com/fwlink/?linkid=838688).
-<TR><TD>31<TD>There is more than one instance of the Upgrade Analytics data collector running at the same time on this machine. <TD>  Use the Windows Task Manager to check if CompatTelRunner.exe is running, and wait until it has completed to rerun the script.  
-**The Upgrade Analytics task is scheduled to run daily at 3 a.m.**
-</TABLE>
-
-</div>
-
-## Seeing data from computers in Upgrade Analytics
-
-After data is sent from computers to Microsoft, it generally takes 48 hours for the data to populate in Upgrade Analytics. The compatibility update KB takes several minutes to run. If the KB does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Upgrade Analytics. For this reason, you can expect most your computers to be populated in OMS in about 1-2 weeks after deploying the KB and configuration to user computers.
+Use a software distribution system such as System Center Configuration Manager to distribute the Upgrade Analytics deployment script at scale. For more information, see the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/).
