@@ -2,6 +2,8 @@
 
 This topic provides an overview of software and firmware threats faced in the current security landscape, and the mitigations that Windows 10 offers in response to these threats.
 
+For information about related types of protection offered by Windows and Office, see [Related topics](#related-topics).
+
 | **Section**  | **Contents** |
 |--------------|-------------------------|
 | [The security threat landscape](#the-security-threat-landscape) | Describes the current nature of the security threat landscape, and outlines the basic ways that Windows 10 is designed to mitigate against software exploits and other similar threats.  |
@@ -14,8 +16,6 @@ This topic focuses on pre-breach mitigations aimed at device protection and thre
 <img src="images/threat-mitigations-pre-breach-post-breach-conceptual.png" alt="Types of defenses in Windows 10" width="1052" height="241" />
 
 **Figure 1.&nbsp;&nbsp;Device protection and threat resistance as part of the Windows 10 security defenses**
-
-For links to other areas of protection offered by Windows and Office, see [Related topics](#related-topics).
 
 ## The security threat landscape
 
@@ -369,3 +369,13 @@ The Converter feature is currently available as a Windows PowerShell cmdlet, **S
 Microsoft Consulting Services (MCS) and Microsoft Support/Premier Field Engineering (PFE) offer enterprise deliveries for EMET, support for EMET, and EMET-related reporting and auditing products such as the EMET Enterprise Reporting Service (ERS). For any enterprise customers who use such products today or who are interested in similar capabilities, we recommend evaluating [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) (ATP).
 
 ## Related topics
+
+- [Keep Windows 10 secure](index.md)
+- [Security technologies in Windows 10](security-technologies.md)
+- [Security and Assurance in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/security/security-and-assurance)
+- [Windows Defender Advanced Threat Protection (ATP) - resources](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp)
+- [Windows Defender Advanced Threat Protection (ATP) - documentation](windows-defender-advanced-threat-protection.md)
+- [Exchange Online Advanced Threat Protection Service Description](https://technet.microsoft.com/library/exchange-online-advanced-threat-protection-service-description.aspx)
+- [Office 365 Advanced Threat Protection](https://products.office.com/en-us/exchange/online-email-threat-protection)
+
+
