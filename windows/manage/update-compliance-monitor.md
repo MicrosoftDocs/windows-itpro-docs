@@ -27,12 +27,27 @@ Update Compliance provides the following:
 - Powerful built-in [log analytics](https://www.microsoft.com/en-us/cloud-platform/insight-and-analytics?WT.srch=1&WT.mc_id=AID529558_SEM_%5B_uniqid%5D&utm_source=Bing&utm_medium=CPC&utm_term=log%20analytics&utm_campaign=Hybrid_Cloud_Management) to create useful custom queries.
 - Cloud-connected access utilizing Windows 10 telemetry means no need for new complex, customized infrastructure.
 
+## Update Compliance Architecture
+ 
+The Update Compliance data flow can be summarized by the following five step process:
+
+**(1)** User computers send telemetry data to a secure Microsoft data center using the Microsoft Data Management Service.<BR>
+**(2)** Telemetry data is analyzed by the Update Compliance Data Service.<BR>
+**(3)** Telemetry data is pushed from the Update Compliance Data Service to your OMS workspace.<BR>
+**(4)** Telemetry data is available in the Update Compliance solution.<BR>
+**(5)** You are able to monitor and troubleshoot Windows updates on your network.<BR>
+
+See the following diagram:
+
+![Update Compliance architecture](images/uc-01.png)
+
+>This process assumes that Windows telemetry is enabled and devices are assigned your Commercial ID.
+
 ## In this guide
 
 See the following topics for more information about the Update Compliance solution:
 
 - [Get started with Update Compliance](update-compliance-get-started.md): How to add Update Compliance to your environment.
 - [Using Update Compliance](update-compliance-using.md): How to begin using Update Compliance.
-- [Update Compliance architecture](update-compliance-architecture.md): A summary of the Update Compliance data flow.
  
 
