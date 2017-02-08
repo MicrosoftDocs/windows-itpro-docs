@@ -9,14 +9,18 @@ author: greg-lindsay
 ---
 
 # Update Compliance Architecture
+ 
+The Update Compliance data flow consists of five steps:
 
-The following diagram summarizes the general flow of data between your devices and Update Compliance after enabling Windows telemetry on your Windows 10 devices and ensuring that they are assigned your Commercial ID.
+>The following data flow requires that Windows telemetry is enabled, and your Commercial ID is assigned on Windows 10 devices.
 
-**(1)** user computers send computer, application and driver telemetry data to a secure Microsoft data center through the Microsoft Data Management Service.<BR>
-**(2)** After you configure Update Compliance, telemetry data is analyzed by the Update Compliance Service.<BR>
-**(3)** and pushed to your OMS workspace.<BR>
-**(4)** You can then use the Update Compliance solution.<BR>
-**(5)** to view Update compliance, track update deployment progress and troubleshoot matters that need your attention.<BR>
+**(1)** User computers send telemetry data to a secure Microsoft data center using the Microsoft Data Management Service.<BR>
+**(2)** Telemetry data is analyzed by the Update Compliance Data Service.<BR>
+**(3)** Telemetry data is pushed from the Update Compliance Data Service to your OMS workspace.<BR>
+**(4)** Telemetry data is available in the Update Compliance solution.<BR>
+**(5)** You can monitor and troubleshoot update deployment progress using the Update Compliance solution.<BR>
+
+The following diagram illustrates this process:
 
 ![Update Compliance architecture](images/uc-01.png)
 
