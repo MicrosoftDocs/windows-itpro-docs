@@ -42,12 +42,12 @@ If you are not yet using OMS, use the following steps to subscribe to OMS Update
 
 <TABLE>
 <TR><TH>Step<TH>Procedure<TH>Example (click image to view)
-<TR><TD VALIGN=top>1<TD VALIGN=top>Go to [Operations Management Suite’s page](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.<TD><A HREF="images/uc-02.png" onClick="MyWindow=window.open('images/uc-02.png','MyWindow'); return false;"><img src="images/uc-02.png" width="213"></A>
+<TR><TD VALIGN=top>1<TD VALIGN=top>Go to [Operations Management Suite’s page](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.<TD><A HREF="images/uc-02.png" onClick="MyWindow=window.open('images/uc-02.png','MyWindow','width=600,heig‌​ht=400'); return false;"><img src="images/uc-02.png" width="213"></A>
 </TABLE>
 
 1.	Go to [Operations Management Suite’s page](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.
 
-![OMS](images/uc-02.png)
+
 
 2.	Sign in to Operations Management Suite (OMS). You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
 3.	Create a new OMS workspace. 
