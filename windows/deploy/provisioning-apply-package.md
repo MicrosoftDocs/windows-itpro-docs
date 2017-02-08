@@ -94,7 +94,7 @@ On a desktop computer, navigate to **Settings** > **Accounts** > **Access work o
     ![Is this package from a source you trust](images/package-trust.png)
 
 
-#
+
 
 
 ## Learn more

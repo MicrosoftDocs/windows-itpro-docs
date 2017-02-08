@@ -125,6 +125,60 @@ To ensure that user computers are receiving the most up to date data from Micros
 - Schedule the Upgrade Analytics deployment script to automatically run so that you don’t have to manually initiate an inventory scan each time the compatibility update KBs are updated. Computers are re-scanned only when the compatibility KBs are updated, so if your inventory changes significantly between KB releases you won’t see the changes in Upgrade Analytics until you run the script again.
 - Schedule monthly user computer scans to view monthly active computer and usage information.
 
+<<<<<<< HEAD
+## Run the Upgrade Analytics deployment script
+
+To automate many of the steps outlined above and to troubleshoot data sharing issues, you can run the [Upgrade Analytics deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409), developed by Microsoft.
+
+> The following guidance applies to version 11.11.16 or later of the Upgrade Analytics deployment script. If you are using an older version, please download the latest from [Download Center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409).
+
+The Upgrade Analytics deployment script does the following:
+
+1.  Sets commercial ID key + CommercialDataOptIn + RequestAllAppraiserVersions keys.
+
+2.  Verifies that user computers can send data to Microsoft.
+
+3.  Checks whether the computer has a pending restart.  
+
+4.  Verifies that the latest version of KB package 10.0.x is installed (version 10.0.14913 or later is required).
+
+5.  If enabled, turns on verbose mode for troubleshooting.
+
+6.  Initiates the collection of the telemetry data that Microsoft needs to assess your organization’s upgrade readiness.
+
+7.  If enabled, displays the script’s progress in a cmd window, providing you immediate visibility into issues (success or fail for each step) and/or writes to log file.
+
+To run the Upgrade Analytics deployment script:
+
+1.  Download the [Upgrade Analytics deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract UpgradeAnalytics.zip. Inside, there are two folders: Pilot and Deployment. The Pilot folder contains advanced logging that can help troubleshoot issues and is intended to be run from an elevated command prompt. The Deployment folder offers a lightweight script intended for broad deployment through ConfigMgr or other software deployment system. We recommend manually running the Pilot version of the script on 5-10 machines to verify that everything is configured correctly.  Once you have confirmed that data is flowing successfully, proceed to run the Deployment version throughout your organization.
+
+2.  Edit the following parameters in RunConfig.bat:
+
+    1.  Provide a storage location for log information. You can store log information on a remote file share or a local directory. If the script is blocked from creating the log file for the given path, it creates the log files in the drive with the Windows directory. Example: %SystemDrive%\\UADiagnostics
+
+    2.  Input your commercial ID key. This can be found in your OMS workspace under Settings -> Connected Sources -> Windows Telemetry.
+
+    3.  By default, the script sends log information to both the console and the log file. To change the default behavior, use one of the following options:
+
+        > *logMode = 0 log to console only*
+>
+        > *logMode = 1 log to file and console*
+>
+        > *logMode = 2 log to file only*
+
+3.  To enable Internet Explorer data collection, set AllowIEData to IEDataOptIn. By default, AllowIEData is set to Disable. Then use one of the following options to determine what Internet Explorer data can be collected:
+
+    > *IEOptInLevel = 0 Internet Explorer data collection is disabled*
+    >
+    > *IEOptInLevel = 1 Data collection is enabled for sites in the Local intranet + Trusted sites + Machine local zones*
+    >
+    > *IEOptInLevel = 2 Data collection is enabled for sites in the Internet + Restricted sites zones*
+    >
+    > *IEOptInLevel = 3 Data collection is enabled for all sites*
+
+4.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script.  If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
+=======
 ### Distribute the deployment script at scale
+>>>>>>> vso-10281673
 
 Use a software distribution system such as System Center Configuration Manager to distribute the Upgrade Analytics deployment script at scale. For more information, see the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/).
