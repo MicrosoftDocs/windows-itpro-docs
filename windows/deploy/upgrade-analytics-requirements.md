@@ -45,19 +45,13 @@ See [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields
 
 **Whitelist telemetry endpoints.** To enable telemetry data to be sent to Microsoft, you’ll need to whitelist the following Microsoft telemetry endpoints on your proxy server or firewall. You may need to get approval from your security group to do this.
 
-`https://v10.vortex-win.data.microsoft.com/collect/v1`
-
-`https://vortex-win.data.microsoft.com/health/keepalive`
-
-`https://settings-win.data.microsoft.com/settings`
-
-`https://vortex.data.microsoft.com/health/keepalive`
-
-`https://settings.data.microsoft.com/qos`
-
-`https://go.microsoft.com/fwlink/?LinkID=544713`
-
-`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc/extended`
+`https://v10.vortex-win.data.microsoft.com/collect/v1`<BR>
+`https://vortex-win.data.microsoft.com/health/keepalive`<BR>
+`https://settings-win.data.microsoft.com/settings`<BR>
+`https://vortex.data.microsoft.com/health/keepalive`<BR>
+`https://settings.data.microsoft.com/qos`<BR>
+`https://go.microsoft.com/fwlink/?LinkID=544713`<BR>
+`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc/extended`<BR>
 
 >**Note** The compatibility update KB runs under the computer’s system account and does not support user authentication in this release.
 
