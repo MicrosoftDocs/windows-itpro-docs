@@ -79,7 +79,8 @@ The following steps assume that you have completed all the required steps in [Be
     <td>Type in the name of the client property file. It must match the client property file.</td>
     </tr>
     <td>Events URL</td>
-    <td>Depending on the location of your datacenter, select either the EU or the US URL: </br></br> **For EU**:  https://<i></i>wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts </br>**For US:** https://<i></i>wdatp-alertexporter-us.securitycenter.windows.com/api/alerts</td>
+    <td>Depending on the location of your datacenter, select either the EU or the US URL: </br></br> **For EU**:  https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME
+ </br>**For US:** https://<i></i>wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME</td>
     <tr>
     <td>Authentication Type</td>
     <td>OAuth 2</td>

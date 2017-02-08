@@ -4,7 +4,7 @@ description: In Windows 10, Microsoft has streamlined servicing to make operatin
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
@@ -54,7 +54,11 @@ See [Build deployment rings for Windows 10 updates](waas-deployment-rings-window
 
 ## Video: An overview of Windows as a service
 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/MLc4-Suv0LU" frameborder="0" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MLc4-Suv0LU" frameborder="0" allowfullscreen></iframe> 
+ 
+## Learn more
+
+[Adopting Windows as a service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
 
 
 ## Related topics
