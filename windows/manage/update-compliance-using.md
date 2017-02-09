@@ -128,7 +128,7 @@ Microsoft has developed terms to help specify the state of a given device for ho
 - Not up-to-date
 
 
-See the **Device Update Summary** description under [OS Update Overview](#os-update-overview) in this guide for definitions of these terms. 
+See the **Update Status Summary** description under [OS Update Overview](#os-update-overview) in this guide for definitions of these terms. 
 
 
 The Overall Feature Update Status blade focuses around whether or not your devices are considered Current. See the following example:
