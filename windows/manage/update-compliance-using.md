@@ -185,6 +185,7 @@ This blade provides more detail on the deployment process for the update in the 
 
 ![Quality Update Detailed Deployment Status](images/uc-20.png)
 
+
 >Devices that are not managed using Windows Update (Windows Update for Business or otherwise) will not have detailed deployment information. 
 
 The following table provides a list of the detailed deployment states a device can report:
