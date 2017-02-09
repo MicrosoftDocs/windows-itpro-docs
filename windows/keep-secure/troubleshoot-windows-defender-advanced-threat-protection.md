@@ -26,8 +26,11 @@ This section addresses issues that might arise as you use the Windows Defender A
 If you encounter a server error when trying to access the service, you’ll need to change your browser cookie settings.
 Configure your browser to allow cookies.
 
-### No data is shown on the portal
-If no data is displayed on the Dashboard portal even if no errors were encountered in the portal logs or in the browser console, you'll need to whitelist the threat intelligence, data access, and detonation endpoints that also use this protocol.
+### Data is missing on the portal
+If data is missing on the Windows Defender ATP portal it’s possible that proxy settings are blocking it.
+
+Make sure that `*.securitycenter.windows.com` is included the proxy whitelist.
+
 
 > [!NOTE]
 > You must use the HTTPS protocol when adding the following endpoints.
