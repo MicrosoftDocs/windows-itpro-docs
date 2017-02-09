@@ -36,15 +36,15 @@ Update Compliance has the following primary blades:
 
 ## OS Update Overview
 
-The first blade of OMS Update Compliance is the General OS Update Overview blade. 
+The first blade of OMS Update Compliance is the General **OS Update Overview** blade: 
+
+![OS Update Overview](images/uc-11.png)
 
 
 This blade is divided into three sections: 
 - Device Summary: 
 - Needs Attention Summary
 - Device Update Summary
-
-![OS Update Overview](images/uc-11.png)
 
 The **Device Summary** displays the total number of devices in your organization. These devices have the commercial ID configured, telemetry enabled, and have sent telemetry to Microsoft within the last 28 days. The tile also shows the devices that Need Attention. 
 
@@ -145,7 +145,9 @@ Devices are evaluated by OS Version (e.g., 1607) and the count of how many are C
 
 ## CB, CBB, LTSB Deployment Status
 
-Following the overview with respect to how current your organization’s devices are, there are three tables that show feature update deployment for all devices. The devices are split up by which branch they are on, as this directly impacts whether they are supported (for example, 1607 may be supported under CBB, but not under CB). This allows you a quick glance at how deployment is progressing across your organization with respect to feature updates. See the following example:
+Following the overview with respect to how current your organization’s devices are, there are three tables that show feature update deployment for all devices. The devices are split up by which branch they are on, as this directly impacts whether they are supported (for example, 1607 may be supported under CBB, but not under CB). This allows you a quick glance at how deployment is progressing across your organization with respect to feature updates. 
+
+See the following example:
 
 
 ![CB deployment status](images/uc-16.png)
@@ -159,12 +161,12 @@ The three tables break down devices by Feature update. For each OS version, the 
 <TR><TD>Feature Update<TD>A concatenation of servicing branch (CB, CBB, LTSB) and OS Version (e.g., 1607)
 <TR><TD>Installed<TD>The number of devices that have reported to be on the given servicing train and feature update.
 <TR><TD>In progress<TD>The number of devices that have reported to be at some stage in the installation process for the given feature update.
-<BR><BR>Example: Device X running CB 1507 could be installing CB 1607. In this example, X would count as both “Installed” for “CB 1507” and “In Progress” for “CB 1607”. 
+<BR><BR>Example: Device X running CB 1507 could be installing CB 1607. In this example, X would count as both **Installed** for **CB 1507** and **In Progress** for **CB 1607**. 
 <TR><TD>Scheduled next 7 days<TD>The total number of devices that are set to have a deferral period expire within 7 days, and after that deferral period expires are targeted to install the given update.
-<BR><BR>Example: Device Y running CB 1507 could be scheduled to install CB 1607 in 5 days. In this example, X would count as both “Installed” for “CB 1507” and “Scheduled next 7 days” for “CB 1607”
-<TR><TD>Update Failed<TD>The total number of devices that were “In progress” with the installation for the given feature update, but encountered a failure.
-<BR><BR>Example: Device X running CB 1507 could be installing CB 1607. X then encounters an error during installation. In this example, X would count as both “Installed” for “CB 1507” and “Update failed” for “CB 1607”, but not as “In progress” for “CB 1607”.
-<TR><TD>Status Unknown<TD>For devices not using Windows Update to get updates, some information on deployment progress cannot be known. It is possible to know the current installed Feature Update for a device, but not which devices are “In Progress”, “Scheduled next 7 days”, or devices with “Update Failed”.
+<BR><BR>Example: Device Y running CB 1507 could be scheduled to install CB 1607 in 5 days. In this example, X would count as both **Installed** for **CB 1507** and **Scheduled next 7 days** for **CB 1607**
+<TR><TD>Update Failed<TD>The total number of devices that were **In progress** with the installation for the given feature update, but encountered a failure.
+<BR><BR>Example: Device X running CB 1507 could be installing CB 1607. X then encounters an error during installation. In this example, X would count as both **Installed** for **CB 1507** and **Update failed** for **CB 1607**, but not as **In progress** for **CB 1607**.
+<TR><TD>Status Unknown<TD>For devices not using Windows Update to get updates, some information on deployment progress cannot be known. It is possible to know the current installed Feature Update for a device, but not which devices are **In Progress**, **Scheduled next 7 days**, or devices with **Update Failed**.
 <BR><BR>Devices that Update Compliance knows belongs to your organization, but it does not know update failures or installation progress, will be counted here. 
 </TABLE>
 
@@ -183,7 +185,7 @@ The build summary blade attempts to summarize the most important data points to 
  
 ### Quality Update Deferral Configurations
 
-The next blade is the Deferral configuration blade, which shows the WUFB Deferral configurations for all devices that are using WUFB and are reporting to Update Compliance. If no information can be gathered from a device or it is not configured to use WUFB, it will show up as “Not configured (-1)”. See the following example:
+The next blade is the Deferral configuration blade, which shows the WUFB Deferral configurations for all devices that are using WUFB and are reporting to Update Compliance. If no information can be gathered from a device or it is not configured to use WUFB, it will show up as **Not configured (-1)**. See the following example:
 
 
 ![Quality Update Deferral Configurations](images/uc-18.png)
@@ -208,10 +210,11 @@ See the following table for a description of last reported states for devices de
 <TR><TD>Cancelled<TD>A device will report that the update has been cancelled if the user, at some point, cancelled the update on the device.
 <TR><TD>Blocked<TD>Devices that are blocked are prevented from proceeding further with the given update. This could be because another update is paused, or some other task on the device must be performed before the update process can proceed.
 </TABLE>
- 
+
+<P>
+
 
 ### Quality Update Detailed Deployment Status
-
 
 This blade provides more detail on the deployment process for the update in the Deployment Status blade. This blade is more of a deployment funnel for devices, enabling you to see at a more granular level how devices are progressing along in their deployment. See the following example:
 
