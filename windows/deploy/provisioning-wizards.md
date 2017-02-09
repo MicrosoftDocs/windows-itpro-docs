@@ -18,7 +18,7 @@ localizationpriority: high
 
 | Step | Description | Desktop</br>wizard | Mobile</br>wizard | Kiosk</br>wizard | 
 | --- | --- | --- | --- | --- |
-| Set up device | Assign device name,</br>enter product key to upgrade Windows,</br>configure shared used,</br>remove pre-installed software | ![yes](images/checkmark.png) | ![yes](images/checkmark.png)</br>(Only device name and upgrade key) | ![yes](images/checkmark.png) |
+| Set up device | Assign device name,</br>enter product key to upgrade Windows,</br>configure shared used,</br>remove pre-installed software | ![yes](images/checkmark.png)</br> | ![yes](images/checkmark.png)</br>(Only device name and upgrade key) | ![yes](images/checkmark.png)</br> |
 | Set up network | Connect to a Wi-Fit network  | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) |
 | Account management | Enroll device in Active Directory,</br>enroll device in Azure Active Directory,</br>or create a local administrator account | ![yes](images/checkmark.png)  | ![no](images/crossmark.png)  | ![yes](images/checkmark.png)  |
 | Bulk Enrollment in Azure AD | Enroll device in Azure Active Directory  |  ![no](images/crossmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) |
