@@ -97,7 +97,7 @@ USMT does not support any of the Windows Server® operating systems, Windows 20
     3.  Right-click **cmd** or **Command Prompt**, and then click **Run as administrator**.
     4.  If the current user is not already an administrator, you will be prompted to enter administrator credentials.
 
-<P>
+<BR>
 
     **Important**  
     You must run USMT using an account with full administrative permissions, including the following privileges:
@@ -108,7 +108,7 @@ USMT does not support any of the Windows Server® operating systems, Windows 20
     -   SeSecurityPrivilege (Manage auditing and security log)
     -   SeTakeOwnership Privilege (Take ownership of files or other objects)
 
-<P>
+<BR>
 
 -   **Specify the /c option and &lt;ErrorControl&gt; settings in the Config.xml file.** USMT will fail if it cannot migrate a file or setting, unless you specify the **/c** option. When you specify the **/c** option, USMT logs an error each time it encounters a file that is in use that did not migrate, but the migration will not be interrupted. In USMT, you can specify in the Config.xml file which types of errors should allow the migration to continue, and which should cause the migration to fail. For more information about error reporting, and the **&lt;ErrorControl&gt;** element, see [Config.xml File](usmt-configxml-file.md), [Log Files](usmt-log-files.md), and [XML Elements Library](usmt-xml-elements-library.md).
 
