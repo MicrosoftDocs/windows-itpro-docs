@@ -22,7 +22,7 @@
 ### [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md)
 ### [Monitor Windows Updates with Update Compliance](update-compliance-monitor.md)
 #### [Get started with Update Compliance](update-compliance-get-started.md)
-#### [Using Update Compliance](update-compliance-using.md)
+#### [Use Update Compliance](update-compliance-using.md)
 ### [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 #### [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 #### [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
