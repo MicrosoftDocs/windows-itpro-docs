@@ -9,7 +9,7 @@ ms.prod: w10
 ---
 
 
-# Automatically sequence a new app using Microsoft Application Virtualization Sequencer (App-V Sequencer)
+# Automatically provision a virtual machine (VM) using Microsoft Application Virtualization Sequencer (App-V Sequencer)
 
 **Applies to**
 -   Windows 10, version 1703

@@ -1,6 +1,6 @@
 ---
-title: Automatically update multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
-description: How to automatically update multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer).
+title: Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
+description: How to automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer).
 author: eross-msft
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.prod: w10
 ---
 
-# Automatically update multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)
+# Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)
 
 **Applies to**
 -   Windows 10, version 1703
@@ -24,7 +24,7 @@ There are 2 approaches to updating multiple apps at the same time:
 - Using the user-interface provided by the App-V Sequencer
 
 >[!NOTE]
-If you're trying to sequence multiple apps at the same time, see the [Automatically sequence multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md) topic.
+If you're trying to sequence multiple apps at the same time, see the [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md) topic.
 
 ### Update multiple apps by using a PowerShell cmdlet
 Updating multiple apps at the same time requires that you create a **ConfigFile** with info related to each round of updating. This file is then used by the cmdlet to start the VM at a "clean" checkpoint, to copy the installer from the Host device to the VM, and then to start the App-V Sequencer to monitor your specified app installations.
@@ -171,9 +171,9 @@ There are 3 types of log files that occur when you sequence multiple apps at the
 
 - [Automatic VM provisioning of the sequencing environment](appv-auto-sequence-a-new-app.md)
 
-- [Manually sequence a single app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md)
+- [Manually sequence a single app using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md)
 
-- [Automatically sequence multiple apps at the same time using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md)
+- [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md)
 
 - [Automatically cleanup unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md)
 

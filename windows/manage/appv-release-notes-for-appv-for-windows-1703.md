@@ -16,9 +16,11 @@ ms.prod: w10
 
 The following are known issues and workarounds for Application Virtualization (App-V) running on Windows 10, version 1703.
 
-|Problem |How you see it |Workaround |
-|--------|---------------|-----------|
-|
+|Problem |Workaround |
+|--------|-----------|
+|Unable to manually create a system-owned folder needed for the `set-AppVClientConfiguration` PowerShell cmdlet when using the _PackageInstallationRoot_, _IntegrationRootUser_, or _IntegrationRootGlobal_ parameters. |Don't create this file manually, instead let the Add-AppVClientPackage cmdlet auto-generate it. |
+|Failure to update an App-V package from App-V 5.0 or App-V 5.1 to the latest version. |Make sure you have the complete App-V package or the MSI file from the original app. |
+|Unable to modify the locale for auto-sequencing. |Open the C:\Program Files (x86)\Windows Kits\10\Microsoft Application Virtualization\AutoSequencer\Unattend_Sequencer_User_Setup_Template.xml file
 
 
 
