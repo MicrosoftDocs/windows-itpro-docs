@@ -100,7 +100,7 @@ The options for Insider level are:
 - **Fast**: This level is best for Insiders who would like to be the first to experience new builds of Windows, participate in identifying and reporting issues to Microsoft, and provide suggestions on new functionality. 
 
 >[!NOTE]
->Once your machine is updated to Windows 10 and you select your desired Flight ring, the process known as “Compatibility Check” will need to run in the background. There is no manual way to force this process to run. This process allows for discovery of your OS type (32-bit, 64-bit), build edition (Home, Pro, Enterprise), country and language settings, and other required information. Once this process is complete, your PC will be auto-targeted for the next available flight for your selected ring. For the first build on any given PC, this may take up to 24 hours to complete.
+>Once your machine is updated to Windows 10 and you select your desired flight ring, the process known as "Compatibility check" will need to run in the background. There is no manual way to force this process to run. This process allows for the discovery of your OS type (32-bit, 64-bit), build edition (Home, Pro, Enterprise), country and language settings, and other required information. Once this process is complete, your machine will be auto-targeted for the next available flight for your selected ring. For the first build on any given machine, this may take up to 24 hours to complete.
 
 ## Block access to Windows Insider Program
 
