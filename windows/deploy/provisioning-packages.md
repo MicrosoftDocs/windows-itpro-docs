@@ -78,7 +78,7 @@ Provisioning packages can be:
 
 The following table describes what you can configure using the wizards in the Configuration Designer to create provisioning packages.
 
-<table><tr><th valign="top">Step</th><th valign="top">Description</th><th valign="top">Desktop</br>wizard</th><th align="center" valign="top">Mobile</br>wizard</th><th valign="top">Kiosk</br>wizard</th></tr>
+<table><tr><th align="left">Step</th><th align="left">Description</th><th>Desktop</br>wizard</th><th>Mobile</br>wizard</th><th>Kiosk</br>wizard</th></tr>
 <tr><td valign="top">Set up device</td><td valign="top">Assign device name,</br>enter product key to upgrade Windows,</br>configure shared used,</br>remove pre-installed software</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</br>(Only device name and upgrade key)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
 <tr><td valign="top">Set up network</td><td valign="top">Connect to a Wi-Fit network</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
 <tr><td valign="top">Account management</td><td valign="top">Enroll device in Active Directory,</br>enroll device in Azure Active Directory,</br>or create a local administrator account</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
