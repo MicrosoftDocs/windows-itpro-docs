@@ -110,7 +110,7 @@
 #### [Deploying Microsoft Office 2010 by Using App-V](appv-deploying-microsoft-office-2010-wth-appv.md)
 ### [Operations for App-V](appv-operations.md)
 #### [Creating and Managing App-V Virtualized Applications](appv-creating-and-managing-virtualized-applications.md)
-##### [Automatically sequence a new app using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-provision-a-vm.md)
+##### [Automatically sequence a new app using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-sequence-a-new-app.md)
 ##### [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md)
 ##### [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md)
 ##### [Manually sequence a new app using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md)
