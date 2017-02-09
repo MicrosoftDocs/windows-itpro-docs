@@ -25,19 +25,22 @@ Provisioning packages are simple enough that with a short set of written instruc
 
 The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Imaging and Configuration Designer (ICD), a tool for configuring provisioning packages. 
 
+
 ## New in Windows 10, version 1703
 
 - rename
 - Store app
 - more wizards
 
+
 ## New in Windows 10, version 1607
+
 
 Windows ICD for Windows 10, version 1607, simplifies common provisioning scenarios. 
 
 ![Configuration Designer options](images/icd.png)
 
-Windows ICD in Windows 10, Version 1607, supports the following scenarios for IT administrators:
+Windows ICD in Windows 10, version 1607, supports the following scenarios for IT administrators:
 
 * **Simple provisioning** – Enables IT administrators to define a desired configuration in Windows ICD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner. 
 
@@ -55,7 +58,7 @@ Windows ICD in Windows 10, Version 1607, supports the following scenarios for IT
     * Other MDMs (cert-based enrollment) 
 
 > [!NOTE]
-> Windows ICD in Windows 10, Version 1607, also provides a wizard to create provisioning packages for school PCs. To learn more, see [Set up students' PCs to join domain](https://technet.microsoft.com/edu/windows/index).
+> Windows ICD in Windows 10, version 1607, also provides a wizard to create provisioning packages for school PCs. To learn more, see [Set up students' PCs to join domain](https://technet.microsoft.com/edu/windows/index).
 
 ## Benefits of provisioning packages
 
