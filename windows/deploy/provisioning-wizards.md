@@ -16,16 +16,17 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-| Step | Description | Desktop</br>wizard | Mobile</br>wizard | Kiosk</br>wizard | 
-| --- | --- | --- | --- | --- |
-| Set up device | Assign device name,</br>enter product key to upgrade Windows,</br>configure shared used,</br>remove pre-installed software | ![yes](images/checkmark.png)</br> | ![yes](images/checkmark.png)</br>(Only device name and upgrade key) | ![yes](images/checkmark.png)</br> |
-| Set up network | Connect to a Wi-Fit network  | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) |
-| Account management | Enroll device in Active Directory,</br>enroll device in Azure Active Directory,</br>or create a local administrator account | ![yes](images/checkmark.png)  | ![no](images/crossmark.png)  | ![yes](images/checkmark.png)  |
-| Bulk Enrollment in Azure AD | Enroll device in Azure Active Directory  |  ![no](images/crossmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) |
-| Add applications | ? |  ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Add certificates | ? |  ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Configure kiosk account and app | Create local account to run the kiosk mode app,</br>specify the app to run in kiosk mode |  ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Configure kiosk common settings | Set tablet mode,</br>configure welcome and shutdown screens,</br>turn off timeout settings |  ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+<table><tr><th valign="top">Step</th><th valign="top">Description</th><th valign="top">Desktop</br>wizard</th><th valign="top">Mobile</br>wizard</th><th valign="top">Kiosk</br>wizard</th></tr>
+<tr><td valign="top">Set up device</td><td valign="top">Assign device name,</br>enter product key to upgrade Windows,</br>configure shared used,</br>remove pre-installed software</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</br>(Only device name and upgrade key)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
+<tr><td valign="top">Set up network</td><td valign="top">Connect to a Wi-Fit network</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
+<tr><td valign="top">Account management</td><td valign="top">Enroll device in Active Directory,</br>enroll device in Azure Active Directory,</br>or create a local administrator account</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
+<tr><td valign="top">Bulk Enrollment in Azure AD</td><td valign="top">Enroll device in Azure Active Directory</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td></tr>
+<tr><td valign="top">Add applications</td><td valign="top">?</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top"></td>![no](images/crossmark.png)<td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
+<tr><td valign="top">Add certificates</td><td valign="top">?</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
+<tr><td valign="top">Configure kiosk account and app</td><td valign="top">Create local account to run the kiosk mode app,</br>specify the app to run in kiosk mode</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
+<tr><td valign="top">Configure kiosk common settings</td><td valign="top">Set tablet mode,</br>configure welcome and shutdown screens,</br>turn off timeout settings</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top"![yes](images/checkmark.png)></td></tr></table>
+
+
  
 Also HoloLens wizard and Surface Hub wizard -- link to those docs
 

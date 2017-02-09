@@ -74,8 +74,14 @@ Provisioning packages can be:
 
 ## What you can configure
 
+The following table describes what you can configure using the wizards in the Windows Configuration Designer to create provisioning packages.
 
-The following table provides some examples of what you can configure using provisioning packages.
+
+
+>[!NOTE]
+>After you start a project using a Windows Configuration Designer wizard, you can switch to the advanced editor to configure additional settings in the provisioning package. 
+
+The following table provides some examples of what you can configure using the Windows Configuration Designer advanced editor to create provisioning packages.
 
 | Customization options    | Examples                                                                                      |
 |--------------------------|-----------------------------------------------------------------------------------------------|
