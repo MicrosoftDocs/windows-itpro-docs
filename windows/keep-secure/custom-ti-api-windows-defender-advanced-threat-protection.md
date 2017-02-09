@@ -1,7 +1,7 @@
 ---
-title: Create custom threat indicators using REST API in Windows Defender ATP
-description: Create your custom Alert definitions and Indicators of Compromise in Windows Defender ATP using the available APIs in Windows Enterprise, Education, and Pro editions.
-keywords: alert definitions, indicators of compromise, threat indicators, custom ti, rest api, api
+title: Create custom threat intelligence using REST API in Windows Defender ATP
+description: Create your custom alert definitions and indicators of compromise in Windows Defender ATP using the available APIs in Windows Enterprise, Education, and Pro editions.
+keywords: alert definitions, indicators of compromise, threat intelligence, custom ti, rest api, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Create custom threat indicators (TI) using REST API
+# Create custom threat intelligence (TI) using REST API
 
 **Applies to:**
 
@@ -21,9 +21,11 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-You can define custom Alert definitions and Indicators of Compromise (IOC) using the available APIs. Creating custom TI’s allows you to create specific alerts that are applicable to your organization.
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-You can call and specify the resource URLs using one of the following operations to access and manipulate a Custom TI resource, you call and specify the resource URLs using one of the following operations:
+You can define custom alert definitions and indicators of compromise (IOC) using the available APIs. Creating custom TI’s allows you to create specific alerts that are applicable to your organization.
+
+You can call and specify the resource URLs using one of the following operations to access and manipulate a custom TI resource, you call and specify the resource URLs using one of the following operations:
 
 -	GET
 -	POST
@@ -31,14 +33,14 @@ You can call and specify the resource URLs using one of the following operations
 -	PUT (used for managing entities relations only)
 -	DELETE
 
-All Custom TI API requests use the following basic URL pattern:
+All custom TI API requests use the following basic URL pattern:
 
 ```
     https://TI.SecurityCenter.Windows.com/{version}/{resource}?[query_parameters]
 ```
 
 For this URL:
--	`https://TI.SecurityCenter.Windows.com` is the Custom TI API endpoint.
+-	`https://TI.SecurityCenter.Windows.com` is the custom TI API endpoint.
 -	`{version}` is the target service version. Currently only supported version is: v1.0.
 -	`{resource}` is resource segment or path, such as:
   -	AlertDefinitions (for specific single resource, add: (id))
@@ -57,14 +59,14 @@ For example, you can view the service document for the v1.0 version using the fo
   https://TI.SecurityCenter.Windows.com/v1.0/$metadata
 ```
 
-The metadata allows you to see and understand the data model of the Custom TI, including the entity types and sets, complex types, and enums that make up the request and response packets sent to and from Custom TI.
+The metadata allows you to see and understand the data model of the custom TI, including the entity types and sets, complex types, and enums that make up the request and response packets sent to and from custom TI.
 
-You can use the metadata to understand the relationships between entities in Custom TI and establish URLs that navigate between entities.
+You can use the metadata to understand the relationships between entities in custom TI and establish URLs that navigate between entities.
 
-The following sections show a few basic programming pattern calls to the Custom TI API.
+The following sections show a few basic programming pattern calls to the custom TI API.
 
 ## Create new resource
-Typically, you would start creating custom threat indicators by first creating an alert definition.
+Typically, you would start creating custom threat intelligence by first creating an alert definition.
 
 An ID is created for that alert definition. You would then create an Indicator Of Compromise and associate it to the ID of the alert definition.
 
@@ -75,12 +77,12 @@ POST https://TI.SecurityCenter.Windows.com/v1.0/AlertDefinition HTTP/1.1
 Authorization: Bearer <access_token>
 Content-Type: application/json;
 {
-  "Name": " The name of the IOA. Does not appear in the potal. Max length: 100 ",
+  "Name": " The name of the IOA. Does not appear in the portal. Max length: 100 ",
   "Severity": "Low",
-  "InternalDescription": " Internal description for the IOA. Does not appear in the portal. Max length: 350",
-  "ShortUxDescription": " A short, one sentence, description of the IoA. Max length: 120",
+  "InternalDescription": "Internal description for the IOA. Does not appear in the portal. Max length: 350",
+  "ShortUxDescription": "A short, one sentence, description of the IoA. Max length: 120",
   "UxDescription": " Max length: 500",
-  "RecommendedAction": " Custom text to explain what should be done in case of detection. Max length: 2000 ",
+  "RecommendedAction": "Custom text to explain what should be done in case of detection. Max length: 2000 ",
   "Category": "Trojan",
   "Enabled": true
 }
@@ -324,7 +326,7 @@ Upon a successful request the response will be HTTP 204.
 
 
 ## Windows Defender ATP optional query parameters
-Windows Defender ATP Custom TI provides several optional query parameters that you can use to specify and control the amount of data returned in a response. Custom TI supports the following query options.
+Windows Defender ATP custom TI provides several optional query parameters that you can use to specify and control the amount of data returned in a response. Custom TI supports the following query options:
 
 Name | Value | Description
 :---|:---|:--

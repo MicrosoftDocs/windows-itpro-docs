@@ -54,8 +54,6 @@ Clicking on the number of total logged on users in the Logged on user tile opens
 
 The **Alerts related to this machine** section provides a list of alerts that are associated with the machine. This list is a simplified version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows the date when the last activity was detected, a short description of the alert, the user associated with the alert, the alert's severity, the alert's status in the queue, and who is addressing the alert.
 
-## Machine timeline
-
 The **Machine timeline** section provides a chronological view of the events and associated alerts that have been observed on the machine.
 
 This feature also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a specified time period.
