@@ -1,5 +1,5 @@
 ---
-title: Monitor Windows Updates with Upgrade Compliance (Windows 10)
+title: Monitor Windows Updates with Update Compliance (Windows 10)
 description: Introduction to Update Compliance.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -8,7 +8,7 @@ ms.pagetype: deploy
 author: greg-lindsay
 ---
 
-# Monitor Windows Updates with Upgrade Compliance
+# Monitor Windows Updates with Update Compliance
 
 ## Introduction
 
