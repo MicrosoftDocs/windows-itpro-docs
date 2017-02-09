@@ -44,7 +44,7 @@ The first blade of OMS Update Compliance is the General **OS Update Overview** b
 This blade is divided into three sections: 
 - Device Summary: 
 - Needs Attention Summary
-- Device Update Summary
+- Update Status Summary
 
 The **Device Summary** displays the total number of devices in your organization. These devices have the commercial ID configured, telemetry enabled, and have sent telemetry to Microsoft within the last 28 days. The tile also shows the devices that Need Attention. 
 
@@ -61,13 +61,13 @@ The **Needs Attention Summary** summarizes devices that require action on your p
 </TABLE>
 
 
-The **Device Update Summary** summarizes your organization's devices per the Windows 10 "Windows as a Service" (WaaS) model. For more information about WaaS, see [Overview of Windows as a service](waas-overview.md). Devices are categorized as: **Current**, **Up-to-date**, and **Not up-to-date**. See the following graphical representation of this model:<BR>
+The **Update Status Summary** summarizes your organization's devices per the Windows 10 "Windows as a Service" (WaaS) model. For more information about WaaS, see [Overview of Windows as a service](waas-overview.md). Devices are categorized as: **Current**, **Up-to-date**, and **Not up-to-date**. See the following graphical representation of this model:<BR>
 
 
 ![Device states](images/uc-12.png)
 
 
-Device Update Status definitions:
+Update Status Summary definitions:
 
 
 <TABLE>
