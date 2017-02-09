@@ -289,8 +289,13 @@ This blade breaks down the main states a device can be in through the deployment
 <TR><TD>Cancelled<TD>A device will report that the update has been cancelled if the user, at some point, cancelled the update on the device. 
 <TR><TD>Blocked<TD>Devices that are blocked are prevented from proceeding further with the given update. This could be because another update is paused, or some other task on the device must be performed before the update process can proceed. 
 </TABLE>
- 
+
 <P>
+
+
+
+
+
 
 ### Feature Update Detailed Deployment Status
 
