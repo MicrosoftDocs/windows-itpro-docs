@@ -49,10 +49,7 @@ This blade is divided into three sections:
 The **Device Summary** displays the total number of devices in your organization. These devices have the commercial ID configured, telemetry enabled, and have sent telemetry to Microsoft within the last 28 days. The tile also shows the devices that Need Attention. 
 
 
-The **Needs Attention Summary** summarizes devices that require action on your part. There are multiple reasons why a device might need attention, and these reasons are categorized and summarized in the tile. You can view details about devices that are categorized as Needs Attention using a table view. 
-
-
-The following **Needs Attention** states are defined:
+The **Needs Attention Summary** summarizes devices that require action on your part. There are multiple reasons why a device might need attention, and these reasons are categorized and summarized in the tile. You can view details about devices that are categorized as Needs Attention using a table view. The following **Needs Attention** states are defined:
 
 
 <TABLE>
@@ -64,13 +61,13 @@ The following **Needs Attention** states are defined:
 </TABLE>
 
 
-The **Update Status Summary** summarizes your organization's devices per the Windows 10 "Windows as a Service" (WaaS) model. For more information about WaaS, see [Overview of Windows as a service](waas-overview.md). Devices are categorized as: **Current**, **Up-to-date**, and **Not up-to-date**. See the following graphical representation of this model:<BR>
+The **Device Update Summary** summarizes your organization's devices per the Windows 10 "Windows as a Service" (WaaS) model. For more information about WaaS, see [Overview of Windows as a service](waas-overview.md). Devices are categorized as: **Current**, **Up-to-date**, and **Not up-to-date**. See the following graphical representation of this model:<BR>
 
 
 ![Device states](images/uc-12.png)
 
 
-Update Status definitions:
+Device Update Status definitions:
 
 
 <TABLE>
@@ -131,7 +128,7 @@ Microsoft has developed terms to help specify the state of a given device for ho
 - Not up-to-date
 
 
-See the Update Status Summary section under [OS Update Overview](#os-update-overview) in this guide for definitions of these terms. 
+See the **Device Update Summary** description under [OS Update Overview](#os-update-overview) in this guide for definitions of these terms. 
 
 
 The Overall Feature Update Status blade focuses around whether or not your devices are considered Current. See the following example:
@@ -153,7 +150,7 @@ See the following example:
 ![CB deployment status](images/uc-16.png)
 
 
-The three tables break down devices by Feature update. For each OS version, the following columns provide counts of the various states they can be in:
+The three tables break down devices by feature update. For each OS version, the following columns provide counts of the possible device states:
 
 
 <TABLE>
@@ -293,11 +290,12 @@ This blade breaks down the main states a device can be in through the deployment
 <TR><TD>Blocked<TD>Devices that are blocked are prevented from proceeding further with the given update. This could be because another update is paused, or some other task on the device must be performed before the update process can proceed. 
 </TABLE>
  
-
+<P>
 
 ### Feature Update Detailed Deployment Status
 
 This blade provides more detail on the deployment process for the update in the Deployment Status blade. This blade is more of a deployment funnel for devices, enabling you to see at a more granular level how devices are progressing along in their deployment. See the following example:
+
 
 ![Feature Update Detailed Deployment Status](images/uc-24.png)
 
@@ -329,7 +327,7 @@ Operations Management Suite leverages its powerful Log Analytics querying to per
 ![List of Queries](images/uc-25.png)
 
 
-The following are the ‘Common queries’, with a description of the data provided:
+The following **Common queries** are available:
 
 
 <TABLE>
