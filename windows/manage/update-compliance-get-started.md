@@ -106,8 +106,8 @@ In order for your devices to show up in Windows Analytics: Update Compliance, th
     Deploying your Commercial ID using Group Policy can be accomplished by configuring domain Group Policy Objects with the Group Policy Management Editor, or by configuring local Group Policy using the Local Group Policy Editor.
     1. In the console tree, navigate to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds**
     2. Double-click **Configure the Commercial ID**
-    3. In the **Options** box, under **Commercial Id**, type the Commercial ID GUID, and then click **OK**.
-<P>
+    3. In the **Options** box, under **Commercial Id**, type the Commercial ID GUID, and then click **OK**.<P>
+
 - Using Microsoft Mobile Device Management (MDM)<BR>
     Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under **Provider/ProviderID/CommercialID**. More information on deployment using MDM can be found [here](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp).  
 
