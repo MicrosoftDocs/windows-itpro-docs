@@ -48,7 +48,7 @@ The **Needs Attention Summary** summarizes devices that require action on your p
 The following **Needs Attention** states are defined:
 
 <TABLE>
-<TR><TD BGCOLOR="#0066ff">Needs Attention<TD BGCOLOR="#0066ff" ALIGN=left>Definition
+<TR><TD BGCOLOR="#cceeff">Needs Attention<TD BGCOLOR="#cceeff" ALIGN=left>Definition
 <TR><TD>Out of Support<TD>Total number of devices that are no longer receiving servicing updates
 <TR><TD>Update failed<TD>When a device has reported a failure at some stage in its update deployment process, it will report that the Update Failed. You can click on this to see the full set of devices with more details about the stage at which a failure was reported, when the device reported a failure, and other data.
 <TR><TD>Missing 2+ Security Updates<TD>Total number of devices that are missing two or more security updates
@@ -63,7 +63,7 @@ The **Update Status Summary** summarizes your organization's devices per the Win
 Update Status definitions:
 
 <TABLE>
-<TR><TD BGCOLOR="#0066ff">Update Status<TD BGCOLOR="#0066ff" ALIGN=left>Definition
+<TR><TD BGCOLOR="#cceeff">Update Status<TD BGCOLOR="#cceeff" ALIGN=left>Definition
 <TR><TD>Current and Up-to-date<TD>A device that is current is on the latest and greatest Microsoft offers. It is on the very newest feature update (ex. The Windows Anniversary Update, RS1), on the very latest quality update for its servicing branch.
 <TR><TD>Up-to-date<TD>A device that is up-to-date is on the latest quality update for its servicing option (CB, CBB, LTSB), and the device is running an OS that is supported by Microsoft.
 <TR><TD>Not up-to-date<TD>A device does not have the latest quality update for its servicing option.  
@@ -80,20 +80,20 @@ The donut tile offers a summary of all devices in your organization, divided int
 The list view contains the breakdown of Up-to-date, Not up-to-date, and Update failed, all pivoted on OS version (e.g., 1507, 1511, 1607). Clicking on any of the rows of this list view will display the **OS Quality Update Summary Perspective** for that OS version. 
  
  
-### Latest and Previous Security Update Status
+## Latest and Previous Security Update Status
 
 Security updates are extremely important to your organization, so in addition to an overall view of Quality Updates, the deployment status for the latest two security updates are displayed for each supported OS build offered by Microsoft. 
 
 ![Latest security update status](images/uc-14.png)
 
-For the latest security update, a doughnut chart is displayed across all OS Builds with a count of installed, in progress/deferred, update failed, and unknown status relative to that update. Two table views are provided below the doughnut displaying the same breakdown for each OS build supported by Microsoft. 
+For the latest security update, a doughnut chart is displayed across all OS builds with a count of installed, in progress/deferred, update failed, and unknown status relative to that update. Two table views are provided below the doughnut displaying the same breakdown for each OS build supported by Microsoft. 
 
 See the following definitions:
 
 <TABLE>
-<TR><TD BGCOLOR="#0066ff">Term<TD BGCOLOR="#0066ff" ALIGN=left>Definition
-<TR><TD>OS Build<TD>The OS Build + Revision for the OS Version. The build + revision is a one-to-one mapping of the given security update in this context.
-<TR><TD>Version<TD>The OS Version corresponding to the OS Build.
+<TR><TD BGCOLOR="#cceeff">Term<TD BGCOLOR="#cceeff" ALIGN=left>Definition
+<TR><TD>OS Build<TD>The OS build + Revision for the OS Version. The build + revision is a one-to-one mapping of the given security update in this context.
+<TR><TD>Version<TD>The OS Version corresponding to the OS build.
 <TR><TD>Installed<TD>The count of devices that have the given security update installed. In the case that the latest security update is not latest quality update (that is, an update has since been released but it did not contain any security fixes), then devices that are on a newer update will also be counted.
 <BR><BR>For the previous security update, a device will display as **Installed** until it has at least installed the latest security update.
 <TR><TD>In Progress or Deferred<TD>The count of devices that are either currently in the process of installing the given security update, or are deferring the install as per their WUFB policy.
@@ -102,7 +102,7 @@ See the following definitions:
 <TR><TD>Status Unknown<TD>If a device should be, in some way, progressing toward this security update, but it’s status cannot be inferred, it will count as **Status Unknown**. Devices that are not using Windows Update are the most likely devices to fall into this category.
 </TABLE>
 
-### Overall Feature Update Status
+## Overall Feature Update Status
 
 Windows 10 has two main update types: Quality and Feature updates. The third blade in Update Compliance provides the most essential data about your organization’s devices for feature updates. 
 
@@ -119,7 +119,7 @@ The Overall Feature Update Status blade focuses around whether or not your devic
 
 Devices are evaluated by OS Version (e.g., 1607) and the count of how many are Current, Not Current, and have Update Failures is displayed. Clicking on any of these counts will allow you to view all those devices, as well as select the **Update Deployment Status** perspective, described below. 
 
-### CB, CBB, LTSB Deployment Status
+## CB, CBB, LTSB Deployment Status
 
 Following the overview with respect to how current your organization’s devices are, there are three tables that show feature update deployment for all devices. The devices are split up by which branch they are on, as this directly impacts whether they are supported (for example, 1607 may be supported under CBB, but not under CB). This allows you a quick glance at how deployment is progressing across your organization with respect to feature updates. See the following example:
 
@@ -128,7 +128,7 @@ Following the overview with respect to how current your organization’s devices
 The three tables break down devices by Feature update. For each OS version, the following columns provide counts of the various states they can be in:
 
 <TABLE>
-<TR><TD BGCOLOR="#0066ff">Deployment Status<TD BGCOLOR="#0066ff" ALIGN=left>Description
+<TR><TD BGCOLOR="#cceeff">Deployment Status<TD BGCOLOR="#cceeff" ALIGN=left>Description
 <TR><TD>Feature Update<TD>A concatenation of servicing branch (CB, CBB, LTSB) and OS Version (e.g., 1607)
 <TR><TD>Installed<TD>The number of devices that have reported to be on the given servicing train and feature update.
 <TR><TD>In progress<TD>The number of devices that have reported to be at some stage in the installation process for the given feature update.
@@ -142,7 +142,7 @@ The three tables break down devices by Feature update. For each OS version, the 
 </TABLE>
 
 
-### Quality Update Perspective
+## Quality Update Perspective
 
 The Quality Update Deployment Status perspective is a breakdown of the most essential data the user should know about the status of their devices with respect to being Up-to-date. The perspective shows a summary of the organization’s devices for one specific OS version, or build. 
  
@@ -167,7 +167,7 @@ Under the three top-level blades is the deployment status for the newest quality
 See the following table for a description of last reported states for devices deploying that quality update. 
 
 <TABLE>
-<TR><TD BGCOLOR="#0066ff">Deployment State<TD BGCOLOR="#0066ff" ALIGN=left>Description
+<TR><TD BGCOLOR="#cceeff">Deployment State<TD BGCOLOR="#cceeff" ALIGN=left>Description
 <TR><TD>Update Completed<TD>When a device has finished the update process and is on the given update, it will display here as **Update completed**.
 <TR><TD>In Progress<TD>Devices that are “in progress” installing an update will fall within this category. This category is detailed in the following blade: **Detailed Deployment Status**.
 <TR><TD>Deferred<TD>If a device’s WUfB deferral policy dictates that it is not set to receive this update, the device will show as Update deferred.
@@ -187,7 +187,7 @@ This blade provides more detail on the deployment process for the update in the 
 The following table provides a list of the detailed deployment states a device can report:
 
 <TABLE>
-<TR><TD BGCOLOR="#0066ff">Detailed Deployment State<TD BGCOLOR="#0066ff" ALIGN=left>Description
+<TR><TD BGCOLOR="#cceeff">Detailed Deployment State<TD BGCOLOR="#cceeff" ALIGN=left>Description
 <TR><TD>Update deferred<TD>The WUfB policy of the device dictates the update is deferred. 
 <TR><TD>PreDownloadTasksPassed<TD>The device has finished all tasks necessary prior to downloading the update. 
 <TR><TD>DownloadStarted<TD>The update has begun downloading on the device. 
@@ -200,7 +200,7 @@ The following table provides a list of the detailed deployment states a device c
 <TR><TD>Update completed<TD>The device has completed installing, rebooting, and applying the update. 
 </TABLE>
 
-### Feature Update Perspective
+## Feature Update Perspective
 
 Like Quality Updates, the Feature Update Deployment Status perspective is a breakdown of information most essential to an administrator. This information is viewed by clicking on a given build on the Feature Update Status blade and then navigating to the **Update Deployment Status** pane as displayed previously. In Update Compliance, a perspective is assigned to a query; the query used to generate the perspective can be altered to show other information, if desired.
 
@@ -234,7 +234,7 @@ As stated earlier in this section, the Feature Updates blade focuses on how Curr
 This blade breaks down the main states a device can be in through the deployment of a feature update. The possible states are as follows:
 
 <TABLE>
-<TR><TD BGCOLOR="#0066ff">Deployment State<TD BGCOLOR="#0066ff" ALIGN=left>Description
+<TR><TD BGCOLOR="#cceeff">Deployment State<TD BGCOLOR="#cceeff" ALIGN=left>Description
 <TR><TD>Update completed<TD>When a device has completely finished the update process and is on the given update, it will show up here as **Update completed**. 
 <TR><TD>Inprogress<TD>Devices “in progress” of installing the given update will fall within this category. This category is iterated on with further granularity in the proceeding blade, “Detailed Deployment Status”. 
 <TR><TD>Update deferred<TD>If a device’s WUfB deferral policy dictates that it is not set to receive this update yet, the device will show as Update deferred.
@@ -251,7 +251,7 @@ This blade provides more detail on the deployment process for the update in the 
 The following table displays all states a device can report:
 
 <TABLE>
-<TR><TD BGCOLOR="#0066ff">Detailed Deployment State<TD BGCOLOR="#0066ff" ALIGN=left>Description
+<TR><TD BGCOLOR="#cceeff">Detailed Deployment State<TD BGCOLOR="#cceeff" ALIGN=left>Description
 <TR><TD>Update deferred<TD>The WUfB policy of the device dictates the update is deferred.
 <TR><TD>PreDownloadTasksPassed<TD>The device has finished all tasks necessary prior to downloading the update.
 <TR><TD>DownloadStarted<TD>The update has begun downloading on the device.
@@ -265,7 +265,7 @@ The following table displays all states a device can report:
 </TABLE>
 
 
-### List of Queries
+## List of Queries
 
 Operations Management Suite leverages its powerful Log Analytics querying to perform all data calculations. For this blade, we provide examples of queries that show useful data to the user about their organization’s devices. See the following example:
 
@@ -274,7 +274,7 @@ Operations Management Suite leverages its powerful Log Analytics querying to per
 The following are the ‘Common queries’, with a description of the data provided:
 
 <TABLE>
-<TR><TD BGCOLOR="#0066ff">Query Title<TD BGCOLOR="#0066ff" ALIGN=left>Description
+<TR><TD BGCOLOR="#cceeff">Query Title<TD BGCOLOR="#cceeff" ALIGN=left>Description
 <TR><TD>OS Security Update Status<TD>This query provides an all-up view with respect to how many devices are on the latest security update for their OS version. The table will detail an aggregated count of the number of devices, out of the total (so count, or percent) are on the latest security update for their OS build. 
 <TR><TD>Update Deployment Failures<TD>This query provides a chart view, displaying an aggregation of all devices that have reported a deployment failure for either feature or quality updates. The aggregation of the data is on the given update for which a given device has reported a deployment failure. 
 <TR><TD>Devices pending reboot to complete update<TD>This query will provide a table showing all devices that are at the stage of "Reboot Pending" In the update deployment process.<BR><BR>This query will show devices which are in this state for both feature and quality updates; the data will be organized on precisely which update the given device(s) are pending a reboot to install.
