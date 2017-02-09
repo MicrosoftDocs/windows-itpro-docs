@@ -127,7 +127,9 @@ For many IT pros, gaining visibility into feature updates early—before they’
 Microsoft recommends that all organizations have at least a few PCs enrolled in the Windows Insider Program and provide feedback on any issues they encounter. For information about how to sign up for the Windows Insider Program and enroll test devices, go to [https://insider.windows.com](https://insider.windows.com).
 
 >[!NOTE]
->The Windows Insider Program isn’t intended to replace CB deployments in an organization. Rather, it provides IT pros and other interested parties with prerelease Windows builds that they can test and ultimately provide feedback on to Microsoft. 
+>Microsoft recommends that all organizations have at least a few PCs enrolled in the Windows Insider Program, to include the Windows Insider Program in their deployment plans and to provide feedback on any issues they encounter to Microsoft via our Feedback Hub app. 
+>
+>The Windows Insider Program isn’t intended to replace CB deployments in an organization. Rather, it provides IT pros and other interested parties with pre-release Windows builds that they can test and ultimately provide feedback on to Microsoft. 
 
 
 
