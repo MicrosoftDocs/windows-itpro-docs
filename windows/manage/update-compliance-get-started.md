@@ -22,7 +22,7 @@ Steps are provided in sections that follow the recommended setup process:
 Update Compliance has the following requirements: 
 1. Update Compliance is currently only compatible with Windows 10 devices. The solution is intended to be used with desktop devices (Windows 10 workstations and laptops). 
 2. The solution requires that Windows 10 telemetry is enabled on all devices that are intended to be displayed in the solution. These devices must have at least the [basic level of telemetry](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#basic-level) enabled. To learn more about Windows telemetry, see [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md). 
-3. The telemetry of your organization’s Windows devices must be successfully transmitted it to Microsoft. Microsoft has specified [endpoints for different aspects of telemetry](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#endpoints), which must be whitelisted by your organization so the data can be transmitted. The following table is taken from the article on telemetry endpoints and summarizes the use of each endpoint:
+3. The telemetry of your organization’s Windows devices must be successfully transmitted to Microsoft. Microsoft has specified [endpoints for different aspects of telemetry](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#endpoints), which must be whitelisted by your organization so the data can be transmitted. The following table is taken from the article on telemetry endpoints and summarizes the use of each endpoint:
 
     <TABLE BORDER=1>
     <TR><TD BGCOLOR="#cceeff">Service<TD BGCOLOR="#cceeff">Endpoint
@@ -64,7 +64,7 @@ If you are not yet using OMS, use the following steps to subscribe to OMS Update
     <A HREF="images/uc-05.png"><img src="images/uc-05a.png"></A>
     <TABLE>
 
-5.	If your organization already has an Azure subscription, you can link it to your workspace. Note that you may need to request access from your organization’s Azure administrator. If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. If you do not yet have an Azure subscription, follow this guide to create and link an Azure subscription to an OMS workspace.
+5.	If your organization already has an Azure subscription, you can link it to your workspace. Note that you may need to request access from your organization’s Azure administrator. If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. If you do not yet have an Azure subscription, follow [this guide](https://blogs.technet.microsoft.com/upgradeanalytics/2016/11/08/linking-operations-management-suite-workspaces-to-microsoft-azure/) to create and link an Azure subscription to an OMS workspace.
 
     <P><TABLE BORDER=1><TR><TD>
     <A HREF="images/uc-06.png"><img src="images/uc-06a.png"></A>

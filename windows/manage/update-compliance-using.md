@@ -228,14 +228,14 @@ The following table provides a list of the detailed deployment states a device c
 <TABLE>
 <TR><TD BGCOLOR="#cceeff">Detailed Deployment State<TD BGCOLOR="#cceeff" ALIGN=left>Description
 <TR><TD>Update deferred<TD>The WUfB policy of the device dictates the update is deferred. 
-<TR><TD>PreDownloadTasksPassed<TD>The device has finished all tasks necessary prior to downloading the update. 
-<TR><TD>DownloadStarted<TD>The update has begun downloading on the device. 
-<TR><TD>DownloadSucceeded<TD>The device has successfully downloaded the update. 
-<TR><TD>PreInstallTasksPassed<TD>The device has downloaded the update successfully, and successfully passed all checks prior to beginning installation of the update. 
-<TR><TD>InstallStarted<TD>The device has begun installing the update. 
-<TR><TD>RebootRequired<TD>The device has finished installing the update, and a reboot is required before the update can be completed. 
-<TR><TD>RebootPending<TD>The device is pending a scheduled reboot before the update can be completed. 
-<TR><TD>RebootInitiated<TD>The device has reported to have initiated the reboot process for completing the update. 
+<TR><TD>Pre-Download Tasks Passed<TD>The device has finished all tasks necessary prior to downloading the update. 
+<TR><TD>Download Started<TD>The update has begun downloading on the device. 
+<TR><TD>Download Succeeded<TD>The device has successfully downloaded the update. 
+<TR><TD>Pre-Install Tasks Passed<TD>The device has downloaded the update successfully, and successfully passed all checks prior to beginning installation of the update. 
+<TR><TD>Install Started<TD>The device has begun installing the update. 
+<TR><TD>Reboot Required<TD>The device has finished installing the update, and a reboot is required before the update can be completed. 
+<TR><TD>Reboot Pending<TD>The device is pending a scheduled reboot before the update can be completed. 
+<TR><TD>Reboot Initiated<TD>The device has reported to have initiated the reboot process for completing the update. 
 <TR><TD>Update completed<TD>The device has completed installing, rebooting, and applying the update. 
 </TABLE>
 
@@ -311,14 +311,14 @@ The following table displays all states a device can report:
 <TABLE>
 <TR><TD BGCOLOR="#cceeff">Detailed Deployment State<TD BGCOLOR="#cceeff" ALIGN=left>Description
 <TR><TD>Update deferred<TD>The WUfB policy of the device dictates the update is deferred.
-<TR><TD>PreDownloadTasksPassed<TD>The device has finished all tasks necessary prior to downloading the update.
-<TR><TD>DownloadStarted<TD>The update has begun downloading on the device.
-<TR><TD>DownloadSucceeded<TD>The device has successfully downloaded the update.
-<TR><TD>PreInstallTasksPassed<TD>The device has downloaded the update successfully, and successfully passed all checks prior to beginning installation of the update.
-<TR><TD>InstallStarted<TD>The device has begun installing the update.
-<TR><TD>RebootRequired<TD>The device has finished installing the update, and a reboot is required before the update can be completed.
-<TR><TD>RebootPending<TD>The device is pending a scheduled reboot before the update can be completed.
-<TR><TD>RebootInitiated<TD>The device has reported to have initiated the reboot process for completing the update.
+<TR><TD>Pre-Download Tasks Passed<TD>The device has finished all tasks necessary prior to downloading the update.
+<TR><TD>Download Started<TD>The update has begun downloading on the device.
+<TR><TD>Download Succeeded<TD>The device has successfully downloaded the update.
+<TR><TD>Pre-Install Tasks Passed<TD>The device has downloaded the update successfully, and successfully passed all checks prior to beginning installation of the update.
+<TR><TD>Install Started<TD>The device has begun installing the update.
+<TR><TD>Reboot Required<TD>The device has finished installing the update, and a reboot is required before the update can be completed.
+<TR><TD>Reboot Pending<TD>The device is pending a scheduled reboot before the update can be completed.
+<TR><TD>Reboot Initiated<TD>The device has reported to have initiated the reboot process for completing the update.
 <TR><TD>Update completed<TD>The device has completed installing, rebooting, and applying the update.
 </TABLE>
 
