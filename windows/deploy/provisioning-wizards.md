@@ -16,14 +16,14 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-| Steps | Description | Desktop</br>wizard | Mobile</br>wizard | Kiosk</br>wizard | 
+| Step | Description | Desktop</br>wizard | Mobile</br>wizard | Kiosk</br>wizard | 
 | --- | --- | --- | --- | --- |
-| Set up device | Assign device name,</br>enter product key to upgrade Windows,</br>configure shared used,</br>remove pre-installed software | ![yes](images/checkmark.png) | ![yes](images/checkmark.png)</br>(Only device name and upgrade key) | ![yes](images/checkmark.png)</br>Can skip |
-| Set up network | Connect to a Wi-Fit network  | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png)</br>Can skip |
-| Account management | Enroll device in Active Directory,</br>enroll device in Azure Active Directory,</br>or create a local administrator account | ![yes](images/checkmark.png)  | ![no](images/crossmark.png)  | ![yes](images/checkmark.png)</br>Can skip  |
-| Bulk Enrollment in Azure AD | Enroll device in Azure Active Directory  |  ![no](images/crossmark.png) | ![yes](images/checkmark.png)</br>Can skip | ![no](images/crossmark.png) |
-| Add applications | ? |  ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png)</br>Can skip |
-| Add certificates | ? |  ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png)</br>Can skip |
+| Set up device | Assign device name,</br>enter product key to upgrade Windows,</br>configure shared used,</br>remove pre-installed software | ![yes](images/checkmark.png) | ![yes](images/checkmark.png)</br>(Only device name and upgrade key) | ![yes](images/checkmark.png) |
+| Set up network | Connect to a Wi-Fit network  | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) |
+| Account management | Enroll device in Active Directory,</br>enroll device in Azure Active Directory,</br>or create a local administrator account | ![yes](images/checkmark.png)  | ![no](images/crossmark.png)  | ![yes](images/checkmark.png)  |
+| Bulk Enrollment in Azure AD | Enroll device in Azure Active Directory  |  ![no](images/crossmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) |
+| Add applications | ? |  ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+| Add certificates | ? |  ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 | Configure kiosk account and app | Create local account to run the kiosk mode app,</br>specify the app to run in kiosk mode |  ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 | Configure kiosk common settings | Set tablet mode,</br>configure welcome and shutdown screens,</br>turn off timeout settings |  ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
  
