@@ -22,7 +22,7 @@ Steps are provided in sections that follow the recommended setup process:
 Update Compliance has the following requirements: 
 1. Update Compliance is currently only compatible with Windows 10 devices. The solution is intended to be used with desktop devices (Windows 10 workstations and laptops). 
 2. The solution requires that Windows 10 telemetry is enabled on all devices that are intended to be displayed in the solution. These devices must have at least the [basic level of telemetry](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#basic-level) enabled. To learn more about Windows telemetry, see [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md). 
-3. The telemetry of your organization’s Windows devices must be successfully transmitted it to Microsoft. Microsoft has specified endpoints for different aspects of telemetry, which must be whitelisted by your organization so the data can be transmitted. The following table was taken from the article on telemetry endpoints and summarizes the use of each endpoint:
+3. The telemetry of your organization’s Windows devices must be successfully transmitted it to Microsoft. Microsoft has specified [endpoints for different aspects of telemetry](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#endpoints), which must be whitelisted by your organization so the data can be transmitted. The following table is taken from the article on telemetry endpoints and summarizes the use of each endpoint:
 
     <TABLE BORDER=1>
     <TR><TD BGCOLOR="#cceeff">Service<TD BGCOLOR="#cceeff">Endpoint
