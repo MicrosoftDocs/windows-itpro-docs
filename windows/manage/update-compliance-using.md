@@ -10,49 +10,69 @@ author: greg-lindsay
 
 # Use Update Compliance to monitor Windows Updates
 
-This section details how to use Update Compliance to monitor update compliance and troubleshoot update failures across Windows 10 devices.
-Based on telemetry gathered from user devices, Update Compliance forms an all-up view of your organization, allowing you to maintain a high-level perspective on the progress and status of updates across all your organization’s devices.
+This section describes how to use Update Compliance to monitor Windows Updates and troubleshoot update failures across Windows 10 devices.
+
+Based on telemetry gathered from user devices, Update Compliance forms an all-up view of your organization, allowing you to maintain a high-level perspective on the progress and status of updates across all devices.
+
 The Update Compliance workflow can be used to quickly identify which devices require attention. It can be used to view and track deployment compliance targets for updates, and it can be used to quickly assess the distribution of Windows 10 devices in your organization.
+
 Information is refreshed daily so that update progress can be monitored. Changes will be displayed about 24 hours after their occurrence, so you always have a recent snapshot of your devices.
-In OMS, aspects to a given solution's dashboard are typically divided into blades. Blades are a slice of information, typically with a summarization tile and an enumeration of the data that makes up that data. All data is presented through queries. Perspectives are also possible, wherein a given query has a unique view designed to display custom data. The terminology of blades, tiles, and perspectives will be used in the sections that follow. 
-Within Update Compliance, we have these primary blades: 
-1.	OS Update Overview
-2.	Overall Quality Update Status
-3.	Latest and Previous Security Update Status
-4.	Overall Feature Update Status
-5.	CB, CBB, LTSB Deployment Status
-6.	List of Queries
+
+In OMS, the aspects of a solution's dashboard are usually divided into <I>blades</I>. Blades are a slice of information, typically with a summarization tile and an enumeration of the items that makes up that data. All data is presented through <I>queries</I>. 
+
+<I>Perspectives</I> are also possible, wherein a given query has a unique view designed to display custom data. The terminology of blades, tiles, and perspectives will be used in the sections that follow. 
+
+Update Compliance has the following primary blades: 
+1. [OS Update Overview](#os-update-overview)
+2. [Overall Quality Update Status](#overall-quality-update-status)
+3. [Latest and Previous Security Update Status](#latest-and-previous-security-update-status)
+4. [Overall Feature Update Status](#overall-feature-update-status)
+5. [CB, CBB, LTSB Deployment Status](#cb-cbb-ltsb-deployment-status)
+6. [List of Queries](#list-of-queries)
 
 ## OS Update Overview
 
-The first blade of OMS Update Compliance is the General OS Update Overview blade. This blade is divided into three sections: Device Summary, Needs Attention Summary, and Device Update Summary.
+The first blade of OMS Update Compliance is the General OS Update Overview blade. This blade is divided into three sections: 
+- Device Summary: 
+- Needs Attention Summary
+- Device Update Summary
 
-The Device Summary displays the total number of devices in your organization. These devices have the commercial ID configured, telemetry enabled, and have sent telemetry to Microsoft within the last 28 days. The tile also shows the devices that Need Attention. 
+![OS Update Overview](images/uc-11.png)
+
+The **Device Summary** displays the total number of devices in your organization. These devices have the commercial ID configured, telemetry enabled, and have sent telemetry to Microsoft within the last 28 days. The tile also shows the devices that Need Attention. 
  
-Needs Attention Summary
-The Needs Attention Summary summarizes the devices that need attention. Devices that need attention are a subset of your total devices. There are multiple reasons why a device may need attention, so these reasons are categorized and summarized in this tile. This tile is interactive. The user will be taken to a table view showing details about the given device counts. 
+### Needs Attention Summary
 
-Needs Attention	Definition
+The **Needs Attention Summary** summarizes devices that require action on your part. There are multiple reasons why a device may need attention. These reasons are categorized and summarized in this tile. This tile is interactive. The user will be taken to a table view showing details about the given device counts. 
 
-Out of Support 	Total number of devices that are no longer receiving servicing updates
-Update failed	When a device has reported a failure at some stage in its update deployment process, it will report that the Update Failed. You can click on this to see the full set of devices with more details about the stage at which a failure was reported, when the device reported a failure, and other data.
-
-Missing 2+ Security Updates
-	Total number of devices that are missing two or more security updates
-Update Progress Stalled	Total number of devices where an update installation has been “in progress” for more than 7 days
-
-Needs Attention Categories
+<TABLE>
+<TR><TH BGCOLOR=blue>Needs Attention<TH BGCOLOR=blue ALIGN=left>Definition
+<TR><TD>Out of Support<TD>Total number of devices that are no longer receiving servicing updates
+<TR><TD>Update failed<TD>When a device has reported a failure at some stage in its update deployment process, it will report that the Update Failed. You can click on this to see the full set of devices with more details about the stage at which a failure was reported, when the device reported a failure, and other data.
+<TR><TD>Missing 2+ Security Updates<TD>Total number of devices that are missing two or more security updates
+<TR><TD>Update Progress Stalled<TD>Total number of devices where an update installation has been “in progress” for more than 7 days
+</TABLE>
  
-Update Status Summary
-The update status summary summarizes your organization's devices per Microsoft's new terminology for identifying the status of your device as it fits into the Windows 10 Windows as a Service (WaaS) model. For more information about WaaS, see Microsoft’s overview article on WaaS. This is broken down into Current, Up-to-date, and Not up-to-date. 
+### Update Status Summary
 
-Update Status	Definition
-Current and Up-to-date	A device that is current is on the latest and greatest Microsoft offers. It is on the very newest feature update (ex. The Windows Anniversary Update, RS1), on the very latest quality update for its servicing branch.
-Up-to-date	A device that is up-to-date is on the latest quality update for its servicing option (CB, CBB, LTSB), and the device is running an OS that is supported by Microsoft.
-Not up-to-date	A device does not have the latest quality update for its servicing option.  
+The update status summary summarizes your organization's devices per Microsoft's new terminology for identifying the status of your device as it fits into the Windows 10 Windows as a Service (WaaS) model. For more information about WaaS, see [Overview of Windows as a service](waas-overview.md). This is broken down into Current, Up-to-date, and Not up-to-date. 
+
+![Device states](images/uc-12.png)
+
+<TABLE>
+<TR><TH BGCOLOR=blue>Update Status<TH BGCOLOR=blue ALIGN=left>Definition
+<TR><TD>Current and Up-to-date<TD>A device that is current is on the latest and greatest Microsoft offers. It is on the very newest feature update (ex. The Windows Anniversary Update, RS1), on the very latest quality update for its servicing branch.
+<TR><TD>Up-to-date<TD>A device that is up-to-date is on the latest quality update for its servicing option (CB, CBB, LTSB), and the device is running an OS that is supported by Microsoft.
+<TR><TD>Not up-to-date<TD>A device does not have the latest quality update for its servicing option.  
+</TABLE>
+
+	
+	
+	
 
  
-Overall Quality Update Status
+### Overall Quality Update Status
+
 OS Quality Update Status is the second blade in Update Compliance. It has a donut data tile and lists the breakdown of the Up-to-date status of devices pivoted on OS version. 
 
 The donut tile offers a summary of all devices in your organization, divided into Up-to-date and Not up-to-date. Recall that devices that are current are also up-to-date.
@@ -60,7 +80,7 @@ The donut tile offers a summary of all devices in your organization, divided int
 The list view contains the breakdown of Up-to-date, Not up-to-date, and Update failed -- all pivoted on OS version (e.g., 1507, 1511, 1607). Clicking on any of the rows of this list view will display the OS Quality Update Summary Perspective for that OS version. 
  
  
-Latest and Previous Security Update Status
+### Latest and Previous Security Update Status
 
 We know that security updates are extremely important to your organization, so in addition to an overall view of Quality Updates, we surface deployment status for the latest two security updates specifically, for each supported OS Build Microsoft offers. 
 
