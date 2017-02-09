@@ -69,6 +69,7 @@ Update Status definitions:
 <TR><TD>Not up-to-date<TD>A device does not have the latest quality update for its servicing option.  
 </TABLE>
 
+
 ## Overall Quality Update Status
 
 **Overall Quality Update Status** is the second blade in Update Compliance. It has a donut data tile and lists the breakdown of the Up-to-date status of devices pivoted on OS version. See the following example: 
@@ -101,6 +102,7 @@ See the following definitions:
 <TR><TD>Update Failed<TD>The count of devices that were **In Progress** for the given security update, but failed at some point in the process. They will no longer be shown as **In Progress or deferred** in this case, and only be counted as **Update failed**.
 <TR><TD>Status Unknown<TD>If a device should be, in some way, progressing toward this security update, but it’s status cannot be inferred, it will count as **Status Unknown**. Devices that are not using Windows Update are the most likely devices to fall into this category.
 </TABLE>
+
 
 ## Overall Feature Update Status
 
@@ -175,6 +177,7 @@ See the following table for a description of last reported states for devices de
 <TR><TD>Blocked<TD>Devices that are blocked are prevented from proceeding further with the given update. This could be because another update is paused, or some other task on the device must be performed before the update process can proceed.
 </TABLE>
  
+
 ### Quality Update Detailed Deployment Status
 
 
@@ -199,6 +202,7 @@ The following table provides a list of the detailed deployment states a device c
 <TR><TD>RebootInitiated<TD>The device has reported to have initiated the reboot process for completing the update. 
 <TR><TD>Update completed<TD>The device has completed installing, rebooting, and applying the update. 
 </TABLE>
+
 
 ## Feature Update Perspective
 
@@ -242,6 +246,7 @@ This blade breaks down the main states a device can be in through the deployment
 <TR><TD>Blocked<TD>Devices that are blocked are prevented from proceeding further with the given update. This could be because another update is paused, or some other task on the device must be performed before the update process can proceed. 
 </TABLE>
  
+
 ### Feature Update Detailed Deployment Status
 
 This blade provides more detail on the deployment process for the update in the Deployment Status blade. This blade is more of a deployment funnel for devices, enabling you to see at a more granular level how devices are progressing along in their deployment. See the following example:
