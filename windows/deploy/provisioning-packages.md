@@ -25,9 +25,15 @@ Provisioning packages are simple enough that with a short set of written instruc
 
 The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Imaging and Configuration Designer (ICD), a tool for configuring provisioning packages. 
 
-## New in Windows 10, Version 1607
+## New in Windows 10, version 1703
 
-Windows ICD for Windows 10, Version 1607, simplifies common provisioning scenarios. 
+- rename
+- Store app
+- more wizards
+
+## New in Windows 10, version 1607
+
+Windows ICD for Windows 10, version 1607, simplifies common provisioning scenarios. 
 
 ![Configuration Designer options](images/icd.png)
 
@@ -76,7 +82,7 @@ Provisioning packages can be:
 
 ### Configuration Designer wizards
 
-The following table describes what you can configure using the wizards in the Configuration Designer to create provisioning packages.
+The following table describes settings that you can configure using the wizards in the Configuration Designer to create provisioning packages.
 
 <table><tr><td align="left">**Step**</td><td align="left">**Description**</td><td>**Desktop</br>wizard**</td><td align="center">**Mobile</br>wizard**</td><td>**Kiosk</br>wizard**</td></tr>
 <tr><td valign="top">Set up device</td><td valign="top">Assign device name,</br>enter product key to upgrade Windows,</br>configure shared used,</br>remove pre-installed software</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</br>(Only device name and upgrade key)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
@@ -93,7 +99,7 @@ The following table describes what you can configure using the wizards in the Co
 
 ### Configuration Designer advanced editor
 
-The following table provides some examples of what you can configure using the Windows Configuration Designer advanced editor to create provisioning packages.
+The following table provides some examples of settings that you can configure using the Windows Configuration Designer advanced editor to create provisioning packages.
 
 | Customization options    | Examples                                                                                      |
 |--------------------------|-----------------------------------------------------------------------------------------------|
