@@ -44,16 +44,6 @@ The following table lists the operating systems supported in USMT.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>32-bit versions of Windows Vista</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>64-bit versions of Windows Vista</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
 <td align="left"><p>32-bit versions of Windows 7</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
@@ -100,36 +90,25 @@ USMT does not support any of the Windows Server® operating systems, Windows 20
 
 -   **Must use latest version of Window PE.** For example, to migrate to Windows 10, you'll need Windows PE 5.1. For more info, see [What's New in Windows PE](http://msdn.microsoft.com/library/windows/hardware/dn938350.aspx).
 
--   **Must run in Administrator Mode** When manually running the **ScanState** and **LoadState** tools on Windows 7, Windows 8 or Windows 10 you must run them in Administrator mode from an account with administrative credentials to ensure that all specified users are migrated. This is because User Access Control (UAC) is enabled by default. If you do not run USMT in Administrator mode, only the user profile that is logged on will be included in the migration.
+-   **Must run as an administrator** When manually running the **ScanState** and **LoadState** tools on Windows 7, Windows 8 or Windows 10 you must run them from an elevated command prompt to ensure that all specified users are migrated. If you do not run USMT from an elevated prompt, only the user profile that is logged on will be included in the migration.
 
-    To run in Administrator mode:
+    To open an elevated command prompt:
 
     1.  Click **Start**.
-
-    2.  Click **All Programs**.
-
-    3.  Click **Accessories**.
-
-    4.  Right-click **Command Prompt**.
-
-    5.  Click **Run as administrator**.
-
-    6.  At the command prompt, type the `ScanState` or `LoadState` command.
+    2.  Enter **cmd** in the search function.
+    3.  Depending on the OS you are using, **cmd** or **Command Prompt** is displayed.
+    3.  Right-click **cmd** or **Command Prompt**, and then click **Run as administrator**.
+    4.  If the current user is not already an administrator, you will be prompted to enter administrator credentials.
 
     **Important**  
-    You must run USMT in Administrator mode from an account with full administrative permissions, including the following privileges:
+    You must run USMT using an account with full administrative permissions, including the following privileges:
 
     -   SeBackupPrivilege (Back up files and directories)
-
     -   SeDebugPrivilege (Debug programs)
-
     -   SeRestorePrivilege (Restore files and directories)
-
     -   SeSecurityPrivilege (Manage auditing and security log)
-
     -   SeTakeOwnership Privilege (Take ownership of files or other objects)
 
-     
 
 -   **Specify the /c option and &lt;ErrorControl&gt; settings in the Config.xml file.** USMT will fail if it cannot migrate a file or setting, unless you specify the **/c** option. When you specify the **/c** option, USMT logs an error each time it encounters a file that is in use that did not migrate, but the migration will not be interrupted. In USMT, you can specify in the Config.xml file which types of errors should allow the migration to continue, and which should cause the migration to fail. For more information about error reporting, and the **&lt;ErrorControl&gt;** element, see [Config.xml File](usmt-configxml-file.md), [Log Files](usmt-log-files.md), and [XML Elements Library](usmt-xml-elements-library.md).
 
