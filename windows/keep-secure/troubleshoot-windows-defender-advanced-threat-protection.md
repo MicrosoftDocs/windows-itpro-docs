@@ -35,34 +35,6 @@ Make sure that `*.securitycenter.windows.com` is included the proxy whitelist.
 > [!NOTE]
 > You must use the HTTPS protocol when adding the following endpoints.
 
-Depending on your region, add the following endpoints to the whitelist:
-
-U.S. region:
-
-- daasmon-cus-prd.cloudapp.net			
-- daasmon-eus-prd.cloudapp.net			
-- dataaccess-cus-prd.cloudapp.net			
-- dataaccess-eus-prd.cloudapp.net			
-- threatintel-cus-prd.cloudapp.net			
-- threatintel-eus-prd.cloudapp.net
-- winatpauthorization.windows.com
-- winatpfeedback.windows.com
-- winatpmanagement.windows.com
-- winatponboarding.windows.com
-- winatpservicehealth.windows.com
-
-EU region:
-
-- dataaccess-neu-prd.cloudapp.net
-- dataaccess-weu-prd.cloudapp.net
-- threatintel-neu-prd.cloudapp.net
-- threatintel-weu-prd.cloudapp.net
-- winatpauthorization.windows.com
-- winatpfeedback.windows.com
-- winatpmanagement.windows.com
-- winatponboarding.windows.com
-- winatpservicehealth.windows.com
-
 ### Windows Defender ATP service shows event or error logs in the Event Viewer
 
 See the topic [Review events and errors on endpoints with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md) for a list of event IDs that are reported by the Windows Defender ATP service. The topic also contains troubleshooting steps for event errors.
