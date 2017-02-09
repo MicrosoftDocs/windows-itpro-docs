@@ -12,6 +12,7 @@ author: greg-lindsay
 
 This section describes how to use Update Compliance to monitor Windows Updates and troubleshoot update failures on your network.
 
+
 Update Compliance: 
 - Uses telemetry gathered from user devices to form an all-up view of Windows 10 devices in your organization. 
 - Enables you to maintain a high-level perspective on the progress and status of updates across all devices.
@@ -23,6 +24,8 @@ Update Compliance:
 In OMS, the aspects of a solution's dashboard are usually divided into <I>blades</I>. Blades are a slice of information, typically with a summarization tile and an enumeration of the items that makes up that data. All data is presented through <I>queries</I>. <I>Perspectives</I> are also possible, wherein a given query has a unique view designed to display custom data. The terminology of blades, tiles, and perspectives will be used in the sections that follow. 
 
 Update Compliance has the following primary blades: 
+
+
 1. [OS Update Overview](#os-update-overview)
 2. [Overall Quality Update Status](#overall-quality-update-status)
 3. [Latest and Previous Security Update Status](#latest-and-previous-security-update-status)
@@ -30,9 +33,11 @@ Update Compliance has the following primary blades:
 5. [CB, CBB, LTSB Deployment Status](#cb-cbb-ltsb-deployment-status)
 6. [List of Queries](#list-of-queries)
 
+
 ## OS Update Overview
 
 The first blade of OMS Update Compliance is the General OS Update Overview blade. 
+
 
 This blade is divided into three sections: 
 - Device Summary: 
@@ -43,9 +48,12 @@ This blade is divided into three sections:
 
 The **Device Summary** displays the total number of devices in your organization. These devices have the commercial ID configured, telemetry enabled, and have sent telemetry to Microsoft within the last 28 days. The tile also shows the devices that Need Attention. 
 
+
 The **Needs Attention Summary** summarizes devices that require action on your part. There are multiple reasons why a device might need attention, and these reasons are categorized and summarized in the tile. You can view details about devices that are categorized as Needs Attention using a table view. 
 
+
 The following **Needs Attention** states are defined:
+
 
 <TABLE>
 <TR><TD BGCOLOR="#cceeff">Needs Attention<TD BGCOLOR="#cceeff" ALIGN=left>Definition
@@ -55,12 +63,15 @@ The following **Needs Attention** states are defined:
 <TR><TD>Update Progress Stalled<TD>Total number of devices where an update installation has been “in progress” for more than 7 days
 </TABLE>
 
+
 The **Update Status Summary** summarizes your organization's devices per the Windows 10 "Windows as a Service" (WaaS) model. For more information about WaaS, see [Overview of Windows as a service](waas-overview.md). Devices are categorized as: **Current**, **Up-to-date**, and **Not up-to-date**. See the following graphical representation of this model:<BR>
+
 
 ![Device states](images/uc-12.png)
 
 
 Update Status definitions:
+
 
 <TABLE>
 <TR><TD BGCOLOR="#cceeff">Update Status<TD BGCOLOR="#cceeff" ALIGN=left>Definition
@@ -74,9 +85,12 @@ Update Status definitions:
 
 **Overall Quality Update Status** is the second blade in Update Compliance. It has a donut data tile and lists the breakdown of the Up-to-date status of devices pivoted on OS version. See the following example: 
 
+
 ![OS Quality Update Status](images/uc-13.png)
 
+
 The donut tile offers a summary of all devices in your organization, divided into **Up-to-date** and **Not up-to-date**. Recall that devices that are current are also up-to-date.
+
 
 The list view contains the breakdown of Up-to-date, Not up-to-date, and Update failed, all pivoted on OS version (e.g., 1507, 1511, 1607). Clicking on any of the rows of this list view will display the **OS Quality Update Summary Perspective** for that OS version. 
  
@@ -85,11 +99,14 @@ The list view contains the breakdown of Up-to-date, Not up-to-date, and Update f
 
 Security updates are extremely important to your organization, so in addition to an overall view of Quality Updates, the deployment status for the latest two security updates are displayed for each supported OS build offered by Microsoft. 
 
+
 ![Latest security update status](images/uc-14.png)
+
 
 For the latest security update, a doughnut chart is displayed across all OS builds with a count of installed, in progress/deferred, update failed, and unknown status relative to that update. Two table views are provided below the doughnut displaying the same breakdown for each OS build supported by Microsoft. 
 
 See the following definitions:
+
 
 <TABLE>
 <TR><TD BGCOLOR="#cceeff">Term<TD BGCOLOR="#cceeff" ALIGN=left>Definition
@@ -113,21 +130,29 @@ Microsoft has developed terms to help specify the state of a given device for ho
 - Up-to-date
 - Not up-to-date
 
+
 See the Update Status Summary section under [OS Update Overview](#os-update-overview) in this guide for definitions of these terms. 
+
 
 The Overall Feature Update Status blade focuses around whether or not your devices are considered Current. See the following example:
 
+
 ![Overall feature update status](images/uc-15.png)
 
+
 Devices are evaluated by OS Version (e.g., 1607) and the count of how many are Current, Not Current, and have Update Failures is displayed. Clicking on any of these counts will allow you to view all those devices, as well as select the **Update Deployment Status** perspective, described below. 
+
 
 ## CB, CBB, LTSB Deployment Status
 
 Following the overview with respect to how current your organization’s devices are, there are three tables that show feature update deployment for all devices. The devices are split up by which branch they are on, as this directly impacts whether they are supported (for example, 1607 may be supported under CBB, but not under CB). This allows you a quick glance at how deployment is progressing across your organization with respect to feature updates. See the following example:
 
+
 ![CB deployment status](images/uc-16.png)
 
+
 The three tables break down devices by Feature update. For each OS version, the following columns provide counts of the various states they can be in:
+
 
 <TABLE>
 <TR><TD BGCOLOR="#cceeff">Deployment Status<TD BGCOLOR="#cceeff" ALIGN=left>Description
@@ -152,21 +177,28 @@ The Quality Update Deployment Status perspective is a breakdown of the most esse
 
 The build summary blade attempts to summarize the most important data points to the user for the given build. It is divided into two sections. The first section is a summary of devices for that build – the total number of devices, and the amount that need attention. Each row within the table below is a breakdown of why each device requires attention. The rows can be interacted with to be taken to a larger table view that shows detailed information about all the devices that meet the given criteria. See the following example:
 
+
 ![Quality update build summary](images/uc-17.png)
+
  
 ### Quality Update Deferral Configurations
 
 The next blade is the Deferral configuration blade, which shows the WUFB Deferral configurations for all devices that are using WUFB and are reporting to Update Compliance. If no information can be gathered from a device or it is not configured to use WUFB, it will show up as “Not configured (-1)”. See the following example:
 
+
 ![Quality Update Deferral Configurations](images/uc-18.png)
+
  
 ### Quality Update Deployment Status
 
 Under the three top-level blades is the deployment status for the newest quality update for the given build. It provides information on the revision number as well as how many days it has been since that revision has been released. See the following example:
 
+
 ![Quality Update Deployment Status](images/uc-19.png)
 
+
 See the following table for a description of last reported states for devices deploying that quality update. 
+
 
 <TABLE>
 <TR><TD BGCOLOR="#cceeff">Deployment State<TD BGCOLOR="#cceeff" ALIGN=left>Description
@@ -183,12 +215,15 @@ See the following table for a description of last reported states for devices de
 
 This blade provides more detail on the deployment process for the update in the Deployment Status blade. This blade is more of a deployment funnel for devices, enabling you to see at a more granular level how devices are progressing along in their deployment. See the following example:
 
+
 ![Quality Update Detailed Deployment Status](images/uc-20.png)
 
 
 >Devices that are not managed using Windows Update (Windows Update for Business or otherwise) will not have detailed deployment information. 
 
+
 The following table provides a list of the detailed deployment states a device can report:
+
 
 <TABLE>
 <TR><TD BGCOLOR="#cceeff">Detailed Deployment State<TD BGCOLOR="#cceeff" ALIGN=left>Description
@@ -207,6 +242,7 @@ The following table provides a list of the detailed deployment states a device c
 
 ## Feature Update Perspective
 
+
 Like Quality Updates, the Feature Update Deployment Status perspective is a breakdown of information most essential to an administrator. This information is viewed by clicking on a given build on the Feature Update Status blade and then navigating to the **Update Deployment Status** pane as displayed previously. In Update Compliance, a perspective is assigned to a query; the query used to generate the perspective can be altered to show other information, if desired.
 
 Every piece of data shown in this view can be clicked; when clicked, it will alter the query to focus only on the data you need. If the perspective is not meaningful after the query is altered, you can use the other data views like the List and Table.
@@ -215,15 +251,19 @@ Every piece of data shown in this view can be clicked; when clicked, it will alt
 
 ### Feature Update Build Summary
 
+
 The Build Summary blade provides a summary for all devices on the given build. It gives a count of all devices, as well as a count of all devices that need attention. Below the counts, you can see why the devices need attention, with a count of devices that fall into each category. See the following example:
 
 ![Feature Update Build Summary](images/uc-21.png)
 
 ### Feature Update Deferral Configuration
 
+
 This blade shows all deferral configurations for the devices on the given build. See the following example:
 
+
 ![Feature Update Deferral Configuration](images/uc-22.png)
+
 
 Deferral configurations are WUfB-specific, and are shown as days. Some useful information regarding how deferral configurations are shown:
 - The devices are grouped based off what their deferral policy is set at. For feature updates, this can be up to 120 days. 
@@ -234,9 +274,12 @@ Deferral configurations are WUfB-specific, and are shown as days. Some useful in
 
 As stated earlier in this section, the Feature Updates blade focuses on how Current your devices are. A device is only Current when it is on the latest feature update and quality update Microsoft offers. Thus, the Deployment Status blade displays the deployment status for devices regarding their deployment to the latest feature update. See the following example:
 
+
 ![Feature Update Deployment Status](images/uc-23.png)
 
+
 This blade breaks down the main states a device can be in through the deployment of a feature update. The possible states are as follows:
+
 
 <TABLE>
 <TR><TD BGCOLOR="#cceeff">Deployment State<TD BGCOLOR="#cceeff" ALIGN=left>Description
@@ -248,13 +291,16 @@ This blade breaks down the main states a device can be in through the deployment
 </TABLE>
  
 
+
 ### Feature Update Detailed Deployment Status
 
 This blade provides more detail on the deployment process for the update in the Deployment Status blade. This blade is more of a deployment funnel for devices, enabling you to see at a more granular level how devices are progressing along in their deployment. See the following example:
 
 ![Feature Update Detailed Deployment Status](images/uc-24.png)
 
+
 The following table displays all states a device can report:
+
 
 <TABLE>
 <TR><TD BGCOLOR="#cceeff">Detailed Deployment State<TD BGCOLOR="#cceeff" ALIGN=left>Description
@@ -271,13 +317,17 @@ The following table displays all states a device can report:
 </TABLE>
 
 
+
 ## List of Queries
 
 Operations Management Suite leverages its powerful Log Analytics querying to perform all data calculations. For this blade, we provide examples of queries that show useful data to the user about their organization’s devices. See the following example:
 
+
 ![List of Queries](images/uc-25.png)
 
+
 The following are the ‘Common queries’, with a description of the data provided:
+
 
 <TABLE>
 <TR><TD BGCOLOR="#cceeff">Query Title<TD BGCOLOR="#cceeff" ALIGN=left>Description
