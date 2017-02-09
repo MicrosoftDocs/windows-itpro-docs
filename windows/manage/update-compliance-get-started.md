@@ -8,7 +8,7 @@ ms.pagetype: deploy
 author: greg-lindsay
 ---
 
-# Get started with Upgrade Compliance
+# Get started with Update Compliance
 
 This topic explains the steps necessary to configure your environment for Windows Analytics: Update Compliance. 
 
