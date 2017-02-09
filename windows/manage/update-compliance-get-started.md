@@ -25,7 +25,7 @@ Update Compliance has the following requirements:
 3. The telemetry of your organization’s Windows devices must be successfully transmitted it to Microsoft. Microsoft has specified endpoints for different aspects of telemetry, which must be whitelisted by your organization so the data can be transmitted. The following table was taken from the article on telemetry endpoints and summarizes the use of each endpoint:
 
     <TABLE BORDER=1>
-    <TR><TH BGCOLOR=blue>Service<TH BGCOLOR=blue>Endpoint
+    <TR><TD BGCOLOR="#cceeff">Service<TD BGCOLOR="#cceeff">Endpoint
     <TR><TD>Connected User Experience and Telemetry component<TD>v10.vortex-win.data.microsoft.com
     <BR>settings-win.data.microsoft.com
     <TR><TD>Windows Error Reporting	<TD>watson.telemetry.microsoft.com
@@ -102,13 +102,13 @@ After you are subscribed to OMS Update Compliance and your devices have a Commer
 
 In order for your devices to show up in Windows Analytics: Update Compliance, they must be configured with your organization’s Commercial ID. This is so that Microsoft knows that a given device is a member of your organization and to feed that device’s data back to you. There are two primary methods for widespread deployment of your Commercial ID: Group Policy and Mobile Device Management (MDM). 
 
-- Using Group Policy<BR>
+- Using Group Policy<BR><BR>
     Deploying your Commercial ID using Group Policy can be accomplished by configuring domain Group Policy Objects with the Group Policy Management Editor, or by configuring local Group Policy using the Local Group Policy Editor.
     1. In the console tree, navigate to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds**
     2. Double-click **Configure the Commercial ID**
     3. In the **Options** box, under **Commercial Id**, type the Commercial ID GUID, and then click **OK**.<P>
 
-- Using Microsoft Mobile Device Management (MDM)<BR>
+- Using Microsoft Mobile Device Management (MDM)<BR><BR>
     Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under **Provider/ProviderID/CommercialID**. More information on deployment using MDM can be found [here](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp).  
 
 
