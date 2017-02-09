@@ -78,7 +78,15 @@ Provisioning packages can be:
 
 The following table describes what you can configure using the wizards in the Configuration Designer to create provisioning packages.
 
-
+<table><tr><th valign="top">Step</th><th valign="top">Description</th><th valign="top">Desktop</br>wizard</th><th align="center" valign="top">Mobile</br>wizard</th><th valign="top">Kiosk</br>wizard</th></tr>
+<tr><td valign="top">Set up device</td><td valign="top">Assign device name,</br>enter product key to upgrade Windows,</br>configure shared used,</br>remove pre-installed software</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</br>(Only device name and upgrade key)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
+<tr><td valign="top">Set up network</td><td valign="top">Connect to a Wi-Fit network</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
+<tr><td valign="top">Account management</td><td valign="top">Enroll device in Active Directory,</br>enroll device in Azure Active Directory,</br>or create a local administrator account</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
+<tr><td valign="top">Bulk Enrollment in Azure AD</td><td valign="top">Enroll device in Azure Active Directory</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td></tr>
+<tr><td valign="top">Add applications</td><td valign="top">?</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
+<tr><td valign="top">Add certificates</td><td valign="top">?</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
+<tr><td valign="top">Configure kiosk account and app</td><td valign="top">Create local account to run the kiosk mode app,</br>specify the app to run in kiosk mode</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
+<tr><td valign="top">Configure kiosk common settings</td><td valign="top">Set tablet mode,</br>configure welcome and shutdown screens,</br>turn off timeout settings</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr></table>
 
 >[!NOTE]
 >After you start a project using a Windows Configuration Designer wizard, you can switch to the advanced editor to configure additional settings in the provisioning package. 
