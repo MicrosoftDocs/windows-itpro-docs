@@ -31,7 +31,7 @@ Before you can create custom threat intelligence (TI) using REST API, you'll nee
 
 3. Copy the individual values or select **Save details to file** to download a file that contains all the values.
 
->[WARNING]
+>[!WARNING]
 >The client secret is only displayed once. Make sure you keep a copy of it in a safe place.
 >For more information about getting a new secret see, [Learn how to get a new secret]().
 
