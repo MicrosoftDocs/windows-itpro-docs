@@ -36,7 +36,7 @@ You use Windows Configuration Designer to create a provisioning package (.ppkg) 
 
     ![Configuration Designer wizards](images/icd-create-options-1703.png)
     
-    - The wizard options provide a simple interface for configuring common settings for desktop, mobile, and kiosk devices. Wizards are also available for creating provisioning packages for Microsoft Surface Hub and Microsoft HoloLens devices. For a summary of the settings available in the desktop, mobile, and kiosk devices, see [What you can configure using Configuration Designer wizard](provisioning-packages.md#configuration-designer-wizards). 
+    - The wizard options provide a simple interface for configuring common settings for desktop, mobile, and kiosk devices. Wizards are also available for creating provisioning packages for Microsoft Surface Hub and Microsoft HoloLens devices. For a summary of the settings available in the desktop, mobile, and kiosk devices, see [What you can configure using Configuration Designer wizardS](provisioning-packages.md#configuration-designer-wizards). 
     
         (NEED TO LINK TO WIZARD TOPICS)
         - For instructions on **Simple provisioning**, see [Provision PCs with common settings](provision-pcs-for-initial-deployment.md). 
@@ -135,11 +135,11 @@ For details on each specific setting, see [Windows Provisioning settings referen
 
 ## Learn more
 
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
+- Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
--   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
+- Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
 
-
+- [How to bulk-enroll devices with On-premises Mobile Device Management in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
 
 ## Related topics
 

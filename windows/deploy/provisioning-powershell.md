@@ -18,29 +18,29 @@ localizationpriority: high
 
 RS2 ships with Windows Provisioning PowerShell cmdlets in box. These cmdlets make it easy to script the following functions
 
-TABLE NOT WORKING; REDO AS HTML W/ROWSPAN
 
-| Cmdlet	| Purpose	| Syntax |
-| --- | --- | --- |
-| Add-ProvisioningPackage | Use this cmdlet to apply a provisioning package. |	```Add-ProvisioningPackage [-Path] <string> [-ForceInstall] [-LogsFolder <string>] [-WprpFile <string>] [<CommonParameters>]``` |
-| Remove-ProvisioningPackage | 	Remove a provisioning package |	```Remove-ProvisioningPackage -PackageId <string> [-LogsFolder <string>] [-WprpFile <string>]  [<CommonParameters>]``` </br></br> ```Remove-ProvisioningPackage -Path <string> [-LogsFolder <string>] [-WprpFile <string>]  [<CommonParameters>]``` </br></br> ```Remove-ProvisioningPackage -AllInstalledPackages [-LogsFolder <string>] [-WprpFile <string>]  [<CommonParameters>]``` |
-| Get-ProvisioningPackage | 	Get information about an installed provisioning package	| ```Get-ProvisioningPackage -PackageId <string> [-LogsFolder <string>] [-WprpFile <string>]  [<CommonParameters>]``` </br></br> ```Get-ProvisioningPackage -Path <string> [-LogsFolder <string>] [-WprpFile <string>] [<CommonParameters>]``` </br></br> ```Get-ProvisioningPackage -AllInstalledPackages [-LogsFolder <string>] [-WprpFile <string>]  [<CommonParameters>]``` |
-| Export-ProvisioningPackage | 	Extract the contents of a provisioning package |	```Export-ProvisioningPackage -PackageId <string> -OutputFolder <string> [-Overwrite] [-AnswerFileOnly] [-LogsFolder <string>] [-WprpFile <string>]  [<CommonParameters>]``` </br></br> ```Export-ProvisioningPackage -Path <string> -OutputFolder <string> [-Overwrite] [-AnswerFileOnly] [-LogsFolder <string>] [-WprpFile <string>]  [<CommonParameters>]``` |
-| Add-TrustedProvisioningCertificate |	Adds a certificate to the Trusted Certificate store | TBD |	
+
+<table><tr><th>Cmdlet</th><th>Purpose</th><th>Syntax</th></tr>
+<tr><td>Add-ProvisioningPackage</td><td> Use this cmdlet to apply a provisioning package</td><td>```Add-ProvisioningPackage [-Path] <string> [-ForceInstall] [-LogsFolder <string>] [-WprpFile <string>] [<CommonParameters>]```</td></tr>
+<tr><td rowspan="3">Remove-ProvisioningPackage</td><td rowspan="3">Remove a provisioning package</td><td>	```Remove-ProvisioningPackage -PackageId <string> [-LogsFolder <string>] [-WprpFile <string>]  [<CommonParameters>]``` </td></tr><tr><td> ```Remove-ProvisioningPackage -Path <string> [-LogsFolder <string>] [-WprpFile <string>]  [<CommonParameters>]``` </td></tr><tr><td> ```Remove-ProvisioningPackage -AllInstalledPackages [-LogsFolder <string>] [-WprpFile <string>]  [<CommonParameters>]``` </td></tr>
+<tr><td rowspan="3">Get-ProvisioningPackage </td><td rowspan="3">	Get information about an installed provisioning package	</td><td> ```Get-ProvisioningPackage -PackageId <string> [-LogsFolder <string>] [-WprpFile <string>]  [<CommonParameters>]``` </td></tr><tr><td>```Get-ProvisioningPackage -Path <string> [-LogsFolder <string>] [-WprpFile <string>] [<CommonParameters>]``` </td></tr><tr><td> ```Get-ProvisioningPackage -AllInstalledPackages [-LogsFolder <string>] [-WprpFile <string>]  [<CommonParameters>]``` </td></tr>
+<tr><td rowspan="2"> Export-ProvisioningPackage</td><td rowspan="2"> 	Extract the contents of a provisioning package</td><td>	```Export-ProvisioningPackage -PackageId <string> -OutputFolder <string> [-Overwrite] [-AnswerFileOnly] [-LogsFolder <string>] [-WprpFile <string>]  [<CommonParameters>]``` </td></tr><tr><td> ```Export-ProvisioningPackage -Path <string> -OutputFolder <string> [-Overwrite] [-AnswerFileOnly] [-LogsFolder <string>] [-WprpFile <string>]  [<CommonParameters>]``` </td></tr>
+<tr><td> Add-TrustedProvisioningCertificate </td><td>	Adds a certificate to the Trusted Certificate store </td><td> TBD </td></tr></table>	
 
 >[!NOTE]
-> You can use Get-Help to get usage help on any command. Example - “Get-Help Add-ProvisioningPackage”.
+> You can use Get-Help to get usage help on any command. For example: `Get-Help Add-ProvisioningPackage`
 
-Trace logs are always captured when using the Cmdlet. The following logs are available in the logs folder after the cmdlet completes: 
-•	ProvTrace.<timestamp>.ETL - ETL trace file, unfiltered
-•	ProvTrace.<timestamp>.XML - ETL trace file converted into raw trace events, unfiltered
-•	ProvTrace.<timestamp>.TXT - TEXT file containing trace output formatted for easy reading, filtered to only show events logged by providers in the WPRP file
-•	ProvLogReport.<timestamp>.XLS - Excel file containing trace output, filtered to only show events logged by providers in WPRP file
-Suggested scenario
-1.	Create a provisioning package using the WCD App.
-2.	Use the Add-ProvisioningPackage to apply the provisioning package.
+Trace logs are captured when using cmdlets. The following logs are available in the logs folder after the cmdlet completes: 
 
-Note: When applying provisioning packages using Powershell cmdlets, the default behavior is to suppress the prompt that appears when applying an unsigned provisioning package. This is by design – so that provisioning packages can be applied as part of existing scripts (like MDT and SCCM task sequences).
+- ProvTrace.&lt;timestamp&gt;.ETL - ETL trace file, unfiltered
+- ProvTrace.&lt;timestamp&gt;.XML - ETL trace file converted into raw trace events, unfiltered
+- ProvTrace.&lt;timestamp&gt;.TXT - TEXT file containing trace output formatted for easy reading, filtered to only show events logged by providers in the WPRP file
+- ProvLogReport.&lt;timestamp&gt;.XLS - Excel file containing trace output, filtered to only show events logged by providers in WPRP file
+
+
+
+>[!NOTE]
+>When applying provisioning packages using Powershell cmdlets, the default behavior is to suppress the prompt that appears when applying an unsigned provisioning package. This is by design so that provisioning packages can be applied as part of existing scripts.
 
 
 ## Related topics
