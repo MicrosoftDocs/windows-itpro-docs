@@ -20,6 +20,9 @@ You use Windows Configuration Designer to create a provisioning package (.ppkg) 
 
 >[Learn how to install Windows Configuration Designer.](provisioning-install-icd.md)
 
+>[!TIP]
+>We recommend creating a local admin account when developing and testing your provisioning package. We also recommend using a “least privileged” domain user account to join devices to the Active Directory domain.
+
 ## Start a new project
 
 1. Open Windows Configuration Designer:
