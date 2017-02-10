@@ -745,7 +745,7 @@
 ##### [Configure an Azure Active Directory application for SIEM integration](configure-aad-windows-defender-advanced-threat-protection.md)
 ##### [Configure Splunk to consume Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
 ##### [Configure HP ArcSight to consume Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
-#### [Understand threat indicators](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+#### [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
 ##### [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
 ##### [Create custom threat intelligence using REST API](custom-ti-api-windows-defender-advanced-threat-protection.md)
 ##### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)

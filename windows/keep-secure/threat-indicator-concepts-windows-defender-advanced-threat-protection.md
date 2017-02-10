@@ -1,7 +1,7 @@
 ---
-title: Understand threat indicators in Windows Defender ATP
-description: Understand the concepts around threat indicators in Windows Defender Advanced Threat Protection so that you can effectively create custom indicators for your organization.
-keywords: threat indicators, alert definitions, indicators of compromise, ioc
+title: Understand threat intelligence concepts in Windows Defender ATP
+description: Understand the concepts around threat intelligence in Windows Defender Advanced Threat Protection so that you can effectively create custom intelligence for your organization.
+keywords: threat intelligence, alert definitions, indicators of compromise, ioc
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -25,9 +25,9 @@ localizationpriority: high
 
 Advanced cybersecurity attacks comprise of multiple complex malicious events, attributes, and contextual information. Identifying and deciding which of these activities qualify as suspicious can be a challenging task. Your knowledge of known attributes and abnormal activities specific to your industry is fundamental in knowing when to call an observed behavior as suspicious.
 
-With Windows Defender ATP, you can create custom threat indicators that can help you keep track of possible attack activities in your organization. You can flag suspicious events to piece together clues and possibly stop an attack chain. These custom indicators will only appear in your organization and will flag events that you set it to track.
+With Windows Defender ATP, you can create custom threat intelligence that can help you keep track of possible attack activities in your organization. You can flag suspicious events to piece together clues and possibly stop an attack chain. These custom intelligence will only appear in your organization and will flag events that you set it to track.
 
-Before creating custom threat indicators, it's important to know the concepts behind alert definitions and indicators of compromise (IOCs) and the relationship between them.
+Before creating custom threat intelligence, it's important to know the concepts behind alert definitions and indicators of compromise (IOCs) and the relationship between them.
 
 ## Alert definitions
 Alert definitions are contextual attributes that can be used collectively to identify early clues on a possible cybersecurity attack. These indicators are typically a combination of activities, characteristics, and actions taken by an attacker to successfully achieve the objective of an attack. Monitoring these combinations of attributes is critical in gaining a vantage point against attacks and possibly interfering with the chain of events before an attacker's objective is reached.
