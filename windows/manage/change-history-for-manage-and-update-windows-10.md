@@ -18,6 +18,9 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 | New or changed topic | Description |
 | --- | --- |
+| [Monitor Windows Updates with Update Compliance](update-compliance-monitor.md) | New |
+| [Get started with Update Compliance](update-compliance-get-started.md) | New |
+| [Use Update Compliance to monitor Windows Updates](update-compliance-using.md) | New |
 | [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) | Added Group Policy setting that blocks user access to Windows Update. |
 | [Distribute offline apps](distribute-offline-apps.md) | General updates to topic. Added links to supporting content for System Center Configuration Manager and Microsoft Intune.  |
 
