@@ -18,6 +18,8 @@ localizationpriority: high
 
 RS2 ships with Windows Provisioning PowerShell cmdlets in box. These cmdlets make it easy to script the following functions
 
+TABLE NOT WORKING; REDO AS HTML W/ROWSPAN
+
 | Cmdlet	| Purpose	| Syntax |
 | --- | --- | --- |
 | Add-ProvisioningPackage | Use this cmdlet to apply a provisioning package. |	```Add-ProvisioningPackage [-Path] <string> [-ForceInstall] [-LogsFolder <string>] [-WprpFile <string>] [<CommonParameters>]``` |
