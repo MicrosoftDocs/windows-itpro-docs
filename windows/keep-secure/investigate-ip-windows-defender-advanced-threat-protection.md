@@ -24,7 +24,7 @@ Examine possible communication between your machines and external internet proto
 
 Identifying all machines in the organization that communicated with a suspected or known malicious IP address, such as Command and Control (C2) servers, helps determine the potential scope of breach, associated files, and infected machines.
 
-You can information from the following sections in the IP address view:
+You can find information from the following sections in the IP address view:
 
 - IP address details
 - IP in organization

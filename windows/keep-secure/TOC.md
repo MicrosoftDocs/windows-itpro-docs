@@ -765,6 +765,7 @@
 ###### [Submit files for analysis](investigate-files-windows-defender-advanced-threat-protection.md#submit-files-for-analysis)
 ###### [View deep analysis reports](investigate-files-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](investigate-files-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
+#### [Investigate a user entity](investigate-user-entity-windows-defender-advanced-threat-protection.md)
 #### [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md)
 #### [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md)
 #### [Check sensor status](check-sensor-status-windows-defender-advanced-threat-protection.md)

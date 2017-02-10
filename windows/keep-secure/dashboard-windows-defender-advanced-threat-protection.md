@@ -21,6 +21,8 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
 The **Dashboard** displays a snapshot of:
 
 - The latest active alerts on your network
@@ -49,11 +51,18 @@ The **Latest ATP alerts** section includes the latest active alerts in your netw
 ## Machines at risk
 This tile shows you a list of machines with the highest number of active alerts. The total number of alerts for each machine is shown in a circle next to the machine name, and then further categorized by severity levels at the far end of the tile (hover over each severity bar to see its label).
 
-![The Machines at risk tile shows a list of machines with the highest number of alerts, and a breakdown of the severity of the alerts](images/machines-at-risk.png)
+![The Machines at risk tile shows a list of machines with the highest number of alerts, and a breakdown of the severity of the alerts](images/atp-machines-at-risk.png)
 
 Click the name of the machine to see details about that machine. For more information see, [Investigate machines in the Windows Defender Advanced Threat Protection Machines view](investigate-machines-windows-defender-advanced-threat-protection.md).
 
 You can also click **Machines view** at the top of the tile to go directly to the **Machines view**, sorted by the number of active alerts. For more information see, [Investigate machines in the Windows Defender Advanced Threat Protection Machines view](investigate-machines-windows-defender-advanced-threat-protection.md).
+
+## Users at risk
+The tile shows you a list of user accounts with the most active alerts. The total number of alerts for each user is shown in a circle next to the user account, and then further categorized by severity levels at the far end of the tile (hover over each severity bar to see its label).
+
+![User accounts at risk tile shows a list of user accounts with the highest number of alerts and a breakdown of the severity of the alerts](images/atp-users-at-risk.png)
+
+Click the user account to see details about the user account. For more information see [Investigate a user entity in Windows Defender Advanced Threat Protection]
 
 ## Machines with active malware detections
 The **Machines with active malware detections** tile will only appear if your endpoints are using Windows Defender.

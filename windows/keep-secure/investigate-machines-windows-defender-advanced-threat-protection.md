@@ -44,13 +44,15 @@ When you investigate a specific machine, you'll see:
 
 The machine details, total logged on users and machine reporting sections display various attributes about the machine. You’ll see details such as machine name, health status, actions you can take on the machine, domain, operating system (OS), total logged on users and who frequently and less frequently logged on, IP address, and how long it's been reporting sensor data to the Windows Defender ATP service.
 
-Clicking on the number of total logged on users in the Logged on user tile opens the **Users Details** pane that displays the following information for logged on users in the past 30 days:
+Clicking on the number of total logged on users in the Logged on user tile opens the Users Details pane that displays the following information for logged on users in the past 30 days:
 
 -	User account domain\\user account name
 -	Date and time they were last observed on the machine
 -	Date and time they were first observed on the machine
 
 ![Image of user details pane](images/atp-user-details-pane.png)
+
+ For more information see [Investigate user entities](investigate-user-entity-windows-defender-advanced-threat-protection.md).
 
 The **Alerts related to this machine** section provides a list of alerts that are associated with the machine. This list is a simplified version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows the date when the last activity was detected, a short description of the alert, the user associated with the alert, the alert's severity, the alert's status in the queue, and who is addressing the alert.
 
