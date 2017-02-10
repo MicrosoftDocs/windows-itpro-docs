@@ -347,4 +347,4 @@ These parameters are compatible with the [OData V4 query language](http://docs.o
 ## Related topics
 - [Understand threat intelligence](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
 - [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot custom custom threat intelligence issues](troubleshoot-custom-ti-api-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)

@@ -50,4 +50,4 @@ IOCs have a many-to-one relationship with alert definitions such that an alert d
 ## Related topic
 - [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
 - [Create custom threat indicators using REST API](custom-ti-api-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot custom custom threat intelligence issues](troubleshoot-custom-ti-api-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
