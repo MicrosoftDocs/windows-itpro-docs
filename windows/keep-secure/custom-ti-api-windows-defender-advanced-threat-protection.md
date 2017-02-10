@@ -80,6 +80,8 @@ An ID is created for that alert definition. You would then create an Indicator O
 POST https://TI.SecurityCenter.Windows.com/v1.0/AlertDefinition HTTP/1.1
 Authorization: Bearer <access_token>
 Content-Type: application/json;
+
+
 {
   "Name": " The name of the IOA. Does not appear in the portal. Max length: 100 ",
   "Severity": "Low",
