@@ -33,6 +33,8 @@ The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://develo
 - Windows Configuration Designer adds more wizards to make it easier to create provisioning packages for specific scenarios. See [What you can configure](#configuration-designer-wizards) for wizard descriptions.
 - The wizard **Provision desktop devices** (previously called **Simple provisioning**) now enables joining Azure Active Directory (Azure AD) domains and also allows you to remove non-Microsoft software from Windows desktop devices during provisioning.
 - Provisioning packages can be made available [using NFC and barcodes](provisioning-nfc.md). 
+- When provisioning packages are applied to a device, a status screen indicates successful or failed provisioning. 
+- Windows 10 includes PowerShell cmdlets that simplify scripted provisioning. Using these cmdlets, you can add provisioning packages, remove provisioning packages and generate log files to investigate provisioning errors.
 - The **Provision school devices** wizard is removed from Windows Configuration Designer. Instead, use the **Setup School PCs** app from the Windows Store.
 
 
