@@ -24,8 +24,23 @@ localizationpriority: high
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 You might need to troubleshoot issues while using the custom threat intelligence feature.
-This page provides detailed steps to troubleshoot issues you might encounter and common errors that might occur.
 
-State | Potential cause of error | Error message
-:---|:---|:---
-Initialize | - Service call timed out </br> - 
+This page provides detailed steps to troubleshoot issues you might encounter while using the feature.
+
+
+## Get a new secret
+If your client secret expires or if you've misplaced the copy provided when you were enabling the custom threat intelligence application,  you'll need to get a new secret.
+
+1. Login to the [Azure management portal](https://ms.portal.azure.com).
+
+2. Select **Active Directory**.
+
+3. Select your tenant.
+
+4. Click **Application**, then select your custom threat intelligence application.
+
+5. Select **Keys** section, then provide a key description and specify the key validity duration.
+
+6. Click **Save**. The key value is displayed.
+
+7. Copy the value and save it in a safe place.

@@ -42,3 +42,4 @@ You'll need to use these values on the JSON file when doing REST API calls.
 ## Related topics
 - [Understand threat intelligence](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
 - [Create custom threat intelligence](custom-ti-api-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot custom custom threat intelligence issues](troubleshoot-custom-ti-api-windows-defender-advanced-threat-protection.md)

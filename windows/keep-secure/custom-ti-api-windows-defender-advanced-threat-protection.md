@@ -345,5 +345,6 @@ $count |	boolean |	A collection and the number of items in the collection.
 These parameters are compatible with the [OData V4 query language](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356).
 
 ## Related topics
-[Understand threat intelligence](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-[Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Understand threat intelligence](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+- [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot custom custom threat intelligence issues](troubleshoot-custom-ti-api-windows-defender-advanced-threat-protection.md)
