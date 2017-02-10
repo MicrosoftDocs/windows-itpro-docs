@@ -1,8 +1,8 @@
-﻿---
+---
 title: Upgrade Analytics requirements (Windows 10)
 description: Provides requirements for Upgrade Analytics.
 ms.prod: w10
-author: MaggiePucciEvans
+author: greg-lindsay
 ---
 
 # Upgrade Analytics requirements
@@ -33,6 +33,10 @@ If you are not using OMS, go to [the Upgrade Analytics page on Microsoft.com](ht
 
 Important: You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory, use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
 
+## System Center Configuration Manager integration
+
+Upgrade Analytics can be integrated with your installation of Configuration Manager. For more information, see [Integrate Upgrade Analytics with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
+
 ## Telemetry and data sharing 
 
 After you’ve signed in to Operations Management Suite and added the Upgrade Analytics solution to your workspace, you’ll need to complete the following tasks to allow user computer data to be shared with and assessed by Upgrade Analytics.
@@ -41,17 +45,13 @@ See [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields
 
 **Whitelist telemetry endpoints.** To enable telemetry data to be sent to Microsoft, you’ll need to whitelist the following Microsoft telemetry endpoints on your proxy server or firewall. You may need to get approval from your security group to do this.
 
-`https://v10.vortex-win.data.microsoft.com/collect/v1`
-
-`https://settings-win.data.microsoft.com/settings`
-
-`https://vortex.data.microsoft.com/health/keepalive`
-
-`https://settings.data.microsoft.com/qos`
-
-`https://go.microsoft.com/fwlink/?LinkID=544713`
-
-`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc/extended`
+`https://v10.vortex-win.data.microsoft.com/collect/v1`<BR>
+`https://vortex-win.data.microsoft.com/health/keepalive`<BR>
+`https://settings-win.data.microsoft.com/settings`<BR>
+`https://vortex.data.microsoft.com/health/keepalive`<BR>
+`https://settings.data.microsoft.com/qos`<BR>
+`https://go.microsoft.com/fwlink/?LinkID=544713`<BR>
+`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc/extended`<BR>
 
 >**Note** The compatibility update KB runs under the computer’s system account and does not support user authentication in this release.
 
