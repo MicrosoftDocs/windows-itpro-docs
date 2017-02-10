@@ -19,6 +19,9 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | --- | --- |
 |[Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) | Added Group Policy setting that blocks user access to Windows Update. |
 | [Distribute offline apps](distribute-offline-apps.md) | General updates to topic. Added links to supporting content for System Center Configuration Manager and Microsoft Intune.  |
+| [Monitor Windows Updates with Update Compliance](update-compliance-monitor.md) | New |
+| [Get started with Update Compliance](update-compliance-get-started.md) | New |
+| [Use Update Compliance to monitor Windows Updates](update-compliance-using.md) | New |
 |[What's new in App-V for Windows 10, version 1703 and earlier](appv-about-appv.md)|Updated to include new features in App-V for Windows 10, version 1703. |
 |[Release Notes for App-V for Windows 10, version 1703](appv-release-notes-for-appv-for-windows-1703.md)|New |
 |[Automatically sequence a new app using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-sequence-a-new-app.md) |New |
