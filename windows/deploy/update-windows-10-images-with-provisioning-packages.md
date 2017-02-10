@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: jdeckerMS
+redirect_url: https://technet.microsoft.com/itpro/windows/deploy/provisioning-packages
 ---
 
 # Update Windows 10 images with provisioning packages

@@ -348,3 +348,7 @@ OS Distribution for the devices	This query provides a chart view displaying the 
 <TR><TD>Deferral configurations for Quality Update<TD>This query provides a chart view which displays a breakdown of the different Quality Update deferral configurations through WUfB that the devices seen by the solution are using.<BR><BR>The configuration is in days. 0 days means the device has WUfB deferrals configured, but is not set to defer quality updates. -1 means the device has no quality update deferral policies configured.
 <TR><TD>Pause configurations for Quality Update<TD>This query provides to a chart view displaying the breakdown of devices that are either paused, or not paused for quality updates.<BR><BR>**Not configured** means the device is not paused. **Paused** means it is currently paused. 
 </TABLE>
+
+## Related topics
+
+[Get started with Update Compliance](update-compliance-get-started.md)
