@@ -49,6 +49,9 @@ These steps are illustrated in following diagram:
 ![Update Compliance architecture](images/uc-01.png)
 
 >This process assumes that Windows telemetry is enabled and devices are assigned your Commercial ID.
+
+
+
  
 ## Related topics
 
