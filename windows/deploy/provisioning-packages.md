@@ -14,8 +14,8 @@ localizationpriority: high
 
 **Applies to**
 
--   Windows 10
--   Windows 10 Mobile
+- Windows 10
+- Windows 10 Mobile
 
 Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. Using Windows provisioning, an IT administrator can easily specify desired configuration and settings required to enroll the devices into management and then apply that configuration to target devices in a matter of minutes. It is best suited for small- to medium-sized businesses with deployments that range from tens to a few hundred computers. 
 
@@ -23,63 +23,41 @@ A provisioning package (.ppkg) is a container for a collection of configuration 
 
 Provisioning packages are simple enough that with a short set of written instructions, a student or non-technical employee can use them to configure their device. This can result in a significant reduction in the time required to configure multiple devices in your organization.
 
-The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Imaging and Configuration Designer (ICD), a tool for configuring provisioning packages. 
+The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Windows Configuration Designer, a tool for configuring provisioning packages. Windows Configuration Designer is also available as an app in the Windows Store. 
 
 
 ## New in Windows 10, version 1703
 
-- rename
-- Store app
-- more wizards
+- The tool for creating provisioning packages is renamed Windows Configuration Designer, replacing the Windows Imaging and Configuration Designer (ICD) tool. The components for creating images have been removed from Windows Configuration Designer, which now provides access to runtime settings only.
+- Windows Configuration Designer can still be installed from the Windows ADK. You can also install it from the Windows Store.
+- Windows Configuration Designer adds more wizards to make it easier to create provisioning packages for specific scenarios. See [What you can configure](#configuration-designer-wizards) for wizard descriptions.
+- The wizard **Provision desktop devices** (previously called **Simple provisioning**) now enables joining Azure Active Directory (Azure AD) domains and also allows you to remove non-Microsoft software from Windows desktop devices during provisioning.
+- Provisioning packages can be made available [using NFC and barcodes](provisioning-nfc.md). 
+- The **Provision school devices** wizard is removed from Windows Configuration Designer. Instead, use the **Setup School PCs** app from the Windows Store.
 
-
-## New in Windows 10, version 1607
-
-
-Windows ICD for Windows 10, version 1607, simplifies common provisioning scenarios. 
-
-![Configuration Designer options](images/icd.png)
-
-Windows ICD in Windows 10, version 1607, supports the following scenarios for IT administrators:
-
-* **Simple provisioning** – Enables IT administrators to define a desired configuration in Windows ICD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner. 
-
-    > [Learn how to use simple provisioning to configure Windows 10 computers.](provision-pcs-for-initial-deployment.md)
-
-* **Advanced provisioning (deployment of classic (Win32) and Universal Windows Platform (UWP) apps, and certificates)** – Allows an IT administrator to use Windows ICD to open provisioning packages in the advanced settings editor and include apps for deployment on end-user devices. 
-
-    > [Learn how to use advanced provisioning to configure Windows 10 computers with apps and certificates.](provision-pcs-with-apps-and-certificates.md)
-
-* **Mobile device enrollment into management** - Enables IT administrators to purchase off-the-shelf retail Windows 10 Mobile devices and enroll them into mobile device management (MDM) before handing them to end-users in the organization. IT administrators can use Windows ICD to specify the management end-point and apply the configuration on target devices by connecting them to a Windows PC (tethered deployment) or through an SD card. Supported management end-points include: 
-
-    * System Center Configuration Manager and Microsoft Intune hybrid (certificate-based enrollment) 
-    * AirWatch (password-string based enrollment) 
-    * Mobile Iron (password-string based enrollment) 
-    * Other MDMs (cert-based enrollment) 
-
-> [!NOTE]
-> Windows ICD in Windows 10, version 1607, also provides a wizard to create provisioning packages for school PCs. To learn more, see [Set up students' PCs to join domain](https://technet.microsoft.com/edu/windows/index).
 
 ## Benefits of provisioning packages
 
 
 Provisioning packages let you:
 
--   Quickly configure a new device without going through the process of installing a new image.
+- Quickly configure a new device without going through the process of installing a new image.
 
--   Save time by configuring multiple devices using one provisioning package.
+- Save time by configuring multiple devices using one provisioning package.
 
--   Quickly configure employee-owned devices in an organization without a mobile device management (MDM) infrastructure.
+- Quickly configure employee-owned devices in an organization without a mobile device management (MDM) infrastructure.
 
--   Set up a device without the device having network connectivity.
+- Set up a device without the device having network connectivity.
 
 Provisioning packages can be:
 
--   Installed using removable media such as an SD card or USB flash drive.
+- Installed using removable media such as an SD card or USB flash drive.
 
--   Attached to an email.
+- Attached to an email.
 
--   Downloaded from a network share.
+- Downloaded from a network share.
+
+- Deployed in NFC tags or barcodes.
 
 ## What you can configure
 
@@ -120,16 +98,45 @@ The following table provides some examples of settings that you can configure us
 
 For details about the settings you can customize in provisioning packages, see [Windows Provisioning settings reference]( https://go.microsoft.com/fwlink/p/?LinkId=619012).
 
+## Changes to provisioning in Windows 10, version 1607
+
+>[!NOTE]
+>This section is retained for customers using Windows 10, version 1607, on the Current Branch for Business. Some of this information is not applicable in Windows 10, version 1703.
+
+Windows ICD for Windows 10, version 1607, simplified common provisioning scenarios. 
+
+![Configuration Designer options](images/icd.png)
+
+Windows ICD in Windows 10, version 1607, supported the following scenarios for IT administrators:
+
+* **Simple provisioning** – Enables IT administrators to define a desired configuration in Windows ICD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner. 
+
+    > [Learn how to use simple provisioning to configure Windows 10 computers.](provision-pcs-for-initial-deployment.md)
+
+* **Advanced provisioning (deployment of classic (Win32) and Universal Windows Platform (UWP) apps, and certificates)** – Allows an IT administrator to use Windows ICD to open provisioning packages in the advanced settings editor and include apps for deployment on end-user devices. 
+
+    > [Learn how to use advanced provisioning to configure Windows 10 computers with apps and certificates.](provision-pcs-with-apps-and-certificates.md)
+
+* **Mobile device enrollment into management** - Enables IT administrators to purchase off-the-shelf retail Windows 10 Mobile devices and enroll them into mobile device management (MDM) before handing them to end-users in the organization. IT administrators can use Windows ICD to specify the management end-point and apply the configuration on target devices by connecting them to a Windows PC (tethered deployment) or through an SD card. Supported management end-points include: 
+
+    * System Center Configuration Manager and Microsoft Intune hybrid (certificate-based enrollment) 
+    * AirWatch (password-string based enrollment) 
+    * Mobile Iron (password-string based enrollment) 
+    * Other MDMs (cert-based enrollment) 
+
+> [!NOTE]
+> Windows ICD in Windows 10, version 1607, also provided a wizard to create provisioning packages for school PCs. To learn more, see [Set up students' PCs to join domain](https://technet.microsoft.com/edu/windows/index).
+
 ## Learn more
 
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
+- Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
--   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
+- Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
 
 ## Related topics
 
 - [How provisioning works in Windows 10](provisioning-how-it-works.md)
-- [Install Windows Imaging and Configuration Designer](provisioning-install-icd.md)
+- [Install Windows Configuration Designer](provisioning-install-icd.md)
 - [Create a provisioning package](provisioning-create-package.md)
 - [Apply a provisioning package](provisioning-apply-package.md)
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
@@ -137,7 +144,7 @@ For details about the settings you can customize in provisioning packages, see [
 - [Provision PCs with apps and certificates for initial deployments (advanced provisioning)](provision-pcs-with-apps-and-certificates.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
 - [NFC-based device provisioning](provisioning-nfc.md)
-- [Windows ICD command-line interface (reference)](provisioning-command-line.md)
+- [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
 
 
