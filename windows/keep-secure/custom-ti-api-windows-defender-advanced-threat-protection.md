@@ -25,6 +25,10 @@ localizationpriority: high
 
 You can define custom alert definitions and indicators of compromise (IOC) using the available APIs. Creating custom TI’s allows you to create specific alerts that are applicable to your organization.
 
+## Before you begin
+Before creating custom TI's, you'll need to enable the custom TI application in Azure Active Directory and generate access tokens. For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md).
+
+### Use the available REST API to create custom TI's
 You can call and specify the resource URLs using one of the following operations to access and manipulate a custom TI resource, you call and specify the resource URLs using one of the following operations:
 
 -	GET
@@ -339,3 +343,7 @@ $skip |	int	| The number of items to skip in a result set.
 $count |	boolean |	A collection and the number of items in the collection.
 
 These parameters are compatible with the [OData V4 query language](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356).
+
+## Related topics
+[Understand threat intelligence](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+[Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)

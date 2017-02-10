@@ -46,4 +46,5 @@ Here is an example of an IOC:
 IOCs have a many-to-one relationship with alert definitions such that an alert definition can have many IOCs that correspond to it.
 
 ## Related topic
+- [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
 - [Create custom threat indicators using REST API](custom-ti-api-windows-defender-advanced-threat-protection.md)
