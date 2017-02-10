@@ -349,6 +349,6 @@ OS Distribution for the devices	This query provides a chart view displaying the 
 <TR><TD>Pause configurations for Quality Update<TD>This query provides to a chart view displaying the breakdown of devices that are either paused, or not paused for quality updates.<BR><BR>**Not configured** means the device is not paused. **Paused** means it is currently paused. 
 </TABLE>
 
-# Related topics
+## Related topics
 
 [Get started with Update Compliance](update-compliance-get-started.md)
