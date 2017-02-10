@@ -748,6 +748,7 @@
 #### [Understand threat indicators](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
 ##### [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
 ##### [Create custom threat intelligence using REST API](custom-ti-api-windows-defender-advanced-threat-protection.md)
+##### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
 #### [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
 #### [Machines view overview](machines-view-overview-windows-defender-advanced-threat-protection.md)
 #### [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md)

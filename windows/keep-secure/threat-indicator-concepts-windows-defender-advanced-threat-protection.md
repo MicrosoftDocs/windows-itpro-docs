@@ -1,7 +1,7 @@
 ---
 title: Understand threat indicators in Windows Defender ATP
 description: Understand the concepts around threat indicators in Windows Defender Advanced Threat Protection so that you can effectively create custom indicators for your organization.
-keywords: threat indicators, alert definitions, indicators of compromise, concepts
+keywords: threat indicators, alert definitions, indicators of compromise, ioc
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -20,6 +20,8 @@ localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Advanced cybersecurity attacks comprise of multiple complex malicious events, attributes, and contextual information. Identifying and deciding which of these activities qualify as suspicious can be a challenging task. Your knowledge of known attributes and abnormal activities specific to your industry is fundamental in knowing when to call an observed behavior as suspicious.
 

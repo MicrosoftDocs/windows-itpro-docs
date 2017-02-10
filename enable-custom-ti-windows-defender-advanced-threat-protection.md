@@ -1,7 +1,7 @@
 ---
-title: Enable the custom threat intelligence using REST API in Windows Defender ATP
-description: Create your custom Alert definitions and Indicators of Compromise in Windows Defender ATP using the available APIs in Windows Enterprise, Education, and Pro editions.
-keywords: alert definitions, indicators of compromise, threat indicators, custom ti, rest api, api
+title: Enable the custom threat intelligence application in Windows Defender ATP
+description: Enable the custom threat intelligence application in Windows Defender ATP so that you can create custom threat intelligence using REST API.
+keywords: enable custom threat intelligence application, custom ti application, application name, client id, authorization url, resource, client secret, access tokens
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
