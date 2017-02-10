@@ -15,7 +15,10 @@ author: greg-lindsay
 
 
 -   [Supported Operating Systems](#bkmk-1)
--   [Software Requirements](#bkmk-2)
+-   [Windows PE](#windows-pe)
+-   [Credentials](#credentials)
+-   [Config.xml](#config-xml)
+-   [LoadState](#loadstate)
 -   [Hard Disk Requirements](#bkmk-3)
 -   [User Prerequisites](#bkmk-userprereqs)
 
