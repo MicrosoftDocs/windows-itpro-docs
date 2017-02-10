@@ -112,3 +112,6 @@ In order for your devices to show up in Windows Analytics: Update Compliance, th
     Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under **Provider/ProviderID/CommercialID**. More information on deployment using MDM can be found [here](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp).  
 
 
+# Related topics
+
+[Use Update Compliance to monitor Windows Updates](update-compliance-using.md)
