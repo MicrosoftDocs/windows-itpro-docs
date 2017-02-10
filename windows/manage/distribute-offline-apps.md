@@ -18,7 +18,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can download apps and their licenses to deploy within their network, or on devices that are not connected to the Internet. ISVs or devs can opt-in their apps for offline licensing when they submit them to the Windows Dev Center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in the Windows Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store.
+Offline licensing is a new licensing option for Windows 10 Store for Business. With offline licenses, organizations can download apps and their licenses to deploy within their network, or on devices that are not connected to the Internet. ISVs or devs can opt-in their apps for offline licensing when they submit them to the Windows Dev Center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in the Windows Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store.
 
 ## Why offline-licensed apps?
 
@@ -33,50 +33,49 @@ Offline-licensed apps offer an alternative to online apps, and provide additiona
 
 ## Distribution options for offline-licensed apps
 
+You can't distribute offline-licensed apps directly from the Store for Business. Once you download the items for the offline-licensed app, you have options for distributing the apps:
 
-You can't distribute offline-licensed apps directly from the Store for Business. Once you download the items for the offline-licensed app, you have three options for distributing the apps:
+-   **Deployment Image Servicing and Management**. DISM is a command-line tool that is used to mount and service Microsoft Windows images before deployment. You can also use DISM to install, uninstall, configure, and update Windows features, packages, drivers, and international settings in a .wim file or VHD using the DISM servicing commands. DISM commands are used on offline images. For more information, see [Deployment Image Servicing and Management](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
 
--   **Deployment Image Servicing and Management**. DISM is a command-line tool that is used to mount and service Microsoft WindowsWindows images before deployment. You can also use DISM to install, uninstall, configure, and update Windows features, packages, drivers, and international settings in a .wim file or VHD using the DISM servicing commands. DISM commands are used on offline images. For more information, see [Deployment Image Servicing and Management](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
+-   **Create provisioning package**. You can use Windows Imaging and Configuration Designer (ICD) to create a provisioning package for your offline app. Once you have the package, there are options to [apply the provisioning package](https://technet.microsoft.com/itpro/windows/deploy/provisioning-apply-package). For more information, see [Provisioning Packages for Windows 10](https://technet.microsoft.com/itpro/windows/deploy/provisioning-packages).
 
--   **Windows ICD**. ICD is GUI tool that you can use to create Windows provisioning answer files, and add third-party drivers, apps, or other assets to an answer file. For more information, see [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113.aspx).
+-   **Mobile device management provider or management server.** You can use a mobile device management (MDM) provider or management server to distribute offline apps. For more information, see these topics:
+    - [Manage apps from Windows Store for Business with System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+    - [Manage apps from Windows Store for Business with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)<br>
 
--   **Management server.**
+For third-party MDM providers or management servers, check your product documentation. 
 
 ## Download an offline-licensed app
 
+There are several items to download or create for offline-licensed apps. The app package and app license are required; app metadata and app frameworks are optional. This section includes more info on each item, and tells you how to download an offline-licensed app.
 
-There are several items to download or create for offline-licensed apps. You'll need all of these items to distribute offline apps to your employees. This section includes more info on each item, and tells you how to download an offline-licensed app.
+-   **App metadata** - App metadata is optional. The metadata includes app details, links to icons, product id, localized product ids, and other items. Devs who plan to use an app as part of another app or tool, might want the app metadata. 
 
--   **App metadata** -- App metadata is required for distributing offline apps. The metadata includes app details, links to icons, product id, localized product ids, and other items.
+-   **App package** - App packages are required for distributing offline apps. There are app packages for different combinations of app platform and device architecture. You'll need to know what device architectures you have in your organization to know if there are app packages to support your devices.
 
--   **App package** -- App packages are required for distributing offline apps. There are app packages for different combinations of app platform and device architecture. You'll need to know what device architectures you have in your organization to know if there are app packages to support your devices.
+-   **App license** - App licenses are required for distributing offline apps. Use encoded licenses when you distribute offline-licensed apps using a management tool or ICD. Use unencoded licenses when you distribute offline-licensed apps using DISM.
 
--   **App license** -- App licenses are required for distributing offline apps. Use encoded licenses when you distribute offline-licensed apps using a management tool or ICD. Use unencoded licenses when you distribute offline-licensed apps using DISM.
-
--   **App frameworks** -- App frameworks are required for distributing offline apps, but you might not need to download one. If you already have the required framework, you don't need to download another copy. The Store for Business will select the app framework needed for the app platform and architecture that you selected.
+-   **App frameworks** - App frameworks are optional. If you already have the required framework, you don't need to download another copy. The Store for Business will select the app framework needed for the app platform and architecture that you selected.
 
 <a href="" id="download-offline-licensed-app"></a>
 **To download an offline-licensed app**
 
-1.  Sign in to the Store for Business
+1.  Sign in to the [Store for Business](http://businessstore.microsoft.com/).
 
 2.  Click **Manage**, and then choose **Inventory**.
 
 3.  Click **Refine**, and then choose **Offline**.
 
 4.  Find the app you want to download, click the ellipses under **Actions**, and then choose **Download for offline use**.
+    - **To download app metadata**: Choose the language for the app metadata, and then click **Download**. Save the downloaded app metadata. This is optional. 
+    - **To download app package**: Click to expand the package details information, choose the Platform and Architecture combination that you need for your organization, and then click **Download**. Save the downloaded app package. This is required. 
+    - **To download an app license**: Choose either **Encoded**, or **Unencoded**, and then click **Generate license**. Save the downloaded license. This is required. 
+    - **To download an app framework**: Find the framework you need to support your app package, and click **Download**. This is optional. 
+ 
+> [!NOTE]
+> You need the framework to support your app package, but if you already have a copy, you don't need to download it again. Frameworks are backward compatible.
 
-5.  To download app metadata: choose the language for the app metadata, and then click **Download**. Save the downloaded app metadata.
-
-6.  To download app package for offline use: click to expand the package details information, choose the Platform and Architecture combination that you need for your organization, and then click **Download**. Save the downloaded app package.
-
-7.  To download an app license: choose either **Encoded**, or **Unencoded**, and then click **Generate license**. Save the downloaded license.
-
-8.  To download an app framework: find the framework you need to support your app package, and click **Download**.
-    **Note**  
-    You need the framework to support your app package, but if you already have a copy, you don't need to download it again.
-
-    Frameworks are backward compatible.
+    
 
      
 

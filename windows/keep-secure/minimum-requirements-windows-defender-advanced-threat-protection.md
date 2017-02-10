@@ -24,6 +24,8 @@ localizationpriority: high
 There are some minimum requirements for onboarding your network and endpoints.
 
 ## Minimum requirements
+You must be on Windows 10, version 1607 at a minimum.
+For more information, see [Windows 10 Enterprise edition](https://www.microsoft.com/en-us/WindowsForBusiness/buy).
 
 ### Network and data storage and configuration requirements
 When you run the onboarding wizard for the first time, you must choose where your Windows Defender Advanced Threat Protection-related information is stored: either in a European or United States datacenter.
@@ -33,6 +35,7 @@ When you run the onboarding wizard for the first time, you must choose where you
 -   Review the [Windows Defender ATP data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md) for more information on where and how Microsoft stores your data.
 
 ### Endpoint hardware and software requirements
+
 The Windows Defender ATP agent only supports the following editions of Windows 10:
 
 - Windows 10 Enterprise
@@ -61,7 +64,7 @@ Before you configure endpoints, the telemetry and diagnostics service must be en
 
 ### Telemetry and diagnostics settings
 You must ensure that the telemetry and diagnostics service is enabled on all the endpoints in your organization.
-By default, this service is enabled, but it's good practice to check to ensure that you'll get telemetry from them.
+By default, this service is enabled, but it's good practice to check to ensure that you'll get sensor data from them.
 
 **Use the command line to check the Windows 10 telemetry and diagnostics service startup type**:
 
@@ -108,9 +111,9 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
 ## Windows Defender signature updates are configured
 The Windows Defender ATP agent depends on Windows Defender’s ability to scan files and provide information about them. If Windows Defender is not the active antimalware in your organization, you may need to configure the signature updates. For more information see [Configure Windows Defender in Windows 10](windows-defender-in-windows-10.md).
 
-When Windows Defender is not the active antimalware in your organization and you use the Windows Defender ATP service, Windows Defender goes on passive mode. For more information, see the **Compatibility** section in the [Windows Defender in Windows 10 topic](windows-defender-in-windows-10.md# compatibility-with-windows-defender-advanced-threat-protection).
+When Windows Defender is not the active antimalware in your organization and you use the Windows Defender ATP service, Windows Defender goes on passive mode. For more information, see the **Compatibility** section in the [Windows Defender in Windows 10 topic](windows-defender-in-windows-10.md).
 
 ## Windows Defender Early Launch Antimalware (ELAM) driver is enabled
 If you're running Windows Defender as the primary antimalware product on your endpoints, the Windows Defender ATP agent will successfully onboard.
 
-If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender ELAM driver is enabled. For more information on how to validate and enable the Windows Defender ELAM driver see, [Ensure the Windows Defender ELAM driver is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-windows-defender-elam-driver-is-enabled).
+If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender ELAM driver is enabled. For more information, see [Ensure that Windows Defender is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-is-not-disabled-by-a-policy).

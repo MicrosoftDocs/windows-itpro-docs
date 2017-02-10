@@ -48,9 +48,11 @@ With Windows 10, you can create provisioning packages that let you quickly and e
 
 #### New Bitlocker features in Windows 10, version 1507
 
--   **Encrypt and recover your device with Azure Active Directory**. In addition to using a Microsoft Account, automatic [Device Encryption](http://technet.microsoft.com/library/dn306081.aspx#bkmk-encryption) can now encrypt your devices that are joined to an Azure Active Directory domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Azure Active Directory. This will make it easier to recover your BitLocker key online.
--   **DMA port protection**. You can use the [DataProtection/AllowDirectMemoryAccess](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) MDM policy to block DMA ports when the device is starting up. Also, when a device is locked, all unused DMA ports are turned off, but any devices that are already plugged into a DMA port will continue to work. When the device is unlocked, all DMA ports are turned back on.
--   **New Group Policy for configuring pre-boot recovery**. You can now configure the pre-boot recovery message and recover URL that is shown on the pre-boot recovery screen. For more info, see the "Configure pre-boot recovery message and URL" section in [BitLocker Group Policy settings](../keep-secure/bitlocker-group-policy-settings.md).
+<!-- The link in the first bullet below will need to be refreshed Jan/Feb 2017. -->
+
+-   **Encrypt and recover your device with Azure Active Directory**. In addition to using a Microsoft Account, automatic [Device Encryption](https://technet.microsoft.com/itpro/windows/keep-secure/windows-10-security-guide#device-encryption) can now encrypt your devices that are joined to an Azure Active Directory domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Azure Active Directory. This will make it easier to recover your BitLocker key online.
+-   **DMA port protection**. You can use the [DataProtection/AllowDirectMemoryAccess](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#dataprotection-allowdirectmemoryaccess) MDM policy to block DMA ports when the device is starting up. Also, when a device is locked, all unused DMA ports are turned off, but any devices that are already plugged into a DMA port will continue to work. When the device is unlocked, all DMA ports are turned back on.
+-   **New Group Policy for configuring pre-boot recovery**. You can now configure the pre-boot recovery message and recover URL that is shown on the pre-boot recovery screen. For more info, see the [Configure pre-boot recovery message and URL](https://technet.microsoft.com/itpro/windows/keep-secure/bitlocker-group-policy-settings#bkmk-configurepreboot) section in "BitLocker Group Policy settings."
 
 [Learn how to deploy and manage BitLocker within your organization](../keep-secure/bitlocker-overview.md).
 
@@ -231,11 +233,12 @@ In Windows 10, User Account Control has added some improvements.
 ### VPN profile options
 
 Windows 10 provides a set of VPN features that both increase enterprise security and provide an improved user experience, including:
-•	Always-on auto connection behavior 
-•	App=triggered VPN 
-•	VPN traffic filters
-•	Lock down VPN
-•	Integration with Microsoft Passport for Work
+
+- Always-on auto connection behavior 
+- App=triggered VPN 
+- VPN traffic filters
+- Lock down VPN
+- Integration with Microsoft Passport for Work
 
 [Learn more about the VPN options in Windows 10.](../keep-secure/vpn-profile-options.md)
 

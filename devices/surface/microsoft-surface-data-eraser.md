@@ -16,21 +16,23 @@ author: miladCA
 
 Find out how the Microsoft Surface Data Eraser tool can help you securely wipe data from your Surface devices.
 
-[Microsoft Surface Data Eraser](https://go.microsoft.com/fwlink/p/?LinkId=691148) is a tool that boots from a USB stick and allows you to perform a secure wipe of all data from a compatible Surface device. A Microsoft Surface Data Eraser USB stick requires only the ability to boot from USB. The USB tool is easy to create by using the provided wizard, the Microsoft Surface Data Eraser Wrapper, and is easy to use with a simple graphic interface, no command line needed. To learn more about the data wiping capabilities and practices Microsoft uses during the service process for Surface, see [Protecting your data if you send your Surface in for service](https://go.microsoft.com/fwlink/p/?LinkId=691222).
+[Microsoft Surface Data Eraser](https://www.microsoft.com/download/details.aspx?id=46703) is a tool that boots from a USB stick and allows you to perform a secure wipe of all data from a compatible Surface device. A Microsoft Surface Data Eraser USB stick requires only the ability to boot from USB. The USB stick is easy to create by using the provided wizard, the Microsoft Surface Data Eraser wrapper, and is easy to use with a simple graphic interface, no command line needed. To learn more about the data wiping capabilities and practices Microsoft uses during the service process for Surface, see [Protecting your data if you send your Surface in for service](https://www.microsoft.com/surface/support/security-sign-in-and-accounts/data-wiping-policy).
 
 Compatible Surface devices include:
 
--   Surface Book
+- Surface Studio
 
--   Surface Pro 4
+- Surface Book
 
--   Surface Pro3
+- Surface Pro 4
 
--   Surface 3
+- Surface Pro3
 
--   Surface 3 LTE
+- Surface 3
 
--   Surface Pro 2
+- Surface 3 LTE
+
+- Surface Pro 2
 
 Some scenarios where Microsoft Surface Data Eraser can be helpful include:
 
@@ -42,9 +44,11 @@ Some scenarios where Microsoft Surface Data Eraser can be helpful include:
 
 -   Standard practice when performing reimaging for devices used with sensitive data
 
->**Note:**&nbsp;&nbsp;Third-party devices, Surface devices running Windows RT (including Surface and Surface 2), and Surface Pro are not compatible with Microsoft Surface Data Eraser.
+>[!NOTE]
+>Third-party devices, Surface devices running Windows RT (including Surface and Surface 2), and Surface Pro are not compatible with Microsoft Surface Data Eraser.
 
->**Note:**&nbsp;&nbsp;Because the ability to boot to USB is required to run Microsoft Surface Data Eraser, if the device is not configured to boot from USB or if the device is unable to boot or POST successfully, the Microsoft Surface Data Eraser tool will not function.
+>[!NOTE]
+>Because the ability to boot to USB is required to run Microsoft Surface Data Eraser, if the device is not configured to boot from USB or if the device is unable to boot or POST successfully, the Microsoft Surface Data Eraser tool will not function.
 
 
 ## How to create a Microsoft Surface Data Eraser USB stick
@@ -71,7 +75,9 @@ After the creation tool is installed, follow these steps to create a Microsoft S
     *Figure 1. Start the Microsoft Surface Data Eraser tool*
 
 4.  Select the USB drive of your choice from the **USB Thumb Drive Selection** page as shown in Figure 2, and then click **Start** to begin the USB creation process. The drive you select will be formatted and any existing data on this drive will be lost.
-  >**Note:**&nbsp;&nbsp;If the Start button is disabled, check that your removable drive has a total capacity of at least 4 GB.
+
+  >[!NOTE]
+  >If the Start button is disabled, check that your removable drive has a total capacity of at least 4 GB.
   
     ![USB thumb drive selection](images/dataeraser-usb-selection.png "USB thumb drive selection")
 
@@ -94,43 +100,41 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
 
 1.  Insert the bootable Microsoft Surface Data Eraser USB stick into the supported Surface device.
 
-2.  Ensure your system firmware is set to boot to USB. To enter the firmware settings:
+2.  Boot your Surface device from the Microsoft Surface Data Eraser USB stick. To boot your device from the USB stick follow these steps:
 
-    1.  Turn off your Surface device.
+    a. Turn off your Surface device.
 
-    2.  Press and hold the **Volume Up** button.
+    b. Press and hold the **Volume Down** button.
 
-    3.  Press and release the **Power** button.
+    c. Press and release the **Power** button.
 
-    4.  Release the **Volume Up** button.
+    d. Release the **Volume Down** button.
+    
+    >[!NOTE]
+    >If your device does not boot to USB using these steps, you may need to turn on the **Enable Alternate Boot Sequence** option in Surface UEFI. You can read more about Surface UEFI boot configuration in [Manage Surface UEFI Settings](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings).
 
-3.  When the Surface device boots, a **SoftwareLicenseTerms** text file is displayed.
+3.  When the Surface device boots, a **SoftwareLicenseTerms** text file is displayed, as shown in Figure 4.
 
     ![Booting the Microsoft Surface Data Eraser USB stick](images/data-eraser-3.png "Booting the Microsoft Surface Data Eraser USB stick")
 
     *Figure 4. Booting the Microsoft Surface Data Eraser USB stick*
 
-4.  Read the software license terms, and then close the notepad file.
+4.  Read the software license terms, and then close the Notepad file.
 
-5.  Accept or Decline the Software License Terms by typing **Accept** or **Decline**.
+5.  Accept or decline the software license terms by typing **Accept** or **Decline**. You must accept the license terms to continue.
 
-6.  Select one of the following three options:
+6.  The Microsoft Surface Data Eraser script detects the storage devices that are present in your Surface device and displays the details of the native storage device. To continue, press **Y** (this action runs Microsoft Surface Data Eraser and removes all data from the storage device) or press **N** (this action shuts down the device without removing data).
 
-    -   **Enter S to start Data Erase** – Select this option to begin the data erase process. You will have a chance to confirm in the next step.
+  >[!NOTE]
+  >The Microsoft Surface Data Eraser tool will delete all data, including Windows operating system files required to boot the device, in a secure and unrecoverable way. To boot a Surface device that has been wiped with Microsoft Surface Data Eraser, you will first need to reinstall the Windows operating system. To remove data from a Surface device without removing the Windows operating system, you can use the **Reset your PC** function. However, this does not prevent your data from being recovered with forensic or data recovery capabilities. See [Recovery options in Windows 10](https://support.microsoft.com/help/12415/windows-10-recovery-options) for more information.
 
-    -   **Enter D to perform Diskpart** – Select this option to use diskpart.exe to manage partitions on your disk.
+  ![Partition to be erased is displayed](images/sda-fig5-erase.png "Partition to be erased is displayed")
+  
+  *Figure 5. Partition to be erased is displayed in Microsoft Surface Data Eraser*
 
-    -   **Enter X to shut device down** – Select this option to perform no action and shut down the device.
+7.  If you pressed **Y** in step 6, due to the destructive nature of the data erasure process, an additional dialog box is displayed to confirm your choice.
 
-7.  If you typed **S** to begin the data erase process, the partition that will be erased is displayed, as shown in Figure 5. If this is correct, press **Y** to continue, or **N** to shut down the device.
-
-    ![Partition to be erased is displayed](images/sda-fig5-erase.png "Partition to be erased is displayed")
-
-    *Figure 5. Partition to be erased is displayed in Microsoft Surface Data Eraser*
-
-8.  If you pressed **Y** in step 7, due to the destructive nature of the data erasure process, an additional dialog box is displayed to confirm your choice.
-
-9.  Click the **Yes** button to continue erasing data on the Surface device.
+8.  Click the **Yes** button to continue erasing data on the Surface device.
 
  
 

@@ -44,7 +44,7 @@ To isolate Windows Store apps on your network, you need to use Group Policy to d
 
 -   [Prerequisites](#prerequisites)
 
--   [Step 1: Define your network](#step-1-Define-your-network)
+-   [Step 1: Define your network](#step-1-define-your-network)
 
 -   [Step 2: Create custom firewall rules](#step-2-create-custom-firewall-rules)
 

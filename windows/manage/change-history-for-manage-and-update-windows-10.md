@@ -12,6 +12,40 @@ author: jdeckerMS
 
 This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+>If you're looking for **update history** for Windows 10, see [Windows 10 and Windows Server 2016 update history](https://support.microsoft.com/help/12387/windows-10-update-history).
+
+## February 2017
+
+| New or changed topic | Description |
+| --- | --- |
+| [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) | Added Group Policy setting that blocks user access to Windows Update. |
+| [Distribute offline apps](distribute-offline-apps.md) | General updates to topic. Added links to supporting content for System Center Configuration Manager and Microsoft Intune.  |
+
+## January 2017
+
+| New or changed topic | Description |
+| --- | --- |
+| [Cortana integration in your business or enterprise](cortana-at-work-overview.md) | New |
+| [Start layout XML for desktop editions of Windows 10](start-layout-xml-desktop.md) | New (previously published in Hardware Dev Center on MSDN) |
+| [Start layout XML for mobile editions of Windows 10](start-layout-xml-mobile.md) | New (previously published in Hardware Dev Center on MSDN) |
+| [Quick guide to Windows as a service](waas-quick-start.md) | Added video that explains how Windows as a service works. |
+| [Manage device restarts after updates](waas-restart.md) | Added Registry keys for controlling restarts. |
+
+## December 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| [Quick guide to Windows as a service](waas-quick-start.md) | New |
+| [Manage Windows 10 in your organization - transitioning to modern management](manage-windows-10-in-your-organization-modern-management.md)  | Added video demonstration of the latest in modern management for Windows 10 |
+| [Windows Store for Business overview](windows-store-for-business-overview.md)   | Updated list of supported markets. |
+
+## November 2016
+
+| New or changed topic | Description |
+| --- | --- |
+| [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) | Added guidance for switching devices between servicing branches |
+| [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) | Added Windows 10 IoT Mobile |
+
 ## October 2016
 
 | New or changed topic | Description |
@@ -19,7 +53,9 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | [Manage device restarts after updates](waas-restart.md) | New |
 | [Manage Windows 10 in your organization - transitioning to modern management](manage-windows-10-in-your-organization-modern-management.md)  | New |
 | [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md) |Added an important note about Cortana and Office 365 integration. |
+| [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) | Fixed the explanation for Start behavior when the .xml file containing the layout is not available when the user signs in. | 
 | [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added link to the Windows Restricted Traffic Limited Functionality Baseline. Added Teredo Group Policy. |
+| [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) | Added Current Branch for Business (CBB) support for Windows 10 IoT Mobile. |
 
 
 ## September 2016

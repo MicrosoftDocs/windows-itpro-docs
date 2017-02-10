@@ -17,16 +17,14 @@ localizationpriority: high
 
 -   Windows 10
 
-**Looking for consumer information?**
-
--   [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
+>**Looking for consumer information?** See [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
 In Windows 10 Enterprise and Windows 10 Education, you can use a Group Policy Object (GPO) to deploy a customized Start and taskbar layout to users in a domain. No reimaging is required, and the layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start and taskbar layouts for different departments or organizations, with minimal management overhead.
 
 This topic describes how to update Group Policy settings to display a customized Start and taskbar layout when the users sign in. By creating a domain-based GPO with these settings, you can deploy a customized Start and taskbar layout to users in a domain.
 
-**Warning**  
-When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups. When you apply a taskbar layout, users will still be able to pin and unpin apps, and change the order of pinned apps.
+>[!WARNING]  
+>When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups. When you apply a taskbar layout, users will still be able to pin and unpin apps, and change the order of pinned apps.
 
  
 
@@ -46,15 +44,15 @@ Three features enable Start and taskbar layout control:
 
 -   The [Export-StartLayout](https://go.microsoft.com/fwlink/p/?LinkID=620879) cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
-    **Note**  
-    To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
+    >[!NOTE]  
+    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
 
--    [You can modify the Start .xml file](configure-windows-10-taskbar.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.
+-    [You can modify the Start .xml file](configure-windows-10-taskbar.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration. 
 
--   In Group Policy, you use the **Start Layout** settings for the **Start Menu and Taskbar** administrative template to set a Start and taskbar layout from an .xml file when the policy is applied.
+-   In Group Policy, you use the **Start Layout** settings for the **Start Menu and Taskbar** administrative template to set a Start and taskbar layout from an .xml file when the policy is applied. The Group Policy object doesn't support an empty tile layout, so the default tile layout for Windows is loaded in that case.
 
-**Note**  
-To learn how customize Start to include your line-of-business apps when you deploy Windows 10, see [Customize the Windows 10 Start layout]( https://go.microsoft.com/fwlink/p/?LinkId=620863).
+>[!NOTE]  
+>To learn how customize Start to include your line-of-business apps when you deploy Windows 10, see [Customize the Windows 10 Start layout]( https://go.microsoft.com/fwlink/p/?LinkId=620863).
 
  
 
@@ -67,7 +65,7 @@ The GPO applies the Start and taskbar layout at the next user sign-in. Each time
 
 The GPO can be configured from any computer on which the necessary ADMX and ADML files (StartMenu.admx and StartMenu.adml) for Windows 10 are installed.
 
-The .xml file with the Start and taskbar layout must be located on shared network storage that is available to the users’ computers when they sign in and the users must have Read-only access to the file. If the file is not available at sign-in, Start and the taskbar are not customized during the session, and the user can make changes to Start.
+The .xml file with the Start and taskbar layout must be located on shared network storage that is available to the users’ computers when they sign in and the users must have Read-only access to the file. If the file is not available when the first user signs in, Start and the taskbar are not customized during the session, but the user will be prevented from making changes to Start. On subsequent sign-ins, if the file is available at sign-in, the layout it contains will be applied to the user's Start and taskbar.
 
 For information about deploying GPOs in a domain, see [Working with Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=620889).
 
@@ -76,12 +74,11 @@ For information about deploying GPOs in a domain, see [Working with Group Policy
 
 You can use the Local Group Policy Editor to provide a customized Start and taskbar layout for any user who signs in on the local computer. To display the customized Start and taskbar layout for any user who signs in, configure **Start Layout** policy settings for the **Start Menu and Taskbar** administrative template. You can use the **Start Menu and Taskbar** administrative template in **User Configuration** or **Computer Configuration**.
 
-**Note**  
-This procedure applies the policy settings on the local computer only. For information about deploying the Start and taskbar layout to users in a domain, see [Use Group Policy to deploy a customized Start layout in a domain](#bkmk-domaingpodeployment).
+>[!NOTE]  
+>This procedure applies the policy settings on the local computer only. For information about deploying the Start and taskbar layout to users in a domain, see [Use Group Policy to deploy a customized Start layout in a domain](#bkmk-domaingpodeployment).
+>
+>This procedure creates a Local Group Policy that applies to all users on the computer. To configure Local Group Policy that applies to a specific user or group on the computer, see [Step-by-Step Guide to Managing Multiple Local Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=620881). The guide was written for Windows Vista and the procedures still apply to Windows 10.
 
-This procedure creates a Local Group Policy that applies to all users on the computer. To configure Local Group Policy that applies to a specific user or group on the computer, see [Step-by-Step Guide to Managing Multiple Local Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=620881). The guide was written for Windows Vista and the procedures still apply to Windows 10.
-
- 
 
 This procedure adds the customized Start and taskbar layout to the user configuration, which overrides any Start layout settings in the local computer configuration when a user signs in on the computer.
 
@@ -107,10 +104,10 @@ This procedure adds the customized Start and taskbar layout to the user configur
 
     3.  Optionally, enter a comment to identify the Start and taskbar layout.
 
-    **Important**  
-    If you disable Start Layout policy settings that have been in effect and then re-enable the policy, users will not be able to make changes to Start, however the layout in the .xml file will not be reapplied unless the file has been updated. In Windows PowerShell, you can update the timestamp on a file by running the following command:
+    >[!IMPORTANT]  
+    >If you disable Start Layout policy settings that have been in effect and then re-enable the policy, users will not be able to make changes to Start, however the layout in the .xml file will not be reapplied unless the file has been updated. In Windows PowerShell, you can update the timestamp on a file by running the following command:
 
-    `(ls <path>).LastWriteTime = Get-Date`
+    >`(ls <path>).LastWriteTime = Get-Date`
 
      
 

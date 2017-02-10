@@ -25,14 +25,17 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
 ## Set up
 
 - Both PCs (local and remote) must be running Windows 10, version 1607. Remote connection to an Azure AD-joined PC that is running earlier versions of Windows 10 is not supported.
-- Ensure [Remote Credential Guard](../keep-secure/remote-credential-guard.md), a new feature in Windows 10, version 1607, is turned off on the client PC.
+- Ensure [Remote Credential Guard](../keep-secure/remote-credential-guard.md), a new feature in Windows 10, version 1607, is turned off on the client PC that you are using to connect to the remote PC.
 - On the PC that you want to connect to:
   1. Open system properties for the remote PC. 
   2. Enable **Allow remote connections to this computer** and select **Allow connections only from computers running Remote Desktop with Network Level Authentication**. 
 
    ![Allow remote connections to this computer](images/allow-rdp.png)
 
-  3. If the user who joined the PC to Azure AD is the only one who is going to connect remotely, no additional configuration is needed. To allow additional users, click **Select Users**.
+  3. If the user who joined the PC to Azure AD is the only one who is going to connect remotely, no additional configuration is needed. To allow additional users to connect to the PC, you must allow remote connections for the local **Authenticated Users** group. Click **Select Users**.
+  >[!NOTE]
+  >You cannot specify individual Azure AD accounts for remote connections.
+
   4. Enter **Authenticated Users**, then click **Check Names**. If the **Name Not Found** window opens, click **Locations** and select this PC.
 
  

@@ -1,5 +1,6 @@
 # [Surface](index.md)
 ## [Deploy Surface devices](deploy.md)
+### [Long-Term Servicing Branch for Surface devices](ltsb-for-surface.md)
 ### [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md)
 ### [Upgrade Surface devices to Windows 10 with MDT](upgrade-surface-devices-to-windows-10-with-mdt.md)
 ### [Customize the OOBE for Surface deployments](customize-the-oobe-for-surface-deployments.md)
@@ -12,6 +13,8 @@
 ### [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)
 ### [Manage Surface Dock firmware updates](manage-surface-dock-firmware-updates.md)
 ### [Surface Dock Updater](surface-dock-updater.md)
+### [Wake On LAN for Surface devices](wake-on-lan-for-surface-devices.md)
+## [Considerations for Surface and System Center Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md)
 ## [Deploy Surface app with Windows Store for Business](deploy-surface-app-with-windows-store-for-business.md)
 ## [Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices](enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md)
 ## [Manage Surface UEFI settings](manage-surface-uefi-settings.md)
@@ -19,7 +22,9 @@
 ## [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
 ### [Enroll and configure Surface devices with SEMM](enroll-and-configure-surface-devices-with-semm.md)
 ### [Unenroll Surface devices from SEMM](unenroll-surface-devices-from-semm.md)
+### [Use System Center Configuration Manager to manage devices with SEMM](use-system-center-configuration-manager-to-manage-devices-with-semm.md)
 ## [Surface Diagnostic Toolkit](surface-diagnostic-toolkit.md)
 ## [Surface Data Eraser](microsoft-surface-data-eraser.md)
+## [Change history for Surface documentation](change-history-for-surface.md)
 
 

@@ -1,5 +1,5 @@
 ---
-title: On-premises deployment (Surface Hub)
+title: On-premises deployment single forest (Surface Hub)
 description: This topic explains how you add a device account for your Microsoft Surface Hub when you have a single-forest, on-premises deployment.
 ms.assetid: 80E12195-A65B-42D1-8B84-ECC3FCBAAFC6
 keywords: single forest deployment, on prem deployment, device account, Surface Hub
@@ -11,12 +11,12 @@ author: TrudyHa
 localizationpriority: medium
 ---
 
-# On-premises deployment (Surface Hub)
+# On-premises deployment for Surface Hub in a single-forest environment
 
 
 This topic explains how you add a device account for your Microsoft Surface Hub when you have a single-forest, on-premises deployment.
 
-If you have a single-forest on-premises deployment with Microsoft Exchange 2013 or later and Skype for Business 2013 or later, then you can [use the provided PowerShell scripts](appendix-a-powershell-scripts-for-surface-hub.md#create-on-premise-ps-scripts) to create device accounts. If you’re using a multi-forest deployment, you can use equivalent cmdlets that will produce the same results. Those cmdlets are described in this section.
+If you have a single-forest on-premises deployment with Microsoft Exchange 2013 or later and Skype for Business 2013 or later, then you can [use the provided PowerShell scripts](appendix-a-powershell-scripts-for-surface-hub.md#create-on-premise-ps-scripts) to create device accounts. If you’re using a multi-forest deployment, see [On-premises deployment for Surface Hub in a multi-forest environment](on-premises-deployment-surface-hub-multi-forest.md).
 
 1.  Start a remote PowerShell session from a PC and connect to Exchange.
 
@@ -99,7 +99,7 @@ If you have a single-forest on-premises deployment with Microsoft Exchange 2013 
 8.  OPTIONAL: You can also allow your Surface Hub to make and receive public switched telephone network (PSTN) phone calls by enabling Enterprise Voice for your account. Enterprise Voice isn't a requirement for Surface Hub, but if you want PSTN dialing functionality for the Surface Hub client, here's how to enable it:
 
     ```PowerShell
-    CsMeetingRoom HUB01 -DomainController DC-ND-001.contoso.com
+    Set-CsMeetingRoom HUB01 -DomainController DC-ND-001.contoso.com
      -LineURItel: +14255550555;ext=50555" Set-CsMeetingRoom -DomainController DC-ND-001.contoso.com
      -Identity HUB01 -EnterpriseVoiceEnabled $true
     ```

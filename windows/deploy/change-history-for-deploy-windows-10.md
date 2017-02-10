@@ -14,7 +14,30 @@ This topic lists new and updated topics in the [Deploy Windows 10](index.md) doc
 ## January 2017
 | New or changed topic | Description |
 |----------------------|-------------|
+| [Get started with Upgrade Analytics](upgrade-analytics-get-started.md) | Updated structure and content | 
+| [Upgrade Analytics deployment script](upgrade-analytics-deployment-script.md) | Added as a separate page from get started | 
+| [Use Upgrade Analytics to manage Windows upgrades](use-upgrade-analytics-to-manage-windows-upgrades.md) | Updated with links to new content and information about the target OS setting | 
+| [Upgrade Analytics - Upgrade overview](upgrade-analytics-upgrade-overview.md) | New | 
+| [Upgrade Analytics - Step 1: Identify important apps](upgrade-analytics-identify-apps.md) | Updated topic title and content | 
+| [Upgrade Analytics - Step 2: Resolve app and driver issues](upgrade-analytics-resolve-issues.md) | New | 
+| [Upgrade Analytics - Step 3: Deploy Windows](upgrade-analytics-deploy-windows.md) | New | 
+| [Upgrade Analytics - Additional insights](upgrade-analytics-additional-insights.md) | New | 
+| [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md) | New | 
+| [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) | New | 
+| [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md) | New | 
+| [Apply a provisioning package](provisioning-apply-package.md) | New (previously published in other topics) | 
+| [Create a provisioning package for Windows 10](provisioning-create-package.md) | New (previously published in Hardware Dev Center on MSDN) | 
+| [Create a provisioning package with multivariant settings](provisioning-multivariant.md) | New (previously published in Hardware Dev Center on MSDN) | 
+| [How provisioning works in Windows 10](provisioning-how-it-works.md) | New (previously published in Hardware Dev Center on MSDN) | 
+| [Install Windows Imaging and Configuration Designer](provisioning-install-icd.md) | New (previously published in Hardware Dev Center on MSDN) |
+| [NFC-based device provisioning](provisioning-nfc.md) | New (previously published in Hardware Dev Center on MSDN) | 
+| [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md) | New (previously published in Hardware Dev Center on MSDN) | 
+| [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md) | New (previously published in Hardware Dev Center on MSDN) |
+|  [Windows ICD command-line interface (reference)](provisioning-command-line.md) | New (previously published in Hardware Dev Center on MSDN) |
 | [Get started with Upgrade Analytics](upgrade-analytics-get-started.md) | Updated exit code table with suggested fixes, and added link to the Upgrade Analytics blog | 
+| [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md) | Instructions for applying the provisioning package moved to [Apply a provisioning package](provisioning-apply-package.md) |
+| [Provision PCs with apps and certificates for initial deployments (advanced provisioning)](provision-pcs-with-apps-and-certificates.md) | Instructions for applying the provisioning package moved to [Apply a provisioning package](provisioning-apply-package.md) |
+
 
 ## October 2016
 | New or changed topic | Description |

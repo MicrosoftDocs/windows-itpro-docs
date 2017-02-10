@@ -597,7 +597,7 @@ To create a new Office 365 Education subscription for use in the classroom, use 
 
 2. On the **Get started** page, in **Enter your school email address**, type your school email address, and then click **Sign up**.
 
-   You will receive an email in your school email account. 
+   You will receive an email in your school email account.
 3. Click the hyperlink in the email in your school email account.
 
 4. On the **One last thing** page, complete your user information, and then click **Start**.
@@ -627,7 +627,7 @@ Now that you have created your new Office 365 Education subscription, add the do
 
 To make it easier for faculty and students to join your Office 365 Education subscription (or *tenant*), allow them to automatically sign up to your tenant (*automatic tenant join*). In automatic tenant join, when a faculty member or student signs up for Office 365, Office 365 automatically adds (joins) the user to your Office 365 tenant.
 
->**Note**&nbsp;&nbsp;By default, automatic tenant join is enabled in Office 365 Education, with the exception of certain areas in Europe, the Middle East, and Africa. These countries require opt-in steps to add new users to existing Office 365 tenants. Check your country requirements to determine the automatic tenant join default configuration. Also, if you use Azure AD Connect, then automatic tenant join is disabled. For more information, see [Office 365 Education Self-Sign up: Technical FAQ](https://support.office.com/en-us/article/Office-365-Education-Self-Sign-up-Technical-FAQ-7fb1b2f9-94c2-4cbb-b01e-a6eca34261d6?ui=en-US&rs=en-US&ad=US&WT.mc_id=eml_CXM__33537_MOD_EDU_Student_Advantage_Rush).
+>**Note**&nbsp;&nbsp;By default, automatic tenant join is enabled in Office 365 Education, with the exception of certain areas in Europe, the Middle East, and Africa. These countries/regions require opt-in steps to add new users to existing Office 365 tenants. Check your country/region requirements to determine the automatic tenant join default configuration. Also, if you use Azure AD Connect, then automatic tenant join is disabled. For more information, see [Office 365 Education Self-Sign up: Technical FAQ](https://support.office.com/en-us/article/Office-365-Education-Self-Sign-up-Technical-FAQ-7fb1b2f9-94c2-4cbb-b01e-a6eca34261d6?ui=en-US&rs=en-US&ad=US&WT.mc_id=eml_CXM__33537_MOD_EDU_Student_Advantage_Rush).
 
 Office 365 uses the domain portion of the user’s email address to know which Office 365 tenant to join. For example, if a faculty member or student provides an email address of user@contoso.edu, then Office 365 automatically performs one of the following tasks:
 
@@ -728,7 +728,7 @@ To implement this method, perform the following steps:
    Put the student information in the format the bulk-import feature requires.
 2. Bulk-import the student information into Azure AD.
 
-   For more information about how to perform this step, see the [Bulk-import user and group accounts in Office 365](#bulk-import-user-and-group-accounts-in-office-365) section.
+   For more information about how to perform this step, see the [Bulk-import user and group accounts into Office 365](#bulk-import-user-and-group-accounts-into-office-365) section.
 
 #### Summary
 
@@ -841,7 +841,7 @@ After you have selected your user and group account bulk import method, you’re
 
 With the bulk-import source file finished, you’re ready to import the user and group accounts into AD DS. The steps for importing the file are slightly different for each method.
 
->**Note**&nbsp;&nbsp;Bulk-import your group accounts first, and then import your user accounts. Importing in this order allows you to specify group membership when you import your user accounts. 
+>**Note**&nbsp;&nbsp;Bulk-import your group accounts first, and then import your user accounts. Importing in this order allows you to specify group membership when you import your user accounts.
 
 For more information about how to import user accounts into AD DS by using:
 
@@ -891,7 +891,7 @@ Microsoft Exchange Online uses an email distribution group as a single email rec
 
 You can create email distribution groups based on job role (such as teacher, administration, or student) or specific interests (such as robotics, drama club, or soccer team). You can create any number of distribution groups, and users can be members of more than one group.
 
->**Note**&nbsp;&nbsp;Office 365 can take some time to complete the Exchange Online creation process. You will have to wait until the creation process ends before you can perform the following steps. 
+>**Note**&nbsp;&nbsp;Office 365 can take some time to complete the Exchange Online creation process. You will have to wait until the creation process ends before you can perform the following steps.
 
 
 For information about creating email distribution groups, see [Create an Office 365 Group in the admin center](https://support.office.com/en-us/article/Create-an-Office-365-Group-in-the-admin-center-74a1ef8b-3844-4d08-9980-9f8f7a36000f?ui=en-US&rs=en-001&ad=US).
@@ -935,7 +935,7 @@ To create and configure your Windows Store for Business portal, simply use the a
 
 5. In the **Welcome to the Windows Store for Business** dialog box, click **OK**.
 
-After you create the Windows Store for Business portal, configure it by using the commands in the **Settings** menu listed in Table 14. Depending on your institution, you may (or may not) need to change these settings to further customize your portal. 
+After you create the Windows Store for Business portal, configure it by using the commands in the **Settings** menu listed in Table 14. Depending on your institution, you may (or may not) need to change these settings to further customize your portal.
 
 |Menu selection|What can you do in this menu|
 |--------------|----------------------------|
@@ -1171,7 +1171,7 @@ For more information about how to update a deployment share, see [Update a Deplo
 
 >**Note**&nbsp;&nbsp;If you have already configured your System Center Configuration Manager infrastructure to support the operating system deployment feature or if you selected to deploy Windows 10 by using MDT only, then skip this section and continue to the next section.
 
-Before you can use System Center Configuration Manager to deploy Windows 10 and manage your apps and devices, you must configure System Center Configuration Manager to support the operating system deployment feature. If you don’t have an existing System Center Configuration Manager infrastructure, you will need to deploy a new infrastructure. 
+Before you can use System Center Configuration Manager to deploy Windows 10 and manage your apps and devices, you must configure System Center Configuration Manager to support the operating system deployment feature. If you don’t have an existing System Center Configuration Manager infrastructure, you will need to deploy a new infrastructure.
 
 Deploying a new System Center Configuration Manager infrastructure is beyond the scope of this guide, but the following resources can help you deploy a new System Center Configuration Manager infrastructure:
 
@@ -1217,9 +1217,9 @@ You can use Windows Deployment Services in conjunction with MDT to automatically
     * [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/en-us/library/jj648426.aspx)
 
 2. Add LTI boot images (Windows PE images) to Windows Deployment Services.
-    
+
     The LTI boot images (.wim files) that you will add to Windows Deployment Services are in the MDT deployment share. Locate the .wim files in the deployment share’s Boot subfolder.
-    
+
     For more information about how to perform this step, see [Add LTI Boot Images to Windows Deployment Services](https://technet.microsoft.com/en-us/library/dn759415.aspx#AddLTIBootImagestoWindowsDeploymentServices).
 
 ### Configure Window Deployment Services for System Center Configuration Manager
@@ -1231,9 +1231,9 @@ You can use Windows Deployment Services in conjunction with System Center Config
 #### To configure Windows Deployment Services for System Center Configuration Manager
 
 1. Set up and configure Windows Deployment Services.
-    
+
     Windows Deployment Services is a server role available in all Windows Server editions. You can enable the Windows Deployment Services server role on a new server or on any server running Windows Server in your institution.
-    
+
     For more information about how to perform this step, see the following resources:
     * [Windows Deployment Services Overview](https://technet.microsoft.com/library/hh831764.aspx)
     * The Windows Deployment Services Help file, included in Windows Deployment Services
@@ -1244,9 +1244,9 @@ You can use Windows Deployment Services in conjunction with System Center Config
     To support PXE boot requests, you install the PXE service point site system role. Then, you must configure one or more distribution points to respond to PXE boot request.
     For more information about how to perform this step, see [Install site system roles for System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt704036.aspx), [Use PXE to deploy Windows over the network with System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627940.aspx), and [Configuring distribution points to accept PXE requests](https://technet.microsoft.com/en-us/library/mt627944.aspx#BKMK_PXEDistributionPoint).
 3.	Configure the appropriate boot images (Windows PE images) to deploy from the PXE-enabled distribution point.
-    
+
     Before a device can start a boot image from a PXE-enabled distribution point, you must change the properties of the boot image to enable PXE booting. Typically, you create this boot image when you created your MDT task sequence in the Configuration Manager console.
-    
+
     For more information about how to perform this step, see [Configure a boot image to deploy from a PXE-enabled distribution point](https://technet.microsoft.com/en-us/library/mt627946.aspx#BKMK_BootImagePXE) and [Manage boot images with System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627946.aspx).
 
 #### Summary
@@ -1271,8 +1271,8 @@ You initially configured the MDT deployment share in the [Configure the MDT depl
 
 1. Create a task sequence to deploy the appropriate Windows 10 edition.
 
-    A task sequence can deploy only one Windows 10 edition or version, which means that you must create a task sequence for each Windows 10 edition and version you selected in the [Select the operating systems](#select-the-operating-systems) section earlier in this guide. To create task sequences, use the New Task Sequence Wizard. 
-    
+    A task sequence can deploy only one Windows 10 edition or version, which means that you must create a task sequence for each Windows 10 edition and version you selected in the [Select the operating systems](#select-the-operating-systems) section earlier in this guide. To create task sequences, use the New Task Sequence Wizard.
+
     For more information, see [Create a New Task Sequence in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewTaskSequenceintheDeploymentWorkbench).
 2. Create an MDT application for each desktop app you want to include in your reference image.
 
@@ -1280,12 +1280,12 @@ You initially configured the MDT deployment share in the [Configure the MDT depl
 3. Customize the task sequence to install the MDT applications that you created in step 2.
 
     You can add an **Install Application** task sequence step to your task sequence. Then, you can customize the **Install Application** task sequence step to install a specific app, which automatically installs the app with no user interaction required when your run the task sequence.
-    
+
     You need to add an **Install Application** task sequence step for each app you want to include in your reference image. For more information, see [Customize Application Installation in Task Sequences](http://technet.microsoft.com/en-us/library/dn759415.aspx#CustomizeApplicationInstallationinTaskSequences).
 4. Create a selection profile that contains the drivers for the device.
 
     A *selection profile* lets you select specific device drivers. For example, if you want to deploy the device drivers for a Surface Pro 4 device, you can create a selection profile that contains only the Surface Pro 4 device drivers.
-    
+
     First, in the Out-of-Box Drivers node in the Deployment Workbench, create a folder that will contain your device drivers. Next, import the device drivers into the folder you just created. Finally, create the selection profile and specify the folder that contains the device drivers. For more information, see the following resources:
 
     * [Create Folders to Organize Device Drivers for LTI Deployments](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateFolderstoOrganizeDeviceDriversforLTIDeployments)
@@ -1334,7 +1334,7 @@ For more information about how to create a task sequence in the:
 * Configuration Manager console, see [Create a task sequence to install an operating system in System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627927.aspx).
 
 ####Summary
-In this section, you customized the MDT deployment share to deploy Windows 10 and desktop apps to one or more reference devices by creating and customizing MDT applications, device drivers, and applications. Next, you ran the task sequence, which deploys Windows 10, deploys your apps, deploys the appropriate device drivers, and captures an image of the reference device. Then, you imported the captured reference image into a deployment share or System Center Configuration Manager. Finally, you created a task sequence to deploy your captured reference image to faculty and student devices. At this point in the process, you’re ready to deploy Windows 10 and your apps to your devices. 
+In this section, you customized the MDT deployment share to deploy Windows 10 and desktop apps to one or more reference devices by creating and customizing MDT applications, device drivers, and applications. Next, you ran the task sequence, which deploys Windows 10, deploys your apps, deploys the appropriate device drivers, and captures an image of the reference device. Then, you imported the captured reference image into a deployment share or System Center Configuration Manager. Finally, you created a task sequence to deploy your captured reference image to faculty and student devices. At this point in the process, you’re ready to deploy Windows 10 and your apps to your devices.
 
 ## Prepare for device management
 
@@ -1548,7 +1548,7 @@ In this section, you prepared your institution for device management. You identi
 
 ## Deploy Windows 10 to devices
 
-You’re ready to deploy Windows 10 to faculty and student devices. You must complete the steps in this section for each student device in the classrooms as well as for any new student devices you add in the future. You can also perform these actions for any device that’s eligible for a Windows 10 upgrade. This section discusses deploying Windows 10 to new devices, refreshing Windows 10 on existing devices, and upgrading existing devices that are running eligible versions of Windows 8.1 or Windows 7 to Windows 10. 
+You’re ready to deploy Windows 10 to faculty and student devices. You must complete the steps in this section for each student device in the classrooms as well as for any new student devices you add in the future. You can also perform these actions for any device that’s eligible for a Windows 10 upgrade. This section discusses deploying Windows 10 to new devices, refreshing Windows 10 on existing devices, and upgrading existing devices that are running eligible versions of Windows 8.1 or Windows 7 to Windows 10.
 
 ### Prepare for deployment
 
@@ -1838,7 +1838,7 @@ Follow the same steps you followed in the [Deploy Windows 10 to devices](#deploy
 
 #### Summary
 
-You have now identified the tasks you need to perform monthly, at the end of an academic year or semester, and as required. Your district and individual school configuration should match the typical school configuration you saw in the [Plan a typical district configuration](#plan-a-typical-district-configuration) section. By performing these maintenance tasks, you help ensure that your district as a whole stays secure and is configured as you specified. 
+You have now identified the tasks you need to perform monthly, at the end of an academic year or semester, and as required. Your district and individual school configuration should match the typical school configuration you saw in the [Plan a typical district configuration](#plan-a-typical-district-configuration) section. By performing these maintenance tasks, you help ensure that your district as a whole stays secure and is configured as you specified.
 
 ## Related topics
 

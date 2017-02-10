@@ -4,7 +4,7 @@ description: A strong Windows 10 deployment strategy begins with establishing a 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
@@ -15,6 +15,8 @@ localizationpriority: high
 
 - Windows 10
 - Windows 10 Mobile
+
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 In the past, traditional Windows deployments tended to be large, lengthy, and expensive. Windows 10 offers a new approach to deploying both quality and feature updates, making the process much simpler and therefore the planning much more straightforward. With Windows as a service, the methodology around updating Windows has completely changed, moving away from major upgrades every few years to iterative updates twice per year. Each iteration contains a smaller subset of changes so that they won’t seem like substantial differences, like they do today. Figure 1 shows the level of effort needed for traditional Windows deployments versus servicing Windows 10 and how it is now spread evenly over time versus spiking every few years.
 
@@ -36,7 +38,7 @@ Windows 10 spreads the traditional deployment effort of a Windows upgrade, which
 Each time Microsoft releases a Windows 10 feature update, the IT department should use the following high-level process to help ensure that the broad deployment is successful:
 
 1.	**Validate compatibility of business critical apps.** Test your most important business-critical applications for compatibility with the new Windows 10 feature update running on your Windows Insider machines identified in the earlier “Configure test machines” step of the Predeployment strategy section. The list of applications involved in this validation process should be small because most applications can be tested during the pilot phase. For more information about device and application compatibility in Windows 10, see the section Compatibility.
-2.	**Pilot and react to feedback.** With Windows 10, Microsoft expects application and device compatibility to be high, but it’s still important to have pilot groups within both the IT department and business units to verify application compatibility for the remaining applications in your application portfolio. Because only the most business-critical applications are tested beforehand, this will represent the majority of application compatibility testing in your environment. This should not necessarily be a formal process but rather user validation through the use of a particular application. So, the next step is to deploy the feature update to early-adopting IT users and your pilot groups running in the CB servicing branch that you identified in the “Recruit volunteers” step of the Predeployment strategy section. Be sure to communicate clearly that you’re looking for feedback as soon as possible, and state exactly how users can submit feedback to you. Should an issue arise, have a remediation plan in place to address it. For an example of what a remediation plan for an application compatibility issue arising from a Windows 10 feature update might look like, see the <Place holder for App Compat guide>.
+2.	**Pilot and react to feedback.** With Windows 10, Microsoft expects application and device compatibility to be high, but it’s still important to have pilot groups within both the IT department and business units to verify application compatibility for the remaining applications in your application portfolio. Because only the most business-critical applications are tested beforehand, this will represent the majority of application compatibility testing in your environment. This should not necessarily be a formal process but rather user validation through the use of a particular application. So, the next step is to deploy the feature update to early-adopting IT users and your pilot groups running in the CB servicing branch that you identified in the “Recruit volunteers” step of the Predeployment strategy section. Be sure to communicate clearly that you’re looking for feedback as soon as possible, and state exactly how users can submit feedback to you. Should an issue arise, have a remediation plan in place to address it. 
 3.	**Deploy broadly.** Finally, focus on the large-scale deployment using deployment rings, like the ones discussed in Table 1. Build deployment rings that target groups of computers in your selected update-management product. To reduce risk as much as possible, construct your deployment rings in a way that splits individual departments into multiple rings. This way, if you were to encounter an issue, you don’t prevent any critical business from continuing. By using this method, each deployment ring reduces risk as more and more people have been updated in any particular department. 
 
 
@@ -58,7 +60,7 @@ or [Manage Windows 10 updates using System Center Configuration Manager](waas-ma
 ## Related topics
 
 - [Update Windows 10 in the enterprise](waas-update-windows-10.md)
-- [Manage updates for Windows 10 Mobile Enterprise](waas-mobile-updates.md) 
+- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)

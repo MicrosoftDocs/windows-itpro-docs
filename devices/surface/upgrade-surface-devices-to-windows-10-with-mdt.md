@@ -36,8 +36,8 @@ Introduced with Windows 10 and MDT 2013 Update 1, you can use the upgrade instal
 
 Performing an upgrade deployment of Windows 10 requires the same tools and resources that are required for a traditional reimaging deployment. You can read about the tools required, including detailed explanations and installation instructions, in [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md). To proceed with the upgrade deployment described in this article, you will need the following tools installed and configured:
 
-* [Microsoft Deployment Toolkit (MDT)](https://technet.microsoft.com/en-us/windows/dn475741)
-* [Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit#windowsadk), which includes:
+* [Microsoft Deployment Toolkit (MDT)](https://technet.microsoft.com/windows/dn475741)
+* [Windows Assessment and Deployment Kit (Windows ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit#windowsadk), which includes:
    * Deployment Image Servicing and Management (DISM)
    * Windows Preinstallation Environment (Windows PE)
    * Windows System Image Manager (Windows SIM)
@@ -45,8 +45,11 @@ Performing an upgrade deployment of Windows 10 requires the same tools and resou
 You will also need to have available the following resources:
 
 * Windows 10 installation files, such as the installation media downloaded from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx)
-   >**Note:**&nbsp;&nbsp;Installation media for use with MDT must contain a Windows image in Windows Imaging Format (.wim). Installation media produced by the [Get Windows 10](https://www.microsoft.com/en-us/software-download/windows10/) page does not use a .wim file, instead using an Electronic Software Download (.esd) file, which is not compatible with MDT.
+
+   >[!NOTE]
+   >Installation media for use with MDT must contain a Windows image in Windows Imaging Format (.wim). Installation media produced by the [Get Windows 10](https://www.microsoft.com/en-us/software-download/windows10/) page does not use a .wim file, instead using an Electronic Software Download (.esd) file, which is not compatible with MDT.
 * [Surface firmware and drivers](https://technet.microsoft.com/en-us/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices) for Windows 10
+
 * Application installation files for any applications you want to install, such as the Surface app
 
 ## Prepare the upgrade deployment
@@ -60,7 +63,7 @@ Windows 10 installation files only need to be imported if you have not already d
 ### Import Surface drivers
 In the import process example shown in the [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md) article, drivers for Surface Pro 4 were imported for Windows 10. To perform an upgrade deployment of Windows 10 to Surface Pro 3, drivers for Surface Pro 3 must also be imported. To import the Surface drivers for Surface Pro 3, follow these steps:
 
-1. Download the Surface Pro 3 firmware and driver pack for Windows 10 archive file (.zip), SurfacePro3_Win10_xxxxxx.zip, from the [Surface Pro 3 download page](https://www.microsoft.com/en-US/download/details.aspx?id=38826) in the Microsoft Download Center.
+1. Download the Surface Pro 3 firmware and driver pack for Windows 10 archive file (.zip), SurfacePro3_Win10_xxxxxx.zip, from the [Surface Pro 3 download page](https://www.microsoft.com/download/details.aspx?id=38826) in the Microsoft Download Center.
 2. Extract the contents of the Surface Pro 3 firmware and driver pack archive file to a temporary folder. Keep the driver files separate from other drivers or files.
 3. Open the Deployment Workbench and expand the Deployment Shares node and your deployment share. 
 4. If you have not already created a folder structure by operating system version, you should do so next. Under the **Windows 10 x64** folder, create a new folder for Surface Pro 3 drivers named **Surface Pro 3**. Your Out-of-Box Drivers folder should resemble the following structure:
@@ -91,7 +94,7 @@ In the import process example shown in the [Deploy Windows 10 to Surface devices
 
 Installation of applications in an upgrade deployment is not always necessary because the applications from the previous environment will remain on the device. (For example, in the [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md) article, the deployment includes Office 365 which is not required in an upgrade deployment where the user is already using Office 365 on the device.)
 
-There are still some circumstances where you will want to deploy an application, even during an upgrade deployment. For example, you may have Surface Pro 3 devices on which you would like to add the Surface app. To deploy the Surface app in an upgrade scenario use the same process as you would for a traditional deployment. See the [Deploy Surface app with Windows Store for Business](https://technet.microsoft.com/en-us/itpro/surface/deploy-surface-app-with-windows-store-for-business) article for instructions on how to add the Surface app to an MDT task sequence.
+There are still some circumstances where you will want to deploy an application, even during an upgrade deployment. For example, you may have Surface Pro 3 devices on which you would like to add the Surface app. To deploy the Surface app in an upgrade scenario use the same process as you would for a traditional deployment. See the [Deploy Surface app with Windows Store for Business](https://technet.microsoft.com/itpro/surface/deploy-surface-app-with-windows-store-for-business) article for instructions on how to add the Surface app to an MDT task sequence.
 
 ### Create the upgrade task sequence
 
@@ -102,7 +105,8 @@ Create the upgrade task sequence with the following process:
 1. In the Deployment Workbench under your Deployment Share, right-click the **Task Sequences** folder, and then click **New Task Sequence** to start the New Task Sequence Wizard.
 2. Use these steps to create the deployment task sequence with the New Task Sequence Wizard:
   - **General Settings** – Enter an identifier for the deployment task sequence in the Task Sequence ID field, a name for the deployment task sequence in the Task Sequence Name field, and any comments for the deployment task sequence in the **Task Sequence Comments** field, and then click **Next**.
-  >**Note:**&nbsp;&nbsp;The **Task Sequence ID** field cannot contain spaces and can be a maximum of 16 characters.
+  >[!NOTE]
+  >The **Task Sequence ID** field cannot contain spaces and can be a maximum of 16 characters.
   - **Select Template** – Select **Standard Client Upgrade Task Sequence** from the drop-down menu, and then click **Next**.
   - **Select OS** – Navigate to and select the Windows image that you imported, and then click **Next**.
   - **Specify Product Key** – Select the product key entry that fits your organization’s licensing system. The **Do Not Specify a Product Key at This Time** option can be used for systems that will be activated via Key Management Services (KMS) or Active Directory Based Activation (ADBA). A product key can be specified specifically if your organization uses Multiple Activation Keys (MAK). Click **Next**.

@@ -16,7 +16,7 @@ ms.prod: w10
 
 You can create user-entitled connection groups that contain both user-published and globally published packages, using either of the following methods:
 
--   [How to use Windows PowerShell cmdlets to create user-entitled connection groups](#how-to-use-powershell-cmdlets-to-create-user-entitled-connection-groups)
+-   [How to use Windows PowerShell cmdlets to create user-entitled connection groups](#how-to-use-windows-powershell-cmdlets-to-create-user-entitled-connection-groups)
 
 -   [How to use the App-V Server to create user-entitled connection groups](#how-to-use-the-app-v-server-to-create-user-entitled-connection-groups)
 

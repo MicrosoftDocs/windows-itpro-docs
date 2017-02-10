@@ -122,7 +122,7 @@ If you encounter a problem when trying to submit a file, try each of the followi
 
   a. Change the following registry entry and values to change the policy on specific endpoints:
  ```
-HKLM\SOFTWARE\Policies\Microsoft\Sense\AllowSampleCollection
+HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
   Value = 0 - block sample collection
   Value = 1 - allow sample collection
 ```

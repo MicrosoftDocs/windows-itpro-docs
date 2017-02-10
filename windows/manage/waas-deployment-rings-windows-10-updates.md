@@ -4,7 +4,7 @@ description: Deployment rings in Windows 10 are similar to the deployment groups
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
@@ -16,6 +16,8 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+
 For Windows as a service, maintenance is ongoing and iterative. Deploying previous versions of Windows required organizations to build sets of users to roll out the changes in phases. Typically, these users ranged (in order) from the most adaptable and least risky to the least adaptable or riskiest. With Windows 10, a similar methodology exists, but construction of the groups is a little different. 
 
 Deployment rings in Windows 10 are similar to the deployment groups most organizations constructed for previous major revision upgrades. They are simply a method by which to separate machines into a deployment timeline. With Windows 10, you construct deployment rings a bit differently in each servicing tool, but the concepts remain the same. Each deployment ring should reduce the risk of issues derived from the deployment of the feature updates by gradually deploying the update to entire departments. As previously mentioned, consider including a portion of each department’s employees in several deployment rings. 
@@ -26,14 +28,14 @@ Table 1 provides an example of the deployment rings you might use.
 
 **Table 1**
 
-| Deployment ring | Servicing branch | Total weeks after Current Branch (CB) or Current Brandh for Business (CBB) release |
+| Deployment ring | Servicing branch | Total weeks after Current Branch (CB) or Current Branch for Business (CBB) release |
 | --- | --- | --- |
 | Preview | Windows Insider | Pre-CB |
 | Ring 1 Pilot IT | CB | CB + 0 weeks |
-| Ring 2 Pilot business users | CB | CB + 2 weeks |
-| Ring 3 Broad IT | CBB | CBB + 0 weeks |
-| Ring 4 Broad business users | CBB | CBB + 4 weeks |
-| Ring 5 Broad business users #2 | CBB | CBB + 8 weeks |
+| Ring 2 Pilot business users | CB | CB + 4 weeks |
+| Ring 3 Broad IT | CB | CB + 6 weeks |
+| Ring 4 Broad business users | CBB | CBB + 0 weeks |
+| Ring 5 Broad business users #2 | CBB | CBB + 2 weeks as required by capacity or other constraints |
 
 >[!NOTE]
 >In this example, there are no rings made up of the long-term servicing branch (LTSB). The LTSB servicing branch does not receive feature updates. 
@@ -66,7 +68,7 @@ or [Manage Windows 10 updates using System Center Configuration Manager](waas-ma
 ## Related topics
 
 - [Update Windows 10 in the enterprise](waas-update-windows-10.md)
-- [Manage updates for Windows 10 Mobile Enterprise](waas-mobile-updates.md) 
+- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)

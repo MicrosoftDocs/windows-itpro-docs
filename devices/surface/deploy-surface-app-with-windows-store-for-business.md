@@ -11,6 +11,14 @@ author: miladCA
 
 #Deploy Surface app with Windows Store for Business
 
+**Applies to**
+* Surface Pro 4
+* Surface Book
+* Surface 3
+
+>[!NOTE]
+>The Surface app ships in Surface Studio.
+
 The Surface app is a lightweight Windows Store app that provides control of many Surface-specific settings and options, including: 
 
 * Enable or disable the Windows button on the Surface device 
@@ -25,15 +33,15 @@ The Surface app is a lightweight Windows Store app that provides control of many
 
 If your organization is preparing images that will be deployed to your Surface devices, you may want to include the Surface app (formerly called the Surface Hub) in your imaging and deployment process instead of requiring users of each individual device to download and install the app from the Windows Store or your Windows Store for Business. 
 
-####Surface app overview
+##Surface app overview
 
-The Surface app is available as a free download from the [Windows Store](https://www.microsoft.com/en-us/store/apps/Surface/9WZDNCRFJB8P). Users can download and install it from the Windows Store, but if your organization uses Windows Store for Business instead, you will need to add it to your store’s inventory and possibly include the app as part of your Windows deployment process. These processes are discussed throughout this article. For more information about Windows Store for Business, see [Windows Store for Business](https://technet.microsoft.com/en-us/windows/store-for-business) in the Windows TechCenter. 
+The Surface app is available as a free download from the [Windows Store](https://www.microsoft.com/store/apps/Surface/9WZDNCRFJB8P). Users can download and install it from the Windows Store, but if your organization uses Windows Store for Business instead, you will need to add it to your store’s inventory and possibly include the app as part of your Windows deployment process. These processes are discussed throughout this article. For more information about Windows Store for Business, see [Windows Store for Business](https://technet.microsoft.com/windows/store-for-business) in the Windows TechCenter. 
 
 ##Add Surface app to a Windows Store for Business account 
 
 Before users can install or deploy an app from a company’s Windows Store for Business account, the desired app(s) must first be made available and licensed to the users of a business. 
 
-1. If you have not already done so, create a [Windows Store for Business account](https://www.microsoft.com/en-us/business-store). 
+1. If you have not already done so, create a [Windows Store for Business account](https://www.microsoft.com/business-store). 
 
 2. Log on to the portal. 
 
@@ -73,7 +81,8 @@ After you add an app to the Windows Store for Business account in Offline mode, 
 6. Click either the **Encoded license** or **Unencoded license** option. Use the Encoded license option with management tools like System Center Configuration Manager or when you use Windows Imaging and Configuration Designer (Windows ICD). Select the Unencoded license option when you use Deployment Image Servicing and Management (DISM) or deployment solutions based on imaging, including the Microsoft Deployment Toolkit (MDT).
 7. Click **Generate** to generate and download the license for the app. Make sure you note the path of the license file because you’ll need that later in this article.
 
->**Note:**&nbsp;&nbsp;When you download an app for offline use, such as the Surface app, you may notice a section at the bottom of the page labeled **Required frameworks**. Your target computers must have the frameworks installed for the app to run, so you may need to repeat the download process for each of the required frameworks for your architecture (either x86 or x64) and also include them as part of your Windows deployment discussed later in this article.
+>[!NOTE]
+>When you download an app for offline use, such as the Surface app, you may notice a section at the bottom of the page labeled **Required frameworks**. Your target computers must have the frameworks installed for the app to run, so you may need to repeat the download process for each of the required frameworks for your architecture (either x86 or x64) and also include them as part of your Windows deployment discussed later in this article.
 
 Figure 5 shows the required frameworks for the Surface app.
 
@@ -81,17 +90,19 @@ Figure 5 shows the required frameworks for the Surface app.
 
 *Figure 5. Required frameworks for the Surface app*
 
->**Note:**&nbsp;&nbsp;The version numbers of the Surface app and required frameworks will change as the apps are updated. Check for the latest version of Surface app and each framework in Windows Store for Business. Always use the Surface app and recommended framework versions as provided by Windows Store for Business. Using outdated frameworks or the incorrect versions may result in errors or application crashes.
+>[!NOTE]
+>The version numbers of the Surface app and required frameworks will change as the apps are updated. Check for the latest version of Surface app and each framework in Windows Store for Business. Always use the Surface app and recommended framework versions as provided by Windows Store for Business. Using outdated frameworks or the incorrect versions may result in errors or application crashes.
 
 To download the required frameworks for the Surface app, follow these steps:
 1.	Click the **Download** button under **Microsoft.VCLibs.140.00_14.0.23816.0_x64__8wekyb3d8bbwe**. This downloads the Microsoft.VCLibs.140.00_14.0.23816.0_x64__8wekyb3d8bbwe.Appx file to your specified folder.
 2.	Click the **Download** button under **Microsoft.NET.Native.Runtime.1.1_1.1.23406.0_x64__8wekyb3d8bbwe**. This downloads the Microsoft.NET.Native.Runtime.1.1_1.1.23406.0_x64__8wekyb3d8bbwe.Appx file to your specified folder.
 
->**Note:**&nbsp;&nbsp;Only the 64-bit (x64) version of each framework is required for Surface devices. Surface devices are native 64-bit UEFI devices and are not compatible with 32-bit (x86) versions of Windows that would require 32-bit frameworks. 
+>[!NOTE]
+>Only the 64-bit (x64) version of each framework is required for Surface devices. Surface devices are native 64-bit UEFI devices and are not compatible with 32-bit (x86) versions of Windows that would require 32-bit frameworks. 
 
 ##Install Surface app on your computer with PowerShell
 The following procedure provisions the Surface app onto your computer and makes it available for any user accounts created on the computer afterwards.
-1.	Using the procedure described in the [How to download Surface app from a Windows Store for Business account](#how-to-download-surface-app-from-a-windows-store-for-business-account) section of this article, download the Surface app AppxBundle and license file. 
+1.	Using the procedure described in the [How to download Surface app from a Windows Store for Business account](#download-surface-app-from-a-windows-store-for-business-account) section of this article, download the Surface app AppxBundle and license file. 
 2.	Begin an elevated PowerShell session.
 >**Note:**&nbsp;&nbsp;If you don’t run PowerShell as an Administrator, the session won’t have the required permissions to install the app.
 3.	In the elevated PowerShell session, copy and paste the following command:
@@ -119,7 +130,7 @@ Before the Surface app is functional on the computer where it has been provision
 
 ##Install Surface app with MDT
 The following procedure uses MDT to automate installation of the Surface app at the time of deployment. The application is provisioned automatically by MDT during deployment and thus you can use this process with existing images. This is the recommended process to deploy the Surface app as part of a Windows deployment to Surface devices because it does not reduce the cross platform compatibility of the Windows image.
-1.	Using the procedure described [earlier in this article](#how-to-download-surface-app-from-a-windows-store-for-business-account), download the Surface app AppxBundle and license file. 
+1.	Using the procedure described [earlier in this article](#download-surface-app-from-a-windows-store-for-business-account), download the Surface app AppxBundle and license file. 
 2.	Using the New Application Wizard in the MDT Deployment Workbench, import the downloaded files as a new **Application with source files**.
 3.	On the **Command Details** page of the New Application Wizard, specify the default **Working Directory** and for the **Command** specify the file name of the AppxBundle, as follows:
 
@@ -144,4 +155,4 @@ After import, the Surface app will be available for selection in the **Applicati
 2.	Add a new **Install Application** task in the **State Restore** section of deployment.
 3.	Select **Install a single application** and specify the **Surface App** as the **Application to be installed**.
 
-For more information about including apps into your Windows deployments, see [Deploy Windows 10 with the Microsoft Deployment Toolkit](https://technet.microsoft.com/en-us/itpro/windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit).
+For more information about including apps into your Windows deployments, see [Deploy Windows 10 with the Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit).
