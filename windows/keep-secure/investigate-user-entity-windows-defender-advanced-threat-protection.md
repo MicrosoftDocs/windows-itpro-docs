@@ -43,4 +43,9 @@ The user entity details and logged on machines section display various attribute
 
 The **Alerts related to this user** section provides a list of alerts that are associated with the user. This list is a simplified version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows the date when the last activity was detected, a short description of the alert, the machine associated with the alert, the alert's severity, the alert's status in the queue, and who is addressing the alert.
 
-The **Observed in organization** section allows you to specify a date range to see the total number of observed users logged in to specific machine and which machines the user most frequently and least frequently logged in to. 
+The **Observed in organization** section allows you to specify a date range to see the total number of observed users logged in to specific machine and which machines the user most frequently and least frequently logged in to.
+
+![Image of observed in organization section](images/atp-observed-in-organization.png)
+
+## Search for specific user accounts
+Use the search bar to look for specific user accounts:
