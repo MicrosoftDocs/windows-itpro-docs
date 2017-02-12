@@ -38,7 +38,7 @@ To see a list of alerts, click any of the queues under the **Alerts queue** opti
 > By default, the queues are sorted from newest to oldest.
 
 ## Sort and filter the alerts
-You can sort and filter the alerts by using the available filters or clicking columns that allow you to sort the view in ascending or descending order.
+You can sort and filter the alerts by using the available filters or clicking columns that allows you to sort the view in ascending or descending order.
 
 ![Alerts queue with numbers](images/alerts-queue-numbered.png)
 
@@ -77,7 +77,7 @@ Reviewing the various alerts and their severity can help you decide on the appro
 - 6 months
 
 **View**</br>
-- **Flat view** - Lists alerts individually with alerts that has the latest activity displayed at the top surfaces.
+- **Flat view** - Lists alerts individually with alerts that has the latest activity displayed at the top.
 - **Grouped view** - Groups alerts by alert ID, file hash, malware family and others to enable more efficient alert triage and management. Alert grouping reduces the number of rows in the queue by aggregating categories together.
 
 The group view allows for efficient alert triage and management.
