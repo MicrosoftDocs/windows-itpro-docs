@@ -29,7 +29,7 @@ Alerts attributed to an adversary or actor display a colored tile with the actor
 
 ![A detailed view of an alert when clicked](images/alert-details.png)
 
-Click on the actor's name to see a threat intelligence profile of the actor, including a brief overview of the actor, their interests or targets, tools, tactics, and processes (TTPs) as well as areas where it's active worldwide. You will also see a set of recommended actions to take.
+Click on the actor's name to see the threat intelligence profile of the actor, including a brief overview of the actor, their interests or targets, tools, tactics, and processes (TTPs) as well as locations where it's active worldwide. You will also see a set of recommended actions to take.
 
 Some actor profiles include a link to download a more comprehensive threat intelligence report.
 
