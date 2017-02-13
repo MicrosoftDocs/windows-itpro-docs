@@ -23,12 +23,12 @@ localizationpriority: high
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-You can define custom alert definitions and indicators of compromise (IOC) using the available APIs. Creating custom TI’s allows you to create specific alerts that are applicable to your organization.
+You can define custom alert definitions and indicators of compromise (IOC) using the available APIs. Creating custom TIs allows you to create specific alerts that are applicable to your organization.
 
 ## Before you begin
-Before creating custom TI's, you'll need to enable the custom TI application in Azure Active Directory and generate access tokens. For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md).
+Before creating custom TIs, you'll need to enable the custom TI application in Azure Active Directory and generate access tokens. For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md).
 
-### Use the available REST API to create custom TI's
+### Use the available REST APIs to create custom TIs
 You can call and specify the resource URLs using one of the following operations to access and manipulate a custom TI resource, you call and specify the resource URLs using one of the following operations:
 
 -	GET
@@ -70,9 +70,9 @@ You can use the metadata to understand the relationships between entities in cus
 The following sections show a few basic programming pattern calls to the custom TI API.
 
 ## Create new resource
-Typically, you would start creating custom threat intelligence by first creating an alert definition.
+Typically, you should create an alert definition to start creating custom threat intelligence.
 
-An ID is created for that alert definition. You would then create an Indicator Of Compromise and associate it to the ID of the alert definition.
+An ID is created for that alert definition. Then, create an Indicator Of Compromise and associate it to the ID of the alert definition.
 
 ### Create a new alert definition
 
@@ -105,7 +105,7 @@ Highlighted section | JSON Value
 4 | UX description
 5 | Recommended Action
 
-If successful, you should get a 201 CREATED response containing the representation of the newly created alert definition for example:
+If successful, you should get a 201 CREATED response containing the representation of the newly created alert definition, for example:
 
 ```json
 
