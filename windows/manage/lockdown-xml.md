@@ -332,20 +332,22 @@ The **Settings** section contains an `allow` list of pages in the Settings app. 
      <!-- Allow all settings -->
  </Settings>
  ```
-In the following example, all system setting pages are enabled.
+In earlier versions of Windows 10, you used the page name to define allowed settings. Starting in Windows 10, version 1703, you use the settings URI.
+
+In the following example for Windows 10, version 1703, all system setting pages are enabled.
 
 ```xml
 <Settings> 
-  <System name="SettingsPageGroupPCSystem" /> 
-  <System name="SettingsPageDisplay" /> 
-  <System name="SettingsPageAppsNotifications" />
-  <System name="SettingsPageCalls" />
-  <System name="SettingsPageMessaging" /> 
-  <System name="SettingsPageBatterySaver" /> 
-  <System name="SettingsPageStorageSenseStorageOverview" />
-  <System name="SettingsPageGroupPCSystemDeviceEncryption" /> 
-  <System name="SettingsPageDrivingMode" /> 
-  <System name="SettingsPagePCSystemInfo" /> 
+  <System name="ms-settings:screenrotation" /> 
+  <System name="ms-settings:notifications" /> 
+  <System name="ms-settings:phone" />
+  <System name="ms-settings:messaging" />
+  <System name="ms-settings:batterysaver" /> 
+  <System name="ms-settings:batterysaver-usagedetails" /> 
+  <System name="ms-settings:powersleep" />
+  <System name="ms-settings:about" /> 
+  <System name="ms-settings:deviceencryption" /> 
+  <System name="ms-settings:maps" /> 
  </Settings>
 ```
 
@@ -605,13 +607,12 @@ To push lockdown settings to enrolled devices, use the AssignedAccessXML setting
             <!-- Quick actions: Brightness, Rotation -->
             <System name="SystemSettings_System_Display_QuickAction_Brightness"/>
             <System name="SystemSettings_System_Display_Internal_Rotation"/>
-            <!-- Brightness+Rotation, About -->
-            <System name="SettingsPageGroupPCSystem"/>
-            <System name="SettingsPageDisplay"/>
-            <System name="SettingsPagePCSystemInfo"/>
+            <!-- Rotation, About -->
+            <System name="ms-settings:screenrotation"/>
+            <System name="ms-settings:about"/>
             <!-- Ringtones, sounds -->
-            <System name="SettingsPageGroupPersonalization"/>
-            <System name="SettingsPageSounds"/>
+            <System name="ms-settings:personalizationn"/>
+            <System name="ms-settings:sounds"/>
         </Settings>
         <Tiles>
             <EnableTileManipulation/>
@@ -706,17 +707,16 @@ To push lockdown settings to enrolled devices, use the AssignedAccessXML setting
                 <DisableMenuItems/>
             </MenuItems>
             <Settings>
-                <!-- Brightness+Rotation, Notifications, About -->
-                <System name="SettingsPageGroupPCSystem"/>
-                <System name="SettingsPageAppsNotifications"/>
-                <System name="SettingsPageDisplay"/>
-                <System name="SettingsPagePCSystemInfo"/>
+                <!-- Rotation, Notifications, About -->
+                <System name="ms-settings:screenrotation"/>
+                <System name="ms-settings:notifications"/>
+                <System name="ms-settings:about"/>
                 <!-- Ringtones, sounds -->
-                <System name="SettingsPageGroupPersonalization"/>
-                <System name="SettingsPageSounds"/>
+                <System name="ms-settings:personalization"/>
+                <System name="ms-settings:sounds"/>
                 <!-- Workplace -->
-                <System name="SettingsPageGroupAccounts"/>
-                <System name="SettingsPageAccountsWorkplace"/>
+                <System name="ms-settings:workplace"/>
+                <System name="ms-settings:emailandaccounts"/>
             </Settings>
         </Role>
         <Role guid="{7bb62e8c-81ba-463c-b691-74af68230b42}" name="Manager">
