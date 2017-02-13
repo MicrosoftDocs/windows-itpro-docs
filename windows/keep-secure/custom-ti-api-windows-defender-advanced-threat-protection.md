@@ -97,7 +97,7 @@ Content-Type: application/json;
 The following values correspond to the alert sections surfaced on the Windows Defender ATP portal:
 ![Image of alert from the portal](images/atp-custom-ti-mapping.png)
 
-Highlighted section | JSON Value
+Highlighted section | JSON key name
 :---:|:---
 1 | Title
 2 | Severity
@@ -131,7 +131,6 @@ If successful, you should get a 201 CREATED response containing the representati
 POST https://TI.SecurityCenter.Windows.com/v1.0/IndicatorsOfCompromise HTTP/1.1
 Authorization: Bearer <access_token>
 Content-Type: application/json;
-Content-Length: 194
 
 
 {
@@ -139,7 +138,7 @@ Content-Length: 194
 "Value": "8311e8b377736fb93b18b15372355f3f26c4cd29",
 "DetectionFunction": "Equals",
 "Enabled": true,
-"AlertDefinitions@odata.bind": "AlertDefinitions(1)"
+"AlertDefinition@odata.bind": "AlertDefinitions(1)"
 }
 ```
 If successful, you should get a 201 CREATED response containing the representation of the newly created Indicators Of Compromise in the payload.
@@ -167,14 +166,14 @@ JSON Body:
             "Value": "b68e0b50420dbb03cb8e56a927105bf4b06f3793",
             "DetectionFunction": "Equals",
             "Enabled": true,
-            "AlertDefinitions@odata.bind": "AlertDefinitions(1)"
+            "AlertDefinition@odata.bind": "AlertDefinitions(1)"
         },
         {
             "Type": "Sha1",
             "Value": "b68e0b50420dbb03cb8e56a927105bf4b06f3793",
             "DetectionFunction": "Equals",
             "Enabled": true,
-            "AlertDefinitions@odata.bind": "AlertDefinitions(1)"
+            "AlertDefinition@odata.bind": "AlertDefinitions(1)"
         }
     ]
 }
@@ -243,7 +242,7 @@ odata.metadata = none
               "Category": "Malware",
               "Id": 1,
               "CreatedAt": "2016-12-05T15:50:53Z",
-              "CreatedBy": "user@Company1.constoso.com",
+              "CreatedBy": "user@Company1.contoso.com",
               "LastModifiedAt": null,
               "LastModifiedBy": null,
               "Enabled": true
