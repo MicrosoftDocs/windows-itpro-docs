@@ -44,6 +44,35 @@ Two methods of peer-to-peer content distribution are available in Windows 10.
 >
 >In addition to client content sharing, similar functionality is available in the Windows Preinstallation Environment (Windows PE) for imaging-related content. Using this technology, clients imaging with System Center Configuration Manager task sequences can source operating system images, driver packages, boot images, packages, and programs from peers instead of distribution points. For detailed information about how Windows PE Peer Cache works and how to configure it, see [Prepare Windows PE peer cache to reduce WAN traffic in System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt613173.aspx).
 
+## Express update delivery
+
+Windows 10 update downloads can be large because every package contains all previously released fixes to ensure consistency and simplicity. Windows has been able to reduce the size of Windows Update downloads with a feature called Express.
+
+### How Microsoft supports Express
+- **Express on WSUS Standalone**
+  
+  Express update delivery is available on [all support versions of WSUS](https://technet.microsoft.com/library/cc708456(v=ws.10).aspx).
+- **Express on devices directly connected to Windows Update**
+- **Enterprise devices managed using [Windows Update for Business](waas-manage-updates-wufb.md)** also get the benefit of Express update delivery support without any change in configuration.
+
+### How Express download works
+
+For OS updates that support Express, there are two versions of the file payload stored on the service:
+1. **Full-file version** - essentially replacing the local versions of the update binaries.
+2. **Express version** - containing the deltas needed to patch the existing binaries on the device.
+
+Both the full-file version and the Express version are referenced in the udpate's metadata, which has been downloaded to the client as part of the scan phase.
+
+**Express download works as follows:**
+
+The Windows Update client will try to download Express first, and under certain situations fall back to full-file if needed (for example, if going through a proxy that doesn't support byte range requests).
+
+1. When the Windows Update client initiates an Express download, **Windows Update first downloads a stub**, which is part of the Express package.
+2. **The Windows Update client passes this stub to the Windows installer**, which uses the stub to do a local inventory, comparing the deltas of the file on the device with what is needed to get to the latest version of the file being offered.
+3. **The Windows installer then requests the Windows Update client to download the ranges**, which have been determined to be required.
+4. **The client downloads these ranges and passes them to the Windows Installer**, which applies the ranges and then determines if additional ranges are needed. This repeats until the Windows installer tells the Windows Update client that all necessary ranges have been downloaded.
+
+At this point, the download is complete and the update is ready to be installed.
 
 ## Steps to manage updates for Windows 10
 
