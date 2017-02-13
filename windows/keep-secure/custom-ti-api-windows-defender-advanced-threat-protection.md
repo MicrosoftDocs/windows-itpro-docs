@@ -72,7 +72,7 @@ The following sections show a few basic programming pattern calls to the custom 
 ## Create new resource
 Typically, you should create an alert definition to start creating custom threat intelligence.
 
-An ID is created for that alert definition. Then, create an Indicator Of Compromise and associate it to the ID of the alert definition.
+An ID is created for that alert definition. Then, create an indicator of compromise and associate it to the ID of the alert definition.
 
 ### Create a new alert definition
 
@@ -125,7 +125,7 @@ If successful, you should get a 201 CREATED response containing the representati
 
 ```
 
-### Create a new Indicator of Compromise
+### Create a new indicator of compromise
 
 ```json
 POST https://TI.SecurityCenter.Windows.com/v1.0/IndicatorsOfCompromise HTTP/1.1
