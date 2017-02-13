@@ -43,7 +43,7 @@ While shared PC mode does not configure Windows Update itself, it is strongly re
 
 ###App behavior
 
-Apps can take advantage of shared PC mode by changing their app behavior to align with temporary use scenarios. For example, an app might only download content on demand on a device in shared PC mode, or might skip first run experiences. For information on how an app can query for shared PC mode, see [SharedModeSettings class](https://msdn.microsoft.com/en-us/library/windows/apps/windows.system.profile.sharedmodesettings.aspx).
+Apps can take advantage of shared PC mode by changing their app behavior to align with temporary use scenarios. For example, an app might only download content on demand on a device in shared PC mode, or might skip first-run experiences. For information on how an app can query for shared PC mode, see [SharedModeSettings class](https://msdn.microsoft.com/en-us/library/windows/apps/windows.system.profile.sharedmodesettings.aspx).
 
 ###Customization
 Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These customizations are the options that you'll set either using MDM or a provisioning package as explained in [Configuring shared PC mode on Windows](#configuring-shared-pc-mode-on-windows). The options are listed in the following table.
@@ -69,16 +69,16 @@ You can configure Windows to be in shared PC mode in a couple different ways:
 
 ![custom OMA-URI policy in Intune](images/oma-uri-shared-pc.png) 
 
-- A provisioning package created with the Windows Imaging and Configuration Designer (ICD): You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Imaging and Configuration Designer (ICD). Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/mt723294.aspx), exposed in ICD as SharedPC.
+- A provisioning package created with the Windows Configuration Designer: You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Configuration Designer. Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/mt723294.aspx), exposed in Windows Configuration Designer as SharedPC.
 
 ![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
 
 
 ### Create a provisioning package for shared use
 
-Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that configures a device for shared PC mode. [Install the ADK and select **Configuration Designer**.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+Use Windows Configuration Designer to create a provisioning package that configures a device for shared PC mode. [Install Windows Configuration Designer.](https://technet.microsoft.com/itpro/windows/deploy/provisioning-install).
 
-1.  Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe). 
+1.  Open Windows Configuration Designer. 
 
 2. On the **Start page**, select **Advanced provisioning**.
 
@@ -86,7 +86,7 @@ Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (
 
 4. Select **All Windows desktop editions**, and click **Next**.
 
-5. Click **Finish**. Your project opens in Windows ICD.
+5. Click **Finish**. 
 
 6. Go to **Runtime settings** > **SharedPC**. [Select the desired settings for shared PC mode.](#customization)
 
@@ -131,7 +131,7 @@ You can apply the provisioning package to a PC during initial setup or to a PC t
 
     ![The first screen to set up a new PC](images/oobe.jpg)
 
-2. Insert the USB drive and press the Windows key five times. Windows Setup will recognize the drive and ask if you want to set up the device. If there is only one provisioning package on the USB drive, you don't need to press the Windows key five times, Windows will automatically ask you if you want to set up the device. Select **Set up**.
+2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
 
     ![Set up device?](images/setupmsg.jpg)
 
