@@ -77,7 +77,7 @@ An ID is created for that alert definition. Then, create an Indicator Of Comprom
 ### Create a new alert definition
 
 ```json
-POST https://TI.SecurityCenter.Windows.com/v1.0/AlertDefinition HTTP/1.1
+POST https://TI.SecurityCenter.Windows.com/v1.0/AlertDefinitions HTTP/1.1
 Authorization: Bearer <access_token>
 Content-Type: application/json;
 
@@ -86,7 +86,7 @@ Content-Type: application/json;
   "Name": " The name of the IOA. Does not appear in the portal. Max length: 100 ",
   "Severity": "Low",
   "InternalDescription": "Internal description for the IOA. Does not appear in the portal. Max length: 350",
-  "ShortUxDescription": "A short, one sentence, description of the IoA. Max length: 120",
+  "Title": "A short, one sentence, description of the IoA. Max length: 120",
   "UxDescription": " Max length: 500",
   "RecommendedAction": "Custom text to explain what should be done in case of detection. Max length: 2000 ",
   "Category": "Trojan",
@@ -99,7 +99,7 @@ The following values correspond to the alert sections surfaced on the Windows De
 
 Highlighted section | JSON Value
 :---:|:---
-1 | ShortUxDescription
+1 | Title
 2 | Severity
 3 | Category
 4 | UX description
@@ -112,7 +112,7 @@ If successful, you should get a 201 CREATED response containing the representati
   "Name": "Connection to restricted company IP address",
   "Severity": "Low",
   "InternalDescription": "Unusual connection to restricted IP from production machine",
-  "ShortUxDescription": "Connection to restricted company IP address",
+  "Title": "Connection to restricted company IP address",
   "UxDescription": "Any connection to this IP address from a production machine should be suspicious. Only special build machines should access this IP address.",
   "RecommendedAction": "Isolate machine immediately and contact machine owner for awareness.",
   "Category": "Trojan",
@@ -139,7 +139,7 @@ Content-Length: 194
 "Value": "8311e8b377736fb93b18b15372355f3f26c4cd29",
 "DetectionFunction": "Equals",
 "Enabled": true,
-"AlertDefinition@odata.bind": "AlertDefinition(1)"
+"AlertDefinitions@odata.bind": "AlertDefinitions(1)"
 }
 ```
 If successful, you should get a 201 CREATED response containing the representation of the newly created Indicators Of Compromise in the payload.
@@ -152,7 +152,7 @@ Bulk upload of multiple entities can be done by sending an HTTP POST request to 
 >- This operation is atomic. The entire can either succeed or fail. If one alert definition or IOC has a malformed property, the entire upload will fail.
 >- If your upload exceeds the IOC quota, the entire operation will fail. Consider limiting your uploads.
 
-The request’s body should contain a single JSON object with a single field. The name of the field in the case that the entity is alert definition is `alertdefinition` and in the case of IOC is `IOCs`. This field’s value should contain a list of the desired entities.
+The request’s body should contain a single JSON object with a single field. The name of the field in the case that the entity is alert definition is `alertdefinitions` and in the case of IOC is `IOCs`. This field’s value should contain a list of the desired entities.
 
 For example:
 Sending an HTTP POST to https://TI.SecurityCenter.Windows.com/V1.0/IndicatorsOfCompromise/Actions.BulkUpload
@@ -166,14 +166,14 @@ JSON Body:
             "Value": "b68e0b50420dbb03cb8e56a927105bf4b06f3793",
             "DetectionFunction": "Equals",
             "Enabled": true,
-            "IndicationOfAttack@odata.bind": "AlertDefinition(1)"
+            "IndicationOfAttack@odata.bind": "AlertDefinitions(1)"
         },
         {
             "Type": "Sha1",
             "Value": "b68e0b50420dbb03cb8e56a927105bf4b06f3793",
             "DetectionFunction": "Equals",
             "Enabled": true,
-            "IndicationOfAttack@odata.bind": "AlertDefinition(1)"
+            "IndicationOfAttack@odata.bind": "AlertDefinitions(1)"
         }
     ]
 }
@@ -236,7 +236,7 @@ odata.metadata = none
               "Name": "Demo alert definition",
               "Severity": "Medium",
               "InternalDescription": "Some description",
-              "ShortUxDescription": "Demo short Ux Desc",
+              "Title": "Demo short Ux Desc",
               "UxDescription": "Demo ux desc",
               "RecommendedAction": "Actions",
               "Category": "Malware",
@@ -251,7 +251,7 @@ odata.metadata = none
               "Name": "Demo alert definition 2",
               "Severity": "Low",
               "InternalDescription": "Some description",
-              "ShortUxDescription": "Demo short UX Desc2",
+              "Title": "Demo short UX Desc2",
               "UxDescription": "Demo UX Desc2",
               "RecommendedAction": null,
               "Category": "Malware",
