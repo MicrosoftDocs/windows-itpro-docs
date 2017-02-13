@@ -160,7 +160,7 @@ The  **Action center** provides information on actions that were taken on a mach
 Cyber security investigations are typically triggered by an alert. Alerts are related to one or more observed files that are often new or unknown. Clicking a file takes you to the file view where you can see the file's metadata. To enrich the data related to the file, you can submit the file for deep analysis.
 
 The deep analysis feature executes a file in a secure, fully instrumented cloud environment. Deep analysis results show the file's activities, observed behaviors, and associated artifacts, such as dropped files, registry modifications, and communication with IPs.
-Deep analysis currently supports extensive analysis of PE (portable executable) files (including _.exe_ and _.dll_ files).
+Deep analysis currently supports extensive analysis of portable executable (PE) files (including _.exe_ and _.dll_ files).
 
 Deep analysis of a file takes several minutes. When the file analysis is complete, results are made available in the File view page, under a new **Deep analysis summary** section. The summary includes a list of observed *behaviors*, some of which can indicate malicious activity, and *observables*, including contacted IPs and files created on the disk.
 
@@ -192,7 +192,7 @@ When the sample is collected, Windows Defender ATP runs the file in is a secure 
 
 ![You can only submit PE files in the file details seciton](images/submit-file.png)
 
->**Note**&nbsp;&nbsp;Only portable executable (PE) files are supported, including _.exe_ and _.dll_ files
+>**Note**&nbsp;&nbsp;Only PE files are supported, including _.exe_ and _.dll_ files
 
 A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
@@ -221,7 +221,7 @@ The details provided can help you investigate if there are indications of a pote
 If you encounter a problem when trying to submit a file, try each of the following troubleshooting steps.
 
 
-1. Ensure the file is a PE. PE files typically have _.exe_ or _.dll_ extensions (executable programs or applications).
+1. Ensure that the file in question is a PE file. PE files typically have _.exe_ or _.dll_ extensions (executable programs or applications).
 2. Ensure the service has access to the file, that it still exists, and has not been corrupted or modified.
 3. You can wait a short while and try to submit the file again, in case the queue is full or there was a temporary connection or communication error.
 4. Verify the policy setting enables sample collection and try to submit the file again.
