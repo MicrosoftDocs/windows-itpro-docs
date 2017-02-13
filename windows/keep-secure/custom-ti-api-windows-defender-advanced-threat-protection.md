@@ -70,9 +70,8 @@ You can use the metadata to understand the relationships between entities in cus
 The following sections show a few basic programming pattern calls to the custom TI API.
 
 ## Create new resource
-Typically, you should create an alert definition to start creating custom threat intelligence.
-
-An ID is created for that alert definition. Then, create an indicator of compromise and associate it to the ID of the alert definition.
+Typically, you'd need to create an alert definition to start creating custom threat intelligence. An ID is created for that alert definition.
+You can then proceed to create an indicator of compromise and associate it to the ID of the alert definition.
 
 ### Create a new alert definition
 
@@ -85,11 +84,11 @@ Content-Type: application/json;
 {
   "Name": " The name of the IOA. Does not appear in the portal. Max length: 100 ",
   "Severity": "Low",
-  "InternalDescription": "Internal description for the IOA. Does not appear in the portal. Max length: 350",
-  "Title": "A short, one sentence, description of the IoA. Max length: 120",
+  "InternalDescription": "Internal description for the alert definition. Does not appear in the portal. Max length: 350",
+  "Title": "A short, one sentence, description of the  alert definition. Max length: 120",
   "UxDescription": " Max length: 500",
   "RecommendedAction": "Custom text to explain what should be done in case of detection. Max length: 2000 ",
-  "Category": "Trojan",
+  "Category": "Category from the metadata",
   "Enabled": true
 }
 ```
@@ -141,7 +140,7 @@ Content-Type: application/json;
 "AlertDefinition@odata.bind": "AlertDefinitions(1)"
 }
 ```
-If successful, you should get a 201 CREATED response containing the representation of the newly created Indicators Of Compromise in the payload.
+If successful, you should get a 201 CREATED response containing the representation of the newly created indicators of compromise in the payload.
 
 
 ## Bulk upload of alert definitions and IOCs
@@ -220,7 +219,7 @@ odata.metadata = none
 
   ```
   GET https://TI.SecurityCenter.Windows.com/v1.0/AlertDefinitions HTTP/1.1
-  Authorization : Bearer <access_token>
+  Authorization: Bearer <access_token>
   ```
 
   If successful, you should get a 200 OK response containing the collection of alert definitions representation in the payload, as shown as follows:
@@ -236,8 +235,8 @@ odata.metadata = none
               "Name": "Demo alert definition",
               "Severity": "Medium",
               "InternalDescription": "Some description",
-              "Title": "Demo short Ux Desc",
-              "UxDescription": "Demo ux desc",
+              "Title": "Demo short ux description",
+              "UxDescription": "Demo ux description",
               "RecommendedAction": "Actions",
               "Category": "Malware",
               "Id": 1,
@@ -251,8 +250,8 @@ odata.metadata = none
               "Name": "Demo alert definition 2",
               "Severity": "Low",
               "InternalDescription": "Some description",
-              "Title": "Demo short UX Desc2",
-              "UxDescription": "Demo UX Desc2",
+              "Title": "Demo short ux description2",
+              "UxDescription": "Demo ux description2",
               "RecommendedAction": null,
               "Category": "Malware",
               "Id": 2,
@@ -272,7 +271,7 @@ You can use the same pattern for both full and partial updates.
 
 ```json
 PATCH https://TI.SecurityCenter.Windows.com/v1.0/AlertDefinitions(2) HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization: Bearer <access_token>
 Content-Type: application/json;
 Accept: application/json;odata.metadata=none
 
