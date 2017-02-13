@@ -1,4 +1,4 @@
-﻿# Overview of threat mitigations in Windows 10
+﻿# Mitigate against threats by using Windows 10 security features
 
 **Applies to:**
 - Windows 10
