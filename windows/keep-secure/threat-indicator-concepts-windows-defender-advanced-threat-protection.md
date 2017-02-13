@@ -41,7 +41,7 @@ In the context of Windows Defender ATP, alert definitions are containers for IOC
 Each IOC defines the concrete detection logic based on its type and value as well as its action, which determines how it is matched. It is bound to a specific alert definition that defines how a detection is displayed as an alert on the Windows Defender ATP console.
 
 Here is an example of an IOC:
-  - Type: SHA-1
+  - Type: Sha1
   - Value:  92cfceb39d57d914ed8b14d0e37643de0797ae56
   - Action: Equals
 
