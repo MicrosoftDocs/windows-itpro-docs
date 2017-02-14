@@ -27,7 +27,7 @@ The following are known issues and workarounds for Application Virtualization (A
             <td>Don't create this file manually, instead let the <code>Add-AppVClientPackage</code> cmdlet auto-generate it.</td>
         </tr>
         <tr>
-            <td>Failure to update an App-V package from App-V 5.0 or App-V 5.1 to the latest version.</td>
+            <td>Failure to update an App-V package from App-V 5.x to the latest in-box version, by using the PowerShell sequencing commands.</td>
             <td>Make sure you have the complete App-V package or the MSI file from the original app.</td>
         </tr>
         <tr>
