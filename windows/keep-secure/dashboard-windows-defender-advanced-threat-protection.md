@@ -35,7 +35,7 @@ You can explore and investigate alerts and machines to quickly determine if, whe
 
 From the **Dashboard** you will see aggregated events to facilitate the identification of significant events or behaviors on a machine. You can also drill down into granular events and low-level indicators.
 
-It also has clickable tiles that give visual cues on the overall health status of your organization. Each tile opens a detailed view of the corresponding overview.
+It also has clickable tiles that give visual cues on the overall health state of your organization. Each tile opens a detailed view of the corresponding overview.
 
 ## ATP alerts
 You can view the overall number of active ATP alerts from the last 30 days in your network from the **ATP alerts** tile. Alerts are grouped into **New** and **In progress**.
@@ -91,13 +91,13 @@ Clicking on any of these categories will navigate to the [Machines view](investi
 ## Sensor health
 The **Sensor health** tile provides information on the individual endpoint’s ability to provide sensor data to the Windows Defender ATP service. It reports how many machines require attention and helps you identify problematic machines.
 
-![Machine health status tile](images/atp-tile-sensor-health.png)
+![Sensor health tile](images/atp-tile-sensor-health.png)
 
 There are two status indicators that provide information on the number of machines that are not reporting properly to the service:
 - **Inactive** - Machines that have stopped reporting to the Windows Defender ATP service for more than seven days in the past month.
 -	**Misconfigured** – These machines might partially be reporting telemetry to the Windows Defender ATP service and might have configuration errors that need to be corrected.
 
-When you click any of the groups, you’ll be directed to machines view, filtered according to your choice. For more information, see [Check sensor health status](check-sensor-status-windows-defender-advanced-threat-protection.md) and [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
+When you click any of the groups, you’ll be directed to machines view, filtered according to your choice. For more information, see [Check sensor health state](check-sensor-status-windows-defender-advanced-threat-protection.md) and [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
 
 ## Service health
 The **Service health** tile informs you if the service is active or if there are issues.

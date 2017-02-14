@@ -133,7 +133,7 @@ Content-Type: application/json;
 
 
 {
-"Type": "Sha1",
+"Type": "SHA1",
 "Value": "8311e8b377736fb93b18b15372355f3f26c4cd29",
 "DetectionFunction": "Equals",
 "Enabled": true,
@@ -161,14 +161,14 @@ JSON Body:
 ```json
 {
     "iocs": [{
-            "Type": "Sha1",
+            "Type": "SHA1",
             "Value": "b68e0b50420dbb03cb8e56a927105bf4b06f3793",
             "DetectionFunction": "Equals",
             "Enabled": true,
             "AlertDefinition@odata.bind": "AlertDefinitions(1)"
         },
         {
-            "Type": "Sha1",
+            "Type": "SHA1",
             "Value": "b68e0b50420dbb03cb8e56a927105bf4b06f3793",
             "DetectionFunction": "Equals",
             "Enabled": true,
@@ -200,7 +200,7 @@ odata.metadata = none
 
 {
   "value": [{
-      "Type": "Sha1",
+      "Type": "SHA1",
       "Value": "abcdeabcde1212121212abcdeabcde1212121212",
       "DetectionFunction": "Equals",
       "ExpiresAt": null,

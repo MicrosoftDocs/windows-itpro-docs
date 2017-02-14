@@ -1,5 +1,5 @@
 ---
-title: Check sensor health status in Windows Defender ATP
+title: Check sensor health state in Windows Defender ATP
 description: Check sensor health on machines to see if they are misconfigured or inactive.
 keywords: sensor, sensor health, misconfigured, inactive, no sensor data, sensor data, impaired communication, communication
 search.product: eADQiWindows 10XVcnh
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Check sensor health status
+# Check sensor health state
 
 **Applies to:**
 
