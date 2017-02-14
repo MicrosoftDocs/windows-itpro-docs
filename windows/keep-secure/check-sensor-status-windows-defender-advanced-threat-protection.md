@@ -42,14 +42,14 @@ You can filter the health state list by the following status:
   - **No sensor data** - Machines has stopped sending sensor data. Limited alerts can be triggered from the machine.
   - **Impaired communication** - Ability to communicate with machine is impaired. Sending files for deep analysis, blocking files, isolating machine from network and other actions that require communication with the machine may not work.
 
-Clicking on a misconfigured or inactive machine brings you the machine details view. There you’ll see more information about the specific issue of the machine by clicking the information icon.
+You can view the machine details when you click on a misconfigured or inactive machine. You’ll see more specific machine information when you click the information icon.
 
 ![Windows Defender ATP sensor filter](images/atp-machine-health-details.png)
 
 In the **Machines view**, you can download a full list of all the machines in your organization in a CSV format. To download, click the **Manage Alert** menu icon on the top corner of the page.
 
 >[!NOTE]
->Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all machines in the organization, regardless of any filtering applied in the view itself and can take a significant amount of time to download, depending on how large your organization is.
+>Export the list in CSV format to display the unfiltered data. The CSV file will include all machines in the organization, regardless of any filtering applied in the view itself and can take a significant amount of time to download, depending on how large your organization is.
 
 ## Related topics
 - [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
