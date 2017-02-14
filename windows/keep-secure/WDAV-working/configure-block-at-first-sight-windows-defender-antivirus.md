@@ -37,7 +37,7 @@ It is enabled by default when certain pre-requisite settings are also enabled. I
 When a Windows Defender client encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean. The following video describes how this feature works.
 
 <iframe 
-src="http://videoplayercdn.osi.office.net/embed/c2f20f59-ca56-4a7b-ba23-44c60bc62c59" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe> 
+src="https://videoplayercdn.osi.office.net/embed/c2f20f59-ca56-4a7b-ba23-44c60bc62c59" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe> 
 
 > [!NOTE]
 > The Block at first sight feature only use the cloud protection backend for executable files that are downloaded from the Internet, or originating from the Internet zone. A hash value of the EXE file is checked via the cloud backend to determine if this is a previously undetected file.
