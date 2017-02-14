@@ -16,17 +16,91 @@ ms.prod: w10
 
 The following are known issues and workarounds for Application Virtualization (App-V) running on Windows 10, version 1703.
 
-|Problem |Workaround |
-|--------|-----------|
-|Unable to manually create a system-owned folder needed for the `set-AppVClientConfiguration` PowerShell cmdlet when using the _PackageInstallationRoot_, _IntegrationRootUser_, or _IntegrationRootGlobal_ parameters. |Don't create this file manually, instead let the Add-AppVClientPackage cmdlet auto-generate it. |
-|Failure to update an App-V package from App-V 5.0 or App-V 5.1 to the latest version. |Make sure you have the complete App-V package or the MSI file from the original app. |
-|Unable to modify the locale for auto-sequencing. |Open the `C:\Program Files (x86)\Windows Kits\10\Microsoft Application Virtualization\AutoSequencer\Unattend_Sequencer_User_Setup_Template.xml` file and include the language code for your locale. |
-|Filetype and protocol handlers aren't registering properly with the Google Chrome browser, causing you to not see App-V packages as an option for default apps from the **Settings > Apps> Default Apps** area |[Liz] What is workaround? Using Microsoft Edge? This one is kind of tricky since we usually don't include 3rd party issues in release notes. Do we know of this happening with any other program besides Chrome? |
 
-
-
-
-
+<table border="1">
+    <thead>
+        <th>Problem</th>
+        <th>Workaround</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Unable to manually create a system-owned folder needed for the <code>set-AppVClientConfiguration</code> PowerShell cmdlet when using the <i>PackageInstallationRoot</i>, <i>IntegrationRootUser</i>, or <i>IntegrationRootGlobal</i> parameters.</td>
+            <td>Don't create this file manually, instead let the <code>Add-AppVClientPackage</code> cmdlet auto-generate it.</td>
+        </tr>
+        <tr>
+            <td>Failure to update an App-V package from App-V 5.0 or App-V 5.1 to the latest version.</td>
+            <td>Make sure you have the complete App-V package or the MSI file from the original app.</td>
+        </tr>
+        <tr>
+            <td>Unable to modify the locale for auto-sequencing.</td>
+            <td>Open the <code>C:\Program Files (x86)\Windows Kits\10\Microsoft Application Virtualization\AutoSequencer\Unattend_Sequencer_User_Setup_Template.xml</code> file and include the language code for your locale. For example, if you wanted Spanish (Spain), you'd use: <strong>es-ES</strong>.</td>
+        </tr>
+        <tr>
+            <td>Filetype and protocol handlers aren't registering properly with the Google Chrome browser, causing you to not see App-V packages as an option for default apps from the <strong>Settings > Apps> Default Apps</strong> area.</td>
+            <td>The recommended workaround is to add the following code to the AppXManifest.xml file, underneath the <strong>&lt;appv:Extensions&gt;</strong> tag:
+                <pre><code>
+                &lt;appv:Extension Category="AppV.URLProtocol"&gt;
+                    &lt;appv:URLProtocol&gt;
+                        &lt;appv:Name&gt;ftp&lt;/appv:Name&gt;
+                        &lt;appv:ApplicationURLProtocol&gt;
+                            &lt;appv:DefaultIcon&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe,0&lt;/appv:DefaultIcon&gt;
+                            &lt;appv:ShellCommands&gt;
+                                &lt;appv:DefaultCommand&gt;open&lt;/appv:DefaultCommand&gt;
+                                &lt;appv:ShellCommand&gt;
+                                    &lt;appv:ApplicationId&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe&lt;/appv:ApplicationId&gt;
+                                    &lt;appv:Name&gt;open&lt;/appv:Name&gt;
+                                    &lt;appv:CommandLine&gt;"[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe" -- "%1"&lt;/appv:CommandLine&gt;
+                                    &lt;appv:DdeExec&gt;
+                                        &lt;appv:DdeCommand /&gt;
+                                    &lt;/appv:DdeExec&gt;
+                                &lt;/appv:ShellCommand&gt;
+                            &lt;/appv:ShellCommands&gt;
+                        &lt;/appv:ApplicationURLProtocol&gt;
+                    &lt;/appv:URLProtocol&gt;
+                &lt;/appv:Extension&gt;
+                &lt;appv:Extension Category="AppV.URLProtocol"&gt;
+                    &lt;appv:URLProtocol&gt;
+                        &lt;appv:Name&gt;http&lt;/appv:Name&gt;
+                        &lt;appv:ApplicationURLProtocol&gt;
+                            &lt;appv:DefaultIcon&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe,0&lt;/appv:DefaultIcon&gt;
+                            &lt;appv:ShellCommands&gt;
+                                &lt;appv:DefaultCommand&gt;open&lt;/appv:DefaultCommand&gt;
+                                &lt;appv:ShellCommand&gt;
+                                    &lt;appv:ApplicationId&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe&lt;/appv:ApplicationId&gt;
+                                    &lt;appv:Name&gt;open&lt;/appv:Name&gt;
+                                    &lt;appv:CommandLine&gt;"[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe" -- "%1"&lt;/appv:CommandLine&gt;
+                                    &lt;appv:DdeExec&gt;
+                                        &lt;appv:DdeCommand /&gt;
+                                    &lt;/appv:DdeExec&gt;
+                                &lt;/appv:ShellCommand&gt;
+                            &lt;/appv:ShellCommands&gt;
+                        &lt;/appv:ApplicationURLProtocol&gt;
+                    &lt;/appv:URLProtocol&gt;
+                &lt;/appv:Extension&gt;
+                &lt;appv:Extension Category="AppV.URLProtocol"&gt;
+                    &lt;appv:URLProtocol&gt;
+                        &lt;appv:Name&gt;https&lt;/appv:Name&gt;
+                        &lt;appv:ApplicationURLProtocol&gt;
+                            &lt;appv:DefaultIcon&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe,0&lt;/appv:DefaultIcon&gt;
+                            &lt;appv:ShellCommands&gt;
+                                &lt;appv:DefaultCommand&gt;open&lt;/appv:DefaultCommand&gt;
+                                &lt;appv:ShellCommand&gt;
+                                    &lt;appv:ApplicationId&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe&lt;/appv:ApplicationId&gt;
+                                    &lt;appv:Name&gt;open&lt;/appv:Name&gt;
+                                    &lt;appv:CommandLine&gt;"[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe" -- "%1"&lt;/appv:CommandLine&gt;
+                                    &lt;appv:DdeExec&gt;
+                                        &lt;appv:DdeCommand /&gt;
+                                    &lt;/appv:DdeExec&gt;
+                                &lt;/appv:ShellCommand&gt;
+                            &lt;/appv:ShellCommands&gt;
+                        &lt;/appv:ApplicationURLProtocol&gt;
+                    &lt;/appv:URLProtocol&gt;
+                    &lt;/appv:Extension&gt;
+                </code></pre>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 
 ## Related resources list
