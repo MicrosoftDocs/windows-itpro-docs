@@ -597,15 +597,19 @@ The UE-V settings storage location and settings template catalog support storing
 
 -   Format the storage volume with an NTFS file system.
 
--   The share can use Distributed File System (DFS) replication, but Distributed File System Replication (DFSR) is specifically not supported. Distributed File System Namespaces (DFSN) are supported. For detailed information, see [Microsoft’s Support Statement Around Replicated User Profile Data](https://go.microsoft.com/fwlink/p/?LinkId=313991).
+-   The share can use Distributed File System (DFS) but there are restrictions. 
+Specifically, Distributed File System Replication (DFS-R) single target configuration with or without a Distributed File System Namespace (DFS-N) is supported. 
+Likewise, only single target configuration is supported with DFS-N.
+For detailed information, see [Microsoft’s Support Statement Around Replicated User Profile Data](https://go.microsoft.com/fwlink/p/?LinkId=313991)
+and also [Information about Microsoft support policy for a DFS-R and DFS-N deployment scenario](https://support.microsoft.com/kb/2533009).
 
-    In addition, because SYSVOL uses DFSR for replication, SYSVOL cannot be used for UE-V data file replication.
+    In addition, because SYSVOL uses DFS-R for replication, SYSVOL cannot be used for UE-V data file replication.
 
 -   Configure the share permissions and NTFS access control lists (ACLs) as specified in [Deploying the Settings Storage Location for UE-V 2.x](http://technet.microsoft.com/library/dn458891.aspx#ssl).
 
 -   Use file server clustering along with the UE-V Agent to provide access to copies of user state data in the event of communications failures.
 
--   You can store the settings storage path data (user data) and settings template catalog templates on clustered shares, on DFSN shares, or on both.
+-   You can store the settings storage path data (user data) and settings template catalog templates on clustered shares, on DFS-N shares, or on both.
 
 ### <a href="" id="clocksync"></a>Synchronize computer clocks for UE-V settings synchronization
 
