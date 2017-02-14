@@ -16,7 +16,6 @@ ms.prod: w10
 
 The following are known issues and workarounds for Application Virtualization (App-V) running on Windows 10, version 1703.
 
-
 <table border="1">
     <thead>
         <th>Problem</th>
@@ -38,65 +37,65 @@ The following are known issues and workarounds for Application Virtualization (A
         <tr>
             <td>Filetype and protocol handlers aren't registering properly with the Google Chrome browser, causing you to not see App-V packages as an option for default apps from the <strong>Settings > Apps> Default Apps</strong> area.</td>
             <td>The recommended workaround is to add the following code to the AppXManifest.xml file, underneath the <strong>&lt;appv:Extensions&gt;</strong> tag:
-                <pre><code>
-                &lt;appv:Extension Category="AppV.URLProtocol"&gt;
-                    &lt;appv:URLProtocol&gt;
-                        &lt;appv:Name&gt;ftp&lt;/appv:Name&gt;
-                        &lt;appv:ApplicationURLProtocol&gt;
-                            &lt;appv:DefaultIcon&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe,0&lt;/appv:DefaultIcon&gt;
-                            &lt;appv:ShellCommands&gt;
-                                &lt;appv:DefaultCommand&gt;open&lt;/appv:DefaultCommand&gt;
-                                &lt;appv:ShellCommand&gt;
-                                    &lt;appv:ApplicationId&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe&lt;/appv:ApplicationId&gt;
-                                    &lt;appv:Name&gt;open&lt;/appv:Name&gt;
-                                    &lt;appv:CommandLine&gt;"[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe" -- "%1"&lt;/appv:CommandLine&gt;
-                                    &lt;appv:DdeExec&gt;
-                                        &lt;appv:DdeCommand /&gt;
-                                    &lt;/appv:DdeExec&gt;
-                                &lt;/appv:ShellCommand&gt;
-                            &lt;/appv:ShellCommands&gt;
-                        &lt;/appv:ApplicationURLProtocol&gt;
-                    &lt;/appv:URLProtocol&gt;
-                &lt;/appv:Extension&gt;
-                &lt;appv:Extension Category="AppV.URLProtocol"&gt;
-                    &lt;appv:URLProtocol&gt;
-                        &lt;appv:Name&gt;http&lt;/appv:Name&gt;
-                        &lt;appv:ApplicationURLProtocol&gt;
-                            &lt;appv:DefaultIcon&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe,0&lt;/appv:DefaultIcon&gt;
-                            &lt;appv:ShellCommands&gt;
-                                &lt;appv:DefaultCommand&gt;open&lt;/appv:DefaultCommand&gt;
-                                &lt;appv:ShellCommand&gt;
-                                    &lt;appv:ApplicationId&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe&lt;/appv:ApplicationId&gt;
-                                    &lt;appv:Name&gt;open&lt;/appv:Name&gt;
-                                    &lt;appv:CommandLine&gt;"[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe" -- "%1"&lt;/appv:CommandLine&gt;
-                                    &lt;appv:DdeExec&gt;
-                                        &lt;appv:DdeCommand /&gt;
-                                    &lt;/appv:DdeExec&gt;
-                                &lt;/appv:ShellCommand&gt;
-                            &lt;/appv:ShellCommands&gt;
-                        &lt;/appv:ApplicationURLProtocol&gt;
-                    &lt;/appv:URLProtocol&gt;
-                &lt;/appv:Extension&gt;
-                &lt;appv:Extension Category="AppV.URLProtocol"&gt;
-                    &lt;appv:URLProtocol&gt;
-                        &lt;appv:Name&gt;https&lt;/appv:Name&gt;
-                        &lt;appv:ApplicationURLProtocol&gt;
-                            &lt;appv:DefaultIcon&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe,0&lt;/appv:DefaultIcon&gt;
-                            &lt;appv:ShellCommands&gt;
-                                &lt;appv:DefaultCommand&gt;open&lt;/appv:DefaultCommand&gt;
-                                &lt;appv:ShellCommand&gt;
-                                    &lt;appv:ApplicationId&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe&lt;/appv:ApplicationId&gt;
-                                    &lt;appv:Name&gt;open&lt;/appv:Name&gt;
-                                    &lt;appv:CommandLine&gt;"[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe" -- "%1"&lt;/appv:CommandLine&gt;
-                                    &lt;appv:DdeExec&gt;
-                                        &lt;appv:DdeCommand /&gt;
-                                    &lt;/appv:DdeExec&gt;
-                                &lt;/appv:ShellCommand&gt;
-                            &lt;/appv:ShellCommands&gt;
-                        &lt;/appv:ApplicationURLProtocol&gt;
-                    &lt;/appv:URLProtocol&gt;
-                    &lt;/appv:Extension&gt;
-                </code></pre>
+<pre><code>
+&lt;appv:Extension Category="AppV.URLProtocol"&gt;
+	&lt;appv:URLProtocol&gt;
+		&lt;appv:Name&gt;ftp&lt;/appv:Name&gt;
+		&lt;appv:ApplicationURLProtocol&gt;
+			&lt;appv:DefaultIcon&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe,0&lt;/appv:DefaultIcon&gt;
+			&lt;appv:ShellCommands&gt;
+				&lt;appv:DefaultCommand&gt;open&lt;/appv:DefaultCommand&gt;
+				&lt;appv:ShellCommand&gt;
+					&lt;appv:ApplicationId&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe&lt;/appv:ApplicationId&gt;
+					&lt;appv:Name&gt;open&lt;/appv:Name&gt;
+					&lt;appv:CommandLine&gt;"[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe" -- "%1"&lt;/appv:CommandLine&gt;
+					&lt;appv:DdeExec&gt;
+						&lt;appv:DdeCommand /&gt;
+					&lt;/appv:DdeExec&gt;
+				&lt;/appv:ShellCommand&gt;
+			&lt;/appv:ShellCommands&gt;
+		&lt;/appv:ApplicationURLProtocol&gt;
+	&lt;/appv:URLProtocol&gt;
+&lt;/appv:Extension&gt;
+&lt;appv:Extension Category="AppV.URLProtocol"&gt;
+	&lt;appv:URLProtocol&gt;
+		&lt;appv:Name&gt;http&lt;/appv:Name&gt;
+		&lt;appv:ApplicationURLProtocol&gt;
+			&lt;appv:DefaultIcon&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe,0&lt;/appv:DefaultIcon&gt;
+			&lt;appv:ShellCommands&gt;
+				&lt;appv:DefaultCommand&gt;open&lt;/appv:DefaultCommand&gt;
+				&lt;appv:ShellCommand&gt;
+					&lt;appv:ApplicationId&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe&lt;/appv:ApplicationId&gt;
+					&lt;appv:Name&gt;open&lt;/appv:Name&gt;
+					&lt;appv:CommandLine&gt;"[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe" -- "%1"&lt;/appv:CommandLine&gt;
+					&lt;appv:DdeExec&gt;
+						&lt;appv:DdeCommand /&gt;
+					&lt;/appv:DdeExec&gt;
+				&lt;/appv:ShellCommand&gt;
+			&lt;/appv:ShellCommands&gt;
+		&lt;/appv:ApplicationURLProtocol&gt;
+	&lt;/appv:URLProtocol&gt;
+&lt;/appv:Extension&gt;
+&lt;appv:Extension Category="AppV.URLProtocol"&gt;
+	&lt;appv:URLProtocol&gt;
+		&lt;appv:Name&gt;https&lt;/appv:Name&gt;
+		&lt;appv:ApplicationURLProtocol&gt;
+			&lt;appv:DefaultIcon&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe,0&lt;/appv:DefaultIcon&gt;
+			&lt;appv:ShellCommands&gt;
+				&lt;appv:DefaultCommand&gt;open&lt;/appv:DefaultCommand&gt;
+				&lt;appv:ShellCommand&gt;
+					&lt;appv:ApplicationId&gt;[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe&lt;/appv:ApplicationId&gt;
+					&lt;appv:Name&gt;open&lt;/appv:Name&gt;
+					&lt;appv:CommandLine&gt;"[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe" -- "%1"&lt;/appv:CommandLine&gt;
+					&lt;appv:DdeExec&gt;
+						&lt;appv:DdeCommand /&gt;
+					&lt;/appv:DdeExec&gt;
+				&lt;/appv:ShellCommand&gt;
+			&lt;/appv:ShellCommands&gt;
+		&lt;/appv:ApplicationURLProtocol&gt;
+	&lt;/appv:URLProtocol&gt;
+&lt;/appv:Extension&gt;
+</code></pre>            
             </td>
         </tr>
     </tbody>
