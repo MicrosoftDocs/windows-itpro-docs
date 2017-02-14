@@ -1,5 +1,5 @@
 ---
-title: Enable the Block at First Sight feature to detect malware within seconds
+title: Enable Block at First Sight to detect malware in seconds
 description: In Windows 10 the Block at First Sight feature determines and blocks new malware variants in seconds. You can enable the feature with Group Policy.
 keywords: scan, BAFS, malware, first seen, first sight, cloud, MAPS, defender
 search.product: eADQiWindows 10XVcnh
@@ -12,7 +12,11 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Block at First Sight
+
+
+
+
+# Configure the Block at First Sight feature
 
 **Applies to**
 
@@ -20,7 +24,7 @@ author: iaanw
 
 **Audience**
 
-- Network administrators
+- Enterprise security administrators
 
 
 
@@ -30,7 +34,10 @@ It is enabled by default when certain pre-requisite settings are also enabled. I
 
 ## How it works
 
-When a Windows Defender client encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean.
+When a Windows Defender client encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean. The following video describes how this feature works.
+
+<iframe 
+src="http://videoplayercdn.osi.office.net/embed/c2f20f59-ca56-4a7b-ba23-44c60bc62c59" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe> 
 
 > [!NOTE]
 > The Block at first sight feature only use the cloud protection backend for executable files that are downloaded from the Internet, or originating from the Internet zone. A hash value of the EXE file is checked via the cloud backend to determine if this is a previously undetected file.
@@ -48,7 +55,7 @@ In many cases this process can reduce the response time to new malware from hour
 Block at First Sight requires a number of Group Policy settings to be configured correctly or it will not work. Usually, these settings are already enabled in most default Windows Defender deployments in enterprise networks.
 
 > [!IMPORTANT]
-> There is no specific individual setting in System Center Configuration Manager to enable Block at First Sight. It is enabled by default when the pre-requisite settings are configured correctly.
+> There is no specific individual setting in System Center Configuration Manager to enable Block at First Sight. It is enabled by default when the pre-requisite settings are configured correctly. You can disable it individually, or if you disable the pre-requisite settings then it will be automatically disabled.
 
 ### Confirm Block at First Sight is enabled with Group Policy
 
@@ -58,7 +65,7 @@ Block at First Sight requires a number of Group Policy settings to be configured
 
 4.  Click **Policies** then **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender > MAPS** and configure the following Group Policies:
+5.  Expand the tree to **Windows components > Windows Defender Antivirus > MAPS** and configure the following Group Policies:
     
     1.  Double-click the **Join Microsoft MAPS** setting and ensure the option is set to **Enabled**. Click **OK**.
     
@@ -73,7 +80,7 @@ Block at First Sight requires a number of Group Policy settings to be configured
 
     1. Click **OK**.
 
-1.  In the **Group Policy Management Editor**, expand the tree to **Windows components > Windows Defender > Real-time Protection**:
+1.  In the **Group Policy Management Editor**, expand the tree to **Windows components > Windows Defender Antivirus > Real-time Protection**:
     
     1.  Double-click the **Scan all downloaded files and attachments** setting and ensure the option is set to **Enabled**. Click **OK**.
     
@@ -128,5 +135,6 @@ You may choose to disable the Block at First Sight feature if you want to retain
 ## Related topics
 
 - [Windows Defender in Windows 10](windows-defender-in-windows-10.md)
+- [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
 
 
