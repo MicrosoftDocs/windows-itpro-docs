@@ -36,6 +36,7 @@
 #### [Using a room control system](use-room-control-system-with-surface-hub.md)
 ### [Troubleshoot Microsoft Surface Hub](troubleshoot-surface-hub.md)
 ### [Appendix: PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)
+## [Useful downloads for Surface Hub administrators](surface-hub-downloads.md)
 ## [Differences between Surface Hub and Windows 10 Enterprise](differences-between-surface-hub-and-windows-10-enterprise.md)
 ## [How Surface Hub addresses Wi-Fi Direct security issues](surface-hub-wifi-direct.md)
 ## [Change history for Surface Hub](change-history-surface-hub.md)
