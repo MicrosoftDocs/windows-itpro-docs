@@ -52,7 +52,7 @@ For this URL:
 -	`[query_parameters]` represents additional query parameters such as $filter and $select.
 
 **Quotas**</br>
-Each tenant has a defined quota that limits the number of possible Alert definitions and IOCs in the system. If you upload data beyond this quota, you'll encounter an HTTP error status code 507 (Insufficient Storage).
+Each tenant has a defined quota that limits the number of possible alert definitions, IOCs and another quota for IOCs of Action different than “equals” in the system. If you upload data beyond this quota, you'll encounter an HTTP error status code 507 (Insufficient Storage).
 
 ## Custom TI API metadata
 The metadata document ($metadata) is published at the service root.
@@ -70,9 +70,8 @@ You can use the metadata to understand the relationships between entities in cus
 The following sections show a few basic programming pattern calls to the custom TI API.
 
 ## Create new resource
-Typically, you should create an alert definition to start creating custom threat intelligence.
-
-An ID is created for that alert definition. Then, create an Indicator Of Compromise and associate it to the ID of the alert definition.
+Typically, you'd need to create an alert definition to start creating custom threat intelligence. An ID is created for that alert definition.
+You can then proceed to create an indicator of compromise and associate it to the ID of the alert definition.
 
 ### Create a new alert definition
 
@@ -85,11 +84,11 @@ Content-Type: application/json;
 {
   "Name": " The name of the IOA. Does not appear in the portal. Max length: 100 ",
   "Severity": "Low",
-  "InternalDescription": "Internal description for the IOA. Does not appear in the portal. Max length: 350",
-  "Title": "A short, one sentence, description of the IoA. Max length: 120",
+  "InternalDescription": "Internal description for the alert definition. Does not appear in the portal. Max length: 350",
+  "Title": "A short, one sentence, description of the  alert definition. Max length: 120",
   "UxDescription": " Max length: 500",
   "RecommendedAction": "Custom text to explain what should be done in case of detection. Max length: 2000 ",
-  "Category": "Trojan",
+  "Category": "Category from the metadata",
   "Enabled": true
 }
 ```
@@ -97,7 +96,7 @@ Content-Type: application/json;
 The following values correspond to the alert sections surfaced on the Windows Defender ATP portal:
 ![Image of alert from the portal](images/atp-custom-ti-mapping.png)
 
-Highlighted section | JSON Value
+Highlighted section | JSON key name
 :---:|:---
 1 | Title
 2 | Severity
@@ -125,13 +124,12 @@ If successful, you should get a 201 CREATED response containing the representati
 
 ```
 
-### Create a new Indicator of Compromise
+### Create a new indicator of compromise
 
 ```json
 POST https://TI.SecurityCenter.Windows.com/v1.0/IndicatorsOfCompromise HTTP/1.1
 Authorization: Bearer <access_token>
 Content-Type: application/json;
-Content-Length: 194
 
 
 {
@@ -139,20 +137,21 @@ Content-Length: 194
 "Value": "8311e8b377736fb93b18b15372355f3f26c4cd29",
 "DetectionFunction": "Equals",
 "Enabled": true,
-"AlertDefinitions@odata.bind": "AlertDefinitions(1)"
+"AlertDefinition@odata.bind": "AlertDefinitions(1)"
 }
 ```
-If successful, you should get a 201 CREATED response containing the representation of the newly created Indicators Of Compromise in the payload.
+If successful, you should get a 201 CREATED response containing the representation of the newly created indicators of compromise in the payload.
 
 
 ## Bulk upload of alert definitions and IOCs
 Bulk upload of multiple entities can be done by sending an HTTP POST request to `/{resource}/Actions.BulkUpload`. </br>
 
 >[!WARNING]
->- This operation is atomic. The entire can either succeed or fail. If one alert definition or IOC has a malformed property, the entire upload will fail.
->- If your upload exceeds the IOC quota, the entire operation will fail. Consider limiting your uploads.
+>- This operation is atomic. The entire operation can either succeed or fail. If one alert definition or IOC has a malformed property, the entire upload will fail.
+>- If your upload exceeds the IOCs or alert definitions quota, the entire operation will fail. Consider limiting your uploads.
 
-The request’s body should contain a single JSON object with a single field. The name of the field in the case that the entity is alert definition is `alertdefinitions` and in the case of IOC is `IOCs`. This field’s value should contain a list of the desired entities.
+
+The request’s body should contain a single JSON object with a single field. The name of the field in the case that the entity is alert definition is `alertDefinitions` and in the case of IOC is `iocs`. This field’s value should contain a list of the desired entities.
 
 For example:
 Sending an HTTP POST to https://TI.SecurityCenter.Windows.com/V1.0/IndicatorsOfCompromise/Actions.BulkUpload
@@ -161,19 +160,19 @@ JSON Body:
 
 ```json
 {
-    "IOCs": [{
+    "iocs": [{
             "Type": "Sha1",
             "Value": "b68e0b50420dbb03cb8e56a927105bf4b06f3793",
             "DetectionFunction": "Equals",
             "Enabled": true,
-            "IndicationOfAttack@odata.bind": "AlertDefinitions(1)"
+            "AlertDefinition@odata.bind": "AlertDefinitions(1)"
         },
         {
             "Type": "Sha1",
             "Value": "b68e0b50420dbb03cb8e56a927105bf4b06f3793",
             "DetectionFunction": "Equals",
             "Enabled": true,
-            "IndicationOfAttack@odata.bind": "AlertDefinitions(1)"
+            "AlertDefinition@odata.bind": "AlertDefinitions(1)"
         }
     ]
 }
@@ -191,7 +190,7 @@ Authorization: Bearer <access_token>
 Accept: application/json;odata.metadata=none
 ```
 
-If successful, you should get a 200 OK response containing a single Indications Of Compromise representation (per the specified Id) in the payload, as shown as follows:
+If successful, you should get a 200 OK response containing a single indicator of compromise representation (per the specified ID) in the payload, as shown as follows:
 
 ```json
 HTTP/1.1 200 OK
@@ -220,10 +219,10 @@ odata.metadata = none
 
   ```
   GET https://TI.SecurityCenter.Windows.com/v1.0/AlertDefinitions HTTP/1.1
-  Authorization : Bearer <access_token>
+  Authorization: Bearer <access_token>
   ```
 
-  If successful, you should get a 200 OK response containing the collection of Indications Of Attack representation in the payload, as shown as follows:
+  If successful, you should get a 200 OK response containing the collection of alert definitions representation in the payload, as shown as follows:
 
   ```json
   HTTP/1.1 200 OK
@@ -236,13 +235,13 @@ odata.metadata = none
               "Name": "Demo alert definition",
               "Severity": "Medium",
               "InternalDescription": "Some description",
-              "Title": "Demo short Ux Desc",
-              "UxDescription": "Demo ux desc",
+              "Title": "Demo short ux description",
+              "UxDescription": "Demo ux description",
               "RecommendedAction": "Actions",
               "Category": "Malware",
               "Id": 1,
               "CreatedAt": "2016-12-05T15:50:53Z",
-              "CreatedBy": "user@Company1.constoso.com",
+              "CreatedBy": "user@Company1.contoso.com",
               "LastModifiedAt": null,
               "LastModifiedBy": null,
               "Enabled": true
@@ -251,8 +250,8 @@ odata.metadata = none
               "Name": "Demo alert definition 2",
               "Severity": "Low",
               "InternalDescription": "Some description",
-              "Title": "Demo short UX Desc2",
-              "UxDescription": "Demo UX Desc2",
+              "Title": "Demo short ux description2",
+              "UxDescription": "Demo ux description2",
               "RecommendedAction": null,
               "Category": "Malware",
               "Id": 2,
@@ -272,7 +271,7 @@ You can use the same pattern for both full and partial updates.
 
 ```json
 PATCH https://TI.SecurityCenter.Windows.com/v1.0/AlertDefinitions(2) HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization: Bearer <access_token>
 Content-Type: application/json;
 Accept: application/json;odata.metadata=none
 
@@ -282,12 +281,12 @@ Accept: application/json;odata.metadata=none
 }
 ```
 
-If successful, you should get a 200 OK response containing the updated Indications Of Attack representation (per the specified Id) in the payload.
+If successful, you should get a 200 OK response containing the updated alert definition representation (per the specified ID) in the payload.
 
-## Update the association (relation) between an Indication Of Compromise to a different Indication Of Attack
+## Update the association (relation) between an indicator of compromise to a different alert definition
 
 ```json
-PUT https://TI.SecurityCenter.Windows.com/v1.0/IndicatorsOfCompromise(3)/IndicationOfAttack/$ref HTTP/1.1
+PUT https://TI.SecurityCenter.Windows.com/v1.0/IndicatorsOfCompromise(3)/AlertDefinition/$ref HTTP/1.1
 Authorization : Bearer <access_token>
 Content-Type: application/json;
 
@@ -300,7 +299,7 @@ Content-Type: application/json;
 
 ```
 DELETE https://TI.SecurityCenter.Windows.com/v1.0/IndicatorsOfCompromise(1) HTTP/1.1
-Authorization : Bearer <access_token>
+Authorization: Bearer <access_token>
 ```
 
 If successful, you should get a 204 NO CONTENT response.
@@ -323,7 +322,7 @@ This action will delete all the IOCs associated with a given alert definition wi
 
 For example, deleting all of the IOCs associated with the alert definition with ID `1` deletes all those IOCs without deleting the alert definition itself.
 
-Send an HTTP POST to `https://TI.SecurityCenter.Windows.com/V1.0/IndicatorsOfAttack(1)/Actions.DeleteIOCs`.
+Send an HTTP POST to `https://TI.SecurityCenter.Windows.com/V1.0/AlertDefinitions(1)/Actions.DeleteIOCs`.
 
 Upon a successful request the response will be HTTP 204.
 

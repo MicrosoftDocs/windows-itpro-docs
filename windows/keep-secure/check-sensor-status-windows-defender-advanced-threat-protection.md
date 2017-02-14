@@ -33,15 +33,14 @@ There are two status indicators on the tile that provide information on the numb
 
 Clicking any of the groups directs you to Machines view, filtered according to your choice.
 
-You can filter the health state list by the following status:
-
 ![Windows Defender ATP sensor filter](images/atp-sensor-filter.png)
 
+You can filter the health state list by the following status:
 - **Active** - Machines that are actively reporting to the Windows Defender ATP service.
 - **Inactive** - Machines that have stopped reporting to the Windows Defender ATP service.
 - **Misconfigured** - These machines might partially be reporting sensor data to the Windows Defender ATP service but have configuration errors that need to be corrected. Misconfigured machines can have either one or a combination of the following issues:
-- **No sensor data** - Machines has stopped sending sensor data. Limited alerts can be triggered from the machine.
-- **Impaired communication** - Ability to communicate with machine is impaired. Sending files for deep analysis, blocking files, isolating machine from network and other actions that require communication with the machine may not work.
+  - **No sensor data** - Machines has stopped sending sensor data. Limited alerts can be triggered from the machine.
+  - **Impaired communication** - Ability to communicate with machine is impaired. Sending files for deep analysis, blocking files, isolating machine from network and other actions that require communication with the machine may not work.
 
 Clicking on a misconfigured or inactive machine brings you the machine details view. There you’ll see more information about the specific issue of the machine by clicking the information icon.
 
