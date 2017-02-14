@@ -145,27 +145,6 @@ The Start policy settings listed below do not work on Windows 10. Most of them 
 
  
 
-## Related topics
-
-
-[Manage corporate devices](manage-corporate-devices.md)
-
-[New policies for Windows 10](new-policies-for-windows-10.md)
-
-[Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md)
-
-[Customize and export Start layout](customize-and-export-start-layout.md)
-
-[Customize Windows 10 Start screens with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-
-[Customize Windows 10 Start screens with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
-
-[Customize Windows 10 Start screens with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-
- 
-
- 
-
 
 
 

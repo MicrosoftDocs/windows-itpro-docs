@@ -89,7 +89,7 @@ Both Feature and Quality Updates can be deferred from deploying to client device
 Windows Update for Business was first made available in Windows 10, version 1511. In Windows 10, version 1607 (also known as the Anniversary Update), there are several new or changed capabilities provided as well as updated behavior.   
 
 >[!NOTE]
->For more information on Current Branch and Current Branch for Business, see [Windows 10 servicing options](introduction-to-windows-10-servicing.md).
+>For more information on Current Branch and Current Branch for Business, see [Windows 10 servicing options](waas-overview.md#servicing-branches).
 
 <table>
     <thead>

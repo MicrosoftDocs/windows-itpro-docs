@@ -17,7 +17,7 @@ localizationpriority: high
 - Windows 10 Mobile
 - Windows 10 IoT Mobile
 
-Windows as a service is a new concept, introduced with the release of Windows 10.  While [an extensive set of documentation](waas-update-windows-10.md) is available explaining all the specifics and nuances, here is a quick guide to the most important concepts.
+Windows as a service is a new concept, introduced with the release of Windows 10.  While [an extensive set of documentation](index.md) is available explaining all the specifics and nuances, here is a quick guide to the most important concepts.
 
 ## Definitions
 
