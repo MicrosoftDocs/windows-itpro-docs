@@ -22,7 +22,7 @@
 #### [Deploy code integrity policies: steps](deploy-code-integrity-policies-steps.md)
 #### [Deploy catalog files to support code integrity policies](deploy-catalog-files-to-support-code-integrity-policies.md)
 ### [Deploy Device Guard: enable virtualization-based security](deploy-device-guard-enable-virtualization-based-security.md)
-## [Mitigate against threats by using Windows 10 security features](overview-of-threat-mitigations-in-windows-10.md)
+## [Mitigate threats by using Windows 10 security features](overview-of-threat-mitigations-in-windows-10.md)
 ## [Protect derived domain credentials with Credential Guard](credential-guard.md)
 ## [Protect Remote Desktop credentials with Remote Credential Guard](remote-credential-guard.md)
 ## [Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md)
