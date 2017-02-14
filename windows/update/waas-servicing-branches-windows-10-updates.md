@@ -207,7 +207,7 @@ By enabling the Group Policy setting under **Computer Configuration\Administrati
 
 ## Related topics
 
-- [Update Windows 10 in the enterprise](waas-update-windows-10.md)
+- [Update Windows 10 in the enterprise](index.md)
 - [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)

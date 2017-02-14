@@ -92,7 +92,7 @@ For Windows 10, version 1607, organizations already managing their systems with 
 
 ## Related topics
 
-- [Update Windows 10 in the enterprise](waas-update-windows-10.md)
+- [Update Windows 10 in the enterprise](index.md)
 - [Overview of Windows as a service](waas-overview.md)
 - [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md)
 - [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md)

@@ -89,7 +89,7 @@ When your MDM tool supports Windows Store for Business, the MDM can use these CS
 
 -   [EnterpriseAssignedAccess](https://msdn.microsoft.com/library/windows/hardware/mt157024.aspx) (Windows 10 Mobile, only)
 
-For more information, see [Configure an MDM provider](configure-mdm-provider-windows-store-for-business.md).
+For more information, see [Configure an MDM provider](../manage/configure-mdm-provider-windows-store-for-business.md).
 
 ## Show private store only using Group Policy 
 Applies to Windows 10 Enterprise, version 1607, Windows 10 Education
@@ -110,9 +110,9 @@ If you're using Windows Store for Business and you want employees to only see ap
 
 ## Related topics
 
-[Distribute apps using your private store](distribute-apps-from-your-private-store.md)
+[Distribute apps using your private store](../manage/distribute-apps-from-your-private-store.md)
 
-[Manage access to private store](manage-access-to-private-store.md)
+[Manage access to private store](../manage/manage-access-to-private-store.md)
 
  
 

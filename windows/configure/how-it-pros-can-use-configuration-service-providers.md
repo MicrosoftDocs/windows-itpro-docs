@@ -68,7 +68,7 @@ Many settings in Windows ICD will display documentation for that setting in the 
 
 ![how help content appears in icd](images/cspinicd.png)
 
-[Configure devices without MDM](configure-devices-without-mdm.md) explains how to use the Windows ICD tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a runtime provisioning package.
+[Configure devices without MDM](manage/configure-devices-without-mdm.md) explains how to use the Windows ICD tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a runtime provisioning package.
 
 ### CSPs in MDM
 
@@ -220,11 +220,11 @@ Here is a list of CSPs supported on Windows 10 Enterprise, Windows 10 Mobile E
 
 [Lock down Windows 10](lock-down-windows-10.md)
 
-[Manage corporate devices](manage-corporate-devices.md)
+[Manage corporate devices](manage/manage-corporate-devices.md)
 
-[New policies for Windows 10](new-policies-for-windows-10.md)
+[New policies for Windows 10](manage/new-policies-for-windows-10.md)
 
-[Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
+[Windows 10 Mobile and MDM](manage/windows-10-mobile-and-mdm.md)
 
 [Changes to Group Policy settings for Start in Windows 10](changes-to-start-policies-in-windows-10.md)
 
