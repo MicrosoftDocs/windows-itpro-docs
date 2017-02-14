@@ -6,8 +6,8 @@
         "redirect_document_id": true 
     }, 
     { 
-        "source_path": "windows/keep-secure/create-edp-policy-using-sccm.md",
-        "redirect_url": "windows/keep-secure/create-wip-policy-using-sccm.md", 
+        "source_path": "windows/keep-secure/keep-secure/create-edp-policy-using-sccm.md",
+        "redirect_url": "create-wip-policy-using-sccm.md", 
         "redirect_document_id": false 
     } 
   ] 
