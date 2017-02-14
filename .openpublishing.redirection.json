@@ -1,0 +1,14 @@
+{ 
+  "redirections": [ 
+    {   
+        "source_path": "keep-secure/create-edp-policy-using-intune.md", 
+        "redirect_url": "https://technet.microsoft.com/itpro/windows/keep-secure/create-wip-policy-using-intune", 
+        "redirect_document_id": true 
+    }, 
+    { 
+        "source_path": "keep-secure/create-edp-policy-using-sccm.md",
+        "redirect_url": "windows/keep-secure/create-wip-policy-using-sccm", 
+        "redirect_document_id": false 
+    } 
+  ] 
+}
