@@ -33,13 +33,23 @@ You can get information from the following sections in the file view:
 -	Most recent observed machines with file
 
 
-The file details, malware detection, and prevalence worldwide sections display various attributes about the file. You’ll see actions you can take on the file and details such as the file’s MD5, the VirusTotal detection ratio and Windows Defender AV detection if available, and the file’s prevalence worldwide.
+The file details, malware detection, and prevalence worldwide sections display various attributes about the file. You’ll see actions you can take on the file and details such as the file’s MD5, the VirusTotal detection ratio and Windows Defender AV detection if available, and the file’s prevalence worldwide. You'll also be able to [submit a file for deep analysis](investigate-files-windows-defender-advanced-threat-protection.md#deep-analysis).
+
+![Image of file information](images/atp-file-information.png)
 
 The **Alerts related to this file** section provides a list of alerts that are associated with the file. This list is a simplified version of the Alerts queue, and shows the date when the last activity was detected, a short description of the alert, the user associated with the alert, the alert's severity, the alert's status in the queue, and who is addressing the alert.
 
+![Image of alerts related to the file section](images/atp-alerts-related-to-file.png)
+
 The **File in organization** section provides details on the prevalence of the file, prevalence in email inboxes and the name observed in the organization.
 
-The **Most recent observed machines with the file** section allows you to specify a date range to see which machines have been observed with the file. This allows for greater accuracy in defining entities to display such as if and when an entity was observed in the organization. For example, if you’re trying to identify the origin of a network communication to a certain IP Address within a 10-minute period on a given date, you can specify that exact time interval, and see only files that communicated with that IP Address at that time, drastically reducing unnecessary scrolling and searching.
+![Image of file in organization](images/atp-file-in-org.png)
+
+The **Most recent observed machines with the file** section allows you to specify a date range to see which machines have been observed with the file.
+
+![Image of most recent observed machine with the file](images/atp-observed-machines.png)
+
+This allows for greater accuracy in defining entities to display such as if and when an entity was observed in the organization. For example, if you’re trying to identify the origin of a network communication to a certain IP Address within a 10-minute period on a given date, you can specify that exact time interval, and see only files that communicated with that IP Address at that time, drastically reducing unnecessary scrolling and searching.
 
 ## Stop and quarantine files in your network
 You can contain an attack in your organization by stopping the malicious process and quarantine the file where it was observed.

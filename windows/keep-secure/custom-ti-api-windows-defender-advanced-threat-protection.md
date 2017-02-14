@@ -190,7 +190,7 @@ Authorization: Bearer <access_token>
 Accept: application/json;odata.metadata=none
 ```
 
-If successful, you should get a 200 OK response containing a single indicator of compromise representation (per the specified Id) in the payload, as shown as follows:
+If successful, you should get a 200 OK response containing a single indicator of compromise representation (per the specified ID) in the payload, as shown as follows:
 
 ```json
 HTTP/1.1 200 OK
@@ -281,7 +281,7 @@ Accept: application/json;odata.metadata=none
 }
 ```
 
-If successful, you should get a 200 OK response containing the updated alert definition representation (per the specified Id) in the payload.
+If successful, you should get a 200 OK response containing the updated alert definition representation (per the specified ID) in the payload.
 
 ## Update the association (relation) between an indicator of compromise to a different alert definition
 
