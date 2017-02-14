@@ -60,7 +60,7 @@ First, you create a default user profile with the customizations that you want, 
 
 3. [Create an answer file (Unattend.xml)](https://msdn.microsoft.com/library/windows/hardware/dn915085.aspx) that sets the [CopyProfile](https://msdn.microsoft.com/library/windows/hardware/dn922656.aspx) parameter to **True**. The CopyProfile parameter causes Sysprep to copy the currently signed-on user’s profile folder to the default user profile. You can use [Windows System Image Manager](https://msdn.microsoft.com/library/windows/hardware/dn922445.aspx), which is part of the Windows Assessment and Deployment Kit (ADK) to create the Unattend.xml file. 
  
-3. Use the [Remove-AppxProvisionedPackage](https://technet.microsoft.com/library/dn376476%28v=wps.620%29.aspx) cmdlet in Windows PowerShell to uninstall the following applications: 
+3. For devices running Windows 10, use the [Remove-AppxProvisionedPackage](https://technet.microsoft.com/library/dn376476%28v=wps.620%29.aspx) cmdlet in Windows PowerShell to uninstall the following applications: 
  
      - Microsoft.windowscommunicationsapps_8wekyb3d8bbwe
      - Microsoft.BingWeather_8wekyb3d8bbwe
@@ -146,14 +146,14 @@ It may take some time for this change to replicate to all domain controllers.
 
 ## Apply policies to improve sign-in time
 
-When a user is configured with a mandatory profile, Windows 10 starts as though it was the first sign-in each time the user signs in. To improve sign-in performance for users with mandatory user profiles, apply the following Group Policy settings.
-
-- Computer Configuration > Administrative Templates > System > Logon > **Show first sign-in animation** = Disabled
-- Computer Configuration > Administrative Templates > Windows Components > Search > **Allow Cortana** = Disabled
-- Computer Configuration > Administrative Templates > Windows Components > Cloud Content > **Turn off Microsoft consumer experience** = Enabled
+When a user is configured with a mandatory profile, Windows 10 starts as though it was the first sign-in each time the user signs in. To improve sign-in performance for users with mandatory user profiles, apply the Group Policy settings shown in the following table. (The table shows which operating system versions each policy setting can apply to.)
 
 
-
+| Group Policy setting | Windows 10 | Windows Server 2016 | Windows 8.1 | Windows Server 2012 |
+| --- | --- | --- | --- | --- |
+| Computer Configuration > Administrative Templates > System > Logon > **Show first sign-in animation** = Disabled | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) |
+| Computer Configuration > Administrative Templates > Windows Components > Search > **Allow Cortana** = Disabled | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) | ![not supported](images/crossmark.png)  | ![not supported](images/crossmark.png)  |
+| Computer Configuration > Administrative Templates > Windows Components > Cloud Content > **Turn off Microsoft consumer experience** = Enabled | ![supported](images/checkmark.png) | ![not supported](images/crossmark.png) | ![not supported](images/crossmark.png) | ![not supported](images/crossmark.png) |
 
 
 

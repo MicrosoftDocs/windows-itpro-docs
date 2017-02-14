@@ -76,7 +76,7 @@ Before you proceed, make sure your environment includes these requirements for r
 <td align="left"><p>.NET Framework 4 or higher</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Windows 8 and Windows 8.1</p></td>
+<td align="left"><p>Windows 8.1</p></td>
 <td align="left"><p>Enterprise or Pro</p></td>
 <td align="left"><p>None</p></td>
 <td align="left"><p>32-bit or 64-bit</p></td>
@@ -91,10 +91,26 @@ Before you proceed, make sure your environment includes these requirements for r
 <td align="left"><p>Windows PowerShell 3.0 or higher</p></td>
 <td align="left"><p>.NET Framework 4.5</p></td>
 </tr>
+<tr class="odd">
+<td align="left"><p>Windows 10, pre-1607 verison</p></td>
+<td align="left"><p>Enterprise or Pro</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>32-bit or 64-bit</p></td>
+<td align="left"><p>Windows PowerShell 3.0 or higher</p></td>
+<td align="left"><p>.NET Framework 4.5</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Windows Server 2016</p></td>
+<td align="left"><p>Standard or Datacenter</p></td>
+<td align="left"><p>None</p></td>
+<td align="left"><p>64-bit</p></td>
+<td align="left"><p>Windows PowerShell 3.0 or higher</p></td>
+<td align="left"><p>.NET Framework 4.5</p></td>
+</tr>
 </tbody>
 </table>
 
- 
+**Note:** Starting with Windows 10, version 1607, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/en-us/WindowsForBusiness/windows-for-enterprise) and is no longer part of the Microsoft Desktop Optimization Pack
 
 Also…
 
