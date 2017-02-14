@@ -1,6 +1,6 @@
 ---
-title: Change history for Manage and update Windows 10 (Windows 10)
-description: This topic lists new and updated topics in the Manage and update Windows 10 documentation for Windows 10 and Windows 10 Mobile.
+title: Change history for Manage Windows 10 (Windows 10)
+description: This topic lists new and updated topics in the Manage Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 ms.assetid: 29144AFA-1DA9-4532-B07D-1EBE34B7E1E0
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -8,17 +8,26 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Change history for Manage and update Windows 10
+# Change history for Manage Windows 10
 
-This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
+This topic lists new and updated topics in the [Manage Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 >If you're looking for **update history** for Windows 10, see [Windows 10 and Windows Server 2016 update history](https://support.microsoft.com/help/12387/windows-10-update-history).
+
+## RELEASE: Windows 10, version 1703
+
+The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). Some topics have been moved to [Update Windows 10](../update/index.md) or to [Configure Windows 10](../configure/index.md).
 
 ## February 2017
 
 | New or changed topic | Description |
 | --- | --- |
+| [Monitor Windows Updates with Update Compliance](update-compliance-monitor.md) | New |
+| [Get started with Update Compliance](update-compliance-get-started.md) | New |
+| [Use Update Compliance to monitor Windows Updates](update-compliance-using.md) | New |
 | [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) | Added Group Policy setting that blocks user access to Windows Update. |
+| [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) | Added Express updates. |
+| [Distribute offline apps](distribute-offline-apps.md) | General updates to topic. Added links to supporting content for System Center Configuration Manager and Microsoft Intune.  |
 
 ## January 2017
 
@@ -75,7 +84,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | [Configure Windows 10 taskbar](configure-windows-10-taskbar.md) | Updated sample XML for combined Start and taskbar layout; added note to explain the difference between applying taskbar configuration by Group Policy and by provisioning package |
 | [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Updated instructions for exiting assigned access mode. |
 | Application development for Windows as a service  |  Topic moved to MSDN: [Application development for Windows as a service](https://msdn.microsoft.com/windows/uwp/get-started/application-development-for-windows-as-a-service)
-| Windows 10 servicing options | New content replaced this topic; see [Overview of Windows as a service](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-overview) |
+| Windows 10 servicing options | New content replaced this topic; see [Overview of Windows as a service](waas-overview.md) |
 
 ## RELEASE: Windows 10, version 1607
 

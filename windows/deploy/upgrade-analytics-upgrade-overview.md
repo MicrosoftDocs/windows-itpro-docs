@@ -19,6 +19,10 @@ The upgrade overivew blade displays data refresh status, including the date and 
 - Pending user changes = User changes count displays "Data refresh pending" in amber.
 - No pending user changes = User changes count displays "Up to date" in green.
 
+In the following example, less than 4% of (3k\355k) computers have incomplete data, and there are no pending user changes:
+
+![Upgrade overview](images/ua-cg-17.png)
+
 <!-- PRESERVING ORIGINAL IMAGE CODING JUST IN CASE
 <img src="media/image3.png" width="214" height="345" />
 -->
