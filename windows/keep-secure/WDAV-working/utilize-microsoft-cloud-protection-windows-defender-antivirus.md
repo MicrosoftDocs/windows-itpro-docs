@@ -1,7 +1,7 @@
 ---
-title: 
-description: 
-keywords: windows defender antivirus, antimalware, security, defender, 
+title: Utilize cloud-provided protection in Windows Defender Antivirus
+description: Cloud-provided protection provides an advanced level of fast, robust antivirus detection.
+keywords: windows defender antivirus, antimalware, security, defender, cloud, cloud-based protection
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -9,7 +9,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
-author: 
+author: iaanw
 ---
 
 # Utilize Microsoft cloud-provided protection in Windows Defender Antivirus
