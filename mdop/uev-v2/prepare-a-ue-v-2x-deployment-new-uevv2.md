@@ -45,7 +45,7 @@ This workflow diagram provides a high-level understanding of a UE-V deployment a
 
 ![deploymentworkflow](images/deploymentworkflow.png)
 
-<a href="" id="planning"></a>**Planning a UE-V deployment:** First, you want to do a little bit of planning so that you can determine which UE-V components you’ll be deploying. Planning a UE-V deployment involves these things:
+**Planning a UE-V deployment:** First, you want to do a little bit of planning so that you can determine which UE-V components you’ll be deploying. Planning a UE-V deployment involves these things:
 
 -   [Decide whether to synchronize settings for custom applications](#deciding)
 
@@ -663,10 +663,10 @@ Before you proceed, make sure your environment includes these requirements for r
 <td align="left"><p>.NET Framework 4.5 or higher</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Windows 10</p>
+<td align="left"><p>Windows 10, pre-1607 version</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>Only UE-V 2.1 SP1 supports Windows 10</p>
+<p>Only UE-V 2.1 SP1 supports Windows 10, pre-1607 version</p>
 </div>
 <div>
  
@@ -685,6 +685,14 @@ Before you proceed, make sure your environment includes these requirements for r
 <td align="left"><p>Windows PowerShell 3.0 or higher</p></td>
 <td align="left"><p>.NET Framework 4.5 or higher</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p>Windows Server 2016</p></td>
+<td align="left"><p>Standard or Datacenter</p></td>
+<td align="left"><p>None</p></td>
+<td align="left"><p>64-bit</p></td>
+<td align="left"><p>Windows PowerShell 3.0 or higher</p></td>
+<td align="left"><p>.NET Framework 4.6 or higher</p></td>
+</tr>
 </tbody>
 </table>
 
@@ -697,6 +705,9 @@ Also…
 -   **Administrative Credentials** for any computer on which you’ll be installing
 
 **Note**  
+
+-   Starting with WIndows 10, version 1607, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/en-us/WindowsForBusiness/windows-for-enterprise) and is no longer part of the Microsoft Desktop Optimization Pack.
+
 -   The UE-V Windows PowerShell feature of the UE-V Agent requires .NET Framework 4 or higher and Windows PowerShell 3.0 or higher to be enabled. Download Windows PowerShell 3.0 [here](https://go.microsoft.com/fwlink/?LinkId=309609).
 
 -   Install .NET Framework 4 or .NET Framework 4.5 on computers that run the Windows 7 or the Windows Server 2008 R2 operating system. The Windows 8, Windows 8.1, and Windows Server 2012 operating systems come with .NET Framework 4.5 installed. The Windows 10 operating system comes with .NET Framework 4.6 installed.
