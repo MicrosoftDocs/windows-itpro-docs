@@ -1,6 +1,6 @@
 ---
-title: Change history for Manage and update Windows 10 (Windows 10)
-description: This topic lists new and updated topics in the Manage and update Windows 10 documentation for Windows 10 and Windows 10 Mobile.
+title: Change history for Manage Windows 10 (Windows 10)
+description: This topic lists new and updated topics in the Manage Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 ms.assetid: 29144AFA-1DA9-4532-B07D-1EBE34B7E1E0
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -8,9 +8,9 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Change history for Manage and update Windows 10
+# Change history for Manage Windows 10
 
-This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
+This topic lists new and updated topics in the [Manage Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 >If you're looking for **update history** for Windows 10, see [Windows 10 and Windows Server 2016 update history](https://support.microsoft.com/help/12387/windows-10-update-history).
 
