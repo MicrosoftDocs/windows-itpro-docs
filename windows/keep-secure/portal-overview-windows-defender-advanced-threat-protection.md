@@ -33,7 +33,7 @@ When you open the portal, you’ll see the main areas of the application:
 
  ![Windows Defender Advanced Threat Protection portal](images/atp-main-portal.png)
 
-- (1) Search bar, Feedback, Settings, Help
+- (1) Search, Feedback, Settings, Help and support
 - (2) Navigation pane
 - (3) Main portal
 

@@ -86,8 +86,8 @@ Content-Type: application/json;
   "Severity": "Low",
   "InternalDescription": "Internal description for the alert definition. Does not appear in the portal. Max length: 350",
   "Title": "A short, one sentence, description of the  alert definition. Max length: 120",
-  "UxDescription": " Max length: 500",
-  "RecommendedAction": "Custom text to explain what should be done in case of detection. Max length: 2000 ",
+  "UxDescription": "Max length: 500",
+  "RecommendedAction": "Custom text to explain what should be done in case of detection. Max length: 2000",
   "Category": "Category from the metadata",
   "Enabled": true
 }
