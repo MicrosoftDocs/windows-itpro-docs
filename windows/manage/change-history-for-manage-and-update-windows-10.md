@@ -14,6 +14,10 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 >If you're looking for **update history** for Windows 10, see [Windows 10 and Windows Server 2016 update history](https://support.microsoft.com/help/12387/windows-10-update-history).
 
+## RELEASE: Windows 10, version 1703
+
+The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). Some topics have been moved to [Update Windows 10](../update/index.md) or to [Configure Windows 10](../configure/index.md).
+
 ## February 2017
 
 | New or changed topic | Description |
