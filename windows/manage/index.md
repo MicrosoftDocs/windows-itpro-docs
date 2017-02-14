@@ -1,5 +1,5 @@
 ---
-title: Manage and update Windows 10 (Windows 10)
+title: Manage  Windows 10 (Windows 10)
 description: Learn about managing and updating Windows 10.
 ms.assetid: E5716355-02AB-4B75-A962-14B1A7F7BDA0
 keywords: Windows 10, MDM, WSUS, Windows update
@@ -11,9 +11,9 @@ localizationpriority: high
 author: jdeckerMS
 ---
 
-# Manage and update Windows 10
+# Manage Windows 10
 
-Learn about managing and updating Windows 10.
+Learn about managing Windows 10.
 
 >[!NOTE]
 >Information for Windows 10 Enterprise also applies to Windows 10 IoT Enterprise, and information for Windows 10 Mobile Enterprise also applies to Windows 10 IoT Mobile. For information about managing devices running Windows 10 IoT Core, see [Windows 10 IoT Core Commercialization](https://www.windowsforiotdevices.com/).

@@ -27,7 +27,7 @@ This library provides the core content that IT pros need to evaluate, plan, depl
 
 [Keep Windows 10 secure](keep-secure/index.md)
 
-[Manage and update Windows 10](manage/index.md)
+[Manage Windows 10](manage/index.md)
 
 ## Related topics
 
