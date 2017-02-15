@@ -44,7 +44,7 @@ Sequencing multiple apps at the same time requires that you create a **ConfigFil
 
     - **&lt;Installer&gt;.** The file name for the app executable. This will typically be an .exe or .msi file.
 
-    - **&lt;InstallerOptions&gt;.** The command-line options required for the app installation. <!-- [Liz] Add the command-line improvements section as a subheading here -->
+    - **&lt;InstallerOptions&gt;.** The command-line options required for the app installation.
 
     - **&lt;TimeoutInMinutes&gt;.** The maximum amount of time, in minutes, that the cmdlet should wait for sequencing to complete. You can enter a different value for each app, based on the size and complexity of the app itself.
 

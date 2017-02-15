@@ -42,7 +42,7 @@ Updating multiple apps at the same time requires that you create a **ConfigFile*
 
     - **&lt;Installer&gt;.** The file name for the app executable. This will typically be an .exe or .msi file.
 
-    - **&lt;InstallerOptions&gt;.** The command-line options required for the app installation. <!-- [Liz] Add the command-line improvements section as a subheading here -->
+    - **&lt;InstallerOptions&gt;.** The command-line options required for the app installation.
 
     - **&lt;Package&gt;.** The file path to the location of your App-V packages. These packages were created when you sequenced your apps.
 
