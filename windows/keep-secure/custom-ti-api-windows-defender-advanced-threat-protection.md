@@ -65,7 +65,7 @@ For example, you can view the service document for the v1.0 version using the fo
 
 The metadata allows you to see and understand the data model of the custom threat intelligence, including the entity types and sets, complex types, and enums that make up the request and response packets sent to and from the threat intelligence API.
 
-You can use the metadata to understand the relationships between entities in custom threat intelligence and establish URLs that navigate between entities.
+You can use the metadata to understand the relationships between entities in the custom threat intelligence and establish URLs that navigate between entities.
 
 The following sections show a few basic programming pattern calls to the threat intelligence API.
 
