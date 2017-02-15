@@ -54,5 +54,5 @@
 ### [NFC-based device provisioning](provisioning-nfc.md)
 ### [Windows ICD command-line interface (reference)](provisioning-command-line.md)
 ### [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
-### [Lockdown features from Windows Embedded 8.1 Industry](lockdown-features-windows-10.md)
+## [Lockdown features from Windows Embedded 8.1 Industry](lockdown-features-windows-10.md)
 ## [Change history for Configure Windows 10](change-history-for-configure-windows-10.md)
