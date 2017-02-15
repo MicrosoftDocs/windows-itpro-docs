@@ -24,6 +24,7 @@ Starting with Windows 10, version 1703, running the New-BatchAppVSequencerPackag
 Updating multiple apps at the same time requires that you create a **ConfigFile** with info related to each round of updating. This file is then used by the cmdlet to start the VM at a "clean" checkpoint, to copy the installer from the Host device to the VM, and then to start the App-V Sequencer to monitor your specified app installations.
 
 **To create your ConfigFile for use by the PowerShell cmdlet**
+
 1. Determine the apps that need to be included in your app package, and then open a text editor, such as Notepad.
 
 2. Add the following XML info for each app:
@@ -89,6 +90,7 @@ Updating multiple apps at the same time requires that you create a **ConfigFile*
 Updating multipe apps at the same time requires that you create a **ConfigFile** to collect all of the info related to each round of updating. This file is then used by the App-V Sequencer interface after creating a "clean" checkpoint on your VM.
 
 **To create your ConfigFile for use by the App-V Sequencer interface**
+
 1. Determine the apps that need to be updated and then open a text editor, such as Notepad.
 
 2. Add the following XML info for each app:
