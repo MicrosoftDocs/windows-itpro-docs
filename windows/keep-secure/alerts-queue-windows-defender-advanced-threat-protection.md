@@ -1,5 +1,5 @@
 ---
-title: View and organize the Windows Defender ATP Alerts queue
+title: Alerts queue overview in Windows Defender ATP
 description: Learn about how the Windows Defender ATP alerts queue work, and how to sort and filter lists of alerts.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period
 search.product: eADQiWindows 10XVcnh
@@ -23,9 +23,9 @@ localizationpriority: high
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-The **Alerts queue** shows a list of alerts that were flagged from endpoints in your network. Alerts appear in queues according to their current status. In any of the queues, you'll see details such as the severity of alerts and the number of machines where the alerts were seen.
+The **Alerts queue** shows a list of alerts that were flagged from endpoints in your network. Alerts are displayed in queues according to their current status. In any of the queues, you'll see details such as the severity of alerts and the number of machines where the alerts were seen.
 
-Alerts are organized in three queues, by their workflow status:
+Alerts are organized in queues by their workflow status or assignment:
 
 - **New**
 - **In progress**
