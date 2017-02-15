@@ -22,7 +22,7 @@ The following are new features in App-V for Windows 10, version 1703.
 Previous versions of the App-V Sequencer have required you to manually sequence and update your app packages. This was time-consuming and required extensive interaction, causing many companies to deploy brand-new packages rather than update an existing one. Windows 10, version 1703 introduces the App-V Auto-Sequencer, which automatically sequences your app packages, improving your overall experience by streamlining the provisioning of the prerequisite environment, automating app installation, and expediting the package updating setup.
 
 Using the automatic sequencer to package your apps provides:
--  Automatic virtual machine (VM) provisioning of the sequencing environment. For info about this, see [Automatically sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-sequence-a-new-app.md)
+-  Automatic virtual machine (VM) provisioning of the sequencing environment. For info about this, see [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-provision-a-vm.md).
 
 - Batch-sequencing of packages. This means that multiple apps can be sequenced at the same time, in a single group. For info about this, see [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md).
 

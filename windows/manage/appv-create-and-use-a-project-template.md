@@ -51,7 +51,7 @@ After creating the template, you can apply it to all of your new virtual app pac
 
 - [Learn about Hyper-V on Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server)
 
-- [Automatically sequence a single app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-sequence-a-new-app.md)
+- [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-provision-a-vm.md)
 
 - [Manually sequence a single app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md) [Liz] Do we want to continue to point to the manual steps? Is there a reason to do one over the other?
 

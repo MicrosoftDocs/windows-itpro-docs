@@ -1,6 +1,6 @@
 ---
-title: Automatically sequence a new app using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
-description: How to automatically sequence a new app using Microsoft Application Virtualization Sequencer (App-V Sequencer) PowerShell cmdlet or the user interface.
+title: Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
+description: How to automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer) PowerShell cmdlet or the user interface.
 author: eross-msft
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -9,22 +9,12 @@ ms.prod: w10
 ---
 
 
-# Automatically sequence a new app using Microsoft Application Virtualization Sequencer (App-V Sequencer)
+# Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)
 
 **Applies to**
 -   Windows 10, version 1703
 
-Previous versions of the App-V Sequencer have required you to manually sequence and update your app packages. This was time-consuming and required extensive interaction, causing many companies to deploy brand-new packages rather than update an existing one. Windows 10, version 1703 introduces the App-V Auto-Sequencer, which automatically sequences your app packages, improving your overall experience by streamlining the provisioning of the prerequisite environment, automating app installation, and expediting the package updating setup.
-
-Using the automatic sequencer to package your apps provides:
-
-- Automatic virtual machine (VM) provisioning of the sequencing environment. The process for this is covered in this topic.
-
-- Batch-sequencing of packages. This means that multiple apps can be sequenced at the same time, in a single group. For info about this, see [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md).
-
-- Batch-updating of packages. This means that multiple apps can be updated at the same time, in a single group. For info about this, see [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md).
-
-- Automatic template creation. The App-V package template is automatically created when using the automatic App-V Sequencer cmdlet or interface.
+Previous versions of the App-V Sequencer have required you to manually create your sequencing environment. Windows 10, version 1703 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine.
 
 ## Automatic VM provisioning of the sequencing environment
 You have 2 options for provisioning an VM for auto-sequencing:
@@ -118,6 +108,11 @@ The 2 types of provisioning log files, located at %temp%\AutoSequencer\Logs, are
 - **Connect-AppvSequencerVM-report-&lt;*time_stamp*&gt;.txt**. Includes info about the connections made to the VM, showing whether there were any failures.
 
 
+### Next steps
+After provisioning your sequencing environment, you must sequence your apps, either as a group or individually. For more info about sequencing your apps, see [Manually sequence a single new app using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md), [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md), and [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md).
+
+After you sequence your packages, you can automatically cleanup any unpublished packages on the App-V client. For more info, see [Automatically cleanup unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md).
+
 ### Related topics
 - [Download the Convert-WindowsImage tool](https://gallery.technet.microsoft.com/scriptcenter/Convert-WindowsImageps1-0fe23a8f)
 
@@ -126,14 +121,6 @@ The 2 types of provisioning log files, located at %temp%\AutoSequencer\Logs, are
 - [How to install the App-V Sequencer](appv-install-the-sequencer.md)
 
 - [Learn about Hyper-V on Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server)
-
-- [Manually sequence a new app using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md)
-
-- [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md)
-
-- [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md)
-
-- [Automatically cleanup unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md)
 
 
 **Have a suggestion for App-V?**<p>

@@ -169,7 +169,7 @@ There are 3 types of log files that occur when you sequence multiple apps at the
 
 - [Learn about Hyper-V on Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server)
 
-- [Automatic VM provisioning of the sequencing environment](appv-auto-sequence-a-new-app.md)
+- [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-provision-a-vm.md)
 
 - [Manually sequence a single app using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md)
 
