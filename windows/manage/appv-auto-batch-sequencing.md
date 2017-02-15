@@ -17,7 +17,7 @@ Sequencing apps requires you to install and start Microsoft Application Virtuali
 
 There are 2 approaches to sequencing multiple apps at the same time:
 
-- Using a cmdlet in PowerShell
+- Using the PowerShell cmdlet, New-BatchAppVSequencerPackages
 
     -OR-
 
