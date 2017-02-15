@@ -11,15 +11,18 @@ ms.prod: w10
 # Create and apply an App-V project template to a sequenced App-V package
 
 **Applies to**
--   Windows 10, version 1703
+-   Windows 10, version 1607
 
-Starting with Windows 10, version 1703, you can save an App-V project template (.appvt) file as part of a sequenced App-V package, so it's automatically loaded every time the package opens for editing or updates. Your template can include general option settings, file exclusion list settings, and target operating system settings.
+You can use an App-V project template (.appvt) file to save commonly applied settings associated with an existing virtual application package. These settings can then be applied when you create new virtual application packages in your environment. Using a project template can streamline the process of creating virtual application packages. App-V project templates differ from App-V Package Accelerators because App-V Package Accelerators are application-specific, while App-V project templates can be applied to multiple applications. For more info about Package Accelerators, see the [How to create a Package Accelerator](appv-create-a-package-accelerator.md) topic.
 
->[!NOTE]
->App-V project templates differ from App-V Package Accelerators because App-V Package Accelerators are application-specific, while App-V project templates can be applied to multiple applications. For more info about Package Accelerators, see the [How to create a Package Accelerator](appv-create-a-package-accelerator.md) topic.
+>[!IMPORTANT]
+>In Windows 10, version 1703, running the new-appvsequencerpackage or the update-appvsequencepackage cmdlets automatically captures and stores all of your customizations as an App-V project template. If you want to make changes to this package later, your customizations are automatically loaded from this template file. If you have an auto-saved template and you attempt to load another template through the _TemplateFilePath_ parameter, the customization value from the parameter will override the auto-saved template.
+
 
 ## Create a project template
 You must first create and save a project template, including a virtual app package with settings to be used by the template.
+
+**To create a project template**
 
 1. On the device running the App-V Sequencer, click **Start**, click **All Programs**, click **Microsoft Application Virtualization**, and then click **Microsoft Application Virtualization Sequencer**.
 
@@ -51,9 +54,11 @@ After creating the template, you can apply it to all of your new virtual app pac
 
 - [Learn about Hyper-V on Windows Server 2016](https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server)
 
-- [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-provision-a-vm.md)
+- [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md)
 
-- [Manually sequence a single app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md)
+- [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md)
+
+- [Manually sequence a new app using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-sequence-a-new-application.md)
 
 **Have a suggestion for App-V?**<p>
 Add or vote on suggestions on the [Application Virtualization feedback site](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization).<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
