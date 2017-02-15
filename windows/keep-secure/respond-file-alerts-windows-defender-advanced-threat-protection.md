@@ -28,7 +28,7 @@ You can take action on file related alerts to quickly respond to detected attack
 >[!NOTE]
 > These response actions are only available for machines on Windows 10, version  1703.
 
-You can also submit files for deep analysis to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file. 
+You can also submit files for deep analysis to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file.
 
 ## Stop and quarantine files in your network
 You can contain an attack in your organization by stopping the malicious process and quarantine the file where it was observed.
