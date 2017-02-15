@@ -36,7 +36,6 @@
 ## [Join Windows 10 Mobile to Azure Active Directory](join-windows-10-mobile-to-azure-active-directory.md)
 ## [New policies for Windows 10](new-policies-for-windows-10.md)
 ## [Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
-## [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md)
 ## [Reset a Windows 10 Mobile device](reset-a-windows-10-mobile-device.md)
 ## [Application Virtualization (App-V) for Windows](appv-for-windows.md)
 ### [Getting Started with App-V](appv-getting-started.md)
