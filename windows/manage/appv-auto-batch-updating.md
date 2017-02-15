@@ -23,7 +23,7 @@ There are 2 approaches to updating multiple apps at the same time:
 
 - Using the user-interface provided by the App-V Sequencer
 
-Starting with Windows 10, version 1703, running the New-BatchAppVSequencerPackages cmdlet or the App-V Sequencer interface captures and stores all of your customizations as an App-V project template. If you later want to make changes to this package, your customizations are automatically loaded from this template file.
+Starting with Windows 10, version 1703, running the New-BatchAppVSequencerPackages cmdlet or the App-V Sequencer interface captures and stores all of your customizations as an App-V project template. If you want to make changes to this package later, your customizations are automatically loaded from this template file.
 
 >[!NOTE]
 >If you're trying to sequence multiple apps at the same time, see the [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md) topic.
