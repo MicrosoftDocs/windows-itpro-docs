@@ -166,9 +166,7 @@ You can use the sequencer to modify an existing package. The computer on which y
 [How to Modify an Existing Virtual Application Package](appv-modify-an-existing-virtual-application-package.md)
 
 ## Creating a project template
-An pp-V project template (.appvt) file is a project template that can be used to save commonly applied, customized settings. You can then more easily use these settings for future sequencings.
-
-App-V project templates differ from App-V Application Accelerators because App-V Application Accelerators are application-specific, and App-V project templates can be applied to multiple applications. Additionally, you cannot use a project template when you use a Package Accelerator to create a virtual application package. The following general settings are saved with an App-V project template:
+An App-V project template (.appvt) file is a project template that can be used to save commonly applied, customized settings. You can then more easily use these settings for future sequencings. App-V project templates differ from App-V Application Accelerators because App-V Application Accelerators are application-specific, and App-V project templates can be applied to multiple applications. Additionally, you cannot use a project template when you use a Package Accelerator to create a virtual application package. The following general settings are saved with an App-V project template:
 
 A template can specify and store multiple settings as follows:
 
