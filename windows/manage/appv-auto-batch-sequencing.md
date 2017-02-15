@@ -13,7 +13,7 @@ ms.prod: w10
 **Applies to**
 -   Windows 10, version 1703
 
-Sequencing apps requires you to install and start Microsoft Application Virtualization Sequencer (App-V Sequencer), and to install the necessary apps to collect any changes made to the operating system during the installation and building of the App-V package.
+Sequencing multiple apps at the same time requires you to install and start Microsoft Application Virtualization Sequencer (App-V Sequencer), and to install the necessary apps to collect any changes made to the operating system during the installation and building of the App-V package.
 
 There are 2 approaches to sequencing multiple apps at the same time:
 
@@ -23,8 +23,10 @@ There are 2 approaches to sequencing multiple apps at the same time:
 
 - Using the user-interface provided by the App-V Sequencer
 
+Starting with Windows 10, version 1703, running the New-BatchAppVSequencerPackages cmdlet or the App-V Sequencer interface captures and stores all of your customizations as an App-V project template. If you later want to make changes to this package, your customizations are automatically loaded from this template file.
+
 >[!NOTE]
-If you're trying to update multiple apps at the same time, see the [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md) topic.
+>If you're trying to update multiple apps at the same time, see the [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md) topic.
 
 ### Sequence multiple apps by using a PowerShell cmdlet
 Sequencing multiple apps at the same time requires that you create a **ConfigFile** with info related to each round of sequencing. This file is then used by the cmdlet to start the VM at a "clean" checkpoint, to copy the installer from the Host device to the VM, and then to start the App-V Sequencer to monitor your specified app installations.
