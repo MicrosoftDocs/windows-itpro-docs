@@ -19,10 +19,10 @@ localizationpriority: high
 
 >  **Looking for Windows Embedded 8.1 Industry information?** See [Assigned Access]( https://go.microsoft.com/fwlink/p/?LinkId=613653)
 
-A single-use or *kiosk* device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). For a kiosk device to run a Universal Windows app, use the **assigned access** feature. For a kiosk device (Windows 10 Enterprise or Education) to run a Classic Windows application, use **Shell Launcher** to set a custom user interface as the shell. To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
+A single-use or *kiosk* device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). For a kiosk device to run a Universal Windows app, use the [assigned access](#assigned-access) feature. For a kiosk device (Windows 10 Enterprise or Education) to run a Classic Windows application, use [Shell Launcher](#shell-launcher) to set a custom user interface as the shell. To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
 
-**Note**  
-A Universal Windows app is built on the Universal Windows Platform (UWP), which was first introduced in Windows 8 as the Windows Runtime. A Classic Windows application uses the Classic Windows Platform (CWP) (e.g., COM, Win32, WPF, WinForms, etc.) and is typically launched using an .EXE or .DLL file.
+>[!NOTE]
+>A Universal Windows app is built on the Universal Windows Platform (UWP), which was first introduced in Windows 8 as the Windows Runtime. A Classic Windows application uses the Classic Windows Platform (CWP) (e.g., COM, Win32, WPF, WinForms, etc.) and is typically launched using an .EXE or .DLL file.
 
  
 
@@ -63,8 +63,8 @@ For a more secure kiosk experience, we recommend that you make the following con
     To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
 
      
-
-## <a href="" id="assigned-access-method"></a>Assigned access method for Universal Windows apps
+<span id="assigned-access" />
+## Assigned access method for Universal Windows apps
 
 
 Using assigned access, Windows 10 runs the designated Universal Windows app above the lockscreen, so that the assigned access account has no access to any other functionality on the device. You have these choices for setting up assigned access:
@@ -73,7 +73,7 @@ Using assigned access, Windows 10 runs the designated Universal Windows app abo
 | --- | --- | --- |
 | [Use Settings on the PC](#set-up-assigned-access-in-pc-settings) | Local standard | Pro, Enterprise, Education |
 | [Apply a mobile device management (MDM) policy](#set-up-assigned-access-in-mdm) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
-| [Create a provisioning package using Windows Imaging and Configuration Designer (ICD)](#icd) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
+| [Create a provisioning package using Windows Configuration Designer (ICD)](#set-up-assigned-access-wcd) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
 | [Run a PowerShell script](#set-up-assigned-access-using-windows-powershell) | Local standard | Pro, Enterprise, Education |
 
 
@@ -88,8 +88,8 @@ Using assigned access, Windows 10 runs the designated Universal Windows app abo
 
     The Universal Windows app must be able to handle multiple views and cannot launch other apps or dialogs.
 
-**Note**  
-Assigned access does not work on a device that is connected to more than one monitor.
+>[!NOTE]  
+>Assigned access does not work on a device that is connected to more than one monitor.
 
  
 
@@ -115,16 +115,16 @@ Assigned Access has one setting, KioskModeApp. In the KioskModeApp setting, you 
 
 [See the technical reference for the Assigned Access configuration service provider.](https://go.microsoft.com/fwlink/p/?LinkId=626608)
 
-### <a href="" id="icd"></a>Set up assigned access using Windows Imaging and Configuration Designer (ICD)
+<sp id="set-up-assigned-access-wcd" />
+### Set up assigned access using Windows Configuration Designer
 
-Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that configures a device as a kiosk. [Install the ADK.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+>[!IMPORTANT]
+>When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-> **Important**
-When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-**Create a provisioning package for a kiosk device**
+1. [install Windows Configuration Designer](provisioning-install-icd.md)
 
-1.  Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+2. Open Windows Configuration Designer
 
 2.  Choose **Advanced provisioning**.
 
@@ -169,15 +169,8 @@ When you build a provisioning package, you may include sensitive information in 
     -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
     -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
 
-**Apply the provisioning package**
+[Learn how to apply a provisioning package.](provisioning-apply-package.md)
 
-1.  Select the provisioning package that you want to apply, double-click the file, and then allow admin privileges.
-
-2.  Consent to allow the package to be installed.
-
-    After you allow the package to be installed, the settings will be applied to the device
-
-[Learn how to apply a provisioning package in audit mode or OOBE.](https://go.microsoft.com/fwlink/p/?LinkID=692012)
 
 ### Set up assigned access using Windows PowerShell
 
@@ -255,7 +248,8 @@ If you press **Ctrl + Alt + Del** and do not sign in to another account, after a
 
 To change the default time for assigned access to resume, add *IdleTimeOut* (DWORD) and enter the value data as milliseconds in hexadecimal.
 
-## <a href="" id="local-user-policy"></a>Shell Launcher for Classic Windows applications
+<span id="shell-launcher" />
+## Shell Launcher for Classic Windows applications
 
 
 Using Shell Launcher, you can configure a kiosk device that runs a Classic Windows application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on.
@@ -425,16 +419,7 @@ $IsShellLauncherEnabled = $ShellLauncherClass.IsEnabled()
 "`nEnabled is set to " + $IsShellLauncherEnabled.Enabled
 ```
 
-## Related topics
 
-
-[Set up a device for anyone to use](set-up-a-device-for-anyone-to-use.md)
-
-[Set up a kiosk for Windows 10 for mobile edition](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
-
-[Manage and update Windows 10](index.md)
-
- 
 
  
 
