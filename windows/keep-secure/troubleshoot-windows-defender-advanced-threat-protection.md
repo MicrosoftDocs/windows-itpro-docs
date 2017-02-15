@@ -26,8 +26,8 @@ This section addresses issues that might arise as you use the Windows Defender A
 If you encounter a server error when trying to access the service, you’ll need to change your browser cookie settings.
 Configure your browser to allow cookies.
 
-### Data is missing on the portal
-If data is missing on the Windows Defender ATP portal it’s possible that proxy settings are blocking it.
+### Elements or data missing on the portal
+If some UI elements or data is missing on the Windows Defender ATP portal it’s possible that proxy settings are blocking it.
 
 Make sure that `*.securitycenter.windows.com` is included the proxy whitelist.
 
