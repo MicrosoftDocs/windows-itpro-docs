@@ -3,7 +3,7 @@
 ## [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 ## [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md)
 ## [Configure kiosk and shared devices running Windows 10 desktop editions](kiosk-shared-pc.md)
-### [Set up a shared or guest PC with Windows 10](set-up-a-device-for-anyone-to-use.md)
+### [Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md)
 ### [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md)
 ### [Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md)
 ### [Lock down Windows 10 to specific apps (AppLocker)](lock-down-windows-10-to-specific-apps.md)
