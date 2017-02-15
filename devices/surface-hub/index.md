@@ -25,6 +25,6 @@ Documents related to deploying and managing the Microsoft Surface Hub in your or
 | [Differences between Surface Hub and Windows 10 Enterprise](differences-between-surface-hub-and-windows-10-enterprise.md) | This topic explains the differences between the operating system on Surface Hub and Windows 10 Enterprise. |
 | [How Surface Hub addresses Wi-Fi Direct security issues](surface-hub-wifi-direct.md) | This topic provides guidance on Wi-Fi Direct security risks, how the Surface Hub has addressed those risks, and how Surface Hub administrators can configure the device for the highest level of security.  |
 | [Useful downloads for Surface Hub administrators](surface-hub-downloads.md) | This topic provides links to useful Surface Hub documents, such as product datasheets, the site readiness guide, and user's guide. |
-| [Change history for Surface Hub](change-history-surface-hub.md) | This topic lists new and updated topis in the Surface Hub documentation. |
+| [Change history for Surface Hub](change-history-surface-hub.md) | This topic lists new and updated topics in the Surface Hub documentation. |
 
 
