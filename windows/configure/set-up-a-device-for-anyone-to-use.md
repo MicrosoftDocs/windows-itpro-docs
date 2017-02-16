@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerMS
 localizationpriority: high
+redirect_url: https://technet.microsoft.com/itpro/windows/configure/kiosk-shared-pc
 ---
 
 # Set up a device for anyone to use (kiosk mode)
