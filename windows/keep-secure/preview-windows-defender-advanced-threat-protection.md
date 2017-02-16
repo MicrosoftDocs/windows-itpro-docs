@@ -46,7 +46,7 @@ The following links take you to the topics that provide information on how to us
 - [Respond to machine alerts](respond-machine-alerts-windows-defender-advanced-threat-protection.md)
   - [Isolate machines from the network](respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
   - [Undo machine isolation](respond-machine-alerts-windows-defender-advanced-threat-protection.md#undo-machine-isolation)
-  - [Collect investigation package](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package)
+  - [Collect investigation package](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
 
 - [Respond to file related alerts](respond-file-alerts-windows-defender-advanced-threat-protection.md)
   - [Stop and quarantine files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#stop-and-quarantine-files-in-your-network)
@@ -56,7 +56,7 @@ The following links take you to the topics that provide information on how to us
 - [Check sensor status](check-sensor-status-windows-defender-advanced-threat-protection.md)
   - [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
 
-- [Investigate a user entity](investigate-user-entity-windows-defender-advanced-threat-protection.md)
+
 
 ## Enhancements
 The following topics have been added to enhance the Windows Defender ATP experience:
@@ -65,3 +65,4 @@ The following topics have been added to enhance the Windows Defender ATP experie
   - [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
   - [Create custom threat intelligence using REST API](custom-ti-api-windows-defender-advanced-threat-protection.md)
   - [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Investigate a user entity](investigate-user-entity-windows-defender-advanced-threat-protection.md)
