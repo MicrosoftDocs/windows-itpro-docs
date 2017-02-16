@@ -14,6 +14,12 @@ localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
+## February 2017
+
+| New or changed topic | Description |
+| --- | --- |
+| [Useful downloads for Surface Hub administrators](surface-hub-downloads.md) | New |
+
 ## January 2017
 
 | New or changed topic | Description |

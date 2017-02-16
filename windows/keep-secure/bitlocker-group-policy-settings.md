@@ -32,6 +32,7 @@ The following sections provide a comprehensive list of BitLocker Group Policy se
 
 The following policy settings can be used to determine how a BitLocker-protected drive can be unlocked.
 
+-   [Allow devices with Secure Boot and protect DMS ports to opt out of preboot PIN](#bkmk-hstioptout)
 -   [Allow network unlock at startup](#bkmk-netunlock)
 -   [Require additional authentication at startup](#bkmk-unlockpol1)
 -   [Allow enhanced PINs for startup](#bkmk-unlockpol2)
@@ -84,6 +85,55 @@ The following policies are used to support customized deployment scenarios in yo
 -   [Use enhanced Boot Configuration Data validation profile](#bkmk-enbcd)
 -   [Allow access to BitLocker-protected fixed data drives from earlier versions of Windows](#bkmk-depopt4)
 -   [Allow access to BitLocker-protected removable data drives from earlier versions of Windows](#bkmk-depopt5)
+
+### <a href="" id="bkmk-hstioptout"></a>Allow devices with Secure Boot and protect DMS ports to opt out of preboot PIN
+
+This policy setting allows users on devices that are compliant with InstantGo or the Microsoft Hardware Security Test Interface (HSTI) to not have a PIN for preboot authentication.
+ 
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p><strong>Policy description</strong></p></td>
+<td align="left"><p>With this policy setting, you can allow TPM-only protection for newer, more secure devices, such as devices that support InstantGo or HSTI, while requiring PIN on older devices.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>Introduced</strong></p></td>
+<td align="left"><p>Windows 10, version 1703</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>Drive type</strong></p></td>
+<td align="left"><p>Operating system drives</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>Policy path</strong></p></td>
+<td align="left"><p>Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Operating System Drives</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>Conflicts</strong></p></td>
+<td align="left"><p>This setting overrides the <b>Require startup PIN with TPM</b> option of the [Require additional authentication at startup](#bkmk-unlockpol1) policy on compliant hardware. 
+
+</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>When enabled</strong></p></td>
+<td align="left"><p>Users on InstantGo and HSTI compliant devices will have the choice to turn on BitLocker without preboot authentication.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>When disabled or not configured</strong></p></td>
+<td align="left"><p>The options of the [Require additional authentication at startup](#bkmk-unlockpol1) policy apply.</p></td>
+</tr>
+</tbody>
+</table>
+ 
+**Reference**
+
+The preboot authentication option <b>Require startup PIN with TPM</b> of the [Require additional authentication at startup](#bkmk-unlockpol1) policy is often enabled to help ensure security for older devices that do not support InstantGo. 
+But visually impaired users have no audible way to know when to enter a PIN. 
+This setting enables an exception to the PIN-required policy on secure hardware. 
 
 ### <a href="" id="bkmk-netunlock"></a>Allow network unlock at startup
 
