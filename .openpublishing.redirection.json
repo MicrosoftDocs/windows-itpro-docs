@@ -1,5 +1,110 @@
 { 
-  "redirections": [ 
+  "redirections": [
+    {
+        "source_path": "windows/manage/waas-quick-start.md",
+        "redirect_url": "/itpro/windows/update/waas-quick-start", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-overview.md",
+        "redirect_url": "/itpro/windows/update/waas-overview", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-servicing-strategy-windows-10-updates.md",
+        "redirect_url": "/itpro/windows/update/waas-servicing-strategy-windows-10-updates", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-deployment-rings-windows-10-updates.md",
+        "redirect_url": "/itpro/windows/update/waas-deployment-rings-windows-10-updates", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-servicing-branches-windows-10-updates.md",
+        "redirect_url": "/itpro/windows/update/waas-servicing-branches-windows-10-updates", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/update-compliance-monitor.md",
+        "redirect_url": "/itpro/windows/update/update-compliance-monitor", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/update-compliance-get-started.md",
+        "redirect_url": "/itpro/windows/update/update-compliance-get-started", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/update-compliance-using.md",
+        "redirect_url": "/itpro/windows/update/update-compliance-using", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-optimize-windows-10-updates.md",
+        "redirect_url": "/itpro/windows/update/waas-optimize-windows-10-updates", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-delivery-optimization.md",
+        "redirect_url": "/itpro/windows/update/waas-delivery-optimization", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-branchcache.md",
+        "redirect_url": "/itpro/windows/update/waas-branchcache", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-mobile-updates.md",
+        "redirect_url": "/itpro/windows/update/waas-mobile-updates", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-manage-updates-wufb.md",
+        "redirect_url": "/itpro/windows/update/waas-manage-updates-wufb", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-configure-wufb.md",
+        "redirect_url": "/itpro/windows/update/waas-configure-wufb", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-integrate-wufb.md",
+        "redirect_url": "/itpro/windows/update/waas-integrate-wufb", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-wufb-group-policy.md",
+        "redirect_url": "/itpro/windows/update/waas-wufb-group-policy", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-wufb-intune.md",
+        "redirect_url": "/itpro/windows/update/waas-wufb-intune.md", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-manage-updates-wsus.md",
+        "redirect_url": "/itpro/windows/update/waas-manage-updates-wsus", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-manage-updates-configuration-manager.md",
+        "redirect_url": "/itpro/windows/update/waas-manage-updates-configuration-manager", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-restart.md",
+        "redirect_url": "/itpro/windows/update/waas-restart", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/waas-update-windows-10.md",
+        "redirect_url": "/itpro/windows/update/index", 
+        "redirect_document_id": true 
+    },                        
     {   
         "source_path": "windows/keep-secure/create-edp-policy-using-intune.md", 
         "redirect_url": "https://technet.microsoft.com/itpro/windows/keep-secure/create-wip-policy-using-intune", 
@@ -9,6 +114,10 @@
         "source_path": "windows/keep-secure/create-edp-policy-using-sccm.md",
         "redirect_url": "/itpro/windows/keep-secure/create-wip-policy-using-sccm", 
         "redirect_document_id": true 
-    } 
+    },
+
+
+
+
   ] 
 }
