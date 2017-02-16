@@ -12,7 +12,7 @@ author: jdeckerMS
 
 # Configure Windows 10 Mobile devices
 
-Windows 10 Mobile enables administrators to define what users can see and do on a device, whether you think of it as "configuring" or "customizing" or "lock down". You might want to provide a standard Start screen with pre-installed apps, or restrict various settings and features, or even configure the device to run only a single app. 
+Windows 10 Mobile enables administrators to define what users can see and do on a device, which you might think of it as "configuring" or "customizing" or "device lockdown". Your device configure can provide a standard Start screen with pre-installed apps, or restrict various settings and features, or even limit the device to run only a single app (kiosk). 
 
 ## In this section
 
