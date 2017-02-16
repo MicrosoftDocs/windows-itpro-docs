@@ -536,23 +536,23 @@
         "redirect_document_id": true 
     },
     {
-        "source_path": "",
-        "redirect_url": "", 
+        "source_path": "windows/manage/app-inventory-managemement-windows-store-for-business.md",
+        "redirect_url": "/itpro/windows/manage/app-inventory-management-windows-store-for-business", 
         "redirect_document_id": true 
     },
     {
-        "source_path": "",
-        "redirect_url": "", 
+        "source_path": "windows/manage/application-development-for-windows-as-a-service.md",
+        "redirect_url": "https://msdn.microsoft.com/windows/uwp/get-started/application-development-for-windows-as-a-service", 
         "redirect_document_id": true 
     },
     {
-        "source_path": "",
-        "redirect_url": "", 
+        "source_path": "windows/manage/appv-accessibility.md",
+        "redirect_url": "/itpro/windows/manage/appv-getting-started", 
         "redirect_document_id": true 
     },
     {
-        "source_path": "",
-        "redirect_url": "", 
+        "source_path": "windows/manage/appv-accessing-the-client-management-console.md",
+        "redirect_url": "/itpro/windows/manage/appv-using-the-client-management-console", 
         "redirect_document_id": true 
     },
     {
