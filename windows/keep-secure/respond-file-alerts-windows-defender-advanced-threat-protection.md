@@ -67,7 +67,7 @@ When the file is being removed from an endpoint, the following notification is s
 In the machine timeline, a new event is added for each machine where a file was stopped and quarantined.
 
 >[!NOTE]
->The **Action** button is turned off for files signed by Microsoft as well as trusted third-party publishers to prevent the removal of critical system files and files used by important applications. 
+>The **Action** button is turned off for files signed by Microsoft as well as trusted third-party publishers to prevent the removal of critical system files and files used by important applications.
 
 ![Image of action button turned off](images/atp-file-action.png)
 
@@ -226,12 +226,3 @@ HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
 
 > [!NOTE]
 > If the value *AllowSampleCollection* is not available, the client will allow sample collection by default.
-
-## Related topics
-- [Understand the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
-- [Alerts overview](alerts-queue-windows-defender-advanced-threat-protection.md)
-- [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines view](investigate-machines-windows-defender-advanced-threat-protection.md)
-- [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
-- [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
