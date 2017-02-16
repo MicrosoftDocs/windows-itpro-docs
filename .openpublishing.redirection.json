@@ -460,403 +460,408 @@
         "redirect_url": "/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection", 
         "redirect_document_id": true 
     },
+    { 
+        "source_path": "windows/keep-secure/ad-ds-schema-extensions-to-support-tpm-backup.md",
+        "redirect_url": "https://technet.microsoft.com/library/jj635854.aspx", 
+        "redirect_document_id": true 
+    },
     {
-        "source_path": ".md",
-        "redirect_url": "", 
+        "source_path": "windows/keep-secure/creating-a-device-guard-policy-for-signed-apps.md",
+        "redirect_url": "/itpro/windows/keep-secure/device-guard-deployment-guide", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
-        "redirect_url": "", 
+        "source_path": "windows/keep-secure/device-guard-certification-and-compliance.md",
+        "redirect_url": "/itpro/windows/keep-secure/device-guard-deployment-guide", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
-        "redirect_url": "", 
+        "source_path": "windows/keep-secure/enable-phone-signin-to-pc-and-vpn.md",
+        "redirect_url": "/itpro/windows/keep-secure/hello-enable-phone-signin", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
-        "redirect_url": "", 
+        "source_path": "windows/keep-secure/getting-apps-to-run-on-device-guard-protected-devices.md",
+        "redirect_url": "/itpro/windows/keep-secure/device-guard-deployment-guide", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
-        "redirect_url": "", 
+        "source_path": "windows/keep-secure/implement-microsoft-passport-in-your-organization.md",
+        "redirect_url": "/itpro/windows/keep-secure/hello-manage-in-organization", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
-        "redirect_url": "", 
+        "source_path": "windows/keep-secure/manage-identity-verification-using-microsoft-passport.md",
+        "redirect_url": "/itpro/windows/keep-secure/hello-identity-verification", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
-        "redirect_url": "", 
+        "source_path": "windows/keep-secure/microsoft-passport-and-password-changes.md",
+        "redirect_url": "/itpro/windows/keep-secure/hello-and-password-changes", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
-        "redirect_url": "", 
+        "source_path": "windows/keep-secure/microsoft-passport-errors-during-pin-creation.md",
+        "redirect_url": "/itpro/windows/keep-secure/hello-errors-during-pin-creation", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
-        "redirect_url": "", 
+        "source_path": "windows/keep-secure/microsoft-passport-guide.md",
+        "redirect_url": "/itpro/windows/keep-secure/hello-identity-verification", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
-        "redirect_url": "", 
+        "source_path": "windows/keep-secure/monitor-onboarding-windows-advanced-threat-protection.md",
+        "redirect_url": "/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
-        "redirect_url": "", 
+        "source_path": "windows/keep-secure/passport-event-300.md",
+        "redirect_url": "/itpro/windows/keep-secure/hello-event-300",
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
-        "redirect_url": "", 
+        "source_path": "windows/keep-secure/prepare-people-to-use-microsoft-passport.md",
+        "redirect_url": "/itpro/windows/keep-secure/hello-prepare-people-to-use", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
-        "redirect_url": "", 
+        "source_path": "windows/keep-secure/why-a-pin-is-better-than-a-password.md",
+        "redirect_url": "/itpro/windows/keep-secure/hello-why-pin-is-better-than-password", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
-        "redirect_url": "", 
+        "source_path": "windows/keep-secure/windows-hello-in-enterprise.md",
+        "redirect_url": "/itpro/windows/keep-secure/hello-biometrics-in-enterprise", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
     {
-        "source_path": ".md",
+        "source_path": "",
         "redirect_url": "", 
         "redirect_document_id": true 
     },
