@@ -51,7 +51,7 @@ Clicking on the number of total logged on users in the Logged on user tile opens
 
 ![Image of user details pane](images/atp-user-details-pane.png)
 
-You'll also see details such as days seen, first seen, last seen, and user type.
+You'll also see details such as logon types for each user account, the user group, and when the account was logged in. 
 
  For more information, see [Investigate user entities](investigate-user-entity-windows-defender-advanced-threat-protection.md).
 
