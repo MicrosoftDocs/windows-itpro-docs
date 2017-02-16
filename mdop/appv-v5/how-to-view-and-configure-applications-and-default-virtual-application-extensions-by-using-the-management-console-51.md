@@ -29,7 +29,10 @@ Use the following procedure to view and configure default package extensions.
 
 5.  To edit other application extensions, modify the configuration file and click **Import and Overwrite this Configuration**. Select the modified file and click **Open**. In the dialog box, click **Overwrite** to complete the process.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+>**Note** If the upload fails and the size of your configuration file is above 4MB, you will need to increase the maximum file size allowed by the server. This can be done by adding the maxRequestLength attribute with a value greater than the size of your configuration file (in KB) to the httpRuntime element on line 26 of C:\Program Files\Microsoft Application Virtualization Server\ManagementService\Web.config. For example, changing'<httpRuntime targetFramework="4.5"/> ' to '<httpRuntime targetFramework="4.5" maxRequestLength="8192"/>' will increase the maximum size to 8MB
+
+
+**Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
