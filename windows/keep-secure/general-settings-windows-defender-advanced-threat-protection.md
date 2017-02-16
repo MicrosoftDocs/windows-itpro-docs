@@ -26,13 +26,14 @@ During the onboarding process, a wizard takes you through the general settings o
 
 1. In the navigation pane, select **Preferences setup** > **General**.
 2. Modify settings such as data retention policy or the industry that best describes your organization.
+
   >[!NOTE]
   >Other settings are not editable.
-3. Click **Save preferences**. 
+3. Click **Save preferences**.
 
 
 ## Related topics
-- [Advanced features](advanced-features-windows-defender-advacned-threat-protection.md)
-- [Preview experience](preview-settings-windows-defender-advanced-threat-protection.md)
+- [Enable advanced features](advanced-features-windows-defender-advacned-threat-protection.md)
+- [Enable the preview experience](preview-settings-windows-defender-advanced-threat-protection.md)
 - [Configure email notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
 - [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)

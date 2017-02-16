@@ -22,11 +22,13 @@ localizationpriority: high
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
+Enable the preview experience setting to be among the first to try upcoming features.
+
 1. In the navigation pane, select **Preferences setup** > **Preview experience**.
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 
 ## Related topics
-- [General settings](general-settings-windows-defender-advanced-threat-protection.md)
-- [Advanced features](advanced-features-windows-defender-advacned-threat-protection.md)
+- [Update general settings](general-settings-windows-defender-advanced-threat-protection.md)
+- [Enable advanced features](advanced-features-windows-defender-advacned-threat-protection.md)
 - [Configure email notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
 - [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)

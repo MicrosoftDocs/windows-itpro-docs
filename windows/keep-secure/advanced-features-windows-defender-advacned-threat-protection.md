@@ -27,7 +27,7 @@ localizationpriority: high
 3. Click **Save preferences**.
 
 ## Related topics
-- [General settings](general-settings-windows-defender-advanced-threat-protection.md)
-- [Preview experience](preview-settings-windows-defender-advanced-threat-protection.md)
+- [Update general settings](general-settings-windows-defender-advanced-threat-protection.md)
+- [Enable the preview experience](preview-settings-windows-defender-advanced-threat-protection.md)
 - [Configure email notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
 - [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
