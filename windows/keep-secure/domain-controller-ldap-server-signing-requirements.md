@@ -22,9 +22,9 @@ This policy setting determines whether the Lightweight Directory Access Protocol
 
 Unsigned network traffic is susceptible to man-in-the-middle attacks, where an intruder captures packets between the server and the client device and modifies them before forwarding them to the client device. In the case of an LDAP server, this means that a malicious user can cause a client device to make decisions based on false records from the LDAP directory. You can lower the risk of a malicious user accomplishing this in a corporate network by implementing strong physical security measures to protect the network infrastructure. Furthermore, implementing Internet Protocol security (IPsec) Authentication Header mode, which provides mutual authentication and packet integrity for IP traffic, can make all types of man-in-the-middle attacks extremely difficult.
 
-This setting does not have any impact on LDAP simple bind or LDAP simple bind through SSL.
+This setting does not have any impact on LDAP simple bind through SSL (LDAP TCP/636).
 
-If signing is required, then LDAP simple bind and LDAP simple bind through SSL requests are rejected.
+If signing is required, then LDAP simple binds not using SSL are rejected (LDAP TCP/389).
 
 >**Caution:**  If you set the server to Require signature, you must also set the client device. Not setting the client device results in loss of connection with the server.
  
