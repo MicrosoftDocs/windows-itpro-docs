@@ -420,5 +420,446 @@
         "redirect_url": "/itpro/windows/keep-secure/enlightened-microsoft-apps-and-wip", 
         "redirect_document_id": true 
     },
+    {
+        "source_path": "windows/configure/configure-windows-10-devices-to-stop-data-flow-to-microsoft.md",
+        "redirect_url": "/itpro/windows/configure/manage-connections-from-windows-operating-system-components-to-microsoft-services", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/configure/disconnect-your-organization-from-microsoft.md",
+        "redirect_url": "/itpro/windows/configure/manage-connections-from-windows-operating-system-components-to-microsoft-services", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/configure/manage-cortana-in-enterprise.md",
+        "redirect_url": "/itpro/windows/configure/cortana-at-work-overview", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/deploy/update-windows-10-images-with-provisioning-packages.md",
+        "redirect_url": "/itpro/windows/configure/provisioning-packages",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/deploy/upgrade-analytics-prepare-your-environment.md",
+        "redirect_url": "/itpro/windows/deploy/upgrade-analytics-identify-apps", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/deploy/upgrade-analytics-release-notes.md",
+        "redirect_url": "/itpro/windows/deploy/upgrade-analytics-requirements", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/deploy/upgrade-analytics-review-site-discovery.md",
+        "redirect_url": "/itpro/windows/deploy/upgrade-analytics-additional-insights", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/keep-secure/additional-configuration-windows-advanced-threat-protection.md",
+        "redirect_url": "/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": ".md",
+        "redirect_url": "", 
+        "redirect_document_id": true 
+    },
+    
   ]
 }
