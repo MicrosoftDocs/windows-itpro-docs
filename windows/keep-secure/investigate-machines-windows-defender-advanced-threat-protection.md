@@ -51,7 +51,7 @@ Clicking on the number of total logged on users in the Logged on user tile opens
 
 ![Image of user details pane](images/atp-user-details-pane.png)
 
-You'll also see details such as logon types for each user account, the user group, and when the account was logged in. 
+You'll also see details such as logon types for each user account, the user group, and when the account was logged in.
 
  For more information, see [Investigate user entities](investigate-user-entity-windows-defender-advanced-threat-protection.md).
 
@@ -75,11 +75,12 @@ Use the search bar to look for specific alerts or files associated with the mach
   - **Detections mode**: displays Windows ATP Alerts and detections
   -	**Behaviors mode**: displays "detections" and selected events of interest
   -	**Verbose mode**: displays "behaviors" (including "detections"), and all reported events
--	**User** – Click the drop-down button to filter the machine timeline by the following users associated to an action taken that triggered an alert:
+-	**User** – Click the drop-down button to filter the machine timeline by the following user associated events:
   -	Logon users
   -	System
   -	Network
   -	Local service
+
 
 ### Filter events from a specific date
 Use the time-based slider to filter events from a specific date. By default, the machine timeline is set to display the events of the current day.
@@ -101,6 +102,7 @@ From the **Machines view**, you can also navigate to the file, IP, or URL view a
 From the list of events that are displayed in the timeline, you can examine the behaviors or events in to help identify indicators of interests such as files and IP addresses to help determine the scope of a breach. You can then use the information to respond to events and keep your system secure.
 
 ![Image of machine timeline details pane](images/atp-machine-timeline-details-panel.png)
+
 
 You can also use the [Alerts spotlight](investigate-alerts-windows-defender-advanced-threat-protection.md#alert-timeline) feature to see the correlation between alerts and events on a specific machine.
 
