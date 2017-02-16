@@ -39,7 +39,7 @@ For this process to work, you must have a base operating system available as a V
     ```ps1
     Convert-WindowsImage -SourcePath "<path_to_iso_image>" -VHDFormat "VHD" -VHDPartitionStyle "MBR"
     ```
-    Where _SourcePath_ is the full path to your ISO image, _VHDFormat_ is always *VHD*, and _VHDPartitionStyle_ is always *MBR*. 
+    Where *&lt;path_to_iso_image&gt;* is the full path to your ISO image. 
     
     >[!IMPORTANT]
     >You must specify the _VHDPartitionStyle_ as **MBR**. Using the default value, **GPT**, will cause a boot failure in your VHD image.
@@ -95,7 +95,7 @@ If your apps require custom prerequisites, such as Microsoft SQL Server, we reco
     Connect-AppvSequencerVM -VMName "<name_of_vm>" -ADKPath "<path_to_adk_install_folder>"
     ```
     
-    Where _VMName_ is the name of the VM granted during its creation and shown in the Hyper-V Manager tool, and the _VMComputerName_ is the name of the VM, assigned after its creation and shown on the **Computer name** field of the **System Properties** screen.
+    Where *&lt;name_of_vm&gt;* is the name of the VM granted during its creation and shown in the Hyper-V Manager tool.
 
 This command creates a new Hyper-V VM file using the provided VHD file and also creates a "clean" checkpoint, from where all sequencing and updating will start.
 

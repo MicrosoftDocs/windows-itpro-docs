@@ -44,7 +44,7 @@ Using PowerShell, you can turn on the **AutoCleanupEnabled** setting to automati
         </tbody>
     </table>
 
-2. Run the following command to make sure the packages were successfully cleaned up.
+2. Run the following command to make sure the configuration is ready to automatically cleanup your packages.
 
     ```ps1
     Get-AppvClientConfiguration
@@ -59,7 +59,7 @@ Using Group Policy, you can turn on the **Enable automatic cleanup of unused app
 
 2. Click **Enabled**, and then click **OK**.
 
-    The setting is turned on and will cleanup any unpublished App-V packages on the App-V Client after restarting.
+    After Group Policy updates, the setting is turned on and will cleanup any unpublished App-V packages on the App-V Client after restarting.
 
 ### Related topics
 - [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
