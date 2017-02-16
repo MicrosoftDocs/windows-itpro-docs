@@ -33,7 +33,6 @@ During the onboarding process, a wizard takes you through the general settings o
 
 
 ## Related topics
-- [Enable advanced features](advanced-features-windows-defender-advacned-threat-protection.md)
-- [Enable the preview experience](preview-settings-windows-defender-advanced-threat-protection.md)
+- [Turn on advanced features](advanced-features-windows-defender-advacned-threat-protection.md)
+- [Turn on the preview experience](preview-settings-windows-defender-advanced-threat-protection.md)
 - [Configure email notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
-- [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)

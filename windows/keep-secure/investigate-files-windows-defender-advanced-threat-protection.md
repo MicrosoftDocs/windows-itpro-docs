@@ -33,7 +33,9 @@ You can get information from the following sections in the file view:
 -	Most recent observed machines with file
 
 
-The file details, malware detection, and prevalence worldwide sections display various attributes about the file. You’ll see actions you can take on the file and details such as the file’s MD5, the VirusTotal detection ratio and Windows Defender AV detection if available, and the file’s prevalence worldwide. You'll also be able to [submit a file for deep analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#deep-analysis).
+The file details, malware detection, and prevalence worldwide sections display various attributes about the file. You’ll see actions you can take on the file. For more information on how to take action on a file, see [Take response action on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md).
+
+You'll also see details such as the file’s MD5, the VirusTotal detection ratio and Windows Defender AV detection if available, and the file’s prevalence worldwide. You'll also be able to [submit a file for deep analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#deep-analysis).
 
 ![Image of file information](images/atp-file-information.png)
 
