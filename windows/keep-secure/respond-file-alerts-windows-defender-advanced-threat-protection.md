@@ -67,7 +67,7 @@ When the file is being removed from an endpoint, the following notification is s
 In the machine timeline, a new event is added for each machine where a file was stopped and quarantined.
 
 >[!NOTE]
->The **Action** button is turned off for files signed by Microsoft to prevent negative impact on machines in your organization caused by the removal of files that might be related to the operating system.
+>The **Action** button is turned off for files signed by Microsoft as well as trusted third-party publishers to prevent the removal of critical system files and files used by important applications. 
 
 ![Image of action button turned off](images/atp-file-action.png)
 
