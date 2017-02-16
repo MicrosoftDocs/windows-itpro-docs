@@ -287,11 +287,6 @@ MBAM supports the following versions of Configuration Manager.
 <td align="left"><p></p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
-<tr class="even">
-<td align="left"><p>Microsoft System Center 2012 R2 Configuration Manager</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
 <tr class="odd">
 <td align="left"><p>Microsoft System Center 2012 Configuration Manager</p></td>
 <td align="left"><p>SP1</p></td>
@@ -301,13 +296,9 @@ MBAM supports the following versions of Configuration Manager.
 <td align="left"><p>Microsoft System Center Configuration Manager 2007 R2 or later</p></td>
 <td align="left"><p>SP1 or later</p></td>
 <td align="left"><p>64-bit</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>Although Configuration Manager 2007 R2 is 32 bit, you must install it and SQL Server on a 64-bit operating system in order to match the 64-bit MBAM software.</p>
-</div>
-<div>
- 
-</div></td>
+
+>**Note** Although Configuration Manager 2007 R2 is 32 bit, you must install it and SQL Server on a 64-bit operating system in order to match the 64-bit MBAM software.
+</td>
 </tr>
 </tbody>
 </table>
@@ -349,29 +340,15 @@ You must install SQL Server with the **SQL\_Latin1\_General\_CP1\_CI\_AS** coll
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
 <td align="left"><p>SP1</p></td>
 <td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft SQL Server 2014</p></td>
-<td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft SQL Server 2012</p></td>
-<td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
-<td align="left"><p>SP2</p></td>
-<td align="left"><p>64-bit</p></td>
-</tr>
 <tr class="even">
 <td align="left"><p>Microsoft SQL Server 2012</p></td>
 <td align="left"><p>Standard, Enterprise, or Datacenter</p></td>
-<td align="left"><p>SP1</p></td>
+<td align="left"><p>SP3</p></td>
 <td align="left"><p>64-bit</p></td>
-</tr>
 <tr class="odd">
 <td align="left"><p>Microsoft SQL Server 2008 R2</p></td>
 <td align="left"><p>Standard or Enterprise</p></td>
-<td align="left"><p>SP1, SP2, SP3</p></td>
+<td align="left"><p>SP3</p></td>
 <td align="left"><p>64-bit</p></td>
 </tr>
 </tbody>
