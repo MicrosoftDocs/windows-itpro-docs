@@ -1,5 +1,5 @@
 ---
-title: Alerts queue overview in Windows Defender ATP
+title: View and organize the Windows Defender ATP Alerts queue
 description: Learn about how the Windows Defender ATP alerts queue work, and how to sort and filter lists of alerts.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period
 search.product: eADQiWindows 10XVcnh
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Alerts queue overview
+# View and organize the Windows Defender Advanced Threat Protection Alerts queue
 
 **Applies to:**
 

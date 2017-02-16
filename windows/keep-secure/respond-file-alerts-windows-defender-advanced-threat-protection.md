@@ -1,7 +1,7 @@
 ---
-title: Respond to file related alerts in Windows Defender Advanced Threat Protection
-description: Respond to file related alerts by stopping and quarantining a file or blocking a file and checking activity details.
-keywords: respond, isolate, isolate machine, collect investigation package, action center, deep analyis
+title: Take response actions on a file in Windows Defender Advanced Threat Protection
+description: Take response actions on file related alerts by stopping and quarantining a file or blocking a file and checking activity details.
+keywords: respond, stop and quarantine, block file, deep analysis
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Respond to file related alerts in Windows Defender ATP
+# Take response actions on a file
 
 **Applies to:**
 

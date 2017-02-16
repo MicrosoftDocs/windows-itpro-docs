@@ -1,6 +1,6 @@
 ---
-title: Respond to machine alerts in Windows Defender Advanced Threat Protection
-description: Respond to machine alerts by isolating machines, collecting an investigation package, and checking activity details.
+title: Take response actions on a machine in Windows Defender Advanced Threat Protection
+description: Take response actions on a machine by isolating machines, collecting an investigation package, and checking activity details.
 keywords: respond, isolate, isolate machine, collect investigation package, action center
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Respond to machine alerts in Windows Defender ATP
+# Take response actions on a machine
 
 **Applies to:**
 
