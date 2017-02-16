@@ -22,8 +22,10 @@ Windows Configuration Designer can be installed from the [Windows Assessment and
 
 The **Provision Windows mobile devices** wizard lets you configure common settings for devices running Windows 10 Mobile in a simple, graphical workflow.
 
+### Start a new project
+
 1. Open Windows Configuration Designer:
-    - From either the Start screen or Start menu search, type 'Windows Configuration Designer' and click on the Windows Configuration Designer shortcut, 
+    - From either the Start screen or Start menu search, type 'Windows Configuration Designer' and click the Windows Configuration Designer shortcut, 
     
     or
     
@@ -34,3 +36,11 @@ The **Provision Windows mobile devices** wizard lets you configure common settin
 3. Enter a name for your project, and then click **Next**.
 
 
+### Configure settings in the wizard
+
+<table>
+<tr><td valign="top">![step one](images/one.png)![set up device](images/set-up-device-mobile.png)</br></br>Enter a device name.</br></br> Optionally, you can enter a product key to upgrade the device from Windows 10 Mobile to Windows 10 Mobile Enterprise. </td><td>![device name, upgrade license](images/set-up-device-details-mobile.png)</td></tr>
+<tr><td valign="top">![step two](images/two.png)  ![set up network](images/set-up-network-mobile.png)</br></br>Toggle **On** or **Off** for wireless network connectivity. </br></br>If you select **On**, enter the SSID, network type (**Open** or **WPA2-Personal**), and (if **WPA2-Personal**) the password for the wireless network.</td><td>![Enter network SSID and type](images/set-up-network-details-mobile.png)</td></tr>
+<tr><td valign="top">![step three](images/three.png)  ![bulk enrollment in Azure Active Directory](images/bulk-enroll-mobile.png)</br></br>You can enroll the device in Azure AD. </br></br>To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard. (Something about expiry) Click **Get bulk token** (then what?) <</td><td>IMAGE PENDING</td></tr>
+<tr><td valign="top">![step four](images/four.png) ![finish](images/finish-mobile.png)</br></br>You can set a password to protect your provisioning package. You must enter this password when you apply the provisioning package to a device.</td><td>![Protect your package](images/finish-details-mobile.png)</td></tr>
+</table>
