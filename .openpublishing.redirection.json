@@ -309,20 +309,111 @@
         "source_path": "windows/manage/manage-wifi-sense-in-enterprise.md",
         "redirect_url": "/itpro/windows/configure/manage-wifi-sense-in-enterprise", 
         "redirect_document_id": true 
-    },  
-    {   
-        "source_path": "windows/keep-secure/create-edp-policy-using-intune.md", 
-        "redirect_url": "https://technet.microsoft.com/itpro/windows/keep-secure/create-wip-policy-using-intune", 
+    },
+ {
+        "source_path": "windows/deploy/provisioning-packages.md",
+        "redirect_url": "/itpro/windows/configure/provisioning-packages", 
         "redirect_document_id": true 
-    }, 
-    { 
+    },
+    {
+        "source_path": "windows/deploy/provisioning-how-it-works.md",
+        "redirect_url": "/itpro/windows/configure/provisioning-how-it-works", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/deploy/provisioning-install-icd.md",
+        "redirect_url": "/itpro/windows/configure/provisioning-install-icd", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/deploy/provisioning-create-package.md",
+        "redirect_url": "/itpro/windows/configure/provisioning-create-package", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/deploy/provisioning-apply-package.md",
+        "redirect_url": "/itpro/windows/configure/provisioning-apply-package", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/deploy/provisioning-uninstall-package.md",
+        "redirect_url": "/itpro/windows/configure/provisioning-uninstall-package", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/deploy/provision-pcs-for-initial-deployment.md",
+        "redirect_url": "/itpro/windows/configure/provision-pcs-for-initial-deployment", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/deploy/provision-pcs-with-apps-and-certificates.md",
+        "redirect_url": "/itpro/windows/configure/provision-pcs-with-apps-and-certificates", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/deploy/provisioning-script-to-install-app.md",
+        "redirect_url": "/itpro/windows/configure/provisioning-script-to-install-app", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/deploy/provisioning-nfc.md",
+        "redirect_url": "/itpro/windows/configure/provisioning-nfc", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/deploy/provisioning-command-line.md",
+        "redirect_url": "/itpro/windows/configure/provisioning-command-line", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/deploy/provisioning-multivariant.md",
+        "redirect_url": "/itpro/windows/configure/provisioning-multivariant", 
+        "redirect_document_id": true 
+    },     
+    {
+        "source_path": "windows/keep-secure/create-edp-policy-using-intune.md",
+        "redirect_url": "/itpro/windows/keep-secure/create-wip-policy-using-intune", 
+        "redirect_document_id": true 
+    },
+    {
         "source_path": "windows/keep-secure/create-edp-policy-using-sccm.md",
         "redirect_url": "/itpro/windows/keep-secure/create-wip-policy-using-sccm", 
         "redirect_document_id": true 
     },
-
-
-
-
+    {
+        "source_path": "windows/keep-secure/create-vpn-and-edp-policy-using-intune.md",
+        "redirect_url": "/itpro/windows/keep-secure/create-vpn-and-wip-policy-using-intune", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/keep-secure/deploy-edp-policy-using-intune.md",
+        "redirect_url": "/itpro/windows/keep-secure/deploy-wip-policy-using-intune", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/keep-secure/guidance-and-best-practices-edp.md",
+        "redirect_url": "/itpro/windows/keep-secure/guidance-and-best-practices-wip", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/keep-secure/overview-create-edp-policy.md",
+        "redirect_url": "/itpro/windows/keep-secure/overview-create-wip-policy", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/keep-secure/protect-enterprise-data-using-edp.md",
+        "redirect_url": "/itpro/windows/keep-secure/protect-enterprise-data-using-wip", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/keep-secure/testing-scenarios-for-edp.md",
+        "redirect_url": "/itpro/windows/keep-secure/testing-scenarios-for-wip", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/keep-secure/wip-enterprise-overview.md",
+        "redirect_url": "/itpro/windows/keep-secure/protect-enterprise-data-using-wip", 
+        "redirect_document_id": true 
+    },                                
   ] 
 }
