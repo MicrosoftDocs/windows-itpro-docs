@@ -163,8 +163,8 @@ Topics and procedures in this guide are summarized in the following table. An es
     adsiedit.msc
     ```
 
-6. Right-click **ADSI Edit**, click **Connect to**, select **Default** under **Computer** and then click **OK**.
-7. Expand **Default naming context**>**DC=contoso,DC=com**, right-click **CN=System**, point to **New**, and then click **Object**.
+6. Right-click **ADSI Edit**, click **Connect to**, select **Default (Domain or server that you logged in to)** under **Computer** and then click **OK**.
+7. Expand **Default naming context**>**DC=contoso,DC=com**, and then in the console tree right-click **CN=System**, point to **New**, and then click **Object**.
 8. Click **container** and then click **Next**.
 9. Next to **Value**, type **System Management**, click **Next**, and then click **Finish**.
 10. Right-click **CN=system Management** and then click **Properties**.
@@ -194,7 +194,7 @@ Topics and procedures in this guide are summarized in the following table. An es
     - **Settings Summary**: Review settings and click **Next**.
     - **Prerequisite Check**: No failures should be listed. Ignore any warnings and click **Begin Install**.
 
-    >There should be at most three warnings present: WSUS on site server, configuration for SQL Server memory usage, and SQL Server process memory allocation. These warnings can safely be ignored.
+    >There should be at most three warnings present: WSUS on site server, configuration for SQL Server memory usage, and SQL Server process memory allocation. These warnings can safely be ignored in this test environment.
 
     Depending on the speed of the Hyper-V host and resources allocated to SRV1, installation can require approximately one hour. Click **Close** when installation is complete. 
 
