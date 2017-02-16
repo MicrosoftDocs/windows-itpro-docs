@@ -28,7 +28,7 @@ You might need to troubleshoot issues while using the custom threat intelligence
 This page provides detailed steps to troubleshoot issues you might encounter while using the feature.
 
 
-## Get a new client secret
+## Learn how to get a new client secret
 If your client secret expires or if you've misplaced the copy provided when you were enabling the custom threat intelligence application,  you'll need to get a new secret.
 
 1. Login to the [Azure management portal](https://ms.portal.azure.com).

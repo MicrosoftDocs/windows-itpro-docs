@@ -23,19 +23,22 @@ localizationpriority: high
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-The **Machines view** shows a list of the machines in your network, the corresponding number of active alerts for each machine categorized by alert severity levels, and the number of active malware detections. This view allows you to identify machines with the highest risk at a glance, and keep track of all the machines that are reporting sensor data in your network.
 
-Use the Machines view in these two main scenarios:
+The **Machines view** shows a list of the machines in your network, the domain of each machine, when it last reported and the local IP Address it reported on, its **Health state**, the number of active alerts on each machine categorized by alert severity level, and the number of active malware detections. This view allows viewing machines ranked by risk or sensor health state, and keeping track of all machines that are reporting sensor data in your network.
 
-- **During onboarding**
-  - During the onboarding process, the Machines view gradually gets populated with endpoints as they begin to report sensor data. Use this view to track your onboarded endpoints as they appear. Use the available features to sort and filer to see which endpoints have most recently reported sensor data, or download the complete endpoint list as a CSV file for offline analysis.
+Use the Machines view in these main scenarios:
+
+- **During onboarding**</br>
+  During the onboarding process, the **Machines view** is gradually populated with endpoints as they begin to report sensor data. Use this view to track your onboarded endpoints as they come online. Sort and filter by time of last report, **Active malware category**, or **Sensor health state**, or download the complete endpoint list as a CSV file for offline analysis.
 - **Day-to-day work**
-  - The **Machines view** enables you to identify machines that are most at risk in a glance. High-risk machines are those with the greatest number and highest-severity alerts. By sorting the machines by risk, you'll be able to identify the most vulnerable machines and take action on them.
+  The **Machines view** enables easy identification of machines most at risk in a glance. High-risk machines have the greatest number and highest-severity alerts; **Sensor health state** provides another dimension to rank machines. Sorting machines by **Active alerts**, and then by **Sensor health state** helps identify the most vulnerable machines and take action on them.
 
 ## Sort, filter, and download the list of machines from the Machines view
-You can filter and sort (or “pivot”) the Machines view by clicking any column header to sort the view in ascending or descending order.
+You can sort the **Machines view** by clicking on any column header to sort the view in ascending or descending order.  
 
-You can also download the entire list using the export feature.
+Filter the **Machines view** by time period, **Active malware categories**, or **Sensor health state** to focus on certain sets of machines, according to the desired criteria.  
+
+You can also download the entire list in CSV format using the **Export to CSV** feature.
 
 ![Image of machines view with list of machines](images/atp-machines-view-list.png)
 
@@ -58,7 +61,7 @@ Filter the list to view specific machines grouped together by the following malw
   -	**General malware** – Malware are malicious programs that perform unwanted actions, including actions that can disrupt, cause direct damage, and facilitate intrusion and data theft. Some malware can replicate and spread from one machine to another. Others are able to receive commands from remote attackers and perform activities associated with cyberattacks.
   -	**Unwanted software** – Unwanted software is a category of applications that install and perform undesirable activity without adequate user consent. These applications are not necessarily malicious, but their behaviors often negatively impact the computing experience, even appearing to invade user privacy. Many of these applications display advertising, modify browser settings, and install bundled software.
 
-**Machine health state**</br>
+**Sensor health state**</br>
 Filter the list to view specific machines grouped together by the following machine health states:
 
 - **Active** – Machines that are actively reporting sensor data to the service.
@@ -66,16 +69,15 @@ Filter the list to view specific machines grouped together by the following mach
 -	**Inactive** – Machines that have completely stopped sending signals for more than 7 days.
 
 ## Export machine list to CSV
-You can  download a full list of all the machines in your organization, in CSV format. Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) to download the entire list as a CSV file.
+You can  download a full list of all the machines in your organization, in CSV format. Click the **Manage** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) to download the entire list as a CSV file.
 
-**Note**: Exporting the list depends on the number of machines in your organization. It can take a significant amount of time to download, depending on how large your organization is.
+**Note**: Exporting the list depends on the number of machines in your organization. It might take a significant amount of time to download, depending on how large your organization is.
 Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all machines in the organization, regardless of any filtering applied in the view itself.
 
 ### Sort the Machines view
 You can sort the **Machines view** by the following columns:
 
 - **Machine name** - Name or GUID of the machine
-- **Domain** - Domain the machine belongs to
 - **Last seen** - Date and time when the machine last reported sensor data
 - **Internal IP** - Local internal Internet Protocol (IP) address of the machine
 - **Health State** – Indicates if the machine is misconfigured or is not sending sensor data
@@ -83,7 +85,7 @@ You can sort the **Machines view** by the following columns:
 - **Active malware detections** - Number of active malware detections reported by the machine
 
 > [!NOTE]
-> The **Active alerts** and **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](windows-defender-in-windows-10.md) as the default real-time protection antimalware product.
+> The **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](windows-defender-in-windows-10.md) as the active real-time protection antimalware product.
 
 
 ### Related topics

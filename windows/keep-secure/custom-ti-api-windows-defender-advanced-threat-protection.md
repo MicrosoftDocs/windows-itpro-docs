@@ -1,7 +1,7 @@
 ---
 title: Create custom threat intelligence using REST API in Windows Defender ATP
 description: Create your custom alert definitions and indicators of compromise in Windows Defender ATP using the available APIs in Windows Enterprise, Education, and Pro editions.
-keywords: alert definitions, indicators of compromise, threat intelligence, custom ti, rest api, api
+keywords: alert definitions, indicators of compromise, threat intelligence, custom threat intelligence, rest api, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Create custom threat intelligence (TI) using REST API
+# Create custom alerts using the threat intelligence (TI) Application program interface (API)
 
 **Applies to:**
 
@@ -23,13 +23,13 @@ localizationpriority: high
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-You can define custom alert definitions and indicators of compromise (IOC) using the available APIs. Creating custom TIs allows you to create specific alerts that are applicable to your organization.
+You can define custom alert definitions and indicators of compromise (IOC) using the threat intelligence API. Creating custom threat intelligence alerts allows you to create specific alerts that are applicable to your organization.
 
 ## Before you begin
-Before creating custom TIs, you'll need to enable the custom TI application in Azure Active Directory and generate access tokens. For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md).
+Before creating custom alerts, you'll need to enable the threat intelligence application in Azure Active Directory and generate access tokens. For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md).
 
-### Use the available REST APIs to create custom TIs
-You can call and specify the resource URLs using one of the following operations to access and manipulate a custom TI resource, you call and specify the resource URLs using one of the following operations:
+### Use the threat intelligence REST APIs to create custom threat intelligence alerts
+You can call and specify the resource URLs using one of the following operations to access and manipulate a threat intelligence resource, you call and specify the resource URLs using one of the following operations:
 
 -	GET
 -	POST
@@ -37,14 +37,14 @@ You can call and specify the resource URLs using one of the following operations
 -	PUT (used for managing entities relations only)
 -	DELETE
 
-All custom TI API requests use the following basic URL pattern:
+All threat intelligence API requests use the following basic URL pattern:
 
 ```
     https://TI.SecurityCenter.Windows.com/{version}/{resource}?[query_parameters]
 ```
 
 For this URL:
--	`https://TI.SecurityCenter.Windows.com` is the custom TI API endpoint.
+-	`https://TI.SecurityCenter.Windows.com` is the threat intelligence API endpoint.
 -	`{version}` is the target service version. Currently only supported version is: v1.0.
 -	`{resource}` is resource segment or path, such as:
   -	AlertDefinitions (for specific single resource, add: (id))
@@ -54,7 +54,7 @@ For this URL:
 **Quotas**</br>
 Each tenant has a defined quota that limits the number of possible alert definitions, IOCs and another quota for IOCs of Action different than “equals” in the system. If you upload data beyond this quota, you'll encounter an HTTP error status code 507 (Insufficient Storage).
 
-## Custom TI API metadata
+## Threat Intelligence API metadata
 The metadata document ($metadata) is published at the service root.
 
 For example, you can view the service document for the v1.0 version using the following URL:
@@ -63,11 +63,11 @@ For example, you can view the service document for the v1.0 version using the fo
   https://TI.SecurityCenter.Windows.com/v1.0/$metadata
 ```
 
-The metadata allows you to see and understand the data model of the custom TI, including the entity types and sets, complex types, and enums that make up the request and response packets sent to and from custom TI.
+The metadata allows you to see and understand the data model of the custom threat intelligence, including the entity types and sets, complex types, and enums that make up the request and response packets sent to and from the threat intelligence API.
 
-You can use the metadata to understand the relationships between entities in custom TI and establish URLs that navigate between entities.
+You can use the metadata to understand the relationships between entities in the custom threat intelligence and establish URLs that navigate between entities.
 
-The following sections show a few basic programming pattern calls to the custom TI API.
+The following sections show a few basic programming pattern calls to the threat intelligence API.
 
 ## Create new resource
 Typically, you'd need to create an alert definition to start creating custom threat intelligence. An ID is created for that alert definition.
@@ -331,7 +331,7 @@ Upon a successful request the response will be HTTP 204.
 
 
 ## Windows Defender ATP optional query parameters
-Windows Defender ATP custom TI provides several optional query parameters that you can use to specify and control the amount of data returned in a response. Custom TI supports the following query options:
+The Windows Defender ATP threat intelligence API  provides several optional query parameters that you can use to specify and control the amount of data returned in a response. The threat intelligence API supports the following query options:
 
 Name | Value | Description
 :---|:---|:--
