@@ -22,7 +22,7 @@ https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpri
 https://msdn.microsoft.com/en-us/library/dn499738.aspx
 https://msdn.microsoft.com/windows/hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access
 https://msdn.microsoft.com/en-us/library/dn798313.aspx
-
+also see email notes at bottom
 
 A device in kiosk mode runs a specified app with no access to other device functions, menus, or settings. You can use the [Enterprise Assigned Access](#enterprise-assigned-access) configuration service provider (CSP) to configure a kiosk experience. You can also configure a device running Windows 10 Mobile or Windows 10 Mobile Enterprise, version 1607 or earlier, for kiosk mode by using the [Apps Corner](#apps-corner) feature. (Apps Corner is removed in Windows 10, version 1703.)
 
@@ -203,7 +203,11 @@ Apps Corner lets you set up a custom Start screen on your Windows 10 Mobile or 
 
  
 
- 
+ ## Email notes
+
+from Lily: When you push down a SyncML for Assigned Access xml through the EnterpriseAssignedAccess CSP, it need to be escaped. But if you add the lockdown xml in the provisioning package, you don’t need to escape the xml as ICD will do that when building the package. Providing an escaped xml in ICD will cause building the package fail. 
+
+![lily's screenshot](images/lily.jpg)
 
 
 
