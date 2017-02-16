@@ -751,7 +751,7 @@
 ###### [Export machine timeline events](investigate-machines-windows-defender-advanced-threat-protection.md#export-machine-timeline-events)
 ###### [Navigate between pages](investigate-machines-windows-defender-advanced-threat-protection.md#navigate-between-pages)
 ##### [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md)
-##### [Investigate a user entity](investigate-user-entity-windows-defender-advanced-threat-protection.md)
+##### [Investigate a user account](investigate-user-entity-windows-defender-advanced-threat-protection.md)
 ##### [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
 #### [Take response actions](response-actions-windows-defender-advanced-threat-protection.md)
 ##### [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md)

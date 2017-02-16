@@ -1,6 +1,6 @@
 ---
-title: Investigate user entities in Windows Defender Advanced Threat Protection
-description: Use the investigation options to investigate alerts related to a user account.
+title: Investigate user account in Windows Defender Advanced Threat Protection
+description: Investigate a user account in Windows Defender Advanced Threat Protection for potential compromised credentials or pivot on the associated user account during an investigation.
 keywords: investigate, account, user, user entity, alert, windows defender atp
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -10,7 +10,7 @@ ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
 ---
-# Investigate a user account associated with a Windows Defender ATP alert
+# Investigate a user account in Windows Defender ATP
 
 **Applies to:**
 
@@ -23,7 +23,7 @@ localizationpriority: high
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 ## Investigate user account entities
-Identify user accounts with the most active alerts (displayed on dashboard as "Users at risk") and and investigate cases of potential compromised credentials, or pivot on the associated user account when investigating an alert or machine to identify possible lateral movement between machines with that user account.
+Identify user accounts with the most active alerts (displayed on dashboard as "Users at risk") and investigate cases of potential compromised credentials, or pivot on the associated user account when investigating an alert or machine to identify possible lateral movement between machines with that user account.
 
 You can find user account information in the following views:
 - Dashboard
