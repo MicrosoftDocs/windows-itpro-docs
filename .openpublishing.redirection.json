@@ -104,7 +104,262 @@
         "source_path": "windows/manage/waas-update-windows-10.md",
         "redirect_url": "/itpro/windows/update/index", 
         "redirect_document_id": true 
-    },                        
+    },
+    {
+        "source_path": "windows/manage/configure-windows-telemetry-in-your-organization.md",
+        "redirect_url": "/itpro/windows/configure/configure-windows-telemetry-in-your-organization", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services.md",
+        "redirect_url": "/itpro/windows/configure/manage-connections-from-windows-operating-system-components-to-microsoft-services", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/set-up-a-device-for-anyone-to-use.md",
+        "redirect_url": "/itpro/windows/configure/set-up-a-device-for-anyone-to-use", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/set-up-a-kiosk-for-windows-10-for-desktop-editions.md",
+        "redirect_url": "/itpro/windows/configure/set-up-a-kiosk-for-windows-10-for-desktop-editions", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/guidelines-for-assigned-access-app.md",
+        "redirect_url": "/itpro/windows/configure/guidelines-for-assigned-access-app", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/lock-down-windows-10-to-specific-apps.md",
+        "redirect_url": "/itpro/windows/configure/lock-down-windows-10-to-specific-apps", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/set-up-a-kiosk-for-windows-10-for-mobile-edition.md",
+        "redirect_url": "/itpro/windows/configure/set-up-a-kiosk-for-windows-10-for-mobile-edition", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/lockdown-xml.md",
+        "redirect_url": "/itpro/windows/configure/lockdown-xml", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/settings-that-can-be-locked-down.md",
+        "redirect_url": "/itpro/windows/configure/settings-that-can-be-locked-down", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/product-ids-in-windows-10-mobile.md",
+        "redirect_url": "/itpro/windows/configure/product-ids-in-windows-10-mobile", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/windows-spotlight.md",
+        "redirect_url": "/itpro/windows/configure/windows-spotlight", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/manage-tips-and-suggestions.md",
+        "redirect_url": "/itpro/windows/configure/manage-tips-and-suggestions", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/windows-10-start-layout-options-and-policies.md",
+        "redirect_url": "/itpro/windows/configure/windows-10-start-layout-options-and-policies", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/configure-windows-10-taskbar.md",
+        "redirect_url": "/itpro/windows/configure/configure-windows-10-taskbar", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/customize-and-export-start-layout.md",
+        "redirect_url": "/itpro/windows/configure/customize-and-export-start-layout", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/start-layout-xml-desktop.md",
+        "redirect_url": "/itpro/windows/configure/start-layout-xml-desktop", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/start-layout-xml-mobile.md",
+        "redirect_url": "/itpro/windows/configure/start-layout-xml-mobile", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/customize-windows-10-start-screens-by-using-group-policy.md",
+        "redirect_url": "/itpro/windows/configure/customize-windows-10-start-screens-by-using-group-policy", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md",
+        "redirect_url": "/itpro/windows/configure/customize-windows-10-start-screens-by-using-provisioning-packages-and-icd", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/customize-windows-10-start-screens-by-using-mobile-device-management.md",
+        "redirect_url": "/itpro/windows/configure/customize-windows-10-start-screens-by-using-mobile-device-management", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/cortana-at-work-overview.md",
+        "redirect_url": "/itpro/windows/configure/cortana-at-work-overview", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/cortana-at-work-testing-scenarios.md",
+        "redirect_url": "/itpro/windows/configure/cortana-at-work-testing-scenarios", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/cortana-at-work-scenario-1.md",
+        "redirect_url": "/itpro/windows/configure/cortana-at-work-scenario-1", 
+        "redirect_document_id": true 
+    }, 
+    {
+        "source_path": "windows/manage/cortana-at-work-scenario-2.md",
+        "redirect_url": "/itpro/windows/configure/cortana-at-work-scenario-2", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/cortana-at-work-scenario-3.md",
+        "redirect_url": "/itpro/windows/configure/cortana-at-work-scenario-3", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/cortana-at-work-scenario-4.md",
+        "redirect_url": "/itpro/windows/configure/cortana-at-work-scenario-4", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/cortana-at-work-scenario-5.md",
+        "redirect_url": "/itpro/windows/configure/cortana-at-work-scenario-5", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/cortana-at-work-scenario-6.md",
+        "redirect_url": "/itpro/windows/configure/cortana-at-work-scenario-6", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/cortana-at-work-o365.md",
+        "redirect_url": "/itpro/windows/configure/cortana-at-work-o365", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/cortana-at-work-crm.md",
+        "redirect_url": "/itpro/windows/configure/cortana-at-work-crm", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/",
+        "redirect_url": "/itpro/windows/configure/", 
+        "redirect_document_id": true 
+    },                                          
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     {   
         "source_path": "windows/keep-secure/create-edp-policy-using-intune.md", 
         "redirect_url": "https://technet.microsoft.com/itpro/windows/keep-secure/create-wip-policy-using-intune", 
