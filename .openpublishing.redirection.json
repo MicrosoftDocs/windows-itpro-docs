@@ -255,6 +255,61 @@
         "redirect_url": "/itpro/windows/configure/cortana-at-work-crm", 
         "redirect_document_id": true 
     },
+ {
+        "source_path": "windows/manage/cortana-at-work-powerbi.md",
+        "redirect_url": "/itpro/windows/configure/cortana-at-work-powerbi", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/cortana-at-work-voice-commands.md",
+        "redirect_url": "/itpro/windows/configure/cortana-at-work-voice-commands", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/cortana-at-work-policy-settings.md",
+        "redirect_url": "/itpro/windows/configure/cortana-at-work-policy-settings", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/cortana-at-work-feedback.md",
+        "redirect_url": "/itpro/windows/configure/cortana-at-work-feedback", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/stop-employees-from-using-the-windows-store.md",
+        "redirect_url": "/itpro/windows/configure/stop-employees-from-using-the-windows-store", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/configure-devices-without-mdm.md",
+        "redirect_url": "/itpro/windows/configure/configure-devices-without-mdm", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/changes-to-start-policies-in-windows-10.md",
+        "redirect_url": "/itpro/windows/configure/changes-to-start-policies-in-windows-10", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/how-it-pros-can-use-configuration-service-providers.md",
+        "redirect_url": "/itpro/windows/configure/how-it-pros-can-use-configuration-service-providers", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/lock-down-windows-10.md",
+        "redirect_url": "/itpro/windows/configure/index", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/lockdown-features-windows-10.md",
+        "redirect_url": "/itpro/windows/configure/lockdown-features-windows-10", 
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/manage/manage-wifi-sense-in-enterprise.md",
+        "redirect_url": "/itpro/windows/configure/manage-wifi-sense-in-enterprise", 
+        "redirect_document_id": true 
+    },  
     {   
         "source_path": "windows/keep-secure/create-edp-policy-using-intune.md", 
         "redirect_url": "https://technet.microsoft.com/itpro/windows/keep-secure/create-wip-policy-using-intune", 
