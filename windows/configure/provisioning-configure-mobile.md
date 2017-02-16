@@ -44,3 +44,5 @@ The **Provision Windows mobile devices** wizard lets you configure common settin
 <tr><td valign="top">![step three](images/three.png)  ![bulk enrollment in Azure Active Directory](images/bulk-enroll-mobile.png)</br></br>You can enroll the device in Azure AD. </br></br>To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard. (Something about expiry) Click **Get bulk token** (then what?) <</td><td>IMAGE PENDING</td></tr>
 <tr><td valign="top">![step four](images/four.png) ![finish](images/finish-mobile.png)</br></br>You can set a password to protect your provisioning package. You must enter this password when you apply the provisioning package to a device.</td><td>![Protect your package](images/finish-details-mobile.png)</td></tr>
 </table>
+
+### do something
