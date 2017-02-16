@@ -26,7 +26,7 @@ Use the **Preferences setup** menu to modify general settings, advanced features
 
 Topic | Description
 :---|:---
-Update general settings | Modify your general settings that were previously defined as part of the onboarding process.
-Enable advanced features | Enable features such as **Block file** and other features that require integration with other products.
-Enable the preview experience | Allows you to turn on preview features so you can try upcoming features.
-Email notifications | Enables you to configure and identify a group of individuals who will immediately be informed of new alerts through email notifications.
+[Update general settings](general-settings-windows-defender-advanced-threat-protection.md) | Modify your general settings that were previously defined as part of the onboarding process.
+[Enable advanced features](advanced-features-windows-defender-advacned-threat-protection.md)| Enable features such as **Block file** and other features that require integration with other products.
+[Enable the preview experience](preview-settings-windows-defender-advanced-threat-protection.md) | Allows you to turn on preview features so you can try upcoming features.
+[Configure email notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md) | Enables you to configure and identify a group of individuals who will immediately be informed of new alerts through email notifications.
