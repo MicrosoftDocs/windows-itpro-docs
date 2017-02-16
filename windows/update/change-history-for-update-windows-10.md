@@ -4,7 +4,7 @@ description: This topic lists new and updated topics in the Update Windows 10 do
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 ---
 
 # Change history for Update Windows 10
