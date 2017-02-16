@@ -779,18 +779,14 @@
 #### [Investigate a user entity](investigate-user-entity-windows-defender-advanced-threat-protection.md)
 #### [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md)
 #### [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md)
-#### [Windows Defender ATP preferences settings](preferences-setup-windows-defender-advanced-threat-protection.md)
+#### [Configure Windows Defender ATP preferences settings](preferences-setup-windows-defender-advanced-threat-protection.md)
 ##### [Update general settings](general-settings-windows-defender-advanced-threat-protection.md)
 ##### [Enable advanced features](advanced-features-windows-defender-advacned-threat-protection.md)
 ##### [Enable preview experience](preview-settings-windows-defender-advanced-threat-protection.md)
 ##### [Configure email notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
 ##### [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-
-
-
 #### [Windows Defender ATP settings](settings-windows-defender-advanced-threat-protection.md)
 #### [Windows Defender ATP service status](service-status-windows-defender-advanced-threat-protection.md)
-
 #### [Troubleshoot Windows Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md)
 #### [Review events and errors on endpoints with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
 #### [Windows Defender compatibility](defender-compatibility-windows-defender-advanced-threat-protection.md)
