@@ -306,7 +306,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     ```
     [Settings]
     Priority=Default
-
+    
     [Default]
     _SMSTSORGNAME=Contoso
     OSInstall=YES
@@ -362,7 +362,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     ```
     [Settings]
     Priority=Default
-
+    
     [Default]
     DeployRoot=\\SRV1\MDTProd$
     UserDomain=CONTOSO
@@ -417,12 +417,16 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     Disable-NetAdapter "Ethernet 2" -Confirm:$false
     ```
 
+    >Wait until the disable-netadapter command completes before proceeding.
+
+
 2. Next, switch to the Hyper-V host and open an elevated Windows PowerShell prompt. Create a generation 2 VM on the Hyper-V host that will load its OS using PXE. To create this VM, type the following commands at an elevated Windows PowerShell prompt:
 
     ```
     New-VM –Name "PC2" –NewVHDPath "c:\vhd\pc2.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
     Set-VMMemory -VMName "PC2" -DynamicMemoryEnabled $true -MinimumBytes 720MB -MaximumBytes 2048MB -Buffer 20
     ```
+
     >Dynamic memory is configured on the VM to conserve resources. However, this can cause memory allocation to be reduced past what is required to install an operating system. If this happens, reset the VM and begin the OS installation task sequence immediately. This ensures the VM memory allocation is not decreased too much while it is idle.
 
 3. Start the new VM and connect to it:
@@ -452,24 +456,24 @@ This completes the demonstration of how to deploy a reference image to the netwo
 
 This section will demonstrate how to export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings. The scenario will use PC1, a computer that was cloned from a physical device to a VM, as described in [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md). 
 
-If the PC1 VM is not already running, then start and connect to it:
-
+1. If the PC1 VM is not already running, then start and connect to it:
+    
     ```
     Start-VM PC1
     vmconnect localhost PC1
     ```
 
-1. Switch back to the Hyper-V host and create a checkpoint for the PC1 VM so that it can easily be reverted to its current state for troubleshooting purposes and to perform additional scenarios.  Checkpoints are also known as snapshots. To create a checkpoint for the PC1 VM, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+2. Switch back to the Hyper-V host and create a checkpoint for the PC1 VM so that it can easily be reverted to its current state for troubleshooting purposes and to perform additional scenarios.  Checkpoints are also known as snapshots. To create a checkpoint for the PC1 VM, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```
     Checkpoint-VM -Name PC1 -SnapshotName BeginState
     ```
 
-2. Sign on to PC1 using the CONTOSO\Administrator account.
+3. Sign on to PC1 using the CONTOSO\Administrator account.
 
     >Specify **contoso\administrator** as the user name to ensure you do not sign on using the local administrator account. You must sign in with this account so that you have access to the deployment share.
 
-3. Open an elevated command prompt on PC1 and type the following:
+4. Open an elevated command prompt on PC1 and type the following:
 
     ```
     cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
@@ -477,13 +481,13 @@ If the PC1 VM is not already running, then start and connect to it:
 
     **Note**: Litetouch.vbs must be able to create the C:\MININT directory on the local computer.
 
-4. Choose the **Windows 10 Enterprise x64 Custom Image** and then click **Next**.
+5. Choose the **Windows 10 Enterprise x64 Custom Image** and then click **Next**.
 
-5. Choose **Do not back up the existing computer** and click **Next**.
+6. Choose **Do not back up the existing computer** and click **Next**.
 
     **Note**: The USMT will still back up the computer.
 
-6. Lite Touch Installation will perform the following actions:
+7. Lite Touch Installation will perform the following actions:
     - Back up user settings and data using USMT.
     - Install the Windows 10 Enterprise X64 operating system.
     - Update the operating system via Windows Update.
@@ -491,15 +495,15 @@ If the PC1 VM is not already running, then start and connect to it:
 
     You can review the progress of installation on SRV1 by clicking on the **Monitoring** node in the deployment workbench. When OS installation is complete, the computer will restart, set up devices, and configure settings.
 
-7. Sign in with the CONTOSO\Administrator account and verify that all CONTOSO domain user accounts and data have been migrated to the new operating system, or other user accounts as specified [previously](#configure-the-mdt-production-deployment-share).
+8. Sign in with the CONTOSO\Administrator account and verify that all CONTOSO domain user accounts and data have been migrated to the new operating system, or other user accounts as specified [previously](#configure-the-mdt-production-deployment-share).
 
-8. Create another checkpoint for the PC1 VM so that you can review results of the computer refresh later. To create a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+9. Create another checkpoint for the PC1 VM so that you can review results of the computer refresh later. To create a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```
     Checkpoint-VM -Name PC1 -SnapshotName RefreshState
     ```
 
-9. Restore the PC1 VM to it's previous state in preparation for the replace procedure. To restore a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+10. Restore the PC1 VM to it's previous state in preparation for the replace procedure. To restore a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```
     Restore-VMSnapshot -VMName PC1 -Name BeginState -Confirm:$false
@@ -507,7 +511,7 @@ If the PC1 VM is not already running, then start and connect to it:
     vmconnect localhost PC1
     ```
     
-10. Sign in to PC1 using the contoso\administrator account.
+11. Sign in to PC1 using the contoso\administrator account.
 
 ## Replace a computer with Windows 10
 
@@ -557,10 +561,10 @@ At a high level, the computer replace process consists of:<BR>
     ```
 3. Complete the deployment wizard using the following:
     - **Task Sequence**: Backup Only Task Sequence
-    - **User Data**: Specify a location: **\\SRV1\MigData$\PC1**
+    - **User Data**: Specify a location: **\\\\SRV1\MigData$\PC1**
     - **Computer Backup**: Do not back up the existing computer.
 4. While the task sequence is running on PC1, open the deployment workbench console on SRV1 and click the **Monitoring* node. Press F5 to refresh the console, and view the status of current tasks.  
-5. Verify that **The user state capture was completed successfully** is displayed, and click **Finish** when the capture is complete.
+5. On PC1, verify that **The user state capture was completed successfully** is displayed, and click **Finish** when the capture is complete.
 6. On SRV1, verify that the file **USMT.MIG** was created in the **C:\MigData\PC1\USMT** directory. See the following example:
 
     ```
@@ -585,18 +589,24 @@ At a high level, the computer replace process consists of:<BR>
     ```
     Disable-NetAdapter "Ethernet 2" -Confirm:$false
     ```
+
+    >As mentioned previously, ensure that you disable the **external** network adapter, and wait for the command to complete before proceeding.
+
+
 3. Start and connect to PC3 by typing the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```
     Start-VM PC3
     vmconnect localhost PC3
     ```
+
 4. When prompted, press ENTER for network boot.
 
-6. On PC3, ue the following settings for the Windows Deployment Wizard:
+6. On PC3, use the following settings for the Windows Deployment Wizard:
     - **Task Sequence**: Windows 10 Enterprise x64 Custom Image
     - **Move Data and Settings**: Do not move user data and settings
-    - **User Data (Restore)**: Specify a location: **\\SRV1\MigData$\PC1**
+    - **User Data (Restore)**: Specify a location: **\\\\SRV1\MigData$\PC1**
+
 5. When OS installation has started on PC1, re-enable the external network adapter on SRV1 by typing the following command on SRV1:
 
     ```
@@ -606,7 +616,9 @@ At a high level, the computer replace process consists of:<BR>
 
 8. When PC3 has completed installing the OS, sign in to PC3 using the contoso\administrator account. When the PC completes updating, click **Finish**.
 
-9. Verify that settings have been migrated from PC1, and then shut down PC3 in preparation for the next procedure.
+9. Verify that settings have been migrated from PC1. This completes demonstration of the replace procedure.
+
+10. Shut down PC3 in preparation for the [next](windows-10-poc-sc-config-mgr.md) procedure.
 
 ## Troubleshooting logs, events, and utilities
 
