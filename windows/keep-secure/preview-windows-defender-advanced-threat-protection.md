@@ -36,6 +36,8 @@ These set of new features also include the ability to collect forensic data from
 
 You'll also see the sensor health feature which helps you keep track and identify machines that might be encountering issues reporting sensor data to the service.
 
+You can now investigate user entities and see related details such as the machines the account was seen on and observed logon types.
+
 The following links take you to the topics that provide information on how to use these features:
 
 >[!NOTE]
@@ -51,11 +53,13 @@ The following links take you to the topics that provide information on how to us
   - [Remove file from quarantine](respond-file-alerts-windows-defender-advanced-threat-protection.md#remove-file-from-quarantine)
   - [Block files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#block-files-in-your-network)
 
-## Enhancements
-The following topics have been added to enhance the Windows Defender ATP experience:
-
 - [Check sensor status](check-sensor-status-windows-defender-advanced-threat-protection.md)
   - [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
+
+- [Investigate a user entity](investigate-user-entity-windows-defender-advanced-threat-protection.md)
+
+## Enhancements
+The following topics have been added to enhance the Windows Defender ATP experience:
 
 - [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
   - [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
