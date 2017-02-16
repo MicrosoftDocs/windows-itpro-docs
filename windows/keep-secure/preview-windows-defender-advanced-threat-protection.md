@@ -46,7 +46,7 @@ The following links take you to the topics that provide information on how to us
 - [Respond to machine alerts](respond-machine-alerts-windows-defender-advanced-threat-protection.md)
   - [Isolate machines from the network](respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
   - [Undo machine isolation](respond-machine-alerts-windows-defender-advanced-threat-protection.md#undo-machine-isolation)
-  - [Collect investigation package](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package)
+  - [Collect investigation package](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
 
 - [Respond to file related alerts](respond-file-alerts-windows-defender-advanced-threat-protection.md)
   - [Stop and quarantine files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#stop-and-quarantine-files-in-your-network)
