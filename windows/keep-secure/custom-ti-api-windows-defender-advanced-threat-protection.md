@@ -82,7 +82,7 @@ Content-Type: application/json;
 
 
 {
-  "Name": " The name of the IOA. Does not appear in the portal. Max length: 100 ",
+  "Name": " The name of the alert definition. Does not appear in the portal. Max length: 100 ",
   "Severity": "Low",
   "InternalDescription": "Internal description for the alert definition. Does not appear in the portal. Max length: 350",
   "Title": "A short, one sentence, description of the  alert definition. Max length: 120",
@@ -305,7 +305,7 @@ Authorization: Bearer <access_token>
 If successful, you should get a 204 NO CONTENT response.
 
 >[!NOTE]
-  > - Deleting an alert definition also deletes its corresponding IOC.  
+  > - Deleting an alert definition also deletes its corresponding IOCs.  
   > - Deleting an IOC or an alert definition will not delete or hide past alerts matching the alert definition. However, deleting an alert definition and creating a new one with the exact same metadata will result in new alerts in the portal. It's not advised to delete an alert definition and create a new one with the same content.
 
 ## Delete all
