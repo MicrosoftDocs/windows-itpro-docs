@@ -131,7 +131,6 @@ This following is a full list of BCD settings with friendly names which are igno
 | 0x15000052 | all| graphicsresolution| 
 | 0x15000065 | all| displaymessage| 
 | 0x15000066| all| displaymessageoverride| 
-| 0x15000081 | all| logcontrol|
 | 0x16000009 | all| recoveryenabled| 
 | 0x1600000b | all| badmemoryaccess| 
 | 0x1600000f | all| traditionalkseg| 
