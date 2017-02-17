@@ -55,12 +55,15 @@ When configuring Delivery Optimization on Windows 10 devices, the first and most
 
 While every other feature setting is optional, they offer enhanced control of the Delivery Optimization behavior.
 
-[Group ID](#group-id) enables administrators to create custom device groups that will share content between devices in the group.
+[Group ID](#group-id), combined with Group [Download mode](#download-mode), enables administrators to create custom device groups that will share content between devices in the group.
 
-Delivery Optimization uses locally cached updates. In cases where devices have limited local storage space, or if you would rather control cache usage, various settings can be used to control that:
+Delivery Optimization uses locally cached updates. In cases where devices have ample local storage and you would like to cache more content, or if you have limited storage and would like to cache less, use the settings below to adjust the Delivery Optimization cache to suit your scenario:
 - [Max Cache Size](#max-cache-size) and [Absolute Max Cache Size](#absolute-max-cache-size) control the amount of space the Delivery Optimization cache can use.
 - [Max Cache Age](#max-cache-age) controls the retention period for each update in the cache.
 - The system drive is the default location for the Delivery Optimization cache. [Modify Cache Drive](#modify-cache-drive) allows administrators to change that location.
+
+>[!NOTE]
+>It is possible to configure preferred cache devices. For more information, see [Set “preferred” cache devices for Delivery Optimization](#set-preferred-cache-devices).
 
 There are additional options available to robustly control the impact Delivery Optimization has on your network:
 - [Maximum Download Bandwidth](#maximum-download-bandwidth) and [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) controls the download bandwidth used by Delivery Optimization.
@@ -129,6 +132,7 @@ This setting allows for an alternate Delivery Optimization cache location on the
 
 This setting specifies the total amount of data in gigabytes that a Delivery Optimization client can upload to Internet peers per month. A value of 0 means that an unlimited amount of data can be uploaded. The default value for this setting is 20 GB.
     
+<span id="set-preferred-cache-devices"/>
 ## Set “preferred” cache devices for Delivery Optimization
 
 In some cases, IT pros may have an interest in identifying specific devices that will be “preferred” as sources to other devices—for example, devices that have hard-wired connections, large drives that you can use as caches, or a high-end hardware profile. These preferred devices will act as a “master” for the update content related to that devices’s configuration (Delivery Optimization only caches content relative to the client downloading the content).
