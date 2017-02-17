@@ -255,7 +255,7 @@
         "redirect_url": "/itpro/windows/configure/cortana-at-work-crm",
         "redirect_document_id": true
     },
- {
+    {
         "source_path": "windows/manage/cortana-at-work-powerbi.md",
         "redirect_url": "/itpro/windows/configure/cortana-at-work-powerbi",
         "redirect_document_id": true
@@ -310,7 +310,7 @@
         "redirect_url": "/itpro/windows/configure/manage-wifi-sense-in-enterprise",
         "redirect_document_id": true
     },
- {
+    {
         "source_path": "windows/deploy/provisioning-packages.md",
         "redirect_url": "/itpro/windows/configure/provisioning-packages",
         "redirect_document_id": true
