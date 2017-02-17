@@ -178,11 +178,11 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 
 1.  Open an elevated command prompt.
 2.  Add the Hyper-V Hypervisor by running the following command:
-    ``` syntax
+    ```
     dism /image:<WIM file name> /Enable-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /all
     ```
 3. Add the Isolated User Mode feature by running the following command:
-    ``` syntax
+    ```
     dism /image:<WIM file name> /Enable-Feature /FeatureName:IsolatedUserMode
     ```
 
