@@ -558,527 +558,527 @@
     {
         "source_path": "windows/manage/appv-install-the-appv-client-for-shared-content-store-mode.md",
         "redirect_url": "/itpro/windows/manage/appv-deploying-the-appv-sequencer-and-client",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/manage/appv-modify-client-configuration-with-the-admx-template-and-group-policy.md",
         "redirect_url": "/itpro/windows/manage/appv-deploying-the-appv-sequencer-and-client",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/manage/appv-planning-for-migrating-from-a-previous-version-of-appv.md",
         "redirect_url": "/itpro/windows/manage/appv-migrating-to-appv-from-a-previous-version",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "",
         "redirect_url": "",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/manage/configure-windows-10-devices-to-stop-data-flow-to-microsoft.md",
         "redirect_url": "/itpro/windows/configure/manage-connections-from-windows-operating-system-components-to-microsoft-services",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/manage/disconnect-your-organization-from-microsoft.md",
         "redirect_url": "/itpro/windows/configure/manage-connections-from-windows-operating-system-components-to-microsoft-services",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/manage/introduction-to-windows-10-servicing.md",
         "redirect_url": "/itpro/windows/update/index",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/manage/manage-cortana-in-enterprise.md",
         "redirect_url": "/itpro/windows/configure/cortana-at-work-overview",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/manage/manage-inventory-windows-store-for-business.md",
         "redirect_url": "/itpro/windows/manage/app-inventory-managemement-windows-store-for-business",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/manage/uev-accessibility.md",
         "redirect_url": "/itpro/windows/manage/uev-for-windows",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/manage/uev-privacy-statement.md",
         "redirect_url": "/itpro/windows/manage/uev-security-considerations",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/act-community-ratings-and-process.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/act-database-configuration.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/act-database-migration.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/act-deployment-options.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/act-glossary.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/activating-and-closing-windows-in-acm.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/act-lps-share-permissions.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/act-operatingsystem-application-report.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/act-operatingsystem-computer-report.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/act-operatingsystem-device-report.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/act-product-and-documentation-resources.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/act-settings-dialog-box-preferences-tab.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/act-settings-dialog-box-settings-tab.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/act-toolbar-icons-in-acm.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/act-tools-packages-and-services.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/act-user-interface-reference.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/adding-or-editing-an-issue.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/adding-or-editing-a-solution.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/analyzing-your-compatibility-data.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/application-dialog-box.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/categorizing-your-compatibility-data.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/chromebook-migration-guide.md",
         "redirect_url": "edu/windows/chromebook-migration-guide",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/common-compatibility-issues.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/compatibility-monitor-users-guide.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/computer-dialog-box.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/configuring-act.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/creating-and-editing-issues-and-solutions.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/creating-an-enterprise-environment-for-compatibility-testing.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/creating-an-inventory-collector-package.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/creating-a-runtime-analysis-package.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/customizing-your-report-views.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/data-sent-through-the-microsoft-compatibility-exchange.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/deciding-whether-to-fix-an-application-or-deploy-a-workaround.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/deciding-which-applications-to-test.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/deleting-a-data-collection-package.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/deploying-an-inventory-collector-package.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/deploying-a-runtime-analysis-package.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/deploy-windows-10-in-a-school.md",
         "redirect_url": "/edu/windows/deploy-windows-10-in-a-school",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/example-filter-queries.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/exporting-a-data-collection-package.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/filtering-your-compatibility-data.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/fixing-compatibility-issues.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/identifying-computers-for-inventory-collection.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/integration-with-management-solutions-.md",
         "redirect_url": "/itpro/windows/update/waas-manage-updates-wufb",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/internet-explorer-web-site-report.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/labeling-data-in-acm.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/log-file-locations-for-data-collection-packages.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/managing-your-data-collection-packages.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/organizational-tasks-for-each-report-type.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/organizing-your-compatibility-data.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/prioritizing-your-compatibility-data.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/ratings-icons-in-acm.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/resolving-an-issue.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/saving-opening-and-exporting-reports.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/selecting-the-send-and-receive-status-for-an-application.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/selecting-your-compatibility-rating.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/selecting-your-deployment-status.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/sending-and-receiving-compatibility-data.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/settings-for-acm.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/setup-and-deployment.md",
         "redirect_url": "/itpro/windows/update/waas-manage-updates-wufb",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/software-requirements-for-act.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/software-requirements-for-rap.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/taking-inventory-of-your-organization.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/testing-compatibility-on-the-target-platform.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/troubleshooting-act.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/troubleshooting-act-database-issues.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/troubleshooting-the-act-configuration-wizard.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/troubleshooting-the-act-log-processing-service.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/using-act.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/using-compatibility-monitor-to-send-feedback.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/viewing-your-compatibility-reports.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/websiteurl-dialog-box.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/welcome-to-act.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/whats-new-in-act-60.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/windows-10-guidance-for-education-environments.md",
         "redirect_url": "/edu/windows/index",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/windows-10-servicing-options.md",
         "redirect_url": "/itpro/windows/update/waas-overview",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/plan/windows-update-for-business.md",
         "redirect_url": "/itpro/windows/update/waas-manage-updates-wufb",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/applocker.md",
         "redirect_url": "/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/bitlocker.md",
         "redirect_url": "/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/change-history-for-what-s-new-in-windows-10.md",
         "redirect_url": "/itpro/windows/whats-new/index",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/credential-guard.md",
         "redirect_url": "/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/device-guard-overview.md",
         "redirect_url": "/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/device-management.md",
         "redirect_url": "/itpro/windows/manage/manage-corporate-devices",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/edge-ie11-whats-new-overview.md",
         "redirect_url": "/itpro/microsoft-edge/enterprise-guidance-using-microsoft-edge-and-ie11",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/edp-whats-new-overview.md",
         "redirect_url": "/itpro/windows/keep-secure/protect-enterprise-data-using-wip",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/lockdown-features-windows-10.md",
         "redirect_url": "/itpro/windows/configure/lockdown-features-windows-10",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/microsoft-passport.md",
         "redirect_url": "/itpro/windows/keep-secure/hello-identity-verification",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/new-provisioning-packages.md",
         "redirect_url": "/itpro/windows/configure/provisioning-packages",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/security-auditing.md",
         "redirect_url": "/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/trusted-platform-module.md",
         "redirect_url": "/itpro/windows/keep-secure/trusted-platform-module-overview",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/user-account-control.md",
         "redirect_url": "/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/windows-spotlight.md",
         "redirect_url": "/itpro/windows/configure/windows-spotlight",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/windows-store-for-business-overview.md",
         "redirect_url": "/itpro/windows/manage/windows-store-for-business-overview",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
     {
         "source_path": "windows/whats-new/windows-update-for-business.md",
         "redirect_url": "/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
-        "redirect_document_id": true 
+        "redirect_document_id": true
     },
   ]
 }
