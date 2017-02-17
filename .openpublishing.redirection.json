@@ -980,13 +980,105 @@
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
         "redirect_document_id": true 
     },
-
-
-
-
- 	
-
-
-
+    {
+        "source_path": "windows/plan/windows-10-guidance-for-education-environments.md",
+        "redirect_url": "/edu/windows/index",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/plan/windows-10-servicing-options.md",
+        "redirect_url": "/itpro/windows/update/waas-overview",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/plan/windows-update-for-business.md",
+        "redirect_url": "/itpro/windows/update/waas-manage-updates-wufb",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/whats-new/applocker.md",
+        "redirect_url": "/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/whats-new/bitlocker.md",
+        "redirect_url": "/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/whats-new/change-history-for-what-s-new-in-windows-10.md",
+        "redirect_url": "/itpro/windows/whats-new/index",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/whats-new/credential-guard.md",
+        "redirect_url": "/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/whats-new/device-guard-overview.md",
+        "redirect_url": "/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/whats-new/device-management.md",
+        "redirect_url": "/itpro/windows/manage/manage-corporate-devices",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/whats-new/edge-ie11-whats-new-overview.md",
+        "redirect_url": "/itpro/microsoft-edge/enterprise-guidance-using-microsoft-edge-and-ie11",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/whats-new/edp-whats-new-overview.md",
+        "redirect_url": "/itpro/windows/keep-secure/protect-enterprise-data-using-wip",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/whats-new/lockdown-features-windows-10.md",
+        "redirect_url": "/itpro/windows/configure/lockdown-features-windows-10",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "windows/whats-new/microsoft-passport.md",
+        "redirect_url": "/itpro/windows/keep-secure/hello-identity-verification",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "",
+        "redirect_url": "",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "",
+        "redirect_url": "",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "",
+        "redirect_url": "",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "",
+        "redirect_url": "",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "",
+        "redirect_url": "",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "",
+        "redirect_url": "",
+        "redirect_document_id": true 
+    },
+    {
+        "source_path": "",
+        "redirect_url": "",
+        "redirect_document_id": true 
+    },
   ]
 }
