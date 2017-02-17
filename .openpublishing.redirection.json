@@ -1046,38 +1046,38 @@
         "redirect_document_id": true 
     },
     {
-        "source_path": "",
-        "redirect_url": "",
+        "source_path": "windows/whats-new/new-provisioning-packages.md",
+        "redirect_url": "/itpro/windows/configure/provisioning-packages",
         "redirect_document_id": true 
     },
     {
-        "source_path": "",
-        "redirect_url": "",
+        "source_path": "windows/whats-new/security-auditing.md",
+        "redirect_url": "/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
         "redirect_document_id": true 
     },
     {
-        "source_path": "",
-        "redirect_url": "",
+        "source_path": "windows/whats-new/trusted-platform-module.md",
+        "redirect_url": "/itpro/windows/keep-secure/trusted-platform-module-overview",
         "redirect_document_id": true 
     },
     {
-        "source_path": "",
-        "redirect_url": "",
+        "source_path": "windows/whats-new/user-account-control.md",
+        "redirect_url": "/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
         "redirect_document_id": true 
     },
     {
-        "source_path": "",
-        "redirect_url": "",
+        "source_path": "windows/whats-new/windows-spotlight.md",
+        "redirect_url": "/itpro/windows/configure/windows-spotlight",
         "redirect_document_id": true 
     },
     {
-        "source_path": "",
-        "redirect_url": "",
+        "source_path": "windows/whats-new/windows-store-for-business-overview.md",
+        "redirect_url": "/itpro/windows/manage/windows-store-for-business-overview",
         "redirect_document_id": true 
     },
     {
-        "source_path": "",
-        "redirect_url": "",
+        "source_path": "windows/whats-new/windows-update-for-business.md",
+        "redirect_url": "/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
         "redirect_document_id": true 
     },
   ]
