@@ -421,21 +421,6 @@
         "redirect_document_id": true
     },
     {
-        "source_path": "windows/configure/configure-windows-10-devices-to-stop-data-flow-to-microsoft.md",
-        "redirect_url": "/itpro/windows/configure/manage-connections-from-windows-operating-system-components-to-microsoft-services",
-        "redirect_document_id": true
-    },
-    {
-        "source_path": "windows/configure/disconnect-your-organization-from-microsoft.md",
-        "redirect_url": "/itpro/windows/configure/manage-connections-from-windows-operating-system-components-to-microsoft-services",
-        "redirect_document_id": true
-    },
-    {
-        "source_path": "windows/configure/manage-cortana-in-enterprise.md",
-        "redirect_url": "/itpro/windows/configure/cortana-at-work-overview",
-        "redirect_document_id": true
-    },
-    {
         "source_path": "windows/deploy/update-windows-10-images-with-provisioning-packages.md",
         "redirect_url": "/itpro/windows/configure/provisioning-packages",
         "redirect_document_id": true
