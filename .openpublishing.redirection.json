@@ -571,11 +571,6 @@
         "redirect_document_id": true
     },
     {
-        "source_path": "",
-        "redirect_url": "",
-        "redirect_document_id": true
-    },
-    {
         "source_path": "windows/manage/configure-windows-10-devices-to-stop-data-flow-to-microsoft.md",
         "redirect_url": "/itpro/windows/configure/manage-connections-from-windows-operating-system-components-to-microsoft-services",
         "redirect_document_id": true
