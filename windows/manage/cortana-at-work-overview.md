@@ -59,6 +59,6 @@ Cortana is covered under the [Microsoft Privacy Statement](https://privacy.micro
 
 - [Cortana and Windows](http://go.microsoft.com/fwlink/?LinkId=717384)
 
-- [Known issues for Windows Desktop Search and Cortana in Windows 10](http://support.microsoft.com/kb/3206883/EN-US)
+- [Known issues for Windows Desktop Search and Cortana in Windows 10](https://support.microsoft.com/help/3206883/known-issues-for-windows-desktop-search-and-cortana-in-windows-10)
 
 - [Cortana for developers](http://go.microsoft.com/fwlink/?LinkId=717385)
