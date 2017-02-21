@@ -126,7 +126,9 @@ The following tables provide more information about the hardware, firmware, and 
 
 <br>
 
-#### 2017 Additional Security Recommendations (starting with Windows 10, version 1703) 
+#### 2017 Additional security requirements starting with Windows 10, version 1703 
+
+The following table lists requirements for Windows 10, version 1703, which are in addition to all preceding requirements. 
 
 | Protection for Improved Security          | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
