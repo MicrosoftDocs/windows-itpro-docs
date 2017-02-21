@@ -60,7 +60,7 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 | --- | --- |
 | [Manage device restarts after updates](waas-restart.md) | New |
 | [Manage Windows 10 in your organization - transitioning to modern management](manage-windows-10-in-your-organization-modern-management.md)  | New |
-| [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md) |Added an important note about Cortana and Office 365 integration. |
+| [Cortana integration in your business or enterprise](cortana-at-work-overview.md) |Added an important note about Cortana and Office 365 integration. |
 | [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) | Fixed the explanation for Start behavior when the .xml file containing the layout is not available when the user signs in. | 
 | [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added link to the Windows Restricted Traffic Limited Functionality Baseline. Added Teredo Group Policy. |
 | [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) | Added Current Branch for Business (CBB) support for Windows 10 IoT Mobile. |
@@ -138,7 +138,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | ---|---|
 | [Application development for Windows as a service](application-development-for-windows-as-a-service.md) | New |
 | [Join Windows 10 Mobile to Azure Active Directory](join-windows-10-mobile-to-azure-active-directory.md) | New |
-| [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md) | Updated to include the new Preview feature, Cortana and Microsoft Dynamics CRM integration. |
+| [Cortana integration in your business or enterprise](cortana-at-work-overview.md) | Updated to include the new Preview feature, Cortana and Microsoft Dynamics CRM integration. |
 
 ## February 2016
 
@@ -156,7 +156,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 | New or changed topic | Description |
 | ---|---|
-| [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md) | New |
+| [Cortana integration in your business or enterprise](cortana-at-work-overview.md) | New |
 | [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) | New |
 | [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md) | New |
 
