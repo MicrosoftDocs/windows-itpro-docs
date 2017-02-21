@@ -1,6 +1,6 @@
 ---
-title: Enable advanced features in Windows Defender Advanced Threat Protection
-description: Enable advanced features such as block file in Windows Defender Advanced Threat Protection.
+title: Turn on advanced features in Windows Defender Advanced Threat Protection
+description: Turn on advanced features such as block file in Windows Defender Advanced Threat Protection.
 keywords: advanced features, preferences setup, block file
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -10,7 +10,7 @@ ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
 ---
-# Enable advanced features in Windows Defender ATP
+# Turn on advanced features in Windows Defender ATP
 
 **Applies to:**
 
@@ -28,6 +28,5 @@ localizationpriority: high
 
 ## Related topics
 - [Update general settings](general-settings-windows-defender-advanced-threat-protection.md)
-- [Enable the preview experience](preview-settings-windows-defender-advanced-threat-protection.md)
+- [Turn on the preview experience](preview-settings-windows-defender-advanced-threat-protection.md)
 - [Configure email notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
-- [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
