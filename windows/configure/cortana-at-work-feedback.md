@@ -4,6 +4,7 @@ description: How to send feedback to Microsoft about Cortana at work.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+author: eross-msft
 localizationpriority: high
 ---
 

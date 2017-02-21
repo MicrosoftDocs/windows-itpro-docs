@@ -4,6 +4,7 @@ description: A list of suggested testing scenarios that you can use to test Cort
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+author: eross-msft
 localizationpriority: high
 ---
 

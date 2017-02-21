@@ -4,6 +4,7 @@ description: How to connect Cortana to Office 365 so your employees are notified
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+author: eross-msft
 localizationpriority: high
 ---
 

@@ -4,6 +4,7 @@ description: How to integrate Cortana with Power BI to help your employees get a
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+author: eross-msft
 localizationpriority: high
 ---
 
