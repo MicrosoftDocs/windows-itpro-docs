@@ -63,7 +63,7 @@ When the isolation configuration is applied, there will be a new event in the ma
 **Notification on machine user**:</br>
 When a machine is being isolated, the following notification is displayed to inform the user that the machine is being isolated from the network:
 
-![Image of no network connection](images/atp-no-network-connection.png)
+![Image of no network connection](images/atp-notification-isolate.png)
 
 ## Undo machine isolation
 Depending on the severity of the attack and the state of the machine you can choose to release the machine isolation after you have verified that the compromised machine has been remediated.
