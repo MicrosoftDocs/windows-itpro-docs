@@ -32,7 +32,7 @@ Table 2 lists specific data-protection concerns and how they are addressed in Wi
 | BitLocker could require users to enter a recovery key when system configuration changes occur. | BitLocker requires the user to enter a recovery key only when disk corruption occurs or when he or she loses the PIN or password. |
 | Users need to enter a PIN to start the PC, and then their password to sign in to Windows. | Modern Windows devices are increasingly protected with device encryption out of the box and support SSO to help protect the BitLocker encryption keys from cold boot attacks. |
 
-The sections that follow describe these improvements in more detail.
+The sections that follow describe these improvements in more detail. For more information about improvements in BitLocker, see the [BitLocker](https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in "What's new in Windows 10, versions 1507 and 1511." 
 
 ## Prepare for drive and file encryption
 
