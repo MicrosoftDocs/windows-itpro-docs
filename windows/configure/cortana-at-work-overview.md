@@ -4,6 +4,7 @@ description: The world’s first personal digital assistant helps users get thin
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+author: eross-msft
 localizationpriority: high
 ---
 

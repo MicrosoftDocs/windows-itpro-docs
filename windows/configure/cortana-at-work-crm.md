@@ -4,6 +4,7 @@ description: How to set up Cortana to help your salespeople get proactive insigh
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+author: eross-msft
 localizationpriority: high
 ---
 
