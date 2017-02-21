@@ -4,6 +4,7 @@ description: An optional test scenario about how to use Cortana at work with Win
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+author: eross-msft
 localizationpriority: high
 ---
 

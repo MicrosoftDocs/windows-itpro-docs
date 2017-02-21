@@ -4,6 +4,7 @@ description: A test scenario about how to use Cortana with the Suggested reminde
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+author: eross-msft
 localizationpriority: high
 ---
 
