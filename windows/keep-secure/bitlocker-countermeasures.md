@@ -115,7 +115,11 @@ Windows 10 uses Trusted Boot on any hardware platform: It requires neither UEFI
 
 Because UEFI-based Secure Boot has protected the bootloader and Trusted Boot has protected the Windows kernel or other Windows startup components, the next opportunity for malware to start is by infecting a non-Microsoft boot-related driver. Traditional antimalware apps don’t start until after the boot-related drivers have been loaded, giving a rootkit disguised as a driver the opportunity to work.
 
-The purpose of ELAM is to load an antimalware driver before drivers that are flagged as boot-start can be executed. This approach provides the ability for an antimalware driver to register as a trusted boot-critical driver. It is launched during the Trusted Boot process, and with that, Windows ensures that it is loaded before any other non-Microsoft software.
+Early Launch Antimalware (ELAM) is designed to enable the antimalware solution to start before all non-Microsoft drivers and apps. ELAM checks the integrity of non-Microsoft drivers to determine whether the drivers are trustworthy. Because Windows needs to start as fast as possible, ELAM cannot be a complicated process of checking the driver files against known malware signatures. Instead, ELAM has the simple task of examining every boot driver and determining whether it is on the list of trusted drivers. If malware modifies a boot-related driver, ELAM will detect the change, and Windows will prevent the driver from starting, thus blocking driver-based rootkits. ELAM also allows the registered antimalware provider to scan drivers that are loaded after the boot process is complete.
+
+Windows Defender in Windows 10 supports ELAM, as do Microsoft System Center 2012 Endpoint Protection and non-Microsoft antimalware apps.
+
+To do this, ELAM loads an antimalware driver before drivers that are flagged as boot-start can be executed. This approach provides the ability for an antimalware driver to register as a trusted boot-critical driver. It is launched during the Trusted Boot process, and with that, Windows ensures that it is loaded before any other non-Microsoft software.
 
 With this solution in place, boot drivers are initialized based on the classification that the ELAM driver returns according to an initialization policy. IT pros have the ability to change this policy through Group Policy.
 ELAM classifies drivers as follows:
