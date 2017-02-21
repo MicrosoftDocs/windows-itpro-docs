@@ -156,11 +156,6 @@
         "redirect_document_id": true
     },
     {
-        "source_path": "windows/manage/windows-spotlight.md",
-        "redirect_url": "/itpro/windows/configure/windows-spotlight",
-        "redirect_document_id": true
-    },
-    {
         "source_path": "windows/manage/manage-tips-and-suggestions.md",
         "redirect_url": "/itpro/windows/configure/manage-tips-and-suggestions",
         "redirect_document_id": true
@@ -203,11 +198,6 @@
     {
         "source_path": "windows/manage/customize-windows-10-start-screens-by-using-mobile-device-management.md",
         "redirect_url": "/itpro/windows/configure/customize-windows-10-start-screens-by-using-mobile-device-management",
-        "redirect_document_id": true
-    },
-    {
-        "source_path": "windows/manage/cortana-at-work-overview.md",
-        "redirect_url": "/itpro/windows/configure/cortana-at-work-overview",
         "redirect_document_id": true
     },
     {
@@ -298,11 +288,6 @@
     {
         "source_path": "windows/manage/lock-down-windows-10.md",
         "redirect_url": "/itpro/windows/configure/index",
-        "redirect_document_id": true
-    },
-    {
-        "source_path": "windows/manage/lockdown-features-windows-10.md",
-        "redirect_url": "/itpro/windows/configure/lockdown-features-windows-10",
         "redirect_document_id": true
     },
     {
