@@ -28,7 +28,7 @@ In Windows 10, version 1607, the following Group Policy settings apply only to W
 | **Start layout** | User Configuration\Administrative Templates\Start Menu and Taskbar | For more info, see [Manage Windows 10 Start layout options and policies](windows-10-start-layout-options-and-policies.md)  |
 | **Turn off the Store application** | Computer Configuration > Administrative Templates > Windows Components > Store > Turn off the Store application<br><br>User Configuration > Administrative Templates > Windows Components > Store > Turn off the Store application | For more info, see [Knowledge Base article# 3135657](https://support.microsoft.com/kb/3135657). |
 | **Only display the private store within the Windows Store app** | Computer Configuration > Administrative Templates > Windows Components > Store > Only display the private store within the Windows Store app<br><br>User Configuration > Administrative Templates > Windows Components > Store > Only display the private store within the Windows Store app | For more info, see [Manage access to private store](manage-access-to-private-store.md) |
-| **Don't search the web or display web results** | Computer Configuration\Administrative Templates\Windows Components\Search\Don't search the web or display web results | For more info, see [Cortana integration in your enterprise](cortana-at-work-overview.md) |
+| **Don't search the web or display web results** | Computer Configuration\Administrative Templates\Windows Components\Search\Don't search the web or display web results | For more info, see [Cortana integration in your enterprise](../configure/cortana-at-work-overview.md) |
 
 
 

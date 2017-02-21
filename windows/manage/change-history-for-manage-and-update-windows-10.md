@@ -60,7 +60,7 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 | --- | --- |
 | [Manage device restarts after updates](waas-restart.md) | New |
 | [Manage Windows 10 in your organization - transitioning to modern management](manage-windows-10-in-your-organization-modern-management.md)  | New |
-| [Cortana integration in your business or enterprise](cortana-at-work-overview.md) |Added an important note about Cortana and Office 365 integration. |
+| [Cortana integration in your business or enterprise](../configure/cortana-at-work-overview.md) |Added an important note about Cortana and Office 365 integration. |
 | [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) | Fixed the explanation for Start behavior when the .xml file containing the layout is not available when the user signs in. | 
 | [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added link to the Windows Restricted Traffic Limited Functionality Baseline. Added Teredo Group Policy. |
 | [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) | Added Current Branch for Business (CBB) support for Windows 10 IoT Mobile. |
@@ -71,7 +71,7 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 | New or changed topic | Description |
 | --- | --- |
 | [Update Windows 10 in the enterprise](waas-update-windows-10.md), replaces **Windows 10 servicing options** | New |
-| [Lockdown features from Windows Embedded 8.1 Industry](lockdown-features-windows-10.md) | Added Group Policy setting to replace Gesture Filter |
+| [Lockdown features from Windows Embedded 8.1 Industry](../configure/lockdown-features-windows-10.md) | Added Group Policy setting to replace Gesture Filter |
 | [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added content for Windows Server 2016 |
 | [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Updated the script for setting a custom shell using Shell Launcher. |
 
@@ -138,7 +138,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | ---|---|
 | [Application development for Windows as a service](application-development-for-windows-as-a-service.md) | New |
 | [Join Windows 10 Mobile to Azure Active Directory](join-windows-10-mobile-to-azure-active-directory.md) | New |
-| [Cortana integration in your business or enterprise](cortana-at-work-overview.md) | Updated to include the new Preview feature, Cortana and Microsoft Dynamics CRM integration. |
+| [Cortana integration in your business or enterprise](../configure/cortana-at-work-overview.md) | Updated to include the new Preview feature, Cortana and Microsoft Dynamics CRM integration. |
 
 ## February 2016
 
@@ -156,7 +156,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 | New or changed topic | Description |
 | ---|---|
-| [Cortana integration in your business or enterprise](cortana-at-work-overview.md) | New |
+| [Cortana integration in your business or enterprise](../configure/cortana-at-work-overview.md) | New |
 | [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) | New |
 | [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md) | New |
 
