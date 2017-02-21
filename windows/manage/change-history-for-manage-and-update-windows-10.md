@@ -17,6 +17,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 ## February 2017
 | New or changed topic | Description |
 | --- | --- |
+| [Windows Libraries](windows-libraries.md) | New |
 | [Monitor Windows Updates with Update Compliance](update-compliance-monitor.md) | New |
 | [Get started with Update Compliance](update-compliance-get-started.md) | New |
 | [Use Update Compliance to monitor Windows Updates](update-compliance-using.md) | New |
