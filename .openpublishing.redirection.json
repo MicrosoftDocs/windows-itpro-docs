@@ -1045,5 +1045,10 @@
         "redirect_url": "/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511",
         "redirect_document_id": true
     },
+    {
+        "source_path": "windows/keep-secure/windows-10-security-guide.md",
+        "redirect_url": "/itpro/windows/keep-secure/overview-of-threat-mitigations-in-windows-10",
+        "redirect_document_id": true
+    },
   ]
 }
