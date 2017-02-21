@@ -36,7 +36,7 @@ You can deploy the resulting .xml file to devices using one of the following met
 
 -   [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 
--   [Windows Imaging and Configuration Designer provisioning package](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+-   [Windows Configuration Designer provisioning package](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 
 -   [Mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
@@ -47,7 +47,7 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 
 **To prepare a test computer**
 
-1.  Set up a test computer on which to customize the Start layout. Your test computer should have the operating system that is installed on the users’ computers (Windows 10 Enterprise or Windows 10 Education). Install all apps and services that the Start layout should display.
+1.  Set up a test computer on which to customize the Start layout. Your test computer should have the operating system that is installed on the users’ computers (Windows 10 Pro, Enterprise, or Education). Install all apps and services that the Start layout should display.
 
 2.  Create a new user account that you will use to customize the Start layout.
 
@@ -70,7 +70,8 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 
     -   **Create your own app groups**. Drag the apps to an empty area. To name a group, click above the group of tiles and then type the name in the **Name group** field that appears above the group.
 
-## <a href="" id="bmk-exportstartscreenlayout"></a>Export the Start layout
+<span id="bmk-exportstartscreenlayout" />
+## Export the Start layout
 
 
 When you have the Start layout that you want your users to see, use the [Export-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=620879) cmdlet in Windows PowerShell to export the Start layout to an .xml file.

@@ -40,10 +40,10 @@ On devices running Windows 10, version 1703, you can install [Windows Configurat
 >[!NOTE]
 >The Windows Configuration Designer App from the Windows Store currently supports only English. For a localized version of the Windows Configuration Designer, install it from the Windows ADK. 
 
-1. Go to [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) and select **Get Windows ADK** for the version of Windows 10 that you want to create provisioning packages for (version 1511 or version 1607).
+1. Go to [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) and select **Get Windows ADK** for the version of Windows 10 that you want to create provisioning packages for (version 1511, 1607, or 1703).
 
     >[!NOTE]
-    >The rest of this procedure uses Windows ADK for Windows 10, version 1607 as an example.
+    >The rest of this procedure uses Windows ADK for Windows 10, version 1703 as an example.
     
 2. Save **adksetup.exe** and then run it.
 

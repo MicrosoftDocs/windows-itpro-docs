@@ -1,6 +1,6 @@
 ---
 title: Manage Windows 10 Start and taskbar layout  (Windows 10)
-description: Organizations might want to deploy a customized Start and taskbar layout to devices running Windows 10 Enterprise or Windows 10 Education.
+description: Organizations might want to deploy a customized Start and taskbar layout to devices.
 ms.assetid: 2E94743B-6A49-463C-9448-B7DD19D9CD6A
 keywords: ["start screen", "start menu"]
 ms.prod: w10
@@ -19,10 +19,12 @@ localizationpriority: high
 
 > **Looking for consumer information?** See [Customize the Start menu](http://windows.microsoft.com/windows-10/getstarted-see-whats-on-the-menu) 
 
-Organizations might want to deploy a customized Start and taskbar configuration to devices running Windows 10 Enterprise or Windows 10 Education. A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Configuring the taskbar allows the organization to pin useful apps for their employees and to remove apps that are pinned by default.
+Organizations might want to deploy a customized Start and taskbar configuration to devices running Windows 10 Pro, Enterprise, or Education. A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Configuring the taskbar allows the organization to pin useful apps for their employees and to remove apps that are pinned by default.
 
 >[!NOTE]
 >Taskbar configuration is available starting in Windows 10, version 1607.
+>
+>Start and taskbar configuration can be applied to devices running Windows 10 Pro, version 1703.
 
 ## Start options
 
@@ -123,14 +125,17 @@ There are three categories of apps that might be pinned to a taskbar:
 * Default Windows apps, pinned during operating system installation (Microsoft Edge, File Explorer, Store)
 * Apps pinned by the enterprise, such as in an unattended Windows setup
 
- **Note**  
-   The earlier method of using [TaskbarLinks](https://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file is deprecated in Windows 10, version 1607.
+ >[!NOTE]
+ >The earlier method of using [TaskbarLinks](https://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file is deprecated in Windows 10, version 1607.
    
 The following example shows how apps will be pinned - Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using XML to the right (green square).
 
-> **Note**  In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
-
 ![Windows left, user center, enterprise to the right](images/taskbar-generic.png)
+
+>[!NOTE]
+>In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
+
+
 
 Whether you apply the taskbar configuration to a clean install or an update, users will still be able to:
 * Pin additional apps
