@@ -1259,7 +1259,7 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
 
     -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Turn off Microsoft consumer experiences**.
 
-For more info, see [Windows Spotlight on the lock screen](../manage/windows-spotlight.md).
+For more info, see [Windows Spotlight on the lock screen](../configure/windows-spotlight.md).
 
 ### <a href="" id="bkmk-windowsstore"></a>24. Windows Store
 
