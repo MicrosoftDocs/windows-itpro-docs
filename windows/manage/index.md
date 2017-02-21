@@ -72,6 +72,10 @@ Learn about managing and updating Windows 10.
 <td align="left"><p>[Windows Store for Business](windows-store-for-business.md)</p></td>
 <td align="left"><p>Welcome to the Windows Store for Business! You can use the Store for Business, to find, acquire, distribute, and manage apps for your organization.</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p>[Windows Libraries](windows-libraries.md)</p></td>
+<td align="left"><p>Libraries are virtual containers for users’ content. A library can contain files and folders stored on the local computer or in a remote storage location. Libraries are built upon the legacy known folders (such as My Documents, My Pictures, and My Music).</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>[Change history for Manage and update Windows 10](change-history-for-manage-and-update-windows-10.md)</p></td>
 <td align="left"><p>This topic lists new and updated topics in the Manage and update Windows 10 documentation for [Windows 10 and Windows 10 Mobile](../index.md).</p></td>
