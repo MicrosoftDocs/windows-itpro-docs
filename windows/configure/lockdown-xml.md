@@ -21,10 +21,7 @@ Windows 10 Mobile allows enterprises to lock down a device, define multiple use
 
 This topic provides example XML that you can use in your own lockdown XML file that can be included in a provisioning package or when using a mobile device management (MDM) solution to push lockdown settings to enrolled devices.
 
->[!TIP]
->Use the [Lockdown Designer app](mobile-lockdown-designer.md) to configure and generate your customized lockdown XML file.
-
-Lockdown XML is an XML file that contains settings for Windows 10 Mobile. When you deploy the lockdown XML file to a device, it is saved on the device as **wehlockdown.xml**. When the device boots, it looks for wehlockdown.xml and applies any settings configured in the file. In this topic, you'll learn how to create an XML file that contains all lockdown entries available in the AssignedAccessXml area of the [EnterpriseAssignedAccess configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=618601).
+Lockdown XML is an XML file that contains settings for Windows 10 Mobile. When you deploy the lockdown XML file to a device, it is saved on the device as **wehlockdown.xml**. When the device boots, it looks for wehlockdown.xml and applies any settings configured in the file. In this topic, you'll learn how to create an XML file that contains all lockdown entries available in the AssignedAccessXml area of the [EnterpriseAssignedAccess configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?L...(line truncated)...
 
 > [!NOTE]
 >  On Windows 10 desktop editions, *assigned access* is a feature that lets you configure the device to run a single app above the lockscreen ([kiosk mode](set-up-a-device-for-anyone-to-use.md)). On a Windows 10 Mobile device, assigned access refers to the lockdown settings in AssignedAccessXml in the [EnterpriseAssignedAccess configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=618601).
@@ -335,20 +332,22 @@ The **Settings** section contains an `allow` list of pages in the Settings app. 
      <!-- Allow all settings -->
  </Settings>
  ```
-In the following example, all system setting pages are enabled.
+In earlier versions of Windows 10, you used the page name to define allowed settings. Starting in Windows 10, version 1703, you use the settings URI.
+
+In the following example for Windows 10, version 1703, all system setting pages are enabled.
 
 ```xml
 <Settings> 
-  <System name="SettingsPageGroupPCSystem" /> 
-  <System name="SettingsPageDisplay" /> 
-  <System name="SettingsPageAppsNotifications" />
-  <System name="SettingsPageCalls" />
-  <System name="SettingsPageMessaging" /> 
-  <System name="SettingsPageBatterySaver" /> 
-  <System name="SettingsPageStorageSenseStorageOverview" />
-  <System name="SettingsPageGroupPCSystemDeviceEncryption" /> 
-  <System name="SettingsPageDrivingMode" /> 
-  <System name="SettingsPagePCSystemInfo" /> 
+  <System name="ms-settings:screenrotation" /> 
+  <System name="ms-settings:notifications" /> 
+  <System name="ms-settings:phone" />
+  <System name="ms-settings:messaging" />
+  <System name="ms-settings:batterysaver" /> 
+  <System name="ms-settings:batterysaver-usagedetails" /> 
+  <System name="ms-settings:powersleep" />
+  <System name="ms-settings:about" /> 
+  <System name="ms-settings:deviceencryption" /> 
+  <System name="ms-settings:maps" /> 
  </Settings>
 ```
 
@@ -608,13 +607,12 @@ To push lockdown settings to enrolled devices, use the AssignedAccessXML setting
             <!-- Quick actions: Brightness, Rotation -->
             <System name="SystemSettings_System_Display_QuickAction_Brightness"/>
             <System name="SystemSettings_System_Display_Internal_Rotation"/>
-            <!-- Brightness+Rotation, About -->
-            <System name="SettingsPageGroupPCSystem"/>
-            <System name="SettingsPageDisplay"/>
-            <System name="SettingsPagePCSystemInfo"/>
+            <!-- Rotation, About -->
+            <System name="ms-settings:screenrotation"/>
+            <System name="ms-settings:about"/>
             <!-- Ringtones, sounds -->
-            <System name="SettingsPageGroupPersonalization"/>
-            <System name="SettingsPageSounds"/>
+            <System name="ms-settings:personalizationn"/>
+            <System name="ms-settings:sounds"/>
         </Settings>
         <Tiles>
             <EnableTileManipulation/>
@@ -709,17 +707,16 @@ To push lockdown settings to enrolled devices, use the AssignedAccessXML setting
                 <DisableMenuItems/>
             </MenuItems>
             <Settings>
-                <!-- Brightness+Rotation, Notifications, About -->
-                <System name="SettingsPageGroupPCSystem"/>
-                <System name="SettingsPageAppsNotifications"/>
-                <System name="SettingsPageDisplay"/>
-                <System name="SettingsPagePCSystemInfo"/>
+                <!-- Rotation, Notifications, About -->
+                <System name="ms-settings:screenrotation"/>
+                <System name="ms-settings:notifications"/>
+                <System name="ms-settings:about"/>
                 <!-- Ringtones, sounds -->
-                <System name="SettingsPageGroupPersonalization"/>
-                <System name="SettingsPageSounds"/>
+                <System name="ms-settings:personalization"/>
+                <System name="ms-settings:sounds"/>
                 <!-- Workplace -->
-                <System name="SettingsPageGroupAccounts"/>
-                <System name="SettingsPageAccountsWorkplace"/>
+                <System name="ms-settings:workplace"/>
+                <System name="ms-settings:emailandaccounts"/>
             </Settings>
         </Role>
         <Role guid="{7bb62e8c-81ba-463c-b691-74af68230b42}" name="Manager">
@@ -862,12 +859,3 @@ To push lockdown settings to enrolled devices, use the AssignedAccessXML setting
 [Settings and quick actions that can be locked down in Windows 10 Mobile](settings-that-can-be-locked-down.md)
 
 [Product IDs in Windows 10 Mobile](product-ids-in-windows-10-mobile.md)
-
- 
-
- 
-
-
-
-
-

@@ -20,7 +20,15 @@ localizationpriority: high
 
 This topic lists the settings and quick actions that can be locked down in Windows 10 Mobile.
 
-## Settings lockdown
+## Settings lockdown in Windows 10, version 1703
+
+In earlier versions of Windows 10, you used the page name to define allowed settings. Starting in Windows 10, version 1703, you use the settings URI.
+
+For example, in place of **SettingsPageDisplay**, you would use **ms-settings:display**.
+
+See the [ms-settings: URI scheme reference](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) to find the URI for each Settings page.
+
+## Settings lockdown in Windows 10, version 1607 and earlier
 
 
 You can use Lockdown.xml to configure lockdown settings.
@@ -451,52 +459,26 @@ You can specify the quick actions as follows:
 
 ``` syntax
 <Settings>
-    <System name="SystemSettings_System_Display_QuickAction_Brightness"/>
-    <System name="SystemSettings_System_Display_Internal_Rotation"/>
-    <System name="SystemSettings_QuickAction_WiFi"/>
-    <System name="SystemSettings_QuickAction_InternetSharing"/>
-    <System name="SystemSettings_QuickAction_CellularData"/>
-    <System name="SystemSettings_QuickAction_AirplaneMode"/>
-    <System name="SystemSettings_Privacy_LocationEnabledUserPhone"/>
-    <System name="SystemSettings_Network_VPN_QuickAction"/>
-    <System name="SystemSettings_Flashlight_Toggle"/>
-    <System name="SystemSettings_Device_BluetoothQuickAction"/>
-    <System name="SystemSettings_BatterySaver_LandingPage_OverrideControl" />
-    <System name="SystemSettings_QuickAction_QuietHours" />
-    <System name="SystemSettings_QuickAction_Camera" />
-    <System name="SystemSettings_Launcher_QuickNote" />
     <System name="QuickActions_Launcher_AllSettings" />
     <System name="QuickActions_Launcher_DeviceDiscovery" />
+    <System name="SystemSettings_BatterySaver_LandingPage_OverrideControl" />
+    <System name="SystemSettings_Device_BluetoothQuickAction"/>
+    <System name="SystemSettings_Flashlight_Toggle"/>
+    <System name="SystemSettings_Launcher_QuickNote" />
+    <System name="SystemSettings_Network_VPN_QuickAction"/>
+    <System name="SystemSettings_Privacy_LocationEnabledUserPhone"/>
+    <System name="SystemSettings_QuickAction_AirplaneMode"/>
+    <System name="SystemSettings_QuickAction_Camera" />
+    <System name="SystemSettings_QuickAction_CellularData"/>
+    <System name="SystemSettings_QuickAction_InternetSharing"/>
+    <System name="SystemSettings_QuickAction_QuietHours" />
+    <System name="SystemSettings_QuickAction_WiFi"/>
+    <System name="SystemSettings_System_Display_Internal_Rotation"/>
+    <System name="SystemSettings_System_Display_QuickAction_Brightness"/>
 </Settings> 
 ```
 
-Some quick actions are dependent on related settings pages/page groups. When a dependent page/group is not available, then the corresponding quick action will also be hidden.
 
-**Note**  
-Dependent settings group/pages will be automatically enabled when a quick action is specified in the lockdown xml file. For example, if the Rotation quick setting is specified, the following group and page will automatically be added to the allow list: “SettingsPageSystemDisplay” and “SettingsPageDisplay”.
-
- 
-
-The following table lists the dependencies between quick actions and Settings groups/pages.
-
-| Quick action   | Settings group    | Settings page  |
-|-----|-------|-------|
-| SystemSettings\_System\_Display\_QuickAction\_Brightness | SettingsPageSystemDisplay| SettingsPageDisplay | 
-| SystemSettings\_System\_Display\_Internal\_Rotation | SettingsPageSystemDisplay | SettingsPageDisplay   |
-| SystemSettings\_QuickAction\_WiFi | SettingsPageNetworkWiFi  | SettingsPageNetworkWiFi  |
-| SystemSettings\_QuickAction\_InternetSharing   | SettingsPageNetworkInternetSharing  | SettingsPageNetworkInternetSharing |
-| SystemSettings\_QuickAction\_CellularData | SettingsGroupCellular  | SettingsPageNetworkCellular  |
-| SystemSettings\_QuickAction\_AirplaneMode  | SettingsPageNetworkAirplaneMode | SettingsPageNetworkAirplaneMode |
-| SystemSettings\_Privacy\_LocationEnabledUserPhone | SettingsGroupPrivacyLocationGlobals   | SettingsPagePrivacyLocation  |
-| SystemSettings\_Network\_VPN\_QuickAction | SettingsPageNetworkVPN   | SettingsPageNetworkVPN  |
-| SystemSettings\_Launcher\_QuickNote | N/A   | N/A    |
-| SystemSettings\_Flashlight\_Toggle  | N/A    | N/A    |
-| SystemSettings\_Device\_BluetoothQuickAction   | SettingsPagePCSystemBluetooth   | SettingsPagePCSystemBluetooth  |
-| SystemSettings\_BatterySaver\_LandingPage\_OverrideControl | BatterySaver\_LandingPage\_SettingsConfiguration | SettingsPageBatterySaver   |
-| QuickActions\_Launcher\_DeviceDiscovery  | N/A    | N/A   |
-| QuickActions\_Launcher\_AllSettings    | N/A   | N/A  |
-| SystemSettings\_QuickAction\_QuietHours   | N/A    | N/A   |
-| SystemSettings\_QuickAction\_Camera   | N/A   | N/A   |
 
  
 
