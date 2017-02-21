@@ -5,7 +5,7 @@ keywords: ["shared cart", "shared PC", "school"]
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
-author: jdeckerMS
+author: CelesteDG
 ---
 
 # Provision student PCs with apps
