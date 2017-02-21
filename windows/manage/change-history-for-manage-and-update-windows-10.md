@@ -93,7 +93,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 - [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md)
 - [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
-- [Set up a shared or guest PC with Windows 10](..configure/set-up-shared-or-guest-pc.md)
+- [Set up a shared or guest PC with Windows 10](../configure/set-up-shared-or-guest-pc.md)
 - [Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md)
 - [Application Virtualization (App-V) for Windows 10](appv-for-windows.md)
 - [User Experience Virtualization (UE-V) for Windows 10](uev-for-windows.md)

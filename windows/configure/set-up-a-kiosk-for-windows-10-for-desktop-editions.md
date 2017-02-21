@@ -122,7 +122,7 @@ Assigned Access has one setting, KioskModeApp. In the KioskModeApp setting, you 
 >When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
 
-1. [install Windows Configuration Designer](provisioning-install-icd.md)
+1. [Install Windows Configuration Designer](provisioning-install-icd.md)
 
 2. Open Windows Configuration Designer
 
