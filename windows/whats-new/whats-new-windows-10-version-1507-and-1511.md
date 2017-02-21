@@ -251,7 +251,6 @@ Windows 10 provides mobile device management (MDM) capabilities for PCs, laptop
 
 ### MDM support
 
-
 MDM policies for Windows 10 align with the policies supported in Windows 8.1 and are expanded to address even more enterprise scenarios, such as managing multiple users who have Microsoft Azure Active Directory (Azure AD) accounts, full control over the Windows Store, VPN configuration, and more. 
 
 MDM support in Windows 10 is based on [Open Mobile Alliance (OMA)](https://go.microsoft.com/fwlink/p/?LinkId=533885) Device Management (DM) protocol 1.2.1 specification.
