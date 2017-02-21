@@ -203,7 +203,7 @@ Apps Corner lets you set up a custom Start screen on your Windows 10 Mobile or 
 
  
 
- ## Email notes
+ ## Email notes - temp
 
 from Lily: When you push down a SyncML for Assigned Access xml through the EnterpriseAssignedAccess CSP, it need to be escaped. But if you add the lockdown xml in the provisioning package, you don’t need to escape the xml as ICD will do that when building the package. Providing an escaped xml in ICD will cause building the package fail. 
 
