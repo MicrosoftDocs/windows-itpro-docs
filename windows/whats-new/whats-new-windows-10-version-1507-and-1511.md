@@ -13,7 +13,9 @@ localizationpriority: high
 
 Below is a list of some of the new and updated features included in  the initial release of Windows 10 (version 1507) and the Windows 10 update to version 1511.
 
-> **Note:** For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
+>[!NOTE]
+>For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
+ 
 
 ## Deployment
 
@@ -249,7 +251,6 @@ Windows 10 provides mobile device management (MDM) capabilities for PCs, laptop
 
 ### MDM support
 
-
 MDM policies for Windows 10 align with the policies supported in Windows 8.1 and are expanded to address even more enterprise scenarios, such as managing multiple users who have Microsoft Azure Active Directory (Azure AD) accounts, full control over the Windows Store, VPN configuration, and more. 
 
 MDM support in Windows 10 is based on [Open Mobile Alliance (OMA)](https://go.microsoft.com/fwlink/p/?LinkId=533885) Device Management (DM) protocol 1.2.1 specification.
@@ -299,7 +300,7 @@ Lockdown settings can also be configured for device look and feel, such as a the
 
 A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Starting in Windows 10, version 1511, administrators can configure a *partial* Start layout, which applies specified tile groups while allowing users to create and customize their own tile groups. Learn how to [customize and export Start layout](../manage/customize-and-export-start-layout.md).
 
-Administrators can also use mobile device management (MDM) or Group Policy to disable the use of [Windows Spotlight on the lock screen](../manage/windows-spotlight.md).
+Administrators can also use mobile device management (MDM) or Group Policy to disable the use of [Windows Spotlight on the lock screen](../configure/windows-spotlight.md).
 
 ### Windows Store for Business
 **New in Windows 10, version 1511**
