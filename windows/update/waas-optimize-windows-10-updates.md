@@ -40,9 +40,9 @@ Two methods of peer-to-peer content distribution are available in Windows 10.
 | BranchCache | ![no](images/crossmark.png) | ![no](images/crossmark.png) |![yes](images/checkmark.png) | ![yes](images/checkmark.png) |
 
 >[!NOTE]
->Starting with preview version 1604, System Center Configuration Manager has an additional feature called Client Peer Cache that allows peer-to-peer content sharing between clients you use System Center Configuration Manager to manage in the same Configuration Manager boundary group. This is expected to be available in later Configuration Manager current branch releases.
+>System Center Configuration Manager has an additional feature called Client Peer Cache that allows peer-to-peer content sharing between clients you use System Center Configuration Manager to manage, in the same Configuration Manager boundary Group. For more information, see [Client Peer Cache](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/client-peer-cache).
 >
->In addition to client content sharing, similar functionality is available in the Windows Preinstallation Environment (Windows PE) for imaging-related content. Using this technology, clients imaging with System Center Configuration Manager task sequences can source operating system images, driver packages, boot images, packages, and programs from peers instead of distribution points. For detailed information about how Windows PE Peer Cache works and how to configure it, see [Prepare Windows PE peer cache to reduce WAN traffic in System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt613173.aspx).
+>In addition to Client Peer Cache, similar functionality is available in the Windows Preinstallation Environment (Windows PE) for imaging-related content. Using this technology, clients imaging with System Center Configuration Manager task sequences can source operating system images, driver packages, boot images, packages, and programs from peers instead of distribution points. For detailed information about how Windows PE Peer Cache works and how to configure it, see [Prepare Windows PE peer cache to reduce WAN traffic in System Center Configuration Manager](https://technet.microsoft.com/library/mt613173.aspx).
 
 ## Express update delivery
 

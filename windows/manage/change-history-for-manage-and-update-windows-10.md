@@ -22,6 +22,7 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 
 | New or changed topic | Description |
 | --- | --- |
+| [Windows Libraries](windows-libraries.md) | New |
 | [Monitor Windows Updates with Update Compliance](update-compliance-monitor.md) | New |
 | [Get started with Update Compliance](update-compliance-get-started.md) | New |
 | [Use Update Compliance to monitor Windows Updates](update-compliance-using.md) | New |

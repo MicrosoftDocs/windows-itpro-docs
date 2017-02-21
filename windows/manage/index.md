@@ -21,6 +21,7 @@ Learn about managing Windows 10.
 ## In this section
 
 
+
 | Topic | Description |
 | --- | --- |
 | [Manage Windows 10 in your organization - transitioning to modern management](manage-windows-10-in-your-organization-modern-management.md) | Strategies for deploying and managing Windows 10, including deploying Windows 10 in a mixed environment.  |
@@ -36,6 +37,7 @@ Learn about managing Windows 10.
 | [Application Virtualization (App-V) for Windows](appv-for-windows.md) | When you deploy Application Virtualization (App-V) in your orgnazation, you can deliver Win32 applications to users as virtual applications. Virtual applications are installed on centrally managed servers and delivered to users as a service – in real time and on as as-needed basis. Users launch virtual applications from familiar access points, including the Windows Store, and interact with them as if they were installed locally. |
 | [User Experience Virtualization for Windows (UE-V)](uev-for-windows.md) | When you deploy User Experience Virtualization (UE-V) in your organization, you can synchronize users' personalized application and operating system settings across all the devices they work from. UE-V allows you to capture user-customized application and Windows settings and store them on a centrally managed network file share. When users log on, their personalized settings are applied to their work session, regardless of which device or virtual desktop infrastructure (VDI) sessions they log on to. |
 | [Change history for Manage Windows 10](change-history-for-manage-and-update-windows-10.md) | This topic lists new and updated topics in the Manage and update Windows 10 documentation for [Windows 10 and Windows 10 Mobile](../index.md). |
+
 
 
 
