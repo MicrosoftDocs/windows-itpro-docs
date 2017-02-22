@@ -214,7 +214,7 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 You can also enable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v2.0.ps1 -Enable -AutoReboot
+DG_Readiness_Tool_v3.0.ps1 -Enable -AutoReboot
 ```
 
 #### Credential Guard deployment in virtual machines
@@ -283,7 +283,7 @@ For more info on virtualization-based security and Device Guard, see [Device Gua
 You can also disable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v2.0.ps1 -Disable -AutoReboot
+DG_Readiness_Tool_v3.0.ps1 -Disable -AutoReboot
 ```
  
 ### Check that Credential Guard is running
@@ -301,7 +301,7 @@ You can use System Information to ensure that Credential Guard is running on a P
 You can also check that Credential Guard is running by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v2.0.ps1 -Ready
+DG_Readiness_Tool_v3.0.ps1 -Ready
 ```
     
 ## Considerations when using Credential Guard
