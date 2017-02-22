@@ -1,40 +1,6 @@
----
-title: Deploy, manage, and report on Windows Defender Antivirus
-description: 
-keywords: 
-search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
-localizationpriority: medium
-author: iaanw
----
-
-# Deploy, manage, and report on Windows Defender Antivirus
-
-**Applies to:**
-
-- Windows 10
-
-**Audience**
-
-- IT administrators
-
-You can deploy, manage, and report on Windows Defender Antivirus in a number of ways. 
-
-The following matrix illustrates how each function can be managed or accessed. The topics in this section provide links or describe how to use each product:
-- To deploy or enable the Windows Defender Antivirus protection client on endpoints or servers
-- To manage and report on Windows Defender Antivirus protection, including managing product and protection updates
-- To report on Windows Defender Antivirus protection
 
 
-> [!IMPORTANT]
-> In most cases, Windows 10 will disable Windows Defender Antivirus if it finds another antivirus product running and up-to-date. You must disable or uninstall third-party antivirus products before Windows Defender Antivirus will be functioning. If you re-enable or install third-part antivirus products, then Windows 10 will automatically disable Windows Defender Antivirus.
 
-
-When you enable endpoint protection for your clients, it will install an additional management layer on Windows Defender to manage the in-box Windows Defender agent. While the client user interface will still appear as Windows Defender, the management layer for Endpoint Protection will be listed in the **Add/Remove Programs** control panel, though it will appear as if the full product is installed.
 
 ## Manage Windows Defender endpoints through Active Directory and WSUS
 
