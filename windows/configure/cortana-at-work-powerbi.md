@@ -20,7 +20,7 @@ localizationpriority: high
 Integration between Cortana and Power BI shows how Cortana can work with custom business analytics solutions to enable you to get answers directly from your key business data, including introducing new features that let you create custom Cortana “answers” using the full capabilities of Power BI Desktop.
 
 >[!Note]
->Cortana for Power BI is currently only available in English. For more info about Cortana and Power BI, see [Use Power BI to create a custom Answer Page for Cortana](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-cortana-desktop-entity-cards/).
+>Cortana for Power BI is currently only available in English. For more info about Cortana and Power BI, see [Use Power BI to create a custom Answer Page for Cortana](https://powerbi.microsoft.com/documentation/powerbi-service-cortana-desktop-entity-cards/).
 
 ## Before you begin
 To use this walkthrough, you’ll need:
@@ -136,4 +136,4 @@ Now that you’ve set up your device, you can use Cortana to show your info from
     ![Cortana at work, showing your custom report from Power BI](images/cortana-powerbi-myreport.png)
  	 
 >[!NOTE]
->For more info about how to connect your own data, build your own custom Power BI cards and Answer Pages for Cortana, and how to share the cards with everyone in your organization, see [Use Power BI to create a custom Answer Page for Cortana](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-cortana-desktop-entity-cards/).
+>For more info about how to connect your own data, build your own custom Power BI cards and Answer Pages for Cortana, and how to share the cards with everyone in your organization, see [Use Power BI to create a custom Answer Page for Cortana](https://powerbi.microsoft.com/documentation/powerbi-service-cortana-desktop-entity-cards/).
