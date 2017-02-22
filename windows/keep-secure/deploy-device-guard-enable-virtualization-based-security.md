@@ -30,7 +30,7 @@ For information about enabling Credential Guard, see [Protect derived domain cre
 
 In addition to the hardware requirements found in [Hardware, firmware, and software requirements for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-device-guard), you must confirm that certain operating system features are enabled before you can enable VBS:
 
-- With Windows 10, version 1607 or Windows Server 2016:<br> 
+- Beginning with Windows 10, version 1607 or Windows Server 2016:<br> 
 Hyper-V Hypervisor, which is enabled automatically. No further action is needed.
 
 - With an earlier version of Windows 10:<br> 
@@ -42,11 +42,7 @@ Hyper-V Hypervisor and Isolated User Mode (shown in Figure 1).
 
 **Figure 1. Enable operating system features for VBS, Windows 10, version 1511**
 
-After you enable the feature or features, you can enable VBS for Device Guard, as described in the following sections.
-
 ## Enable Virtualization Based Security (VBS) and Device Guard
-
-Before you begin this process, verify that the target device meets the hardware and firmware requirements for the features that you want, as described in [Hardware, firmware, and software requirements for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-device-guard). Also, confirm that you have enabled the Windows features discussed in the previous section, [Windows feature requirements for virtualization-based security](#windows-feature-requirements-for-virtualization-based-security-and-device-guard).
 
 There are multiple ways to configure VBS features for Device Guard: 
 
@@ -68,7 +64,7 @@ There are multiple ways to configure VBS features for Device Guard:
 
 3.  Open the Group Policy Management Editor: right-click the new GPO, and then click **Edit**.
 
-4.  Within the selected GPO, navigate to Computer Configuration\\Administrative Templates\\System\\Device Guard. Right-click **Turn On Virtualization Based Security**, and then click **Edit**.
+4.  Within the selected GPO, navigate to Computer Configuration\\Policies\\Administrative Templates\\System\\Device Guard. Right-click **Turn On Virtualization Based Security**, and then click **Edit**.
 
     ![Edit the group policy for Virtualization Based Security](images/dg-fig3-enablevbs.png)
 
