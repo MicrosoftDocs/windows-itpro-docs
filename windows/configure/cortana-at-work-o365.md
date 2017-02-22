@@ -58,7 +58,7 @@ Cortana can only access data in your Office 365 org when it’s turned on. If yo
 **To turn off Cortana with Office 365**
 1.	[Sign in to Office 365](http://www.office.com/signin) using your Azure AD account.
 
-2.	Go to the [Office 365 admin center](https://support.office.com/en-us/article/Office-365-admin-center-58537702-d421-4d02-8141-e128e3703547).
+2.	Go to the [Office 365 admin center](https://support.office.com/article/Office-365-admin-center-58537702-d421-4d02-8141-e128e3703547).
 
 3.	Expand **Service Settings**, and select **Cortana**.
 
