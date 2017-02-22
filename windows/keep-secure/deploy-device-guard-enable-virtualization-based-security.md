@@ -33,7 +33,7 @@ In addition to the hardware requirements found in [Hardware, firmware, and softw
 - With Windows 10, version 1607 or Windows Server 2016:<br> 
 Hyper-V Hypervisor, which is enabled automatically. No further action is needed.
 
-- With an earlier version of Windows 10, or Windows Server 2016 Technical Preview 5 or earlier:<br> 
+- With an earlier version of Windows 10:<br> 
 Hyper-V Hypervisor and Isolated User Mode (shown in Figure 1).
 
 > **Note**&nbsp;&nbsp;You can configure these features by using Group Policy or Deployment Image Servicing and Management, or manually by using Windows PowerShell or the Windows Features dialog box.
@@ -91,7 +91,7 @@ There are multiple ways to configure VBS features for Device Guard:
 
     - With Windows 10, version 1607 or Windows Server 2016, choose an appropriate option:<br>For an initial deployment or test deployment, we recommend **Enabled without lock**.<br>When your deployment is stable in your environment, we recommend changing to **Enabled with lock**. This option helps protect the registry from tampering, either through malware or by an unauthorized person.
 
-    - With earlier versions of Windows 10, or Windows Server 2016 Technical Preview 5 or earlier:<br>Select the **Enable Virtualization Based Protection of Code Integrity** check box.
+    - With earlier versions of Windows 10:<br>Select the **Enable Virtualization Based Protection of Code Integrity** check box.
 
     ![Group Policy, Turn On Virtualization Based Security](images/dg-fig7-enablevbsofkmci.png)
 
@@ -183,7 +183,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformS
 
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "HypervisorEnforcedCodeIntegrity" /t REG_DWORD /d 1 /f
 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v " Unlocked" /t REG_DWORD /d 1 /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Unlocked" /t REG_DWORD /d 1 /f
 ```
 
 If you want to customize the preceding recommended settings, use the following settings.
@@ -211,7 +211,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "HypervisorEnforc
 **To enable virtualization-based protection of Code Integrity policies without UEFI lock**
 
 ``` command
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v " Unlocked" /t REG_DWORD /d 1 /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Unlocked" /t REG_DWORD /d 1 /f
 ```
 
 ### Validate enabled Device Guard hardware-based security features
