@@ -44,12 +44,12 @@ The action takes effect on machines with the latest Windows 10 Insider Preview b
     – **Search box** - select File from the drop–down menu and enter the file name
 
 2.	Open the **Actions menu** and select **Stop & Quarantine File**.
-    ![Image of stop and quarantine file action](images/atp–stop–quarantine–file.png)
+    ![Image of stop and quarantine file action](images/atp-stop-quarantine-file.png)
 
 3. Type a comment (optional), and select **Yes** to take action on the file. The comment will be saved in the Action center for reference.
 
   The Action center shows the submission information:
-    ![Image of stop and quarantine file action center](images/atp–stopnquarantine–file.png)
+    ![Image of stop and quarantine file action center](images/atp-stopnquarantine-file.png)
 
     –	**Submission time** - Shows when the action was submitted.
     –	**Submitting user** - Shows who submitted the action on the file. You can view the comments provided by the user by selecting the information icon.
@@ -62,14 +62,14 @@ The action takes effect on machines with the latest Windows 10 Insider Preview b
 **Notification on machine user**:</br>
 When the file is being removed from an endpoint, the following notification is shown:
 
-![Image of notification on machine user](images/atp–notification–file.png)
+![Image of notification on machine user](images/atp-notification-file.png)
 
 In the machine timeline, a new event is added for each machine where a file was stopped and quarantined.
 
 >[!NOTE]
 >The **Action** button is turned off for files signed by Microsoft as well as trusted third–party publishers to prevent the removal of critical system files and files used by important applications.
 
-![Image of action button turned off](images/atp–file–action.png)
+![Image of action button turned off](images/atp-file-action.png)
 
 For prevalent files in the organization, a warning is shown before an action is implemented to validate that the operation is intended.
 
@@ -101,12 +101,12 @@ This feature is designed to prevent suspected malware (or potentially malicious 
 
 2.	Toggle the setting between **On** and **Off** and select **Save preferences**.
 
-  ![Image of preferences setup](images/atp–preferences–setup.png)
+  ![Image of preferences setup](images/atp-preferences-setup.png)
 
 3. Type a comment (optional) and select **Yes** to take action on the file.
 The Action center shows the submission information:
 
-  ![Image of block file](images/atp–blockfile.png)
+  ![Image of block file](images/atp-blockfile.png)
 
   – **Submission time** - Shows when the action was submitted.
   –	**Submitting user** - Shows who submitted the action on the file. You can view the comments provided by the user by selecting the information icon.
@@ -117,12 +117,12 @@ When the file is blocked, there will be a new event in the machine timeline.</br
 **Notification on machine user**:</br>
 When a file is being blocked on the endpoint, the following notification is displayed to inform the user that the file was blocked:
 
-![Image of notification on machine user](images/atp–notification–file.png)
+![Image of notification on machine user](images/atp-notification-file.png)
 
 >[!NOTE]
 >The **Action** button is turned off for files signed by Microsoft to prevent negative impact on machines in your organization caused by the removal of files that might be related to the operating system.
 
-![Image of action button turned off](images/atp–file–action.png)
+![Image of action button turned off](images/atp-file-action.png)
 
 For prevalent files in the organization, a warning is shown before an action is implemented to validate that the operation is intended.
 
@@ -135,7 +135,7 @@ For prevalent files in the organization, a warning is shown before an action is 
 
 2.	Open the **Actions** menu and select **Remove file from blocked list**.
 
-  ![Image of remove file from blocked list](images/atp–remove–blocked–file.png)
+  ![Image of remove file from blocked list](images/atp-remove-blocked-file.png)
 
 3. Type a comment and select **Yes** to take action on the file. The file will be allowed to run in the organization.
 
@@ -143,7 +143,7 @@ For prevalent files in the organization, a warning is shown before an action is 
 ## Check activity details in Action center
 The  **Action center** provides information on actions that were taken on a machine or file. You’ll be able to view the details on the last action that were taken on a file such as stopped and quarantined files or blocked files.
 
-![Image of action center with information](images/atp–action–center–with–info.png)
+![Image of action center with information](images/atp-action-center-with-info.png)
 
 ## Deep analysis
 Cyber security investigations are typically triggered by an alert. Alerts are related to one or more observed files that are often new or unknown. Clicking a file takes you to the file view where you can see the file's metadata. To enrich the data related to the file, you can submit the file for deep analysis.
@@ -179,7 +179,7 @@ When the sample is collected, Windows Defender ATP runs the file in is a secure 
   – Search box - select **File** from the drop–down menu and enter the file name
 2. In the **Deep analysis** section of the file view, click **Submit**.
 
-![You can only submit PE files in the file details section](images/submit–file.png)
+![You can only submit PE files in the file details section](images/submit-file.png)
 
 >**Note**&nbsp;&nbsp;Only PE files are supported, including _.exe_ and _.dll_ files
 
@@ -203,7 +203,7 @@ The details provided can help you investigate if there are indications of a pote
 1. Select the file you submitted for deep analysis.
 2. Click **See the report below**. Information on the analysis is displayed.
 
-![The deep analysis report shows detailed information across a number of categories](images/analysis–results.png)
+![The deep analysis report shows detailed information across a number of categories](images/analysis-results.png)
 
 ### Troubleshooting deep analysis
 
@@ -221,11 +221,11 @@ HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
   Value = 0 – block sample collection
   Value = 1 – allow sample collection
 ```
-5. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure–endpoints–gp–windows–defender–advanced–threat–protection.md).
+5. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md).
 6. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 > [!NOTE]
 > If the value *AllowSampleCollection* is not available, the client will allow sample collection by default.
 
 ## Related topics
-– [Take response actions on a machine](respond–machine–alerts–windows–defender–advanced–threat–protection.md)
+– [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md)
