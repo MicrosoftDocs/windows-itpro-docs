@@ -15,11 +15,11 @@ localizationpriority: high
 
 **Applies to:**
 
-– Windows 10 Enterprise
-– Windows 10 Education
-– Windows 10 Pro
-– Windows 10 Pro Education
-– Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- Windows 10 Enterprise
+- Windows 10 Education
+- Windows 10 Pro
+- Windows 10 Pro Education
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 <span style="color:#ED1C24;">[Some information relates to pre–released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
