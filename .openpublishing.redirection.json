@@ -113,7 +113,7 @@
     {
         "source_path": "windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services.md",
         "redirect_url": "/itpro/windows/configure/manage-connections-from-windows-operating-system-components-to-microsoft-services",
-        "redirect_document_id": true
+        "redirect_document_id": false
     },
     {
         "source_path": "windows/manage/set-up-a-device-for-anyone-to-use.md",
@@ -603,12 +603,12 @@
     {
         "source_path": "windows/plan/activating-and-closing-windows-in-acm.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true
+        "redirect_document_id": false
     },
     {
         "source_path": "windows/plan/act-lps-share-permissions.md",
         "redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
-        "redirect_document_id": true
+        "redirect_document_id": false
     },
     {
         "source_path": "windows/plan/act-operatingsystem-application-report.md",
