@@ -85,6 +85,13 @@ If you query with RollupLevel="NamePublisher", each version of the application c
 
 ![Name publisher rollup](images/upgrade-analytics-namepub-rollup.png)
 
+>[!TIP]
+>Within the Upgrade Readiness data model, an object of Type **UAApp** refers to a particular application installed on a specific computer.  
+
+>To support dynamic aggregation and summation of data the Upgrade Readiness solution "rolls up" (aggregates) data in preprocessing.  Rolling up to the **Granular** level enables display of the **App** level.  In Upgrade Readiness terminology, an **App** is a unique combination of: app name, app vendor, app version, and app language.  Thus, at the Granular level, you can see attributes such as **total install count**, which is the number of machines with a specific **App** installed.
+
+>Upgrade Readiness also has a roll up level of **NamePublisher**, This level enables you to ignore different app versions within your organization for a particular app.  In other words, **NamePublisher** displays statistics about a given app, aggregated across all versions.
+
 The following table lists possible values for **ReadyForWindows** and what they mean. For more information, see [What does the Adoption Status mean?](https://developer.microsoft.com/en-us/windows/ready-for-windows#/faq/?scrollTo=faqStatuses)
 
 | Ready for Windows Status | Query rollup level | What this means | Guidance |

@@ -11,6 +11,8 @@ This article introduces concepts and steps needed to get up and running with Upg
 
 ## Supported upgrade paths 
 
+### Windows 7 and Windows 8.1
+
 To perform an in-place upgrade, user computers must be running the latest version of either Windows 7 SP1 or Windows 8.1. After you enable Windows telemetry, Upgrade Readiness performs a full inventory of computers so that you can see which version of Windows is installed on each computer.
 
 The compatibility update KB that sends telemetry data from user computers to Microsoft data centers works with Windows 7 SP1 and Windows 8.1 only. Upgrade Readiness cannot evaluate Windows XP or Windows Vista for upgrade eligibility.
@@ -23,6 +25,12 @@ Note: Upgrade Readiness is designed to best support in-place upgrades. In-place 
 
 See [Windows 10 Specifications](http://www.microsoft.com/en-US/windows/windows-10-specifications) for additional information about computer system requirements.
 
+### Windows 10
+
+Keeping Windows 10 up to date involves deploying a feature update, and Upgrade Readiness tools help you prepare and plan for these Windows updates.
+The latest cumulative updates must be installed on Windows 10 computers to make sure that the required compatibility KBs are installed.  You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com). 
+
+
 ## Operations Management Suite
 
 Upgrade Readiness is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing on premise and cloud computing environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/).
@@ -31,7 +39,7 @@ If you’re already using OMS, you’ll find Upgrade Readiness in the Solutions 
 
 If you are not using OMS, go to the [Upgrade Readiness page](https://www.microsoft.com/en-us/WindowsForBusiness/upgrade-analytics) on Microsoft.com and select **Sign up** to kick off the OMS onboarding process. During the onboarding process, you’ll create an OMS workspace and add the Upgrade Readiness solution to it.
 
-Important: You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory, use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
+Important: You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory, use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS. You also need an Azure subscription to link to your OMS workspace.  The account you used to create the workspace must have administrator permissions on the Azure subscription in order to link the workspace to the Azure account.  Once the link has been established, you can revoke the administrator permissions.
 
 ## System Center Configuration Manager integration
 
@@ -47,11 +55,9 @@ See [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields
 
 `https://v10.vortex-win.data.microsoft.com/collect/v1`<BR>
 `https://vortex-win.data.microsoft.com/health/keepalive`<BR>
-`https://settings-win.data.microsoft.com/settings`<BR>
-`https://vortex.data.microsoft.com/health/keepalive`<BR>
 `https://settings.data.microsoft.com/qos`<BR>
 `https://go.microsoft.com/fwlink/?LinkID=544713`<BR>
-`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc/extended`<BR>
+`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc`<BR>
 
 >**Note** The compatibility update KB runs under the computer’s system account and does not support user authentication in this release.
 
