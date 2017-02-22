@@ -32,7 +32,7 @@ A password is transmitted to the server -- it can be intercepted in transmission
 When the PIN is created, it establishes a trusted relationship with the identity provider and creates an asymmetric key pair that is used for authentication. When you enter your PIN, it unlocks the authentication key and uses the key to sign the request that is sent to the authenticating server.
 
 >[!NOTE]
->For details on how Hello uses asymetric key pairs for authentication, see [Microsoft Passport guide](https://go.microsoft.com/fwlink/p/?LinkId=691928).
+>For details on how Hello uses asymetric key pairs for authentication, see [Windows Hello for Business](hello-identity-verification.md#benefits-of-windows-hello).
  
 ## PIN is backed by hardware
 
