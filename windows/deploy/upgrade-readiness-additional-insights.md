@@ -1,20 +1,20 @@
 ---
-title: Upgrade Analytics - Additional insights
-description: Explains additional features of Upgrade Analytics.
+title: Upgrade Readiness - Additional insights
+description: Explains additional features of Upgrade Readiness.
 ms.prod: w10
 author: greg-lindsay
 ---
 
-# Upgrade Analytics - Additional insights
+# Upgrade Readiness - Additional insights
 
-This topic provides information on additional features that are available in Upgrade Analytics to provide insights into your environment. These include:
+This topic provides information on additional features that are available in Upgrade Readiness to provide insights into your environment. These include:
 
 - [Site discovery](#site-discovery): An inventory of web sites that are accessed by client computers running Windows 7 or Windows 8.1 using Internet Explorer.
 - [Office add-ins](#office-add-ins): A list of the Microsoft Office add-ins that are installed on client computers.
 
 ## Site discovery
 
-The site discovery feature in Upgrade Analytics provides an inventory of web sites that are accessed by client computers using Internet Explorer on Windows 8.1 and Windows 7. Site discovery does not include sites that are accessed using other Web browsers, such as Microsoft Edge. Site inventory information is provided as optional data related to upgrading to Windows 10 and Internet Explorer 11, and is meant to help prioritize compatibility testing for web applications. You can make more informed decisions about testing based on usage data.
+The site discovery feature in Upgrade Readiness provides an inventory of web sites that are accessed by client computers using Internet Explorer on Windows 8.1 and Windows 7. Site discovery does not include sites that are accessed using other Web browsers, such as Microsoft Edge. Site inventory information is provided as optional data related to upgrading to Windows 10 and Internet Explorer 11, and is meant to help prioritize compatibility testing for web applications. You can make more informed decisions about testing based on usage data.
 
 > Note: Site discovery data is disabled by default; you can find documentation on what is collected in the [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965). After you turn on this feature, data is collected on all sites visited by Internet Explorer, except during InPrivate sessions. In addition, the data collection process is silent, without notification to the employee. You are responsible for ensuring that your use of this feature complies with all applicable local laws and regulatory requirements, including any requirements to provide notice to employees.
 
@@ -24,7 +24,7 @@ Ensure the following prerequisites are met before using site discovery:
 
 1. Install the latest [Windows Monthly Rollup](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup). This functionality has been included in Internet Explorer 11 starting with the July 2016 Cumulative Update. 
 2. Install the update for customer experience and diagnostic telemetery ([KB3080149](https://support.microsoft.com/kb/3080149)).
-3. Enable Internet Explorer data collection, which is disabled by default. The best way to enable it is to modify the [Upgrade Analytics deployment script](upgrade-analytics-deployment-script.md) to allow Internet Explorer data collection before you run it. 
+3. Enable Internet Explorer data collection, which is disabled by default. The best way to enable it is to modify the [Upgrade Readiness deployment script](upgrade-readiness-deployment-script.md) to allow Internet Explorer data collection before you run it. 
 
     If necessary, you can also enable it by creating the following registry entry. 
 
@@ -78,4 +78,4 @@ Office add-ins provides a list of the Microsoft Office add-ins in your environme
 
 ## Related topics
 
-[Upgrade Analytics release notes](upgrade-analytics-release-notes.md)
+[Upgrade Readiness release notes](upgrade-readiness-release-notes.md)

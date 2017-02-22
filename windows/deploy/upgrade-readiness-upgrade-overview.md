@@ -1,13 +1,13 @@
 ﻿---
-title: Upgrade Analytics - Upgrade Overview (Windows 10)
+title: Upgrade Readiness - Upgrade Overview (Windows 10)
 description: Displays the total count of computers sharing data and upgraded.
 ms.prod: w10
 author: greg-lindsay
 ---
 
-# Upgrade Analytics - Upgrade overview
+# Upgrade Readiness - Upgrade overview
 
-The first blade in the Upgrade Analytics solution is the upgrade overview blade. This blade displays the total count of computers sharing data with Microsoft, and the count of computers upgraded. As you successfully upgrade computers, the count of computers upgraded increases.
+The first blade in the Upgrade Readiness solution is the upgrade overview blade. This blade displays the total count of computers sharing data with Microsoft, and the count of computers upgraded. As you successfully upgrade computers, the count of computers upgraded increases.
 
 The upgrade overivew blade displays data refresh status, including the date and time of the most recent data update and whether user changes are reflected. The following status changes are reflected on the upgrade overview blade:
 

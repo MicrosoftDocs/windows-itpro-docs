@@ -1,11 +1,11 @@
 ﻿---
-title: Upgrade Analytics - Get a list of computers that are upgrade-ready (Windows 10)
-description: Describes how to get a list of computers that are ready to be upgraded in Upgrade Analytics.
+title: Upgrade Readiness - Get a list of computers that are upgrade-ready (Windows 10)
+description: Describes how to get a list of computers that are ready to be upgraded in Upgrade Readiness.
 ms.prod: w10
 author: greg-lindsay
 ---
 
-# Upgrade Analytics - Step 3: Deploy Windows
+# Upgrade Readiness - Step 3: Deploy Windows
 
 All of your work up to now involved reviewing and resolving application and driver issues. Along the way, as you’ve resolved issues and decided which applications and drivers are ready to upgrade, you’ve been building a list of computers that are upgrade ready. 
 The blades in the **Deploy** section are:
@@ -36,7 +36,7 @@ Select **Export computers** for more details, including computer name, manufactu
 
 Computer groups allow you to segment your environment by creating device groups based on OMS log search results, or by importing groups from Active Directory, WSUS or System Center Configuration Manager. Computer groups are an OMS feature. For more information, see [Computer groups in OMS](https://blogs.technet.microsoft.com/msoms/2016/04/04/computer-groups-in-oms/).
 
-Query based computer groups are recommended in the initial release of this feature. A feature known as **Configuration Manager Upgrade Analytics Connector** is anticipated in a future release that will enable synchronization of **ConfigMgr Collections** with computer groups in OMS.
+Query based computer groups are recommended in the initial release of this feature. A feature known as **Configuration Manager Upgrade Readiness Connector** is anticipated in a future release that will enable synchronization of **ConfigMgr Collections** with computer groups in OMS.
 
 ### Getting started with Computer Groups
 
@@ -62,7 +62,7 @@ This will ensure every computer only shows up once. Then, save your group by cli
 
 ![Computer groups](images/ua-cg-03.png)
 
-Your new computer group will now be available in Upgrade Analytics. See the following example:
+Your new computer group will now be available in Upgrade Readiness. See the following example:
 
 ![Computer groups](images/ua-cg-04.png)
 

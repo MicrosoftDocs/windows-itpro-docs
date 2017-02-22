@@ -1,13 +1,13 @@
 ﻿---
-title: Upgrade Analytics - Identify important apps (Windows 10)
-description: Describes how to prepare your environment so that you can use Upgrade Analytics to manage Windows upgrades.
+title: Upgrade Readiness - Identify important apps (Windows 10)
+description: Describes how to prepare your environment so that you can use Upgrade Readiness to manage Windows upgrades.
 ms.prod: w10
 author: greg-lindsay
 ---
 
-# Upgrade Analytics - Step 1: Identify important apps
+# Upgrade Readiness - Step 1: Identify important apps
 
-This is the first step of the Upgrade Analytics workflow. In this step, applications are listed and grouped by importance level. Setting the importance level enables you to prioritize applications for upgrade.
+This is the first step of the Upgrade Readiness workflow. In this step, applications are listed and grouped by importance level. Setting the importance level enables you to prioritize applications for upgrade.
 
 <!-- PRESERVING ORIGINAL IMAGE CODING JUST IN CASE
 <img src="media/image5.png" width="213" height="345" />

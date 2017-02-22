@@ -1,6 +1,6 @@
 ---
-title: Get started with Upgrade Analytics (Windows 10)
-description: Explains how to get started with Upgrade Analytics.
+title: Get started with Upgrade Readiness (Windows 10)
+description: Explains how to get started with Upgrade Readiness.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -8,25 +8,25 @@ ms.pagetype: deploy
 author: greg-lindsay
 ---
 
-# Get started with Upgrade Analytics
+# Get started with Upgrade Readiness
 
-This topic explains how to obtain and configure Upgrade Analytics for your organization. 
+This topic explains how to obtain and configure Upgrade Readiness for your organization. 
 
-You can use Upgrade Analytics to plan and manage your upgrade project end-to-end. Upgrade Analytics works by establishing communications between computers in your organization and Microsoft. Upgrade Analytics collects computer, application, and driver data for analysis. This data is used to identify compatibility issues that can block your upgrade and to suggest fixes that are known to Microsoft.
+You can use Upgrade Readiness to plan and manage your upgrade project end-to-end. Upgrade Readiness works by establishing communications between computers in your organization and Microsoft. Upgrade Readiness collects computer, application, and driver data for analysis. This data is used to identify compatibility issues that can block your upgrade and to suggest fixes that are known to Microsoft.
 
 Before you begin, consider reviewing the following helpful information:<BR>
-    - [Upgrade Analytics requirements](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-requirements): Provides detailed requirements to use Upgrade Analytics.<BR>
-    - [Upgrade Analytics blog](https://blogs.technet.microsoft.com/UpgradeAnalytics): Contains announcements of new features and provides helpful tips for using Upgrade Analytics.
+    - [Upgrade Readiness requirements](https://technet.microsoft.com/itpro/windows/deploy/upgrade-readiness-requirements): Provides detailed requirements to use Upgrade Readiness.<BR>
+    - [Upgrade Readiness blog](https://blogs.technet.microsoft.com/UpgradeAnalytics): Contains announcements of new features and provides helpful tips for using Upgrade Readiness.
 
->If you are using System Center Configuration Manager, also check out information about how to integrate Upgrade Analytics with Configuration Manager: [Integrate Upgrade Analytics with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
+>If you are using System Center Configuration Manager, also check out information about how to integrate Upgrade Readiness with Configuration Manager: [Integrate Upgrade Readiness with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
 
-When you are ready to begin using Upgrade Analytics, perform the following steps:
+When you are ready to begin using Upgrade Readiness, perform the following steps:
 
 1. Review [data collection and privacy](#data-collection-and-privacy) information.
-2. [Add Upgrade Analytics to OMS](#add-upgrade-analytics-to-operations-management-suite).
+2. [Add Upgrade Readiness to OMS](#add-upgrade-readiness-to-operations-management-suite).
 3. [Enable data sharing](#enable-data-sharing).
 4. [Deploy required updates](#deploy-the-compatibility-update-and-related-kbs) to computers, and validate using a pilot deployment.
-5. [Deploy Upgrade Analytics at scale](#deploy-upgrade-analytics-at-scale).
+5. [Deploy Upgrade Readiness at scale](#deploy-upgrade-readiness-at-scale).
 
 ## Data collection and privacy 
 
@@ -36,24 +36,24 @@ To enable system, application, and driver data to be shared with Microsoft, you 
 - [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 - [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
 
-## Add Upgrade Analytics to Operations Management Suite
+## Add Upgrade Readiness to Operations Management Suite
 
-Upgrade Analytics is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing your on-premises and cloud environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
+Upgrade Readiness is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing your on-premises and cloud environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
 
-If you are already using OMS, you’ll find Upgrade Analytics in the Solutions Gallery. Select the **Upgrade Analytics** tile in the gallery and then click **Add** on the solution's details page. Upgrade Analytics is now visible in your workspace.
+If you are already using OMS, you’ll find Upgrade Readiness in the Solutions Gallery. Select the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution's details page. Upgrade Readiness is now visible in your workspace.
 
 If you are not using OMS:
 
-1.  Go to the [Upgrade Analytics page on Microsoft.com](https://go.microsoft.com/fwlink/?LinkID=799190&clcid=0x409) and click **Sign up** to kick off the onboarding process.
+1.  Go to the [Upgrade Readiness page on Microsoft.com](https://go.microsoft.com/fwlink/?LinkID=799190&clcid=0x409) and click **Sign up** to kick off the onboarding process.
 2.  Sign in to Operations Management Suite (OMS). You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
 3.  Create a new OMS workspace. Enter a name for the workspace, select the workspace region, and provide the email address that you want associated with this workspace. Select **Create**.
 4.  If your organization already has an Azure subscription, you can link it to your workspace. Note that you may need to request access from your organization’s Azure administrator.
 
     > If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. Your workspace opens.
 
-1.  To add the Upgrade Analytics solution to your workspace, go to the **Solutions Gallery**. Select the **Upgrade Analytics** tile in the gallery and then select **Add** on the solution’s details page. The solution is now visible on your workspace. Note that you may need to scroll to find Upgrade Analytics.
+1.  To add the Upgrade Readiness solution to your workspace, go to the **Solutions Gallery**. Select the **Upgrade Readiness** tile in the gallery and then select **Add** on the solution’s details page. The solution is now visible on your workspace. Note that you may need to scroll to find Upgrade Readiness.
 
-2.  Click the **Upgrade Analytics** tile to configure the solution. The **Settings Dashboard** opens.
+2.  Click the **Upgrade Readiness** tile to configure the solution. The **Settings Dashboard** opens.
 
 ### Generate your commercial ID key
 
@@ -61,19 +61,19 @@ Microsoft uses a unique commercial ID to map information from user computers to 
 
 1.  On the Settings Dashboard, navigate to the **Windows telemetry** panel.
 
-    ![upgrade-analytics-telemetry](images/upgrade-analytics-telemetry.png)
+    ![upgrade-readiness-telemetry](images/upgrade-analytics-telemetry.png)
 
-2. On the Windows telemetry panel, copy and save your commercial ID key. You’ll need to insert this key into the Upgrade Analytics deployment script later so it can be deployed to user computers.
+2. On the Windows telemetry panel, copy and save your commercial ID key. You’ll need to insert this key into the Upgrade Readiness deployment script later so it can be deployed to user computers.
 
     >**Important**<br> Regenerate a commercial ID key only if your original ID key can no longer be used. Regenerating a commercial ID key resets the data in your workspace for all solutions that use the ID. Additionally, you’ll need to deploy the new commercial ID key to user computers again.
 
-### Subscribe to Upgrade Analytics
+### Subscribe to Upgrade Readiness
 
-For Upgrade Analytics to receive and display upgrade readiness data from Microsoft, subscribe your OMS workspace to Upgrade Analytics.
+For Upgrade Readiness to receive and display upgrade readiness data from Microsoft, subscribe your OMS workspace to Upgrade Readiness.
 
-1.  On the **Windows telemetry** panel, click **Subscribe**. The button changes to **Unsubscribe**. Unsubscribe from the Upgrade Analytics solution if you no longer want to receive upgrade-readiness information from Microsoft. Note that user computer data will continue to be shared with Microsoft for as long as the opt-in keys are set on user computers and the proxy allows the traffic.
+1.  On the **Windows telemetry** panel, click **Subscribe**. The button changes to **Unsubscribe**. Unsubscribe from the Upgrade Readiness solution if you no longer want to receive upgrade-readiness information from Microsoft. Note that user computer data will continue to be shared with Microsoft for as long as the opt-in keys are set on user computers and the proxy allows the traffic.
 
-1.  Click **Overview** on the Settings Dashboard to return to your OMS workspace portal. The Upgrade Analytics tile now displays summary data. Click the tile to open Upgrade Analytics.
+1.  Click **Overview** on the Settings Dashboard to return to your OMS workspace portal. The Upgrade Readiness tile now displays summary data. Click the tile to open Upgrade Readiness.
 
 ## Enable data sharing
 
@@ -103,17 +103,17 @@ If you are planning to enable IE Site Discovery, you will need to install a few 
 
 | **Site discovery** | **KB** |
 |----------------------|-----------------------------------------------------------------------------|
-| [Review site discovery](upgrade-analytics-review-site-discovery.md)         | [KB3080149](http://www.catalog.update.microsoft.com/Search.aspx?q=3080149)<br>Updates the Diagnostic and Telemetry tracking service to existing devices. This update is only necessary on Windows 7 and Windows 8.1 devices. <br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br><br>Install the latest [Windows Monthly Rollup](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup). This functionality has been included in Internet Explorer 11 starting with the July 2016 Cumulative Update.  |
+| [Review site discovery](upgrade-readiness-review-site-discovery.md)         | [KB3080149](http://www.catalog.update.microsoft.com/Search.aspx?q=3080149)<br>Updates the Diagnostic and Telemetry tracking service to existing devices. This update is only necessary on Windows 7 and Windows 8.1 devices. <br>For more information about this KB, see <https://support.microsoft.com/kb/3150513><br><br>Install the latest [Windows Monthly Rollup](http://catalog.update.microsoft.com/v7/site/Search.aspx?q=security%20monthly%20quality%20rollup). This functionality has been included in Internet Explorer 11 starting with the July 2016 Cumulative Update.  |
 
-### Deploy the Upgrade Analytics deployment script
+### Deploy the Upgrade Readiness deployment script
 
-You can use the Upgrade Analytics deployment script to automate and verify your deployment. 
+You can use the Upgrade Readiness deployment script to automate and verify your deployment. 
 
-See [Upgrade Analytics deployment script](upgrade-analytics-deployment-script.md) for information on obtaining and running the script, and for a description of the error codes that can be displayed.
+See [Upgrade Readiness deployment script](upgrade-readiness-deployment-script.md) for information on obtaining and running the script, and for a description of the error codes that can be displayed.
 
->After data is sent from computers to Microsoft, it generally takes 48 hours for the data to populate in Upgrade Analytics. The compatibility update KB takes several minutes to run. If the KB does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Upgrade Analytics. For this reason, you can expect most your computers to be populated in OMS in about 1-2 weeks after deploying the KB and configuration to user computers.
+>After data is sent from computers to Microsoft, it generally takes 48 hours for the data to populate in Upgrade Readiness. The compatibility update KB takes several minutes to run. If the KB does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Upgrade Readiness. For this reason, you can expect most your computers to be populated in OMS in about 1-2 weeks after deploying the KB and configuration to user computers.
 
-## Deploy Upgrade Analytics at scale
+## Deploy Upgrade Readiness at scale
 
 When you have completed a pilot deployment, you are ready to automate data collection and distribute the deployment script to the remaining computers in your organization.
 
@@ -122,9 +122,9 @@ When you have completed a pilot deployment, you are ready to automate data colle
 To ensure that user computers are receiving the most up to date data from Microsoft, we recommend that you establish the following data sharing and analysis processes.
 
 - Enable automatic updates for the compatibility update and related KBs. These KBs are updated frequently to include the latest application and driver issue information as we discover it during testing.
-- Schedule the Upgrade Analytics deployment script to automatically run so that you don’t have to manually initiate an inventory scan each time the compatibility update KBs are updated. Computers are re-scanned only when the compatibility KBs are updated, so if your inventory changes significantly between KB releases you won’t see the changes in Upgrade Analytics until you run the script again.
+- Schedule the Upgrade Readiness deployment script to automatically run so that you don’t have to manually initiate an inventory scan each time the compatibility update KBs are updated. Computers are re-scanned only when the compatibility KBs are updated, so if your inventory changes significantly between KB releases you won’t see the changes in Upgrade Readiness until you run the script again.
 - Schedule monthly user computer scans to view monthly active computer and usage information.
 
 ### Distribute the deployment script at scale
 
-Use a software distribution system such as System Center Configuration Manager to distribute the Upgrade Analytics deployment script at scale. For more information, see the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/).
+Use a software distribution system such as System Center Configuration Manager to distribute the Upgrade Readiness deployment script at scale. For more information, see the [Upgrade Readiness blog](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/).

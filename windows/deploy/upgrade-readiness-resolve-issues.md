@@ -1,13 +1,13 @@
 ﻿---
-title: Upgrade Analytics - Resolve application and driver issues (Windows 10)
-description: Describes how to resolve application and driver issues that can occur during an upgrade with Upgrade Analytics.
+title: Upgrade Readiness - Resolve application and driver issues (Windows 10)
+description: Describes how to resolve application and driver issues that can occur during an upgrade with Upgrade Readiness.
 ms.prod: w10
 author: greg-lindsay
 ---
 
-# Upgrade Analytics - Step 2: Resolve app and driver issues
+# Upgrade Readiness - Step 2: Resolve app and driver issues
 
-This section of the Upgrade Analytics workflow reports application and driver inventory and shows you which applications have known issues, which applications have no known issues, and which drivers have issues. We identify applications and drivers that need attention and suggest fixes when we know about them.
+This section of the Upgrade Readiness workflow reports application and driver inventory and shows you which applications have known issues, which applications have no known issues, and which drivers have issues. We identify applications and drivers that need attention and suggest fixes when we know about them.
 
 You can change an application’s upgrade decision and a driver’s upgrade decision from the blades in this section. To change an application’s or a driver’s importance level, select **User changes**. Select the item you want to change and then select the appropriate option from the **Select upgrade decision** list.
 
