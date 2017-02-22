@@ -98,7 +98,7 @@ The following tables provide more information about the hardware, firmware, and 
 | Hardware: **Trusted Platform Module (TPM)**  |  **Requirement**: TPM 1.2 or TPM 2.0, either discrete or firmware.<br><br>**Security benefits**: A TPM provides protection for VBS encryption keys that are stored in the firmware. This helps protect against attacks involving a physically present user with BIOS access. |
 | Firmware: **UEFI firmware version 2.3.1.c or higher with UEFI Secure Boot** | **Requirements**: See the following Windows Hardware Compatibility Program requirement: [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot)<br><br>**Security benefits**: UEFI Secure Boot helps ensure that the device boots only authorized code. This can prevent boot kits and root kits from installing and persisting across reboots.  |
 | Firmware: **Secure firmware update process**      | **Requirements**: UEFI firmware must support secure firmware update found under the following Windows Hardware Compatibility Program requirement: [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot).<br><br>**Security benefits**: UEFI firmware just like software can have security vulnerabilities that, when found, need to be patched through firmware updates. Patching helps prevent root kits from getting installed. |
-| Software: Qualified **Windows operating system**  | **Requirement**: Windows 10 Enterprise, Windows 10 Education, Windows 2016 Server, or Windows Enterprise IoT<br><blockquote><p><strong>Important:</strong><br> Windows Server 2016 running as a domain controller does not support Credential Guard. Only Device Guard is supported in this configuration.</p></blockquote><br>**Security benefits**: Support for VBS and for management features that simplify configuration of Credential Guard. |
+| Software: Qualified **Windows operating system**  | **Requirement**: Windows 10 Enterprise, Windows 10 Education, Windows Server 2016, or Windows 10 IoT Enterprise<br><blockquote><p><strong>Important:</strong><br> Windows Server 2016 running as a domain controller does not support Credential Guard. Only Device Guard is supported in this configuration.</p></blockquote><br>**Security benefits**: Support for VBS and for management features that simplify configuration of Credential Guard. |
 
 > [!IMPORTANT]
 > The preceding table lists requirements for baseline protections. The following tables list requirements for improved security. You can use Credential Guard with hardware, firmware, and software that support baseline protections, even if they do not support protections for improved security. However, we strongly recommend meeting the requirements for improved security to significantly strengthen the level of security that Credential Guard can provide.
@@ -126,11 +126,14 @@ The following tables provide more information about the hardware, firmware, and 
 
 <br>
 
-#### 2017 Additional Security Recommendations (starting with the next major release of Windows 10) 
+#### 2017 Additional security requirements starting with Windows 10, version 1703 
+
+The following table lists requirements for Windows 10, version 1703, which are in addition to all preceding requirements. 
 
 | Protection for Improved Security          | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
-| Firmware: **Firmware support for SMM protection** | **Requirements**: The [Windows SMM Security Mitigations Table (WSMT) specification](http://download.microsoft.com/download/1/8/A/18A21244-EB67-4538-BAA2-1A54E0E490B6/WSMT.docx) contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features.<br><br>**Security benefits**:<br>- Protects against potential vulnerabilities in UEFI runtime in functions such as Update Capsule, Set Variables, and so on, so they can't compromise VBS.<br>- Reduces attack surface to VBS from system firmware.<br>- Blocks additional security attacks against SMM. |
+| Firmware: **VBS enablement of NX protection for UEFI runtime services** | **Requirements**:<br>- VBS will enable No-Execute (NX) protection on UEFI runtime service code and data memory regions. UEFI runtime service code must support read-only page protections, and UEFI runtime service data must not be exceutable.<br>- UEFI runtime service must meet these requirements: <br>&nbsp;&nbsp;&nbsp;&nbsp;- Implement UEFI 2.6 EFI_MEMORY_ATTRIBUTES_TABLE. All UEFI runtime service memory (code and data) must be described by this table. <br>&nbsp;&nbsp;&nbsp;&nbsp;- PE sections need to be page-aligned in memory (not required for in non-volitile storage).<br>&nbsp;&nbsp;&nbsp;&nbsp;- The Memory Attributes Table needs to correctly mark code and data as RO/NX for configuration by the OS:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- All entries must include attributes EFI_MEMORY_RO, EFI_MEMORY_XP, or both <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- No entries may be left with neither of the above attributes, indicating memory that is both exceutable and writable. Memory must be either readable and executable or writeable and non-executable. <br><blockquote><p><strong>Notes:</strong><br>- This only applies to UEFI runtime service memory, and not UEFI boot service memory. <br>- This protection is applied by VBS on OS page tables.</p></blockquote><br> Please also note the following: <br>- Do not use sections that are both writeable and exceutable<br>- Do not attempt to directly modify executable system memory<br>- Do not use dynamic code<br><br>**Security benefits**:<br>- Vulnerabilities in UEFI runtime, if any, will be blocked from compromising VBS (such as in functions like UpdateCapsule and SetVariable)<br>- Reduces the attack surface to VBS from system firmware.     |
+| Firmware: **Firmware support for SMM protection** | **Requirements**: The [Windows SMM Security Mitigations Table (WSMT) specification](http://download.microsoft.com/download/1/8/A/18A21244-EB67-4538-BAA2-1A54E0E490B6/WSMT.docx) contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features.<br><br>**Security benefits**:<br>- Protects against potential vulnerabilities in UEFI runtime services, if any, will be blocked from compromising VBS (such as in functions like UpdateCapsule and SetVariable)<br>- Reduces the attack surface to VBS from system firmware.<br>- Blocks additional security attacks against SMM. |
 
 ## Manage Credential Guard
 
@@ -178,11 +181,11 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 
 1.  Open an elevated command prompt.
 2.  Add the Hyper-V Hypervisor by running the following command:
-    ``` syntax
+    ```
     dism /image:<WIM file name> /Enable-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /all
     ```
 3. Add the Isolated User Mode feature by running the following command:
-    ``` syntax
+    ```
     dism /image:<WIM file name> /Enable-Feature /FeatureName:IsolatedUserMode
     ```
 
@@ -211,7 +214,7 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 You can also enable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v2.0.ps1 -Enable -AutoReboot
+DG_Readiness_Tool_v3.0.ps1 -Enable -AutoReboot
 ```
 
 #### Credential Guard deployment in virtual machines
@@ -280,7 +283,7 @@ For more info on virtualization-based security and Device Guard, see [Device Gua
 You can also disable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v2.0.ps1 -Disable -AutoReboot
+DG_Readiness_Tool_v3.0.ps1 -Disable -AutoReboot
 ```
  
 ### Check that Credential Guard is running
@@ -298,7 +301,7 @@ You can use System Information to ensure that Credential Guard is running on a P
 You can also check that Credential Guard is running by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v2.0.ps1 -Ready
+DG_Readiness_Tool_v3.0.ps1 -Ready
 ```
     
 ## Considerations when using Credential Guard
