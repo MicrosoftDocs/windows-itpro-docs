@@ -20,8 +20,6 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
-
 1. In the navigation pane, select **Preferences setup** > **Advanced features**.
 2. Select the advanced feature you want to configure and toggle the setting between **On** and **Off**.
 3. Click **Save preferences**.

@@ -89,14 +89,14 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
   ![Click the settings icon and then Suppression rules to create and modify rules](images/atp-suppression-rules.png)
 
 The list of suppression rules shows all the rules that users in your organization have created.
+![Suppression rules show the rule name or title, the context, the date, and an icon to delete the rule](images/rules-legend.png)
+
 Each rule shows:
 
 - (1) The title of the alert that is suppressed
 - (2) Whether the alert was suppressed for a single machine (clicking the machine name will allow you to investigate the machine) or the entire organization
 - (3) The date when the alert was suppressed
 - (4) An option to delete the suppression rule, which will cause alerts with this title to be displayed in the queue from this point onwards.
-
-![Suppression rules show the rule name or title, the context, the date, and an icon to delete the rule](images/rules-legend.png)
 
 
 ## Related topics
