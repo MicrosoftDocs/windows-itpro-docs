@@ -30,7 +30,7 @@ Windows Configuration Designer in Windows 10, version 1703, includes several new
 
 ### Lockdown Designer app
 
-The Lockdown Designer app helps you configure and create your lockdown XML file, and includes a remote simulation to help you determine the layout for tiles on the Start screen. Using Lockdown Designer is easier than [manually creating a lockdown XML file](lockdown-xml.md).
+The Lockdown Designer app helps you configure and create your lockdown XML file, and includes a remote simulation to help you determine the layout for tiles on the Start screen. Using Lockdown Designer is easier than [manually creating a lockdown XML file](../configure/lockdown-xml.md).
 
 ![Lockdown Designer app in Store](images/ldstore.png)
 
