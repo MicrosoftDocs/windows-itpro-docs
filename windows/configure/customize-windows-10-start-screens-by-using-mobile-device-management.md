@@ -10,7 +10,7 @@ author: jdeckerMS
 localizationpriority: medium
 ---
 
-# Customize Windows 10 Start and taskbarwith mobile device management (MDM)
+# Customize Windows 10 Start and taskbar with mobile device management (MDM)
 
 
 **Applies to**
