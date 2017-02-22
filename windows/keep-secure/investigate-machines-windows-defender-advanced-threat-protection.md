@@ -55,7 +55,7 @@ Clicking on the number of total logged on users in the Logged on user tile opens
 
 You'll also see details such as logon types for each user account, the user group, and when the account was logged in.
 
- For more information, see [Investigate user entities](investigate-user-entity-windows-defender-advanced-threat-protection.md).
+ For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
 
 The **Alerts related to this machine** section provides a list of alerts that are associated with the machine. This list is a simplified version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows the date when the last activity was detected, a short description of the alert, the user associated with the alert, the alert's severity, the alert's status in the queue, and who is addressing the alert.
 

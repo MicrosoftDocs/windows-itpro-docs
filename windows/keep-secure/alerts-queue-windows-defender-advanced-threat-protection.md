@@ -108,7 +108,7 @@ Select multiple alerts (Ctrl or Shift select) and manage or edit alerts together
 
 ![Alerts queue bulk edit](images/alerts-q-bulk.png)
 
-### Related topics
+## Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
