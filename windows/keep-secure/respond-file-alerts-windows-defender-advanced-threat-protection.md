@@ -1,4 +1,4 @@
-–––
+---
 title: Take response actions on a file in Windows Defender Advanced Threat Protection
 description: Take response actions on file related alerts by stopping and quarantining a file or blocking a file and checking activity details.
 keywords: respond, stop and quarantine, block file, deep analysis
@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-–––
+---
 
 # Take response actions on a file
 
@@ -179,7 +179,7 @@ When the sample is collected, Windows Defender ATP runs the file in is a secure 
   – Search box - select **File** from the drop–down menu and enter the file name
 2. In the **Deep analysis** section of the file view, click **Submit**.
 
-![You can only submit PE files in the file details seciton](images/submit–file.png)
+![You can only submit PE files in the file details section](images/submit–file.png)
 
 >**Note**&nbsp;&nbsp;Only PE files are supported, including _.exe_ and _.dll_ files
 
