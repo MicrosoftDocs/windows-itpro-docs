@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Fix unhealthy sensors
+# Fix unhealthy sensors in Windows Defender ATP
 
 **Applies to:**
 
@@ -75,3 +75,6 @@ If the endpoints aren't reporting correctly, you might need to check that the Wi
 If your endpoints are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled.
 
 If you took corrective actions and the machine status is still misconfigured, [open a support ticket](http://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
+
+## Related topic
+- [Check sensor health state in Windows Defender ATP](check-sensor-status-windows-defender-advanced-threat-protection.md)

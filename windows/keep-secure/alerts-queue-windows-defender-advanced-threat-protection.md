@@ -45,7 +45,7 @@ You can sort and filter the alerts by using the available filters or clicking co
 Highlighted area|Area name|Description
 :---|:---|:---
 1 | Alert filters | Filter the list of alerts by severity, detection source, time period, or change the view from flat to grouped.
-2 | Alert selected | Select an alert to bring up the **Alert management pane** to manage and see details about the alert.
+2 | Alert selected | Select an alert to bring up the **Alert management** to manage and see details about the alert.
 3 | Alert management pane | View and manage alerts without leaving the alerts queue view.
 
 ### Sort, filter, and group the alerts list

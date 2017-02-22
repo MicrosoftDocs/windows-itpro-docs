@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Check sensor health state
+# Check sensor health state in Windows Defender ATP
 
 **Applies to:**
 
@@ -52,4 +52,4 @@ In the **Machines view**, you can download a full list of all the machines in yo
 >Export the list in CSV format to display the unfiltered data. The CSV file will include all machines in the organization, regardless of any filtering applied in the view itself and can take a significant amount of time to download, depending on how large your organization is.
 
 ## Related topics
-- [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
+- [Fix unhealthy sensors in Windows Defender ATP](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)

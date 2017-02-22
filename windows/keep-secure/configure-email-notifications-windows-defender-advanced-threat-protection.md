@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Configure email notifications
+# Configure email notifications in Windows Defender ATP
 
 **Applies to:**
 
@@ -61,3 +61,8 @@ This section lists various issues that you may encounter when using email notifi
 1.	Check that the Windows Defender ATP email notifications are not sent to the Junk Email folder. Mark them as Not junk.
 2.	Check that your email security product is not blocking the email notifications from Windows Defender ATP.
 3.	Check your email application rules that might be catching and moving your Windows Defender ATP email notifications.
+
+## Related topics
+- [Update general settings in Windows Defender ATP](general-settings-windows-defender-advanced-threat-protection.md)
+- [Turn on advanced features in Windows Defender ATP](advanced-features-windows-defender-advacned-threat-protection.md)
+- [Turn on the preview experience in Windows Defender ATP](preview-settings-windows-defender-advanced-threat-protection.md)

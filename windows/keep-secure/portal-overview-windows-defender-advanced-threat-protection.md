@@ -67,5 +67,5 @@ Icon | Description
 ![Thunderbolt icon](images/atp-thunderbolt-icon.png) | Indicates events that triggered an alert in the **Alert process tree**.
 
 
-### Related topic
+## Related topic
 [Use the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)

@@ -27,6 +27,6 @@ localizationpriority: high
 3. Click **Save preferences**.
 
 ## Related topics
-- [Update general settings](general-settings-windows-defender-advanced-threat-protection.md)
-- [Turn on the preview experience](preview-settings-windows-defender-advanced-threat-protection.md)
-- [Configure email notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
+- [Update general settings in Windows Defender ATP](general-settings-windows-defender-advanced-threat-protection.md)
+- [Turn on the preview experience in Windows Defender ATP](preview-settings-windows-defender-advanced-threat-protection.md)
+- [Configure email notifications in Windows Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)

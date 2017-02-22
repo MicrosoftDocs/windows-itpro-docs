@@ -99,7 +99,7 @@ Each rule shows:
 ![Suppression rules show the rule name or title, the context, the date, and an icon to delete the rule](images/rules-legend.png)
 
 
-### Related topics
+## Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)

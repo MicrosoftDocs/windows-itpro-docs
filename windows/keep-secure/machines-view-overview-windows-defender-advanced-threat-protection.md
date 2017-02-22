@@ -42,7 +42,6 @@ You can also download the entire list in CSV format using the **Export to CSV** 
 
 ![Image of machines view with list of machines](images/atp-machines-view-list.png)
 
-### Filter the Machines view
 You can use the following filters to limit the list of machines displayed during an investigation:
 
 **Time period**</br>
@@ -74,7 +73,7 @@ You can  download a full list of all the machines in your organization, in CSV f
 **Note**: Exporting the list depends on the number of machines in your organization. It might take a significant amount of time to download, depending on how large your organization is.
 Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all machines in the organization, regardless of any filtering applied in the view itself.
 
-### Sort the Machines view
+## Sort the Machines view
 You can sort the **Machines view** by the following columns:
 
 - **Machine name** - Name or GUID of the machine
@@ -88,7 +87,7 @@ You can sort the **Machines view** by the following columns:
 > The **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](windows-defender-in-windows-10.md) as the active real-time protection antimalware product.
 
 
-### Related topics
+## Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
