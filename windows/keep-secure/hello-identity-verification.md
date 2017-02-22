@@ -115,8 +115,6 @@ Windows Hello for Business can use either keys (hardware or software) or certifi
 
 [Authenticating identities without passwords through Microsoft Passport](https://go.microsoft.com/fwlink/p/?LinkId=616778)
 
-[Microsoft Passport guide](https://go.microsoft.com/fwlink/p/?LinkId=691928)
-
 ## Related topics
 
 - [How Windows Hello for Business works](hello-how-it-works.md)
