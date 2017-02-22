@@ -93,7 +93,7 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
 
 >[!NOTE]
->This feature is only available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled.  For more information, see [Manage cloud–based protection](configure–windows–defender–in–windows–10.md). </br></br>
+>This feature is only available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled.  For more information, see [Manage cloud–based protection](configure-windows-defender-in-windows-10.md). </br></br>
 This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. The coverage will be extended over time. The action takes effect on machines with the latest Windows 10 Insider Preview build.
 
 ### Enable the block file feature
