@@ -23,7 +23,7 @@ A provisioning package (.ppkg) is a container for a collection of configuration 
 
 Provisioning packages are simple enough that with a short set of written instructions, a student or non-technical employee can use them to configure their device. This can result in a significant reduction in the time required to configure multiple devices in your organization.
 
-The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Windows Configuration Designer, a tool for configuring provisioning packages. Windows Configuration Designer is also available as an app in the Windows Store. 
+The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Windows Configuration Designer, a tool for configuring provisioning packages. Windows Configuration Designer is also available as an [app in the Windows Store](https://www.microsoft.com/store/apps/9nblggh4tx22). 
 
 
 ## New in Windows 10, version 1703
@@ -35,7 +35,7 @@ The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://develo
 - Provisioning packages can be made available [using NFC and barcodes](provisioning-nfc.md). 
 - When provisioning packages are applied to a device, a status screen indicates successful or failed provisioning. 
 - Windows 10 includes PowerShell cmdlets that simplify scripted provisioning. Using these cmdlets, you can add provisioning packages, remove provisioning packages and generate log files to investigate provisioning errors.
-- The **Provision school devices** wizard is removed from Windows Configuration Designer. Instead, use the **Setup School PCs** app from the Windows Store.
+- The **Provision school devices** wizard is removed from Windows Configuration Designer. Instead, use the [Setup School PCs app](https://www.microsoft.com/store/p/set-up-school-pcs/9nblggh4ls40) from the Windows Store.
 
 
 ## Benefits of provisioning packages
@@ -72,10 +72,14 @@ The following table describes settings that you can configure using the wizards 
 <tr><td valign="top">Set up network</td><td valign="top">Connect to a Wi-Fit network</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
 <tr><td valign="top">Account management</td><td valign="top">Enroll device in Active Directory,</br>enroll device in Azure Active Directory,</br>or create a local administrator account</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
 <tr><td valign="top">Bulk Enrollment in Azure AD</td><td valign="top">Enroll device in Azure Active Directory</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td></tr>
-<tr><td valign="top">Add applications</td><td valign="top">?</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
-<tr><td valign="top">Add certificates</td><td valign="top">?</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
+<tr><td valign="top">Add applications</td><td valign="top">Install applications using the provisioning package.</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
+<tr><td valign="top">Add certificates</td><td valign="top">Include a certificate file in the provisioning package.</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
 <tr><td valign="top">Configure kiosk account and app</td><td valign="top">Create local account to run the kiosk mode app,</br>specify the app to run in kiosk mode</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
 <tr><td valign="top">Configure kiosk common settings</td><td valign="top">Set tablet mode,</br>configure welcome and shutdown screens,</br>turn off timeout settings</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![no](images/crossmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr></table>
+
+- [Instructions for the desktop wizard](provision-pcs-for-initial-deployment.md)
+- [Instructions for the mobile wizard](provisioning-configure-mobile.md)
+- [Instructions for the kiosk wizard](set-up-a-kiosk-for-windows-10-for-desktop-editions.md#set-up-assigned-access-using-windows-configuration-designer)
 
 >[!NOTE]
 >After you start a project using a Windows Configuration Designer wizard, you can switch to the advanced editor to configure additional settings in the provisioning package. 
