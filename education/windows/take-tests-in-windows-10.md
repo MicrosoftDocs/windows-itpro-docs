@@ -29,10 +29,10 @@ Many schools use online testing for formative and summative assessments. It's cr
 
 ## How to use Take a Test
 
-![Set up and user flow for the Take a Test app](images/take_a_test_flow.png)
+![Set up and user flow for the Take a Test app](images/take_a_test_workflow.png)
 
-- **Use a test URL and a dedicated testing account** - A user signs in to the account and the **Take a Test** app automatically launches the pre-configured assessment URL in a single-app, kiosk mode. A student will never have access to the desktop in this configuration. We recommend this configuration for high stakes testing.
-- **Put a test URL with an included prefix on a web page or OneNote for students to click** - This allows teachers and test administrators an easier way to deploy assessments. We recommend this method for lower stakes assessments.
+- **Use an assessment URL and a dedicated testing account** - A user signs in to the account and the **Take a Test** app automatically launches the pre-configured assessment URL in a single-app, kiosk mode. A student will never have access to the desktop in this configuration. We recommend this configuration for high stakes testing.
+- **Put an assessment URL with an included prefix on a web page or OneNote for students to click** - This allows teachers and test administrators an easier way to deploy assessments. We recommend this method for lower stakes assessments.
 
 ## How to set up Take a Test on PCs
 You can use Take a Test to set up a test for a single PC or multiple PCs. Follow these links to learn how:

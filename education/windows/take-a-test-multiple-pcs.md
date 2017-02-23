@@ -27,18 +27,18 @@ Many schools use online testing for formative and summative assessments. It's cr
 
 ## How to use Take a Test
 
-![Set up and user flow for the Take a Test app](images/take_a_test_flow.png)
+![Set up and user flow for the Take a Test app](images/take_a_test_workflow.png)
 
-- **Use a test URL and a [dedicated testing account](#set-up-a-dedicated-test-account)** - A user signs in to the account and the **Take a Test** app automatically launches the pre-configured assessment URL in Microsoft Edge in a single-app, kiosk mode. A student will never have access to the desktop in this configuration. We recommend this configuration for high stakes testing.
-- **[Put a test URL with an included prefix](#provide-link-to-test) on a web page or OneNote for students to click** - This allows teachers and test administrators an easier way to deploy assessments. We recommend this method for lower stakes assessments.
+- **Use an assessment URL and a [dedicated testing account](#set-up-a-dedicated-test-account)** - A user signs in to the account and the **Take a Test** app automatically launches the pre-configured assessment URL in Microsoft Edge in a single-app, kiosk mode. A student will never have access to the desktop in this configuration. We recommend this configuration for high stakes testing.
+- **[Put an assessment URL with an included prefix](#provide-link-to-test) on a web page or OneNote for students to click** - This allows teachers and test administrators an easier way to deploy assessments. We recommend this method for lower stakes assessments.
 
 ## Set up a dedicated test account
 To configure a dedicated test account on multiple PCs, you can use:
-- [Mobile device management (MDM) or Microsoft System Center Configuration Manager](#set-up-test-account-in-mdm-or-configuration-manager)
-- [A provisioning package](#set-up-test-account-in-a-provisioning-package) created in Windows Imaging and Configuration Designer (ICD)
-- [Group Policy](#set-up-test-account-in-group-policy) to deploy a scheduled task that runs a Powershell script
+- [Mobile device management (MDM) or Microsoft System Center Configuration Manager](#set-up-a-test-account-in-mdm-or-configuration-manager)
+- [A provisioning package](#set-up-a-test-account-in-a-provisioning-package) created in Windows Imaging and Configuration Designer (ICD)
+- [Group Policy](#set-up-a-test-account-in-group-policy) to deploy a scheduled task that runs a Powershell script
 
-### Set up test account in MDM or Configuration Manager
+### Set up a test account in MDM or Configuration Manager
 1. Launch your management console.
 2. Create a policy to set up single app kiosk mode, using the following values:
 
@@ -65,7 +65,7 @@ To configure a dedicated test account on multiple PCs, you can use:
 
 5. To take the test, the student signs in to the test account.
 
-### Set up test account in a provisioning package
+### Set up a test account in a provisioning package
 
 **Prerequisite:** You must first download the Windows ADK for Windows 10, Version 1607, and  install Windows Imaging and Configuration Designer (ICD). For more info, see [Install Windows Imaging and Configuration Designer](https://technet.microsoft.com/en-us/itpro/windows/deploy/provisioning-install-icd).
 
@@ -88,7 +88,7 @@ To configure a dedicated test account on multiple PCs, you can use:
     - username@tenant.com
 
 8. Go to **Runtime settings** > **TakeATest**.
-9. Enter the test URL in **LaunchURI**.
+9. Enter the assessment URL in **LaunchURI**.
 10. Enter the test account from step 7 in **TesterAccount**.
 On the **File** menu, select **Save.**
 9.  On the **Export** menu, select **Provisioning package**.
@@ -120,13 +120,13 @@ On the **File** menu, select **Save.**
 
     After you allow the package to be installed, the settings will be applied to the device. [Learn how to apply a provisioning package in audit mode or OOBE](https://go.microsoft.com/fwlink/p/?LinkID=692012).
 
-### Set up test account in Group Policy
-To set up a test account using Group Policy, first create a Powershell script that configures the test account and test URL, and then create a scheduled task to run the script.
+### Set up a test account in Group Policy
+To set up a test account using Group Policy, first create a Powershell script that configures the test account and assessment URL, and then create a scheduled task to run the script.
 
-#### Create a Powershell script
-This sample Powershell script configures the test account and the test URL. Edit the sample to:
+#### Create a PowerShell script
+This sample PowerShell script configures the test account and the assessment URL. Edit the sample to:
 - Use your test account for **$obj.LaunchURI**  
-- Use your test URL for **$obj.TesterAccount**
+- Use your assessment URL for **$obj.TesterAccount**
 - Use your test account for **-UserName**
 
 ```
@@ -165,7 +165,7 @@ Set-AssignedAccess -AppUserModelId Microsoft.Windows.SecureAssessmentBrowser_cw5
 ## Provide link to test
 Anything hosted on the web can be presented in a locked down manner, not just assessments. To lock down online content, just embed a URL with a specific prefix and devices will be locked down when users follow the link. We recommend using this method for lower stakes assessments.
 
-1. Create a link to the test URL. Use **ms-edu-secureassessment:** before the URL and **!enforceLockdown** after the URL.
+1. Create a link to the assessment URL. Use **ms-edu-secureassessment:** before the URL and **!enforceLockdown** after the URL.
   ```
   ms-edu-secureassessment:<URL>!enforceLockdown
   ```
