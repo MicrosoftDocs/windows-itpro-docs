@@ -49,7 +49,7 @@ Perform these steps on the device running Windows 10 Mobile that you will use to
 
 ## Prepare the PC
 
-[Install Lockdown Designer.](https://www.microsoft.com/store/r/9nblggh40753) on the PC. 
+[Install Lockdown Designer](https://www.microsoft.com/store/r/9nblggh40753) on the PC. 
 
 If the PC and the test mobile device are on the same Wi-Fi network, you can connect the devices using Wi-Fi. 
 
@@ -75,7 +75,7 @@ If you want to connect the PC and the test mobile device using a USB cable, perf
 
 3. On the test mobile device, go to **Settings** > **Update & security** > **For developers** > **Connect using:** and get the IP address listed for **Wi-Fi**.
 
-2. On the **Project setting** > **General settings** page, in **Remote device IP address**, enter the IP address for the test mobile device.
+2. On the **Project setting** > **General settings** page, in **Remote device IP address**, enter the IP address for the test mobile device, using `https://`.
 
 3. Click **Pair**. 
 
