@@ -59,8 +59,8 @@ For a more secure kiosk experience, we recommend that you make the following con
 
     Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Device Installation\\Device Installation Restrictions**. Review the policy settings available in **Device Installation Restrictions** for the settings applicable to your situation.
 
-    **Note**  
-    To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
+    >[!NOTE]  
+    >To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
 
      
 <span id="assigned-access" />
@@ -73,7 +73,7 @@ Using assigned access, Windows 10 runs the designated Universal Windows app abo
 | --- | --- | --- |
 | [Use Settings on the PC](#set-up-assigned-access-in-pc-settings) | Local standard | Pro, Enterprise, Education |
 | [Apply a mobile device management (MDM) policy](#set-up-assigned-access-in-mdm) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
-| [Create a provisioning package using Windows Configuration Designer (ICD)](#set-up-assigned-access-wcd) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
+| [Create a provisioning package using Windows Configuration Designer](#set-up-assigned-access-wcd) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
 | [Run a PowerShell script](#set-up-assigned-access-using-windows-powershell) | Local standard | Pro, Enterprise, Education |
 
 
@@ -122,52 +122,26 @@ Assigned Access has one setting, KioskModeApp. In the KioskModeApp setting, you 
 >When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
 
-1. [Install Windows Configuration Designer](provisioning-install-icd.md)
+[Install Windows Configuration Designer](provisioning-install-icd.md), then open Windows Configuration Designer and select **Provision kiosk devices**. After you name your project, and click **Next**, configure the settings as shown in the following table.
 
-2. Open Windows Configuration Designer
+<table>
+<tr><td valign="top">![step one](images/one.png)![set up device](images/set-up-device.png)</br></br>Select an enterprise license file to upgrade to Windows Holographic for Business (not required if the device has already been upgraded). </br></br>Next, select the first-run sections that you don't want shown to users. You can also configure the region and timezone for the device. </td><td>![upgrade to enterprise, configure oobe](images/set-up-device-details.png)</td></tr>
+<tr><td valign="top">![step two](images/two.png)  ![set up network](images/set-up-network.png)</br></br>Toggle **On** or **Off** for wireless network connectivity. If you select **On**, enter the SSID, the network type (**Open** or **WPA2-Personal**), and (if **WPA2-Personal**) the password for the wireless network.</td><td>![Enter network SSID and type](images/set-up-network-details.png)</td></tr>
+<tr><td valign="top">![step three](images/three.png)  ![account management](images/account-management.png)</br></br>You can enroll the device in Azure AD, create a local account on the device, or skip account configuration.</br></br>To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard. (Something about expiry) Click **Get bulk token** (then what?)</br></br>To create a local account, select that option and enter a user name and password. </br></br>**Important:** If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in. If the user account is locked out, you must [perform a full device recovery](https://developer.microsoft.com/windows/holographic/reset_or_recover_your_hololens#perform_a_full_device_recovery). </td><td>![join Azure AD, create a local account, or skip](images/account-management-details.png)</td></tr>
+<tr><td valign="top">![step four](images/four.png) ![add applications](images/add-applications.png)</td><td>![add an application](images/add-applications-details.png)</td></tr>
+<tr><td valign="top">![step five](images/five.png) ![add certificates](images/add-certificates.png)</br></br>To provision the device with a certificate, click **Add a certificate**. Enter a name for the certificate, and then browse to and select the certificate to be used.</td><td>![add a certificate](images/add-certificates-details.png)</td></tr> 
+<tr><td valign="top">![step six](images/six.png)  ![Configure kiosk account and app](images/kiosk-account.png)</br></br>![Configure kiosk account and app](images/kiosk-account-details.png)</td></tr>
+<tr><td valign="top">![step seven](images/seven.png)  ![configure kiosk common settings](images/kiosk-common.png)</br></br>![set tablet mode and configure welcome and shutdown and turn off timeout settings](images/kiosk-common-details.png)</td></tr>
+<tr><td valign="top">  ![finish](images/finish.png)</br></br>You can set a password to protect your provisioning package. You must enter this password when you apply the provisioning package to a device.</td><td>![Protect your package](images/finish-details.png)</td></tr>
+</table>
 
-2.  Choose **Advanced provisioning**.
 
-3.  Name your project, and click **Next**.
+>[!NOTE]
+>If you want to use the advanced editor in Windows Configuration Designer, specify the user account and app (by AUMID) in **Runtime settings** &gt; **AssignedAccess** &gt; **AssignedAccessSettings**
 
-4.  Choose **All Windows desktop editions** and click **Next**.
 
-5.  On **New project**, click **Finish**. The workspace for your package opens.
 
-6.  Expand **Runtime settings** &gt; **AssignedAccess**, and click **AssignedAccessSettings**.
 
-7.  Enter a string to specify the user account and app (by AUMID). For example:
-
-    "Account":"contoso\\\\kiosk","AUMID":"8f82d991-f842-44c3-9a95-521b58fc2084"
-
-8.  On the **File** menu, select **Save.**
-
-9.  On the **Export** menu, select **Provisioning package**.
-
-10. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
-
-11. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
-
-    -   **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
-
-    -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select** and choosing the certificate you want to use to sign the package.
-
-12. Click **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows ICD uses the project folder as the output location.
-
-    Optionally, you can click **Browse** to change the default output location.
-
-13. Click **Next**.
-
-14. Click **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
-
-    If you need to cancel the build, click **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
-
-15. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
-
-    If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
-
-    -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
-    -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
 
 [Learn how to apply a provisioning package.](provisioning-apply-package.md)
 
