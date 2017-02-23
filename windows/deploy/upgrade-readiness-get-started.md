@@ -123,8 +123,10 @@ When you have completed a pilot deployment, you are ready to automate data colle
 To ensure that user computers are receiving the most up to date data from Microsoft, we recommend that you establish the following data sharing and analysis processes.
 
 - Enable automatic updates for the compatibility update and related KBs. These KBs are updated frequently to include the latest application and driver issue information as we discover it during testing.
-- Schedule the Upgrade Readiness deployment script to automatically run so that you don’t have to manually initiate an inventory scan each time the compatibility update KBs are updated. Computers are re-scanned only when the compatibility KBs are updated, so if your inventory changes significantly between KB releases you won’t see the changes in Upgrade Readiness until you run the script again.
+- Schedule the Upgrade Readiness deployment script to automatically run so that you don’t have to manually initiate an inventory scan each time the compatibility update KBs are updated. 
 - Schedule monthly user computer scans to view monthly active computer and usage information.
+
+>When you run the deployment script, it initiates a full scan. The daily scheduled task to capture the deltas are created when the update package is installed. A full scan averages to about 2 MB, but the delta scans are very small. For Windows 10 devices, its already part of the OS. This is the **Windows Compat Appraiser** task. Deltas are invoked via the nightly scheduled task.  It attempts to run around 3AM, but if system is off at that time, the task will run when the system is turned on. 
 
 ### Distribute the deployment script at scale
 
