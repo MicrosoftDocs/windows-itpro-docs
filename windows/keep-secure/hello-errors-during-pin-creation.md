@@ -89,7 +89,7 @@ If the error occurs again, check the error code against the following table to s
 <tr class="odd">
 <td align="left">0x80090035</td>
 <td align="left">Policy requires TPM and the device does not have TPM.</td>
-<td align="left">Change the Passport policy to not require a TPM.</td>
+<td align="left">Change the Windows Hello for Business policy to not require a TPM.</td>
 </tr>
 <tr class="even">
 <td align="left">0x801C0003</td>
@@ -149,7 +149,7 @@ If the error occurs again, check the error code against the following table to s
 <tr class="odd">
 <td align="left">0x801C03EA</td>
 <td align="left">Server failed to authorize user or device.</td>
-<td align="left">Check if the token is valid and user has permission to register Passport keys.</td>
+<td align="left">Check if the token is valid and user has permission to register Windows Hello for Business keys.</td>
 </tr>
 <tr class="even">
 <td align="left">0x801C03EB</td>
