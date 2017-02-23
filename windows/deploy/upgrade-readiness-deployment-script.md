@@ -13,7 +13,7 @@ author: greg-lindsay
 To automate the steps provided in [Get started with Upgrade Readiness](upgrade-readiness-get-started.md), and to troubleshoot data sharing issues, you can run the [Upgrade Readiness deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409), developed by Microsoft.
 
 >[!IMPORTANT]
->The Upgrade Readiness deployment script is also called the Upgrade Analytics deployment script.  This is because the name of the solution has changed, but the script name has not yet been updated to reflect the current name of the solution. References to both names are found in this article, but in general it will be referred to as the Upgrade Readiness deployment script.
+>Upgrade Readiness was previously called Upgrade Analytics.  References to Upgrade Analytics in any scripts or online content pertain to the Upgrade Readiness solution.
 
 For detailed information about using the Upgrade Readiness (also known as upgrade analytics) deployment script, see the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/).
 
