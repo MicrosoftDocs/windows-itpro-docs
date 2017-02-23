@@ -37,4 +37,4 @@ Enable security information and event management (SIEM) integration so that you 
 
 5. Select **Generate tokens** to get an access and refresh token.
 
-You'll need to use the tokens when configuring your SIEM solution to allow it to receive alerts from the Windows Defender ATP portal.
+You can now proceed with configuring your SIEM solution. You'll need to use the tokens when configuring your SIEM solution to allow it to receive alerts from the Windows Defender ATP portal.
