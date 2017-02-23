@@ -18,13 +18,8 @@ localizationpriority: high
 
 -   Windows 10 Mobile
 
-https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseassignedaccess-csp
-https://msdn.microsoft.com/en-us/library/dn499738.aspx
-https://msdn.microsoft.com/windows/hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access
-https://msdn.microsoft.com/en-us/library/dn798313.aspx
-also see email notes at bottom
 
-A device in kiosk mode runs a specified app with no access to other device functions, menus, or settings. You can use the [Enterprise Assigned Access](#enterprise-assigned-access) configuration service provider (CSP) to configure a kiosk experience. You can also configure a device running Windows 10 Mobile or Windows 10 Mobile Enterprise, version 1607 or earlier, for kiosk mode by using the [Apps Corner](#apps-corner) feature. (Apps Corner is removed in Windows 10, version 1703.)
+A device in kiosk mode runs a specified app with no access to other device functions, menus, or settings. You use the [Enterprise Assigned Access](#enterprise-assigned-access) configuration service provider (CSP) to configure a kiosk experience. You can also configure a device running Windows 10 Mobile or Windows 10 Mobile Enterprise, version 1607 or earlier, for kiosk mode by using the [Apps Corner](#apps-corner) feature. (Apps Corner is removed in version 1703.)
 
 >[!NOTE] 
 >The specified app must be an above lock screen app. For details on building an above lock screen app, see [Kiosk apps for assigned access: Best practices](https://go.microsoft.com/fwlink/p/?LinkId=708386).
@@ -35,7 +30,7 @@ A device in kiosk mode runs a specified app with no access to other device funct
 ## Enterprise Assigned Access
 
 
-Enterprise Assigned Access allows you to lock down your Windows 10 Mobile or Windows 10 Mobile Enterprise device in kiosk mode by creating a user role that has only a single app, set to run automatically, in the Allow list.
+Enterprise Assigned Access allows you to put your Windows 10 Mobile or Windows 10 Mobile Enterprise device in kiosk mode by creating a user role that has only a single app, set to run automatically, in the Allow list.
 
 >[!NOTE]
 >The app can be a Universal Windows app, Universal Windows Phone 8 app, or a legacy Silverlight app.
@@ -62,7 +57,10 @@ In AssignedAccessXml, for Application, you enter the product ID for the app to r
     
 #### Create the provisioning package
 
-2.  Open Windows ICD (by default, `%windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe`).
+1. [Install Windows Configuration Designer.](provisioning-install-icd.md)
+
+2.  Open Windows Configuration Designer (if you installed it from the Windows ADK, `%windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe`).
+
 3. Choose **Advanced provisioning**.
 
 
@@ -162,6 +160,8 @@ You can distribute that .ppkg to mobile devices using any of the following metho
 
 ## Apps Corner
 
+>[!NOTE]
+>For Windows 10, versions 1507, 1511, and 1607 only.
 
 Apps Corner lets you set up a custom Start screen on your Windows 10 Mobile or Windows 10 Mobile Enterprise device, where you can share only the apps you choose with the people you let use your device. You configure a device for kiosk mode by selecting a single app to use in Apps Corner.
 
@@ -183,11 +183,9 @@ Apps Corner lets you set up a custom Start screen on your Windows 10 Mobile or 
 
 1.  On Start ![start](images/starticon.png), swipe over to the App list, then tap **Settings** ![settings](images/settingsicon.png) &gt; **Accounts** &gt; **Apps Corner** &gt; launch ![launch](images/launchicon.png).
 
-    **Tip**  
-    Want to get to Apps Corner with one tap? In **Settings**, tap **Apps Corner** &gt; **pin** to pin the Apps Corner tile to your Start screen.
-
-     
-
+    >[!TIP]  
+    >Want to get to Apps Corner with one tap? In **Settings**, tap **Apps Corner** &gt; **pin** to pin the Apps Corner tile to your Start screen.
+  
 2.  Give the device to someone else, so they can use the device and only the one app you chose.
 
 3.  When they're done and you get the device back, press and hold Power ![power](images/powericon.png), and then swipe right to exit Apps Corner.
@@ -202,14 +200,6 @@ Apps Corner lets you set up a custom Start screen on your Windows 10 Mobile or 
 [Product IDs in Windows 10 Mobile](product-ids-in-windows-10-mobile.md)
 
  
-
- ## Email notes - temp
-
-from Lily: When you push down a SyncML for Assigned Access xml through the EnterpriseAssignedAccess CSP, it need to be escaped. But if you add the lockdown xml in the provisioning package, you don’t need to escape the xml as ICD will do that when building the package. Providing an escaped xml in ICD will cause building the package fail. 
-
-![lily's screenshot](images/lily.jpg)
-
-
 
 
 
