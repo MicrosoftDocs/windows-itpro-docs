@@ -48,13 +48,14 @@ author: CelesteDG
 
  <div class="side-by-side"> <div class="side-by-side-content">
  <div class="side-by-side-content-left">
-<p><b><a href="https://technet.microsoft.com/en-us/windows/mt574244" target="_blank">Try it out: Windows 10 deployment (for education)</a></b><br />Learn how to upgrade devices running the Windows 7 operating system to Windows 10 Anniversary Update, and how to manage devices, apps, and users in Windows 10 Anniversary Update.<br /><br />For the best experience, use this guide in tandem with the <a href="https://vlabs.holsystems.com/vlabs/technet?eng=VLabs&auth=none&src=vlabs&altadd=true&labid=20949&lod=true" target="_blank">TechNet Virtual Lab: IT Pro Try-It-Out</a>.</p>
- </div>
- <div class="side-by-side-content-right">
  <p><b>[Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)</b><br />Learn how to customize the OS privacy settings, Skype, and Xbox for Windows-based devices used in schools so that you can choose what information is shared with Microsoft.</p>
  <p><b>[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)</b><br />Get step-by-step guidance to help you deploy Windows 10 in a school environment.</p>
- <p><b>[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)</b><br />Get step-by-step guidance on how to deploy Windows 10 to PCs and devices across a school district.</p></div>
-   </div></div>
+ <p><b>[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)</b><br />Get step-by-step guidance on how to deploy Windows 10 to PCs and devices across a school district.</p>
+ </div>
+ <div class="side-by-side-content-right">
+<p><b><a href="https://technet.microsoft.com/en-us/windows/mt574244" target="_blank">Try it out: Windows 10 deployment (for education)</a></b><br />Learn how to upgrade devices running the Windows 7 operating system to Windows 10 Anniversary Update, and how to manage devices, apps, and users in Windows 10 Anniversary Update.<br /><br />For the best experience, use this guide in tandem with the <a href="https://vlabs.holsystems.com/vlabs/technet?eng=VLabs&auth=none&src=vlabs&altadd=true&labid=20949&lod=true" target="_blank">TechNet Virtual Lab: IT Pro Try-It-Out</a>.</p>
+</div>
+</div></div>
 
  ## ![Deploy Windows 10 for education](images/windows.png) Upgrade
 
@@ -65,5 +66,4 @@ author: CelesteDG
 
 ## Related topics
 
-- [Try it out: virtual labs and how-to videos for Windows 10 Education](https://technet.microsoft.com/en-us/windows/dn610356)
 - [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/index)
