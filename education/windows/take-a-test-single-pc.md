@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
-author: jdeckerMS
+author: CelesteDG
 ---
 
 # Set up Take a Test on a single PC

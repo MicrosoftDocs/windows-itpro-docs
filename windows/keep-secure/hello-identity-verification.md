@@ -113,9 +113,7 @@ Windows Hello for Business can use either keys (hardware or software) or certifi
 
 [Windows 10: The End Game for Passwords and Credential Theft?](https://go.microsoft.com/fwlink/p/?LinkId=533891)
 
-[Authenticating identities without passwords through Microsoft Passport](https://go.microsoft.com/fwlink/p/?LinkId=616778)
-
-[Microsoft Passport guide](https://go.microsoft.com/fwlink/p/?LinkId=691928)
+[Authenticating identities without passwords through Windows Hello for Business](https://go.microsoft.com/fwlink/p/?LinkId=616778)
 
 ## Related topics
 
