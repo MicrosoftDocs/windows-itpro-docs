@@ -61,7 +61,7 @@ For VPN, the following types of credentials will be added to credential manager 
     - TPM KSP Certificate
     - Software KSP Certificates
     - Smart Card Certificate
-    - Passport for Work Certificate
+    - Windows Hello for Business Certificate
 
 The username should also include a domain that can be reached over the connection (VPN or WiFi). 
 
