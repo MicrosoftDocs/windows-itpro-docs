@@ -744,7 +744,7 @@
 #### [Windows Defender ATP settings](settings-windows-defender-advanced-threat-protection.md)
 #### [Windows Defender ATP service status](service-status-windows-defender-advanced-threat-protection.md)
 #### [Configure SIEM tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)
-##### [Enable SIEM integration in Windows Defender ATP](enable-siem-connector-windows-defender-advanced-threat-protection.md)
+##### [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 ##### [Configure an Azure Active Directory application for SIEM integration](configure-aad-windows-defender-advanced-threat-protection.md)
 ##### [Configure Splunk to consume Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
 ##### [Configure HP ArcSight to consume Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
