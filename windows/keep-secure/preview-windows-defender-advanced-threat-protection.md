@@ -23,7 +23,7 @@ localizationpriority: high
 
 Windows Defender ATP adds various feature enhancements and capabilities in the February 2017 preview release.
 
-Be among the first to try upcoming features by turning on the preview experience feature. For more information, see [Turn on the preview experience](preview-settings-windows-defender-advanced-threat-protection.md)
+Be among the first to try upcoming features by turning on the preview experience feature. For more information, see [Turn on the preview experience](preview-settings-windows-defender-advanced-threat-protection.md).
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 

@@ -89,6 +89,8 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
   ![Click the settings icon and then Suppression rules to create and modify rules](images/atp-suppression-rules.png)
 
 The list of suppression rules shows all the rules that users in your organization have created.
+![Suppression rules show the rule name or title, the context, the date, and an icon to delete the rule](images/rules-legend.png)
+
 Each rule shows:
 
 - (1) The title of the alert that is suppressed
@@ -96,14 +98,15 @@ Each rule shows:
 - (3) The date when the alert was suppressed
 - (4) An option to delete the suppression rule, which will cause alerts with this title to be displayed in the queue from this point onwards.
 
-![Suppression rules show the rule name or title, the context, the date, and an icon to delete the rule](images/rules-legend.png)
 
-
-### Related topics
+## Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
-- [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
+- [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines view](investigate-machines-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
 - [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
 - [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
+- [View and organize the Windows Defender ATP Machines view](machines-view-overview-windows-defender-advanced-threat-protection.md)
+- [Investigate machines in the Windows Defender ATP Machines view](investigate-machines-windows-defender-advanced-threat-protection.md)
+- [Investigate a user account in Windows Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
+- [Take response actions in Windows Defender ATP](response-actions-windows-defender-advanced-threat-protection.md)

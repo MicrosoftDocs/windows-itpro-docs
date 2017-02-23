@@ -20,8 +20,6 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
-
 During the onboarding process, a wizard takes you through the general settings of Windows Defender ATP. After onboarding, you might want to update some settings which you'll be able to do through the **Preferences setup** menu.
 
 1. In the navigation pane, select **Preferences setup** > **General**.
@@ -33,6 +31,6 @@ During the onboarding process, a wizard takes you through the general settings o
 
 
 ## Related topics
-- [Turn on advanced features](advanced-features-windows-defender-advacned-threat-protection.md)
-- [Turn on the preview experience](preview-settings-windows-defender-advanced-threat-protection.md)
-- [Configure email notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
+- [Turn on advanced features in Windows Defender ATP](advanced-features-windows-defender-advacned-threat-protection.md)
+- [Turn on the preview experience in Windows Defender ATP ](preview-settings-windows-defender-advanced-threat-protection.md)
+- [Configure email notifications in Windows Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)
