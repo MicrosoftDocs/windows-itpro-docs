@@ -49,7 +49,11 @@ Perform these steps on the device running Windows 10 Mobile that you will use to
 
 ## Prepare the PC
 
-Perform these steps on the PC you will use to run Lockdown Designer.
+[Install Lockdown Designer.](https://www.microsoft.com/store/r/9nblggh40753) on the PC. 
+
+If the PC and the test mobile device are on the same Wi-Fi network, you can connect the devices using Wi-Fi. 
+
+If you want to connect the PC and the test mobile device using a USB cable, perform the following steps on the PC:
 
 1. [Install the Windows 10 Software Development Kit (SDK)](https://developer.microsoft.com/windows/downloads/windows-10-sdk). This enables the **Windows Phone IP over USB Transport (IpOverUsbSvc)** service.
 
@@ -58,11 +62,38 @@ Perform these steps on the PC you will use to run Lockdown Designer.
     >[!NOTE]
     >Loopback is permitted only for development purposes. To remove the loopback exemption when you're done using Lockdown Designer, run `checknetisolation  LoopbackExempt -d -n=microsoft.lockdowndesigner_8wekyb3d8bbwe`
 
-2. [Install Lockdown Designer.](https://www.microsoft.com/store/r/9nblggh40753)
 
 
 <span id="pair" />
 ## Connect the mobile device to Lockdown Designer
+
+**Using Wi-Fi**
+
+1. Open Lockdown Designer.
+
+2. Click **Create new project**.
+
+3. On the test mobile device, go to **Settings** > **Update & security** > **For developers** > **Connect using:** and get the IP address listed for **Wi-Fi**.
+
+2. On the **Project setting** > **General settings** page, in **Remote device IP address**, enter the IP address for the test mobile device.
+
+3. Click **Pair**. 
+
+    ![Pair](images/ld-pair.png)
+
+    **Connect to remote device** appears. 
+
+4. On the mobile device, under **Device discovery**, tap **Pair**. A case-sensitive code is displayed.
+
+5. On the PC, in **Connect to remote device**, enter the code from the mobile device.
+
+6. Next, click **Sync** to pull information from the device in to Lockdown Designer.
+
+    ![Sync](images/ld-sync.png)
+
+7. Click the **Save** icon and enter a name for your project. 
+
+**Using a USB cable**
 
 1. Open Lockdown Designer.
 
