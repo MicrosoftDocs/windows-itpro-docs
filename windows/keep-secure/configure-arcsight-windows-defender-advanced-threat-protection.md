@@ -82,14 +82,33 @@ The following steps assume that you have completed all the required steps in [Be
 
 6.	Type the following information in the parameter details form. All other values in the form are optional and can be left blank.
 
-  Field	| Value
-  :---|:---
-  Configuration File | Type in the name of the client property file. It must match the client property file. </br></br> For example, if the configuration file in "flexagent" directory is named "WDATP-Connector.jsonparser.properties", the field must be names as the suffix which is "WDATP-Connector".
-  Events URL | Depending on the location of your datacenter, select either the EU or the US URL: </br></br> **For EU**: `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME` </br></br>**For US**: `https://wdatp-alertexporter-us.securitycenter.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`
-  Authentication Type |	OAuth 2
-  OAuth 2 Client Properties file	| Browse to the location of the wdatp-connector.properties file.
-  Refresh Token	| Use either the Windows Defender ATP token URL or the restutil tool to obtain your refresh token. For more information, see [Obtain a refresh token](configure-aad-windows-defender-advanced-threat-protection.md#obtain-a-refresh-token). </br> </br> **Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to C:\\*folder_location*\current\bin where *folder_location* represents the location where you installed the tool. </br> b. Type: `arcsight restutil token -config` from the bin directory . A Web browser window will open. </br> c. A web browser will open. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> d.	A refresh token is provided in the command prompt. </br> e. Copy and paste it into the **Refresh Token** field.
-
+  <table>
+     <tbody style="vertical-align:top;">
+     <tr>
+     <th>Field</th>
+     <th>Value</th>
+     </tr>
+     <tr>
+     <td>Configuration File</td>
+     <td>Type in the name of the client property file. It must match the client property file.
+     For example, if the configuration file in "flexagent" directory is named "WDATP-Connector.jsonparser.properties", the field must be names as the suffix which is "WDATP-Connector".</td>
+     </tr>
+     <td>Events URL</td>
+     <td>Depending on the location of your datacenter, select either the EU or the US URL: </br></br> **For EU**:  https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME
+  </br>**For US:** https://<i></i>wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME</td>
+     <tr>
+     <td>Authentication Type</td>
+     <td>OAuth 2</td>
+     </tr>
+     <td>OAuth 2 Client Properties file</td>
+     <td>Browse to the location of the *wdatp-connector.properties* file.</td>
+     <tr>
+     <td>Refresh Token</td>
+     <td>Use the Windows Defender ATP events URL or the restutil tool to get obtain a refresh token. <br> For more information on getting your refresh token using the events URL, see [Obtain a refresh token](configure-aad-windows-defender-advanced-threat-protection.md#obtain-a-refresh-token). </br> </br>**Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to C:\\*folder_location*\current\bin where *folder_location* represents the location where you installed the tool. </br></br> b. Type: `arcsight restutil token -config` from the bin directory. A Web browser window will open. </br> </br>c. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> </br>d.	A refresh token is shown in the command prompt. </br></br> e. Copy and paste it into the **Refresh Token** field.
+     </td>
+     </tr>
+     </tr>
+     </table>  
 7. A browser window is opened by the connector. Login with your application credentials. After you log in, you'll be asked to give permission to your OAuth2 Client. You must give permission to your OAuth 2 Client so that the connector configuration can authenticate. </br></br>
 If the `redirect_uri` is a https URL, you'll be redirected to a URL on the local host. You'll see a page that requests for you to trust the certificate supplied by the connector running on the local host. You'll need to trust this certificate if the redirect_uri is a https. </br></br> If however you specify a http URL for the redirect_uri, you do not need to provide consent in trusting the certificate.
 
