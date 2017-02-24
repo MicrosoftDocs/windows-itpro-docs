@@ -42,7 +42,7 @@ Windows 10 mitigations that you can configure are listed in the following two ta
 
 | Mitigation and corresponding threat | Description and links |
 |---|---|
-| **Windows Defender SmartScreen**,<br>which helps prevent<br>malicious applications<br>from even being downloaded | Windows Defender SmartScreen can check the reputation of a downloaded application by using a service that Microsoft maintains. The first time a user runs an app that originates from the Internet (even if the user copied it from another PC), SmartScreen checks to see if the app lacks a reputation or is known to be malicious, and responds accordingly.<br><br>**More information**: [Windows Defender SmartScreen](#windows-defender-smartscreen), later in this topic |
+| **Windows Defender SmartScreen**,<br>which helps prevent<br>malicious applications<br>from being downloaded | Windows Defender SmartScreen can check the reputation of a downloaded application by using a service that Microsoft maintains. The first time a user runs an app that originates from the Internet (even if the user copied it from another PC), SmartScreen checks to see if the app lacks a reputation or is known to be malicious, and responds accordingly.<br><br>**More information**: [Windows Defender SmartScreen](#windows-defender-smartscreen), later in this topic |
 | **Credential Guard**,<br>which helps keep attackers<br>from gaining access through<br>Pass-the-Hash or<br>Pass-the-Ticket attacks | Credential Guard uses virtualization-based security to isolate secrets, such as NTLM password hashes and Kerberos Ticket Granting Tickets, so that only privileged system software can access them.<br>Credential Guard is included in Windows 10 Enterprise and Windows Server 2016.<br><br>**More information**: [Protect derived domain credentials with Credential Guard](credential-guard.md) |
 | **Enterprise certificate pinning**,<br>which helps keep users<br>from being deceived by<br>man-in-the-middle attacks<br>that leverage PKI | With enterprise certificate pinning, you can “pin” (associate) an X.509 certificate and its public key to its legitimate Certification Authority, either root or leaf. This helps protect your enterprise’s intranet sites (not external Internet sites) by providing validation for digitally signed certificates (SSL certificates) used while browsing. This feature mitigates man-in the-middle attacks that involve these certificates.<br><br>**More information**: ENTERPRISE_CERTIFICATE_PINNING_LINK |
 | **Device Guard**,<br>which helps keep a device<br>from running malware or<br>other untrusted apps | Device Guard includes Code Integrity policies, a whitelist you create of trusted apps—the only apps allowed to run in your organization. Device Guard also includes a powerful system mitigation called hypervisor-protected code integrity (HVCI), which leverages virtualization-based security (VBS) to protect Windows’ kernel-mode code integrity validation process. HVCI has specific hardware requirements, and works with Code Integrity policies to help stop attacks even if they gain entrance to the kernel.<br>Device Guard is included in Windows 10 Enterprise and Windows Server 2016.<br><br>**More information**: [Introduction to Device Guard](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md) |
@@ -67,33 +67,21 @@ Also, as an IT professional, you can ask application developers and software ven
 
 ### Windows Defender SmartScreen
 
+Windows Defender SmartScreen notifies users if they click on reported phishing and malware websites, and helps protect them against unsafe downloads or make informed decisions about downloads.
+
 Starting with Windows Internet Explorer 8, the SmartScreen Filter has helped protect users from both malicious applications and nefarious websites by using the SmartScreen Filter’s application and URL reputation services. The SmartScreen Filter in Internet Explorer would check URLs and newly downloaded apps against an online reputation service that Microsoft maintained. If the app or URL were not known to be safe, SmartScreen Filter would warn the user or even prevent the app or URL from loading, depending on how systems administrators had configured Group Policy settings.
 
-For Windows 10, Microsoft further developed SmartScreen, now called Windows Defender SmartScreen, by integrating its app reputation abilities into the operating system itself, which allows SmartScreen to check the reputation of files downloaded from the Internet and warn users when they’re about to run a high-risk downloaded file. The first time a user runs an app that originates from the Internet, SmartScreen checks the reputation of the application by using digital signatures and other factors against a service that Microsoft maintains. If the app lacks a reputation or is known to be malicious, SmartScreen warns the user or blocks execution entirely, depending on how the administrator has configured Group Policy (see Figure 4).
+For Windows 10, Microsoft further developed SmartScreen, now called Windows Defender SmartScreen, by integrating its app reputation abilities into the operating system itself, which allows SmartScreen to check the reputation of files downloaded from the Internet and warn users when they’re about to run a high-risk downloaded file. The first time a user runs an app that originates from the Internet, SmartScreen checks the reputation of the application by using digital signatures and other factors against a service that Microsoft maintains. If the app lacks a reputation or is known to be malicious, SmartScreen warns the user or blocks execution entirely, depending on how the administrator has configured Microsoft Intune or Group Policy settings.
 
-![SmartScreen Filter at work in Windows 10](images/security-fig7-smartscreenfilter.png)
+<!-- Next sentence needs a link to the main SmartScreen topic, whatever it's called. --> 
 
-**Figure 4.&nbsp;&nbsp;SmartScreen at work in Windows 10**
-
-<!-- There are probably some deletions to make in the following paragraph, and the screenshot needs to be replaced. Wait and see -- other information will likely be coming in. -->
-
-By default, users have the option to bypass SmartScreen protection so that it will not prevent a user from running a legitimate app. You can use Control Panel or Group Policy settings to disable SmartScreen or to completely prevent users from running apps that SmartScreen does not recognize. The Control Panel settings are shown in Figure 5.
-
-![SmartScreen configuration options](images/security-fig8-smartscreenconfig.png)
-
-**Figure 5.&nbsp;&nbsp;The Windows SmartScreen configuration options in Control Panel**
-
-If you want to try SmartScreen, use Windows 7 to download this simulated (but not dangerous) malware [file:freevideo.exe](https://go.microsoft.com/fwlink/p/?LinkId=626943). Save it to your computer, and then run it from Windows Explorer. As shown in Figure 6, Windows 7 runs the app without much warning. In Windows 7, you might receive a warning message about the app not having a certificate, but you can easily bypass it.
-
-![Windows 7 allows the app to run](images/security-fig9-windows7allow.png)
-
-**Figure 6.&nbsp;&nbsp;Windows 7 allows the app to run**
-
-Now, repeat the test on a computer running Windows 10 by copying the file to a Windows 10 PC or by downloading the file again and saving it to your local computer. Run the file directly from File Explorer, and SmartScreen will warn you before it allows it to run. Microsoft’s data shows that for a vast majority of users, that extra warning is enough to save them from a malware infection.
+For more information, see Windows Defender SmartScreen overview.
 
 ### Windows Defender Antivirus
 
-Windows included Windows Defender Antivirus, a robust inbox antimalware solution, starting with Windows 8, when it was called Windows Defender. With Windows 10, Microsoft significantly improved Windows Defender Antivirus. Windows Defender Antivirus in Windows 10 uses a four-pronged approach to improve antimalware:
+Windows included Windows Defender Antivirus, a robust inbox antimalware solution, starting with Windows 8, when it was called Windows Defender. With Windows 10, Microsoft significantly improved Windows Defender Antivirus. Windows Defender Antivirus in Windows 10 uses a multi-pronged approach to improve antimalware:
+
+-   **Cloud-delivered protection** helps detect and block new malware within seconds, even if the malware has never been seen before. The service uses distributed resources and machine learning to deliver protection to endpoints at a rate that is far faster than traditional signature updates.
 
 -   **Rich local context** improves how malware is identified. Windows 10 informs Windows Defender Antivirus not only about content like files and processes but also where the content came from, where it has been stored, and more. The information about source and history enables Windows Defender Antivirus to apply different levels of scrutiny to different content.
 
@@ -191,7 +179,7 @@ One of the mitigations, Control Flow Guard (CFG), needs no configuration within 
 
 | Mitigation and corresponding threat | Description |
 |---|---|
-| **SMB hardening for SYSVOL and NETLOGON shares**,<br>which mitigates<br>man-in-the-middle attacks | Client connections to the Active Directory Domain Services default SYSVOL and NETLOGON shares on domain controllers now require SMB signing and mutual authentication (such as Kerberos).<br><br>**More information**:  [SMB hardening improvements for SYSVOL and NETLOGON shares](#smb-hardening-improvements-for-sysvol-and-netlogon-shares), later in this topic. |
+| **SMB hardening for SYSVOL and NETLOGON shares**,<br>which mitigates<br>man-in-the-middle attacks | Client connections to the Active Directory Domain Services default SYSVOL and NETLOGON shares on domain controllers now require SMB signing and mutual authentication (such as Kerberos).<br><br>**More information**: [SMB hardening improvements for SYSVOL and NETLOGON shares](#smb-hardening-improvements-for-sysvol-and-netlogon-shares), later in this topic. |
 | **Protected Processes**,<br>which help prevent one process<br>from tampering with another<br>process | With the Protected Processes feature, Windows 10 prevents untrusted processes from interacting or tampering with those that have been specially signed.<br><br>**More information**: [Protected Processes](#protected-processes), later in this topic. |
 | **Universal Windows apps protections**,<br>which screen downloadable<br>apps and run them in<br>an AppContainer sandbox | Universal Windows apps are carefully screened before being made available, and they run in an AppContainer sandbox with limited privileges and capabilities.<br><br>**More information**: [Universal Windows apps protections](#universal-windows-apps-protections), later in this topic. |
 | **Heap protections**,<br>which help prevent<br>exploitation of the heap | Windows 10 includes protections for the heap, such as the use of internal data structures which help protect against corruption of memory used by the heap.<br><br>**More information**: [Windows heap protections](#windows-heap-protections), later in this topic. |
