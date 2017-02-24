@@ -109,7 +109,20 @@ In order for your devices to show up in Windows Analytics: Update Compliance, th
     3. In the **Options** box, under **Commercial Id**, type the Commercial ID GUID, and then click **OK**.<P>
 
 - Using Microsoft Mobile Device Management (MDM)<BR><BR>
-    Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under **Provider/ProviderID/CommercialID**. More information on deployment using MDM can be found [here](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp).  
+    Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under **Provider/ProviderID/CommercialID**. More information on deployment using MDM can be found [here](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp). 
+    
+    For information on how to use MDM configuration CSPs, see [Introduction to configuration service providers (CSPs) for IT pros](https://technet.microsoft.com/en-us/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
+
+    When using the Intune console, you can use the OMA-URI settings of a [custom policy](https://go.microsoft.com/fwlink/p/?LinkID=616316) to configure the commercial ID. The OMA-URI (case sensitive) path for configuring the commerical ID is: <PRE>./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID</PRE>
+
+    For example, you can use the following values in **Add or edit OMA-URI Setting**:
+    
+    **Setting Name**: Windows Analytics Commercial ID<BR>
+    **Setting Description**: Configuring commercial id for Windows Analytics solutions<BR>
+    **Data Type**: String<BR>
+    **OMA-URI (case sensitive)**: ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID<BR>
+    **Value**: \<Use the GUID shown on the Windows Telemetry tab in your OMS workspace\><BR>
+
 
 
 ## Related topics
