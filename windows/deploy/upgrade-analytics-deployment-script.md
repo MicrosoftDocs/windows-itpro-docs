@@ -56,6 +56,8 @@ To run the Upgrade Analytics deployment script:
 
 4.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script.  If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
 
+<div id="error-codes"></div>
+
 The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered.
 
 <div style='font-size:10.0pt'>
