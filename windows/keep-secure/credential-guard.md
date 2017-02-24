@@ -85,7 +85,7 @@ Applications may cause performance issues when they attempt to hook the isolated
 The following tables provide more information about the hardware, firmware, and software required for deployment of Credential Guard. The tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, available in 2016, and announced as options for 2017.
 
 > [!NOTE]  
-> For new computers running Windows 10, Trusted Platform Module (TPM 2.0) must be enabled by default. This requirement is not restated in the tables that follow.<br>
+> Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new computers. This requirement is not restated in the tables that follow.<br>
 > If you are an OEM, see the requirements information at [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).<br>
 > Starting in Widows 10, 1607, TPM 2.0 is required.
 
