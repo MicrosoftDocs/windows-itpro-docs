@@ -38,14 +38,16 @@ You use Windows Configuration Designer to create a provisioning package (.ppkg) 
     
     - The wizard options provide a simple interface for configuring common settings for desktop, mobile, and kiosk devices. Wizards are also available for creating provisioning packages for Microsoft Surface Hub and Microsoft HoloLens devices. For a summary of the settings available in the desktop, mobile, and kiosk devices, see [What you can configure using Configuration Designer wizardS](provisioning-packages.md#configuration-designer-wizards). 
     
-        (NEED TO LINK TO WIZARD TOPICS)
-        - For instructions on **Simple provisioning**, see [Provision PCs with common settings](provision-pcs-for-initial-deployment.md). 
-        - For instructions on **Provision school devices**, see [Set up student PCs to join domain](https://technet.microsoft.com/edu/windows/set-up-students-pcs-to-join-domain).
+    - [Instructions for the desktop wizard](provision-pcs-for-initial-deployment.md)
+    - [Instructions for the mobile wizard](provisioning-configure-mobile.md)
+    - [Instructions for the kiosk wizard](set-up-a-kiosk-for-windows-10-for-desktop-editions.md#set-up-assigned-access-using-windows-configuration-designer)
+    - [Instructions for HoloLens wizard](https://technet.microsoft.com/itpro/hololens/hololens-provisioning)
+    - [Instructions for Surface Hub wizard](https://technet.microsoft.com/itpro/surface-hub/provisioning-packages-for-certificates-surface-hub)
         
     - The **Advanced provisioning** option opens a new project with all **Runtime settings** available. The rest of this procedure uses **Advanced provisioning**.
     
     >[!TIP]
-    >You can start a project in the simple editor and then switch the project to the advanced editor.
+    >You can start a project in the simple wizard editor and then switch the project to the advanced editor.
     >
     >![Switch to advanced editor](images/icd-switch.png)
         
