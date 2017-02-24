@@ -67,11 +67,7 @@ The TPM can be used to protect certificates and RSA keys. The TPM key storage pr
 
 ## TPM Cmdlets
 
-If you are using PowerShell to script and manage your computers, you can now manage the TPM using Windows PowerShell as well. To install the TPM cmdlets use the following command:
-
-`dism /online /enable-feature /FeatureName:tpm-psh-cmdlets`
-
-For details about the individual cmdlets, see [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx).
+You can manage the TPM using Windows PowerShell. For details, see [TPM Cmdlets in Windows PowerShell](http://technet.microsoft.com/library/jj603116.aspx).
 
 ## Physical presence interface
 

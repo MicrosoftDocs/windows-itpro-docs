@@ -1,6 +1,6 @@
 ---
-title: 4774(S) An account was mapped for logon. (Windows 10)
-description: Describes security event 4774(S) An account was mapped for logon.
+title: 4774(S, F) An account was mapped for logon. (Windows 10)
+description: Describes security event 4774(S, F) An account was mapped for logon.
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -8,14 +8,13 @@ ms.sitesec: library
 author: Mir0sh
 ---
 
-# 4774(S): An account was mapped for logon.
+# 4774(S, F): An account was mapped for logon.
 
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
 
-
-It appears that this event never occurs.
+Success events do not appear to occur. Failure event [has been reported](http://forum.ultimatewindowssecurity.com/Topic7313-282-1.aspx). 
 
 ***Subcategory:***&nbsp;[Audit Credential Validation](audit-credential-validation.md)
 
@@ -23,11 +22,11 @@ It appears that this event never occurs.
 
 *An account was mapped for logon.*
 
-*Authentication Package:%1*
+*Authentication Package:Schannel*
 
-*Account UPN:%2*
+*Account UPN:*<*Acccount*>@<*Domain*>
 
-*Mapped Name:%3*
+*Mapped Name:*<*Account*>
 
 ***Required Server Roles:*** no information.
 

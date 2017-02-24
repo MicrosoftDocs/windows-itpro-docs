@@ -22,8 +22,8 @@ Credential Manager is a place where credentials in the OS are can be stored for 
 For VPN, the VPN stack saves its credential as the session default. 
 For WiFi, EAP does it. 
 
-The credentials are put in Credential Manager as a "`*Session`" credential. 
-A "`*Session`" credential implies that it is valid for the current user session. 
+The credentials are put in Credential Manager as a "\*Session" credential. 
+A "\*Session" credential implies that it is valid for the current user session. 
 The credentials are also cleaned up when the WiFi or VPN connection is disconnected. 
 
 When the user tries to access a domain resource, using Edge for example, Edge has the right Enterprise Authentication capability so [WinInet](https://msdn.microsoft.com/library/windows/desktop/aa385483.aspx) can release the credentials that it gets from the Credential Manager to the SSP that is requesting it. 
@@ -61,7 +61,7 @@ For VPN, the following types of credentials will be added to credential manager 
     - TPM KSP Certificate
     - Software KSP Certificates
     - Smart Card Certificate
-    - Passport for Work Certificate
+    - Windows Hello for Business Certificate
 
 The username should also include a domain that can be reached over the connection (VPN or WiFi). 
 
