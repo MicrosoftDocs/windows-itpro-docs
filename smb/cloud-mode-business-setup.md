@@ -26,7 +26,7 @@ In this walkthrough, we'll show you how to deploy and manage a full cloud IT sol
 
 Go to the <a href="http://business.microsoft.com" target="_blank">Microsoft Business site</a> and select **Products** to learn more about pricing and purchasing options for your business.
 
-## 1. Get ready
+## Prerequisites
 Here's a few things to keep in mind before you get started:
 - You'll need a registered domain to successfully go through the walkthrough.
   - If you already own a domain, you can add this during the Office 365 setup.
@@ -34,10 +34,10 @@ Here's a few things to keep in mind before you get started:
 - You'll need an email address to create your Office 365 tenant.
 - We recommend that you use Internet Explorer for the entire walkthrough. Right click on Internet Explorer and then choose **Start InPrivate Browsing**.
 
-## 2. Set up your cloud infrastructure
+## 1. Set up your cloud infrastructure
 To set up a cloud infrastructure for your organization, follow the steps in this section.
 
-### 2.1 Set up Office 365 for business
+### 1.1 Set up Office 365 for business
 See <a href="https://support.office.com/en-us/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa" target="_blank">Set up Office 365 for business</a> to learn more about the setup steps for businesses and nonprofits who have Office 365. You can watch video and learn how to:
 - Plan your setup
 - Create Office 365 accounts and how to add your domain.
@@ -96,7 +96,7 @@ If this is the first time you're setting this up, and you'd like to see how it's
 
     ![Verify your domains in O365 admin center](images/office365_additional_domain.png)
 
-### 2.2 Add users and assign product licenses
+### 1.2 Add users and assign product licenses
 Once you've set up Office and added your domain, it's time to add users so they have access to Office 365. People in your organization need an account before they can sign in and access Office 365. The easiest way to add users is to add them one at a time in the Office 365 admin center.
 
 When adding users, you can also assign admin privileges to certain users in your team. You'll also want to assign **Product licenses** to each user so that subscriptions can be assigned to the person.
@@ -132,7 +132,7 @@ When adding users, you can also assign admin privileges to certain users in your
 
   ![Verify users and assigned product licenses](images/o365_active_users.png)
 
-### 2.3 Add Microsoft Intune
+### 1.3 Add Microsoft Intune
 Microsoft Intune provides mobile device management, app management, and PC management capabilities from the cloud. Using Intune, organizations can provide their employees with access to apps, data, and corporate resources from anywhere on almost any device while helping to keep corporate information secure. To learn more, see <a href="https://docs.microsoft.com/en-us/intune/understand-explore/introduction-to-microsoft-intune" target="_blank">What is Intune?</a>
 
 **To add Microsoft Intune to your tenant**
@@ -155,7 +155,7 @@ Microsoft Intune provides mobile device management, app management, and PC manag
 
 Intune should now be added to your tenant. We'll come back to Intune later when we [Configure Windows Store for Business for app distribution](#26-configure-windows-store-for-business-for-app-distribution).
 
-### 2.3 Add Azure AD to your domain
+### 1.4 Add Azure AD to your domain
 Microsoft Azure is an open and flexible cloud platform that enables you to quickly build, deploy, and manage apps across a global network of Microsoft-managed datacenters. In this walkthrough, we won't be using the full power of Azure and we'll primarily use it to create groups that we then use for provisioning through Intune. 
 
 **To add Azure AD to your domain**
@@ -187,7 +187,7 @@ Microsoft Azure is an open and flexible cloud platform that enables you to quick
 
   This will take you to the <a href="https://portal.azure.com" target="_blank">Microsoft Azure portal</a>.
 
-### 2.4 Add groups in Azure AD
+### 1.5 Add groups in Azure AD
 This section is the walkthrough is optional. However, we recommend that you create groups in Azure AD to manage access to corporate resources, such as apps, policies and settings, and so on. For more information, see <a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups" target="_blank">Managing access to resources with Azure Active Directory groups</a>.
 
 To add Azure AD group(s), we will use the <a href="https://manage.windowsazure.com/" target="_blank">classic Azure portal (https://manage.windowsazure.com)</a>. See <a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-accessmanagement-manage-groups" target="_blank">Managing groups in Azure Active Directory</a> for more information about managing groups.
@@ -231,7 +231,7 @@ To add Azure AD group(s), we will use the <a href="https://manage.windowsazure.c
 
 7. Repeat steps 2-6 to add other groups. You can add groups based on their roles in your company, based on the apps that each group can use, and so on.
 
-### 2.5 Configure automatic MDM enrollment with Intune
+### 1.6 Configure automatic MDM enrollment with Intune
 Now that you have Azure AD Premium and have it properly configured, you can configure automatic MDM enrollment with Intune, which allows users to enroll their Windows devices into Intune management, join their devices directly to Azure AD, and get access to Office 365 resources after sign in.
 
 You can read <a href="https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/" target="_blank">this blog post</a> to learn how you can combine login, Azure AD Join, and Intune MDM enrollment into an easy step so that you can bring your devices into a managed state that complies with the policies for your organization. We will use this blog post as our guide for this part of the walkthrough.
@@ -275,7 +275,7 @@ You can read <a href="https://blogs.technet.microsoft.com/enterprisemobility/201
 
   ![Configure automatic MDM enrollment with Intune](images/azure_portal_classic_configure_intune_mdm_enrollment.png)
 
-### 2.6 Configure Windows Store for Business for app distribution
+### 1.7 Configure Windows Store for Business for app distribution
 Next, you'll need to configure Windows Store for Business to distribute apps with a management tool such as Intune.
 
 In this part of the walkthrough, we'll be working on the <a href="https://manage.microsoft.com/" target="_blank">Microsoft Intune management portal</a> and <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Windows Store for Business</a>.
@@ -364,9 +364,9 @@ If you need to sync your most recently purchased apps and have it appear in your
 **To add more apps**
 - If you have other apps that you want to deploy or manage, you must add it to Microsoft Intune. To deploy Win32 apps and Web links, see <a href="https://docs.microsoft.com/en-us/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune" target="_blank">Add apps for enrolled devices to Intune</a> for more info on how to do this.
 
-## 3. Set up devices
+## 2. Set up devices
 
-### 3.1 Set up new devices
+### 2.1 Set up new devices
 To set up new Windows devices, go through the Windows initial device setup or first-run experience to configure your device.
 
 **<a name="usewindowsoobe"></a>To set up a device**
@@ -399,14 +399,14 @@ To set up new Windows devices, go through the Windows initial device setup or fi
 
   Windows will continue with setup and you may be asked to set up a PIN for Windows Hello if your organization has it enabled.
 
-### 3.2 Verify correct device setup
+### 2.2 Verify correct device setup
 Verify that the device is set up correctly and boots without any issues.
 
 **To verify that the device was set up correctly**
 1. Click on the **Start** menu and select some of the options to make sure everything launches properly.
 2. Confirm that the Store and built-in apps are working.
 
-### 3.3 Verify the device is Azure AD joined
+### 2.3 Verify the device is Azure AD joined
 In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, verify that the device is joined to Azure AD and shows up as being managed in Microsoft Intune.
 
 **To verify if the device is joined to Azure AD**
@@ -427,7 +427,12 @@ In the <a href="https://manage.microsoft.com/" target="_blank">Intune management
 
   ![Check that the device appears in Intune](images/intune_groups_devices_list.png)
 
-### 3.4 Reconfigure app deployment settings
+## 3. Manage device settings and features
+You can use Microsoft Intune admin settings and policies to manage features on your organization's mobile devices and computers. For more info, see [Manage settings and features on your devices with Microsoft Intune policies](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
+
+In this section, we'll show you how to reconfigure app deployment settings and add a new policy that will disable the camera for the Intune-managed devices and turn off Windows Hello and PINs during setup.
+
+### 3.1 Reconfigure app deployment settings
 In some cases, if an app is missing from the device, you need to reconfigure the deployment settings for the app and set the app to require installation as soon as possible.
 
 **To reconfigure app deployment settings**
@@ -451,10 +456,7 @@ In some cases, if an app is missing from the device, you need to reconfigure the
 
     ![Confirm that additiional apps were deployed to the device](images/win10_deploy_apps_immediately.png)
 
-## 4. Manage device settings and features
-You can use Microsoft Intune admin settings and policies to manage features on your organization's mobile devices and computers. For more info, see [Manage settings and features on your devices with Microsoft Intune policies](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
-
-In this walkthrough, we'll show you how to add a new policy that will disable the camera for the Intune-managed devices and turn off Windows Hello and PINs during setup.
+### 3.2 Configure other settings in Intune
 
 **To disable the camera**
 1. In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Policy > Configuration Policies**.
@@ -495,10 +497,10 @@ In this walkthrough, we'll show you how to add a new policy that will disable th
 
 To test whether these policies get successfully deployed to your tenant, go through [5. Add more devices and users](#5-add-more-devices-and-users) and setup another Windows device and login as one of the users. 
 
-## 5. Add more devices and users
+## 4. Add more devices and users
 After your cloud infrastructure is set up and you have a device management strategy in place, you may need to add more devices or users and you want the same policies to apply to these new devices and users. In this section, we'll show you how to do this.
 
-### 5.1 Connect other devices to your cloud infrastructure
+### 4.1 Connect other devices to your cloud infrastructure
 Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [3. Set up devices](#3-set-up-devices). 
 
 For other devices, such as those personally-owned by employees who need to connect to the corporate network to access corporate resources (BYOD), you can follow the steps in this section to get these devices connected.
@@ -542,7 +544,7 @@ For other devices, such as those personally-owned by employees who need to conne
 
 9. You can confirm that the new device and user are showing up as Intune-managed by going to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a> and following the steps in [3.3 Verify the device is Azure AD joined](#33-verify-the-device-is-azure-ad-joined). It may take several minutes before the new device shows up so check again later.
 
-### 5.2 Add a new user
+### 4.2 Add a new user
 You can add new users to your tenant simply by adding them to the Office 365 groups. Adding new users to Office 365 groups automatically adds them to the corresponding groups in Microsoft Intune.
 
 See [Add users to Office 365](https://support.office.com/en-us/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc?ui=en-US&rs=en-US&ad=US&fromAR=1) to learn more. Once you're done adding new users, go to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a> and verify that the same users were added to the Intune groups as well.
