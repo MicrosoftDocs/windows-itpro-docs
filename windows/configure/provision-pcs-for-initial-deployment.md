@@ -38,9 +38,12 @@ In a simple provisioning package, you can configure:
 
 - Device name
 - Upgraded product edition
+- Configure the device for shared use
+- Remove pre-installed software
 - Wi-Fi network 
-- Active Directory enrollment
+- Active Directory or Azure Active Directory enrollment
 - Local administrator account 
+- Add applications and certificates
 
 Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more. To learn about provisioning packages that include more than the settings in a simple provisioning package, see [Provision PCs with apps and certificates](provision-pcs-with-apps-and-certificates.md). 
 
@@ -111,7 +114,6 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 - [Create a provisioning package](provisioning-create-package.md)
 - [Apply a provisioning package](provisioning-apply-package.md)
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
-- [Provision PCs with apps and certificates for initial deployments (advanced provisioning)](provision-pcs-with-apps-and-certificates.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
 - [NFC-based device provisioning](provisioning-nfc.md)
 - [Windows ICD command-line interface (reference)](provisioning-command-line.md)

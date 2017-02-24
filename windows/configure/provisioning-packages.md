@@ -26,6 +26,8 @@ Provisioning packages are simple enough that with a short set of written instruc
 The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Windows Configuration Designer, a tool for configuring provisioning packages. Windows Configuration Designer is also available as an [app in the Windows Store](https://www.microsoft.com/store/apps/9nblggh4tx22). 
 
 
+
+
 ## New in Windows 10, version 1703
 
 - The tool for creating provisioning packages is renamed Windows Configuration Designer, replacing the Windows Imaging and Configuration Designer (ICD) tool. The components for creating images have been removed from Windows Configuration Designer, which now provides access to runtime settings only.
@@ -65,7 +67,7 @@ Provisioning packages can be:
 
 ### Configuration Designer wizards
 
-The following table describes settings that you can configure using the wizards in the Configuration Designer to create provisioning packages.
+The following table describes settings that you can configure using the wizards in Windows Configuration Designer to create provisioning packages.
 
 <table><tr><td align="left">**Step**</td><td align="left">**Description**</td><td>**Desktop</br>wizard**</td><td align="center">**Mobile</br>wizard**</td><td>**Kiosk</br>wizard**</td></tr>
 <tr><td valign="top">Set up device</td><td valign="top">Assign device name,</br>enter product key to upgrade Windows,</br>configure shared used,</br>remove pre-installed software</td><td align="center" valign="top">![yes](images/checkmark.png)</td><td align="center" valign="top">![yes](images/checkmark.png)</br>(Only device name and upgrade key)</td><td align="center" valign="top">![yes](images/checkmark.png)</td></tr>
@@ -147,7 +149,6 @@ Windows ICD in Windows 10, version 1607, supported the following scenarios for I
 - [Apply a provisioning package](provisioning-apply-package.md)
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
-- [Provision PCs with apps and certificates for initial deployments (advanced provisioning)](provision-pcs-with-apps-and-certificates.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
 - [NFC-based device provisioning](provisioning-nfc.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)

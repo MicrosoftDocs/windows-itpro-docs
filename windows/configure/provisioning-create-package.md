@@ -151,7 +151,6 @@ For details on each specific setting, see [Windows Provisioning settings referen
 - [Apply a provisioning package](provisioning-apply-package.md)
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
-- [Provision PCs with apps and certificates for initial deployments (advanced provisioning)](provision-pcs-with-apps-and-certificates.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
 - [NFC-based device provisioning](provisioning-nfc.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
