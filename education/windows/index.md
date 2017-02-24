@@ -14,7 +14,9 @@ author: CelesteDG
 # Windows 10 for Education
 <link rel="stylesheet" href="https://az835927.vo.msecnd.net/sites/uwp/Resources/css/custom.css">
 
-## ![Learn more about Windows](images/education.png) Learn
+## Windows 10
+
+### ![Learn more about Windows](images/education.png) Learn
 
 <div class="side-by-side"> <div class="side-by-side-content">
 <div class="side-by-side-content-left">
@@ -34,7 +36,7 @@ author: CelesteDG
 </div>
  </div></div>
 
-## ![Plan for Windows 10 in your school](images/clipboard.png) Plan
+### ![Plan for Windows 10 in your school](images/clipboard.png) Plan
 
 <div class="side-by-side"> <div class="side-by-side-content">
 <div class="side-by-side-content-left"><p>
@@ -44,7 +46,7 @@ author: CelesteDG
 <p><b>[Chromebook migration guide](chromebook-migration-guide.md)</b><br />Find out how you can migrate a Chromebook-based learning environment to a Windows 10-based learning environment.</p></div>
  </div></div>
 
- ## ![Deploy Windows 10 for education](images/PCicon.png) Deploy
+ ### ![Deploy Windows 10 for education](images/PCicon.png) Deploy
 
  <div class="side-by-side"> <div class="side-by-side-content">
  <div class="side-by-side-content-left">
@@ -57,12 +59,28 @@ author: CelesteDG
 </div>
 </div></div>
 
- ## ![Deploy Windows 10 for education](images/windows.png) Upgrade
+ ### ![Upgrade to Windows 10 for education](images/windows.png) Upgrade
 
  <div class="side-by-side"> <div class="side-by-side-content">
  <div class="side-by-side-content-left"><p><b>[Upgrade Windows 10 Pro to Pro Education from Windows Store for Business](windows-10-pro-to-pro-edu-upgrade.md)</b><br />If you have an education tenant and use Windows 10 Pro in your schools now, find out how you can opt-in to a free upgrade to Windows 10 Pro Education.</p></div>
  </div>
 
+## Windows 8.1
+Follow these links to find step-by-step guidance on how to deploy Windows 8.1 in an academic environment.
+
+<div class="side-by-side"> <div class="side-by-side-content">
+<div class="side-by-side-content-left">
+<p><b><a href="https://technet.microsoft.com/library/dn645509.aspx" target="_blank">Windows 8.1 deployment planning</a></b><br />Explore key considerations and questions that should be answered when planning for Windows 8.1 deployment.</p>
+<p><b><a href="https://technet.microsoft.com/library/dn645528.aspx" target="_blank">Windows 8.1 deployment to PCs</a></b><br />Get an overview of Windows 8.1 deployment to PCs in an educational environment.</p>
+<p><b><a href="https://technet.microsoft.com/library/dn645510.aspx" target="_blank">BYOD</a></b><br />Explore Bring Your Own Device (BYOD) considerations, including device types, infrastructure, and deployment models.</p>
+<p><b><a href="https://technet.microsoft.com/library/dn645488.aspx" target="_blank">Deploying Windows RT 8.1</a></b><br />Get step-by-step instructions on how to configure and deploy Windows RT devices (like Surface and other tablets) in educational environments.</p>
+</div>
+<div class="side-by-side-content-right">
+<p><b><a href="https://technet.microsoft.com/library/dn645483.aspx" target="_blank">Virtual Desktop Infrastructure</a></b><br />Learn how to address challenges related to BYOD scenarios using Virtual Desktop Infrastructure (VDI).</p>
+<p><b><a href="https://technet.microsoft.com/library/dn645532.aspx" target="_blank">Windows Store apps</a></b><br />Explore Windows Store app deployment strategies and considerations for educational institutions running Windows 8.1.</p>
+<p><b><a href="https://technet.microsoft.com/library/dn645486.aspx" target="_blank">Windows To Go</a></b><br />Learn about the benefits, limitations, and processes involved in deploying Windows To Go.</p>
+</div>
+</div></div>
 
 ## Related topics
 
