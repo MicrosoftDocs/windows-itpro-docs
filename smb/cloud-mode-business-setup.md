@@ -16,7 +16,7 @@ author: CelesteDG
 
 -   Office 365 Business Premium, Azure AD Premium, Intune, Windows Store for Business, Windows 10
 
-In this walkthrough, we'll show you how to deploy and manage a full cloud IT solution for your small to medium business using Microsoft Azure AD, Intune, Office 365, and Windows. We'll show you the basics on how to:
+In this walkthrough, we'll show you how to deploy and manage a full cloud IT solution for your small to medium business using Microsoft Azure AD, Intune, Office 365, and Windows 10. We'll show you the basics on how to:
 - Acquire an Office 365 business domain
 - Add Microsoft Intune and Azure Active Directory (AD) Premium licenses to your business tenant
 - Set up Windows Store for Business and manage app deployment and sync with Intune
@@ -24,7 +24,7 @@ In this walkthrough, we'll show you how to deploy and manage a full cloud IT sol
 - Create policies and app deployment rules
 - Log in as a user and start using the device
 
-Go to the <a href="http://business.microsoft.com" target="_blank">Microsoft Business site</a> and select **Products** to learn more about pricing and purchasing options for businesses.
+Go to the <a href="http://business.microsoft.com" target="_blank">Microsoft Business site</a> and select **Products** to learn more about pricing and purchasing options for your business.
 
 ## 1. Get ready
 Here's a few things to keep in mind before you get started:
@@ -562,4 +562,6 @@ Whether it's in the classroom, getting the most out of your devices, or learning
 - <a href="https://support.office.com/" target="_blank">Office help and training</a>
 - <a href="https://support.microsoft.com/en-us/products/windows?os=windows-10" target="_blank">Windows 10 help</a>
 
+## Related topics
 
+- [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/index)
