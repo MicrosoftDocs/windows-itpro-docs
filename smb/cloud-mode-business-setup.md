@@ -153,7 +153,7 @@ Microsoft Intune provides mobile device management, app management, and PC manag
 
   ![Microsoft Intune management portal](images/intune_portal_home.png)
 
-Intune should now be added to your tenant. We'll come back to Intune later when we [Configure Windows Store for Business for app distribution](#26-configure-windows-store-for-business-for-app-distribution).
+Intune should now be added to your tenant. We'll come back to Intune later when we [Configure Windows Store for Business for app distribution](#17-configure-windows-store-for-business-for-app-distribution).
 
 ### 1.4 Add Azure AD to your domain
 Microsoft Azure is an open and flexible cloud platform that enables you to quickly build, deploy, and manage apps across a global network of Microsoft-managed datacenters. In this walkthrough, we won't be using the full power of Azure and we'll primarily use it to create groups that we then use for provisioning through Intune. 
@@ -389,7 +389,7 @@ To set up new Windows devices, go through the Windows initial device setup or fi
 
   ![Choose how you'll connect the Windows device](images/win10_choosehowtoconnect.png)
 
-4. In the **Let's get you signed in** screen, sign in using one of the user accounts you added in section [2.2 Add users and assign product licenses](#22-add-users-and-assign-product-licenses). We suggest signing in as one of the global administrators. Later, sign in on another device using one of the non-admin accounts.
+4. In the **Let's get you signed in** screen, sign in using one of the user accounts you added in section [1.2 Add users and assign product licenses](#12-add-users-and-assign-product-licenses). We suggest signing in as one of the global administrators. Later, sign in on another device using one of the non-admin accounts.
 
   **Figure 33** - Sign in using one of the accounts you added
 
@@ -495,13 +495,13 @@ In some cases, if an app is missing from the device, you need to reconfigure the
   > [!NOTE]
   > This policy is a tenant-wide Intune setting. It disables Windows Hello and required PINs during setup for all enrolled devices in a tenant.
 
-To test whether these policies get successfully deployed to your tenant, go through [5. Add more devices and users](#5-add-more-devices-and-users) and setup another Windows device and login as one of the users. 
+To test whether these policies get successfully deployed to your tenant, go through [4. Add more devices and users](#4-add-more-devices-and-users) and setup another Windows device and login as one of the users. 
 
 ## 4. Add more devices and users
 After your cloud infrastructure is set up and you have a device management strategy in place, you may need to add more devices or users and you want the same policies to apply to these new devices and users. In this section, we'll show you how to do this.
 
 ### 4.1 Connect other devices to your cloud infrastructure
-Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [3. Set up devices](#3-set-up-devices). 
+Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [2. Set up devices](#2-set-up-devices). 
 
 For other devices, such as those personally-owned by employees who need to connect to the corporate network to access corporate resources (BYOD), you can follow the steps in this section to get these devices connected.
 
@@ -542,7 +542,7 @@ For other devices, such as those personally-owned by employees who need to conne
 
   ![Device is enrolled in Azure AD](images/win10_device_enrolled_in_aad.png)
 
-9. You can confirm that the new device and user are showing up as Intune-managed by going to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a> and following the steps in [3.3 Verify the device is Azure AD joined](#33-verify-the-device-is-azure-ad-joined). It may take several minutes before the new device shows up so check again later.
+9. You can confirm that the new device and user are showing up as Intune-managed by going to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a> and following the steps in [2.3 Verify the device is Azure AD joined](#23-verify-the-device-is-azure-ad-joined). It may take several minutes before the new device shows up so check again later.
 
 ### 4.2 Add a new user
 You can add new users to your tenant simply by adding them to the Office 365 groups. Adding new users to Office 365 groups automatically adds them to the corresponding groups in Microsoft Intune.
