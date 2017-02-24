@@ -143,7 +143,7 @@ As of Windows 10, version 1703, you can use code integrity policies not only to 
 | Approach (as of Windows 10, version 1703) | Guideline |
 |---|---|
 | You can work from a list of plug-ins, add-ins, or modules that you want only a specific application to be able to run. Other applications would be blocked from running them. | Use `New-CIPolicyRule` with the `-AppID` option. |
-| In addition, you can work  from a list of plug-ins, add-ins, or modules that you want to block in a specific application. Other applications would be allowed to run them. | Use New-CIPolicyRule with the `-AppID` and `-Deny` options. |
+| In addition, you can work  from a list of plug-ins, add-ins, or modules that you want to block in a specific application. Other applications would be allowed to run them. | Use `New-CIPolicyRule` with the `-AppID` and `-Deny` options. |
 
 To work with these options, the typical method is to create a policy that only affects plug-ins, add-ins, and modules, then merge it into your ‘master’ policy (merging is described in the next section).
 
