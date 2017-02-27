@@ -45,7 +45,7 @@ All threat intelligence API requests use the following basic URL pattern:
 
 For this URL:
 -	`https://TI.SecurityCenter.Windows.com` is the threat intelligence API endpoint.
--	`{version}` is the target service version. Currently only supported version is: v1.0.
+-	`{version}` is the target service version. Currently, the only supported version is: v1.0.
 -	`{resource}` is resource segment or path, such as:
   -	AlertDefinitions (for specific single resource, add: (id))
   -	IndicatorsOfCompromise (for specific single resource, add: (id))
@@ -54,7 +54,7 @@ For this URL:
 **Quotas**</br>
 Each tenant has a defined quota that limits the number of possible alert definitions, IOCs and another quota for IOCs of Action different than “equals” in the system. If you upload data beyond this quota, you'll encounter an HTTP error status code 507 (Insufficient Storage).
 
-## Threat Intelligence API metadata
+## Threat intelligence API metadata
 The metadata document ($metadata) is published at the service root.
 
 For example, you can view the service document for the v1.0 version using the following URL:
@@ -190,12 +190,11 @@ Authorization: Bearer <access_token>
 Accept: application/json;odata.metadata=none
 ```
 
-If successful, you should get a 200 OK response containing a single indicator of compromise representation (per the specified ID) in the payload, as shown as follows:
+If successful, you should get a 200 OK response containing a single indicator of compromise representation (for the specified ID) in the payload, as shown as follows:
 
 ```json
 HTTP/1.1 200 OK
-content - type: application / json;
-odata.metadata = none
+content - type: application/json;odata.metadata = none
 
 
 {
