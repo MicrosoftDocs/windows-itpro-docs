@@ -26,11 +26,17 @@ author: iaanw
 
 - Enterprise security administrators
 
+**Manageability available with**
+
+- Group Policy
+- Windows Settings
 
 
 Block at First Sight is a feature of Windows Defender cloud protection that provides a way to detect and block new malware within seconds. 
 
 It is enabled by default when certain pre-requisite settings are also enabled. In most cases, these pre-requisite settings are also enabled by default, so the feature is running without any intervention.
+
+You can also [specify how long the file should be prevented from running](configure-cloud-block-timeout-period-windows-defender-antivirus.md) while the cloud-based protection service analyzes the file.
 
 ## How it works
 

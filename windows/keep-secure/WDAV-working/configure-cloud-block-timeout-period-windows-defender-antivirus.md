@@ -24,9 +24,15 @@ author: iaanw
 
 - Enterprise security administrators
 
+**Manageability available with**
+
+- Group Policy
+
 When Windows Defender Antivirus is suspicious of a file, it can prevent the file from running while it queries the [Windows Defender Antivirus cloud-protection service](utilize-microsoft-cloud-protection-windows-defender-antivirus.md).
 
-The default period that the file will be blocked for is 10 seconds. You can specify an additional period of time to wait before the file is allowed to run. This can help ensure there is enough time to receive a proper determination from the Windows Defendre Antivirus cloud.
+The default period that the file will be [blocked](configure-block-at-first-sight-windows-defender-antivirus.md) for is 10 seconds. You can specify an additional period of time to wait before the file is allowed to run. This can help ensure there is enough time to receive a proper determination from the Windows Defendre Antivirus cloud.
+
+
 
 ## Prerequisites to use the extended cloud block timeout
 
@@ -34,12 +40,7 @@ The [Block at First Sight](configure-block-at-first-sight-windows-defender-antiv
     
 ## Specify the extended timeout period
 
-You can use System Center Configuration Manager or Group Policy to specify an extended timeout for cloud checks.
-
-**Use Configuration Manager to specify an extended timeout period**
-
->[!NOTE]
->Not sure if this is being doc'd on SCCM side. Will check with Nathan. What about PowerShell cmdlets? Are there any that cover this?
+You can use Group Policy to specify an extended timeout for cloud checks.
 
 **Use Group Policy to specify an extended timeout period:**
 

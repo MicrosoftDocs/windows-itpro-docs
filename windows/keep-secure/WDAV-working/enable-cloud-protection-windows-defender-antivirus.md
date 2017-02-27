@@ -69,8 +69,6 @@ See  [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus]
 
 See [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service) for details on configuring System Center Configuration Manager (current branch).
 
->[!NOTE] I can't see options for 2012, guessing it doesn't exist?
-
 
 **Use PowerShell cmdlets to enable cloud-delivered protection:**
 
@@ -129,5 +127,5 @@ See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](http
 - [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-windows-defender-antivirus.md)
 - [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)]
 - [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx)
--  [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
+- [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 - [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
