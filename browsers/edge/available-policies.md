@@ -9,7 +9,7 @@ title: Available policies for Microsoft Edge (Microsoft Edge for IT Pros)
 localizationpriority: high
 ---
 
-# Available policies for Microsoft Edge
+# Available Group Policy and Mobile Data Management (MDM) settings policies for Microsoft Edge
 
 **Applies to:**
 
