@@ -74,6 +74,9 @@ The Windows Update client will try to download Express first, and under certain 
 
 At this point, the download is complete and the update is ready to be installed.
 
+>[!TIP]
+>Express will **always** be leveraged if your machines are updated regularly with the latest cumulative updates.
+
 ## Steps to manage updates for Windows 10
 
 <table><tbody>
