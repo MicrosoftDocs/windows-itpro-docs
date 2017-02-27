@@ -42,6 +42,8 @@ To configure the taskbar:
 
 >[!IMPORTANT]
 >If you use a provisioning package to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user then unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration that allows users to make changes that will persist, apply your configuration by using Group Policy.
+>
+>If you use Group Policy and your configuration only contains a taskbar layout, the default Windows tile layout will be applied and cannot be changed by users. If you use Group Policy and your configuration includes taskbar and a full Start layout, users can only make changes to the taskbar. If you use Group Policy and your configuration includes taskbar and a [partial Start layout](https://technet.microsoft.com/itpro/windows/manage/customize-and-export-start-layout#configure-a-partial-start-layout), users can make changes to the taskbar and to tile groups not defined in the partial Start layout.
 
 ### Tips for finding AUMID and Desktop Application Link Path
 
