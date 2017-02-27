@@ -4,7 +4,7 @@ description: Use Windows Update for Business deployments with management tools s
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
@@ -23,10 +23,10 @@ You can integrate Windows Update for Business deployments with existing manageme
 ## Integrate Windows Update for Business with Windows Server Update Services
 
 
-For Windows 10, version 1607, devices can now be configured to receive updates from both Windows Update and Windows Server Update Services (WSUS).  In a joint WSUS and Windows Update for Business setup:
+For Windows 10, version 1607, devices can now be configured to receive updates from both Windows Update (or Microsoft Update) and Windows Server Update Services (WSUS).  In a joint WSUS and Windows Update for Business setup:
 
 - Devices will receive their Windows content from Microsoft and defer these updates according to Windows Update for Business policy
-- All other content synced from WSUS will be directly applied to the device; that is, non-Windows Updates content will not follow your Windows Update for Business deferral policies
+- All other content synced from WSUS will be directly applied to the device; that is, updates to products other than Windows will not follow your Windows Update for Business deferral policies
 
 ### Configuration example \#1: Deferring Windows Update updates with other update content hosted on WSUS
 
@@ -34,13 +34,13 @@ For Windows 10, version 1607, devices can now be configured to receive updates f
 
 - Device is configured to defer Windows Quality Updates using Windows Update for Business
 - Device is also configured to be managed by WSUS
-- Device is not configured to include Microsoft Updates from Windows Update (**Update/AllowMUUpdateService** = not enabled)
-- Admin has opted to put Microsoft updates on WSUS
+- Device is not configured to enable Microsoft Update (**Update/AllowMUUpdateService** = not enabled)
+- Admin has opted to put updates to Office and other products on WSUS
 - Admin has also put 3rd party drivers on WSUS
 
 <table><thead><th>Content</th><th>Metadata source</th><th>Payload source</th><th>Deferred?</th><th></th></thead>
-<tbody><tr><td>Windows Update</td><td>Windows Update</td><td>Windows Update</td><td>Yes</td><td rowspan="3">![diagram of content flow](images/wufb-config1a.png)</td></tr>
-<tr><td>Microsoft Update (such as Office updates)</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
+<tbody><tr><td>Updates to Windows</td><td>Windows Update</td><td>Windows Update</td><td>Yes</td><td rowspan="3">![diagram of content flow](images/wufb-config1a.png)</td></tr>
+<tr><td>Updates to Office and other products</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 <tr><td>Third-party drivers</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 </table>
 
@@ -54,10 +54,9 @@ For Windows 10, version 1607, devices can now be configured to receive updates f
 
 
 <table><thead><th>Content</th><th>Metadata source</th><th>Payload source</th><th>Deferred?</th><th></th></thead>
-<tbody><tr><td>Windows Update (exclude driver)</td><td>Windows Update</td><td>Windows Update</td><td>Yes</td><td rowspan="4">![diagram of content flow](images/wufb-config2.png)</td></tr>
-<tr><td>Windows Update drivers</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
-<tr><td>Microsoft Update (such as Office updates)</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
-<tr><td>Windows drivers, third-party drivers</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
+<tbody><tr><td>Updates to Windows (excluding drivers)</td><td>Windows Update</td><td>Windows Update</td><td>Yes</td><td rowspan="4">![diagram of content flow](images/wufb-config2.png)</td></tr>
+<tr><td>Updates to Office and other products</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
+<tr><td>Drivers</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 
 </table>
 
@@ -66,18 +65,18 @@ For Windows 10, version 1607, devices can now be configured to receive updates f
 **Configuration:**
 
 - Device is configured to defer Quality Updates using Windows Update for Business and to be managed by WSUS
-- Device is configured to “receive updates for other Microsoft products” along with Windows Update updates (**Update/AllowMUUpdateService** = enabled)
-- Admin has also placed Microsoft Update content on the WSUS server
+- Device is configured to “receive updates for other Microsoft products” along with updates to Windows (**Update/AllowMUUpdateService** = enabled)
+- Admin has also placed Microsoft Update, third-paprty, and locally-published update content on the WSUS server
 
-In this example, the Microsoft Update deferral behavior is slightly different than if WSUS were not enabled. 
-- In a non-WSUS case, the Microsoft Update updates would be deferred just as any Windows Update update would be.  
-- However, with WSUS also configured, Microsoft Update content is sourced from Microsoft but deferral policies are not applied.  
+In this example, the deferral behavior for updates to Office and other non-Windows products is slightly different than if WSUS were not enabled. 
+- In a non-WSUS case, these updates would be deferred just as any update to Windows would be.  
+- However, with WSUS also configured, these updates are sourced from Microsoft but deferral policies are not applied.  
 
 
 <table><thead><th>Content</th><th>Metadata source</th><th>Payload source</th><th>Deferred?</th><th></th></thead>
-<tbody><tr><td>Windows Update (exclude drivers)</td><td>Windows Update</td><td>Windows Update</td><td>Yes</td><td rowspan="3">![diagram of content flow](images/wufb-config3a.png)</td></tr>
-<tr><td>Microsoft Update (such as Office updates)</td><td>Microsoft Update</td><td>Microsoft Update</td><td>No</td></tr>
-<tr><td>Drivers, third-party</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
+<tbody><tr><td>Updates to Windows (excluding drivers)</td><td>Microsoft Update</td><td>Microsoft Update</td><td>Yes</td><td rowspan="3">![diagram of content flow](images/wufb-config3a.png)</td></tr>
+<tr><td>Updates to Office and other products</td><td>Microsoft Update</td><td>Microsoft Update</td><td>No</td></tr>
+<tr><td>Drivers, third-party applications</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 </table>
 
 >[!NOTE]

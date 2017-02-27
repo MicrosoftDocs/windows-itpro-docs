@@ -34,7 +34,7 @@ Use the following table to compare different security options for Remote Desktop
 > [!NOTE]
 > This table compares different options than are shown in the previous diagram.
 
-| Remote Desktop with Credential Delegation | Remote Credential Guard | Restricted Admin mode |
+| Remote Desktop | Remote Credential Guard | Restricted Admin mode |
 |---|---|---|
 | Protection: Provides **less protection** than other modes in this table. | Protection: Provides **moderate protection**, compared to other modes in this table. | Protection: Provides **the most protection** of the modes in this table. However, it also requires you to be in the local “Administrators” group on the remote computer. |
 | Version support: The remote computer can be running **any operating system that supports credential delegation**, which was introduced in Windows Vista. | Version support: The remote computer must be running **at least Windows 10, version 1607, or Windows Server 2016**. | Version support: The remote computer must be running **at least patched Windows 7 or patched Windows Server 2008 R2**.<br><br>For more information about patches (software updates) related to Restricted Admin mode, see  [Microsoft Security Advisory 2871997](https://technet.microsoft.com/library/security/2871997.aspx). |

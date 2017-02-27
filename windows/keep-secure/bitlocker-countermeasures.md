@@ -23,9 +23,9 @@ The sections that follow provide more detailed information about the different t
 
 ### Protection before startup
 
-Before Windows starts, you must rely on security features implemented as part of the device hardware, including TPM andSecure Boot. Fortunately, many modern computers feature TPM.
+Before Windows starts, you must rely on security features implemented as part of the device hardware, including TPM and Secure Boot. Fortunately, many modern computers feature TPM.
 
-**Trusted Platform Module**
+#### Trusted Platform Module
 
 Software alone isn’t sufficient to protect a system. After an attacker has compromised software, the software might be unable to detect the compromise. Therefore, a single successful software compromise results in an untrusted system that might never be detected. Hardware, however, is much more difficult to modify.
 
@@ -33,7 +33,7 @@ A TPM is a microchip designed to provide basic security-related functions, prima
 By binding the BitLocker encryption key with the TPM and properly configuring the device, it’s nearly impossible for an attacker to gain access to the BitLocker-encrypted data without obtaining an authorized user’s credentials. Therefore, computers with a TPM can provide a high level of protection against attacks that attempt to directly retrieve the BitLocker encryption key.
 For more info about TPM, see [Trusted Platform Module](trusted-platform-module-overview.md).
 
-**UEFI and Secure Boot**
+#### UEFI and Secure Boot
 
 No operating system can protect a device when the operating system is offline. For that reason, Microsoft worked closely with hardware vendors to require firmware-level protection against boot and rootkits that might compromise an encryption solution’s encryption keys.
 
@@ -53,7 +53,7 @@ Using the digital signature, UEFI verifies that the bootloader was signed using 
 
 If the bootloader passes these two tests, UEFI knows that the bootloader isn’t a bootkit and starts it. At this point, Trusted Boot takes over, and the Windows bootloader, using the same cryptographic technologies that UEFI used to verify the bootloader, then verifies that the Windows system files haven’t been changed.
 
-All Windows 8–certified devices must meet several requirements related to UEFI-based Secure Boot:
+Starting with Windows 8, certified devices must meet several requirements related to UEFI-based Secure Boot:
 
 -   They must have Secure Boot enabled by default.
 -   They must trust Microsoft’s certificate (and thus any bootloader Microsoft has signed).
@@ -115,7 +115,11 @@ Windows 10 uses Trusted Boot on any hardware platform: It requires neither UEFI
 
 Because UEFI-based Secure Boot has protected the bootloader and Trusted Boot has protected the Windows kernel or other Windows startup components, the next opportunity for malware to start is by infecting a non-Microsoft boot-related driver. Traditional antimalware apps don’t start until after the boot-related drivers have been loaded, giving a rootkit disguised as a driver the opportunity to work.
 
-The purpose of ELAM is to load an antimalware driver before drivers that are flagged as boot-start can be executed. This approach provides the ability for an antimalware driver to register as a trusted boot-critical driver. It is launched during the Trusted Boot process, and with that, Windows ensures that it is loaded before any other non-Microsoft software.
+Early Launch Antimalware (ELAM) is designed to enable the antimalware solution to start before all non-Microsoft drivers and apps. ELAM checks the integrity of non-Microsoft drivers to determine whether the drivers are trustworthy. Because Windows needs to start as fast as possible, ELAM cannot be a complicated process of checking the driver files against known malware signatures. Instead, ELAM has the simple task of examining every boot driver and determining whether it is on the list of trusted drivers. If malware modifies a boot-related driver, ELAM will detect the change, and Windows will prevent the driver from starting, thus blocking driver-based rootkits. ELAM also allows the registered antimalware provider to scan drivers that are loaded after the boot process is complete.
+
+Windows Defender in Windows 10 supports ELAM, as do Microsoft System Center 2012 Endpoint Protection and non-Microsoft antimalware apps.
+
+To do this, ELAM loads an antimalware driver before drivers that are flagged as boot-start can be executed. This approach provides the ability for an antimalware driver to register as a trusted boot-critical driver. It is launched during the Trusted Boot process, and with that, Windows ensures that it is loaded before any other non-Microsoft software.
 
 With this solution in place, boot drivers are initialized based on the classification that the ELAM driver returns according to an initialization policy. IT pros have the ability to change this policy through Group Policy.
 ELAM classifies drivers as follows:

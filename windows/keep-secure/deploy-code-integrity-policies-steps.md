@@ -38,11 +38,11 @@ To create a code integrity policy, copy each of the following commands into an e
 
     > **Notes**
     
-    > - By specifying the *–UserPEs* parameter, rule option **0 Enabled:UMCI** is automatically added to the code integrity policy. If you do not specify this parameter, to enable UMCI, use [Set-RuleOption](https://technet.microsoft.com/library/mt634483.aspx) as shown in the following command:<br>**Set-RuleOption -FilePath $InitialCIPolicy -Option 0** 
+    > - When you specify the **-UserPEs** parameter (to include user mode executables in the scan), rule option **0 Enabled:UMCI** is automatically added to the code integrity policy. In contrast, if you do not specify **-UserPEs**, the policy will be empty of user mode executables and will only have rules for kernel mode binaries like drivers, in other words, the whitelist will not include applications. If you create such a policy and later add rule option **0 Enabled:UMCI**, all attempts to start applications will cause a response from Device Guard. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. 
+    
+    > - You can add the **-Fallback** parameter to catch any applications not discovered using the primary file rule level specified by the **-Level** parameter. For more information about file rule level options, see [Code integrity file rule levels](deploy-code-integrity-policies-policy-rules-and-file-rules.md#code-integrity-file-rule-levels) in “Deploy code integrity policies: policy rules and file rules.”
 
-    > - You can add the *–Fallback* parameter to catch any applications not discovered using the primary file rule level specified by the *–Level* parameter. For more information about file rule level options, see [Code integrity file rule levels](deploy-code-integrity-policies-policy-rules-and-file-rules.md#code-integrity-file-rule-levels) in “Deploy code integrity policies: policy rules and file rules.”
-
-    > - To specify that the code integrity policy scan only a specific drive, include the *–ScanPath* parameter followed by a path. Without this parameter, the entire system is scanned.
+    > - To specify that the code integrity policy scan only a specific drive, include the **-ScanPath** parameter followed by a path. Without this parameter, the entire system is scanned.
     
     > - The preceding example includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 

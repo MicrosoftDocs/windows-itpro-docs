@@ -12,11 +12,21 @@ author: brianlic-msft
 # Change history for Keep Windows 10 secure
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
-## December 2016
 
-| New or changed topic | Description |
-| --- | --- |
+## January 2017
+|New or changed topic |Description |
+|---------------------|------------|
+|[Determine the Enterprise Context of an app running in Windows Information Protection (WIP)](wip-app-enterprise-context.md) |New |
+|[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |Updated to include info about USB drives and Azure RMS (Windows Insider Program only) and to add more info about Work Folders and Offline files. |
+|[Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](recommended-network-definitions-for-wip.md) |New |
+|[Using Outlook Web Access with Windows Information Protection (WIP)](using-owa-with-wip.md) |New |
+| Microsoft Passport guide | Content merged into [Windows Hello for Business](hello-identity-verification.md) topics |
+
+## December 2016
+|New or changed topic |Description |
+|---------------------|------------|
 |[Create WMI Filters for the GPO](create-wmi-filters-for-the-gpo.md) |Added filter examples for Windows 10 and Windows Server 2016. |
+
 
 
 ## November 2016
@@ -24,6 +34,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 | --- | --- |
 |[Protect your enterprise data using Windows Information Protection (WIP)](protect-enterprise-data-using-wip.md), [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md), and [Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) |Added additional details about what happens when you turn off WIP. |
 |[Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-vpn-and-wip-policy-using-intune.md) |Changed WIPModeID to EDPModeID, to match the CSP. |
+
 
 
 ## October 2016
@@ -36,6 +47,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |[Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](app-behavior-with-wip.md) |New |
 |[VPN technical guide](vpn-guide.md) | Multiple new topics, replacing previous **VPN profile options** topic |
 |[Windows security baselines](windows-security-baselines.md) | Added Windows 10, version 1607 and Windows Server 2016 baseline |
+
 
 ## September 2016
 

@@ -17,14 +17,14 @@ Starting in Windows 10, version 1607, administrators can pin additional apps to 
 
 You can specify different taskbar configurations based on device locale and region. There is no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](https://go.microsoft.com/fwlink/p/?LinkId=614867) or Desktop Application Link Path (the local path to the application). 
 
-If you specify an app to be pinned that is not installed on the computer, it won't appear on the taskbar.
+If you specify an app to be pinned that is not provisioned for the user on the computer, the pinned icon won't appear on the taskbar.
 
-The order of apps in the xml file dictates order of apps on taskbar from left to right, to the right of any existing apps pinned by user.
+The order of apps in the XML file dictates the order of pinned apps on the taskbar from left to right, to the right of any existing apps pinned by the user.
 
 > [!NOTE]
 > In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
 
-The following example shows how apps will be pinned: Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using XML to the right (green square).
+The following example shows how apps will be pinned: Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using the XML file to the right (green square).
 
 ![Windows left, user center, enterprise to the right](images/taskbar-generic.png)
 
@@ -41,21 +41,23 @@ To configure the taskbar:
 3. Apply the layout modification XML file to devices using [Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) or a [provisioning package created in Windows Imaging and Configuration Designer (Windows ICD)](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md).
 
 >[!IMPORTANT]
->If you use a provisioning package to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration and allow users to make changes that will persist, apply your configuration by using Group Policy.
+>If you use a provisioning package to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user then unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration that allows users to make changes that will persist, apply your configuration by using Group Policy.
+>
+>If you use Group Policy and your configuration only contains a taskbar layout, the default Windows tile layout will be applied and cannot be changed by users. If you use Group Policy and your configuration includes taskbar and a full Start layout, users can only make changes to the taskbar. If you use Group Policy and your configuration includes taskbar and a [partial Start layout](https://technet.microsoft.com/itpro/windows/manage/customize-and-export-start-layout#configure-a-partial-start-layout), users can make changes to the taskbar and to tile groups not defined in the partial Start layout.
 
 ### Tips for finding AUMID and Desktop Application Link Path
 
 In the layout modification XML file, you will need to add entries for applications in the XML markup. In order to pin an application, you need either its AUMID or Desktop Application Link Path. 
 
 The easiest way to find this data for an application is to:
-1.	Pin the application to the Start menu
+1.	Pin the application to the Start menu on a reference or testing PC.
 2. 	Open Windows PowerShell and run the `Export-StartLayout` cmdlet. 
 3.	Open the generated XML file. 
-4.	Look for an entry corresponding to the app you pinned .
+4.	Look for an entry corresponding to the app you pinned.
 5.	Look for a property labeled `AppUserModelID` or `DesktopApplicationLinkPath`. 
 
 
-### Sample taskbar configuration XML
+### Sample taskbar configuration XML file
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -75,7 +77,7 @@ The easiest way to find this data for an application is to:
  </CustomTaskbarLayoutCollection>
 </LayoutModificationTemplate>
 ```
-### Sample taskbar configuration added to Start layout XML
+### Sample taskbar configuration added to Start layout XML file
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -139,7 +141,7 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
  
  ![additional apps pinned to taskbar](images/taskbar-default-plus.png)
 
-##Remove default apps and add your own
+## Remove default apps and add your own
 
 By adding `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`, you remove all default pinned apps; only the apps that you specify will be pinned to the taskbar.
 
@@ -218,7 +220,7 @@ The following example shows you how to configure taskbars by country or region. 
 
 ```
 
-When the preceding example XML is applied, the resulting taskbar for computers in the US or UK:
+When the preceding example XML file is applied, the resulting taskbar for computers in the US or UK:
 
 ![taskbar for US and UK locale](images/taskbar-region-usuk.png)
 

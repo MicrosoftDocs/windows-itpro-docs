@@ -14,11 +14,20 @@ localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
+## February 2017
+
+| New or changed topic | Description |
+| --- | --- |
+| [Useful downloads for Surface Hub administrators](surface-hub-downloads.md) | New |
+
 ## January 2017
 
 | New or changed topic | Description |
 | --- | --- |
+| [How Surface Hub addresses Wi-Fi Direct security issues](surface-hub-wifi-direct.md) | New |
+| [On-premises deployment (multiple forests)](on-premises-deployment-surface-hub-multi-forest.md) | New |
 | [Connect other devices and display with Surface Hub](connect-and-display-with-surface-hub.md) | Added graphics cards verified to work with 84" Surface Hubs and added information about the lengths of cables. |
+| [Online deployment](online-deployment-surface-hub-device-accounts.md) | Updated procedures for adding a device account for your Microsoft Surface Hub when you have a pure, online deployment. |
 
 ## December 2016
 

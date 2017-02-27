@@ -4,7 +4,7 @@ description: In Windows 10, Microsoft has streamlined servicing to make operatin
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
@@ -52,7 +52,13 @@ Additional technologies such as BranchCache and Delivery Optimization, both peer
 
 See [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) and [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) for more information.
 
+## Video: An overview of Windows as a service
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MLc4-Suv0LU" frameborder="0" allowfullscreen></iframe> 
+ 
+## Learn more
+
+[Adopting Windows as a service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft)
 
 
 ## Related topics

@@ -4,7 +4,7 @@ description: In Windows 10, Microsoft has streamlined servicing to make operatin
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
@@ -127,7 +127,9 @@ For many IT pros, gaining visibility into feature updates early—before they’
 Microsoft recommends that all organizations have at least a few PCs enrolled in the Windows Insider Program and provide feedback on any issues they encounter. For information about how to sign up for the Windows Insider Program and enroll test devices, go to [https://insider.windows.com](https://insider.windows.com).
 
 >[!NOTE]
->The Windows Insider Program isn’t intended to replace CB deployments in an organization. Rather, it provides IT pros and other interested parties with prerelease Windows builds that they can test and ultimately provide feedback on to Microsoft. 
+>Microsoft recommends that all organizations have at least a few PCs enrolled in the Windows Insider Program, to include the Windows Insider Program in their deployment plans and to provide feedback on any issues they encounter to Microsoft via our Feedback Hub app. 
+>
+>The Windows Insider Program isn’t intended to replace CB deployments in an organization. Rather, it provides IT pros and other interested parties with pre-release Windows builds that they can test and ultimately provide feedback on to Microsoft. 
 
 
 
@@ -136,7 +138,7 @@ Microsoft recommends that all organizations have at least a few PCs enrolled in 
 There are many tools with which IT pros can service Windows as a service. Each option has its pros and cons, ranging from capabilities and control to simplicity and low administrative requirements. The following are examples of the servicing tools available to manage Windows as a service updates:
 
 - **Windows Update (stand-alone)** provides limited control over feature updates, with IT pros manually configuring the device to be in the CBB servicing branch. Organizations can control which devices defer updates and stay in the CBB servicing branch or remain in CB by selecting the Defer upgrades check box in Start\Settings\Update & Security\Advanced Options on a Windows 10 client.
-- **Windows Update for Business** is the second option for servicing Windows as a service. This servicing tool includes a little more control over update deferment and provides centralized management using Group Policy. In Windows 10 version 1511, Windows Update for Business can be used to defer feature updates for up to 8 months and quality updates for up to 4 weeks. Also, these deferment options were available only to clients in the CBB servicing branch. In Windows 10 version 1607 and later, Windows Update for Business can be used to defer feature updates for up to 180 days and quality updates for up to 30 days. These deployment options are available to clients in either the CB or CBB servicing branch. In addition to being able to use Group Policy to manage Windows Update for Business, either option can be configured without requiring any on-premises infrastructure by using Intune. In addition to Intune, organizations can use Group Policy to manage Windows Update for Business. 
+- **Windows Update for Business** is the second option for servicing Windows as a service. This servicing tool includes a little more control over update deferment and provides centralized management using Group Policy. In Windows 10 version 1511, Windows Update for Business can be used to defer feature updates for up to 8 months and quality updates for up to 4 weeks. Also, these deferment options were available only to clients in the CBB servicing branch. In Windows 10 version 1607 and later, Windows Update for Business can be used to defer feature updates for up to 180 days and quality updates for up to 30 days. These deployment options are available to clients in either the CB or CBB servicing branch. In addition to being able to use Group Policy to manage Windows Update for Business, either option can be configured without requiring any on-premises infrastructure by using Intune.
 - **Windows Server Update Services (WSUS)** provides extensive control over Windows 10 updates and is natively available in the Windows Server operating system. In addition to the ability to defer updates, organizations can add an approval layer for updates and choose to deploy them to specific computers or groups of computers whenever ready. 
 - **System Center Configuration Manager** provides the greatest control over servicing Windows as a service. IT pros can defer updates, approve them, and have multiple options for targeting deployments and managing bandwidth usage and deployment times. 
 
