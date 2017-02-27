@@ -66,12 +66,9 @@ If you manage your policies using Intune, you'll want to use these MDM policy se
 
 > [!NOTE]
 > The **Supports** column uses these options:
-
-- **Desktop.** Supports Windows 10 Pro and Windows 10 Enterprise computers that are enrolled with Intune only.
-
-- **Mobile.** Supports Windows 10 Mobile devices only.
-
-- **Both.** Supports both desktop and mobile devices.
+> - **Desktop.** Supports Windows 10 Pro and Windows 10 Enterprise computers that are enrolled with Intune only.
+> - **Mobile.** Supports Windows 10 Mobile devices only.
+> - **Both.** Supports both desktop and mobile devices.
 
 All devices must be enrolled with Intune if you want to use the Windows Custom URI Policy.
 
