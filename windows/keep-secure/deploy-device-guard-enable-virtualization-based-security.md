@@ -30,10 +30,10 @@ For information about enabling Credential Guard, see [Protect derived domain cre
 
 In addition to the hardware requirements found in [Hardware, firmware, and software requirements for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-device-guard), you must confirm that certain operating system features are enabled before you can enable VBS:
 
-- With Windows 10, version 1607 or Windows Server 2016:<br> 
+- Beginning with Windows 10, version 1607 or Windows Server 2016:<br> 
 Hyper-V Hypervisor, which is enabled automatically. No further action is needed.
 
-- With an earlier version of Windows 10, or Windows Server 2016 Technical Preview 5 or earlier:<br> 
+- With an earlier version of Windows 10:<br> 
 Hyper-V Hypervisor and Isolated User Mode (shown in Figure 1).
 
 > **Note**&nbsp;&nbsp;You can configure these features by using Group Policy or Deployment Image Servicing and Management, or manually by using Windows PowerShell or the Windows Features dialog box.
@@ -42,11 +42,7 @@ Hyper-V Hypervisor and Isolated User Mode (shown in Figure 1).
 
 **Figure 1. Enable operating system features for VBS, Windows 10, version 1511**
 
-After you enable the feature or features, you can enable VBS for Device Guard, as described in the following sections.
-
 ## Enable Virtualization Based Security (VBS) and Device Guard
-
-Before you begin this process, verify that the target device meets the hardware and firmware requirements for the features that you want, as described in [Hardware, firmware, and software requirements for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-device-guard). Also, confirm that you have enabled the Windows features discussed in the previous section, [Windows feature requirements for virtualization-based security](#windows-feature-requirements-for-virtualization-based-security-and-device-guard).
 
 There are multiple ways to configure VBS features for Device Guard: 
 
@@ -68,7 +64,7 @@ There are multiple ways to configure VBS features for Device Guard:
 
 3.  Open the Group Policy Management Editor: right-click the new GPO, and then click **Edit**.
 
-4.  Within the selected GPO, navigate to Computer Configuration\\Administrative Templates\\System\\Device Guard. Right-click **Turn On Virtualization Based Security**, and then click **Edit**.
+4.  Within the selected GPO, navigate to Computer Configuration\\Policies\\Administrative Templates\\System\\Device Guard. Right-click **Turn On Virtualization Based Security**, and then click **Edit**.
 
     ![Edit the group policy for Virtualization Based Security](images/dg-fig3-enablevbs.png)
 
@@ -91,7 +87,7 @@ There are multiple ways to configure VBS features for Device Guard:
 
     - With Windows 10, version 1607 or Windows Server 2016, choose an appropriate option:<br>For an initial deployment or test deployment, we recommend **Enabled without lock**.<br>When your deployment is stable in your environment, we recommend changing to **Enabled with lock**. This option helps protect the registry from tampering, either through malware or by an unauthorized person.
 
-    - With earlier versions of Windows 10, or Windows Server 2016 Technical Preview 5 or earlier:<br>Select the **Enable Virtualization Based Protection of Code Integrity** check box.
+    - With earlier versions of Windows 10:<br>Select the **Enable Virtualization Based Protection of Code Integrity** check box.
 
     ![Group Policy, Turn On Virtualization Based Security](images/dg-fig7-enablevbsofkmci.png)
 
@@ -183,7 +179,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformS
 
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "HypervisorEnforcedCodeIntegrity" /t REG_DWORD /d 1 /f
 
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v " Unlocked" /t REG_DWORD /d 1 /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Unlocked" /t REG_DWORD /d 1 /f
 ```
 
 If you want to customize the preceding recommended settings, use the following settings.
@@ -211,7 +207,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "HypervisorEnforc
 **To enable virtualization-based protection of Code Integrity policies without UEFI lock**
 
 ``` command
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v " Unlocked" /t REG_DWORD /d 1 /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Unlocked" /t REG_DWORD /d 1 /f
 ```
 
 ### Validate enabled Device Guard hardware-based security features
