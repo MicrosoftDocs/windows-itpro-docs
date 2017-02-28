@@ -28,20 +28,22 @@ Be among the first to try upcoming features by turning on the preview experience
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 ## Preview features
+By turning on preview features, you'll have access to new features and provide feedback to help improve the overall experience before features are generally available.
+
 The following features are included in the preview release:
 
 >[!NOTE]
 > All response features require machines to be on the latest Windows 10 Insider Preview build and above.
 
-- [Respond to machine alerts](respond-machine-alerts-windows-defender-advanced-threat-protection.md)
+- [Respond to machine alerts](respond-machine-alerts-windows-defender-advanced-threat-protection.md) - Contain and reduce or prevent further damage to you organization by using the following features to address machine related detected attacks.
   - [Isolate machines from the network](respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
   - [Undo machine isolation](respond-machine-alerts-windows-defender-advanced-threat-protection.md#undo-machine-isolation)
   - [Collect investigation package](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
 
-- [Respond to file related alerts](respond-file-alerts-windows-defender-advanced-threat-protection.md)
+- [Respond to file related alerts](respond-file-alerts-windows-defender-advanced-threat-protection.md) - Contain and reduce or prevent further damage to your organization by using the following features to address file related detected attacks.
   - [Stop and quarantine files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#stop-and-quarantine-files-in-your-network)
   - [Remove file from quarantine](respond-file-alerts-windows-defender-advanced-threat-protection.md#remove-file-from-quarantine)
   - [Block files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#block-files-in-your-network)
 
-- [Check sensor status](check-sensor-status-windows-defender-advanced-threat-protection.md)
+- [Check sensor status](check-sensor-status-windows-defender-advanced-threat-protection.md) - Check an endpoint's ability to provide sensor data and communicate with the Windows Defender ATP service and fix sensor issues if you identify problematic machines.
   - [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
