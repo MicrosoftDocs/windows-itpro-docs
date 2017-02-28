@@ -21,19 +21,18 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Windows Defender ATP adds various feature enhancements and capabilities in the preview release.
-
-Be among the first to try upcoming features by turning on the preview experience feature. For more information, see [Turn on the preview experience](preview-settings-windows-defender-advanced-threat-protection.md).
-
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
+The Windows Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
+
+Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
+
+You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available. 
+
+For more information, see [Turn on the preview experience](preview-settings-windows-defender-advanced-threat-protection.md).
+
 ## Preview features
-By turning on preview features, you'll have access to new features and provide feedback to help improve the overall experience before features are generally available.
-
 The following features are included in the preview release:
-
->[!NOTE]
-> All response features require machines to be on the latest Windows 10 Insider Preview build and above.
 
 - [Respond to machine alerts](respond-machine-alerts-windows-defender-advanced-threat-protection.md) - Contain and reduce or prevent further damage to you organization by using the following features to address machine related detected attacks.
   - [Isolate machines from the network](respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
@@ -47,3 +46,6 @@ The following features are included in the preview release:
 
 - [Check sensor status](check-sensor-status-windows-defender-advanced-threat-protection.md) - Check an endpoint's ability to provide sensor data and communicate with the Windows Defender ATP service and fix sensor issues if you identify problematic machines.
   - [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
+
+>[!NOTE]
+> All response features require machines to be on the latest Windows 10 Insider Preview build and above.
