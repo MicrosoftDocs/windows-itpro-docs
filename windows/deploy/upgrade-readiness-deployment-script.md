@@ -61,7 +61,7 @@ To run the Upgrade Readiness deployment script:
 
 The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered.
 
-<div style='font-size:10.0pt'>
+<div style='font-size:9.0pt'>
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
 

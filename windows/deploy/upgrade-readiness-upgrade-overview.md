@@ -9,19 +9,28 @@ author: greg-lindsay
 
 The first blade in the Upgrade Readiness solution is the upgrade overview blade. This blade displays the total count of computers sharing data with Microsoft, and the count of computers upgraded. As you successfully upgrade computers, the count of computers upgraded increases.
 
-The upgrade overivew blade displays data refresh status, including the date and time of the most recent data update and whether user changes are reflected. The following status changes are reflected on the upgrade overview blade:
+The upgrade overivew blade displays data refresh status, including the date and time of the most recent data update and whether user changes are reflected. The upgrade overview blade also displays the current target OS version.  For more information about the target OS version, see [target version](use-upgrade-readiness-to-manage-windows-upgrades.md).
 
+The following color-coded status changes are reflected on the upgrade overview blade:
+
+- The "Last updated" banner:
+    - No delay in processing device inventory data = "Last updated" banner is displayed in green.
+    - Delay processing device inventory data = "Last updated" banner is displayed in amber.
 - Computers with incomplete data:
-    - Less than 4% = count is displayed in green.
+    - Less than 4% = Count is displayed in green.
     - 4% - 10% = Count is displayed in amber.
     - Greater than 10%  = Count is displayed in red.
-- Delay processing device inventory data = The "Last updated" banner is displayed in amber.
-- Pending user changes = User changes count displays "Data refresh pending" in amber.
-- No pending user changes = User changes count displays "Up to date" in green.
+- User changes:
+    - Pending user changes = User changes count displays "Data refresh pending" in amber.
+    - No pending user changes = User changes count displays "Up to date" in green.
+- Target version:
+    - If the current value matches the recommended value, the version is displayed in green.
+    - If the current value is an older OS version than the recommended value, but not deprecated, the version is displayed in amber.
+    - If the current value is a deprecated OS version, the version is displayed in red.
 
-In the following example, less than 4% of (3k\355k) computers have incomplete data, and there are no pending user changes:
+In the following example, there is no delay in data processing, less than 4% of computers (6k\294k) have incomplete data, there are no pending user changes, and the currently selected target OS version is the same as the recommended version:
 
-![Upgrade overview](images/ua-cg-17.png)
+![Upgrade overview](images/ur-overview.png)
 
 <!-- PRESERVING ORIGINAL IMAGE CODING JUST IN CASE
 <img src="media/image3.png" width="214" height="345" />

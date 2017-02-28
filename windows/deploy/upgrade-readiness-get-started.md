@@ -15,7 +15,7 @@ This topic explains how to obtain and configure Upgrade Readiness for your organ
 You can use Upgrade Readiness to plan and manage your upgrade project end-to-end. Upgrade Readiness works by establishing communications between computers in your organization and Microsoft. Upgrade Readiness collects computer, application, and driver data for analysis. This data is used to identify compatibility issues that can block your upgrade and to suggest fixes that are known to Microsoft.
 
 Before you begin, consider reviewing the following helpful information:<BR>
-    - [Upgrade Readiness requirements](https://technet.microsoft.com/itpro/windows/deploy/upgrade-readiness-requirements): Provides detailed requirements to use Upgrade Readiness.<BR>
+    - [Upgrade Readiness requirements](upgrade-readiness-requirements.md): Provides detailed requirements to use Upgrade Readiness.<BR>
     - [Upgrade Readiness blog](https://blogs.technet.microsoft.com/UpgradeAnalytics): Contains announcements of new features and provides helpful tips for using Upgrade Readiness.
 
 >If you are using System Center Configuration Manager, also check out information about how to integrate Upgrade Readiness with Configuration Manager: [Integrate Upgrade Readiness with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).

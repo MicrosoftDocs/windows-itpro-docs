@@ -30,6 +30,7 @@ See [Windows 10 Specifications](http://www.microsoft.com/en-US/windows/windows-1
 Keeping Windows 10 up to date involves deploying a feature update, and Upgrade Readiness tools help you prepare and plan for these Windows updates.
 The latest cumulative updates must be installed on Windows 10 computers to make sure that the required compatibility KBs are installed.  You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com). 
 
+Windows 10 LTSB is not supported by Upgrade Readiness. The LTSB (long term servicing branch) of Windows 10 is not intended for general deployment, and does not receive feature updates, therefore it is not compatible with Upgrade Readiness.  See https://technet.microsoft.com/en-us/itpro/windows/manage/waas-overview#long-term-servicing-branch to understand more about LTSB.
 
 ## Operations Management Suite
 
