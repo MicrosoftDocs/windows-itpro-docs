@@ -130,7 +130,7 @@ Assigned Access has one setting, KioskModeApp. In the KioskModeApp setting, you 
 <tr><td valign="top">![step one](images/one.png)![set up device](images/set-up-device.png)</br></br>Enable device setup if you want to configure settings on this page.</br></br>**If enabled:**</br></br>Enter a name for the device.</br></br>(Optional) Select a license file to upgrade Windows 10 to a different edition. [See the permitted upgrades.](https://technet.microsoft.com/itpro/windows/deploy/windows-10-edition-upgrades)</br></br>Toggle **Configure devices for shared use** on or off. This setting...does what?</br></br>You can also select to remove pre-installed software from the device. </td><td>![device name, upgrade to enterprise, shared use, remove pre-installed software](images/set-up-device-details.png)</td></tr>
 <tr><td valign="top">![step two](images/two.png)  ![set up network](images/set-up-network.png)</br></br>Enable network setup if you want to configure settings on this page.</br></br>**If enabled:**</br></br>Toggle **On** or **Off** for wireless network connectivity. If you select **On**, enter the SSID, the network type (**Open** or **WPA2-Personal**), and (if **WPA2-Personal**) the password for the wireless network.</td><td>![Enter network SSID and type](images/set-up-network-details.png)</td></tr>
 <tr><td valign="top">![step three](images/three.png)  ![account management](images/account-management.png)</br></br>Enable account management if you want to configure settings on this page. </br></br>**If enabled:**</br></br>You can enroll the device in Active Directory, enroll in Azure Active Directory, or create a local administrator account on the device</br></br>To enroll the device in Active Directory, enter the credentials for a least-privileged user account to join the device to the domain.</br></br>To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard. (Something about expiry) Click **Get bulk token** (then what?)</br></br>To create a local administrator account, select that option and enter a user name and password. </br></br>**Important:** If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in.  </td><td>![join Active Directory, Azure AD, or create a local admin account](images/account-management-details.png)</td></tr>
-<tr><td valign="top">![step four](images/four.png) ![add applications](images/add-applications.png)</td><td>![add an application](images/add-applications-details.png)</td></tr>
+<tr><td valign="top">![step four](images/four.png) ![add applications](images/add-applications.png)</br></br>You can install multiple applications, both Classic Windows (Win32) apps and Universal Windows Platform (UWP) apps, in a provisioning package. </td><td>![add an application](images/add-applications-details.png)</td></tr>
 <tr><td valign="top">![step five](images/five.png) ![add certificates](images/add-certificates.png)</br></br>To provision the device with a certificate, click **Add a certificate**. Enter a name for the certificate, and then browse to and select the certificate to be used.</td><td>![add a certificate](images/add-certificates-details.png)</td></tr> 
 <tr><td valign="top">![step six](images/six.png)  ![Configure kiosk account and app](images/kiosk-account.png)</br></br>You can create a local standard user account that will be used to run the kiosk app. If you toggle **No**, make sure that you have an existing user account to run the kiosk app.</br></br>If you want to create an account, enter the user name and password, and then toggle **Yes** or **No** to automatically sign in the account when the device starts.</br></br>In **Configure the kiosk mode app**, enter the name of the user account that will run the kiosk mode app. Select the type of app to run in kiosk mode, and then enter the path or filename (for a Classic Windows app) or the AUMID (for a Universal Windows app).</td><td>![Configure kiosk account and app](images/kiosk-account-details.png)</td></tr>
 <tr><td valign="top">![step seven](images/seven.png)  ![configure kiosk common settings](images/kiosk-common.png)</br></br>On this step, select your options for tablet mode, the user experience on the Welcome and shutdown screens, and the timeout settings.</td><td>![set tablet mode and configure welcome and shutdown and turn off timeout settings](images/kiosk-common-details.png)</td></tr>
@@ -170,7 +170,9 @@ Set-AssignedAccess -AppName <CustomApp> -UserName <username>
 Set-AssignedAccess -AppName <CustomApp> -UserSID <usersid>
 ```
 
-> **Note:** To set up assigned access using `-AppName`, the user account that you specify for assigned access must have logged on at least once. 
+> [!NOTE]
+> To set up assigned access using `-AppName`, the user account that you specify for assigned access must have logged on at least once. 
+
 [Learn how to get the AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867).
 
 [Learn how to get the AppName](https://msdn.microsoft.com/library/windows/hardware/mt620046%28v=vs.85%29.aspx) (see **Parameters**).
@@ -192,8 +194,8 @@ Edit the registry to have an account automatically logged on.
 
 1.  Open Registry Editor (regedit.exe).
 
-    **Note**  
-    If you are not familiar with Registry Editor, [learn how to modify the Windows registry](https://go.microsoft.com/fwlink/p/?LinkId=615002).
+    >[!NOTE]  
+    >If you are not familiar with Registry Editor, [learn how to modify the Windows registry](https://go.microsoft.com/fwlink/p/?LinkId=615002).
   
 
 2.  Go to
@@ -208,7 +210,8 @@ Edit the registry to have an account automatically logged on.
 
     -   *DefaultPassword*: set value as the password for the account.
 
-       > **Note**  If *DefaultUserName* and *DefaultPassword* aren't there, add them as **New** &gt; **String Value**.
+       > [!NOTE]
+       > If *DefaultUserName* and *DefaultPassword* aren't there, add them as **New** &gt; **String Value**.
 
     -   *DefaultDomainName*: set value for domain, only for domain accounts. For local accounts, do not add this key.
 
