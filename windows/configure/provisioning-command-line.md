@@ -57,6 +57,7 @@ icd.exe /Build-ProvisioningPackage /CustomizationXML:<path_to_xml> /PackagePath:
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
+- [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
 - [NFC-based device provisioning](provisioning-nfc.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
  

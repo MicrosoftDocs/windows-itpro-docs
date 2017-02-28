@@ -1,5 +1,5 @@
 ---
-title: provisioning powershell (Windows 10)
+title: PowerShell cmdlets for provisioning Windows 10 (Windows 10)
 description: 
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -8,7 +8,7 @@ author: jdeckerMS
 localizationpriority: high
 ---
 
-# provisioning powershell
+# PowerShell cmdlets for provisioning Windows 10 (reference)
 
 
 **Applies to**
@@ -16,7 +16,7 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile
 
-RS2 ships with Windows Provisioning PowerShell cmdlets in box. These cmdlets make it easy to script the following functions
+Windows 10, version 1703, ships with Windows Provisioning PowerShell cmdlets. These cmdlets make it easy to script the following functions.
 
 
 
