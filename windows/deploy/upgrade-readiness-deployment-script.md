@@ -65,7 +65,7 @@ The deployment script displays the following exit codes to let you know if it wa
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
 
-<TR><TD BGCOLOR="#a0e4fa">Exit code
+<TR><TD BGCOLOR="#a0e4fa" width="3%">Exit code
 <TD BGCOLOR="#a0e4fa">Meaning
 <TD BGCOLOR="#a0e4fa">Suggested fix
 
