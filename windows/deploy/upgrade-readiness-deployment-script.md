@@ -61,6 +61,15 @@ To run the Upgrade Readiness deployment script:
 
 The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered.
 
+This is a test of markdown tables.
+
+| Exit code | Meaning | Suggested fix |
+|----|-------------|--------------------|
+| 0 | Success | N/A |
+| 1 | Unexpected error occurred while executing the script. | The files in the deployment script are likely corrupted.  Download the [latest script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) from the download center and try again. |
+| 2 | Error when logging to console. $logMode = 0.<BR>(console only) | Try changing the $logMode value to **1** and try again.<BR>$logMode value 1 logs to both console and file. |
+
+
 <div style='font-size:8.0pt'>
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
@@ -74,12 +83,12 @@ The deployment script displays the following exit codes to let you know if it wa
 <TD>N/A
 
 <TR><TD>1
-<TD>Unexpected error occurred while executing the script
+<TD>Unexpected error occurred while executing the script.
 <TD> The files in the deployment script are likely corrupted.  Download the [latest script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) from the download center and try again.
 
 <TR><TD>2
 <TD>Error when logging to console. $logMode = 0.<BR>(console only)
-<TD> Try changing the $logMode value to **1** and try again.<BR>$logMode value 1 logs to both console and file.
+<TD>Try changing the $logMode value to **1** and try again.<BR>$logMode value 1 logs to both console and file.
 
 <TR><TD>3
 <TD>Error when logging to console and file. $logMode = 1.
