@@ -28,7 +28,6 @@ This article provides PowerShell code examples for using the custom threat intel
 These code examples demonstrate the following tasks:
 - [Obtain an Azure AD access token](#obtain-an-azure-ad-access-token)
 - [Create headers](#create-headers)
-- - [Create calls to the custom threat intelligence API](create-calls-to-the-custom-threat intelligence-api)
 
 ## Obtain an Azure AD access token
 The following example demonstrates how to obtain an Azure AD access token that you can use to call methods in the custom threat intelligence API. After you obtain a token, you have 60 minutes to use this token in calls to the custom threat intelligence API before the token expires. After the token expires, you can generate a new token.

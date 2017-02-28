@@ -29,15 +29,16 @@ You must [install](http://docs.python-requests.org/en/master/user/install/#insta
 These code examples demonstrate the following tasks:
 - [Obtain an Azure AD access token](#obtain-an-azure-ad-access-token)
 - [Create request session object](#create-a-request's-session-object)
-- [Create calls to the custom threat intelligence API](create-calls-to-the-custom-threat intelligence-api)
-- [Create a new indicator of compromise](create-a-new-indicator-of-compromise)
+- [Create calls to the custom threat intelligence API](#create-calls-to-the-custom-threat-intelligence-api)
+- [Create a new alert definition](#create-a-new-alert-definition)
+- [Create a new indicator of compromise](#create-a-new-indicator-of-compromise)
 
 ## Obtain an Azure AD access token
 The following example demonstrates how to obtain an Azure AD access token that you can use to call methods in the custom threat intelligence API. After you obtain a token, you have 60 minutes to use this token in calls to the custom threat intelligence API before the token expires. After the token expires, you can generate a new token.
 
 Replace the *tenant\_id*, *client_id*, and *client_secret* values with the ones you got from **Preferences settings** page in the portal:
 
-```json
+```
 
 import json
 import requests
@@ -49,7 +50,7 @@ client_secret="{your client secret}"
 
 full_auth_url = r"https://login.windows.net/{0}/oauth2/token".format(tenant_id)
 
-payload = {"resource": r"https://graph.windows.net",
+payload = {"resource": "https://graph.windows.net",
            "client_id": client_id,
            "client_secret": client_secret,
            "grant_type": "client_credentials"}
@@ -62,7 +63,7 @@ token = json.loads(response.text)["access_token"]
 ## Create request session object
 Add HTTP headers to the session object, including the Authorization header with the token that was obtained.
 
-```json
+```
 with requests.Session() as session:
     session.headers = {
         'Authorization': 'Bearer {}'.format(token),
@@ -87,7 +88,7 @@ If this is the first time to use the API, the response is empty.
 ## Create a new alert definition
 The following example shows how to create a new alert definition.
 
-```json
+```
 
 alert_definition = {"Name": "The Alert's Name",
                     "Severity": "Low",
@@ -106,7 +107,7 @@ response = session.post(
 ## Create a new indicator of compromise
 The following example shows how to use the alert ID obtained from creating a new alert definition to create a new indicator of compromise.
 
-```json
+```
 alert_definition_id = json.loads(response.text)["Id"]
     ioc = {'Type': "Sha1",
            'Value': "dead1111eeaabbccddeeaabbccddee11ffffffff",
