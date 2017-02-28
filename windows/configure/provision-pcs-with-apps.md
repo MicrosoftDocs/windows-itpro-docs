@@ -18,15 +18,13 @@ localizationpriority: high
 - Windows 10
 
 
-Windows 10, version 1703; variations on app install, both advanced and wizard-based
-
-You can install multiple Universal Windows Platform (UWP) apps and Classic Windows (Win32) applications in a provisioning package. This topic explains the various settings in [Windows Configuration Designer](provisioning-install-icd.md) for app install.
+In Windows 10, version 1703, you can install multiple Universal Windows Platform (UWP) apps and Classic Windows (Win32) applications in a provisioning package. This topic explains the various settings in [Windows Configuration Designer](provisioning-install-icd.md) for app install.
 
 When you add an app in a Windows Configuration Designer wizard, the appropriate settings are displayed based on the app that you select. For instructions on adding an app using the advanced editor in Windows Configuration Designer, see [Add an app using advanced editor](#adv).
 
 ## Settings for UWP apps
 
-- **License Path**: Specify the license file if it is an app from the store. This is optional if you have a certificate for the app. 
+- **License Path**: Specify the license file if it is an app from the Windows Store. This is optional if you have a certificate for the app. 
 
 - **Package family name**: Specify the package family name if you don’t specify a license. This field will be auto-populated after you specify a license. 
 
