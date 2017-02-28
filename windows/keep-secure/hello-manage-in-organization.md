@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
