@@ -65,7 +65,7 @@ The deployment script displays the following exit codes to let you know if it wa
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
 
-<TR><TD BGCOLOR="#a0e4fa" width=50>Exit code</TD>
+<TR><TD BGCOLOR="#a0e4fa" width=5>Exit code</TD>
 <TD BGCOLOR="#a0e4fa">Meaning
 <TD BGCOLOR="#a0e4fa">Suggested fix
 
@@ -99,7 +99,7 @@ The deployment script displays the following exit codes to let you know if it wa
 <BR>See [Generate your Commercial ID key](https://technet.microsoft.com/itpro/windows/deploy/upgrade-readiness-get-started#generate-your-commercial-id-key) for instructions on generating a Commercial ID key for your workspace.
 
 <TR><TD>8</TD>
-<TD>Failure to create registry key path: **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**. 
+<TD>Failure to create registry key path: <div style='font-size:6.0pt'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</div>. 
 <TD>The Commercial Id property is set at the following registry key path: **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**.
 <BR>Verify that the context under which the script in running has access to the registry key..
 
