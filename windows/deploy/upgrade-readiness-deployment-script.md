@@ -61,16 +61,13 @@ To run the Upgrade Readiness deployment script:
 
 The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered.
 
-<TABLE border=0 cellspacing=0 cellpadding=0>
-<TR><TD>
-
 <div style='font-size:8.0pt'>
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
 
-<TR><TD BGCOLOR="#a0e4fa">Exit code
-<TD BGCOLOR="#a0e4fa">Meaning
-<TD BGCOLOR="#a0e4fa">Suggested fix
+<TR><TD BGCOLOR="#a0e4fa" width="5%">Exit code
+<TD BGCOLOR="#a0e4fa" width="25%">Meaning
+<TD BGCOLOR="#a0e4fa" width="70%">Suggested fix
 
 <TR><TD>0
 <TD>Success
@@ -262,7 +259,6 @@ or **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**.
 
 </div>
 
-</TABLE>
 
 
 
