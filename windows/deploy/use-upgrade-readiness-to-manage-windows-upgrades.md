@@ -27,7 +27,7 @@ The following information and workflow is provided:
 - [Step 2: Resolve issues](upgrade-readiness-resolve-issues.md): Identify and resolve problems with applications.
 - [Step 3: Deploy](upgrade-readiness-deploy-windows.md): Start the upgrade process.
 
-Also see the following topic for information about additional items that can be affected by the upgrade process:
+Also see the following topic for information about additional items that can be affected by the upgrade process: 
 
 - [Additional insights](upgrade-readiness-additional-insights.md): Find out which MS Office add-ins are installed, and review web site activity.
 
