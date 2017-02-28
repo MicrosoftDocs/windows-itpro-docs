@@ -17,6 +17,7 @@ localizationpriority: high
 
 - Windows 10
 
+DEPRECATED - See [Provision PCs with apps](provision-pcs-with-apps.md)
 
 This topic explains how to create and apply a provisioning package that contains apps and certificates to a device running all desktop editions of Windows 10 except Windows 10 Home. Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more.
 

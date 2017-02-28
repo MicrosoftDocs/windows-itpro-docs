@@ -1,6 +1,6 @@
 ---
 title: Provision PCs with apps  (Windows 10)
-description: Create a provisioning package to deploy apps to a PC running Windows 10. 
+description: Add apps to a Windows 10 provisioning package. 
 ms.assetid: 66D14E97-E116-4218-8924-E2A326C9367E
 keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: W10
@@ -22,10 +22,44 @@ Windows 10, version 1703; variations on app install, both advanced and wizard-ba
 
 You can install multiple Universal Windows Platform (UWP) apps and Classic Windows (Win32) applications in a provisioning package. This topic explains the various settings in [Windows Configuration Designer](provisioning-install-icd.md) for app install.
 
+When you add an app in a Windows Configuration Designer wizard, the appropriate settings are displayed based on the app that you select. For instructions on adding an app using the advanced editor in Windows Configuration Designer, see [Add an app using advanced editor](#adv).
+
+## Settings for UWP apps
+
+- **License Path**: Specify the license file if it is an app from the store. This is optional if you have a certificate for the app. 
+
+- **Package family name**: Specify the package family name if you don’t specify a license. This field will be auto-populated after you specify a license. 
+
+- **Required appx dependencies**: Specify the appx dependency packages that are required for the installation of the app 
+
+## Settings for Classic Windows apps
+
+### MSI installer
+
+- **Command line arguments**: Optionally, append additional command arguments. The silent flag is appended for you. Example: PROPERTY=VALUE 
+
+- **Continue installations after failure**: Optionally, specify if you want to continue installing additional apps if this app fails to install 
+
+- **Restart required**: Optionally, specify if you want to initiate a reboot after a successful install of this app 
+
+- **Required win32 app dependencies**: Optionally, specify additional files that are required for the installation of the app. 
+
+### Exe or other installer
+
+- **Command line arguments**: Append the command line arguments with a silent flag (required). Optionally, append additional flags 
+
+- **Return Codes**: Specify the return codes for success and success with restart (0 and 3010 by default respectively) Any return code that is not listed will be interpreted as failure. The text boxes are space delimited. 
+
+- **Continue installations after failure**: Optionally, specify if you want to continue installing additional apps if this app fails to install 
+
+- **Restart required**: Optionally, specify if you want to initiate a reboot after a successful install of this app 
+
+- **Required win32 app dependencies**: Optionally, specify additional files that are required for the installation of the app. 
 
 
+<span id="adv" />
+## Add an app using advanced editor in Windows Configuration Designer
 
-### Add a desktop app to your package
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **ProvisioningCommands** > **DeviceContext** > **CommandFiles**. 
 
