@@ -17,7 +17,7 @@ The following color-coded status changes are reflected on the upgrade overview b
     - No delay in processing device inventory data = "Last updated" banner is displayed in green.
     - Delay processing device inventory data = "Last updated" banner is displayed in amber.
 - Computers with incomplete data:
-    - Less than 4% = Count is displayed in green.
+    - Less than 4% = Count is displayed in black.
     - 4% - 10% = Count is displayed in amber.
     - Greater than 10%  = Count is displayed in red.
 - User changes:
