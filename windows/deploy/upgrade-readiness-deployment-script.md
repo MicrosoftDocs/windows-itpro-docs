@@ -61,7 +61,7 @@ To run the Upgrade Readiness deployment script:
 
 The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered.
 
-<div style='font-size:8.0pt'>
+<TABLE><TR><TD>
 
 | Exit code | Meaning | Suggested fix |
 |----|-------------|--------------------|
@@ -109,7 +109,7 @@ The deployment script displays the following exit codes to let you know if it wa
 |42|Function **StartImpersonatingLoggedOnUser** failed with an unexpected exception.  |Check the logs for the exception message and HResult.|
 |43|Function **EndImpersonatingLoggedOnUser** failed with an unexpected exception. |Check the logs for the exception message and HResult.|
 
-</div>
+</TABLE>
 
 
 
