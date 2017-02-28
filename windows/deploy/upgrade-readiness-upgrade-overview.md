@@ -38,6 +38,8 @@ In the following example, there is no delay in data processing, less than 4% of 
 
 If data processing is delayed, you can continue using your workspace as normal. However, any changes or additional information that is added might not be displayed. Data is typically refreshed and the display will return to normal again within 24 hours.
 
+If there are computers with incomplete data, verify that you have installed the latest compatibilty update and run the most recent [Update Readiness deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) from the Microsoft download center.
+
 Select **Total computers** for a list of computers and details about them, including:
 
 -   Computer ID and computer name
