@@ -27,6 +27,9 @@ On Windows 10 for desktop editions, the customized Start works by:
     - 2 medium-sized tile rows in height. Windows 10 ignores any tiles that are pinned beyond the second row. 
     - No limit to the number of apps that can be pinned. There is a theoretical limit of 24 tiles per group (4 small tiles per medium square x 3 columns x 2 rows). 
 
+>[!NOTE]
+>Using the layout modification XML to configure Start is not supported with roaming user profiles. For more information, see [Deploy Roaming User Profiles](https://technet.microsoft.com/library/jj649079.aspx).
+
 ## LayoutModification XML
 
 IT admins can provision the Start layout using a LayoutModification.xml file. This file supports several mechanisms to modify or replace the default Start layout and its tiles. The easiest method for creating a LayoutModification.xml file is by using the Export-StartLayout cmdlet; see [Customize and export Start layout](customize-and-export-start-layout.md) for instructions.
