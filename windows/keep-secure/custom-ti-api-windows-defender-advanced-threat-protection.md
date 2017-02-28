@@ -344,6 +344,13 @@ $count |	boolean |	A collection and the number of items in the collection.
 
 These parameters are compatible with the [OData V4 query language](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356).
 
+
+## Code examples
+The following articles provide detailed code examples that demonstrate how to use the custom threat intelligence API in several programming languages:
+- PowerShell code examples
+- Python code examples
+
+
 ## Related topics
 - [Understand threat intelligence](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
 - [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
