@@ -277,7 +277,7 @@ Changes to volume levels can be sent by a room control system, or other system.
 <tr class="header">
 <th align="left">Command</th>
 <th align="left">State change</th>
-<th align="left">Response</th>
+<th align="left">Response</br>(On in [Replacement PC mode](connect-and-display-with-surface-hub.md#replacement-pc-mode))</th>
 </tr>
 </thead>
 <tbody>
