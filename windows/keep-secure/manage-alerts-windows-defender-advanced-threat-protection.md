@@ -23,12 +23,11 @@ localizationpriority: high
 
 Windows Defender ATP notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Dashboard**, and you can access all alerts in the **Alerts queue** menu.
 
-![Image of alert status](images/atp-alert-status.png)
-
 You can manage alerts by selecting an alert in the **Alerts queue** or the **Alerts related to this machine** section of the machine details view.
 
 Selecting an alert in either of those places brings up the **Alert management pane**.
 
+![Image of alert status](images/atp-alert-status.png)
 
 ## Change the status of an alert
 
