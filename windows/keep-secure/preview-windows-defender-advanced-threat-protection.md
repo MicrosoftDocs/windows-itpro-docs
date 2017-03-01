@@ -34,12 +34,12 @@ For more information, see [Turn on the preview experience](preview-settings-wind
 ## Preview features
 The following features are included in the preview release:
 
-- [Respond to machine alerts](respond-machine-alerts-windows-defender-advanced-threat-protection.md) - Contain and reduce or prevent further damage to your organization by using the following features to address machine related detected attacks.
+- [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md) - Take action on machine related alerts to quickly respond to detected attacks by isolating machines or collecting an investigation package.
   - [Isolate machines from the network](respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
   - [Undo machine isolation](respond-machine-alerts-windows-defender-advanced-threat-protection.md#undo-machine-isolation)
   - [Collect investigation package](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
 
-- [Respond to file related alerts](respond-file-alerts-windows-defender-advanced-threat-protection.md) - Contain and reduce or prevent further damage to your organization by using the following features to address file related detected attacks.
+- [Take response actions on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md) - Take action on file related alerts to quickly respond to detected attacks by stopping and quarantining files or blocking a file.
   - [Stop and quarantine files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#stop-and-quarantine-files-in-your-network)
   - [Remove file from quarantine](respond-file-alerts-windows-defender-advanced-threat-protection.md#remove-file-from-quarantine)
   - [Block files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#block-files-in-your-network)

@@ -772,7 +772,7 @@
 ##### [Configure an Azure Active Directory application for SIEM integration](configure-aad-windows-defender-advanced-threat-protection.md)
 ##### [Configure Splunk to consume Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
 ##### [Configure HP ArcSight to consume Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
-#### [Check sensor status](check-sensor-status-windows-defender-advanced-threat-protection.md)
+#### [Check sensor state](check-sensor-status-windows-defender-advanced-threat-protection.md)
 ##### [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
 ###### [Inactive machines](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
 ###### [Misconfigured machines](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
