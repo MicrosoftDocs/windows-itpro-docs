@@ -21,22 +21,13 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Windows Defender ATP notifies you of detected, possible attacks or breaches through alerts. A summary of new alerts is displayed in the **Dashboard**, and you can access all alerts in the **Alerts queue** menu.
+Windows Defender ATP notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Dashboard**, and you can access all alerts in the **Alerts queue** menu.
 
-For more information on how to investigate alerts see, [Investigate Windows Defender ATP alerts](investigate-alerts-windows-defender-advanced-threat-protection.md#investigate-windows-defender-advanced-threat-protection-alerts).
+You can manage alerts by selecting an alert in the **Alerts queue** or the **Alerts related to this machine** section of the machine details view.
 
-Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) on the top of the alert to access the Manage Alert menu and manage alerts.
+Selecting an alert in either of those places brings up the **Alert management pane**.
 
-![The manage alert menu lets you change the status of an alert, create suppression rules, or enter comments](images/manage-alert-menu.png)
-
-The **Manage alert** icon appears on the alert's heading in the **New**, **In Progress**, or **Resolved** queues, and on the details page for individual alerts.
-
-You can use the **Manage Alert** menu to:
-
-- Change the status of an alert
-- Resolve an alert
-- Suppress alerts so they won't show up in the **Alerts queue** from this point onwards
-- View the history and comments of an alert
+![Image of alert status](images/atp-alert-status.png)
 
 ## Change the status of an alert
 
@@ -46,21 +37,18 @@ For example, a team leader can review all **New** alerts, and decide to assign t
 
 Alternatively, the team leader might assign the alert to the **Resolved** queue if they know the alert is benign, coming from a machine that is irrelevant (such as one belonging to a security administrator), or is being dealt with through an earlier alert.
 
-**Change an alert's status:**
+## Alert classification
+You can specify if an alert is a true alert or a false alert.
 
-1. Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) on the heading of the alert.
-2. Choose the new status for the alert (the current status is highlighted in bold and appears on the alert).
+## Assign alerts
+If an alert is no yet assigned, you can select **Assign to me** to assign the alert to yourself.
 
-## Resolve an alert
+## Add comments and view the history of an alert
+You can add comments and view historical events about an alert to see previous changes made to the alert.
 
-You can resolve an alert by changing the status of the alert to **Resolved**. This causes the **Resolve conclusion** window to appear, where you can indicate why the alert was resolved and enter any additional comments.
+Whenever a change or comment is made to an alert, it is recorded in the **Comments and history** section.
 
-![You can resolve an alert as valid, valid - allowed, or false alarm](images/resolve-alert.png)
-
-The comments and change of status are recorded in the Comments and history window.
-
-![The comments window will display a history of status changes](images/comments.png)
-
+Added comments instantly appear on the pane.
 
 ## Suppress alerts
 
@@ -85,8 +73,9 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
 
 **Suppress an alert and create a suppression rule:**
 
-1. Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) on the heading of an existing alert.
-2. Choose the context for suppressing the alert.
+1. Select the alert you'd like to suppress. This brings up the **Alert management** pane.
+2. Scroll down to the **Supression rules** section.
+3. Choose the context for suppressing the alert.
 
 > [!NOTE]
 > You cannot create a custom or blank suppression rule. You must start from an existing alert.
@@ -96,12 +85,11 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
 1. Click the settings icon ![The settings icon looks like a cogwheel or gear](images/settings.png) on the main menu bar at the top of the Windows Defender ATP screen.
 2. Click **Suppression rules**.
 
-  ![Click the settings icon and then Suppression rules to create and modify rules](images/suppression-rules.png)
-
-> [!NOTE]
-> You can also click **See rules** in the confirmation window that appears when you suppress an alert.
+  ![Click the settings icon and then Suppression rules to create and modify rules](images/atp-suppression-rules.png)
 
 The list of suppression rules shows all the rules that users in your organization have created.
+![Suppression rules show the rule name or title, the context, the date, and an icon to delete the rule](images/rules-legend.png)
+
 Each rule shows:
 
 - (1) The title of the alert that is suppressed
@@ -109,39 +97,15 @@ Each rule shows:
 - (3) The date when the alert was suppressed
 - (4) An option to delete the suppression rule, which will cause alerts with this title to be displayed in the queue from this point onwards.
 
-![Suppression rules show the rule name or title, the context, the date, and an icon to delete the rule](images/rules-legend.png)
 
-## View the history and comments of an alert
-You can use the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) to see a list of previous changes and comments made to the alert and to add new comments. You can also use the menu to open multiple alerts in different tabs so you can compare several alerts at the same time.
-
-Whenever a change or comment is made to an alert, it is recorded in the **Comments and history** window.
-
-**See the history of an alert and its comments:**
-
-1. Click the **Manage Alert** menu icon ![The menu icon looks like three periods stacked on top of each other](images/menu-icon.png) on the heading of the alert.
-2. Click **Comments and history** to view related comments and history on the alert.
-
-Comments are indicated by a message box icon (![The comments icon looks like a speech bubble](images/comments-icon.png)) and include the username of the commenter and the time the comment was made.
-
-**Add a new comment:**
-
-1. Type your comment into the field.
-2. Click **Post Comment**.
-
-The comment will appear instantly.
-
-You will also be prompted to enter a comment if you change the status of an alert to **Resolved**.
-
-Changes are indicated by a clock icon (![The changes icon looks like an analog clock face](images/changes-icon.png)), and are automatically recorded when:
-
-- The alert is created
-- The status of the alert is changed
-
-### Related topics
+## Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
-- [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
+- [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines view](investigate-machines-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
 - [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
 - [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
+- [View and organize the Windows Defender ATP Machines view](machines-view-overview-windows-defender-advanced-threat-protection.md)
+- [Investigate machines in the Windows Defender ATP Machines view](investigate-machines-windows-defender-advanced-threat-protection.md)
+- [Investigate a user account in Windows Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
+- [Take response actions in Windows Defender ATP](response-actions-windows-defender-advanced-threat-protection.md)
