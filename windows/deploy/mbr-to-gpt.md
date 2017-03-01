@@ -1,5 +1,5 @@
 ---
-title: MBR to GPT partition conversion tool
+title: MBR2GPT
 description: How to use the MBR2GPT tool to convert partitions
 keywords: deploy, troubleshoot, windows, 10, upgrade, partition, mbr, gpt
 ms.prod: w10
@@ -10,27 +10,29 @@ author: greg-lindsay
 localizationpriority: high
 ---
 
-# MBR to GPT conversion tool
+# MBR2GPT.EXE
 
 **Applies to**
 -   Windows 10
 
->**Important**: This topic contains technical instructions for IT administrators. If you are not an IT administrator, ....
+MBR2GPT.EXE converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk.
 
-## In this topic
 
-This topic contains ...:
+## Syntax
 
-- [Background](#background): A.<BR>
-- [Requirements](#requirements): B.<BR>
-- [How to use MBR2GPT](#how-to): BB
-- [Syntax](#syntax): C.
-    - [Command line options](#command-line-options): D.
-    - [Examples](#examples): E.
-- [Conversion workflow](#conversion-workflow): F.
-    - [Validation](#validation): G.
-    - [Repartitioning](#repartitioning): H.
-- [Troubleshooting](#troubleshooting): I.
+```
+MBR2GPT.exe /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]
+```
+
+| Option | Description |
+|----|-------------|
+|/validate| This option instructs MBR2GPT.exe to perform only the disk validation steps and reports whether the disk is eligible for conversion. |
+|/convert| This option instructs MBR2GPT.exe to perform the disk validation and to proceed with the conversion if all validations pass. |
+|/disk:<diskNumber>| This option specifies the Diskpart-reported disk number of the disk to be converted to GPT. If the option isn’t specified, the system disk is used. (System disk is determined using the same mechanism behind Diskpart’s “SELECT DISK SYSTEM” command.)|
+|/logs:<logDirectory>| This options specifies the directory where MBR2GPT.exe’s logs should be written. If not specified, %windir% is used.|
+|/map:<source>=<destination>| This option specifies additional partition type mappings between MBR and GPT.|
+|/allowFullOS| By default, MBR2GPT.exe is blocked unless it is run from WinPE. This option overrides this block and allows conversion while running in the full Windows environment.|
+
 
 
 ## Background
