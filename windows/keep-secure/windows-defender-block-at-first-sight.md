@@ -31,7 +31,7 @@ It is enabled by default when certain pre-requisite settings are also enabled. I
 When a Windows Defender client encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean.
 
 > [!NOTE]
-> The Block at first sight feature only use the cloud protection backend for executable files that are downloaded from the Internet, or originating from the Internet zone. A hash value of the EXE file is checked via the cloud backend to determine if this is a previously undetected file.
+> The Block at first sight feature only uses the cloud-protection backend for "portable executable" (PE) files that are downloaded from the Internet, or originating from the Internet zone. This includes file types such as .exe, .dll, .scr, and so on. A hash value of the file is checked via the cloud backend to determine if this is a previously undetected file.
 
 If the cloud backend is unable to make a determination, the file will be locked by Windows Defender while a copy is uploaded to the cloud. Only after the cloud has received the file will Windows Defender release the lock and let the file run. The cloud will perform additional analysis to reach a determination, blocking all future encounters of that file. 
 

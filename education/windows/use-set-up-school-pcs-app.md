@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
-author: jdeckerMS
+author: CelesteDG
 ---
 
 # Use the Set up School PCs app 

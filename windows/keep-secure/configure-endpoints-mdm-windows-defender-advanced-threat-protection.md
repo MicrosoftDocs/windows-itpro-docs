@@ -1,5 +1,5 @@
 ---
-title: Configure Windows Defender ATP endpoints using Mobile Device Management tools
+title: Configure endpoints using Mobile Device Management tools
 description: Use Mobile Device Management tools to deploy the configuration package on endpoints so that they are onboarded to the service.
 keywords: configure endpoints using mdm, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints, mdm
 search.product: eADQiWindows 10XVcnh
