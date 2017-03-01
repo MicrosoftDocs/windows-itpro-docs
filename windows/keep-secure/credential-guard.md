@@ -83,7 +83,7 @@ Applications may cause performance issues when they attempt to hook the isolated
 ### Security considerations
 
 All computers that meet baseline protections for hardware, firmware, and software can use Credential Guard. 
-Computers that meet additional qualifications can provide additional protections.  
+Computers that meet additional qualifications can provide additional protections to further reduce the attack surface.  
 The following tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017.
 
 > [!NOTE]  
