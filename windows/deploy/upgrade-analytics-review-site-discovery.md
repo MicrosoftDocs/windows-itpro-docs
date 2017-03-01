@@ -1,6 +1,6 @@
 ---
 title: Review site discovery
-redirect_url: upgrade-readiness-additional-insights.md
+redirect_url: upgrade-readiness-additional-insights
 ---
 
 
