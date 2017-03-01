@@ -14,6 +14,7 @@ This topic lists new and updated topics in the [Deploy Windows 10](index.md) doc
 ## February 2017
 | New or changed topic | Description |
 |----------------------|-------------|
+| [Manage Windows upgrades with Upgrade Readiness](manage-windows-upgrades-with-upgrade-readiness.md) | Multiple topics updated, name changed from Upgrade Analytics to Upgrade Readiness, and other content updates. | 
 | [USMT Requirements](usmt-requirements.md) | Updated: Vista support removed and other minor changes | 
 | [Get started with Upgrade Analytics](upgrade-analytics-get-started.md) | Updated structure and content | 
 | [Upgrade Analytics deployment script](upgrade-analytics-deployment-script.md) | Added as a separate page from get started | 
