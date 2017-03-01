@@ -23,6 +23,8 @@ Organizations might want to deploy a customized Start and taskbar configuration 
 
 >[!NOTE]
 >Taskbar configuration is available starting in Windows 10, version 1607.
+>
+>Using the layout modification XML to configure Start is not supported with roaming user profiles. For more information, see [Deploy Roaming User Profiles](https://technet.microsoft.com/en-US/library/jj649079.aspx).
 
 ## Start options
 
