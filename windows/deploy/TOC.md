@@ -51,6 +51,7 @@
 ## [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
 ## [Upgrade to Windows 10 with System Center Configuration Manager](upgrade-to-windows-10-with-system-center-configuraton-manager.md)
 ## [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md)
+## [Convert MBR partition to GPT](mbr-to-gpt.md)
 ## [Configure a PXE server to load Windows PE](configure-a-pxe-server-to-load-windows-pe.md)
 ## [Windows 10 upgrade paths](windows-10-upgrade-paths.md)
 ## [Windows 10 edition upgrade](windows-10-edition-upgrades.md)
