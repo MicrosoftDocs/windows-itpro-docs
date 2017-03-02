@@ -40,11 +40,9 @@ Here's a high-level overview on how the LSA is isolated by using virtualization-
 
 ## Requirements
 
-For Credential Guard to provide protections, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements which we will refer to as [Hardware and software requirements](#hardware-and-software-requirements). Additionally Credential Guard blocks specific authentication capabilities, so applications which require blocked capabilities will break. We will refer to this as [Application requirements](#application-requirements). Beyond that, computers can meet additional hardware and firmware requirements, and receive additional protection—those computers will be more hardened against certain threats. To keep this section brief, those will be in [Security Considerations](#security-considerations).
+For Credential Guard to provide protections, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements which we will refer to as [Hardware and software requirements](#hardware-and-software-requirements). Additionally Credential Guard blocks specific authentication capabilities, so applications which require blocked capabilities will break. We will refer to this as [Application requirements](#application-requirements). Beyond that, computers can meet additional hardware and firmware qualifications, and receive additional protection—those computers will be more hardened against certain threats. To keep this section brief, those will be in [Security Considerations](#security-considerations).
 
 ### Hardware and software requirements
-
-To deploy Credential Guard, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements. Beyond that, computers can meet additional hardware and firmware requirements, and receive additional protection—those computers will be more hardened against certain threats. 
 
 To provide basic protection against OS level attempts to read Credential Manager domain credentials, NTLM and Kerberos derived credentials, Credential Manager uses:
 - Support for Virtualization-based security (required)
@@ -88,7 +86,7 @@ The following tables describe baseline protections, plus protections for improve
 
 > [!NOTE]  
 > Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new computers. <br>
-> If you are an OEM, see the requirements information at [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).<br>
+> If you are an OEM, see [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).<br>
 
 #### Baseline protections
 
@@ -102,7 +100,7 @@ The following tables describe baseline protections, plus protections for improve
 | Software: Qualified **Windows operating system**  | **Requirement**: Windows 10 Enterprise, Windows 10 Education, Windows Server 2016, or Windows 10 IoT Enterprise<br><blockquote><p><strong>Important:</strong><br> Windows Server 2016 running as a domain controller does not support Credential Guard. Only Device Guard is supported in this configuration.</p></blockquote><br>**Security benefits**: Support for VBS and for management features that simplify configuration of Credential Guard. |
 
 > [!IMPORTANT]
-> The preceding table lists requirements for baseline protections. The following tables list requirements for improved security. You can use Credential Guard with hardware, firmware, and software that support baseline protections, even if they do not support protections for improved security. However, we strongly recommend meeting the requirements for improved security to significantly strengthen the level of security that Credential Guard can provide.
+> The following tables list additional qualifications for improved security. We strongly recommend meeting the additional qualifications to significantly strengthen the level of security that Credential Guard can provide.
 
 #### 2015 Additional security qualifications starting with Windows 10, version 1507, and Windows Server 2016 Technical Preview 4
 
@@ -117,7 +115,7 @@ The following tables describe baseline protections, plus protections for improve
 #### 2016 Additional security qualifications starting with Windows 10, version 1607, and Windows Server 2016
 
 > [!IMPORTANT]
-> The following tables list requirements for improved security, beyond the level of protection described in the preceding tables. You can use Credential Guard with hardware, firmware, and software that do not support the following protections for improved security. As your systems meet more requirements, more protections become available to them.
+> The following tables list additional qualifications for improved security. Systems that meet these additional qualifications can provide more protections.
 
 | Protections for Improved Security         | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
@@ -129,7 +127,7 @@ The following tables describe baseline protections, plus protections for improve
 
 #### 2017 Additional security qualifications starting with Windows 10, version 1703 
 
-The following table lists requirements for Windows 10, version 1703, which are in addition to all preceding requirements. 
+The following table lists qualifications for Windows 10, version 1703, which are in addition to all preceding qualifications. 
 
 | Protection for Improved Security          | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
