@@ -12,6 +12,11 @@ This topic lists new and updated topics in the Microsoft Edge documentation for 
 
 For a detailed feature list of what's in the current Microsoft Edge releases, the Windows Insider Preview builds, and what was introduced in previous releases, see the [Microsoft Edge changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/).
 
+## February 2017
+|New or changed topic | Description |
+|----------------------|-------------|
+|[Available Group Policy and Mobile Data Management (MDM) settings for Microsoft Edge](available-policies.md) |Added new Group Policy and MDM settings for the Windows Insider Program. |
+
 ## November 2016
 |New or changed topic | Description |
 |----------------------|-------------|
