@@ -17,7 +17,6 @@ localizationpriority: high
 
 MBR2GPT.EXE converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk.
 
-
 ## Syntax
 
 ```
@@ -26,58 +25,45 @@ MBR2GPT.exe /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:
 
 | Option | Description |
 |----|-------------|
-|/validate| This option instructs MBR2GPT.exe to perform only the disk validation steps and reports whether the disk is eligible for conversion. |
-|/convert| This option instructs MBR2GPT.exe to perform the disk validation and to proceed with the conversion if all validations pass. |
-|/disk:<diskNumber>| This option specifies the Diskpart-reported disk number of the disk to be converted to GPT. If the option isn’t specified, the system disk is used. (System disk is determined using the same mechanism behind Diskpart’s “SELECT DISK SYSTEM” command.)|
-|/logs:<logDirectory>| This options specifies the directory where MBR2GPT.exe’s logs should be written. If not specified, %windir% is used.|
-|/map:<source>=<destination>| This option specifies additional partition type mappings between MBR and GPT.|
-|/allowFullOS| By default, MBR2GPT.exe is blocked unless it is run from WinPE. This option overrides this block and allows conversion while running in the full Windows environment.|
+|/validate| Instructs MBR2GPT.exe to perform only the disk validation steps and report whether the disk is eligible for conversion. |
+|/convert| Instructs MBR2GPT.exe to perform the disk validation and to proceed with the conversion if all validation tests pass. |
+|/disk:\<diskNumber\>| Specifies the disk number of the disk to be converted to GPT. If not specified, the system disk is used. The mechanism used is the same as that used by the diskpart.exe tool **SELECT DISK SYSTEM** command.|
+|/logs:\<logDirectory\>| Specifies the directory where MBR2GPT.exe logs should be written. If not specified, **%windir%** is used.|
+|/map:\<source\>=\<destination\>| Specifies additional partition type mappings between MBR and GPT.|
+|/allowFullOS| By default, MBR2GPT.exe is blocked unless it is run from WinPE. This option overrides this block and enables disk conversion while running in the full Windows environment. You cannot convert the system disk using this option.|
+|/silent| Suppresses all warning messages so that the utility can be used in scripts.|
+
+>You can use MBR2GPT to convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
+
+## Examples
 
 
 
-## Background
+## Specifications
 
-The ...:
 
-1. **Something**: 1
-2. **Something**: 2
-        - Example 
-3. **Something**: 3
-        - Example 
-4. **Something**: 4
-        - Example 
-5. **Something**: 5
-        - Example 
+### Troubleshooting
 
-**Figure 1**: 1:
+#### Determining partition type
 
-Image here
+You can type the following command at a Windows PowerShell prompt to display the disk number and partition type. Example output is also shown.
 
-definitions
 
-## Requirements
+```
+PS C:\> Get-Disk | ft -Auto
 
-The following ...
+Number Friendly Name      Serial Number        HealthStatus OperationalStatus Total Size Partition Style
+------ -------------      -------------        ------------ ----------------- ---------- ---------------
+0      MTFDDAK256MAM-1K1  13050928F47C         Healthy      Online             238.47 GB MBR
+1      ST1000DM003-1ER162 Z4Y3GD8F             Healthy      Online             931.51 GB GPT
+```
 
-Table or list here
+You can also view the partition type of a disk by opening the Disk Management tool, right-clicking the disk number, clicking **Properties**, and then clicking the **Volumes** tab. See the following example:
 
-## How to use MBR2GPT
+![Volumes](images/mbr2gpt-volume.PNG)
 
-## Syntax
 
-### Command line options
 
-| Option | Description | 
-|----|-------------|
-|/disk:\<diskNumber\>| This option specifies the Diskpart-reported disk number of the disk to be converted to GPT. If the option isn’t specified, the system disk is used. (System disk is determined using the same mechanism behind Diskpart’s “SELECT DISK SYSTEM” command.) |
-|opt|desc|
-|opt|desc|
-|opt|desc|
-|opt|desc|
-|opt|desc|
-|opt|desc|
-
-### Help
 
 ```
 
@@ -118,15 +104,6 @@ Where:
 
 ```
 
-### Examples
-
-## Conversion workflow
-
-### Validation
-
-### Repartitioning
-
-## Troubleshooting
 
 
 ## Related topics
