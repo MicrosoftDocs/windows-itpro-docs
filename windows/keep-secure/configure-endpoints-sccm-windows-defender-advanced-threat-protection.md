@@ -1,5 +1,5 @@
 ---
-title: Configure Windows Defender ATP endpoints using System Center Configuration Manager
+title: Configure endpoints using System Center Configuration Manager
 description: Use System Center Configuration Manager to deploy the configuration package on endpoints so that they are onboarded to the service.
 keywords: configure endpoints using sccm, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints, sccm
 search.product: eADQiWindows 10XVcnh
