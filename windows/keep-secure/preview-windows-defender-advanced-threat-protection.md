@@ -48,4 +48,4 @@ The following features are included in the preview release:
   - [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
 
 >[!NOTE]
-> All response actions require machines to be on the latest Windows 10 Insider build.
+> All response actions require machines to be on the latest Windows 10 Insider Preview build.
