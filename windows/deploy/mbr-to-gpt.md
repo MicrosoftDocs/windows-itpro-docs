@@ -36,7 +36,7 @@ The MBR2GPT tool can convert operating system disks that have earlier versions o
 
 ## Syntax
 
-<PRE>MBR2GPT.exe /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]</PRE>
+<PRE>MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]</PRE>
 
 
 ### Options
