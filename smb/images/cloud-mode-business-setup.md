@@ -79,13 +79,13 @@ If this is the first time you're setting this up, and you'd like to see how it's
 
     **Figure 4** - Option to add or buy a domain
 
-    ![Add or buy a domain in O365 admin center](images/office365_buy_domain.png)
+    ![Add or buy a domain in Office 365 admin center](images/office365_buy_domain.png)
 
   2.  In the **Home > Domains** page, you will see the Microsoft-provided domain, such as *fabrikamdesign.onmicrosoft.com*.
 
     **Figure 5** - Microsoft-provided domain
 
-    ![Microsoft provided domain](images/office365_ms_provided_domain.png)
+    ![Microsoft-provided domain](images/office365_ms_provided_domain.png)
 
     - If you already have a domain, select **+ Add domain** to add your existing domain. If you select this option, you'll be required to verify that you own the domain. Follow the steps in the wizard to verify your domain.
     - If you don't already own a domain, select **+ Buy domain**. If you're using a trial plan, you'll be required to upgrade your trial plan in order to buy a domain. Choose the subscription plan to use for your business and provide the details to complete your order.
@@ -94,7 +94,7 @@ If this is the first time you're setting this up, and you'd like to see how it's
 
     **Figure 6** - Domains
 
-    ![Verify your domains in O365 admin center](images/office365_additional_domain.png)
+    ![Verify your domains in Office 365 admin center](images/office365_additional_domain.png)
 
 ### 1.2 Add users and assign product licenses
 Once you've set up Office and added your domain, it's time to add users so they have access to Office 365. People in your organization need an account before they can sign in and access Office 365. The easiest way to add users is to add them one at a time in the Office 365 admin center.
