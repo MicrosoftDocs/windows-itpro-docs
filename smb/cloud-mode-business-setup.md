@@ -46,6 +46,7 @@ See <a href="https://support.office.com/en-us/article/Set-up-Office-365-for-busi
 To set up your Office 365 business tenant, see <a href="https://support.office.com/en-us/article/Get-started-with-Office-365-for-Business-d6466f0d-5d13-464a-adcb-00906ae87029" target="_blank">Get Started with Office 365 for business</a>.
 
 If this is the first time you're setting this up, and you'd like to see how it's done, you can follow these steps to get started:
+
 1. Go to the <a href="https://business.microsoft.com/en-us/products/office-365" target="_blank">Office 365</a> page in the <a href="http://business.microsoft.com" target="_blank">Microsoft Business site</a>. Select **Try now** to use the Office 365 Business Premium Trial or select **Buy now** to sign up for Office 365 Business Premium. In this walkthrough, we'll select **Try now**.
 
   **Figure 1** - Try or buy Office 365
@@ -54,7 +55,9 @@ If this is the first time you're setting this up, and you'd like to see how it's
 
 2. Fill out the sign up form and provide information about you and your company.
 3. Create a user ID and password to use to sign into your account.
+
   This step creates an onmicrosoft.com email address. You can use this email address to sign in to the various admin centers. Save your sign-in info so you can use it to sign into <a href="https://portal.office.com" target="_blank">https://portal.office.com</a> (the admin portal).
+
 4. Select **Create my account** and then enter the phone number you used in step 2 to verify your identity. You'll be asked to enter your verification code.
 5. Select **You're ready to go...** which will take you to the Office 365 portal.
 
@@ -65,14 +68,16 @@ If this is the first time you're setting this up, and you'd like to see how it's
 
   ![Office 365 portal](images/office365_portal.png)
 
+
 6. Select the **Admin** tile to go to the Office 365 admin center.
 7. In the admin center, click **Next** to see the highlights and welcome info for the admin center. When you're done, click **Go to setup** to complete the Office 365 setup.
 
   This may take up to a half hour to complete.
-
+  
   **Figure 3** - Office 365 admin center
 
   ![Office 365 admin center](images/office365_admin_portal.png)
+
 
 8. Go back to the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">Office 365 admin center</a> to add or buy a domain.
   1. Select the **Domains** option.
@@ -80,6 +85,7 @@ If this is the first time you're setting this up, and you'd like to see how it's
     **Figure 4** - Option to add or buy a domain
 
     ![Add or buy a domain in Office 365 admin center](images/office365_buy_domain.png)
+    
 
   2.  In the **Home > Domains** page, you will see the Microsoft-provided domain, such as *fabrikamdesign.onmicrosoft.com*.
 
