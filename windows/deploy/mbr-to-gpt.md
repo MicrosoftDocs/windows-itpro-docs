@@ -37,19 +37,20 @@ The MBR2GPT tool can convert operating system disks that have earlier versions o
 ## Syntax
 
 ```
-MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]
+MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] 
+[/allowFullOS]
 ```
 
 <TABLE>
 <TR><TD>MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
 </TABLE>
 
-<TABLE>
-<TR><TD><font face="Consolas">MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
+<TABLE CELLPADDING=0>
+<TR><TD><font face="Consolas" size="-1">MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
 </TABLE>
 
 <TABLE>
-<TR><TD><font face="Consolas" size="-1">MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
+<TR><TD><font face="Consolas" size="-2">MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
 </TABLE>
 
 <table style="font-family:consolas;" >
@@ -60,11 +61,13 @@ MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<sou
 <TR><TD>MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
 </TABLE>
 
-<div style='font-size:10.0pt'>
+<div style='font-size:9.0pt'>
 <TABLE>
 <TR><TD><font face="Consolas">MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
 </TABLE>
 </div>
+
+- Last try
 
 
 ### Options
