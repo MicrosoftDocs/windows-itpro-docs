@@ -70,3 +70,10 @@ You can now use the alert ID obtained from creating a new alert definition to cr
 You can use the complete code to create calls to the API.
 
 [!code[CustomTIAPI](./code/example.ps1#L1-L53)]
+
+## Related topics
+- [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+- [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
+- [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
