@@ -1,4 +1,4 @@
-$tenantId = '{Your Tenant ID}’
+$tenantId = '{Your Tenant ID}'
 $clientId = '{Your Client ID}'
 $clientSecret = '{Your Client Secret}'
 
