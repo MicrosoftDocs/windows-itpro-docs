@@ -56,7 +56,7 @@ If this is the first time to use the API, the response is empty.
 
 <span id="alert-definition" />
 ## Step 4: Create a new alert definition
-The following example shows how to create a new alert definition.
+The following example demonstrates how you to create a new alert definition.
 
 [!code[CustomTIAPI](./code/example.ps1#L26-L39)]
 

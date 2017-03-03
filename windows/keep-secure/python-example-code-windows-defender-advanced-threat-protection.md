@@ -39,36 +39,36 @@ The following example demonstrates how to obtain an Azure AD access token that y
 
 Replace the *tenant\_id*, *client_id*, and *client_secret* values with the ones you got from **Preferences settings** page in the portal:
 
-[!code[CustomTIAPI](./code/example.py1#L1-L17)]
+[!code[CustomTIAPIpython](./code/example.py1#L1-L17)]
 
 
 <span id="session-object" />
 ## Step 2: Create request session object
 Add HTTP headers to the session object, including the Authorization header with the token that was obtained.
 
-[!code[CustomTIAPI](./code/example.py1#L19-L23)]
+[!code[CustomTIAPIpython](./code/example.py1#L19-L23)]
 
 <span id="calls" />
 ## Step 3: Create calls to the custom threat intelligence API
 After adding HTTP headers to the session object, you can now create calls to the API. The following example demonstrates how you can view all the alert definition entities:
 
-[!code[CustomTIAPI](./code/example.py1#L25-L26)]
+[!code[CustomTIAPIpython](./code/example.py1#L25-L26)]
 
 If this is the first time to use the API, the response is empty.
 
 <span id="alert-definition" />
 ## Step 4: Create a new alert definition
-The following example shows how to create a new alert definition.
+The following example demonstrates how you to create a new alert definition.
 
-[!code[CustomTIAPI](./code/example.py1#L28-L39)]
+[!code[CustomTIAPIpython](./code/example.py1#L28-L39)]
 
 <span id="ioc" />
 ## Step 5: Create a new indicator of compromise
 You can now use the alert ID obtained from creating a new alert definition to create a new indicator of compromise.
 
-[!code[CustomTIAPI](./code/example.py1#L41-L51)]
+[!code[CustomTIAPIpython](./code/example.py1#L41-L51)]
 
 ## Complete code
 You can use the complete code to create calls to the API.
 
-[!code[CustomTIAPI](./code/example.py1#L1-L51)]
+[!code[CustomTIAPIpython](./code/example.py1#L1-L51)]
