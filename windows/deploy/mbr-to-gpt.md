@@ -262,7 +262,20 @@ The conversion tool will obtain volume unique ID before and after the layout con
 
 ## Troubleshooting
 
-The tool will display status information in its output. Both validation and conversion are clear if any errors are encountered. For example, if one or more partitions do not translate properly, this is displayed and the conversion not performed. To view more detail about any errors that are encountered, see the associated log files.
+The tool will display status information in its output. Both validation and conversion are clear if any errors are encountered. For example, if one or more partitions do not translate properly, this is displayed and the conversion not performed. To view more detail about any errors that are encountered, see the associated [log files](#logs).
+
+### Logs
+
+Four log files are created by the MBR2GPT tool:
+
+- diagerr.xml
+- diagwrn.xml
+- setupact.log
+- setuperr.log
+
+These files contain errors and warnings encountered during disk validation and conversion. Information in these files can be helpful in diagnosing problems with the tool. The setupact.log and setuperr.log files will have the most detailed information about disk layouts, processes, and other information pertaining to disk validation and conversion. Note: The setupact*.log files are different than the Windows Setup files that are found in the %Windir%\Panther directory.
+
+The default location for all these log files in Windows PE is **%windir%**.
 
 ### Interactive help
 
@@ -327,18 +340,6 @@ MBR2GPT has the following associated return codes:
 |10| Conversion failed due to error while applying GPT layout.|
 |100| Conversion to GPT layout succeeded, but some boot configuration data entries could not be restored.|
 
-### Logs
-
-Four log files are created by the MBR2GPT tool:
-
-- diagerr.xml
-- diagwrn.xml
-- setupact.log
-- setuperr.log
-
-These files contain errors and warnings, respectively, encountered during disk validation and conversion. These logs can be helpful in diagnosing problems with the tool. The setupact.log and setuperr.log files will have the most detailed information about disk layouts and other information and processes that are encountered during validation and conversion. Note: The setupact*.log files are different than the Windows Setup files that are found in the %Windir%\Panther directory.
-
-The default location for all these log files in Windows PE is **%windir%**.
 
 ### Determining the partition type
 
