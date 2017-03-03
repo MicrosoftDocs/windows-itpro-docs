@@ -37,24 +37,7 @@ The following example demonstrates how to obtain an Azure AD access token that y
 
 Replace the *tenant\_id*, *client_id*, and *client_secret* values with the ones you got from **Preferences settings** page in the portal:
 
-```
-
-$tenantId = '{Your Tenant ID}
-$clientId = '{Your Client ID}'
-$clientSecret = '{Your Client Secret}'
-
-$authUrl = "https://login.windows.net/{0}/oauth2/token" -f $tenantId
-
-$tokenPayload = @{
-    "resource"='https://graph.windows.net'
-    "client_id" = $clientId
-    "client_secret" = $clientSecret
-    "grant_type"='client_credentials'}
-
-$response = Invoke-RestMethod $authUrl -Method Post -Body $tokenPayload
-$token = $response.access_token
-
-```
+[!code[CustomTIAPI](./code/example.ps1#L1-L14)]
 
 ## Create headers
 The following example demonstrates how to create headers used for the requests with the API.
