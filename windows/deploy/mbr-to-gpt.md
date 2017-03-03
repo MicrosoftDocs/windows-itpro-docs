@@ -21,8 +21,8 @@ localizationpriority: high
 
 You can use MBR2GPT to perform the following:
 
-- Within the Windows PE environment: Convert any attached MBR-formatted disk to GPT, including the system disk.
-- From within the currently running OS: Convert any attached MBR-formatted disk to GPT, including the system disk.
+- \[Within the Windows PE environment\]: Convert any attached MBR-formatted disk to GPT, including the system disk.
+- \[From within the currently running OS\]: Convert any attached MBR-formatted disk to GPT, including the system disk.
 
 >MBR2GPT is available in Windows 10 version 1703, also known as Windows 10 Creator's Update, and later versions. 
 >The tool is available in both the full OS environment and Windows PE. 
@@ -36,13 +36,7 @@ The MBR2GPT tool can convert operating system disks that have earlier versions o
 
 ## Syntax
 
-<div style='font-size:11.0pt', 'font-color:black'>
-
-```
-MBR2GPT.exe /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]
-```
-
-</div>
+<PRE>MBR2GPT.exe /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]</PRE>
 
 
 ### Options
