@@ -37,27 +37,27 @@ The following example demonstrates how to obtain an Azure AD access token that y
 
 Replace the *tenant\_id*, *client_id*, and *client_secret* values with the ones you got from **Preferences settings** page in the portal:
 
-[!code[-powershell][CustomTIAPI](./code/example.ps1#L1-L14)]
+[!code[CustomTIAPI](./code/example.ps1#L1-L14)]
 
 ## Create headers
 The following example demonstrates how to create headers used for the requests with the API.
 
-[!code[-powershell][CustomTIAPI](./code/example.ps1#L16-L19)]
+[!code[CustomTIAPI](./code/example.ps1#L16-L19)]
 
 
 ## Create calls to the custom threat intelligence API
 The following example demonstrates how to view all alert definition entities by creating a call to the API.
 
-[!code[-powershell][CustomTIAPI](./code/example.ps1#L21-L24)]
+[!code[CustomTIAPI](./code/example.ps1#L21-L24)]
 
 If this is the first time to use the API, the response is empty.
 
 ## Create a new alert definition
 The following example shows how to create a new alert definition.
 
-[!code[-powershell][CustomTIAPI](./code/example.ps1#L26-L39)]
+[!code[CustomTIAPI](./code/example.ps1#L26-L39)]
 
 ## Create a new indicator of compromise
 The following example shows how to use the alert ID obtained from creating a new alert definition to create a new indicator of compromise.
 
-[!code[-powershell][CustomTIAPI](./code/example.ps1#L43-L53)]
+[!code[CustomTIAPI](./code/example.ps1#L43-L53)]
