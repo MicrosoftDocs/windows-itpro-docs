@@ -31,7 +31,8 @@ You can use MBR2GPT to convert an MBR disk with BitLocker-encrypted volumes as l
 
 The MBR2GPT tool can convert operating system disks that are running earlier versions of Windows, such as Windows 10 versions 1507, 1511, and 1607. However, you must run the tool while booted into Windows 10 version 1703 or later, and perform an offline conversion.
 
-After the disk has been converted to GPT partition style, the firmware must be reconfigured to boot in UEFI mode. Make sure that your device supports UEFI before attempting to convert the disk.
+>[!IMPORTANT]
+>After the disk has been converted to GPT partition style, the firmware must be reconfigured to boot in UEFI mode. Make sure that your device supports UEFI before attempting to convert the disk.
 
 ## Syntax
 
@@ -73,9 +74,8 @@ In the following example:
 2. The MBR2GPT tool is used to convert disk 0.
 3. The DISKPART tool displays that disk 0 is now using the GPT format.
 4. The new disk layout is displayed - four partitions are present on the GPT disk: three are identical to the previous partitions and one is the new EFI system partition (volume 3).
-5. The OS volume is selected again, and detail displays that it has been converted to the [GPT partition type](https://msdn.microsoft.com/library/windows/desktop/aa365449.aspx)  **ebd0a0a2-b9e5-4433-87c0-68b6b72699c7** corresponding to the **PARTITION_BASIC_DATA_GUID** type. 
+5. The OS volume is selected again, and detail displays that it has been converted to the [GPT partition type](https://msdn.microsoft.com/library/windows/desktop/aa365449.aspx) &nbsp; **ebd0a0a2-b9e5-4433-87c0-68b6b72699c7** corresponding to the **PARTITION_BASIC_DATA_GUID** type. 
 
->[!IMPORTANT]
 >As noted in the output from the MBR2GPT tool, you must make changes to the computer firmware so that the new EFI system partition will boot properly.
 
 ```
