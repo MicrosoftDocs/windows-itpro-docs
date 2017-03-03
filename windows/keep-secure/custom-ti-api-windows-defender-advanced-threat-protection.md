@@ -347,11 +347,13 @@ These parameters are compatible with the [OData V4 query language](http://docs.o
 
 ## Code examples
 The following articles provide detailed code examples that demonstrate how to use the custom threat intelligence API in several programming languages:
-- PowerShell code examples
-- Python code examples
+- [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
+- [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
 
 
 ## Related topics
-- [Understand threat intelligence](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+- [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
 - [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
+- [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
