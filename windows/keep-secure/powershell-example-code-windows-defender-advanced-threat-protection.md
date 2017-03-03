@@ -26,12 +26,13 @@ localizationpriority: high
 This article provides PowerShell code examples for using the custom threat intelligence API.
 
 These code examples demonstrate the following tasks:
-- [Obtain an Azure AD access token](#obtain-an-azure-ad-access-token)
-- [Create headers](#create-headers)
-- [Create calls to the custom threat intelligence API](#create-calls-to-the-custom-threat-intelligence-api)
-- [Create a new alert definition](#create-a-new-alert-definition)
-- [Create a new indicator of compromise](#create-a-new-indicator-of-compromise)
+- [Obtain an Azure AD access token](#token)
+- [Create headers](#headers)
+- [Create calls to the custom threat intelligence API](#calls)
+- [Create a new alert definition](#alert-definition)
+- [Create a new indicator of compromise](#ioc)
 
+<span id="token" />
 ## Step 1: Obtain an Azure AD access token
 The following example demonstrates how to obtain an Azure AD access token that you can use to call methods in the custom threat intelligence API. After you obtain a token, you have 60 minutes to use this token in calls to the custom threat intelligence API before the token expires. After the token expires, you can generate a new token.
 
@@ -39,12 +40,13 @@ Replace the *tenantid*, *clientid*, and *clientSecret* values with the ones you 
 
 [!code[CustomTIAPI](./code/example.ps1#L1-L14)]
 
+<span id="header" />
 ## Step 2: Create headers used for the requests with the API
 Use the following code to create the headers used for the requests with the API:
 
 [!code[CustomTIAPI](./code/example.ps1#L16-L19)]
 
-
+<span id="calls" />
 ## Step 3: Create calls to the custom threat intelligence API
 After creating the headers, you can now create calls to the API. The following example demonstrates how you can view all the alert definition entities:
 
@@ -52,11 +54,13 @@ After creating the headers, you can now create calls to the API. The following e
 
 If this is the first time to use the API, the response is empty.
 
+<span id="alert-definition" />
 ## Step 4: Create a new alert definition
 The following example shows how to create a new alert definition.
 
 [!code[CustomTIAPI](./code/example.ps1#L26-L39)]
 
+<span id="ioc" />
 ## Create a new indicator of compromise
 You can now use the alert ID obtained from creating a new alert definition to create a new indicator of compromise.
 
