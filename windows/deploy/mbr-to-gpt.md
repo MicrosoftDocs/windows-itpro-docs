@@ -44,15 +44,6 @@ MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<sou
 <TR><TD>MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
 </TABLE>
 
-
-<PRE>
-MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]
-</PRE>
-
-<PRE>
-MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
-</PRE>
-
 <TABLE>
 <TR><TD><font face="Consolas">MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
 </TABLE>
