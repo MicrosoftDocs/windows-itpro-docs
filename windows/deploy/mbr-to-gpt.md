@@ -254,7 +254,7 @@ For more information about partition types, see:
 
 The conversion tool will attempt to remap all drive letter assignment information contained in the registry that correspond to the volumes of the converted disk. If a drive letter assignment cannot be restored, an error will be displayed at the console and in the log, so that you can manually perform the correct assignment of the drive letter. **Important**: this code runs after the layout conversion has taken place, so the operation cannot be undone at this stage. 
 
-The conversion tool will obtain volume unique ID before and after the layout conversion, organizing this information into a lookup table. It will then iterate through all the entries in **HKLM\SYSTEM\MountedDevices**, and for each entry do the following:
+The conversion tool will obtain volume unique ID data before and after the layout conversion, organizing this information into a lookup table. It will then iterate through all the entries in **HKLM\SYSTEM\MountedDevices**, and for each entry do the following:
 
 1. Check if the unique ID corresponds to any of the unique IDs for any of the volumes that are part of the converted disk.
 2. If found, set the value to be the new unique ID, obtained after the layout conversion.
