@@ -61,7 +61,7 @@ The following example demonstrates how you to create a new alert definition.
 [!code[CustomTIAPI](./code/example.ps1#L26-L39)]
 
 <span id="ioc" />
-## Create a new indicator of compromise
+## Step 5: Create a new indicator of compromise
 You can now use the alert ID obtained from creating a new alert definition to create a new indicator of compromise.
 
 [!code[CustomTIAPI](./code/example.ps1#L43-L53)]
