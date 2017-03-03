@@ -34,12 +34,12 @@ For more information, see [Turn on the preview experience](preview-settings-wind
 ## Preview features
 The following features are included in the preview release:
 
-- [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md) - Take action on machine related alerts to quickly respond to detected attacks by isolating machines or collecting an investigation package.
+- [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md) - Quickly respond to detected attacks by isolating machines or collecting an investigation package.
   - [Isolate machines from the network](respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
   - [Undo machine isolation](respond-machine-alerts-windows-defender-advanced-threat-protection.md#undo-machine-isolation)
   - [Collect investigation package](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
 
-- [Take response actions on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md) - Take action on file related alerts to quickly respond to detected attacks by stopping and quarantining files or blocking a file.
+- [Take response actions on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md) - Quickly respond to detected attacks by stopping and quarantining files or blocking a file.
   - [Stop and quarantine files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#stop-and-quarantine-files-in-your-network)
   - [Remove file from quarantine](respond-file-alerts-windows-defender-advanced-threat-protection.md#remove-file-from-quarantine)
   - [Block files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#block-files-in-your-network)
@@ -48,4 +48,4 @@ The following features are included in the preview release:
   - [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
 
 >[!NOTE]
-> All response features require machines to be on the latest Windows 10 Insider Preview build and above.
+> All response actions require machines to be on the latest Windows 10 Insider build.
