@@ -29,10 +29,10 @@ You can use MBR2GPT to perform the following:
 
 You can use MBR2GPT to convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
 
-The MBR2GPT tool can convert operating system disks that are running earlier versions of Windows, such as Windows 10 versions 1507, 1511, and 1607. However, you must run the tool while booted into Windows 10 version 1703 or later, and perform an offline conversion.
+The MBR2GPT tool can convert operating system disks that have earlier versions of Windows installed, such as Windows 10 versions 1507, 1511, and 1607. However, you must run the tool while booted into Windows 10 version 1703 or later, and perform an offline conversion.
 
 >[!IMPORTANT]
->After the disk has been converted to GPT partition style, the firmware must be reconfigured to boot in UEFI mode. Make sure that your device supports UEFI before attempting to convert the disk.
+>After the disk has been converted to GPT partition style, the firmware must be reconfigured to boot in UEFI mode. <BR>Make sure that your device supports UEFI before attempting to convert the disk.
 
 ## Syntax
 
