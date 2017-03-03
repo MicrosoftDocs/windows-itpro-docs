@@ -54,7 +54,7 @@ After adding HTTP headers to the session object, you can now create calls to the
 
 [!code[CustomTIAPI](./code/example.py#L25-L26)]
 
-If this is the first time to use the API, the response is empty.
+The response is empty on initial use of the API.
 
 <span id="alert-definition" />
 ## Step 4: Create a new alert definition

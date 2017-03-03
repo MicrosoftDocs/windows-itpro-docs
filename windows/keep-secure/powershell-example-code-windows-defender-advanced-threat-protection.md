@@ -52,7 +52,7 @@ After creating the headers, you can now create calls to the API. The following e
 
 [!code[CustomTIAPI](./code/example.ps1#L21-L24)]
 
-If this is the first time to use the API, the response is empty.
+The response is empty on initial use of the API.
 
 <span id="alert-definition" />
 ## Step 4: Create a new alert definition
