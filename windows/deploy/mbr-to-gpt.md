@@ -27,6 +27,8 @@ You can use MBR2GPT to perform the following:
 >MBR2GPT is available in Windows 10 version 1703, also known as Windows 10 Creator's Update, and later versions. 
 >The tool is available in both the full OS environment and the Windows Preinstallation Environment (WinPE). 
 
+You can use MBR2GPT to convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
+
 ## Syntax
 
 ```
@@ -41,11 +43,9 @@ MBR2GPT.exe /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:
 |/convert| Instructs MBR2GPT.exe to perform the disk validation and to proceed with the conversion if all validation tests pass. |
 |/disk:\<diskNumber\>| Specifies the disk number of the disk to be converted to GPT. If not specified, the system disk is used. The mechanism used is the same as that used by the diskpart.exe tool **SELECT DISK SYSTEM** command.|
 |/logs:\<logDirectory\>| Specifies the directory where MBR2GPT.exe logs should be written. If not specified, **%windir%** is used. If specified, the directory must already exist, it will not be automatically created or overwritten.|
-|/map:\<source\>=\<destination\>| Specifies additional partition type mappings between MBR and GPT. The MBR partition number is specified in decimal notation, not hexidecimal. The GPT GUID can contain brackets (ex: /map:42={af9b60a0-1431-4f62-bc68-3311714a69ad}) but brackets are not required. |
+|/map:\<source\>=\<destination\>| Specifies additional partition type mappings between MBR and GPT. The MBR partition number is specified in decimal notation, not hexidecimal. The GPT GUID can contain brackets, for example: **/map:42={af9b60a0-1431-4f62-bc68-3311714a69ad}**. |
 |/allowFullOS| By default, MBR2GPT.exe is blocked unless it is run from WinPE. This option overrides this block and enables disk conversion while running in the full Windows environment.|
 |/silent| Suppresses all warning messages so that the utility can be used in scripts.|
-
->You can use MBR2GPT to convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
 
 ## Examples
 
@@ -355,7 +355,7 @@ In this example, Disk 0 is formatted with the MBR partition style, and Disk 1 is
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/en-us/windows/dn798755.aspx)
+[Using MBR2GPT with Configuration Manager OSD](https://miketerrill.net/tag/mbr2gpt/)
 <BR>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/en-us/windows/dn798752.aspx)
 <BR>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
 <BR>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
