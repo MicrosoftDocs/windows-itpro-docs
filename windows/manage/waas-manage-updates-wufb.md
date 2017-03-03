@@ -104,6 +104,17 @@ Windows Update for Business was first made available in Windows 10, version 1511
 <tr><td><p>Drivers</p></td><td><p>No driver-specific controls</p></td><td><p>Drivers can be selectively excluded from Windows Update for Business.</p></td></tr>
 </tbody></table>
 
+## Monitor Windows Updates using Update Compliance
+
+In order to be able to track Windows updates deployed by Windows Update for Business, and make sure that all your machines are up to date, you can levergae Update Compliance.
+
+Update Compliance is a solution built within Operations Management Suite (OMS), a cloud-based monitoring and automation service which has a flexible servicing subscription based off data usage/retention. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
+
+Update Compliance uses the Windows telemetry that is part of all Windows 10 devices. It collects system data including update installation progress, Windows Update for Business (WUfB) configuration data, and other update-specific information, and then sends this data privately to a secure cloud to be stored for analysis and usage within the solution.
+
+![OS Update Overview](images/uc-11.png)
+
+For more information about Update Compliance, see [Monitor Windows Updates using Update Compliance](update-compliance-monitor.md).
 
 ## Steps to manage updates for Windows 10
 
@@ -118,18 +129,6 @@ or [Manage Windows 10 updates using Windows Server Update Services](waas-manage-
 or [Manage Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)</td></tr>
 </tbody></table>
 </br>
-
-## Monitor Windows Updates using Update Compliance
-
-In order to be able to track Windows updates deployed by Windows Update for Business, and make sure that all your machines are up to date, you can levergae Update Compliance.
-
-Update Compliance is a solution built within Operations Management Suite (OMS), a cloud-based monitoring and automation service which has a flexible servicing subscription based off data usage/retention. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
-
-Update Compliance uses the Windows telemetry that is part of all Windows 10 devices. It collects system data including update installation progress, Windows Update for Business (WUfB) configuration data, and other update-specific information, and then sends this data privately to a secure cloud to be stored for analysis and usage within the solution.
-
-![OS Update Overview](images/uc-11.png)
-
-For more information about Update Compliance, see [Monitor Windows Updates using Update Compliance](update-compliance-monitor.md).
 
 ## Related topics
 
