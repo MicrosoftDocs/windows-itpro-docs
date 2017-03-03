@@ -44,29 +44,26 @@ MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<sou
 <TR><TD>MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
 </TABLE>
 
-`MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]`
 
-<PRE>MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]</PRE>
-
-***MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]***
-
-***MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]***
-
-<div>
-```
+<PRE>
 MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]
-```
-</div>
+</PRE>
 
-<DIV STYLE="font-family: Arial Black; font-size: 12px; color: black">
-`MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]`
-</DIV>
+
 
 <TABLE>
 <TR><TD><font face="Consolas">MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
 </TABLE>
 
+<TABLE>
+<TR><TD><font face="Consolas" size="11">MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
+</TABLE>
+
 <table style="font-family:consolas;" >
+<TR><TD>MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
+</TABLE>
+
+<table style="font-family:consolas;font-size:11px" >
 <TR><TD>MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]
 </TABLE>
 
