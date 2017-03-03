@@ -15,20 +15,25 @@ localizationpriority: high
 **Applies to**
 -   Windows 10
 
-MBR2GPT.EXE converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows PE command prompt.
+## Summary
 
-MBR2GPT is available in Windows 10 version 1703, also known as Windows 10 Creator's Update, and later versions. The tool is available in both the full OS environment and the Windows Preinstallation Environment (WinPE). 
+**MBR2GPT.EXE** converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows PE command prompt.
 
 You can use MBR2GPT to perform the following:
 
 - Within the WinPE environment: Convert any attached MBR-formatted disk to GPT, including the system disk.
 - From within the currently running OS: Convert any attached MBR-formatted disk to GPT, including the system disk.
 
+>MBR2GPT is available in Windows 10 version 1703, also known as Windows 10 Creator's Update, and later versions. 
+>The tool is available in both the full OS environment and the Windows Preinstallation Environment (WinPE). 
+
 ## Syntax
 
 ```
 MBR2GPT.exe /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]
 ```
+
+### Options
 
 | Option | Description |
 |----|-------------|
@@ -44,6 +49,8 @@ MBR2GPT.exe /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:
 
 ## Examples
 
+### Validatiion example
+
 In the following example, disk 0 is validated for conversion. Errors and warnings are logged to the default location, **%windir%**.
 
 ```
@@ -54,6 +61,8 @@ MBR2GPT: Validating layout, disk sector size is: 512
 MBR2GPT: Validation completed successfully
 ```
 
+### Conversion example
+
 In the following example:
 
 1. The current disk partition layout is displayed prior to conversion - three partitions are present on the MBR disk (disk 0): a system reserved partition, a Windows partition, and a recovery partition. A DVD-ROM is also present as volume 0.
@@ -61,8 +70,9 @@ In the following example:
 2. The MBR2GPT tool is used to convert disk 0.
 3. The DISKPART tool displays that disk 0 is now using the GPT format.
 4. The new disk layout is displayed - four partitions are present on the GPT disk: three are identical to the previous partitions and one is the new EFI system partition (volume 3).
-5. The OS volume is selected again, and detail displays that it has been converted to [GPT partition type](https://msdn.microsoft.com/library/windows/desktop/aa365449.aspx) ebd0a0a2-b9e5-4433-87c0-68b6b72699c7 corresponding to the PARTITION_BASIC_DATA_GUID type. 
+5. The OS volume is selected again, and detail displays that it has been converted to [GPT partition type](https://msdn.microsoft.com/library/windows/desktop/aa365449.aspx) **ebd0a0a2-b9e5-4433-87c0-68b6b72699c7** corresponding to the **PARTITION_BASIC_DATA_GUID** type. 
 
+>[!IMPORTANT]
 >As noted in the output from the MBR2GPT tool, you must make changes to the computer firmware so that the new EFI system partition will boot properly.
 
 ```
@@ -178,15 +188,11 @@ Offset in Bytes: 524288000
 
 ```
 
-X:>mbr2gpt /convert /disk:0
-
 ## Specifications
 
 ### Disk conversion workflow
 
-The following diagram illustrates the high-level phases of the MBR-to-GPT conversion process:
-
-![Workflow](images/mbr2gpt-workflow.PNG)
+The following steps illustrate high-level phases of the MBR-to-GPT conversion process:
 
 1. Disk validation is performed.
 2. The disk is repartitioned to create an EFI system partition (ESP) if one does not already exist.
@@ -194,6 +200,10 @@ The following diagram illustrates the high-level phases of the MBR-to-GPT conver
 4. GPT metatdata and layout information is applied.
 5. The BCD store is updated.
 6. Drive letter assignments are restored.
+
+These steps are summarized in the diagram below:
+
+![Workflow](images/mbr2gpt-workflow.PNG)
 
 ### Disk validation
 
@@ -250,55 +260,11 @@ The conversion tool will obtain volume unique ID before and after the layout con
 
 The tool will display status information in its output. Both validation and conversion are clear if any errors are encountered. For example, if one or more partitions do not translate properly, this is displayed and the conversion not performed. To view more detail about any errors that are encountered, see the associated log files.
 
-### Logs
-
-Two log files are created by the MBR2GPT tool:
-
-diagerr.xml
-diagwrn.xml
-
-These files contain errors and warnings, respectively, encountered during disk validation and conversion. These tool-specific logs can be helpful in diagnosing problems with the tool, however they are not meant to replace the default Windows Setup log files:
-
-setupact.log
-setuperr.log
-
-The default location for all these log files in Windows PE is %windir%.
-
-### Determining the partition type
-
-You can type the following command at a Windows PowerShell prompt to display the disk number and partition type. Example output is also shown.
-
-
-```
-PS C:\> Get-Disk | ft -Auto
-
-Number Friendly Name      Serial Number        HealthStatus OperationalStatus Total Size Partition Style
------- -------------      -------------        ------------ ----------------- ---------- ---------------
-0      MTFDDAK256MAM-1K1  13050928F47C         Healthy      Online             238.47 GB MBR
-1      ST1000DM003-1ER162 Z4Y3GD8F             Healthy      Online             931.51 GB GPT
-```
-
-You can also view the partition type of a disk by opening the Disk Management tool, right-clicking the disk number, clicking **Properties**, and then clicking the **Volumes** tab. See the following example:
-
-![Volumes](images/mbr2gpt-volume.PNG)
-
-
-If Windows PowerShell and Disk Management are not available, such as when you are using Windows PE, you can determine the partition type at a command prompt with the diskpart tool. To determine the partition style, type **diskpart** and then type **list disk**. See the following example:
-
-```
-DISKPART> list disk
-
-  Disk ###  Status         Size     Free     Dyn  Gpt
-  --------  -------------  -------  -------  ---  ---
-  Disk 0    Online          238 GB      0 B
-  Disk 1    Online          931 GB      0 B        *
-```
-
-In this example, Disk 0 is formatted with the MBR partition style, and Disk 1 is formatted using GPT.
-
 ### Interactive help
 
-To view a list of options available when using the tool, type **mbr2gpt /?**. See the following example:
+To view a list of options available when using the tool, type **mbr2gpt /?** 
+
+See the following example:
 
 ```
 
@@ -336,8 +302,55 @@ Where:
            environment. By default, this tool can only be used
            from the Windows Preinstallation Environment.
 
+```
+
+### Logs
+
+Two log files are created by the MBR2GPT tool:
+
+- diagerr.xml
+- diagwrn.xml
+
+These files contain errors and warnings, respectively, encountered during disk validation and conversion. These tool-specific logs can be helpful in diagnosing problems with the tool, however they are not meant to replace the default Windows Setup log files:
+
+- setupact.log
+- setuperr.log
+
+The default location for all these log files in Windows PE is **%windir%**.
+
+### Determining the partition type
+
+You can type the following command at a Windows PowerShell prompt to display the disk number and partition type. Example output is also shown.
+
 
 ```
+PS C:\> Get-Disk | ft -Auto
+
+Number Friendly Name      Serial Number        HealthStatus OperationalStatus Total Size Partition Style
+------ -------------      -------------        ------------ ----------------- ---------- ---------------
+0      MTFDDAK256MAM-1K1  13050928F47C         Healthy      Online             238.47 GB MBR
+1      ST1000DM003-1ER162 Z4Y3GD8F             Healthy      Online             931.51 GB GPT
+```
+
+You can also view the partition type of a disk by opening the Disk Management tool, right-clicking the disk number, clicking **Properties**, and then clicking the **Volumes** tab. See the following example:
+
+![Volumes](images/mbr2gpt-volume.PNG)
+
+
+If Windows PowerShell and Disk Management are not available, such as when you are using Windows PE, you can determine the partition type at a command prompt with the diskpart tool. To determine the partition style, type **diskpart** and then type **list disk**. See the following example:
+
+```
+DISKPART> list disk
+
+  Disk ###  Status         Size     Free     Dyn  Gpt
+  --------  -------------  -------  -------  ---  ---
+  Disk 0    Online          238 GB      0 B
+  Disk 1    Online          931 GB      0 B        *
+```
+
+In this example, Disk 0 is formatted with the MBR partition style, and Disk 1 is formatted using GPT.
+
+
 
 
 ## Related topics
