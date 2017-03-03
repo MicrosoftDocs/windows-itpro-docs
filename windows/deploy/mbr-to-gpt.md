@@ -52,6 +52,16 @@ MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<sou
 
 ***MBR2GPT /validate|convert [/disk:\<diskNumber\>] [/logs:\<logDirectory\>] [/map:\<source\>=\<destination\>] [/allowFullOS]***
 
+<div>
+```
+MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]
+```
+</div>
+
+<DIV STYLE="font-family: Arial Black; font-size: 24px; color: black">
+`MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]`
+</DIV>
+
 ### Options
 
 | Option | Description |
