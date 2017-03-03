@@ -17,7 +17,7 @@ localizationpriority: high
 
 ## Summary
 
-**MBR2GPT.EXE** converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows PE command prompt.
+**MBR2GPT.EXE** converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows PE command prompt, but can also be run from the full Windows 10 operating system (OS).
 
 You can use MBR2GPT to perform the following:
 
@@ -264,7 +264,7 @@ The tool will display status information in its output. Both validation and conv
 
 To view a list of options available when using the tool, type **mbr2gpt /?** 
 
-See the following example:
+The following text is displayed:
 
 ```
 
@@ -320,7 +320,7 @@ The default location for all these log files in Windows PE is **%windir%**.
 
 ### Determining the partition type
 
-You can type the following command at a Windows PowerShell prompt to display the disk number and partition type. Example output is also shown.
+You can type the following command at a Windows PowerShell prompt to display the disk number and partition type. Example output is also shown:
 
 
 ```
