@@ -58,7 +58,7 @@ MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<sou
 ```
 </div>
 
-<DIV STYLE="font-family: Arial Black; font-size: 24px; color: black">
+<DIV STYLE="font-family: Arial Black; font-size: 12px; color: black">
 `MBR2GPT /validate|convert [/disk:<diskNumber>] [/logs:<logDirectory>] [/map:<source>=<destination>] [/allowFullOS]`
 </DIV>
 
@@ -340,7 +340,7 @@ Where:
 
 ### Return codes
 
-The following return codes are displayed by MBR2GPT:
+MBR2GPT has the following associated return codes:
 
 | Return code | Description |
 |----|-------------|
