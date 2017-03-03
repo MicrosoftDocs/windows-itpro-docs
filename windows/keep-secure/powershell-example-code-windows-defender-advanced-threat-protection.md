@@ -37,60 +37,27 @@ The following example demonstrates how to obtain an Azure AD access token that y
 
 Replace the *tenant\_id*, *client_id*, and *client_secret* values with the ones you got from **Preferences settings** page in the portal:
 
-[!code[CustomTIAPI](./code/example.ps1#L1-L14)]
+[!code[-powershell][CustomTIAPI](./code/example.ps1#L1-L14)]
 
 ## Create headers
 The following example demonstrates how to create headers used for the requests with the API.
 
-```
-$headers = @{}
-$headers.Add("Content-Type", "application/json")
-$headers.Add("Accept", "application/json")
-$headers.Add("Authorization", "Bearer {0}" -f $token)
+[!code[-powershell][CustomTIAPI](./code/example.ps1#L16-L19)]
 
-```
 
 ## Create calls to the custom threat intelligence API
 The following example demonstrates how to view all alert definition entities by creating a call to the API.
 
-```
-$apiBaseUrl = "https://ti.securitycenter.windows.com/V1.0/"
-$alertDefinitions =
-    (Invoke-RestMethod ("{0}AlertDefinitions" -f $apiBaseUrl) -Method Get -Headers $headers).value
-```
+[!code[-powershell][CustomTIAPI](./code/example.ps1#L21-L24)]
 
 If this is the first time to use the API, the response is empty.
 
 ## Create a new alert definition
 The following example shows how to create a new alert definition.
 
-```
-$alertDefinitionPayload = @{
-    "Name"= "The Alert's Name"
-    "Severity"= "Low"
-    "InternalDescription"= "An internal description of the Alert"
-    "Title"= "The Title"
-    "UxDescription"= "Description of the alerts"
-    "RecommendedAction"= "The alert's recommended action"
-    "Category"= "Trojan"
-    "Enabled"= "true"}
-
-
-$alertDefinition =
-    Invoke-RestMethod ("{0}AlertDefinitions" -f $apiBaseUrl) -Method Post -Headers $headers -Body ($alertDefinitionPayload | ConvertTo-Json)
-```
+[!code[-powershell][CustomTIAPI](./code/example.ps1#L26-L39)]
 
 ## Create a new indicator of compromise
 The following example shows how to use the alert ID obtained from creating a new alert definition to create a new indicator of compromise.
 
-```
-$iocPayload = @{
-    "Type"="Sha1"
-    "Value"="dead1111eeaabbccddeeaabbccddee11ffffffff"
-    "DetectionFunction"="Equals"
-    "Enabled"="true"
-    "AlertDefinition@odata.bind"="AlertDefinitions({0})" -f $alertDefinitionId }
-
-
-$ioc = Invoke-RestMethod ("{0}IndicatorsOfCompromise" -f $apiBaseUrl) -Method Post -Headers $headers -Body ($iocPayload | ConvertTo-Json)
-```
+[!code[-powershell][CustomTIAPI](./code/example.ps1#L43-L53)]
