@@ -28,7 +28,6 @@ $alertDefinitionPayload = @{
     "Severity"= "Low"
     "InternalDescription"= "An internal description of the Alert"
     "Title"= "The Title"
-
     "UxDescription"= "Description of the alerts"
     "RecommendedAction"= "The alert's recommended action"
     "Category"= "Trojan"
