@@ -1,6 +1,6 @@
 ---
 description: Use this article to learn more about what Windows telemetry is gathered at the basic level.
-title: Windows 10, version 1703 basic telemetry events and fields (Windows 10)
+title: Windows 10 version 1703 basic telemetry events and fields (Windows 10)
 keywords: privacy, telemetry
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -12,7 +12,7 @@ ms.author: brianlic
 ---
 
 
-# Windows 10, version 1703 basic telemetry events and fields
+# Windows 10 version 1703 basic telemetry events and fields
 
 
 > [!IMPORTANT]
@@ -153,7 +153,7 @@ The following fields are available:
 - **signatureState**  Represents the state of the signature, if it signed, unsigned, OS signed and so on.
 - **publisherName**  Represents the name of the publisher of the file requesting elevation from low IL.
 - **cmdLine**  Represents the full command line arguments being used to elevate.
-- **Hash.Length**  epresents the length of the hash of the file requesting elevation from low IL.
+- **Hash.Length**  Represents the length of the hash of the file requesting elevation from low IL.
 - **Hash**  Represents the hash of the file requesting elevation from low IL.
 - **HashAlgId**  Represents the algorithm ID of the hash of the file requesting elevation from low IL.
 - **telemetryFlags**  Represents the details about the elevation prompt for CEIP data.
