@@ -1,5 +1,5 @@
 ---
-description: Use this article to learn more about what Windows telemetry is gathered at the basic level.
+description: Use this article to learn more about what Windows telemetry is gathered at the basic telemetry level.
 title: Windows 10 version 1703 basic telemetry events and fields (Windows 10)
 keywords: privacy, telemetry
 ms.prod: w10
@@ -26,11 +26,11 @@ ms.author: brianlic
 - Windows Server 2016
 
 
-The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Windows Store. When the telemetry level is set to Basic, it also includes the Security level information.
+The Basic telemetry level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Windows Store. When the telemetry level is set to Basic, it also includes the Security level information.
 
-The Basic level helps to identify problems that can occur on a particular device hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version. This helps Microsoft fix OS or Application problems.
+The Basic level helps to identify problems that can occur on a particular device hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version. This helps Microsoft fix operating system or app problems.
 
-Use this article to learn about telemetry events, grouped by Event Area, and the fields within each event. A brief description is provided for each Field. Note that every event generated includes Common Data, which collects system data.
+Use this article to learn about telemetry events, grouped by Event Area, and the fields within each event. A brief description is provided for each Field. Every event generated includes common data, which collects device data.
 
 You can learn more about Windows functional and telemetry through these articles:
 
@@ -40,7 +40,7 @@ You can learn more about Windows functional and telemetry through these articles
 
 ## Common data extensions
 
-Common data extensions includes fields that are sent with every event.
+Common data extensions include fields that are sent with every event.
 
 ### Common Data Extensions.App
  
@@ -73,7 +73,7 @@ The following fields are available:
 - **flags**  Represents the bitmap that captures various Windows specific flags.
 - **cpId**  The composer ID, such as Reference, Desktop, Phone, Holographic, Hub, IoT Composer.
 - **tickets**  A list of strings that represent entries in the HTTP header of the web request that includes this event.
-- **bseq**  Upload buffer sequence number in the format <buffer identifier>:<sequence number>
+- **bseq**  Upload buffer sequence number in the format \<buffer identifier\>:\<sequence number\>
 
 
 ### Common Data Extensions.Device
