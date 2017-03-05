@@ -38,7 +38,7 @@ You can learn more about Windows functional and telemetry through these articles
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 - [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md)
 
-## Common Data Extensions
+## Common data extensions
 
 Common data extensions includes fields that are sent with every event.
 
