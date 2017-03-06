@@ -50,10 +50,10 @@ This status indicates that there's limited communication between the machine and
 
 The following suggested actions can help fix issues related to a misconfigured machine with impaired communication:
 
-- [Ensure the endpoint has Internet connection](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-endpoint-has-an-internet-connection)
+- [Ensure the endpoint has Internet connection](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-endpoint-has-an-internet-connection)</br>
   The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Windows Defender ATP service.
 
-- Verify client connectivity to Windows Defender ATP service URLs</br>
+- [Verify client connectivity to Windows Defender ATP service URLs](configure-proxy-internet-windows-defender-advanced-threat-protection.md#verify-client-connectivity-to-windows-defender-atp-service-urls)</br>
   Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Windows Defender ATP service URLs.
 
 If you took corrective actions and the machine status is still misconfigured, [open a support ticket](http://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
@@ -62,16 +62,16 @@ If you took corrective actions and the machine status is still misconfigured, [o
 A misconfigured machine with status ‘No sensor data’ has communication with the service but can only report partial sensor data.
 Follow theses actions to correct known issues related to a misconfigured machine with status ‘Impaired communication’:
 
-- [Ensure the endpoint has Internet connection](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-endpoint-has-an-internet-connection)
+- [Ensure the endpoint has Internet connection](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-endpoint-has-an-internet-connection)</br>
   The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Windows Defender ATP service.
 
-- Verify client connectivity to Windows Defender ATP service URLs</br>
+- [Verify client connectivity to Windows Defender ATP service URLs](configure-proxy-internet-windows-defender-advanced-threat-protection.md#verify-client-connectivity-to-windows-defender-atp-service-urls)</br>
   Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Windows Defender ATP service URLs.
 
-- [Ensure the telemetry and diagnostics service is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-telemetry-and-diagnostics-service-is-enabled)
+- [Ensure the telemetry and diagnostics service is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-telemetry-and-diagnostics-service-is-enabled)</br>
 If the endpoints aren't reporting correctly, you might need to check that the Windows 10 telemetry and diagnostics service is set to automatically start and is running on the endpoint.
 
-- [Ensure that Windows Defender is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-is-not-disabled-by-a-policy)
+- [Ensure that Windows Defender is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-is-not-disabled-by-a-policy)</br>
 If your endpoints are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled.
 
 If you took corrective actions and the machine status is still misconfigured, [open a support ticket](http://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
