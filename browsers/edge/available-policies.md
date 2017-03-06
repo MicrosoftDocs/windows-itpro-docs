@@ -38,8 +38,8 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 
     - If you disable this setting, employees won't see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type".
 
-        >[!Note]
-        >Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting.
+        > [!Note]
+        > Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting.
 
 #### **Allow Adobe Flash**
 - **Supported versions:** Windows 10 or later
@@ -122,8 +122,8 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 
 - **Description:** This policy setting lets you add up to 5 additional search engines, which can't be removed by your employees, but can be made a personal default engine. This setting doesn't set the default search engine. For that, you must use the "Set default search engine" setting.
 
-    >[!Important]
-    >This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
+    > [!Important]
+    > This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).
 
     - If you enable this setting, you can add up to 5 additional search engines. For each additional engine, you must also add a link to your OpenSearch XML file, including at least the short name and https: URL of the search engine, using this format:
     
