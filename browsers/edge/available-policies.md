@@ -29,6 +29,30 @@ By using Group Policy and Intune, you can set up a policy setting once, and then
 ## Group Policy settings
 Microsoft Edge works with these Group Policy settings (`Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\`) to help you manage your company's web browser configurations:
 
+<table>
+    <tr>
+        <th>Policy name</th>
+        <th>Supported versions</th>
+        <th>Description</th>
+        <th>Options</th>
+    </tr>
+    <tr>
+        <td>Allow Address bar drop-down list suggestions</td>
+        <td>Windows 10, Windows Insider Program</td>
+        <td>This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.<p><strong>Note</strong><br>Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting.<p>If you enable or don't configure this setting, employees can see the Address bar drop-down functionality in Microsoft Edge.<p>If you disable this setting, employees won't see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type".</td>
+        <td><strong>Enabled or not configured (default):</strong> Employees can see the Address bar drop-down functionality in Microsoft Edge.<p><strong>Disabled:</strong> Employees won't see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type".</td>
+    </tr>
+    <tr>
+        <td>Allow Adobe Flash</td>
+        <td>Windows 10 or later</td>
+        <td>This setting lets you decide whether employees can run Adobe Flash in Microsoft Edge.<p>If you enable or don't configure this setting, employees can use Adobe Flash.<p>If you disable this setting, employees can't use Adobe Flash.</td>
+        <td><strong>Enabled or not configured (default):</strong> Employees use Adobe Flash in Microsoft Edge.<p><strong>Disabled:</strong> Employees can’t use Adobe Flash.</td>                        
+    </tr>
+</table>
+
+
+
+
 |Policy name|Supported versions|Description|Options|
 |-------------|------------|-------------|--------|
 |Allow Address bar drop-down list suggestions|Windows 10, Windows Insider Program|This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.<p>**Note**<br>Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting.<p>If you enable or don't configure this setting, employees can see the Address bar drop-down functionality in Microsoft Edge.<p>If you disable this setting, employees won't see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type".|**Enabled or not configured (default):** Employees can see the Address bar drop-down functionality in Microsoft Edge.<p>**Disabled:** Employees won't see the Address bar drop-down functionality in Microsoft Edge. This setting also disables the user-defined setting, "Show search and site suggestions as I type".|
