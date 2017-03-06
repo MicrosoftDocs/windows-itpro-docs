@@ -29,7 +29,7 @@ By using Group Policy and Intune, you can set up a policy setting once, and then
 ## Group Policy settings
 Microsoft Edge works with these Group Policy settings (`Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\`) to help you manage your company's web browser configurations:
 
-##### Allow Address bar drop-down list suggestions
+#### **Allow Address bar drop-down list suggestions**
 - **Supported versions:** Windows 10, Windows Insider Program
 
 - **Description:** This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.
@@ -41,7 +41,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
         >[!Note]
         >Disabling this setting turns off the Address bar drop-down functionality. Therefore, because search suggestions are shown in the drop-down, this setting takes precedence over the "Configure search suggestions in Address bar" setting.
 
-##### Allow Adobe Flash
+#### **Allow Adobe Flash**
 - **Supported versions:** Windows 10 or later
 
 - **Description:** This setting lets you decide whether employees can run Adobe Flash in Microsoft Edge.
@@ -50,7 +50,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable this setting, employees can't use Adobe Flash.
 
-##### Allow clearing browsing data on exit
+#### **Allow clearing browsing data on exit**
 - **Supported versions:** Windows 10, Windows Insider Program
 
 - **Description:** This policy setting allows the automatic clearing of browsing data when Microsoft Edge closes.
