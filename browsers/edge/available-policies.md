@@ -415,7 +415,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         
         - **1 (default).** Employees can use Autofill to complete form fields.
 
-### Allow Browser
+### AllowBrowser
 - **Supported versions:** Windows 10 or later
 
 - **Supported devices:** Mobile
@@ -468,6 +468,57 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         
         - **1 (default).** Employees can use the F12 Developer Tools.
 
+### AllowDoNotTrack
+- **Supported versions:** Windows 10 or later
+
+- **Supported devices:** Both
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack
+
+    - **Data type:** Integer
+
+    - **Allowed values:**
+
+        - **0 (default).** Stops employees from sending Do Not Track headers to websites requesting tracking info.
+        
+        - **1.** Employees can send Do Not Track headers to websites requesting tracking info.    
+
+### AllowExtensions
+- **Supported versions:** Windows 10, Version 1607 and later
+
+- **Supported devices:** Desktop
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowExtensions
+
+    - **Data type:** Integer
+
+    - **Allowed values:**
+
+        - **0.** Employees can’t use Edge Extensions.
+        
+        - **1 (default).** Employees can use Edge Extensions.    
+
+### AllowFlash
+- **Supported versions:** Windows 10 or later
+
+- **Supported devices:** Desktop
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowFlash
+
+    - **Data type:** Integer
+
+    - **Allowed values:**
+
+        - **0.** Not allowed. Employees can’t use Adobe Flash.
+        
+        - **1 (default).** Allowed. Employees can use Adobe Flash.    
+
 ### Text
 - **Supported versions:** 
 
@@ -479,7 +530,9 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Data type:** 
 
-    - **Allowed values:**            
+    - **Allowed values:**
+
+        -    
 
 ### Text
 - **Supported versions:** 
@@ -492,7 +545,9 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Data type:** 
 
-    - **Allowed values:**    
+    - **Allowed values:**
+
+        -    
 
 ### Text
 - **Supported versions:** 
@@ -505,7 +560,9 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Data type:** 
 
-    - **Allowed values:**    
+    - **Allowed values:**
+
+        -    
 
 ### Text
 - **Supported versions:** 
@@ -518,7 +575,129 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
     - **Data type:** 
 
-    - **Allowed values:**            
+    - **Allowed values:**
+
+        -    
+
+### Text
+- **Supported versions:** 
+
+- **Supported devices:** 
+
+- **Details:**
+
+    - **URI full path:** 
+
+    - **Data type:** 
+
+    - **Allowed values:**
+
+        -    
+
+### Text
+- **Supported versions:** 
+
+- **Supported devices:** 
+
+- **Details:**
+
+    - **URI full path:** 
+
+    - **Data type:** 
+
+    - **Allowed values:**
+
+        -    
+
+### Text
+- **Supported versions:** 
+
+- **Supported devices:** 
+
+- **Details:**
+
+    - **URI full path:** 
+
+    - **Data type:** 
+
+    - **Allowed values:**
+
+        -    
+
+### Text
+- **Supported versions:** 
+
+- **Supported devices:** 
+
+- **Details:**
+
+    - **URI full path:** 
+
+    - **Data type:** 
+
+    - **Allowed values:**
+
+        -    
+
+### Text
+- **Supported versions:** 
+
+- **Supported devices:** 
+
+- **Details:**
+
+    - **URI full path:** 
+
+    - **Data type:** 
+
+    - **Allowed values:**
+
+        -    
+
+### Text
+- **Supported versions:** 
+
+- **Supported devices:** 
+
+- **Details:**
+
+    - **URI full path:** 
+
+    - **Data type:** 
+
+    - **Allowed values:**
+
+        -    
+
+### Text
+- **Supported versions:** 
+
+- **Supported devices:** 
+
+- **Details:**
+
+    - **URI full path:** 
+
+    - **Data type:** 
+
+    - **Allowed values:**
+
+        -    
+
+### Text
+- **Supported versions:** 
+
+- **Supported devices:** 
+
+- **Details:**
+
+    - **URI full path:** 
+
+    - **Data type:** 
+
+    - **Allowed values:**
+
+        -    
 
 
 
@@ -526,9 +705,9 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
 
 
-|AllowDoNotTrack|Windows 10 or later|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Stops employees from sending Do Not Track headers to websites requesting tracking info.</li><li>**1.** Employees can send Do Not Track headers to websites requesting tracking info.</li></ul></li></ul>|
-|AllowExtensions|Windows 10, Version 1607 and later|Desktop|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/AllowExtensions</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0.** Employees can’t use Edge Extensions.</li><li>**1 (default).** Employees can use Edge Extensions.</li></ul></li></ul>|
-|AllowFlash|Windows 10 or later|Desktop|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/AllowFlash</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0.** Not allowed. Employees can’t use Adobe Flash</li><li>**1 (default).** Allowed. Employees can use Adobe Flash.</li></ul></li></ul>|
+
+
+
 |AllowFlashClickToRun|Windows 10, Windows Insider Program|Desktop|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/AllowFlashClickToRun</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0.**  Adobe Flash content is automatically loaded and run by Microsoft Edge</li><li>**1 (default).** An employee must click the content, click a Click-to-Run button, or have the site appear on an auto-allow list before Microsoft Edge loads and runs Adobe Flash content.</li></ul></li></ul>|
 |AllowInPrivate|Windows 10, Version 1511 or later|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/AllowInPrivate</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0.** Employees can’t use InPrivate browsing.</li><li>**1 (default).** Employees can use InPrivate browsing.</li></ul></li></ul>|
 |AllowMicrosoftCompatibilityList|Windows 10, Windows Insider Program|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/AllowMicrosoftCompatibilityList</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0.** Additional search engines aren't allowed and the default can’t be changed in the Address bar.</li><li>**1 (default).** Additional search engines are allowed and the default can be changed in the Address bar.</li></ul></li></ul>|
