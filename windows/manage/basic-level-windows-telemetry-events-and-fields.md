@@ -73,7 +73,8 @@ The following fields are available:
 - **flags**  Represents the bitmap that captures various Windows specific flags.
 - **cpId**  The composer ID, such as Reference, Desktop, Phone, Holographic, Hub, IoT Composer.
 - **tickets**  A list of strings that represent entries in the HTTP header of the web request that includes this event.
-- **bseq**  Upload buffer sequence number in the format \<buffer identifier\>:\<sequence number\>
+- **bseq**  Upload buffer sequence number in the format \<buffer identifier\>:\<sequence number\>.
+- **mon**  Combined monitor and event sequence numbers in the format \<monitor sequence\>:\<event sequence\>.
 
 
 ### Common Data Extensions.Device
