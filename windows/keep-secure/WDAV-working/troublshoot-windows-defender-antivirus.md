@@ -16,7 +16,7 @@ author: jasesso
 -   Windows 10
 
 IT professionals can review information about event IDs in Windows Defender for Windows 10 and see any relevant action they can take.
-
+<span id="windows-defender-av-ids" />
 ## Windows Defender client event IDs
 
 This section provides the following information about Windows Defender client events:

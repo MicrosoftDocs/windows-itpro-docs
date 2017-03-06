@@ -31,10 +31,10 @@ It explains the important features available for both small and large enterprise
 You can choose to configure and evaluate each setting independently, or all at once. We have grouped similar settings based upon typical evaluation scenarios, and include instructions for using PowerShell to enable the settings.
 
 The guide is available in PDF format for offline viewing:
-- [Download the guide in PDF format](#)
+- [Download the guide in PDF format](https://www.microsoft.com/download/details.aspx?id=54795)
 
-You can also download a PowerShell script that will enable all the settings described in the guide automatically:
-- [Download the PowerShell script to automatically configure the settings](#)
+You can also download a PowerShell that will enable all the settings described in the guide automatically. You can obtain the script alongside the PDF download above, or individually from PowerShell Gallery:
+- [Download the PowerShell script to automatically configure the settings](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/1.0/DisplayScript)
 
 > [!IMPORTANT]
 > The guide is currently intended for single-machine evaluation of Windows Defender Antivirus protection. Enabling all of the settings in this guide may not be suitable for real-world deployment.

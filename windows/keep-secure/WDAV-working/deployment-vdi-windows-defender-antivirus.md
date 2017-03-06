@@ -33,9 +33,9 @@ In addition to standard on-premises or hardware configurations, you can also use
 
 See the [Microsoft Desktop virtualization site](https://www.microsoft.com/en-us/server-cloud/products/virtual-desktop-infrastructure/) for more details on Microsoft Remote Desktop Services and VDI support.
 
-This guide provides instructions and help on the following within the context of using Windows Defender Antivirus on Windows 10 virtual machines (VMs):
+For Azure-based virutal machines, you can also review the [Install Endpoint Protection in Azure Security Center](https://docs.microsoft.com/en-us/azure/security-center/security-center-install-endpoint-protection) topic.
 
-There are four steps in this guide to roll out Windows Defender AV protection across your VDI:
+There are three main steps in this guide to help roll out Windows Defender AV protection across your VDI:
 
 1.	Create and deploy the base image (for example, as a virtual hard disk (VHD)) that your virtual machines (VMs) will use
 2.	Manage the base image and updates for your VMs
@@ -110,7 +110,9 @@ You can reduce network overhead by using a persistent VDI environment, so that y
 
 Therefore, the first step you’ll need to take is to determine when to create the base image that you’ll use on your VMs. This should align with the persistence of your VMs.
 
-For example, if you are using a non-persistent VDI, it may make sense to update and deploy your base image daily. This way, you’ll ensure your VMs receive the most up-to-date protection each day, without having to individually download updates when they are each started.
+For example, if you are using a non-persistent VDI, it may make sense to update and deploy your base image daily. This way, you’ll ensure your VMs receive the most up-to-date protection each day, without having to individually download updates when they are each started. 
+You could also use a pre-configured PowerShell script as part of a scheduled task to help automate the download and application of protection updates from a centralized location, to prevent each VM from individually downloading the update. 
+For example, the [SignatureDownloadCustomTask PowerShell script](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4/DisplayScript) will pull the latest updates via a UNC share that is updated by the VM host. That way the individual VM will not need to obtain protection updates from the Internet, and you will only need to download the updates once (on the VM host).
 Alternatively, if you have a persistent or semi-persistent VDI, you could update your base image monthly, in conjunction with the monthly “Patch Tuesday” Microsoft Updates to reduce the network bandwidth across your VDI.
 In both of these scenarios, the VMs will only need to download “delta” updates – the differences between an existing definition set and the next one. Delta updates are typically much smaller (a few kilobytes) than a full definition download (which can average around 150 mb).
 
@@ -124,6 +126,7 @@ On non-persistent or pooled VDIs, you can update the base image nightly with the
 You may be able to automate this by following the instructions in [Orchestrated offline VM Patching using Service Management Automation](https://blogs.technet.microsoft.com/privatecloud/2013/12/06/orchestrated-offline-vm-patching-using-service-management-automation/)
 
 In both scenarios, it’s important to run a quick scan on the updated image before you deploy it to your VMs.
+
 
 
 ## Configure endpoints for optimal performance
@@ -295,4 +298,5 @@ Windows Server 2016 contains Windows Defender Antivirus and will automatically d
 -	[Video: Microsoft Senior Program Manager Bryan Keller on how System Center Configuration Manger 2012 manages VDI and integrates with App-V]( http://channel9.msdn.com/Shows/Edge/Edge-Show-5-Manage-VDI-using-SCCM-2012#time=03m02s)
 -	[Project VRC: Antivirus impact and best practices on VDI](https://blogs.technet.microsoft.com/privatecloud/2013/12/06/orchestrated-offline-vm-patching-using-service-management-automation/)
 -	[TechNet forums on Remote Desktop Services and VDI](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS)
+- [SignatureDownloadCustomTask PowerShell script](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4/DisplayScript) 
 

@@ -1,27 +1,31 @@
+---
+title: Manage Windows Defender Antivirus updates and apply baselines
+description: 
+keywords: 
+search.product: eADQiWindows 10XVcnh
+ms.pagetype: security
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: security
+localizationpriority: medium
+author: iaanw
+---
+
+# Manage Windows Defender Antivirus updates and apply baselines
+
+
+**Applies to:**
+
+- Windows 10
+- Windows 10, version 1703
+
+**Audience**
+
+- Network administrators
 
 
 
+There are two parts of updating - definition updates and product updates.
 
-## Manage Windows Defender endpoints through Active Directory and WSUS
-
-All Windows 10 endpoints are installed with Windows Defender and include support for management through:
--   Active Directory
--   WSUS
-
-You can use the Active Directory to configure the settings; Group policies can be used for centralized configuration and enforcement of many Windows Defender settings including client user interface, scan settings, and exclusions.
-WSUS can be used to view basic update compliance and deploy updates manually or through automatic rules.
-
-Note that System Center 2012 R2 Configuration Manager SP1, System Center 2012 Configuration Manager SP2, and Microsoft Intune can provide centralized management of Windows Defender, including:
-
--   Settings management
--   Definition update management
--   Alerts and alert management
--   Reports and reporting
-
-When you enable *Endpoint Protection* on your clients, it will install an additional management layer on Windows Defender to manage the in-box Windows Defender agent. While the client user interface will still appear as Windows Defender, the management layer for System Center Endpoint Protection or Intune will be listed in the **Add/Remove Programs** control panel, though it will appear as if the full product is installed. Learn more about managing *Endpoint Protection*:
-
--   [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://technet.microsoft.com/library/dn646970.aspx)
--   [Endpoint Protection in Configuration Manager](https://technet.microsoft.com/library/hh508760.aspx)
-
-Read more about System Center Configuration Manager in [Introduction to Endpoint Protection in Configuration Manager](https://technet.microsoft.com/library/hh508781.aspx).
-> **Important:**  You must be licensed to use *Endpoint Protection* to manage clients in your Configuration Manager hierarchy.
+You can also apply security baselines.

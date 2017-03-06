@@ -24,11 +24,13 @@ author: iaanw
 
 You can deploy, manage, and report on Windows Defender Antivirus in a number of ways. 
 
-The following table illustrates how each function can be managed or accessed. The topics in this section provide links or describe how to use each product:
-- To deploy or enable the Windows Defender Antivirus protection client on endpoints or servers
-- To manage and report on Windows Defender Antivirus protection, including managing product and protection updates
-- To report on Windows Defender Antivirus protection
+As the Windows Defender AV client is installed as a core part of Windows 10, traditional deployment of a client to your endpoints does not apply.
 
+However, in most cases you will still need to enable the protection service on your endpoints with System Center Configuration Manager, Microsoft Intune, Azure Secrutiy Center, or Group Policy Objects, which is described in the following table.
+
+You'll also see additional links for:
+- Managing Windows Defender Antivirus protection, including managing product and protection updates
+- Reporting on Windows Defender Antivirus protection
 
 > [!IMPORTANT]
 > In most cases, Windows 10 will disable Windows Defender Antivirus if it finds another antivirus product running and up-to-date. You must disable or uninstall third-party antivirus products before Windows Defender Antivirus will be functioning. If you re-enable or install third-part antivirus products, then Windows 10 will automatically disable Windows Defender Antivirus.
@@ -41,7 +43,7 @@ Microsoft Intune|[Deploy the Microsoft Intune client to endpoints][]|Use and dep
 Windows Management Instrumentation|Deploy with Group Policy, System Center Configuration Manager, or manually on individual endpoints.|Use the [Set method of the MSFT_MpPreference class][] and the [Update method of the MSFT_MpSignature class][]|Use the [MSFT_MpComputerStatus][] class and the get method of associated classes in the [Windows Defender WMIv2 Provider][]
 PowerShell|Deploy with Group Policy, System Center Configuration Manager, or manually on individual endpoints.|Use the [Set-MpPreference][] and [Update-MpSignature] [] cmdlets available in the Defender module|Use the appropriate [Get- cmdlets available in the Defender module][]
 Group Policy and Active Directory (domain-joined)|Use a Group Policy Object to deploy configuration changes and ensure Windows Defender Antivirus is enabled.|Use Group Policy Objects (GPOs) to [Configure update options for Windows Defender Antivirus][] and [Configure Windows Defender features][]|Endpoint reporting is not available with Group Policy. You can generate a list of [Group Policies to determine if any settings or policies are not applied][]
-Azure Active Directory|Deploy with Group Policy, System Center Configuration Manager, or manually on individual endpoints.|You cannot use AAD to manage Windows Defender Antivirus protection. Use other management options (such as Configuration Manager, Intune, GPO, WMI, or PowerShell). |Endpoint protection reporting is not available in AAD. You can review usage reports to determine suspicious activity, including the [Possibly infected devices][] report. You can also configure an SIEM tool to report on [Windows Defender Antivirus events][] and add that tool as an app in AAD.
+Microsoft Azure|Deploy Microsoft Antimalware for Azure in the [Azure portal, by using Visual Studio virtual machine configuration, or using Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/azure/security/azure-security-antimalware#antimalware-deployment-scenarios). You can also [Install Endpoint protection in Azure Security Center](https://docs.microsoft.com/en-us/azure/security-center/security-center-install-endpoint-protection)|Configure [Microsoft Antimalware for Virtual Machines and Cloud Services with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/servicemanagement/azure.antimalware/v3.4.0/azure.antimalware) or [use code samples](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|Use [Microsoft Antimalware for Virtual Machines and Cloud Services with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/servicemanagement/azure.antimalware/v3.4.0/azure.antimalware) to enable monitoring. You can also review usage reports in Azure Active Directory to determine suspicious activity, including the [Possibly infected devices][] report and configure an SIEM tool to report on [Windows Defender Antivirus events][] and add that tool as an app in AAD.
 
 1. <span id="fn1" />The availability of some functions and features, especially related to cloud-delivered protection, differ between System Center Configuration Manager, current branch (for example, System Center Configuration Manager 2016) and System Center Configuration Manager 2012. In this library, we've focused on Windows 10, Windows Server 2016, and System Center Configuration Manager, current branch (2016). See the [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) topic for a table that describes the major differences.  [(Return to table)](#ref1)
 
@@ -68,9 +70,9 @@ Azure Active Directory|Deploy with Group Policy, System Center Configuration Man
 [Update method of the MSFT_MpSignature class]:  https://msdn.microsoft.com/en-us/library/dn439474
 [MSFT_MpComputerStatus]:  https://msdn.microsoft.com/en-us/library/dn455321 
 [Windows Defender WMIv2 Provider]: https://msdn.microsoft.com/en-us/library/dn439477
-[Set-MpPreference]:  ../itpro/powershell/windows/defender/set-mppreference.md
-[Update-MpSignature]: ../itpro/powershell/windows/defender/update-mpsignature
-[Get- cmdlets available in the Defender module]: ../itpro/powershell/windows/defender/index.md
+[Set-MpPreference]:  https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference.md
+[Update-MpSignature]: https://technet.microsoft.com/itpro/powershell/windows/defender/update-mpsignature
+[Get- cmdlets available in the Defender module]: https://technet.microsoft.com/itpro/powershell/windows/defender/index
 [Configure update options for Windows Defender Antivirus]: configure-update-options-windows-defender-antivirus.md
 [Configure Windows Defender features]: configure-windows-defender-antivirus-features.md
 [Group Policies to determine if any settings or policies are not applied]: https://technet.microsoft.com/en-us/library/cc771389.aspx
@@ -84,7 +86,7 @@ Topic | Description
 ---|---
 [Deploy and enable Windows Defender Antivirus protection](deploy-windows-defender-antivirus.md) | While the client is installed as a core part of Windows 10, and traditional deployment does not apply, you will still need to enable the client on your endpoints with System Center Configuration Manager, Microsoft Intune, or Group Policy Objects.
 [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) | There are two parts to updating Windows Defender Antivirus: updating the client on endpoints (product updates), and updating definitions (protection updates). You can update definitions in a number of ways, using System Center Configuration Manager, Microsoft Intune, WSUS, and others.
-[Monitor and report on Windows Defender Antivirus protection](report-monitor-windows-defender-antiviirus.md) | You can use System Center Configuration Manager, a third-party SIEM product (by consuming Windows event logs), or Microsoft Intune to monitor the protection status and create reports on endpoints
+[Monitor and report on Windows Defender Antivirus protection](report-monitor-windows-defender-antiviirus.md) | You can use System Center Configuration Manager, a third-party SIEM product (by consuming Windows event logs), or Microsoft Intune to monitor protection status and create reports about endpoint protection
 
 ## Related topics
 
