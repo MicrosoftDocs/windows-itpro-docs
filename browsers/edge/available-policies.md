@@ -59,7 +59,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 
     - If you disable or don't configure this policy setting (default), it can be turned on and configured by the employee in the Clear browsing data options area, under Settings.
 
-### Allow Developer Tools
+#### **Allow Developer Tools**
 - **Supported versions:** Windows 10, Version 1511 or later
 
 - **Description:** This policy setting lets you decide whether F12 Developer Tools are available on Microsoft Edge.
@@ -67,7 +67,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 
     - If you disable this setting, the F12 Developer Tools aren’t available in Microsoft Edge.
 
-### Allow Extensions
+#### **Allow Extensions**
 - **Supported versions:** Windows 10, Version 1607 or later
 
 - **Description:** This policy setting lets you decide whether employees can use Edge Extensions.
@@ -76,7 +76,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable this setting, employees can’t use Edge Extensions.
 
-### Allow InPrivate browsing
+#### **Allow InPrivate browsing**
 - **Supported versions:** Windows 10, Version 1511 or later
 
 - **Description:** This policy setting lets you decide whether employees can browse using InPrivate website browsing.
@@ -85,7 +85,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable this setting, employees can’t use InPrivate website browsing.
 
-### Allow Microsoft Compatibility List
+#### **Allow Microsoft Compatibility List**
 - **Supported versions:** Windows 10, Version 1607 or later
 
 - **Description:** This policy setting lets you decide whether to use the Microsoft Compatibility List (a Microsoft-provided list that helps sites with known compatibility issues to display properly) in Microsoft Edge. By default, the Microsoft Compatibility List is enabled and can be viewed by visiting about:compat.
@@ -94,7 +94,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable this setting, the Microsoft Compatibility List isn’t used during browser navigation.
 
-### Allow search engine customization
+#### **Allow search engine customization**
 - **Supported versions:** Windows 10, Windows Insider Program
 
 - **Description:** This policy setting lets you decide whether users can change their search engine.
@@ -106,7 +106,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable this setting, users can't add search engines or change the default used in the address bar.
 
-### Allow web content on New Tab page
+#### **Allow web content on New Tab page**
 - **Supported versions:** Windows 10 or later
 
 - **Description:** This policy setting lets you configure what appears when Microsoft Edge opens a new tab. By default, Microsoft Edge opens the New Tab page. If you use this setting, employees can’t change it.
@@ -117,7 +117,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you don’t configure this setting (default), employees can choose how new tabs appears.
 
-### Configure additional search engines
+#### **Configure additional search engines**
 - **Supported versions:** Windows 10, Windows Insider Program
 
 - **Description:** This policy setting lets you add up to 5 additional search engines, which can't be removed by your employees, but can be made a personal default engine. This setting doesn't set the default search engine. For that, you must use the "Set default search engine" setting.
@@ -135,7 +135,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you don't configure this setting, the search engine list is set to what is specified in App settings.
 
-### Configure Autofill
+#### **Configure Autofill**
 - **Supported versions:** Windows 10 or later
 
 - **Description:** This policy setting lets you decide whether employees can use Autofill to automatically fill in form fields while using Microsoft Edge. By default, employees can choose whether to use Autofill.
@@ -146,7 +146,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you don’t configure this setting (default), employees can choose whether to use Autofill to automatically fill in forms while using Microsoft Edge.
 
-### Configure cookies
+#### **Configure cookies**
 - **Supported versions:** Windows 10 or later
 
 - **Description:** This setting lets you configure how to work with cookies.
@@ -160,7 +160,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable or don't configure this setting, all cookies are allowed from all sites.
 
-### Configure Do Not Track
+#### **Configure Do Not Track**
 - **Supported versions:** Windows 10 or later
 
 - **Description:** This policy setting lets you decide whether employees can send Do Not Track requests to websites that ask for tracking info. By default, Do Not Track requests aren’t sent, but employees can choose to turn on and send requests.
@@ -171,7 +171,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you don’t configure this setting (default), employees can choose whether to send Do Not Track requests to websites asking for tracking info.
 
-### Configure Favorites
+#### **Configure Favorites**
 - **Supported versions:** Windows 10, Version 1511 or later
 
 - **Description:** This policy setting lets you configure the default list of Favorites that appear for your employees. Employees can change their Favorites by adding or removing items at any time.
@@ -180,7 +180,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable or don’t configure this setting, employees will see the Favorites that they set in the Favorites hub.
 
-### Configure Password Manager
+#### **Configure Password Manager**
 - **Supported versions:** Windows 10 or later
 
 - **Description:** This policy setting lets you decide whether employees can save their passwords locally, using Password Manager. By default, Password Manager is turned on.
@@ -191,7 +191,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you don’t configure this setting, employees can choose whether to use Password Manager to save their passwords locally.
 
-### Configure Pop-up Blocker
+#### **Configure Pop-up Blocker**
 - **Supported versions:** Windows 10 or later
 
 - **Description:** This policy setting lets you decide whether to turn on Pop-up Blocker. By default, Pop-up Blocker is turned on.
@@ -202,7 +202,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you don’t configure this setting, employees can choose whether to use Pop-up Blocker.
 
-### Configure search suggestions in Address bar
+#### **Configure search suggestions in Address bar**
 - **Supported versions:** Windows 10 or later
 
 - **Description:** This policy setting lets you decide whether search suggestions appear in the Address bar of Microsoft Edge. By default, employees can choose whether search suggestions appear in the Address bar of Microsoft Edge.
@@ -213,7 +213,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 
     - If you don’t configure this setting (default), employees can choose whether search suggestions appear in the Address bar of Microsoft Edge.
 
-### Configure Start pages
+#### **Configure Start pages**
 - **Supported versions:** Windows 10, Version 1511 or later
 
 - **Description:** This policy setting lets you configure one or more Start pages, for domain-joined devices. Your employees won't be able to change this after you set it.
@@ -224,7 +224,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable or don’t configure this setting (default), your default Start page is the webpage specified in App settings.
 
-### Configure the Adobe Flash Click-to-Run setting
+#### **Configure the Adobe Flash Click-to-Run setting**
 - **Supported versions:** Windows 10, Windows Insider Program
 
 - **Description:** This policy setting lets you decide whether employees must take an action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash.
@@ -236,7 +236,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable this setting, Adobe Flash content is automatically loaded and run by Microsoft Edge.
 
-### Configure the Enterprise Mode Site List
+#### **Configure the Enterprise Mode Site List**
 - **Supported versions:** Windows 10 or later
 
 - **Description:** This policy setting lets you configure whether to use Enterprise Mode and the Enterprise Mode Site List to address common compatibility problems with legacy apps.
@@ -249,7 +249,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     >If there’s an .xml file in the cache container, IE waits 65 seconds and then checks the local cache for a newer version of the file from the server, based on standard caching rules. If the server file has a different version number than the version in the cache container, the server file is used and stored in the cache container.<p>
     >If you’re already using a site list, enterprise mode continues to work during the 65 second wait; it just uses your existing site list instead of your new one.
 
-### Configure Windows Defender SmartScreen
+#### **Configure Windows Defender SmartScreen**
 - **Supported versions:** Windows 10 or later
 
 - **Description:** This policy setting lets you configure whether to turn on Windows Defender SmartScreen. Windows Defender SmartScreen provides warning messages to help protect your employees from potential phishing scams and malicious software. By default, Windows Defender SmartScreen is turned on.
@@ -260,7 +260,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you don’t configure this setting (default), employees can choose whether to use Windows Defender SmartScreen.
 
-### Disable lockdown of Start pages
+#### **Disable lockdown of Start pages**
 - **Supported versions:** Windows 10, Windows Insider Program
 
 - **Description:** This policy setting lets you disable the lock down of Start pages, letting employees modify the Start pages when the "Configure Start pages" setting is in effect.
@@ -272,7 +272,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable or don't configure this setting (default), employees can't change any Start pages configured using the "Configure Start pages" setting, thereby locking down the Start pages.
 
-### Keep favorites in sync between Internet Explorer and Microsoft Edge
+#### **Keep favorites in sync between Internet Explorer and Microsoft Edge**
 - **Supported versions:** Windows 10, Windows Insider Program
 
 - **Description:** This setting lets you decide whether people can sync their favorites between Internet Explorer and Microsoft Edge.
@@ -281,7 +281,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable or don't configure this setting (default), employees can’t sync their favorites between Internet Explorer and Microsoft Edge.
 
-### Prevent access to the about:flags page
+#### **Prevent access to the about:flags page**
 - **Supported versions:** Windows 10, Version 1607 or later
 
 - **Description:** This policy setting lets you decide whether employees can access the about:flags page, which is used to change developer settings and to enable experimental features.
@@ -290,7 +290,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable or don’t configure this setting (default), employees can access the about:flags page.
 
-### Prevent bypassing Windows Defender SmartScreen prompts for files
+#### **Prevent bypassing Windows Defender SmartScreen prompts for files**
 - **Supported versions:** Windows 10, Version 1511 or later
 
 - **Description:** This policy setting lets you decide whether employees can override the Windows Defender SmartScreen warnings about downloading unverified files.
@@ -299,7 +299,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 
     - If you disable or don’t configure this setting (default), employees can ignore Windows Defender SmartScreen warnings and continue the download process.
 
-### Prevent bypassing Windows Defender SmartScreen prompts for sites
+#### **Prevent bypassing Windows Defender SmartScreen prompts for sites**
 - **Supported versions:** Windows 10, Version 1511 or later
 
 - **Description:** This policy setting lets you decide whether employees can override the Windows Defender SmartScreen warnings about potentially malicious websites.
@@ -308,7 +308,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable or don’t configure this setting (default), employees can ignore Windows Defender SmartScreen warnings and continue to the site.
 
-### Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start
+#### **Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start**
 - **Supported versions:** Windows 10, Windows Insider Program
 
 - **Description:** This policy lets you decide whether Microsoft Edge can gather Live Tile metadata from the ieonline.microsoft.com service to provide a better experience while pinning a Live Tile to the Start menu.
@@ -317,7 +317,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable or don't configure this setting (default), Microsoft Edge gathers the Live Tile metadata, providing a fuller and more complete experience when a user pins a Live Tile to the Start menu.
 
-### Prevent the First Run webpage from opening on Microsoft Edge
+#### **Prevent the First Run webpage from opening on Microsoft Edge**
 - **Supported versions:** Windows 10, Windows Insider Program
 
 - **Description:** This policy setting lets you decide whether employees see Microsoft's First Run webpage when opening Microsoft Edge for the first time.
@@ -326,7 +326,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable or don't configure this setting (default), employees will see the First Run page when opening Microsoft Edge for the first time.
 
-### Prevent using Localhost IP address for WebRTC
+#### **Prevent using Localhost IP address for WebRTC**
 - **Supported versions:** Windows 10, Version 1511 or later
 
 - **Description:** This policy setting lets you decide whether an employee’s Localhost IP address shows while making calls using the WebRTC protocol. By default, this setting is turned off.
@@ -335,7 +335,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable or don’t configure this setting (default), Localhost IP addresses are shown while making calls using the WebRTC protocol.
 
-### Send all intranet sites to Internet Explorer 11
+#### **Send all intranet sites to Internet Explorer 11**
 - **Supported versions:** Windows 10 or later
 
 - **Description:** This policy setting lets you decide whether your intranet sites should all open using Internet Explorer 11. This setting should only be used if there are known compatibility problems with Microsoft Edge.
@@ -344,7 +344,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable or don’t configure this setting (default), all websites, including intranet sites, are automatically opened using Microsoft Edge.
 
-### Set default search engine
+#### **Set default search engine**
 - **Supported versions:** Windows 10, Windows Insider Program
 
 - **Description:** This policy setting lets you configure the default search engine for your employees. Employees can change the default search engine at any time unless you disable the "Allow search engine customization" setting, which restricts any changes.
@@ -361,7 +361,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 
     - If you don't configure this setting (default), the default search engine is set to the one specified in App settings.
 
-### Show message when opening sites in Internet Explorer
+#### **Show message when opening sites in Internet Explorer**
 - **Supported versions:** Windows 10, Version 1607 and later
 
 - **Description:** This policy setting lets you decide whether employees see an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.
