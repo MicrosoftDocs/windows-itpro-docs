@@ -326,14 +326,49 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable or don't configure this setting (default), employees will see the First Run page when opening Microsoft Edge for the first time.
 
+### Prevent using Localhost IP address for WebRTC
+- **Supported versions:** Windows 10, Version 1511 or later
 
+- **Description:** This policy setting lets you decide whether an employee’s Localhost IP address shows while making calls using the WebRTC protocol. By default, this setting is turned off.
 
+    - If you enable this setting, Localhost IP addresses are hidden while making calls using the WebRTC protocol.
+    
+    - If you disable or don’t configure this setting (default), Localhost IP addresses are shown while making calls using the WebRTC protocol.
 
-||||
-|Prevent using Localhost IP address for WebRTC|Windows 10, Version 1511 or later|This policy setting lets you decide whether an employee’s Localhost IP address shows while making calls using the WebRTC protocol. By default, this setting is turned off.<p>If you enable this setting, Localhost IP addresses are hidden while making calls using the WebRTC protocol.<p>If you disable or don’t configure this setting, Localhost IP addresses are shown while making calls using the WebRTC protocol.|**Enabled:** Hides the Localhost IP address during calls using the WebRTC protocol.<p>**Disabled or not configured (default):** Shows the Localhost IP address during phone calls using the WebRTC protocol.|
-|Send all intranet sites to Internet Explorer 11|Windows 10 or later|This policy setting lets you decide whether your intranet sites should all open using Internet Explorer 11. This setting should only be used if there are known compatibility problems with Microsoft Edge.<p>If you enable this setting, all intranet sites are automatically opened using Internet Explorer 11.<p>If you disable or don’t configure this setting, all websites, including intranet sites, are automatically opened using Microsoft Edge.|**Enabled:** Automatically opens all intranet sites using Internet Explorer 11.<p>**Disabled or not configured (default):** Automatically opens all websites, including intranet sites, using Microsoft Edge.|
-|Set default search engine|Windows 10, Windows Insider Program|This policy setting lets you configure the default search engine for your employees. Employees can change the default search engine at any time unless you disable the "Allow search engine customization" setting, which restricts any changes.<p>**Important**<br>This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).<p>If you enable this setting, you can choose a default search engine for your employees. If this setting is enabled, you must also add the default engine to the “Set default search engine” setting, by adding a link to your OpenSearch XML file, including at least the short name and https: URL of the search engine. For more info about creating the OpenSearch XML file, see the [Understanding OpenSearch Standards](https://msdn.microsoft.com/en-us/library/dd163546.aspx) topic. Use this format to specify the link you wish to add:<br>`https://fabrikam.com/opensearch.xml`<p>**Note**<br>If you'd like your employees to use the default Microsoft Edge settings for each market, you can set the string to EDGEDEFAULT. If you'd like your employees to use Microsoft Bing as the default search engine, you can set the string to EDGEBING.<p>If you disable this setting, the policy-set default search engine is removed. If this is also the current in-use default, the engine changes to the Microsoft Edge specified engine for the market.<p>If you don't configure this setting, the default search engine is set to the one specified in App settings.|**Enabled:** You can choose a default search engine for your employees.<p>**Disabled:** The policy-set default search engine is removed. If this is also the current in-use default, the engine changes to the Microsoft Edge specified engine for the market.<p>**Not configured (default):** The default search engine is set to the one specified in App settings.|
-|Show message when opening sites in Internet Explorer|Windows 10, Version 1607 and later|This policy setting lets you decide whether employees see an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.<p>If you enable this setting, employees see an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.<p>If you disable or don’t configure this setting, the default app behavior occurs and no additional page appears.|**Enabled:** Shows an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.<p>**Disabled or not configured (default):** Doesn’t show an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.|
+### Send all intranet sites to Internet Explorer 11
+- **Supported versions:** Windows 10 or later
+
+- **Description:** This policy setting lets you decide whether your intranet sites should all open using Internet Explorer 11. This setting should only be used if there are known compatibility problems with Microsoft Edge.
+
+    - If you enable this setting, all intranet sites are automatically opened using Internet Explorer 11.
+    
+    - If you disable or don’t configure this setting (default), all websites, including intranet sites, are automatically opened using Microsoft Edge.
+
+### Set default search engine
+- **Supported versions:** Windows 10, Windows Insider Program
+
+- **Description:** This policy setting lets you configure the default search engine for your employees. Employees can change the default search engine at any time unless you disable the "Allow search engine customization" setting, which restricts any changes.
+
+    >[!Important]
+    >This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).<p>
+    >If you'd like your employees to use the default Microsoft Edge settings for each market, you can set the string to EDGEDEFAULT. If you'd like your employees to use Microsoft Bing as the default search engine, you can set the string to EDGEBING.
+
+    - If you enable this setting, you can choose a default search engine for your employees. To choose the default engine, you must add a link to your OpenSearch XML file, including at least the short name and https: URL of the search engine, using this format:
+    
+        `https://fabrikam.com/opensearch.xml`
+    
+    - If you disable this setting, the policy-set default search engine is removed. If this is also the current in-use default, the engine changes to the Microsoft Edge specified engine for the market.<p>If you don't configure this setting, the default search engine is set to the one specified in App settings.
+
+    - If you don't configure this setting (default), the default search engine is set to the one specified in App settings.
+
+### Show message when opening sites in Internet Explorer
+- **Supported versions:** Windows 10, Version 1607 and later
+
+- **Description:** This policy setting lets you decide whether employees see an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.
+
+    - If you enable this setting, employees see an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.
+    
+    - If you disable or don’t configure this setting (default), the default app behavior occurs and no additional page appears.
 
 ## Using Microsoft Intune to manage your Mobile Data Management (MDM) settings for Microsoft Edge
 If you manage your policies using Intune, you'll want to use these MDM policy settings. You can see the full list of available policies, on the [Policy CSP]( https://go.microsoft.com/fwlink/p/?LinkId=722885) page.
