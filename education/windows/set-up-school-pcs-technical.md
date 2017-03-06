@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
-author: jdeckerMS
+author: CelesteDG
 ---
 
 # Technical reference for the Set up School PCs app 

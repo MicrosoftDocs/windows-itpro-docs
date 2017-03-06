@@ -20,6 +20,9 @@
 ### [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md)
 ### [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md)
 ### [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md)
+### [Monitor Windows Updates with Update Compliance](update-compliance-monitor.md)
+#### [Get started with Update Compliance](update-compliance-get-started.md)
+#### [Use Update Compliance](update-compliance-using.md)
 ### [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 #### [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 #### [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
@@ -160,6 +163,7 @@
 ### [Troubleshooting App-V](appv-troubleshooting.md)
 ### [Technical Reference for App-V](appv-technical-reference.md)
 #### [Performance Guidance for Application Virtualization](appv-performance-guidance.md)
+
 #### [Application Publishing and Client Interaction](appv-application-publishing-and-client-interaction.md)
 #### [Viewing App-V Server Publishing Metadata](appv-viewing-appv-server-publishing-metadata.md)
 #### [Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications](appv-running-locally-installed-applications-inside-a-virtual-environment.md)
@@ -219,4 +223,5 @@
 #### [Update Windows Store for Business account settings](update-windows-store-for-business-account-settings.md)
 #### [Manage user accounts in Windows Store for Business](manage-users-and-groups-windows-store-for-business.md)
 ### [Troubleshoot Windows Store for Business](troubleshoot-windows-store-for-business.md)
+## [Windows Libraries](windows-libraries.md)
 ## [Change history for Manage and update Windows 10](change-history-for-manage-and-update-windows-10.md)

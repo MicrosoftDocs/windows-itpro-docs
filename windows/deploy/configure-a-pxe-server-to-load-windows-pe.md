@@ -163,6 +163,9 @@ ramdisksdidevice        boot
 ramdisksdipath          \boot\boot.sdi
 ```
 
+>[!TIP]
+>If you start the PXE boot process, but receive the error that "The boot configuration data for your PC is missing or contains errors" then verify that \\boot directory is installed under the correct TFTP server root directory.  In the example used here the name of this directory is TFTPRoot, but your TFTP server might be different. 
+
 ## PXE boot process summary
 
 The following summarizes the PXE client boot process.
