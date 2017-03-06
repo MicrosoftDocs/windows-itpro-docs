@@ -44,3 +44,11 @@ If your client secret expires or if you've misplaced the copy provided when you 
 6. Click **Save**. The key value is displayed.
 
 7. Copy the value and save it in a safe place.
+
+
+## Related topics
+- [Understand threat intelligence](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+- [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Create custom threat intelligence](custom-ti-api-windows-defender-advanced-threat-protection.md)
+- [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
+- [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
