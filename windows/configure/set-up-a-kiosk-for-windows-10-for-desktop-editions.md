@@ -22,9 +22,13 @@ localizationpriority: high
 A single-use or *kiosk* device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). 
 
 - Use the [Provision kiosk devices wizard](#wizard) in Windows Configuration Designer to create a provisioning package that configures a kiosk device running either a Universal Windows app or a Classic Windows application.
+
     or
+    
 - For a kiosk device to run a Universal Windows app, use the [assigned access](#assigned-access) feature. 
+
     or
+    
 - For a kiosk device (Windows 10 Enterprise or Education) to run a Classic Windows application, use [Shell Launcher](#shell-launcher) to set a custom user interface as the shell. 
 
 To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
