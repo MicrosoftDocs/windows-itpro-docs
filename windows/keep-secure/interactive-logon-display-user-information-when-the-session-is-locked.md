@@ -17,31 +17,80 @@ author: brianlic-msft
 Describes the best practices, location, values, and security considerations for the **Interactive logon: Display user information when the session is locked** security policy setting.
 
 ## Reference
-When a session is locked in a Windows operating system (meaning the user at the computer pressed CTRL+ALT+DEL and the Secure Desktop is displayed), user information is displayed. By default, this information is in the form of **&lt;user name&gt; is logged on**. The displayed user name is the user’s full name as set on the Properties page for that user. These settings do not apply to the logon tiles, which are displayed on the desktop after using the **Switch User** feature. The information that is displayed can be changed to meet your security requirements using the following possible values.
+This setting controls whether details such as email address or domain\username appear with the username on the sign-in screen. 
+For clients that run Windows 10 version 1511 and 1507 (RTM), this setting works similarly to previous versions of Windows. 
+Due to a new **Privacy** setting in Windows 10 version 1607, this setting affects those clients differently. 
 
-### Possible values
+### Changes in Windows 10 version 1607
+
+Beginning with Windows 10 version 1607, new functionality was added to Windows 10 to hide username details such as email address by default, with the ability to change the default to show the details. 
+This functionality is controlled by a new **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**. 
+The Privacy setting is off by default, which hides the details. 
+
+![Privacy setting](images\privacy-setting-in-sign-in-options.png)
+
+The **Interactive logon: Display user information when the session is locked** Group Policy setting controls the same functionality. 
+
+This setting has these possible values:
 
 -   **User display name, domain and user names**
 
-    If this is a local logon, the user’s full name is displayed on the Secure Desktop. If it is a domain logon, the user’s domain and user’s account name is displayed.
+    For a local logon, the user's full name is displayed. 
+    If the user signed in using a Microsoft Account, the user's email address is displayed. 
+    For a domain logon, the domain\username is displayed. 
+    This has the same effect as turning on the **Privacy** setting. 
 
 -   **User display name only**
 
-    The name of the user who locked the session is displayed on the Secure Desktop as the user’s full name.
+    The full name of the user who locked the session is displayed. 
+    This has the same effect as turning off the **Privacy** setting.
 
 -   **Do not display user information**
 
-    No names are displayed on the Secure Desktop, but user’s full names will be displayed on the **Switch user** desktop.
+    No names are displayed. 
+    Beginning with Windows 10 version 1607, this option is not supported. 
+    If this option is chosen, the full name of the user who locked the session is displayed instead. 
+    This change makes this setting consistent with the functionality of the new **Privacy** setting. 
+    To have no user information displayed, enable the Group Policy setting **Interactive logon: Don't display last signed-in**.
 
 -   Blank.
 
-    Default setting. This translates to “Not defined,” but it will display the user’s full name in the same manner as the **User display name** option. When an option is set, you cannot reset this policy to blank, or not defined.
+    Default setting. 
+    This translates to “Not defined,” but it will display the user’s full name in the same manner as the option **User display name only**. 
+    When an option is set, you cannot reset this policy to blank, or not defined.
+
+### Hotfix for Windows 10 version 1607
+
+Clients that run Windows 10 version 1607 will not show details on the sign-in screen even if the **User display name, domain and user names** option is chosen because the **Privacy** setting is off. 
+If the **Privacy** setting is turned on, details will show. 
+
+The **Privacy** setting cannot be changed for clients in bulk. 
+Instead, apply [KB 4013429](https://support.microsoft.com/help/4000825/windows-10-and-windows-server-2016-update-history) to clients that run Windows 10 version 1607 so they behave similarly to previous versions of Windows. 
+
+There are related Group Policy settings:
+
+- **Computer Configuration\Policies\Administrative Templates\System\Logon\Block user from showing account details on sign-in** prevents users from showing account details on the sign-in screen. 
+- **Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Don’t display last signed-in** prevents the username of the last user to sign in from being shown.
+- **Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Don’t display user name at sign in** prevents the username from being shown at Windows sign-in and immediately after credentials are entered and before the desktop appears. 
+
+### Interaction with related Group Policy settings
+
+For all versions of Windows 10, only the user display name is shown by default. 
+
+If **Block user from showing account details on sign-in** is enabled, then only the user display name is shown regardless of any other Group Policy settings. 
+Users will not be able to show details.
+
+If **Block user from showing account details on sign-in** is not enabled, then you can set **Interactive logon: Display user information when the session is locked** to **User display name, domain and user names** to show additional details such as domain\username. 
+In this case, clients that run Windows 10 version 1607 need [KB 4013429](https://support.microsoft.com/help/4000825/windows-10-and-windows-server-2016-update-history) applied. 
+Users will not be able to hide additional details. 
+
+If **Block user from showing account details on sign-in** is not enabled and **Don’t display last signed-in** is enabled, the username will not be shown.
 
 ### Best practices
 
-Your implementation of this policy depends on your security requirements for displayed logon information. If you have devices that store sensitive data, with monitors displayed in unsecured locations, or if you have computers with sensitive data that are remotely accessed, revealing logged on user’s full names or domain account names might contradict your overall security policy.
+Your implementation of this policy depends on your security requirements for displayed logon information. If you run computers that store sensitive data, with monitors displayed in unsecured locations, or if you have computers with sensitive data that are remotely accessed, revealing logged on user’s full names or domain account names might contradict your overall security policy.
 
-Depending on your security policy, you might also want to enable the [Interactive logon: Do not display last user name](interactive-logon-do-not-display-last-user-name.md) policy, which will prevent the Windows operating system from displaying the logon name and logon tile of the last user to logon.
+Depending on your security policy, you might also want to enable the [Interactive logon: Do not display last user name](interactive-logon-do-not-display-last-user-name.md) policy.
 
 ### Location
 
@@ -86,13 +135,7 @@ When a computer displays the Secure Desktop in an unsecured area, certain user i
 
 Enabling this policy setting allows the operating system to hide certain user information from being displayed on the Secure Desktop (after the device has been booted or when the session has been locked by using CTRL+ALT+DEL). However, user information is displayed if the **Switch user** feature is used so that the logon tiles are displayed for each logged on user.
 
-You might also want to enable the [Interactive logon: Do not display last user name](interactive-logon-do-not-display-last-user-name.md) policy, which will prevent the Windows operating system from displaying the logon name and logon tile of the last user to logon.
-
-### Potential impact
-
-If you do not enable this policy, the effect will be the same as enabling the policy and selecting the **User display name, domain and user names** option.
-
-If the policy is enabled and set to **Do not display user information**, an observer cannot see who is logged onto the Secure Desktop, but the logon tile is still present if the [Interactive logon: Do not display last user name](interactive-logon-do-not-display-last-user-name.md) policy is not enabled. Depending on how the logon tiles are configured, they could provide visual clues as to who is logged on. In addition, if the Interactive logon: Do not display last user name policy is not enabled, then the **Switch user** feature will show user information.
+You might also want to enable the [Interactive logon: Do not display last signed-in](interactive-logon-do-not-display-last-user-name.md) policy, which will prevent the Windows operating system from displaying the logon name and logon tile of the last user to logon.
 
 ## Related topics
 
