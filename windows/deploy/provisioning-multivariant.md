@@ -59,8 +59,8 @@ The following table shows the conditions supported in Windows 10 provisioning fo
 | PowerPlatformRole | P1 | Supported | Supported | Enumeration | Indicates the preferred power management profile. Set the value based on the [POWER_PLATFORM_ROLE enumeration](https://msdn.microsoft.com/library/windows/desktop/aa373174.aspx).  |
 | Architecture | P1 | Supported | Supported | String | Matches the PROCESSOR_ARCHITECTURE environment variable. |
 | Server | P1 | Supported | Supported | Boolean | Set the value to **0** (false) or **1** (true) to identify a server. |
-| Region | P1 | Supported | Supported | Enumeration | Use to target settings based on [country/region](https://msdn.microsoft.com/library/cdax410z.aspx). |
-| Lang | P1 | Supported | Supported | Enumeration | Use to target settings based on [language code](https://msdn.microsoft.com/library/39cwe7zf.aspx).  |
+| Region | P1 | Supported | Supported | Enumeration | Use to target settings based on country/region, using the 2-digit alpha ISO code per [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). |
+| Lang | P1 | Supported | Supported | Enumeration | Use to target settings based on language code, using the 2-digit [ISO 639 alpha-2 code](https://en.wikipedia.org/wiki/ISO_639).  |
 
 
 The matching types supported in Windows 10 are:
@@ -82,14 +82,16 @@ Settings that match more than one **TargetState** with equal priority are applie
 
 The **TargetState** priority is assigned based on the condition's priority (see the [Conditions table](#conditions) for priorities). The priority evaluation rules are as followed:
 
-1. A **TargetState** with P0 conditions is higher than **TargetState** without P0 conditions.
+1. A **TargetState** with P0 conditions is higher than a **TargetState** without P0 conditions.
 
+2. A **TargetState** with both P0 and P1 conditions is higher than a **TargetState** with only P0 conditions.
 
-2. A **TargetState** with P1 conditions is higher than **TargetState** without P0 and P1 conditions.
+2. A **TargetState** with a greater number of matched P0 conditions is higher than **TargetState** with fewer matched P0 conditions, regardless of the number of P1 conditions matched.
 
-3. When you have more than one **TargetState** with the same priority conditions, the **TargetState** with the highest number of that priority conditions takes precedence.
+2. If the number of P0 conditions matched are equivalent, then the **TargetState** with the most matched P1 conditions has higher priority.
 
-4. When you have more than one **TargetState** with the same number of the same priority conditions, **TargetState** priorities are considered equal.
+3. If both P0 and P1 conditions are equally matched, then the **TargetState** with the greatest total number of matched conditions has highest priority.
+
 
 
 ## Create a provisioning package with multivariant settings
