@@ -38,13 +38,13 @@ You use Windows Configuration Designer to create a provisioning package (.ppkg) 
     
     - The wizard options provide a simple interface for configuring common settings for desktop, mobile, and kiosk devices. Wizards are also available for creating provisioning packages for Microsoft Surface Hub and Microsoft HoloLens devices. For a summary of the settings available in the desktop, mobile, and kiosk devices, see [What you can configure using Configuration Designer wizardS](provisioning-packages.md#configuration-designer-wizards). 
     
-    - [Instructions for the desktop wizard](provision-pcs-for-initial-deployment.md)
-    - [Instructions for the mobile wizard](provisioning-configure-mobile.md)
-    - [Instructions for the kiosk wizard](set-up-a-kiosk-for-windows-10-for-desktop-editions.md#wizard)
-    - [Instructions for HoloLens wizard](https://technet.microsoft.com/itpro/hololens/hololens-provisioning)
-    - [Instructions for Surface Hub wizard](https://technet.microsoft.com/itpro/surface-hub/provisioning-packages-for-certificates-surface-hub)
+        - [Instructions for the desktop wizard](provision-pcs-for-initial-deployment.md)
+        - [Instructions for the mobile wizard](provisioning-configure-mobile.md)
+        - [Instructions for the kiosk wizard](set-up-a-kiosk-for-windows-10-for-desktop-editions.md#wizard)
+        - [Instructions for HoloLens wizard](https://technet.microsoft.com/itpro/hololens/hololens-provisioning)
+        - [Instructions for Surface Hub wizard](https://technet.microsoft.com/itpro/surface-hub/provisioning-packages-for-certificates-surface-hub)
         
-    - The **Advanced provisioning** option opens a new project with all **Runtime settings** available. The rest of this procedure uses **Advanced provisioning**.
+    - The **Advanced provisioning** option opens a new project with all **Runtime settings** available. *The rest of this procedure uses **Advanced provisioning**.*
     
     >[!TIP]
     >You can start a project in the simple wizard editor and then switch the project to the advanced editor.
@@ -69,7 +69,7 @@ You use Windows Configuration Designer to create a provisioning package (.ppkg) 
 >[!TIP]
 >**Import a provisioning package** can make it easier to create different provisioning packages that all have certain settings in common. For example, you could create a provisioning package that contains the settings for your organization's network, and then import it into other packages you create so you don't have to reconfigure those common settings repeatedly.
 
-After you click **Finish**, Windows Configuration Designer will open the **Available customizations** pane. 
+After you click **Finish**, Windows Configuration Designer will open the **Available customizations** pane and you can then configure settings for the package. 
 
 
 

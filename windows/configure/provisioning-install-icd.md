@@ -35,7 +35,7 @@ Windows Configuration Designer can create provisioning packages for Windows 10 d
 
 ## Install Windows Configuration Designer
 
-On devices running Windows 10, version 1703, you can install [Windows Configuration Designer from the Windows Store](https://www.microsoft.com/store/apps/9nblggh4tx22). To run Windows Configuration Designer on other operating systems, install it from the Windows Assessment and Deployment Kit (ADK) for Windows 10.
+On devices running Windows 10, version 1703, you can install [Windows Configuration Designer from the Windows Store](https://www.microsoft.com/store/apps/9nblggh4tx22). To run Windows Configuration Designer on other operating systems or in languages other than English, install it from the Windows Assessment and Deployment Kit (ADK) for Windows 10.
 
 >[!NOTE]
 >The Windows Configuration Designer App from the Windows Store currently supports only English. For a localized version of the Windows Configuration Designer, install it from the Windows ADK. 
