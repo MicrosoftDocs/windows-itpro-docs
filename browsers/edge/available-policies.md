@@ -519,238 +519,507 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         
         - **1 (default).** Allowed. Employees can use Adobe Flash.    
 
-### Text
-- **Supported versions:** 
+### AllowFlashClickToRun
+- **Supported versions:** Windows 10, Windows Insider Program
 
-- **Supported devices:** 
-
-- **Details:**
-
-    - **URI full path:** 
-
-    - **Data type:** 
-
-    - **Allowed values:**
-
-        -    
-
-### Text
-- **Supported versions:** 
-
-- **Supported devices:** 
+- **Supported devices:** Desktop|
 
 - **Details:**
 
-    - **URI full path:** 
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowFlashClickToRun
 
-    - **Data type:** 
+    - **Data type:** Integer
 
     - **Allowed values:**
 
-        -    
+        - **0.**  Adobe Flash content is automatically loaded and run by Microsoft Edge
+        
+        - **1 (default).** An employee must click the content, click a Click-to-Run button, or have the site appear on an auto-allow list before Microsoft Edge loads and runs Adobe Flash content.
 
-### Text
-- **Supported versions:** 
+### AllowInPrivate
+- **Supported versions:** Windows 10, Version 1511 or later
 
-- **Supported devices:** 
+- **Supported devices:** Both
 
 - **Details:**
 
-    - **URI full path:** 
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowInPrivate
 
-    - **Data type:** 
+    - **Data type:** Integer
 
     - **Allowed values:**
 
-        -    
+        - **0.** Employees can’t use InPrivate browsing.
+        
+        - **1 (default).** Employees can use InPrivate browsing.
 
-### Text
-- **Supported versions:** 
+### AllowMicrosoftCompatibilityList
+- **Supported versions:** Windows 10, Windows Insider Program
 
-- **Supported devices:** 
+- **Supported devices:** Both
 
 - **Details:**
 
-    - **URI full path:** 
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowMicrosoftCompatibilityList
 
-    - **Data type:** 
+    - **Data type:** Integer
 
-    - **Allowed values:**
+    - **Allowed values:** 
 
-        -    
+        - **0.** Additional search engines aren't allowed and the default can’t be changed in the Address bar.
+        
+        - **1 (default).** Additional search engines are allowed and the default can be changed in the Address bar.
 
-### Text
-- **Supported versions:** 
+### AllowPasswordManager
+- **Supported versions:** Windows 10 or later
 
-- **Supported devices:** 
-
-- **Details:**
-
-    - **URI full path:** 
-
-    - **Data type:** 
-
-    - **Allowed values:**
-
-        -    
-
-### Text
-- **Supported versions:** 
-
-- **Supported devices:** 
+- **Supported devices:** Both
 
 - **Details:**
 
-    - **URI full path:** 
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager
 
-    - **Data type:** 
+    - **Data type:** Integer
 
     - **Allowed values:**
 
-        -    
+        - **0 (default).** Employees can't use Password Manager to save passwords locally.
+        
+        - **1.** Employees can use Password Manager to save passwords locally.
 
-### Text
-- **Supported versions:** 
+### AllowPopups
+- **Supported versions:** Windows 10 or later
 
-- **Supported devices:** 
+- **Supported devices:** Desktop
 
 - **Details:**
 
-    - **URI full path:** 
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowPopups
 
-    - **Data type:** 
+    - **Data type:** Integer
 
     - **Allowed values:**
 
-        -    
+        - **0 (default).** Turns off Pop-up Blocker, allowing pop-up windows.
+        
+        - **1.** Turns on Pop-up Blocker, stopping pop-up windows. 
 
-### Text
-- **Supported versions:** 
+### AllowSearchEngineCustomization
+- **Supported versions:** Windows 10, Windows Insider Program
 
-- **Supported devices:** 
+- **Supported devices:** Both
 
 - **Details:**
 
-    - **URI full path:** 
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowSearchEngineCustomization
 
-    - **Data type:** 
+    - **Data type:** Integer
 
     - **Allowed values:**
 
-        -    
+        - **0.** Additional search engines are not allowed and the default can’t be changed in the Address bar.
+        
+        - **1 (default).** Additional search engines are allowed and the default can be changed in the Address bar.
 
-### Text
-- **Supported versions:** 
 
-- **Supported devices:** 
+### AllowSearchSuggestionsinAddressBar
+- **Supported versions:** Windows 10 or later
+
+- **Supported devices:** Both
 
 - **Details:**
 
-    - **URI full path:** 
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowSearchSuggestionsinAddressBar
 
-    - **Data type:** 
+    - **Data type:** Integer
 
     - **Allowed values:**
 
-        -    
+        - **0 (default).** Employees can’t see search suggestions in the Address bar of Microsoft Edge.
+        
+        - **1.** Employees can see search suggestions in the Address bar of Microsoft Edge.
 
-### Text
-- **Supported versions:** 
+### AllowSmartScreen
+- **Supported versions:** Windows 10 or later
 
-- **Supported devices:** 
+- **Supported devices:** Both
 
 - **Details:**
 
-    - **URI full path:** 
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen
 
-    - **Data type:** 
+    - **Data type:** Integer
 
     - **Allowed values:**
 
-        -    
+        - **0 (default).** Turns off Windows Defender SmartScreen.
+        
+        - **1.** Turns on Windows Defender SmartScreen, providing warning messages to your employees about potential phishing scams and malicious software.
 
-### Text
-- **Supported versions:** 
+### ClearBrowsingDataOnExit
+- **Supported versions:** Windows 10, Windows Insider Program
 
-- **Supported devices:** 
+- **Supported devices:** Both
 
 - **Details:**
 
-    - **URI full path:** 
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ClearBrowsingDataOnExit
 
-    - **Data type:** 
+    - **Data type:** Integer
 
     - **Allowed values:**
 
-        -    
+        - **0 (default).** Browsing data is not cleared on exit. The type of browsing data to clear can be configured by the employee in the Clear browsing data options under Settings.
+        
+        - **1.** Browsing data is cleared on exit.
 
-### Text
-- **Supported versions:** 
+### ConfigureAdditionalSearchEngines
+- **Supported versions:** Windows 10, Windows Insider Program
 
-- **Supported devices:** 
+- **Supported devices:** Both
 
 - **Details:**
 
-    - **URI full path:** 
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ConfigureAdditionalSearchEngines
 
-    - **Data type:** 
+    - **Data type:** Integer
 
     - **Allowed values:**
 
-        -    
+        - **0 (default).** Additional search engines are not allowed.
+        
+        - **1.**  Additional search engines are allowed.
 
+### DisableLockdownOfStartPages
+- **Supported versions:** Windows 10, Windows Insider Program
 
+- **Supported devices:** Desktop
 
+- **Details:**
 
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/DisableLockdownOfStartPages
 
+    - **Data type:** Integer
 
+    - **Allowed values:**
 
+        - **0 (default).** Enable lockdown of the Start pages according to the settings specified in the Browser/HomePages policy. Users cannot change the Start pages.
+        
+        - **1.** Disable lockdown of the Start pages and allow users to modify them.
 
+### EnterpriseModeSiteList
+- **Supported versions:** Windows 10 or later
 
+- **Supported devices:** Desktop
 
-|AllowFlashClickToRun|Windows 10, Windows Insider Program|Desktop|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/AllowFlashClickToRun</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0.**  Adobe Flash content is automatically loaded and run by Microsoft Edge</li><li>**1 (default).** An employee must click the content, click a Click-to-Run button, or have the site appear on an auto-allow list before Microsoft Edge loads and runs Adobe Flash content.</li></ul></li></ul>|
-|AllowInPrivate|Windows 10, Version 1511 or later|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/AllowInPrivate</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0.** Employees can’t use InPrivate browsing.</li><li>**1 (default).** Employees can use InPrivate browsing.</li></ul></li></ul>|
-|AllowMicrosoftCompatibilityList|Windows 10, Windows Insider Program|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/AllowMicrosoftCompatibilityList</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0.** Additional search engines aren't allowed and the default can’t be changed in the Address bar.</li><li>**1 (default).** Additional search engines are allowed and the default can be changed in the Address bar.</li></ul></li></ul>|
-|AllowPasswordManager|Windows 10 or later|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Employees can't use Password Manager to save passwords locally.</li><li>**1.** Employees can use Password Manager to save passwords locally.</li></ul></li></ul>|
-|AllowPopups|Windows 10 or later|Desktop|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/AllowPopups</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Turns off Pop-up Blocker, allowing pop-up windows.</li><li>**1.** Turns on Pop-up Blocker, stopping pop-up windows.</li></ul></li></ul>|
-|AllowSearchEngineCustomization|Windows 10, Windows Insider Program|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/AllowSearchEngineCustomization</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0.** Additional search engines are not allowed and the default can’t be changed in the Address bar.</li><li>**1 (default).** Additional search engines are allowed and the default can be changed in the Address bar.</li></ul></li></ul>|
-|AllowSearchSuggestions<br>inAddressBar|Windows 10 or later|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/AllowSearchSuggestionsinAddressBar</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Employees can’t see search suggestions in the Address bar of Microsoft Edge.</li><li>**1.** Employees can see search suggestions in the Address bar of Microsoft Edge.</li></ul></li></ul>|
-|AllowSmartScreen|Windows 10 or later|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Turns off Windows Defender SmartScreen.</li><li>**1.** Turns on Windows Defender SmartScreen, providing warning messages to your employees about potential phishing scams and malicious software.</li></ul></li></ul>|
-|ClearBrowsingDataOnExit|Windows 10, Windows Insider Program|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/ClearBrowsingDataOnExit</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Browsing data is not cleared on exit. The type of browsing data to clear can be configured by the employee in the Clear browsing data options under Settings.</li><li>**1.** Browsing data is cleared on exit.</li></ul></li></ul>|
-|ConfigureAdditionalSearchEngines|Windows 10, Windows Insider Program|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/ConfigureAdditionalSearchEngines</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Additional search engines are not allowed.</li><li>**1.**  Additional search engines are allowed.</li></ul></li></ul>|
-|DisableLockdownOfStartPages|Windows 10, Windows Insider Program|Desktop|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/DisableLockdownOfStartPages</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Enable lockdown of the Start pages according to the settings specified in the Browser/HomePages policy. Users cannot change the Start pages.</li><li>**1.** Disable lockdown of the Start pages and allow users to modify them.</li></ul></li></ul>|
-|EnterpriseModeSiteList|Windows 10 or later|Desktop|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>Not configured.</li><li>**1 (default).** Use the Enterprise Mode Site List, if configured.</li><li>**2.** Specify the location to the site list.</li></ul><p>**Note**<br>If there’s an .xml file in the cache container, IE waits 65 seconds and then checks the local cache for a newer version of the file from the server, based on standard caching rules. If the server file has a different version number than the version in the cache container, the server file is used and stored in the cache container.<p>If you’re already using a site list, enterprise mode continues to work during the 65 second wait; it just uses your existing site list instead of your new one.</li></ul>|
-|Favorites|Windows 10, Version 1511 or later|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/Favorites</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>Configure the **Favorite** URLs for your employees.<p>**Example:**<br>`<contoso.com>`<br>`<fabrikam.com>`<p>**Note**<br> URLs must be on separate lines and aren't shared between Microsoft Edge and Internet Explorer 11.</li></ul>|
-|FirstRunURL|Windows 10, Version 1511 or later|Mobile|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/FirstRunURL</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>Configure the first run URL for your employees.<p>**Example:**<br>`<contoso.one>`</li></ul></li></ul>|
-|HomePages|Windows 10, Version 1511 or later|Desktop|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/HomePages</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>Configure the Start page (previously known as Home page) URLs for your employees.<p>**Example:**<br>`<contoso.com/support><fabrikam.com/support>`</li></ul></li></ul>|
-|PreventAccessToAbout<br>FlagsInMicrosoftEdge|Windows 10, Version 1607 and later|Desktop|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/PreventAccessToAboutFlagsInMicrosoftEdge</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Employees can access the about:flags page in Microsoft Edge.</li><li>**1.** Employees can't access the about:flags page in Microsoft Edge.</li></ul></li></ul>|
-|PreventFirstRunPage|Windows 10, Windows Insider Program|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/PreventFirstRunPage</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Employees see the First Run webpage.</li><li>**1.** Employees don't see the First Run webpage.</li></ul></li></ul>|
-|PreventLiveTileDataCollection|Windows 10, Windows Insider Program|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/PreventLiveTileDataCollection</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Microsoft servers will be contacted if a site is pinned to Start from Microsoft Edge.</li><li>**1.** Microsoft servers will not be contacted if a site is pinned to Start from Microsoft Edge.</li></ul></li></ul>|
-|PreventSmartScreenPromptOverride|Windows 10, Version 1511 or later|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/PreventSmartscreenPromptOverride</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Turns off Windows Defender SmartScreen.</li><li>**1.** Turns on Windows Defender SmartScreen.</li></ul></li></ul>|
-|PreventSmartScreenPromptOverrideForFiles|Windows 10, Version 1511 or later|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/PreventSmartScreenPromptOverrideForFiles</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Lets employees ignore the Windows Defender SmartScreen warnings about unverified files and lets them continue the download process.</li><li>**1.** Stops employees from ignoring the Windows Defender SmartScreen warnings about unverified files.</li></ul></li></ul>|
-|PreventUsingLocalHost<br>IPAddressForWebRTC|Windows 10, Version 1511 or later|Desktop|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/PreventUsingLocalHostIPAddressForWebRTC</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Shows an employee's LocalHost IP address while using the WebRTC protocol.</li><li>**1.** Doesn't show an employee's LocalHost IP address while using the WebRTC protocol.</li></ul></li></ul>|
-|SendIntranetTraffic<br>toInternetExplorer|Windows 10 or later|Desktop|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Automatically opens all websites, including intranet sites, using Microsoft Edge.</li><li>**1.** Automatically opens all intranet sites using Internet Explorer 11.</li></ul></li></ul>|
-|SetDefaultSearchEngine|Windows 10, Windows Insider Program|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/SetDefaultSearchEngine</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** The default search engine is set to the one specified in App settings.</li><li>**1.** Allows you to configure the default search engine for your employees.</li></ul></li></ul>|
-|ShowMessageWhen<br>OpeningInteretExplorer<br>Sites|Windows 10, Version 1607 and later|Desktop|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/ShowMessageWhenOpeningSitesInInteretExplorer</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Doesn’t show an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.</li><li>**1.** Shows an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.</li></ul></li></ul>|
-|SyncFavoritesBetweenIEAndMicrosoftEdge|Windows 10, Windows Insider Program|Desktop|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0 (default).** Synchronization is turned off.</li><li>**1.** Synchronization is turned on.</li></ul></li></ul>|
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList
+
+    - **Data type:** String
+
+    - **Allowed values:**
+
+        - Not configured.
+
+        - **1 (default).** Use the Enterprise Mode Site List, if configured.
+        
+        - **2.** Specify the location to the site list.
+
+            >[!NOTE]
+            >If there’s an .xml file in the cache container, IE waits 65 seconds and then checks the local cache for a newer version of the file from the server, based on standard caching rules. If the server file has a different version number than the version in the cache container, the server file is used and stored in the cache container.<p>If you’re already using a site list, enterprise mode continues to work during the 65 second wait; it just uses your existing site list instead of your new one.
+
+### Favorites
+- **Supported versions:** Windows 10, Version 1511 or later
+
+- **Supported devices:** Both
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/Favorites
+
+    - **Data type:** String
+
+    - **Allowed values:**
+
+        - Configure the **Favorite** URLs for your employees.
+        
+            **Example:**
+            
+                <contoso.com>
+                <fabrikam.com>
+            
+            URLs must be on separate lines and aren't shared between Microsoft Edge and Internet Explorer 11.
+
+### FirstRunURL
+- **Supported versions:** Windows 10, Version 1511 or later
+
+- **Supported devices:** Mobile
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/FirstRunURL
+
+    - **Data type:** String
+
+    - **Allowed values:**
+
+        - Configure the first run URL for your employees.
+        
+            **Example:**
+            
+                <contoso.one>
+
+### HomePages
+- **Supported versions:** Windows 10, Version 1511 or later
+
+- **Supported devices:** Desktop
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/HomePages
+
+    - **Data type:** String
+
+    - **Allowed values:**
+
+        - Configure the Start page (previously known as Home page) URLs for your employees.
+        
+            **Example:**
+            
+                <contoso.com/support><fabrikam.com/support>
+
+### PreventAccessToAboutFlagsInMicrosoftEdge
+- **Supported versions:** Windows 10, Version 1607 and later
+
+- **Supported devices:** Desktop
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventAccessToAboutFlagsInMicrosoftEdge
+
+    - **Data type:** Integer
+
+    - **Allowed values:**
+
+        - **0 (default).** Employees can access the about:flags page in Microsoft Edge.
+        
+        - **1.** Employees can't access the about:flags page in Microsoft Edge.
+
+### PreventFirstRunPage
+- **Supported versions:** Windows 10, Windows Insider Program
+
+- **Supported devices:** Both
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventFirstRunPage
+
+    - **Data type:** Integer
+
+    - **Allowed values:**
+
+        - **0 (default).** Employees see the First Run webpage.
+        
+        - **1.** Employees don't see the First Run webpage.
+
+### PreventLiveTileDataCollection
+- **Supported versions:** Windows 10, Windows Insider Program
+
+- **Supported devices:** Both
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventLiveTileDataCollection
+
+    - **Data type:** Integer
+
+    - **Allowed values:**
+
+        - **0 (default).** Microsoft servers will be contacted if a site is pinned to Start from Microsoft Edge.
+        
+        - **1.** Microsoft servers will not be contacted if a site is pinned to Start from Microsoft Edge.
+
+### PreventSmartScreenPromptOverride
+- **Supported versions:** Windows 10, Version 1511 or later
+
+- **Supported devices:** Both
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventSmartscreenPromptOverride
+
+    - **Data type:** Integer
+
+    - **Allowed values:**
+
+        - **0 (default).** Turns off Windows Defender SmartScreen.
+        
+        - **1.** Turns on Windows Defender SmartScreen.
+
+### PreventSmartScreenPromptOverrideForFiles
+- **Supported versions:** Windows 10, Version 1511 or later
+
+- **Supported devices:** Both
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventSmartScreenPromptOverrideForFiles
+
+    - **Data type:** Integer
+
+    - **Allowed values:**
+
+        - **0 (default).** Lets employees ignore the Windows Defender SmartScreen warnings about unverified files and lets them continue the download process.
+        
+        - **1.** Stops employees from ignoring the Windows Defender SmartScreen warnings about unverified files.
+
+### PreventUsingLocalHostIPAddressForWebRTC
+- **Supported versions:** Windows 10, Version 1511 or later
+
+- **Supported devices:** Desktop
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/PreventUsingLocalHostIPAddressForWebRTC
+
+    - **Data type:** Integer
+
+    - **Allowed values:**
+
+        - **0 (default).** Shows an employee's LocalHost IP address while using the WebRTC protocol.
+        
+        - **1.** Doesn't show an employee's LocalHost IP address while using the WebRTC protocol.
+
+### SendIntranetTraffictoInternetExplorer
+- **Supported versions:** Windows 10 or later
+
+- **Supported devices:** Desktop
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer
+
+    - **Data type:** Integer
+
+    - **Allowed values:**
+
+        - **0 (default).** Automatically opens all websites, including intranet sites, using Microsoft Edge.
+        
+        - **1.** Automatically opens all intranet sites using Internet Explorer 11.
+
+### SetDefaultSearchEngine
+- **Supported versions:** Windows 10, Windows Insider Program
+
+- **Supported devices:** Both
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SetDefaultSearchEngine
+
+    - **Data type:** Integer
+
+    - **Allowed values:**
+
+        - **0 (default).** The default search engine is set to the one specified in App settings.
+        
+        - **1.** Allows you to configure the default search engine for your employees.
+
+### ShowMessageWhenOpeningInteretExplorerSites
+- **Supported versions:** Windows 10, Version 1607 and later
+
+- **Supported devices:** Desktop
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/ShowMessageWhenOpeningSitesInInteretExplorer
+
+    - **Data type:** Integer
+
+    - **Allowed values:**
+
+        - **0 (default).** Doesn’t show an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.
+        
+        - **1.** Shows an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.
+
+### SyncFavoritesBetweenIEAndMicrosoftEdge
+- **Supported versions:** Windows 10, Windows Insider Program
+
+- **Supported devices:** Desktop
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/SyncFavoritesBetweenIEAndMicrosoftEdge
+
+    - **Data type:** Integer
+
+    - **Allowed values:**
+
+        - **0 (default).** Synchronization is turned off.
+        
+        - **1.** Synchronization is turned on.         
 
 
 ## Microsoft Edge and Windows 10-specific Group Policy settings
 These are additional Windows 10-specific Group Policy settings that work with Microsoft Edge.
 
-|Group Policy setting|Description|Options|
-|--------------------|--------------|---------|
-|Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana|Whether employees can use Cortana.|**Enabled or not configured:** Employees can use Cortana on their devices.<p>**Disabled:** Stops employees from using Cortana on their devices.<p>**Note** Employees can still perform searches even with Cortana turned off.|
-|Computer Configuration\Administrative Templates\Windows Components\sync your settings\Do not sync|Whether employees can use the **Sync your Settings** options to sync their settings to and from their device.|**Enabled:** Turns off the **Sync your Settings** options and none of the **Sync your Setting** groups are synced on the device. You can use the **Allow users to turn syncing on** option to turn the feature off by default, but to let the employee change this setting.<p>**Disabled or not configured (default):** Turns on the **Sync your Settings** area by default, letting employees pick what can sync on their device.|
-|Computer Configuration\Administrative Templates\Windows Components\sync your settings\Do not sync browser settings|Whether a browser group can use the **Sync your Settings** options to sync their info to and from their device. This includes settings and info like **History** and Favorites.|**Enabled:** Turns off the **Sync your Settings** options so that browser groups are unable to sync their settings and info. You can use the **Allow users to turn browser syncing on** option to turn the feature off by default, but to let the employee change this setting.<p>**Disabled or not configured (default):** Turns on the **Sync your Settings** area by default, letting browser groups pick what can sync on their device.|
+### Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana
+- **Description:** This policy settings lets you decide whether employees can use Cortana.
+
+    - If you enable or don't configure this setting, employees can use Cortana on their devices.
+    
+    - If you disable this setting, employees won't be able to use Cortana on their devices.
+    
+        >[!Note]
+        >Employees can still perform searches even with Cortana turned off.
+
+### Computer Configuration\Administrative Templates\Windows Components\sync your settings\Do not sync
+- **Description:** This policy settings lets you decide whether employees can use the Sync your Settings options to sync their settings to and from their device.
+
+    - If you enable this setting, the Sync your Settings options are turned off and none of the Sync your Setting groups are synced on the device. You can use the Allow users to turn syncing on option to turn the feature off by default, but to let the employee change this setting.
+    
+    - If you disable or don't configure this setting (default), the Sync your Settings options are turned on, letting employees pick what can sync on their device.
+    
+### Computer Configuration\Administrative Templates\Windows Components\sync your settings\Do not sync browser settings
+- **Description:** This policy settings lets you decide whether a browser group can use the Sync your Settings options to sync their info to and from their device. This includes settings and info like History and Favorites.
+
+    - If you enable this setting, the Sync your Settings options are turned off so that browser groups are unable to sync their settings and info. You can use the Allow users to turn browser syncing on option to turn the feature off by default, but to let the employee change this setting.
+    
+    - If you disable or don't configure this setting (default), the Sync your Settings options are turned on, letting browser groups pick what can sync on their device.
+
 
 ## Microsoft Edge and Windows 10-specific MDM policy settings
 These are additional Windows 10-specific MDM policy settings that work with Microsoft Edge.
 
-|MDM Policy name|Supports|Details|
-|----------------|--------------|-------------------|
-|AllowCortana|Both|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Experience/AllowCortana</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0.** Employees can’t use Cortana on their devices.</li><li>**1 (default).** Employees can use Cortana on their devices.</li></ul></li></ul>|
-|AllowSyncMySettings|Desktop|<ul><li>**URI full path.** ./Vendor/MSFT/Policy/Config/Experience/AllowSyncMySettings</li><li>**Data type.** Integer</li><li>**Allowed values:**<ul><li>**0.** Employees can’t sync settings between PCs.</li><li>**1 (default).** Employees can sync between PCs.</li></ul></li></ul>|
+### AllowCortana
+- **Supported devices:** Both
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/AllowCortana
+
+    - **Data type:** Integer
+
+    - **Allowed values:**
+
+        - **0.** Employees can’t use Cortana on their devices.
+        
+        - **1 (default).** Employees can use Cortana on their devices.
+
+### AllowSyncMySettings
+- **Supported devices:** Desktop
+
+- **Details:**
+
+    - **URI full path:** ./Vendor/MSFT/Policy/Config/Experience/AllowSyncMySettings
+
+    - **Data type:** Integer
+
+    - **Allowed values:**
+
+        - **0.** Employees can’t sync settings between PCs.
+        
+        - **1 (default).** Employees can sync between PCs.
 
 ## Related topics
 * [Group Policy TechCenter](https://go.microsoft.com/fwlink/p/?LinkId=214514)
