@@ -5,16 +5,19 @@ author: eross-msft
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
-title: Available policies for Microsoft Edge (Microsoft Edge for IT Pros)
+title: Available Group Policy and Mobile Data Management (MDM) settings for Microsoft Edge (Microsoft Edge for IT Pros)
 localizationpriority: high
 ---
 
-# Available Group Policy and Mobile Data Management (MDM) settings policies for Microsoft Edge
+# Available Group Policy and Mobile Data Management (MDM) settings for Microsoft Edge
 
 **Applies to:**
 
 - Windows 10, Windows Insider Program 
 - Windows 10 Mobile, Windows Insider Program
+
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPO's) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
 
