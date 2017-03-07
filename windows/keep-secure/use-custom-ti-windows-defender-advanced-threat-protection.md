@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Use the threat intelligence API to create custom alerts in Windows Defender ATP
+# Use the threat intelligence API to create custom alerts
 
 **Applies to:**
 
