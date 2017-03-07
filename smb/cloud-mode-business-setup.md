@@ -8,8 +8,6 @@ ms.topic: hero-article
 ms.author: celested
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.lang: EN 
-ms.loc: US 
 ms.pagetype: smb
 author: CelesteDG
 ---
