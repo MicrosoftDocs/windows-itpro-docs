@@ -17,7 +17,7 @@ localizationpriority: high
 
 -   Windows 10
 
-This topic explains how to create and apply a simple provisioning package that contains common enterprise settings to a device running all desktop editions of Windows 10 except Windows 10 Home.
+This topic explains how to create and apply a provisioning package that contains common enterprise settings to a device running all desktop editions of Windows 10 except Windows 10 Home.
 
 You can apply a provisioning package on a USB drive to off-the-shelf devices during setup, making it fast and easy to configure new devices. 
 
@@ -32,68 +32,44 @@ You can apply a provisioning package on a USB drive to off-the-shelf devices dur
 
 [Learn more about the benefits and uses of provisioning packages.](provisioning-packages.md)
 
-## What does simple provisioning do?
+## What does the desktop wizard do?
 
-In a simple provisioning package, you can configure:
+The desktop wizard helps you configure the following settings in a provisioning package:
 
-- Device name
-- Upgraded product edition
+- Set device name
+- Upgrade product edition
 - Configure the device for shared use
 - Remove pre-installed software
-- Wi-Fi network 
-- Active Directory or Azure Active Directory enrollment
-- Local administrator account 
+- Configure Wi-Fi network 
+- Enroll device in Active Directory or Azure Active Directory 
+- Create local administrator account 
 - Add applications and certificates
 
 Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more. 
 
 > [!TIP]
-> Use simple provisioning to create a package with the common settings, then switch to the advanced editor to add other settings, apps, policies, etc.
+> Use the desktop wizard to create a package with the common settings, then switch to the advanced editor to add other settings, apps, policies, etc.
 
 ![open advanced editor](images/icd-simple-edit.png)
 
 ## Create the provisioning package
 
-Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK and select **Configuration Designer**.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](provisioning-install.md)
 
-1. Open Windows ICD (by default, %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
+1. Open Windows Configuration Designer (by default, %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
 
-2. Click **Simple provisioning**.
+2. Click **Provision desktop devices**.
 
-  ![ICD start options](images/icdstart-option.png)   
+  ![ICD start options](images/icd-create-options-1703.png)   
 
-3. Name your project and click **Finish**. The screens for simple provisioning will walk you through the following steps.
+3. Name your project and click **Finish**. The pages for desktop provisioning will walk you through the following steps.
 
-  ![ICD simple provisioning](images/icd-simple.png)
-
-4. In the **Set up device** step, enter a unique 15-character name for the device. For help generating a unique name, you can use %SERIAL%, which includes a hardware-specific serial number, or you can use %RAND:x%, which generates random characters of x length.
-
-5. (*Optional*) You can upgrade the following editions of Windows 10 by providing a product key for the edition to upgrade to.
-    - Pro to Education
-    - Pro to Enterprise
-    - Enterprise to Education
-   
-6. Click **Set up network**.
-
-7. Toggle **On** or **Off** for wireless network connectivity. If you select **On**, enter the SSID, type, and (if required) password for the wireless network.
-
-8. Click **Enroll into Active Directory**.
-
-9. Toggle **Yes** or **No** for Active Directory enrollment. If you select **Yes**, enter the credentials for an account with permissions to enroll the device. (*Optional*) Enter a user name and password to create a local administrator account.
-
-    > **Warning**: If you don't create a local administrator account and the device fails to enroll in Active Directory for any reason, you will have to reimage the device and start over. As a best practice, we recommend:
-      - Use a least-privileged domain account to join the device to the domain.
-      - Create a temporary administrator account to use for debugging or reprovisioning if the device fails to enroll successfully.
-      - [Use Group Policy to delete the temporary administrator account](https://blogs.technet.microsoft.com/canitpro/2014/12/10/group-policy-creating-a-standard-local-admin-account/) after the device is enrolled in Active Directory.
-
-10. Click **Finish**.
-
-11. Review your settings in the summary. You can return to previous pages to change your selections. Then, under **Protect your package**, toggle **Yes** or **No** to encrypt the provisioning package. If you select **Yes**, enter a password. This password must be entered to apply the encrypted provisioning package.
-
-12. Click **Create**.
-
+  ![ICD desktop provisioning](images/icd-desktop-1703.png)
+  
 > [!IMPORTANT]
 > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+
+## Configure settings
 
 
 <table>
@@ -106,6 +82,8 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 <tr><td valign="top">![step seven](images/seven.png)  ![configure kiosk common settings](images/kiosk-common.png)</br></br>On this step, select your options for tablet mode, the user experience on the Welcome and shutdown screens, and the timeout settings.</td><td>![set tablet mode and configure welcome and shutdown and turn off timeout settings](images/kiosk-common-details.png)</td></tr>
 <tr><td valign="top">  ![finish](images/finish.png)</br></br>You can set a password to protect your provisioning package. You must enter this password when you apply the provisioning package to a device.</td><td>![Protect your package](images/finish-details.png)</td></tr>
 </table>
+
+After you're done, click **Create**. It only takes a few seconds. When the package is built, the location where the package is stored is displayed as a hyperlink at the bottom of the page.
 
  **Next step**: [How to apply a provisioning package](provisioning-apply-package.md)   
 
