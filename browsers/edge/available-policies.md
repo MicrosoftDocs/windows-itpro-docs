@@ -963,7 +963,9 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 ## Microsoft Edge and Windows 10-specific Group Policy settings
 These are additional Windows 10-specific Group Policy settings that work with Microsoft Edge.
 
-### Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana
+### Allow Cortana
+- **Location:** Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana
+
 - **Description:** This policy settings lets you decide whether employees can use Cortana.
 
     - If you enable or don't configure this setting, employees can use Cortana on their devices.
@@ -973,14 +975,18 @@ These are additional Windows 10-specific Group Policy settings that work with M
         >[!Note]
         >Employees can still perform searches even with Cortana turned off.
 
-### Computer Configuration\Administrative Templates\Windows Components\sync your settings\Do not sync
+### Do not sync
+- **Location:** Computer Configuration\Administrative Templates\Windows Components\sync your settings\Do not sync
+
 - **Description:** This policy settings lets you decide whether employees can use the Sync your Settings options to sync their settings to and from their device.
 
     - If you enable this setting, the Sync your Settings options are turned off and none of the Sync your Setting groups are synced on the device. You can use the Allow users to turn syncing on option to turn the feature off by default, but to let the employee change this setting.
     
     - If you disable or don't configure this setting (default), the Sync your Settings options are turned on, letting employees pick what can sync on their device.
     
-### Computer Configuration\Administrative Templates\Windows Components\sync your settings\Do not sync browser settings
+### Do not sync browser settings
+- **Location:** Computer Configuration\Administrative Templates\Windows Components\sync your settings\Do not sync browser settings
+
 - **Description:** This policy settings lets you decide whether a browser group can use the Sync your Settings options to sync their info to and from their device. This includes settings and info like History and Favorites.
 
     - If you enable this setting, the Sync your Settings options are turned off so that browser groups are unable to sync their settings and info. You can use the Allow users to turn browser syncing on option to turn the feature off by default, but to let the employee change this setting.
