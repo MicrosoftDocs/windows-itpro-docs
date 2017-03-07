@@ -61,7 +61,7 @@ The following table shows the conditions supported in Windows 10 provisioning fo
 | Server | P1 | Supported | Supported | Boolean | Set the value to **0** (false) or **1** (true) to identify a server. |
 | Region | P1 | Supported | Supported | Enumeration | Use to target settings based on [country/region](https://msdn.microsoft.com/library/cdax410z.aspx). |
 | Lang | P1 | Supported | Supported | Enumeration | Use to target settings based on [language code](https://msdn.microsoft.com/library/39cwe7zf.aspx).  |
-| ROMLANG | P1 | Supported | N/A | Digit string | Use to specify the [PhoneROMLanguage](https://www.microsoft.com/resources/msdn/goglobal/default.mspx) that's set for DeviceTargeting. This condition is used primarily to detect variants for China.  |
+
 
 The matching types supported in Windows 10 are:
 
