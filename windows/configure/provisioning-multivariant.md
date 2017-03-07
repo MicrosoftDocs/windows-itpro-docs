@@ -1,6 +1,6 @@
 ---
 title: Create a provisioning package with multivariant settings (Windows 10)
-description: Create a provisioning package with multivariant settings to customize the provisioned settings.
+description: Create a provisioning package with multivariant settings to customize the provisioned settings for defined conditions.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,37 +16,31 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Multivariant provisioning packages enable you to create a single provisioning package that can work for multiple locales.
 
-To provision multivariant settings, you must create a provisioning package with defined **Conditions** and **Settings** that are tied to these conditions. When you install this package on a Windows 10 device, the provisioning engine applies the matching condition settings at every event and triggers provisioning.
+In your organization, you might have different configuration requirements for devices that you manage. You can create separate provisioning packages for each group of devices in your organization that have different requirements. Or, you can create a multivariant provisioning package, a single provisioning package that can work for multiple conditions. For example, in a single provisioning package, you can define one set of customization settings that will apply to devices set up for French and a different set of customization settings for devices set up for Japanese. 
 
-The following events trigger provisioning on Windows 10 devices:
+To provision multivariant settings, you use Windows Imaging and Configuration Designer (ICD) to create a provisioning package that contains all of the customization settings that you want to apply to any of your devices. Next, you manually edit the .XML file for that project to define each set of devices (a **Target**). For each **Target**, you specify at least one **Condition** with a value, which identifies the devices to receive the configuration. Finally, for each **Target**, you provide the customization settings to be applied to those devices.
 
-| Event | Windows 10 Mobile | Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) |
-| --- | --- | --- |
-| System boot | Supported | Supported |
-| Operating system update | Supported | Planned |
-| Package installation during device first run experience | Supported | Supported |
-| Detection of SIM presence or update | Supported | Not supported |
-| Package installation at runtime | Supported | Supported |
-| Roaming detected | Supported | Not supported |
+Let's begin by learning how to define a **Target**.
 
-## Target, TargetState, Condition, and priorities
 
-Targets describe keying for a variant and must be described or pre-declared before being referenced by the variant.
+## Define a target
 
-- You can define multiple **Target** child elements for each **Id** that you need for the customization setting.
+In the XML file, you provide an **Id**, or friendly name, for each **Target**. Each **Target** is defined by at least one **TargetState** which contains at least one **Condition**. A **Condition** element defines the matching type between the condition and the specified value.
 
-- Within a **Target** you can define multiple **TargetState** elements.
+A **Target** can have more than one **TargetState**, and a **TargetState** can have more than one **Condition**. 
 
-- Within a **TargetState** element you can create multiple **Condition** elements.
+![Target with multiple target states and conditions](images/multi-target.png)
 
-- A **Condition** element defines the matching type between the condition and the specified value.
+The following table describes the logic for the target definition.
 
-The following table shows the conditions supported in Windows 10 provisioning:
+<table><tr><td>When all **Condition** elements are TRUE, **TargetState** is TRUE.</td><td>![Target state is true when all conditions are true](images/icd-multi-targetstate-true.png)</td></tr>
+<tr><td>If any of the **TargetState** elements is TRUE, **Target** is TRUE, and the **Id** can be used for setting customizations.</td><td>![Target is true if any target state is true](images/icd-multi-target-true.png)</td></tr></table>
 
->[!NOTE]
->You can use any of these supported conditions when defining your **TargetState**.
+### Conditions
+
+The following table shows the conditions supported in Windows 10 provisioning for a **TargetState**:
+
 
 | Condition Name | Condition priority | Windows 10 Mobile | Windows 10 for desktop editions | Value type | Value description |
 | --- | --- | --- | --- | --- | --- |
@@ -57,54 +51,47 @@ The following table shows the conditions supported in Windows 10 provisioning:
 | GID1 | P0 | Supported | N/A | Digit string | Use to target settings based on the Group Identifier (level 1) value. |
 | ICCID | P0 | Supported | N/A | Digit string | Use to target settings based on the Integrated Circuit Card Identifier (ICCID) value. |
 | Roaming | P0 | Supported | N/A | Boolean | Use to specify roaming. Set the value to **1** (roaming) or **0** (non-roaming). | 
-| UICC | P0 | Supported | N/A | Enumeration | Use to specify the UICC state. Set the value to one of the following:</br></br></br>- 0 - Empty</br>- 1 - Ready</br>- 2 - Locked |
+| UICC | P0 | Supported | N/A | Enumeration | Use to specify the Universal Integrated Circuit Card (UICC) state. Set the value to one of the following:</br></br></br>- 0 - Empty</br>- 1 - Ready</br>- 2 - Locked |
 | UICCSLOT | P0 | Supported | N/A | Digit string | Use to specify the UICC slot. Set the value one of the following:</br></br></br>- 0 - Slot 0</br>- 1 - Slot 1 |
 | ProcessorType | P1 | Supported | Supported | String | Use to target settings based on the processor type. |
 | ProcessorName | P1 | Supported | Supported | String | Use to target settings based on the processor name. |
-| AoAc | P1 | Supported | Supported | Boolean | Set the value to 0 or 1. |
-| PowerPlatformRole | P1 | Supported | Supported | Enumeration | Indicates the preferred power management profile. Set the value based on the POWER_PLATFORM_ROLE enumeration. |
+| AoAc ("Always On, Always Connected") | P1 | Supported | Supported | Boolean | Set the value to **0** (false) or **1** (true). If this condition is TRUE, the system supports the S0 low power idle model. |
+| PowerPlatformRole | P1 | Supported | Supported | Enumeration | Indicates the preferred power management profile. Set the value based on the [POWER_PLATFORM_ROLE enumeration](https://msdn.microsoft.com/library/windows/desktop/aa373174.aspx).  |
 | Architecture | P1 | Supported | Supported | String | Matches the PROCESSOR_ARCHITECTURE environment variable. |
-| Server | P1 | Supported | Supported | Boolean | Set the value to 0 or 1. |
-| Region | P1 | Supported | Supported | Enumeration | Use to target settings based on country/region. |
-| Lang | P1 | Supported | Supported | Enumeration | Use to target settings based on language code. |
-| ROMLANG | P1 | Supported | N/A | Digit string | Use to specify the PhoneROMLanguage that's set for DeviceTargeting. This condition is used primarily to detect variants for China. For example, you can use this condition and set the value to "0804". |
+| Server | P1 | Supported | Supported | Boolean | Set the value to **0** (false) or **1** (true) to identify a server. |
+| Region | P1 | Supported | Supported | Enumeration | Use to target settings based on country/region, using the 2-digit alpha ISO code per [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). |
+| Lang | P1 | Supported | Supported | Enumeration | Use to target settings based on language code, using the 2-digit [ISO 639 alpha-2 code](https://en.wikipedia.org/wiki/ISO_639).  |
+
 
 The matching types supported in Windows 10 are:
 
 | Matching type | Syntax | Example |
 | --- | --- | --- |
 | Straight match | Matching type is specified as-is | &lt;Condition Name="ProcessorName" Value="Barton" /&gt; |
-| Regex match | Matching type is prefixed by "Pattern:" | &lt;Condition Name="ProcessorName" Value="Pattern:.*Celeron.*" /&gt; |
+| Regular expression (Regex) match | Matching type is prefixed by "Pattern:" | &lt;Condition Name="ProcessorName" Value="Pattern:.*Celeron.*" /&gt; |
 | Numeric range match | Matching type is prefixed by "!Range:" | &lt;Condition Name="MNC" Value="!Range:400, 550" /&gt; |
  
 
-- When all **Condition** elements are TRUE, **TargetState** is TRUE (**AND** logic).
+### TargetState priorities
 
-- If any of the **TargetState** elements is TRUE, **Target** is TRUE (**OR** logic), and **Id** can be used for the setting customization.
+You can define more than one **TargetState** within a provisioning package to apply settings to devices that match device conditions. When the provisioning engine evalues each **TargetState**, more than one **TargetState** may fit current device conditions. To determine the order in which the settings are applied, the system assigns a priority to every **TargetState**. 
 
+A setting that matches a **TargetState** with a lower priority is applied before the setting that matches a **TargetState** with a higher priority. This means that a setting for the **TargetState** with the higher priority can overwrite a setting for the **TargetState** with the lower priority.
 
-You can define more than one **TargetState** within a provisioning package to apply variant settings that match device conditions. When the provisioning engine evalues each **TargetState**, more than one **TargetState** may fit current device conditions. To determine the order in which the variant settings are applied, the system assigns a priority to every **TargetState**. 
+Settings that match more than one **TargetState** with equal priority are applied according to the order that each **TargetState** is defined in the provisioning package.
 
-A variant setting that matches a **TargetState** with a lower priority is applied before the variant that matches a **TargetState** with a higher priority. Variant settings that match more than one **TargetState** with equal priority are applied according to the order that each **TargetState** is defined in the provisioning package.
+The **TargetState** priority is assigned based on the condition's priority (see the [Conditions table](#conditions) for priorities). The priority evaluation rules are as followed:
 
-The **TargetState** priority is assigned based on the conditions priority and the priority evaluation rules are as followed:
+1. A **TargetState** with P0 conditions is higher than a **TargetState** without P0 conditions.
 
-1. **TargetState** with P0 conditions is higher than **TargetState** without P0 conditions.
+2. A **TargetState** with both P0 and P1 conditions is higher than a **TargetState** with only P0 conditions.
 
+2. A **TargetState** with a greater number of matched P0 conditions is higher than **TargetState** with fewer matched P0 conditions, regardless of the number of P1 conditions matched.
 
-2. **TargetState** with P1 conditions is higher than **TargetState** without P0 and P1 conditions.
+2. If the number of P0 conditions matched are equivalent, then the **TargetState** with the most matched P1 conditions has higher priority.
 
+3. If both P0 and P1 conditions are equally matched, then the **TargetState** with the greatest total number of matched conditions has highest priority.
 
-3. If N₁>N₂>0, the **TargetState** priority with N₁ P0 conditions is higher than the **TargetState** with N₂ P1 conditions.
-
-
-4. For **TargetState** without P0 conditions, if N₁>N₂>0 **TargetState** with N₁ P1 conditions is higher than the **TargetState** with N₂ P1 conditions.
-
-
-5. For **TargetState** without P0 and P1 conditions, if N₁>N₂>0 **TargetState** priority with N₁ P2 conditions is higher than the **TargetState** with N₂ P2 conditions.
-
-
-6. For rules 3, 4, and 5, if N₁=N₂, **TargetState** priorities are considered equal.
 
 
 ## Create a provisioning package with multivariant settings
@@ -112,17 +99,15 @@ The **TargetState** priority is assigned based on the conditions priority and th
 Follow these steps to create a provisioning package with multivariant capabilities.
 
 
-1. Build a provisioning package and configure the customizations you need to apply during certain conditions. For more information, see [Create a provisioning package](provisioning-create-package.md).
-
+1. Build a provisioning package and configure the customizations you want to apply during certain conditions. For more information, see [Create a provisioning package](provisioning-create-package.md).
 
 2. After you've [configured the settings](provisioning-create-package.md#configure-settings), save the project.
 
-
-3. Open the project folder and copy the customizations.xml file. 
+3. Open the project folder and copy the customizations.xml file to any local location. 
 
 4. Use an XML or text editor to open the customizations.xml file.
 
-    The customizations.xml file holds the package metadata (including the package owner and rank) and the settings that you configured when you created your provisioning package. The Customizations node contains a Common section, which contains the customization settings.
+    The customizations.xml file holds the package metadata (including the package owner and rank) and the settings that you configured when you created your provisioning package. The **Customizations** node of the file contains a **Common** section, which contains the customization settings.
 
     The following example shows the contents of a sample customizations.xml file.
 
@@ -153,7 +138,7 @@ Follow these steps to create a provisioning package with multivariant capabiliti
 </WindowsCustomizatons> 
     ```
 
-4. Edit the customizations.xml file and create a **Targets** section to describe the conditions that will handle your multivariant settings. 
+4. Edit the customizations.xml file to create a **Targets** section to describe the conditions that will handle your multivariant settings. 
 
     The following example shows the customizations.xml, which has been modified to include several conditions including **ProcessorName**, **ProcessorType**, **MCC**, and **MNC**.
     
@@ -210,10 +195,10 @@ Follow these steps to create a provisioning package with multivariant capabiliti
 
     c. Move compliant settings from the **Common** section to the **Variant** section.
 
-    If any of the TargetRef elements matches the Target, all settings in the Variant are applied (OR logic).
+    If any of the **TargetRef** elements matches the **Target**, all settings in the **Variant** are applied.
 
     >[!NOTE]
-    >You can define multiple Variant sections. Settings that reside in the **Common** section are applied unconditionally on every triggering event.
+    >You can define multiple **Variant** sections. Settings that reside in the **Common** section are applied unconditionally on every triggering event.
 
     The following example shows the customizations.xml updated to include a **Variant** section and the moved settings that will be applied if the conditions for the variant are met.
 
@@ -289,7 +274,20 @@ In this example, the **StoreFile** corresponds to the location of the settings s
 
  
 
+## Events that trigger provisioning
 
+When you install the multivariant provisioning package on a Windows 10 device, the provisioning engine applies the matching condition settings at every event and triggers provisioning.
+
+The following events trigger provisioning on Windows 10 devices:
+
+| Event | Windows 10 Mobile | Windows 10 for desktop editions |
+| --- | --- | --- |
+| System boot | Supported | Supported |
+| Operating system update | Supported | Planned |
+| Package installation during device first run experience | Supported | Supported |
+| Detection of SIM presence or update | Supported | Supported |
+| Package installation at runtime | Supported | Supported |
+| Roaming detected | Supported | Not supported |
  
 
  

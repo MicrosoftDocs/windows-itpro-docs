@@ -15,7 +15,7 @@ For a detailed feature list of what's in the current Microsoft Edge releases, th
 ## February 2017
 |New or changed topic | Description |
 |----------------------|-------------|
-|[Available Group Policy and Mobile Data Management (MDM) settings for Microsoft Edge](available-policies.md) |Added new Group Policy and MDM settings for the Windows Insider Program. |
+|[Available Group Policy and Mobile Data Management (MDM) settings for Microsoft Edge](available-policies.md) |Added new Group Policy and MDM settings for the Windows Insider Program. Reformatted for easier readability outside of scrolling table. |
 
 ## November 2016
 |New or changed topic | Description |
