@@ -10,9 +10,9 @@ author: jasongerend
 ms.date: 2/6/2017
 description: All about Windows Libraries, which are containers for users' content, such as Documents and Pictures.
 ---
-> Applies to: Windows 10, Windows 8.1, Windows 7, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2
-
 # Windows Libraries
+
+> Applies to: Windows 10, Windows 8.1, Windows 7, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2
 
 Libraries are virtual containers for users’ content. A library can contain files and folders stored on the local computer or in a remote storage location. In Windows Explorer, users interact with libraries in ways similar to how they would interact with other folders. Libraries are built upon the legacy known folders (such as My Documents, My Pictures, and My Music) that users are familiar with, and these known folders are automatically included in the default libraries and set as the default save location.
 

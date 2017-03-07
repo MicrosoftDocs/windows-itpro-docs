@@ -163,8 +163,8 @@ Topics and procedures in this guide are summarized in the following table. An es
     adsiedit.msc
     ```
 
-6. Right-click **ADSI Edit**, click **Connect to**, select **Default** under **Computer** and then click **OK**.
-7. Expand **Default naming context**>**DC=contoso,DC=com**, right-click **CN=System**, point to **New**, and then click **Object**.
+6. Right-click **ADSI Edit**, click **Connect to**, select **Default (Domain or server that you logged in to)** under **Computer** and then click **OK**.
+7. Expand **Default naming context**>**DC=contoso,DC=com**, and then in the console tree right-click **CN=System**, point to **New**, and then click **Object**.
 8. Click **container** and then click **Next**.
 9. Next to **Value**, type **System Management**, click **Next**, and then click **Finish**.
 10. Right-click **CN=system Management** and then click **Properties**.
@@ -194,7 +194,7 @@ Topics and procedures in this guide are summarized in the following table. An es
     - **Settings Summary**: Review settings and click **Next**.
     - **Prerequisite Check**: No failures should be listed. Ignore any warnings and click **Begin Install**.
 
-    >There should be at most three warnings present: WSUS on site server, configuration for SQL Server memory usage, and SQL Server process memory allocation. These warnings can safely be ignored.
+    >There should be at most three warnings present: WSUS on site server, configuration for SQL Server memory usage, and SQL Server process memory allocation. These warnings can safely be ignored in this test environment.
 
     Depending on the speed of the Hyper-V host and resources allocated to SRV1, installation can require approximately one hour. Click **Close** when installation is complete. 
 
@@ -207,7 +207,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 ## Download MDOP and install DaRT
 
-1. Download the [Microsoft Desktop Optimization Pack 2015](https://msdn.microsoft.com/en-us/subscriptions/downloads/#ProductFamilyId=597) to the Hyper-V host using an MSDN subscription. Download the .ISO file (mu_microsoft_desktop_optimization_pack_2015_x86_x64_dvd_5975282.iso) to the C:\VHD directory on the Hyper-V host.
+1. Download the [Microsoft Desktop Optimization Pack 2015](https://msdn.microsoft.com/en-us/subscriptions/downloads/#ProductFamilyId=597) to the Hyper-V host using an MSDN subscription. Download the .ISO file (mu_microsoft_desktop_optimization_pack_2015_x86_x64_dvd_5975282.iso, 2.79 GB) to the C:\VHD directory on the Hyper-V host.
 
 2. Type the following command at an elevated Windows PowerShell prompt on the Hyper-V host to mount the MDOP file on SRV1:
 
@@ -292,19 +292,19 @@ This section contains several procedures to support Zero Touch installation with
 2. In the System Center Configuration Manager console, in the **Administration** workspace, click **Distribution Points**.
 3. In the display pane, right-click **SRV1.CONTOSO.COM** and then click **Properties**.
 4. On the PXE tab, select the following settings:
-    - Enable PXE support for clients. Click **Yes** in the popup that appears.
-    - Allow this distribution point to respond to incoming PXE requests
-    - Enable unknown computer support. Click **OK** in the popup that appears.
-    - Require a password when computers use PXE
-    - Password and Confirm password: pass@word1
-    - Respond to PXE requests on specific network interfaces: Click the yellow starburst and then enter the MAC address determined in the first step of this procedure.
+    - **Enable PXE support for clients**. Click **Yes** in the popup that appears.
+    - **Allow this distribution point to respond to incoming PXE requests**
+    - **Enable unknown computer support**. Click **OK** in the popup that appears.
+    - **Require a password when computers use PXE**
+    - **Password** and **Confirm password**: pass@word1
+    - **Respond to PXE requests on specific network interfaces**: Click the yellow starburst and then enter the MAC address determined in the first step of this procedure.
 
     See the following example:
 
     <img src="images/sccm-pxe.png" alt="Config Mgr PXE"/>
 
 5. Click **OK**.
-6. Type the following command at an elevated Windows PowerShell prompt on SRV1, and verify that the files displayed are present:
+6. Wait for a minute, then type the following command at an elevated Windows PowerShell prompt on SRV1, and verify that the files displayed are present:
 
     ```
     cmd /c dir /b C:\RemoteInstall\SMSBoot\x64
@@ -340,7 +340,7 @@ This section contains several procedures to support Zero Touch installation with
     >You can open C:\Sources\OSD\Branding\contoso.bmp in MSPaint.exe if desired to customize this image.
 
 
-## Create a boot image for Configuration Manager 
+### Create a boot image for Configuration Manager 
 
 1. In the Configuration Manager console, in the **Software Library** workspace, expand **Operating Systems**, right-click **Boot Images**, and then click **Create Boot Image using MDT**.
 2. On the Package Source page, under **Package source folder to be created (UNC Path):**, type **\\\SRV1\Sources$\OSD\Boot\Zero Touch WinPE x64**, and then click **Next**.
@@ -357,13 +357,15 @@ This section contains several procedures to support Zero Touch installation with
     ```
     Invoke-Item 'C:\Program Files\Microsoft Configuration Manager\tools\cmtrace.exe'
     ```
-    >In the trace tool, click **Tools** on the menu and choose **Find**. Search for "**STATMSG: ID=2301**". For example:
+    
+    In the trace tool, click **Tools** on the menu and choose **Find**. Search for "**STATMSG: ID=2301**". For example:
 
-        ```
-        STATMSG: ID=2301 SEV=I LEV=M SOURCE="SMS Server" COMP="SMS_DISTRIBUTION_MANAGER" SYS=SRV1.CONTOSO.COM SITE=PS1 PID=2476 TID=4636 GMTDATE=Wed Sep 14 22:11:09.363 2016 ISTR0="Configuration Manager Client Upgrade Package" ISTR1="PS100003" ISTR2="" ISTR3="" ISTR4="" ISTR5="" ISTR6="" ISTR7="" ISTR8="" ISTR9="" NUMATTRS=1 AID0=400 AVAL0="PS100003"	SMS_DISTRIBUTION_MANAGER	9/14/2016 3:11:09 PM	4636 (0x121C)
-        ```
-11. You can also review status by clicking the **Zero Touch WinPE x64** image, and then clicking **Content Status** under **Related Objects** in the bottom right-hand corner of the console, or by entering **\Monitoring\Overview\Distribution Status\Content Status** on the location bar in the console. Doublt-click **Zero Touch WinPE x64** under **Content Status** in the console tree and verify that a status of **Successfully distributed content** is displayed on the **Success** tab.
-12. In the **Software Library** workspace, double-click **Zero Touch WinPE x64** and then click the **Data Source** tab.
+    ```
+    STATMSG: ID=2301 SEV=I LEV=M SOURCE="SMS Server" COMP="SMS_DISTRIBUTION_MANAGER" SYS=SRV1.CONTOSO.COM SITE=PS1 PID=2476 TID=4636 GMTDATE=Wed Sep 14 22:11:09.363 2016 ISTR0="Configuration Manager Client Upgrade Package" ISTR1="PS100003" ISTR2="" ISTR3="" ISTR4="" ISTR5="" ISTR6="" ISTR7="" ISTR8="" ISTR9="" NUMATTRS=1 AID0=400 AVAL0="PS100003"	SMS_DISTRIBUTION_MANAGER	9/14/2016 3:11:09 PM	4636 (0x121C)
+    ```
+
+11. You can also review status by clicking the **Zero Touch WinPE x64** image, and then clicking **Content Status** under **Related Objects** in the bottom right-hand corner of the console, or by entering **\Monitoring\Overview\Distribution Status\Content Status** on the location bar in the console. Double-click **Zero Touch WinPE x64** under **Content Status** in the console tree and verify that a status of **Successfully distributed content** is displayed on the **Success** tab.
+12. Next, in the **Software Library** workspace, double-click **Zero Touch WinPE x64** and then click the **Data Source** tab.
 13. Select the **Deploy this boot image from the PXE-enabled distribution point** checkbox, and click **OK**.
 14. Review the distmgr.log file again for "**STATMSG: ID=2301**" and verify that there are three folders under **C:\RemoteInstall\SMSImages** with boot images. See the following example:
 
@@ -380,7 +382,7 @@ This section contains several procedures to support Zero Touch installation with
 
     >The first two images (*.wim files) are default boot images. The third is the new boot image with DaRT.
 
-## Create a Windows 10 reference image
+### Create a Windows 10 reference image
 
 If you have already completed steps in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) then you have already created a Windows 10 reference image. In this case, skip to the next procedure in this guide: [Add a Windows 10 operating system image](#add-a-windows-10-operating-system-image). If you have not yet created a Windows 10 reference image, complete the steps in this section.
 
@@ -534,7 +536,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
     This step requires from 30 minutes to 2 hours, depending on the speed of the Hyper-V host and your network's download speed. After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep. The image is located in the C:\MDTBuildLab\Captures folder on SRV1. The file name is **REFW10X64-001.wim**. 
 
-## Add a Windows 10 operating system image
+### Add a Windows 10 operating system image
 
 1. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
 
@@ -553,11 +555,11 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
 6. In the Distribute Content Wizard, click **Next**, click **Add**, click **Distribution Point**, add the **SRV1.CONTOSO.COM** distribution point, click **OK**, click **Next** twice and then click **Close**.
 
-7. Enter **\Monitoring\Overview\Distribution Status\Content Status** on the location bar, click **Windows 10 Enterprise x64**, and monitor the status of content distribution until it is successful and no longer in progress. Refresh the view with the F5 key or by right-clicking **Windows 10 Enterprise x64** and clicking **Refresh**. Processing of the image on the site server can take several minutes.
+7. Enter **\Monitoring\Overview\Distribution Status\Content Status** on the location bar (be sure there is no space at the end of the location or you will get an error), click **Windows 10 Enterprise x64**, and monitor the status of content distribution until it is successful and no longer in progress. Refresh the view with the F5 key or by right-clicking **Windows 10 Enterprise x64** and clicking **Refresh**. Processing of the image on the site server can take several minutes.
 
     >If content distribution is not successful, verify that sufficient disk space is available.
 
-## Create a task sequence
+### Create a task sequence
 
 >Complete this section slowly. There are a large number of similar settings from which to choose.
 
@@ -567,37 +569,37 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
 3. On the General page, type **Windows 10 Enterprise x64** under **Task sequence name:** and then click **Next**.
 
-4. On the Details page, enter the following settings:<BR>
-    - Join a domain: contoso.com<BR>
-    - Account: click **Set**<BR>
-        - User name: contoso\CM_JD<BR>
-        - Password: pass@word1<BR>
-        - Confirm password: pass@word1<BR>
-        - Click **OK**<BR>
-    - Windows Settings<BR>
-        - User name: Contoso<BR>
-        - Organization name: Contoso<BR>
-        - Product key: \<blank\><BR>
-    - Administrator Account: Enable the account and specify the local administrator password<BR>
-        - Password: pass@word1<BR>
-        - Confirm password: pass@word1<BR>
-    - Click Next<BR>
+4. On the Details page, enter the following settings:
+    - Join a domain: **contoso.com**
+    - Account: click **Set**
+        - User name: **contoso\CM_JD**
+        - Password: **pass@word1**
+        - Confirm password: **pass@word1**
+        - Click **OK**
+    - Windows Settings
+        - User name: **Contoso**
+        - Organization name: **Contoso**
+        - Product key: \<blank\>
+    - Administrator Account: **Enable the account and specify the local administrator password**
+        - Password: **pass@word1**
+        - Confirm password: **pass@word1**
+    - Click **Next**
  
 5. On the Capture Settings page, accept the default settings and click **Next**.
 
-6. On the Boot Image page, browse and select the **Zero Touch WinPE x64** boot image package and then click **Next**.
+6. On the Boot Image page, browse and select the **Zero Touch WinPE x64** boot image package, click **OK**, and then click **Next**.
 
-7. On the MDT Package page, select **Create a new Microsoft Deployment Toolkit Files package**, under **Package source folder to be created (UNC Path):**, type **\\\SRV1\Sources$\OSD\MDT\MDT 2013**, and then click **Next**.
+7. On the MDT Package page, select **Create a new Microsoft Deployment Toolkit Files package**, under **Package source folder to be created (UNC Path):**, type **\\\SRV1\Sources$\OSD\MDT\MDT** (MDT is repeated here, not a typo), and then click **Next**.
 
-8. On the MDT Details page, next to **Name:** type **MDT 2013** and then click **Next**.
+8. On the MDT Details page, next to **Name:** type **MDT** and then click **Next**.
 
-9. On the OS Image page, browse and select the **Windows 10 Enterprise x64** package, and then click **Next**.
+9. On the OS Image page, browse and select the **Windows 10 Enterprise x64** package, click **OK**, and then click **Next**.
 
 10. On the Deployment Method page, accept the default settings for **Zero Touch Installation** and click **Next**.
 
-11. On the Client Package page, browse and select the **Microsoft Corporation Configuration Manager Client package** and then click **Next**.
+11. On the Client Package page, browse and select the **Microsoft Corporation Configuration Manager Client package**, click **OK**, and then click **Next**.
 
-12. On the USMT Package page, browse and select the **Microsoft Corporation User State Migration Tool for Windows 8 10.0.14393.0** package, and then click **Next**.
+12. On the USMT Package page, browse and select the **Microsoft Corporation User State Migration Tool for Windows 10.0.14393.0** package, click **OK**, and then click **Next**.
 
 13. On the Settings Package page, select **Create a new settings package**, and under **Package source folder to be created (UNC Path):**, type **\\\SRV1\Sources$\OSD\Settings\Windows 10 x64 Settings**, and then click **Next**.
 
@@ -640,7 +642,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     - Click **OK**<BR>.
 
 
-## Finalize the operating system configuration
+### Finalize the operating system configuration
 
 >If you completed all procedures in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) then the MDT deployment share is already present on SRV1.  In this case, skip the first four steps below and begin with step 5 to edit CustomSettings.ini.
 
@@ -670,7 +672,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     [Settings]
     Priority=Default
     Properties=OSDMigrateConfigFiles,OSDMigrateMode
-
+    
     [Default]
     DoCapture=NO
     ComputerBackupLocation=NONE
@@ -681,6 +683,14 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     EventService=http://SRV1:9800
     ApplyGPOPack=NO
     ```
+
+    >As noted previously, if you wish to migrate accounts other than those in the Contoso domain, then change the OSDMigrateAdditionalCaptureOptions option. For example, the following option will capture settings from all user accounts:
+
+    ```
+    OSDMigrateAdditionalCaptureOptions=/all
+    ```
+
+
 7. Return to the Configuration Manager console, and in the Software Library workspace, expand **Application Management**, click **Packages**, right-click **Windows 10 x64 Settings**, and then click **Update Distribution Points**. Click **OK** in the popup that appears.
 
 8. In the Software Library workspace, expand **Operating Systems**, click **Task Sequences**, right-click **Windows 10 Enterprise x64**, and then click **Distribute Content**.
@@ -705,6 +715,8 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
 ## Deploy Windows 10 using PXE and Configuration Manager
 
+In this first deployment scenario, we will deploy Windows 10 using PXE. This scenario creates a new computer that does not have any migrated users or settings.
+
 1. Type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```
@@ -718,7 +730,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
 3. In the Task Sequence Wizard, provide the password: **pass@word1**, and then click **Next**.
 
-4. Before you click Next in the Task Sequence Wizard, press the **F8** key. A command prompt will open.
+4. Before you click **Next** in the Task Sequence Wizard, press the **F8** key. A command prompt will open.
 
 5. At the command prompt, type **explorer.exe** and review the Windows PE file structure. 
 
@@ -744,6 +756,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     - Install the Configuration Manager client and hotfix
     - Join the computer to the contoso.com domain
     - Install any applications that were specified in the reference image
+
 
 12. When Windows 10 installation has completed, sign in to PC4 using the **contoso\administrator** account.
 
@@ -927,7 +940,7 @@ vmconnect localhost PC1
     - Task sequence comments: **USMT backup only**
 
 4. Click **Next**, and on the Boot Image page, browse and select the **Zero Touch WinPE x64** boot image package. Click **OK** and then click **Next** to continue.
-5. On the MDT Package page, browse and select the **MDT 2013** package. Click **OK** and then click **Next** to continue.
+5. On the MDT Package page, browse and select the **MDT** package. Click **OK** and then click **Next** to continue.
 6. On the USMT Package page, browse and select the **Microsoft Corporation User State Migration Tool for Windows** package. Click **OK** and then click **Next** to continue.
 7. On the Settings Package page, browse and select the **Windows 10 x64 Settings** package. Click **OK** and then click **Next** to continue.
 8. On the Summary page, review the details and then click **Next**.

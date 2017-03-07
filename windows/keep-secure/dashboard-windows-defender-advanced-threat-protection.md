@@ -21,6 +21,8 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
 The **Dashboard** displays a snapshot of:
 
 - The latest active alerts on your network
@@ -33,7 +35,7 @@ You can explore and investigate alerts and machines to quickly determine if, whe
 
 From the **Dashboard** you will see aggregated events to facilitate the identification of significant events or behaviors on a machine. You can also drill down into granular events and low-level indicators.
 
-It also has clickable tiles that give visual cues on the overall health status of your organization. Each tile opens a detailed view of the corresponding overview.
+It also has clickable tiles that give visual cues on the overall health state of your organization. Each tile opens a detailed view of the corresponding overview.
 
 ## ATP alerts
 You can view the overall number of active ATP alerts from the last 30 days in your network from the **ATP alerts** tile. Alerts are grouped into **New** and **In progress**.
@@ -42,30 +44,25 @@ You can view the overall number of active ATP alerts from the last 30 days in yo
 
 Each group is further sub-categorized into their corresponding alert severity levels. Click the number of alerts inside each alert ring to see a sorted view of that category's queue (**New** or **In progress**).
 
-For more information see, [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md).
+For more information see, [Alerts overview](alerts-queue-windows-defender-advanced-threat-protection.md).
 
-The **Latest ATP alerts** section includes the latest active alerts in your network. Each row includes an alert severity category and a short description of the alert. Click an alert to see its detailed view, or **Alerts queue** at the top of the list to go directly to the Alerts queue. For more information see,  [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md) and [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md).
+The **Latest ATP alerts** section includes the latest active alerts in your network. Each row includes an alert severity category and a short description of the alert. Click an alert to see its detailed view, or **Alerts queue** at the top of the list to go directly to the Alerts queue. For more information see,  [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md) and [Alerts overview](alerts-queue-windows-defender-advanced-threat-protection.md).
 
 ## Machines at risk
 This tile shows you a list of machines with the highest number of active alerts. The total number of alerts for each machine is shown in a circle next to the machine name, and then further categorized by severity levels at the far end of the tile (hover over each severity bar to see its label).
 
-![The Machines at risk tile shows a list of machines with the highest number of alerts, and a breakdown of the severity of the alerts](images/machines-at-risk.png)
+![The Machines at risk tile shows a list of machines with the highest number of alerts, and a breakdown of the severity of the alerts](images/atp-machines-at-risk.png)
 
 Click the name of the machine to see details about that machine. For more information see, [Investigate machines in the Windows Defender Advanced Threat Protection Machines view](investigate-machines-windows-defender-advanced-threat-protection.md).
 
 You can also click **Machines view** at the top of the tile to go directly to the **Machines view**, sorted by the number of active alerts. For more information see, [Investigate machines in the Windows Defender Advanced Threat Protection Machines view](investigate-machines-windows-defender-advanced-threat-protection.md).
 
-## Status
-The **Status** tile informs you if the service is active or if there are issues and the unique number of machines (endpoints) reporting to the service over the past 30 days.
+## Users at risk
+The tile shows you a list of user accounts with the most active alerts. The total number of alerts for each user is shown in a circle next to the user account, and then further categorized by severity levels at the far end of the tile (hover over each severity bar to see its label).
 
-![The Status tile shows an overall indicator of the service and the total number of machines reporting to the service](images/status-tile.png)
+![User accounts at risk tile shows a list of user accounts with the highest number of alerts and a breakdown of the severity of the alerts](images/atp-users-at-risk.png)
 
-For more information on the service status, see [Check the Windows Defender ATP service status](service-status-windows-defender-advanced-threat-protection.md).
-
-## Machines reporting
-The **Machines reporting** tile shows a bar graph that represents the number of machines reporting alerts daily. Hover over individual bars on the graph to see the exact number of machines reporting in each day.
-
-![The Machines reporting tile shows the number of machines reporting each day for the past 30 days](images/machines-reporting-tile.png)
+Click the user account to see details about the user account. For more information see [Investigate a user entity in Windows Defender Advanced Threat Protection]
 
 ## Machines with active malware detections
 The **Machines with active malware detections** tile will only appear if your endpoints are using Windows Defender.
@@ -91,11 +88,37 @@ Clicking on any of these categories will navigate to the [Machines view](investi
 > [!NOTE]
 > The **Machines with active malware detections** tile will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
 
-### Related topics
-- [View and organize the Windows Defender Advanced Threat Protection Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
+## Sensor health
+The **Sensor health** tile provides information on the individual endpoint’s ability to provide sensor data to the Windows Defender ATP service. It reports how many machines require attention and helps you identify problematic machines.
+
+![Sensor health tile](images/atp-tile-sensor-health.png)
+
+There are two status indicators that provide information on the number of machines that are not reporting properly to the service:
+- **Inactive** - Machines that have stopped reporting to the Windows Defender ATP service for more than seven days in the past month.
+-	**Misconfigured** – These machines might partially be reporting telemetry to the Windows Defender ATP service and might have configuration errors that need to be corrected.
+
+When you click any of the groups, you’ll be directed to machines view, filtered according to your choice. For more information, see [Check sensor health state](check-sensor-status-windows-defender-advanced-threat-protection.md) and [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
+
+## Service health
+The **Service health** tile informs you if the service is active or if there are issues.
+
+![The Service health tile shows an overall indicator of the service](images/status-tile.png)
+
+For more information on the service status, see [Check the Windows Defender ATP service status](service-status-windows-defender-advanced-threat-protection.md).
+
+## Daily machines reporting
+The **Daily machines reporting** tile shows a bar graph that represents the number of machines reporting alerts daily in the last 30 days. Hover over individual bars on the graph to see the exact number of machines reporting in each day.
+
+![The Machines reporting tile shows the number of machines reporting each day for the past 30 days](images/machines-reporting-tile.png)
+
+## Related topics
+- [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines view](investigate-machines-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
 - [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
 - [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
+- [View and organize the Windows Defender ATP Machines view](machines-view-overview-windows-defender-advanced-threat-protection.md)
+- [Investigate machines in the Windows Defender ATP Machines view](investigate-machines-windows-defender-advanced-threat-protection.md)
+- [Investigate a user account in Windows Defender ATP ](investigate-user-windows-defender-advanced-threat-protection.md)
 - [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
+- [Take response actions in Windows Defender ATP](response-actions-windows-defender-advanced-threat-protection.md)
