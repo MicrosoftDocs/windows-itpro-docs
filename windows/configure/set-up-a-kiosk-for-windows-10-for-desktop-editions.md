@@ -19,17 +19,17 @@ localizationpriority: high
 
 >  **Looking for Windows Embedded 8.1 Industry information?** See [Assigned Access]( https://go.microsoft.com/fwlink/p/?LinkId=613653)
 
-A single-use or *kiosk* device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). 
+A single-use or *kiosk* device is easy to set up in Windows 10 for desktop editions. 
 
-- Use the [Provision kiosk devices wizard](#wizard) in Windows Configuration Designer to create a provisioning package that configures a kiosk device running either a Universal Windows app or a Classic Windows application.
-
-    or
-    
-- For a kiosk device to run a Universal Windows app, use the [assigned access](#assigned-access) feature. 
+- Use the [Provision kiosk devices wizard](#wizard) in Windows Configuration Designer to create a provisioning package that configures a kiosk device running either a Universal Windows app or a Classic Windows application (Windows 10 Enterprise or Education only).
 
     or
     
-- For a kiosk device (Windows 10 Enterprise or Education) to run a Classic Windows application, use [Shell Launcher](#shell-launcher) to set a custom user interface as the shell. 
+- For a kiosk device to run a Universal Windows app, use the [assigned access](#assigned-access) feature (Windows 10 Pro, Enterprise, or Education). 
+
+    or
+    
+- For a kiosk device to run a Classic Windows application, use [Shell Launcher](#shell-launcher) to set a custom user interface as the shell (Windows 10 Enterprise or Education only). 
 
 To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
 
@@ -38,41 +38,7 @@ To return the device to the regular shell, see [Sign out of assigned access](#si
 
  
 
-## Other settings to lock down
 
-
-For a more secure kiosk experience, we recommend that you make the following configuration changes to the device:
-
--   Put device in **Tablet mode**.
-
-    If you want users to be able to use the touch (on screen) keyboard, go to **Settings** &gt; **System** &gt; **Tablet mode** and choose **On.**
-
--   Hide **Ease of access** feature on the logon screen.
-
-    Go to **Control Panel** &gt; **Ease of Access** &gt; **Ease of Access Center**, and turn off all accessibility tools.
-
--   Disable the hardware power button.
-
-    Go to **Power Options** &gt; **Choose what the power button does**, change the setting to **Do nothing**, and then **Save changes**.
-
--   Remove the power button from the sign-in screen.
-
-    Go to **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt;**Security Options** &gt; **Shutdown: Allow system to be shut down without having to log on** and select **Disabled.**
-
--   Disable the camera.
-
-    Go to **Settings** &gt; **Privacy** &gt; **Camera**, and turn off **Let apps use my camera**.
-
--   Turn off app notifications on the lock screen.
-
-    Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Logon\\Turn off app notifications on the lock screen**.
-
--   Disable removable media.
-
-    Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Device Installation\\Device Installation Restrictions**. Review the policy settings available in **Device Installation Restrictions** for the settings applicable to your situation.
-
-    >[!NOTE]  
-    >To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
 
 <span id="wizard" />
 ## Set up a kiosk using Windows Configuration Designer
@@ -91,8 +57,8 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 <tr><td valign="top">![step one](images/one.png)![set up device](images/set-up-device.png)</br></br>Enable device setup if you want to configure settings on this page.</br></br>**If enabled:**</br></br>Enter a name for the device.</br></br>(Optional) Select a license file to upgrade Windows 10 to a different edition. [See the permitted upgrades.](https://technet.microsoft.com/itpro/windows/deploy/windows-10-edition-upgrades)</br></br>Toggle **Configure devices for shared use** off. This setting optimizes Windows 10 for shared use scenarios and isn't necessary for a kiosk scenario.</br></br>You can also select to remove pre-installed software from the device. </td><td>![device name, upgrade to enterprise, shared use, remove pre-installed software](images/set-up-device-details.png)</td></tr>
 <tr><td valign="top">![step two](images/two.png)  ![set up network](images/set-up-network.png)</br></br>Enable network setup if you want to configure settings on this page.</br></br>**If enabled:**</br></br>Toggle **On** or **Off** for wireless network connectivity. If you select **On**, enter the SSID, the network type (**Open** or **WPA2-Personal**), and (if **WPA2-Personal**) the password for the wireless network.</td><td>![Enter network SSID and type](images/set-up-network-details.png)</td></tr>
 <tr><td valign="top">![step three](images/three.png)  ![account management](images/account-management.png)</br></br>Enable account management if you want to configure settings on this page. </br></br>**If enabled:**</br></br>You can enroll the device in Active Directory, enroll in Azure Active Directory, or create a local administrator account on the device</br></br>To enroll the device in Active Directory, enter the credentials for a least-privileged user account to join the device to the domain.</br></br>Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, [set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup). The **maximum number of devices per user** setting in your Azure AD tenant determines how many times the bulk token that you get in the wizard can be used. To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard. Set an expiration date for the token (maximum is 30 days from the date you get the token). Click **Get bulk token** (then what?)</br></br>To create a local administrator account, select that option and enter a user name and password. </br></br>**Important:** If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in.  </td><td>![join Active Directory, Azure AD, or create a local admin account](images/account-management-details.png)</td></tr>
-<tr><td valign="top">![step four](images/four.png) ![add applications](images/add-applications.png)</br></br>You can install multiple applications, both Classic Windows (Win32) apps and Universal Windows Platform (UWP) apps, in a provisioning package. The settings in this step vary according to the application that you select. For help with the settings, see [Provision PCs with apps](provision-pcs-with-apps.md). </td><td>![add an application](images/add-applications-details.png)</td></tr>
-<tr><td valign="top">![step five](images/five.png) ![add certificates](images/add-certificates.png)</br></br>To provision the device with a certificate, click **Add a certificate**. Enter a name for the certificate, and then browse to and select the certificate to be used.</td><td>![add a certificate](images/add-certificates-details.png)</td></tr> 
+<tr><td valign="top">![step four](images/four.png) ![add applications](images/add-applications.png)</br></br>You can provision the kiosk app in the **Add applications** step. You can install multiple applications, both Classic Windows (Win32) apps and Universal Windows Platform (UWP) apps, in a provisioning package. The settings in this step vary according to the application that you select. For help with the settings, see [Provision PCs with apps](provision-pcs-with-apps.md). </td><td>![add an application](images/add-applications-details.png)</td></tr>
+<tr><td valign="top">![step five](images/five.png) ![add certificates](images/add-certificates.png)</br></br>To provision the device with a certificate for the kiosk app, click **Add a certificate**. Enter a name for the certificate, and then browse to and select the certificate to be used.</td><td>![add a certificate](images/add-certificates-details.png)</td></tr> 
 <tr><td valign="top">![step six](images/six.png)  ![Configure kiosk account and app](images/kiosk-account.png)</br></br>You can create a local standard user account that will be used to run the kiosk app. If you toggle **No**, make sure that you have an existing user account to run the kiosk app.</br></br>If you want to create an account, enter the user name and password, and then toggle **Yes** or **No** to automatically sign in the account when the device starts.</br></br>In **Configure the kiosk mode app**, enter the name of the user account that will run the kiosk mode app. Select the type of app to run in kiosk mode, and then enter the path or filename (for a Classic Windows app) or the AUMID (for a Universal Windows app).</td><td>![Configure kiosk account and app](images/kiosk-account-details.png)</td></tr>
 <tr><td valign="top">![step seven](images/seven.png)  ![configure kiosk common settings](images/kiosk-common.png)</br></br>On this step, select your options for tablet mode, the user experience on the Welcome and shutdown screens, and the timeout settings.</td><td>![set tablet mode and configure welcome and shutdown and turn off timeout settings](images/kiosk-common-details.png)</td></tr>
 <tr><td valign="top">  ![finish](images/finish.png)</br></br>You can set a password to protect your provisioning package. You must enter this password when you apply the provisioning package to a device.</td><td>![Protect your package](images/finish-details.png)</td></tr>
@@ -419,7 +385,41 @@ $IsShellLauncherEnabled = $ShellLauncherClass.IsEnabled()
 "`nEnabled is set to " + $IsShellLauncherEnabled.Enabled
 ```
 
+## Other settings to lock down
 
+
+For a more secure kiosk experience, we recommend that you make the following configuration changes to the device:
+
+-   Put device in **Tablet mode**.
+
+    If you want users to be able to use the touch (on screen) keyboard, go to **Settings** &gt; **System** &gt; **Tablet mode** and choose **On.**
+
+-   Hide **Ease of access** feature on the logon screen.
+
+    Go to **Control Panel** &gt; **Ease of Access** &gt; **Ease of Access Center**, and turn off all accessibility tools.
+
+-   Disable the hardware power button.
+
+    Go to **Power Options** &gt; **Choose what the power button does**, change the setting to **Do nothing**, and then **Save changes**.
+
+-   Remove the power button from the sign-in screen.
+
+    Go to **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt;**Security Options** &gt; **Shutdown: Allow system to be shut down without having to log on** and select **Disabled.**
+
+-   Disable the camera.
+
+    Go to **Settings** &gt; **Privacy** &gt; **Camera**, and turn off **Let apps use my camera**.
+
+-   Turn off app notifications on the lock screen.
+
+    Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Logon\\Turn off app notifications on the lock screen**.
+
+-   Disable removable media.
+
+    Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Device Installation\\Device Installation Restrictions**. Review the policy settings available in **Device Installation Restrictions** for the settings applicable to your situation.
+
+    >[!NOTE]  
+    >To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
 
  
 
