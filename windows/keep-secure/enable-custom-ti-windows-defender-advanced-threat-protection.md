@@ -40,6 +40,8 @@ Before you can create custom threat intelligence (TI) using REST API, you'll nee
 You’ll need to use the access token in the Authorization header when doing REST API calls.
 
 ## Related topics
-- [Understand threat intelligence](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-- [Create custom threat intelligence](custom-ti-api-windows-defender-advanced-threat-protection.md)
+- [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+- [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
+- [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
+- [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
