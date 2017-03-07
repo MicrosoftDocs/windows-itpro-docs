@@ -10,7 +10,7 @@ author: jdeckerMS
 localizationpriority: high
 ---
 
-# Provision PCs with common settings for initial deployment (simple provisioning)
+# Provision PCs with common settings for initial deployment (desktop wizard)
 
 
 **Applies to**

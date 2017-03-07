@@ -48,7 +48,7 @@
 ### [Create a provisioning package](provisioning-create-package.md)
 ### [Apply a provisioning package](provisioning-apply-package.md)
 ### [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
-### [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
+### [Provision PCs with common settings for initial deployment (desktop wizard)](provision-pcs-for-initial-deployment.md)
 ### [Provision PCs with apps](provision-pcs-with-apps.md)
 ### [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
 ### [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
