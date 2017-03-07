@@ -4,7 +4,7 @@ description: Windows as a service provides an all-new way to think about buildin
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
@@ -21,7 +21,9 @@ localizationpriority: high
 Windows as a service provides a new way to think about building, deploying, and servicing the Windows operating system. The Windows as a service model is focused on continually providing new capabilities and updates while maintaining a high level of hardware and software compatibility. Deploying new versions of Windows is simpler than ever before: Microsoft releases new features two to three times per year rather than the traditional upgrade cycle where new features are only made available every few years. Ultimately, this model replaces the need for traditional Windows deployment projects, which can be disruptive and costly, and spreads the required effort out into a continuous updating process, reducing the overall effort required to maintain Windows 10 devices in your environment. In addition, with the Windows 10 operating system, organizations have the chance to try out “flighted” builds of Windows as Microsoft develops them, gaining insight into new features and the ability to provide continual feedback about them. 
 
 >[!TIP]
->See [Windows 10 update history](https://support.microsoft.com/help/12387/windows-10-update-history) for details about each Windows 10 update released to date.  
+>See [Windows 10 update history](https://support.microsoft.com/help/12387/windows-10-update-history) for details about each Windows 10 update released to date. 
+
+ 
 
 ## In this section
 
@@ -32,6 +34,7 @@ Windows as a service provides a new way to think about building, deploying, and 
 | [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) | Explains the decisions you need to make in your servicing strategy.  |
 | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) | Explains how to make use of servicing branches and update deferrals to manage Windows 10 updates.  |
 | [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) | Explains how to assign devices to Current Branch (CB) or Current Branch for Business (CBB) for feature and quality updates, and how to enroll devices in Windows Insider. |
+| [Monitor Windows Updates with Update Compliance](update-compliance-monitor.md) | Explains how to use Windows Analytics: Update Compliance to monitor and manage Windows Updates on devices in your organization.  |
 | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) | Explains the benefits of using Delivery Optimization or BranchCache for update distribution.  |
 | [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) | Explains updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile. |
 | [Manage updates using Windows Update for Business](waas-manage-updates-wufb.md) | Explains how to use Windows Update for Business to manage when devices receive updates directly from Windows Update. Includes walkthroughs for configuring Windows Update for Business using Group Policy and Microsoft Intune.  |

@@ -2223,6 +2223,19 @@ Description of the error. </dt>
 <p>The support for your operating system has expired. Windows Defender is no longer supported on your operating system, has stopped functioning, and is not protecting against malware threats.</p>
 </td>
 </tr>
+<tr><th rowspan="3">Event ID: 2050</th><td><p>Symbolic name:</p></td><td colspan="2"><p><b>MALWAREPROTECTION_SAMPLESUBMISSION_UPLOAD</b></p></td></tr><tr><td><p>Message:</p></td><td colspan="2"><p><b>The antimalware engine has uploaded a file for further analysis.<br />Filename &lt;uploaded filename&gt;<br />Sha256: &lt;file SHA&gt;</b></p></td></tr><tr><td><p>Description:</p></td><td colspan="2"><p>A file was uploaded to the Windows Defender Antimalware cloud for further analysis or processing.</p></td></tr>
+
+<tr><th rowspan="4">Event ID: 2051</th><td><p>Symbolic name:</p></td><td colspan="2"><p><b>MALWAREPROTECTION_SAMPLESUBMISSION_UPLOADED_FAILED</b></p></td></tr><tr><td><p>Message:</p></td><td colspan="2"><p><b>The antimalware engine has encountered an error trying to upload a suspicious file for further analysis.<br />
+Filename: &lt;uploaded filename&gt;<br />
+Sha256: &lt;file SHA&gt;<br />
+Current Signature Version: &lt;signature version number&gt;<br/>
+Current Engine Version: &lt;engine version number&gt;<br />
+Error code: &lt;error code&gt;</b></p></td></tr><tr><td><p>Description:</p></td><td colspan="2"><p>A file could not be uploaded to the Windows Defender Antimalware cloud.</p></td></tr><tr><td><p>User action:</p></td><td colspan="2"><p>You can attempt to manually submit the file.</p></td></tr>
+
+
+
+
+
 <tr>
 <th rowspan="4">Event ID: 3002</th>
 <td>

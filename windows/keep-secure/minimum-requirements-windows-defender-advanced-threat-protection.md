@@ -1,5 +1,5 @@
 ---
-title: Minimum requirements for Windows Defender Advanced Threat Protection
+title: Minimum requirements for Windows Defender ATP
 description: Minimum network and data storage configuration, endpoint hardware and software requirements, and deployment channel requirements for Windows Defender ATP.
 keywords: minimum requirements, Windows Defender Advanced Threat Protection minimum requirements, network and data storage, endpoint, endpoint configuration, deployment channel
 search.product: eADQiWindows 10XVcnh
@@ -24,6 +24,8 @@ localizationpriority: high
 There are some minimum requirements for onboarding your network and endpoints.
 
 ## Minimum requirements
+You must be on Windows 10, version 1607 at a minimum.
+For more information, see [Windows 10 Enterprise edition](https://www.microsoft.com/en-us/WindowsForBusiness/buy).
 
 ### Network and data storage and configuration requirements
 When you run the onboarding wizard for the first time, you must choose where your Windows Defender Advanced Threat Protection-related information is stored: either in a European or United States datacenter.
@@ -33,6 +35,7 @@ When you run the onboarding wizard for the first time, you must choose where you
 -   Review the [Windows Defender ATP data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md) for more information on where and how Microsoft stores your data.
 
 ### Endpoint hardware and software requirements
+
 The Windows Defender ATP agent only supports the following editions of Windows 10:
 
 - Windows 10 Enterprise

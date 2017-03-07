@@ -26,6 +26,9 @@ On Windows 10 for desktop editions, the customized Start works by:
     - 2 groups that are 6 columns wide, or equivalent to the width of 3 medium tiles.
     - 2 medium-sized tile rows in height. Windows 10 ignores any tiles that are pinned beyond the second row. 
     - No limit to the number of apps that can be pinned. There is a theoretical limit of 24 tiles per group (4 small tiles per medium square x 3 columns x 2 rows). 
+    
+>[!NOTE]
+>Using the layout modification XML to configure Start is not supported with roaming user profiles. For more information, see [Deploy Roaming User Profiles](https://technet.microsoft.com/en-US/library/jj649079.aspx).
 
 ## LayoutModification XML
 
@@ -158,19 +161,17 @@ You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop ap
 
     The following example shows how to pin the Command Prompt:
 
-```XML
-<start:DesktopApplicationTile
+    ```XML
+    <start:DesktopApplicationTile
           DesktopApplicationLinkPath="%appdata%\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk"
           Size="2x2"
           Row="0"
           Column="4"/>
-```
-
+    ```
     
     You must set the **DesktopApplicationLinkPath** attribute to the .lnk file that points to the Windows desktop application. The path also supports environment variables.
 
     If you are pointing to a third-party Windows desktop application, you must put the .lnk file in a legacy Start Menu directory before first boot; for example, "%APPDATA%\Microsoft\Windows\Start Menu\Programs\" or the all users profile "%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\".
-
 
 - By using the application's application user model ID, if this is known. If the Windows desktop application doesn't have one, use the shortcut link option.
 
@@ -178,13 +179,14 @@ You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop ap
 
     The following example shows how to pin the Internet Explorer Windows desktop application:
 
-```XML
-<start:DesktopApplicationTile
+    ```XML
+    <start:DesktopApplicationTile
           DesktopApplicationID="Microsoft.Windows.Explorer"
           Size="2x2"
           Row="0"
           Column="2"/>
-```
+    ```
+    
 
 You can also use the **start:DesktopApplicationTile** tag as one of the methods for pinning a Web link to Start. The other method is to use a Microsoft Edge secondary tile.
 

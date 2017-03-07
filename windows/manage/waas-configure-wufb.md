@@ -4,7 +4,7 @@ description: You can use Group Policy or your mobile device management (MDM) ser
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: DaniHalfin
 localizationpriority: high
 ---
 
@@ -115,7 +115,7 @@ You can set your system to receive updates for other Microsoft products—known 
 | --- | --- |
 | GPO for version 1607: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Quality Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\DeferQualityUpdates</br>\Policies\Microsoft\Windows\WindowsUpdate\DeferQualityUpdatesPeriodInDays  |
 | GPO for version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\DeferUpdatePeriod |
-| MDM for version 1607: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferQualityUpdates** | \Microsoft\PolicyManager\default\Update\DeferQualityUpdatesPeriodInDays |
+| MDM for version 1607: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferQualityUpdatesPeriodInDays** | \Microsoft\PolicyManager\default\Update\DeferQualityUpdatesPeriodInDays |
 | MDM for version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferUpgrade** | \Microsoft\PolicyManager\default\Update\RequireDeferUpdate  |
 
 
@@ -182,9 +182,9 @@ Below are quick-reference tables of the supported Windows Update for Business po
 | MDM Key | Key type | Value |
 | --- | --- | --- |
 | BranchReadinessLevel | REG_DWORD | 16: systems take Feature Updates for the Current Branch (CB)</br>32: systems take Feature Updates for the Current Branch for Business (CBB)</br>Note: Other value or absent: receive all applicable updates (CB) |
-| DeferQualityUpdatesPeriod | REG_DWORD | 0-30: defer quality updates by given days |
+| DeferQualityUpdatesPeriodinDays | REG_DWORD | 0-30: defer quality updates by given days |
 | PauseQualityUpdates | REG_DWORD | 1: pause quality updates</br>Other value or absent: don’t pause quality updates |
-| DeferFeatureUpdatesPeriod | REG_DWORD | 0-180: defer feature updates by given days |
+| DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-180: defer feature updates by given days |
 | PauseFeatureUpdates | REG_DWORD | 1: pause feature updates</br>Other value or absent: don’t pause feature updates |
 | ExcludeWUDriversinQualityUpdate | REG_DWORD | 1: exclude Windows Update drivers</br>Other value or absent: offer Windows Update drivers |
 
