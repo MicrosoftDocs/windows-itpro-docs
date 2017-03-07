@@ -55,13 +55,13 @@ The following table shows the conditions supported in Windows 10 provisioning fo
 | UICCSLOT | P0 | Supported | N/A | Digit string | Use to specify the UICC slot. Set the value one of the following:</br></br></br>- 0 - Slot 0</br>- 1 - Slot 1 |
 | ProcessorType | P1 | Supported | Supported | String | Use to target settings based on the processor type. |
 | ProcessorName | P1 | Supported | Supported | String | Use to target settings based on the processor name. |
-| AoAc | P1 | Supported | Supported | Boolean | Set the value to 0 or 1. WHAT DOES 0 MEAN? WHAT DOES 1 MEAN? WHAT DOES THIS CONDITION EVEN MEAN ("AoAc"?|
-| PowerPlatformRole | P1 | Supported | Supported | Enumeration | Indicates the preferred power management profile. Set the value based on the POWER_PLATFORM_ROLE enumeration. WHERE DO THEY FIND THAT ENUMERATION? |
+| AoAc ("Always On, Always Connected") | P1 | Supported | Supported | Boolean | Set the value to **0** (false) or **1** (true). If this condition is TRUE, the system supports the S0 low power idle model. |
+| PowerPlatformRole | P1 | Supported | Supported | Enumeration | Indicates the preferred power management profile. Set the value based on the [POWER_PLATFORM_ROLE enumeration](https://msdn.microsoft.com/library/windows/desktop/aa373174.aspx).  |
 | Architecture | P1 | Supported | Supported | String | Matches the PROCESSOR_ARCHITECTURE environment variable. |
-| Server | P1 | Supported | Supported | Boolean | Set the value to 0 or 1. WHAT DOES 0 MEAN? WHAT DOES 1 MEAN? WHAT DOES THIS CONDITION EVEN MEAN?|
-| Region | P1 | Supported | Supported | Enumeration | Use to target settings based on country/region. NEED REFERENCE FOR REGION CODES TO USE|
-| Lang | P1 | Supported | Supported | Enumeration | Use to target settings based on language code. IS THIS CORRECT REFERENCE FOR LANG CODES? [https://msdn.microsoft.com/en-us/library/cc233965.aspx](https://msdn.microsoft.com/en-us/library/cc233965.aspx) |
-| ROMLANG | P1 | Supported | N/A | Digit string | Use to specify the PhoneROMLanguage that's set for DeviceTargeting. This condition is used primarily to detect variants for China. For example, you can use this condition and set the value to "0804". NEED REFERENCE FOR PhoneROMLanguage CODES |
+| Server | P1 | Supported | Supported | Boolean | Set the value to **0** (false) or **1** (true) to identify a server. |
+| Region | P1 | Supported | Supported | Enumeration | Use to target settings based on [country/region](https://msdn.microsoft.com/library/cdax410z.aspx). |
+| Lang | P1 | Supported | Supported | Enumeration | Use to target settings based on [language code](https://msdn.microsoft.com/library/39cwe7zf.aspx).  |
+| ROMLANG | P1 | Supported | N/A | Digit string | Use to specify the [PhoneROMLanguage](https://www.microsoft.com/resources/msdn/goglobal/default.mspx) that's set for DeviceTargeting. This condition is used primarily to detect variants for China.  |
 
 The matching types supported in Windows 10 are:
 
@@ -80,7 +80,7 @@ A setting that matches a **TargetState** with a lower priority is applied before
 
 Settings that match more than one **TargetState** with equal priority are applied according to the order that each **TargetState** is defined in the provisioning package.
 
-The **TargetState** priority is assigned based on the conditions priority (see the [Conditions table](#conditions) for priorities). The priority evaluation rules are as followed:
+The **TargetState** priority is assigned based on the condition's priority (see the [Conditions table](#conditions) for priorities). The priority evaluation rules are as followed:
 
 1. **TargetState** with P0 conditions is higher than **TargetState** without P0 conditions.
 
@@ -109,7 +109,7 @@ Follow these steps to create a provisioning package with multivariant capabiliti
 
 2. After you've [configured the settings](provisioning-create-package.md#configure-settings), save the project.
 
-3. Open the project folder and copy the customizations.xml file (TO WHERE? DOES IT MATTER?). 
+3. Open the project folder and copy the customizations.xml file to any local location. 
 
 4. Use an XML or text editor to open the customizations.xml file.
 
@@ -291,7 +291,7 @@ The following events trigger provisioning on Windows 10 devices:
 | System boot | Supported | Supported |
 | Operating system update | Supported | Planned |
 | Package installation during device first run experience | Supported | Supported |
-| Detection of SIM presence or update | Supported | Not supported |
+| Detection of SIM presence or update | Supported | Supported |
 | Package installation at runtime | Supported | Supported |
 | Roaming detected | Supported | Not supported |
  
