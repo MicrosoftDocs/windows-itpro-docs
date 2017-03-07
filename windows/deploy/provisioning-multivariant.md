@@ -82,22 +82,14 @@ Settings that match more than one **TargetState** with equal priority are applie
 
 The **TargetState** priority is assigned based on the condition's priority (see the [Conditions table](#conditions) for priorities). The priority evaluation rules are as followed:
 
-1. **TargetState** with P0 conditions is higher than **TargetState** without P0 conditions.
+1. A **TargetState** with P0 conditions is higher than **TargetState** without P0 conditions.
 
 
-2. **TargetState** with P1 conditions is higher than **TargetState** without P0 and P1 conditions.
+2. A **TargetState** with P1 conditions is higher than **TargetState** without P0 and P1 conditions.
 
+3. When you have more than one **TargetState** with the same priority conditions, the **TargetState** with the highest number of that priority conditions takes precedence.
 
-3. If N₁>N₂>0, the **TargetState** priority with N₁ P0 conditions is higher than the **TargetState** with N₂ P1 conditions.
-
-
-4. For **TargetState** without P0 conditions, if N₁>N₂>0 **TargetState** with N₁ P1 conditions is higher than the **TargetState** with N₂ P1 conditions.
-
-
-5. For **TargetState** without P0 and P1 conditions, if N₁>N₂>0 **TargetState** priority with N₁ P2 conditions is higher than the **TargetState** with N₂ P2 conditions.
-
-
-6. For rules 3, 4, and 5, if N₁=N₂, **TargetState** priorities are considered equal.
+4. When you have more than one **TargetState** with the same number of the same priority conditions, **TargetState** priorities are considered equal.
 
 
 ## Create a provisioning package with multivariant settings
