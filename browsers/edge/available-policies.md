@@ -127,7 +127,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 
     - If you enable this setting, you can add up to 5 additional search engines. For each additional engine, you must also add a link to your OpenSearch XML file, including at least the short name and https: URL of the search engine, using this format:
     
-        `<https://fabrikam.com/opensearch.xml>https://www.contoso.com/opensearch.xml`
+            <https://fabrikam.com/opensearch.xml>https://www.contoso.com/opensearch.xml
 
         For more info about creating the OpenSearch XML file, see the [Understanding OpenSearch Standards](https://msdn.microsoft.com/en-us/library/dd163546.aspx) topic.
     
@@ -220,7 +220,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 
     - If you enable this setting, you can configure one or more Start pages. If this setting is enabled, you must also include URLs to the pages, separating multiple pages by using angle brackets in this format: 
         
-        `<support.contoso.com><support.microsoft.com>`
+            <support.contoso.com><support.microsoft.com>
     
     - If you disable or don’t configure this setting (default), your default Start page is the webpage specified in App settings.
 
@@ -355,7 +355,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 
     - If you enable this setting, you can choose a default search engine for your employees. To choose the default engine, you must add a link to your OpenSearch XML file, including at least the short name and https: URL of the search engine, using this format:
     
-        `https://fabrikam.com/opensearch.xml`
+            https://fabrikam.com/opensearch.xml
     
     - If you disable this setting, the policy-set default search engine is removed. If this is also the current in-use default, the engine changes to the Microsoft Edge specified engine for the market.<p>If you don't configure this setting, the default search engine is set to the one specified in App settings.
 
