@@ -47,5 +47,7 @@ The following features are included in the preview release:
 - [Check sensor health state](check-sensor-status-windows-defender-advanced-threat-protection.md) - Check an endpoint's ability to provide sensor data and communicate with the Windows Defender ATP service and fix known issues.
   - [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
 
+- [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md) - Create custom threat intelligence alerts using the threat intelligence API to generate alerts that are applicable to your organization.
+
 >[!NOTE]
 > All response actions require machines to be on the latest Windows 10 Insider Preview build.
