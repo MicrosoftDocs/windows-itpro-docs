@@ -81,7 +81,7 @@ The following table describes settings that you can configure using the wizards 
 
 - [Instructions for the desktop wizard](provision-pcs-for-initial-deployment.md)
 - [Instructions for the mobile wizard](provisioning-configure-mobile.md)
-- [Instructions for the kiosk wizard](set-up-a-kiosk-for-windows-10-for-desktop-editions.md#set-up-assigned-access-using-windows-configuration-designer)
+- [Instructions for the kiosk wizard](set-up-a-kiosk-for-windows-10-for-desktop-editions.md#wizard)
 
 >[!NOTE]
 >After you start a project using a Windows Configuration Designer wizard, you can switch to the advanced editor to configure additional settings in the provisioning package. 

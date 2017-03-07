@@ -116,7 +116,7 @@ Using assigned access, Windows 10 runs the designated Universal Windows app abo
 | --- | --- | --- |
 | [Use Settings on the PC](#set-up-assigned-access-in-pc-settings) | Local standard | Pro, Enterprise, Education |
 | [Apply a mobile device management (MDM) policy](#set-up-assigned-access-in-mdm) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
-| [Create a provisioning package using Windows Configuration Designer](#set-up-assigned-access-wcd) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
+| [Create a provisioning package using Windows Configuration Designer](#wizard) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
 | [Run a PowerShell script](#set-up-assigned-access-using-windows-powershell) | Local standard | Pro, Enterprise, Education |
 
 
@@ -246,6 +246,9 @@ To change the default time for assigned access to resume, add *IdleTimeOut* (DWO
 
 
 Using Shell Launcher, you can configure a kiosk device that runs a Classic Windows application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on.
+
+>[!NOTE]
+>You can also configure a kiosk device that runs a Classic Windows application by using the [Provision kiosk devices wizard](#wizard).
 
 ### Requirements
 
