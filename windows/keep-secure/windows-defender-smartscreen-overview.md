@@ -13,8 +13,7 @@ localizationpriority: high
 # Windows Defender SmartScreen overview
 **Applies to:**
 
--   Windows 10, version 1703
--   Windows 10 Mobile
+-   Windows 10
 
 
 
