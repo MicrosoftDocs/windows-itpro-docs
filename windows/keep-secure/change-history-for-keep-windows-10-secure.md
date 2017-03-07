@@ -16,7 +16,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 ## March 2017
 |New or changed topic |Description |
 |---------------------|------------|
-|[Protect derived domain credentials with CredentialGuear](credential-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
+|[Protect derived domain credentials with Credential Guard](credential-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
 |[Requirements and deployment planning guidelines for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
 
 
