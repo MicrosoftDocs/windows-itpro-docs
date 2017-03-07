@@ -12,12 +12,17 @@ author: greg-lindsay
 This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 ## RELEASE: Windows 10, version 1703
-
 The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). The provisioning topics have been moved to [Configure Windows 10](../configure/index.md).
+
+## March 2017
+| New or changed topic | Description |
+|----------------------|-------------|
+| [Convert MBR partition to GPT](mbr-to-gpt.md) | New | 
 
 ## February 2017
 | New or changed topic | Description |
 |----------------------|-------------|
+| [Manage Windows upgrades with Upgrade Readiness](manage-windows-upgrades-with-upgrade-readiness.md) | Multiple topics updated, name changed from Upgrade Analytics to Upgrade Readiness, and other content updates. | 
 | [USMT Requirements](usmt-requirements.md) | Updated: Vista support removed and other minor changes | 
 | [Get started with Upgrade Analytics](upgrade-analytics-get-started.md) | Updated structure and content | 
 | [Upgrade Analytics deployment script](upgrade-analytics-deployment-script.md) | Added as a separate page from get started | 

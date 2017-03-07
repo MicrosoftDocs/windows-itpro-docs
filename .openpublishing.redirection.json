@@ -332,7 +332,7 @@
     },
     {
         "source_path": "windows/deploy/provision-pcs-with-apps-and-certificates.md",
-        "redirect_url": "/itpro/windows/configure/provision-pcs-with-apps-and-certificates",
+        "redirect_url": "/itpro/windows/configure/provision-pcs-with-apps",
         "redirect_document_id": true
     },
     {
@@ -1053,7 +1053,7 @@
     {
         "source_path": "windows/whats-new/security.md",
         "redirect_url": "/itpro/windows/keep-secure/overview-of-threat-mitigations-in-windows-10",
-        "redirect_document_id": true
+        "redirect_document_id": false
     },
   ]
 }
