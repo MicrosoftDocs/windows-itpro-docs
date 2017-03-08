@@ -19,11 +19,14 @@ localizationpriority: high
 
 Starting with Windows 10, Version 1703 you can use Windows Defender Security Center to set up Windows Defender SmartScreen for an individual device, unless you've used Group Policy or Microsoft Intune to prevent it.
 
-![Windows Defender Security Center](images/windows-defender-security-center.png)
+**To use Windows Defender Security Center to set up Windows Defender SmartScreen on a device**
+1. Open the Windows Defender Security Center app, and then click **App & browser control**.
 
-In Windows Defender Security Center, go to the **App & Browser control** screen, and then click to **Block**, **Warn**, or turn **Off** Windows Defender SmartScreen for apps and files and for Microsoft Edge. 
+    ![Windows Defender Security Center](images/windows-defender-security-center.png)
 
-![Windows Defender Security Center, SmartScreen controls](images/windows-defender-smartscreen-control.png)
+2. In the **App & browser control** screen, click **Block**, **Warn**, or turn **Off**
+
+    ![Windows Defender Security Center, SmartScreen controls](images/windows-defender-smartscreen-control.png)
 
 ## Related topics
 - [Keep Windows 10 secure](https://technet.microsoft.com/itpro/windows/keep-secure/index)
