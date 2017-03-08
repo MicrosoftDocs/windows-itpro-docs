@@ -41,8 +41,36 @@ The **Provision Windows mobile devices** wizard lets you configure common settin
 <table>
 <tr><td valign="top">![step one](images/one.png)![set up device](images/set-up-device-mobile.png)</br></br>Enter a device name.</br></br> Optionally, you can enter a product key to upgrade the device from Windows 10 Mobile to Windows 10 Mobile Enterprise. </td><td>![device name, upgrade license](images/set-up-device-details-mobile.png)</td></tr>
 <tr><td valign="top">![step two](images/two.png)  ![set up network](images/set-up-network-mobile.png)</br></br>Toggle **On** or **Off** for wireless network connectivity. </br></br>If you select **On**, enter the SSID, network type (**Open** or **WPA2-Personal**), and (if **WPA2-Personal**) the password for the wireless network.</td><td>![Enter network SSID and type](images/set-up-network-details-mobile.png)</td></tr>
-<tr><td valign="top">![step three](images/three.png)  ![bulk enrollment in Azure Active Directory](images/bulk-enroll-mobile.png)</br></br>You can enroll the device in Azure AD. </br></br>To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard. (Something about expiry) Click **Get bulk token** (then what?) <</td><td>IMAGE PENDING</td></tr>
+<tr><td valign="top">![step three](images/three.png)  ![bulk enrollment in Azure Active Directory](images/bulk-enroll-mobile.png)</br></br>Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, [set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup). The **maximum number of devices per user** setting in your Azure AD tenant determines how many times the bulk token that you get in the wizard can be used. </br></br> Set an expiration date for the token (maximum is 30 days from the date you get the token). Click **Get bulk token** (then what?)
+ <</td><td>![Enter expiration and get bulk token](images/bulk-enroll-mobile-details.png)</td></tr>
 <tr><td valign="top">![step four](images/four.png) ![finish](images/finish-mobile.png)</br></br>You can set a password to protect your provisioning package. You must enter this password when you apply the provisioning package to a device.</td><td>![Protect your package](images/finish-details-mobile.png)</td></tr>
 </table>
 
-### do something
+After you're done, click **Create**. It only takes a few seconds. When the package is built, the location where the package is stored is displayed as a hyperlink at the bottom of the page.
+
+### Apply provisioning package
+
+You can apply a provisioning package to a device running Windows 10 Mobile by using removable media or by copying the provisioning package to the device.
+
+### Using removable media
+
+1. Insert an SD card containing the provisioning package into the device.
+2. Navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. 
+
+    ![add a package option](images/packages-mobile.png)
+
+3. Click **Add**.
+
+4. On the device, the **Is this package from a source you trust?** message will appear. Tap **Yes, add it**.
+
+    ![Is this package from a source you trust](images/package-trust.png)
+    
+### Copying the provisioning package to the device
+
+1. Connect the device to your PC through USB.
+
+2. On the PC, select the provisioning package that you want to use to provision the device and then drag and drop the file to your device.
+
+3. On the device, the **Is this package from a source you trust?** message will appear. Tap **Yes, add it**.
+
+    ![Is this package from a source you trust](images/package-trust.png)
