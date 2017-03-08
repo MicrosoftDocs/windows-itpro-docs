@@ -52,29 +52,6 @@ Windows Defender SmartScreen helps to provide an early warning system against we
 Windows Defender SmartScreen checks the reputation of any web-based app the first time it's run from the Internet, checking digital signatures and other factors against a Microsoft-maintained service. If an app has no reputation or is known to be malicious, SmartScreen can warn the employee or block the app from running entirely, depending on how you've configured the feature to run in your organization.
 By default, your employees can bypass SmartScreen protection, letting them run legitimate apps after accepting a warning message prompt. You can also use Group Policy or Microsoft Intune to block employees from using unrecognized apps, or to entirely turn off Windows Defender SmartScreen (not recommended).
 
-### Use Windows Defender Security Center
-Starting with Windows 10, Version 1703 you can use Windows Defender Security Center to set up Windows Defender SmartScreen for an individual device, unless you've used Group Policy or Microsoft Intune to prevent it.
-
-![Windows Defender Security Center](images/windows-defender-security-center.png)
-
-In Windows Defender Security Center, go to the **App & Browser control** screen, and then click to **Block**, **Warn**, or turn **Off** Windows Defender SmartScreen for apps and files and for Microsoft Edge. 
-
-![Windows Defender Security Center, SmartScreen controls](images/windows-defender-smartscreen-control.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Windows Defender SmartScreen on Windows Mobile
 Windows Defender SmartScreen on Windows Mobile helps to provide anti-phishing protection. If SmartScreen detects malicious content on a site, it can block the site itself or in some cases just specific content on the page. Also available for Internet Explorer 11 on Windows Mobile, is the SmartScreen URL reputation filter, which blocks or warns your employees about suspicious or potentially malicious websites.
 
