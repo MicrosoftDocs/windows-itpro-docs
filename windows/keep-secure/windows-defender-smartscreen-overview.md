@@ -57,6 +57,10 @@ Starting with Windows 10, Version 1703 you can use Windows Defender Security Cen
 
 ![Windows Defender Security Center](images/windows-defender-security-center.png)
 
+In Windows Defender Security Center, go to the **App & Browser control** screen, and then click to **Block**, **Warn**, or turn **Off** Windows Defender SmartScreen for apps and files and for Microsoft Edge. 
+
+![Windows Defender Security Center, SmartScreen controls](images/windows-defender-smartscreen-control.png)
+
 
 
 
