@@ -98,17 +98,17 @@ Windows telemetry also helps Microsoft better understand how customers use (or d
 
 ### Insights into your own organization
 
-Sharing information with Microsoft helps make Windows and other products better, but it can also help make your internal processes and user experiences better, as well.  Microsoft is in the process of developing a set of analytics customized for your internal use.  The first of these, called [Windows 10 Upgrade Analytics](../deploy/manage-windows-upgrades-with-upgrade-analytics.md).
+Sharing information with Microsoft helps make Windows and other products better, but it can also help make your internal processes and user experiences better, as well.  Microsoft is in the process of developing a set of analytics customized for your internal use.  The first of these, called [Upgrade Readiness](../deploy/manage-windows-upgrades-with-upgrade-readiness.md).
 
-#### Windows 10 Upgrade Analytics
+#### Upgrade Readiness
 
 Upgrading to new operating system versions has traditionally been a challenging, complex, and slow process for many enterprises. Discovering applications and drivers and then testing them for potential compatibility issues have been among the biggest pain points. 
  
-To better help customers through this difficult process, Microsoft developed Upgrade Analytics to give enterprises the tools to plan and manage the upgrade process end to end and allowing them to adopt new Windows releases more quickly and on an ongoing basis. 
+To better help customers through this difficult process, Microsoft developed Upgrade Readiness to give enterprises the tools to plan and manage the upgrade process end to end and allowing them to adopt new Windows releases more quickly and on an ongoing basis. 
 
 With Windows telemetry enabled, Microsoft collects computer, application, and driver compatibility-related information for analysis. We then identify compatibility issues that can block your upgrade and suggest fixes when they are known to Microsoft. 
 
-Use Upgrade Analytics to get:
+Use Upgrade Readiness to get:
 
 - A visual workflow that guides you from pilot to production
 - Detailed computer, driver, and application inventory
@@ -118,7 +118,7 @@ Use Upgrade Analytics to get:
 - Application usage information, allowing targeted validation; workflow to track validation progress and decisions
 - Data export to commonly used software deployment tools 
 
-The Upgrade Analytics workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.
+The Upgrade Readiness workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.
 
 ## How is telemetry data handled by Microsoft?
 
@@ -179,7 +179,7 @@ The levels are cumulative and are illustrated in the following diagram. Also, th
 
 ### Security level
 
-The Security level gathers only the telemetry info that is required to keep Windows devices, Windows Server, and guests protected with the latest security updates. This level is only available on Windows Server 2016, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and Windos IoT Core editions.
+The Security level gathers only the telemetry info that is required to keep Windows devices, Windows Server, and guests protected with the latest security updates. This level is only available on Windows Server 2016, Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, and Windows IoT Core editions.
 
 > [!NOTE]  
 > If your organization relies on Windows Update for updates, you shouldn’t use the **Security** level. Because no Windows Update information is gathered at this level, important information about update failures is not sent. Microsoft uses this information to fix the causes of those failures and improve the quality of our updates.
