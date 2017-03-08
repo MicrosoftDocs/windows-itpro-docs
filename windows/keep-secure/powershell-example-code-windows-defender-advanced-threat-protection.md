@@ -26,88 +26,54 @@ localizationpriority: high
 This article provides PowerShell code examples for using the custom threat intelligence API.
 
 These code examples demonstrate the following tasks:
-- [Obtain an Azure AD access token](#obtain-an-azure-ad-access-token)
-- [Create headers](#create-headers)
-- [Create calls to the custom threat intelligence API](#create-calls-to-the-custom-threat-intelligence-api)
-- [Create a new alert definition](#create-a-new-alert-definition)
-- [Create a new indicator of compromise](#create-a-new-indicator-of-compromise)
+- [Obtain an Azure AD access token](#token)
+- [Create headers](#headers)
+- [Create calls to the custom threat intelligence API](#calls)
+- [Create a new alert definition](#alert-definition)
+- [Create a new indicator of compromise](#ioc)
 
-## Obtain an Azure AD access token
+<span id="token" />
+## Step 1: Obtain an Azure AD access token
 The following example demonstrates how to obtain an Azure AD access token that you can use to call methods in the custom threat intelligence API. After you obtain a token, you have 60 minutes to use this token in calls to the custom threat intelligence API before the token expires. After the token expires, you can generate a new token.
 
-Replace the *tenant\_id*, *client_id*, and *client_secret* values with the ones you got from **Preferences settings** page in the portal:
+Replace the *tenantid*, *clientid*, and *clientSecret* values with the ones you got from **Preferences settings** page in the portal:
 
-```
+[!code[CustomTIAPI](./code/example.ps1#L1-L14)]
 
-$tenantId = '{Your Tenant ID}
-$clientId = '{Your Client ID}'
-$clientSecret = '{Your Client Secret}'
+<span id="header" />
+## Step 2: Create headers used for the requests with the API
+Use the following code to create the headers used for the requests with the API:
 
-$authUrl = "https://login.windows.net/{0}/oauth2/token" -f $tenantId
+[!code[CustomTIAPI](./code/example.ps1#L16-L19)]
 
-$tokenPayload = @{
-    "resource"='https://graph.windows.net'
-    "client_id" = $clientId
-    "client_secret" = $clientSecret
-    "grant_type"='client_credentials'}
+<span id="calls" />
+## Step 3: Create calls to the custom threat intelligence API
+After creating the headers, you can now create calls to the API. The following example demonstrates how you can view all the alert definition entities:
 
-$response = Invoke-RestMethod $authUrl -Method Post -Body $tokenPayload
-$token = $response.access_token
+[!code[CustomTIAPI](./code/example.ps1#L21-L24)]
 
-```
+The response is empty on initial use of the API.
 
-## Create headers
-The following example demonstrates how to create headers used for the requests with the API.
+<span id="alert-definition" />
+## Step 4: Create a new alert definition
+The following example demonstrates how you to create a new alert definition.
 
-```
-$headers = @{}
-$headers.Add("Content-Type", "application/json")
-$headers.Add("Accept", "application/json")
-$headers.Add("Authorization", "Bearer {0}" -f $token)
+[!code[CustomTIAPI](./code/example.ps1#L26-L39)]
 
-```
+<span id="ioc" />
+## Step 5: Create a new indicator of compromise
+You can now use the alert ID obtained from creating a new alert definition to create a new indicator of compromise.
 
-## Create calls to the custom threat intelligence API
-The following example demonstrates how to view all alert definition entities by creating a call to the API.
+[!code[CustomTIAPI](./code/example.ps1#L43-L53)]
 
-```
-$apiBaseUrl = "https://ti.securitycenter.windows.com/V1.0/"
-$alertDefinitions =
-    (Invoke-RestMethod ("{0}AlertDefinitions" -f $apiBaseUrl) -Method Get -Headers $headers).value
-```
+## Complete code
+You can use the complete code to create calls to the API.
 
-If this is the first time to use the API, the response is empty.
+[!code[CustomTIAPI](./code/example.ps1#L1-L53)]
 
-## Create a new alert definition
-The following example shows how to create a new alert definition.
-
-```
-$alertDefinitionPayload = @{
-    "Name"= "The Alert's Name"
-    "Severity"= "Low"
-    "InternalDescription"= "An internal description of the Alert"
-    "Title"= "The Title"
-    "UxDescription"= "Description of the alerts"
-    "RecommendedAction"= "The alert's recommended action"
-    "Category"= "Trojan"
-    "Enabled"= "true"}
-
-
-$alertDefinition =
-    Invoke-RestMethod ("{0}AlertDefinitions" -f $apiBaseUrl) -Method Post -Headers $headers -Body ($alertDefinitionPayload | ConvertTo-Json)
-```
-
-## Create a new indicator of compromise
-The following example shows how to use the alert ID obtained from creating a new alert definition to create a new indicator of compromise.
-
-```
-$iocPayload = @{
-    "Type"="Sha1"
-    "Value"="dead1111eeaabbccddeeaabbccddee11ffffffff"
-    "DetectionFunction"="Equals"
-    "Enabled"="true"
-    "AlertDefinition@odata.bind"="AlertDefinitions({0})" -f $alertDefinitionId }
-
-
-$ioc = Invoke-RestMethod ("{0}IndicatorsOfCompromise" -f $apiBaseUrl) -Method Post -Headers $headers -Body ($iocPayload | ConvertTo-Json)
-```
+## Related topics
+- [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+- [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
+- [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
