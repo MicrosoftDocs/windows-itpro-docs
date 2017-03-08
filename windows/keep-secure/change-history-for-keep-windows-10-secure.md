@@ -13,11 +13,20 @@ author: brianlic-msft
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 
+## March 2017
+|New or changed topic |Description |
+|---------------------|------------|
+|[Protect derived domain credentials with Credential Guard](credential-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
+|[Requirements and deployment planning guidelines for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
+
+
 ## February 2017
 
 |New or changed topic |Description |
 |---------------------|------------|
 |[Overview of threat mitigations in Windows 10](overview-of-threat-mitigations-in-windows-10.md) | Reorganized from existing content, to provide a better overview of threat mitigations. Added information that maps the Enhanced Mitigation Experience Toolkit (EMET) to Windows 10 features. |
+
+
 
 ## January 2017
 |New or changed topic |Description |
