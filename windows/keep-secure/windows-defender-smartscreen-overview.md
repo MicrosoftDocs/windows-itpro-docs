@@ -55,9 +55,7 @@ By default, your employees can bypass SmartScreen protection, letting them run l
 ### Use Windows Defender Security Center
 Starting with Windows 10, Version 1703 you can use Windows Defender Security Center to set up Windows Defender SmartScreen for an individual device, unless you've used Group Policy or Microsoft Intune to prevent it.
 
- On an individual device, you (or a user with administrative credentials) can also use Windows Defender Security Center to configure SmartScreen, unless Microsoft Intune or Group Policy settings prevent this. Windows Defender Security Center is a new feature in Windows 10, version 1703 that allows users to control their security settings in one unified app.
-Depending on the settings you use, SmartScreen might prevent the user from continuing (“block”) or advise the user to use caution before continuing (“warn”) when it encounters an untrusted file or suspicious web page.
-Figure 1 shows Windows Defender Security Center, and Figure 2 shows the “App & browser control” inside Windows Defender Security Center.
+![Windows Defender Security Center](images/windows-defender-security-center.png)
 
 
 
