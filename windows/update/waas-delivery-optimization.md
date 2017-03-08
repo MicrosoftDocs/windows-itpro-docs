@@ -41,19 +41,29 @@ Several Delivery Optimization features are configurable:
 | --- | --- |
 | [Download mode](#download-mode) | DODownloadMode |
 | [Group ID](#group-id)  | DOGroupID |
+| [Minimum RAM (inclusive) allowed to use Peer Caching](#minimum-ram-allowed-to-use-peer-caching) | DOMinRAMAllowedToPeer |
+| [Minimum disk size allowed to use Peer Caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer |
 | [Max Cache Age](#max-cache-age) | DOMaxCacheAge |
 | [Max Cache Size](#max-cache-size)  | DOMaxCacheSize |
 | [Absolute Max Cache Size](#absolute-max-cache-size) | DOAbsoluteMaxCacheSize |
 | [Modify Cache Drive](#modify-cache-drive) | DOModifyCacheDrive |
+| [Minimum Peer Caching Content File Size](#minimum-peer-caching-content-file-size) | DOMinFileSizeToCache |
 | [Maximum Download Bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth |
 | [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth |
 | [Max Upload Bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth |
 | [Monthly Upload Data Cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap |
 | [Minimum Background QoS](#minimum-background-qos) | DOMinBackgroundQoS |
+| [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching |
+| [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 
 
 When configuring Delivery Optimization on Windows 10 devices, the first and most important thing to configure, would be [Download mode](#download-mode). Download mode dictates how Delivery Optimization downloads Windows updates.
 
 While every other feature setting is optional, they offer enhanced control of the Delivery Optimization behavior.
+
+>[!TIP]
+>TODO: DOMinBatteryPercentageAllowedToUpload, DOAllowVPNPeerCaching, DOMinFileSizeToCache, DOMinRAMAllowedToPeer, DOMinDiskSizeAllowedToPeer
+>
+>Add stories.
 
 [Group ID](#group-id), combined with Group [Download mode](#download-mode), enables administrators to create custom device groups that will share content between devices in the group.
 
@@ -99,8 +109,23 @@ Download mode dictates which download sources clients are allowed to use when do
 By default, peer sharing on clients using the group download mode is limited to the same domain in Windows 10, version 1511, and the same domain and AD DS site in Windows 10, version 1607. By using the Group ID setting, you can optionally create a custom group that contains devices that should participate in Delivery Optimization but do not fall within those domain or AD DS site boundaries, including devices in another domain. Using Group ID, you can further restrict the default group (for example create a sub-group representing an office building), or extend the group beyond the domain, allowing devices in multiple domains in your organization to peer. This setting requires the custom group to be specified as a GUID on each device that participates in the custom group. 
 
 >[!NOTE]
+>To generate a GUID using Powershell, use [```[guid]::NewGuid()```](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)
+>
 >This configuration is optional and not required for most implementations of Delivery Optimization.
-    
+
+<span id="minimum-ram-allowed-to-use-peer-caching"/>
+### Minimum RAM (inclusive) allowed to use Peer Caching  
+
+This setting specifies the minimum RAM size in GB required to use Peer Caching. The value 0 means not limited, which means the cloud service set default value will be used. For example if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching. The recommended values are 1 to 4 GB.  
+
+### Minimum disk size allowed to use Peer Caching
+
+This setting specifies the required minimum disk size (capacity in GB) for the device to use Peer Caching. The value 0 means not limited, which means the cloud service set default value will be used. The recommended values are 64 to 256 GB.
+
+>[!NOTE]
+>If the [Modify Cache Drive](#modify-cache-drive) policy is set, the disk size check will apply to the new working directory specified by this policy.
+
+
 ### Max Cache Age
 
 In environments configured for Delivery Optimization, you may want to set an expiration on cached updates and Windows application installation files. If so, this setting defines the maximum number of seconds each file can be held in the Delivery Optimization cache on each Windows 10 client computer. The default Max Cache Age value is 259,200 seconds (3 days). Alternatively, organizations may choose to set this value to “0” which means “unlimited” to avoid peers re-downloading content. When “Unlimited” value is set, Delivery Optimization will hold the files in the cache longer and will clean up the cache as needed (for example when the cache size exceeded the maximum space allowed).
@@ -112,6 +137,10 @@ This setting limits the maximum amount of space the Delivery Optimization cache 
 ### Absolute Max Cache Size
 
 This setting specifies the maximum number of gigabytes the Delivery Optimization cache can use. This is different from the **DOMaxCacheSize** setting, which is a percentage of available disk space. Also, if you configure this policy, it will override the **DOMaxCacheSize** setting. The default value for this setting is 10 GB.
+
+### Minimum Peer Caching Content File Size
+
+This setting specifies the minimum content file size in MB enabled to use Peer Caching. The value 0 means "unlimited" which means the cloud service set default value will be used. The recommended values are from 1 to 100000 MB. 
 
 ### Maximum Download Bandwidth
 
@@ -136,7 +165,17 @@ This setting allows for an alternate Delivery Optimization cache location on the
 ### Monthly Upload Data Cap
 
 This setting specifies the total amount of data in gigabytes that a Delivery Optimization client can upload to Internet peers per month. A value of 0 means that an unlimited amount of data can be uploaded. The default value for this setting is 20 GB.
-    
+
+### Enable Peer Caching while the device connects via VPN
+
+This setting determines whether a device will be allowed to participate in Peer Caching while connected to VPN. Specify "true" to allow the device to participate in Peer Caching while connected via VPN to the domain network. This means the device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
+
+### Allow uploads while the device is on battery while under set Battery level
+
+This setting specifies battery levels at which a device will be allowed to upload data. Specify any value between 1 and 100 (in percentage) to allow the device to upload data to LAN and Group peers while on DC power (Battery). Uploads will automatically pause when the battery level drops below the set minimum battery level. The recommended value to set if you allow uploads on battery is 40 (for 40%).
+The device can download from peers while on battery regardless of this policy.
+The value 0 means not limited, which means the cloud service set default value will be used.
+
 <span id="set-preferred-cache-devices"/>
 ## Set “preferred” cache devices for Delivery Optimization
 
