@@ -770,7 +770,6 @@
 ######## [Troubleshoot deep analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
 #### [Configure SIEM tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)
 ##### [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-##### [Configure an Azure Active Directory application for SIEM integration](configure-aad-windows-defender-advanced-threat-protection.md)
 ##### [Configure Splunk to consume Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
 ##### [Configure HP ArcSight to consume Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
 #### [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md)

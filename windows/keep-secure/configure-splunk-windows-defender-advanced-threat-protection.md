@@ -25,9 +25,10 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
 
 ## Before you begin
 
-- Install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/) in Splunk
-- Obtain your refresh token. For more information, see [Obtain a refresh token](configure-aad-windows-defender-advanced-threat-protection.md#obtain-a-refresh-token).
-- Get the following information from your Azure Active Directory (AAD) application by selecting the **View Endpoint** on the application configuration page:
+- Install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/) in Splunk.
+- Make sure you have enabled the SIEM integration feature from the **Preferences setup** menu. For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
+  - Have the refresh token that you generated from the SIEM integration feature ready.  
+  - Have the file you saved from enabling the SIEM integration feature ready. You'll need to get the following values:
     - OAuth 2 Token refresh URL
     - OAuth 2 Client ID
     - OAuth 2 Client secret
@@ -66,15 +67,15 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
   <td>oauth2</td>
   <tr>
   <td>OAuth 2 Token Refresh URL</td>
-  <td>	Value taken from AAD application</td>
+  <td>	Use the value from the file you saved from enabling the SIEM integration feature.</td>
   </tr>
   <tr>
   <td>OAuth 2 Client ID</td>
-  <td>Value taken from AAD application</td>
+  <td>Use the value from the file you saved from enabling the SIEM integration feature.</td>
   </tr>
   <tr>
   <td>OAuth 2 Client Secret</td>
-  <td>Value taken from AAD application</td>
+  <td>Use the value from the file you saved from enabling the SIEM integration feature.</td>
   </tr>
   <tr>
   <td>Response type</td>
