@@ -9,10 +9,6 @@ ms.prod: w10
 ---
 
 # Available Mobile Data Management (MDM) settings for App-V
-
-**Applies to**
--   Windows 10, Version 1703
-
 If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. You can see the full list of available policies, on the [Policy CSP]() page.
 
 <table>

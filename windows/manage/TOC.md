@@ -166,8 +166,8 @@
 ##### [How to Install the App-V Databases and Convert the Associated Security Identifiers  by Using Windows PowerShell](appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md)
 ### [Troubleshooting App-V](appv-troubleshooting.md)
 ### [Technical Reference for App-V](appv-technical-reference.md)
+#### [Available Mobile Data Management (MDM) settings for App-V](appv-available-mdm-settings.md)
 #### [Performance Guidance for Application Virtualization](appv-performance-guidance.md)
-
 #### [Application Publishing and Client Interaction](appv-application-publishing-and-client-interaction.md)
 #### [Viewing App-V Server Publishing Metadata](appv-viewing-appv-server-publishing-metadata.md)
 #### [Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications](appv-running-locally-installed-applications-inside-a-virtual-environment.md)
