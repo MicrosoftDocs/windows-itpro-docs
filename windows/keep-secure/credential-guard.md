@@ -46,6 +46,7 @@ For Credential Guard to provide protections, the computers you are protecting mu
 
 To provide basic protection against OS level attempts to read Credential Manager domain credentials, NTLM and Kerberos derived credentials, Credential Manager uses:
 - Support for Virtualization-based security (required)
+- Secure boot (required)
 - TPM 2.0 either discrete or firmware (preferred - provides binding to hardware)
 - UEFI lock (preferred - prevents attacker from disabling with a simple registry key change)
 
@@ -85,7 +86,7 @@ Computers that meet additional qualifications can provide additional protections
 The following tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017.
 
 > [!NOTE]  
-> Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new computers. <br>
+> Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new shipping computers. <br>
 > If you are an OEM, see [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).<br>
 
 #### Baseline protections
@@ -94,7 +95,7 @@ The following tables describe baseline protections, plus protections for improve
 |---------------------------------------------|----------------------------------------------------|
 | Hardware: **64-bit CPU**              | A 64-bit computer is required for the Windows hypervisor to provide VBS. |
 | Hardware: **CPU virtualization extensions**,<br>plus **extended page tables** | **Requirements**: These hardware features are required for VBS:<br>One of the following virtualization extensions:<br>• VT-x (Intel) or<br>• AMD-V<br>And:<br>• Extended page tables, also called Second Level Address Translation (SLAT).<br><br>**Security benefits**: VBS provides isolation of secure kernel from normal operating system. Vulnerabilities and Day 0s in normal operating system cannot be exploited because of this isolation. |
-| Hardware: **Trusted Platform Module (TPM)**  |  **Requirement**: TPM 1.2 or TPM 2.0, either discrete or firmware.<br><br>**Security benefits**: A TPM provides protection for VBS encryption keys that are stored in the firmware. This helps protect against attacks involving a physically present user with BIOS access. |
+| Hardware: **Trusted Platform Module (TPM)**  |  **Requirement**: TPM 1.2 or TPM 2.0, either discrete or firmware.<br>[TPM recommendations](https://technet.microsoft.com/itpro/windows/keep-secure/tpm-recommendations)<br><br>**Security benefits**: A TPM provides protection for VBS encryption keys that are stored in the firmware. This helps protect against attacks involving a physically present user with BIOS access. |
 | Firmware: **UEFI firmware version 2.3.1.c or higher with UEFI Secure Boot** | **Requirements**: See the following Windows Hardware Compatibility Program requirement: [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot)<br><br>**Security benefits**: UEFI Secure Boot helps ensure that the device boots only authorized code. This can prevent boot kits and root kits from installing and persisting across reboots.  |
 | Firmware: **Secure firmware update process**      | **Requirements**: UEFI firmware must support secure firmware update found under the following Windows Hardware Compatibility Program requirement: [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot).<br><br>**Security benefits**: UEFI firmware just like software can have security vulnerabilities that, when found, need to be patched through firmware updates. Patching helps prevent root kits from getting installed. |
 | Software: Qualified **Windows operating system**  | **Requirement**: Windows 10 Enterprise, Windows 10 Education, Windows Server 2016, or Windows 10 IoT Enterprise<br><blockquote><p><strong>Important:</strong><br> Windows Server 2016 running as a domain controller does not support Credential Guard. Only Device Guard is supported in this configuration.</p></blockquote><br>**Security benefits**: Support for VBS and for management features that simplify configuration of Credential Guard. |

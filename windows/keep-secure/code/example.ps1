@@ -24,7 +24,7 @@ $alertDefinitions =
     (Invoke-RestMethod ("{0}AlertDefinitions" -f $apiBaseUrl) -Method Get -Headers $headers).value
 
 $alertDefinitionPayload = @{
-    "Name"= "The Alert's Name"
+    "Name"= "The alert's name"
     "Severity"= "Low"
     "InternalDescription"= "An internal description of the Alert"
     "Title"= "The Title"
