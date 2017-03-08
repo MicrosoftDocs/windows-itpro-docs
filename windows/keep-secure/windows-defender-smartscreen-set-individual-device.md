@@ -31,8 +31,6 @@ Starting with Windows 10, Version 1703 you can use Windows Defender Security Cen
 ## Related topics
 - [Keep Windows 10 secure](https://technet.microsoft.com/itpro/windows/keep-secure/index)
 - [Security technologies in Windows 10](https://technet.microsoft.com/itpro/windows/keep-secure/security-technologies)
-- [Available policies for Microsoft Edge](https://technet.microsoft.com/itpro/microsoft-edge/available-policies)
-
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

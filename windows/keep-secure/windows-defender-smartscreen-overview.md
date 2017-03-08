@@ -46,7 +46,7 @@ Windows Defender SmartScreen helps to provide an early warning system against we
 
 - **Improved heuristics and telemetry.** Improvements to SmartScreen's heuristics and telemetry help to more quickly identify and warn your employees about malicious sites.
 
-- **Management through Group Policy and Microsoft Intune.** SmartScreen supports using both Group Policy and Microsoft Intune settings. For more info, see [Managing Windows Defender SmartScreen in Group Policy and Microsoft Intune](manage-windows-defender-smartscreen-using-group-policy-and-intune.md).
+- **Management through Group Policy and Microsoft Intune.** SmartScreen supports using both Group Policy and Microsoft Intune settings. For more info, see [Manage Windows Defender SmartScreen in Group Policy and Microsoft Intune](windows-defender-smartscreen-mgmt-using-group-policy-and-intune.md).
 
 ## How SmartScreen works when a user tries to run an app
 Windows Defender SmartScreen checks the reputation of any web-based app the first time it's run from the Internet, checking digital signatures and other factors against a Microsoft-maintained service. If an app has no reputation or is known to be malicious, SmartScreen can warn the employee or block the app from running entirely, depending on how you've configured the feature to run in your organization.
