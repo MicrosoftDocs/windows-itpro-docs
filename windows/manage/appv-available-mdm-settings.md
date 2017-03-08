@@ -13,22 +13,203 @@ ms.prod: w10
 **Applies to**
 -   Windows 10, Version 1703
 
-If you manage your policies using Intune, you'll want to use these MDM policy settings. You can see the full list of available policies, on the [Policy CSP]() page. <!--which versions of App-V are these supported on? Are they all the same? Are they all for 1703 (RS2)?-->
+If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. You can see the full list of available policies, on the [Policy CSP]() page.
 
-|Policy name|Supported versions|Details|
-|-------------|-------------------|-----------------|--------|
-|Name|Windows 10, Version 1703|<ul><li>**URI full path.** ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/*enterprise_id*/*package_family_name*/*package_full_name*/Name</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>**0.** Need info, not in DDF</li><li>**1 (default).** Need info, not in DDF.</li></ul></li></ul>|
-|Version|Windows 10, Version 1703|<ul><li>**URI full path.** ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/*enterprise_id*/*package_family_name*/*package_full_name*/Version</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>**0.** Need info, not in DDF</li><li>**1 (default).** Need info, not in DDF.</li></ul></li></ul>|
-|Publisher|Windows 10, Version 1703|<ul><li>**URI full path.** ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/*enterprise_id*/*package_family_name*/*package_full_name*/PUblisher</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>**0.** Need info, not in DDF</li><li>**1 (default).** Need info, not in DDF.</li></ul></li></ul>|
-|InstallLocation|Windows 10, Version 1703|<ul><li>**URI full path.** ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/*enterprise_id*/*package_family_name*/*package_full_name*/InstallLocation</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>**0.** Need info, not in DDF</li><li>**1 (default).** Need info, not in DDF.</li></ul></li></ul>|
-|InstallDate|Windows 10, Version 1703|<ul><li>**URI full path.** ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/*enterprise_id*/*package_family_name*/*package_full_name*/InstallDate</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>**0.** Need info, not in DDF</li><li>**1 (default).** Need info, not in DDF.</li></ul></li></ul>|
-|Users|Windows 10, Version 1703|<ul><li>**URI full path.** ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/*enterprise_id*/*package_family_name*/*package_full_name*/Users</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>**0.** Need info, not in DDF</li><li>**1 (default).** Need info, not in DDF.</li></ul></li></ul>|
-|AppVPackageID|Windows 10, Version 1703|<ul><li>**URI full path.** ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/*enterprise_id*/*package_family_name*/*package_full_name*/AppVPackageID</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>**0.** Need info, not in DDF</li><li>**1 (default).** Need info, not in DDF.</li></ul></li></ul>|
-|AppVVersionID|Windows 10, Version 1703|<ul><li>**URI full path.** ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/*enterprise_id*/*package_family_name*/*package_full_name*/AppVVersionID</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>**0.** Need info, not in DDF</li><li>**1 (default).** Need info, not in DDF.</li></ul></li></ul>|
-|AppVPackageUri|Windows 10, Version 1703|<ul><li>**URI full path.** ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/*enterprise_id*/*package_family_name*/*package_full_name*/AppVPackageUri</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>**0.** Need info, not in DDF</li><li>**1 (default).** Need info, not in DDF.</li></ul></li></ul>|
-|LastError|Windows 10, Version 1703|<ul><li>**URI full path.** ./Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/LastSync/LastError</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>**0.** Need info, not in DDF</li><li>**1 (default).** Need info, not in DDF.</li></ul></li></ul>|
-|LastErrorDescription|Windows 10, Version 1703|<ul><li>**URI full path.** ./Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/LastSync/LastErrorDescription</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>**0.** No errors returned during publish.</li><li>**1.** Unpublish groups failed during publish.</li><li>**2.** Publish no-group packages failed during publish.</li><li>**3.** Publish group packages failed during publish.</li><li>**4.** Unpublish packages failed during publish.</li><li>**5.** New policy write failed during publish.</li><li>**6.** Multiple non-fatal errors occurred during publish.</li></ul></li></ul>|
-|SyncStatusDescription|Windows 10, Version 1703|<ul><li>**URI full path.** ./Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/LastSync/SyncStatusDescription</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>**0.** App-V publishing is idle.</li><li>**1.** App-V connection groups publish in progress.</li><li>**2.** App-V packages (non-connection group) publish in progress.</li><li>**3.** App-V packages (connection group) publish in progress.</li><li>**4.** App-V packages unpublish in progress.</li></ul></li></ul>|
-|SyncProgress|Windows 10, Version 1703|<ul><li>**URI full path.** ./Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/LastSync/SyncProgress</li><li>**Data type.** String</li><li>**Allowed values:**<ul><li>**0.** App-V Sync is idle.</li><li>**1.** App-V Sync is initializing.</li><li>**2.** App-V Sync is in progress.</li><li>**3.** App-V Sync is complete.</li><li>**4.** App-V Sync requires device reboot.</li></ul></li></ul>|
-|PublishXML|Windows 10, Version 1703|<ul><li>**URI full path.** ./Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/Sync/PublishXML</li><li>**Data type.** Need info, not in DDF</li><li>**Allowed values:**<ul><li>**0.** Need info, not in DDF</li><li>**1 (default).** Need info, not in DDF.</li></ul></li></ul>|
-|Policy|Windows 10, Version 1703|<ul><li>**URI full path.** ./Vendor/MSFT/EnterpriseAppVManagement/AppVDynamicPolicy/_configurationid_/Policy</li><li>**Data type.** Need info, not in DDF</li><li>**Allowed values:**<ul><li>**0.** Need info, not in DDF</li><li>**1 (default).** Need info, not in DDF.</li></ul></li></ul>|
+<table>
+    <tr>
+        <th>Policy name</th>
+        <th>Supported versions</th>
+        <th>Details</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/Name</li>
+                <li><strong>Data type.</strong> String</li>
+                <li><strong>Value.</strong> Read-only data, provided by your App-V packages.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Version</td>
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/Version</li>
+                <li><strong>Data type.</strong> String</li>
+                <li><strong>Value.</strong> Read-only data, provided by your App-V packages.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Publisher</td>
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/Publisher</li>
+                <li><strong>Data type.</strong> String</li>
+                <li><strong>Value.</strong> Read-only data, provided by your App-V packages.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>InstallLocation</td>
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/InstallLocation</li>
+                <li><strong>Data type.</strong> String</li>
+                <li><strong>Value.</strong> Read-only data, provided by your App-V packages.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>InstallDate</td>
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/InstallDate</li>
+                <li><strong>Data type.</strong> String</li>
+                <li><strong>Value.</strong> Read-only data, provided by your App-V packages.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Users</td>
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/Users</li>
+                <li><strong>Data type.</strong> String</li>
+                <li><strong>Value.</strong> Read-only data, provided by your App-V packages.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>AppVPackageID</td>
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/AppVPackageID</li>
+                <li><strong>Data type.</strong> String</li>
+                <li><strong>Value.</strong> Read-only data, provided by your App-V packages.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>AppVVersionID</td>
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/AppVVersionID</li>
+                <li><strong>Data type.</strong> String</li>
+                <li><strong>Value.</strong> Read-only data, provided by your App-V packages.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>AppVPackageUri</td>
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/AppVPackageUri</li>
+                <li><strong>Data type.</strong> String</li>
+                <li><strong>Value.</strong> Read-only data, provided by your App-V packages.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>LastError</td>
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/LastSync/LastError</li>
+                <li><strong>Data type.</strong> String</li>
+                <li><strong>Value.</strong> Read-only data, provided by your App-V client.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>LastErrorDescription</td>
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/LastSync/LastErrorDescription</li>
+                <li><strong>Data type.</strong> String</li>
+                <li><strong>Values.</strong>
+                    <ul>
+                        <li><strong>0.</strong> No errors returned during publish.</li>
+                        <li><strong>1.</strong> Unpublish groups failed during publish.</li>
+                        <li><strong>2.</strong> Publish no-group packages failed during publish.</li>
+                        <li><strong>3.</strong> Publish group packages failed during publish.</li>
+                        <li><strong>4.</strong> Unpublish packages failed during publish.</li>
+                        <li><strong>5.</strong> New policy write failed during publish.</li>
+                        <li><strong>6.</strong> Multiple non-fatal errors occurred during publish.</li>
+                    </ul>
+                </li>
+            </ul>                                                                                                                     
+        </td>
+    </tr>
+    <tr>
+        <td>SyncStatusDescription</td>
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/LastSync/SyncStatusDescription</li>
+                <li><strong>Data type.</strong> String</li>
+                <li><strong>Values.</strong>
+                    <ul>
+                        <li><strong>0.</strong> App-V publishing is idle.</li>
+                        <li><strong>1.</strong> App-V connection groups publish in progress.</li>
+                        <li><strong>2.</strong> App-V packages (non-connection group) publish in progress.</li>
+                        <li><strong>3.</strong> App-V packages (connection group) publish in progress.</li>
+                        <li><strong>4.</strong> App-V packages unpublish in progress.</li>
+                    </ul>
+                </li>
+            </ul>                                                                                             
+        </td>
+    </tr>
+    <tr>
+        <td>SyncProgress</td>
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/LastSync/SyncProgress</li>
+                <li><strong>Data type.</strong> String</li>
+                <li><strong>Values.</strong>
+                    <ul>
+                        <li><strong>0.</strong> App-V Sync is idle.</li>
+                        <li><strong>1.</strong> App-V Sync is initializing.</li>
+                        <li><strong>2.</strong> App-V Sync is in progress.</li>
+                        <li><strong>3.</strong> App-V Sync is complete.</li>
+                        <li><strong>4.</strong> App-V Sync requires device reboot.</li>
+                    </ul>
+                </li>
+            </ul>                                                                                    
+        </td>
+    </tr>
+    <tr>
+        <td>PublishXML</td>
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/Sync/PublishXML</li>
+                <li><strong>Data type.</strong> String</li>
+                <li><strong>Value.</strong> Custom value, entered by admin.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Policy</td>
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVDynamicPolicy/configurationid/Policy</li>
+                <li><strong>Data type.</strong> String</li>
+                <li><strong>Value.</strong> Custom value, entered by admin.</li>
+            </ul>
+        </td>
+    </tr>
+</table>
