@@ -28,7 +28,7 @@ Configuring the HP ArcSight Connector tool requires several configuration files 
 
 This section guides you in getting the necessary information to set and use the required configuration files correctly.
 
-- Make sure you have enabled the SIEM integration feature from the **Preferences setup** menu. For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
+- Make sure you have enabled the SIEM integration feature from the **Preferences setup** menu. For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md).
 
 - Have the file you saved from enabling the SIEM integration feature ready. You'll need to get the following values:
   - OAuth 2.0 Token refresh URL
