@@ -24,7 +24,7 @@ author: CelesteDG
 <p><b>[Windows 10 editions for education customers](windows-editions-for-education-customers.md)</b><br />Windows 10, version 1607 introduces two editions designed for the unique needs of K-12 institutions: Windows 10 Pro Education and Windows 10 Education. These editions provide education-specific default settings for the evolving landscape in K-12 education IT environments.</p>
 <p><b>[Compare each Windows edition](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)</b><br />Find out more about the features and functionality we support in each edition of Windows.</p>
 <p><b>[Get Windows 10 Education or Windows 10 Pro Education](https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools)</b><br />When you've made your decision, find out how to buy Windows for your school.</p></div>
-<div class="side-by-side-content-right">
+/<div class="side-by-side-content-right">
 <p><b>How-to videos</b><br />
 <ul>
   <li><a href="https://technet.microsoft.com/en-us/windows/mt723345" target="_blank">Automate common Windows 10 deployment and configuration tasks</a></li>
@@ -58,7 +58,7 @@ author: CelesteDG
  <div class="side-by-side-content-right">
 <p><b><a href="https://technet.microsoft.com/en-us/windows/mt574244" target="_blank">Try it out: Windows 10 deployment (for education)</a></b><br />Learn how to upgrade devices running the Windows 7 operating system to Windows 10 Anniversary Update, and how to manage devices, apps, and users in Windows 10 Anniversary Update.<br /><br />For the best experience, use this guide in tandem with the <a href="https://vlabs.holsystems.com/vlabs/technet?eng=VLabs&auth=none&src=vlabs&altadd=true&labid=20949&lod=true" target="_blank">TechNet Virtual Lab: IT Pro Try-It-Out</a>.</p>
 </div>
-</div>
+ </div></div>
 
  ### ![Upgrade to Windows 10 for education](images/windows.png) Upgrade
 
@@ -67,7 +67,7 @@ author: CelesteDG
 
  <div class="side-by-side-content-right"><p></p>
  </div>
- </div>
+ </div></div>
 
 ## Windows 8.1
 Follow these links to find step-by-step guidance on how to deploy Windows 8.1 in an academic environment.
