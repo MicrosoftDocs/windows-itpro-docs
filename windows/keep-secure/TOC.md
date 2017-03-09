@@ -44,7 +44,7 @@
 ## [Windows Defender SmartScreen overview](windows-defender-smartscreen-overview.md)
 ### [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md)
 #### [Recommended Group Policy and mobile device management (MDM) settings for your organization](windows-defender-smartscreen-recommended-settings.md)
-### [Use Windows Defender Security Center to set Windows Defender SmartScreen for individual devices](windows-defender-smartscreen-set-individual-devices.md)
+### [Use Windows Defender Security Center to set Windows Defender SmartScreen for individual devices](windows-defender-smartscreen-set-individual-device.md)
 ## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-instrusion-detection.md)
 ## [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md)
 ## [VPN technical guide](vpn-guide.md)

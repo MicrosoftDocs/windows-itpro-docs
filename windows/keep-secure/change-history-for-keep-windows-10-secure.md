@@ -21,7 +21,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |[Windows Defender SmartScreen overview](windows-defender-smartscreen-overview.md)|New |
 |[Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md)|New |
 |[Recommended Group Policy and mobile device management (MDM) settings for your organization](windows-defender-smartscreen-recommended-settings.md)|New |
-|[Use Windows Defender Security Center to set Windows Defender SmartScreen for individual devices](windows-defender-smartscreen-set-individual-devices.md)|New |
+|[Use Windows Defender Security Center to set Windows Defender SmartScreen for individual devices](windows-defender-smartscreen-set-individual-device.md)|New |
 
 
 ## January 2017
