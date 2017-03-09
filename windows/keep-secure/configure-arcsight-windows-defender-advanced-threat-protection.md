@@ -28,30 +28,18 @@ Configuring the HP ArcSight Connector tool requires several configuration files 
 
 This section guides you in getting the necessary information to set and use the required configuration files correctly.
 
-1. Get the following information from your AAD application by selecting the **View Endpoint** on the application configuration page:
-    - OAuth 2.0 Token refresh URL
-    - OAuth 2.0 Client ID
-    - OAuth 2.0 Client secret
+- Make sure you have enabled the SIEM integration feature from the **Preferences setup** menu. For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 
-2. Download the [WDATP-connector.properties](http://download.microsoft.com/download/3/9/C/39C703C2-487C-4C3E-AFD8-14C2253C2F12/WDATP-connector.properties) file and update the following values:
+- Have the file you saved from enabling the SIEM integration feature ready. You'll need to get the following values:
+  - OAuth 2.0 Token refresh URL
+  - OAuth 2.0 Client ID
+  - OAuth 2.0 Client secret
 
-  - **client_ID**: OAuth 2 Client ID
-  - **client_secret**: OAuth 2 Client secret
-  - **auth_url**:  https://<span></span>login.microsoftonline.com/_tenantID_?resource=https%3A%2F%2FWDATPAlertExport.Seville.onmicrosoft.com
+- Have these two configuration files ready:
+  - WDATP-connector.properties
+  - WDATP-connector.jsonparser.properties
 
-    >!NOTE
-    >Replace *tenantID* with your tenant ID.
-
-  - **token_url**: https://<span></span>login.microsoftonline.com/_tenantID_/oauth2/token
-
-    >!NOTE
-    >Replace the *tenantID* value with your tenant ID.
-
-  - **redirect_uri**: https://<span></span>localhost:44300/wdatpconnector
-  - **scope**: Leave the value blank
-  - **reauthenticate**: Set to `true`
-
-3. Download the [WDATP-connector.jsonparser.properties](http://download.microsoft.com/download/0/8/A/08A4957D-0923-4353-B25F-395EAE363E8C/WDATP-connector.jsonparser.properties) file. This file is used to parse the information from Windows Defender ATP to HP ArcSight consumable format.
+    You would have saved the files when you chose HP ArcSight as the SIEM type you use in your organization.
 
 ## Install and configure HP ArcSight SmartConnector
 The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin).
@@ -104,7 +92,7 @@ The following steps assume that you have completed all the required steps in [Be
      <td>Browse to the location of the *wdatp-connector.properties* file.</td>
      <tr>
      <td>Refresh Token</td>
-     <td>Use the Windows Defender ATP events URL or the restutil tool to get obtain a refresh token. <br> For more information on getting your refresh token using the events URL, see [Obtain a refresh token](configure-aad-windows-defender-advanced-threat-protection.md#obtain-a-refresh-token). </br> </br>**Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to C:\\*folder_location*\current\bin where *folder_location* represents the location where you installed the tool. </br></br> b. Type: `arcsight restutil token -config` from the bin directory. A Web browser window will open. </br> </br>c. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> </br>d.	A refresh token is shown in the command prompt. </br></br> e. Copy and paste it into the **Refresh Token** field.
+     <td>You can obtain a refresh token in two ways: by generating a refresh token from the **SIEM integration preferences setup** page or using the restutil tool. <br><br> For more information on generating a refresh token from the **Preferences setup** , see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md). </br> </br>**Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to C:\\*folder_location*\current\bin where *folder_location* represents the location where you installed the tool. </br></br> b. Type: `arcsight restutil token -config` from the bin directory. A Web browser window will open. </br> </br>c. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> </br>d.	A refresh token is shown in the command prompt. </br></br> e. Copy and paste it into the **Refresh Token** field.
      </td>
      </tr>
      </tr>
@@ -112,9 +100,9 @@ The following steps assume that you have completed all the required steps in [Be
 7. A browser window is opened by the connector. Login with your application credentials. After you log in, you'll be asked to give permission to your OAuth2 Client. You must give permission to your OAuth 2 Client so that the connector configuration can authenticate. </br></br>
 If the `redirect_uri` is a https URL, you'll be redirected to a URL on the local host. You'll see a page that requests for you to trust the certificate supplied by the connector running on the local host. You'll need to trust this certificate if the redirect_uri is a https. </br></br> If however you specify a http URL for the redirect_uri, you do not need to provide consent in trusting the certificate.
 
-8. Continue with the connector setup by returning to the HP ArchSight Connector Setup window.
+8. Continue with the connector setup by returning to the HP ArcSight Connector Setup window.
 
-9. Select the **ArchSight Manager (encrypted)** as the destination and click **Next**.
+9. Select the **ArcSight Manager (encrypted)** as the destination and click **Next**.
 
 10. Type in the destination IP/hostname in **Manager Hostname** and your credentials in the parameters form. All other values in the form should be retained with the default values. Click **Next**.
 
@@ -185,5 +173,5 @@ Windows Defender ATP alerts will appear as discrete events, with "Microsoft” a
 
 ## Related topics
 - [Configure security information and events management (SIEM) tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)
-- [Configure Azure Active Directory application for SIEM integration](configure-aad-windows-defender-advanced-threat-protection.md)
+- [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 - [Configure Splunk to consume alerts](configure-splunk-windows-defender-advanced-threat-protection.md)

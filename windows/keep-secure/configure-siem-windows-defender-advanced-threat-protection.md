@@ -32,7 +32,7 @@ Windows Defender ATP currently supports the following SIEM tools:
 
 To use either of these supported SIEM tools you'll need to:
 
-- [Configure an Azure Active Directory application for SIEM integration in your tenant](configure-aad-windows-defender-advanced-threat-protection.md)
+- [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 - Configure the supported SIEM tool:
     - [Configure Splunk to consume alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
     - [Configure HP ArcSight to consume alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
@@ -46,6 +46,7 @@ For more information, see [Create custom threat indicators (TI) using REST API](
 
 Topic | Description
 :---|:---
-[Configure an Azure Active Directory application](configure-aad-windows-defender-advanced-threat-protection.md)| Learn about configuring an Azure Active Directory application to integrate with supported security information and events management (SIEM) tools.
+[Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)| Learn about enabling the SIEM integration feature in the **Preferences setup** page in the portal so that you can use and generate the required information to configure supported SIEM tools.
  [Configure Splunk](configure-splunk-windows-defender-advanced-threat-protection.md)| Learn about installing the REST API Modular Input app and other configuration settings to enable Splunk to consume Windows Defender ATP alerts.
  [Configure ArcSight](configure-arcsight-windows-defender-advanced-threat-protection.md)| Learn about installing the HP ArcSight REST FlexConnector package and the files you need to configure ArcSight to consume Windows Defender ATP alerts.
+ [Generic API] | Learn how to use a generic API to consume alerts from Windows Defender ATP. 

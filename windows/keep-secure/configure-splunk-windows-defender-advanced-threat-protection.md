@@ -27,11 +27,11 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
 
 - Install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/) in Splunk.
 - Make sure you have enabled the SIEM integration feature from the **Preferences setup** menu. For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-  - Have the refresh token that you generated from the SIEM integration feature ready.  
-  - Have the file you saved from enabling the SIEM integration feature ready. You'll need to get the following values:
-    - OAuth 2 Token refresh URL
-    - OAuth 2 Client ID
-    - OAuth 2 Client secret
+- Have the refresh token that you generated from the SIEM integration feature ready.  
+- Have the file you saved from enabling the SIEM integration feature ready. You'll need to get the following values:
+  - OAuth 2 Token refresh URL
+  - OAuth 2 Client ID
+  - OAuth 2 Client secret
 
 ## Configure Splunk
 
@@ -66,16 +66,24 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
   <td>Authentication Type</td>
   <td>oauth2</td>
   <tr>
+  <td>OAuth 2 Access token</td>
+  <td>Use the value that you generated when you enabled the SIEM integration feature. </br></br> NOTE: The access token expires after an hour. </td>
+  </tr>
+  <tr>
+  <td>OAuth 2 Refresh Token</td>
+  <td>Use the value that you generated when you enabled the SIEM integration feature.</td>
+  </tr>
+  <tr>
   <td>OAuth 2 Token Refresh URL</td>
-  <td>	Use the value from the file you saved from enabling the SIEM integration feature.</td>
+  <td>Use the value from the file you saved when you enabled the SIEM integration feature.</td>
   </tr>
   <tr>
   <td>OAuth 2 Client ID</td>
-  <td>Use the value from the file you saved from enabling the SIEM integration feature.</td>
+  <td>Use the value from the file you saved when you enabled the SIEM integration feature.</td>
   </tr>
   <tr>
   <td>OAuth 2 Client Secret</td>
-  <td>Use the value from the file you saved from enabling the SIEM integration feature.</td>
+  <td>Use the value from the file you saved when you enabled the SIEM integration feature.</td>
   </tr>
   <tr>
   <td>Response type</td>
@@ -102,11 +110,26 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
 
 After completing these configuration steps, you can go to the Splunk dashboard and run queries.
 
-You can use the following query as an example in Splunk: <br>
-```source="rest://windows atp alerts"|spath|table*```
+## View alerts using Splunk solution explorer
+Use the solution explorer to view alerts in Splunk.
+
+1. In Splunk, go to **Settings** > **Searchers, reports, and alerts**.
+
+2. Select **New**.
+
+3. Enter the following details:
+  - Destination app: Select Search & Reporting (search)
+  - Search name: Enter a name for the query
+  - Search: Enter a query, for example:</br>
+    `source="rest://windows atp alerts"|spath|table*`
+
+    Other values are optional and can be left with the default values.
+4. Click **Save**. The query is saved in the list of searches.
+
+5. Find the query you saved in the list and click **Run**. The results are displayed based on your query.
 
 
 ## Related topics
 - [Configure security information and events management (SIEM) tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)
-- [Configure Azure Active Directory application for SIEM integration](configure-aad-windows-defender-advanced-threat-protection.md)
+- [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 - [Configure HP ArcSight to consume alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
