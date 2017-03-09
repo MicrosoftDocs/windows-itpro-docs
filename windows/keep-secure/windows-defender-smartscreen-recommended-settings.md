@@ -18,7 +18,7 @@ localizationpriority: high
 
 By default, Windows Defender SmartScreen lets employees bypass warnings. Unfortunately, this can let employees continue to an unsafe site or to continue to download an unsafe file, even after being warned. Because of this possibility, we strongly recommend that you set up Windows Defender SmartScreen to block high-risk interactions instead of providing just a warning.
 
-To better help you protect your organization, we recommend using these Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings.
+To better help you protect your organization, we recommend turning on and using these specific Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings.
 
 >[!Note]
 >For a complete list of available Group Policy and MDM settings, see [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md) topic.
