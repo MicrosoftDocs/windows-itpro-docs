@@ -65,7 +65,7 @@ Clients that run Windows 10 version 1607 will not show details on the sign-in sc
 If the **Privacy** setting is turned on, details will show. 
 
 The **Privacy** setting cannot be changed for clients in bulk. 
-Instead, apply [KB 4013429](https://support.microsoft.com/help/4000825/windows-10-and-windows-server-2016-update-history) to clients that run Windows 10 version 1607 so they behave similarly to previous versions of Windows. 
+Instead, apply KB 4013429 to clients that run Windows 10 version 1607 so they behave similarly to previous versions of Windows. 
 
 There are related Group Policy settings:
 
@@ -81,7 +81,7 @@ If **Block user from showing account details on sign-in** is enabled, then only 
 Users will not be able to show details.
 
 If **Block user from showing account details on sign-in** is not enabled, then you can set **Interactive logon: Display user information when the session is locked** to **User display name, domain and user names** to show additional details such as domain\username. 
-In this case, clients that run Windows 10 version 1607 need [KB 4013429](https://support.microsoft.com/help/4000825/windows-10-and-windows-server-2016-update-history) applied. 
+In this case, clients that run Windows 10 version 1607 need KB 4013429 applied. 
 Users will not be able to hide additional details. 
 
 If **Block user from showing account details on sign-in** is not enabled and **Don’t display last signed-in** is enabled, the username will not be shown.
