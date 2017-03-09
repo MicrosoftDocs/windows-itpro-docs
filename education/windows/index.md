@@ -1,3 +1,4 @@
+
 ---
 title: Windows 10 for Education (Windows 10)
 description: Learn how to use Windows 10 in schools.
@@ -6,6 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
+localizationpriority: high
 author: CelesteDG
 ---
 
