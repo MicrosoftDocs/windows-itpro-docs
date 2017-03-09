@@ -9,20 +9,21 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Interactive logon: Don't display last signed-in
+# Interactive logon: Don't display username at sign-in
 
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values, and security considerations for the **Interactive logon: Don't display last signed-in** security policy setting. Before Windows 10 version 1703, this policy setting was named **Interactive logon:Do not display last user name.**
+Describes the best practices, location, values, and security considerations for the  **Interactive logon: Don't display username at sign-in** security policy setting. 
 
 ## Reference
 
-This security policy setting determines whether the name of the last user to log on to the device is displayed on the Secure Desktop.
+This security policy setting determines whether the username is displayed during sign-in. This policy setting is introduced in Windows 10 version 1703. The setting only affects the **Other user**tile.
 
-If this policy is enabled, the full name of the last user to successfully log on is not displayed on the Secure Desktop, nor is the user’s logon tile displayed. Additionally, if the **Switch user** feature is used, the full name and logon tile are not displayed. The logon screen r equests a qualified domain account name (or local user name) and password.
+If the policy is enabled and a user signs in as **Other user**, the full name of the user is not displayed during sign-in. In the same context, if users type their email address and password at the sign-in screen and press **Enter**, the displayed “Other user” text remains unchanged, and is no longer replaced by the user’s first and last name, as in previous versions of Windows 10. Additionally, if users enter their domain username and password and click **Submit**, their full name is not shown until the Start screen displays.
 
-If this policy is disabled, the full name of the last user to log on is displayed, and the user’s logon tile is displayed. This behavior is the same when the **Switch user** feature is used.
+If the policy is disabled and a user signs in as **Other user**, the “Other user” text is replaced by the user’s first and last name during sign-in.
+
 
 ### Possible values
 
@@ -42,16 +43,16 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 | Server type or Group Policy object (GPO) | Default value| 
 | - | - |
-| Default domain policy| Disabled| 
-| Default domain controller policy| Disabled| 
-| Stand-alone server default settings | Disabled| 
-| Domain controller effective default settings | Disabled| 
-| Member server effective default settings | Disabled| 
-| Effective GPO default settings on client computers | Disabled| 
+| Default domain policy| Not defined| 
+| Default domain controller policy| Not defined| 
+| Stand-alone server default settings | Not defined| 
+| Domain controller effective default settings | Not definedd| 
+| Member server effective default settings | Not defined| 
+| Effective GPO default settings on client computers | Not defined| 
  
 ## Policy management
 
-This section describes features and tools that are available to help you manage this policy.
+This section describes features and tools that are available to help you manage this policy.This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy is not contained in a distributed GPO, this policy can be configured on the local computer by using the Local Security Policy snap-in.
 
 ### Restart requirement
 
@@ -75,7 +76,7 @@ An attacker with access to the console (for example, someone with physical acces
 
 ### Countermeasure
 
-Enable the **Interactive logon: Do not display last user name** setting.
+Enable the **Interactive logon: Don't display username at sign-in** setting.
 
 ### Potential impact
 
