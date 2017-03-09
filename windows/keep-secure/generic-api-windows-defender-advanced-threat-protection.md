@@ -47,10 +47,11 @@ To access and manipulate a Windows Defender ATP resource, you can call and speci
 All generic API requests use the following basic URL pattern:
 
 ```
+
 ```
 
 For this URL:
-- 
+-
 
 
 
