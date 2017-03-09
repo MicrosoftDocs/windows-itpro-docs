@@ -24,7 +24,7 @@ Starting with Windows 10, Version 1703 you can use Windows Defender Security Cen
 
     ![Windows Defender Security Center](images/windows-defender-security-center.png)
 
-2. In the **App & browser control** screen, click **Block**, **Warn**, or turn **Off**
+2. In the **App & browser control** screen, click **Block**, **Warn**, or **Off** for apps and files, for protection while using Microsoft Edge, and for Windows Store apps.
 
     ![Windows Defender Security Center, SmartScreen controls](images/windows-defender-smartscreen-control.png)
 
