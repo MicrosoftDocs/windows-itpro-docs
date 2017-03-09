@@ -26,12 +26,14 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
 ## Before you begin
 
 - Install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/) in Splunk.
-- Make sure you have enabled the SIEM integration feature from the **Preferences setup** menu. For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- Have the refresh token that you generated from the SIEM integration feature ready.  
-- Have the file you saved from enabling the SIEM integration feature ready. You'll need to get the following values:
+- Make sure you have enabled the **SIEM integration** feature from the **Preferences setup** menu. For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
+
+- Have the details file you saved from enabling the **SIEM integration** feature ready. You'll need to get the following values:
   - OAuth 2 Token refresh URL
   - OAuth 2 Client ID
   - OAuth 2 Client secret
+
+- Have the refresh token that you generated from the SIEM integration feature ready.
 
 ## Configure Splunk
 
@@ -71,19 +73,19 @@ You'll need to configure Splunk so that it can consume Windows Defender ATP aler
   </tr>
   <tr>
   <td>OAuth 2 Refresh Token</td>
-  <td>Use the value that you generated when you enabled the SIEM integration feature.</td>
+  <td>Use the value that you generated when you enabled the **SIEM integration** feature.</td>
   </tr>
   <tr>
   <td>OAuth 2 Token Refresh URL</td>
-  <td>Use the value from the file you saved when you enabled the SIEM integration feature.</td>
+  <td>Use the value from the details file you saved when you enabled the **SIEM integration** feature.</td>
   </tr>
   <tr>
   <td>OAuth 2 Client ID</td>
-  <td>Use the value from the file you saved when you enabled the SIEM integration feature.</td>
+  <td>Use the value from the details file you saved when you enabled the **SIEM integration** feature.</td>
   </tr>
   <tr>
   <td>OAuth 2 Client Secret</td>
-  <td>Use the value from the file you saved when you enabled the SIEM integration feature.</td>
+  <td>Use the value from the details file you saved when you enabled the **SIEM integration** feature.</td>
   </tr>
   <tr>
   <td>Response type</td>

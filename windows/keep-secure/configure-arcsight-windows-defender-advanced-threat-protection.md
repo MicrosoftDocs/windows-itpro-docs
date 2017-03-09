@@ -35,11 +35,17 @@ This section guides you in getting the necessary information to set and use the 
   - OAuth 2.0 Client ID
   - OAuth 2.0 Client secret
 
-- Have these two configuration files ready:
+- Have the following configuration files ready:
   - WDATP-connector.properties
   - WDATP-connector.jsonparser.properties
 
-    You would have saved the files when you chose HP ArcSight as the SIEM type you use in your organization.
+    You would have saved a .zip file which contains these two files when you chose HP ArcSight as the SIEM type you use in your organization.
+
+- Make sure you generate the following tokens and have them ready:
+  - Access token
+  - Refresh token
+
+  You can generate these tokens from the **SIEM integration** setup section of the portal.
 
 ## Install and configure HP ArcSight SmartConnector
 The following steps assume that you have completed all the required steps in [Before you begin](#before-you-begin).
