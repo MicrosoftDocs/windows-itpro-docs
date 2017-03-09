@@ -58,7 +58,7 @@ author: CelesteDG
  <div class="side-by-side-content-right">
 <p><b><a href="https://technet.microsoft.com/en-us/windows/mt574244" target="_blank">Try it out: Windows 10 deployment (for education)</a></b><br />Learn how to upgrade devices running the Windows 7 operating system to Windows 10 Anniversary Update, and how to manage devices, apps, and users in Windows 10 Anniversary Update.<br /><br />For the best experience, use this guide in tandem with the <a href="https://vlabs.holsystems.com/vlabs/technet?eng=VLabs&auth=none&src=vlabs&altadd=true&labid=20949&lod=true" target="_blank">TechNet Virtual Lab: IT Pro Try-It-Out</a>.</p>
 </div>
-</div></div>
+</div>
 
  ### ![Upgrade to Windows 10 for education](images/windows.png) Upgrade
 
