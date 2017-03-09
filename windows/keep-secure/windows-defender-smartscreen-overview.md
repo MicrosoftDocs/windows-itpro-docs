@@ -10,7 +10,7 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Windows Defender SmartScreen overview
+# Windows Defender SmartScreen
 **Applies to:**
 
 - Windows 10
