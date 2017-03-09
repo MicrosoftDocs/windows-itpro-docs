@@ -23,7 +23,7 @@ localizationpriority: high
 
 Windows Defender ATP uses the OAuth 2.0 protocol with the Azure Active Directory (AAD) as the authorization server to obtain limited access, so that alerts can be consumed by supported security information and event management (SIEM) tools (such as Splunk and HP ArcSight) and generic APIs.
 
-In general, the OAuth 2.0 protocol supports four types of authentication flows:
+In general, the OAuth 2.0 protocol supports four types of flows:
 - Authorization code flow
 - Implicit flow
 - Client credentials flow
