@@ -20,6 +20,9 @@ By default, Windows Defender SmartScreen lets employees bypass warnings. Unfortu
 
 To better help you protect your organization, we recommend using these Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings.
 
+>[!Note]
+>For a complete list of available Group Policy and MDM settings, see [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md) topic.
+
 <table>
     <tr>
         <th>Group Policy setting</th>

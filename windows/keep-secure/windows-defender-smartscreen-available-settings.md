@@ -1,6 +1,6 @@
 ---
-title: Manage Windows Defender SmartScreen Filter in Group Policy and Microsoft Intune (Windows 10)
-description: Available setttings for Windows Defender SmartScreen Filter using Group Policy and Microsoft Intune.
+title: Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings (Windows 10)
+description: A list of all available setttings for Windows Defender SmartScreen using Group Policy and mobile device management (MDM) settings.
 keywords: SmartScreen Filter, Windows SmartScreen
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -10,7 +10,7 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Manage Windows Defender SmartScreen Filter in Group Policy and Microsoft Intune
+# Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings
 **Applies to:**
 
 - Windows 10
