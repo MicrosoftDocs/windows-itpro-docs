@@ -59,7 +59,7 @@ author: CelesteDG
 </div>
  </div></div>
 
- ### ![Upgrade to Windows 10 for education](images/windows.png) Upgrade
+### ![Upgrade to Windows 10 for education](images/windows.png) Upgrade
 
  <div class="side-by-side"> <div class="side-by-side-content">
  <div class="side-by-side-content-left"><p><b>[Upgrade Windows 10 Pro to Pro Education from Windows Store for Business](windows-10-pro-to-pro-edu-upgrade.md)</b><br />If you have an education tenant and use Windows 10 Pro in your schools now, find out how you can opt-in to a free upgrade to Windows 10 Pro Education.</p></div>
