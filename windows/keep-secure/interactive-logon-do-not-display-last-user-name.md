@@ -20,7 +20,7 @@ Describes the best practices, location, values, and security considerations for 
 
 This security policy setting determines whether the name of the last user to log on to the device is displayed on the Secure Desktop.
 
-If this policy is enabled, the full name of the last user to successfully log on is not displayed on the Secure Desktop, nor is the user’s logon tile displayed. Additionally, if the **Switch user** feature is used, the full name and logon tile are not displayed. The logon screen r equests a qualified domain account name (or local user name) and password.
+If this policy is enabled, the full name of the last user to successfully log on is not displayed on the Secure Desktop, nor is the user’s logon tile displayed. Additionally, if the **Switch user** feature is used, the full name and logon tile are not displayed. The logon screen requests a qualified domain account name (or local user name) and password.
 
 If this policy is disabled, the full name of the last user to log on is displayed, and the user’s logon tile is displayed. This behavior is the same when the **Switch user** feature is used.
 
