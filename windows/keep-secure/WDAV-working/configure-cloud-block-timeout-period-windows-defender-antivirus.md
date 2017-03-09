@@ -1,6 +1,6 @@
 ---
 title: Configure the cloud block timeout period
-description: You can configure how long Windows Defender Antivirus will block a file from running while waiting for a cloud determination
+description: You can configure how long Windows Defender Antivirus will block a file from running while waiting for a cloud determination.
 keywords: windows defender antivirus, antimalware, security, defender, cloud, timeout, block, period, seconds
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security

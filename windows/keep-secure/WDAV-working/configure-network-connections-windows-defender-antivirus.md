@@ -1,6 +1,6 @@
 ---
 title: Configure and test Windows Defender Antivirus network connections
-description: Configure and test your connection to the Windows Defender Antivirus cloud
+description: Configure and test your connection to the Windows Defender Antivirus cloud-delivered protection service.
 keywords: windows defender antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security

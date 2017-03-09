@@ -1,6 +1,6 @@
 ---
-title: Enable cloud-delivered antivirus protection in Windows Defender Antivirus (Windows 10)
-description: Enable cloud-delivered protection in Windows Defender Antivirus
+title: Enable cloud-delivered protection in Windows Defender Antivirus
+description: Enable cloud-delivered protection to benefit from fast and advanced protection features.
 keywords: windows defender antivirus, antimalware, security, defender, cloud, block at first sight
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
