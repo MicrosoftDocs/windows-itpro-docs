@@ -16,10 +16,13 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile
 
-You can use Group Policy or mobile device management (MDM) settings to set up and manage Windows Defender SmartScreen in your organization.
+Windows Defender SmartScreen works with Group Policy and mobile device management (MDM) settings to help you manage your organization's computer settings. 
 
->[!NOTE]
->To apply your Group Policy setting to all users of a computer, you should use the setting in the Computer Configuration policy. To apply your Group Policy setting to specific users, you should use the setting in the User Configuration policy.
+## Group Policy settings
+Group Policy objects (GPO's) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences. By using Group Policy and Intune, you can set up a policy setting once, and then copy that setting onto many computers. For example, you can set up multiple security settings in a GPO that's linked to a domain, and then apply all of those settings to every computer in the domain.
+
+>[!Note]
+>To apply your Group Policy setting to all users of a computer, you should use the setting in the Computer Configuration policy. To apply your Group Policy setting to specific users, you should use the setting in the User Configuration policy. For more info about Group Policy, see the [Group Policy TechCenter](https://go.microsoft.com/fwlink/p/?LinkId=214514). This site provides links to the latest technical documentation, videos, and downloads for Group Policy.
 
 <table>
     <tr>
@@ -58,7 +61,7 @@ You can use Group Policy or mobile device management (MDM) settings to set up an
         <td>This policy setting prevents the employee from managing SmartScreen Filter.<p>If you enable this policy setting, the employee isn't prompted to turn on SmartScreen Filter. All website addresses that are not on the filter's allow list are sent automatically to Microsoft without prompting the employee.<p>If you disable or don't configure this policy setting (default), the employee is prompted to decide whether to turn on SmartScreen Filter during the first-run experience.</td>
     </tr>
     <tr>
-        <td><td><strong>Administrative Templates\Windows Components\Internet Explorer\Prevent bypassing SmartScreen Filter warnings</td>
+        <td><strong>Administrative Templates\Windows Components\Internet Explorer\Prevent bypassing SmartScreen Filter warnings</td>
         <td>Windows 10</td>
         <td>This policy setting determines whether an employee can bypass warnings from SmartScreen Filter.<p>If you enable this policy setting, SmartScreen Filter warnings block the employee.<p>If you disable or don't configure this policy setting (default), the employee can bypass SmartScreen Filter warnings.</td>
     </tr>
@@ -69,16 +72,88 @@ You can use Group Policy or mobile device management (MDM) settings to set up an
     </tr>
 </table>
 
+## MDM settings
+If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. You can see the full list of available policies, on the [Policy CSP]() page. All settings support both desktop computers (running Windows 10 Pro or Windows 10 Enterprise, enrolled with Microsoft Intune) and Windows 10 Mobile devices.
 
-
-
-
-
-
- 
-
-
-
+<table>
+    <tr>
+        <th>Setting</th>
+        <th>Supported versions</th>
+        <th>Details</th>
+    </tr>
+    <tr>
+        <td>AllowSmartScreen</td>        
+        <td>Windows 10</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen</li>
+                <li><strong>Data type.</strong> Integer</li>
+                <li><strong>Allowed values:</strong><ul>
+                        <li><strong>0 (default).</strong> Turns off Windows Defender SmartScreen.</li>
+                        <li><strong>1.</strong> Turns on Windows Defender SmartScreen.</li></ul></li></ul>
+        </td>
+    </tr>    
+    <tr>
+        <td>EnableAppInstallControl</td>        
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/SmartScreen/EnableAppInstallControl</li>
+                <li><strong>Data type.</strong> Integer</li>
+                <li><strong>Allowed values:</strong><ul>
+                        <li><strong>0 (default).</strong> Turns off Application Installation Control, allowing users to download and install files from anywhere on the web.</li>
+                        <li><strong>1.</strong> Turns on Application Installation Control, allowing users to install apps from the Windows Store only.</li></ul></li></ul>
+        </td>
+    </tr>    
+    <tr>
+        <td>EnableSmartScreenInShell</td>        
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/SmartScreen/EnableSmartScreenInShell</li>
+                <li><strong>Data type.</strong> Integer</li>
+                <li><strong>Allowed values:</strong><ul>
+                        <li><strong>0 (default).</strong> Turns off SmartScreen in Windows.</li>
+                        <li><strong>1.</strong> Turns on SmartScreen in Windows.</li></ul></li></ul>
+        </td>
+    </tr>
+    <tr>
+        <td>PreventOverrideForFilesInShell</td>        
+        <td>Windows 10, Version 1703</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/SmartScreen/PreventOverrideForFilesInShell</li>
+                <li><strong>Data type.</strong> Integer</li>
+                <li><strong>Allowed values:</strong><ul>
+                        <li><strong>0 (default).</strong> Employees can ignore SmartScreen warnings and run malicious files.</li>
+                        <li><strong>1.</strong> Employees can't ignore SmartScreen warnings and run malicious files.</li></ul></li></ul>
+        </td>
+    </tr>    
+    <tr>
+        <td>PreventSmartScreenPromptOverride</td>        
+        <td>Windows 10, Version 1511 and later</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/Browser/PreventSmartscreenPromptOverride</li>
+                <li><strong>Data type.</strong> Integer</li>
+                <li><strong>Allowed values:</strong><ul>
+                        <li><strong>0 (default).</strong> Employees can ignore SmartScreen warnings.</li>
+                        <li><strong>1.</strong> Employees can't ignore SmartScreen warnings.</li></ul></li></ul>
+        </td>
+    </tr>
+    <tr>
+        <td>PreventSmartScreenPromptOverrideForFiles</td>        
+        <td>Windows 10, Version 1511 and later</td>
+        <td>
+            <ul>
+                <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/Browser/PreventSmartScreenPromptOverrideForFiles</li>
+                <li><strong>Data type.</strong> Integer</li>
+                <li><strong>Allowed values:</strong><ul>
+                        <li><strong>0 (default).</strong> Employees can ignore SmartScreen warnings for files.</li>
+                        <li><strong>1.</strong> Employees can't ignore SmartScreen warnings for files.</li></ul></li></ul>
+        </td>
+    </tr>
+<table>                        
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
