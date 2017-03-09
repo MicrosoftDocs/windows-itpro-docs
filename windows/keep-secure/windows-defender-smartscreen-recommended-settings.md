@@ -1,6 +1,6 @@
 ---
-title: Recommended settings using Windows Defender SmartScreen in your organization (Windows 10)
-description: A list of the Windows Defender SmartScreen settings we recommend using within your organization.
+title: Recommended Group Policy and mobile device management (MDM) settings for Windows Defender SmartScreen in your organization (Windows 10)
+description: A list of the specific Windows Defender SmartScreen settings we recommend using within your organization.
 keywords: SmartScreen Filter, Windows SmartScreen
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -10,7 +10,7 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Recommended settings using Windows Defender SmartScreen in your organization
+# Recommended Group Policy and mobile device management (MDM) settings for Windows Defender SmartScreen in your organization
 
 **Applies to:**
 - Windows 10, Version 1703
