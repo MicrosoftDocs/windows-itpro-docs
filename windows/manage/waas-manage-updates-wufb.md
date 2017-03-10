@@ -106,7 +106,7 @@ Windows Update for Business was first made available in Windows 10, version 1511
 
 ## Monitor Windows Updates using Update Compliance
 
-In order to be able to track Windows updates deployed by Windows Update for Business, and make sure that all your machines are up to date, you can levergae Update Compliance.
+In order to track Windows updates deployed by Windows Update for Business, and make sure that all your machines are up to date, you can levergae Update Compliance.
 
 Update Compliance is a solution built within Operations Management Suite (OMS), a cloud-based monitoring and automation service which has a flexible servicing subscription based off data usage/retention. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
 
