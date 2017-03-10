@@ -61,7 +61,7 @@ For OS updates that support Express, there are two versions of the file payload 
 1. **Full-file version** - essentially replacing the local versions of the update binaries.
 2. **Express version** - containing the deltas needed to patch the existing binaries on the device.
 
-Both the full-file version and the Express version are referenced in the udpate's metadata, which has been downloaded to the client as part of the scan phase.
+Both the full-file version and the Express version are referenced in the update's metadata, which has been downloaded to the client as part of the scan phase.
 
 **Express download works as follows:**
 
