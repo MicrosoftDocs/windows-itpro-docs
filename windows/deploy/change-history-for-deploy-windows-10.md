@@ -11,6 +11,11 @@ author: greg-lindsay
 # Change history for Deploy Windows 10
 This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## March 2017
+| New or changed topic | Description |
+|----------------------|-------------|
+| [Convert MBR partition to GPT](mbr-to-gpt.md) | New | 
+
 ## February 2017
 | New or changed topic | Description |
 |----------------------|-------------|
