@@ -73,7 +73,7 @@ Group Policy objects (GPO's) can include registry-based Administrative Template 
 </table>
 
 ## MDM settings
-If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. You can see the full list of available policies, on the [Policy CSP]() page. All settings support both desktop computers (running Windows 10 Pro or Windows 10 Enterprise, enrolled with Microsoft Intune) and Windows 10 Mobile devices.
+If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. You can see the full list of available policies, on the [EnterpriseAppVManagement CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp) page. All settings support both desktop computers (running Windows 10 Pro or Windows 10 Enterprise, enrolled with Microsoft Intune) and Windows 10 Mobile devices.
 
 <table>
     <tr>
