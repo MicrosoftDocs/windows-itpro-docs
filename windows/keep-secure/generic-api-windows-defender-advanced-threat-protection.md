@@ -100,6 +100,60 @@ All alert API requests use the following basic URL pattern:
 - For EU: `https://wdatp-alertexporter-eu.windows.com/api/alerts`
 - For US: `https://wdatp-alertexporter-us.windows.com/api/alerts`
 
+## Windows Defender ATP methods
+
+### Parameters
+The Windows Defender ATP generic API provides several optional query parameters that you can use to specify and control the amount of data returned in a response. The generic API supports the following query options:
+
+Name | Value| Description
+:---|:---|:---
+DateTime?sinceTimeUtc | string | Defines the time alerts are retrieved from based from `LastProccesedTimeUtc` time to current time. </br> NOTE: When not specified, all alerts generated in the last two hours are retrieved.
+int?limit | int | Defines the number of alerts to be retrieved. Most recent alerts will be retrieved based on the number defined.</br> NOTE: When not specified, all alerts available in the time range will be retrieved.
+
+Here is an example call with a limit of last 20 alerts since 2016-09-12 00:00:00:
+
+`https://wdatp-alertexporter-eu.windows.com/api/alerts?limit=20&sinceTimeUtc="2016-09-12 00:00:00"`
+
+### Return value
+The return value is an array of alert objects in JSON format.
+
+Here is an example return value:
+
+```
+{"AlertTime":"2017-01-23T07:32:54.1861171Z",
+"ComputerDnsName":"desktop-bvccckk",
+"AlertTitle":"Suspicious PowerShell commandline",
+"Category":"SuspiciousActivity",
+"Severity":"Medium",
+"AlertId":"636207535742330111_-1114309685",
+"Actor":null,
+"LinkToWDATP":"https://securitycenter.windows.com/alert/636207535742330111_-1114309685",
+"IocName":null,
+"IocValue":null,
+"CreatorIocName":null,
+"CreatorIocValue":null,
+"Sha1":"69484ca722b4285a234896a2e31707cbedc59ef9",
+"FileName":"powershell.exe",
+"FilePath":"C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0",
+"IpAddress":null,
+"Url":null,
+"IoaDefinitiondId":"7f1c3609-a3ff-40e2-995b-c01770161d68",
+"UserName":null,
+"AlertPart":0,
+"FullId":"636207535742330111_-1114309685:9DE735BA9FF87725E392C6DFBEB2AF279035CDE229FCC00D28C0F3242C5A50AF",
+"LastProcessedTimeUtc":"2017-01-23T11:33:45.0760449Z",
+"ThreatCategory":null,
+"ThreatFamily":null,
+"ThreatName":null,
+"RemediationAction":null,
+"RemediationIsSuccess":null,
+"Source":"Windows Defender ATP",
+"Md5":null,
+"Sha256":null,
+"WasExecutingWhileDetected":null,
+"FileHash":"69484ca722b4285a234896a2e31707cbedc59ef9",
+"IocUniqueId":"9DE735BA9FF87725E392C6DFBEB2AF279035CDE229FCC00D28C0F3242C5A50AF"}
+```
 
 ## Code examples
 ### Get access token
