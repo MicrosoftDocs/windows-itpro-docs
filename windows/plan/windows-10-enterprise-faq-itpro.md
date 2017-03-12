@@ -1,7 +1,7 @@
 ---
 title: Windows 10 Enterprise FAQ for IT pros (Windows 10)
-description: Windows 10 will be compatible with most existing PC hardware; most devices running Windows 7, Windows 8, or Windows 8.1 will meet the requirements for Windows 10.
-keywords: deploy, upgrade, update, appcompat
+description: Get answers to common questions around compatibility, installation, and support for Windows 10 Enterprise.
+keywords: Windows 10 Enterprise, download, system requirements, drivers, appcompat, manage udpates, Windows as a service, servicing branches, deployment tools
 ms.prod: w10
 ms.mktglfcycl: plan
 localizationpriority: high
