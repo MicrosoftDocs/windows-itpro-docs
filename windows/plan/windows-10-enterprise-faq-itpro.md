@@ -25,10 +25,7 @@ For details, see [Windows 10 Enterprise system requirements](https://technet.mic
 
 ### What are the hardware requirements for Windows 10?
 
-Most computers that are compatible with Windows 8.1 will be compatible with Windows 10. You may need to install updated drivers in Windows 10 for your devices to properly function. See [Windows 10 specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications) for more information.
-
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+Most computers that are compatible with Windows 8.1 will be compatible with Windows 10. You may need to install updated drivers in Windows 10 for your devices to properly function. See [Windows 10 specifications](https://www.microsoft.com/windows/windows-10-specifications) for more information.
 
 ### Can I evaluate Windows 10 Enterprise?
 
@@ -48,7 +45,7 @@ For many devices, drivers will be automatically installed in Windows 10 and ther
 
 ### Where can I find out if an application or device is compatible with Windows 10?
 
-Many existing Win32 and Win64 applications already run reliably on Windows 10 without any changes. You can also expect strong compatibility and support for Web apps and devices. The [Ready for Windows](https://www.readyforwindows.com/) website lists software solutions that are supported and in use for Windows 10. You can find additional guidance to help with application compatibility on the [Windows 10 IT Center](https://technet.microsoft.com/windows/mt703793).
+Many existing Win32 and Win64 applications already run reliably on Windows 10 without any changes. You can also expect strong compatibility and support for Web apps and devices. The [Ready for Windows](https://www.readyforwindows.com/) website lists software solutions that are supported and in use for Windows 10. You can find additional guidance to help with application compatibility at [Windows 10 application compatibility](https://technet.microsoft.com/windows/mt703793) on the Windows IT Center.
 
 ### Is there an easy way to assess if my organization’s devices are ready to upgrade to Windows 10?
 
