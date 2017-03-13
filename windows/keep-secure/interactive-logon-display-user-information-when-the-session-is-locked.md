@@ -17,9 +17,9 @@ author: brianlic-msft
 Describes the best practices, location, values, and security considerations for the **Interactive logon: Display user information when the session is locked** security policy setting.
 
 ## Reference
-This setting controls whether details such as email address or domain\username appear with the username on the sign-in screen. 
+This security setting controls whether details such as email address or domain\username appear with the username on the sign-in screen. 
 For clients that run Windows 10 version 1511 and 1507 (RTM), this setting works similarly to previous versions of Windows. 
-Due to a new **Privacy** setting in Windows 10 version 1607, this setting affects those clients differently. 
+However, because of a new **Privacy** setting introduced in Windows 10 version 1607, this security setting affects those clients differently. 
 
 ### Changes in Windows 10 version 1607
 
@@ -36,7 +36,7 @@ This setting has these possible values:
 -   **User display name, domain and user names**
 
     For a local logon, the user's full name is displayed. 
-    If the user signed in using a Microsoft Account, the user's email address is displayed. 
+    If the user signed in using a Microsoft account, the user's email address is displayed. 
     For a domain logon, the domain\username is displayed. 
     This has the same effect as turning on the **Privacy** setting. 
 
@@ -51,7 +51,7 @@ This setting has these possible values:
     Beginning with Windows 10 version 1607, this option is not supported. 
     If this option is chosen, the full name of the user who locked the session is displayed instead. 
     This change makes this setting consistent with the functionality of the new **Privacy** setting. 
-    To have no user information displayed, enable the Group Policy setting **Interactive logon: Don't display last signed-in**.
+    To display no user information, enable the Group Policy setting **Interactive logon: Don't display last signed-in**.
 
 -   Blank.
 
@@ -71,7 +71,7 @@ There are related Group Policy settings:
 
 - **Computer Configuration\Policies\Administrative Templates\System\Logon\Block user from showing account details on sign-in** prevents users from showing account details on the sign-in screen. 
 - **Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Don’t display last signed-in** prevents the username of the last user to sign in from being shown.
-- **Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Don’t display user name at sign in** prevents the username from being shown at Windows sign-in and immediately after credentials are entered and before the desktop appears. 
+- **Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Don’t display username at sign-in** prevents the username from being shown at Windows sign-in and immediately after credentials are entered and before the desktop appears. 
 
 ### Interaction with related Group Policy settings
 
