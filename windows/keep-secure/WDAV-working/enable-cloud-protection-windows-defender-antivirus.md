@@ -35,6 +35,8 @@ You can enable or disable cloud-delivered protection with System Center Configur
 
 See  [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for an overview of Windows Defender Antivirus cloud-based protection.
 
+There are specific network-connectivity requirements to ensure your endpoints can connect to the cloud-based protection service. See [Configure and validate network connections for cloud-based protection](configure-network-connections-windows-defender-antivirus.md) for more details.
+
 >[!NOTE]
 >In Windows 10, there is no difference between the **Basic** and **Advanced** options described in this topic. This is a legacy distinction and choosing either setting will result in the same level of cloud-based protection. There is no difference in the type or amount of information that is shared. See the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839) for more information on what we collect.
 
