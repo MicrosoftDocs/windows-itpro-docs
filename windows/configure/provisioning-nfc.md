@@ -17,7 +17,7 @@ localizationpriority: high
 
 Near field communication (NFC) enables Windows 10 Mobile Enterprise and Windows 10 Mobile devices to communicate with an NFC tag or another NFC-enabled transmitting device. Enterprises that do bulk provisioning can use NFC-based device provisioning to provide a provisioning package to the device that's being provisioned. NFC provisioning is simple and convenient and it can easily store an entire provisioning package. 
 
-The NFC provisioning option enables the administrator to provide a provisioning package during initial device setup or the out-of-box experience (OOBE) phase. Administrators can use the NFC provisioning option to transfer provisioning information to persistent storage by tapping an unprovisioned mobile device to an NFC tag or NFC-enabled device. To use NFC for pre-provisioning a device, you must either prepare your own NFC tags by storing your provisioning package to a tag as described in this section, or build the infrastructure needed to transmit a provisioning package between an NFC-enabled device and a mobile device during OOBE.
+The NFC provisioning option enables the administrator to provide a provisioning package during initial device setup (the out-of-box experience or OOBE phase). Administrators can use the NFC provisioning option to transfer provisioning information to persistent storage by tapping an unprovisioned mobile device to an NFC tag or NFC-enabled device. To use NFC for pre-provisioning a device, you must either prepare your own NFC tags by storing your provisioning package to a tag as described in this section, or build the infrastructure needed to transmit a provisioning package between an NFC-enabled device and a mobile device during OOBE.
 
 ## Provisioning OOBE UI
 
@@ -131,7 +131,9 @@ For detailed information and code samples on how to implement an NFC-enabled dev
 
 ## Related topics
 
+- [Use Windows Configuration Designer to configure Windows 10 Mobile devices](provisioning-configure-mobile.md)
 
+- [Barcode provisioning and the package splitter tool](provisioning-package-splitter.md)
  
 
  

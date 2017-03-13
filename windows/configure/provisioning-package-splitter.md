@@ -1,5 +1,5 @@
 ---
-title: Use the package splitter tool (Windows 10)
+title: Barcode provisioning and the package splitter tool (Windows 10)
 description: 
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -8,25 +8,29 @@ author: jdeckerMS
 localizationpriority: high
 ---
 
-# Use the package splitter tool
+# Barcode provisioning and  the package splitter tool
 
 
 **Applies to**
 
 - Windows 10 Mobile
 
-Enterprise IT professionals who want to use a barcode to provision mobile devices during OOBE can use the package splitter tool, ppkgtobase64.exe, which is a command-line tool to split the provisioning package into smaller files.
+Enterprises that do bulk provisioning can use barcode-based device provisioning to provide a provisioning package to the device that's being provisioned. 
+
+The barcode provisioning option enables the administrator to provide a provisioning package during initial device setup (the out-of-box experience or OOBE phase). To use barcodes to provision a device, your devices must have an integrated barcode scanner. You can get the barcode format that the scanner supports from your OEM or device provider, and use your existing tools and processes to convert a provisioning package into barcodes.
+
+Enterprise IT professionals who want to use a barcode to provision mobile devices during OOBE can use the package splitter tool, **ppkgtobase64.exe**, which is a command-line tool to split the provisioning package into smaller files.
 
 The smallest provisioning package is typically 5-6 KB, which cannot fit into one single barcode. The package splitter tool allows partners to split the original provisioning package into multiple smaller sized chunks that are encoded with Base64 so that enterprises can leverage their existing tools to convert these files into barcodes.
 
-Ppkgtobase64.exe is automatically installed when you install Windows Configuration Designer.
+When you [install Windows Configuration Designer](provisioning-install-icd.md), **ppkgtobase64.exe** is installed to the same folder.
 
 ## Prerequisites
 
 Before you can use the tool, you must have a built provisioning package. The package file is the input to the package splitter tool.
 
-- To build a provisioning package using the Windows Configuration Designer UI, see Build and apply a provisioning package. 
-- To build a provisioning package using the Windows Configuration Designer CLI, see Use the Windows ICD command-line interface.
+- To build a provisioning package using the Windows Configuration Designer UI, see [Use Windows Configuration Designer to configure Windows 10 Mobile devices](provisioning-configure-mobile.md). 
+- To build a provisioning package using the Windows Configuration Designer CLI, see [Windows Configuration Designer command-line interface](provisioning-command-line.md).
 
 ## To use the package splitter tool (ppkgtobase64.exe)
 
@@ -48,7 +52,7 @@ Before you can use the tool, you must have a built provisioning package. The pac
     cd C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86
     ```
 
-3. Run the tool by calling "ppkgtobase64.exe". See the next section in this topic for more information.
+3. Run `ppkgtobase64.exe`. The [syntax](#syntax) and [switches and arguments](#switches-and-arguments) sections provide details for the command.
 
 
 ### Syntax

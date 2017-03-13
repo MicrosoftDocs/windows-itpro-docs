@@ -11,7 +11,7 @@
 ### [Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
 ### [Use Windows Configuration Designer to configure Windows 10 Mobile devices](provisioning-configure-mobile.md)
 #### [NFC-based device provisioning](provisioning-nfc.md)
-#### [Use the package splitter tool](provisioning-package-splitter.md)
+#### [Barcode provisioning and the package splitter tool](provisioning-package-splitter.md)
 ### [Use the Lockdown Designer app to configure Windows 10 Mobile devices](mobile-lockdown-designer.md)
 ### [Configure Windows 10 Mobile using Lockdown XML](lockdown-xml.md)
 ### [Settings and quick actions that can be locked down in Windows 10 Mobile](settings-that-can-be-locked-down.md)
