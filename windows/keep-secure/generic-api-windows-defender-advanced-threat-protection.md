@@ -1,7 +1,7 @@
 ---
-title: Use the generic API to consume Windows Defender ATP alerts
-description: Use the generic API to consume alerts from the Windows Defender ATP portal.
-keywords: generic api, alerts, client credentials flow, oauth 2
+title: Get Windows Defender ATP alerts using REST API
+description: Get alerts from the Windows Defender ATP portal REST API.
+keywords: alerts, get alerts, rest api, request, response, 
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Use the generic API to consume Windows Defender ATP alerts
+# Get Windows Defender ATP alerts using REST API
 
 **Applies to:**
 
@@ -21,105 +21,55 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-In general, the OAuth 2.0 protocol supports four types of flows:
-- Authorization grant flow
-- Implicit flow
-- Client credentials flow
-- Resource owner flow
+Use this method in the Windows Defender ATP API to get alerts in JSON format.
 
-Windows Defender ATP supports the _Authorization grant flow_ and _Client credential flow_ to obtain access to alerts, so that they can be consumed by supported tools.
+## Before you begin
+- Before calling the Windows Defender ATP endpoint to get alerts, you'll need to enable the threat intelligence application in Azure Active Directory. For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md). <br><br>
+- Have the access token that you generated from the **SIEM integration** ready for use in the request header.
 
-In Windows Defender ATP, the _Authorization grant flow_ is used when consuming alerts using Splunk or HP ArcSight. In this flow, Azure Active Directory (AAD) acts as the authorization server.
+## Request
+### Request syntax
 
-The generic API implementation uses the _Client credential flow_. In this flow, a client can authenticate against the Windows Defender ATP endpoint using only its client credentials.
+Method | Request URI
+:---|:---|
+GET| For EU: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> For US: `https://wdatp-alertexporter-us.windows.com/api/alerts`
 
-The _Client credentials flow_ is suitable for scenarios when a client creates requests to an API that doesn't require user credentials.
+### Request header
+| Header        | Type   | Description                                                                 |
+|---------------|--------|-----------------------------------------------------------------------------|
+| Authorization | string | Required. The Azure AD access token in the form **Bearer** &lt;*token*&gt;. |
 
-## Step 1: Get an access token
-Before creating calls to the OAuth token endpoint, you'll need to get an access token.
+### Request parameters
 
-You'll need the access token to access the protected resource, which are alerts in Windows Defender ATP.
-
-To get an access token, you'll need to do a POST request to the following OAuth token endpoint. Here is a sample request:
-
-<span style="color:#ED1C24;">LIOR - NEED EXACT POST REQUEST - THE ONE BELOW IS JUST AN ASSUMPTION FROM ME. DO I NEED TO PUT THE AUTHORIZATION AND CONTENT-TYPE? WHERE DO I USE THE RESOURCE URLS?
-</span>
-
-```
-POST https://login.microsoftonline.com/<tenant_id>/oauth2/token HTTP/1.1
-Host: login.microsoftonline.com
-Content-Type:application/x-www-form-urlencoded; charset=utf-8
-
-grant_type=client_credentials
-&client_id=<your client id>
-&client_secret=<your client secret>
-&resource=https://graph.windows.net
-```
-For the *<tenant_id>* value in the POST URI and the *client_id* and *client_secret* parameters, specify your tenant ID, client ID, and client secret. For the *resource* parameter, use `https://graph.windows.net` if an application was created for you through the portal. Otherwise, use `https://WDATPAlertExport.Seville.onmicrosoft.com`.
-
-As a response to the request, the authorization server will return a JSON formatted result with an *access_token* property, for example:
-
-```json
-{
-  "token type": "Bearer",
-  "expires in": "3599"
-  "ext_expires_in": "0",
-  "expires_on": "1488720683",
-  "not_before": "1488720683",
-  "resource": "https://WDATPAlertExport.Seville.onmicrosoft.com",
-  "access_token":"eyJ0eXaioJJOIneiowiouqSuzNiZ345FYOVkaJL0625TueyaJasjhIjEnbMlWqP..."
-}
-```
-Use the value in the *access_token* field to authenticate against the Windows Defender ATP endpoint.
-
-<span style="color:#ED1C24;">LIOR DO WE NEED TO CREATE HEADERS? NOT SURE, BUT I PUT THE STEP HERE. </span>    
-
-## Step 2: Create headers used for the requests with the API
-Use the following code to create the headers used for the requests with the API:
-
-```
-$headers = @{
-    "Content-Type"="application/json"
-    "Accept"="application/json"
-    "Authorization"="Bearer {0}" -f $token }
-```
-
-## Step 3: Send calls to the Windows Defender ATP API
-After obtaining your *access_token* and creating headers, you are ready to call the Windows Defender ATP API. You must pass the access token to the **Authorization** header of each method.
-
-You can use the following operations when sending calls to the endpoint URL:
-
--	GET
--	POST
--	PATCH
--	PUT
--	DELETE
-
-<span style="color:#ED1C24;">LIOR PLEASE CHECK IF THESE LIST OF OPERATIONS ARE CORRECT.</span>                                                          
-All alert API requests use the following basic URL pattern:
-- For EU: `https://wdatp-alertexporter-eu.windows.com/api/alerts`
-- For US: `https://wdatp-alertexporter-us.windows.com/api/alerts`
-
-## Windows Defender ATP methods
-
-### Parameters
-The Windows Defender ATP generic API provides several optional query parameters that you can use to specify and control the amount of data returned in a response. The generic API supports the following query options:
+Use optional query parameters to specify and control the amount of data returned in a response. If you call this method without parameters, the response contains all the alerts in your organization.
 
 Name | Value| Description
 :---|:---|:---
-DateTime?sinceTimeUtc | string | Defines the time alerts are retrieved from based from `LastProccesedTimeUtc` time to current time. </br> NOTE: When not specified, all alerts generated in the last two hours are retrieved.
-int?limit | int | Defines the number of alerts to be retrieved. Most recent alerts will be retrieved based on the number defined.</br> NOTE: When not specified, all alerts available in the time range will be retrieved.
+DateTime?sinceTimeUtc | string | Defines the time alerts are retrieved from based from `LastProccesedTimeUtc` time to current time. <br><br> **NOTE**: When not specified, all alerts generated in the last two hours are retrieved.
+int?limit | int | Defines the number of alerts to be retrieved. Most recent alerts will be retrieved based on the number defined.<br><br> **NOTE**: When not specified, all alerts available in the time range will be retrieved.
 
-Here is an example call with a limit of last 20 alerts since 2016-09-12 00:00:00:
+### Request example
+The following example demonstrates how to retrieve all the alerts in your organization.
 
-`https://wdatp-alertexporter-eu.windows.com/api/alerts?limit=20&sinceTimeUtc="2016-09-12 00:00:00"`
 
-### Return value
+```syntax
+GET  https://wdatp-alertexporter-eu.windows.com/api/alerts
+Authorization: Bearer <your access token>
+```
+
+The following example demonstrates a request to get the last 20 alerts since 2016-09-12 00:00:00.
+
+```syntax
+GET  https://wdatp-alertexporter-eu.windows.com/api/alerts?limit=20&sinceTimeUtc="2016-09-12 00:00:00"
+Authorization: Bearer <your access token>
+```
+
+## Response
 The return value is an array of alert objects in JSON format.
 
 Here is an example return value:
 
-```
+```json
 {"AlertTime":"2017-01-23T07:32:54.1861171Z",
 "ComputerDnsName":"desktop-bvccckk",
 "AlertTitle":"Suspicious PowerShell commandline",
@@ -153,27 +103,6 @@ Here is an example return value:
 "WasExecutingWhileDetected":null,
 "FileHash":"69484ca722b4285a234896a2e31707cbedc59ef9",
 "IocUniqueId":"9DE735BA9FF87725E392C6DFBEB2AF279035CDE229FCC00D28C0F3242C5A50AF"}
-```
-
-## Code examples
-### Get access token
-The following code example demonstrates how to obtain an access token and call the Windows Defender ATP API from a C# console app.
-
-```
-AuthenticationContext context = new AuthenticationContext("https://login.windows.net/common/oauth2");
-UserCredential user = new UserCredential("user@contoso.com", "password");
-AuthenticationResult authenticationResult = context.AcquireToken(m_resource, m_clientId, user);    
-
-```
-### Use token to connect to the alerts endpoint
-
-```
-HttpClient httpClient = new HttpClient();
-httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(authenticationResult.AccessTokenType, authenticationResult.AccessToken);
-HttpResponseMessage response = httpClient.GetAsync("https://wdatp-alertexporter-eu.windows.com/api/alert").GetAwaiter().GetResult();
-string alertsJson = response.Content.ReadAsStringAsync().Result;
-Console.WriteLine("Got alert list: {0}", alertsJson);
-
 ```
 
 ## Error codes
