@@ -224,7 +224,7 @@ The following example shows how to create a tile of the Web site's URL using the
           Column="4"/>
 ```
 
-The following table describes the other attributes that you can use with the **start:SecondaryTile** tag in addition to *8Size**, **Row**, and *8Column**.
+The following table describes the other attributes that you can use with the **start:SecondaryTile** tag in addition to **Size**, **Row**, and **Column**.
 
 | Attribute | Required/optional | Description |
 | --- | --- | --- |
