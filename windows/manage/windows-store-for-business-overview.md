@@ -89,50 +89,12 @@ For more information, see [Sign up for the Store for Business](../manage/sign-up
 
 After your admin signs up for the Store for Business, they can assign roles to other employees in your company. The admin needs Azure AD User Admin permissions to assign WSFB roles. These are the roles and their permissions.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Permission</th>
-<th align="left">Account settings</th>
-<th align="left">Acquire apps</th>
-<th align="left">Distribute apps</th>
-<th align="left">Device Guard signing</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Admin</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Purchaser</p></td>
-<td align="left"></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Device Guard signer</p></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>X</p></td>
-</tr>
-</tbody>
-</table>
-
+| Permission | Account settings | Acquire apps | Distribute apps | Device Guard signing |
+| ---------- | ---------------- | ------------ | --------------- | -------------------- |
+| Admin | X | X | X |  |
+| Purchaser |  | X | X |  |
+| Device Guard signer |  |  |  | X |
  
-
 In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](../manage/manage-users-and-groups-windows-store-for-business.md).
 
 Also, if your organization plans to use a management tool, you’ll need to configure your management tool to sync with the Store for Business.
@@ -367,7 +329,19 @@ Store for Business is currently available in these markets.
    </tr>
 </table>
 
-  
+## Privacy notice
+
+Microsoft Store for Business services get names and email addresses of people in your organization from Azure Active Directory. This information is needed for these admin functions:
+- Granting and managing permissions
+- Managing app licenses 
+- Distributing apps to people (names appear in a list that admins can select from)
+ 
+Store for Business does not save names, or email addresses.
+
+Your use of Store for Business is also governed by the Store for Business Terms of Use. 
+
+Information sent to Store for Business is subject to the [Store for Business Privacy Statement](https://privacy.microsoft.com/privacystatement/).
+
 ## <a href="" id="isv-wsfb"></a>ISVs and the Store for Business
 
 
