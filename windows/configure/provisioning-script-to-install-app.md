@@ -216,8 +216,6 @@ When you are done, [build the package](provisioning-create-package.md#build-pack
 - [Apply a provisioning package](provisioning-apply-package.md)
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
-- [NFC-based device provisioning](provisioning-nfc.md)
-- [Use the package splitter tool](provisioning-package-splitter.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)

@@ -151,10 +151,9 @@ Windows ICD in Windows 10, version 1607, supported the following scenarios for I
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
 - [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
-- [NFC-based device provisioning](provisioning-nfc.md)
-- [Use the package splitter tool](provisioning-package-splitter.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
+- [Use Windows Configuration Designer to configure Windows 10 Mobile devices](provisioning-configure-mobile.md)
 
 
 

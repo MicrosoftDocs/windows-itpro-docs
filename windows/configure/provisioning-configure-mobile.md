@@ -74,3 +74,9 @@ You can apply a provisioning package to a device running Windows 10 Mobile by us
 3. On the device, the **Is this package from a source you trust?** message will appear. Tap **Yes, add it**.
 
     ![Is this package from a source you trust](images/package-trust.png)
+
+
+## Related topics
+
+- [NFC-based device provisioning](provisioning-nfc.md)
+- [Use the package splitter tool](provisioning-package-splitter.md)

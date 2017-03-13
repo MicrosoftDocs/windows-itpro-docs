@@ -73,17 +73,6 @@ ppkgtobase64.exe -i <InputFile> -o <OutputDirectory> -s <BlockSize>  [-c]  [/?]
 
 ## Related topics
 
-- [Provisioning packages for Windows 10](provisioning-packages.md)
-- [How provisioning works in Windows 10](provisioning-how-it-works.md)
-- [Install Windows Configuration Designer](provisioning-install-icd.md)
-- [Create a provisioning package](provisioning-create-package.md)
-- [Apply a provisioning package](provisioning-apply-package.md)
-- [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
-- [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
-- [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
-- [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
-- [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
-- [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
 
  
 
