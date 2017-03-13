@@ -56,6 +56,7 @@ Trace logs are captured when using cmdlets. The following logs are available in 
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
 - [NFC-based device provisioning](provisioning-nfc.md)
+- [Use the package splitter tool](provisioning-package-splitter.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
 

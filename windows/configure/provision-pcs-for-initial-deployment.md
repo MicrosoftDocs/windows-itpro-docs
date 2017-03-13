@@ -104,6 +104,7 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
 - [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
 - [NFC-based device provisioning](provisioning-nfc.md)
+- [Use the package splitter tool](provisioning-package-splitter.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
 
