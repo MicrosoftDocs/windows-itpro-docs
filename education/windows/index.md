@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
+localizationpriority: high
 author: CelesteDG
 ---
 
@@ -29,8 +30,7 @@ author: CelesteDG
   <li><a href="https://technet.microsoft.com/en-us/windows/mt723345" target="_blank">Automate common Windows 10 deployment and configuration tasks</a></li>
   <li><a href="https://technet.microsoft.com/en-us/windows/mt723346" target="_blank">Deploy a custom Windows 10 Start menu</a></li>
   <li><a href="https://technet.microsoft.com/en-us/windows/mt723347" target="_blank">Manage Windows 10 updates and upgrades</a></li>
-  <li><a href="https://technet.microsoft.com/en-us/windows/mt723344" target="_blank">Reprovision devices at the end of the school year</a></li>
-  <li><a href="https://technet.microsoft.com/en-us/windows/mt723343" target="_blank">Use MDT to deploy Windows 10</a></li>
+  <li><a href="https://technet.microsoft.com/en-us/windows/mt723344" target="_blank">Reprovision devices at the end of the school year</a></li>  <li><a href="https://technet.microsoft.com/en-us/windows/mt723343" target="_blank">Use MDT to deploy Windows 10</a></li>
   <li><a href="https://technet.microsoft.com/en-us/windows/mt723348" target="_blank">Use Windows Store for Business</a></li>
 </ul>
 </div>
@@ -57,15 +57,16 @@ author: CelesteDG
  <div class="side-by-side-content-right">
 <p><b><a href="https://technet.microsoft.com/en-us/windows/mt574244" target="_blank">Try it out: Windows 10 deployment (for education)</a></b><br />Learn how to upgrade devices running the Windows 7 operating system to Windows 10 Anniversary Update, and how to manage devices, apps, and users in Windows 10 Anniversary Update.<br /><br />For the best experience, use this guide in tandem with the <a href="https://vlabs.holsystems.com/vlabs/technet?eng=VLabs&auth=none&src=vlabs&altadd=true&labid=20949&lod=true" target="_blank">TechNet Virtual Lab: IT Pro Try-It-Out</a>.</p>
 </div>
-</div></div>
+ </div></div>
 
- ### ![Upgrade to Windows 10 for education](images/windows.png) Upgrade
+### ![Upgrade to Windows 10 for education](images/windows.png) Upgrade
 
  <div class="side-by-side"> <div class="side-by-side-content">
  <div class="side-by-side-content-left"><p><b>[Upgrade Windows 10 Pro to Pro Education from Windows Store for Business](windows-10-pro-to-pro-edu-upgrade.md)</b><br />If you have an education tenant and use Windows 10 Pro in your schools now, find out how you can opt-in to a free upgrade to Windows 10 Pro Education.</p></div>
+
  <div class="side-by-side-content-right"><p></p>
  </div>
- </div>
+ </div></div>
 
 ## Windows 8.1
 Follow these links to find step-by-step guidance on how to deploy Windows 8.1 in an academic environment.
