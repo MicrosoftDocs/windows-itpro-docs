@@ -216,6 +216,8 @@ No user content, such as user files or communications, is gathered at the **Secu
 
 The Basic level gathers a limited set of data that’s critical for understanding the device and its configuration. This level also includes the **Security** level data. This level helps to identify problems that can occur on a particular hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version. The Connected User Experience and Telemetry component does not gather telemetry data about System Center, but it can transmit telemetry for other non-Windows applications if they have user consent.
 
+The normal upload range for the Basic telemetry level is between 109 KB - 159 KB per day, per device.
+
 The data gathered at this level includes:
 
 -   **Basic device data**. Helps provide an understanding about the types of Windows devices and the configurations and types of native and virtualized Windows Server 2016 in the ecosystem. Examples include:
@@ -256,11 +258,14 @@ The data gathered at this level includes:
 
 -   **Windows Store**. Provides information about how the Windows Store performs, including app downloads, installations, and updates. It also includes Windows Store launches, page views, suspend and resumes, and obtaining licenses.
 
+
 ### Enhanced level
 
 The Enhanced level gathers data about how Windows and apps are used and how they perform. This level also includes data from both the **Basic** and **Security** levels. This level helps to improve the user experience with the operating system and apps. Data from this level can be abstracted into patterns and trends that can help Microsoft determine future improvements.
 
 This is the default level for Windows 10 Enterprise and Windows 10 Education editions, and the minimum level needed to quickly identify and address Windows, Windows Server, and System Center quality issues.
+
+The normal upload range for the Enhanced telemetry level is between 239 KB - 348 KB per day, per device.
 
 The data gathered at this level includes:
 
