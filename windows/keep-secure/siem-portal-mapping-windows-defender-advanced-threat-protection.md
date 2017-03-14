@@ -69,4 +69,5 @@ Image label | SIEM field name | Description | Matching field in portal
 27 | Sha256 |	Sha256 of file observed	| File Sha256 in file side pane (when available)
 28 | Md5	| Md5 of file observed	| File Md5 in file side pane (when available)
 
->[!NOTE] A single AlertID represents an IOA detection and may contain multiple IOCs. In such a cases, they will be exported to the SIEM tool as multiple instances. For every instance with the same AlertID, fields #1-8 will be identical while fields #9-18 will be different according to the new IOC information. Fields #20-28 are related to Windows Defender AV alerts.
+>[!NOTE]
+>A single AlertID represents an IOA detection and may contain multiple IOCs. In such a cases, they will be exported to the SIEM tool as multiple instances. For every instance with the same AlertID, fields #1-8 will be identical while fields #9-18 will be different according to the new IOC information. Fields #20-28 are related to Windows Defender AV alerts.
