@@ -1,7 +1,7 @@
 ---
 title: Get Windows Defender ATP alerts using REST API
 description: Get alerts from the Windows Defender ATP portal REST API.
-keywords: alerts, get alerts, rest api, request, response, 
+keywords: alerts, get alerts, rest api, request, response,
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -25,19 +25,19 @@ Use this method in the Windows Defender ATP API to get alerts in JSON format.
 
 ## Before you begin
 - Before calling the Windows Defender ATP endpoint to get alerts, you'll need to enable the threat intelligence application in Azure Active Directory. For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md). <br><br>
-- Have the access token that you generated from the **SIEM integration** ready for use in the request header.
+- Have the access token that you generated from the **SIEM integration** feature ready for use in the request header.
 
 ## Request
 ### Request syntax
 
 Method | Request URI
 :---|:---|
-GET| For EU: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> For US: `https://wdatp-alertexporter-us.windows.com/api/alerts`
+GET| Use the URI applicable for your region. <br><br> **For EU**: `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **For US**: `https://wdatp-alertexporter-us.windows.com/api/alerts`
 
 ### Request header
-| Header        | Type   | Description                                                                 |
-|---------------|--------|-----------------------------------------------------------------------------|
-| Authorization | string | Required. The Azure AD access token in the form **Bearer** &lt;*token*&gt;. |
+Header | Type | Description|
+:--|:--|:--
+Authorization | string | Required. The Azure AD access token in the form **Bearer** &lt;*token*&gt;. |
 
 ### Request parameters
 
@@ -50,7 +50,6 @@ int?limit | int | Defines the number of alerts to be retrieved. Most recent aler
 
 ### Request example
 The following example demonstrates how to retrieve all the alerts in your organization.
-
 
 ```syntax
 GET  https://wdatp-alertexporter-eu.windows.com/api/alerts
