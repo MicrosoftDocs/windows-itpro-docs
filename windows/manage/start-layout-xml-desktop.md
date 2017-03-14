@@ -26,6 +26,9 @@ On Windows 10 for desktop editions, the customized Start works by:
     - 2 groups that are 6 columns wide, or equivalent to the width of 3 medium tiles.
     - 2 medium-sized tile rows in height. Windows 10 ignores any tiles that are pinned beyond the second row. 
     - No limit to the number of apps that can be pinned. There is a theoretical limit of 24 tiles per group (4 small tiles per medium square x 3 columns x 2 rows). 
+    
+>[!NOTE]
+>Using the layout modification XML to configure Start is not supported with roaming user profiles. For more information, see [Deploy Roaming User Profiles](https://technet.microsoft.com/en-US/library/jj649079.aspx).
 
 ## LayoutModification XML
 
@@ -221,7 +224,7 @@ The following example shows how to create a tile of the Web site's URL using the
           Column="4"/>
 ```
 
-The following table describes the other attributes that you can use with the **start:SecondaryTile** tag in addition to *8Size**, **Row**, and *8Column**.
+The following table describes the other attributes that you can use with the **start:SecondaryTile** tag in addition to **Size**, **Row**, and **Column**.
 
 | Attribute | Required/optional | Description |
 | --- | --- | --- |

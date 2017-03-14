@@ -35,7 +35,7 @@ Learn about managing and updating Windows 10.
 <tr class="odd">
 <td align="left"><p>[Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md)</p></td>
 <td align="left"><p>The world’s first personal digital assistant helps users get things done, even at work. Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and enterprise environments.</p></td></tr>
-<tr><td>[Update Windows 10 in the enterprise](waas-update-windows-10.md) </td><td>Learn how to manage updates to Windows 10 in your organization, including Windows Update for Business. </td></tr>
+<tr><td>[Update Windows 10 in the enterprise](waas-update-windows-10.md) </td><td>Learn how to manage updates to Windows 10 in your organization, including Update Compliance, and Windows Update for Business. </td></tr>
 <tr><td align="left"><p>[Manage corporate devices](manage-corporate-devices.md)</p></td>
 <td align="left"><p>You can use the same management tools to manage all device types running Windows 10: desktops, laptops, tablets, and phones. And your current management tools, such as Group Policy, Windows Management Instrumentation (WMI), PowerShell scripts, Orchestrator runbooks, System Center tools, and so on, will continue to work for Windows 10 on desktop editions.</p></td>
 </tr>
@@ -71,6 +71,10 @@ Learn about managing and updating Windows 10.
 <tr class="even">
 <td align="left"><p>[Windows Store for Business](windows-store-for-business.md)</p></td>
 <td align="left"><p>Welcome to the Windows Store for Business! You can use the Store for Business, to find, acquire, distribute, and manage apps for your organization.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>[Windows Libraries](windows-libraries.md)</p></td>
+<td align="left"><p>Libraries are virtual containers for users’ content. A library can contain files and folders stored on the local computer or in a remote storage location. Libraries are built upon the legacy known folders (such as My Documents, My Pictures, and My Music).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[Change history for Manage and update Windows 10](change-history-for-manage-and-update-windows-10.md)</p></td>

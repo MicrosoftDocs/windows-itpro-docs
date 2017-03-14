@@ -1,5 +1,5 @@
 ---
-title: Configure Windows Defender ATP endpoints using System Center Configuration Manager
+title: Configure endpoints using System Center Configuration Manager
 description: Use System Center Configuration Manager to deploy the configuration package on endpoints so that they are onboarded to the service.
 keywords: configure endpoints using sccm, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints, sccm
 search.product: eADQiWindows 10XVcnh
@@ -45,14 +45,12 @@ You can use System Center Configuration Manager’s existing functionality to cr
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
-3. Import the configuration package by following the steps in the [How to Create Packages and Programs in Configuration Manager](https://technet.microsoft.com/library/gg682112.aspx#BKMK_Import) topic.
-
-4. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/library/gg682178.aspx) topic.
+3. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/library/gg682178.aspx) topic.
 
     a. Choose a predefined device collection to deploy the package to.
 
 > [!NOTE]
-> Onboarding couldn't be completed during Out-Of-Box Experience (OOBE). Make sure users pass OOBE after running Windows installation or upgrading.
+> Windows Defender ATP doesn't support onboarding during the [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) phase. Make sure users complete OOBE after running Windows installation or upgrading.
 
 
 ### Configure sample collection settings
