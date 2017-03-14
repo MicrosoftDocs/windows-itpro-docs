@@ -1,6 +1,6 @@
 ---
 title: Deployment guide for Windows Defender Antivirus in VDI
-description: This guides identifies the process and settings to use Windows Defender Antivirus in a VDI environment.
+description: Learn how to deploy Windows Defender Antivirus in a VDI environment for the best balance between protection and performance.
 keywords: vdi, hyper-v, vm, virtual machine, windows defender, antivirus, av, virtual desktop, rds, remote desktop
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -29,23 +29,31 @@ author: iaanw
 
 
 
-In addition to standard on-premises or hardware configurations, you can also use Windows Defender Antivirus (Windows Defender AV) in a remote desktop (RDS) or virtual desktop infrastructure (VDI) environment.
+In addition to standard on-premises or hardware configurations, you can also use Windows Defender Antivirus (Windows Defender AV) in a remote desktop (RDS) or virtual desktop infrastructure (VDI) environment. 
+Boot storms can be a problem in large-scale VDIs; this guide will help reduce the overall network bandwidth and performance impact on your hardware. For more details on the best configuration options to ensure a good balance between performance and protection, see the [Configure endpoints for optimal performance](#configure-endpoints-for-optimal-performance) section.
 
 See the [Microsoft Desktop virtualization site](https://www.microsoft.com/en-us/server-cloud/products/virtual-desktop-infrastructure/) for more details on Microsoft Remote Desktop Services and VDI support.
 
-For Azure-based virutal machines, you can also review the [Install Endpoint Protection in Azure Security Center](https://docs.microsoft.com/en-us/azure/security-center/security-center-install-endpoint-protection) topic.
+For Azure-based virtual machines, you can also review the [Install Endpoint Protection in Azure Security Center](https://docs.microsoft.com/en-us/azure/security-center/security-center-install-endpoint-protection) topic.
 
 There are three main steps in this guide to help roll out Windows Defender AV protection across your VDI:
 
-1.	Create and deploy the base image (for example, as a virtual hard disk (VHD)) that your virtual machines (VMs) will use
-2.	Manage the base image and updates for your VMs
-3.	Configure the VMs for optimal protection and performance
+1.	[Create and deploy the base image (for example, as a virtual hard disk (VHD)) that your virtual machines (VMs) will use](#create-and-deploy-the-base-image)
+2.	[Manage the base image and updates for your VMs](#manage-vms-and-base-image)
+3.	[Configure the VMs for optimal protection and performance](#configure-endpoints-for-optimal-performance), including:
+    - [Randomize scheduled scans](#randomize-scheduled-scans)
+    - [Use quick scans](#use-quick-scans)
+    - [Prevent notifications](#prevent-notifications)
+    - [Disable scans from occuring after every update](#disable-scans-after-an-update)
+    - [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
 
 >[!IMPORTANT]
 > While the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
 
 >[!NOTE] 
 >When you manage Windows with System Center Configuration Manager, Windows Defender AV protection will be referred to as Endpoint Protection or System Center Endpoint Protection. See the [Endpoint Protection section at the Configuration Manager library]( https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-protection) for more information.
+
+The following table lists the configuration settings that we recommend when deploying Windows Defender AV in a VDI environment:
 
 
 
@@ -134,10 +142,12 @@ There are a number of settings that can help ensure optimal performance on your 
 
 These settings can be configured as part of creating your base image, or as a day-to-day management function of your VDI infrastructure or network.
 
+One of the most important settings is to randomize the times when each VM will perform a scan.
+
 
 ### Randomize scheduled scans
 
-Windows Defender AV supports the randomization of scheduled scans and signature updates; such randomization might be useful to avoid having all machines perform the scheduled scans and signature updates at the same time. 
+Windows Defender AV supports the randomization of scheduled scans and signature updates. This can be extremely helpful in reducing boot storms (especially when used in conjuction with [Disable scans from occuring after every update](#disable-scans-after-an-update) and [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline).
 
 Scheduled scans run in addition to [real-time protection and scanning](windows-defender-antivirus-in-windows-10.md#always-on-real-time-protection).
 
@@ -291,12 +301,11 @@ DisableCatchupQuickScan, is the setting that I use (set to OFF) to ensure that a
 
 ### Exclusions
 Windows Server 2016 contains Windows Defender Antivirus and will automatically deliver the right exclusions for servers running a VDI environment. However, if you are running an older Windows server version, you can refer to the exclusions that are applied on this page:
-•         Automatic exclusions for Windows Server Antimalware 
+- [Automatic exclusions for Windows Server Antimalware](https://technet.microsoft.com/en-us/windows-server-docs/security/windows-defender/automatic-exclusions-for-windows-defender)
 
 ## Additional resources
 
--	[Video: Microsoft Senior Program Manager Bryan Keller on how System Center Configuration Manger 2012 manages VDI and integrates with App-V]( http://channel9.msdn.com/Shows/Edge/Edge-Show-5-Manage-VDI-using-SCCM-2012#time=03m02s)
--	[Project VRC: Antivirus impact and best practices on VDI](https://blogs.technet.microsoft.com/privatecloud/2013/12/06/orchestrated-offline-vm-patching-using-service-management-automation/)
--	[TechNet forums on Remote Desktop Services and VDI](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS)
+- [Video: Microsoft Senior Program Manager Bryan Keller on how System Center Configuration Manger 2012 manages VDI and integrates with App-V]( http://channel9.msdn.com/Shows/Edge/Edge-Show-5-Manage-VDI-using-SCCM-2012#time=03m02s)
+- [Project VRC: Antivirus impact and best practices on VDI](https://blogs.technet.microsoft.com/privatecloud/2013/12/06/orchestrated-offline-vm-patching-using-service-management-automation/)
+- [TechNet forums on Remote Desktop Services and VDI](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS)
 - [SignatureDownloadCustomTask PowerShell script](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4/DisplayScript) 
-
