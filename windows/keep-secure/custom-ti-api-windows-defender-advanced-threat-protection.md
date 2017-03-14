@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Create custom alerts using the threat intelligence (TI) Application program interface (API)
+# Create custom alerts using the threat intelligence (TI) application program interface (API)
 
 **Applies to:**
 
@@ -23,12 +23,12 @@ localizationpriority: high
 
 <span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
-You can define custom alert definitions and indicators of compromise (IOC) using the threat intelligence API. Creating custom threat intelligence alerts allows you to create specific alerts that are applicable to your organization.
+You can define custom alert definitions and indicators of compromise (IOC) using the threat intelligence API. Creating custom threat intelligence alerts allows you to generate specific alerts that are applicable to your organization.
 
 ## Before you begin
 Before creating custom alerts, you'll need to enable the threat intelligence application in Azure Active Directory and generate access tokens. For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md).
 
-### Use the threat intelligence REST APIs to create custom threat intelligence alerts
+### Use the threat intelligence REST API to create custom threat intelligence alerts
 You can call and specify the resource URLs using one of the following operations to access and manipulate a threat intelligence resource, you call and specify the resource URLs using one of the following operations:
 
 -	GET

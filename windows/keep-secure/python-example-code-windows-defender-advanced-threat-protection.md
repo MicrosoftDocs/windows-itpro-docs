@@ -71,7 +71,7 @@ You can now use the alert ID obtained from creating a new alert definition to cr
 ## Complete code
 You can use the complete code to create calls to the API.
 
-[!code[CustomTIAPI](./code/example.py#L1-L51)]
+[!code[CustomTIAPI](./code/example.py#L1-L53)]
 
 ## Related topics
 - [Understand threat intelligence](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
