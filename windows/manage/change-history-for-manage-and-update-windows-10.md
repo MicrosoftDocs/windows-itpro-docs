@@ -14,6 +14,12 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 >If you're looking for **update history** for Windows 10, see [Windows 10 and Windows Server 2016 update history](https://support.microsoft.com/help/12387/windows-10-update-history).
 
+## March 2017
+
+| New or changed topic | Description |
+| --- | --- |
+|[Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email](cortana-at-work-scenario-6.md) |New |
+
 ## February 2017
 
 | New or changed topic | Description |
@@ -25,7 +31,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) | Added Group Policy setting that blocks user access to Windows Update. |
 | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) | Added Express updates. |
 | [Distribute offline apps](distribute-offline-apps.md) | General updates to topic. Added links to supporting content for System Center Configuration Manager and Microsoft Intune.  |
-|[Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email](cortana-at-work-scenario-6.md) |New |
+
 
 ## January 2017
 
