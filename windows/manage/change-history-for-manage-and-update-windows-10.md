@@ -40,7 +40,6 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 | --- | --- |
 
 |[Cortana at work topics](../configure/cortana-at-work-overview.md)]|New |
-| [Cortana integration in your business or enterprise and sub-topics](cortana-at-work-overview.md) |New |
 | [Start layout XML for desktop editions of Windows 10](start-layout-xml-desktop.md) | New (previously published in Hardware Dev Center on MSDN) |
 | [Start layout XML for mobile editions of Windows 10](start-layout-xml-mobile.md) | New (previously published in Hardware Dev Center on MSDN) |
 | [Quick guide to Windows as a service](waas-quick-start.md) | Added video that explains how Windows as a service works. |
