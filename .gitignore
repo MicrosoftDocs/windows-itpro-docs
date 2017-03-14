@@ -10,7 +10,14 @@ Tools/NuGet/
 .openpublishing.build.mdproj
 .openpublishing.buildcore.ps1
 packages.config
-windows/keep-secure/index.md
 
 # User-specific files  
 .vs/
+education/windows/index.md
+windows/keep-secure/configure-endpoints-sccm-windows-defender-advanced-threat-protection.md
+windows/keep-secure/fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md
+windows/keep-secure/images/atp-add-intune-policy.png
+windows/keep-secure/interactive-logon-display-user-information-when-the-session-is-locked.md
+windows/keep-secure/TOC.md
+windows/manage/change-history-for-manage-and-update-windows-10.md
+windows/manage/waas-optimize-windows-10-updates.md

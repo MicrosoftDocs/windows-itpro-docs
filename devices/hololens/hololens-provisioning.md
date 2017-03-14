@@ -14,7 +14,7 @@ localizationpriority: medium
 Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. The Windows Assessment and Deployment Kit (ADK) for Windows 10 includes the Imaging and Configuration Designer (ICD), a tool for configuring images and runtime settings which are then built into provisioning packages. 
 
 Some of the HoloLens configurations that you can apply in a provisioning package: 
-- Upgrade to Windows Holographic Enterprise
+- Upgrade to Windows Holographic for Business
 - Set up a local account
 - Set up a Wi-Fi connection
 - Apply certificatess to the device
@@ -32,7 +32,7 @@ When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration D
 ## Create a provisioning package for HoloLens
 
 >[!NOTE]
->Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic Enterprise or if [the device has already been upgraded to Windows Holographic Enterprise](hololens-upgrade-enterprise.md).
+>Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
 1. On the Windows ICD start page, select **Advanced provisioning**.
 
@@ -101,7 +101,7 @@ When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration D
 
 Provisioning packages make use of configuration service providers (CSPs). If you're not familiar with CSPs, see [Introduction to configuration service providers (CSPs) for IT pros](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 
-In Windows ICD, when you create a provisioning package for Windows Holographic, the settings in **Available customizations** are based on [CSPs that are supported in Windows Holographic](https://msdn.microsoft.co/library/windows/hardware/dn920025.aspx#HoloLens). The following table describes settings that you might want to configure for HoloLens.
+In Windows ICD, when you create a provisioning package for Windows Holographic, the settings in **Available customizations** are based on [CSPs that are supported in Windows Holographic](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens). The following table describes settings that you might want to configure for HoloLens.
 
 ![Common runtime settings for HoloLens](images/icd-settings.png)
 
@@ -110,7 +110,7 @@ In Windows ICD, when you create a provisioning package for Windows Holographic, 
 | **Accounts**  | Create a local account. HoloLens currently supports a single user only. Creating multiple local accounts in a provisioning package is not supported. <br><br>**IMPORTANT**<br>If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in. If the user account is locked out, you must [perform a full device recovery](https://developer.microsoft.com/windows/holographic/reset_or_recover_your_hololens#perform_a_full_device_recovery). |
 | **Certificates** | Deploy a certificate to HoloLens.  |
 | **ConnectivityProfiles** | Deploy a Wi-Fi profile to HoloLens.   |
-| **EditionUpgrade** | [Upgrade to Windows Holographic Enterprise.](hololens-upgrade-enterprise.md)  |
+| **EditionUpgrade** | [Upgrade to Windows Holographic for Business.](hololens-upgrade-enterprise.md)  |
 | **Policies** | Allow or prevent developer mode on HoloLens.  |
 
 >[!NOTE]
