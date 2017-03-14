@@ -19,11 +19,6 @@ This topic lists new and updated topics in the [Manage Windows 10](index.md) doc
 
 The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). Some topics have been moved to [Update Windows 10](../update/index.md) or to [Configure Windows 10](../configure/index.md).
 
-## March 2017
-
-| New or changed topic | Description |
-| --- | --- |
-|[Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email](cortana-at-work-scenario-6.md) |New |
 
 
 ## February 2017
