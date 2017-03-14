@@ -60,7 +60,7 @@ If you took corrective actions and the machine status is still misconfigured, [o
 
 ### No sensor data
 A misconfigured machine with status ‘No sensor data’ has communication with the service but can only report partial sensor data.
-Follow theses actions to correct known issues related to a misconfigured machine with status ‘Impaired communication’:
+Follow theses actions to correct known issues related to a misconfigured machine with status ‘No sensor data’:
 
 - [Ensure the endpoint has Internet connection](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-endpoint-has-an-internet-connection)</br>
   The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Windows Defender ATP service.
