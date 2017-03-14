@@ -1,7 +1,7 @@
 ---
 title: Enable Block at First Sight to detect malware in seconds
-description: In Windows 10 the Block at First Sight feature determines and blocks new malware variants in seconds. You can enable the feature with Group Policy.
-keywords: scan, BAFS, malware, first seen, first sight, cloud, MAPS, defender
+description: Enable the Block at First sight feature to detect and block malware within seconds, and validate that it is configured correctly.
+keywords: scan, BAFS, malware, first seen, first sight, cloud, defender
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -16,7 +16,7 @@ author: iaanw
 
 
 
-# Configure the Block at First Sight feature
+# Enable and validate the Block at First Sight feature
 
 **Applies to**
 
@@ -56,7 +56,7 @@ In many cases this process can reduce the response time to new malware from hour
 > Suspicious file downloads requiring additional backend processing to reach a determination will be locked by Windows Defender on the first machine where the file is encountered, until it is finished uploading to the backend. Users will see a longer "Running security scan" message in the browser while the file is being uploaded. This might result in what appear to be slower download times for some files.
 
 
-## Confirm Block at First Sight is enabled
+## Confirm and validate Block at First Sight is enabled
 
 Block at First Sight requires a number of Group Policy settings to be configured correctly or it will not work. Usually, these settings are already enabled in most default Windows Defender deployments in enterprise networks.
 
@@ -111,6 +111,36 @@ You can confirm that Block at First Sight is enabled in Windows Settings. The fe
     b. On the main Windows Settings page, click **Update & Security** and then **Windows Defender**.
 
 2.	Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
+
+### Validate Block at First Sight is working
+
+Tthere are two scenarios that fall into the Block at First Sight feature:
+•	Scenario 1: Windows Defender AV cloud-based protection is able to determine the file is malware or clean based on data sent from the endpoint 
+•	Scenario 2: Windows Defender AV needs to process the file in the cloud-based protection back-end to reach a verdict
+ 
+You can validate Scenario 1 by downloading and attempting to save a sample test file from http://aka.ms/ioavtest.
+
+If BLock at First Sight is configured correctly, you wil lreceive a notification from Windows Defender AV and, depending on your browser, a notice that says the file contained a virus and was deleted.
+
+The Windows Defender AV notification:
+malware-detected
+
+The notification in Edge:
+bafs-edge
+
+
+The notification in Internet Explorer:
+bafs-ie
+
+
+
+The notification in Chrome: 
+chrome-ie
+
+
+
+ - if everything is configured correctly Windows Defender Cloud Protection will determine the file is malware (without needing a copy of the file) and block it based purely on metadata sent to the cloud. 
+
 
 ## Disable Block at First Sight
 

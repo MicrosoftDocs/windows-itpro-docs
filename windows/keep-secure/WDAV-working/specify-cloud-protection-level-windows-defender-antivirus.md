@@ -1,6 +1,6 @@
 ---
-title: Specify cloud protection level in Windows Defender Antivirus
-description: Set the aggressiveness of cloud-delivered protection in Windows Defender Antivirus
+title: Specify cloud-delivered protection level in Windows Defender Antivirus
+description: Set the aggressiveness of cloud-delivered protection in Windows Defender Antivirus.
 keywords: windows defender antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
