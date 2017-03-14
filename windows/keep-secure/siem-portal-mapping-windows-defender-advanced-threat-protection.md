@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# SIEM schema and portal mapping
+# SIEM schema portal mapping
 
 **Applies to:**
 
