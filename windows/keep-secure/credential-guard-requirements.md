@@ -1,6 +1,6 @@
 ---
 title: Credential Guard Requirements (Windows 10)
-description: Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
+description: Credential Guard baseline hardware, firmware, and software requirements, and additional protections for improved security associated with available hardware and firmware options. 
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -15,9 +15,11 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-For Credential Guard to provide protections, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements which we will refer to as [Hardware and software requirements](#hardware-and-software-requirements). Additionally Credential Guard blocks specific authentication capabilities, so applications which require blocked capabilities will break. We will refer to this as [Application requirements](#application-requirements). Beyond that, computers can meet additional hardware and firmware qualifications, and receive additional protection—those computers will be more hardened against certain threats. To keep this section brief, those will be in [Security Considerations](#security-considerations).
+For Credential Guard to provide protections, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements which we will refer to as [Hardware and software requirements](#hardware-and-software-requirements). Additionally Credential Guard blocks specific authentication capabilities, so application that require such capabilities will break. We will refer to this as [Application requirements](#application-requirements). Beyond that, computers can meet additional hardware and firmware qualifications, and receive additional protection. Those computers will be more hardened against certain threats. For detailed information on baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017, see the tables in the [Security Considerations](#security-considerations) section.
 
-### Hardware and software requirements
+
+
+## Hardware and software requirements
 
 To provide basic protection against OS level attempts to read Credential Manager domain credentials, NTLM and Kerberos derived credentials, Credential Manager uses:
 - Support for Virtualization-based security (required)
@@ -26,13 +28,13 @@ To provide basic protection against OS level attempts to read Credential Manager
 - UEFI lock (preferred - prevents attacker from disabling with a simple registry key change)
 
 The Virtualization-based security requires:
-- 64 bit CPU
+- 64-bit CPU
 - CPU virtualization extensions plus extended page tables
 - Windows hypervisor
 
-### Application requirements
+## Application requirements
 
-When Credential Guard is enabled, specific authentication capabilities are blocked, so applications which require blocked capabilities will break. Applications should be tested prior to deployment to ensure compatiblity with the reduced functionality. 
+When Credential Guard is enabled, specific authentication capabilities are blocked, so application that require such capabilities will break. Applications should be tested prior to deployment to ensure compatiblity with the reduced functionality. 
 
 >[!WARNING] 
 > Enabling Credential Guard on domain controllers is not supported. <br>
@@ -47,14 +49,14 @@ Applications will break if they require:
 - Extracting the Kerberos TGT
 - NTLMv1
 
-Applications will prompt & expose credentials to risk if they require:
+Applications will prompt and expose credentials to risk if they require:
 - Digest authentication
 - Credential delegation
 - MS-CHAPv2
 
 Applications may cause performance issues when they attempt to hook the isolated Credential Guard process. 
 
-### Security considerations
+## Security considerations
 
 All computers that meet baseline protections for hardware, firmware, and software can use Credential Guard. 
 Computers that meet additional qualifications can provide additional protections to further reduce the attack surface.  
@@ -64,7 +66,7 @@ The following tables describe baseline protections, plus protections for improve
 > Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new shipping computers. <br>
 > If you are an OEM, see [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).<br>
 
-#### Baseline protections
+### Baseline protections
 
 |Baseline Protections                   | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
@@ -78,7 +80,7 @@ The following tables describe baseline protections, plus protections for improve
 > [!IMPORTANT]
 > The following tables list additional qualifications for improved security. We strongly recommend meeting the additional qualifications to significantly strengthen the level of security that Credential Guard can provide.
 
-#### 2015 Additional security qualifications starting with Windows 10, version 1507, and Windows Server 2016 Technical Preview 4
+### 2015 Additional security qualifications starting with Windows 10, version 1507, and Windows Server 2016 Technical Preview 4
 
 | Protections for Improved Security          | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
@@ -88,7 +90,7 @@ The following tables describe baseline protections, plus protections for improve
 
 <br>
 
-#### 2016 Additional security qualifications starting with Windows 10, version 1607, and Windows Server 2016
+### 2016 Additional security qualifications starting with Windows 10, version 1607, and Windows Server 2016
 
 > [!IMPORTANT]
 > The following tables list additional qualifications for improved security. Systems that meet these additional qualifications can provide more protections.
@@ -101,11 +103,11 @@ The following tables describe baseline protections, plus protections for improve
 
 <br>
 
-#### 2017 Additional security qualifications starting with Windows 10, version 1703 
+### 2017 Additional security qualifications starting with Windows 10, version 1703 
 
 The following table lists qualifications for Windows 10, version 1703, which are in addition to all preceding qualifications. 
 
 | Protection for Improved Security          | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
-| Firmware: **VBS enablement of NX protection for UEFI runtime services** | **Requirements**:<br>• VBS will enable No-Execute (NX) protection on UEFI runtime service code and data memory regions. UEFI runtime service code must support read-only page protections, and UEFI runtime service data must not be exceutable.<br>• UEFI runtime service must meet these requirements: <br>&nbsp;&nbsp;&nbsp;&nbsp;- Implement UEFI 2.6 EFI_MEMORY_ATTRIBUTES_TABLE. All UEFI runtime service memory (code and data) must be described by this table. <br>&nbsp;&nbsp;&nbsp;&nbsp;- PE sections need to be page-aligned in memory (not required for in non-volitile storage).<br>&nbsp;&nbsp;&nbsp;&nbsp;- The Memory Attributes Table needs to correctly mark code and data as RO/NX for configuration by the OS:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- All entries must include attributes EFI_MEMORY_RO, EFI_MEMORY_XP, or both <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- No entries may be left with neither of the above attributes, indicating memory that is both exceutable and writable. Memory must be either readable and executable or writeable and non-executable. <br><blockquote><p><strong>Notes:</strong><br>• This only applies to UEFI runtime service memory, and not UEFI boot service memory. <br>• This protection is applied by VBS on OS page tables.</p></blockquote><br> Please also note the following: <br>• Do not use sections that are both writeable and exceutable<br>• Do not attempt to directly modify executable system memory<br>• Do not use dynamic code<br><br>**Security benefits**:<br>• Vulnerabilities in UEFI runtime, if any, will be blocked from compromising VBS (such as in functions like UpdateCapsule and SetVariable)<br>• Reduces the attack surface to VBS from system firmware.     |
+| Firmware: **VBS enablement of NX protection for UEFI runtime services** | **Requirements**:<br>• VBS will enable No-Execute (NX) protection on UEFI runtime service code and data memory regions. UEFI runtime service code must support read-only page protections, and UEFI runtime service data must not be executable.<br>• UEFI runtime service must meet these requirements: <br>&nbsp;&nbsp;&nbsp;&nbsp;- Implement UEFI 2.6 EFI_MEMORY_ATTRIBUTES_TABLE. All UEFI runtime service memory (code and data) must be described by this table. <br>&nbsp;&nbsp;&nbsp;&nbsp;- PE sections need to be page-aligned in memory (not required for in non-volatile storage).<br>&nbsp;&nbsp;&nbsp;&nbsp;- The Memory Attributes Table needs to correctly mark code and data as RO/NX for configuration by the OS:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- All entries must include attributes EFI_MEMORY_RO, EFI_MEMORY_XP, or both <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- No entries may be left with neither of the above attributes, indicating memory that is both executable and writable. Memory must be either readable and executable or writeable and non-executable. <br><blockquote><p><strong>Notes:</strong><br>• This only applies to UEFI runtime service memory, and not UEFI boot service memory. <br>• This protection is applied by VBS on OS page tables.</p></blockquote><br> Please also note the following: <br>• Do not use sections that are both writeable and executable<br>• Do not attempt to directly modify executable system memory<br>• Do not use dynamic code<br><br>**Security benefits**:<br>• Vulnerabilities in UEFI runtime, if any, will be blocked from compromising VBS (such as in functions like UpdateCapsule and SetVariable)<br>• Reduces the attack surface to VBS from system firmware.     |
 | Firmware: **Firmware support for SMM protection** | **Requirements**: The [Windows SMM Security Mitigations Table (WSMT) specification](http://download.microsoft.com/download/1/8/A/18A21244-EB67-4538-BAA2-1A54E0E490B6/WSMT.docx) contains details of an Advanced Configuration and Power Interface (ACPI) table that was created for use with Windows operating systems that support Windows virtualization-based security (VBS) features.<br><br>**Security benefits**:<br>• Protects against potential vulnerabilities in UEFI runtime services, if any, will be blocked from compromising VBS (such as in functions like UpdateCapsule and SetVariable)<br>• Reduces the attack surface to VBS from system firmware.<br>• Blocks additional security attacks against SMM. |

@@ -1,7 +1,6 @@
 ---
 title: Considerations when using Credential Guard (Windows 10)
-description: Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
-ms.assetid:
+description: Considerations and recommendations for certain scenarios when using Credential Guard in Windows 10.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -35,13 +34,15 @@ author: brianlic-msft
     -   Credentials saved by Remote Desktop Services cannot be used to remotely connect to another machine without supplying the password. Attempts to use saved credentials will fail, displaying the error message "Logon attempt failed".
     -   Applications that extract derived domain credentials from Credential Manager will no longer be able to use those credentials.
     -   You cannot restore credentials using the Credential Manager control panel if the credentials were backed up from a PC that has Credential Guard turned on. If you need to back up your credentials, you must do this before you enable Credential Guard. Otherwise, you won't be able to restore those credentials.
-    - Credential Guard uses hardware security so some features, such as Windows To Go, are not supported. For further information, see: 
-    [Virtualization-based security](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=mD3geLJyC_8304300474)
+    - Credential Guard uses hardware security so some features, such as Windows To Go, are not supported. 
+      
 
-## NTLM & CHAP Considerations
+## NTLM and CHAP Considerations
 
 When you enable Credential Guard, you can no longer use NTLM v1 authentication. If you are using WiFi and VPN endpoints that are based on MS-CHAPv2, they are subject to similar attacks as NTLMv1. We recommend that organizations use certificated-based authentication for WiFi and VPN connections.
 
 ## Kerberos Considerations
 
 When you enable Credential Guard, you can no longer use Kerberos unconstrained delegation or DES encryption. Unconstrained delegation could allow attackers to extract Kerberos keys from the isolated LSA process. You must use constrained or resource-based Kerberos delegation instead.
+
+For further information, see: [Virtualization-based security](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=mD3geLJyC_8304300474)

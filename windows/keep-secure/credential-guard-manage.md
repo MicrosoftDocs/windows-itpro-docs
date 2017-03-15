@@ -1,7 +1,6 @@
 ---
 title: Manage Credential Guard (Windows 10)
-description: Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
-ms.assetid:
+description: Deploying and managing Credential Guard using Group Policy, the registry, or the Device Guard and Credential Guard hardware readiness tool.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -34,7 +33,6 @@ You can use Group Policy to enable Credential Guard. This will add and enable th
 
 To enforce processing of the group policy, you can run ```gpupdate /force```. 
 
-For further information, see: [Deploying Credential Guard] (https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=sRcyvLJyC_3304300474)
 
 ### Enable Credential Guard by using the registry
 
@@ -47,7 +45,7 @@ Starting with Windows 10, version 1607 and Windows Server 2016, enabling Windows
 If you are using Windows 10, version 1507 (RTM) or Windows 10, version 1511, Windows features have to be enabled to use virtualization-based security. 
 You can do this by using either the Control Panel or the Deployment Image Servicing and Management tool (DISM).
 > [!NOTE]  
-> If you enable Credential Guard by using Group Policy, these steps are not required. Group Policy will install the features for you.
+If you enable Credential Guard by using Group Policy, the steps to enable Windows features through Control Panel or DISM are not required. Group Policy will install Windows features for you.
 
  
 **Add the virtualization-based security features by using Programs and Features**
@@ -113,6 +111,7 @@ Requirements for running Credential Guard in Hyper-V virtual machines
 - The Hyper-V virtual machine must be Generation 2, have an enabled virtual TPM, and running at least Windows Server 2016 or Windows 10. 
 
 For further information, see: [Deploying Credential Guard] (https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=sRcyvLJyC_3304300474)
+
 
 ### Remove Credential Guard
 
@@ -186,3 +185,4 @@ You can also check that Credential Guard is running by using the [Device Guard a
 ```
 DG_Readiness_Tool_v3.0.ps1 -Ready
 ```
+For further information, see: [Deploying Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=sRcyvLJyC_3304300474)

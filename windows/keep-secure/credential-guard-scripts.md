@@ -1,7 +1,6 @@
 ---
 title: Credential Guard Scripts (Windows 10)
-description: Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
-ms.assetid:
+description: Credential Guard Scripts listed in this topic for Windows 10, for obtaining the available issuance policies on the certificate authority.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library

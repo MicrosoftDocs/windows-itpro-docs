@@ -1,7 +1,6 @@
 ---
 title: How Credential Guard works
-description: Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
-ms.assetid: 
+description: Using virtualization-based security, Credential Guard features a new component called the isolated LSA process, which stores and protects secrets, isolating them from the rest of the operating system, so that only privileged system software can access them. 
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -28,4 +27,5 @@ Here's a high-level overview on how the LSA is isolated by using virtualization-
 
 ![Credential Guard overview](images/credguard.png)
 
-For further information, see [Virtualization-based security](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=mD3geLJyC_8304300474) 
+
+<br>For further information, see [Virtualization-based security](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=mD3geLJyC_8304300474) 
