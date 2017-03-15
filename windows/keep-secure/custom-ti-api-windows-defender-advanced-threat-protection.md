@@ -28,6 +28,41 @@ You can define custom alert definitions and indicators of compromise (IOC) using
 ## Before you begin
 Before creating custom alerts, you'll need to enable the threat intelligence application in Azure Active Directory and generate access tokens. For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md).
 
+## Request an access token from the token issuing endpoint
+The custom TI feature uses the OAuth 2.0 protocol to enable you to access alerts in Windows Defender ATP. In the context of Windows Defender ATP, the alerts from the portal are a protected resource. To issue tokens for ad-hoc, non-automatic operations you can use the **Preferences settings** page and click the **Generate Token** button. However, if you’d like to create an automated client, you need to use the “Client Credentials Grant” flow. For more information, see the [OAuth 2.0 authorization framework](https://tools.ietf.org/html/rfc6749#section-4.4).
+
+For more information about the authorization flow, see [OAuth 2.0 authorization flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#oauth-20-authorization-flow).
+
+Make an HTTP POST request to the token issuing endpoint with the following parameters, replacing `<ClientId>`, `<ClientSecret>`, and `<AuthenticationServerURL>` with your app's client ID, client secret, and application key, respectively.
+
+>[!NOTE]
+> The `<clientId>`, `<clientSecret>`, and the `<AuthenticationServerUrl>` are all provided to you when enabling the custom threat intelligence application. For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md).
+
+
+```
+POST <AuthorizationServerUrl> HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials
+&client_id=<clientId>
+&client_secret=<clientSecret>
+&resource=https://graph.microsoft.com
+```
+The response will include an access token and expiry information.
+
+```json
+{
+  "token_type": "Bearer",
+  "expires_in": "3599",
+  "ext_expires_in": "0",
+  "expires_on": "1449685363",
+  "not_before": "1449681463",
+  "resource": "https://graph.microsoft.com",
+  "access_token": "<token>"
+}
+
+```
+
 ### Use the threat intelligence REST API to create custom threat intelligence alerts
 You can call and specify the resource URLs using one of the following operations to access and manipulate a threat intelligence resource, you call and specify the resource URLs using one of the following operations:
 
