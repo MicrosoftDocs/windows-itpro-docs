@@ -18,7 +18,7 @@
 ### [Product IDs in Windows 10 Mobile](product-ids-in-windows-10-mobile.md)
 ### [Start layout XML for mobile editions of Windows 10 (reference)](start-layout-xml-mobile.md)
 ## [Configure Start, taskbar, and lock screen](start-taskbar-lockscreen.md)
-### [Windows Spotlight on the lock screen](windows-spotlight.md)
+### [Configure Windows Spotlight on the lock screen](windows-spotlight.md)
 ### [Manage Windows 10 and Windows Store tips, tricks, and suggestions](manage-tips-and-suggestions.md)
 ### [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
 #### [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)

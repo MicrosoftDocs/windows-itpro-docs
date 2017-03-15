@@ -47,7 +47,7 @@ Three features enable Start and taskbar layout control:
 ## <a href="" id="bkmk-domaingpodeployment"></a>Create a provisioning package that contains a customized Start layout
 
 
-Use the [Windows Configuration Designer tool](provisioning-install-icd.md) included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that applies a customized Start and taskbar layout. [Install the ADK.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](provisioning-install-icd.md)
 
 >[!IMPORTANT]
 >When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.

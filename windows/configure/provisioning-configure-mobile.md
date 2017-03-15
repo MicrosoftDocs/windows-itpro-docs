@@ -53,7 +53,7 @@ You can apply a provisioning package to a device running Windows 10 Mobile by us
 
 - removable media 
 - copying the provisioning package to the device
-- [NFC tags](provisioning.nfc.md)
+- [NFC tags](provisioning-nfc.md)
 - [barcodes](provisioning-package-splitter.md)
 
 ### Using removable media
