@@ -14,9 +14,12 @@ This topic lists new and updated topics in the [Manage Windows 10](index.md) doc
 
 >If you're looking for **update history** for Windows 10, see [Windows 10 and Windows Server 2016 update history](https://support.microsoft.com/help/12387/windows-10-update-history).
 
+
 ## RELEASE: Windows 10, version 1703
 
 The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). Some topics have been moved to [Update Windows 10](../update/index.md) or to [Configure Windows 10](../configure/index.md).
+
+
 
 ## February 2017
 
@@ -30,10 +33,12 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) | Added Express updates. |
 | [Distribute offline apps](distribute-offline-apps.md) | General updates to topic. Added links to supporting content for System Center Configuration Manager and Microsoft Intune.  |
 
+
 ## January 2017
 
 | New or changed topic | Description |
 | --- | --- |
+
 |[Cortana at work topics](../configure/cortana-at-work-overview.md)]|New |
 | [Start layout XML for desktop editions of Windows 10](start-layout-xml-desktop.md) | New (previously published in Hardware Dev Center on MSDN) |
 | [Start layout XML for mobile editions of Windows 10](start-layout-xml-mobile.md) | New (previously published in Hardware Dev Center on MSDN) |
