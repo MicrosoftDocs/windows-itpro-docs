@@ -25,7 +25,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     ```PowerShell
     Set-ExecutionPolicy Unrestricted
     $org='contoso.microsoft.com'
-    $cred=Get-Credential $admin@$org
+    $cred=Get-Credential admin@$org
     $sess= New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $cred -Authentication Basic -AllowRedirection
     Import-PSSession $sess
     ```
@@ -51,7 +51,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     If you haven’t created a compatible policy yet, use the following cmdlet—this one creates a policy called "Surface Hubs". Once it’s created, you can apply the same policy to other device accounts.
 
     ```PowerShell
-    $easPolicy = New-MobileDeviceMailboxPolicy -Name “SurfaceHubs” -PasswordEnabled $false
+    $easPolicy = New-MobileDeviceMailboxPolicy -Name "SurfaceHubs" -PasswordEnabled $false -AllowNonProvisionableDevices $True
     ```
 
     Once you have a compatible policy, then you will need to apply the policy to the device account.
@@ -112,6 +112,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
         Get-CsOnlineUser -Identity ‘alice@contoso.com’| fl *registrarpool*
         ```
         OR by setting a variable
+        
         ```PowerShell
         $strRegistrarPool = (Get-CsOnlineUser -Identity ‘alice@contoso.com’).RegistrarPool
         ```
@@ -120,7 +121,11 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
       
         ```PowerShell
         Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool yourRegistrarPool -SipAddressType EmailAddress
+        ```
+        
         OR using the $strRegistarPool variable from above
+        
+        ```PowerShell
         Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool $strRegistrarPool -SipAddressType EmailAddress
         ```
 
