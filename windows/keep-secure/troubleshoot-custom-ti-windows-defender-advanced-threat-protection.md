@@ -37,7 +37,7 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 3. Select your tenant.
 
-4. Click **Application**, then select your custom threat intelligence application.
+4. Click **Application**, then select your custom threat intelligence application. The application name is **WindowsDefenderATPThreatIntelAPI** (formerly known as **WindowsDefenderATPCustomerTiConnector**).
 
 5. Select **Keys** section, then provide a key description and specify the key validity duration.
 
