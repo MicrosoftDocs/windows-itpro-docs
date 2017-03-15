@@ -45,9 +45,7 @@ You can use System Center Configuration Manager’s existing functionality to cr
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
-3. Onboard your devices using SCCM by following the steps in the  [Onboard devices to Windows Defender ATP](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/windows-defender-advanced-threat-protection#onboard-devices-for-windows-defender-atp) topic.
-
-4. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/library/gg682178.aspx) topic.
+3. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/library/gg682178.aspx) topic.
 
     a. Choose a predefined device collection to deploy the package to.
 
