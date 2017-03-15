@@ -23,7 +23,7 @@ Enterprise IT professionals who want to use a barcode to provision mobile device
 
 The smallest provisioning package is typically 5-6 KB, which cannot fit into one single barcode. The package splitter tool allows partners to split the original provisioning package into multiple smaller sized chunks that are encoded with Base64 so that enterprises can leverage their existing tools to convert these files into barcodes.
 
-When you [install Windows Configuration Designer](provisioning-install-icd.md), **ppkgtobase64.exe** is installed to the same folder.
+When you [install Windows Configuration Designer](provisioning-install-icd.md) from the Windows Assessment and Deployment Kit (ADK), **ppkgtobase64.exe** is installed to the same folder.
 
 ## Prerequisites
 
