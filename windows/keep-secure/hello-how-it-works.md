@@ -14,7 +14,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-TWindows Hello for Business requires a registered device. When the device is set up, its user can use the device to authenticate to services. This topic explains how device registration works, what happens when a user requests authentication, how key material is stored and processed, and which servers and infrastructure components are involved in different parts of this process.
+Windows Hello for Business requires a registered device. When the device is set up, its user can use the device to authenticate to services. This topic explains how device registration works, what happens when a user requests authentication, how key material is stored and processed, and which servers and infrastructure components are involved in different parts of this process.
 
 ## Register a new user or device
 
