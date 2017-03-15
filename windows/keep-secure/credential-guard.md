@@ -21,13 +21,33 @@ By enabling Credential Guard, the following features and solutions are provided:
 
 -   **Hardware security** NTLM, Kerberos, and Credential Manager take advantage of platform security features, including Secure Boot and virtualization, to protect credentials.
 -   **Virtualization-based security** Windows NTLM and Kerberos derived credentials and other secrets run in a protected environment that is isolated from the running operating system.
--   **Better protection against advanced persistent threats** When Credential Manager domain credentials, NTLM, and Kerberos derived credentials are protected using virtualization-based security, the credential theft attack techniques and tools used in many targeted attacks are blocked. Malware running in the operating system with administrative privileges cannot extract secrets that are protected by virtualization-based security. While Credential Guard is a powerful mitigation, persistent threat attacks will likely shift to new attack techniques and you should also incorporate Device Guard and other security strategies and architectures.
-
-•	How to prevent credential theft
-•	Virtualization-based security
-•	Credential Guard Design
+-   **Better protection against advanced persistent threats** When Credential Manager domain credentials, NTLM, and Kerberos derived credentials are protected using virtualization-based security, the credential theft attack techniques and tools used in many targeted attacks are blocked. Malware running in the operating system with administrative privileges cannot extract secrets that are protected by virtualization-based security. While Credential Guard is a powerful mitigation, persistent threat attacks will likely shift to new attack techniques and you should also incorporate Device Guard and other security strategies and architectures. 
 
 
+## Topics in this guide
+
+[How Credential Guard works](credential-guard-how-it-works.md)
+
+[Credential Guard Requirements](credential-guard-requirements.md)
+
+[Manage Credential Guard](credential-guard-manage.md)
+
+[Considerations when using Credential Guard](credential-guard-considerations.md)
+
+[Scenarios not protected by Credential Guard](credential-guard-not-protected-scenarios.md)
+
+[Known issues](credential-manager-known-issues.md)
+
+[Credential Guard Scripts](credential-guard-scripts.md)
+
+
+<br>For further information, see:
+
+[How to prevent credential theft](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=CAgzpKJyC_304300474)
+
+[Virtualization-based security](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=1CoELLJyC_6704300474)
+
+[Credential Guard Design](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=mD3geLJyC_8304300474)
 
 ## Related topics
 
