@@ -49,6 +49,7 @@ By enabling Credential Guard, the following features and solutions are provided:
 
 [Credential Guard Design](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=mD3geLJyC_8304300474)
 
+
 ## Related topics
 
 - [Isolated User Mode in Windows 10 with Dave Probert (Channel 9)](https://channel9.msdn.com/Blogs/Seth-Juarez/Isolated-User-Mode-in-Windows-10-with-Dave-Probert)
