@@ -33,7 +33,7 @@ The custom TI feature uses the OAuth 2.0 protocol to enable you to access alerts
 
 For more information about the authorization flow, see [OAuth 2.0 authorization flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#oauth-20-authorization-flow).
 
-Make an HTTP POST request to the token issuing endpoint with the following parameters, replacing `<ClientId>`, `<ClientSecret>`, and `<AuthenticationServerURL>` with your app's client ID, client secret, and application key, respectively.
+Make an HTTP POST request to the token issuing endpoint with the following parameters, replacing `<ClientId>`, `<ClientSecret>`, and `<AuthenticationServerURL>` with your app's client ID, client secret, authentication server URL, and application key.
 
 >[!NOTE]
 > The `<clientId>`, `<clientSecret>`, and the `<AuthenticationServerUrl>` are all provided to you when enabling the custom threat intelligence application. For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md).
