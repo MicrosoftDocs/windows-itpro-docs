@@ -55,7 +55,7 @@ For this URL:
 Each tenant has a defined quota that limits the number of possible alert definitions, IOCs and another quota for IOCs of Action different than “equals” in the system. If you upload data beyond this quota, you'll encounter an HTTP error status code 507 (Insufficient Storage).
 
 ## Request an access token from the token issuing endpoint
-The custom TI feature uses the OAuth 2.0 protocol to enable you to access alerts in Windows Defender ATP. In the context of Windows Defender ATP, the alerts from the portal are a protected resource. To issue tokens for ad-hoc, non-automatic operations you can use the **Preferences settings** page and click the **Generate Token** button. However, if you’d like to create an automated client, you need to use the “Client Credentials Grant” flow. For more information, see the [OAuth 2.0 authorization framework](https://tools.ietf.org/html/rfc6749#section-4.4).
+Windows Defender ATP Threat Intelligence API uses OAuth 2.0. In the context of Windows Defender ATP, the alert definitions are a protected resource. To issue tokens for ad-hoc, non-automatic operations you can use the **Preferences settings** page and click the **Generate Token** button. However, if you’d like to create an automated client, you need to use the “Client Credentials Grant” flow. For more information, see the [OAuth 2.0 authorization framework](https://tools.ietf.org/html/rfc6749#section-4.4).
 
 For more information about the authorization flow, see [OAuth 2.0 authorization flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#oauth-20-authorization-flow).
 
