@@ -36,13 +36,13 @@ Field numbers match the numbers in the images.
 ![Image of file details](images/atp-file-details.png)
 
 
-#				SIEM field name	Description	Matching field in the portal
+#	SIEM fields and portal mapping
 
 Portal label | SIEM field name | Description
 :---|:---|:---
 1	| Actor |	Actor name
 2	|	Alert ID	| Alert ID visible in the link: `https://securitycenter.windows.com/alert/<alert id>`
-3	| LinkToWDATP |	Link back to the alert page in WDATP portal ||
+3	| LinkToWDATP |	Link back to the alert page in Windows Defender ATP portal |
 4	|Severity |	Alert severity
 5	| AlertTitle | Alert	title
 6	| Category |	Alert category
@@ -60,12 +60,12 @@ Portal label | SIEM field name | Description
 18 | LastProccesedTimeUtc | (Internal only)  <br><br>	Time the alert was last processed in Windows Defender ATP.
 19 | Source| Alert detection source (Windows Defender AV or Windows Defender ATP)
 20 | ThreatCategory| Windows Defender AV threat category
-21 | ThreatFamily |	Windows Defender AV family
+21 | ThreatFamily |	Windows Defender AV family name
 22	|	ThreatName	| Windows Defender AV threat name
 23 | RemediationAction |	Windows Defender AV threat category	 |
 24 |	RemediationIsSuccess	| Indicates if an alert was successfully remediated. (Windows Defender AV field)
 25 | WasExecutingWhileDetected	| Indicates if a file was running while being detected. (Windows Defender AV field)
-26 | Sha1	| Sha1 of file observed	File Sha1 in alert timeline and in file side pane (when available)
+26 | Sha1	| Sha1 of file observed	in alert timeline and in file side pane (when available)
 27 | Sha256 |	Sha256 of file observed	(when available)
 28 | Md5	| Md5 of file observed	(when available)
 
