@@ -49,7 +49,12 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 
 ### Apply provisioning package
 
-You can apply a provisioning package to a device running Windows 10 Mobile by using removable media or by copying the provisioning package to the device.
+You can apply a provisioning package to a device running Windows 10 Mobile by using:
+
+- removable media 
+- copying the provisioning package to the device
+- [NFC tags](provisioning.nfc.md)
+- [barcodes](provisioning-package-splitter.md)
 
 ### Using removable media
 
