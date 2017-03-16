@@ -9,7 +9,7 @@ ms.prod: w10
 ---
 
 # Available Mobile Data Management (MDM) settings for App-V
-With Windows 10, Version 1703, you can configure, deploy, and manage your App-V apps by using these Mobile Data Management (MDM) settings. For the full list of available settings, see the [EnterpriseAppVManagement CSP](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp) page. 
+With Windows 10, version 1703, you can configure, deploy, and manage your App-V apps by using these Mobile Data Management (MDM) settings. For the full list of available settings, see the [EnterpriseAppVManagement CSP](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp) page. 
 
 <table>
     <tr>
@@ -19,7 +19,7 @@ With Windows 10, Version 1703, you can configure, deploy, and manage your App-V 
     </tr>
     <tr>
         <td>Name</td>
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/Name</li>
@@ -30,7 +30,7 @@ With Windows 10, Version 1703, you can configure, deploy, and manage your App-V 
     </tr>
     <tr>
         <td>Version</td>
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/Version</li>
@@ -41,7 +41,7 @@ With Windows 10, Version 1703, you can configure, deploy, and manage your App-V 
     </tr>
     <tr>
         <td>Publisher</td>
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/Publisher</li>
@@ -52,7 +52,7 @@ With Windows 10, Version 1703, you can configure, deploy, and manage your App-V 
     </tr>
     <tr>
         <td>InstallLocation</td>
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/InstallLocation</li>
@@ -63,7 +63,7 @@ With Windows 10, Version 1703, you can configure, deploy, and manage your App-V 
     </tr>
     <tr>
         <td>InstallDate</td>
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/InstallDate</li>
@@ -74,7 +74,7 @@ With Windows 10, Version 1703, you can configure, deploy, and manage your App-V 
     </tr>
     <tr>
         <td>Users</td>
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/Users</li>
@@ -85,7 +85,7 @@ With Windows 10, Version 1703, you can configure, deploy, and manage your App-V 
     </tr>
     <tr>
         <td>AppVPackageID</td>
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/AppVPackageID</li>
@@ -96,7 +96,7 @@ With Windows 10, Version 1703, you can configure, deploy, and manage your App-V 
     </tr>
     <tr>
         <td>AppVVersionID</td>
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/AppVVersionID</li>
@@ -107,7 +107,7 @@ With Windows 10, Version 1703, you can configure, deploy, and manage your App-V 
     </tr>
     <tr>
         <td>AppVPackageUri</td>
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPackageManagement/<em>&lt;enterprise_id&gt;</em>/<em>&lt;package_family_name&gt;</em>/<em>&lt;package_full_name&gt;</em>/AppVPackageUri</li>
@@ -118,7 +118,7 @@ With Windows 10, Version 1703, you can configure, deploy, and manage your App-V 
     </tr>
     <tr>
         <td>LastError</td>
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/LastSync/LastError</li>
@@ -129,7 +129,7 @@ With Windows 10, Version 1703, you can configure, deploy, and manage your App-V 
     </tr>
     <tr>
         <td>LastErrorDescription</td>
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/LastSync/LastErrorDescription</li>
@@ -150,7 +150,7 @@ With Windows 10, Version 1703, you can configure, deploy, and manage your App-V 
     </tr>
     <tr>
         <td>SyncStatusDescription</td>
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/LastSync/SyncStatusDescription</li>
@@ -169,7 +169,7 @@ With Windows 10, Version 1703, you can configure, deploy, and manage your App-V 
     </tr>
     <tr>
         <td>SyncProgress</td>
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/LastSync/SyncProgress</li>
@@ -188,7 +188,7 @@ With Windows 10, Version 1703, you can configure, deploy, and manage your App-V 
     </tr>
     <tr>
         <td>PublishXML</td>
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVPublishing/Sync/PublishXML</li>
@@ -199,7 +199,7 @@ With Windows 10, Version 1703, you can configure, deploy, and manage your App-V 
     </tr>
     <tr>
         <td>Policy</td>
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/EnterpriseAppVManagement/AppVDynamicPolicy/configurationid/Policy</li>
