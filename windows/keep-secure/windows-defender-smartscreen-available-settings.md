@@ -150,10 +150,10 @@ If you manage your policies using Microsoft Intune, you'll want to use these MDM
 </tr>
 </table>
 
-## Recommended Group Policy and mobile device management (MDM) settings for your organization
+## Recommended Group Policy and MDM settings for your organization
 By default, Windows Defender SmartScreen lets employees bypass warnings. Unfortunately, this can let employees continue to an unsafe site or to continue to download an unsafe file, even after being warned. Because of this possibility, we strongly recommend that you set up Windows Defender SmartScreen to block high-risk interactions instead of providing just a warning.
 
-To better help you protect your organization, we recommend turning on and using these specific Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings.
+To better help you protect your organization, we recommend turning on and using these specific Windows Defender SmartScreen Group Policy and MDM settings.
 <table>
 <tr>
 <th align="left">Group Policy setting</th>
