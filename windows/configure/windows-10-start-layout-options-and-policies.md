@@ -50,7 +50,7 @@ The following table lists the different parts of Start and any applicable policy
 | Start size | MDM: **Force Start size**</br></br>Group Policy: **Force Start to be either full screen size or menu size** | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Use Start full screen** |
 | App list | MDM: **Start/HideAppList** | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Show app list in Start menu** |
 | All Settings | Group Policy: **Prevent changes to Taskbar and Start Menu Settings** | none |
-
+| Taskbar | MDM: **Start/NoPinningToTaskbar** | none |
 
 
  ## Taskbar options
