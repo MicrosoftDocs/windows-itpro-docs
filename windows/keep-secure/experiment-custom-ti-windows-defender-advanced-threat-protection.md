@@ -43,7 +43,7 @@ This step will guide you in creating an alert definition and an IOC for a malici
 
 2. Copy and paste the following PowerShell script. This script will upload a sample alert definition and IOC to Windows Defender ATP which you can use to generate an alert.
   >[!NOTE]
-  >Make sure you replace the `authUrl`, `clientID`, and `clientSecret` values with your details which you saved in when you enabled the threat intelligence application.
+  >Make sure you replace the `authUrl`, `clientId`, and `clientSecret` values with your details which you saved in when you enabled the threat intelligence application.
 
   [!code[ExampleScript](./code/example-script.ps1#L1-L60)]
 
