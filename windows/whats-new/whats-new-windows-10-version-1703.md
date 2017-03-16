@@ -30,7 +30,7 @@ Windows Configuration Designer in Windows 10, version 1703, includes several new
 
 ### Lockdown Designer app
 
-The Lockdown Designer app helps you configure and create your lockdown XML file, and includes a remote simulation to help you determine the layout for tiles on the Start screen. Using Lockdown Designer is easier than [manually creating a lockdown XML file](../configure/lockdown-xml.md).
+The Lockdown Designer app helps you configure and create a lockdown XML file to apply to devices running Windows 10 Mobile, and includes a remote simulation to help you determine the layout for tiles on the Start screen. Using Lockdown Designer is easier than [manually creating a lockdown XML file](../configure/lockdown-xml.md).
 
 ![Lockdown Designer app in Store](images/ldstore.png)
 
@@ -38,7 +38,7 @@ The Lockdown Designer app helps you configure and create your lockdown XML file,
 
 ### Windows Spotlight
 
-The following new Group Policy and MDM settings are added to help you configure Windows Spotlight user experiences:
+The following new Group Policy and mobile device management (MDM) settings are added to help you configure Windows Spotlight user experiences:
 
 - **Turn off the Windows Spotlight on Action Center**
 - **Do not use diagnostic data for tailored experiences**
@@ -54,7 +54,9 @@ In Windows 10 Mobile, version 1703, [Apps Corner](https://support.microsoft.com/
 
 Enterprises can apply a customized Start and tasbkar layout to devices running Windows 10 Pro, version 1703. 
 
-Previously, the customized taskbar could only be deployed using Group Policy or provisioning packages. Windows 10, version 1703, adds support for customized taskbars to [mobile device management (MDM)](../configure/customize-windows-10-start-screens-by-using-mobile-device-management.md).
+Additional MDM policy settings are available for Start and taskbar layout. For details, see [Manage Windows 10 Start and taskbar layout](../configure/windows-10-start-layout-options-and-policies.md).
+
+Previously, the customized taskbar could only be deployed using Group Policy or provisioning packages. Windows 10, version 1703, adds support for customized taskbars to [MDM](../configure/customize-windows-10-start-screens-by-using-mobile-device-management.md).
 
 ## Learn more
 
