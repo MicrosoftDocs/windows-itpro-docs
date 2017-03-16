@@ -43,73 +43,11 @@ This step will guide you in creating an alert definition and an IOC for a malici
 
 2. Copy and paste the following PowerShell script. This script will upload a sample alert definition and IOC to Windows Defender ATP which you can use to generate an alert.
   >[!NOTE]
-  >Make sure you replace the `authURL`, `clientID`, and `clientSecret` values with your details which you saved in when you enabled the threat intelligence application.
+  >Make sure you replace the `authUrl`, `clientID`, and `clientSecret` values with your details which you saved in when you enabled the threat intelligence application.
 
+  [!code[ExampleScript](./code/example-script.py#L1-L60)]
 
-  ```syntax
-
-  $authUrl = 'Your Authorization URL'
-  $clientId = 'Your Client ID'
-  $clientSecret = 'Your Client Secret'
-
-
-  Try
-  {
-      $tokenPayload = @{
-          "resource" = 'https://graph.windows.net'
-          "client_id" = $clientId
-          "client_secret" = $clientSecret
-          "grant_type"='client_credentials'}
-
-      "Fetching an access token"
-      $response = Invoke-RestMethod $authUrl -Method Post -Body $tokenPayload
-      $token = $response.access_token
-      "Token fetched successfully"
-
-      $headers = @{
-          "Content-Type" = "application/json"
-          "Accept" = "application/json"
-          "Authorization" = "Bearer {0}" -f $token }
-
-      $apiBaseUrl = "https://ti.securitycenter.windows.com/V1.0/"
-
-      $alertDefinitionPayload = @{
-          "Name" = "Test Alert"
-          "Severity" = "Medium"
-          "InternalDescription" = "A test alert used for demonstrating the WDATP TI API feature"
-          "Title" = "Test alert."
-          "UxDescription" = "This is a test alert based on a sample custom alert   definition. This alert was riggered manually using a provided test command. It indicates that the Threat Intelligence API has been properly enabled"
-          "RecommendedAction" = "No recommended action for this test alert."
-          "Category" = "SuspiciousNetworkTraffic"
-          "Enabled" = "true"}
-      "Creating an Alert Definition"
-      $alertDefinition =  
-          Invoke-RestMethod ("{0}AlertDefinitions" -f $apiBaseUrl) `
-              -Method Post -Headers $headers -Body ($alertDefinitionPayload | ConvertTo-Json)
-      "Alert Definition created successfully"
-      $alertDefinitionId = $alertDefinition.Id
-
-      $iocPayload = @{
-          "Type"="IpAddress"
-          "Value"="52.184.197.12"
-          "DetectionFunction"="Equals"
-          "Enabled"="true"
-          "AlertDefinition@odata.bind"="AlertDefinitions({0})" -f $alertDefinitionId }
-
-      "Creating an Indicator of Compromise"
-      $ioc =  
-          Invoke-RestMethod ("{0}IndicatorsOfCompromise" -f $apiBaseUrl) `
-               -Method Post -Headers $headers -Body ($iocPayload | ConvertTo-Json)
-      "Indicator of Compromise created successfully"
-
-      "All done!"
-  }
-  Catch
-  {
-      'Something Went Wrong! Got the following exception message: {0}' -f $_.Exception.Message
-  }
-  ```
-4. Run the script and verify that the operation succeeded in the results the window. Wait up to 20 minutes until the new or updated alert definition propagates to the detection engines.
+3. Run the script and verify that the operation succeeded in the results the window. Wait up to 20 minutes until the new or updated alert definition propagates to the detection engines.
 
   Example message:
   ```
@@ -129,10 +67,10 @@ This step will guide you in creating an alert definition and an IOC for a malici
   $webclient.Proxy.Credentials=$creds
   ```
 
-## Step 3: Simulate a custom TI alerts
+## Step 3: Simulate a custom TI alert
 This step will guide you in simulating an event in connection to a malicious IP that will trigger the Windows Defender ATP custom TI alert.
 
-1. Open a Windows PowerShell ISE on the machine you onboarded to Windows Defender ATP.
+1. Open a Windows PowerShell ISE in the machine you onboarded to Windows Defender ATP.
 
 2. Type `Invoke-WebRequest 52.184.197.12` in the editor and click **Run**. This call will generate a network communication event to the demo IP that will raise an alert based on the custom alert definition.
 
