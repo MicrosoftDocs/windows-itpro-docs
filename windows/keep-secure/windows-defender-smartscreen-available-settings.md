@@ -31,27 +31,27 @@ Group Policy objects (GPO's) can include registry-based Administrative Template 
         <th>Description</th>
     </tr>
     <tr>
-        <td><strong>Windows 10, Version 1703:</strong><br>Administrative Templates\Windows Components\File Explorer\Configure Windows Defender SmartScreen<p><strong>Windows 10, Version 1607 and earlier:</strong><br>Administrative Templates\Windows Components\File Explorer\Configure Windows SmartScreen</td>
+        <td><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\File Explorer\Configure Windows Defender SmartScreen<p><strong>Windows 10, Version 1607 and earlier:</strong><br>Administrative Templates\Windows Components\File Explorer\Configure Windows SmartScreen</td>
         <td>Windows 10</td>        
         <td>This policy setting turns on Windows Defender SmartScreen.<p>If you enable this setting, it turns on Windows Defender SmartScreen and your employees are unable to turn it off. Additionally when enabling this feature, you must also pick whether SmartScreen should Warn your employees or Warn and prevent bypassing the message (effectively blocking the employee from the site).<p>If you disable this setting, it turns off Windows Defender SmartScreen and your employees are unable to turn it on.<p>If you don't configure this setting (default), your employees can decide whether to use Windows Defender SmartScreen.</td>
     </tr>
     <tr>
         <td>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
-        <td>Windows 10, Version 1703</td>        
+        <td>Windows 10, version 1703</td>        
         <td>This setting helps protect PCs by allowing users to install apps only from the Windows Store. SmartScreen must be enabled for this feature to work properly.<p>If you enable this setting, your employees can only install apps from the Windows Store.<p>If you disable this setting, your employees can install apps from anywhere, including as a download from the Internet.<p>If you don't configure this setting, your employees can choose whether they can install from anywhere or only from Windows Store.</td>
     </tr>
     <tr>
-        <td><strong>Windows 10, Version 1703:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows Defender SmartScreen<p><strong>Windows 10, Version 1607 and earlier:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows SmartScreen</td>
+        <td><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows Defender SmartScreen<p><strong>Windows 10, Version 1607 and earlier:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows SmartScreen</td>
         <td>Windows 10</td>
         <td>This policy setting turns on Windows Defender SmartScreen.<p>If you enable this setting, it turns on Windows Defender SmartScreen and your employees are unable to turn it off.<p>If you disable this setting, it turns off Windows Defender SmartScreen and your employees are unable to turn it on.<p>If you don't configure this setting (default), your employees can decide whether to use Windows Defender SmartScreen.</td>
     </tr>
     <tr>
-        <td><strong>Windows 10, Version 1703:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files<p><strong>Windows 10, Version 1511 and 1607:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows SmartScreen prompts for files</td>
+        <td><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files<p><strong>Windows 10, Version 1511 and 1607:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows SmartScreen prompts for files</td>
         <td>Windows 10</td>
         <td>This policy setting stops employees from bypassing the Windows Defender SmartScreen warnings about potentially malicious files.<p>If you enable this setting, it stops employees from bypassing the warning, stopping the file download.<p>If you disable or don't configure this setting (default), your employees can bypass the warnings and continue to download potentially malicious files.</td>
     </tr>
     <tr>
-        <td><strong>Windows 10, Version 1703:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for sites<p><strong>Windows 10, Version 1511 and 1607:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows SmartScreen prompts for sites</td>
+        <td><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for sites<p><strong>Windows 10, Version 1511 and 1607:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows SmartScreen prompts for sites</td>
         <td>Windows 10</td>
         <td>This policy setting stops employees from bypassing the Windows Defender SmartScreen warnings about potentially malicious sites.<p>If you enable this setting, it stops employees from bypassing the warning, stopping them from going to the site.<p>If you disable or don't configure this setting (default), your employees can bypass the warnings and continue to visit a potentially malicious site.</td>
     </tr>
@@ -73,7 +73,7 @@ Group Policy objects (GPO's) can include registry-based Administrative Template 
 </table>
 
 ## MDM settings
-If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. You can see the full list of available policies, on the [EnterpriseAppVManagement CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp) page. All settings support both desktop computers (running Windows 10 Pro or Windows 10 Enterprise, enrolled with Microsoft Intune) and Windows 10 Mobile devices.
+If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. All settings support both desktop computers (running Windows 10 Pro or Windows 10 Enterprise, enrolled with Microsoft Intune) and Windows 10 Mobile devices.
 
 <table>
     <tr>
@@ -95,7 +95,7 @@ If you manage your policies using Microsoft Intune, you'll want to use these MDM
     </tr>    
     <tr>
         <td>EnableAppInstallControl</td>        
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/SmartScreen/EnableAppInstallControl</li>
@@ -107,7 +107,7 @@ If you manage your policies using Microsoft Intune, you'll want to use these MDM
     </tr>    
     <tr>
         <td>EnableSmartScreenInShell</td>        
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/SmartScreen/EnableSmartScreenInShell</li>
@@ -119,7 +119,7 @@ If you manage your policies using Microsoft Intune, you'll want to use these MDM
     </tr>
     <tr>
         <td>PreventOverrideForFilesInShell</td>        
-        <td>Windows 10, Version 1703</td>
+        <td>Windows 10, version 1703</td>
         <td>
             <ul>
                 <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/SmartScreen/PreventOverrideForFilesInShell</li>
@@ -202,11 +202,11 @@ To better help you protect your organization, we recommend turning on and using 
     </tr>
     <tr>
         <td>SmartScreen/EnableSmartScreenInShell</td>
-        <td>1. Turns on Windows Defender SmartScreen in Windows.<p>Requires at least Windows 10, Version 1703.</td>
+        <td>1. Turns on Windows Defender SmartScreen in Windows.<p>Requires at least Windows 10, version 1703.</td>
     </tr>
     <tr>
         <td>SmartScreen/PreventOverrideForFilesInShell</td>
-        <td>1.<br>Stops employees from ignoring warning messages about malicious files downloaded from the Internet.<p>Requires at least Windows 10, Version 1703.</td>
+        <td>1.<br>Stops employees from ignoring warning messages about malicious files downloaded from the Internet.<p>Requires at least Windows 10, version 1703.</td>
     </tr>
 </table> 
 

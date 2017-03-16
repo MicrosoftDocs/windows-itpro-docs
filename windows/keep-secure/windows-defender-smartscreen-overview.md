@@ -33,7 +33,7 @@ SmartScreen determines whether a site is potentially malicious by:
 - Checking downloaded files against a list of files that are well known and downloaded by many Windows users. If the file isn't on that list, SmartScreen shows a warning, advising caution.
 
     >[!NOTE]
-    >Before Windows 10, Version 1703 this feature was called the SmartScreen when used within the browser and Windows SmartScreen when used outside of the browser.
+    >Before Windows 10, version 1703 this feature was called the SmartScreen when used within the browser and Windows SmartScreen when used outside of the browser.
 
 ## Benefits of Windows Defender SmartScreen
 Windows Defender SmartScreen helps to provide an early warning system against websites that might engage in phishing attacks or attempt to distribute malware through a socially-engineered attack. The primary benefits are:

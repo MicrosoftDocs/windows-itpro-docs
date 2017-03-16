@@ -13,11 +13,11 @@ localizationpriority: high
 # Use Windows Defender Security Center to set Windows Defender SmartScreen for individual devices
 
 **Applies to:**
-- Windows 10, Version 1703
+- Windows 10, version 1703
 - Windows 10 Mobile
 
 
-Starting with Windows 10, Version 1703 you can use Windows Defender Security Center to set up Windows Defender SmartScreen for an individual device, unless you've used Group Policy or Microsoft Intune to prevent it.
+Starting with Windows 10, version 1703 you can use Windows Defender Security Center to set up Windows Defender SmartScreen for an individual device, unless you've used Group Policy or Microsoft Intune to prevent it.
 
 **To use Windows Defender Security Center to set up Windows Defender SmartScreen on a device**
 1. Open the Windows Defender Security Center app, and then click **App & browser control**.
