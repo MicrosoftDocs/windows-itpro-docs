@@ -43,9 +43,9 @@ Windows Defender SmartScreen helps to provide an early warning system against we
 
 - **Reputation-based URL and app protection.** SmartScreen evaluates a website's URLs to determine if they're known to distribute or host unsafe content. It also provides reputation checks for apps, checking downloaded programs and the digital signature used to sign a file. If a URL, a file, an app, or a certificate has an established reputation, your employees won't see any warnings. If however there's no reputation, the item is marked as a higher risk and presents a warning to the employee.
 
-- **Operating system integration.** SmartScreen is integrated into the Windows 10 operating system, meaning that it checks all files an app (including 3rd-party browsers and email clients) attempts to download and run.
+- **Operating system integration.** SmartScreen is integrated into the Windows 10 operating system, meaning that it checks any files an app (including 3rd-party browsers and email clients) attempts to download and run.
 
-- **Improved heuristics and telemetry.** SmartScreen is constantly learning and endeavoring to stay up-to-date, so it can help protect you against potentially malicious sites and files.
+- **Improved heuristics and telemetry.** SmartScreen is constantly learning and endeavoring to stay up-to-date, so it can help to protect you against potentially malicious sites and files.
 
 - **Management through Group Policy and Microsoft Intune.** SmartScreen supports using both Group Policy and Microsoft Intune settings. For more info about all of the available settings, see [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md).
 
