@@ -1,6 +1,6 @@
 ---
-title: Configure HP ArcSight to consume Windows Defender ATP alerts
-description: Configure HP ArcSight to receive and consume alerts from the Windows Defender ATP portal.
+title: Configure HP ArcSight to pull Windows Defender ATP alerts
+description: Configure HP ArcSight to receive and pull alerts from the Windows Defender ATP portal.
 keywords: configure hp arcsight, security information and events management tools, arcsight
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Configure HP ArcSight to consume Windows Defender ATP alerts
+# Configure HP ArcSight to pull Windows Defender ATP alerts
 
 **Applies to:**
 
@@ -21,10 +21,10 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-You'll need to install and configure some files and tools to use HP ArcSight so that it can consume Windows Defender ATP alerts.
+You'll need to install and configure some files and tools to use HP ArcSight so that it can pull Windows Defender ATP alerts.
 
 ## Before you begin
-Configuring the HP ArcSight Connector tool requires several configuration files for it to consume and parse alerts from your Azure Active Directory (AAD) application.
+Configuring the HP ArcSight Connector tool requires several configuration files for it to pull and parse alerts from your Azure Active Directory (AAD) application.
 
 This section guides you in getting the necessary information to set and use the required configuration files correctly.
 
@@ -178,6 +178,6 @@ Windows Defender ATP alerts will appear as discrete events, with "Microsoft” a
   > Verify that the connector is running by stopping the process again. Then start the connector again, and no browser window should appear.
 
 ## Related topics
-- [Configure security information and events management (SIEM) tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)
+- [Configure security information and events management (SIEM) tools to pull alerts](configure-siem-windows-defender-advanced-threat-protection.md)
 - [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Configure Splunk to consume alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
+- [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)

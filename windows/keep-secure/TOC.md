@@ -772,7 +772,7 @@
 ##### [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 ##### [Configure Splunk to consume Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
 ##### [Configure HP ArcSight to consume Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
-#### [Get alerts using REST API](generic-api-windows-defender-advanced-threat-protection.md)
+#### [Pull alerts using REST API](generic-api-windows-defender-advanced-threat-protection.md)
 ##### [SIEM schema portal mapping](siem-portal-mapping-windows-defender-advanced-threat-protection.md)
 #### [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md)
 ##### [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)

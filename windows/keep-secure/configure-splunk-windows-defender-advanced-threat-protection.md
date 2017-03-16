@@ -1,6 +1,6 @@
 ---
-title: Configure Splunk to consume Windows Defender ATP alerts
-description: Configure Splunk to receive and consume alerts from the Windows Defender ATP portal.
+title: Configure Splunk to pull Windows Defender ATP alerts
+description: Configure Splunk to receive and pull alerts from the Windows Defender ATP portal.
 keywords: configure splunk, security information and events management tools, splunk
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Configure Splunk to consume Windows Defender ATP alerts
+# Configure Splunk to pull Windows Defender ATP alerts
 
 **Applies to:**
 
@@ -21,7 +21,7 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-You'll need to configure Splunk so that it can consume Windows Defender ATP alerts.
+You'll need to configure Splunk so that it can pull Windows Defender ATP alerts.
 
 ## Before you begin
 
@@ -132,6 +132,6 @@ Use the solution explorer to view alerts in Splunk.
 
 
 ## Related topics
-- [Configure security information and events management (SIEM) tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)
+- [Configure security information and events management (SIEM) tools to pull alerts](configure-siem-windows-defender-advanced-threat-protection.md)
 - [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Configure HP ArcSight to consume alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
+- [Configure HP ArcSight to pull alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)

@@ -1,7 +1,7 @@
 ---
-title: Get Windows Defender ATP alerts using REST API
-description: Get alerts from the Windows Defender ATP portal REST API.
-keywords: alerts, get alerts, rest api, request, response,
+title: Pull Windows Defender ATP alerts using REST API
+description: Pull alerts from the Windows Defender ATP portal REST API.
+keywords: alerts, pull alerts, rest api, request, response
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Get Windows Defender ATP alerts using REST API
+# Pull Windows Defender ATP alerts using REST API
 
 **Applies to:**
 
@@ -21,7 +21,7 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Windows Defender ATP supports the OAuth 2.0 protocol to consume alerts from the portal.
+Windows Defender ATP supports the OAuth 2.0 protocol to pull alerts from the portal.
 
 In general, the OAuth 2.0 protocol supports four types of flows:
 - Authorization grant flow
@@ -37,10 +37,10 @@ The _Authorization grant flow_ uses user credentials to get an authorization cod
 
 The _Client credential flow_ uses client credentials to authenticate against the Windows Defender ATP endpoint URL. This flow is suitable for scenarios when an OAuth client creates requests to an API that doesn't require user credentials.
 
-Use the following method in the Windows Defender ATP API to get alerts in JSON format.
+Use the following method in the Windows Defender ATP API to pull alerts in JSON format.
 
 ## Before you begin
-- Before calling the Windows Defender ATP endpoint to get alerts, you'll need to enable the threat intelligence application in Azure Active Directory (AAD). For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md).
+- Before calling the Windows Defender ATP endpoint to pull alerts, you'll need to enable the threat intelligence application in Azure Active Directory (AAD). For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md).
 
 - Take note of the following values in your Azure application registration. You need these values to configure the OAuth flow in your service or daemon app:
   - Application ID (unique to your application)

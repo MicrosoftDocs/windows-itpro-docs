@@ -1,7 +1,7 @@
 ---
 title: Security information and events management (SIEM) schema and portal mapping
 description: Understand how the SIEM schema maps to the values in the Windows Defender ATP portal.
-keywords: alerts, get alerts, rest api, request, response,
+keywords: alerts, pull alerts, rest api, request, response,
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
