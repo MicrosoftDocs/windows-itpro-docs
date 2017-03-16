@@ -1,5 +1,5 @@
 ---
-title: Create custom threat intelligence using REST API in Windows Defender ATP
+title: Create threat intelligence using REST API in Windows Defender ATP
 description: Create your custom alert definitions and indicators of compromise in Windows Defender ATP using the available APIs in Windows Enterprise, Education, and Pro editions.
 keywords: alert definitions, indicators of compromise, threat intelligence, custom threat intelligence, rest api, api
 search.product: eADQiWindows 10XVcnh
@@ -53,6 +53,44 @@ For this URL:
 
 **Quotas**</br>
 Each tenant has a defined quota that limits the number of possible alert definitions, IOCs and another quota for IOCs of Action different than “equals” in the system. If you upload data beyond this quota, you'll encounter an HTTP error status code 507 (Insufficient Storage).
+
+## Request an access token from the token issuing endpoint
+Windows Defender ATP Threat Intelligence API uses OAuth 2.0. In the context of Windows Defender ATP, the alert definitions are a protected resource. To issue tokens for ad-hoc, non-automatic operations you can use the **Preferences settings** page and click the **Generate Token** button. However, if you’d like to create an automated client, you need to use the “Client Credentials Grant” flow. For more information, see the [OAuth 2.0 authorization framework](https://tools.ietf.org/html/rfc6749#section-4.4).
+
+For more information about the authorization flow, see [OAuth 2.0 authorization flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#oauth-20-authorization-flow).
+
+Make an HTTP POST request to the token issuing endpoint with the following parameters, replacing `<ClientId>`, `<ClientSecret>`, and `<AuthorizationServerUrl>` with your app's client ID, client secret and authorization server URL.
+
+>[!NOTE]
+> The authorization server URL is `https://login.windows.net/<AADTenantID>/oauth2/token`. Replace `<AADTenantID>` with your Azure Active Directory tenant ID.
+
+>[!NOTE]
+> The `<ClientId>`, `<ClientSecret>`, and the `<AuthorizationServerUrl>` are all provided to you when enabling the custom threat intelligence application. For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md).
+
+
+```
+POST <AuthorizationServerUrl> HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials
+&client_id=<ClientId>
+&client_secret=<ClientSecret>
+&resource=https://graph.microsoft.com
+```
+The response will include an access token and expiry information.
+
+```json
+{
+  "token_type": "Bearer",
+  "expires_in": "3599",
+  "ext_expires_in": "0",
+  "expires_on": "1449685363",
+  "not_before": "1449681463",
+  "resource": "https://graph.microsoft.com",
+  "access_token": "<token>"
+}
+
+```
 
 ## Threat intelligence API metadata
 The metadata document ($metadata) is published at the service root.
