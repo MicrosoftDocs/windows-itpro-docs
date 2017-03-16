@@ -1,6 +1,16 @@
 { 
   "redirections": [
     {
+        "source_path": "surface-hub/surface-hub-administrators-guide.md",
+        "redirect_url": "/itpro/surface-hub/index",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "surface-hub/intro-to-surface-hub.md",
+        "redirect_url": "/itpro/surface-hub/index",
+        "redirect_document_id": true
+    },
+    {
         "source_path": "windows/manage/waas-quick-start.md",
         "redirect_url": "/itpro/windows/update/waas-quick-start",
         "redirect_document_id": true
