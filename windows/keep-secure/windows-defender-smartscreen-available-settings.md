@@ -16,19 +16,32 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile
 
-Windows Defender SmartScreen works with Group Policy and mobile device management (MDM) settings to help you manage your organization's computer settings. 
+Windows Defender SmartScreen works with Group Policy and mobile device management (MDM) settings to help you manage your organization's computer settings. Based on how you set up Windows Defender SmartScreen, you can show employees a warning page and let them continue to the site, or you can block the site entirely.
+
+## How SmartScreen works when an employee tries to run an app
+Windows Defender SmartScreen checks the reputation of any web-based app the first time it's run from the Internet, checking digital signatures and other factors against a Microsoft-maintained service. If an app has no reputation or is known to be malicious, SmartScreen can warn the employee or block the app from running entirely, depending on how you've configured the feature to run in your organization.
+By default, your employees can bypass SmartScreen protection, letting them run legitimate apps after accepting a warning message prompt. You can also use Group Policy or Microsoft Intune to block employees from using unrecognized apps, or to entirely turn off Windows Defender SmartScreen (not recommended).
+
+### How employees can report websites as safe or unsafe
+You can configure Windows Defender SmartScreen to warn employees from going to a potentially dangerous site. Employees can then choose to report a website as safe from the warning message or as unsafe from within Microsoft Edge and Internet Explorer 11.
+
+**To report a website as safe from the warning message**
+- On the warning screen for the site, click **More Information**, and then click **Report that this site does not contain threats**. The site info is sent to the Microsoft feedback site, which provides further instructions.
+
+**To report a website as unsafe from Microsoft Edge**
+- If a site seems potentially dangerous, employees can report it to Microsoft by clicking **More (...)**, clicking **Send feedback**, and then clicking **Report unsafe site**.
+
+**To report a website as unsafe from Internet Explorer 11**
+- If a site seems potentially dangerous, employees can report it to Microsoft by clicking on the **Tools** menu, clicking **Windows Defender SmartScreen**, and then clicking **Report unsafe website**.
 
 ## Group Policy settings
-Group Policy objects (GPO's) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences. By using Group Policy and Intune, you can set up a policy setting once, and then copy that setting onto many computers. For example, you can set up multiple security settings in a GPO that's linked to a domain, and then apply all of those settings to every computer in the domain.
-
->[!Note]
->To apply your Group Policy setting to all users of a computer, you should use the setting in the Computer Configuration policy. To apply your Group Policy setting to specific users, you should use the setting in the User Configuration policy. For more info about Group Policy, see the [Group Policy TechCenter](https://go.microsoft.com/fwlink/p/?LinkId=214514). This site provides links to the latest technical documentation, videos, and downloads for Group Policy.
+SmartScreen uses registry-based Administrative Template policy settings. To apply your Group Policy setting to all users of a computer, you should use the setting in the Computer Configuration policy. To apply your Group Policy setting to specific users, you should use the setting in the User Configuration policy. For more info about Group Policy, see the [Group Policy TechCenter](https://go.microsoft.com/fwlink/p/?LinkId=214514). This site provides links to the latest technical documentation, videos, and downloads for Group Policy.
 
 <table>
     <tr>
-        <th>Setting</th>
-        <th>Supported on</th>
-        <th>Description</th>
+        <th align="left">Setting</th>
+        <th align="left">Supported on</th>
+        <th align="left">Description</th>
     </tr>
     <tr>
         <td><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\File Explorer\Configure Windows Defender SmartScreen<p><strong>Windows 10, Version 1607 and earlier:</strong><br>Administrative Templates\Windows Components\File Explorer\Configure Windows SmartScreen</td>
@@ -56,17 +69,17 @@ Group Policy objects (GPO's) can include registry-based Administrative Template 
         <td>This policy setting stops employees from bypassing the Windows Defender SmartScreen warnings about potentially malicious sites.<p>If you enable this setting, it stops employees from bypassing the warning, stopping them from going to the site.<p>If you disable or don't configure this setting (default), your employees can bypass the warnings and continue to visit a potentially malicious site.</td>
     </tr>
     <tr>
-        <td><strong>Administrative Templates\Windows Components\Internet Explorer\Prevent managing SmartScreen Filter</td>
+        <td>Administrative Templates\Windows Components\Internet Explorer\Prevent managing SmartScreen Filter</td>
         <td>Windows 10</td>
         <td>This policy setting prevents the employee from managing SmartScreen Filter.<p>If you enable this policy setting, the employee isn't prompted to turn on SmartScreen Filter. All website addresses that are not on the filter's allow list are sent automatically to Microsoft without prompting the employee.<p>If you disable or don't configure this policy setting (default), the employee is prompted to decide whether to turn on SmartScreen Filter during the first-run experience.</td>
     </tr>
     <tr>
-        <td><strong>Administrative Templates\Windows Components\Internet Explorer\Prevent bypassing SmartScreen Filter warnings</td>
+        <td>Administrative Templates\Windows Components\Internet Explorer\Prevent bypassing SmartScreen Filter warnings</td>
         <td>Windows 10</td>
         <td>This policy setting determines whether an employee can bypass warnings from SmartScreen Filter.<p>If you enable this policy setting, SmartScreen Filter warnings block the employee.<p>If you disable or don't configure this policy setting (default), the employee can bypass SmartScreen Filter warnings.</td>
     </tr>
     <tr>
-        <td><strong>Administrative Templates\Windows Components\Internet Explorer\Prevent bypassing SmartScreen Filter warnings about files that are not commonly downloaded from the Internet</td>
+        <td>Administrative Templates\Windows Components\Internet Explorer\Prevent bypassing SmartScreen Filter warnings about files that are not commonly downloaded from the Internet</td>
         <td>Windows 10</td>
         <td>This policy setting determines whether the employee can bypass warnings from SmartScreen Filter. SmartScreen Filter warns the employee about executable files that Internet Explorer users do not commonly download from the Internet.<p>If you enable this policy setting, SmartScreen Filter warnings block the employee.<p>If you disable or don't configure this policy setting (default), the employee can bypass SmartScreen Filter warnings.</td>
     </tr>
@@ -77,9 +90,9 @@ If you manage your policies using Microsoft Intune, you'll want to use these MDM
 
 <table>
     <tr>
-        <th>Setting</th>
-        <th>Supported versions</th>
-        <th>Details</th>
+        <th align="left">Setting</th>
+        <th align="left">Supported versions</th>
+        <th align="left">Details</th>
     </tr>
     <tr>
         <td>AllowSmartScreen</td>        
@@ -162,51 +175,51 @@ To better help you protect your organization, we recommend turning on and using 
 
 <table>
     <tr>
-        <th>Group Policy setting</th>
-        <th>Recommendation</th>
+        <th align="left">Group Policy setting</th>
+        <th align="left">Recommendation</th>
     </tr>
     <tr>
         <td>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows Defender SmartScreen</td>
-        <td>Enable.<br>Turns on Windows Defender SmartScreen.</td>
+        <td><strong>Enable.</strong> Turns on Windows Defender SmartScreen.</td>
     </tr>
     <tr>
         <td>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for sites</td>
-        <td>Enable.<br>Stops employees from ignoring warning messages and continuing on to a potentially malicious website.</td>
+        <td><strong>Enable.</strong> Stops employees from ignoring warning messages and continuing on to a potentially malicious website.</td>
     </tr>
     <tr>
         <td>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files</td>
-        <td>Enable.<br>Stops employees from ingnoring warning messages and continuing to download potentially malicious files.</td>
+        <td><strong>Enable.</strong> Stops employees from ingnoring warning messages and continuing to download potentially malicious files.</td>
     </tr>
     <tr>
         <td>Administrative Templates\Windows Components\File Explorer\Configure Windows Defender SmartScreen</td>
-        <td>Enable with the Warn and prevent bypass option.<br>Stops employees from ignoring warning messages about malicious files downloaded from the Internet.</td>
+        <td><strong>Enable with the Warn and prevent bypass option.</strong> Stops employees from ignoring warning messages about malicious files downloaded from the Internet.</td>
     </tr>
 </table>
-
+<p>
 <table>
     <tr>
-        <th>MDM setting</th>
-        <th>Recommendation</th>
+        <th align="left">MDM setting</th>
+        <th align="left">Recommendation</th>
     </tr>
     <tr>
         <td>Browser/AllowSmartScreen</td>
-        <td>1.<br>Turns on Windows Defender SmartScreen.</td>
+        <td><strong>1.</strong> Turns on Windows Defender SmartScreen.</td>
     </tr>
     <tr>
         <td>Browser/PreventSmartScreenPromptOverride</td>
-        <td>1.<br>Stops employees from ignoring warning messages and continuing on to a potentially malicious website.</td>
+        <td><strong>1.</strong> Stops employees from ignoring warning messages and continuing on to a potentially malicious website.</td>
     </tr>
     <tr>
         <td>Browser/PreventSmartScreenPromptOverrideForFiles</td>
-        <td>1.<br>Stops employees from ingnoring warning messages and continuing to download potentially malicious files.</td>
+        <td><strong>1.</strong> Stops employees from ingnoring warning messages and continuing to download potentially malicious files.</td>
     </tr>
     <tr>
         <td>SmartScreen/EnableSmartScreenInShell</td>
-        <td>1. Turns on Windows Defender SmartScreen in Windows.<p>Requires at least Windows 10, version 1703.</td>
+        <td><strong>1.</strong> Turns on Windows Defender SmartScreen in Windows.<p>Requires at least Windows 10, version 1703.</td>
     </tr>
     <tr>
         <td>SmartScreen/PreventOverrideForFilesInShell</td>
-        <td>1.<br>Stops employees from ignoring warning messages about malicious files downloaded from the Internet.<p>Requires at least Windows 10, version 1703.</td>
+        <td><strong>1.</strong> Stops employees from ignoring warning messages about malicious files downloaded from the Internet.<p>Requires at least Windows 10, version 1703.</td>
     </tr>
 </table> 
 

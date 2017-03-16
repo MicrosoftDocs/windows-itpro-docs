@@ -16,59 +16,41 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile
 
-Windows Defender SmartScreen helps to protect your employees if they try to visit sites previously reported as phishing or malware websites, or if an employee tries to download potentially malicious files. Based on how you set up Windows Defender SmartScreen, you can show employees a warning page and let them continue to the site, or you can block the site entirely.
+Windows Defender SmartScreen helps to protect your employees if they try to visit sites previously reported as phishing or malware websites, or if an employee tries to download potentially malicious files.
 
-SmartScreen determines whether a site is potentially malicious by:
+>[!NOTE]
+>SmartScreen completely blocks apps from the Internet from running on Windows 10 Mobile.
 
-**In Microsoft Edge and Internet Explorer**
+**SmartScreen determines whether a site is potentially malicious by:**
 
-- Analyzing visited webpages looking for indications of suspicious behavior. If it finds suspicious pages, SmartScreen shows a warning page,advising caution.
+- Analyzing visited webpages looking for indications of suspicious behavior. If it finds suspicious pages, SmartScreen shows a warning page, advising caution.
 
-- Checking the vistied sites against a dynamic list of reported phishing sites and malicious software sites. If it finds a match, SmartScreen shows a warning to let the user know that the site might be malicious.
+- Checking the visited sites against a dynamic list of reported phishing sites and malicious software sites. If it finds a match, SmartScreen shows a warning to let the user know that the site might be malicious.
 
-**In Microsoft Edge, Internet Explorer, and 3rd-party browsers**
+**SmartScreen determines whether a downloaded app or app installer is potentially malicious by**
 
 - Checking downloaded files against a list of reported malicious software sites and programs known to be unsafe. If it finds a match, SmartScreen shows a warning to let the user know that the site might be malicious. 
 
 - Checking downloaded files against a list of files that are well known and downloaded by many Windows users. If the file isn't on that list, SmartScreen shows a warning, advising caution.
 
     >[!NOTE]
-    >Before Windows 10, version 1703 this feature was called the SmartScreen when used within the browser and Windows SmartScreen when used outside of the browser.
+    >Before Windows 10, version 1703 this feature was called the SmartScreen Filter when used within the browser and Windows SmartScreen when used outside of the browser.
 
 ## Benefits of Windows Defender SmartScreen
 Windows Defender SmartScreen helps to provide an early warning system against websites that might engage in phishing attacks or attempt to distribute malware through a socially-engineered attack. The primary benefits are:
 
-- **Anti-phishing and anti-malware support.** SmartScreen helps to protect your employees from sites that are reported to host phishing attacks or attempt to distribute malicious software. It can also help protect against deceptive advertisements, scam sites, and drive-by attacks. Drive-by attacks are web-based attacks that tend to start on a trusted site, targeting security vulnerabilities in commonly-used software. Because drive-by attacks don't typically require any interaction, there's nothing to click, nothing to download, the infection is often invisible. For more info about drive-by attacks, see [Evolving Microsoft SmartScreen to protect you from drive-by attacks](https://blogs.windows.com/msedgedev/2015/12/16/SmartScreen-drive-by-improvements/#3B7Bb8bzeAPq8hXE.97)
+- **Anti-phishing and anti-malware support.** SmartScreen helps to protect your employees from sites that are reported to host phishing attacks or attempt to distribute malicious software. It can also help protect against deceptive advertisements, scam sites, and drive-by attacks. Drive-by attacks are web-based attacks that tend to start on a trusted site, targeting security vulnerabilities in commonly-used software. Because drive-by attacks can happen even if the user does not click or download anything on the page, the danger often goes unnoticed. For more info about drive-by attacks, see [Evolving Microsoft SmartScreen to protect you from drive-by attacks](https://blogs.windows.com/msedgedev/2015/12/16/SmartScreen-drive-by-improvements/#3B7Bb8bzeAPq8hXE.97)
 
-- **Reputation-based URL and app protection.** SmartScreen evaluates a website's URLs to determine if they're known to distribute or host unsafe content. It also provides reputation checks for apps, checking downloaded programs and the digital signature used to sign a file. If a URL, a file, an app, or a certificate have an established reputation, your employees won't see any warnings. If however there's no reputation, the item is marked as a higher risk and presents a warning to the employee.
+- **Reputation-based URL and app protection.** SmartScreen evaluates a website's URLs to determine if they're known to distribute or host unsafe content. It also provides reputation checks for apps, checking downloaded programs and the digital signature used to sign a file. If a URL, a file, an app, or a certificate has an established reputation, your employees won't see any warnings. If however there's no reputation, the item is marked as a higher risk and presents a warning to the employee.
 
-- **Operating system integration.** Windows Defender SmartScreen is integrated into the Windows 10 operating system, helping to protect your employees from running suspicious downloads, regardless of the browser being used or the path used by the app to get to the device (for example, email, or a USB flash drive).
+- **Operating system integration.** SmartScreen is integrated into the Windows 10 operating system, meaning that it checks all files an app (including 3rd-party browsers and email clients) attempts to download and run.
 
-- **Improved heuristics and telemetry.** Improvements to SmartScreen's heuristics and telemetry help to more quickly identify and warn your employees about malicious sites.
+- **Improved heuristics and telemetry.** SmartScreen is constantly learning and endeavoring to stay up-to-date, so it can help protect you against potentially malicious sites and files.
 
 - **Management through Group Policy and Microsoft Intune.** SmartScreen supports using both Group Policy and Microsoft Intune settings. For more info about all of the available settings, see [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md).
 
-## How SmartScreen works when an employee tries to run an app
-Windows Defender SmartScreen checks the reputation of any web-based app the first time it's run from the Internet, checking digital signatures and other factors against a Microsoft-maintained service. If an app has no reputation or is known to be malicious, SmartScreen can warn the employee or block the app from running entirely, depending on how you've configured the feature to run in your organization.
-By default, your employees can bypass SmartScreen protection, letting them run legitimate apps after accepting a warning message prompt. You can also use Group Policy or Microsoft Intune to block employees from using unrecognized apps, or to entirely turn off Windows Defender SmartScreen (not recommended).
-
-### How employees can report websites as safe or unsafe
-You can configure Windows Defender SmartScreen to warn employees from going to a potentially dangerous site. Employees can then choose to report a website as safe from the warning message or as unsafe from within Microsoft Edge and Internet Explorer 11.
-
-**To report a website as safe from the warning message**
-- On the warning screen for the site, click **More Information**, and then click **Report that this site does not contain threats**. The site info is sent to the Microsoft feedback site, which provides further instructions.
-
-**To report a website as unsafe from Microsoft Edge**
-- If a site seems potentially dangerous, employees can report it to Microsoft by clicking **More (...)**, clicking **Send feedback**, and then clicking **Report unsafe site**.
-
-**To report a website as unsafe from Internet Explorer 11**
-- If a site seems potentially dangerous, employees can report it to Microsoft by clicking on the **Tools** menu, clicking **Windows Defender SmartScreen**, and then clicking **Report unsafe website**.
-
 ## Viewing Windows Defender SmartScreen anti-phishing events
 When Windows Defender SmartScreen warns or blocks an employee from a website, it's logged as [Event 1035 - Anti-Phishing](https://technet.microsoft.com/en-us/scriptcenter/dd565657(v=msdn.10).aspx).
-
-## Windows Defender SmartScreen on Windows Mobile
-Windows Defender SmartScreen on Windows Mobile helps to provide anti-phishing protection. If SmartScreen detects malicious content on a site, it can block the site itself or in some cases just specific content on the page. Also available for Internet Explorer 11 on Windows Mobile, is the SmartScreen URL reputation filter, which blocks or warns your employees about suspicious or potentially malicious websites.
 
 ## Related topics
 - [SmartScreen Frequently Asked Questions (FAQ)](https://support.microsoft.com/en-us/products/windows?os=windows-10)

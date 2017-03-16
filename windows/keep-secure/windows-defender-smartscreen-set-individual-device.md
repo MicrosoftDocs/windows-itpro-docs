@@ -17,16 +17,43 @@ localizationpriority: high
 - Windows 10 Mobile
 
 
-Starting with Windows 10, version 1703 you can use Windows Defender Security Center to set up Windows Defender SmartScreen for an individual device, unless you've used Group Policy or Microsoft Intune to prevent it.
+Starting with Windows 10, version 1703 your employees can use Windows Defender Security Center to set up Windows Defender SmartScreen for an individual device, unless you've used Group Policy or Microsoft Intune to prevent it.
+
+>[!NOTE]
+>If any of the following settings are managed through Group Policy or mobile device management (MDM) settings, it appears as unavailable to the employee.
 
 **To use Windows Defender Security Center to set up Windows Defender SmartScreen on a device**
 1. Open the Windows Defender Security Center app, and then click **App & browser control**.
 
     ![Windows Defender Security Center](images/windows-defender-security-center.png)
 
-2. In the **App & browser control** screen, click **Block**, **Warn**, or **Off** for apps and files, for protection while using Microsoft Edge, and for Windows Store apps.
+2. In the **App & browser control** screen, choose from the following options:
 
-    ![Windows Defender Security Center, SmartScreen controls](images/windows-defender-smartscreen-control.png)
+    - In the **Check apps and files** area:
+    
+        - **Block.** Stops employees from downloading and running unrecognized apps and files from the web.
+
+        - **Warn.** Warns employees that the apps and files being downloaded from the web are potentially dangerous, but allows the action to continue.
+
+        - **Off.** Turns off SmartScreen, so an employee isn't alerted or stopped from downloading potentially malicious apps and files.
+
+    - In the **SmartScreen for Microsoft Edge** area:
+    
+        - **Block.** Stops employees from downloading and running unrecognized apps and files from the web, while using Microsoft Edge.
+        
+        - **Warn.** Warns employees that sites and downloads are potentially dangerous, but allows the action to continue while running in Microsoft Edge.
+        
+        - **Off.** Turns off SmartScreen, so an employee isn't alerted or stopped from downloading potentially malicious apps and files.    
+
+    - In the **SmartScreen from Windows Store apps** area:
+    
+        - **Block.** Stops employees from visiting potentially malicious sites or from downloading and running unrecognized apps and files used by Windows Store apps.
+        
+        - **Warn.** Warns employees that the sites and downloads used by Windows Store apps are potentially dangerous, but allows the action to continue.
+        
+        - **Off.** Turns off SmartScreen, so an employee isn't alerted or stopped from visiting sites or from downloading potentially malicious apps and files.
+
+        ![Windows Defender Security Center, SmartScreen controls](images/windows-defender-smartscreen-control.png)
 
 ## Related topics
 - [Keep Windows 10 secure](https://technet.microsoft.com/itpro/windows/keep-secure/index)
