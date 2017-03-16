@@ -37,87 +37,21 @@ Some areas of Start can be managed using Group Policy. The layout of Start tiles
 
 The following table lists the different parts of Start and any applicable policy settings or Settings options. Group Policy settings are in the **User Configuration**\\**Administrative Templates**\\**Start Menu and Taskbar** path except where a different path is listed in the table.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">Start</th>
-<th align="left">Policy</th>
-<th align="left">Setting</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">User tile</td>
-<td align="left">Group Policy: <strong>Remove Logoff on the Start menu</strong></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left">Most used</td>
-<td align="left">Group Policy: <strong>Remove frequent programs from the Start menu</strong></td>
-<td align="left"><strong>Settings</strong> &gt; <strong>Personalization</strong> &gt; <strong>Start</strong> &gt; <strong>Show most used apps</strong></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Suggestions</p>
-<p>-and-</p>
-<p>Dynamically inserted app tile</p></td>
-<td align="left"><p>MDM: <strong>Allow Windows Consumer Features</strong></p>
-<p>Group Policy: <strong>Computer Configuration</strong>\\<strong>Administrative Templates</strong>\\<strong>Windows Components</strong>\\<strong>Cloud Content</strong>\\<strong>Turn off Microsoft consumer experiences</strong></p>
-<div class="alert">
-<strong>Note</strong>  
-<p>This policy also enables or disables notifications for a user's Microsoft account and app tiles from Microsoft dynamically inserted in the default Start menu.</p>
-</div>
-<div>
- 
-</div></td>
-<td align="left"><strong>Settings</strong> &gt; <strong>Personalization</strong> &gt; <strong>Start</strong> &gt; <strong>Occasionally show suggestions in Start</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Recently added</td>
-<td align="left">not applicable</td>
-<td align="left"><strong>Settings</strong> &gt; <strong>Personalization</strong> &gt; <strong>Start</strong> &gt; <strong>Show recently added apps</strong></td>
-</tr>
-<tr class="odd">
-<td align="left">Pinned folders</td>
-<td align="left">not applicable</td>
-<td align="left"><strong>Settings</strong> &gt; <strong>Personalization</strong> &gt; <strong>Start</strong> &gt; <strong>Choose which folders appear on Start</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Power</td>
-<td align="left">Group Policy: <strong>Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands</strong></td>
-<td align="left">None</td>
-</tr>
-<tr class="even">
-<td align="left">Start layout</td>
-<td align="left"><p>MDM: <strong>Start layout</strong></p>
-<p>Group Policy: <strong>Start layout</strong></p>
-<p>Group Policy: <strong>Prevent users from customizing their Start Screen</strong></p>
-<div class="alert">
-<strong>Note</strong>  
-<p> When a full Start screen layout is imported with Group Policy or MDM, the users cannot pin, unpin, or uninstall apps from the Start screen. Users can view and open all apps in the <strong>All Apps</strong> view, but they cannot pin any apps to the Start screen. When a partial Start screen layout is imported, users cannot change the tile groups applied by the partial layout, but can modify other tile groups and create their own.</p><p><strong>Start layout</strong> policy can be used to pin apps to the taskbar based on an XML File that you provide. Users will be able to change the order of pinned apps, unpin apps, and pin additional apps to the taskbar.
-</div>
-<div>
- 
-</div></td>
-<td align="left">None</td>
-</tr>
-<tr class="odd">
-<td align="left">Jump lists</td>
-<td align="left">Group Policy: <strong>Do not keep history of recently opened documents</strong></td>
-<td align="left"><strong>Settings</strong> &gt; <strong>Personalization</strong> &gt; <strong>Start</strong> &gt; <strong>Show recently opened items in Jump Lists on Start or the taskbar</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Start size</td>
-<td align="left"><p>MDM: <strong>Force Start size</strong></p>
-<p>Group Policy: <strong>Force Start to be either full screen size or menu size</strong></p></td>
-<td align="left"><strong>Settings</strong> &gt; <strong>Personalization</strong> &gt; <strong>Start</strong> &gt; <strong>Use Start full screen</strong></td>
-</tr>
-<tr class="odd">
-<td align="left">All Settings</td>
-<td align="left">Group Policy: <strong>Prevent changes to Taskbar and Start Menu Settings</strong></td>
-<td align="left">None</td>
-</tr>
-</tbody>
-</table>
+| Start | Policy | Local setting |
+| --- | --- | --- |
+| User tile | MDM: **Start/HideUserTile**</br>**Start/HideSwitchAccount**</br>**Start/HideSignOut**</br>**Start/HideLock**</br>**Start/HideChangeAccountSettings**</br></br>Group Policy: **Remove Logoff on the Start menu** | none  |
+| Most used | MDM: **Start/HideFrequentlyUsedApps**</br></br>Group Policy: **Remove frequent programs from the Start menu** | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Show most used apps** |
+| Suggestions</br>-and-</br>Dynamically inserted app tile | MDM: **Allow Windows Consumer Features**</br></br>Group Policy: **Computer Configuration\Administrative Templates\Windows Components\Cloud Content\Turn off Microsoft consumer experiences**</br></br>**Note:** This policy also enables or disables notifications for a user's Microsoft account and app tiles from Microsoft dynamically inserted in the default Start menu. | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Occasionally show suggestions in Start** |
+| Recently added | MDM: **Start/HideRecentlyAddedApps** | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Show recently added apps** |
+| Pinned folders | MDM: **AllowPinnedFolder** | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Choose which folders appear on Start** |
+| Power | MDM: **Start/HidePowerButton**</br>**Start/HideHibernate**</br>**Start/HideRestart**</br>**Start/HideShutDown**</br>**Start/HideSleep**</br></br>Group Policy: **Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands** | none |
+| Start layout | MDM: **Start layout**</br>**ImportEdgeAssets**</br></br>Group Policy: **Prevent users from customizing their Start screen**</br></br>**Note:** When a full Start screen layout is imported with Group Policy or MDM, the users cannot pin, unpin, or uninstall apps from the Start screen. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to the Start screen. When a partial Start screen layout is imported, users cannot change the tile groups applied by the partial layout, but can modify other tile groups and create their own.</br></br>**Start layout** policy can be used to pin apps to the taskbar based on an XML File that you provide. Users will be able to change the order of pinned apps, unpin apps, and pin additional apps to the taskbar. | none |
+| Jump lists | MDM: **Start/HideRecentJumplists**</br></br>Group Policy: **Do not keep history of recently opened documents** | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Show recently opened items in Jump Lists on Start or the taskbar** |
+| Start size | MDM: **Force Start size**</br></br>Group Policy: **Force Start to be either full screen size or menu size** | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Use Start full screen** |
+| App list | MDM: **Start/HideAppList** | **Settings** &gt; **Personalization** &gt; **Start** &gt; **Show app list in Start menu** |
+| All Settings | Group Policy: **Prevent changes to Taskbar and Start Menu Settings** | none |
+
+
 
  ## Taskbar options
 
