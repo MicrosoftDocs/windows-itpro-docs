@@ -20,7 +20,6 @@ Windows Defender SmartScreen works with Group Policy and mobile device managemen
 
 ## Group Policy settings
 SmartScreen uses registry-based Administrative Template policy settings. To apply your Group Policy setting to all users of a computer, you should use the setting in the Computer Configuration policy. To apply your Group Policy setting to specific users, you should use the setting in the User Configuration policy. For more info about Group Policy, see the [Group Policy TechCenter](https://go.microsoft.com/fwlink/p/?LinkId=214514). This site provides links to the latest technical documentation, videos, and downloads for Group Policy.
-
 <table>
     <tr>
         <th align="left">Setting</th>
@@ -71,7 +70,6 @@ SmartScreen uses registry-based Administrative Template policy settings. To appl
 
 ## MDM settings
 If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. All settings support both desktop computers (running Windows 10 Pro or Windows 10 Enterprise, enrolled with Microsoft Intune) and Windows 10 Mobile devices.
-
 <table>
     <tr>
         <th align="left">Setting</th>
@@ -152,11 +150,11 @@ If you manage your policies using Microsoft Intune, you'll want to use these MDM
     </tr>
 <table>
 
+
 ## Recommended Group Policy and mobile device management (MDM) settings for Windows Defender SmartScreen in your organization
 By default, Windows Defender SmartScreen lets employees bypass warnings. Unfortunately, this can let employees continue to an unsafe site or to continue to download an unsafe file, even after being warned. Because of this possibility, we strongly recommend that you set up Windows Defender SmartScreen to block high-risk interactions instead of providing just a warning.
 
 To better help you protect your organization, we recommend turning on and using these specific Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings.
-
 <table>
     <tr>
         <th align="left">Group Policy setting</th>
