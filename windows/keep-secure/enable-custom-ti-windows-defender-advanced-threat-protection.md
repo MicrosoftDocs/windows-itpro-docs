@@ -27,6 +27,8 @@ Before you can create custom threat intelligence (TI) using REST API, you'll nee
 
 1. In the navigation pane, select **Preference Setup** > **Threat intel API**.
 
+  ![Image of threat intel API menu](images/atp-threat-intel-api.png)
+
 2. Select **Enable threat intel API**. This activates the **Azure Active Directory application** setup sections with pre-populated values.
 
 3. Copy the individual values or select **Save details to file** to download a file that contains all the values.
