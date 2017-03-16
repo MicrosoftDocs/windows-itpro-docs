@@ -9,7 +9,7 @@ ms.prod: w10
 ---
 
 # Available Mobile Data Management (MDM) settings for App-V
-With Windows 10, Version 1703, you can configure, deploy, and manage your App-V apps by using these Mobile Data Management (MDM) settings. For the full list of available settings, see the [Policy CSP]() page. 
+With Windows 10, Version 1703, you can configure, deploy, and manage your App-V apps by using these Mobile Data Management (MDM) settings. For the full list of available settings, see the [EnterpriseAppVManagement CSP](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp) page. 
 
 <table>
     <tr>
