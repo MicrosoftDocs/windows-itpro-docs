@@ -18,22 +18,6 @@ localizationpriority: high
 
 Windows Defender SmartScreen works with Group Policy and mobile device management (MDM) settings to help you manage your organization's computer settings. Based on how you set up Windows Defender SmartScreen, you can show employees a warning page and let them continue to the site, or you can block the site entirely.
 
-## How SmartScreen works when an employee tries to run an app
-Windows Defender SmartScreen checks the reputation of any web-based app the first time it's run from the Internet, checking digital signatures and other factors against a Microsoft-maintained service. If an app has no reputation or is known to be malicious, SmartScreen can warn the employee or block the app from running entirely, depending on how you've configured the feature to run in your organization.
-By default, your employees can bypass SmartScreen protection, letting them run legitimate apps after accepting a warning message prompt. You can also use Group Policy or Microsoft Intune to block employees from using unrecognized apps, or to entirely turn off Windows Defender SmartScreen (not recommended).
-
-### How employees can report websites as safe or unsafe
-You can configure Windows Defender SmartScreen to warn employees from going to a potentially dangerous site. Employees can then choose to report a website as safe from the warning message or as unsafe from within Microsoft Edge and Internet Explorer 11.
-
-**To report a website as safe from the warning message**
-- On the warning screen for the site, click **More Information**, and then click **Report that this site does not contain threats**. The site info is sent to the Microsoft feedback site, which provides further instructions.
-
-**To report a website as unsafe from Microsoft Edge**
-- If a site seems potentially dangerous, employees can report it to Microsoft by clicking **More (...)**, clicking **Send feedback**, and then clicking **Report unsafe site**.
-
-**To report a website as unsafe from Internet Explorer 11**
-- If a site seems potentially dangerous, employees can report it to Microsoft by clicking on the **Tools** menu, clicking **Windows Defender SmartScreen**, and then clicking **Report unsafe website**.
-
 ## Group Policy settings
 SmartScreen uses registry-based Administrative Template policy settings. To apply your Group Policy setting to all users of a computer, you should use the setting in the Computer Configuration policy. To apply your Group Policy setting to specific users, you should use the setting in the User Configuration policy. For more info about Group Policy, see the [Group Policy TechCenter](https://go.microsoft.com/fwlink/p/?LinkId=214514). This site provides links to the latest technical documentation, videos, and downloads for Group Policy.
 

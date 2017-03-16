@@ -10,13 +10,32 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Use Windows Defender Security Center to set Windows Defender SmartScreen for individual devices
+# How employees can set and use Windows Defender SmartScreen
 
 **Applies to:**
 - Windows 10, version 1703
 - Windows 10 Mobile
 
+Windows Defender SmartScreen helps to protect your employees if they try to visit sites previously reported as phishing or malware websites, or if an employee tries to download potentially malicious files.
 
+## How SmartScreen works when an employee tries to run an app
+Windows Defender SmartScreen checks the reputation of any web-based app the first time it's run from the Internet, checking digital signatures and other factors against a Microsoft-maintained service. If an app has no reputation or is known to be malicious, SmartScreen can warn the employee or block the app from running entirely, depending on how you've configured the feature to run in your organization.
+
+By default, your employees can bypass SmartScreen protection, letting them run legitimate apps after accepting a warning message prompt. You can also use Group Policy or Microsoft Intune to block employees from using unrecognized apps, or to entirely turn off Windows Defender SmartScreen (not recommended).
+
+## How employees can report websites as safe or unsafe
+You can configure Windows Defender SmartScreen to warn employees from going to a potentially dangerous site. Employees can then choose to report a website as safe from the warning message or as unsafe from within Microsoft Edge and Internet Explorer 11.
+
+**To report a website as safe from the warning message**
+- On the warning screen for the site, click **More Information**, and then click **Report that this site does not contain threats**. The site info is sent to the Microsoft feedback site, which provides further instructions.
+
+**To report a website as unsafe from Microsoft Edge**
+- If a site seems potentially dangerous, employees can report it to Microsoft by clicking **More (...)**, clicking **Send feedback**, and then clicking **Report unsafe site**.
+
+**To report a website as unsafe from Internet Explorer 11**
+- If a site seems potentially dangerous, employees can report it to Microsoft by clicking on the **Tools** menu, clicking **Windows Defender SmartScreen**, and then clicking **Report unsafe website**.
+
+## How employees can use Windows Defender Security Center to set up Windows Defender SmartScreen
 Starting with Windows 10, version 1703 your employees can use Windows Defender Security Center to set up Windows Defender SmartScreen for an individual device, unless you've used Group Policy or Microsoft Intune to prevent it.
 
 >[!NOTE]
