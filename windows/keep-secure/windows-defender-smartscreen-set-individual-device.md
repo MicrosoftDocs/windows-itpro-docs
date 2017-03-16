@@ -1,6 +1,6 @@
 ---
-title: Use Windows Defender Security Center to set Windows Defender SmartScreen for individual devices (Windows 10)
-description: Steps about how to use the Windows Defender Security Center to set Windows Defender SmartScreen for individual devices.
+title: How employees can set and use Windows Defender SmartScreen (Windows 10)
+description: Steps about what happens when an employee tries to run an app, how employees can report websites as safe or unsafe, and how employees can use the Windows Defender Security Center to set Windows Defender SmartScreen for individual devices.
 keywords: SmartScreen Filter, Windows SmartScreen
 ms.prod: w10
 ms.mktglfcycl: explore
