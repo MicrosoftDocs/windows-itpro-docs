@@ -45,6 +45,7 @@ This step will guide you in creating an alert definition and an IOC for a malici
   >[!NOTE]
   >Make sure you replace the `authUrl`, `clientID`, and `clientSecret` values with your details which you saved in when you enabled the threat intelligence application.
 
+  [!code[ExampleScript](./code/example-script.ps1#L1-L60)]
 
 3. Run the script and verify that the operation succeeded in the results the window. Wait up to 20 minutes until the new or updated alert definition propagates to the detection engines.
 
