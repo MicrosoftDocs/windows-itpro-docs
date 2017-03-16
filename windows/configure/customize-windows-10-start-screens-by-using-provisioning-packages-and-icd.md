@@ -18,9 +18,7 @@ localizationpriority: medium
 - Windows 10
 - Windows 10 Mobile
 
-**Looking for consumer information?**
-
--   [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
+>**Looking for consumer information?** [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
 In Windows 10 Mobile, Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, version 1703, you can use a provisioning package that you create with Windows Configuration Designer to deploy a customized Start and taskbar layout to users. No reimaging is required, and the Start and taskbar layout can be updated simply by overwriting the .xml file that contains the layout. The provisioning package can be applied to a running device. This enables you to customize Start and taskbar layouts for different departments or organizations, with minimal management overhead.
 
