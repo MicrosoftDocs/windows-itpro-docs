@@ -32,7 +32,7 @@ The Basic level helps to identify problems that can occur on a particular device
 
 Use this article to learn about telemetry events, grouped by event area, and the fields within each event. A brief description is provided for each field. Every event generated includes common data, which collects device data.
 
-You can learn more about Windows functional and telemetry through these articles:
+You can learn more about Windows functional and telemetry data through these articles:
 
 
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
