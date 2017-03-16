@@ -30,7 +30,7 @@ SmartScreen uses registry-based Administrative Template policy settings. To appl
     <tr>
         <td><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\File Explorer\Configure Windows Defender SmartScreen<p><strong>Windows 10, Version 1607 and earlier:</strong><br>Administrative Templates\Windows Components\File Explorer\Configure Windows SmartScreen</td>
         <td>Windows 10</td>        
-        <td>This policy setting turns on Windows Defender SmartScreen.<p>If you enable this setting, it turns on Windows Defender SmartScreen and your employees are unable to turn it off. Additionally when enabling this feature, you must also pick whether SmartScreen should Warn your employees or Warn and prevent bypassing the message (effectively blocking the employee from the site).<p>If you disable this setting, it turns off Windows Defender SmartScreen and your employees are unable to turn it on.<p>If you don't configure this setting (default), your employees can decide whether to use Windows Defender SmartScreen.</td>
+        <td>This policy setting turns on Windows Defender SmartScreen.<p>If you enable this setting, it turns on Windows Defender SmartScreen and your employees are unable to turn it off. Additionally, when enabling this feature, you must also pick whether SmartScreen should Warn your employees or Warn and prevent bypassing the message (effectively blocking the employee from the site).<p>If you disable this setting, it turns off Windows Defender SmartScreen and your employees are unable to turn it on.<p>If you don't configure this setting (default), your employees can decide whether to use Windows Defender SmartScreen.</td>
     </tr>
     <tr>
         <td>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
@@ -168,7 +168,7 @@ To better help you protect your organization, we recommend turning on and using 
     </tr>
     <tr>
         <td>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for sites</td>
-        <td><strong>Enable.</strong> Stops employees from ignoring warning messages and continuing on to a potentially malicious website.</td>
+        <td><strong>Enable.</strong> Stops employees from ignoring warning messages and continuing to a potentially malicious website.</td>
     </tr>
     <tr>
         <td>Administrative Templates\Windows Components\Microsoft Edge\Prevent bypassing Windows Defender SmartScreen prompts for files</td>
@@ -191,7 +191,7 @@ To better help you protect your organization, we recommend turning on and using 
     </tr>
     <tr>
         <td>Browser/PreventSmartScreenPromptOverride</td>
-        <td><strong>1.</strong> Stops employees from ignoring warning messages and continuing on to a potentially malicious website.</td>
+        <td><strong>1.</strong> Stops employees from ignoring warning messages and continuing to a potentially malicious website.</td>
     </tr>
     <tr>
         <td>Browser/PreventSmartScreenPromptOverrideForFiles</td>

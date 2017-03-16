@@ -19,7 +19,7 @@ localizationpriority: high
 Windows Defender SmartScreen helps to protect your employees if they try to visit sites previously reported as phishing or malware websites, or if an employee tries to download potentially malicious files.
 
 ## How employees can use Windows Defender Security Center to set up Windows Defender SmartScreen
-Starting with Windows 10, version 1703 your employees can use Windows Defender Security Center to set up Windows Defender SmartScreen for an individual device, unless you've used Group Policy or Microsoft Intune to prevent it.
+Starting with Windows 10, version 1703 your employees can use Windows Defender Security Center to set up Windows Defender SmartScreen for an individual device; unless you've used Group Policy or Microsoft Intune to prevent it.
 
 >[!NOTE]
 >If any of the following settings are managed through Group Policy or mobile device management (MDM) settings, it appears as unavailable to the employee.

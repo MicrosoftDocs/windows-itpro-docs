@@ -27,7 +27,7 @@ Windows Defender SmartScreen helps to protect your employees if they try to visi
 
 - Checking the visited sites against a dynamic list of reported phishing sites and malicious software sites. If it finds a match, SmartScreen shows a warning to let the user know that the site might be malicious.
 
-**SmartScreen determines whether a downloaded app or app installer is potentially malicious by**
+**SmartScreen determines whether a downloaded app or app installer is potentially malicious by:**
 
 - Checking downloaded files against a list of reported malicious software sites and programs known to be unsafe. If it finds a match, SmartScreen shows a warning to let the user know that the site might be malicious. 
 
@@ -47,7 +47,7 @@ Windows Defender SmartScreen helps to provide an early warning system against we
 
 - **Improved heuristics and telemetry.** SmartScreen is constantly learning and endeavoring to stay up-to-date, so it can help to protect you against potentially malicious sites and files.
 
-- **Management through Group Policy and Microsoft Intune.** SmartScreen supports using both Group Policy and Microsoft Intune settings. For more info about all of the available settings, see [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md).
+- **Management through Group Policy and Microsoft Intune.** SmartScreen supports using both Group Policy and Microsoft Intune settings. For more info about all available settings, see [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md).
 
 ## Viewing Windows Defender SmartScreen anti-phishing events
 When Windows Defender SmartScreen warns or blocks an employee from a website, it's logged as [Event 1035 - Anti-Phishing](https://technet.microsoft.com/en-us/scriptcenter/dd565657(v=msdn.10).aspx).
