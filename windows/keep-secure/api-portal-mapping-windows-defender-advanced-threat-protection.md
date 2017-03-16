@@ -1,7 +1,7 @@
 ---
-title: Security information and events management (SIEM) schema and portal mapping
-description: Understand how the SIEM schema maps to the values in the Windows Defender ATP portal.
-keywords: alerts, pull alerts, rest api, request, response,
+title: Windows Defender ATP alert API fields
+description: Understand how the alert API fields map to the values in the Windows Defender ATP portal.
+keywords: alerts, alert fields, fields, api, fields, pull alerts, rest api, request, response
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# SIEM schema portal mapping
+# Windows Defender ATP alert API fields
 
 **Applies to:**
 
