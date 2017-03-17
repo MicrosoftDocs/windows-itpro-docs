@@ -18,7 +18,7 @@ localizationpriority: high
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
-You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices. The sections in this topic provide the Group Policy and MDM policies for both Windows 10, version 1511, and Windows 10, version 1607. The MDM policies use the OMA-URI setting from the [Policy CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx).  
+You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices. The sections in this topic provide the Group Policy and MDM policies for Windows 10, version 1511 and above. The MDM policies use the OMA-URI setting from the [Policy CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx).  
 
 >[!IMPORTANT]
 >For Windows Update for Business policies to be honored, the Telemetry level of the device must be set to **1 (Basic)** or higher.  If it is set to **0 (Security)**, Windows Update for Business policies will have no effect. For instructions, see [Configure the operating system telemetry level](https://technet.microsoft.com/en-us/itpro/windows/manage/configure-windows-telemetry-in-your-organization#configure-the-operating-system-telemetry-level).
@@ -35,24 +35,32 @@ By grouping devices with similar deferral periods, administrators are able to cl
 
 ## Configure devices for Current Branch (CB) or Current Branch for Business (CBB)
 
-With Windows Update for Business, you can set a device to be on either the Current Branch (CB) or the Current Branch for Business (CBB) servicing branch. For more information on this servicing model, see [Windows 10 servicing options](https://technet.microsoft.com/en-us/itpro/windows/manage/introduction-to-windows-10-servicing). 
+With Windows Update for Business, you can set a device to be on either the Current Branch (CB) or the Current Branch for Business (CBB) servicing branch. For more information on this servicing model, see [Windows 10 servicing options](waas-overview.md#servicing-branches). 
 
 **Release branch policies**
 
 | Policy | Sets registry key under **HKLM\Software** |
 | --- | --- |
-| GPO for version 1607: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\BranchReadinessLevel |
+| GPO for version 1607 and above: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\BranchReadinessLevel |
 | GPO for version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\DeferUpgrade |
-| MDM for version 1607: </br>../Vendor/MSFT/Policy/Config/Update/</br>**BranchReadinessLevel** | \Microsoft\PolicyManager\default\Update\BranchReadinessLevel |
+| MDM for version 1607 and above: </br>../Vendor/MSFT/Policy/Config/Update/</br>**BranchReadinessLevel** | \Microsoft\PolicyManager\default\Update\BranchReadinessLevel |
 | MDM for version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**RequireDeferredUpgrade** | \Microsoft\PolicyManager\default\Update\RequireDeferUpgrade |
 
+Starting with version 1703, users are able to configure their device's branch readiness level, by going to **Settings > Update & security > Windows Update > Advanced options**.
+
+![Branch readiness level setting](images/waas-wufb-settings-branch.jpg)
+
+>[!NOTE]
+>Users will not be able to change this setting if it was configured by policy.
 
 ## Configure when devices receive Feature Updates
 
-After you configure the servicing branch (CB or CBB), you can then define if, and for how long, you would like to defer receiving Feature Updates following their availability from Microsoft on Windows Update.  You can defer receiving these Feature Updates for a period of 180 days from their release by setting the `DeferFeatureUpdatesPeriodinDays` value.  
+After you configure the servicing branch (CB or CBB), you can then define if, and for how long, you would like to defer receiving Feature Updates following their availability from Microsoft on Windows Update.  You can defer receiving these Feature Updates for a period of up to 365 days from their release by setting the `DeferFeatureUpdatesPeriodinDays` value.  
 
 >[!IMPORTANT]
 >This policy does not apply to Windows 10 Mobile Enterprise.
+>
+>You can only defer up to 180 days prior to version 1703.
 
 **Examples**
 
@@ -66,9 +74,9 @@ After you configure the servicing branch (CB or CBB), you can then define if, an
 
 | Policy | Sets registry key under **HKLM\Software** |
 | --- | --- |
-| GPO for version 1607: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\DeferFeatureUpdates</br>\Policies\Microsoft\Windows\WindowsUpdate\DeferFeatureUpdatesPeriodInDays |
+| GPO for version 1607 and above: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\DeferFeatureUpdates</br>\Policies\Microsoft\Windows\WindowsUpdate\DeferFeatureUpdatesPeriodInDays |
 | GPO for version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\DeferUpgradePeriod |
-| MDM for version 1607: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferFeatureUpdatesPeriodInDays** | \Microsoft\PolicyManager\default\Update\DeferFeatureUpdatesPeriodInDays |
+| MDM for version 1607 and above: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferFeatureUpdatesPeriodInDays** | \Microsoft\PolicyManager\default\Update\DeferFeatureUpdatesPeriodInDays |
 | MDM for version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferUpgrade** | \Microsoft\PolicyManager\default\Update\RequireDeferUpgrade |
 
 
@@ -83,9 +91,9 @@ You can also pause a device from receiving Feature Updates by a period of up to 
 
 | Policy | Sets registry key under **HKLM\Software** |
 | --- | --- |
-| GPO for version 1607: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\PauseFeatureUpdates  |
+| GPO for version 1607 and above: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\PauseFeatureUpdates  |
 | GPO for version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\Pause |
-| MDM for version 1607: </br>../Vendor/MSFT/Policy/Config/Update/</br>**PauseFeatureUpdates** | \Microsoft\PolicyManager\default\Update\PauseFeatureUpdates |
+| MDM for version 1607 and above: </br>../Vendor/MSFT/Policy/Config/Update/</br>**PauseFeatureUpdates** | \Microsoft\PolicyManager\default\Update\PauseFeatureUpdates |
 | MDM for version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferUpgrade** | \Microsoft\PolicyManager\default\Update\Pause |
 
 
@@ -113,9 +121,9 @@ You can set your system to receive updates for other Microsoft products—known 
 
 | Policy | Sets registry key under **HKLM\Software** |
 | --- | --- |
-| GPO for version 1607: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Quality Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\DeferQualityUpdates</br>\Policies\Microsoft\Windows\WindowsUpdate\DeferQualityUpdatesPeriodInDays  |
+| GPO for version 1607 and above: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Quality Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\DeferQualityUpdates</br>\Policies\Microsoft\Windows\WindowsUpdate\DeferQualityUpdatesPeriodInDays  |
 | GPO for version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\DeferUpdatePeriod |
-| MDM for version 1607: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferQualityUpdatesPeriodInDays** | \Microsoft\PolicyManager\default\Update\DeferQualityUpdatesPeriodInDays |
+| MDM for version 1607 and above: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferQualityUpdatesPeriodInDays** | \Microsoft\PolicyManager\default\Update\DeferQualityUpdatesPeriodInDays |
 | MDM for version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferUpgrade** | \Microsoft\PolicyManager\default\Update\RequireDeferUpdate  |
 
 
@@ -130,9 +138,9 @@ You can also pause a system from receiving Quality Updates for a period of up to
 
 | Policy | Sets registry key under **HKLM\Software** |
 | --- | --- |
-| GPO for version 1607: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Quality Updates are received** |\Policies\Microsoft\Windows\WindowsUpdate\PauseQualityUpdates  |
+| GPO for version 1607 and above: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Quality Updates are received** |\Policies\Microsoft\Windows\WindowsUpdate\PauseQualityUpdates  |
 | GPO for version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\Pause |
-| MDM for version 1607: </br>../Vendor/MSFT/Policy/Config/Update/</br>**PauseQualityUpdates** | \Microsoft\PolicyManager\default\Update\PauseQualityUpdates |
+| MDM for version 1607 and above: </br>../Vendor/MSFT/Policy/Config/Update/</br>**PauseQualityUpdates** | \Microsoft\PolicyManager\default\Update\PauseQualityUpdates |
 | MDM for version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferUpgrade** | \Microsoft\PolicyManager\default\Update\Pause |
 
 
@@ -148,20 +156,20 @@ The local group policy editor (GPEdit.msc) will not reflect if your Quality Upda
 
 ## Exclude drivers from Quality Updates
 
-In Windows 10, version 1607, you can selectively option out of receiving driver update packages as part of your normal quality update cycle.  This policy will not pertain to updates to inbox drivers (which will be packaged within a security or critical update) or to Feature Updates, where drivers may be dynamically installed to ensure the Feature Update process can complete.
+In Windows 10, starting with version 1607, you can selectively option out of receiving driver update packages as part of your normal quality update cycle.  This policy will not pertain to updates to inbox drivers (which will be packaged within a security or critical update) or to Feature Updates, where drivers may be dynamically installed to ensure the Feature Update process can complete.
 
 **Exclude driver policies**
 
 | Policy | Sets registry key under **HKLM\Software** |
 | --- | --- |
-| GPO for version 1607: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Do not include drivers with Windows Updates** | \Policies\Microsoft\Windows\WindowsUpdate\ExcludeWUDriversInQualityUpdate  |
-| MDM for version 1607: </br>../Vendor/MSFT/Policy/Config/Update/</br>**ExcludeWUDriversInQualityUpdate** | \Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdate |
+| GPO for version 1607 and above: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Do not include drivers with Windows Updates** | \Policies\Microsoft\Windows\WindowsUpdate\ExcludeWUDriversInQualityUpdate  |
+| MDM for version 1607 and above: </br>../Vendor/MSFT/Policy/Config/Update/</br>**ExcludeWUDriversInQualityUpdate** | \Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdate |
 
 
 
-## Summary: MDM and Group Policy for version 1607
+## Summary: MDM and Group Policy for version 1607 and above
 
-Below are quick-reference tables of the supported Windows Update for Business policy values for Windows 10, version 1607.
+Below are quick-reference tables of the supported Windows Update for Business policy values for Windows 10, version 1607 and above.
 
 **GPO: HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate**
 
@@ -172,7 +180,7 @@ Below are quick-reference tables of the supported Windows Update for Business po
 | DeferQualityUpdatesPeriodinDays | REG_DWORD | 0-30: defer quality updates by given days |
 | PauseQualityUpdates | REG_DWORD | 1: pause quality updates</br>Other value or absent: don’t pause quality updates |
 |DeferFeatureUpdates | REG_DWORD | 1: defer feature updates</br>Other value or absent: don’t defer feature updates |
-| DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-180: defer feature updates by given days |
+| DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-180: defer feature updates by given days</br>**Note:** Starting with version 1703, the range is 0-365. |
 | PauseFeatureUpdates | REG_DWORD |1: pause feature updates</br>Other value or absent: don’t pause feature updates |
 | ExcludeWUDriversInQualityUpdate | REG_DWORD | 1: exclude Windows Update drivers</br>Other value or absent: offer Windows Update drivers |
 
@@ -184,7 +192,7 @@ Below are quick-reference tables of the supported Windows Update for Business po
 | BranchReadinessLevel | REG_DWORD | 16: systems take Feature Updates for the Current Branch (CB)</br>32: systems take Feature Updates for the Current Branch for Business (CBB)</br>Note: Other value or absent: receive all applicable updates (CB) |
 | DeferQualityUpdatesPeriodinDays | REG_DWORD | 0-30: defer quality updates by given days |
 | PauseQualityUpdates | REG_DWORD | 1: pause quality updates</br>Other value or absent: don’t pause quality updates |
-| DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-180: defer feature updates by given days |
+| DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-180: defer feature updates by given days</br>**Note:** Starting with version 1703, the range is 0-365. |
 | PauseFeatureUpdates | REG_DWORD | 1: pause feature updates</br>Other value or absent: don’t pause feature updates |
 | ExcludeWUDriversinQualityUpdate | REG_DWORD | 1: exclude Windows Update drivers</br>Other value or absent: offer Windows Update drivers |
 
