@@ -21,9 +21,7 @@ This topic provides a summary of available upgrade paths to Windows 10. You can 
 
 >**Windows 10 LTSB**: The upgrade paths displayed below do not apply to Windows 10 LTSB. In-place upgrade from Windows 7 or Windows 8.1 to Windows 10 LTSB is not supported.  (Note that Windows 10 LTSB 2015 did not block this upgrade path.  This was corrected in the Windows 10 LTSB 2016 release, which will now only allow data-only and clean install options.)
 
->**Windows N/KN**: Windows "N" and "KN" editions follow the same upgrade paths shown below. If the pre-upgrade and post-upgrade editions are not the same type (e.g. Windows 8.1 Pro N to Windows 10 Pro), personal data will be kept but applications and settings will be removed during the upgrade process.  
-
->**Free upgrade**: The Windows 10 free upgrade offer expired on July 29, 2016. For more information, see [Free upgrade paths](#free-upgrade-paths).
+>**Windows N/KN**: Windows "N" and "KN" editions follow the same upgrade paths shown below. If the pre-upgrade and post-upgrade editions are not the same type (e.g. Windows 8.1 Pro N to Windows 10 Pro), personal data will be kept but applications and settings will be removed during the upgrade process.
 
 ✔ = Full upgrade is supported including personal data, settings, and applications.<BR>
 D = Edition downgrade; personal data is maintained, applications and settings are removed.
@@ -332,77 +330,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>D</td>
         <td>✔</td>
     </tr>
-</table>
-
-## Free upgrade paths
-
-Windows 10 is offered as a free upgrade for the first year after launch of Windows 10, with the following restrictions: 
-- The offer expires on July 29th, 2016.
-- The offer applies to devices connected to the Internet with Windows Update enabled.
-- Upgrading to Windows 10 Pro requires a computer running the Pro or Ultimate version of Windows 7/8/8.1.
-- Windows Phone 8.0 users must update to Windows 8.1 before upgrading to Windows 10 Mobile<sup>1</sup>. 
-- Editions that are excluded from the free upgrade offer include: Windows 7 Enterprise, Windows 8/8.1 Enterprise, and Windows RT/RT 8.1<sup>2</sup>. 
-
-><sup>1</sup>The availability of Windows 10 Mobile for Windows 8.1 devices will vary by device manufacturer, device model, country or region, mobile operator or service provider, hardware limitations, and other factors. For a list of eligible phones and important info about the upgrade and Windows 10 Mobile, see [Windows 10 specifications](http://windows.com/specsmobile).
-
-><sup>2</sup>Active Software Assurance customers in volume licensing have the benefit to upgrade to Windows 10 Enterprise outside of this offer. Windows 10 is not supported on devices running the RT versions of Windows 8.
-
-The following table summarizes the free upgrade paths to Windows 10. For a list of frequently asked questions about the free upgrade to Windows 10, see [Upgrade to Windows 10: FAQ](http://windows.microsoft.com/en-us/windows-10/upgrade-to-windows-10-faq).
-
-<table border="1" cellpadding="3">
-    <tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td>From</td>
-        <td>To</td>
-    </tr>
-    <tr>
-        <td BGCOLOR="#a0e4fa" colspan="3">Windows 7</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>Windows 7 Starter</td>
-        <td rowspan="3">Windows 10 Home</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-        <td>Windows 7 Home Basic</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-        <td>Windows 7 Home Premium</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>Windows 7 Professional</td>
-        <td rowspan="2">Windows 10 Pro</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-        <td>Windows 7 Ultimate</td>
-    </tr>
-        <tr>
-	        <td BGCOLOR="#a0e4fa" colspan="3">Windows 8/8.1</td>
-	    </tr>
-	    <tr>
-	        <td></td>
-	        <td>Windows Phone 8.1</td>
-	        <td>Windows 10 Mobile</td>
-       </tr>
-	    <tr>
-	        <td></td>
-	        <td>Windows 8/8.1</td>
-	        <td>Windows 10 Home</td>
-       </tr>
-    <tr>
-        <td></td>
-        <td>Windows 8/8.1 Pro</td>
-        <td rowspan="2">Windows 10 Pro</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-        <td>Windows 8/8.1 Pro for Students</td>
-    </tr>
-
 </table>
 
 ## Related Topics
