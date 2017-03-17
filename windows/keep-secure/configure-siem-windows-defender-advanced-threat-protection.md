@@ -1,6 +1,6 @@
 ---
-title: Pull alerts and create custom indicators in Windows Defender Advanced Threat Protection
-description: Learn how to configure supported security information and events management tools to receive and pull alerts and create custom indicators using REST API.
+title: Configure SIEM tools to pull alerts in Windows Defender Advanced Threat Protection
+description: Learn how to configure supported security information and events management tools to receive and pull alerts using REST API.
 keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Pull alerts and create custom indicators
+# Configure SIEM tools to pull alerts
 
 **Applies to:**
 
@@ -37,7 +37,7 @@ To use either of these supported SIEM tools you'll need to:
     - [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
     - [Configure HP ArcSight to pull alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
 
-For list of fields exposed in the alerts API see Windows Defender ATP alert API fields (change title of the page according to link and add this part only once we finish working on the article with table of fields)
+For more information on the list of fields exposed in the alerts API, see [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md.)
 
 ## Pull Windows Defender ATP alerts using REST API
 Windows Defender ATP supports the OAuth 2.0 protocol to pull alerts using REST API.
