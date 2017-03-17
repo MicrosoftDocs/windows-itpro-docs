@@ -24,19 +24,21 @@ author: iaanw
 - Enterprise security administrators
 
 To ensure Windows Defender Antivirus cloud-delivered protection works properly, you need to configure your network to allow connections between your endpoints and certain Microsoft servers.
-This topic lists the connections that must be allowed, including firewall rules, and provides instructions for validating your connection. This will help ensure you receive the best protection from our cloud-based protection services.
+
+This topic lists the connections that must be allowed, including firewall rules, and provides instructions for validating your connection. This will help ensure you receive the best protection from our cloud-delivered protection services.
+
 See the Enterprise Mobility and Security blog post [Important changes to Microsoft Active Protection Services endpoint](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/important-changes-to-microsoft-active-protection-service-maps-endpoint/) for some details about network connectivity.
 
 ## Allow connections to the Windows Defender Antivirus cloud
 
-The Windows Defender Antivirus cloud provides fast, strong protection for your endpoints. Enabling the cloud-based protection service is optional, however it is highly recommend as it provides very important protection against malware on your endpoints and across your network.
+The Windows Defender Antivirus cloud provides fast, strong protection for your endpoints. Enabling the cloud-delivered protection service is optional, however it is highly recommend as it provides very important protection against malware on your endpoints and across your network.
 
 >[!NOTE] 
 >The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional signature updates.
 
-See the [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) topic for details on enabling the service with Group Policy, System Center Configuration Manager, Microsoft Intune, and PowerShell.
+See the [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) topic for details on enabling the service with Group Policy, System Center Configuration Manager, PowerShell cmdlets, Microsoft Intune, or on individual clients through Windows Settings.
 
-After you've enabled the cloud, you may need to configure your network or firewall to allow connections between your endpoints and the Windows Defender Antivirus cloud service.
+After you've enabled the service, you may need to configure your network or firewall to allow connections between it and your endpoints.
 
 The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an **allow** rule specifically for them:
 
@@ -132,21 +134,21 @@ This update uses SSL (TCP Port 443) to download manifests and upload telemetry t
 
 ## Validate connections between your network and the cloud
 
-After whitelisting the URLs listed above, you can test if you are connected to the Windows Defender Antivirus cloud and are correctly reporting and receiving information to ensure you are fully protected.
+After whitelisting the URLs listed above, you can test if you are connected to the Windows Defender AV cloud and are correctly reporting and receiving information to ensure you are fully protected.
 
-**Use the cmdline tool to enable cloud-delivered protection:**
+**Use the cmdline tool to validate cloud-delivered protection:**
 
-Use the following argument with the Windows Defender Antivirus command line utility (mpcmdrun.exe) to verify that your network can communicate with the Windows Defender Antivirus cloud:
+Use the following argument with the Windows Defender AV command line utility (*mpcmdrun.exe*) to verify that your network can communicate with the Windows Defender AV cloud:
 
 ```DOS
 MpCmdRun - ValidateMapsConnection 
 ```
 
-See [Run a Windows Defender scan from the command line](run-scan-command-line-windows-defender-antivirus)  and [Command line arguments](command-line-arguments-windows-defender-antivirus.md) for more information on how to use the mpcmdrun.exe utility.
+See [Run a Windows Defender scan from the command line](run-scan-command-line-windows-defender-antivirus)  and [Command line arguments](command-line-arguments-windows-defender-antivirus.md) for more information on how to use the *mpcmdrun.exe* utility.
 
 **Attempt to download a fake malware file from Microsoft:**
 
-You can download a sample file that Windows Defender Antivirus will detect and block if you are properly connected to the cloud.
+You can download a sample file that Windows Defender AV will detect and block if you are properly connected to the cloud.
 
 Download the file by visiting the following link:
 - http://aka.ms/ioavtest
@@ -162,18 +164,10 @@ You will also see a detection in the **Quarantine** section of the **History** t
 
 ![Screenshot of the quarantine section in the Windows Defender Antivirus app](images/defender/quarantine.png)
 
+The Windows event log will also show [Windows Defender client event ID 2050](event-ids-windows-defender-antivirus.md).
 
 >[!IMPORTANT]
 >You will not be able to use a proxy auto-config (.pac) file to test network connections to these URLs. You will  need to verify your proxy servers and any network filtering tools manually to ensure connectivity.
-
-
-**Use PowerShell cmdlets to enable cloud-delivered protection:**
-
->[!NOTE] 
- >Will there be a powershell cmdlet added for this? Or will it be revealed in [Get-MpComputerStatus](https://technet.microsoft.com/en-us/library/dn433289.aspx)?
-
-
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-windows-defender-antivirus)  and [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 
 ## Related topics
