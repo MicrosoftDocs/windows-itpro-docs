@@ -1,7 +1,7 @@
 ---
-title: Utilize cloud-provided protection in Windows Defender Antivirus
-description: Cloud-provided protection provides an advanced level of fast, robust antivirus detection.
-keywords: windows defender antivirus, antimalware, security, defender, cloud, cloud-based protection
+title: Utilize cloud-delivered protection in Windows Defender Antivirus
+description: Cloud-delivered protection provides an advanced level of fast, robust antivirus detection.
+keywords: windows defender antivirus, antimalware, security, defender, cloud, cloud-delivered protection
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -12,7 +12,7 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Utilize Microsoft cloud-provided protection in Windows Defender Antivirus
+# Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus
 
 **Applies to:**
 
@@ -52,6 +52,3 @@ Cloud block timeout period | No | No | Configurable | Not configurable | Configu
 [Configure and validate network connections for Windows Defender Antivirus](configure-network-connections-windows-defender-antivirus.md) | There are certain Microsoft URLs that your network and endpoints must be able to connect to for cloud-delivered protection to work effectively. This topic lists the URLs that should be allowed via firewall or network filtering rules, and instructions for confirming your network is properly enrolled in cloud-delivered protection.
 [Configure the Block at First Sight feature](configure-block-at-first-sight-windows-defender-antivirus.md) | The Block at First Sight feature can block new malware within seconds, without having to wait hours for a traditional signature. You can enable and configure it with System Center Configuration Manager and Group Policy.
 [Configure the cloud block timeout period](configure-cloud-block-timeout-period-windows-defender-antivirus.md) | Windows Defender Antivirus can block suspicious files from running while it queries our cloud-based protection service. You can configure the amount of time the file will be prevented from running with System Center Configuration Manager and Group Policy.
-
-
-

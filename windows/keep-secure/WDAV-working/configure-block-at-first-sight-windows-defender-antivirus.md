@@ -16,11 +16,11 @@ author: iaanw
 
 
 
-# Enable and validate the Block at First Sight feature
+# Enable the Block at First Sight feature
 
 **Applies to**
 
-- Windows 10, version 1607
+- Windows 10, version 1703
 
 **Audience**
 
@@ -29,39 +29,37 @@ author: iaanw
 **Manageability available with**
 
 - Group Policy
-- Windows Settings
+- Windows Defender Security Center app
 
 
-Block at First Sight is a feature of Windows Defender cloud protection that provides a way to detect and block new malware within seconds. 
+Block at First Sight is a feature of Windows Defender Antivirus cloud-delivered protection that provides a way to detect and block new malware within seconds. 
 
-It is enabled by default when certain pre-requisite settings are also enabled. In most cases, these pre-requisite settings are also enabled by default, so the feature is running without any intervention.
+It is enabled by default when certain pre-requisite settings are also enabled. In most cases, these pre-requisite settings are also enabled by default, so the feature is running without any intervention. You can use group policy settings to confirm the feature is enabled.
 
 You can also [specify how long the file should be prevented from running](configure-cloud-block-timeout-period-windows-defender-antivirus.md) while the cloud-based protection service analyzes the file.
 
+> [!IMPORTANT]
+> There is no specific individual setting in System Center Configuration Manager to enable or disable Block at First Sight. It is enabled by default when the pre-requisite settings are configured correctly. You must use Group Policy settings to enable or disable the feature.
+
 ## How it works
 
-When a Windows Defender client encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean. The following video describes how this feature works.
+When a Windows Defender Antivirus client encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean. The following video describes how this feature works.
+
+The Block at first sight feature only uses the cloud protection backend for executable files that are downloaded from the Internet, or originating from the Internet zone. A hash value of the EXE file is checked via the cloud backend to determine if this is a previously undetected file.
 
 <iframe 
 src="https://videoplayercdn.osi.office.net/embed/c2f20f59-ca56-4a7b-ba23-44c60bc62c59" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe> 
 
-> [!NOTE]
-> The Block at first sight feature only use the cloud protection backend for executable files that are downloaded from the Internet, or originating from the Internet zone. A hash value of the EXE file is checked via the cloud backend to determine if this is a previously undetected file.
+If the cloud backend is unable to make a determination, the file will be locked by Windows Defender AV while a copy is uploaded to the cloud. The cloud will perform additional analysis to reach a determination before it allows the file to run or blocks it in all future encounters, depending on whether the file is determined to be malicious or safe. 
 
-If the cloud backend is unable to make a determination, the file will be locked by Windows Defender while a copy is uploaded to the cloud. Only after the cloud has received the file will Windows Defender release the lock and let the file run. The cloud will perform additional analysis to reach a determination, blocking all future encounters of that file. 
-
-In many cases this process can reduce the response time to new malware from hours to seconds.
-
-> [!NOTE]
-> Suspicious file downloads requiring additional backend processing to reach a determination will be locked by Windows Defender on the first machine where the file is encountered, until it is finished uploading to the backend. Users will see a longer "Running security scan" message in the browser while the file is being uploaded. This might result in what appear to be slower download times for some files.
+In many cases this process can reduce the response time for new malware from hours to seconds.
 
 
 ## Confirm and validate Block at First Sight is enabled
 
-Block at First Sight requires a number of Group Policy settings to be configured correctly or it will not work. Usually, these settings are already enabled in most default Windows Defender deployments in enterprise networks.
+Block at First Sight requires a number of Group Policy settings to be configured correctly or it will not work. Usually, these settings are already enabled in most default Windows Defender AV deployments in enterprise networks.
 
-> [!IMPORTANT]
-> There is no specific individual setting in System Center Configuration Manager to enable Block at First Sight. It is enabled by default when the pre-requisite settings are configured correctly. You can disable it individually, or if you disable the pre-requisite settings then it will be automatically disabled.
+
 
 ### Confirm Block at First Sight is enabled with Group Policy
 
@@ -95,60 +93,35 @@ Block at First Sight requires a number of Group Policy settings to be configured
 If you had to change any of the settings, you should re-deploy the Group Policy Object across your network to ensure all endpoints are covered.
 
 
-### Confirm Block at First Sight is enabled with Windows Settings
+### Confirm Block at First Sight is enabled with the Windows Defender Security Center app
+
+You can confirm that Block at First Sight is enabled in Windows Settings. 
+
+The feature is automatically enabled as long as **Cloud-based protection** and **Automatic sample submission** are both turned on.
+
+**Confirm Block at First Sight is enabled on individual clients**
+
+1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+
+2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Virus & threat protection settings** label:
+
+![Screenshot of the Virus & threat protection settings label in the Windows Defender Security Center app](images/defender/wdav-protection-settings-wdsc.png)
+    
+3.	Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 
 > [!NOTE]
 > If the pre-requisite settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
 
-You can confirm that Block at First Sight is enabled in Windows Settings. The feature is automatically enabled, as long as **Cloud-based protection** and **Automatic sample submission** are both turned on.
-
-**Confirm Block at First Sight is enabled on individual clients**
-
-1. Open Windows Defender settings:
-
-    a. Open the Windows Defender app and click **Settings**.
-    
-    b. On the main Windows Settings page, click **Update & Security** and then **Windows Defender**.
-
-2.	Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 
 ### Validate Block at First Sight is working
 
-Tthere are two scenarios that fall into the Block at First Sight feature:
-•	Scenario 1: Windows Defender AV cloud-based protection is able to determine the file is malware or clean based on data sent from the endpoint 
-•	Scenario 2: Windows Defender AV needs to process the file in the cloud-based protection back-end to reach a verdict
- 
-You can validate Scenario 1 by downloading and attempting to save a sample test file from http://aka.ms/ioavtest.
-
-If BLock at First Sight is configured correctly, you wil lreceive a notification from Windows Defender AV and, depending on your browser, a notice that says the file contained a virus and was deleted.
-
-The Windows Defender AV notification:
-malware-detected
-
-The notification in Edge:
-bafs-edge
-
-
-The notification in Internet Explorer:
-bafs-ie
-
-
-
-The notification in Chrome: 
-chrome-ie
-
-
-
- - if everything is configured correctly Windows Defender Cloud Protection will determine the file is malware (without needing a copy of the file) and block it based purely on metadata sent to the cloud. 
+You can validate that the feature is working by following the steps outlined in the [Validate connections between your network and the cloud](configure-network-connections-windows-defender-antivirus.md#validate) topic.
 
 
 ## Disable Block at First Sight
 
 > [!WARNING]
 > Disabling the Block at First Sight feature will lower the protection state of the endpoint and your network.
-
-> [!NOTE]
-> You cannot disable Block at First Sight with System Center Configuration Manager
 
 You may choose to disable the Block at First Sight feature if you want to retain the pre-requisite settings without using Block at First Sight protection. You might wish to do this if you are experiencing latency issues or you want to test the feature's impact on your network.
 
@@ -160,7 +133,7 @@ You may choose to disable the Block at First Sight feature if you want to retain
 
 4.  Click **Policies** then **Administrative templates**.
 
-5.  Expand the tree through **Windows components > Windows Defender > MAPS**.
+5.  Expand the tree through **Windows components > Windows Defender Antivirus > MAPS**.
 
 1.  Double-click the **Configure the ‘Block at First Sight’ feature** setting and set the option to **Disabled**.
 

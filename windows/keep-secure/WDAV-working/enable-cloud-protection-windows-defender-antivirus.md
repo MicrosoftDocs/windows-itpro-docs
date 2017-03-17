@@ -1,7 +1,7 @@
 ---
 title: Enable cloud-delivered protection in Windows Defender Antivirus
 description: Enable cloud-delivered protection to benefit from fast and advanced protection features.
-keywords: windows defender antivirus, antimalware, security, defender, cloud, block at first sight
+keywords: windows defender antivirus, antimalware, security, cloud, block at first sight
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -24,6 +24,14 @@ author: iaanw
 
 - Enterprise security administrators
 
+**Manageability available with**
+
+- Group Policy
+- System Center Configuration Manager
+- PowerShell cmdlets
+- Windows Management Instruction (WMI)
+- Microsoft Intune
+- Windows Defender Security Center app
 
 
 >[!NOTE] 
@@ -31,14 +39,14 @@ author: iaanw
 
 
 
-You can enable or disable cloud-delivered protection with Group Policy, System Center Configuration Manager, PowerShell cmdlets, Microsoft Intune, or on individual clients through Windows Settings.
+You can enable or disable cloud-delivered protection with Group Policy, System Center Configuration Manager, PowerShell cmdlets, Microsoft Intune, or on individual clients in the Windows Defender Security Center app.
 
-See  [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for an overview of Windows Defender Antivirus cloud-based protection.
+See [Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for an overview of Windows Defender Antivirus cloud-based protection.
 
-There are specific network-connectivity requirements to ensure your endpoints can connect to the cloud-based protection service. See [Configure and validate network connections for cloud-based protection](configure-network-connections-windows-defender-antivirus.md) for more details.
+There are specific network-connectivity requirements to ensure your endpoints can connect to the cloud-delivered protection service. See [Configure and validate network connections for Windows Defender AV](configure-network-connections-windows-defender-antivirus.md) for more details.
 
 >[!NOTE]
->In Windows 10, there is no difference between the **Basic** and **Advanced** options described in this topic. This is a legacy distinction and choosing either setting will result in the same level of cloud-based protection. There is no difference in the type or amount of information that is shared. See the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839) for more information on what we collect.
+>In Windows 10, there is no difference between the **Basic** and **Advanced** options described in this topic. This is a legacy distinction and choosing either setting will result in the same level of cloud-delivered protection. There is no difference in the type or amount of information that is shared. See the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839) for more information on what we collect.
 
 
 **Use Group Policy to enable cloud-delivered protection:**
@@ -84,6 +92,18 @@ Set-MpPreference -SubmitSamplesConsent 3
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-windows-defender-antivirus)  and [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
+**Use Windows Management Instruction (WMI) to enable cloud-delivered protection:**
+
+Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn439474(v=vs.85).aspx) class for the following properties:
+
+```WMI
+MAPSReporting 
+SubmitSamplesConsent
+```
+
+See the following for more information and allowed parameters:
+- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
+
 **Use Intune to enable cloud-delivered protection**
 
 1.  Open the [Microsoft Intune administration console](https://manage.microsoft.com/), and navigate to the associated policy you want to configure.
@@ -94,27 +114,29 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
         > [!WARNING]
         > Setting to **Always Prompt** will lower the protection state of the device. Setting to **Never send** means the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature will not function.
 5. Scoll down to the **Microsoft Active Protection Service** section and set the following settings:
-    Name | Set to
-    :--|:--
-    **Join Microsoft Active Protection Service** | **Yes**
-    **Membership level** | **Advanced**
-    **Receive dynamic definitions based on Microsoft Active Protection Service reports** | **Yes**
+    
+   Setting | Set to
+    --|--
+    Join Microsoft Active Protection Service | Yes
+    Membership level | Advanced
+    Receive dynamic definitions based on Microsoft Active Protection Service reports | Yes
+  
 3.  Save and [deploy the policy as usual](https://docs.microsoft.com/en-us/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
 
 See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) for more details.
 
-**Enable cloud-delivered protection on individual clients with Windows Settings**
+**Enable cloud-delivered protection on individual clients with the Windows Defender Security Center app**
 > [!NOTE]
 > If the **Configure local setting override for reporting Microsoft MAPS** GP setting is set to **Disabled**, then the **Cloud-based protection** setting in Windows Settings will be greyed-out and unavailable. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
 
-1. Open Windows Defender settings in one of these ways:
 
-    a. Open the Windows Defender Antivirus app and click **Settings**.
+1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+
+2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Virus & threat protection settings** label:
+
+![Screenshot of the Virus & threat protection settings label in the Windows Defender Security Center app](images/defender/wdav-protection-settings-wdsc.png)
     
-    b. On the main Windows Settings page, click **Update & Security** and then **Windows Defender Antivirus**.
-
-2.	Switch **Cloud-based Protection** to **On**.
-3.  Switch **Automatic sample submission** to **On**.
+3.	Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 
 >[!NOTE]
 >If automatic sample submission has been configured with GP then the setting will be greyed-out and unavailble.
@@ -127,5 +149,5 @@ See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](http
 - [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-windows-defender-antivirus.md)
 - [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)]
 - [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx)
-- [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
+- [Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 - [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)

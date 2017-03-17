@@ -17,11 +17,12 @@ author: iaanw
 
 **Applies to:**
 
-- Windows 10
+- Windows 10, version 1703
 
 **Audience**
 
 - Enterprise security administrators
+
 
 To ensure Windows Defender Antivirus cloud-delivered protection works properly, you need to configure your network to allow connections between your endpoints and certain Microsoft servers.
 
@@ -36,7 +37,7 @@ The Windows Defender Antivirus cloud provides fast, strong protection for your e
 >[!NOTE] 
 >The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional signature updates.
 
-See the [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) topic for details on enabling the service with Group Policy, System Center Configuration Manager, PowerShell cmdlets, Microsoft Intune, or on individual clients through Windows Settings.
+See the [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) topic for details on enabling the service with Group Policy, System Center Configuration Manager, PowerShell cmdlets, Microsoft Intune, or on individual clients in the Windows Defender Security Center app.
 
 After you've enabled the service, you may need to configure your network or firewall to allow connections between it and your endpoints.
 
@@ -131,6 +132,8 @@ This update uses SSL (TCP Port 443) to download manifests and upload telemetry t
 </tr>
 </table>
 
+<a id="validate"></a>
+
 
 ## Validate connections between your network and the cloud
 
@@ -156,13 +159,29 @@ Download the file by visiting the following link:
 >[!NOTE] 
 >This file is not an actual piece of malware. It is a fake file that is designed to test if you are properly connected to the cloud.
 
-If you are properly connected, you will see a warning notification:
+If you are properly connected, you will see a warning notification from Windows Defender Antivirus:
 
-![Windows Defender Antivirus notification informing the user that malware was found](images/defender/malware-detected.png)
+![Windows Defender Antivirus notification informing the user that malware was found](images/defender/wdav-malware-detected.png)
 
-You will also see a detection in the **Quarantine** section of the **History** tab in the Windows Defender Antivirus app:
+If you are using Microsoft Edge, you'll also see a notification message:
 
-![Screenshot of the quarantine section in the Windows Defender Antivirus app](images/defender/quarantine.png)
+![Microsoft Edge informing the user that malware was found](images/defender/wdav-bafs-edge.png)
+
+A similar message occurs if you are uding Internet Explorer:
+
+![Windows Defender Antivirus notification informing the user that malware was found](images/defender/wdav-bafs-ie.png)
+
+You will also see a detection under **Quarantined threats** in the **Scan history** section in the Windows Defender Security Center app:
+
+1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+
+2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Scan history** label:
+
+    ![Screenshot of the Scan history label in the Windows Defender Security Center app](images/defender/wdav-history-wdsc.png)
+    
+3. Under the **Quarantined threats** section, click the **See full history** label to see the detected fake malware:
+
+    ![Screenshot of quarantined items in the Windows Defender Security Center app](images/defender/wdav-quarantined-history-wdsc.png)
 
 The Windows event log will also show [Windows Defender client event ID 2050](event-ids-windows-defender-antivirus.md).
 
@@ -174,7 +193,7 @@ The Windows event log will also show [Windows Defender client event ID 2050](eve
 
 - [Windows Defender Antivirus in Windows 10](windows-defender-in-windows-10.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
-- [Run a Windows Defender scan from the command line](run-scan-command-line-windows-defender-antivirus)  and [Command line arguments](command-line-arguments-windows-defender-antivirus.md)
+- [Run a Windows Defender scan from the command line](run-scan-command-line-windows-defender-antivirus) and [Command line arguments](command-line-arguments-windows-defender-antivirus.md)
 - [Important changes to Microsoft Active Protection Services endpoint](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/important-changes-to-microsoft-active-protection-service-maps-endpoint/) 
 
 
