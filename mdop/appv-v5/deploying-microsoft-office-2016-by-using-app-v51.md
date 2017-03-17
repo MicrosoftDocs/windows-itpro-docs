@@ -441,14 +441,14 @@ After you download the Office 2016 applications through the Office Deployment To
     <td align="left"><p>PACKAGEGUID (optional)</p></td>
     <td align="left"><p>By default, all App-V packages created by the Office Deployment Tool share the same App-V Package ID. You can use PACKAGEGUID to specify a different package ID for each package, which allows you to publish multiple App-V packages, created by the Office Deployment Tool, and manage them by using the App-V Server.</p>
     <p>An example of when to use this parameter is if you create different packages for different users. For example, you can create a package with just Office 2016 for some users, and create another package with Office 2016 and Visio 2016 for another set of users.</p>
->**Note** Even if you use unique package IDs, you can still deploy only one App-V package to a single device.
+    
+    >**Note** Even if you use unique package IDs, you can still deploy only one App-V package to a single device.
     </td>
     </tr>
     </tbody>
     </table>
 
      
-
 2.  Use the /packager command to convert the Office applications to an Office 2016 App-V package.
 
     For example:
