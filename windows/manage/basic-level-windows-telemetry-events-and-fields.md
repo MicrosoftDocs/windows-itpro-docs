@@ -160,6 +160,72 @@ The following fields are available:
 - **Action**  The change that was invoked on a device inventory object.
 - **inventoryId**  Device ID used for Compatibility testing
 
+### TelClientSynthetic.PrivacySettingsAfterCreatorsUpdate.PreUpgradeSettings
+
+These fields are added whenever PreUpgradeSettings is included in the event.
+
+The following fields are available:
+
+- **HKLM_SensorPermissionState.SensorPermissionState**  The state of the Location service before the feature update completed.
+- **HKLM_SensorPermissionState.HRESULT**  The error code returned when trying to query the Location service for the device.
+- **HKCU_SensorPermissionState.SensorPermissionState**  The state of the Location service when a user signs on before the feature update completed.
+- **HKCU_SensorPermissionState.HRESULT**  The error code returned when trying to query the Location service for the current user.
+- **HKLM_LocationPlatform.Status**  The state of the location platform after the feature update has completed.
+- **HKLM_LocationPlatform.HRESULT**  The error code returned when trying to query the location platform for the device.
+- **HKLM_LocationSyncEnabled.AcceptedPrivacyPolicy**  The state of the Find My Device service for the device before the feature update completed.
+- **HKLM_LocationSyncEnabled.HRESULT**  The error code returned when trying to query the Find My Device service for the device.
+- **HKCU_LocationSyncEnabled.AcceptedPrivacyPolicy**  The state of the Find My Device service for the current user before the feature update completed.
+- **HKCU_LocationSyncEnabled.HRESULT**  The error code returned when trying to query the Find My Device service for the current user.
+- **HKLM_AllowTelemetry.AllowTelemetry**  The state of the Connected User Experiences and Telemetry component for the device before the feature update.
+- **HKLM_AllowTelemetry.HRESULT**  The error code returned when trying to query the Connected User Experiences and Telemetry conponent for the device.
+- **HKLM_TIPC.Enabled**  The state of TIPC for the device.
+- **HKLM_TIPC.HRESULT**  The error code returned when trying to query TIPC for the device.
+- **HKCU_TIPC.Enabled**  The state of TIPC for the current user.
+- **HKCU_TIPC.HRESULT**  The error code returned when trying to query TIPC for the current user.
+- **HKLM_FlipAhead.FPEnabled**  Is Flip Ahead enabled for the device before the feature update was completed?
+- **HKLM_FlipAhead.HRESULT**  The error code returned when trying to query Flip Ahead for the device.
+- **HKCU_FlipAhead.FPEnabled**  Is Flip Ahead enabled for the current user before the feature update was completed?
+- **HKCU_FlipAhead.HRESULT**  The error code returned when trying to query Flip Ahead for the current user.
+- **HKLM_TailoredExperiences.TailoredExperiencesWithDiagnosticDataEnabled**  Is Tailored Experiences with Diagnostics Data enabled for the current user after the feature update had completed?
+- **HKCU_TailoredExperiences.HRESULT**  The error code returned when trying to query Tailored Experiences with Diagnostics Data for the current user.
+- **HKLM_AdvertisingID.Enabled**  Is the adveristing ID enabled for the device?
+- **HKLM_AdvertisingID.HRESULT**  The error code returned when trying to query the state of the advertising ID for the device.
+- **HKCU_AdvertisingID.Enabled**  Is the adveristing ID enabled for the current user?
+- **HKCU_AdvertisingID.HRESULT**  The error code returned when trying to query the state of the advertising ID for the user.
+
+### TelClientSynthetic.PrivacySettingsAfterCreatorsUpdate.PostUpgradeSettings
+
+These fields are added whenever PostUpgradeSettings is included in the event.
+
+The following fields are available:
+
+- **HKLM_SensorPermissionState.SensorPermissionState**  The state of the Location service after the feature update has completed.
+- **HKLM_SensorPermissionState.HRESULT**  The error code returned when trying to query the Location service for the device.
+- **HKCU_SensorPermissionState.SensorPermissionState**  The state of the Location service when a user signs on after a feature update has completed.
+- **HKCU_SensorPermissionState.HRESULT**  The error code returned when trying to query the Location service for the current user.
+- **HKLM_LocationPlatform.Status**  The state of the location platform after the feature update has completed.
+- **HKLM_LocationPlatform.HRESULT**  The error code returned when trying to query the location platform for the device.
+- **HKLM_LocationSyncEnabled.AcceptedPrivacyPolicy**  The state of the Find My Device service for the device after the feature update has completed.
+- **HKLM_LocationSyncEnabled.HRESULT**  The error code returned when trying to query the Find My Device service for the device.
+- **HKCU_LocationSyncEnabled.AcceptedPrivacyPolicy**  The state of the Find My Device service for the current user after the feature update has completed.
+- **HKCU_LocationSyncEnabled.HRESULT**  The error code returned when trying to query the Find My Device service for the current user.
+- **HKLM_AllowTelemetry.AllowTelemetry**  The state of the Connected User Experiences and Telemetry component for the device after the feature update.
+- **HKLM_AllowTelemetry.HRESULT**  The error code returned when trying to query the Connected User Experiences and Telemetry conponent for the device.
+- **HKLM_TIPC.Enabled**  The state of TIPC for the device.
+- **HKLM_TIPC.HRESULT**  The error code returned when trying to query TIPC for the device.
+- **HKCU_TIPC.Enabled**  The state of TIPC for the current user.
+- **HKCU_TIPC.HRESULT**  The error code returned when trying to query TIPC for the current user.
+- **HKLM_FlipAhead.FPEnabled**  Is Flip Ahead enabled for the device after the feature update has completed?
+- **HKLM_FlipAhead.HRESULT**  The error code returned when trying to query Flip Ahead for the device.
+- **HKCU_FlipAhead.FPEnabled**  Is Flip Ahead enabled for the current user after the feature update has completed?
+- **HKCU_FlipAhead.HRESULT**  The error code returned when trying to query Flip Ahead for the current user.
+- **HKLM_TailoredExperiences.TailoredExperiencesWithDiagnosticDataEnabled**  Is Tailored Experiences with Diagnostics Data enabled for the current user after the feature update had completed?
+- **HKCU_TailoredExperiences.HRESULT**  The error code returned when trying to query Tailored Experiences with Diagnostics Data for the current user.
+- **HKLM_AdvertisingID.Enabled**  Is the adveristing ID enabled for the device?
+- **HKLM_AdvertisingID.HRESULT**  The error code returned when trying to query the state of the advertising ID for the device.
+- **HKCU_AdvertisingID.Enabled**  Is the adveristing ID enabled for the current user?
+- **HKCU_AdvertisingID.HRESULT**  The error code returned when trying to query the state of the advertising ID for the user.
+
 ## Census events
 
 ### Census.App
