@@ -62,7 +62,7 @@ The following steps assume that you have completed all the required steps in [Be
 
   You can keep the default values for each of these tasks or modify the selection to suit your requirements.
 
-3. Open File Explorer and put the two configuration files in the installation location, for example:
+3. Open File Explorer and locate the two configuration files you saved when you enabled the SIEM integration feature. Put the two files in the SmartConnector installation location, for example:
 
   - WDATP-connector.jsonparser.properties: C:\\*folder_location*\current\user\agent\flexagent\
 
@@ -84,8 +84,8 @@ The following steps assume that you have completed all the required steps in [Be
      </tr>
      <tr>
      <td>Configuration File</td>
-     <td>Type in the name of the client property file. It must match the client property file.
-     For example, if the configuration file in "flexagent" directory is named "WDATP-Connector.jsonparser.properties", the field must be names as the suffix which is "WDATP-Connector".</td>
+     <td>Type in the name of the client property file. The name must match the file provided in the .zip that you downloaded.
+     For example, if the configuration file in "flexagent" directory is named "WDATP-Connector.jsonparser.properties", you must type "WDATP-Connector" as the name of the client property file.</td>
      </tr>
      <td>Events URL</td>
      <td>Depending on the location of your datacenter, select either the EU or the US URL: </br></br> **For EU**:  https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME
@@ -95,7 +95,7 @@ The following steps assume that you have completed all the required steps in [Be
      <td>OAuth 2</td>
      </tr>
      <td>OAuth 2 Client Properties file</td>
-     <td>Browse to the location of the *wdatp-connector.properties* file.</td>
+     <td>Browse to the location of the *wdatp-connector.properties* file. The name must match the file provided in the .zip that you downloaded.</td>
      <tr>
      <td>Refresh Token</td>
      <td>You can obtain a refresh token in two ways: by generating a refresh token from the **SIEM integration preferences setup** page or using the restutil tool. <br><br> For more information on generating a refresh token from the **Preferences setup** , see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md). </br> </br>**Get your refresh token using the restutil tool:** </br> a. Open a command prompt. Navigate to C:\\*folder_location*\current\bin where *folder_location* represents the location where you installed the tool. </br></br> b. Type: `arcsight restutil token -config` from the bin directory. A Web browser window will open. </br> </br>c. Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials. </br> </br>d.	A refresh token is shown in the command prompt. </br></br> e. Copy and paste it into the **Refresh Token** field.
