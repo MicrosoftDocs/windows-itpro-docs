@@ -1,5 +1,5 @@
 ---
-title: Deployment guide for Windows Defender Antivirus in VDI
+title: Windows Defender Antivirus VDI deployment guide
 description: Learn how to deploy Windows Defender Antivirus in a VDI environment for the best balance between protection and performance.
 keywords: vdi, hyper-v, vm, virtual machine, windows defender, antivirus, av, virtual desktop, rds, remote desktop
 search.product: eADQiWindows 10XVcnh
@@ -63,33 +63,26 @@ The main steps in this section include:
 1.	Create your standard base image according to your requirements
 2.	Apply Windows Defender AV protection updates to your base image
 3.	Seal or “lock” the image to create a “known-good” image
-4.	Deploying your image to your VMs
+4.	Deploy your image to your VMs
 
+### Create the base image  
 First, you should create your base image according to your business needs, applying or installing the relevant line of business (LOB) apps and settings as you normally would. Typically, this would involve creating a VHD or customized .iso, depending on how you will deploy the image to your VMs.
 
+### Apply protection updates to the base image
 After creating the image, you should ensure it is fully updated. See [Configure Windows Defender in Windows 10]( https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-windows-defender-in-windows-10) for instructions on how to update Windows Defender AV protection via WSUS, Microsoft Update, the MMPC site, or UNC file shares. You should ensure that your initial base image is also fully patched with Microsoft and Windows updates and patches.
 
+### Seal the base image
 When the base image is fully updated, you should run a quick scan on the image. This “sealing” or “locking” of the image helps Windows Defender AV build a cache of known-good files and avoid scanning them again on your VMs. In turn, this can help ensure performance on the VM is not impacted.
 
-**Run a quick scan from the command line:**
+You can run a quick scan [from the command line](run-scan-command-line-windows-defender-antivirus.md) or via [System Center Configuration Manager](run-scan-windows-defender-antivirus.md).
 
-1. Click **Start**, type **cmd**, and press **Enter**.
-2. Navigate to _%ProgramFiles%\Windows Defender_ and enter the following command, and press **Enter**:
-
-```
-C:\Program Files\Windows Defender\mpcmdrun.exe -scan -scantype 1
-```
-The quick scan will start. When the scan completes, you'll see a message indicating that the scan is finished. 
-
-See [Run a Windows Defender scan from the command line](run-scan-command-line-windows-defender-antivirus.md) for additional parameters you can use.
-
->[!NOTE] ### Quick scan versus full scan
+>[!NOTE] <b>Quick scan versus full scan</b>
 >Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. Combined with our always on real-time protection capability - which reviews files when they are opened and closed, and whenever a user navigates to a folder – quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
 >Therefore, when considering performance – especially for creating a new or updated image in preparation for deployment – it makes sense to use a quick scan only. 
 >A full scan, however, can be useful on a VM that has encountered a malware threat to identify if there are any inactive components lying around and help perform a thorough clean-up.
 
 
-
+### Deploy the base image  
 You’ll then need to deploy the base image across your VDI. For example, you can create or clone a VHD from your base image, and then use that VHD when you create or start your VMs. 
 
 The following references provide ways you can create and deploy the base image across your VDI:
@@ -104,45 +97,49 @@ The following references provide ways you can create and deploy the base image a
 
 
 
-## Manage VMs and base image
-Using Windows Defender AV within a VDI environment poses unique opportunities for configuration and management.
-This is especially apparent when considering how updates are delivered for Windows Defender AV. 
+## Manage your VMs and base image
+How you manage your VDI will affect the performance impact of Windows Defender AV on your VMs and infrastructure.
 
-Windows Defender AV uses both cloud-delivered protection (also called the Microsoft Advanced Protection Service) and periodically downloaded updates (also known as “definitions”) to provide protection. The cloud-based protection is “always-on” and requires an active connection to the Internet to function, while the protection updates generally occur once a day (although this can be configured). Additionally, there are monthly updates for the engine that powers Microsoft antivirus protection, along with the usual product updates that are distributed alongside main Windows updates.
+Because Windows Defender AV downloads protection updates every day, [or based on your protection update settings](manage-protection-updates-windows-defender-antivirus.md), network bandwidth can be a problem if multiple VMs attempt to download updates at the same time.  
 
-Depending on the deployment configuration of your VDI, it may not always be feasible or appropriate to follow a traditional continuous update schedule in a VDI environment.
-Instead, you may prefer to receive and apply updates on a daily (or nightly) schedule, or align to a single update point, such as just after the usual monthly Microsoft Update.
+Following the guidelines in this means the VMs will only need to download “delta” updates, which are the differences between an existing definition set and the next one. Delta updates are typically much smaller (a few kilobytes) than a full definition download (which can average around 150 mb).
 
 
-You can reduce network overhead by using a persistent VDI environment, so that your VMs will only need to download small delta updates. 
+### Manage updates for persistent VDIs
 
-Therefore, the first step you’ll need to take is to determine when to create the base image that you’ll use on your VMs. This should align with the persistence of your VMs.
+If you are using a persistent VDI, you should update the base image monthly, and set up protection updates to be delivered daily via a file share, as follows:  
+1. Create a dedicated file share location on your network that can be accessed by your VMs and your VM host (or other, persistent machine, such as a dedicated admin console that you use to manage your VMs).
+2. Set up a scheduled task on your VM host to automatically download updates from the MMPC website or Microsoft Update and save them to the file share (the [SignatureDownloadCustomTask PowerShell script](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4/DisplayScript) can help with this).
+3. [Configure the VMs to pull protection updates from the file share](manage-protection-updates-windows-defender-antivirus.md).
+4. Disable or delay automatic Microsoft updates on your VMs. See [Update Windows 10 in the enterprise](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-update-windows-10) for information on managing operating system updates with WSUS, SCCM, and others.
+5. On or just after each Patch Tuesday (the second Tuesday of each month), update your base image with [the latest protection updates from the MMPC website, WSUS, or Microsoft Update](manage-protection-updates-windows-defender-antivirus.md). Also apply all other Windows patches and fixes that were delivered on the Patch Tuesday. You can automate this by following the instructions in [Orchestrated offline VM Patching using Service Management Automation](https://blogs.technet.microsoft.com/privatecloud/2013/12/06/orchestrated-offline-vm-patching-using-service-management-automation/).
+5. [Run a quick scan](run-scan-windows-defender-antivirus.md) on your base image before deploying it to your VMs.
 
-For example, if you are using a non-persistent VDI, it may make sense to update and deploy your base image daily. This way, you’ll ensure your VMs receive the most up-to-date protection each day, without having to individually download updates when they are each started. 
-You could also use a pre-configured PowerShell script as part of a scheduled task to help automate the download and application of protection updates from a centralized location, to prevent each VM from individually downloading the update. 
-For example, the [SignatureDownloadCustomTask PowerShell script](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4/DisplayScript) will pull the latest updates via a UNC share that is updated by the VM host. That way the individual VM will not need to obtain protection updates from the Internet, and you will only need to download the updates once (on the VM host).
-Alternatively, if you have a persistent or semi-persistent VDI, you could update your base image monthly, in conjunction with the monthly “Patch Tuesday” Microsoft Updates to reduce the network bandwidth across your VDI.
-In both of these scenarios, the VMs will only need to download “delta” updates – the differences between an existing definition set and the next one. Delta updates are typically much smaller (a few kilobytes) than a full definition download (which can average around 150 mb).
+A benefit to aligning your image update to the monthly Microsoft Update is that you ensure your VMs will have the latest Windows security patches and other important Microsoft updates without each VM needing to individually download them. 
 
-Another benefit to aligning your image update to the monthly Microsoft Update is that you ensure your VMs will have the latest Windows security patches and other important Microsoft updates without each VM needing to individually download them. 
 
-If you are aligning your base image to the monthly Microsoft Update schedule, you should ensure that all operating system and other patches and updates have been applied. The monthly Microsoft Update occurs on the second Tuesday of each month. 
-This means you may need to disconnect your VMs, apply the updated base image, and then deploy the image during that time – otherwise the individual VMs may download the update and you will lose the benefit of reducing your network overhead.
+### Manage updates for non-persistent VDIs
 
-On non-persistent or pooled VDIs, you can update the base image nightly with the latest definitions. This allows the VMs to have the latest definitions without need to pull down the latest definitions each morning. In this case, it may make sense to obtain updates via the MMPC website or Microsoft Update channel.
+If you are using a non-persistent VDI, you can update the base image daily (or nightly) and directly apply the latest updates to the image.
 
-You may be able to automate this by following the instructions in [Orchestrated offline VM Patching using Service Management Automation](https://blogs.technet.microsoft.com/privatecloud/2013/12/06/orchestrated-offline-vm-patching-using-service-management-automation/)
+An example:  
+1. Every night or other time when you can safely take your VMs offline, update your base image with t[the latest protection updates from the MMPC website, WSUS, or Microsoft Update](manage-protection-updates-windows-defender-antivirus.md).
+2. [Run a quick scan](run-scan-windows-defender-antivirus.md) on your base image before deploying it to your VMs.
 
-In both scenarios, it’s important to run a quick scan on the updated image before you deploy it to your VMs.
 
 
 
 ## Configure endpoints for optimal performance
-There are a number of settings that can help ensure optimal performance on your VMs and VDI without affecting the level of protection.
+There are a number of settings that can help ensure optimal performance on your VMs and VDI without affecting the level of protection, including:
+    - [Randomize scheduled scans](#randomize-scheduled-scans)
+    - [Use quick scans](#use-quick-scans)
+    - [Prevent notifications](#prevent-notifications)
+    - [Disable scans from occuring after every update](#disable-scans-after-an-update)
+    - [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
 
 These settings can be configured as part of creating your base image, or as a day-to-day management function of your VDI infrastructure or network.
 
-One of the most important settings is to randomize the times when each VM will perform a scan.
+
 
 
 ### Randomize scheduled scans
@@ -165,11 +162,11 @@ The start time of the scan itself is still based on the scheduled scan policy �
 
 5.  Expand the tree to **Windows components > Windows Defender** and configure the following setting:
     
-1.  Double-click the **Randomize scheduled task times** setting and set the option to **Enabled**. Click **OK**. This adds a true randomization (it is still random if the disk image is replicated) of +/- 30 minutes to the start of the scheduled scan and also the signature update.
+    1.  Double-click the **Randomize scheduled task times** setting and set the option to **Enabled**. Click **OK**. This adds a true randomization (it is still random if the disk image is replicated) of plus or minus 30 minutes (using all of the intervals) to the start of the scheduled scan and the signature update. For example, if the sechedule start time was set at 2.30pm, then enabling this setting  could cause one machine to scan and update at 2.33pm and another machine to scan and update at 2.14pm.
 
 **Use Configuration Manager to randomize schedule scans:**
 
-1.  See [How to create and deploy antimalware policies: Advanced settings]( https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#advanced-settings) for details on configuring System Center Configuration Manager (current branch).
+See [How to create and deploy antimalware policies: Advanced settings]( https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#advanced-settings) for details on configuring System Center Configuration Manager (current branch).
 
 See [Schedule scans](schedule-scans-windows-defender-antivirus.md) for other configuration options available for scheduled scans.
 
@@ -182,17 +179,16 @@ Quick scans are the preferred approach as they are designed to look in all place
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+2.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Policies** then **Administrative templates**.
+3.  Click **Policies** then **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender > Scan** and configure the following setting:
-    
-1.  Double-click the **Specify the scan type to use for a scheduled scan** setting and set the option to **Enabled** and **Quick scan**. Click **OK**. 
+4.  Expand the tree to **Windows components > Windows Defender > Scan** and configure the following setting:  
+    1.  Double-click the **Specify the scan type to use for a scheduled scan** setting and set the option to **Enabled** and **Quick scan**. Click **OK**. 
 
 **Use Configuration Manager to specify the type of scheduled scan:**
 
-1.  See [How to create and deploy antimalware policies: Scheduled scans settings]( https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) for details on configuring System Center Configuration Manager (current branch).
+See [How to create and deploy antimalware policies: Scheduled scans settings]( https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) for details on configuring System Center Configuration Manager (current branch).
 
 <!--
 See [Schedule scans](schedule-scans-windows-defender-antivirus.md) for other configuration options available for scheduled scans.

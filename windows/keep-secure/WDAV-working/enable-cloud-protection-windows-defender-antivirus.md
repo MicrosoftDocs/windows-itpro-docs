@@ -51,9 +51,7 @@ There are specific network-connectivity requirements to ensure your endpoints ca
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > MAPS**
     
-1.  Double-click the **Join Microsoft MAPS** setting and ensure the option is enabled and set to **Basic MAPS** or **Advanced MAPS**.
-    
-1. Click **OK**.
+1.  Double-click the **Join Microsoft MAPS** setting and ensure the option is enabled and set to **Basic MAPS** or **Advanced MAPS**. Click **OK**.
 
 1.  Double-click the **Send file samples when further analysis is required** setting and ensure the option is set to **Enabled** and the additional options are either of the following:
     
