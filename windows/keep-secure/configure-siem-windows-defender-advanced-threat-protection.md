@@ -37,8 +37,6 @@ To use either of these supported SIEM tools you'll need to:
     - [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
     - [Configure HP ArcSight to pull alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
 
-For more information on the list of fields exposed in the alerts API, see [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
-
 ## Pull Windows Defender ATP alerts using REST API
 Windows Defender ATP supports the OAuth 2.0 protocol to pull alerts using REST API.
 For more information, see [Pull Windows Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md).
@@ -51,4 +49,3 @@ Topic | Description
 [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)| Learn about enabling the SIEM integration feature in the **Preferences setup** page in the portal so that you can use and generate the required information to configure supported SIEM tools.
  [Configure Splunk](configure-splunk-windows-defender-advanced-threat-protection.md)| Learn about installing the REST API Modular Input app and other configuration settings to enable Splunk to pull Windows Defender ATP alerts.
  [Configure ArcSight](configure-arcsight-windows-defender-advanced-threat-protection.md)| Learn about installing the HP ArcSight REST FlexConnector package and the files you need to configure ArcSight to pull Windows Defender ATP alerts.
- [Pull Windows Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md) | Learn how to use REST API to pull alerts from Windows Defender ATP.
