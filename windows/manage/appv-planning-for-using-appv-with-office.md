@@ -28,78 +28,16 @@ Use the following information to plan how to deploy Office by using Microsoft Ap
 
 You can use the App-V Sequencer to create plug-in packages for Language Packs, Language Interface Packs, Proofing Tools and ScreenTip Languages. You can then include the plug-in packages in a Connection Group, along with the Office package that you create by using the Office Deployment Toolkit. The Office applications and the plug-in Language Packs interact seamlessly in the same connection group, just like any other packages that are grouped together in a connection group.
 
-**Note**  
-Microsoft Visio and Microsoft Project do not provide support for the Thai Language Pack.
+>[!NOTE] 
+>Microsoft Visio and Microsoft Project do not provide support for the Thai Language Pack.
 
 ## <a href="" id="bkmk-office-vers-supp-appv"></a>Supported versions of Microsoft Office
-The following table lists the versions of Microsoft Office that App-V supports, methods of Office package creation, supported licensing, and supported deployments.
+See [Microsoft Office Product IDs that App-V supports](https://support.microsoft.com/en-us/help/2842297/product-ids-that-are-supported-by-the-office-deployment-tool-for-click) for a list of supported Office products.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Supported Office Version</th>
-<th align="left">Package Creation</th>
-<th align="left">Supported Licensing</th>
-<th align="left">Supported Deployments</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Office 365 ProPlus (either the Office 2013 or the Office 2016 version)</p>
-<p>Also supported:</p>
-<ul>
-<li><p>Visio Pro for Office 365</p></li>
-<li><p>Project Pro for Office 365</p></li>
-</ul></td>
-<td align="left"><p>Office Deployment Tool</p></td>
-<td align="left"><p>Subscription</p></td>
-<td align="left"><ul>
-<li><p>Desktop</p></li>
-<li><p>Personal VDI</p></li>
-<li><p>Pooled VDI</p></li>
-<li><p>RDS</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><ul>
-<li><p>Visio Professional 2016 (C2R-P)</p></li>
-<li><p>Visio Standard 2016 (C2R-P)</p></li>
-<li><p>Project Professional 2016 (C2R-P)</p></li>
-<li><p>Project Standard 2016 (C2R-P)</p></li>
-</ul></td>
-<td align="left"><p>Office Deployment Tool</p></td>
-<td align="left"><p>Volume Licensing</p></td>
-<td align="left"><ul>
-<li><p>Desktop</p></li>
-<li><p>Personal VDI</p></li>
-<li><p>Pooled VDI</p></li>
-<li><p>RDS</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Office Professional Plus 2013</p>
-<p>Also supported:</p>
-<ul>
-<li><p>Visio Professional 2013</p></li>
-<li><p>Project Professional 2013</p></li>
-</ul></td>
-<td align="left"><p>Office Deployment Tool</p></td>
-<td align="left"><p>Volume Licensing</p></td>
-<td align="left"><ul>
-<li><p>Desktop</p></li>
-<li><p>Personal VDI</p></li>
-<li><p>Pooled VDI</p></li>
-<li><p>RDS</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+>[!NOTE]
+>You must use the Office Deployment Tool to create App-V packages for Office 365 ProPlus. Creating packages for the volume-licensed versions of Office Professional Plus or Office Standard is not supported. You cannot use the App-V Sequencer.
+
+>Support for the [Office 2013 version of Office 365 ended in Februrary 2017](https://support.microsoft.com/kb/3199744)
 
 ## <a href="" id="bkmk-plan-coexisting"></a>Planning for using App-V with coexisting versions of Office
 
@@ -145,8 +83,8 @@ The Office documentation provides extensive guidance on coexistence for Windows 
 
 The following tables summarize the supported coexistence scenarios. They are organized according to the version and deployment method you’re starting with and the version and deployment method you are migrating to. Be sure to fully test all coexistence solutions before deploying them to a production audience.
 
-**Note**  
-Microsoft does not support the use of multiple versions of Office in Windows Server environments that have the Remote Desktop Session Host role service enabled. To run Office coexistence scenarios, you must disable this role service.
+>[!NOTE] 
+>Microsoft does not support the use of multiple versions of Office in Windows Server environments that have the Remote Desktop Session Host role service enabled. To run Office coexistence scenarios, you must disable this role service.
 
  
 
