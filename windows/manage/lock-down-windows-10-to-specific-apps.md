@@ -16,7 +16,7 @@ localizationpriority: high
 
 **Applies to**
 
--   Windows 10
+-   Windows 10 Enterprise, Windows 10 Education
 
 >For more info about the features and functionality that are supported in each edition of Windows, see [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
 
