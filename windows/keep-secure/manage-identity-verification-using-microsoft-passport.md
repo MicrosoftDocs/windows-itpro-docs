@@ -15,4 +15,5 @@ redirect_url: https://technet.microsoft.com/en-us/itpro/windows/keep-secure/hell
 **Applies to**
 -   Windows 10
 -   Windows 10 Mobile
+-   Windows XP (Don't accept this pull request)
 
