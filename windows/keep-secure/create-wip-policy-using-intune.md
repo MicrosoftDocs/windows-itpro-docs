@@ -28,6 +28,8 @@ Note that if you exit the **Policy** page before you've saved your new policy, y
 ## Add a WIP policy
 After you’ve set up Intune for your organization, you must create a WIP-specific policy.
 
+>**Note**<br>To be able to successfully create and apply a Windows Information Protection policy make sure to use the English language Intune management portal. You must change your regional and language settings to Enligsh (United States) and set that as default for the Intune management portal to be automatically switched to English.
+
 **To add a WIP policy**
 1.  Open the Intune administration console, and go to the **Policy** node, and then click **Add Policy** from the **Tasks** area.
 
