@@ -43,7 +43,7 @@ Reporting level (MAPS membership level) | Basic, Advanced | Advanced | Advanced 
 Block at first sight availability | No | Yes | Yes | Not configurable | Configurable | No
 Cloud block timeout period | No | No | Configurable | Not configurable | Configurable | No
  
-# In this section
+## In this section
 
  Topic | Description 
 ---|---
