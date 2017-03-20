@@ -52,7 +52,8 @@ Let's start by looking at the basic structure of the lockdown XML file. You can 
 
 The settings for the Default role and other roles must be listed in your XML file in the order presented in this topic. All of the entries are optional. If you don't include a setting, that aspect of the device will operate as it would for an nonconfigured device.
 
->  **Tip**&nbsp;&nbsp;Keep your XML file easy to work with and to understand by using proper indentation and adding comments for each setting you configure.
+>[!TIP]
+>Keep your XML file easy to work with and to understand by using proper indentation and adding comments for each setting you configure.
 
 ## Action Center
 
@@ -384,21 +385,21 @@ For a list of the settings and quick actions that you can allow or block, see [S
  
  ## Configure additional roles
  
- You can add custom configurations by role. In addition to the role configuration, you must also install a login application on the device. The app displays a list of available roles on the device; the user taps a role, such as "Manager"; the configuration defined for the "Manager" role is applied.
+You can add custom configurations by role. In addition to the role configuration, you must also install a login application on the device. The app displays a list of available roles on the device; the user taps a role, such as "Manager"; the configuration defined for the "Manager" role is applied.
  
- [Learn how to create a login application that will work with your Lockdown XML file.](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DeviceLockdownAzureLogin) For reference, see the [Windows.Embedded.DeviceLockdown API](https://msdn.microsoft.com/library/windows/apps/windows.embedded.devicelockdown).
+[Learn how to create a login application that will work with your Lockdown XML file.](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DeviceLockdownAzureLogin) For reference, see the [Windows.Embedded.DeviceLockdown API](https://msdn.microsoft.com/library/windows/apps/windows.embedded.devicelockdown).
  
- In the XML file, you define each role with a GUID and name, as shown in the following example:
+In the XML file, you define each role with a GUID and name, as shown in the following example:
  
- ```xml
- <Role guid="{7bb62e8c-81ba-463c-b691-74af68230b42}" name="Manager">
- ```
+```xml
+<Role guid="{7bb62e8c-81ba-463c-b691-74af68230b42}" name="Manager">
+```
+
+You can create a GUID using a GUID generator -- free tools are available online. The GUID needs to be unique within this XML file.
  
- You can create a GUID using a GUID generator -- free tools are available online. The GUID needs to be unique within this XML file.
+You can configure the same settings for each role as you did for the default role, except Start screen size which can only be configured for the default role. If you use CSPRunner with roles, be aware that the last CSP setting applied will be retained across roles unless explicitly changed in each role configuration. CSP settings applied by CSPRunner may conflict with settings applied by MDM. 
  
- You can configure the same settings for each role as you did for the default role, except Start screen size which can only be configured for the default role. If you use CSPRunner with roles, be aware that the last CSP setting applied will be retained across roles unless explicitly changed in each role configuration. CSP settings applied by CSPRunner may conflict with settings applied by MDM. 
- 
- ```xml
+```xml
 <?xml version "1.0" encoding "utf-8"?>
 <HandheldLockdown version "1.0" >
 	<Default>
@@ -425,6 +426,10 @@ For a list of the settings and quick actions that you can allow or block, see [S
 	</Default>
 </HandheldLockdown>
 ```
+
+## Validate your XML
+
+You can validate your lockdown XML file against the [EnterpriseAssignedAccess XSD](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseassignedaccess-xsd).
  
 ## Add lockdown XML to a provisioning package
 
