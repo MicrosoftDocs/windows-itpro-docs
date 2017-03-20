@@ -67,32 +67,37 @@ Using Azure AD also means that you can remove an employee’s profile (for examp
 ## Security
 
 ### Windows Defender Advanced Threat Protection (Windows Defender ATP)
-The following features have been added to Windows Defender ATP in Windows 10, version 1703.
+- **Detection**<br>
+  Enhancements to the detection capabilities include:
+  - [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
+  - Improvements on OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks
+  - Upgraded detections of ransomware and other advanced attacks
+  - Historical detection capability ensures new detection rules apply to up to six months of stored data to detect attacks that previously went unnoticed
+
+  - **Investigation**<br>
+    Enterprise customers can now take advantage of the entire Windows security stack with Windows Defender Antivirus detections and Device Guard blocks being surfaced in the Windows Defender ATP portal. Other capabilities have been added to help you gain a holistic view on investigations.
+
+    Other investigation enhancements include:
+
+      - [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md) - Identify user accounts with the most active alerts and investigate cases of potential compromised credentials.
+      - [Alert process tree](investigate-alerts-windows-defender-advanced-threat-protection.md#alert-process-tree) - Aggregates multiple detections and related events into a single view to reduce case resolution time.
+      - [Pull alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md) - Use REST API to pull alerts from Windows Defender ATP.
 
 - **Response**<br>
-When detecting an attack, security response teams can now take immediate action to contain a breach:
-- [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md) - Quickly respond to detected attacks by isolating machines or collecting an investigation package.
-- [Isolate machines from the network](respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
-- [Undo machine isolation](respond-machine-alerts-windows-defender-advanced-threat-protection.md#undo-machine-isolation)
-- [Collect investigation package](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
-- [Take response actions on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md) - Quickly respond to detected attacks by stopping and quarantining files or blocking a file.
-- [Stop and quarantine files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#stop-and-quarantine-files-in-your-network)
-- [Remove file from quarantine](respond-file-alerts-windows-defender-advanced-threat-protection.md#remove-file-from-quarantine)
-- [Block files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#block-files-in-your-network)
- 		 
-- **Investigation**<br>
-Enterprise customers can now take advantage of the entire Windows security stack with Windows Defender Antivirus detections and Device Guard blocks being surfaced in the Windows Defender ATP portal.
+  When detecting an attack, security response teams can now take immediate action to contain a breach:
+  - [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md) - Quickly respond to detected attacks by isolating machines or collecting an investigation package.
+    - [Isolate machines from the network](respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
+    - [Undo machine isolation](respond-machine-alerts-windows-defender-advanced-threat-protection.md#undo-machine-isolation)
+    - [Collect investigation package](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
 
-Other investigation capabilities include:
+  - [Take response actions on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md) - Quickly respond to detected attacks by stopping and quarantining files or blocking a file.
+    - [Stop and quarantine files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#stop-and-quarantine-files-in-your-network)
+    - [Remove file from quarantine](respond-file-alerts-windows-defender-advanced-threat-protection.md#remove-file-from-quarantine)
+    - [Block files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#block-files-in-your-network)
 
-- [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md) - Identify user accounts with the most active alerts and investigate cases of potential compromised credentials.
-- [Alert process tree](investigate-alerts-windows-defender-advanced-threat-protection.md#alert-process-tree) - Aggregates multiple detections and related events into a single view to reduce case resolution time.
-
-- **Detection**<br>
-Windows Creators Update improves OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks.
-
-Other detection capabilities include:
-- [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
+- **Other features**
+  - [Check sensor health state](check-sensor-status-windows-defender-advanced-threat-protection.md) - Check an endpoint's ability to provide sensor data and communicate with the Windows Defender ATP service and fix known issues.
+    - [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
  
 
 ### Windows Defender Antivirus (Windows Defender AV)
