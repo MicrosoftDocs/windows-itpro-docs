@@ -28,7 +28,7 @@ Figure 1. The machines used in this topic.
 
 ## Set up the upgrade task sequence
 
-MDT 2013 Update 2 adds support for Windows 10 deployment, including a new in-place upgrade task sequence template that makes the process really simple.
+MDT adds support for Windows 10 deployment, including a new in-place upgrade task sequence template that makes the process really simple.
 
 ## Create the MDT production deployment share
 
