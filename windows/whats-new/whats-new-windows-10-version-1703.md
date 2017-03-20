@@ -64,6 +64,18 @@ Cortana is Microsoft’s personal digital assistant, who helps busy people get t
 
 Using Azure AD also means that you can remove an employee’s profile (for example, when an employee leaves your organization) while respecting Windows Information Protection (WIP) policies and ignoring enterprise content, such as emails, calendar items, and people lists that are marked as enterprise data.
 
+## Security
+
+### Windows Defender Advanced Threat Protection (Windows Defender ATP)
+The following features have been added to Windows Defender ATP in Windows 10, version 1703.
+
+- Detection
+
+- Investigation
+
+- Response 
+
+
 ## Learn more
 
 - [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info)
