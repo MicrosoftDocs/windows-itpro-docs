@@ -138,7 +138,7 @@ This sections provides steps to help you create a deployment for the task sequen
 ## <a href="" id="sec06"></a>Configure Configuration Manager to prompt for the computer name during deployment (optional)
 
 
-You can have Configuration Manager prompt you for a computer name or you can use rules to generate a computer name. For more details on how to do this, see [Configure MDT settings](configure-mdt-2013-settings.md).
+You can have Configuration Manager prompt you for a computer name or you can use rules to generate a computer name. For more details on how to do this, see [Configure MDT settings](configure-mdt-settings.md).
 
 This section provides steps to help you configure the All Unknown Computers collection to have Configuration Manager prompt for computer names.
 
@@ -162,7 +162,7 @@ This section provides steps to help you configure the All Unknown Computers coll
 ## Related topics
 
 
-[Integrate Configuration Manager with MDT 2013 Update 2](integrate-configuration-manager-with-mdt-2013.md)
+[Integrate Configuration Manager with MDT](integrate-configuration-manager-with-mdt.md)
 
 [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
 
