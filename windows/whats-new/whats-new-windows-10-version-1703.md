@@ -48,11 +48,11 @@ The following new Group Policy and mobile device management (MDM) settings are a
 
 ### Kiosk mode for Windows 10 Mobile
 
-In Windows 10 Mobile, version 1703, [Apps Corner](https://support.microsoft.com/instantanswers/7959c547-aa80-5ff1-9097-1784b6894845/set-up-apps-corner) is removed. Enterprises can use [Enterprise Assigned Access to configure kiosk experiences](../configure/set-up-a-kiosk-for-windows-10-for-mobile-edition.md) on devices running Windows 10 Mobile.
+In Windows 10 Mobile, version 1703, [Apps Corner](https://support.microsoft.com/instantanswers/7959c547-aa80-5ff1-9097-1784b6894845/set-up-apps-corner) is removed. Enterprises can use [Enterprise Assigned Access to configure kiosk experiences](../configure/set-up-a-kiosk-for-windows-10-for-mobile-edition.md) on devices running Windows 10 Mobile. 
 
 ### Start and taskbar layout
 
-Enterprises can apply a customized Start and tasbkar layout to devices running Windows 10 Pro, version 1703.
+Enterprises can apply a customized Start and tasbkar layout to devices running Windows 10 Pro, version 1703. 
 
 Additional MDM policy settings are available for Start and taskbar layout. For details, see [Manage Windows 10 Start and taskbar layout](../configure/windows-10-start-layout-options-and-policies.md).
 
@@ -77,34 +77,52 @@ Using Azure AD also means that you can remove an employee’s profile (for examp
 ## Security
 
 ### Windows Defender Advanced Threat Protection (Windows Defender ATP)
-The following features have been added to Windows Defender ATP in Windows 10, version 1703.
+- **Detection**<br>
+  Enhancements to the detection capabilities include:
+  - [Use the threat intelligence API to create custom alerts](../keep-secure/use-custom-ti-windows-defender-advanced-threat-protection.md) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
+  - Improvements on OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks
+  - Upgraded detections of ransomware and other advanced attacks
+  - Historical detection capability ensures new detection rules apply to up to six months of stored data to detect attacks that previously went unnoticed
+
+- **Investigation**<br>
+  Enterprise customers can now take advantage of the entire Windows security stack with Windows Defender Antivirus detections and Device Guard blocks being surfaced in the Windows Defender ATP portal. Other capabilities have been added to help you gain a holistic view on investigations.
+
+   Other investigation enhancements include:
+   - [Investigate a user account](../keep-secure/investigate-user-windows-defender-advanced-threat-protection.md) - Identify user accounts with the most active alerts and investigate cases of potential compromised credentials.
+   - [Alert process tree](../keep-secure/investigate-alerts-windows-defender-advanced-threat-protection.md#alert-process-tree) - Aggregates multiple detections and related events into a single view to reduce case resolution time.
+   - [Pull alerts using REST API](../keep-secure/pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md) - Use REST API to pull alerts from Windows Defender ATP.
 
 - **Response**<br>
   When detecting an attack, security response teams can now take immediate action to contain a breach:
-  - [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md) - Quickly respond to detected attacks by isolating machines or collecting an investigation package.
-    - [Isolate machines from the network](respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
-    - [Undo machine isolation](respond-machine-alerts-windows-defender-advanced-threat-protection.md#undo-machine-isolation)
-    - [Collect investigation package](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
+  - [Take response actions on a machine](../keep-secure/respond-machine-alerts-windows-defender-advanced-threat-protection.md) - Quickly respond to detected attacks by isolating machines or collecting an investigation package.
+  - [Take response actions on a file](../keep-secure/respond-file-alerts-windows-defender-advanced-threat-protection.md) - Quickly respond to detected attacks by stopping and quarantining files or blocking a file.
 
-  - [Take response actions on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md) - Quickly respond to detected attacks by stopping and quarantining files or blocking a file.
-    - [Stop and quarantine files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#stop-and-quarantine-files-in-your-network)
-    - [Remove file from quarantine](respond-file-alerts-windows-defender-advanced-threat-protection.md#remove-file-from-quarantine)
-    - [Block files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#block-files-in-your-network)
 
-- **Investigation**<br>
-  Enterprise customers can now take advantage of the entire Windows security stack with Windows Defender Antivirus detections and Device Guard blocks being surfaced in the Windows Defender ATP portal.
+- **Other features**
+  - [Check sensor health state](../keep-secure/check-sensor-status-windows-defender-advanced-threat-protection.md) - Check an endpoint's ability to provide sensor data and communicate with the Windows Defender ATP service and fix known issues.
 
-  Other investigation capabilities include:
+ 
 
-    - [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md) - Identify user accounts with the most active alerts and investigate cases of potential compromised credentials.
-    - [Alert process tree](investigate-alerts-windows-defender-advanced-threat-protection.md#alert-process-tree) - Aggregates multiple detections and related events into a single view to reduce case resolution time.
+### Windows Defender Antivirus (Windows Defender AV)
+New features for Windows Defender AV in Windows 10, version 1703 include:
 
-- **Detection**<br>
-  Windows Creators Update improves OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks.
+- [Updates to how the Block at First Sight feature can be configured](../keep-secure/configure-block-at-first-sight-windows-defender-antivirus.md)
+- [The ability to specify the level of cloud-protection](../keep-secure/specify-cloud-protection-level-windows-defender-antivirus.md)
+- [Windows Defender Antivirus protection in the Windows Defender Security Center app](../keep-secure/windows-defender-security-center-antivirus.md)
 
-  Other detection capabilities include:
-  - [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
-  
+Windows Defender is now called Windows Defender Antivirus, and we've [increased the breadth of the documentation library for enterprise security admins](../keep-secure/windows-defender-antivirus-in-windows-10.md). 
+
+The new library includes information on:
+- [Deploying and enabling AV protection](../keep-secure/deploy-windows-defender-antivirus.md)
+- [Managing updates](../keep-secure/manage-updates-baselines-windows-defender-antivirus.md)
+- [Reporting](../keep-secure/report-monitor-windows-defender-antivirus.md)
+- [Configuring features](../keep-secure/configure-windows-defender-antivirus-features.md)
+- [Troubleshooting](../keep-secure/troubleshoot-windows-defender-antivirus.md)
+
+Some of the highlights of the new library include:
+- [Evaluation guide for Windows Defender AV](../keep-secure/evaluate-windows-defender-antivirus.md)
+- [Deployment guide for Windows Defender AV in a virtual desktop infrastructure environment](../keep-secure/deployment-vdi-windows-defender-antivirus.md)
+
 
 ### Device Guard and Credential Guard
 
