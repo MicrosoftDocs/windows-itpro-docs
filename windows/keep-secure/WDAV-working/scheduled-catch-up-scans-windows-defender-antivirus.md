@@ -1,7 +1,7 @@
 ---
-title: Apply Windows Defender AV protection updates to out of date endpoints
-description: Define when and how updates should be applied for endpoints that have not updated in a while.
-keywords: updates, protection, out-of-date, outdated, old, catch-up
+title: 
+description: 
+keywords: 
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -12,7 +12,7 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Manage updates and scans for endpoints that are out of date
+# Configure scheduled and catch-up scanning options
 
 **Applies to**
 -   Windows 10
@@ -30,16 +30,14 @@ author: iaanw
 
 
 
-Windows Defender AV lets you define how long an endpoint can avoid an update or how many scans it can miss before it is required to update and scan itself. This is especially useful in environments where devices are not often connected to a corporate or external network, or devices that are not used on a daily basis.
+Windows Defender AV lets you define how many scheduled scans an endpoint can miss before it is required to scan itself. This is especially useful in environments where devices are not often connected to a corporate or external network, or devices that are not used on a daily basis.
 
+You can manage the following options with Group Policy, System Center Configuration Manager, Powershell cmdlets, and WMI classes:
 
-## Set up 
+- Define the number of days before an endpoint has outdated protection (PS WMI)
+- Define the number of days after which a catch-up update must occur (PS WMI)
 
-
-
-
-
-## Set up catch-up scans for endpoints that have not been scanned for a while (PS WMI)
+## Define the number of days before an endpoint has outdated protection (PS WMI)
 
 You can set the number of consecutive scheduled scans that can be missed before Windows Defender AV will force a scan. This is typically encountered in mobile or shared devices that are not regularly turned on, or to account for users who have not logged on to their PC for a period of days.
 
@@ -49,11 +47,15 @@ When the user returns to work and logs in to their PC, Windows Defender AV will 
 
 The process for enabling this feature is:
 
-1. Set up at least one scheduled scan (see the [Schedule scans](scheduled-catch-up-scans-windows-defender-antivirus.md) topic).
-2. Enable the catch-up scan feature.
-3. Define the number of scans that can be skipped before a catch-up scan occurs.
+1. Set up at least one scheduled scan
+2. Enable the catch-up scan feature
+3. Define the number of scans that can be skipped before a catch-up scan occurs
 
 This feature can be enabled for both full and quick scans.
+
+
+
+
 
 **Use Group Policy to enable and configure the catch-up scan feature:**
 
@@ -68,9 +70,9 @@ This feature can be enabled for both full and quick scans.
 5.  Expand the tree to **Windows components > Windows Defender Antivurs > Scan** and configure the following settings:
 
     1.  If you have set up scheduled quick scans, double-click the **Turn on catch-up quick scan** setting and set the option to **Enabled**. 
-    2. If you have set up scheduled full scans, double-click the **Turn on catch-up full scan** setting and set the option to **Enabled**. 
+    2. If you have set up scheduled quick scans, double-click the **Turn on catch-up full scan** setting and set the option to **Enabled**. 
     3. Double-click the **Define the number of days after which a catch-up scan is forced** setting and set the option to **Enabled**.
-    4. Enter the number of scans that can be missed before a scan will be automatically run when the user next logs on to the PC. The type of scan that is run is determined by the **Specify the scan type to use for a scheduled scan** (see the [Schedule scans](scheduled-catch-up-scans-windows-defender-antivirus.md) topic).
+    4. Enter the number of scans that can be missed before a scan will be automatically run when the user next logs on to the PC. If you have set up scheduled quick scans, a quick scan will be run; if you have set up scheduled full scans, a full scan will be run.
 
 > [!NOTE]
 > The GP setting title refers to the number of days. The setting, however, is applied to the number of scans (not days) before the catch-up scan will be run.
