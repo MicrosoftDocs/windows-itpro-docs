@@ -334,7 +334,7 @@ The **Settings** section contains an `allow` list of pages in the Settings app a
  ```
 In earlier versions of Windows 10, you used the page name to define allowed settings. Starting in Windows 10, version 1703, you use the settings URI.
 
-In the following example for Windows 10, version 1703, all system setting pages are enabled.
+In the following example for Windows 10, version 1703, all system setting pages that have a settings URI are enabled.
 
 ```xml
 <Settings> 
