@@ -36,14 +36,14 @@ Let's start by looking at the basic structure of the lockdown XML file. You can 
 <?xml version "1.0" encoding "utf-8"?>
 <HandheldLockdown version "1.0" >
 	<Default>
-		<ActionCenter>
-		<Apps>
-		<Buttons>
-		<CSPRunner>
-		<MenuItems>
-		<Settings>
-		<Tiles>
-		<StartScreenSize>
+		<ActionCenter/>
+		<Apps/>
+		<Buttons/>
+		<CSPRunner/>
+		<MenuItems/>
+		<Settings/>
+		<Tiles/>
+		<StartScreenSize/>
 	</Default>
 </HandheldLockdown>
 ```
@@ -402,24 +402,24 @@ For a list of the settings and quick actions that you can allow or block, see [S
 <?xml version "1.0" encoding "utf-8"?>
 <HandheldLockdown version "1.0" >
 	<Default>
-		<ActionCenter>
-		<Apps>
-		<Buttons>
-		<CSPRunner>
-		<MenuItems>
-		<Settings>
-		<Tiles>
-		<StartScreenSize>
+		<ActionCenter/>
+		<Apps/>
+		<Buttons/>
+		<CSPRunner/>
+		<MenuItems/>
+		<Settings/>
+		<Tiles/>
+		<StartScreenSize/>
 	</Default>
 		<RoleList>
 			<Role>
-				<ActionCenter>
-				<Apps>
-				<Buttons>
-				<CSPRunner>
-				<MenuItems>
-				<Settings>
-				<Tiles>
+				<ActionCenter/>
+				<Apps/>
+				<Buttons/>
+				<CSPRunner/>
+				<MenuItems/>
+				<Settings/>
+				<Tiles/>
 			</Role>
 		</RoleList>
 	</Default>
