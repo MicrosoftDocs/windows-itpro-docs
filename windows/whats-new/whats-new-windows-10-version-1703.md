@@ -115,6 +115,27 @@ For more information, see [Device Guard Requirements](../keep-secure/requirement
 
 The security setting [**Interactive logon: Display user information when the session is locked**](../keep-secure/interactive-logon-display-user-information-when-the-session-is-locked.md) has been updated to work in conjunction with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**. 
 
+## Update
+
+### Windows Update for Business
+
+The pause feature has been changed, and now requires a start date to set up. Users are now able to pause through **Settings > Update & security > Windows Update > Advanced options** in case a policy has not been configured. We have also increased the pause limit on quality updates to 35 days. You can find more information on pause in [Pause Feature Updates](../update/waas-configure-wufb.md#pause-feature-updates) and [Pause Quality Updates](../update/waas-configure-wufb.md#pause-feature-updates#pause-quality-updates).
+
+You are now able to defer feature update installation by up to 365 days. In settings, users are able to select their branch readiness level and update deferal periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](../update/waas-configure-wufb.md#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-quality-updates) for details.
+
+### Delivery Optimization
+
+Delivery Optimization policies now enable you to configure additional restrictions to have more control in various scenarios. 
+
+Added policies include:
+- [Allow uploads while the device is on battery while under set Battery level](../update/waas-delivery-optimization.md#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level)
+- [Enable Peer Caching while the device connects via VPN](../update/waas-delivery-optimization.md#enable-peer-caching-while-the-device-connects-via-vpn)
+- [Minimum RAM (inclusive) allowed to use Peer Caching](../update/waas-delivery-optimization.md#minimum-ram-allowed-to-use-peer-caching)
+- [Minimum disk size allowed to use Peer Caching](../update/waas-delivery-optimization.md#minimum-disk-size-allowed-to-use-peer-caching)
+- [Minimum Peer Caching Content File Size](../update/waas-delivery-optimization.md#minimum-peer-caching-content-file-size)
+
+To check out all the details, see [Configure Delivery Optimization for Windows 10 updates](../update/waas-delivery-optimization.md)
+
 ## Learn more
 
 - [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info)

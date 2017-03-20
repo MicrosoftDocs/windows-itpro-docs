@@ -32,6 +32,7 @@ By grouping devices with similar deferral periods, administrators are able to cl
 >[!TIP]
 >In addition to setting up multiple rings for your update deployments, also incorporate devices enrolled in the Windows Insider Program as part of your deployment strategy. This will provide you the chance to not only evaluate new features before they are broadly available to the public, but it also increases the lead time to provide feedback and influence Microsoft’s design on functional aspects of the product. For more information on Windows Insider program, see [https://insider.windows.com/](https://insider.windows.com/). 
 
+<span id="configure-devices-for-current-branch-or-current-branch-for-business"/>
 ## Configure devices for Current Branch (CB) or Current Branch for Business (CBB)
 
 With Windows Update for Business, you can set a device to be on either the Current Branch (CB) or the Current Branch for Business (CBB) servicing branch. For more information on this servicing model, see [Windows 10 servicing options](waas-overview.md#servicing-branches). 
@@ -247,7 +248,6 @@ Enabling allows user to set deferral periods for upgrades and updates.  It also 
 | --- | --- |
 | PauseFeatureUpdates | PauseFeatureUpdatesStartTime |
 | PauseQualityUpdates | PauseQualityUpdatesStartTime |
-
 
 ## Related topics
 
