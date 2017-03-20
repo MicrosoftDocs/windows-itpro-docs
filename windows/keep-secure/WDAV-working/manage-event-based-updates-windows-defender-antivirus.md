@@ -31,7 +31,7 @@ author: iaanw
 
 Windows Defender AV allows to determine if updates should (or should not) occur after certain events, such as at startup or after receiving specific reports from the cloud-delivered protection service.
 
-- Initiate definition update on startip
+- Initiate definition update on startup (PS/WMI)
 - Check for the latest virus and spyware definitions on startup
 - Allow notifications to disable definitions based reports to MAPS
 - Allow real-time definition updates based on reports to MAPS

@@ -31,9 +31,9 @@ author: iaanw
 
 Windows Defender AV lets you determine when it should look for and download updates.
 
-You can schedule updates for your endpoints by:
+You can schedule updates for your endpoints by: (WMI PS) SCCM?
 
-- Specifying the day of the week to check for definition updates
+- Specifying the day of the week to check for definition updates (WMI PS)
 - Specifying the interval to check for definition updates
 - Specifying the time to check for definition updates
 

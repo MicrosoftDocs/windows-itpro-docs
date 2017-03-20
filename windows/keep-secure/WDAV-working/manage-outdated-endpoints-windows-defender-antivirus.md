@@ -34,8 +34,8 @@ Windows Defender AV lets you define how long an endpoint can avoid an update bef
 
 You can manage the following options with Group Policy, System Center Configuration Manager, Powershell cmdlets, and WMI classes:
 
-- Define the number of days before an endpoint has outdated protection 
-- Define the number of days after which a catch-up update must occur
+- Define the number of days before an endpoint has outdated protection (PS WMI)
+- Define the number of days after which a catch-up update must occur (PS WMI)
 
 
 

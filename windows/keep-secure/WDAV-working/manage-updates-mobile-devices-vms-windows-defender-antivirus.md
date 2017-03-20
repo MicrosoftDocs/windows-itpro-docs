@@ -24,27 +24,27 @@ author: iaanw
 **Manageability available with**
 
 - Group Policy
-- System Center Configuration Manager
-- PowerShell cmdlets
-- Windows Management Instruction (WMI)
+
 
 
 
 Mobile devices and VMs may require additional configuration to ensure performance is not impacted by updates.
 
-There are a number of settings that are particularly useful for these devices:
+There are two settings that are particularly useful for these devices:
 
 - Opt-in to Microsoft Update on mobile computers without a WSUS connection
-- Allow definition updates when running on battery power
+- Prevent definition updates when running on battery power
 
-Also see the [Deployment guide for Windows Defender Antivirus in a virtual desktop infrastructure (VDI) environment](deployment-vdi-windows-defender-antivirus.md).
+The following topics may also be useful in this situations:
+- [Configuring scheduled and catch-up scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
+- [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
+- [Deployment guide for Windows Defender Antivirus in a virtual desktop infrastructure (VDI) environment](deployment-vdi-windows-defender-antivirus.md)
 
-
-### Opt-in to Microsoft Update on mobile computers without a WSUS connection
+## Opt-in to Microsoft Update on mobile computers without a WSUS connection
 
 You can use Microsoft Update to keep definitions on mobile devices running Windows Defender AV up to date when they are not connected to the corporate network or don't otherwise have a WSUS connection. 
 
-This means that protection updates can be delivered to devices (via Microsoft Update) even if WSUS overrides Microsoft Update.
+This means that protection updates can be delivered to devices (via Microsoft Update) even if you have set WSUS to override Microsoft Update.
 
 You can opt-in to Microsoft Update on the mobile device in one of the following ways:
 
@@ -63,7 +63,22 @@ You can opt-in to Microsoft Update on the mobile device in one of the following 
 2.  Click **Advanced** options.
 3.  Select the checkbox for **Give me updates for other Microsoft products when I update Windows**.
 
+## Prevent definition updates when running on battery power
 
+You can configure Windows Defender AV to only download protection updates when the PC is connected to a wired power source. 
+
+**Use Group Policy to prevent definition updates on battery power:**
+
+1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+
+3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+
+4.  Click **Policies** then **Administrative templates**.
+
+5.  Expand the tree to **Windows components > Windows Defender Antivurs > Signature Updates** and configure the following setting:
+
+    1. Double-click the **Allow definition updates when running on battery power** setting and set the option to **Disabled**. 
+    2. Click **OK**. This will prevent protection updates from downloading when the PC is on battery power.
 
 
 
@@ -73,4 +88,3 @@ You can opt-in to Microsoft Update on the mobile device in one of the following 
 
 - [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
 - [Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)
-- [Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)
