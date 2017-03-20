@@ -33,8 +33,8 @@ If you're not familiar with CSPs, read [Introduction to configuration service pr
 Let's start by looking at the basic structure of the lockdown XML file. You can start your file by pasting the following XML (or any other examples in this topic) into a text or XML editor, and saving the file as *filename*.xml.
 
 ```xml
-<?xml version "1.0" encoding "utf-8"?>
-<HandheldLockdown version "1.0" >
+<?xml version="1.0" encoding="utf-8"?>
+<HandheldLockdown version="1.0" >
 	<Default>
 		<ActionCenter/>
 		<Apps/>
@@ -423,7 +423,6 @@ You can configure the same settings for each role as you did for the default rol
 				<Tiles/>
 			</Role>
 		</RoleList>
-	</Default>
 </HandheldLockdown>
 ```
 
