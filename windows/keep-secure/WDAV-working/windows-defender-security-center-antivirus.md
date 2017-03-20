@@ -28,14 +28,19 @@ author: iaanw
 
 **Manageability available with**
 
-- Windows Defender Security Center app
+- Windows Defender Security Center app  
 
 
 In Windows 10, version 1703 (also known as the Creators Update), the Windows Defender app is now part of the Windows Defender Security Center.
 
 Settings that were previously part of the Windows Defender client and main Windows Settings have been combined and moved to the new app, which is installed by default as part of Windows 10, version 1703.
 
-The app also includes some settings and the status of the PC (as "device health"), Windows Firewall, Windows Defender SmartScreen Filter, and Parental and Family Controls.
+The app also includes the settings and status of:
+
+- The PC (as "device health")
+- Windows Firewall
+- Windows Defender SmartScreen Filter
+- Parental and Family Controls
 
 **Review virus and threat protection settings in the Windows Defender Security Center app:**
 
@@ -55,45 +60,86 @@ The following diagrams compare the location of settings and functions between th
 
 ![Windows Defender Antivirus in Windows 10, version 1703 and later](images/defender/wdav-wdsc.png)
 
-Item | Windows 10, before version 1703 | Windows 10, version 1703
+Item | Windows 10, before version 1703 | Windows 10, version 1703 | Description
+---|---|---|---
+1 | **Update** tab | **Protection updates** | Update the protection ("definition updates")
+2 | **History** tab | **Scan history** | Review threats that were quarantined, removed, or allowed
+3 | **Settings** (links to **Windows Settings**) | **Virus & threat protection settings** | Enable various features, including Real-time protection, Cloud-delivered protection, Advanced notifications, and Automatic ample submission
+4 | **Scan options** | **Advanced scan** | Run a full scan, custom scan, or a Windows Defender Offline scan
+5 | Run a scan (based on the option chosen under **Scan options** | **Quick scan** | In Windows 10, version 1703 you can run custom and full scans under the **Advanced scan** option
 
-
-
-1. The **Update** tab is now called **Protection updates** section
-2. The **History** tab is now called **Scan history**)
 
 ## Common tasks
 
 This section describes how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Windows Defender Antivirus in the new Windows Defender Security app.
 
+> [!NOTE]
+> If these settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings. The [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-windows-defender-antivirus.md) topic describes how local policy override settings can be configured.
+
 **Run a scan with the Windows Defender Security Center app**
+1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
+2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
+3. Click **Quick scan**.
+
+4. Click **Advanced scan** to specify different types of scans, such as a full scan.
 
 
 **Download protection updates in the Windows Defender Security Center app**
+1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
+2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+
+3. Click **Protection updates**.
+
+4. Click **Check for updates** to download new protection updates (if there are any).
 
 
 
 **Ensure Windows Defender Antivirus is enabled in the Windows Defender Security Center app**
 
+1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+
+2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+
+3. Click **Virus & threat protection settings**.
+
+4. Toggle the switches to **On** for the following settings:
+    1.  **Real-time protection**
+    2.  **Cloud-based protection**
+    3.  **Automatic sample submission**
+
+
 
 
 
 **Add exclusions for Windows Defender Antivirus in the Windows Defender Security Center app**
+1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
+2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+
+3. Click **Virus & threat protection settings**.
+
+4. Under the **Exclusions** setting, click **Add or remove exclusions**. 
+
+5. Click the plus icon to choose the type and set the options for each exclusion. 
 
 
 **Review threat detection history in the Windows Defender Security Center app**
+1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
+2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+
+3. Click **Scan history**.
+
+4. Click **See full history** under each of the categories (**Current threats**, **Quarantined threats**, **Allowed threats**).
 
 
 
 
 ## Related topics
 
-- [Windows Defender in Windows 10](windows-defender-in-windows-10.md)
-- [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
+- [Windows Defender Antivirus](windows-defender-antivirus-in-windows-10.md)
 
 
