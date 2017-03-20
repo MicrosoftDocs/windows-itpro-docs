@@ -33,6 +33,9 @@ Windows Configuration Designer can create provisioning packages for Windows 10 d
 - Windows Server 2012
 - Windows Server 2008 R2
 
+>[!WARNING]
+>You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.
+
 ## Install Windows Configuration Designer
 
 On devices running Windows 10, you can install [the Windows Configuration Designer app from the Windows Store](https://www.microsoft.com/store/apps/9nblggh4tx22). To run Windows Configuration Designer on other operating systems or in languages other than English, install it from the [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).

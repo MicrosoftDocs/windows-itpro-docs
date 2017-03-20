@@ -45,6 +45,9 @@ The desktop wizard helps you configure the following settings in a provisioning 
 - Create local administrator account 
 - Add applications and certificates
 
+>[!WARNING]
+>You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.
+
 Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more. 
 
 > [!TIP]
