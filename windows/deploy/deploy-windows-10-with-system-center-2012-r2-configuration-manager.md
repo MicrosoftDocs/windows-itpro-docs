@@ -17,7 +17,7 @@ author: mtniehaus
 
 -   Windows 10
 
-If you have Microsoft System Center 2012 R2 Configuration Manager in your environment, you will most likely want to use it to deploy Windows 10. This topic will show you how to set up Configuration Manager for operating system deployment and how to integrate Configuration Manager with the Microsoft Deployment Toolkit (MDT) or, more specifically, MDT 2013 Update 2.
+If you have Microsoft System Center 2012 R2 Configuration Manager in your environment, you will most likely want to use it to deploy Windows 10. This topic will show you how to set up Configuration Manager for operating system deployment and how to integrate Configuration Manager with the Microsoft Deployment Toolkit (MDT).
 
 For the purposes of this topic, we will use four machines: DC01, CM01, PC0003, and PC0004. DC01 is a domain controller and CM01 is a machine running Windows Server 2012 R2 standard. PC0003 and PC0004 are machines with Windows 7 SP1, on which Windows 10 will be deployed via both refresh and replace scenarios. In addition to these four ready-made machines, you could also include a few blank virtual machines to be used for bare-metal deployments. DC01, CM01, PC003, and PC0004 are all members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
@@ -28,7 +28,7 @@ Figure 1. The machines used in this topic.
 ## In this section
 
 
--   [Integrate Configuration Manager with MDT 2013 Update 2](integrate-configuration-manager-with-mdt-2013.md)
+-   [Integrate Configuration Manager with MDT](integrate-configuration-manager-with-mdt.md)
 
 -   [Prepare for Zero Touch Installation of Windows with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
 
@@ -69,11 +69,11 @@ Operating system deployment with Configuration Manager is part of the normal sof
 
 -   **Operating system images.** The operating system image package contains only one file, the custom .wim image. This is typically the production deployment image.
 
--   **Operating system installers.** The operating system installers were originally added to create reference images using Configuration Manager. Instead, we recommend that you use MDT 2013 Update 2 Lite Touch to create your reference images. For more information on how to create a reference image, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
+-   **Operating system installers.** The operating system installers were originally added to create reference images using Configuration Manager. Instead, we recommend that you use MDT Lite Touch to create your reference images. For more information on how to create a reference image, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
 
--   **Drivers.** Like MDT 2013 Update 2 Lite Touch, Configuration Manager also provides a repository (catalog) of managed device drivers.
+-   **Drivers.** Like MDT Lite Touch, Configuration Manager also provides a repository (catalog) of managed device drivers.
 
--   **Task sequences.** The task sequences in Configuration Manager look and feel pretty much like the sequences in MDT 2013 Update 2 Lite Touch, and they are used for the same purpose. However, in Configuration Manager the task sequence is delivered to the clients as a policy via the Management Point (MP). MDT 2013 Update 2 provides additional task sequence templates to Configuration Manager.
+-   **Task sequences.** The task sequences in Configuration Manager look and feel pretty much like the sequences in MDT Lite Touch, and they are used for the same purpose. However, in Configuration Manager the task sequence is delivered to the clients as a policy via the Management Point (MP). MDT provides additional task sequence templates to Configuration Manager.
 
     **Note**  Configuration Manager SP1 along with the Windows Assessment and Deployment Kit (ADK) for Windows 10 are required to support management and deployment of Windows 10.
 
