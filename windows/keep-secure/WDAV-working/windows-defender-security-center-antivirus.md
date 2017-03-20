@@ -49,9 +49,18 @@ The app also includes some settings and the status of the PC (as "device health"
 
 All of the previous functions and settings from the Windows Defender app (in versions of Windows 10 before version 1703) are now found in the new Windows Defender Security app. Settings that were previously located in Windows Settings under **Update & security** > **Windows Defender** are also now in the new app. 
 
-The following diagram identifies where previous settings are now located:
+The following diagrams compare the location of settings and functions between the old and new apps:
 
-![IMAGEALT](images/defender/IMAGEFILE.png)
+![Version of Windows Defender in Windows 10 before version 1703](images/defender/wdav-windows-defender-app-old.png)
+
+![Windows Defender Antivirus in Windows 10, version 1703 and later](images/defender/wdav-wdsc.png)
+
+Item | Windows 10, before version 1703 | Windows 10, version 1703
+
+
+
+1. The **Update** tab is now called **Protection updates** section
+2. The **History** tab is now called **Scan history**)
 
 ## Common tasks
 
