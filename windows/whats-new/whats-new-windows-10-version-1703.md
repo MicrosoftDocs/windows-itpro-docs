@@ -48,11 +48,11 @@ The following new Group Policy and mobile device management (MDM) settings are a
 
 ### Kiosk mode for Windows 10 Mobile
 
-In Windows 10 Mobile, version 1703, [Apps Corner](https://support.microsoft.com/instantanswers/7959c547-aa80-5ff1-9097-1784b6894845/set-up-apps-corner) is removed. Enterprises can use [Enterprise Assigned Access to configure kiosk experiences](../configure/set-up-a-kiosk-for-windows-10-for-mobile-edition.md) on devices running Windows 10 Mobile. 
+In Windows 10 Mobile, version 1703, [Apps Corner](https://support.microsoft.com/instantanswers/7959c547-aa80-5ff1-9097-1784b6894845/set-up-apps-corner) is removed. Enterprises can use [Enterprise Assigned Access to configure kiosk experiences](../configure/set-up-a-kiosk-for-windows-10-for-mobile-edition.md) on devices running Windows 10 Mobile.
 
 ### Start and taskbar layout
 
-Enterprises can apply a customized Start and tasbkar layout to devices running Windows 10 Pro, version 1703. 
+Enterprises can apply a customized Start and tasbkar layout to devices running Windows 10 Pro, version 1703.
 
 Additional MDM policy settings are available for Start and taskbar layout. For details, see [Manage Windows 10 Start and taskbar layout](../configure/windows-10-start-layout-options-and-policies.md).
 
@@ -69,11 +69,32 @@ Using Azure AD also means that you can remove an employee’s profile (for examp
 ### Windows Defender Advanced Threat Protection (Windows Defender ATP)
 The following features have been added to Windows Defender ATP in Windows 10, version 1703.
 
-- Detection
+- **Response**<br>
+  When detecting an attack, security response teams can now take immediate action to contain a breach:
+  - [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md) - Quickly respond to detected attacks by isolating machines or collecting an investigation package.
+    - [Isolate machines from the network](respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
+    - [Undo machine isolation](respond-machine-alerts-windows-defender-advanced-threat-protection.md#undo-machine-isolation)
+    - [Collect investigation package](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
 
-- Investigation
+  - [Take response actions on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md) - Quickly respond to detected attacks by stopping and quarantining files or blocking a file.
+    - [Stop and quarantine files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#stop-and-quarantine-files-in-your-network)
+    - [Remove file from quarantine](respond-file-alerts-windows-defender-advanced-threat-protection.md#remove-file-from-quarantine)
+    - [Block files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#block-files-in-your-network)
 
-- Response 
+- **Investigation**<br>
+  Enterprise customers can now take advantage of the entire Windows security stack with Windows Defender Antivirus detections and Device Guard blocks being surfaced in the Windows Defender ATP portal.
+
+  Other investigation capabilities include:
+
+    - [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md) - Identify user accounts with the most active alerts and investigate cases of potential compromised credentials.
+    - [Alert process tree](investigate-alerts-windows-defender-advanced-threat-protection.md#alert-process-tree) - Aggregates multiple detections and related events into a single view to reduce case resolution time.
+
+- **Detection**<br>
+  Windows Creators Update improves OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks.
+
+  Other detection capabilities include:
+  - [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
+  
 
 ### Device Guard and Credential Guard
 
