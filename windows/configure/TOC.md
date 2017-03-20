@@ -12,7 +12,7 @@
 ### [Use Windows Configuration Designer to configure Windows 10 Mobile devices](provisioning-configure-mobile.md)
 #### [NFC-based device provisioning](provisioning-nfc.md)
 #### [Barcode provisioning and the package splitter tool](provisioning-package-splitter.md)
-### [Use the Lockdown Designer app to configure Windows 10 Mobile devices](mobile-lockdown-designer.md)
+### [Use the Lockdown Designer app to create a Lockdown XML file](mobile-lockdown-designer.md)
 ### [Configure Windows 10 Mobile using Lockdown XML](lockdown-xml.md)
 ### [Settings and quick actions that can be locked down in Windows 10 Mobile](settings-that-can-be-locked-down.md)
 ### [Product IDs in Windows 10 Mobile](product-ids-in-windows-10-mobile.md)

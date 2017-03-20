@@ -325,7 +325,7 @@ Use DisableMenuItems to prevent use of the context menu, which is displayed when
 
 ![XML for settings](images/SettingsXML.png)
 
-The **Settings** section contains an `allow` list of pages in the Settings app. The following example allows all settings.
+The **Settings** section contains an `allow` list of pages in the Settings app and quick actions. The following example allows all settings.
 
 ```xml
  <Settings>
@@ -344,7 +344,6 @@ In the following example for Windows 10, version 1703, all system setting pages 
   <System name="ms-settings:messaging" />
   <System name="ms-settings:batterysaver" /> 
   <System name="ms-settings:batterysaver-usagedetails" /> 
-  <System name="ms-settings:powersleep" />
   <System name="ms-settings:about" /> 
   <System name="ms-settings:deviceencryption" /> 
   <System name="ms-settings:maps" /> 

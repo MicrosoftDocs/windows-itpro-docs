@@ -1,5 +1,5 @@
 ---
-title: Use the Lockdown Designer app to configure Windows 10 Mobile devices (Windows 10)
+title: Use the Lockdown Designer app to create a Lockdown XML file (Windows 10)
 description: 
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -9,7 +9,7 @@ localizationpriority: medium
 author: jdeckerMS
 ---
 
-# Use the Lockdown Designer app to configure Windows 10 Mobile devices
+# Use the Lockdown Designer app to create a Lockdown XML file
 
 ![Lockdown Designer in the Store](images/ldstore.png)
 

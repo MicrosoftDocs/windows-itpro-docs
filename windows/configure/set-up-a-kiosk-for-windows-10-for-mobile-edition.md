@@ -21,10 +21,6 @@ localizationpriority: high
 
 A device in kiosk mode runs a specified app with no access to other device functions, menus, or settings. You use the [Enterprise Assigned Access](#enterprise-assigned-access) configuration service provider (CSP) to configure a kiosk experience. You can also configure a device running Windows 10 Mobile or Windows 10 Mobile Enterprise, version 1607 or earlier, for kiosk mode by using the [Apps Corner](#apps-corner) feature. (Apps Corner is removed in version 1703.)
 
->[!NOTE] 
->The specified app must be an above lock screen app. For details on building an above lock screen app, see [Kiosk apps for assigned access: Best practices](https://go.microsoft.com/fwlink/p/?LinkId=708386).
-
- 
 
 
 ## Enterprise Assigned Access

@@ -118,7 +118,7 @@ Using assigned access, Windows 10 runs the designated Universal Windows app abo
 
 5.  Close **Settings** – your choices are saved automatically, and will be applied the next time that user account logs on.
 
-To remove assigned access, in step 3, choose **Don't use assigned access**.
+To remove assigned access, choose **Turn off assigned access and sign out of the selected account**.
 
 ### Set up assigned access in MDM
 
@@ -234,10 +234,13 @@ To set a Classic Windows application as the shell, you first turn on the Shell L
 
 **To turn on Shell Launcher in Windows features**
 
-1.  Go to Control Panel &gt; **Programs and Features** &gt; **Turn Windows features on or off**.
-2.  Select **Embedded Shell Launcher** and **OK**.
+1. Go to Control Panel &gt; **Programs and features** &gt; **Turn Windows features on or off**.
 
-Alternatively, you can turn on Shell Launcher using the Deployment Image Servicing and Management (DISM.exe) tool.
+2. Expand **Device Lockdown**.
+
+2. Select **Shell Launcher** and **OK**.
+
+Alternatively, you can turn on Shell Launcher using Windows Configuration Designer in a provisioning package, using `SMISettings > ShellLauncher`, or the Deployment Image Servicing and Management (DISM.exe) tool.
 
 **To turn on Shell Launcher using DISM**
 
