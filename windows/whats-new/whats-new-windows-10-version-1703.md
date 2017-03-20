@@ -75,6 +75,14 @@ The following features have been added to Windows Defender ATP in Windows 10, ve
 
 - Response 
 
+### Device Guard and Credential Guard
+
+Additional security qualifications for Device Guard and Credential Guard help protect vulnerabilities in UEFI runtime. 
+For more information, see [Device Guard Requirements](../keep-secure/requirements-and-deployment-planning-guidelines-for-device-guard.md#device-guard-requirements-for-improved-security) and [Credential Guard Security Considerations](../keep-secure/credential-guard.md#security-considerations).
+
+### Group Policy Security Options
+
+The security setting [**Interactive logon: Display user information when the session is locked**](../keep-secure/interactive-logon-display-user-information-when-the-session-is-locked.md) has been updated to work in conjunction with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**. 
 
 ## Learn more
 
