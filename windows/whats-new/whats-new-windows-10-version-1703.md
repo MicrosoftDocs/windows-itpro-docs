@@ -58,6 +58,16 @@ Additional MDM policy settings are available for Start and taskbar layout. For d
 
 Previously, the customized taskbar could only be deployed using Group Policy or provisioning packages. Windows 10, version 1703, adds support for customized taskbars to [MDM](../configure/customize-windows-10-start-screens-by-using-mobile-device-management.md).
 
+## Deployment
+
+### MBR2GPT.EXE
+
+MBR2GPT.EXE is a new command-line tool available in Windows 10 version 1703 and later versions. MBR2GPT converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS).
+
+The GPT partition format is newer and enables the use of larger and more disk partitions. It also provides added data reliability and supports additional partition types. If you convert the system disk on a computer from MBR to GPT, you must also configure the computer to boot in UEFI mode, so make sure that your device supports UEFI before attempting to convert the system disk. 
+
+For details, see [MBR2GPT.EXE](../deploy/mbr-to-gpt.md).
+
 ## Learn more
 
 - [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info)
