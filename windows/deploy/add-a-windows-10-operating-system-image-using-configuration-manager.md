@@ -48,7 +48,7 @@ For the purposes of this topic, we will use CM01, a machine running Windows Serv
 ## Related topics
 
 
-[Integrate Configuration Manager with MDT 2013 Update 2](integrate-configuration-manager-with-mdt-2013.md)
+[Integrate Configuration Manager with MDT](integrate-configuration-manager-with-mdt.md)
 
 [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
 
