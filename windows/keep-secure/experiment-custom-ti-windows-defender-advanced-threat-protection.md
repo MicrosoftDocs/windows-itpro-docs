@@ -49,20 +49,20 @@ This step will guide you in creating an alert definition and an IOC for a malici
 
 3. Run the script and verify that the operation succeeded in the results the window. Wait up to 20 minutes until the new or updated alert definition propagates to the detection engines.
 
-  If you get the exception “The remote server returned an error: (407) Proxy Authentication Required", you need to add the proxy configuration by adding the following code to the PowerShell script.
-
-  ```
-  $webclient=New-Object System.Net.WebClient
-  $creds=Get-Credential
-  $webclient.Proxy.Credentials=$creds
-  ```
-
+  >[!NOTE]
+  >  If you get the exception “The remote server returned an error: (407) Proxy Authentication Required", you need to add the proxy configuration by adding the following code to the PowerShell script:
+  > ```
+  >$webclient=New-Object System.Net.WebClient
+  >$creds=Get-Credential
+  >$webclient.Proxy.Credentials=$creds
+  >```
+  
 ## Step 3: Simulate a custom TI alert
 This step will guide you in simulating an event in connection to a malicious IP that will trigger the Windows Defender ATP custom TI alert.
 
 1. Open a Windows PowerShell ISE in the machine you onboarded to Windows Defender ATP.
 
-2. Type `Invoke-WebRequest 52.184.197.12` in the editor and click **Run**. This call will generate a network communication event to the demo IP that will raise an alert based on the custom alert definition.
+2. Type `Invoke-WebRequest 52.184.197.12` in the editor and click **Run**. This call will generate a network communication event to a Microsoft's dedicated demo server that will raise an alert based on the custom alert definition.
 
   ![Image of editor with command to Invoke-WebRequest](images/atp-simulate-custom-ti.png)
 
@@ -76,3 +76,6 @@ This step will guide you in exploring the custom alert in the portal.
 3.	The dashboard should display the custom TI alert for the victim machine resulting from the simulated attack.
 
   ![Image of sample custom ti alert in the portal](images/atp-sample-custom-ti-alert.png)
+
+  >[!NOTE]
+  >  It can take up to 15 minutes for the alert to appear in the portal.
