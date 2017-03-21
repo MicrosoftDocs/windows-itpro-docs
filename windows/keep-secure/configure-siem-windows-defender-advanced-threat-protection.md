@@ -1,5 +1,5 @@
 ---
-title: Configure SIEM tools and use REST API to pull alerts from Windows Defender Advanced Threat Protection
+title: Pull alerts by configuring SIEM tools or REST API to pull alerts from Windows Defender Advanced Threat Protection
 description: Learn how to use REST API and configure supported security information and events management tools to receive and pull alerts using REST API.
 keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
 search.product: eADQiWindows 10XVcnh
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Configure SIEM tools or use REST API to pull alerts
+# Pull alerts using SIEM tools or use REST API
 
 **Applies to:**
 

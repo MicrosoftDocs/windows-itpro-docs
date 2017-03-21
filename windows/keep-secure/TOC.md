@@ -768,7 +768,7 @@
 ######## [Submit files for analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#submit-files-for-analysis)
 ######## [View deep analysis reports](respond-file-alerts-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
 ######## [Troubleshoot deep analysis](respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
-#### [Configure SIEM tools or use REST API to pull alerts](configure-siem-windows-defender-advanced-threat-protection.md)
+#### [Pull alerts using SIEM tools or REST API](configure-siem-windows-defender-advanced-threat-protection.md)
 ##### [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 ##### [Configure Splunk to pull Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
 ##### [Configure HP ArcSight to pull Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
