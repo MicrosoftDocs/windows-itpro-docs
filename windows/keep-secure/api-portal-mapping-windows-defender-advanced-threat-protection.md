@@ -49,26 +49,26 @@ Portal label  | SIEM field name | Description
 7	| Category |	Alert category
 8 | Status in queue | Alert status in queue
 9	| ComputerDnsName|	Computer DNS name and machine name
-10	| IoaDefinitionId	| (Internal only)  <br><br>  ID for the IOA (Indication of attack) that this alert belongs to. It usually correlates with the title. <br><br> **Note**: This is an internal ID of the rule which triggers the alert. It's provided here as it can be used for aggregations in the SIEM.
-10 | UserName	| The user context relevant to the activity on the machine which triggered the alert.
-11 | FileName	| File name
-12 | FileHash	| Sha1 of file observed
-13 | FilePath	| File path
-14 | IpAddress |	IP of the IOC (when relevant)
-15 | URL	| URL of the IOC (when relevant)  
-16 | FullId	| (Internal only)  <br><br> Unique ID for each combination of IOC and Alert ID. Provides the ability to apply dedup logic in the SIEM.
-17 | AlertPart	| (Internal only)  <br><br> Alerts which contain multiple IOCs will be split into several messages, each message contains one IOC and a running counter. The counter provides the ability to reconstruct the alerts in the SIEM.
-18 | LastProccesedTimeUtc | (Internal only)  <br><br>	Time the alert was last processed in Windows Defender ATP.
-19 | Source| Alert detection source (Windows Defender AV or Windows Defender ATP)
-20 | ThreatCategory| Windows Defender AV threat category
-21 | ThreatFamily |	Windows Defender AV family name
-22 | RemediationAction |	Windows Defender AV threat category	 |
-23 | WasExecutingWhileDetected	| Indicates if a file was running while being detected. (Windows Defender AV field)
-24|	RemediationIsSuccess	| Indicates if an alert was successfully remediated. (Windows Defender AV field)
-25 | Sha1	| Sha1 of file observed	in alert timeline and in file side pane (when available)
-26 | Md5 | Md5 of file observed	(when available)
-27 | Sha256 |	Sha256 of file observed	(when available)
-28	|	ThreatName	| Windows Defender AV threat name
+10| IoaDefinitionId	| (Internal only)  <br><br>  ID for the IOA (Indication of attack) that this alert belongs to. It usually correlates with the title. <br><br> **Note**: This is an internal ID of the rule which triggers the alert. It's provided here as it can be used for aggregations in the SIEM.
+11 | UserName	| The user context relevant to the activity on the machine which triggered the alert.
+12 | FileName	| File name
+13 | FileHash	| Sha1 of file observed
+14 | FilePath	| File path
+15 | IpAddress |	IP of the IOC (when relevant)
+16 | URL	| URL of the IOC (when relevant)  
+17 | FullId	| (Internal only)  <br><br> Unique ID for each combination of IOC and Alert ID. Provides the ability to apply dedup logic in the SIEM.
+18 | AlertPart	| (Internal only)  <br><br> Alerts which contain multiple IOCs will be split into several messages, each message contains one IOC and a running counter. The counter provides the ability to reconstruct the alerts in the SIEM.
+19 | LastProccesedTimeUtc | (Internal only)  <br><br>	Time the alert was last processed in Windows Defender ATP.
+20 | Source| Alert detection source (Windows Defender AV or Windows Defender ATP)
+21 | ThreatCategory| Windows Defender AV threat category
+22 | ThreatFamily |	Windows Defender AV family name
+23 | RemediationAction |	Windows Defender AV threat category	 |
+24 | WasExecutingWhileDetected	| Indicates if a file was running while being detected. (Windows Defender AV field)
+25|	RemediationIsSuccess	| Indicates if an alert was successfully remediated. (Windows Defender AV field)
+26 | Sha1	| Sha1 of file observed	in alert timeline and in file side pane (when available)
+27 | Md5 | Md5 of file observed	(when available)
+28 | Sha256 |	Sha256 of file observed	(when available)
+29	|	ThreatName	| Windows Defender AV threat name
 
 >[!NOTE]
 >A single AlertID represents an IOA detection and may contain multiple IOCs. In such a cases, they will be exported to the SIEM tool as multiple instances. For every instance with the same AlertID, fields #1-8 will be identical while fields #9-18 will be different according to the new IOC information. Fields #20-28 are related to Windows Defender Antivirus alerts.
