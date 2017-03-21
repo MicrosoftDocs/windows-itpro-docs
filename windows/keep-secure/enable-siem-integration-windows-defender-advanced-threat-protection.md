@@ -21,7 +21,7 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Enable security information and event management (SIEM) integration so that you can receive alerts in your SIEM solution from the Windows Defender ATP portal.
+Enable security information and event management (SIEM) integration so you can pull alerts from the Windows Defender ATP portal using your SIEM solution or by connecting directly to the alerts REST API.
 
 1. In the navigation pane, select **Preferences setup** > **SIEM integration**.
 
@@ -38,12 +38,13 @@ Enable security information and event management (SIEM) integration so that you 
   >If you select HP ArcSight, you'll need to save these two configuration files:
   > - WDATP-connector.jsonparser.properties
   > - WDATP-connector.properties
+  > If you want to connect directly to the alerts REST API through programmatic access, choose **Generic API**.
 
 4. Copy the individual values or select **Save details to file** to download a file that contains all the values.
 
 5. Select **Generate tokens** to get an access and refresh token.
 
-You can now proceed with configuring your SIEM solution. You'll need to use the tokens when configuring your SIEM solution to allow it to receive alerts from the Windows Defender ATP portal.
+You can now proceed with configuring your SIEM solution or connecting to the alerts REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive alerts from the Windows Defender ATP portal.
 
 ## Related topics
 - [Configure Splunk to pull Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
