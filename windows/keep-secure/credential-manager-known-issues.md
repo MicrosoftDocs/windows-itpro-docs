@@ -1,6 +1,6 @@
 ---
 title: Known issues with Credential Manager (Windows 10)
-description: Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
+description: Credential Manager - Known issues in Windows 10 Enterprise
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library

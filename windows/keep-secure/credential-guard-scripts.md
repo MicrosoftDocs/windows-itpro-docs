@@ -11,7 +11,7 @@ author: brianlic-msft
 
 # Credential Guard Scripts
 
-Here is a list of scripts that are mentioned in this topic.
+Here is a list of scripts mentioned in this topic.
 
 ## <a href="" id="bkmk-getscript"></a>Get the available issuance policies on the certificate authority
 

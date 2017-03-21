@@ -15,7 +15,16 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-For Credential Guard to provide protections, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements which we will refer to as [Hardware and software requirements](#hardware-and-software-requirements). Additionally Credential Guard blocks specific authentication capabilities, so application that require such capabilities will break. We will refer to this as [Application requirements](#application-requirements). Beyond that, computers can meet additional hardware and firmware qualifications, and receive additional protection. Those computers will be more hardened against certain threats. For detailed information on baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017, see the tables in the [Security Considerations](#security-considerations) section.
+Prefer video?
+
+[![Credential Guard Deployment Requirements](images/mva_videos.png)](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=sRcyvLJyC_3304300474)
+
+
+
+
+
+
+For Credential Guard to provide protections, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements which we will refer to as [Hardware and software requirements](#hardware-and-software-requirements). Additionally, Credential Guard blocks specific authentication capabilities, so applications that require such capabilities will break. We will refer to this as [Application requirements](#application-requirements). Beyond that, computers can meet additional hardware and firmware qualifications, and receive additional protections. Those computers will be more hardened against certain threats. For detailed information on baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017, refer to the tables in [Security Considerations](#security-considerations).
 
 
 
@@ -34,7 +43,7 @@ The Virtualization-based security requires:
 
 ## Application requirements
 
-When Credential Guard is enabled, specific authentication capabilities are blocked, so application that require such capabilities will break. Applications should be tested prior to deployment to ensure compatiblity with the reduced functionality. 
+When Credential Guard is enabled, specific authentication capabilities are blocked, so applications that require such capabilities will break. Applications should be tested prior to deployment to ensure compatiblity with the reduced functionality. 
 
 >[!WARNING] 
 > Enabling Credential Guard on domain controllers is not supported. <br>
@@ -55,6 +64,9 @@ Applications will prompt and expose credentials to risk if they require:
 - MS-CHAPv2
 
 Applications may cause performance issues when they attempt to hook the isolated Credential Guard process. 
+
+See this video: [Credentials Protected by Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
+
 
 ## Security considerations
 
