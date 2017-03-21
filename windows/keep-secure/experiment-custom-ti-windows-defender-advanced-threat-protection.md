@@ -55,7 +55,7 @@ This step will guide you in creating an alert definition and an IOC for a malici
     NOTE:<br>
     If you get the exception “The remote server returned an error: (407) Proxy Authentication Required", you need to add the proxy configuration by adding the following code to the PowerShell script:
 
-    ```
+    ```syntax
     $webclient=New-Object System.Net.WebClient
     $creds=Get-Credential
     $webclient.Proxy.Credentials=$creds
