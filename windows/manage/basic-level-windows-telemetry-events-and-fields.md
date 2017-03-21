@@ -3132,18 +3132,18 @@ This event sends data about the UpdateStackServicing check for updates, to help 
 
 The following fields are available:
 
-- **EventScenario**  "Started" , "Failed" , or "Succeeded"
-- **StatusCode**  HRESULT of operation
-- **CallerApplicationName**  The name of the USS scheduled task: "UssScheduled" or "UssBoot"
-- **ClientVersion**  "The value of the following CSP node: L./DevDetail/SwV"""he value of the """he value of the fol"
-- **EventInstanceID**  GUID USS session ID
-- **WUDeviceID**  "The value of the following CSP node: ./DevDetail/DevTyp"""he value of the fol"""he value of the follow"
-- **ServiceGuid**  {B1F3A655-690F-4DD3-9BBF-38769C03CEFB}
-- **BspVersion**  "The value of the following CSP node: L./DevDetail/FwV"""he value of the """he value of the fol"
-- **OemName**  "The value of the following CSP node: ./DevInfo/Man"""he value of th"""he value of the f"
-- **DeviceName**  "The value of the following CSP node:L./DevDetail/DevTyp"""he value of the fol"""he value of the follow"
-- **CommercializationOperator**  The value of the following CSP node:
-- **DetectionVersion**  The string returned from the "GetDetectionVersion" export of the downloaded detection DLL
+- **EventScenario**  The scenario of the event. Example: Started, Failed, or Succeeded
+- **StatusCode**  The HRESULT code of the operation.
+- **CallerApplicationName**  The name of the USS scheduled task. Example UssScheduled or UssBoot
+- **ClientVersion**  The version of the client.
+- **EventInstanceID**  The USS session ID.
+- **WUDeviceID**  The Windows Update device ID.
+- **ServiceGuid**  The GUID of the service.
+- **BspVersion**  The version of the BSP.
+- **OemName**  The name of the manufacturer.
+- **DeviceName**  The name of the device.
+- **CommercializationOperator**  The name of the operator.
+- **DetectionVersion**  The string returned from the GetDetectionVersion export of the downloaded detection DLL.
 
 ### Microsoft.Windows.Update.Ux.MusNotification.RebootNoLongerNeeded
 
@@ -3531,6 +3531,8 @@ The following fields are available:
 - **PauseQualityUpdatesEndTime**  If quality OS updates are paused on the device, this is the date and time for the end of the pause time window.
 - **PauseFeatureUpdatesStartTime**  If feature OS updates are paused on the device, this is the date and time for the beginning of the pause time window.
 - **PauseFeatureUpdatesEndTime**  If feature OS updates are paused on the device, this is the date and time for the end of the pause time window.
+- **Context** Gives context on where the error has occurred. Example: AutoEnable, GetSLSData, AddService, Misc, or Unknown
+- **DriverSyncPassPerformed** Were drivers scanned this time?
 
 ### SoftwareUpdateClientTelemetry.Commit
 
