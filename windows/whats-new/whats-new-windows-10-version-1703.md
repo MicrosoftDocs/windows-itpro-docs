@@ -1,5 +1,5 @@
 ---
-title: What's new in Windows 10, version 1607 (Windows 10)
+title: What's new in Windows 10, version 1703 (Windows 10)
 description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 keywords: ["What's new in Windows 10", "Windows 10", "creators update"]
 ms.prod: w10
@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: TrudyHa
 localizationpriority: high
+ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
 ---
 
 # What's new in Windows 10, version 1703
@@ -41,13 +42,13 @@ The following new Group Policy and mobile device management (MDM) settings are a
 
 ### Start and taskbar layout
 
-Enterprises can apply a customized Start and tasbkar layout to devices running Windows 10 Pro, version 1703. 
+Enterprises can apply a customized Start and taskbar layout to devices running Windows 10 Pro, version 1703. 
 
 Additional MDM policy settings are available for Start and taskbar layout. For details, see [Manage Windows 10 Start and taskbar layout](../configure/windows-10-start-layout-options-and-policies.md).
 
 Previously, the customized taskbar could only be deployed using Group Policy or provisioning packages. Windows 10, version 1703, adds support for customized taskbars to [MDM](../configure/customize-windows-10-start-screens-by-using-mobile-device-management.md).
 
-### Lockdown Designer app
+### Lockdown Designer app for Windows 10 Mobile lockdown files
 
 The Lockdown Designer app helps you configure and create a lockdown XML file to apply to devices running Windows 10 Mobile, and includes a remote simulation to help you determine the layout for tiles on the Start screen. Using Lockdown Designer is easier than [manually creating a lockdown XML file](../configure/lockdown-xml.md).
 
@@ -161,4 +162,5 @@ To check out all the details, see [Configure Delivery Optimization for Windows 1
 
 ## Learn more
 
-- [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info)
+- [Windows 10 release information](https://technet.microsoft.com/windows/release-info)
+- [What's new in MDM in Windows 10, version 1703](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/new-in-windows-mdm-enrollment-management#whatsnew10)
