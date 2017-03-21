@@ -43,17 +43,17 @@ This step will guide you in creating an alert definition and an IOC for a malici
 
 2. Copy and paste the following PowerShell script. This script will upload a sample alert definition and IOC to Windows Defender ATP which you can use to generate an alert.
 
-  NOTE:<br>
-  Make sure you replace the `authUrl`, `clientId`, and `clientSecret` values with your details which you saved in when you enabled the threat intelligence application.
+    NOTE:<br>
+    Make sure you replace the `authUrl`, `clientId`, and `clientSecret` values with your details which you saved in when you enabled the threat intelligence application.
 
-  [!code[ExampleScript](./code/example-script.ps1#L1-L60)]
+    [!code[ExampleScript](./code/example-script.ps1#L1-L60)]
 
 3. Run the script and verify that the operation succeeded in the results the window. Wait up to 20 minutes until the new or updated alert definition propagates to the detection engines.
 
-  ![Image of the script running](images/atp-running-script.png)
+    ![Image of the script running](images/atp-running-script.png)
 
-  NOTE:<br>
-  If you get the exception “The remote server returned an error: (407) Proxy Authentication Required", you need to add the proxy configuration by adding the following code to the PowerShell script:
+    NOTE:<br>
+    If you get the exception “The remote server returned an error: (407) Proxy Authentication Required", you need to add the proxy configuration by adding the following code to the PowerShell script:
 
     ```
     $webclient=New-Object System.Net.WebClient
@@ -68,7 +68,7 @@ This step will guide you in simulating an event in connection to a malicious IP 
 
 2. Type `Invoke-WebRequest 52.184.197.12` in the editor and click **Run**. This call will generate a network communication event to a Microsoft's dedicated demo server that will raise an alert based on the custom alert definition.
 
-  ![Image of editor with command to Invoke-WebRequest](images/atp-simulate-custom-ti.png)
+    ![Image of editor with command to Invoke-WebRequest](images/atp-simulate-custom-ti.png)
 
 ## Step 4: Explore the custom alert in the portal
 This step will guide you in exploring the custom alert in the portal.
@@ -79,7 +79,7 @@ This step will guide you in exploring the custom alert in the portal.
 
 3.	The dashboard should display the custom TI alert for the victim machine resulting from the simulated attack.
 
-  ![Image of sample custom ti alert in the portal](images/atp-sample-custom-ti-alert.png)
+    ![Image of sample custom ti alert in the portal](images/atp-sample-custom-ti-alert.png)
 
-  >[!NOTE]
-  > It can take up to 15 minutes for the alert to appear in the portal.
+    >[!NOTE]
+    > It can take up to 15 minutes for the alert to appear in the portal.
