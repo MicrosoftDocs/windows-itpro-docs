@@ -26,9 +26,9 @@ Try
     $alertDefinitionPayload = @{
         "Name" = "Test Alert"
         "Severity" = "Medium"
-        "InternalDescription" = "A test alert used for demonstrating the WDATP TI API feature"
+        "InternalDescription" = "A test alert used to demonstrate the Windows Defender ATP TI API feature"
         "Title" = "Test alert."
-        "UxDescription" = "This is a test alert based on a sample custom alert   definition. This alert was riggered manually using a provided test command. It indicates that the Threat Intelligence API has been properly enabled"
+        "UxDescription" = "This is a test alert based on a sample custom alert definition. This alert was triggered manually using a provided test command. It indicates that the Threat Intelligence API has been properly enabled."
         "RecommendedAction" = "No recommended action for this test alert."
         "Category" = "SuspiciousNetworkTraffic"
         "Enabled" = "true"}
@@ -56,5 +56,5 @@ Try
 }
 Catch
 {
-    'Something Went Wrong! Got the following exception message: {0}' -f $_.Exception.Message
+    'Something went wrong! Got the following exception message: {0}' -f $_.Exception.Message
 }
