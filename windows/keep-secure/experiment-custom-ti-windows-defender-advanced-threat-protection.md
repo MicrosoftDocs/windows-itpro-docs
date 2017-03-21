@@ -49,14 +49,14 @@ This step will guide you in creating an alert definition and an IOC for a malici
 
 3. Run the script and verify that the operation succeeded in the results the window. Wait up to 20 minutes until the new or updated alert definition propagates to the detection engines.
 
-  NOTE:
-  If you get the exception “The remote server returned an error: (407) Proxy Authentication Required", you need to add the proxy configuration by adding the following code to the PowerShell script:
+  >[!NOTE]
+  >If you get the exception “The remote server returned an error: (407) >Proxy Authentication Required", you need to add the proxy >configuration by adding the following code to the PowerShell script:
 
-  ```
-  $webclient=New-Object System.Net.WebClient
-  $creds=Get-Credential
-  $webclient.Proxy.Credentials=$creds
-  ```
+    ```
+    $webclient=New-Object System.Net.WebClient
+    $creds=Get-Credential
+    $webclient.Proxy.Credentials=$creds
+    ```
 
 ## Step 3: Simulate a custom TI alert
 This step will guide you in simulating an event in connection to a malicious IP that will trigger the Windows Defender ATP custom TI alert.
