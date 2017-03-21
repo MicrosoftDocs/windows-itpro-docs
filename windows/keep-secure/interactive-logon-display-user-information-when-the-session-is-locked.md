@@ -21,7 +21,7 @@ This security setting controls whether details such as email address or domain\u
 For clients that run Windows 10 version 1511 and 1507 (RTM), this setting works similarly to previous versions of Windows.
 However, because of a new **Privacy** setting introduced in Windows 10 version 1607, this security setting affects those clients differently.
 
-### Changes in Windows 10 version 1607
+### Changes beginning with Windows 10 version 1607
 
 Beginning with Windows 10 version 1607, new functionality was added to Windows 10 to hide username details such as email address by default, with the ability to change the default to show the details.
 This functionality is controlled by a new **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**.
@@ -65,7 +65,8 @@ Clients that run Windows 10 version 1607 will not show details on the sign-in sc
 If the **Privacy** setting is turned on, details will show.
 
 The **Privacy** setting cannot be changed for clients in bulk.
-Instead, apply [KB 4013429](http://www.catalog.update.microsoft.com/Search.aspx?q=KB4013429) to clients that run Windows 10 version 1607 so they behave similarly to previous versions of Windows.
+Instead, apply [KB 4013429](http://www.catalog.update.microsoft.com/Search.aspx?q=KB4013429) to clients that run Windows 10 version 1607 so they behave similarly to previous versions of Windows. 
+Clients that run later versions of Windows 10 do not require a hotfix.
 
 There are related Group Policy settings:
 
