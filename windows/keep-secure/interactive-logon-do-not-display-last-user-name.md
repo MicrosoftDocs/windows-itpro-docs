@@ -40,14 +40,14 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 ### Default values
 
-| Server type or Group Policy object (GPO) | Default value| 
+| Server type or Group Policy object (GPO) | Default value|
 | - | - |
-| Default domain policy| Disabled| 
-| Default domain controller policy| Disabled| 
-| Stand-alone server default settings | Disabled| 
-| Domain controller effective default settings | Disabled| 
-| Member server effective default settings | Disabled| 
-| Effective GPO default settings on client computers | Disabled| 
+| Default domain policy| Disabled|
+| Default domain controller policy| Disabled|
+| Stand-alone server default settings | Disabled|
+| Domain controller effective default settings | Disabled|
+| Member server effective default settings | Disabled|
+| Effective GPO default settings on client computers | Disabled|
  
 ## Policy management
 
