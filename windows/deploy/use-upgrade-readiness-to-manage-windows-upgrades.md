@@ -51,4 +51,4 @@ To change the target version setting, click on **Solutions Settings**, which app
 
 On the **Upgrade Readiness Settings** page, choose one of the options in the drop down box and click **Save**. The changes in the target version setting are reflected in evaluations when a new snapshot is uploaded to your workspace.
 
-![Target version](images/ua-cg-09.png)
+![Target version](images/ur-settings.png)

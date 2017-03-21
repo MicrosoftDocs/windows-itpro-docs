@@ -18,8 +18,8 @@ localizationpriority: high
 **Applies to**
 -   Windows 10
 
-Enterprise certificate pinning is a Windows feature for remembering, or “pinning” a root, issuing certificate authority, or end entity certificate to a given domain name. 
-Enterprise certificate pinning enables you to protect your internal domain names from chaining to unwanted certificates or to fraudulently issued certificates to help reduce man-in-the-middle attacks.
+Enterprise certificate pinning is a Windows feature for remembering, or “pinning,” a root issuing certificate authority or end entity certificate to a given domain name. 
+Enterprise certificate pinning helps reduce man-in-the-middle attacks by enabling you to protect your internal domain names from chaining to unwanted certificates or to fraudulently issued certificates.
 
 >[!NOTE] 
 > External domain names, where the certificate issued to these domains is issued by a public certificate authority, are not ideal for enterprise certificate pinning. Web administrators should configure their web servers to use HTTP public key pinning (HPKP) and encourage users to use web browsers that support HPKP.
@@ -73,6 +73,7 @@ The PinRules element can have the following attributes.
 For help with formatting Pin Rules, see [Representing a Date in XML](#representing-a-date-in-xml) or [Representing a Duration in XML](#representing-a-duration-in-xml). 
 
 - **Duration** or **NextUpdate**
+
     Specifies when the Pin Rules will expire. 
     Either is required. 
     **NextUpdate** takes precedence if both are specified. 
@@ -83,6 +84,7 @@ For help with formatting Pin Rules, see [Representing a Date in XML](#representi
     **Required?** Yes. At least one is required.
 
 - **LogDuration** or **LogEndDate**
+
     Configures auditing only to extend beyond the expiration of enforcing the Pin Rules.
     
     **LogEndDate**, represented as an XML DateTime data type in UTC, takes precedence if both are specified. 
@@ -94,6 +96,7 @@ For help with formatting Pin Rules, see [Representing a Date in XML](#representi
     **Required?** No.
 
 - **ListIdentifier**
+
     Provides a friendly name for the list of pin rules. 
     Windows does not use this attribute for certificate pinning enforcement, however it is included when the pin rules are converted to a certificate trust list (CTL).
 
@@ -104,6 +107,7 @@ For help with formatting Pin Rules, see [Representing a Date in XML](#representi
 The **PinRule** element can have the following attributes: 
 
 - **Name**
+
     Uniquely identifies the **PinRule**. 
     Windows uses this attribute to identify the element for a parsing error or for verbose output. 
     The attribute is not included in the generated certificate trust list (CTL).
@@ -111,6 +115,7 @@ The **PinRule** element can have the following attributes:
     **Required?** Yes.
 
 - **Error**
+
     Describes the action Windows performs when it encounters a PIN mismatch. 
     You can choose from the following string values:
         - **Revoked** - Windows reports the certificate protecting the site as if it was revoked. This typically prevents the user from accessing the site.
@@ -119,7 +124,8 @@ The **PinRule** element can have the following attributes:
 
     **Required?** No.
 
-- **Log**        
+- **Log**  
+
     A Boolean value represent as string that equals **true** or **false**. 
     By default, logging is enabled (**true**).
 
@@ -130,6 +136,7 @@ The **PinRule** element can have the following attributes:
 The **Certificate** element can have the following attributes:
 
 - **File**
+
     Path to a file containing one or more certificates. 
     Where the certificate(s) can be encoded as:
         - single certificate
@@ -142,12 +149,14 @@ The **Certificate** element can have the following attributes:
     **Required?** Yes (File, Directory or Base64 must be present).
 
 - **Directory** 
+
     Path to a directory containing one or more of the above certificate files. 
     Skips any files not containing any certificates.    
 
     **Required?** Yes (File, Directory or Base64 must be present).
 
 - **Base64**
+
     Base64 encoded certificate(s). 
     Where the certificate(s) can be encoded as:
         - single certificate
@@ -161,7 +170,8 @@ The **Certificate** element can have the following attributes:
 
     **Required?** Yes (File, Directory or Base64 must be present).
 
-- **EndDate**    
+- **EndDate** 
+
     Enables you to configure an expiration date for when the certificate is no longer valid in the pin rule.  
 
     If you are in the process of switching to a new root or CA, you can set the **EndDate** to allow matching of this element’s certificates.
@@ -177,6 +187,7 @@ The **Certificate** element can have the following attributes:
 The **Site** element can have the following attributes:
 
 - **Domain** 
+
     Contains the DNS name to be matched for this pin rule. 
     When creating the certificate trust list, the parser normalizes the input name string value as follows:
         - If the DNS name has a leading "*" it is removed.
@@ -189,6 +200,7 @@ The **Site** element can have the following attributes:
     **Required?** Yes.
 
 - **AllSubdomains**
+
     By default, wildcard left hand label matching is restricted to a single left hand label. 
     This attribute can be set to "true" to enable wildcard matching of all of the left hand labels. 
     
@@ -196,7 +208,7 @@ The **Site** element can have the following attributes:
     
     **Required?** No. 
     
- ### Create a Pin Rules Certificate Trust List
+### Create a Pin Rules Certificate Trust List
 
 The command line utility, **Certutil.exe**, includes the **generatePinRulesCTL** argument to parse the XML file and generate the encoded certificate trust list (CTL) that you add to your reference Windows 10 version 1703 computer and subsequently deploy. 
 The usage syntax is:
