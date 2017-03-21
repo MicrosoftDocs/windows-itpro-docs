@@ -15,6 +15,19 @@ author: brianlic-msft
 - Windows 10  
 - Windows Server 2016  
 
+
+Prefer video? See:
+
+[![Protecting against credential theft](images/mva_videos.png)](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=CAgzpKJyC_304300474)
+
+See also:
+
+[Credentials protected by Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
+
+[Virtualization-based security](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=1CoELLJyC_6704300474)
+
+[Credential Guard design](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=mD3geLJyC_8304300474)
+
 Kerberos, NTLM, and Credential manager isolate secrets by using virtualization-based security. Previous versions of Windows stored secrets in the Local Security Authority (LSA). Prior to Windows 10, the LSA stored secrets used by the operating system in its process memory. With Credential Guard enabled, the LSA process in the operating system talks to a new component called the isolated LSA process that stores and protects those secrets. Data stored by the isolated LSA process is protected using virtualization-based security and is not accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
 
 For security reasons, the isolated LSA process doesn't host any device drivers. Instead, it only hosts a small subset of operating system binaries that are needed for security and nothing else. All of these binaries are signed with a certificate that is trusted by virtualization-based security and these signatures are validated before launching the file in the protected environment.
@@ -26,6 +39,3 @@ When Credential Guard is enabled, Kerberos does not allow unconstrained Kerberos
 Here's a high-level overview on how the LSA is isolated by using virtualization-based security:
 
 ![Credential Guard overview](images/credguard.png)
-
-
-<br>For further information, see [Virtualization-based security](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=mD3geLJyC_8304300474) 

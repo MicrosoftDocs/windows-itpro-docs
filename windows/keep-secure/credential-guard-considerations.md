@@ -15,6 +15,14 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
+Prefer video? See: 
+
+[![Credentials Protected by Credential Guard](images/mva_videos.png)](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=mD3geLJyC_8304300474)
+
+See also:
+[Virtualization-based security](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=1CoELLJyC_6704300474)
+
+
 -   If Credential Guard is enabled on a device after it's joined to a domain, the user and device secrets may already be compromised. We recommend that Credential Guard is enabled before the PC is joined to a domain.
 -   You should perform regular reviews of the PCs that have Credential Guard enabled. This can be done with security audit policies or WMI queries. Here's a list of WinInit event IDs to look for:
     -   **Event ID 13** Credential Guard (LsaIso.exe) was started and will protect LSA credentials.
@@ -44,5 +52,3 @@ When you enable Credential Guard, you can no longer use NTLM v1 authentication. 
 ## Kerberos Considerations
 
 When you enable Credential Guard, you can no longer use Kerberos unconstrained delegation or DES encryption. Unconstrained delegation could allow attackers to extract Kerberos keys from the isolated LSA process. You must use constrained or resource-based Kerberos delegation instead.
-
-For further information, see: [Virtualization-based security](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=mD3geLJyC_8304300474)

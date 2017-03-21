@@ -15,6 +15,12 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
+
+
+
+[![Deploying Credential Guard](images/mva_videos.png)](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=sRcyvLJyC_3304300474)
+
+
 ## Enable Credential Guard
 Credential Guard can be enabled by using [Group Policy](#turn-on-credential-guard-by-using-group-policy), the [registry](#turn-on-credential-guard-by-using-the-registry), or the Device Guard and Credential Guard [hardware readiness tool](#hardware-readiness-tool).
 
@@ -85,7 +91,7 @@ If you enable Credential Guard by using Group Policy, the steps to enable Window
 
 
 > [!NOTE]  
-> You can also turn on Credential Guard by setting the registry entries in the [FirstLogonCommands](http://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
+> You can also enable Credential Guard by setting the registry entries in the [FirstLogonCommands](http://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
 
 <span id="hardware-readiness-tool" />
 ### Enable Credential Guard by using the Device Guard and Credential Guard hardware readiness tool
@@ -110,7 +116,24 @@ Requirements for running Credential Guard in Hyper-V virtual machines
 - The Hyper-V host must have an IOMMU, and run at least Windows Server 2016 or Windows 10 version 1607.
 - The Hyper-V virtual machine must be Generation 2, have an enabled virtual TPM, and running at least Windows Server 2016 or Windows 10. 
 
-For further information, see: [Deploying Credential Guard] (https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=sRcyvLJyC_3304300474)
+
+### Check that Credential Guard is running
+
+You can use System Information to ensure that Credential Guard is running on a PC.
+
+1.  Click **Start**, type **msinfo32.exe**, and then click **System Information**.
+2.  Click **System Summary**.
+3.  Confirm that **Credential Guard** is shown next to **Device Guard Security Services Running**.
+
+    Here's an example:
+    
+    ![System Information](images/credguard-msinfo32.png)
+
+You can also check that Credential Guard is running by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
+
+```
+DG_Readiness_Tool_v3.0.ps1 -Ready
+```
 
 
 ### Remove Credential Guard
@@ -168,21 +191,3 @@ You can also disable Credential Guard by using the [Device Guard and Credential 
 DG_Readiness_Tool_v3.0.ps1 -Disable -AutoReboot
 ```
  
-### Check that Credential Guard is running
-
-You can use System Information to ensure that Credential Guard is running on a PC.
-
-1.  Click **Start**, type **msinfo32.exe**, and then click **System Information**.
-2.  Click **System Summary**.
-3.  Confirm that **Credential Guard** is shown next to **Device Guard Security Services Running**.
-
-    Here's an example:
-    
-    ![System Information](images/credguard-msinfo32.png)
-
-You can also check that Credential Guard is running by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
-
-```
-DG_Readiness_Tool_v3.0.ps1 -Ready
-```
-For further information, see: [Deploying Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=sRcyvLJyC_3304300474)

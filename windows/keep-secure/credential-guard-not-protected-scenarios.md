@@ -15,6 +15,15 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
+Prefer video? 
+
+[![Credentials not protected by Credential Guard](images/mva_videos.png)](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
+
+
+
+See also: [Protecting privileged users with Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=JNbjYMJyC_8104300474)
+
+
 Some ways to store credentials are not protected by Credential Guard, including:
 
 -   Software that manages credentials outside of Windows feature protection
@@ -28,11 +37,11 @@ Some ways to store credentials are not protected by Credential Guard, including:
     -   When Credential Guard is enabled, neither Digest nor CredSSP have access to users' logon credentials. This implies no Single Sign-On use for these protocols.
 -   Supplied credentials for NTLM authentication are not protected. If a user is prompted for and enters credentials for NTLM authentication, these credentials are vulnerable to be read from LSASS memory. Note that these same credentials are vulnerable to key loggers as well.
 
-For further information, see: [Credentials Protected by Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
+For further information, see video: [Credentials Protected by Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
 
 ## Additional mitigations
 
-Credential Guard can provide mitigations against attacks on derived credentials and prevent the use of stolen credentials elsewhere. However, PCs can still be vulnerable to certain attacks, even if the derived credentials are protected by Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, reusing previously stolen credentials prior to Device Guard, and abuse of management tools and weak application configurations. Because of this, additional mitigations also need to be deployed to make the domain environment more robust.
+Credential Guard can provide mitigations against attacks on derived credentials and prevent the use of stolen credentials elsewhere. However, PCs can still be vulnerable to certain attacks, even if the derived credentials are protected by Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, reusing previously stolen credentials prior to Device Guard, and abuse of management tools and weak application configurations. Because of this, additional mitigations also must be deployed to make the domain environment more robust.
 
 ### Restricting domain users to specific domain-joined devices
 
@@ -50,10 +59,10 @@ Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring,
 
 #### Protecting domain-joined device secrets
 
-Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Credential Guard, the private key can be protected. Then authentication policies can require that users sign on devices which authenticate using those certificates. This prevents shared secrets stolen from the device to be used with stolen user credentials to sign on as the user.
+Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Credential Guard, the private key can be protected. Then authentication policies can require that users sign on devices that authenticate using those certificates. This prevents shared secrets stolen from the device to be used with stolen user credentials to sign on as the user.
 
 Domain-joined device certificate authentication has the following requirements:
--   Devices' accounts are in Windows Server 2012 domain functional level or higher domains.
+-   Devices' accounts are in Windows Server 2012 domain functional level or higher.
 -   All domain controllers in those domains have KDC certificates which satisfy strict KDC validation certificate requirements:
     -   KDC EKU present
     -   DNS domain name matches the DNSName field of the SubjectAltName (SAN) extension
@@ -131,7 +140,7 @@ Authentication policies have the following requirements:
 2.  Click **Authentication**, click **New**, and then click **Authentication Policy**.
 3.  In the **Display name** box, enter a name for this authentication policy.
 4.  Under the **Accounts** heading, click **Add**.
-5.  In the **Select Users, Computers, or Service Accounts** dialog box, type the name of the user account you with to restrict, and then click **OK**.
+5.  In the **Select Users, Computers, or Service Accounts** dialog box, type the name of the user account you wish to restrict, and then click **OK**.
 6.  Under the **User Sign On** heading, click the **Edit** button.
 7. Click **Add a condition**.
 8. In the **Edit Access Control Conditions** box, ensure that it reads **User** &gt; **Group** &gt; **Member of each** &gt; **Value**, and then click **Add items**.
@@ -148,5 +157,3 @@ Authentication policies have the following requirements:
 To make tracking authentication failures due to authentication policies easier, an operational log exists with just those events. To enable the logs on the domain controllers, in Event Viewer, navigate to **Applications and Services Logs\\Microsoft\\Windows\\Authentication, right-click AuthenticationPolicyFailures-DomainController**, and then click **Enable Log**.
 
 To learn more about authentication policy events, see [Authentication Policies and Authentication Policy Silos](https://technet.microsoft.com/en-us/library/dn486813(v=ws.11).aspx).
-
-For further information, see: [Protecting privileged users with Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=JNbjYMJyC_8104300474)
