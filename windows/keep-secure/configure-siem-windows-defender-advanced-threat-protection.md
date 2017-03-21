@@ -1,6 +1,6 @@
 ---
-title: Consume alerts and create custom indicators in Windows Defender Advanced Threat Protection
-description: Learn how to configure supported security information and events management tools to receive and consume alerts and create custom indicators using REST API.
+title: Pull alerts to your SIEM tools from Windows Defender Advanced Threat Protection
+description: Learn how to use REST API and configure supported security information and events management tools to receive and pull alerts.
 keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Consume alerts and create custom indicators
+# Pull alerts to your SIEM tools
 
 **Applies to:**
 
@@ -21,8 +21,10 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-## Consume alerts using supported security information and events management (SIEM) tools
-Windows Defender ATP supports (SIEM) tools to consume alerts. Windows Defender ATP exposes alerts through an HTTPS endpoint hosted in Azure. The endpoint can be configured to get alerts from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for an AAD application that represents the specific SIEM connector installed in your environment.
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
+## Pull alerts using supported security information and events management (SIEM) tools
+Windows Defender ATP supports (SIEM) tools to pull alerts. Windows Defender ATP exposes alerts through an HTTPS endpoint hosted in Azure. The endpoint can be configured to pull alerts from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for an AAD application that represents the specific SIEM connector installed in your environment.
 
 
 Windows Defender ATP currently supports the following SIEM tools:
@@ -32,20 +34,26 @@ Windows Defender ATP currently supports the following SIEM tools:
 
 To use either of these supported SIEM tools you'll need to:
 
-- [Configure an Azure Active Directory application for SIEM integration in your tenant](configure-aad-windows-defender-advanced-threat-protection.md)
+- [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 - Configure the supported SIEM tool:
-    - [Configure Splunk to consume alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
-    - [Configure HP ArcSight to consume alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
+    - [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
+    - [Configure HP ArcSight to pull alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
 
-## Create custom threat indicators in Windows Defender ATP
-You can also create custom threat indicators using the available REST API so that you can create specific alerts that are applicable to your organization.
+For more information on the list of fields exposed in the alerts API see, [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md).
 
-For more information, see [Create custom threat indicators (TI) using REST API](custom-ti-api-windows-defender-advanced-threat-protection.md).
+
+## Pull Windows Defender ATP alerts using REST API
+Windows Defender ATP supports the OAuth 2.0 protocol to pull alerts using REST API.
+
+For more information, see [Pull Windows Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md).
+
 
 ## In this section
 
 Topic | Description
 :---|:---
-[Configure an Azure Active Directory application](configure-aad-windows-defender-advanced-threat-protection.md)| Learn about configuring an Azure Active Directory application to integrate with supported security information and events management (SIEM) tools.
- [Configure Splunk](configure-splunk-windows-defender-advanced-threat-protection.md)| Learn about installing the REST API Modular Input app and other configuration settings to enable Splunk to consume Windows Defender ATP alerts.
- [Configure ArcSight](configure-arcsight-windows-defender-advanced-threat-protection.md)| Learn about installing the HP ArcSight REST FlexConnector package and the files you need to configure ArcSight to consume Windows Defender ATP alerts.
+[Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)| Learn about enabling the SIEM integration feature in the **Preferences setup** page in the portal so that you can use and generate the required information to configure supported SIEM tools.
+[Configure Splunk](configure-splunk-windows-defender-advanced-threat-protection.md)| Learn about installing the REST API Modular Input app and other configuration settings to enable Splunk to pull Windows Defender ATP alerts.
+[Configure ArcSight](configure-arcsight-windows-defender-advanced-threat-protection.md)| Learn about installing the HP ArcSight REST FlexConnector package and the files you need to configure ArcSight to pull Windows Defender ATP alerts.
+[Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md) | Understand what data fields are exposed as part of the alerts API and how they map to the Windows Defender ATP portal.
+[Pull Windows Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md) | Use the Client credentials OAuth 2.0 flow to pull alerts from Windows Defender ATP using REST API.
