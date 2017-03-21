@@ -40,7 +40,7 @@ The _Client credential flow_ uses client credentials to authenticate against the
 Use the following method in the Windows Defender ATP API to pull alerts in JSON format.
 
 ## Before you begin
-- Before calling the Windows Defender ATP endpoint to pull alerts, you'll need to enable the threat intelligence application in Azure Active Directory (AAD). For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md).
+- Before calling the Windows Defender ATP endpoint to pull alerts, you'll need to enable the SIEM integration application in Azure Active Directory (AAD). For more information, see [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md).
 
 - Take note of the following values in your Azure application registration. You need these values to configure the OAuth flow in your service or daemon app:
   - Application ID (unique to your application)

@@ -48,4 +48,3 @@ You can now proceed with configuring your SIEM solution. You'll need to use the 
 ## Related topics
 - [Configure Splunk to pull Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
 - [Configure HP ArcSight to pull Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
-- Configure generic API
