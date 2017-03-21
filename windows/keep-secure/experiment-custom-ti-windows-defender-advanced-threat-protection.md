@@ -50,7 +50,7 @@ This step will guide you in creating an alert definition and an IOC for a malici
 3. Run the script and verify that the operation succeeded in the results the window. Wait up to 20 minutes until the new or updated alert definition propagates to the detection engines.
 
   >[!NOTE]
-  >If you get the exception “The remote server returned an error: (407) >Proxy Authentication Required", you need to add the proxy >configuration by adding the following code to the PowerShell script:
+  >If you get the exception “The remote server returned an error: (407) >Proxy Authentication Required", you need to add the proxy configuration by adding the following code to the PowerShell script:
 
     ```
     $webclient=New-Object System.Net.WebClient
