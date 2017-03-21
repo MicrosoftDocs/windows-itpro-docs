@@ -43,16 +43,16 @@ This step will guide you in creating an alert definition and an IOC for a malici
 
 2. Copy and paste the following PowerShell script. This script will upload a sample alert definition and IOC to Windows Defender ATP which you can use to generate an alert.
 
-  >[!NOTE]
-  >Make sure you replace the `authUrl`, `clientId`, and `clientSecret` values with your details which you saved in when you enabled the threat intelligence application.
+  NOTE:<br>
+  Make sure you replace the `authUrl`, `clientId`, and `clientSecret` values with your details which you saved in when you enabled the threat intelligence application.
 
   [!code[ExampleScript](./code/example-script.ps1#L1-L60)]
-  
+
 3. Run the script and verify that the operation succeeded in the results the window. Wait up to 20 minutes until the new or updated alert definition propagates to the detection engines.
 
   ![Image of the script running](images/atp-running-script.png)
 
-  NOTE:</br>
+  NOTE:<br>
   If you get the exception “The remote server returned an error: (407) Proxy Authentication Required", you need to add the proxy configuration by adding the following code to the PowerShell script:
 
     ```
