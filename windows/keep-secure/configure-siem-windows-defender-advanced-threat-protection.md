@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Configure SIEM tools and use REST API to pull alerts
+# Configure SIEM tools or use REST API to pull alerts
 
 **Applies to:**
 
