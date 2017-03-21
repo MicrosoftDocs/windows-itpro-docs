@@ -22,7 +22,7 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-You need to add an application in your Azure Active Directory (AAD) tenant then authorize the Windows Defender ATP Alerts Export application  to communicate with it so that your security information and events management (SIEM) tool can consume alerts from Windows Defender ATP portal.
+You need to add an application in your Azure Active Directory (AAD) tenant then authorize the Windows Defender ATP Alerts Export application  to communicate with it so that your security information and events management (SIEM) tool can pull alerts from Windows Defender ATP portal.
 
 1. Login to the [Azure management portal](https://ms.portal.azure.com).
 
@@ -78,12 +78,12 @@ You need to add an application in your Azure Active Directory (AAD) tenant then 
 
 23. Save the application changes.
 
-After configuring the application in AAD, you'll need to obtain a refresh token. You'll need to use the token when you configure the connector for your SIEM tool in the next steps. The token lets the connector access Windows Defender ATP events to be consumed by your SIEM.
+After configuring the application in AAD, you'll need to obtain a refresh token. You'll need to use the token when you configure the connector for your SIEM tool in the next steps. The token lets the connector access Windows Defender ATP events to be pulled by your SIEM.
 
 ## Obtain a refresh token using an events URL
 Obtain a refresh token used to retrieve the Windows Defender Advanced Threat Protection events to your SIEM. This section provides information on how you can use an events URL to obtain the required refresh token.
 >[!NOTE]
->For HP ArcSight, you can obtain a refresh token using the restutil tool. For more information, see [Configure HP ArcSight to consume alerts](configure-arcsight-windows-defender-advanced-threat-protection.md).
+>For HP ArcSight, you can obtain a refresh token using the restutil tool. For more information, see [Configure HP ArcSight to pull alerts](configure-arcsight-windows-defender-advanced-threat-protection.md).
 
 ### Before you begin
 Get the following information from your Azure Active Directory (AAD) application by selecting the **View Endpoint** on the application configuration page:
@@ -111,6 +111,6 @@ You'll use these values to obtain a refresh token.
 After configuring your AAD application and generating a refresh token, you can proceed to configure your SIEM tool.
 
 ## Related topics
-- [Configure security information and events management (SIEM) tools to consume alerts](configure-siem-windows-defender-advanced-threat-protection.md)
-- [Configure Splunk to consume alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
-- [Configure HP ArcSight to consume alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
+- [Configure security information and events management (SIEM) tools to pull alerts](configure-siem-windows-defender-advanced-threat-protection.md)
+- [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
+- [Configure HP ArcSight to pull alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
