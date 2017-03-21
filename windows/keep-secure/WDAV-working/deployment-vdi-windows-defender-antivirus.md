@@ -168,7 +168,7 @@ The start time of the scan itself is still based on the scheduled scan policy â€
 
 See [How to create and deploy antimalware policies: Advanced settings]( https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#advanced-settings) for details on configuring System Center Configuration Manager (current branch).
 
-See [Schedule scans](schedule-scans-windows-defender-antivirus.md) for other configuration options available for scheduled scans.
+See [Schedule scans](scheduled-catch-up-scans-windows-defender-antivirus.md) for other configuration options available for scheduled scans.
 
 ### Use quick scans
 

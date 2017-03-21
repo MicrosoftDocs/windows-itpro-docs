@@ -29,7 +29,7 @@ Cloud-delivered protection for Windows Defender Antivirus, also referred to as M
 >[!NOTE] 
 >The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional signature updates.
 
-Enabling cloud-delivered protection helps detect and block new malware - even if the malware has never been seen before - without needing to wait for a traditionally delivered definition update to block it. Definition updates can take hours to prepare and deliver; our cloud service can deliver updated protection in seconds. 
+Enabling cloud-delivered protection helps detect and block new malware - even if the malware has never been seen before - without needing to wait for a traditionally delivered definition update to block it. Definition updates can take hours to prepare and deliver, while our cloud service can deliver updated protection in seconds. 
 
 Cloud-delivered protecton is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies.
 
@@ -43,6 +43,9 @@ Reporting level (MAPS membership level) | Basic, Advanced | Advanced | Advanced 
 Block at first sight availability | No | Yes | Yes | Not configurable | Configurable | No
 Cloud block timeout period | No | No | Configurable | Not configurable | Configurable | No
  
+You can also [configure Windows Defender AV to automatically receive new protection updates based on reports from our cloud service](manage-event-based-updates-windows-defender-antivirus.md#cloud-report-updates).
+
+
 ## In this section
 
  Topic | Description 

@@ -39,7 +39,7 @@ There are two components to managing protection updates - where the updates are 
 
 This topic describes the locations 
 
-
+<a id="fallback-order"></a>
 ## Manage the fallback order for downloading protection updates
 There are five locations where you can specify where an endpoint should obtain updates. Typically, you would configure each endpoint to individually download the updates from a primary source and specify fallback sources in case the primary source is unavailable.
 
