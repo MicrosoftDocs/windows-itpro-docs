@@ -21,11 +21,11 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Understand how the SIEM schema maps to the values in the Windows Defender ATP portal.
+Understand what data fields are exposed as part of the alerts API and how they map to the Windows Defender ATP portal.
 
-Field numbers match the numbers in the images.
 
-#	SIEM fields and portal mapping
+#	Alert API fields and portal mapping
+Field numbers match the numbers in the images below.
 
 Portal label  | SIEM field name | Description
 :---|:---|:---
