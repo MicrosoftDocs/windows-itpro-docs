@@ -428,7 +428,7 @@ There are no default locations included with WIP, you must add each of your netw
 ### Choose to set up Azure Rights Management with WIP
 WIP can integrate with Microsoft Azure Rights Management to enable secure sharing of files via removable drives such as USB drives. For more info about Azure Rights Management, see [Microsoft Azure Rights Management](https://products.office.com/en-us/business/microsoft-azure-rights-management). To integrate Azure Rights Management with WIP, you must already have Azure Rights Management set up.
 
-To configure WIP to use Azure Rights Management, you must set the **AllowAzureRMSForEDP** MDM setting to **1** in Microsoft Intune. This setting tells WIP to start encrypting files copied to removeable drives that use Azure Rights Management, so they can be shared amongst your employees on computers running at least Windows 10, version 1703.
+To configure WIP to use Azure Rights Management, you must set the **AllowAzureRMSForEDP** MDM setting to **1** in Microsoft Intune. This setting tells WIP to start encrypting files copied to removable drives that use Azure Rights Management, so they can be shared amongst your employees on computers running at least Windows 10, version 1703.
 
 Optionally, if you don’t want everyone in your organization to be able to share your enterprise data, you can set the **RMSTemplateIDForEDP** MDM setting as the **TemplateID** of the Azure Rights Management template used to encrypt the data. You must make sure to mark the template with the **EditRightsData** option. 
 
