@@ -20,7 +20,7 @@ Below is a list of some of the new and updated features in Windows 10, version 1
 
 ### Windows Configuration Designer
 
-Previously known as *Windows Imaging and Configuration Designer (ICD)*, the tool for creating provisioning packages is renamed **Windows Configuration Designer**. The new Windows Configuration Designer is available in Windows Store as an app. To run Windows Configuration Designer on earlier versions of Windows, you can still install Windows Configuration Designer from the Windows Assessment and Deployment Kit (ADK).
+Previously known as *Windows Imaging and Configuration Designer (ICD)*, the tool for creating provisioning packages is renamed **Windows Configuration Designer**. The new Windows Configuration Designer is available in [Windows Store as an app](https://www.microsoft.com/store/apps/9nblggh4tx22). To run Windows Configuration Designer on earlier versions of Windows, you can still install Windows Configuration Designer from the Windows Assessment and Deployment Kit (ADK).
 
 Windows Configuration Designer in Windows 10, version 1703, includes several new wizards to make it easier to create provisioning packages.
 
