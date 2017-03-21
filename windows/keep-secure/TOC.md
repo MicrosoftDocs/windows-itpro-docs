@@ -168,6 +168,7 @@
 ##### [Choose the Right BitLocker Countermeasure](choose-the-right-bitlocker-countermeasure.md)
 #### [Protecting cluster shared volumes and storage area networks with BitLocker](protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md)
 ### [Encrypted Hard Drive](encrypted-hard-drive.md)
+### [Enterprise Certificate Pinning](enterprise-certificate-pinning.md)
 ### [Security auditing](security-auditing-overview.md)
 #### [Basic security audit policies](basic-security-audit-policies.md)
 ##### [Create a basic audit policy for an event category](create-a-basic-audit-policy-settings-for-an-event-category.md)
