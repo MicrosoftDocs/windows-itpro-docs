@@ -15,8 +15,7 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-
-
+Prefer video?
 
 [![Deploying Credential Guard](images/mva_videos.png)](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=sRcyvLJyC_3304300474)
 
