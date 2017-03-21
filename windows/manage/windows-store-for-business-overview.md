@@ -306,7 +306,7 @@ Store for Business is currently available in these markets.
             <li>Viet Nam</li>
             <li>Virgin Islands, U.S.</li>
             <li>Zambia</li>
-            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;</li>
+            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
             
         </ul>
     </td>
