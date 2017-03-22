@@ -13,24 +13,24 @@ localizationpriority: high
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
 When considering your content distribution strategy for Windows 10, think about enabling a form of peer-to-peer content sharing to reduce bandwidth issues during updates. Windows 10 offers two peer-to-peer options for update content distribution: Delivery Optimization and BranchCache. These technologies can be used with several of the servicing tools for Windows 10.
 
-Two methods of peer-to-peer content distribution are available in Windows 10. 
+Two methods of peer-to-peer content distribution are available in Windows 10.
 
-- [Delivery Optimization](waas-delivery-optimization.md) is a new peer-to-peer distribution method in Windows 10. Windows 10 clients can source content from other devices on their local network that have already downloaded the updates or from peers over the internet. Using the settings available for Delivery Optimization, clients can be configured into groups, allowing organizations to identify devices that are possibly the best candidates to fulfil peer-to-peer requests. 
+- [Delivery Optimization](waas-delivery-optimization.md) is a new peer-to-peer distribution method in Windows 10. Windows 10 clients can source content from other devices on their local network that have already downloaded the updates or from peers over the internet. Using the settings available for Delivery Optimization, clients can be configured into groups, allowing organizations to identify devices that are possibly the best candidates to fulfil peer-to-peer requests.
 
-    Windows Update, Windows Update for Business, and Windows Server Update Services (WSUS) can use Delivery Optimization. Delivery Optimization can significantly reduce the amount of network traffic to external Windows Update sources as well as the time it takes for clients to retrieve the updates. 
+    Windows Update, Windows Update for Business, and Windows Server Update Services (WSUS) can use Delivery Optimization. Delivery Optimization can significantly reduce the amount of network traffic to external Windows Update sources as well as the time it takes for clients to retrieve the updates.
 
-- [BranchCache](waas-branchcache.md) is a bandwidth optimization technology that is included in some editions of the Windows Server 2016 Technical Preview and Windows 10 operating systems, as well as in some editions of Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, and Windows 7. 
+- [BranchCache](waas-branchcache.md) is a bandwidth optimization technology that is included in some editions of the Windows Server 2016 Technical Preview and Windows 10 operating systems, as well as in some editions of Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, and Windows 7.
 
     >[!NOTE]
     >Full BranchCache functionality is supported in Windows 10 Enterprise and Education; Windows 10 Pro supports some BranchCache functionality, including BITS transfers used for servicing operations.
 
-    Windows Server Update Services (WSUS) and System Center Configuration Manager can use BranchCache to allow peers to source content from each other versus always having to contact a server. Using BranchCache, files are cached on each individual client, and other clients can retrieve them as needed. This approach distributes the cache rather than having a single point of retrieval, saving a significant amount of bandwidth while drastically reducing the time that it takes for clients to receive the requested content. 
+    Windows Server Update Services (WSUS) and System Center Configuration Manager can use BranchCache to allow peers to source content from each other versus always having to contact a server. Using BranchCache, files are cached on each individual client, and other clients can retrieve them as needed. This approach distributes the cache rather than having a single point of retrieval, saving a significant amount of bandwidth while drastically reducing the time that it takes for clients to receive the requested content.
 
 </br></br>
 
@@ -49,8 +49,9 @@ Two methods of peer-to-peer content distribution are available in Windows 10.
 Windows 10 update downloads can be large because every package contains all previously released fixes to ensure consistency and simplicity. Windows has been able to reduce the size of Windows Update downloads with a feature called Express.
 
 ### How Microsoft supports Express
+- **Express on System Center Configuration Manager** starting with version 1702 of Configuration Manager.
 - **Express on WSUS Standalone**
-  
+
   Express update delivery is available on [all support versions of WSUS](https://technet.microsoft.com/library/cc708456(v=ws.10).aspx).
 - **Express on devices directly connected to Windows Update**
 - **Enterprise devices managed using [Windows Update for Business](waas-manage-updates-wufb.md)** also get the benefit of Express update delivery support without any change in configuration.
@@ -95,6 +96,7 @@ or [Manage Windows 10 updates using System Center Configuration Manager](waas-ma
 
 ## Related topics
 
+
 - [Update Windows 10 in the enterprise](index.md)
 - [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
@@ -104,5 +106,3 @@ or [Manage Windows 10 updates using System Center Configuration Manager](waas-ma
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
 - [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
 - [Manage device restarts after updates](waas-restart.md)
-
-

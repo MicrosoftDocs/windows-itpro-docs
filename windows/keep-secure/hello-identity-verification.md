@@ -72,10 +72,6 @@ Imagine that someone is looking over your shoulder as you get money from an ATM 
 
 Windows Hello helps protect user identities and user credentials. Because the user doesn't enter a password (except during provisioning), it helps circumvent phishing and brute force attacks. It also helps prevent server breaches because Windows Hello credentials are an asymmetric key pair, which helps prevent replay attacks when these keys are protected by TPMs.
 
-For customers using a hybrid Active Directory and Azure Active Directory environment, Windows Hello also enables Windows 10 Mobile devices to be used as [a remote credential](hello-prepare-people-to-use.md#bmk-remote) when signing into Windows 10 PCs. During the sign-in process, the Windows 10 PC can connect using Bluetooth to access Windows Hello on the user’s Windows 10 Mobile device. Because users carry their phone with them, Windows Hello makes implementing two-factor authentication across the enterprise less costly and complex than other solutions.
-
-> [!NOTE]
->  Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.
 
  
 ## How Windows Hello for Business works: key points
@@ -119,7 +115,6 @@ Windows Hello for Business can use either keys (hardware or software) or certifi
 
 - [How Windows Hello for Business works](hello-how-it-works.md)
 - [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
-- [Enable phone sign-in to PC or VPN](hello-enable-phone-signin.md)
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)
