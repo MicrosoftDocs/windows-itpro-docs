@@ -1,5 +1,5 @@
 ---
-title: What's new in Windows 10, version 1607 (Windows 10)
+title: What's new in Windows 10, version 1703 (Windows 10)
 description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 keywords: ["What's new in Windows 10", "Windows 10", "creators update"]
 ms.prod: w10
@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: TrudyHa
 localizationpriority: high
+ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
 ---
 
 # What's new in Windows 10, version 1703
@@ -41,13 +42,13 @@ The following new Group Policy and mobile device management (MDM) settings are a
 
 ### Start and taskbar layout
 
-Enterprises can apply a customized Start and tasbkar layout to devices running Windows 10 Pro, version 1703. 
+Enterprises can apply a customized Start and taskbar layout to devices running Windows 10 Pro, version 1703. 
 
 Additional MDM policy settings are available for Start and taskbar layout. For details, see [Manage Windows 10 Start and taskbar layout](../configure/windows-10-start-layout-options-and-policies.md).
 
 Previously, the customized taskbar could only be deployed using Group Policy or provisioning packages. Windows 10, version 1703, adds support for customized taskbars to [MDM](../configure/customize-windows-10-start-screens-by-using-mobile-device-management.md).
 
-### Lockdown Designer app
+### Lockdown Designer app for Windows 10 Mobile lockdown files
 
 The Lockdown Designer app helps you configure and create a lockdown XML file to apply to devices running Windows 10 Mobile, and includes a remote simulation to help you determine the layout for tiles on the Start screen. Using Lockdown Designer is easier than [manually creating a lockdown XML file](../configure/lockdown-xml.md).
 
@@ -69,7 +70,9 @@ In Windows 10 Mobile, version 1703, [Apps Corner](https://support.microsoft.com/
 
 MBR2GPT.EXE is a new command-line tool available in Windows 10 version 1703 and later versions. MBR2GPT converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS).
 
-The GPT partition format is newer and enables the use of larger and more disk partitions. It also provides added data reliability and supports additional partition types. If you convert the system disk on a computer from MBR to GPT, you must also configure the computer to boot in UEFI mode, so make sure that your device supports UEFI before attempting to convert the system disk. 
+The GPT partition format is newer and enables the use of larger and more disk partitions. It also provides added data reliability, supports additional partition types, and enables faster boot and shutdown speeds. If you convert the system disk on a computer from MBR to GPT, you must also configure the computer to boot in UEFI mode, so make sure that your device supports UEFI before attempting to convert the system disk. 
+
+Additional security features of Windows 10 that are enabled when you boot in UEFI mode include: Secure Boot, Early Launch Anti-malware (ELAM) driver, Windows Trusted Boot, Measured Boot, Device Guard, Credential Guard, and BitLocker Network Unlock.
 
 For details, see [MBR2GPT.EXE](../deploy/mbr-to-gpt.md).
 
@@ -146,7 +149,9 @@ The pause feature has been changed, and now requires a start date to set up. Use
 
 You are now able to defer feature update installation by up to 365 days. In settings, users are able to select their branch readiness level and update deferal periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](../update/waas-configure-wufb.md#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-quality-updates) for details.
 
-### Delivery Optimization
+### Optimize update delivery
+
+[Express updates](../update/waas-optimize-windows-10-updates.md#express-update-delivery) are now supported on System Center Configuration Manager, starting with version 1702 of Configuration Manager, in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
 
 Delivery Optimization policies now enable you to configure additional restrictions to have more control in various scenarios. 
 
@@ -161,4 +166,6 @@ To check out all the details, see [Configure Delivery Optimization for Windows 1
 
 ## Learn more
 
-- [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info)
+- [Windows 10 release information](https://technet.microsoft.com/windows/release-info)
+- [What's new in MDM in Windows 10, version 1703](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/new-in-windows-mdm-enrollment-management#whatsnew10)
+- [Manage Windows upgrades with Upgrade Readiness](../deploy/manage-windows-upgrades-with-upgrade-readiness.md)
