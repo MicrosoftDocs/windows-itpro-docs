@@ -45,7 +45,7 @@ Deployment with the above-mentioned versions of System Center Configuration Mana
 
 If the deployment fails, you can check the output of the script on the endpoints. For more information, see [Troubleshoot onboarding when deploying with a script on the endpoint](#troubleshoot-onboarding-when-deploying-with-a-script-on-the-endpoint).
 
-If the onboarding completed successfully but the endpoints are not showing up in the **Machines view** after an hour, see [Troubleshoot onboarding issues on the endpoint](#troubleshoot-onboarding-issues-on-the-endpoint) for additional errors that might occur.
+If the onboarding completed successfully but the endpoints are not showing up in the **Machines list** after an hour, see [Troubleshoot onboarding issues on the endpoint](#troubleshoot-onboarding-issues-on-the-endpoint) for additional errors that might occur.
 
 ## Troubleshoot onboarding when deploying with a script on the endpoint
 
