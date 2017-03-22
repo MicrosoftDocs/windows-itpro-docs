@@ -158,7 +158,7 @@ Event ID | Message | Resolution steps
 25 | Windows Defender Advanced Threat Protection service failed to reset health status in the registry. Failure code: _variable_ | Contact support.
 27 | Failed to enable Windows Defender Advanced Threat Protection mode in Windows Defender. Onboarding process failed. Failure code: variable | Contact support.
 29 | Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3 | Ensure the endpoint has Internet access, then run the entire offboarding process again.
-30 | Failed to disable $(build.sense.productDisplayName) mode in Windows Defender. Failure code: %1 | Contact support.
+30 | Failed to disable $(build.sense.productDisplayName) mode in Windows Defender Advanced Threat Protection. Failure code: %1 | Contact support.
 32 | $(build.sense.productDisplayName) service failed to request to stop itself after offboarding process. Failure code: %1 | Verify that the service start type is manual and reboot the machine.
 55 | Failed to create the Secure ETW autologger. Failure code: %1	| Reboot the machine.
 63 | Updating the start type of external service. Name: %1, actual start type: %2, expected start type: %3, exit code: %4	| Identify what is causing changes in start type of mentioned service. If the exit code is not 0, fix the start type manually to expected start type.
