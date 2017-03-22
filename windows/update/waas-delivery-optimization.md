@@ -82,7 +82,7 @@ Various controls allow administrators to further customize scenarios where Deliv
 - [Minimum RAM (inclusive) allowed to use Peer Caching](#minimum-ram-allowed-to-use-peer-caching) sets the minimum RAM required for peer caching to be enabled.
 - [Minimum disk size allowed to use Peer Caching](#minimum-disk-size-allowed-to-use-peer-caching) sets the minimum disk size required for peer caching to be enabled.
 - [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) allows clients connected through VPN to use peer caching.
-- [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) controls the minimum battery level required for uploads to occur.
+- [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) controls the minimum battery level required for uploads to occur. Enabling this policy is required to allow upload while on battery.
 
 ### How Microsoft uses Delivery Optimization
 In Microsoft, to help ensure that ongoing deployments weren’t affecting our network and taking away bandwidth for other services, Microsoft IT used a couple of different bandwidth management strategies. Delivery Optimization, peer-to-peer caching enabled through Group Policy, was piloted and then deployed to all managed devices using Group Policy. Based on recommendations from the Delivery Optimization team, we used the "group" configuration to limit sharing of content to only the devices that are members of the same Active Directory domain. The content is cached for 24 hours. More than 76 percent of content came from peer devices versus the Internet.
@@ -119,11 +119,11 @@ By default, peer sharing on clients using the group download mode is limited to 
 <span id="minimum-ram-allowed-to-use-peer-caching"/>
 ### Minimum RAM (inclusive) allowed to use Peer Caching  
 
-This setting specifies the minimum RAM size in GB required to use Peer Caching. The value 0 means not limited, which means the cloud service set default value will be used. For example if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching. The recommended values are 1 to 4 GB.  
+This setting specifies the minimum RAM size in GB required to use Peer Caching. For example if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching. The recommended values are 1 to 4 GB, and the default value is 4 GB.
 
 ### Minimum disk size allowed to use Peer Caching
 
-This setting specifies the required minimum disk size (capacity in GB) for the device to use Peer Caching. The value 0 means not limited, which means the cloud service set default value will be used. The recommended values are 64 to 256 GB.
+This setting specifies the required minimum disk size (capacity in GB) for the device to use Peer Caching. The recommended values are 64 to 256 GB, and the default value is 32 GB.
 
 >[!NOTE]
 >If the [Modify Cache Drive](#modify-cache-drive) policy is set, the disk size check will apply to the new working directory specified by this policy.
@@ -143,7 +143,7 @@ This setting specifies the maximum number of gigabytes the Delivery Optimization
 
 ### Minimum Peer Caching Content File Size
 
-This setting specifies the minimum content file size in MB enabled to use Peer Caching. The value 0 means "unlimited" which means the cloud service set default value will be used. The recommended values are from 1 to 100000 MB. 
+This setting specifies the minimum content file size in MB enabled to use Peer Caching. The recommended values are from 1 to 100000 MB.
 
 ### Maximum Download Bandwidth
 
@@ -159,7 +159,7 @@ This setting allows you to limit the amount of upload bandwidth individual clien
 
 ### Minimum Background QoS
 
-This value specifies the minimum download speed guarantee that a client attempts to achieve and will fulfill by downloading more bytes from Windows Update servers or WSUS. Simply put, the lower this value is, the more content will be sourced using peers on the network rather than Windows Update. The higher this value, the more content is received from Windows Update servers or WSUS, versus peers on the local network.
+This value specifies the minimum download speed guarantee that a client attempts to achieve and will fulfill by downloading more kilobytes from Windows Update servers or WSUS. Simply put, the lower this value is, the more content will be sourced using peers on the network rather than Windows Update. The higher this value, the more content is received from Windows Update servers or WSUS, versus peers on the local network.
 
 ### Modify Cache Drive
 
@@ -177,7 +177,9 @@ This setting determines whether a device will be allowed to participate in Peer 
 
 This setting specifies battery levels at which a device will be allowed to upload data. Specify any value between 1 and 100 (in percentage) to allow the device to upload data to LAN and Group peers while on DC power (Battery). Uploads will automatically pause when the battery level drops below the set minimum battery level. The recommended value to set if you allow uploads on battery is 40 (for 40%).
 The device can download from peers while on battery regardless of this policy.
-The value 0 means not limited, which means the cloud service set default value will be used.
+
+>[!IMPORTANT]
+> By default, devices **will not upload while on battery**. To enable uploads while on battery, you need to enable this policy and set the battery value under which uploads pause.
 
 <span id="set-preferred-cache-devices"/>
 ## Set “preferred” cache devices for Delivery Optimization
@@ -188,7 +190,7 @@ To specify which devices are preferred, you can set the **Max Cache Age** config
 
 On devices that are not preferred, you can choose to set the following policy to prioritize data coming from local peers instead of the Internet:
 
--  Set **DOMinBackgroundQoS** with a low value, for example `65536` which is the equivalent of 64 KB/s.
+-  Set **DOMinBackgroundQoS** with a low value, for example `64` which is the equivalent of 64 KB/s.
 
 ## Learn more
 
