@@ -62,7 +62,7 @@ The tile shows you a list of user accounts with the most active alerts. The tota
 
 ![User accounts at risk tile shows a list of user accounts with the highest number of alerts and a breakdown of the severity of the alerts](images/atp-users-at-risk.png)
 
-Click the user account to see details about the user account. For more information see [Investigate a user entity in Windows Defender Advanced Threat Protection]
+Click the user account to see details about the user account. For more information see [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md).
 
 ## Machines with active malware detections
 The **Machines with active malware detections** tile will only appear if your endpoints are using Windows Defender.
