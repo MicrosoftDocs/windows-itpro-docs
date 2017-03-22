@@ -134,13 +134,9 @@ The following table lists the Group Policy settings that you can configure for W
 <td><a href="hello-prepare-people-to-use.md#bmk-remote">Phone Sign-in</a></td>
 <td>
 <p>Use Phone Sign-in</p>
-<div class="alert"><b>Note</b>  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.</div>
-<div> </div>
 </td>
 <td>
-<p><b>Not configured</b>: Phone sign-in is disabled.</p>
-<p><b>Enabled</b>: Users can use a portable, registered device as a companion device for desktop authentication.</p>
-<p><b>Disabled</b>: Phone sign-in is disabled.</p>
+<p>Not currently supported.</p>
 </td>
 </tr>
 </table>
@@ -283,14 +279,11 @@ The following table lists the MDM policy settings that you can configure for Win
 <td>Remote</td>
 <td>
 <p>UseRemotePassport</p>
-<div class="alert"><b>Note</b>  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.</div>
-<div> </div>
 </td>
 <td>Device or user</td>
 <td>False</td>
 <td>
-<p>True: <a href="hello-prepare-people-to-use.md#bmk-remote">Phone sign-in</a> is enabled.</p>
-<p>False: <a href="hello-prepare-people-to-use.md#bmk-remote">Phone sign-in</a> is disabled.</p>
+<p>Not currently supported.</p>
 </td>
 </tr>
 </table>
@@ -381,7 +374,6 @@ If you want to use Windows Hello for Business with certificates, you’ll need a
 
 - [Windows Hello for Business](hello-identity-verification.md)
 - [How Windows Hello for Business works](hello-how-it-works.md)
-- [Enable phone sign-in to PC or VPN](hello-enable-phone-signin.md)
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)
