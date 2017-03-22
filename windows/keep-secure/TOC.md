@@ -574,6 +574,7 @@
 ###### [Domain member: Require strong (Windows 2000 or later) session key](domain-member-require-strong-windows-2000-or-later-session-key.md)
 ###### [Interactive logon: Display user information when the session is locked](interactive-logon-display-user-information-when-the-session-is-locked.md)
 ###### [Interactive logon: Don't display last signed-in](interactive-logon-do-not-display-last-user-name.md)
+###### [Interactive logon: Don't display username at sign-in](interactive logon-don't-display-username-at-sign-in.md)
 ###### [Interactive logon: Do not require CTRL+ALT+DEL](interactive-logon-do-not-require-ctrl-alt-del.md)
 ###### [Interactive logon: Machine account lockout threshold](interactive-logon-machine-account-lockout-threshold.md)
 ###### [Interactive logon: Machine inactivity limit](interactive-logon-machine-inactivity-limit.md)
