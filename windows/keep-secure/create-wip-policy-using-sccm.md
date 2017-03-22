@@ -94,8 +94,7 @@ If you don't know the publisher or product name, you can find them for both desk
 
 1.	Go to the [Windows Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, Microsoft OneNote.
 
-    >[!NOTE]
-    >If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the steps in the [Add an AppLocker policy file](#add-an-applocker-policy-file) section.
+    >**Note**<br>If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the steps in the [Add an AppLocker policy file](#add-an-applocker-policy-file) section.
 
 2.	Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
 
@@ -112,10 +111,7 @@ If you don't know the publisher or product name, you can find them for both desk
 
 4.  Copy the `publisherCertificateName` value and paste them into the **Publisher Name** box, copy the `packageIdentityName` value into the **Product Name** box of Intune.
 
-    >[!IMPORTANT]
-    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
-    >For example:<p>
-    
+    >**Important**<br>The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.<p>For example:<p>
     ```json
         {
             "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
@@ -125,8 +121,7 @@ If you don't know the publisher or product name, you can find them for both desk
 **To find the Publisher and Product Name values for apps installed on Windows 10 mobile phones**
 1.	If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
-    >[!NOTE]
-    >Your PC and phone must be on the same wireless network.
+    >**Note**<br>Your PC and phone must be on the same wireless network.
 
 2.	On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
 
@@ -142,10 +137,8 @@ If you don't know the publisher or product name, you can find them for both desk
 
 8.	Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
 
-    >[!IMPORTANT]
-    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
+    >**Important**<br>The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
     >For example:<p>
-
     ```json
         {
             "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
