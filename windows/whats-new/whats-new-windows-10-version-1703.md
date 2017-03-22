@@ -48,7 +48,7 @@ Additional MDM policy settings are available for Start and taskbar layout. For d
 
 Previously, the customized taskbar could only be deployed using Group Policy or provisioning packages. Windows 10, version 1703, adds support for customized taskbars to [MDM](../configure/customize-windows-10-start-screens-by-using-mobile-device-management.md).
 
-### Lockdown Designer app for Windows 10 Mobile lockdown files
+### Lockdown Designer for Windows 10 Mobile lockdown files
 
 The Lockdown Designer app helps you configure and create a lockdown XML file to apply to devices running Windows 10 Mobile, and includes a remote simulation to help you determine the layout for tiles on the Start screen. Using Lockdown Designer is easier than [manually creating a lockdown XML file](../configure/lockdown-xml.md).
 
@@ -79,7 +79,9 @@ Using Azure AD also means that you can remove an employee’s profile (for examp
 
 ## Security
 
-### Windows Defender Advanced Threat Protection (Windows Defender ATP)
+### Windows Defender Advanced Threat Protection 
+
+New features in Windows Defender Advanced Threat Protection (ATP) for Windows 10, version 1703 include:
 - **Detection**<br>
   Enhancements to the detection capabilities include:
   - [Use the threat intelligence API to create custom alerts](../keep-secure/use-custom-ti-windows-defender-advanced-threat-protection.md) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
@@ -106,8 +108,8 @@ Using Azure AD also means that you can remove an employee’s profile (for examp
 
  
 
-### Windows Defender Antivirus (Windows Defender AV)
-New features for Windows Defender AV in Windows 10, version 1703 include:
+### Windows Defender Antivirus
+New features for Windows Defender Antivirus (AV) in Windows 10, version 1703 include:
 
 - [Updates to how the Block at First Sight feature can be configured](../keep-secure/configure-block-at-first-sight-windows-defender-antivirus.md)
 - [The ability to specify the level of cloud-protection](../keep-secure/specify-cloud-protection-level-windows-defender-antivirus.md)
@@ -159,8 +161,9 @@ Added policies include:
 
 To check out all the details, see [Configure Delivery Optimization for Windows 10 updates](../update/waas-delivery-optimization.md)
 
-## Learn more
+## Related topics
 
+- [Features that are removed or deprecated in Windows 10 Creators Update](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update)
 - [Windows 10 release information](https://technet.microsoft.com/windows/release-info)
 - [What's new in MDM in Windows 10, version 1703](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/new-in-windows-mdm-enrollment-management#whatsnew10)
 - [Manage Windows upgrades with Upgrade Readiness](../deploy/manage-windows-upgrades-with-upgrade-readiness.md)
