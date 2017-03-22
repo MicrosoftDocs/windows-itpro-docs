@@ -42,14 +42,16 @@ You'll need to configure Splunk so that it can pull Windows Defender ATP alerts.
 2. Click **Search & Reporting**, then **Settings** > **Data inputs**.
 
 3. Click **REST** under **Local inputs**.
-> [!NOTE]
-> This input will only appear after you install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/).
+
+  > [!NOTE]
+  > This input will only appear after you install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/).
 
 4. Click **New**.
 
 5. Type the following values in the required fields, then click **Save**:
-> [!NOTE]
->All other values in the form are optional and can be left blank.
+
+  > [!NOTE]
+  > All other values in the form are optional and can be left blank.
 
   <table>
   <tbody style="vertical-align:top;">

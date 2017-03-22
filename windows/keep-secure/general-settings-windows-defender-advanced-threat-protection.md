@@ -23,10 +23,12 @@ localizationpriority: high
 During the onboarding process, a wizard takes you through the general settings of Windows Defender ATP. After onboarding, you might want to update some settings which you'll be able to do through the **Preferences setup** menu.
 
 1. In the navigation pane, select **Preferences setup** > **General**.
+
 2. Modify settings such as data retention policy or the industry that best describes your organization.
 
-  >[!NOTE]
-  >Other settings are not editable.
+    > [!NOTE]
+    > Other settings are not editable.
+
 3. Click **Save preferences**.
 
 
