@@ -33,6 +33,6 @@ During the onboarding process, a wizard takes you through the general settings o
 
 
 ## Related topics
-- [Turn on advanced features in Windows Defender ATP](advanced-features-windows-defender-advacned-threat-protection.md)
+- [Turn on advanced features in Windows Defender ATP](advanced-features-windows-defender-advanced-threat-protection.md)
 - [Turn on the preview experience in Windows Defender ATP ](preview-settings-windows-defender-advanced-threat-protection.md)
 - [Configure email notifications in Windows Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)
