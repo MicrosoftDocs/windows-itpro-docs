@@ -131,7 +131,7 @@ The following table lists the Group Policy settings that you can configure for W
 </td>
 </tr>
 <tr>
-<td><a href="hello-prepare-people-to-use.md#bmk-remote">Phone Sign-in</a></td>
+<td>>Phone Sign-in</td>
 <td>
 <p>Use Phone Sign-in</p>
 </td>

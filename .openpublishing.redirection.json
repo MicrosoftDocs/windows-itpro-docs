@@ -388,7 +388,7 @@
 {
 "source_path": "windows/keep-secure/hello-enable-phone-signin.md",
 "redirect_url": "/itpro/windows/keep-secure/hello-identity-verification",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/deploy-edp-policy-using-intune.md",
