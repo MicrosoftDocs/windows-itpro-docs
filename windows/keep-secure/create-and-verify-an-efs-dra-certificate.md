@@ -36,8 +36,7 @@ The recovery process included in this topic only works for desktop devices. WIP 
 
     The EFSDRA.cer and EFSDRA.pfx files are created in the location you specified in Step 1.
 
-    >[!IMPORTANT]
-    >Because the private keys in your DRA .pfx files can be used to decrypt any WIP file, you must protect them accordingly. We highly recommend storing these files offline, keeping copies on a smart card with strong protection for normal use and master copies in a secured physical location.
+    >**Important**<br>Because the private keys in your DRA .pfx files can be used to decrypt any WIP file, you must protect them accordingly. We highly recommend storing these files offline, keeping copies on a smart card with strong protection for normal use and master copies in a secured physical location.
 
 4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as Microsoft Intune or System Center Configuration Manager. 
 
