@@ -147,7 +147,9 @@ The pause feature has been changed, and now requires a start date to set up. Use
 
 You are now able to defer feature update installation by up to 365 days. In settings, users are able to select their branch readiness level and update deferal periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](../update/waas-configure-wufb.md#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-quality-updates) for details.
 
-### Delivery Optimization
+### Optimize update delivery
+
+[Express updates](../update/waas-optimize-windows-10-updates.md#express-update-delivery) are now supported on System Center Configuration Manager, starting with version 1702 of Configuration Manager, in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
 
 Delivery Optimization policies now enable you to configure additional restrictions to have more control in various scenarios. 
 
