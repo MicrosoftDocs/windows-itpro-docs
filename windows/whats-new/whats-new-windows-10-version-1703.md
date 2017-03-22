@@ -58,11 +58,6 @@ The Lockdown Designer app helps you configure and create a lockdown XML file to 
 
 
 
-### Kiosk mode for Windows 10 Mobile
-
-In Windows 10 Mobile, version 1703, [Apps Corner](https://support.microsoft.com/instantanswers/7959c547-aa80-5ff1-9097-1784b6894845/set-up-apps-corner) is removed. Enterprises can use [Enterprise Assigned Access to configure kiosk experiences](../configure/set-up-a-kiosk-for-windows-10-for-mobile-edition.md) on devices running Windows 10 Mobile. 
-
-
 
 ## Deployment
 
