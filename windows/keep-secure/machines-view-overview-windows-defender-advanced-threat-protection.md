@@ -37,7 +37,7 @@ Filter the **Machines list** by time period, **Active malware categories**, or *
 
 You can also download the entire list in CSV format using the **Export to CSV** feature.
 
-![Image of machines view with list of machines](images/atp-machines-view-list.png)
+![Image of machines list with list of machines](images/atp-machines-view-list.png)
 
 You can use the following filters to limit the list of machines displayed during an investigation:
 

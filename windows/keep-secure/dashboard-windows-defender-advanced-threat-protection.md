@@ -97,7 +97,7 @@ There are two status indicators that provide information on the number of machin
 - **Inactive** - Machines that have stopped reporting to the Windows Defender ATP service for more than seven days in the past month.
 -	**Misconfigured** – These machines might partially be reporting telemetry to the Windows Defender ATP service and might have configuration errors that need to be corrected.
 
-When you click any of the groups, you’ll be directed to machines view, filtered according to your choice. For more information, see [Check sensor health state](check-sensor-status-windows-defender-advanced-threat-protection.md) and [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
+When you click any of the groups, you’ll be directed to machines list, filtered according to your choice. For more information, see [Check sensor health state](check-sensor-status-windows-defender-advanced-threat-protection.md) and [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
 
 ## Service health
 The **Service health** tile informs you if the service is active or if there are issues.

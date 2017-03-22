@@ -119,7 +119,7 @@ ID | Severity | Event description | Troubleshooting steps
 1819 | Error | Windows Defender Advanced Threat Protection CSP: Failed to Set Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3). | Download the [Cumulative Update for Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
 
 ## Troubleshoot onboarding issues on the endpoint
-If the deployment tools used does not indicate an error in the onboarding process, but endpoints are still not appearing in the machines view an hour, go through the following verification topics to check if an error occurred with the Windows Defender ATP agent:
+If the deployment tools used does not indicate an error in the onboarding process, but endpoints are still not appearing in the machines list in an hour, go through the following verification topics to check if an error occurred with the Windows Defender ATP agent:
 - [View agent onboarding errors in the endpoint event log](#view-agent-onboarding-errors-in-the-endpoint-event-log)
 - [Ensure the telemetry and diagnostics service is enabled](#ensure-the-telemetry-and-diagnostics-service-is-enabled)
 - [Ensure the service is set to start](#ensure-the-service-is-set-to-start)
