@@ -11,7 +11,7 @@ If you’re having issues seeing data in Upgrade Readiness after running the Upg
 
 If you still don’t see data in Upgrade Readiness, follow these steps:
 
-1.  Download and extract UpgradeAnalytics.zip. Ensure the “Diagnostics” folder is included.
+1.  Download and extract the [Upgrade Readiness Deployment Script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409). Ensure the “Pilot/Diagnostics” folder is included .
 
 2.  Edit the script as described in [Upgrade Readiness deployment script](upgrade-readiness-deployment-script.md).
 
