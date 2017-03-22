@@ -147,7 +147,7 @@ Use the following argument with the Windows Defender AV command line utility (*m
 MpCmdRun - ValidateMapsConnection 
 ```
 
-See [Run a Windows Defender scan from the command line](run-scan-command-line-windows-defender-antivirus)  and [Command line arguments](command-line-arguments-windows-defender-antivirus.md) for more information on how to use the *mpcmdrun.exe* utility.
+See [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender Antivirus](command-line-arguments-windows-defender-antivirus.md) for more information on how to use the *mpcmdrun.exe* utility.
 
 **Attempt to download a fake malware file from Microsoft:**
 

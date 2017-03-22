@@ -17,39 +17,38 @@ author: iaanw
 
 **Applies to:**
 
-- Windows 10, version 1703
+- Windows 10
 
 **Audience**
 
 - Enterprise security administrators
 
-You can configure Windows Defender Antivirus features in a number of ways, including:
- Microsoft Active Directory or Windows Server Update Services (WSUS), apply updates to endpoints, and manage scans using:
+Windows Defender Antivirus can be configured with a number of tools, including:
 
--   Group Policy Settings
--   Windows Management Instrumentation (WMI)
--   PowerShell
-
-
-
+- Group Policy settings
+- System Center Configuration Manager
+- PowerShell cmdlets
+- Windows Management Instrumentation (WMI)
+- Microsoft Intune
 
 
+The following broad categories of features can be configured:
+
+- Cloud-delivered protection
+- Always-on real-time protection, including behavioral, heuristic, and machine-learning-based protection
+- How end-users interact with the client on individual endpoints
+
+The topics in this section describe how to perform key tasks when configuring Windows Defender AV. Each topic includes instructions for the applicable configuration tool (or tools).
+
+You can also review the [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md) topic for an overview of each tool and links to further help.
 
 
-
-
-## Related topics
-
-- [Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md)
-- [Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)
-
-
-
-
-
-## Related topics
-
-- [Windows Defender in Windows 10](windows-defender-in-windows-10.md)
+## In this section
+Topic | Description
+:---|:---
+[Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) | Cloud-delivered protection provides an advanced level of fast, robust antivirus detection
+[Configure behavioral, heuristic, and real-time protection](configure-protection-features-windows-defender-antivirus.md)|Enable behavior-based, heuristic, and real-time protection in Windows Defender AV
+[Configure end-user interaction with WDAM](configure-end-user-interaction-windows-defender-antivirus.md)|Configure how end-users interact with Windows Defender AV, what notifications they see, and if they can override settings
 
 
 

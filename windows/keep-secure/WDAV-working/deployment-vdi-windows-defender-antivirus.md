@@ -30,6 +30,7 @@ author: iaanw
 
 
 In addition to standard on-premises or hardware configurations, you can also use Windows Defender Antivirus (Windows Defender AV) in a remote desktop (RDS) or virtual desktop infrastructure (VDI) environment. 
+
 Boot storms can be a problem in large-scale VDIs; this guide will help reduce the overall network bandwidth and performance impact on your hardware. For more details on the best configuration options to ensure a good balance between performance and protection, see the [Configure endpoints for optimal performance](#configure-endpoints-for-optimal-performance) section.
 
 See the [Microsoft Desktop virtualization site](https://www.microsoft.com/en-us/server-cloud/products/virtual-desktop-infrastructure/) for more details on Microsoft Remote Desktop Services and VDI support.

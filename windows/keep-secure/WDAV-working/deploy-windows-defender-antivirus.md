@@ -1,7 +1,7 @@
 ---
 title: Deploy and enable Windows Defender Antivirus 
-description: Deploy Windows Defender AV for protection of your endpoints, using System Center Configuration Manager, Microsoft Intune, Group Policy, PowerShell cmdlets, or WMI.
-keywords: 
+description: Deploy Windows Defender AV for protection of your endpoints with Configuration Manager, Microsoft Intune, Group Policy, PowerShell cmdlets, or WMI.
+keywords: deploy, enable, windows defender av
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10

@@ -1,32 +1,44 @@
 ---
-title: Troubleshoot Windows Defender in Windows 10 (Windows 10)
-description: IT professionals can review information about event IDs in Windows Defender for Windows 10 and see any relevant action they can take.
+title: Windows Defender AV event IDs and error codes
+description: Look up the causes and solutions for Windows Defender Antivirus event IDs and errors
+keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
 ms.assetid: EE488CC1-E340-4D47-B50B-35BD23CB4D70
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
-author: jasesso
+author: iawilt
 ---
 
-# Troubleshoot Windows Defender in Windows 10
+# Review event logs and error codes to troubleshoot issues with Windows Defender AV
+
 
 **Applies to**
 -   Windows 10
 
-IT professionals can review information about event IDs in Windows Defender for Windows 10 and see any relevant action they can take.
-<span id="windows-defender-av-ids" />
-## Windows Defender client event IDs
+**Audience**
 
-This section provides the following information about Windows Defender client events:
+- Enterprise security administrators
 
--   The text of the message as it appears in the event
--   The name of the source of the message
--   The symbolic name that identifies each message in the programming source code
--   Additional information about the message
 
-Use the information in this table to help troubleshoot Windows Defender client events; these are located in the **Windows Event Viewer**, under **Windows Logs**.
+If you encounter a problem with Windows Defender Antivirus, you can search the tables in this topic to find a matching issue and potential solution.
+
+The tables list:
+
+- [Windows Defender AV client event IDs](#windows-defender-av-ids)
+- [Windows Defender AV client error codes](#error-codes)
+- [Internal Windows Defender AV client error codes (used by Microsoft during development and testing)](#internal-error-codes)
+
+
+<a id="windows-defender-av-ids"></a>
+## Windows Defender AV client event IDs
+
+Windows Defender AV records event IDs in the Windows event log.
+
+You can directly view the event log, or if you have a third-party security information and event management (SIEM) tool, you can also consume [Windows Defender client event IDs](troubleshoot-windows-defender-antivirus.md#windows-defender-av-ids) to review specific events and errors from your endpoints.
+
+The table in this section lists the main Windows Defender Antivirus client event IDs and, where possible, provides suggested solutions to fix or resolve the error. 
 
 **To view a Windows Defender client event**
 
@@ -36,7 +48,7 @@ Use the information in this table to help troubleshoot Windows Defender client e
 4.  In the details pane, view the list of individual events to find your event.
 5.  Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
 
-You can find a complete list of the Microsoft antimalware event IDs, the symbol, and the description of each ID in [Windows Server Antimalware Events TechNet](https://technet.microsoft.com/library/dn913615.aspx).
+
 
 <table>
 <tr>
@@ -2697,13 +2709,14 @@ Description of the error. </dt>
 </tr>
 </table>
 
+<a id="error-codes"></a>
 ## Windows Defender client error codes
-If Windows Defender experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update.
-This section provides the following information about Windows Defender client errors.
+If Windows Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update.
+This section provides the following information about Windows Defender Antivirus client errors.
 -   The error code
 -   The possible reason for the error
 -   Advice on what to do now
-Use the information in these tables to help troubleshoot Windows Defender error codes.
+Use the information in these tables to help troubleshoot Windows Defender Antivirus error codes.
 <table>
 <tr>
 <th colspan="4">External error codes</th>
@@ -2955,7 +2968,10 @@ article</a>.</p>
 </td>
 </tr>
 </table>
-<p> </p>
+
+<a id="internal-error-codes"></a>
+The following error codes are used during internal testing of Windows Defender AV.
+
 <table>
 <tr>
 <th colspan="4">Internal error codes</th>
@@ -3305,5 +3321,5 @@ article</a>.</p>
 
 ## Related topics
 
-- [Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md)
-- [Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)
+- [Report on Windows Defender Antivirus protection](report-monitor-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

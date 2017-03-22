@@ -1,7 +1,7 @@
 ---
 title: Monitor and report on Windows Defender Antivirus protection
-description: 
-keywords: 
+description: Use Configuration Manager or SIEM tools to consume reports, and monitor Windows Defender AV with PowerShell and WMI.
+keywords: siem, monitor, report, windows defender av
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -34,5 +34,5 @@ For monitoring or determining status with PowerShell, WMI, or Microsoft Azure, s
 
 ## Related topics
 
-- [Windows Defender Antivirus in Windows 10](windows-defender-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)

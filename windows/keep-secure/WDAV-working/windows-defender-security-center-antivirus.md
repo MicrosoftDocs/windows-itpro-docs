@@ -1,6 +1,6 @@
 ---
 title: Windows Defender Antivirus in the Windows Defender Security Center app
-description: Windows Defender AV is now included in the Windows Defender Security Center app
+description: Windows Defender AV is now included in the Windows Defender Security Center app.
 keywords: wdav, antivirus, firewall, security, windows
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -125,7 +125,7 @@ This section describes how to perform some of the most common tasks when reviewi
 
 5. Click the plus icon to choose the type and set the options for each exclusion. 
 
-
+<a id="detection-history"></a>
 **Review threat detection history in the Windows Defender Security Center app**
 1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 

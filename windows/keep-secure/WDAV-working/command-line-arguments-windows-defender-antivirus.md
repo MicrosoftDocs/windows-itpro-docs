@@ -1,6 +1,6 @@
 ---
-title: Learn how to run a scan from command line in Windows Defender (Windows 10)
-description: Windows Defender utility enables IT professionals to use command line to run antivirus scans.
+title: Use the command line to manage Windows Defender AV
+description: Windows Defender AV has a dedicated command-line utility that can run scans and configure protection.
 keywords: run windows defender scan, run antivirus scan from command line, run windows defender scan from command line, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -9,41 +9,36 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
-author: mjcaparas
+author: iawilt
 ---
 
-# Run a Windows Defender scan from the command line
+
+# Use the mpcmdrun.exe command-line tool to configure and manage Windows Defender Antivirus
 
 **Applies to:**
 
 - Windows 10
 
-IT professionals can use a command-line utility to run a Windows Defender scan. 
 
-The utility is available in _%Program Files%\Windows Defender\MpCmdRun.exe_.
+You can use a dedicated command-line tool to perform various functions in Windows Defender Antivirus. 
 
-This utility can be handy when you want to automate the use of Windows Defender. 
+This utility can be handy when you want to automate the use of Windows Defender Antivirus. 
 
-**To run a quick scan from the command line**
+The utility is available in _%Program Files%\Windows Defender\MpCmdRun.exe_ and must be run from a command prompt.
 
-1. Click **Start**, type **cmd**, and press **Enter**.
-2. Navigate to _%ProgramFiles%\Windows Defender_ and enter the following command, and press **Enter**:
-
-```
-C:\Program Files\Windows Defender\mpcmdrun.exe -scan -scantype 1
-```
-The quick scan will start. When the scan completes, you'll see a message indicating that the scan is finished. 
+> [!NOTE]
+> You may need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
 
 
-The utility also provides other commands that you can run:
+The utility has the following commands:
 
-```
+```DOS
 MpCmdRun.exe [command] [-options]
 ```
 
 Command | Description 
 :---|:---
-\- ? / -h | Displays all available options for the tool
+\- ? **or** -h | Displays all available options for the tool
 \-Scan [-ScanType #] [-File <path> [-DisableRemediation] [-BootSectorScan]][-Timeout <days>] | Scans for malicious software
 \-Trace  [-Grouping #] [-Level #]| Starts diagnostic tracing
 \-GetFiles | Collects support information
@@ -51,5 +46,14 @@ Command | Description
 \-AddDynamicSignature [-Path] | Loads a dynamic signature
 \-ListAllDynamicSignature [-Path] | Lists the loaded dynamic signatures
 \-RemoveDynamicSignature [-SignatureSetID] | Removes a dynamic signature
-<br>
-The command-line utility provides detailed information on the other commands supported by the tool. 
+\-ValidateMapsConnection | Used to validate connection to the [cloud-delivered protection service](configure-network-connections-windows-defender-antivirus.md)
+
+
+
+
+## Related topics
+
+- [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+
+

@@ -1,6 +1,6 @@
 ---
-title: Use PowerShell cmdlets to configure and run Windows Defender in Windows 10
-description: In Windows 10, you can use PowerShell cmdlets to run scans, update definitions, and change settings in Windows Defender.
+title: Use PowerShell cmdlets to configure and run Windows Defender AV
+description: In Windows 10, you can use PowerShell cmdlets to run scans, update definitions, and change settings in Windows Defender Antivirus.
 keywords: scan, command line, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -12,7 +12,7 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Use PowerShell cmdlets to configure and run Windows Defender Antivirus
+# Use PowerShell cmdlets to configure and manage Windows Defender AV
 
 **Applies to:**
 
@@ -40,11 +40,12 @@ PowerShell is typically installed under the folder _%SystemRoot%\system32\Window
 
 To open online help for any of the cmdlets type the following:
 
-```text
+```PowerShell
 Get-Help <cmdlet> -Online
 ```
 Omit the `-online` parameter to get locally cached help.
 
 ## Related topics
 
-- [Windows Defender in Windows 10](windows-defender-in-windows-10.md)
+- [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

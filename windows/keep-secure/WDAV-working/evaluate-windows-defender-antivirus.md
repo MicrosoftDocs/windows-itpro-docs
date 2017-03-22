@@ -1,5 +1,5 @@
 ---
-title: Evaluate Windows Defender Antivirus (Windows 10)
+title: Evaluate Windows Defender Antivirus
 description: Businesses of all sizes can use this guide to evaluate and test the protection offered by Windows Defender Antivirus in Windows 10.
 keywords: windows defender antivirus, cloud protection, cloud, antimalware, security, defender, evaluate, test, protection, compare, real-time protection
 search.product: eADQiWindows 10XVcnh

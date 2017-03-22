@@ -1,6 +1,6 @@
 ---
-title: Configure enhanced notifications for Windows Defender
-description: In Windows 10, you can enable advanced notifications for endpoints throughout your enterprise network.
+title: Configure notifications for Windows Defender Antivirus
+description: Configure and customize notifications from Windows Defender AV.
 keywords: notifications, defender, endpoint, management, admin
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -12,35 +12,116 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Configure enhanced notifications for Windows Defender in Windows 10
+# Configure the notifications that appear on endpoints
 
 **Applies to:**
 
-- Windows 10, version 1607
+- Windows 10, version 1703
+
+**Audience**
+
+- Enterprise security administrators
+
+**Manageability available with**
+
+- Group Policy
+- Windows Defender Security Center app
 
 In Windows 10, application notifications about malware detection and remediation by Windows Defender are more robust, consistent, and concise.
 
 Notifications will appear on endpoints when manually triggered and scheduled scans are completed and threats are detected. These notifications will also be seen in the **Notification Center**, and a summary of scans and threat detections will also appear at regular time intervals.
 
-You can enable and disable enhanced notifications in Windows Settings. 
+You can also configure how standard notifications appear on endpoints, such as notfications for reboot or when a threat has been detected and remediated.
 
-## Disable notifications
+## Configure the additional notifications that appear on endpoints
 
-You can disable enhanced notifications on individual endpoints in Windows Settings. 
+You can configure the display of additional notifications, such as recent threat detection summaries, in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md) and with Group Policy.
 
-**Use Windows Settings to disable enhanced notifications on individual endpoints**
+> [!NOTE]
+> In Windows 10, version 1607, the feature was called **Enhanced notifications** and could be configured under **Windows Settings** > **Update & security** > **Windows Defender**.
 
-1. Open the **Start** menu and click or type **Settings**.
+> [!IMPORTANT]
+> Disabling additional notifications will not disable critical notifications, such as threat detection and remediation alerts.
 
-1. Click **Update & Security** and then **Windows Defender**. Scroll to the bottom of the settings page until you see the **Enhanced notifications** section.
+**Use the Windows Defender Security Center app to disable additional notifications:** 
 
-1. Toggle the setting between **On** and **Off**.
+1. Open the Windows Defender Security Center by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
-![Windows Defender enhanced notifications](images/defender/enhanced-notifications.png)
+2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Virus & threat protection settings** label:
+
+![Screenshot of the Virus & threat protection settings label in the Windows Defender Security Center](images/defender/wdav-protection-settings-wdsc.png)
+    
+3.	Scroll to the **Notifications** section and click **Change notification settings**.
+
+4. Slide the switch to **Off** or **On** to disable or enable additional notifications.
+
+**Use Group Policy to disable additional notifications:**
+
+1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+
+3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+
+4.  Click **Policies** then **Administrative templates**.
+
+5.  Expand the tree to **Windows components > Windows Defender Antivirus > Reporting**. 
+
+6.  Double-click the **Turn off enhanced notifications** setting and set the option to **Enabled**. Click **OK**. This will prevent additional notifications from appearing.
+
+
+## Configure standard notifications on endpoints
+
+You can use Group Policy to:
+- Display additional, customized text on endpoints when the user needs to perform an action
+- Hide all notifications on endpoints
+- Hide reboot notifications on endpoints
+
+> [!NOTE]
+> Hiding notifications will only occur on endpoints to which the policy has been deployed. Notifications related to actions that must be taken (such as a reboot) will still appear on the [System Center Configuration Manager Endpoint Protection monitoring dashboard and reports](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/monitor-endpoint-protection).
+
+**Use Group Policy to display additional, custom text in notifications:**
+
+1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+
+3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+
+4.  Click **Policies** then **Administrative templates**.
+
+5.  Expand the tree to **Windows components > Windows Defender Antivirus > Client interface**. 
+
+6.  Double-click the **Display additional text to clients when they need to perform an action** setting and set the option to **Enabled**. 
+
+7. Enter the additional text you want to be shown to users. Click **OK**. 
+
+**Use Group Policy to hide notifications:**
+
+1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+
+3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+
+4.  Click **Policies** then **Administrative templates**.
+
+5.  Expand the tree to **Windows components > Windows Defender Antivirus > Client interface**. 
+
+6.  Double-click the **Suppress all notifications** setting and set the option to **Enabled**. Click **OK**. This will prevent additional notifications from appearing.
+
+**Use Group Policy to hide reboot notifications:**
+
+1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+
+3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+
+4.  Click **Policies** then **Administrative templates**.
+
+5.  Expand the tree to **Windows components > Windows Defender Antivirus > Client interface**. 
+
+6.  Double-click the **Suppresses reboot notifications** setting and set the option to **Enabled**. Click **OK**. This will prevent additional notifications from appearing.
+
+
 
 
 
 
 ## Related topics
 
-- [Windows Defender in Windows 10](windows-defender-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Configure end-user interaction with Windows Defender AV](configure-end-user-interaction-windows-defender-antivirus.md)

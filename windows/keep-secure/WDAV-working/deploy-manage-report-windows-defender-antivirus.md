@@ -1,7 +1,7 @@
 ---
 title: Deploy, manage, and report on Windows Defender Antivirus
-description: 
-keywords: 
+description: You can deploy and manage Windows Defender Antivirus with Group Policy, Configuration Manager, WMI, PowerShell, or Intune
+keywords: deploy, manage, update, protection, windows defender antivirus
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
