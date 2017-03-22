@@ -70,7 +70,9 @@ In Windows 10 Mobile, version 1703, [Apps Corner](https://support.microsoft.com/
 
 MBR2GPT.EXE is a new command-line tool available in Windows 10 version 1703 and later versions. MBR2GPT converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS).
 
-The GPT partition format is newer and enables the use of larger and more disk partitions. It also provides added data reliability and supports additional partition types. If you convert the system disk on a computer from MBR to GPT, you must also configure the computer to boot in UEFI mode, so make sure that your device supports UEFI before attempting to convert the system disk. 
+The GPT partition format is newer and enables the use of larger and more disk partitions. It also provides added data reliability, supports additional partition types, and enables faster boot and shutdown speeds. If you convert the system disk on a computer from MBR to GPT, you must also configure the computer to boot in UEFI mode, so make sure that your device supports UEFI before attempting to convert the system disk. 
+
+Additional security features of Windows 10 that are enabled when you boot in UEFI mode include: Secure Boot, Early Launch Anti-malware (ELAM) driver, Windows Trusted Boot, Measured Boot, Device Guard, Credential Guard, and BitLocker Network Unlock.
 
 For details, see [MBR2GPT.EXE](../deploy/mbr-to-gpt.md).
 
@@ -166,3 +168,4 @@ To check out all the details, see [Configure Delivery Optimization for Windows 1
 
 - [Windows 10 release information](https://technet.microsoft.com/windows/release-info)
 - [What's new in MDM in Windows 10, version 1703](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/new-in-windows-mdm-enrollment-management#whatsnew10)
+- [Manage Windows upgrades with Upgrade Readiness](../deploy/manage-windows-upgrades-with-upgrade-readiness.md)
