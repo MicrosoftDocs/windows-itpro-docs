@@ -254,6 +254,7 @@ Store for Business is currently available in these markets.
             <li>Luxembourg</li>
             <li>Malaysia</li>
             <li>Malta</li>
+            <li>Mauritius</li>
             <li>Mexico</li>
             <li>Mongolia</li>
             <li>Montenegro</li>
@@ -275,12 +276,12 @@ Store for Business is currently available in these markets.
             <li>Portugal</li>
             <li>Puerto Rico</li>
             <li>Qatar</li>
-            <li>Romania</li>
-            <li>Rwanda</li>
+            <li>Romania</li>          
         </ul>
     </td>
     <td>
         <ul>
+            <li>Rwanda</li>
             <li>Saint Kitts and Nevis</li>
             <li>Saudi Arabia</li>
             <li>Senegal</li>
@@ -305,8 +306,7 @@ Store for Business is currently available in these markets.
             <li>Viet Nam</li>
             <li>Virgin Islands, U.S.</li>
             <li>Zambia</li>
-            <li>Zimbabwe<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</li>
-            
+            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>           
         </ul>
     </td>
    </tr>
