@@ -68,7 +68,9 @@ The **Options** dialog box in the sequencer console contains the following tabs:
 
 App-V supports applications that include Microsoft Windows Services. If an application includes a Windows service, the Service will be included in the sequenced virtual package as long as it is installed while being monitored by the sequencer. If a virtual application creates a Windows service when it initially runs, then later, after installation, the application must be run while the sequencer is monitoring so that the Windows Service will be added to the package. Only Services that run under the Local System account are supported. Services that are configured for AutoStart or Delayed AutoStart are started before the first virtual application in a package runs inside the package’s Virtual Environment. Windows Services that are configured to be started on demand by an application are started when the virtual application inside the package starts the Service via API call.
 
-[How to Sequence a New Application with App-V](appv-sequence-a-new-application.md)
+- [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-provision-a-vm.md)
+- [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md)
+- [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md)
 
 ## <a href="" id="---------app-v-5-1-shell-extension-support"></a> App-V shell extension support
 
