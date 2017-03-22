@@ -21,9 +21,13 @@ This library provides the core content that IT pros need to evaluate, plan, depl
 
 [Deploy Windows 10](deploy/index.md)
 
+[Configure Windows 10](configure/index.md)
+
+[Update Windows 10](update/index.md)
+
 [Keep Windows 10 secure](keep-secure/index.md)
 
-[Manage and update Windows 10](manage/index.md)
+[Manage Windows 10](manage/index.md)
 
 ## Related topics
 

@@ -11,6 +11,9 @@ author: greg-lindsay
 # Change history for Deploy Windows 10
 This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+## RELEASE: Windows 10, version 1703
+The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). The provisioning topics have been moved to [Configure Windows 10](../configure/index.md).
+
 ## March 2017
 | New or changed topic | Description |
 |----------------------|-------------|

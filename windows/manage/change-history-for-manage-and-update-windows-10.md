@@ -1,6 +1,6 @@
 ---
-title: Change history for Manage and update Windows 10 (Windows 10)
-description: This topic lists new and updated topics in the Manage and update Windows 10 documentation for Windows 10 and Windows 10 Mobile.
+title: Change history for Manage Windows 10 (Windows 10)
+description: This topic lists new and updated topics in the Manage Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 ms.assetid: 29144AFA-1DA9-4532-B07D-1EBE34B7E1E0
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -8,17 +8,18 @@ ms.sitesec: library
 author: jdeckerMS
 ---
 
-# Change history for Manage and update Windows 10
+# Change history for Manage Windows 10
 
-This topic lists new and updated topics in the [Manage and update Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
+This topic lists new and updated topics in the [Manage Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 >If you're looking for **update history** for Windows 10, see [Windows 10 and Windows Server 2016 update history](https://support.microsoft.com/help/12387/windows-10-update-history).
 
-## March 2017
 
-| New or changed topic | Description |
-| --- | --- |
-|[Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email](cortana-at-work-scenario-6.md) |New |
+## RELEASE: Windows 10, version 1703
+
+The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). Some topics have been moved to [Update Windows 10](../update/index.md) or to [Configure Windows 10](../configure/index.md).
+
+
 
 ## February 2017
 
@@ -37,7 +38,8 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 | New or changed topic | Description |
 | --- | --- |
-| [Cortana integration in your business or enterprise and sub-topics](cortana-at-work-overview.md) |New |
+
+|[Cortana at work topics](../configure/cortana-at-work-overview.md)]|New |
 | [Start layout XML for desktop editions of Windows 10](start-layout-xml-desktop.md) | New (previously published in Hardware Dev Center on MSDN) |
 | [Start layout XML for mobile editions of Windows 10](start-layout-xml-mobile.md) | New (previously published in Hardware Dev Center on MSDN) |
 | [Quick guide to Windows as a service](waas-quick-start.md) | Added video that explains how Windows as a service works. |
@@ -64,8 +66,8 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | --- | --- |
 | [Manage device restarts after updates](waas-restart.md) | New |
 | [Manage Windows 10 in your organization - transitioning to modern management](manage-windows-10-in-your-organization-modern-management.md)  | New |
-| [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md) |Added an important note about Cortana and Office 365 integration. |
-| [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) | Fixed the explanation for Start behavior when the .xml file containing the layout is not available when the user signs in. |
+| [Cortana integration in your business or enterprise](../configure/cortana-at-work-overview.md) |Added an important note about Cortana and Office 365 integration. |
+| [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) | Fixed the explanation for Start behavior when the .xml file containing the layout is not available when the user signs in. | 
 | [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added link to the Windows Restricted Traffic Limited Functionality Baseline. Added Teredo Group Policy. |
 | [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) | Added Current Branch for Business (CBB) support for Windows 10 IoT Mobile. |
 
@@ -75,7 +77,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | New or changed topic | Description |
 | --- | --- |
 | [Update Windows 10 in the enterprise](waas-update-windows-10.md), replaces **Windows 10 servicing options** | New |
-| [Lockdown features from Windows Embedded 8.1 Industry](lockdown-features-windows-10.md) | Added Group Policy setting to replace Gesture Filter |
+| [Lockdown features from Windows Embedded 8.1 Industry](../configure/lockdown-features-windows-10.md) | Added Group Policy setting to replace Gesture Filter |
 | [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added content for Windows Server 2016 |
 | [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Updated the script for setting a custom shell using Shell Launcher. |
 
@@ -142,7 +144,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | ---|---|
 | [Application development for Windows as a service](application-development-for-windows-as-a-service.md) | New |
 | [Join Windows 10 Mobile to Azure Active Directory](join-windows-10-mobile-to-azure-active-directory.md) | New |
-| [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md) | Updated to include the new Preview feature, Cortana and Microsoft Dynamics CRM integration. |
+| [Cortana integration in your business or enterprise](../configure/cortana-at-work-overview.md) | Updated to include the new Preview feature, Cortana and Microsoft Dynamics CRM integration. |
 
 ## February 2016
 
@@ -160,7 +162,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 | New or changed topic | Description |
 | ---|---|
-| [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md) | New |
+| [Cortana integration in your business or enterprise](../configure/cortana-at-work-overview.md) | New |
 | [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) | New |
 | [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md) | New |
 
