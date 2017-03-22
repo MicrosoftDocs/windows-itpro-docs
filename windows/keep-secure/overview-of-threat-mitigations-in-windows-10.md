@@ -14,7 +14,7 @@ This topic provides an overview of software and firmware threats faced in the cu
 
 <a href="" id="threat-landscape"></a>This topic focuses on pre-breach mitigations aimed at device protection and threat resistance. These protections work with other security defenses in Windows 10, as shown in the following illustration:
 
-<img src="images/threat-mitigations-pre-breach-post-breach-conceptual.png" alt="Types of defenses in Windows 10" width="900" height="206" />
+<img src="images/threat-mitigations-pre-breach-post-breach-conceptual.png" alt="Types of defenses in Windows 10" />
 
 **Figure 1.&nbsp;&nbsp;Device protection and threat resistance as part of the Windows 10 security defenses**
 

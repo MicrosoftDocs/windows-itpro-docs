@@ -1,6 +1,6 @@
 ---
 title: Refresh a Windows 7 computer with Windows 10 (Windows 10)
-description: This topic will show you how to use MDT 2013 Update 2 Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the computer refresh process.
+description: This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the computer refresh process.
 ms.assetid: 2866fb3c-4909-4c25-b083-6fc1f7869f6f
 keywords: reinstallation, customize, template, script, restore
 ms.prod: w10
@@ -16,7 +16,7 @@ author: mtniehaus
 **Applies to**
 -   Windows 10
 
-This topic will show you how to use MDT 2013 Update 2 Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the computer refresh process. The refresh scenario, or computer refresh, is a reinstallation of an operating system on the same machine. You can refresh the machine to the same operating system as it is currently running, or to a later version.
+This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the computer refresh process. The refresh scenario, or computer refresh, is a reinstallation of an operating system on the same machine. You can refresh the machine to the same operating system as it is currently running, or to a later version.
 
 For the purposes of this topic, we will use three machines: DC01, MDT01, and PC0001. DC01 is a domain controller and MDT01 is a Windows Server 2012 R2 Standard server. PC0001 is a machine with Windows 7 Service Pack 1 (SP1) that is going to be refreshed into a Windows 10 machine, with data and settings restored. MDT01 and PC0001 are members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md#proof).
 
@@ -119,10 +119,10 @@ Figure 2. Starting the computer refresh from the running Windows 7 SP1 client.
 
 [Create a Windows 10 reference image](create-a-windows-10-reference-image.md)
 
-[Deploy a Windows 10 image using MDT 2013 Update 2](deploy-a-windows-10-image-using-mdt.md)
+[Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)
 
 [Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)
 
 [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)
 
-[Configure MDT settings](configure-mdt-2013-settings.md)
+[Configure MDT settings](configure-mdt-settings.md)
