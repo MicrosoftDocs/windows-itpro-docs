@@ -48,10 +48,8 @@ Starting with Windows 10, version 1703 your employees can use Windows Defender S
         - **Off.** Turns off SmartScreen, so an employee isn't alerted or stopped from downloading potentially malicious apps and files.    
 
     - In the **SmartScreen from Windows Store apps** area:
-    
-        - **Block.** Stops employees from visiting potentially malicious sites or from downloading and running unrecognized apps and files used by Windows Store apps.
         
-        - **Warn.** Warns employees that the sites and downloads used by Windows Store apps are potentially dangerous, but allows the action to continue.
+        - **Block** or **Warn.** Warns employees that the sites and downloads used by Windows Store apps are potentially dangerous, but allows the action to continue.
         
         - **Off.** Turns off SmartScreen, so an employee isn't alerted or stopped from visiting sites or from downloading potentially malicious apps and files.
 
