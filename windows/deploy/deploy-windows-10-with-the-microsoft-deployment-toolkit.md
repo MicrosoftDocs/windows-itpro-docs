@@ -1,6 +1,6 @@
 ---
 title: Deploy Windows 10 with the Microsoft Deployment Toolkit (Windows 10)
-description: This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT), and MDT 2013 Update 2 specifically.
+description: This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT).
 ms.assetid: 837f009c-617e-4b3f-9028-2246067ee0fb
 keywords: deploy, tools, configure, script
 ms.prod: w10
@@ -16,10 +16,10 @@ ms.pagetype: mdt
 **Applies to**
 -   Windows 10
 
-This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT), and MDT 2013 Update 2 specifically.
+This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT).
 
 The Microsoft Deployment Toolkit is a unified collection of tools, processes, and guidance for automating desktop and server deployment. In addition to reducing deployment time and standardizing desktop and server images, MDT enables you to more easily manage security and ongoing configurations. MDT builds on top of the core deployment tools in the Windows Assessment and Deployment Kit (Windows ADK) with additional guidance and features designed to reduce the complexity and time required for deployment in an enterprise environment.
-MDT 2013 Update 2 supports the deployment of Windows 10, as well as Windows 7, Windows 8, Windows 8.1, and Windows Server 2012 R2. It also includes support for zero-touch installation (ZTI) with Microsoft System Center 2012 R2 Configuration Manager.
+MDT supports the deployment of Windows 10, as well as Windows 7, Windows 8, Windows 8.1, and Windows Server 2012 R2. It also includes support for zero-touch installation (ZTI) with Microsoft System Center 2012 R2 Configuration Manager.
 
 To download the latest version of MDT, visit the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117).
 
@@ -27,11 +27,11 @@ To download the latest version of MDT, visit the [MDT resource page](https://go.
 
 -   [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)
 -   [Create a Windows 10 reference image](create-a-windows-10-reference-image.md)
--   [Deploy a Windows 10 image using MDT 2013 Update 2](deploy-a-windows-10-image-using-mdt.md)
+-   [Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)
 -   [Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)
 -   [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md)
 -   [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)
--   [Configure MDT settings](configure-mdt-2013-settings.md)
+-   [Configure MDT settings](configure-mdt-settings.md)
 
 ## <a href="" id="proof"></a>Proof-of-concept environment
 
