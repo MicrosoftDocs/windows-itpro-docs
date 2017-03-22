@@ -1,6 +1,6 @@
 ---
-title: Enable the custom threat intelligence application in Windows Defender ATP
-description: Enable the custom threat intelligence application in Windows Defender ATP so that you can create custom threat intelligence using REST API.
+title: Enable the custom threat intelligence API in Windows Defender ATP
+description: Learn how to setup the custom threat intelligence application in Windows Defender ATP to create custom threat intelligence (TI).
 keywords: enable custom threat intelligence application, custom ti application, application name, client id, authorization url, resource, client secret, access tokens
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Enable the custom threat intelligence application
+# Enable the custom threat intelligence API in Windows Defender ATP
 
 **Applies to:**
 
