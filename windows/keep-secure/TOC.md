@@ -791,7 +791,7 @@
 ###### [Misconfigured machines](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
 #### [Configure Windows Defender ATP preferences settings](preferences-setup-windows-defender-advanced-threat-protection.md)
 ##### [Update general settings](general-settings-windows-defender-advanced-threat-protection.md)
-##### [Turn on advanced features](advanced-features-windows-defender-advacned-threat-protection.md)
+##### [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md)
 ##### [Turn on preview experience](preview-settings-windows-defender-advanced-threat-protection.md)
 ##### [Configure email notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md)
 #### [Windows Defender ATP settings](settings-windows-defender-advanced-threat-protection.md)
