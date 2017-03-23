@@ -29,21 +29,15 @@ To help make it easier to deploy settings to restrict connections from Windows 1
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
-## What's new in Windows 10, version 1607 and Windows Server 2016
+## What's new in Windows 10, version 1703
 
-Here's a list of changes that were made to this article for Windows 10, version 1607 and Windows Server 2016:
+Here's a list of changes that were made to this article for Windows 10, version 1703:
 
-- Added instructions on how to turn off speech recognition and speech synthesis model updates in [14.5 Speech, inking, & typing](#bkmk-priv-speech).
-- Added instructions on how to turn off flip ahead with an Internet Explorer Group Policy.
-- Added a section on how to turn off automatic root updates to stop updating the certificate trust list in [1. Certificate trust lists](#certificate-trust-lists).
-- Added a new setting in [25. Windows Update](#bkmk-wu). 
-- Changed the NCSI URL in [11. Network Connection Status Indicator](#bkmk-ncsi).
-- Added a section on how to turn off features that depend on Microsoft Account cloud authentication service [10. Microsoft Account](#bkmk-microsoft-account).
+- 
 
 - Added the following Group Policies:
 
-    - Turn off unsolicited network traffic on the Offline Maps settings page
-    - Turn off all Windows spotlight features
+    - Prevent managing SmartScreen Filter
 
 ## <a href="" id="bkmk-othersettings"></a>Settings
 
@@ -52,7 +46,7 @@ The following sections list the components that make network connections to Micr
 
 If you're running Windows 10, they will be included in the next update for the Long Term Servicing Branch.
 
-### Settings for Windows 10 Enterprise, version 1607
+### Settings for Windows 10 Enterprise, version 1703
 
 See the following table for a summary of the management settings for Windows 10 Enterprise, version 1607.
 
@@ -329,6 +323,7 @@ Use Group Policy to manage settings for Internet Explorer.  You can find the Int
 | Turn off the auto-complete feature for web addresses | Choose whether auto-complete suggests possible matches when employees are typing web address in the address bar. <br /> Default: Disabled </br> You can also turn this off in the UI by clearing the <strong>Internet Options</strong> &gt; **Advanced** &gt; **Use inline AutoComplete in the Internet Explorer Address Bar and Open Dialog** check box.|
 | Disable Periodic Check for Internet Explorer software updates| Choose whether Internet Explorer periodically checks for a new version. <br /> Default: Enabled |
 | Turn off browser geolocation | Choose whether websites can request location data from Internet Explorer. <br /> Default: Disabled|
+| Prevent managing SmartScreen filter | Choose whether employees can manage the SmartScreen Filter in Internet Explorer. <br /> Default: Disabled |
 
 There are two more Group Policy objects that are used by Internet Explorer:
 
