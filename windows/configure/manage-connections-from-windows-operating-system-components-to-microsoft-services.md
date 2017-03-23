@@ -36,6 +36,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
 - Added an MDM policy for Font streaming.
 - Added an MDM policy for Network Connection Status Indicator.
 - Added an MDM policy for the Micosoft Account Sign-In Assistant.
+- Added instructions for removing the Sticky Notes app.
 
 - Added the following Group Policies:
 
@@ -593,6 +594,14 @@ To remove the Get Skype app:
     -and-
 
     Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage**
+
+To remove the Sticky notes app:
+
+-   Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.MicrosoftStickyNotes"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
+
+    -and-
+
+    Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage**
 
 ### <a href="" id="bkmk-settingssection"></a>16. Settings &gt; Privacy
 
