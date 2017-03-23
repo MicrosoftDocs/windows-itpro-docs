@@ -41,6 +41,12 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
     - Prevent managing SmartScreen Filter
     - Turn off Compatibility View
+    - Turn off Automatic Download and Install of updates
+    - Do not connect to any Windows Update locations
+    - Turn off access to all Windows Update features
+    - Specify Intranet Microsoft update service location
+    - Enable Windows NTP client
+    - Turn off Automatic download of the ActiveX VersionList
 
 ## <a href="" id="bkmk-othersettings"></a>Settings
 
@@ -57,7 +63,7 @@ See the following table for a summary of the management settings for Windows 10 
 | - | :-: | :-: | :-: | :-: | :-: |
 | [1. Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | | | |
 | [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
-| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | | ![Check mark](images/checkmark.png) | |
+| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | | |
 | [5. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [6. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
@@ -107,7 +113,7 @@ See the following table for a summary of the management settings for Windows Ser
 | - | :-: | :-: | :-: | :-: |
 | [1. Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
-| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | |
 | [5. Font streaming](#font-streaming) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [6. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
@@ -132,7 +138,7 @@ See the following table for a summary of the management settings for Windows Ser
 | Setting | Group Policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
 | [1. Certificate trust lists](#certificate-trust-lists) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| [3. Date & Time](#bkmk-datetime) | | ![Check mark](images/checkmark.png) | |
+| [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [5. Font streaming](#font-streaming) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [12. Network Connection Status Indicator](#bkmk-ncsi) | ![Check mark](images/checkmark.png) | | |
 | [17. Software Protection Platform](#bkmk-spp) | ![Check mark](images/checkmark.png) | | |
@@ -255,6 +261,10 @@ You can prevent Windows from setting the time automatically.
 
     -or-
 
+-   Disable the Group Policy: **System\\Windows Time Service\\Time Providers!!Enable Windows NTP Client**
+
+    -or-
+
 -   Create a REG\_SZ registry setting in **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\W32Time\\Parameters\\Type** with a value of **NoSync**.
 
 ### <a href="" id="bkmk-devinst"></a>4. Device metadata retrieval
@@ -347,7 +357,15 @@ an employee can swipe across a screen or click forward to go to the next pre-loa
 
 ### <a href="" id="bkmk-ie-activex"></a>7.1 ActiveX control blocking
 
-ActiveX control blocking periodically downloads a new list of out-of-date ActiveX controls that should be blocked. You can turn this off by changing the REG\_DWORD registry setting **HKEY\_CURRENT\_USER\\Software\\Microsoft\\Internet Explorer\\VersionManager\\DownloadVersionList** to 0 (zero).
+ActiveX control blocking periodically downloads a new list of out-of-date ActiveX controls that should be blocked.
+
+You can turn this off by:
+
+-  Apply the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Security Features** > **Add-on Management** > **Turn off Automatic download of the ActiveX VersionList**
+
+    - or -
+
+-  Changing the REG\_DWORD registry setting **HKEY\_CURRENT\_USER\\Software\\Microsoft\\Internet Explorer\\VersionManager\\DownloadVersionList** to 0 (zero).
 
 For more info, see [Out-of-date ActiveX control blocking](http://technet.microsoft.com/library/dn761713.aspx).
 
@@ -1281,6 +1299,8 @@ You can turn off the ability to launch apps from the Windows Store that were pre
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Disable all apps from Windows Store**.
 
+-   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Turn off Automatic Download and Install of updates**.
+
 ### <a href="" id="bkmk-updates"></a>25. Windows Update Delivery Optimization
 
 Windows Update Delivery Optimization lets you get Windows updates and Windows Store apps from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organization's PCs up-to-date. If you have Delivery Optimization turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
@@ -1351,6 +1371,12 @@ You can turn off Windows Update by setting the following registry entries:
     -and-
 
 -   Add a REG\_DWORD value called **UseWUServer** to **HKEY\_LOCAL\_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate\AU** and set the value to 1.
+
+-   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Do not connect to any Windows Update Internet locations**.
+
+-   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Intenet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off access to all Windows Update features**.
+
+-   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Specify intranet Microsoft update service location** and set the **Set the alternate download server** to **,**.
 
 
 You can turn off automatic updates by doing one of the following. This is not recommended.
