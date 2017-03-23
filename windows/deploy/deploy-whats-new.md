@@ -15,11 +15,13 @@ author: greg-lindsay
 **Applies to**
 -   Windows 10
 
-This topic provides a summary of many new features and changes that are related to deploying Windows 10 in your organization.
 
-For a detailed list of changes to Windows 10 ITPro TechNet library content, see the [Online content change history](#online-content-change-history) section in this topic.
+## In this topic
 
-For an all-up overview of new features in Windows 10, see [What's new in Windows 10](https://technet.microsoft.com/itpro/windows/whats-new/index)
+This topic provides an overview of new solutions and online content related to deploying Windows 10 in your organization.
+
+- For an all-up overview of new features in Windows 10, see [What's new in Windows 10](https://technet.microsoft.com/itpro/windows/whats-new/index).
+- For a detailed list of changes to Windows 10 ITPro TechNet library content, see [Online content change history](#online-content-change-history).
 
 ## Deployment solutions and tools
 
@@ -39,6 +41,13 @@ MDT build 884 is available, including support for:
 - Integration with Configuration Manager version 1606.
 
 For more information about MDT, see the [MDT resource page](https://technet.microsoft.com/en-US/windows/dn475741).
+
+### Windows Assessment and Deployment Kit (ADK)
+
+The Windows Assessment and Deployment Kit (Windows ADK) contains tools that can be used by IT Pros to deploy Windows. See the following topics:
+
+- [What's new in ADK kits and tools](https://msdn.microsoft.com/windows/hardware/commercialize/what-s-new-in-kits-and-tools)
+- [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md)
 
 ### Upgrade Readiness
 
@@ -79,5 +88,12 @@ The following topics provide a change history for Windows 10 ITPro TechNet libra
 <BR>[Change history for Plan for Windows 10 deployment](../plan/change-history-for-plan-for-windows-10-deployment.md)
 <BR>[Change history for Manage and update Windows 10](../manage/change-history-for-manage-and-update-windows-10.md)
 <BR>[Change history for Keep Windows 10 secure](../keep-secure/change-history-for-keep-windows-10-secure.md)
+
+## Related topics
+
+[Overview of Windows as a service](../manage/waas-overview.md)
+<BR>[Windows 10 deployment considerations](../plan/windows-10-deployment-considerations.md)
+<BR>[Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info.aspx)
+<BR>[Windows 10 Specifications & Systems Requirements](https://www.microsoft.com/en-us/windows/windows-10-specifications)
 
  
