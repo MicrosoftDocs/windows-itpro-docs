@@ -1199,7 +1199,7 @@ When turned off, the Wi-Fi Sense settings still appear on the Wi-Fi Settings scr
 
 You can disconnect from the Microsoft Antimalware Protection Service.
 
--   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender** &gt; **MAPS** &gt; **Join Microsoft MAPS**
+-   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS**
 
     -or-
 
@@ -1215,7 +1215,7 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 
 You can stop sending file samples back to Microsoft.
 
--   Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender** &gt; **MAPS** &gt; **Send file samples when further analysis is required** to **Always Prompt** or **Never Send**.
+-   Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **MAPS** &gt; **Send file samples when further analysis is required** to **Always Prompt** or **Never Send**.
 
     -or-
 
@@ -1235,11 +1235,11 @@ You can stop sending file samples back to Microsoft.
 
 You can stop downloading definition updates:
 
--   Enable the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender** &gt; **Signature Updates** &gt; **Define the order of sources for downloading definition updates** and set it to **FileShares**.
+-   Enable the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **Signature Updates** &gt; **Define the order of sources for downloading definition updates** and set it to **FileShares**.
 
     -and-
 
--   Disable the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender** &gt; **Signature Updates** &gt; **Define file shares for downloading definition updates** and set it to nothing.
+-   Disable the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Defender Antivirus** &gt; **Signature Updates** &gt; **Define file shares for downloading definition updates** and set it to nothing.
 
 For Windows 10 only, you can stop Enhanced Notifications:
 
