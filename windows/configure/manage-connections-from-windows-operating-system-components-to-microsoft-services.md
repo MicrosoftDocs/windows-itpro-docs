@@ -171,6 +171,10 @@ A certificate trust list is a predefined list of items, such as a list of certif
 
 To turn off the automatic download of an updated certificate trust list, you can turn off automatic root updates, which also includes the disallowed certificate list and the pin rules list.
 
+> [!CAUTION] 
+> By not automatically downloading the root certificates, the device might have not be able to connect to some websites.
+
+
 For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 2016 Server Core:
 
 - Enable the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Internet Communication Management** > **Internet Communication Settings** > **Turn off Automatic Root Certificates Update**
