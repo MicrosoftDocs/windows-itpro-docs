@@ -33,7 +33,7 @@ We are always striving to improve our documentation and welcome your feedback. Y
 
 Here's a list of changes that were made to this article for Windows 10, version 1703:
 
-- 
+- Added an MDM policy for Font streaming.
 
 - Added the following Group Policies:
 
@@ -263,7 +263,15 @@ To prevent Windows from retrieving device metadata from the Internet, apply the 
 
 Fonts that are included in Windows but that are not stored on the local device can be downloaded on demand.
 
-If you're running Windows 10, version 1607 or Windows Server 2016, disable the Group Policy: **Computer Configuration** > **Administrative Templates** > **Network** > **Fonts** > **Enable Font Providers**.
+If you're running Windows 10, version 1607, Windows Server 2016, or later:
+
+- Disable the Group Policy: **Computer Configuration** > **Administrative Templates** > **Network** > **Fonts** > **Enable Font Providers**.
+
+- In Windows 10, version 1703, you can apply the System/AllowFontProviders MDM policy from the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where:
+
+    -   **false**. Font streaming is disabled.
+
+    -   **true**. Font streaming is enabled.
 
 If you're running Windows 10, version 1507 or Windows 10, version 1511, create a REG\_DWORD registry setting called **DisableFontProviders** in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\FontCache\\Parameters**, with a value of 1.
 
