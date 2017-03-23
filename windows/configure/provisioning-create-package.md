@@ -46,10 +46,10 @@ You use Windows Configuration Designer to create a provisioning package (.ppkg) 
         
     - The **Advanced provisioning** option opens a new project with all **Runtime settings** available. *The rest of this procedure uses advanced provisioning.*
     
-    >[!TIP]
-    >You can start a project in the simple wizard editor and then switch the project to the advanced editor.
-    >
-    >![Switch to advanced editor](images/icd-switch.png)
+        >[!TIP]
+        > You can start a project in the simple wizard editor and then switch the project to the advanced editor.
+        >
+        > ![Switch to advanced editor](images/icd-switch.png)
         
 3. Enter a name for your project, and then click **Next**.
 
