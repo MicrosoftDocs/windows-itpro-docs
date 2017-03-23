@@ -378,7 +378,6 @@ In this example, Disk 0 is formatted with the MBR partition style, and Disk 1 is
 
 ## Related topics
 
-[Using MBR2GPT with Configuration Manager OSD](https://miketerrill.net/tag/mbr2gpt/)
-<BR>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/en-us/windows/dn798752.aspx)
+[Windows 10 Enterprise system requirements](https://technet.microsoft.com/en-us/windows/dn798752.aspx)
 <BR>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
 <BR>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
