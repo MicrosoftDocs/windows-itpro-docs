@@ -44,7 +44,7 @@ You use Windows Configuration Designer to create a provisioning package (.ppkg) 
         - [Instructions for HoloLens wizard](https://technet.microsoft.com/itpro/hololens/hololens-provisioning)
         - [Instructions for Surface Hub wizard](https://technet.microsoft.com/itpro/surface-hub/provisioning-packages-for-certificates-surface-hub)
         
-    - The **Advanced provisioning** option opens a new project with all **Runtime settings** available. *The rest of this procedure uses **Advanced provisioning**.*
+    - The **Advanced provisioning** option opens a new project with all **Runtime settings** available. *The rest of this procedure uses advanced provisioning.*
     
     >[!TIP]
     >You can start a project in the simple wizard editor and then switch the project to the advanced editor.
