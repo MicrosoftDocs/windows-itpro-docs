@@ -40,6 +40,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
 - Added registry paths for some Group Policies
 - Added the Find My Device section
 - Added the Tasks section
+- Added the App Diagnostics section
 
 - Added the following Group Policies:
 
@@ -103,6 +104,7 @@ See the following table for a summary of the management settings for Windows 10 
 | &nbsp;&nbsp;&nbsp;&nbsp;[17.16 Background apps](#bkmk-priv-background) | ![Check mark](images/checkmark.png) | | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[17.17 Motion](#bkmk-priv-motion) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[17.18 Tasks](#bkmk-priv-tasks) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.19 App Diagnostics](#bkmk-priv-diag) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [18. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [19. Sync your settings](#bkmk-syncsettings) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [20. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -132,7 +134,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [13. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [15. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | |
 | [17. Settings > Privacy](#bkmk-settingssection) | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[16.1 General](#bkmk-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.1 General](#bkmk-general) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [18. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [20. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [22. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
@@ -744,6 +746,8 @@ Use Settings &gt; Privacy to configure some settings that may be important to yo
 
 -   [17.18 Tasks](#bkmk-priv-tasks)
 
+-   [17.19 App Diagnostics](#bkmk-priv-diag)
+
 ### <a href="" id="bkmk-general"></a>17.1 General
 
 **General** includes options that don't fall into other areas.
@@ -1353,6 +1357,17 @@ To turn this off:
 
 -   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access Tasks**
 
+### <a href="" id="bkmk-priv-diag"></a>17.19 App Diagnostics
+
+In the **App diagnostics** area, you can choose which apps have access to your diagnostic information.
+
+To turn this off:
+
+-   Turn off the feature in the UI.
+
+     -or-
+
+-   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access dignostic information about other apps**
 
 ### <a href="" id="bkmk-spp"></a>18. Software Protection Platform
 
