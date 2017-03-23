@@ -34,6 +34,7 @@ We are always striving to improve our documentation and welcome your feedback. Y
 Here's a list of changes that were made to this article for Windows 10, version 1703:
 
 - Added an MDM policy for Font streaming.
+- Added an MDM policy for Network Connection Status Indicator.
 
 - Added the following Group Policies:
 
@@ -433,9 +434,11 @@ Network Connection Status Indicator (NCSI) detects Internet connectivity and cor
 
 In versions of Windows 10 prior to Windows 10, version 1607 and Windows Server 2016, the URL was http://www.msftncsi.com. 
 
-You can turn off NCSI through Group Policy:
+You can turn off NCSI by doing one of the following:
 
 -   Enable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Internet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off Windows Network Connectivity Status Indicator active tests**
+
+- In Windows 10, version 1703 and later, apply the Connectivity/DisallowNetworkConnectivityActiveTests MDM policy.
 
 > [!NOTE] 
 > After you apply this policy, you must restart the device for the policy setting to take effect.
