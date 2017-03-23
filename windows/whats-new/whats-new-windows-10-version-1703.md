@@ -1,5 +1,5 @@
 ---
-title: What's new in Windows 10, version 1607 (Windows 10)
+title: What's new in Windows 10, version 1703 (Windows 10)
 description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 keywords: ["What's new in Windows 10", "Windows 10", "creators update"]
 ms.prod: w10
@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: TrudyHa
 localizationpriority: high
+ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
 ---
 
 # What's new in Windows 10, version 1703
@@ -20,7 +21,7 @@ Below is a list of some of the new and updated features in Windows 10, version 1
 
 ### Windows Configuration Designer
 
-Previously known as *Windows Imaging and Configuration Designer (ICD)*, the tool for creating provisioning packages is renamed **Windows Configuration Designer**. The new Windows Configuration Designer is available in Windows Store as an app. To run Windows Configuration Designer on earlier versions of Windows, you can still install Windows Configuration Designer from the Windows Assessment and Deployment Kit (ADK).
+Previously known as *Windows Imaging and Configuration Designer (ICD)*, the tool for creating provisioning packages is renamed **Windows Configuration Designer**. The new Windows Configuration Designer is available in [Windows Store as an app](https://www.microsoft.com/store/apps/9nblggh4tx22). To run Windows Configuration Designer on earlier versions of Windows, you can still install Windows Configuration Designer from the [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
 
 Windows Configuration Designer in Windows 10, version 1703, includes several new wizards to make it easier to create provisioning packages.
 
@@ -41,13 +42,13 @@ The following new Group Policy and mobile device management (MDM) settings are a
 
 ### Start and taskbar layout
 
-Enterprises can apply a customized Start and tasbkar layout to devices running Windows 10 Pro, version 1703. 
+Enterprises can apply a customized Start and taskbar layout to devices running Windows 10 Pro, version 1703. 
 
 Additional MDM policy settings are available for Start and taskbar layout. For details, see [Manage Windows 10 Start and taskbar layout](../configure/windows-10-start-layout-options-and-policies.md).
 
 Previously, the customized taskbar could only be deployed using Group Policy or provisioning packages. Windows 10, version 1703, adds support for customized taskbars to [MDM](../configure/customize-windows-10-start-screens-by-using-mobile-device-management.md).
 
-### Lockdown Designer app
+### Lockdown Designer for Windows 10 Mobile lockdown files
 
 The Lockdown Designer app helps you configure and create a lockdown XML file to apply to devices running Windows 10 Mobile, and includes a remote simulation to help you determine the layout for tiles on the Start screen. Using Lockdown Designer is easier than [manually creating a lockdown XML file](../configure/lockdown-xml.md).
 
@@ -57,11 +58,6 @@ The Lockdown Designer app helps you configure and create a lockdown XML file to 
 
 
 
-### Kiosk mode for Windows 10 Mobile
-
-In Windows 10 Mobile, version 1703, [Apps Corner](https://support.microsoft.com/instantanswers/7959c547-aa80-5ff1-9097-1784b6894845/set-up-apps-corner) is removed. Enterprises can use [Enterprise Assigned Access to configure kiosk experiences](../configure/set-up-a-kiosk-for-windows-10-for-mobile-edition.md) on devices running Windows 10 Mobile. 
-
-
 
 ## Deployment
 
@@ -69,7 +65,9 @@ In Windows 10 Mobile, version 1703, [Apps Corner](https://support.microsoft.com/
 
 MBR2GPT.EXE is a new command-line tool available in Windows 10 version 1703 and later versions. MBR2GPT converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS).
 
-The GPT partition format is newer and enables the use of larger and more disk partitions. It also provides added data reliability and supports additional partition types. If you convert the system disk on a computer from MBR to GPT, you must also configure the computer to boot in UEFI mode, so make sure that your device supports UEFI before attempting to convert the system disk. 
+The GPT partition format is newer and enables the use of larger and more disk partitions. It also provides added data reliability, supports additional partition types, and enables faster boot and shutdown speeds. If you convert the system disk on a computer from MBR to GPT, you must also configure the computer to boot in UEFI mode, so make sure that your device supports UEFI before attempting to convert the system disk. 
+
+Additional security features of Windows 10 that are enabled when you boot in UEFI mode include: Secure Boot, Early Launch Anti-malware (ELAM) driver, Windows Trusted Boot, Measured Boot, Device Guard, Credential Guard, and BitLocker Network Unlock.
 
 For details, see [MBR2GPT.EXE](../deploy/mbr-to-gpt.md).
 
@@ -81,7 +79,9 @@ Using Azure AD also means that you can remove an employee’s profile (for examp
 
 ## Security
 
-### Windows Defender Advanced Threat Protection (Windows Defender ATP)
+### Windows Defender Advanced Threat Protection 
+
+New features in Windows Defender Advanced Threat Protection (ATP) for Windows 10, version 1703 include:
 - **Detection**<br>
   Enhancements to the detection capabilities include:
   - [Use the threat intelligence API to create custom alerts](../keep-secure/use-custom-ti-windows-defender-advanced-threat-protection.md) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
@@ -108,8 +108,8 @@ Using Azure AD also means that you can remove an employee’s profile (for examp
 
  
 
-### Windows Defender Antivirus (Windows Defender AV)
-New features for Windows Defender AV in Windows 10, version 1703 include:
+### Windows Defender Antivirus
+New features for Windows Defender Antivirus (AV) in Windows 10, version 1703 include:
 
 - [Updates to how the Block at First Sight feature can be configured](../keep-secure/configure-block-at-first-sight-windows-defender-antivirus.md)
 - [The ability to specify the level of cloud-protection](../keep-secure/specify-cloud-protection-level-windows-defender-antivirus.md)
@@ -146,7 +146,9 @@ The pause feature has been changed, and now requires a start date to set up. Use
 
 You are now able to defer feature update installation by up to 365 days. In settings, users are able to select their branch readiness level and update deferal periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](../update/waas-configure-wufb.md#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-quality-updates) for details.
 
-### Delivery Optimization
+### Optimize update delivery
+
+[Express updates](../update/waas-optimize-windows-10-updates.md#express-update-delivery) are now supported on System Center Configuration Manager, starting with version 1702 of Configuration Manager, in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
 
 Delivery Optimization policies now enable you to configure additional restrictions to have more control in various scenarios. 
 
@@ -159,6 +161,9 @@ Added policies include:
 
 To check out all the details, see [Configure Delivery Optimization for Windows 10 updates](../update/waas-delivery-optimization.md)
 
-## Learn more
+## Related topics
 
-- [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info)
+- [Features that are removed or deprecated in Windows 10 Creators Update](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update)
+- [Windows 10 release information](https://technet.microsoft.com/windows/release-info)
+- [What's new in MDM in Windows 10, version 1703](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/new-in-windows-mdm-enrollment-management#whatsnew10)
+- [Manage Windows upgrades with Upgrade Readiness](../deploy/manage-windows-upgrades-with-upgrade-readiness.md)
