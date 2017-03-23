@@ -40,7 +40,7 @@ This machine isolation feature disconnects the compromised machine from the netw
 
   -	**Dashboard** - Select the machine name from the Top machines with active alerts section.
   -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-  -	**Machines view** - Select the machine name from the list of machines.
+  -	**Machines list** - Select the machine name from the list of machines.
   -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
 
 2.	Open the **Actions** menu and select **Isolate machine**.
@@ -102,7 +102,7 @@ CollectionSummaryReport.xls | This file is a summary of the investigation packag
 
   -	**Dashboard** - Select the machine name from the Top machines with active alerts section.
   -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-  -	**Machines view** - Select the heading of the machine name from the machines view.
+  -	**Machines list** - Select the heading of the machine name from the machines list.
   -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
 
 2.	Open the **Actions** menu and select **Collect investigation package**.
