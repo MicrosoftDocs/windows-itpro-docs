@@ -64,7 +64,7 @@ See the following table for a summary of the management settings for Windows 10 
 | [7. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
 | [8. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | | | |
 | [9. Mail synchronization](#bkmk-mailsync) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | | |
-| [10. Microsoft Account](#bkmk-microsoft-account) | | | | ![Check mark](images/checkmark.png) | |
+| [10. Microsoft Account](#bkmk-microsoft-account) | | |  ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [11. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) |
 | [12. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | | | |
 | [13. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | | |
