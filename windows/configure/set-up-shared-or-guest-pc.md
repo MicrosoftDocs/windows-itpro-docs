@@ -16,7 +16,7 @@ localizationpriority: high
 
 -   Windows 10
 
-Windows 10, version 1607, introduces *shared PC mode*, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise  and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Pro Education, Education, and Enterprise.
+Windows 10, version 1607, introduced *shared PC mode*, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise  and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Pro Education, Education, and Enterprise.
 
 > [!NOTE]
 > If you're interested in using Windows 10 for shared PCs in a school, see [Use Set up School PCs app](https://technet.microsoft.com/edu/windows/use-set-up-school-pcs-app) which provides a simple way to configure PCs with shared PC mode plus additional settings specific for education.
@@ -69,16 +69,16 @@ You can configure Windows to be in shared PC mode in a couple different ways:
 
 ![custom OMA-URI policy in Intune](images/oma-uri-shared-pc.png) 
 
-- A provisioning package created with the Windows Imaging and Configuration Designer (ICD): You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Imaging and Configuration Designer (ICD). Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/mt723294.aspx), exposed in ICD as SharedPC.
+- A provisioning package created with the Windows Configuration Designer: You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Configuration Designer. Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/mt723294.aspx), exposed in Windows Configuration Designer as **SharedPC**.
 
 ![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
 
 
 ### Create a provisioning package for shared use
 
-Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that configures a device for shared PC mode. [Install the ADK and select **Configuration Designer**.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+1. [install Windows Configuration Designer](provisioning-install-icd.md)
 
-1.  Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe). 
+1.  Open Windows Configuration Designer. 
 
 2. On the **Start page**, select **Advanced provisioning**.
 
@@ -287,12 +287,7 @@ Shared PC mode sets local group policies to configure the device. Some of these 
 
 
 
-## Related topics
 
-[Set up a device for anyone to use (kiosk)](set-up-a-device-for-anyone-to-use.md)
-
-
- 
 
  
 

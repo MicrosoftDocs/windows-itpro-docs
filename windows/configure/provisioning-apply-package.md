@@ -42,25 +42,7 @@ Provisioning packages can be applied to a device during the first-run experience
 
     ![Do you trust this package?](images/trust-package.png)
     
-6. Read and accept the Microsoft Software License Terms.  
 
-    ![Sign in](images/license-terms.png)
-    
-7. Select **Use Express settings**.
-
-    ![Get going fast](images/express-settings.png)
-
-8. If the PC doesn't use a volume license, you'll see the **Who owns this PC?** screen. Select **My work or school owns it** and tap **Next**.
-
-    ![Who owns this PC?](images/who-owns-pc.png)
-
-9. On the **Choose how you'll connect** screen, select **Join Azure AD** or **Join a domain** and tap **Next**.
-
-    ![Connect to Azure AD](images/connect-aad.png)
-
-10. Sign in with  your domain, Azure AD,  or Office 365 account and password. When you see the progress ring, you can remove the USB drive.
-
-    ![Sign in](images/sign-in-prov.png)
     
 ### After setup, from a USB drive, network folder, or SharePoint site
 
@@ -97,23 +79,17 @@ On a desktop computer, navigate to **Settings** > **Accounts** > **Access work o
 
 
 
-## Learn more
-
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
-
--   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
 
 
 ## Related topics
 
 - [Provisioning packages for Windows 10](provisioning-packages.md)
 - [How provisioning works in Windows 10](provisioning-how-it-works.md)
-- [Install Windows Imaging and Configuration Designer](provisioning-install-icd.md)
+- [Install Windows Configuration Designer](provisioning-install-icd.md)
 - [Create a provisioning package](provisioning-create-package.md)
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
-- [Provision PCs with apps and certificates for initial deployments (advanced provisioning)](provision-pcs-with-apps-and-certificates.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
-- [NFC-based device provisioning](provisioning-nfc.md)
-- [Windows ICD command-line interface (reference)](provisioning-command-line.md)
+- [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
+- [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
