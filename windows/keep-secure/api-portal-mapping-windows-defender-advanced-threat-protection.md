@@ -71,3 +71,10 @@ Portal label  | SIEM field name | Description
 ![Image of machine timeline with numbers](images/atp-remediated-alert.png)
 
 ![Image of file details](images/atp-file-details.png)
+
+
+## Related topics
+- [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
+- [Configure Splunk](configure-splunk-windows-defender-advanced-threat-protection.md)
+- [Configure ArcSight](configure-arcsight-windows-defender-advanced-threat-protection.md)
+- [Pull Windows Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)

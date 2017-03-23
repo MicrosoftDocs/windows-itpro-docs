@@ -130,7 +130,7 @@ For prevalent files in the organization, a warning is shown before an action is 
 1.	Select the file you want to remove from the blocked list. You can select a file from any of the following views or use the Search box:
 
   –	**Alerts** - Click the file links from the Description or Details in the Alert timeline
-  –	**Machines view** - Click the file links in the Description or Details columns in the Observed on machine section
+  –	**Machines list** - Click the file links in the Description or Details columns in the Observed on machine section
   –	**Search box** - Select File from the drop–down menu and enter the file name
 
 2.	Open the **Actions** menu and select **Remove file from blocked list**.
@@ -175,7 +175,7 @@ When the sample is collected, Windows Defender ATP runs the file in is a secure 
 
 1. Select the file that you want to submit for deep analysis. You can select or search a file from any of the following views:
   – Alerts - click the file links from the **Description** or **Details** in the Alert timeline
-  – **Machines View** - click the file links from the **Description** or **Details** in the **Machine in organization** section
+  – **Machines list** - click the file links from the **Description** or **Details** in the **Machine in organization** section
   – Search box - select **File** from the drop–down menu and enter the file name
 2. In the **Deep analysis** section of the file view, click **Submit**.
 

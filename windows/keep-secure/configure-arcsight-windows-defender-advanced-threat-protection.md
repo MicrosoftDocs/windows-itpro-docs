@@ -68,8 +68,9 @@ The following steps assume that you have completed all the required steps in [Be
 
   - WDATP-connector.properties: C:\\*folder_location*\current\user\agent\flexagent\
 
-  >[!NOTE]
-  >You must put the configuration files in this location, where *folder_location* represents the location where you installed the tool.
+  NOTE:
+  You must put the configuration files in this location, where *folder_location* represents the location where you installed the tool.
+
 4. After the installation of the core connector completes, the Connector Setup window opens. In the Connector Setup window, select **Add a Connector**.
 
 5. Select Type: **ArcSight FlexConnector REST** and click **Next**.
@@ -174,10 +175,11 @@ Windows Defender ATP alerts will appear as discrete events, with "Microsoft” a
 
   A browser window appears. Allow it to run, it should disappear, and the connector should now be running.
 
-  > [!NOTE]
-  > Verify that the connector is running by stopping the process again. Then start the connector again, and no browser window should appear.
+> [!NOTE]
+> Verify that the connector is running by stopping the process again. Then start the connector again, and no browser window should appear.
 
 ## Related topics
-- [Configure security information and events management (SIEM) tools to pull alerts](configure-siem-windows-defender-advanced-threat-protection.md)
 - [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Configure Splunk to pull alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
+- [Configure Splunk](configure-splunk-windows-defender-advanced-threat-protection.md)
+- [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
+- [Pull Windows Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
