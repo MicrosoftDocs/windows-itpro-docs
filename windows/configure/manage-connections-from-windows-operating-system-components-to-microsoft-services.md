@@ -646,6 +646,37 @@ Use Settings &gt; Privacy to configure some settings that may be important to yo
 
 **General** includes options that don't fall into other areas.
 
+#### Windows 10, version 1703 options
+
+To turn off **Let apps use advertising ID to make ads more interesting to you based on your app usage (turning this off will reset your ID)**:
+
+> [!NOTE] 
+> When you turn this feature off in the UI, it turns off the advertising ID, not just resets it.
+
+-   Turn off the feature in the UI.
+
+    -or-
+
+-   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **User Profiles** &gt; **Turn off the advertising ID**.
+
+    -or-
+
+-   Create a REG\_DWORD registry setting called **Enabled** in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo**, with a value of 0 (zero).
+
+To turn off **Let websites provide locally relevant content by access my language list**:
+
+-   Turn off the feature in the UI.
+
+To turn off **Let Windows track app launches to improve Start and search results**:
+
+-   Turn off the feature in the UI.
+
+    -or-
+
+- Create a REG_DWORD registry setting called **Start_TrackProgs** with value of 0 (zero) in **HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced**
+
+#### Windows Server 2016 and Windows 10, version 1607 and earlier options
+
 To turn off **Let apps use my advertising ID for experiences across apps (turning this off will reset your ID)**:
 
 > [!NOTE] 
@@ -668,7 +699,7 @@ To turn off **Turn on SmartScreen Filter to check web content (URLs) that Window
     -or-
 
 -   In Windows Server 2016, apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge** &gt; **Configure SmartScreen Filter**.
-    In Windows 10, version 1703,apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge** &gt; **Configure Windows Defender SmartScreen Filter**.
+    In Windows 10, version 1703, apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge** &gt; **Configure Windows Defender SmartScreen Filter**.
 
     In Windows Server 2016, apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **File Explorer** &gt; **Configure Windows SmartScreen**.
     In Windows 10, version 1703 , apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **File Explorer** &gt; **Configure Windows Defender SmartScreen**.
