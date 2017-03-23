@@ -29,6 +29,7 @@ Organizations might want to deploy a customized Start and taskbar configuration 
 >Using the layout modification XML to configure Start is not supported with roaming user profiles. For more information, see [Deploy Roaming User Profiles](https://technet.microsoft.com/library/jj649079.aspx).
 
 
+
 ## Start options
 
 ![start layout sections](images/startannotated.png)

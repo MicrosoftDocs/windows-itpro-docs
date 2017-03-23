@@ -29,11 +29,13 @@ Windows Configuration Designer in Windows 10, version 1703, includes several new
 
 [Learn more about Windows Configuration Designer.](../configure/provisioning-packages.md)
 
+
 ### Bulk enrollment in Azure Active Directory
 
 Using the new wizards in Windows Configuration Designer, you can [create provisioning packages to enroll devices in Azure Active Directory](../configure/provisioning-packages.md#configuration-designer-wizards). Bulk enrollment in Azure AD is available in the desktop, mobile, kiosk, and Surface Hub wizards.
 
 ![get bulk token action in wizard](images/bulk-token.png) 
+
 
 ### Windows Spotlight
 
