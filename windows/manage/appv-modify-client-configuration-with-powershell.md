@@ -16,15 +16,15 @@ ms.prod: w10
 
 Use the following procedure to configure the App-V client configuration.
 
-1.  To configure the client settings using Windows PowerShell, use the **Set-AppvClientConfiguration** cmdlet. For more information about installing Windows PowerShell, and a list of cmdlets see, [How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help](appv-load-the-powershell-cmdlets-and-get-cmdlet-help.md).
+1.  To configure the client settings using Windows PowerShell, use the **Set-AppVClientConfiguration** cmdlet. For more information about installing Windows PowerShell, and a list of cmdlets see, [How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help](appv-load-the-powershell-cmdlets-and-get-cmdlet-help.md).
 
-2.  To modify the client configuration, open a Windows PowerShell Command prompt and run **Set-AppvClientConfiguration** with any required parameters. For example:
+2.  To modify the client configuration, open a Windows PowerShell Command prompt and run **Set-AppVClientConfiguration** with any required parameters. For example:
 
-    `$config = Get-AppvClientConfiguration`
+    `$config = Get-AppVClientConfiguration`
 
-    `Set-AppcClientConfiguration $config`
+    `Set-AppVClientConfiguration $config`
 
-    `Set-AppcClientConfiguration –Name1 MyConfig –Name2 “xyz”`
+    `Set-AppVClientConfiguration –Name1 MyConfig –Name2 “xyz”`
 
 
 ## Have a suggestion for App-V? 
