@@ -23,6 +23,14 @@ This topic provides an overview of new solutions and online content related to d
 - For an all-up overview of new features in Windows 10, see [What's new in Windows 10](https://technet.microsoft.com/itpro/windows/whats-new/index).
 - For a detailed list of changes to Windows 10 ITPro TechNet library content, see [Online content change history](#online-content-change-history).
 
+## Windows 10 Enterprise upgrade
+
+Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel on September 1, 2016. Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Enterprise to their users. With Windows 10 Enterprise E3 in CSP, small and medium-sized organizations can more easily take advantage of Windows 10 Enterprise features.
+
+For more information, see:
+
+- [Windows 10 Enterprise E3 in CSP Overview](windows-10-enterprise-e3-overview.md)
+
 ## Deployment solutions and tools
 
 ### MBR2GPT
@@ -80,6 +88,10 @@ For more information, see the following guides:
 - [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
 - [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)
 
+## Troubleshooting guidance
+
+[Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors) was published in October of 2016 and will continue to be updated with new fixes. The topic provides a detailed explanation of the Windows 10 upgrade process and information on how to interpret and resolve specific error codes.
+
 ## Online content change history
 
 The following topics provide a change history for Windows 10 ITPro TechNet library content related to deploying and using Windows 10.
@@ -95,5 +107,6 @@ The following topics provide a change history for Windows 10 ITPro TechNet libra
 <BR>[Windows 10 deployment considerations](../plan/windows-10-deployment-considerations.md)
 <BR>[Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info.aspx)
 <BR>[Windows 10 Specifications & Systems Requirements](https://www.microsoft.com/en-us/windows/windows-10-specifications)
+<BR>[Windows 10 upgrade paths](windows-10-upgrade-paths.md)
 
  
