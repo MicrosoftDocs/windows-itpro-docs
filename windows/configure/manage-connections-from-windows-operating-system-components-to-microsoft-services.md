@@ -50,6 +50,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
     - Enable Windows NTP client
     - Turn off Automatic download of the ActiveX VersionList
     - Allow Automatic Update of Speech Data
+    - Accounts: Block Microsoft Accounts
 
 ## <a href="" id="bkmk-othersettings"></a>Settings
 
@@ -448,7 +449,7 @@ To turn off the Windows Mail app:
 
 To prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways.
 
--   Change the **Start** REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\wlidsvc** to 4.
+-   Apply the Group Policy: **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt; **Security Options** &gt; **Accounts: Block Microsoft Accounts** and set it to **Users can't add Microsoft accounts**.
 
 To disable the Microsoft Account Sign-In Assistant:
 
