@@ -2,11 +2,9 @@ import json
 import requests
 from pprint import pprint
 
-tenant_id="{your tenant ID}"
-client_id="{your client ID}"
-client_secret="{your client secret}"
-
-auth_url = "https://login.windows.net/{0}/oauth2/token".format(tenant_id)
+auth_url="Your Authorization URL"
+client_id="Your Client ID"
+client_secret="Your Client Secret"
 
 payload = {"resource": "https://graph.windows.net",
            "client_id": client_id,

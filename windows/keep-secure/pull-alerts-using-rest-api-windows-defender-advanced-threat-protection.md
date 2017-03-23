@@ -187,3 +187,9 @@ HTTP error code | Description
 401 | Malformed request or invalid token.
 403 | Unauthorized exception - any of the domains is not managed by the tenant administrator or tenant state is deleted.
 500 | Error in the service.
+
+## Related topics
+- [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
+- [Configure Splunk](configure-splunk-windows-defender-advanced-threat-protection.md)
+- [Configure ArcSight](configure-arcsight-windows-defender-advanced-threat-protection.md)
+- [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
