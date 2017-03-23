@@ -52,8 +52,8 @@ Provisioning packages can include management instructions and policies, installa
 
 > [!TIP]
 > Use the desktop wizard to create a package with the common settings, then switch to the advanced editor to add other settings, apps, policies, etc.
-
-![open advanced editor](images/icd-simple-edit.png)
+>
+>![open advanced editor](images/icd-simple-edit.png)
 
 ## Create the provisioning package
 
