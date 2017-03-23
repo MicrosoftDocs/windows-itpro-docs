@@ -81,5 +81,5 @@ This step will guide you in exploring the custom alert in the portal.
 
     ![Image of sample custom ti alert in the portal](images/atp-sample-custom-ti-alert.png)
 
-    > [!NOTE]
-    > It can take up to 15 minutes for the alert to appear in the portal.
+> [!NOTE]
+> It can take up to 15 minutes for the alert to appear in the portal.
