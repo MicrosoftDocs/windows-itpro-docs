@@ -48,6 +48,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
     - Specify Intranet Microsoft update service location
     - Enable Windows NTP client
     - Turn off Automatic download of the ActiveX VersionList
+    - Allow Automatic Update of Speech Data
 
 ## <a href="" id="bkmk-othersettings"></a>Settings
 
@@ -868,6 +869,9 @@ To turn off the functionality:
 
 -  Create a REG\_DWORD registry setting called **HarvestContacts** in **HKEY\_CURRENT\_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\TrainedDataStore**, with a value of 0 (zero).
 
+If you're running at least Windows 10, version 1703, you can turn off updates to the speech recognition and speech synthesis models:
+
+- Disable the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Speech** > **Allow automatically update of Speech Data**
 
 If you're running at least Windows 10, version 1607, you can turn off updates to the speech recognition and speech synthesis models:
 
