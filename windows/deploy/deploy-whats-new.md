@@ -90,7 +90,7 @@ For more information, see the following guides:
 
 ## Troubleshooting guidance
 
-[Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors) was published in October of 2016 and will continue to be updated with new fixes. The topic provides a detailed explanation of the Windows 10 upgrade process and information on how to interpret and resolve specific error codes.
+[Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) was published in October of 2016 and will continue to be updated with new fixes. The topic provides a detailed explanation of the Windows 10 upgrade process and instructions on how to locate, interpret, and resolve specific errors that can be encountered during the upgrade process.
 
 ## Online content change history
 
