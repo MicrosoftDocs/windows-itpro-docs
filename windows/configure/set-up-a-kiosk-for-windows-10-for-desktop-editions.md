@@ -425,7 +425,9 @@ For a more secure kiosk experience, we recommend that you make the following con
     >To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
 
  
+## Related topics
 
+- [Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
 
 
 
