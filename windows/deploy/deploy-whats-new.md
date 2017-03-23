@@ -33,6 +33,25 @@ For more information, see:
 
 ## Deployment solutions and tools
 
+### Upgrade Readiness
+
+The Upgrade Readiness tool moved from public preview to general availability on March 2, 2017. 
+
+Upgrade Readiness helps you ensure that applications and drivers are ready for a Windows 10 upgrade. The solution provides up-to-date application and driver inventory, information about known issues, troubleshooting guidance, and per-device readiness and tracking details. To use Upgrade Readiness, add it to an existing Operation Management Suite (OMS) workspace or sign up for a new OMS workspace with the Upgrade Readiness solution enabled.
+
+The development of Upgrade Readiness has been heavily influenced by input from the community the development of new features is ongoing. For more information about Upgrade Readiness, see the following topics:
+
+- [Windows Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/)
+- [Manage Windows upgrades with Upgrade Readiness](manage-windows-upgrades-with-upgrade-readiness.md)
+
+### Update Compliance
+
+Update Compliance helps you to keep Windows 10 devices in your organization secure and up-to-date.
+
+Update Compliance is a solution built using OMS Logs and Analytics that provides information about installation status of monthly quality and feature updates. Details are provided about the deployment progress of existing updates and the status of future updates. Information is also provided about devices that might need attention to resolve issues.
+
+For more information about Update Compliance, see [Monitor Windows Updates with Update Compliance](../manage/update-compliance-monitor.md).
+
 ### MBR2GPT
 
 MBR2GPT.EXE converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. Previously, it was necessary to image, then wipe and reload a disk to change from MBR format to GPT. 
@@ -56,25 +75,6 @@ The Windows Assessment and Deployment Kit (Windows ADK) contains tools that can 
 
 - [What's new in ADK kits and tools](https://msdn.microsoft.com/windows/hardware/commercialize/what-s-new-in-kits-and-tools)
 - [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md)
-
-### Upgrade Readiness
-
-The Upgrade Readiness tool moved from public preview to general availability on March 2, 2017. 
-
-Upgrade Readiness helps you ensure that applications and drivers are ready for a Windows 10 upgrade. The solution provides up-to-date application and driver inventory, information about known issues, troubleshooting guidance, and per-device readiness and tracking details. To use Upgrade Readiness, add it to an existing Operation Management Suite (OMS) workspace or sign up for a new OMS workspace with the Upgrade Readiness solution enabled.
-
-The development of Upgrade Readiness has been heavily influenced by input from the community the development of new features is ongoing. For more information about Upgrade Readiness, see the following topics:
-
-- [Windows Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/)
-- [Manage Windows upgrades with Upgrade Readiness](manage-windows-upgrades-with-upgrade-readiness.md)
-
-### Update Compliance
-
-Update Compliance helps you to keep Windows 10 devices in your organization secure and up-to-date.
-
-Update Compliance is a solution built using OMS Logs and Analytics that provides information about installation status of monthly quality and feature updates. Details are provided about the deployment progress of existing updates and the status of future updates. Information is also provided about devices that might need attention to resolve issues.
-
-For more information about Update Compliance, see [Monitor Windows Updates with Update Compliance](../manage/update-compliance-monitor.md).
 
 ## Testing and validation guidance
 
