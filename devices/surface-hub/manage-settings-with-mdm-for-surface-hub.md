@@ -69,9 +69,19 @@ For more information, see [SurfaceHub configuration service provider](https://ms
 | Connect to your Operations Management Suite workspace | MOMAgent/WorkspaceID <br> MOMAgent/WorkspaceKey | Yes | Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Welcome screen background image | InBoxApps/Welcome/CurrentBackgroundPath | Yes | Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Meeting information displayed on the welcome screen | InBoxApps/Welcome/MeetingInfoOption | Yes | Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Friendly name for wireless projection | Properties/FriendlyName | Yes. <br> [Use a custom policy.](#example-intune)) | Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+| Friendly name for wireless projection | Properties/FriendlyName | Yes <br> [Use a custom policy.](#example-intune)) | Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Device account, including password rotation | DeviceAccount/*`<name_of_policy>`* <br> See [SurfaceHub CSP](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). | No | No | Yes |
-\*Settings supported with SyncML can also be configured in a Windows Imaging and Configuration Designer (Windows ICD) provisioning package.
+| Specify Skype domain | InBoxApps/SkypeForBusiness/DomainName | Yes </br> [Use a custom policy.](#example-intune)) | Yes<br> [Use a custom setting.] Yes |
+| Auto launch Connect App when projection is initiated | InBoxApps/Connect/AutoLaunch | Yes </br> [Use a custom policy.](#example-intune)) | Yes<br> [Use a custom setting.] Yes |
+| Set default volume | Properties/DefaultVolume | Yes </br> [Use a custom policy.](#example-intune)) | Yes<br> [Use a custom setting.] Yes |
+| Set screen timeout | Properties/ScreenTimeout | Yes </br> [Use a custom policy.](#example-intune)) | Yes<br> [Use a custom setting.] Yes |
+| Set session timeout | Properties/SessionTimeout | Yes </br> [Use a custom policy.](#example-intune)) | Yes<br> [Use a custom setting.] Yes |
+| Set sleep timeout | Properties/SleepTimeout | Yes </br> [Use a custom policy.](#example-intune)) | Yes<br> [Use a custom setting.] Yes |
+| Allow session to resume after screen is idle | Properties/AllowSessionResume | Yes </br> [Use a custom policy.](#example-intune)) | Yes<br> [Use a custom setting.] Yes |
+| Allow device account to be used for proxy authentication | Properties/AllowAutoProxyAuth | Yes </br> [Use a custom policy.](#example-intune)) | Yes<br> [Use a custom setting.] Yes |
+| Disable auto-populating the sign-in dialog with invitees from scheduled meetings | Properties/DisableSignInSuggestions | Yes </br> [Use a custom policy.](#example-intune)) | Yes<br> [Use a custom setting.] Yes |
+| Disable "My meetings and files" feature in Start menu | Properties/DoNotShowMyMeetingsAndFiles | Yes </br> [Use a custom policy.](#example-intune)) | Yes<br> [Use a custom setting.] Yes |
+\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package. 
 
 ### Supported Windows 10 settings
 
@@ -87,7 +97,7 @@ The following tables include info on Windows 10 settings that have been validate
 | Allow camera | Keep this enabled for Skype for Business. | [Camera/AllowCamera](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Camera_AllowCamera) | Yes. <br> Use a custom policy. | Yes.<br> Use a custom setting. | Yes |
 | Allow location | Keep this enabled to support apps such as Maps. | [System/AllowLocation](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#System_AllowLocation) | Yes. <br> Use a custom policy. | Yes.<br> Use a custom setting. | Yes |
 | Allow telemetry | Keep this enabled to help Microsoft improve Surface Hub. | [System/AllowTelemetry](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#System_AllowTelemetry) | Yes. <br> Use a custom policy. | Yes.<br> Use a custom setting. | Yes |
-\*Settings supported with SyncML can also be configured in a Windows Imaging and Configuration Designer (Windows ICD) provisioning package.
+\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 #### Browser settings
 
@@ -102,7 +112,7 @@ The following tables include info on Windows 10 settings that have been validate
 | Allow SmartScreen | Keep this enabled to turn on SmartScreen. | [Browser/AllowSmartScreen](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowSmartScreen) | Yes. <br> Use a custom policy. | Yes. <br> Use a custom setting. | Yes |
 | Prevent ignoring SmartScreen Filter warnings for websites | For extra security, use to stop users from ignoring SmartScreen Filter warnings and block them from accessing potentially malicious websites. | [Browser/PreventSmartScreenPromptOverride](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverride) | Yes. <br> Use a custom policy. | Yes. <br> Use a custom setting. | Yes |
 | Prevent ignoring SmartScreen Filter warnings for files | For extra security, use to stop users from ignoring SmartScreen Filter warnings and block them from downloading unverified files from Microsoft Edge. | [Browser/PreventSmartScreenPromptOverrideForFiles](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverrideForFiles) | Yes. <br> Use a custom policy. | Yes. <br> Use a custom setting. | Yes |
-\*Settings supported with SyncML can also be configured in a Windows Imaging and Configuration Designer (Windows ICD) provisioning package.
+\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 #### Windows Update settings
 
@@ -115,7 +125,7 @@ The following tables include info on Windows 10 settings that have been validate
 | Pause quality updates | See above. | [Update/PauseQualityUpdates](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_PauseQualityUpdates) | Yes. <br> Use a custom policy. | Yes. <br> Use a custom setting. | Yes|
 | Configure device to use WSUS| Use to connect your Surface Hub to WSUS instead of Windows Update – see [Windows updates](manage-windows-updates-for-surface-hub.md). | [Update/UpdateServiceUrl](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_UpdateServiceUrl) | Yes. <br> Use a custom policy. | Yes. <br> Use a custom setting. | Yes |
 | Delivery optimization | Use peer-to-peer content sharing to reduce bandwidth issues during updates. See [Configure Delivery Optimization for Windows 10](https://technet.microsoft.com/itpro/windows/manage/waas-delivery-optimization) for details. | DeliveryOptimization/*`<name of policy>`* <br> See [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) | Yes. <br> Use a custom policy. | Yes. <br> Use a custom setting. | Yes |
-\*Settings supported with SyncML can also be configured in a Windows Imaging and Configuration Designer (Windows ICD) provisioning package.
+\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 #### Windows Defender settings
 
@@ -123,7 +133,7 @@ The following tables include info on Windows 10 settings that have been validate
 | ----------- | ---------------- | ------------- |-------------------------- | ---------------------------------------- | ------------------------- |
 | Defender policies | Use to configure various Defender settings, including a scheduled scan time. | Defender/*`<name of policy>`* <br> See [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) | Yes. <br>  Use a custom policy. | Yes. <br> Use a custom setting. | Yes |
 | Defender status | Use to initiate a Defender scan, force a signature update, query any threats detected. | [Defender CSP](https://msdn.microsoft.com/library/windows/hardware/mt187856.aspx) | No. | No. | Yes |
-\*Settings supported with SyncML can also be configured in a Windows Imaging and Configuration Designer (Windows ICD) provisioning package.
+\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 #### Remote reboot
 
@@ -132,7 +142,7 @@ The following tables include info on Windows 10 settings that have been validate
 | Reboot the device immediately | Use in conjunction with OMS to minimize support costs – see [Monitor your Microsoft Surface Hub](monitor-surface-hub.md). | ./Vendor/MSFT/Reboot/RebootNow <br> See [Reboot CSP](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx) | No | No | Yes |
 | Reboot the device at a scheduled date and time | See above. | ./Vendor/MSFT/Reboot/Schedule/Single <br> See [Reboot CSP](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx) | Yes. <br> Use a custom policy. | Yes. <br> Use a custom setting. | Yes |
 | Reboot the device daily at a scheduled date and time | See above. | ./Vendor/MSFT/Reboot/Schedule/DailyRecurrent <br> See [Reboot CSP](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx) | Yes. <br> Use a custom policy. | Yes. <br> Use a custom setting. | Yes |
-\*Settings supported with SyncML can also be configured in a Windows Imaging and Configuration Designer (Windows ICD) provisioning package.
+\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 #### Install certificates
 
@@ -142,7 +152,7 @@ The following tables include info on Windows 10 settings that have been validate
 <!--
 | Install client certificates  | Use to deploy Personal Information Exchange (.pfx, .p12) certificates. | [ClientCertificateInstall CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023.aspx) | Yes. <br> See [How to Create and Deploy PFX Certificate Profiles in Intune Standalone](https://blogs.technet.microsoft.com/karanrustagi/2016/03/16/want-to-push-a-certificate-to-device-but-cant-use-ndes-continue-reading/). | Yes. <br> See [How to create PFX certificate profiles in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/create-pfx-certificate-profiles). | Yes |
 -->
-\*Settings supported with SyncML can also be configured in a Windows Imaging and Configuration Designer (Windows ICD) provisioning package.
+\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 #### Collect logs
 
@@ -151,7 +161,7 @@ The following tables include info on Windows 10 settings that have been validate
 | Collect ETW logs | Use to remotely collect ETW logs from Surface Hub. | [DiagnosticLog CSP](https://msdn.microsoft.com/library/windows/hardware/mt219118.aspx) | No | No | Yes |
 <!--
 | Collect security auditing logs | Use to remotely collect security auditing logs from Surface Hub. | SecurityAuditing node in [Reporting CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt608321.aspx) | No | No | Yes |-->
-\*Settings supported with SyncML can also be configured in a Windows Imaging and Configuration Designer (Windows ICD) provisioning package.
+\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 ### Generate OMA URIs for settings 
 You need to use a setting’s OMA URI to create a custom policy in Intune, or a custom setting in System Center Configuration Manager.
@@ -252,7 +262,7 @@ For more information, see [Create configuration items for Windows 8.1 and Window
 
 [Manage Microsoft Surface Hub](manage-surface-hub.md)
 
-[Microsoft Surface Hub administrator's guide](surface-hub-administrators-guide.md)
+
 
  
 
