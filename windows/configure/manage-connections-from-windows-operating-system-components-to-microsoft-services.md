@@ -39,6 +39,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
 - Added instructions for removing the Sticky Notes app.
 - Added registry paths for some Group Policies
 - Added the Find My Device section
+- Added the Tasks section
 
 - Added the following Group Policies:
 
@@ -101,6 +102,7 @@ See the following table for a summary of the management settings for Windows 10 
 | &nbsp;&nbsp;&nbsp;&nbsp;[17.15 Feedback & diagnostics](#bkmk-priv-feedback) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[17.16 Background apps](#bkmk-priv-background) | ![Check mark](images/checkmark.png) | | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[17.17 Motion](#bkmk-priv-motion) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.18 Tasks](#bkmk-priv-tasks) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [18. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [19. Sync your settings](#bkmk-syncsettings) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [20. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -740,6 +742,8 @@ Use Settings &gt; Privacy to configure some settings that may be important to yo
 
 -   [17.17 Motion](#bkmk-priv-motion)
 
+-   [17.18 Tasks](#bkmk-priv-tasks)
+
 ### <a href="" id="bkmk-general"></a>17.1 General
 
 **General** includes options that don't fall into other areas.
@@ -1336,6 +1340,19 @@ To turn off **Let Windows and your apps use your motion data and collect motion 
    -or-
 
 -   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessMotion**, with a value of 2 (two).
+
+### <a href="" id="bkmk-priv-tasks"></a>17.18 Tasks
+
+In the **Tasks** area, you can choose which apps have access to your tasks.
+
+To turn this off:
+
+-   Turn off the feature in the UI.
+
+     -or-
+
+-   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access Tasks**
+
 
 ### <a href="" id="bkmk-spp"></a>18. Software Protection Platform
 
