@@ -18,6 +18,9 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |---------------------|------------|
 |[Protect derived domain credentials with Credential Guard](credential-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
 |[Requirements and deployment planning guidelines for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
+|[Windows Defender SmartScreen overview](windows-defender-smartscreen-overview.md)|New |
+|[Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md)|New |
+|[Use Windows Defender Security Center to set Windows Defender SmartScreen for individual devices](windows-defender-smartscreen-set-individual-device.md)|New |
 
 
 ## February 2017
