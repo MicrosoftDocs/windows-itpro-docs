@@ -130,7 +130,7 @@ Numerous settings have been added to the Windows 10 CSPs to expand MDM capabilit
 
 ### Shared PC mode
 
-Windows 10, Version 1607, introduces shared PC mode, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Education, and Enterprise. [Learn how to set up a shared or guest PC.](../manage/set-up-shared-or-guest-pc.md)
+Windows 10, Version 1607, introduces shared PC mode, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Education, and Enterprise. [Learn how to set up a shared or guest PC.](../configure/set-up-shared-or-guest-pc.md)
 
 ### Application Virtualization (App-V) for Windows 10
 
