@@ -51,6 +51,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
     - Turn off Automatic download of the ActiveX VersionList
     - Allow Automatic Update of Speech Data
     - Accounts: Block Microsoft Accounts
+    - Do not use diagnostic data for tailored experiences
 
 ## <a href="" id="bkmk-othersettings"></a>Settings
 
@@ -1250,12 +1251,7 @@ To change how frequently **Windows should ask for my feedback**:
 
 To change the level of diagnostic and usage data sent when you **Send your device data to Microsoft**:
 
--   To change from **Enhanced**, use the drop-down list in the UI. The other levels are **Basic** and **Full**.
-
-    > [!NOTE] 
-    > You can't use the UI to change the telemetry level to **Security**.
-
-     
+-   Click either the **Basic** or **Full** options.
 
    -or-
 
@@ -1288,6 +1284,14 @@ To change the level of diagnostic and usage data sent when you **Send your devic
     -   **2**. Maps to the **Enhanced** level.
 
     -   **3**. Maps to the **Full** level.
+
+To turn off tailored experiences with relevant tips and recommendations by using your diagnostics data:
+
+- Turn off the feature in the UI.
+
+    -or-
+
+- Apply the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Cloud Content** > **Do not use diagnostic data for tailored experiences**
 
 ### <a href="" id="bkmk-priv-background"></a>16.16 Background apps
 
