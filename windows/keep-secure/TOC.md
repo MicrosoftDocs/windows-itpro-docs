@@ -781,6 +781,7 @@
 ##### [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
 ##### [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
 ##### [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
+##### [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
 ##### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
 #### [Check sensor state](check-sensor-status-windows-defender-advanced-threat-protection.md)
 ##### [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
