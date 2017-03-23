@@ -25,7 +25,7 @@ localizationpriority: high
 
 You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) on individual endpoints.
 
-For example, if endpoints are not appearing in the **Machines view** list, you might need to look for event IDs on the endpoints. You can then use this table to determine further troubleshooting steps.
+For example, if endpoints are not appearing in the **Machines list** list, you might need to look for event IDs on the endpoints. You can then use this table to determine further troubleshooting steps.
 
 > [!NOTE]
 > It can take several days for endpoints to begin reporting to the Windows Defender ATP service.

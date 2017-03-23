@@ -1,8 +1,6 @@
-$tenantId = '{Your Tenant ID}'
-$clientId = '{Your Client ID}'
-$clientSecret = '{Your Client Secret}'
-
-$authUrl = "https://login.windows.net/{0}/oauth2/token" -f $tenantId
+$authUrl = 'Your Authorization URL'
+$clientId = 'Your Client ID'
+$clientSecret = 'Your Client Secret'
 
 $tokenPayload = @{
     "resource"='https://graph.windows.net'
