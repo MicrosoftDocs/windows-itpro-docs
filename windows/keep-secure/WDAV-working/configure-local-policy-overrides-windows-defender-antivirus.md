@@ -12,7 +12,7 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Prevent or allow users to locally modify policy settings
+# Prevent or allow users to locally modify Windows Defender AV policy settings
 
 **Applies to:**
 
@@ -27,7 +27,7 @@ author: iaanw
 - Group Policy
 
 
-By default, settings that are deployed via a Group Policy Object to the endpoints in your network will prevent users from locally changing the settings. You can change this in some instances. 
+By default, Windows Defender AV settings that are deployed via a Group Policy Object to the endpoints in your network will prevent users from locally changing the settings. You can change this in some instances. 
 
 For example, it may be necessary to allow certain user groups (such as security researchers and threat investigators) further control over individual settings on the endpoints they use.
 

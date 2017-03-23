@@ -45,6 +45,19 @@ In earlier versions of Windows 10, the setting will hide the Windows Defender cl
 
 ![Warning message when headless mode is enabled in Windows 10, versions earlier than 1703 that says Your system administrator has restricted access to this app](images/defender/wdav-headless-mode-1607.png)
 
+**Use Group Policy to hide the Windows Defender AV interface from users:**
+
+1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+
+3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+
+4.  Click **Policies** then **Administrative templates**.
+
+5.  Expand the tree to **Windows components > Windows Defender Antivirus > Client interface**.
+
+6. Double-click the **Enable headless UI mode** setting and set the option to **Enabled**. Click **OK**. 
+
+
 Also see the [Prevent users from locally modifying policy settings](configure-local-policy-overrides-windows-defender-antivirus.md) topic for more options on preventing users form modifying protection on their PCs.
 
 ## Prevent users from pausing a scan
@@ -52,7 +65,7 @@ Also see the [Prevent users from locally modifying policy settings](configure-lo
 You can prevent users from pausing scans. This can be helpful to ensure scheduled or on-demand scans are not interrupted by users.
 
 
-**Use Group Policy to hide the prevent users from pausing a scan:**
+**Use Group Policy to prevent users from pausing a scan:**
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 

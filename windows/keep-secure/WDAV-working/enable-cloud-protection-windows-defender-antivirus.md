@@ -12,7 +12,7 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Enable cloud-delivered protection
+# Enable cloud-delivered protection in Windows Defender AV
 
 
 
@@ -39,7 +39,7 @@ author: iaanw
 
 
 
-You can enable or disable cloud-delivered protection with Group Policy, System Center Configuration Manager, PowerShell cmdlets, Microsoft Intune, or on individual clients in the Windows Defender Security Center app.
+You can enable or disable Windows Defender Antivirus cloud-delivered protection with Group Policy, System Center Configuration Manager, PowerShell cmdlets, Microsoft Intune, or on individual clients in the Windows Defender Security Center app.
 
 See [Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for an overview of Windows Defender Antivirus cloud-based protection.
 

@@ -113,7 +113,7 @@ This section describes how to perform some of the most common tasks when reviewi
 
 
 
-
+<a id="exclusions"></a>
 **Add exclusions for Windows Defender Antivirus in the Windows Defender Security Center app**
 1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
