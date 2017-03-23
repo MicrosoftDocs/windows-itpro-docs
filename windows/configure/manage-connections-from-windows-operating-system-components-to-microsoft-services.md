@@ -35,6 +35,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
 
 - Added an MDM policy for Font streaming.
 - Added an MDM policy for Network Connection Status Indicator.
+- Added an MDM policy for the Micosoft Account Sign-In Assistant.
 
 - Added the following Group Policies:
 
@@ -50,7 +51,7 @@ If you're running Windows 10, they will be included in the next update for the L
 
 ### Settings for Windows 10 Enterprise, version 1703
 
-See the following table for a summary of the management settings for Windows 10 Enterprise, version 1607.
+See the following table for a summary of the management settings for Windows 10 Enterprise, version 1703.
 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
@@ -379,6 +380,10 @@ To turn off the Windows Mail app:
 To prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways.
 
 -   Change the **Start** REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\wlidsvc** to 4.
+
+To disable the Microsoft Account Sign-In Assistant:
+
+- Apply the Accounts/AllowMicrosoftAccountSignInAssistant MDM policy from the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is turned off and 1 is turned on.
 
 
 ### <a href="" id="bkmk-edge"></a>11. Microsoft Edge
