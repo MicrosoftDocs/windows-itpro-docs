@@ -1296,8 +1296,12 @@ In the **Background Apps** area, you can choose which apps can run in the backgr
 To turn off **Let apps run in the background**:
 
 -   Turn off the feature in the UI for each app.
+    
+     -or-
 
-    -   Set the **Select a setting** box to **Force Deny**.
+-   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps run in background**
+
+        -   Set the **Select a setting** box to **Force Deny**.
 
 ### <a href="" id="bkmk-priv-motion"></a>16.17 Motion
 
