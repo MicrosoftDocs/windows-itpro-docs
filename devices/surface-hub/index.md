@@ -12,7 +12,7 @@ localizationpriority: medium
 
 # Microsoft Surface Hub
 
->[Looking for the user's guide for Surface Hub?](https://www.microsoft.com/surface/support/surface-hub)
+>[Looking for the user's guide for Surface Hub?](http://download.microsoft.com/download/3/6/B/36B6331E-0C63-4E71-A05D-EE88D05081F8/surface-hub-user-guide-en-us.pdf)
 
 <table><tr><td style="border: 0px;width: 75%;valign= top">Microsoft Surface Hub is an all-in-one productivity device that is intended for brainstorming, collaboration, and presentations. In order to get the maximum benefit from Surface Hub, your organization’s infrastructure and the Surface Hub itself must be properly set up and integrated. The documentation in this library describes what needs to be done both before and during setup in order to help you optimize your use of the device.</td><td align="left" style="border: 0px">![image of a Surface Hub](images/surfacehub.png) </td></tr></table>
  
