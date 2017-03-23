@@ -841,7 +841,7 @@ To turn off **Let apps access my notifications**:
 
    -or-
 
--   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access my notifications**
+-   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access notifications**
 
     -   Set the **Select a setting** box to **Force Deny**.
 
@@ -1118,7 +1118,7 @@ Enterprise customers can manage their Windows activation status with volume lice
 
 For Windows 10:
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client AVS Validation**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Validation**
 
     -or-
 
@@ -1126,7 +1126,7 @@ For Windows 10:
 
 For Windows Server 2016 with Desktop Experience or Windows Server 2016 Server Core:
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client AVS Validation**
+- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Validation**
 
 The Windows activation status will be valid for a rolling period of 180 days with weekly activation status checks to the KMS.
 
@@ -1296,7 +1296,7 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
 
          
 
-    -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Do not show Windows Tips**.
+    -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Do not show Windows tips**.
 
     -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Turn off Microsoft consumer experiences**.
 
