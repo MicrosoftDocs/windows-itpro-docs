@@ -29,7 +29,7 @@ MBR2GPT.EXE converts a disk from Master Boot Record (MBR) to GUID Partition Tabl
 
 There are many benefits to converting the partition style of a disk to GPT, including the use of larger disk partitions, added data reliability, and faster boot and shutdown speeds. The GPT format also enables you to use the Unified Extensible Firmware Interface (UEFI) which replaces the Basic Input/Output System (BIOS) firmware interface.  Security features of Windows 10 that require UEFI mode include: Secure Boot, Early Launch Anti-malware (ELAM) driver, Windows Trusted Boot, Measured Boot, Device Guard, Credential Guard, and BitLocker Network Unlock.
 
-For more information, see [MBR2GPT.EXE](mbr-to-gpt).
+For more information, see [MBR2GPT.EXE](mbr-to-gpt.md).
 
 ### Microsoft Deployment Toolkit (MDT)
 
@@ -49,7 +49,7 @@ Upgrade Readiness helps you ensure that applications and drivers are ready for a
 The development of Upgrade Readiness has been heavily influenced by input from the community the development of new features is ongoing. For more information about Upgrade Readiness, see the following topics:
 
 - [Windows Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/)
-- [Manage Windows upgrades with Upgrade Readiness](manage-windows-upgrades-with-upgrade-readiness)
+- [Manage Windows upgrades with Upgrade Readiness](manage-windows-upgrades-with-upgrade-readiness.md)
 
 ### Update Compliance
 
@@ -68,8 +68,8 @@ The Windows 10 PoC guide enables you to test Windows 10 deployment in a virtual 
 For more information, see the following guides:
 
 - [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md)
-- [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt)
-- [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr)
+- [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
+- [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)
 
 ## Online content change history
 
