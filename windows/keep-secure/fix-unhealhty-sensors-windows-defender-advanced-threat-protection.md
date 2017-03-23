@@ -36,7 +36,7 @@ If the machine has not been in use for more than 7 days for any reason, it will 
 A reinstalled or renamed machine will generate a new machine entity in Windows Defender ATP portal. The previous machine entity will remain with an ‘Inactive’ status in the portal. If you reinstalled a machine and deployed the Windows Defender ATP package, search for the new machine name to verify that the machine is reporting normally.
 
 **Machine was offboarded**</br>
-If the machine was offboarded it will still appear in machines view. After 7 days, the machine health state should change to inactive.
+If the machine was offboarded it will still appear in machines list. After 7 days, the machine health state should change to inactive.
 
 Do you expect a machine to be in ‘Active’ status? [Open a CSS ticket](https://support.microsoft.com/en-us/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
 
