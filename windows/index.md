@@ -9,7 +9,6 @@ author: brianlic-msft
 
 # Windows 10 and Windows 10 Mobile
 
-
 This library provides the core content that IT pros need to evaluate, plan, deploy, secure and manage devices running Windows 10 or Windows 10 Mobile.
 
 <center><iframe src="https://channel9.msdn.com/Events/Ignite/Australia-2017/WIN212/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center>
@@ -51,7 +50,7 @@ This library provides the core content that IT pros need to evaluate, plan, depl
       </a>
       <br/>Keep Secure
     </td>
-    <td style="width:25%; border:0;" style='background-color: yellow;'>
+    <td style="width:25%; border:0;">
       <br/>
       <a href="https://technet.microsoft.com/en-us/itpro/windows/configure/index">
         <img src="images/W10-configure.png" alt="Configure Windows 10 in your enterprise" title="Configure Windows 10" />
@@ -77,8 +76,8 @@ This library provides the core content that IT pros need to evaluate, plan, depl
 
 <br/>
 
-## Get to know Windows as a Service (WaaS)
-<table width=100%>
+# Get to know Windows as a Service (WaaS)
+<table border="0" width="100%" align='center'>
 <tr>
   <td valign=top width=60%>The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers.
 
@@ -89,7 +88,7 @@ This library provides the core content that IT pros need to evaluate, plan, depl
   * [Download the WaaS infographic]()
 
   </td>
-  <td width=40%><center><img style='border:thin silver solid' src="images/w10-WaaS-poster.png" alt="Get your " title="What's new in Windows 10" /></center></td>
+  <td width=40%><center><img style='border:thin silver solid' src="images/w10-WaaS-poster.png" alt="Get to know Windows as a Service (WaaS) " title="Get to know Windows as a Service (WaaS)" /></center></td>
 </tr>
 <table>
 
