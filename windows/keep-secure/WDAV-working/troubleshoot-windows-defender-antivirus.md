@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
-author: iawilt
+author: iaanw
 ---
 
 # Review event logs and error codes to troubleshoot issues with Windows Defender AV

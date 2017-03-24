@@ -9,7 +9,7 @@ ms.mktglfcycl: detect
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
-author: iawilt
+author: iaanw
 ---
 
 # Detect and block Potentially Unwanted Applications

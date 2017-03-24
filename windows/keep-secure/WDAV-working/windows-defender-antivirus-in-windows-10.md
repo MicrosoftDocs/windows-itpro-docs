@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
-author: iawilt
+author: iaanw
 ---
 
 # Windows Defender Antivirus in Windows 10
