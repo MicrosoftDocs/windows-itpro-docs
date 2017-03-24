@@ -106,13 +106,9 @@ Windows Update for Business was first made available in Windows 10, version 1511
 
 ## Monitor Windows Updates using Update Compliance
 
-In order to track Windows updates deployed by Windows Update for Business, and make sure that all your machines are up to date, you can levergae Update Compliance.
+Update Compliance, now **available in public preview**, provides a holistic view of OS update compliance, update deployment progress, and failure troubleshooting for Windows 10 devices. This new service uses telemetry data including installation progress, Windows Update configuration, and other information to provide such insights, at no extra cost and without additional infrastructure requirements. Whether used with Windows Update for Business or other management tools, you can be assured that your devices are properly updated.
 
-Update Compliance is a solution built within Operations Management Suite (OMS), a cloud-based monitoring and automation service which has a flexible servicing subscription based off data usage/retention. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
-
-Update Compliance uses the Windows telemetry that is part of all Windows 10 devices. It collects system data including update installation progress, Windows Update for Business (WUfB) configuration data, and other update-specific information, and then sends this data privately to a secure cloud to be stored for analysis and usage within the solution.
-
-![OS Update Overview](images/uc-11.png)
+![Update Compliance Dashboard](images/waas-wufb-update-compliance.png)
 
 For more information about Update Compliance, see [Monitor Windows Updates using Update Compliance](update-compliance-monitor.md).
 
