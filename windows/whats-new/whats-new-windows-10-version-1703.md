@@ -1,5 +1,5 @@
 ---
-title: What's new in Windows 10, version 1703 (Windows 10)
+title: New IT Pro content for Windows 10, version 1703
 description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 keywords: ["What's new in Windows 10", "Windows 10", "creators update"]
 ms.prod: w10
@@ -10,9 +10,11 @@ localizationpriority: high
 ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
 ---
 
-# What's new in Windows 10, version 1703
+# New IT Pro content for Windows 10, version 1703
 
-Below is a list of some of the new and updated features in Windows 10, version 1703 (also known as the Creators Update).
+Below is a list of some of the new and updated content that discusses Information Technology (IT) Pro features in Windows 10, version 1703 (also known as the Creators Update).
+
+For more general info about Windows 10 features, see [Features available only on Windows 10](https://www.microsoft.com/windows/features).
 
 >[!NOTE]
 >For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
@@ -174,7 +176,11 @@ To check out all the details, see [Configure Delivery Optimization for Windows 1
 ### Application Virtualization for Windows (App-V)
 Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10, version 1703 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Addtionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically cleanup your unpublished packages after a device restart.
 
-To see info about these updates, see [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-provision-a-vm.md), [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-batch-sequencing.md), [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-batch-updating.md), and [Automatically cleanup unpublished packages on the App-V client](../manage/appv-auto-clean-unpublished-packages.md)
+For more info, see the following topics:
+- [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-provision-a-vm.md)
+- [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-batch-sequencing.md)
+- [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-batch-updating.md)
+- [Automatically cleanup unpublished packages on the App-V client](../manage/appv-auto-clean-unpublished-packages.md)
 
 ## Related topics
 
