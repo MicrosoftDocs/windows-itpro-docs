@@ -53,7 +53,7 @@ This library provides the core content that IT pros need to evaluate, plan, depl
     </td>
     <td style="width:25%; border:0;" style='background-color: yellow;'>
       <br/>
-      <a href="./configure/index">
+      <a href="https://technet.microsoft.com/en-us/itpro/windows/configure/index">
         <img src="images/W10-configure.png" alt="Configure Windows 10 in your enterprise" title="Configure Windows 10" />
       </a>
       <br/>Configure
@@ -80,10 +80,10 @@ This library provides the core content that IT pros need to evaluate, plan, depl
 ## Get to know Windows as a Service (WaaS)
 <table width=100%>
 <tr>
-  <td valign=top width=60%>The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers. 
-  
-  These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time. 
-  
+  <td valign=top width=60%>The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers.
+
+  These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time.
+
 
   * [Read more about Windows as a Service]()
   * [Download the WaaS infographic]()
