@@ -17,6 +17,9 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 ## March 2017
 | New or changed topic | Description |
 |----------------------|-------------|
+| [What's new in Windows 10 deployment](deploy-whats-new.md) | New | 
+| [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md) | Topic moved under [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) in the table of contents and title adjusted to clarify in-place upgrade. | 
+| [Upgrade to Windows 10 with System Center Configuration Manager](upgrade-to-windows-10-with-system-center-configuraton-manager.md) | Topic moved under [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-10-with-system-center-2012-r2-configuration-manager.md) in the table of contents and title adjusted to clarify in-place upgrade. | 
 | [Convert MBR partition to GPT](mbr-to-gpt.md) | New | 
 
 ## February 2017
