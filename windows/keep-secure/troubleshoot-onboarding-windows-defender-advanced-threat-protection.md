@@ -133,8 +133,8 @@ If the deployment tools used does not indicate an error in the onboarding proces
 
 2. In the **Event Viewer (Local)** pane, expand **Applications and Services Logs** > **Microsoft** > **Windows** > **SENSE**.
 
-  > [!NOTE]
-	> SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
+  NOTE:
+	SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
 
 3. Select **Operational** to load the log.
 
