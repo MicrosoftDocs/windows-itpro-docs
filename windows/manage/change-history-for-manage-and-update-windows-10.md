@@ -14,23 +14,31 @@ This topic lists new and updated topics in the [Manage Windows 10](index.md) doc
 
 >If you're looking for **update history** for Windows 10, see [Windows 10 and Windows Server 2016 update history](https://support.microsoft.com/help/12387/windows-10-update-history).
 
-
 ## RELEASE: Windows 10, version 1703
 
 The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). Some topics have been moved to [Update Windows 10](../update/index.md) or to [Configure Windows 10](../configure/index.md).
 
-
+## March 2017
+| New or changed topic | Description |
+| --- | --- |
+|[Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email](cortana-at-work-scenario-6.md) |New |
+|[What's new in App-V for Windows 10, version 1703 and earlier](appv-about-appv.md)|Updated to include new features in App-V for Windows 10, version 1703. |
+|[Release Notes for App-V for Windows 10, version 1703](appv-release-notes-for-appv-for-windows-1703.md)|New |
+|[Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-provision-a-vm.md) |New |
+|[Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md) |New |
+|[Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md) |New |
+|[Automatically cleanup unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md) |New |
+|[Available Mobile Data Management (MDM) settings for App-V](appv-available-mdm-settings.md) |New |
 
 ## February 2017
-
 | New or changed topic | Description |
 | --- | --- |
 | [Windows Libraries](windows-libraries.md) | New |
 | [Monitor Windows Updates with Update Compliance](update-compliance-monitor.md) | New |
 | [Get started with Update Compliance](update-compliance-get-started.md) | New |
 | [Use Update Compliance to monitor Windows Updates](update-compliance-using.md) | New |
-| [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) | Added Group Policy setting that blocks user access to Windows Update. |
-| [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) | Added Express updates. |
+|[Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) | Added Group Policy setting that blocks user access to Windows Update. |
+|[Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |Added Express updates. | 
 | [Distribute offline apps](distribute-offline-apps.md) | General updates to topic. Added links to supporting content for System Center Configuration Manager and Microsoft Intune.  |
 
 
@@ -97,7 +105,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 - [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md)
 - [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
-- [Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md)
+- [Set up a shared or guest PC with Windows 10](../configure/set-up-shared-or-guest-pc.md)
 - [Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md)
 - [Application Virtualization (App-V) for Windows 10](appv-for-windows.md)
 - [User Experience Virtualization (UE-V) for Windows 10](uev-for-windows.md)

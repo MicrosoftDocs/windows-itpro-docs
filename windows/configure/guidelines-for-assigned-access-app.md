@@ -20,7 +20,7 @@ localizationpriority: high
 
 You can use assigned access to restrict customers at your business to using only one Windows app so your device acts like a kiosk.  Administrators can use assigned access to restrict a selected user account to access a single Windows app. You can choose almost any Windows app for assigned access; however, some apps may not provide a good user experience.
 
-The following guidelines may help you choose an appropriate Windows app for your assigned access experience in Windows 10, Version 1607.
+The following guidelines may help you choose an appropriate Windows app for your assigned access experience.
 
 ## General guidelines
 
@@ -82,19 +82,7 @@ The above guidelines may help you select or develop an appropriate Windows app f
 
 [Customizing Your Device Experience with Assigned Access](https://channel9.msdn.com/Events/Build/2016/P508)
 
-## Related topics
 
-[Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md)
-
-[Set up a device for anyone to use (kiosk mode)](set-up-a-device-for-anyone-to-use.md)
-
-[Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md)
-
-[Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
-
-[Lock down Windows 10 to specific apps](lock-down-windows-10-to-specific-apps.md)
-
- 
 
  
 

@@ -31,7 +31,7 @@ The Upgrade Readiness deployment script does the following:
 
 To run the Upgrade Readiness deployment script:
 
-1.  Download the [Upgrade Readiness deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract UpgradeAnalytics.zip. Inside, there are two folders: Pilot and Deployment. The Pilot folder contains advanced logging that can help troubleshoot issues and is intended to be run from an elevated command prompt. The Deployment folder offers a lightweight script intended for broad deployment through ConfigMgr or other software deployment system. We recommend manually running the Pilot version of the script on 5-10 machines to verify that everything is configured correctly.  Once you have confirmed that data is flowing successfully, proceed to run the Deployment version throughout your organization.
+1.  Download the [Upgrade Readiness deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract the .zip file. Inside, there are two folders: **Pilot** and **Deployment**. The **Pilot** folder contains advanced logging that can help troubleshoot issues and is intended to be run from an elevated command prompt. The **Deployment** folder offers a lightweight script intended for broad deployment through ConfigMgr or other software deployment system. We recommend manually running the Pilot version of the script on 5-10 machines to verify that everything is configured correctly.  Once you have confirmed that data is flowing successfully, proceed to run the Deployment version throughout your organization.
 
 2.  Edit the following parameters in RunConfig.bat:
 

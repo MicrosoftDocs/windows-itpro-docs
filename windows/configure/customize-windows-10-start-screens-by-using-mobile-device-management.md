@@ -1,6 +1,6 @@
 ---
-title: Customize Windows 10 Start with mobile device management (MDM) (Windows 10)
-description: In Windows 10 Enterprise and Windows 10 Education, you can use a mobile device management (MDM) policy to deploy a customized Start layout to users.
+title: Customize Windows 10 Start and taskbar with mobile device management (MDM) (Windows 10)
+description: In Windows 10, you can use a mobile device management (MDM) policy to deploy a customized Start and tasbkar layout to users.
 ms.assetid: F487850D-8950-41FB-9B06-64240127C1E4
 keywords: ["start screen", "start menu"]
 ms.prod: w10
@@ -10,7 +10,7 @@ author: jdeckerMS
 localizationpriority: medium
 ---
 
-# Customize Windows 10 Start with mobile device management (MDM)
+# Customize Windows 10 Start and taskbar with mobile device management (MDM)
 
 
 **Applies to**
@@ -18,18 +18,17 @@ localizationpriority: medium
 - Windows 10
 - Windows 10 Mobile
 
-**Looking for consumer information?**
+>**Looking for consumer information?** [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
--   [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
+In Windows 10 Mobile, Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, you can use a mobile device management (MDM) policy to deploy a customized Start and taskbar layout to users. No reimaging is required, and the layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
 
-In Windows 10 Mobile, Windows 10 Enterprise, and Windows 10 Education, you can use a mobile device management (MDM) policy to deploy a customized Start layout to users. No reimaging is required, and the Start layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
+>[!NOTE]
+>Support for applying a customized taskbar using MDM is added in Windows 10, version 1703.
 
-> **Note:** Customized taskbar configuration cannot be applied using MDM at this time.
+**Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md) for desktop editions or [create a Start layout XML](mobile-lockdown-designer.md) for mobile.
 
-**Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md) for desktop editions or [create a Start layout XML](start-layout-xml-mobile.md) for mobile.
-
-**Warning**  
-When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
+>[!WARNING] 
+>When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
 
  
 
@@ -40,8 +39,8 @@ Two features enable Start layout control:
 
 -   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
-    **Note**  
-    To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
+    >[!NOTE]  
+    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
 
      
 

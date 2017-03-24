@@ -19,52 +19,65 @@ localizationpriority: high
 
 >  **Looking for Windows Embedded 8.1 Industry information?** See [Assigned Access]( https://go.microsoft.com/fwlink/p/?LinkId=613653)
 
-A single-use or *kiosk* device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education). For a kiosk device to run a Universal Windows app, use the **assigned access** feature. For a kiosk device (Windows 10 Enterprise or Education) to run a Classic Windows application, use **Shell Launcher** to set a custom user interface as the shell. To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
+A single-use or *kiosk* device is easy to set up in Windows 10 for desktop editions. 
 
-**Note**  
-A Universal Windows app is built on the Universal Windows Platform (UWP), which was first introduced in Windows 8 as the Windows Runtime. A Classic Windows application uses the Classic Windows Platform (CWP) (e.g., COM, Win32, WPF, WinForms, etc.) and is typically launched using an .EXE or .DLL file.
+- Use the [Provision kiosk devices wizard](#wizard) in Windows Configuration Designer to create a provisioning package that configures a kiosk device running either a Universal Windows app or a Classic Windows application (Windows 10 Enterprise or Education only).
+
+    or
+    
+- For a kiosk device to run a Universal Windows app, use the [assigned access](#assigned-access) feature (Windows 10 Pro, Enterprise, or Education). 
+
+    or
+    
+- For a kiosk device to run a Classic Windows application, use [Shell Launcher](#shell-launcher) to set a custom user interface as the shell (Windows 10 Enterprise or Education only). 
+
+To return the device to the regular shell, see [Sign out of assigned access](#sign-out-of-assigned-access).
+
+>[!NOTE]
+>A Universal Windows app is built on the Universal Windows Platform (UWP), which was first introduced in Windows 8 as the Windows Runtime. A Classic Windows application uses the Classic Windows Platform (CWP) (e.g., COM, Win32, WPF, WinForms, etc.) and is typically launched using an .EXE or .DLL file.
 
  
 
-## Other settings to lock down
 
 
-For a more secure kiosk experience, we recommend that you make the following configuration changes to the device:
+<span id="wizard" />
+## Set up a kiosk using Windows Configuration Designer
 
--   Put device in **Tablet mode**.
+When you use the **Provision kiosk devices** wizard in Windows Configuration Designer, you can configure the kiosk to run either a Universal Windows app or a Classic Windows application.
 
-    If you want users to be able to use the touch (on screen) keyboard, go to **Settings** &gt; **System** &gt; **Tablet mode** and choose **On.**
+>[!IMPORTANT]
+>When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
--   Hide **Ease of access** feature on the logon screen.
 
-    Go to **Control Panel** &gt; **Ease of Access** &gt; **Ease of Access Center**, and turn off all accessibility tools.
+[Install Windows Configuration Designer](provisioning-install-icd.md), then open Windows Configuration Designer and select **Provision kiosk devices**. After you name your project, and click **Next**, configure the settings as shown in the following table.
 
--   Disable the hardware power button.
 
-    Go to **Power Options** &gt; **Choose what the power button does**, change the setting to **Do nothing**, and then **Save changes**.
 
--   Remove the power button from the sign-in screen.
+<table>
+<tr><td  style="width:45%" valign="top">![step one](images/one.png)![set up device](images/set-up-device.png)</br></br>Enable device setup if you want to configure settings on this page.</br></br>**If enabled:**</br></br>Enter a name for the device.</br></br>(Optional) Select a license file to upgrade Windows 10 to a different edition. [See the permitted upgrades.](https://technet.microsoft.com/itpro/windows/deploy/windows-10-edition-upgrades)</br></br>Toggle **Configure devices for shared use** off. This setting optimizes Windows 10 for shared use scenarios and isn't necessary for a kiosk scenario.</br></br>You can also select to remove pre-installed software from the device. </td><td>![device name, upgrade to enterprise, shared use, remove pre-installed software](images/set-up-device-details.png)</td></tr>
+<tr><td  style="width:45%" valign="top">![step two](images/two.png)  ![set up network](images/set-up-network.png)</br></br>Enable network setup if you want to configure settings on this page.</br></br>**If enabled:**</br></br>Toggle **On** or **Off** for wireless network connectivity. If you select **On**, enter the SSID, the network type (**Open** or **WPA2-Personal**), and (if **WPA2-Personal**) the password for the wireless network.</td><td>![Enter network SSID and type](images/set-up-network-details.png)</td></tr>
+<tr><td  style="width:45%" valign="top">![step three](images/three.png)  ![account management](images/account-management.png)</br></br>Enable account management if you want to configure settings on this page. </br></br>**If enabled:**</br></br>You can enroll the device in Active Directory, enroll in Azure Active Directory, or create a local administrator account on the device</br></br>To enroll the device in Active Directory, enter the credentials for a least-privileged user account to join the device to the domain.</br></br>Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, [set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup). The **maximum number of devices per user** setting in your Azure AD tenant determines how many times the bulk token that you get in the wizard can be used. To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard. Set an expiration date for the token (maximum is 30 days from the date you get the token). Click **Get bulk token**. In the **Let's get you signed in** window, enter an account that has permissions to join a device to Azure AD, and then the password. Click **Accept** to give Windows Configuration Designer the necessary permissions.</br></br>**Warning:** You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.</br></br>To create a local administrator account, select that option and enter a user name and password. </br></br>**Important:** If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in.  </td><td>![join Active Directory, Azure AD, or create a local admin account](images/account-management-details.png)</td></tr>
+<tr><td  style="width:45%" valign="top">![step four](images/four.png) ![add applications](images/add-applications.png)</br></br>You can provision the kiosk app in the **Add applications** step. You can install multiple applications, both Classic Windows (Win32) apps and Universal Windows Platform (UWP) apps, in a provisioning package. The settings in this step vary according to the application that you select. For help with the settings, see [Provision PCs with apps](provision-pcs-with-apps.md)</br></br>**Warning:** If you click the plus button to add an application, you must specify an application for the provisioning package to validate. If you click the plus button in error, select any executable file in **Installer Path**, and then a **Cancel** button becomes available, allowing you to complete the provisioning package without an application. </td><td>![add an application](images/add-applications-details.png)</td></tr>
+<tr><td  style="width:45%" valign="top">![step five](images/five.png) ![add certificates](images/add-certificates.png)</br></br>To provision the device with a certificate for the kiosk app, click **Add a certificate**. Enter a name for the certificate, and then browse to and select the certificate to be used.</td><td>![add a certificate](images/add-certificates-details.png)</td></tr> 
+<tr><td  style="width:45%" valign="top">![step six](images/six.png)  ![Configure kiosk account and app](images/kiosk-account.png)</br></br>**Important:** You must use the Windows Configuration Designer app from Windows Store to select a Classic Windows application as the kiosk app in a provisioning package.</br></br>You can create a local standard user account that will be used to run the kiosk app. If you toggle **No**, make sure that you have an existing user account to run the kiosk app.</br></br>If you want to create an account, enter the user name and password, and then toggle **Yes** or **No** to automatically sign in the account when the device starts.</br></br>In **Configure the kiosk mode app**, enter the name of the user account that will run the kiosk mode app. Select the type of app to run in kiosk mode, and then enter the path or filename (for a Classic Windows app) or the AUMID (for a Universal Windows app). For a Classic Windows app, you can use the filename if the path to the file is in the PATH environment variable, otherwise the full path is required.</td><td>![Configure kiosk account and app](images/kiosk-account-details.png)</td></tr>
+<tr><td  style="width:45%" valign="top">![step seven](images/seven.png)  ![configure kiosk common settings](images/kiosk-common.png)</br></br>On this step, select your options for tablet mode, the user experience on the Welcome and shutdown screens, and the timeout settings.</td><td>![set tablet mode and configure welcome and shutdown and turn off timeout settings](images/kiosk-common-details.png)</td></tr>
+<tr><td  style="width:45%" valign="top">  ![finish](images/finish.png)</br></br>You can set a password to protect your provisioning package. You must enter this password when you apply the provisioning package to a device.</td><td>![Protect your package](images/finish-details.png)</td></tr>
+</table>
 
-    Go to **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt;**Security Options** &gt; **Shutdown: Allow system to be shut down without having to log on** and select **Disabled.**
 
--   Disable the camera.
+>[!NOTE]
+>If you want to use the advanced editor in Windows Configuration Designer, specify the user account and app (by AUMID) in **Runtime settings** &gt; **AssignedAccess** &gt; **AssignedAccessSettings**
 
-    Go to **Settings** &gt; **Privacy** &gt; **Camera**, and turn off **Let apps use my camera**.
 
--   Turn off app notifications on the lock screen.
 
-    Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Logon\\Turn off app notifications on the lock screen**.
 
--   Disable removable media.
 
-    Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Device Installation\\Device Installation Restrictions**. Review the policy settings available in **Device Installation Restrictions** for the settings applicable to your situation.
+[Learn how to apply a provisioning package.](provisioning-apply-package.md)
 
-    **Note**  
-    To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
 
      
-
-## <a href="" id="assigned-access-method"></a>Assigned access method for Universal Windows apps
+<span id="assigned-access" />
+## Assigned access method for Universal Windows apps
 
 
 Using assigned access, Windows 10 runs the designated Universal Windows app above the lockscreen, so that the assigned access account has no access to any other functionality on the device. You have these choices for setting up assigned access:
@@ -73,7 +86,7 @@ Using assigned access, Windows 10 runs the designated Universal Windows app abo
 | --- | --- | --- |
 | [Use Settings on the PC](#set-up-assigned-access-in-pc-settings) | Local standard | Pro, Enterprise, Education |
 | [Apply a mobile device management (MDM) policy](#set-up-assigned-access-in-mdm) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
-| [Create a provisioning package using Windows Imaging and Configuration Designer (ICD)](#icd) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
+| [Create a provisioning package using Windows Configuration Designer](#wizard) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
 | [Run a PowerShell script](#set-up-assigned-access-using-windows-powershell) | Local standard | Pro, Enterprise, Education |
 
 
@@ -88,8 +101,8 @@ Using assigned access, Windows 10 runs the designated Universal Windows app abo
 
     The Universal Windows app must be able to handle multiple views and cannot launch other apps or dialogs.
 
-**Note**  
-Assigned access does not work on a device that is connected to more than one monitor.
+>[!NOTE]  
+>Assigned access does not work on a device that is connected to more than one monitor.
 
  
 
@@ -105,7 +118,7 @@ Assigned access does not work on a device that is connected to more than one mon
 
 5.  Close **Settings** – your choices are saved automatically, and will be applied the next time that user account logs on.
 
-To remove assigned access, in step 3, choose **Don't use assigned access**.
+To remove assigned access, choose **Turn off assigned access and sign out of the selected account**.
 
 ### Set up assigned access in MDM
 
@@ -115,69 +128,9 @@ Assigned Access has one setting, KioskModeApp. In the KioskModeApp setting, you 
 
 [See the technical reference for the Assigned Access configuration service provider.](https://go.microsoft.com/fwlink/p/?LinkId=626608)
 
-### <a href="" id="icd"></a>Set up assigned access using Windows Imaging and Configuration Designer (ICD)
+<sp id="set-up-assigned-access-wcd" />
 
-Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that configures a device as a kiosk. [Install the ADK.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 
-> **Important**
-When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
-
-**Create a provisioning package for a kiosk device**
-
-1.  Open Windows ICD (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
-
-2.  Choose **Advanced provisioning**.
-
-3.  Name your project, and click **Next**.
-
-4.  Choose **All Windows desktop editions** and click **Next**.
-
-5.  On **New project**, click **Finish**. The workspace for your package opens.
-
-6.  Expand **Runtime settings** &gt; **AssignedAccess**, and click **AssignedAccessSettings**.
-
-7.  Enter a string to specify the user account and app (by AUMID). For example:
-
-    "Account":"contoso\\\\kiosk","AUMID":"8f82d991-f842-44c3-9a95-521b58fc2084"
-
-8.  On the **File** menu, select **Save.**
-
-9.  On the **Export** menu, select **Provisioning package**.
-
-10. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
-
-11. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
-
-    -   **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
-
-    -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select** and choosing the certificate you want to use to sign the package.
-
-12. Click **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows ICD uses the project folder as the output location.
-
-    Optionally, you can click **Browse** to change the default output location.
-
-13. Click **Next**.
-
-14. Click **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
-
-    If you need to cancel the build, click **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
-
-15. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
-
-    If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
-
-    -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
-    -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
-
-**Apply the provisioning package**
-
-1.  Select the provisioning package that you want to apply, double-click the file, and then allow admin privileges.
-
-2.  Consent to allow the package to be installed.
-
-    After you allow the package to be installed, the settings will be applied to the device
-
-[Learn how to apply a provisioning package in audit mode or OOBE.](https://go.microsoft.com/fwlink/p/?LinkID=692012)
 
 ### Set up assigned access using Windows PowerShell
 
@@ -201,7 +154,9 @@ Set-AssignedAccess -AppName <CustomApp> -UserName <username>
 Set-AssignedAccess -AppName <CustomApp> -UserSID <usersid>
 ```
 
-> **Note:** To set up assigned access using `-AppName`, the user account that you specify for assigned access must have logged on at least once. 
+> [!NOTE]
+> To set up assigned access using `-AppName`, the user account that you specify for assigned access must have logged on at least once. 
+
 [Learn how to get the AUMID](https://go.microsoft.com/fwlink/p/?LinkId=614867).
 
 [Learn how to get the AppName](https://msdn.microsoft.com/library/windows/hardware/mt620046%28v=vs.85%29.aspx) (see **Parameters**).
@@ -223,8 +178,8 @@ Edit the registry to have an account automatically logged on.
 
 1.  Open Registry Editor (regedit.exe).
 
-    **Note**  
-    If you are not familiar with Registry Editor, [learn how to modify the Windows registry](https://go.microsoft.com/fwlink/p/?LinkId=615002).
+    >[!NOTE]  
+    >If you are not familiar with Registry Editor, [learn how to modify the Windows registry](https://go.microsoft.com/fwlink/p/?LinkId=615002).
   
 
 2.  Go to
@@ -239,7 +194,8 @@ Edit the registry to have an account automatically logged on.
 
     -   *DefaultPassword*: set value as the password for the account.
 
-       > **Note**  If *DefaultUserName* and *DefaultPassword* aren't there, add them as **New** &gt; **String Value**.
+       > [!NOTE]
+       > If *DefaultUserName* and *DefaultPassword* aren't there, add them as **New** &gt; **String Value**.
 
     -   *DefaultDomainName*: set value for domain, only for domain accounts. For local accounts, do not add this key.
 
@@ -255,10 +211,14 @@ If you press **Ctrl + Alt + Del** and do not sign in to another account, after a
 
 To change the default time for assigned access to resume, add *IdleTimeOut* (DWORD) and enter the value data as milliseconds in hexadecimal.
 
-## <a href="" id="local-user-policy"></a>Shell Launcher for Classic Windows applications
+<span id="shell-launcher" />
+## Shell Launcher for Classic Windows applications
 
 
 Using Shell Launcher, you can configure a kiosk device that runs a Classic Windows application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on.
+
+>[!NOTE]
+>You can also configure a kiosk device that runs a Classic Windows application by using the [Provision kiosk devices wizard](#wizard).
 
 ### Requirements
 
@@ -274,10 +234,13 @@ To set a Classic Windows application as the shell, you first turn on the Shell L
 
 **To turn on Shell Launcher in Windows features**
 
-1.  Go to Control Panel &gt; **Programs and Features** &gt; **Turn Windows features on or off**.
-2.  Select **Embedded Shell Launcher** and **OK**.
+1. Go to Control Panel &gt; **Programs and features** &gt; **Turn Windows features on or off**.
 
-Alternatively, you can turn on Shell Launcher using the Deployment Image Servicing and Management (DISM.exe) tool.
+2. Expand **Device Lockdown**.
+
+2. Select **Shell Launcher** and **OK**.
+
+Alternatively, you can turn on Shell Launcher using Windows Configuration Designer in a provisioning package, using `SMISettings > ShellLauncher`, or the Deployment Image Servicing and Management (DISM.exe) tool.
 
 **To turn on Shell Launcher using DISM**
 
@@ -425,19 +388,46 @@ $IsShellLauncherEnabled = $ShellLauncherClass.IsEnabled()
 "`nEnabled is set to " + $IsShellLauncherEnabled.Enabled
 ```
 
+## Other settings to lock down
+
+
+For a more secure kiosk experience, we recommend that you make the following configuration changes to the device:
+
+-   Put device in **Tablet mode**.
+
+    If you want users to be able to use the touch (on screen) keyboard, go to **Settings** &gt; **System** &gt; **Tablet mode** and choose **On.**
+
+-   Hide **Ease of access** feature on the logon screen.
+
+    Go to **Control Panel** &gt; **Ease of Access** &gt; **Ease of Access Center**, and turn off all accessibility tools.
+
+-   Disable the hardware power button.
+
+    Go to **Power Options** &gt; **Choose what the power button does**, change the setting to **Do nothing**, and then **Save changes**.
+
+-   Remove the power button from the sign-in screen.
+
+    Go to **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt;**Security Options** &gt; **Shutdown: Allow system to be shut down without having to log on** and select **Disabled.**
+
+-   Disable the camera.
+
+    Go to **Settings** &gt; **Privacy** &gt; **Camera**, and turn off **Let apps use my camera**.
+
+-   Turn off app notifications on the lock screen.
+
+    Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Logon\\Turn off app notifications on the lock screen**.
+
+-   Disable removable media.
+
+    Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Device Installation\\Device Installation Restrictions**. Review the policy settings available in **Device Installation Restrictions** for the settings applicable to your situation.
+
+    >[!NOTE]  
+    >To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
+
+ 
 ## Related topics
 
-
-[Set up a device for anyone to use](set-up-a-device-for-anyone-to-use.md)
-
-[Set up a kiosk for Windows 10 for mobile edition](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
-
-[Manage and update Windows 10](index.md)
-
- 
-
- 
-
+- [Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
 
 
 

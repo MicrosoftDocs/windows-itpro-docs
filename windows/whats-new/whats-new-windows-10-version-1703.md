@@ -29,6 +29,14 @@ Windows Configuration Designer in Windows 10, version 1703, includes several new
 
 [Learn more about Windows Configuration Designer.](../configure/provisioning-packages.md)
 
+
+### Bulk enrollment in Azure Active Directory
+
+Using the new wizards in Windows Configuration Designer, you can [create provisioning packages to enroll devices in Azure Active Directory](../configure/provisioning-packages.md#configuration-designer-wizards). Bulk enrollment in Azure AD is available in the desktop, mobile, kiosk, and Surface Hub wizards.
+
+![get bulk token action in wizard](images/bulk-token.png) 
+
+
 ### Windows Spotlight
 
 The following new Group Policy and mobile device management (MDM) settings are added to help you configure Windows Spotlight user experiences:
@@ -48,7 +56,7 @@ Additional MDM policy settings are available for Start and taskbar layout. For d
 
 Previously, the customized taskbar could only be deployed using Group Policy or provisioning packages. Windows 10, version 1703, adds support for customized taskbars to [MDM](../configure/customize-windows-10-start-screens-by-using-mobile-device-management.md).
 
-### Lockdown Designer app for Windows 10 Mobile lockdown files
+### Lockdown Designer for Windows 10 Mobile lockdown files
 
 The Lockdown Designer app helps you configure and create a lockdown XML file to apply to devices running Windows 10 Mobile, and includes a remote simulation to help you determine the layout for tiles on the Start screen. Using Lockdown Designer is easier than [manually creating a lockdown XML file](../configure/lockdown-xml.md).
 
@@ -58,11 +66,6 @@ The Lockdown Designer app helps you configure and create a lockdown XML file to 
 
 
 
-### Kiosk mode for Windows 10 Mobile
-
-In Windows 10 Mobile, version 1703, [Apps Corner](https://support.microsoft.com/instantanswers/7959c547-aa80-5ff1-9097-1784b6894845/set-up-apps-corner) is removed. Enterprises can use [Enterprise Assigned Access to configure kiosk experiences](../configure/set-up-a-kiosk-for-windows-10-for-mobile-edition.md) on devices running Windows 10 Mobile. 
-
-
 
 ## Deployment
 
@@ -70,7 +73,9 @@ In Windows 10 Mobile, version 1703, [Apps Corner](https://support.microsoft.com/
 
 MBR2GPT.EXE is a new command-line tool available in Windows 10 version 1703 and later versions. MBR2GPT converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS).
 
-The GPT partition format is newer and enables the use of larger and more disk partitions. It also provides added data reliability and supports additional partition types. If you convert the system disk on a computer from MBR to GPT, you must also configure the computer to boot in UEFI mode, so make sure that your device supports UEFI before attempting to convert the system disk. 
+The GPT partition format is newer and enables the use of larger and more disk partitions. It also provides added data reliability, supports additional partition types, and enables faster boot and shutdown speeds. If you convert the system disk on a computer from MBR to GPT, you must also configure the computer to boot in UEFI mode, so make sure that your device supports UEFI before attempting to convert the system disk. 
+
+Additional security features of Windows 10 that are enabled when you boot in UEFI mode include: Secure Boot, Early Launch Anti-malware (ELAM) driver, Windows Trusted Boot, Measured Boot, Device Guard, Credential Guard, and BitLocker Network Unlock.
 
 For details, see [MBR2GPT.EXE](../deploy/mbr-to-gpt.md).
 
@@ -82,7 +87,9 @@ Using Azure AD also means that you can remove an employee’s profile (for examp
 
 ## Security
 
-### Windows Defender Advanced Threat Protection (Windows Defender ATP)
+### Windows Defender Advanced Threat Protection 
+
+New features in Windows Defender Advanced Threat Protection (ATP) for Windows 10, version 1703 include:
 - **Detection**<br>
   Enhancements to the detection capabilities include:
   - [Use the threat intelligence API to create custom alerts](../keep-secure/use-custom-ti-windows-defender-advanced-threat-protection.md) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
@@ -109,8 +116,8 @@ Using Azure AD also means that you can remove an employee’s profile (for examp
 
  
 
-### Windows Defender Antivirus (Windows Defender AV)
-New features for Windows Defender AV in Windows 10, version 1703 include:
+### Windows Defender Antivirus
+New features for Windows Defender Antivirus (AV) in Windows 10, version 1703 include:
 
 - [Updates to how the Block at First Sight feature can be configured](../keep-secure/configure-block-at-first-sight-windows-defender-antivirus.md)
 - [The ability to specify the level of cloud-protection](../keep-secure/specify-cloud-protection-level-windows-defender-antivirus.md)
@@ -162,7 +169,16 @@ Added policies include:
 
 To check out all the details, see [Configure Delivery Optimization for Windows 10 updates](../update/waas-delivery-optimization.md)
 
-## Learn more
+## Manage
 
+### Application Virtualization for Windows (App-V)
+Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10, version 1703 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Addtionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically cleanup your unpublished packages after a device restart.
+
+To see info about these updates, see [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-provision-a-vm.md), [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-batch-sequencing.md), [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-batch-updating.md), and [Automatically cleanup unpublished packages on the App-V client](../manage/appv-auto-clean-unpublished-packages.md)
+
+## Related topics
+
+- [Features that are removed or deprecated in Windows 10 Creators Update](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update)
 - [Windows 10 release information](https://technet.microsoft.com/windows/release-info)
 - [What's new in MDM in Windows 10, version 1703](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/new-in-windows-mdm-enrollment-management#whatsnew10)
+- [Manage Windows upgrades with Upgrade Readiness](../deploy/manage-windows-upgrades-with-upgrade-readiness.md)

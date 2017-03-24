@@ -55,14 +55,14 @@ This tile shows you a list of machines with the highest number of active alerts.
 
 Click the name of the machine to see details about that machine. For more information see, [Investigate machines in the Windows Defender Advanced Threat Protection Machines view](investigate-machines-windows-defender-advanced-threat-protection.md).
 
-You can also click **Machines view** at the top of the tile to go directly to the **Machines view**, sorted by the number of active alerts. For more information see, [Investigate machines in the Windows Defender Advanced Threat Protection Machines view](investigate-machines-windows-defender-advanced-threat-protection.md).
+You can also click **Machines list** at the top of the tile to go directly to the **Machines view**, sorted by the number of active alerts. For more information see, [Investigate machines in the Windows Defender Advanced Threat Protection Machines view](investigate-machines-windows-defender-advanced-threat-protection.md).
 
 ## Users at risk
 The tile shows you a list of user accounts with the most active alerts. The total number of alerts for each user is shown in a circle next to the user account, and then further categorized by severity levels at the far end of the tile (hover over each severity bar to see its label).
 
 ![User accounts at risk tile shows a list of user accounts with the highest number of alerts and a breakdown of the severity of the alerts](images/atp-users-at-risk.png)
 
-Click the user account to see details about the user account. For more information see [Investigate a user entity in Windows Defender Advanced Threat Protection]
+Click the user account to see details about the user account. For more information see [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md).
 
 ## Machines with active malware detections
 The **Machines with active malware detections** tile will only appear if your endpoints are using Windows Defender.
@@ -97,7 +97,7 @@ There are two status indicators that provide information on the number of machin
 - **Inactive** - Machines that have stopped reporting to the Windows Defender ATP service for more than seven days in the past month.
 -	**Misconfigured** – These machines might partially be reporting telemetry to the Windows Defender ATP service and might have configuration errors that need to be corrected.
 
-When you click any of the groups, you’ll be directed to machines view, filtered according to your choice. For more information, see [Check sensor health state](check-sensor-status-windows-defender-advanced-threat-protection.md) and [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
+When you click any of the groups, you’ll be directed to machines list, filtered according to your choice. For more information, see [Check sensor health state](check-sensor-status-windows-defender-advanced-threat-protection.md) and [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
 
 ## Service health
 The **Service health** tile informs you if the service is active or if there are issues.

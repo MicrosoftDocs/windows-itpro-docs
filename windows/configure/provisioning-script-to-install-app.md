@@ -168,21 +168,21 @@ Here’s a table describing this relationship, using the PowerShell example from
  
 ### Add script to provisioning package 
  
-When you have the batch file written and the referenced assets ready to include, you can add them to a provisioning package in the Window Imaging and Configuration Designer (Windows ICD). 
+When you have the batch file written and the referenced assets ready to include, you can add them to a provisioning package in the Window Configuration Designer. 
 
-Using ICD, specify the full details of how the script should be run in the CommandLine setting in the provisioning package. This includes flags or any other parameters that you would normally type on the command line. So for example if the package contained an app installer called install.exe and a script used to automate the install called InstallMyApp.bat, the `ProvisioningCommands/DeviceContext/CommandLine` setting should be configured to: 
+Using Windows Configuration Designer, specify the full details of how the script should be run in the CommandLine setting in the provisioning package. This includes flags or any other parameters that you would normally type on the command line. So for example if the package contained an app installer called install.exe and a script used to automate the install called InstallMyApp.bat, the `ProvisioningCommands/DeviceContext/CommandLine` setting should be configured to: 
 
 ```
 cmd /c InstallMyApp.bat
 ```
 
-In ICD, this looks like:
+In Windows Configuration Designer, this looks like:
 
 ![Command line in Selected customizations](images/icd-script1.png)
 
 You also need to add the relevant assets for that command line including the orchestrator script and any other assets it references such as installers or .cab files.
 
-In ICD, that is done by adding files under the `ProvisioningCommands/DeviceContext/CommandFiles` setting.
+In Windows Configuration Designer, that is done by adding files under the `ProvisioningCommands/DeviceContext/CommandFiles` setting.
 
 ![Command files in Selected customizations](images/icd-script2.png)
 
@@ -211,12 +211,11 @@ When you are done, [build the package](provisioning-create-package.md#build-pack
 
 - [Provisioning packages for Windows 10](provisioning-packages.md)
 - [How provisioning works in Windows 10](provisioning-how-it-works.md)
-- [Install Windows Imaging and Configuration Designer](provisioning-install-icd.md)
+- [Install Windows Configuration Designer](provisioning-install-icd.md)
 - [Create a provisioning package](provisioning-create-package.md)
 - [Apply a provisioning package](provisioning-apply-package.md)
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
-- [Provision PCs with apps and certificates for initial deployments (advanced provisioning)](provision-pcs-with-apps-and-certificates.md)
-- [NFC-based device provisioning](provisioning-nfc.md)
-- [Windows ICD command-line interface (reference)](provisioning-command-line.md)
+- [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
+- [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)

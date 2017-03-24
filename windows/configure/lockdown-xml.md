@@ -19,9 +19,9 @@ localizationpriority: high
 
 Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device. For example, the enterprise can lock down a device so that only applications and settings in an allow list are available.
 
-This topic provides example XML that you can use in your own lockdown XML file that can be included in a provisioning package or when using a mobile device management (MDM) solution to push lockdown settings to enrolled devices.
+This is accomplished using Lockdown XML, an XML file that contains settings for Windows 10 Mobile. When you deploy the lockdown XML file to a device, it is saved on the device as **wehlockdown.xml**. When the device boots, it looks for wehlockdown.xml and applies any settings configured in the file. 
 
-Lockdown XML is an XML file that contains settings for Windows 10 Mobile. When you deploy the lockdown XML file to a device, it is saved on the device as **wehlockdown.xml**. When the device boots, it looks for wehlockdown.xml and applies any settings configured in the file. In this topic, you'll learn how to create an XML file that contains all lockdown entries available in the AssignedAccessXml area of the [EnterpriseAssignedAccess configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=618601).
+In this topic, you'll learn how to create an XML file that contains all lockdown entries available in the AssignedAccessXml area of the [EnterpriseAssignedAccess configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseassignedaccess-csp). This topic provides example XML that you can use in your own lockdown XML file that can be included in a provisioning package or when using a mobile device management (MDM) solution to push lockdown settings to enrolled devices. You can also use the [Lockdown Designer app](mobile-lockdown-designer.md) to configure and export your lockdown XML file.
 
 > [!NOTE]
 >  On Windows 10 desktop editions, *assigned access* is a feature that lets you configure the device to run a single app above the lockscreen ([kiosk mode](set-up-a-device-for-anyone-to-use.md)). On a Windows 10 Mobile device, assigned access refers to the lockdown settings in AssignedAccessXml in the [EnterpriseAssignedAccess configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=618601).
@@ -33,17 +33,17 @@ If you're not familiar with CSPs, read [Introduction to configuration service pr
 Let's start by looking at the basic structure of the lockdown XML file. You can start your file by pasting the following XML (or any other examples in this topic) into a text or XML editor, and saving the file as *filename*.xml.
 
 ```xml
-<?xml version "1.0" encoding "utf-8"?>
-<HandheldLockdown version "1.0" >
+<?xml version="1.0" encoding="utf-8"?>
+<HandheldLockdown version="1.0" >
 	<Default>
-		<ActionCenter>
-		<Apps>
-		<Buttons>
-		<CSPRunner>
-		<MenuItems>
-		<Settings>
-		<Tiles>
-		<StartScreenSize>
+		<ActionCenter/>
+		<Apps/>
+		<Buttons/>
+		<CSPRunner/>
+		<MenuItems/>
+		<Settings/>
+		<Tiles/>
+		<StartScreenSize/>
 	</Default>
 </HandheldLockdown>
 ```
@@ -52,7 +52,8 @@ Let's start by looking at the basic structure of the lockdown XML file. You can 
 
 The settings for the Default role and other roles must be listed in your XML file in the order presented in this topic. All of the entries are optional. If you don't include a setting, that aspect of the device will operate as it would for an nonconfigured device.
 
->  **Tip**&nbsp;&nbsp;Keep your XML file easy to work with and to understand by using proper indentation and adding comments for each setting you configure.
+>[!TIP]
+>Keep your XML file easy to work with and to understand by using proper indentation and adding comments for each setting you configure.
 
 ## Action Center
 
@@ -325,27 +326,28 @@ Use DisableMenuItems to prevent use of the context menu, which is displayed when
 
 ![XML for settings](images/SettingsXML.png)
 
-The **Settings** section contains an `allow` list of pages in the Settings app. The following example allows all settings.
+The **Settings** section contains an `allow` list of pages in the Settings app and quick actions. The following example allows all settings.
 
 ```xml
  <Settings>
      <!-- Allow all settings -->
  </Settings>
  ```
-In the following example, all system setting pages are enabled.
+In earlier versions of Windows 10, you used the page name to define allowed settings. Starting in Windows 10, version 1703, you use the settings URI.
+
+In the following example for Windows 10, version 1703, all system setting pages that have a settings URI are enabled.
 
 ```xml
 <Settings> 
-  <System name="SettingsPageGroupPCSystem" /> 
-  <System name="SettingsPageDisplay" /> 
-  <System name="SettingsPageAppsNotifications" />
-  <System name="SettingsPageCalls" />
-  <System name="SettingsPageMessaging" /> 
-  <System name="SettingsPageBatterySaver" /> 
-  <System name="SettingsPageStorageSenseStorageOverview" />
-  <System name="SettingsPageGroupPCSystemDeviceEncryption" /> 
-  <System name="SettingsPageDrivingMode" /> 
-  <System name="SettingsPagePCSystemInfo" /> 
+  <System name="ms-settings:screenrotation" /> 
+  <System name="ms-settings:notifications" /> 
+  <System name="ms-settings:phone" />
+  <System name="ms-settings:messaging" />
+  <System name="ms-settings:batterysaver" /> 
+  <System name="ms-settings:batterysaver-usagedetails" /> 
+  <System name="ms-settings:about" /> 
+  <System name="ms-settings:deviceencryption" /> 
+  <System name="ms-settings:maps" /> 
  </Settings>
 ```
 
@@ -372,10 +374,10 @@ For a list of the settings and quick actions that you can allow or block, see [S
  ## Start screen size
  
  Specify the size of the Start screen. In addition to 4/6 columns, you can also use 4/6/8 depending on screen resolutions. Valid values: 
- * Small sets the width to 4 columns on devices with short axis (less than 400epx) or 6 columns on devices with short axis (greater than or equal to 400epx). 
- * Large sets the width to 6 columns on devices with short axis (less than 400epx) or 8 columns on devices with short axis (greater than or equal to 400epx). 
  
- 
+ - Small sets the width to 4 columns on devices with short axis (less than 400epx) or 6 columns on devices with short axis (greater than or equal to 400epx).
+ - Large sets the width to 6 columns on devices with short axis (less than 400epx) or 8 columns on devices with short axis (greater than or equal to 400epx).
+  
  If you have existing lockdown xml, you must update start screen size if your device has >=400epx on its short axis so that tiles on Start can fill all 8 columns if you want to use all 8 columns instead of 6, or use 6 columns instead of 4. 
  
  [Learn about effective pixel width (epx) for different device size classes.](https://go.microsoft.com/fwlink/p/?LinkId=733340)
@@ -383,47 +385,50 @@ For a list of the settings and quick actions that you can allow or block, see [S
  
 ## Configure additional roles
  
- You can add custom configurations by role. In addition to the role configuration, you must also install a login application on the device. The app displays a list of available roles on the device; the user taps a role, such as "Manager"; the configuration defined for the "Manager" role is applied.
+You can add custom configurations by role. In addition to the role configuration, you must also install a login application on the device. The app displays a list of available roles on the device; the user taps a role, such as "Manager"; the configuration defined for the "Manager" role is applied.
  
- [Learn how to create a login application that will work with your Lockdown XML file.](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DeviceLockdownAzureLogin) For reference, see the [Windows.Embedded.DeviceLockdown API](https://msdn.microsoft.com/library/windows/apps/windows.embedded.devicelockdown).
+[Learn how to create a login application that will work with your Lockdown XML file.](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DeviceLockdownAzureLogin) For reference, see the [Windows.Embedded.DeviceLockdown API](https://msdn.microsoft.com/library/windows/apps/windows.embedded.devicelockdown).
  
- In the XML file, you define each role with a GUID and name, as shown in the following example:
+In the XML file, you define each role with a GUID and name, as shown in the following example:
  
- ```xml
- <Role guid="{7bb62e8c-81ba-463c-b691-74af68230b42}" name="Manager">
- ```
+```xml
+<Role guid="{7bb62e8c-81ba-463c-b691-74af68230b42}" name="Manager">
+```
+
+You can create a GUID using a GUID generator -- free tools are available online. The GUID needs to be unique within this XML file.
  
- You can create a GUID using a GUID generator -- free tools are available online. The GUID needs to be unique within this XML file.
+You can configure the same settings for each role as you did for the default role, except Start screen size which can only be configured for the default role. If you use CSPRunner with roles, be aware that the last CSP setting applied will be retained across roles unless explicitly changed in each role configuration. CSP settings applied by CSPRunner may conflict with settings applied by MDM. 
  
- You can configure the same settings for each role as you did for the default role, except Start screen size which can only be configured for the default role. If you use CSPRunner with roles, be aware that the last CSP setting applied will be retained across roles unless explicitly changed in each role configuration. CSP settings applied by CSPRunner may conflict with settings applied by MDM. 
- 
- ```xml
+```xml
 <?xml version "1.0" encoding "utf-8"?>
 <HandheldLockdown version "1.0" >
 	<Default>
-		<ActionCenter>
-		<Apps>
-		<Buttons>
-		<CSPRunner>
-		<MenuItems>
-		<Settings>
-		<Tiles>
-		<StartScreenSize>
+		<ActionCenter/>
+		<Apps/>
+		<Buttons/>
+		<CSPRunner/>
+		<MenuItems/>
+		<Settings/>
+		<Tiles/>
+		<StartScreenSize/>
 	</Default>
 		<RoleList>
 			<Role>
-				<ActionCenter>
-				<Apps>
-				<Buttons>
-				<CSPRunner>
-				<MenuItems>
-				<Settings>
-				<Tiles>
+				<ActionCenter/>
+				<Apps/>
+				<Buttons/>
+				<CSPRunner/>
+				<MenuItems/>
+				<Settings/>
+				<Tiles/>
 			</Role>
 		</RoleList>
-	</Default>
 </HandheldLockdown>
 ```
+
+## Validate your XML
+
+You can validate your lockdown XML file against the [EnterpriseAssignedAccess XSD](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseassignedaccess-xsd).
  
 ## Add lockdown XML to a provisioning package
 
@@ -605,13 +610,12 @@ To push lockdown settings to enrolled devices, use the AssignedAccessXML setting
             <!-- Quick actions: Brightness, Rotation -->
             <System name="SystemSettings_System_Display_QuickAction_Brightness"/>
             <System name="SystemSettings_System_Display_Internal_Rotation"/>
-            <!-- Brightness+Rotation, About -->
-            <System name="SettingsPageGroupPCSystem"/>
-            <System name="SettingsPageDisplay"/>
-            <System name="SettingsPagePCSystemInfo"/>
+            <!-- Rotation, About -->
+            <System name="ms-settings:screenrotation"/>
+            <System name="ms-settings:about"/>
             <!-- Ringtones, sounds -->
-            <System name="SettingsPageGroupPersonalization"/>
-            <System name="SettingsPageSounds"/>
+            <System name="ms-settings:personalizationn"/>
+            <System name="ms-settings:sounds"/>
         </Settings>
         <Tiles>
             <EnableTileManipulation/>
@@ -706,17 +710,16 @@ To push lockdown settings to enrolled devices, use the AssignedAccessXML setting
                 <DisableMenuItems/>
             </MenuItems>
             <Settings>
-                <!-- Brightness+Rotation, Notifications, About -->
-                <System name="SettingsPageGroupPCSystem"/>
-                <System name="SettingsPageAppsNotifications"/>
-                <System name="SettingsPageDisplay"/>
-                <System name="SettingsPagePCSystemInfo"/>
+                <!-- Rotation, Notifications, About -->
+                <System name="ms-settings:screenrotation"/>
+                <System name="ms-settings:notifications"/>
+                <System name="ms-settings:about"/>
                 <!-- Ringtones, sounds -->
-                <System name="SettingsPageGroupPersonalization"/>
-                <System name="SettingsPageSounds"/>
+                <System name="ms-settings:personalization"/>
+                <System name="ms-settings:sounds"/>
                 <!-- Workplace -->
-                <System name="SettingsPageGroupAccounts"/>
-                <System name="SettingsPageAccountsWorkplace"/>
+                <System name="ms-settings:workplace"/>
+                <System name="ms-settings:emailandaccounts"/>
             </Settings>
         </Role>
         <Role guid="{7bb62e8c-81ba-463c-b691-74af68230b42}" name="Manager">
@@ -859,12 +862,3 @@ To push lockdown settings to enrolled devices, use the AssignedAccessXML setting
 [Settings and quick actions that can be locked down in Windows 10 Mobile](settings-that-can-be-locked-down.md)
 
 [Product IDs in Windows 10 Mobile](product-ids-in-windows-10-mobile.md)
-
- 
-
- 
-
-
-
-
-
