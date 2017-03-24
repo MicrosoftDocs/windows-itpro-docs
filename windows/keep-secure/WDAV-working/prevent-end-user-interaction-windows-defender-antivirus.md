@@ -30,7 +30,7 @@ You can use Group Policy to prevent users on endpoints from seeing the Windows D
 
 ## Hide the Windows Defender Antivirus interface
 
-In Windows 10, versions 1703, hiding the interface will prevent the Virus & threat protection tile from appearing in the Windows Defender Security Center app. 
+In Windows 10, versions 1703, hiding the interface will hide Windows Defender AV notifications and prevent the Virus & threat protection tile from appearing in the Windows Defender Security Center app.
 
 With the setting set to **Enabled**:
 
@@ -39,6 +39,9 @@ With the setting set to **Enabled**:
 With the setting set to **Disabled** or not configured:
 
 ![Scheenshot of Windows Defender Security Center showing the shield icon and virus and threat protection section](images/defender/wdav-headless-mode-off-1703.png)
+
+>[!NOTE]
+>Hiding the interface will also prevent Windows Defender AV notifications from appearing on the endpoint. Windows Defender Advanced Threat Protection notifications will still appear. You can also individually [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
 
 
 In earlier versions of Windows 10, the setting will hide the Windows Defender client interface. If the user attempts to open it, they will receive a warning "Your system administrator has restricted access to this app.":

@@ -38,7 +38,7 @@ You can also configure how standard notifications appear on endpoints, such as n
 You can configure the display of additional notifications, such as recent threat detection summaries, in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md) and with Group Policy.
 
 > [!NOTE]
-> In Windows 10, version 1607, the feature was called **Enhanced notifications** and could be configured under **Windows Settings** > **Update & security** > **Windows Defender**.
+> In Windows 10, version 1607 the feature was called **Enhanced notifications** and could be configured under **Windows Settings** > **Update & security** > **Windows Defender**. In Group Policy settings in all versions of Windows 10 it is called **Enhanced notifications**.
 
 > [!IMPORTANT]
 > Disabling additional notifications will not disable critical notifications, such as threat detection and remediation alerts.
@@ -74,6 +74,8 @@ You can use Group Policy to:
 - Display additional, customized text on endpoints when the user needs to perform an action
 - Hide all notifications on endpoints
 - Hide reboot notifications on endpoints
+
+Hiding notifications can be useful in situations where you cannot hide the entire Windows Defender AV interface. See [Prevent users from seeing or interacting with the Windows Defender AV user interface](prevent-end-user-interaction-windows-defender-antivirus.md) for more information.
 
 > [!NOTE]
 > Hiding notifications will only occur on endpoints to which the policy has been deployed. Notifications related to actions that must be taken (such as a reboot) will still appear on the [System Center Configuration Manager Endpoint Protection monitoring dashboard and reports](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/monitor-endpoint-protection).
