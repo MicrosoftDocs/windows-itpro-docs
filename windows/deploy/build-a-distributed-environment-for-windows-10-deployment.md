@@ -26,12 +26,12 @@ Figure 1. The machines used in this topic.
 
 ## <a href="" id="sec01"></a>Replicate deployment shares
 
-Replicating the content between MDT01 (New York) and MDT02 (Stockholm) can be done in a number of different ways. The most common content replication solutions with Microsoft Deployment Toolkit (MDT) 2013 use either the Linked Deployment Shares (LDS) feature or Distributed File System Replication (DFS-R). Some organizations have used a simple robocopy script for replication of the content.
+Replicating the content between MDT01 (New York) and MDT02 (Stockholm) can be done in a number of different ways. The most common content replication solutions with Microsoft Deployment Toolkit (MDT) use either the Linked Deployment Shares (LDS) feature or Distributed File System Replication (DFS-R). Some organizations have used a simple robocopy script for replication of the content.
 
 **Note**  
 Robocopy has options that allow for synchronization between folders. It has a simple reporting function; it supports transmission retry; and, by default, it will only copy/remove files from the source that are newer than files on the target.
  
-### Linked deployment shares in MDT 2013 Update 2
+### Linked deployment shares in MDT
 
 LDS is a built-in feature in MDT for replicating content. However, LDS works best with strong connections such as LAN connections with low latency. For most WAN links, DFS-R is the better option.
 
@@ -211,15 +211,14 @@ Now you should have a solution ready for deploying the Windows 10 client to the
 
 [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)
 
-
 [Create a Windows 10 reference image](create-a-windows-10-reference-image.md)
 
-[Deploy a Windows 10 image using MDT 2013 Update 2](deploy-a-windows-10-image-using-mdt.md)
+[Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)
 
 [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md)
 
 [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)
 
-[Configure MDT settings](configure-mdt-2013-settings.md)
+[Configure MDT settings](configure-mdt-settings.md)
  
  

@@ -14,6 +14,12 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 >If you're looking for **update history** for Windows 10, see [Windows 10 and Windows Server 2016 update history](https://support.microsoft.com/help/12387/windows-10-update-history).
 
+## March 2017
+
+| New or changed topic | Description |
+| --- | --- |
+|[Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email](cortana-at-work-scenario-6.md) |New |
+
 ## February 2017
 
 | New or changed topic | Description |
@@ -26,11 +32,12 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) | Added Express updates. |
 | [Distribute offline apps](distribute-offline-apps.md) | General updates to topic. Added links to supporting content for System Center Configuration Manager and Microsoft Intune.  |
 
+
 ## January 2017
 
 | New or changed topic | Description |
 | --- | --- |
-| [Cortana integration in your business or enterprise](cortana-at-work-overview.md) | New |
+| [Cortana integration in your business or enterprise and sub-topics](cortana-at-work-overview.md) |New |
 | [Start layout XML for desktop editions of Windows 10](start-layout-xml-desktop.md) | New (previously published in Hardware Dev Center on MSDN) |
 | [Start layout XML for mobile editions of Windows 10](start-layout-xml-mobile.md) | New (previously published in Hardware Dev Center on MSDN) |
 | [Quick guide to Windows as a service](waas-quick-start.md) | Added video that explains how Windows as a service works. |
@@ -58,7 +65,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 | [Manage device restarts after updates](waas-restart.md) | New |
 | [Manage Windows 10 in your organization - transitioning to modern management](manage-windows-10-in-your-organization-modern-management.md)  | New |
 | [Cortana integration in your business or enterprise](manage-cortana-in-enterprise.md) |Added an important note about Cortana and Office 365 integration. |
-| [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) | Fixed the explanation for Start behavior when the .xml file containing the layout is not available when the user signs in. | 
+| [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md) | Fixed the explanation for Start behavior when the .xml file containing the layout is not available when the user signs in. |
 | [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added link to the Windows Restricted Traffic Limited Functionality Baseline. Added Teredo Group Policy. |
 | [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) | Added Current Branch for Business (CBB) support for Windows 10 IoT Mobile. |
 
@@ -85,7 +92,7 @@ This topic lists new and updated topics in the [Manage and update Windows 10](in
 
 ## RELEASE: Windows 10, version 1607
 
-The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added: 
+The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added:
 
 - [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md)
 - [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
@@ -117,7 +124,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md) | New telemetry content |
 | [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) |Removed info about sharing wi-fi network access with contacts, since it's been deprecated. |
 | [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Corrected script for setting a custom shell using Shell Launcher |
-| [Windows 10 servicing options for updates and upgrades](introduction-to-windows-10-servicing.md) | Removed Windows 10 Mobile from **Applies to** | 
+| [Windows 10 servicing options for updates and upgrades](introduction-to-windows-10-servicing.md) | Removed Windows 10 Mobile from **Applies to** |
 
 
 
@@ -142,12 +149,12 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | New or changed topic | Description |
 | ---|---|
 | [Configure telemetry and other settings in your organization](disconnect-your-organization-from-microsoft.md) | Added call history and email to the Settings &gt; Privacy section.<br />Added the Turn off Windows Mail application Group Policy to the Mail synchronization section. |
-| [Customize and export Start layout](customize-and-export-start-layout.md) | Added a note to clarify that partial Start layout is only supported in Windows 10, version 1511 and later |
+| [Customize and export Start layout](customize-and-export-start-layout.md) | Added a note to clarify that partial Start layout is only supported in Windows 10, version 1511 and later |
 | [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md) | Added instructions for replacing markup characters with escape characters in Start layout XML |
 | [Introduction to configuration service providers (CSPs) for IT pros](how-it-pros-can-use-configuration-service-providers.md) | New |
 | [Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md) | New |
-| [Windows 10 servicing options for updates and upgrades](introduction-to-windows-10-servicing.md) | Added information on servicing options for Windows 10 Mobile, Windows 10 Mobile Enterprise, and Windows 10 IoT Core (IoT Core). |
- 
+| [Windows 10 servicing options for updates and upgrades](introduction-to-windows-10-servicing.md) | Added information on servicing options for Windows 10 Mobile, Windows 10 Mobile Enterprise, and Windows 10 IoT Core (IoT Core). |
+
 
 ## December 2015
 
@@ -185,5 +192,3 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 [Change history for Deploy Windows 10](../deploy/change-history-for-deploy-windows-10.md)
 
 [Change history for Keep Windows 10 secure](../keep-secure/change-history-for-keep-windows-10-secure.md)
-
- 

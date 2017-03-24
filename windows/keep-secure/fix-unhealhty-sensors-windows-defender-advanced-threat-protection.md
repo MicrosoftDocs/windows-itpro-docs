@@ -36,7 +36,7 @@ If the machine has not been in use for more than 7 days for any reason, it will 
 A reinstalled or renamed machine will generate a new machine entity in Windows Defender ATP portal. The previous machine entity will remain with an ‘Inactive’ status in the portal. If you reinstalled a machine and deployed the Windows Defender ATP package, search for the new machine name to verify that the machine is reporting normally.
 
 **Machine was offboarded**</br>
-If the machine was offboarded it will still appear in machines view. After 7 days, the machine health state should change to inactive.
+If the machine was offboarded it will still appear in machines list. After 7 days, the machine health state should change to inactive.
 
 Do you expect a machine to be in ‘Active’ status? [Open a CSS ticket](https://support.microsoft.com/en-us/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
 
@@ -60,7 +60,7 @@ If you took corrective actions and the machine status is still misconfigured, [o
 
 ### No sensor data
 A misconfigured machine with status ‘No sensor data’ has communication with the service but can only report partial sensor data.
-Follow theses actions to correct known issues related to a misconfigured machine with status ‘Impaired communication’:
+Follow theses actions to correct known issues related to a misconfigured machine with status ‘No sensor data’:
 
 - [Ensure the endpoint has Internet connection](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-endpoint-has-an-internet-connection)</br>
   The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Windows Defender ATP service.
