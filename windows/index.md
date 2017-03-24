@@ -10,35 +10,74 @@ author: brianlic-msft
 # Windows 10 and Windows 10 Mobile
 
 
-This library provides the core content that IT pros need to evaluate, plan, deploy, and manage devices running Windows 10 or Windows 10 Mobile.
+This library provides the core content that IT pros need to evaluate, plan, deploy, secure and manage devices running Windows 10 or Windows 10 Mobile.
 
-## In this library
+<iframe src="https://channel9.msdn.com/Events/Ignite/Australia-2017/WIN212/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+
+<br/>
+<table border="0" width="100%" align='center'>
+</tr>
+  <tr style="text-align:center;">
+    <td style="width:25%; border:0;">
+      <a href="http://www.bing.com">
+        <img src="images/w10-whatsnew.png" alt="read what's new in Windows 10" title="What's new in Windows 10" />
+      </a>
+      <br/>What's New?
+    </td>
+    <td style="width:25%; border:0;">
+      <a href="http://www.bing.com">
+        <img src="images/w10-plan.png" alt="plan your Windows 10 deployment" title="Plan your Windows 10 deployment" />
+      </a>
+      <br/>Plan
+    </td>
+    <td style="width:25%; border:0;">
+      <a href="http://www.bing.com">
+        <img src="images/w10-deploy.png" alt="Deploy Windows 10 in your enterprise" title="Deploy Windows 10" />
+      </a>
+      <br/>Deploy
+    </td>
+    <td style="width:25%; border:0;">
+      <a href="http://www.bing.com">
+        <img src="images/w10-manage.png" alt="Manage Windows 10 in your enterprise" title="Manage Windows 10" />
+      </a>
+      <br/>Manage
+    </td>
+  </tr>
+  <tr style="text-align:center;">
+    <td style="width:25%; border:0;">
+      <a href="http://www.bing.com">
+        <img src="images/w10-secure.png" alt="Keep Windows 10 secure" title="Keep Windows 10 secure" />
+      </a>
+      <br/>Keep Secure
+    </td>
+    <td style="width:25%; border:0;" style='background-color: yellow;'>
+      <a href="http://www.bing.com">
+        <img src="images/W10-configure.png" alt="Deploy Windows 10 in your enterprise" title="Deploy Windows 10" />
+      </a>
+      <br/>Configure
+    </td>
+    <td style="width:25%; border:0;">
+      <a href="http://www.bing.com">
+        <img src="images/w10-update.png" alt="Update Windows 10 in your enterprise" title="Update Windows 10" />
+      </a>
+      <br/>Update
+    </td>
+    <td style="width:25%; border:0;">
+      <a href="http://www.bing.com">
+        <img src="images/w10-plan.png" alt="Get your " title="What's new in Windows 10" />
+      </a>
+      <br/>Start Your Evaluation
+    </td>
+  </tr>
+</table>
 
 
-[What's new in Windows 10](whats-new/index.md)
-
-[Plan for Windows 10 deployment](plan/index.md)
-
-[Deploy Windows 10](deploy/index.md)
-
-[Configure Windows 10](configure/index.md)
-
-[Update Windows 10](update/index.md)
-
-[Keep Windows 10 secure](keep-secure/index.md)
-
-[Manage Windows 10](manage/index.md)
+## Get to know Windows as a service
+[insert WaaS here.]
 
 ## Related topics
-
-
 [Windows 10 TechCenter](https://go.microsoft.com/fwlink/?LinkId=620009)
 
  
 
  
-
-
-
-
-
