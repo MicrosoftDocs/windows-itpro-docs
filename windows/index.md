@@ -92,6 +92,8 @@ This library provides the core content that IT pros need to evaluate, plan, depl
 </tr>
 <table>
 
+[![Building Windows](images/waas-poster-p1.png)](./update/waas-overview.md)
+[![Deploying Windows](images/waas-poster-p2.png)](./update/waas-servicing-strategy-windows-10-updates.md)
 
 ## Related topics
 [Windows 10 TechCenter](https://go.microsoft.com/fwlink/?LinkId=620009)
