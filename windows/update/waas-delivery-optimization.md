@@ -37,24 +37,24 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 
 Several Delivery Optimization features are configurable:
 
-| Group Policy setting | MDM setting |
-| --- | --- |
-| [Download mode](#download-mode) | DODownloadMode |
-| [Group ID](#group-id)  | DOGroupID |
-| [Minimum RAM (inclusive) allowed to use Peer Caching](#minimum-ram-allowed-to-use-peer-caching) | DOMinRAMAllowedToPeer |
-| [Minimum disk size allowed to use Peer Caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer |
-| [Max Cache Age](#max-cache-age) | DOMaxCacheAge |
-| [Max Cache Size](#max-cache-size)  | DOMaxCacheSize |
-| [Absolute Max Cache Size](#absolute-max-cache-size) | DOAbsoluteMaxCacheSize |
-| [Modify Cache Drive](#modify-cache-drive) | DOModifyCacheDrive |
-| [Minimum Peer Caching Content File Size](#minimum-peer-caching-content-file-size) | DOMinFileSizeToCache |
-| [Maximum Download Bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth |
-| [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth |
-| [Max Upload Bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth |
-| [Monthly Upload Data Cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap |
-| [Minimum Background QoS](#minimum-background-qos) | DOMinBackgroundQoS |
-| [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching |
-| [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 
+| Group Policy setting | MDM setting | Supported from version |
+| --- | --- | --- |
+| [Download mode](#download-mode) | DODownloadMode | 1511 |
+| [Group ID](#group-id)  | DOGroupID | 1511 |
+| [Minimum RAM (inclusive) allowed to use Peer Caching](#minimum-ram-allowed-to-use-peer-caching) | DOMinRAMAllowedToPeer | 1703 |
+| [Minimum disk size allowed to use Peer Caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer | 1703 |
+| [Max Cache Age](#max-cache-age) | DOMaxCacheAge | 1511 |
+| [Max Cache Size](#max-cache-size)  | DOMaxCacheSize | 1511 |
+| [Absolute Max Cache Size](#absolute-max-cache-size) | DOAbsoluteMaxCacheSize | 1607 |
+| [Modify Cache Drive](#modify-cache-drive) | DOModifyCacheDrive | 1607 |
+| [Minimum Peer Caching Content File Size](#minimum-peer-caching-content-file-size) | DOMinFileSizeToCache | 1703 |
+| [Maximum Download Bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth | 1607 |
+| [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth | 1607 |
+| [Max Upload Bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 |
+| [Monthly Upload Data Cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 |
+| [Minimum Background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 |
+| [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1703 |
+| [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1703 |
 
 When configuring Delivery Optimization on Windows 10 devices, the first and most important thing to configure, would be [Download mode](#download-mode). Download mode dictates how Delivery Optimization downloads Windows updates.
 
