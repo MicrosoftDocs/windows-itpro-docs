@@ -1,5 +1,5 @@
 ---
-title: 
+title: Exclude files
 description: 
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -8,10 +8,10 @@ ms.mktglfcycl: detect
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
-author: dulcemv
+author: iaanw
 ---
 
-# 
+# Exclude files
 
 **Applies to:**
 

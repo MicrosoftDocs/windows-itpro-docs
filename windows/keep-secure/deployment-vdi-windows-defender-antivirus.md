@@ -75,7 +75,7 @@ After creating the image, you should ensure it is fully updated. See [Configure 
 ### Seal the base image
 When the base image is fully updated, you should run a quick scan on the image. This “sealing” or “locking” of the image helps Windows Defender AV build a cache of known-good files and avoid scanning them again on your VMs. In turn, this can help ensure performance on the VM is not impacted.
 
-You can run a quick scan [from the command line](run-scan-command-line-windows-defender-antivirus.md) or via [System Center Configuration Manager](run-scan-windows-defender-antivirus.md).
+You can run a quick scan [from the command line](command-line-arguments-windows-defender-antivirus.md) or via [System Center Configuration Manager](run-scan-windows-defender-antivirus.md).
 
 >[!NOTE] <b>Quick scan versus full scan</b>
 >Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. Combined with our always on real-time protection capability - which reviews files when they are opened and closed, and whenever a user navigates to a folder – quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
@@ -147,7 +147,7 @@ These settings can be configured as part of creating your base image, or as a da
 
 Windows Defender AV supports the randomization of scheduled scans and signature updates. This can be extremely helpful in reducing boot storms (especially when used in conjuction with [Disable scans from occuring after every update](#disable-scans-after-an-update) and [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline).
 
-Scheduled scans run in addition to [real-time protection and scanning](windows-defender-antivirus-in-windows-10.md#always-on-real-time-protection).
+Scheduled scans run in addition to [real-time protection and scanning](configure-real-time-protection-windows-defender-antivirus.md).
 
 The start time of the scan itself is still based on the scheduled scan policy – ScheduleDay, ScheduleTime, ScheduleQuickScanTime.  
  

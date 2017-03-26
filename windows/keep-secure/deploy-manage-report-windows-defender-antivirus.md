@@ -47,7 +47,7 @@ Microsoft Azure|Deploy Microsoft Antimalware for Azure in the [Azure portal, by 
 
 1. <span id="fn1" />The availability of some functions and features, especially related to cloud-delivered protection, differ between System Center Configuration Manager, current branch (for example, System Center Configuration Manager 2016) and System Center Configuration Manager 2012. In this library, we've focused on Windows 10, Windows Server 2016, and System Center Configuration Manager, current branch (2016). See the [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) topic for a table that describes the major differences.  [(Return to table)](#ref1)
 
-1. <span id="fn2" />Configuration of features and protection, including configuring product and protection updates, are further described in the [Configure Windows Defender Antivirus features](configure-windows-defender-enhanced-notifications) section in this library.  [(Return to table)](#ref2)
+1. <span id="fn2" />Configuration of features and protection, including configuring product and protection updates, are further described in the [Configure Windows Defender Antivirus features](configure-notifications-windows-defender-antivirus.md) section in this library.  [(Return to table)](#ref2)
   
 1.	<span id="fn3" />In Windows 10, Windows Defender Antivirus is a component available without installation or deployment of an additional client or service. It will automatically be enabled when third-party antivirus products are either uninstalled or out of date. Traditional deployment therefore is not required. Deployment here refers to ensuring the Windows Defender Antivirus component is available and enabled on endpoints or servers.  [(Return to table)](#ref3)
 
@@ -73,11 +73,11 @@ Microsoft Azure|Deploy Microsoft Antimalware for Azure in the [Azure portal, by 
 [Set-MpPreference]:  https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference.md
 [Update-MpSignature]: https://technet.microsoft.com/itpro/powershell/windows/defender/update-mpsignature
 [Get- cmdlets available in the Defender module]: https://technet.microsoft.com/itpro/powershell/windows/defender/index
-[Configure update options for Windows Defender Antivirus]: configure-update-options-windows-defender-antivirus.md
+[Configure update options for Windows Defender Antivirus]: manage-updates-baselines-windows-defender-antivirus.md
 [Configure Windows Defender features]: configure-windows-defender-antivirus-features.md
 [Group Policies to determine if any settings or policies are not applied]: https://technet.microsoft.com/en-us/library/cc771389.aspx
 [Possibly infected devices]: https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-sign-ins-from-possibly-infected-devices
-[Windows Defender Antivirus events]: event-ids-windows-defender-antivirus.md
+[Windows Defender Antivirus events]: troubleshoot-windows-defender-antivirus.md
 
 
 ## In this section
@@ -86,7 +86,7 @@ Topic | Description
 ---|---
 [Deploy and enable Windows Defender Antivirus protection](deploy-windows-defender-antivirus.md) | While the client is installed as a core part of Windows 10, and traditional deployment does not apply, you will still need to enable the client on your endpoints with System Center Configuration Manager, Microsoft Intune, or Group Policy Objects.
 [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) | There are two parts to updating Windows Defender Antivirus: updating the client on endpoints (product updates), and updating definitions (protection updates). You can update definitions in a number of ways, using System Center Configuration Manager, Group Policy, PowerShell, and WMI.
-[Monitor and report on Windows Defender Antivirus protection](report-monitor-windows-defender-antiviirus.md) | You can use System Center Configuration Manager, a third-party SIEM product (by consuming Windows event logs), or Microsoft Intune to monitor protection status and create reports about endpoint protection
+[Monitor and report on Windows Defender Antivirus protection](report-monitor-windows-defender-antivirus.md) | You can use System Center Configuration Manager, a third-party SIEM product (by consuming Windows event logs), or Microsoft Intune to monitor protection status and create reports about endpoint protection
 
 ## Related topics
 

@@ -183,7 +183,7 @@ You will also see a detection under **Quarantined threats** in the **Scan histor
 
     ![Screenshot of quarantined items in the Windows Defender Security Center app](images/defender/wdav-quarantined-history-wdsc.png)
 
-The Windows event log will also show [Windows Defender client event ID 2050](event-ids-windows-defender-antivirus.md).
+The Windows event log will also show [Windows Defender client event ID 2050](troubleshoot-windows-defender-antivirus.md).
 
 >[!IMPORTANT]
 >You will not be able to use a proxy auto-config (.pac) file to test network connections to these URLs. You will  need to verify your proxy servers and any network filtering tools manually to ensure connectivity.
@@ -193,7 +193,7 @@ The Windows event log will also show [Windows Defender client event ID 2050](eve
 
 - [Windows Defender Antivirus in Windows 10](windows-defender-in-windows-10.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
-- [Run a Windows Defender scan from the command line](run-scan-command-line-windows-defender-antivirus) and [Command line arguments](command-line-arguments-windows-defender-antivirus.md)
+- [Run a Windows Defender scan from the command line](command-line-arguments-windows-defender-antivirus.md) and [Command line arguments](command-line-arguments-windows-defender-antivirus.md)
 - [Important changes to Microsoft Active Protection Services endpoint](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/important-changes-to-microsoft-active-protection-service-maps-endpoint/) 
 
 
