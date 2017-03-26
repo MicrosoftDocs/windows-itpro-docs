@@ -801,6 +801,8 @@
 #### [Troubleshoot Windows Defender ATP](troubleshoot-windows-defender-advanced-threat-protection.md)
 #### [Review events and errors on endpoints with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)
 #### [Windows Defender compatibility](defender-compatibility-windows-defender-advanced-threat-protection.md)
+
+
 ### [Windows Defender in Windows 10](windows-defender-in-windows-10.md)
 #### [Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)
 #### [Configure Windows Defender in Windows 10](configure-windows-defender-in-windows-10.md)
@@ -811,6 +813,8 @@
 #### [Run a Windows Defender scan from the command line](run-cmd-scan-windows-defender-for-windows-10.md)
 #### [Detect and block Potentially Unwanted Applications with Windows Defender](enable-pua-windows-defender-for-windows-10.md)
 #### [Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)
+
+
 ### [Windows Firewall with Advanced Security](windows-firewall-with-advanced-security.md)
 #### [Isolating Windows Store Apps on Your Network](isolating-apps-on-your-network.md)
 #### [Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012](securing-end-to-end-ipsec-connections-by-using-ikev2.md)
