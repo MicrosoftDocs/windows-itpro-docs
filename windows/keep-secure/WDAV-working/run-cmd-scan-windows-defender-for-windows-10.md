@@ -10,9 +10,9 @@ ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
 author: mjcaparas
-redirect_url: /run-scan-windows-defender-antivirus/
+redirect_url: /command-line-arguments-windows-defender-antivirus/
 ---
 
 # Run a Windows Defender scan from the command line
 
-This page has been redirected to *Configure and run on-demand scans*.
+This page has been redirected to *Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender Antivirus*.

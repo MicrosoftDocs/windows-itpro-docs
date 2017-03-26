@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
 author: iaanw
-redirect_url: /configure-notifications-windows-defender-antivirus.md/
+redirect_url: /configure-notifications-windows-defender-antivirus/
 ---
 
 # Configure enhanced notifications for Windows Defender in Windows 10
