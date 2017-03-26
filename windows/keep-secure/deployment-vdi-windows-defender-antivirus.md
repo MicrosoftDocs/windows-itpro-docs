@@ -77,7 +77,8 @@ When the base image is fully updated, you should run a quick scan on the image. 
 
 You can run a quick scan [from the command line](command-line-arguments-windows-defender-antivirus.md) or via [System Center Configuration Manager](run-scan-windows-defender-antivirus.md).
 
->[!NOTE] <b>Quick scan versus full scan</b>
+>[!NOTE] 
+><b>Quick scan versus full scan</b>
 >Quick scan looks at all the locations where there could be malware registered to start with the system, such as registry keys and known Windows startup folders. Combined with our always on real-time protection capability - which reviews files when they are opened and closed, and whenever a user navigates to a folder – quick scan helps provide strong coverage both for malware that starts with the system and kernel-level malware.  
 >Therefore, when considering performance – especially for creating a new or updated image in preparation for deployment – it makes sense to use a quick scan only. 
 >A full scan, however, can be useful on a VM that has encountered a malware threat to identify if there are any inactive components lying around and help perform a thorough clean-up.
