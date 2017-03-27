@@ -126,9 +126,9 @@ The following tables describe baseline protections, plus protections for improve
 
 <br>
 
-#### 2017 Additional security qualifications starting with Windows 10, version 1703 
+#### 2017 Additional security qualifications starting in 2017 
 
-The following table lists qualifications for Windows 10, version 1703, which are in addition to all preceding qualifications. 
+The following table lists qualifications for 2017, which are in addition to all preceding qualifications. 
 
 | Protection for Improved Security          | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
