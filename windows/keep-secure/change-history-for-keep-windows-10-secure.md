@@ -16,9 +16,9 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 ## March 2017
 |New or changed topic |Description |
 |---------------------|------------|
+|[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md)]|Added note about Azure RMS and USB drives and added new limitation about folder redirection.|
 |[Protect derived domain credentials with Credential Guard](credential-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
 |[Requirements and deployment planning guidelines for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
-|[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md)]|Added note about Azure RMS and USB drives and added new limitation about folder redirection.|
 
 
 ## January 2017
