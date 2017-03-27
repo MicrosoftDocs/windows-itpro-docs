@@ -82,11 +82,12 @@ You can roll back and remove a file from quarantine if you’ve determined that 
     b.	Right–click **Command prompt** and select **Run as administrator**.
 
 2.	Enter the following command, and press **Enter**:
- ```
- “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
- ```
-    >[!NOTE]
-    >Windows Defender ATP will remove all files that were quarantined on this machine in the last 30 days.
+  ```
+  “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+  ```
+  
+> [!NOTE]
+> Windows Defender ATP will remove all files that were quarantined on this machine in the last 30 days.
 
 ## Block files in your network
 You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
