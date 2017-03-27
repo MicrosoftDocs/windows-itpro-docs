@@ -1,6 +1,6 @@
 ---
-description: Use this article to learn more about what Windows telemetry is gathered at the basic telemetry level.
-title: Windows 10, version 1703 and Windows Server 2016 basic telemetry events and fields (Windows 10)
+description: Use this article to learn more about what Windows diagnostic data is gathered at the basic level.
+title: Windows 10, version 1703 and Windows Server 2016 basic diagnostic events and fields (Windows 10)
 keywords: privacy, telemetry
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -12,7 +12,7 @@ ms.author: brianlic
 ---
 
 
-# Windows 10, version 1703 and Windows Server 2016 basic telemetry level events and fields
+# Windows 10, version 1703 and Windows Server 2016 basic level Windows diagnostic events and fields
 
 
 > [!IMPORTANT]
@@ -26,13 +26,13 @@ ms.author: brianlic
 - Windows Server 2016
 
 
-The Basic telemetry level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Windows Store. When the telemetry level is set to Basic, it also includes the Security level information.
+The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Windows Store. When the level is set to Basic, it also includes the Security level information.
 
 The Basic level helps to identify problems that can occur on a particular device hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version. This helps Microsoft fix operating system or app problems.
 
-Use this article to learn about telemetry events, grouped by event area, and the fields within each event. A brief description is provided for each field. Every event generated includes common data, which collects device data.
+Use this article to learn about diagnostic events, grouped by event area, and the fields within each event. A brief description is provided for each field. Every event generated includes common data, which collects device data.
 
-You can learn more about Windows functional and telemetry data through these articles:
+You can learn more about Windows functional and diagnostic data through these articles:
 
 
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
