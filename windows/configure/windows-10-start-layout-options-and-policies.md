@@ -80,6 +80,9 @@ Whether you apply the taskbar configuration to a clean install or an update, use
 * Change the order of pinned apps
 * Unpin any app
 
+>[!NOTE]
+>In Windows 10, version 1703, you can apply an MDM policy, `Start/NoPinningToTaskbar`, to prevents users from pinning and unpinning apps on the taskbar.
+
 ### Taskbar configuration applied to clean install of Windows 10
 
 In a clean install, if you apply a taskbar layout, only the apps that you specify and default apps that you do not remove will be pinned to the taskbar. Users can pin additional apps to the taskbar after the layout is applied.
@@ -94,22 +97,16 @@ The new taskbar layout for upgrades to Windows 10, version 1607 or later, will a
 * If the user didn't pin the app and the app is in the updated layout file, the app will be pinned to the right.
 * New apps specified in updated layout file are pinned to right of user's pinned apps.
   
-
+[Learn how to onfigure Windows 10 taskbar](configure-windows-10-taskbar.md).
 
 ## Related topics
 
 
-[Customize and export Start layout](customize-and-export-start-layout.md)
-
-[Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
-
-[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-
-[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
-
-[Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-
-[Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)
+- [Customize and export Start layout](customize-and-export-start-layout.md)
+- [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+- [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+- [Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+- [Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)
 
  
 
