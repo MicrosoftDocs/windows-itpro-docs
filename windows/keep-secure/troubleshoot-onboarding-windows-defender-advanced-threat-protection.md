@@ -231,8 +231,8 @@ If the verification fails and your environment is using a proxy to connect to th
 
 - Depending on the tool that you use to implement policies, you'll need to verify that the following Windows Defender policies are cleared:
 
-  - ```DisableAntiSpyware```
-  - ```DisableAntiVirus```
+  - DisableAntiSpyware
+  - DisableAntiVirus
 
   For example, in Group Policy there should be no entries such as the following values:
 
