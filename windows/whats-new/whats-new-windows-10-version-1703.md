@@ -188,6 +188,12 @@ Windows 10, version 1703 adds several new [configuration service providers (CSPs
 
 [Learn more about new MDM capabilities.](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/new-in-windows-mdm-enrollment-management#whatsnew10)
 
+### Mobile application management support for Windows 10
+
+The Windows version of mobile application management (MAM) is a lightweight solution for managing company data access and security on personal devices. MAM support is built into Windows on top of Windows Information Protection (WIP), starting in Windows 10, version 1703.
+
+For more info, see [Implement server-side support for mobile application management on Windows](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/implement-server-side-mobile-application-management).
+
 
 
 ### Application Virtualization for Windows (App-V)
