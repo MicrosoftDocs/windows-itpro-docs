@@ -36,4 +36,5 @@ Topic | Description
 [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md) | Create custom threat intelligence alerts so that you can generate specific alerts that are applicable to your organization.
 [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md) | Use the PowerShell code examples to guide you in using the custom threat intelligence API.
 [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md) | Use the Python code examples to guide you in using the custom threat intelligence API.
+[Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md) | Create custom threat intelligence alerts that can help you keep track of possible attack activities in your organization. 
 [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md) | Learn how to address possible issues you might encounter while using the threat intelligence API.
