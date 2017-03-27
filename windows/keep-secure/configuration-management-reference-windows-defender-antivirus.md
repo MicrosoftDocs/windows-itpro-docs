@@ -40,5 +40,5 @@ Topic | Description
 [Use System Center Configuration Manager and Microsoft Intune to configure and manage Windows Defender AV](use-intune-config-manager-windows-defender-antivirus.md)|Information on using System Center Configuration Manager and Microsoft Intune to deploy, manage, report, and configure Windows Defender AV
 [Use PowerShell cmdlets to configure and manage Windows Defender AV](use-powershell-cmdlets-windows-defender-antivirus.md)|Instructions on using PowerShell cmdlets in the Defender Module and links to documentation for all cmdlets and allowed parameters
 [Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender AV](use-wmi-windows-defender-antivirus.md)| Instructions on using WMI to manage Windows Defender AV and links to documentation for the Windows Defender WMIv2 APIs (including all classes, methods, and properties)
-[Use the mpcmdrun.exe command-line tool to configure and manage Windows Defender Antivirus](command-line-arguments-windows-defender-antivirus.md)|Instructions on using the dedicated command-line tool to manage and use Windows Defender AV
+[Use the mpcmdrun.exe command-line tool to configure and manage Windows Defender Antivirus](command-line-arguments-windows-defender-antivirus.md)|Instructions on using the dedicated command-line tool to manage and use Windows Defender AV
 

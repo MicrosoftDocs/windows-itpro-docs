@@ -1,6 +1,6 @@
 ---
 title: Set up exclusions for Windows Defender AV scans
-description: You can exclude files (including files modified by specified processes) and folders from being scanned by Windows Defender AV
+description: You can exclude files (including files modified by specified processes) and folders from being scanned by Windows Defender AV
 keywords: 
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -137,5 +137,5 @@ Exclusions | Turn off Auto Exclusions |
 
 ## Related topics
 
-- [Customize, initiate, and review the results of Windows Defender AV scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
+- [Customize, initiate, and review the results of Windows Defender AV scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

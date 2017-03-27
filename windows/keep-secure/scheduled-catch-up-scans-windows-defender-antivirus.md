@@ -18,7 +18,7 @@ author: iaanw
 
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 **Audience**
 

@@ -15,7 +15,7 @@ author: iaanw
 # Manage updates for mobile devices and virtual machines (VMs)
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 **Audience**
 

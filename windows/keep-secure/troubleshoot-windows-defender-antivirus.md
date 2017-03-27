@@ -15,7 +15,7 @@ author: iaanw
 
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 **Audience**
 
@@ -1300,7 +1300,7 @@ Description of the error. </dt>
 </td>
 </tr>
 </table>
-<p> </p>
+<p> </p>
 <p>If this event persists:<ol>
 <li>Run the scan again.</li>
 <li>If it fails in the same way, go to the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support site</a>, enter the error number in the <b>Search</b> box to look for the error code.</li>
@@ -1345,8 +1345,8 @@ Description of the error. </dt>
 <tr>
 <td></td>
 <td colspan="2">
-<div class="alert"><b>Note</b>  This event will only be logged if the following policy is set: <b>ThreatFileHashLogging 	unsigned</b>.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  This event will only be logged if the following policy is set: <b>ThreatFileHashLogging 	unsigned</b>.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -2963,7 +2963,7 @@ article</a>.</p>
 </p>
 </td>
 <td>
-<p>You can only use Windows Defender in Windows 10. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.  
+<p>You can only use Windows Defender in Windows 10. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.  
 </p>
 </td>
 </tr>

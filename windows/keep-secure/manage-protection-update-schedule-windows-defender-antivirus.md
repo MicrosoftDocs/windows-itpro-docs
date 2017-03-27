@@ -15,7 +15,7 @@ author: iaanw
 # Manage the schedule for when protection updates should be downloaded and applied
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 **Audience**
 

@@ -1,6 +1,6 @@
 ---
 title: Windows Defender Antivirus
-description: Learn how to manage, configure, and use Windows Defender AV, the built-in antimalware and antivirus product available in Windows 10.
+description: Learn how to manage, configure, and use Windows Defender AV, the built-in antimalware and antivirus product available in Windows 10.
 keywords: windows defender antivirus, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, threat, detection, protection, security
 ms.assetid: 6A9EB85E-1F3A-40AC-9A47-F44C4A2B55E2
 ms.prod: w10
@@ -14,7 +14,7 @@ author: iaanw
 # Windows Defender Antivirus in Windows 10
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 Windows Defender Antivirus is a built-in antimalware solution that provides security and antimalware management for desktops, portable computers, and servers.
 
@@ -38,7 +38,7 @@ See the [In this library](#in-this-library) list at the end of this topic for li
 
 ## Minimum system requirements
 
-Windows Defender has the same hardware requirements as Windows 10. For more information, see:
+Windows Defender has the same hardware requirements as Windows 10. For more information, see:
 -   [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086.aspx)
 -   [Hardware component guidelines](https://msdn.microsoft.com/library/windows/hardware/dn915049.aspx)
 
@@ -60,7 +60,7 @@ You can still [manage updates for Windows Defender](manage-updates-baselines-win
 If you uninstall the other product, and choose to use Windows Defender to provide protection to your endpoints, Windows Defender will automatically return to its normal active mode.
 
 
- 
+ 
 ## In this library
 
 Topic | Description

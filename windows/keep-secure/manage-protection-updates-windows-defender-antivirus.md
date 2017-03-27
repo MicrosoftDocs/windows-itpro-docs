@@ -15,7 +15,7 @@ author: iaanw
 # Manage Windows Defender Antivirus protection and definition updates
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 **Audience**
 

@@ -16,7 +16,7 @@ author: iaanw
 
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 
 
@@ -155,4 +155,4 @@ Read more about this in:
 ## Use Endpoint Protection to configure archive scans
 
 In Endpoint Protection, you can use the advanced scanning options to configure archive scanning. For more information, see [What are advanced scanning options?](https://technet.microsoft.com/library/ff823807.aspx)
- 
+ 

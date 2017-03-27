@@ -15,7 +15,7 @@ author: iaanw
 # Manage event-based forced updates
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 **Audience**
 

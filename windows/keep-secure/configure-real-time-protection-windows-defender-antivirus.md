@@ -14,7 +14,7 @@ author: iaanw
 
 
 
-# Enable and configure Windows Defender AV always-on protection and monitoring
+# Enable and configure Windows Defender AV always-on protection and monitoring
 
 
 

@@ -15,7 +15,7 @@ author: iaanw
 # Manage updates and scans for endpoints that are out of date
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 **Audience**
 
