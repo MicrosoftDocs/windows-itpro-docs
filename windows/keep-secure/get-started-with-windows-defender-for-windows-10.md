@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
 author: jasesso
-redirect_url: /windows-defender-antivirus-in-windows-10/
+redirect_url: /deploy-manage-report-windows-defender-antivirus/
 ---
 
 # Update and manage Windows Defender in Windows 10
