@@ -1,11 +1,11 @@
 ---
-title: Use the command line utility
-description: 
+title: Run and customize on-demand scans in Windows Defender AV
+description: Run and configure on-demand scans using PowerShell, Windows Management Instrumentation, or individually on endpoints with the Windows Defender Security Center app
 keywords: 
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
-ms.mktglfcycl: detect
+ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
@@ -16,7 +16,7 @@ author: iaanw
 
 
 
-# Run a Windows Defender scan from the command line
+# Configure and run Windows Defender AV scans
 
 **Applies to:**
 

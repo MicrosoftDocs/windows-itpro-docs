@@ -1,25 +1,22 @@
 ---
-title: Update and manage Windows Defender in Windows 10 (Windows 10)
-description: IT professionals can manage Windows Defender on Windows 10 endpoints in their organization using Microsoft Active Directory or Windows Server Update Services (WSUS), apply updates to endpoints, and manage scans using Group Policy SettingsWindows Management Instrumentation (WMI)PowerShell.
-ms.assetid: 045F5BF2-87D7-4522-97E1-C1D508E063A7
+title: Configure advanced scanning types for Windows Defender AV
+description: You can configure Windows Defender AV to scan email storage files, back-up or reparse points, network files, and archived files (such as .zip files).
+keywords: advanced scans, scanning, email, archive, zip, rar, archive, reparse scanning
+search.product: eADQiWindows 10XVcnh
+ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
-author: jasesso
+author: iaanw
 ---
 
-# Update and manage Windows Defender in Windows 10
+# Configure email, removable storage, network, reparse point, and archive scanning in Windows Defender AV
+
 
 **Applies to**
 -   Windows 10
-
-IT professionals can manage Windows Defender on Windows 10 endpoints in their organization using Microsoft Active Directory or Windows Server Update Services (WSUS), apply updates to endpoints, and manage scans using:
-
--   Group Policy Settings
--   Windows Management Instrumentation (WMI)
--   PowerShell
 
 
 

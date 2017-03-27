@@ -1,6 +1,6 @@
 ---
-title: Schedule catch-up scans
-description: 
+title: Schedule regular scans with Windows Defender AV
+description: Set up recurring (scheduled) scans, including when they should run and whether they run as full or quick scans
 keywords: 
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -12,7 +12,10 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Schedule scans
+
+# Configure scheduled scans for Windows Defender AV
+
+
 
 **Applies to**
 -   Windows 10

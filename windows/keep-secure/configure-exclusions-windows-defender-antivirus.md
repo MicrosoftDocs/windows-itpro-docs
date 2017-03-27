@@ -1,17 +1,19 @@
 ---
-title: Exclude files
-description: 
+title: Set up exclusions for Windows Defender AV scans
+description: You can exclude files (including files modified by specified processes) and folders from being scanned by Windows Defender AV
+keywords: 
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
-ms.mktglfcycl: detect
+ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
 author: iaanw
 ---
 
-# Exclude files
+# Exclude files and processes from Windows Defender AV scans
+
 
 **Applies to:**
 
