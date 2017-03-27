@@ -1,5 +1,5 @@
 ---
-title: What's new in Windows 10, version 1703 (Windows 10)
+title: New IT Pro content for Windows 10, version 1703
 description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 keywords: ["What's new in Windows 10", "Windows 10", "creators update"]
 ms.prod: w10
@@ -10,9 +10,11 @@ localizationpriority: high
 ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
 ---
 
-# What's new in Windows 10, version 1703
+# New IT Pro content for Windows 10, version 1703
 
-Below is a list of some of the new and updated features in Windows 10, version 1703 (also known as the Creators Update).
+Below is a list of some of the new and updated content that discusses Information Technology (IT) Pro features in Windows 10, version 1703 (also known as the Creators Update).
+
+For more general info about Windows 10 features, see [Features available only on Windows 10](https://www.microsoft.com/windows/features).
 
 >[!NOTE]
 >For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
@@ -29,11 +31,13 @@ Windows Configuration Designer in Windows 10, version 1703, includes several new
 
 [Learn more about Windows Configuration Designer.](../configure/provisioning-packages.md)
 
+
 ### Bulk enrollment in Azure Active Directory
 
 Using the new wizards in Windows Configuration Designer, you can [create provisioning packages to enroll devices in Azure Active Directory](../configure/provisioning-packages.md#configuration-designer-wizards). Bulk enrollment in Azure AD is available in the desktop, mobile, kiosk, and Surface Hub wizards.
 
 ![get bulk token action in wizard](images/bulk-token.png) 
+
 
 ### Windows Spotlight
 
@@ -48,7 +52,7 @@ The following new Group Policy and mobile device management (MDM) settings are a
 
 ### Start and taskbar layout
 
-Enterprises can apply a customized Start and taskbar layout to devices running Windows 10 Pro, version 1703. 
+Enterprises have been able to apply customized Start and taskbar layouts to devices running Windows 10 Enterprise and Education. In Windows 10, version 1703, customized Start and taskbar layout can also be applied to Windows 10 Pro. 
 
 Additional MDM policy settings are available for Start and taskbar layout. For details, see [Manage Windows 10 Start and taskbar layout](../configure/windows-10-start-layout-options-and-policies.md).
 
@@ -62,7 +66,11 @@ The Lockdown Designer app helps you configure and create a lockdown XML file to 
 
 [Learn more about the Lockdown Designer app.](../configure/mobile-lockdown-designer.md)
 
+### Cortana at work
 
+Cortana is Microsoft’s personal digital assistant, who helps busy people get things done, even while at work. Cortana has powerful configuration options, specifically optimized for your business. By signing in with an Azure Active Directory (Azure AD) account, your employees can give Cortana access to their enterprise/work identity, while getting all the functionality Cortana provides to them outside of work.
+
+Using Azure AD also means that you can remove an employee’s profile (for example, when an employee leaves your organization) while respecting Windows Information Protection (WIP) policies and ignoring enterprise content, such as emails, calendar items, and people lists that are marked as enterprise data.
 
 
 ## Deployment
@@ -76,12 +84,6 @@ The GPT partition format is newer and enables the use of larger and more disk pa
 Additional security features of Windows 10 that are enabled when you boot in UEFI mode include: Secure Boot, Early Launch Anti-malware (ELAM) driver, Windows Trusted Boot, Measured Boot, Device Guard, Credential Guard, and BitLocker Network Unlock.
 
 For details, see [MBR2GPT.EXE](../deploy/mbr-to-gpt.md).
-
-### Cortana at work
-
-Cortana is Microsoft’s personal digital assistant, who helps busy people get things done, even while at work. Cortana has powerful configuration options, specifically optimized for your business. By signing in with an Azure Active Directory (Azure AD) account, your employees can give Cortana access to their enterprise/work identity, while getting all the functionality Cortana provides to them outside of work.
-
-Using Azure AD also means that you can remove an employee’s profile (for example, when an employee leaves your organization) while respecting Windows Information Protection (WIP) policies and ignoring enterprise content, such as emails, calendar items, and people lists that are marked as enterprise data.
 
 ## Security
 
@@ -166,6 +168,17 @@ Added policies include:
 - [Minimum Peer Caching Content File Size](../update/waas-delivery-optimization.md#minimum-peer-caching-content-file-size)
 
 To check out all the details, see [Configure Delivery Optimization for Windows 10 updates](../update/waas-delivery-optimization.md)
+
+## Manage
+
+### Application Virtualization for Windows (App-V)
+Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10, version 1703 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Addtionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically cleanup your unpublished packages after a device restart.
+
+For more info, see the following topics:
+- [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-provision-a-vm.md)
+- [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-batch-sequencing.md)
+- [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-batch-updating.md)
+- [Automatically cleanup unpublished packages on the App-V client](../manage/appv-auto-clean-unpublished-packages.md)
 
 ## Related topics
 
