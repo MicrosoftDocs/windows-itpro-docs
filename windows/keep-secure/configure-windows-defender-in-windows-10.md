@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
 author: jasesso
-redirect_url: deploy-manage-report-windows-defender-antivirus
+redirect_url: /itpro/windows/keep-secure/deploy-manage-report-windows-defender-antivirus/
 ---
 
 # Configure Windows Defender in Windows 10
