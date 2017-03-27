@@ -219,6 +219,3 @@ Update Compliance is a solution built using OMS Logs and Analytics that provides
 
 For more information about Update Compliance, see [Monitor Windows Updates with Update Compliance](../manage/update-compliance-monitor.md).
 
-### Enhanced Mobile Device Management (MDM) support
-
-Mobile device management (MDM) has new configuration service providers (CSPs) that can be called from code to manage Windows 10 devices. For more info, see [What's new in MDM in Windows 10, version 1703](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/new-in-windows-mdm-enrollment-management#whatsnew10).
