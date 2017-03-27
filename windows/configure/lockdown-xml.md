@@ -479,7 +479,7 @@ After you build the provisioning package, follow the instructions for [applying 
 
 After you deploy your devices, you can still configure lockdown settings through your MDM solution if it supports the [EnterpriseAssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=618601).
 
-To push lockdown settings to enrolled devices, use the AssignedAccessXML setting and use the lockdown XML as the value. The lockdown XML will be in a HandheldLockdown section that becomes XML embedded in XML, so the XML that you enter must use escaped characters (such as &lt; in place of &lt;). After the MDM provider pushes your lockdown settings to the device, the CSP processes the file and updates the device.
+To push lockdown settings to enrolled devices, use the AssignedAccessXML setting and use the lockdown XML as the value. The lockdown XML will be in a HandheldLockdown section that becomes XML embedded in XML, so the XML that you enter must use escaped characters (such as `&lt;` in place of &lt;). After the MDM provider pushes your lockdown settings to the device, the CSP processes the file and updates the device.
 
 ## Full Lockdown.xml example
 

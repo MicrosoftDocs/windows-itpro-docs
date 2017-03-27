@@ -34,13 +34,28 @@ Three features enable Start and taskbar layout control:
 
 -   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
-    **Note**  
-    To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
+    >[!NOTE]  
+    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
 
 -    [You can modify the Start .xml file](configure-windows-10-taskbar.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.
 
+-   In Windows Configuration Designer, you use the **Policies/Start/StartLayout** setting to provide the contents of the .xml file that defines the Start and taskbar layout.
 
--   In Windows Configuration Designer, you use the **Start/StartLayout** setting to set the path to the .xml file that defines the Start and taskbar layout.
+<span id="escape" />
+## Prepare the Start layout XML file
+
+Before you paste the contents of the .xml file in the **Policies/Start/StartLayout** setting, you must remove all line breaks and replace markup characters with escape characters. 
+
+1. In PowerShell, run the following script:
+
+    ```
+    $path="layout.xml"
+    (Get-Content $path -Raw).Replace("'r'n","") | Set-Content $path -Force
+    ```
+
+2. Copy the contents of layout.xml into an online tool that escapes characters.
+
+3. Copy the text with the escape characters and paste it in the **Polilcies/Start/StartLayout** setting in your provisioning package. 
 
 ## <a href="" id="bkmk-domaingpodeployment"></a>Create a provisioning package that contains a customized Start layout
 
@@ -60,12 +75,12 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 5.  On **New project**, click **Finish**. The workspace for your package opens.
 
-6.  Expand **Runtime settings** &gt; **Start**, and click **StartLayout**.
+6.  Expand **Runtime settings** &gt; **Policies** &gt; **Start**, and click **StartLayout**.
 
     >[!TIP]
     >If **Start** is not listed, check the type of settings you selected in step 4. You must create the project using settings for **All Windows desktop editions**.
 
-7.  Specify the path and file name of the Start layout .xml that you created with the [Export-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=620879) cmdlet.
+7.  Paste the text from the layout.xml file, [with line breaks removed and markup characters replaced with escape characters](#escape).
 
 8.  On the **File** menu, select **Save.**
 
