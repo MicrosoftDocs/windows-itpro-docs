@@ -1,23 +1,23 @@
 ---
-title: New IT Pro content for Windows 10, version 1703
-description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
+title: What's in Windows 10, version 1703
+description: New and updated IT Pro content about new features in Windows 10, version 1703 (also known as the Creators Updated).
 keywords: ["What's new in Windows 10", "Windows 10", "creators update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: TrudyHa
+author: JasonGerend
 localizationpriority: high
 ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
 ---
 
-# New IT Pro content for Windows 10, version 1703
+# What's new in Windows 10, version 1703 IT Pro content
 
 Below is a list of some of the new and updated content that discusses Information Technology (IT) Pro features in Windows 10, version 1703 (also known as the Creators Update).
 
-For more general info about Windows 10 features, see [Features available only on Windows 10](https://www.microsoft.com/windows/features).
+For more general info about Windows 10 features, see [Features available only on Windows 10](https://www.microsoft.com/windows/features). For info about previous versions of Windows 10, see [What's New in Windows 10](index.md).
 
 >[!NOTE]
->For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
+>For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info). For a list of removed features, see [Features that are removed or deprecated in Windows 10 Creators Update](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update).
  
 ## Configuration
 
@@ -196,9 +196,29 @@ For more info, see the following topics:
 - [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-batch-updating.md)
 - [Automatically cleanup unpublished packages on the App-V client](../manage/appv-auto-clean-unpublished-packages.md)
 
-## Related topics
+## New features in related products
+The following new features aren't part of Windows 10, but help you make the most of it.
 
-- [Features that are removed or deprecated in Windows 10 Creators Update](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update)
-- [Windows 10 release information](https://technet.microsoft.com/windows/release-info)
-- [What's new in MDM in Windows 10, version 1703](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/new-in-windows-mdm-enrollment-management#whatsnew10)
-- [Manage Windows upgrades with Upgrade Readiness](../deploy/manage-windows-upgrades-with-upgrade-readiness.md)
+### Upgrade Readiness
+
+Upgrade Readiness helps you ensure that applications and drivers are ready for a Windows 10 upgrade. The solution provides up-to-date application and driver inventory, information about known issues, troubleshooting guidance, and per-device readiness and tracking details. The Upgrade Readiness tool moved from public preview to general availability on March 2, 2017. 
+
+The development of Upgrade Readiness has been heavily influenced by input from the community the development of new features is ongoing. To begin using Upgrade Readiness, add it to an existing Operation Management Suite (OMS) workspace or sign up for a new OMS workspace with the Upgrade Readiness solution enabled.  
+
+For more information about Upgrade Readiness, see the following topics:
+
+- [Windows Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/)
+- [Manage Windows upgrades with Upgrade Readiness](manage-windows-upgrades-with-upgrade-readiness.md)
+
+
+### Update Compliance
+
+Update Compliance helps you to keep Windows 10 devices in your organization secure and up-to-date.
+
+Update Compliance is a solution built using OMS Logs and Analytics that provides information about installation status of monthly quality and feature updates. Details are provided about the deployment progress of existing updates and the status of future updates. Information is also provided about devices that might need attention to resolve issues.
+
+For more information about Update Compliance, see [Monitor Windows Updates with Update Compliance](../manage/update-compliance-monitor.md).
+
+### Enhanced Mobile Device Management (MDM) support
+
+Mobile device management (MDM) has new configuration service providers (CSPs) that can be called from code to manage Windows 10 devices. For more info, see [What's new in MDM in Windows 10, version 1703](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/new-in-windows-mdm-enrollment-management#whatsnew10).
