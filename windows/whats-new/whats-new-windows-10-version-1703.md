@@ -208,7 +208,7 @@ The development of Upgrade Readiness has been heavily influenced by input from t
 For more information about Upgrade Readiness, see the following topics:
 
 - [Windows Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/)
-- [Manage Windows upgrades with Upgrade Readiness](..deploy/manage-windows-upgrades-with-upgrade-readiness.md)
+- [Manage Windows upgrades with Upgrade Readiness](../deploy/manage-windows-upgrades-with-upgrade-readiness.md)
 
 
 ### Update Compliance
