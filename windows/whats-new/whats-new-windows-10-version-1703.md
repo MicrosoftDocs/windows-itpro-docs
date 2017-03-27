@@ -173,7 +173,7 @@ To check out all the details, see [Configure Delivery Optimization for Windows 1
 
 ### New MDM capabilities
 
-Windows 10, version 1703 adds several new configuration service providers (CSPs) that provide new capabilities for managing Windows 10 devices using MDM. Some of the new CSPs are:
+Windows 10, version 1703 adds several new [configuration service providers (CSPs)](../configure/how-it-pros-can-use-configuration-service-providers.md) that provide new capabilities for managing Windows 10 devices using MDM. Some of the new CSPs are:
 
 - The [DynamicManagement CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dynamicmanagement-csp) allows you to manage devices differently depending on location, network, or time. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country to avoid roaming charges, or the wireless network can be disabled when the device is not within the corporate building or campus. Once configured, these settings will be enforced even if the device can’t reach the management server when the location or network changes. The Dynamic Management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs. 
 
