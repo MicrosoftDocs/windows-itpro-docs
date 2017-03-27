@@ -18,12 +18,12 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-With the new Windows Store for Business, organizations can make volume purchases of Windows apps. The Store for Business provides app purchases based on organizational identity, flexible distribution options, and the ability to reclaim or re-use licenses. Organizations can also use the Store for Business to create a private store for their employees that includes apps from the Store, as well private Line-of-Business (LOB) apps.
+With Windows Store for Business, organizations can make volume purchases of Windows apps. The Store for Business provides app purchases based on organizational identity, flexible distribution options, and the ability to reclaim or re-use licenses. Organizations can also use the Store for Business to create a private store for their employees that includes apps from the Store, as well private Line-of-Business (LOB) apps.
 
 ## Features
 
 
-Organizations of any size can benefit from using the Store for Business provides:
+Organizations of any size can benefit from using the Store for Business:
 
 -   **Scales to fit the size of your business** - For smaller businesses, with Azure AD accounts and Windows 10 devices, you can quickly have an end-to-end process for acquiring and distributing content using the Store for Business. For larger businesses, all the capabilities of the Store for Business are available to you, or you can integrate the Store for Business with management tools, for greater control over access to apps and app updates. You can use existing work or school accounts.
 
@@ -46,7 +46,6 @@ Organizations of any size can benefit from using the Store for Business provides
 -   **Up-to-date apps** - The Store for Business manages the update process for apps with online licenses. Apps are automatically updated so you are always current with the most recent software updates and product features. Store for Business apps also uninstall cleanly, without leaving behind extra files, for times when you need to switch apps for specific employees.
 
 ## Prerequisites
-
 
 You'll need this software to work with the Store for Business.
 
@@ -77,7 +76,6 @@ While not required, you can use a management tool to distribute and manage apps.
 -   Need to sync with the Store for Business inventory to distribute apps.
 
 ## How does the Store for Business work?
-
 
 ### Sign up!
 
