@@ -127,7 +127,6 @@ or [Manage Windows 10 updates using System Center Configuration Manager](waas-ma
 </br>
 
 ## Related topics
-
 - [Update Windows 10 in the enterprise](index.md)
 - [Overview of Windows as a service](waas-overview.md)
 - [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md)
