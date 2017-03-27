@@ -1,7 +1,7 @@
 ---
 title: Windows Defender Advanced Threat Protection portal overview
 description: Use the Windows Defender ATP portal to monitor your enterprise network and assist in responding to alerts to potential advanced persistent threat (APT) activity or data breaches.
-keywords: Windows Defender ATP portal, portal, cybersecurity threat intelligence, dashboard, alerts queue, machines view, preferences setup, endpoint management, advanced attacks
+keywords: Windows Defender ATP portal, portal, cybersecurity threat intelligence, dashboard, alerts queue, machines list, preferences setup, endpoint management, advanced attacks
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -38,7 +38,7 @@ When you open the portal, you’ll see the main areas of the application:
 - (3) Main portal
 
 > [!NOTE]
-> Malware related detections will only appear if your endpoints are using [Windows Defender](https://technet.microsoft.com/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
+> Malware related detections will only appear if your endpoints are using [Windows Defender Antivirus](https://technet.microsoft.com/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
 
 You can navigate through the portal using the menu options available in all sections. Refer to the following table for a description of each section.
 
@@ -48,10 +48,10 @@ Area | Description
 (2) Navigation pane | Use the navigation pane to move between the **Dashboard**, **Alerts queue**, **Machines view**, **Service health**, **Preferences setup**, and **Enpoint Management**.
 **Dashboard**	| Provides clickable tiles that open detailed information on various alerts that have been detected in your organization.
 **Alerts queue** | Enables you to view separate queues of new, in progress, and resolved alerts.
-**Machines view**| Displays the list of machines that are onboarded to Windows Defender ATP, some information about them, and the corresponding number of alerts.
+**Machines view** | Displays the list of machines that are onboarded to Windows Defender ATP, some information about them, and the corresponding number of alerts.
 **Service health** | Provides information on the current status of the Window Defender ATP service. You'll be able to verify that the service status is healthy or if there are current issues.
-**Preferences setup**|	Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set email notifications, activate the preview experience, and enable or turn off advanced features.
-**Endpoint Management**|	Allows you to download the onboarding configuration package. It provides access to endpoint offboarding.
+**Preferences setup** |	Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set email notifications, activate the preview experience, and enable or turn off advanced features.
+**Endpoint Management** |	Allows you to download the onboarding configuration package. It provides access to endpoint offboarding.
 (3) Main portal| Main area where you will see the different views such as the Dashboard, Alerts queue, and Machines view.
 
 ## Windows Defender ATP icons

@@ -13,7 +13,7 @@ Microsoft analyzes system, application, and driver telemetry data to help you de
 <img src="media/image1.png" width="624" height="401" />
 -->
 
-![Upgrade Readiness architecture](images/upgrade-analytics-architecture.png)
+![Upgrade Readiness architecture](images/ur-arch-diagram.png)
 
 After you enable Windows telemetry on user computers and install the compatibility update KB (1), user computers send computer, application and driver telemetry data to a secure Microsoft data center through the Microsoft Data Management Service (2). After you configure Upgrade Readiness, telemetry data is analyzed by the Upgrade Readiness Service (3) and pushed to your OMS workspace (4). You can then use the Upgrade Readiness solution (5) to plan and manage Windows upgrades.
 

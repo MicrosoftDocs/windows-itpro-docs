@@ -17,9 +17,13 @@ The following color-coded status changes are reflected on the upgrade overview b
     - No delay in processing device inventory data = "Last updated" banner is displayed in green.
     - Delay processing device inventory data = "Last updated" banner is displayed in amber.
 - Computers with incomplete data:
-    - Less than 4% = Count is displayed in black.
+    - Less than 4% = Count is displayed in green.
     - 4% - 10% = Count is displayed in amber.
     - Greater than 10%  = Count is displayed in red.
+- Computers with outdated KB:
+    - Less than 10% = Count is displayed in green.
+    - 10% - 30% = Count is displayed in amber.
+    - Greater than 30%  = Count is displayed in red.
 - User changes:
     - Pending user changes = User changes count displays "Data refresh pending" in amber.
     - No pending user changes = User changes count displays "Up to date" in green.
@@ -27,6 +31,8 @@ The following color-coded status changes are reflected on the upgrade overview b
     - If the current value matches the recommended value, the version is displayed in green.
     - If the current value is an older OS version than the recommended value, but not deprecated, the version is displayed in amber.
     - If the current value is a deprecated OS version, the version is displayed in red.
+
+Click on a row to drill down and see details about individual computers. If KBs are missing, see [Deploy the compatibility update and related KBs](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#deploy-the-compatibility-update-and-related-kbs) for information on required KBs.
 
 In the following example, there is no delay in data processing, less than 4% of computers (6k\294k) have incomplete data, there are no pending user changes, and the currently selected target OS version is the same as the recommended version:
 

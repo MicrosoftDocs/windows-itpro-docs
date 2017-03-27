@@ -21,7 +21,6 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 ## Before you begin
 You must [install](http://docs.python-requests.org/en/master/user/install/#install) the "[requests](http://docs.python-requests.org/en/master/)" python library.
@@ -37,7 +36,7 @@ These code examples demonstrate the following tasks:
 ## Step 1: Obtain an Azure AD access token
 The following example demonstrates how to obtain an Azure AD access token that you can use to call methods in the custom threat intelligence API. After you obtain a token, you have 60 minutes to use this token in calls to the custom threat intelligence API before the token expires. After the token expires, you can generate a new token.
 
-Replace the *tenant\_id*, *client_id*, and *client_secret* values with the ones you got from **Preferences settings** page in the portal:
+Replace the *auth_url*, *client_id*, and *client_secret* values with the ones you got from **Preferences settings** page in the portal:
 
 [!code[CustomTIAPI](./code/example.py#L1-L17)]
 

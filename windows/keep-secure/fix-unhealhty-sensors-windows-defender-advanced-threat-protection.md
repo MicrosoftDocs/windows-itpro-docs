@@ -21,8 +21,6 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
-
 Machines that are categorized as misconfigured or inactive can be flagged due to varying causes. This section provides some explanations as to what might have caused a machine to be categorized as inactive or misconfigured.
 
 ## Inactive machines
@@ -36,7 +34,7 @@ If the machine has not been in use for more than 7 days for any reason, it will 
 A reinstalled or renamed machine will generate a new machine entity in Windows Defender ATP portal. The previous machine entity will remain with an ‘Inactive’ status in the portal. If you reinstalled a machine and deployed the Windows Defender ATP package, search for the new machine name to verify that the machine is reporting normally.
 
 **Machine was offboarded**</br>
-If the machine was offboarded it will still appear in machines view. After 7 days, the machine health state should change to inactive.
+If the machine was offboarded it will still appear in machines list. After 7 days, the machine health state should change to inactive.
 
 Do you expect a machine to be in ‘Active’ status? [Open a CSS ticket](https://support.microsoft.com/en-us/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
 

@@ -25,7 +25,7 @@ localizationpriority: high
 
 You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) on individual endpoints.
 
-For example, if endpoints are not appearing in the **Machines view** list, you might need to look for event IDs on the endpoints. You can then use this table to determine further troubleshooting steps.
+For example, if endpoints are not appearing in the **Machines list** list, you might need to look for event IDs on the endpoints. You can then use this table to determine further troubleshooting steps.
 
 > [!NOTE]
 > It can take several days for endpoints to begin reporting to the Windows Defender ATP service.
@@ -192,8 +192,8 @@ See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defen
 </tr>
 <tr>
 <td>27</td>
-<td>Windows Defender Advanced Threat Protection service failed to enable SENSE aware mode in Windows Defender. Onboarding process failed. Failure code: ```variable```.</td>
-<td>Normally, Windows Defender will enter a special passive state if another real-time antimalware product is running properly on the endpoint, and the endpoint is reporting to Windows Defender ATP.</td>
+<td>Windows Defender Advanced Threat Protection service failed to enable SENSE aware mode in Windows Defender Antivirus. Onboarding process failed. Failure code: ```variable```.</td>
+<td>Normally, Windows Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the endpoint, and the endpoint is reporting to Windows Defender ATP.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md).<br>
 Ensure real-time antimalware protection is running properly.</td>
@@ -208,8 +208,8 @@ See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defen
 </tr>
 <tr>
 <td>30</td>
-<td>Windows Defender Advanced Threat Protection service failed to disable SENSE aware mode in Windows Defender. Failure code: ```variable```.</td>
-<td>Normally, Windows Defender will enter a special passive state if another real-time antimalware product is running properly on the endpoint, and the endpoint is reporting to Windows Defender ATP.</td>
+<td>Windows Defender Advanced Threat Protection service failed to disable SENSE aware mode in Windows Defender Antivirus. Failure code: ```variable```.</td>
+<td>Normally, Windows Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the endpoint, and the endpoint is reporting to Windows Defender ATP.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)<br>
 Ensure real-time antimalware protection is running properly.</td>

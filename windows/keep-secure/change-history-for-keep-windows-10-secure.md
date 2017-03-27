@@ -18,6 +18,17 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |---------------------|------------|
 |[Protect derived domain credentials with Credential Guard](credential-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
 |[Requirements and deployment planning guidelines for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
+|[Windows Defender SmartScreen overview](windows-defender-smartscreen-overview.md)|New |
+|[Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md)|New |
+|[Use Windows Defender Security Center to set Windows Defender SmartScreen for individual devices](windows-defender-smartscreen-set-individual-device.md)|New |
+
+
+## February 2017
+
+|New or changed topic |Description |
+|---------------------|------------|
+|[Overview of threat mitigations in Windows 10](overview-of-threat-mitigations-in-windows-10.md) | Reorganized from existing content, to provide a better overview of threat mitigations. Added information that maps the Enhanced Mitigation Experience Toolkit (EMET) to Windows 10 features. |
+
 
 
 ## January 2017
@@ -129,7 +140,6 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 |New or changed topic | Description |
 |----------------------|-------------|
 |[Protect derived domain credentials with Credential Guard](credential-guard.md) |Clarified Credential Guard protections |
-|[Windows 10 security overview](windows-10-security-guide.md) |Added SMB hardening improvements for SYSVOL and NETLOGON connections |
 
 ## March 2016
 
