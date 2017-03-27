@@ -18,9 +18,22 @@ author: iaanw
 **Applies to**
 -   Windows 10
 
+**Audience**
+
+- Enterprise security administrators
+
+**Manageability available with**
+
+- Group Policy
+- System Center Configuration Manager 
+- PowerShell
+- Windows Management Instrumentation (WMI)
+- Microsoft Intune
 
 
 
+Scan	Turn on e-mail scanning
+Scan	Turn on reparse point scanning
 
 
 
