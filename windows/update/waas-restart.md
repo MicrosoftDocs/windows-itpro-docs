@@ -49,6 +49,8 @@ For a detailed description of these regsitry keys, see [Registry keys used to ma
 
 By default, active hours are from 8 AM to 5 PM on PCs and from 5 AM to 11 PM on phones. Users can change the active hours manually. 
 
+Starting with Windows 10, version 1703, you can also specify the max active hours range. The specified range will be counted from the active hours start time.
+
 Administrators can use multiple ways to set active hours for managed devices:
 
 - You can use Group Policy, as described in the procedure that follows.
@@ -61,9 +63,11 @@ To configure active hours using Group Policy, go to **Computer Configuration\Adm
 
 ![Use Group Policy to configure active hours](images/waas-active-hours-policy.png)
 
+To configure max active hours range, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and open the **Specify active hours range for auto-restarts**. This is only available from Windows 10, version 1703.
+
 ### Configuring active hours with MDM
 
-MDM uses the [Update/ActiveHoursStart and Update/ActiveHoursEnd](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_ActiveHoursEnd) settings in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) to configure active hours.
+MDM uses the [Update/ActiveHoursStart and Update/ActiveHoursEnd](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_ActiveHoursEnd)  and [Update/ActiveHoursMaxRange](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-activehoursmaxrange) settings in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) to configure active hours.
 
 ### Configuring active hours through Registry
 
