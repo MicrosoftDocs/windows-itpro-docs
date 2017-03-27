@@ -1,5 +1,5 @@
 ---
-title: Interactive logon Do not display last user name (Windows 10)
+title: Interactive logon Don't display last signed-in (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Interactive logon Do not display last user name security policy setting.
 ms.assetid: 98b24b03-95fe-4edc-8e97-cbdaa8e314fd
 ms.prod: w10
@@ -9,12 +9,12 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Interactive logon: Do not display last user name
+# Interactive logon: Don't display last signed-in
 
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values, and security considerations for the **Interactive logon: Do not display last user name** security policy setting.
+Describes the best practices, location, values, and security considerations for the **Interactive logon: Don't display last signed-in** security policy setting. Before Windows 10 version 1703, this policy setting was named **Interactive logon:Do not display last user name.**
 
 ## Reference
 
@@ -40,14 +40,14 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 ### Default values
 
-| Server type or Group Policy object (GPO) | Default value| 
+| Server type or Group Policy object (GPO) | Default value|
 | - | - |
-| Default domain policy| Disabled| 
-| Default domain controller policy| Disabled| 
-| Stand-alone server default settings | Disabled| 
-| Domain controller effective default settings | Disabled| 
-| Member server effective default settings | Disabled| 
-| Effective GPO default settings on client computers | Disabled| 
+| Default domain policy| Disabled|
+| Default domain controller policy| Disabled|
+| Stand-alone server default settings | Disabled|
+| Domain controller effective default settings | Disabled|
+| Member server effective default settings | Disabled|
+| Effective GPO default settings on client computers | Disabled|
  
 ## Policy management
 

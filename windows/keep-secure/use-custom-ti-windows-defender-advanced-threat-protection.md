@@ -1,6 +1,6 @@
 ---
-title: Use the threat intelligence API in Windows Defender Advanced Threat Protection to create custom alerts
-description: Use the custom threat intelligence API to create custom alerts for your organization.
+title: Use the custom threat intelligence API to create custom alerts for your organization
+description: Use the threat intelligence API in Windows Defender Advanced Threat Protection to create custom alerts
 keywords: threat intelligence, alert definitions, indicators of compromise
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -20,8 +20,6 @@ localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Understand threat intelligence concepts, then enable the custom threat intelligence application so that you can proceed to create custom threat intelligence alerts that are specific to your organization.
 

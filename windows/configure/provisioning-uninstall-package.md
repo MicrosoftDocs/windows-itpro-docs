@@ -27,7 +27,7 @@ Only settings in the following lists are revertible.
 
 ## Registry-based settings
 
-The registry-based settings that are revertible when a provisioning package is uninstalled all fall under these categories, which you can find in the Graphical User Interface of the Windows Imaging and Configuration Designer (Windows ICD). 
+The registry-based settings that are revertible when a provisioning package is uninstalled all fall under these categories, which you can find in the  Windows Configuration Designer. 
 
 
 - [Wi-Fi Sense](https://msdn.microsoft.com/library/windows/hardware/mt219706.aspx)
@@ -78,14 +78,13 @@ Here is the list of revertible settings based on configuration service providers
 
 - [Provisioning packages for Windows 10](provisioning-packages.md)
 - [How provisioning works in Windows 10](provisioning-how-it-works.md)
-- [Install Windows Imaging and Configuration Designer](provisioning-install-icd.md)
+- [Install Windows Configuration Designer](provisioning-install-icd.md)
 - [Create a provisioning package](provisioning-create-package.md)
 - [Apply a provisioning package](provisioning-apply-package.md)
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
-- [Provision PCs with apps and certificates for initial deployments (advanced provisioning)](provision-pcs-with-apps-and-certificates.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
-- [NFC-based device provisioning](provisioning-nfc.md)
-- [Windows ICD command-line interface (reference)](provisioning-command-line.md)
+- [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
+- [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
 
  

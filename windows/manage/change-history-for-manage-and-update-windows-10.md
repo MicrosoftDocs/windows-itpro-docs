@@ -18,23 +18,35 @@ This topic lists new and updated topics in the [Manage Windows 10](index.md) doc
 
 The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). Some topics have been moved to [Update Windows 10](../update/index.md) or to [Configure Windows 10](../configure/index.md).
 
-## February 2017
+## March 2017
+| New or changed topic | Description |
+| --- | --- |
+|[Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email](cortana-at-work-scenario-6.md) |New |
+|[What's new in App-V for Windows 10, version 1703 and earlier](appv-about-appv.md)|Updated to include new features in App-V for Windows 10, version 1703. |
+|[Release Notes for App-V for Windows 10, version 1703](appv-release-notes-for-appv-for-windows-1703.md)|New |
+|[Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-provision-a-vm.md) |New |
+|[Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md) |New |
+|[Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md) |New |
+|[Automatically cleanup unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md) |New |
+|[Available Mobile Data Management (MDM) settings for App-V](appv-available-mdm-settings.md) |New |
 
+## February 2017
 | New or changed topic | Description |
 | --- | --- |
 | [Windows Libraries](windows-libraries.md) | New |
 | [Monitor Windows Updates with Update Compliance](update-compliance-monitor.md) | New |
 | [Get started with Update Compliance](update-compliance-get-started.md) | New |
 | [Use Update Compliance to monitor Windows Updates](update-compliance-using.md) | New |
-| [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) | Added Group Policy setting that blocks user access to Windows Update. |
-| [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) | Added Express updates. |
+|[Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) | Added Group Policy setting that blocks user access to Windows Update. |
+|[Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |Added Express updates. | 
 | [Distribute offline apps](distribute-offline-apps.md) | General updates to topic. Added links to supporting content for System Center Configuration Manager and Microsoft Intune.  |
+
 
 ## January 2017
 
 | New or changed topic | Description |
 | --- | --- |
-|[Cortana at work topics](../configure/cortana-at-work-overview.md)]|New |
+| [Cortana at work topics](../configure/cortana-at-work-overview.md)]|New |
 | [Start layout XML for desktop editions of Windows 10](start-layout-xml-desktop.md) | New (previously published in Hardware Dev Center on MSDN) |
 | [Start layout XML for mobile editions of Windows 10](start-layout-xml-mobile.md) | New (previously published in Hardware Dev Center on MSDN) |
 | [Quick guide to Windows as a service](waas-quick-start.md) | Added video that explains how Windows as a service works. |
@@ -89,11 +101,11 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 
 ## RELEASE: Windows 10, version 1607
 
-The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added: 
+The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added:
 
 - [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md)
 - [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
-- [Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md)
+- [Set up a shared or guest PC with Windows 10](../configure/set-up-shared-or-guest-pc.md)
 - [Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md)
 - [Application Virtualization (App-V) for Windows 10](appv-for-windows.md)
 - [User Experience Virtualization (UE-V) for Windows 10](uev-for-windows.md)
@@ -121,7 +133,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md) | New telemetry content |
 | [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) |Removed info about sharing wi-fi network access with contacts, since it's been deprecated. |
 | [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Corrected script for setting a custom shell using Shell Launcher |
-| [Windows 10 servicing options for updates and upgrades](introduction-to-windows-10-servicing.md) | Removed Windows 10 Mobile from **Applies to** | 
+| [Windows 10 servicing options for updates and upgrades](introduction-to-windows-10-servicing.md) | Removed Windows 10 Mobile from **Applies to** |
 
 
 
@@ -146,12 +158,12 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | New or changed topic | Description |
 | ---|---|
 | [Configure telemetry and other settings in your organization](disconnect-your-organization-from-microsoft.md) | Added call history and email to the Settings &gt; Privacy section.<br />Added the Turn off Windows Mail application Group Policy to the Mail synchronization section. |
-| [Customize and export Start layout](customize-and-export-start-layout.md) | Added a note to clarify that partial Start layout is only supported in Windows 10, version 1511 and later |
+| [Customize and export Start layout](customize-and-export-start-layout.md) | Added a note to clarify that partial Start layout is only supported in Windows 10, version 1511 and later |
 | [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md) | Added instructions for replacing markup characters with escape characters in Start layout XML |
 | [Introduction to configuration service providers (CSPs) for IT pros](how-it-pros-can-use-configuration-service-providers.md) | New |
 | [Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md) | New |
-| [Windows 10 servicing options for updates and upgrades](introduction-to-windows-10-servicing.md) | Added information on servicing options for Windows 10 Mobile, Windows 10 Mobile Enterprise, and Windows 10 IoT Core (IoT Core). |
- 
+| [Windows 10 servicing options for updates and upgrades](introduction-to-windows-10-servicing.md) | Added information on servicing options for Windows 10 Mobile, Windows 10 Mobile Enterprise, and Windows 10 IoT Core (IoT Core). |
+
 
 ## December 2015
 
@@ -189,5 +201,3 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 [Change history for Deploy Windows 10](../deploy/change-history-for-deploy-windows-10.md)
 
 [Change history for Keep Windows 10 secure](../keep-secure/change-history-for-keep-windows-10-secure.md)
-
- 

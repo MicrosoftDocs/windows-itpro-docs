@@ -30,6 +30,9 @@ On Windows 10 for desktop editions, the customized Start works by:
 >[!NOTE]
 >Using the layout modification XML to configure Start is not supported with roaming user profiles. For more information, see [Deploy Roaming User Profiles](https://technet.microsoft.com/en-US/library/jj649079.aspx).
 
+>[!NOTE]
+>Using the layout modification XML to configure Start is not supported with roaming user profiles. For more information, see [Deploy Roaming User Profiles](https://technet.microsoft.com/library/jj649079.aspx).
+
 ## LayoutModification XML
 
 IT admins can provision the Start layout using a LayoutModification.xml file. This file supports several mechanisms to modify or replace the default Start layout and its tiles. The easiest method for creating a LayoutModification.xml file is by using the Export-StartLayout cmdlet; see [Customize and export Start layout](customize-and-export-start-layout.md) for instructions.
@@ -224,7 +227,7 @@ The following example shows how to create a tile of the Web site's URL using the
           Column="4"/>
 ```
 
-The following table describes the other attributes that you can use with the **start:SecondaryTile** tag in addition to *8Size**, **Row**, and *8Column**.
+The following table describes the other attributes that you can use with the **start:SecondaryTile** tag in addition to **Size**, **Row**, and **Column**.
 
 | Attribute | Required/optional | Description |
 | --- | --- | --- |
@@ -473,17 +476,13 @@ Once you have created the LayoutModification.xml file and it is present in the d
 ## Related topics
 
 
-[Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md)
-
-[Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
-
-[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-
-[Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-
-[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
-
-[Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)
+- [Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md)
+- [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+- [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+- [Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+- [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+- [Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)
+- [Start layout XML for mobile editions of Windows 10 (reference)](start-layout-xml-mobile.md)
 
  
 

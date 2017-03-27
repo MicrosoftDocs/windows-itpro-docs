@@ -16,30 +16,40 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-You use Windows Imaging and Configuration Designer (ICD) to create a provisioning package (.ppkg) that contains customization settings. You can apply the provisioning package to a device running Windows 10. 
+You use Windows Configuration Designer to create a provisioning package (.ppkg) that contains customization settings. You can apply the provisioning package to a device running Windows 10 or Windows 10 Mobile. 
 
->[Learn how to install Windows ICD.](provisioning-install-icd.md)
+>[Learn how to install Windows Configuration Designer.](provisioning-install-icd.md)
+
+>[!TIP]
+>We recommend creating a local admin account when developing and testing your provisioning package. We also recommend using a “least privileged” domain user account to join devices to the Active Directory domain.
 
 ## Start a new project
 
-1. Open Windows ICD:
-    - From either the Start screen or Start menu search, type 'Imaging and Configuration Designer' and click on the Windows ICD shortcut, 
+1. Open Windows Configuration Designer:
+    - From either the Start screen or Start menu search, type 'Windows Configuration Designer' and click on the Windows Configuration Designer shortcut, 
     
     or
     
-    - Navigate to `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86` (on an x64 computer) or `C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe` (on an x86 computer), and then double-click **ICD.exe**.
+    - If you installed Windows Configuration Designer from the ADK, navigate to `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86` (on an x64 computer) or `C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe` (on an x86 computer), and then double-click **ICD.exe**.
 
-2. Select your desired option on the **Start** page, which offers three options for creating a provisioning package, as shown in the following image:
+2. Select your desired option on the **Start** page, which offers multiple options for creating a provisioning package, as shown in the following image:
 
-    ![Simple provisioning or provision school devices or advanced provisioning](images/icd-create-options.png)
+    ![Configuration Designer wizards](images/icd-create-options-1703.png)
     
-    - The **Simple provisioning** and **Provision school devices** options provide wizard-style walkthroughs for creating a provisioning package based on a set of common settings. 
-    - The **Advanced provisioning** option opens a new project with all **Runtime settings** available. 
+    - The wizard options provide a simple interface for configuring common settings for desktop, mobile, and kiosk devices. Wizards are also available for creating provisioning packages for Microsoft Surface Hub and Microsoft HoloLens devices. For a summary of the settings available in the desktop, mobile, and kiosk devices, see [What you can configure using Configuration Designer wizardS](provisioning-packages.md#configuration-designer-wizards). 
     
-    >[!TIP]
-    >You can start a project in the simple editor and then switch the project to the advanced editor.
-    >
-    >![Switch to advanced editor](images/icd-switch.png)
+        - [Instructions for the desktop wizard](provision-pcs-for-initial-deployment.md)
+        - [Instructions for the mobile wizard](provisioning-configure-mobile.md)
+        - [Instructions for the kiosk wizard](set-up-a-kiosk-for-windows-10-for-desktop-editions.md#wizard)
+        - [Instructions for HoloLens wizard](https://technet.microsoft.com/itpro/hololens/hololens-provisioning)
+        - [Instructions for Surface Hub wizard](https://technet.microsoft.com/itpro/surface-hub/provisioning-packages-for-certificates-surface-hub)
+        
+    - The **Advanced provisioning** option opens a new project with all **Runtime settings** available. *The rest of this procedure uses advanced provisioning.*
+    
+        >[!TIP]
+        > You can start a project in the simple wizard editor and then switch the project to the advanced editor.
+        >
+        > ![Switch to advanced editor](images/icd-switch.png)
         
 3. Enter a name for your project, and then click **Next**.
 
@@ -59,19 +69,18 @@ You use Windows Imaging and Configuration Designer (ICD) to create a provisionin
 >[!TIP]
 >**Import a provisioning package** can make it easier to create different provisioning packages that all have certain settings in common. For example, you could create a provisioning package that contains the settings for your organization's network, and then import it into other packages you create so you don't have to reconfigure those common settings repeatedly.
 
-After you click **Finish**, Windows ICD will open the appropriate walkthrough page if you selected **Simple provisioning** or **Provision school devices**, or the **Available customizations** pane if you selected **Advanced provisioning**. The remainder of this topic will explain the **Advanced provisioning scenario**. 
+After you click **Finish**, Windows Configuration Designer will open the **Available customizations** pane and you can then configure settings for the package. 
 
-- For instructions on **Simple provisioning**, see [Provision PCs with common settings](provision-pcs-for-initial-deployment.md). 
-- For instructions on **Provision school devices**, see [Set up student PCs to join domain](https://technet.microsoft.com/edu/windows/set-up-students-pcs-to-join-domain).
+
 
 
 ## Configure settings
 
-For an advanced provisioning project, Windows ICD opens the **Available customizations** pane. The example in the following image is based on **All Windows desktop editions** settings.
+For an advanced provisioning project, Windows Configuration Designer opens the **Available customizations** pane. The example in the following image is based on **All Windows desktop editions** settings.
 
 ![What the ICD interface looks like](images/icd-runtime.png)
 
-The settings in Windows ICD are based on Windows 10 configuration service providers (CSPs). To learn more about CSPs, see [Introduction to configuration service providers (CSPs) for IT pros](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
+The settings in Windows Configuration Designer are based on Windows 10 configuration service providers (CSPs). To learn more about CSPs, see [Introduction to configuration service providers (CSPs) for IT pros](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 
 The process for configuring settings is similar for all settings. The following table shows an example.
 
@@ -83,9 +92,9 @@ The process for configuring settings is similar for all settings. The following 
 <tr><td>![step five](images/five.png)</br>When the setting is configured, it is displayed in the **Selected customizations** pane.</td><td>![Selected customizations pane](images/icd-step5.png)</td></tr>
 </table>
 
-For details on each specific setting, see [Windows Provisioning settings reference](https://msdn.microsoft.com/library/windows/hardware/dn965990.aspx). The reference topic for a setting is also displayed in Windows ICD when you select the setting, as shown in the following image.
+For details on each specific setting, see [Windows Provisioning settings reference](https://msdn.microsoft.com/library/windows/hardware/dn965990.aspx). The reference topic for a setting is also displayed in Windows Configuration Designer when you select the setting, as shown in the following image.
 
-![Windows ICD opens the reference topic when you select a setting](images/icd-setting-help.png) 
+![Windows Configuration Designer opens the reference topic when you select a setting](images/icd-setting-help.png) 
 
 
  ## Build package
@@ -110,7 +119,7 @@ For details on each specific setting, see [Windows Provisioning settings referen
     >
     >If a provisioning package is signed by a trusted provisioner, it can be installed on a device without a prompt for user consent. In order to enable trusted provider certificates, you must set the **TrustedProvisioners** setting prior to installing the trusted provisioning package. This is the only way to install a package without user consent. To provide additional security, you can also set **RequireProvisioningPackageSignature**, which prevents users from installing provisioning packages that are not signed by a trusted provisioner.
 
-4. In the **Select where to save the provisioning package** window, specify the output location where you want the provisioning package to go once it's built, and then click **Next**. By default, Windows ICD uses the project folder as the output location.
+4. In the **Select where to save the provisioning package** window, specify the output location where you want the provisioning package to go once it's built, and then click **Next**. By default, Windows Configuration Designer uses the project folder as the output location.
 
 5. In the **Build the provisioning package** window, click **Build**. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status. 
 
@@ -128,22 +137,21 @@ For details on each specific setting, see [Windows Provisioning settings referen
 
 ## Learn more
 
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
+- Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
--   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
+- Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
 
-
+- [How to bulk-enroll devices with On-premises Mobile Device Management in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
 
 ## Related topics
 
 - [Provisioning packages for Windows 10](provisioning-packages.md)
 - [How provisioning works in Windows 10](provisioning-how-it-works.md)
-- [Install Windows Imaging and Configuration Designer](provisioning-install-icd.md)
+- [Install Windows Configuration Designer](provisioning-install-icd.md)
 - [Apply a provisioning package](provisioning-apply-package.md)
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
-- [Provision PCs with apps and certificates for initial deployments (advanced provisioning)](provision-pcs-with-apps-and-certificates.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
-- [NFC-based device provisioning](provisioning-nfc.md)
-- [Windows ICD command-line interface (reference)](provisioning-command-line.md)
+- [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
+- [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)

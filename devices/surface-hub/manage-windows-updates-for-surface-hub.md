@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
-author: TrudyHa
+author: jdeckerMS
 localizationpriority: medium
 ---
 
@@ -17,7 +17,7 @@ New releases of the Surface Hub operating system are published through Windows U
 - **Windows Update for Business** - New in Windows 10, Windows Update for Business is a set of features designed to provide enterprises additional control over how and when Windows Update installs releases, while reducing device management costs. Using this method, Surface Hubs are directly connected to Microsoft’s Windows Update service.
 - **Windows Server Update Services (WSUS)** - Set of services that enable IT administrators to obtain the updates that Windows Update determines are applicable to the devices in their enterprise, perform additional testing and evaluation on the updates, and select the updates they want to install. Using this method, Surface Hubs will receive updates from WSUS rather than Windows Update.
 
-You can also configure Surface Hub to receive updates from both Windows Update for Business and WSUS. See [Integrate Windows Update for Business with Windows Server Update Services](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-integrate-wufb#integrate-windows-update-for-business-with-windows-server-update-services) for details.
+You can also configure Surface Hub to receive updates from both Windows Update for Business and WSUS. See [Integrate Windows Update for Business with Windows Server Update Services](https://technet.microsoft.com/itpro/windows/manage/waas-integrate-wufb#integrate-windows-update-for-business-with-windows-server-update-services) for details.
 
 | Capabilities | Windows Update for Business | Windows Server Update Services (WSUS) |
 | ------------ | --------------------------- | ------------------------------------- |
@@ -27,7 +27,7 @@ You can also configure Surface Hub to receive updates from both Windows Update f
 | Define maintenance windows for installing updates. | Yes  | Yes  |
 
 > [!TIP]
-> Use peer-to-peer content sharing to reduce bandwidth issues during updates. See [Optimize update delivery for Windows 10 updates](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-optimize-windows-10-updates) for details.
+> Use peer-to-peer content sharing to reduce bandwidth issues during updates. See [Optimize update delivery for Windows 10 updates](https://technet.microsoft.com/itpro/windows/manage/waas-optimize-windows-10-updates) for details.
 
 > [!NOTE]
 > Surface Hub does not currently support rolling back updates.
@@ -45,11 +45,11 @@ In order to improve release quality and simplify deployments, all new releases t
 
 The Surface Hub operating system is available on **Current Branch (CB)** and **Current Branch for Business (CBB)**. Like other editions of Windows 10, the servicing lifetime of CB or CBB is finite. You must install new feature updates on machines running these branches in order to continue receiving quality updates.
 
-For more information on Windows as a Service, see [Overview of Windows as a service](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-overview).
+For more information on Windows as a Service, see [Overview of Windows as a service](https://technet.microsoft.com/itpro/windows/manage/waas-overview).
 
 
 ## Use Windows Update for Business
-Surface Hubs, like all Windows 10 devices, include **Windows Update for Business (WUfB)** to enable you to control how your devices are being updated. Windows Update for Business helps reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. For more information, see [Manage updates using Windows Update for Business](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-manage-updates-wufb).
+Surface Hubs, like all Windows 10 devices, include **Windows Update for Business (WUfB)** to enable you to control how your devices are being updated. Windows Update for Business helps reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. For more information, see [Manage updates using Windows Update for Business](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
 **To set up Windows Update for Business:**
 1. [Group Surface Hub into deployment rings](#group-surface-hub-into-deployment-rings)
@@ -58,11 +58,11 @@ Surface Hubs, like all Windows 10 devices, include **Windows Update for Business
 
 > [!NOTE]
 
-> You can use Microsoft Intune, System Center Configuration Manager, or a supported third-party MDM provider to set up WUfB. [Walkthrough: use Microsoft Intune to configure Windows Update for Business.](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-wufb-intune)
+> You can use Microsoft Intune, System Center Configuration Manager, or a supported third-party MDM provider to set up WUfB. [Walkthrough: use Microsoft Intune to configure Windows Update for Business.](https://technet.microsoft.com/itpro/windows/manage/waas-wufb-intune)
 
 
 ### Group Surface Hub into deployment rings
-Use deployment rings to control when updates roll out to your Surface Hubs, giving you time to validate them. For example, you can update a small pool of devices first to verify quality before a broader roll-out to your organization. Depending on who manages Surface Hub in your organization, consider incorporating Surface Hub into the deployment rings that you've built for your other Windows 10 devices. For more information about deployment rings, see [Build deployment rings for Windows 10 updates](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-deployment-rings-windows-10-updates).
+Use deployment rings to control when updates roll out to your Surface Hubs, giving you time to validate them. For example, you can update a small pool of devices first to verify quality before a broader roll-out to your organization. Depending on who manages Surface Hub in your organization, consider incorporating Surface Hub into the deployment rings that you've built for your other Windows 10 devices. For more information about deployment rings, see [Build deployment rings for Windows 10 updates](https://technet.microsoft.com/itpro/windows/manage/waas-deployment-rings-windows-10-updates).
 
 This table gives examples of deployment rings.
 
@@ -75,22 +75,22 @@ This table gives examples of deployment rings.
 
 
 ### Configure Surface Hub to use Current Branch or Current Branch for Business
-By default, Surface Hubs are configured to receive updates from Current Branch (CB). CB receives feature updates as soon as they are released by Microsoft. Current Branch for Business (CBB), on the other hand, receives feature updates at least four months after they have been initially offered to CB devices, and includes all of the quality updates that have been released in the interim. For more information on the differences between CB and CBB, see [Servicing branches](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-overview#servicing-branches).
+By default, Surface Hubs are configured to receive updates from Current Branch (CB). CB receives feature updates as soon as they are released by Microsoft. Current Branch for Business (CBB), on the other hand, receives feature updates at least four months after they have been initially offered to CB devices, and includes all of the quality updates that have been released in the interim. For more information on the differences between CB and CBB, see [Servicing branches](https://technet.microsoft.com/itpro/windows/manage/waas-overview#servicing-branches).
 
 **To manually configure Surface Hub to use CB or CBB:**
 1. Open **Settings** > **Update & Security** > **Windows Update**, and then select **Advanced Options**. 
 2. Select **Defer feature updates**.
 
-To configure Surface Hub to use CB or CBB remotely using MDM, set an appropriate [Update/BranchReadinessLevel](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_BranchReadinessLevel) policy.
+To configure Surface Hub to use CB or CBB remotely using MDM, set an appropriate [Update/BranchReadinessLevel](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_BranchReadinessLevel) policy.
 
 
 ### Configure when Surface Hub receives updates
 Once you've determined deployment rings for your Surface Hubs, configure update deferral policies for each ring:
-- To defer feature updates, set an appropriate [Update/DeferFeatureUpdatesPeriodInDays](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_DeferFeatureUpdatesPeriodInDays) policy for each ring.
-- To defer quality updates, set an appropriate [Update/DeferQualityUpdatesPeriodInDays](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_DeferQualityUpdatesPeriodInDays) policy for each ring.
+- To defer feature updates, set an appropriate [Update/DeferFeatureUpdatesPeriodInDays](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_DeferFeatureUpdatesPeriodInDays) policy for each ring.
+- To defer quality updates, set an appropriate [Update/DeferQualityUpdatesPeriodInDays](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_DeferQualityUpdatesPeriodInDays) policy for each ring.
 
 > [!NOTE]
-> If you encounter issues during the update rollout, you can pause updates using [Update/PauseFeatureUpdates](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_PauseFeatureUpdates) and [Update/PauseQualityUpdates](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_PauseQualityUpdates).
+> If you encounter issues during the update rollout, you can pause updates using [Update/PauseFeatureUpdates](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_PauseFeatureUpdates) and [Update/PauseQualityUpdates](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_PauseQualityUpdates).
 
 
 ## Use Windows Server Update Services
@@ -103,7 +103,7 @@ You can connect Surface Hub to your Windows Server Update Services (WSUS) server
 3. Navigate to **Update & security** > **Windows Update** > **Advanced options** > **Configure Windows Server Update Services (WSUS) server**.
 4. Click **Use WSUS Server to download updates** and type the URL of your WSUS server.
 
-To connect Surface Hub to a WSUS server using MDM, set an appropriate [Update/UpdateServiceUrl](https://msdn.microsoft.com/en-us/library/windows/hardware/dn904962.aspx#Update_UpdateServiceUrl) policy.
+To connect Surface Hub to a WSUS server using MDM, set an appropriate [Update/UpdateServiceUrl](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_UpdateServiceUrl) policy.
 
 **If you use a proxy server or other method to block URLs**
 
@@ -135,7 +135,7 @@ A default maintenance window is set for all new Surface Hubs:
 2.  Navigate to **Update & security** > **Windows Update** > **Advanced options**.
 3.  Under **Maintenance hours**, select **Change**.
 
-To change the maintenance window using MDM, set the **MOMAgent** node in the [SurfaceHub configuration service provider](https://msdn.microsoft.com/en-us/library/windows/hardware/mt608323.aspx). See [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md) for more details.
+To change the maintenance window using MDM, set the **MOMAgent** node in the [SurfaceHub configuration service provider](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). See [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md) for more details.
 
 
 ## Related topics

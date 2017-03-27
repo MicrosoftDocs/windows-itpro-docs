@@ -14,7 +14,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-TWindows Hello for Business requires a registered device. When the device is set up, its user can use the device to authenticate to services. This topic explains how device registration works, what happens when a user requests authentication, how key material is stored and processed, and which servers and infrastructure components are involved in different parts of this process.
+Windows Hello for Business requires a registered device. When the device is set up, its user can use the device to authenticate to services. This topic explains how device registration works, what happens when a user requests authentication, how key material is stored and processed, and which servers and infrastructure components are involved in different parts of this process.
 
 ## Register a new user or device
 
@@ -112,7 +112,6 @@ Windows Hello depends on having compatible IDPs available to it. As of this writ
 
 - [Windows Hello for Business](hello-identity-verification.md)
 - [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
-- [Enable phone sign-in to PC or VPN](hello-enable-phone-signin.md)
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)
