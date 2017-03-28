@@ -62,7 +62,7 @@ The following tables provide more information about the hardware, firmware, and 
 
 The following tables describes additional hardware and firmware requirements, and the improved security that is available when those requirements are met.
 
-### Additional security qualificationqs starting with Windows 10, version 1507, and Windows Server 2016, Technical Preview 4
+### Additional security qualifications starting with Windows 10, version 1507, and Windows Server 2016, Technical Preview 4
 
 | Protections for Improved Security - requirement         | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
