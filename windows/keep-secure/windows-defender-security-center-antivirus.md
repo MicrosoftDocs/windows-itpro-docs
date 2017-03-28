@@ -42,6 +42,9 @@ The app also includes the settings and status of:
 - Windows Defender SmartScreen Filter
 - Parental and Family Controls
 
+>[!NOTE]
+>The Windows Defender Security Center app is a client interface on Windows 10, version 1703. It is not the Windows Defender Advanced Security Center, which is the web portal used to review and manage [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md).
+
 **Review virus and threat protection settings in the Windows Defender Security Center app:**
 
 1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
