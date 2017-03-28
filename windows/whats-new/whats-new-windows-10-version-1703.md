@@ -1,6 +1,6 @@
 ---
 title: What's in Windows 10, version 1703
-description: New and updated IT Pro content about new features in Windows 10, version 1703 (also known as the Creators Updated).
+description: New and updated IT pro content about new features in Windows 10, version 1703 (also known as the Creators Updated).
 keywords: ["What's new in Windows 10", "Windows 10", "creators update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,9 +10,9 @@ localizationpriority: high
 ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
 ---
 
-# What's new in Windows 10, version 1703 IT Pro content
+# What's new in Windows 10, version 1703 IT pro content
 
-Below is a list of some of the new and updated content that discusses Information Technology (IT) Pro features in Windows 10, version 1703 (also known as the Creators Update).
+Below is a list of some of the new and updated content that discusses Information Technology (IT) pro features in Windows 10, version 1703 (also known as the Creators Update).
 
 For more general info about Windows 10 features, see [Features available only on Windows 10](https://www.microsoft.com/windows/features). For info about previous versions of Windows 10, see [What's New in Windows 10](index.md).
 
