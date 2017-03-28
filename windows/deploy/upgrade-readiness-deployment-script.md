@@ -59,11 +59,12 @@ To run the Upgrade Readiness deployment script:
 
 4. The latest version (03.02.17) of the deployment script is configured to collect and send diagnostic and debugging data to Microsoft. If you wish to disable sending diagnostic and debugging data to Microsoft, set **AppInsightsOptIn = false**. By default, **AppInsightsOptIn** is set to **true**.
 
-The data that is sent is the same data that is collected in the text log file that captures the events and error codes while running the script. This file is named in the following format: UA_yyyy_mm_dd_hh_mm_ss_machineID.txt. Log files are created in the drive that is specified in the RunConfig.bat file. By default this is set to: %SystemDrive%\UADiagnostics.
+    The data that is sent is the same data that is collected in the text log file that captures the events and error codes while running the script. This file is named in the following format: **UA_yyyy_mm_dd_hh_mm_ss_machineID.txt**. Log files are created in the drive that is specified in the RunConfig.bat file. By default this is set to: **%SystemDrive%\UADiagnostics**.
 
-This data gives us the ability to determine the status of your machines and to help troubleshoot issues. If you choose to opt-in to and send this data to Microsoft, you must also allow https traffic to be sent to the following wildcard DNS name:
+    This data gives us the ability to determine the status of your machines and to help troubleshoot issues. If you choose to opt-in to and send this data to Microsoft, you must also allow https traffic to be sent to the following wildcard endpoints:
 
-https://*vortex*.data.microsoft.com/
+    \*vortex\*.data.microsoft.com<BR>
+    \*settings\*.data.microsoft.com
 
 5.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script.  If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
 
