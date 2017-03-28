@@ -42,9 +42,9 @@ To run the Upgrade Readiness deployment script:
     3.  By default, the script sends log information to both the console and the log file. To change the default behavior, use one of the following options:
 
         > *logMode = 0 log to console only*
->
+        >
         > *logMode = 1 log to file and console*
->
+        >
         > *logMode = 2 log to file only*
 
 3.  To enable Internet Explorer data collection, set AllowIEData to IEDataOptIn. By default, AllowIEData is set to Disable. Then use one of the following options to determine what Internet Explorer data can be collected:
@@ -57,7 +57,15 @@ To run the Upgrade Readiness deployment script:
     >
     > *IEOptInLevel = 3 Data collection is enabled for all sites*
 
-4.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script.  If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
+4. The latest version (03.02.17) of the deployment script is configured to collect and send diagnostic and debugging data to Microsoft. If you wish to disable sending diagnostic and debugging data to Microsoft, set **AppInsightsOptIn = false**. By default, **AppInsightsOptIn** is set to **true**.
+
+The data that is sent is the same data that is collected in the text log file that captures the events and error codes while running the script. This file is named in the following format: UA_yyyy_mm_dd_hh_mm_ss_machineID.txt. Log files are created in the drive that is specified in the RunConfig.bat file. By default this is set to: %SystemDrive%\UADiagnostics.
+
+This data gives us the ability to determine the status of your machines and to help troubleshoot issues. If you choose to opt-in to and send this data to Microsoft, you must also allow https traffic to be sent to the following wildcard DNS name:
+
+https://*vortex*.data.microsoft.com/
+
+5.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script.  If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
 
 The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered.
 
