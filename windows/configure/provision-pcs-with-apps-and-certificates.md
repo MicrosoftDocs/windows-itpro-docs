@@ -17,6 +17,7 @@ localizationpriority: high
 
 - Windows 10
 
+DEPRECATED - See [Provision PCs with apps](provision-pcs-with-apps.md)
 
 This topic explains how to create and apply a provisioning package that contains apps and certificates to a device running all desktop editions of Windows 10 except Windows 10 Home. Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more.
 
@@ -183,14 +184,15 @@ If your build is successful, the name of the provisioning package, output direct
 
 - [Provisioning packages for Windows 10](provisioning-packages.md)
 - [How provisioning works in Windows 10](provisioning-how-it-works.md)
-- [Install Windows Imaging and Configuration Designer](provisioning-install-icd.md)
+- [Install Windows Configuration Designer](provisioning-install-icd.md)
 - [Create a provisioning package](provisioning-create-package.md)
 - [Apply a provisioning package](provisioning-apply-package.md)
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
 - [NFC-based device provisioning](provisioning-nfc.md)
-- [Windows ICD command-line interface (reference)](provisioning-command-line.md)
+- [Use the package splitter tool](provisioning-package-splitter.md)
+- [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
 
 

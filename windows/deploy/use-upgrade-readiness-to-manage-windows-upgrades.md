@@ -41,7 +41,7 @@ As mentioned previously, the default target version in Upgrade Readiness is set 
 
 The number displayed under **Computers upgraded** in the Upgrade Overview blade is the total number of computers that are already running the same or a later version of Windows compared to the target version. It also is used in the evaluation of apps and drivers: Known issues and guidance for the apps and drivers in Upgrade Readiness is based on the target operating system version.
 
-You now have the ability to change the Windows 10 version you wish to target. The available options currently are: Windows 10 version 1507, Windows 10 version 1511, and Windows version 1610.
+You now have the ability to change the Windows 10 version you wish to target. The available options currently are: Windows 10 version 1507, Windows 10 version 1511, and Windows version 1607.
 
 To change the target version setting, click on **Solutions Settings**, which appears at the top when you open you Upgrade Readiness solution:
 
@@ -51,4 +51,4 @@ To change the target version setting, click on **Solutions Settings**, which app
 
 On the **Upgrade Readiness Settings** page, choose one of the options in the drop down box and click **Save**. The changes in the target version setting are reflected in evaluations when a new snapshot is uploaded to your workspace.
 
-![Target version](images/ua-cg-09.png)
+![Target version](images/ur-settings.png)

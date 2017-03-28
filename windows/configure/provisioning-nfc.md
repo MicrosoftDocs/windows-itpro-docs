@@ -17,7 +17,7 @@ localizationpriority: high
 
 Near field communication (NFC) enables Windows 10 Mobile Enterprise and Windows 10 Mobile devices to communicate with an NFC tag or another NFC-enabled transmitting device. Enterprises that do bulk provisioning can use NFC-based device provisioning to provide a provisioning package to the device that's being provisioned. NFC provisioning is simple and convenient and it can easily store an entire provisioning package. 
 
-The NFC provisioning option enables the administrator to provide a provisioning package during initial device setup or the out-of-box experience (OOBE) phase. Administrators can use the NFC provisioning option to transfer provisioning information to persistent storage by tapping an unprovisioned mobile device to an NFC tag or NFC-enabled device. To use NFC for pre-provisioning a device, you must either prepare your own NFC tags by storing your provisioning package to a tag as described in this section, or build the infrastructure needed to transmit a provisioning package between an NFC-enabled device and a mobile device during OOBE.
+The NFC provisioning option enables the administrator to provide a provisioning package during initial device setup (the out-of-box experience or OOBE phase). Administrators can use the NFC provisioning option to transfer provisioning information to persistent storage by tapping an unprovisioned mobile device to an NFC tag or NFC-enabled device. To use NFC for pre-provisioning a device, you must either prepare your own NFC tags by storing your provisioning package to a tag as described in this section, or build the infrastructure needed to transmit a provisioning package between an NFC-enabled device and a mobile device during OOBE.
 
 ## Provisioning OOBE UI
 
@@ -131,18 +131,9 @@ For detailed information and code samples on how to implement an NFC-enabled dev
 
 ## Related topics
 
-- [Provisioning packages for Windows 10](provisioning-packages.md)
-- [How provisioning works in Windows 10](provisioning-how-it-works.md)
-- [Install Windows Imaging and Configuration Designer](provisioning-install-icd.md)
-- [Create a provisioning package](provisioning-create-package.md)
-- [Apply a provisioning package](provisioning-apply-package.md)
-- [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
-- [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
-- [Provision PCs with apps and certificates for initial deployments (advanced provisioning)](provision-pcs-with-apps-and-certificates.md)
-- [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
-- [Windows ICD command-line interface (reference)](provisioning-command-line.md)
-- [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
+- [Use Windows Configuration Designer to configure Windows 10 Mobile devices](provisioning-configure-mobile.md)
 
+- [Barcode provisioning and the package splitter tool](provisioning-package-splitter.md)
  
 
  

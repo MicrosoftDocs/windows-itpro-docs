@@ -37,19 +37,24 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 
 Several Delivery Optimization features are configurable:
 
-| Group Policy setting | MDM setting |
-| --- | --- |
-| [Download mode](#download-mode) | DODownloadMode |
-| [Group ID](#group-id)  | DOGroupID |
-| [Max Cache Age](#max-cache-age) | DOMaxCacheAge |
-| [Max Cache Size](#max-cache-size)  | DOMaxCacheSize |
-| [Absolute Max Cache Size](#absolute-max-cache-size) | DOAbsoluteMaxCacheSize |
-| [Modify Cache Drive](#modify-cache-drive) | DOModifyCacheDrive |
-| [Maximum Download Bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth |
-| [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth |
-| [Max Upload Bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth |
-| [Monthly Upload Data Cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap |
-| [Minimum Background QoS](#minimum-background-qos) | DOMinBackgroundQoS |
+| Group Policy setting | MDM setting | Supported from version |
+| --- | --- | --- |
+| [Download mode](#download-mode) | DODownloadMode | 1511 |
+| [Group ID](#group-id)  | DOGroupID | 1511 |
+| [Minimum RAM (inclusive) allowed to use Peer Caching](#minimum-ram-allowed-to-use-peer-caching) | DOMinRAMAllowedToPeer | 1703 |
+| [Minimum disk size allowed to use Peer Caching](#minimum-disk-size-allowed-to-use-peer-caching) | DOMinDiskSizeAllowedToPeer | 1703 |
+| [Max Cache Age](#max-cache-age) | DOMaxCacheAge | 1511 |
+| [Max Cache Size](#max-cache-size)  | DOMaxCacheSize | 1511 |
+| [Absolute Max Cache Size](#absolute-max-cache-size) | DOAbsoluteMaxCacheSize | 1607 |
+| [Modify Cache Drive](#modify-cache-drive) | DOModifyCacheDrive | 1607 |
+| [Minimum Peer Caching Content File Size](#minimum-peer-caching-content-file-size) | DOMinFileSizeToCache | 1703 |
+| [Maximum Download Bandwidth](#maximum-download-bandwidth) | DOMaxDownloadBandwidth | 1607 |
+| [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) | DOPercentageMaxDownloadBandwidth | 1607 |
+| [Max Upload Bandwidth](#max-upload-bandwidth) | DOMaxUploadBandwidth | 1607 |
+| [Monthly Upload Data Cap](#monthly-upload-data-cap) | DOMonthlyUploadDataCap | 1607 |
+| [Minimum Background QoS](#minimum-background-qos) | DOMinBackgroundQoS | 1607 |
+| [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1703 |
+| [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1703 |
 
 When configuring Delivery Optimization on Windows 10 devices, the first and most important thing to configure, would be [Download mode](#download-mode). Download mode dictates how Delivery Optimization downloads Windows updates.
 
@@ -65,11 +70,19 @@ Delivery Optimization uses locally cached updates. In cases where devices have a
 >[!NOTE]
 >It is possible to configure preferred cache devices. For more information, see [Set “preferred” cache devices for Delivery Optimization](#set-preferred-cache-devices).
 
+All cached files have to be above a set minimum size. This size is automatically set by the Delivery Optimization cloud services. Administrators may choose to change it, which will result in increased performance, when local storage is sufficient and the network isn't strained or congested. [Minimum Peer Caching Content File Size](#minimum-peer-caching-content-file-size) determines the minimum size of files to be cached.
+
 There are additional options available to robustly control the impact Delivery Optimization has on your network:
 - [Maximum Download Bandwidth](#maximum-download-bandwidth) and [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) controls the download bandwidth used by Delivery Optimization.
 - [Max Upload Bandwidth](#max-upload-bandwidth) controls the Delivery Optimization upload bandwidth usage.
 - [Monthly Upload Data Cap](#monthly-upload-data-cap) controls the amount of data a client can upload to peers per month.
 - [Minimum Background QoS](#minimum-background-qos) lets administrators guarantee a minimum download speed for Windows updates. This is achieved by adjusting the amount of data downloaded directly from Windows Update or WSUS servers, rather than other peers in the network.
+
+Various controls allow administrators to further customize scenarios where Delivery Optimization will be used:
+- [Minimum RAM (inclusive) allowed to use Peer Caching](#minimum-ram-allowed-to-use-peer-caching) sets the minimum RAM required for peer caching to be enabled.
+- [Minimum disk size allowed to use Peer Caching](#minimum-disk-size-allowed-to-use-peer-caching) sets the minimum disk size required for peer caching to be enabled.
+- [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) allows clients connected through VPN to use peer caching.
+- [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) controls the minimum battery level required for uploads to occur. Enabling this policy is required to allow upload while on battery.
 
 ### How Microsoft uses Delivery Optimization
 In Microsoft, to help ensure that ongoing deployments weren’t affecting our network and taking away bandwidth for other services, Microsoft IT used a couple of different bandwidth management strategies. Delivery Optimization, peer-to-peer caching enabled through Group Policy, was piloted and then deployed to all managed devices using Group Policy. Based on recommendations from the Delivery Optimization team, we used the "group" configuration to limit sharing of content to only the devices that are members of the same Active Directory domain. The content is cached for 24 hours. More than 76 percent of content came from peer devices versus the Internet.
@@ -102,7 +115,20 @@ By default, peer sharing on clients using the group download mode is limited to 
 >To generate a GUID using Powershell, use [```[guid]::NewGuid()```](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)
 >
 >This configuration is optional and not required for most implementations of Delivery Optimization.
-    
+
+<span id="minimum-ram-allowed-to-use-peer-caching"/>
+### Minimum RAM (inclusive) allowed to use Peer Caching  
+
+This setting specifies the minimum RAM size in GB required to use Peer Caching. For example if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching. The recommended values are 1 to 4 GB, and the default value is 4 GB.
+
+### Minimum disk size allowed to use Peer Caching
+
+This setting specifies the required minimum disk size (capacity in GB) for the device to use Peer Caching. The recommended values are 64 to 256 GB, and the default value is 32 GB.
+
+>[!NOTE]
+>If the [Modify Cache Drive](#modify-cache-drive) policy is set, the disk size check will apply to the new working directory specified by this policy.
+
+
 ### Max Cache Age
 
 In environments configured for Delivery Optimization, you may want to set an expiration on cached updates and Windows application installation files. If so, this setting defines the maximum number of seconds each file can be held in the Delivery Optimization cache on each Windows 10 client computer. The default Max Cache Age value is 259,200 seconds (3 days). Alternatively, organizations may choose to set this value to “0” which means “unlimited” to avoid peers re-downloading content. When “Unlimited” value is set, Delivery Optimization will hold the files in the cache longer and will clean up the cache as needed (for example when the cache size exceeded the maximum space allowed).
@@ -113,7 +139,11 @@ This setting limits the maximum amount of space the Delivery Optimization cache 
 
 ### Absolute Max Cache Size
 
-This setting specifies the maximum number of gigabytes the Delivery Optimization cache can use. This is different from the **DOMaxCacheSize** setting, which is a percentage of available disk space. Also, if you configure this policy, it will override the **DOMaxCacheSize** setting. The default value for this setting is 10 GB.
+This setting specifies the maximum number of gigabytes the Delivery Optimization cache can use. This is different from the [**Max Cache Size**](#max-cache-size) setting, which is a percentage of available disk space. Also, if you configure this policy, it will override the [**Max Cache Size**](#max-cache-size) setting. The default value for this setting is 10 GB.
+
+### Minimum Peer Caching Content File Size
+
+This setting specifies the minimum content file size in MB enabled to use Peer Caching. The recommended values are from 1 to 100000 MB.
 
 ### Maximum Download Bandwidth
 
@@ -129,7 +159,7 @@ This setting allows you to limit the amount of upload bandwidth individual clien
 
 ### Minimum Background QoS
 
-This value specifies the minimum download speed guarantee that a client attempts to achieve and will fulfill by downloading more bytes from Windows Update servers or WSUS. Simply put, the lower this value is, the more content will be sourced using peers on the network rather than Windows Update. The higher this value, the more content is received from Windows Update servers or WSUS, versus peers on the local network.
+This value specifies the minimum download speed guarantee that a client attempts to achieve and will fulfill by downloading more kilobytes from Windows Update servers or WSUS. Simply put, the lower this value is, the more content will be sourced using peers on the network rather than Windows Update. The higher this value, the more content is received from Windows Update servers or WSUS, versus peers on the local network.
 
 ### Modify Cache Drive
 
@@ -138,7 +168,19 @@ This setting allows for an alternate Delivery Optimization cache location on the
 ### Monthly Upload Data Cap
 
 This setting specifies the total amount of data in gigabytes that a Delivery Optimization client can upload to Internet peers per month. A value of 0 means that an unlimited amount of data can be uploaded. The default value for this setting is 20 GB.
-    
+
+### Enable Peer Caching while the device connects via VPN
+
+This setting determines whether a device will be allowed to participate in Peer Caching while connected to VPN. Specify "true" to allow the device to participate in Peer Caching while connected via VPN to the domain network. This means the device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
+
+### Allow uploads while the device is on battery while under set Battery level
+
+This setting specifies battery levels at which a device will be allowed to upload data. Specify any value between 1 and 100 (in percentage) to allow the device to upload data to LAN and Group peers while on DC power (Battery). Uploads will automatically pause when the battery level drops below the set minimum battery level. The recommended value to set if you allow uploads on battery is 40 (for 40%).
+The device can download from peers while on battery regardless of this policy.
+
+>[!IMPORTANT]
+> By default, devices **will not upload while on battery**. To enable uploads while on battery, you need to enable this policy and set the battery value under which uploads pause.
+
 <span id="set-preferred-cache-devices"/>
 ## Set “preferred” cache devices for Delivery Optimization
 
@@ -148,7 +190,7 @@ To specify which devices are preferred, you can set the **Max Cache Age** config
 
 On devices that are not preferred, you can choose to set the following policy to prioritize data coming from local peers instead of the Internet:
 
--  Set **DOMinBackgroundQoS** with a low value, for example `65536` which is the equivalent of 64 KB/s.
+-  Set **DOMinBackgroundQoS** with a low value, for example `64` which is the equivalent of 64 KB/s.
 
 ## Learn more
 

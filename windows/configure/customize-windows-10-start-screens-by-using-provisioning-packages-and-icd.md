@@ -1,5 +1,5 @@
 ---
-title: Customize Windows 10 Start with ICD and provisioning packages (Windows 10)
+title: Customize Windows 10 Start and tasbkar with provisioning packages (Windows 10)
 description: In Windows 10, you can use a provisioning package to deploy a customized Start layout to users.
 ms.assetid: AC952899-86A0-42FC-9E3C-C25F45B1ACAC
 keywords: ["Start layout", "start menu"]
@@ -10,7 +10,7 @@ author: jdeckerMS
 localizationpriority: medium
 ---
 
-# Customize Windows 10 Start and taskbar with ICD and provisioning packages
+# Customize Windows 10 Start and taskbar with provisioning packages
 
 
 **Applies to**
@@ -18,16 +18,14 @@ localizationpriority: medium
 - Windows 10
 - Windows 10 Mobile
 
-**Looking for consumer information?**
+>**Looking for consumer information?** [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
--   [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
-
-In Windows 10 Mobile, Windows 10 Enterprise, and Windows 10 Education, version 1607, you can use a provisioning package that you create with Windows Imaging and Configuration Designer (ICD) tool to deploy a customized Start and taskbar layout to users. No reimaging is required, and the Start and taskbar layout can be updated simply by overwriting the .xml file that contains the layout. The provisioning package can be applied to a running device. This enables you to customize Start and taskbar layouts for different departments or organizations, with minimal management overhead.
+In Windows 10 Mobile, Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, version 1703, you can use a provisioning package that you create with Windows Configuration Designer to deploy a customized Start and taskbar layout to users. No reimaging is required, and the Start and taskbar layout can be updated simply by overwriting the .xml file that contains the layout. The provisioning package can be applied to a running device. This enables you to customize Start and taskbar layouts for different departments or organizations, with minimal management overhead.
 
 >[!IMPORTANT]
 >If you use a provisioning package to configure the taskbar, your configuration will be reapplied each time the explorer.exe process restarts. If your configuration pins an app and the user unpins that app, the user's change will be overwritten the next time the configuration is applied. To apply a taskbar configuration and allow users to make changes that will persist, apply your configuration by using Group Policy.
 
-**Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md) for desktop editions or [create a Start layout XML](start-layout-xml-mobile.md) for mobile.
+**Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md) for desktop editions or [create a Start layout XML](mobile-lockdown-designer.md) for mobile.
 
 ## <a href="" id="bkmk-howstartscreencontrolworks"></a>How Start layout control works
 
@@ -36,23 +34,39 @@ Three features enable Start and taskbar layout control:
 
 -   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
-    **Note**  
-    To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
+    >[!NOTE]  
+    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
 
 -    [You can modify the Start .xml file](configure-windows-10-taskbar.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.
 
+-   In Windows Configuration Designer, you use the **Policies/Start/StartLayout** setting to provide the contents of the .xml file that defines the Start and taskbar layout.
 
--   In ICD, you use the **Start/StartLayout** setting to set the path to the .xml file that defines the Start and taskbar layout.
+<span id="escape" />
+## Prepare the Start layout XML file
+
+Before you paste the contents of the .xml file in the **Policies/Start/StartLayout** setting, you must remove all line breaks and replace markup characters with escape characters. 
+
+1. In PowerShell, run the following script:
+
+    ```
+    $path="layout.xml"
+    (Get-Content $path -Raw).Replace("'r'n","") | Set-Content $path -Force
+    ```
+
+2. Copy the contents of layout.xml into an online tool that escapes characters.
+
+3. Copy the text with the escape characters and paste it in the **Polilcies/Start/StartLayout** setting in your provisioning package. 
 
 ## <a href="" id="bkmk-domaingpodeployment"></a>Create a provisioning package that contains a customized Start layout
 
 
-Use the [Imaging and Configuration Designer (ICD) tool](https://go.microsoft.com/fwlink/p/?LinkID=525483) included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package that applies a customized Start and taskbar layout. [Install the ADK.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](provisioning-install-icd.md)
 
 >[!IMPORTANT]
 >When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-1.  Open ICD (by default, %systemdrive%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+1.  Open Windows Configuration Designer (by default, %systemdrive%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+
 2. Choose **Advanced provisioning**.
 
 3.  Name your project, and click **Next**.
@@ -61,12 +75,12 @@ Use the [Imaging and Configuration Designer (ICD) tool](https://go.microsoft.com
 
 5.  On **New project**, click **Finish**. The workspace for your package opens.
 
-6.  Expand **Runtime settings** &gt; **Start**, and click **StartLayout**.
+6.  Expand **Runtime settings** &gt; **Policies** &gt; **Start**, and click **StartLayout**.
 
     >[!TIP]
     >If **Start** is not listed, check the type of settings you selected in step 4. You must create the project using settings for **All Windows desktop editions**.
 
-7.  Specify the path and file name of the Start layout .xml that you created with the [Export-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=620879) cmdlet.
+7.  Paste the text from the layout.xml file, [with line breaks removed and markup characters replaced with escape characters](#escape).
 
 8.  On the **File** menu, select **Save.**
 
