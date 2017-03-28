@@ -45,6 +45,34 @@ By default, local changes made to the lists (by users with administrator privile
 
 PowerShell can be used to [validate that your exclusion lists are working as expected](#validate).
 
+
+## Types of exclusions
+
+There are three exclusion lists that you can configure:
+- Extension exclusions list
+- File and folder exclusions list
+- Files opened by defined processes list
+
+The following table shows some of the typical scenarios and which list would need to be configured.
+
+Exclusion | Examples | Exclusion list
+---|---|---
+Any file with a specific extension | All files with the .test extension, anywhere on the machine | Extension exclusions
+Any file under a specific folder | All files under the c:\test\sample folder | File and folder exclusions
+Any file with a specific file name | The file "sample.test", anywhere on the machine | File and folder exclusions
+A specific file in a specific folder | The file c:\sample\sample.test only | File and folder exclusions
+A specific process | The executable file c:\test\process.exe | File and folder exclusions list
+Any file opened by a specific process | Any file opened by the process c:\test\open.exe, even if the file that is opened is located in d:\folder43 | Process-opened exclusions
+
+
+This means the exclusion lists have the following characteristics:
+- If you exclude a file, the exclusion will apply to all versions of that file, regardless of where the file is located.
+- Folder exclusions will apply to all files and folders under that folder.
+- File extensions will apply to any file name with the defined extension, regardless of where the file is located.
+- Any file opened by the defined process will be excluded, regardless of where the file is located. The process itself will **not** be excluded.
+
+
+
 <a id="gp"></a>
 ## Use Group Policy to configure exclusion lists
 
