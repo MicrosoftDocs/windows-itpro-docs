@@ -147,6 +147,20 @@ If you want to stop using the services that are provided by the TPM, you can use
   -   If you do not have the removable storage device with your saved TPM owner password, click **I want to enter the password**. In the **Type your TPM owner password** dialog box, type your password (including hyphens), and then click **Turn TPM Off**.
 
   -   If you did not save your TPM owner password or no longer know it, click **I do not have the TPM owner password**, and follow the instructions that are provided in the dialog box and subsequent UEFI screens to turn off the TPM without entering the password.
+  
+### Change the TPM Owner Password (Windows 10, version 1607 or earlier only)
+
+If you have the owner password available, see [Change the TPM Owner Password](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/change-the-tpm-owner-password), you can use TPM.msc to change the TPM Owner Password.
+
+1.  Open the TPM MMC (tpm.msc).
+
+2. In the **Action** pane, click **Change the Owner Password**
+
+  -   If you saved your TPM owner password on a removable storage device, insert it, and then click **I have the owner password file**. In the **Select backup file with the TPM owner password** dialog box, click **Browse** to locate the .tpm file that is saved on your removable storage device, click **Open**, and then click **Turn TPM Off**.
+
+  -   If you do not have the removable storage device with your saved TPM owner password, click **I want to enter the password**. In the **Type your TPM owner password** dialog box, type your password (including hyphens), and then click **Turn TPM Off**.
+
+This capability was fully removed from TPM.msc in later versions of Windows.
 
 ## Use the TPM cmdlets
 
