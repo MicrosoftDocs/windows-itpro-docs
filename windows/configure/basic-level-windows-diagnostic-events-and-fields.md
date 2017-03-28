@@ -1,6 +1,6 @@
 ---
 description: Use this article to learn more about what Windows diagnostic data is gathered at the basic level.
-title: Windows 10, version 1703 and Windows Server 2016 basic diagnostic events and fields (Windows 10)
+title: Windows 10, version 1703 basic diagnostic events and fields (Windows 10)
 keywords: privacy, telemetry
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -12,14 +12,12 @@ ms.author: brianlic
 ---
 
 
-# Windows 10, version 1703 and Windows Server 2016 basic level Windows diagnostic events and fields
+# Windows 10, version 1703 basic level Windows diagnostic events and fields
 
 
  **Applies to**
 
-- Windows 10
-- Windows 10 Mobile
-- Windows Server 2016
+- Windows 10, version 1703
 
 
 The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Windows Store. When the level is set to Basic, it also includes the Security level information.
