@@ -92,35 +92,35 @@ It's possible that you might revoke data from an unenrolled device only to later
 
     The Windows Credential service automatically recovers the employee’s previously revoked keys from the `Recovery\Input` location.
 
-**To quickly recover WIP-protected desktop data after unenrollment in a cloud-based environment**<br>
+**To quickly recover WIP-protected desktop data in a cloud-based environment**<br>
 If you use a cloud environment in your organization, you may still want to restore an employee's data after revocation. While much of the process is the same as when you're not in a cloud environment, there are a couple of differences.
 
 >[!IMPORTANT]
 >To maintain control over your enterprise data, and to be able to revoke again in the future, you must only perform this process after the employee has re-enrolled the device. 
 
-1. Have your employee sign in to the unenrolled device, open the Run command (Windows logo key + R), and type:
-    
-    `Robocopy “%localappdata%\Microsoft\EDP\Recovery” <“new_location”> * /EFSRAW`
+1. Have your employee sign in to the device that has revoked data for you to restore, open the **Run** command (Windows logo key + R), and type one of the following commands:
+
+    - If the keys are still stored within the employee's profile, type: `Robocopy “%localappdata%\Microsoft\EDP\Recovery” “*new_location*” * /EFSRAW`
 
     -or-
 
-    `Robocopy “{X:\}System Volume Information\EDP\Recovery\ ” <“new_location”> * /EFSRAW`
+    - If the employee performed a clean installation over the operating system and you need to recover the keys from the System Volume folder, type: `Robocopy “<i>drive_letter:</i>\System Volume Information\EDP\Recovery\” “*new_location*” * /EFSRAW`
 
-    Where the keys are stored either within the employee's profile or, if the employee performed a clean installation over the operating system, in the System Volume folder. Also, where *&lt;”new_location”&gt;* is in a different directory. This can be on the employee’s device or on a Windows 8 or Windows Server 2012 or newer server file share that can be accessed while you're logged in as a data recovery agent.
+    >[!Important]
+    >The “*new_location*” must be in a different directory, either on the employee’s device or on a Windows 8 or Windows Server 2012 or newer server file share, which can be accessed while you're logged in as a data recovery agent.
 
-2. Sign in to a different device with administrator credentials that have access to your organization's DRA certificate, and perform the file decryption and recovery by typing:
 
-    `cipher.exe /D <“new_location”>`
+2. Sign in to a different device with administrator credentials that have access to your organization's DRA certificate private key, and perform the file decryption and recovery by typing:
 
-3. Have your employee sign in to the unenrolled device, open the Run command, and type:
+    `cipher.exe /D <emphasis>“new_location”</emphasis>`
 
-    `Robocopy <”new_location”> “%localappdata%\Microsoft\EDP\Recovery\Input”`
+3. Have your employee sign in to the device again, open the **Run** command, and type:
+
+    `Robocopy `*“new_location”*` “%localappdata%\Microsoft\EDP\Recovery\Input”`
 
 4. Ask the employee to lock and unlock the device.
 
-    The Windows Credential service automatically recovers the employee’s previously revoked keys from the `Recovery\Input` location.
-
-<p>**Note**<br>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
+    The Windows Credential service automatically recovers the employee’s previously revoked keys from the `Recovery\Input` location. All your company’s previously revoked files should be accessible to the employee again.
 
 ## Related topics
 - [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx)
@@ -133,5 +133,5 @@ If you use a cloud environment in your organization, you may still want to resto
 
 - [Creating a Domain-Based Recovery Agent](https://msdn.microsoft.com/library/cc875821.aspx#EJAA)
 
-
+<p>**Note**<br>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
 
