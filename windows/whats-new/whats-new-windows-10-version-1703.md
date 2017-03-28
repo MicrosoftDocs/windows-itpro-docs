@@ -97,7 +97,7 @@ New features in Windows Defender Advanced Threat Protection (ATP) for Windows 10
   - Upgraded detections of ransomware and other advanced attacks
   - Historical detection capability ensures new detection rules apply to up to six months of stored data to detect attacks that previously went unnoticed
 
-- **Investigation**<br>
+a- **Investigation**<br>
   Enterprise customers can now take advantage of the entire Windows security stack with Windows Defender Antivirus detections and Device Guard blocks being surfaced in the Windows Defender ATP portal. Other capabilities have been added to help you gain a holistic view on investigations.
 
    Other investigation enhancements include:
@@ -136,7 +136,7 @@ New features for Windows Defender AV in Windows 10, version 1703 include:
 
 In Windows 10, version 1607, we [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment in version 1703 with [updated beahvior monitoring and always-on real-time protection](.../keep-secure/configure-real-time-protection-windows-defender-antivirus.md).
 
-You can read more about ransomware mitigations in the [Ransomware Protection in Windows 10 Anniversary Update whitepaper (PDF)](http://wincom.blob.core.windows.net/documents/Ransomware_protection_in_Windows_10_Anniversary_Update.pdf)
+You can read more about ransomware mitigations and detection capability in Windows Defender AV in the [Ransomware Protection in Windows 10 Anniversary Update whitepaper (PDF)](http://wincom.blob.core.windows.net/documents/Ransomware_protection_in_Windows_10_Anniversary_Update.pdf) and at the [Microsoft Malware Protection Center blog](https://blogs.technet.microsoft.com/mmpc/category/research/ransomware/). 
 
 ### Device Guard and Credential Guard
 
