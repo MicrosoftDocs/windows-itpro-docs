@@ -100,11 +100,11 @@ If you use a cloud environment in your organization, you may still want to resto
 
 1. Have your employee sign in to the device that has revoked data for you to restore, open the **Run** command (Windows logo key + R), and type one of the following commands:
 
-    - If the keys are still stored within the employee's profile, type: `Robocopy “%localappdata%\Microsoft\EDP\Recovery” “*new_location*” * /EFSRAW`
+    - If the keys are still stored within the employee's profile, type: <code>Robocopy “%localappdata%\Microsoft\EDP\Recovery” “<i>new_location</i>” * /EFSRAW</code>
 
     -or-
 
-    - If the employee performed a clean installation over the operating system and you need to recover the keys from the System Volume folder, type: `Robocopy “<i>drive_letter:</i>\System Volume Information\EDP\Recovery\” “*new_location*” * /EFSRAW`
+    - If the employee performed a clean installation over the operating system and you need to recover the keys from the System Volume folder, type: <code>Robocopy “<i>drive_letter:</i>\System Volume Information\EDP\Recovery\” "<i>new_location</i>” * /EFSRAW></code>
 
     >[!Important]
     >The “*new_location*” must be in a different directory, either on the employee’s device or on a Windows 8 or Windows Server 2012 or newer server file share, which can be accessed while you're logged in as a data recovery agent.
@@ -112,15 +112,15 @@ If you use a cloud environment in your organization, you may still want to resto
 
 2. Sign in to a different device with administrator credentials that have access to your organization's DRA certificate private key, and perform the file decryption and recovery by typing:
 
-    `cipher.exe /D <emphasis>“new_location”</emphasis>`
+    <code>cipher.exe /D “<i>new_location</i>”</code>
 
 3. Have your employee sign in to the device again, open the **Run** command, and type:
 
-    `Robocopy `*“new_location”*` “%localappdata%\Microsoft\EDP\Recovery\Input”`
+    <code>Robocopy “<i>new_location</i>” “%localappdata%\Microsoft\EDP\Recovery\Input”</code>
 
 4. Ask the employee to lock and unlock the device.
 
-    The Windows Credential service automatically recovers the employee’s previously revoked keys from the `Recovery\Input` location. All your company’s previously revoked files should be accessible to the employee again.
+    The Windows Credential service automatically recovers the employee’s previously revoked keys from the <code>Recovery\Input</code> location. All your company’s previously revoked files should be accessible to the employee again.
 
 ## Related topics
 - [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx)
