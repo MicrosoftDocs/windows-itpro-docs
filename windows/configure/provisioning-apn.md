@@ -28,7 +28,7 @@ For users who work in different locations, you can configure one APN to connect 
 
 - Tablet or PC with built-in cellular modem or plug-in USB modem dongle
 
-- [Windows Configuration Designer](provisioning-install.icd.md)
+- [Windows Configuration Designer](provisioning-install-icd.md)
 
 - Access point name (APN), the address that your PC uses to connect to the Internet when using the cellular data connection
 
