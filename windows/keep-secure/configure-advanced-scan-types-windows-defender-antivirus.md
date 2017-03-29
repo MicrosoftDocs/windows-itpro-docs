@@ -52,7 +52,7 @@ Description | GP location and setting | Default setting (if not configured) | Po
 See [Email scanning limitations](#ref1)) below | Scan > Turn on e-mail scanning | Disabled | `-DisableEmailScanning`
 Scan [reparse points](https://msdn.microsoft.com/library/windows/desktop/aa365503.aspx) | Scan > Turn on reparse point scanning | Disabled | `-DisableRestorePoint`
 Scan mapped network drives | Scan > Run full scan on mapped network drives | Disabled | `-DisableScanningMappedNetworkDrivesForFullScan`
- Scan archive files (such as .zip or .rar files). The [extensions exclusion list](configure-extension-exclusions-windows-defender-antivirus.md) will take precendence over this setting. | Scan > Scan archive files | Enabled | `-DisableArchiveScanning`
+ Scan archive files (such as .zip or .rar files). The [extensions exclusion list](configure-extension-file-exclusions-windows-defender-antivirus.md) will take precendence over this setting. | Scan > Scan archive files | Enabled | `-DisableArchiveScanning`
 Scan files on the network | Scan > Scan network files | Disabled | `-DisableScanningNetworkFiles`
 Scan packed executables | Scan > Scan packed executables | Enabled | Not available
 Scan removable drives during full scans only | Scan > Scan removable drives | Disabled | `-DisableRemovableDriveScanning`
