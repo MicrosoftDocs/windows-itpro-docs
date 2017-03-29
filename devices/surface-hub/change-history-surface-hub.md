@@ -14,6 +14,12 @@ localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
+## March 2017
+
+| New or changed topic | Description |
+| --- | --- |
+| [Prepare your environment for Microsoft Surface Hub](prepare-your-environment-for-surface-hub.md) | Added proxy configuration. |
+
 ## February 2017
 
 | New or changed topic | Description |
