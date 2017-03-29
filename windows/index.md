@@ -13,7 +13,6 @@ This library provides the core content that IT pros need to evaluate, plan, depl
 
 <center><iframe src="https://channel9.msdn.com/Events/Ignite/Australia-2017/WIN212/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center>
 
-<br/>
 <table border="0" width="100%" align='center'>
 </tr>
   <tr style="text-align:center;">
@@ -74,20 +73,18 @@ This library provides the core content that IT pros need to evaluate, plan, depl
   </tr>
 </table>
 
-<br/>
-
 ## Get to know Windows as a Service (WaaS)
 <table border="0" width="100%" align='center'>
 <tr>
-  <td valign=top width:50%; border:0;>The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers.
+  <td valign=top width:40%; border:0;>The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers.
 
   These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time.
-  - [Read more about Windows as a Service]()
+  - <a href='https://technet.microsoft.com/en-us/itpro/windows/manage/waas-overview'>Read more about Windows as a Service</a>
 
-  - [Download the WaaS infographic]()
+  - <a href=''>Download the WaaS infographic</a>
 
   </td>
-  <td valign=top width:50%; border:0;><center><img style='border:thin silver solid' src="images/w10-WaaS-poster.png" alt="Get to know Windows as a Service (WaaS) " title="Get to know Windows as a Service (WaaS)" /></center></td>
+  <td valign=top width:60%; border:0;><center><img style='border:thin silver solid' src="images/w10-WaaS-poster.png" alt="Get to know Windows as a Service (WaaS) " title="Get to know Windows as a Service (WaaS)" /></center></td>
 </tr>
 <table>
 
