@@ -34,7 +34,7 @@ This table lists the global user accounts and the permissions they have in the S
 | Distribute apps                |  X                    | X                     |
  
 
--   **Global Administrator** - IT Pros with this account have full access to Store for Business. They can do everything allowed in the Store for Business Admin role, plus they can sign up for the Store for Business, and assign Store for Business roles to other employees.
+-   **Global Administrator** - IT Pros with this account have full access to Store for Business. They can do everything allowed in the Store for Business Admin role, plus they can sign up for the Store for Business.
 
 -   **Billing Administrator** - IT Pros with this account have the same permissions as the Store for Business Purchaser role.
 
@@ -68,7 +68,7 @@ These permissions allow people to:
 
     -   Offline licensing
 
-    -   Permissions (view only)
+    -   Permissions
 
     -   Private store
 
@@ -80,12 +80,10 @@ These permissions allow people to:
 
 1.  Sign in to Store for Business.
 
-    **Note**  
-    You need to be a Global Administrator, or have the Store for Business Admin role to access the **Permissions** page.
-
-    To assign roles, you need to be a Global Administrator or a Store Administrator that is also a User Administrator.
-
-     
+    >[!Note]
+    >You need to be a Global Administrator, or have the Store for Business Admin role to access the **Permissions** page. 
+    
+    To assign roles, you need to be a Global Administrator or a Store Administrator.
 
 2.  Click **Settings**, and then choose **Permissions**.
 
@@ -95,9 +93,7 @@ These permissions allow people to:
 
     ![Image showing Assign roles to people box in Windows Store for Business.](images/wsfb-permissions-assignrole.png)
 
-4.  
-
-    If you are not finding the name you want, you might need to add people to your Azure AD directory. For more information, see [Manage user accounts in the Windows Store for Business.](manage-users-and-groups-windows-store-for-business.md)
+4.  If you are not finding the name you want, you might need to add people to your        Azure AD directory. For more information, see [Manage user accounts in the     Windows Store for Business.](manage-users-and-groups-windows-store-for-business.md)
 
  
 
