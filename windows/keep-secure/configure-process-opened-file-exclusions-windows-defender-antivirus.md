@@ -38,13 +38,13 @@ For example, you may need to exclude any file that is opened by the process *c:\
 
 You achieve this by adding the location and name of the process to the process exclusion list. When you add a process to the process exclusion list, Windows Defender AV will not scan files opened by that process, no matter where the files are located. The process itself, however, will be scanned unless it has also been added to the [file exclusion list](configure-extension-file-exclusions-windows-defender-antivirus.md).
 
-CThe exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md), [on-demand scans](run-scan-windows-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md).
+The exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md), [on-demand scans](run-scan-windows-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md).
 
 Changes made via Group Policy to the exclusion lists **will show** in the lists in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions). However, changes made in the Windows Defender Security Center app **will not show** in the Group Policy lists.
 
 You can add, remove, and review the lists for exclusions in [Group Policy](#gp), [System Center Configuration Manager, Microsoft Intune, and with the Windows Defender Security Center app](#man-tools), and you can [use wildcards](#wildcards) to further customize the lists.
 
-You can also [use PowerShell cmdlets and WMI to configure the exclusion lists](#ps), including [reviewing](#review) and [validating](#validate) your lists. 
+You can also [use PowerShell cmdlets and WMI to configure the exclusion lists](#ps), including [reviewing](#review) your lists. 
 
 
 By default, local changes made to the lists (by users with administrator privileges) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, Intune, PowerShell, or WMI. The Group Policy lists will take precedence in the case of conflicts. You can [configure how locally and globally defined exclusions lists are merged](configure-local-policy-overrides-windows-defender-antivirus.md#merge-lists) to disable this setting.
@@ -202,7 +202,7 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 
  
-
+<!--
 <a id="validate"></a>
 ## Validate exclusions lists with the EICAR test file
 
@@ -222,7 +222,7 @@ You can also use the following PowerShell code, which calls the .NET WebClient c
 $client = new-object System.Net.WebClient
 $client.DownloadFile("http://www.eicar.org/download/eicar.com.txt","c:\test.txt")
 ```
-
+-->
 
 ## Related topics
 
