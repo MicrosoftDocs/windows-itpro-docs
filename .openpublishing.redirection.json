@@ -1,6 +1,51 @@
 { 
 "redirections": [
 {
+"source_path": "windows/keep-secure/configure-windows-defender-in-windows-10.md",
+"redirect_url": "/itpro/windows/keep-secure/deploy-manage-report-windows-defender-antivirus",
+"redirect_document_id": true 
+},
+{
+"source_path": "windows/keep-secure/enable-pua-windows-defender-for-windows-10.md",
+"redirect_url": "/itpro/windows/keep-secure/detect-block-potentially-unwanted-apps-windows-defender-antivirus",
+"redirect_document_id": true 
+},
+{
+"source_path": "windows/keep-secure/get-started-with-windows-defender-for-windows-10.md",
+"redirect_url": "/itpro/windows/keep-secure/deploy-manage-report-windows-defender-antivirus",
+"redirect_document_id": false 
+},
+{
+"source_path": "windows/keep-secure/run-cmd-scan-windows-defender-for-windows-10.md",
+"redirect_url": "/itpro/windows/keep-secure/command-line-arguments-windows-defender-antivirus",
+"redirect_document_id": true 
+},
+{
+"source_path": "windows/keep-secure/troubleshoot-windows-defender-in-windows-10.md",
+"redirect_url": "/itpro/windows/keep-secure/troubleshoot-windows-defender-antivirus",
+"redirect_document_id": true 
+},
+{
+"source_path": "windows/keep-secure/use-powershell-cmdlets-windows-defender-for-windows-10.md",
+"redirect_url": "/itpro/windows/keep-secure/use-powershell-cmdlets-windows-defender-antivirus",
+"redirect_document_id": true 
+},
+{
+"source_path": "windows/keep-secure/windows-defender-block-at-first-sight.md",
+"redirect_url": "/itpro/windows/keep-secure/configure-block-at-first-sight-windows-defender-antivirus",
+"redirect_document_id": true 
+},
+{
+"source_path": "windows/keep-secure/windows-defender-in-windows-10.md",
+"redirect_url": "/itpro/windows/keep-secure/windows-defender-antivirus-in-windows-10",
+"redirect_document_id": true 
+},
+{
+"source_path": "windows/keep-secure/windows-defender-enhanced-notifications.md",
+"redirect_url": "/itpro/windows/keep-secure/configure-notifications-windows-defender-antivirus",
+"redirect_document_id": true 
+},
+{
 "source_path": "windows/keep-secure/configure-aad-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/itpro/windows/keep-secure/enable-siem-integration-windows-defender-advanced-threat-protection",
 "redirect_document_id": true
