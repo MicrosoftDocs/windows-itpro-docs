@@ -14,7 +14,7 @@ author: challum
 
 ## Purpose
 
-Get proven guidance to help you better secure and protect your enterprise by using technologies such as Credential Guard, Microsoft Passport, and Windows Hello. This section offers technology overviews and step-by-step guides.
+This section offers overviews to help you understand selected enterprise-level security technologies, such as technologies to control the health of Windows 10-based devices.
 
 ## In this section
 
@@ -39,8 +39,12 @@ Get proven guidance to help you better secure and protect your enterprise by usi
 <td align="left"><p>This guide provides a detailed description of the most important security features in the Windows 10 Mobile operating system—identity access and control, data protection, malware resistance, and app platform security.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Windows 10 security overview](windows-10-security-guide.md)</p></td>
-<td align="left"><p>This guide provides a detailed description of the most important security improvements in the Windows 10 operating system, with links to more detailed articles about many of its security features. Wherever possible, specific recommendations are provided to help you implement and configure Windows 10 security features.</p></td>
+<td align="left"><p>[Windows 10 Credential Theft Mitigation Guide Abstract](windows-credential-theft-mitigation-guide-abstract.md)</p></td>
+<td align="left"><p>This topic provides a summary of the Windows 10 credential theft mitigation guide, which can be downloaded from the Microsoft Download Center.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>[How to use single sign on (SSO) over VPN and Wi-Fi connections](how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections.md)</p></td>
+<td align="left"><p>This topic explains requirements to enable Single Sign-On (SSO) to on-premises domain resources over WiFi or VPN connections.</p></td>
 </tr>
 </tbody>
 </table>

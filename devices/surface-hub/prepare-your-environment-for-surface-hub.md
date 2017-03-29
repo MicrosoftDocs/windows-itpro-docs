@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: surfacehub
-author: TrudyHa
+author: jdeckerMS
 localizationpriority: medium
 ---
 
@@ -29,11 +29,10 @@ Review these dependencies to make sure Surface Hub features will work in your IT
 | Microsoft Operations Managmement Suite (OMS)   | OMS is used to monitor the health of Surface Hub devices. See [Monitor your Surface Hub](monitor-surface-hub.md) for details. |
 | Network and Internet access   | <p>To function properly, the Surface Hub should have internet access via a wired or wireless network. Overall, a wired connection is preferred.</p><p>**Dynamic IP:** The Surface Hub cannot be configured to use a static IP. It must use DHCP to assign an IP address.</p>**Proxy servers:** If your topology requires a connection to a proxy server to reach Internet services, then you can configure it during first run, or in Settings. See [Proxy configuration](#proxy-configuration) for additional requirements. |
 
-### Port and endpoint requirements
-
 Additionally, note that Surface Hub requires the following open ports:
 - HTTPS: 443
 - HTTP: 80
+- NTP: 123
 
 Depending on your environment, access to additional ports may be needed:
 - For online environments, see [Office 365 IP URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
@@ -65,7 +64,7 @@ Surface Hub interacts with a few different products and services. Depending on t
 
 ## Create and verify device account
 
-A device account is an Exchange resource account that Surface Hub uses to display its meeting calendar, join Skype for Business calls, and send email. See [Create and test a device account](create-and-test-a-device-account-surface-hub.md) for details.
+A device account is an Exchange resource account that Surface Hub uses to display its meeting calendar, join Skype for Business calls, send email, and (optionally) to authenticate to Exchange. See [Create and test a device account](create-and-test-a-device-account-surface-hub.md) for details.
 
 After you've created your device account, there are a couple of ways to verify that it's setup correctly.
 - Run Surface Hub device account validation PowerShell scripts. For more information, see [Surface Hub device account scripts](https://gallery.technet.microsoft.com/scriptcenter/Surface-Hub-device-account-6db77696) in Script Center, or [PowerShell scripts for Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md) later in this guide. 
