@@ -63,14 +63,18 @@ For more information see, [Manage Azure AD group and role membership](https://te
 
 ## Assign user access using the Azure portal
 
-1.	Go to the [Azure portal](www.portal.azure.com).
+1.	Go to the [Azure portal](https://portal.azure.com).
 
 2.	Select **Azure Active Directory**.
 
-3.	Select the user you want to assign user access to.
+3.  Select **Manage** > **Users and groups**.
 
-4.	Select **Manage** > **Directory role**.
+4.  Select **Manage** > **All users**.
 
-5.	Under **Directory role**, select **Limited administrator**, then **Security Reader** or **Security Administrator**.
+5.	Search or select the user you want to assign the role to.
+
+6.	Select **Manage** > **Directory role**.
+
+7.	Under **Directory role**, select **Limited administrator**, then **Security Reader** or **Security Administrator**.
 
 ![Image of Microsoft Azure portal](images/atp-azure-ui-user-access.png)
