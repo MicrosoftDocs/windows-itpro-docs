@@ -35,7 +35,7 @@ We've expanded this documentation library to cover end-to-end deployment, manage
 
 See the [In this library](#in-this-library) list at the end of this topic for links to each of the updated sections in this library.
 
-
+<a id="sysreq"></a>
 ## Minimum system requirements
 
 Windows Defender has the same hardware requirements as Windows 10. For more information, see:
@@ -45,13 +45,15 @@ Windows Defender has the same hardware requirements as Windows 10. For more info
 
 Some features require a certain version of Windows 10 - the minimum version required is specified at the top of each topic.
 
+Functionality, configuration, and management is largely the same when using Windows Defender Antivirus on Windows Server 2016, however [there are some differences](windows-defender-antivirus-on-windows-server-2016.md).
+
 ## Compatibility with Windows Defender Advanced Threat Protection
 
 Windows Defender Advanced Threat Protection (ATP) is an additional service that helps enterprises to detect, investigate, and respond to advanced persistent threats on their network. 
 
 See the [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) topics for more information about the service.
 
-If you are enrolled in Windows Defender ATP, and you are not using Windows Defender as your real-time protection service on your endpoints, Windows Defender will automatically enter into a passive mode. 
+If you are enrolled in Windows Defender ATP, and you are not using Windows Defender AV as your real-time protection service on your endpoints, Windows Defender will automatically enter into a passive mode. On Windows Server 2016 SKUs, Windows Defender AV will not enter into the passive mode and will run alongisde your other antivirus product.
 
 In passive mode, Windows Defender will continue to run (using the *msmpeng.exe* process), and will continue to be updated, however there will be no Windows Defender user interface, scheduled scans won’t run, and Windows Defender will not provide real-time protection from malware.
 

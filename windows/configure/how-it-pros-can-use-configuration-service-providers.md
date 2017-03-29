@@ -21,8 +21,8 @@ Configuration service providers (CSPs) expose device configuration settings in W
 
 The CSPs are documented on the [Hardware Dev Center](https://go.microsoft.com/fwlink/p/?LinkId=717390) because CSPs are used by mobile device management (MDM) service providers. This topic explains how IT pros and system administrators can take advantage of many settings available through CSPs to configure devices running Windows 10 and Windows 10 Mobile in their organizations.
 
-**Note**  
-The explanation of CSPs and CSP documentation also apply to Windows Mobile 5, Windows Mobile 6, Windows Phone 7, and Windows Phone 8, but links to current CSPs are for Windows 10 and Windows 10 Mobile.
+>[!NOTE]  
+>The explanation of CSPs and CSP documentation also apply to Windows Mobile 5, Windows Mobile 6, Windows Phone 7, and Windows Phone 8, but links to current CSPs are for Windows 10 and Windows 10 Mobile.
 
  [See what's new for CSPs in Windows 10, version 1607.](https://msdn.microsoft.com/library/windows/hardware/mt299056.aspx#whatsnew_1607)
 
@@ -60,15 +60,15 @@ In addition, you may have unmanaged devices, or a large number of devices that y
 
 In addition, some of the topics in the [Windows 10 and Windows 10 Mobile](../index.md) library on Technet include links to applicable CSP reference topics, such as [Cortana integration in your business or enterprise](cortana-at-work-overview.md) which links to the [Policy CSP](https://go.microsoft.com/fwlink/p/?LinkID=623244). In the CSP topics, you can learn about all of the available configuration settings.
 
-### CSPs in Windows Imaging and Configuration Designer (ICD)
+### CSPs in Windows Configuration Designer 
 
-You can use Windows Imaging and Configuration Designer (ICD) to create [provisioning packages](https://go.microsoft.com/fwlink/p/?LinkId=717466) to apply settings to devices during the out-of-box-experience (OOBE) and after devices are set up. You can use provisioning packages to configure a device's connectivity and enroll the device in MDM. Many of the runtime settings in Windows ICD are based on CSPs.
+You can use Windows Configuration Designer to create [provisioning packages](https://go.microsoft.com/fwlink/p/?LinkId=717466) to apply settings to devices during the out-of-box-experience (OOBE) and after devices are set up. You can use provisioning packages to configure a device's connectivity and enroll the device in MDM. Many of the runtime settings in Windows Configuration Designer are based on CSPs.
 
-Many settings in Windows ICD will display documentation for that setting in the center pane, and will include a reference to the CSP if the setting uses one, as shown in the following image.
+Many settings in Windows Configuration Designer will display documentation for that setting in the center pane, and will include a reference to the CSP if the setting uses one, as shown in the following image.
 
 ![how help content appears in icd](images/cspinicd.png)
 
-[Configure devices without MDM](../manage/configure-devices-without-mdm.md) explains how to use the Windows ICD tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a runtime provisioning package.
+[Provisioning packages in Windows 10](provisioning-packages.md) explains how to use the Windows Configuration Designer tool to create a runtime provisioning package.
 
 ### CSPs in MDM
 
@@ -78,7 +78,7 @@ When a CSP is available but is not explicitly included in your MDM solution, you
 
 ### CSPs in Lockdown XML
 
-Lockdown XML can be used to configure devices running Windows 10 Mobile. You can manually author a [Lockdown XML file](lockdown-xml.md) to make use of the configuration settings available through the [EnterpriseAssignedAccess configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=618601).
+Lockdown XML can be used to configure devices running Windows 10 Mobile. You can manually author a [Lockdown XML file](lockdown-xml.md) to make use of the configuration settings available through the [EnterpriseAssignedAccess configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=618601). In Windows 10, version 1703, you can also use the new [Lockdown Designer app](mobile-lockdown-designer.md) to configure your Lockdown XML.
 
 ## <a href="" id="bkmk-csp-doc"></a>How do you use the CSP documentation?
 

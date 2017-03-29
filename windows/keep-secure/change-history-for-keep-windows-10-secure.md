@@ -16,6 +16,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 ## March 2017
 |New or changed topic |Description |
 |---------------------|------------|
+|[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md)]|Added note about Azure RMS and USB drives and added new limitation about folder redirection.|
 |[Protect derived domain credentials with Credential Guard](credential-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
 |[Requirements and deployment planning guidelines for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
 |[Windows Defender SmartScreen overview](windows-defender-smartscreen-overview.md)|New |
@@ -29,6 +30,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |---------------------|------------|
 |[Overview of threat mitigations in Windows 10](overview-of-threat-mitigations-in-windows-10.md) | Reorganized from existing content, to provide a better overview of threat mitigations. Added information that maps the Enhanced Mitigation Experience Toolkit (EMET) to Windows 10 features. |
 
+>>>>>>> refs/remotes/origin/rs2
 
 
 ## January 2017

@@ -1,5 +1,5 @@
 ---
-title: Configure advanced scanning types for Windows Defender AV
+title: Configure scanning options for Windows Defender AV
 description: You can configure Windows Defender AV to scan email storage files, back-up or reparse points, network files, and archived files (such as .zip files).
 keywords: advanced scans, scanning, email, archive, zip, rar, archive, reparse scanning
 search.product: eADQiWindows 10XVcnh
@@ -12,147 +12,92 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Configure email, removable storage, network, reparse point, and archive scanning in Windows Defender AV
+# Configure scanning options in Windows Defender AV
 
 
 **Applies to**
 -   Windows 10
 
+**Audience**
+
+- Enterprise security administrators
+
+**Manageability available with**
+
+- Group Policy
+- PowerShell
+- Windows Management Instrumentation (WMI)
+- System Center Configuration Manager
+- Microsoft Intune
+
+
+To configure the Group Policy settings described in the following table:
+
+1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+
+3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+
+4.  Click **Policies** then **Administrative templates**.
+
+5.  Expand the tree to **Windows components > Windows Defender Antivirus** and then the **Location** specified in the table below.
+
+6. Double-click the policy **Setting** as specified in the table below, and set the option to your desired configuration. Click **OK**, and repeat for any other settings.
+
+See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
+
+For using WMI classes, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx).
+
+Description | GP location and setting | Default setting (if not configured) | PowerShell `Set-MpPreference` parameter or WMI property for `MSFT_MpPreference` class
+---|---|---|---
+See [Email scanning limitations](#ref1)) below | Scan > Turn on e-mail scanning | Disabled | `-DisableEmailScanning`
+Scan [reparse points](https://msdn.microsoft.com/library/windows/desktop/aa365503.aspx) | Scan > Turn on reparse point scanning | Disabled | `-DisableRestorePoint`
+Scan mapped network drives | Scan > Run full scan on mapped network drives | Disabled | `-DisableScanningMappedNetworkDrivesForFullScan`
+ Scan archive files (such as .zip or .rar files). The [extensions exclusion list](configure-extension-exclusions-windows-defender-antivirus.md) will take precendence over this setting. | Scan > Scan archive files | Enabled | `-DisableArchiveScanning`
+Scan files on the network | Scan > Scan network files | Disabled | `-DisableScanningNetworkFiles`
+Scan packed executables | Scan > Scan packed executables | Enabled | Not available
+Scan removable drives during full scans only | Scan > Scan removable drives | Disabled | `-DisableRemovableDriveScanning`
+Specify the level of subfolders within an archive folder to scan | Scan > Specify the maximum depth to scan archive files | 0 | Not available
+ Specify the maximum CPU load (as a percentage) during a scan. This a theoretical maximum - scans will not always use the maximum load defined here, but they will never exceed it | Scan > Specify the maximum percentage of CPU utilization during a scan | 50 |  `-ScanAvgCPULoadFactor`
+ Specify the maximum size (in kilobytes) of archive files that should be scanned. The default, **0**, applies not limit | Scan > Specify the maximum size of archive files to be scanned | No limit | Not available
+
+**Use Configuration Manager to configure scanning options:**
+
+See [How to create and deploy antimalware policies: Scan settings]( https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#scan-settings) for details on configuring System Center Configuration Manager (current branch).
+
+
+**Use Microsoft Intune to configure scanning options**
 
 
 
-
-
-
-## Manage email scans in Windows Defender
-
-You can use Windows Defender to scan email files. Malware can install itself and hide in email files, and although real-time protection offers you the best protection from email malware, you can also scan emails stored on your PC or server with Windows Defender.
-> **Important:**  Mail scanning only applies to on-demand and scheduled scans, not on-access scans.
+See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune: Scan options](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#specify-scan-options-settings) and [Windows Defender policy settings in Windows 10](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune#windows-defender-1) for more details.
  
-Windows Defender scans Microsoft Office Outlook 2003 and older email files. We identify the file type at run-time based on the content of the file, not on location or extension.
-> **Note: **  Scanning email files might increase the time required to complete a scan.
- 
-Windows Defender can extract embedded objects within a file (attachments and archived files, for example) and scan internally.
-> **Note:**  While Windows Defender can be configured to scan email files, it can only remediate threats detected inside certain files, for example:
--   DBX
--   MBX
--   MIME
- 
-You can configure Windows Defender to scan PST files used by Outlook 2003 or older versions (where the archive type is set to non-uni-code), but Windows Defender cannot remediate threats detected inside PST files. We recommend using real-time protection to protect against email malware.
+
+
+<a id="ref1"></a>
+### Email scanning limitations
+Enabling email scanning will cause Windows Defender AV to scan emails during on-demand and scheduled scans. Embedded objects within an email file (such as attachments and archived files) are also scanned. The following file format types can be scanned and remediated:
+- DBX
+- MBX
+- MIME
+
+>[!WARNING]
+> Is this true - can it scan Outlook 2013/ 2016?
+> "Windows Defender scans Microsoft Office Outlook 2003 and older email files."
+
+You can configure Windows Defender to scan PST files used by Outlook 2003 or older versions (where the archive type is set to non-uni-code), but Windows Defender cannot remediate threats detected inside PST files. We recommend using [always-on real-time protection](configure-real-time-protection-windows-defender-antivirus.md) to protect against email-based malware.
 
 If Windows Defender detects a threat inside an email, it will show you the following information to assist you in identifying the compromised email, so you can remediate the threat:
 -   Email subject
 -   Attachment name
-Email scanning in Windows Defender is turned off by default. There are three ways you can manage scans through Windows Defender:
--   *Group Policy* settings
--   WMI
--   PowerShell
-> **Important:**  There are some risks associated with scanning some Microsoft Outlook files and email messages. You can read about tips and risks associated with scanning Outlook files and email messages in the following articles:
+
+>[!WARNING]
+>There are some risks associated with scanning some Microsoft Outlook files and email messages. You can read about tips and risks associated with scanning Outlook files and email messages in the following articles:
 -   [Scanning Outlook files in Outlook 2013](https://technet.microsoft.com/library/dn769141.aspx#bkmk-1)
 -   [Scanning email messages in Outlook 2013](https://technet.microsoft.com/library/dn769141.aspx#bkmk-2)
- 
-## Use *Group Policy* settings to enable email scans
 
-This policy setting allows you to turn on email scanning. When email scanning is enabled, the engine will parse the mailbox and mail files to analyze the mail bodies and attachments.
+## Related topics
 
-Turn on email scanning with the following *Group Policy* settings:
-1.  Open the **Group Policy Editor**.
-2.  In the **Local Computer Policy** tree, expand **Computer Configuration**, then **Administrative Templates**, then **Windows Components**, then **Windows Defender**.
-3.  Click **Scan**.
-4.  Double-click **Turn on e-mail scanning**.
-
-    This will open the **Turn on e-mail scanning** window:
-    
-    ![turn on e-mail scanning window](images/defender-scanemailfiles.png)
-    
-5.  Select **Enabled**.
-6.  Click **OK** to apply changes.
-
-## Use WMI to disable email scans
-
-You can write a WMI script or application to disable email scanning. Read more about [WMI in this article](https://msdn.microsoft.com/library/windows/desktop/dn439477.aspx), and read about [Windows Preference classes in this article](https://msdn.microsoft.com/library/windows/desktop/dn455323.aspx).
-
-Use the **DisableEmailScanning** property of the **MSFT\_MpPreference** class (part of the Windows DefenderWMI provider) to enable or disable this setting:
-**DisableEmailScanning**
-Data type: **boolean**
-Access type: Read-only
-Disable email scanning.
-
-## Use PowerShell to enable email scans
-
-You can also enable email scanning using the following PowerShell parameter:
-1.  Open PowerShell or PowerShellIntegrated Scripting Environment (ISE).
-2.  Type **Set-MpPreference -DisableEmailScanning $false**.
-
-Read more about this in:
--   [Scripting with Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx)
--   [Defender Cmdlets](https://technet.microsoft.com/library/dn433280.aspx)
-
-## Manage archive scans in Windows Defender
-
-You can use Windows Defender to scan archive files. Malware can install itself and hide in archive files, and although real-time protection offers you the best protection from malware, you can also scan archives stored on your PC or server with Windows Defender.
-> **Important:**  Archive scanning only applies to on-demand and scheduled scans, not on-access scans.
- 
-Archive scanning in Windows Defender is turned on by default. There are four ways you can manage scans through Windows Defender:
--   *Group Policy* settings
--   WMI
--   PowerShell
--   Endpoint Protection
-> **Note:**  Scanning archive files might increase the time required to complete a scan.
- 
-If you exclude an archive file type by using the **Extensions** box, Windows Defender will not scan files with that extension (no matter what the content is), even when you have selected the **Scan archive files** check box. For example, if you exclude .rar files but there’s a .r00 file that’s actually .rar content, it will still be scanned if archive scanning is enabled.
-
-## Use *Group Policy* settings to enable archive scans
-
-This policy setting allows you to turn on archive scanning.
-
-Turn on email scanning with the following *Group Policy* settings:
-1.  Open the **Group Policy Editor**.
-2.  In the **Local Computer Policy** tree, expand **Computer Configuration**, then **Administrative Templates**, then **Windows Components**, then **Windows Defender**.
-3.  Click **Scan**.
-4.  Double-click **Scan archive files**.
-
-    This will open the **Scan archive files** window:
-    
-    ![scan archive files window](images/defender-scanarchivefiles.png)
-    
-5.  Select **Enabled**.
-6.  Click **OK** to apply changes.
-
-There are a number of archive scan settings in the **Scan** repository you can configure through *Group Policy*, for example:
--   Maximum directory depth level into which archive files are unpacked during scanning
-
-    ![specify the maximum depth to scan archive files window](images/defender-scanarchivedepth.png)
-    
--   Maximum size of archive files that will be scanned
-
-    ![specify the maximum size of archive files to be scanned window](images/defender-scanarchivesize.png)
-    
--   Maximum percentage CPU utilization permitted during a scan
-
-    ![specify the maximum percentage od cpu utilization during a scan window](images/defender-scanarchivecpu.png)
-
-## Use WMI to disable archive scans
-
-You can write a WMI script or application to disable archive scanning. Read more about [WMI in this article](https://msdn.microsoft.com/library/windows/desktop/dn439477.aspx), and read about [Windows Preference classes in this article](https://msdn.microsoft.com/library/windows/desktop/dn455323.aspx).
-
-Use the **DisableArchiveScanning** property of the **MSFT\_MpPreference** class (part of the Windows DefenderWMI provider) to enable or disable this setting:
-**DisableArchiveScanning**
-Data type: **boolean**
-Access type: Read-only
-Disable archive scanning.
-
-## Use PowerShell to enable archive scans
-
-You can also enable archive scanning using the following PowerShell parameter:
-1.  Open PowerShell or PowerShellISE.
-2.  Type **Set-MpPreference -DisableArchiveScanning $false**.
-
-Read more about this in:
--   [Scripting with Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx)
--   [Defender Cmdlets](https://technet.microsoft.com/library/dn433280.aspx)
-
-## Use Endpoint Protection to configure archive scans
-
-In Endpoint Protection, you can use the advanced scanning options to configure archive scanning. For more information, see [What are advanced scanning options?](https://technet.microsoft.com/library/ff823807.aspx)
- 
+- [Customize, initiate, and review the results of Windows Defender AV scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
+- [Configure and run on-demand Windows Defender AV scans](run-scan-windows-defender-antivirus.md)
+- [Configure scheduled scans for Windows Defender AV](scheduled-catch-up-scans-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

@@ -1,6 +1,11 @@
 { 
 "redirections": [
 {
+"source_path": "windows/keep-secure/configure-aad-windows-defender-advanced-threat-protection.md",
+"redirect_url": "/itpro/windows/keep-secure/enable-siem-integration-windows-defender-advanced-threat-protection",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/cortana-at-work-scenario-7.md",
 "redirect_url": "/itpro/windows/configure/cortana-at-work-scenario-7",
 "redirect_document_id": true
