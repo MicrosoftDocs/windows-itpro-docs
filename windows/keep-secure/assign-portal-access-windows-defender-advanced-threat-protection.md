@@ -22,9 +22,22 @@ localizationpriority: high
 - Office 365
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Windows Defender ATP users and access permissions are managed in Azure Active Directory (AAD). You can assign users with one of the following levels of permissions:
+Windows Defender ATP users and access permissions are managed in Azure Active Directory (AAD). Use the following methods to assign security roles.
+
+## Assign user access using Azure PowerShell
+You can assign users with one of the following levels of permissions:
 - Full access (Read and Write)
 - Read only access
+
+### Before you begin
+- Install Azure PowerShell. For more information see, [How to install and configure Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/).<br>
+
+    > [!NOTE]
+    > You need to run the PowerShell cmdlets in an elevated command-line.
+
+- Connect to your Azure Active Directory. For more information see, [Connect-MsolService](https://msdn.microsoft.com/library/dn194123.aspx).
+
+
 
 **Full access** <br>
 Users with full access can log in, view all system information and resolve alerts, submit files for deep analysis, and download the onboarding package.
@@ -36,13 +49,7 @@ They will not be able to change alert states, submit files for deep analysis or 
 Assigning read only access rights requires adding the users to the “Security Reader” AAD built-in role.
 
 Use the following steps to assign security roles:
-- Preparations:
-    - Install Azure PowerShell. For more information see, [How to install and configure Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/).<br>
 
-        > [!NOTE]
-        > You need to run the PowerShell cmdlets in an elevated command-line.
-
-- Connect to your Azure Active Directory. For more information see, [Connect-MsolService](https://msdn.microsoft.com/library/dn194123.aspx).
 - For **read and write** access, assign users to the security administrator role by using the following command:
 ```text
 Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress "secadmin@Contoso.onmicrosoft.com"
@@ -53,3 +60,21 @@ Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress “reader
 ```
 
 For more information see, [Manage Azure AD group and role membership](https://technet.microsoft.com/library/321d532e-407d-4e29-a00a-8afbe23008dd#BKMK_ManageGroups).
+
+## Assign user access using the Azure portal
+
+1.	Go to the [Azure portal](https://portal.azure.com).
+
+2.	Select **Azure Active Directory**.
+
+3.  Select **Manage** > **Users and groups**.
+
+4.  Select **Manage** > **All users**.
+
+5.	Search or select the user you want to assign the role to.
+
+6.	Select **Manage** > **Directory role**.
+
+7.	Under **Directory role**, select **Limited administrator**, then **Security Reader** or **Security Administrator**.
+
+![Image of Microsoft Azure portal](images/atp-azure-ui-user-access.png)
