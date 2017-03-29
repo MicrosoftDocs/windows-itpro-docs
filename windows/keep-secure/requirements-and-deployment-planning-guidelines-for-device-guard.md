@@ -62,7 +62,7 @@ The following tables provide more information about the hardware, firmware, and 
 
 The following tables describes additional hardware and firmware requirements, and the improved security that is available when those requirements are met.
 
-### Additional Qualification Requirements starting with Windows 10, version 1507, and Windows Server 2016, Technical Preview 4
+### Additional security qualifications starting with Windows 10, version 1507, and Windows Server 2016, Technical Preview 4
 
 | Protections for Improved Security - requirement         | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
@@ -70,7 +70,7 @@ The following tables describes additional hardware and firmware requirements, an
 
 <br>
 
-### Additional Qualification Requirements starting with Windows 10, version 1607, and Windows Server 2016
+### Additional security qualifications starting with Windows 10, version 1607, and Windows Server 2016
 
 > **Important**&nbsp;&nbsp;The following tables list requirements for improved security, beyond the level of protection described in the preceding tables. You can use Device Guard with hardware, firmware, and software that do not support the following protections for improved security. As your systems meet more requirements, more protections become available to them.
 
@@ -82,9 +82,9 @@ The following tables describes additional hardware and firmware requirements, an
 
 <br>
 
-### Additional Qualification Requirements starting with Windows 10, version 1703 
+### Additional security qualifications starting in 2017 
 
-The following table lists requirements for Windows 10, version 1703, which are in addition to all preceding requirements. 
+The following table lists requirements for 2017, which are in addition to all preceding requirements. 
 
 | Protection for Improved Security          | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
