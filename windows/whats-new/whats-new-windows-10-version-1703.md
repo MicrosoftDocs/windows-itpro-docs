@@ -131,6 +131,7 @@ New features for Windows Defender AV in Windows 10, version 1703 include:
 
 In Windows 10, version 1607, we [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment in version 1703 with [updated beahvior monitoring and always-on real-time protection](../keep-secure/configure-real-time-protection-windows-defender-antivirus.md).
 
+
 You can read more about ransomware mitigations and detection capability in Windows Defender AV in the [Ransomware Protection in Windows 10 Anniversary Update whitepaper (PDF)](http://wincom.blob.core.windows.net/documents/Ransomware_protection_in_Windows_10_Anniversary_Update.pdf) and at the [Microsoft Malware Protection Center blog](https://blogs.technet.microsoft.com/mmpc/category/research/ransomware/).
 
 ### Device Guard and Credential Guard
@@ -167,6 +168,10 @@ Added policies include:
 - [Minimum Peer Caching Content File Size](../update/waas-delivery-optimization.md#minimum-peer-caching-content-file-size)
 
 To check out all the details, see [Configure Delivery Optimization for Windows 10 updates](../update/waas-delivery-optimization.md)
+
+### Uninstalled in-box apps no longer automatically reinstall
+
+When upgrading to Windows 10, version 1703, in-box apps that were uninstalled by the user won't automatically reinstall as part of the feature update installation process.  (Apps de-provisioned by IT administrators will still be reinstalled.)
 
 ## Management
 
@@ -246,6 +251,6 @@ For more information about Upgrade Readiness, see the following topics:
 
 Update Compliance helps you to keep Windows 10 devices in your organization secure and up-to-date.
 
-Update Compliance is a solution built using OMS Logs and Analytics that provides information about installation status of monthly quality and feature updates. Details are provided about the deployment progress of existing updates and the status of future updates. Information is also provided about devices that might need attention to resolve issues.
+Update Compliance is a solution built using OMS Log Analytics that provides information about installation status of monthly quality and feature updates. Details are provided about the deployment progress of existing updates and the status of future updates. Information is also provided about devices that might need attention to resolve issues.
 
 For more information about Update Compliance, see [Monitor Windows Updates with Update Compliance](../manage/update-compliance-monitor.md).
