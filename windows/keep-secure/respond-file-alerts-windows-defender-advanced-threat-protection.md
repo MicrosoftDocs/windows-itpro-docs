@@ -21,7 +21,6 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre–released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Quickly respond to detected attacks by stopping and quarantining files or blocking a file. After taking action on files, you can check activity details on the Action center.
 
@@ -83,11 +82,12 @@ You can roll back and remove a file from quarantine if you’ve determined that 
     b.	Right–click **Command prompt** and select **Run as administrator**.
 
 2.	Enter the following command, and press **Enter**:
- ```
- “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
- ```
-    >[!NOTE]
-    >Windows Defender ATP will remove all files that were quarantined on this machine in the last 30 days.
+  ```
+  “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+  ```
+  
+> [!NOTE]
+> Windows Defender ATP will remove all files that were quarantined on this machine in the last 30 days.
 
 ## Block files in your network
 You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.

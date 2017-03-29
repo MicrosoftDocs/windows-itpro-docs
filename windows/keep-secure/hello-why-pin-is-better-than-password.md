@@ -75,7 +75,6 @@ If you only had a biometric sign-in configured and, for any reason, were unable 
 - [Windows Hello for Business](hello-identity-verification.md)
 - [How Windows Hello for Business works](hello-how-it-works.md)
 - [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
-- [Enable phone sign-in to PC or VPN](hello-enable-phone-signin.md)
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)

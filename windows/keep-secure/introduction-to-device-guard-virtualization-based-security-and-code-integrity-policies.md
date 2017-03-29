@@ -36,6 +36,10 @@ The following table lists security threats and describes the corresponding Devic
 
 In this guide, you learn about the individual features found within Device Guard as well as how to plan for, configure, and deploy them. Device Guard with configurable code integrity is intended for deployment alongside additional threat-mitigating Windows features such as [Credential Guard](credential-guard.md) and [AppLocker](applocker-overview.md).
 
+## New and changed functionality
+
+As of Windows 10, version 1703, you can use code integrity policies not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps (such as a line-of-business application or a browser). For more information, see [Use a code integrity policy to control specific plug-ins, add-ins, and modules](deploy-code-integrity-policies-steps.md#plug-ins).
+
 ## Tools for managing Device Guard features
 
 You can easily manage Device Guard features by using familiar enterprise and client-management tools that IT pros use every day:
