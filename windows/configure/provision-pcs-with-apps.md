@@ -40,7 +40,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 - **Restart required**: Optionally, specify if you want to initiate a reboot after a successful install of this app 
 
-- **Required win32 app dependencies**: Optionally, specify additional files that are required for the installation of the app. 
+- **Required win32 app dependencies**: Optionally, specify additional files that are required for the installation of the app. For installers that have multiple file dependencies or have directory structures, [create a cab file of the assets](provisioning-script-to-install-app.md#cab). The installation script should [include expansion of the .cab file](provisioning-script-to-install-app.md#cab-extract).
 
 ### Exe or other installer
 
@@ -52,22 +52,22 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 - **Restart required**: Optionally, specify if you want to initiate a reboot after a successful install of this app 
 
-- **Required win32 app dependencies**: Optionally, specify additional files that are required for the installation of the app. 
+- **Required win32 app dependencies**: Optionally, specify additional files that are required for the installation of the app. For installers that have multiple file dependencies or have directory structures, [create a cab file of the assets](provisioning-script-to-install-app.md#cab). The installation script should [include expansion of the .cab file](provisioning-script-to-install-app.md#cab-extract).
 
 
 <span id="adv" />
-## Add an app using advanced editor in Windows Configuration Designer
+## Add a Classic Windows app using advanced editor in Windows Configuration Designer
 
 
-1. In the **Available customizations** pane, go to **Runtime settings** > **ProvisioningCommands** > **DeviceContext** > **CommandFiles**. 
+1. In the **Available customizations** pane, go to **Runtime settings** > **ProvisioningCommands** > **PrimaryContext** > **Command**. 
 
-2. Add all the files required for the app install, including the data files and the installer.
+2. Enter a name for the first app, and then click **Add**.
 
-3. Go to **Runtime settings** > **ProvisioningCommands** > **DeviceContext** > **CommandLine** and specify the command line that needs to be executed to install the app. This is a single command line (such as a script, executable, or msi) that triggers a silent install of your CommandFiles. Note that the install must execute silently (without displaying any UI). For MSI installers use, the `msiexec /quiet` option. 
+    ![enter name for first app](images/wcd-app-name.png)
 
-> [!NOTE]
-> If you are installing more than one app, then use `CommandLine` to invoke the script or batch file that orchestrates installation of the files. For more information, see [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md). 
+3. [Configure the settings for the appropriate installer type.](#settings-for-classic-windows-apps)
 
+    ![enter settings for first app](images/wcd-app-commands.png)
 
 ### Add a universal app to your package
 
@@ -87,7 +87,7 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
 5. For **DeviceContextAppLicense**, enter the **LicenseProductID**. 
 
-    - In Windows Store for Business, generate the unencoded license for the app on the app's download page, and change the extension of the license file from **.xml** to **.ms-windows-store-license**.
+    - In Windows Store for Business, generate the unencoded license for the app on the app's download page. 
 
         ![generate license for offline app](images/uwp-license.png)
         

@@ -73,7 +73,7 @@ Scan | Configure local setting override for the scan type to use for a scheduled
 
 
 
-
+<a id="merge-lists"></a>
 ## Configure how locally and globally defined threat remediation and exclusions lists are merged
 
 You can also configure how locally defined lists are combined or merged with globally defined lists. This setting applies to [exclusion lists](configure-exclusions-windows-defender-antivirus.md) and [specified remediation lists](configure-remediation-windows-defender-antivirus.md).

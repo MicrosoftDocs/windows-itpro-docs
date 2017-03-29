@@ -26,7 +26,7 @@ You can deploy, manage, and report on Windows Defender Antivirus in a number of 
 
 As the Windows Defender AV client is installed as a core part of Windows 10, traditional deployment of a client to your endpoints does not apply.
 
-However, in most cases you will still need to enable the protection service on your endpoints with System Center Configuration Manager, Microsoft Intune, Azure Secrutiy Center, or Group Policy Objects, which is described in the following table.
+However, in most cases you will still need to enable the protection service on your endpoints with System Center Configuration Manager, Microsoft Intune, Azure Security Center, or Group Policy Objects, which is described in the following table.
 
 You'll also see additional links for:
 - Managing Windows Defender Antivirus protection, including managing product and protection updates
@@ -49,7 +49,7 @@ Microsoft Azure|Deploy Microsoft Antimalware for Azure in the [Azure portal, by 
 
 1. <span id="fn2" />Configuration of features and protection, including configuring product and protection updates, are further described in the [Configure Windows Defender Antivirus features](configure-notifications-windows-defender-antivirus.md) section in this library.  [(Return to table)](#ref2)
   
-1.	<span id="fn3" />In Windows 10, Windows Defender Antivirus is a component available without installation or deployment of an additional client or service. It will automatically be enabled when third-party antivirus products are either uninstalled or out of date. Traditional deployment therefore is not required. Deployment here refers to ensuring the Windows Defender Antivirus component is available and enabled on endpoints or servers.  [(Return to table)](#ref3)
+1.	<span id="fn3" />In Windows 10, Windows Defender Antivirus is a component available without installation or deployment of an additional client or service. It will automatically be enabled when third-party antivirus products are either uninstalled or out of date ([except on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md). Traditional deployment therefore is not required. Deployment here refers to ensuring the Windows Defender Antivirus component is available and enabled on endpoints or servers.  [(Return to table)](#ref3)
 
 
 

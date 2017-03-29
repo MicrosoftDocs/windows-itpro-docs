@@ -79,7 +79,7 @@ For Upgrade Readiness to receive and display upgrade readiness data from Microso
 
 To enable data sharing, whitelist the following endpoints. Note that you may need to get approval from your security group to do this.
 
-Note: The compatibility update KB runs under the computer’s system account. If you are using user authenticated proxies, read [this blog post](https://go.microsoft.com/fwlink/?linkid=838688) to learn what you need to do to run it under the logged on user account.
+Note: The compatibility update KB runs under the computer’s system account. If you are using user authenticated proxies, read [this blog post](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) to learn what you need to do to run it under the logged on user account.
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
