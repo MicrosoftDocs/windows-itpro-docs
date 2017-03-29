@@ -144,7 +144,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualiza
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
 ```
 
-> To enable **VBS with Secure Boot and DMA (value 2)**, in the preceding command, change **/d 1** to **/d 2**.
+> To enable **VBS with Secure Boot and DMA (value 3)**, in the preceding command, change **/d 1** to **/d 3**.
 
 **To enable VBS without UEFI lock (value 0)**
 
@@ -196,7 +196,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualiza
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
 ```
 
-> To enable **VBS with Secure Boot and DMA (value 2)**, in the preceding command, change **/d 1** to **/d 2**.
+> To enable **VBS with Secure Boot and DMA (value 3)**, in the preceding command, change **/d 1** to **/d 3**.
 
 **To enable virtualization-based protection of Code Integrity policies (with the default, UEFI lock)**
 
