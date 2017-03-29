@@ -36,7 +36,7 @@ Windows Configuration Designer in Windows 10, version 1703, includes several new
 
 Using the new wizards in Windows Configuration Designer, you can [create provisioning packages to enroll devices in Azure Active Directory](../configure/provisioning-packages.md#configuration-designer-wizards). Bulk enrollment in Azure AD is available in the desktop, mobile, kiosk, and Surface Hub wizards.
 
-![get bulk token action in wizard](images/bulk-token.png) 
+![get bulk token action in wizard](images/bulk-token.png)
 
 
 ### Windows Spotlight
@@ -52,7 +52,7 @@ The following new Group Policy and mobile device management (MDM) settings are a
 
 ### Start and taskbar layout
 
-Enterprises have been able to apply customized Start and taskbar layouts to devices running Windows 10 Enterprise and Education. In Windows 10, version 1703, customized Start and taskbar layout can also be applied to Windows 10 Pro. 
+Enterprises have been able to apply customized Start and taskbar layouts to devices running Windows 10 Enterprise and Education. In Windows 10, version 1703, customized Start and taskbar layout can also be applied to Windows 10 Pro.
 
 Additional MDM policy settings are available for Start and taskbar layout. For details, see [Manage Windows 10 Start and taskbar layout](../configure/windows-10-start-layout-options-and-policies.md).
 
@@ -79,7 +79,7 @@ Using Azure AD also means that you can remove an employee’s profile (for examp
 
 MBR2GPT.EXE is a new command-line tool available in Windows 10 version 1703 and later versions. MBR2GPT converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS).
 
-The GPT partition format is newer and enables the use of larger and more disk partitions. It also provides added data reliability, supports additional partition types, and enables faster boot and shutdown speeds. If you convert the system disk on a computer from MBR to GPT, you must also configure the computer to boot in UEFI mode, so make sure that your device supports UEFI before attempting to convert the system disk. 
+The GPT partition format is newer and enables the use of larger and more disk partitions. It also provides added data reliability, supports additional partition types, and enables faster boot and shutdown speeds. If you convert the system disk on a computer from MBR to GPT, you must also configure the computer to boot in UEFI mode, so make sure that your device supports UEFI before attempting to convert the system disk.
 
 Additional security features of Windows 10 that are enabled when you boot in UEFI mode include: Secure Boot, Early Launch Anti-malware (ELAM) driver, Windows Trusted Boot, Measured Boot, Device Guard, Credential Guard, and BitLocker Network Unlock.
 
@@ -87,7 +87,7 @@ For details, see [MBR2GPT.EXE](../deploy/mbr-to-gpt.md).
 
 ## Security
 
-### Windows Defender Advanced Threat Protection 
+### Windows Defender Advanced Threat Protection
 
 New features in Windows Defender Advanced Threat Protection (ATP) for Windows 10, version 1703 include:
 - **Detection**<br>
@@ -114,16 +114,10 @@ New features in Windows Defender Advanced Threat Protection (ATP) for Windows 10
 - **Other features**
   - [Check sensor health state](../keep-secure/check-sensor-status-windows-defender-advanced-threat-protection.md) - Check an endpoint's ability to provide sensor data and communicate with the Windows Defender ATP service and fix known issues.
 
- 
+You can read more about ransomware mitigations and detection capability in Windows Defender Advanced Threat Protection in the blog: [Averting ransomware epidemics in corporate networks with Windows Defender ATP](https://blogs.technet.microsoft.com/mmpc/2017/01/30/averting-ransomware-epidemics-in-corporate-networks-with-windows-defender-atp/).
 
 ### Windows Defender Antivirus
-New features for Windows Defender Antivirus (AV) in Windows 10, version 1703 include:
-
-- [Updates to how the Block at First Sight feature can be configured](../keep-secure/configure-block-at-first-sight-windows-defender-antivirus.md)
-- [The ability to specify the level of cloud-protection](../keep-secure/specify-cloud-protection-level-windows-defender-antivirus.md)
-- [Windows Defender Antivirus protection in the Windows Defender Security Center app](../keep-secure/windows-defender-security-center-antivirus.md)
-
-Windows Defender is now called Windows Defender Antivirus, and we've [increased the breadth of the documentation library for enterprise security admins](../keep-secure/windows-defender-antivirus-in-windows-10.md). 
+Windows Defender is now called Windows Defender Antivirus, and we've [increased the breadth of the documentation library for enterprise security admins](../keep-secure/windows-defender-antivirus-in-windows-10.md).
 
 The new library includes information on:
 - [Deploying and enabling AV protection](../keep-secure/deploy-windows-defender-antivirus.md)
@@ -136,17 +130,26 @@ Some of the highlights of the new library include:
 - [Evaluation guide for Windows Defender AV](../keep-secure/evaluate-windows-defender-antivirus.md)
 - [Deployment guide for Windows Defender AV in a virtual desktop infrastructure environment](../keep-secure/deployment-vdi-windows-defender-antivirus.md)
 
+New features for Windows Defender AV in Windows 10, version 1703 include:
+
+- [Updates to how the Block at First Sight feature can be configured](../keep-secure/configure-block-at-first-sight-windows-defender-antivirus.md)
+- [The ability to specify the level of cloud-protection](../keep-secure/specify-cloud-protection-level-windows-defender-antivirus.md)
+- [Windows Defender Antivirus protection in the Windows Defender Security Center app](../keep-secure/windows-defender-security-center-antivirus.md)
+
+In Windows 10, version 1607, we [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment in version 1703 with [updated beahvior monitoring and always-on real-time protection](.../keep-secure/configure-real-time-protection-windows-defender-antivirus.md).
+
+You can read more about ransomware mitigations and detection capability in Windows Defender AV in the [Ransomware Protection in Windows 10 Anniversary Update whitepaper (PDF)](http://wincom.blob.core.windows.net/documents/Ransomware_protection_in_Windows_10_Anniversary_Update.pdf) and at the [Microsoft Malware Protection Center blog](https://blogs.technet.microsoft.com/mmpc/category/research/ransomware/).
 
 ### Device Guard and Credential Guard
 
-Additional security qualifications for Device Guard and Credential Guard help protect vulnerabilities in UEFI runtime. 
+Additional security qualifications for Device Guard and Credential Guard help protect vulnerabilities in UEFI runtime.
 For more information, see [Device Guard Requirements](../keep-secure/requirements-and-deployment-planning-guidelines-for-device-guard.md#device-guard-requirements-for-improved-security) and [Credential Guard Security Considerations](../keep-secure/credential-guard.md#security-considerations).
 
 ### Group Policy Security Options
 
-The security setting [**Interactive logon: Display user information when the session is locked**](../keep-secure/interactive-logon-display-user-information-when-the-session-is-locked.md) has been updated to work in conjunction with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**. 
+The security setting [**Interactive logon: Display user information when the session is locked**](../keep-secure/interactive-logon-display-user-information-when-the-session-is-locked.md) has been updated to work in conjunction with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**.
 
-A new security policy setting 
+A new security policy setting
 [**Interactive logon: Don't display username at sign-in**](../keep-secure/interactive-logon-dont-display-username-at-sign-in.md) has been introduced in Windows 10 version 1703. This security policy setting determines whether the username is displayed during sign in. It works in conjunction with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**. The setting only affects the **Other user** tile.
 
 ## Update
@@ -161,7 +164,7 @@ Windows Update for Business managed devices are now able to defer feature update
 
 [Express updates](../update/waas-optimize-windows-10-updates.md#express-update-delivery) are now supported on System Center Configuration Manager, starting with version 1702 of Configuration Manager, in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
 
-Delivery Optimization policies now enable you to configure additional restrictions to have more control in various scenarios. 
+Delivery Optimization policies now enable you to configure additional restrictions to have more control in various scenarios.
 
 Added policies include:
 - [Allow uploads while the device is on battery while under set Battery level](../update/waas-delivery-optimization.md#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level)
@@ -178,7 +181,7 @@ To check out all the details, see [Configure Delivery Optimization for Windows 1
 
 Windows 10, version 1703 adds several new [configuration service providers (CSPs)](../configure/how-it-pros-can-use-configuration-service-providers.md) that provide new capabilities for managing Windows 10 devices using MDM. Some of the new CSPs are:
 
-- The [DynamicManagement CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dynamicmanagement-csp) allows you to manage devices differently depending on location, network, or time. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country to avoid roaming charges, or the wireless network can be disabled when the device is not within the corporate building or campus. Once configured, these settings will be enforced even if the device can’t reach the management server when the location or network changes. The Dynamic Management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs. 
+- The [DynamicManagement CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dynamicmanagement-csp) allows you to manage devices differently depending on location, network, or time. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country to avoid roaming charges, or the wireless network can be disabled when the device is not within the corporate building or campus. Once configured, these settings will be enforced even if the device can’t reach the management server when the location or network changes. The Dynamic Management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs.
 
 - The [CleanPC CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/cleanpc-csp) allows removal of user-installed and pre-installed applications, with the option to persist user data.
 
@@ -210,7 +213,7 @@ The following new features aren't part of Windows 10, but help you make the most
 
 ### Upgrade Readiness
 
-Upgrade Readiness helps you ensure that applications and drivers are ready for a Windows 10 upgrade. The solution provides up-to-date application and driver inventory, information about known issues, troubleshooting guidance, and per-device readiness and tracking details. The Upgrade Readiness tool moved from public preview to general availability on March 2, 2017. 
+Upgrade Readiness helps you ensure that applications and drivers are ready for a Windows 10 upgrade. The solution provides up-to-date application and driver inventory, information about known issues, troubleshooting guidance, and per-device readiness and tracking details. The Upgrade Readiness tool moved from public preview to general availability on March 2, 2017.
 
 The development of Upgrade Readiness has been heavily influenced by input from the community the development of new features is ongoing. To begin using Upgrade Readiness, add it to an existing Operation Management Suite (OMS) workspace or sign up for a new OMS workspace with the Upgrade Readiness solution enabled.  
 
@@ -227,4 +230,3 @@ Update Compliance helps you to keep Windows 10 devices in your organization secu
 Update Compliance is a solution built using OMS Logs and Analytics that provides information about installation status of monthly quality and feature updates. Details are provided about the deployment progress of existing updates and the status of future updates. Information is also provided about devices that might need attention to resolve issues.
 
 For more information about Update Compliance, see [Monitor Windows Updates with Update Compliance](../manage/update-compliance-monitor.md).
-

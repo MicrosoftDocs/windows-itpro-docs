@@ -20,7 +20,7 @@ author: iaanw
 
 **Audience**
 
-- IT professionals
+- Enterprise security administrators
 
 **Manageability available with**
 
