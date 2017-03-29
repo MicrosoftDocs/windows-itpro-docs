@@ -195,9 +195,9 @@ The following fields are available:
 - **HKCU_SensorPermissionState.HRESULT**  The error code returned when trying to query the Location service for the current user.
 - **HKLM_LocationPlatform.Status**  The state of the location platform after the feature update has completed.
 - **HKLM_LocationPlatform.HRESULT**  The error code returned when trying to query the location platform for the device.
-- **HKLM_LocationSyncEnabled.AcceptedPrivacyPolicy**  The state of the Find My Device service for the device before the feature update completed.
+- **HKLM_LocationSyncEnabled.AcceptedPrivacyPolicy**  The speech recognition state for the device before the feature update completed.
 - **HKLM_LocationSyncEnabled.HRESULT**  The error code returned when trying to query the Find My Device service for the device.
-- **HKCU_LocationSyncEnabled.AcceptedPrivacyPolicy**  The state of the Find My Device service for the current user before the feature update completed.
+- **HKCU_LocationSyncEnabled.AcceptedPrivacyPolicy**  The speech recognition state for the current user before the feature update completed.
 - **HKCU_LocationSyncEnabled.HRESULT**  The error code returned when trying to query the Find My Device service for the current user.
 - **HKLM_AllowTelemetry.AllowTelemetry**  The state of the Connected User Experiences and Telemetry component for the device before the feature update.
 - **HKLM_AllowTelemetry.HRESULT**  The error code returned when trying to query the Connected User Experiences and Telemetry conponent for the device.
@@ -229,9 +229,9 @@ The following fields are available:
 - **HKCU_SensorPermissionState.HRESULT**  The error code returned when trying to query the Location service for the current user.
 - **HKLM_LocationPlatform.Status**  The state of the location platform after the feature update has completed.
 - **HKLM_LocationPlatform.HRESULT**  The error code returned when trying to query the location platform for the device.
-- **HKLM_LocationSyncEnabled.AcceptedPrivacyPolicy**  The state of the Find My Device service for the device after the feature update has completed.
+- **HKLM_LocationSyncEnabled.AcceptedPrivacyPolicy**  The speech recognition state for the device after the feature update has completed.
 - **HKLM_LocationSyncEnabled.HRESULT**  The error code returned when trying to query the Find My Device service for the device.
-- **HKCU_LocationSyncEnabled.AcceptedPrivacyPolicy**  The state of the Find My Device service for the current user after the feature update has completed.
+- **HKCU_LocationSyncEnabled.AcceptedPrivacyPolicy**  The speech recognition state for the current user after the feature update has completed.
 - **HKCU_LocationSyncEnabled.HRESULT**  The error code returned when trying to query the Find My Device service for the current user.
 - **HKLM_AllowTelemetry.AllowTelemetry**  The state of the Connected User Experiences and Telemetry component for the device after the feature update.
 - **HKLM_AllowTelemetry.HRESULT**  The error code returned when trying to query the Connected User Experiences and Telemetry conponent for the device.
