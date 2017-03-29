@@ -78,3 +78,4 @@ Portal label  | SIEM field name | Description
 - [Configure Splunk](configure-splunk-windows-defender-advanced-threat-protection.md)
 - [Configure ArcSight](configure-arcsight-windows-defender-advanced-threat-protection.md)
 - [Pull Windows Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)
