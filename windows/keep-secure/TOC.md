@@ -804,6 +804,7 @@
 #### [Windows Defender compatibility](defender-compatibility-windows-defender-advanced-threat-protection.md)
 ###	[Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 #### [Windows Defender AV in the Windows Defender Security Center app](windows-defender-security-center-antivirus.md)
+#### [Windows Defender Antivirus on Windows Server](windows-defender-antivirus-on-windows-server-2016.md)
 #### [Evaluate Windows Defender Antivirus protection](evaluate-windows-defender-antivirus.md)
 #### [Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
 ##### [Deploy and enable Windows Defender Antivirus](deploy-windows-defender-antivirus.md)

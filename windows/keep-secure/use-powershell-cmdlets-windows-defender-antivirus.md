@@ -30,7 +30,7 @@ PowerShell cmdlets are most useful in Windows Server environments that don't rel
 PowerShell is typically installed under the folder _%SystemRoot%\system32\WindowsPowerShell_.
 
 
-**Use Windows Defender PowerShell cmdlets**
+**Use Windows Defender AV PowerShell cmdlets:**
 
 1. Click **Start**, type **powershell**, and press **Enter**.
 2. Click **Windows PowerShell** to open the interface. 

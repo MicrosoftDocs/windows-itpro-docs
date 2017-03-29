@@ -79,6 +79,7 @@ This section describes how to perform some of the most common tasks when reviewi
 > [!NOTE]
 > If these settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings. The [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-windows-defender-antivirus.md) topic describes how local policy override settings can be configured.
 
+<a id="scan"></a>
 **Run a scan with the Windows Defender Security Center app**
 1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
