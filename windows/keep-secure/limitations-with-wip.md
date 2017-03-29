@@ -98,12 +98,8 @@ This table provides info about the most common problems you might encounter whil
             </ul>
         </td>
         <td>WIP isn’t turned on for employees in your organization.</td>
-        <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.<p>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/en-us/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection). 
+        <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.<p>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/en-us/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection).</td>
     </tr>
-    <tr>
-        <td>Switching from a mobile application management (MAM) solution to a mobile device management (MDM) solution, while running Windows Home edition, turns WIP off.</td>
-        <td>WIP stops working if your organization switches from MAM to MDM while using Windows Home edition.</td>
-        <td>Continue to use your MAM solution. For more info, see the <strong>Integration with Windows Information Protection</strong> section of the [Implement server-side support for mobile application management on Windows](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/implement-server-side-mobile-application-management) topic.
 </table>
 
 >[!NOTE]
