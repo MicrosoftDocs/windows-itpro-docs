@@ -58,13 +58,6 @@ Additional MDM policy settings are available for Start and taskbar layout. For d
 
 Previously, the customized taskbar could only be deployed using Group Policy or provisioning packages. Windows 10, version 1703, adds support for customized taskbars to [MDM](../configure/customize-windows-10-start-screens-by-using-mobile-device-management.md).
 
-### Lockdown Designer for Windows 10 Mobile lockdown files
-
-The Lockdown Designer app helps you configure and create a lockdown XML file to apply to devices running Windows 10 Mobile, and includes a remote simulation to help you determine the layout for tiles on the Start screen. Using Lockdown Designer is easier than [manually creating a lockdown XML file](../configure/lockdown-xml.md).
-
-![Lockdown Designer app in Store](images/ldstore.png)
-
-[Learn more about the Lockdown Designer app.](../configure/mobile-lockdown-designer.md)
 
 ### Cortana at work
 
@@ -95,7 +88,7 @@ New features in Windows Defender Advanced Threat Protection (ATP) for Windows 10
   - [Use the threat intelligence API to create custom alerts](../keep-secure/use-custom-ti-windows-defender-advanced-threat-protection.md) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
   - Improvements on OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks
   - Upgraded detections of ransomware and other advanced attacks
-  - Historical detection capability ensures new detection rules apply to up to six months of stored data to detect attacks that previously went unnoticed
+  - Historical detection capability ensures new detection rules apply to up to six months of stored data to detect previous attacks that might not have been noticed
 
 - **Investigation**<br>
   Enterprise customers can now take advantage of the entire Windows security stack with Windows Defender Antivirus detections and Device Guard blocks being surfaced in the Windows Defender ATP portal. Other capabilities have been added to help you gain a holistic view on investigations.
@@ -136,7 +129,7 @@ New features for Windows Defender AV in Windows 10, version 1703 include:
 - [The ability to specify the level of cloud-protection](../keep-secure/specify-cloud-protection-level-windows-defender-antivirus.md)
 - [Windows Defender Antivirus protection in the Windows Defender Security Center app](../keep-secure/windows-defender-security-center-antivirus.md)
 
-In Windows 10, version 1607, we [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment in version 1703 with [updated beahvior monitoring and always-on real-time protection](.../keep-secure/configure-real-time-protection-windows-defender-antivirus.md).
+In Windows 10, version 1607, we [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment in version 1703 with [updated beahvior monitoring and always-on real-time protection](../keep-secure/configure-real-time-protection-windows-defender-antivirus.md).
 
 You can read more about ransomware mitigations and detection capability in Windows Defender AV in the [Ransomware Protection in Windows 10 Anniversary Update whitepaper (PDF)](http://wincom.blob.core.windows.net/documents/Ransomware_protection_in_Windows_10_Anniversary_Update.pdf) and at the [Microsoft Malware Protection Center blog](https://blogs.technet.microsoft.com/mmpc/category/research/ransomware/).
 
@@ -158,7 +151,7 @@ A new security policy setting
 
 The pause feature has been changed, and now requires a start date to set up. Users are now able to pause through **Settings > Update & security > Windows Update > Advanced options** in case a policy has not been configured. We have also increased the pause limit on quality updates to 35 days. You can find more information on pause in [Pause Feature Updates](../update/waas-configure-wufb.md#pause-feature-updates) and [Pause Quality Updates](../update/waas-configure-wufb.md#pause-quality-updates).
 
-Windows Update for Business managed devices are now able to defer feature update installation by up to 365 days. In settings, users are able to select their branch readiness level and update deferal periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](../update/waas-configure-wufb.md#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-quality-updates) for details.
+Windows Update for Business managed devices are now able to defer feature update installation by up to 365 days (it used to be 180 days). In settings, users are able to select their branch readiness level and update deferal periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](../update/waas-configure-wufb.md#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-quality-updates) for details.
 
 ### Optimize update delivery
 
@@ -207,6 +200,32 @@ For more info, see the following topics:
 - [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-batch-sequencing.md)
 - [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-batch-updating.md)
 - [Automatically cleanup unpublished packages on the App-V client](../manage/appv-auto-clean-unpublished-packages.md)
+
+## Windows 10 Mobile enhancements
+
+### Lockdown Designer
+
+The Lockdown Designer app helps you configure and create a lockdown XML file to apply to devices running Windows 10 Mobile, and includes a remote simulation to help you determine the layout for tiles on the Start screen. Using Lockdown Designer is easier than [manually creating a lockdown XML file](../configure/lockdown-xml.md).
+
+![Lockdown Designer app in Store](images/ldstore.png)
+
+[Learn more about the Lockdown Designer app.](../configure/mobile-lockdown-designer.md)
+
+### Other enhancements
+
+Windows 10 Mobile, version 1703 also includes the following enhancements:
+
+- SD card encryption
+- Remote PIN resets for Azure Active Directory accounts
+- SMS text message archiving
+- WiFi Direct management
+- OTC update tool
+- Continuum display management
+   - Individually turn off the monitor or phone screen when not in use
+   - Indivudally adjust screen time-out settings
+- Continuum docking solutions
+   - Set Ethernet port properties
+   - Set proxy properties for the Ethernet port
 
 ## New features in related products
 The following new features aren't part of Windows 10, but help you make the most of it.

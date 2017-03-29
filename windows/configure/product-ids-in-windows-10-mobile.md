@@ -230,20 +230,7 @@ The following table lists the product ID and AUMID for each app that is included
 
  
 
-## Get product ID and AUMID for other apps
 
-
-To get the product ID and AUMID for apps that are installed from Windows Store or installed locally ([side-loaded](https://go.microsoft.com/fwlink/p/?LinkID=623433)), use the following steps.
-
-**Prerequisites**: a device with an SD card inserted and all apps installed that you want to get IDs for
-
-1.  On Start ![start](images/starticon.png), swipe over to the App list, then tap **Settings** ![settings](images/settingsicon.png) &gt; **Accounts** &gt; **Apps Corner**.
-
-2.  Tap **Apps**, tap to select the app that you want to get IDs for, and then tap done ![done button](images/doneicon.png)
-
-3.  Tap **advanced**, and then **tap export to SD card**.
-
-4.  Connect the device to a PC using USB, and then open the WEHLockdown.xml file on the SD card of the device to view the product ID and AUMID for each app.
 
 ## Related topics
 

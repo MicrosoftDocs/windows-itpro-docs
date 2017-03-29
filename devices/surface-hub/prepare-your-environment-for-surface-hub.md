@@ -42,6 +42,20 @@ Microsoft collects telemetry to help improve your Surface Hub experience. Add th
 - Telemetry client endpoint: `https://vortex.data.microsoft.com/`
 - Telemetry settings endpoint: `https://settings.data.microsoft.com/`
 
+### Proxy configuration
+
+If your organization restricts computers on your network from connecting to the Internet, there is a set of URLs that need to be available for devices to use Store for Business. Some of the Store for Business features use Windows Store app and Windows Store services. Devices using Store for Business – either to acquire, install, or update apps – will need access to these URLs. If you use a proxy server to block traffic, your configuration needs to allow these URLs:
+
+- login.live.com
+- login.windows.net
+- account.live.com
+- clientconfig.passport.net
+- windowsphone.com
+- *.wns.windows.com
+- *.microsoft.com
+- www.msftncsi.com (prior to Windows 10, version 1607)
+- www.msftconnecttest.com/connecttest.txt (replaces www.msftncsi.com starting with Windows 10, version 1607)
+
 
 ## Work with other admins
 
