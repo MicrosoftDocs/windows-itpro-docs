@@ -27,7 +27,9 @@ Review these dependencies to make sure Surface Hub features will work in your IT
 | Skype for Business (Lync Server 2013 or later, or Skype for Business Online)  | Skype for Business is used for various conferencing features, like video calls, instant messaging, and screen sharing.</br></br>If screen sharing on a Surface Hub fails and the error message **An error occurred during the screen presentation** is displayed, see [Video Based Screen Sharing not working on Surface Hub](https://support.microsoft.com/help/3179272/video-based-screen-sharing-not-working-on-surface-hub) for help. |
 | Mobile device management (MDM) solution (Microsoft Intune, System Center Configuration Manager, or supported third-party MDM provider) | If you want to apply settings and install apps remotely, and to multiple devices at a time, you must set up a MDM solution and enroll the device to that solution. See [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md) for details. |
 | Microsoft Operations Managmement Suite (OMS)   | OMS is used to monitor the health of Surface Hub devices. See [Monitor your Surface Hub](monitor-surface-hub.md) for details. |
-| Network and Internet access   | <p>In order to function properly, the Surface Hub should have access to a wired or wireless network. Overall, a wired connection is preferred.</p><p>**Dynamic IP:** The Surface Hub cannot be configured to use a static IP. It must use DHCP to assign an IP address.</p>**Proxy servers:** If your topology requires a connection to a proxy server to reach Internet services, then you can configure it during first run, or in Settings. |
+| Network and Internet access   | <p>To function properly, the Surface Hub should have internet access via a wired or wireless network. Overall, a wired connection is preferred.</p><p>**Dynamic IP:** The Surface Hub cannot be configured to use a static IP. It must use DHCP to assign an IP address.</p>**Proxy servers:** If your topology requires a connection to a proxy server to reach Internet services, then you can configure it during first run, or in Settings. See [Proxy configuration](#proxy-configuration) for additional requirements. |
+
+### Port and endpoint requirements
 
 Additionally, note that Surface Hub requires the following open ports:
 - HTTPS: 443
@@ -40,6 +42,20 @@ Depending on your environment, access to additional ports may be needed:
 Microsoft collects telemetry to help improve your Surface Hub experience. Add these sites to your allow list:
 - Telemetry client endpoint: `https://vortex.data.microsoft.com/`
 - Telemetry settings endpoint: `https://settings.data.microsoft.com/`
+
+### Proxy configuration
+
+If your organization restricts computers on your network from connecting to the Internet, there is a set of URLs that need to be available for devices to use Store for Business. Some of the Store for Business features use Windows Store app and Windows Store services. Devices using Store for Business – either to acquire, install, or update apps – will need access to these URLs. If you use a proxy server to block traffic, your configuration needs to allow these URLs:
+
+- login.live.com
+- login.windows.net
+- account.live.com
+- clientconfig.passport.net
+- windowsphone.com
+- *.wns.windows.com
+- *.microsoft.com
+- www.msftncsi.com (prior to Windows 10, version 1607)
+- www.msftconnecttest.com/connecttest.txt (replaces www.msftncsi.com starting with Windows 10, version 1607)
 
 
 ## Work with other admins
