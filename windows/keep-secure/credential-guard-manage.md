@@ -15,7 +15,8 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-Prefer video? See the **Deep Dive into Credential Guard** video series in the **See also** section of this article.
+Prefer video? See [Protecting privileged users with Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=JNbjYMJyC_8104300474)
+in the Deep Dive into Credential Guard video series.
 
 ## Enable Credential Guard
 Credential Guard can be enabled by using [Group Policy](#turn-on-credential-guard-by-using-group-policy), the [registry](#turn-on-credential-guard-by-using-the-registry), or the Device Guard and Credential Guard [hardware readiness tool](#hardware-readiness-tool).
@@ -186,12 +187,6 @@ You can also disable Credential Guard by using the [Device Guard and Credential 
 ```
 DG_Readiness_Tool_v3.0.ps1 -Disable -AutoReboot
 ```
- 
-## See also
 
-Microsoft has created a new **Deep Dive into Credential Guard** video series that explores the main features of Credential Guard and how it works.  
-<br>
 
-### Deploying Credential Guard
 
-[![Deploying Credential Guard](images/mva_videos.png)](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=sRcyvLJyC_3304300474)

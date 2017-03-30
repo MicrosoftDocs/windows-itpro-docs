@@ -15,7 +15,8 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-Prefer video? See the **Deep Dive into Credential Guard** video series in the **See also** section of this article.
+Prefer video? See [Credentials protected by Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
+in the Deep Dive into Credential Guard video series.
 
 Some ways to store credentials are not protected by Credential Guard, including:
 
@@ -153,14 +154,6 @@ To learn more about authentication policy events, see [Authentication Policies a
 
 ## See also
 
-Microsoft has created a new **Deep Dive into Credential Guard** video series that explores the main features of Credential Guard and how it works.  
-
-### Credentials protected by Credential Guard
-
-[![Credentials protected by Credential Guard](images/mva_videos.png)](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
-
-
-
-**Related videos in this series:**
+**Deep Dive into Credential Guard: Related videos**
 
 [Protecting privileged users with Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=JNbjYMJyC_8104300474)

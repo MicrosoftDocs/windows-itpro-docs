@@ -16,7 +16,7 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-Prefer video? See the **Deep Dive into Credential Guard** video series in the **See also** section of this article.
+Prefer video? See [Credential Theft and Lateral Traversal](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=cfGBPlIyC_9404300474)  in the Deep Dive into Credential Guard video series.
 
 Introduced in Windows 10 Enterprise and Windows Server 2016, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Credential Guard prevents these attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets, and credentials stored by applications as domain credentials.
 
@@ -42,8 +42,6 @@ By enabling Credential Guard, the following features and solutions are provided:
 
 ## See also
 
-Prefer video? Microsoft has created a new **Deep Dive into Credential Guard** video series that explores the main features of Credential Guard and how it works.  
+**Deep Dive into Credential Guard: Related videos**
 
-### Credential Guard: Credential Theft and Lateral Traversal
-
-[![Credential theft and lateral traversal](images/mva_videos.png)](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=cfGBPlIyC_9404300474)
+[Credentials protected by Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)

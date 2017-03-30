@@ -16,7 +16,8 @@ author: brianlic-msft
 - Windows Server 2016  
 
 
-Prefer video? See the **Deep Dive into Credential Guard** video series in the **See also** section of this article.
+Prefer video? See [Credential Guard Design](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=mD3geLJyC_8304300474)  in the Deep Dive into Credential Guard video series.
+
 
 Kerberos, NTLM, and Credential manager isolate secrets by using virtualization-based security. Previous versions of Windows stored secrets in the Local Security Authority (LSA). Prior to Windows 10, the LSA stored secrets used by the operating system in its process memory. With Credential Guard enabled, the LSA process in the operating system talks to a new component called the isolated LSA process that stores and protects those secrets. Data stored by the isolated LSA process is protected using virtualization-based security and is not accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
 
@@ -34,15 +35,10 @@ Here's a high-level overview on how the LSA is isolated by using virtualization-
 
 ## See also
 
-Microsoft has created a new **Deep Dive into Credential Guard** video series that explores the main features of Credential Guard and how it works.  
+**Deep Dive into Credential Guard: Related videos**
 
-### Credential Guard Overview: Credential Theft and Lateral Traversal
-
-[![Credential theft and lateral traversal](images/mva_videos.png)](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=cfGBPlIyC_9404300474)
-
-
-**Related videos in this series:**
-
-[Credentials protected by Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
+[Credential Theft and Lateral Traversal](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=cfGBPlIyC_9404300474)
 
 [Virtualization-based security](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=1CoELLJyC_6704300474)
+
+[Credentials protected by Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)

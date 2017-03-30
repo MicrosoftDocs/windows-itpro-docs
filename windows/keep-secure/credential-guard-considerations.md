@@ -15,7 +15,8 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-Prefer video? See the **Deep Dive into Credential Guard** video series in the **See also** section of this article.
+Prefer video? See [Credentials Protected by Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=mD3geLJyC_8304300474)
+in the Deep Dive into Credential Guard video series.
 
 -   If Credential Guard is enabled on a device after it's joined to a domain, the user and device secrets may already be compromised. We recommend that Credential Guard is enabled before the PC is joined to a domain.
 -   You should perform regular reviews of the PCs that have Credential Guard enabled. This can be done with security audit policies or WMI queries. Here's a list of WinInit event IDs to look for:
@@ -49,14 +50,6 @@ When you enable Credential Guard, you can no longer use Kerberos unconstrained d
 
 ## See also
 
-Microsoft has created a new **Deep Dive into Credential Guard** video series that explores the main features of Credential Guard and how it works.  
-
-### Credentials Protected by Credential Guard
-
-[![Credentials Protected by Credential Guard](images/mva_videos.png)](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=mD3geLJyC_8304300474)
-
-
-
-**Related videos in this series**
+**Deep Dive into Credential Guard: Related videos**
 
 [Virtualization-based security](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=1CoELLJyC_6704300474)
