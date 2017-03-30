@@ -35,7 +35,7 @@ Simply go to **Settings > Accounts > Access work or school**. If a corporate acc
 ![Device connected to Work Account](images/waas-wipfb-work-account.jpg)
 
 ## Enroll a device with an Azure Active Directory account
-1. Visit [insider.windows.com](insider.windows.com). Sign-in with your corporate account in AAD and follow the on-screen registration directions. 
+1. Visit [insider.windows.com](https://insider.windows.com). Sign-in with your corporate account in AAD and follow the on-screen registration directions. 
 2. On your Windows 10 device, go to **Settings > Updates & Security >  Windows Insider Program**. 
 
 >[!NOTE]
@@ -44,7 +44,7 @@ Simply go to **Settings > Accounts > Access work or school**. If a corporate acc
 3. Enter the AAD account that you used to register and follow the on-screen directions. 
 
 ## Switch device enrollment from your Microsoft account to your AAD account 
-1. Visit [insider.windows.com](insider.windows.com) to register your AAD account. If you are signed in with your Microsoft account, sign out, then sign back in with your corporate AAD account. 
+1. Visit [insider.windows.com](https://insider.windows.com) to register your AAD account. If you are signed in with your Microsoft account, sign out, then sign back in with your corporate AAD account. 
 2. Click **Get started**, read and accept the privacy statement and program terms and click **Submit**. 
 3. On your Windows 10 PC, go to **Settings > Updates & Security >  Windows Insider Program**. 
 4. Under Windows Insider account, click your Microsoft account, then **Change** to open a Sign In box. 
@@ -69,3 +69,4 @@ You can simply “unlink” your account by going to **Settings > Updates & Secu
 
 ## Related Topics
 - [Windows Insider Program for Business](waas-windows-insider-for-business.md)
+- [Windows Insider Program for Business Frequently Asked Questions](waas-windows-insider-for-business-faq.md)

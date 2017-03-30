@@ -33,7 +33,7 @@ The Windows Insider Program isn’t intended to replace CB deployments in an org
 
 To get started with the Windows Insider Program for Business, you will need to follow a few simple steps:
 
-1. Navigate to [insider.windows.com](insider.windows.com) and go to **Get Started**.
+1. Navigate to [insider.windows.com](https://insider.windows.com) and go to **Get Started**.
 2. Sign-in with you desired account. It can be either a Microsoft Account or your organizational Azure Active Directory Account.
 
 ![Account Types](images/waas-wipfb-accounts.png)
@@ -152,7 +152,7 @@ After you’ve tried the latest Insider Preview builds, you may want to opt out.
 
 ## Learn More
 - [Windows Insider Program for Business using Azure Active Directory](waas-windows-insider-for-business-aad.md)
-- [WIPfB FAQ Stub]()
+- [Windows Insider Program for Business Frequently Asked Questions](waas-windows-insider-for-business-faq.md)
 
 
 ## Related Topics
