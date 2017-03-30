@@ -85,7 +85,7 @@ You can run a quick scan [from the command line](command-line-arguments-windows-
 
 
 ### Deploy the base image  
-You’ll then need to deploy the base image across your VDI. For example, you can create or clone a VHD from your base image, and then use that VHD when you create or start your VMs. 
+You'll then need to deploy the base image across your VDI. For example, you can create or clone a VHD from your base image, and then use that VHD when you create or start your VMs. 
 
 The following references provide ways you can create and deploy the base image across your VDI:
 
@@ -152,7 +152,7 @@ Scheduled scans run in addition to [real-time protection and scanning](configure
 
 The start time of the scan itself is still based on the scheduled scan policy – ScheduleDay, ScheduleTime, ScheduleQuickScanTime.  
  
-<!-- individual instructions will be removed and linked to RS2 content when it’s live, for now I’ll put them inline-->
+<!-- individual instructions will be removed and linked to RS2 content when it's live, for now I'll put them inline-->
 
 **Use Group Policy to randomize scheduled scan start times:**
 
@@ -229,7 +229,7 @@ Sometimes, Windows Defender AV notifications may be sent to or persist across mu
 
 ### Disable scans after an update
 
-This setting will prevent a scan from occurring after receiving an update. You can apply this when creating the base image if you have also run a quick scan. This prevents the newly updated VM from performing a scan again (as you’ve already scanned it when you created the base image).
+This setting will prevent a scan from occurring after receiving an update. You can apply this when creating the base image if you have also run a quick scan. This prevents the newly updated VM from performing a scan again (as you've already scanned it when you created the base image).
 
 >[!IMPORTANT]
 >Running scans after an update will help ensure your VMs are protected with the latest definition updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.

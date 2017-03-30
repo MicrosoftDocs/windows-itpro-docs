@@ -55,7 +55,7 @@ The app also includes the settings and status of:
     
 ## Comparison of settings and functions of the old app and the new app
 
-All of the previous functions and settings from the Windows Defender app (in versions of Windows 10 before version 1703) are now found in the new Windows Defender Security app. Settings that were previously located in Windows Settings under **Update & security** > **Windows Defender** are also now in the new app. 
+All of the previous functions and settings from the Windows Defender app (in versions of Windows 10 before version 1703) are now found in the new Windows Defender Security Center app. Settings that were previously located in Windows Settings under **Update & security** > **Windows Defender** are also now in the new app. 
 
 The following diagrams compare the location of settings and functions between the old and new apps:
 
@@ -74,7 +74,7 @@ Item | Windows 10, before version 1703 | Windows 10, version 1703 | Description
 
 ## Common tasks
 
-This section describes how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Windows Defender Antivirus in the new Windows Defender Security app.
+This section describes how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Windows Defender Antivirus in the new Windows Defender Security Center app.
 
 > [!NOTE]
 > If these settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings. The [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-windows-defender-antivirus.md) topic describes how local policy override settings can be configured.

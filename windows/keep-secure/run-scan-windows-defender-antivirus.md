@@ -59,7 +59,7 @@ mpcmdrun.exe -scan -scantype 1
 
 
 
-See [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender Antivirus](command-line-arguments-windows-defender-antivirus.md) for more information on how to use the tool and additional parameters, including starting a full scan or defining paths.
+See [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender Antivirus](command-line-arguments-windows-defender-antivirus.md) for more information on how to use the tool and additional parameters, including starting a full scan or defining paths.
 
 
 
