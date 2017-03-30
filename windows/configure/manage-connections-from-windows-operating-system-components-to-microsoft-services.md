@@ -883,6 +883,7 @@ To turn off **Let apps on my other devices use Bluetooth to open apps and contin
 
 - Turn off the feature in the UI.
 
+
 ### <a href="" id="bkmk-priv-location"></a>17.2 Location
 
 In the **Location** area, you choose whether devices have access to location-specific sensors and which apps have access to the device's location.
@@ -1617,6 +1618,8 @@ You can turn off the ability to launch apps from the Windows Store that were pre
     -or-
 
     -   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsStore!AutoDownload**, with a value of 2 (two).
+
+Disable the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Group Policy* > **Configure web-to-app linking with URI handlers**
 
 ### <a href="" id="bkmk-updates"></a>26. Windows Update Delivery Optimization
 
