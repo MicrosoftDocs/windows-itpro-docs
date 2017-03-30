@@ -165,7 +165,7 @@ Environment variables | The defined variable will be populated as a path when th
 
 
 <a id="review"></a>
-### Review the list of exclusions
+## Review the list of exclusions
 
 You can retrieve the items in the exclusion list with PowerShell, [System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), [Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune), or the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions).
 

@@ -40,7 +40,7 @@ You can specify the level of cloud-protection offered by Windows Defender Antivi
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.  
+3.  In the **Group Policy Management Editor** go to **Computer configuration**. 
 
 4.  Click **Policies** then **Administrative templates**.
 
@@ -48,7 +48,7 @@ You can specify the level of cloud-protection offered by Windows Defender Antivi
 
 1.  Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:  
     1.  Setting to **Default Windows Defender Antivirus blocking level** will provide strong detection without increasing the risk of detecting legitimate files.  
-    2.  Setting to **High blocking level** will apply a strong level of detection. While unlikely, some legitimate files may be detected (although you will have the option to unblock or dispute that detection).  
+    2.  Setting to **High blocking level** will apply a strong level of detection. While unlikely, some legitimate files may be detected (although you will have the option to unblock or dispute that detection). 
  
 1. Click **OK**.
 
@@ -62,7 +62,7 @@ You can specify the level of cloud-protection offered by Windows Defender Antivi
 
 ## Related topics
 
-- [Windows Defender Antivirus in Windows 10](windows-defender-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
 - [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
 

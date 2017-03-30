@@ -127,7 +127,7 @@ See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](http
 
 **Enable cloud-delivered protection on individual clients with the Windows Defender Security Center app**
 > [!NOTE]
-> If the **Configure local setting override for reporting Microsoft MAPS** GP setting is set to **Disabled**, then the **Cloud-based protection** setting in Windows Settings will be greyed-out and unavailable. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
+> If the **Configure local setting override for reporting Microsoft MAPS** Group Policy setting is set to **Disabled**, then the **Cloud-based protection** setting in Windows Settings will be greyed-out and unavailable. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings.
 
 
 1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
@@ -139,11 +139,10 @@ See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](http
 3.	Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 
 >[!NOTE]
->If automatic sample submission has been configured with GP then the setting will be greyed-out and unavailble.
+>If automatic sample submission has been configured with Group Policy then the setting will be greyed-out and unavailble.
 
 ## Related topics
 
-- [Windows Defender Antivirus in Windows 10](windows-defender-in-windows-10.md)
 - [Configure the cloud block timeout period](configure-cloud-block-timeout-period-windows-defender-antivirus.md)
 - [Configure the block at first sight feature](configure-block-at-first-sight-windows-defender-antivirus.md)
 - [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)
@@ -151,3 +150,4 @@ See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](http
 - [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx)
 - [Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 - [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
+- - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

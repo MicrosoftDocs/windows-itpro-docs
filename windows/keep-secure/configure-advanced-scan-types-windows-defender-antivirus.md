@@ -47,7 +47,7 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 For using WMI classes, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx).
 
-Description | GP location and setting | Default setting (if not configured) | PowerShell `Set-MpPreference` parameter or WMI property for `MSFT_MpPreference` class
+Description | Location and setting | Default setting (if not configured) | PowerShell `Set-MpPreference` parameter or WMI property for `MSFT_MpPreference` class
 ---|---|---|---
 See [Email scanning limitations](#ref1)) below | Scan > Turn on e-mail scanning | Disabled | `-DisableEmailScanning`
 Scan [reparse points](https://msdn.microsoft.com/library/windows/desktop/aa365503.aspx) | Scan > Turn on reparse point scanning | Disabled | `-DisableRestorePoint`
@@ -75,16 +75,16 @@ See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune: Scan
 
 <a id="ref1"></a>
 ### Email scanning limitations
-Enabling email scanning will cause Windows Defender AV to scan emails during on-demand and scheduled scans. Embedded objects within an email file (such as attachments and archived files) are also scanned. The following file format types can be scanned and remediated:
+We recommend using [always-on real-time protection](configure-real-time-protection-windows-defender-antivirus.md) to protect against email-based malware.
+
+Always-on protection scans emails as they arrive and as they are manipulated, just like normal files in the operating system. This provides the strongest form of protection and is the recommended method for scanning emails.
+
+You can use this Group Policy to also enable scanning of older email files used by Outlook 2003 and older during on-demand and scheduled scans. Embedded objects within an email file (such as attachments and archived files) are also scanned. The following file format types can be scanned and remediated:
 - DBX
 - MBX
 - MIME
 
->[!WARNING]
-> Is this true - can it scan Outlook 2013/ 2016?
-> "Windows Defender scans Microsoft Office Outlook 2003 and older email files."
-
-You can configure Windows Defender to scan PST files used by Outlook 2003 or older versions (where the archive type is set to non-uni-code), but Windows Defender cannot remediate threats detected inside PST files. We recommend using [always-on real-time protection](configure-real-time-protection-windows-defender-antivirus.md) to protect against email-based malware.
+PST files used by Outlook 2003 or older (where the archive type is set to non-uni-code) can also be scanned, but Windows Defender cannot remediate threats detected inside PST files. This is another reason why we recommend using [always-on real-time protection](configure-real-time-protection-windows-defender-antivirus.md) to protect against email-based malware.
 
 If Windows Defender detects a threat inside an email, it will show you the following information to assist you in identifying the compromised email, so you can remediate the threat:
 -   Email subject
@@ -97,7 +97,7 @@ If Windows Defender detects a threat inside an email, it will show you the follo
 
 ## Related topics
 
-- [Customize, initiate, and review the results of Windows Defender AV scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
+- [Customize, initiate, and review the results of Windows Defender AV scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
 - [Configure and run on-demand Windows Defender AV scans](run-scan-windows-defender-antivirus.md)
 - [Configure scheduled scans for Windows Defender AV](scheduled-catch-up-scans-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
