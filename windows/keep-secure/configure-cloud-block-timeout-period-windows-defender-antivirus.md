@@ -57,14 +57,14 @@ You can use Group Policy to specify an extended timeout for cloud checks.
 
 4.  Expand the tree to **Windows components > Windows Defender Antivirus > MpEngine**
     
-5.  Double-click the **Configure extended cloud check** setting and ensure the option is enabled. Specify the additional amount of time to prevent the file from running while waiting for a cloud determination.  You can specify the additional time, in seconds, from 1 second to 50 seconds. This time will be added to the default 10 seconds.
+5.  Double-click the **Configure extended cloud check** setting and ensure the option is enabled. Specify the additional amount of time to prevent the file from running while waiting for a cloud determination. You can specify the additional time, in seconds, from 1 second to 50 seconds. This time will be added to the default 10 seconds.
     
 6. Click **OK**.
 
 
 ## Related topics
 
-- [Windows Defender in Windows 10](windows-defender-in-windows-10.md)
+- [Windows Defender in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 - [Configure the Block at First Sight feature](configure-block-at-first-sight-windows-defender-antivirus.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)

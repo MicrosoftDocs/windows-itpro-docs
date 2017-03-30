@@ -40,7 +40,7 @@ See [Windows Defender Overview for Windows Server](https://technet.microsoft.com
 
 While the functionality, configuration, and management is largely the same for Windows Defender AV either on Windows 10 or Windows Server 2016, there are a few key differences:
 
-- In Windows Server 2016, [automatic exclusions](configure-exclusions-windows-defender-antivirus.md) are applied based on your defined Server Role.
+- In Windows Server 2016, [automatic exclusions](configure-server-exclusions-windows-defender-antivirus.md) are applied based on your defined Server Role.
 - In Windows Server 2016, [Windows Defender AV will not disable itself if you are running another antivirus product](windows-defender-antivirus-on-windows-server-2016.md#sysreq).
 
 

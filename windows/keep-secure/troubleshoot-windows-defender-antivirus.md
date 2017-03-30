@@ -2283,9 +2283,9 @@ Description of the error. </dt>
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>You should restart the system then run a full scan because it’s possible the system was not protected for some time.
+<p>You should restart the system then run a full scan because it's possible the system was not protected for some time.
 </p>
-<p>The Windows Defender client’s real-time protection feature encountered an error because one of the services failed to start. 
+<p>The Windows Defender client's real-time protection feature encountered an error because one of the services failed to start. 
 </p>
 <p>If it is followed by a 3007 event ID, the failure was temporary and the antimalware client recovered from the failure. 
 </p>
