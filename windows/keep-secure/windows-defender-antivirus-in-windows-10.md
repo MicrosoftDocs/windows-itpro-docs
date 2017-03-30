@@ -2,7 +2,8 @@
 title: Windows Defender Antivirus
 description: Learn how to manage, configure, and use Windows Defender AV, the built-in antimalware and antivirus product available in Windows 10.
 keywords: windows defender antivirus, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, threat, detection, protection, security
-ms.assetid: 6A9EB85E-1F3A-40AC-9A47-F44C4A2B55E2
+search.product: eADQiWindows 10XVcnh
+ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

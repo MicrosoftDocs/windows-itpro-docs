@@ -12,7 +12,7 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Configure and validate file and folder exclusions in Windows Defender AV scans
+# Configure and validate file, folder, and process-opened file exclusions in Windows Defender AV scans
 
 
 **Applies to:**
@@ -33,9 +33,9 @@ author: iaanw
 - Microsoft Intune
 - Windows Defender Security Center
 
-You can exclude certain files, folders, processes, and process-modified files from being scanned by Windows Defender Antivirus. 
+You can exclude certain files, folders, processes, and process-opened files from being scanned by Windows Defender Antivirus. 
 
-The exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md), [on-demand scans](run-scan-windows-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md).
+The exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md), [on-demand scans](run-scan-windows-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md). Exclusions for process-opened files only aply to real-time protection.
 
 Exclusions can be useful to avoid incorrect detections on files or software that are unique or customized to your organization.
 
@@ -48,5 +48,5 @@ Topic | Description
 ---|---
 [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-windows-defender-antivirus.md) | Exclude files from Windows Defender AV scans based on their file extension, file name, or location
 [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md) | You can exclude files from scans that have been opened by a specific process
-[Configure exclusions in Windows Defender AV on Windows Servery](configure-server-exclusions-windows-defender-antivirus.md) | Windows Server 2016 includes automatic exclusions, based on the defined Server Role. You can also add custom exclusions
+[Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-windows-defender-antivirus.md) | Windows Server 2016 includes automatic exclusions, based on the defined Server Role. You can also add custom exclusions
 
