@@ -164,6 +164,10 @@ The pause feature has been changed, and now requires a start date to set up. Use
 
 Windows Update for Business managed devices are now able to defer feature update installation by up to 365 days (it used to be 180 days). In settings, users are able to select their branch readiness level and update deferal periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](../update/waas-configure-wufb.md#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-quality-updates) for details.
 
+### Windows Insider for Business
+
+We recently the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (AAD). By enrolling devices in AAD, you increase the visibility of feedback submitted by users in your organization – especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](waas-windows-insider-for-business.md).
+
 ### Optimize update delivery
 
 [Express updates](../update/waas-optimize-windows-10-updates.md#express-update-delivery) are now supported on System Center Configuration Manager, starting with version 1702 of Configuration Manager, in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
