@@ -42,6 +42,9 @@ The app also includes the settings and status of:
 - Windows Defender SmartScreen Filter
 - Parental and Family Controls
 
+>[!NOTE]
+>The Windows Defender Security Center app is a client interface on Windows 10, version 1703. It is not the Windows Defender Advanced Security Center, which is the web portal used to review and manage [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md).
+
 **Review virus and threat protection settings in the Windows Defender Security Center app:**
 
 1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
@@ -52,7 +55,7 @@ The app also includes the settings and status of:
     
 ## Comparison of settings and functions of the old app and the new app
 
-All of the previous functions and settings from the Windows Defender app (in versions of Windows 10 before version 1703) are now found in the new Windows Defender Security app. Settings that were previously located in Windows Settings under **Update & security** > **Windows Defender** are also now in the new app. 
+All of the previous functions and settings from the Windows Defender app (in versions of Windows 10 before version 1703) are now found in the new Windows Defender Security Center app. Settings that were previously located in Windows Settings under **Update & security** > **Windows Defender** are also now in the new app. 
 
 The following diagrams compare the location of settings and functions between the old and new apps:
 
@@ -71,11 +74,12 @@ Item | Windows 10, before version 1703 | Windows 10, version 1703 | Description
 
 ## Common tasks
 
-This section describes how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Windows Defender Antivirus in the new Windows Defender Security app.
+This section describes how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Windows Defender Antivirus in the new Windows Defender Security Center app.
 
 > [!NOTE]
 > If these settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings. The [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-windows-defender-antivirus.md) topic describes how local policy override settings can be configured.
 
+<a id="scan"></a>
 **Run a scan with the Windows Defender Security Center app**
 1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
@@ -105,12 +109,11 @@ This section describes how to perform some of the most common tasks when reviewi
 
 3. Click **Virus & threat protection settings**.
 
-4. Toggle the switches to **On** for the following settings:
-    1.  **Real-time protection**
-    2.  **Cloud-based protection**
-    3.  **Automatic sample submission**
+4. Toggle the **Real-time protection** switch to **On**.
 
-
+>[!NOTE]
+>If you switch **Real-time protection** off, it will automatically turn back on after a short delay. This is to ensure you are protected from malware and threats.  
+>If you install another antivirus product, Windows Defender AV will automatically disable itself and will indicate this in the Windows Defender Security Center app. A setting will appear that will allow you to enable limited periodic scanning.
 
 
 <a id="exclusions"></a>

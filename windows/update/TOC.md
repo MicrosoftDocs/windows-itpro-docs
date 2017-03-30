@@ -19,5 +19,8 @@
 ## [Manage Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
 ## [Manage Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)
 ## [Manage device restarts after updates](waas-restart.md)
+## [Windows Insider Program for Business](waas-windows-insider-for-business.md)
+### [Windows Insider Program for Business using Azure Active Directory](waas-windows-insider-for-business-aad.md)
+### [Windows Insider Program for Business Frequently Asked Questions](waas-windows-insider-for-business-faq.md)
 ## [Change history for Update Windows 10](change-history-for-update-windows-10.md)
 

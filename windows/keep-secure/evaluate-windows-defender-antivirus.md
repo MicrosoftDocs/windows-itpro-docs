@@ -24,7 +24,7 @@ author: iaanw
 - Enterprise security administrators
 
 
-If you’re an enterprise security administrator, and you want to determine how well Windows Defender Antivirus protects you from viruses, malware, and potentially unwanted applications, then you can use this guide to help you evaluate Microsoft protection.
+If you're an enterprise security administrator, and you want to determine how well Windows Defender Antivirus protects you from viruses, malware, and potentially unwanted applications, then you can use this guide to help you evaluate Microsoft protection.
 
 It explains the important features available for both small and large enterprises in Windows Defender, and how they will increase malware detection and protection across your network.
 
@@ -44,7 +44,7 @@ You can also download a PowerShell that will enable all the settings described i
 
 ## Related topics
 
-- [Windows Defender Antivirus](windows-defender-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Deploy, manage, and report](deploy-manage-report-windows-defender-antivirus.md)
 
 

@@ -19,10 +19,14 @@ author: iaanw
 
 - Windows 10
 
+**Audience**
+
+- Enterprise security administrators
+
 
 You can use a dedicated command-line tool to perform various functions in Windows Defender Antivirus. 
 
-This utility can be handy when you want to automate the use of Windows Defender Antivirus. 
+This utility can be useful when you want to automate the use of Windows Defender Antivirus. 
 
 The utility is available in _%Program Files%\Windows Defender\MpCmdRun.exe_ and must be run from a command prompt.
 

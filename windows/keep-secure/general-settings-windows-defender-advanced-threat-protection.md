@@ -1,6 +1,6 @@
 ---
 title: Update general Windows Defender Advanced Threat Protection settings
-description: Update your general Windows Defender Advanced Threat Protection settings after onboarding.
+description: Update your general Windows Defender Advanced Threat Protection settings such as data retention or industry after onboarding.
 keywords: general settings, settings, update settings
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

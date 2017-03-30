@@ -2,7 +2,8 @@
 title: Windows Defender AV event IDs and error codes
 description: Look up the causes and solutions for Windows Defender Antivirus event IDs and errors
 keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
-ms.assetid: EE488CC1-E340-4D47-B50B-35BD23CB4D70
+search.product: eADQiWindows 10XVcnh
+ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -2283,9 +2284,9 @@ Description of the error. </dt>
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>You should restart the system then run a full scan because it’s possible the system was not protected for some time.
+<p>You should restart the system then run a full scan because it's possible the system was not protected for some time.
 </p>
-<p>The Windows Defender client’s real-time protection feature encountered an error because one of the services failed to start. 
+<p>The Windows Defender client's real-time protection feature encountered an error because one of the services failed to start. 
 </p>
 <p>If it is followed by a 3007 event ID, the failure was temporary and the antimalware client recovered from the failure. 
 </p>

@@ -35,6 +35,6 @@ The remaining topic in this section provides end-to-end advice and best practice
 
 ## Related topics
 
-- [Windows Defender Antivirus in Windows 10](windows-defender-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
 - [Deployment guide for Windows Defender Antivirus in a virtual desktop infrasructure (VDI) environment](deployment-vdi-windows-defender-antivirus.md)

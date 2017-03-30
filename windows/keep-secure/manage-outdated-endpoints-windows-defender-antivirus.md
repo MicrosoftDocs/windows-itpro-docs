@@ -56,7 +56,7 @@ If Windows Defender AV did not download protection updates for a specified perio
 
 **Use PowerShell cmdlets to configure catch-up protection updates:**
 
-Use the following cmdlets to enable cloud-delivered protection:
+Use the following cmdlets:
 
 ```PowerShell
 Set-MpPreference -SignatureUpdateCatchupInterval
@@ -145,11 +145,11 @@ This feature can be enabled for both full and quick scans.
     4. Enter the number of scans that can be missed before a scan will be automatically run when the user next logs on to the PC. The type of scan that is run is determined by the **Specify the scan type to use for a scheduled scan** (see the [Schedule scans](scheduled-catch-up-scans-windows-defender-antivirus.md) topic). Click **OK**.
 
 > [!NOTE]
-> The GP setting title refers to the number of days. The setting, however, is applied to the number of scans (not days) before the catch-up scan will be run.
+> The Group Policy setting title refers to the number of days. The setting, however, is applied to the number of scans (not days) before the catch-up scan will be run.
 
-**Use PowerShell cmdlets to XX:**
+**Use PowerShell cmdlets to configure catch-up scans:**
 
-Use the following cmdlets to enable cloud-delivered protection:
+Use the following cmdlets:
 
 ```PowerShell
 Set-MpPreference -DisableCatchupFullScan
@@ -185,6 +185,10 @@ See the following for more information and allowed parameters:
 
 ## Related topics
 
+- [Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
 - [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
-- [Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)
-- [Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)
+- [Manage Windows Defender Antivirus protection and definition updates](manage-protection-updates-windows-defender-antivirus.md)
+- [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
+- [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
+- [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

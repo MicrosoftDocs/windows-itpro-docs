@@ -13,7 +13,7 @@ localizationpriority: high
 # Limitations while using Windows Information Protection (WIP)
 **Applies to:**
 
--   Windows 10, version 1607
+-   Windows 10, version 1703
 -   Windows 10 Mobile
 
 This table provides info about the most common problems you might encounter while running WIP in your organization.
@@ -26,7 +26,7 @@ This table provides info about the most common problems you might encounter whil
     </tr>
     <tr>
         <td>Your enterprise data on USB drives might be tied to the device it was protected on, based on your Azure RMS configuration.</td>
-        <td><strong>If you’re using Azure RMS:</strong> Authenticated users can open enterprise data on USB drives, on computers running the latest build from the Windows Insider Program.<p><strong>If you’re not using Azure RMS:</strong> Data in the new location remains encrypted, but becomes inaccessible on other devices and for other users. For example, the file won't open or the file opens, but doesn't contain readable text.</td>
+        <td><strong>If you’re using Azure RMS:</strong> Authenticated users can open enterprise data on USB drives, on computers running Windows 10, version 1703.<p><strong>If you’re not using Azure RMS:</strong> Data in the new location remains encrypted, but becomes inaccessible on other devices and for other users. For example, the file won't open or the file opens, but doesn't contain readable text.</td>
         <td>Share files with fellow employees through enterprise file servers or enterprise cloud locations. If data must be shared via USB, employees can decrypt protected files, but it will be audited.<p>We strongly recommend educating employees about how to limit or eliminate the need for this decryption.</td>
     </tr>
     <tr>
@@ -78,6 +78,27 @@ This table provides info about the most common problems you might encounter whil
         <td>ActiveX controls should be used with caution.</td>
         <td>Webpages that use ActiveX controls can potentially communicate with other outside processes that aren’t protected by using WIP.</td>
         <td>We recommend that you switch to using Microsoft Edge, the more secure and safer browser that prevents the use of ActiveX controls. We also recommend that you limit the usage of Internet Explorer 11 to only those line-of-business apps that require legacy technology.<p>For more info, see [Out-of-date ActiveX control blocking](https://technet.microsoft.com/en-us/itpro/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking).</td>
+    </tr>
+    <tr>
+        <td>WIP isn’t turned on if any of the following folders have the <strong>MakeFolderAvailableOfflineDisabled</strong> option set to <strong>False</strong>:
+            <ul>
+                <li>AppDataRoaming</li>
+                <li>Desktop</li>
+                <li>StartMenu</li>
+                <li>Documents</li>
+                <li>Pictures</li>
+                <li>Music</li>
+                <li>Videos</li>
+                <li>Favorites</li>
+                <li>Contacts</li>
+                <li>Downloads</li>
+                <li>Links</li>
+                <li>Searches</li>
+                <li>SavedGames</li>
+            </ul>
+        </td>
+        <td>WIP isn’t turned on for employees in your organization.</td>
+        <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.<p>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/en-us/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection).</td>
     </tr>
 </table>
 

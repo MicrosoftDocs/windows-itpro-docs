@@ -2,7 +2,8 @@
 title: Windows Defender Antivirus
 description: Learn how to manage, configure, and use Windows Defender AV, the built-in antimalware and antivirus product available in Windows 10.
 keywords: windows defender antivirus, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, threat, detection, protection, security
-ms.assetid: 6A9EB85E-1F3A-40AC-9A47-F44C4A2B55E2
+search.product: eADQiWindows 10XVcnh
+ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -22,6 +23,22 @@ This library of documentation is aimed for enterprise security administrators wh
 
 For more important information about running Windows Defender on a server platform, see [Windows Defender Overview for Windows Server](https://technet.microsoft.com/library/dn765478.aspx).
 
+Windows Defender AV can be managed with:
+- System Center Configuration Manager (as System Center Endpoint Protection, or SCEP) 
+- Microsoft Intune
+
+It can be configured with:
+- System Center Configuration Manager (as System Center Endpoint Protection, or SCEP) 
+- Microsoft Intune
+- PowerShell
+- Windows Management Instrumentation (WMI)
+- Group Policy
+
+Some of the highlights of Windows Defender AV include:
+- [Cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for near-instant detection and blocking of new and emerging threats
+- [Always-on scanning](configure-real-time-protection-windows-defender-antivirus.md), using advanced file and process behavior monitoring and other heuristics (also known as "real-time protection")
+- [Dedicated protection updates](manage-updates-baselines-windows-defender-antivirus.md) based on machine-learning, human and automated big-data analysis, and in-depth threat resistance research
+
 ## What's new in Windows 10, version 1703
 
 New features for Windows Defender AV in Windows 10, version 1703 include:
@@ -36,6 +53,8 @@ We've expanded this documentation library to cover end-to-end deployment, manage
 See the [In this library](#in-this-library) list at the end of this topic for links to each of the updated sections in this library.
 
 
+
+<a id="sysreq"></a>
 ## Minimum system requirements
 
 Windows Defender has the same hardware requirements as Windows 10. For more information, see:
@@ -45,19 +64,9 @@ Windows Defender has the same hardware requirements as Windows 10. For more info
 
 Some features require a certain version of Windows 10 - the minimum version required is specified at the top of each topic.
 
-## Compatibility with Windows Defender Advanced Threat Protection
+Functionality, configuration, and management is largely the same when using Windows Defender Antivirus on Windows Server 2016, however [there are some differences](windows-defender-antivirus-on-windows-server-2016.md).
 
-Windows Defender Advanced Threat Protection (ATP) is an additional service that helps enterprises to detect, investigate, and respond to advanced persistent threats on their network. 
-
-See the [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) topics for more information about the service.
-
-If you are enrolled in Windows Defender ATP, and you are not using Windows Defender as your real-time protection service on your endpoints, Windows Defender will automatically enter into a passive mode. 
-
-In passive mode, Windows Defender will continue to run (using the *msmpeng.exe* process), and will continue to be updated, however there will be no Windows Defender user interface, scheduled scans won’t run, and Windows Defender will not provide real-time protection from malware.
-
-You can still [manage updates for Windows Defender](manage-updates-baselines-windows-defender-antivirus.md), however you can't move Windows Defender into the normal active mode if your endpoints have an up-to-date third-party product providing real-time protection from malware.
-
-If you uninstall the other product, and choose to use Windows Defender to provide protection to your endpoints, Windows Defender will automatically return to its normal active mode.
+#
 
 
  
@@ -65,10 +74,10 @@ If you uninstall the other product, and choose to use Windows Defender to provid
 
 Topic | Description
 :---|:---
-[Evaluate Windows Defender Antivirus protection](evaluate-windows-defender-antivirus.md) | Evaluate the protection capabilities of Windows Defender Antivirus with a specialized evaluation guide and powershell script.
-[Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md) | While traditional client deployment is not required for Windows Defender AV, you will need to enable the service. You can also manage how protection and product updates are applies, and receive reports from Configuration Manager, Intune, and with some security information and event monitoring (SIEM) tools.
-[Configure Windows Defender features](configure-windows-defender-antivirus-features.md) | Windows Defender AV has a large set of configurable features and options. You can use a number of management tools, including Group Policy, System Center Configuration Manager, Microsoft Intune, PowerShell cmdlets, and Windows Management Instrumentation (WMI). You can configure options such as cloud-delivered protection, always-on monitoring and scanning, and how end-users can interact or override global policy settings.
-[Customize, initiate, and review the results of scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md) | You can set up scheduled scans, run on-demand scans, and configure how remediation works when threats are detected.
-[Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-antivirus.md)|Review event IDs in Windows Defender Antivirus and take the appropriate actions.
-[Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)|The management and configuration tools that you can use with Windows Defender AV are listed and described here.
+[Evaluate Windows Defender Antivirus protection](evaluate-windows-defender-antivirus.md) | Evaluate the protection capabilities of Windows Defender Antivirus with a specialized evaluation guide and powershell script
+[Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md) | While traditional client deployment is not required for Windows Defender AV, you will need to enable the service. You can also manage how protection and product updates are applies, and receive reports from Configuration Manager, Intune, and with some security information and event monitoring (SIEM) tools
+[Configure Windows Defender features](configure-windows-defender-antivirus-features.md) | Windows Defender AV has a large set of configurable features and options. You can configure options such as cloud-delivered protection, always-on monitoring and scanning, and how end-users can interact or override global policy settings
+[Customize, initiate, and review the results of scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md) | You can set up scheduled scans, run on-demand scans, and configure how remediation works when threats are detected
+[Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-antivirus.md)|Review event IDs and error codes in Windows Defender Antivirus to determine causes of problems and troubleshoot issues
+[Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)|The management and configuration tools that you can use with Windows Defender AV are listed and described here
 
