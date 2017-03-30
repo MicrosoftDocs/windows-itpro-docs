@@ -1357,6 +1357,8 @@ To turn this off:
 
 -   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access Tasks**
 
+    -   Set the **Select a setting** box to **Force Deny**.
+
 ### <a href="" id="bkmk-priv-diag"></a>17.19 App Diagnostics
 
 In the **App diagnostics** area, you can choose which apps have access to your diagnostic information.
