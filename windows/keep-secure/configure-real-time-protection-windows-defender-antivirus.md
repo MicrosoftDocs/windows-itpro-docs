@@ -42,7 +42,7 @@ These activities include events such as processes making unusual changes to exis
 
 ## Configure and enable always-on protection
 
-You can configure how always-on protection works with the following Group Policy settings described in this section.
+You can configure how always-on protection works with the Group Policy settings described in this section.
 
 To configure these settings:
 
@@ -69,6 +69,8 @@ Real-time protection | Turn on raw volume write notifications | Information abou
 Real-time protection | Define the maximum size of downloaded files and attachments to be scanned | You can define the size in kilobytes | Enabled 
 Real-time protection | Configure monitoring for incoming and outgoing file and program activity | Specify whether monitoring should occur on incoming, outgoing, both, or neither direction. This is relevant for Windows Server installations where you have defined specific servers or Server Roles that see large amounts of file changes in only one direction and you want to improve network performance. Note that fully updated endpoints (and servers) on a network will see little performance impact irrespective of the number or direction of file changes. 
 Scan	| Turn on heuristics | Heuristic protection will disable or block suspicious activity immediately before the AV engine is asked to detect the activity | Enabled (both directions)
+Root | Allow antimalware service to startup with normal priority | You can lower the priority of the AV engine, which may be useful in lightweight deployments where you want to have as lean a startup process as possible. This may impact protection on the endpoint. | Enabled
+Root | Allow antimalware service to remain running always | If protection updates have been disabled, you can set Windows Defender AV to still run. This lowers the protection on the endpoint. | Disabled
 
 
 
