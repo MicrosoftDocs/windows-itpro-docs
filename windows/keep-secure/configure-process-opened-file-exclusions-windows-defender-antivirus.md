@@ -34,15 +34,15 @@ author: iaanw
 
 You can exclude files that have been opened by specific processes from being scanned by Windows Defender AV. 
 
-
 This topic describes how to configure exclusion lists for the following:
 
-<a id="examples></a>
-Exclusion | Examples | Format 
----|---|---
-All processes with a specific file name | All processes with the file name *test.exe*, anywhere on the machine | \<process name including .exe extenstion>
-All processes under a specific folder | All processes under the *c:\test\sample* folder | \<path including drive letter>\\*
-A specific process in a specific folder | The process *c:\test\process.exe* | \<fully qualified path and process name including .exe extension>
+<a id="examples"></a>
+
+Exclusion | Example 
+---|---
+Any file on the machine that is opened by any process with a specific file name | Specifying "*test.exe*" would excude files opened by: <ul><li>*c:\sample\test.exe*</li><li>*d:\internal\files\test.exe*</li></ul>  
+Any file on the machine that is opened by any process under a specific folder | Specifying "*c:\test\sample\\*" would exclude files opened by:<ul><li>*c:\test\sample\test.exe*</li><li>*c:\test\sample\test2.exe*</li><li>*c:\test\sample\utility.exe*</li></ul> 
+Any file on the machine that is opened by a specific process in a specific folder | Specifying "*c:\test\process.exe*" would exclude files only opened by *c:\test\process.exe*
 
 When you add a process to the process exclusion list, Windows Defender AV will not scan files opened by that process, no matter where the files are located. The process itself, however, will be scanned unless it has also been added to the [file exclusion list](configure-extension-file-exclusions-windows-defender-antivirus.md).
 
@@ -64,7 +64,7 @@ You can [configure how locally and globally defined exclusions lists are merged]
 
 
 <a id="gp"></a>
-**Use Group Policy to exclude files that have been used or modified by specified processes from scans:**
+**Use Group Policy to exclude files that have been opened by specified processes from scans:**
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -87,14 +87,14 @@ You can [configure how locally and globally defined exclusions lists are merged]
 
 
 <a id="ps"></a>
-**Use PowerShell cmdlets to configure file name, folder, or file extension exclusions:**
+**Use PowerShell cmdlets to exclude files that have been opened by specified processes from scans:**
 
 Using PowerShell to add or remove exclusions for files based on the extension, location, or file name requires using a combination of three cmdlets with the `-ExclusionProcess' parameter. The cmdlets are all in the [Defender module](https://technet.microsoft.com/en-us/itpro/powershell/windows/defender/defender).
 
 The format for the cmdlets is:
 
 ```PowerShell
-<cmdlet> -ExclusionProcess "<item1>, <item2>, <item3>"
+<cmdlet> -ExclusionProcess "<item>"
 ```
 
 The following are allowed as the \<cmdlet>:
@@ -110,18 +110,17 @@ Remove items from the list | `Remove-MpPreference`
 >If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list. 
 
 
-For example, the following code snippet would cause Windows Defender AV scans to exclude any file that is opened by the defined process:
+For example, the following code snippet would cause Windows Defender AV scans to exclude any file that is opened by process:
 
 ```PowerShell
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"
 ```
 
-For example, files opened by the process *c:\outside\test.exe* will not be excluded. This is the because the opening process is located in a different folder ("outside" instead of "internal"), even though the process's file name is the same.
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 
-**Use Windows Management Instruction (WMI) to configure file name, folder, or file extension exclusions:**
+**Use Windows Management Instruction (WMI) to exclude files that have been opened by specified processes from scans:**
 
 Use the [ **Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
 
@@ -135,25 +134,25 @@ See the following for more information and allowed parameters:
 - [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
 
 <a id="man-tools"></a>
-**Use Configuration Manager to configure file name, folder, or file extension exclusions:**
+**Use Configuration Manager to exclude files that have been opened by specified processes from scans:**
 
 See [How to create and deploy antimalware policies: Exclusion settings](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring System Center Configuration Manager (current branch).
 
 
-**Use Microsoft Intune to configure file name, folder, or file extension exclusions:**
+**Use Microsoft Intune to exclude files that have been opened by specified processes from scans:**
 
 
 See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) and [Windows Defender policy settings in Windows 10](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune#windows-defender-1) for more details.
 
 
-**Use the Windows Defender Security Center app to configure file name, folder, or file extension exclusions:**
+**Use the Windows Defender Security Center app to exclude files that have been opened by specified processes from scans:**
 
 See [Add exclusions in the Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions) for instructions.
 
 
 
 <a id="wildcards"></a>
-## Use wildcards in the file name and folder path or extension exclusion lists
+## Use wildcards in the process exclusion list
 
 The use of wildcards in the process exclusion list is different from their use in other exclusion lists.
 
