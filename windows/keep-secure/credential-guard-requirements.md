@@ -9,7 +9,7 @@ localizationpriority: high
 author: brianlic-msft
 ---
 
-# Requirements
+# Credential Guard: Requirements
 
 **Applies to**
 -   Windows 10
