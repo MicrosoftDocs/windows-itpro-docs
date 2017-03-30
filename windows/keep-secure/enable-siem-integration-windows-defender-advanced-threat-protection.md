@@ -1,5 +1,5 @@
 ---
-title: Enable SIEM integration in Windows Defender Advanced Threat Protection
+title: Enable SIEM integration in Windows Defender ATP
 description: Enable SIEM integration to receive alerts in your security information and event management (SIEM) solution.
 keywords: enable siem connector, siem, connector, security information and events
 search.product: eADQiWindows 10XVcnh
