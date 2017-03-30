@@ -109,12 +109,11 @@ This section describes how to perform some of the most common tasks when reviewi
 
 3. Click **Virus & threat protection settings**.
 
-4. Toggle the switches to **On** for the following settings:
-    1.  **Real-time protection**
-    2.  **Cloud-based protection**
-    3.  **Automatic sample submission**
+4. Toggle the **Real-time protection** switch to **On**.
 
-
+>[!NOTE]
+>If you switch **Real-time protection** off, it will automatically turn back on after a short delay. This is to ensure you are protected from malware and threats.  
+>If you install another antivirus product, Windows Defender AV will automatically disable itself and will indicate this in the Windows Defender Security Center app. A setting will appear that will allow you to enable limited periodic scanning.
 
 
 <a id="exclusions"></a>
