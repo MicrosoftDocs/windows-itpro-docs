@@ -1,6 +1,6 @@
 ---
 title: Windows Insider Program for Business
-description: In Windows 10, Microsoft has streamlined servicing to make operating system updates simpler to test, manage, and deploy.
+description: Overview of the Windows Insider Program for Business
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -57,7 +57,7 @@ Best for Insiders who enjoy getting early access to updates for the Current Bran
 Insiders on this level receive builds of Windows just before Microsoft releases them for CB. Although these builds aren’t final, they are the most complete and stable builds available to Windows Insider Program participants. This level provides the best testing platform for organizations that conduct early application compatibility testing on Windows Insider PCs.
 
 * The Release Preview Ring will only be visible when your Windows build version is the same as the Current Branch  
-* The easiest way to go between the Development Branch to the Current Branch is to use the Media Creation Tool (for PC) or Windows Device Recovery Tool (for Mobile) to reinstall Windows  
+* The easiest way to go between the Development Branch to the Current Branch is to use the [Media Creation Tool](http://go.microsoft.com/fwlink/?LinkId=691209) (for PC) or [Windows Device Recovery Tool](http://go.microsoft.com/fwlink/p/?LinkId=522381) (for Mobile) to reinstall Windows  
 Ring 
 
 ### Slow
@@ -74,7 +74,7 @@ Best for Insiders who enjoy being the first to get access to builds and feature 
 
 * Windows Insiders with devices in the Fast Ring should be prepared for more issues that may block key activities that are important to you or may require significant workarounds. 
 * Because we are also validating a build on a smaller set of devices before going to Fast, there is also a chance that some features may work on some devices but may fail in other device configurations. 
-* Windows Insiders should be ready to reinstall Windows using the Media Creation Tool or Windows Device Recovery Tool when you are significantly blocked. • Please remember to report any issue to us through the Windows Insider Feedback Hub or the Windows Insider community Forum 
+* Windows Insiders should be ready to reinstall Windows using the [Media Creation Tool](http://go.microsoft.com/fwlink/?LinkId=691209) or [Windows Device Recovery Tool](http://go.microsoft.com/fwlink/p/?LinkId=522381) when you are significantly blocked. • Please remember to report any issue to us through the Windows Insider Feedback Hub or the Windows Insider community Forum 
 
 >[!NOTE]
 >Once your machine is updated to Windows 10 and you select your desired flight ring, the process known as "Compatibility check" will need to run in the background. There is no manual way to force this process to run. This process allows for the discovery of your OS type (32-bit, 64-bit), build edition (Home, Pro, Enterprise), country and language settings, and other required information. Once this process is complete, your machine will be auto-targeted for the next available flight for your selected ring. For the first build on any given machine, this may take up to 24 hours to complete.
@@ -151,7 +151,7 @@ After you’ve tried the latest Insider Preview builds, you may want to opt out.
 * [**Windows Insider Preview community forum**](https://answers.microsoft.com/en-us/insider/forum/insider_wintp) - Answers is Microsoft’s forum platform and there is an entire area dedicated to the Windows Insider Program. Insiders can filter between PC, Office, Edge, and many others.
 
 ## Learn More
-- [AAD Stub]()
+- [Windows Insider Program for Business using Azure Active Directory](waas-windows-insider-for-business-aad.md)
 - [WIPfB FAQ Stub]()
 
 
