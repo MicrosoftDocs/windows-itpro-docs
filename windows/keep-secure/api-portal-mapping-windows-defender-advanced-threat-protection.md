@@ -24,7 +24,7 @@ localizationpriority: high
 Understand what data fields are exposed as part of the alerts API and how they map to the Windows Defender ATP portal.
 
 
-#	Alert API fields and portal mapping
+##	Alert API fields and portal mapping
 Field numbers match the numbers in the images below.
 
 Portal label  | SIEM field name | Description
