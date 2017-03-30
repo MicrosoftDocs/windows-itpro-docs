@@ -49,7 +49,7 @@ Many existing Win32 and Win64 applications already run reliably on Windows 10 wi
 
 ### Is there an easy way to assess if my organization’s devices are ready to upgrade to Windows 10?
 
-[Windows Upgrade Readiness](https://technet.microsoft.com/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics) (formerly known as Upgrade Analytics) provides powerful insights and recommendations about the computers, applications, and drivers in your organization, at no extra cost and without additional infrastructure requirements. This new service guides you through your upgrade and feature update projects using a workflow based on Microsoft recommended practices. Up-to-date inventory data allows you to balance cost and risk in your upgrade projects.
+[Windows Analytics Upgrade Readiness](https://technet.microsoft.com/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics) (formerly known as Upgrade Analytics) provides powerful insights and recommendations about the computers, applications, and drivers in your organization, at no extra cost and without additional infrastructure requirements. This new service guides you through your upgrade and feature update projects using a workflow based on Microsoft recommended practices. Up-to-date inventory data allows you to balance cost and risk in your upgrade projects. You can find additional product information at [Windows Analytics](https://www.microsoft.com/en-us/WindowsForBusiness/Windows-Analytics).
 
 ## Administration and deployment
 
@@ -64,15 +64,9 @@ Updated versions of Microsoft deployment tools, including MDT, Configuration Man
 
 Computers running Windows 7 or Windows 8.1 can be upgraded directly to Windows 10 through the in-place upgrade process without a need to reimage the device using MDT and/or Configuration Manager. For more information, see [Upgrade to Windows 10 with System Center Configuration Manager](https://technet.microsoft.com/itpro/windows/deploy/upgrade-to-windows-10-with-system-center-configuraton-manager) or [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/windows/deploy/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit).
 
-### Are there any deployment tools available to support Windows 10?
-
-Updated versions of Microsoft deployment tools, including Configuration Manager, MDT, and the Windows Assessment and Deployment Kit (Windows ADK) have been released adding support for Windows 10. For most organizations currently using MDT or Configuration Manager to deploy Windows, deployment of Windows 10 will change very little. 
-
-For more information on deployment methods for Windows 10, see [Windows 10 deployment tools](https://technet.microsoft.com/library/mt297512.aspx) and [Windows 10 deployment scenarios](https://technet.microsoft.com/library/mt282208.aspx).
-
 ### Can I upgrade from Windows 7 Enterprise or Windows 8.1 Enterprise to Windows 10 Enterprise for free?
 
-If you have Windows 7 Enterprise or Windows 8.1 Enterprise and current Software Assurance, you are entitled to the upgrade to Windows 10 Enterprise through the rights of Software Assurance. You can find your product keys and installation media at the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
+If you have Windows 7 Enterprise or Windows 8.1 Enterprise and current Windows 10 Enterprise E3 or E5 subscription, you are entitled to the upgrade to Windows 10 Enterprise through the rights of Software Assurance. You can find your product keys and installation media at the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
 For devices that are licensed under a volume license agreement for Windows that does not include Software Assurance, new licenses will be required to upgrade these devices to Windows 10.
 
@@ -104,12 +98,7 @@ For more information on pros and cons for these tools, see [Servicing Tools](htt
 
 ### Where can I find information about new features and changes in Windows 10 Enterprise?
 
-For an overview of the new enterprise features in Windows 10 Enterprise, see [What's new in Windows 10](https://technet.microsoft.com/itpro/windows/whats-new/index) and [What's new in Windows 10, version 1703](https://tnstage.redmond.corp.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1703?branch=rs2) in the TechNet library. You can find information You'll find info on features like these:
--  Modern deployment - Zero-touch deployment, bulk AD enrollment with provisioning, UEFI conversion tooland 
-- Windows Analytics -  Upgrade Readiness, and Update Compliance
-- Windows as a service enhancements -  Differential feature update support, express update support for System Center Configuration Manager and third-party management software
-- Mobile application management (MAM) and  enhanced MDM
-- Advanced security with Windows Defender - App Guard, Credential Guard, App Control, ATP) and Windows Hello
+For an overview of the new enterprise features in Windows 10 Enterprise, see [What's new in Windows 10](https://technet.microsoft.com/itpro/windows/whats-new/index) and [What's new in Windows 10, version 1703](https://tnstage.redmond.corp.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1703?branch=rs2) in the TechNet library. 
 
 Another place to track the latest information about new features of interest to IT professionals is the [Windows for IT Pros blog](https://blogs.technet.microsoft.com/windowsitpro/). Here you’ll find announcements of new features, information on updates to the Windows servicing model, and details about the latest resources to help you more easily deploy and manage Windows 10. 
 

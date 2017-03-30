@@ -1,5 +1,5 @@
 ---
-title: Configure and validate exclusions for files opened by specific processes
+title: Configure exclusions for files opened by specific processes
 description: You can exclude files from scans if they have been opened by a specific process.
 keywords: process, exclusion, files, scans
 search.product: eADQiWindows 10XVcnh
@@ -12,7 +12,7 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Configure and validate exclusions for files opened by processes
+# Configure exclusions for files opened by processes
 
 **Applies to:**
 
@@ -40,8 +40,8 @@ This topic describes how to configure exclusion lists for the following:
 
 Exclusion | Example 
 ---|---
-Any file on the machine that is opened by any process with a specific file name | Specifying "*test.exe*" would excude files opened by: <ul><li>*c:\sample\test.exe*</li><li>*d:\internal\files\test.exe*</li></ul>  
-Any file on the machine that is opened by any process under a specific folder | Specifying "*c:\test\sample\\*" would exclude files opened by:<ul><li>*c:\test\sample\test.exe*</li><li>*c:\test\sample\test2.exe*</li><li>*c:\test\sample\utility.exe*</li></ul> 
+Any file on the machine that is opened by any process with a specific file name | Specifying "*test.exe*" would exclude files opened by: <ul><li>*c:\sample\test.exe*</li><li>*d:\internal\files\test.exe*</li></ul>  
+Any file on the machine that is opened by any process under a specific folder | Specifying "*c:\test\sample\\**" would exclude files opened by:<ul><li>*c:\test\sample\test.exe*</li><li>*c:\test\sample\test2.exe*</li><li>*c:\test\sample\utility.exe*</li></ul> 
 Any file on the machine that is opened by a specific process in a specific folder | Specifying "*c:\test\process.exe*" would exclude files only opened by *c:\test\process.exe*
 
 When you add a process to the process exclusion list, Windows Defender AV will not scan files opened by that process, no matter where the files are located. The process itself, however, will be scanned unless it has also been added to the [file exclusion list](configure-extension-file-exclusions-windows-defender-antivirus.md).
@@ -89,7 +89,7 @@ You can [configure how locally and globally defined exclusions lists are merged]
 <a id="ps"></a>
 **Use PowerShell cmdlets to exclude files that have been opened by specified processes from scans:**
 
-Using PowerShell to add or remove exclusions for files based on the extension, location, or file name requires using a combination of three cmdlets with the `-ExclusionProcess' parameter. The cmdlets are all in the [Defender module](https://technet.microsoft.com/en-us/itpro/powershell/windows/defender/defender).
+Using PowerShell to add or remove exclusions for files that have been opened by processes requires using a combination of three cmdlets with the `-ExclusionProcess' parameter. The cmdlets are all in the [Defender module](https://technet.microsoft.com/en-us/itpro/powershell/windows/defender/defender).
 
 The format for the cmdlets is:
 
@@ -110,7 +110,7 @@ Remove items from the list | `Remove-MpPreference`
 >If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list. 
 
 
-For example, the following code snippet would cause Windows Defender AV scans to exclude any file that is opened by process:
+For example, the following code snippet would cause Windows Defender AV scans to exclude any file that is opened by the specified process:
 
 ```PowerShell
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"
@@ -156,14 +156,14 @@ See [Add exclusions in the Windows Defender Security Center app](windows-defende
 
 The use of wildcards in the process exclusion list is different from their use in other exclusion lists.
 
-In particular, you cannot use the question mark **?** wilcard, and the asterisk **\*** wildcard can only be used at the end of a complete path. You can still use environment variables (such as %ALLUSERSPROFILE%) as wildcards when defining items in the process exclusion list.
+In particular, you cannot use the question mark ? wildcard, and the asterisk \* wildcard can only be used at the end of a complete path. You can still use environment variables (such as %ALLUSERSPROFILE%) as wildcards when defining items in the process exclusion list.
 
 The following table describes how the wildcards can be used in the process exclusion list:
 
 Wildcard | Use | Example use | Example matches
 ---|---|---|---
-**\*** (asterisk) | Replaces any number of chararacters | <ul><li>C:\MyData\\*</li></ul> | <ul><li>Any file opened by *C:\MyData\file.exe*</li></ul>
-**?** (question mark) | Not available | \- | \-
+\* (asterisk) | Replaces any number of characters | <ul><li>C:\MyData\\*</li></ul> | <ul><li>Any file opened by *C:\MyData\file.exe*</li></ul>
+? (question mark) | Not available | \- | \-
 Environment variables | The defined variable will be populated as a path when the exclusion is evaluated |  <ul><li>%ALLUSERSPROFILE%\CustomLogFiles\file.exe</li></ul> | <ul><li>Any file opened by C:\ProgramData\CustomLogFiles\file.exe</li></ul>
 
 
@@ -212,6 +212,6 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 - [Configure and validate exclusions in Windows Defender AV scans](configure-exclusions-windows-defender-antivirus.md)
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-windows-defender-antivirus.md)
-- [Configure exclusions in Windows Defender AV on Windows Servery](configure-server-exclusions-windows-defender-antivirus.md)
+- [Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-windows-defender-antivirus.md)
 - [Customize, initiate, and review the results of Windows Defender AV scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
