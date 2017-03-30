@@ -42,7 +42,7 @@ Exclusion | Examples | Exclusion list
 Any file with a specific extension | All files with the .test extension, anywhere on the machine | Extension exclusions
 Any file under a specific folder | All files under the c:\test\sample folder | File and folder exclusions
 A specific file in a specific folder | The file c:\sample\sample.test only | File and folder exclusions
-A specific process | The executable file c:\test\process.exe | File and folder exclusions list
+A specific process | The executable file c:\test\process.exe | File and folder exclusions
 
 This means the exclusion lists have the following characteristics:
 - Folder exclusions will apply to all files and folders under that folder.
@@ -95,7 +95,7 @@ You can [configure how locally and globally defined exclusions lists are merged]
 
 7. Click **OK**. 
 
-![The Group Policy setting for file and folder exclusions](images/defender/wdav-extension-exclusions.png)
+![The Group Policy setting for file and folder exclusions](images/defender/wdav-path-exclusions.png)
 
 8. Double-click the **Extension Exclusions** setting and add the exclusions:
 
@@ -106,7 +106,7 @@ You can [configure how locally and globally defined exclusions lists are merged]
 
 9. Click **OK**. 
 
-![The Group Policy setting for extension exclusions](images/defender/wdav-path-exclusions.png)
+![The Group Policy setting for extension exclusions](images/defender/wdav-extension-exclusions.png)
 
 
 <a id="ps"></a>
@@ -184,7 +184,7 @@ See [Add exclusions in the Windows Defender Security Center app](windows-defende
 <a id="wildcards"></a>
 ## Use wildcards in the file name and folder path or extension exclusion lists
 
-You can use the asterisk **\***, question mark **?**, or environment variables (such as %ALLUSERSPROFILE%) as wildcards when defining items in the file name or folder path exclusion list.
+You can use the asterisk \*, question mark ?, or environment variables (such as %ALLUSERSPROFILE%) as wildcards when defining items in the file name or folder path exclusion list.
 
 >[!IMPORTANT]
 >Environment variable usage is limited to machine variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account.
@@ -196,8 +196,8 @@ The following table describes how the wildcards can be used and provides some ex
 
 Wildcard | Use | Example use | Example matches
 ---|---|---|---
-***** (asterisk) | Replaces any number of chararacters | <ul><li>C:\MyData\my\*.zip</li><li>C:\somepath\\\*\Data</li></ul> | <ul><li>C:\MyData\my-archived-files-43.zip</li><li>Any file in C:\somepath\folder1\folder2\Data</li></ul>
-**?** (question mark) | Replaces a single character | <ul><li>C:\MyData\my\?.zip</li><li>C:\somepath\\\?\Data</li></ul> | <ul><li>C:\MyData\my1.zip</li><li>Any file in C:\somepath\P\Data</li></ul>
+\* (asterisk) | Replaces any number of characters | <ul><li>C:\MyData\my\*.zip</li><li>C:\somepath\\\*\Data</li></ul> | <ul><li>C:\MyData\my-archived-files-43.zip</li><li>Any file in C:\somepath\folder1\folder2\Data</li></ul>
+? (question mark) | Replaces a single character | <ul><li>C:\MyData\my\?.zip</li><li>C:\somepath\\\?\Data</li></ul> | <ul><li>C:\MyData\my1.zip</li><li>Any file in C:\somepath\P\Data</li></ul>
 Environment variables | The defined variable will be populated as a path when the exclusion is evaluated |  <ul><li>%ALLUSERSPROFILE%\CustomLogFiles</li></ul> | <ul><li>C:\ProgramData\CustomLogFiles\Folder1\file1.txt</li></ul>
 
 
@@ -276,6 +276,6 @@ $client.DownloadFile("http://www.eicar.org/download/eicar.com.txt","c:\test.txt"
 
 - [Configure and validate exclusions in Windows Defender AV scans](configure-exclusions-windows-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md)
-- [Configure exclusions in Windows Defender AV on Windows Servery](configure-server-exclusions-windows-defender-antivirus.md)
+- [Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-windows-defender-antivirus.md)
 - [Customize, initiate, and review the results of Windows Defender AV scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
