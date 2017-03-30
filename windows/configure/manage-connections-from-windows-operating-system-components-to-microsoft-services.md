@@ -1325,7 +1325,7 @@ To turn off **Let apps run in the background**:
     
      -or-
 
--   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps run in background**
+-   Apply the Group Policy (only applicable for Windows 10, version 1703): **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps run in the background**
 
     -   Set the **Select a setting** box to **Force Deny**.
 
