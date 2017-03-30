@@ -79,6 +79,27 @@ This table provides info about the most common problems you might encounter whil
         <td>Webpages that use ActiveX controls can potentially communicate with other outside processes that aren’t protected by using WIP.</td>
         <td>We recommend that you switch to using Microsoft Edge, the more secure and safer browser that prevents the use of ActiveX controls. We also recommend that you limit the usage of Internet Explorer 11 to only those line-of-business apps that require legacy technology.<p>For more info, see [Out-of-date ActiveX control blocking](https://technet.microsoft.com/en-us/itpro/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking).</td>
     </tr>
+    <tr>
+        <td>WIP isn’t turned on if any of the following folders have the <strong>MakeFolderAvailableOfflineDisabled</strong> option set to <strong>False</strong>:
+            <ul>
+                <li>AppDataRoaming</li>
+                <li>Desktop</li>
+                <li>StartMenu</li>
+                <li>Documents</li>
+                <li>Pictures</li>
+                <li>Music</li>
+                <li>Videos</li>
+                <li>Favorites</li>
+                <li>Contacts</li>
+                <li>Downloads</li>
+                <li>Links</li>
+                <li>Searches</li>
+                <li>SavedGames</li>
+            </ul>
+        </td>
+        <td>WIP isn’t turned on for employees in your organization.</td>
+        <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.<p>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/en-us/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection).</td>
+    </tr>
 </table>
 
 >[!NOTE]
