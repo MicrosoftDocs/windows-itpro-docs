@@ -49,7 +49,7 @@ Enable security information and event management (SIEM) integration so you can p
 You can now proceed with configuring your SIEM solution or connecting to the alerts REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive alerts from the Windows Defender ATP portal.
 
 ## Related topics
-- [Configure Splunk](configure-splunk-windows-defender-advanced-threat-protection.md)
-- [Configure ArcSight](configure-arcsight-windows-defender-advanced-threat-protection.md)
+- [Configure Splunk to pull Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
+- [Configure ArcSight to pull Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
 - [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
 - [Pull Windows Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)

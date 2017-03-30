@@ -53,10 +53,7 @@ The hardware requirements for Windows Defender ATP on endpoints is the same as t
 #### Internet connectivity
 Internet connectivity on endpoints is required.
 
-SENSE can utilize up to 5MB daily of bandwidth  to communicate with the Windows Defender ATP cloud service and report cyber data.
-
-> [!NOTE]
-> SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
+The Windows Defender ATP sensor can utilize up to 5MB daily of bandwidth  to communicate with the Windows Defender ATP cloud service and report cyber data.
 
 For more information on additional proxy configuration settings see, [Configure Windows Defender ATP endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) .
 

@@ -1,5 +1,5 @@
 ---
-title: Experiment with custom threat intelligence alerts 
+title: Experiment with custom threat intelligence alerts
 description: Use this end-to-end guide to start using the Windows Defender ATP threat intelligence API.
 keywords: alert definitions, indicators of compromise, threat intelligence, custom threat intelligence, rest api, api
 search.product: eADQiWindows 10XVcnh
@@ -82,3 +82,11 @@ This step will guide you in exploring the custom alert in the portal.
 
 > [!NOTE]
 > It can take up to 15 minutes for the alert to appear in the portal.
+
+## Related topics
+- [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+- [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
+- [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [PowerShell code examples for the custom threat intelligence API](powershell-example-code-windows-defender-advanced-threat-protection.md)
+- [Python code examples for the custom threat intelligence API](python-example-code-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
