@@ -286,7 +286,7 @@ You can prevent Windows from setting the time automatically.
 
     -or-
 
--   Disable the Group Policy: **System\\Windows Time Service\\Time Providers!!Enable Windows NTP Client**
+-   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Enable Windows NTP Server** &gt; **Windows Time Service** &gt; **Enable Windows NTP Client**
 
     - or -
 
@@ -356,7 +356,7 @@ To turn off Insider Preview builds for Windows 10:
 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds** &gt; **Toggle user control over Insider builds**.
 
-    - or -
+    -or -
 
 -  Create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\PreviewBuilds!AllowBuildPreview** to 0 (zero)
 
@@ -402,12 +402,12 @@ Alternatively, you could use the registry to set the Group Policies.
 | Turn off the auto-complete feature for web addresses | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Explorer\\AutoComplete!AutoSuggest<br /> REG_SZ: **No** |
 | Disable Periodic Check for Internet Explorer software updates| HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Infodelivery\\Restrictions!NoUpdateCheck<br /> REG_DWORD: 1 |
 | Turn off browser geolocation | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Geolocation!PolicyDisableGeolocation <br /> REG_DWORD: 1 |
-| Prevent managing SmartScreen filter | Choose whether employees can manage the SmartScreen Filter in Internet Explorer. <br /> Default: Disabled |
+| Prevent managing SmartScreen filter | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\ Internet Explorer\\PhishingFilter!EnabledV9 <br /> REG_DWORD: 0 |
 
-There are two more Group Policy objects that are used by Internet Explorer:
+There are three more Group Policy objects that are used by Internet Explorer:
 
-| Path | Policy | Description |
-| - | - | - |
+| Path | Description |
+| - | - |
 | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Compatibility View** > **Turn off Compatibility View** | Choose whether employees can configure Compatibility View. | Choose whether an employee can swipe across a screen or click forward to go to the next pre-loaded page of a website. <br /> Default: Disabled |
 | **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Internet Control Panel** > **Advanced Page**  | Turn off the flip ahead with page prediction feature | Choose whether 
 an employee can swipe across a screen or click forward to go to the next pre-loaded page of a website. <br /> Default: Enabled |
@@ -417,10 +417,10 @@ You can also use registry entries to set these Group Policies.
 
 | Policy                                               | Registry path                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Choose whether employees can configure Compatibility View. | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Feeds!BackgroundSyncStatus <br /> REG_DWORD: 0|
+| Choose whether employees can configure Compatibility View. | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BrowserEmulation!MSCompatibilityMode <br /> REG_DWORD: 0|
 | Turn off the flip ahead with page prediction feature | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\FlipAhead!Enabled <br /> REG_DWORD: 0|
+| Turn off background synchronization for feeds and Web Slices | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Feeds!BackgroundSyncStatus <br/> DWORD:0 |
 
-AllowServicePoweredQSA
 
 ### <a href="" id="bkmk-ie-activex"></a>8.1 ActiveX control blocking
 
@@ -430,7 +430,7 @@ You can turn this off by:
 
 -  Apply the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Security Features** > **Add-on Management** > **Turn off Automatic download of the ActiveX VersionList**
 
-    - or -
+    -or -
 
 -  Changing the REG\_DWORD registry setting **HKEY\_CURRENT\_USER\\Software\\Microsoft\\Internet Explorer\\VersionManager\\DownloadVersionList** to 0 (zero).
 
@@ -554,7 +554,7 @@ You can turn off NCSI by doing one of the following:
 > [!NOTE] 
 > After you apply this policy, you must restart the device for the policy setting to take effect.
 
-    -or-
+-or-
 
 -   Create a REG\_DWORD registry setting called **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\NetworkConnectivityStatusIndicator!NoActiveProbe**, with a value of 0 (zero).
 
@@ -1327,7 +1327,7 @@ To turn off **Let apps run in the background**:
 
 -   Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps run in background**
 
-        -   Set the **Select a setting** box to **Force Deny**.
+    -   Set the **Select a setting** box to **Force Deny**.
 
 ### <a href="" id="bkmk-priv-motion"></a>17.17 Motion
 
