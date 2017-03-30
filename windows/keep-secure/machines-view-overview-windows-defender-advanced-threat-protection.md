@@ -1,6 +1,6 @@
 ---
-title: View and organize the Windows Defender ATP machines view
-description: Learn about the available features that you can use from the Machines view such as sorting, filtering, and exporting the machine list which can enhance investigations.
+title: View and organize the Windows Defender ATP machines list
+description: Learn about the available features that you can use from the Machines list such as sorting, filtering, and exporting the list to enhance investigations.
 keywords: sort, filter, export, csv, machine name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# View and organize the Windows Defender ATP Machines view
+# View and organize the Windows Defender ATP Machines list
 
 **Applies to:**
 
@@ -21,23 +21,23 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-The **Machines view** shows a list of the machines in your network, the domain of each machine, when it last reported and the local IP Address it reported on, its **Health state**, the number of active alerts on each machine categorized by alert severity level, and the number of active malware detections. This view allows viewing machines ranked by risk or sensor health state, and keeping track of all machines that are reporting sensor data in your network.
+The **Machines list** shows a list of the machines in your network, the domain of each machine, when it last reported and the local IP Address it reported on, its **Health state**, the number of active alerts on each machine categorized by alert severity level, and the number of active malware detections. This view allows viewing machines ranked by risk or sensor health state, and keeping track of all machines that are reporting sensor data in your network.
 
 Use the Machines view in these main scenarios:
 
 - **During onboarding**</br>
-  During the onboarding process, the **Machines view** is gradually populated with endpoints as they begin to report sensor data. Use this view to track your onboarded endpoints as they come online. Sort and filter by time of last report, **Active malware category**, or **Sensor health state**, or download the complete endpoint list as a CSV file for offline analysis.
+  During the onboarding process, the **Machines list** is gradually populated with endpoints as they begin to report sensor data. Use this view to track your onboarded endpoints as they come online. Sort and filter by time of last report, **Active malware category**, or **Sensor health state**, or download the complete endpoint list as a CSV file for offline analysis.
 - **Day-to-day work**
-  The **Machines view** enables easy identification of machines most at risk in a glance. High-risk machines have the greatest number and highest-severity alerts; **Sensor health state** provides another dimension to rank machines. Sorting machines by **Active alerts**, and then by **Sensor health state** helps identify the most vulnerable machines and take action on them.
+  The **Machines list** enables easy identification of machines most at risk in a glance. High-risk machines have the greatest number and highest-severity alerts; **Sensor health state** provides another dimension to rank machines. Sorting machines by **Active alerts**, and then by **Sensor health state** helps identify the most vulnerable machines and take action on them.
 
 ## Sort, filter, and download the list of machines from the Machines view
-You can sort the **Machines view** by clicking on any column header to sort the view in ascending or descending order.  
+You can sort the **Machines list** by clicking on any column header to sort the view in ascending or descending order.  
 
-Filter the **Machines view** by time period, **Active malware categories**, or **Sensor health state** to focus on certain sets of machines, according to the desired criteria.  
+Filter the **Machines list** by time period, **Active malware categories**, or **Sensor health state** to focus on certain sets of machines, according to the desired criteria.  
 
 You can also download the entire list in CSV format using the **Export to CSV** feature.
 
-![Image of machines view with list of machines](images/atp-machines-view-list.png)
+![Image of machines list with list of machines](images/atp-machines-view-list.png)
 
 You can use the following filters to limit the list of machines displayed during an investigation:
 
@@ -71,7 +71,7 @@ You can  download a full list of all the machines in your organization, in CSV f
 Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all machines in the organization, regardless of any filtering applied in the view itself.
 
 ## Sort the Machines view
-You can sort the **Machines view** by the following columns:
+You can sort the **Machines list** by the following columns:
 
 - **Machine name** - Name or GUID of the machine
 - **Last seen** - Date and time when the machine last reported sensor data

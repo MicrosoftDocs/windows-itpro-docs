@@ -1,4 +1,15 @@
-﻿# Mitigate threats by using Windows 10 security features
+﻿---
+title: Mitigate threats by using Windows 10 security features (Windows 10)
+description: This topic provides an overview of software and firmware threats faced in the current security landscape, and the mitigations that Windows 10 offers in response to these threats. 
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+localizationpriority: high
+author: justinha
+---
+
+# Mitigate threats by using Windows 10 security features
 
 **Applies to:**
 - Windows 10
@@ -44,7 +55,7 @@ Windows 10 mitigations that you can configure are listed in the following two ta
 |---|---|
 | **Windows Defender SmartScreen**,<br>which helps prevent<br>malicious applications<br>from being downloaded | Windows Defender SmartScreen can check the reputation of a downloaded application by using a service that Microsoft maintains. The first time a user runs an app that originates from the Internet (even if the user copied it from another PC), SmartScreen checks to see if the app lacks a reputation or is known to be malicious, and responds accordingly.<br><br>**More information**: [Windows Defender SmartScreen](#windows-defender-smartscreen), later in this topic |
 | **Credential Guard**,<br>which helps keep attackers<br>from gaining access through<br>Pass-the-Hash or<br>Pass-the-Ticket attacks | Credential Guard uses virtualization-based security to isolate secrets, such as NTLM password hashes and Kerberos Ticket Granting Tickets, so that only privileged system software can access them.<br>Credential Guard is included in Windows 10 Enterprise and Windows Server 2016.<br><br>**More information**: [Protect derived domain credentials with Credential Guard](credential-guard.md) |
-| **Enterprise certificate pinning**,<br>which helps keep users<br>from being deceived by<br>man-in-the-middle attacks<br>that leverage PKI | With enterprise certificate pinning, you can “pin” (associate) an X.509 certificate and its public key to its legitimate Certification Authority, either root or leaf. This helps protect your enterprise’s intranet sites (not external Internet sites) by providing validation for digitally signed certificates (SSL certificates) used while browsing. This feature mitigates man-in the-middle attacks that involve these certificates.<br><br>**More information**: ENTERPRISE_CERTIFICATE_PINNING_LINK |
+| **Enterprise certificate pinning**,<br>which helps keep users<br>from being deceived by<br>man-in-the-middle attacks<br>that leverage PKI | Enterprise certificate pinning enables you to protect your internal domain names from chaining to unwanted certificates or to fraudulently issued certificates. With enterprise certificate pinning, you can “pin” (associate) an X.509 certificate and its public key to its legitimate Certification Authority, either root or leaf. <br><br>**More information**: [Enterprise Certificate Pinning](enterprise-certificate-pinning.md) |
 | **Device Guard**,<br>which helps keep a device<br>from running malware or<br>other untrusted apps | Device Guard includes Code Integrity policies, a whitelist you create of trusted apps—the only apps allowed to run in your organization. Device Guard also includes a powerful system mitigation called hypervisor-protected code integrity (HVCI), which leverages virtualization-based security (VBS) to protect Windows’ kernel-mode code integrity validation process. HVCI has specific hardware requirements, and works with Code Integrity policies to help stop attacks even if they gain entrance to the kernel.<br>Device Guard is included in Windows 10 Enterprise and Windows Server 2016.<br><br>**More information**: [Introduction to Device Guard](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md) |
 | **Windows Defender Antivirus**,<br>which helps keep devices<br>free of viruses and other<br>known software threats | Windows 10 includes Windows Defender Antivirus, a robust inbox antimalware solution. Windows Defender Antivirus has been significantly improved since it was introduced in Windows 8.<br><br>**More information**: [Windows Defender Antivirus](#windows-defender-antivirus), later in this topic |
 | **Blocking of untrusted fonts**,<br>which helps prevent fonts<br>from being used in<br>elevation-of-privilege attacks | The Block Untrusted Fonts setting allows you to prevent users from loading untrusted fonts onto your network, which can mitigate elevation-of-privilege attacks associated with the parsing of font files. However, as of Windows 10, version 1703, this mitigation is less important, because font parsing is isolated in an [AppContainer sandbox](https://msdn.microsoft.com/library/windows/desktop/mt595898(v=vs.85).aspx) (for a list describing this and other kernel pool protections, see [Kernel pool protections](#kernel-pool-protections), later in this topic).<br><br>**More information**: [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md) |
@@ -73,9 +84,7 @@ Starting with Windows Internet Explorer 8, the SmartScreen Filter has helped pro
 
 For Windows 10, Microsoft further developed SmartScreen, now called Windows Defender SmartScreen, by integrating its app reputation abilities into the operating system itself, which allows SmartScreen to check the reputation of files downloaded from the Internet and warn users when they’re about to run a high-risk downloaded file. The first time a user runs an app that originates from the Internet, SmartScreen checks the reputation of the application by using digital signatures and other factors against a service that Microsoft maintains. If the app lacks a reputation or is known to be malicious, SmartScreen warns the user or blocks execution entirely, depending on how the administrator has configured Microsoft Intune or Group Policy settings.
 
-<!-- Next sentence needs a link to the main SmartScreen topic, whatever it's called. --> 
-
-For more information, see Windows Defender SmartScreen overview.
+For more information, see [Windows Defender SmartScreen overview](windows-defender-smartscreen-overview.md).
 
 ### Windows Defender Antivirus
 
@@ -202,7 +211,7 @@ With Protected Processes, Windows 10 prevents untrusted processes from interacti
 
 ### Universal Windows apps protections
 
-When users download Universal Windows apps or even Windows Classic applications (Win32) from the Windows Store, it’s highly unlikely that they will encounter malware, because all apps go through a careful screening process before being made available in the store. Apps that organizations build and distribute through sideloading processes will need to be reviewed internally to ensure that they meet organizational security requirements.
+When users download Universal Windows apps or even Windows Classic applications (Win32) from the Windows Store, it’s unlikely that they will encounter malware because all apps go through a careful screening process before being made available in the store. Apps that organizations build and distribute through sideloading processes will need to be reviewed internally to ensure that they meet organizational security requirements.
 
 Regardless of how users acquire Universal Windows apps, they can use them with increased confidence. Unlike Windows Classic applications, which can run with elevated privileges and have potentially sweeping access to the system and data, Universal Windows apps run in an AppContainer sandbox with limited privileges and capabilities. For example, Universal Windows apps have no system-level access, have tightly controlled interactions with other apps, and have no access to data unless the user explicitly grants the application permission.
 
@@ -356,17 +365,33 @@ to Windows 10 features</strong></th>
 
 ### Converting an EMET XML settings file into Windows 10 mitigation policies
 
-One of EMET’s strengths is that it allows you to import and export configuration settings for EMET mitigations as an XML settings file, thus enabling a straightforward deployment workflow. To aid with security configuration and deployment of Windows 10 devices, you can download a set of EMET Policy Converter cmdlets. With these cmdlets, you can use an EMET XML settings file to generate mitigation policies for Windows 10.
+One of EMET’s strengths is that it allows you to import and export configuration settings for EMET mitigations as an XML settings file for straightforward deployment. To generate mitigation policies for Windows 10 from an EMET XML settings file, you can install the ProcessMitigations PowerShell module. In an elevated PowerShell session, run this cmdlet:
 
-The Converter feature is currently available as a Windows PowerShell cmdlet, **Set-ProcessMitigations -c** (instead of **-c**, you can also type **-Convert**). This cmdlet, and the Process Mitigation Management Tool collection of cmdlets, provides the following capabilities:
+```powershell
+Install-Module -Name ProcessMitigations
+```
 
--   **Converting EMET settings to Windows 10 settings**: You can run **Set-ProcessMitigations -Convert** and provide an EMET XML settings file as input, which will generate an output file of Windows 10 mitigation settings.
+The ConvertTo-ProcessMitigationPolicy cmdlet can:
 
--   **Auditing and modifying the converted settings (the output file)**: After you create the output file, you can apply and manually audit the mitigation settings by running cmdlets, through which you can Apply, Enumerate, Enable, Disable, and Save settings (see the Process Mitigation Management Tool documentation).
+-   **Convert EMET settings to Windows 10 settings**: You can run ConvertTo-ProcessMitigationPolicy and provide an EMET XML settings file as input, which will generate an output file of Windows 10 mitigation settings. For example:
+    
+    ```powershell
+    ConvertTo-ProcessMitigationPolicy -EMETfile emetpolicy.xml -output newconfiguration.xml
+    ```
 
--   **Converting Attack Surface Reduction (ASR) settings to a Code Integrity policy file**: If the input file contains any settings for EMET’s Attack Surface Reduction (ASR) mitigation, the converter will also create a Code Integrity policy file. In this case, you can complete the merging, auditing, and deployment process for the Code Integrity policy, as described in [Deploy Device Guard: deploy code integrity policies](deploy-device-guard-deploy-code-integrity-policies.md). This will enable protections on Windows 10 equivalent to EMET’s ASR protections.
+-   **Audit and modify the converted settings (the output file)**: Additional cmdlets let you apply, enumerate, enable, disable, and save settings in the output file. For example, this cmdlet enables SEHOP and disables MandatoryASLR and DEPATL registry settings for Notepad:
 
--   **Converting Certificate Trust settings to enterprise certificate pinning rules**: If you have an EMET “Certificate Trust” XML file (pinning rules file), you can also use **Set-ProcessMitigations -Convert** to convert the pinning rules file into an enterprise certificate pinning rules file. Then you can finish enabling that file as described in the Enterprise_certificate_pinning_documentation.
+    ```powershell
+    Set-ProcessMitigation -Name notepad.exe -Enable SEHOP -Disable MandatoryASLR,DEPATL
+    ```
+
+-   **Convert Attack Surface Reduction (ASR) settings to a Code Integrity policy file**: If the input file contains any settings for EMET’s Attack Surface Reduction (ASR) mitigation, the converter will also create a Code Integrity policy file. In this case, you can complete the merging, auditing, and deployment process for the Code Integrity policy, as described in [Deploy Device Guard: deploy code integrity policies](deploy-device-guard-deploy-code-integrity-policies.md). This will enable protections on Windows 10 equivalent to EMET’s ASR protections.
+
+-   **Convert Certificate Trust settings to enterprise certificate pinning rules**: If you have an EMET “Certificate Trust” XML file (pinning rules file), you can also use ConvertTo-ProcessMitigationPolicy to convert the pinning rules file into an enterprise certificate pinning rules file. Then you can finish enabling that file as described in [Enterprise Certificate Pinning](enterprise-certificate-pinning.md). For example:
+
+    ```powershell
+    ConvertTo-ProcessMitigationPolicy -EMETfile certtrustrules.xml -output enterprisecertpinningrules.xml
+    ```
 
 #### EMET-related products
 

@@ -1,5 +1,5 @@
 ---
-title: Take response actions on a machine in Windows Defender Advanced Threat Protection
+title: Take response actions on a machine in Windows Defender ATP
 description: Take response actions on a machine by isolating machines, collecting an investigation package, and checking activity details.
 keywords: respond, isolate, isolate machine, collect investigation package, action center
 search.product: eADQiWindows 10XVcnh
@@ -21,7 +21,6 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Quickly respond to detected attacks by isolating machines or collecting an investigation package. After taking action on machines, you can check activity details on the Action center.
 
@@ -40,7 +39,7 @@ This machine isolation feature disconnects the compromised machine from the netw
 
   -	**Dashboard** - Select the machine name from the Top machines with active alerts section.
   -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-  -	**Machines view** - Select the machine name from the list of machines.
+  -	**Machines list** - Select the machine name from the list of machines.
   -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
 
 2.	Open the **Actions** menu and select **Isolate machine**.
@@ -102,7 +101,7 @@ CollectionSummaryReport.xls | This file is a summary of the investigation packag
 
   -	**Dashboard** - Select the machine name from the Top machines with active alerts section.
   -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-  -	**Machines view** - Select the heading of the machine name from the machines view.
+  -	**Machines list** - Select the heading of the machine name from the machines list.
   -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
 
 2.	Open the **Actions** menu and select **Collect investigation package**.

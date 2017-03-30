@@ -42,14 +42,16 @@ You'll need to configure Splunk so that it can pull Windows Defender ATP alerts.
 2. Click **Search & Reporting**, then **Settings** > **Data inputs**.
 
 3. Click **REST** under **Local inputs**.
-> [!NOTE]
-> This input will only appear after you install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/).
+
+  NOTE:
+  This input will only appear after you install the [REST API Modular Input app](https://splunkbase.splunk.com/app/1546/).
 
 4. Click **New**.
 
 5. Type the following values in the required fields, then click **Save**:
-> [!NOTE]
->All other values in the form are optional and can be left blank.
+
+  NOTE:
+  All other values in the form are optional and can be left blank.
 
   <table>
   <tbody style="vertical-align:top;">
@@ -132,6 +134,7 @@ Use the solution explorer to view alerts in Splunk.
 
 
 ## Related topics
-- [Configure security information and events management (SIEM) tools to pull alerts](configure-siem-windows-defender-advanced-threat-protection.md)
 - [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Configure HP ArcSight to pull alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
+- [Configure ArcSight to pull Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
+- [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
+- [Pull Windows Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)

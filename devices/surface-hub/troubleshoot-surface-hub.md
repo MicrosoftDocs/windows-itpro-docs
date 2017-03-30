@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: surfacehub
-author: TrudyHa
+author: jdeckerMS
 localizationpriority: medium
 ---
 
@@ -622,7 +622,9 @@ This section lists status codes, mapping, user messages, and actions an admin ca
  
 
  
+## Related content
 
+- [Troubleshooting Miracast connection to the Surface Hub](https://blogs.msdn.microsoft.com/surfacehub/2017/01/30/troubleshooting-miracast-connection-to-the-surface-hub/)
  
 
 

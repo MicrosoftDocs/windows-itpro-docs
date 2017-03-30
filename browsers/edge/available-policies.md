@@ -60,7 +60,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you disable or don't configure this policy setting (default), it can be turned on and configured by the employee in the Clear browsing data options area, under Settings.
 
 ### Allow Developer Tools
-- **Supported versions:** Windows 10, Version 1511 or later
+- **Supported versions:** Windows 10, version 1511 or later
 
 - **Description:** This policy setting lets you decide whether F12 Developer Tools are available on Microsoft Edge.
     - If you enable or don’t configure this setting (default), the F12 Developer Tools are available in Microsoft Edge.
@@ -68,7 +68,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you disable this setting, the F12 Developer Tools aren’t available in Microsoft Edge.
 
 ### Allow Extensions
-- **Supported versions:** Windows 10, Version 1607 or later
+- **Supported versions:** Windows 10, version 1607 or later
 
 - **Description:** This policy setting lets you decide whether employees can use Edge Extensions.
 
@@ -77,7 +77,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you disable this setting, employees can’t use Edge Extensions.
 
 ### Allow InPrivate browsing
-- **Supported versions:** Windows 10, Version 1511 or later
+- **Supported versions:** Windows 10, version 1511 or later
 
 - **Description:** This policy setting lets you decide whether employees can browse using InPrivate website browsing.
 
@@ -86,7 +86,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you disable this setting, employees can’t use InPrivate website browsing.
 
 ### Allow Microsoft Compatibility List
-- **Supported versions:** Windows 10, Version 1607 or later
+- **Supported versions:** Windows 10, version 1607 or later
 
 - **Description:** This policy setting lets you decide whether to use the Microsoft Compatibility List (a Microsoft-provided list that helps sites with known compatibility issues to display properly) in Microsoft Edge. By default, the Microsoft Compatibility List is enabled and can be viewed by visiting about:compat.
 
@@ -172,7 +172,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you don’t configure this setting (default), employees can choose whether to send Do Not Track requests to websites asking for tracking info.
 
 ### Configure Favorites
-- **Supported versions:** Windows 10, Version 1511 or later
+- **Supported versions:** Windows 10, version 1511 or later
 
 - **Description:** This policy setting lets you configure the default list of Favorites that appear for your employees. Employees can change their Favorites by adding or removing items at any time.
 
@@ -214,7 +214,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you don’t configure this setting (default), employees can choose whether search suggestions appear in the Address bar of Microsoft Edge.
 
 ### Configure Start pages
-- **Supported versions:** Windows 10, Version 1511 or later
+- **Supported versions:** Windows 10, version 1511 or later
 
 - **Description:** This policy setting lets you configure one or more Start pages, for domain-joined devices. Your employees won't be able to change this after you set it.
 
@@ -282,7 +282,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you disable or don't configure this setting (default), employees can’t sync their favorites between Internet Explorer and Microsoft Edge.
 
 ### Prevent access to the about:flags page
-- **Supported versions:** Windows 10, Version 1607 or later
+- **Supported versions:** Windows 10, version 1607 or later
 
 - **Description:** This policy setting lets you decide whether employees can access the about:flags page, which is used to change developer settings and to enable experimental features.
 
@@ -291,7 +291,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you disable or don’t configure this setting (default), employees can access the about:flags page.
 
 ### Prevent bypassing Windows Defender SmartScreen prompts for files
-- **Supported versions:** Windows 10, Version 1511 or later
+- **Supported versions:** Windows 10, version 1511 or later
 
 - **Description:** This policy setting lets you decide whether employees can override the Windows Defender SmartScreen warnings about downloading unverified files.
 
@@ -300,7 +300,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you disable or don’t configure this setting (default), employees can ignore Windows Defender SmartScreen warnings and continue the download process.
 
 ### Prevent bypassing Windows Defender SmartScreen prompts for sites
-- **Supported versions:** Windows 10, Version 1511 or later
+- **Supported versions:** Windows 10, version 1511 or later
 
 - **Description:** This policy setting lets you decide whether employees can override the Windows Defender SmartScreen warnings about potentially malicious websites.
 
@@ -327,7 +327,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you disable or don't configure this setting (default), employees will see the First Run page when opening Microsoft Edge for the first time.
 
 ### Prevent using Localhost IP address for WebRTC
-- **Supported versions:** Windows 10, Version 1511 or later
+- **Supported versions:** Windows 10, version 1511 or later
 
 - **Description:** This policy setting lets you decide whether an employee’s Localhost IP address shows while making calls using the WebRTC protocol. By default, this setting is turned off.
 
@@ -362,7 +362,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you don't configure this setting (default), the default search engine is set to the one specified in App settings.
 
 ### Show message when opening sites in Internet Explorer
-- **Supported versions:** Windows 10, Version 1607 and later
+- **Supported versions:** Windows 10, version 1607 and later
 
 - **Description:** This policy setting lets you decide whether employees see an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.
 
@@ -452,7 +452,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **2.** Blocks all cookies from all sites.
 
 ### AllowDeveloperTools
-- **Supported versions:** Windows 10, Version 1511 or later
+- **Supported versions:** Windows 10, version 1511 or later
 
 - **Supported devices:** Desktop
 
@@ -486,7 +486,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1.** Employees can send Do Not Track headers to websites requesting tracking info.    
 
 ### AllowExtensions
-- **Supported versions:** Windows 10, Version 1607 and later
+- **Supported versions:** Windows 10, version 1607 and later
 
 - **Supported devices:** Desktop
 
@@ -537,7 +537,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1 (default).** An employee must click the content, click a Click-to-Run button, or have the site appear on an auto-allow list before Microsoft Edge loads and runs Adobe Flash content.
 
 ### AllowInPrivate
-- **Supported versions:** Windows 10, Version 1511 or later
+- **Supported versions:** Windows 10, version 1511 or later
 
 - **Supported devices:** Both
 
@@ -730,7 +730,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
             >If there’s an .xml file in the cache container, IE waits 65 seconds and then checks the local cache for a newer version of the file from the server, based on standard caching rules. If the server file has a different version number than the version in the cache container, the server file is used and stored in the cache container.<p>If you’re already using a site list, enterprise mode continues to work during the 65 second wait; it just uses your existing site list instead of your new one.
 
 ### Favorites
-- **Supported versions:** Windows 10, Version 1511 or later
+- **Supported versions:** Windows 10, version 1511 or later
 
 - **Supported devices:** Both
 
@@ -752,7 +752,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
             URLs must be on separate lines and aren't shared between Microsoft Edge and Internet Explorer 11.
 
 ### FirstRunURL
-- **Supported versions:** Windows 10, Version 1511 or later
+- **Supported versions:** Windows 10, version 1511 or later
 
 - **Supported devices:** Mobile
 
@@ -771,7 +771,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
                 <contoso.one>
 
 ### HomePages
-- **Supported versions:** Windows 10, Version 1511 or later
+- **Supported versions:** Windows 10, version 1511 or later
 
 - **Supported devices:** Desktop
 
@@ -790,7 +790,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
                 <contoso.com/support><fabrikam.com/support>
 
 ### PreventAccessToAboutFlagsInMicrosoftEdge
-- **Supported versions:** Windows 10, Version 1607 and later
+- **Supported versions:** Windows 10, version 1607 and later
 
 - **Supported devices:** Desktop
 
@@ -841,7 +841,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1.** Microsoft servers will not be contacted if a site is pinned to Start from Microsoft Edge.
 
 ### PreventSmartScreenPromptOverride
-- **Supported versions:** Windows 10, Version 1511 or later
+- **Supported versions:** Windows 10, version 1511 or later
 
 - **Supported devices:** Both
 
@@ -858,7 +858,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1.** Turns on Windows Defender SmartScreen.
 
 ### PreventSmartScreenPromptOverrideForFiles
-- **Supported versions:** Windows 10, Version 1511 or later
+- **Supported versions:** Windows 10, version 1511 or later
 
 - **Supported devices:** Both
 
@@ -875,7 +875,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1.** Stops employees from ignoring the Windows Defender SmartScreen warnings about unverified files.
 
 ### PreventUsingLocalHostIPAddressForWebRTC
-- **Supported versions:** Windows 10, Version 1511 or later
+- **Supported versions:** Windows 10, version 1511 or later
 
 - **Supported devices:** Desktop
 
@@ -926,7 +926,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1.** Allows you to configure the default search engine for your employees.
 
 ### ShowMessageWhenOpeningInteretExplorerSites
-- **Supported versions:** Windows 10, Version 1607 and later
+- **Supported versions:** Windows 10, version 1607 and later
 
 - **Supported devices:** Desktop
 

@@ -108,7 +108,9 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
     a. Click **Endpoint Management** on the **Navigation pane**.
 
-    b. Under **Endpoint offboarding** section, select **Mobile Device Management /Microsoft Intune**, click **Download package** and save the .zip file.
+    b. Click the **Endpoint offboarding** section.
+
+    c. Select **Mobile Device Management /Microsoft Intune**, click **Download package** and save the .zip file.
 
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
 

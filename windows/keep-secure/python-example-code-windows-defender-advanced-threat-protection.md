@@ -21,7 +21,6 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 ## Before you begin
 You must [install](http://docs.python-requests.org/en/master/user/install/#install) the "[requests](http://docs.python-requests.org/en/master/)" python library.
@@ -37,7 +36,7 @@ These code examples demonstrate the following tasks:
 ## Step 1: Obtain an Azure AD access token
 The following example demonstrates how to obtain an Azure AD access token that you can use to call methods in the custom threat intelligence API. After you obtain a token, you have 60 minutes to use this token in calls to the custom threat intelligence API before the token expires. After the token expires, you can generate a new token.
 
-Replace the *tenant\_id*, *client_id*, and *client_secret* values with the ones you got from **Preferences settings** page in the portal:
+Replace the *auth_url*, *client_id*, and *client_secret* values with the ones you got from **Preferences settings** page in the portal:
 
 [!code[CustomTIAPI](./code/example.py#L1-L17)]
 
@@ -74,8 +73,9 @@ You can use the complete code to create calls to the API.
 [!code[CustomTIAPI](./code/example.py#L1-L53)]
 
 ## Related topics
-- [Understand threat intelligence](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-- [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
-- [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-- [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
+- [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+- [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
+- [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [PowerShell code examples for the custom threat intelligence API](powershell-example-code-windows-defender-advanced-threat-protection.md)
+- [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
