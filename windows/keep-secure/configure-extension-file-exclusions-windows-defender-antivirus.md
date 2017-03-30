@@ -12,7 +12,7 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Configure and validate exclusions based on file name, extension, and folder location
+# Configure and validate exclusions based on file extension and folder location
 
 
 **Applies to:**
@@ -41,12 +41,10 @@ Exclusion | Examples | Exclusion list
 ---|---|---
 Any file with a specific extension | All files with the .test extension, anywhere on the machine | Extension exclusions
 Any file under a specific folder | All files under the c:\test\sample folder | File and folder exclusions
-Any file with a specific file name | The file "sample.test", anywhere on the machine | File and folder exclusions
 A specific file in a specific folder | The file c:\sample\sample.test only | File and folder exclusions
 A specific process | The executable file c:\test\process.exe | File and folder exclusions list
 
 This means the exclusion lists have the following characteristics:
-- If you exclude a file, the exclusion will apply to all versions of that file, regardless of where the file is located.
 - Folder exclusions will apply to all files and folders under that folder.
 - File extensions will apply to any file name with the defined extension, regardless of where the file is located.
 
@@ -63,20 +61,22 @@ You can add, remove, and review the lists for exclusions in [Group Policy](#gp),
 You can also [use PowerShell cmdlets and WMI to configure the exclusion lists](#ps), including [reviewing](#review) and [validating](#validate) your lists. 
 
 
-By default, local changes made to the lists (by users with administrator privileges) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, Intune, PowerShell, or WMI. The Group Policy lists will take precedence in the case of conflicts. You can [configure how locally and globally defined exclusions lists are merged](configure-local-policy-overrides-windows-defender-antivirus.md#merge-lists) to disable this setting.
+By default, local changes made to the lists (by users with administrator privileges; this includes changes made with PowerShell and WMI) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists will take precedence in the case of conflicts. 
+
+You can [configure how locally and globally defined exclusions lists are merged](configure-local-policy-overrides-windows-defender-antivirus.md#merge-lists) to allow local changes to override managed deployment settings.
 
  
 
 
 
 
-## Configure the list of exclusions based on file or folder name or file extension
+## Configure the list of exclusions based on folder name or file extension
 
 <a id="gp"></a>
-**Use Group Policy to configure file name, folder, or file extension exclusions:**
+**Use Group Policy to configure folder or file extension exclusions:**
 
 >[!NOTE]
->The exclusion will apply to any file with the defined file name - regardless of its location. If a folder is defined in the exclusion, then all files and subdirectories under that folder will be excluded.
+>If you include a fully qualified path to a file, then only that file will be excluded. If a folder is defined in the exclusion, then all files and subdirectories under that folder will be excluded.
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
