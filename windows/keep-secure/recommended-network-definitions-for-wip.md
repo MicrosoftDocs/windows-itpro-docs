@@ -14,7 +14,7 @@ localizationpriority: high
 
 **Applies to:**
 
--   Windows 10, version 1607 and later
+-   Windows 10, version 1607
 -   Windows 10 Mobile
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).

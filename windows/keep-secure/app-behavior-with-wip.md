@@ -13,7 +13,7 @@ localizationpriority: high
 # Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)
 **Applies to:**
 
-- Windows 10, version 1607 and later
+- Windows 10, version 1607
 - Windows 10 Mobile
 
 Windows Information Protection (WIP) classifies apps into two categories: enlightened and unenlightened. Enlighted apps can differentiate between corporate and personal data, correctly determining which to protect based on internal policies. Corporate data is encrypted on the managed device and attempts to copy/paste or share this information with non-corporate apps or people will fail. Unenlightened apps, when marked as corporate-managed, consider all data corporate and encrypt everything by default.
