@@ -21,8 +21,6 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
-
 Advanced cybersecurity attacks comprise of multiple complex malicious events, attributes, and contextual information. Identifying and deciding which of these activities qualify as suspicious can be a challenging task. Your knowledge of known attributes and abnormal activities specific to your industry is fundamental in knowing when to call an observed behavior as suspicious.
 
 With Windows Defender ATP, you can create custom threat alerts that can help you keep track of possible attack activities in your organization. You can flag suspicious events to piece together clues and possibly stop an attack chain. These custom threat alerts will only appear in your organization and will flag events that you set it to track.
@@ -48,8 +46,9 @@ Here is an example of an IOC:
 IOCs have a many-to-one relationship with alert definitions such that an alert definition can have many IOCs that correspond to it.
 
 ## Related topics
-- [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
-- [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
-- [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
+- [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
+- [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [PowerShell code examples for the custom threat intelligence API](powershell-example-code-windows-defender-advanced-threat-protection.md)
+- [Python code examples for the custom threat intelligence API](python-example-code-windows-defender-advanced-threat-protection.md)
+- [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)

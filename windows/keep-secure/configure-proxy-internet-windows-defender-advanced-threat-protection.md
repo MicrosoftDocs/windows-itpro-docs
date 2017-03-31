@@ -37,31 +37,32 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 
 
  - Manual static proxy configuration:
-    - WinHTTP configured using netsh command
     - Registry based configuration
+    - WinHTTP configured using netsh command – Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
 
 ## Configure the proxy server manually using a registry-based static proxy
 Configure a registry-based static proxy to allow only Windows Defender ATP sensor to report telemetry and communicate with Windows Defender ATP services if a computer is not be permitted to connect to the Internet.
 
 The static proxy is configurable through Group Policy (GP). The group policy can be found under: **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**.
 
-The registry key that this policy sets can be found at:
-```HKLM\Software\Policies\Microsoft\Windows\DataCollection              TelemetryProxyServer```
+The policy sets two registry values `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD under the registry key `HKLM\Software\Policies\Microsoft\Windows\DisableEnterpriseAuthProxy`.
 
-The policy and the registry key takes the following string format:
+The registry value `TelemetryProxyServer` takes the following string format:
+
 ```text
 <server name or ip>:<port>
 ```
 For example: 10.0.0.6:8080
 
-If the static proxy settings are configured after onboarding, then you must restart the PC to apply the proxy settings.
+The registry value `DisableEnterpriseAuthProxy` should be set to 1.
 
 ## Configure the proxy server manually using netsh command
 
 Use netsh to configure a system-wide static proxy.
 
 > [!NOTE]
-> This will affect all applications including Windows services which use WinHTTP with default proxy.
+> - This will affect all applications including Windows services which use WinHTTP with default proxy.</br>
+> - Laptops that are changing topology (for example: from office to home) will malfunction with netsh. Use the registry-based static proxy configuration.
 
 1. Open an elevated command-line:
 
