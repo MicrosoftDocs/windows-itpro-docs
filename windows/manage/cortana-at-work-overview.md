@@ -10,11 +10,8 @@ localizationpriority: high
 # Cortana integration in your business or enterprise
 **Applies to:**
 
--   Windows 10, Windows Insider Program 
--   Windows 10 Mobile, Windows Insider Program
-
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+-   Windows 10, version 1703 
+-   Windows 8.1 Mobile
 
 ## Who is Cortana?
 Cortana is Microsoft’s personal digital assistant, who helps busy people get things done, even while at work. 
@@ -27,7 +24,7 @@ Using Azure AD also means that you can remove an employee’s profile (for examp
 ## Where is Cortana available for use in my organization?
 You can use Cortana at work in all countries/regions where Cortana is supported for consumers. This includes the United States, United Kingdom, Canada, France, Italy, Germany, Spain, China, Japan, India, and Australia. As Cortana comes to more countries, she will also become available to enterprise customers.
 
-Cortana is available on Windows 10, Windows Insider Program and with limited functionality on Windows Phone 8.1, Windows Insider Program.
+Cortana is available on Windows 10, version 1703 and with limited functionality on Windows Phone 8.1.
 
 ## Required hardware and software
 Cortana requires the following hardware and software to successfully run the included scenario in your organization.
@@ -41,7 +38,7 @@ Cortana requires the following hardware and software to successfully run the inc
 
 |Software |Minimum version |
 |---------|------------|
-|Client operating system |<ul><li>**Desktop:** Windows 10, Windows Insider Program</li><li>**Mobile:** Windows 8.1, Windows Insider Program (with limited functionality)</li> |
+|Client operating system |<ul><li>**Desktop:** Windows 10, version 1703</li><li>**Mobile:** Windows 8.1 (with limited functionality)</li> |
 |Azure Active Directory (Azure AD) |While all employees signing into Cortana need an Azure AD account; an Azure AD premium tenant isn’t required. |
 |Additional policies (Group Policy and Mobile Device Management (MDM)) |There is a rich set of policies that can be used to manage various aspects of Cortana. Most of these policies will limit the abilities of Cortana, but won't turn Cortana off.<p>For example:<p>If you turn **Location** off, Cortana won't be able to provide location-based reminders, such as reminding you to visit the mail room when you get to work.<p>If you turn **Speech** off, your employees won't be able to use “Hello Cortana” for hands free usage or voice commands to easily ask for help. |
 |Windows Information Protection (WIP) (optional) |If you want to secure the calendar, email, and contact info provided to Cortana on a device, you can use WIP. For more info about WIP, see [Protect your enterprise data using Windows Information Protection (WIP)](../keep-secure/protect-enterprise-data-using-wip.md)<p>If you decide to use WIP, you must also have a management solution. This can be Microsoft Intune, Microsoft System Center Configuration Manager (version 1606 or later), or your current company-wide 3rd party mobile device management (MDM) solution.|
