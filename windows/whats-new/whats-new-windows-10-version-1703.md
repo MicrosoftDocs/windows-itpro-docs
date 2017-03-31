@@ -164,7 +164,7 @@ For Windows Phone devices, an adminisrator is able to initiate a remote PIN rese
 
 For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**.
 
-For more details, check out [What if I forget my PIN?](../keep-secure/hello-why-pin-is-better-than-password.md#what-if-i-forget-my-PIN?).
+For more details, check out [What if I forget my PIN?](../keep-secure/hello-why-pin-is-better-than-password.md#what-if-i-forget-my-pin).
 
 ## Update
 

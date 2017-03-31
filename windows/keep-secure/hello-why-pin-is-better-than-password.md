@@ -65,6 +65,7 @@ You can provide additional protection for laptops that don't have TPM by enablng
     
 2.  Set the number of invalid logon attempts to allow, and then click OK.
 
+<span id="what-if-i-forget-my-pin"/>
 ## What if I forget my PIN?
 
 Starting with Windows 10, version 1703, devices managed by [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune), are be able to reset a forgotten PIN without deleting company managed data or apps.
