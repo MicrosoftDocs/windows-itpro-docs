@@ -772,9 +772,13 @@ In this first deployment scenario, we will deploy Windows 10 using PXE. This sce
 
 14. Shut down the PC4 VM.
 
+>Note: The following two procedures 1) Replace a client with Windows 10 and 2) Refresh a client with Windows 10 have been exchanged in their order in this guide compared to the previous version. This is to avoid having to restore Hyper-V checkpoints to have access to PC1 before the OS is upgraded. If this is your first time going through this guide, you won't notice any change, but if you have tried the guide previously then this change should make it simpler to complete.
+
 ## Replace a client with Windows 10 using Configuration Manager
 
->Before starting this section, you can delete computer objects from Active Directory that were created as part of previous deployment procedures. Use the Active Directory Users and Computers console to remove stale entries under contoto.com\Computers, but do not delete the computer account (hostname) for PC1. There should be at least two computer accounts present in the contoso.com\Computers container: one for SRV1, and one for the hostname of PC1. It is not required to delete the stale entries, this is only done to remove clutter.
+>Before starting this section, you can delete computer objects from Active Directory that were created as part of previous deployment procedures. Use the Active Directory Users and Computers console on DC1 to remove stale entries under contoto.com\Computers, but do not delete the computer account (hostname) for PC1. There should be at least two computer accounts present in the contoso.com\Computers container: one for SRV1, and one for the hostname of PC1. It is not required to delete the stale entries, this is only done to remove clutter.
+
+![contoso.com\Computers](images/poc-computers.png)
 
 In the replace procedure, PC1 will not be migrated to a new operating system. It is simplest to perform this procedure before performing the refresh procedure. After refreshing PC1, the operating system will be replaced. This replace procedure does not replace the operating system on PC1 but rather replaces PC1 with another computer, migrating users and settings from PC1 to the new computer.
 
@@ -809,6 +813,84 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 
 >Hyper-V enables us to define a static MAC address on PC4. In a real-world scenario you must determine the MAC address of the new computer.
 
+### Install the Configuration Manager client on PC1
+
+1. Verify that the PC1 VM is running and in its original state, which was saved as a checkpoint and then restored in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md).
+
+2. If a PC1 checkpoint has not already been saved, then save a checkpoint by typing the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
+
+    ```
+    Checkpoint-VM -Name PC1 -SnapshotName BeginState
+    ```
+3. On SRV1, in the Configuration Manager console, in the Administration workspace, expand **Hierarcy Configuration** and click on **Discovery Methods**.
+4. Double-click **Active Directory System Discovery** and on the **General** tab select the **Enable Active Directory System Discovery** checkbox.
+5. Click the yellow starburst, click **Browse**, select **contoso\Computers**, and then click **OK** three times.
+6. When a popup dialog box asks if you want to run full discovery, click **Yes**. 
+7. In the Assets and Compliance workspace, click **Devices** and verify that the computer account names for SRV1 and PC1 are displayed. See the following example (GREGLIN-PC1 is the computer account name of PC1 in this example):
+
+    ![assets](images/sccm-assets.png)
+
+    >If you do not see the computer account for PC1, try clicking the **Refresh** button in the upper right corner of the console.
+    
+    The **Client** column indicates that the Configuration Manager client is not currently installed. This procedure will be carried out next.
+
+8. Sign in to PC1 using the contoso\administrator account and type the following at an elevated command prompt to remove any pre-existing client configuration, if it exists. Note: this command requires an elevated command prompt not an elevated Windows PowerShell prompt:
+
+    ```
+    sc stop ccmsetup
+    "\\SRV1\c$\Program Files\Microsoft Configuration Manager\Client\CCMSetup.exe" /Uninstall
+    ```
+    >If PC1 still has Configuration Manager registry settings that were applied by Group Policy, startup scripts, or other policies in its previous domain, these might not all be removed by CCMSetup /Uninstall and can cause problems with installation or registration of the client in its new environment. It might be necessary to manually remove these settings if they are present. For more information, see [Manual removal of the SCCM client](https://blogs.technet.microsoft.com/michaelgriswold/2013/01/02/manual-removal-of-the-sccm-client/).
+
+9. On PC1, temporarily stop Windows Update from queuing items for download and clear all BITS jobs from the queue:
+
+    ```
+    net stop wuauserv
+    net stop BITS
+    ```
+
+    Verify that both services were stopped successfully, then type the following at an elevated command prompt:
+
+    ```
+    del "%ALLUSERSPROFILE%\Application Data\Microsoft\Network\Downloader\qmgr*.dat"
+    net start BITS
+    bitsadmin /list /allusers
+    ```
+
+    Verify that BITSAdmin displays 0 jobs. 
+
+10. To install the Configuration Manager client as a standalone process, type the following at an elevated command prompt:
+
+    ```
+    "\\SRV1\c$\Program Files\Microsoft Configuration Manager\Client\CCMSetup.exe" /mp:SRV1.contoso.com /logon SMSSITECODE=PS1
+    ```
+11. On PC1, using file explorer, open the **C:\Windows\ccmsetup** directory. During client installation, files will be downloaded here. 
+12. Installation progress will be captured in the file: **c:\windows\ccmsetup\logs\ccmsetup.log**. You can periodically open this file in notepad, or you can type the following command at an elevated Windows PowerShell prompt to monitor installation progress:
+
+    ```
+    Get-Content -Path c:\windows\ccmsetup\logs\ccmsetup.log -Wait
+    ```
+    
+    Installation might require several minutes, and display of the log file will appear to hang while some applications are installed. This is normal. When setup is complete, verify that **CcmSetup is existing with return code 0** is displayed on the last line of the ccmsetup.log file and then press **CTRL-C** to break out of the Get-Content operation. A return code of 0 indicates that installation was successful and you should now see a directory created at **C:\Windows\CCM** that contains files used in registration of the client with its site.
+
+13. On PC1, open the Configuration Manager control panel applet by typing the following command:
+
+    ```
+    control smscfgrc
+    ```
+
+14. Click the **Site** tab and click **Find Site**. The client will report that it has found the PS1 site. See the following example:
+
+    ![site](images/sccm-site.png)
+
+    If the client is not able to find the PS1 site, review any error messages that are displayed in **C:\Windows\CCM\Logs\ClientIDManagerStartup.log** and **LocationServices.log**.
+
+15. On SRV1, in the Assets and Compliance workspace, click **All Desktop and Server Clients** and verify that the computer account for PC1 is displayed here with **Yes** and **Active** in the **Client** and **Client Activity** columns, respectively. You might have to refresh the view and wait few minutes for the client to appear here.  See the following example:
+
+    ![client](images/sccm-client.png)
+
+    >It might take several minutes for the client to fully register with the site and complete a client check. When it is complete you will see a green check mark over the client icon as shown above.
+
 ### Associate PC4 with PC1
 
 1. On SRV1 in the Configuration Manager console, in the Assets and Compliance workspace, right-click **Devices** and then click **Import Computer Information**.
@@ -818,7 +900,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 3. On the Single Computer page, use the following settings:
     - Computer Name: **PC4**
     - MAC Address: **00:15:5D:83:26:FF**
-    - Source Computer: <type the hostname of PC1, or click Search twice, click the hostname, and click OK>
+    - Source Computer: \<type the hostname of PC1, or click Search twice, click the hostname, and click OK\>
 
 4. Click **Next**, and then on the User Accounts page choose **Capture and restore all user accounts**. Click **Next** twice to continue.
 
@@ -890,84 +972,6 @@ In the Configuration Manager console, in the Software Library workspace, click *
 4. Setup will install the operating system, install the configuration manager client, join PC4 to the domain, and restore users and settings from PC1.
 
 ## Refresh a client with Windows 10 using Configuration Manager
-
-### Install the Configuration Manager client on PC1
-
-1. Verify that PC1 is in its original state, which was saved as a checkpoint and then restored in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md).
-
-2. If a PC1 checkpoint has not already been saved, then save a checkpoint by typing the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
-
-    ```
-    Checkpoint-VM -Name PC1 -SnapshotName BeginState
-    ```
-3. On SRV1, in the Configuration Manager console, in the Administration workspace, expand **Hierarcy Configuration** and click on **Discovery Methods**.
-4. Double-click **Active Directory System Discovery** and on the **General** tab select the **Enable Active Directory System Discovery** checkbox.
-5. Click the yellow starburst, click **Browse**, select **contoso\Computers**, and then click **OK** three times.
-6. When a popup dialog box asks if you want to run full discovery, click **Yes**. 
-7. In the Assets and Compliance workspace, expand **Devices** and click **All Systems**. Verify that a computer account for SRV1 and PC1 are displayed. See the following example (GREGLIN-PC1 is the hostname of PC1 in this example):
-
-    ![assets](images/sccm-assets.png)
-
-    >If you only see the **Devices** parent node, you can add and view device collections in the tree by clicking **Device Collections** and then double-clicking a device collection.
-    
-    The **Client** column indicates that the Configuration Manager client is not currently installed. This procedure will be carried out next.
-
-8. Sign in to PC1 using the contoso\administrator account and type the following at an elevated command prompt to remove any pre-existing client configuration, if it exists:
-
-    ```
-    sc stop ccmsetup
-    "\\SRV1\c$\Program Files\Microsoft Configuration Manager\Client\CCMSetup.exe" /Uninstall
-    ```
-    >If PC1 still has Configuration Manager registry settings that were applied by Group Policy, startup scripts, or other policies in its previous domain, these might not all be removed by CCMSetup /Uninstall and can cause problems with installation or registration of the client in its new environment. It might be necessary to manually remove these settings if they are present. For more information, see [Manual removal of the SCCM client](https://blogs.technet.microsoft.com/michaelgriswold/2013/01/02/manual-removal-of-the-sccm-client/).
-
-9. On PC1, temporarily stop Windows Update from queuing items for download and clear all BITS jobs from the queue:
-
-    ```
-    net stop wuauserv
-    net stop BITS
-    ```
-
-    Verify that both services were stopped successfully, then type the following at an elevated command prompt:
-
-    ```
-    del "%ALLUSERSPROFILE%\Application Data\Microsoft\Network\Downloader\qmgr*.dat"
-    net start BITSexit
-    bitsadmin /list /allusers
-    ```
-
-    Verify that BITSAdmin displays 0 jobs. 
-
-10. To install the Configuration Manager client as a standalone process, type the following at an elevated command prompt:
-
-    ```
-    "\\SRV1\c$\Program Files\Microsoft Configuration Manager\Client\CCMSetup.exe" /mp:SRV1.contoso.com /logon SMSSITECODE=PS1
-    ```
-11. On PC1, using file explorer, open the **C:\Windows\ccmsetup** directory. During client installation, files will be downloaded here. 
-12. Installation progress will be captured in the file: **c:\windows\ccmsetup\logs\ccmsetup.log**. You can periodically open this file in notepad, or you can type the following command at an elevated Windows PowerShell prompt to monitor installation progress:
-
-    ```
-    Get-Content -Path c:\windows\ccmsetup\logs\ccmsetup.log -Wait
-    ```
-    
-    Installation might require several minutes, and display of the log file will appear to hang while some applications are installed. This is normal. When setup is complete, verify that **CcmSetup is existing with return code 0** is displayed on the last line of the ccmsetup.log file and then press **CTRL-C** to break out of the Get-Content operation. A return code of 0 indicates that installation was successful and you should now see a directory created at **C:\Windows\CCM** that contains files used in registration of the client with its site.
-
-13. On PC1, open the Configuration Manager control panel applet by typing the following command:
-
-    ```
-    control smscfgrc
-    ```
-
-14. Click the **Site** tab and click **Find Site**. The client will report that it has found the PS1 site. See the following example:
-
-    ![site](images/sccm-site.png)
-
-    If the client is not able to find the PS1 site, review any error messages that are displayed in **C:\Windows\CCM\Logs\ClientIDManagerStartup.log** and **LocationServices.log**.
-
-15. On SRV1, in the Assets and Compliance workspace, click **All Desktop and Server Clients** and verify that the computer account for PC1 is displayed here with **Yes** and **Active** in the **Client** and **Client Activity** columns, respectively. You might have to refresh the view and wait few minutes for the client to appear here.  See the following example:
-
-    ![client](images/sccm-client.png)
-
-    >It might take several minutes for the client to fully register with the site and complete a client check. When it is complete you will see a green check mark over the client icon as shown above.
 
 ### Create a device collection and deployment
 
