@@ -44,7 +44,7 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
 2. Open Windows PowerShell and enter the following command:
     
     ```
-    export-startlayout -path <path><file name>.xml
+    Export-StartLayout -path <path><file name>.xml
     ```
     In the previous command, `-path` is a required parameter that specifies the path and file name for the export file. You can specify a local path or a UNC path (for example, \\\\FileServer01\\StartLayouts\\StartLayoutMarketing.xml).
 
@@ -59,7 +59,7 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
  4. In Windows PowerShell, enter the following command:
  
     ```
-    export-StartLayoutEdgeAssets assets.xml
+    Export-StartLayoutEdgeAssets assets.xml
     ```
 
 ## Configure policy settings
