@@ -14,7 +14,7 @@ localizationpriority: high
 # Testing scenarios for Windows Information Protection (WIP)
 **Applies to:**
 
--   Windows 10, version 1607 and later
+-   Windows 10, version 1607
 -   Windows 10 Mobile
 
 We've come up with a list of suggested testing scenarios that you can use to test Windows Information Protection (WIP) in your company.
