@@ -14,9 +14,6 @@ localizationpriority: high
 -   Windows 10 Mobile, Windows Insider Program
 
 >[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
->[!IMPORTANT]
 >The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.
 
 This scenario turns on Azure AD and let's your employee use Cortana to manage an entry in the notebook.

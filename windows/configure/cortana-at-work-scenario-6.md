@@ -14,9 +14,6 @@ localizationpriority: high
 -   Windows 10 Mobile, Windows Insider Program
 
 >[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
->[!IMPORTANT]
 >The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering. For more info, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and the [Microsoft Services Agreement](https://www.microsoft.com/en-us/servicesagreement).
 
 Cortana automatically finds patterns in your email, suggesting reminders based things that you said you would do so you don’t forget about them. For example, Cortana recognizes that if you include the text, _I’ll get this to you by the end of the week_ in an email, you're making a commitment to provide something by a specific date. Cortana can now suggest that you be reminded about this event, letting you decide whether to keep it or to cancel it.

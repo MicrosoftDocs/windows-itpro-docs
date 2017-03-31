@@ -14,9 +14,6 @@ localizationpriority: high
 -   Windows 10, Windows Insider Program 
 -   Windows 10 Mobile, Windows Insider Program
 
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 ## Who is Cortana?
 Cortana is Microsoft’s personal digital assistant, who helps busy people get things done, even while at work. 
 Cortana has powerful configuration options, specifically optimized for your business. By signing in with an Azure Active Directory (Azure AD) account, your employees can give Cortana access to their enterprise/work identity, while getting all the functionality Cortana provides to them outside of work.

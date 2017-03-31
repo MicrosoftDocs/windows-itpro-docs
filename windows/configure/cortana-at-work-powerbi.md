@@ -14,9 +14,6 @@ localizationpriority: high
 -   Windows 10, Windows Insider Program 
 -   Windows 10 Mobile, Windows Insider Program
 
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 Integration between Cortana and Power BI shows how Cortana can work with custom business analytics solutions to enable you to get answers directly from your key business data, including introducing new features that let you create custom Cortana “answers” using the full capabilities of Power BI Desktop.
 
 >[!Note]

@@ -14,9 +14,6 @@ localizationpriority: high
 -   Windows 10, Windows Insider Program 
 -   Windows 10 Mobile, Windows Insider Program
 
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 We ask that you report bugs and issues. To provide feedback, you can click the **Feedback** icon in the Cortana window. When you send this form to Microsoft it also includes troubleshooting info, in case you run into problems.
 
 ![Cortana at work, showing how to provide feedback to Microsoft](images/cortana-feedback.png)

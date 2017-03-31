@@ -14,9 +14,6 @@ localizationpriority: high
 -   Windows 10, Windows Insider Program 
 -   Windows 10 Mobile, Windows Insider Program
 
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 Cortana in Windows 10 is already great at letting your employees quickly see what the day is going to look like, do meeting prep work like researching people in LinkedIn or getting documents ready, see where and when their meetings are going to be, get a sense of travel times to and from work, and even get updates from a calendar for upcoming trips.
 
 But Cortana works even harder when she connects to Office 365, helping employees to be notified about unusual events, such as meetings over lunch or during a typical commute time, and about early meetings, even setting an alarm so the employee isn’t late.
