@@ -9,11 +9,8 @@ localizationpriority: high
 
 # Test scenario 2 - Perform a quick search with Cortana at work
 
--   Windows 10, Windows Insider Program 
--   Windows 10 Mobile, Windows Insider Program
-
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+-   Windows 10, version 1703 
+-   Windows 8.1 Mobile
 
 >[!IMPORTANT]
 >The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.
