@@ -44,18 +44,12 @@ Three features enable Start and taskbar layout control:
 <span id="escape" />
 ## Prepare the Start layout XML file
 
-Before you paste the contents of the .xml file in the **Policies/Start/StartLayout** setting, you must remove all line breaks and replace markup characters with escape characters. 
+The **Export-StartLayout** cmdlet produces an XML file. Because Windows Configuration Designer produces a customizations.xml file that contains the configuration settings, adding the Start layout section to the customizations.xml file directly would result in an XML file embedded in an XML file. Before you add the Start layout section to the customizations.xml file, you must replace the markup characters in your layout.xml with escape characters. 
 
-1. In PowerShell, run the following script:
 
-    ```
-    $path="layout.xml"
-    (Get-Content $path -Raw).Replace("'r'n","") | Set-Content $path -Force
-    ```
+1. Copy the contents of layout.xml into an online tool that escapes characters.
 
-2. Copy the contents of layout.xml into an online tool that escapes characters.
-
-3. Copy the text with the escape characters and paste it in the **Polilcies/Start/StartLayout** setting in your provisioning package. 
+3. During the procedure to create a provisioning package, you will copy the text with the escape characters and paste it in the customizations.xml file for your project.  
 
 ## <a href="" id="bkmk-domaingpodeployment"></a>Create a provisioning package that contains a customized Start layout
 
@@ -69,18 +63,32 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 2. Choose **Advanced provisioning**.
 
-3.  Name your project, and click **Next**.
+3. Name your project, and click **Next**.
 
-4.  Choose **All Windows desktop editions** and click **Next**.
+4. Choose **All Windows desktop editions** and click **Next**.
 
-5.  On **New project**, click **Finish**. The workspace for your package opens.
+5. On **New project**, click **Finish**. The workspace for your package opens.
 
-6.  Expand **Runtime settings** &gt; **Policies** &gt; **Start**, and click **StartLayout**.
+6. Expand **Runtime settings** &gt; **Policies** &gt; **Start**, and click **StartLayout**.
 
-    >[!TIP]
-    >If **Start** is not listed, check the type of settings you selected in step 4. You must create the project using settings for **All Windows desktop editions**.
+   >[!TIP]
+   >If **Start** is not listed, check the type of settings you selected in step 4. You must create the project using settings for **All Windows desktop editions**.
 
-7.  Paste the text from the layout.xml file, [with line breaks removed and markup characters replaced with escape characters](#escape).
+7. Enter **layout.xml**. This value creates a placeholder in the customizations.xml file that you will replace with the contents of the layout.xml file in a later step.
+
+7. Save your project and close Windows Configuration Designer.
+
+7. In File Explorer, open the project's directory. (The default location is C:\Users\\*user name*\Documents\Windows Imaging and Configuration Designer (WICD)\\*project name*) 
+
+7. Open the customizations.xml file in a text editor. The **&lt;Customizations&gt;** section will look like this:
+
+    ![Customizations file with the placeholder text to replace highlighted](images/customization-start.png)
+
+7. Replace **layout.xml** with the text from the layout.xml file, [with markup characters replaced with escape characters](#escape).
+
+8. Save and close the customizations.xml file.
+
+8. Open Windows Configuration Designer and open your project.
 
 8.  On the **File** menu, select **Save.**
 
@@ -118,13 +126,14 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 ## Related topics
 
 
-[Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
-
-[Customize and export Start layout](customize-and-export-start-layout.md)
-
-[Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-
-[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+- [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
+- [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+- [Customize and export Start layout](customize-and-export-start-layout.md)
+- [Add image for secondary tiles](start-secondary-tiles.md)
+- [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
+- [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
+- [Customize Windows 10 Start and tasbkar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+- [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
 
  
 
