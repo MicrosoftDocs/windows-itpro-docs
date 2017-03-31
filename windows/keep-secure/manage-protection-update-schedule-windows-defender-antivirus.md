@@ -74,7 +74,7 @@ You can also randomize the times when each endpoint checks and downloads protect
 
 **Use PowerShell cmdlets to schedule protection updates:**
 
-Use the following cmdlets to enable cloud-delivered protection:
+Use the following cmdlets:
 
 ```PowerShell
 Set-MpPreference -SignatureScheduleDay
@@ -100,9 +100,13 @@ See the following for more information and allowed parameters:
 
 ## Related topics
 
+- [Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
 - [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
-- [Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)
-- [Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)
+- [Manage Windows Defender Antivirus protection and definition updates](manage-protection-updates-windows-defender-antivirus.md)
+- [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
+- [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
+- [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 
 
 

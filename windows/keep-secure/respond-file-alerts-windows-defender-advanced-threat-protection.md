@@ -1,5 +1,5 @@
 ---
-title: Take response actions on a file in Windows Defender Advanced Threat Protection
+title: Take response actions on a file in Windows Defender ATP
 description: Take response actions on file related alerts by stopping and quarantining a file or blocking a file and checking activity details.
 keywords: respond, stop and quarantine, block file, deep analysis
 search.product: eADQiWindows 10XVcnh
@@ -85,7 +85,7 @@ You can roll back and remove a file from quarantine if you’ve determined that 
   ```
   “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
   ```
-  
+
 > [!NOTE]
 > Windows Defender ATP will remove all files that were quarantined on this machine in the last 30 days.
 

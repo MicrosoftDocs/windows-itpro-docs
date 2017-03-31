@@ -17,7 +17,7 @@ Below is a list of some of the new and updated content that discusses Informatio
 For more general info about Windows 10 features, see [Features available only on Windows 10](https://www.microsoft.com/windows/features). For info about previous versions of Windows 10, see [What's New in Windows 10](index.md).
 
 >[!NOTE]
->For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info). For a list of removed features, see [Features that are removed or deprecated in Windows 10 Creators Update](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update).
+>Windows 10, version 1703 contains all fixes included in previous cumulative updates to Windows 10, version 1607. For info about each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info). For a list of removed features, see [Features that are removed or deprecated in Windows 10 Creators Update](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update). 
  
 ## Configuration
 
@@ -27,7 +27,11 @@ Previously known as *Windows Imaging and Configuration Designer (ICD)*, the tool
 
 Windows Configuration Designer in Windows 10, version 1703, includes several new wizards to make it easier to create provisioning packages.
 
-![wizards for desktop, mobile, kiosk, HoloLens, Surface Hub](images/wcd-options.png)
+![wizards for desktop, mobile, kiosk, Surface Hub](images/wcd-options.png)
+
+Both the desktop and kiosk wizards include an option to remove pre-installed software, based on the new [CleanPC configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/cleanpc-csp).
+
+![remove pre-installed software option](images/wcd-cleanpc.png)
 
 [Learn more about Windows Configuration Designer.](../configure/provisioning-packages.md)
 
@@ -54,9 +58,15 @@ The following new Group Policy and mobile device management (MDM) settings are a
 
 Enterprises have been able to apply customized Start and taskbar layouts to devices running Windows 10 Enterprise and Education. In Windows 10, version 1703, customized Start and taskbar layout can also be applied to Windows 10 Pro.
 
-Additional MDM policy settings are available for Start and taskbar layout. For details, see [Manage Windows 10 Start and taskbar layout](../configure/windows-10-start-layout-options-and-policies.md).
-
 Previously, the customized taskbar could only be deployed using Group Policy or provisioning packages. Windows 10, version 1703, adds support for customized taskbars to [MDM](../configure/customize-windows-10-start-screens-by-using-mobile-device-management.md).
+
+[Additional MDM policy settings are available for Start and taskbar layout](../configure/windows-10-start-layout-options-and-policies.md). New MDM policy settings include:
+
+- Settings for the User tile: [**Start/HideUserTile**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideusertile), [**Start/HideSwitchAccount**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideswitchaccount), [**Start/HideSignOut**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidesignout), [**Start/HideLock**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidelock), and [**Start/HideChangeAccountSettings**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidechangeaccountsettings)
+- Settings for Power: [**Start/HidePowerButton**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidepowerbutton), [**Start/HideHibernate**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidehibernate), [**Start/HideRestart**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hiderestart), [**Start/HideShutDown**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideshutdown), and [**Start/HideSleep**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidesleep)
+- Additional new settings: [**Start/HideFrequentlyUsedApps**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidefrequentlyusedapps), [**Start/HideRecentlyAddedApps**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hiderecentlyaddedapps), **AllowPinnedFolder**, **ImportEdgeAssets**, [**Start/HideRecentJumplists**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hiderecentjumplists), [**Start/NoPinningToTaskbar**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-nopinningtotaskbar), [**Settings/PageVisibilityList**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#settings-pagevisibilitylist), and [**Start/HideAppsList**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideapplist).
+
+
 
 
 ### Cortana at work
@@ -137,7 +147,7 @@ You can read more about ransomware mitigations and detection capability in Windo
 ### Device Guard and Credential Guard
 
 Additional security qualifications for Device Guard and Credential Guard help protect vulnerabilities in UEFI runtime.
-For more information, see [Device Guard Requirements](../keep-secure/requirements-and-deployment-planning-guidelines-for-device-guard.md#device-guard-requirements-for-improved-security) and [Credential Guard Security Considerations](../keep-secure/credential-guard.md#security-considerations).
+For more information, see [Device Guard Requirements](../keep-secure/requirements-and-deployment-planning-guidelines-for-device-guard.md#device-guard-requirements-for-improved-security) and [Credential Guard Security Considerations](../keep-secure/credential-guard-requirements.md#security-considerations).
 
 ### Group Policy Security Options
 
@@ -146,6 +156,16 @@ The security setting [**Interactive logon: Display user information when the ses
 A new security policy setting
 [**Interactive logon: Don't display username at sign-in**](../keep-secure/interactive-logon-dont-display-username-at-sign-in.md) has been introduced in Windows 10 version 1703. This security policy setting determines whether the username is displayed during sign in. It works in conjunction with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**. The setting only affects the **Other user** tile.
 
+### Windows Hello for Business
+
+You can now reset a forgotten PIN without deleting company managed data or apps on devices managed by [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). 
+
+For Windows Phone devices, an adminisrator is able to initiate a remote PIN reset through the Intune portal.
+
+For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**.
+
+For more details, check out [What if I forget my PIN?](../keep-secure/hello-why-pin-is-better-than-password.md#what-if-i-forget-my-pin).
+
 ## Update
 
 ### Windows Update for Business
@@ -153,6 +173,10 @@ A new security policy setting
 The pause feature has been changed, and now requires a start date to set up. Users are now able to pause through **Settings > Update & security > Windows Update > Advanced options** in case a policy has not been configured. We have also increased the pause limit on quality updates to 35 days. You can find more information on pause in [Pause Feature Updates](../update/waas-configure-wufb.md#pause-feature-updates) and [Pause Quality Updates](../update/waas-configure-wufb.md#pause-quality-updates).
 
 Windows Update for Business managed devices are now able to defer feature update installation by up to 365 days (it used to be 180 days). In settings, users are able to select their branch readiness level and update deferal periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](../update/waas-configure-wufb.md#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-quality-updates) for details.
+
+### Windows Insider for Business
+
+We recently added the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (AAD). By enrolling devices in AAD, you increase the visibility of feedback submitted by users in your organization – especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](../update/waas-windows-insider-for-business.md).
 
 ### Optimize update delivery
 
@@ -177,7 +201,9 @@ When upgrading to Windows 10, version 1703, in-box apps that were uninstalled by
 
 ### New MDM capabilities
 
-Windows 10, version 1703 adds several new [configuration service providers (CSPs)](../configure/how-it-pros-can-use-configuration-service-providers.md) that provide new capabilities for managing Windows 10 devices using MDM. Some of the new CSPs are:
+Windows 10, version 1703 adds many new [configuration service providers (CSPs)](../configure/how-it-pros-can-use-configuration-service-providers.md) that provide new capabilities for managing Windows 10 devices using MDM or provisioning packages. Among other things, these CSPs enable you to configure a few hundred of the most useful Group Policy settings via MDM - see [Policy CSP - ADMX-backed policies](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-admx-backed).
+
+Some of the other new CSPs are:
 
 - The [DynamicManagement CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dynamicmanagement-csp) allows you to manage devices differently depending on location, network, or time. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country to avoid roaming charges, or the wireless network can be disabled when the device is not within the corporate building or campus. Once configured, these settings will be enforced even if the device can’t reach the management server when the location or network changes. The Dynamic Management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs.
 
@@ -186,6 +212,11 @@ Windows 10, version 1703 adds several new [configuration service providers (CSPs
 - The [BitLocker CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/bitlocker-csp) is used to manage encryption of PCs and devices. For example, you can require storage card encryption on mobile devices, or require encryption for fixed drives and removable drives.
 
 - The [NetworkProxy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkproxy-csp) is used to configure a proxy server for ethernet and Wi-Fi connections.
+
+- The [Office CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/office-csp) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool. For more information, see [Configuration options for the Office Deployment Tool](https://technet.microsoft.com/library/jj219426.aspx).
+
+- The [EnterpriseAppVManagement CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp) is used to manage virtual applications in Windows 10 PCs (Enterprise and Education editions) and enables App-V sequenced apps to be streamed to PCs even when managed by MDM. 
+
 
 [Learn more about new MDM capabilities.](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/new-in-windows-mdm-enrollment-management#whatsnew10)
 

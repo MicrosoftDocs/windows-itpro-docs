@@ -24,6 +24,7 @@
 ### [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
 #### [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
 #### [Customize and export Start layout](customize-and-export-start-layout.md)
+#### [Add image for secondary tiles](start-secondary-tiles.md)
 #### [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
 #### [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 #### [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)

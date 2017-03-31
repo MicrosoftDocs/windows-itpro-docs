@@ -1,5 +1,5 @@
 ---
-title: Take response actions on a machine in Windows Defender Advanced Threat Protection
+title: Take response actions on a machine in Windows Defender ATP
 description: Take response actions on a machine by isolating machines, collecting an investigation package, and checking activity details.
 keywords: respond, isolate, isolate machine, collect investigation package, action center
 search.product: eADQiWindows 10XVcnh

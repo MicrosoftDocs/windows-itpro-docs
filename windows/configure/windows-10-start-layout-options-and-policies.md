@@ -102,13 +102,14 @@ The new taskbar layout for upgrades to Windows 10, version 1607 or later, will a
 ## Related topics
 
 
+- [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
 - [Customize and export Start layout](customize-and-export-start-layout.md)
+- [Add image for secondary tiles](start-secondary-tiles.md)
+- [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
 - [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-- [Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
-- [Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-- [Changes to Group Policy settings for Windows 10 Start](changes-to-start-policies-in-windows-10.md)
-
- 
+- [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+- [Customize Windows 10 Start and tasbkar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+- [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
 
  
 

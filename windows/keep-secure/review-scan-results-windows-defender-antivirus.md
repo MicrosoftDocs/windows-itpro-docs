@@ -40,7 +40,7 @@ After Windows Defender Antivirus has completed a scan, whether it is an [on-dema
 See [How to monitor Endpoint Protection status](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/monitor-endpoint-protection).
 
 
-**Use the Windows Defender Security app to review Windows Defender AV scan results:**
+**Use the Windows Defender Security Center app to review Windows Defender AV scan results:**
 
 1. Open the Windows Defender Security Center by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
@@ -87,5 +87,5 @@ See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune: Moni
 
 ## Related topics
 
-- [Customize, initiate, and review the results of Windows Defender AV scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
+- [Customize, initiate, and review the results of Windows Defender AV scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

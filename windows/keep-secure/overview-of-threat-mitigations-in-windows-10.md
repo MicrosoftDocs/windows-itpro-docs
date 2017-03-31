@@ -365,17 +365,33 @@ to Windows 10 features</strong></th>
 
 ### Converting an EMET XML settings file into Windows 10 mitigation policies
 
-One of EMET’s strengths is that it allows you to import and export configuration settings for EMET mitigations as an XML settings file, thus enabling a straightforward deployment workflow. To aid with security configuration and deployment of Windows 10 devices, you can download a set of EMET Policy Converter cmdlets. With these cmdlets, you can use an EMET XML settings file to generate mitigation policies for Windows 10.
+One of EMET’s strengths is that it allows you to import and export configuration settings for EMET mitigations as an XML settings file for straightforward deployment. To generate mitigation policies for Windows 10 from an EMET XML settings file, you can install the ProcessMitigations PowerShell module. In an elevated PowerShell session, run this cmdlet:
 
-The Converter feature is currently available as a Windows PowerShell cmdlet, **Set-ProcessMitigations -c** (instead of **-c**, you can also type **-Convert**). This cmdlet, and the Process Mitigation Management Tool collection of cmdlets, provides the following capabilities:
+```powershell
+Install-Module -Name ProcessMitigations
+```
 
--   **Converting EMET settings to Windows 10 settings**: You can run **Set-ProcessMitigations -Convert** and provide an EMET XML settings file as input, which will generate an output file of Windows 10 mitigation settings.
+The ConvertTo-ProcessMitigationPolicy cmdlet can:
 
--   **Auditing and modifying the converted settings (the output file)**: After you create the output file, you can apply and manually audit the mitigation settings by running cmdlets, through which you can Apply, Enumerate, Enable, Disable, and Save settings (see the Process Mitigation Management Tool documentation).
+-   **Convert EMET settings to Windows 10 settings**: You can run ConvertTo-ProcessMitigationPolicy and provide an EMET XML settings file as input, which will generate an output file of Windows 10 mitigation settings. For example:
+    
+    ```powershell
+    ConvertTo-ProcessMitigationPolicy -EMETfile emetpolicy.xml -output newconfiguration.xml
+    ```
 
--   **Converting Attack Surface Reduction (ASR) settings to a Code Integrity policy file**: If the input file contains any settings for EMET’s Attack Surface Reduction (ASR) mitigation, the converter will also create a Code Integrity policy file. In this case, you can complete the merging, auditing, and deployment process for the Code Integrity policy, as described in [Deploy Device Guard: deploy code integrity policies](deploy-device-guard-deploy-code-integrity-policies.md). This will enable protections on Windows 10 equivalent to EMET’s ASR protections.
+-   **Audit and modify the converted settings (the output file)**: Additional cmdlets let you apply, enumerate, enable, disable, and save settings in the output file. For example, this cmdlet enables SEHOP and disables MandatoryASLR and DEPATL registry settings for Notepad:
 
--   **Converting Certificate Trust settings to enterprise certificate pinning rules**: If you have an EMET “Certificate Trust” XML file (pinning rules file), you can also use **Set-ProcessMitigations -Convert** to convert the pinning rules file into an enterprise certificate pinning rules file. Then you can finish enabling that file as described in [Enterprise Certificate Pinning](enterprise-certificate-pinning.md).
+    ```powershell
+    Set-ProcessMitigation -Name notepad.exe -Enable SEHOP -Disable MandatoryASLR,DEPATL
+    ```
+
+-   **Convert Attack Surface Reduction (ASR) settings to a Code Integrity policy file**: If the input file contains any settings for EMET’s Attack Surface Reduction (ASR) mitigation, the converter will also create a Code Integrity policy file. In this case, you can complete the merging, auditing, and deployment process for the Code Integrity policy, as described in [Deploy Device Guard: deploy code integrity policies](deploy-device-guard-deploy-code-integrity-policies.md). This will enable protections on Windows 10 equivalent to EMET’s ASR protections.
+
+-   **Convert Certificate Trust settings to enterprise certificate pinning rules**: If you have an EMET “Certificate Trust” XML file (pinning rules file), you can also use ConvertTo-ProcessMitigationPolicy to convert the pinning rules file into an enterprise certificate pinning rules file. Then you can finish enabling that file as described in [Enterprise Certificate Pinning](enterprise-certificate-pinning.md). For example:
+
+    ```powershell
+    ConvertTo-ProcessMitigationPolicy -EMETfile certtrustrules.xml -output enterprisecertpinningrules.xml
+    ```
 
 #### EMET-related products
 

@@ -13,8 +13,8 @@ localizationpriority: high
 # Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate
 **Applies to:**
 
--   Windows 10, version 1607
--   Windows 10 Mobile
+-   Windows 10, version 1703
+-   Windows 10 Mobile, version 1703
 
 If you don’t already have an EFS DRA certificate, you’ll need to create and extract one from your system before you can use Windows Information Protection (WIP), formerly known as enterprise data protection (EDP), in your organization. For the purposes of this section, we’ll use the file name EFSDRA; however, this name can be replaced with anything that makes sense to you.
 
@@ -29,20 +29,20 @@ The recovery process included in this topic only works for desktop devices. WIP 
 
 2.	Run this command:
     
-    `cipher /r:<EFSRA>`
+    <code>cipher /r:<i>EFSRA</i></code>
     
-    Where *&lt;EFSRA&gt;* is the name of the .cer and .pfx files that you want to create.
+    Where *EFSRA* is the name of the .cer and .pfx files that you want to create.
 
 3.	When prompted, type and confirm a password to help protect your new Personal Information Exchange (.pfx) file.
 
     The EFSDRA.cer and EFSDRA.pfx files are created in the location you specified in Step 1.
 
-    >[!IMPORTANT]
+    >[!Important]
     >Because the private keys in your DRA .pfx files can be used to decrypt any WIP file, you must protect them accordingly. We highly recommend storing these files offline, keeping copies on a smart card with strong protection for normal use and master copies in a secured physical location.
 
-4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as Microsoft Intune or System Center Configuration Manager. 
+4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as Microsoft Intune or System Center Configuration Manager.
 
-    >[!NOTE]
+    >[!Note]
     >To add your EFS DRA certificate to your policy by using Microsoft Intune, see the [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) topic. To add your EFS DRA certificate to your policy by using System Center Configuration Manager, see the [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md) topic.
 
 **To verify your data recovery certificate is correctly set up on a WIP client computer**
@@ -53,9 +53,9 @@ The recovery process included in this topic only works for desktop devices. WIP 
 
 3.	Open a command prompt with elevated rights, navigate to where you stored the file you just created, and then run this command:
 
-    `cipher /c <filename>`
+    <code>cipher /c <i>file_name</i></code>
 
-    Where *&lt;filename&gt;* is the name of the file you created in Step 1.
+    Where *file_name* is the name of the file you created in Step 1.
 
 4.	Make sure that your data recovery certificate is listed in the **Recovery Certificates** list.
 
@@ -67,9 +67,9 @@ The recovery process included in this topic only works for desktop devices. WIP 
 
 3.	Open a command prompt with elevated rights, navigate to the encrypted file, and then run this command:
 
-    `cipher /d <encryptedfile.extension>`
+    <code>cipher /d <i>encryptedfile.extension</i>></code>
     
-    Where *&lt;encryptedfile.extension&gt;* is the name of your encrypted file. For example, corporatedata.docx.
+    Where *encryptedfile.extension* is the name of your encrypted file. For example, corporatedata.docx.
 
 **To quickly recover WIP-protected desktop data after unenrollment**<br>
 It's possible that you might revoke data from an unenrolled device only to later want to restore it all. This can happen in the case of a missing device being returned or if an unenrolled employee enrolls again. If the employee enrolls again using the original user profile, and the revoked key store is still on the device, all of the revoked data can be restored at once, by following these steps.
@@ -79,24 +79,50 @@ It's possible that you might revoke data from an unenrolled device only to later
 
 1. Have your employee sign in to the unenrolled device, open a command prompt, and type:
     
-    `Robocopy “%localappdata%\Microsoft\EDP\Recovery” <“new_location”> /EFSRAW`
+    <code>Robocopy “%localappdata%\Microsoft\EDP\Recovery” “<i>new_location</i>” /EFSRAW</code>
 
-    Where *&lt;”new_location”&gt;* is in a different directory. This can be on the employee’s device or on a Windows 8 or Windows Server 2012 or newer server file share that can be accessed while you're logged in as a data recovery agent.
+    Where ”*new_location*" is in a different directory. This can be on the employee’s device or on a Windows 8 or Windows Server 2012 or newer server file share that can be accessed while you're logged in as a data recovery agent.
 
 2. Sign in to a different device with administrator credentials that have access to your organization's DRA certificate, and perform the file decryption and recovery by typing:
 
-    `cipher.exe /D <“new_location”>`
+    <code>cipher.exe /D "<i>new_location</i>"</code>
 
 3. Have your employee sign in to the unenrolled device, and type:
 
-    `Robocopy <”new_location”> “%localappdata%\Microsoft\EDP\Recovery\Input”`
+    <code>Robocopy "<i>new_location</i>" “%localappdata%\Microsoft\EDP\Recovery\Input”</code>
 
 4. Ask the employee to lock and unlock the device.
 
-    The Windows Credential service automatically recovers the employee’s previously revoked keys from the `Recovery\Input` location.
+    The Windows Credential service automatically recovers the employee’s previously revoked keys from the <code>Recovery\Input</code> location.
 
->[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
+**To quickly recover WIP-protected desktop data in a cloud-based environment**<br>
+If you use a cloud environment in your organization, you may still want to restore an employee's data after revocation. While much of the process is the same as when you're not in a cloud environment, there are a couple of differences.
+
+>[!IMPORTANT]
+>To maintain control over your enterprise data, and to be able to revoke again in the future, you must only perform this process after the employee has re-enrolled the device. 
+
+1. Have your employee sign in to the device that has revoked data for you to restore, open the **Run** command (Windows logo key + R), and type one of the following commands:
+
+    - If the keys are still stored within the employee's profile, type: <code>Robocopy “%localappdata%\Microsoft\EDP\Recovery” “<i>new_location</i>” * /EFSRAW</code>
+
+    -or-
+
+    - If the employee performed a clean installation over the operating system and you need to recover the keys from the System Volume folder, type: <code>Robocopy “<i>drive_letter:</i>\System Volume Information\EDP\Recovery\” "<i>new_location</i>” * /EFSRAW></code>
+
+    >[!Important]
+    >The “*new_location*” must be in a different directory, either on the employee’s device or on a Windows 8 or Windows Server 2012 or newer server file share, which can be accessed while you're logged in as a data recovery agent.
+
+2. Sign in to a different device with administrator credentials that have access to your organization's DRA certificate private key, and perform the file decryption and recovery by typing:
+
+    <code>cipher.exe /D “<i>new_location</i>”</code>
+
+3. Have your employee sign in to the device again, open the **Run** command, and type:
+
+    <code>Robocopy “<i>new_location</i>” “%localappdata%\Microsoft\EDP\Recovery\Input”</code>
+
+4. Ask the employee to lock and unlock the device.
+
+    The Windows Credential service automatically recovers the employee’s previously revoked keys from the <code>Recovery\Input</code> location. All your company’s previously revoked files should be accessible to the employee again.
 
 ## Related topics
 - [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx)
@@ -109,5 +135,5 @@ It's possible that you might revoke data from an unenrolled device only to later
 
 - [Creating a Domain-Based Recovery Agent](https://msdn.microsoft.com/library/cc875821.aspx#EJAA)
 
-
+<p>**Note**<br>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
 

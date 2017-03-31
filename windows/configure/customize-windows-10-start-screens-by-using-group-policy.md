@@ -119,14 +119,14 @@ After you use Group Policy to apply a customized Start and taskbar layout on a c
 ## Related topics
 
 
-[Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
-
-[Customize and export Start layout](customize-and-export-start-layout.md)
-
-[Customize Windows 10 Start and taskbar with ICD and provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-
-[Customize Windows 10 Start with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
-
+- [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
+- [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
+- [Customize and export Start layout](customize-and-export-start-layout.md)
+- [Add image for secondary tiles](start-secondary-tiles.md)
+- [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
+- [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
+- [Customize Windows 10 Start and tasbkar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+- [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
  
 
  
