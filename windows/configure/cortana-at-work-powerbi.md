@@ -22,7 +22,7 @@ Integration between Cortana and Power BI shows how Cortana can work with custom 
 ## Before you begin
 To use this walkthrough, you’ll need:
 
-- **Windows 10**. You’ll need to be running at least Windows 10 with the latest version from the Windows Insider Program.
+- **Windows 10**. You’ll need to be running at least Windows 10, version 1703.
 
 - **Cortana**. You need to have Cortana turned on and be logged into your account.
 
