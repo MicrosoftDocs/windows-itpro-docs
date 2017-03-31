@@ -156,6 +156,16 @@ The security setting [**Interactive logon: Display user information when the ses
 A new security policy setting
 [**Interactive logon: Don't display username at sign-in**](../keep-secure/interactive-logon-dont-display-username-at-sign-in.md) has been introduced in Windows 10 version 1703. This security policy setting determines whether the username is displayed during sign in. It works in conjunction with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**. The setting only affects the **Other user** tile.
 
+### Windows Hello for Business
+
+You can now reset a forgotten PIN without deleting company managed data or apps on devices managed by [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). 
+
+For Windows Phone devices, an adminisrator is able to initiate a remote PIN reset through the Intune portal.
+
+For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**.
+
+For more details, check out [What if I forget my PIN?](../keep-secure/hello-why-pin-is-better-than-password.md#what-if-i-forget-my-PIN?).
+
 ## Update
 
 ### Windows Update for Business
@@ -166,7 +176,7 @@ Windows Update for Business managed devices are now able to defer feature update
 
 ### Windows Insider for Business
 
-We recently the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (AAD). By enrolling devices in AAD, you increase the visibility of feedback submitted by users in your organization – especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](waas-windows-insider-for-business.md).
+We recently the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (AAD). By enrolling devices in AAD, you increase the visibility of feedback submitted by users in your organization – especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](../update/waas-windows-insider-for-business.md).
 
 ### Optimize update delivery
 
