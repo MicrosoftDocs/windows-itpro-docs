@@ -82,8 +82,8 @@ You must create special reports, known as _Answer Pages_, to display the most co
 
 After you’ve finished creating your Answer Page, you can continue to the included testing scenarios.
 
-    >[!NOTE]
-    >It can take up to 30 minutes for a custom Answer Page to appear for Power BI and Cortana. Logging in and out of Windows 10, or otherwise restarting Cortana, causes the new content to appear immediately.
+>[!NOTE]
+>It can take up to 30 minutes for a custom Answer Page to appear for Power BI and Cortana. Logging in and out of Windows 10, or otherwise restarting Cortana, causes the new content to appear immediately.
 
 **To create a custom sales data Answer Page for Cortana**
 1.	In Power BI, click **My Workspace**, click **Create**, and then click **Report**.
