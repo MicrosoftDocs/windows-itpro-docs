@@ -136,11 +136,37 @@ You can now use this file to update the existing code integrity policy that you 
 
 > **Note**&nbsp;&nbsp;You may have noticed that you did not generate a binary version of this policy as you did in [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer). This is because code integrity policies created from an audit log are not intended to run as stand-alone policies but rather to update existing code integrity policies.
 
+## <a href="" id="plug-ins"></a>Use a code integrity policy to control specific plug-ins, add-ins, and modules
+
+As of Windows 10, version 1703, you can use code integrity policies not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps (such as a line-of-business application or a browser):
+
+| Approach (as of Windows 10, version 1703) | Guideline |
+|---|---|
+| You can work from a list of plug-ins, add-ins, or modules that you want only a specific application to be able to run. Other applications would be blocked from running them. | Use `New-CIPolicyRule` with the `-AppID` option. |
+| In addition, you can work  from a list of plug-ins, add-ins, or modules that you want to block in a specific application. Other applications would be allowed to run them. | Use `New-CIPolicyRule` with the `-AppID` and `-Deny` options. |
+
+To work with these options, the typical method is to create a policy that only affects plug-ins, add-ins, and modules, then merge it into your ‘master’ policy (merging is described in the next section).
+
+For example, to create a code integrity policy that allows **addin1.dll** and **addin2.dll** to run in **ERP1.exe**, your organization’s enterprise resource planning (ERP) application, but blocks those add-ins in other applications, run the following commands. Note that in the second command, **+=** is used to add a second rule to the **$rule** variable:
+
+```
+$rule = New-CIPolicyRule -DriverFilePath '.\temp\addin1.dll' -Level FileName -AppID '.\ERP1.exe'
+$rule += New-CIPolicyRule -DriverFilePath '.\temp\addin2.dll' -Level FileName -AppID '.\ERP1.exe'
+New-CIPolicy -Rules $rule -FilePath ".\AllowERPAddins.xml" -UserPEs
+```
+
+As another example, to create a code integrity policy that blocks **addin3.dll** from running in Microsoft Word, run the following command. You must include the `-Deny` option to block the specified add-ins in the specifed application:
+
+```
+$rule = New-CIPolicyRule -DriverFilePath '.\temp\addin3.dll' -Level FileName -Deny -AppID '.\winword.exe'
+New-CIPolicy -Rules $rule -FilePath ".\BlockAddins.xml" -UserPEs
+```
+
 ## Merge code integrity policies
 
 When you develop code integrity policies, you will occasionally need to merge two policies. A common example is when a code integrity policy is initially created and audited. Another example is when you create a single master policy by using multiple code integrity policies previously created from golden computers. Because each computer running Windows 10 can have only one code integrity policy, it is important to properly maintain these policies. In this example, audit events have been saved into a secondary code integrity policy that you then merge with the initial code integrity policy.
 
-> **Note**&nbsp;&nbsp;The following example uses the code integrity policy .xml files that you created in earlier sections in this topic. You can follow this process, however, with any two code integrity policies you would like to combine.
+> **Note**&nbsp;&nbsp;The following example uses several of the code integrity policy .xml files that you created in earlier sections in this topic. You can follow this process, however, with any two code integrity policies you would like to combine.
 
 To merge two code integrity policies, complete the following steps in an elevated Windows PowerShell session:
 

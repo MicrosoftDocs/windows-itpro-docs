@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
-author: TrudyHa
+author: jdeckerMS
 localizationpriority: medium
 ---
 
@@ -14,11 +14,9 @@ localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
-## March 2017
+## RELEASE: Windows 10, version 1703
 
-| New or changed topic | Description |
-| --- | --- |
-| [Prepare your environment for Microsoft Surface Hub](prepare-your-environment-for-surface-hub.md) | Added proxy configuration. |
+The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update).
 
 ## February 2017
 

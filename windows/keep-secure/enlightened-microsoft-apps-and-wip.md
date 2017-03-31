@@ -15,7 +15,7 @@ localizationpriority: high
 
 **Applies to:**
 
--   Windows 10, version 1607 and later
+-   Windows 10, version 1607
 -   Windows 10 Mobile
 
 Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your allowed apps list.

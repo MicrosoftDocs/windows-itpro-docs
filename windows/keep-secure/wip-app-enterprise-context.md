@@ -6,13 +6,14 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
+author: eross-msft
 localizationpriority: high
 ---
 
 # Determine the Enterprise Context of an app running in Windows Information Protection (WIP)
 **Applies to:**
 
--   Windows 10, version 1607 and later
+-   Windows 10, version 1607
 -   Windows 10 Mobile
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
@@ -45,8 +46,7 @@ The **Enterprise Context** column shows you what each app can do with your enter
 
 - **Exempt.** Shows the text, *Exempt*. WIP policies don't apply to these apps (such as, system components).
 
-    >[!IMPORTANT]
-    >Enlightened apps can change between Work and Personal, depending on the data being touched. For example, Microsoft Word 2016 shows as **Personal** when an employee opens a personal letter, but changes to **Work** when that same employee opens the company financials.
+    >**Important**<br>Enlightened apps can change between Work and Personal, depending on the data being touched. For example, Microsoft Word 2016 shows as **Personal** when an employee opens a personal letter, but changes to **Work** when that same employee opens the company financials.
 
 
 
