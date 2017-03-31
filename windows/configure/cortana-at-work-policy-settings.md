@@ -11,8 +11,11 @@ localizationpriority: high
 # Use Group Policy and mobile device management (MDM) settings to configure Cortana in your organization
 **Applies to:**
 
--   Windows 10, version 1703 
--   Windows 8.1 Mobile
+-   Windows 10, Windows Insider Program 
+-   Windows 10 Mobile, Windows Insider Program
+
+>[!IMPORTANT]
+>Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 >[!NOTE]
 >For specific info about how to set, manage, and use each of these MDM policies to configure Cortana in your enterprise, see the [Policy CSP](http://go.microsoft.com/fwlink/p/?LinkId=717380) topic, located in the configuration service provider reference topics. For specific info about how to set, manage, and use each of these Group Policies to configure Cortana in your enterprise, see the [Group Policy TechCenter](http://go.microsoft.com/fwlink/p/?LinkId=717381).

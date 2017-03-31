@@ -11,8 +11,11 @@ localizationpriority: high
 # Set up and test Cortana with Microsoft Dynamics CRM (Preview feature) in your organization
 **Applies to:**
 
--   Windows 10, version 1703
--   Windows 8.1 Mobile
+-   Windows 10, Windows Insider Program 
+-   Windows 10 Mobile, Windows Insider Program
+
+>[!IMPORTANT]
+>Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Cortana integration is a Preview feature that's available for your test or dev environment, starting with the CRM Online 2016 Update. If you decide to use this Preview feature, you'll need to turn in on and accept the license terms. After that, your salespeople will get proactive insights from Cortana on important CRM activities, including sales leads, accounts, and opportunities; presenting the most relevant info at any given time. This can even include getting company-specific news that surfaces when the person is meeting with a representative from another company.
 
