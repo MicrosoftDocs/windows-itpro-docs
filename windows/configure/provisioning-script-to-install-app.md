@@ -16,7 +16,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-This walkthrough describes how to leverage the ability to include scripts in a Windows 10 provisioning package to install Win32 applications. Scripted operations other than installing apps can also be performed, however, some care is needed in order to avoid unintended behavior during script execution (see Remarks below). 
+This walkthrough describes how to leverage the ability to include scripts in a Windows 10 provisioning package to install Win32 applications. Scripted operations other than installing apps can also be performed, however, some care is needed in order to avoid unintended behavior during script execution (see [Remarks](#remarks) below). 
 
 >**Prerequisite**: [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit), version 1511 or higher 
 

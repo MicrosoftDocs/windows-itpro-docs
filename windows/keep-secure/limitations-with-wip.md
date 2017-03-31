@@ -13,6 +13,7 @@ localizationpriority: high
 # Limitations while using Windows Information Protection (WIP)
 **Applies to:**
 
+
 -   Windows 10, version 1703
 -   Windows 10 Mobile
 

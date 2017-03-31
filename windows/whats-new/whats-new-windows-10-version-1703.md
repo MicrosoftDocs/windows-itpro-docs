@@ -147,7 +147,7 @@ You can read more about ransomware mitigations and detection capability in Windo
 ### Device Guard and Credential Guard
 
 Additional security qualifications for Device Guard and Credential Guard help protect vulnerabilities in UEFI runtime.
-For more information, see [Device Guard Requirements](../keep-secure/requirements-and-deployment-planning-guidelines-for-device-guard.md#device-guard-requirements-for-improved-security) and [Credential Guard Security Considerations](../keep-secure/credential-guard.md#security-considerations).
+For more information, see [Device Guard Requirements](../keep-secure/requirements-and-deployment-planning-guidelines-for-device-guard.md#device-guard-requirements-for-improved-security) and [Credential Guard Security Considerations](../keep-secure/credential-guard-requirements.md#security-considerations).
 
 ### Group Policy Security Options
 
