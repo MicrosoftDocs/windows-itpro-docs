@@ -13,7 +13,7 @@ localizationpriority: high
 # Create a Windows Information Protection (WIP) policy
 **Applies to:**
 
--   Windows 10, version 1607
+-   Windows 10, version 1607 and later
 -   Windows 10 Mobile
 
 Microsoft Intune and System Center Configuration Manager helps you create and deploy your enterprise data protection (WIP) policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.
