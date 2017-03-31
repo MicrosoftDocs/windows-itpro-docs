@@ -124,12 +124,11 @@ Here's the page you'll see for Minecraft: Education Edition licenses purchased t
 ![App distribution options - individual copies](images/wsfb-minecraft-vl.png)
 --->
 
-### Configure automatic subscription assignment from private store
+### Configure automatic subscription assignment
 
-When you add an app to your private store, that app is available for anyone in your organization to install. For Minecraft: Education Edition you can decide whether or not you assign a subscription when a person installs the app from the private store, or if they will continue to use the trial version. This allows you to control which people in your organization use the trial version, and which people are assigned a full subscription. You can reassign subscriptions later. Planning how to manage your subscriptions will reduce time spent managing apps and subscriptions. By default, automatic subscription assignment is turned on. 
+For Minecraft: Education Edition, you can use auto assign subscription to control whether or not you assign a subscription when a member of your organization signs in to the app. When auto assign subscription is on, people from your organization who doesn’t have a subscription will automatically get one when they sign in to Minecraft: Education Edition. When auto assign subscription is off, people from your organization will get the trial version when they sign in to Minecraft: Education Edition. This allows you to control which people use the trial version, and which people are assigned a full subscription. You can always reassign subscriptions, but planning ahead will reduce time spent managing apps and subscriptions. By default, automatic subscription assignment is turned on.
 
-
-**How to turn off automatic subscription assignment from private store**
+**How to turn off automatic subscription assignment**
 
 >[!Note]
 >The version of the Minecraft: Education Edition page in the Store for Business will be different depending on which Store for Business flight you are using. 
