@@ -191,7 +191,9 @@ When upgrading to Windows 10, version 1703, in-box apps that were uninstalled by
 
 ### New MDM capabilities
 
-Windows 10, version 1703 adds several new [configuration service providers (CSPs)](../configure/how-it-pros-can-use-configuration-service-providers.md) that provide new capabilities for managing Windows 10 devices using MDM or provisioning packages. Some of the new CSPs are:
+Windows 10, version 1703 adds many new [configuration service providers (CSPs)](../configure/how-it-pros-can-use-configuration-service-providers.md) that provide new capabilities for managing Windows 10 devices using MDM or provisioning packages. Among other things, these CSPs enable you to configure a few hundred of the most useful Group Policy settings via MDM - see [Policy CSP - ADMX-backed policies](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-admx-backed).
+
+Some of the other new CSPs are:
 
 - The [DynamicManagement CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dynamicmanagement-csp) allows you to manage devices differently depending on location, network, or time. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country to avoid roaming charges, or the wireless network can be disabled when the device is not within the corporate building or campus. Once configured, these settings will be enforced even if the device can’t reach the management server when the location or network changes. The Dynamic Management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs.
 
@@ -204,6 +206,7 @@ Windows 10, version 1703 adds several new [configuration service providers (CSPs
 - The [Office CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/office-csp) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool. For more information, see [Configuration options for the Office Deployment Tool](https://technet.microsoft.com/library/jj219426.aspx).
 
 - The [EnterpriseAppVManagement CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseappvmanagement-csp) is used to manage virtual applications in Windows 10 PCs (Enterprise and Education editions) and enables App-V sequenced apps to be streamed to PCs even when managed by MDM. 
+
 
 [Learn more about new MDM capabilities.](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/new-in-windows-mdm-enrollment-management#whatsnew10)
 
