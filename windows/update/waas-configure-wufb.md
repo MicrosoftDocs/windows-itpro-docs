@@ -241,12 +241,6 @@ In the Windows Update for Business policies in version 1511, all the deferral ru
 <tbody><tr><td valign="top">**RequireDeferUpgade**: *bool*</br>Puts the device on CBB (no ability to defer updates while on the CB branch).</br></br>**DeferUpgradePeriod**: *0 - 8 months*</br></br>**DeferUpdatePeriod**: *1 – 4 weeks*</br></br>**PauseDeferrals**: *bool*</br>Enabling will pause both upgrades and updates for a max of 35 days</br></td><td>**BranchReadinessLevel**</br>Set system on CB or CBB</br></br>**DeferFeatureUpdatesPeriodinDays**: *1 - 180 days*</br></br>**PauseFeatureUpdates**: *enable/disable*</br>Enabling will pause Feature updates for a max of 60 days</br></br>**DeferQualityUpdatesPeriodinDays**: *0 - 35 days*</br></br>**PauseQualityUpdates**: *enable/disable*</br>Enabling will pause Quality updates for a max of 35 days</br></br>**ExcludeWUDriversInQualityUpdate**: *enable/disable*</br></td></tr>
 </tbody></table>
 
-<!-- Future transition to markdown table
-MDM keys
-| Version 1511 MDM keys | Version 1607 MDM keys |
-| --- | --- |
-| **RequireDeferUpgade**: *bool*</br>  Puts the device on CBB (no ability to defer updates while on the CB branch).</br></br>**DeferUpgradePeriod**: *0 - 8 months*</br></br>**DeferUpdatePeriod**: *1 – 4 weeks*</br></br>**PauseDeferrals**: *bool*</br>  Enabling will pause both upgrades and updates for a max of 35 days | **BranchReadinessLevel**</br>  Set system on CB or CBB</br></br>**DeferFeatureUpdatesPeriodinDays**: *1 - 180 days*</br></br>**PauseFeatureUpdates**: *enable/disable*</br>  Enabling will pause Feature updates for a max of 60 days</br></br>**DeferQualityUpdatesPeriodinDays**: *0 - 35 days*</br></br>**PauseQualityUpdates**: *enable/disable*</br>  Enabling will pause Quality updates for a max of 35 days</br></br>**ExcludeWUDriversInQualityUpdate**: *enable/disable* |  -->
-
 ### Comparing the version 1607 keys to the version 1703 keys
 
 | Version 1607 key | Version 1703 key |
