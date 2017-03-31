@@ -11,11 +11,8 @@ localizationpriority: high
 # Set up and test Cortana for Power BI in your organization
 **Applies to:**
 
--   Windows 10, Windows Insider Program 
--   Windows 10 Mobile, Windows Insider Program
-
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+-   Windows 10, version 1703 
+-   Windows 8.1 Mobile
 
 Integration between Cortana and Power BI shows how Cortana can work with custom business analytics solutions to enable you to get answers directly from your key business data, including introducing new features that let you create custom Cortana “answers” using the full capabilities of Power BI Desktop.
 
@@ -25,7 +22,7 @@ Integration between Cortana and Power BI shows how Cortana can work with custom 
 ## Before you begin
 To use this walkthrough, you’ll need:
 
-- **Windows 10**. You’ll need to be running at least Windows 10 with the latest version from the Windows Insider Program.
+- **Windows 10**. You’ll need to be running at least Windows 10, version 1703.
 
 - **Cortana**. You need to have Cortana turned on and be logged into your account.
 

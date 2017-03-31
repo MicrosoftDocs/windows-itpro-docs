@@ -11,11 +11,8 @@ localizationpriority: high
 # Send feedback about Cortana at work back to Microsoft
 **Applies to:**
 
--   Windows 10, Windows Insider Program 
--   Windows 10 Mobile, Windows Insider Program
-
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+-   Windows 10, version 1703
+-   Windows 8.1 Mobile
 
 We ask that you report bugs and issues. To provide feedback, you can click the **Feedback** icon in the Cortana window. When you send this form to Microsoft it also includes troubleshooting info, in case you run into problems.
 

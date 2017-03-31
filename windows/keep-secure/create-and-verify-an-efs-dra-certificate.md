@@ -13,6 +13,7 @@ localizationpriority: high
 # Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate
 **Applies to:**
 
+
 -   Windows 10, version 1703
 -   Windows 10 Mobile
 
