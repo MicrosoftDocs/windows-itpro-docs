@@ -54,16 +54,42 @@ You can provide additional protection for laptops that don't have TPM by enablng
 **Configure BitLocker without TPM**
 1.  Use the Local Group Policy Editor (gpedit.msc) to enable the following policy:
 
-    **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **BitLocker Drive Encryption** &gt; **Operating System Drives** &gt; **Require additional authentication at startup**
+    **Computer Configuration > Administrative Templates > Windows Components > BitLocker Drive Encryption > Operating System Drives > Require additional authentication at startup**
     
 2.  In the policy option, select **Allow BitLocker without a compatible TPM**, and then click **OK.**
-3.  Go to Control Panel &gt; **System and Security** &gt; **BitLocker Drive Encryption** and select the operating system drive to protect.
+3.  Go to Control Panel > **System and Security > BitLocker Drive Encryption** and select the operating system drive to protect.
 **Set account lockout threshold**
 1.  Use the Local Group Policy Editor (gpedit.msc) to enable the following policy:
 
-    **Computer Configuration** &gt;**Windows Settings** ?**Security Settings** &gt;**Account Policies** &gt; **Account Lockout Policy** &gt; **Account lockout threshold**
+    **Computer Configuration > Windows Settings > Security Settings > Account Policies > Account Lockout Policy > Account lockout threshold**
     
 2.  Set the number of invalid logon attempts to allow, and then click OK.
+
+## What if I forget my PIN?
+
+Starting with Windows 10, version 1703, devices managed by [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune), are be able to reset a forgotten PIN without deleting company managed data or apps.
+
+### Reset forgotten PIN on Windows Phone
+
+To reset a forgotten pin on a Windows Phone, you will need to locate the device in the Intune portal. Once you've selected the device, click on **More > New passcode** to generate a new PIN. 
+
+![Intune reset PIN drop-down menu](images/whfb-intune-reset-pin.jpg)
+
+Once you've done that, the device will receive a notification to unlock the device and you will have to provide them with the generated PIN in order to unlock the device. With the device unlocked, they user can now reset the PIN.
+
+![Phone unlock notification](images/whfb-pin-reset-phone-notification.png)
+
+### Reset forgotten PIN on desktop
+
+Users can reset a forgotten PIN from any Intune managed desktop device. They will need to unlock the device by other means (Password \ Smart Card \ Biometric).
+
+Once the device is unlocked, go to **Settings > Accounts > Sign-in options** and under **PIN** select **I forgot my PIN**.
+
+![Forgot my PIN in settings](images/whfb-reset-pin-settings.jpg)
+
+After signing-in, you will be prompted to change your PIN.
+
+![Reset PIN prompt](images/whfb-reset-pin-prompt.jpg)
 
 ## Why do you need a PIN to use biometrics?
 Windows Hello enables biometric sign-in for Windows 10: fingerprint, iris, or facial recognition. When you set up Windows Hello, you're asked to create a PIN first. This PIN enables you to sign in using the PIN when you can’t use your preferred biometric because of an injury or because the sensor is unavailable or not working properly.
