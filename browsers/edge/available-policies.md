@@ -13,8 +13,8 @@ localizationpriority: high
 
 **Applies to:**
 
-- Windows 10, Windows Insider Program 
-- Windows 10 Mobile, Windows Insider Program
+- Windows 10
+- Windows 10 Mobile
 
 Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPO's) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
 
@@ -27,7 +27,7 @@ By using Group Policy and Intune, you can set up a policy setting once, and then
 Microsoft Edge works with these Group Policy settings (`Computer Configuration\Administrative Templates\Windows Components\Microsoft Edge\`) to help you manage your company's web browser configurations:
 
 ### Allow Address bar drop-down list suggestions
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Description:** This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.
 
@@ -48,7 +48,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you disable this setting, employees can't use Adobe Flash.
 
 ### Allow clearing browsing data on exit
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Description:** This policy setting allows the automatic clearing of browsing data when Microsoft Edge closes.
 
@@ -92,7 +92,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you disable this setting, the Microsoft Compatibility List isn’t used during browser navigation.
 
 ### Allow search engine customization
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Description:** This policy setting lets you decide whether users can change their search engine.
 
@@ -115,7 +115,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you don’t configure this setting (default), employees can choose how new tabs appears.
 
 ### Configure additional search engines
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Description:** This policy setting lets you add up to 5 additional search engines, which can't be removed by your employees, but can be made a personal default engine. This setting doesn't set the default search engine. For that, you must use the "Set default search engine" setting.
 
@@ -222,7 +222,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you disable or don’t configure this setting (default), your default Start page is the webpage specified in App settings.
 
 ### Configure the Adobe Flash Click-to-Run setting
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Description:** This policy setting lets you decide whether employees must take an action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash.
 
@@ -258,7 +258,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you don’t configure this setting (default), employees can choose whether to use Windows Defender SmartScreen.
 
 ### Disable lockdown of Start pages
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Description:** This policy setting lets you disable the lock down of Start pages, letting employees modify the Start pages when the "Configure Start pages" setting is in effect.
 
@@ -270,7 +270,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you disable or don't configure this setting (default), employees can't change any Start pages configured using the "Configure Start pages" setting, thereby locking down the Start pages.
 
 ### Keep favorites in sync between Internet Explorer and Microsoft Edge
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Description:** This setting lets you decide whether people can sync their favorites between Internet Explorer and Microsoft Edge.
 
@@ -306,7 +306,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you disable or don’t configure this setting (default), employees can ignore Windows Defender SmartScreen warnings and continue to the site.
 
 ### Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Description:** This policy lets you decide whether Microsoft Edge can gather Live Tile metadata from the ieonline.microsoft.com service to provide a better experience while pinning a Live Tile to the Start menu.
 
@@ -315,7 +315,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you disable or don't configure this setting (default), Microsoft Edge gathers the Live Tile metadata, providing a fuller and more complete experience when a user pins a Live Tile to the Start menu.
 
 ### Prevent the First Run webpage from opening on Microsoft Edge
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Description:** This policy setting lets you decide whether employees see Microsoft's First Run webpage when opening Microsoft Edge for the first time.
 
@@ -342,7 +342,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     - If you disable or don’t configure this setting (default), all websites, including intranet sites, are automatically opened using Microsoft Edge.
 
 ### Set default search engine
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Description:** This policy setting lets you configure the default search engine for your employees. Employees can change the default search engine at any time unless you disable the "Allow search engine customization" setting, which restricts any changes.
 
@@ -379,7 +379,7 @@ If you manage your policies using Intune, you'll want to use these MDM policy se
 All devices must be enrolled with Intune if you want to use the Windows Custom URI Policy.
 
 ### AllowAddressBarDropdown
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Supported devices:** Desktop
 
@@ -517,7 +517,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1 (default).** Allowed. Employees can use Adobe Flash.    
 
 ### AllowFlashClickToRun
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Supported devices:** Desktop|
 
@@ -551,7 +551,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1 (default).** Employees can use InPrivate browsing.
 
 ### AllowMicrosoftCompatibilityList
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Supported devices:** Both
 
@@ -602,7 +602,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1.** Turns on Pop-up Blocker, stopping pop-up windows. 
 
 ### AllowSearchEngineCustomization
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Supported devices:** Both
 
@@ -654,7 +654,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1.** Turns on Windows Defender SmartScreen, providing warning messages to your employees about potential phishing scams and malicious software.
 
 ### ClearBrowsingDataOnExit
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Supported devices:** Both
 
@@ -671,7 +671,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1.** Browsing data is cleared on exit.
 
 ### ConfigureAdditionalSearchEngines
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Supported devices:** Both
 
@@ -688,7 +688,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1.**  Additional search engines are allowed.
 
 ### DisableLockdownOfStartPages
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Supported devices:** Desktop
 
@@ -804,7 +804,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1.** Employees can't access the about:flags page in Microsoft Edge.
 
 ### PreventFirstRunPage
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Supported devices:** Both
 
@@ -821,7 +821,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1.** Employees don't see the First Run webpage.
 
 ### PreventLiveTileDataCollection
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Supported devices:** Both
 
@@ -906,7 +906,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1.** Automatically opens all intranet sites using Internet Explorer 11.
 
 ### SetDefaultSearchEngine
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Supported devices:** Both
 
@@ -940,7 +940,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
         - **1.** Shows an additional page in Microsoft Edge, stating that a site has been opened using Internet Explorer 11.
 
 ### SyncFavoritesBetweenIEAndMicrosoftEdge
-- **Supported versions:** Windows 10, Windows Insider Program
+- **Supported versions:** Windows 10, version 1703
 
 - **Supported devices:** Desktop
 

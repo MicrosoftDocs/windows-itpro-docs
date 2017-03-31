@@ -11,8 +11,8 @@ localizationpriority: high
 # Set up and test Cortana with Office 365 in your organization
 **Applies to:**
 
--   Windows 10, Windows Insider Program 
--   Windows 10 Mobile, Windows Insider Program
+-   Windows 10, version 1703
+-   Windows 10 Mobile, version 1703
 
 Cortana in Windows 10 is already great at letting your employees quickly see what the day is going to look like, do meeting prep work like researching people in LinkedIn or getting documents ready, see where and when their meetings are going to be, get a sense of travel times to and from work, and even get updates from a calendar for upcoming trips.
 

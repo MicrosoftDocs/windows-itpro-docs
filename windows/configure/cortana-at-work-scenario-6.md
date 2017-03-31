@@ -10,8 +10,8 @@ localizationpriority: high
 
 # Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email
 
--   Windows 10, Windows Insider Program 
--   Windows 10 Mobile, Windows Insider Program
+-   Windows 10, version 1703
+-   Windows 10 Mobile, version 1703
 
 >[!IMPORTANT]
 >The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering. For more info, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and the [Microsoft Services Agreement](https://www.microsoft.com/en-us/servicesagreement).

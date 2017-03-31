@@ -10,8 +10,8 @@ localizationpriority: high
 
 # Test scenario 7 - Use Cortana and Windows Information Protection (WIP) to help protect your organization’s data on a device
 
--   Windows 10, Windows Insider Program 
--   Windows 10 Mobile, Windows Insider Program
+-   Windows 10, version 1703
+-   Windows 10 Mobile, version 1703
 
 >[!IMPORTANT]
 >The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.

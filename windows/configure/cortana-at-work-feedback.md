@@ -11,8 +11,8 @@ localizationpriority: high
 # Send feedback about Cortana at work back to Microsoft
 **Applies to:**
 
--   Windows 10, Windows Insider Program 
--   Windows 10 Mobile, Windows Insider Program
+-   Windows 10, version 1703
+-   Windows 10 Mobile, version 1703
 
 We ask that you report bugs and issues. To provide feedback, you can click the **Feedback** icon in the Cortana window. When you send this form to Microsoft it also includes troubleshooting info, in case you run into problems.
 
