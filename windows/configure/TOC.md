@@ -36,7 +36,7 @@
 #### [Test scenario 3 - Set a reminder for a specific location using Cortana at work](cortana-at-work-scenario-3.md)
 #### [Test scenario 4 - Use Cortana at work to find your upcoming meetings](cortana-at-work-scenario-4.md)
 #### [Test scenario 5 - Use Cortana to send email to a co-worker](cortana-at-work-scenario-5.md)
-#### [Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email}(cortana-at-work-scenario-6.md)
+#### [Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email](cortana-at-work-scenario-6.md)
 #### [Test scenario 7 - Use Cortana and Windows Information Protection (WIP) to help protect your organization’s data on a device](cortana-at-work-scenario-7.md)
 ### [Set up and test Cortana with Office 365 in your organization](cortana-at-work-o365.md)
 ### [Set up and test Cortana with Microsoft Dynamics CRM (Preview feature) in your organization](cortana-at-work-crm.md)
