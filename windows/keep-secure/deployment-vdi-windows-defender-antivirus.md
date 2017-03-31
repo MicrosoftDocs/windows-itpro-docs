@@ -203,7 +203,7 @@ Quick scans are the preferred approach as they are designed to look in all place
 
 See [How to create and deploy antimalware policies: Scheduled scans settings]( https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) for details on configuring System Center Configuration Manager (current branch).
 
-See [Schedule scans](schedule-scans-windows-defender-antivirus.md) for other configuration options available for scheduled scans.
+See [Schedule scans](scheduled-catch-up-scans-windows-defender-antivirus.md) for other configuration options available for scheduled scans.
 
 ### Prevent notifications
 
