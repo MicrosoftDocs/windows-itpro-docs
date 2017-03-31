@@ -2,7 +2,8 @@
 title: Windows Defender AV event IDs and error codes
 description: Look up the causes and solutions for Windows Defender Antivirus event IDs and errors
 keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
-ms.assetid: EE488CC1-E340-4D47-B50B-35BD23CB4D70
+search.product: eADQiWindows 10XVcnh
+ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

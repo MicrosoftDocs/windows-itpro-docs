@@ -1,5 +1,5 @@
 ---
-title: Configure and validate exclusions for files opened by specific processes
+title: Configure exclusions for files opened by specific processes
 description: You can exclude files from scans if they have been opened by a specific process.
 keywords: process, exclusion, files, scans
 search.product: eADQiWindows 10XVcnh
@@ -12,7 +12,7 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Configure and validate exclusions for files opened by processes
+# Configure exclusions for files opened by processes
 
 **Applies to:**
 
@@ -34,11 +34,19 @@ author: iaanw
 
 You can exclude files that have been opened by specific processes from being scanned by Windows Defender AV. 
 
-For example, you may need to exclude any file that is opened by the process *c:\internal\test.exe*. 
+This topic describes how to configure exclusion lists for the following:
 
-You achieve this by adding the location and name of the process to the process exclusion list. When you add a process to the process exclusion list, Windows Defender AV will not scan files opened by that process, no matter where the files are located. The process itself, however, will be scanned unless it has also been added to the [file exclusion list](configure-extension-file-exclusions-windows-defender-antivirus.md).
+<a id="examples"></a>
 
-The exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md), [on-demand scans](run-scan-windows-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md).
+Exclusion | Example 
+---|---
+Any file on the machine that is opened by any process with a specific file name | Specifying "test.exe" would exclude files opened by: <ul><li>c:\sample\test.exe</li><li>d:\internal\files\test.exe</li></ul>  
+Any file on the machine that is opened by any process under a specific folder | Specifying "c:\test\sample\\*" would exclude files opened by:<ul><li>c:\test\sample\test.exe</li><li>c:\test\sample\test2.exe</li><li>c:\test\sample\utility.exe</li></ul> 
+Any file on the machine that is opened by a specific process in a specific folder | Specifying "c:\test\process.exe" would exclude files only opened by c:\test\process.exe
+
+When you add a process to the process exclusion list, Windows Defender AV will not scan files opened by that process, no matter where the files are located. The process itself, however, will be scanned unless it has also been added to the [file exclusion list](configure-extension-file-exclusions-windows-defender-antivirus.md).
+
+The exclusions only apply to [always-on real-time protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md). They do not apply to scheduled or on-demand scans.
 
 Changes made via Group Policy to the exclusion lists **will show** in the lists in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions). However, changes made in the Windows Defender Security Center app **will not show** in the Group Policy lists.
 
@@ -47,18 +55,16 @@ You can add, remove, and review the lists for exclusions in [Group Policy](#gp),
 You can also [use PowerShell cmdlets and WMI to configure the exclusion lists](#ps), including [reviewing](#review) your lists. 
 
 
-By default, local changes made to the lists (by users with administrator privileges) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, Intune, PowerShell, or WMI. The Group Policy lists will take precedence in the case of conflicts. You can [configure how locally and globally defined exclusions lists are merged](configure-local-policy-overrides-windows-defender-antivirus.md#merge-lists) to disable this setting.
+By default, local changes made to the lists (by users with administrator privileges; this includes changes made with PowerShell and WMI) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists will take precedence in the case of conflicts. 
+
+You can [configure how locally and globally defined exclusions lists are merged](configure-local-policy-overrides-windows-defender-antivirus.md#merge-lists) to allow local changes to override managed deployment settings.
+
 
 ## Configure the list of exclusions for files opened by specified processes
 
 
 <a id="gp"></a>
-**Use Group Policy to exclude files that have been used or modified by specified processes from scans:**
-
->[!NOTE] 
->You can exclude files that are opened by specified processes from being scanned. The specified process won't be excluded - but any files that are opened by that process (regardless of where they are or what they are named) will be excluded. If you need to exclude the process itself, [exclude it as a file](#exclude-paths-files).  
->You can only exclude files modified by processes if the process is an executable.  
-
+**Use Group Policy to exclude files that have been opened by specified processes from scans:**
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -73,7 +79,7 @@ By default, local changes made to the lists (by users with administrator privile
 
     1. Set the option to **Enabled**. 
     2. Under the **Options** section, click **Show...**
-    3. Enter each process on its own line under the **Value name** column. Ensure you enter a fully qualified path to the process, including the drive letter, folder path, filename, and extension. The process must be an executable. Enter **0** in the **Value** column for all processes.
+    3. Enter each process on its own line under the **Value name** column. See the [example table](#examples) for the different types of process exclusions.  Enter **0** in the **Value** column for all processes.
 
 7. Click **OK**. 
 
@@ -81,14 +87,14 @@ By default, local changes made to the lists (by users with administrator privile
 
 
 <a id="ps"></a>
-**Use PowerShell cmdlets to configure file name, folder, or file extension exclusions:**
+**Use PowerShell cmdlets to exclude files that have been opened by specified processes from scans:**
 
-Using PowerShell to add or remove exclusions for files based on the extension, location, or file name requires using a combination of three cmdlets with the `-ExclusionProcess' parameter. The cmdlets are all in the [Defender module](https://technet.microsoft.com/en-us/itpro/powershell/windows/defender/defender).
+Using PowerShell to add or remove exclusions for files that have been opened by processes requires using a combination of three cmdlets with the `-ExclusionProcess' parameter. The cmdlets are all in the [Defender module](https://technet.microsoft.com/en-us/itpro/powershell/windows/defender/defender).
 
 The format for the cmdlets is:
 
 ```PowerShell
-<cmdlet> -ExclusionProcess "<item1>, <item2>, <item3>"
+<cmdlet> -ExclusionProcess "<item>"
 ```
 
 The following are allowed as the \<cmdlet>:
@@ -104,18 +110,17 @@ Remove items from the list | `Remove-MpPreference`
 >If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list. 
 
 
-For example, the following code snippet would cause Windows Defender AV scans to exclude any file that is opened by the defined processes. This exclusion will apply to any file that is opened by the processes that are in the specified folder:
+For example, the following code snippet would cause Windows Defender AV scans to exclude any file that is opened by the specified process:
 
 ```PowerShell
-Add-MpPreference -ExclusionProcess "c:\internal\test.exe, d:\org\ui\compile43-h.exe"
+Add-MpPreference -ExclusionProcess "c:\internal\test.exe"
 ```
 
-For example, files opened by the process *c:\outside\test.exe* will not be excluded. This is the because the opening process is located in a different folder ("outside" instead of "internal"), even though the process's file name is the same.
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 
-**Use Windows Management Instruction (WMI) to configure file name, folder, or file extension exclusions:**
+**Use Windows Management Instruction (WMI) to exclude files that have been opened by specified processes from scans:**
 
 Use the [ **Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
 
@@ -129,37 +134,37 @@ See the following for more information and allowed parameters:
 - [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/en-us/library/dn439477(v=vs.85).aspx)
 
 <a id="man-tools"></a>
-**Use Configuration Manager to configure file name, folder, or file extension exclusions:**
+**Use Configuration Manager to exclude files that have been opened by specified processes from scans:**
 
 See [How to create and deploy antimalware policies: Exclusion settings](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring System Center Configuration Manager (current branch).
 
 
-**Use Microsoft Intune to configure file name, folder, or file extension exclusions:**
+**Use Microsoft Intune to exclude files that have been opened by specified processes from scans:**
 
 
 See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) and [Windows Defender policy settings in Windows 10](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune#windows-defender-1) for more details.
 
 
-**Use the Windows Defender Security Center app to configure file name, folder, or file extension exclusions:**
+**Use the Windows Defender Security Center app to exclude files that have been opened by specified processes from scans:**
 
 See [Add exclusions in the Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions) for instructions.
 
 
 
 <a id="wildcards"></a>
-## Use wildcards in the file name and folder path or extension exclusion lists
+## Use wildcards in the process exclusion list
 
 The use of wildcards in the process exclusion list is different from their use in other exclusion lists.
 
-In particular, you cannot use the question mark **?** wilcard, and the asterisk **\*** wildcard can only be used at the end of a complete path. You can still use environment variables (such as %APPDATA%) as wildcards when defining items in the process exclusion list.
+In particular, you cannot use the question mark ? wildcard, and the asterisk \* wildcard can only be used at the end of a complete path. You can still use environment variables (such as %ALLUSERSPROFILE%) as wildcards when defining items in the process exclusion list.
 
 The following table describes how the wildcards can be used in the process exclusion list:
 
 Wildcard | Use | Example use | Example matches
 ---|---|---|---
-**\*** (asterisk) | Replaces any number of chararacters | <ul><li>C:\MyData\*</li></ul> | <ul><li>Any file opened by C:\MyData\file.exe</li></ul>
-**?** (question mark) | Not available | \- | \-
-Environment variables | The defined variable will be populated as a path when the exclusion is evaluated |  <ul><li>%ALLUSERSPROFILE%\CustomLogFiles\file.exe</li><li>%APPDATA%\Data\file.exe</li></ul> | <ul><li>Any file opened by C:\ProgramData\CustomLogFiles\file.exe</li><li>Any file opened by C:\Users\username\AppData\Roaming\Data\file.exe</li></ul>
+\* (asterisk) | Replaces any number of characters | <ul><li>C:\MyData\\*</li></ul> | <ul><li>Any file opened by C:\MyData\file.exe</li></ul>
+? (question mark) | Not available | \- | \-
+Environment variables | The defined variable will be populated as a path when the exclusion is evaluated |  <ul><li>%ALLUSERSPROFILE%\CustomLogFiles\file.exe</li></ul> | <ul><li>Any file opened by C:\ProgramData\CustomLogFiles\file.exe</li></ul>
 
 
 
@@ -207,6 +212,6 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 - [Configure and validate exclusions in Windows Defender AV scans](configure-exclusions-windows-defender-antivirus.md)
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-windows-defender-antivirus.md)
-- [Configure exclusions in Windows Defender AV on Windows Servery](configure-server-exclusions-windows-defender-antivirus.md)
+- [Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-windows-defender-antivirus.md)
 - [Customize, initiate, and review the results of Windows Defender AV scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
