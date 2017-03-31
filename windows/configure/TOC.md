@@ -32,7 +32,7 @@
 ## [Cortana integration in your business or enterprise](cortana-at-work-overview.md)
 ### [Testing scenarios using Cortana in your business or organization](cortana-at-work-testing-scenarios.md)
 #### [Test scenario 1 - Sign-in to Azure AD and use Cortana to manage the notebook](cortana-at-work-scenario-1.md)
-#### [Test scenario 2 - Test scenario 2 - Perform a quick search with Cortana at work](cortana-at-work-scenario-2.md)
+#### [Test scenario 2 - Perform a quick search with Cortana at work](cortana-at-work-scenario-2.md)
 #### [Test scenario 3 - Set a reminder for a specific location using Cortana at work](cortana-at-work-scenario-3.md)
 #### [Test scenario 4 - Use Cortana at work to find your upcoming meetings](cortana-at-work-scenario-4.md)
 #### [Test scenario 5 - Use Cortana to send email to a co-worker](cortana-at-work-scenario-5.md)
