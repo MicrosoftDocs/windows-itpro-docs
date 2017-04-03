@@ -53,9 +53,9 @@ The recovery process included in this topic only works for desktop devices. WIP 
 
 3.	Open a command prompt with elevated rights, navigate to where you stored the file you just created, and then run this command:
 
-    <code>cipher /c <i>file_name</i></code>
+    <code>cipher /c <i>filename</i></code>
 
-    Where *file_name* is the name of the file you created in Step 1.
+    Where *filename* is the name of the file you created in Step 1.
 
 4.	Make sure that your data recovery certificate is listed in the **Recovery Certificates** list.
 
@@ -67,7 +67,7 @@ The recovery process included in this topic only works for desktop devices. WIP 
 
 3.	Open a command prompt with elevated rights, navigate to the encrypted file, and then run this command:
 
-    <code>cipher /d <i>encryptedfile.extension</i>></code>
+    <code>cipher /d <i>encryptedfile.extension</i></code>
     
     Where *encryptedfile.extension* is the name of your encrypted file. For example, corporatedata.docx.
 
