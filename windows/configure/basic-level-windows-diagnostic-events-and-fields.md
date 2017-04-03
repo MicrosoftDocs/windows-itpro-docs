@@ -177,7 +177,6 @@ These fields are added whenever Ms.Device.DeviceInventoryChange is included in t
 The following fields are available:
 
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
-- **objectInstanceId**  Object identity used within the device scope. This is commonly going to be ProgramId, FileId or DeviceInstancePathId but is typically something unique to the objectType and in some cases is artificially created.
 - **objectType**  Indicates the object type that the event applies to.
 - **Action**  The change that was invoked on a device inventory object.
 - **inventoryId**  Device ID used for Compatibility testing
@@ -307,27 +306,14 @@ This event sends compatibility information about a file to help keep Windows up-
 
 The following fields are available:
 
-- **objectInstanceId**  A hash of the full file path including the file name.
 - **AppraiserVersion**  The version of the appraiser file that is generating the events.
-- **AvDisplayName**  If it is an anti-virus app, this is the the display name for the app.  Example: System Center Endpoint Protection
+- **AvDisplayName**  If it is an anti-virus app, this is its display name.
 - **CompatModelIndex**  The compatibility prediction for this file.
 - **HasCitData**  Is the file present in CIT data?
 - **HasUpgradeExe**  Does the anti-virus app have an upgrade.exe file?
 - **IsAv**  Is the file an anti-virus reporting EXE?
 - **ResolveAttempted**  This will always be an empty string when sending telemetry.
 - **SdbEntries**  An array of fields that indicates the SDB entries that apply to this file.
-- **SdbEntries_item_MigShimCommand**  The command line to be passed to the MigShim if one is applicable.
-- **SdbEntries_item_MigShimName**  Example: DevenvDotnetCacheRebuildShim
-- **SdbEntries_item_MigXmlName**  Example: MicrosoftForefrontEndpointProtection__4_6__PART
-- **SdbEntries_item_MigXmlType**  Example: MIG_XML_TYPE_REMOVED
-- **SdbEntries_item_ReinstallUpgradeMessage**  Example: Resource: 10022
-- **SdbEntries_item_SdbAppGuid**  Example: {551f8360-14dd-4ea5-bd29-74b0c21abfde}
-- **SdbEntries_item_SdbAppName**  Example: Visual Studio
-- **SdbEntries_item_SdbAppVendor**  Example: Microsoft
-- **SdbEntries_item_SdbBlockType**  Example: ReinstallAfterUpgradeInfo
-- **SdbEntries_item_SdbEntryGuid**  Example: {84e92468-a463-4c02-93a6-20171694b8a8}
-- **SdbEntries_item_SdbUpgradeMode**  Example: Swap
-- **SdbEntries_item_SdbUxBlocktypeOverride**  Example: SDB_UX_BLOCKTYPE_OVERRIDE_MIG_FIXED
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileRemove
@@ -354,7 +340,6 @@ This event sends compatibility data for a PNP device, to help keep Windows up-to
 
 The following fields are available:
 
-- **objectInstanceId**  The Device Instance ID of the device (uniquely identifies a device in the system). Example: pci\ven_8086&dev_0085&subsys_13118086&rev_34\4&2dded11c&0&00e1
 - **AppraiserVersion**  The version of the appraiser file generating the events.
 - **ActiveNetworkConnection**  Is the device an active network device?
 - **CosDeviceRating**  An enumeration that indicates if there is a driver on the target operating system.
@@ -363,13 +348,6 @@ The following fields are available:
 - **CosPopulatedFromId**  The expected uplevel driver matching ID based on driver coverage data.
 - **IsBootCritical**  Is the device boot critical?
 - **SdbEntries**  An array of fields indicating the SDB entries that apply to this device.
-- **SdbEntries_item_SdbAppGuid**  Example: {0ba2f09d-5288-45fa-be32-001857cc020f}
-- **SdbEntries_item_SdbAppName**  Example: Virtual Machine Manager Self-Service Client
-- **SdbEntries_item_SdbAppVendor**  Example: Microsoft Corporation
-- **SdbEntries_item_SdbBlockType**  Example: ReinstallAfterUpgrade
-- **SdbEntries_item_SdbEntryGuid**  Example: {2a1cc617-9ee0-4dff-b3c0-a09cfc13543a}
-- **SdbEntries_item_SdbUpgradeMode**  Example: Swap
-- **SdbEntries_item_SdbUxBlocktypeOverride**  Example: SDB_UX_BLOCKTYPE_OVERRIDE_REINSTALL_BLOCK
 - **UplevelInboxDriver**  Is there a driver uplevel for this device?
 - **WuDriverCoverage**  Is there a driver uplevel for this device according to Windows Update?
 - **WuDriverUpdateID**  The Windows Update ID of the applicable uplevel driver.
@@ -400,16 +378,8 @@ This event sends compatibility database data about driver packages to help keep 
 
 The following fields are available:
 
-- **objectInstanceId**  DriverPackageId that is used for uniquely identifying a driver package on a system.
 - **AppraiserVersion**  The version of the appraiser file generating the events.
 - **SdbEntries**  An array of fields indicating the SDB entries that apply to this driver package.
-- **SdbEntries_item_SdbAppGuid**  Example: {5f29791d-ad69-40a4-9783-6edbdf66bd4b}
-- **SdbEntries_item_SdbAppName**  Example: Microsoft PDF/XPS Printer
-- **SdbEntries_item_SdbAppVendor**  Example: Microsoft
-- **SdbEntries_item_SdbBlockType**  Example: BlockDriver
-- **SdbEntries_item_SdbEntryGuid**  Example: {380213ca-97c8-4fdc-b194-b4f714006796}
-- **SdbEntries_item_SdbUpgradeMode**  Example: Service
-- **SdbEntries_item_SdbUxBlocktypeOverride**  Example: SDB_UX_BLOCKTYPE_OVERRIDE_NO_BLOCK
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceDriverPackageRemove
@@ -436,16 +406,8 @@ This event sends blocking data about any compatibility blocking entries hit on t
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be BlockingMatchingInfo.
 - **AppraiserVersion**  The version of the appraiser file generating the events.
 - **SdbEntries**  An array of fields indicating the SDB entries that apply to this file.
-- **SdbEntries_item_SdbAppGuid**  Example: {4cca1f6c-74f8-4bfd-9fb4-3d4b65f23f98}
-- **SdbEntries_item_SdbAppName**  Example: Intel(R)DynamicPowerPerformanceManagement
-- **SdbEntries_item_SdbAppVendor**  Example: Intel
-- **SdbEntries_item_SdbBlockType**  Example: BlockUpgradeUntilUpdate
-- **SdbEntries_item_SdbEntryGuid**  Example: {4be49993-88ec-4003-b9a6-9f8812e94c50}
-- **SdbEntries_item_SdbUpgradeMode**  Example: Swap
-- **SdbEntries_item_SdbUxBlocktypeOverride**  Example: SDB_UX_BLOCKTYPE_OVERRIDE_UPGRADE_UNTIL_UPDATE_BLOCK
 
 
 ### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoBlockRemove
@@ -472,20 +434,8 @@ This event sends compatibility database information about non-blocking compatibi
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be PassiveMatchingInfo.
 - **AppraiserVersion**  The version of the appraiser file generating the events.
 - **SdbEntries**  An array of fields indicating the SDB entries that apply to this file.
-- **SdbEntries_item_MigShimCommand**  The command line to be passed to the MigShim if one is applicable.
-- **SdbEntries_item_MigShimName**  Example: MigrateVCRuntimeShim
-- **SdbEntries_item_MigXmlName**  Example: Intel_Rapid_Storage_Technolgy_Enterprise_Filter_Driver__3__PART
-- **SdbEntries_item_MigXmlType**  Example: MIG_XML_TYPE_FIXED
-- **SdbEntries_item_SdbAppGuid**  Example: {03760bce-35d7-47a3-b83b-de673fdb6ab4}
-- **SdbEntries_item_SdbAppName**  Example: VC Runtime
-- **SdbEntries_item_SdbAppVendor**  Example: Microsoft
-- **SdbEntries_item_SdbBlockType**  Example: BlockUpgradeUntilUpdate
-- **SdbEntries_item_SdbEntryGuid**  Example: {00b0c9b2-3f04-4795-a8ac-5b7bd5ea2ea8}
-- **SdbEntries_item_SdbUpgradeMode**  Example: Swap
-- **SdbEntries_item_SdbUxBlocktypeOverride**  Example: SDB_UX_BLOCKTYPE_OVERRIDE_MIG_FIXED
 
 
 ### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPassiveRemove
@@ -512,17 +462,8 @@ This event sends compatibility database information about entries requiring rein
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be PostUpgradeMatchingInfo.
 - **AppraiserVersion**  The version of the appraiser file generating the events.
 - **SdbEntries**  An array of fields indicating the SDB entries that apply to this file.
-- **SdbEntries_item_ReinstallUpgradeMessage**  Example: Resource: 10022
-- **SdbEntries_item_SdbAppGuid**  Example: {0ba2f09d-5288-45fa-be32-001857cc020f}
-- **SdbEntries_item_SdbAppName**  Example: Virtual Machine Manager Self-Service Client
-- **SdbEntries_item_SdbAppVendor**  Example: Microsoft Corporation
-- **SdbEntries_item_SdbBlockType**  Example: ReinstallAfterUpgrade
-- **SdbEntries_item_SdbEntryGuid**  Example: {2a1cc617-9ee0-4dff-b3c0-a09cfc13543a}
-- **SdbEntries_item_SdbUpgradeMode**  Example: Swap
-- **SdbEntries_item_SdbUxBlocktypeOverride**  Example: SDB_UX_BLOCKTYPE_OVERRIDE_REINSTALL_BLOCK
 
 
 ### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPostUpgradeRemove
@@ -549,12 +490,8 @@ This event sends compatibility database information about the BIOS to help keep 
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be BIOS.
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
 - **SdbEntries**  An array of fields indicating the SDB entries that apply to this BIOS.
-- **SdbEntries_item_SdbBlockType**  Example: BiosBlock
-- **SdbEntries_item_SdbEntryGuid**  Example: {b77118fd-0d87-4f63-a836-d5c6bd8eed4c}
-- **SdbEntries_item_SdbUpgradeMode**  Example: Swap
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceSystemBiosRemove
@@ -581,9 +518,8 @@ This event sends compatibility decision data about a file to help keep Windows u
 
 The following fields are available:
 
-- **objectInstanceId**  A hash of the full file path, including the file name.
 - **AppraiserVersion**  The version of the appraiser file generating the events.
-- **BlockAlreadyInbox**  The uplevel runtime block on the file already existed on the current OS. Example: FALSE
+- **BlockAlreadyInbox**  The uplevel runtime block on the file already existed on the current OS.
 - **BlockingApplication**  Are there any application issues that interfere with upgrade due to the file in question?
 - **DisplayGenericMessage**  Will be a generic message be shown for this file?
 - **HardBlock**  This file is blocked in the SDB.
@@ -627,7 +563,6 @@ This event sends compatibility decision data about a PNP device to help keep Win
 
 The following fields are available:
 
-- **objectInstanceId**  This uniquely identifies a device in the system.
 - **AppraiserVersion**  The version of the appraiser file generating the events.
 - **AssociatedDriverIsBlocked**  Is the driver associated with this PNP device blocked?
 - **BlockAssociatedDriver**  Should the driver associated with this PNP device be blocked?
@@ -639,7 +574,7 @@ The following fields are available:
 - **DriverAvailableOnline**  Is there a driver for this PNP device on Windows Update?
 - **DriverAvailableUplevel**  Is there a driver on Windows Update or included with the operating system for this PNP device?
 - **DriverBlockOverridden**  Is there is a driver block on the device that has been overridden?
-- **NeedsDismissAction**  Will the user would need to dismiss something during Setup for this device?
+- **NeedsDismissAction**  Will the user would need to dismiss a warning during Setup for this device?
 - **NotRegressed**  Does the device have a problem code on the source OS that is no better than the one it would have on the target OS?
 - **SdbDeviceBlockUpgrade**  Is there an SDB block on the PNP device that blocks upgrade?
 - **SdbDriverBlockOverridden**  Is there an SDB block on the PNP device that blocks upgrade, but that block was overridden?
@@ -669,7 +604,6 @@ This event sends decision data about driver package compatibility to help keep W
 
 The following fields are available:
 
-- **objectInstanceId**  Used for uniquely identifying a driver package on a system.
 - **AppraiserVersion**  The version of the appraiser file generating the events.
 - **DriverBlockOverridden**  Does the driver package have an SDB block that blocks it from migrating, but that block has been overridden?
 - **DriverIsDeviceBlocked**  Was the driver package was blocked because of a device block?
@@ -702,7 +636,6 @@ This event sends compatibility decision data about blocking entries on the syste
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be BlockingMatchingInfo.
 - **AppraiserVersion**  The version of the appraiser file generating the events.
 - **BlockingApplication**  Are there are any application issues that interfere with upgrade due to matching info blocks?
 - **DisplayGenericMessage**  Will a generic message be shown for this block?
@@ -736,7 +669,6 @@ This event sends compatibility decision data about non-blocking entries on the s
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be PassiveMatchingInfo.
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 - **BlockingApplication**  Are there any application issues that interfere with upgrade due to matching info blocks?
 - **MigApplication**  Is there a matching info block with a mig for the current mode of upgrade?
@@ -766,7 +698,6 @@ This event sends compatibility decision data about entries that require reinstal
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be PostUpgradeMatchingInfo.
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 - **NeedsInstallPostUpgradeData**  Will the file have a notification after upgrade to install a replacement for the app?
 - **NeedsNotifyPostUpgradeData**  Should a notification be shown for this file after upgrade?
@@ -798,12 +729,11 @@ This event sends decision data about the presence of Windows Media Center, to he
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be MediaCenter.
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
 - **BlockingApplication**  Is there any application issues that interfere with upgrade due to Windows Media Center?
 - **MediaCenterActivelyUsed**  If Windows Media Center is supported on the edition, has it been run at least once and are the MediaCenterIndicators are true?
 - **MediaCenterInUse**  Is Windows Media Center actively being used?
-- **MediaCenterIndicators**  Are any of the signals indicating that Windows Media Center is being used, such as default launcher, watched folders, extender accounts, etc...?
+- **MediaCenterIndicators**  Do any indicators imply that Windows Media Center is in active use?
 - **MediaCenterPaidOrActivelyUsed**  Is Windows Media Center actively being used or is it running on a supported edition?
 - **NeedsDismissAction**  Are there any actions that can be dismissed coming from Windows Media Center?
 
@@ -832,7 +762,6 @@ This event sends compatibility decision data about the BIOS to help keep Windows
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be Bios.
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
 - **Blocking**  Is the device blocked from upgrade due to a BIOS block?
 - **HasBiosBlock**  Does the device have a BIOS block?
@@ -856,25 +785,12 @@ The following fields are available:
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 
 
-### Microsoft.Windows.Appraiser.General.DecisionSystemProcessorAdd
-
-This event sends defunct data. It always reads false.
-
-The following fields are available:
-
-- **objectInstanceId**  Will always be Processor.
-- **AppraiserVersion**  The version of the appraiser binary generating the events. Example: 10014361
-- **Blocking**  Will always be FALSE
-- **ProcessorRequirementViolated**  Will always be FALSE
-
-
 ### Microsoft.Windows.Appraiser.General.EnterpriseScenarioWithDiagTrackServiceRunning
 
 The event that indicates that Appraiser has been triggered to run an enterprise scenario while the DiagTrack service is installed. This event can only be sent if a special flag is used to trigger the enterprise scenario.
 
 The following fields are available:
 
-- **CensusId**  An ID for the system calculated from the CEIP, WER, and RAC IDs.
 - **Time**  The client time of the event.
 - **PCFP**  An ID for the system calculated by hashing hardware identifiers.
 
@@ -899,7 +815,6 @@ This event represents the basic metadata about a file on the system.  The file m
 
 The following fields are available:
 
-- **objectInstanceId**  A hash of the full file path including the file name.
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
 - **BinFileVersion**  An attempt to clean up FileVersion at the client that tries to place the version into 4 octets.
 - **BinProductVersion**  An attempt to clean up ProductVersion at the client that tries to place the version into 4 octets.
@@ -941,7 +856,6 @@ This event sends data about the number of language packs installed on the system
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be LanguagePack.
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 - **HasLanguagePack**  Does this device have 2 or more language packs?
 - **LanguagePackCount**  How many language packs are installed?
@@ -971,7 +885,6 @@ This event sends true/false data about decision points used to understand whethe
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be MediaCenter.
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
 - **EverLaunched**  Has Windows Media Center ever been launched?
 - **HasConfiguredTv**  Has the user configured a TV tuner through Windows Media Center?
@@ -1006,7 +919,6 @@ This event sends basic metadata about the BIOS to determine whether it has a com
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be Bios.
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 - **BiosDate**  The release date of the BIOS in UTC format.
 - **BiosName**  The name field from Win32_BIOS.
@@ -1082,7 +994,6 @@ The following fields are available:
 - **Time**  The client time of the event.
 - **PCFP**  A unique hardware identifier that is calculated by hashing hardware identifiers.
 - **IsOnlineRun**  Was the device able to connect to Windows Update to get driver availability information?
-- **CensusId**  An ID for the system calculated from the CEIP, WER, and RAC IDs.
 
 
 ### Microsoft.Windows.Appraiser.General.IsOnlineWuDriverDataSource
@@ -1095,7 +1006,6 @@ The following fields are available:
 - **PCFP**  A unique hardware identifier that is calculated by hashing hardware identifiers.
 - **IsOnlineRun**  Was the device able to connect to Windows Update to get driver availability information?
 - **TargetVersion**  The abbreviated name for the OS version against which Windows Update was queried.
-- **CensusId**  An ID for the system calculated from the CEIP, WER, and RAC IDs.
 
 
 ### Microsoft.Windows.Appraiser.General.RunContext
@@ -1132,7 +1042,6 @@ This event sends data on the amount of memory on the system and whether it meets
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be Memory.
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
 - **Blocking**  Is the device from upgrade due to memory restrictions?
 - **MemoryRequirementViolated**  Was a memory requirement violated?
@@ -1167,7 +1076,6 @@ This event sends data indicating whether the system supports the CompareExchange
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be CompareExchange128.
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
 - **Blocking**  Is the upgrade blocked due to the processor?
 - **CompareExchange128Support**  Does the CPU support CompareExchange128?
@@ -1197,7 +1105,6 @@ This event sends data indicating whether the system supports the LahfSahf CPU re
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be LahfSahf.
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
 - **Blocking**  Is the upgrade blocked due to the processor?
 - **LahfSahfSupport**  Does the CPU support LAHF/SAHF?
@@ -1227,7 +1134,6 @@ This event sends data indicating whether the system supports the NX CPU requirem
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be NX.
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 - **Blocking**  Is the upgrade blocked due to the processor?
 - **NXDriverResult**  The result of the driver used to do a non-deterministic check for NX support.
@@ -1258,7 +1164,6 @@ This event sends data indicating whether the system supports the PrefetchW CPU r
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be PrefetchW.
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 - **Blocking**  Is the upgrade blocked due to the processor?
 - **PrefetchWSupport**  Does the processor support PrefetchW?
@@ -1288,7 +1193,6 @@ This event sends data indicating whether the system supports the SSE2 CPU requir
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be SSE2.
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 - **Blocking**  Is the upgrade blocked due to the processor?
 - **SSE2ProcessorSupport**  Does the processor support SSE2?
@@ -1318,7 +1222,6 @@ This event sends data indicating whether the system supports touch, to help keep
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be Touch.
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 - **IntegratedTouchDigitizerPresent**  Is there an integrated touch digitizer?
 - **MaximumTouches**  The maximum number of touch points supported by the device hardware.
@@ -1348,7 +1251,6 @@ This event sends data indicating whether the operating system is running from a 
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be Wim.
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 - **IsWimBoot**  Is the current operating system running from a compressed WIM file?
 - **RegistryWimBootValue**  The raw value from the registry that is used to indicate if the device is running from a WIM.
@@ -1378,7 +1280,6 @@ This event sends data indicating whether the current operating system is activat
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be WindowsActivationStatus.
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 - **WindowsIsLicensedApiValue**  The result from the API that's used to indicate if operating system is activated.
 - **WindowsNotActivatedDecision**  Is the current operating system activated?
@@ -1408,7 +1309,6 @@ This event sends data indicating whether the system has WLAN, and if so, whether
 
 The following fields are available:
 
-- **objectInstanceId**  This will always be Wlan.
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 - **Blocking**  Is the upgrade blocked because of an emulated WLAN driver?
 - **HasWlanBlock**  Does the emulated WLAN driver have an upgrade block?
@@ -2084,7 +1984,6 @@ This event sends inventory component versions for the Device Inventory data.
 
 The following fields are available:
 
-- **aeinv.dll**  The version of the App inventory component.
 - **devinv.dll**  The file version of the Device inventory component.
 - **aeinv**  The version of the App inventory component.
 - **devinv**  The file version of the Device inventory component.
@@ -2113,8 +2012,7 @@ The following fields are available:
 - **InstallDateMsi**  The install date if the application was installed via MSI. Passed as an array. Example: 4/11/2015  00:00:00
 - **InstallDateFromLinkFile**  The estimated date of install based on the links to the files.  Passed as an array. Example: 4/8/2015  01:06:11
 - **InstallDateArpLastModified**  The date of the registry ARP key for a given application. Hints at install date but not always accurate. Passed as an array. Example: 4/11/2015  00:00:00
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
-- **objectInstanceId**  ProgramId (a hash of Name, Version, Publisher, and Language of an application used to identify it). Example: 00000144865763f3de24c2ae5a289fde6db300000904
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **PackageFullName**  The package full name for a Store application.  Example: Microsoft.Hexic_1.2.0.36_x86__8wekyb3d8bbwe
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **StoreAppType**  A sub-classification for the type of Windows Store app, such as UWP or Win8StoreApp.
@@ -2126,7 +2024,7 @@ This event indicates that a new set of InventoryDevicePnpAdd events will be sent
 
 The following fields are available:
 
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
@@ -2136,7 +2034,7 @@ This event indicates that a new set of InventoryApplicationAdd events will be se
 
 The following fields are available:
 
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
@@ -2160,8 +2058,7 @@ The following fields are available:
 - **DiscoveryMethod**  The discovery method for the device container.
 - **ModelNumber**  The model number for the device container.
 - **Manufacturer**  The manufacturer name for the device container.
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
-- **objectInstanceId**  ContainerId. Example: {552dd320-0dae-2794-2b41-df42fee22488}
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
@@ -2171,7 +2068,7 @@ This event indicates that the InventoryDeviceContainer object is no longer prese
 
 The following fields are available:
 
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
@@ -2181,7 +2078,7 @@ This event indicates that a new set of InventoryDeviceContainerAdd events will b
 
 The following fields are available:
 
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
@@ -2229,8 +2126,7 @@ The following fields are available:
 
 - **audio.captureDriver**  Audio device capture driver.  Example: hdaudio.inf:db04a16ce4e8d6ee:HdAudModel:10.0.14887.1000:hdaudio\func_01
 - **audio.renderDriver**  Audio device render driver.  Example: hdaudio.inf:db04a16ce4e8d6ee:HdAudModel:10.0.14889.1001:hdaudio\func_01
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
-- **objectInstanceId**  Device Instance ID of the PNP device.  Example: hdaudio/func_01&ven_10ec&dev_0262&subsys_103c1309&rev_1002/4&12f2dd06&0&0001
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **Audio_CaptureDriver**  The Audio device capture driver endpoint.
 - **Audio_RenderDriver**  The Audio device render driver endpoint.
@@ -2238,11 +2134,11 @@ The following fields are available:
 
 ### Microsoft.Windows.Inventory.Core.InventoryDeviceMediaClassRemove
 
-This event indicates that the InventoryDeviceMediaClass object represented by the objectInstanceId is no longer present.
+This event indicates that the InventoryDeviceMediaClassRemove object is no longer present.
 
 The following fields are available:
 
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
@@ -2252,7 +2148,7 @@ This event indicates that a new set of InventoryDeviceMediaClassSAdd events will
 
 The following fields are available:
 
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
@@ -2286,8 +2182,7 @@ The following fields are available:
 - **LowerFilters**  Lower filter drivers IDs installed for the device.
 - **UpperClassFilters**  Upper filter class drivers IDs installed for the device.
 - **UpperFilters**  Upper filter drivers IDs installed for the device.
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
-- **objectInstanceId**  The Device Instance ID of the device (uniquely identifies a device in the system). Example: pci\ven_8086&dev_0085&subsys_13118086&rev_34\4&2dded11c&0&00e1
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **DriverId**  A unique identifier for the installed device.
 - **DriverName**  The name of the driver image file.
 - **InventoryVersion**  The version of the inventory file generating the events.
@@ -2300,7 +2195,7 @@ This event indicates that the InventoryDevicePnpRemove object is no longer prese
 
 The following fields are available:
 
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
@@ -2310,7 +2205,7 @@ This event indicates that a new set of InventoryDevicePnpAdd events will be sent
 
 The following fields are available:
 
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
@@ -2336,8 +2231,7 @@ The following fields are available:
 - **ProductVersion**  The product version that is included in the driver file.
 - **WdfVersion**  The Windows Driver Framework version.
 - **Service**  The name of the service that is installed for the device.
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
-- **objectInstanceId**  Can be used to join with InventoryDevicePnp (on driverId, upperFilters, etc.). Example: 000038dbe54a022b6c73edbdb8bf5cba32a882d2df2a
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
@@ -2347,7 +2241,7 @@ This event indicates that the InventoryDriverBinary object is no longer present.
 
 The following fields are available:
 
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
@@ -2357,7 +2251,7 @@ This event indicates that a new set of InventoryDriverBinaryAdd events will be s
 
 The following fields are available:
 
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
@@ -2375,17 +2269,17 @@ The following fields are available:
 - **Version**  The version of the driver package.
 - **Provider**  The provider for the driver package.
 - **SubmissionId**  The HLK submission ID for the driver package.
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryDriverPackageRemove
 
-This event indicates that the InventoryDriverPackage object represented by the objectInstanceId is no longer present. No object attributes are transmitted other than the objectInstanceId
+This event indicates that the InventoryDriverPackageRemove object is no longer present.
 
 The following fields are available:
 
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
@@ -2395,29 +2289,27 @@ This event indicates that a new set of InventoryDriverPackageAdd events will be 
 
 The following fields are available:
 
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
 ### Microsoft.Windows.Inventory.Indicators.Checksum
 
-This event captures basic checksum data about the device inventory items stored in the cache for use in validating data completeness for Microsoft.Windows.Inventory.Core events.
+This event summarizes the counts for the InventoryMiscellaneousUexIndicatorAdd events.
 
 The following fields are available:
 
-- **CensusId**  A unique hardware identifier.
 - **ChecksumDictionary**  A count of each operating system indicator.
-- **PCFP**  Microsoft.Windows.Inventory.Indicators
+- **PCFP**  Equivalent to the InventoryId field that is found in other core events.
 
 
 ### Microsoft.Windows.Inventory.Indicators.InventoryMiscellaneousUexIndicatorAdd
 
-This event captures basic checksum data about the device inventory items stored in the cache for use in validating data completeness for Microsoft.Windows.Inventory.Core events. The fields in this event may change over time, but they will always represent a count of a given object.
+These events represent the basic metadata about the OS indicators installed on the system which are used for keeping the device up-to-date.
 
 The following fields are available:
 
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
-- **Value**  Describes an operating system indicator that may be relevant for the device upgrade.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **IndicatorValue**  The indicator value
 
 
@@ -2427,7 +2319,7 @@ This event is a counterpart to InventoryMiscellaneousUexIndicatorAdd, indicating
 
 The following fields are available:
 
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 
 
 ### Microsoft.Windows.Inventory.Indicators.InventoryMiscellaneousUexIndicatorStartSync
@@ -2436,7 +2328,7 @@ This event indicates that a new set of InventoryMiscellaneousUexIndicatorAdd eve
 
 The following fields are available:
 
-- **PartB_Ms.Device.DeviceInventoryChange**  This field is replaced with the following fields: syncId, objectInstanceId, objectType, Action, and InventoryId.
+- **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 
 
 ## OneDrive events
