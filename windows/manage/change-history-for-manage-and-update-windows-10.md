@@ -16,19 +16,20 @@ This topic lists new and updated topics in the [Manage Windows 10](index.md) doc
 
 ## RELEASE: Windows 10, version 1703
 
-The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). Some topics have been moved to [Update Windows 10](../update/index.md) or to [Configure Windows 10](../configure/index.md).
+The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). Some topics have been moved to [Update Windows 10](../update/index.md) or to [Configure Windows 10](../configure/index.md). The following new topics have been added:
+
+- [Release Notes for App-V for Windows 10, version 1703](appv-release-notes-for-appv-for-windows-1703.md)
+- [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-provision-a-vm.md)
+- [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md) 
+- [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md)
+- [Automatically cleanup unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md) 
+- [Available Mobile Data Management (MDM) settings for App-V](appv-available-mdm-settings.md) 
 
 ## March 2017
 | New or changed topic | Description |
 | --- | --- |
 |[Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email](cortana-at-work-scenario-6.md) |New |
-|[What's new in App-V for Windows 10, version 1703 and earlier](appv-about-appv.md)|Updated to include new features in App-V for Windows 10, version 1703. |
-|[Release Notes for App-V for Windows 10, version 1703](appv-release-notes-for-appv-for-windows-1703.md)|New |
-|[Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-provision-a-vm.md) |New |
-|[Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md) |New |
-|[Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md) |New |
-|[Automatically cleanup unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md) |New |
-|[Available Mobile Data Management (MDM) settings for App-V](appv-available-mdm-settings.md) |New |
+
 
 ## February 2017
 | New or changed topic | Description |
