@@ -34,7 +34,7 @@ You can contain an attack in your organization by stopping the malicious process
 
 The **Stop & Quarantine File** action includes stopping running processes, quarantining the files, and deleting persistency such as registry keys.
 
-The action takes effect on machines with the latest Windows 10 Insider Preview build where the file was observed in the last 30 days.
+The action takes effect on machines with the latest Windows 10, version 1703 where the file was observed in the last 30 days.
 
 ### Stop and quarantine files
 1.	Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
