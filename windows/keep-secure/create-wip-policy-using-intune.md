@@ -15,7 +15,7 @@ localizationpriority: high
 **Applies to:**
 
 -   Windows 10, version 1703
--   Windows 10 Mobile (except Microsoft Azure Rights Management, which is only available on the desktop)
+-   Windows 10 Mobile, version 1703 (except Microsoft Azure Rights Management, which is only available on the desktop)
 
 Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network.
 
@@ -23,81 +23,108 @@ Microsoft Intune helps you create and deploy your Windows Information Protection
 After you’ve set up Intune for your organization, you must create a WIP-specific policy.
 
 **To add a WIP policy**
-1.  Open the Intune administration console, and go to the **Policy** node, and then click **Add Policy** from the **Tasks** area.
+1.  Open the Microsoft Azure Intune mobile application management console, click **All settings**, and then click **App policy**.
 
-2.  Go to **Windows**, click the **Windows Information Protection (Windows 10 Desktop and Mobile and later) policy**, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
+    ![Microsoft Azure Intune management console: App policy link](images/wip-azure-portal-start.png)
 
-    ![Microsoft Intune: Create your new policy from the New Policy screen](images/intune-createnewpolicy.png)
+2.  In the **App policy** screen, click **Add a policy**, and then fill out the fields:
+    - **Name.** Type a name (required) for your new policy.
+    - **Description.** Type an optional description.
+    - **Platform.** Choose **Windows 10** as the supported platform for your policy.
 
-3.  Type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
+        ![Microsoft Azure Intune management console: Create your new policy in the Add a policy pane](images/wip-azure-portal-add-policy.png)
 
-    ![Microsoft Intune: Fill out the required Name and optional Description fields](images/intune-generalinfo.png)
+3.  Click **Create**.
+    
+    The policy is created and appears in the table on the **App Policy** screen.
 
-### Add app rules to your policy
+    >[!NOTE]
+    >Optionally, you can also add your apps and set your settings from the **Add a policy** pane, but for the purposes of this documentation, we recommend instead that you create the policy first, and then use the subsequent menus that become available.
+
+### Add apps to your Allowed apps list
 During the policy-creation process in Intune, you can choose the apps you want to give access to your enterprise data through WIP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
 
-The steps to add your app rules are based on the type of rule template being applied. You can add a store app (also known as a Universal Windows Platform (UWP) app), a signed Windows desktop app, or an AppLocker policy file.
+The steps to add your apps are based on the type of template being applied. You can add a recommended app, a store app (also known as a Universal Windows Platform (UWP) app), or a signed Windows desktop app.
 
 >[!Important]
->WIP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<p>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your **App Rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
-
+>WIP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<p>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your **Allowed apps** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
 
 >[!Note]
 >If you want to use **File hash** or **Path** rules, instead of **Publisher** rules, you must follow the steps in the [Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md) topic.
 
-#### Add a store app rule to your policy
-For this example, we’re going to add Microsoft OneNote, a store app, to the **App Rules** list.
+#### Add a Recommended app to your Allowed apps list
+For this example, we’re going to add Microsoft Edge, a recommended app, to the **Allowed apps** list.
 
-**To add a store app**
-1.	From the **App Rules** area, click **Add**.
+**To add a recommended app**
+1.  From the **App policy** pane, click the name of your policy, and then click **Allowed apps** from the menu that appears.
+    
+    The **Allowed apps** pane appears, showing you any apps that are already included in the list for this policy.
 
-    The **Add App Rule** box appears.
+    ![Microsoft Azure Intune management console: Viewing the recommended apps that you can add to your policy](images/wip-azure-allowed-apps-pane.png)
 
-    ![Microsoft Intune, Add a store app to your policy](images/intune-add-uwp-apps.png)
+2.  From the **Allowed apps** pane, click **Add apps**.
+    
+    The **Add apps** pane appears, showing you all **Recommended apps**.
 
-2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Microsoft OneNote*.
+    ![Microsoft Azure Intune management console: Adding recommended apps to your policy](images/wip-azure-add-recommended-apps.png)
 
-3.	Click **Allow** from the **Windows Information Protection mode** drop-down list.
+3.  Select each app you want to access your enterprise data, and then click **OK**.
+    
+    The **Allowed apps** pane updates to show you your selected apps.
 
-    Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. Instructions for exempting an app are included in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip-restrictions) section of this topic.
+    ![Microsoft Azure Intune management console: Allowed apps pane with recommended apps](images/wip-azure-allowed-apps-with-apps.png)    
 
-4.	Pick **Store App** from the **Rule template** drop-down list.
+#### Add a Store app to your Allowed apps list
+For this example, we’re going to add Microsoft Power BI, a store app, to the **Allowed apps** list.
 
-    The box changes to show the store app rule options.
+**To add a Store app**
+1.	From the **App policy** pane, click the name of your policy, and then click **Allowed apps** from the menu that appears.
+    
+    The **Allowed apps** pane appears, showing you any apps that are already included in the list for this policy.
 
-5.	Type the name of the app and the name of its publisher, and then click **OK**. For this UWP app example, the **Publisher** is `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US` and the **Product name** is `Microsoft.Office.OneNote`.
+2.	From the **Allowed apps** pane, click **Add apps**.
+
+3.	On the **Add apps** pane, click **Store apps** from the dropdown list.
+    
+    The pane changes to show boxes for you to add a publisher and app name.
+
+4.	Type the name of the app and the name of its publisher, and then click **OK**. For this UWP app example, the **Publisher** is `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US` and the Product **name** is `Microsoft.MicrosoftPowerBIForWindows`.
+
+5.	After you’ve entered the info into the fields, click **OK** to add the app to your **Allowed apps** list.
+
+    >[!NOTE]
+    >To add multiple Store apps at the same time, you can click the menu **(…)** at the end of the app row, and then continue to add more apps. When you’re done, click **OK**.
+
+    ![Microsoft Azure Intune management console: Adding Store app info](images/wip-azure-add-store-apps.png)
 
 If you don't know the publisher or product name, you can find them for both desktop devices and Windows 10 Mobile phones by following these steps.
 
-**To find the Publisher and Product Name values for Store apps without installing them**
-1.	Go to the [Windows Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Microsoft OneNote*.
+**To find the publisher and product name values for Store apps without installing them**
+1.	Go to the [Windows Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Microsoft Power BI*.
 
-    >**Note**<br>If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the [Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md) topic.
+    >[!NOTE]
+    >If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the [Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md) topic.
 
-2.	Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
+2.	Copy the ID value from the app URL. For example, Microsoft Power BI ID URL is https://www.microsoft.com/en-us/store/p/microsoft-power-bi/9nblgggzlxn1, and you'd copy the ID value, `9nblgggzlxn1`.
 
-3.	In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata, where `9wzdncrfhvjl` is replaced with your ID value.
-
+3.	In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9nblgggzlxn1/applockerdata, where `9nblgggzlxn1` is replaced with your ID value.
+    
     The API runs and opens a text editor with the app details.
 
     ```json
-    {
-        "packageIdentityName": "Microsoft.Office.OneNote",
-        "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
-    }
-    ```
-
-4. Copy the `publisherCertificateName` value into the **Publisher Name** box and copy the `packageIdentityName` value into the **Product Name** box of Intune.
-
-    >[!Important]
-    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<p>For example:<br>
-    ```json
         {
-            "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+            "packageIdentityName": "Microsoft.MicrosoftPowerBIForWindows",
+            "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
         }
     ```
 
-**To find the Publisher and Product Name values for apps installed on Windows 10 mobile phones**
+4. Copy the `publisherCertificateName` value into the **Publisher** box and copy the `packageIdentityName` value into the **Name** box of Intune.
+
+    >[!Important]
+    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<p>For example:<br>
+    <code>{<br>"windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",<br>}</code>
+
+**To find the publisher and product name values for apps installed on Windows 10 mobile phones**
 1.	If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
     >**Note**<br>Your PC and phone must be on the same wireless network.
@@ -118,94 +145,90 @@ If you don't know the publisher or product name, you can find them for both desk
 
     >[!Important]
     >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<p>For example:<br>
-    ```json
-        {
-            "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
-        }
-    ```
+    <code>{<br>"windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",<br>}</code>
 
-#### Add a desktop app rule to your policy
-For this example, we’re going to add Internet Explorer, a desktop app, to the **App Rules** list.
+#### Add a Desktop app to your Allowed apps list
+For this example, we’re going to add WordPad, a desktop app, to the **Allowed apps** list.
 
-**To add a desktop app**
-1.	From the **App Rules** area, click **Add**.
+**To add a Desktop app**
+1.	From the **App policy** pane, click the name of your policy, and then click **Allowed apps** from the menu that appears.
 
-    The **Add App Rule** box appears.
-    
-    ![Microsoft Intune, Add a desktop app to your policy](images/intune-add-classic-apps.png)
+    The **Allowed apps** pane appears, showing you any apps that are already included in the list for this policy.
 
-2.	Add a friendly name for your app into the **Title** box. In this example, it’s *Internet Explorer*.
+2.	From the **Allowed apps** pane, click **Add apps**.
 
-3.	Click **Allow** from the **Windows Information Protection mode** drop-down list.
+3.	On the **Add apps** pane, click **Desktop apps** from the dropdown list.
 
-    Allow turns on WIP, helping to protect that app’s corporate data through the enforcement of WIP restrictions. Instructions for exempting an app are included in the [Exempt apps from WIP restrictions](#exempt-apps-from-wip-restrictions) section of this topic.
-
-4.	Pick **Desktop App** from the **Rule template** drop-down list.
-
-    The box changes to show the store app rule options.
-
-5. Pick the options you want to include for the app rule (see table), and then click **OK**.
+    The pane changes to show boxes for you to add the following, based on what results you want returned:
 
     <table>
         <tr>
-            <th>Option</th>
+            <th>Field</th>
             <th>Manages</th>
         </tr>
         <tr>
-            <td>All fields left as “*”</td>
+            <td>All fields marked as “*”</td>
             <td>All files signed by any publisher. (Not recommended)</td>
         </tr>
         <tr>
-            <td><strong>Publisher</strong> selected</td>
-            <td>All files signed by the named publisher.<p>This might be useful if your company is the publisher and signer of internal line-of-business apps.</td>
+            <td>Publisher only</td>
+            <td>If you only fill out this field, you’ll get all files signed by the named publisher.<p>This might be useful if your company is the publisher and signer of internal line-of-business apps.</td>
         </tr>
         <tr>
-            <td><strong>Publisher</strong> and <strong>Product Name</strong> selected</td>
-            <td>All files for the specified product, signed by the named publisher.</td>
+            <td>Publisher and Name only</td>
+            <td>If you only fill out these fields, you’ll get all files for the specified product, signed by the named publisher.</td>
         </tr>
         <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, and <strong>Binary name</strong> selected</td>
-            <td>Any version of the named file or package for the specified product, signed by the named publisher.</td>
+            <td>Publisher, Name, and File only</td>
+            <td>If you only fill out these fields, you’ll get any version of the named file or package for the specified product, signed by the named publisher.</td>
         </tr>
         <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>Binary name</strong>, and <strong>File Version, and above</strong>, selected</td>
-            <td>Specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<p>This option is recommended for enlightened apps that weren't previously enlightened.</td>
+            <td>Publisher, Name, File, and Min version only</td>
+            <td>If you only fill out these fields, you’ll get the specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<p>This option is recommended for enlightened apps that weren't previously enlightened.</td>
         </tr>
         <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>Binary name</strong>, and <strong>File Version, And below</strong> selected</td>
-            <td>Specified version or older releases of the named file or package for the specified product, signed by the named publisher.</td>
+            <td>Publisher, Name, File, and Max version only</td>
+            <td>If you only fill out these fields, you’ll get the specified version or older releases of the named file or package for the specified product, signed by the named publisher.</td>
         </tr>
         <tr>
-            <td><strong>Publisher</strong>, <strong>Product Name</strong>, <strong>Binary name</strong>, and <strong>File Version, Exactly</strong> selected</td>
-            <td>Specified version of the named file or package for the specified product, signed by the named publisher.</td>
+            <td>All fields completed</td>
+            <td>If you fill out all fields, you’ll get the specified version of the named file or package for the specified product, signed by the named publisher.</td>
         </tr>
     </table>
 
-If you’re unsure about what to include for the publisher, you can run this PowerShell command:
+4.	After you’ve entered the info into the fields, click **OK** to add the app to your **Allowed apps** list.
 
-```ps1
-    Get-AppLockerFileInformation -Path "<path of the exe>"
-```
-Where `"<path of the exe>"` goes to the location of the app on the device. For example, `Get-AppLockerFileInformation -Path "C:\Program Files\Internet Explorer\iexplore.exe"`.
+    >[!Note]
+    >To add multiple Desktop apps at the same time, you can click the menu **(…)** at the end of the app row, and then continue to add more apps. When you’re done, click **OK**.
 
-In this example, you'd get the following info:
+    ![Microsoft Azure Intune management console: Adding Desktop app info](images/wip-azure-add-desktop-apps.png)
 
-``` json
-    Path                   Publisher
-    ----                   ---------
-    %PROGRAMFILES%\INTERNET EXPLORER\IEXPLORE.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\INTERNET EXPLOR...
-```
-Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter in the **Publisher Name** box.
+    **To find the Publisher values for Desktop apps**
+    If you’re unsure about what to include for the publisher, you can run this PowerShell command:
 
-#### Add an AppLocker policy file
-For this example, we’re going to add an AppLocker XML file to the **App Rules** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
+    ```ps1
+        Get-AppLockerFileInformation -Path "<path_of_the_exe>"
+    ```
+    Where `"<path_of_the_exe>"` goes to the location of the app on the device. For example, `Get-AppLockerFileInformation -Path "C:\Program Files\Windows NT\Accessories\wordpad.exe"`.
 
-**To create an app rule and xml file using the AppLocker tool**
+    In this example, you'd get the following info:
+
+    ``` json
+        Path                   Publisher
+        ----                   ---------
+        %PROGRAMFILES%\WINDOWS NT\ACCESSORIES\WORDPAD.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US
+    ```
+    Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter into the **Publisher** box and `WORDPAD.EXE` is the text to enter into the **File** box.
+
+#### Import a list of apps to your Allowed apps list
+For this example, we’re going to add an AppLocker XML file to the **Allowed apps** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
+
+**To create a list of Allowed apps using the AppLocker tool**
 1.	Open the Local Security Policy snap-in (SecPol.msc).
     
 2.	In the left pane, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
 
-    ![Local security snap-in, showing the Packaged app Rules](images/intune-local-security-snapin.png)
+    ![Local security snap-in, showing the Packaged app Rules](images/wip-applocker-secpol-1.png)
 
 3.	Right-click in the right-hand pane, and then click **Create New Rule**.
 
@@ -213,7 +236,7 @@ For this example, we’re going to add an AppLocker XML file to the **App Rules*
 
 4. On the **Before You Begin** page, click **Next**.
 
-    ![Create Packaged app Rules wizard, showing the Before You Begin page](images/intune-applocker-before-begin.png)
+    ![Create Packaged app Rules wizard, showing the Before You Begin page](images/wip-applocker-secpol-wizard-1.png)<!--start here-->
 
 5. On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
 
