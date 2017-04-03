@@ -2090,59 +2090,6 @@ The following fields are available:
 - **devinv**  The file version of the Device inventory component.
 
 
-### Microsoft.Windows.Inventory.Core.DriverPackageExtendedAdd
-
-This event sends inventory component versions for the Device Inventory data.
-
-The following fields are available:
-
-- **Inf**  The inf file name.
-- **OriginalInf**  The original inf file name in the driver package.
-- **Type**  The type of driver package (e.g. inbox, 3rd-party).
-- **ClassGuid**  The Driver class guid.
-- **Class**  The driver class.
-- **Directory**  The directory the driver was installed to.
-- **Date**  The date of the driver package.
-- **Version**  The version of the driver package.
-- **Provider**  The provider of the driver package.
-- **SysFiles**  The list of drivers in the package.
-- **SubmissionId**  The submission id of the driver package.
-- **InventoryVersion**  The version of the inventory file generating the events.
-
-
-### Microsoft.Windows.Inventory.Core.DriverPackageExtendedStartSync
-
-This event event indicates that a new set of DriverPackageExtendedAdd events will be sent.
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory file generating the events.
-
-
-### Microsoft.Windows.Inventory.Core.FileSigningInfoAdd
-
-This event enumerates the signatures of files, either driver packages or application executables. For driver packages, this data is collected on demand via Telecommand to limit it only to unrecognized driver packages, saving time for the client and space on the server. For applications, this data is collected for up to 10 random executables on a system.
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory file generating the events.
-- **FileName**  The file name of the file whose signatures are listed.
-- **FileType**  Either exe or sys, depending on if a driver package or application executable.
-- **DriverPackageStrongName**  Optional. Available only if FileSigningInfo is collected on a driver package.
-- **CatalogSigners**  Signers from catalog. Each signer starts with Chain.
-- **EmbeddedSigners**  Embedded signers. Each signer starts with Chain.
-- **Thumbprint**  Comma separated hash of the leaf node of each signer. Semicolon is used to separate CatalogSigners from EmbeddedSigners. There will always be a trailing comma.
-
-
-### Microsoft.Windows.Inventory.Core.FileSigningInfoStartSync
-
-This event indicates that a new set of FileSigningInfoAdd events will be sent.
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory file generating the events.
-
-
 ### Microsoft.Windows.Inventory.Core.InventoryApplicationAdd
 
 This event sends basic metadata about an application on the system to help keep Windows up to date.
