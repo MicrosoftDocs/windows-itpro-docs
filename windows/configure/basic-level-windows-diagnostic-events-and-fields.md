@@ -1984,7 +1984,6 @@ This event sends inventory component versions for the Device Inventory data.
 
 The following fields are available:
 
-- **devinv.dll**  The file version of the Device inventory component.
 - **aeinv**  The version of the App inventory component.
 - **devinv**  The file version of the Device inventory component.
 
