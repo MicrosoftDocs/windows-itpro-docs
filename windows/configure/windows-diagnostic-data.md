@@ -82,8 +82,6 @@ This type of data includes software installation and update information on the d
 
 This type of data includes diagnostic details about Microsoft applications that provide media consumption functionality (such as Groove Music), and is not intended to capture user viewing, listening or reading habits.
 
-### Content Consumption
-
 | Category Name | Examples |
 | - | - |
 | Movies | Information about movie consumption functionality on the device such as:<br><ul><li>Video Width, height, color pallet, encoding (compression) type, and encryption type</li><li>Instructions for how to stream content for the user -- the smooth streaming manifest of chunks of content files that must be pieced together to stream the content based on screen resolution and bandwidth</li><li>URL for a specific two second chunk of content if there is an error</li><li>Full screen viewing mode details</li></ul> |
