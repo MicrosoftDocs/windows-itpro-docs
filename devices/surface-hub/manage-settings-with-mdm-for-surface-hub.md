@@ -97,6 +97,7 @@ The following tables include info on Windows 10 settings that have been validate
 | Allow camera | Keep this enabled for Skype for Business. | [Camera/AllowCamera](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Camera_AllowCamera) | Yes. <br>  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Allow location | Keep this enabled to support apps such as Maps. | [System/AllowLocation](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#System_AllowLocation) | Yes. <br> . |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Allow telemetry | Keep this enabled to help Microsoft improve Surface Hub. | [System/AllowTelemetry](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#System_AllowTelemetry) | Yes. <br>  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+| Allow USB Drives | Keep this enabled to support USB drives on Surface Hub | [System/AllowStorageCard](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#system-allowstoragecard) | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 #### Browser settings
