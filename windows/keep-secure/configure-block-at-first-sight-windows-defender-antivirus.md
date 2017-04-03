@@ -135,7 +135,7 @@ You may choose to disable the Block at First Sight feature if you want to retain
 
 5.  Expand the tree through **Windows components > Windows Defender Antivirus > MAPS**.
 
-1.  Double-click the **Configure the ‘Block at First Sight’ feature** setting and set the option to **Disabled**.
+1.  Double-click the **Configure the 'Block at First Sight' feature** setting and set the option to **Disabled**.
 
     > [!NOTE]
     > Disabling the Block at First Sight feature will not disable or alter the pre-requisite group policies.
@@ -143,7 +143,7 @@ You may choose to disable the Block at First Sight feature if you want to retain
 
 ## Related topics
 
-- [Windows Defender in Windows 10](windows-defender-in-windows-10.md)
+- [Windows Defender in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
 
 

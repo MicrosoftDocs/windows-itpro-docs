@@ -26,72 +26,15 @@ Store for Business has a set of roles that help admins and employees manage acce
 
 This table lists the global user accounts and the permissions they have in the Store for Business.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left"></th>
-<th align="left">Global Administrator</th>
-<th align="left">User Administrator</th>
-<th align="left">Billing Administrator</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Sign up for Store for Business</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Assign roles</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Modify company profile settings</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Manage Store for Business settings</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Acquire apps</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"></td>
-<td align="left"><p>X</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Distribute apps</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"></td>
-<td align="left"><p>X</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Sign policies and catalogs</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-
+|                                |  Global Administrator | Billing Administrator |
+| ------------------------------ | --------------------- | --------------------- |
+| Sign up for Store for Business |  X                    |                       |
+| Modify company profile settings | X                    |                       |
+| Acquire apps                   |  X                    | X                     |
+| Distribute apps                |  X                    | X                     |
  
 
--   **Global Administrator** - IT Pros with this account have full access to Store for Business. They can do everything allowed in the Store for Business Admin role, plus they can sign up for the Store for Business, and assign Store for Business roles to other employees.
-
--   **User Administrator** - IT Pros with this account can assign Store for Business roles to other employees, as long as the User Administrator also has the Store for Business Admin role.
+-   **Global Administrator** - IT Pros with this account have full access to Store for Business. They can do everything allowed in the Store for Business Admin role, plus they can sign up for the Store for Business.
 
 -   **Billing Administrator** - IT Pros with this account have the same permissions as the Store for Business Purchaser role.
 
@@ -101,74 +44,15 @@ Store for Business has a set of roles that help IT admins and employees manage a
 
 This table lists the roles and their permissions.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left"></th>
-<th align="left">Admin</th>
-<th align="left">Purchaser</th>
-<th align="left">Device Guard signer</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Sign up for Store for Business</p></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Assign roles</p></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Modify company profile settings</p></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Manage Store for Business settings</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Acquire apps</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Distribute apps</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Sign policies and catalogs</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Sign Device Guard changes</p></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>X</p></td>
-</tr>
-</tbody>
-</table>
+|                                |  Admin | Purchaser | Device Guard signer |
+| ------------------------------ | ------ | --------  | ------------------- |
+| Assign roles                   | X      |           |                     |
+| Manage Store for Business settings |  X |           |                     |
+| Acquire apps                   | X      | X         |                     |
+| Distribute apps                | X      | X         |                     |
+| Sign policies and catalogs     | X      |           |                     |
+| Sign Device Guard changes      | X      |           |  X                   |
 
- 
 
 These permissions allow people to:
 
@@ -184,7 +68,7 @@ These permissions allow people to:
 
     -   Offline licensing
 
-    -   Permissions (view only)
+    -   Permissions
 
     -   Private store
 
@@ -196,12 +80,10 @@ These permissions allow people to:
 
 1.  Sign in to Store for Business.
 
-    **Note**  
-    You need to be a Global Administrator, or have the Store for Business Admin role to access the **Permissions** page.
-
-    To assign roles, you need to be a Global Administrator or a Store Administrator that is also a User Administrator.
-
-     
+    >[!Note]
+    >You need to be a Global Administrator, or have the Store for Business Admin role to access the **Permissions** page. 
+    
+    To assign roles, you need to be a Global Administrator or a Store Administrator.
 
 2.  Click **Settings**, and then choose **Permissions**.
 
@@ -211,9 +93,7 @@ These permissions allow people to:
 
     ![Image showing Assign roles to people box in Windows Store for Business.](images/wsfb-permissions-assignrole.png)
 
-4.  
-
-    If you are not finding the name you want, you might need to add people to your Azure AD directory. For more information, see [Manage user accounts in the Windows Store for Business.](manage-users-and-groups-windows-store-for-business.md)
+4.  If you are not finding the name you want, you might need to add people to your        Azure AD directory. For more information, see [Manage user accounts in the     Windows Store for Business.](manage-users-and-groups-windows-store-for-business.md)
 
  
 

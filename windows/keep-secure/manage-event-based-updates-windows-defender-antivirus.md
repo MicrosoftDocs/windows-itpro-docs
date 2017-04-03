@@ -124,7 +124,7 @@ You can also use Group Policy, PowerShell, or WMI to configure Windows Defender 
 
 **Use PowerShell cmdlets to download updates when Windows Defender AV is not present:**
 
-Use the following cmdlets to enable cloud-delivered protection:
+Use the following cmdlets:
 
 ```PowerShell
 Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
@@ -171,9 +171,13 @@ If you have enabled cloud-delivered protection, Windows Defender AV will send fi
 
 ## Related topics
 
+- [Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
 - [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
-- [Update and manage Windows Defender in Windows 10](get-started-with-windows-defender-for-windows-10.md)
-- [Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-in-windows-10.md)
+- [Manage Windows Defender Antivirus protection and definition updates](manage-protection-updates-windows-defender-antivirus.md)
+- [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
+- [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
+- [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 
 
 

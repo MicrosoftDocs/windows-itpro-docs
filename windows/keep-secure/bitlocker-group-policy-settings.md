@@ -32,7 +32,7 @@ The following sections provide a comprehensive list of BitLocker Group Policy se
 
 The following policy settings can be used to determine how a BitLocker-protected drive can be unlocked.
 
--   [Allow devices with Secure Boot and protect DMS ports to opt out of preboot PIN](#bkmk-hstioptout)
+-   [Allow devices with Secure Boot and protected DMA ports to opt out of preboot PIN](#bkmk-hstioptout)
 -   [Allow network unlock at startup](#bkmk-netunlock)
 -   [Require additional authentication at startup](#bkmk-unlockpol1)
 -   [Allow enhanced PINs for startup](#bkmk-unlockpol2)
@@ -86,7 +86,7 @@ The following policies are used to support customized deployment scenarios in yo
 -   [Allow access to BitLocker-protected fixed data drives from earlier versions of Windows](#bkmk-depopt4)
 -   [Allow access to BitLocker-protected removable data drives from earlier versions of Windows](#bkmk-depopt5)
 
-### <a href="" id="bkmk-hstioptout"></a>Allow devices with Secure Boot and protect DMS ports to opt out of preboot PIN
+### <a href="" id="bkmk-hstioptout"></a>Allow devices with Secure Boot and protected DMA ports to opt out of preboot PIN
 
 This policy setting allows users on devices that are compliant with InstantGo or the Microsoft Hardware Security Test Interface (HSTI) to not have a PIN for preboot authentication.
  
@@ -137,7 +137,8 @@ This setting enables an exception to the PIN-required policy on secure hardware.
 
 ### <a href="" id="bkmk-netunlock"></a>Allow network unlock at startup
 
-This policy controls a portion of the behavior of the Network Unlock feature in BitLocker. This policy is required to enable BitLocker Network Unlock on a network because it allows clients running BitLocker to create the necessary network key protector during encryption. This policy is used in addition to the BitLocker Drive Encryption Network Unlock Certificate security policy (located in the **Public Key Policies** folder of Local Computer Policy) to allow systems that are connected to a trusted network to properly utilize the Network Unlock feature.
+This policy controls a portion of the behavior of the Network Unlock feature in BitLocker. This policy is required to enable BitLocker Network Unlock on a network because it allows clients running BitLocker to create the necessary network key protector during encryption. 
+This policy is used in addition to the BitLocker Drive Encryption Network Unlock Certificate security policy (located in the **Public Key Policies** folder of Local Computer Policy) to allow systems that are connected to a trusted network to properly utilize the Network Unlock feature.
  
 <table>
 <colgroup>

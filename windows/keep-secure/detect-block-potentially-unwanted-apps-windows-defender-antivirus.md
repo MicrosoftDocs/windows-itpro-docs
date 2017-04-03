@@ -46,7 +46,7 @@ PUAs are blocked when a user attempts to download or install the detected file, 
 - The file is in the %downloads% folder
 - The file is in the %temp% folder
 
-The file is placed in the quarantine section so it won’t run. 
+The file is placed in the quarantine section so it won't run. 
 
 When a PUA is detected on an endpoint, the endpoint will present a notification to the user ([unless notifications have been disabled](configure-notifications-windows-defender-antivirus.md)) in the same format as normal threat detections (prefaced with "PUA:"). 
 
@@ -66,7 +66,7 @@ You can enable the PUA protection feature with System Center Configuration Manag
 
 You can also use the PUA audit mode to detect PUA without blocking them. The detections will be captured in the Windows event log. 
 
-This feature is useful if your company is conducting an internal software security compliance check and you’d like to avoid any false positives.
+This feature is useful if your company is conducting an internal software security compliance check and you'd like to avoid any false positives.
 
 
 **Use Configuration Manager to configure the PUA protection feature:**

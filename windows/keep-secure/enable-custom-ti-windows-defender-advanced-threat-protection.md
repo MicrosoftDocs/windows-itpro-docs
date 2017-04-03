@@ -41,7 +41,8 @@ You’ll need to use the access token in the Authorization header when doing RES
 
 ## Related topics
 - [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-- [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
-- [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
-- [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
+- [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [PowerShell code examples for the custom threat intelligence API](powershell-example-code-windows-defender-advanced-threat-protection.md)
+- [Python code examples for the custom threat intelligence API](python-example-code-windows-defender-advanced-threat-protection.md)
+- [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)

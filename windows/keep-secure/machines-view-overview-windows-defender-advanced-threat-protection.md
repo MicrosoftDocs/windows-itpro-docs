@@ -1,6 +1,6 @@
 ---
 title: View and organize the Windows Defender ATP machines list
-description: Learn about the available features that you can use from the Machines list such as sorting, filtering, and exporting the machine list which can enhance investigations.
+description: Learn about the available features that you can use from the Machines list such as sorting, filtering, and exporting the list to enhance investigations.
 keywords: sort, filter, export, csv, machine name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

@@ -16,7 +16,8 @@ author: trudyha
 
 When you sign up for a [Minecraft: Education Edition](http://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](http://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Windows Store for Business, a private version of Windows Store associated with your Azure Active Directory (Azure AD) tenant. Your Store for Business is only displayed to members of your organization.
 
-> **Note**: If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans). 
+>[!Note]
+>If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans).
 
 ## Add Minecraft to your Windows Store for Business 
 
@@ -103,7 +104,7 @@ After you've finished the purchase, you can find your invoice by checking **Mine
 The **Payment Instructions** section on the first page of the invoice has information on invoice amount, due date, and how to pay with electronic funds transfer, or with a check. 
 
 
-## <a href="" id="distribute-minecraft"></a>Distribute Minecraft
+## Distribute Minecraft
 
 After Minecraft: Education Edition is added to your Windows Store for Business inventory, you have three options:
 
@@ -113,6 +114,7 @@ After Minecraft: Education Edition is added to your Windows Store for Business i
 
 Admins can also add Minecraft: Education Edition to the private store. This allows people in your organization to install the app from the private store. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store). 
 
+<!---
 Here's the page you'll see for Minecraft: Education Edition licenses purchased directly through the Windows Store for Business. 
 
 ![App distribution options - individual copies](images/mc-install-for-me-teacher.png)
@@ -120,11 +122,34 @@ Here's the page you'll see for Minecraft: Education Edition licenses purchased d
 Here's the page you'll see for Minecraft: Education Edition licenses purchased through volume licensing.
 
 ![App distribution options - individual copies](images/wsfb-minecraft-vl.png)
+--->
+
+### Configure automatic subscription assignment
+
+For Minecraft: Education Edition, you can use auto assign subscription to control whether or not you assign a subscription when a member of your organization signs in to the app. When auto assign subscription is on, people from your organization who don’t have a subscription will automatically get one when they sign in to Minecraft: Education Edition. When auto assign subscription is off, people from your organization will get the trial version when they sign in to Minecraft: Education Edition. This allows you to control which people use the trial version, and which people are assigned a full subscription. You can always reassign subscriptions, but planning ahead will reduce time spent managing apps and subscriptions. By default, automatic subscription assignment is turned on.
+
+**How to turn off automatic subscription assignment**
+
+>[!Note]
+>The version of the Minecraft: Education Edition page in the Store for Business will be different depending on which Store for Business flight you are using. 
+
+1. Sign in to Microsoft Store for Business
+2. Click Manage.
+    
+    You'll see Minecraft: Education Edition product page.
+     
+    ![Minecraft Education Edition product page with auto assign control highlighted.](images/mcee-auto-assign-legacy.png)
+ 
+ -Or-
+ 
+    ![Minecraft Education Edition product page with auto assign control highlighted.](images/mcee-auto-assign-bd.png)
+    
+3. Slide the **Auto assign subscription** or click **Turn off auto assign subscription**.     
 
 ### Install for me
 You can install the app on your PC. This gives you a chance to test the app and know how you might help others in your organization use the app.   
 
-1. Sign in to Windows Store for Business. 
+1. Sign in to Microsoft Store for Business. 
 2. Click **Manage**, and then click **Install**.
 
     ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)

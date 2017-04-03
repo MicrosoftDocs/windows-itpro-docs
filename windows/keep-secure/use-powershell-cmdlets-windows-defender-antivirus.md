@@ -27,10 +27,14 @@ PowerShell cmdlets are most useful in Windows Server environments that don't rel
 > [!NOTE]
 > PowerShell cmdlets should not be used as a replacement for a full network policy management infrastructure, such as [System Center Configuration Manager](https://technet.microsoft.com/en-us/library/gg682129.aspx), [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), or [Windows Defender Group Policy ADMX templates](https://support.microsoft.com/en-us/kb/927367).
 
+Changes made with PowerShell will affect local settings on the endpoint where the changes are deployed or made. This means that dployments of policy with Group Policy, System Center Configuration Manager, or Microsoft Intune can overwrite changes made with PowerShell. 
+
+You can [configure which settings can be overriden locally  with local policy overrides](configure-local-policy-overrides-windows-defender-antivirus.md).
+
 PowerShell is typically installed under the folder _%SystemRoot%\system32\WindowsPowerShell_.
 
 
-**Use Windows Defender PowerShell cmdlets**
+**Use Windows Defender AV PowerShell cmdlets:**
 
 1. Click **Start**, type **powershell**, and press **Enter**.
 2. Click **Windows PowerShell** to open the interface. 

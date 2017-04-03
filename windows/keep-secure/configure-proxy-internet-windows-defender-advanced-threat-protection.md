@@ -37,8 +37,8 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 
 
  - Manual static proxy configuration:
-    - WinHTTP configured using netsh command
     - Registry based configuration
+    - WinHTTP configured using netsh command – Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
 
 ## Configure the proxy server manually using a registry-based static proxy
 Configure a registry-based static proxy to allow only Windows Defender ATP sensor to report telemetry and communicate with Windows Defender ATP services if a computer is not be permitted to connect to the Internet.
@@ -61,7 +61,8 @@ The registry value `DisableEnterpriseAuthProxy` should be set to 1.
 Use netsh to configure a system-wide static proxy.
 
 > [!NOTE]
-> This will affect all applications including Windows services which use WinHTTP with default proxy.
+> - This will affect all applications including Windows services which use WinHTTP with default proxy.</br>
+> - Laptops that are changing topology (for example: from office to home) will malfunction with netsh. Use the registry-based static proxy configuration.
 
 1. Open an elevated command-line:
 

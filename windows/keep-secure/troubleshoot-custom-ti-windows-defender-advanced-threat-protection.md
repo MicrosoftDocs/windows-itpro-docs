@@ -46,8 +46,9 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 
 ## Related topics
-- [Understand threat intelligence](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-- [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Create custom threat intelligence](custom-ti-api-windows-defender-advanced-threat-protection.md)
-- [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md)
-- [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
+- [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+- [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
+- [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [PowerShell code examples for the custom threat intelligence API](powershell-example-code-windows-defender-advanced-threat-protection.md)
+- [Python code examples for the custom threat intelligence API](python-example-code-windows-defender-advanced-threat-protection.md)
+- [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
