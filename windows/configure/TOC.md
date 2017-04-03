@@ -1,5 +1,7 @@
 # [Configure Windows 10](index.md)
 ## [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md)
+## [Basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md)
+## [Windows 10, version 1703 diagnostic data](windows-diagnostic-data.md)
 ## [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 ## [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md)
 ## [Configure kiosk and shared devices running Windows 10 desktop editions](kiosk-shared-pc.md)
