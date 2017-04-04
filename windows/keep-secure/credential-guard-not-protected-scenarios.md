@@ -35,7 +35,8 @@ Some ways to store credentials are not protected by Credential Guard, including:
 When Credential Guard is deployed on a VM, Credential Guard protects secrets from attacks inside the VM. However, it does not provide additional protection from privileged system attacks originating from the host.
 
 >[!NOTE] 
-Windows logon cached password verifiers do not qualify as credentials because they cannot be presented to another computer for authentication, and can only be used locally to verify credentials. They are stored in the registry on the local computer and provide validation for credentials when a domain-joined computer cannot connect to AD DS during user logon. These “cached logons”, or more specifically, cached domain account information, can be managed using the security policy setting **Interactive logon: Number of previous logons to cache** if a domain controller is not available.
+Windows logon cached password verifiers (commonly called "cached credentials")
+do not qualify as credentials because they cannot be presented to another computer for authentication, and can only be used locally to verify credentials. They are stored in the registry on the local computer and provide validation for credentials when a domain-joined computer cannot connect to AD DS during user logon. These “cached logons”, or more specifically, cached domain account information, can be managed using the security policy setting **Interactive logon: Number of previous logons to cache** if a domain controller is not available.
 
 ## Additional mitigations
 
