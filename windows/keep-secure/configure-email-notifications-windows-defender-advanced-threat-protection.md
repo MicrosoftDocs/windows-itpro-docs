@@ -48,7 +48,7 @@ Check that email recipients are able to receive the email notifications by selec
 
 Here's an example email notification:
 
-![Image of example email notification]()
+![Image of example email notification](images/atp-example-email-notification.png)
 
 ## Remove email recipients
 
