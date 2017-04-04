@@ -14,8 +14,8 @@ localizationpriority: high
 # Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality
 **Applies to:**
 
--   Windows 10, version 1607 and later
--   Windows 10 Mobile
+-   Windows 10, version 1703
+-   Windows 10 Mobile, version 1703
 
 You can add apps to your Windows Information Protection (WIP) protected app list using the Microsoft Intune custom URI functionality and AppLocker. For more info about how to create a custom URI using Intune, [Windows 10 custom policy settings in Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkID=691330).
 
@@ -23,31 +23,43 @@ You can add apps to your Windows Information Protection (WIP) protected app list
 >Results can be unpredictable if you configure your policy using both the UI and the Custom URI method together. We recommend using a single method for each policy.
 
 ## Add Store apps
-1.  Go to the AppLocker UI by opening a command line window and running secpol.msc. The local security policy MMC snap-in opens showing the **Security Settings**.
+1.	Open the Local Security Policy snap-in (SecPol.msc).
+    
+2.	In the left pane, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**, and then right-click and choose **Automatically Generate Rules**.
 
-2. In the left pane, expand **Application Control Policies**, expand **AppLocker**, right-click **Packaged app Rules**, and then click **Automatically Generate Rules**.
+    The **Automatically Generate Packaged app Rules** wizard opens, letting you create WIP-protected app policies for all the installed apps on a device or for packaged apps within a specific folder.
 
-    The **Automatically Generate Packaged app Rules** wizard opens, letting you create WIP-protected app polices for all of the installed apps on the device or for packaged apps within a specific folder.
+    ![Local security snap-in, showing the Packaged app Rules](images/wip-applocker-secpol-auto-generate-rules.png)
 
-3.  In the **Folder and Permissions** screen, keep the default value of **Everyone** in the **User or security group that the rules will apply to** box.
+3.  In the **Applications and Permissions** screen, keep the default of **Everyone** in the **User or security group that the rules will apply to** box.
 
-    You want to keep this value because your WIP policy needs to apply to the device being managed, not a single user or group of users.
+    Keeping this value applies your WIP policy to the managed device, not to a single user or group of users.
 
-4.  Type the name you’ll use to tag the rules into the **Name to identify this set of rules** box, and then click **Next**.
+4. Type the name you’ll use to tag the rules into the **Name to identify this set of rules** box, and then click **Next**.
 
-    This name should be easily recognizable, such as *WIP_StoreApps_Rules*.
+    This name should be easily recognizable. For the purposes of this topic, we've used *WIP_StoreApps_Rules*.
 
-5.  In the **Rules Preferences** screen, keep the default settings, and then click **Next** to start generating the rules.
+    ![Local security snap-in, showing the Applications and Permissions screen](images/wip-applocker-secpol-app-and-permissions.png)
+
+5. In the **Rule Preferences** screen, keep the default settings, and then click **Next** to start generating the rules.
 
     >[!Note]
     >We recommend that you use **Publisher** rules because they only work with apps you've specifically defined and they can be configured to not require updating simply because a new version came out.<p>If you can't use **Publisher** rules, we then recommend that you use **File hash** rules. **File hash** rules are a secure alternative that can be used on unsigned code. The primary disadvantage to **File hash** is that every time a binary changes (such as, through servicing updates or upgrades), you'll need to create a new rule.
 
+    ![Local security snap-in, showing the Rule Preferences screen](images/wip-applocker-secpol-rule-preferences.png)
+
 6.  In the **Review Rules** screen, look over your rules to make sure they’re right, and then click **Create** to add them to your collection of rules.
+
+    ![Local security snap-in, showing the Review Rules screen](images/wip-applocker-secpol-review-rules.png)
 
 7.  In the left pane, right-click **AppLocker**, click **Export Policies**, go to where you want to save the XML file and type a file name, click **Save**, and then clear your AppLocker rules.
 
     >[!Important]
     >Be aware that what you're saving are the actual AppLocker rules using your local policy. You don't want to apply these rules to your employee devices, you just want to use them to create and export the XML content. You must delete the AppLocker rules before you apply your policy.
+
+    ![Local security snap-in, showing the Export Policies option](images/wip-applocker-secpol-export-rules.png)
+
+<!-- Need new info for here, this is the old process
 
 8.  Open the Intune administration console, and go to the **Policy** node, click **Add Policy** from the **Tasks** area, go to **Windows**, click the **Custom Configuration (Windows 10 Desktop and Mobile and later)** policy, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
 
@@ -68,24 +80,30 @@ You can add apps to your Windows Information Protection (WIP) protected app list
     ```
 
 15. Click **OK** to close the **Add or edit OMA-URI Setting** box, and then click **Save Policy**.<p>
-After saving the policy, you’ll need to deploy it to your employee’s devices. For more info, see the [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md) topic.
+After saving the policy, you’ll need to deploy it to your employee’s devices. For more info, see the [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md) topic. -->
 
 ## Add Desktop apps
-1.  Open the Local Security Policy snap-in (SecPol.msc).
+1.	Open the Local Security Policy snap-in (SecPol.msc).
+    
+2.	In the left pane, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**, and then right-click and choose **Automatically Generate Rules**.
 
-2.  In the left pane, expand **Application Control Policies**, expand **AppLocker**, right-click **Executable Rules**, and then click **Automatically Generate Rules**.
+    The **Automatically Generate Packaged app Rules** wizard opens, letting you create WIP-protected app policies for all the installed apps on a device or for packaged apps within a specific folder.
 
-    The **Automatically Generate Executable Rules** wizard opens, letting you create WIP-protected app polices by analyzing the files within a specific folder.
+    ![Local security snap-in, showing the Packaged app Rules](images/wip-applocker-secpol-auto-generate-rules.png)
 
-3.  In the **Folder and Permissions** screen, keep the default value of **Everyone** in the **User or security group that the rules will apply to** box.
+3.  In the **Applications and Permissions** screen, keep the default of **Everyone** in the **User or security group that the rules will apply to** box.
 
-    You want to keep this value because your WIP policy needs to apply to the device being managed, not a single user or group of users.
+    Keeping this value applies your WIP policy to the managed device, not to a single user or group of users.
 
-4.  Type the name you’ll use to tag the rules into the **Name to identify this set of rules** box, and then click **Next**.
+4. Type the name you’ll use to tag the rules into the **Name to identify this set of rules** box, and then click **Next**.
 
-    This name should be easily recognizable, such as *WIP_DesktopApps_Rules*.
+    This name should be easily recognizable. For the purposes of this topic, we've used *WIP_DesktopApps_Rules*.
 
-5.  In the **Rules Preferences** screen, keep the default settings, and then click **Next** to start generating the rules.
+    ![Local security snap-in, showing the Applications and Permissions screen](images/wip-applocker-secpol-app-and-permissions-desktop.png)
+
+5. In the **Rule Preferences** screen, keep the default settings, and then click **Next** to start generating the rules.
+
+    ![Local security snap-in, showing the Rule Preferences screen](images/wip-applocker-secpol-rule-preferences.png)
 
     >[!Important]
     >You can also use **Path** rules instead of the **File hash** if you have concerns about unsigned files potentially changing the hash value if they're updated in the future.
@@ -95,11 +113,16 @@ After saving the policy, you’ll need to deploy it to your employee’s devices
 
 6.  In the **Review Rules** screen, look over your rules to make sure they’re right, and then click **Create** to add them to your collection of rules.
 
+    ![Local security snap-in, showing the Review Rules screen](images/wip-applocker-secpol-review-rules.png)
+
 7.  In the left pane, right-click **AppLocker**, click **Export Policies**, go to where you want to save the XML file and type a file name, click **Save**, and then clear your AppLocker rules.
 
     >[!Important]
     >Be aware that what you're saving are the actual AppLocker rules using your local policy. You don't want to apply these rules to your employee devices, you just want to use them to create and export the XML content. You must delete the AppLocker rules before you apply your policy.
 
+    ![Local security snap-in, showing the Export Policies option](images/wip-applocker-secpol-export-rules-desktop.png)
+
+<!-- Need new info for here, this is the old process
 8.  Open the Intune administration console, and go to the **Policy** node, click **Add Policy** from the **Tasks** area, go to **Windows**, click the **Custom Configuration (Windows 10 Desktop and Mobile and later)** policy, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
 
 9.  Type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
@@ -120,7 +143,7 @@ After saving the policy, you’ll need to deploy it to your employee’s devices
 
 15. Click **OK** to close the **Add or edit OMA-URI Setting** box, and then click **Save Policy**.
 
-    After saving the policy, you’ll need to deploy it to your employee’s devices. For more info, see the [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md) topic.
+    After saving the policy, you’ll need to deploy it to your employee’s devices. For more info, see the [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md) topic. -->
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
