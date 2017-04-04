@@ -464,7 +464,7 @@ After you create and deploy your WIP policy to your employees, Windows begins to
 
 2. In the **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
 
-       ![Microsoft Intune, Upload your Data Recovery Agent (DRA) certificate](images/wip-azure-advanced-settings-efsdra.png)
+    ![Microsoft Intune, Upload your Data Recovery Agent (DRA) certificate](images/wip-azure-advanced-settings-efsdra.png)
 
 ### Choose your optional WIP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you’ll be asked to decide if you want to add any optional WIP settings.
@@ -473,8 +473,8 @@ After you've decided where your protected apps can access enterprise data on you
 
 1.	Choose to set any or all optional settings:
 
-       ![Microsoft Intune, Choose if you want to include any of the optional settings](images/wip-azure-advanced-settings-optional.png)
-       
+    ![Microsoft Intune, Choose if you want to include any of the optional settings](images/wip-azure-advanced-settings-optional.png)
+    
         - **Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile.** Determines whether to encrypt enterprise data using a key that's protected by an employee's PIN code on a locked device. Apps won't be able to read corporate data when the device is locked. The options are:
         
             - **On (recommended).** Turns on the feature and provides the additional protection.
