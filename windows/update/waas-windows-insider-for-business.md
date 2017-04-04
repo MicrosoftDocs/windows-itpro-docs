@@ -22,7 +22,7 @@ For many IT pros, gaining visibility into feature updates early—before they’
 The Windows Insider Program for Business gives you the opportunity to: 
 * Get early access to Windows Insider Preview Builds 
 * Provide feedback to Microsoft in real-time via the Feedback Hub app.
-* Sign-in with coproate credentials (Azure Active Directory) and increase the visibility of your organization's feedback with Microsoft – especially on features that support your productivity and business needs.
+* Sign-in with corporate credentials (Azure Active Directory) and increase the visibility of your organization's feedback with Microsoft – especially on features that support your productivity and business needs.
 
 
 Microsoft recommends that all organizations have at least a few PCs enrolled in the Windows Insider Program, to include the Windows Insider Program in their deployment plans and to provide feedback on any issues they encounter to Microsoft via our Feedback Hub app. 
@@ -126,7 +126,7 @@ Go to **Settings > Updates & Security**. Review available updates or select **Ch
 ### Make sure Windows is activated 
 Go to **Settings > Updates & Security > Activation** to verify Windows is activated.
 
-### Make sure your coporate account in AAD is connected to your device
+### Make sure your corporate account in AAD is connected to your device
 Open **Settings \ Accounts \ Access work or school**. If your PC is not listed as connected to your account in AAD, click Connect and enter your AAD account.
 
 ### Make sure you have selected a flight ring

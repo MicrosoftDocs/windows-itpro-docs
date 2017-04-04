@@ -342,13 +342,8 @@ The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
 - **ActiveNetworkConnection**  Is the device an active network device?
-- **CosDeviceRating**  An enumeration that indicates if there is a driver on the target operating system.
-- **CosDeviceSolution**  An enumeration that indicate how a driver on the target operating system is available.
-- **CosDeviceSolutionUrl**  Empty string
-- **CosPopulatedFromId**  The expected uplevel driver matching ID based on driver coverage data.
 - **IsBootCritical**  Is the device boot critical?
 - **SdbEntries**  An array of fields indicating the SDB entries that apply to this device.
-- **UplevelInboxDriver**  Is there a driver uplevel for this device?
 - **WuDriverCoverage**  Is there a driver uplevel for this device according to Windows Update?
 - **WuDriverUpdateID**  The Windows Update ID of the applicable uplevel driver.
 - **WuPopulatedFromID**  The expected uplevel driver matching ID based on driver coverage from Windows Update.
@@ -1984,7 +1979,6 @@ This event sends inventory component versions for the Device Inventory data.
 
 The following fields are available:
 
-- **devinv.dll**  The file version of the Device inventory component.
 - **aeinv**  The version of the App inventory component.
 - **devinv**  The file version of the Device inventory component.
 
@@ -2006,13 +2000,13 @@ The following fields are available:
 - **MsiPackageCode**  A GUID that describes the MSI Package. Multiple 'Products' (apps) can make up an MsiPackage. Example: {1BCC5142-D98C-430B-B74A-484A0328A7CE}
 - **HiddenArp**  Indicates whether a program hides itself from showing up in ARP. Example: TRUE
 - **OSVersionAtInstallTime**  The four octets from the OS version at the time of the application's install. Example:
-- **PackageFamilyName**  The package family name for a Windows Store app.
 - **RootDirPath**  The path to the root directory where the program was installed. Example:  %ProgramFiles% (x86)\Neudesic\Azure Storage Explorer 6
 - **InstallDate**  The date the application was installed (a best guess based on folder creation date heuristics) Example: 4/12/2015 01:27:52
 - **InstallDateMsi**  The install date if the application was installed via MSI. Passed as an array. Example: 4/11/2015  00:00:00
 - **InstallDateFromLinkFile**  The estimated date of install based on the links to the files.  Passed as an array. Example: 4/8/2015  01:06:11
 - **InstallDateArpLastModified**  The date of the registry ARP key for a given application. Hints at install date but not always accurate. Passed as an array. Example: 4/11/2015  00:00:00
 - **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
+- **objectInstanceId**  ProgramId (a hash of Name, Version, Publisher, and Language of an application used to identify it). Example: 00000144865763f3de24c2ae5a289fde6db300000904
 - **PackageFullName**  The package full name for a Store application.  Example: Microsoft.Hexic_1.2.0.36_x86__8wekyb3d8bbwe
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **StoreAppType**  A sub-classification for the type of Windows Store app, such as UWP or Win8StoreApp.
@@ -2048,7 +2042,6 @@ The following fields are available:
 - **ModelId**  A model GUID.
 - **PrimaryCategory**  The primary category for the device container.
 - **Categories**  A comma separated list of functional categories in which the container belongs.
-- **Icon**  The path or index to the icon file.
 - **IsConnected**  For physically a attached device, this value is the same as IsPresent. For wireless a device, this value represents a communication link.
 - **IsActive**  Is the device connected, or has it been seen in the last 14 days?
 - **IsPaired**  Does the device container require pairing?
@@ -2059,6 +2052,7 @@ The following fields are available:
 - **ModelNumber**  The model number for the device container.
 - **Manufacturer**  The manufacturer name for the device container.
 - **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
+- **objectInstanceId**  ContainerId. Example: {552dd320-0dae-2794-2b41-df42fee22488}
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 
@@ -2124,8 +2118,6 @@ This event sends additional metadata about a PNP device that is specific to a pa
 
 The following fields are available:
 
-- **audio.captureDriver**  Audio device capture driver.  Example: hdaudio.inf:db04a16ce4e8d6ee:HdAudModel:10.0.14887.1000:hdaudio\func_01
-- **audio.renderDriver**  Audio device render driver.  Example: hdaudio.inf:db04a16ce4e8d6ee:HdAudModel:10.0.14889.1001:hdaudio\func_01
 - **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **Audio_CaptureDriver**  The Audio device capture driver endpoint.
