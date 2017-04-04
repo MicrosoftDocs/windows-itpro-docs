@@ -19,6 +19,8 @@ Enterprises often need to apply custom configurations to devices for their users
 | Topic | Description |
 | --- | --- |
 | [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md) | Use this article to make informed decisions about how you can configure Windows telemetry in your organization. |
+| [Basic level Windows diagnostic data](windows-diagnostic-data.md) | Learn about diagnostic data that is collected at the basic level in Windows 10, version 1703. |
+| [Windows 10, version 1703 diagnostic data](windows-diagnostic-data.md) | Learn about the types of data that is collected at the full level in Windows 10, version 1703. |
 | [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Learn about the network connections that Windows components make to Microsoft and also the privacy settings that affect data that is shared with either Microsoft or apps and how they can be managed by an IT Pro. |
 | [Manage Wi-Fi Sense in your company](manage-wifi-sense-in-enterprise.md) | Wi-Fi Sense automatically connects you to Wi-Fi, so you can get online quickly in more places. It can connect you to open Wi-Fi hotspots it knows about through crowdsourcing, or to Wi-Fi networks your contacts have shared with you by using Wi-Fi Sense. The initial settings for Wi-Fi Sense are determined by the options you chose when you first set up your PC with Windows 10.  |
 | [Configure kiosk and shared devices running Windows 10 desktop editions](kiosk-shared-pc.md) | These topics help you configure Windows 10 devices to be shared by multiple users or to run as a kiosk device that runs a single app. |
