@@ -28,8 +28,7 @@ The Group Policy settings in this topic are related to three types of process mi
 
 - **Structured Exception Handling Overwrite Protection (SEHOP)** is designed to block exploits that use the Structured Exception Handler (SEH) overwrite technique. Because this protection mechanism is provided at run-time, it helps to protect apps regardless of whether they have been compiled with the latest improvements. For more information, see [Structured Exception Handling Overwrite Protection](overview-of-threat-mitigations-in-windows-10.md#structured-exception-handling-overwrite-protection).
 
-- **Address Space Layout Randomization (ASLR)** loads DLLs into random memory addresses at boot time to mitigate against malware that’s designed to attack specific memory locations, where specific DLLs are expected to be loaded. For more information, see [Address Space Layout Randomization](overview-of-threat-mitigations-in-windows-10.md#address-space-layout-randomization).
-
+- **Address Space Layout Randomization (ASLR)** loads DLLs into random memory addresses at boot time to mitigate against malware that’s designed to attack specific memory locations, where specific DLLs are expected to be loaded. 
     To find additional ASLR protections in the table below, look for `IMAGES` or `ASLR`.
 
 The following procedure describes how to use Group Policy to override individual **Process Mitigation Options** settings.
