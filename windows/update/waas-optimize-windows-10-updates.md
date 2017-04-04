@@ -49,7 +49,7 @@ Two methods of peer-to-peer content distribution are available in Windows 10.
 Windows 10 update downloads can be large because every package contains all previously released fixes to ensure consistency and simplicity. Windows has been able to reduce the size of Windows Update downloads with a feature called Express.
 
 ### How Microsoft supports Express
-- **Express on System Center Configuration Manager** starting with version 1702 of Configuration Manager.
+- **Express on System Center Configuration Manager** starting with version 1702 of Configuration Manager and Windows 10, version 1703 or 1607 with the April 2017 cumulative update.
 - **Express on WSUS Standalone**
 
   Express update delivery is available on [all support versions of WSUS](https://technet.microsoft.com/library/cc708456(v=ws.10).aspx).

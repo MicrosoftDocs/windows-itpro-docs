@@ -22,3 +22,5 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 - [Use the Lockdown Designer app to create a Lockdown XML file](mobile-lockdown-designer.md)
 - [Add image for secondary tiles](start-secondary-tiles.md)
 - [Provision PCs with apps](provision-pcs-with-apps.md)
+- [Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md)
+- [Windows 10, version 1703 Diagnostic Data](windows-diagnostic-data.md)
