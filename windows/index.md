@@ -80,6 +80,7 @@ This library provides the core content that IT pros need to evaluate, plan, depl
 
   These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time.
 
+
   - [Read more about Windows as a Service](update/waas-overview.md)
   - <a href='images/WaaS-infographic.pdf'>Download the WaaS infographic</a>
 
