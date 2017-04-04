@@ -116,7 +116,7 @@ The following table lists what action you need to take before you perform an upg
 <td align="left"><p>Decrypt</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Upgrade to Windows 10</p></td>
+<td align="left"><p>[Feature updates](https://technet.microsoft.com/itpro/windows/manage/waas-quick-start) for Windows 10 (example: Windows 10, version 1703)</p></td>
 <td align="left"><p>Suspend</p></td>
 </tr>
 <tr class="odd">
@@ -129,7 +129,7 @@ The following table lists what action you need to take before you perform an upg
 <td align="left"><p>Suspend</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Software and operating system updates from Windows Update</p></td>
+<td align="left"><p>Software and [quality updates](https://technet.microsoft.com/itpro/windows/manage/waas-quick-start) from Windows Update</p></td>
 <td align="left"><p>Nothing</p></td>
 </tr>
 </tbody>
