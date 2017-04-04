@@ -84,7 +84,6 @@ This library provides the core content that IT pros need to evaluate, plan, depl
   
   - <a href='https://technet.microsoft.com/en-us/itpro/windows/manage/waas-overview'>Read more about Windows as a Service</a>
 
-  - <a href='images/WaaS-infographic.pdf'>Download the WaaS infographic</a>
   </td>
 </tr>
 <table>
