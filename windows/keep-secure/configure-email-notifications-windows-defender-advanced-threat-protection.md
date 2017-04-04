@@ -46,6 +46,10 @@ The email notifications feature is turned off by default. Turn it on to start re
 
 Check that email recipients are able to receive the email notifications by selecting **Send test email**. All recipients in the list will receive the test email.
 
+Here's an example email notification:
+
+![Image of example email notification]()
+
 ## Remove email recipients
 
 1. Select the trash bin icon beside the email address you’d like to remove.
