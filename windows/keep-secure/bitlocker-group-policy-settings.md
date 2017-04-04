@@ -32,7 +32,7 @@ The following sections provide a comprehensive list of BitLocker Group Policy se
 
 The following policy settings can be used to determine how a BitLocker-protected drive can be unlocked.
 
--   [Allow devices with Secure Boot and protect DMA ports to opt out of preboot PIN](#bkmk-hstioptout)
+-   [Allow devices with Secure Boot and protected DMA ports to opt out of preboot PIN](#bkmk-hstioptout)
 -   [Allow network unlock at startup](#bkmk-netunlock)
 -   [Require additional authentication at startup](#bkmk-unlockpol1)
 -   [Allow enhanced PINs for startup](#bkmk-unlockpol2)
@@ -86,7 +86,7 @@ The following policies are used to support customized deployment scenarios in yo
 -   [Allow access to BitLocker-protected fixed data drives from earlier versions of Windows](#bkmk-depopt4)
 -   [Allow access to BitLocker-protected removable data drives from earlier versions of Windows](#bkmk-depopt5)
 
-### <a href="" id="bkmk-hstioptout"></a>Allow devices with Secure Boot and protect DMA ports to opt out of preboot PIN
+### <a href="" id="bkmk-hstioptout"></a>Allow devices with Secure Boot and protected DMA ports to opt out of preboot PIN
 
 This policy setting allows users on devices that are compliant with InstantGo or the Microsoft Hardware Security Test Interface (HSTI) to not have a PIN for preboot authentication.
  

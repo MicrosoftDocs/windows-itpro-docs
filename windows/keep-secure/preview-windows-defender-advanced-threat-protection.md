@@ -21,7 +21,6 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 The Windows Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
 
@@ -50,4 +49,4 @@ The following features are included in the preview release:
 - [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md) - Create custom threat intelligence alerts using the threat intelligence API to generate alerts that are applicable to your organization.
 
 >[!NOTE]
-> All response actions require machines to be on the latest Windows 10 Insider Preview build.
+> All response actions require machines to be on the latest Windows 10, version 1703.

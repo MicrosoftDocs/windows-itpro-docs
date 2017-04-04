@@ -24,7 +24,7 @@ localizationpriority: high
 Understand what data fields are exposed as part of the alerts API and how they map to the Windows Defender ATP portal.
 
 
-#	Alert API fields and portal mapping
+##	Alert API fields and portal mapping
 Field numbers match the numbers in the images below.
 
 Portal label  | SIEM field name | Description
@@ -75,7 +75,7 @@ Portal label  | SIEM field name | Description
 
 ## Related topics
 - [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Configure Splunk](configure-splunk-windows-defender-advanced-threat-protection.md)
-- [Configure ArcSight](configure-arcsight-windows-defender-advanced-threat-protection.md)
+- [Configure Splunk to pull Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
+- [Configure ArcSight to pull Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
 - [Pull Windows Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)

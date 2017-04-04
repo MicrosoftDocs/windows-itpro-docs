@@ -164,7 +164,7 @@ When a user is configured with a mandatory profile, Windows 10 starts as though 
 
 - [Manage Windows 10 Start layout and taskbar options](windows-10-start-layout-options-and-policies.md)
 - [Lock down Windows 10 to specific apps](lock-down-windows-10-to-specific-apps.md)
-- [Windows Spotlight on the lock screen](windows-spotlight.md)
+- [Windows Spotlight on the lock screen](../configure/windows-spotlight.md)
 - [Configure devices without MDM](configure-devices-without-mdm.md)
 
 
