@@ -79,9 +79,9 @@ This library provides the core content that IT pros need to evaluate, plan, depl
   <td valign=top width:40%; border:0;>The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers.
 
   These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time.
-  - [Read more about Windows as a Service](manage/waas-overview.md)
+  - [Read more about Windows as a Service](update/waas-overview.md)
 
-  - <a href=''>Download the WaaS infographic</a>
+  - <a href='images/WaaS-infographic.pdf'>Download the WaaS infographic</a>
 
   </td>
   <td valign=top width:60%; border:0;><center><img style='border:thin silver solid' src="images/w10-WaaS-poster.png" alt="Get to know Windows as a Service (WaaS) " title="Get to know Windows as a Service (WaaS)" /></center></td>
