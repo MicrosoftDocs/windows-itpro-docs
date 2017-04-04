@@ -193,3 +193,4 @@ HTTP error code | Description
 - [Configure Splunk to pull Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
 - [Configure ArcSight to pull Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
 - [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot SIEM tool integration issues](troubleshoot-siem-windows-defender-advanced-threat-protection.md)
