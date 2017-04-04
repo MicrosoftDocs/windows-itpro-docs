@@ -29,8 +29,12 @@ After you’ve set up Intune for your organization, you must create a WIP-specif
 
 2.  In the **App policy** screen, click **Add a policy**, and then fill out the fields:
     - **Name.** Type a name (required) for your new policy.
+
     - **Description.** Type an optional description.
+
     - **Platform.** Choose **Windows 10** as the supported platform for your policy.
+
+    - **Enrollment state.** Choose **With enrollment** as the enrollment state for your policy.
 
         ![Microsoft Azure Intune management console: Create your new policy in the Add a policy pane](images/wip-azure-portal-add-policy.png)
 
