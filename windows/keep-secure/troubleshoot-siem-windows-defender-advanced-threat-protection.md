@@ -27,7 +27,7 @@ This page provides detailed steps to troubleshoot issues you might encounter.
 
 
 ## Learn how to get a new client secret
-If your client secret expires or if you've misplaced the copy provided when you were enabling the custom threat intelligence application,  you'll need to get a new secret.
+If your client secret expires or if you've misplaced the copy provided when you were enabling the SIEM tool application,  you'll need to get a new secret.
 
 1. Login to the [Azure management portal](https://ms.portal.azure.com).
 
@@ -35,7 +35,7 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 3. Select your tenant.
 
-4. Click **Application**, then select your custom threat intelligence application. The application name is **GET FROM SME**.
+4. Click **Application**, then select your SIEM tool application. The application name is `https://windowsdefenderatpsiemconnector`.
 
 5. Select **Keys** section, then provide a key description and specify the key validity duration.
 
@@ -46,7 +46,7 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 ## Related topics
 - [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
-- [Configure Splunk](configure-splunk-windows-defender-advanced-threat-protection.md)
-- [Configure ArcSight](configure-arcsight-windows-defender-advanced-threat-protection.md)
+- [Configure Splunk to pull Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
+- [Configure ArcSight to pull Windows Defender ATP alerts](configure-arcsight-windows-defender-advanced-threat-protection.md)
 - [Windows Defender ATP alert API fields](api-portal-mapping-windows-defender-advanced-threat-protection.md)
 - [Pull Windows Defender ATP alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
