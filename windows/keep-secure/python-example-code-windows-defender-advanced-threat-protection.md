@@ -38,20 +38,45 @@ The following example demonstrates how to obtain an Azure AD access token that y
 
 Replace the *auth_url*, *client_id*, and *client_secret* values with the ones you got from **Preferences settings** page in the portal:
 
-[!code[CustomTIAPI](./code/example.py#L1-L17)]
+```
+import json
+import requests
+from pprint import pprint
+
+auth_url="Your Authorization URL"
+client_id="Your Client ID"
+client_secret="Your Client Secret"
+
+payload = {"resource": "https://graph.windows.net",
+           "client_id": client_id,
+           "client_secret": client_secret,
+           "grant_type": "client_credentials"}
+
+response = requests.post(auth_url, payload)
+token = json.loads(response.text)["access_token"]
+```
 
 
 <span id="session-object" />
 ## Step 2: Create request session object
 Add HTTP headers to the session object, including the Authorization header with the token that was obtained.
 
-[!code[CustomTIAPI](./code/example.py#L19-L23)]
+```
+with requests.Session() as session:
+    session.headers = {
+        'Authorization': 'Bearer {}'.format(token),
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'}
+```
 
 <span id="calls" />
 ## Step 3: Create calls to the custom threat intelligence API
 After adding HTTP headers to the session object, you can now create calls to the API. The following example demonstrates how you can view all the alert definition entities:
 
-[!code[CustomTIAPI](./code/example.py#L25-L26)]
+```
+    response = session.get("https://ti.securitycenter.windows.com/V1.0/AlertDefinitions")
+    pprint(json.loads(response.text))
+```
 
 The response is empty on initial use of the API.
 
@@ -59,18 +84,95 @@ The response is empty on initial use of the API.
 ## Step 4: Create a new alert definition
 The following example demonstrates how you to create a new alert definition.
 
-[!code[CustomTIAPI](./code/example.py#L28-L39)]
+```
+    alert_definition = {"Name": "The alert's name",
+                          "Severity": "Low",
+                          "InternalDescription": "An internal description of the alert",
+                          "Title": "The Title",
+                          "UxDescription": "Description of the alerts",
+                          "RecommendedAction": "The alert's recommended action",
+                          "Category": "Trojan",
+                          "Enabled": True}
+
+      response = session.post(
+          "https://ti.securitycenter.windows.com/V1.0/AlertDefinitions",
+          json=alert_definition)
+```
 
 <span id="ioc" />
 ## Step 5: Create a new indicator of compromise
 You can now use the alert ID obtained from creating a new alert definition to create a new indicator of compromise.
 
-[!code[CustomTIAPI](./code/example.py#L41-L51)]
+```
+    alert_definition_id = json.loads(response.text)["Id"]
+
+      ioc = {'Type': "Sha1",
+             'Value': "dead1111eeaabbccddeeaabbccddee11ffffffff",
+             'DetectionFunction': "Equals",
+             'Enabled': True,
+             "AlertDefinition@odata.bind": "AlertDefinitions({0})".format(alert_definition_id)}
+
+      response = session.post(
+          "https://ti.securitycenter.windows.com/V1.0/IndicatorsOfCompromise",
+          json=ioc)
+```
 
 ## Complete code
 You can use the complete code to create calls to the API.
 
-[!code[CustomTIAPI](./code/example.py#L1-L53)]
+```syntax
+import json
+import requests
+from pprint import pprint
+
+auth_url="Your Authorization URL"
+client_id="Your Client ID"
+client_secret="Your Client Secret"
+
+payload = {"resource": "https://graph.windows.net",
+           "client_id": client_id,
+           "client_secret": client_secret,
+           "grant_type": "client_credentials"}
+
+response = requests.post(auth_url, payload)
+token = json.loads(response.text)["access_token"]
+
+with requests.Session() as session:
+    session.headers = {
+        'Authorization': 'Bearer {}'.format(token),
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'}
+
+    response = session.get("https://ti.securitycenter.windows.com/V1.0/AlertDefinitions")
+    pprint(json.loads(response.text))
+
+    alert_definition = {"Name": "The alert's name",
+                        "Severity": "Low",
+                        "InternalDescription": "An internal description of the alert",
+                        "Title": "The Title",
+                        "UxDescription": "Description of the alerts",
+                        "RecommendedAction": "The alert's recommended action",
+                        "Category": "Trojan",
+                        "Enabled": True}
+
+    response = session.post(
+        "https://ti.securitycenter.windows.com/V1.0/AlertDefinitions",
+        json=alert_definition)
+
+    alert_definition_id = json.loads(response.text)["Id"]
+
+    ioc = {'Type': "Sha1",
+           'Value': "dead1111eeaabbccddeeaabbccddee11ffffffff",
+           'DetectionFunction': "Equals",
+           'Enabled': True,
+           "AlertDefinition@odata.bind": "AlertDefinitions({0})".format(alert_definition_id)}
+
+    response = session.post(
+        "https://ti.securitycenter.windows.com/V1.0/IndicatorsOfCompromise",
+        json=ioc)
+
+    pprint(json.loads(response.text))
+```
 
 ## Related topics
 - [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
