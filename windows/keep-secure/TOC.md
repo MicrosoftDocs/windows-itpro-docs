@@ -21,7 +21,6 @@
 #### [Deploy code integrity policies: steps](deploy-code-integrity-policies-steps.md)
 #### [Deploy catalog files to support code integrity policies](deploy-catalog-files-to-support-code-integrity-policies.md)
 ### [Deploy Device Guard: enable virtualization-based security](deploy-device-guard-enable-virtualization-based-security.md)
-## [Mitigate threats by using Windows 10 security features](overview-of-threat-mitigations-in-windows-10.md)
 ## [Protect derived domain credentials with Credential Guard](credential-guard.md)
 ### [How Credential Guard works](credential-guard-how-it-works.md)
 ### [Credential Guard Requirements](credential-guard-requirements.md)
