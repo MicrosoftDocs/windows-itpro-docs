@@ -29,13 +29,9 @@ Some ways to store credentials are not protected by Credential Guard, including:
 -   Third-party security packages
 -   Digest and CredSSP credentials
     -   When Credential Guard is enabled, neither Digest nor CredSSP have access to users' logon credentials. This implies no Single Sign-On use for these protocols.
--   Supplied credentials for NTLM authentication are not protected. If a user is prompted for and enters credentials for NTLM authentication, these credentials are vulnerable to be read from LSASS memory. Note that these same credentials are vulnerable to key loggers as well.
-
->[!NOTE] 
-When Credential Guard is deployed on a VM, Credential Guard protects secrets from attacks inside the VM. However, it does not provide additional protection from privileged system attacks originating from the host.
-
->[!NOTE] 
-Windows logon cached password verifiers (commonly called "cached credentials")
+-   Supplied credentials for NTLM authentication are not protected. If a user is prompted for and enters credentials for NTLM authentication, these credentials are vulnerable to be read from LSASS memory. Note that these same credentials are vulnerable to key loggers as well.- 
+-  When Credential Guard is deployed on a VM, Credential Guard protects secrets from attacks inside the VM. However, it does not provide additional protection from privileged system attacks originating from the host.
+-  Windows logon cached password verifiers (commonly called "cached credentials")
 do not qualify as credentials because they cannot be presented to another computer for authentication, and can only be used locally to verify credentials. They are stored in the registry on the local computer and provide validation for credentials when a domain-joined computer cannot connect to AD DS during user logon. These “cached logons”, or more specifically, cached domain account information, can be managed using the security policy setting **Interactive logon: Number of previous logons to cache** if a domain controller is not available.
 
 ## Additional mitigations
