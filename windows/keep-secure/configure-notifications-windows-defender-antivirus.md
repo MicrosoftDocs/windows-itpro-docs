@@ -31,7 +31,7 @@ In Windows 10, application notifications about malware detection and remediation
 
 Notifications will appear on endpoints when manually triggered and scheduled scans are completed and threats are detected. These notifications will also be seen in the **Notification Center**, and a summary of scans and threat detections will also appear at regular time intervals.
 
-You can also configure how standard notifications appear on endpoints, such as notfications for reboot or when a threat has been detected and remediated.
+You can also configure how standard notifications appear on endpoints, such as notifications for reboot or when a threat has been detected and remediated.
 
 ## Configure the additional notifications that appear on endpoints
 

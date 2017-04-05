@@ -16,7 +16,7 @@ author: iaanw
 
 If you are using System Center Configuration Manager or Microsoft Intune to manage the endpoints on your network, you can also use them to manage Windows Defender AV.
 
-In both cases, the protection will be labelled as Endpoint Protection, although the engine is the same as that used by Windows Defender AV.
+In some cases, the protection will be labeled as Endpoint Protection, although the engine is the same as that used by Windows Defender AV.
 
 See the [Endpoint Protection](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-protection) library on docs.microsoft.com for information on using Configuration Manager.
 

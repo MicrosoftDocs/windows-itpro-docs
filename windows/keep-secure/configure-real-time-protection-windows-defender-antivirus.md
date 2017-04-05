@@ -37,7 +37,7 @@ author: iaanw
 
 Always-on protection consists of real-time protection, behavior monitoring, and heuristics to identify malware based on known suspicious and malicious activities. 
 
-These activities include events such as processes making unusual changes to existing files, modifiying or creating automatic startup registry keys and startup locations (also known as auto-start extensibilty points, or ASEPs), and other changes to the file system or file structure.
+These activities include events such as processes making unusual changes to existing files, modifying or creating automatic startup registry keys and startup locations (also known as auto-start extensibility points, or ASEPs), and other changes to the file system or file structure.
 
 
 ## Configure and enable always-on protection
@@ -65,10 +65,10 @@ Real-time protection | Monitor file and program activity on your computer | The 
 Real-time protection | Scan all downloaded files and attachments | Downloaded files and attachments are automatically scanned. This operates in addition to Windows Defender SmartScreen filter, which scans files before and during downloading | Enabled
 Real-time protection | Turn on process scanning whenever real-time protection is enabled | You can independently enable the AV engine to scan running processes for suspicious modifications or behaviors. This is useful if you have disabled real-time protection | Enabled
 Real-time protection | Turn on behavior monitoring | The AV engine will monitor file processes, file and registry changes, and other events on your endpoints for suspicious and known malicious activity | Enabled
-Real-time protection | Turn on raw volume write notifications | Information about raw volume writes will be analysed by behavior monitoring | Enabled
+Real-time protection | Turn on raw volume write notifications | Information about raw volume writes will be analyzed by behavior monitoring | Enabled
 Real-time protection | Define the maximum size of downloaded files and attachments to be scanned | You can define the size in kilobytes | Enabled 
-Real-time protection | Configure monitoring for incoming and outgoing file and program activity | Specify whether monitoring should occur on incoming, outgoing, both, or neither direction. This is relevant for Windows Server installations where you have defined specific servers or Server Roles that see large amounts of file changes in only one direction and you want to improve network performance. Note that fully updated endpoints (and servers) on a network will see little performance impact irrespective of the number or direction of file changes. 
-Scan	| Turn on heuristics | Heuristic protection will disable or block suspicious activity immediately before the AV engine is asked to detect the activity | Enabled (both directions)
+Real-time protection | Configure monitoring for incoming and outgoing file and program activity | Specify whether monitoring should occur on incoming, outgoing, both, or neither direction. This is relevant for Windows Server installations where you have defined specific servers or Server Roles that see large amounts of file changes in only one direction and you want to improve network performance. Note that fully updated endpoints (and servers) on a network will see little performance impact irrespective of the number or direction of file changes. | Enabled (both directions) 
+Scan	| Turn on heuristics | Heuristic protection will disable or block suspicious activity immediately before the AV engine is asked to detect the activity | Enabled
 Root | Allow antimalware service to startup with normal priority | You can lower the priority of the AV engine, which may be useful in lightweight deployments where you want to have as lean a startup process as possible. This may impact protection on the endpoint. | Enabled
 Root | Allow antimalware service to remain running always | If protection updates have been disabled, you can set Windows Defender AV to still run. This lowers the protection on the endpoint. | Disabled
 
@@ -81,7 +81,7 @@ Root | Allow antimalware service to remain running always | If protection update
 
 The main real-time protection capability is enabled by default, but you can disable it with Group Policy:
 
-**Use Group Policy to diasble real-time protection:**
+**Use Group Policy to disable real-time protection:**
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
