@@ -9,7 +9,7 @@ author: jdeckerMS
 localizationpriority: medium
 ---
 
-# Configure HoloLens using a provisioning package
+# Configure HoloLens using a provisioning package test
 
 Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. The Windows Assessment and Deployment Kit (ADK) for Windows 10 includes the Imaging and Configuration Designer (ICD), a tool for configuring images and runtime settings which are then built into provisioning packages. 
 

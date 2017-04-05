@@ -21,7 +21,6 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 With the Windows Defender ATP threat intelligence API, you can create custom threat intelligence alerts that can help you keep track of possible attack activities in your organization.  
 
@@ -46,7 +45,71 @@ This step will guide you in creating an alert definition and an IOC for a malici
     NOTE:<br>
     Make sure you replace the `authUrl`, `clientId`, and `clientSecret` values with your details which you saved in when you enabled the threat intelligence application.
 
-    [!code[ExampleScript](./code/example-script.ps1#L1-L60)]
+    ```
+    $authUrl = 'Your Authorization URL'
+    $clientId = 'Your Client ID'
+    $clientSecret = 'Your Client Secret'
+
+
+    Try
+    {
+        $tokenPayload = @{
+            "resource" = 'https://graph.windows.net'
+            "client_id" = $clientId
+            "client_secret" = $clientSecret
+            "grant_type"='client_credentials'}
+
+        "Fetching an access token"
+        $response = Invoke-RestMethod $authUrl -Method Post -Body $tokenPayload
+        $token = $response.access_token
+        "Token fetched successfully"
+
+        $headers = @{
+            "Content-Type" = "application/json"
+            "Accept" = "application/json"
+            "Authorization" = "Bearer {0}" -f $token }
+
+        $apiBaseUrl = "https://ti.securitycenter.windows.com/V1.0/"
+
+        $alertDefinitionPayload = @{
+            "Name" = "Test Alert"
+            "Severity" = "Medium"
+            "InternalDescription" = "A test alert used to demonstrate the Windows Defender ATP TI API feature"
+            "Title" = "Test alert."
+            "UxDescription" = "This is a test alert based on a sample custom alert definition. This alert was triggered manually using a provided test command. It indicates that the Threat Intelligence API has been properly enabled."
+            "RecommendedAction" = "No recommended action for this test alert."
+            "Category" = "SuspiciousNetworkTraffic"
+            "Enabled" = "true"}
+
+        "Creating an Alert Definition"
+        $alertDefinition =
+            Invoke-RestMethod ("{0}AlertDefinitions" -f $apiBaseUrl) `
+                -Method Post -Headers $headers -Body ($alertDefinitionPayload | ConvertTo-Json)
+
+        "Alert Definition created successfully"
+        $alertDefinitionId = $alertDefinition.Id
+
+        $iocPayload = @{
+            "Type"="IpAddress"
+            "Value"="52.184.197.12"
+            "DetectionFunction"="Equals"
+            "Enabled"="true"
+            "AlertDefinition@odata.bind"="AlertDefinitions({0})" -f $alertDefinitionId }
+
+        "Creating an Indicator of Compromise"
+        $ioc =
+            Invoke-RestMethod ("{0}IndicatorsOfCompromise" -f $apiBaseUrl) `
+                 -Method Post -Headers $headers -Body ($iocPayload | ConvertTo-Json)
+        "Indicator of Compromise created successfully"
+
+        "All done!"
+    }
+    Catch
+    {
+        'Something went wrong! Got the following exception message: {0}' -f $_.Exception.Message
+    }
+
+    ```
 
 3. Run the script and verify that the operation succeeded in the results the window. Wait up to 20 minutes until the new or updated alert definition propagates to the detection engines.
 
@@ -83,3 +146,11 @@ This step will guide you in exploring the custom alert in the portal.
 
 > [!NOTE]
 > It can take up to 15 minutes for the alert to appear in the portal.
+
+## Related topics
+- [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
+- [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
+- [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [PowerShell code examples for the custom threat intelligence API](powershell-example-code-windows-defender-advanced-threat-protection.md)
+- [Python code examples for the custom threat intelligence API](python-example-code-windows-defender-advanced-threat-protection.md)
+- [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)

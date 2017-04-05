@@ -1,5 +1,5 @@
 ---
-title: Use the custom threat intelligence API to create custom alerts for your organization
+title: Use the custom threat intelligence API to create custom alerts
 description: Use the threat intelligence API in Windows Defender Advanced Threat Protection to create custom alerts
 keywords: threat intelligence, alert definitions, indicators of compromise
 search.product: eADQiWindows 10XVcnh
@@ -21,8 +21,6 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
-
 Understand threat intelligence concepts, then enable the custom threat intelligence application so that you can proceed to create custom threat intelligence alerts that are specific to your organization.
 
 You can use the code examples to guide you in creating calls to the custom threat intelligence API.
@@ -36,5 +34,4 @@ Topic | Description
 [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md) | Create custom threat intelligence alerts so that you can generate specific alerts that are applicable to your organization.
 [PowerShell code examples](powershell-example-code-windows-defender-advanced-threat-protection.md) | Use the PowerShell code examples to guide you in using the custom threat intelligence API.
 [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md) | Use the Python code examples to guide you in using the custom threat intelligence API.
-[Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md) | Create custom threat intelligence alerts that can help you keep track of possible attack activities in your organization. 
 [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md) | Learn how to address possible issues you might encounter while using the threat intelligence API.

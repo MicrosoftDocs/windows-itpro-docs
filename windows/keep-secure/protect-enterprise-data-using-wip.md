@@ -14,7 +14,7 @@ localizationpriority: high
 # Protect your enterprise data using Windows Information Protection (WIP)
 **Applies to:**
 
--   Windows 10, version 1607
+-   Windows 10, version 1607 and later
 -   Windows 10 Mobile
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
@@ -28,7 +28,7 @@ You’ll need this software to run WIP in your enterprise:
 
 |Operating system | Management solution |
 |-----------------|---------------------|
-|Windows 10, version 1607 | Microsoft Intune<br>-OR-<br>System Center Configuration Manager<br>-OR-<br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt697634.aspx) documentation.|
+|Windows 10, version 1607 or later | Microsoft Intune<br>-OR-<br>System Center Configuration Manager<br>-OR-<br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt697634.aspx) documentation.|
 
 ## What is enterprise data control?
 Effective collaboration means that you need to share data with others in your enterprise. This sharing can be from one extreme where everyone has access to everything without any security, all the way to the other extreme where people can’t share anything and it’s all highly secured. Most enterprises fall somewhere in between the two extremes, where success is balanced between providing the necessary access with the potential for improper data disclosure.
@@ -93,8 +93,8 @@ WIP gives you a new way to manage data policy enforcement for apps and documents
     -   **Helping prevent accidental data disclosure to removable media.** WIP helps prevent enterprise data from leaking when it's copied or transferred to removable media. For example, if an employee puts enterprise data on a Universal Serial Bus (USB) drive that also has personal data, the enterprise data remains encrypted while the personal data doesn’t.
 
 -   **Remove access to enterprise data from enterprise-protected devices.** WIP gives admins the ability to revoke enterprise data from one or many MDM-enrolled devices, while leaving personal data alone. This is a benefit when an employee leaves your company, or in the case of a stolen device. After determining that the data access needs to be removed, you can use Microsoft Intune to unenroll the device so when it connects to the network, the user's encryption key for the device is revoked and the enterprise data becomes unreadable.
-    >[!NOTE] 
-    >For management of Surface devices it is recommended that you use the Current Branch of System Center Configuration Manager.<br>System Center Configuration Manager also allows you to revoke enterprise data. However, it does it by performing a factory reset of the device.
+    
+    >**Note**<br>For management of Surface devices it is recommended that you use the Current Branch of System Center Configuration Manager.<br>System Center Configuration Manager also allows you to revoke enterprise data. However, it does it by performing a factory reset of the device.
 
 ## How WIP works
 WIP helps address your everyday challenges in the enterprise. Including:

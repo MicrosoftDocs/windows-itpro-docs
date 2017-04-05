@@ -23,6 +23,8 @@ localizationpriority: high
 
 There are some minimum requirements for onboarding your network and endpoints.
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=technet-wd-atp-abovefoldlink1)
+
 ## Minimum requirements
 You must be on Windows 10, version 1607 at a minimum.
 For more information, see [Windows 10 Enterprise edition](https://www.microsoft.com/en-us/WindowsForBusiness/buy).
@@ -53,10 +55,7 @@ The hardware requirements for Windows Defender ATP on endpoints is the same as t
 #### Internet connectivity
 Internet connectivity on endpoints is required.
 
-SENSE can utilize up to 5MB daily of bandwidth  to communicate with the Windows Defender ATP cloud service and report cyber data.
-
-> [!NOTE]
-> SENSE is the internal name used to refer to the behavioral sensor that powers Windows Defender ATP.
+The Windows Defender ATP sensor can utilize up to 5MB daily of bandwidth  to communicate with the Windows Defender ATP cloud service and report cyber data.
 
 For more information on additional proxy configuration settings see, [Configure Windows Defender ATP endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) .
 
@@ -117,3 +116,5 @@ When Windows Defender is not the active antimalware in your organization and you
 If you're running Windows Defender as the primary antimalware product on your endpoints, the Windows Defender ATP agent will successfully onboard.
 
 If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender ELAM driver is enabled. For more information, see [Ensure that Windows Defender is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-is-not-disabled-by-a-policy).
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=technet-wd-atp-abovefoldlink1)

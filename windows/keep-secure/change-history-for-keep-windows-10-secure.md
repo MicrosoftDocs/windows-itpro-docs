@@ -16,9 +16,15 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 ## March 2017
 |New or changed topic |Description |
 |---------------------|------------|
-|[Protect derived domain credentials with Credential Guard](credential-guard.md) |Updated additional security qualifications.|
-|[Requirements and deployment planning guidelines for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md) |Updated additional security qualifications.|
-
+|[Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |Updated based on Windows 10, version 1703. |
+|[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |Added new content about Azure Rights Management. |
+|[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |Added additional limitations for Windows 10, version 1703. |
+|[Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md)|Added content about recovering data from a cloud environment.|
+|[Protect derived domain credentials with Credential Guard](credential-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
+|[Requirements and deployment planning guidelines for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
+|[Windows Defender SmartScreen overview](windows-defender-smartscreen-overview.md)|New |
+|[Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md)|New |
+|[Use Windows Defender Security Center to set Windows Defender SmartScreen for individual devices](windows-defender-smartscreen-set-individual-device.md)|New |
 
 ## January 2017
 |New or changed topic |Description |
@@ -129,7 +135,6 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 |New or changed topic | Description |
 |----------------------|-------------|
 |[Protect derived domain credentials with Credential Guard](credential-guard.md) |Clarified Credential Guard protections |
-|[Windows 10 security overview](windows-10-security-guide.md) |Added SMB hardening improvements for SYSVOL and NETLOGON connections |
 
 ## March 2016
 
