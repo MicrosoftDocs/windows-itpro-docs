@@ -1029,7 +1029,7 @@ Description of the error. </dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
 <p>NOTE:
 <p>Whenever Windows Defender, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it will restore the following system settings and services which the malware might have changed:<ul>
-<li>Default Internet Explorer or Edge setting</li>
+<li>Default Internet Explorer or Microsoft Edge setting</li>
 <li>User Access Control settings</li>
 <li>Chrome settings</li>
 <li>Boot Control Data</li>
