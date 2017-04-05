@@ -5,11 +5,11 @@ author: eross-msft
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
-title: Available Group Policy and Mobile Data Management (MDM) settings for Microsoft Edge (Microsoft Edge for IT Pros)
+title: Available Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge (Microsoft Edge for IT Pros)
 localizationpriority: high
 ---
 
-# Available Group Policy and Mobile Data Management (MDM) settings for Microsoft Edge
+# Available Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
 
 **Applies to:**
 
@@ -367,7 +367,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
     - If you disable or don’t configure this setting (default), the default app behavior occurs and no additional page appears.
 
-## Using Microsoft Intune to manage your Mobile Data Management (MDM) settings for Microsoft Edge
+## Using Microsoft Intune to manage your Mobile Device Management (MDM) settings for Microsoft Edge
 If you manage your policies using Intune, you'll want to use these MDM policy settings. You can see the full list of available policies, on the [Policy CSP]( https://go.microsoft.com/fwlink/p/?LinkId=722885) page.
 
 > [!NOTE]
@@ -1026,4 +1026,4 @@ These are additional Windows 10-specific MDM policy settings that work with Mic
 
 ## Related topics
 * [Group Policy TechCenter](https://go.microsoft.com/fwlink/p/?LinkId=214514)
-* [Mobile Data Management (MDM) settings]( https://go.microsoft.com/fwlink/p/?LinkId=722885)
+* [Mobile Device Management (MDM) settings]( https://go.microsoft.com/fwlink/p/?LinkId=722885)

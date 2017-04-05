@@ -32,7 +32,7 @@ author: iaanw
 - Windows Defender Security Center app
 
 
-After Windows Defender Antivirus has completed a scan, whether it is an [on-demand](run-scan-windows-defender-antivirus.md) or [scheduled scan](scheduled-catch-up-scans-windows-defender-antivirus.md), the results are recorded and you can view the results. You can also define
+After Windows Defender Antivirus has completed a scan, whether it is an [on-demand](run-scan-windows-defender-antivirus.md) or [scheduled scan](scheduled-catch-up-scans-windows-defender-antivirus.md), the results are recorded and you can view the results. 
 
 
 **Use Configuration Manager to review Windows Defender AV scan results:**
@@ -54,7 +54,7 @@ See [How to monitor Endpoint Protection status](https://docs.microsoft.com/en-us
 
 **Use PowerShell cmdlets to review Windows Defender AV scan results:**
 
-The following cmdlet will return each detection on the endpoint. If there are multiple detection of the same threat, each detection will be listed separately, based on the time of each detection:
+The following cmdlet will return each detection on the endpoint. If there are multiple detections of the same threat, each detection will be listed separately, based on the time of each detection:
 
 ```PowerShell
 Get-MpThreatDetection

@@ -31,6 +31,8 @@ author: iaanw
 
 Windows Defender Offline is an antimalware scanning tool that lets you boot and run a scan from a trusted environment. The scan runs from outside the normal Windows kernel so it can target malware that attempts to bypass the Windows shell, such as viruses and rootkits that infect or overwrite the master boot record (MBR).
 
+You can use Windows Defender Offline if you suspect a malware infection, or you want to confirm a thorough clean of the endpoint after a malware outbreak.
+
 In Windows 10, Windows Defender Offline can be run with one click directly from the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md). In previous versions of Windows, a user had to install Windows Defender Offline to bootable media, restart the endpoint, and load the bootable media.
 
 ## Pre-requisites and requirements

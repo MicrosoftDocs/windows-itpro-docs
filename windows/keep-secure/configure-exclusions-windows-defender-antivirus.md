@@ -35,7 +35,7 @@ author: iaanw
 
 You can exclude certain files, folders, processes, and process-opened files from being scanned by Windows Defender Antivirus. 
 
-The exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md), [on-demand scans](run-scan-windows-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md). Exclusions for process-opened files only aply to real-time protection.
+The exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md), [on-demand scans](run-scan-windows-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md). Exclusions for process-opened files only apply to real-time protection.
 
 Exclusions can be useful to avoid incorrect detections on files or software that are unique or customized to your organization.
 

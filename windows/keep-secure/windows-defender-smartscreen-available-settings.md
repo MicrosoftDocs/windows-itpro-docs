@@ -209,7 +209,7 @@ To better help you protect your organization, we recommend turning on and using 
 
 - [Security technologies in Windows 10](https://technet.microsoft.com/itpro/windows/keep-secure/security-technologies)
 
-- [Available Group Policy and Mobile Data Management (MDM) settings for Microsoft Edge](https://technet.microsoft.com/itpro/microsoft-edge/available-policies)
+- [Available Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](https://technet.microsoft.com/itpro/microsoft-edge/available-policies)
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

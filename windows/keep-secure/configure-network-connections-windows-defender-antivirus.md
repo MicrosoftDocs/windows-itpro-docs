@@ -26,7 +26,7 @@ author: iaanw
 
 To ensure Windows Defender Antivirus cloud-delivered protection works properly, you need to configure your network to allow connections between your endpoints and certain Microsoft servers.
 
-This topic lists the connections that must be allowed, including firewall rules, and provides instructions for validating your connection. This will help ensure you receive the best protection from our cloud-delivered protection services.
+This topic lists the connections that must be allowed, such as by using firewall rules, and provides instructions for validating your connection. This will help ensure you receive the best protection from our cloud-delivered protection services.
 
 See the Enterprise Mobility and Security blog post [Important changes to Microsoft Active Protection Services endpoint](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/important-changes-to-microsoft-active-protection-service-maps-endpoint/) for some details about network connectivity.
 
@@ -167,7 +167,7 @@ If you are using Microsoft Edge, you'll also see a notification message:
 
 ![Microsoft Edge informing the user that malware was found](images/defender/wdav-bafs-edge.png)
 
-A similar message occurs if you are uding Internet Explorer:
+A similar message occurs if you are using Internet Explorer:
 
 ![Windows Defender Antivirus notification informing the user that malware was found](images/defender/wdav-bafs-ie.png)
 

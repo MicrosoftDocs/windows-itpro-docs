@@ -52,7 +52,7 @@ You can also randomize the times when each endpoint checks and downloads protect
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates** and configure the following settings:
 
-    1.  Double-click the **Specify the interval to check for definition updates** setting and set the option to **Enabled**. Enter the nuber of hours between updates. Click **OK**.
+    1.  Double-click the **Specify the interval to check for definition updates** setting and set the option to **Enabled**. Enter the number of hours between updates. Click **OK**.
     2. Double-click the **Specify the day of the week to check for definition updates** setting and set the option to **Enabled**. Enter the day of the week to check for updates. Click **OK**.
     3. Double-click the **Specify the time to check for definition updates** setting and set the option to **Enabled**. Enter the time when updates should be checked. The time is based on the local time of the endpoint. Click **OK**.
 

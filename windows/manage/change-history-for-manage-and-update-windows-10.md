@@ -23,7 +23,7 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 - [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md) 
 - [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md)
 - [Automatically cleanup unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md) 
-- [Available Mobile Data Management (MDM) settings for App-V](appv-available-mdm-settings.md) 
+- [Available Mobile Device Management (MDM) settings for App-V](appv-available-mdm-settings.md) 
 
 
 ## March 2017

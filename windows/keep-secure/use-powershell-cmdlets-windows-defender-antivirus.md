@@ -27,9 +27,9 @@ PowerShell cmdlets are most useful in Windows Server environments that don't rel
 > [!NOTE]
 > PowerShell cmdlets should not be used as a replacement for a full network policy management infrastructure, such as [System Center Configuration Manager](https://technet.microsoft.com/en-us/library/gg682129.aspx), [Group Policy Management Console](https://technet.microsoft.com/en-us/library/cc731212.aspx), or [Windows Defender Group Policy ADMX templates](https://support.microsoft.com/en-us/kb/927367).
 
-Changes made with PowerShell will affect local settings on the endpoint where the changes are deployed or made. This means that dployments of policy with Group Policy, System Center Configuration Manager, or Microsoft Intune can overwrite changes made with PowerShell. 
+Changes made with PowerShell will affect local settings on the endpoint where the changes are deployed or made. This means that deployments of policy with Group Policy, System Center Configuration Manager, or Microsoft Intune can overwrite changes made with PowerShell. 
 
-You can [configure which settings can be overriden locally  with local policy overrides](configure-local-policy-overrides-windows-defender-antivirus.md).
+You can [configure which settings can be overridden locally  with local policy overrides](configure-local-policy-overrides-windows-defender-antivirus.md).
 
 PowerShell is typically installed under the folder _%SystemRoot%\system32\WindowsPowerShell_.
 
@@ -38,9 +38,10 @@ PowerShell is typically installed under the folder _%SystemRoot%\system32\Window
 
 1. Click **Start**, type **powershell**, and press **Enter**.
 2. Click **Windows PowerShell** to open the interface. 
-    > [!NOTE]
-    > You may need to open an administrator-level version of PowerShell. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
 3. Enter the command and parameters.
+
+> [!NOTE]
+> You may need to open an administrator-level version of PowerShell. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
 
 To open online help for any of the cmdlets type the following:
 
