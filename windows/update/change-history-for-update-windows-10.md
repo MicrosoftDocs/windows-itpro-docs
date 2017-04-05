@@ -15,5 +15,10 @@ This topic lists new and updated topics in the [Update Windows 10](index.md) doc
 
 ## RELEASE: Windows 10, version 1703
 
-The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update).
+The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). The following new topics have been added:
+* [Windows Insider Program for Business](waas-windows-insider-for-business.md)
+* [Windows Insider Program for Business using Azure Active Directory](waas-windows-insider-for-business-aad.md)
+* [Windows Insider Program for Business Frequently Asked Questions](waas-windows-insider-for-business-faq.md)
+
+
 
