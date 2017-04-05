@@ -116,7 +116,7 @@ Get even more out of the Feedback Hub by signing in to the Feedback Hub using th
 >[!IMPORTANT]
 >With the current version of the Feedback Hub app, we need the user's consent to access their AAD account profile data (We read their name, organizational tenant ID and user ID). When they sign in for the first time with the AAD account, they will se a popup asking for their permissions. Once agreed, everything will work fine and that user won't be asked for permissions again.
 >
-> If something goes wrong, it is possible that users aren't enabled to give persmissions to access their data. This can be resolved through the AAD portal. For more information about this, please see [stub](waas-windows-insider-for-business-aad.md#user-consent-requirement).
+> If something goes wrong, it is possible that users aren't enabled to give persmissions to access their data. This can be resolved through the AAD portal. For more information about this, please see [User consent requirement](waas-windows-insider-for-business-aad.md#user-consent-requirement).
 
 ## Not receiving Windows 10 Insider Preview build updates?
 
