@@ -58,7 +58,7 @@ Shared PC mode exposes a set of customizations to tailor the behavior to your re
 | Setting | Value |
 |:---|:---|
 | EnableSharedPCMode | Set as **True**. If this is not set to **True**, shared PC mode is not turned on and none of the other settings apply. This setting controls this API: [IsEnabled](https://docs.microsoft.com/uwp/api/windows.system.profile.sharedmodesettings) </br></br>Some of the remaining settings in **SharedPC** are optional, but we strongly recommend that you also set `EnableAccountManager` to **True**.  |
-| AccountManagement: AccountModel | This option controls how users can sign-in on the PC. Choosing domain-joined will enable any user in the domain to sign-in. Specifying the guest option will add the **Guest** option to the sign-in screen and enable anonymous guest access to the PC. <br/>  - **Only guest** allows anyone to use the PC as a local standard (non-admin) account.<br/>  - **Domain-joined only** allows users to sign in with an Active Directory or Azure AD account.<br/>-   **Domain-joined and guest** allows users to sign in with an Active Directory, Azure AD, or local standard account.   |
+| AccountManagement: AccountModel | This option controls how users can sign-in on the PC. Choosing domain-joined will enable any user in the domain to sign-in. Specifying the guest option will add the **Guest** option to the sign-in screen and enable anonymous guest access to the PC. <br/>  - **Only guest** allows anyone to use the PC as a local standard (non-admin) account.<br/>  - **Domain-joined only** allows users to sign in with an Active Directory or Azure AD account.<br/>-   **Domain-joined and guest** allows users to sign in with an Active Directory, Azure AD, or local standard account. |
 | AccountManagement: DeletionPolicy | - **Delete immediately** will delete the account on sign-out. <br/>- **Delete at disk space threshold** will start deleting accounts when available disk space falls below the threshold you set for **DiskLevelDeletion**, and it will stop deleting accounts when the available disk space reaches the threshold you set for **DiskLevelCaching**. Accounts are deleted in order of oldest accessed to most recently accessed. <br/><br/>Example: The caching number is 50 and the deletion number is 25. Accounts will be cached while the free disk space is above 25%. When the free disk space is less than 25% (the deletion number) at a maintenance period, accounts will be deleted (oldest last used first) until the free disk space is above 50% (the caching number). Accounts will be deleted immediately at sign off of an account if free space is under the deletion threshold and disk space is very low, regardless if the PC is actively in use or not. <br/>- **Delete at disk space threshold and inactive threshold** will apply the same disk space checks as noted above, but also delete accounts if they have not signed in within the number of days specified by **InactiveThreshold**  |
 | AccountManagement: DiskLevelCaching | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account caching.   |
 | AccountManagement: DiskLevelDeletion | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account deletion.   |
@@ -140,11 +140,14 @@ You can configure Windows to be in shared PC mode in a couple different ways:
 You can apply the provisioning package to a PC during initial setup or to a PC that has already been set up.
 
 **During initial setup**
+
 1. Start with a PC on the setup screen. 
 
     ![The first screen to set up a new PC](images/oobe.jpg)
 
-2. Insert the USB drive. If there is only one provisioning package on the USB drive, Windows will automatically starting provisioning. If there is more than one provisioning package on the USB drive, you will have to pick which one you want to use. If nothing happens when you insert the USB drive, press the Windows key five times. If a setup dialog isn't shown, you may have gone too far in setup and need to reset the PC to start over. To reset the PC, continue setup until you get to the desktop, then go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**. 
+2. Insert the USB drive. If there is only one provisioning package on the USB drive, the **Set up device?** message displays. Click **Set up**. 
+
+    If nothing happens when you insert the USB drive, press the Windows key five times. If a setup message isn't shown, you may have gone too far in setup and need to reset the PC to start over. To reset the PC, continue setup until you get to the desktop, then go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**. 
 
     ![Set up device?](images/setupmsg.jpg)
 
