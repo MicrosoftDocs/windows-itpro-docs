@@ -1,5 +1,5 @@
 ---
-title: Configure Windows Defender Advanced Threat Protection preferences settings
+title: Configure Windows Defender ATP preferences settings
 description: Use the preferences setup to configure and update your preferences settings such as enabling advanced features, preview experience, email notifications, or custom threat intelligence.
 keywords: preferences settings, settings, advanced features, preview experience, email notifications, custom threat intelligence
 search.product: eADQiWindows 10XVcnh

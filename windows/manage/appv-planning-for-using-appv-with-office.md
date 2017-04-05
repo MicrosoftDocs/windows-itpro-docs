@@ -28,20 +28,16 @@ Use the following information to plan how to deploy Office by using Microsoft Ap
 
 You can use the App-V Sequencer to create plug-in packages for Language Packs, Language Interface Packs, Proofing Tools and ScreenTip Languages. You can then include the plug-in packages in a Connection Group, along with the Office package that you create by using the Office Deployment Toolkit. The Office applications and the plug-in Language Packs interact seamlessly in the same connection group, just like any other packages that are grouped together in a connection group.
 
->**Note**  
-Microsoft Visio and Microsoft Project do not provide support for the Thai Language Pack.
+>[!NOTE] 
+>Microsoft Visio and Microsoft Project do not provide support for the Thai Language Pack.
 
 ## <a href="" id="bkmk-office-vers-supp-appv"></a>Supported versions of Microsoft Office
-
-<!-- As of February 28, 2017, the first row of the table should be updated, because at that point, support for the Office 2013 version of Office 365 will end. It might also be good to have a link to this KB article: https://support.microsoft.com/kb/3199744 -->
-
 See [Microsoft Office Product IDs that App-V supports](https://support.microsoft.com/en-us/help/2842297/product-ids-that-are-supported-by-the-office-deployment-tool-for-click) for a list of supported Office products.
->**Note**&nbsp;&nbsp;You must use the Office Deployment Tool to create App-V packages for Office 365 ProPlus. Creating packages for the volume-licensed versions of Office Professional Plus or Office Standard is not supported. You cannot use the App-V Sequencer.
 
->**Note** 
-Support for the [Office 2013 version of Office 365 ended in Februrary 2017](https://support.microsoft.com/kb/3199744)
+>[!NOTE]
+>You must use the Office Deployment Tool to create App-V packages for Office 365 ProPlus. Creating packages for the volume-licensed versions of Office Professional Plus or Office Standard is not supported. You cannot use the App-V Sequencer.
 
-
+>Support for the [Office 2013 version of Office 365 ended in Februrary 2017](https://support.microsoft.com/kb/3199744)
 
 ## <a href="" id="bkmk-plan-coexisting"></a>Planning for using App-V with coexisting versions of Office
 
@@ -87,8 +83,8 @@ The Office documentation provides extensive guidance on coexistence for Windows 
 
 The following tables summarize the supported coexistence scenarios. They are organized according to the version and deployment method you’re starting with and the version and deployment method you are migrating to. Be sure to fully test all coexistence solutions before deploying them to a production audience.
 
->**Note**  
-Microsoft does not support the use of multiple versions of Office in Windows Server environments that have the Remote Desktop Session Host role service enabled. To run Office coexistence scenarios, you must disable this role service.
+>[!NOTE] 
+>Microsoft does not support the use of multiple versions of Office in Windows Server environments that have the Remote Desktop Session Host role service enabled. To run Office coexistence scenarios, you must disable this role service.
 
  
 

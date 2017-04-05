@@ -1,6 +1,6 @@
 ---
 title: Fix unhealthy sensors in Windows Defender ATP
-description: Fix machine sensors that are reporting as misconfigured or inactive.
+description: Fix machine sensors that are reporting as misconfigured or inactive so that the service receives data from the machine.
 keywords: misconfigured, inactive, fix sensor, sensor health,  no sensor data, sensor data, impaired communication, communication
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -20,8 +20,6 @@ localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 Machines that are categorized as misconfigured or inactive can be flagged due to varying causes. This section provides some explanations as to what might have caused a machine to be categorized as inactive or misconfigured.
 
