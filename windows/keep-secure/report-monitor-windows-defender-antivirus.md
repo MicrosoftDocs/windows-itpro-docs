@@ -36,7 +36,7 @@ These events can be centrally aggregated using the [Windows event collector](htt
 
 You can also [monitor malware events using the Malware Assessment solution in Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-malware).
 
-For monitoring or determining status with PowerShell, WMI, or Microsoft Azure, see the [(Deployment, management, and reporting options table)](deploy-manage-report-windows-defender-antivirus.md#ref1).
+For monitoring or determining status with PowerShell, WMI, or Microsoft Azure, see the [(Deployment, management, and reporting options table)](deploy-manage-report-windows-defender-antivirus.md#ref2).
 
 ## Related topics
 
