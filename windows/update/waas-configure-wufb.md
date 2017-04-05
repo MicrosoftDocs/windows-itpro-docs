@@ -84,11 +84,11 @@ After you configure the servicing branch (CB or CBB), you can then define if, an
 
 ## Pause Feature Updates
 
-You can also pause a device from receiving Feature Updates by a period of up to 60 days from when the value is set. After 60 days has passed, pause functionality will automatically expire and the device will scan Windows Update for applicable Feature Updates. Following this scan, Feature Updates for the device can then be paused again.
+You can also pause a device from receiving Feature Updates by a period of up to 35 days from when the value is set. After 35 days has passed, pause functionality will automatically expire and the device will scan Windows Update for applicable Feature Updates. Following this scan, Feature Updates for the device can then be paused again.
 
-Starting with version 1703, when configuring pause through policy, a start date has to be set from which the pause begins. The pause period will be calculated by adding 60 days to the start date. 
+Starting with version 1703, when configuring pause through policy, a start date has to be set from which the pause begins. The pause period will be calculated by adding 35 days to the start date. 
 
-In cases where the pause policy is first applied after the configured start date has passed, administrators will be able to extend the pause period up to a total of 60 days by configuring a later start date.
+In cases where the pause policy is first applied after the configured start date has passed, administrators will be able to extend the pause period up to a total of 35 days by configuring a later start date.
 
 With version 1703, pausing through the settings app will provide a more consistent experience:
 - Any active restart notification are cleared or closed
@@ -98,6 +98,8 @@ With version 1703, pausing through the settings app will provide a more consiste
 
 >[!IMPORTANT]
 >This policy does not apply to Windows 10 Mobile Enterprise.
+>
+>Prior to Windows 10, version 1703, feature updates could be paused by up to 60 days. This number has be changed to 35, similar to the number of days for quality updates.
 
 **Pause Feature Updates policies**
 
@@ -110,7 +112,7 @@ With version 1703, pausing through the settings app will provide a more consiste
 
 You can check the date Feature Updates were paused at by checking the registry key **PausedFeatureDate** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**. 
 
-The local group policy editor (GPEdit.msc) will not reflect if your Feature Update Pause period has expired. Although the device will resume Feature Updates after 60 days automatically, the pause checkbox will remain checked in the policy editor.  To see if a device has auto-resumed taking Feature Updates, you can check the status registry key **PausedFeatureStatus** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**.
+The local group policy editor (GPEdit.msc) will not reflect if your Feature Update Pause period has expired. Although the device will resume Feature Updates after 35 days automatically, the pause checkbox will remain checked in the policy editor.  To see if a device has auto-resumed taking Feature Updates, you can check the status registry key **PausedFeatureStatus** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**.
 
 | Value | Status|
 | --- | --- |
