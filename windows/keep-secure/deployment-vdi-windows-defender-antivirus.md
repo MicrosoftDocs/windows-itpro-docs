@@ -58,7 +58,7 @@ There are three main steps in this guide to help roll out Windows Defender AV pr
     - [Randomize scheduled scans](#randomize-scheduled-scans)
     - [Use quick scans](#use-quick-scans)
     - [Prevent notifications](#prevent-notifications)
-    - [Disable scans from occuring after every update](#disable-scans-after-an-update)
+    - [Disable scans from occurring after every update](#disable-scans-after-an-update)
     - [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
 
 >[!IMPORTANT]
@@ -147,7 +147,7 @@ There are a number of settings that can help ensure optimal performance on your 
     - [Randomize scheduled scans](#randomize-scheduled-scans)
     - [Use quick scans](#use-quick-scans)
     - [Prevent notifications](#prevent-notifications)
-    - [Disable scans from occuring after every update](#disable-scans-after-an-update)
+    - [Disable scans from occurring after every update](#disable-scans-after-an-update)
     - [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline)
 
 These settings can be configured as part of creating your base image, or as a day-to-day management function of your VDI infrastructure or network.
@@ -157,7 +157,7 @@ These settings can be configured as part of creating your base image, or as a da
 
 ### Randomize scheduled scans
 
-Windows Defender AV supports the randomization of scheduled scans and signature updates. This can be extremely helpful in reducing boot storms (especially when used in conjuction with [Disable scans from occuring after every update](#disable-scans-after-an-update) and [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline).
+Windows Defender AV supports the randomization of scheduled scans and signature updates. This can be extremely helpful in reducing boot storms (especially when used in conjunction with [Disable scans from occurring after every update](#disable-scans-after-an-update) and [Scan out-of-date machines or machines that have been offline for a while](#scan-vms-that-have-been-offline).
 
 Scheduled scans run in addition to [real-time protection and scanning](configure-real-time-protection-windows-defender-antivirus.md).
 
@@ -175,7 +175,7 @@ The start time of the scan itself is still based on the scheduled scan policy â€
 
 5.  Expand the tree to **Windows components > Windows Defender** and configure the following setting:
     
-    1.  Double-click the **Randomize scheduled task times** setting and set the option to **Enabled**. Click **OK**. This adds a true randomization (it is still random if the disk image is replicated) of plus or minus 30 minutes (using all of the intervals) to the start of the scheduled scan and the signature update. For example, if the sechedule start time was set at 2.30pm, then enabling this setting  could cause one machine to scan and update at 2.33pm and another machine to scan and update at 2.14pm.
+    1.  Double-click the **Randomize scheduled task times** setting and set the option to **Enabled**. Click **OK**. This adds a true randomization (it is still random if the disk image is replicated) of plus or minus 30 minutes (using all of the intervals) to the start of the scheduled scan and the signature update. For example, if the schedule start time was set at 2.30pm, then enabling this setting  could cause one machine to scan and update at 2.33pm and another machine to scan and update at 2.14pm.
 
 **Use Configuration Manager to randomize schedule scans:**
 

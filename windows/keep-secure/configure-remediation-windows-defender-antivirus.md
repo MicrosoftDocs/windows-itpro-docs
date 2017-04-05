@@ -39,7 +39,7 @@ You can also use the [`Set-MpPreference` PowerShell cmdlet](https://technet.micr
 
 ## Configure remediation options
 
-You can configure how remediation with the Group Policy settings described in this section.
+You can configure how remediation works with the Group Policy settings described in this section.
 
 To configure these settings:
 

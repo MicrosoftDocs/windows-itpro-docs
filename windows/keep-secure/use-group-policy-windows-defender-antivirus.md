@@ -40,13 +40,13 @@ The following table in this topic lists the Group Policy settings available in W
 Location | Setting | Documented in topic
 ---|---|---
 Client interface | Enable headless UI mode | [Prevent users from seeing or interacting with the Windows Defender AV user interface](prevent-end-user-interaction-windows-defender-antivirus.md)
-Client interface | Display additional text to clients when they need to perform an action | [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
-Client interface | Suppress all notifications | [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
-Client interface | Suppresses reboot notifications | [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
-Exclusions | Extension Exclusions | [Configure and validate exclusions in Windows Defender AV scans](configure-exclusions-windows-defender-antivirus.md)
-Exclusions | Path Exclusions | [Configure and validate exclusions in Windows Defender AV scans](configure-exclusions-windows-defender-antivirus.md)
-Exclusions | Process Exclusions | [Configure and validate exclusions in Windows Defender AV scans](configure-exclusions-windows-defender-antivirus.md)
-Exclusions | Turn off Auto Exclusions | [Configure and validate exclusions in Windows Defender AV scans](configure-exclusions-windows-defender-antivirus.md)
+Client interface | Display additional text to clients when they need to perform an action | [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
+Client interface | Suppress all notifications | [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
+Client interface | Suppresses reboot notifications | [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
+Exclusions | Extension Exclusions | [Configure and validate exclusions in Windows Defender AV scans](configure-exclusions-windows-defender-antivirus.md)
+Exclusions | Path Exclusions | [Configure and validate exclusions in Windows Defender AV scans](configure-exclusions-windows-defender-antivirus.md)
+Exclusions | Process Exclusions | [Configure and validate exclusions in Windows Defender AV scans](configure-exclusions-windows-defender-antivirus.md)
+Exclusions | Turn off Auto Exclusions | [Configure and validate exclusions in Windows Defender AV scans](configure-exclusions-windows-defender-antivirus.md)
 MAPS | Configure the 'Block at First Sight' feature | [Enable the Block at First Sight feature](configure-block-at-first-sight-windows-defender-antivirus.md)
 MAPS | Join Microsoft MAPS | [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
 MAPS | Send file samples when further analysis is required | [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
@@ -63,14 +63,14 @@ Real-time protection | Configure local setting override for monitoring for incom
 Real-time protection | Configure local setting override for scanning all downloaded files and attachments | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
 Real-time protection | Configure local setting override for turn on behavior monitoring | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
 Real-time protection | Configure local setting override to turn on real-time protection | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
-Real-time protection | Define the maximum size of downloaded files and attachments to be scanned | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Monitor file and program activity on your computer | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Scan all downloaded files and attachments | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Turn off real-time protection | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Turn on behavior monitoring | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Turn on process scanning whenever real-time protection is enabled | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Turn on raw volume write notifications | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
-Real-time protection | Configure monitoring for incoming and outgoing file and program activity | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Define the maximum size of downloaded files and attachments to be scanned | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Monitor file and program activity on your computer | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Scan all downloaded files and attachments | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Turn off real-time protection | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Turn on behavior monitoring | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Turn on process scanning whenever real-time protection is enabled | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Turn on raw volume write notifications | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Real-time protection | Configure monitoring for incoming and outgoing file and program activity | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
 Remediation | Configure local setting override for the time of day to run a scheduled full scan to complete remediation | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
 Remediation | Specify the day of the week to run a scheduled full scan to complete remediation | [Configure scheduled scans for Windows Defender AV](scheduled-catch-up-scans-windows-defender-antivirus.md)
 Remediation | Specify the time of day to run a scheduled full scan to complete remediation | [Configure scheduled scans for Windows Defender AV](scheduled-catch-up-scans-windows-defender-antivirus.md)
@@ -81,7 +81,7 @@ Reporting | Configure time out for detections in critically failed state | Not u
 Reporting | Configure time out for detections in non-critical failed state | Not used
 Reporting | Configure time out for detections in recently remediated state | Not used
 Reporting | Configure time out for detections requiring additional action | Not used
-Reporting | Turn off enhanced notifications | [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
+Reporting | Turn off enhanced notifications | [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
 Root | Turn off Windows Defender Antivirus | Not used
 Root | Define addresses to bypass proxy server | Not used
 Root | Define proxy auto-config (.pac) for connecting to the network | Not used
@@ -103,7 +103,7 @@ Scan | Configure local setting override for scheduled scan time | [Prevent or al
 Scan | Configure local setting override for the scan type to use for a scheduled scan | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
 Scan | Create a system restore point | [Configure remediation for Windows Defender AV scans](configure-remediation-windows-defender-antivirus.md)
 Scan | Turn on removal of items from scan history folder | [Configure remediation for Windows Defender AV scans](configure-remediation-windows-defender-antivirus.md)
-Scan | Turn on heuristics | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
+Scan | Turn on heuristics | [Enable and configure Windows Defender AV always-on protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md)
 Scan | Turn on e-mail scanning | [Configure scanning options in Windows Defender AV](configure-advanced-scan-types-windows-defender-antivirus.md)
 Scan | Turn on reparse point scanning | [Configure scanning options in Windows Defender AV](configure-advanced-scan-types-windows-defender-antivirus.md)
 Scan | Run full scan on mapped network drives | [Configure scanning options in Windows Defender AV](configure-advanced-scan-types-windows-defender-antivirus.md)

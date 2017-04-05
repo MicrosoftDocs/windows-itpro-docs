@@ -26,11 +26,17 @@ There are a number of ways you can review protection status and alerts, dependin
 
 
 
-You can use System Center Configuration Manager to [monitor Windows Defender AV protection](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/monitor-endpoint-protection) or [create email alerts](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-configure-alerts), or you can also monitor protection using the [Microsoft Intune console](ttps://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#monitor-endpoint-protection).  
+You can use System Center Configuration Manager to [monitor Windows Defender AV protection](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/monitor-endpoint-protection) or [create email alerts](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-configure-alerts), or you can also monitor protection using the [Microsoft Intune console](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#monitor-endpoint-protection).  
 
-If you have a third-party security information and event management (SIEM) tool, you can also consume [Windows Defender client event IDs](troubleshoot-windows-defender-antivirus.md#windows-defender-av-ids) to review specific events and errors from your endpoints.
+If you have a third-party security information and event management (SIEM) tool, you can also consume [Windows Defender client events](https://msdn.microsoft.com/en-us/library/windows/desktop/aa964766(v=vs.85).aspx). 
 
-For monitoring or determining status with PowerShell, WMI, or Microsoft Azure, see the [(Deployment, managament, and reporting options table)](deploy-manage-report-windows-defender-antivirus.md#ref1).
+Windows events comprise several security event sources, including Security Account Manager (SAM) events ([enhanced for Windows 10](https://technet.microsoft.com/library/mt431757.aspx), also see the [Security audting](security-auditing-overview.md) topic) and  [Windows Defender events](troubleshoot-windows-defender-antivirus.md). 
+
+These events can be centrally aggregated using the [Windows event collector](https://msdn.microsoft.com/en-us/library/windows/desktop/bb427443(v=vs.85).aspx). It is common practice for SIEMs to have connectors for Windows events. This technique allows for correlation of all security events from the machine in the SIEM. 
+
+You can also [monitor malware events using the Malware Assessment solution in Log Analytics](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-malware).
+
+For monitoring or determining status with PowerShell, WMI, or Microsoft Azure, see the [(Deployment, management, and reporting options table)](deploy-manage-report-windows-defender-antivirus.md#ref1).
 
 ## Related topics
 

@@ -113,7 +113,7 @@ See the following for more information and allowed parameters:
 
         > [!WARNING]
         > Setting to **Always Prompt** will lower the protection state of the device. Setting to **Never send** means the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature will not function.
-5. Scoll down to the **Microsoft Active Protection Service** section and set the following settings:
+5. Scroll down to the **Microsoft Active Protection Service** section and set the following settings:
     
    Setting | Set to
     --|--
@@ -139,7 +139,7 @@ See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](http
 3.	Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 
 >[!NOTE]
->If automatic sample submission has been configured with Group Policy then the setting will be greyed-out and unavailble.
+>If automatic sample submission has been configured with Group Policy then the setting will be greyed-out and unavailable.
 
 ## Related topics
 
@@ -150,4 +150,4 @@ See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](http
 - [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx)
 - [Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 - [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
-- - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
