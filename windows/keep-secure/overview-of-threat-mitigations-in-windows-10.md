@@ -58,7 +58,7 @@ Windows 10 mitigations that you can configure are listed in the following two ta
 | **Enterprise certificate pinning**<br> helps prevent <br>man-in-the-middle attacks<br>that leverage PKI | Enterprise certificate pinning enables you to protect your internal domain names from chaining to unwanted certificates or to fraudulently issued certificates. With enterprise certificate pinning, you can “pin” (associate) an X.509 certificate and its public key to its Certification Authority, either root or leaf. <br><br>**More information**: [Enterprise Certificate Pinning](enterprise-certificate-pinning.md) |
 | **Device Guard**<br> helps keep a device<br>from running malware or<br>other untrusted apps | Device Guard includes a Code Integrity policy that you create; a whitelist of trusted apps—the only apps allowed to run in your organization. Device Guard also includes a powerful system mitigation called hypervisor-protected code integrity (HVCI), which leverages virtualization-based security (VBS) to protect Windows’ kernel-mode code integrity validation process. HVCI has specific hardware requirements, and works with Code Integrity policies to help stop attacks even if they gain access to the kernel.<br>Device Guard is included in Windows 10 Enterprise and Windows Server 2016.<br><br>**More information**: [Introduction to Device Guard](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md) |
 | **Windows Defender Antivirus**,<br>which helps keep devices<br>free of viruses and other<br>malware | Windows 10 includes Windows Defender Antivirus, a robust inbox antimalware solution. Windows Defender Antivirus has been significantly improved since it was introduced in Windows 8.<br><br>**More information**: [Windows Defender Antivirus](#windows-defender-antivirus), later in this topic |
-| **Blocking of untrusted fonts**<br> helps prevent fonts<br>from being used in<br>elevation-of-privilege attacks | The Block Untrusted Fonts setting allows you to prevent users from loading untrusted fonts onto your network, which can mitigate elevation-of-privilege attacks associated with the parsing of font files. However, as of Windows 10, version 1703, this mitigation is less important, because font parsing is isolated in an [AppContainer sandbox](https://msdn.microsoft.com/library/windows/desktop/mt595898(v=vs.85).aspx) (for a list describing this and other kernel pool protections, see [Kernel pool protections](#kernel-pool-protections), later in this topic).<br><br>**More information**: [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md) |
+| **Blocking of untrusted fonts**<br> helps prevent fonts<br>from being used in<br>elevation-of-privilege attacks | Block Untrusted Fonts is a setting that allows you to prevent users from loading fonts that are "untrusted" onto your network, which can mitigate elevation-of-privilege attacks associated with the parsing of font files. However, as of Windows 10, version 1703, this mitigation is less important, because font parsing is isolated in an [AppContainer sandbox](https://msdn.microsoft.com/library/windows/desktop/mt595898(v=vs.85).aspx) (for a list describing this and other kernel pool protections, see [Kernel pool protections](#kernel-pool-protections), later in this topic).<br><br>**More information**: [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md) |
 | **Memory protections**<br> help prevent malware<br>from using memory manipulation<br>techniques such as buffer<br>overruns | These mitigations, listed in [Table 2](#table-2), help to protect against memory-based attacks, where malware or other code manipulates memory to gain control of a system (for example, malware that attempts to use buffer overruns to inject malicious executable code into memory. Note:<br>A subset of apps will not be able to run if some of these mitigations are set to their most restrictive settings. Testing can help you maximize protection while still allowing these apps to run.<br><br>**More information**: [Table 2](#table-2), later in this topic |
 | **UEFI Secure Boot**<br> helps protect<br>the platform from<br>bootkits and rootkits | Unified Extensible Firmware Interface (UEFI) Secure Boot is a security standard for firmware built in to PCs by manufacturers beginning with Windows 8. It helps to protect the boot process and firmware against tampering, such as from a physically present attacker or from forms of malware that run early in the boot process or in kernel after startup.<br><br>**More information**: [UEFI and Secure Boot](bitlocker-countermeasures.md#uefi-and-secure-boot)</a> |
 | **Early Launch Antimalware (ELAM)**<br> helps protect<br>the platform from<br>rootkits disguised as drivers | Early Launch Antimalware (ELAM) is designed to enable the antimalware solution to start before all non-Microsoft drivers and apps. If malware modifies a boot-related driver, ELAM will detect the change, and Windows will prevent the driver from starting, thus blocking driver-based rootkits.<br><br>**More information**: [Early Launch Antimalware](bitlocker-countermeasures.md#protection-during-startup) |
@@ -199,7 +199,7 @@ In Windows 10 and Windows Server 2016, client connections to the Active Director
 
 ### Protected Processes
 
-Most security controls are designed to prevent the initial infection point. However, despite all the best preventative controls, malware might eventually find a way to infect the system. So, some protections are built to place limits on any malware that might be running. Protected Processes creates limits of this type.
+Most security controls are designed to prevent the initial infection point. However, despite all the best preventative controls, malware might eventually find a way to infect the system. So, some protections are built to place limits on malware that gets on the device. Protected Processes creates limits of this type.
 
 With Protected Processes, Windows 10 prevents untrusted processes from interacting or tampering with those that have been specially signed. Protected Processes defines levels of trust for processes. Less trusted processes are prevented from interacting with and therefore attacking more trusted processes. Windows 10 uses Protected Processes more broadly across the operating system, and as in Windows 8.1, implements them in a way that can be used by 3rd party anti-malware vendors, as described in [Protecting Anti-Malware Services](https://msdn.microsoft.com/library/windows/desktop/dn313124(v=vs.85).aspx). This helps make the system and antimalware solutions less susceptible to tampering by malware that does manage to get on the system.
 
@@ -207,7 +207,7 @@ With Protected Processes, Windows 10 prevents untrusted processes from interacti
 
 When users download Universal Windows apps from the Windows Store, it’s unlikely that they will encounter malware because all apps go through a careful screening process before being made available in the store. Apps that organizations build and distribute through sideloading processes will need to be reviewed internally to ensure that they meet organizational security requirements.
 
-Regardless of how users acquire Universal Windows apps, they can use them with increased confidence. Unlike Windows Classic applications, which can run with elevated privileges and have potentially sweeping access to the system and data, Universal Windows apps run in an AppContainer sandbox with limited privileges and capabilities. For example, Universal Windows apps have no system-level access, have tightly controlled interactions with other apps, and have no access to data unless the user explicitly grants the application permission.
+Regardless of how users acquire Universal Windows apps, they can use them with increased confidence. Universal Windows apps run in an AppContainer sandbox with limited privileges and capabilities. For example, Universal Windows apps have no system-level access, have tightly controlled interactions with other apps, and have no access to data unless the user explicitly grants the application permission.
 
 In addition, all Universal Windows apps follow the security principle of least privilege. Apps receive only the minimum privileges they need to perform their legitimate tasks, so even if an attacker exploits an app, the damage the exploit can do is severely limited and should be contained within the sandbox. The Windows Store displays the exact capabilities the app requires (for example, access to the camera), along with the app’s age rating and publisher.
 
@@ -365,7 +365,59 @@ One of EMET’s strengths is that it allows you to import and export configurati
 Install-Module -Name ProcessMitigations
 ```
 
-The ConvertTo-ProcessMitigationPolicy cmdlet can:
+The Get-ProcessMitigation cmdlet gets the current mitigation settings from the registry or from a running process, or it can save all settings to an XML file. 
+
+To get the current settings on all running instances of notepad.exe:
+
+```powershell
+Get-ProcessMitigation -Name notepad.exe -RunningProcess
+```
+
+To get the current settings in the registry for notepad.exe:
+
+```powershell
+Get-ProcessMitigation -Name notepad.exe
+```
+
+To get the current settings for the running process with pid 1304:
+
+```powershell
+Get-ProcessMitigation -Id 1304
+```
+
+To get the all process mitigation settings from the registry and save them to the xml file settings.xml:
+
+```powershell
+Get-ProcessMitigation -RegistryConfigFilePath settings.xml
+```
+
+The Set-ProcessMitigation cmdlet can enable and disable process mitigations or set them in bulk from an XML file.
+
+To get the current process mitigation for "notepad.exe" from the registry and then enable MicrosoftSignedOnly and disable MandatoryASLR:
+
+```powershell
+Set-ProcessMitigation -Name Notepad.exe -Enable MicrosoftSignedOnly -Disable MandatoryASLR
+```
+
+To set the process mitigations from an XML file (which can be generated from get-ProcessMitigation -RegistryConfigFilePath settings.xml):
+
+```powershell
+Set-ProcessMitigation -PolicyFilePath settings.xml
+```
+
+To set the system default to be MicrosoftSignedOnly:
+
+```powershell
+Set-ProcessMitigation -System -Enable MicrosoftSignedOnly
+```
+
+The ConvertTo-ProcessMitigationPolicy cmdlet converts mitigation policy file formats. The syntax is:
+
+```powershell
+ConvertTo-ProcessMitigationPolicy -EMETFilePath <String> -OutputFilePath <String> [<CommonParameters>]
+```
+
+Examples:
 
 -   **Convert EMET settings to Windows 10 settings**: You can run ConvertTo-ProcessMitigationPolicy and provide an EMET XML settings file as input, which will generate an output file of Windows 10 mitigation settings. For example:
     
