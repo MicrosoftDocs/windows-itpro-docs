@@ -27,7 +27,7 @@ author: iaanw
 
 Depending on the management tool you are using, you may need to specifically enable or configure Windows Defender AV protection.
 
-See the [(Deployment, managament, and reporting options table)](deploy-manage-report-windows-defender-antivirus.md#ref1) for instructions on how to enable protection with System Center Configuration Manager, Group Policy, Active Directory, Microsoft Azure, Microsoft Intune, PowerShell cmdlets, and Windows Management Instruction (WMI).
+See the table in the [Deploy, manage, and report on Windows Defender AV](deploy-manage-report-windows-defender-antivirus.md#ref2) topic for instructions on how to enable protection with System Center Configuration Manager, Group Policy, Active Directory, Microsoft Azure, Microsoft Intune, PowerShell cmdlets, and Windows Management Instruction (WMI).
 
 Some scenarios require additional guidance on how to successfully deploy or configure Windows Defender AV protection, such as Virtual Desktop Infrastructure (VDI) environments.
 
@@ -37,4 +37,4 @@ The remaining topic in this section provides end-to-end advice and best practice
 
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
-- [Deployment guide for Windows Defender Antivirus in a virtual desktop infrasructure (VDI) environment](deployment-vdi-windows-defender-antivirus.md)
+- [Deployment guide for Windows Defender Antivirus in a virtual desktop infrastructure (VDI) environment](deployment-vdi-windows-defender-antivirus.md)

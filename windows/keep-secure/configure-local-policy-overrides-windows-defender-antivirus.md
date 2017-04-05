@@ -78,7 +78,7 @@ Scan | Configure local setting override for the scan type to use for a scheduled
 
 You can also configure how locally defined lists are combined or merged with globally defined lists. This setting applies to [exclusion lists](configure-exclusions-windows-defender-antivirus.md) and [specified remediation lists](configure-remediation-windows-defender-antivirus.md).
 
-By default, lists that have been configured in local group policy and the Windows Defender Security Center app are merged with lists that are defined by the appropriate GPO that you have deployed on your network. Where there are conflicts, the globally defined list takes precendence.
+By default, lists that have been configured in local group policy and the Windows Defender Security Center app are merged with lists that are defined by the appropriate GPO that you have deployed on your network. Where there are conflicts, the globally defined list takes precedence.
 
 You can disable this setting to ensure that only globally defined lists (such as those from any deployed GPOs) are used.
 

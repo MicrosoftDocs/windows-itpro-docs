@@ -26,14 +26,6 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |[Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md)|New |
 |[Use Windows Defender Security Center to set Windows Defender SmartScreen for individual devices](windows-defender-smartscreen-set-individual-device.md)|New |
 
-
-## February 2017
-
-|New or changed topic |Description |
-|---------------------|------------|
-|[Overview of threat mitigations in Windows 10](overview-of-threat-mitigations-in-windows-10.md) | Reorganized from existing content, to provide a better overview of threat mitigations. Added information that maps the Enhanced Mitigation Experience Toolkit (EMET) to Windows 10 features. |
-
-
 ## January 2017
 |New or changed topic |Description |
 |---------------------|------------|

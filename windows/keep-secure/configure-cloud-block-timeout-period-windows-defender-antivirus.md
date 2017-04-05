@@ -41,7 +41,7 @@ The default period that the file will be [blocked](configure-block-at-first-sigh
 
 ## Prerequisites to use the extended cloud block timeout
 
-The [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature and its prerequisites must be enabled before you can specifiy an extended timeout period. 
+The [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature and its prerequisites must be enabled before you can specify an extended timeout period. 
     
 ## Specify the extended timeout period
 
