@@ -41,6 +41,7 @@ Windows as a service provides a new way to think about building, deploying, and 
 | [Manage Windows 10 updates using Windows Server Update Services (WSUS)](waas-manage-updates-wsus.md) | Explains how to use WSUS to manage Windows 10 updates. |
 | [Manage Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md) | Explains how to use Configuration Manager to manage Windows 10 updates.  |
 | [Manage device restarts after updates](waas-restart.md) | Explains how to use Group Policy to manage device restarts. |
+| [Windows Insider Program for Business](waas-windows-insider-for-business.md) | Explains how the Windows Insider Program for Business works and how to become an insider. |
 
 >[!TIP]
 >Windows servicing is changing, but for disaster recovery scenarios and bare-metal deployments of Windows 10, you still can use traditional imaging software such as System Center Configuration Manager or the Microsoft Deployment Toolkit. Using these tools to deploy Windows 10 images is similar to deploying previous versions of Windows.

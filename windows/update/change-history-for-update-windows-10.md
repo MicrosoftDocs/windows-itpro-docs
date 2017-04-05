@@ -19,6 +19,3 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 * [Windows Insider Program for Business](waas-windows-insider-for-business.md)
 * [Windows Insider Program for Business using Azure Active Directory](waas-windows-insider-for-business-aad.md)
 * [Windows Insider Program for Business Frequently Asked Questions](waas-windows-insider-for-business-faq.md)
-
-
-
