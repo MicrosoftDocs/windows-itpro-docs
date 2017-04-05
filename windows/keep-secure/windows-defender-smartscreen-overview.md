@@ -18,9 +18,6 @@ localizationpriority: high
 
 Windows Defender SmartScreen helps to protect your employees if they try to visit sites previously reported as phishing or malware websites, or if an employee tries to download potentially malicious files.
 
->[!NOTE]
->SmartScreen completely blocks apps from the Internet from running on Windows 10 Mobile.
-
 **SmartScreen determines whether a site is potentially malicious by:**
 
 - Analyzing visited webpages looking for indications of suspicious behavior. If it finds suspicious pages, SmartScreen shows a warning page, advising caution.
@@ -53,7 +50,7 @@ Windows Defender SmartScreen helps to provide an early warning system against we
 When Windows Defender SmartScreen warns or blocks an employee from a website, it's logged as [Event 1035 - Anti-Phishing](https://technet.microsoft.com/en-us/scriptcenter/dd565657(v=msdn.10).aspx).
 
 ## Related topics
-- [SmartScreen Frequently Asked Questions (FAQ)](https://support.microsoft.com/en-us/products/windows?os=windows-10)
+- [SmartScreen Frequently Asked Questions (FAQ)](https://feedback.smartscreen.microsoft.com/smartscreenfaq.aspx)
 
 - [How to recognize phishing email messages, links, or phone calls](https://www.microsoft.com/en-us/safety/online-privacy/phishing-symptoms.aspx)
 
