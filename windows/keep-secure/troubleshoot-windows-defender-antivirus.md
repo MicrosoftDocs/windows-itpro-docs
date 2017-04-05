@@ -91,7 +91,7 @@ The table in this section lists the main Windows Defender Antivirus client event
 </ul>
 </dt>
 <dt>Scan Resources: &lt;Resources (such as files/directories/BHO) that were scanned.&gt;</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 </dl>
 </p>
 </td>
@@ -133,7 +133,7 @@ The table in this section lists the main Windows Defender Antivirus client event
 <li>Customer scan</li>
 </ul>
 </dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Scan Time: &lt;The duration of a scan.&gt;</dt>
 </dl>
 </p>
@@ -223,7 +223,7 @@ The table in this section lists the main Windows Defender Antivirus client event
 <li>Customer scan</li>
 </ul>
 </dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 </dl>
 </p>
 </td>
@@ -267,7 +267,7 @@ The table in this section lists the main Windows Defender Antivirus client event
 <li>Customer scan</li>
 </ul>
 </dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 </dl>
 </p>
 </td>
@@ -311,7 +311,7 @@ The table in this section lists the main Windows Defender Antivirus client event
 <li>Customer scan</li>
 </ul>
 </dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
 Result code associated with threat status. Standard HRESULT values.</dt>
 <dt>Error Description: &lt;Error description&gt;
@@ -403,7 +403,7 @@ Description of the error. </dt>
 </ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>Status: &lt;Status&gt;</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
@@ -438,7 +438,7 @@ UAC</dt>
 <p>
 <p>Windows Defender has taken action to protect this machine from malware or other potentially unwanted software. For more information please see the following:</p>
 <dl>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
 <dt>Severity: &lt;Severity&gt;, for example:<ul>
@@ -491,7 +491,7 @@ UAC</dt>
 <p>
 <p>Windows Defender has encountered an error when taking action on malware or other potentially unwanted software. For more information please see the following:</p>
 <dl>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
 <dt>Severity: &lt;Severity&gt;, for example:<ul>
@@ -562,7 +562,7 @@ Description of the error. </dt>
 </dt>
 <dt>Category: &lt;Category description&gt;, for example, any threat or malware type.</dt>
 <dt>Path: &lt;File path&gt;</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
 </dl>
@@ -607,7 +607,7 @@ Description of the error. </dt>
 </dt>
 <dt>Category: &lt;Category description&gt;, for example, any threat or malware type.</dt>
 <dt>Path: &lt;File path&gt;</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
 Result code associated with threat status. Standard HRESULT values. </dt>
 <dt>Error Description: &lt;Error description&gt;
@@ -656,7 +656,7 @@ For more information please see the following:</p>
 </dt>
 <dt>Category: &lt;Category description&gt;, for example, any threat or malware type.</dt>
 <dt>Path: &lt;File path&gt;</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
 </dl>
@@ -701,7 +701,7 @@ For more information please see the following:</p>
 </dt>
 <dt>Category: &lt;Category description&gt;, for example, any threat or malware type.</dt>
 <dt>Path: &lt;File path&gt;</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
 Result code associated with threat status. Standard HRESULT values. </dt>
 <dt>Error Description: &lt;Error description&gt;
@@ -739,7 +739,7 @@ Description of the error. </dt>
 <p>Windows Defender has removed history of malware and other potentially unwanted software.</p>
 <dl>
 <dt>Time: The time when the event occurred, for example when the history is purged. Note that this parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 </dl>
 </p>
 </td>
@@ -771,7 +771,7 @@ Description of the error. </dt>
 <p>Windows Defender has encountered an error trying to remove history of malware and other potentially unwanted software.</p>
 <dl>
 <dt>Time: The time when the event occurred, for example when the history is purged. Note that this parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
 Result code associated with threat status. Standard HRESULT values. </dt>
 <dt>Error Description: &lt;Error description&gt;
@@ -847,7 +847,7 @@ For more information please see the following:</p>
 </ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>Status: &lt;Status&gt;</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
 <dt>Signature ID: Enumeration matching severity.</dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
@@ -925,7 +925,7 @@ For more information please see the following:</p>
 <li>Remote attestation</li>
 </ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
 UAC</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
@@ -1008,7 +1008,7 @@ For more information please see the following:</p>
 <li>Remote attestation</li>
 </ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
 UAC</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
 <dt>Action: &lt;Action&gt;, for example:<ul>
 <li>Clean: The resource was cleaned</li>
@@ -1137,7 +1137,7 @@ For more information please see the following:</p>
 <li>Remote attestation</li>
 </ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
 UAC</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
 <dt>Action: &lt;Action&gt;, for example:<ul>
 <li>Clean: The resource was cleaned</li>
@@ -1234,7 +1234,7 @@ For more information please see the following:</p>
 <li>Remote attestation</li>
 </ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
 UAC</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
 <dt>Action: &lt;Action&gt;, for example:<ul>
 <li>Clean: The resource was cleaned</li>
@@ -1388,7 +1388,7 @@ Description of the error. </dt>
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>No action is necessary. The Windows Defenderclient is in a healthy state. This event is reported on an hourly basis.</p>
+<p>No action is necessary. The Windows Defender Antivirus client is in a healthy state. This event is reported on an hourly basis.</p>
 </td>
 </tr>
 <tr>
@@ -1428,7 +1428,7 @@ Description of the error. </dt>
 </ul>
 </dt>
 <dt>Update Type: &lt;Update type&gt;, either Full or Delta.</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Current Engine Version: &lt;Current engine version&gt;</dt>
 <dt>Previous Engine Version: &lt;Previous engine version&gt;</dt>
 </dl>
@@ -1496,7 +1496,7 @@ Description of the error. </dt>
 </ul>
 </dt>
 <dt>Update Type: &lt;Update type&gt;, either Full or Delta.</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Current Engine Version: &lt;Current engine version&gt;</dt>
 <dt>Previous Engine Version: &lt;Previous engine version&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
@@ -1559,7 +1559,7 @@ Description of the error. </dt>
 <dt>Current Engine Version: &lt;Current engine version&gt;</dt>
 <dt>Previous Engine Version: &lt;Previous engine version&gt;</dt>
 <dt>Engine Type: &lt;Engine type&gt;, either antimalware engine or Network Inspection System engine.</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 </dl>
 </p>
 </td>
@@ -1601,7 +1601,7 @@ Description of the error. </dt>
 <dt>New Engine Version:</dt>
 <dt>Previous Engine Version: &lt;Previous engine version&gt;</dt>
 <dt>Engine Type: &lt;Engine type&gt;, either antimalware engine or Network Inspection System engine.</dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
 Result code associated with threat status. Standard HRESULT values.</dt>
 <dt>Error Description: &lt;Error description&gt;
@@ -2717,6 +2717,7 @@ This section provides the following information about Windows Defender Antivirus
 -   The error code
 -   The possible reason for the error
 -   Advice on what to do now
+
 Use the information in these tables to help troubleshoot Windows Defender Antivirus error codes.
 <table>
 <tr>

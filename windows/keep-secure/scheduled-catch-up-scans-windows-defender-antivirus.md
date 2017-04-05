@@ -33,7 +33,7 @@ author: iaanw
 
 
 
-> [!IMPORTANT]
+> [!NOTE]
 > By default, Windows Defender AV will check for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) to override this default. 
 
 
@@ -201,7 +201,7 @@ Scan | Specify the time for a daily quick scan | Specify the number of minutes a
 Use the following cmdlets:
 
 ```PowerShell
-Set-MpPreference Set-MpPreference -ScanScheduleQuickTime
+Set-MpPreference -ScanScheduleQuickTime
 ```
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.

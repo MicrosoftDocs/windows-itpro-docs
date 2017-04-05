@@ -31,7 +31,7 @@ Cloud-delivered protection for Windows Defender Antivirus, also referred to as M
 
 Enabling cloud-delivered protection helps detect and block new malware - even if the malware has never been seen before - without needing to wait for a traditionally delivered definition update to block it. Definition updates can take hours to prepare and deliver, while our cloud service can deliver updated protection in seconds. 
 
-Cloud-delivered protecton is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies.
+Cloud-delivered protection is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies.
 
 The following table describes the differences in cloud-based protection between recent versions of Windows and System Center Configuration Manager.
 
