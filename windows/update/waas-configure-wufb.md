@@ -99,7 +99,7 @@ With version 1703, pausing through the settings app will provide a more consiste
 >[!IMPORTANT]
 >This policy does not apply to Windows 10 Mobile Enterprise.
 >
->Prior to Windows 10, version 1703, feature updates could be paused by up to 60 days. This number has be changed to 35, similar to the number of days for quality updates.
+>Prior to Windows 10, version 1703, feature updates could be paused by up to 60 days. This number has been changed to 35, similar to the number of days for quality updates.
 
 **Pause Feature Updates policies**
 
