@@ -31,11 +31,12 @@ Hindi, Catalan, and Vietnamese can only be installed as a language pack over [su
 > To learn how to install a language pack, see [How to add an input language to your PC Additional](https://support.microsoft.com/instantanswers/60f32ff8-8697-4452-af7d-647439c38433/how-to-add-and-switch-input-languages-on-your-pc).
 
 ### How do I register for  the Windows Insider Program for Business? 
-To register for the Windows Insider Program for Business, follow the steps below using your corporate account in Azure Active Directory (AAD). This account is the same account  \that you use for Office 365 and other Microsoft services. 
+To register for the Windows Insider Program for Business, follow the steps below using your corporate account in Azure Active Directory (AAD). This account is the same account that you use for Office 365 and other Microsoft services. 
 
 1. Visit https://insider.windows.com and click **Get Started**. 
 2. Sign-in with your corporate account in AAD (username/password) and follow the on-screen registration directions. 
-3. Enroll your Windows 10 PC to get the latest Windows 10 Insider Preview builds. Go to **Settings > Updates & Security > Windows Insider Program**. Click **Get Started**, enter your corporate credentials that you used to register, then follow the on-screen directions. 
+3. Enroll your Windows 10 PC to get the latest Windows 10 Insider Preview builds. Go to **Settings > Updates & Security > Windows Insider Program**. Click **Get Started**, enter your corporate credentials that you used to register, then follow the on-screen directions.
+
 >[!NOTE]
 >Make sure that you have administrator rights to your machine and that it has latest Windows updates.
 
