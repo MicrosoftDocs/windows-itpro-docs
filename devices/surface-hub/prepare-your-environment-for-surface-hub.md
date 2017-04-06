@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: surfacehub
-author: jdeckerMS
+author: TrudyHa
 localizationpriority: medium
 ---
 
@@ -27,12 +27,11 @@ Review these dependencies to make sure Surface Hub features will work in your IT
 | Skype for Business (Lync Server 2013 or later, or Skype for Business Online)  | Skype for Business is used for various conferencing features, like video calls, instant messaging, and screen sharing.</br></br>If screen sharing on a Surface Hub fails and the error message **An error occurred during the screen presentation** is displayed, see [Video Based Screen Sharing not working on Surface Hub](https://support.microsoft.com/help/3179272/video-based-screen-sharing-not-working-on-surface-hub) for help. |
 | Mobile device management (MDM) solution (Microsoft Intune, System Center Configuration Manager, or supported third-party MDM provider) | If you want to apply settings and install apps remotely, and to multiple devices at a time, you must set up a MDM solution and enroll the device to that solution. See [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md) for details. |
 | Microsoft Operations Managmement Suite (OMS)   | OMS is used to monitor the health of Surface Hub devices. See [Monitor your Surface Hub](monitor-surface-hub.md) for details. |
-| Network and Internet access   | <p>In order to function properly, the Surface Hub should have access to a wired or wireless network. Overall, a wired connection is preferred. 802.1x Authentication is supported for both wired and wireless connections.</p><p>**Dynamic IP:** The Surface Hub cannot be configured to use a static IP. It must use DHCP to assign an IP address.</p>**Proxy servers:** If your topology requires a connection to a proxy server to reach Internet services, then you can configure it during first run, or in Settings. Proxy credentials are stored across Surface Hub sessions and only need to be set once. |
+| Network and Internet access   | <p>In order to function properly, the Surface Hub should have access to a wired or wireless network. Overall, a wired connection is preferred.</p><p>**Dynamic IP:** The Surface Hub cannot be configured to use a static IP. It must use DHCP to assign an IP address.</p>**Proxy servers:** If your topology requires a connection to a proxy server to reach Internet services, then you can configure it during first run, or in Settings. |
 
 Additionally, note that Surface Hub requires the following open ports:
 - HTTPS: 443
 - HTTP: 80
-- NTP: 123
 
 Depending on your environment, access to additional ports may be needed:
 - For online environments, see [Office 365 IP URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
@@ -42,20 +41,6 @@ Microsoft collects telemetry to help improve your Surface Hub experience. Add th
 - Telemetry client endpoint: `https://vortex.data.microsoft.com/`
 - Telemetry settings endpoint: `https://settings.data.microsoft.com/`
 
-### Proxy configuration
-
-If your organization restricts computers on your network from connecting to the Internet, there is a set of URLs that need to be available for devices to use Store for Business. Some of the Store for Business features use Windows Store app and Windows Store services. Devices using Store for Business – either to acquire, install, or update apps – will need access to these URLs. If you use a proxy server to block traffic, your configuration needs to allow these URLs:
-
-- login.live.com
-- login.windows.net
-- account.live.com
-- clientconfig.passport.net
-- windowsphone.com
-- *.wns.windows.com
-- *.microsoft.com
-- www.msftncsi.com (prior to Windows 10, version 1607)
-- www.msftconnecttest.com/connecttest.txt (replaces www.msftncsi.com starting with Windows 10, version 1607)
-
 
 ## Work with other admins
 
@@ -64,7 +49,7 @@ Surface Hub interacts with a few different products and services. Depending on t
 
 ## Create and verify device account
 
-A device account is an Exchange resource account that Surface Hub uses to display its meeting calendar, join Skype for Business calls, send email, and (optionally) to authenticate to Exchange. See [Create and test a device account](create-and-test-a-device-account-surface-hub.md) for details.
+A device account is an Exchange resource account that Surface Hub uses to display its meeting calendar, join Skype for Business calls, and send email. See [Create and test a device account](create-and-test-a-device-account-surface-hub.md) for details.
 
 After you've created your device account, there are a couple of ways to verify that it's setup correctly.
 - Run Surface Hub device account validation PowerShell scripts. For more information, see [Surface Hub device account scripts](https://gallery.technet.microsoft.com/scriptcenter/Surface-Hub-device-account-6db77696) in Script Center, or [PowerShell scripts for Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md) later in this guide. 

@@ -6,17 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
-author: jdeckerMS
+author: TrudyHa
 localizationpriority: medium
 ---
 
 # Change history for Surface Hub
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
-
-## RELEASE: Windows 10, version 1703
-
-The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update).
 
 ## February 2017
 
