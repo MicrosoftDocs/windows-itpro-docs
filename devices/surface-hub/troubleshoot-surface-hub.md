@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: surfacehub
-author: TrudyHa
+author: jdeckerMS
 localizationpriority: medium
 ---
 
@@ -417,29 +417,7 @@ Possible fixes for issues with Surface Hub first-run program.
 
  
 
-### <a href="" id="settings-skype"></a>Skype for Business
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Issue</th>
-<th align="left">Causes</th>
-<th align="left">Possible fixes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Can't call a Skype consumer from my Surface Hub.</p></td>
-<td align="left"><p>Outgoing calls aren't supported yet.</p></td>
-<td align="left"><p>None currently.</p></td>
-</tr>
-</tbody>
-</table>
 
  
 
@@ -622,7 +600,9 @@ This section lists status codes, mapping, user messages, and actions an admin ca
  
 
  
+## Related content
 
+- [Troubleshooting Miracast connection to the Surface Hub](https://blogs.msdn.microsoft.com/surfacehub/2017/01/30/troubleshooting-miracast-connection-to-the-surface-hub/)
  
 
 

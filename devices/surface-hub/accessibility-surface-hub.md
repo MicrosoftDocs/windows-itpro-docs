@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surfacehub
 ms.sitesec: library
-author: TrudyHa
+author: jdeckerMS
 localizationpriority: medium
 ---
 
@@ -30,7 +30,7 @@ The full list of accessibility settings are available to IT admins in the **Sett
 | Mouse                 | Defaults selected for **Pointer size**, **Pointer color** and **Mouse keys**. |
 | Other options         | Defaults selected for **Visual options** and **Touch feedback**. |
 
-Additionally, these accessibility features and apps are returned to default settings when users press [I'm Done](i-am-done-finishing-your-surface-hub-meeting.md):
+Additionally, these accessibility features and apps are returned to default settings when users press [End session](finishing-your-surface-hub-meeting.md):
 - Narrator
 - Magnifier
 - High contrast
