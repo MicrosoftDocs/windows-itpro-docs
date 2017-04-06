@@ -63,8 +63,6 @@ To configure active hours using Group Policy, go to **Computer Configuration\Adm
 
 ![Use Group Policy to configure active hours](images/waas-active-hours-policy.png)
 
-To configure max active hours range, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and open the **Specify active hours range for auto-restarts**. This is only available from Windows 10, version 1703.
-
 ### Configuring active hours with MDM
 
 MDM uses the [Update/ActiveHoursStart and Update/ActiveHoursEnd](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_ActiveHoursEnd)  and [Update/ActiveHoursMaxRange](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-activehoursmaxrange) settings in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) to configure active hours.
@@ -84,9 +82,50 @@ For a detailed description of these regsitry keys, see [Registry keys used to ma
 >
 >![Change active hours](images/waas-active-hours.png)
 
+### Configuring active hours max range
+
+With Windows 10, version 1703, administrators can specify the max active hours range users can set. This option gives you additional flexibility to leave some of the decision for active hours on the user's side, while making sure you allow enough time for updating. The max range is calculated from active hours start time.
+
+To configure active hours max range through Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and open the **Specify active hours range for auto-restarts**. 
+
+To configure active hours max range through MDM, use [**Update/ActiveHoursMaxRange**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-activehoursmaxrange).
+
 ## Limit restart delays
 
 After an update is installed, Windows 10 attemtps automatic restart outside of active hours. If the restart does not succeed after 7 days (by default), the user will see a notification that restart is required. You can use the **Specify deadline before auto-restart for update installation** policy to change the delay from 7 days to a number of days between 2 and 14.
+
+## Control restart notifications
+
+In Windows 10, version 1703, we have added settings to control restart notifications for users.
+
+### Auto-restart notifications
+
+Administrators can override the default behavior for the auto-restart required notification. By default, this notification will dismiss automatically. 
+
+To configure this behavior through Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and select **Configure auto-restart required notification for updates**. When configured to **2 - User Action**, a user that gets this notification must manually dismiss it. 
+
+To configure this behavior through MDM, use [**Update/AutoRestartRequiredNotificationDismissal**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-AutoRestartRequiredNotificationDismissal)
+
+You can also configure the period prior to an update that this notification will show up on. The default value is 15 minutes.
+
+To change it through Group Policy, select **Configure auto-restart-reminder notifications for updates** under **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and select the period in minutes.
+
+To change it through MDM, use [**Update/AutoRestartNotificationSchedule**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-AutoRestartNotificationSchedule).
+
+
+In some cases, you don't need a notification to show up.
+
+To do so through Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and select **Turn off auto-restart notifications for update installations**.
+
+To do so through MDM, use [**Update/SetAutoRestartNotificationDisable**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-setautorestartnotificationdisable).
+
+### Scheduled auto-restart warnings
+
+Since users are not able to postpone a scheduled restart once the deadline has been reached, you can configure a warning reminder prior to the scheduled a restart. You can also configure a configure a warning prior to the restart, to notify users once the restart is imminent and allow them to save their work.
+
+To configure both through Group Policy, find **Configure auto-restart warning notifications schedule for updates** under **Computer Configuration\Administrative Templates\Windows Components\Windows Update**. The warning reminder can be configured by **Reminder (hours)** and the warning prior to an imminent auto-restart can be configured by **Warning (mins)**.
+
+In MDM, the warning reminder is configured using [**Update/ScheduleRestartWarning**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-ScheduleRestartWarning) and the auto-restart imminent warning is configured using [**Update/ScheduleImminentRestartWarning**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-ScheduleImminentRestartWarning).
 
 ## Group Policy settings for restart
 
