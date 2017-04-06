@@ -97,44 +97,13 @@ Yes. Open the **BitLocker Drive Encryption** Control Panel, click **Manage BitLo
 
 ### <a href="" id="bkmk-decryptfirst"></a>Do I have to decrypt my BitLocker-protected drive to download and install system updates and upgrades?
 
-The following table lists what action you need to take before you perform an upgrade or update installation.
+No user action is required for BitLocker in order to apply updates from Microsoft, including [Windows quality updates and feature updates](https://technet.microsoft.com/itpro/windows/manage/waas-quick-start). 
+Users need to suspend BitLocker for Non-Microsoft software updates, such as:   
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Type of update</th>
-<th align="left">Action</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Windows Anytime Upgrade</p></td>
-<td align="left"><p>Decrypt</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Feature updates](https://technet.microsoft.com/itpro/windows/manage/waas-quick-start) for Windows 10 (example: Windows 10, version 1703)</p></td>
-<td align="left"><p>Suspend</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Non-Microsoft software updates, such as:</p>
-<ul>
-<li><p>Computer manufacturer firmware updates</p></li>
-<li><p>TPM firmware updates</p></li>
-<li><p>Non-Microsoft application updates that modify boot components</p></li>
-</ul></td>
-<td align="left"><p>Suspend</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Software and [quality updates](https://technet.microsoft.com/itpro/windows/manage/waas-quick-start) from Windows Update</p></td>
-<td align="left"><p>Nothing</p></td>
-</tr>
-</tbody>
-</table>
- 
+- Computer manufacturer firmware updates
+- TPM firmware updates
+- Non-Microsoft application updates that modify boot components
+
 > **Note:**  If you have suspended BitLocker, you can resume BitLocker protection after you have installed the upgrade or update. Upon resuming protection, BitLocker will reseal the encryption key to the new values of the measured components that changed as a part of the upgrade or update. If these types of upgrades or updates are applied without suspending BitLocker, your computer will enter recovery mode when restarting and will require a recovery key or password to access the computer.
  
 ## <a href="" id="bkmk-deploy"></a>Deployment and administration
