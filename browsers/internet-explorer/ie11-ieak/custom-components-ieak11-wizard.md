@@ -15,7 +15,7 @@ The **Custom Components** page of the Internet Explorer Customization Wizard 11 
 
 **Important**<br>You should sign any custom code that’s being downloaded over the Internet. The default settings of Internet Explorer 11 will automatically reject any unsigned code. For more info about digitally signing custom components, see [Security features and IEAK 11](security-and-ieak11.md).
 
-![](images/wedge.gif) **To use the Custom Component page**
+**To use the Custom Component page**
 
 1.  Click **Add**.<p>
 The **Add a Custom Component** box appears.

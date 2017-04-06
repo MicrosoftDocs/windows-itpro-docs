@@ -15,7 +15,7 @@ The **Browser User Interface** page of the Internet Explorer Customization Wizar
 
 **Note**<br>The customizations you make on this page apply only to Internet Explorer for the desktop.
 
- ![](images/wedge.gif) **To use the Browser User Interface page**
+ **To use the Browser User Interface page**
 
 1.  Check the **Customize Title Bars** box so you can add your custom text to the **Title Bar Text** box.<p>
 The text shows up in the title bar as **IE provided by** &lt;*your_custom_text*&gt;.

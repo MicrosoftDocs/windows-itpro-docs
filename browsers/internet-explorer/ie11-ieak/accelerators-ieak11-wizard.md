@@ -16,7 +16,7 @@ The **Accelerators** page of the Internet Explorer Administration Kit (IEAK 11) 
 **Note**<br>
 The customizations you make on this page apply only to Internet Explorer for the desktop.
 
-![](images/wedge.gif)  **To use the Accelerators page**
+ **To use the Accelerators page**
 
 1.  Click **Import** to automatically import your existing accelerators from your current version of IE into this list.
 
