@@ -20,7 +20,7 @@ The **File Locations** page of the Internet Explorer Customization Wizard 11 let
 **Important**<br>
 You can create a custom installation package on your hard drive and move it to an Internet or intranet server, or you can create it directly on a server. If you create the package on a web server that’s running from your hard drive, use the path to the web server as the destination folder location. Whatever location you choose, it must be protected by appropriate access control lists (ACLs). If the location is not protected, the custom package may be tampered with.
 
-![](images/wedge.gif) **To use the File Locations page**
+**To use the File Locations page**
 
 1.  Browse to the location where you’ll store your finished custom IE installation package and the related subfolders.<p>
 **Note**<br>Subfolders are created for each language version, based on operating system and media type. For example, if your destination folder is `C:\Inetpub\Wwwroot\Cie\Dist`, then the English-language version is created as `C:\Inetpub\Wwwroot\Cie\Dist\Flat\Win32\En` subfolders.

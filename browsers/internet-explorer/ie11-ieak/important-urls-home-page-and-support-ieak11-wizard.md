@@ -13,7 +13,7 @@ ms.sitesec: library
 # Use the Important URLs - Home Page and Support page in the IEAK 11 Wizard
 The **Important URLS – Home Page and Support** page of the Internet Explorer Customization Wizard 11 lets you choose one or more **Home** pages and an online support page for your customized version of IE.
 
-![](images/wedge.gif) **To use the Important URLS – Home Page and Support page**
+**To use the Important URLS – Home Page and Support page**
 
 1.  In the **Add a homepage URL** box, type the URL to the page your employees go to when they click the **Home** button, and then click **Add**.<p>
 If you add multiple **Home** pages, each page appears on a separate tab in the browser. If you don’t add a custom **Home** page, IE uses http://www.msn.com by default. If you want to delete an existing page, click the URL and then click **Remove**.
