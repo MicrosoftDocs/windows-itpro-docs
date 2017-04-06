@@ -224,75 +224,9 @@ In this example, `contoso.com/about/careers` will use the default version of Int
 ## How to target specific sites
 If you want to target specific sites in your organization.
 
-<table>
-<thead>
-<tr class="header">
-<th>Targeted site</th>
-<th>Example</th>
-<th>Explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>You can specify subdomains in the domain tag</td>
-<td>
-<pre class="syntax">
-&lt;docMode&gt;
-  &lt;domain docMode="5"&gt;contoso.com&lt;/domain&gt;
-  &lt;domain docMode="9"&gt;info.contoso.com&lt;/domain&gt;
-&lt;docMode&gt;</pre></td>
-<td>
-<ul>
-  <li>contoso.com uses document mode 5.</li>
-  <li>info.contoso.com uses document mode 9.</li>
-  <li>test.contoso.com also uses document mode 5.</li>
-</ul>
-</td></tr>
-<tr>
-<td>You can specify exact URLs by listing the full path</td>
-<td>
-<pre class="syntax">
-&lt;emie&gt;
-  &lt;domain exclude="false"&gt;bing.com&lt;/domain&gt;
-  &lt;domain exclude="false" forceCompatView="true"&gt;contoso.com&lt;/domain&gt;
-&lt;emie&gt;</pre></td>
-<td>
-<ul>
-  <li>bing.com uses IE8 Enterprise Mode.</li>
-  <li>contoso.com uses IE7 Enterprise Mode.</li>
-</ul>
-</td></tr>
-<tr>
-<td>You can nest paths underneath domains</td>
-<td>
-<pre class="syntax">
-&lt;emie&gt;
-  &lt;domain exclude="true"&gt;contoso.com
-    &lt;path exclude="false"&gt;/about&lt;/path&gt;
-    &lt;path exclude="true"&gt;/about/business&lt;/path&gt;
-  &lt;/domain&gt;
-&lt;/emie&gt;</pre></td>
-<td>
-<ul>
-<li>contoso.com will use the default version of IE.</li>
-<li>contoso.com/about and everything underneath that node will load in Enterprise Mode, except contoso.com/about/business, which will load in the default version of IE.</li>
-</ul>
-</td></tr>
-<tr>
-<td>You can’t add a path underneath a path. The file will still be parsed, but the sub-path will be ignored</td>
-<td>
-<pre class="syntax">
-&lt;emie&gt;
-  &lt;domain exclude="true"&gt;contoso.com
-    &lt;path&gt;/about
-    &lt;path exclude="true"&gt;/business&lt;/path&gt;
-    &lt;/path&gt;
-  &lt;/domain&gt;
-&lt;/emie&gt;</pre></td>
-<td>
-<ul>
-<li>contoso.com will use the default version of IE.</li>
-<li>contoso.com/about and everything underneath that node will load in Enterprise Mode, including contoso.com/about/business because the last rule is ignored.</li>
-</ul>
-</td></tr>
-</table>
+|Targeted site |Example |Explanation |
+|--------------|--------|------------|
+|You can specify subdomains in the domain tag. |<code>&lt;docMode&gt;<br>&lt;domain docMode="5"&gt;contoso.com&lt;/domain&gt;<br>&lt;domain docMode="9"&gt;info.contoso.com&lt;/domain&gt;<br>&lt;docMode&gt;</code> |<ul><li>contoso.com uses document mode 5.</li><li>info.contoso.com uses document mode 9.</li><li>test.contoso.com also uses document mode 5.</li></ul>|
+|You can specify exact URLs by listing the full path. |<code>&lt;emie&gt;<br>&lt;domain exclude="false"&gt;bing.com&lt;/domain&gt;<br>&lt;domain exclude="false" forceCompatView="true"&gt;contoso.com&lt;/domain&gt;<br>&lt;emie&gt;</code>|<ul><li>bing.com uses IE8 Enterprise Mode.</li><li>contoso.com uses IE7 Enterprise Mode.</li></ul>|
+|You can nest paths underneath domains. |<code>&lt;emie&gt;<br>&lt;domain exclude="true"&gt;contoso.com<br>&lt;path exclude="false"&gt;/about&lt;/path&gt;<br>&lt;path exclude="true"&gt;<br>/about/business&lt;/path&gt;<br>&lt;/domain&gt;<br>&lt;/emie&gt;</code> |<ul><li>contoso.com will use the default version of IE.</li><li>contoso.com/about and everything underneath that node will load in Enterprise Mode, except contoso.com/about/business, which will load in the default version of IE.</li></ul> |
+|You can’t add a path underneath a path. The file will still be parsed, but the sub-path will be ignored. |<code>&lt;emie&gt;<br>&lt;domain exclude="true"&gt;contoso.com<br>&lt;path&gt;/about<br>&lt;path exclude="true"&gt;/business&lt;/path&gt;<br>&lt;/path&gt;<br>&lt;/domain&gt;<br>&lt;/emie&gt;</code> |<ul><li>contoso.com will use the default version of IE.</li><li>contoso.com/about and everything underneath that node will load in Enterprise Mode, including contoso.com/about/business because the last rule is ignored.</li></ul> |
