@@ -419,10 +419,10 @@ ConvertTo-ProcessMitigationPolicy -EMETFilePath <String> -OutputFilePath <String
 
 Examples:
 
--   **Convert EMET settings to Windows 10 settings**: You can run ConvertTo-ProcessMitigationPolicy and provide an EMET XML settings file as input, which will generate an output file of Windows 10 mitigation settings. For example:
+-   **Convert EMET settings to Windows 10 settings**: You can run ConvertTo-ProcessMitigationPolicy and provide an EMET XML settings file as input, which will generate a result file of Windows 10 mitigation settings. For example:
     
     ```powershell
-    ConvertTo-ProcessMitigationPolicy -EMETfile emetpolicy.xml -output newconfiguration.xml
+    ConvertTo-ProcessMitigationPolicy -EMETFilePath policy.xml -OutputFilePath result.xml
     ```
 
 -   **Audit and modify the converted settings (the output file)**: Additional cmdlets let you apply, enumerate, enable, disable, and save settings in the output file. For example, this cmdlet enables SEHOP and disables MandatoryASLR and DEPATL registry settings for Notepad:
@@ -436,7 +436,7 @@ Examples:
 -   **Convert Certificate Trust settings to enterprise certificate pinning rules**: If you have an EMET “Certificate Trust” XML file (pinning rules file), you can also use ConvertTo-ProcessMitigationPolicy to convert the pinning rules file into an enterprise certificate pinning rules file. Then you can finish enabling that file as described in [Enterprise Certificate Pinning](enterprise-certificate-pinning.md). For example:
 
     ```powershell
-    ConvertTo-ProcessMitigationPolicy -EMETfile certtrustrules.xml -output enterprisecertpinningrules.xml
+    ConvertTo-ProcessMitigationPolicy -EMETfilePath certtrustrules.xml -OutputFilePath enterprisecertpinningrules.xml
     ```
 
 #### EMET-related products
