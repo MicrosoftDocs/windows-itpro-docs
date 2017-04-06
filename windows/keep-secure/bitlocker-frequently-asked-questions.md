@@ -85,9 +85,9 @@ You should configure the startup options of your computer to have the hard disk 
 
 ## <a href="" id="bkmk-upgrading"></a>Upgrading
 
-### <a href="" id="bkmk-upgradev27"></a>Can I upgrade my Windows 7 or Windows 8 computer to Windows 10 with BitLocker enabled?
+### <a href="" id="bkmk-upgradev27"></a>Can I upgrade to Windows 10 with BitLocker enabled?
 
-Yes. Open the **BitLocker Drive Encryption** Control Panel, click **Manage BitLocker**, and then and click **Suspend**. Suspending protection does not decrypt the drive; it disables the authentication mechanisms used by BitLocker and uses a clear key on the drive to enable access. After the upgrade has completed, open Windows Explorer, right-click the drive, and then click **Resume Protection**. This reapplies the BitLocker authentication methods and deletes the clear key.
+Yes. 
 
 ### <a href="" id="bkmk-disabledecrypt"></a>What is the difference between suspending and decrypting BitLocker?
 
