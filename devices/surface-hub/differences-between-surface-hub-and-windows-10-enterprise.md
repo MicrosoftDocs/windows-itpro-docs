@@ -33,7 +33,7 @@ Surface Hub doesn't have a lock screen or a screen saver, but it has a similar f
 Surface Hub is designed to be used in communal spaces, such as meeting rooms. Unlike Windows PCs, anyone can walk up and use a Surface Hub without logging on. The system always runs as a local, auto logged-in, low-privilege user. It doesn't support logging in any additional users - including admin users.
 
 > [!NOTE]
-> Surface Hub supports signing in to Microsoft Edge and other apps. However, these credentials are deleted when users press **End session**. 
+> Surface Hub supports signing in to Microsoft Edge and other apps. However, these credentials are deleted when users press **I'm done**. 
 
 *Organization policies that this may affect:* <br> Generally, Surface Hub uses lockdown features rather than user access control to enforce security. Policies related to password requirements, interactive logon, user accounts, and access control don't apply for Surface Hub.
 
@@ -46,7 +46,7 @@ Users have access to a limited set of directories on the Surface Hub:
 - Pictures
 - Downloads
 
-Files saved locally in these directories are deleted when users press **End session**. To save content created during a meeting, users should save files to a USB drive or to OneDrive.
+Files saved locally in these directories are deleted when users press **I'm done**. To save content created during a meeting, users should save files to a USB drive or to OneDrive.
 
 *Organization policies that this may affect:* <br> Policies related to access permissions and ownership of files and folders don't apply for Surface Hub. Users can't browse and save files to system directories and network folders.
 
