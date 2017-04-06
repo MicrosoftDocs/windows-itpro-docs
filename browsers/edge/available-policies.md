@@ -5,11 +5,11 @@ author: eross-msft
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
-title: Available Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge (Microsoft Edge for IT Pros)
+title: Group Policy and Mobile Device Management settings for Microsoft Edge (Microsoft Edge for IT Pros)
 localizationpriority: high
 ---
 
-# Available Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
+# Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
 
 **Applies to:**
 
