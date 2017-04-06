@@ -15,7 +15,7 @@ The **User Experience** page of the Internet Explorer Customization Wizard 11 le
 
 **Note**<br>You’ll only see this page if you are running the **Internal** version of the Internet Explorer Customization Wizard 11.<p>The customizations you make on this page only apply to Internet Explorer for the desktop on Windows 7.
 
-![](images/wedge.gif) **To use the User Experience page**
+**To use the User Experience page**
 
 1.  Choose how your employee should interact with Setup, including:
 

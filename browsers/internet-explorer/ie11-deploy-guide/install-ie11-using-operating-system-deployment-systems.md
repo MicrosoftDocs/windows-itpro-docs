@@ -26,7 +26,7 @@ After you install the .msu file updates, you'll need to add them to your MDT dep
 
 MDT adds IE11 to your Windows images, regardless whether you are creating or deploying a customized or non-customized image. MDT also lets you perform offline servicing during the System Center 2012 R2 Configuration Manager task sequence, letting you add IE11 before starting Windows. For info, see [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?linkid=331148).
 
- ![](images/wedge.gif) **To add IE11 to a MDT deployment share**
+ **To add IE11 to a MDT deployment share**
 
 1.  Right-click **Packages** from each **Deployment Shares** location, and then click **Import OS Packages**.
 
