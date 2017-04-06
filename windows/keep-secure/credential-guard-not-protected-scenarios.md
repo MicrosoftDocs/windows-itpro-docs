@@ -29,13 +29,9 @@ Some ways to store credentials are not protected by Credential Guard, including:
 -   Third-party security packages
 -   Digest and CredSSP credentials
     -   When Credential Guard is enabled, neither Digest nor CredSSP have access to users' logon credentials. This implies no Single Sign-On use for these protocols.
--   Supplied credentials for NTLM authentication are not protected. If a user is prompted for and enters credentials for NTLM authentication, these credentials are vulnerable to be read from LSASS memory. Note that these same credentials are vulnerable to key loggers as well.
-
->[!NOTE] 
-When Credential Guard is deployed on a VM, Credential Guard protects secrets from attacks inside the VM. However, it does not provide additional protection from privileged system attacks originating from the host.
-
->[!NOTE] 
-Windows logon cached password verifiers (commonly called "cached credentials")
+-   Supplied credentials for NTLM authentication are not protected. If a user is prompted for and enters credentials for NTLM authentication, these credentials are vulnerable to be read from LSASS memory. Note that these same credentials are vulnerable to key loggers as well.- 
+-  When Credential Guard is deployed on a VM, Credential Guard protects secrets from attacks inside the VM. However, it does not provide additional protection from privileged system attacks originating from the host.
+-  Windows logon cached password verifiers (commonly called "cached credentials")
 do not qualify as credentials because they cannot be presented to another computer for authentication, and can only be used locally to verify credentials. They are stored in the registry on the local computer and provide validation for credentials when a domain-joined computer cannot connect to AD DS during user logon. These “cached logons”, or more specifically, cached domain account information, can be managed using the security policy setting **Interactive logon: Number of previous logons to cache** if a domain controller is not available.
 
 ## Additional mitigations
@@ -637,42 +633,6 @@ write-host $tmp -Foreground Red
 
 > [!NOTE]  
 > If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
-
-
-
-
-## Troubleshooting Credential Guard
-
-
-
-### Known Issues
-
-Microsoft is aware of certain issues with Credential Guard that affect client machines that run Windows 10.
-•	For devices with Credential Guard enabled, a sign-in attempt that fails because of a bad password counts as two bad password attempts instead of one. Consequently, if your enterprise has an account lockout policy based on a certain number of failed password attempts, that threshold will be reached in half the number of attempts. 
-
-This issue has been resolved for clients that run Windows 10 version 1703. For clients that run Windows 10 version 1607, a hotfix is available for download to resolve the issue. For clients that run Windows 10 versions 1507 or 1511, no hotfix is available. For those operating systems, to resolve the issue, you can upgrade the client to a later version of Windows 10. As a workaround, administrators can either choose to increase the account lockout threshold accordingly, consistent with current security policy, or can disable Credential Guard. For further information, see Credential Guard generates double bad password count
-
-Credential guard has known issues on Windows 10 when used with certain third-party applications:
-
-•	Applications Appsense and Lumension E S. are known to cause high CPU utilization on Windows 10 client machines with credential guard enabled. 
-•	Citrix Applications are known to cause high CPU utilization on Windows 10 client machines. This issue is currently under investigation.
-•	Cisco Proxy Agents are known to cause authentication failure on Windows 10 client machines. This issue is currently under investigation.
-•	Client machines with Credential Guard enabled cannot access shares on For further information see: Machines with Credential Guard enabled unable to connect to IBM File Servers
-
-
-
-
-
-
-### How-to
-
-
-
-
-
-
-
-
 
 ## See also
 
