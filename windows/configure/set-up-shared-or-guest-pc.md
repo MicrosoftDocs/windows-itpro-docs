@@ -145,43 +145,15 @@ You can apply the provisioning package to a PC during initial setup or to a PC t
 
     ![The first screen to set up a new PC](images/oobe.jpg)
 
-2. Insert the USB drive. If there is only one provisioning package on the USB drive, the **Set up device?** message displays. Click **Set up**. 
+2. Insert the USB drive. If nothing happens when you insert the USB drive, press the Windows key five times.
 
-    If nothing happens when you insert the USB drive, press the Windows key five times. If a setup message isn't shown, you may have gone too far in setup and need to reset the PC to start over. To reset the PC, continue setup until you get to the desktop, then go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**. 
+    - If there is only one provisioning package on the USB drive, the provisioning package is applied.
+    
+    - If there is more than one provisioning package on the USB drive, the **Set up device?** message displays. Click **Set up**, and select the provisioning package that you want to install. 
 
     ![Set up device?](images/setupmsg.jpg)
 
-3. The next screen asks you to select a provisioning source. Select **Removable Media** and tap **Next**.
-
-    ![Provision this device](images/prov.jpg)
-    
-4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
-
-    ![Choose a package](images/choose-package.png)
-
-5. Select **Yes, add it**.
-
-    ![Do you trust this package?](images/trust-package.png)
-    
-6. Read and accept the Microsoft Software License Terms.  
-
-    ![Sign in](images/license-terms.png)
-    
-7. Select **Use Express settings**.
-
-    ![Get going fast](images/express-settings.png)
-
-8. If the PC doesn't use a volume license, you'll see the **Who owns this PC?** screen. Select **My work or school owns it** and tap **Next**.
-
-    ![Who owns this PC?](images/who-owns-pc.png)
-
-9. On the **Choose how you'll connect** screen, select **Join Azure AD** or **Join a domain** and tap **Next**.
-
-    ![Connect to Azure AD](images/connect-aad.png)
-
-10. Sign in with  your domain, Azure AD,  or Office 365 account and password. When you see the progress ring, you can remove the USB drive.
-
-    ![Sign in](images/sign-in-prov.png)
+3. Complete the setup process.
 
     
 **After setup**
