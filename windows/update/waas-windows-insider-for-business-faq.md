@@ -74,7 +74,7 @@ In just a few steps, you can switch your existing program registration from your
 Sign in to the Feedback Hub using the same AAD account you are using to flight builds.
 
 ### Am I going to lose all the feedback I submitted and badges I earned with my MSA?
-No. However, your feedback will not be transferred from your MSA to your AAD account. You can switch back to your MSA account in the Feedback Hub to access feedback you’ve submitted and badge you’ve earned.
+No. However, your feedback will not be transferred from your MSA to your AAD account. You can switch back to your MSA account in the Feedback Hub to access feedback you’ve submitted and badges you’ve earned.
 
 ### How is licensing handled for Windows 10 Insider builds? 
 All PCs need to have a valid Windows 10 license. This requirement applies whether the device is joined to the Windows Insider Program using a Microsoft account or an Azure Active Directory account. 
