@@ -26,7 +26,7 @@
 ### [How Credential Guard works](credential-guard-how-it-works.md)
 ### [Credential Guard Requirements](credential-guard-requirements.md)
 ### [Manage Credential Guard](credential-guard-manage.md)
-### [Credential Guard protection limits](credential-guard-protection-limits.md.md)
+### [Credential Guard protection limits](credential-guard-protection-limits.md)
 ### [Considerations when using Credential Guard](credential-guard-considerations.md)
 ### [Credential Guard: Additional mitigations](additional-mitigations.md)
 ## [Protect Remote Desktop credentials with Remote Credential Guard](remote-credential-guard.md)
