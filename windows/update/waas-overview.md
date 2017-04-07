@@ -86,6 +86,7 @@ The concept of servicing branches is new, but organizations can use the same man
 >Servicing branches are not the only way to separate groups of devices when consuming updates. Each branch can contain subsets of devices, which staggers servicing even further. For information about the servicing strategy and ongoing deployment process for Windows 10, including the role of servicing branches, see [Plan servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md). 
 
 
+
 ### Current Branch
 
 In the CB servicing model, feature updates are available as soon as Microsoft releases them. Windows 10 version 1511 had few servicing tool options to delay CB feature updates, limiting the use of the CB servicing branch. Windows 10 version 1607, however, includes more servicing tools that can delay CB feature updates for up to 180 days. The CB servicing model is ideal for pilot deployments and testing of Windows 10 feature updates and for users such as developers who need to work with the latest features immediately.
@@ -94,6 +95,7 @@ When Microsoft officially releases a feature update for Windows 10, that update 
 
 
 ### Current Branch for Business
+
 
 Organizations typically prefer to have a testing cycle before broadly deploying new features to business users. For Windows 10, most pilot testing will be done using the CB servicing branch. In contrast, the CBB servicing branch is typically used for broad deployment. Windows 10 clients in the CBB servicing branch receive the same build of Windows 10 as those in the CB servicing branch, just at a later time. CB releases are transitioned to CBB after about 4 months, indicating that Microsoft, independent software vendors (ISVs), partners, and customers believe that the release is ready for broad deployment. Therefore, CB and CBB have an inherent “staging” effect. Both of these branches have a purpose in the overall deployment process for an enterprise, providing another layer of testing capabilities in addition to the traditional phased deployment methods to specific groups of machines. Microsoft will support two CBB builds at a time, plus a 60 day grace period.  Each feature update release will be supported and updated for a minimum of 18 months.
 
@@ -125,6 +127,8 @@ LTSB is available only in the Windows 10 Enterprise LTSB edition. This build of 
 For many IT pros, gaining visibility into feature updates early—before they’re available to the CB servicing branch—can be both intriguing and valuable for future end user communications as well as provide additional prestaging for CB machines. With Windows 10, feature flighting enables Windows Insiders to consume and deploy preproduction code to their test machines, gaining early visibility into the next build. Testing the early builds of Windows 10 helps both Microsoft and its customers because they have the opportunity to discover possible issues before the update is ever publicly available and can report it to Microsoft. Also, as flighted builds get closer to their release to CB, organizations can test their deployment on test devices for compatibility validation. 
 
 Microsoft recommends that all organizations have at least a few PCs enrolled in the Windows Insider Program and provide feedback on any issues they encounter. For information about how to sign up for the Windows Insider Program and enroll test devices, go to [https://insider.windows.com](https://insider.windows.com).
+
+To find out more about the Windows Insider Program for Business, visit [Windows Insider Program for Business](windows/update/waas-windows-insider-for-business.md).
 
 >[!NOTE]
 >Microsoft recommends that all organizations have at least a few PCs enrolled in the Windows Insider Program, to include the Windows Insider Program in their deployment plans and to provide feedback on any issues they encounter to Microsoft via our Feedback Hub app. 
