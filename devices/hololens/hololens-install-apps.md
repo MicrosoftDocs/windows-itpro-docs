@@ -21,7 +21,6 @@ You can also deploy apps using your mobile device management (MDM) provider or u
 ## Use Windows Store for Business to deploy apps to HoloLens
 
 Windows Store for Business is a private Windows Store for your enterprise. People in your organization can open the Store app and select your private Store to install apps that you have made available to them. 
-
 ![How Windows Store for Business appears in Store app](images/wsfb-private.png)
 
 In your Windows Store for Business dashboard, you can also download apps to distribute to devices that aren't connected to the Internet, plus add line-of-business (LOB) apps for distribution. 
@@ -31,8 +30,7 @@ In your Windows Store for Business dashboard, you can also download apps to dist
 - You need to be a global administrator for your Azure Active Directory (Azure AD) tenant. 
 
     >[!TIP]
-    >You can create an Azure AD account and tenant as part of the Store for Business sign-up process.
-     
+    >You can create an Azure AD account and tenant as part of the Store for Business sign-up process.     
 - End users need Azure AD accounts when they access Store for Business content from Windows-based devices.
 
 ### Windows Store for Business process
@@ -70,6 +68,7 @@ Using Intune, you can also [monitor your app deployment](https://docs.microsoft.
 3. [Create a user name and password](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal.html#creating_a_username_and_password) if this is the first time you connect to the Windows Device Portal, or enter the user name and password that you previously set up.
 
     >[!TIP]
+
     >If you see a certificate error in the browser, follow [these troubleshooting steps](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal.html#security_certificate). 
 
 4. In the Windows Device Portal, click **Apps**.

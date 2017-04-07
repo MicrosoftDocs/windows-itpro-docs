@@ -1491,7 +1491,7 @@ This event sends data about the device, including hardware type, OEM brand, mode
 
 The following fields are available:
 
-- **ChassisType**  Represents the type of device chassis, such as desktop or low profile desktop. The possible values can range between 1 - 24.
+- **ChassisType**  Represents the type of device chassis, such as desktop or low profile desktop. The possible values can range between 1 - 36.
 - **ComputerHardwareID**  Identifies a device class that is represented by a hash of different SMBIOS fields.
 - **DeviceColor**  Indicates a color of the device.
 - **DeviceName**  The device name that is set by the user.

@@ -15,7 +15,7 @@ The **Search Providers** page of the Internet Explorer Customization Wizard 11 l
 
 **Note**<br>The Internet Explorer Customization Wizard 11 offers improved and extended search settings. However, you can still optionally include support for Search Suggestions and Favicons, as well as Accelerator previews by using an .ins file from a previous version of IEAK.
 
-![](images/wedge.gif) **To use the Search Providers page**
+**To use the Search Providers page**
 
 1.  Click **Import** to automatically import your existing search providers from your current version of IE into this list.
 
