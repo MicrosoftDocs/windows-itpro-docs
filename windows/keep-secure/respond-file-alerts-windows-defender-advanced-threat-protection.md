@@ -34,13 +34,13 @@ You can contain an attack in your organization by stopping the malicious process
 
 The **Stop & Quarantine File** action includes stopping running processes, quarantining the files, and deleting persistency such as registry keys.
 
-The action takes effect on machines with the latest Windows 10 Insider Preview build where the file was observed in the last 30 days.
+The action takes effect on machines with the latest Windows 10, version 1703 where the file was observed in the last 30 days.
 
 ### Stop and quarantine files
 1.	Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
 
-    – **Alerts** - click the corresponding links from the Description or Details in the Alert timeline
-    – **Search box** - select File from the drop–down menu and enter the file name
+  - **Alerts** - click the corresponding links from the Description or Details in the Alert timeline
+  - **Search box** - select File from the drop–down menu and enter the file name
 
 2.	Open the **Actions menu** and select **Stop & Quarantine File**.
     ![Image of stop and quarantine file action](images/atp-stop-quarantine-file.png)
@@ -50,11 +50,11 @@ The action takes effect on machines with the latest Windows 10 Insider Preview b
   The Action center shows the submission information:
     ![Image of stop and quarantine file action center](images/atp-stopnquarantine-file.png)
 
-    –	**Submission time** - Shows when the action was submitted.
-    –	**Submitting user** - Shows who submitted the action on the file. You can view the comments provided by the user by selecting the information icon.
-    –	**Pending** - Shows the number of machines where the file is yet to be stopped and quarantined from. This can take time for cases when the machine is offline or not connected to the network.
-    –	**Success** - Shows the number of machines where the file has been stopped and quarantined.
-    –	**Failed** - Shows the number of machines where the action failed and details about the failure.
+    -	**Submission time** - Shows when the action was submitted. <br>
+    -	**Submitting user** - Shows who submitted the action on the file. You can view the comments provided by the user by selecting the information icon. <br>
+    -	**Pending** - Shows the number of machines where the file is yet to be stopped and quarantined from. This can take time for cases when the machine is offline or not connected to the network.<br>
+    -	**Success** - Shows the number of machines where the file has been stopped and quarantined.<br>
+    -	**Failed** - Shows the number of machines where the action failed and details about the failure.<br>
 
 4. Select any of the status indicators to view more information about the action. For example, select **Failed** to see where the action failed.
 
@@ -108,9 +108,9 @@ The Action center shows the submission information:
 
   ![Image of block file](images/atp-blockfile.png)
 
-  – **Submission time** - Shows when the action was submitted.
-  –	**Submitting user** - Shows who submitted the action on the file. You can view the comments provided by the user by selecting the information icon.
-  –	**Status** - Indicates whether the file was added to or removed from the blacklist.
+  - **Submission time** - Shows when the action was submitted. <br>
+  -	**Submitting user** - Shows who submitted the action on the file. You can view the comments provided by the user by selecting the information icon. <br>
+  -	**Status** - Indicates whether the file was added to or removed from the blacklist.
 
 When the file is blocked, there will be a new event in the machine timeline.</br>
 
@@ -129,9 +129,9 @@ For prevalent files in the organization, a warning is shown before an action is 
 ### Remove file from blocked list
 1.	Select the file you want to remove from the blocked list. You can select a file from any of the following views or use the Search box:
 
-  –	**Alerts** - Click the file links from the Description or Details in the Alert timeline
-  –	**Machines list** - Click the file links in the Description or Details columns in the Observed on machine section
-  –	**Search box** - Select File from the drop–down menu and enter the file name
+  -	**Alerts** - Click the file links from the Description or Details in the Alert timeline <br>
+  -	**Machines list** - Click the file links in the Description or Details columns in the Observed on machine section <br>
+  -	**Search box** - Select File from the drop–down menu and enter the file name
 
 2.	Open the **Actions** menu and select **Remove file from blocked list**.
 
@@ -173,10 +173,10 @@ When the sample is collected, Windows Defender ATP runs the file in is a secure 
 
 **Submit files for deep analysis:**
 
-1. Select the file that you want to submit for deep analysis. You can select or search a file from any of the following views:
-  – Alerts - click the file links from the **Description** or **Details** in the Alert timeline
-  – **Machines list** - click the file links from the **Description** or **Details** in the **Machine in organization** section
-  – Search box - select **File** from the drop–down menu and enter the file name
+1. Select the file that you want to submit for deep analysis. You can select or search a file from any of the following views: <br>
+  - Alerts - click the file links from the **Description** or **Details** in the Alert timeline <br>
+  - **Machines list** - click the file links from the **Description** or **Details** in the **Machine in organization** section <br>
+  - Search box - select **File** from the drop–down menu and enter the file name <br>
 2. In the **Deep analysis** section of the file view, click **Submit**.
 
 ![You can only submit PE files in the file details section](images/submit-file.png)

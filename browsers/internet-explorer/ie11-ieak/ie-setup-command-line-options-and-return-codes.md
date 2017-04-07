@@ -46,7 +46,7 @@ These command-line options work with IE Setup:
 
 
 ## Windows Setup return and status codes
-Windows Setup needs to tell you whether IE successfully installed. However, because IE11wzd.exe is packaged insider your IE11setup.exe file, the return codes can’t be sent directly back to you. Instead, Setup needs to return the information (both success and failure) to the `HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\InstallInfo` registry branch.
+Windows Setup needs to tell you whether IE successfully installed. However, because IE11wzd.exe is packaged inside your IE11setup.exe file, the return codes can’t be sent directly back to you. Instead, Setup needs to return the information (both success and failure) to the `HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\InstallInfo` registry branch.
 
 |Subkey   |Data type |Value                                  |
 |---------|----------|---------------------------------------|

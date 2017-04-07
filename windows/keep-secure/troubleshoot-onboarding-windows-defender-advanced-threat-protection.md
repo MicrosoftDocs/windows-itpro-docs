@@ -151,8 +151,21 @@ Event ID | Message | Resolution steps
 5 | Windows Defender Advanced Threat Protection service failed to connect to the server at _variable_ | [Ensure the endpoint has Internet access](#ensure-the-endpoint-has-an-internet-connection).
 6 | Windows Defender Advanced Threat Protection service is not onboarded and no onboarding parameters were found. Failure code: _variable_ | [Run the onboarding script again](configure-endpoints-windows-defender-advanced-threat-protection.md).
 7 |  Windows Defender Advanced Threat Protection service failed to read the onboarding parameters. Failure code: _variable_ | [Ensure the endpoint has Internet access](#ensure-the-endpoint-has-an-internet-connection), then run the entire onboarding process again.
+9 | Windows Defender Advanced Threat Protection service failed to change its start type. Failure code: variable | If the event happened during onboarding, reboot and re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-windows-defender-advanced-threat-protection.md). <br><br>If the event happened during offboarding, contact support.
+10 | Windows Defender Advanced Threat Protection service failed to persist the onboarding information. Failure code: variable | If the event happened during onboarding, re-attempt running the onboarding script. For more information, see [Run the onboarding script again](configure-endpoints-windows-defender-advanced-threat-protection.md). <br><br>If the problem persists, contact support.
 15 | Windows Defender Advanced Threat Protection cannot start command channel with URL: _variable_ | [Ensure the endpoint has Internet access](#ensure-the-endpoint-has-an-internet-connection).
+17 | Windows Defender Advanced Threat Protection service failed to change the Connected User Experiences and Telemetry service location. Failure code: variable | [Run the onboarding script again](configure-endpoints-windows-defender-advanced-threat-protection.md). If the problem persists, contact support.
 25 | Windows Defender Advanced Threat Protection service failed to reset health status in the registry. Failure code: _variable_ | Contact support.
+27 | Failed to enable Windows Defender Advanced Threat Protection mode in Windows Defender. Onboarding process failed. Failure code: variable | Contact support.
+29 | Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3 | Ensure the endpoint has Internet access, then run the entire offboarding process again.
+30 | Failed to disable $(build.sense.productDisplayName) mode in Windows Defender Advanced Threat Protection. Failure code: %1 | Contact support.
+32 | $(build.sense.productDisplayName) service failed to request to stop itself after offboarding process. Failure code: %1 | Verify that the service start type is manual and reboot the machine.
+55 | Failed to create the Secure ETW autologger. Failure code: %1	| Reboot the machine.
+63 | Updating the start type of external service. Name: %1, actual start type: %2, expected start type: %3, exit code: %4	| Identify what is causing changes in start type of mentioned service. If the exit code is not 0, fix the start type manually to expected start type.
+64 |	Starting stopped external service. Name: %1, exit code: %2 |	Contact support if the event keeps re-appearing.
+68 | The start type of the service is unexpected. Service name: %1, actual start type: %2, expected start type: %3	| Identify what is causing changes in start type. Fix mentioned service start type.
+69 |	The service is stopped. Service name: %1	| Start the mentioned service. Contact support if persists.
+
 <br>
 There are additional components on the endpoint that the Windows Defender ATP agent depends on to function properly. If there are no onboarding related errors in the Windows Defender ATP agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
 

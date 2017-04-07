@@ -56,31 +56,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "devices/surface-hub/i-am-done-finishing-your-surface-hub-meeting.md",
-"redirect_url": "/itpro/surface-hub/finishing-your-surface-hub-meeting",
-"redirect_document_id": true
-},
-{
-"source_path": "devices/surface-hub/provisioning-packages-for-certificates-surface-hub.md",
-"redirect_url": "/itpro/surface-hub/provisioning-packages-for-surface-hub",
-"redirect_document_id": true
-},
-{
-"source_path": "devices/surface-hub/manage-settings-with-local-admin-account-surface-hub.md",
-"redirect_url": "/itpro/surface-hub/admin-group-management-for-surface-hub",
-"redirect_document_id": true
-},
-{
-"source_path": "devices/surface-hub/surface-hub-administrators-guide.md",
-"redirect_url": "/itpro/surface-hub/index",
-"redirect_document_id": true
-},
-{
-"source_path": "devices/surface-hub/intro-to-surface-hub.md",
-"redirect_url": "/itpro/surface-hub/index",
-"redirect_document_id": false
-},
-{
 "source_path": "windows/manage/waas-quick-start.md",
 "redirect_url": "/itpro/windows/update/waas-quick-start",
 "redirect_document_id": true
@@ -646,6 +621,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/manage/cortana-at-work-overview.md",
+"redirect_url": "/itpro/windows/configure/cortana-at-work-overview",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/manage/manage-inventory-windows-store-for-business.md",
 "redirect_url": "/itpro/windows/manage/app-inventory-managemement-windows-store-for-business",
 "redirect_document_id": true
@@ -1139,6 +1119,6 @@
 "source_path": "windows/whats-new/security.md",
 "redirect_url": "/itpro/windows/keep-secure/overview-of-threat-mitigations-in-windows-10",
 "redirect_document_id": false
-},
+}
 ]
 }

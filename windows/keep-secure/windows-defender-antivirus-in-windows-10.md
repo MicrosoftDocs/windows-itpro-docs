@@ -66,7 +66,6 @@ Some features require a certain version of Windows 10 - the minimum version requ
 
 Functionality, configuration, and management is largely the same when using Windows Defender Antivirus on Windows Server 2016, however [there are some differences](windows-defender-antivirus-on-windows-server-2016.md).
 
-#
 
 
  
@@ -74,7 +73,7 @@ Functionality, configuration, and management is largely the same when using Wind
 
 Topic | Description
 :---|:---
-[Evaluate Windows Defender Antivirus protection](evaluate-windows-defender-antivirus.md) | Evaluate the protection capabilities of Windows Defender Antivirus with a specialized evaluation guide and powershell script
+[Evaluate Windows Defender Antivirus protection](evaluate-windows-defender-antivirus.md) | Evaluate the protection capabilities of Windows Defender Antivirus with a specialized evaluation guide and PowerShell script
 [Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md) | While traditional client deployment is not required for Windows Defender AV, you will need to enable the service. You can also manage how protection and product updates are applies, and receive reports from Configuration Manager, Intune, and with some security information and event monitoring (SIEM) tools
 [Configure Windows Defender features](configure-windows-defender-antivirus-features.md) | Windows Defender AV has a large set of configurable features and options. You can configure options such as cloud-delivered protection, always-on monitoring and scanning, and how end-users can interact or override global policy settings
 [Customize, initiate, and review the results of scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md) | You can set up scheduled scans, run on-demand scans, and configure how remediation works when threats are detected

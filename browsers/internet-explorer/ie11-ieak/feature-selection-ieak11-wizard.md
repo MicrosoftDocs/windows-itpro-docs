@@ -43,7 +43,7 @@ The **Feature Selection** page of the Internet Explorer Customization Wizard 11 
 
 **Note**<br>Your choices on this page determine what wizard pages appear.
 
-![](images/wedge.gif) **To use the Feature Selection page**
+**To use the Feature Selection page**
 
 1.  Check the box next to each feature you want to include in your custom installation package.<p>
 You can also click **Select All** to add, or **Clear All** to remove, all of the features.

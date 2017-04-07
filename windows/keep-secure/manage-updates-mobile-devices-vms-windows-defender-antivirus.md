@@ -35,7 +35,7 @@ There are two settings that are particularly useful for these devices:
 - Opt-in to Microsoft Update on mobile computers without a WSUS connection
 - Prevent definition updates when running on battery power
 
-The following topics may also be useful in this situations:
+The following topics may also be useful in these situations:
 - [Configuring scheduled and catch-up scans](scheduled-catch-up-scans-windows-defender-antivirus.md)
 - [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
 - [Deployment guide for Windows Defender Antivirus in a virtual desktop infrastructure (VDI) environment](deployment-vdi-windows-defender-antivirus.md)

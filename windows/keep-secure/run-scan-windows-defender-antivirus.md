@@ -65,7 +65,7 @@ See [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defen
 
 **Use Configuration Manager to run a scan:**
 
-See [Antimalware and firewall tasks: How to perform an on-demance scan](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers) for details on using System Center Configuration Manager (current branch) to run a scan.
+See [Antimalware and firewall tasks: How to perform an on-demand scan](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers) for details on using System Center Configuration Manager (current branch) to run a scan.
 
 
 
