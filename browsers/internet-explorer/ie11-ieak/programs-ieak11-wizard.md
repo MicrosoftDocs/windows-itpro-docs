@@ -15,7 +15,7 @@ The **Programs** page of the Internet Explorer Customization Wizard 11 lets you 
 
 **Important**<br>The customizations you make on this page only apply to Internet Explorer for the desktop.
 
-![](images/wedge.gif) **To use the Programs page**
+**To use the Programs page**
 
 1. Determine whether you want to customize your connection settings. You can pick:
 

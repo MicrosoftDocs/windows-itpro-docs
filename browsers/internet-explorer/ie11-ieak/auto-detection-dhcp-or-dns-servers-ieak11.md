@@ -15,7 +15,7 @@ Set up your network to automatically detect and customize Internet Explorer 11 
 
 Before you can set up your environment to use automatic detection, you need to turn the feature on.
 
-![](images/wedge.gif) **To turn on the automatic detection feature**
+**To turn on the automatic detection feature**
 
 -   Open Internet Explorer Administration Kit 11 (IEAK 11), run the IE Customization Wizard 11 and on the **Automatic Configuration** page, check **Automatically detect configuration settings**. For more information, see [Use the Automatic Configuration page in the IEAK 11 Wizard](auto-config-ieak11-wizard.md).
 
@@ -30,7 +30,7 @@ Your DHCP servers must support the DHCPINFORM message, to obtain the DHCP option
 <p>**Note**<br>
 DHCP has a higher priority than DNS for automatic configuration. If DHCP provides the URL to a .pac, .jvs, .js, or .ins configuration file, the process stops and the DNS lookup doesn't happen.
 
-![](images/wedge.gif) **To set up automatic detection for DHCP servers**
+**To set up automatic detection for DHCP servers**
 
 -   Open the [DHCP Administrative Tool](https://go.microsoft.com/fwlink/p/?LinkId=302212), create a new option type, using the code number 252, and then associate it with the URL to your configuration file. For detailed instructions about how to do this, see [Create an option 252 entry in DHCP](https://go.microsoft.com/fwlink/p/?LinkId=294649).
 
@@ -40,7 +40,7 @@ DHCP has a higher priority than DNS for automatic configuration. If DHCP provide
     `http://123.4.567.8/account.pac`<p>
     For more detailed info about how to set up your DHCP server, see your server documentation.
 
-![](images/wedge.gif) **To set up automatic detection for DNS servers**
+**To set up automatic detection for DNS servers**
 
 1.  In your DNS database file, the file that’s used to associate your host (computer) names to static IP addresses in a zone, you need to create a host record named, **WPAD**. This record contains entries for all of the hosts that require static mappings, such as workstations, name servers, and mail servers. It also has the IP address to the web server storing your automatic configuration (.js, .jvs, .pac, or .ins) file.<p>The syntax is:<br>
 `<host_name> IN A <host_ip_address>`<br>
