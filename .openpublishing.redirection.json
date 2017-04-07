@@ -621,6 +621,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/manage/cortana-at-work-overview.md",
+"redirect_url": "/itpro/windows/configure/cortana-at-work-overview",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/manage-inventory-windows-store-for-business.md",
 "redirect_url": "/itpro/windows/manage/app-inventory-managemement-windows-store-for-business",
 "redirect_document_id": true
