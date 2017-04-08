@@ -1,6 +1,6 @@
 ---
-title: Roles and permissions in Windows Store for Business (Windows 10)
-description: The first person to sign in to Windows Store for Business must be a Global Admin of the Azure Active Directory (AD) tenant. Once the Global Admin has signed in, they can give permissions to others employees.
+title: Roles and permissions in Microsoft Store for Business (Windows 10)
+description: The first person to sign in to Microsoft Store for Business must be a Global Admin of the Azure Active Directory (AD) tenant. Once the Global Admin has signed in, they can give permissions to others employees.
 ms.assetid: CB6281E1-37B1-4B8B-991D-BC5ED361F1EE
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -10,7 +10,7 @@ author: TrudyHa
 localizationpriority: high
 ---
 
-# Roles and permissions in Windows Store for Business
+# Roles and permissions in Microsoft Store for Business
 
 
 **Applies to**
@@ -18,7 +18,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-The first person to sign in to Windows Store for Business must be a Global Admin of the Azure Active Directory (AD) tenant. Once the Global Admin has signed in, they can give permissions to others employees.
+The first person to sign in to Microsoft Store for Business must be a Global Admin of the Azure Active Directory (AD) tenant. Once the Global Admin has signed in, they can give permissions to others employees.
 
 Store for Business has a set of roles that help admins and employees manage access to apps and tasks for the Store for Business. Employees with these roles will need to use their Azure AD account to access the Store for Business. Global Administrators and global user accounts that are used with other Microsoft services, such as Azure, or Office 365 can sign in to Store for Business. Global user accounts have some permissions in the Store for Business. Store for Business has a set of roles that help IT admins and employees manage access to apps and tasks for the Store for Business.
 
@@ -87,19 +87,15 @@ These permissions allow people to:
 
 2.  Click **Settings**, and then choose **Permissions**.
 
-    ![Image showing Permissions page in Windows Store for Business.](images/wsfb-settings-permissions.png)
+    OR
+    
+    Click **Manage**, and then click **Permissions** on the left-hand menu.
+
+    <!--- ![Image showing Permissions page in Microsoft Store for Business.](images/wsfb-settings-permissions.png) -->
 
 3.  Click **Add people**, type a name, choose the role you want to assign, and click **Save** .
 
-    ![Image showing Assign roles to people box in Windows Store for Business.](images/wsfb-permissions-assignrole.png)
+    <!--- ![Image showing Assign roles to people box in Windows Store for Business.](images/wsfb-permissions-assignrole.png) -->
 
-4.  If you are not finding the name you want, you might need to add people to your        Azure AD directory. For more information, see [Manage user accounts in the     Windows Store for Business.](manage-users-and-groups-windows-store-for-business.md)
-
- 
-
- 
-
-
-
-
+4.  If you are not finding the name you want, you might need to add people to your        Azure AD directory. For more information, see [Manage user accounts in the     Microsoft Store for Business.](manage-users-and-groups-windows-store-for-business.md)
 

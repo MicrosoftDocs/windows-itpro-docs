@@ -1,6 +1,6 @@
 ---
-title: Sign up for Windows Store for Business (Windows 10)
-description: Before you sign up for Windows Store for Business, at a minimum, you'll need an Azure Active Directory (AD) account for your organization, and you'll need to be the global administrator for your organization.
+title: Sign up for Microsoft Store for Business (Windows 10)
+description: Before you sign up for Microsoft Store for Business, at a minimum, you'll need an Azure Active Directory (AD) account for your organization, and you'll need to be the global administrator for your organization.
 ms.assetid: 296AAC02-5C79-4999-B221-4F5F8CEA1F12
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -10,7 +10,7 @@ author: TrudyHa
 localizationpriority: high
 ---
 
-# Sign up for Windows Store for Business
+# Sign up for Microsoft Store for Business
 
 
 **Applies to**
@@ -18,7 +18,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Before you sign up for Windows Store for Business, at a minimum, you'll need an Azure Active Directory (AD) account for your organization, and you'll need to be the global administrator for your organization. If your organization is already using Azure AD, you can go ahead and sign up for Store for Business. If not, we'll help you create an Azure AD account and directory as part of the sign up process.
+Before you sign up for Microsoft Store for Business, at a minimum, you'll need an Azure Active Directory (AD) or Office 365 account for your organization, and you'll need to be the global administrator for your organization. If your organization is already using Azure AD, you can go ahead and sign up for Store for Business. If not, we'll help you create an Azure AD account and directory as part of the sign up process.
 
 ## Sign up for Store for Business
 
@@ -35,7 +35,7 @@ Before signing up for the Store for Business, make sure you're the global admini
 
     -   If you already have an Azure AD directory, you'll [sign in to Store for Business](#sign-in), and then accept Store for Business terms.
 
-    ![Image showing Windows Store for Business page with invitation to sign up, or sign in.](images/wsfb-landing.png)
+    ![Image showing Microsoft Store for Business page with invitation to sign up, or sign in.](images/wsfb-landing.png)
 
     **To sign up for Azure AD accounts through Office 365 for Business**
 
@@ -69,19 +69,19 @@ Before signing up for the Store for Business, make sure you're the global admini
 
         Be sure to save the portal sign-in page and your user ID info. Click **You're ready to go**.
 
-        ![Image showing sign-in page and user ID for Windows Store for Business. ](images/wsfb-onboard-5.png)
+        ![Image showing sign-in page and user ID for Microsoft Store for Business. ](images/wsfb-onboard-5.png)
 
     -   At this point, you'll have an Azure AD directory created with one user account. That user account is the global administrator. You can use that account to sign in to Store for Business.
 
 2.  <a href="" id="sign-in"></a>Sign in with your Azure AD account.
 
-    ![Image showing sign-in page for Windows Store for Business.](images/wsfb-onboard-7.png)
+    ![Image showing sign-in page for Microsoft Store for Business.](images/wsfb-onboard-7.png)
 
 3.  <a href="" id="accept-terms"></a>Read through and accept Store for Business terms.
 
 4.  Welcome to the Store for Business. Click **Next** to continue.
 
-    ![Image showing welcome message for Windows Store for Business.](images/wsfb-firstrun.png)
+    ![Image showing welcome message for Microsoft Store for Business.](images/wsfb-firstrun.png)
 
 ### Next steps
 
