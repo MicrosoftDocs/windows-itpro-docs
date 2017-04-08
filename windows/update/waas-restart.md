@@ -127,6 +127,19 @@ To configure both through Group Policy, find **Configure auto-restart warning no
 
 In MDM, the warning reminder is configured using [**Update/ScheduleRestartWarning**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-ScheduleRestartWarning) and the auto-restart imminent warning is configured using [**Update/ScheduleImminentRestartWarning**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-ScheduleImminentRestartWarning).
 
+### Engaged restart
+
+Engaged restart is the period of time when users are required to schedule a restart. When this period ends (7 days by default), Windows transitions to auto-restart outside of active hours.
+
+The following settings can be adjusted for engaged restart:
+* Period of time before engaged restart transitions to auto-restart.
+* The number of days that users can snooze engaged restart reminder notifications.
+* The number of days before a pending restart automatically executes outside of working hours.
+
+In Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and pick **Specify Engaged restart transition and notification schedule for updates**.
+
+In MDM, use [**Update/EngagedRestartTransitionSchedule**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-EngagedRestartTransitionSchedule), [**Update/EngagedRestartSnoozeSchedule**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-EngagedRestartSnoozeSchedule) and [**Update/EngagedRestartDeadline**](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider?UpdatePolicies#update-EngagedRestartDeadline) respectively.
+
 ## Group Policy settings for restart
 
 In the Group Policy editor, you will see a number of policy settings that pertain to restart behavior in **Computer Configuration\Administrative Templates\Windows Components\Windows Update**. The following table shows which policies apply to Windows 10.
