@@ -1,7 +1,7 @@
 ---
-title: Using Outlook Web Access with Windows Information Protection (WIP) (Windows 10)
-description: Options for using Outlook Web Access (OWA) with Windows Information Protection (WIP).
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP and OWA configuration
+title: Using Outlook on the web with Windows Information Protection (WIP) (Windows 10)
+description: Options for using Outlook on the web with Windows Information Protection (WIP).
+keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP and OWA configuration, OWA, Outlook Web access
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -10,7 +10,7 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Using Outlook Web Access with Windows Information Protection (WIP)
+# Using Outlook on the web with Windows Information Protection (WIP)
 **Applies to:**
 
 -   Windows 10, version 1607 and later
@@ -18,7 +18,7 @@ localizationpriority: high
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
 
-Because Outlook Web Access (OWA) can be used both personally and as part of your organization, you have the following options to configure it with Windows Information Protection (WIP):
+Because Outlook on the web can be used both personally and as part of your organization, you have the following options to configure it with Windows Information Protection (WIP):
 
 |Option |OWA behavior |
 |-------|-------------|

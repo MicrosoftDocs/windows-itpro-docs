@@ -34,7 +34,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |[Determine the Enterprise Context of an app running in Windows Information Protection (WIP)](wip-app-enterprise-context.md) |New |
 |[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |Updated to include info about USB drives and Azure RMS (Windows Insider Program only) and to add more info about Work Folders and Offline files. |
 |[Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](recommended-network-definitions-for-wip.md) |New |
-|[Using Outlook Web Access with Windows Information Protection (WIP)](using-owa-with-wip.md) |New |
+|[Using Outlook on the web with Windows Information Protection (WIP)](using-owa-with-wip.md) |New |
 | Microsoft Passport guide | Content merged into [Windows Hello for Business](hello-identity-verification.md) topics |
 
 ## December 2016
