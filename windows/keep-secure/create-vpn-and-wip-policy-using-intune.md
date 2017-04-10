@@ -24,9 +24,19 @@ Follow these steps to create the VPN policy you want to use with WIP.
 
 **To create your VPN policy**
 
-1.  Open the Intune administration console, and go to the **Policy** node, and then click **Add Policy**.
+1.  Open the Microsoft Azure Intune mobile application management console, click **Device configuration**, and then click **Create Profile**.
 
-2.  Go to **Windows**, click the **VPN Profile (Windows 10 Desktop and Mobile and later)**, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
+2. In the Create Profile pane, specify the following:
+
+    - **Name.** Type the name for your VPN policy. For this topic, we're using *Contoso_VPN_Win10*.
+
+    - **Description.** Optionally add text about your policy.
+
+    - Platform. Pick Windows 10 and later
+
+2.  In the Create Profile pane, type *Contoso_VPN_Win10* into the **Name** box, add an optional description for your policy into the **Description** box, pick **Windows 10 and later** from the **Platform** dropdown box, and pick **Custom** from the **Profile type** dropdown box.
+
+3. Select 
 
     ![Microsoft Intune, Create a new policy using the New Policy screen](images/intune-vpn-createpolicy.png)
 
