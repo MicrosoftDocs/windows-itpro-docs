@@ -28,13 +28,13 @@ Follow these steps to create the VPN policy you want to use with WIP.
 
     ![Microsoft Azure Intune, Create a new policy using the the Azure portal](images/wip-azure-vpn-device-policy.png)
 
-2.  In the **Create Profile** pane, type *Contoso_VPN_Win10* into the **Name** box, add an optional description for your policy into the **Description** box, select **Windows 10 and later** from the **Platform** dropdown box, select **Custom** from the **Profile type** dropdown box, and then click **Configure**.
+2.  In the **Create Profile** blade, type *Contoso_VPN_Win10* into the **Name** box, add an optional description for your policy into the **Description** box, select **Windows 10 and later** from the **Platform** dropdown box, select **Custom** from the **Profile type** dropdown box, and then click **Configure**.
 
-    ![Microsoft Azure Intune, Create a new policy using the Create Profile pane](images/wip-azure-vpn-configure-policy.png)
+    ![Microsoft Azure Intune, Create a new policy using the Create Profile blade](images/wip-azure-vpn-configure-policy.png)
 
-3. In the **Custom OMA-URI Settings** pane, click **Add**.
+3. In the **Custom OMA-URI Settings** blade, click **Add**.
 
-4. In the **Add Row** pane, type:
+4. In the **Add Row** blade, type:
 
     - **Name.** Type _EDPModeID_ as the name.
     
@@ -48,7 +48,7 @@ Follow these steps to create the VPN policy you want to use with WIP.
 
     ![Microsoft Azure Intune, Add your OMA-URI settings](images/wip-azure-vpn-custom-omauri.png)
 
-5. Click **OK** to save your setting info in the **Add Row** pane, and then click **OK** in the **Custom OMA-URI Settings** pane to save the setting with your policy.
+5. Click **OK** to save your setting info in the **Add Row** blade, and then click **OK** in the **Custom OMA-URI Settings** blade to save the setting with your policy.
 
 6. Click **Create** to create the policy, including your OMA_URI info.
 
@@ -57,9 +57,9 @@ After you’ve created your VPN policy, you'll need to deploy it to the same gro
 
 **To deploy your Custom VPN policy**
 
-1.  On the **App policy** pane, click your newly-created policy, click **User groups** from the menu that appears, and then click **Add user group**.
+1.  On the **App policy** blade, click your newly-created policy, click **User groups** from the menu that appears, and then click **Add user group**.
 
-    A list of user groups, made up of all of the security groups in your Azure Active Directory, appear in the **Add user group** pane.
+    A list of user groups, made up of all of the security groups in your Azure Active Directory, appear in the **Add user group** blade.
 
 2. Choose the group you want your policy to apply to, and then click **Select** to deploy the policy.
 

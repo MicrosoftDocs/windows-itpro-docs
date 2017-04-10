@@ -36,14 +36,14 @@ After you’ve set up Intune for your organization, you must create a WIP-specif
 
     - **Enrollment state.** Choose **With enrollment** as the enrollment state for your policy.
 
-        ![Microsoft Azure Intune management console: Create your new policy in the Add a policy pane](images/wip-azure-portal-add-policy.png)
+        ![Microsoft Azure Intune management console: Create your new policy in the Add a policy blade](images/wip-azure-portal-add-policy.png)
 
 3.  Click **Create**.
     
     The policy is created and appears in the table on the **App Policy** screen.
 
     >[!NOTE]
-    >Optionally, you can also add your apps and set your settings from the **Add a policy** pane, but for the purposes of this documentation, we recommend instead that you create the policy first, and then use the subsequent menus that become available.
+    >Optionally, you can also add your apps and set your settings from the **Add a policy** blade, but for the purposes of this documentation, we recommend instead that you create the policy first, and then use the subsequent menus that become available.
 
 ### Add apps to your Allowed apps list
 During the policy-creation process in Intune, you can choose the apps you want to give access to your enterprise data through WIP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
@@ -60,37 +60,37 @@ The steps to add your apps are based on the type of template being applied. You 
 For this example, we’re going to add Microsoft Edge, a recommended app, to the **Allowed apps** list.
 
 **To add a recommended app**
-1.  From the **App policy** pane, click the name of your policy, and then click **Allowed apps** from the menu that appears.
+1.  From the **App policy** blade, click the name of your policy, and then click **Allowed apps** from the menu that appears.
     
-    The **Allowed apps** pane appears, showing you any apps that are already included in the list for this policy.
+    The **Allowed apps** blade appears, showing you any apps that are already included in the list for this policy.
 
-    ![Microsoft Azure Intune management console: Viewing the recommended apps that you can add to your policy](images/wip-azure-allowed-apps-pane.png)
+    ![Microsoft Azure Intune management console: Viewing the recommended apps that you can add to your policy](images/wip-azure-allowed-apps-blade.png)
 
-2.  From the **Allowed apps** pane, click **Add apps**.
+2.  From the **Allowed apps** blade, click **Add apps**.
     
-    The **Add apps** pane appears, showing you all **Recommended apps**.
+    The **Add apps** blade appears, showing you all **Recommended apps**.
 
     ![Microsoft Azure Intune management console: Adding recommended apps to your policy](images/wip-azure-add-recommended-apps.png)
 
 3.  Select each app you want to access your enterprise data, and then click **OK**.
     
-    The **Allowed apps** pane updates to show you your selected apps.
+    The **Allowed apps** blade updates to show you your selected apps.
 
-    ![Microsoft Azure Intune management console: Allowed apps pane with recommended apps](images/wip-azure-allowed-apps-with-apps.png)    
+    ![Microsoft Azure Intune management console: Allowed apps blade with recommended apps](images/wip-azure-allowed-apps-with-apps.png)    
 
 #### Add a Store app to your Allowed apps list
 For this example, we’re going to add Microsoft Power BI, a store app, to the **Allowed apps** list.
 
 **To add a Store app**
-1.	From the **App policy** pane, click the name of your policy, and then click **Allowed apps** from the menu that appears.
+1.	From the **App policy** blade, click the name of your policy, and then click **Allowed apps** from the menu that appears.
     
-    The **Allowed apps** pane appears, showing you any apps that are already included in the list for this policy.
+    The **Allowed apps** blade appears, showing you any apps that are already included in the list for this policy.
 
-2.	From the **Allowed apps** pane, click **Add apps**.
+2.	From the **Allowed apps** blade, click **Add apps**.
 
-3.	On the **Add apps** pane, click **Store apps** from the dropdown list.
+3.	On the **Add apps** blade, click **Store apps** from the dropdown list.
     
-    The pane changes to show boxes for you to add a publisher and app name.
+    The blade changes to show boxes for you to add a publisher and app name.
 
 4.	Type the name of the app and the name of its publisher, and then click **OK**. For this UWP app example, the **Publisher** is `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US` and the Product **name** is `Microsoft.MicrosoftPowerBIForWindows`.
 
@@ -155,15 +155,15 @@ If you don't know the publisher or product name, you can find them for both desk
 For this example, we’re going to add WordPad, a desktop app, to the **Allowed apps** list.
 
 **To add a Desktop app**
-1.	From the **App policy** pane, click the name of your policy, and then click **Allowed apps** from the menu that appears.
+1.	From the **App policy** blade, click the name of your policy, and then click **Allowed apps** from the menu that appears.
 
-    The **Allowed apps** pane appears, showing you any apps that are already included in the list for this policy.
+    The **Allowed apps** blade appears, showing you any apps that are already included in the list for this policy.
 
-2.	From the **Allowed apps** pane, click **Add apps**.
+2.	From the **Allowed apps** blade, click **Add apps**.
 
-3.	On the **Add apps** pane, click **Desktop apps** from the dropdown list.
+3.	On the **Add apps** blade, click **Desktop apps** from the dropdown list.
 
-    The pane changes to show boxes for you to add the following, based on what results you want returned:
+    The blade changes to show boxes for you to add the following, based on what results you want returned:
 
     <table>
         <tr>
@@ -230,11 +230,11 @@ For this example, we’re going to add an AppLocker XML file to the **Allowed ap
 **To create a list of Allowed apps using the AppLocker tool**
 1.	Open the Local Security Policy snap-in (SecPol.msc).
     
-2.	In the left pane, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
+2.	In the left blade, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
 
     ![Local security snap-in, showing the Packaged app Rules](images/wip-applocker-secpol-1.png)
 
-3.	Right-click in the right-hand pane, and then click **Create New Rule**.
+3.	Right-click in the right-hand blade, and then click **Create New Rule**.
 
     The **Create Packaged app Rules** wizard appears.
 
@@ -266,7 +266,7 @@ For this example, we’re going to add an AppLocker XML file to the **Allowed ap
 
     ![Local security snap-in, showing the new rule](images/wip-applocker-secpol-create.png)
 
-10.	In the left pane, right-click on **AppLocker**, and then click **Export policy**.
+10.	In the left blade, right-click on **AppLocker**, and then click **Export policy**.
 
     The **Export policy** box opens, letting you export and save your new policy as XML.
 
@@ -304,7 +304,7 @@ For this example, we’re going to add an AppLocker XML file to the **Allowed ap
 
 1.	From the **Allowed apps** area, click **Import apps**.
     
-    The pane changes to let you add your import file.
+    The blade changes to let you add your import file.
     
     ![Microsoft Intune, Importing your AppLocker policy file using Intune](images/wip-azure-import-apps.png)
 
@@ -317,11 +317,11 @@ If you're running into compatibility issues where your app is incompatible with 
 
 **To exempt a Store app, a Desktop app, or an AppLocker policy file from the Allowed apps list**
 
-1.	From the **App policy** pane, click the name of your policy, and then click **Exempt apps** from the menu that appears.
+1.	From the **App policy** blade, click the name of your policy, and then click **Exempt apps** from the menu that appears.
     
-    The **Exempt apps** pane appears, showing you any apps that are already included in the list for this policy.
+    The **Exempt apps** blade appears, showing you any apps that are already included in the list for this policy.
 
-2.	From the **Exempt apps** pane, click **Add apps**.
+2.	From the **Exempt apps** blade, click **Add apps**.
 
     Be aware that when you exempt apps, they’re allowed to bypass the WIP restrictions and access your corporate data. To allow apps, see the [Add app rules to your policy](#add-apps-to_your-allowed-apps-list) section of this topic.
     
@@ -344,11 +344,11 @@ We recommend that you start with **Silent** or **Allow Overrides** while verifyi
 
 **To add your protection mode**
 
-1.	From the **App policy** pane, click the name of your policy, and then click **Required settings** from the menu that appears.
+1.	From the **App policy** blade, click the name of your policy, and then click **Required settings** from the menu that appears.
     
-    The **Required settings** pane appears.
+    The **Required settings** blade appears.
 
-    ![Microsoft Intune, Required settings pane showing Windows Information Protection mode](images/wip-azure-required-settings-protection-mode.png)
+    ![Microsoft Intune, Required settings blade showing Windows Information Protection mode](images/wip-azure-required-settings-protection-mode.png)
 
     |Mode |Description |
     |-----|------------|
@@ -366,9 +366,9 @@ Starting with Windows 10, version 1703, Intune automatically determines your cor
 
 **To change your corporate identity**
 
-1.	From the **App policy** pane, click the name of your policy, and then click **Required settings** from the menu that appears.
+1.	From the **App policy** blade, click the name of your policy, and then click **Required settings** from the menu that appears.
 
-    The **Required settings** pane appears.
+    The **Required settings** blade appears.
 
 2.	If the identity isn’t correct, or if you need to add additional domains, type info into the **Corporate identity** field. For example, `contoso.com|newcontoso.com`.
 
@@ -384,13 +384,13 @@ There are no default locations included with WIP, you must add each of your netw
 
 **To define where your allowed apps can find and send enterprise data on you network**
 
-1.	From the **App policy** pane, click the name of your policy, and then click **Advanced settings** from the menu that appears.
+1.	From the **App policy** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
     
-    The **Advanced settings** pane appears.
+    The **Advanced settings** blade appears.
 
 2.	Click **Add network boundary** from the Network perimeter area.
 
-    The **Add network boundary** pane appears.
+    The **Add network boundary** blade appears.
 
     ![Microsoft Intune, Set where your apps can access enterprise data on your network](images/wip-azure-advanced-settings-network.png)
 
@@ -458,9 +458,9 @@ After you create and deploy your WIP policy to your employees, Windows begins to
 >Using a DRA certificate isn’t mandatory. However, we strongly recommend it. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](https://go.microsoft.com/fwlink/p/?LinkId=761462) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](https://tnstage.redmond.corp.microsoft.com/en-us/itpro/windows/keep-secure/create-and-verify-an-efs-dra-certificate) topic.
 
 **To upload your DRA certificate**
-1.	From the **App policy** pane, click the name of your policy, and then click **Advanced settings** from the menu that appears.
+1.	From the **App policy** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
 
-    The **Advanced settings** pane appears.
+    The **Advanced settings** blade appears.
 
 2. In the **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
 
