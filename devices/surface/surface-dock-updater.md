@@ -104,6 +104,33 @@ Microsoft Surface Dock Updater logs its progress into the Event Log, as shown in
 
 *Figure 8. Surface Dock Updater events in Event Viewer*
 
+## Changes and updates
+
+Microsoft periodically updates Surface Dock Updater. To learn more about the application of firmware by Surface Dock Updater, see [Manage Surface Dock firmware updates](https://technet.microsoft.com/en-us/itpro/surface/manage-surface-dock-firmware-updates).
+
+>[!Note]
+>Each update to Surface Dock firmware is included in a new version of Surface Dock Updater. To update a Surface Dock to the latest firmware, you must use the latest version of Surface Dock Updater.
+
+### Version 1.0.8.0
+
+This version of Surface Dock Updater adds support for the following:
+
+* Update for Surface Dock Main Chipset firmware
+* Update for Surface Dock DisplayPort firmware
+
+### Version 2.0.22.0
+
+This version of Surface Dock Updater adds support for the following:
+
+* Update for Surface Dock USB firmware
+* Improved reliability of Ethernet, audio, and USB ports
+
+### Version 2.1.6.0
+
+This version of Surface Dock Updater adds support for the following:
+
+* Updated firmware for Surface Dock DisplayPort
+
 
 ## Related topics
 

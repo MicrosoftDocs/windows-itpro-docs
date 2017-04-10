@@ -65,7 +65,7 @@ The Slow Windows Insider level is for users who enjoy seeing new builds of Windo
 
 * Builds are sent to the Slow Ring after feedback has been received from Insiders within the Fast Ring and analyzed by our Engineering teams.  
 * These builds will include updates to fix key issues that would prevent many Windows Insiders from being able to use the build on a daily basis.  
-* These builds are still may have issues that would be addressed in a future flight.
+* These builds still may have issues that would be addressed in a future flight.
 
 ### Fast
 
