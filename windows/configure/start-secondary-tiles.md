@@ -82,7 +82,7 @@ In addition to the `./User/Vendor/MSFT/Policy/Config/Start/StartLayout` setting,
 
 ### Using a provisioning package
 
-
+<span id="escape" />
 #### Prepare the Start layout and Edge assets XML files
 
 The **export-StartLayout** and **export-StartLayoutEdgeAssets** cmdlets produce XML files. Because Windows Configuration Designer produces a customizations.xml file that contains the configuration settings, adding the Start layout and Edge assets sections to the customizations.xml file directly would result in an XML file embedded in an XML file. Before you add the Start layout and Edge assets sections to the customizations.xml file, you must replace the markup characters in your layout.xml with escape characters. 
