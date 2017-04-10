@@ -50,6 +50,8 @@ Follow these steps to create the VPN policy you want to use with WIP.
 
 5. Click **OK** to save your setting info in the **Add Row** pane, and then click **OK** in the **Custom OMA-URI Settings** pane to save the setting with your policy.
 
+6. Click **Create** to create the policy, including your OMA_URI info.
+
 ## Deploy your VPN policy using Microsoft Intune
 After you’ve created your VPN policy, you'll need to deploy it to the same group you deployed your Windows Information Protection (WIP) policy.
 
