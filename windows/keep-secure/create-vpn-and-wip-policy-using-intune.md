@@ -11,15 +11,15 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune
+# Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Azure Intune
 **Applies to:**
 
 -   Windows 10, version 1703
 -   Windows 10 Mobile, version 1703
 
-After you've created and deployed your Windows Information Protection (WIP) policy, you can use Microsoft Intune to create and deploy your Virtual Private Network (VPN) policy, linking it to your WIP policy.
+After you've created and deployed your Windows Information Protection (WIP) policy, you can use Microsoft Azure Intune to create and deploy your Virtual Private Network (VPN) policy, linking it to your WIP policy.
 
-## Create your VPN policy using Microsoft Intune
+## Create your VPN policy using Microsoft Azure Intune
 Follow these steps to create the VPN policy you want to use with WIP.
 
 **To create your VPN policy**
@@ -40,7 +40,7 @@ Follow these steps to create the VPN policy you want to use with WIP.
     
     - **Description.** Type an optional description for your setting.
     
-    - **OMA-URI.** Type _./Vendor/MSFT/VPNv2/<VPNProfileName>/EDPModeId_ into the box.
+    - **OMA-URI.** Type _./Vendor/MSFT/VPNv2/&lt;VPNProfileName&gt;/EDPModeId_ into the box.
 
     - **Data type.** Select **String** from the dropdown box
     
@@ -52,7 +52,7 @@ Follow these steps to create the VPN policy you want to use with WIP.
 
 6. Click **Create** to create the policy, including your OMA_URI info.
 
-## Deploy your VPN policy using Microsoft Intune
+## Deploy your VPN policy using Microsoft Azure Intune
 After you’ve created your VPN policy, you'll need to deploy it to the same group you deployed your Windows Information Protection (WIP) policy.
 
 **To deploy your Custom VPN policy**
