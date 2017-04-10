@@ -64,7 +64,7 @@ For this example, we’re going to add Microsoft Edge, a recommended app, to the
     
     The **Allowed apps** blade appears, showing you any apps that are already included in the list for this policy.
 
-    ![Microsoft Azure Intune management console: Viewing the recommended apps that you can add to your policy](images/wip-azure-allowed-apps-blade.png)
+    ![Microsoft Azure Intune management console: Viewing the recommended apps that you can add to your policy](images/wip-azure-allowed-apps-pane.png)
 
 2.  From the **Allowed apps** blade, click **Add apps**.
     
