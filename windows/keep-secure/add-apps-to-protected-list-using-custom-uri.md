@@ -1,6 +1,6 @@
 ---
-title: Add apps to your Windows Information Protection (WIP) policy by using Microsoft Intune custom URI functionality (Windows 10)
-description: Add apps to your Windows Information Protection (WIP) allowed app list, by using the Microsoft Intune custom URI functionality and AppLocker.
+title: Add apps to your Windows Information Protection (WIP) policy by using Microsoft Azure Intune custom URI functionality (Windows 10)
+description: Add apps to your Windows Information Protection (WIP) allowed app list, by using the Microsoft Azure Intune custom URI functionality and AppLocker.
 ms.assetid: b50db35d-a2a9-4b78-a95d-a1b066e66880
 keywords: WIP, Enterprise Data Protection, protected apps, protected app list
 ms.prod: w10
@@ -11,13 +11,13 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality
+# Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Azure Intune custom URI functionality
 **Applies to:**
 
 -   Windows 10, version 1703
 -   Windows 10 Mobile, version 1703
 
-You can add apps to your Windows Information Protection (WIP) protected app list using the Microsoft Intune custom URI functionality and AppLocker. For more info about how to create a custom URI using Intune, [Windows 10 custom policy settings in Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkID=691330).
+You can add apps to your Windows Information Protection (WIP) protected app list using the Microsoft Azure Intune custom URI functionality and AppLocker. For more info about how to create a custom URI using Intune, [Windows 10 custom policy settings in Microsoft Azure Intune](https://go.microsoft.com/fwlink/p/?LinkID=691330).
 
 >[!IMPORTANT]
 >Results can be unpredictable if you configure your policy using both the UI and the Custom URI method together. We recommend using a single method for each policy.
@@ -149,9 +149,9 @@ After saving the policy, you’ll need to deploy it to your employee’s devices
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
 
 ## Related topics
-- [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md)
+- [Create a Windows Information Protection (WIP) policy using Microsoft Azure Intune](create-wip-policy-using-intune.md)
 - [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md)
-- [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-vpn-and-wip-policy-using-intune.md)
+- [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Azure Intune](create-vpn-and-wip-policy-using-intune.md)
 
 
  
