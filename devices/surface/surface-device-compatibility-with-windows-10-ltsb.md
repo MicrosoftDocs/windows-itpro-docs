@@ -13,7 +13,7 @@ author: jdeckerMS
 
 Surface devices are designed to provide best-in-class experiences in productivity and general-purpose scenarios. Regular updates enable Surface devices to bring to life new innovations and to evolve with the new capabilities delivered by Windows 10 Feature Updates. Feature Updates are available only in Windows 10 Pro or Windows 10 Enterprise editions that receive continuous updates through the Current Branch (CB) or Current Branch for Business (CBB) servicing options.
 
-In contrast to the CB and CBB servicing options, the Long-Term Servicing Branch (LTSB) cannot be selected in Windows 10 settings. To use the LTSB servicing option, you must install a separate edition of Windows 10 Enterprise, known as *Windows 10 Enterprise LTSB*. In addition to providing an extended servicing model, the Windows 10 Enterprise LTSB edition also provides an environment with several Windows components removed. The core Surface experiences that are impacted by LTSB include:
+In contrast to the CB and CBB servicing options, you cannot select the Long-Term Servicing Branch (LTSB) option in Windows 10 settings. To use the LTSB servicing option, you must install a separate edition of Windows 10 Enterprise, known as *Windows 10 Enterprise LTSB*. In addition to providing an extended servicing model, the Windows 10 Enterprise LTSB edition also provides an environment with several Windows components removed. The core Surface experiences that are impacted by LTSB include:
 
 * Windows Feature Updates, including enhancements such as:
 
@@ -34,7 +34,7 @@ The LTSB servicing option is designed for device types and scenarios where the k
 >For general information about Windows servicing branches, including LTSB, see [Overview of Windows as a service](https://technet.microsoft.com/itpro/windows/update/waas-overview#long-term-servicing-branch).
 
 >[!NOTE]
->As a general guideline, devices that fulfill the following criteria are considered general-purpose devices and should be paired with Windows 10 Pro or Windows 10 Enterprise using the CB or CBB servicing options:
+>As a general guideline, devices that fulfill the following criteria are considered general-purpose devices and should be paired with Windows 10 Pro or Windows 10 Enterprise using the CB or CBB servicing option:
 
 * Devices that run productivity software such as Microsoft Office
 
@@ -46,9 +46,9 @@ Before you choose to use Windows 10 Enterprise LTSB edition on Surface devices, 
 
 * Drivers and firmware for Surface devices are tested against the most recent version of Windows 10 CB and the last two versions of CBB. Drivers and firmware are not explicitly tested against releases of Windows 10 Enterprise LTSB. 
 
-* If you encounter problems, Microsoft Support will provide troubleshooting assistance. However, due to the servicing nature of the Windows LTSB, issue resolution may require that devices be upgraded to a more recent version of Windows 10 Enterprise LTSB, or to Windows 10 Pro or Enterprise with the CB or CBB servicing options.
+* If you encounter problems, Microsoft Support will provide troubleshooting assistance. However, due to the servicing nature of the Windows LTSB, issue resolution may require that devices be upgraded to a more recent version of Windows 10 Enterprise LTSB, or to Windows 10 Pro or Enterprise with the CB or CBB servicing option.
 
-* Surface device replacements, for example devices replaced under warranty, may contain subtle variations in hardware components that require updated device drivers and firmware. Compatibility with these updates may require the installation of a more recent version of Windows 10 Enterprise LTSB or Windows 10 Pro or Enterprise with the CB or CBB servicing options.
+* Surface device replacements (for example, devices replaced under warranty) may contain subtle variations in hardware components that require updated device drivers and firmware. Compatibility with these updates may require the installation of a more recent version of Windows 10 Enterprise LTSB or Windows 10 Pro or Enterprise with the CB or CBB servicing option.
 
 >[!NOTE]
 >Organizations that standardize on a specific version of Windows 10 Enterprise LTSB may be unable to adopt new generations of Surface hardware without also updating to a later version of Windows 10 Enterprise LTSB or Windows 10 Pro or Enterprise. For more information, see the **How will Windows 10 LTSBs be supported?** topic in the **Supporting the latest processor and chipsets on Windows** section of [Lifecycle Policy FAQ—Windows products](https://support.microsoft.com/help/18581/lifecycle-policy-faq-windows-products#b4).
