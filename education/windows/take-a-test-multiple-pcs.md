@@ -129,6 +129,7 @@ This sample PowerShell script configures the test account and the assessment URL
 - Use your assessment URL for **$obj.TesterAccount**
 - Use your test account for **-UserName**
 
+
 ```
 $obj = get-wmiobject -namespace root/cimv2/mdm/dmmap -class MDM_SecureAssessment -filter "InstanceID='SecureAssessment' AND ParentID='./Vendor/MSFT'";
 $obj.LaunchURI='http://www.foo.com';
@@ -189,3 +190,5 @@ This assessment URL uses our lockdown API:
 [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md)
 
 [Take a Test app technical reference](take-a-test-app-technical.md)
+
+[Take a Test provisioning settings reference](https://msdn.microsoft.com/en-us/library/windows/hardware/mt799742(v=vs.85).aspx)
