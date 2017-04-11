@@ -120,6 +120,6 @@
   "skip_source_output_uploading": false,
   "dependent_repositories": [],
   "need_generate_pdf_url_template": false,
-  "need_preview_pull_request": true
+  "need_preview_pull_request": true
 }
 
