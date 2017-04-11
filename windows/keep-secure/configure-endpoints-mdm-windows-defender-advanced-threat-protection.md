@@ -29,7 +29,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
 For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
-### Onboard and monitor endpoints
+### Onboard and monitor endpoints using the classic Intune console
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
@@ -97,6 +97,24 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 > [!NOTE]
 > - The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.
 > - Configuration of telemetry reporting frequency is only available for machines on Windows 10, version 1703.
+
+### Onboard and monitor endpoints using the Microsoft Intune in the Azure portal
+
+1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
+
+    a.  Select **Endpoint Management** on the **Navigation pane**.
+
+    b.  Select **Mobile Device Management/Microsoft Intune** > **Download package** and save the .zip file.
+
+      ![Endpoint onboarding](images/atp-mdm-onboarding-package.png)
+
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named  *WindowsDefenderATP.onboarding*.
+
+3. Login to the (Microsoft Azure portal)[https://portal.azure.com]
+
+
+
+
 
 ### Offboard and monitor endpoints
 
