@@ -275,7 +275,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 - **Description:** This setting lets you decide whether people can sync their favorites between Internet Explorer and Microsoft Edge, including additions, deletions, changes, and position.
 
     >[!Note]
-    >Enabling this setting stops Edge from syncing between connected Windows 10 devices.
+    >Enabling this setting stops Edge favorites from syncing between connected Windows 10 devices.
 
     - If you enable this setting, employees can sync their favorites between Internet Explorer and Microsoft Edge.
     
