@@ -46,7 +46,7 @@
 #### [Enlightened apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md)
 #### [Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](app-behavior-with-wip.md)
 #### [Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](recommended-network-definitions-for-wip.md)
-#### [Using Outlook Web Access with Windows Information Protection (WIP)](using-owa-with-wip.md)
+#### [Using Outlook on the web with Windows Information Protection (WIP)](using-owa-with-wip.md)
 ## [Windows Defender SmartScreen](windows-defender-smartscreen-overview.md)
 ### [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md)
 ### [Set up and use Windows Defender SmartScreen on individual devices](windows-defender-smartscreen-set-individual-device.md)
