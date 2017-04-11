@@ -88,6 +88,7 @@ You can add apps to your Windows Information Protection (WIP) protected app list
             ```
                 <RuleCollection Type="Appx" EnforcementMode="Enabled"><your_xml_rules_here></RuleCollection>
             ```
+        ![Microsoft Azure Intune, Add URI setting in the Add Row blade](images/wip-azure-add-uri-store-apps.png)
 
 5. Click **OK** to save your setting info in the **Add Row** blade, and then click **OK** in the **Custom OMA-URI Settings** blade to save the setting with your policy.
 
@@ -164,6 +165,8 @@ You can add apps to your Windows Information Protection (WIP) protected app list
             ```
                 <RuleCollection Type="Exe" EnforcementMode="Enabled"><your_xml_rules_here></RuleCollection>
             ```
+
+        ![Microsoft Azure Intune, Add URI setting in the Add Row blade](images/wip-azure-add-uri-desktop-apps.png)
 
 5. Click **OK** to save your setting info in the **Add Row** blade, and then click **OK** in the **Custom OMA-URI Settings** blade to save the setting with your policy.
 
