@@ -16,6 +16,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 ## March 2017
 |New or changed topic |Description |
 |---------------------|------------|
+|[Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Azure Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md) |Updated based on Windows 10, version 1703.
 |[Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |Updated based on Windows 10, version 1703. |
 |[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |Updated based on Windows 10, version 1703. |
 |[Deploy your Windows Information Protection (WIP) policy using Microsoft Intune](deploy-wip-policy-using-intune.md) |Updated based on Windows 10, version 1703.
