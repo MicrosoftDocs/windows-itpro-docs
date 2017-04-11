@@ -110,8 +110,23 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named  *WindowsDefenderATP.onboarding*.
 
-3. Login to the (Microsoft Azure portal)[https://portal.azure.com]
+3. Login to the (Microsoft Azure portal)[https://portal.azure.com].
 
+4. From the Intune blade, choose **Device compliance**.
+
+  ![Image of device compliance menu](images/atp-azure-intune.png)
+
+5. Under **Manage**, choose **Policies** and choose **Create Policy**.
+
+  ![Image of policy creation in Azure](images/atp-azure-intune-create-policy.png)
+
+6. Type a name, description and choose the platform that you want this policy to apply. The category blade opens.
+
+  ![Image of naming a policy](images/atp-azure-intune-create-policy-configure.png)
+
+7. Specify information in the **Device Health**, **Device Properties**, and **System Security** settings then click **Create**.
+
+  ![Image of device health, device properties, and system security settings](images/atp-azure-intune-category.png)
 
 
 
