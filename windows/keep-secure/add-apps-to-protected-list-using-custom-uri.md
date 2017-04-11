@@ -65,7 +65,7 @@ You can add apps to your Windows Information Protection (WIP) protected app list
 
 9.  In the **Create Profile** blade, type a name for your profile, such as *contoso_allowed_store_apps_uri*, into the **Name** box, add an optional description for your policy into the **Description** box, select **Windows 10 and later** from the **Platform** dropdown box, select **Custom** from the **Profile type** dropdown box, and then click **Configure**.
 
-    ![Microsoft Azure Intune, Create a new policy using the Create Profile blade](images/wip-azure-configure-policy-using-uri.png)
+    ![Microsoft Azure Intune, Create a new policy using the Create Profile blade](images/wip-azure-configure-store-apps-using-uri.png)
 
 10. In the **Custom OMA-URI Settings** blade, click **Add**.
 
@@ -80,7 +80,7 @@ You can add apps to your Windows Information Protection (WIP) protected app list
     - **Data type.** Select **String** from the dropdown box.
     
     - **Value.** To find the text to type here, follow these steps:
-    
+
         1. Open File Explorer, go to the location where you saved your exported XML file from above, and open it using an XML editor, such as Notepad.
 
         2. Copy the text that includes the **Type** of `Appx` within the **RuleCollection** tags, pasting this info into the **Value** box. For example:
@@ -141,7 +141,7 @@ You can add apps to your Windows Information Protection (WIP) protected app list
 
 9.  In the **Create Profile** blade, type a name for your profile, such as *contoso_allowed_desktop-apps_uri*, into the **Name** box, add an optional description for your policy into the **Description** box, select **Windows 10 and later** from the **Platform** dropdown box, select **Custom** from the **Profile type** dropdown box, and then click **Configure**.
 
-    ![Microsoft Azure Intune, Create a new policy using the Create Profile blade](images/wip-azure-configure-policy-using-uri.png)
+    ![Microsoft Azure Intune, Create a new policy using the Create Profile blade](images/wip-azure-configure-desktop-apps-using-uri.png)
 
 10. In the **Custom OMA-URI Settings** blade, click **Add**.
 
