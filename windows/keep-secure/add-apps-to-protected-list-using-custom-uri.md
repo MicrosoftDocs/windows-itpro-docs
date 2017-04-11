@@ -59,28 +59,41 @@ You can add apps to your Windows Information Protection (WIP) protected app list
 
     ![Local security snap-in, showing the Export Policies option](images/wip-applocker-secpol-export-rules.png)
 
-<!-- Need new info for here, this is the old process
+8.  Open the Microsoft Azure Intune mobile application management console, click **Device configuration**, and then click **Create Profile**.
 
-8.  Open the Intune administration console, and go to the **Policy** node, click **Add Policy** from the **Tasks** area, go to **Windows**, click the **Custom Configuration (Windows 10 Desktop and Mobile and later)** policy, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
+    ![Microsoft Azure Intune, Create a new policy using the the Azure portal](images/wip-azure-vpn-device-policy.png)
 
-9.  Type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
+9.  In the **Create Profile** blade, type a name for your profile, such as *contoso_allowed_store_apps_uri*, into the **Name** box, add an optional description for your policy into the **Description** box, select **Windows 10 and later** from the **Platform** dropdown box, select **Custom** from the **Profile type** dropdown box, and then click **Configure**.
 
-10. In the **Add one or more OMA-URI settings that control functionality on Windows devices** box, click **Add**.
+    ![Microsoft Azure Intune, Create a new policy using the Create Profile blade](images/wip-azure-configure-policy-using-uri.png)
 
-11. Type your new **Setting Name** and **Description** into the associated boxes, keeping the default **Data Type** of **String**.
+10. In the **Custom OMA-URI Settings** blade, click **Add**.
 
-12. In the **OMA-URI** box, type `./Vendor/MSFT/AppLocker/EnterpriseDataProtection/<your_enterprise_name>/StoreApp EXE`
+11. In the **Add Row** blade, type:
 
-13. Open File Explorer, go to the location where you saved your new XML file, and open it using an XML editor, such as Notepad.
+    - **Name.** Type a name for your setting, such as *AllowedStoreAppsURI*.
+    
+    - **Description.** Type an optional description for your setting.
+    
+    - **OMA-URI.** Type _./Vendor/MSFT/AppLocker/EnterpriseDataProtection/&gt;your_enterprise_name&lt;/StoreApp EXE_ into the box.
 
-14. Copy the text that has a **Type** of `Appx`, within the **RuleCollection** tags, and then go back to Intune and paste the text into the **Value** box of the **Add or edit OMA-URI Setting** box. For example:
+    - **Data type.** Select **String** from the dropdown box.
+    
+    - **Value.** To find the text to type here, follow these steps:
+    
+        1. Open File Explorer, go to the location where you saved your exported XML file from above, and open it using an XML editor, such as Notepad.
 
-    ```
-        <RuleCollection Type="Appx" EnforcementMode="Enabled"><your_xml_rules_here></RuleCollection>
-    ```
+        2. Copy the text that includes the **Type** of `Appx` within the **RuleCollection** tags, pasting this info into the **Value** box. For example:
+        
+            ```
+                <RuleCollection Type="Appx" EnforcementMode="Enabled"><your_xml_rules_here></RuleCollection>
+            ```
 
-15. Click **OK** to close the **Add or edit OMA-URI Setting** box, and then click **Save Policy**.<p>
-After saving the policy, you’ll need to deploy it to your employee’s devices. For more info, see the [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md) topic. -->
+5. Click **OK** to save your setting info in the **Add Row** blade, and then click **OK** in the **Custom OMA-URI Settings** blade to save the setting with your policy.
+
+6. Click **Create** to create the policy, including your OMA_URI info.
+
+    After saving the policy, you’ll need to deploy it to your employee’s devices. For more info, see the [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md) topic.
 
 ## Add Desktop apps
 1.	Open the Local Security Policy snap-in (SecPol.msc).
@@ -122,28 +135,41 @@ After saving the policy, you’ll need to deploy it to your employee’s devices
 
     ![Local security snap-in, showing the Export Policies option](images/wip-applocker-secpol-export-rules-desktop.png)
 
-<!-- Need new info for here, this is the old process
-8.  Open the Intune administration console, and go to the **Policy** node, click **Add Policy** from the **Tasks** area, go to **Windows**, click the **Custom Configuration (Windows 10 Desktop and Mobile and later)** policy, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
+8. Open the Microsoft Azure Intune mobile application management console, click **Device configuration**, and then click **Create Profile**.
 
-9.  Type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
+    ![Microsoft Azure Intune, Create a new policy using the the Azure portal](images/wip-azure-vpn-device-policy.png)
 
-10. In the **Add one or more OMA-URI settings that control functionality on Windows devices** box, click **Add**.
+9.  In the **Create Profile** blade, type a name for your profile, such as *contoso_allowed_desktop-apps_uri*, into the **Name** box, add an optional description for your policy into the **Description** box, select **Windows 10 and later** from the **Platform** dropdown box, select **Custom** from the **Profile type** dropdown box, and then click **Configure**.
 
-11. Type your new **Setting Name** and **Description** into the associated boxes, keeping the default **Data Type** of **String**.
+    ![Microsoft Azure Intune, Create a new policy using the Create Profile blade](images/wip-azure-configure-policy-using-uri.png)
 
-12. In the **OMA-URI** box, type `./Vendor/MSFT/AppLocker/EnterpriseDataProtection/<your_enterprise_name>/EXE`
+10. In the **Custom OMA-URI Settings** blade, click **Add**.
 
-13. Open File Explorer, go to the location where you saved your new XML file, and open it using an XML editor, such as Notepad.
+11. In the **Add Row** blade, type:
 
-14. Copy the text that has a **Type** of `EXE`, within in the **RuleCollection** tags, and then go back to Intune and paste the text into the **Value** box of the **Add or edit OMA-URI Setting** box. For example:
+    - **Name.** Type a name for your setting, such as *AllowedDesktopAppsURI*.
+    
+    - **Description.** Type an optional description for your setting.
+    
+    - **OMA-URI.** Type _./Vendor/MSFT/AppLocker/EnterpriseDataProtection/&gt;your_enterprise_name&lt;/EXE_ into the box.
 
-    ``` 
-        <RuleCollection Type="Exe" EnforcementMode="Enabled"><your_xml_rules_here></RuleCollection>
-    ```
+    - **Data type.** Select **String** from the dropdown box.
+    
+    - **Value.** To find the text to type here, follow these steps:
 
-15. Click **OK** to close the **Add or edit OMA-URI Setting** box, and then click **Save Policy**.
+        1. Open File Explorer, go to the location where you saved your exported XML file from above, and open it using an XML editor, such as Notepad.
 
-    After saving the policy, you’ll need to deploy it to your employee’s devices. For more info, see the [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md) topic. -->
+        2. Copy the text that includes the **Type** of `Exe` within the **RuleCollection** tags, pasting this info into the **Value** box. For example:
+        
+            ```
+                <RuleCollection Type="Exe" EnforcementMode="Enabled"><your_xml_rules_here></RuleCollection>
+            ```
+
+5. Click **OK** to save your setting info in the **Add Row** blade, and then click **OK** in the **Custom OMA-URI Settings** blade to save the setting with your policy.
+
+6. Click **Create** to create the policy, including your OMA_URI info.
+
+    After saving the policy, you’ll need to deploy it to your employee’s devices. For more info, see the [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md) topic.
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
