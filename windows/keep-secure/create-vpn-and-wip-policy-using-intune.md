@@ -28,7 +28,7 @@ Follow these steps to create the VPN policy you want to use with WIP.
 
     ![Microsoft Azure Intune, Create a new policy using the the Azure portal](images/wip-azure-vpn-device-policy.png)
 
-2.  In the **Create Profile** blade, type *Contoso_VPN_Win10* into the **Name** box, add an optional description for your policy into the **Description** box, select **Windows 10 and later** from the **Platform** dropdown box, select **Custom** from the **Profile type** dropdown box, and then click **Configure**.
+2.  In the **Create Profile** blade, type a name for your profile, such as *Contoso_VPN_Win10*, into the **Name** box, add an optional description for your policy into the **Description** box, select **Windows 10 and later** from the **Platform** dropdown box, select **Custom** from the **Profile type** dropdown box, and then click **Configure**.
 
     ![Microsoft Azure Intune, Create a new policy using the Create Profile blade](images/wip-azure-vpn-configure-policy.png)
 
@@ -36,7 +36,7 @@ Follow these steps to create the VPN policy you want to use with WIP.
 
 4. In the **Add Row** blade, type:
 
-    - **Name.** Type _EDPModeID_ as the name.
+    - **Name.** Type a name for your setting, such as *EDPModeID*.
     
     - **Description.** Type an optional description for your setting.
     
@@ -44,9 +44,9 @@ Follow these steps to create the VPN policy you want to use with WIP.
 
     - **Data type.** Select **String** from the dropdown box
     
-    - **Value.** Your fully-qualified domain that should be used by the OMA-URI setting. For example, _corp.contoso.com_.
+    - **Value.** Type your fully-qualified domain that should be used by the OMA-URI setting. For example, _corp.contoso.com_.
 
-    ![Microsoft Azure Intune, Add your OMA-URI settings](images/wip-azure-vpn-custom-omauri.png)
+        ![Microsoft Azure Intune, Add your OMA-URI settings](images/wip-azure-vpn-custom-omauri.png)
 
 5. Click **OK** to save your setting info in the **Add Row** blade, and then click **OK** in the **Custom OMA-URI Settings** blade to save the setting with your policy.
 
