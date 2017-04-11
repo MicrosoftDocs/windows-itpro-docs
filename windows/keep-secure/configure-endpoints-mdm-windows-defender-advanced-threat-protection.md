@@ -128,6 +128,7 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 
   ![Image of device health, device properties, and system security settings](images/atp-azure-intune-category.png)
 
+8. Deploy the policy.
 
 
 
