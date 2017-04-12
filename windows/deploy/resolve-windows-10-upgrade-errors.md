@@ -2,7 +2,7 @@
 title: Resolve Windows 10 upgrade errors - Windows IT Pro
 description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
 ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
-keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback
+keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
