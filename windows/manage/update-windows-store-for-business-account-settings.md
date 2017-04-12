@@ -104,7 +104,7 @@ You can purchase apps from the Windows Store for Business using your credit card
 4.	American Express 
 5.	Japan Commercial Bureau (JCB)
 
-> [NOTE]
+> [!NOTE]
 > Not all cards available in all countries. When you add a payment option, Store for Business shows which cards are available in your region.
 
 **To add a new payment option** 
@@ -116,7 +116,7 @@ You can purchase apps from the Windows Store for Business using your credit card
 
 Once you click Next, the information you provided will be validated with a test authorization transaction and, if validated, the payment option will be added to your list of available payment options. Otherwise, you will be prompted for additional information or notified if there are any problems. 
 
-> [NOTE]
+> [!NOTE]
 > When adding credit or debit cards, you may be prompted to enter a CVV . The CVV is only used for verification purposes and is not stored in our systems after validation 
 
 **To update a payment option** 
@@ -127,7 +127,7 @@ Once you click Next, the information you provided will be validated with a tes
 4.	Enter any updated information in the appropriate fields, and then click **Next**. 
 Once you click **Next**, the information you provided will be validated with a test authorization transaction and, if validated, the payment option will be added to your list of available payment options. Otherwise, you will be prompted for additional information or notified if there are any problems. 
  
-> [NOTE]
+> [!NOTE]
 > Certain actions, like updating or adding a payment option, require temporary “test authorization” transactions to validate the payment option. These may appear on your statement as $0.00 authorizations or as small pending transactions. These transactions are temporary and should not impact your account unless you make several changes in a short period of time, or have a low balance.
 
 ## Offline licensing
