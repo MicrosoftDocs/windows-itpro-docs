@@ -84,11 +84,11 @@ After you configure the servicing branch (CB or CBB), you can then define if, an
 
 ## Pause Feature Updates
 
-You can also pause a device from receiving Feature Updates by a period of up to 60 days from when the value is set. After 60 days has passed, pause functionality will automatically expire and the device will scan Windows Update for applicable Feature Updates. Following this scan, Feature Updates for the device can then be paused again.
+You can also pause a device from receiving Feature Updates by a period of up to 35 days from when the value is set. After 35 days has passed, pause functionality will automatically expire and the device will scan Windows Update for applicable Feature Updates. Following this scan, Feature Updates for the device can then be paused again.
 
-Starting with version 1703, when configuring pause through policy, a start date has to be set from which the pause begins. The pause period will be calculated by adding 60 days to the start date. 
+Starting with version 1703, when configuring pause through policy, a start date has to be set from which the pause begins. The pause period will be calculated by adding 35 days to the start date. 
 
-In cases where the pause policy is first applied after the configured start date has passed, administrators will be able to extend the pause period up to a total of 60 days by configuring a later start date.
+In cases where the pause policy is first applied after the configured start date has passed, administrators will be able to extend the pause period up to a total of 35 days by configuring a later start date.
 
 With version 1703, pausing through the settings app will provide a more consistent experience:
 - Any active restart notification are cleared or closed
@@ -98,6 +98,8 @@ With version 1703, pausing through the settings app will provide a more consiste
 
 >[!IMPORTANT]
 >This policy does not apply to Windows 10 Mobile Enterprise.
+>
+>Prior to Windows 10, version 1703, feature updates could be paused by up to 60 days. This number has been changed to 35, similar to the number of days for quality updates.
 
 **Pause Feature Updates policies**
 
@@ -110,7 +112,7 @@ With version 1703, pausing through the settings app will provide a more consiste
 
 You can check the date Feature Updates were paused at by checking the registry key **PausedFeatureDate** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**. 
 
-The local group policy editor (GPEdit.msc) will not reflect if your Feature Update Pause period has expired. Although the device will resume Feature Updates after 60 days automatically, the pause checkbox will remain checked in the policy editor.  To see if a device has auto-resumed taking Feature Updates, you can check the status registry key **PausedFeatureStatus** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**.
+The local group policy editor (GPEdit.msc) will not reflect if your Feature Update Pause period has expired. Although the device will resume Feature Updates after 35 days automatically, the pause checkbox will remain checked in the policy editor.  To see if a device has auto-resumed taking Feature Updates, you can check the status registry key **PausedFeatureStatus** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**.
 
 | Value | Status|
 | --- | --- |
@@ -234,12 +236,11 @@ When a client running a newer version sees an update available on Windows Update
 In the Windows Update for Business policies in version 1511, all the deferral rules were grouped under a single policy where pausing affected both upgrades and updates.  In Windows 10, version 1607, this functionality has been broken out into separate polices: deferral of Feature and Quality Updates can be enabled and paused independently of one other.   
 
 <table><caption>Group Policy keys</caption><thead><th>Version 1511 GPO keys</th><th>Version 1607 GPO keys</th></thead>
-<tbody><tr><td valign="top">**DeferUpgrade**: *enable/disable*</br>&nbsp;&nbsp;&nbsp;
-Enabling allows user to set deferral periods for upgrades and updates.  It also puts the device on CBB (no ability to defer updates while on the CB branch).</br></br>**DeferUpgradePeriod**: *0 - 8 months*</br></br>**DeferUpdatePeriod**: *1 – 4 weeks*</br></br>**Pause**: *enable/disable*</br>&nbsp;&nbsp;&nbsp;Enabling will pause both upgrades and updates for a max of 35 days</td><td>**DeferFeatureUpdates**: *enable/disable*</br></br>**BranchReadinessLevel**</br>&nbsp;&nbsp;&nbsp;Set device on CB or CBB</br></br>**DeferFeatureUpdatesPeriodinDays**: *1 - 180 days*</br></br>**PauseFeatureUpdates**: *enable/disable*</br>&nbsp;&nbsp;&nbsp;Enabling will pause Feature updates for a max of 60 days</br></br>**DeferQualityUpdates**: *Enable/disable*</br></br>**DeferQualityUpdatesPeriodinDays**: *0 - 35 days*</br></br>**PauseQualityUpdates**: *enable/disable*</br>&nbsp;&nbsp;&nbsp;Enabling will pause Quality updates for a max of 35 days</br></br>**ExcludeWUDrivers**: *enable/disable*</td></tr>
+<tbody><tr><td valign="top">**DeferUpgrade**: *enable/disable*</br>Enabling allows user to set deferral periods for upgrades and updates.  It also puts the device on CBB (no ability to defer updates while on the CB branch).</br></br>**DeferUpgradePeriod**: *0 - 8 months*</br></br>**DeferUpdatePeriod**: *1 – 4 weeks*</br></br>**Pause**: *enable/disable*</br>Enabling will pause both upgrades and updates for a max of 35 days</br></td><td>**DeferFeatureUpdates**: *enable/disable*</br></br>**BranchReadinessLevel**</br>Set device on CB or CBB</br></br>**DeferFeatureUpdatesPeriodinDays**: *1 - 180 days*</br></br>**PauseFeatureUpdates**: *enable/disable*</br>Enabling will pause Feature updates for a max of 60 days</br></br>**DeferQualityUpdates**: *Enable/disable*</br></br>**DeferQualityUpdatesPeriodinDays**: *0 - 35 days*</br></br>**PauseQualityUpdates**: *enable/disable*</br>Enabling will pause Quality updates for a max of 35 days</br></br>**ExcludeWUDrivers**: *enable/disable*</br></td></tr>
 </table>
 
 <table><caption>MDM keys</caption><thead><th>Version 1511 MDM keys</th><th>Version 1607 MDM keys</th></thead>
-<tbody><tr><td valign="top">**RequireDeferUpgade**: *bool*</br>&nbsp;&nbsp;&nbsp;Puts the device on CBB (no ability to defer updates while on the CB branch).</br></br>**DeferUpgradePeriod**: *0 - 8 months*</br></br>**DeferUpdatePeriod**: *1 – 4 weeks*</br></br>**PauseDeferrals**: *bool*</br>&nbsp;&nbsp;&nbsp;Enabling will pause both upgrades and updates for a max of 35 days</td><td>**BranchReadinessLevel**</br>&nbsp;&nbsp;&nbsp;Set system on CB or CBB</br></br>**DeferFeatureUpdatesPeriodinDays**: *1 - 180 days*</br></br>**PauseFeatureUpdates**: *enable/disable*</br>&nbsp;&nbsp;&nbsp;Enabling will pause Feature updates for a max of 60 days</br></br>**DeferQualityUpdatesPeriodinDays**: *0 - 35 days*</br></br>**PauseQualityUpdates**: *enable/disable*</br>&nbsp;&nbsp;&nbsp;  Enabling will pause Quality updates for a max of 35 days</br></br>**ExcludeWUDriversInQualityUpdate**: *enable/disable<*/td></tr>
+<tbody><tr><td valign="top">**RequireDeferUpgade**: *bool*</br>Puts the device on CBB (no ability to defer updates while on the CB branch).</br></br>**DeferUpgradePeriod**: *0 - 8 months*</br></br>**DeferUpdatePeriod**: *1 – 4 weeks*</br></br>**PauseDeferrals**: *bool*</br>Enabling will pause both upgrades and updates for a max of 35 days</br></td><td>**BranchReadinessLevel**</br>Set system on CB or CBB</br></br>**DeferFeatureUpdatesPeriodinDays**: *1 - 180 days*</br></br>**PauseFeatureUpdates**: *enable/disable*</br>Enabling will pause Feature updates for a max of 60 days</br></br>**DeferQualityUpdatesPeriodinDays**: *0 - 35 days*</br></br>**PauseQualityUpdates**: *enable/disable*</br>Enabling will pause Quality updates for a max of 35 days</br></br>**ExcludeWUDriversInQualityUpdate**: *enable/disable*</br></td></tr>
 </tbody></table>
 
 ### Comparing the version 1607 keys to the version 1703 keys

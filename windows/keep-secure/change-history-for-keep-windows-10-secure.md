@@ -25,14 +25,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |[Windows Defender SmartScreen overview](windows-defender-smartscreen-overview.md)|New |
 |[Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md)|New |
 |[Use Windows Defender Security Center to set Windows Defender SmartScreen for individual devices](windows-defender-smartscreen-set-individual-device.md)|New |
-
-
-## February 2017
-
-|New or changed topic |Description |
-|---------------------|------------|
-|[Overview of threat mitigations in Windows 10](overview-of-threat-mitigations-in-windows-10.md) | Reorganized from existing content, to provide a better overview of threat mitigations. Added information that maps the Enhanced Mitigation Experience Toolkit (EMET) to Windows 10 features. |
-
+|[Overview of threat mitigations in Windows 10](overview-of-threat-mitigations-in-windows-10.md) | Reorganized from existing content, to provide a better overview of threat mitigations. Explains how mitigations in the Enhanced Mitigation Experience Toolkit (EMET) relate to those in Windows 10. |
 
 ## January 2017
 |New or changed topic |Description |
@@ -40,7 +33,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |[Determine the Enterprise Context of an app running in Windows Information Protection (WIP)](wip-app-enterprise-context.md) |New |
 |[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |Updated to include info about USB drives and Azure RMS (Windows Insider Program only) and to add more info about Work Folders and Offline files. |
 |[Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](recommended-network-definitions-for-wip.md) |New |
-|[Using Outlook Web Access with Windows Information Protection (WIP)](using-owa-with-wip.md) |New |
+|[Using Outlook on the web with Windows Information Protection (WIP)](using-owa-with-wip.md) |New |
 | Microsoft Passport guide | Content merged into [Windows Hello for Business](hello-identity-verification.md) topics |
 
 ## December 2016

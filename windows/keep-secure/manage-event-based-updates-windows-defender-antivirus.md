@@ -61,7 +61,7 @@ You can use Group Policy, Configuration Manager, PowerShell cmdlets, and WMI to 
 
 4.	[Deploy the updated policy as usual](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
-**Use PowerShell cmdlets to to check for protection updates before running a scan:**
+**Use PowerShell cmdlets to check for protection updates before running a scan:**
 
 Use the following cmdlets:
 
@@ -72,7 +72,7 @@ Set-MpPreference -CheckForSignaturesBeforeRunningScan
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 
-**Use Windows Management Instruction (WMI) to to check for protection updates before running a scan**
+**Use Windows Management Instruction (WMI) to check for protection updates before running a scan**
 
 Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/en-us/library/dn455323(v=vs.85).aspx) class for the following properties:
 

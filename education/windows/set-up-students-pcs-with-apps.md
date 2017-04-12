@@ -5,6 +5,7 @@ keywords: ["shared cart", "shared PC", "school"]
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
+localizationpriority: high
 author: CelesteDG
 ---
 
@@ -14,16 +15,19 @@ author: CelesteDG
 -   Windows 10  
 
 
-This topic explains how to create and apply a provisioning package that contains apps to a device running all desktop editions of Windows 10 except Windows 10 Home. Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more.
+To create and apply a provisioning package that contains apps to a device running all desktop editions of Windows 10 except Windows 10 Home, follow the steps in [Provision PCs with apps](https://technet.microsoft.com/en-us/itpro/windows/configure/provision-pcs-with-apps).
+
+Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more.
 
 You can apply a provisioning package on a USB drive to off-the-shelf devices during setup, making it fast and easy to configure new devices. 
+- If you want to [provision a school PC to join a domain](set-up-students-pcs-to-join-domain.md) and add apps in the same provisioning package, follow the steps in [Provision PCs with apps](https://technet.microsoft.com/en-us/itpro/windows/configure/provision-pcs-with-apps). 
+- If you want to provision a school PC to join Azure AD, set up the PC using the steps in [Use Set up School PCs App](use-set-up-school-pcs-app.md). Set up School PCs now lets you add recommended apps from the Store so you can add these apps while you're creating your package through Set up School PCs. You can also follow the steps in [Provision PCs with apps](https://technet.microsoft.com/en-us/itpro/windows/configure/provision-pcs-with-apps) if you want to add apps to student PCs after initial setup with the Set up School PCs package.
 
-If you want to [provision a school PC to join a domain](set-up-students-pcs-to-join-domain.md) and add apps in the same provisioning package, follow the steps in [Add apps to a provisioning package](#add-apps-to-a-provisioning-package). If you want to provision a school PC to join Azure AD, set up the PC using the steps in [Use Set up School PCs App](use-set-up-school-pcs-app.md), and then follow the steps in [Create a provisioning package to add apps after initial setup](#create-a-provisioning-package-to-add-apps-after-initial-setup).
-
+<!--
 ## Add apps to a provisioning package
 
 1. Follow the steps to [create the provisioning package](set-up-students-pcs-to-join-domain.md#create-the-provisioning-package). 
-
+2. 
 2. On the **Finish** page, select **Switch to advanced editor**.
 
   ![Switch to advanced editor](images/icd-school-adv-edit.png)
@@ -64,7 +68,8 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 3. Go to **Runtime settings** > **ProvisioningCommands** > **DeviceContext** > **CommandLine** and specify the command line that needs to be executed to install the app. This is a single command line (such as a script, executable, or msi) that triggers a silent install of your CommandFiles. Note that the install must execute silently (without displaying any UI). For MSI installers use, the msiexec /quiet option. 
 
-> **Note**: If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/mt703295%28v=vs.85%29.aspx). 
+> [!NOTE] 
+> If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](https://msdn.microsoft.com/en-us/library/windows/hardware/mt703295%28v=vs.85%29.aspx). 
 
 **Next steps**
 - (optional) [Add a universal app to your package](#add-a-universal-app-to-your-package)
@@ -93,7 +98,8 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
 [Learn more about distributing offline apps from the Windows Store for Business.](https://technet.microsoft.com/itpro/windows/manage/distribute-offline-apps)
 
-> **Note:** Removing a provisioning package will not remove any apps installed by device context in that provisioning package.
+> [!NOTE]  
+> Removing a provisioning package will not remove any apps installed by device context in that provisioning package.
 
 **Next steps**
 - (optional) [Add a desktop app to your package](#add-a-desktop-app-to-your-package)
@@ -202,7 +208,7 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 
 ![add a package option](images/package.png)
 
-
+-->
 
 ## Learn more
 

@@ -29,7 +29,7 @@ author: iaanw
 Windows Defender Advanced Threat Protection (ATP) is an additional service beyond Windows Defender Antivirus that helps enterprises detect, investigate, and respond to advanced persistent threats on their network. 
 See the [Windows Defender Advanced Threat Protection](windows-defender-advanced-threat-protection.md) topics for more information about the service.
 
-If you are enrolled in Windows Defender ATP, and you are not using Windows Defender AV as your real-time protection service on your endpoints, Windows Defender will automatically enter into a passive mode. On Windows Server 2016 SKUs, Windows Defender AV will not enter into the passive mode and will run alongisde your other antivirus product.
+If you are enrolled in Windows Defender ATP, and you are not using Windows Defender AV as your real-time protection service on your endpoints, Windows Defender will automatically enter into a passive mode. On Windows Server 2016 SKUs, Windows Defender AV will not enter into the passive mode and will run alongside your other antivirus product.
 
 In passive mode, Windows Defender will continue to run (using the *msmpeng.exe* process), and will continue to be updated, however there will be no Windows Defender user interface, scheduled scans won't run, and Windows Defender will not provide real-time protection from malware.
 

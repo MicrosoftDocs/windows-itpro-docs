@@ -290,7 +290,7 @@ You can prevent Windows from setting the time automatically.
 
     -or -
 
--  Create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\W32time\\TimeProviders\\NtpClient!Enabled** to 0 (zero).
+-  Create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\W32time\\TimeProviders\\NtpClient!Enabled** to 0 (zero).
 
     -or-
 
@@ -420,6 +420,7 @@ You can also use registry entries to set these Group Policies.
 | Turn off the flip ahead with page prediction feature | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\FlipAhead!Enabled <br /> REG_DWORD: 0|
 | Turn off background synchronization for feeds and Web Slices | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Feeds!BackgroundSyncStatus <br/> DWORD:0 |
 
+To turn off the home page, enable the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Disable changing home page settings**
 
 ### <a href="" id="bkmk-ie-activex"></a>8.1 ActiveX control blocking
 
@@ -444,6 +445,8 @@ To turn off Live Tiles:
     -or-
     
 -   Create a REG\_DWORD registry setting called **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications!NoCloudApplicationNotification**, with a value of 1 (one).
+
+You must also unpin all tiles that are pinned to Start.
 
 ### <a href="" id="bkmk-mailsync"></a>10. Mail synchronization
 
@@ -495,7 +498,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 | Configure search suggestions in Address bar              | Choose whether the address bar shows search suggestions. <br /> Default: Enabled                    |
 | Configure Windows Defender SmartScreen Filter (Windows 10, version 1703)  <br/> Configure SmartScreen Filter (Windows Server 2016)                      | Choose whether Windows Defender SmartScreen is turned on or off.  <br /> Default: Enabled                            |
 | Allow web content on New Tab page                     | Choose whether a new tab page appears.  <br /> Default: Enabled                                     |
-| Configure Home pages                       | Choose the corporate Home page for domain-joined devices. <br /> Set this to **about:blank**        |
+| Configure Start pages                       | Choose the Start page for domain-joined devices. <br /> Set this to **about:blank**        |
 
 
 The Windows 10, version 1511 Microsoft Edge Group Policy names are:

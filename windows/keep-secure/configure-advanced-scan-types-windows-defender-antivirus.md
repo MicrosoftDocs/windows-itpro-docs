@@ -50,15 +50,15 @@ For using WMI classes, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.
 Description | Location and setting | Default setting (if not configured) | PowerShell `Set-MpPreference` parameter or WMI property for `MSFT_MpPreference` class
 ---|---|---|---
 See [Email scanning limitations](#ref1)) below | Scan > Turn on e-mail scanning | Disabled | `-DisableEmailScanning`
-Scan [reparse points](https://msdn.microsoft.com/library/windows/desktop/aa365503.aspx) | Scan > Turn on reparse point scanning | Disabled | `-DisableRestorePoint`
+Scan [reparse points](https://msdn.microsoft.com/library/windows/desktop/aa365503.aspx) | Scan > Turn on reparse point scanning | Disabled | Not available
 Scan mapped network drives | Scan > Run full scan on mapped network drives | Disabled | `-DisableScanningMappedNetworkDrivesForFullScan`
- Scan archive files (such as .zip or .rar files). The [extensions exclusion list](configure-extension-file-exclusions-windows-defender-antivirus.md) will take precendence over this setting. | Scan > Scan archive files | Enabled | `-DisableArchiveScanning`
+ Scan archive files (such as .zip or .rar files). The [extensions exclusion list](configure-extension-file-exclusions-windows-defender-antivirus.md) will take precedence over this setting. | Scan > Scan archive files | Enabled | `-DisableArchiveScanning`
 Scan files on the network | Scan > Scan network files | Disabled | `-DisableScanningNetworkFiles`
 Scan packed executables | Scan > Scan packed executables | Enabled | Not available
 Scan removable drives during full scans only | Scan > Scan removable drives | Disabled | `-DisableRemovableDriveScanning`
 Specify the level of subfolders within an archive folder to scan | Scan > Specify the maximum depth to scan archive files | 0 | Not available
- Specify the maximum CPU load (as a percentage) during a scan. This a theoretical maximum - scans will not always use the maximum load defined here, but they will never exceed it | Scan > Specify the maximum percentage of CPU utilization during a scan | 50 |  `-ScanAvgCPULoadFactor`
- Specify the maximum size (in kilobytes) of archive files that should be scanned. The default, **0**, applies not limit | Scan > Specify the maximum size of archive files to be scanned | No limit | Not available
+ Specify the maximum CPU load (as a percentage) during a scan. This is a maximum - scans will not always use the maximum load defined here, but they will never exceed it | Scan > Specify the maximum percentage of CPU utilization during a scan | 50 |  `-ScanAvgCPULoadFactor`
+ Specify the maximum size (in kilobytes) of archive files that should be scanned. The default, **0**, applies no limit | Scan > Specify the maximum size of archive files to be scanned | No limit | Not available
 
 **Use Configuration Manager to configure scanning options:**
 
@@ -77,16 +77,16 @@ See [Help secure Windows PCs with Endpoint Protection for Microsoft Intune: Scan
 ### Email scanning limitations
 We recommend using [always-on real-time protection](configure-real-time-protection-windows-defender-antivirus.md) to protect against email-based malware.
 
-Always-on protection scans emails as they arrive and as they are manipulated, just like normal files in the operating system. This provides the strongest form of protection and is the recommended method for scanning emails.
+Always-on protection scans emails as they arrive and as they are manipulated, just like normal files in the operating system. This provides the strongest form of protection and is the recommended setting for scanning emails.
 
 You can use this Group Policy to also enable scanning of older email files used by Outlook 2003 and older during on-demand and scheduled scans. Embedded objects within an email file (such as attachments and archived files) are also scanned. The following file format types can be scanned and remediated:
 - DBX
 - MBX
 - MIME
 
-PST files used by Outlook 2003 or older (where the archive type is set to non-uni-code) can also be scanned, but Windows Defender cannot remediate threats detected inside PST files. This is another reason why we recommend using [always-on real-time protection](configure-real-time-protection-windows-defender-antivirus.md) to protect against email-based malware.
+PST files used by Outlook 2003 or older (where the archive type is set to non-unicode) can also be scanned, but Windows Defender cannot remediate threats detected inside PST files. This is another reason why we recommend using [always-on real-time protection](configure-real-time-protection-windows-defender-antivirus.md) to protect against email-based malware.
 
-If Windows Defender detects a threat inside an email, it will show you the following information to assist you in identifying the compromised email, so you can remediate the threat:
+If Windows Defender Antivirus detects a threat inside an email, it will show you the following information to assist you in identifying the compromised email, so you can remediate the threat:
 -   Email subject
 -   Attachment name
 

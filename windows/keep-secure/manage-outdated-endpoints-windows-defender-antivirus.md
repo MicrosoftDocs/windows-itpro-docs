@@ -92,7 +92,7 @@ See the following for more information and allowed parameters:
 
 ## Set the number of days before protection is reported as out-of-date
 
-You can also specify the number of days after which Windows Defender AV protection is considered old or out-of-date. After the specified number of days, the client will report itself as out-of-date, and show an error to the user of the PC. It may also cause Windows Defender AV to attempt to download an update from other sources (based on the defined [fallback source order](manage-protection-updates-windows-defender-antivirus.md#fallback-order).
+You can also specify the number of days after which Windows Defender AV protection is considered old or out-of-date. After the specified number of days, the client will report itself as out-of-date, and show an error to the user of the PC. It may also cause Windows Defender AV to attempt to download an update from other sources (based on the defined [fallback source order](manage-protection-updates-windows-defender-antivirus.md#fallback-order)).
 
 **Use Group Policy to specify the number of days before protection is considered out-of-date:**
 

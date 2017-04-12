@@ -1,11 +1,12 @@
 ---
 title: Take a Test app technical reference
 description: The policies and settings applied by the Take a Test app.
-keywords: shared cart, shared PC, school
+keywords: take a test, test taking, school
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
+localizationpriority: high
 author: CelesteDG
 ---
 
@@ -20,7 +21,7 @@ Take a Test is an app that locks down the PC and displays an online assessment w
 
 Whether you are a teacher or IT administrator, you can easily configure Take a Test to meet your testing needs. For high-stakes tests, the app creates a browser-based, locked-down environment for more secure online assessments. This means that students taking the tests that don’t have copy/paste privileges, can’t access to files and applications, and are free from distractions. For simple tests and quizzes, Take a Test can be configured to use the teacher’s preferred assessment website to deliver digital assessments
 
-Assessment vendors can use Take a Test as a platform to lock down the operating system. Take a Test supports the [SBAC browser API standard](http://www.smarterapp.org/documents/SecureBrowserRequirementsSpecifications_0-3.pdf) for high stakes common core testing. (Link to Javascript API when available)
+Assessment vendors can use Take a Test as a platform to lock down the operating system. Take a Test supports the [SBAC browser API standard](http://www.smarterapp.org/documents/SecureBrowserRequirementsSpecifications_0-3.pdf) for high stakes common core testing. For more information, see [Take a Test Javascript API](https://docs.microsoft.com/en-us/windows/uwp/apps-for-education/take-a-test-api).
 
 ## PC lockdown for assessment
 
@@ -28,17 +29,11 @@ Assessment vendors can use Take a Test as a platform to lock down the operating 
 
 When running above the lock screen:
 - The app runs full screen with no chrome 
-
 - The hardware print screen button is disabled 
-
-- Content within the app will show up as black in screen capturing/sharing software 
-
+- Depending on the parameter you set through the schema or dedicated account, content within the app will show up as black in screen capturing/sharing software 
 - System clipboard is cleared 
-
 - Web apps can query the processes currently running in the user’s device
-
 - Extended display shows up as black 
-
 - Auto-fill is disabled
 
 ## Mobile device management (MDM) policies
@@ -59,9 +54,7 @@ When Take a Test is running, the following MDM policies are applied to lock down
 When Take a Test is running, the following functionality is available to students:
 
 - Assistive technology that is configured to run above the lock screen should run as expected 
-
 - Narrator is available through Windows key + Enter 
-
 - Magnifier is available through Windows key + "+" key 
 
     - Full screen mode is compatible  
@@ -70,14 +63,15 @@ When Take a Test is running, the following functionality is available to student
 
     - Take a Test 
     - Assistive technology that may be running 
-    - Lock Screen (not available if student is using a dedicated test account)
-    > **Note** The app will exit if the student signs in to an account from the lock screen. Progress made in the test may be lost or invalidated. 
+    - Lock screen (not available if student is using a dedicated test account)
+
+        > [!NOTE] 
+        > The app will exit if the student signs in to an account from the lock screen. Progress made in the test may be lost or invalidated. 
 
 - The student can exit the test by pressing one of the following key combinations: 
 
     - Ctrl+Alt+Del 
-
-    - Alt+F4 (**Take a Test** will restart if the student is using a dedicated test account)
+    - Alt+F4 (Take a Test will restart if the student is using a dedicated test account)
 
 
 ## Learn more
