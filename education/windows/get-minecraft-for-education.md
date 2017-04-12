@@ -1,10 +1,11 @@
 ---
 title: Get Minecraft Education Edition
 description: Learn how to get and distribute Minecraft Education Edition.
-keywords: school
+keywords: school, minecraft
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
+localizationpriority: high
 author: trudyha
 ---
 
