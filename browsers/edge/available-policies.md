@@ -957,8 +957,10 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 
         - **0 (default).** Synchronization is turned off.
         
-        - **1.** Synchronization is turned on.         
+        - **1.** Synchronization is turned on.
 
+        >[!Note]
+        >Enabling this setting stops Edge favorites from syncing between connected Windows 10 devices.
 
 ## Microsoft Edge and Windows 10-specific Group Policy settings
 These are additional Windows 10-specific Group Policy settings that work with Microsoft Edge.
