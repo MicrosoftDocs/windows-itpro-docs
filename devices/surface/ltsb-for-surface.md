@@ -10,6 +10,8 @@ author: jdeckerMS
 
 # Long-Term Servicing Branch (LTSB) for Surface devices
 
+>[!WARNING]
+>For updated information on this topic, see [Surface device compatibility with Windows 10 Long-Term Servicing Branch](surface-device-compatibility-with-windows-10-ltsb.md). For additional information on this update, see the [Documentation Updates for Surface and Windows 10 LTSB Compatibility](https://blogs.technet.microsoft.com/surface/2017/04/11/documentation-updates-for-surface-and-windows-10-ltsb-compatibility) post on the Surface Blog for IT Pros.
 
 General-purpose Surface devices running Long-Term Servicing Branch (LTSB) are not supported. As a general guideline, if a Surface device runs productivity software, such as Microsoft Office, it is a general-purpose device that does not qualify for LTSB and should instead run Current Branch (CB) or Current Branch for Business (CBB). 
 
