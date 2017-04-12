@@ -32,7 +32,7 @@ This topic contains a brief introduction to Windows 10 installation processes, a
     - [Analyze log files](#analyze-log-files): General procedures for log file analysis, and an example.
 - [Resolution procedures](#resolution-procedures): Causes and mitigation procedures associated with specific error codes.
     - [0xC1900101](#0xc1900101): Information about the 0xC1900101 result code.
-    - [0x800xxxxx](#0x800): Information about result codes that start with 0x800.
+    - [0x800xxxxx](#testing): Information about result codes that start with 0x800.
     - [Other result codes](#other-result-codes): Additional causes and mitigation procedures are provided for some result codes.
     - [Other error codes](#other-error-codes): Additional causes and mitigation procedures are provided for some error codes.
 
@@ -561,7 +561,7 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 </TABLE>
 
 
-### 0x800
+### Testing
 
 
 Result codes starting with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
