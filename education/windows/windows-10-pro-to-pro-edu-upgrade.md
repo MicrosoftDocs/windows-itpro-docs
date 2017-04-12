@@ -1,10 +1,12 @@
 ---
 title: Windows 10 Pro to Pro Education upgrade
 description: Describes how IT Pros can opt into a Windows 10 Pro Education upgrade from the Windows Store for Business.
+keywords: upgrade, Pro to Pro Education, education customers
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
+localizationpriority: high
 author: CelesteDG
 ---
 
