@@ -98,7 +98,7 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 > - The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.
 > - Configuration of telemetry reporting frequency is only available for machines on Windows 10, version 1703.
 
-### Onboard and monitor endpoints using the Microsoft Intune in the Azure portal
+### Using the Azure Intune Portal to deploy Windows Defender Advanced Threat Protection policies to Windows 10 1607 and higher
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
@@ -108,27 +108,31 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 
       ![Endpoint onboarding](images/atp-mdm-onboarding-package.png)
 
-2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named  *WindowsDefenderATP.onboarding*.
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP.onboarding*.
 
-3. Login to the (Microsoft Azure portal)[https://portal.azure.com].
+3. Login to the [Microsoft Azure portal](https://portal.azure.com).
 
-4. From the Intune blade, choose **Device compliance**.
+4. From the Intune blade, choose **Device configuration**.
 
-  ![Image of device compliance menu](images/atp-azure-intune.png)
+  ![Image of device configuration menu in Microsoft Azure](images/atp-azure-intune-device-config.png)
 
-5. Under **Manage**, choose **Policies** and choose **Create Policy**.
+5. Under **Manage**, choose **Profiles** and click **Create Profile**.
 
-  ![Image of policy creation in Azure](images/atp-azure-intune-create-policy.png)
+  ![Image of policy creation in Azure](images/atp-azure-intune-create-profile.png)
 
-6. Type a name, description and choose the platform that you want this policy to apply. The category blade opens.
+4. Type a name, description and choose **Windows 10 and later** as the Platform and **Windows Defender ATP (Windows 10 Desktop)** as the Profile type.
 
   ![Image of naming a policy](images/atp-azure-intune-create-policy-configure.png)
 
-7. Specify information in the **Device Health**, **Device Properties**, and **System Security** settings then click **Create**.
+7. Click **Settings** > **Configure**.
 
-  ![Image of device health, device properties, and system security settings](images/atp-azure-intune-category.png)
+  ![Image of settings](images/atp-azure-intune-settings-configure.png)
 
-8. Deploy the policy.
+8. Click the folder icon and select the WindowsDefenderATP.onboarding file you extracted earlier. Configure whether you want to allow sample collection from endpoints for [Deep Analysis](investigate-files-windows-defender-advanced-threat-protection.md) by choosing **All**, or disable this feature by choosing **None**. When complete, click **OK**.
+
+  ![Image of configuration settings](images/atp-azure-intune-configure.png)
+
+9. Click **Create**.
 
 
 
