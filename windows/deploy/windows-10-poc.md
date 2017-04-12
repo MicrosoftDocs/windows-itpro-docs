@@ -512,7 +512,7 @@ Notes:<BR>
 
 **Important**: Before proceeding, verify that you can take advantage of [enhanced session mode](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) when completing instructions in this guide. Enhanced session mode enables you to copy and paste the commands from the Hyper-V host to VMs, between VMs, and between RDP sessions. After copying some text, you can paste into a Windows PowerShell window by simply right-clicking. Before right-clicking, do not left click other locations as this can empty the clipboard. You can also copy and paste <U>files</U> directly from one computer to another by right-clicking and selecting copy on one computer, then right-clicking and selecting paste on another computer.
 
-To verify that enhanced session mode is enabled on the Hyper-V host, type the following command at an elevated Windows PowerShell prompt:
+To ensure that enhanced session mode is enabled on the Hyper-V host, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
 <pre style="overflow-y: visible">Set-VMhost -EnableEnhancedSessionMode $TRUE</pre>
 
@@ -884,6 +884,9 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Restart-Computer
     </pre>
 
+    >[!IMPORTANT]
+    >Verify that you are configuring the correct interface in this step. The commands in this step assume that the poc-internal interface on SRV1 is named "Ethernet."  If you are unsure how to check the interface, see step #30 below for instructions and tips on how to verify and modify the interface name.
+
 28. Wait for the computer to restart, sign in again, then type the following commands at an elevated Windows PowerShell prompt:
 
     <pre style="overflow-y: visible">
@@ -916,6 +919,10 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     </pre>
 
     In this example, the poc-internal network interface at 192.168.0.2 is associated with the "Ethernet" interface and the Internet-facing poc-external interface is associated with the "Ethernet 2" interface. If your interfaces are different, you must adjust the commands provided in the next step appropriately to configure routing services.
+
+    >[!TIP]
+    >Sometimes a computer will have hidden, disconnected interfaces that prevent you from naming a network adapter. When you attempt to rename an adapter, you will receive an error that the adapter name already exists. These disconnected devices can be viewed in device manager by clicking **View** and then clicking **Show hidden devices**. The disconnected device can then be uninstalled, enabling you to reuse the adapter name. 
+
 
 31. To configure SRV1 with routing capability for the PoC network, type or paste the following commands at an elevated Windows PowerShell prompt on SRV1:
 

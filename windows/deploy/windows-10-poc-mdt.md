@@ -68,7 +68,7 @@ MDT performs deployments by using the Lite Touch Installation (LTI), Zero Touch 
     ```
 2. Download and install the 64-bit version of [Microsoft Deployment Toolkit (MDT)](https://www.microsoft.com/en-us/download/details.aspx?id=54259) on SRV1 using the default options. As of the writing of this guide, the latest version of MDT was 8443.
 
-3. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1607. Installation might require several minutes to acquire all components.
+3. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1703. Installation might require several minutes to acquire all components.
 
 3. If desired, re-enable IE Enhanced Security Configuration:
 
