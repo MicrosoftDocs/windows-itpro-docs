@@ -98,7 +98,7 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 > - The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.
 > - Configuration of telemetry reporting frequency is only available for machines on Windows 10, version 1703.
 
-### Using the Azure Intune Portal to deploy Windows Defender Advanced Threat Protection policies to Windows 10 1607 and higher
+### Using the Azure Intune Portal to deploy Windows Defender Advanced Threat Protection policies on Windows 10 1607 and higher
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
@@ -134,6 +134,15 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 
 9. Click **Create**.
 
+  ![Image of profile creation](images/atp-azure-intune-create.png)
+
+10. Search for and select the Group you want to apply the Configuration Policy to, then click **Select**.
+
+  ![Image of select groups to apply configuration policy](images/atp-azure-intune-select-group.png)
+
+11. Click **Save** to finish deploying the Configuration Policy.
+
+  ![Image of the policy being saved](images/atp-azure-intune-save-policy.png)
 
 
 ### Offboard and monitor endpoints
