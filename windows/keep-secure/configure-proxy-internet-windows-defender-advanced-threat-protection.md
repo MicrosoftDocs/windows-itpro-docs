@@ -45,7 +45,7 @@ Configure a registry-based static proxy to allow only Windows Defender ATP senso
 
 The static proxy is configurable through Group Policy (GP). The group policy can be found under: **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**.
 
-The policy sets two registry values `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD under the registry key `HKLM\Software\Policies\Microsoft\Windows\DisableEnterpriseAuthProxy`.
+The policy sets two registry values `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD under the registry key `HKLM\Software\Policies\Microsoft\Windows\DisableEnterpriseAuthProxy\DataCollection`.
 
 The registry value `TelemetryProxyServer` takes the following string format:
 
