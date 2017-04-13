@@ -50,31 +50,37 @@ Table 1 lists the operating systems on which you can install AGPM 4.0 SP3, and 
 <td align="left"><p>Supported</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p>Windows Server 2012 R2</p></td>
+<td align="left"><p>Windows 10</p></td>
+<td align="left"><p>Supported with the caveats outlined in [KB 4015786](https://support.microsoft.com/en-us/help/4015786/known-issues-managing-a-windows-10-group-policy-client-in-windows-serv)
+</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>Windows Server 2012 R2 or Windows 8.1</p></td>
 <td align="left"><p>Windows Server 2012 R2 or Windows 8.1</p></td>
 <td align="left"><p>Supported</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Windows Server 2012 R2, Windows Server 2012, or Windows 8.1</p></td>
 <td align="left"><p>Windows Server 2012 or Windows 8.1</p></td>
 <td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows 8.1</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>Windows Server 2008 R2 or Windows 7</p></td>
 <td align="left"><p>Windows Server 2008 R2 or Windows 7</p></td>
 <td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows 8.1</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Windows Server 2012, Windows Server 2008 R2, or Windows 7</p></td>
 <td align="left"><p>Windows Server 2008 or Windows Vista with Service Pack 1 (SP1)</p></td>
 <td align="left"><p>Supported, but cannot edit policy settings or preference items that exist only in Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows 8.1, or Windows 7</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
 <td align="left"><p>Windows Server 2012, Windows Server 2008 R2, Windows 8, or Windows 7</p></td>
 <td align="left"><p>Not supported</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
 <td align="left"><p>Windows Server 2008 or Windows Vista with SP1</p></td>
 <td align="left"><p>Supported, but cannot report or edit policy settings or preference items that exist only in Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows 8.1, or Windows 7</p></td>

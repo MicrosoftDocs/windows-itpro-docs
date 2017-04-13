@@ -1,4 +1,4 @@
----
+﻿---
 title: Manage Credential Guard (Windows 10)
 description: Deploying and managing Credential Guard using Group Policy, the registry, or the Device Guard and Credential Guard hardware readiness tool.
 ms.prod: w10
@@ -19,7 +19,9 @@ Prefer video? See [Protecting privileged users with Credential Guard](https://mv
 in the Deep Dive into Credential Guard video series.
 
 ## Enable Credential Guard
-Credential Guard can be enabled by using [Group Policy](#turn-on-credential-guard-by-using-group-policy), the [registry](#turn-on-credential-guard-by-using-the-registry), or the Device Guard and Credential Guard [hardware readiness tool](#hardware-readiness-tool).
+Credential Guard can be enabled either by using [Group Policy](#turn-on-credential-guard-by-using-group-policy), the [registry](#turn-on-credential-guard-by-using-the-registry), or the Device Guard and Credential Guard [hardware readiness tool](#hardware-readiness-tool). Credential Guard can also protect secrets in a Hyper-V virtual machine, just as it would on a physical machine. 
+The same set of procedures used to enable Credential Guard on physical machines applies also to virtual machines.
+
 
 ### Enable Credential Guard by using Group Policy
 
@@ -41,7 +43,7 @@ To enforce processing of the group policy, you can run ```gpupdate /force```.
 
 If you don't use Group Policy, you can enable Credential Guard by using the registry. Credential Guard uses virtualization-based security features which have to be enabled first on some operating systems.
 
-### Add the virtualization-based security features
+#### Add the virtualization-based security features
 
 Starting with Windows 10, version 1607 and Windows Server 2016, enabling Windows features to use virtualization-based security is not necessary and this step can be skipped.
 
@@ -74,7 +76,7 @@ If you enable Credential Guard by using Group Policy, the steps to enable Window
 > [!NOTE]  
 > You can also add these features to an online image by using either DISM or Configuration Manager.
 
-### Enable virtualization-based security and Credential Guard
+#### Enable virtualization-based security and Credential Guard
 
 1.  Open Registry Editor.
 2.  Enable virtualization-based security:
@@ -101,22 +103,16 @@ DG_Readiness_Tool_v3.0.ps1 -Enable -AutoReboot
 
 ### Credential Guard deployment in virtual machines
 
-Credential Guard can protect secrets in a Hyper-V virtual machine, just as it would on a physical machine. The enablement steps are the same from within the virtual machine.
+Credential Guard can protect secrets in a Hyper-V virtual machine, just as it would on a physical machine. When Credential Guard is deployed on a VM, secrets are protected from attacks inside the VM. Credential Guard does not provide additional protection from privileged system attacks originating from the host.
 
-Credential Guard protects secrets from non-privileged access inside the VM. It does not provide additional protection from the host administrator. From the host, you can disable Credential Guard for a virtual machine:
+#### Requirements for running Credential Guard in Hyper-V virtual machines
 
-``` PowerShell
-Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
-```
-
-Requirements for running Credential Guard in Hyper-V virtual machines
 - The Hyper-V host must have an IOMMU, and run at least Windows Server 2016 or Windows 10 version 1607.
 - The Hyper-V virtual machine must be Generation 2, have an enabled virtual TPM, and running at least Windows Server 2016 or Windows 10. 
 
+### Review Credential Guard performance
 
-### Check that Credential Guard is running
-
-You can use System Information to ensure that Credential Guard is running on a PC.
+You can view System Information to check that Credential Guard is running on a PC.
 
 1.  Click **Start**, type **msinfo32.exe**, and then click **System Information**.
 2.  Click **System Summary**.
@@ -132,10 +128,31 @@ You can also check that Credential Guard is running by using the [Device Guard a
 DG_Readiness_Tool_v3.0.ps1 -Ready
 ```
 
+-   If Credential Guard is enabled on a device after it's joined to a domain, the user and device secrets may already be compromised. We recommend that Credential Guard should be enabled before the PC is joined to a domain.
 
-### Remove Credential Guard
+-   You should perform regular reviews of the PCs that have Credential Guard enabled. This can be done with security audit policies or WMI queries. Here's a list of WinInit event IDs to look for:
+    -   **Event ID 13** Credential Guard (LsaIso.exe) was started and will protect LSA credentials.
+    -   **Event ID 14** Credential Guard (LsaIso.exe) configuration: 0x1, 0
+        -   The first variable: 0x1 means Credential Guard is configured to run. 0x0 means it’s not configured to run.
+        -   The second variable: 0 means it’s configured to run in protect mode. 1 means it's configured to run in test mode. This variable should always be 0.
+    -   **Event ID 15** Credential Guard (LsaIso.exe) is configured but the secure kernel is not running; continuing without Credential Guard.
+    -   **Event ID 16** Credential Guard (LsaIso.exe) failed to launch: \[error code\]
+    -   **Event ID 17** Error reading Credential Guard (LsaIso.exe) UEFI configuration: \[error code\]
+    You can also verify that TPM is being used for key protection by checking the following event in the **Microsoft** -&gt; **Windows** -&gt; **Kernel-Boot** event source. If you are running with a TPM, the TPM PCR mask value will be something other than 0.
+    -   **Event ID 51** VSM Master Encryption Key Provisioning. Using cached copy status: 0x0. Unsealing cached copy status: 0x1. New key generation status: 0x1. Sealing status: 0x1. TPM PCR mask: 0x0.
+-   Passwords are still weak so we recommend that your organization deploy Credential Guard and move away from passwords and to other authentication methods, such as physical smart cards, virtual smart cards, or Windows Hello for Business.
+-   Some 3rd party Security Support Providers (SSPs and APs) might not be compatible with Credential Guard. Credential Guard does not allow 3rd party SSPs to ask for password hashes from LSA. However, SSPs and APs still get notified of the password when a user logs on and/or changes their password. Any use of undocumented APIs within custom SSPs and APs are not supported. We recommend that custom implementations of SSPs/APs are tested against Credential Guard to ensure that the SSPs and APs do not depend on any undocumented or unsupported behaviors. For example, using the KerbQuerySupplementalCredentialsMessage API is not supported. You should not replace the NTLM or Kerberos SSPs with custom SSPs and APs. For more info, see [Restrictions around Registering and Installing a Security Package](http://msdn.microsoft.com/library/windows/desktop/dn865014.aspx) on MSDN.
+-   As the depth and breadth of protections provided by Credential Guard are increased, subsequent releases of Windows 10 with Credential Guard running may impact scenarios that were working in the past. For example, Credential Guard may block the use of a particular type of credential or a particular component to prevent malware from taking advantage of vulnerabilities. Therefore, we recommend that scenarios required for operations in an organization are tested before upgrading a device that has Credential Guard running.
 
-If you have to remove Credential Guard on a PC, you can use the following set of procedures, or you can [use the Device Guard and Credential Guard hardware readiness tool](#turn-off-with-hardware-readiness-tool).
+-   Starting with Windows 10, version 1511, domain credentials that are stored with Credential Manager are protected with Credential Guard. Credential Manager allows you to store credentials, such as user names and passwords that you use to log on to websites or other computers on a network. The following considerations apply to the Credential Guard protections for Credential Manager:
+    -   Credentials saved by Remote Desktop Services cannot be used to remotely connect to another machine without supplying the password. Attempts to use saved credentials will fail, displaying the error message "Logon attempt failed".
+    -   Applications that extract derived domain credentials from Credential Manager will no longer be able to use those credentials.
+    -   You cannot restore credentials using the Credential Manager control panel if the credentials were backed up from a PC that has Credential Guard turned on. If you need to back up your credentials, you must do this before you enable Credential Guard. Otherwise, you won't be able to restore those credentials.
+    - Credential Guard uses hardware security so some features, such as Windows To Go, are not supported. 
+      
+## Disable Credential Guard
+
+If you have to disable Credential Guard on a PC, you can use the following set of procedures, or you can [use the Device Guard and Credential Guard hardware readiness tool](#turn-off-with-hardware-readiness-tool).
 
 1.  If you used Group Policy, disable the Group Policy setting that you used to enable Credential Guard (**Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Device Guard** -&gt; **Turn on Virtualization Based Security**).
 2.  Delete the following registry settings:
@@ -146,11 +163,7 @@ If you have to remove Credential Guard on a PC, you can use the following set of
     > [!IMPORTANT]  
     > If you manually remove these registry settings, make sure to delete them all. If you don't remove them all, the device might go into BitLocker recovery.
 
-3.  Delete the Credential Guard EFI variables by using bcdedit.
-
-**Delete the Credential Guard EFI variables**
-
-1.  From an elevated command prompt, type the following commands:
+3.  Delete the Credential Guard EFI variables by using bcdedit. From an elevated command prompt, type the following commands:
     ``` syntax
 
     mountvol X: /s
@@ -180,13 +193,23 @@ If you have to remove Credential Guard on a PC, you can use the following set of
 For more info on virtualization-based security and Device Guard, see [Device Guard deployment guide](device-guard-deployment-guide.md).
 
 <span id="turn-off-with-hardware-readiness-tool" />
-#### Turn off Credential Guard by using the Device Guard and Credential Guard hardware readiness tool
+#### Disable Credential Guard by using the Device Guard and Credential Guard hardware readiness tool
 
 You can also disable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
 DG_Readiness_Tool_v3.0.ps1 -Disable -AutoReboot
 ```
+
+#### Disable Credential Guard for a virtual machine
+
+From the host, you can disable Credential Guard for a virtual machine:
+
+``` PowerShell
+Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
+```
+
+
 
 
 

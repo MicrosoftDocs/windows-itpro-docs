@@ -37,11 +37,10 @@ Simply go to **Settings > Accounts > Access work or school**. If a corporate acc
 ## Enroll a device with an Azure Active Directory account
 1. Visit [insider.windows.com](https://insider.windows.com). Sign-in with your corporate account in AAD and follow the on-screen registration directions. 
 2. On your Windows 10 device, go to **Settings > Updates & Security >  Windows Insider Program**. 
+3. Enter the AAD account that you used to register and follow the on-screen directions. 
 
 >[!NOTE]
 >Make sure that you have administrator rights to the machine and that it has latest Windows updates. 
-
-3. Enter the AAD account that you used to register and follow the on-screen directions. 
 
 ## Switch device enrollment from your Microsoft account to your AAD account 
 1. Visit [insider.windows.com](https://insider.windows.com) to register your AAD account. If you are signed in with your Microsoft account, sign out, then sign back in with your corporate AAD account. 
@@ -54,6 +53,46 @@ Simply go to **Settings > Accounts > Access work or school**. If a corporate acc
 
 >[!NOTE]
 >Your device must be connected to your corporate account in AAD for the account to appear in the account list.
+
+## User consent requirement
+
+With the current version of the Feedback Hub app, we need the user's consent to access their AAD account profile data (We read their name, organizational tenant ID and user ID). When they sign in for the first time with the AAD account, they will se a popup asking for their permissions, like this:
+
+![Feedback Hub consent to AAD pop-up](images/waas-wipfb-aad-consent.png)
+
+Once agreed, everything will work fine and that user won't be asked for permissions again.
+
+### Something went wrong
+
+The option for users to give consent for apps to access their profile data is controlled through Azure Active Directory. This means the AAD administrators have the ability to allow or block users from giving consent.
+
+In case the administrators blocked this option, when the user signs in with the AAD account, they will see the following error message:
+
+![Feedback Hub consent error message](images/waas-wipfb-aad-error.png)
+
+This blocks the user from signing in, which means they won't be able to use the Feedback Hub app with their AAD credentials.
+
+**To fix this issue**, an adminsitrator of the AAD directory will need to enable user consent for apps to access their data.
+
+To do this through the **classic Azure portal**:
+1. Go to https://manage.windowsazure.com/ .
+2. Switch to the **Active Directory** dashboard.  
+   ![Azure classic portal dashboard button](images/waas-wipfb-aad-classicaad.png)
+3. Select the appropriate directory and go to the **Configure** tab.
+4. Under the **integrated applications** section, enable **Users may give applications permissions to access their data**.  
+   ![Azure classic portal enable consent](images/waas-wipfb-aad-classicenable.png)
+
+To do this through the **new Azure portal**:
+1. Go to https://portal.azure.com/ .
+2. Switch to the **Active Directory** dashboard.  
+   ![Azure new portal dashboard button](images/waas-wipfb-aad-newaad.png)
+3. Switch to the appropriate directory.  
+   ![Azure new portal switch directory button](images/waas-wipfb-aad-newdirectorybutton.png)
+4. Under the **Manage** section, select **User settings**.  
+   ![Azure new portal user settings](images/waas-wipfb-aad-newusersettings.png)
+5. In the **Enterprise applications** section, enable **Users can allow apps to access their data**.  
+   ![Azure new portal enable consent](images/waas-wipfb-aad-newenable.png)
+
 
 ## Frequently Asked Questions
 

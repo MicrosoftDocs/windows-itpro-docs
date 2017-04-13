@@ -347,7 +347,7 @@ We also recommend that you upgrade to IE11 if you're running any earlier version
 
 ## Learn more
 
-- [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info)
+- [Windows 10 release information](https://technet.microsoft.com/windows/release-info)
 
 
  

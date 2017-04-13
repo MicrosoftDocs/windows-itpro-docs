@@ -92,7 +92,7 @@ To make sure your site list is up-to-date; wait 65 seconds after opening IE and 
 ## Add multiple sites to the Enterprise Mode Site List Manager (schema v.2)
 After you create your .xml or .txt file, you can bulk add the sites to the Enterprise Mode Site List Manager (schema v.2).
 
- ![](images/wedge.gif) **To add multiple sites**
+ **To add multiple sites**
 
 1.  In the Enterprise Mode Site List Manager (schema v.2), click **Bulk add from file**.
 
