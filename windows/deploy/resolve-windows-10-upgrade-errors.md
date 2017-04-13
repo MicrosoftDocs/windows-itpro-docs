@@ -560,13 +560,13 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 
 </TABLE>
 
-### 0x800xxxxx
+<h3 id="0x800xxxxx">0x800xxxxx</h3>
 
-Result codes starting with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
+<P>Result codes starting with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
 
-See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:
+<P>See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:
 
-<TABLE border=1 cellspacing=0 cellpadding=0>
+<P><TABLE border=1 cellspacing=0 cellpadding=0>
 
 <TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
