@@ -56,11 +56,11 @@ Simply go to **Settings > Accounts > Access work or school**. If a corporate acc
 
 ## User consent requirement
 
-With the current version of the Feedback Hub app, we need the user's consent to access their AAD account profile data (We read their name, organizational tenant ID and user ID). When they sign in for the first time with the AAD account, they will se a popup asking for their permissions, like this:
+With the current version of the Feedback Hub app, we need the user's consent to access their AAD account profile data (We read their name, organizational tenant ID and user ID). When they sign in for the first time with the AAD account, they will see a popup asking for their permission, like this:
 
 ![Feedback Hub consent to AAD pop-up](images/waas-wipfb-aad-consent.png)
 
-Once agreed, everything will work fine and that user won't be asked for permissions again.
+Once agreed, everything will work fine and that user won't be prompted for permission again.
 
 ### Something went wrong
 
