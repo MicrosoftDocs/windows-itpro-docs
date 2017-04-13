@@ -1078,7 +1078,7 @@
 {
 "source_path": "windows/whats-new/lockdown-features-windows-10.md",
 "redirect_url": "/itpro/windows/configure/lockdown-features-windows-10",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/whats-new/microsoft-passport.md",
