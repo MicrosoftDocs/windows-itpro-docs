@@ -31,6 +31,7 @@ After you’ve created your Windows Information Protection (WIP) policy, you'll 
 
     ![Microsoft Azure Intune: Pick your user groups that should get the policy when it's deployed](images/wip-azure-add-user-groups.png)
 
+
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
 
