@@ -387,7 +387,7 @@ There are no default locations included with WIP, you must add each of your netw
         <tr>
             <td>Enterprise Cloud Resources</td>
             <td><strong>With proxy:</strong> contoso.sharepoint.com,contoso.internalproxy1.com|<br>contoso.visualstudio.com,contoso.internalproxy2.com<p><strong>Without proxy:</strong> contoso.sharepoint.com|contoso.visualstudio.com</td>
-            <td>Specify the cloud resources to be treated as corporate and protected by WIP.<p>For each cloud resource, you may also optionally specify a proxy server from your Enterprise Internal Proxy Servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Enterprise Internal Proxy Servers is considered enterprise.<p>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;</code>.<p>If Windows is unable to determine whether an app should be allowed to connect to a network resource, it will automatically block the connection. If instead you want Windows to allow the connections to happen, you can add the <code>/*AppCompat*/</code> string to this setting. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;|/*AppCompat*/</code></td>
+            <td>Specify the cloud resources to be treated as corporate and protected by WIP.<p>For each cloud resource, you may also optionally specify a proxy server from your Enterprise Internal Proxy Servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Enterprise Internal Proxy Servers is considered enterprise.<p>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;</code>.<p><strong>Important</strong><br>In some cases, such as when an app connects directly to a cloud resource through an IP address, Windows can’t tell whether it’s attempting to connect to an enterprise cloud resource or to a personal site. In this case, Windows blocks the connection by default. To stop Windows from automatically blocking these connections, you can add the <code>/&#42;AppCompat&#42;/</code> string to the setting. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;|/&#42;AppCompat&#42;/</code>.</td>
         </tr>
         <tr>
             <td>Enterprise Network Domain Names (Required)</td>
@@ -493,10 +493,10 @@ After you’ve created your WIP policy, you'll need to deploy it to your organiz
 - [How to Create Configuration Baselines for Compliance Settings in Configuration Manager]( https://go.microsoft.com/fwlink/p/?LinkId=708225)
 - [How to Deploy Configuration Baselines in Configuration Manager]( https://go.microsoft.com/fwlink/p/?LinkId=708226)
 
->[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
-
 ## Related topics
 - [System Center Configuration Manager and Endpoint Protection (Version 1606)](https://go.microsoft.com/fwlink/p/?LinkId=717372)
 - [TechNet documentation for Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=691623)
 - [Manage mobile devices with Configuration Manager and Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=691624)
+
+>[!NOTE]
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

@@ -27,6 +27,8 @@ localizationpriority: high
 
 Windows Defender Advanced Threat Protection (Windows Defender ATP) is a security service that enables enterprise customers to detect, investigate, and respond to advanced threats on their networks.
 
+Get a quick, but in-depth overview of Windows Defender ATP for Windows 10 and the new capabilities in Windows 10, version 1703 see (Windows Defender ATP for Windows 10 Creators Update)[https://technet.microsoft.com/en-au/windows/mt782787].
+
 Windows Defender ATP uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 
 -   **Endpoint behavioral sensors**: Embedded in Windows 10, these sensors
