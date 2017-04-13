@@ -138,5 +138,6 @@ If you use a cloud environment in your organization, you may still want to resto
 - [Creating a Domain-Based Recovery Agent](https://msdn.microsoft.com/library/cc875821.aspx#EJAA)
 
 
-**Note**<br>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
+>[!Note]
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
 
