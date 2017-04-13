@@ -21,7 +21,7 @@ If you don’t already have an EFS DRA certificate, you’ll need to create and 
 The recovery process included in this topic only works for desktop devices. WIP deletes the data on Windows 10 Mobile devices.   
 
 >[!IMPORTANT]
->If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy. For more info about when to use a PKI and the general strategy you should use to deploy DRA certificates, see the [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx) article on TechNet. For more general info about EFS protection, see [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/library/cc875821.aspx).<p>If your DRA certificate has expired, you won’t be able to encrypt your files with it. To fix this, you'll need to create a new certificate, using the steps in this topic, and then deploy it through policy.
+>If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy. For more info about when to use a PKI and the general strategy you should use to deploy DRA certificates, see the [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx) article on TechNet. For more general info about EFS protection, see [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/library/cc875821.aspx).<br><br>If your DRA certificate has expired, you won’t be able to encrypt your files with it. To fix this, you'll need to create a new certificate, using the steps in this topic, and then deploy it through policy.
 
 **To manually create an EFS DRA certificate**
 
@@ -71,7 +71,8 @@ The recovery process included in this topic only works for desktop devices. WIP 
     
     Where *encryptedfile.extension* is the name of your encrypted file. For example, corporatedata.docx.
 
-**To quickly recover WIP-protected desktop data after unenrollment**<br>
+**To quickly recover WIP-protected desktop data after unenrollment**
+
 It's possible that you might revoke data from an unenrolled device only to later want to restore it all. This can happen in the case of a missing device being returned or if an unenrolled employee enrolls again. If the employee enrolls again using the original user profile, and the revoked key store is still on the device, all of the revoked data can be restored at once, by following these steps.
 
 >[!IMPORTANT]
@@ -95,7 +96,8 @@ It's possible that you might revoke data from an unenrolled device only to later
 
     The Windows Credential service automatically recovers the employee’s previously revoked keys from the <code>Recovery\Input</code> location.
 
-**To quickly recover WIP-protected desktop data in a cloud-based environment**<br>
+**To quickly recover WIP-protected desktop data in a cloud-based environment**
+
 If you use a cloud environment in your organization, you may still want to restore an employee's data after revocation. While much of the process is the same as when you're not in a cloud environment, there are a couple of differences.
 
 >[!IMPORTANT]
@@ -135,5 +137,6 @@ If you use a cloud environment in your organization, you may still want to resto
 
 - [Creating a Domain-Based Recovery Agent](https://msdn.microsoft.com/library/cc875821.aspx#EJAA)
 
-<p>**Note**<br>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
+
+**Note**<br>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
 
