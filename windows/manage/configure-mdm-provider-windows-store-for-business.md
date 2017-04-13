@@ -30,7 +30,7 @@ Your management tool needs to be installed and configured with Azure AD, in the 
 
 3.  Click **Applications**, find the application, and add it to your directory.
 
-After your management tool is added to your Azure AD directory, you can configure it to work with Store for Business.
+After your management tool is added to your Azure AD directory, you can configure it to work with Store for Business. You can configure multiple management tools - just repeat the following procedure. 
 
 **To configure a management tool in Store for Business**
 
@@ -40,7 +40,7 @@ After your management tool is added to your Azure AD directory, you can configur
 
     You'll see a list of available MDM tools.
 
-    ![](images/wsfb-settings-mgmt.png)
+    ![Screenshot showing page in Management tools page in Windows Store for Business](images/wsfb-settings-mgmt.png)
 
 3.  Choose the MDM tool you want to synchronize with Store for Business, and then click **Activate.**
 

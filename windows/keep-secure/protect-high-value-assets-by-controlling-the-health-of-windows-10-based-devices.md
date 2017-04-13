@@ -365,7 +365,7 @@ The following table details the hardware requirements for both virtualization-ba
 </tr>
 <tr class="odd">
 <td align="left"><p>Trusted Platform Module (TPM) </p></td>
-<td align="left"><p>Required to support health attestation and necessary for additional key protections for virtualization-based security.</p></td>
+<td align="left"><p>Required to support health attestation and necessary for additional key protections for virtualization-based security. TPM 2.0 is supported; TPM 1.2 is also supported beginnning with Windows 10, version 1703.</p></td>
 </tr>
 </tbody>
 </table>

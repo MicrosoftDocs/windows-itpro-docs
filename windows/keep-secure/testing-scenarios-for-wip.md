@@ -29,12 +29,12 @@ You can try any of the processes included in these scenarios, but you should foc
     </tr>
     <tr>
         <td>Encrypt and decrypt files using File Explorer.</td>
-        <td><strong>For desktop:</strong><p>
+        <td><strong>For desktop:</strong><br><br>
             <ol>
                 <li>Open File Explorer, right-click a work document, and then click <strong>Work</strong> from the <strong>File Ownership</strong> menu.<br>Make sure the file is encrypted by right-clicking the file again, clicking <strong>Advanced</strong> from the <strong>General</strong> tab, and then clicking <strong>Details</strong> from the <strong>Compress or Encrypt attributes</strong> area. The file should show up under the heading, <strong>This enterprise domain can remove or revoke access:</strong> <em>&lt;your_enterprise_identity&gt;</em>. For example, contoso.com.</li>
                 <li>In File Explorer, right-click the same document, and then click <strong>Personal</strong> from the <strong>File Ownership</strong> menu.<br>Make sure the file is decrypted by right-clicking the file again, clicking <strong>Advanced</strong> from the <strong>General</strong> tab, and then verifying that the <strong>Details</strong> button is unavailable.</li>
             </ol>
-            <strong>For mobile:</strong><p>
+            <strong>For mobile:</strong><br><br>
             <ol>
                 <li>Open the File Explorer app, browse to a file location, click the elipsis (...), and then click <strong>Select</strong> to mark at least one file as work-related.</li>
                 <li>Click the elipsis (...) again, click <strong>File ownership</strong> from the drop down menu, and then click <strong>Work</strong>.<br>Make sure the file is encrypted, by locating the <strong>Briefcase</strong> icon next to the file name.</li>
@@ -44,11 +44,11 @@ You can try any of the processes included in these scenarios, but you should foc
     </tr>
     <tr>
         <td>Create work documents in enterprise-allowed apps.</td>
-        <td><strong>For desktop:</strong><p>
+        <td><strong>For desktop:</strong><br><br>
             <ul>
-                <li>Start an unenlightened but allowed app, such as a line-of-business app, and then create a new document, saving your changes.<br>Make sure the document is encrypted to your Enterprise Identity. This might take a few minutes and require you to close and re-open the file.<p><strong>Important</strong><br>Certain file types like <code>.exe</code> and <code>.dll</code>, along with certain file paths, such as <code>%windir%</code> and <code>%programfiles%</code> are excluded from automatic encryption.<p>For more info about your Enterprise Identity and adding apps to your allowed apps list, see either [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) or [Create a Windows Information Protection (WIP) policy using Microsoft System Center Configuration Manager](create-wip-policy-using-sccm.md), based on your deployment system.</li>
+                <li>Start an unenlightened but allowed app, such as a line-of-business app, and then create a new document, saving your changes.<br>Make sure the document is encrypted to your Enterprise Identity. This might take a few minutes and require you to close and re-open the file.<br><br><strong>Important</strong><br>Certain file types like <code>.exe</code> and <code>.dll</code>, along with certain file paths, such as <code>%windir%</code> and <code>%programfiles%</code> are excluded from automatic encryption.<br><br>For more info about your Enterprise Identity and adding apps to your allowed apps list, see either [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) or [Create a Windows Information Protection (WIP) policy using Microsoft System Center Configuration Manager](create-wip-policy-using-sccm.md), based on your deployment system.</li>
             </ul>
-            <strong>For mobile:</strong><p>
+            <strong>For mobile:</strong><br><br>
             <ol>
                 <li>Start an allowed mobile app, such as Word Mobile, create a new document, and then save your changes as <strong>Work</strong> to a local, work-related location.<br>Make sure the document is encrypted, by locating the <strong>Briefcase</strong> icon next to the file name.</li>
                 <li>Open the same document and attempt to save it to a non-work-related location.<br>WIP should stop you from saving the file to this location.</li>
@@ -104,7 +104,7 @@ You can try any of the processes included in these scenarios, but you should foc
             <ol>
                 <li>Start Windows Journal and Internet Explorer 11, creating, editing, and saving files in both apps.<br>Make sure that all of the files you worked with are encrypted to your configured Enterprise Identity. In some cases, you might need to close the file and wait a few moments for it to be automatically encrypted.</li>
                 <li>Open File Explorer and make sure your modified files are appearing with a <strong>Lock</strong> icon.</li>
-                <li>Try copying and pasting, dragging and dropping, and sharing using these apps with other apps that appear both on and off the allowed apps list.<p><strong>Note</strong><br>Most Windows-signed components like File Explorer (when running in the user’s context), should have access to enterprise data.<p>A few notable exceptions include some of the user-facing in-box apps, like Wordpad, Notepad, and Microsoft Paint. These apps don't have access by default, but can be added to your allowed apps list.</li>
+                <li>Try copying and pasting, dragging and dropping, and sharing using these apps with other apps that appear both on and off the allowed apps list.<br><br><strong>Note</strong><br>Most Windows-signed components like File Explorer (when running in the user’s context), should have access to enterprise data.<br><br>A few notable exceptions include some of the user-facing in-box apps, like Wordpad, Notepad, and Microsoft Paint. These apps don't have access by default, but can be added to your allowed apps list.</li>
             </ol>
         </td>
     </tr>
@@ -133,7 +133,7 @@ You can try any of the processes included in these scenarios, but you should foc
             <ol>
                 <li>Add both Internet Explorer 11 and Microsoft Edge to your allowed apps list.</li>
                 <li>Open SharePoint (or another cloud resource that's part of your policy) and access a WIP-enabled resource by using both IE11 and Microsoft Edge.<br>Both browsers should respect the enterprise and personal boundary.</li>
-                <li>Remove Internet Explorer 11 from your allowed app list and then try to access an intranet site or enterprise-related cloud resource.<br>IE11 shouldn't be able to access the sites.<p><strong>Note</strong><br>Any file downloaded from your work SharePoint site, or any other WIP-enabled cloud resource, is automatically marked as <strong>Work</strong>.</li>
+                <li>Remove Internet Explorer 11 from your allowed app list and then try to access an intranet site or enterprise-related cloud resource.<br>IE11 shouldn't be able to access the sites.<br><br><strong>Note</strong><br>Any file downloaded from your work SharePoint site, or any other WIP-enabled cloud resource, is automatically marked as <strong>Work</strong>.</li>
             </ol>
         </td>
     </tr>
@@ -141,7 +141,7 @@ You can try any of the processes included in these scenarios, but you should foc
         <td>Verify your Virtual Private Network (VPN) can be auto-triggered.</td>
         <td>
             <ol>
-                <li>Set up your VPN network to start based on the <strong>WIPModeID</strong> setting.<br>For specific info about how to do this, see the [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-wip-policy-using-intune.md) topic.</li>
+                <li>Set up your VPN network to start based on the <strong>WIPModeID</strong> setting.<br>For specific info about how to do this, see the [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-vpn-and-wip-policy-using-intune.md) topic.</li>
                 <li>Start an app from your allowed apps list.<br>The VPN network should automatically start.</li>
                 <li>Disconnect from your network and then start an app that isn't on your allowed apps list.<br>The VPN shouldn't start and the app shouldn't be able to access your enterprise network.</li>
             </ol>
@@ -151,7 +151,7 @@ You can try any of the processes included in these scenarios, but you should foc
         <td>Unenroll client devices from WIP.</td>
         <td>
             <ul>
-                <li>Unenroll a device from WIP by going to <strong>Settings</strong>, click <strong>Accounts</strong>, click <strong>Work</strong>, click the name of the device you want to unenroll, and then click <strong>Remove</strong>.<br>The device should be removed and all of the enterprise content for that managed account should be gone.<p><strong>Important</strong><br>On desktop devices, the data isn't removed and can be recovered, so you must make sure they content is marked as <strong>Revoked</strong> and that access is denied for the employee. On mobile devices, the data is removed.</li>
+                <li>Unenroll a device from WIP by going to <strong>Settings</strong>, click <strong>Accounts</strong>, click <strong>Work</strong>, click the name of the device you want to unenroll, and then click <strong>Remove</strong>.<br>The device should be removed and all of the enterprise content for that managed account should be gone.<br><br><strong>Important</strong><br>On desktop devices, the data isn't removed and can be recovered, so you must make sure they content is marked as <strong>Revoked</strong> and that access is denied for the employee. On mobile devices, the data is removed.</li>
             </ul>
         </td>
     </tr>
