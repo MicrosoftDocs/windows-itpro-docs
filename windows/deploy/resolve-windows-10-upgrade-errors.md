@@ -559,15 +559,28 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 </TR>
 
 </TABLE>
+</TABLE>
 
 
 ### 0x800xxxxx
 
-<table></table>
+### one
+
+### two
+
+
+## three
+
+
+
 
 Result codes starting with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
 
 See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:
+
+
+
+
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
 
