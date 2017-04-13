@@ -25,13 +25,15 @@ After you’ve created your Windows Information Protection (WIP) policy, you'll 
 
     ![Microsoft Intune: Click the Manage Deployment link from the Configuration Policies screen](images/intune-managedeployment.png)
 
-2.  In the left pane of the **Manage Deployment** box, click the employees or groups that should get the policy, and then click **Add**.<p>
-The added people move to the **Selected Groups** list on the right-hand pane.
+2.  In the left pane of the **Manage Deployment** box, click the employees or groups that should get the policy, and then click **Add**.
+
+    The added people move to the **Selected Groups** list on the right-hand pane.
 
     ![Microsoft Intune: Pick the group of employees that should get the policy](images/intune-groupselection.png)
 
-3.  After you've picked all of the employees and groups that should get the policy, click **OK**.<p>
-The policy is deployed to the selected users' devices.
+3.  After you've picked all of the employees and groups that should get the policy, click **OK**.
+
+    The policy is deployed to the selected users' devices.
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
