@@ -360,15 +360,15 @@ This policy setting is applied when you turn on BitLocker. The startup PIN must 
 
 This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI ports until a user signs in to Windows.
 
-|                    |                      |
-|--------------------|----------------------|
-| Policy description | This setting helps prevent attacks that use external PCI-based devices to access BitLocker keys. |
-| Introduced         | Windows 10, version 1703 |
-| Drive type         | Operating system drives  |
-| Policy path        | Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Operating System Drives|
-| Conflicts          | None                     |
-| When enabled       | Every time the user locks the screen, DMA will be blocked on hot pluggable PCI ports until the user signs in again. |
-| When disabled or not configured | DMA is available on hot pluggable PCI devices if the device is turned on, regardless of whether a user is signed in.|
+|   |   |
+| - | - |
+| **Policy description** | This setting helps prevent attacks that use external PCI-based devices to access BitLocker keys. |
+| **Introduced**         | Windows 10, version 1703 |
+| **Drive type**         | Operating system drives  |
+| **Policy path**        | Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Operating System Drives|
+| **Conflicts**          | None                     |
+| **When enabled**       | Every time the user locks the screen, DMA will be blocked on hot pluggable PCI ports until the user signs in again. |
+| **When disabled or not configured** | DMA is available on hot pluggable PCI devices if the device is turned on, regardless of whether a user is signed in.|
 
 **Reference**
 
