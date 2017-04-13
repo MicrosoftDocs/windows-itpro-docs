@@ -55,8 +55,8 @@ This table provides info about the most common problems you might encounter whil
         <td>An app might fail to properly install because it can’t read a necessary configuration or data file, such as a .cab or .xml file needed for installation, which was protected by the copy action.</td>
         <td>To fix this, you can:
             <ul>
-                <li>Start the installer directly from the file share.<br><br>-OR-</li>
-                <li>Decrypt the locally copied files needed by the installer.<br><br>-OR-</li>
+                <li>Start the installer directly from the file share.<br><br>-OR-<br><br></li>
+                <li>Decrypt the locally copied files needed by the installer.<br><br>-OR-<br><br></li>
                 <li>Mark the file share with the installation media as “personal”. To do this, you’ll need to set the Enterprise IP ranges as <strong>Authoritative</strong> and then exclude the IP address of the file server, or you’ll need to put the file server on the Enterprise Proxy Server list.</li>
             </ul></td>
     </tr>
