@@ -28,11 +28,7 @@ You’ll need this software to run WIP in your enterprise:
 
 |Operating system | Management solution |
 |-----------------|---------------------|
-<<<<<<< HEAD
-|Windows 10, version 1703 | Microsoft Intune<br>-OR-<br>System Center Configuration Manager<br>-OR-<br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt697634.aspx) documentation.|
-=======
 |Windows 10, version 1607 or later | Microsoft Intune<br><br>-OR-<br><br>System Center Configuration Manager<br><br>-OR-<br><br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt697634.aspx) documentation.|
->>>>>>> refs/remotes/origin/master
 
 ## What is enterprise data control?
 Effective collaboration means that you need to share data with others in your enterprise. This sharing can be from one extreme where everyone has access to everything without any security, all the way to the other extreme where people can’t share anything and it’s all highly secured. Most enterprises fall somewhere in between the two extremes, where success is balanced between providing the necessary access with the potential for improper data disclosure.
