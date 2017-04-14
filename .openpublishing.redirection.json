@@ -166,6 +166,16 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/manage/lockdown-features-windows-10.md",
+"redirect_url": "/itpro/windows/configure/lockdown-features-windows-10",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/manage/set-up-shared-or-guest-pc.md",
+"redirect_url": "/itpro/windows/configure/set-up-shared-or-guest-pc",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services.md",
 "redirect_url": "/itpro/windows/configure/manage-connections-from-windows-operating-system-components-to-microsoft-services",
 "redirect_document_id": false
@@ -327,8 +337,8 @@
 },
 {
 "source_path": "windows/manage/configure-devices-without-mdm.md",
-"redirect_url": "/itpro/windows/configure/configure-devices-without-mdm",
-"redirect_document_id": true
+"redirect_url": "/itpro/windows/configure/provisioning-packages",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/manage/changes-to-start-policies-in-windows-10.md",
@@ -1052,8 +1062,8 @@
 },
 {
 "source_path": "windows/whats-new/device-management.md",
-"redirect_url": "/itpro/windows/manage/manage-corporate-devices",
-"redirect_document_id": true
+"redirect_url": "/itpro/windows/manage/index",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/whats-new/edge-ie11-whats-new-overview.md",
@@ -1068,7 +1078,7 @@
 {
 "source_path": "windows/whats-new/lockdown-features-windows-10.md",
 "redirect_url": "/itpro/windows/configure/lockdown-features-windows-10",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/whats-new/microsoft-passport.md",

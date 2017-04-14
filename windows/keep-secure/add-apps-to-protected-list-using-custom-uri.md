@@ -14,8 +14,8 @@ localizationpriority: high
 # Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality
 **Applies to:**
 
--   Windows 10, version 1607 and later
--   Windows 10 Mobile
+-   Windows 10, version 1607 and later
+-   Windows 10 Mobile
 
 You can add apps to your Windows Information Protection (WIP) protected app list using the Microsoft Intune custom URI functionality and AppLocker. For more info about how to create a custom URI using Intune, [Windows 10 custom policy settings in Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkID=691330).
 
@@ -128,15 +128,7 @@ You can add apps to your Windows Information Protection (WIP) protected app list
 
 ## Related topics
 - [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md)
+
 - [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md)
+
 - [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-vpn-and-wip-policy-using-intune.md)
-
-
- 
-
- 
-
-
-
-
-
