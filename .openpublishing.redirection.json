@@ -337,8 +337,8 @@
 },
 {
 "source_path": "windows/manage/configure-devices-without-mdm.md",
-"redirect_url": "/itpro/windows/configure/configure-devices-without-mdm",
-"redirect_document_id": true
+"redirect_url": "/itpro/windows/configure/provisioning-packages",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/manage/changes-to-start-policies-in-windows-10.md",
@@ -1062,8 +1062,8 @@
 },
 {
 "source_path": "windows/whats-new/device-management.md",
-"redirect_url": "/itpro/windows/manage/manage-corporate-devices",
-"redirect_document_id": true
+"redirect_url": "/itpro/windows/manage/index",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/whats-new/edge-ie11-whats-new-overview.md",
