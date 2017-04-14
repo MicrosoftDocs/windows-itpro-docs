@@ -14,8 +14,8 @@ localizationpriority: high
 # Protect your enterprise data using Windows Information Protection (WIP)
 **Applies to:**
 
--   Windows 10, version 1607 and later
--   Windows 10 Mobile
+-   Windows 10, version 1703
+-   Windows 10 Mobile, version 1703
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
 
@@ -28,7 +28,11 @@ You’ll need this software to run WIP in your enterprise:
 
 |Operating system | Management solution |
 |-----------------|---------------------|
+<<<<<<< HEAD
+|Windows 10, version 1703 | Microsoft Intune<br>-OR-<br>System Center Configuration Manager<br>-OR-<br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt697634.aspx) documentation.|
+=======
 |Windows 10, version 1607 or later | Microsoft Intune<br><br>-OR-<br><br>System Center Configuration Manager<br><br>-OR-<br><br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt697634.aspx) documentation.|
+>>>>>>> refs/remotes/origin/master
 
 ## What is enterprise data control?
 Effective collaboration means that you need to share data with others in your enterprise. This sharing can be from one extreme where everyone has access to everything without any security, all the way to the other extreme where people can’t share anything and it’s all highly secured. Most enterprises fall somewhere in between the two extremes, where success is balanced between providing the necessary access with the potential for improper data disclosure.
@@ -45,7 +49,7 @@ To help address this security insufficiency, company’s developed data loss pre
 
 - **The ability to specify what happens when data matches a rule, including whether employees can bypass enforcement.** For example, in Microsoft SharePoint and SharePoint Online, the Microsoft data loss prevention system lets you warn your employees that shared data includes sensitive info, and to share it anyway (with an optional audit log entry).
 
-Unfortunately, data loss prevention systems have their own problems. For example, the more detailed the rule set, the more false positives are created, leading employees to believe that the rules slow down their work and need to be bypassed in order to remain productive, potentially leading to data being incorrectly blocked or improperly released. Another major problem is that data loss prevention systems must be widely implemented to be effective. For example, if your company uses a data loss prevention system for email, but not for file shares or document storage, you might find that your data leaks through the unprotected channels. But perhaps the biggest problem with data loss preventions systems is that it provides a jarring experience that interrupts the employees’ natural workflow by blocking some operations (such as sending a message with an attachment that the system tags as sensitive) while allowing others, often according to subtle rules that the employee doesn’t see and can’t understand.
+Unfortunately, data loss prevention systems have their own problems. For example, the more detailed the rule set, the more false positives are created, leading employees to believe that the rules slow down their work and need to be bypassed in order to remain productive, potentially leading to data being incorrectly blocked or improperly released. Another major problem is that data loss prevention systems must be widely implemented to be effective. For example, if your company uses a data loss prevention system for email, but not for file shares or document storage, you might find that your data leaks through the unprotected channels. But perhaps the biggest problem with data loss preventions systems is that it provides a jarring experience that interrupts the employees’ natural workflow by stopping some operations (such as sending a message with an attachment that the system tags as sensitive) while allowing others, often according to subtle rules that the employee doesn’t see and can’t understand.
 
 ### Using information rights management systems
 To help address the potential data loss prevention system problems, companies developed information rights management (also known as IRM) systems. Information rights management systems embed protection directly into documents, so that when an employee creates a document, he or she determines what kind of protection to apply. For example, an employee can choose to stop the document from being forwarded, printed, shared outside of the organization, and so on. 
@@ -76,13 +80,13 @@ WIP gives you a new way to manage data policy enforcement for apps and documents
 
     -   **Copying or downloading enterprise data.** When an employee or an app downloads content from a location like SharePoint, a network share, or an enterprise web location, while using a WIP-protected device, WIP encrypts the data on the device.
 
-    - **Using allowed apps.** Managed apps (apps that you've included on the Allowed Apps list in your WIP policy) are allowed to access your enterprise data and will interact differently when used with unallowed, non-enterprise aware, or personal-only apps. For example, if WIP management is set to **Block**, your employees can copy and paste from one protected app to another allowed app, but not to personal apps. Imagine an HR person wants to copy a job description from an allowed app to the internal career website, an enterprise-protected location, but goofs and tries to paste into a personal app instead. The paste action fails and a notification pops up, saying that the app couldn’t paste because of a policy restriction. The HR person then correctly pastes to the career website without a problem.
+    - **Using allowed apps.** Managed apps (apps that you've included on the **Allowed apps** list in your WIP policy) are allowed to access your enterprise data and will interact differently when used with unallowed, non-enterprise aware, or personal-only apps. For example, if WIP management is set to **Hide overrides**, your employees can copy and paste from one protected app to another allowed app, but not to personal apps. Imagine an HR person wants to copy a job description from an allowed app to the internal career website, an enterprise-protected location, but goofs and tries to paste into a personal app instead. The paste action fails and a notification pops up, saying that the app couldn’t paste because of a policy restriction. The HR person then correctly pastes to the career website without a problem.
 
-    -   **Managed apps and restrictions.** With WIP you can control which apps can access and use your enterprise data. After adding an app to your allowed apps list, the app is trusted with enterprise data. All apps not on this list are blocked from accessing your enterprise data, depending on your WIP management-mode.
+    -   **Managed apps and restrictions.** With WIP you can control which apps can access and use your enterprise data. After adding an app to your allowed apps list, the app is trusted with enterprise data. All apps not on this list are stopped from accessing your enterprise data, depending on your WIP management-mode.
     
         You don’t have to modify line-of-business apps that never touch personal data to list them as allowed apps; just include them in the allowed apps list.
 
-    -   **Deciding your level of data access.** WIP lets you block, allow overrides, or audit employees' data sharing actions. Blocking the action stops it immediately. Allowing overrides lets the employee know there's a risk, but lets him or her continue to share the data while recording and auditing the action. Silent just logs the action without blocking anything that the employee could've overridden while using that setting; collecting info that can help you to see patterns of inappropriate sharing so you can take educative action or find apps that should be added to your allowed apps list.
+    -   **Deciding your level of data access.** WIP lets you hide overrides, allow overrides, or audit employees' data sharing actions. Hiding overrides stops the action immediately. Allowing overrides lets the employee know there's a risk, but lets him or her continue to share the data while recording and auditing the action. Silent just logs the action without stopping anything that the employee could've overridden while using that setting; collecting info that can help you to see patterns of inappropriate sharing so you can take educative action or find apps that should be added to your allowed apps list.
 
     -   **Data encryption at rest.** WIP helps protect enterprise data on local files and on removable media.
     
@@ -94,7 +98,7 @@ WIP gives you a new way to manage data policy enforcement for apps and documents
 
 -   **Remove access to enterprise data from enterprise-protected devices.** WIP gives admins the ability to revoke enterprise data from one or many MDM-enrolled devices, while leaving personal data alone. This is a benefit when an employee leaves your company, or in the case of a stolen device. After determining that the data access needs to be removed, you can use Microsoft Intune to unenroll the device so when it connects to the network, the user's encryption key for the device is revoked and the enterprise data becomes unreadable.
 
-    >[!Note]
+    >[!NOTE]
     >For management of Surface devices it is recommended that you use the Current Branch of System Center Configuration Manager.<br>System Center Configuration Manager also allows you to revoke enterprise data. However, it does it by performing a factory reset of the device.
 
 ## How WIP works
@@ -114,7 +118,7 @@ WIP currently addresses these enterprise scenarios:
 
 - You can remotely wipe enterprise data off managed computers, including employee-owned computers, without affecting the personal data.
 
-- You can select specific apps that can access enterprise data, called "allowed apps" that are clearly recognizable to employees. You can also block non-protected apps from accessing enterprise data.
+- You can select specific apps that can access enterprise data, called "allowed apps" that are clearly recognizable to employees. You can also stop non-protected apps from accessing enterprise data.
 
 - Your employees won't have their work otherwise interrupted while switching between personal and enterprise apps while the enterprise policies are in place. Switching environments or signing in multiple times isn’t required.
 
@@ -127,10 +131,10 @@ You can set your WIP policy to use 1 of 4 protection and management modes:
 
 |Mode|Description|
 |----|-----------|
-|Block |WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing enterprise data to non-enterprise-protected apps in addition to sharing enterprise data between apps or attempting to share outside of your organization’s network.|
-|Override |WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](https://go.microsoft.com/fwlink/p/?LinkID=746459). |
-|Silent |WIP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still blocked.|
-|Off |WIP is turned off and doesn't help to protect or audit your data.<br><br>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.<br><br>**Note**<br>For more info about setting your WIP-protection modes, see either [Create a Windows Information Protection (WIP) policy using Intune](create-wip-policy-using-intune.md) or [Create and deploy a Windows Information Protection (WIP) policy using Configuration Manager](create-wip-policy-using-sccm.md), depending on your management solution. |
+|Hide overrides |WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing enterprise data to non-enterprise-protected apps in addition to sharing enterprise data between apps or attempting to share outside of your organization’s network.|
+|Allow overrides |WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](https://go.microsoft.com/fwlink/p/?LinkID=746459). |
+|Silent |WIP runs silently, logging inappropriate data sharing, without stopping anything that would’ve been prompted for employee interaction while in Allow overrides mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still stopped.|
+|Off |WIP is turned off and doesn't help to protect or audit your data.<p>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.<p>**Note**<br>For more info about setting your WIP-protection modes, see either [Create a Windows Information Protection (WIP) policy using Intune](create-wip-policy-using-intune.md) or [Create and deploy a Windows Information Protection (WIP) policy using Configuration Manager](create-wip-policy-using-sccm.md), depending on your management solution. |
 
 ## Turn off WIP
 You can turn off all Windows Information Protection and restrictions, decrypting all devices managed by WIP and reverting to where you were pre-WIP, with no data loss. However, this isn’t recommended. If you choose to turn WIP off, you can always turn it back on, but your decryption and policy info won’t be automatically reapplied.
