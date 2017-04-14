@@ -166,6 +166,16 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/manage/lockdown-features-windows-10.md",
+"redirect_url": "/itpro/windows/configure/lockdown-features-windows-10",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/manage/set-up-shared-or-guest-pc.md",
+"redirect_url": "/itpro/windows/configure/set-up-shared-or-guest-pc",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services.md",
 "redirect_url": "/itpro/windows/configure/manage-connections-from-windows-operating-system-components-to-microsoft-services",
 "redirect_document_id": false
@@ -1068,7 +1078,7 @@
 {
 "source_path": "windows/whats-new/lockdown-features-windows-10.md",
 "redirect_url": "/itpro/windows/configure/lockdown-features-windows-10",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/whats-new/microsoft-passport.md",
