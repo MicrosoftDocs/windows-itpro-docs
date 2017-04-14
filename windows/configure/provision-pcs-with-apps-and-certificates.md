@@ -1,7 +1,6 @@
 ---
 title: Provision PCs with apps and certificates (Windows 10)
 description: Create a provisioning package to apply settings to a PC running Windows 10. 
-ms.assetid: 66D14E97-E116-4218-8924-E2A326C9367E
 keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: W10
 ms.mktglfcycl: deploy
