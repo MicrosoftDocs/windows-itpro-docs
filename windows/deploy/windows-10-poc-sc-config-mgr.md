@@ -788,7 +788,7 @@ In this first deployment scenario, we will deploy Windows 10 using PXE. This sce
 
 ![contoso.com\Computers](images/poc-computers.png)
 
-In the replace procedure, PC1 will not be migrated to a new operating system. It is simplest to perform this procedure before performing the refresh procedure. After refreshing PC1, the operating system will be replaced. This replace procedure does not replace the operating system on PC1 but rather replaces PC1 with another computer, migrating users and settings from PC1 to the new computer.
+In the replace procedure, PC1 will not be migrated to a new operating system. It is simplest to perform this procedure before performing the refresh procedure. After refreshing PC1, the operating system will be new. The next (replace) procedure does not install a new operating system on PC1 but rather performs a side-by-side migration of PC1 and another computer (PC4), to copy users and settings from PC1 to the new computer.
 
 ### Create a replace task sequence
 
