@@ -67,7 +67,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 
     >If the request to add features fails, retry the installation by typing the command again.
 
-2. Download [SQL Server 2012 SP2](https://www.microsoft.com/en-us/evalcenter/evaluate-sql-server-2014-sp2) from the Microsoft Evaluation Center as an .ISO file on the Hyper-V host computer. Save the file to the **C:\VHD** directory.
+2. Download [SQL Server 2014 SP2](https://www.microsoft.com/en-us/evalcenter/evaluate-sql-server-2014-sp2) from the Microsoft Evaluation Center as an .ISO file on the Hyper-V host computer. Save the file to the **C:\VHD** directory.
 3. When you have downloaded the file **SQLServer2014SP2-FullSlipstream-x64-ENU.iso** and placed it in the C:\VHD directory, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host: 
 
     ```
@@ -109,7 +109,7 @@ Topics and procedures in this guide are summarized in the following table. An es
     New-NetFirewallRule -DisplayName “SQL Debugger/RPC” -Direction Inbound –Protocol TCP –LocalPort 135 -Action allow
     ```
 
-7. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1607. Installation might require several minutes to acquire all components.   
+7. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1703. Installation might require several minutes to acquire all components.   
 
 ## Install System Center Configuration Manager
 
@@ -279,6 +279,14 @@ This section contains several procedures to support Zero Touch installation with
 5. Next to **Name**, type **PS1 Site Assignment and Content Location**, click **Add**, select the **Default-First-Site-Name** boundary and then click **OK**.
 6. On the **References** tab in the **Create Boundary Group** window select the **Use this boundary group for site assignment** checkbox.
 7. Click **Add**, select the **\\\SRV1.contoso.com** checkbox, and then click **OK** twice.
+
+### Add the state migration point role
+
+1. In the Administration workspace, expand **Site Configuration**, click **Sites**, and then in on the **Home** ribbon at the top of the console click **Add Site System Roles**.
+2. In the Add site System Roles Wizard, click **Next** twice and then on the Specify roles for this server page, select the **State migration point** checkbox.
+3. Click **Next**, click the yellow starburst, type **C:\MigData** for the **Storage folder**, and click **OK**.
+4. Click **Next**, and then verify under **Boundary groups** that **PS1 Site Assignment and Content Location** is displayed.
+5. Click **Next** twice and then click **Close**.
 
 ### Enable PXE on the distribution point
 
@@ -936,15 +944,21 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
     - MAC Address: **00:15:5D:83:26:FF**
     - Source Computer: \<type the hostname of PC1, or click **Search** twice, click the hostname, and click **OK**\>
 
-4. Click **Next**, and then on the User Accounts page choose **Capture and restore all user accounts**. Click **Next** twice to continue.
+4. Click **Next**, and on the User Accounts page choose **Capture and restore specified user accounts**, then click the yellow starburst next to **User accounts to migrate**.
 
-5. On the Choose Target Collection page, choose **Add computers to the following collection**, click **Browse**, choose **Install Windows 10 Enterprise x64**, click **OK**, click **Next** twice, and then click **Close**.
+5. Click **Browse** and then under Enter the object name to select type **user1** and click OK twice.
 
-6. In the Assets and Compliance workspace, click **User State Migration** and review the computer association in the display pane. The source computer will be the computername of PC1 (GREGLIN-PC1 in this example), the destination computer will be **PC4**, and the migration type will be **side-by-side**.
+6. Click the yellow starburst again and repeat the previous step to add the **contoso\administrator** account.
 
-7. Right-click the association in the display pane and then click **View Recovery Information**. Note that a recovery key has been assigned, but a user state store location has not. Click **Close**.
+7. Click **Next** twice, and on the Choose Target Collection page, choose **Add computers to the following collection**, click **Browse**, choose **Install Windows 10 Enterprise x64**, click **OK**, click **Next** twice, and then click **Close**.
 
-8. Click **Device Collections** and then double-click **Install Windows 10 Enterprise x64**. Verify that **PC4** is displayed in the collection. You might have to update and refresh the collection, or wait a few minutes, but do not proceed until PC4 is available. See the following example:
+8. In the Assets and Compliance workspace, click **User State Migration** and review the computer association in the display pane. The source computer will be the computername of PC1 (GREGLIN-PC1 in this example), the destination computer will be **PC4**, and the migration type will be **side-by-side**.
+
+9. Right-click the association in the display pane and then click **Specify User Accounts**. You can add or remove user account here. Click **OK**.
+
+10. Right-click the association in the display pane and then click **View Recovery Information**. Note that a recovery key has been assigned, but a user state store location has not. Click **Close**.
+
+11. Click **Device Collections** and then double-click **Install Windows 10 Enterprise x64**. Verify that **PC4** is displayed in the collection. You might have to update and refresh the collection, or wait a few minutes, but do not proceed until PC4 is available. See the following example:
 
     ![collection](images/sccm-collection.png)
 
@@ -1012,8 +1026,15 @@ In the Configuration Manager console, in the Software Library workspace under Op
 2. In the **Welcome to the Task Sequence Wizard**, enter **pass@word1** and click **Next**.
 3. Choose the **Windows 10 Enterprise X64** image.
 4. Setup will install the operating system using the Windows 10 Enterprise x64 reference image, install the configuration manager client, join PC4 to the domain, and restore users and settings from PC1.
+5. Save checkpoints for all VMs if you wish to review their status at a later date. This is not required (checkpoints do take up space on the Hyper-V host). Note: the next procedure will install a new OS on PC1 update its status in Configuration Manager and in Active Directory as a Windows 10 device, so you cannot return to a previous checkpoint only on the PC1 VM without a conflict. Therefore, if you do create a checkpoint, you should do this for all VMs.
 
+    To save a checkpoint for all VMs, type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
+    ```
+    Checkpoint-VM -Name DC1 -SnapshotName cm-refresh
+    Checkpoint-VM -Name SRV1 -SnapshotName cm-refresh
+    Checkpoint-VM -Name PC1 -SnapshotName cm-refresh
+    ```
 
 ## Refresh a client with Windows 10 using Configuration Manager
 
@@ -1037,13 +1058,7 @@ In the Configuration Manager console, in the Software Library workspace under Op
 
     ![post-refresh](images/sccm-post-refresh.png) 
 
-5. Save checkpoints for all VMs if you wish to review their status at a later date. This is not required. To save a checkpoint for all VMs, type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
-    ```
-    Checkpoint-VM -Name DC1 -SnapshotName cm-refresh
-    Checkpoint-VM -Name SRV1 -SnapshotName cm-refresh
-    Checkpoint-VM -Name PC1 -SnapshotName cm-refresh
-    ```
 
 ## Related Topics
 

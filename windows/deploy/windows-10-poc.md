@@ -52,7 +52,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 <TR><TD>[Convert PC to VM](#convert-pc-to-vm)<TD>Convert a physical computer on your network to a VM hosted in Hyper-V.<TD>30 minutes
 <TR><TD>[Resize VHD](#resize-vhd)<TD>Increase the storage capacity for one of the Windows Server VMs.<TD>5 minutes
 <TR><TD>[Configure Hyper-V](#configure-hyper-v)<TD>Create virtual switches, determine available RAM for virtual machines, and add virtual machines.<TD>15 minutes
-<TR><TD>[Configure VHDs](#configure-vhds)<TD>Start virtual machines and configure all services and settings.<TD>60 minutes
+<TR><TD>[Configure VMs](#configure-vms)<TD>Start virtual machines and configure all services and settings.<TD>60 minutes
 <TR><TD>[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)<TD>Verify and troubleshoot network connectivity and services in the PoC environment.<TD>30 minutes
 <TR><TD>[Appendix B: Terminology in this guide](#appendix-d-terminology-in-this-guide)<TD>Terms used in this guide.<TD>Informational
 </TABLE>
@@ -918,7 +918,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     192.168.0.2                                                                Ethernet
     </pre>
 
-    In this example, the poc-internal network interface at 192.168.0.2 is associated with the "Ethernet" interface and the Internet-facing poc-external interface is associated with the "Ethernet 2" interface. If your interfaces are different, you must adjust the commands provided in the next step appropriately to configure routing services.
+    In this example, the poc-internal network interface at 192.168.0.2 is associated with the "Ethernet" interface and the Internet-facing poc-external interface is associated with the "Ethernet 2" interface. If your interfaces are different, you must adjust the commands provided in the next step appropriately to configure routing services. Also note that if the "Ethernet 2" interface has an IP address in the 192.168.0.100-105 range then it likely is getting a DHCP lease from DC1 instead of your corporate network. If this is the case, you can try removing and re-adding the second network interface from the SRV1 VM through its Hyper-V settings.
 
     >[!TIP]
     >Sometimes a computer will have hidden, disconnected interfaces that prevent you from naming a network adapter. When you attempt to rename an adapter, you will receive an error that the adapter name already exists. These disconnected devices can be viewed in device manager by clicking **View** and then clicking **Show hidden devices**. The disconnected device can then be uninstalled, enabling you to reuse the adapter name. 
