@@ -307,7 +307,7 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <tr class="header">
 <th align="left">Windows Hello for Business mode</th>
 <th align="left">Azure AD</th>
-<th align="left">Active Directory (AD) on-premises (available with production release of Windows Server 2016)</th>
+<th align="left">Active Directory (AD) on-premises (only supported with Windows 10, version 1703 clients)</th>
 <th align="left">Azure AD/AD hybrid (available with production release of Windows Server 2016)</th>
 </tr>
 </thead>
@@ -318,7 +318,6 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <td align="left"><ul>
 <li>Active Directory Federation Service (AD FS) (Windows Server 2016)</li>
 <li>A few Windows Server 2016 domain controllers on-site</li>
-<li>Microsoft System Center 2012 R2 Configuration Manager SP2</li>
 </ul></td>
 <td align="left"><ul>
 <li>Azure AD subscription</li>
@@ -339,7 +338,6 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <li>ADFS (Windows Server 2016)</li>
 <li>Active Directory Domain Services (AD DS) Windows Server 2016 schema</li>
 <li>PKI infrastructure</li>
-<li>Configuration Manager SP2, Intune, or non-Microsoft MDM solution</li>
 </ul></td>
 <td align="left"><ul>
 <li>Azure AD subscription</li>
@@ -355,7 +353,8 @@ Configuration Manager and MDM provide the ability to manage Windows Hello for Bu
 
 Azure AD provides the ability to register devices with your enterprise and to provision Windows Hello for Business for organization accounts.
 
-
+>[!IMPORTANT]
+>Active Directory on-premises deployment **is not currently available** and will become available with a future update of ADFS on Windows Server 2016. The requirements listed in the above table will apply when this deployment type becomes available.
 
 
 ## How to use Windows Hello for Business with Azure Active Directory
