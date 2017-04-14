@@ -11,103 +11,61 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune
+# Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Azure Intune
 **Applies to:**
 
--   Windows 10, version 1607
--   Windows 10 Mobile
+-   Windows 10, version 1703
+-   Windows 10 Mobile, version 1703
 
-After you've created and deployed your Windows Information Protection (WIP) policy, you can use Microsoft Intune to create and deploy your Virtual Private Network (VPN) policy, linking it to your WIP policy.
+After you've created and deployed your Windows Information Protection (WIP) policy, you can use Microsoft Azure Intune to create and deploy your Virtual Private Network (VPN) policy, linking it to your WIP policy.
 
-## Create your VPN policy using Microsoft Intune
+## Create your VPN policy using Microsoft Azure Intune
 Follow these steps to create the VPN policy you want to use with WIP.
 
 **To create your VPN policy**
 
-1.  Open the Intune administration console, and go to the **Policy** node, and then click **Add Policy**.
+1.  Open the Microsoft Azure Intune mobile application management console, click **Device configuration**, and then click **Create Profile**.
 
-2.  Go to **Windows**, click the **VPN Profile (Windows 10 Desktop and Mobile and later)**, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
+    ![Microsoft Azure Intune, Create a new policy using the the Azure portal](images/wip-azure-vpn-device-policy.png)
 
-    ![Microsoft Intune, Create a new policy using the New Policy screen](images/intune-vpn-createpolicy.png)
+2.  In the **Create Profile** blade, type a name for your profile, such as *Contoso_VPN_Win10*, into the **Name** box, add an optional description for your policy into the **Description** box, select **Windows 10 and later** from the **Platform** dropdown box, select **Custom** from the **Profile type** dropdown box, and then click **Configure**.
 
-3.  Type *Contoso_VPN_Win10* into the **Name** box, along with an optional description for your policy into the **Description** box.
+    ![Microsoft Azure Intune, Create a new policy using the Create Profile blade](images/wip-azure-vpn-configure-policy.png)
 
-    ![Microsoft Intune: Fill in the required Name and optional Description for your policy](images/intune-vpn-titledescription.png)
+3. In the **Custom OMA-URI Settings** blade, click **Add**.
 
-4.  In the **VPN Settings** area, type the following info:
+4. In the **Add Row** blade, type:
 
-    -   **VPN connection name.** This name is also what appears to your employees, so it's important that it be clear and understandable.
+    - **Name.** Type a name for your setting, such as *EDPModeID*.
+    
+    - **Description.** Type an optional description for your setting.
+    
+    - **OMA-URI.** Type _./Vendor/MSFT/VPNv2/&lt;VPNProfileName&gt;/EDPModeId_ into the box.
 
-    -   **Connection type.** Pick the connection type that matches your infrastructure. The options are **Pulse Secure**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, or **Check Point Capsule VPN**.
+    - **Data type.** Select **String** from the dropdown box
+    
+    - **Value.** Type your fully-qualified domain that should be used by the OMA-URI setting. For example, _corp.contoso.com_.
 
-    -   **VPN server description.** A descriptive name for this connection. Only you will see it, but it should be unique and readable.
+        ![Microsoft Azure Intune, Add your OMA-URI settings](images/wip-azure-vpn-custom-omauri.png)
 
-    -   **Server IP address or FQDN.** The server's IP address or fully-qualified domain name (FQDN).
+5. Click **OK** to save your setting info in the **Add Row** blade, and then click **OK** in the **Custom OMA-URI Settings** blade to save the setting with your policy.
 
-        ![Microsoft Intune: Fill in the VPN Settings area](images/intune-vpn-vpnsettings.png)
+6. Click **Create** to create the policy, including your OMA_URI info.
 
-5.  In the **Authentication** area, choose the authentication method that matches your VPN infrastructure, either **Username and Password** or **Certificates**.<p>
-It's your choice whether you check the box to **Remember the user credentials at each logon**.
-
-    ![Microsoft Intune, Choose the Authentication Method for your VPN system](images/intune-vpn-authentication.png)
-
-6.  You can leave the rest of the default or blank settings, and then click **Save Policy**.
-
-## Deploy your VPN policy using Microsoft Intune
+## Deploy your VPN policy using Microsoft Azure Intune
 After you’ve created your VPN policy, you'll need to deploy it to the same group you deployed your Windows Information Protection (WIP) policy.
 
-**To deploy your VPN policy**
+**To deploy your Custom VPN policy**
 
-1.  On the **Configuration policies** page, locate your newly-created policy, click to select it, and then click the **Manage Deployment** button.
+1.  On the **App policy** blade, click your newly-created policy, click **User groups** from the menu that appears, and then click **Add user group**.
 
-2.  In the left pane of the **Manage Deployment** box, click the employees or groups that should get the policy, and then click **Add**.<p>
-The added people move to the **Selected Groups** list on the right-hand pane.
+    A list of user groups, made up of all of the security groups in your Azure Active Directory, appear in the **Add user group** blade.
 
-    ![Microsoft Intune: Pick the group of employees that should get the policy](images/intune-deploy-vpn.png)
+2. Choose the group you want your policy to apply to, and then click **Select** to deploy the policy.
 
-3.  After you've picked all of the employees and groups that should get the policy, click **OK**.<p>
-The policy is deployed to the selected users' devices.
+    The policy is deployed to the selected users' devices.
 
-## Link your WIP and VPN policies and deploy the custom configuration policy
-The final step to making your VPN configuration work with WIP, is to link your two policies together. To do this, you must first create a custom configuration policy, setting it to use your **EDPModeID** setting, and then deploying the policy to the same group you deployed your WIP and VPN policies
-
-**To link your VPN policy**
-
-1.  Open the Intune administration console, and go to the **Policy** node, and then click **Add Policy**.
-
-2.  Go to **Windows**, click the **Custom Configuration (Windows 10 Desktop and Mobile and later)**, click **Create and Deploy a Custom Policy**, and then click **Create Policy**.
-
-    ![Microsoft Intune, Create a new policy from the New Policy screen](images/intune-vpn-customconfig.png)
-
-3.  Type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
-
-    ![Microsoft Intune: Fill in the required Name and optional Description for your policy](images/intune-vpn-wipmodeid.png)
-
-4.  In the **OMA-URI Settings** area, click **Add** to add your **EDPModeID** info.
-
-5.  In the **OMA-URI Settings** area, type the following info:
-
-    -   **Setting name.** Type **EDPModeID** as the name.
-
-    -   **Data type.** Pick the **String** data type.
-
-    -   **OMA-URI.** Type `./Vendor/MSFT/VPNv2/<VPNProfileName>/EDPModeId`, replacing &lt;*VPNProfileName*&gt; with the name you gave to your VPN policy. For example, `./Vendor/MSFT/VPNv2/W10-Checkpoint-VPN1/EDPModeId`.
-
-    -   **Value.** Your fully-qualified domain that should be used by the OMA-URI setting.
-
-        ![Microsoft Intune: Fill in the OMA-URI Settings for the EMPModeID setting](images/intune-vpn-omaurisettings.png)
-
-6.  Click **OK** to save your new OMA-URI setting, and then click **Save Policy.**
-
- **To deploy your linked policy**
-
-1.  On the **Configuration policies** page, locate your newly-created policy, click to select it, and then click the **Manage Deployment** button.
-
-2.  In the left pane of the **Manage Deployment** box, click the employees or groups that should get the policy, and then click **Add**. The added people move to the **Selected Groups** list on the right-hand pane.
-
-    ![Microsoft Intune, Manage Deployment box used to deploy your linked VPN policy](images/intune-groupselection_vpnlink.png)
-
-3.  After you've picked all of the employees and groups that should get the policy, click **OK**. The policy is deployed to the selected users' devices.
+    ![Microsoft Intune: Pick your user groups that should get the policy when it's deployed](images/wip-azure-add-user-groups.png)
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
