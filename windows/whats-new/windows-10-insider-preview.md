@@ -1,7 +1,6 @@
 ---
 title: Documentation for Windows 10 Insider Preview (Windows 10)
 description: Preliminary documentation for some Windows 10 features in Insider Preview.
-ms.assetid: 75F285B0-09BE-4821-9B42-37B9BE54CEC6
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
