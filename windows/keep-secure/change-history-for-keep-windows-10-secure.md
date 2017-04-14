@@ -13,13 +13,27 @@ author: brianlic-msft
 This topic lists new and updated topics in the [Keep Windows 10 secure](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
 
+## March 2017
+|New or changed topic |Description |
+|---------------------|------------|
+|[Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |Updated based on Windows 10, version 1703. |
+|[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |Added new content about Azure Rights Management. |
+|[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |Added additional limitations for Windows 10, version 1703. |
+|[Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md)|Added content about recovering data from a cloud environment.|
+|[Protect derived domain credentials with Credential Guard](credential-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
+|[Requirements and deployment planning guidelines for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
+|[Windows Defender SmartScreen overview](windows-defender-smartscreen-overview.md)|New |
+|[Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md)|New |
+|[Use Windows Defender Security Center to set Windows Defender SmartScreen for individual devices](windows-defender-smartscreen-set-individual-device.md)|New |
+|[Overview of threat mitigations in Windows 10](overview-of-threat-mitigations-in-windows-10.md) | Reorganized from existing content, to provide a better overview of threat mitigations. Explains how mitigations in the Enhanced Mitigation Experience Toolkit (EMET) relate to those in Windows 10. |
+
 ## January 2017
 |New or changed topic |Description |
 |---------------------|------------|
 |[Determine the Enterprise Context of an app running in Windows Information Protection (WIP)](wip-app-enterprise-context.md) |New |
 |[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |Updated to include info about USB drives and Azure RMS (Windows Insider Program only) and to add more info about Work Folders and Offline files. |
 |[Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](recommended-network-definitions-for-wip.md) |New |
-|[Using Outlook Web Access with Windows Information Protection (WIP)](using-owa-with-wip.md) |New |
+|[Using Outlook on the web with Windows Information Protection (WIP)](using-owa-with-wip.md) |New |
 | Microsoft Passport guide | Content merged into [Windows Hello for Business](hello-identity-verification.md) topics |
 
 ## December 2016
@@ -122,7 +136,6 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 |New or changed topic | Description |
 |----------------------|-------------|
 |[Protect derived domain credentials with Credential Guard](credential-guard.md) |Clarified Credential Guard protections |
-|[Windows 10 security overview](windows-10-security-guide.md) |Added SMB hardening improvements for SYSVOL and NETLOGON connections |
 
 ## March 2016
 

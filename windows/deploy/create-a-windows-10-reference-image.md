@@ -16,7 +16,7 @@ author: mtniehaus
 **Applies to**
 -   Windows 10
 
-Creating a reference image is important because that image serves as the foundation for the devices in your organization. In this topic, you will learn how to create a Windows 10 reference image using the Microsoft Deployment Toolkit (MDT) 2013 Update 2. You will create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 10 reference image. After completing the steps outlined in this topic, you will have a Windows 10 reference image that can be used in your deployment solution.
+Creating a reference image is important because that image serves as the foundation for the devices in your organization. In this topic, you will learn how to create a Windows 10 reference image using the Microsoft Deployment Toolkit (MDT). You will create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 10 reference image. After completing the steps outlined in this topic, you will have a Windows 10 reference image that can be used in your deployment solution.
 For the purposes of this topic, we will use four machines: DC01, MDT01, HV01, and PC0001. DC01 is a domain controller, PC0001 is a Windows 10 Enterprise x64 client, and MDT01 is a Windows Server 2012 R2 standard server. HV01 is a Hyper-V host server, but HV01 could be replaced by PC0001 as long as PC0001 has enough memory and is capable of running Hyper-V. MDT01, HV01, and PC0001 are members of the domain contoso.com for the fictitious Contoso Corporation.
 
 **Note**  
@@ -69,11 +69,11 @@ Figure 3. Permissions configured for the MDT\_BA user.
 
 ## <a href="" id="sec02"></a>Add the setup files
 
-This section will show you how to populate the MDT 2013 Update 2 deployment share with the Windows 10 operating system source files, commonly referred to as setup files, which will be used to create a reference image. Setup files are used during the reference image creation process and are the foundation for the reference image.
+This section will show you how to populate the MDT deployment share with the Windows 10 operating system source files, commonly referred to as setup files, which will be used to create a reference image. Setup files are used during the reference image creation process and are the foundation for the reference image.
 
 ### Add the Windows 10 installation files
 
-MDT 2013 supports adding both full source Windows 10 DVDs (ISOs) and custom images that you have created. In this case, you create a reference image, so you add the full source setup files from Microsoft.
+MDT supports adding both full source Windows 10 DVDs (ISOs) and custom images that you have created. In this case, you create a reference image, so you add the full source setup files from Microsoft.
 
 **Note**  
 Due to the Windows limits on path length, we are purposely keeping the operating system destination directory short, using the folder name W10EX64RTM rather than a more descriptive name like Windows 10 Enterprise x64 RTM.
@@ -124,7 +124,7 @@ You can customize Office 2013. In the volume license versions of Office 2013, th
 
 ### Add the Microsoft Office Professional Plus 2013 x86 installation files
 
-After adding the Microsoft Office Professional Plus 2013 x86 application, you then automate its setup by running the Office Customization Tool. In fact, MDT 2013 detects that you added the Office Professional Plus 2013 x86 application and creates a shortcut for doing this.
+After adding the Microsoft Office Professional Plus 2013 x86 application, you then automate its setup by running the Office Customization Tool. In fact, MDT detects that you added the Office Professional Plus 2013 x86 application and creates a shortcut for doing this.
 You also can customize the Office installation using a Config.xml file. But we recommend that you use the Office Customization Tool as described in the following steps, as it provides a much richer way of controlling Office 2013 settings.
 1.  Using the Deployment Workbench in the MDT Build Lab deployment share, expand the **Applications / Microsoft** node, and double-click **Install - Microsoft Office 2013 Pro Plus x86**.
 2.  In the **Office Products** tab, click **Office Customization Tool**, and click **OK** in the **Information** dialog box.
@@ -633,7 +633,7 @@ After some time, you will have a Windows 10 Enterprise x64 image that is fully 
 
 [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)
 
-[Deploy a Windows 10 image using MDT 2013 Update 2](deploy-a-windows-10-image-using-mdt.md)
+[Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)
 
 [Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)
 
@@ -641,4 +641,4 @@ After some time, you will have a Windows 10 Enterprise x64 image that is fully 
 
 [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)
 
-[Configure MDT settings](configure-mdt-2013-settings.md)
+[Configure MDT settings](configure-mdt-settings.md)

@@ -45,7 +45,7 @@ This workflow diagram provides a high-level understanding of a UE-V deployment a
 
 ![deploymentworkflow](images/deploymentworkflow.png)
 
-<a href="" id="planning"></a>**Planning a UE-V deployment:** First, you want to do a little bit of planning so that you can determine which UE-V components you’ll be deploying. Planning a UE-V deployment involves these things:
+**Planning a UE-V deployment:** First, you want to do a little bit of planning so that you can determine which UE-V components you’ll be deploying. Planning a UE-V deployment involves these things:
 
 -   [Decide whether to synchronize settings for custom applications](#deciding)
 
@@ -597,15 +597,19 @@ The UE-V settings storage location and settings template catalog support storing
 
 -   Format the storage volume with an NTFS file system.
 
--   The share can use Distributed File System (DFS) replication, but Distributed File System Replication (DFSR) is specifically not supported. Distributed File System Namespaces (DFSN) are supported. For detailed information, see [Microsoft’s Support Statement Around Replicated User Profile Data](https://go.microsoft.com/fwlink/p/?LinkId=313991).
+-   The share can use Distributed File System (DFS) but there are restrictions. 
+Specifically, Distributed File System Replication (DFS-R) single target configuration with or without a Distributed File System Namespace (DFS-N) is supported. 
+Likewise, only single target configuration is supported with DFS-N.
+For detailed information, see [Microsoft’s Support Statement Around Replicated User Profile Data](https://go.microsoft.com/fwlink/p/?LinkId=313991)
+and also [Information about Microsoft support policy for a DFS-R and DFS-N deployment scenario](https://support.microsoft.com/kb/2533009).
 
-    In addition, because SYSVOL uses DFSR for replication, SYSVOL cannot be used for UE-V data file replication.
+    In addition, because SYSVOL uses DFS-R for replication, SYSVOL cannot be used for UE-V data file replication.
 
 -   Configure the share permissions and NTFS access control lists (ACLs) as specified in [Deploying the Settings Storage Location for UE-V 2.x](http://technet.microsoft.com/library/dn458891.aspx#ssl).
 
 -   Use file server clustering along with the UE-V Agent to provide access to copies of user state data in the event of communications failures.
 
--   You can store the settings storage path data (user data) and settings template catalog templates on clustered shares, on DFSN shares, or on both.
+-   You can store the settings storage path data (user data) and settings template catalog templates on clustered shares, on DFS-N shares, or on both.
 
 ### <a href="" id="clocksync"></a>Synchronize computer clocks for UE-V settings synchronization
 
@@ -663,10 +667,10 @@ Before you proceed, make sure your environment includes these requirements for r
 <td align="left"><p>.NET Framework 4.5 or higher</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Windows 10</p>
+<td align="left"><p>Windows 10, pre-1607 version</p>
 <div class="alert">
 <strong>Note</strong>  
-<p>Only UE-V 2.1 SP1 supports Windows 10</p>
+<p>Only UE-V 2.1 SP1 supports Windows 10, pre-1607 version</p>
 </div>
 <div>
  
@@ -685,6 +689,14 @@ Before you proceed, make sure your environment includes these requirements for r
 <td align="left"><p>Windows PowerShell 3.0 or higher</p></td>
 <td align="left"><p>.NET Framework 4.5 or higher</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p>Windows Server 2016</p></td>
+<td align="left"><p>Standard or Datacenter</p></td>
+<td align="left"><p>None</p></td>
+<td align="left"><p>64-bit</p></td>
+<td align="left"><p>Windows PowerShell 3.0 or higher</p></td>
+<td align="left"><p>.NET Framework 4.6 or higher</p></td>
+</tr>
 </tbody>
 </table>
 
@@ -697,6 +709,9 @@ Also…
 -   **Administrative Credentials** for any computer on which you’ll be installing
 
 **Note**  
+
+-   Starting with WIndows 10, version 1607, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/en-us/WindowsForBusiness/windows-for-enterprise) and is no longer part of the Microsoft Desktop Optimization Pack.
+
 -   The UE-V Windows PowerShell feature of the UE-V Agent requires .NET Framework 4 or higher and Windows PowerShell 3.0 or higher to be enabled. Download Windows PowerShell 3.0 [here](https://go.microsoft.com/fwlink/?LinkId=309609).
 
 -   Install .NET Framework 4 or .NET Framework 4.5 on computers that run the Windows 7 or the Windows Server 2008 R2 operating system. The Windows 8, Windows 8.1, and Windows Server 2012 operating systems come with .NET Framework 4.5 installed. The Windows 10 operating system comes with .NET Framework 4.6 installed.

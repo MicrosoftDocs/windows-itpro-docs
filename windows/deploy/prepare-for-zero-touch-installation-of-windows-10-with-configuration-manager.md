@@ -154,15 +154,15 @@ Figure 7. The E:\\Sources\\OSD folder structure.
 ## <a href="" id="sec04"></a>Integrate Configuration Manager with MDT
 
 
-To extend the Configuration Manager console with MDT 2013 Update 2 wizards and templates, you install MDT 2013 Update 2 in the default location and run the integration setup. In these steps, we assume you have downloaded MDT 2013 Update 2 to the C:\\Setup\\MDT2013 folder on CM01.
+To extend the Configuration Manager console with MDT wizards and templates, you install MDT in the default location and run the integration setup. In these steps, we assume you have downloaded MDT to the C:\\Setup\\MDT2013 folder on CM01.
 
 1.  On CM01, log on as Administrator in the CONTOSO domain using the password **P@ssw0rd**.
 
 2.  Make sure the Configuration Manager Console is closed before continuing.
 
-3.  Using File Explorer, navigate to the **C:\\Setup\\MDT 2013** folder.
+3.  Using File Explorer, navigate to the **C:\\Setup\\MDT** folder.
 
-4.  Run the MDT 2013 setup (MicrosoftDeploymentToolkit2013\_x64.msi), and use the default options in the setup wizard.
+4.  Run the MDT setup (MicrosoftDeploymentToolkit2013\_x64.msi), and use the default options in the setup wizard.
 
 5.  From the Start screen, run Configure ConfigManager Integration with the following settings:
 
@@ -172,7 +172,7 @@ To extend the Configuration Manager console with MDT 2013 Update 2 wizards and t
 
 ![figure 8](images/mdt-06-fig08.png)
 
-Figure 8. Set up the MDT 2013 Update 2 integration with Configuration Manager.
+Figure 8. Set up the MDT integration with Configuration Manager.
 
 ## <a href="" id="sec06"></a>Configure the client settings
 
@@ -248,7 +248,7 @@ Configuration Manager has many options for starting a deployment, but starting v
 ## Related topics
 
 
-[Integrate Configuration Manager with MDT 2013 Update 2](integrate-configuration-manager-with-mdt-2013.md)
+[Integrate Configuration Manager with MDT](integrate-configuration-manager-with-mdt.md)
 
 [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)
 

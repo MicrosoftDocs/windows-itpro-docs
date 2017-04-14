@@ -38,6 +38,7 @@ For encrypting Remote Desktop Services network communication, this policy settin
 
 For BitLocker, this policy setting needs to be enabled before any encryption key is generated.
 Recovery passwords created on Windows Server 2012 R2 and Windows 8.1 and later when this policy is enabled are incompatible with BitLocker on operating systems prior to Windows Server 2012 R2 and Windows 8.1; BitLocker will prevent the creation or use of recovery passwords on these systems, so recovery keys should be used instead.
+Additionally, if a data drive is password-protected, it can be accessed by a FIPS-compliant computer after the password is supplied, but the drive will be read-only.
 
 ### Possible values
 

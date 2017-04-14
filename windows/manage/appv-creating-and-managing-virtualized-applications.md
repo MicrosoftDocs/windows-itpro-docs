@@ -68,7 +68,9 @@ The **Options** dialog box in the sequencer console contains the following tabs:
 
 App-V supports applications that include Microsoft Windows Services. If an application includes a Windows service, the Service will be included in the sequenced virtual package as long as it is installed while being monitored by the sequencer. If a virtual application creates a Windows service when it initially runs, then later, after installation, the application must be run while the sequencer is monitoring so that the Windows Service will be added to the package. Only Services that run under the Local System account are supported. Services that are configured for AutoStart or Delayed AutoStart are started before the first virtual application in a package runs inside the package’s Virtual Environment. Windows Services that are configured to be started on demand by an application are started when the virtual application inside the package starts the Service via API call.
 
-[How to Sequence a New Application with App-V](appv-sequence-a-new-application.md)
+- [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-provision-a-vm.md)
+- [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md)
+- [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md)
 
 ## <a href="" id="---------app-v-5-1-shell-extension-support"></a> App-V shell extension support
 
@@ -166,11 +168,7 @@ You can use the sequencer to modify an existing package. The computer on which y
 [How to Modify an Existing Virtual Application Package](appv-modify-an-existing-virtual-application-package.md)
 
 ## Creating a project template
-
-
-A .appvt file is a project template that can be used to save commonly applied, customized settings. You can then more easily use these settings for future sequencings.
-
-App-V project templates differ from App-V Application Accelerators because App-V Application Accelerators are application-specific, and App-V project templates can be applied to multiple applications. Additionally, you cannot use a project template when you use a Package Accelerator to create a virtual application package. The following general settings are saved with an App-V project template:
+An App-V project template (.appvt) file is a project template that can be used to save commonly applied, customized settings. You can then more easily use these settings for future sequencings. App-V project templates differ from App-V Application Accelerators because App-V Application Accelerators are application-specific, and App-V project templates can be applied to multiple applications. Additionally, you cannot use a project template when you use a Package Accelerator to create a virtual application package. The following general settings are saved with an App-V project template:
 
 A template can specify and store multiple settings as follows:
 
@@ -180,10 +178,15 @@ A template can specify and store multiple settings as follows:
 
 -   **Exclusion Items.** Contains the Exclusion pattern list.
 
+In Windows 10, version 1703, running the new-appvsequencerpackage or the update-appvsequencepackage cmdlets automatically captures and stores all of your customizations as an App-V project template. If you want to make changes to this package later, your customizations are automatically loaded from this template file. 
+
+>[!IMPORTANT]
+>If you have an auto-saved template and you attempt to load another template through the _TemplateFilePath_ parameter, the customization value from the parameter will override the auto-saved template. 
+
 [How to Create and Use a Project Template](appv-create-and-use-a-project-template.md)
 
-## Creating a package accelerator
 
+## Creating a package accelerator
 
 **Note**  
 Package accelerators created using a previous version of App-V must be recreated using App-V.

@@ -5,6 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
+keywords: deployment, automate, tools, configure, sccm, configuration manager
+localizationpriority: high
 author: greg-lindsay
 ---
 

@@ -26,39 +26,14 @@ This section addresses issues that might arise as you use the Windows Defender A
 If you encounter a server error when trying to access the service, you’ll need to change your browser cookie settings.
 Configure your browser to allow cookies.
 
-### No data is shown on the portal
-If no data is displayed on the Dashboard portal even if no errors were encountered in the portal logs or in the browser console, you'll need to whitelist the threat intelligence, data access, and detonation endpoints that also use this protocol.
+### Elements or data missing on the portal
+If some UI elements or data is missing on the Windows Defender ATP portal it’s possible that proxy settings are blocking it.
+
+Make sure that `*.securitycenter.windows.com` is included the proxy whitelist.
+
 
 > [!NOTE]
 > You must use the HTTPS protocol when adding the following endpoints.
-
-Depending on your region, add the following endpoints to the whitelist:
-
-U.S. region:
-
-- daasmon-cus-prd.cloudapp.net			
-- daasmon-eus-prd.cloudapp.net			
-- dataaccess-cus-prd.cloudapp.net			
-- dataaccess-eus-prd.cloudapp.net			
-- threatintel-cus-prd.cloudapp.net			
-- threatintel-eus-prd.cloudapp.net
-- winatpauthorization.windows.com
-- winatpfeedback.windows.com
-- winatpmanagement.windows.com
-- winatponboarding.windows.com
-- winatpservicehealth.windows.com
-
-EU region:
-
-- dataaccess-neu-prd.cloudapp.net
-- dataaccess-weu-prd.cloudapp.net
-- threatintel-neu-prd.cloudapp.net
-- threatintel-weu-prd.cloudapp.net
-- winatpauthorization.windows.com
-- winatpfeedback.windows.com
-- winatpmanagement.windows.com
-- winatponboarding.windows.com
-- winatpservicehealth.windows.com
 
 ### Windows Defender ATP service shows event or error logs in the Event Viewer
 

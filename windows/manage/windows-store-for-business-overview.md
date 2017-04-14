@@ -18,12 +18,12 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-With the new Windows Store for Business, organizations can make volume purchases of Windows apps. The Store for Business provides app purchases based on organizational identity, flexible distribution options, and the ability to reclaim or re-use licenses. Organizations can also use the Store for Business to create a private store for their employees that includes apps from the Store, as well private Line-of-Business (LOB) apps.
+With Windows Store for Business, organizations can make volume purchases of Windows apps. The Store for Business provides app purchases based on organizational identity, flexible distribution options, and the ability to reclaim or re-use licenses. Organizations can also use the Store for Business to create a private store for their employees that includes apps from the Store, as well private Line-of-Business (LOB) apps.
 
 ## Features
 
 
-Organizations of any size can benefit from using the Store for Business provides:
+Organizations of any size can benefit from using the Store for Business:
 
 -   **Scales to fit the size of your business** - For smaller businesses, with Azure AD accounts and Windows 10 devices, you can quickly have an end-to-end process for acquiring and distributing content using the Store for Business. For larger businesses, all the capabilities of the Store for Business are available to you, or you can integrate the Store for Business with management tools, for greater control over access to apps and app updates. You can use existing work or school accounts.
 
@@ -46,7 +46,6 @@ Organizations of any size can benefit from using the Store for Business provides
 -   **Up-to-date apps** - The Store for Business manages the update process for apps with online licenses. Apps are automatically updated so you are always current with the most recent software updates and product features. Store for Business apps also uninstall cleanly, without leaving behind extra files, for times when you need to switch apps for specific employees.
 
 ## Prerequisites
-
 
 You'll need this software to work with the Store for Business.
 
@@ -78,7 +77,6 @@ While not required, you can use a management tool to distribute and manage apps.
 
 ## How does the Store for Business work?
 
-
 ### Sign up!
 
 The first step for getting your organization started with the Store for Business is signing up. To sign up for the Business store, you need an Azure AD account and you must be a Global Administrator for your organization.
@@ -89,50 +87,12 @@ For more information, see [Sign up for the Store for Business](../manage/sign-up
 
 After your admin signs up for the Store for Business, they can assign roles to other employees in your company. The admin needs Azure AD User Admin permissions to assign WSFB roles. These are the roles and their permissions.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Permission</th>
-<th align="left">Account settings</th>
-<th align="left">Acquire apps</th>
-<th align="left">Distribute apps</th>
-<th align="left">Device Guard signing</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Admin</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Purchaser</p></td>
-<td align="left"></td>
-<td align="left"><p>X</p></td>
-<td align="left"><p>X</p></td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Device Guard signer</p></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>X</p></td>
-</tr>
-</tbody>
-</table>
-
+| Permission | Account settings | Acquire apps | Distribute apps | Device Guard signing |
+| ---------- | ---------------- | ------------ | --------------- | -------------------- |
+| Admin | X | X | X |  |
+| Purchaser |  | X | X |  |
+| Device Guard signer |  |  |  | X |
  
-
 In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](../manage/manage-users-and-groups-windows-store-for-business.md).
 
 Also, if your organization plans to use a management tool, you’ll need to configure your management tool to sync with the Store for Business.
@@ -292,6 +252,7 @@ Store for Business is currently available in these markets.
             <li>Luxembourg</li>
             <li>Malaysia</li>
             <li>Malta</li>
+            <li>Mauritius</li>
             <li>Mexico</li>
             <li>Mongolia</li>
             <li>Montenegro</li>
@@ -313,12 +274,12 @@ Store for Business is currently available in these markets.
             <li>Portugal</li>
             <li>Puerto Rico</li>
             <li>Qatar</li>
-            <li>Romania</li>
-            <li>Rwanda</li>
+            <li>Romania</li>          
         </ul>
     </td>
     <td>
         <ul>
+            <li>Rwanda</li>
             <li>Saint Kitts and Nevis</li>
             <li>Saudi Arabia</li>
             <li>Senegal</li>
@@ -343,8 +304,7 @@ Store for Business is currently available in these markets.
             <li>Viet Nam</li>
             <li>Virgin Islands, U.S.</li>
             <li>Zambia</li>
-            <li>Zimbabwe<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</li>
-            
+            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>           
         </ul>
     </td>
    </tr>
@@ -367,7 +327,19 @@ Store for Business is currently available in these markets.
    </tr>
 </table>
 
-  
+## Privacy notice
+
+Microsoft Store for Business services get names and email addresses of people in your organization from Azure Active Directory. This information is needed for these admin functions:
+- Granting and managing permissions
+- Managing app licenses 
+- Distributing apps to people (names appear in a list that admins can select from)
+ 
+Store for Business does not save names, or email addresses.
+
+Your use of Store for Business is also governed by the Store for Business Terms of Use. 
+
+Information sent to Store for Business is subject to the [Store for Business Privacy Statement](https://privacy.microsoft.com/privacystatement/).
+
 ## <a href="" id="isv-wsfb"></a>ISVs and the Store for Business
 
 

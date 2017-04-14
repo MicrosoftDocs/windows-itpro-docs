@@ -267,6 +267,9 @@ The current volume level is a range from 0 to 100.
 
 Changes to volume levels can be sent by a room control system, or other system.
 
+>[!NOTE]
+>The Volume command will only control the volume for embedded or Replacement PC mode, not from [Guest sources](connect-and-display-with-surface-hub.md).
+
 <table>
 <colgroup>
 <col width="33%" />
@@ -277,7 +280,7 @@ Changes to volume levels can be sent by a room control system, or other system.
 <tr class="header">
 <th align="left">Command</th>
 <th align="left">State change</th>
-<th align="left">Response</th>
+<th align="left">Response</br>(On in [Replacement PC mode](connect-and-display-with-surface-hub.md#replacement-pc-mode))</th>
 </tr>
 </thead>
 <tbody>

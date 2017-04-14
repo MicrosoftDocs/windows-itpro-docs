@@ -81,10 +81,11 @@ Before you deploy Office by using App-V, review the following requirements.
 <tbody>
 <tr class="odd">
 <td align="left"><p>Packaging</p></td>
-<td align="left"><ul>
+<td align="left">
+<ul>
 <li><p>All of the Office applications that you want to deploy to users must be in a single package.</p></li>
 <li><p>In App-V 5.0 and later, you must use the Office Deployment Tool to create packages. You cannot use the Sequencer.</p></li>
-<li><p>If you are deploying Microsoft Visio 2016 and Microsoft Project 2016 along with Office, you must include them in the same package with Office. For more information, see [Deploying Visio 2016 and Project 2016 with Office](#bkmk-deploy-visio-project).</p></li>
+<li><p>If you are deploying Microsoft Visio 2016 and Microsoft Project 2016 along with Office, you must include them in the same package with Office. For more information, see [Deploying Visio 2016 and Project 2016 with Office](#deploying-visio-2016-and-project-2016-with-office).</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -102,12 +103,7 @@ Before you deploy Office by using App-V, review the following requirements.
 <li><p>Project Pro for Office 365</p></li>
 </ul></td>
 <td align="left"><p>You must enable [shared computer activation](http://technet.microsoft.com/library/dn782860.aspx).</p>
-<p>You don’t use shared computer activation if you’re deploying a volume licensed product, such as:</p>
-<ul>
-<li><p>Office Professional Plus 2016</p></li>
-<li><p>Visio Professional 2016</p></li>
-<li><p>Project Professional 2016</p></li>
-</ul></td>
+</td>
 </tr>
 </tbody>
 </table>
@@ -154,9 +150,7 @@ The following table describes the recommended methods for excluding specific Off
 
 Complete the following steps to create an Office 2016 package for App-V 5.0 or later.
 
-**Important**  
-In App-V 5.0 and later, you must the Office Deployment Tool to create a package. You cannot use the Sequencer to create packages.
-
+>**Important**&nbsp;&nbsp;In App-V 5.0 and later, you must use the Office Deployment Tool to create a package. You cannot use the Sequencer to create packages.
 
 ### Review prerequisites for using the Office Deployment Tool
 
@@ -190,13 +184,12 @@ The computer on which you are installing the Office Deployment Tool must have:
 </table>
 
 
-**Note**  
-In this topic, the term “Office 2016 App-V package” refers to subscription licensing and volume licensing.
+>**Note**  In this topic, the term “Office 2016 App-V package” refers to subscription licensing.
  
 
 ### Create Office 2016 App-V Packages Using Office Deployment Tool
 
-You create Office 2016 App-V packages by using the Office Deployment Tool. The following instructions explain how to create an Office 2016 App-V package with Volume Licensing or Subscription Licensing.
+You create Office 2016 App-V packages by using the Office Deployment Tool. The following instructions explain how to create an Office 2016 App-V package with Subscription Licensing.
 
 Create Office 2016 App-V packages on 64-bit Windows computers. Once created, the Office 2016 App-V package will run on 32-bit and 64-bit Windows 7, Windows 8.1, and Windows 10 computers.
 
@@ -206,6 +199,7 @@ Office 2016 App-V Packages are created using the Office Deployment Tool, which g
 
 1.  Download the [Office 2016 Deployment Tool for Click-to-Run](https://www.microsoft.com/download/details.aspx?id=49117).
 
+>**Important** You must use the Office 2016 Deployment Tool to create Office 2016 App-V Packages.
 2.  Run the .exe file and extract its features into the desired location. To make this process easier, you can create a shared network folder where the features will be saved.
 
     Example: \\\\Server\\Office2016
@@ -237,8 +231,7 @@ The XML file that is included in the Office Deployment Tool specifies the produc
         </Configuration>
         ```
 
-        **Note**  
-        The configuration XML is a sample XML file. The file includes lines that are commented out. You can “uncomment” these lines to customize additional settings with the file. To “uncomment” these lines, remove the "<! - -" from the beginning of the line, and the "-- >" from the end of the line.
+        >**Note**  The configuration XML is a sample XML file. The file includes lines that are commented out. You can “uncomment” these lines to customize additional settings with the file. To “uncomment” these lines, remove the "<! - -" from the beginning of the line, and the "-- >" from the end of the line.
 
         The above XML configuration file specifies that Office 2016 ProPlus 32-bit edition, including Visio ProPlus, will be downloaded in English to the \\\\server\\Office 2016, which is the location where Office applications will be saved to. Note that the Product ID of the applications will not affect the final licensing of Office. Office 2016 App-V packages with various licensing can be created from the same applications through specifying licensing in a later stage. The table below summarizes the customizable attributes and elements of XML file:
 
@@ -269,13 +262,14 @@ The XML file that is included in the Office Deployment Tool specifies the produc
         </tr>
         <tr class="odd">
         <td align="left"><p>Product element</p></td>
-        <td align="left"><p>Specifies the application. Project 2016 and Visio 2016 must be specified here as an added product to be included in the applications.</p></td>
+        <td align="left"><p>Specifies the application. Project 2016 and Visio 2016 must be specified here as an added product to be included in the applications.
+
+        For more information about the product IDs, see [Product IDs that are supported by the Office Deployment Tool for Click-to-Run](https://support.microsoft.com/kb/2842297)
+        </p></td>
         <td align="left"><p><code>Product ID =&quot;O365ProPlusRetail &quot;</code></p>
         <p><code>Product ID =&quot;VisioProRetail&quot;</code></p>
         <p><code>Product ID =&quot;ProjectProRetail&quot;</code></p>
-        <p><code>Product ID =&quot;ProPlusVolume&quot;</code></p>
-        <p><code>Product ID =&quot;VisioProVolume&quot;</code></p>
-        <p><code>Product ID = &quot;ProjectProVolume&quot;</code></p></td>
+        </td>
         </tr>
         <tr class="even">
         <td align="left"><p>Language element</p></td>
@@ -286,7 +280,7 @@ The XML file that is included in the Office Deployment Tool specifies the produc
         <td align="left"><p>Version (attribute of Add element)</p></td>
         <td align="left"><p>Optional. Specifies a build to use for the package</p>
         <p>Defaults to latest advertised build (as defined in v32.CAB at the Office source).</p></td>
-        <td align="left"><p><code>15.1.2.3</code></p></td>
+        <td align="left"><p><code>16.1.2.3</code></p></td>
         </tr>
         <tr class="even">
         <td align="left"><p>SourcePath (attribute of Add element)</p></td>
@@ -303,7 +297,7 @@ The XML file that is included in the Office Deployment Tool specifies the produc
 
         After editing the configuration.xml file to specify the desired product, languages, and also the location which the Office 2016 applications will be saved onto, you can save the configuration file, for example, as Customconfig.xml.
 
-2.  **Download the applications into the specified location:** Use an elevated command prompt and a 64 bit operating system to download the Office 2016 applications that will later be converted into an App-V package. Below is an example command with description of details:
+2.  **Download the applications into the specified location:** Use an elevated command prompt and a 64 bit operating system to download the Office 2016 applications that will later be converted into an App-V package. Below is an example command with a description of details:
 
     ``` syntax
     \\server\Office2016\setup.exe /download \\server\Office2016\Customconfig.xml
@@ -346,41 +340,35 @@ After you download the Office 2016 applications through the Office Deployment To
 
 -   Create the Office 2016 App-V packages on 64-bit Windows computers. However, the package will run on 32-bit and 64-bit Windows 7, Windows 8 or 8.1, and Windows 10 computers.
 
--   Create an Office App-V package for either Subscription Licensing package or Volume Licensing by using the Office Deployment Tool, and then modify the CustomConfig.xml configuration file.
+-   Create an Office App-V package for Subscription Licensing package by using the Office Deployment Tool, and then modify the CustomConfig.xml configuration file.
 
     The following table summarizes the values you need to enter in the CustomConfig.xml file for the licensing model you’re using. The steps in the sections that follow the table will specify the exact entries you need to make.
 
+>**Note**&nbsp;&nbsp;You can use the Office Deployment Tool to create App-V packages for Office 365 ProPlus. Creating packages for the volume-licensed versions of Office Professional Plus or Office Standard is not supported.
+
 <table>
 <colgroup>
-<col width="33%" />
 <col width="33%" />
 <col width="33%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th align="left">Product ID</th>
-<th align="left">Volume Licensing</th>
 <th align="left">Subscription Licensing</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Office 2016</strong></p></td>
-<td align="left"><p>ProPlusVolume</p></td>
 <td align="left"><p>O365ProPlusRetail</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Office 2016 with Visio 2016</strong></p></td>
-<td align="left"><p>ProPlusVolume</p>
-<p>VisioProVolume</p></td>
 <td align="left"><p>O365ProPlusRetail</p>
 <p>VisioProRetail</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Office 2016 with Visio 2016 and Project 2016</strong></p></td>
-<td align="left"><p>ProPlusVolume</p>
-<p>VisioProVolume</p>
-<p>ProjectProVolume</p></td>
 <td align="left"><p>O365ProPlusRetail</p>
 <p>VisioProRetail</p>
 <p>ProjectProRetail</p></td>
@@ -412,9 +400,7 @@ After you download the Office 2016 applications through the Office Deployment To
     </tr>
     <tr class="even">
     <td align="left"><p>ProductID</p></td>
-    <td align="left"><p>Specify the type of licensing, as shown in the following examples:</p>
-    <ul>
-    <li><p>Subscription Licensing</p>
+    <td align="left"><p>Specify Subscription licensing, as shown in the following example:</p>
     <pre class="syntax" space="preserve"><code>&lt;Configuration&gt;
        &lt;Add SourcePath= &quot;\\server\Office 2016&quot; OfficeClientEdition=&quot;32&quot; &gt;
         &lt;Product ID=&quot;O365ProPlusRetail&quot;&gt;
@@ -446,44 +432,7 @@ After you download the Office 2016 applications through the Office Deployment To
     </tr>
     </tbody>
     </table>
-    <p> </p>
-    <p></p></li>
-    <li><p>Volume Licensing</p>
-    <pre class="syntax" space="preserve"><code>&lt;Configuration&gt;
-       &lt;Add SourcePath= &quot;\\Server\Office2016&quot; OfficeClientEdition=&quot;32&quot; &gt;
-        &lt;Product ID=&quot;ProPlusVolume&quot;&gt;
-          &lt;Language ID=&quot;en-us&quot; /&gt;
-        &lt;/Product&gt;
-        &lt;Product ID=&quot;VisioProVolume&quot;&gt;
-          &lt;Language ID=&quot;en-us&quot; /&gt;
-        &lt;/Product&gt;
-      &lt;/Add&gt;  
-    &lt;/Configuration&gt;</code></pre>
-    <p>In this example, the following changes were made to create a package with Volume licensing:</p>
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><strong>SourcePath</strong></p></td>
-    <td align="left"><p>is the path, which was changed to point to the Office applications that were downloaded earlier.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>Product ID</strong></p></td>
-    <td align="left"><p>for Office was changed to <code>ProPlusVolume</code>.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>Product ID</strong></p></td>
-    <td align="left"><p>for Visio was changed to <code>VisioProVolume</code>.</p></td>
-    </tr>
-    </tbody>
-    </table>
-    <p> </p>
-    <p></p></li>
-    </ul></td>
-    </tr>
+    <p></p>
     <tr class="odd">
     <td align="left"><p>ExcludeApp (optional)</p></td>
     <td align="left"><p>Lets you specify Office programs that you don’t want included in the App-V package that the Office Deployment Tool creates. For example, you can exclude Access and InfoPath.</p></td>
@@ -492,13 +441,8 @@ After you download the Office 2016 applications through the Office Deployment To
     <td align="left"><p>PACKAGEGUID (optional)</p></td>
     <td align="left"><p>By default, all App-V packages created by the Office Deployment Tool share the same App-V Package ID. You can use PACKAGEGUID to specify a different package ID for each package, which allows you to publish multiple App-V packages, created by the Office Deployment Tool, and manage them by using the App-V Server.</p>
     <p>An example of when to use this parameter is if you create different packages for different users. For example, you can create a package with just Office 2016 for some users, and create another package with Office 2016 and Visio 2016 for another set of users.</p>
-    <div class="alert">
-    <strong>Note</strong>  
-    <p>Even if you use unique package IDs, you can still deploy only one App-V package to a single device.</p>
-    </div>
-    <div>
-     
-    </div></td>
+>**Note** Even if you use unique package IDs, you can still deploy only one App-V package to a single device.
+    </td>
     </tr>
     </tbody>
     </table>
@@ -531,7 +475,7 @@ After you download the Office 2016 applications through the Office Deployment To
     </tr>
     <tr class="odd">
     <td align="left"><p><strong>/packager</strong></p></td>
-    <td align="left"><p>creates the Office 2016 App-V package with Volume Licensing as specified in the customConfig.xml file.</p></td>
+    <td align="left"><p>creates the Office 2016 App-V package with the type of licensing specified in the customConfig.xml file.</p></td>
     </tr>
     <tr class="even">
     <td align="left"><p><strong>\\server\Office2016\Customconfig.xml</strong></p></td>
@@ -552,8 +496,7 @@ After you download the Office 2016 applications through the Office Deployment To
 
     -   **WorkingDir**
 
-    **Note**  
-    To troubleshoot any issues, see the log files in the %temp% directory (default).
+    **Note** To troubleshoot any issues, see the log files in the %temp% directory (default).
 
      
 
@@ -563,7 +506,7 @@ After you download the Office 2016 applications through the Office Deployment To
 
     2.  Start a few Office 2016 applications, such as Excel or Word, to ensure that your package is working as expected.
 
-## <a href="" id="bkmk-pub-pkg-office"></a>Publishing the Office package for App-V 5.0
+## <a href="" id="bkmk-pub-pkg-office"></a>Publishing the Office package for App-V
 
 
 Use the following information to publish an Office package.
@@ -629,8 +572,6 @@ To manage your Office App-V packages, use the same operations as you would for a
 
 -   [Managing Office 2016 package upgrades](#bkmk-manage-office-pkg-upgrd)
 
--   [Managing Office 2016 licensing upgrades](#bkmk-manage-office-lic-upgrd)
-
 -   [Deploying Visio 2016 and Project 2016 with Office](#bkmk-deploy-visio-project)
 
 ### <a href="" id="bkmk-enable-office-plugins"></a>Enabling Office plug-ins by using connection groups
@@ -641,16 +582,15 @@ Use the steps in this section to enable Office plug-ins with your Office package
 
 1.  Add a Connection Group through App-V Server, System Center Configuration Manager, or a PowerShell cmdlet.
 
-2.  Sequence your plug-ins using the App-V 5.0 Sequencer. Ensure that Office 2016 is installed on the computer being used to sequence the plug-in. It is recommended you use Office 365 ProPlus(non-virtual) on the sequencing computer when you sequence Office 2016 plug-ins.
+2.  Sequence your plug-ins using the App-V Sequencer. Ensure that Office 2016 is installed on the computer being used to sequence the plug-in. It is recommended you use Office 365 ProPlus(non-virtual) on the sequencing computer when you sequence Office 2016 plug-ins.
 
-3.  Create an App-V 5.0 package that includes the desired plug-ins.
+3.  Create an App-V package that includes the desired plug-ins.
 
 4.  Add a Connection Group through App-V server, System Center Configuration Manager, or a PowerShell cmdlet.
 
 5.  Add the Office 2016 App-V package and the plug-ins package you sequenced to the Connection Group you created.
 
-    **Important**  
-    The order of the packages in the Connection Group determines the order in which the package contents are merged. In your Connection group descriptor file, add the Office 2016 App-V package first, and then add the plug-in App-V package.
+    >**Important** The order of the packages in the Connection Group determines the order in which the package contents are merged. In your Connection group descriptor file, add the Office 2016 App-V package first, and then add the plug-in App-V package.
 
      
 
@@ -672,8 +612,7 @@ Use the steps in this section to enable Office plug-ins with your Office package
 
 You may want to disable specific applications in your Office App-V package. For instance, you can disable Access, but leave all other Office application main available. When you disable an application, the end user will no longer see the shortcut for that application. You do not have to re-sequence the application. When you change the Deployment Configuration File after the Office 2016 App-V package has been published, you will save the changes, add the Office 2016 App-V package, and then republish it with the new Deployment Configuration File to apply the new settings to Office 2016 App-V Package applications.
 
-**Note**  
-To exclude specific Office applications (for example, Access and InfoPath) when you create the App-V package with the Office Deployment Tool, use the **ExcludeApp** setting.
+>**Note** To exclude specific Office applications (for example, Access and InfoPath) when you create the App-V package with the Office Deployment Tool, use the **ExcludeApp** setting.
  
 
 **To disable an Office 2016 application**
@@ -752,36 +691,17 @@ To upgrade an Office 2016 package, use the Office Deployment Tool. To upgrade a 
 
 1.  Create a new Office 2016 package through the Office Deployment Tool that uses the most recent Office 2016 application software. The most recent Office 2016 bits can always be obtained through the download stage of creating an Office 2016 App-V Package. The newly created Office 2016 package will have the most recent updates and a new Version ID. All packages created using the Office Deployment Tool have the same lineage.
 
-    **Note**  
-    Office App-V packages have two Version IDs:
-
-    -   An Office 2016 App-V Package Version ID that is unique across all packages created using the Office Deployment Tool.
-
-    -   A second App-V Package Version ID, x.x.x.x for example, in the AppX manifest that will only change if there is a new version of Office itself. For example, if a new Office 2016 release with upgrades is available, and a package is created through the Office Deployment Tool to incorporate these upgrades, the X.X.X.X version ID will change to reflect that the Office version itself has changed. The App-V server will use the X.X.X.X version ID to differentiate this package and recognize that it contains new upgrades to the previously published package, and as a result, publish it as an upgrade to the existing Office 2016 package.
-
+    >**Note** Office App-V packages have two Version IDs:
+    <ul>
+    <li>An Office 2016 App-V Package Version ID that is unique across all packages created using the Office Deployment Tool.</li>
+    <li>A second App-V Package Version ID, x.x.x.x for example, in the AppX manifest that will only change if there is a new version of Office itself. For example, if a new Office 2016 release with upgrades is available, and a package is created through the Office Deployment Tool to incorporate these upgrades, the X.X.X.X version ID will change to reflect that the Office version itself has changed. The App-V server will use the X.X.X.X version ID to differentiate this package and recognize that it contains new upgrades to the previously published package, and as a result, publish it as an upgrade to the existing Office 2016 package.</li>
+    </ul>
      
 
 2.  Globally publish the newly created Office 2016 App-V Packages onto computers where you would like to apply the new updates. Since the new package has the same lineage of the older Office 2016 App-V Package, publishing the new package with the updates will only apply the new changes to the old package, and thus will be fast.
 
 3.  Upgrades will be applied in the same manner of any globally published App-V Packages. Because applications will probably be in use, upgrades might be delayed until the computer is rebooted.
 
-### <a href="" id="bkmk-manage-office-lic-upgrd"></a>Managing Office 2016 licensing upgrades
-
-If a new Office 2016 App-V Package has a different license than the Office 2016 App-V Package currently deployed. For instance, the Office 2016 package deployed is a subscription based Office 2016 and the new Office 2016 package is Volume Licensing based, the following instructions must be followed to ensure smooth licensing upgrade:
-
-**How to upgrade an Office 2016 License**
-
-1.  Unpublish the already deployed Office 2016 Subscription Licensing App-V package.
-
-2.  Remove the unpublished Office 2016 Subscription Licensing App-V package.
-
-3.  Restart the computer.
-
-4.  Add the new Office 2016 App-V Package Volume Licensing.
-
-5.  Publish the added Office 2016 App-V Package with Volume Licensing.
-
-An Office 2016 App-V Package with your chosen licensing will be successfully deployed.
 
 ### <a href="" id="bkmk-deploy-visio-project"></a>Deploying Visio 2016 and Project 2016 with Office
 
@@ -802,7 +722,7 @@ The following table describes the requirements and options for deploying Visio 2
 <tr class="odd">
 <td align="left"><p>How do I package and publish Visio 2016 and Project 2016 with Office?</p></td>
 <td align="left"><p>You must include Visio 2016 and Project 2016 in the same package with Office.</p>
-<p>If you aren’t deploying Office, you can create a package that contains Visio and/or Project, as long as you follow [Deploying Microsoft Office 2010 by Using App-V](../appv-v5/deploying-microsoft-office-2010-by-using-app-v.md).</p></td>
+<p>If you aren’t deploying Office, you can create a package that contains Visio and/or Project, as long as you follow the packaging, publishing, and deployment requirements described in this topic.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>How can I deploy Visio 2016 and Project 2016 to specific users?</p></td>
@@ -848,17 +768,11 @@ The following table describes the requirements and options for deploying Visio 2
 ## Additional resources
 
 
-**Office 2016 App-V 5.0 Packages 5.0 Additional Resources**
-
-[Office 2016 Deployment Tool for Click-to-Run](https://www.microsoft.com/download/details.aspx?id=49117)
-
-[Supported scenarios for deploying Microsoft Office as a sequenced App-V Package](https://go.microsoft.com/fwlink/p/?LinkId=330680)
-
-**Office 2013 and Office 2010 App-V Packages**
-
 [Deploying Microsoft Office 2013 by Using App-V](deploying-microsoft-office-2013-by-using-app-v.md)
 
-[Deploying Microsoft Office 2011 by Using App-V](deploying-microsoft-office-2010-by-using-app-v.md)
+[Deploying Microsoft Office 2010 by Using App-V](deploying-microsoft-office-2010-by-using-app-v.md)
+
+[Office 2016 Deployment Tool for Click-to-Run](https://www.microsoft.com/download/details.aspx?id=49117)
 
 **Connection Groups**
 
@@ -868,7 +782,7 @@ The following table describes the requirements and options for deploying Visio 2
 
 **Dynamic Configuration**
 
-[About App-V 5.0 Dynamic Configuration](about-app-v-50-dynamic-configuration.md)
+[About App-V 5.1 Dynamic Configuration](about-app-v-51-dynamic-configuration.md)
 
 ## Got a suggestion for App-V?
 

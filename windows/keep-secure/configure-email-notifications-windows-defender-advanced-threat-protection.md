@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Configure email notifications
+# Configure email notifications in Windows Defender ATP
 
 **Applies to:**
 
@@ -41,10 +41,15 @@ The email notifications feature is turned off by default. Turn it on to start re
   - **High** – Select this level to send notifications for high-severity alerts.
   - **Medium** – Select this level to send notifications for medium-severity alerts.
   - **Low** - Select this level to send notifications for low-severity alerts.
+  - **Informational** - Select this level to send notification for alerts that might not be considered harmful but good to keep track of.
 4.	In **Email recipients to notify on new alerts**, type the email address then select the + sign.
 5.	Click **Save preferences** when you’ve completed adding all the recipients.
 
 Check that email recipients are able to receive the email notifications by selecting **Send test email**. All recipients in the list will receive the test email.
+
+Here's an example email notification:
+
+![Image of example email notification](images/atp-example-email-notification.png)
 
 ## Remove email recipients
 
@@ -61,3 +66,8 @@ This section lists various issues that you may encounter when using email notifi
 1.	Check that the Windows Defender ATP email notifications are not sent to the Junk Email folder. Mark them as Not junk.
 2.	Check that your email security product is not blocking the email notifications from Windows Defender ATP.
 3.	Check your email application rules that might be catching and moving your Windows Defender ATP email notifications.
+
+## Related topics
+- [Update general settings in Windows Defender ATP](general-settings-windows-defender-advanced-threat-protection.md)
+- [Turn on advanced features in Windows Defender ATP](advanced-features-windows-defender-advanced-threat-protection.md)
+- [Turn on the preview experience in Windows Defender ATP](preview-settings-windows-defender-advanced-threat-protection.md)

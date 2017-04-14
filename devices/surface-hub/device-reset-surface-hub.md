@@ -31,9 +31,11 @@ Initiating a reset will return the device to the last cumulative Windows update,
 -   Configurations from MDM or the Settings app
 
 > [!IMPORTANT]
-> Performing a device reset may take up to 2 hours. Do not interrupt the reset process. Interrupting the process will render the device inoperable, requiring warranty service to return to normal functionality.
+> Performing a device reset may take up to 6 hours. Do not turn off or unplug the Surface Hub until the process has completed. Interrupting the process will render the device inoperable, requiring warranty service to return to normal functionality.
 
-After the reset, Surface Hub restarts the [first run program](first-run-program-surface-hub.md) again. 
+After the reset, Surface Hub restarts the [first run program](first-run-program-surface-hub.md) again. If the Surface Hub displays a Welcome screen, that indicates that the reset encountered a problem and rolled back to the previously existing OS image.
+
+If you see a blank screen for long periods of time during the **Reset device** process, please wait and do not take any action. 
 
 
 ## Reset a Surface Hub from Settings

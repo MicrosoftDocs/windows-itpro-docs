@@ -11,6 +11,11 @@ ms.sitesec: library
 # Change history for Internet Explorer 11
 This topic lists new and updated topics in the Internet Explorer 11 documentation for both Windows 10 and Windows 10 Mobile.
 
+## March 2017
+|New or changed topic | Description |
+|----------------------|-------------|
+|[New group policy settings for Internet Explorer 11](new-group-policy-settings-for-ie11.md) |Updated to add the Allow VBScript to run in Internet Explorer and the Hide the button (next to the New Tab button) that opens Microsoft Edge settings. |
+
 ## November 2016
 |New or changed topic | Description |
 |----------------------|-------------|

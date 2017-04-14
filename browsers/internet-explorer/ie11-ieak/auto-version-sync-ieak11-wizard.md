@@ -27,7 +27,7 @@ The **Automatic Version Synchronization** page tells you:
 -   **Disk space available**. The amount of hard drive space available on the computer that’s running the IE Customization Wizard 11.
 
 
-![](images/wedge.gif) **To use the Automatic Version Synchronization page**
+**To use the Automatic Version Synchronization page**
 
 1.  Click **Synchronize**.<p>
 You might receive a security warning before downloading your Setup file, asking if you want to continue. Click **Run** to continue.

@@ -38,7 +38,7 @@ In this topic, you will create a backup-only task sequence that you run on PC000
 
 4.  On the **Boot Image** page, browse and select the **Zero Touch WinPE x64** boot image package. Then click **Next**.
 
-5.  On the **MDT Package** page, browse and select the **OSD / MDT 2013** package. Then click **Next**.
+5.  On the **MDT Package** page, browse and select the **OSD / MDT** package. Then click **Next**.
 
 6.  On the **USMT Package** page, browse and select the O**SD / Microsoft Corporation User State Migration Tool for Windows 8 10.0.10240.16384** package. Then click **Next**.
 
@@ -204,7 +204,7 @@ When the process is complete, you will have a new Windows 10 machine in your dom
 ## Related topics
 
 
-[Integrate Configuration Manager with MDT 2013 Update 2](integrate-configuration-manager-with-mdt-2013.md)
+[Integrate Configuration Manager with MDT](integrate-configuration-manager-with-mdt.md)
 
 [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
 

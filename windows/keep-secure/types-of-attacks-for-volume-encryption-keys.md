@@ -14,7 +14,7 @@ author: brianlic-msft
 **Applies to**
 -   Windows 10
 
-There are many ways Windows helps protect your organization from attacks, including Unified Extensible Firmware Interface (UEFI) secure boot, Trusted Platform Module (TPM), Group Policy, complex passwords, and account lockouts.
+There are many ways Windows helps protect your organization from attacks, including Unified Extensible Firmware Interface (UEFI) Secure Boot, Trusted Platform Module (TPM), Group Policy, complex passwords, and account lockouts.
 
 The next few sections describe each type of attack that could be used to compromise a volume encryption key, whether for BitLocker or a non-Microsoft encryption solution. After an attacker has compromised a volume encryption key, the attacker can read data from your system drive or even install malware while Windows is offline. Each section begins with a graphical overview of the attack’s strengths and weaknesses as well as suggested mitigations.
 
@@ -40,7 +40,7 @@ Although password protection of the UEFI configuration is important for protecti
 
 For this reason, when BitLocker is configured on devices that include a TPM, the TPM and its PCRs are always used to secure and confirm the integrity of the pre–operating system environment before making encrypted volumes accessible.
 
-Any changes to the UEFI configuration invalidates the PCR7 and require the user to enter the BitLocker recovery key. Because of this feature, it’s not critical to password-protect your UEFI configuration. If an attacker successfully turns off Secure Boot or otherwise changes the UEFI configuration, they will need to enter the BitLocker recovery key, but UEFI password protection is a best practice and is still required for systems not using a TPM (such as non-Microsoft alternatives).
+Any change to the UEFI configuration invalidates the PCR7 and requires the user to enter the BitLocker recovery key. Because of this feature, it’s not critical to password-protect your UEFI configuration. But UEFI password protection is a best practice and is still required for systems not using a TPM (such as non-Microsoft alternatives).
 
 ### Brute-force Sign-in Attacks
 

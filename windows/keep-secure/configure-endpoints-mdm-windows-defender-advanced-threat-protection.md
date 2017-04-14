@@ -1,5 +1,5 @@
 ---
-title: Configure Windows Defender ATP endpoints using Mobile Device Management tools
+title: Configure endpoints using Mobile Device Management tools
 description: Use Mobile Device Management tools to deploy the configuration package on endpoints so that they are onboarded to the service.
 keywords: configure endpoints using mdm, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints, mdm
 search.product: eADQiWindows 10XVcnh
@@ -92,10 +92,11 @@ Health Status for onboarded machines: Sense Is Running | ./Device/Vendor/MSFT/Wi
 Health Status for onboarded machines: Onboarding State | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OnBoardingState | Integer | 1 | Onboarded to Windows Defender ATP
 Health Status for onboarded machines: Organization ID | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/HealthState/OrgId | String | Use OrgID from onboarding file | Onboarded to Organization ID
 Configuration for onboarded machines  | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/SampleSharing | Integer | 0 or 1 <br> Default value: 1 | Windows Defender ATP Sample sharing is enabled
-
+Configuration for onboarded machines: telemetry reporting frequency | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/TelemetryReportingFrequency | Integer | 1 or 2 <br> 1: Normal (default)<br><br> 2: Expedite | Windows Defender ATP telemetry reporting
 
 > [!NOTE]
-> The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.
+> - The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.
+> - Configuration of telemetry reporting frequency is only available for machines on Windows 10, version 1703.
 
 ### Offboard and monitor endpoints
 
@@ -108,7 +109,9 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
     a. Click **Endpoint Management** on the **Navigation pane**.
 
-    b. Under **Endpoint offboarding** section, select **Mobile Device Management /Microsoft Intune**, click **Download package** and save the .zip file.
+    b. Click the **Endpoint offboarding** section.
+
+    c. Select **Mobile Device Management /Microsoft Intune**, click **Download package** and save the .zip file.
 
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding*.
 

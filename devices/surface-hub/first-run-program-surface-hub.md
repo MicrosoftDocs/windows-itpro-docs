@@ -60,7 +60,8 @@ If the default values shown are correct, then you can click **Next** to go on. O
 
 ### What happens?
 
->**Note**  Once the settings on this page are entered, you can't come back to this screen unless you reset the device (see [Device reset](device-reset-suface-hub.md)). Make sure that the settings are properly configured before proceeding.
+>[!NOTE]
+> Once the settings on this page are entered, you can't come back to this screen unless you reset the device (see [Device reset](device-reset-surface-hub.md)). Make sure that the settings are properly configured before proceeding.
 
  
 

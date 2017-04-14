@@ -138,10 +138,10 @@ During a computer replace, these are the high-level steps that occur:
 
 [Create a Windows 10 reference image](create-a-windows-10-reference-image.md)
 
-[Deploy a Windows 10 image using MDT 2013 Update 2](deploy-a-windows-10-image-using-mdt.md)
+[Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)
 
 [Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)
 
 [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md)
 
-[Configure MDT settings](configure-mdt-2013-settings.md)
+[Configure MDT settings](configure-mdt-settings.md)

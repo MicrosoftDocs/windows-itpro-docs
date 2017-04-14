@@ -59,9 +59,9 @@ This section walks you through the process of creating a System Center 2012 R2 C
 
 6.  On the **Boot Image** page, browse and select the **Zero Touch WinPE x64** boot image package. Then click **Next**.
 
-7.  On the **MDT Package** page, select **Create a new Microsoft Deployment Toolkit Files package**, and in the **Package source folder to be created (UNC Path):** text box, type **\\\\CM01\\Sources$\\OSD\\MDT\\MDT 2013**. Then click **Next**.
+7.  On the **MDT Package** page, select **Create a new Microsoft Deployment Toolkit Files package**, and in the **Package source folder to be created (UNC Path):** text box, type **\\\\CM01\\Sources$\\OSD\\MDT\\MDT**. Then click **Next**.
 
-8.  On the **MDT Details** page, assign the name **MDT 2013** and click **Next**.
+8.  On the **MDT Details** page, assign the name **MDT** and click **Next**.
 
 9.  On the **OS Image** page, browse and select the **Windows 10 Enterprise x64 RTM** package. Then click **Next**.
 
@@ -160,14 +160,14 @@ While creating the task sequence with the MDT wizard, a few operating system dep
 
 1.  On CM01, using the Configuration Manager Console, in the Software Library workspace, expand **Application Management**, and then select **Packages**.
 
-2.  Select the **MDT 2013** and **Windows 10 x64 Settings** packages, right-click and select **Move**.
+2.  Select the **MDT** and **Windows 10 x64 Settings** packages, right-click and select **Move**.
 
 3.  In the **Move Selected Items** dialog box, select the **OSD** folder, and click **OK**.
 
 ## Related topics
 
 
-[Integrate Configuration Manager with MDT 2013 Update 2](integrate-configuration-manager-with-mdt-2013.md)
+[Integrate Configuration Manager with MDT](integrate-configuration-manager-with-mdt.md)
 
 [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
 

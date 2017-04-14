@@ -1,8 +1,8 @@
 ---
-title: Resolve Windows 10 upgrade errors
-description: Resolve Windows 10 upgrade errors
+title: Resolve Windows 10 upgrade errors - Windows IT Pro
+description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
 ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
-keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback
+keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -11,7 +11,7 @@ author: greg-lindsay
 localizationpriority: high
 ---
 
-# Resolve Windows 10 upgrade errors
+# Resolve Windows 10 upgrade errors : Technical information for IT Pros
 
 **Applies to**
 -   Windows 10
@@ -251,13 +251,15 @@ See the following example:
 
 ### Analyze log files
 
+>The following instructions are meant for IT professionals. Also see the [Upgrade error codes](#upgrade-error-codes) section in this guide to familiarize yourself with [result codes](#result-codes) and [extend codes](#extend-codes).
+
 <P>To analyze Windows Setup log files:
 
 <OL>
-<LI>Determine the Windows Setup error code.
+<LI>Determine the Windows Setup error code. This code should be returned by Windows Setup if it is not successful with the upgrade process.
 <LI>Based on the [extend code](#extend-codes) portion of the error code, determine the type and location of a [log files](#log-files) to investigate.
 <LI>Open the log file in a text editor, such as notepad.
-<LI>Using the result code portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the "abort" and abandoning" text strings described in step 7 below.
+<LI>Using the [result code](#result-codes) portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the "abort" and abandoning" text strings described in step 7 below.
 <LI>To find the last occurrence of the result code:
   <OL type="a">
   <LI>Scroll to the bottom of the file and click after the last character.
@@ -558,11 +560,13 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 
 </TABLE>
 
+
 ### 0x800xxxxx
+
 
 Result codes starting with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
 
-<P>See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:
+See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
 

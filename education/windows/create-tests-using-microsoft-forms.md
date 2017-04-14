@@ -7,6 +7,7 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 author: CelesteDG
+redirect_url: https://support.microsoft.com/help/4000711/windows-10-create-tests-using-microsoft-forms
 ---
 
 # Create tests using Microsoft Forms

@@ -1,6 +1,6 @@
 ---
-title: Deploy a Windows 10 image using MDT 2013 Update 2 (Windows 10)
-description: This topic will show you how to take your reference image for Windows 10, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT), and MDT 2013 Update 2 specifically.
+title: Deploy a Windows 10 image using MDT (Windows 10)
+description: This topic will show you how to take your reference image for Windows 10, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT).
 ms.assetid: 1d70a3d8-1b1d-4051-b656-c0393a93f83c
 keywords: deployment, automate, tools, configure
 ms.prod: w10
@@ -11,12 +11,12 @@ ms.pagetype: mdt
 author: mtniehaus
 ---
 
-# Deploy a Windows 10 image using MDT 2013 Update 2
+# Deploy a Windows 10 image using MDT
 
 **Applies to**
 -   Windows 10
 
-This topic will show you how to take your reference image for Windows 10, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT), and MDT 2013 Update 2 specifically. You will prepare for this by creating a MDT deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of on both processes. You will then configure the deployment share, create a new task sequence, add applications, add drivers, add rules, and configure Active Directory permissions for deployment.
+This topic will show you how to take your reference image for Windows 10, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT). You will prepare for this by creating a MDT deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of on both processes. You will then configure the deployment share, create a new task sequence, add applications, add drivers, add rules, and configure Active Directory permissions for deployment.
 
 For the purposes of this topic, we will use three machines: DC01, MDT01, and PC0005. DC01 is a domain controller, MDT01 is a Windows Server 2012 R2 standard server, and PC0005 is a blank machine to which you deploy Windows 10. MDT01 and PC0005 are members of the domain contoso.com for the fictitious Contoso Corporation.
 
@@ -119,7 +119,7 @@ Figure 3. The Adobe Reader application added to the Deployment Workbench.
 
 ## <a href="" id="sec05"></a>Step 5: Prepare the drivers repository
 
-In order to deploy Windows 10 with MDT 2013 Update 2 successfully, you need drivers for the boot images and for the actual operating system. This section will show you how to add drivers for the boot image and operating system, using the following hardware models as examples:
+In order to deploy Windows 10 with MDT successfully, you need drivers for the boot images and for the actual operating system. This section will show you how to add drivers for the boot image and operating system, using the following hardware models as examples:
 -   Lenovo ThinkPad T420
 -   Dell Latitude E6440
 -   HP EliteBook 8560w
@@ -131,7 +131,7 @@ You should only add drivers to the Windows PE images if the default drivers don'
  
 ### Create the driver source structure in the file system
 
-The key to successful management of drivers for MDT 2013 Update 2, as well as for any other deployment solution, is to have a really good driver repository. From this repository, you import drivers into MDT for deployment, but you should always maintain the repository for future use.
+The key to successful management of drivers for MDT, as well as for any other deployment solution, is to have a really good driver repository. From this repository, you import drivers into MDT for deployment, but you should always maintain the repository for future use.
 
 1.  On MDT01, using File Explorer, create the **E:\\Drivers** folder.
 2.  In the **E:\\Drivers** folder, create the following folder structure:
@@ -151,9 +151,9 @@ The key to successful management of drivers for MDT 2013 Update 2, as well as fo
 **Note**  
 Even if you are not going to use both x86 and x64 boot images, we still recommend that you add the support structure for future use.
  
-### Create the logical driver structure in MDT 2013 Update 2
+### Create the logical driver structure in MDT
 
-When you import drivers to the MDT 2013 Update 2 driver repository, MDT creates a single instance folder structure based on driver class names. However, you can, and should, mimic the driver structure of your driver source repository in the Deployment Workbench. This is done by creating logical folders in the Deployment Workbench.
+When you import drivers to the MDT driver repository, MDT creates a single instance folder structure based on driver class names. However, you can, and should, mimic the driver structure of your driver source repository in the Deployment Workbench. This is done by creating logical folders in the Deployment Workbench.
 1.  On MDT01, using Deployment Workbench, select the **Out-of-Box Drivers** node.
 2.  In the **Out-Of-Box Drivers** node, create the following folder structure:
     1.  WinPE x86
@@ -450,7 +450,7 @@ troubleshoot MDT deployments, as well as troubleshoot Windows itself.
 
 ### Add DaRT 10 to the boot images
 
-If you have licensing for MDOP and DaRT, you can add DaRT to the boot images using the steps in this section. If you do not have DaRT licensing, or don't want to use it, simply skip to the next section, [Update the Deployment Share](#bkmk-update-deployment). To enable the remote connection feature in MDT 2013 Update 2, you need to do the following:
+If you have licensing for MDOP and DaRT, you can add DaRT to the boot images using the steps in this section. If you do not have DaRT licensing, or don't want to use it, simply skip to the next section, [Update the Deployment Share](#bkmk-update-deployment). To enable the remote connection feature in MDT, you need to do the following:
 -   Install DaRT 10 (part of MDOP 2015 R1).
 -   Copy the two tools CAB files (Toolsx86.cab and Toolsx64.cab) to the deployment share.
 -   Configure the deployment share to add DaRT.
@@ -519,7 +519,7 @@ At this point, you should have a solution ready for deploying the Windows 10 cl
     2.  Installs the added application.
     3.  Updates the operating system via your local Windows Server Update Services (WSUS) server.
 
-### Use the MDT 2013 monitoring feature
+### Use the MDT monitoring feature
 
 Now that you have enabled the monitoring on the MDT Production deployment share, you can follow your deployment of PC0005 via the monitoring node.
 
@@ -545,7 +545,7 @@ Multicast deployment allows for image deployment with reduced network load durin
 
 ### Requirements
 
-Multicast requires that Windows Deployment Services (WDS) is running on Windows Server 2008 or later. In addition to the core MDT 2013 setup for multicast, the network needs to be configured to support multicast. In general, this means involving the organization networking team to make sure that 
+Multicast requires that Windows Deployment Services (WDS) is running on Windows Server 2008 or later. In addition to the core MDT setup for multicast, the network needs to be configured to support multicast. In general, this means involving the organization networking team to make sure that 
 Internet Group Management Protocol (IGMP) snooping is turned on and that the network is designed for multicast traffic. The multicast solution uses IGMPv3.
 
 ### Set up MDT for multicast
@@ -651,4 +651,4 @@ Figure 14. The partitions when deploying an UEFI-based machine.
 
 [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)
 
-[Configure MDT settings](configure-mdt-2013-settings.md)
+[Configure MDT settings](configure-mdt-settings.md)

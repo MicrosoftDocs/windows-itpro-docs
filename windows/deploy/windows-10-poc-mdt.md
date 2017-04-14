@@ -5,6 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
+keywords: deployment, automate, tools, configure, mdt
+localizationpriority: high
 author: greg-lindsay
 ---
 
@@ -636,7 +638,7 @@ Also see [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.m
 ## Related Topics
 
 [Microsoft Deployment Toolkit](https://technet.microsoft.com/en-US/windows/dn475741)<BR>
-[Prepare for deployment with MDT 2013](prepare-for-windows-deployment-with-mdt-2013.md)
+[Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md)
 
  
 

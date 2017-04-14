@@ -43,10 +43,10 @@ The following table lists the actual and effective default values for this polic
 | - | - |
 | Default Domain Policy| Not defined| 
 | Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | 14 days|
-| DC Effective Default Settings | 14 days | 
-| Member Server Effective Default Settings| 14 days |
-| Client Computer Effective Default Settings | 14 days| 
+| Stand-Alone Server Default Settings | 5 days|
+| DC Effective Default Settings | 5 days | 
+| Member Server Effective Default Settings| 5 days |
+| Client Computer Effective Default Settings | 5 days| 
  
 ## Policy management
 
@@ -74,11 +74,11 @@ If user passwords are configured to expire periodically in your organization, us
 
 ### Countermeasure
 
-Configure the **Interactive logon: Prompt user to change password before expiration** setting to 14 days.
+Configure the **Interactive logon: Prompt user to change password before expiration** setting to 5 days.
 
 ### Potential impact
 
-Users see a dialog-box prompt to change their password each time that they log on to the domain when their password is configured to expire in 14 or fewer days.
+Users see a dialog-box prompt to change their password each time that they log on to the domain when their password is configured to expire in 5 or fewer days.
 
 ## Related topics
 

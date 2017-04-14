@@ -23,7 +23,7 @@ ms.sitesec: library
 
 Remove websites that were added to a local compatibility view list by mistake or because they no longer have compatibility problems.
 
- ![](images/wedge.gif) **To remove sites from a local compatibility view list**
+ **To remove sites from a local compatibility view list**
 
 1.  Open Internet Explorer 11, click **Tools**, and then click **Compatibility View Settings**.
 

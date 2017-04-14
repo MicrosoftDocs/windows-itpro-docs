@@ -62,7 +62,7 @@ However, neither of these methods provides SSO in the Windows Store or SSO to re
 
 Using **Settings** &gt; **Accounts** &gt; **Your email and accounts** &gt; **Add work or school account**, users can add their Azure AD account to the device. Alternatively, a work account can be added when the user signs in to an application like Mail, Word, etc. If you [enable auto-enrollment in your MDM settings](https://go.microsoft.com/fwlink/p/?LinkID=691615), the device will automatically be enrolled in MDM.
 
-An added work account provides the same SSO experience in browser apps like Office 365 (Office portal, Outlook Web Access, Calendar, People, OneDrive), Azure AD profile and change password app, and Visual Studio. You get SSO to built-in applications like Mail, Calendar, People, OneDrive and files hosted on OneDrive without prompts for a password. In Office apps like Microsoft Word, Microsoft Excel, etc., you simply select the Azure AD account and you are able to open files without entering a password.
+An added work account provides the same SSO experience in browser apps like Office 365 (Office portal, Outlook on the web, Calendar, People, OneDrive), Azure AD profile and change password app, and Visual Studio. You get SSO to built-in applications like Mail, Calendar, People, OneDrive and files hosted on OneDrive without prompts for a password. In Office apps like Microsoft Word, Microsoft Excel, etc., you simply select the Azure AD account and you are able to open files without entering a password.
 
 ## Preparing for Windows 10 Mobile
 

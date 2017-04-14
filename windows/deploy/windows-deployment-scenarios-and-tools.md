@@ -14,7 +14,7 @@ author: mtniehaus
 
 To successfully deploy the Windows 10 operating system and applications for your organization, it is essential that you know about the available tools to help with the process. In this topic, you will learn about the most commonly used tools for Windows 10 deployment.
 
-Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). Keep in mind that these are just tools and not a complete solution on their own. It’s when you combine these tools with solutions like [Microsoft Deployment Toolkit (MDT) 2013 Update 1](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) or [Microsoft System Center 2012 R2 Configuration Manager](deploy-windows-10-with-system-center-2012-r2-configuration-manager.md) that you get the complete deployment solution.
+Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). Keep in mind that these are just tools and not a complete solution on their own. It’s when you combine these tools with solutions like [Microsoft Deployment Toolkit (MDT)](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) or [Microsoft System Center 2012 R2 Configuration Manager](deploy-windows-10-with-system-center-2012-r2-configuration-manager.md) that you get the complete deployment solution.
 
 In this topic, you also learn about different types of reference images that you can build, and why reference images are beneficial for most organizations
 
@@ -184,23 +184,23 @@ Also, there are a few new features related to TFTP performance:
 
 Figure 10. TFTP changes are now easy to perform.
 
-## <a href="" id="sec09"></a>Microsoft Deployment Toolkit 2013 Update 1
+## <a href="" id="sec09"></a>Microsoft Deployment Toolkit
 
 
-MDT 2013 Update 1 is a free deployment solution from Microsoft. It provides end-to-end guidance, best practices, and tools for planning, building, and deploying Windows operating systems. MDT builds on top of the core deployment tools in the Windows ADK by contributing guidance, reducing complexity, and adding critical features for an enterprise-ready deployment solution.
+MDT is a free deployment solution from Microsoft. It provides end-to-end guidance, best practices, and tools for planning, building, and deploying Windows operating systems. MDT builds on top of the core deployment tools in the Windows ADK by contributing guidance, reducing complexity, and adding critical features for an enterprise-ready deployment solution.
 
-MDT 2013 Update 1 has two main parts: the first is Lite Touch, which is a stand-alone deployment solution; the second is Zero Touch, which is an extension to System Center 2012 R2 Configuration Manager.
+MDT has two main parts: the first is Lite Touch, which is a stand-alone deployment solution; the second is Zero Touch, which is an extension to System Center 2012 R2 Configuration Manager.
 
 **Note**  
-Lite Touch and Zero Touch are marketing names for the two solutions that MDT 2013 supports, and the naming has nothing to do with automation. You can fully automate the stand-alone MDT 2013 Update 1 solution (Lite Touch), and you can configure the solution integration with Configuration Manager to prompt for information.
+Lite Touch and Zero Touch are marketing names for the two solutions that MDT supports, and the naming has nothing to do with automation. You can fully automate the stand-alone MDT solution (Lite Touch), and you can configure the solution integration with Configuration Manager to prompt for information.
 
  
 
 ![figure 11](images/mdt-11-fig13.png)
 
-Figure 11. The Deployment Workbench in MDT 2013, showing a task sequence.
+Figure 11. The Deployment Workbench in, showing a task sequence.
 
-For more information on MDT 2013 Update 1, see the [Microsoft Deployment Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=618117) resource center.
+For more information on MDT, see the [Microsoft Deployment Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=618117) resource center.
 
 ## <a href="" id="sec10"></a>Microsoft Security Compliance Manager 2013
 

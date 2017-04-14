@@ -29,7 +29,7 @@ If you're having trouble deciding whether Microsoft Edge is good for your organi
 
 ![Microsoft Edge infographic](images/microsoft-edge-infographic-sm.png)<br>
 [Click to enlarge](img-microsoft-edge-infographic-lg.md)<br>
-[Click to download image](https://www.microsoft.com/en-us/download/details.aspx?id=53892)
+[Click to download image](https://www.microsoft.com/download/details.aspx?id=53892)
 
 ### Microsoft Edge
 Microsoft Edge takes you beyond just browsing to actively engaging with the web through features like Web Note, Reading View, and Cortana.
@@ -50,10 +50,10 @@ IE11 offers enterprises additional security, manageability, performance, backwar
 -   **Administration.** IE11 can use the Internet Explorer Administration Kit (IEAK) 11 or MSIs for deployment, and includes more than 1,600 Group Policies and preferences for granular control.
 
 ## Related topics
-- [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/en-us/download/details.aspx?id=53892)
-- [Web Application Compatibility Lab Kit for Internet Explorer 11](https://technet.microsoft.com/en-us/browser/mt612809.aspx)
-- [Download Internet Explorer 11](http://windows.microsoft.com/en-US/internet-explorer/download-ie)
+- [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/download/details.aspx?id=53892)
+- [Web Application Compatibility Lab Kit for Internet Explorer 11](https://technet.microsoft.com/browser/mt612809.aspx)
+- [Download Internet Explorer 11](http://windows.microsoft.com/internet-explorer/download-ie)
 - [Microsoft Edge - Deployment Guide for IT Pros](https://technet.microsoft.com/itpro/microsoft-edge/index)
 - [Internet Explorer 11 - Deployment Guide for IT Pros](https://technet.microsoft.com/itpro/internet-explorer/ie11-deploy-guide/index)
-- [IEAK 11 - Internet Explorer Administration Kit 11 Users Guide](https://technet.microsoft.com/en-us/itpro/internet-explorer/ie11-ieak/index)
-- [Internet Explorer 11 - FAQ for IT Pros](https://technet.microsoft.com/en-us/itpro/internet-explorer/ie11-faq/faq-for-it-pros-ie11)
+- [IEAK 11 - Internet Explorer Administration Kit 11 Users Guide](https://technet.microsoft.com/itpro/internet-explorer/ie11-ieak/index)
+- [Internet Explorer 11 - FAQ for IT Pros](https://technet.microsoft.com/itpro/internet-explorer/ie11-faq/faq-for-it-pros-ie11)

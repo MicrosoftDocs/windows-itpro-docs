@@ -50,8 +50,8 @@ Setting the time zone also changes the times for all Windows Defender ATP views.
 To set the time zone:
 
 1.	Click the **Settings** menu ![Settings icon](images/settings.png).
-2.	Select the **Timezone:UTC** indicator.
-3.	The time zone indicator changes to **Timezone:Local**. Click it again to change back to **Timezone:UTC**.
+2.	Select the **Timezone UTC** indicator.
+3.	Select **Timezone Local** or **-8:00**. 
 
 ## Suppression rules
 The suppression rules control what alerts are suppressed. You can suppress alerts so that certain activities are not flagged as suspicious. For more information see, [Suppress alerts](manage-alerts-windows-defender-advanced-threat-protection.md#suppress-alerts).

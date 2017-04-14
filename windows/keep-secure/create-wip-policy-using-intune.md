@@ -11,20 +11,14 @@ localizationpriority: high
 ---
 
 # Create a Windows Information Protection (WIP) policy using Microsoft Intune
+
 **Applies to:**
 
--   Windows 10, version 1607
--   Windows 10 Mobile
+-   Windows 10, version 1703
+-   Windows 10 Mobile (except Microsoft Azure Rights Management, which is only available on the desktop)
 
 Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network.
 
-## Important note about the June service update for Insider Preview
-We've received some great feedback from you, our Windows 10 Insider Preview customers, about our Windows Information Protection experiences and processes. Because of that feedback, we're delighted to deliver an enhanced apps policy experience with the June service update. This means that when you open an existing Windows Information Protection policy after we release the June service update in your test environment, your existing Windows 10 Windows Information Protection app rules (formerly in the **Protected Apps** area) will be removed.<p>To prepare for this change, we recommend that you make an immediate backup of your current app rules as they are today, so you can use them to help reconfigure your app rules with the enhanced experience. When you open an existing Windows Information Protection policy after we release the June service update, you'll get a dialog box telling you about this change. Click the **OK** button to close the box and to begin reconfiguring your app rules.
-
-![Microsoft Intune: Reconfigure app rules list dialog box](images/wip-intune-app-reconfig-warning.png)
-
-Note that if you exit the **Policy** page before you've saved your new policy, your existing deployments won't be affected. However, if you save the policy without reconfiguring your apps, an updated policy will be deployed to your employees with an empty app rules list.
- 
 ## Add a WIP policy
 After you’ve set up Intune for your organization, you must create a WIP-specific policy.
 
@@ -44,10 +38,11 @@ During the policy-creation process in Intune, you can choose the apps you want t
 
 The steps to add your app rules are based on the type of rule template being applied. You can add a store app (also known as a Universal Windows Platform (UWP) app), a signed Windows desktop app, or an AppLocker policy file.
 
->[!IMPORTANT]
+>[!Important]
 >WIP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<p>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your **App Rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
 
->[!NOTE]
+
+>[!Note]
 >If you want to use **File hash** or **Path** rules, instead of **Publisher** rules, you must follow the steps in the [Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md) topic.
 
 #### Add a store app rule to your policy
@@ -77,8 +72,7 @@ If you don't know the publisher or product name, you can find them for both desk
 **To find the Publisher and Product Name values for Store apps without installing them**
 1.	Go to the [Windows Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Microsoft OneNote*.
 
-    >[!NOTE]
-    >If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the [Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md) topic.
+    >**Note**<br>If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the [Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md) topic.
 
 2.	Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
 
@@ -95,11 +89,8 @@ If you don't know the publisher or product name, you can find them for both desk
 
 4. Copy the `publisherCertificateName` value into the **Publisher Name** box and copy the `packageIdentityName` value into the **Product Name** box of Intune.
 
-    >[!IMPORTANT]
-    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.
-    
-    For example:
-        
+    >[!Important]
+    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<p>For example:<br>
     ```json
         {
             "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
@@ -109,8 +100,7 @@ If you don't know the publisher or product name, you can find them for both desk
 **To find the Publisher and Product Name values for apps installed on Windows 10 mobile phones**
 1.	If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
-    >[!NOTE]
-    >Your PC and phone must be on the same wireless network.
+    >**Note**<br>Your PC and phone must be on the same wireless network.
 
 2.	On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
 
@@ -126,15 +116,12 @@ If you don't know the publisher or product name, you can find them for both desk
 
 8.	Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
 
-    >[!IMPORTANT]
-    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.
-    
-    For example:
-    
-    ``` json
+    >[!Important]
+    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<p>For example:<br>
+    ```json
         {
-	       "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
-	    }
+            "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+        }
     ```
 
 #### Add a desktop app rule to your policy
@@ -367,49 +354,49 @@ There are no default locations included with WIP, you must add each of your netw
 2.	Type a name for your corporate network element into the **Name** box, and then pick what type of network element it is, from the **Network element** drop-down box. This can include any of the options in the following table.
 
     ![Microsoft Intune, Add your corporate network definitions](images/intune-networklocation.png)
-<p>
+    <p>
     <table>
-            <tr>
-                <th>Network location type</th>
-                <th>Format</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>Enterprise Cloud Resources</td>
-                <td><strong>With proxy:</strong> contoso.sharepoint.com,contoso.internalproxy1.com|<br>contoso.visualstudio.com,contoso.internalproxy2.com<p><strong>Without proxy:</strong> contoso.sharepoint.com|contoso.visualstudio.com</td>
-                <td>Specify the cloud resources to be treated as corporate and protected by WIP.<p>For each cloud resource, you may also optionally specify a proxy server from your Enterprise Internal Proxy Servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Enterprise Internal Proxy Servers is considered enterprise.<p>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;</code>.<p>If Windows is unable to determine whether an app should be allowed to connect to a network resource, it will automatically block the connection. If instead you want Windows to allow the connections to happen, you can add the <code>/*AppCompat*/</code> string to this setting. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;|/*AppCompat*/</code></td>
-            </tr>
-            <tr>
-                <td>Enterprise Network Domain Names (Required)</td>
-                <td>corp.contoso.com,region.contoso.com</td>
-                <td>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<p>This setting works with the IP ranges settings to detect whether a network endpoint is enterprise or personal on private networks.<p>If you have multiple resources, you must separate them using the "," delimiter.</td>                
-            </tr>
-            <tr>
-                <td>Enterprise Proxy Servers</td>
-                <td>proxy.contoso.com:80;proxy2.contoso.com:443</td>
-                <td>Specify your externally-facing proxy server addresses, along with the port through which traffic accesses the Internet.<p>This list must not include any servers listed in the Enterprise Internal Proxy Servers list, because they’re used for WIP-protected traffic.<p>This setting is also required if there’s a chance you could end up behind a proxy server on another network. In this situation, if you don't have a proxy server pre-defined, you might find that enterprise resources are unavailable to your client device, such as when you’re visiting another company and not on the guest network. To make sure this doesn’t happen, the client device also needs to be able to reach the pre-defined proxy server through the VPN network.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>
-            </tr>
-            <tr>
-                <td>Enterprise Internal Proxy Servers</td>
-                <td>contoso.internalproxy1.com;contoso.internalproxy2.com</td>
-                <td>Specify the proxy servers your devices will go through to reach your cloud resources.<p>Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<p>This list shouldn’t include any servers listed in the Enterprise Proxy Servers list, which are used for non-WIP-protected traffic.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>                
-            </tr>
-            <tr>
-                <td>Enterprise IPv4 Range (Required, if not using IPv6)</td>
-                <td>**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,<br>10.0.0.1-10.255.255.254</td>
-                <td>Specify the addresses for a valid IPv4 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
-            </tr>
-            <tr>
-                <td>Enterprise IPv6 Range (Required, if not using IPv4)</td>
-                <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
-                <td>Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
-            </tr>
-            <tr>
-                <td>Neutral Resources</td>
-                <td>sts.contoso.com,sts.contoso2.com</td>
-                <td>Specify your authentication redirection endpoints for your company.<p>These locations are considered enterprise or personal, based on the context of the connection before the redirection.<p>If you have multiple resources, you must separate them using the "," delimiter.</td>
-            </tr>           
-        </table>
+        <tr>
+            <th>Network location type</th>
+            <th>Format</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Enterprise Cloud Resources</td>
+            <td><strong>With proxy:</strong> contoso.sharepoint.com,contoso.internalproxy1.com|<br>contoso.visualstudio.com,contoso.internalproxy2.com<p><strong>Without proxy:</strong> contoso.sharepoint.com|contoso.visualstudio.com</td>
+            <td>Specify the cloud resources to be treated as corporate and protected by WIP.<p>For each cloud resource, you may also optionally specify a proxy server from your Enterprise Internal Proxy Servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Enterprise Internal Proxy Servers is considered enterprise.<p>If you have multiple resources, you must separate them using the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|". For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;</code>.<p><strong>Important</strong><br>In some cases, such as when an app connects directly to a cloud resource through an IP address, Windows can’t tell whether it’s attempting to connect to an enterprise cloud resource or to a personal site. In this case, Windows blocks the connection by default. To stop Windows from automatically blocking these connections, you can add the <code>/&#42;AppCompat&#42;/</code> string to the setting. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;|/&#42;AppCompat&#42;/</code>.<p>When using this string, we recommend that you also turn on [Azure Active Directory Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access), using the <strong>Domain joined or marked as compliant</strong> option, which blocks apps from accessing any enterprise cloud resources that are protected by conditional access.</td>
+        </tr>
+        <tr>
+            <td>Enterprise Network Domain Names (Required)</td>
+            <td>corp.contoso.com,region.contoso.com</td>
+            <td>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<p>This setting works with the IP ranges settings to detect whether a network endpoint is enterprise or personal on private networks.<p>If you have multiple resources, you must separate them using the "," delimiter.</td>
+        </tr>
+        <tr>
+            <td>Enterprise Proxy Servers</td>
+            <td>proxy.contoso.com:80;proxy2.contoso.com:443</td>
+            <td>Specify your externally-facing proxy server addresses, along with the port through which traffic accesses the Internet.<p>This list must not include any servers listed in the Enterprise Internal Proxy Servers list, because they’re used for WIP-protected traffic.<p>This setting is also required if there’s a chance you could end up behind a proxy server on another network. In this situation, if you don't have a proxy server pre-defined, you might find that enterprise resources are unavailable to your client device, such as when you’re visiting another company and not on the guest network. To make sure this doesn’t happen, the client device also needs to be able to reach the pre-defined proxy server through the VPN network.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>
+        </tr>
+        <tr>
+            <td>Enterprise Internal Proxy Servers</td>
+            <td>contoso.internalproxy1.com;contoso.internalproxy2.com</td>
+            <td>Specify the proxy servers your devices will go through to reach your cloud resources.<p>Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<p>This list shouldn’t include any servers listed in the Enterprise Proxy Servers list, which are used for non-WIP-protected traffic.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>
+        </tr>
+        <tr>
+            <td>Enterprise IPv4 Range (Required, if not using IPv6)</td>
+            <td>**Starting IPv4 Address:** 3.4.0.1<br>**Ending IPv4 Address:** 3.4.255.254<br>**Custom URI:** 3.4.0.1-3.4.255.254,<br>10.0.0.1-10.255.255.254</td>
+            <td>Specify the addresses for a valid IPv4 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
+        </tr>
+        <tr>
+            <td>Enterprise IPv6 Range (Required, if not using IPv4)</td>
+            <td>**Starting IPv6 Address:** 2a01:110::<br>**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br>**Custom URI:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
+            <td>Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the "," delimiter.</td>
+        </tr>
+        <tr>
+            <td>Neutral Resources</td>
+            <td>sts.contoso.com,sts.contoso2.com</td>
+            <td>Specify your authentication redirection endpoints for your company.<p>These locations are considered enterprise or personal, based on the context of the connection before the redirection.<p>If you have multiple resources, you must separate them using the "," delimiter.</td>
+        </tr>
+    </table>
 
 3.	Add as many locations as you need, and then click **OK**.
 
@@ -430,6 +417,16 @@ There are no default locations included with WIP, you must add each of your netw
     After you create and deploy your WIP policy to your employees, Windows will begin to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data.
 
     For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](https://go.microsoft.com/fwlink/p/?LinkId=761462) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md).
+
+### Choose to set up Azure Rights Management with WIP
+WIP can integrate with Microsoft Azure Rights Management to enable secure sharing of files via removable drives such as USB drives. For more info about Azure Rights Management, see [Microsoft Azure Rights Management](https://products.office.com/en-us/business/microsoft-azure-rights-management). To integrate Azure Rights Management with WIP, you must already have Azure Rights Management set up.
+
+To configure WIP to use Azure Rights Management, you must set the **AllowAzureRMSForEDP** MDM setting to **1** in Microsoft Intune. This setting tells WIP to encrypt files copied to removable drives with Azure Rights Management, so they can be shared amongst your employees on computers running at least Windows 10, version 1703.
+
+Optionally, if you don’t want everyone in your organization to be able to share your enterprise data, you can set the **RMSTemplateIDForEDP** MDM setting to the **TemplateID** of the Azure Rights Management template used to encrypt the data. You must make sure to mark the template with the **EditRightsData** option. 
+
+>[!NOTE]
+>For more info about setting the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings, see the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp) topic. For more info about setting up and using a custom template, see [Configuring custom templates for the Azure Rights Management service](https://docs.microsoft.com/en-us/information-protection/deploy-use/configure-custom-templates) topic.
 
 ### Choose your optional WIP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you’ll be asked to decide if you want to add any optional WIP settings.
@@ -471,11 +468,13 @@ After you've decided where your protected apps can access enterprise data on you
 
 2. Click **Save Policy**.
 
->[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
-
 ## Related topics
 - [Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md)
 - [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md)
 - [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-vpn-and-wip-policy-using-intune.md)
 - [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
+- [Azure RMS Documentation Update for May 2016](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/azure-rms-documentation-update-for-may-2016/)
+- [What is Azure Rights Management?]( https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
+
+>[!NOTE]
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

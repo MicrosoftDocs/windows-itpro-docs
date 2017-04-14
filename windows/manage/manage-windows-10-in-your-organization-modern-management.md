@@ -44,11 +44,10 @@ As indicated in the diagram, Microsoft continues to provide support for deep man
 
 With Windows 10, you can continue to use traditional OS deployment, but you can also “manage out of the box.” To transform new devices into fully-configured, fully-managed devices, you can:
 
-<!-- The phrase "Windows Imaging and Configuration Designer (ICD)" below might need to be changed to "Windows Configuration Designer" -->
 
 -   Avoid reimaging by using dynamic provisioning, enabled by a cloud-based device management services like [Microsoft Intune](https://docs.microsoft.com/intune/understand-explore/introduction-to-microsoft-intune).
 
--   Create self-contained provisioning packages built with the [Windows Imaging and Configuration Designer (ICD)](https://msdn.microsoft.com/library/windows/hardware/dn916113(v=vs.85).aspx).
+-   Create self-contained provisioning packages built with the [Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/deploy/provisioning-packages).
 
 -   Use traditional imaging techniques such as deploying custom images using [System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction).
 
@@ -81,7 +80,7 @@ You can envision user and device management as falling into these two categories
 
     Domain joined PCs and tablets can continue to be managed with the [System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction) client or Group Policy.
 
-For more information about how Windows 10 and Azure AD optimize access to work resources across a mix of devices and scenarios, see [Using Windows 10 devices in your workplace](https://azure.microsoft.com/en-us/documentation/articles/active-directory-azureadjoin-windows10-devices/).
+For more information about how Windows 10 and Azure AD optimize access to work resources across a mix of devices and scenarios, see [Using Windows 10 devices in your workplace](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-windows10-devices/).
 
 As you review the roles in your organization, you can use the following generalized decision tree to begin to identify users or devices that require domain join. Consider switching the remaining users to Azure AD.
 
