@@ -57,7 +57,7 @@ Before you switch to Windows 10 Pro Education, make sure you meet these requirem
 
 - The user making the changes must be a member of the Azure AD global administrator group.
 - The Azure AD tenant must be recognized as an education approved tenant.
-- You must have a Windows Store for Business account.
+- You must have a Microsoft Store for Business account.
 
 ## Education customers with MAK license keys
 
@@ -103,8 +103,6 @@ The rest of this article applies only to schools with Azure AD joined devices wh
 
 Academic institutions can easily move from Windows 10 S or Windows 10 Pro to Windows 10 Pro Education without using activation keys or reboots. When one of your users enters their Azure Active Directory credentials that's associated with a Windows 10 Pro Education license, the operating system turns to Windows 10 Pro Education and all the appropriate Windows 10 Pro Education features are unlocked. When a license expires or is transferred to another user, the Windows 10 Pro Education device seamlessly steps back down to Windows 10 Pro. However, Windows 10 Pro Education cannot step back down to Windows 10 S.
 
-Starting with Windows 10, version 1607, academic institutions can easily move from Windows 10 Pro to Windows 10 Pro Education—no keys and no reboots. After one of your users enters the Azure AD credentials associated with a Windows 10 Pro Education license, the operating system turns from Windows 10 Pro to Windows 10 Pro Education and all the appropriate Windows 10 Pro Education features are unlocked. When a license expires or is transferred to another user, the Windows 10 Pro Education device seamlessly steps back down to Windows 10 Pro. 
-
 <!-- Confirming if above is true for Windows 10 S as well -->
 
 Previously, only schools or organizations purchasing devices as part of the Shape the Future K-12 program or with a Microsoft Volume Licensing Agreement could deploy Windows 10 Pro Education to their users. Now, if you have an Azure AD for your organization, you can take advantage of the Windows 10 Pro Education features.
@@ -117,16 +115,16 @@ When you switch to Windows 10 Pro Education, you get the following benefits:
 
 <!-- Confirming if last bullet is true for S as well -->
 
-The Windows 10 Pro Education free switch through the Windows Store for Business is an offering that provides organizations easier, more flexible access to the benefits of Windows 10 Pro Education edition.
+The Windows 10 Pro Education free switch through the Microsoft Store for Business is an offering that provides organizations easier, more flexible access to the benefits of Windows 10 Pro Education edition.
 
 ### Switch through Microsoft Store for Business
 Once you enable the setting to switch to Windows 10 Pro Education, the switch will begin only after a user signs in to their device. The setting applies to the entire organization so you cannot select which users will receive the switch. The switch will only apply to both Windows 10 S and Windows 10 Pro devices.
 
 **To turn on the automatic switch to Windows 10 Pro Education**
 
-1. Sign in to [Windows Store for Business](https://businessstore.microsoft.com/en-us/Store/Apps) with your work or school account.
+1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/Store/Apps) with your work or school account.
 
-  If this is the first time you're signing into the Store, you'll be prompted to accept the Windows Store for Business Terms of Use.
+  If this is the first time you're signing into the Store, you'll be prompted to accept the Microsoft Store for Business Terms of Use.
 
 2. Click **Manage** from the top menu and then select the **Benefits tile**.
 3. In the **Benefits** tile, look for the **Automatic Windows 10 Pro Education upgrade** link and then click it.
@@ -295,7 +293,7 @@ Devices must be running Windows 10 Pro, version 1607 or higher, or Windows 10 S,
 
 If your organization has the Windows 10 Pro to Windows 10 Pro Education switch enabled, and you decide to roll back to Windows 10 Pro or to cancel the switch, you can do this by:
 
-- Logging into Windows Store for Business page and turning off the automatic switch.
+- Logging into Microsoft Store for Business page and turning off the automatic switch.
 - Selecting the link to turn off the automatic switch from the notification email sent to all global administrators.
 
 Once the automatic switch to Windows 10 Pro Education is turned off, the change is effective immediately. Devices that were switched will revert to Windows 10 Pro only after the license has been refreshed (every 30 days) and the next time the user signs in. This means that a user whose device was switched may not immediately see Windows 10 Pro Education rolled back to Windows 10 Pro for up to 30 days. However, users who haven't signed in during the time that an switch was enabled and then turned off will never see their device change from Windows 10 Pro.
@@ -305,7 +303,7 @@ Once the automatic switch to Windows 10 Pro Education is turned off, the change 
 
 **To roll back Windows 10 Pro Education to Windows 10 Pro**
 
-1. Log in to [Windows Store for Business](https://businessstore.microsoft.com/en-us/Store/Apps) with your school or work account, or follow the link from the notification email to turn off the automatic switch.
+1. Log in to [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/Store/Apps) with your school or work account, or follow the link from the notification email to turn off the automatic switch.
 2. Select **Manage > Account information** and locate the section **Automatic Windows 10 Pro Education upgrade** and follow the link.
 3. In the **Upgrade Windows 10 Pro to Windows 10 Pro Education** page, select **Turn off the automatic upgrade to Windows 10 Pro Education**.
 
