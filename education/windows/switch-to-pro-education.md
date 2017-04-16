@@ -101,7 +101,7 @@ The rest of this article applies only to schools with Azure AD joined devices wh
 
 ## Education customers with Azure AD joined devices
 
-Academic institutions can easily move from Windows 10 S or Windows 10 Pro to Windows 10 Pro Education without using activation keys or reboots. When one of your users enters their Azure Active Directory credentials that's associated with a Windows 10 Pro Education license, the operating system turns to Windows 10 Pro Education and all the appropriate Windows 10 Pro Education features are unlocked. When a license expires or is transferred to another user, the Windows 10 Pro Education device seamlessly steps back down to Windows 10 Pro.
+Academic institutions can easily move from Windows 10 S or Windows 10 Pro to Windows 10 Pro Education without using activation keys or reboots. When one of your users enters their Azure Active Directory credentials that's associated with a Windows 10 Pro Education license, the operating system turns to Windows 10 Pro Education and all the appropriate Windows 10 Pro Education features are unlocked. When a license expires or is transferred to another user, the Windows 10 Pro Education device seamlessly steps back down to Windows 10 Pro. However, Windows 10 Pro Education cannot step back down to Windows 10 S.
 
 Starting with Windows 10, version 1607, academic institutions can easily move from Windows 10 Pro to Windows 10 Pro Education—no keys and no reboots. After one of your users enters the Azure AD credentials associated with a Windows 10 Pro Education license, the operating system turns from Windows 10 Pro to Windows 10 Pro Education and all the appropriate Windows 10 Pro Education features are unlocked. When a license expires or is transferred to another user, the Windows 10 Pro Education device seamlessly steps back down to Windows 10 Pro. 
 
@@ -113,7 +113,7 @@ When you switch to Windows 10 Pro Education, you get the following benefits:
 
 -   **Windows 10 Pro Education edition**. Devices currently running Windows 10 Pro, version 1607 can get Windows 10 Pro Education Current Branch (CB). This benefit does not include Long Term Service Branch (LTSB).
 -   **Support from one to hundreds of users**. The Windows 10 Pro Education program does not have a limitation on the number of licenses an organization can have.
--   **Roll back to Windows 10 Pro at any time**. When a user leaves the domain or you turn off the setting to automatically switch to Windows 10 Pro Education, the device reverts seamlessly to Windows 10 Pro edition (after a grace period of up to 30 days).
+-   **Roll back to Windows 10 Pro at any time**. When a user leaves the domain or you turn off the setting to automatically switch to Windows 10 Pro Education, the device reverts seamlessly to Windows 10 Pro edition (after a grace period of up to 30 days). This does not apply to Windows 10 S.
 
 <!-- Confirming if last bullet is true for S as well -->
 
@@ -293,13 +293,16 @@ Devices must be running Windows 10 Pro, version 1607 or higher, or Windows 10 S,
 
 ### Roll back Windows 10 Pro Education to Windows 10 Pro
 
-<!-- Still confirming whether this is true for Windows 10 S -->
-
 If your organization has the Windows 10 Pro to Windows 10 Pro Education switch enabled, and you decide to roll back to Windows 10 Pro or to cancel the switch, you can do this by:
+
 - Logging into Windows Store for Business page and turning off the automatic switch.
 - Selecting the link to turn off the automatic switch from the notification email sent to all global administrators.
 
 Once the automatic switch to Windows 10 Pro Education is turned off, the change is effective immediately. Devices that were switched will revert to Windows 10 Pro only after the license has been refreshed (every 30 days) and the next time the user signs in. This means that a user whose device was switched may not immediately see Windows 10 Pro Education rolled back to Windows 10 Pro for up to 30 days. However, users who haven't signed in during the time that an switch was enabled and then turned off will never see their device change from Windows 10 Pro.
+
+    > [!NOTE]  
+    > Devices that were switched from Windows 10 S to Windows 10 Pro Education cannot roll back to Windows 10 S.
+
 
 **To roll back Windows 10 Pro Education to Windows 10 Pro**
 
