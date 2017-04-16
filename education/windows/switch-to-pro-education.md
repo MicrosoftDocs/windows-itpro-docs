@@ -300,9 +300,8 @@ If your organization has the Windows 10 Pro to Windows 10 Pro Education switch e
 
 Once the automatic switch to Windows 10 Pro Education is turned off, the change is effective immediately. Devices that were switched will revert to Windows 10 Pro only after the license has been refreshed (every 30 days) and the next time the user signs in. This means that a user whose device was switched may not immediately see Windows 10 Pro Education rolled back to Windows 10 Pro for up to 30 days. However, users who haven't signed in during the time that an switch was enabled and then turned off will never see their device change from Windows 10 Pro.
 
-    > [!NOTE]  
-    > Devices that were switched from Windows 10 S to Windows 10 Pro Education cannot roll back to Windows 10 S.
-
+> [!NOTE]  
+> Devices that were switched from Windows 10 S to Windows 10 Pro Education cannot roll back to Windows 10 S.
 
 **To roll back Windows 10 Pro Education to Windows 10 Pro**
 
