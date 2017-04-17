@@ -290,7 +290,7 @@ You can prevent Windows from setting the time automatically.
 
     -or -
 
--  Create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\W32time\\TimeProviders\\NtpClient!Enabled** to 0 (zero).
+-  Create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\W32time\\TimeProviders\\NtpClient!Enabled** to 0 (zero).
 
     -or-
 

@@ -165,7 +165,7 @@ Apps Corner lets you set up a custom Start screen on your Windows 10 Mobile or 
 
 1.  On Start ![start](images/starticon.png), swipe over to the App list, then tap **Settings** ![settings](images/settingsicon.png) &gt; **Accounts** &gt; **Apps Corner**.
 
-2.  Tap **Apps**, tap to select the app that you want people to use in the kiosk mode, and then tap done ![](images/doneicon.png)
+2.  Tap **Apps**, tap to select the app that you want people to use in the kiosk mode, and then tap done ![done icon](images/doneicon.png).
 
 3.  If your phone doesn't already have a lock screen password, you can set one now to ensure that people can't get to your Start screen from Apps Corner. Tap **Protect my phone with a password**, click **Add**, type a PIN in the **New PIN** box, type it again in the **Confirm PIN** box, and then tap **OK**. Press **Back** ![back](images/backicon.png) to the Apps Corner settings.
 

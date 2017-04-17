@@ -1990,24 +1990,24 @@ This event sends basic metadata about an application on the system to help keep 
 The following fields are available:
 
 - **ProgramInstanceId**  A hash of the file IDs in an app.
-- **Name**  The name of the application. Location pulled from depends on 'Source' field. Example:
-- **Type**  One of ("Application", "Hotfix", "BOE", "Service", "Unknown"). Application indicates Win32 or Appx app, Hotfix indicates app updates (KBs), BOE indicates it's an app with no ARP or MSI entry, Service indicates that it is a service. Application and BOE are the ones most likely seen. Example: Application
-- **Publisher**  The Publisher of the application. Location pulled from depends on the 'Source' field. Example: Neudesic
-- **Version**  The version number of the program. Example: 6.00.0003
-- **Language**  The language code of the program. Language codes can be found at 221435 Example: 1033
-- **Source**  Where the data for the application was found, such as Add/Remove Programs (ARP), MSI, AppxPackage, etc. Example: Msi
-- **MsiProductCode**  A GUID that describe the MSI Product. Example: {365812a8-44d6-422e-b737-d540451e5f4e}
-- **MsiPackageCode**  A GUID that describes the MSI Package. Multiple 'Products' (apps) can make up an MsiPackage. Example: {1BCC5142-D98C-430B-B74A-484A0328A7CE}
-- **HiddenArp**  Indicates whether a program hides itself from showing up in ARP. Example: TRUE
-- **OSVersionAtInstallTime**  The four octets from the OS version at the time of the application's install. Example:
-- **RootDirPath**  The path to the root directory where the program was installed. Example:  %ProgramFiles% (x86)\Neudesic\Azure Storage Explorer 6
-- **InstallDate**  The date the application was installed (a best guess based on folder creation date heuristics) Example: 4/12/2015 01:27:52
-- **InstallDateMsi**  The install date if the application was installed via MSI. Passed as an array. Example: 4/11/2015  00:00:00
-- **InstallDateFromLinkFile**  The estimated date of install based on the links to the files.  Passed as an array. Example: 4/8/2015  01:06:11
-- **InstallDateArpLastModified**  The date of the registry ARP key for a given application. Hints at install date but not always accurate. Passed as an array. Example: 4/11/2015  00:00:00
+- **Name**  The name of the application. Location pulled from depends on 'Source' field.
+- **Type**  One of ("Application", "Hotfix", "BOE", "Service", "Unknown"). Application indicates Win32 or Appx app, Hotfix indicates app updates (KBs), BOE indicates it's an app with no ARP or MSI entry, Service indicates that it is a service. Application and BOE are the ones most likely seen.
+- **Publisher**  The Publisher of the application. Location pulled from depends on the 'Source' field.
+- **Version**  The version number of the program.
+- **Language**  The language code of the program.
+- **Source**  How the program was installed (ARP, MSI, Appx, etc...)
+- **MsiProductCode**  A GUID that describe the MSI Product.
+- **MsiPackageCode**  A GUID that describes the MSI Package. Multiple 'Products' (apps) can make up an MsiPackage.
+- **HiddenArp**  Indicates whether a program hides itself from showing up in ARP.
+- **OSVersionAtInstallTime**  The four octets from the OS version at the time of the application's install.
+- **RootDirPath**  The path to the root directory where the program was installed.
+- **InstallDate**  The date the application was installed (a best guess based on folder creation date heuristics)
+- **InstallDateMsi**  The install date if the application was installed via MSI. Passed as an array.
+- **InstallDateFromLinkFile**  The estimated date of install based on the links to the files.  Passed as an array.
+- **InstallDateArpLastModified**  The date of the registry ARP key for a given application. Hints at install date but not always accurate. Passed as an array.
 - **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
-- **objectInstanceId**  ProgramId (a hash of Name, Version, Publisher, and Language of an application used to identify it). Example: 00000144865763f3de24c2ae5a289fde6db300000904
-- **PackageFullName**  The package full name for a Store application.  Example: Microsoft.Hexic_1.2.0.36_x86__8wekyb3d8bbwe
+- **objectInstanceId**  ProgramId (a hash of Name, Version, Publisher, and Language of an application used to identify it).
+- **PackageFullName**  The package full name for a Store application.
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **StoreAppType**  A sub-classification for the type of Windows Store app, such as UWP or Win8StoreApp.
 
@@ -2042,7 +2042,7 @@ The following fields are available:
 - **ModelId**  A model GUID.
 - **PrimaryCategory**  The primary category for the device container.
 - **Categories**  A comma separated list of functional categories in which the container belongs.
-- **IsConnected**  For physically a attached device, this value is the same as IsPresent. For wireless a device, this value represents a communication link.
+- **IsConnected**  For a physically attached device, this value is the same as IsPresent. For wireless a device, this value represents a communication link.
 - **IsActive**  Is the device connected, or has it been seen in the last 14 days?
 - **IsPaired**  Does the device container require pairing?
 - **IsNetworked**  Is this a networked device?
@@ -2052,7 +2052,7 @@ The following fields are available:
 - **ModelNumber**  The model number for the device container.
 - **Manufacturer**  The manufacturer name for the device container.
 - **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
-- **objectInstanceId**  ContainerId. Example: {552dd320-0dae-2794-2b41-df42fee22488}
+- **objectInstanceId**  ContainerId
 - **InventoryVersion**  The version of the inventory file generating the events.
 
 

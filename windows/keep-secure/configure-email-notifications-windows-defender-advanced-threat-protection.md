@@ -41,6 +41,7 @@ The email notifications feature is turned off by default. Turn it on to start re
   - **High** – Select this level to send notifications for high-severity alerts.
   - **Medium** – Select this level to send notifications for medium-severity alerts.
   - **Low** - Select this level to send notifications for low-severity alerts.
+  - **Informational** - Select this level to send notification for alerts that might not be considered harmful but good to keep track of.
 4.	In **Email recipients to notify on new alerts**, type the email address then select the + sign.
 5.	Click **Save preferences** when you’ve completed adding all the recipients.
 

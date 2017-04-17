@@ -141,7 +141,7 @@ You can try any of the processes included in these scenarios, but you should foc
         <td>Verify your Virtual Private Network (VPN) can be auto-triggered.</td>
         <td>
             <ol>
-                <li>Set up your VPN network to start based on the <strong>WIPModeID</strong> setting.<br>For specific info about how to do this, see the [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-wip-policy-using-intune.md) topic.</li>
+                <li>Set up your VPN network to start based on the <strong>WIPModeID</strong> setting.<br>For specific info about how to do this, see the [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-vpn-and-wip-policy-using-intune.md) topic.</li>
                 <li>Start an app from your allowed apps list.<br>The VPN network should automatically start.</li>
                 <li>Disconnect from your network and then start an app that isn't on your allowed apps list.<br>The VPN shouldn't start and the app shouldn't be able to access your enterprise network.</li>
             </ol>
