@@ -98,7 +98,7 @@ As the authorized administrator, it is your responsibility to protect the privac
     <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migapp">
     ```
 
--   **TUse the XML Schema (MigXML.xsd) when authoring .xml files to validate synta**
+-   **Use the XML Schema (MigXML.xsd) when authoring .xml files to validate syntax**
 
     The MigXML.xsd schema file should not be included on the command line or in any of the .xml files.
 

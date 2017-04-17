@@ -14,8 +14,8 @@ localizationpriority: high
 # Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune
 **Applies to:**
 
--   Windows 10, version 1607
--   Windows 10 Mobile
+-   Windows 10, version 1607
+-   Windows 10 Mobile
 
 After you've created and deployed your Windows Information Protection (WIP) policy, you can use Microsoft Intune to create and deploy your Virtual Private Network (VPN) policy, linking it to your WIP policy.
 
@@ -99,7 +99,6 @@ The final step to making your VPN configuration work with WIP, is to link your t
 
 6.  Click **OK** to save your new OMA-URI setting, and then click **Save Policy.**
 
-
  **To deploy your linked policy**
 
 1.  On the **Configuration policies** page, locate your newly-created policy, click to select it, and then click the **Manage Deployment** button.
@@ -110,11 +109,5 @@ The final step to making your VPN configuration work with WIP, is to link your t
 
 3.  After you've picked all of the employees and groups that should get the policy, click **OK**. The policy is deployed to the selected users' devices.
 
-
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
-
-
-
-
-
