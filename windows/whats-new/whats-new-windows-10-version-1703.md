@@ -143,7 +143,7 @@ New features for Windows Defender AV in Windows 10, version 1703 include:
 - [The ability to specify the level of cloud-protection](../keep-secure/specify-cloud-protection-level-windows-defender-antivirus.md)
 - [Windows Defender Antivirus protection in the Windows Defender Security Center app](../keep-secure/windows-defender-security-center-antivirus.md)
 
-In Windows 10, version 1607, we [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment in version 1703 with [updated beahvior monitoring and always-on real-time protection](../keep-secure/configure-real-time-protection-windows-defender-antivirus.md).
+In Windows 10, version 1607, we [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment in version 1703 with [updated behavior monitoring and always-on real-time protection](../keep-secure/configure-real-time-protection-windows-defender-antivirus.md).
 
 
 You can read more about ransomware mitigations and detection capability in Windows Defender AV in the [Ransomware Protection in Windows 10 Anniversary Update whitepaper (PDF)](http://wincom.blob.core.windows.net/documents/Ransomware_protection_in_Windows_10_Anniversary_Update.pdf) and at the [Microsoft Malware Protection Center blog](https://blogs.technet.microsoft.com/mmpc/category/research/ransomware/).
@@ -164,7 +164,7 @@ A new security policy setting
 
 You can now reset a forgotten PIN without deleting company managed data or apps on devices managed by [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
-For Windows Phone devices, an adminisrator is able to initiate a remote PIN reset through the Intune portal.
+For Windows Phone devices, an administrator is able to initiate a remote PIN reset through the Intune portal.
 
 For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**.
 
@@ -176,7 +176,7 @@ For more details, check out [What if I forget my PIN?](../keep-secure/hello-why-
 
 The pause feature has been changed, and now requires a start date to set up. Users are now able to pause through **Settings > Update & security > Windows Update > Advanced options** in case a policy has not been configured. We have also increased the pause limit on quality updates to 35 days. You can find more information on pause in [Pause Feature Updates](../update/waas-configure-wufb.md#pause-feature-updates) and [Pause Quality Updates](../update/waas-configure-wufb.md#pause-quality-updates).
 
-Windows Update for Business managed devices are now able to defer feature update installation by up to 365 days (it used to be 180 days). In settings, users are able to select their branch readiness level and update deferal periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](../update/waas-configure-wufb.md#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-quality-updates) for details.
+Windows Update for Business managed devices are now able to defer feature update installation by up to 365 days (it used to be 180 days). In settings, users are able to select their branch readiness level and update deferral periods. See [Configure devices for Current Branch (CB) or Current Branch for Business (CBB)](../update/waas-configure-wufb.md#configure-devices-for-current-branch-or-current-branch-for-business), [Configure when devices receive Feature Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-feature-updates) and [Configure when devices receive Quality Updates](../update/waas-configure-wufb.md#configure-when-devices-receive-quality-updates) for details.
 
 ### Windows Insider for Business
 
@@ -239,7 +239,7 @@ For more info, see [Implement server-side support for mobile application managem
 In Windows 10, version 1703, we continue our work to improve the diagnostic experience for modern management. By introducing auto-logging for mobile devices, Windows will automatically collect logs when encountering an error in MDM, eliminating the need to have always-on logging for memory-constrained devices. Additionally, we are introducing [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) as an additional tool to help Support personnel quickly reduce issues to their root cause, while saving time and cost.
 
 ### Application Virtualization for Windows (App-V)
-Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10, version 1703 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Addtionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically cleanup your unpublished packages after a device restart.
+Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10, version 1703 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Additionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically cleanup your unpublished packages after a device restart.
 
 For more info, see the following topics:
 - [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../manage/appv-auto-provision-a-vm.md)
@@ -275,7 +275,7 @@ Windows 10 Mobile, version 1703 also includes the following enhancements:
 - OTC update tool
 - Continuum display management
    - Individually turn off the monitor or phone screen when not in use
-   - Indivudally adjust screen time-out settings
+   - Indiviudally adjust screen time-out settings
 - Continuum docking solutions
    - Set Ethernet port properties
    - Set proxy properties for the Ethernet port

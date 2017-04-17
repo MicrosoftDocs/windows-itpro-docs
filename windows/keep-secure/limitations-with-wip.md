@@ -27,18 +27,18 @@ This table provides info about the most common problems you might encounter whil
     </tr>
     <tr>
         <td>Your enterprise data on USB drives might be tied to the device it was protected on, based on your Azure RMS configuration.</td>
-        <td><strong>If you’re using Azure RMS:</strong> Authenticated users can open enterprise data on USB drives, on computers running Windows 10, version 1703.<p><strong>If you’re not using Azure RMS:</strong> Data in the new location remains encrypted, but becomes inaccessible on other devices and for other users. For example, the file won't open or the file opens, but doesn't contain readable text.</td>
-        <td>Share files with fellow employees through enterprise file servers or enterprise cloud locations. If data must be shared via USB, employees can decrypt protected files, but it will be audited.<p>We strongly recommend educating employees about how to limit or eliminate the need for this decryption.</td>
+        <td><strong>If you’re using Azure RMS:</strong> Authenticated users can open enterprise data on USB drives, on computers running Windows 10, version 1703.<br><br><strong>If you’re not using Azure RMS:</strong> Data in the new location remains encrypted, but becomes inaccessible on other devices and for other users. For example, the file won't open or the file opens, but doesn't contain readable text.</td>
+        <td>Share files with fellow employees through enterprise file servers or enterprise cloud locations. If data must be shared via USB, employees can decrypt protected files, but it will be audited.<br><br>We strongly recommend educating employees about how to limit or eliminate the need for this decryption.</td>
     </tr>
     <tr>
         <td>Direct Access is incompatible with WIP.</td>
         <td>Direct Access might experience problems with how WIP enforces app behavior and data movement because of how WIP determines what is and isn’t a corporate network resource.</td>
-        <td>We recommend that you use VPN for client access to your intranet resources.<p><strong>Note</strong><br>VPN is optional and isn’t required by WIP.</td>
+        <td>We recommend that you use VPN for client access to your intranet resources.<br><br><strong>Note</strong><br>VPN is optional and isn’t required by WIP.</td>
     </tr>
     <tr>
-        <td><strong>NetworkIsolation</strong> Group Policy setting is incompatible with WIP.</td>
-        <td>The <strong>NetworkIsolation</strong> Group Policy setting has incompatible network settings that can conflict and cause problems with WIP.</td>
-        <td>We recommend that you don’t use the NetworkIsolation Group Policy setting.</td>
+        <td><strong>NetworkIsolation</strong> Group Policy setting takes precedence over MDM Policy settings.</td>
+        <td>The <strong>NetworkIsolation</strong> Group Policy setting can configure network settings that can also be configured by using MDM. WIP relies on these policies being correctly configured.</td>
+        <td>If you use both Group Policy and MDM to configure your <strong>NetworkIsolation</strong> settings, you must make sure that those same settings are deployed to your organization using both Group Policy and MDM.</td>
     </tr>
     <tr>
         <td>Cortana can potentially allow data leakage if it’s on the allowed apps list.</td>
@@ -55,8 +55,8 @@ This table provides info about the most common problems you might encounter whil
         <td>An app might fail to properly install because it can’t read a necessary configuration or data file, such as a .cab or .xml file needed for installation, which was protected by the copy action.</td>
         <td>To fix this, you can:
             <ul>
-                <li>Start the installer directly from the file share.<p>-OR-</li>
-                <li>Decrypt the locally copied files needed by the installer.<p>-OR-</li>
+                <li>Start the installer directly from the file share.<br><br>-OR-<br><br></li>
+                <li>Decrypt the locally copied files needed by the installer.<br><br>-OR-<br><br></li>
                 <li>Mark the file share with the installation media as “personal”. To do this, you’ll need to set the Enterprise IP ranges as <strong>Authoritative</strong> and then exclude the IP address of the file server, or you’ll need to put the file server on the Enterprise Proxy Server list.</li>
             </ul></td>
     </tr>
@@ -68,7 +68,7 @@ This table provides info about the most common problems you might encounter whil
     <tr>
         <td>Redirected folders with Client Side Caching are not compatible with WIP.</td>
         <td>Apps might encounter access errors while attempting to read a cached, offline file.</td>
-        <td>Migrate to use another file synchronization method, such as Work Folders or OneDrive for Business.<p><strong>Note</strong><br>For more info about Work Folders and Offline Files, see the blog, [Work Folders and Offline Files support for Windows Information Protection](https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/). If you're having trouble opening files offline while using Offline Files and WIP, see the support article, [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/en-us/kb/3187045).</td>
+        <td>Migrate to use another file synchronization method, such as Work Folders or OneDrive for Business.<br><br><strong>Note</strong><br>For more info about Work Folders and Offline Files, see the blog, [Work Folders and Offline Files support for Windows Information Protection](https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/). If you're having trouble opening files offline while using Offline Files and WIP, see the support article, [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/en-us/kb/3187045).</td>
     </tr>
     <tr>
         <td>You can't upload an enterprise file to a personal location using Microsoft Edge or Internet Explorer.</td>
@@ -78,7 +78,7 @@ This table provides info about the most common problems you might encounter whil
     <tr>
         <td>ActiveX controls should be used with caution.</td>
         <td>Webpages that use ActiveX controls can potentially communicate with other outside processes that aren’t protected by using WIP.</td>
-        <td>We recommend that you switch to using Microsoft Edge, the more secure and safer browser that prevents the use of ActiveX controls. We also recommend that you limit the usage of Internet Explorer 11 to only those line-of-business apps that require legacy technology.<p>For more info, see [Out-of-date ActiveX control blocking](https://technet.microsoft.com/en-us/itpro/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking).</td>
+        <td>We recommend that you switch to using Microsoft Edge, the more secure and safer browser that prevents the use of ActiveX controls. We also recommend that you limit the usage of Internet Explorer 11 to only those line-of-business apps that require legacy technology.<br><br>For more info, see [Out-of-date ActiveX control blocking](https://technet.microsoft.com/en-us/itpro/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking).</td>
     </tr>
     <tr>
         <td>WIP isn’t turned on if any of the following folders have the <strong>MakeFolderAvailableOfflineDisabled</strong> option set to <strong>False</strong>:
@@ -99,7 +99,7 @@ This table provides info about the most common problems you might encounter whil
             </ul>
         </td>
         <td>WIP isn’t turned on for employees in your organization.</td>
-        <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.<p>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/en-us/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection).</td>
+        <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.<br><br>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/en-us/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection).</td>
     </tr>
 </table>
 
