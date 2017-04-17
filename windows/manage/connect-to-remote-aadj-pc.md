@@ -1,7 +1,6 @@
 ---
 title: Connect to remote Azure Active Directory-joined PC (Windows 10)
 description: You can use Remote Desktop Connection to connect to an Azure AD-joined PC.
-ms.assetid: 62D6710C-E59C-4077-9C7E-CE0A92DFC05D
 keywords: ["MDM", "device management", "RDP", "AADJ"]
 ms.prod: w10
 ms.mktglfcycl: manage
