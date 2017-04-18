@@ -1,5 +1,5 @@
 ---
-title: Introducing Managed Installer for Device Guard (Windows 10)
+title: Deploy Managed Installer for Device Guard (Windows 10)
 description: Explains how you can use a managed installer to automatically authorize applications deployed and installed by a designated software distribution solution, such as System Center Configuration Manager. 
 keywords: virtualization, security, malware
 ms.prod: w10
@@ -8,7 +8,7 @@ localizationpriority: high
 author: brianlic-msft
 ---
 
-# Introducing Managed Installer for Device Guard
+# Deploy Managed Installer for Device Guard
 
 Creating and maintaining application execution control policies has always been challenging and options for addressing this has been a frequently cited request for customers of AppLocker and Device Guard’s [configurable code integrity (CI)](device-guard-deployment-guide.md). 
 This is especially true for enterprises with large, ever changing software catalogs. 
