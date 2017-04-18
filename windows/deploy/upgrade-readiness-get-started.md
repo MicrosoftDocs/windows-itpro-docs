@@ -79,14 +79,23 @@ For Upgrade Readiness to receive and display upgrade readiness data from Microso
 
 To enable data sharing, whitelist the following endpoints. Note that you may need to get approval from your security group to do this.
 
-Note: The compatibility update KB runs under the computer’s system account. If you are using user authenticated proxies, read [this blog post](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) to learn what you need to do to run it under the logged on user account.
-
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
 | `https://v10.vortex-win.data.microsoft.com/collect/v1`<br>`https://Vortex-win.data.microsoft.com/health/keepalive`                                                                                                      | Connected User Experience and Telemetry component endpoint. User computers send data to Microsoft through this endpoint.             |
 | `https://settings.data.microsoft.com/qos`                                                                                                                                  | Enables the compatibility update KB to send data to Microsoft.                                                                       |
 | `https://go.microsoft.com/fwlink/?LinkID=544713`<br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc`                                         | This service provides driver information about whether there will be a driver available post-upgrade for the hardware on the system. |
 
+Note: The compatibility update KB runs under the computer’s system account. 
+
+### Connection settings
+
+The settings that are used to enable client computers to connect to Windows Telemetry depend on the type of connection scenario you use. These scenarios are discussed in [this blog post](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) and are summarized below.
+
+| **Connection scenario** | **ClientProxy setting**  | **Local computer configuration** |
+|---------------------------------------------------------|-----------|-----------|
+| Direct connection to the Internet (no proxy) | Set **ClientProxy=Direct** in **runconfig.bat** | No other configuration necessary |
+| WinHTTP proxy  | Set **ClientProxy=System** in **runconfig.bat**  | Specify `netsh winhttp set proxy <server>:<port>` on client computers |
+| Other proxy  |  Set **ClientProxy=User** in **runconfig.bat** | Configure the Windows Registry value **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection\DisableEnterpriseAuthProxy** to 0 on client computers |
 
 ## Deploy the compatibility update and related KBs
 
