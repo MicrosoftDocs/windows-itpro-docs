@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: jdeckerMS
+author: DavbeaMSFT
 ---
 
 # Surface device compatibility with Windows 10 Long-Term Servicing Branch (LTSB)
@@ -44,7 +44,7 @@ The LTSB servicing option is designed for device types and scenarios where the k
 
 Before you choose to use Windows 10 Enterprise LTSB edition on Surface devices, consider the following limitations:
 
-* Drivers and firmware for Surface devices are tested against the most recent version of Windows 10 CB and the last two versions of CBB. Drivers and firmware are not explicitly tested against releases of Windows 10 Enterprise LTSB. 
+* Driver and firmware updates are not explicitly tested against releases of Windows 10 Enterprise LTSB. 
 
 * If you encounter problems, Microsoft Support will provide troubleshooting assistance. However, due to the servicing nature of the Windows LTSB, issue resolution may require that devices be upgraded to a more recent version of Windows 10 Enterprise LTSB, or to Windows 10 Pro or Enterprise with the CB or CBB servicing option.
 
