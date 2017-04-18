@@ -1,7 +1,6 @@
 ---
 title: Provision PCs with apps  (Windows 10)
 description: Add apps to a Windows 10 provisioning package. 
-ms.assetid: 66D14E97-E116-4218-8924-E2A326C9367E
 keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: W10
 ms.mktglfcycl: deploy

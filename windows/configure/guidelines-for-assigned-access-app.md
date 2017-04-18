@@ -1,7 +1,6 @@
 ---
 title: Guidelines for choosing an app for assigned access (Windows 10)
 description: You can configure Windows 10 as a kiosk device, so that users can only interact with a single app.
-ms.assetid: F1F4FF19-188C-4CDC-AABA-977639C53CA8
 keywords: ["kiosk", "lockdown", "assigned access"]
 ms.prod: w10
 ms.mktglfcycl: manage

@@ -107,7 +107,7 @@ The following components are migrated by default using the manifest files:
 
 -   Fonts
 
--   Group membership. USMT migrates users’ group settings. The groups to which a user belongs can be found by right-clicking **My Computer** on the Start menu and then clicking **Manage**.
+-   Group membership. USMT migrates users’ group settings. The groups to which a user belongs can be found by right-clicking **My Computer** on the Start menu and then clicking **Manage**. When running an offline migration, the use of a **&lt;ProfileControl&gt;** section in the Config.xml file is required.
 
 -   \*Windows Internet Explorer® settings
 

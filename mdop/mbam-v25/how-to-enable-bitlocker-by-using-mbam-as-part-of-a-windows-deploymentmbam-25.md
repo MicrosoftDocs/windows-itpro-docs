@@ -55,7 +55,7 @@ This topic explains how to enable BitLocker on an end user's computer by using M
 
     -   Robust error handling
 
-   You can download the `Invoke-MbamClientDeployment.ps1` script from [Microsoft.com Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=54439). This is the main script that your deployment system will call to configure BitLocker drive encryption and record recovery keys with the MBAM Server.
+   You can download the `Invoke-MbamClientDeployment.ps1` script from [Microsoft.com Download Center](https://www.microsoft.com/download/details.aspx?id=54439). This is the main script that your deployment system will call to configure BitLocker drive encryption and record recovery keys with the MBAM Server.
 
    **WMI deployment methods for MBAM:** The following WMI methods have been added in MBAM 2.5 SP1 to support enabling BitLocker by using the `Invoke-MbamClientDeployment.ps1` PowerShell script.
 

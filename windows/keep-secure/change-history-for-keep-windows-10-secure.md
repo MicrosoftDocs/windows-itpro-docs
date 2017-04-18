@@ -17,8 +17,9 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |New or changed topic |Description |
 |---------------------|------------|
 |[Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |Updated based on Windows 10, version 1703. |
-|[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |Added new content about Azure Rights Management. |
-|[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |Added additional limitations for Windows 10, version 1703. |
+|[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |Updated based on Windows 10, version 1703. |
+|[Deploy your Windows Information Protection (WIP) policy using Microsoft Intune](deploy-wip-policy-using-intune.md) |Updated based on Windows 10, version 1703.
+|[Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) |Added additional limitations for Windows 10, version 1703.|
 |[Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md)|Added content about recovering data from a cloud environment.|
 |[Protect derived domain credentials with Credential Guard](credential-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|
 |[Requirements and deployment planning guidelines for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md) |Updated to include additional security qualifications starting with Window 10, version 1703.|

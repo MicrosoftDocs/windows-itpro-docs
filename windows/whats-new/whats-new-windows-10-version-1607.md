@@ -1,7 +1,6 @@
 ---
 title: What's new in Windows 10, version 1607 (Windows 10)
 description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
-ms.assetid: 75F285B0-09BE-4821-9B42-37B9BE54CEC6
 keywords: ["What's new in Windows 10", "Windows 10", "anniversary update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
