@@ -11,6 +11,12 @@
   - name: Deploy
     tocHref: /itpro/windows/deploy/
     topicHref: /itpro/windows/deploy/index
+  - name: Configure
+    tocHref: /itpro/windows/configure/
+    topicHref: /itpro/windows/configure/index
+  - name: Update
+    tocHref: /itpro/windows/update/
+    topicHref: /itpro/windows/update/index
   - name: Keep secure
     tocHref: /itpro/windows/keep-secure/
     topicHref: /itpro/windows/keep-secure/index

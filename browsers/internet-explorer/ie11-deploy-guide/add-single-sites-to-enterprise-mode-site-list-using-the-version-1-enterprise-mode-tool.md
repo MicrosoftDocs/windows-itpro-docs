@@ -27,7 +27,7 @@ Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, lett
 You can add individual sites to your compatibility list by using the Enterprise Mode Site List Manager.
 <p>**Note**<br>If you're using the v.2 version of the Enterprise Mode schema, you'll need to use the Enterprise Mode Site List Manager (schema v.1). For more info, see [Add sites to the Enterprise Mode site list using the Enterprise Mode Site List Manager (schema v.2)](add-single-sites-to-enterprise-mode-site-list-using-the-version-2-enterprise-mode-tool.md).
 
- ![](images/wedge.gif) **To add a site to your compatibility list using the Enterprise Mode Site List Manager (schema v.1)**
+ **To add a site to your compatibility list using the Enterprise Mode Site List Manager (schema v.1)**
 
 1.  In the Enterprise Mode Site List Manager (schema v.1), click **Add**.
 

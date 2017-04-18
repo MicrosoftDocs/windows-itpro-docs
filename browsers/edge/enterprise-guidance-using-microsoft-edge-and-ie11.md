@@ -1,7 +1,6 @@
 ---
 title: Microsoft Edge and Internet Explorer 11 (Microsoft Edge for IT Pros)
 description: Enterprise guidance for using Microsoft Edge and Internet Explorer 11.
-ms.assetid: 3c5bc4c4-1060-499e-9905-2504ea6dc6aa
 author: eross-msft
 ms.prod: edge
 ms.mktglfcycl: support

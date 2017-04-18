@@ -16,6 +16,7 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 ## In this section
 |Topic |Description |
 |------|------------|
+|[Windows 10 Enterprise: FAQ for IT professionals](windows-10-enterprise-faq-itpro.md) | Get answers to common questions around compatibility, installation, and support for Windows 10 Enterprise. |
 |[Windows 10 deployment considerations](windows-10-deployment-considerations.md) |There are new deployment options in Windows 10 that help you simplify the deployment process and automate migration of existing settings and applications. |
 |[Windows 10 compatibility](windows-10-compatibility.md) |Windows 10 will be compatible with most existing PC hardware; most devices running Windows 7, Windows 8, or Windows 8.1 will meet the requirements for Windows 10. |
 |[Windows 10 infrastructure requirements](windows-10-infrastructure-requirements.md) |There are specific infrastructure requirements to deploy and manage Windows 10 that should be in place prior to significant Windows 10 deployments within your organization. |

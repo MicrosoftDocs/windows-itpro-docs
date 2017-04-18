@@ -11,6 +11,17 @@ author: greg-lindsay
 # Change history for Deploy Windows 10
 This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](../index.md).
 
+
+## April 2017
+| New or changed topic | Description |
+|----------------------|-------------|
+| [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md) | Updated: The "refresh" and "replace" procedures were swapped in order so that it would not be necessary to save and restore VMs. Also a missing step was added to include the State migration point role. | 
+| [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md)| Updated with minor fixes. |
+| [Manage Windows upgrades with Upgrade Readiness](manage-windows-upgrades-with-upgrade-readiness.md)| Updated child topics under this node to include new feature and user interface changes. |
+
+## RELEASE: Windows 10, version 1703
+The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). The provisioning topics have been moved to [Configure Windows 10](../configure/index.md).
+
 ## March 2017
 | New or changed topic | Description |
 |----------------------|-------------|
@@ -18,6 +29,7 @@ This topic lists new and updated topics in the [Deploy Windows 10](index.md) doc
 | [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md) | Topic moved under [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) in the table of contents and title adjusted to clarify in-place upgrade. | 
 | [Upgrade to Windows 10 with System Center Configuration Manager](upgrade-to-windows-10-with-system-center-configuraton-manager.md) | Topic moved under [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-10-with-system-center-2012-r2-configuration-manager.md) in the table of contents and title adjusted to clarify in-place upgrade. | 
 | [Convert MBR partition to GPT](mbr-to-gpt.md) | New | 
+
 
 ## February 2017
 | New or changed topic | Description |

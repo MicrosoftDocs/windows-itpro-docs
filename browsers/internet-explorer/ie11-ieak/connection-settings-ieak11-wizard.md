@@ -15,13 +15,13 @@ The **Connection Settings** page of the Internet Explorer Administration Kit (IE
 
 **Note**<br>Using the options on the **Additional Settings** page of the wizard, you can let your employees change their connection settings. For more information see the [Additional Settings](additional-settings-ieak11-wizard.md) page. You can also customize additional connection settings using the **Automatic Configuration** page in the wizard. For more information see the [Automatic Configuration](auto-config-ieak11-wizard.md) page.
 
-![](images/wedge.gif) **To view your current connection settings**
+**To view your current connection settings**
 
 1.  Open IE, click the **Tools** menu, click **Internet Options**, and then click the **Connections** tab.
 
 2.  Click **Settings** to view your dial-up settings and click **LAN Settings** to view your network settings.
 
-![](images/wedge.gif) **To use the Connection Settings page**
+**To use the Connection Settings page**
 
 1.  Decide if you want to customize your connection settings. You can pick:
 

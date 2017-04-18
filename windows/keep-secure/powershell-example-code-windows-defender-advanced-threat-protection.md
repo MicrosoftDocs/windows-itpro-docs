@@ -21,8 +21,6 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
-
 This article provides PowerShell code examples for using the custom threat intelligence API.
 
 These code examples demonstrate the following tasks:
@@ -38,19 +36,43 @@ The following example demonstrates how to obtain an Azure AD access token that y
 
 Replace the *authUrl*, *clientid*, and *clientSecret* values with the ones you got from **Preferences settings** page in the portal:
 
-[!code[CustomTIAPI](./code/example.ps1#L1-L14)]
+```powershell
+$authUrl = 'Your Authorization URL'
+$clientId = 'Your Client ID'
+$clientSecret = 'Your Client Secret'
+
+$tokenPayload = @{
+    "resource"='https://graph.windows.net'
+    "client_id" = $clientId
+    "client_secret" = $clientSecret
+    "grant_type"='client_credentials'}
+
+$response = Invoke-RestMethod $authUrl -Method Post -Body $tokenPayload
+$token = $response.access_token
+
+```
 
 <span id="header" />
 ## Step 2: Create headers used for the requests with the API
 Use the following code to create the headers used for the requests with the API:
 
-[!code[CustomTIAPI](./code/example.ps1#L16-L19)]
+```powershell
+$headers = @{
+    "Content-Type"="application/json"
+    "Accept"="application/json"
+    "Authorization"="Bearer {0}" -f $token }
+
+$apiBaseUrl = "https://ti.securitycenter.windows.com/V1.0/"
+```
 
 <span id="calls" />
 ## Step 3: Create calls to the custom threat intelligence API
 After creating the headers, you can now create calls to the API. The following example demonstrates how you can view all the alert definition entities:
 
-[!code[CustomTIAPI](./code/example.ps1#L21-L24)]
+```powershell
+$alertDefinitions =
+    (Invoke-RestMethod ("{0}AlertDefinitions" -f $apiBaseUrl) -Method Get -Headers $headers).value
+```
 
 The response is empty on initial use of the API.
 
@@ -58,22 +80,101 @@ The response is empty on initial use of the API.
 ## Step 4: Create a new alert definition
 The following example demonstrates how you to create a new alert definition.
 
-[!code[CustomTIAPI](./code/example.ps1#L26-L39)]
+```powershell
+$alertDefinitionPayload = @{
+    "Name"= "The alert's name"
+    "Severity"= "Low"
+    "InternalDescription"= "An internal description of the Alert"
+    "Title"= "The Title"
+    "UxDescription"= "Description of the alerts"
+    "RecommendedAction"= "The alert's recommended action"
+    "Category"= "Trojan"
+    "Enabled"= "true"}
+
+$alertDefinition =
+    Invoke-RestMethod ("{0}AlertDefinitions" -f $apiBaseUrl) `
+        -Method Post -Headers $headers -Body ($alertDefinitionPayload | ConvertTo-Json)
+```
 
 <span id="ioc" />
 ## Step 5: Create a new indicator of compromise
 You can now use the alert ID obtained from creating a new alert definition to create a new indicator of compromise.
 
-[!code[CustomTIAPI](./code/example.ps1#L43-L53)]
+```powershell
+$iocPayload = @{
+    "Type"="Sha1"
+    "Value"="dead1111eeaabbccddeeaabbccddee11ffffffff"
+    "DetectionFunction"="Equals"
+    "Enabled"="true"
+    "AlertDefinition@odata.bind"="AlertDefinitions({0})" -f $alertDefinitionId }
+
+
+$ioc =
+    Invoke-RestMethod ("{0}IndicatorsOfCompromise" -f $apiBaseUrl) `
+         -Method Post -Headers $headers -Body ($iocPayload | ConvertTo-Json)
+```
 
 ## Complete code
 You can use the complete code to create calls to the API.
 
-[!code[CustomTIAPI](./code/example.ps1#L1-L53)]
+```powershell
+$authUrl = 'Your Authorization URL'
+$clientId = 'Your Client ID'
+$clientSecret = 'Your Client Secret'
+
+$tokenPayload = @{
+    "resource"='https://graph.windows.net'
+    "client_id" = $clientId
+    "client_secret" = $clientSecret
+    "grant_type"='client_credentials'}
+
+$response = Invoke-RestMethod $authUrl -Method Post -Body $tokenPayload
+$token = $response.access_token
+
+$headers = @{
+    "Content-Type"="application/json"
+    "Accept"="application/json"
+    "Authorization"="Bearer {0}" -f $token }
+
+$apiBaseUrl = "https://ti.securitycenter.windows.com/V1.0/"
+
+$alertDefinitions =
+    (Invoke-RestMethod ("{0}AlertDefinitions" -f $apiBaseUrl) -Method Get -Headers $headers).value
+
+$alertDefinitionPayload = @{
+    "Name"= "The alert's name"
+    "Severity"= "Low"
+    "InternalDescription"= "An internal description of the Alert"
+    "Title"= "The Title"
+    "UxDescription"= "Description of the alerts"
+    "RecommendedAction"= "The alert's recommended action"
+    "Category"= "Trojan"
+    "Enabled"= "true"}
+
+$alertDefinition =
+    Invoke-RestMethod ("{0}AlertDefinitions" -f $apiBaseUrl) `
+        -Method Post -Headers $headers -Body ($alertDefinitionPayload | ConvertTo-Json)
+
+$alertDefinitionId = $alertDefinition.Id
+
+$iocPayload = @{
+    "Type"="Sha1"
+    "Value"="dead1111eeaabbccddeeaabbccddee11ffffffff"
+    "DetectionFunction"="Equals"
+    "Enabled"="true"
+    "AlertDefinition@odata.bind"="AlertDefinitions({0})" -f $alertDefinitionId }
+
+
+$ioc =
+    Invoke-RestMethod ("{0}IndicatorsOfCompromise" -f $apiBaseUrl) `
+         -Method Post -Headers $headers -Body ($iocPayload | ConvertTo-Json)
+
+```
 
 ## Related topics
 - [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
-- [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md)
-- [Create custom threat intelligence alerts](custom-ti-api-windows-defender-advanced-threat-protection.md)
-- [Python code examples](python-example-code-windows-defender-advanced-threat-protection.md)
+- [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)
+- [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Python code examples for the custom threat intelligence API](python-example-code-windows-defender-advanced-threat-protection.md)
+- [Experiment with custom threat intelligence alerts](experiment-custom-ti-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)

@@ -41,7 +41,6 @@ Suppose instead that you sign in on **Device B** and change your password for yo
 - [Windows Hello for Business](hello-identity-verification.md)
 - [How Windows Hello for Business works](hello-how-it-works.md)
 - [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
-- [Enable phone sign-in to PC or VPN](hello-enable-phone-signin.md)
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)

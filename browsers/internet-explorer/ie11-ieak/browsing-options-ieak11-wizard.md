@@ -15,7 +15,7 @@ The **Browsing Options** page of the Internet Explorer Administration Kit (IEAK 
 
 The choices that you make on this page affect only the items shown on the **Favorites, Favorites Bar, and Feeds** page.
 
-![](images/wedge.gif) **To use the Browsing Options page**
+**To use the Browsing Options page**
 
 1.  Decide how you want to manage links that are already installed on your employee’s computer:
 

@@ -4,6 +4,7 @@ description: Provides guidance on ways to customize the OS privacy settings, as 
 keywords: ["Windows 10 deployment", "recommendations", "privacy settings", "school"]
 ms.mktglfcycl: plan
 ms.sitesec: library
+localizationpriority: high
 author: CelesteDG
 ---
 
@@ -15,7 +16,7 @@ author: CelesteDG
 
 Your privacy is important to us, so we want to provide you with ways to customize the OS privacy settings, as well as some of the apps, so that you can choose what information is shared with Microsoft. To learn more about Microsoft’s commitment to privacy, see [Windows 10 and privacy](https://go.microsoft.com/fwlink/?LinkId=809305).
 
-Here are some best practices and specific privacy settings we’d like you to be aware of.
+Here are some best practices and specific privacy settings we’d like you to be aware of. Also see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md) for more information about ways to customize the OS diagnostic data, consumer experiences, Cortana, and search.
 
 ## Deployment best practices
 
@@ -41,11 +42,11 @@ To change the setting, you can:
 To turn off access to contacts for all apps on individual Windows devices:
 1. On the computer, go to **Settings** and select **Privacy**.
 
-   ![Privacy settings](images/settings-privacy-marked.png)
+   ![Privacy settings](images/win10_settings_privacy.png)
 
 2. Under the list of **Privacy** areas, select **Contacts**.
 
-   ![Contacts privacy settings](images/privacy-contacts-marked.png)
+   ![Contacts privacy settings](images/win10_settings_privacy_contacts.png)
 
 3. Turn off **Let apps access my contacts**.
 
@@ -56,7 +57,7 @@ For IT-managed Windows devices, you can use a Group Policy to turn off the setti
 ### Choose the apps that you want to allow access to contacts
 If you want to allow only certain apps to have access to contacts, you can use the switch for each app to specify which ones you want on or off.
 
-![Choose apps with access to contacts](images/settings-contacts-app-marked.png)
+![Choose apps with access to contacts](images/win10_settings_privacy_contacts_apps.png)
 
 The list of apps on the Windows-based device may vary from the above example. The list depends on what apps you have installed and which of these apps access contacts.
 
@@ -64,11 +65,11 @@ To allow only certain apps to have access to contacts, you can:
 * Configure each app individually using the **Settings** > **Contacts** option in the Windows UI
 * Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access contacts** and then specify the default for each app by adding the app's Package Family Name under the default behavior you want to enforce.
 
-   ![App privacy Group Policy](images/app-privacy-group-policy.png)
+   ![App privacy Group Policy](images/gp_letwinappsaccesscontacts.png)
 
 ## Skype and Xbox settings
 
-Skype Preview (a Universal Windows Platform [UWP] preview app) and Xbox are preinstalled as part of Windows 10.
+Skype (a Universal Windows Platform [UWP]) and Xbox are preinstalled as part of Windows 10.
 
 The Skype app replaces the integration of Skype features into Skype video and Messaging apps on Windows PCs and large tablets. The Skype app provides all these features in one place and lets users have a single place to manage both their chat and voice conversations so they can take better advantage of their screen. For information about the new Skype UWP app preview, see this [FAQ](https://go.microsoft.com/fwlink/?LinkId=821441).
 
@@ -85,21 +86,24 @@ If the school allows the use of personal or Microsoft account in addition to org
 Skype uses the user’s contact details to deliver important information about the account and it also lets friends find each other on Skype.
 
 To manage and edit your profile in the Skype UWP app, follow these steps:
-1.	In the Skype UWP app, select the user profile icon  ![Skype profile icon](images/skype-profile-icon.png)  to go to the user’s profile page.
-2.	In the **Accounts** section, select **Manage** for the Skype account that you want to change. This will take you to the online Skype portal.
-3.	In the online Skype portal, scroll down to the Account details section. In Settings and preferences, select Edit profile.
-The profile page includes these sections:
-	 * Profile completeness
-   * Personal information
-   * Contact details
-4. Review the information in each section and click **Edit** to change the information being shared.
-5.	If you do not wish your name to be included, replace the fields with **XXX**.
-6.	To change your profile picture, simply click on the current profile picture or avatar. The **Manage Profile Picture** window pops up.
+1.	In the Skype UWP app, select the user profile icon ![Skype profile icon](images/skype_uwp_userprofile_icon.png)  to go to the user’s profile page.
+2.	In the account page, select **Manage account** for the Skype account that you want to change. This will take you to the online Skype portal.
+3.	In the online Skype portal, scroll down to the **Account details** section. In **Settings and preferences**, click **Edit profile**.
 
-   ![Skype profile icon](images/skype-manage-profile-pic.png)
+    The profile page includes these sections:
+
+        * Personal information
+        * Contact details
+        * Profile settings
+
+4. Review the information in each section and click **Edit profile** in either or both the **Personal information** and **Contact details** sections to change the information being shared. You can also remove the checks in the **Profile settings** section to change settings on discoverability, notifications, and staying in touch.
+5.	If you do not wish the name to be included, edit the fields and replace the fields with **XXX**.
+6.	To change the profile picture, go to the Skype app and click on the current profile picture or avatar. The **Manage Profile Picture** window pops up.
+
+   ![Skype profile icon](images/skype_uwp_manageprofilepic.png)
 
    * To take a new picture, click the camera icon in the pop up window. To upload a new picture, click the three dots (**...**).
-   * You can also change the visibility of your profile picture between public (everyone) or your contacts only. To change the profile picture visibility, select the dropdown under **Profile picture** and choose between **Show to everyone** or **Show to contacts only**.
+   * You can also change the visibility of the profile picture between public (everyone) or for contacts only. To change the profile picture visibility, select the dropdown under **Profile picture** and choose between **Show to everyone** or **Show to contacts only**.
 
 #### Xbox
 A user’s Xbox friends and their friends’ friends can see their real name and profile. By default, the Xbox privacy settings enforce that no personal identifying information of a minor is shared on the Xbox Live network, although adults in the child’s family can change these default settings to allow it to be more permissive.

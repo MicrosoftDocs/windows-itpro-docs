@@ -1,6 +1,6 @@
 ---
-title: Check sensor health state in Windows Defender ATP
-description: Check sensor health on machines to see if they are misconfigured or inactive.
+title: Check the health state of the sensor in Windows Defender ATP
+description: Check the sensor health on machines to identify which ones are misconfigured, inactive, or are not reporting sensor data.
 keywords: sensor, sensor health, misconfigured, inactive, no sensor data, sensor data, impaired communication, communication
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -21,7 +21,6 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
 
 The sensor health tile provides information on the individual endpoint’s ability to provide sensor data and communicate with the Windows Defender ATP service. It reports how many machines require attention and helps you identify problematic machines and take action to correct known issues.
 

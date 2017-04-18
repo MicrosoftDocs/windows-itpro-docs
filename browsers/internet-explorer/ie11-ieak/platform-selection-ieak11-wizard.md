@@ -13,7 +13,7 @@ ms.sitesec: library
 #  Use the Platform Selection page in the IEAK 11 Wizard
 The **Platform Selection** page of the Internet Explorer Customization Wizard 11 lets you pick the operating system and architecture (32-bit or 64-bit) for the devices on which you’re going to install the custom installation package.
 
-![](images/wedge.gif) **To use the Platform Selection page**
+**To use the Platform Selection page**
 
 1.  Pick the operating system and architecture for the devices on which you’re going to install the custom package.<p>
 You must create individual packages for each supported operating system.<p>

@@ -67,6 +67,7 @@ When installing the BitLocker optional component on a server you will also need 
 
 | Topic | Description |
 | - | - |
+| [Overview of BitLocker and device encryption in Windows 10](bitlocker-device-encryption-overview-windows-10.md) | This topic for the IT professional provides an overview of the ways that BitLocker and device encryption can help protect data on devices running Windows 10.  |
 | [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.md) | This topic for the IT professional answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.| 
 | [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)| This topic for the IT professional explains how can you plan your BitLocker deployment. |
 | [BitLocker basic deployment](bitlocker-basic-deployment.md) | This topic for the IT professional explains how BitLocker features can be used to protect your data through drive encryption. |

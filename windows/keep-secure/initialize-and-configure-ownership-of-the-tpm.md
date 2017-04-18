@@ -112,7 +112,7 @@ Membership in the local Administrators group, or equivalent, is the minimum requ
 
 5.  After the PC restarts, your TPM will be automatically prepared for use by Windows 10.
 
-## <a href="" id="turn-on-or-turn-off"></a>Turn on or turn off the TPM (TPM 1.2 with Windows 10, version 1507 or 1511)
+## <a href="" id="turn-on-or-turn-off"></a>Turn on or turn off the TPM (available only with TPM 1.2 with Windows 10, version 1507 or 1511)
 
 Normally, the TPM is turned on as part of the TPM initialization process. You do not normally need to turn the TPM on or off. However, if necessary you can do so by using the TPM MMC.
 
@@ -147,6 +147,20 @@ If you want to stop using the services that are provided by the TPM, you can use
   -   If you do not have the removable storage device with your saved TPM owner password, click **I want to enter the password**. In the **Type your TPM owner password** dialog box, type your password (including hyphens), and then click **Turn TPM Off**.
 
   -   If you did not save your TPM owner password or no longer know it, click **I do not have the TPM owner password**, and follow the instructions that are provided in the dialog box and subsequent UEFI screens to turn off the TPM without entering the password.
+  
+### Change the TPM Owner Password (available only with Windows 10, version 1607 and earlier versions)
+
+If you have the [owner password](https://technet.microsoft.com/itpro/windows/keep-secure/change-the-tpm-owner-password) available, you can use TPM.msc to change the TPM Owner Password.
+
+1.  Open the TPM MMC (tpm.msc).
+
+2. In the **Action** pane, click **Change the Owner Password**
+
+  -   If you saved your TPM owner password on a removable storage device, insert it, and then click **I have the owner password file**. In the **Select backup file with the TPM owner password** dialog box, click **Browse** to locate the .tpm file that is saved on your removable storage device, click **Open**, and then click **Turn TPM Off**.
+
+  -   If you do not have the removable storage device with your saved TPM owner password, click **I want to enter the password**. In the **Type your TPM owner password** dialog box, type your password (including hyphens), and then click **Turn TPM Off**.
+
+This capability was fully removed from TPM.msc in later versions of Windows.
 
 ## Use the TPM cmdlets
 

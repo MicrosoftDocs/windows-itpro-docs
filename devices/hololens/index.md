@@ -33,8 +33,8 @@ localizationpriority: medium
 
 - [Help for using HoloLens](https://support.microsoft.com/products/hololens)
 
-- [Documentation for Holographic app development](https://developer.microsoft.com/windows/holographic/documentation)
+- [Documentation for Holographic app development](https://developer.microsoft.com/windows/mixed-reality/documentation)
 
 - [HoloLens Commercial Suite](https://www.microsoft.com/microsoft-hololens/hololens-commercial)
 
-- [HoloLens release notes](https://developer.microsoft.com/en-us/windows/holographic/release_notes)
+- [HoloLens release notes](https://developer.microsoft.com/en-us/windows/mixed-reality/release_notes)

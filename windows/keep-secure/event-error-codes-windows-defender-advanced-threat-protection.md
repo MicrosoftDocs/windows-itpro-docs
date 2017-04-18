@@ -192,8 +192,8 @@ See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defen
 </tr>
 <tr>
 <td>27</td>
-<td>Windows Defender Advanced Threat Protection service failed to enable SENSE aware mode in Windows Defender. Onboarding process failed. Failure code: ```variable```.</td>
-<td>Normally, Windows Defender will enter a special passive state if another real-time antimalware product is running properly on the endpoint, and the endpoint is reporting to Windows Defender ATP.</td>
+<td>Windows Defender Advanced Threat Protection service failed to enable SENSE aware mode in Windows Defender Antivirus. Onboarding process failed. Failure code: ```variable```.</td>
+<td>Normally, Windows Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the endpoint, and the endpoint is reporting to Windows Defender ATP.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md).<br>
 Ensure real-time antimalware protection is running properly.</td>
@@ -208,8 +208,8 @@ See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defen
 </tr>
 <tr>
 <td>30</td>
-<td>Windows Defender Advanced Threat Protection service failed to disable SENSE aware mode in Windows Defender. Failure code: ```variable```.</td>
-<td>Normally, Windows Defender will enter a special passive state if another real-time antimalware product is running properly on the endpoint, and the endpoint is reporting to Windows Defender ATP.</td>
+<td>Windows Defender Advanced Threat Protection service failed to disable SENSE aware mode in Windows Defender Antivirus. Failure code: ```variable```.</td>
+<td>Normally, Windows Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the endpoint, and the endpoint is reporting to Windows Defender ATP.</td>
 <td>Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages.<br>
 See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)<br>
 Ensure real-time antimalware protection is running properly.</td>

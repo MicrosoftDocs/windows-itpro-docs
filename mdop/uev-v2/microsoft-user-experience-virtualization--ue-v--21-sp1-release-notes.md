@@ -130,6 +130,17 @@ If a UE-V 2 settings location template is distributed to a computer installed wi
 
 WORKAROUND: When migrating from UE-V 1 to UE-V 2 and it is likely you’ll have computers running the previous version of the agent, create a separate UE-V 2.x catalog to support the UE-V 2.x Agent and templates.
 
+### UE-V logoff delay
+
+Occassionally on logoff, UE-V takes a long time to sync settings. Typically, this is due to a high latency network or incorrect use of Distrubuted File System (DFS).
+For DFS support, see [Microsoft’s Support Statement Around Replicated User Profile Data](https://support.microsoft.com/en-us/kb/2533009) for further details.
+
+WORKAROUND: Starting with HF03, a new registry key has been introduced  
+The following registry key provides a mechanism by which the maximum logoff delay can be specified   
+\\Software\\Microsoft\\UEV\\Agent\\Configuration\\LogOffWaitInterval
+
+See [UE-V registry settings](https://support.microsoft.com/en-us/kb/2770042) for further details
+
 ## Hotfixes and Knowledge Base articles for UE-V 2.1 SP1
 
 

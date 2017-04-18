@@ -131,16 +131,12 @@ The following table lists the Group Policy settings that you can configure for W
 </td>
 </tr>
 <tr>
-<td><a href="hello-prepare-people-to-use.md#bmk-remote">Phone Sign-in</a></td>
+<td>>Phone Sign-in</td>
 <td>
 <p>Use Phone Sign-in</p>
-<div class="alert"><b>Note</b>  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.</div>
-<div> </div>
 </td>
 <td>
-<p><b>Not configured</b>: Phone sign-in is disabled.</p>
-<p><b>Enabled</b>: Users can use a portable, registered device as a companion device for desktop authentication.</p>
-<p><b>Disabled</b>: Phone sign-in is disabled.</p>
+<p>Not currently supported.</p>
 </td>
 </tr>
 </table>
@@ -283,14 +279,11 @@ The following table lists the MDM policy settings that you can configure for Win
 <td>Remote</td>
 <td>
 <p>UseRemotePassport</p>
-<div class="alert"><b>Note</b>  Applies to desktop only. Phone sign-in is currently limited to select Technology Adoption Program (TAP) participants.</div>
-<div> </div>
 </td>
 <td>Device or user</td>
 <td>False</td>
 <td>
-<p>True: <a href="hello-prepare-people-to-use.md#bmk-remote">Phone sign-in</a> is enabled.</p>
-<p>False: <a href="hello-prepare-people-to-use.md#bmk-remote">Phone sign-in</a> is disabled.</p>
+<p>Not currently supported.</p>
 </td>
 </tr>
 </table>
@@ -314,7 +307,7 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <tr class="header">
 <th align="left">Windows Hello for Business mode</th>
 <th align="left">Azure AD</th>
-<th align="left">Active Directory (AD) on-premises (available with production release of Windows Server 2016)</th>
+<th align="left">Active Directory (AD) on-premises (only supported with Windows 10, version 1703 clients)</th>
 <th align="left">Azure AD/AD hybrid (available with production release of Windows Server 2016)</th>
 </tr>
 </thead>
@@ -325,7 +318,6 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <td align="left"><ul>
 <li>Active Directory Federation Service (AD FS) (Windows Server 2016)</li>
 <li>A few Windows Server 2016 domain controllers on-site</li>
-<li>Microsoft System Center 2012 R2 Configuration Manager SP2</li>
 </ul></td>
 <td align="left"><ul>
 <li>Azure AD subscription</li>
@@ -346,7 +338,6 @@ You’ll need this software to set Windows Hello for Business policies in your e
 <li>ADFS (Windows Server 2016)</li>
 <li>Active Directory Domain Services (AD DS) Windows Server 2016 schema</li>
 <li>PKI infrastructure</li>
-<li>Configuration Manager SP2, Intune, or non-Microsoft MDM solution</li>
 </ul></td>
 <td align="left"><ul>
 <li>Azure AD subscription</li>
@@ -362,7 +353,8 @@ Configuration Manager and MDM provide the ability to manage Windows Hello for Bu
 
 Azure AD provides the ability to register devices with your enterprise and to provision Windows Hello for Business for organization accounts.
 
-
+>[!IMPORTANT]
+>Active Directory on-premises deployment **is not currently available** and will become available with a future update of ADFS on Windows Server 2016. The requirements listed in the above table will apply when this deployment type becomes available.
 
 
 ## How to use Windows Hello for Business with Azure Active Directory
@@ -381,7 +373,6 @@ If you want to use Windows Hello for Business with certificates, you’ll need a
 
 - [Windows Hello for Business](hello-identity-verification.md)
 - [How Windows Hello for Business works](hello-how-it-works.md)
-- [Enable phone sign-in to PC or VPN](hello-enable-phone-signin.md)
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)

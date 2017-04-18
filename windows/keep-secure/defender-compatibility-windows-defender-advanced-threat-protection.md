@@ -22,12 +22,12 @@ localizationpriority: high
 - Windows Defender
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-The Windows Defender Advanced Threat Protection agent depends on Windows Defender for some capabilities such as file scanning.
+The Windows Defender Advanced Threat Protection agent depends on Windows Defender Antivirus for some capabilities such as file scanning.
 
-If an onboarded endpoint is protected by a third-party antimalware client, Windows Defender on that endpoint will enter into passive mode.
+If an onboarded endpoint is protected by a third-party antimalware client, Windows Defender Antivirus on that endpoint will enter into passive mode.
 
-Windows Defender will continue to receive updates, and the *mspeng.exe* process will be listed as a running a service, but it will not perform scans and will not replace the running third-party antimalware client.
+Windows Defender Antivirus will continue to receive updates, and the *mspeng.exe* process will be listed as a running a service, but it will not perform scans and will not replace the running third-party antimalware client.
 
-The Windows Defender interface will be disabled, and users on the endpoint will not be able to use Windows Defender to perform on-demand scans or configure most options.
+The Windows Defender Antivirus interface will be disabled, and users on the endpoint will not be able to use Windows Defender Antivirus to perform on-demand scans or configure most options.
 
-For more information, see the **Compatibility** section in the [Windows Defender in Windows 10 topic](windows-defender-in-windows-10.md).
+For more information, see the [Windows Defender Antivirus and Windows Defender ATP compatibility topic](windows-defender-antivirus-compatibility.md).

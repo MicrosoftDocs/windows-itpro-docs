@@ -44,11 +44,10 @@ As indicated in the diagram, Microsoft continues to provide support for deep man
 
 With Windows 10, you can continue to use traditional OS deployment, but you can also “manage out of the box.” To transform new devices into fully-configured, fully-managed devices, you can:
 
-<!-- The phrase "Windows Imaging and Configuration Designer (ICD)" below might need to be changed to "Windows Configuration Designer" -->
 
 -   Avoid reimaging by using dynamic provisioning, enabled by a cloud-based device management services like [Microsoft Intune](https://docs.microsoft.com/intune/understand-explore/introduction-to-microsoft-intune).
 
--   Create self-contained provisioning packages built with the [Windows Imaging and Configuration Designer (ICD)](https://msdn.microsoft.com/library/windows/hardware/dn916113(v=vs.85).aspx).
+-   Create self-contained provisioning packages built with the [Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/deploy/provisioning-packages).
 
 -   Use traditional imaging techniques such as deploying custom images using [System Center Configuration Manager](https://docs.microsoft.com/sccm/core/understand/introduction).
 
