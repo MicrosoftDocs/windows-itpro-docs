@@ -95,7 +95,7 @@ The settings that are used to enable client computers to connect to Windows Tele
 |---------------------------------------------------------|-----------|-----------|
 | Direct connection to the Internet (no proxy) | **ClientProxy=Direct** | No additional configuration necessary |
 | WinHTTP proxy  | **ClientProxy=System**  | Specify `netsh winhttp set proxy <server>:<port>` on client computers |
-| Other proxy  |  **ClientProxy=User** | Configure the Windows Registry value: **HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection\DisableEnterpriseAuthProxy** to 0 on client computers |
+| Other proxy  |  **ClientProxy=User** | Configure the Windows Registry value: <p style="font-size: 12px"> **HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection\DisableEnterpriseAuthProxy** </p> to 0 on client computers |
 
 ## Deploy the compatibility update and related KBs
 
