@@ -21,7 +21,9 @@ localizationpriority: high
 
 The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers. These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time. 
 
-<iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/MLc4-Suv0LU" frameborder="0" allowfullscreen></iframe>
+| |
+| :---: |
+| <iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/MLc4-Suv0LU" frameborder="0" allowfullscreen></iframe> |
 
 ## Building
 
