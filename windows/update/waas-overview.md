@@ -21,6 +21,8 @@ localizationpriority: high
 
 The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers. These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time. 
 
+<iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/MLc4-Suv0LU" frameborder="0" allowfullscreen></iframe>
+
 ## Building
 
 Prior to Windows 10, Microsoft released new versions of Windows every few years. This traditional deployment schedule imposed a training burden on users because the feature revisions were often significant. That schedule also meant waiting long periods without new features — a scenario that doesn’t work in today’s rapidly changing world, a world in which new security, management, and deployment capabilities are necessary to address challenges. Windows as a service will deliver smaller feature updates two to three times per year to help address these issues.
