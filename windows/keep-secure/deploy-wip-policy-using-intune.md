@@ -14,8 +14,8 @@ localizationpriority: high
 # Deploy your Windows Information Protection (WIP) policy using Microsoft Azure Intune
 **Applies to:**
 
-- Windows 10, version 1703
-- Windows 10 Mobile, version 1703 (except Microsoft Azure Rights Management, which is only available on the desktop)
+- Windows 10, version 1607 and later
+- Windows 10 Mobile, version 1607 and later (except Microsoft Azure Rights Management, which is only available on the desktop)
 
 After you’ve created your Windows Information Protection (WIP) policy, you'll need to deploy it to your organization's enrolled devices. Enrollment can be done for business or personal devices, allowing the devices to use your managed apps and to sync with your managed content and information.
 
