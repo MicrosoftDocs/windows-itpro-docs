@@ -24,7 +24,7 @@ Specifying an executable as a managed installer will cause Windows to tag files 
 Once the IT administrator adds the Allow: Managed Installer option to a configurable CI policy for Device Guard, the configurable CI component will subsequently check for the presence of the origin information when evaluating other application execution control rules specified in the policy. 
 If there are no deny rules present for the file, it will be authorized based on the managed installer origin information.
 
-> ![NOTE] 
+> [!NOTE] 
 > Admins needs to ensure that there is a CI policy in place to allow the system to boot and run any other authorized applications that may not be deployed through a managed installer. 
 >
 > Examples of CI policies available in C:\Windows\schemas\CodeIntegrity\ExamplePolicies help authorize Windows OS components, WHQL signed drivers and all Store apps. 
