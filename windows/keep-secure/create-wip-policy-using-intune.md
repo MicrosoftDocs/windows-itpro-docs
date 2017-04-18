@@ -14,8 +14,8 @@ localizationpriority: high
 
 **Applies to:**
 
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703 (except Microsoft Azure Rights Management, which is only available on the desktop)
+-   Windows 10, version 1607 and later
+-   Windows 10 Mobile, version 1607 and later (except Microsoft Azure Rights Management, which is only available on the desktop)
 
 Microsoft Azure Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network.
 
