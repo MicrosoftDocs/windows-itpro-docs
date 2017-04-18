@@ -91,11 +91,11 @@ Note: The compatibility update KB runs under the computer’s system account.
 
 The settings that are used to enable client computers to connect to Windows Telemetry depend on the type of connection scenario you use. These scenarios are discussed in [this blog post](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) and are summarized below.
 
-| **Connection scenario** | **ClientProxy setting**  | **Local computer configuration** |
+| **Connection scenario** | **ClientProxy setting** <BR>in **runconfig.bat**  | **Local computer configuration** |
 |---------------------------------------------------------|-----------|-----------|
-| Direct connection to the Internet (no proxy) | Set **ClientProxy=Direct** in **runconfig.bat** | No other configuration necessary |
-| WinHTTP proxy  | Set **ClientProxy=System** in **runconfig.bat**  | Specify `netsh winhttp set proxy <server>:<port>` on client computers |
-| Other proxy  |  Set **ClientProxy=User** in **runconfig.bat** | Configure the Windows Registry value **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection\DisableEnterpriseAuthProxy** to 0 on client computers |
+| Direct connection to the Internet (no proxy) | **ClientProxy=Direct** | No additional configuration necessary |
+| WinHTTP proxy  | **ClientProxy=System**  | Specify `netsh winhttp set proxy <server>:<port>` on client computers |
+| Other proxy  |  **ClientProxy=User** | Configure the Windows Registry value: **HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection\DisableEnterpriseAuthProxy** to 0 on client computers |
 
 ## Deploy the compatibility update and related KBs
 
