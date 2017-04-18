@@ -202,7 +202,7 @@ To check out all the details, see [Configure Delivery Optimization for Windows 1
 
 ### Uninstalled in-box apps no longer automatically reinstall
 
-When upgrading to Windows 10, version 1703, in-box apps that were uninstalled by the user won't automatically reinstall as part of the feature update installation process.  (Apps de-provisioned by IT administrators will still be reinstalled.)
+Starting with Windows 10, version 1703, in-box apps that were uninstalled by the user won't automatically reinstall as part of the next feature update installation process. (Apps de-provisioned by IT administrators will still be reinstalled)
 
 ## Management
 
