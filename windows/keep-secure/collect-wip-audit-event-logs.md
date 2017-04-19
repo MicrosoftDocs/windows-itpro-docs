@@ -65,7 +65,7 @@ Here are a few examples of responses from the Reporting CSP.
 #### File ownership on a file is changed from work to personal
 ```
 <SyncML><SyncHdr/><SyncBody><Status><CmdID>1</CmdID><MsgRef>1</MsgRef><CmdRef>0</CmdRef><Cmd>SyncHdr</Cmd><Data>200</Data></Status><Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>2</CmdRef><Cmd>Replace</Cmd><Data>200</Data></Status><Status><CmdID>3</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Cmd>Get</Cmd><Data>200</Data></Status><Results><CmdID>4</CmdID><MsgRef>1</MsgRef><CmdRef>4</CmdRef><Item><Source><LocURI>./Vendor/MSFT/Reporting/EnterpriseDataProtection/RetrieveByTimeRange/Logs</LocURI></Source><Meta><Format xmlns="syncml:metinf">xml</Format></Meta><Data>&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;Reporting Version="com.microsoft/2.0/MDM/Reporting"&gt;
+&lt;Reporting Version="com.contoso/2.0/MDM/Reporting"&gt;
   &lt;User UserID="S-1-12-1-1111111111-1111111111-1111111111-1111111111" EnterpriseID="corp.contoso.com"&gt;
     &lt;Log ProviderType="EDPAudit" LogType="ProtectionRemoved" TimeStamp="131357166318347527"&gt;
       &lt;Policy&gt;Protection removed&lt;/Policy&gt;
