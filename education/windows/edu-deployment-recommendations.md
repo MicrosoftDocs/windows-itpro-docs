@@ -6,6 +6,7 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 localizationpriority: high
 author: CelesteDG
+ms.prod: W10
 ---
 
 # Deployment recommendations for school IT administrators

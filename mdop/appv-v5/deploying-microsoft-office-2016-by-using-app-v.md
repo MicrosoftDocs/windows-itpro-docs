@@ -85,7 +85,7 @@ Before you deploy Office by using App-V, review the following requirements.
 <ul>
 <li><p>All of the Office applications that you want to deploy to users must be in a single package.</p></li>
 <li><p>In App-V 5.0 and later, you must use the Office Deployment Tool to create packages. You cannot use the Sequencer.</p></li>
-<li><p>If you are deploying Microsoft Visio 2016 and Microsoft Project 2016 along with Office, you must include them in the same package with Office. For more information, see [Deploying Visio 2016 and Project 2016 with Office](#deploying-visio-2016-and-project-2016-with-office).</p></li>
+<li><p>If you are deploying Microsoft Visio 2016 and Microsoft Project 2016 along with Office, you must include them in the same package with Office. For more information, see [Deploying Visio 2016 and Project 2016 with Office](#bkmk-deploy-visio-project).</p></li>
 </ul></td>
 </tr>
 <tr class="even">
