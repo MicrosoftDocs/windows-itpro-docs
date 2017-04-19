@@ -422,7 +422,7 @@ There are no default locations included with WIP, you must add each of your netw
         <tr>
             <td>Internal proxy servers</td>
             <td>contoso.internalproxy1.com;contoso.internalproxy2.com</td>
-            <td>Specify the proxy servers your devices will go through to reach your cloud resources.<br><br>Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<br><br>This list shouldn’t include any servers listed in the Proxy servers list, which are used for non-WIP-protected traffic.<br><br>If you have multiple resources, you must separate them using the ";" delimiter.</td>
+            <td>Specify the proxy servers your devices will go through to reach your cloud resources.<br><br>Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<br><br>This list shouldn’t include any servers listed in the Proxy servers list, which are used for WIP-protected traffic.<br><br>If you have multiple resources, you must separate them using the ";" delimiter.</td>
         </tr>
         <tr>
             <td>IPv4 ranges</td>
