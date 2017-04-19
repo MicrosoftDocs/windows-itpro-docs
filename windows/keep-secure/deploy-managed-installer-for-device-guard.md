@@ -5,7 +5,7 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 localizationpriority: high
-author: justinha
+author: mdsakibMSFT
 ---
 
 # Deploy Managed Installer for Device Guard
