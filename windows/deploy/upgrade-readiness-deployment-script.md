@@ -264,6 +264,26 @@ or <div style='font-size:7.0pt'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersio
 <TD>Function **EndImpersonatingLoggedOnUser** failed with an unexpected exception. 
 <TD>Check the logs for the exception message and HResult.
 
+<TR><TD>44</TD>
+<TD>Function **Diagtrack.dll** version is old and so Auth Proxy will not work. 
+<TD>Update the computer using Windows Update or WSUS.
+
+<TR><TD>45</TD>
+<TD>**Diagtrack.dll** not found. 
+<TD>Update the computer using Windows Update or WSUS.
+
+<TR><TD>46</TD>
+<TD>**DisableEnterpriseAuthProxy** property should be set to 1 for ClientProxy=Telemetry to work. 
+<TD>The ClientProxy=Telemetry scenario requires the **DisableEnterpriseAuthProxy** registry key to be set to 1 at registry path: **HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**.
+
+<TR><TD>47</TD>
+<TD>**TelemetryProxyServer** property is not present in the Windows registry at **HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**. 
+<TD>ClientProxy selected is Telemetry. The **TelemetryProxyServer** key is not present at Windows registry path: **HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**.
+
+<TR><TD>48</TD>
+<TD>The **CommercialID** referenced in RunConfig.bat must be a GUID. 
+<TD>The **CommercialID** that is entered in RunConfig.bat must be a GUID. Copy the commercial ID from your workspace.  To find the commercialID on the OMS portal, view Upgrade Readiness > Settings.  You will find the commercial ID on the settings page.
+
 </TABLE>
 
 </div>
