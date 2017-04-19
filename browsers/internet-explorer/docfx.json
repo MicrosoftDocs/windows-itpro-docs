@@ -14,7 +14,10 @@
         }
     ],
     "globalMetadata": {
-        "ROBOTS": "INDEX, FOLLOW"
+        "ROBOTS": "INDEX, FOLLOW",
+		"author": "lizross",
+		"ms.technology": "internet-explorer",
+		"ms.topic": "article"
     },
     "externalReference": [
     ],
