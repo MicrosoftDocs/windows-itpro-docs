@@ -15,6 +15,7 @@ localizationpriority: high
 **Applies to**
 -   Windows 10
 -   Windows 10 Mobile
+-   Windows XP (Don't accept this)
 
 Most of the VPN settings in Windows 10 can be configured in VPN profiles using Microsoft Intune or System Center Configuration Manager. All VPN settings in Windows 10 can be configued using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx). 
 
