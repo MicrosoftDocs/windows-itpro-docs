@@ -18,6 +18,7 @@ This topic lists new and updated topics in the [Deploy Windows 10](index.md) doc
 | [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md) | Updated: The "refresh" and "replace" procedures were swapped in order so that it would not be necessary to save and restore VMs. Also a missing step was added to include the State migration point role. | 
 | [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md)| Updated with minor fixes. |
 | [Manage Windows upgrades with Upgrade Readiness](manage-windows-upgrades-with-upgrade-readiness.md)| Updated child topics under this node to include new feature and user interface changes. |
+| [Get started with Upgrade Readiness](upgrade-readiness-get-started.md)| Added a table summarizing connection scenarios under the Enable data sharing topic. |
 
 ## RELEASE: Windows 10, version 1703
 The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). The provisioning topics have been moved to [Configure Windows 10](../configure/index.md).

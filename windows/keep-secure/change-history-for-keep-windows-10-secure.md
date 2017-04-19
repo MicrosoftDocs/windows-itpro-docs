@@ -17,6 +17,7 @@ This topic lists new and updated topics in the [Keep Windows 10 secure](index.md
 |New or changed topic |Description |
 |---------------------|------------|
 |[Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Azure Intune](create-vpn-and-wip-policy-using-intune.md)|Updated based on Windows 10, version 1703. |
+|[How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md) |New |
 |[Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](mandatory-settings-for-wip.md) |Updated based on Windows 10, version 1703. |
 |[Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md) |Updated based on Windows 10, version 1703. |
 |[Deploy your Windows Information Protection (WIP) policy using Microsoft Intune](deploy-wip-policy-using-intune.md) |Updated based on Windows 10, version 1703.
