@@ -28,25 +28,7 @@ Learn about new features in the Windows Defender ATP preview release and be amon
 
 You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
 
-For more information, see [Turn on the preview experience](preview-settings-windows-defender-advanced-threat-protection.md).
+Turn on the preview experience setting to be among the first to try upcoming features.
 
-## Preview features
-The following features are included in the preview release:
-
-- [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md) - Quickly respond to detected attacks by isolating machines or collecting an investigation package.
-  - [Isolate machines from the network](respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
-  - [Undo machine isolation](respond-machine-alerts-windows-defender-advanced-threat-protection.md#undo-machine-isolation)
-  - [Collect investigation package](respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
-
-- [Take response actions on a file](respond-file-alerts-windows-defender-advanced-threat-protection.md) - Quickly respond to detected attacks by stopping and quarantining files or blocking a file.
-  - [Stop and quarantine files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#stop-and-quarantine-files-in-your-network)
-  - [Remove file from quarantine](respond-file-alerts-windows-defender-advanced-threat-protection.md#remove-file-from-quarantine)
-  - [Block files in your network](respond-file-alerts-windows-defender-advanced-threat-protection.md#block-files-in-your-network)
-
-- [Check sensor health state](check-sensor-status-windows-defender-advanced-threat-protection.md) - Check an endpoint's ability to provide sensor data and communicate with the Windows Defender ATP service and fix known issues.
-  - [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
-
-- [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md) - Create custom threat intelligence alerts using the threat intelligence API to generate alerts that are applicable to your organization.
-
->[!NOTE]
-> All response actions require machines to be on the latest Windows 10, version 1703.
+1. In the navigation pane, select **Preferences setup** > **Preview experience**.
+2. Toggle the setting between **On** and **Off** and select **Save preferences**.
