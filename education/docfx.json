@@ -14,7 +14,10 @@
         }
     ],
     "globalMetadata": {
-        "ROBOTS": "INDEX, FOLLOW"
+        "ROBOTS": "INDEX, FOLLOW",
+		"ms.author": "celested",
+		"audience": "windows-education",
+		"ms.topic": "article"
     },
     "externalReference": [
     ],

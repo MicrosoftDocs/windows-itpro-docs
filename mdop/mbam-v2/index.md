@@ -45,7 +45,7 @@ Microsoft BitLocker Administration and Monitoring (MBAM) 2.0 provides a simpl
 
 -   [MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032)
 
-    Find documentation, videos, and other resources for MDOP technologies. You can also [send us feedback](mailto:MDOPDocs@microsoft.com%29 or learn about updates by following us on [Facebook]%28https://go.microsoft.com/fwlink/p/?LinkId=242445%29 or [Twitter]%28https://go.microsoft.com/fwlink/p/?LinkId=242447).
+    Find documentation, videos, and other resources for MDOP technologies. You can also [send us feedback](mailto:MDOPDocs@microsoft.com) or learn about updates by following us on [Facebook](https://go.microsoft.com/fwlink/p/?LinkId=242445) or [Twitter](https://go.microsoft.com/fwlink/p/?LinkId=242447).
 
  
 
