@@ -27,7 +27,11 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+		"ms.technology": "windows",
+		"ms.topic": "article",
+		"ms.author": "jdecker"
+	},
     "fileMetadata": {},
     "template": [
       null
