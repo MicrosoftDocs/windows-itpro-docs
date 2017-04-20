@@ -1,12 +1,12 @@
-# Contributing to Windows IT professional documentation
+# Editing Windows IT professional documentation
 
 Thank you for your interest in the Windows IT professional documentation! We appreciate your feedback, edits, and additions to our docs.
-This page covers the basic steps for contributing to our technical documentation.
+This page covers the basic steps for editing our technical documentation.
 
 ## Sign a CLA
 
-All contributors who are ***not*** a Microsoft employee must [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/) before contributing to any Microsoft repositories. 
-If you've already contributed to Microsoft repositories in the past, congratulations! 
+All contributors who are ***not*** a Microsoft employee must [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/) before editing any Microsoft repositories. 
+If you've already edited within Microsoft repositories in the past, congratulations! 
 You've already completed this step.
 
 ## Editing topics
@@ -18,7 +18,7 @@ We've tried to make editing an existing, public file as simple as possible.
 
 **To edit a topic**
 
-1.	Go to the page on TechNet that you want to update, and then click **Contribute**.
+1.	Go to the page on TechNet that you want to update, and then click **Edit**.
 
     ![GitHub Web, showing the Contribute link](images/contribute-link.png)
 
@@ -61,13 +61,17 @@ We've tried to make editing an existing, public file as simple as possible.
 
     The pull request is sent to the writer of the topic and your edits are reviewed. If your request is accepted, updates are published to one of the following places:
 
-    - [Windows 10](https://technet.microsoft.com/itpro/windows)
-    - [Internet Explorer 11](https://technet.microsoft.com/itpro/internet-explorer)
-    - [Microsoft Edge](https://technet.microsoft.com/itpro/microsoft-edge)
-    - [Surface](https://technet.microsoft.com/itpro/surface)
-    - [Surface Hub](https://technet.microsoft.com/itpro/surface-hub)
-    - [Windows 10 for Education](https://technet.microsoft.com/edu/windows)
-    - [Microsoft Desktop Optimization Pack](https://technet.microsoft.com/itpro/mdop) 
+    - [Windows 10](https://docs.microsoft.com/windows/windows-10)
+    - [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy)    
+    - [Surface](https://docs.microsoft.com/surface)
+    - [Surface Hub](https://docs.microsoft.com/surface-hub)
+    - [HoloLens](https://docs.microsoft.com/hololens)
+    - [Microsoft Store](https://docs.microsoft.com/microsoft-store)
+    - [Windows 10 for Education](https://docs.microsoft.com/education/windows)
+    - [Windows 10 for SMB](https://docs.microsoft.com/windows/smb)
+    - [Internet Explorer 11](https://docs.microsoft.com/internet-explorer)
+    - [Microsoft Desktop Optimization Pack](https://docs.microsoft.com/microsoft-desktop-optimization-pack)
+
 
 ## Making more substantial changes
 
