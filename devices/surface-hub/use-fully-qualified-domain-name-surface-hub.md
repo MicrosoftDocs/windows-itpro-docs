@@ -4,6 +4,10 @@ description: Troubleshoot common problems, including setup issues, Exchange Acti
 keywords: ["Troubleshoot common problems", "setup issues", "Exchange ActiveSync errors"]
 author: TrudyHa
 localizationpriority: medium
+ms.prod: w10
+ms.mktglfcycl: support
+ms.sitesec: library
+ms.pagetype: surfacehub
 ---
 
 # Configure domain name for Skype for Business

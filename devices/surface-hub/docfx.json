@@ -14,7 +14,13 @@
         }
     ],
     "globalMetadata": {
-        "ROBOTS": "INDEX, FOLLOW"
+        "ROBOTS": "INDEX, FOLLOW",
+		"ms.technology": "windows",
+		"ms.topic": "article",
+		"ms.mktglfcycl": "manage",
+		"author": "jdeckerms",
+		"ms.sitesec": "library",
+		"ms.author": "jdecker"
     },
     "externalReference": [
     ],
