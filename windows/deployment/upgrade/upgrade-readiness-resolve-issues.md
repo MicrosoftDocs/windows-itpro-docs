@@ -182,6 +182,12 @@ Each item in the plan has the following attributes:
 | CumulativeUnblocked | The total number of computers that will become “Ready to upgrade” if you validate and mark this and all prior items in the proposed action plan “Ready to upgrade”.  For example, if ItemRank is 7, and CumulativeUnblocked is 950, then fixing items 1 thru 7 in the proposed action plan will cause 950 of your computers to become “Ready to upgrade.” | 950 | 
 | CumulativeUnblockedPct | The percentage of your machines that will become “Ready to upgrade” if you make this and all prior items in the proposed action plan “Ready to upgrade.” | 0.24 |   
 
+See the following example action plan items:
+
+<A HREF="../images/UR-lift-report.jpg">![Proposed action plan](../images/UR-lift-report.jpg)</A>
+
+In this example, the 3rd item is an application: **Microsoft Bing Sports**, a modern app, version **4.20.951.0**, published by Microsoft.  By validating this app and making its UpgradeDecision “Ready to upgrade”, you can potentially make **1014** computers “Ready to upgrade” – but only after you have already validated items 1 and 2 in the list.  By marking items 1, 2, and 3 “Ready to upgrade”, 14779 of your computers will become upgrade-ready.  This represents 10.96% of the machines in this workspace.  
+
 #### Using the proposed action plan
 
 There are several valid use cases for the proposed action plan.  But it’s always important to remember that the information presented in the Plan is only accurate when sorted by increasing Item Rank!  Here are three potential cases in which you could use the proposed action plan: 
