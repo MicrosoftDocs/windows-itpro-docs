@@ -11,65 +11,82 @@ author: CelesteDG
 ---
 
 # Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S
-
 Windows 10 Pro Education is a new offering in Windows 10 Anniversary Update (Windows 10, version 1607). This edition builds on the commercial version of Windows 10 Pro and provides important management controls needed in schools by providing education-specific default settings.
 
 If you have an education tenant and use Windows 10 Pro or Windows 10 S devices in your schools, global administrators can opt-in to a free switch to Windows 10 Pro Education depending on your scenario.
-
-- **[For schools with MAK license keys](#education-customers-with-mak-license-keys)** 
-
-    For schools with active Microsoft Volume Licensing agreements, you can obtain MAK or KMS keys for Windows 10 Pro Education. 
-    
-    You can apply MAK keys to switch the operating system on select devices or groups of devices using:
-
-    - Microsoft Intune for Education to push the operating system switch online
-    - Windows Configuration Designer to create a provisioning package that will provision the switch on the device(s)
-
-- **[For schools with Azure Active Directory joined devices](#education-customers-with-azure-ad-joined-devices)**
-
-    For schools that want to standardize all their Windows 10 S and Windows 10 Pro devices to Windows 10 Pro Education, you can opt-in to a free switch through the Microsoft Store for Business.
-
-    In this scenario:
-
-    - The IT admin of the tenant choose to turn on the switch for all Azure AD joined devices
-    - Any device that joins the Azure AD will switch automatically to Windows 10 Pro Education
-    - Devices can switch back to Windows 10 S later through reimaging only. To switch back to Windows 10 Pro, the device reverts seamlessly to Windows 10 Pro.
+- [Switch from Windows 10 S to Windows 10 Pro Education](#switch-from-windows-10s-to-windows-10-pro-education)
+- [Switch from Windows 10 Pro to Windows 10 Pro Education](#switch-from-windows-10-pro-to-windows-10-pro-education)
 
 To take advantage of this offering, make sure you meet the [requirements for switching](#requirements-for-switching). For academic customers who are eligible to switch to Windows 10 Pro Education, but are unable to use the above methods, contact Microsoft Support for assitance.
 
-## Compare Windows 10 Pro and Pro Education editions
-
-<!-- Need to update this for Windows 10 S -->
-
-In Windows 10, version 1703 (Creators Update), the Windows 10 Pro Education edition contains the same features as the Windows 10 Pro edition except for the following differences:
-
-- Default settings and options to manage Windows 10 tips and tricks and Windows Store suggestions
-
-See [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md) for more info about Windows 10 default settings and recommendations for education customers. You can also [compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare) to find out more about the features we support in other editions of Windows 10.
-
 ## Requirements for switching
-
 Before you switch to Windows 10 Pro Education, make sure you meet these requirements:
 - Devices must be running Windows 10 Pro, version 1607 or higher; or running Windows 10 S, version 1703 
-- Devices must be Azure Active Directory joined, or domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. For more information, see [Review requirements on devices](#review-requirements-on-devices).
+- Devices must be Azure Active Directory joined, or domain joined with Azure AD Connect. Customers who are federated with Azure AD are also eligible. For more information, see [Review requirements on devices](#review-requirements-on-devices).
 
     If you haven't domain joined your devices already, [prepare for deployment of Windows 10 Pro Education licenses](#preparing-for-deployment-of-windows-10-pro-education-licenses).
 
-- The user making the changes must be a member of the Azure AD global administrator group.
 - The Azure AD tenant must be recognized as an education approved tenant.
-- You must have a Microsoft Store for Business account.
+- You must have a Microsoft Store for Education account.
+- The user making the changes must be a member of the Azure AD global administrator group.
 
-## Education customers with MAK license keys
+## Compare Windows 10 Pro and Pro Education editions
+You can [compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare) to find out more about the features we support in other editions of Windows 10.
 
-Academic institutions with active Microsoft Volume Licensing agreements can obtain keys through:
-- **VLSC** - VL EES customers can download MAK keys from VLSC
-- **CSS** - Customers can call the Microsoft Support call center provide proof of purchase
+For more info about Windows 10 default settings and recommendations for education customers, see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md).
 
-You can distribute the key through Intune for Education or Windows Configuration Designer.
+
+## Switch from Windows 10 S to Windows 10 Pro Education
+There are two ways to switch from Windows 10 S to Windows 10 Pro Education, outlined below. Regardless of how you switch to Windows 10 Pro Education, note that you can only switch devices back to Windows 10 S through reimaging. 
+
+1. **Bulk switch through Microsoft Store for Education**
+
+    In this scenario, the global admin for the Azure AD education tenant can use Microsoft Store to switch all Windows 10 S devices on the tenant to Windows 10 Pro Education. See [Switch using Microsoft Store for Education](#switch-using-microsoft-store-for-education) for details on how to do this.
+
+2. **Asynchronous switch**
+
+    In this scenario, the global admin must acquire the necessary keys and then select a method for key distribution.
+
+    **Key acquisition options:**
+
+    - Volume Licensing customers -  For schools with active Microsoft Volume Licensing agreements, global admins can obtain free MAK keys for Windows 10 Pro Education. 
+
+        > [!NOTE]
+        > Windows 10 S is a Qualified OS (QOS) for Academic Volume Licensing only. 
+
+    - Non-Volume Licensing customers - For schools without an active Microsoft Volume Licensing agreement, the global admin can contact CSS, fill out a form and provide a proof of purchase to receive MAK keys for Windows 10 Pro Education.
+
+    **Key distribution options:**
+
+    - Bulk key distribution - You can apply MAK keys to switch the operating system on select devices or groups of devices using one of these methods:
+        - Use Microsoft Intune for Education. See [Switch using Intune for Education](#switch-using-intune-for-education) for details on how to do this. 
+        - Use Windows Configuration Designer to create a provisioning package that will provision the switch on the device(s). See [Switch using Windows Configuration Designer](#switch-using-windows-configuration-designer) for details on how to do this.
+        - Use the mobile device management (MDM) policy, **UpgradeEditionWithProductKey**. See [Switch using MDM](#switch-using-mdm) for details on how to do this.
+        - Use scripting or using a command-line tool. See [Switch using scripting](#switch-using-scripting) for details on how to do this.
+
+    - Manual key entry - You can also manually apply the MAK key using one of these these methods:
+        - Enter the MAK key in the Windows **Settings > Activation** page. See [Switch using the Activation page](#switch-using-the-activation-page) for details on how to do this.
+        - Install with a media and key through Windows setup. We don't recommend this option due to the potential for multi-reboot requirements.
+
+
+## Switch from Windows 10 Pro to Windows 10 Pro Education
+
+For schools that want to standardize all their Windows 10 Pro devices to Windows 10 Pro Education, a global admin for the school can opt-in to a free switch through the Microsoft Store for Education.
+
+In this scenario:
+
+- The IT admin of the tenant choose to turn on the switch for all Azure AD joined devices.
+- Any device that joins the Azure AD will switch automatically to Windows 10 Pro Education.
+- To switch back to Windows 10 Pro, the device reverts seamlessly to Windows 10 Pro.
+
+See [Switch using Microsoft Store for Education](#switch-using-microsoft-store-for-education) for details on how to do this.
+
+## Switch options from Windows 10 S to Windows 10 Pro Education
+If you want to switch only a few or a select group of Windows 10 S devices to Windows 10 Pro Education, you can use one of the following key distribution options once you've obtained the MAK keys for Windows 10 Pro Education. See [Switch from Windows 10 S to Windows 10 Pro Education](#switch-from-windows-10-s-to-windows-10-pro-education) for more info.
 
 ### Switch using Intune for Education
 
-1. In Intune for Education, select **Groups** and then choose the group that you want the MAK license key to. 
+1. In Intune for Education, select **Groups** and then choose the group that you want to apply the MAK license key to. 
 
     For example, to apply the switch for all teachers, select **All Teachers** and then select **Settings**.
     
@@ -85,6 +102,7 @@ You can distribute the key through Intune for Education or Windows Configuration
 
 
 ### Switch using Windows Configuration Designer
+You can use Windows Configuration Designer to create a provisioning package that you can use to switch the Windows edition for your device(s). [Install Windows Configuration Designer from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22) to create a provisioning package.
 
 1. In Windows Configuration Designer, select **Provision desktop devices** to open the simple editor and create a provisioning package for Windows desktop editions.
 2. In the **Set up device** page, enter the MAK license key in the **Enter product key** field to switch to Windows 10 Pro Education.
@@ -97,83 +115,112 @@ You can distribute the key through Intune for Education or Windows Configuration
 
     For more information about using Windows Configuration Designer, see [Set up student PCs to join domain](https://technet.microsoft.com/en-us/edu/windows/set-up-students-pcs-to-join-domain). 
 
-The rest of this article applies only to schools with Azure AD joined devices who are opting-in to a free switch through the Microsoft Store for Business.
+### Switch using MDM 
+
+To switch Windows 10 S to Windows 10 Pro Education, enter the product key for the Windows 10 Pro Education edition in the **UpgradeEditionWithProductKey** policy setting of the [WindowsLicensing CSP](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/windowslicensing-csp).
+
+### Switch using scripting
+
+You can switch from Windows 10 S to Windows 10 Pro Education by running the changepk.exe command-line tool. To do this, run the following command:
+
+```
+changepk.exe /ProductKey *<MAK key or product key here>*
+```
+
+Replace *<MAK key or product key here>* with the MAK key that you obtained for the Windows 10 edition switch.
+
+
+### Switch using the Activation page
+
+1. On the Windows device that you want to switch, open the **Settings** app.
+2. Select **Update & security** > **Activation**, and then click **Change product key**.
+3. In the **Enter a product key** window, enter the MAK key for Windows 10 Pro Education and click **Next**.
+
 
 ## Education customers with Azure AD joined devices
 
-Academic institutions can easily move from Windows 10 S or Windows 10 Pro to Windows 10 Pro Education without using activation keys or reboots. When one of your users enters their Azure Active Directory credentials that's associated with a Windows 10 Pro Education license, the operating system turns to Windows 10 Pro Education and all the appropriate Windows 10 Pro Education features are unlocked. When a license expires or is transferred to another user, the Windows 10 Pro Education device seamlessly steps back down to Windows 10 Pro. However, Windows 10 Pro Education cannot step back down to Windows 10 S.
-
-<!-- Confirming if above is true for Windows 10 S as well -->
-
-Previously, only schools or organizations purchasing devices as part of the Shape the Future K-12 program or with a Microsoft Volume Licensing Agreement could deploy Windows 10 Pro Education to their users. Now, if you have an Azure AD for your organization, you can take advantage of the Windows 10 Pro Education features.
+Academic institutions can easily move from Windows 10 S or Windows 10 Pro to Windows 10 Pro Education without using activation keys or reboots. When one of your users enters their Azure AD credentials that's associated with a Windows 10 Pro Education license, the operating system switches to Windows 10 Pro Education and all the appropriate Windows 10 Pro Education features are unlocked. Previously, only schools or organizations purchasing devices as part of the Shape the Future K-12 program or with a Microsoft Volume Licensing Agreement could deploy Windows 10 Pro Education to their users. Now, if you have an Azure AD for your organization, you can take advantage of the Windows 10 Pro Education features.
 
 When you switch to Windows 10 Pro Education, you get the following benefits:
 
--   **Windows 10 Pro Education edition**. Devices currently running Windows 10 Pro, version 1607 can get Windows 10 Pro Education Current Branch (CB). This benefit does not include Long Term Service Branch (LTSB).
--   **Support from one to hundreds of users**. The Windows 10 Pro Education program does not have a limitation on the number of licenses an organization can have.
--   **Roll back to Windows 10 Pro at any time**. When a user leaves the domain or you turn off the setting to automatically switch to Windows 10 Pro Education, the device reverts seamlessly to Windows 10 Pro edition (after a grace period of up to 30 days). This does not apply to Windows 10 S.
+- **Windows 10 Pro Education edition**. Devices currently running Windows 10 Pro, version 1607 or higher, or Windows 10 S, version 1703, can get Windows 10 Pro Education Current Branch (CB). This benefit does not include Long Term Service Branch (LTSB).
+- **Support from one to hundreds of users**. The Windows 10 Pro Education program does not have a limitation on the number of licenses an organization can have.
+- **Roll back options to Windows 10 Pro**
+    - When a user leaves the domain or you turn off the setting to automatically switch to Windows 10 Pro Education, the device reverts seamlessly to Windows 10 Pro edition (after a grace period of up to 30 days). 
+    - For devices that originally had Windows 10 Pro edition installed, when a license expires or is transferred to another user, the Windows 10 Pro Education device seamlessly steps back down to Windows 10 Pro. 
 
-<!-- Confirming if last bullet is true for S as well -->
+    See [Roll back Windows 10 Pro Education to Windows 10 Pro](#roll-back-windows-10-pro-education-to-windows-10-pro) for more info.
 
-The Windows 10 Pro Education free switch through the Microsoft Store for Business is an offering that provides organizations easier, more flexible access to the benefits of Windows 10 Pro Education edition.
+    For devices that originally had Windows 10 S installed, Windows 10 Pro Education cannot step back down Windows 10 S. You will need to reimage these devices with Windows 10 S if you need to step down from Windows 10 Pro Education to Windows 10 S.
 
-### Switch through Microsoft Store for Business
-Once you enable the setting to switch to Windows 10 Pro Education, the switch will begin only after a user signs in to their device. The setting applies to the entire organization so you cannot select which users will receive the switch. The switch will only apply to both Windows 10 S and Windows 10 Pro devices.
+
+### Switch using Microsoft Store for Education
+Once you enable the setting to switch to Windows 10 Pro Education, the switch will begin only after a user signs in to their device. The setting applies to the entire organization or tenant so you cannot select which users will receive the switch. The switch will only apply to Windows 10 S and Windows 10 Pro devices.
 
 **To turn on the automatic switch to Windows 10 Pro Education**
 
-1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/Store/Apps) with your work or school account.
+1. Sign in to [Microsoft Store for Education](https://businessstore.microsoft.com/) with your work or school account.
 
-  If this is the first time you're signing into the Store, you'll be prompted to accept the Microsoft Store for Business Terms of Use.
+  If this is the first time you're signing into the Microsoft Store, you'll be prompted to accept the Microsoft Store for Education Terms of Use.
 
 2. Click **Manage** from the top menu and then select the **Benefits tile**.
-3. In the **Benefits** tile, look for the **Automatic Windows 10 Pro Education upgrade** link and then click it.
+3. In the **Benefits** tile, look for the **Automatic Windows 10 Pro Education switch** link and then click it.
 
-    You will see the following page informing you that your school is eligible to switch free to to Windows 10 Pro Education from Windows 10 S or Windows 10 Pro.
+    You will see the following page informing you that your school is eligible to switch free to Windows 10 Pro Education from Windows 10 S or Windows 10 Pro.
 
+<!-- Comment out the screenshot
     **Figure 3** - Switch Windows 10 Pro to Windows 10 Pro Education
 
     ![Eligible for free Windows 10 Pro to Windows 10 Pro Education switch](images/wsfb_win10_pro_to proedu_upgrade_eligibility_page.png)
+--->
 
 4. Select **I understand enabling this setting will impact all devices running Windows 10 Pro in my organization**.
 5. Click **Send me email with a link to enable this upgrade** to receive an email with a link to the switch.
 
+<!-- comment out screenshot
     **Figure 4** - Email notification with a link to enable the switch
 
     ![Email with Windows 10 Pro to Pro Education switch link](images/wsfb_win10_pro_to_proedu_email_upgrade_link.png)
+--->
 
 6. Click **Enable the automatic upgrade now** to turn on switches automatically.
 
+<!--- Comment out screenshot
     **Figure 5** - Enable the automatic switch
 
     ![Enable the automatic switch](images/wsfb_win10_pro_to proedu_upgrade_enable.png)
+--->
 
     Enabling the automatic switch also triggers an email message notifying all global administrators in your organization about the switch. It also contains a link that enables any global administrators to cancel the switch, if they choose. For more info about rolling back or canceling the switch, see [Roll back Windows 10 Pro Education to Windows 10 Pro](#roll-back-windows-10-pro-education-to-windows-10-pro).
 
+<!--- Comment out screenshot
     **Figure 6** - Notification email sent to all global administrators
 
     ![Email informing other global admins about the switch](images/wsfb_win10_pro_to proedu_upgrade_email_global_admins.png)
+--->
 
 7. Click **Close** in the **Success** page.
 
     In the **Upgrade Windows 10 Pro to Windows 10 Pro Education** page, you will see a message informing you when the switch was enabled and the name of the admin who enabled the switch.
 
+<!--- Comment out screenshot
+
     **Figure 7** - Details about the automatic switch
 
     ![Summary page about the switch](images/wsfb_win10_pro_to proedu_upgrade_summary.png)
+--->
 
-
-### Explore the switch experience
+## Explore the switch experience
 
 So what will users experience? How will they switch their devices?
 
-#### For existing Azure AD joined devices
+### For existing Azure AD joined devices
 Existing Azure AD domain joined devices will be switched to Windows 10 Pro Education the next time the user logs in. That's it! No additional steps are needed.
 
-#### For new devices that are not Azure AD joined
+### For new devices that are not Azure AD joined
 Now that you've turned on the setting to automatically switch to Windows 10 Pro Education, the users are ready to switch their devices running Windows 10 Pro, version 1607 or higher or Windows 10 S, version 1703 to Windows 10 Pro Education edition.
 
-**Step 1: Join users’ devices to Azure AD**
+#### Step 1: Join users’ devices to Azure AD
 
 Users can join a device to Azure AD the first time they start the device (during setup), or they can join a device that they already use running Windows 10 Pro, version 1607 or higher, or Windows 10 S, version 1703.
 
@@ -189,13 +236,13 @@ If the Windows device is running Windows 10, version 1703 (Creators Update), fol
 
 1. During initial device setup, on the **How would you like to set up?** page, select **Set up for an organization**, and then click **Next**.
 
-    **Figure 8** - Select how you'd like to set up the device
+    **Figure 3** - Select how you'd like to set up the device
 
     ![Select how you'd like to set up the device](images/1_howtosetup.png)
 
 2. On the **Sign in with Microsoft** page, enter the username and password to use with Office 365 or other services from Microsoft, and then click **Next**.
 
-    **Figure 9** - Enter the account details
+    **Figure 4** - Enter the account details
 
     ![Enter the account details you use with Office 365 or other Microsoft services](images/2_signinwithms.png)
 
@@ -208,35 +255,35 @@ If the Windows device is running Windows 10, version 1703 (Creators Update), fol
 
 1.  Go to **Settings > Accounts > Access work or school**.
 
-    **Figure 10** - Go to **Access work or school** in Settings
+    **Figure 5** - Go to **Access work or school** in Settings
 
     ![Go to Access work or school in Settings](images/settings_workorschool_1.png)
 
 2. In **Access work or school**, click **Connect**.
 3. In the **Set up a work or school account** window, click the **Join this device to Azure Active Directory** option at the bottom.
 
-    **Figure 11** - Select the option to join the device to Azure Active Directory
+    **Figure 6** - Select the option to join the device to Azure Active Directory
 
     ![Select the option to join the device to Azure Active Directory](images/settings_setupworkorschoolaccount_2.png)
 
 4. On the **Let's get you signed in** window, enter the Azure AD credentials (username and password) and sign in. This will join the device to the school's Azure AD.
 5. To verify that the device was successfully joined to Azure AD, go back to **Settings > Accounts > Access work or school**. You should now see a connection under the **Connect to work or school** section that indicates the device is connected to Azure AD.
 
-    **Figure 12** - Verify the device connected to Azure AD
+    **Figure 7** - Verify the device connected to Azure AD
 
     ![Verify the device is connected to Azure AD](images/settings_connectedtoazuread_3.png)
 
 
-**Step 2: Sign in using Azure AD account**
+#### Step 2: Sign in using Azure AD account
 
 Once the device is joined to your Azure AD subscription, the user will sign in by using his or her Azure AD account. The Windows 10 Pro Education license associated with the user will enable Windows 10 Pro Education edition capabilities on the device.
 
 
-**Step 3: Verify that Pro Education edition is enabled**
+#### Step 3: Verify that Pro Education edition is enabled
 
 You can verify the Windows 10 Pro Education in **Settings &gt; Update & Security &gt; Activation**.
 
-**Figure 13** - Windows 10 Pro Education in Settings
+**Figure 8** - Windows 10 Pro Education in Settings
 
 <img src="images/win-10-pro-edu-activated-subscription-active.png" alt="Windows 10 activated and subscription active" />
 
@@ -251,20 +298,20 @@ In some instances, users may experience problems with the Windows 10 Pro Educat
 
 Use the following figures to help you troubleshoot when users experience these common problems:
 
-**Figure 14** - Illustrates a device in a healthy state, where the existing operating system is activated and the Windows 10 Pro Education switch is active.
+**Figure 9** - Illustrates a device in a healthy state, where the existing operating system is activated and the Windows 10 Pro Education switch is active.
 
 <img src="images/win-10-pro-edu-activated-subscription-active.png" alt="Windows 10 activated and subscription active" /></br></br>
 
 
 
-**Figure 15** - Illustrates a device on which the existing operating system is not activated, but the Windows 10 Pro Education switch is active.
+**Figure 10** - Illustrates a device on which the existing operating system is not activated, but the Windows 10 Pro Education switch is active.
 
 <img src="images/win-10-pro-edu-not-activated-subscription-active.png" alt="Windows 10 not activated and subscription active" /></br></br>
 
 
-#### Review requirements on devices
+### Review requirements on devices
 
-Devices must be running Windows 10 Pro, version 1607 or higher, or Windows 10 S, version 1703 and be Azure Active Directory joined, or domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. You can use the following procedures to review whether a particular device meets requirements.
+Devices must be running Windows 10 Pro, version 1607 or higher, or Windows 10 S, version 1703 and be Azure AD joined, or domain joined with Azure AD Connect. Customers who are federated with Azure AD are also eligible. You can use the following procedures to review whether a particular device meets requirements.
 
 **To determine if a device is Azure AD joined**
 
@@ -293,7 +340,7 @@ Devices must be running Windows 10 Pro, version 1607 or higher, or Windows 10 S,
 
 If your organization has the Windows 10 Pro to Windows 10 Pro Education switch enabled, and you decide to roll back to Windows 10 Pro or to cancel the switch, you can do this by:
 
-- Logging into Microsoft Store for Business page and turning off the automatic switch.
+- Logging into Microsoft Store for Education page and turning off the automatic switch.
 - Selecting the link to turn off the automatic switch from the notification email sent to all global administrators.
 
 Once the automatic switch to Windows 10 Pro Education is turned off, the change is effective immediately. Devices that were switched will revert to Windows 10 Pro only after the license has been refreshed (every 30 days) and the next time the user signs in. This means that a user whose device was switched may not immediately see Windows 10 Pro Education rolled back to Windows 10 Pro for up to 30 days. However, users who haven't signed in during the time that an switch was enabled and then turned off will never see their device change from Windows 10 Pro.
@@ -304,18 +351,14 @@ Once the automatic switch to Windows 10 Pro Education is turned off, the change 
 **To roll back Windows 10 Pro Education to Windows 10 Pro**
 
 1. Log in to [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/Store/Apps) with your school or work account, or follow the link from the notification email to turn off the automatic switch.
-2. Select **Manage > Account information** and locate the section **Automatic Windows 10 Pro Education upgrade** and follow the link.
-3. In the **Upgrade Windows 10 Pro to Windows 10 Pro Education** page, select **Turn off the automatic upgrade to Windows 10 Pro Education**.
-
-    **Figure 16** - Link to turn off the automatic switch
-
-    ![Turn off automatic switch to Windows 10 Pro Education](images/wsfb_win10_pro_to proedu_upgrade_disable.png)
-
+2. Select **Manage > Benefits** and locate the section **Automatic Windows 10 Pro Education switch** and follow the link.
+3. In the **Switch Windows 10 Pro to Windows 10 Pro Education** page, select **Turn off the automatic switch to Windows 10 Pro Education**.
 4. You will be asked if you're sure that you want to turn off automatic switches to Windows 10 Pro Education. Click **Yes**.
 5. Click **Close** in the **Success** page.
-6. In the **Upgrade Windows 10 Pro to Windows 10 Pro Education** page, you will see information on when the switch was disabled.
+6. In the **Switch Windows 10 Pro to Windows 10 Pro Education** page, you will see information on when the switch was disabled.
 
     If you decide later that you want to turn on automatic switches again, you can do this from the **Upgrade Windows 10 Pro to Windows 10 Pro Education**.
+
 
 ## Preparing for deployment of Windows 10 Pro Education licenses
 
@@ -323,9 +366,9 @@ If you have on-premises Active Directory Domain Services (AD DS) domains, users 
 
 You need to synchronize these identities so that users will have a *single identity* that they can use to access their on-premises apps and cloud services that use Azure AD (such as Windows 10 Pro Education). This means that users can use their existing credentials to sign in to Azure AD and access the cloud services that you provide and manage for them.
 
-Figure 17 illustrates the integration between the on-premises AD DS domain with Azure AD. [Microsoft Azure Active Directory Connect](http://www.microsoft.com/en-us/download/details.aspx?id=47594) (Azure AD Connect) is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
+Figure 11 illustrates the integration between the on-premises AD DS domain with Azure AD. [Microsoft Azure Active Directory Connect](http://www.microsoft.com/en-us/download/details.aspx?id=47594) (Azure AD Connect) is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
 
-**Figure 17** - On-premises AD DS integrated with Azure AD
+**Figure 11** - On-premises AD DS integrated with Azure AD
 
 ![Illustration of Azure Active Directory Connect](images/windows-ad-connect.png)
 
