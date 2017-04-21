@@ -11,7 +11,7 @@ author: CelesteDG
 ---
 
 # Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S
-Windows 10 Pro Education is a new offering in Windows 10 Anniversary Update (Windows 10, version 1607). This edition builds on the commercial version of Windows 10 Pro and provides important management controls needed in schools by providing education-specific default settings.
+Windows 10 Pro Education is a new offering in Windows 10, version 1607. This edition builds on the commercial version of Windows 10 Pro and provides important management controls needed in schools by providing education-specific default settings.
 
 If you have an education tenant and use Windows 10 Pro or Windows 10 S devices in your schools, global administrators can opt-in to a free switch to Windows 10 Pro Education depending on your scenario.
 - [Switch from Windows 10 S to Windows 10 Pro Education](#switch-from-windows-10s-to-windows-10-pro-education)
@@ -232,7 +232,7 @@ There are different methods you can use to join a device to Azure AD:
 
 **To join a device to Azure AD using Windows device setup**
 
-If the Windows device is running Windows 10, version 1703 (Creators Update), follow these steps.
+If the Windows device is running Windows 10, version 1703, follow these steps.
 
 1. During initial device setup, on the **How would you like to set up?** page, select **Set up for an organization**, and then click **Next**.
 
@@ -251,7 +251,7 @@ If the Windows device is running Windows 10, version 1703 (Creators Update), fol
 
 **To join a device to Azure AD when the device already has Windows 10 Pro, version 1703 or Windows 10 S, version 1703 installed and set up**
 
-If the Windows device is running Windows 10, version 1703 (Creators Update), follow these steps.
+If the Windows device is running Windows 10, version 1703, follow these steps.
 
 1.  Go to **Settings > Accounts > Access work or school**.
 
