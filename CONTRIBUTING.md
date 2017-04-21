@@ -20,7 +20,7 @@ We've tried to make editing an existing, public file as simple as possible.
 
 1.	Go to the page on TechNet that you want to update, and then click **Edit**.
 
-    ![GitHub Web, showing the Contribute link](images/contribute-link.png)
+    ![GitHub Web, showing the Edit link](images/contribute-link.png)
 
 2. Log into (or sign up for) a GitHub account.
     
