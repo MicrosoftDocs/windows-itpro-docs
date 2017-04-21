@@ -114,12 +114,12 @@ TPM 2.0 allows some keys to be created without an authorization value associate
 
 ### Rationale behind the Windows 8.1 and Windows 8 defaults
 
-Windows relies on the TPM 2.0 dictionary attack protection for multiple features. The defaults that are selected for Windows 8 balance trade-offs for different scenarios.
+Windows relies on the TPM 2.0 anti-hammering protection for multiple features. The defaults that are selected for Windows 8 balance trade-offs for different scenarios.
 For example, when BitLocker is used with a TPM plus PIN configuration, it needs the number of PIN guesses to be limited over time. If the computer is lost, someone could make only 32 PIN guesses immediately, and then only one more guess every two hours. This totals about 4415 guesses per year. This makes a good standard for system administrators to determine how many PIN characters to use for BitLocker deployments.
 
 The Windows TPM-based smart card, which is a virtual smart card, can be configured to allow sign in to the system. In contrast with physical smart cards, the sign-in process uses a TPM-based key with an authorization value. The following list shows the advantages of virtual smart cards:
 
--   Physical smart cards can enforce lockout for only the physical smart card PIN, and they can reset the lockout after the correct PIN is entered. With a virtual smart card, the TPM’s dictionary attack is not reset after a successful authentication. The allowed number of authorization failures before the TPM enters lockout includes many factors.
+-   Physical smart cards can enforce lockout for only the physical smart card PIN, and they can reset the lockout after the correct PIN is entered. With a virtual smart card, the TPM’s anti-hammering protection is not reset after a successful authentication. The allowed number of authorization failures before the TPM enters lockout includes many factors.
 
 -   Hardware manufacturers and software developers have the option to use the security features of the TPM to meet their requirements.
 
