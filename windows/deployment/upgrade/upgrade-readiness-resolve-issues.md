@@ -38,7 +38,7 @@ Applications with issues known to Microsoft are listed, grouped by upgrade asses
 <img src="media/image6.png" width="192" height="321" />
 -->
 
-![Review applications with known issues](images/upgrade-analytics-apps-known-issues.png)
+![Review applications with known issues](../images/upgrade-analytics-apps-known-issues.png)
 
 To change an application's upgrade decision:
 
@@ -77,15 +77,15 @@ For applications assessed as **Fix available**, review the table below for detai
 
 Click **Review Applications With Known Issues** to see the status of applications for Ready for Windows and corresponding guidance. For example:
 
-![Upgrade analytics Ready for Windows status](images/upgrade-analytics-ready-for-windows-status.png)
+![Upgrade analytics Ready for Windows status](../images/upgrade-analytics-ready-for-windows-status.png)
 
 If there are known issues with an application, the specific guidance for that known issue takes precedence over the Ready for Windows guidance.
 
-![Upgrade analytics Ready for Windows status guidance precedence](images/upgrade-analytics-ready-for-windows-status-guidance-precedence.png)
+![Upgrade analytics Ready for Windows status guidance precedence](../images/upgrade-analytics-ready-for-windows-status-guidance-precedence.png)
 
 If you query with RollupLevel="NamePublisher", each version of the application can have a different status for Ready for Windows. In this case, different values appear for Ready for Windows. 
 
-![Name publisher rollup](images/upgrade-analytics-namepub-rollup.png)
+![Name publisher rollup](../images/upgrade-analytics-namepub-rollup.png)
 
 >[!TIP]
 >Within the Upgrade Readiness data model, an object of Type **UAApp** refers to a particular application installed on a specific computer.  
@@ -111,7 +111,7 @@ The following table lists possible values for **ReadyForWindows** and what they 
 
 Applications with no issues known to Microsoft are listed, grouped by upgrade decision.
 
-![Review applications with no known issues](images/upgrade-analytics-apps-no-known-issues.png)
+![Review applications with no known issues](../images/upgrade-analytics-apps-no-known-issues.png)
 
 Applications with no known issues that are installed on 2% or less of your total computer inventory \[number of computers application is installed on/total number of computers in your inventory\] are automatically marked **Ready to upgrade** and included in the applications reviewed count. Applications with no known issues that are installed on more than 2% of your total computer inventory are automatically marked **Not reviewed**.
 
@@ -131,7 +131,7 @@ To change an application's upgrade decision:
 
 Drivers that won’t migrate to the new operating system are listed, grouped by availability.
 
-![Review drivers with known issues](images/upgrade-analytics-drivers-known.png)
+![Review drivers with known issues](../images/upgrade-analytics-drivers-known.png)
 
 Availability categories are explained in the table below.
 
