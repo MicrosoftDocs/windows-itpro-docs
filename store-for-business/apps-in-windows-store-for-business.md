@@ -1,5 +1,5 @@
 ---
-title: Apps in Microsoft Store for Business (Windows 10)
+title: Apps in Microsoft Store for Business and Education (Windows 10)
 description: Microsoft Store for Business has thousands of apps from many different categories.
 ms.assetid: CC5641DA-3CEA-4950-AD81-1AF1AE876926
 ms.prod: w10
@@ -18,12 +18,12 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Windows Store for Business has thousands of apps from many different categories.
+Microsoft Store for Business and Education has thousands of apps from many different categories.
 
 ## <a href="" id="apps"></a>
 
 
-These app types are supported in Store for Business:
+These app types are supported in Microsoft Store for Business and Education:
 
 -   Universal Windows apps for Windows 10
 
@@ -47,29 +47,26 @@ Apps in your inventory will have at least one of these supported platforms liste
 
 -   Windows 10 HoloLens
 
-Apps that you acquire from the Store for Business only work on Windows 10-based devices. Even though an app might list Windows 8 as its supported platform, that tells you what platform the app was originally written for. Apps developed for Windows 8, or Windows phone 8 will work on Windows 10.
+Apps that you acquire from the Microsoft Store only work on Windows 10-based devices. Even though an app might list Windows 8 as its supported platform, that tells you what platform the app was originally written for. Apps developed for Windows 8, or Windows Phone 8 will work on Windows 10.
 
 Some apps are free, and some apps charge a price. Currently, you can pay for apps with a credit card. We'll be adding more payment options over time.
 
-Some apps which are available to consumers in the Windows Store might not be available to organizations in the Windows Store for Business. App developers can opt-out their apps, and they also need to meet eligibility requirements for Windows Store for Business. For more information, read this info on [Organizational licensing options](https://msdn.microsoft.com/windows/uwp/publish/organizational-licensing). 
+Some apps which are available to consumers in the Windows Store might not be available to organizations in the Microsoft Store for Business and Education. App developers can opt-out their apps, and they also need to meet eligibility requirements for Microsoft Store for Business and Education. For more information, see [Organizational licensing options](https://msdn.microsoft.com/windows/uwp/publish/organizational-licensing). 
 
-
-Line-of-business (LOB) apps are also supported using the Store for Business. Admins can invite IT devs and ISVs to be LOB publishers. Apps developed by your LOB publishers that are submitted to the Store are only available to your organization. Once an administrator accepts an app submitted by one of their LOB publishers, the app can be distributed just like any other app from Store for Business. For more information, see Working with Line-of-Business apps.
+Line-of-business (LOB) apps are also supported using the Micrososft Store. Admins can invite IT devs and ISVs to be LOB publishers. Apps developed by your LOB publishers that are submitted to Microsoft Store are only available to your organization. Once an administrator accepts an app submitted by one of their LOB publishers, the app can be distributed just like any other app. For more information, see [Working with Line-of-Business apps](working-with-line-of-business-apps.md).
 
 ## In-app purchases
 
-
-Some apps offer you the option to make in-app purchases. In-app purchases are not currently supported for apps that are acquired through Store for Business and distributed to employees.
+Some apps offer you the option to make in-app purchases. In-app purchases are not currently supported for apps that are acquired through Micrososft Store and distributed to employees.
 
 If an employee makes an in-app purchase, they'll make it with their personal Microsoft account and pay for it with a personal payment method. The employee will own the item purchased, and it cannot be transferred to your organization’s inventory.
 
 ## Licensing model: online and offline licenses
 
-
-Store for Business supports two options to license apps: online and offline.
+Microsoft Store supports two options to license apps: online and offline.
 
 ### Online licensing
- Online licensing is the default licensing model and is similar to the Windows Store. Online licensed apps require users and devices to connect to the Store for Business service to acquire an app and its license. Licensing management is enforced based on the user’s Azure AD identity and maintained by the store as well as the management tool. By default app updates are handled by Windows Update.
+ Online licensing is the default licensing model and is similar to the Windows Store. Online licensed apps require users and devices to connect to the Microsoft Store for Business service to acquire an app and its license. Licensing management is enforced based on the user’s Azure AD identity and maintained by the store as well as the management tool. By default app updates are handled by Windows Update.
 
 Distribution options for online-licensed apps include the ability to:
 

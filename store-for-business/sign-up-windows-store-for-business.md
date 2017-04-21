@@ -1,6 +1,6 @@
 ---
-title: Sign up for Microsoft Store for business or Microsoft Store for education (Windows 10)
-description: Before you sign up for Microsoft Store for business or Microsoft Store for education, at a minimum, you'll need an Azure Active Directory (AD) account for your organization, and you'll need to be the global administrator for your organization.
+title: Sign up for Microsoft Store for Business or Microsoft Store for Education (Windows 10)
+description: Before you sign up for Microsoft Store for Business or Microsoft Store for Education, at a minimum, you'll need an Azure Active Directory (AD) account for your organization, and you'll need to be the global administrator for your organization.
 ms.assetid: 296AAC02-5C79-4999-B221-4F5F8CEA1F12
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -10,7 +10,7 @@ author: TrudyHa
 localizationpriority: high
 ---
 
-# Sign up for Microsoft Store for business or Microsoft Store for education
+# Sign up for Microsoft Store for Business or Microsoft Store for Education
 
 
 **Applies to**
@@ -18,16 +18,16 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Before you sign up for Microsoft Store for business or Microsoft Store for education, you'll need an Azure Active Directory (AD) or Office 365 account for your organization, and you'll need to be the global administrator for your organization. If your organization is already using Azure AD, you can go ahead and sign up for Microsoft Store for business or Microsoft Store for education. If not, we'll help you create an Azure AD  or Office 365 account and directory as part of the sign up process.
+Before you sign up for Microsoft Store for Business or Microsoft Store for Education, you'll need an Azure Active Directory (AD) or Office 365 account for your organization, and you'll need to be the global administrator for your organization. If your organization is already using Azure AD, you can go ahead and sign up for Microsoft Store for Business or Microsoft Store for Education. If not, we'll help you create an Azure AD or Office 365 account and directory as part of the sign up process.
 
 ## Sign up for Microsoft Store
 
 
-Before signing up for  Microsoft Store, make sure you're the global administrator for your organization.
+Before signing up for Microsoft Store, make sure you're the global administrator for your organization.
 
 **To sign up for Microsoft Store**
 
-1.  Go to [https://www.microsoft.com/business-store](https://go.microsoft.com/fwlink/p/?LinkId=691845), or []() and click **Sign up**.
+1.  Go to [https://www.microsoft.com/business-store](https://go.microsoft.com/fwlink/p/?LinkId=691845), or [https://www.microsoft.com/education-store](https://go.microsoft.com/fwlink/p/?LinkId=691845) and click **Sign up**.
 
     -   If you start the Microsoft Store sign-up process, and don't have an Azure AD directory for your organization, we'll help you create one. For more info, see [Sign up for Azure AD accounts](#o365-welcome).
 
@@ -77,7 +77,7 @@ Before signing up for  Microsoft Store, make sure you're the global administrato
 
     ![Image showing sign-in page for Microsoft Store for Business.](images/wsfb-onboard-7.png)
 
-3.  <a href="" id="accept-terms"></a>Read through and accept Store for Business terms.
+3.  <a href="" id="accept-terms"></a>Read through and accept Microsoft Store for Business and Education terms.
 
 4.  Welcome to the Store for Business. Click **Next** to continue.
 
@@ -85,11 +85,11 @@ Before signing up for  Microsoft Store, make sure you're the global administrato
 
 ### Next steps
 
-After signing up for Microsoft Store for business or Microsoft Store for education, you can:
+After signing up for Microsoft Store for Business or Microsoft Store for Education, you can:
 
--   **Add users to your Azure AD directory**. If you created your Azure AD directory during sign up, additional user accounts are required for employees to install apps you assign to them, or to browse the private store in Store app. For more information, see [Manage user accounts in Store for Business](manage-users-and-groups-windows-store-for-business.md).
+-   **Add users to your Azure AD directory**. If you created your Azure AD directory during sign up, additional user accounts are required for employees to install apps you assign to them, or to browse the private store in Store app. For more information, see [Manage user accounts in Microsoft Store for Business and Education](manage-users-and-groups-windows-store-for-business.md).
 
--   **Assign roles to employees**. For more information, see [Roles and permissions in the Microsoft Store for business and education](roles-and-permissions-windows-store-for-business.md).
+-   **Assign roles to employees**. For more information, see [Roles and permissions in the Microsoft Store for Business and Education](roles-and-permissions-windows-store-for-business.md).
 
  
 
