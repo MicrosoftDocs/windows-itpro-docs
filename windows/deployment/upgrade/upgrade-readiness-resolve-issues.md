@@ -162,7 +162,7 @@ The Upgrade Readiness proposed action plan is an optimally ordered list of apps 
 
 The proposed action plan represents the order thath Microsoft recommends you rationalize the upgrade-readiness of your apps and drivers.  By validating apps and drivers in the order proposed, you can ensure that you are testing efficiently.  
 
-Each item in the proposed action plan represents either an application or a driver that you have not yet marked “Ready to upgrade”.
+Each item in the proposed action plan represents either an application or a driver that you have not yet marked “Ready to upgrade.”
 
 >Since “Low install count” apps are automatically marked “Ready to upgrade”, you will not see any of these apps in the proposed action plan.  
 
