@@ -41,11 +41,11 @@ X = unsupported <BR>
 - To upgrade mobile editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithLicense** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](https://go.microsoft.com/fwlink/p/?LinkID=690907).
 
 ## Upgrade using a provisioning package
-The Windows Imaging and Configuration Designer (ICD) tool is included in the Windows Assessment and Deployment Kit (ADK) for Windows 10. [Install the ADK.](https://go.microsoft.com/fwlink/p/?LinkId=526740)
+Download Windows Configuration Designer from the Windows Store.
 
-- To use Windows ICD to create a provisioning package for upgrading desktop editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithProductKey** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
+- To use Windows Configuration Designer to create a provisioning package for upgrading desktop editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithProductKey** in the **Available customizations** panel in Windows Configuration Designer and enter the product key for the upgraded edition.
 
-- To use Windows ICD to create a provisioning package for upgrading mobile editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithLicense** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
+- To use Windows Configuration Designer to create a provisioning package for upgrading mobile editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithLicense** in the **Available customizations** panel in Windows Configuration Designer and enter the product key for the upgraded edition.
 
 For more info on creating and applying a provisioning package using Windows ICD, see [Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkID=533700).
 
