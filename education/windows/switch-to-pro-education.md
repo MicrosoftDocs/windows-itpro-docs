@@ -167,38 +167,30 @@ Once you enable the setting to switch to Windows 10 Pro Education, the switch wi
 3. In the **Benefits** tile, look for the **Automatic Windows 10 Pro Education switch** link and then click it.
 
     You will see the following page informing you that your school is eligible to switch free to Windows 10 Pro Education from Windows 10 S or Windows 10 Pro.
-
 <!-- Comment out the screenshot
     **Figure 3** - Switch Windows 10 Pro to Windows 10 Pro Education
 
     ![Eligible for free Windows 10 Pro to Windows 10 Pro Education switch](images/wsfb_win10_pro_to proedu_upgrade_eligibility_page.png)
 --->
-
 4. Select **I understand enabling this setting will impact all devices running Windows 10 Pro in my organization**.
 5. Click **Send me email with a link to enable this upgrade** to receive an email with a link to the switch.
-
 <!-- comment out screenshot
     **Figure 4** - Email notification with a link to enable the switch
 
     ![Email with Windows 10 Pro to Pro Education switch link](images/wsfb_win10_pro_to_proedu_email_upgrade_link.png)
 --->
-
 6. Click **Enable the automatic upgrade now** to turn on switches automatically.
-
 <!--- Comment out screenshot
     **Figure 5** - Enable the automatic switch
 
     ![Enable the automatic switch](images/wsfb_win10_pro_to proedu_upgrade_enable.png)
 --->
-
     Enabling the automatic switch also triggers an email message notifying all global administrators in your organization about the switch. It also contains a link that enables any global administrators to cancel the switch, if they choose. For more info about rolling back or canceling the switch, see [Roll back Windows 10 Pro Education to Windows 10 Pro](#roll-back-windows-10-pro-education-to-windows-10-pro).
-
 <!--- Comment out screenshot
     **Figure 6** - Notification email sent to all global administrators
 
     ![Email informing other global admins about the switch](images/wsfb_win10_pro_to proedu_upgrade_email_global_admins.png)
 --->
-
 7. Click **Close** in the **Success** page.
 
     In the **Upgrade Windows 10 Pro to Windows 10 Pro Education** page, you will see a message informing you when the switch was enabled and the name of the admin who enabled the switch.
