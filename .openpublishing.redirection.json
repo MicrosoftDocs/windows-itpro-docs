@@ -8164,6 +8164,11 @@
 "source_path": "windows/deploy/upgrade-readiness-data-sharing.md",
 "redirect_url": "/windows/deployment/upgrade/upgrade-readiness-data-sharing",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/index.md",
+"redirect_url": "/windows/windows-10/index",
+"redirect_document_id": true
 }
 ]
 }
