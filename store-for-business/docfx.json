@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+		  "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -29,7 +30,13 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+		"breadcrumb_path": "/microsoft-store/breadcrumb/toc.json",
+		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
+		"ms.author": "trudyha",
+		"ms.technology": "windows",
+		"ms.topic": "article"
+	},
     "fileMetadata": {},
     "template": [],
     "dest": "store-for-business"
