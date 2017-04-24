@@ -19,7 +19,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+		  "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -29,7 +30,10 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
+		"breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json"
+	},
     "fileMetadata": {},
     "template": [],
     "dest": "win-threat-protection"
