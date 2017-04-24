@@ -88,5 +88,4 @@
 #### [Synchronizing Microsoft Office with UE-V](ue-v/uev-synchronizing-microsoft-office-with-uev.md)
 #### [Application Template Schema Reference for UE-V](ue-v/uev-application-template-schema-reference.md)
 #### [Security Considerations for UE-V](ue-v/uev-security-considerations.md)
-
 ## [Change history for Configure Windows 10](change-history-for-configure-windows-10.md)

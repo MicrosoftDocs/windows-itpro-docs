@@ -59,14 +59,14 @@ If you're using Windows Store for Business and you want employees to only see ap
 
 4. On the **Only display the private store within the Windows Store app** setting page, click **Enabled**, and then click **OK**.
 
-You can also prevent employees from using the Windows Store. For more information, see [Configure access to Windows Store](stop-employees-from-using-the-windows-store.md).
+You can also prevent employees from using the Windows Store. For more information, see [Configure access to Windows Store](/windows/configuration/stop-employees-from-using-the-windows-store).
 
 ## Related topics
 
 
 [Distribute apps using your private store](distribute-apps-from-your-private-store.md)
 
-[Configure access to Windows Store](stop-employees-from-using-the-windows-store.md)
+[Configure access to Windows Store](/windows/configuration/stop-employees-from-using-the-windows-store)
 
  
 
