@@ -40,7 +40,7 @@ Manage settings and access to apps in Windows Store for Business.
 <td align="left"><p>You can manage access to your private store in Store for Business.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[App inventory managemement for Windows Store for Business](app-inventory-managemement-windows-store-for-business.md)</p></td>
+<td align="left"><p>[App inventory managemement for Windows Store for Business](app-inventory-management-windows-store-for-business.md)</p></td>
 <td align="left"><p>You can manage all apps that you've acquired on your <strong>Inventory</strong> page.</p></td>
 </tr>
 <tr class="odd">
