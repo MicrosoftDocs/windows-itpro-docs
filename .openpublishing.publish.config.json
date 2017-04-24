@@ -8,105 +8,130 @@
       "build_source_folder": "education",
       "build_output_subfolder": "education",
       "locale": "en-us",
-      "version": 0,
+      "monikers": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
-      }
+      },
+      "version": 0
     },
     {
       "docset_name": "internet-explorer",
       "build_source_folder": "browsers/internet-explorer",
       "build_output_subfolder": "browsers/internet-explorer",
       "locale": "en-us",
-      "version": 0,
+      "monikers": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
-      }
+      },
+      "version": 0
     },
     {
       "docset_name": "itpro-hololens",
       "build_source_folder": "devices/hololens",
       "build_output_subfolder": "devices/hololens",
       "locale": "en-us",
-      "version": 0,
+      "monikers": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "build_entry_point": "op"
+      "build_entry_point": "op",
+      "version": 0
     },
     {
       "docset_name": "mdop",
       "build_source_folder": "mdop",
       "build_output_subfolder": "mdop",
       "locale": "en-us",
-      "version": 0,
+      "monikers": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
-      }
+      },
+      "version": 0
     },
     {
       "docset_name": "microsoft-edge",
       "build_source_folder": "browsers/edge",
       "build_output_subfolder": "browsers/edge",
       "locale": "en-us",
-      "version": 0,
+      "monikers": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
-      }
+      },
+      "version": 0
     },
     {
       "docset_name": "surface",
       "build_source_folder": "devices/surface",
       "build_output_subfolder": "devices/surface",
       "locale": "en-us",
-      "version": 0,
+      "monikers": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
-      }
+      },
+      "version": 0
     },
     {
       "docset_name": "surface-hub",
       "build_source_folder": "devices/surface-hub",
       "build_output_subfolder": "devices/surface-hub",
       "locale": "en-us",
-      "version": 0,
+      "monikers": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
-      }
+      },
+      "version": 0
     },
     {
       "docset_name": "windows",
       "build_source_folder": "windows",
       "build_output_subfolder": "windows",
       "locale": "en-us",
-      "version": 0,
+      "monikers": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
-      }
+      },
+      "version": 0
     },
     {
       "docset_name": "smb",
       "build_source_folder": "smb",
       "build_output_subfolder": "smb",
       "locale": "en-us",
-      "version": 0,
+      "monikers": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "build_entry_point": "op"
+      "build_entry_point": "op",
+      "version": 0
+    },
+    {
+      "docset_name": "win-access-protection",
+      "build_source_folder": "windows/access-protection",
+      "build_output_subfolder": "win-access-protection",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
     }
   ],
   "notification_subscribers": [
@@ -118,8 +143,14 @@
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/windows-itpro-docs",
   "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
-  "dependent_repositories": [],
-  "need_generate_pdf_url_template": false,
-  "need_preview_pull_request": true
+  "need_preview_pull_request": true,
+  "dependent_repositories": [
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft",
+      "branch": "master",
+      "branch_mapping": {}
+    }
+  ],
+  "need_generate_pdf_url_template": false
 }
-
