@@ -39,7 +39,8 @@
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "build_entry_point": "op",
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
       "version": 0
     },
     {
@@ -78,7 +79,8 @@
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "build_entry_point": "op",
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
       "version": 0
     },
     {
