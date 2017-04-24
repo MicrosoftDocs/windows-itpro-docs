@@ -16,7 +16,7 @@
 	"globalMetadata": {
 		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
 	    "breadcrumb_path": "/surface-hub/breadcrumb/toc.json",
-        "ROBOTS": "INDEX, FOLLOW",
+		"ROBOTS": "INDEX, FOLLOW",
 		"ms.technology": "windows",
 		"ms.topic": "article",
 		"ms.mktglfcycl": "manage",
