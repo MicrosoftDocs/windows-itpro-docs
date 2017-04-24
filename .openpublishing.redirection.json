@@ -8169,6 +8169,26 @@
 "source_path": "windows/index.md",
 "redirect_url": "/windows/windows-10/index",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/manage/index.md",
+"redirect_url": "/windows/windows-10/index",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deploy/index.md",
+"redirect_url": "/windows/windows-10/index",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/plan/index.md",
+"redirect_url": "/windows/windows-10/index",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/keep-secure/index.md",
+"redirect_url": "/windows/windows-10/index",
+"redirect_document_id": true
 }
 ]
 }
