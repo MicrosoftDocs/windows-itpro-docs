@@ -29,7 +29,7 @@ Updating multiple apps at the same time requires that you create a **ConfigFile*
 
 2. Add the following XML info for each app:
 
-    - **&lt;Name&gt;.** The name of the app you're adding to the package.
+    - **&lt;AppName&gt;.** The name of the app you're adding to the package.
     
     - **&lt;InstallerFolder&gt;.** The file path to the folder with the app installer.
 
@@ -50,7 +50,7 @@ Updating multiple apps at the same time requires that you create a **ConfigFile*
         <?xml version="1.0"?>
             <Applications>
                 <Application>
-                    <Name>Skype for Windows Update</Name>
+                    <AppName>Skype for Windows Update</AppName>
                     <InstallerFolder>D:\Install\Update\SkypeforWindows</InstallerFolder>
                     <Installer>SkypeSetup.exe</Installer>
                     <InstallerOptions>/S</InstallerOptions>
@@ -60,7 +60,7 @@ Updating multiple apps at the same time requires that you create a **ConfigFile*
                     <Enabled>True</Enabled>
                 </Application>
                 <Application>
-                    <Name>Microsoft Power BI Update</Name>
+                    <AppName>Microsoft Power BI Update</AppName>
                     <InstallerFolder>D:\Install\Update\PowerBI</InstallerFolder>
                     <Installer>PBIDesktop.msi</Installer>
                     <InstallerOptions>/S</InstallerOptions>
@@ -95,7 +95,7 @@ Updating multipe apps at the same time requires that you create a **ConfigFile**
 
 2. Add the following XML info for each app:
 
-    - **&lt;Name&gt;.** The name of the app you're adding to the package.
+    - **&lt;AppName&gt;.** The name of the app you're adding to the package.
     
     - **&lt;InstallerFolder&gt;.** The file path to the folder with the app installer.
 
@@ -115,7 +115,7 @@ Updating multipe apps at the same time requires that you create a **ConfigFile**
         <?xml version="1.0"?>
             <Applications>
                 <Application>
-                    <Name>Skype for Windows Update</Name>
+                    <AppName>Skype for Windows Update</AppName>
                     <InstallerFolder>D:\Install\Update\SkypeforWindows</InstallerFolder>
                     <Installer>SkypeSetup.exe</Installer>
                     <InstallerOptions>/S</InstallerOptions>
@@ -125,7 +125,7 @@ Updating multipe apps at the same time requires that you create a **ConfigFile**
                     <Enabled>True</Enabled>
                 </Application>
                 <Application>
-                    <Name>Microsoft Power BI Update</Name>
+                    <AppName>Microsoft Power BI Update</AppName>
                     <InstallerFolder>D:\Install\Update\PowerBI</InstallerFolder>
                     <Installer>PBIDesktop.msi</Installer>
                     <InstallerOptions>/S</InstallerOptions>
