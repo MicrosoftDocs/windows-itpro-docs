@@ -76,7 +76,7 @@ The deployment script displays the following exit codes to let you know if it wa
 
 <TR><TD BGCOLOR="#a0e4fa" width="10%">Exit code</TD>
 <TD BGCOLOR="#a0e4fa" width="40%">Meaning</td>
-<TD BGCOLOR="#a0e4fa" aidth="50%">Suggested fix</td></tr>
+<TD BGCOLOR="#a0e4fa" width="50%">Suggested fix</td></tr>
 
 <TR><TD>0</TD>
 <TD>Success
