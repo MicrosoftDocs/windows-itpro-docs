@@ -22,7 +22,8 @@ MDOP Group Policy templates are available for download in a self-extracting, com
 
 **How to download and deploy the MDOP Group Policy templates**
 
-1.  Download the MDOP Group Policy templates from [How to Get MDOP Group Policy (.admx) Templates](https://go.microsoft.com/fwlink/p/?LinkId=393941) .
+1.  Download the MDOP Group Policy templates from [Microsoft Desktop Optimization Pack Group Policy Administrative Templates
+](https://www.microsoft.com/en-us/download/details.aspx?id=54957).
 
 2.  Run the downloaded file to extract the template folders.
 
