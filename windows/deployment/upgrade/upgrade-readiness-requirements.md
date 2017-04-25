@@ -30,7 +30,7 @@ See [Windows 10 Specifications](http://www.microsoft.com/en-US/windows/windows-1
 Keeping Windows 10 up to date involves deploying a feature update, and Upgrade Readiness tools help you prepare and plan for these Windows updates.
 The latest cumulative updates must be installed on Windows 10 computers to make sure that the required compatibility KBs are installed.  You can find the latest cumulative update on the [Microsoft Update Catalog](https://catalog.update.microsoft.com). 
 
-Windows 10 LTSB is not supported by Upgrade Readiness. The LTSB (long term servicing branch) of Windows 10 is not intended for general deployment, and does not receive feature updates, therefore it is not compatible with Upgrade Readiness.  See [Windows as a service overview](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-overview#long-term-servicing-branch) to understand more about LTSB.
+Windows 10 LTSB is not supported by Upgrade Readiness. The LTSB (long term servicing branch) of Windows 10 is not intended for general deployment, and does not receive feature updates, therefore it is not compatible with Upgrade Readiness.  See [Windows as a service overview](../update/waas-overview.md#long-term-servicing-branch) to understand more about LTSB.
 
 ## Operations Management Suite
 
@@ -50,7 +50,7 @@ Upgrade Readiness can be integrated with your installation of Configuration Mana
 
 After you’ve signed in to Operations Management Suite and added the Upgrade Readiness solution to your workspace, you’ll need to complete the following tasks to allow user computer data to be shared with and assessed by Upgrade Readiness.
 
-See [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965) for more information about what user computer data Upgrade Readiness collects and assesses. See [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization) for more information about how Microsoft uses Windows telemetry data.
+See [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965) for more information about what user computer data Upgrade Readiness collects and assesses. See [Configure Windows telemetry in your organization](windows/configuration/configure-windows-telemetry-in-your-organization) for more information about how Microsoft uses Windows telemetry data.
 
 **Whitelist telemetry endpoints.** To enable telemetry data to be sent to Microsoft, you’ll need to whitelist the following Microsoft telemetry endpoints on your proxy server or firewall. You may need to get approval from your security group to do this.
 

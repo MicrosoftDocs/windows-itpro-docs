@@ -46,7 +46,6 @@
 ### [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)
 #### [Upgrade Readiness architecture](upgrade/upgrade-readiness-architecture.md)
 #### [Upgrade Readiness requirements](upgrade/upgrade-readiness-requirements.md)
-#### [Upgrade Readiness release notes](upgrade/upgrade-readiness-release-notes.md)
 #### [Get started with Upgrade Readiness](upgrade/upgrade-readiness-get-started.md)
 ##### [Upgrade Readiness deployment script](upgrade/upgrade-readiness-deployment-script.md)
 #### [Use Upgrade Readiness to manage Windows upgrades](upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md)

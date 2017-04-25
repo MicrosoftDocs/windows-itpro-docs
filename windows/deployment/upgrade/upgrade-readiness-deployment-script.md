@@ -70,11 +70,11 @@ To run the Upgrade Readiness deployment script:
 
 The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered.
 
-<div style='font-size:8.0pt'>
+
 
 <TABLE border=1 cellspacing=0 cellpadding=0>
 
-<TR><TD BGCOLOR="#a0e4fa" width=5>Exit code</TD>
+<TR><TD BGCOLOR="#a0e4fa">Exit code</TD>
 <TD BGCOLOR="#a0e4fa">Meaning
 <TD BGCOLOR="#a0e4fa">Suggested fix
 
@@ -105,7 +105,7 @@ The deployment script displays the following exit codes to let you know if it wa
 <TR><TD>6</TD>
 <TD>The commercialID parameter is set to unknown. <BR>Modify the runConfig.bat file to set the CommercialID value.
 <TD>The value for parameter in the runconfig.bat file should match the Commercial ID key for your workspace. 
-<BR>See [Generate your Commercial ID key](https://technet.microsoft.com/itpro/windows/deploy/upgrade-readiness-get-started#generate-your-commercial-id-key) for instructions on generating a Commercial ID key for your workspace.
+<BR>See [Generate your Commercial ID key](upgrade-readiness-get-started.md#generate-your-commercial-id-key) for instructions on generating a Commercial ID key for your workspace.
 
 <TR><TD>8</TD>
 <TD>Failure to create registry key path: <div style='font-size:7.0pt'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</div> 
@@ -130,21 +130,21 @@ The deployment script displays the following exit codes to let you know if it wa
 <TD>**Http Get** on the end points did not return a success exit code.<BR>
 For Windows 10, connectivity is verified by connecting to https://v10.vortex-win.data.microsoft.com/health/keepalive.<BR>
 For previous operating systems, connectivity is verified by connecting to https://vortex-win.data.microsoft.com/health/keepalive.  
-<BR>If there is an error verifying connectivity, this will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing).
+<BR>If there is an error verifying connectivity, this will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](upgrade-readiness-get-started.md#enable-data-sharing).
 
 
 <TR><TD>13</TD>
 <TD>Can’t connect to Microsoft - setting. 
-<TD>An error occurred connecting to  https://settings.data.microsoft.com/qos. This error will prevent the collected data from being sent to Upgrade Readiness.  To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing).
+<TD>An error occurred connecting to  https://settings.data.microsoft.com/qos. This error will prevent the collected data from being sent to Upgrade Readiness.  To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](upgrade-readiness-get-started.md#enable-data-sharing).
 
 
 <TR><TD>14</TD>
 <TD>Can’t connect to Microsoft - compatexchange.
-<TD>An error occurred connecting to https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc . This error will prevent the collected data from being sent to Upgrade Readiness.  To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing).
+<TD>An error occurred connecting to https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc . This error will prevent the collected data from being sent to Upgrade Readiness.  To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](upgrade-readiness-get-started.md#enable-data-sharing).
 
 <TR><TD>15</TD>
 <TD>Function CheckVortexConnectivity failed with an unexpected exception.
-<TD>This error will prevent the collected data from being sent to Upgrade Readiness.  To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing). Check the logs for the exception message and the HResult.
+<TD>This error will prevent the collected data from being sent to Upgrade Readiness.  To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](upgrade-readiness-get-started.md#enable-data-sharing). Check the logs for the exception message and the HResult.
 
 <TR><TD>16</TD>
 <TD>The computer requires a reboot before running the script.
@@ -156,7 +156,7 @@ For previous operating systems, connectivity is verified by connecting to https:
 
 <TR><TD>18</TD>
 <TD>Appraiser KBs not installed or **appraiser.dll** not found.
-<TD>Either the Appraiser KBs are not installed, or the **appraiser.dll** file was not found. For more information, see appraiser telemetry events and fields information in the [Data collection](https://technet.microsoft.com/itpro/windows/deploy/upgrade-readiness-get-started#data-collection-and-privacy) and privacy topic.
+<TD>Either the Appraiser KBs are not installed, or the **appraiser.dll** file was not found. For more information, see appraiser telemetry events and fields information in the [Data collection](upgrade-readiness-get-started.md#data-collection-and-privacy) and privacy topic.
 
 <TR><TD>19</TD>
 <TD>Function **CheckAppraiserKB**, which checks the compatibility update KBs, failed with unexpected exception.
@@ -217,7 +217,7 @@ For previous operating systems, connectivity is verified by connecting to https:
 
 <TR><TD>32</TD>
 <TD>Appraiser version on the machine is outdated. 
-<TD>The configuration script detected a version of the compatibility update module that is older than the minimum required to correctly collect the data required by Upgrade Readiness solution. Use the latest version of the [compatibility update](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#deploy-the-compatibility-update-and-related-kbs) for Windows 7 SP1/Windows 8.1.
+<TD>The configuration script detected a version of the compatibility update module that is older than the minimum required to correctly collect the data required by Upgrade Readiness solution. Use the latest version of the [compatibility update](upgrade-readiness-get-started.md#deploy-the-compatibility-update-and-related-kbs) for Windows 7 SP1/Windows 8.1.
 
 <TR><TD>33</TD>
 <TD>**CompatTelRunner.exe** exited with an exit code 
@@ -246,7 +246,7 @@ For previous operating systems, connectivity is verified by connecting to https:
 <TR><TD>39</TD>
 <TD>For Windows 10: AllowTelemetry property is not set to 1 or higher at registry key path <div style='font-size:7.0pt'>**HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**</div>
 or <div style='font-size:7.0pt'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</div>
-<TD>For Windows 10 machines, the **AllowTelemetry** property should be set to 1 or greater to enable data collection. The script will throw an error if this is not true. For more information, see [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization).
+<TD>For Windows 10 machines, the **AllowTelemetry** property should be set to 1 or greater to enable data collection. The script will throw an error if this is not true. For more information, see [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization).
 
 <TR><TD>40</TD>
 <TD>Function **CheckTelemetryOptIn** failed with an unexpected exception. 
@@ -285,10 +285,3 @@ or <div style='font-size:7.0pt'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersio
 <TD>The **CommercialID** that is entered in RunConfig.bat must be a GUID. Copy the commercial ID from your workspace.  To find the commercialID on the OMS portal, view Upgrade Readiness > Settings.  You will find the commercial ID on the settings page.
 
 </TABLE>
-
-</div>
-
-
-
-
-
