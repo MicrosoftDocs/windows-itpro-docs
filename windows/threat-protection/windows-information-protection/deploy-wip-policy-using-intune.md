@@ -38,6 +38,6 @@ After you’ve created your Windows Information Protection (WIP) policy, you'll 
 ## Related topics
 - [Create a Windows Information Protection (WIP) policy using Microsoft Azure Intune](create-wip-policy-using-intune.md)
 
-- [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Azure Intune](create-vpn-and-wip-policy-using-intune.md)
+- [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Azure Intune](create-vpn-and-wip-policy-using-intune.md)
 
 - [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
