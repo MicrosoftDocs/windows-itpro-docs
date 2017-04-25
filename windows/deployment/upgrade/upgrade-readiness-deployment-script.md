@@ -108,22 +108,22 @@ The deployment script displays the following exit codes to let you know if it wa
 <BR>See [Generate your Commercial ID key](upgrade-readiness-get-started.md#generate-your-commercial-id-key) for instructions on generating a Commercial ID key for your workspace.
 
 <TR><TD>8</TD>
-<TD>Failure to create registry key path: <div style='font-size:7.0pt'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</div> 
-<TD>The Commercial Id property is set at the following registry key path: <div style='font-size:7.0pt'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</div>
+<TD>Failure to create registry key path: **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection** 
+<TD>The Commercial Id property is set at the following registry key path: **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**
 <BR>Verify that the context under which the script in running has access to the registry key.
 
 <TR><TD>9</TD>
 <TD>The script failed to write Commercial Id to registry.
-<BR>Error creating or updating registry key: **CommercialId** at <div style='font-size:7.0pt'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</div> 
+<BR>Error creating or updating registry key: **CommercialId** at **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection** 
 <TD>Verify that the context under which the script in running has access to the registry key.
 
 <TR><TD>10</TD>
-<TD>Error when writing **CommercialDataOptIn** to the registry at <div style='font-size:7.0pt'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</div>
+<TD>Error when writing **CommercialDataOptIn** to the registry at **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**
 <TD>Verify that the deployment script is running in a context that has access to the registry key.
 
 <TR><TD>11</TD>
 <TD>Function **SetupCommercialId** failed with an unexpected exception.
-<TD>The **SetupCommercialId** function updates the Commercial Id at the registry key path: <div style='font-size:7.0pt'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</div> <BR>Verify that the configuration script has access to this location.
+<TD>The **SetupCommercialId** function updates the Commercial Id at the registry key path: **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection** <BR>Verify that the configuration script has access to this location.
 
 <TR><TD>12</TD>
 <TD>Can’t connect to Microsoft - Vortex. Check your network/proxy settings.
@@ -163,7 +163,7 @@ For previous operating systems, connectivity is verified by connecting to https:
 <TD>Check the logs for the Exception message and HResult. The script will not run further if this error is not fixed. 
 
 <TR><TD>20</TD>
-<TD>An error occurred when creating or updating the registry key **RequestAllAppraiserVersions** at <div style='font-size:7.0pt'>**HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Appraiser**</div> 
+<TD>An error occurred when creating or updating the registry key **RequestAllAppraiserVersions** at **HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Appraiser** 
 <TD>The registry key is required for data collection to work correctly. Verify that the script is running in a context that has access to the registry key. 
 
 <TR><TD>21</TD>
@@ -179,7 +179,7 @@ For previous operating systems, connectivity is verified by connecting to https:
 <TD>Verify that this environment variable is configured on the computer.
 
 <TR><TD>24</TD>
-<TD>The script failed when writing **IEDataOptIn** to the registry. An error occurred when creating registry key **IEOptInLevel** at <div style='font-size:7.0pt'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</div>
+<TD>The script failed when writing **IEDataOptIn** to the registry. An error occurred when creating registry key **IEOptInLevel** at **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**
 <TD>This is a required registry key for IE data collection to work correctly. Verify that the deployment script in running in a context that has access to the registry key. Check the logs for the exception message and HResult.
 
 <TR><TD>25</TD>
@@ -244,8 +244,8 @@ For previous operating systems, connectivity is verified by connecting to https:
 <TD>Check the logs for the exception message and HResult.
 
 <TR><TD>39</TD>
-<TD>For Windows 10: AllowTelemetry property is not set to 1 or higher at registry key path <div style='font-size:7.0pt'>**HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**</div>
-or <div style='font-size:7.0pt'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</div>
+<TD>For Windows 10: AllowTelemetry property is not set to 1 or higher at registry key path **HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**
+or **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**
 <TD>For Windows 10 machines, the **AllowTelemetry** property should be set to 1 or greater to enable data collection. The script will throw an error if this is not true. For more information, see [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization).
 
 <TR><TD>40</TD>
