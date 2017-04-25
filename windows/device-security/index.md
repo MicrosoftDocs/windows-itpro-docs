@@ -24,5 +24,3 @@ Learn more about how to help secure your Windows 10 and Windows 10 Mobile devi
 | [Trusted Platform Module](tpm/trusted-platform-module-top-node.md)| Provides links to information about the Trusted Platform Module (TPM), which is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. |
 | [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md) | Learn more about securing your Windows 10 Mobile devices. |
 | [Windows security baselines](windows-security-baselines.md) | Learn why you should use security baselines in your organization. |
- 
- 

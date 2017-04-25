@@ -20,6 +20,7 @@ This section includes the following topics:
 - [Deploy code integrity policies: policy rules and file rules](deploy-code-integrity-policies-policy-rules-and-file-rules.md)
 - [Deploy code integrity policies: steps](deploy-code-integrity-policies-steps.md)
 - [Deploy catalog files to support code integrity policies](deploy-catalog-files-to-support-code-integrity-policies.md)
+- [Deploy Managed Installer for Device Guard](deploy-managed-installer-for-device-guard.md)
 
 To increase the protection for devices that meet certain hardware requirements, you can use virtualization-based security (VBS) with your code integrity policies.
 - For requirements, see [Hardware, firmware, and software requirements for Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-device-guard) in "Requirements and deployment planning guidelines for Device Guard."

@@ -75,7 +75,7 @@ Cortana is Microsoft’s personal digital assistant, who helps busy people get t
 
 Using Azure AD also means that you can remove an employee’s profile (for example, when an employee leaves your organization) while respecting Windows Information Protection (WIP) policies and ignoring enterprise content, such as emails, calendar items, and people lists that are marked as enterprise data.
 
-For more info about Cortana at work, see (/windows/configuration/cortana-at-work/cortana-at-work-overview)
+For more info about Cortana at work, see [Cortana integration in your business or enterprise](/windows/configuration/cortana-at-work/cortana-at-work-overview.md)
 
 
 ## Deployment
