@@ -19,8 +19,13 @@ localizationpriority: high
 
 After you've created and deployed your Windows Information Protection (WIP) policy, you can use Microsoft Azure Intune to create and deploy your Virtual Private Network (VPN) policy, linking it to your WIP policy.
 
+>[!Note]
+>Before you create your VPN policy, you must first create your VPN profile. For more info about how to do this, see https://docs.microsoft.com/en-us/intune-azure/configure-devices/how-to-configure-vpn-settings and https://docs.microsoft.com/en-us/intune-azure/configure-devices/create-custom-vpn-profiles#create-a-custom-configuration.
+ 
 ## Create your VPN policy using Microsoft Azure Intune
 Follow these steps to create the VPN policy you want to use with WIP.
+
+
 
 **To create your VPN policy**
 
