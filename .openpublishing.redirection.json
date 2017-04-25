@@ -8194,6 +8194,16 @@
 "source_path": "windows/manage/windows-store-for-business.md",
 "redirect_url": "/microsoft-store/index",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/update/index.md",
+"redirect_url": "/windows/deployment/update/index",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configure/index.md",
+"redirect_url": "/windows/configuration/index",
+"redirect_document_id": true
 }
 ]
 }
