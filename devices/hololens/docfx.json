@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+		  "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -27,7 +28,13 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
+		"breadcrumb_path": "/hololens/breadcrumb/toc.json",
+		"ms.technology": "windows",
+		"ms.topic": "article",
+		"ms.author": "jdecker"
+	},
     "fileMetadata": {},
     "template": [
       null

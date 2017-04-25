@@ -3,7 +3,7 @@
     "content":
       [
         {
-          "files": ["**/**.md"],
+          "files": ["**/**.md", "**/**.yml"],
           "exclude": ["**/obj/**"]
         }
       ],
@@ -13,8 +13,16 @@
           "exclude": ["**/obj/**"]
         }
     ],
-    "globalMetadata": {
-        "ROBOTS": "INDEX, FOLLOW"
+	"globalMetadata": {
+		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
+	    "breadcrumb_path": "/surface-hub/breadcrumb/toc.json",
+		"ROBOTS": "INDEX, FOLLOW",
+		"ms.technology": "windows",
+		"ms.topic": "article",
+		"ms.mktglfcycl": "manage",
+		"author": "jdeckerms",
+		"ms.sitesec": "library",
+		"ms.author": "jdecker"
     },
     "externalReference": [
     ],

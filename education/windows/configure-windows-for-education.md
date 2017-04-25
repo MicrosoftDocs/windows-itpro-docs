@@ -113,7 +113,21 @@ Use one of these methods to set this policy.
         ![Create an OMA URI for SetEduPolices](images/setedupolicies_omauri.png)
 
 ### Group Policy
-**SetEduPolicies** is not natively supported in Group Policy. Instead, use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/en-us/library/windows/desktop/dn905224(v=vs.85).aspx) to set the policy in [MDM SharedPC](https://msdn.microsoft.com/en-us/library/windows/desktop/mt779129(v=vs.85).aspx).
+**SetEduPolicies** is not natively supported in Group Policy. Instead, use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/en-us/library/windows/desktop/dn905224(v=vs.85).aspx) to set the policy in [MDM SharedPC](https://msdn.microsoft.com/en-us/library/windows/desktop/mt779129(v=vs.85).aspx). 
+
+For example:
+
+- Open PowerShell as an administrator and enter the following:
+
+    ```
+    $sharedPC = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SharedPC"
+
+    $sharedPC.SetEduPolicies = $True
+
+    Set-CimInstance -CimInstance $sharedPC
+
+    Get-CimInstance -Namespace $namespaceName -ClassName $MDM_SharedPCClass
+    ```
 
 ### Provisioning tools
 - [Set up School PCs](use-set-up-school-pcs-app.md) always sets this policy in provisioning packages it creates.

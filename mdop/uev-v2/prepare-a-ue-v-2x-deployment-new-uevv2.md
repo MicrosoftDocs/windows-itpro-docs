@@ -17,7 +17,7 @@ There is some planning and preparation to do before you deploy Microsoft User Ex
 
 First, let’s look at the tasks you’ll do to deploy UE-V:
 
--   [Plan your UE-V Deployment](#planning)
+-   Plan your UE-V Deployment
 
     Before you deploy anything, a good first step is to do a little bit of planning so that you can determine which UE-V features you’ll deploy. So if you leave this page, make sure you come back and read through the planning information below.
 
