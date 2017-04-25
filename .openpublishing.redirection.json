@@ -8177,12 +8177,12 @@
 },
 {
 "source_path": "windows/deploy/index.md",
-"redirect_url": "/windows/windows-10/index",
+"redirect_url": "/windows/deployment/index",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/plan/index.md",
-"redirect_url": "/windows/windows-10/index",
+"redirect_url": "/windows/deployment/planning/index",
 "redirect_document_id": true
 },
 {
