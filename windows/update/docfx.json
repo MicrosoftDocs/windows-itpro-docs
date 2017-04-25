@@ -3,8 +3,7 @@
     "content": [
       {
         "files": [
-          "**/*.md",
-		  "**/*.yml"
+          "**/*.md"
         ],
         "exclude": [
           "**/obj/**",
@@ -20,9 +19,7 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg",
-		  "**/*.gif",
-		  "**/*.pdf"
+          "**/*.jpg"
         ],
         "exclude": [
           "**/obj/**",
@@ -32,12 +29,9 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {
-		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
-		"breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json"
-	},
+    "globalMetadata": {},
     "fileMetadata": {},
     "template": [],
-    "dest": "windows-hub"
+    "dest": "windows-update"
   }
 }

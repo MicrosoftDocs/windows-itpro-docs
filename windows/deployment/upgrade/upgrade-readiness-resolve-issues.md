@@ -9,7 +9,16 @@ author: greg-lindsay
 
 This section of the Upgrade Readiness workflow reports application and driver inventory and shows you which applications have known issues, which applications have no known issues, and which drivers have issues. We identify applications and drivers that need attention and suggest fixes when we know about them.
 
-You can change an application’s upgrade decision and a driver’s upgrade decision from the blades in this section. To change an application’s or a driver’s importance level, select **User changes**. Select the item you want to change and then select the appropriate option from the **Select upgrade decision** list.
+## In this section
+
+The blades in the **Step 2: Resolve issues** section are:
+
+- [Review applications with known issues](#review-applications-with-known-issues)
+- [Review applications with no known issues](#review-applications-with-no-known-issues)
+- [Review known driver issues](#review-known-driver-issues)
+- [Prioritize app and driver testing](#prioritize-app-and-driver-testing)
+
+>You can change an application’s upgrade decision and a driver’s upgrade decision from the blades in this section. To change an application’s or a driver’s importance level, select **User changes**. Select the item you want to change and then select the appropriate option from the **Select upgrade decision** list.
 
 Upgrade decisions include:
 
@@ -19,13 +28,6 @@ Upgrade decisions include:
 | Review in progress | When you start to investigate an application or a driver to determine upgrade readiness, change its upgrade decision to **Review in progress**.<br><br>Until you’ve determined that applications and drivers will migrate successfully or you’ve resolved blocking issues, leave the upgrade decision status as **Review in progress**. <br><br> | Once you’ve fixed any issues and validated that the application or driver will migrate successfully, change the upgrade decision to **Ready to upgrade**. <br>                                                                                                                                                                                                          |
 | Ready to upgrade   | Mark applications and drivers **Ready to upgrade** once you’ve resolved all blocking issues and you’re confident that they will upgrade successfully, or if you’ve decided to upgrade them as-is.                                                                                                                                                          | Applications with no known issues and with low installation rates are marked **Ready to upgrade** by default.<br><br>In Step 1, you might have marked some of your apps as **Ignore**.  These should be marked as **Ready to upgrade**. Apps with low installation rates are marked as **Ready to upgrade** by default.  Be sure to review any low install count applications for any business critical or important applications that are not yet upgrade-ready, despite their low installation rates. <br> |
 | Won’t upgrade      | By default, no applications or drivers are marked **Won’t upgrade** because only you can make that determination. <br><br>Use **Won’t upgrade** for applications and drivers that you do not work on your target operating system, or that you are unable to upgrade.<br>                                                                                                                                                        | If, during your investigation into an application or driver, you determine that they should not or cannot be upgraded, mark them **Won’t upgrade**. <br><br>                                                                                                                                                                                                                    |
-
-The blades in the **Resolve issues** section are:
-
-- Review applications with known issues
-- Review applications with no known issues
-- Review drivers with known issues
-
 As you review applications with known issues, you can also see ISV support statements or applications using [Ready for Windows](https://www.readyforwindows.com/).
 
 ## Review applications with known issues
@@ -150,3 +152,55 @@ To change a driver’s upgrade decision:
 
 4.  Click **Save** when finished.
 
+## Prioritize app and driver testing
+
+Planning and executing an OS upgrade project can be overwhelming.  When you are tasked with evaluating thousands of applications and drivers to ensure a successful upgrade, it can be difficult to decide where to start. The Upgrade Readiness solution provides valuable assistance for you, helping to determine the most important apps and drivers to unblock and enabling you yo create a proposed action plan.   
+
+### Proposed action plan
+
+The Upgrade Readiness proposed action plan is an optimally ordered list of apps and drivers that are in need of review.  By testing apps and drivers in the order suggested by the proposed action plan, you are able to increase your number of “Ready to upgrade” computers in an efficient manner.  The action plan can be a very powerful tool during upgrade planning – but it’s most helpful when it’s used correctly.  This topic explains the proposed action plan, describes how to use it, and calls out a few misconceptions and invalid use cases that you should avoid.
+
+The proposed action plan represents the order thath Microsoft recommends you rationalize the upgrade-readiness of your apps and drivers.  By validating apps and drivers in the order proposed, you can ensure that you are testing efficiently.  
+
+Each item in the proposed action plan represents either an application or a driver that you have not yet marked “Ready to upgrade.”
+
+>Since “Low install count” apps are automatically marked “Ready to upgrade”, you will not see any of these apps in the proposed action plan.  
+
+Each item in the plan has the following attributes: 
+ 
+| Attribute   | Description | Example value  |
+|-----------------------|------------------------------------------|----------------|
+| ItemRank | The location of this item in the context of the proposed action plan.  For example, the item with ItemRank 7 is the 7th item in the Plan.  It is crucial that the Plan is viewed in order by increasing ItemRank.  Sorting the Plan in any other way invalidates the insights that the Plan provides. | 7 | 
+| ItemType | Whether this item is an app or driver -- possible values are: "App" and "Driver." | App | 
+| ItemName | The name of the app or driver that is in need of review.  | Microsoft Visual C++ 2005 Redistributable (x64) | 
+| ItemVendor | The vendor of the app or driver.   | Microsoft Corporation | 
+| ItemVersion | The version of the app or driver.  | 12.1.0.1 | 
+| ItemLanguage | If this item is an application, then this field will be the language of the app.  If the item is a driver, then this will say "N/A." | English | 
+| ItemHardwareId | If this item is a driver, then this field will be the hardware id of the driver.  If the item is an app, then this will say "N/A." | N/A | 
+| Upgrade Decision | The upgrade decision you have provided for this app or driver.  If you have not defined an upgrade decision, then you will see the default value of “Not reviewed.”  | Review in progress | 
+| ComputersUnblocked | Assuming you have already marked all previous items in the proposed action plan “Ready to upgrade”, this represents the number of additional computers that will become “Ready to upgrade” by testing this app or driver and giving it an upgrade decision of “Ready to upgrade”.  For example, if ComputersUnblocked is 200, then resolving any issues associated with the app/driver in question will make 200 new computers “Ready to upgrade.” | 200 | 
+| CumulativeUnblocked | The total number of computers that will become “Ready to upgrade” if you validate and mark this and all prior items in the proposed action plan “Ready to upgrade”.  For example, if ItemRank is 7, and CumulativeUnblocked is 950, then fixing items 1 thru 7 in the proposed action plan will cause 950 of your computers to become “Ready to upgrade.” | 950 | 
+| CumulativeUnblockedPct | The percentage of your machines that will become “Ready to upgrade” if you make this and all prior items in the proposed action plan “Ready to upgrade.” | 0.24 |   
+
+See the following example action plan items (click the image for a full-size view):
+
+<A HREF="../images/UR-lift-report.jpg">![Proposed action plan](../images/UR-lift-report.jpg)</A>
+
+<BR>
+In this example, the 3rd item is an application: **Microsoft Bing Sports**, a modern app, version **4.20.951.0**, published by Microsoft.  By validating this app and making its UpgradeDecision “Ready to upgrade”, you can potentially make **1014** computers “Ready to upgrade” – but only after you have already validated items 1 and 2 in the list.  By marking items 1, 2, and 3 “Ready to upgrade”, 14779 of your computers will become upgrade-ready.  This represents 10.96% of the machines in this workspace.  
+
+#### Using the proposed action plan
+
+There are several valid use cases for the proposed action plan.  But it’s always important to remember that the information presented in the Plan is only accurate when sorted by increasing Item Rank!  Here are three potential cases in which you could use the proposed action plan: 
+
+1. Quickly determine how many apps and drivers you’ll need to validate in order to make x% of your computers upgrade-ready.  To determine this, simply find the first item in the Plan with a CumulativeUnblockedPct greater than or equal to your desired percentage of upgrade-ready computers.  The corresponding ItemRank represents the smallest number of apps and drivers that you can validate in order to reach your upgrade readiness goal.  The prior items in the proposed action plan itself represent the most efficient route to reaching your goal. 
+
+2. Use the proposed action plan to prepare a small portion of your machines for a pilot of your target Operating System.  Let’s say you want to test a new Operating System by upgrading a few hundred computers.  You can use the proposed action plan to determine how many apps and drivers you will need to validate before you can be confident that your pilot will be successful.   
+
+3. If your project deadline is approaching and you only have time to validate a few more apps and drivers, you can use the proposed action plan to determine which apps and drivers you should focus on to maximize the number of computers that you can confidently upgrade. 
+
+#### Misconceptions and things to avoid
+
+The most common misconceptions about the proposed action plan involve the assumption that each item in the plan is independent of those around it.  The apps and drivers in the plan must be considered in the correct order to draw valid conclusions.  For example, if you choose to validate items 1, 3, 4, and 5 and mark each of them “Ready to upgrade,” the proposed action plan cannot tell you how many computers will become upgrade-ready as a result of your testing.  Even the non-cumulative “ComputersUnblocked” count is dependent upon all prior issues having already been resolved.   
+
+If an item with ItemRank = 7 has a ComputersUnblocked value of 50, do not assume that 50 of your computers will become upgrade-ready if you test this item.  However, if you validate items 1 through 6 in the plan, you can make an additional 50 computers upgrade-ready by validating the 7th item in the plan. 

@@ -2,7 +2,7 @@
 "redirections": [
 {
 "source_path": "windows/keep-secure/add-apps-to-protected-list-using-custom-uri.md",
-"redirect_url": "/itpro/windows/keep-secure/create-wip-policy-using-intune",
+"redirect_url": "/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune",
 "redirect_document_id": false 
 },
 {
@@ -62,12 +62,12 @@
 },
 {
 "source_path": "windows/manage/waas-quick-start.md",
-"redirect_url": "/itpro/windows/update/waas-quick-start",
+"redirect_url": "/windows/deployment/update/waas-quick-start",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/manage/waas-overview.md",
-"redirect_url": "/itpro/windows/update/waas-overview",
+"redirect_url": "/windows/deployment/update/waas-overview",
 "redirect_document_id": true
 },
 {
@@ -122,7 +122,7 @@
 },
 {
 "source_path": "windows/manage/waas-manage-updates-wufb.md",
-"redirect_url": "/itpro/windows/update/waas-manage-updates-wufb",
+"redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
 "redirect_document_id": true
 },
 {
@@ -162,7 +162,7 @@
 },
 {
 "source_path": "windows/manage/waas-update-windows-10.md",
-"redirect_url": "/itpro/windows/update/index",
+"redirect_url": "/windows/deployment/update/index",
 "redirect_document_id": false
 },
 {
@@ -627,7 +627,7 @@
 },
 {
 "source_path": "windows/manage/introduction-to-windows-10-servicing.md",
-"redirect_url": "/itpro/windows/update/index",
+"redirect_url": "/windows/deployment/update/index",
 "redirect_document_id": true
 },
 {
@@ -657,107 +657,107 @@
 },
 {
 "source_path": "windows/plan/act-community-ratings-and-process.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/plan/act-database-configuration.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/act-database-migration.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/act-deployment-options.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/act-glossary.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/activating-and-closing-windows-in-acm.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/act-lps-share-permissions.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/act-operatingsystem-application-report.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/act-operatingsystem-computer-report.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/act-operatingsystem-device-report.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/act-product-and-documentation-resources.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/act-settings-dialog-box-preferences-tab.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/act-settings-dialog-box-settings-tab.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/act-toolbar-icons-in-acm.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/act-tools-packages-and-services.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/act-user-interface-reference.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/adding-or-editing-an-issue.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/adding-or-editing-a-solution.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/analyzing-your-compatibility-data.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/application-dialog-box.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/categorizing-your-compatibility-data.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
@@ -767,77 +767,77 @@
 },
 {
 "source_path": "windows/plan/common-compatibility-issues.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/compatibility-monitor-users-guide.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/computer-dialog-box.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/configuring-act.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/creating-and-editing-issues-and-solutions.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/creating-an-enterprise-environment-for-compatibility-testing.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/creating-an-inventory-collector-package.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/creating-a-runtime-analysis-package.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/customizing-your-report-views.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/data-sent-through-the-microsoft-compatibility-exchange.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/deciding-whether-to-fix-an-application-or-deploy-a-workaround.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/deciding-which-applications-to-test.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/deleting-a-data-collection-package.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/deploying-an-inventory-collector-package.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/deploying-a-runtime-analysis-package.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
@@ -847,182 +847,182 @@
 },
 {
 "source_path": "windows/plan/example-filter-queries.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/exporting-a-data-collection-package.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/filtering-your-compatibility-data.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/fixing-compatibility-issues.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/identifying-computers-for-inventory-collection.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/integration-with-management-solutions-.md",
-"redirect_url": "/itpro/windows/update/waas-manage-updates-wufb",
+"redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/internet-explorer-web-site-report.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/labeling-data-in-acm.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/log-file-locations-for-data-collection-packages.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/managing-your-data-collection-packages.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/organizational-tasks-for-each-report-type.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/organizing-your-compatibility-data.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/prioritizing-your-compatibility-data.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/ratings-icons-in-acm.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/resolving-an-issue.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/saving-opening-and-exporting-reports.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/selecting-the-send-and-receive-status-for-an-application.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/selecting-your-compatibility-rating.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/selecting-your-deployment-status.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/sending-and-receiving-compatibility-data.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/settings-for-acm.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/setup-and-deployment.md",
-"redirect_url": "/itpro/windows/update/waas-manage-updates-wufb",
+"redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/software-requirements-for-act.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/software-requirements-for-rap.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/taking-inventory-of-your-organization.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/testing-compatibility-on-the-target-platform.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/troubleshooting-act.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/troubleshooting-act-database-issues.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/troubleshooting-the-act-configuration-wizard.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/troubleshooting-the-act-log-processing-service.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/using-act.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/using-compatibility-monitor-to-send-feedback.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/viewing-your-compatibility-reports.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/websiteurl-dialog-box.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/welcome-to-act.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/whats-new-in-act-60.md",
-"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": false
 },
 {
@@ -1032,12 +1032,12 @@
 },
 {
 "source_path": "windows/plan/windows-10-servicing-options.md",
-"redirect_url": "/itpro/windows/update/waas-overview",
+"redirect_url": "/windows/deployment/update/waas-overview",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/plan/windows-update-for-business.md",
-"redirect_url": "/itpro/windows/update/waas-manage-updates-wufb",
+"redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
 "redirect_document_id": false
 },
 {
@@ -1727,7 +1727,7 @@
 },
 {
 "source_path": "windows/deploy/manage-windows-upgrades-with-upgrade-analytics.md",
-"redirect_url": "/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-analytics",
+"redirect_url": "/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness",
 "redirect_document_id": true
 },
 {
@@ -1872,7 +1872,7 @@
 },
 {
 "source_path": "windows/deploy/troubleshoot-upgrade-analytics.md",
-"redirect_url": "/windows/deployment/upgrade/troubleshoot-upgrade-analytics",
+"redirect_url": "/windows/deployment/upgrade/troubleshoot-upgrade-readiness",
 "redirect_document_id": true
 },
 {
@@ -1892,47 +1892,47 @@
 },
 {
 "source_path": "windows/deploy/upgrade-analytics-additional-insights.md",
-"redirect_url": "/windows/deployment/upgrade/upgrade-analytics-additional-insights",
+"redirect_url": "/windows/deployment/upgrade/upgrade-readiness-additional-insights",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/deploy/upgrade-analytics-architecture.md",
-"redirect_url": "/windows/deployment/upgrade/upgrade-analytics-architecture",
+"redirect_url": "/windows/deployment/upgrade/upgrade-readiness-architecture",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/deploy/upgrade-analytics-deploy-windows.md",
-"redirect_url": "/windows/deployment/upgrade/upgrade-analytics-deploy-windows",
+"redirect_url": "/windows/deployment/upgrade/upgrade-readiness-deploy-windows",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/deploy/upgrade-analytics-deployment-script.md",
-"redirect_url": "/windows/deployment/upgrade/upgrade-analytics-deployment-script",
+"redirect_url": "/windows/deployment/upgrade/upgrade-readiness-deployment-script",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/deploy/upgrade-analytics-get-started.md",
-"redirect_url": "/windows/deployment/upgrade/upgrade-analytics-get-started",
+"redirect_url": "/windows/deployment/upgrade/upgrade-readiness-get-started",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/deploy/upgrade-analytics-identify-apps.md",
-"redirect_url": "/windows/deployment/upgrade/upgrade-analytics-identify-apps",
+"redirect_url": "/windows/deployment/upgrade/upgrade-readiness-identify-apps",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/deploy/upgrade-analytics-requirements.md",
-"redirect_url": "/windows/deployment/upgrade/upgrade-analytics-requirements",
+"redirect_url": "/windows/deployment/upgrade/upgrade-readiness-requirements",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/deploy/upgrade-analytics-resolve-issues.md",
-"redirect_url": "/windows/deployment/upgrade/upgrade-analytics-resolve-issues",
+"redirect_url": "/windows/deployment/upgrade/upgrade-readiness-resolve-issues",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/deploy/upgrade-analytics-upgrade-overview.md",
-"redirect_url": "/windows/deployment/upgrade/upgrade-analytics-upgrade-overview",
+"redirect_url": "/windows/deployment/upgrade/upgrade-readiness-upgrade-overview",
 "redirect_document_id": true
 },
 {
@@ -2022,7 +2022,7 @@
 },
 {
 "source_path": "windows/deploy/use-upgrade-analytics-to-manage-windows-upgrades.md",
-"redirect_url": "/windows/deployment/upgrade/use-upgrade-analytics-to-manage-windows-upgrades",
+"redirect_url": "/windows/deployment/upgrade/use-upgrade-readiness-to-manage-windows-upgrades",
 "redirect_document_id": true
 },
 {
@@ -8157,7 +8157,7 @@
 },
 {
 "source_path": "windows/keep-secure/deploy-managed-installer-for-device-guard.md",
-"redirect_url": "/windows/device-security/deploy-managed-installer-for-device-guard",
+"redirect_url": "/windows/device-security/device-guard/deploy-managed-installer-for-device-guard",
 "redirect_document_id": true
 },
 {
@@ -8168,6 +8168,41 @@
 {
 "source_path": "windows/index.md",
 "redirect_url": "/windows/windows-10/index",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/manage/index.md",
+"redirect_url": "/windows/windows-10/index",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deploy/index.md",
+"redirect_url": "/windows/deployment/index",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/plan/index.md",
+"redirect_url": "/windows/deployment/planning/index",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/keep-secure/index.md",
+"redirect_url": "/windows/windows-10/index",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/manage/windows-store-for-business.md",
+"redirect_url": "/microsoft-store/index",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/update/index.md",
+"redirect_url": "/windows/deployment/update/index",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configure/index.md",
+"redirect_url": "/windows/configuration/index",
 "redirect_document_id": true
 }
 ]

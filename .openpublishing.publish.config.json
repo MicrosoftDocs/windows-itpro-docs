@@ -43,7 +43,6 @@
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "version": 0
@@ -233,20 +232,6 @@
       "version": 0
     },
     {
-      "docset_name": "windows",
-      "build_source_folder": "windows",
-      "build_output_subfolder": "windows",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
       "docset_name": "windows-hub",
       "build_source_folder": "windows/hub",
       "build_output_subfolder": "windows-hub",
@@ -293,6 +278,102 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "version": 0
+    },
+    {
+      "docset_name": "keep-secure",
+      "build_source_folder": "windows/keep-secure",
+      "build_output_subfolder": "keep-secure",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "windows-manage",
+      "build_source_folder": "windows/manage",
+      "build_output_subfolder": "windows-manage",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "windows-plan",
+      "build_source_folder": "windows/plan",
+      "build_output_subfolder": "windows-plan",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "windows-update",
+      "build_source_folder": "windows/update",
+      "build_output_subfolder": "windows-update",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "windows-deploy",
+      "build_source_folder": "windows/deploy",
+      "build_output_subfolder": "windows-deploy",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "windows-configure",
+      "build_source_folder": "windows/configure",
+      "build_output_subfolder": "windows-configure",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
     }
   ],
   "notification_subscribers": [
@@ -315,4 +396,3 @@
   ],
   "need_generate_pdf_url_template": false
 }
-
