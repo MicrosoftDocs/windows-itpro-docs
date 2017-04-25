@@ -72,22 +72,22 @@
 },
 {
 "source_path": "windows/manage/waas-servicing-strategy-windows-10-updates.md",
-"redirect_url": "/itpro/windows/update/waas-servicing-strategy-windows-10-updates",
+"redirect_url": "windows/deployment/update/waas-servicing-strategy-windows-10-updates",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/manage/waas-deployment-rings-windows-10-updates.md",
-"redirect_url": "/itpro/windows/update/waas-deployment-rings-windows-10-updates",
+"redirect_url": "/windows/deployment/update/waas-deployment-rings-windows-10-updates",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/manage/waas-servicing-branches-windows-10-updates.md",
-"redirect_url": "/itpro/windows/update/waas-servicing-branches-windows-10-updates",
+"redirect_url": "/windows/deployment/update/waas-servicing-branches-windows-10-updates",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/manage/update-compliance-monitor.md",
-"redirect_url": "/itpro/windows/update/update-compliance-monitor",
+"redirect_url": "/windows/deployment/update/update-compliance-monitor",
 "redirect_document_id": true
 },
 {
@@ -157,7 +157,7 @@
 },
 {
 "source_path": "windows/manage/waas-restart.md",
-"redirect_url": "/itpro/windows/update/waas-restart",
+"redirect_url": "/windows/deployment/update/waas-restart",
 "redirect_document_id": true
 },
 {
@@ -177,7 +177,7 @@
 },
 {
 "source_path": "windows/manage/set-up-shared-or-guest-pc.md",
-"redirect_url": "/itpro/windows/configure/set-up-shared-or-guest-pc",
+"redirect_url": "/windows/configuration/set-up-shared-or-guest-pc",
 "redirect_document_id": true
 },
 {
@@ -187,7 +187,7 @@
 },
 {
 "source_path": "windows/manage/set-up-a-device-for-anyone-to-use.md",
-"redirect_url": "/itpro/windows/configure/set-up-a-device-for-anyone-to-use",
+"redirect_url": "/windows/configuration/set-up-a-device-for-anyone-to-use",
 "redirect_document_id": true
 },
 {
@@ -202,12 +202,12 @@
 },
 {
 "source_path": "windows/manage/lock-down-windows-10-to-specific-apps.md",
-"redirect_url": "/itpro/windows/configure/lock-down-windows-10-to-specific-apps",
+"redirect_url": "/windows/configuration/lock-down-windows-10-to-specific-apps",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/manage/set-up-a-kiosk-for-windows-10-for-mobile-edition.md",
-"redirect_url": "/itpro/windows/configure/set-up-a-kiosk-for-windows-10-for-mobile-edition",
+"redirect_url": "/windows/configuration/set-up-a-kiosk-for-windows-10-for-mobile-edition",
 "redirect_document_id": true
 },
 {
@@ -232,7 +232,7 @@
 },
 {
 "source_path": "windows/manage/windows-10-start-layout-options-and-policies.md",
-"redirect_url": "/itpro/windows/configure/windows-10-start-layout-options-and-policies",
+"redirect_url": "/windows/configuration/windows-10-start-layout-options-and-policies",
 "redirect_document_id": true
 },
 {
@@ -262,7 +262,7 @@
 },
 {
 "source_path": "windows/manage/customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md",
-"redirect_url": "/itpro/windows/configure/customize-windows-10-start-screens-by-using-provisioning-packages-and-icd",
+"redirect_url": "/windows/configuration/customize-windows-10-start-screens-by-using-provisioning-packages-and-icd",
 "redirect_document_id": true
 },
 {
@@ -337,12 +337,12 @@
 },
 {
 "source_path": "windows/manage/stop-employees-from-using-the-windows-store.md",
-"redirect_url": "/itpro/windows/configure/stop-employees-from-using-the-windows-store",
+"redirect_url": "/windows/configuration/stop-employees-from-using-the-windows-store",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/manage/configure-devices-without-mdm.md",
-"redirect_url": "/itpro/windows/configure/provisioning-packages",
+"redirect_url": "/windows/configuration/provisioning-packages/provisioning-packages",
 "redirect_document_id": false
 },
 {
@@ -362,12 +362,12 @@
 },
 {
 "source_path": "windows/manage/manage-wifi-sense-in-enterprise.md",
-"redirect_url": "/itpro/windows/configure/manage-wifi-sense-in-enterprise",
+"redirect_url": "/windows/configuration/manage-wifi-sense-in-enterprise",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/deploy/provisioning-packages.md",
-"redirect_url": "/itpro/windows/configure/provisioning-packages",
+"redirect_url": "/windows/configuration/provisioning-packages/provisioning-packages",
 "redirect_document_id": true
 },
 {
@@ -482,7 +482,7 @@
 },
 {
 "source_path": "windows/deploy/update-windows-10-images-with-provisioning-packages.md",
-"redirect_url": "/itpro/windows/configure/provisioning-packages",
+"redirect_url": "/windows/configuration/provisioning-packages/provisioning-packages",
 "redirect_document_id": false
 },
 {
@@ -537,7 +537,7 @@
 },
 {
 "source_path": "windows/keep-secure/manage-identity-verification-using-microsoft-passport.md",
-"redirect_url": "/itpro/windows/keep-secure/hello-identity-verification",
+"redirect_url": "/windows/access-protection/hello-for-business/hello-identity-verification",
 "redirect_document_id": true
 },
 {
@@ -632,7 +632,7 @@
 },
 {
 "source_path": "windows/manage/manage-cortana-in-enterprise.md",
-"redirect_url": "/itpro/windows/configure/cortana-at-work-overview",
+"redirect_url": "/windows/configuration/cortana-at-work-overview",
 "redirect_document_id": true
 },
 {
@@ -1092,7 +1092,7 @@
 },
 {
 "source_path": "windows/whats-new/new-provisioning-packages.md",
-"redirect_url": "/itpro/windows/configure/provisioning-packages",
+"redirect_url": "/itpro/windows/configuration/provisioning-packages/provisioning-packages",
 "redirect_document_id": false
 },
 {
@@ -1127,7 +1127,7 @@
 },
 {
 "source_path": "windows/keep-secure/windows-10-security-guide.md",
-"redirect_url": "/itpro/windows/keep-secure/overview-of-threat-mitigations-in-windows-10",
+"redirect_url": "/windows/threat-protection/overview-of-threat-mitigations-in-windows-10",
 "redirect_document_id": true
 },
 {
@@ -8203,6 +8203,11 @@
 {
 "source_path": "windows/configure/index.md",
 "redirect_url": "/windows/configuration/index",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/keep-secure/security-technologies.md",
+"redirect_url": "/windows/windows-10/index",
 "redirect_document_id": true
 }
 ]
