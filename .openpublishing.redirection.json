@@ -162,7 +162,7 @@
 },
 {
 "source_path": "windows/manage/waas-update-windows-10.md",
-"redirect_url": "/itpro/windows/update/index",
+"redirect_url": "/itpro/windows/deployment/update/index",
 "redirect_document_id": false
 },
 {
@@ -627,7 +627,7 @@
 },
 {
 "source_path": "windows/manage/introduction-to-windows-10-servicing.md",
-"redirect_url": "/itpro/windows/update/index",
+"redirect_url": "/itpro/windows/deployment/update/index",
 "redirect_document_id": true
 },
 {
