@@ -50,7 +50,7 @@ Upgrade Readiness can be integrated with your installation of Configuration Mana
 
 After you’ve signed in to Operations Management Suite and added the Upgrade Readiness solution to your workspace, you’ll need to complete the following tasks to allow user computer data to be shared with and assessed by Upgrade Readiness.
 
-See [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965) for more information about what user computer data Upgrade Readiness collects and assesses. See [Configure Windows telemetry in your organization](windows/configuration/configure-windows-telemetry-in-your-organization) for more information about how Microsoft uses Windows telemetry data.
+See [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965) for more information about what user computer data Upgrade Readiness collects and assesses. See [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization) for more information about how Microsoft uses Windows telemetry data.
 
 **Whitelist telemetry endpoints.** To enable telemetry data to be sent to Microsoft, you’ll need to whitelist the following Microsoft telemetry endpoints on your proxy server or firewall. You may need to get approval from your security group to do this.
 
