@@ -21,7 +21,7 @@ You'll need to create multiple versions of your custom browser package if:
 
 The Internet Explorer Customization Wizard 11 stores your original settings in the Install.ins file and will show them each time you re-open the wizard. For more info about .ins files, see [Using Internet Settings (.INS) files with IEAK 11](using-internet-settings-ins-files.md).
 
-![](images/wedge.gif) **To create multiple versions of your browser package**
+**To create multiple versions of your browser package**
 
 1.  Use the Internet Explorer Customization Wizard 11 to create a custom browser package. For more info about how to run the wizard, start with the [Use the File Locations page in the IEAK 11 Wizard](file-locations-ieak11-wizard.md) topic.
 

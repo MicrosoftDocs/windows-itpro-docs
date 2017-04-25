@@ -25,7 +25,7 @@ Remove websites that were added to a local Enterprise Mode site list by mistake 
 
 **Note**<br>The changes described in this topic only impact sites added to a local Enterprise Mode site list and not the list of sites deployed to all employees by an administrator. Employees can't delete sites added to the list by an administrator.
 
-  ![](images/wedge.gif) **To remove single sites from a local Enterprise Mode site list**
+  **To remove single sites from a local Enterprise Mode site list**
 
 1.  Open Internet Explorer 11 and go to the site you want to remove.
 
@@ -34,7 +34,7 @@ The checkmark disappears from next to Enterprise Mode and the site is removed fr
 
 **Note**<br>If the site is removed by mistake, it can be added back by clicking **Enterprise Mode** again.
 
- ![](images/wedge.gif) **To remove all sites from a local Enterprise Mode site list**
+ **To remove all sites from a local Enterprise Mode site list**
 
 1.  Open IE11, click **Tools**, and then click **Internet options**.
 

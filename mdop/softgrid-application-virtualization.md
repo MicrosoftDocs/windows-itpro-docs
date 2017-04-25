@@ -2,6 +2,10 @@
 title: SoftGrid Application Virtualization
 description: SoftGrid Application Virtualization
 author: jamiejdt
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
 
 # SoftGrid Application Virtualization

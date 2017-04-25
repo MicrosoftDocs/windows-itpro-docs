@@ -5,6 +5,7 @@ keywords: ["school"]
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
+localizationpriority: high
 author: trudyha
 ---
 

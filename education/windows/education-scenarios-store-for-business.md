@@ -1,10 +1,11 @@
 ---
 title: Education scenarios Windows Store for Business
 description: Learn how IT admins and teachers can use Windows Store for Business to acquire and manage apps in schools.
-keywords: ["school"]
+keywords: ["school", "store for business"]
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
+localizationpriority: high
 author: trudyha
 ---
 
