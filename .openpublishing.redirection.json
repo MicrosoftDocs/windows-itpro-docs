@@ -67,7 +67,7 @@
 },
 {
 "source_path": "windows/manage/waas-overview.md",
-"redirect_url": "/itpro/windows/update/waas-overview",
+"redirect_url": "/windows/deployment/update/waas-overview",
 "redirect_document_id": true
 },
 {
@@ -1032,7 +1032,7 @@
 },
 {
 "source_path": "windows/plan/windows-10-servicing-options.md",
-"redirect_url": "/itpro/windows/update/waas-overview",
+"redirect_url": "/windows/deployment/update/waas-overview",
 "redirect_document_id": false
 },
 {
@@ -8157,7 +8157,7 @@
 },
 {
 "source_path": "windows/keep-secure/deploy-managed-installer-for-device-guard.md",
-"redirect_url": "/windows/device-security/deploy-managed-installer-for-device-guard",
+"redirect_url": "/windows/device-security/device-guard/deploy-managed-installer-for-device-guard",
 "redirect_document_id": true
 },
 {
