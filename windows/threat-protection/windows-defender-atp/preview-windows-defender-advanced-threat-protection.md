@@ -28,4 +28,7 @@ Learn about new features in the Windows Defender ATP preview release and be amon
 
 You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
 
-For more information, see [Turn on the preview experience](preview-settings-windows-defender-advanced-threat-protection.md).
+Turn on the preview experience setting to be among the first to try upcoming features.
+
+1. In the navigation pane, select **Preferences setup** > **Preview experience**.
+2. Toggle the setting between **On** and **Off** and select **Save preferences**.

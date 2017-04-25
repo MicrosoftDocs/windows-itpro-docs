@@ -2,7 +2,7 @@
 "redirections": [
 {
 "source_path": "windows/keep-secure/add-apps-to-protected-list-using-custom-uri.md",
-"redirect_url": "/itpro/windows/keep-secure/create-wip-policy-using-intune",
+"redirect_url": "/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune",
 "redirect_document_id": false 
 },
 {
@@ -8188,6 +8188,11 @@
 {
 "source_path": "windows/keep-secure/index.md",
 "redirect_url": "/windows/windows-10/index",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/manage/windows-store-for-business.md",
+"redirect_url": "/microsoft-store/index",
 "redirect_document_id": true
 }
 ]
