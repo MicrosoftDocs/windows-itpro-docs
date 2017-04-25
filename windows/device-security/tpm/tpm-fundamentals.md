@@ -47,7 +47,7 @@ The following sections provide an overview of the technologies that support the 
 
 -   [TPM Key Attestation](#key-attestation)
 
--   [How the TPM mitigates dictionary attacks](#how-the-tpm-mitigates-dictionary-attacks)
+-   [Anti-hammering](#anti-hammering)
 
 The following topic describes the TPM Services that can be controlled centrally by using Group Policy settings:
 [TPM Group Policy Settings](trusted-platform-module-services-group-policy-settings.md).
