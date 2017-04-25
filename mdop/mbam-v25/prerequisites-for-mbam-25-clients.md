@@ -40,19 +40,26 @@ Before you install the MBAM Client software on end users' computers, ensure that
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>For Windows 8 and Windows 8.1 client computers only: If you want MBAM to be able to store and manage the TPM recovery keys, TPM auto-provisioning must be turned off, and MBAM must be set as the owner of the TPM before you deploy MBAM.</p>
+<td align="left"><p>For Windows 8.1, Windows 10 RTM or Windows 10 version 1511 client computers only: If you want MBAM to be able to store and manage the TPM recovery keys, TPM auto-provisioning must be turned off, and MBAM must be set as the owner of the TPM before you deploy MBAM.</p>
 <p>In MBAM 2.5 SP1 only, you no longer need to turn off TPM auto-provisioning, but you must make sure that the TPM Group Policy Objects are set to not escrow TPM OwnerAuth to Active Directory.</p></td>
 <td align="left"><p>[MBAM 2.5 Security Considerations](mbam-25-security-considerations.md#bkmk-tpm)</p></td>
 </tr>
 <tr class="odd">
+<td align="left"><p>For Windows 10, version 1607 or later, only Windows can take ownership of the TPM. In addiiton, Windows will not retain the TPM owner password when provisioning the TPM.</p>
+<p>In MBAM 2.5 SP1, you must turn on auto-provisioning.</p>
+</p></td>
+<td align="left"><p>See [TPM owner password](http://technet.microsoft.com/en-us/itpro/windows/keep-secure/change-the-tpm-owner-password) for further details.
+</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p>The TPM chip must be turned on in the BIOS and be resettable from the operating system.</p></td>
 <td align="left"><p>See the BIOS documentation for more information.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>The computer’s hard disk must have at least two partitions and must be formatted with the NTFS file system.</p></td>
 <td align="left"><p></p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>The computer’s hard disk must have a BIOS that is compatible with TPM and that supports USB devices during computer startup.</p></td>
 <td align="left"><div class="alert">
 <strong>Note</strong>  

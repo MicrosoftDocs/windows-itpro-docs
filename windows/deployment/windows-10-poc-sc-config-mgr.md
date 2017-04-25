@@ -52,8 +52,8 @@ Topics and procedures in this guide are summarized in the following table. An es
 <TR><TD>[Create a task sequence](#create-a-task-sequence)<TD>Create a Configuration Manager task sequence with MDT integration using the MDT wizard<TD>15 minutes
 <TR><TD>[Finalize the operating system configuration](#finalize-the-operating-system-configuration)<TD>Enable monitoring, configure rules, and distribute content.<TD>30 minutes
 <TR><TD>[Deploy Windows 10 using PXE and Configuration Manager](#deploy-windows-10-using-pxe-and-configuration-manager)<TD>Deploy Windows 10 using Configuration Manager deployment packages and task sequences.<TD>60 minutes
-<TR><TD>[Refresh a client with Windows 10 using Configuration Manager](#refresh-a-client-with-windows-10-using-configuration-manager)<TD>Use a task sequence to refresh a client with Windows 10 using Configuration Manager and MDT<TD>90 minutes
 <TR><TD>[Replace a client with Windows 10 using Configuration Manager](#replace-a-client-with-windows-10-using-configuration-manager)<TD>Replace a client computer with Windows 10 using Configuration Manager.<TD>90 minutes
+<TR><TD>[Refresh a client with Windows 10 using Configuration Manager](#refresh-a-client-with-windows-10-using-configuration-manager)<TD>Use a task sequence to refresh a client with Windows 10 using Configuration Manager and MDT<TD>90 minutes
 
 </TABLE>
 

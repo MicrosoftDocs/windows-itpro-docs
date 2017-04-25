@@ -1,3 +1,3 @@
 ---
-redirect_url: https://technet.microsoft.com/edu/windows/
+redirect_url: https://docs.microsoft.com/education/windows/
 ---

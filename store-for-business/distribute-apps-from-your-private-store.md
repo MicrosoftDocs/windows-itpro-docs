@@ -63,7 +63,7 @@ Employees can claim apps that admins added to the private store by doing the fol
 
 [Manage access to private store](manage-access-to-private-store.md)
 
-[Configure access to Windows Store](stop-employees-from-using-the-windows-store.md)
+[Configure access to Windows Store](/windows/configuration/stop-employees-from-using-the-windows-store)
 
  
 
