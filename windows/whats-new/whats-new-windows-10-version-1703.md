@@ -170,6 +170,9 @@ For Windows desktops, users are able to reset a forgotten PIN through **Settings
 
 For more details, check out [What if I forget my PIN?](/windows/access-protection/hello-for-business/hello-why-pin-is-better-than-password#what-if-i-forget-my-pin).
 
+### Windows Information Protection (WIP) and Azure Active Directory (Azure AD)
+You can now [Create a Windows Information Protection (WIP) policy using Microsoft Azure Intune](https://docs.microsoft.com/en-us/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune) and [Associate your WIP policy with your VPN policy]()
+
 ## Update
 
 ### Windows Update for Business
