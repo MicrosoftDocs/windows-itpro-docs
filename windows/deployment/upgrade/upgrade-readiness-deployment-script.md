@@ -72,7 +72,7 @@ The deployment script displays the following exit codes to let you know if it wa
 
 
 
-<TABLE width="90%" border=1 cellspacing=0 cellpadding=0>
+<TABLE border=1>
 
 <TR><TD BGCOLOR="#a0e4fa" width="10%">Exit code</TD>
 <TD BGCOLOR="#a0e4fa" width="40%">Meaning</td>
