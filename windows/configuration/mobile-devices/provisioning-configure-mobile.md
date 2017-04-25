@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
-author: jdeckerMS
+author: jdeckerms
 ---
 
 # Use Windows Configuration Designer to configure Windows 10 Mobile devices 

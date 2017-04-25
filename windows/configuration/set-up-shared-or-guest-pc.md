@@ -5,7 +5,7 @@ keywords: ["shared pc mode"]
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: high
 ---
 

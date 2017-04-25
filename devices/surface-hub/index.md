@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: surfacehub
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: medium
 ---
 
@@ -40,6 +40,7 @@ In some ways, adding your new Surface Hub is just like adding any other Microsof
 | [PowerShell for Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md) | 
 | [How Surface Hub addresses Wi-Fi Direct security issues](surface-hub-wifi-direct.md) | This topic provides guidance on Wi-Fi Direct security risks, how the Surface Hub has addressed those risks, and how Surface Hub administrators can configure the device for the highest level of security.  | PowerShell scripts to help set up and manage your Surface Hub. |
 | [Troubleshoot Microsoft Surface Hub](troubleshoot-surface-hub.md) | Troubleshoot common problems, including setup issues, Exchange ActiveSync errors. |
+| [Troubleshoot Miracast on Surface Hub](miracast-troubleshooting.md) | Learn how to resolve Miracast issues. |
 | [Useful downloads for Surface Hub administrators](surface-hub-downloads.md) | This topic provides links to useful Surface Hub documents, such as product datasheets, the site readiness guide, and user's guide. |
 | [Change history for Surface Hub](change-history-surface-hub.md) | This topic lists new and updated topics in the Surface Hub documentation library. |
 

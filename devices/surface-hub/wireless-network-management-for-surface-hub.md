@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub, networking
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: medium
 ---
 

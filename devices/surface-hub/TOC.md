@@ -38,5 +38,6 @@
 ## [PowerShell for Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md)
 ## [How Surface Hub addresses Wi-Fi Direct security issues](surface-hub-wifi-direct.md)
 ## [Troubleshoot Microsoft Surface Hub](troubleshoot-surface-hub.md)
+## [Troubleshoot Miracast on Surface Hub](miracast-troubleshooting.md)
 ## [Useful downloads for Surface Hub administrators](surface-hub-downloads.md)
 ## [Change history for Surface Hub](change-history-surface-hub.md)

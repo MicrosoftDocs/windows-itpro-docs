@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: medium
 ---
 # Appendix: Information sent to Microsoft during activation
