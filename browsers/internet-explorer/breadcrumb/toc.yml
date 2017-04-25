@@ -1,0 +1,7 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Internet Explorer
+      tocHref: /internet-explorer
+      topicHref: /internet-explorer/index
