@@ -49,30 +49,42 @@ A student PC that's set up using the Set up School PCs provisioning package is t
 
 ## Tips for success
 
+* **Run the same Windows 10 build on the admin device and the student PCs**
+
+  It's critical that the IT administrator's or technical teacher's device is running the same Windows 10 build (Windows 10, version 1607 or Windows 10, version 1703) as the student PCs that you're provisioning. 
+
+  > [!NOTE]
+  > If you're using the Windows 10, version 1607 build of the Set up School PCs app, do not use it to provision student PCs with Windows 10, version 1703 images. Conversely, if you're using the Windows 10, version 1703 build of Set up School PCs, do not use it to provision student PCs with Windows 10, version 1607 images. We recommend 
+
 * **Run the app at work**
 
-    For the best results, run the Set up School PCs app on your work device connected to your school's network. That way the app can gather accurate information about your wireless networks and cloud subscriptions.
+  For the best results, run the Set up School PCs app on your work device connected to your school's network. That way the app can gather accurate information about your wireless networks and cloud subscriptions.
 
-    > [!NOTE]  
-    > Don't use the **Set up Schools PCs** app for PCs that must connect to enterprise networks or to open Wi-Fi networks that require the user to accept Terms of Use.
+  > [!NOTE]  
+  > Don't use the **Set up Schools PCs** app for PCs that must connect to enterprise networks or to open Wi-Fi networks that require the user to accept Terms of Use.
+
+* **Network tips**
+  * You cannot use Set up School PCs over a certification-based network, or one where you have to enter credentials in a browser. You can only connect to an open network, or one with a basic password. 
+  * If you need to set up a lot of devices over Wi-Fi, make sure that your network configuration can support it.
+    - We recommend configuring your DHCP so you have a good set of IP addresses available (about 100-200). These IP addresses will expire after a short amount of time (about 30 minutes). This allows you set up many devices simultaneously, and the IP addresses will be freed up quick so you can continue to set up devices without risk of crashing your network.
 
 * **Apply to new student PCs**
   * The provisioning package that the Set up School PCs app creates should be used on new PCs that haven't been set up for accounts yet. If you apply the provisioning package to a student PC that has already been set up, existing accounts and data might be lost.
   
-    > [!WARNING]  
-    > Only use the provisioning package on PCs that you want to configure and lock down for students. After you apply the provisioning package to a student PC, the PC must be reset to remove the settings.
+  > [!WARNING]  
+  > Only use the provisioning package on PCs that you want to configure and lock down for students. After you apply the provisioning package to a student PC, the PC must be reset to remove the settings.
 
   * If the PC has already been set up and you want to return to the first-run experience to apply a new package, you can reset the PC to get to a clean state and get it back to the first-run experience and ready to provision again.
 
-    To do this:
-    - Go to **Settings > Update & security > Recovery**. In the **Reset this PC** section of the **Recovery** page, click **Get started**.
-    - Or, hit **Shift** + click **Restart** in the **Power** menu to load the Windows boot user experience. From there, follow these steps:
-      1. Click **Troubleshoot** and then choose **Reset this PC**.
-      2. Select **Remove everything**.
-      3. Select **No - remove provisioning packages**.
-      4. Select **Only the drive where Windows is installed** (this may not always show up).
-      5. Click **Just remove my files**.
-      6. Click **Reset**.
+  To do this:
+  - Go to **Settings > Update & security > Recovery**. In the **Reset this PC** section of the **Recovery** page, click **Get started**.
+  - Or, hit **Shift** + click **Restart** in the **Power** menu to load the Windows boot user experience. From there, follow these steps:
+    1. Click **Troubleshoot** and then choose **Reset this PC**.    
+    2. Select **Remove everything**.
+    3. Select **No - remove provisioning packages**.
+    4. Select **Only the drive where Windows is installed** (this may not always show up).      
+    5. Click **Just remove my files**.
+    6. Click **Reset**.
 
 * **Use more than one USB key**
 
@@ -152,7 +164,11 @@ The **Set up School PCs** app guides you through the configuration choices for t
       > If you select this option, the provisioning process will take longer (about 30 minutes).
 
   - Select **Allow local storage (not recommended for shared devices)** to let students save files to the **Desktop** and **Documents** folder on the student PC. We don't recommend this option if the device will be part of a shared cart or lab.
-  - Select **Optimize device for a single student, instead of a shared cart or lab** to optimize the device for use by a single student (1:1). Check this option if the device will not be part of a shared cart or lab.
+  - Select **Optimize device for a single student, instead of a shared cart or lab** to optimize the device for use by a single student (1:1). 
+    - Check this option if the device will not be part of a shared cart or lab.
+    - Set up School PCs will change some account management logic so that it sets the expiration time for an account to 180 days (without requiring sign-in). 
+    - This setting also increases the maximum storage to 100% of the available disk space. This prevents the student's account from being erased if the student stores a lot of files or data, or if the student doesn't use the PC over a prolonged period.
+
   - Select **Let guests sign-in to these PCs** to allow guests to use student PCs without a school account. For example, if the device will be in a library and you want other users (like visiting students or teachers) to be able to use the device, you can select this option.
 
     If you select this option, this adds a **Guest** account button in the PC's sign-in screen to allow anyone to use the PC.
@@ -178,13 +194,13 @@ The **Set up School PCs** app guides you through the configuration choices for t
   3. Click **Next** or **Skip** depending on whether you want to set up Take a Test.
 
 <!-- comment out
-7. If you want to add Store for Business apps to the student PCs, you can select from the list of recommended apps in the **Add STEM and Makerspace apps to Student PCs** page.
+7. If you want to add Microsoft Store for Education apps to the student PCs, you can select from the list of recommended apps in the **Add STEM and Makerspace apps to Student PCs** page.
   1. Select the apps that you want to add. You'll see a checkmark on apps that you select.
   2. Click **Next**.
 
-    **Figure 4** - Select Store apps to add to student PCs
+    **Figure 4** - Select Microsoft Store apps to add to student PCs
 
-    ![Select Store apps to add to student PCs](images/suspc_choosesettings_apps.png)
+    ![Select Microsoft Store apps to add to student PCs](images/suspc_choosesettings_apps.png)
 
 -->
 

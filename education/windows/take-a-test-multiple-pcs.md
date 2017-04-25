@@ -200,8 +200,17 @@ Anything hosted on the web can be presented in a locked down manner, not just as
 **To provide a link to the test**
 
 1. Create the link to the test using schema activation.
+  - Create a link using a web UI
 
-    Manually embed a URL with a specific prefix. You can select parameters depending on what you want to enable. For more info, see [Create a link using schema activation](#create-a-link-using-schema-activation).
+    For this option, you can just copy the assessment URL, select the options you want to allow during the test, and click a button to create the link. We recommend this for option for teachers.
+
+    To get started, go here: [Create a link using a web UI](https://education.microsoft.com/courses-and-resources/windows-10-create-a-take-a-test-link).
+
+  - Create a link using schema activation
+
+    You can accomplish the same thing as the first option (using a web UI), by manually embedding a URL with a specific prefix. You can select parameters depending on what you want to enable. 
+
+    For more info, see [Create a link using schema activation](#create-a-link-using-schema-activation).
 
 2. Distribute the link. 
 
@@ -217,7 +226,7 @@ One of the ways you can present content in a locked down manner is by embedding 
 1. Embed a link or create a desktop shortcut with:
 
   ```
-  ms-edu-secureassessment:<URL>!enforceLockdown
+  ms-edu-secureassessment:<URL>#enforceLockdown
   ```
 
 2. To enable printing, screen capture, or both, use the above link and append one of these parameters:
