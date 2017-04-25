@@ -14,9 +14,9 @@ localizationpriority: high
 # Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager
 **Applies to:**
 
--   Windows 10, version 1607
--   Windows 10 Mobile
--   System Center Configuration Manager
+- Windows 10, version 1607 and later
+- Windows 10 Mobile, version 1607 and later
+- System Center Configuration Manager
 
 System Center Configuration Manager helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection mode, and how to find enterprise data on the network.
 
@@ -395,14 +395,14 @@ There are no default locations included with WIP, you must add each of your netw
             <td>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<p>This setting works with the IP ranges settings to detect whether a network endpoint is enterprise or personal on private networks.<p>If you have multiple resources, you must separate them using the "," delimiter.</td>
         </tr>
         <tr>
-            <td>Enterprise Proxy Servers</td>
+            <td>Proxy servers</td>
             <td>proxy.contoso.com:80;proxy2.contoso.com:443</td>
-            <td>Specify your externally-facing proxy server addresses, along with the port through which traffic is allowed and protected with WIP.<p>This list shouldn’t include any servers listed in the Enterprise Internal Proxy Servers list, which are used for WIP-protected traffic.<p>This setting is also required if you use a proxy in your network. If you don't have a proxy server, you might find that enterprise resources are unavailable when a client is behind a proxy, such as when you’re visiting another company and not on that company’s guest network.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>
+            <td>Specify the proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<br><br>This list shouldn’t include any servers listed in your Internal proxy servers list. Internal proxy servers must be used only for WIP-protected (enterprise) traffic.<br><br>If you have multiple resources, you must separate them using the ";" delimiter.</td>
         </tr>
         <tr>
-            <td>Enterprise Internal Proxy Servers</td>
+            <td>Internal proxy servers</td>
             <td>contoso.internalproxy1.com;contoso.internalproxy2.com</td>
-            <td>Specify the proxy servers your devices will go through to reach your cloud resources.<p>Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<p>This list shouldn’t include any servers listed in the Enterprise Proxy Servers list, which are used for non-WIP-protected traffic.<p>If you have multiple resources, you must separate them using the ";" delimiter.</td>                
+            <td>Specify the proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<br><br>This list shouldn’t include any servers listed in your Proxy servers list. Proxy servers must be used only for non-WIP-protected (non-enterprise) traffic.<br><br>If you have multiple resources, you must separate them using the ";" delimiter.</td>           
         </tr>
         <tr>
             <td>Enterprise IPv4 Range (Required)</td>
