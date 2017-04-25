@@ -35,7 +35,7 @@ Sequencing multiple apps at the same time requires that you create a **ConfigFil
 
 2. Add the following required XML info for each app:
 
-    - **&lt;Name&gt;.** The name of the app you're adding to the package.
+    - **&lt;AppName&gt;.** The name of the app you're adding to the package.
     
     - **&lt;InstallerFolder&gt;.** The file path to the folder with the app installer.
 
@@ -55,7 +55,7 @@ Sequencing multiple apps at the same time requires that you create a **ConfigFil
         <?xml version="1.0"?>
             <Applications>
                 <Application>
-                    <Name>Skype for Windows</Name>
+                    <AppName>Skype for Windows</AppName>
                     <InstallerFolder>D:\Install\New\SkypeforWindows</InstallerFolder>
                     <Installer>SkypeSetup.exe</Installer>
                     <InstallerOptions>/S</InstallerOptions>
@@ -64,7 +64,7 @@ Sequencing multiple apps at the same time requires that you create a **ConfigFil
                     <Enabled>True</Enabled>
                 </Application>
                 <Application>
-                    <Name>Power BI</Name>
+                    <AppName>Power BI</AppName>
                     <InstallerFolder>D:\Install\New\MicrosoftPowerBI</InstallerFolder>
                     <Installer>PBIDesktop.msi</Installer>
                     <InstallerOptions>/S</InstallerOptions>
@@ -97,7 +97,7 @@ Sequencing multipe apps at the same time requires that you create a **ConfigFIle
 
 2. Add the following required XML info for each app:
 
-    - **&lt;Name&gt;.** The name of the app you're adding to the package.
+    - **&lt;AppName&gt;.** The name of the app you're adding to the package.
     
     - **&lt;InstallerFolder&gt;.** The file path to the folder with the app installer.
 
@@ -115,7 +115,7 @@ Sequencing multipe apps at the same time requires that you create a **ConfigFIle
         <?xml version="1.0"?>
             <Applications>
                 <Application>
-                    <Name>Skype for Windows</Name>
+                    <AppName>Skype for Windows</AppName>
                     <InstallerFolder>D:\Install\New\SkypeforWindows</InstallerFolder>
                     <Installer>SkypeSetup.exe</Installer>
                     <TimeoutInMinutes>20</TimeoutInMinutes>
@@ -123,7 +123,7 @@ Sequencing multipe apps at the same time requires that you create a **ConfigFIle
                     <Enabled>True</Enabled>
                 </Application>
                 <Application>
-                    <Name>Power BI</Name>
+                    <AppName>Power BI</AppName>
                     <InstallerFolder>D:\Install\New\MicrosoftPowerBI</InstallerFolder>
                     <Installer>PBIDesktop.msi</Installer>
                     <TimeoutInMinutes>20</TimeoutInMinutes>

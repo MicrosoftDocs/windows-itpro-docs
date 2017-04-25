@@ -232,20 +232,6 @@
       "version": 0
     },
     {
-      "docset_name": "windows",
-      "build_source_folder": "windows",
-      "build_output_subfolder": "windows",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
       "docset_name": "windows-hub",
       "build_source_folder": "windows/hub",
       "build_output_subfolder": "windows-hub",
