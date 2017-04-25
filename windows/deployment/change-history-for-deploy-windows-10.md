@@ -37,14 +37,14 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 |----------------------|-------------|
 | [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md) | Multiple topics updated, name changed from Upgrade Analytics to Upgrade Readiness, and other content updates. | 
 | [USMT Requirements](usmt/usmt-requirements.md) | Updated: Vista support removed and other minor changes | 
-| [Get started with Upgrade Analytics](upgrade/upgrade-analytics-get-started.md) | Updated structure and content | 
-| [Upgrade Analytics deployment script](upgrade/upgrade-analytics-deployment-script.md) | Added as a separate page from get started | 
-| [Use Upgrade Analytics to manage Windows upgrades](upgrade/use-upgrade-analytics-to-manage-windows-upgrades.md) | Updated with links to new content and information about the target OS setting |
-| [Upgrade Analytics - Upgrade overview](upgrade/upgrade-analytics-upgrade-overview.md) | New | 
-| [Upgrade Analytics - Step 1: Identify important apps](upgrade/upgrade-analytics-identify-apps.md) | Updated topic title and content | 
-| [Upgrade Analytics - Step 2: Resolve app and driver issues](upgrade/upgrade-analytics-resolve-issues.md) | New | 
-| [Upgrade Analytics - Step 3: Deploy Windows](upgrade/upgrade-analytics-deploy-windows.md) | New | 
-| [Upgrade Analytics - Additional insights](upgrade/upgrade-analytics-additional-insights.md) | New | 
+| [Get started with Upgrade Analytics](upgrade/upgrade-readiness-get-started.md) | Updated structure and content | 
+| [Upgrade Analytics deployment script](upgrade/upgrade-readiness-deployment-script.md) | Added as a separate page from get started | 
+| [Use Upgrade Analytics to manage Windows upgrades](upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md) | Updated with links to new content and information about the target OS setting |
+| [Upgrade Analytics - Upgrade overview](upgrade/upgrade-readiness-upgrade-overview.md) | New | 
+| [Upgrade Analytics - Step 1: Identify important apps](upgrade/upgrade-readiness-identify-apps.md) | Updated topic title and content | 
+| [Upgrade Analytics - Step 2: Resolve app and driver issues](upgrade/upgrade-readiness-resolve-issues.md) | New | 
+| [Upgrade Analytics - Step 3: Deploy Windows](upgrade/upgrade-readiness-deploy-windows.md) | New | 
+| [Upgrade Analytics - Additional insights](upgrade/upgrade-readiness-additional-insights.md) | New | 
 
 
 ## January 2017
@@ -62,7 +62,7 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 | [Settings changed when you uninstall a provisioning package](/windows/configuration/provisioning-packages/provisioning-uninstall-package.md) | New (previously published in Hardware Dev Center on MSDN) | 
 | [Use a script to install a desktop app in provisioning packages](/windows/configuration/provisioning-packages/provisioning-script-to-install-app.md) | New (previously published in Hardware Dev Center on MSDN) |
 | [Windows ICD command-line interface (reference)](/windows/configuration/provisioning-packages/provisioning-command-line.md) | New (previously published in Hardware Dev Center on MSDN) |
-| [Get started with Upgrade Analytics](upgrade/upgrade-analytics-get-started.md) | Updated exit code table with suggested fixes, and added link to the Upgrade Analytics blog | 
+| [Get started with Upgrade Analytics](upgrade/upgrade-readiness-get-started.md) | Updated exit code table with suggested fixes, and added link to the Upgrade Analytics blog | 
 | [Provision PCs with common settings for initial deployment (simple provisioning)](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment.md) | Instructions for applying the provisioning package moved to [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package.md) |
 | [Provision PCs with apps and certificates for initial deployments (advanced provisioning)](/windows/configuration/provisioning-packages/provision-pcs-with-apps-and-certificates.md) | Instructions for applying the provisioning package moved to [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package.md) |
 
@@ -76,9 +76,9 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 | New or changed topic | Description |
 |----------------------|-------------|
 | [Windows 10 Enterprise E3 in CSP Overview](windows-10-enterprise-e3-overview.md) | New | 
-| [Get started with Upgrade Analytics](upgrade/upgrade-analytics-get-started.md) | Updated with prerequisites for site discovery |
-| [Resolve application and driver issues](upgrade/upgrade-analytics-resolve-issues.md) | Updated with app status info for Ready For Windows |
-| [Review site discovery](upgrade/upgrade-analytics-additional-insights.md) | New |
+| [Get started with Upgrade Analytics](upgrade/upgrade-readiness-get-started.md) | Updated with prerequisites for site discovery |
+| [Resolve application and driver issues](upgrade/upgrade-readiness-resolve-issues.md) | Updated with app status info for Ready For Windows |
+| [Review site discovery](upgrade/upgrade-readiness-additional-insights.md) | New |
 
 ## RELEASE: Windows 10, version 1607
 
@@ -96,7 +96,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 ## July 2016
 | New or changed topic | Description |
 |----------------------|-------------|
-| [Manage Windows upgrades with Upgrade Analytics](upgrade/manage-windows-upgrades-with-upgrade-analytics.md) | New |
+| [Manage Windows upgrades with Upgrade Analytics](upgrade/manage-windows-upgrades-with-upgrade-readiness.md) | New |
 
 ## June 2016
 | New or changed topic | Description |
