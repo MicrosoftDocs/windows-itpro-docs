@@ -13,8 +13,8 @@ localizationpriority: high
 
 **Applies to:**
 
--   Windows 10 and later
--   Windows 10 Mobile and later
+- Windows 10, version 1607 and later
+- Windows 10 Mobile, version 1607 and later
 
 Windows Information Protection (WIP) creates audit events in the following situations:
 

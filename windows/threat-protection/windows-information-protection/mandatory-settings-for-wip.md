@@ -13,8 +13,8 @@ localizationpriority: high
 # Mandatory tasks and settings required to turn on Windows Information Protection (WIP)
 **Applies to:**
 
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
+- Windows 10, version 1607 and later
+- Windows 10 Mobile, version 1607 and later
 
 This list provides all of the tasks and settings that are required for the operating system to turn on Windows Information Protection (WIP), formerly known as enterprise data protection (EDP), in your enterprise.
 
