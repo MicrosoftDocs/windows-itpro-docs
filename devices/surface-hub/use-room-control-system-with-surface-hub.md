@@ -22,45 +22,14 @@ Using a room control system with your Surface Hub involves connecting room contr
 
 To connect to a room control system control panel, you don't need to configure any terminal settings on the Surface Hub. If you want to connect a PC or laptop to your Surface Hub and send serial commands from the Surface Hub, you can use a terminal emulator program like Tera Term or PuTTY. 
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Setting</th>
-<th align="left">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Baud rate</p></td>
-<td align="left"><p>115200</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Data bits</p></td>
-<td align="left"><p>8</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Stop bits</p></td>
-<td align="left"><p>1</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Parity</p></td>
-<td align="left"><p>none</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Flow control</p></td>
-<td align="left"><p>none</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Line feed</p></td>
-<td align="left"><p>every carriage return</p></td>
-</tr>
-</tbody>
-</table>
-
+| Setting | Value |
+| --- | --- |
+| Baud rate | 115200 |
+| Data bits | 8 | 
+| Stop bits | 1 |
+| Parity | none |
+| Flow control | none |
+| Line feed | every carriage return |
  
 
 ## Wiring diagram
@@ -77,153 +46,41 @@ Room control systems use common meeting-room scenarios for commands. Commands or
 
 The following command modifiers are available. Commands terminate with a new line character (/n). Responses can come at any time in response to state changes not triggered directly by a management port command.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Modifier</th>
-<th align="left">Result</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>+</p></td>
-<td align="left"><p>Increment a value</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>-</p></td>
-<td align="left"><p>Decrease a value</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>=</p></td>
-<td align="left"><p>Set a discrete value</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>?</p></td>
-<td align="left"><p>Queries for a current value</p></td>
-</tr>
-</tbody>
-</table>
-
+| Modifier | Result |
+| --- | --- |
+| + | Increment a value |
+| - | Decrease a value |
+| = | Set a discrete value |
+| ? | Queries for a current value |
  
 
 ## Power
 
 Surface Hub can be in one of these power states.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">State</th>
-<th align="left">Energy Star state</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>0</p></td>
-<td align="left"><p>S5</p></td>
-<td align="left"><p>Off</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>1</p></td>
-<td align="left"><p>-</p></td>
-<td align="left"><p>Power up (indeterminate)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>2</p></td>
-<td align="left"><p>S3</p></td>
-<td align="left"><p>Sleep</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>3</p></td>
-<td align="left"><p>S0</p></td>
-<td align="left"><p>Resting</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>4</p></td>
-<td align="left"><p>S0</p></td>
-<td align="left"><p>Ambient</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>5</p></td>
-<td align="left"><p>S0</p></td>
-<td align="left"><p>Ready</p></td>
-</tr>
-</tbody>
-</table>
+| State | Energy Star state| Description |
+| --- | --- | --- |
+| 0 | S5 | Off |
+| 1 | - | Power up (indeterminate) |
+| 2 | S3 | Sleep |
+| 5 | S0 | Ready |
+
 
 In Replacement PC mode, the power states are only Ready and Off and only change the display. The management port can't be used to power on the replacement PC. 
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">State</th>
-<th align="left">Energy Star state</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>0</p></td>
-<td align="left"><p>S5</p></td>
-<td align="left"><p>Off</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>5</p></td>
-<td align="left"><p>S0</p></td>
-<td align="left"><p>Ready</p></td>
-</tr>
-</tbody>
-</table>
+| State | Energy Star state| Description |
+| --- | --- | --- |
+| 0 | S5 | Off |
+| 5 | S0 | Ready |
 
 For a control device, anything other than 5 / Ready should be considered off. Each PowerOn command results in two state changes and reponses. 
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Command</th>
-<th align="left">State change</th>
-<th align="left">Response</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>PowerOn</p></td>
-<td align="left"><p>Device turns on (display + PC).</p><p>PC service notifies SMC that the PC is ready.</p></td>
-<td align="left"><p>Power=0</p><p>Power=5</p></td>
-</tr>
+| Command | State change| Response |
+| --- | --- | --- |
+| PowerOn | Device turns on (display + PC).</br></br>PC service notifies SMC that the PC is ready. |  Power=0</br></br>Power=5 |
+| PowerOff | Device transitions to ambient state (PC on, display dim). |  Power=0 |
+| Power? |  SMC reports the last-known power state. |  Power=<#> |
 
-<tr class="even">
-<td align="left"><p>PowerOff</p></td>
-<td align="left"><p>Device transitions to ambient state (PC on, display dim).</p></td>
-<td align="left"><p>Power=0</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Power?</p></td>
-<td align="left"><p>SMC reports the last-known power state.</p></td>
-<td align="left"><p>Power=<#></p></td>
-</tr>
-</tbody>
-</table>
 
 
 ## Brightness
@@ -232,34 +89,10 @@ The current brightness level is a range from 0 to 100.
 
 Changes to brightness levels can be sent by a room control system, or other system.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Command</th>
-<th align="left">State change</th>
-<th align="left">Response</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Brightness+</p></td>
-<td align="left"><p>System management controller (SMC) sends the brightness up command.</p>
-<p>PC service on the room control system notifies SMC of new brightness level.</p></td>
-<td align="left"><p>Brightness = 51</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Brightness-</p></td>
-<td align="left"><p>SMC sends the brightness down command.</p>
-<p>PC service notifies SMC of new brightness level.</p></td>
-<td align="left"><p>Brightness = 50</p></td>
-</tr>
-</tbody>
-</table> 
+| Command | State change |Response |
+| --- | --- | --- |
+| Brightness+ | System management controller (SMC) sends the brightness up command.</br></br>PC service on the room control system notifies SMC of new brightness level. |  Brightness = 51 |
+| Brightness- | | SMC sends the brightness down command.</br></br>PC service notifies SMC of new brightness level. | Brightness = 50 |
 
 ## Volume
 
@@ -270,34 +103,11 @@ Changes to volume levels can be sent by a room control system, or other system.
 >[!NOTE]
 >The Volume command will only control the volume for embedded or Replacement PC mode, not from [Guest sources](connect-and-display-with-surface-hub.md).
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Command</th>
-<th align="left">State change</th>
-<th align="left">Response</br>(On in [Replacement PC mode](connect-and-display-with-surface-hub.md#replacement-pc-mode))</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Volume+</p></td>
-<td align="left"><p>SMC sends the volume up command.</p>
-<p>PC service notifies SMC of new volume level.</p></td>
-<td align="left"><p>Volume = 51</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Volume-</p></td>
-<td align="left"><p>SMC sends the volume down command.</p>
-<p>PC service notifies SMC of new volume level.</p></td>
-<td align="left"><p>Volume = 50</p></td>
-</tr>
-</tbody>
-</table>
+| Command | State change | Response</br>(On in [Replacement PC mode](connect-and-display-with-surface-hub.md#replacement-pc-mode)) |
+| --- | --- | --- |
+| Volume+ |  SMC sends the volume up command.</br></br>>PC service notifies SMC of new volume level. |  Volume = 51 |
+| Volume- |  SMC sends the volume down command.</br></br>>PC service notifies SMC of new volume level. |  Volume = 50 |
+
 
  
 
@@ -305,28 +115,10 @@ Changes to volume levels can be sent by a room control system, or other system.
 
 Audio can be muted.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Command</th>
-<th align="left">State change</th>
-<th align="left">Response</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>AudioMute+</p></td>
-<td align="left"><p>SMC sends the audio mute command.</p>
-<p>PC service notifies SMC that audio is muted.</p></td>
-<td align="left"><p>none</p></td>
-</tr>
-</tbody>
-</table>
+| Command | State change | Response |
+| --- | --- | --- |
+| AudioMute+ |  SMC sends the audio mute command.</br></br>>PC service notifies SMC that audio is muted. |  none |
+
 
  
 
@@ -334,116 +126,36 @@ Audio can be muted.
 
 Several display sources can be used.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">State</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>0</p></td>
-<td align="left"><p>Onboard PC</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>1</p></td>
-<td align="left"><p>DisplayPort</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>2</p></td>
-<td align="left"><p>HDMI</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>3</p></td>
-<td align="left"><p>VGA</p></td>
-</tr>
-</tbody>
-</table>
+| State | Description | 
+| --- | --- |
+| 0 |  Onboard PC |
+| 1 |  DisplayPort |
+| 2 |  HDMI |
+| 3 |  VGA |
+
 
  
 
 Changes to display source can be sent by a room control system, or other system.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Command</th>
-<th align="left">State change</th>
-<th align="left">Response</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Source=#</p></td>
-<td align="left"><p>SMC changes to the desired source.</p>
-<p>PC service notifies SMC that the display source has switched.</p></td>
-<td align="left"><p>Source=&lt;#&gt;</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Source+</p></td>
-<td align="left"><p>SMC cycles to the next active input source.</p>
-<p>PC service notifies SMC of the current input source.</p></td>
-<td align="left"><p>Source=&lt;#&gt;</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Source-</p></td>
-<td align="left"><p>SMC cycles to the previous active input source.</p>
-<p>PC service notifies SMC of the current input source.</p></td>
-<td align="left"><p>Source=&lt;#&gt;</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Source?</p></td>
-<td align="left"><p>SMC queries PC service for the active input source.</p>
-<p>PC service notifies SMC of the current in;put source.</p></td>
-<td align="left"><p>Source=&lt;#&gt;</p></td>
-</tr>
-</tbody>
-</table>
+| Command | State change | Response |
+| --- | --- | --- |
+| Source=# |  SMC changes to the desired source.</br></br>>PC service notifies SMC that the display source has switched. |  Source=&lt;#&gt; |
+| Source+ |  SMC cycles to the next active input source.</br></br>>PC service notifies SMC of the current input source. |  Source=&lt;#&gt; |
+| Source- | SMC cycles to the previous active input source.</br></br>>PC service notifies SMC of the current input source. |  Source=&lt;#&gt; |
+| Source? |  SMC queries PC service for the active input source.</br></br>>PC service notifies SMC of the current in;put source. | Source=&lt;#&gt; |
 
 ## Errors
 
 Errors are returned following the format in this table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Error</th>
-<th align="left">Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Error: Unknown command '&lt;input&gt;'.</p></td>
-<td align="left"><p>The instruction contains an unknown initial command. For example, &quot;VOL+&quot; would be invalid and return &quot; Error: Unknown command 'VOL'&quot;.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Error: Unknown operator '&lt;input&gt;'.</p></td>
-<td align="left"><p>The instruction contains an unknown operator. For example, &quot;Volume!&quot; would be invalid and return &quot; Error: Unknown operator '!'&quot;.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Error: Unknown parameter '&lt;input&gt;'.</p></td>
-<td align="left"><p>The instruction contains an unknown parameter. For example, &quot;Volume=abc&quot; would be invalid and return &quot; Error: Unknown parameter 'abc'&quot;.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Error: Command not available when off '&lt;input&gt;'.</p></td>
-<td align="left"><p>When the Surface Hub is off, commands other than Power return this error. For example, &quot;Volume+&quot; would be invalid and return &quot; Error: Command not available when off 'Volume'&quot;.</p></td>
-</tr>
-</tbody>
-</table>
+| Error | Notes |
+| --- | --- |
+| Error: Unknown command '&lt;input&gt;'. |  The instruction contains an unknown initial command. For example, &quot;VOL+&quot; would be invalid and return &quot; Error: Unknown command 'VOL'&quot;. |
+| Error: Unknown operator '&lt;input&gt;'. |  The instruction contains an unknown operator. For example, &quot;Volume!&quot; would be invalid and return &quot; Error: Unknown operator '!'&quot;. |
+| Error: Unknown parameter '&lt;input&gt;'. |  The instruction contains an unknown parameter. For example, &quot;Volume=abc&quot; would be invalid and return &quot; Error: Unknown parameter 'abc'&quot;. |
+| Error: Command not available when off '&lt;input&gt;'. |  When the Surface Hub is off, commands other than Power return this error. For example, &quot;Volume+&quot; would be invalid and return &quot; Error: Command not available when off 'Volume'&quot;. |
+
 
  
 
