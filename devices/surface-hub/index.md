@@ -1,5 +1,5 @@
 ---
-title: Microsoft Surface Hub
+title: Microsoft Surface Hub admin guide
 description: Documents related to the Microsoft Surface Hub.
 ms.assetid: 69C99E91-1441-4318-BCAF-FE8207420555
 ms.prod: w10
@@ -10,7 +10,7 @@ author: jdeckerMS
 localizationpriority: medium
 ---
 
-# Microsoft Surface Hub
+# Microsoft Surface Hub admin guide
 
 >[Looking for the user's guide for Surface Hub?](http://download.microsoft.com/download/3/6/B/36B6331E-0C63-4E71-A05D-EE88D05081F8/surface-hub-user-guide-en-us.pdf)
 

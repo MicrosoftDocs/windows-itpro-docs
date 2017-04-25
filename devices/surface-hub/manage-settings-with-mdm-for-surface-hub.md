@@ -59,8 +59,8 @@ You can configure the Surface Hub settings in the following table using MDM. The
 
 For more information, see [SurfaceHub configuration service provider](https://msdn.microsoft.com/library/windows/hardware/mt608323). 
 
-| Setting              | Node in the SurfaceHub CSP         | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML\*? |
-| -------------------- | ---------------------------------- | ------------------------- | ---------------------------------------- | ------------------------- |
+| Setting          | Node in the SurfaceHub CSP         | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML\*? |
+| ---- | --- | --- | --- | --- |
 | Maintenance hours | MaintenanceHoursSimple/Hours/StartTime <br> MaintenanceHoursSimple/Hours/Duration | Yes | Yes | Yes |
 | Automatically turn on the screen using motion sensors | InBoxApps/Welcome/AutoWakeScreen | Yes | Yes | Yes |
 | Require a pin for wireless projection | InBoxApps/WirelessProjection/PINRequired | Yes | Yes | Yes |
@@ -91,19 +91,20 @@ The following tables include info on Windows 10 settings that have been validate
 
 #### Security settings
 | Setting  | Details  | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML\*? |
-| -------- | -------- | ------------- |-------------------------- | ---------------------------------------- | ------------------------- |
+| --- | --- | --- |---- | --- | --- |
 | Allow Bluetooth | Keep this enabled to support Bluetooth peripherals. | [Connectivity/AllowBluetooth](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Connectivity_AllowBluetooth) | Yes. <br>  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Bluetooth policies | Use to set the Bluetooth device name, and block advertising, discovery, and automatic pairing. | Bluetooth/*`<name of policy>`* <br> See [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) | Yes. <br>  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Allow camera | Keep this enabled for Skype for Business. | [Camera/AllowCamera](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Camera_AllowCamera) | Yes. <br>  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Allow location | Keep this enabled to support apps such as Maps. | [System/AllowLocation](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#System_AllowLocation) | Yes. <br> . |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Allow telemetry | Keep this enabled to help Microsoft improve Surface Hub. | [System/AllowTelemetry](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#System_AllowTelemetry) | Yes. <br>  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Allow USB Drives | Keep this enabled to support USB drives on Surface Hub | [System/AllowStorageCard](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#system-allowstoragecard) | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
+| Allow BitLocker on USB | Keep this enabled to support BitLocker on USB drives on Surface hub |  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package. 
 
 #### Browser settings
 
-| Setting  | Details          | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML\*? |
-| -------- | ---------------- | ------------- |-------------------------- | ---------------------------------------- | ------------------------- |
+| Setting  | Details | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML\*? |
+| --- | --- | --- |---- | --- | --- |
 | Homepages | Use to configure the default homepages in Microsoft Edge. | [Browser/Homepages](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_Homepages)  |  Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Allow cookies | Surface Hub automatically deletes cookies at the end of a session. Use this to block cookies within a session. | [Browser/AllowCookies](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowCookies) |  Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Allow developer tools  | Use to stop users from using F12 Developer Tools. | [Browser/AllowDeveloperTools](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowDeveloperTools) | Yes <br> [Use a custom policy.](#example-intune) |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
@@ -117,8 +118,8 @@ The following tables include info on Windows 10 settings that have been validate
 
 #### Windows Update settings
 
-| Setting     | Details          | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML*? |
-| ----------- | ---------------- | ------------- |-------------------------- | ---------------------------------------- | ------------------------- |
+| Setting | Details | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML*? |
+| --- | --- | --- |---- | --- | --- |
 | Use Current Branch or Current Branch for Business | Use to configure Windows Update for Business – see [Windows updates](manage-windows-updates-for-surface-hub.md). | [Update/BranchReadinessLevel](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_BranchReadinessLevel) | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Defer feature updates| See above. | [Update/ DeferFeatureUpdatesPeriodInDays](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_DeferFeatureUpdatesPeriodInDays) |  Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Defer quality updates | See above. | [Update/DeferQualityUpdatesPeriodInDays](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_DeferQualityUpdatesPeriodInDays) |  Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
@@ -130,16 +131,16 @@ The following tables include info on Windows 10 settings that have been validate
 
 #### Windows Defender settings
 
-| Setting     | Details          | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML\*? |
-| ----------- | ---------------- | ------------- |-------------------------- | ---------------------------------------- | ------------------------- |
+| Setting | Details | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML\*? |
+| --- | --- | --- |---- | --- | --- |
 | Defender policies | Use to configure various Defender settings, including a scheduled scan time. | Defender/*`<name of policy>`* <br> See [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Defender status | Use to initiate a Defender scan, force a signature update, query any threats detected. | [Defender CSP](https://msdn.microsoft.com/library/windows/hardware/mt187856.aspx) | No. | No. | Yes |
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 #### Remote reboot
 
-| Setting     | Details          | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML\*? |
-| ----------- | ---------------- | ------------- |-------------------------- | ---------------------------------------- | ------------------------- |
+| Setting | Details | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML\*? |
+| --- | --- | --- |---- | --- | --- |
 | Reboot the device immediately | Use in conjunction with OMS to minimize support costs – see [Monitor your Microsoft Surface Hub](monitor-surface-hub.md). | ./Vendor/MSFT/Reboot/RebootNow <br> See [Reboot CSP](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx) | No | No | Yes |
 | Reboot the device at a scheduled date and time | See above. | ./Vendor/MSFT/Reboot/Schedule/Single <br> See [Reboot CSP](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx) |  Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Reboot the device daily at a scheduled date and time | See above. | ./Vendor/MSFT/Reboot/Schedule/DailyRecurrent <br> See [Reboot CSP](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx) |  Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
@@ -147,8 +148,8 @@ The following tables include info on Windows 10 settings that have been validate
 
 #### Install certificates
 
-| Setting     | Details          | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML\*? |
-| ----------- | ---------------- | ------------- |-------------------------- | ---------------------------------------- | ------------------------- |
+| Setting | Details | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML\*? |
+| --- | --- | --- |---- | --- | --- |
 | Install trusted CA certificates | Use to deploy trusted root and intermediate CA certificates. |  [RootCATrustedCertificates CSP](https://msdn.microsoft.com/library/windows/hardware/dn904970.aspx) | Yes. <br> See [Configure Intune certificate profiles](https://docs.microsoft.com/en-us/intune/deploy-use/configure-intune-certificate-profiles). | Yes. <br> See [How to create certificate profiles in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/create-certificate-profiles). | Yes |
 <!--
 | Install client certificates  | Use to deploy Personal Information Exchange (.pfx, .p12) certificates. | [ClientCertificateInstall CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023.aspx) | Yes. <br> See [How to Create and Deploy PFX Certificate Profiles in Intune Standalone](https://blogs.technet.microsoft.com/karanrustagi/2016/03/16/want-to-push-a-certificate-to-device-but-cant-use-ndes-continue-reading/). | Yes. <br> See [How to create PFX certificate profiles in System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/create-pfx-certificate-profiles). | Yes |
@@ -157,11 +158,25 @@ The following tables include info on Windows 10 settings that have been validate
 
 #### Collect logs
 
-| Setting     | Details          | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML*? |
-| ----------- | ---------------- | ------------- |-------------------------- | ---------------------------------------- | ------------------------- |
+| Setting | Details | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML*? |
+| --- | --- | --- |---- | --- | --- |
 | Collect ETW logs | Use to remotely collect ETW logs from Surface Hub. | [DiagnosticLog CSP](https://msdn.microsoft.com/library/windows/hardware/mt219118.aspx) | No | No | Yes |
 <!--
 | Collect security auditing logs | Use to remotely collect security auditing logs from Surface Hub. | SecurityAuditing node in [Reporting CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/mt608321.aspx) | No | No | Yes |-->
+\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
+
+#### Set network quality of service (QoS) policy
+
+| Setting | Details | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML*? |
+| --- | --- | --- |--- | --- | ---- |
+| Set Network QoS Policy | Use to set a QoS policy to perform a set of actions on network traffic. This is useful for prioritizing Skype network packets. | [NetworkQoSPolicy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkqospolicy-csp) | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
+
+#### Set network proxy
+
+| Setting | Details | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML*? |
+| --- | ---- | --- |---- | --- | --- |
+| Set Network proxy | Use to configure a proxy server for ethernet and Wi-Fi connections. | [NetworkProxy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkproxy-csp) | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 ### Generate OMA URIs for settings 
