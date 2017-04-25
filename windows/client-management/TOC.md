@@ -8,3 +8,4 @@
 ## [Reset a Windows 10 Mobile device](reset-a-windows-10-mobile-device.md)
 ## [Windows 10 Mobile deployment and management guide](windows-10-mobile-and-mdm.md)
 ## [Windows libraries](windows-libraries.md)
+## [Change history for Client management](change-history-for-client-management.md)
