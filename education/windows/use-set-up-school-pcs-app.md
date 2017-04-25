@@ -54,7 +54,7 @@ A student PC that's set up using the Set up School PCs provisioning package is t
   It's critical that the IT administrator's or technical teacher's device is running the same Windows 10 build (Windows 10, version 1607 or Windows 10, version 1703) as the student PCs that you're provisioning. 
 
   > [!NOTE]
-  > If you're using the Windows 10, version 1607 build of the Set up School PCs app, do not use it to provision student PCs with Windows 10, version 1703 images. Conversely, if you're using the Windows 10, version 1703 build of Set up School PCs, do not use it to provision student PCs with Windows 10, version 1607 images. We recommend 
+  > If you're using the Windows 10, version 1607 build of the Set up School PCs app, do not use it to provision student PCs with Windows 10, version 1703 images. Conversely, if you're using the Windows 10, version 1703 build of Set up School PCs, do not use it to provision student PCs with Windows 10, version 1607 images. We recommend using the latest Set up School PCs app (for Windows 10, version 1703) along with Windows 10, version 1703 images on the student PCs that you're provisioning. 
 
 * **Run the app at work**
 
@@ -105,9 +105,7 @@ What you need:
 
 - The **Set up School PCs** app, installed on your work PC and connected to your school's network. 
 
-<!-- 
-[Download the Set up School PCs app from the Store](https://www.microsoft.com/store/apps/9nblggh4ls40).
--->
+  To get started, [download the latest Set up School PCs app from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4ls40).
 
 - A USB drive, 1 GB or larger. We recommend an 8 GB or larger USB drive if you're installing Office.
 
