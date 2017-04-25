@@ -244,7 +244,7 @@ One of the ways you can present content in a locked down manner is by embedding 
     > The Windows 10, version 1607 legacy configuration, `ms-edu-secureassessment:<URL>!enforcelockdown` is still supported, but not in combination with the new parameters.
 
 ### Create a shortcut for the test link
-You can also distribute the test link by creating a shortcut. To do this, create the link to the test by either using the [web UI](https://education.microsoft.com/courses-and-resources/windows-10-create-a-take-a-test-l) or using [schema activation](#create-a-link-using-schema-activation). After you have the link, follow these steps:
+You can also distribute the test link by creating a shortcut. To do this, create the link to the test by either using the [web UI](https://education.microsoft.com/courses-and-resources/windows-10-create-a-take-a-test-link) or using [schema activation](#create-a-link-using-schema-activation). After you have the link, follow these steps:
 
 1. On a device running Windows, right-click on the desktop and then select **New > Shortcut**.
 2. In the **Create Shortcut** window, paste the assessment URL in the field under **Type the location of the item**.
