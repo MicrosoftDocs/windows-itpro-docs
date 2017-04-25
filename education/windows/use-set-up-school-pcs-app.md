@@ -66,12 +66,13 @@ A student PC that's set up using the Set up School PCs provisioning package is t
 
     To do this:
     - Go to **Settings > Update & security > Recovery**. In the **Reset this PC** section of the **Recovery** page, click **Get started**.
-    - Or, hit **Shift + L + click Restart in the Power menu** to load the Windows boot user experience. From there, follow these steps:
+    - Or, hit **Shift** + click **Restart** in the **Power** menu to load the Windows boot user experience. From there, follow these steps:
       1. Click **Troubleshoot** and then choose **Reset this PC**.
       2. Select **Remove everything**.
       3. Select **No - remove provisioning packages**.
       4. Select **Only the drive where Windows is installed** (this may not always show up).
       5. Click **Just remove my files**.
+      6. Click **Reset**.
 
 * **Use more than one USB key**
 
