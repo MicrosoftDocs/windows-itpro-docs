@@ -27,6 +27,9 @@ Settings have been added to mobile device management (MDM) and configuration ser
 - Properties/AllowAutoProxyAuth
 - Properties/DisableSigninSuggestions
 - Properties/DoNotShowMyMeetingsAndFiles
+- System/AllowStorageCard
+
+Plus settings based on the new [NetworkQoSPolicy CSP](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/networkqospolicy-csp) and [NetworkProxy CSP](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/networkproxy-csp).
 </br>
 
 ## Provizioning wizard
@@ -34,6 +37,10 @@ Settings have been added to mobile device management (MDM) and configuration ser
 An easy-to-use wizard helps you quickly create provisioning packages that you can apply to multiple Surface Hub devices, and includes bulk join to Azure Active Directory. [Learn how to create a provisioning package for Surface Hub.](provisioning-packages-for-certificates-surface-hub.md)
 
 ![steps in the provision Surface Hub devices wizard](images/wcd-wizard.png)
+    
+## Miracast on your existing wireless network or LAN 
+
+Microsoft has extended the ability to [send a Miracast stream over a local network](miracast-over-infrastructure.md) rather than over a direct wireless link. 
     
 ## Cloud recovery
 

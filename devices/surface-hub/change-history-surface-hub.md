@@ -16,7 +16,9 @@ This topic lists new and updated topics in the [Surface Hub Admin Guide]( surfac
 
 ## RELEASE: Windows 10, version 1703
 
-The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update).
+The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). The following new topics have been added:
+
+- [Miracast on existing wireless network or LAN](miracast-over-infrastructure.md)
 
 ## February 2017
 

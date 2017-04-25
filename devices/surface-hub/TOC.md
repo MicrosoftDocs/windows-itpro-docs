@@ -33,6 +33,7 @@
 ### [End a Surface Hub meeting with End session](i-am-done-finishing-your-surface-hub-meeting.md)
 ### [Save your BitLocker key](save-bitlocker-key-surface-hub.md)
 ### [Connect other devices and display with Surface Hub](connect-and-display-with-surface-hub.md)
+### [Miracast on existing wireless network or LAN](miracast-over-infrastructure.md)
 ### [Using a room control system](use-room-control-system-with-surface-hub.md)
 ## [PowerShell for Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md)
 ## [How Surface Hub addresses Wi-Fi Direct security issues](surface-hub-wifi-direct.md)
