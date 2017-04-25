@@ -58,12 +58,11 @@ Anything hosted on the web can be presented in a locked down manner, not just as
 1. Create the link to the test. 
 
   There are different ways you can do this:
-
   - Create a link using a web UI
 
     For this option, you can just copy the assessment URL, select the options you want to allow during the test, and click a button to create the link. We recommend this for option for teachers.
 
-    To get started, go here: [Create a link using a web UI](https://education.microsoft.com/courses-and-resources/windows-10-create-a-take-a-test-link)
+    To get started, go here: [Create a link using a web UI](https://education.microsoft.com/courses-and-resources/windows-10-create-a-take-a-test-link).
 
   - Create a link using schema activation
 
@@ -91,7 +90,7 @@ One of the ways you can present content in a locked down manner is by embedding 
 1. Embed a link or create a desktop shortcut with:
 
   ```
-  ms-edu-secureassessment:<URL>!enforceLockdown
+  ms-edu-secureassessment:<URL>#enforceLockdown
   ```
 
 2. To enable printing, screen capture, or both, use the above link and append one of these parameters:
@@ -110,7 +109,7 @@ One of the ways you can present content in a locked down manner is by embedding 
 
 
 ### Create a shortcut for the test link
-You can also distribute the test link by creating a shortcut. To do this, create the link to the test by either using the [web UI](https://education.microsoft.com/courses-and-resources/windows-10-create-a-take-a-test-l) or using [schema activation](#create-a-link-using-schema-activation). After you have the link, follow these steps:
+You can also distribute the test link by creating a shortcut. To do this, create the link to the test by either using the [web UI](https://education.microsoft.com/courses-and-resources/windows-10-create-a-take-a-test-link) or using [schema activation](#create-a-link-using-schema-activation). After you have the link, follow these steps:
 
 1. On a device running Windows, right-click on the desktop and then select **New > Shortcut**.
 2. In the **Create Shortcut** window, paste the assessment URL in the field under **Type the location of the item**.

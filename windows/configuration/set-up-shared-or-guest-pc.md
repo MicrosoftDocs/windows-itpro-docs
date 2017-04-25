@@ -85,7 +85,28 @@ You can configure Windows to be in shared PC mode in a couple different ways:
 
 ![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
 
-- WMI bridge: Environments that use Group Policy can use the WMI bridge to configure the [SharedPC CSP](https://msdn.microsoft.com/library/windows/hardware/mt723294.aspx).
+- WMI bridge: Environments that use Group Policy can use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx) to configure the [MDM_SharedPC class](https://msdn.microsoft.com/library/windows/desktop/mt779129.aspx). For example, open PowerShell as an administrator and enter the following:
+
+```
+$sharedPC = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SharedPC"
+$sharedPC.EnableSharedPCMode = $True
+$sharedPC.SetEduPolicies = $True
+$sharedPC.SetPowerPolicies = $True
+$sharedPC.MaintenanceStartTime = 0
+$sharedPC.SignInOnResume = $True
+$sharedPC.SleepTimeout = 0
+$sharedPC.EnableAccountManager = $True
+$sharedPC.AccountModel = 2
+$sharedPC.DeletionPolicy = 1
+$sharedPC.DiskLevelDeletion = 25
+$sharedPC.DiskLevelCaching = 50
+$sharedPC.RestrictLocalStorage = $False
+$sharedPC.KioskModeAUMID = ""
+$sharedPC.KioskModeUserTileDisplayText = ""
+$sharedPC.InactiveThreshold = 0
+Set-CimInstance -CimInstance $sharedPC
+Get-CimInstance -Namespace $namespaceName -ClassName $MDM_SharedPCClass
+```
 
 ### Create a provisioning package for shared use
 
