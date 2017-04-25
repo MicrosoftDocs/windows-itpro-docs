@@ -80,7 +80,7 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
 
   These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time.
   
-  - <a href='https://technet.microsoft.com/en-us/itpro/windows/manage/waas-overview'>Read more about Windows as a Service</a>
+  - <a href='/windows/deployment/update/waas-overview'>Read more about Windows as a Service</a>
 
   </td>
 </tr>

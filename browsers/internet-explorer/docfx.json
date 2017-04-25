@@ -3,7 +3,7 @@
     "content":
       [
         {
-          "files": ["**/**.md"],
+          "files": ["**/*.md","**/*.yml"],
           "exclude": ["**/obj/**"]
         }
       ],
@@ -14,7 +14,10 @@
         }
     ],
     "globalMetadata": {
+		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
+		"breadcrumb_path": "/internet-explorer/breadcrumb/toc.json",
         "ROBOTS": "INDEX, FOLLOW",
+		"ms.author": "lizross",
 		"author": "lizross",
 		"ms.technology": "internet-explorer",
 		"ms.topic": "article"
