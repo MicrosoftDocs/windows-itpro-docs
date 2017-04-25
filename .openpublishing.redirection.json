@@ -147,7 +147,7 @@
 },
 {
 "source_path": "windows/manage/waas-manage-updates-wufb.md",
-"redirect_url": "/itpro/windows/update/waas-manage-updates-wufb",
+"redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
 "redirect_document_id": true
 },
 {
@@ -652,7 +652,7 @@
 },
 {
 "source_path": "windows/manage/introduction-to-windows-10-servicing.md",
-"redirect_url": "/itpro/windows/deployment/update/index",
+"redirect_url": "/windows/deployment/update/index",
 "redirect_document_id": true
 },
 {
@@ -897,7 +897,7 @@
 },
 {
 "source_path": "windows/plan/integration-with-management-solutions-.md",
-"redirect_url": "/itpro/windows/update/waas-manage-updates-wufb",
+"redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
 "redirect_document_id": false
 },
 {
@@ -977,7 +977,7 @@
 },
 {
 "source_path": "windows/plan/setup-and-deployment.md",
-"redirect_url": "/itpro/windows/update/waas-manage-updates-wufb",
+"redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
 "redirect_document_id": false
 },
 {
@@ -1062,7 +1062,7 @@
 },
 {
 "source_path": "windows/plan/windows-update-for-business.md",
-"redirect_url": "/itpro/windows/update/waas-manage-updates-wufb",
+"redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
 "redirect_document_id": false
 },
 {
