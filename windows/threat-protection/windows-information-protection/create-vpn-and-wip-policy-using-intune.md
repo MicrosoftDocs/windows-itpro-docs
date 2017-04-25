@@ -14,8 +14,8 @@ localizationpriority: high
 # Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Azure Intune
 **Applies to:**
 
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
+- Windows 10, version 1607 and later
+- Windows 10 Mobile, version 1607 and later
 
 After you've created and deployed your Windows Information Protection (WIP) policy, you can use Microsoft Azure Intune to create and deploy your Virtual Private Network (VPN) policy, linking it to your WIP policy.
 
