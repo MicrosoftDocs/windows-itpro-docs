@@ -25,7 +25,7 @@ Microsoft Edge lets you stay up-to-date through the Windows Store and to manage 
 >[!Note]
 >For more info about the potential impact of using Microsoft Edge in a large organization, you can download an infographic from here: [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/en-us/download/details.aspx?id=53892).
 
->If you've arrived here looking for Internet Explorer 11 content, you'll need to go to the [Internet Explorer 11 (IE11)](https://docs.microsoft.com/en-us/internet-explorer/) area. 
+>Also, if you've arrived here looking for Internet Explorer 11 content, you'll need to go to the [Internet Explorer 11 (IE11)](https://docs.microsoft.com/en-us/internet-explorer/) area. 
 
 ## In this section
 
