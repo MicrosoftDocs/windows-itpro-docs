@@ -13,7 +13,7 @@ author: CelesteDG
 # Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 Pro in S mode
 Windows 10 Pro Education is a new offering in Windows 10, version 1607. This edition builds on the commercial version of Windows 10 Pro and provides important management controls needed in schools by providing education-specific default settings.
 
-If you have an education tenant and use Windows 10 Pro or Windows 10 S devices in your schools, global administrators can opt-in to a free switch to Windows 10 Pro Education depending on your scenario.
+If you have an education tenant and use devices with Windows 10 Pro or Windows 10 Pro in S mode, global administrators can opt-in to a free switch to Windows 10 Pro Education depending on your scenario.
 - [Switch from Windows 10 S to Windows 10 Pro Education](#switch-from-windows-10-s-to-windows-10-pro-education)
 - [Switch from Windows 10 Pro to Windows 10 Pro Education](#switch-from-windows-10-pro-to-windows-10-pro-education)
 
