@@ -66,7 +66,7 @@ If an employee makes an in-app purchase, they'll make it with their personal Mic
 Microsoft Store supports two options to license apps: online and offline.
 
 ### Online licensing
- Online licensing is the default licensing model and is similar to the Windows Store. Online licensed apps require users and devices to connect to the Microsoft Store for Business service to acquire an app and its license. Licensing management is enforced based on the user’s Azure AD identity and maintained by the store as well as the management tool. By default app updates are handled by Windows Update.
+ Online licensing is the default licensing model and is similar to the Windows Store. Online licensed apps require customers and devices to connect to the Microsoft Store service to acquire an app and its license. License management is enforced based on the user’s Azure AD identity and maintained by Microsoft Store as well as the management tool. By default app updates are handled by Windows Update.
 
 Distribution options for online-licensed apps include the ability to:
 
@@ -77,7 +77,7 @@ Distribution options for online-licensed apps include the ability to:
 -   Distribute through a management tool.
 
 ### Offline licensing
-Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store. Admins control whether or not offline apps are available in Store for Business with an offline app visibility setting. For more information, see [offline license visibility](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings#offline-licensing). 
+Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store. This model means organizations can deploy apps when users or devices do not have connectivity to Microsost Store. Admins control whether or not offline apps are available in Microsost Store with an offline app visibility setting. For more information, see [offline license visibility](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings#offline-licensing). 
 
 You have the following distribution options for offline-licensed apps:
 
@@ -85,7 +85,7 @@ You have the following distribution options for offline-licensed apps:
 
 -   Distribute the app through a management tool.
 
-For more information, see [Distribute apps to your employees from the Store for Business](distribute-apps-to-your-employees-windows-store-for-business.md).
+For more information, see [Distribute apps to your employees from the Microsoft Store for Business](distribute-apps-to-your-employees-windows-store-for-business.md).
 
  
 
