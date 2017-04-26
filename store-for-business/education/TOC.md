@@ -1,6 +1,10 @@
 # [Windows Store for Education](index.md)
 
-##[Get Minecraft: Education Edition](/education/windows/get-minecraft-for-education)
+## [Get Minecraft: Education Edition](/education/windows/get-minecraft-for-education?toc=/microsoft-store/education/toc.json)
+### [For teachers: get Minecraft Education Edition](/education/windows/teacher-get-minecraft?toc=/microsoft-store/education/toc.json)
+### [For IT administrators: get Minecraft Education Edition](/education/windows/school-get-minecraft?toc=/microsoft-store/education/toc.json)
+
+## [Working with Windows Store for Business – education scenarios](/education/windows/education-scenarios-store-for-business?toc=/microsoft-store/education/toc.json)
 
 ## [Sign up and get started](sign-up-windows-store-for-business-overview.md)
 ###[Windows Store for Business overview](windows-store-for-business-overview.md)
