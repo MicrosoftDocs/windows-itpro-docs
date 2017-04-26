@@ -1,5 +1,5 @@
 ---
-title: Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile (Windows 10)
+title: Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile (Windows 10)
 description: tbd
 ms.prod: w10
 ms.mktglfcycl: manage

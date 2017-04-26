@@ -3,7 +3,7 @@
     "content":
       [
         {
-          "files": ["**/**.md"],
+          "files": ["**/*.md","**/*.yml"],
           "exclude": ["**/obj/**"]
         }
       ],
@@ -14,6 +14,8 @@
         }
     ],
     "globalMetadata": {
+		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
+		"breadcrumb_path": "/microsoft-edge/deploy/breadcrumb/toc.json",
         "ROBOTS": "INDEX, FOLLOW",
 		"ms.technology": "microsoft-edge",
 		"ms.topic": "article",

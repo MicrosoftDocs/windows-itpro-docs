@@ -14,8 +14,8 @@ localizationpriority: high
 # General guidance and best practices for Windows Information Protection (WIP)
 **Applies to:**
 
--   Windows 10, version 1607 and later
--   Windows 10 Mobile
+- Windows 10, version 1607 and later
+- Windows 10 Mobile, version 1607 and later
 
 This section includes info about the enlightened Microsoft apps, including how to add them to your allowed apps list in Microsoft Intune. It also includes some testing scenarios that we recommend running through with Windows Information Protection (WIP).
 
