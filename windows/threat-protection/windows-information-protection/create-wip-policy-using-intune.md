@@ -506,7 +506,7 @@ Optionally, if you don’t want everyone in your organization to be able to shar
 
 ## Related topics
 - [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md)
-- [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Azure Intune](create-vpn-and-wip-policy-using-intune.md)
+- [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Azure Intune](create-vpn-and-wip-policy-using-intune.md)
 - [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
 - [Azure RMS Documentation Update for May 2016](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/azure-rms-documentation-update-for-may-2016/)
 - [What is Azure Rights Management?]( https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
