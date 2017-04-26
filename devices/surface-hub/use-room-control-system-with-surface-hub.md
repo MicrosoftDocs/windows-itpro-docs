@@ -77,7 +77,7 @@ For a control device, anything other than 5 / Ready should be considered off. Ea
 
 | Command | State change| Response |
 | --- | --- | --- |
-| PowerOn | Device turns on (display + PC).</br></br>PC service notifies SMC that the PC is ready. |  Power=0</br></br>Power=5 |
+| PowerOn | Device turns on (display + PC).</br></brPC service notifies SMC that the PC is ready. |  Power=0</br></br>Power=5 |
 | PowerOff | Device transitions to ambient state (PC on, display dim). |  Power=0 |
 | Power? |  SMC reports the last-known power state. |  Power=<#> |
 
@@ -91,8 +91,8 @@ Changes to brightness levels can be sent by a room control system, or other syst
 
 | Command | State change |Response |
 | --- | --- | --- |
-| Brightness+ | System management controller (SMC) sends the brightness up command.</br></br>PC service on the room control system notifies SMC of new brightness level. |  Brightness = 51 |
-| Brightness- | | SMC sends the brightness down command.</br></br>PC service notifies SMC of new brightness level. | Brightness = 50 |
+| Brightness+ | System management controller (SMC) sends the brightness up command.</br></brPC service on the room control system notifies SMC of new brightness level. |  Brightness = 51 |
+| Brightness- |  SMC sends the brightness down command.</br></brPC service notifies SMC of new brightness level. | Brightness = 50 |
 
 ## Volume
 
@@ -105,8 +105,8 @@ Changes to volume levels can be sent by a room control system, or other system.
 
 | Command | State change | Response</br>(On in [Replacement PC mode](connect-and-display-with-surface-hub.md#replacement-pc-mode)) |
 | --- | --- | --- |
-| Volume+ |  SMC sends the volume up command.</br></br>>PC service notifies SMC of new volume level. |  Volume = 51 |
-| Volume- |  SMC sends the volume down command.</br></br>>PC service notifies SMC of new volume level. |  Volume = 50 |
+| Volume+ |  SMC sends the volume up command.</br></br>PC service notifies SMC of new volume level. |  Volume = 51 |
+| Volume- |  SMC sends the volume down command.</br></br>PC service notifies SMC of new volume level. |  Volume = 50 |
 
 
  
@@ -117,7 +117,7 @@ Audio can be muted.
 
 | Command | State change | Response |
 | --- | --- | --- |
-| AudioMute+ |  SMC sends the audio mute command.</br></br>>PC service notifies SMC that audio is muted. |  none |
+| AudioMute+ |  SMC sends the audio mute command.</br></brPC service notifies SMC that audio is muted. |  none |
 
 
  
@@ -140,10 +140,10 @@ Changes to display source can be sent by a room control system, or other system.
 
 | Command | State change | Response |
 | --- | --- | --- |
-| Source=# |  SMC changes to the desired source.</br></br>>PC service notifies SMC that the display source has switched. |  Source=&lt;#&gt; |
-| Source+ |  SMC cycles to the next active input source.</br></br>>PC service notifies SMC of the current input source. |  Source=&lt;#&gt; |
-| Source- | SMC cycles to the previous active input source.</br></br>>PC service notifies SMC of the current input source. |  Source=&lt;#&gt; |
-| Source? |  SMC queries PC service for the active input source.</br></br>>PC service notifies SMC of the current in;put source. | Source=&lt;#&gt; |
+| Source=# |  SMC changes to the desired source.</br></br>PC service notifies SMC that the display source has switched. |  Source=&lt;#&gt; |
+| Source+ |  SMC cycles to the next active input source.</br></br>PC service notifies SMC of the current input source. |  Source=&lt;#&gt; |
+| Source- | SMC cycles to the previous active input source.</br></br>PC service notifies SMC of the current input source. |  Source=&lt;#&gt; |
+| Source? |  SMC queries PC service for the active input source.</br></br>PC service notifies SMC of the current in;put source. | Source=&lt;#&gt; |
 
 ## Errors
 
