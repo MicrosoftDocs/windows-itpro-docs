@@ -14,6 +14,12 @@ author: jdeckerms
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## April 2017
+
+| New or changed topic | Description |
+| --- | --- |
+| [Set up a shared or guest PC with Windows 10](set-up-shared-or-guest-pc.md) | Added instructions for using WMI bridge to configure shared PC |
+
 
 ## RELEASE: Windows 10, version 1703
 

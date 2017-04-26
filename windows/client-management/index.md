@@ -8,7 +8,7 @@ author: jdeckerms
 localizationpriority: medium
 ---
 
-# Client Management
+# Client management
 
 **Applies to**
 -   Windows 10
@@ -28,3 +28,4 @@ Learn about the administrative tools, tasks and best practices for managing Wind
 |[Reset a Windows 10 Mobile device](reset-a-windows-10-mobile-device.md)| Instructions for resetting a Windows 10 Mobile device using either *factory* or *'wipe and persist'* reset options|
 |[Deploy Windows 10 Mobile](windows-10-mobile-and-mdm.md)| Considerations and instructions for deploying Windows 10 Mobile|
 |[Windows libraries](windows-libraries.md)| Considerations and instructions for managing Windows 10 libraries such as My Documents, My Pictures, and My Music.|
+|[Change history for Client management](change-history-for-client-management.md) | This topic lists new and updated topics in the Client management documentation for Windows 10 and Windows 10 Mobile. |
