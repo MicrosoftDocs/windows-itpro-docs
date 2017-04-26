@@ -70,7 +70,7 @@ To run the Upgrade Readiness deployment script:
 
 The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered.
 
-<font size="2">
+<div style="font-size:2">
 <table width='100%' border='1' cellspacing='0' cellpadding='0'>
     <tr>
         <td BGCOLOR="#a0e4fa" width=5>Exit code</td>
@@ -280,8 +280,8 @@ The deployment script displays the following exit codes to let you know if it wa
     </tr>
     <tr>
         <td>39</td>
-        <td>For Windows 10: AllowTelemetry property is not set to 1 or higher at registry key path <font size="1">**HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**</font></td>
-        or <font size="1">**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font>
+        <td>For Windows 10: AllowTelemetry property is not set to 1 or higher at registry key path <font size="1">**HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**</font>
+        or <font size="1">**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font></td>
         <td>For Windows 10 machines, the **AllowTelemetry** property should be set to 1 or greater to enable data collection. The script will throw an error if this is not true. For more information, see [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization).</td>
     </tr>
     <tr>
@@ -304,4 +304,4 @@ The deployment script displays the following exit codes to let you know if it wa
         <td>Function **EndImpersonatingLoggedOnUser** failed with an unexpected exception.</td>
         <td>Check the logs for the exception message and HResult.</td>
 </table>
-</font>
+</div>
