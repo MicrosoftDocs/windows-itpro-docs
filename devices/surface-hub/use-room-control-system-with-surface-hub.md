@@ -77,7 +77,7 @@ For a control device, anything other than 5 / Ready should be considered off. Ea
 
 | Command | State change| Response |
 | --- | --- | --- |
-| PowerOn | Device turns on (display + PC).</br></brPC service notifies SMC that the PC is ready. |  Power=0</br></br>Power=5 |
+| PowerOn | Device turns on (display + PC).</br></br>PC service notifies SMC that the PC is ready. |  Power=0</br></br>Power=5 |
 | PowerOff | Device transitions to ambient state (PC on, display dim). |  Power=0 |
 | Power? |  SMC reports the last-known power state. |  Power=<#> |
 
@@ -91,8 +91,8 @@ Changes to brightness levels can be sent by a room control system, or other syst
 
 | Command | State change |Response |
 | --- | --- | --- |
-| Brightness+ | System management controller (SMC) sends the brightness up command.</br></brPC service on the room control system notifies SMC of new brightness level. |  Brightness = 51 |
-| Brightness- |  SMC sends the brightness down command.</br></brPC service notifies SMC of new brightness level. | Brightness = 50 |
+| Brightness+ | System management controller (SMC) sends the brightness up command.</br></br>PC service on the room control system notifies SMC of new brightness level. |  Brightness = 51 |
+| Brightness- |  SMC sends the brightness down command.</br></br>PC service notifies SMC of new brightness level. | Brightness = 50 |
 
 ## Volume
 
@@ -117,7 +117,7 @@ Audio can be muted.
 
 | Command | State change | Response |
 | --- | --- | --- |
-| AudioMute+ |  SMC sends the audio mute command.</br></brPC service notifies SMC that audio is muted. |  none |
+| AudioMute+ |  SMC sends the audio mute command.</br></br>PC service notifies SMC that audio is muted. |  none |
 
 
  
