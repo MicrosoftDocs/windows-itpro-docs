@@ -124,7 +124,7 @@ To switch Windows 10 S to Windows 10 Pro Education, enter the product key for th
 You can switch from Windows 10 S to Windows 10 Pro Education by running the changepk.exe command-line tool. To do this, run the following command:
 
 ```
-changepk.exe /ProductKey *MAK_key_or_product_key*
+changepk.exe /ProductKey MAK_key_or_product_key
 ```
 
 Replace *MAK_key_or_product_key* with the MAK key that you obtained for the Windows 10 edition switch.
