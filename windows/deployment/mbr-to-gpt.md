@@ -36,6 +36,8 @@ Offline conversion of system disks with earlier versions of Windows installed, s
 >[!IMPORTANT]
 >After the disk has been converted to GPT partition style, the firmware must be reconfigured to boot in UEFI mode. <BR>Make sure that your device supports UEFI before attempting to convert the disk.
 
+<iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/hfJep4hmg9o" frameborder="0" allowfullscreen></iframe>
+
 ## Syntax
 
 <table style="font-family:consolas;font-size:12px" >
