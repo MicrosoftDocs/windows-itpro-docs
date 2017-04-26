@@ -70,7 +70,7 @@ To run the Upgrade Readiness deployment script:
 
 The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered.
 
-
+<font size="2">
 <table width='100%' border='1' cellspacing='0' cellpadding='0'>
     <tr>
         <td BGCOLOR="#a0e4fa" width=5>Exit code</td>
@@ -304,3 +304,4 @@ The deployment script displays the following exit codes to let you know if it wa
         <td>Function **EndImpersonatingLoggedOnUser** failed with an unexpected exception.</td>
         <td>Check the logs for the exception message and HResult.</td>
 </table>
+</font>
