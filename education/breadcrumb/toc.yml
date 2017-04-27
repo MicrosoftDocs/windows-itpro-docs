@@ -2,6 +2,6 @@
   tocHref: /
   topicHref: /
   items:
-    - name: Education
-      tocHref: /education
-      topicHref: /education/index
+    - name: Windows
+      tocHref: /education/windows
+      topicHref: /education/windows/index
