@@ -17,7 +17,7 @@ Learn about the administrative tools, tasks and best practices for managing Wind
 
 | Topic | Description |
 |---|---|
-|[Administrative tools in Windows 10](administrative-tools-in-windows-10.md)| Listing of administrative tools useful for ITPros and advanced users in managing Windows client.|
+|[Administrative Tools in Windows 10](administrative-tools-in-windows-10.md)| Links to documentation for tools for IT pros and advanced users in the Administrative Tools folder.|
 |[Connect to remote AADJ PCs](connect-to-remote-aadj-pc.md)| Instructions for connecting to a remote PC joined to Azure Active Directory (Azure AD)|
 |[Group policies for enterprise and education editions](group-policies-for-enterprise-and-education-editions.md)| Listing of all group policy settings that apply specifically to Windows 10 Enterprise and Education editions|
 |[Join Windows 10 Mobile to AAD](join-windows-10-mobile-to-azure-active-directory.md)| Describes the considerations and options for using Windows 10 Mobile with Azure AD in your organization.|
