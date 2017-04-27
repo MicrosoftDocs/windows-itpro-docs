@@ -29,15 +29,15 @@ The Upgrade Readiness workflow steps you through the discovery and rationalizati
 
 **Important**  For system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what telemetry data Microsoft collects and how that data is used and protected by Microsoft, see:
 
-- [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization)
-- [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+- [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization)
+- [Manage connections from Windows operating system components to Microsoft services](/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 - [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
 
 ##**Related topics**
 
 [Upgrade Readiness architecture](upgrade-readiness-architecture.md)<BR>
 [Upgrade Readiness requirements](upgrade-readiness-requirements.md)<BR>
-[Upgrade Readiness release notes](upgrade-readiness-release-notes.md)<BR>
+[Upgrade Readiness release notes](upgrade-readiness-requirements.md#important-information-about-this-release)<BR>
 [Get started with Upgrade Readiness](upgrade-readiness-get-started.md)<BR>
 [Use Upgrade Readiness to manage Windows upgrades](use-upgrade-readiness-to-manage-windows-upgrades.md)<BR>
 [Troubleshoot Upgrade Readiness](troubleshoot-upgrade-readiness.md)<BR>
