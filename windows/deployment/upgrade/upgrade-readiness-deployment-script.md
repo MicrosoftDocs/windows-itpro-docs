@@ -73,235 +73,191 @@ The deployment script displays the following exit codes to let ddfyou know if it
 <div font-size='7pt;'>
 <table border='1' cellspacing='0' cellpadding='0'>
     <tr>
-        <td BGCOLOR="#a0e4fa" width=5>Exit code</td>
-        <td BGCOLOR="#a0e4fa">Meaning</td>
+        <td BGCOLOR="#a0e4fa" width=5>Exit code and meaning</td>
         <td BGCOLOR="#a0e4fa">Suggested fix</td>
     </tr>
-    <tr><td>0</td>
-        <td>Success</td>
+    <tr><td>0 - Success</td>
         <td>N/A</td>
     </tr>
     <tr>
-        <td>1</td>
-        <td>Unexpected error occurred while executiEng the script.</td>
+        <td>1 - Unexpected error occurred while executiEng the script.</td>
         <td> The files in the deployment script are likely corrupted.  Download the [latest script](https://go.microsoft.com/fwlink/?LinkID=822966) from the download center and try again.</td>
     </tr>
     <tr>
-        <td>2</td>
-        <td>Error when logging to console. $logMode = 0.<BR>(console only)</td>
+        <td>2 - Error when logging to console. $logMode = 0.<BR>(console only)</td>
         <td>Try changing the $logMode value to **1** and try again.<BR>$logMode value 1 logs to both console and file.</td>
     </tr>
     <tr>
-        <td>3</td>
-        <td>Error when logging to console and file. $logMode = 1.</td>
+        <td>3 - Error when logging to console and file. $logMode = 1.</td>
         <td>Verify that you have set the logPath parameter in RunConfig.bat, and that the configuration script has access to connect and write to this location.</td>
     </tr>
     <tr>
-        <td>4</td>
-        <td>Error when logging to file. $logMode = 2.</td>
+        <td>4 - Error when logging to file. $logMode = 2.</td>
         <td>Verify that you have set the logPath parameter in RunConfig.bat, and that the configuration script has access to connect and write to this location.</td>
     </tr>
     <tr>
-        <td>5</td>
-        <td>Error when logging to console and file. $logMode = unknown.</td>
+        <td>5 - Error when logging to console and file. $logMode = unknown.</td>
         <td>Verify that you have set the logPath parameter in RunConfig.bat, and that the configuration script has access to connect and write to this location.</td>
     </tr>
     <tr>
-        <td>6</td>
-        <td>The commercialID parameter is set to unknown. <BR>Modify the runConfig.bat file to set the CommercialID value.</td>
+        <td>6 - The commercialID parameter is set to unknown. <BR>Modify the runConfig.bat file to set the CommercialID value.</td>
         <td>The value for parameter in the runconfig.bat file should match the Commercial ID key for your workspace. 
         <BR>See [Generate your Commercial ID key](https://technet.microsoft.com/itpro/windows/deploy/upgrade-readiness-get-started#generate-your-commercial-id-key) for instructions on generating a Commercial ID key for your workspace.</td>
     </tr>
     <tr>
-        <td>8</td>
-        <td>Failure to create registry key path: <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font></td>
+        <td>8 - Failure to create registry key path: <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font></td>
         <td>The Commercial Id property is set at the following registry key path: <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font>
         <BR>Verify that the context under which the script in running has access to the registry key.</td>
     </tr>
     <tr>
-        <td>9</td>
-        <td>The script failed to write Commercial Id to registry.
+        <td>9 - The script failed to write Commercial Id to registry.
         <BR>Error creating or updating registry key: **CommercialId** at <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font>
         </td> 
         <td>Verify that the context under which the script in running has access to the registry key.</td>
     </tr>
     <tr>
-        <td>10</td>
-        <td>Error when writing **CommercialDataOptIn** to the registry at <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font></td>
+        <td>10 - Error when writing **CommercialDataOptIn** to the registry at <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font></td>
         <td>Verify that the deployment script is running in a context that has access to the registry key.</td>
     </tr>
     <tr>
-        <td>11</td>
-        <td>Function **SetupCommercialId** failed with an unexpected exception.</td>
+        <td>11 - Function **SetupCommercialId** failed with an unexpected exception.</td>
         <td>The **SetupCommercialId** function updates the Commercial Id at the registry key path: <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font> <BR>Verify that the configuration script has access to this location.</td>
     </tr>
     <tr>
-        <td>12</td>
-        <td>Can’t connect to Microsoft - Vortex. Check your network/proxy settings.</td>
+        <td>12 - Can’t connect to Microsoft - Vortex. Check your network/proxy settings.</td>
         <td>**Http Get** on the end points did not return a success exit code.<BR>
         For Windows 10, connectivity is verified by connecting to https://v10.vortex-win.data.microsoft.com/health/keepalive.<BR>
         For previous operating systems, connectivity is verified by connecting to https://vortex-win.data.microsoft.com/health/keepalive.  
         <BR>If there is an error verifying connectivity, this will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing).</td>
     </tr>
     <tr>
-        <td>13</td>
-        <td>Can’t connect to Microsoft - setting. </td>
+        <td>13 - Can’t connect to Microsoft - setting. </td>
         <td>An error occurred connecting to  https://settings.data.microsoft.com/qos. This error will prevent the collected data from being sent to Upgrade Readiness.  To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing).</td>
     </tr>
     <tr>
-        <td>14</td>
-        <td>Can’t connect to Microsoft - compatexchange.</td>
+        <td>14 - Can’t connect to Microsoft - compatexchange.</td>
         <td>An error occurred connecting to https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc . This error will prevent the collected data from being sent to Upgrade Readiness.  To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing).</td>
     </tr>
     <tr>
-        <td>15</td>
-        <td>Function CheckVortexConnectivity failed with an unexpected exception.</td>
+        <td>15 - Function CheckVortexConnectivity failed with an unexpected exception.</td>
         <td>This error will prevent the collected data from being sent to Upgrade Readiness.  To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing). Check the logs for the exception message and the HResult.</td>
     </tr>
     <tr>
-        <td>16</td>
-        <td>The computer requires a reboot before running the script.</td>
+        <td>16 - The computer requires a reboot before running the script.</td>
         <td>A reboot is required to complete the installation of the compatibility update and related KBs. Reboot the computer before running the Upgrade Readiness deployment script.</td>
     </tr>
     <tr>
-        <td>17</td>
-        <td>Function **CheckRebootRequired** failed with an unexpected exception.</td>
+        <td>17 - Function **CheckRebootRequired** failed with an unexpected exception.</td>
         <td>A reboot is required to complete installation of the compatibility update and related KBs. Check the logs for the exception message and the HResult.</td>
     </tr>
     <tr>
-        <td>18</td>
-        <td>Appraiser KBs not installed or **appraiser.dll** not found.</td>
+        <td>18 - Appraiser KBs not installed or **appraiser.dll** not found.</td>
         <td>Either the Appraiser KBs are not installed, or the **appraiser.dll** file was not found. For more information, see appraiser telemetry events and fields information in the [Data collection](https://technet.microsoft.com/itpro/windows/deploy/upgrade-readiness-get-started#data-collection-and-privacy) and privacy topic.</td>
     </tr>
     <tr>
-        <td>19</td>
-        <td>Function **CheckAppraiserKB**, which checks the compatibility update KBs, failed with unexpected exception.</td>
+        <td>19 - Function **CheckAppraiserKB**, which checks the compatibility update KBs, failed with unexpected exception.</td>
         <td>Check the logs for the Exception message and HResult. The script will not run further if this error is not fixed.</td> 
     </tr>
     <tr>
-        <td>20</td>
-        <td>An error occurred when creating or updating the registry key **RequestAllAppraiserVersions** at <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Appraiser**</font> </td>
+        <td>20 - An error occurred when creating or updating the registry key **RequestAllAppraiserVersions** at <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Appraiser**</font> </td>
         <td>The registry key is required for data collection to work correctly. Verify that the script is running in a context that has access to the registry key. </td>
     </tr>
     <tr>
-        <td>21</td>
-        <td>Function **SetRequestAllAppraiserVersions** failed with an unexpected exception.</td>
+        <td>21 - Function **SetRequestAllAppraiserVersions** failed with an unexpected exception.</td>
         <td>Check the logs for the exception message and HResult.</td>
     </tr>
     <tr>
-        <td>22</td>
-        <td>**RunAppraiser** failed with unexpected exception.</td>
+        <td>22 - **RunAppraiser** failed with unexpected exception.</td>
         <td>Check the logs for the exception message and HResult. Check the **%windir%\System32*8 directory for the file **CompatTelRunner.exe**. If the file does not exist, reinstall the required compatibility updates which include this file, and check your organization's Group Policy to verify it does not remove this file.</td>
     </tr>
     <tr>
-        <td>23</td>
-        <td>Error finding system variable **%WINDIR%**.</td>
+        <td>23 - Error finding system variable **%WINDIR%**.</td>
         <td>Verify that this environment variable is configured on the computer.</td>
     </tr>   
     <tr>
-        <td>24</td>
-        <td>The script failed when writing **IEDataOptIn** to the registry. An error occurred when creating registry key **IEOptInLevel** at <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font></td>
+        <td>24 - The script failed when writing **IEDataOptIn** to the registry. An error occurred when creating registry key **IEOptInLevel** at <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font></td>
         <td>This is a required registry key for IE data collection to work correctly. Verify that the deployment script in running in a context that has access to the registry key. Check the logs for the exception message and HResult.</td>
     </tr>
     <tr>
-        <td>25</td>
-        <td>The function **SetIEDataOptIn** failed with unexpected exception.</td>
+        <td>25 - The function **SetIEDataOptIn** failed with unexpected exception.</td>
         <td>Check the logs for the exception message and HResult.</td>
     </tr>
     <tr>
-        <td>26</td>
-        <td>The operating system is Server or LTSB SKU.</td>
+        <td>26 - The operating system is Server or LTSB SKU.</td>
         <td> The script does not support Server or LTSB SKUs.</td>
     </tr>
     <tr>
-        <td>27</td>
-        <td>The script is not running under **System** account.</td>
+        <td>27 - The script is not running under **System** account.</td>
         <td>The Upgrade Readiness configuration script must be run as **System**. </td>
     </tr>
     <tr>
-        <td>28</td>
-        <td>Could not create log file at the specified **logPath**.</td>
+        <td>28 - Could not create log file at the specified **logPath**.</td>
         <td> Make sure the deployment script has access to the location specified in the **logPath** parameter.</td>
     </tr>
     <tr>
-        <td>29</td>
-        <td>Connectivity check failed for proxy authentication. </td>
+        <td>29 - Connectivity check failed for proxy authentication. </td>
         <td>Install the cumulative updates on the computer and enable the **DisableEnterpriseAuthProxy** authentication proxy setting.
             <BR>The **DisableEnterpriseAuthProxy** setting is enabled by default for Windows 7.  
             <BR>For Windows 8.1 computers, set the **DisableEnterpriseAuthProxy** setting to **0** (not disabled). 
             <BR>For more information on authentication proxy support, see [this blog post](https://go.microsoft.com/fwlink/?linkid=838688).</td>
     </tr>
     <tr>
-        <td>30</td>
-        <td>Connectivity check failed. Registry key property **DisableEnterpriseAuthProxy** is not enabled.</td>
+        <td>30 - Connectivity check failed. Registry key property **DisableEnterpriseAuthProxy** is not enabled.</td>
         <td>The **DisableEnterpriseAuthProxy** setting is enabled by default for Windows 7.  
         <BR>For Windows 8.1 computers, set the **DisableEnterpriseAuthProxy** setting to **0** (not disabled). 
         <BR>For more information on authentication proxy support, see [this blog post](https://go.microsoft.com/fwlink/?linkid=838688).</td>
     </tr>
     <tr>
-        <td>31</td>
-        <td>There is more than one instance of the Upgrade Readiness data collector running at the same time on this computer. </td>
+        <td>31 - There is more than one instance of the Upgrade Readiness data collector running at the same time on this computer. </td>
         <td>Use the Windows Task Manager to check if **CompatTelRunner.exe** is running, and wait until it has completed to rerun the script.  The Upgrade Readiness task is scheduled to run daily at 3 a.m.</td>
     </tr>
     <tr>
-        <td>32</td>
-        <td>Appraiser version on the machine is outdated. </td>
+        <td>32 - Appraiser version on the machine is outdated. </td>
         <td>The configuration script detected a version of the compatibility update module that is older than the minimum required to correctly collect the data required by Upgrade Readiness solution. Use the latest version of the [compatibility update](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#deploy-the-compatibility-update-and-related-kbs) for Windows 7 SP1/Windows 8.1.</td>
     </tr>
     <tr>
-        <td>33</td>
-        <td>**CompatTelRunner.exe** exited with an exit code </td>
+        <td>33 - **CompatTelRunner.exe** exited with an exit code </td>
         <td>**CompatTelRunner.exe** runs the appraise task on the machine. If it fails, it will provide a specific exit code. The script will return exit code 33 when **CompatTelRunner.exe** itself exits with an exit code. Please check the logs for more details.</td>
     </tr>
     <tr>
-        <td>34</td>
-        <td>Function **CheckProxySettings** failed with an unexpected exception. </td>
+        <td>34 - Function **CheckProxySettings** failed with an unexpected exception. </td>
         <td>Check the logs for the exception message and HResult.></td>
     </tr>
     <tr>
-        <td>35</td>
-        <td>Function **CheckAuthProxy** failed with an unexpected exception.</td>
+        <td>35 - Function **CheckAuthProxy** failed with an unexpected exception.</td>
         <td>Check the logs for the exception message and HResult.</td>
     </tr>
     <tr>
-        <td>36</td>
-        <td>Function **CheckAppraiserEndPointsConnectivity** failed with an unexpected exception.</td>
+        <td>36 - Function **CheckAppraiserEndPointsConnectivity** failed with an unexpected exception.</td>
         <td>Check the logs for the exception message and HResult.</td>
     </tr>
     <tr>
-        <td>37</td>
-        <td>**Diagnose_internal.cmd** failed with an unexpected exception.</td>
+        <td>37 - **Diagnose_internal.cmd** failed with an unexpected exception.</td>
         <td>Check the logs for the exception message and HResult.</td>
     </tr>
     <tr>
-        <td>38</td>
-        <td>Function **Get-SqmID** failed with an unexpected exception. </td>
+        <td>38 - Function **Get-SqmID** failed with an unexpected exception. </td>
         <td>Check the logs for the exception message and HResult.</td>
     </tr>
     <tr>
-        <td>39</td>
-        <td>For Windows 10: AllowTelemetry property is not set to 1 or higher at registry key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**</font>
+        <td>39 - For Windows 10: AllowTelemetry property is not set to 1 or higher at registry key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**</font>
         or <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font></td>
         <td>For Windows 10 machines, the **AllowTelemetry** property should be set to 1 or greater to enable data collection. The script will throw an error if this is not true. For more information, see [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization).</td>
     </tr>
     <tr>
-        <td>40</td>
-        <td>Function **CheckTelemetryOptIn** failed with an unexpected exception. </td>
+        <td>40 - Function **CheckTelemetryOptIn** failed with an unexpected exception. </td>
         <td>Check the logs for the exception message and HResult.</td>
     </tr>
     <tr>
-        <td>41</td>
-        <td>The script failed to impersonate the currently logged on user. </td>
+        <td>41 - The script failed to impersonate the currently logged on user. </td>
         <td>The script mimics the UTC client to collect upgrade readiness data. When auth proxy is set, the UTC client impersonates the logged on user. The script also tries to mimic this, but the process failed.</td>
     </tr>
     <tr>
-        <td>42</td>
-        <td>Function **StartImpersonatingLoggedOnUser** failed with an unexpected exception. </td> 
+        <td>42 - Function **StartImpersonatingLoggedOnUser** failed with an unexpected exception. </td> 
         <td>Check the logs for the exception message and HResult.</td>
     </tr>
     <tr>
-        <td>43</td>
-        <td>Function **EndImpersonatingLoggedOnUser** failed with an unexpected exception.</td>
+        <td>43 - Function **EndImpersonatingLoggedOnUser** failed with an unexpected exception.</td>
         <td>Check the logs for the exception message and HResult.</td>
 </table>
-</div>
+
