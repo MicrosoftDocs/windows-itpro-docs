@@ -17,7 +17,7 @@ author: CelesteDG
 
 -   Office 365 for Education, School Data Sync, Microsoft Intune for Education, Microsoft Store for Education, Windows 10, Set up School PCs
 
-Hello, IT administrators! In this walkthrough, we'll show you how can quickly and easily use the new Microsoft Education system, consisting of new and existing cloud services and tools, to implment a full IT cloud solution for your school.
+Hello, IT administrators! In this walkthrough, we'll show you how you can quickly and easily use the new Microsoft Education system, consisting of new and existing cloud services and tools, to implement a full IT cloud solution for your school.
 
 ## What is Microsoft Education?
 **Microsoft Education** consists of these new and existing services and tools from Microsoft:
@@ -808,4 +808,4 @@ If you're a student, follow these links to get find out what resources and servi
 
 ## Related topics
 
-[Windows 10 for Education](index.md)
+[Windows 10 for Education](.../windows/index.md)
