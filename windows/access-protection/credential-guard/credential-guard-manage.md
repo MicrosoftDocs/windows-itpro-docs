@@ -15,8 +15,7 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-Prefer video? See [Protecting privileged users with Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=JNbjYMJyC_8104300474)
-in the Deep Dive into Credential Guard video series.
+Prefer video? See [Credential Guard Deployment](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=sRcyvLJyC_3304300474) in the Deep Dive into Credential Guard video series.
 
 ## Enable Credential Guard
 Credential Guard can be enabled either by using [Group Policy](#enable-credential-guard-by-using-group-policy), the [registry](#enable-credential-guard-by-using-the-registry), or the Device Guard and Credential Guard [hardware readiness tool](#hardware-readiness-tool). Credential Guard can also protect secrets in a Hyper-V virtual machine, just as it would on a physical machine. 
