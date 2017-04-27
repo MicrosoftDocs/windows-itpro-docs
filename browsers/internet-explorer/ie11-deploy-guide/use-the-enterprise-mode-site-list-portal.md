@@ -1,0 +1,59 @@
+---
+localizationpriority: low
+ms.mktglfcycl: deploy
+ms.pagetype: appcompat
+description: Use the topics in this section to learn about how to use the Enterprise Mode Site List Portal.
+author: eross-msft
+ms.prod: ie11
+ms.assetid: f4dbed4c-08ff-40b1-ab3f-60d3b6e8ec9b
+title: Use the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
+---
+
+
+# Use the Enterprise Mode Site List Portal
+
+**Applies to:**
+
+-   Windows 10
+-   Windows 8.1
+-   Windows 7
+-   Windows Server 2012 R2
+-   Windows Server 2008 R2 with Service Pack 1 (SP1)
+
+Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, letting websites render using a modified browser configuration that’s designed to emulate either Windows Internet Explorer 8 or Windows Internet Explorer 7, avoiding the common compatibility problems associated with web apps written and tested on older versions of Internet Explorer.
+
+You can use IE11 and the Enterprise Mode Site List Portal to manage your Enterprise Mode Site List, hosted by the app, with multiple users.
+
+## Minimum system requirements
+Some of the components in this table might also need additional system resources. Check the component's documentation for more information.
+
+|Item |Description |
+|-----|------------|
+|Operating system |Windows 7 or later |
+|Memory |16 GB RAM |
+|Hard drive space |At least 8 GB of free space, formatted using the NTFS file system for better security |
+|Active Directory (AD) |Devices must be domain-joined |
+|SQL Server |Microsoft SQL Server Enterprise Edition 2012 or later |
+|Additional server infrastructure |Internet Information Service (IIS) 6.0 or later |
+
+## Using the Enterprise Mode Site List Portal
+The following topics give you more information about the things that you can do with the Enterprise Mode Site List Portal.
+
+|Topic |Description |
+|------|------------|
+|[Set up the Enterprise Mode Site List Portal](set-up-enterprise-mode-site-list-portal.md) |Details about what needs to be set up before you can use the Enterprise Mode Site List portal in your organization. |
+
+
+
+## Related topics
+
+- [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)
+
+- [Enterprise Mode and the Enterprise Mode Site List](what-is-enterprise-mode.md)
+ 
+
+ 
+
+
+
