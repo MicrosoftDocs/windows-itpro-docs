@@ -25,13 +25,13 @@ Before you can begin using the Enterprise Mode Site List Portal, you must comple
 
 1. Download the Enterprise Mode Site List Portal source code(#download-the-enterprise-mode-site-list-portal-source-code).
 
-2. Create the Application Pool and portal website, by using Internet Information Service (IIS).
+2. Create the Application Pool and website, by using Internet Information Service (IIS).
 
 3. Create and prepare the database.
 
 4. Map the **ApplicationPoolIdentity** to a SQL Server Login.
 
-5. Restart the Application Pool and portal website.
+5. Restart the Application Pool and website.
 
 6. Register the first user.
 
@@ -42,6 +42,8 @@ Before you can begin using the Enterprise Mode Site List Portal, you must comple
 ## Download the Enterprise Mode Site List Portal source code
 You must download the deployment folder from the Enterprise Mode Site List Portal source code to your web server. <!-- There is no deployment folder in the source code -->
 
+**To download the source code**
+
 1. Download the deployment folder from the [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal) source code to your web server.
 
 2. Install the Node.js® package manager, [npm](https://www.npmjs.com/). <!-- Why? What is this used for? We should also add this to the required software if we're going to include it here -->
@@ -50,14 +52,18 @@ You must download the deployment folder from the Enterprise Mode Site List Porta
 
 4.	Press and hold Shift, right-click the window, then click Open command window here. <!-- I'm only seeing an option to open in PowerShell, is that what you mean? Or am I missing the right option? -->
 
-5.	Type _npm i_ into the command prompt, then press Enter.
+5.	Type _npm i_ into the command prompt, then press Enter. <!-- Why? What does this do? -->
 
-6.	Go back up a directory, and open the solution file EMIEWebPortal.sln in Visual Studio and build the entire solution.
+6.	Go back up a directory, open the solution file **EMIEWebPortal.sln** in a development tool such as Visual Studio, and then build the entire solution. <!-- We need to include Visual Studio in the requirements. -->
 
-7.	Copy the contents of the **EMIEWebPortal/** folder to the deployment directory of your portal website. <!-- Do we need to tell them how to set up the website? This seems pretty vague. -->
+7.	Copy the contents of the **EMIEWebPortal/** folder to the deployment directory of your website. <!-- What website? We haven't said anything about it yet...and there are instructions for creating the website after this step  -->
 
+## Create the Application Pool and website, by using IIS
+Next, you must create a new Application Pool and the website by using the IIS Manager.
 
+**To create a new Application Pool**
+1. text
 
-## Create the Application Pool and portal website, by using IIS
-The first thing you need to do is create the Application Pool
+**To create the website**
+1. text
 
