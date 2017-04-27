@@ -51,7 +51,7 @@ For detailed steps using PowerShell to provision a device account, choose an opt
 | [Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md) | Your organization has a mix of services, with some hosted on-premises and some hosted online through Office 365. |
 
 
-If you prefer to use a graphical user interface, some steps can be done using UI instead of PowerShell. 
+If you prefer to use a graphical user interface (UI), some steps can be done using UI instead of PowerShell. 
 For more information, see [Creating a device account using UI](create-a-device-account-using-office-365.md).
 
 
