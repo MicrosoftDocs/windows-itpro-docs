@@ -17,3 +17,4 @@ This topic explains how to enable Skype for Business Cloud PBX with on premises 
 If you deployed Skype for Business Cloud PBX with one of the hybrid voice options, please follow the steps below to enable the room account.  It is important to create a regular user account first, assign all hybrid voice options and phone numbers and only after this convert the account to a room account. If you do not follow this order you will not be able to assign a hybrid phone number. 
 
 
+1.	Create a new user account for Surface Hub. In this example, I will use surfacehub2@adatum.biz account. The account can be created in local active directory and synchronized to the cloud or created directly in the cloud. 
