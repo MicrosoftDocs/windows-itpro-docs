@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+		  "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -27,7 +28,10 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+			"uhfHeaderId": "MSDocsHeader-WindowsIT",
+			"breadcrumb_path": "/windows/smb/breadcrumb/toc.json"
+		},
     "fileMetadata": {},
     "template": [],
     "dest": "smb"

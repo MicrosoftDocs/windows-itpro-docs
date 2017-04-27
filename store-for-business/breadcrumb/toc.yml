@@ -1,0 +1,7 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Windows Store for Business
+      tocHref: /microsoft-store
+      topicHref: /microsoft-store/index

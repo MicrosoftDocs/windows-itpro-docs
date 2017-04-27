@@ -75,7 +75,7 @@ Cortana is Microsoft’s personal digital assistant, who helps busy people get t
 
 Using Azure AD also means that you can remove an employee’s profile (for example, when an employee leaves your organization) while respecting Windows Information Protection (WIP) policies and ignoring enterprise content, such as emails, calendar items, and people lists that are marked as enterprise data.
 
-For more info about Cortana at work, see (/windows/configuration/cortana-at-work/cortana-at-work-overview)
+For more info about Cortana at work, see [Cortana integration in your business or enterprise](/windows/configuration/cortana-at-work/cortana-at-work-overview)
 
 
 ## Deployment
@@ -170,6 +170,11 @@ For Windows desktops, users are able to reset a forgotten PIN through **Settings
 
 For more details, check out [What if I forget my PIN?](/windows/access-protection/hello-for-business/hello-why-pin-is-better-than-password#what-if-i-forget-my-pin).
 
+### Windows Information Protection (WIP) and Azure Active Directory (Azure AD)
+Microsoft Azure Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network. For more info, see [Create a Windows Information Protection (WIP) policy using Microsoft Azure Intune](/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune.md) and [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Azure Intune](/windows/threat-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune.md).
+
+You can also now collect your audit event logs by using the Reporting configuration service provider (CSP) or the Windows Event Forwarding (for Windows desktop domain-joined devices). For info, see the brand-new topic, [How to collect Windows Information Protection (WIP) audit event logs](/windows/threat-protection/windows-information-protection/collect-wip-audit-event-logs.md).
+
 ## Update
 
 ### Windows Update for Business
@@ -257,6 +262,12 @@ Learn more about the diagnostic data that's collected at the Basic level and som
 
 - [Windows 10, version 1703 basic level Windows diagnostic events and fields](/windows/configuration/basic-level-windows-diagnostic-events-and-fields)
 - [Windows 10, version 1703 Diagnostic Data](/windows/configuration/windows-diagnostic-data)
+
+### Group Policy spreadsheet
+
+Learn about the new Group Policies that were added in Windows 10, version 1703.
+
+- [Group Policy Settings Reference for Windows and Windows Server](https://www.microsoft.com/download/details.aspx?id=25250)
 
 ## Windows 10 Mobile enhancements
 

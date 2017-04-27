@@ -1,4 +1,5 @@
 # [Manage clients in Windows 10](index.md)
+## [Administrative Tools in Windows 10](administrative-tools-in-windows-10.md)
 ## [Create mandatory user profiles](mandatory-user-profile.md)
 ## [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md)
 ## [Join Windows 10 Mobile to Azure Active Directory](join-windows-10-mobile-to-azure-active-directory.md)
@@ -8,3 +9,4 @@
 ## [Reset a Windows 10 Mobile device](reset-a-windows-10-mobile-device.md)
 ## [Windows 10 Mobile deployment and management guide](windows-10-mobile-and-mdm.md)
 ## [Windows libraries](windows-libraries.md)
+## [Change history for Client management](change-history-for-client-management.md)

@@ -412,12 +412,12 @@ There are no default locations included with WIP, you must add each of your netw
         <tr>
             <td>Proxy servers</td>
             <td>proxy.contoso.com:80;proxy2.contoso.com:443</td>
-            <td>Specify the proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<br><br>This list shouldn’t include any servers listed in the Internal proxy servers list, which are used for non-WIP-protected traffic.<br><br>If you have multiple resources, you must separate them using the ";" delimiter.</td>
+            <td>Specify the proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<br><br>This list shouldn’t include any servers listed in your Internal proxy servers list. Internal proxy servers must be used only for WIP-protected (enterprise) traffic.<br><br>If you have multiple resources, you must separate them using the ";" delimiter.</td>
         </tr>
         <tr>
             <td>Internal proxy servers</td>
             <td>contoso.internalproxy1.com;contoso.internalproxy2.com</td>
-            <td>Specify the proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<br><br>This list shouldn’t include any servers listed in the Proxy servers list, which are used for WIP-protected traffic.<br><br>If you have multiple resources, you must separate them using the ";" delimiter.</td>
+            <td>Specify the internal proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you’re connecting to are enterprise resources.<br><br>This list shouldn’t include any servers listed in your Proxy servers list. Proxy servers must be used only for non-WIP-protected (non-enterprise) traffic.<br><br>If you have multiple resources, you must separate them using the ";" delimiter.</td>
         </tr>
         <tr>
             <td>IPv4 ranges</td>
@@ -506,7 +506,7 @@ Optionally, if you don’t want everyone in your organization to be able to shar
 
 ## Related topics
 - [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md)
-- [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Azure Intune](create-vpn-and-wip-policy-using-intune.md)
+- [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Azure Intune](create-vpn-and-wip-policy-using-intune.md)
 - [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
 - [Azure RMS Documentation Update for May 2016](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/azure-rms-documentation-update-for-may-2016/)
 - [What is Azure Rights Management?]( https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
