@@ -70,7 +70,7 @@ To run the Upgrade Readiness deployment script:
 
 The deployment script displays the following exit codes to let ddfyou know if it was successful, or if an error was encountered.
 
-<div font-size='7pt';>
+<div font-size='7pt;'>
 <table border='1' cellspacing='0' cellpadding='0'>
     <tr>
         <td BGCOLOR="#a0e4fa" width=5>Exit code</td>
