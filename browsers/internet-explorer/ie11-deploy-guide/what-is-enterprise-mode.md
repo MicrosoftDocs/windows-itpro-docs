@@ -147,7 +147,7 @@ Because the tool is open-source, the source code is readily available for examin
 
 ## Related topics
 
-- [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)
+- [Enterprise Mode Site List Portal source code](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)
 
 - [Technical guidance, tools, and resources on Enterprise browsing](https://technet.microsoft.com/ie)
 

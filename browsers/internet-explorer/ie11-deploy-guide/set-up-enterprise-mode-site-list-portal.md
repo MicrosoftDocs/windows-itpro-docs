@@ -21,9 +21,9 @@ ms.sitesec: library
 
 The [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal) is an open-source web tool on GitHub that allows you to manage your Enterprise Mode Site List, hosted by the app, with multiple users. The portal is designed to use IIS and a SQL Server backend, leveraging Active Directory (AD) for employee management. Updates to your site list are made by submitting new change requests, which are then approved by a designated group of people, put into a pre-production environment for testing, and then deployed immediately, or scheduled for deployment later.
 
-Before you can start to use the Enterprise Mode Site List Portal, you must complete these steps:
+Before you can begin using the Enterprise Mode Site List Portal, you must complete these steps:
 
-1. Download the Enterprise Mode Site List Portal source code to your web server (#download-the-enterprise-mode-site-list-portal-source-code-to-your-web-server).
+1. Download the Enterprise Mode Site List Portal source code(#download-the-enterprise-mode-site-list-portal-source-code).
 
 2. Create the Application Pool and portal website, by using Internet Information Service (IIS).
 
@@ -39,7 +39,24 @@ Before you can start to use the Enterprise Mode Site List Portal, you must compl
 
 8. Register the scheduler service.
 
-## Download the Enterprise Mode Site List Portal source code to your web server
+## Download the Enterprise Mode Site List Portal source code
+You must download the deployment folder from the Enterprise Mode Site List Portal source code to your web server. <!-- There is no deployment folder in the source code -->
+
+1. Download the deployment folder from the [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal) source code to your web server.
+
+2. Install the Node.js® package manager, [npm](https://www.npmjs.com/). <!-- Why? What is this used for? We should also add this to the required software if we're going to include it here -->
+
+3. Open File Explorer and then open the **EMIEWebPortal/** folder.
+
+4.	Press and hold Shift, right-click the window, then click Open command window here. <!-- I'm only seeing an option to open in PowerShell, is that what you mean? Or am I missing the right option? -->
+
+5.	Type _npm i_ into the command prompt, then press Enter.
+
+6.	Go back up a directory, and open the solution file EMIEWebPortal.sln in Visual Studio and build the entire solution.
+
+7.	Copy the contents of the **EMIEWebPortal/** folder to the deployment directory of your portal website. <!-- Do we need to tell them how to set up the website? This seems pretty vague. -->
+
+
 
 ## Create the Application Pool and portal website, by using IIS
 The first thing you need to do is create the Application Pool
