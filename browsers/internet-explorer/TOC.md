@@ -20,7 +20,7 @@
 ###[Virtualization and compatibility with Internet Explorer 11](ie11-deploy-guide/virtualization-and-compatibility-with-ie11.md)
 ##[Collect data using Enterprise Site Discovery](ie11-deploy-guide/collect-data-using-enterprise-site-discovery.md)
 ##[Enterprise Mode for Internet Explorer 11 (IE11)](ie11-deploy-guide/enterprise-mode-overview-for-ie11.md)
-###[What is Enterprise Mode?](ie11-deploy-guide/what-is-enterprise-mode.md)
+###[Enterprise Mode and the Enterprise Mode Site List](ie11-deploy-guide/what-is-enterprise-mode.md)
 ###[Set up Enterprise Mode logging and data collection](ie11-deploy-guide/set-up-enterprise-mode-logging-and-data-collection.md)
 ###[Turn on Enterprise Mode and use a site list](ie11-deploy-guide/turn-on-enterprise-mode-and-use-a-site-list.md)
 ###[Enterprise Mode schema v.2 guidance](ie11-deploy-guide/enterprise-mode-schema-version-2-guidance.md)
