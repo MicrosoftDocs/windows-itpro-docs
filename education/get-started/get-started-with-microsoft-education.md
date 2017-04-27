@@ -1,6 +1,6 @@
 ---
 title: Deploy and manage a full cloud IT solution with Microsoft Education
-description: Learn how to use the new Microsoft Education system to set up a cloud infrastructure for your school, acquire devices and apps, and configure and deploy policies to your devices.
+description: Learn how to use the new Microsoft Education system to set up a cloud infrastructure for your school, acquire devices and apps, and configure and deploy policies to your Windows 10 devices.
 keywords: education, Microsoft Education, Microsoft Education system, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, Microsoft Store for Education, Azure AD, Set up School PCs
 ms.prod: w10
 ms.mktglfcycl: deploy
