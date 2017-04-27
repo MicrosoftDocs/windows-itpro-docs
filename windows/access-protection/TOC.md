@@ -1,4 +1,4 @@
-credential-guard# [Access protection](access-control/access-control.md)
+# [Access protection](access-control/access-control.md)
 
 ## [Access Control Overview](access-control/access-control.md)
 ### [Dynamic Access Control Overview](access-control/dynamic-access-control.md)
