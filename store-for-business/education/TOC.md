@@ -1,4 +1,4 @@
-# [Windows Store for Education](/microsoft-store/index?toc=/microsoft-store/education/toc.json)
+# [Microsoft Store for Education](/microsoft-store/index?toc=/microsoft-store/education/toc.json)
 
 ## [Sign up and get started](/microsoft-store/sign-up-windows-store-for-business-overview?toc=/microsoft-store/education/toc.json)
 ###[Windows Store for Business overview](/microsoft-store/windows-store-for-business-overview?toc=/microsoft-store/education/toc.json)
