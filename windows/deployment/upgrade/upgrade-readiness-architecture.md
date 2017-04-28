@@ -19,12 +19,12 @@ After you enable Windows telemetry on user computers and install the compatibili
 
 For more information about what telemetry data Microsoft collects and how that data is used and protected by Microsoft, see:
 
-[Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization)<BR>
-[Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services)<BR>
+[Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization)<BR>
+[Manage connections from Windows operating system components to Microsoft services](/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)<BR>
 [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)<BR>
 
 ##**Related topics**
 
 [Upgrade Readiness requirements](upgrade-readiness-requirements.md)<BR>
-[Upgrade Readiness release notes](upgrade-readiness-release-notes.md)<BR>
+[Upgrade Readiness release notes](upgrade-readiness-requirements.md#important-information-about-this-release)<BR>
 [Get started with Upgrade Readiness](upgrade-readiness-get-started.md)<BR>
