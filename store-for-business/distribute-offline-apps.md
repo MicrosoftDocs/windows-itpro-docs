@@ -18,22 +18,21 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Offline licensing is a new licensing option for Windows 10 Store for Business. With offline licenses, organizations can download apps and their licenses to deploy within their network, or on devices that are not connected to the Internet. ISVs or devs can opt-in their apps for offline licensing when they submit them to the Windows Dev Center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in the Windows Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store.
+Offline licensing is a new licensing option for Windows 10 with Microsoft Store for Business and Microsoft Store for Education. With offline licenses, organizations can download apps and their licenses to deploy within their network, or on devices that are not connected to the Internet. ISVs or devs can opt-in their apps for offline licensing when they submit them to the Windows Dev Center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in the Microsoft Store for Business and Microsoft Store for Education. This model allows organizations to deploy apps when users or devices do not have connectivity to the Store.
 
 ## Why offline-licensed apps?
 
+Offline-licensed apps offer an alternative to online apps, and provide additional deployment options. Some reasons to use offline-licensed apps:
 
-Offline-licensed apps offer an alternative to online apps, and provide additional deployment options. Some reasons to use offline-licensed apps include:
-
--   **You don't have access to Windows Store services** - If your employees don't have access to the internet and Windows Store services, downloading offline-licensed apps and deploying them with imaging is an alternative to online-licensed apps.
+-   **You don't have access to Windows Store services** - If your employees don't have access to the internet and Microsoft Store services, downloading offline-licensed apps and deploying them with imaging is an alternative to online-licensed apps.
 
 -   **You use imaging to manage devices in your organization** - Offline-licensed apps can be added to images and deployed with Deployment Image Servicing and Management (DISM), or Windows Imaging and Configuration Designer (ICD).
 
--   **Your employees do not have Azure Active Directory (AD) accounts** - Azure AD accounts are required for employees that install apps assigned to them from Store for Business or that claim apps from a private store.
+-   **Your employees do not have Azure Active Directory (AD) accounts** - Azure AD accounts are required for employees that install apps assigned to them from Microsoft Store or that claim apps from a private store.
 
 ## Distribution options for offline-licensed apps
 
-You can't distribute offline-licensed apps directly from the Store for Business. Once you download the items for the offline-licensed app, you have options for distributing the apps:
+You can't distribute offline-licensed apps directly from the Microsoft Store. Once you download the items for the offline-licensed app, you have options for distributing the apps:
 
 -   **Deployment Image Servicing and Management**. DISM is a command-line tool that is used to mount and service Microsoft Windows images before deployment. You can also use DISM to install, uninstall, configure, and update Windows features, packages, drivers, and international settings in a .wim file or VHD using the DISM servicing commands. DISM commands are used on offline images. For more information, see [Deployment Image Servicing and Management](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
 

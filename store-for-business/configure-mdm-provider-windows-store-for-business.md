@@ -46,7 +46,9 @@ After your management tool is added to your Azure AD directory, you can configur
 
 Your MDM tool is ready to use with Store for Business. Consult docs for your management tool to learn how to distribute apps from your synchronized inventory.
 
-See [Manage apps you purchased from Windows Store for Business with Microsoft InTune](https://technet.microsoft.com/library/mt676514.aspx) to learn how to configure synchroniztion and deploy apps.
+See [Manage apps you purchased from Windows Store for Business with Microsoft InTune](https://technet.microsoft.com/library/mt676514.aspx), or [Manage apps from Windows Store for Business with System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business) to learn how to configure synchroniztion and deploy apps.
+
+For third-party MDM providers or management servers, check your product documentation.
 
  
 

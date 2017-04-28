@@ -1,6 +1,6 @@
 ---
 title: Distribute apps using your private store (Windows 10)
-description: The private store is a feature in Windows Store for Business that organizations receive during the sign up process.
+description: The private store is a feature in Microsoft Store for Business and Microsoft Store for Education that organizations receive during the signup process.
 ms.assetid: C4644035-845C-4C84-87F0-D87EA8F5BA19
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -18,33 +18,31 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-The private store is a feature in Windows Store for Business that organizations receive during the sign up process. When admins add apps to the private store, all employees in the organization can view and download the apps. Your private store is available as a tab in the Windows Store, and is usually named for your company or organization. Only apps with online licenses can be added to the private store.
+The private store is a feature in Microsoft Store for Business and Education that organizations receive during the signup process. When admins add apps to the private store, all employees in the organization can view and download the apps. Your private store is available as a tab in the Windows Store, and is usually named for your company or organization. Only apps with online licenses can be added to the private store.
 
 You can make an app available in your private store when you acquire the app, or you can do it later from your inventory. Once the app is in your private store, employees can claim and install the app.
 
 **To acquire an app and make it available in your private store**
 
-1.  Sign in to the [Store for Business](https://businessstore.microsoft.com).
+1.  Sign in to [Micrososft Store for Business](https://businessstore.microsoft.com) or [Micrososft Store for Education](https://businessstore.microsoft.com).
 
 2.  Click an app, choose the license type, and then click **Get the app** to acquire the app for your organization.
 
-    ![Image showing Distribute options for app in the Windows Store for Business.](images/wsfb-distribute.png)
+    <!--- ![Image showing Distribute options for app in the Windows Store for Business.](images/wsfb-distribute.png) -->
 
-Windows Store for Business add the app to your **Inventory**. Click **Manage**, **Inventory** for app distribution options. 
+Microsoft Store adds the app to **Apps & software**. Click **Manage**, **Apps & software** for app distribution options. 
 
-**To make an app in Inventory available in your private store**
+**To make an app in Apps & software available in your private store**
 
-1.  Sign in to the [Store for Business](https://businessstore.microsoft.com).
+1.  Sign in to the [Store for Business](https://businessstore.microsoft.com) or [Micrososft Store for Education](https://businessstore.microsoft.com).
+2.  Click **Manage**, and then choose **Apps & software**.
 
-2.  Click **Manage**, and then choose **Inventory**.
+    <!--- ![Image showing Manage menu in Windows Store for Business.](images/wsfb-manageinventory.png) -->
 
-    ![Image showing Manage menu in Windows Store for Business.](images/wsfb-manageinventory.png)
+3.  Use **Refine results** to search for online-licensed apps under **License type**.
+4.  From the list of online-licensed apps, click the ellipses for the app you want, and then choose **Add to private store**.
 
-3.  Click **Refine**, and then choose **Online**. Store for Business will update the list of apps on the **Inventory** page.
-
-4.  From an app in **Inventory**, click the ellipses under **Action**, and then choose **Add to private store**.
-
-    ![Image showing options from Action for each app in Inventory.](images/wsfb-inventoryaddprivatestore.png)
+    <!--- ![Image showing options from Action for each app in Inventory.](images/wsfb-inventoryaddprivatestore.png) -->
 
 The value under **Private store** for the app will change to pending. It will take approximately twelve hours before the app is available in the private store.
 
