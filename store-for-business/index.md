@@ -66,13 +66,3 @@ Welcome to the Windows Store for Business! You can use the Store for Business, t
 </tbody>
 </table>
 
- 
-
- 
-
- 
-
-
-
-
-
