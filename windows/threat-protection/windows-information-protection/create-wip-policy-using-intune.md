@@ -1,5 +1,5 @@
 ---
-title: Create a Windows Information Protection (WIP) policy using Microsoft Azure Intune (Windows 10)
+title: Create a Windows Information Protection (WIP) with enrollment policy using Microsoft Azure Intune (Windows 10)
 description: Microsoft Azure Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.
 ms.assetid: 4b307c99-3016-4d6a-9ae7-3bbebd26e721
 ms.prod: w10
@@ -10,7 +10,7 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Create a Windows Information Protection (WIP) policy using Microsoft Azure Intune
+# Create a Windows Information Protection (WIP) with enrollment policy using Microsoft Azure Intune
 
 **Applies to:**
 
@@ -18,6 +18,9 @@ localizationpriority: high
 -   Windows 10 Mobile, version 1607 and later (except Microsoft Azure Rights Management, which is only available on the desktop)
 
 Microsoft Azure Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network.
+
+>[!Important]
+>This topic covers creating a Windows Information Protection (WIP) policy for organizations already managing devices by using Mobile Device Management (MDM) solutions. If your organization uses a mobile application management (MAM) solution to deploy your WIP policy to Intune apps without managing devices, you must follow the instructions in the [Create and deploy Windows Information Protection (WIP) app protection policy with Intune](https://docs.microsoft.com/en-us/intune/deploy-use/create-windows-information-protection-policy-with-intune) topic.
 
 ## Add a WIP policy
 After you’ve set up Intune for your organization, you must create a WIP-specific policy.
