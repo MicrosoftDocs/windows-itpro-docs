@@ -1288,7 +1288,7 @@ To change the level of diagnostic and usage data sent when you **Send your devic
 
    -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\DataCollection!AllowTelemetry**, with a value of 0 (zero).
+-   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection\\AllowTelemetry**, with a value of 0 (zero).
 
    -or-
 
