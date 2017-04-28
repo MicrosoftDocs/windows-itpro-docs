@@ -21,7 +21,7 @@ This topic lists new and updated topics in the [Deploy Windows 10](index.md) doc
 
 
 ## RELEASE: Windows 10, version 1703
-The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). The provisioning topics have been moved to [Configure Windows 10](/windows/configuration/index.md).
+The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). The provisioning topics have been moved to [Configure Windows 10](/windows/configuration/index).
 
 
 ## March 2017
