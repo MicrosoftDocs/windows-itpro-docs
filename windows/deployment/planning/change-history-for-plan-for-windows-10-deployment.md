@@ -42,7 +42,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 
 | New or changed topic                                                                                                                             | Description |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-|[Application Compatibility Toolkit (ACT) Technical Reference](act-technical-reference.md) (multiple topics) |Redirected deprecated content to the [Upgrade Analytics](../upgrade/manage-windows-upgrades-with-upgrade-analytics.md) content. Only Standard User Analyzer and Compatibility Administrator continue to be supported.|
+|[Application Compatibility Toolkit (ACT) Technical Reference](act-technical-reference.md) (multiple topics) |Redirected deprecated content to the [Upgrade Analytics](../upgrade/manage-windows-upgrades-with-upgrade-readiness.md) content. Only Standard User Analyzer and Compatibility Administrator continue to be supported.|
 | [Windows 10 servicing overview](../update/waas-overview.md) | Content on this page was summarized. Detailed content about servicing branches was moved to the [Windows 10 servicing options](../update/waas-servicing-strategy-windows-10-updates.md) page. |
 
 

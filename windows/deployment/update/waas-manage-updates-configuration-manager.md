@@ -1,5 +1,5 @@
 ---
-title: Manage Windows 10 updates using System Center Configuration Manager (Windows 10)
+title: Deploy Windows 10 updates using System Center Configuration Manager (Windows 10)
 description: System Center Configuration Manager provides maximum control over quality and feature updates for Windows 10.
 ms.prod: w10
 ms.mktglfcycl: manage
