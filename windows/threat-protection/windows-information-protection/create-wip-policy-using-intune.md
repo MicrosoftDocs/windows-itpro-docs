@@ -1,6 +1,6 @@
 ---
-title: Create a Windows Information Protection (WIP) policy using Microsoft Azure Intune (Windows 10)
-description: Microsoft Azure Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.
+title: Create a Windows Information Protection (WIP) policy using Microsoft Intune (Windows 10)
+description: Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.
 ms.assetid: 4b307c99-3016-4d6a-9ae7-3bbebd26e721
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -10,20 +10,20 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Create a Windows Information Protection (WIP) policy using Microsoft Azure Intune
+# Create a Windows Information Protection (WIP) policy using Microsoft Intune
 
 **Applies to:**
 
 -   Windows 10, version 1607 and later
 -   Windows 10 Mobile, version 1607 and later (except Microsoft Azure Rights Management, which is only available on the desktop)
 
-Microsoft Azure Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network.
+Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network.
 
 ## Add a WIP policy
 After you’ve set up Intune for your organization, you must create a WIP-specific policy.
 
 **To add a WIP policy**
-1.  Open the Microsoft Azure Intune mobile application management console, click **All settings**, and then click **App policy**.
+1.  Open the Microsoft Intune mobile application management console, click **All settings**, and then click **App policy**.
 
     ![Microsoft Azure Intune management console: App policy link](images/wip-azure-portal-start.png)
 
@@ -293,9 +293,9 @@ For this example, we’re going to add an AppLocker XML file to the **Allowed ap
         </AppLockerPolicy>
     ```
 
-12.	After you’ve created your XML file, you need to import it by using Microsoft Azure Intune.
+12.	After you’ve created your XML file, you need to import it by using Microsoft Intune.
 
-**To import your list of Allowed apps using Microsoft Azure Intune**
+**To import your list of Allowed apps using Microsoft Intune**
 
 1.	From the **Allowed apps** area, click **Import apps**.
     
@@ -497,7 +497,7 @@ After you've decided where your protected apps can access enterprise data on you
 ### Choose to set up Azure Rights Management with WIP
 WIP can integrate with Microsoft Azure Rights Management to enable secure sharing of files by using removable drives such as USB drives. For more info about Azure Rights Management, see [Microsoft Azure Rights Management](https://products.office.com/en-us/business/microsoft-azure-rights-management). To integrate Azure Rights Management with WIP, you must already have Azure Rights Management set up.
 
-To configure WIP to use Azure Rights Management, you must set the **AllowAzureRMSForEDP** MDM setting to **1** in Microsoft Azure Intune. This setting tells WIP to encrypt files copied to removable drives with Azure Rights Management, so they can be shared amongst your employees on computers running at least Windows 10, version 1703.
+To configure WIP to use Azure Rights Management, you must set the **AllowAzureRMSForEDP** MDM setting to **1** in Microsoft Intune. This setting tells WIP to encrypt files copied to removable drives with Azure Rights Management, so they can be shared amongst your employees on computers running at least Windows 10, version 1703.
 
 Optionally, if you don’t want everyone in your organization to be able to share your enterprise data, you can set the **RMSTemplateIDForEDP** MDM setting to the **TemplateID** of the Azure Rights Management template used to encrypt the data. You must make sure to mark the template with the **EditRightsData** option. 
 
@@ -506,7 +506,7 @@ Optionally, if you don’t want everyone in your organization to be able to shar
 
 ## Related topics
 - [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md)
-- [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Azure Intune](create-vpn-and-wip-policy-using-intune.md)
+- [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune](create-vpn-and-wip-policy-using-intune.md)
 - [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
 - [Azure RMS Documentation Update for May 2016](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/azure-rms-documentation-update-for-may-2016/)
 - [What is Azure Rights Management?]( https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
