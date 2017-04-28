@@ -97,7 +97,7 @@ Disabling Windows Firewall with Advanced Security can also cause problems, inclu
 
 Microsoft recommends disabling Windows Firewall with Advanced Security only when installing a third-party firewall, and resetting Windows Firewall back to defaults when the third-party software is disabled or removed. 
 
-If disabling Windows Firewall with Advanced Security is required, do not disable it by stopping the Windows Firewall service.
+If disabling Windows Firewall with Advanced Security is required, do not disable it by stopping the Windows Firewall service (in the **Services** snap-in, the display name is Windows Firewall and the service name is MpsSvc).
 Stopping the Windows Firewall service is not supported by Microsoft.
 
 Non-Microsoft firewall software can programmatically disable only the parts of Windows Firewall with Advanced Security that need to be disabled for compatibility. 
