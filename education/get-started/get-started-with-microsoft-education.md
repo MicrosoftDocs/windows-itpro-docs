@@ -34,35 +34,53 @@ With Microsoft Education, schools can:
 - **Collaborate in a modern classroom** - Help students become career-ready with Office apps like Word, Excel, PowerPoint, and OneNote. Increase comprehension and outcomes with the most advanced teaching apps like integrated Learning Tools.
 - **Go beyond the browser with inspiring apps for classroom learning** - Inspire with Minecraft: Education Edition and innovative apps from the Microsoft Store for Education.
 
-Go to the <a href="https://www.microsoft.com/en-us/education" target="_blank">Microsoft Education site</a> to learn more about Microsoft Education. See <a href="https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools" target="_blank">How to buy</a> to learn about pricing and purchasing options for schools, students, and teachers as well as academic pricing and offers for qualified K-12 and higher education institutions.
+Go to the <a href="https://www.microsoft.com/en-us/education" target="_blank">Microsoft Education site</a> to learn more. See <a href="https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools" target="_blank">How to buy</a> to learn about pricing and purchasing options for schools, students, and teachers as well as academic pricing and offers for qualified K-12 and higher education institutions.
 
 ## What we're doing
 In this walkthrough, we'll show you the basics on how to:
-- Acquire an Office 365 for Education domain
-- Import school student, teacher, and class data through School Data Sync (SDS)
-- Manage app and settings deployment with Intune for Education
+- Acquire an Office 365 for Education tenant, if you don't already have one
+- Import school, student, teacher, and class data using School Data Sync (SDS)
+- Manage apps and settings deployment with Intune for Education
 - Acquire additional apps in Microsoft Store for Education
-- Use the Set up School PCs app to quickly set up and provision your Windows education devices
-- Log in and use the device
+- Use the Set up School PCs app to quickly set up and provision your Windows 10 education devices
+- Log in and use the devices
 
-This diagram shows a high-level view of what we cover in this walkthrough. The numbers correspond to the sections in the walkthrough and roughly correspond to the flow of the overall process, but note that not all sections are shown in the diagram.
+This diagram shows a high-level view of what we cover in this walkthrough. The numbers correspond to the sections in the walkthrough and roughly correspond to the flow of the overall process; but, note that not all sections in this walkthrough are shown in the diagram.
 
-![Deploy and manage a full cloud IT solution using MSES](images/mses_getstarted_workflow_e2e.png)
+![Deploy and manage a full cloud IT solution using Microsoft Education](images/microsoft_education_get_started_workflow.png)
 
 ## Prerequisites
 Here's a few a tasks you need to complete before you start the walkthrough:
-- [Download and install the latest Windows 10 Creators Update image](#download-and-install-the-latest-windows-10-creators-update-image). 
+- Make sure all the devices that you want to configure, such as student PCs, have the latest Windows 10, version 1703 image installed.
 
-  This process takes a while so we recommend that you start this task before setting up your cloud infrastructure.
+  We recommend Windows 10, version 1703 to take advantage of all the new features and functionality that Windows supports. This version of Windows is also compatible with the latest version of the Set up School PCs app and the versions must match in order for Set up School PCs to provision the devices. 
 
-  > [!IMPORTANT] 
-  > **To get started, click on the MSES setup link that was provided to you.** If you don't have a link, contact your Microsoft representative.
+  If you don't have Windows 10, version 1703 installed on your devices, we recommend upgrading. This process takes a while so start this task before proceeding with this walkthrough.
+
+- Have an education-verified tenant to quality for an Office 365 for Education subscription. You also need to be education-verified to use School Data Sync.
+
+  If you don't have an education-verified domain, don't worry. We'll show you the steps on how to do this. 
+
+  > [!NOTE] 
+  > If you need to get education-verified, it may take up to two weeks for the verification to be completed.
+
+## Ready... set...
+
+**[Try Microsoft Education now!](https://aka.ms/intuneforedupreviewtrial)** - Click the link to get started.
 
 
-In the following sections, we'll walk you through the process of setting up a basic cloud infrastructure for your school.
+First, let's walk through the process of setting up a basic cloud infrastructure for your school.
 
 ## 1. Set up your Office 365 for Education tenant
 Schools can use Office 365 to save time and be more productive. Built with powerful tools and accessible from any device, setting it up is the first step in getting your school to the cloud. 
+
+Select the scenario that best fits:
+- [My school already has an Office 365 for Education verified tenant](#officeeduverifiedtenant)
+- [My school doesn't have an Office 365 for Education verified tenant](#notofficeeduverifiedtenantyet)
+- [My school is looking into Microsoft Education and I just want to try the walkthrough](#notofficeeduverifiedtenantyet)
+
+### <a name="notofficeeduverifiedtenantyet"></a> 
+Follow these steps to set up an Office 365 for Education tenant.
 
 **To set up Office 365 for Education**
 1. Create an account and a user ID and password to use to sign into your account. 
@@ -740,48 +758,6 @@ To verify that Classroom is set up properly, we recommend going through these ta
 
 #### Tasks for teachers and students
 Teachers and students can find one-time setup instructions for Microsoft Classroom, info on how to use it, and other resources in <a href="https://support.office.com/en-us/article/Get-started-with-Microsoft-Classroom-dd5d064f-6c22-41e0-b721-9d359857d037" target="_blank">Get Started with Microsoft Classroom</a>.
-
-## Download and install the latest Windows 10 Creators Update image 
-To evaluate the full Microsoft Education experience, we recommend using the latest Windows 10 Creators Update (version 1703) image on your Windows devices. 
-
-### Download the latest Windows 10 image
-1. Go to the <a href="https://connect.microsoft.com/windowsserver/downloads" target="_blank">Windows Server and System Center Connect site</a> and sign in.
-
-  > [!NOTE]
-  > If you are part of the TAP program and don't have access to the Connect site, contact your Microsoft representative.
-
-2. Go through the list of available downloads and select the latest Windows 10 Creators Update build.
-
-  **Figure 51** - Sample download entry for the latest Windows 10 build
-
-  ![Sample download entry for the latest Windows 10 build on Connect](images/connect_download_entry.jpg)
-
-3. Download the .iso for the Windows edition that you need. 
-
-  For example, the Windows 10 Education .iso will have a file name in this format: "buildnumber"."majorversion"."minorversion".RS_PRERELEASE_EDUCATION_OEMRET_X64FRE_EN-US.ISO.
-
-### Create a bootable Windows 10 USB key 
-Now that you have the latest Windows 10 Creators Update .iso from Connect, we recommend using the Windows USB/DVD Download Tool to quickly create a bootable Windows 10 USB key. 
-
-**To download and install the Windows USB/DVD Download Tool** 
-1. Follow the instructions in the <a href="https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool" target="_blank">Windows USB/DVD Download Tool Download Center page</a> to download and install the tool on your development workstation.
-
-  > [!NOTE]
-  > In case it's hard to see, the link to tool download page is <a href="http://wudt.codeplex.com/" target="_blank">Windows USB/DVD Download Tool</a> from CodePlex.
-
-2. Run the Windows USB/DVD Download Tool to create a bootable Windows 10 USB key.
-  - The source file must point to the path of the Windows 10 .iso file that you downloaded from Connect.
-  - Select USB device to create a copy on a USB key/flash drive. Make sure you select the USB device from the dropdown list.
-
-### Install the Windows 10 Creators Update image
-Now that you have a bootable Windows 10 USB key, use it to install the image on your Windows 10 education devices.
-
-On the target device:
-1. Hold down the Shift key and choose **Restart** from the **Power** menu.
-2. When prompted, choose **Use a device**.
-3. Choose **USB drive or similar option** depending on the UEFI implementation on the target device.
-4. Boot off of the USB key on the target device and go through the device setup process. Choose **Custom: Install Windows only (advanced)**.
-5. Delete all partitions and click **Next**.
 
 ## Get more info
 
