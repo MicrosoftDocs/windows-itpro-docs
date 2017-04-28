@@ -17,7 +17,7 @@ This topic explains how to enable Skype for Business Cloud PBX with on-premises 
 If you deployed Skype for Business Cloud PBX with one of the hybrid voice options, follow the steps below to enable the room account for Surface Hub. It is important to create a regular user account first, assign all hybrid voice options and phone numbers, and then convert the account to a room account. If you do not follow this order, you will not be able to assign a hybrid phone number.  
 
 >[!WARNING]
->If you create an account before configuration of Hybrid voice (you run Enable-CSMeetingRoom command), you will not be able to configure required hybrid voice parameters. In order to configure hybrid voice parameters for a previously configured account or to reconfigure a phone number, delete the E5 or E3  + Cloud PBX add-on license. Follow the steps below, starting at step 3.
+>If you create an account before configuration of Hybrid voice (you run Enable-CSMeetingRoom command), you will not be able to configure required hybrid voice parameters. In order to configure hybrid voice parameters for a previously configured account or to reconfigure a phone number, delete the E5 or E3  + Cloud PBX add-on license, and then follow the steps below, starting at step 3.
 
 1. Create a new user account for Surface Hub. This example uses `surfacehub2@adatum.com`. The account can be created in local Active Directory and synchronized to the cloud, or created directly in the cloud. 
 
