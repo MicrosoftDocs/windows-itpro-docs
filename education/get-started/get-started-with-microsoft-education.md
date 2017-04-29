@@ -64,15 +64,12 @@ Here's a few a tasks you need to complete before you start the walkthrough:
   > [!NOTE] 
   > If you need to get education-verified, it may take up to two weeks for the verification to be completed.
 
+  Select the scenario that applies to your school:
 
-## Ready... set...
+  - [My school already has an Office 365 for Education verified tenant](#officeeduverifiedtenant)
+  - [My school doesn't have an Office 365 for Education verified tenant](#notofficeeduverifiedtenantyet)
+  - [My school is interested in Microsoft Education and we want to go through the walkthrough to evaluate it](#notofficeeduverifiedtenantyet)
 
-Click the link to get started: **[Try Microsoft Education now!](https://aka.ms/intuneforedupreviewtrial)** 
-
-Then, select the link that best fits your scenario:
-- [My school already has an Office 365 for Education verified tenant](#officeeduverifiedtenant)
-- [My school doesn't have an Office 365 for Education verified tenant](#notofficeeduverifiedtenantyet)
-- [My school is interested in Microsoft Education and we want to go through the walkthrough to evaluate it](#notofficeeduverifiedtenantyet)
 
 ## 1. Set up your Office 365 for Education tenant
 Schools can use Office 365 to save time and be more productive. Built with powerful tools and accessible from any device, setting it up is the first step in getting your school to the cloud. 
@@ -269,7 +266,14 @@ Once you have your CSV files that contain your student data and you have the SDS
   >
   > You can refresh the page to confirm that your profile synced successfully.
 
-That's it for school data. Next, we'll configure Microsoft Store for Education.
+That's it for school data. 
+
+### Apply the Intune for Education preview code to your education tenant
+
+1. Click the link to apply Intune for Education to your education tenant: **[Try Intune for Education](https://aka.ms/intuneforedupreviewtrial)**
+2. Once you click the link, you'll be asked to sign in to Office 365 and the Intune for Education trial subscription will be applied to your tenant.
+
+Next, we'll configure Microsoft Store for Education.
 
 ## 3. Configure Microsoft Store for Education for app distribution
 You'll need to configure Microsoft Store for Education to accept the EULA and associate your Store account with Intune for Education by selecting Intune as the management tool for distributing apps.
