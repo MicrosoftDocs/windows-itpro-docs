@@ -107,14 +107,10 @@ School Data Sync (SDS) helps you import Student Information System (SIS) data in
 
 Select the link that best fits your scenario:
 - [My school already has SDS enabled and we use it to manage SIS data](#sdsalreadyenabled)
-- [My school uses Office 365, but we use another tool to manage our SIS data](#yeso365othersis)
 - [We just set up Office 365 for our school and want to use SDS to manage our SIS data](#evaluatesds)
 
 ### <a name="sdsalreadyenabled"></a> For schools that use SDS
 If your school already have SDS enabled for your school, you don't have to do anything else to import student data. Next, [configure Microsoft Store for Education for app distribution](#31-configure-microsoft-store-for-education-for-app-distribution).
-
-### <a name="yeso365othersis"></a> For schools that use other student management systems
-If your school uses another student management system, and all your student data is available in Office 365, you don't have to do anything else. Next, [configure Microsoft Store for Education for app distribution](#31-configure-microsoft-store-for-education-for-app-distribution).
 
 ### <a name="evaluatesds"></a> For schools new to SDS
 We recommend using comma separated value (CSV) files with SDS to synchronize SIS data with Office 365. However, SDS supports many other deployment options such as PowerSchool Sync, Clever Sync, and OneRoster CSV files. See the *For IT admins* section in [Get more info](#get-more-info) to learn more about these other deployment options. 
