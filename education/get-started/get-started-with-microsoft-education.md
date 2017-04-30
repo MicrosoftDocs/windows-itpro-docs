@@ -96,7 +96,7 @@ To get started with Microsoft Education in a production environment, follow thes
 
   Wait for your tenant to be education-verified before proceeding with the next step. Verification can take up to two weeks.
 
-2. Sign up for School Data Sync at https://aka.ms/sdssignup. 
+2. Go to https://aka.ms/sdssignup and fill out the form to sign up for School Data Sync and receive a free, one-on-one support from Microsoft.
 
   A team will contact you within 3 business days to help you deploy School Data Sync in a production environment. 
 
