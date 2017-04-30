@@ -9,9 +9,9 @@ ms.pagetype: edu
 author: CelesteDG
 ---
 
-![Learn how to deploy and manage a cloud solution with MSES!](images/mses_getstarted_banner.png)
+# Get started: Deploy and manage a full cloud IT solution with Microsoft Education
 
-# Get started: Deploy and manage a full cloud IT solution using the Microsoft Education System
+![Learn how to deploy and manage a cloud solution with MSES!](images/mses_getstarted_banner.png)
 
 **Applies to:**
 
@@ -733,21 +733,8 @@ Adding a new device to your cloud-based tenant is easy. For new devices, you can
 8. The **Connect to work or school** window will refresh and will now include an entry that shows you're connected to your organization's Azure AD. This means the device is now registered in Azure AD and enrolled in MDM and the account should have access to the organization's resources.
 9. You can confirm that the new device and user are showing up as Intune-managed by going to the Intune management portal and following the steps in [3.3 Verify the device is Azure AD joined](#33-verify-the-device-is-azure-ad-joined). It may take several minutes before the new device shows up so check again later.
 
-### 4.5 Set up Classroom
-
-#### Tasks for IT administrator
-School IT administrators can find more support documents about Microsoft Classroom by visiting <a href="https://aka.ms/classroomsupport" target="_blank">https://aka.ms/classroomsupport</a>.
-
-To verify that Classroom is set up properly, we recommend going through these tasks:
-- <a href="https://edu.uservoice.com/knowledgebase/articles/942180-personalize-classroom" target="_blank">Personalize Classroom</a>
-- <a href="https://edu.uservoice.com/knowledgebase/articles/942195-class-notebooks-in-classroom" target="_blank">Set up the class notebook</a>
-- <a href="https://edu.uservoice.com/knowledgebase/articles/942186-calendar-in-classroom" target="_blank">Check the calendar</a>
-
-#### Tasks for teachers and students
-Teachers and students can find one-time setup instructions for Microsoft Classroom, info on how to use it, and other resources in <a href="https://support.office.com/en-us/article/Get-started-with-Microsoft-Classroom-dd5d064f-6c22-41e0-b721-9d359857d037" target="_blank">Get Started with Microsoft Classroom</a>.
-
-## Download and install the latest Windows 10 Creators Update image 
-To evaluate the full Microsoft Education System experience, we recommend using the latest Windows 10 Creators Update (version 1703) image on your Windows devices. 
+## Download and install the latest Windows 10, versio 1703 (Creators Update) image 
+To evaluate the full Microsoft Education System experience, we recommend using the latest Windows 10, version 1703 image on your Windows devices. 
 
 ### Download the latest Windows 10 image
 1. Go to the <a href="https://connect.microsoft.com/windowsserver/downloads" target="_blank">Windows Server and System Center Connect site</a> and sign in.

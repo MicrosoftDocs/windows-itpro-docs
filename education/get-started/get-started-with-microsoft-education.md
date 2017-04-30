@@ -15,7 +15,7 @@ author: CelesteDG
 
 **Applies to:**
 
--   Office 365 for Education, School Data Sync, Microsoft Intune for Education, Microsoft Store for Education, Windows 10, Set up School PCs
+-   Office 365 for Education, School Data Sync, Microsoft Intune for Education, Microsoft Store for Education, Windows 10 Creators Update, Set up School PCs
 
 Hello, IT administrators! In this walkthrough, we'll show you how you can quickly and easily use the new Microsoft Education system, consisting of new and existing cloud services and tools, to implement a full IT cloud solution for your school.
 
@@ -23,6 +23,7 @@ Hello, IT administrators! In this walkthrough, we'll show you how you can quickl
 **Microsoft Education** consists of these new and existing services and tools from Microsoft:
 - **Microsoft Intune for Education** for simple set up, control, and management of the resources for your school including apps, devices, and settings
 - **Office 365 for Education** provides online apps for work from anywhere and desktop apps for advanced functionality, built for working together and available across devices, and it's free for schools, teachers, and students
+  - **School Data Sync** to help automate the process for importing and integrating School Information System (SIS) data that you can use with Office 365
   - **OneNote Class Notebook** to organize course content, create and deliver interactive lessons to some or all students, collaborate and provide private feedback to individual students, and connect with major LMS and SIS partners for assignment workflow
 - **Learning Tools** are moving beyond the OneNote desktop app and is now available in Office Lens, OneNote Online, Word Online, and Word desktop
 - **Whiteboard** to create interactive lessons on the big screen, share and collaborate real-time by connecting to Class Notebook and Classroom
@@ -47,41 +48,85 @@ In this walkthrough, we'll show you the basics on how to:
 
 This diagram shows a high-level view of what we cover in this walkthrough. The numbers correspond to the sections in the walkthrough and roughly correspond to the flow of the overall process; but, note that not all sections in this walkthrough are shown in the diagram.
 
-![Deploy and manage a full cloud IT solution using Microsoft Education](images/microsoft_education_get_started_workflow.png)
+![Deploy and manage a full cloud IT solution using Microsoft Education](images/microsoft-education-workflow.png)
 
 ## Prerequisites
-Here's a few a tasks you need to complete before you start the walkthrough:
+Complete these tasks before you start the walkthrough:
 - Make sure all the devices that you want to configure, such as student PCs, have the latest Windows 10, version 1703 image installed.
 
   We recommend Windows 10, version 1703 to take advantage of all the new features and functionality that Windows supports. This version of Windows is also compatible with the latest version of the Set up School PCs app and the versions must match in order for Set up School PCs to provision the devices. 
 
-  If you don't have Windows 10, version 1703 installed on your devices, we recommend upgrading. This process takes a while so start this task before proceeding with this walkthrough.
+  If you don't have Windows 10, version 1703 installed on your devices, we recommend upgrading. This process takes a while so start this task before proceeding with this walkthrough. 
 
-- Have an education-verified tenant to quality for an Office 365 for Education subscription. You also need to be education-verified to use School Data Sync.
+- Have an education-verified tenant to quality for an Office 365 for Education subscription. You also need to be education-verified to use School Data Sync and Intune for Education.
 
   If you don't have an education-verified domain, don't worry. We'll show you the steps on how to do this. 
 
   > [!NOTE] 
-  > If you need to get education-verified, it may take up to two weeks for the verification to be completed.
+  > If you need to get education-verified, it may take up to two weeks for the verification process to be completed.
 
-  Select the scenario that applies to your school:
+## School setup
+ To make sure you have a successful experience with deploying and managing a full IT solution with Microsoft Education, select the scenario that applies to your school and how you'd like to get started.
 
-  - [My school already has an Office 365 for Education verified tenant](#officeeduverifiedtenant)
-  - [My school doesn't have an Office 365 for Education verified tenant](#notofficeeduverifiedtenantyet)
-  - [My school is interested in Microsoft Education and we want to go through the walkthrough to evaluate it](#notofficeeduverifiedtenantyet)
+| [School uses Office 365](#schooluseso365) | [Try out Microsoft Education in trial environment](#noo365trialenv) | [Try out Microsoft Education in production environment](#noo365prodenv) |
+| ----------------------------------------- | ------------------------------------------------ | ---------------------------------------------- |
+| * My school uses Office 365 for Education | * My school doesn't use Office 365 for Education yet | * My school doesn't use Office 365 for Education yet |
+| * My school tenant is education-verified  | * My school is not education-verified            | * My school is not education verified          |
+| * I would like to apply the Microsoft Education trial code to a production environment | * I would like to apply the Microsoft Education trial code to a trial environment | * I would like to apply the Microsoft Education trial to a production environment |
+ 
+### <a name="noo365trialenv"></a> Try out Microsoft Education in a trial environment
+Trying out Microsoft Education in a trial environment is the easiest way to evaluate all the features and tools. Here, you'll use promo codes and sample files to evaluate all the features and tools. 
+
+To get started with MIcrosoft Education in a trial environment, follow these steps.
+
+1. [Set up a new Office 365 for Education tenant](#1-set-up-a-new-office-365-for-education-tenant).
+
+  Wait for your tenant to be education-verified before proceeding with the next step. Verification can take up to two weeks.
+
+2. Click https://aka.ms/getsdspromocode to apply a School Data Sync trial promo code to your Office 365 education tenant.
+3. Follow the instructions in [Use School Data Sync to import student data](#2-use-school-data-sync-to-import-student-data).
+4. Follow the instructions in [School uses Office 365](#schooluseso365).
+
+### <a name="noo365prodenv"></a> Try out Microsoft Education in a production environment
+Trying out Microsoft Education in a production environment means you'll be using real school data as you evaluate the features and tools. This requires more time to get fully set up and going. If you want a quicker way to evaluate Microsoft Education, you can [use a trial environment instead](#noo365trialenv).
+
+To get started with Microsoft Education in a production environment, follow these steps.
+
+1. [Set up a new Office 365 for Education tenant](#1-set-up-a-new-office-365-for-education-tenant). 
+
+  Wait for your tenant to be education-verified before proceeding with the next step. Verification can take up to two weeks.
+
+2. Sign up for School Data Sync at https://aka.ms/sdssignup. 
+
+  A team will contact you within 3 business days to help you deploy School Data Sync in a production environment. 
+
+3. While getting your school data set up, you can skip ahead and follow the instructions in [School uses Office 365](#schooluseso365).
+
+  Note that you may not have any student data to work with when following the walkthrough if you're still working to deploy SDS. In this case, you can use your global admin account to try out the scenarios in the walkthrough. Anything you provision to all the devices or all the users will be visible when you log in to a device using your global admin credentials.
+
+### <a name="schooluseso365"></a> School uses Office 365
+Already have an Office 365 for Education verified tenant? Just sign in with your global admin credentials to apply the Intune for Education preview trial code to your tenant and follow the rest of the walkthrough.
+
+1. Click https://aka.ms/intuneforedupreviewtrial to get started.
+2. In the **Intune for Education Trial** page, click **Sign in**.
+
+  **Figure 1** - Intune for Education trial sign in page
+
+  ![Intune for Education trial sign in page](images/i4e_trialsigninpage.png)
+
+3. Enter your Office 365 global admin credentials to apply the Intune for Education trial to your tenant.
+4. Skip ahead and follow the instructions in the walkthrough beginning with [3. Configure Microsoft Store for Education for app distribution](#3-configure-microsoft-store-for-education).
 
 
-## 1. Set up your Office 365 for Education tenant
+## 1. Set up a new Office 356 for Education tenant
 Schools can use Office 365 to save time and be more productive. Built with powerful tools and accessible from any device, setting it up is the first step in getting your school to the cloud. 
-
-### <a name="notofficeeduverifiedtenantyet"></a> Set up a new Office 365 for Education tenant
 
 Don't have an Office 365 for Education verified tenant or just starting out? Follow these steps to set up an Office 365 for Education tenant. [Learn more about Office 365 for Education plans and pricing](https://products.office.com/en-us/academic/compare-office-365-education-plans).
 
 1. Go to the [Office 365 for Education sign up page](https://signup.microsoft.com/Signup?OfferId=03ee83a5-5cb4-4545-aca9-33ead43f222a,d764709a-7763-45ef-a2a8-db5b8b6ae704&DL=ENTERPRISEPREMIUM_FACULTY) to sign up for a free subscription for your school.
 2. Create an account and a user ID and password to use to sign into your account. 
 
-  **Figure 1** - Office 365 account creation
+  **Figure 2** - Office 365 account creation
 
   ![Create an Office 365 account](images/o365_createaccount.png)
 
@@ -96,62 +141,35 @@ Don't have an Office 365 for Education verified tenant or just starting out? Fol
 
 As part of setting up a basic cloud infrastructure, you don't need to complete the rest of the Office 365 for Education setup so we will skip the rest of setup for now and start importing school data. You can pick up where you left off with Office 365 for Education setup once you've completed the rest of the steps in the walkthrough. See [4.2 Complete Office 365 for Education setup](#42-complete-office-365-education-setup) for info.
 
-Next, [use School Data Sync to import student data](#2-use-school-data-sync-to-import-student-data).
-
-### <a name="officeeduverifiedtenant"></a> Sign in to your Office 365 for Education account
-
-Already have an Office 365 for Education verified tenant? Just sign in with your global admin credentials to apply the Intune for Education preview trial code to your tenant and follow the rest of the walkthrough.
 
 ## 2. Use School Data Sync to import student data
 School Data Sync (SDS) helps you import Student Information System (SIS) data into Office 365. It helps automate the process for importing and integrating SIS data that you can use with Office 365 and apps like OneNote Class Notebooks. 
 
-Select the link that best fits your scenario:
-- [My school already has SDS enabled and we use it to manage SIS data](#sdsalreadyenabled)
-- [We just set up Office 365 for our school and want to use SDS to manage our SIS data](#evaluatesds)
+Follow all the steps in this section to use SDS and sample CSV files in a trial environment. To use SDS in a production environment, see step 2 in [Try out Microsoft Education in a production environment](#noo365prodenv) instead.
 
-### <a name="sdsalreadyenabled"></a> For schools that use SDS
-If your school already have SDS enabled for your school, you don't have to do anything else to import student data. Next, [configure Microsoft Store for Education for app distribution](#31-configure-microsoft-store-for-education-for-app-distribution).
+**<a name="downloadcsvsamples"></a>Download sample school data**
 
-### <a name="evaluatesds"></a> For schools new to SDS
-We recommend using comma separated value (CSV) files with SDS to synchronize SIS data with Office 365. However, SDS supports many other deployment options such as PowerSchool Sync, Clever Sync, and OneRoster CSV files. See the *For IT admins* section in [Get more info](#get-more-info) to learn more about these other deployment options. 
+1. Go to the <a href="https://aka.ms/sdsscripts" target="_blank">O365-EDU-Tools GitHub site</a>.
+2. Click the green **Clone or download** button to download the SDS sample files.
 
-**Prerequisites for using SDS**
+  **Figure 3** - Download the SDS sample files from GitHub
 
-To use SDS, you need:
+  ![Download the SDS sample files from GitHub](images/sds_github_downloadsampledata.png)
 
-- CSV files that contain your SIS data
+3. In the **Clone with HTTPS** pop-up window, choose **Download ZIP** and note the location where you're saving the folder.
+4. Go to the folder where you saved the .zip and unzip the files.
+5. Open the **O365-EDU-Tools-master** folder and then open the **CSV Samples** subfolder. Confirm that you can see the following sample CSV files.
 
-  You can download sample SDS files to see what information you need to provide to create the files.
+  **Figure 4** - Sample CSV files
 
-  **<a name="downloadcsvsamples"></a>Download sample school data**
+  ![Use the sample CSV files](images/sds_sample_csvfiles.png)
 
-  1. Go to the <a href="https://aka.ms/sdsscripts" target="_blank">O365-EDU-Tools GitHub site</a>.
-  2. Click the green **Clone or download** button to download the SDS sample files.
+  > [!NOTE] 
+  > - The sample CSV files uses sample accounts and passwords. If you are using the sample files for testing, remember the accounts and their corresponding passwords. You may be asked to change the password during your first sign in. 
+  > - If you are modifying the sample CSV files to use in your organization, change the accounts and passwords to match the user accounts and passwords in your organization.
+  > - If you are using CSV files from your existing production environment, see the detailed instructions in step 5 in the next section.
 
-    **Figure 2** - Download the SDS sample files from GitHub
-
-    ![Download the SDS sample files from GitHub](images/sds_github_downloadsampledata.png)
-
-  3. In the **Clone with HTTPS** pop-up window, choose **Download ZIP** and note the location where you're saving the folder.
-  4. Go to the folder where you saved the .zip and unzip the files.
-  5. Open the **O365-EDU-Tools-master** folder and then open the **CSV Samples** subfolder. Confirm that you can see the following sample CSV files.
-
-    **Figure 3** - Sample CSV files
-
-    ![Use the sample CSV files](images/sds_sample_csvfiles.png)
-
-    > [!NOTE] 
-    > - The sample CSV files uses sample accounts and passwords. If you are using the sample files for testing, remember the accounts and their corresponding passwords. You may be asked to change the password during your first sign in. 
-    > - If you are modifying the sample CSV files to use in your organization, change the accounts and passwords to match the user accounts and passwords in your organization.
-    > - If you are using CSV files from your existing production environment, see the detailed instructions in step 5 in the next section.
-
-  To learn more about the CSV files that are required and the info you need to include in each file, see <a href="https://aka.ms/sdscsvattributes" target="_blank">CSV files for School Data Sync</a>. If you run into any issues, see <a href="https://aka.ms/sdserrors" target="_blank">School Data Sync errors and troubleshooting</a>.
-
-- SDS promotion code applied to your Office 365 for Education subscription
-
-  You'll need to apply the School Data Sync promotion code to your Office 365 for Education tenant. Follow the instructions in <a href="https://support.office.com/en-us/article/Add-Microsoft-Classroom-Preview-and-School-Data-Sync-to-your-Office-365-Education-tenant-04df0f05-e91f-49cb-88ee-17a247ede5a7?ui=en-US&rs=en-US&ad=US" target="_blank">Add School Data Sync to your Office 365 for Education tenant</a> to apply the code.
-
-Once you have your CSV files that contain your student data and you have the SDS promo code applied to your subscription, you're ready to use SDS.
+To learn more about the CSV files that are required and the info you need to include in each file, see <a href="https://aka.ms/sdscsvattributes" target="_blank">CSV files for School Data Sync</a>. If you run into any issues, see <a href="https://aka.ms/sdserrors" target="_blank">School Data Sync errors and troubleshooting</a>.
 
 **<a name="usesdstoimportdata"></a>Use SDS to import student data**
 
@@ -716,17 +734,9 @@ Follow the steps in this section to enable a single person to add many devices t
 2. Click **Admin centers** and select **Azure AD** to go to the Azure portal.
 3. Configure the device settings for the school's Active Directory. From the new Azure portal, <a href="https://portal.azure.com" target="_blank">https://portal.azure.com</a>, select **Azure Active Directory > Users and groups > Device settings**.
 
-    **Figure 49** - Device settings in the new Azure portal
+  **Figure 49** - Device settings in the new Azure portal
 
-    ![Configure device settings in the new Azure portal](images/azure_newportal_usersandgroups_devicesettings.png)
-
-<!-- Commenting out
-  - If you are using the classic Azure portal, <a href="https://manage.windowsazure.com" target="_blank">https://manage.windowsazure.com</a>, click **Active Directory**, select **Configure** from the options at the top, and then scroll down to the **Devices** section.
-
-    **Figure 38** - Device settings in the classic Azure portal
-
-    ![Configure device settings in the classic Azure portal](images/azure_classicportal_configure_devicesettings.png)
--->
+  ![Configure device settings in the new Azure portal](images/azure_newportal_usersandgroups_devicesettings.png)
 
 4. Find the setting **Maximum number of devices per user** and change the value to **Unlimited**.
 5. Click **Save** to update device settings.
@@ -773,19 +783,6 @@ Adding a new device to your cloud-based tenant is easy. For new devices, you can
 7. You will see a confirmation window that says the device is now connected to the organization. Click **Done**.
 8. The **Connect to work or school** window will refresh and will now include an entry that shows you're connected to your organization's Azure AD. This means the device is now registered in Azure AD and enrolled in MDM and the account should have access to the organization's resources.
 9. You can confirm that the new device and user are showing up as Intune-managed by going to the Intune management portal and following the steps in [3.3 Verify the device is Azure AD joined](#33-verify-the-device-is-azure-ad-joined). It may take several minutes before the new device shows up so check again later.
-
-### 4.5 Set up Classroom
-
-#### Tasks for IT administrator
-School IT administrators can find more support documents about Microsoft Classroom by visiting <a href="https://aka.ms/classroomsupport" target="_blank">https://aka.ms/classroomsupport</a>.
-
-To verify that Classroom is set up properly, we recommend going through these tasks:
-- <a href="https://edu.uservoice.com/knowledgebase/articles/942180-personalize-classroom" target="_blank">Personalize Classroom</a>
-- <a href="https://edu.uservoice.com/knowledgebase/articles/942195-class-notebooks-in-classroom" target="_blank">Set up the class notebook</a>
-- <a href="https://edu.uservoice.com/knowledgebase/articles/942186-calendar-in-classroom" target="_blank">Check the calendar</a>
-
-#### Tasks for teachers and students
-Teachers and students can find one-time setup instructions for Microsoft Classroom, info on how to use it, and other resources in <a href="https://support.office.com/en-us/article/Get-started-with-Microsoft-Classroom-dd5d064f-6c22-41e0-b721-9d359857d037" target="_blank">Get Started with Microsoft Classroom</a>.
 
 ## Get more info
 
