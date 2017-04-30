@@ -66,7 +66,7 @@ Complete these tasks before you start the walkthrough:
   > If you need to get education-verified, it may take up to two weeks for the verification process to be completed.
 
 ## School setup
- To make sure you have a successful experience with deploying and managing a full IT solution with Microsoft Education, select the scenario that applies to your school and how you'd like to get started.
+ To make sure you have a successful experience with deploying and managing a full cloud IT solution with Microsoft Education, select the scenario that best describes your school or how you'd like to get started.
 
 | [School uses Office 365](#schooluseso365) | [Try out Microsoft Education in trial environment](#noo365trialenv) | [Try out Microsoft Education in production environment](#noo365prodenv) |
 | ----------------------------------------- | ------------------------------------------------ | ---------------------------------------------- |
@@ -75,9 +75,9 @@ Complete these tasks before you start the walkthrough:
 | * I would like to apply the Microsoft Education trial code to a production environment | * I would like to apply the Microsoft Education trial code to a trial environment | * I would like to apply the Microsoft Education trial to a production environment |
  
 ### <a name="noo365trialenv"></a> Try out Microsoft Education in a trial environment
-Trying out Microsoft Education in a trial environment is the easiest way to evaluate all the features and tools. Here, you'll use promo codes and sample files to evaluate all the features and tools. 
+Once you get an Office 365 education-verified tenant, trying out Microsoft Education in a trial environment is an easy way to evaluate all the features and tools. Here, you'll use promo codes and sample files as you follow the walkthrough. 
 
-To get started with MIcrosoft Education in a trial environment, follow these steps.
+To get started with Microsoft Education in a trial environment, follow these steps.
 
 1. [Set up a new Office 365 for Education tenant](#1-set-up-a-new-office-365-for-education-tenant).
 
@@ -519,7 +519,7 @@ You're now done assigning apps to all users in your tenant. It's time to set up 
 
 ## 5. Set up your Windows devices
 
-### Set up devices using Set up School PCs or Windows OOBE
+### 5.1 Set up devices using Set up School PCs or Windows OOBE
 We recommend using the latest build of Windows 10 Creators Update (version 1703) on your Windows education devices. If you haven't done so already, [download and install the latest Windows 10 Creators Update image](#download-and-install-the-latest-windows-10-creators-update-image).
 
 To set up new Windows devices and enroll them to your education tenant, choose from one of these options:
@@ -673,7 +673,7 @@ To set up new Windows devices and enroll them to your education tenant, choose f
 
   ![Windows setup is complete](images/win10_oobe_complete.png)
 
-### 3.2 Verify correct device setup
+### 5.2 Verify correct device setup
 Verify that the device is set up correctly and boots without any issues.
 
 **Verify that the device was set up correctly**
@@ -684,7 +684,7 @@ Verify that the device is set up correctly and boots without any issues.
 
   ![Apps list contains the apps provisioned for the user](images/win10_start_checkapps.png)
 
-### 3.3 Verify the device is Azure AD joined
+### 5.3 Verify the device is Azure AD joined
 Let's now verify that the device is joined to your organization's Azure AD and shows up as being managed in Microsoft Intune for Education.
 
 **Verify if the device is joined to Azure AD**
@@ -707,9 +707,9 @@ Let's now verify that the device is joined to your organization's Azure AD and s
 **That's it! You're done!** You've completed basic cloud setup for your education tenant and confirmed that your education devices and users are managed all in the cloud.
 
 
-## 4. Finishing setup and other tasks
+## 6. Finishing setup and other tasks
 
-### 4.1 Update group settings in Intune for Education
+### 6.1 Update group settings in Intune for Education
 If you need to make changes or updates to any of the apps or settings for the group(s), follow these steps.
 
 1. Log in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>.
@@ -722,7 +722,7 @@ If you need to make changes or updates to any of the apps or settings for the gr
 
 4. Click **Save** or **Discard changes**.
 
-### 4.2 Configure Azure settings
+### 6.2 Configure Azure settings
 After completing the basic setup for your cloud infrastructure and confirming that it is up and running, it's time to prepare for additional devices to be added and enable capabilities for the user to use.
 
 #### Enable many devices to be added by a single person 
@@ -757,17 +757,17 @@ Follow the steps in this section to ensure that settings for the each user follo
 
 5. Click **Save** to update device settings.
 
-### 4.3 Complete Office 365 for Education setup
+### 6.3 Complete Office 365 for Education setup
 Now that your basic cloud infrastructure is up and running, it's time to complete the rest of the Office 365 for Education setup. You can find detailed information about completing Office 365 setup, services and applications, troubleshooting, and more by reading the <a href="https://support.office.com/en-US/Article/set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa#ID0EAAAABAAA=Education" target="_blank">Office 365 admin documentation</a>.
 
-### 4.4 Add more users
+### 6.4 Add more users
 After your cloud infrastructure is set up and you have a device management strategy in place, you may need to add more users and you want the same policies to apply to these users. 
 
 You can add new users to your tenant simply by adding them to the Office 365 groups. Adding new users to Office 365 groups automatically adds them to the corresponding groups in Intune.
 
 See <a href="https://support.office.com/en-us/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc" target="_blank">Add users to Office 365</a> to learn more. Once you're done adding new users, go to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a> and verify that the same users were added to the Intune for Education groups as well.
 
-### 4.5 Connect other devices to your cloud infrastructure
+### 6.5 Connect other devices to your cloud infrastructure
 Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [3. Set up devices](#3-set-up-your-windows-devices). For other devices, such as those personally-owned by teachers who need to connect to the school network to access work or school resources (BYOD), you can follow the steps in this section to get these devices connected.
 
   > [!NOTE]  
@@ -791,7 +791,6 @@ To learn more about the services and tools mentioned in this walkthrough, and le
 - <a href="https://technet.microsoft.com/en-us/edu/windows/education-scenarios-store-for-business" target="_blank">Working with Store for Business - education scenarios</a>
 - *Resources for anyone who uses Office 365* and *Resources for admins* in <a href="https://support.office.com/en-US/article/Get-started-with-Office-365-Education-AB02ABE5-A1EE-458C-B749-5B44416CCF14" target="_blank">Get started with Office 365 for Education</a>
 - School Data Sync
-  - <a href="http://aka.ms/sdsdemo" target="_blank">School Data Sync and Classroom introductory video</a>
   - Deployment using CSV files: <a href="https://aka.ms/sdscsv" target="_blank">How to deploy School Data Sync by using CSV files</a> and <a href="https://aka.ms/sdscsvattributes" target="_blank">CSV files for School Data Sync</a>
   - Deployment using PowerSchool Sync: <a href="https://aka.ms/sdspowerschool" target="_blank">How to deploy School Data Sync by using PowerSchool Sync</a> and <a href="https://aka.ms/sdspowerschoolattributes" target="_blank">School Data Sync required attributes for PowerSchool Sync</a>
   - Deployment using Clever Sync: <a href="https://aka.ms/sdsclever" target="_blank">How to deploy School Data Sync by using Clever Sync</a> and <a href="https://aka.ms/sdscleverattributes" target="_blank">School Data Sync required attributes for Clever sync</a>
@@ -809,4 +808,5 @@ If you're a student, follow these links to get find out what resources and servi
 
 ## Related topics
 
-[Windows 10 for Education](.../windows/index.md)
+Microsoft Education documentation and resources
+<!-- add missing link here -->
