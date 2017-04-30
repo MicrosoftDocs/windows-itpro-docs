@@ -115,7 +115,7 @@ Already have an Office 365 for Education verified tenant? Just sign in with your
   ![Intune for Education trial sign in page](images/i4e_trialsigninpage.png)
 
 3. Enter your Office 365 global admin credentials to apply the Intune for Education trial to your tenant.
-4. Skip ahead and follow the instructions in the walkthrough beginning with [3. Configure Microsoft Store for Education for app distribution](#3-configure-microsoft-store-for-education).
+4. Skip ahead and follow the instructions in the walkthrough beginning with [3. Configure Microsoft Store for Education](#3-configure-microsoft-store-for-education).
 
 
 ## 1. Set up a new Office 356 for Education tenant
@@ -241,7 +241,7 @@ To learn more about the CSV files that are required and the info you need to inc
 
     ![Specify options for teacher mapping](images/sds_addnewprofile_teacheroptions.png)
 
-9. In the **Student mapping** screen:
+9. In the **Student options** screen:
   1. Select the domain for the students. SDS uses this to match students from your source data to their existing accounts in Office 365/Azure Active Directory. In the walkthrough, the CSV files are our source data.
   2. In the **Select student properties** section, you can add optional student properties to sync. For this walkthrough, you don't have to change the default.
   3. In the **Student licenses** section, choose the SKU to assign licenses for students. For this walkthrough, choose **STANDARDWOFFPACK_STUDENT**.
@@ -249,25 +249,29 @@ To learn more about the CSV files that are required and the info you need to inc
 
     **Figure 11** - Specify options for student mapping
 
-    ![Specify options for student mapping](images/sds_updated_newprofile_studentmapping_updated.png)
+    ![Specify options for student mapping](images/sds_addnewprofile_studentoptions.png)
 
-10. You will see a page for your profile. The status might indicate that it's still being set up. 
+10. In the profile **Review** page, review the summary and confirm that the values matches with the data you entered. Click **Create profile**.
 
-  In the profile **Review** page, review the summary and confirm that the values matches with the data you entered. 
+  You will see a notification that your profile is being created.
 
-    **Figure 12** - Review the summary and confirm that it matches with the data you entered.
+11. You will see a page for your profile. The status might indicate that it's still being set up. 
 
-    ![Review the summary and confirm that it matches with the data you entered](images/sds_updated_newprofile_summary.png)
+  **Figure 12** - SDS profile page
 
-11. After the profile name at the top, confirm that the status for your profile now says **Ready to sync**.
+  ![SDS profile page](images/sds_profilepage.png)
+
+12. After the profile name at the top, confirm that the status for your profile now says **Ready to sync**.
+
+  If the status still indicates that the profile is being set up, try refreshing the page until you see the status change to **Ready to sync**.
 
   **Figure 13** - New profile is ready to sync
 
-  ![Confirm that the new profile is ready](images/sds_updated_newprofile_status_readytosync.png)
+  ![Confirm that the new profile is ready](images/sds_profile_readytosync.png)
 
 11. On the profile page, below the profile name and profile status, there are four options: **Upload Files**, **Start Sync**, **Edit**, and **Delete**. Click **Upload Files** and then follow these steps:
-  1. In the **Select data files to be uploaded** window, click **Add Files** and navigate to the directory where you saved the six CSV files required for data import.
-  2. In the File Explorer window, choose all the files at the same time and then click **Open**.
+  1. In the **Select data files to be uploaded** window, click **+ Add Files** and navigate to the directory where you saved the six CSV files required for data import.
+  2. In the File Explorer window, you will see a folder for the sample CSV files for the UK and six sample CSV files for the US. Select the CSV files that match your region/locale, and then click **Open**.
   3. In the **Select data files to be uploaded** window, confirm that all six CSV files (School.csv, Section.csv, Student.csv, StudentEnrollment.csv, Teacher.csv, and TeacherRoster.csv) are listed and then click **Upload**.
   4. After all the files are successfully uploaded, click **OK**.
 12. On the profile page, click **Start Sync** and then follow these steps:
@@ -279,41 +283,35 @@ To learn more about the CSV files that are required and the info you need to inc
   >
   > You can refresh the page to confirm that your profile synced successfully.
 
-That's it for school data. 
+That's it for importing sample school data using SDS.
 
-### Apply the Intune for Education preview code to your education tenant
+## 3. Configure Microsoft Store for Education
+You'll need to configure Microsoft Store for Education to accept the service agreement and make sure your Microsoft Store account is associated with Intune for Education.
 
-1. Click the link to apply Intune for Education to your education tenant: **[Try Intune for Education](https://aka.ms/intuneforedupreviewtrial)**
-2. Once you click the link, you'll be asked to sign in to Office 365 and the Intune for Education trial subscription will be applied to your tenant.
+**Associate your Microsoft Store account with Intune for Education**
+1. Sign into <a href="https://businessstore.microsoft.com" target="_blank">Microsoft Store for Education</a>.
+2. Accept the Microsoft Store for Business and Education Services Agreement. 
 
-Next, we'll configure Microsoft Store for Education.
+  This will take you to the Microsoft Store for Education portal.
 
-## 3. Configure Microsoft Store for Education for app distribution
-You'll need to configure Microsoft Store for Education to accept the EULA and associate your Store account with Intune for Education by selecting Intune as the management tool for distributing apps.
+  **Figure 14** - Microsoft Store for Education portal
 
-**Associate your Store account with Intune for Education**
-1. Sign into <a href="https://www.microsoft.com/en-us/business-store" target="_blank">Microsoft Store for Education</a>.
-2. Accept the Microsoft Store for Education Services Agreement. This will take you to the Store portal.
+  ![Microsoft Store for Education portal](images/msfe_store_portal.png)
 
-  **Figure 13** - Store for Business
+3. In the Microsoft Store portal, click **Manage** to go to the Microsoft Store **Overview** page.
+4. Find the **Overview** page, find the **Store settings** tile and click **Management tools**.
 
-  ![Sign into the Store for Business](images/wsfb_portal.png)
+  **Figure 15** - Select management tools from the list of Store settings options
 
-3. In the Store for Business portal, select **Settings > Management tools** to go to the management tools page.
+  ![Select management tools from list of Store settings options](images/msfe_storesettings_select_managementtools.png)
 
-  **Figure 14** - Select management tools from the Settings dropdown
+4. In the **Management tools** page, find **Microsoft Intune** on the list and click **Activate** to get Intune for Education ready for use with Microsoft Store for Education.
 
-  ![Select management tools from the dropdown](images/wsfb_settings_management_tools.png)
+  **Figure 16** - Activate Intune for Education as the management tool
 
-4. In the **Management tools** page, find **Microsoft Intune** on the list and click **Activate** to get Intune for Education ready for use with Store for Business.
+  ![Activate Intune for Education as the management tool](images/msfe_managementtools_activateintune.png) 
 
-  **Figure 15** - Intune is activated from the Store portal
-
-  ![Activate Intune as the management tool](images/wsfb_portal_activate_intune.png) 
-
-5. In the **Show offline-licensed apps** window, click **Yes**. This lets the school cache apps and their licenses to deploy within within the school's network. You can find more information about offline licensing in [Apps in the Store for Business](https://technet.microsoft.com/en-us/itpro/windows/manage/apps-in-windows-store-for-business).
-
-Your Store account is now linked to Intune for Education so let's set that up next.
+Your Microsoft Store for Education account is now linked to Intune for Education so let's set that up next.
 
 ## 4. Use Intune for Education to manage groups, apps, and settings
 Intune for Education is a streamlined device management solution for educational institutions that can be used to quickly set up and manage Windows 10 devices for your school. It provides a new streamlined UI with the enterprise readiness and resiliency of the Intune service. You can learn more about Intune for Education by reading the **Intune for Education documentation**. 
