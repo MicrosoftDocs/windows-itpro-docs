@@ -22,7 +22,7 @@ The first person to sign in to Microsoft Store for Business or Microsoft Store f
 
 Microsoft Store for Business and Education has a set of roles that help admins and employees manage access to apps and tasks for Microsoft Store. Employees with these roles will need to use their Azure AD account to access the Store. Global Administrators and global user accounts that are used with other Microsoft services, such as Azure, or Office 365 can sign in to Microsoft Store. Global user accounts have some permissions in Microsoft Store, and Microsoft Store has a set of roles that help IT admins and employees manage access to apps and tasks for Microsoft Store.
 
-### Global user account permissions in Microsoft Store
+## Global user account permissions in Microsoft Store
 
 This table lists the global user accounts and the permissions they have in Microsoft Store.
 
@@ -38,7 +38,7 @@ This table lists the global user accounts and the permissions they have in Micro
 
 -   **Billing Administrator** - IT Pros with this account have the same permissions as Microsoft Store Purchaser role.
 
-### Microsoft Store roles and permissions
+## Microsoft Store roles and permissions
 
 Microsoft Store has a set of roles that help IT admins and employees manage access to apps and tasks for Microsoft Store. Employees with these roles will need to use their Azure AD account to access Microsoft Store.
 
@@ -59,17 +59,11 @@ These permissions allow people to:
 -   **Manage Microsoft Store settings**:
 
     -   Account information (view only)
-
     -   Device Guard signing
-
     -   LOB publishers
-
     -   Management tools
-
     -   Offline licensing
-
     -   Permissions
-
     -   Private store
 
 -   **Acquire apps** - Acquire apps from Microsoft Store and add them to your inventory.

@@ -1,6 +1,6 @@
 ---
 title: Sign up and get started (Windows 10)
-description: IT admins can sign up for the Mcirosoft Store for Business, and get started working with apps.
+description: IT admins can sign up for the Microsoft Store for Business or Microsoft Store for Education and get started working with apps.
 ms.assetid: 87C6FA60-3AB9-4152-A85C-6A1588A20C7B
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -12,13 +12,12 @@ localizationpriority: high
 
 # Sign up and get started
 
-
 **Applies to**
 
 -   Windows 10
 -   Windows 10 Mobile
 
-IT admins can sign up for the Microsoft Store for Business, and get started working with apps.
+IT admins can sign up for the Microsoft Store for Business and Education, and get started working with apps.
 
 ## In this section
 

@@ -31,21 +31,14 @@ These app types are supported in Microsoft Store for Business and Education:
 
 Apps in your inventory will have at least one of these supported platforms listed for the app:
 
--   Windows 10 desktops
-
--   Windows 10 phones
-
--   Windows 10 xbox
-
--   Windows 10 IOT devices
-
--   Windows 10 servers
-
--   Windows 10 \*all devices\*
-
--   Windows 10 Surface Hub
-
--   Windows 10 HoloLens
+- Windows 10 desktops
+- Windows 10 phones
+- Windows 10 xbox
+- Windows 10 IOT devices
+- Windows 10 servers
+- Windows 10 \*all devices\*
+- Windows 10 Surface Hub
+- Windows 10 HoloLens
 
 Apps that you acquire from the Microsoft Store only work on Windows 10-based devices. Even though an app might list Windows 8 as its supported platform, that tells you what platform the app was originally written for. Apps developed for Windows 8, or Windows Phone 8 will work on Windows 10.
 
@@ -61,7 +54,7 @@ Some apps offer you the option to make in-app purchases. In-app purchases are no
 
 If an employee makes an in-app purchase, they'll make it with their personal Microsoft account and pay for it with a personal payment method. The employee will own the item purchased, and it cannot be transferred to your organization’s inventory.
 
-## Licensing model: online and offline licenses
+## <a href="" id="licensing-model"></a>Licensing model: online and offline licenses
 
 Microsoft Store supports two options to license apps: online and offline.
 
@@ -70,28 +63,16 @@ Microsoft Store supports two options to license apps: online and offline.
 
 Distribution options for online-licensed apps include the ability to:
 
--   Assign an app to employees.
-
--   Add an app to your private store, allowing employees to download the app.
-
--   Distribute through a management tool.
+- Assign an app to employees.
+- Add an app to your private store, allowing employees to download the app.
+- Distribute through a management tool.
 
 ### Offline licensing
 Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store. This model means organizations can deploy apps when users or devices do not have connectivity to Microsost Store. Admins control whether or not offline apps are available in Microsost Store with an offline app visibility setting. For more information, see [offline license visibility](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings#offline-licensing). 
 
 You have the following distribution options for offline-licensed apps:
 
--   Include the app in a provisioning package, and then use it as part of imaging a device.
-
--   Distribute the app through a management tool.
+- Include the app in a provisioning package, and then use it as part of imaging a device.
+- Distribute the app through a management tool.
 
 For more information, see [Distribute apps to your employees from the Microsoft Store for Business](distribute-apps-to-your-employees-windows-store-for-business.md).
-
- 
-
- 
-
-
-
-
-

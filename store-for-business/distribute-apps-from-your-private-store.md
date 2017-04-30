@@ -50,18 +50,13 @@ Employees can claim apps that admins added to the private store by doing the fol
 
 **To claim an app from the private store**
 
-1.  Sign in to your computer with your Azure Active Directory (AD) credentials, and start the Windows Store app.
-
-2.  Click the **private store** tab.
-
-3.  Click the app you want to install, and then click **Install**.
+1. Sign in to your computer with your Azure Active Directory (AD) credentials, and start the Windows Store app.
+2. Click the **private store** tab.
+3. Click the app you want to install, and then click **Install**.
 
 ## Related topics
-
-
-[Manage access to private store](manage-access-to-private-store.md)
-
-[Configure access to Windows Store](/windows/configuration/stop-employees-from-using-the-windows-store)
+- [Manage access to private store](manage-access-to-private-store.md)
+- [Configure access to Windows Store](/windows/configuration/stop-employees-from-using-the-windows-store)
 
  
 
