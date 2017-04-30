@@ -9,16 +9,14 @@ ms.pagetype: store
 author: TrudyHa
 ---
 
-# App inventory management for Windows Store for Business and Education
+# App inventory management for Microsoft Store for Business and Education
 
 **Applies to**
 
 -   Windows 10
 -   Windows 10 Mobile
 
-You can manage all apps that you've acquired on your **Apps & software** page.
-
- **Apps & software** shows content you've acquired. This includes all apps that you've acquired from Microsoft Store, and the line-of-business (LOB) apps that you've accepted into your inventory. After LOB apps are submitted to your organization, you'll see a notification on your **Apps & software** page. On the **New LOB apps** tab, you can accept, or reject the LOB apps. For more information on LOB apps, see [Working with line-of-business apps](working-with-line-of-business-apps.md). The inventory page includes apps acquired by all people in your organization with the Store for Business Admin role.  
+You can manage all apps that you've acquired on your **Apps & software** page. This page shows all of the content you've acquired, including apps that from Microsoft Store, and line-of-business (LOB) apps that you've accepted into your inventory. After LOB apps are submitted to your organization, you'll see a notification on your **Apps & software** page. On the **New LOB apps** tab, you can accept, or reject the LOB apps. For more information on LOB apps, see [Working with line-of-business apps](working-with-line-of-business-apps.md). The inventory page includes apps acquired by all people in your organization with the Store for Business Admin role.  
 
 All of these apps are treated the same once they are in your inventory and you can perform app lifecycle tasks for them: distribute apps, add apps to private store, review license details, and reclaim app licenses.
 
@@ -45,18 +43,12 @@ The last modified date does not correspond to when an app was last updated in Mi
 
 There are a couple of ways to find specific apps, or groups of apps in your inventory.
 
-**Search** - Use the Search box to search for an app.
-
+**Search** - Use the Search box to search for an app.<br>
 **Refine results** - Use **Refine results** to scope your list of apps by one or more of these app attributes:
-
 - **License type** - Online or offline licenses. For more info, see [Apps in Windows Store for Business](apps-in-windows-store-for-business.md#licensing-model).
-
 - **Supported devices** - Lists the devices that apps in your inventory were originally written to support. This list is cumulative for all apps in your inventory.
-
 - **Source** - **Store**, for apps acquired from Store for Business, or LOB, for line-of-business apps.
-
 - **Product type** - Product categories, such as app, or game. 
-
 - **Private store** - Whether or not the app is in the private store, or status if the app is being added or removed from private store. 
 
 ## Manage apps in your inventory
@@ -87,13 +79,8 @@ Once an app is in your private store, people in your org can install the app on 
 
 1.  Sign in to the [Store for Business](https://businessstore.microsoft.com) or [Micrososft Store for Education](https://businessstore.microsoft.com).
 2.  Click **Manage**, and then choose **Apps & software**.
-
-    <!--- ![Image showing Manage menu in Windows Store for Business.](images/wsfb-manageinventory.png) -->
-
 3.  Use **Refine results** to search for online-licensed apps under **License type**.
 4.  From the list of online-licensed apps, click the ellipses for the app you want, and then choose **Add to private store**.
-
-    <!--- ![Image showing options from Action for each app in Inventory.](images/wsfb-inventoryaddprivatestore.png) -->
 
 The value under **Private store** for the app will change to pending. It will take approximately twelve hours before the app is available in the private store.
 Employees can claim apps that admins added to the private store by doing the following.
@@ -110,7 +97,7 @@ If you decide that you don't want an app available for employees to install on t
 
 **To remove an app from the private store**
  
-1.  Sign in to the [Store for Business](http://businessstore.microsoft.com) or [Micrososft Store for Education](https://businessstore.microsoft.com).
+1.  Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com) or [Micrososft Store for Education](https://businessstore.microsoft.com).
 2.	Click **Manage**, and then choose **Apps & software**.
 3.	Find an app, click the ellipses under **Action**, choose **Remove from private store**, and then click **Remove**.
 
@@ -118,7 +105,7 @@ The app will still be in your inventory, but your employees will not have access
 
 **To assign an app to an employee**
 
-1.	Sign in to the [Store for Business](http://businessstore.microsoft.com).
+1.	Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com) or [Micrososft Store for Education](https://businessstore.microsoft.com).
 2.	Click **Manage**, and then choose **Inventory**.
 3.	Find an app, click the ellipses under **Action**, and then choose **Assign to people**.
 4.	Type the email address for the employee that you're assigning the app to, and click **Confirm**.
@@ -131,43 +118,29 @@ For each app in your inventory, you can view and manage license details. This gi
 
 **To view license details**
 
-1. Sign in to [Store for Busines.s](https://go.microsoft.com/fwlink/p/?LinkId=691845) or [Micrososft Store for Education](https://businessstore.microsoft.com)
+1. Sign in to [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkId=691845) or [Micrososft Store for Education](https://businessstore.microsoft.com).
 2. Click **Manage**, and then choose **Apps & software**.
-3. Click the ellipses for an app, and then choose **View license details**.
+3. Click an app you want to manage. 
+4. On the app page, you'll see the names of people in your organization who have installed the app and are using one of the licenses. From here, you can:
 
-    <!--- ![Image showing Inventory page in Windows Store for Business.](images/wsfb-inventory-viewlicense.png)-->
+    - Assign the app to other people in your organization.
+    - Reclaim app licenses.
+    - View app details.
+    - Add the app to your private store, if it is not in the private store.
 
-    You'll see the names of people in your organization who have installed the app and are using one of the licenses.
+You can assign the app to more people in your organization, or reclaim licenses.
 
-    <!--- ![Image showing assigned licenses for an app.](images/wsfb-licensedetails.png)-->
+**To assign an app to more people**
 
-    On **Assigned licenses**, you can do several things:
+- On the app page, click **Assign users**, type the email address for the person that you're assigning the app to, and click **Assign**.
 
-    -   Assign the app to other people in your organization.
+Micrososft Store updates the list of assigned licenses.
 
-    -   Reclaim app licenses.
+**To reclaim licenses**
 
-    -   View app details.
+- On the app page, choose the person you want to reclaim the license from, click the ellipses, and then click **Reclaim licenses**.
 
-    -   Add the app to your private store, if it is not in the private store.
-
-    You can assign the app to more people in your organization, or reclaim licenses.
-
-    **To assign an app to more people**
-
-    -   Click **Assign to people**, type the email address for the employee that you're assigning the app to, and click **Assign**.
-
-        ![Image showing Assign to people dialog for assigning app licenses to people in your organization.](images/wsfb-licenseassign.png)
-
-        Store for Business updates the list of assigned licenses.
-
-    **To reclaim licenses**
-
-    -   Choose the person you want to reclaim the license from, click **Reclaim licenses**, and then click **Reclaim licenses**.
-
-        ![Image showing Assign to people dialog for reclaiming app licenses from people in your organization.](images/wsfb-licensereclaim.png)
-
-        Store for Business updates the list of assigned licenses.
+Microsoft Store updates the list of assigned licenses.
 
 ## Purchase additional licenses
 You can purchase additional licenses for apps in your Inventory. 
