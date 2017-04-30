@@ -20,9 +20,6 @@ localizationpriority: high
 
 Microsoft Store for Business and Education has thousands of apps from many different categories.
 
-## <a href="" id="apps"></a>
-
-
 These app types are supported in Microsoft Store for Business and Education:
 
 -   Universal Windows apps for Windows 10
@@ -59,7 +56,7 @@ If an employee makes an in-app purchase, they'll make it with their personal Mic
 Microsoft Store supports two options to license apps: online and offline.
 
 ### Online licensing
- Online licensing is the default licensing model and is similar to the Windows Store. Online licensed apps require customers and devices to connect to the Microsoft Store service to acquire an app and its license. License management is enforced based on the user’s Azure AD identity and maintained by Microsoft Store as well as the management tool. By default app updates are handled by Windows Update.
+Online licensing is the default licensing model and is similar to the Windows Store. Online licensed apps require customers and devices to connect to the Microsoft Store service to acquire an app and its license. License management is enforced based on the user’s Azure AD identity and maintained by Microsoft Store as well as the management tool. By default app updates are handled by Windows Update.
 
 Distribution options for online-licensed apps include the ability to:
 
