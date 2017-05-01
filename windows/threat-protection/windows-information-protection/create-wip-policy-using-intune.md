@@ -41,6 +41,9 @@ After you’ve set up Intune for your organization, you must create a WIP-specif
 
         ![Microsoft Intune management console: Create your new policy in the Add a policy blade](images/wip-azure-portal-add-policy.png)
 
+        >[!Important]
+        >Choosing **With enrollment** only applies for organizations using MDM. If you're using MAM, you must use these instructions, [Create and deploy Windows Information Protection (WIP) app protection policy with Intune](https://docs.microsoft.com/en-us/intune/deploy-use/create-windows-information-protection-policy-with-intune), instead.
+
 3.  Click **Create**.
     
     The policy is created and appears in the table on the **App Policy** screen.
