@@ -36,7 +36,7 @@ If you deployed Skype for Business Cloud PBX with one of the hybrid voice option
 5.	After your user is created in Skype for Business Online, enable it for Hybrid Voice in Skype for Business Remote PowerShell by running the following cmdlet:
 
     ```
-    Set-csuser surfacehub2@adatum.biz EnterpriseVoiceEnabled $true -HostedVocieMail $true -onpremlineuri tel:+15005000102
+    Set-csuser surfacehub2@adatum.biz EnterpriseVoiceEnabled $true -HostedVoiceMail $true -onpremlineuri tel:+15005000102
     ```
     
 6.	Validate Hybrid Voice call flow by placing test calls.
