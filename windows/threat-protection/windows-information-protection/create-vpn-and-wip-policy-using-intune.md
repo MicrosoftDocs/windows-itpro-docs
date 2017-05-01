@@ -1,5 +1,5 @@
 ---
-title: Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Azure Intune (Windows 10)
+title: Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune (Windows 10)
 description: After you've created and deployed your Windows Information Protection (WIP) policy, you can use Microsoft Intune to associate and deploy your Virtual Private Network (VPN) policy, linking it to your WIP policy.
 ms.assetid: d0eaba4f-6d7d-4ae4-8044-64680a40cf6b
 keywords: WIP, Enterprise Data Protection
@@ -11,22 +11,22 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Azure Intune
+# Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune
 **Applies to:**
 
 -   Windows 10, version 1607 and later
 -   Windows 10 Mobile, version 1607 and later (except Microsoft Azure Rights Management, which is only available on the desktop)
 
-After you've created and deployed your Windows Information Protection (WIP) policy, you can use Microsoft Azure Intune to associate and deploy your Virtual Private Network (VPN) policy, linking it to your WIP policy.
+After you've created and deployed your Windows Information Protection (WIP) policy, you can use Microsoft Intune to associate and deploy your Virtual Private Network (VPN) policy, linking it to your WIP policy.
  
-## Associate your WIP policy to your VPN policy by using Microsoft Azure Intune
+## Associate your WIP policy to your VPN policy by using Microsoft Intune
 Follow these steps to associate your WIP policy with your organization's existing VPN policy.
 
 **To associate your policies**
 
 1. Create your VPN profile. For info about how to do this, see [How to configure VPN settings in Microsoft Intune](https://docs.microsoft.com/en-us/intune-azure/configure-devices/how-to-configure-vpn-settings) and [How to create custom VPN profiles in Microsoft Intune](https://docs.microsoft.com/en-us/intune-azure/configure-devices/create-custom-vpn-profiles#create-a-custom-configuration).
 
-2. Open the Microsoft Azure Intune mobile application management console, click **Device configuration**, and then click **Create Profile**.
+2. Open the Microsoft Intune mobile application management console, click **Device configuration**, and then click **Create Profile**.
 
     ![Microsoft Azure Intune, Create a new policy using the the Azure portal](images/wip-azure-vpn-device-policy.png)
 

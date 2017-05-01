@@ -87,7 +87,7 @@ For more information about how to deploy MSI packages see [Create and deploy an 
 
 >[!NOTE]
 >When drivers are installed through Windows Update or the MSI package, registry keys are added that indicate the version of firmware installed on the Surface Dock and contained within the Surface Dock driver. These registry keys can be found in:
-> **HLKM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\SurfaceDockFwUpdate\\Parameters**
+> **HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\SurfaceDockFwUpdate\\Parameters**
 
 Firmware status is displayed for both the main chipset (displayed as **Component10**) and the DisplayPort chipset (displayed as **Component20**). For each chipset there are four keys, where *xx* is **10** or **20** corresponding to each chipset:
 
