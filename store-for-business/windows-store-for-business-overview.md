@@ -1,6 +1,6 @@
 ---
-title: Windows Store for Business and Windows Store for Education overview (Windows 10)
-description: With the new Windows Store for Business, organizations can make volume purchases of Windows apps.
+title: Microsoft Store for Business and Microsoft Store for Education overview (Windows 10)
+description: With Microsoft Store for Business and Microsoft Store for Education, organizations and schools can make volume purchases of Windows apps.
 ms.assetid: 9DA71F6B-654D-4121-9A40-D473CC654A1C
 ms.prod: w10
 ms.pagetype: store, mobile
@@ -10,7 +10,7 @@ author: TrudyHa
 localizationpriority: high
 ---
 
-# Windows Store for Business and Windows Store for Education overview
+# Microsoft Store for Business and Microsoft Store for Education overview
 
 **Applies to**
 
@@ -20,7 +20,7 @@ localizationpriority: high
 Designed for organizations, Microsoft Store for Business and Microsoft Store for Education gives IT decision makers and administrators in businesses or schools a flexible way to find, acquire, manage, and distribute free and paid apps in select markets to Windows 10 devices in volume. IT administrators can manage Windows Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. You can choose the best distribution method for your organization: directly assign apps to individuals and teams, publish apps to private pages in Windows Store, or connect with management solutions for more options. 
 
 ## Features
-Organizations of any size can benefit from using the Store for Business:
+Organizations of any size can benefit from using the Microsoft Store:
 
 - **Scales to fit the size of your business** - For smaller businesses, with Azure AD accounts or Office 365 accounts and Windows 10 devices, you can quickly have an end-to-end process for acquiring and distributing content using the Store for Business. For larger businesses, all the capabilities of the Store for Business are available to you, or you can integrate the Store for Business with management tools, for greater control over access to apps and app updates. You can use existing work or school accounts.
 - **Bulk app acquisition** - Acquire apps in volume from the Store for Business.

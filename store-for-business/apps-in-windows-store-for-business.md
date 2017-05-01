@@ -10,7 +10,7 @@ author: TrudyHa
 localizationpriority: high
 ---
 
-# Apps in Microsoft Store for Business
+# Apps in Microsoft Store for Business and Education
 
 
 **Applies to**
@@ -22,9 +22,8 @@ Microsoft Store for Business and Education has thousands of apps from many diffe
 
 These app types are supported in Microsoft Store for Business and Education:
 
--   Universal Windows apps for Windows 10
-
--   Universal Windows apps, by device: phone, Surface Hub, IoT, HoloLens
+- Universal Windows apps for Windows 10
+- Universal Windows apps, by device: phone, Surface Hub, IoT, HoloLens
 
 Apps in your inventory will have at least one of these supported platforms listed for the app:
 

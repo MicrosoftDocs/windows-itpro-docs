@@ -9,7 +9,7 @@ author: TrudyHa
 localizationpriority: high
 ---
 
-# Manage app orders in Microsoft Store for Business or Education
+# Manage app orders in Microsoft Store for Business and Education
 
 After you've acquired apps, you can review order information and invoices on **Order history**. On this page, you can view invoices, and request refunds. 
 

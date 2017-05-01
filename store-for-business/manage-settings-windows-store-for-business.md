@@ -10,7 +10,7 @@ author: TrudyHa
 localizationpriority: high
 ---
 
-# Manage settings for the Microsoft Store for Business and Microsoft Store for Education
+# Manage settings for the Microsoft Store for Business and Education
 
 
 **Applies to**

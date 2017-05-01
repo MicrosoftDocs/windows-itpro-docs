@@ -9,8 +9,8 @@ author: TrudyHa
 localizationpriority: high
 ---
 
-# Acquire apps in Windows Store for Business
-As an admin, you can acquire apps from the Microsoft Store for Business for your employees. Some apps are free, and some have a price. For info on app types that are supported, see [Apps in the Microsoft Store for Business](apps-in-windows-store-for-business.md).
+# Acquire apps in Microsoft Store for Business and Education
+As an admin, you can acquire apps from the Microsoft Store for Business and Education for your employees. Some apps are free, and some have a price. For info on app types that are supported, see [Apps in the Microsoft Store for Business](apps-in-windows-store-for-business.md).
 
 ## App licensing model
 The Microsoft Store supports two options to license apps: online and offline. **Online** licensing is the default licensing model. Online licensed apps require users and devices to connect to the Microsoft Store services to acquire an app and its license. **Offline** licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Admins control whether or not offline apps are available in Microsoft Store with an offline app visibility setting. For more information, see [offline license visibility](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings#offline-licensing). 
