@@ -32,6 +32,8 @@ Some of the components in this table might also need additional system resources
 |Hard drive space |At least 8 GB of free space, formatted using the NTFS file system for better security |
 |Active Directory (AD) |Devices must be domain-joined |
 |SQL Server |Microsoft SQL Server Enterprise Edition 2012 or later |
+|Visual Studio |Visual Studio 2015 or later |
+|Node.js® package manager |npm Developer version or higher |
 |Additional server infrastructure |Internet Information Service (IIS) 6.0 or later |
 
 ## Using the Enterprise Mode Site List Portal
@@ -40,7 +42,6 @@ The following topics give you more information about the things that you can do 
 |Topic |Description |
 |------|------------|
 |[Set up the Enterprise Mode Site List Portal](set-up-enterprise-mode-site-list-portal.md) |Details about what needs to be set up before you can use the Enterprise Mode Site List portal in your organization. |
-
 
 
 ## Related topics

@@ -19,47 +19,35 @@ ms.sitesec: library
 -   Windows Server 2012 R2
 -   Windows Server 2008 R2 with Service Pack 1 (SP1)
 
-The [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal) is an open-source web tool on GitHub that allows you to manage your Enterprise Mode Site List, hosted by the app, with multiple users. The portal is designed to use IIS and a SQL Server backend, leveraging Active Directory (AD) for employee management. Updates to your site list are made by submitting new change requests, which are then approved by a designated group of people, put into a pre-production environment for testing, and then deployed immediately, or scheduled for deployment later.
+The Enterprise Mode Site List Portal is an open-source web tool on GitHub that allows you to manage your Enterprise Mode Site List, hosted by the app, with multiple users. The portal is designed to use IIS and a SQL Server backend, leveraging Active Directory (AD) for employee management. Updates to your site list are made by submitting new change requests, which are then approved by a designated group of people, put into a pre-production environment for testing, and then deployed immediately, or scheduled for deployment later.
 
-Before you can begin using the Enterprise Mode Site List Portal, you must complete these steps:
+Before you can begin using the Enterprise Mode Site List Portal, you must set up your environment.
 
-1. Download the Enterprise Mode Site List Portal source code(#download-the-enterprise-mode-site-list-portal-source-code).
-
-2. Create the Application Pool and website, by using Internet Information Service (IIS).
-
-3. Create and prepare the database.
-
-4. Map the **ApplicationPoolIdentity** to a SQL Server Login.
-
-5. Restart the Application Pool and website.
-
-6. Register the first user.
-
-7. Configure the SMTP server and port for email notification.
-
-8. Register the scheduler service.
-
-## Step 1 - Download the Enterprise Mode Site List Portal source code
-You must download the deployment folder from the Enterprise Mode Site List Portal source code to your web server. <!-- There is no deployment folder in the source code -->
+## Step 1 - Copying the deployment folder to the web server
+You must download the deployment folder (**EMIEWebPortal/**), which includes all of the source code for the website, from the [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal) site to your web server.
 
 **To download the source code**
-
 1. Download the deployment folder from the [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal) source code to your web server.
 
-2. Install the Node.js® package manager, [npm](https://www.npmjs.com/). <!-- Why? What is this used for? We should also add this to the required software if we're going to include it here -->
+2. Install the Node.js® package manager, [npm](https://www.npmjs.com/).
+
+    >[!Note]   
+    >You need to install the npm package manager to replace all the third-party libraries we removed to make the Enterprise Mode Site List Portal open-source.
 
 3. Open File Explorer and then open the **EMIEWebPortal/** folder.
 
-4.	Press and hold **Shift**, right-click the window, then click **Open command window** here. <!-- I'm only seeing an option to open in PowerShell, is that what you mean? Or am I missing the right option? -->
+4. Press and hold **Shift**, right-click the window, then click **Open PowerShell window here**.
 
-5.	Type _npm i_ into the command prompt, then press **Enter**. <!-- Why? What does this do? -->
+5. Type _npm i_ into the command prompt, then press **Enter**.
 
-6.	Go back up a directory, open the solution file **EMIEWebPortal.sln** in a development tool such as Visual Studio, and then build the entire solution. <!-- We need to include Visual Studio in the requirements. -->
+   Installs the npm package manager and bulk adds all the third-party libraries back into your codebase.
 
-7.	Copy the contents of the **EMIEWebPortal/** folder to the deployment directory of your website. <!-- What website? We haven't said anything about it yet...and there are instructions for creating the website after this step  -->
+6. Go back up a directory, open the solution file **EMIEWebPortal.sln** in Visual Studio, and then build the entire solution.
+
+7. Copy the contents of the **EMIEWebPortal/** folder to a dedicated folder on your file system. In a later step, you'll designate this folder as your website in the IIS Manager.
 
 ## Step 2 - Create the Application Pool and website, by using IIS
-Next, you must create a new Application Pool and the website by using the IIS Manager.
+Create a new Application Pool and the website, by using the IIS Manager.
 
 **To create a new Application Pool**
 1. In IIS Manager, expand your local computer, right-click **Application Pools**, then click **Add Application Pool**.
@@ -107,18 +95,34 @@ Next, you must create a new Application Pool and the website by using the IIS Ma
 
 7. Clear the **Start Website immediately** check box, and then click **OK**.
 
-8. In IIS Manager, expand your local computer, and then click your new website. For example, _EMIEWebApp_.
+8. In IIS Manager, expand your local computer, and then double-click your new website. For example, _EMIEWebApp_.
 
-9. 
+   The **_EMIEWebApp_ Home** pane appears.
 
+9. Double-click the **Authentication** icon, right-click on **Windows Authentication**, and then click **Enable**. 
 
+    >[!Note]
+    >You must also make sure that **Anonymous Authentication** is marked as **Enabled**.
 
+10. Return to the **_EMIEWebApp_ Home** pane, and double-click the **Connection Strings** icon.
 
-In IIS Manager, expand the local computer, then select the newly created Website, e.g. EMIEWebApp.
-From the Features View, double-click on the Authentication icon in the IIS section.
-Enable Windows Authentication. Anonymous Authentication should be enabled by default.
-Return to the Features View, then double-click on the Connection Strings icon in the ASP.NET section.
-Open the LOBMergedEntities Connection String for editing.
-Enter the name of your local computer where it says data source=.
-Enter the name of your database where it says initial catalog=. The next section will describe how to create the database.
+11. Open the **LOBMergedEntities Connection String** to edit: 
+
+    - **Data source.** Type the name of your local computer.
+
+    - **Initial catalog.** The name of your database.
+
+        >[!Note]
+        >Step 3 of this topic provides the steps to create your database.
+
+## Step 3 - Create and prepare the database
+
+Launch SQL Server Management Studio.
+In Object Explorer, connect to an instance of the SQL Server Database Engine, e.g. ..
+Expand the instance, right-click on Databases, then select New Database.
+Enter a database name, e.g. EMIEDatabase.
+Accept all the default values and click OK.
+Open the 1_CreateEMIETables.sql query located in the DatabaseScripts/Create DB Tables/ folder.
+Replace the database name placeholder with the name you entered in step 4.
+Execute the query.
 
