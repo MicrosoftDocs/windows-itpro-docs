@@ -474,167 +474,40 @@ Now that you've bought the apps, use Intune for Education to specify the group t
 
   **Figure 30** - Edit apps to assign them to users
 
-  ![Edit apps to assign them to users](images/i4e_groups_allusers_apps_edit.png)
+  ![Edit apps to assign them to users](images/i4e_groups_allusers_appspage_editapps.png)
 
-4. Select the apps you want to deploy to the group. A blue checkmark will appear next to the apps you select. 
+4. Select the apps to deploy to the group. A blue checkmark will appear next to the apps you select. 
 
-  **Figure 31** - Select the apps you want to deploy to the group
+  **Figure 31** - Select the apps to deploy to the group
 
-  ![Select the apps you want to deploy to the group](images/i4e_groups_allusers_apps_appstodeploy.png)
+  ![Select the apps to deploy to the group](images/i4e_groups_allusers_selectappstodeploy.png)
 
 5. Once you're done, click **Save** at the bottom of the page to deploy the selected apps to the group.
-6. You'll be notified that app assignments are being updated. The **All Users** groups page will now include the apps you selected. 
+6. You'll be notified that app assignments are being updated. The updated **All Users** groups page now include the apps you selected. 
 
   **Figure 32** - Updated list of assigned apps
 
-  ![Updated list of assigned apps](images/i4e_groups_allusers_apps_updatedlist.png)
+  ![Updated list of assigned apps](images/i4e_groups_allusers_updatedappslist.png)
 
-You're now done assigning apps to all users in your tenant. It's time to set up your Windows device(s) and check that your cloud infrastructure is correctly set up and your apps are being pushed to your devices from the cloud.
+You're now done assigning apps to all users in your tenant. It's time to set up your Windows 10 device(s) and check that your cloud infrastructure is correctly set up and your apps are being pushed to your devices from the cloud.
 
 ## 5. Set up your Windows devices
 
 ### 5.1 Set up devices using Set up School PCs or Windows OOBE
-We recommend using the latest build of Windows 10 Creators Update (version 1703) on your Windows education devices. If you haven't done so already, [download and install the latest Windows 10 Creators Update image](#download-and-install-the-latest-windows-10-creators-update-image).
-
-To set up new Windows devices and enroll them to your education tenant, choose from one of these options:
-- **Option 1: [Use the Set up School PCs app](#usesetupschoolpcs)** - You can use the app to create a setup file that you can use to set up your Windows 10 devices.
-- **Option 2: [Go through Windows OOBE and join the device to Azure AD](#usewindowsoobandjoinaad)** - You can go through a typical Windows device setup or first-run experience to configure your device.
+We recommend using the latest build of Windows 10, version 1703 on your education devices. To set up new Windows 10 devices and enroll them to your education tenant, choose from one of these options:
+- **Option 1: [Use the Set up School PCs app](#usesetupschoolpcs)** - You can use the app to create a setup file that you can use to quickly set up one or more Windows 10 devices.
+- **Option 2: [Go through Windows OOBE and join the device to Azure AD](#usewindowsoobandjoinaad)** - You can go through a typical Windows 10 device setup or first-run experience to configure your device.
 
 **<a name="usesetupschoolpcs"></a>Option 1: Set up a device using the Set up School PCs app**
 
-  > [!NOTE]  
-  > The Set up School PCs app is coming soon! Until it's ready, follow the steps in this section to install a setup file (provisioning package) that we created for you. You still have to go through OOBE to join Wi-Fi and Azure AD, but you won't need these steps when the Set up School PCs app is available.
-
-**Prerequisite:** 
-- Copy the latest version of the education provisioning package file from the <a href="https://www.yammer.com/wsscengineering/#/groups/10257877/files" target="_blank">Microsoft Education System TAP Yammer group</a> to a USB key.
-
-1. Boot up a new or reset Windows 10 device.
-2. During Windows setup, at the **Let's start with region** screen, insert the USB key into your Windows device.
-3. When the **You can eject your removable device** message appears on the screen, remove the USB key.
-4. Complete the rest of the Windows device setup experience.
-5. If you don't have a Wi-Fi network configured, make sure you connect the device to the Internet through a wired/Ethernet connection.
-6. On the **Let's get you signed in** screen, enter one of the accounts that you set up for your education tenant.
-7. Complete the rest of device setup and then reboot the device.
-
-> [!NOTE]
-> **The following section on using the Set up School PCs app is preliminary and subject to change. The steps are based on a preliminary build of the app, which is still in development.**
-
-1. Launch the Set up School PCs app.
-
-  **Figure 33** - Launch the Set up School PCs app
-
-  ![Launch the Set up School PCs app](images/suspc_start.png)
-
-2. Click **Start**.
-3. In the **Sign in to Office 365 or Azure Active Directory** page, click **Sign in**. If you don't sign in, you will not be able to configure access for guest sign-in, Take a Test, and Office installation.
-
-  If you opt to sign in:
-
-  1. Choose the account from the list. If you don't see the account, you can add a work or school account to sign in the devices. 
-  2. Click **Next** once you've specified the account.
-  3. If you added an account, you may be asked to provide the user account and password. You will get a notification to allow the app to access your account. This will give Set up School PCs permission to access Store for Business, read hidden memberships, sign you in and read your profile, and more.
-  4. Click **Accept**.
-
-    The account will show up as the account that Set up School PCs will use to connect the school PCs to the cloud.
-
-    **Figure 34** - Verify that the account you selected shows up
-
-    ![Verify that the account you selected shows up](images/suspc_account_signin.png)
-
-  5. Click **Next**.
-  
-4. To allow the student PCs to automatically connect to your school's wireless network, in the **Select the school's wireless network** page:
-  1. Select the school's Wi-Fi network from the list of available wireless networks or manually add a wireless network. 
-  2. Click **Next**.
-
-5. To assign a name to the student PCs, in the **Assign a name to these PCs** page:
-  1. Add a name that Set up School PCs will use as a prefix to identify and easily manage the group of devices, apps, and other settings through your device management client. 
-  
-  For example, if you add *ComputerLab* as the prefix, the device names will be *ComputerLab_random-string-of-numbers-and-letters*. The random string of numbers and letters ensure that all device names are unique.
-
-  2. Click **Next**.
-
-6. If you want to set up the Take a Test app and use it for taking quizzes and high-stakes assessments by some providers like Smarter Balanced, configure the settings in the **Set up Take a Test app** page.
-  1. Enter the assessment URL.
-  2. Check the options whether to allow keyboard text suggestions to appear, allow teachers to monitor online tests, or allow students to print the test so they can take it offline. You can select more none, or one or more of these options.
-
-    If you set up Take a Test, this adds a **Take a Test** button on the student PC's sign-in screen. Windows will also lock down the student PC so that students can't access anything else while taking the test.
-
-    **Figure 35** - Configure the Take a Test app
-
-    ![Configure the Take a Test app](images/suspc_choosesettings_takeatest.png)
-
-  3. Click **Next** or **Skip** depending on whether you want to set up Take a Test.
-
-7. If you want to add Store for Business apps to the student PCs, you can select from the list of recommended apps in the **Add STEM and Makerspace apps to Student PCs** page.
-  1. Select the apps that you want to add. You'll see a checkmark on apps that you select.
-  2. Click **Next**.
-
-    **Figure 36** - Select Store apps to add to student PCs
-
-    ![Select Store apps to add to student PCs](images/suspc_choosesettings_apps.png)
-
-8. To specify other settings for the student PC, in the **Configure student PC settings** page:
-  - Select **Clean student PC** to remove pre-installed apps from the device manufacturer.
-  - Select **Enable local storage** to let students save files to the **Desktop** and **Documents** folder on the student PC. We don't recommend this option if the device will be part of a shared cart or lab.
-  - Select **Make the device 1:1** to optimize the device for use by a single student. Check this option if the device will not be part of a shared cart or lab.
-  - Select **Enable guest sign-in** to allow guests to use student PCs without a school account. For example, if the device will be in a library and you want other users (like visiting students or teachers) to be able to use the device, you can select this option.
-
-    If you check **Enable guest sign-in**, this adds a **Guest** account button in the PC's sign-in screen to allow anyone to use the PC.
-
-  - To change the default lock screen background or to use your school's custom lock screen background, click **Browse** to select a new lock screen background.
-
-    **Figure 37** - Configure student PC settings
-
-    ![Configure student PC settings](images/suspc_choosesettings_settings.png)
-
-9. When you're done configuring the student PC settings, click **Next**.
-
-10. In the **Review your settings** page, check that all the settings you configured appear correctly. 
-  1. If you need to change any of the settings, you can click on the blue links to go back to that page and make your changes.
-
-      **Figure 38** - Review your settings and change them as needed
-
-      ![Review your settings and change them as needed](images/suspc_setupfile_reviewsettings.png)
-
-  2. Click **Next**.
-
-11. In the **Save your settings** page:
-  1. Insert a USB drive to save your settings and create a setup file on the USB drive.
-  2. Set up School PCs will automatically detect the USB drive after it's inserted. Choose the USB drive from the list.
-  3. Click **Save** to save the setup file to the USB drive.
-
-      **Figure 39** - Select the USB drive and save the setup file
-
-      ![Select the USB drive and save the setup file](images/suspc_setupfile_savesettings.png)
-
-  4. When the setup file is ready, you will see the name of the file and you can remove the USB drive.
-
-      **Figure 40** - Setup file is ready
-
-      ![Setup file is ready](images/suspc_ppkgready.png)
-
-  5. Click **Next** if you're done, or click **Save to another USB drive** to save the same setup file to another USB drive.
-
-12. Follow the instructions in the **Get the student PCs ready** page to start setting up the student PCs.
-
-  **Figure 41** - Line up the student PCs and get them ready for setup
-
-  ![Line up the student PCs and get them ready for setup](images/suspc_getpcsready.png)
-
-13. Click **Next**.
-14. In the **Install the setup file on student PCs** page, follow the rest of the instructions for setting up the student PCs.
-
-  Select **Yes, I want to start a new package** if you need to create a new provisioning package. Or, select **No, I'm done**.
-
-  **Figure 42** - Install the setup file on the student PCs
-
-  ![Install the setup file on the student PCs](images/suspc_installsetupfile.png)
+1. Follow the steps in [Use the Set up School PCs app](https://docs.microsoft.com/en-us/education/windows/use-set-up-school-pcs-app) to quickly set up one or more student PCs.
+2. Follow the steps in [5.2 Verify correct device setup](#52-verify-correct-device-setup).
 
 
 **<a name="usewindowsoobandjoinaad"></a>Option 2: Set up a device using Windows OOBE**
-1. If you don't have a Wi-Fi network configured, make sure you connect the device to the Internet through a wired/Ethernet connection.
-2. Go through the Windows device setup experience. On a new or reset device, this starts with the **Let's get you signed in** screen.
+
+1. If you don't have a Wi-Fi network configured, make sure you connect the device to the Internet through a wired or Ethernet connection.
+2. Go through the Windows device setup experience. On a new or reset device, this starts with the **Let's start with region. Is this right?** screen.
 
   **Figure 43** - Let's get you signed in
 
