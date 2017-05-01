@@ -139,6 +139,36 @@ Use the **Restart Now** button on the **Exit** page to exit UEFI settings, as sh
 
 *Figure 8. Click Restart Now to exit Surface UEFI and restart the device*
 
+## Surface UEFI boot screens
+
+When you update Surface device firmware, by using either Windows Update or manual installation, the updates are not applied immediately to the device, but instead during the next reboot cycle. You can find out more about the Surface firmware update process in [Manage Surface driver and firmware updates]{https://docs.microsoft.com/surface/manage-surface-pro-3-firmware-updates}. The progress of the firmware update is displayed on a screen with progress bars of differing colors to indicate the firmware for each component. Each component’s progress bar is shown in Figures 9 through 13.
+
+![Surface UEFI firmware update with blue progress bar](images/manage-surface-uefi-fig9.png "Surface UEFI firmware update with blue progress bar")
+
+*Figure 9. The Surface UEFI firmware update displays a blue progress bar*
+
+![System Embedded Controller firmware with green progress bar](images/manage-surface-uefi-fig10.png "System Embedded Controller firmware with green progress bar")
+
+*Figure 10. The System Embedded Controller firmware update displays a green progress bar*
+
+![SAM Controller firmware update with orange progress bar](images/manage-surface-uefi-fig11.png "SAM Controller firmware update with orange progress bar")
+
+*Figure 11. The SAM Controller firmware update displays an orange progress bar*
+
+![Intel Management Engine firmware with red progress bar](images/manage-surface-uefi-fig12.png "Intel Management Engine firmware with red progress bar")
+
+*Figure 12. The Intel Management Engine firmware update displays a red progress bar*
+
+![Surface touch firmware with gray progress bar](images/manage-surface-uefi-fig13.png "Surface touch firmware with gray progress bar")
+
+*Figure 13. The Surface touch firmware update displays a gray progress bar*
+>[!NOTE]
+>Note: An additional warning message that indicates Secure Boot is disabled is displayed, as shown in Figure 14.
+
+![Surface boot screen that indicates Secure Boot has been disabled](images/manage-surface-uefi-fig14.png "Surface boot screen that indicates Secure Boot has been disabled")
+
+*Figure 14. Surface boot screen that indicates Secure Boot has been disabled in Surface UEFI settings*
+
 ## Related topics
 
 [Advanced UEFI security features for Surface Pro 3](advanced-uefi-security-features-for-surface-pro-3.md)
