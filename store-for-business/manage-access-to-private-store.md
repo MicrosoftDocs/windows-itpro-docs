@@ -1,6 +1,6 @@
 ---
 title: Manage access to private store (Windows 10)
-description: You can manage access to your private store in Windows Store for Business.
+description: You can manage access to your private store in Microsoft Store for Business and Microsoft Store for Education.
 ms.assetid: 4E00109C-2782-474D-98C0-02A05BE613A5
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -17,13 +17,13 @@ author: TrudyHa
 -   Windows 10
 -   Windows 10 Mobile
 
-You can manage access to your private store in Windows Store for Business.
+You can manage access to your private store in Microsoft Store for Business and Microsoft Store for Education.
 
-Organizations might want control the set of apps that are available to their employees, and not show the full set of applications that are in the Windows Store. Using the private store with the Store for Business, an administrator can curate the set of apps that are available to their employees.
+You can control the set of apps that are available to your employees and students, and not show the full set of applications that are in the Windows Store. Using the private store with the Micrososft Store for Business and Eduction, admins can curate the set of apps that are available.
 
 The private store is a feature in Store for Business that organizations receive during the sign up process. When admins add apps to the private store, all employees in the organization can view and download the apps. Your private store is available as a tab in the Windows Store, and is usually named for your company or organization. Only apps with online licenses can be added to the private store. Your private store looks something like this:
 
-![Image showing the Windows Store app, with a private store tab highlighted.](images/wsfb-wsappprivatestore.png)
+<!--- ![Image showing the Windows Store app, with a private store tab highlighted.](images/wsfb-wsappprivatestore.png) -->
 
 Organizations can use either an MDM policy, or Group Policy to show only their private store in Windows Store.  
 
@@ -41,7 +41,7 @@ For more information on configuring an MDM provider, see [Configure an MDM provi
 
 ## Show private store only using Group Policy 
 
-If you're using Windows Store for Business and you want employees to only see apps you're managing in your private store, you can use Group Policy to show only the private store. Windows Store app will still be available, but employees can't view or purchase apps. Employees can view and install apps that the admin has added to your organization's private store.  
+If you're using Microsoft Store and you want employees to only see apps you're managing in your private store, you can use Group Policy to show only the private store. Windows Store app will still be available, but employees can't view or purchase apps. Employees can view and install apps that the admin has added to your organization's private store.  
 
 **Only display the private store within the Windows Store app** group policy is supported on the following Windows 10 editions:
 - Enterprise
@@ -63,9 +63,7 @@ You can also prevent employees from using the Windows Store. For more informatio
 
 ## Related topics
 
-
 [Distribute apps using your private store](distribute-apps-from-your-private-store.md)
-
 [Configure access to Windows Store](/windows/configuration/stop-employees-from-using-the-windows-store)
 
  
