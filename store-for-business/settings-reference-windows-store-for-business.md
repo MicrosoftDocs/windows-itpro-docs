@@ -18,7 +18,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-The Microsoft Store for Business has a group of settings that admins use to manage the store.
+The Microsoft Store for Business and Education has a group of settings that admins use to manage the store.
 
 | Setting              | Description  | Location under **Manage** |
 | -------              | -----------  | ------------------------------ |

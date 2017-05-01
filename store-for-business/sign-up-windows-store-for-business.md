@@ -27,7 +27,7 @@ Before signing up for Microsoft Store, make sure you're the global administrator
 
 **To sign up for Microsoft Store**
 
-1.  Go to [https://www.microsoft.com/business-store](https://go.microsoft.com/fwlink/p/?LinkId=691845), or [https://www.microsoft.com/education-store](https://go.microsoft.com/fwlink/p/?LinkId=691845) and click **Sign up**.
+1.  Go to [https://www.microsoft.com/business-store](https://www.microsoft.com/business-store), or [https://www.microsoft.com/education-store](https://www.microsoft.com/education-store) and click **Sign up**.
 
     -   If you start the Microsoft Store sign-up process, and don't have an Azure AD directory for your organization, we'll help you create one. For more info, see [Sign up for Azure AD accounts](#o365-welcome).
 
@@ -83,13 +83,12 @@ Before signing up for Microsoft Store, make sure you're the global administrator
 
     ![Image showing welcome message for Microsoft Store for business.](images/wsfb-firstrun.png)
 
-### Next steps
+## Next steps
 
 After signing up for Microsoft Store for Business or Microsoft Store for Education, you can:
 
--   **Add users to your Azure AD directory**. If you created your Azure AD directory during sign up, additional user accounts are required for employees to install apps you assign to them, or to browse the private store in Store app. For more information, see [Manage user accounts in Microsoft Store for Business and Education](manage-users-and-groups-windows-store-for-business.md).
-
--   **Assign roles to employees**. For more information, see [Roles and permissions in the Microsoft Store for Business and Education](roles-and-permissions-windows-store-for-business.md).
+- **Add users to your Azure AD directory**. If you created your Azure AD directory during sign up, additional user accounts are required for employees to install apps you assign to them, or to browse the private store in Store app. For more information, see [Manage user accounts in Microsoft Store for Business and Education](manage-users-and-groups-windows-store-for-business.md).
+- **Assign roles to employees**. For more information, see [Roles and permissions in the Microsoft Store for Business and Education](roles-and-permissions-windows-store-for-business.md).
 
  
 

@@ -59,12 +59,9 @@ There are several items to download or create for offline-licensed apps. The app
 <a href="" id="download-offline-licensed-app"></a>
 **To download an offline-licensed app**
 
-1.  Sign in to the [Store for Business](http://businessstore.microsoft.com/).
-
-2.  Click **Manage**, and then choose **Inventory**.
-
-3.  Click **Refine**, and then choose **Offline**.
-
+1.  Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com/) or [Microsoft Store for Education](https://educationstore.microsoft.com).
+2.  Click **Manage**, and then choose **Apps & software**.
+3.  Refine results by **License type** to show apps with offline licenses.
 4.  Find the app you want to download, click the ellipses under **Actions**, and then choose **Download for offline use**.
     - **To download app metadata**: Choose the language for the app metadata, and then click **Download**. Save the downloaded app metadata. This is optional. 
     - **To download app package**: Click to expand the package details information, choose the Platform and Architecture combination that you need for your organization, and then click **Download**. Save the downloaded app package. This is required. 
