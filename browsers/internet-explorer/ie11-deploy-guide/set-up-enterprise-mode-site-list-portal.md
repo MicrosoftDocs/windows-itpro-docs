@@ -116,13 +116,19 @@ Create a new Application Pool and the website, by using the IIS Manager.
         >Step 3 of this topic provides the steps to create your database.
 
 ## Step 3 - Create and prepare the database
+1. Start SQL Server Management Studio.
 
-Launch SQL Server Management Studio.
-In Object Explorer, connect to an instance of the SQL Server Database Engine, e.g. ..
-Expand the instance, right-click on Databases, then select New Database.
-Enter a database name, e.g. EMIEDatabase.
-Accept all the default values and click OK.
-Open the 1_CreateEMIETables.sql query located in the DatabaseScripts/Create DB Tables/ folder.
-Replace the database name placeholder with the name you entered in step 4.
-Execute the query.
+2. Open Object Explorer and then connect to an instance fo the SQL Server Database Engine.
+
+3. Expand the instance, right-click on Databases, and then click New Database.
+
+4. Type a database name. For example, EMIEDatabase.
+
+5. Accept all of the default values, and then click **OK**.
+
+6. Open the DatabaseScripts/Create DB Tables/1_CreateEMIETables.sql query.
+
+7. Replace the database name placeholder with your database name, created in Step 4.
+
+8. Run the query.
 
