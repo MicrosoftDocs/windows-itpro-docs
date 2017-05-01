@@ -204,6 +204,14 @@ For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 
 3. On the **Network Retrieval** tab, select the **Define these policy settings** check box.
 4. Clear the **Automatically update certificates in the Microsoft Root Certificate Program (recommended)** check box, and then click **OK**.
 
+    -and-
+
+- Apply the Privacy/LetAppsAccessEmail MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessemail), where:
+
+        -   **0**. User in control
+        -   **1**. Force allow
+        -   **2**. Force deny
+
 On Windows Server 2016 Nano Server:
 
 - Create the registry path **HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\AuthRoot** and then add a REG\_DWORD registry setting, called **DisableRootAutoUpdate**, with a value of 1.
@@ -422,7 +430,11 @@ You can also use registry entries to set these Group Policies.
 | Turn off the flip ahead with page prediction feature | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\FlipAhead!Enabled <br /> REG_DWORD: 0|
 | Turn off background synchronization for feeds and Web Slices | HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Feeds!BackgroundSyncStatus <br/> REG_DWORD:0 |
 
-To turn off the home page, enable the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Disable changing home page settings**
+To turn off the home page, enable the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Disable changing home page settings**, and set it to **about:blank**.
+
+To configure the First Run Wizard, enable the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Prevent running First Run wizard**, and set it to **Go directly to home page**.
+
+To configure the behavior for a new tab, enable the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Internet Explorer** > **Specify default behavior for a new tab**, and set it to **about:blank**.
 
 ### <a href="" id="bkmk-ie-activex"></a>8.1 ActiveX control blocking
 
@@ -479,10 +491,13 @@ To prevent communication to the Microsoft Account cloud authentication service. 
 -   Apply the Group Policy: **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt; **Security Options** &gt; **Accounts: Block Microsoft Accounts** and set it to **Users can't add Microsoft accounts**.
 
     -or-
+
 - Create a REG\_DWORD registry setting called **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System!NoConnectedUser**, with a value of 3.
 To disable the Microsoft Account Sign-In Assistant:
 
 - Apply the Accounts/AllowMicrosoftAccountSignInAssistant MDM policy from the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) where 0 is turned off and 1 is turned on.
+
+- Change the Start REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\wlidsvc** to a value of **4**.
 
 
 ### <a href="" id="bkmk-edge"></a>12. Microsoft Edge
@@ -521,7 +536,7 @@ Alternatively, you can configure the Microsoft Group Policies using the followin
 
 | Policy | Registry path |
 | - | - |
-| Configure Autofill  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!Use FormSuggest <br/ > REG_SZ: **about:blank** |
+| Configure Autofill  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!Use FormSuggest <br/ > REG_SZ: **no** |
 | Configure Do Not Track   | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!DoNotTrack<br/> REG_DWORD: 1 |
 | Configure Password Manager | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main!FormSuggest Passwords<br /> REG_SZ: **no** |
 | Configure search suggestions in Address bar | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes!ShowSearchSuggestionsGlobal <br /> REG_DWORD: 0|
@@ -1677,7 +1692,7 @@ If you're running Windows 10, version 1607 or later, you only need to enable the
 
     -or-
 
-    -   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableWindowsSpotlightFeatures**, with a value of 1 (one).
+-   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableWindowsSpotlightFeatures**, with a value of 1 (one).
 
 If you're not running Windows 10, version 1607 or later, you can use the other options in this section.
 
@@ -1705,7 +1720,7 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
         > This will only take effect if the policy is applied before the first logon. If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device, you can apply this policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Do not display the lock screen**. Alternatively, you can create a new REG\_SZ registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization!LockScreenImage**, with a value of **C:\\windows\\web\\screen\\lockscreen.jpg** and create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization!LockScreenOverlaysDisabled**, with a value of 1 (one).
             
 
-        -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Do not show Windows tips**.
+    -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Do not show Windows tips**.
 
     -or-
 
@@ -1713,9 +1728,9 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
 
     -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Turn off Microsoft consumer experiences**.
 
-    -or-
+        -or-
 
-    -   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableWindowsConsumerFeatures**, with a value of 1 (one).
+        -   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableWindowsConsumerFeatures**, with a value of 1 (one).
 
 For more info, see [Windows Spotlight on the lock screen](windows-spotlight.md).
 
