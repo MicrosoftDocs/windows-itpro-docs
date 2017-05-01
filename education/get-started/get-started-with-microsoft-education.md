@@ -65,15 +65,29 @@ Complete these tasks before you start the walkthrough:
   > [!NOTE] 
   > If you need to get education-verified, it may take up to two weeks for the verification process to be completed.
 
-## School setup
+## Setup options
  To make sure you have a successful experience with deploying and managing a full cloud IT solution with Microsoft Education, select the scenario that best describes your school or how you'd like to get started.
 
-| [School uses Office 365, try out Intune for Education now](#schooluseso365tryi4e) | [Try out Microsoft Education in trial environment](#noo365trialenv) | [Try out Microsoft Education in production environment](#noo365prodenv) |
+
+| [Get started with Microsoft Education in production environment](#noo365prodenv) | [Try out Microsoft Education in trial environment](#noo365trialenv) | [School uses Office 365, try out Intune for Education now](#schooluseso365tryi4e) | 
 | ----------------------------------------- | ------------------------------------------------ | ---------------------------------------------- |
-| * My school uses Office 365 for Education | * My school doesn't use Office 365 for Education yet | * My school doesn't use Office 365 for Education yet |
-| * My school tenant is education-verified  | * My school is not education-verified            | * My school is not education verified          |
-| * I would like to apply the Microsoft Education trial code to a production environment | * I would like to apply the Microsoft Education trial code to a trial environment | * I would like to apply the Microsoft Education trial to a production environment |
- 
+| * My school doesn't use Office 365 for Education | * My school doesn't use Office 365 for Education | * My school uses Office 365 for Education |
+| * My school is not an education-verified tenant | * My school is not an education-verified tenant | * My school is an education-verified tenant |
+| * I would like to get started with Microsoft Education in a production environment | * I would like to try out Microsoft Education in a trial environment | * I would like to apply the Intune for Education trial code to my school's production environment |
+| * Hardest, need to start from scratch | * Simplest, but may take longer to start | * Fastest, Office 365 and SDS already set up |
+
+
+### <a name="noo365prodenv"></a>Get started with Microsoft Education in a production environment
+Trying out Microsoft Education in a production environment means you'll be using real school data as you evaluate the features and tools. This requires more time to get fully set up and going. 
+
+To get started with Microsoft Education in a production environment:
+
+* Go to https://aka.ms/sdssignup and fill out the form to sign up for School Data Sync and receive a free, one-on-one support from Microsoft.
+
+  A team will contact you within 3 business days to help you deploy School Data Sync in a production environment. 
+
+If you want a quicker way to evaluate Microsoft Education, you can [use a trial environment instead](#noo365trialenv).
+
 ### <a name="noo365trialenv"></a> Try out Microsoft Education in a trial environment
 Once you get an Office 365 education-verified tenant, trying out Microsoft Education in a trial environment is an easy way to evaluate all the features and tools. Here, you'll use promo codes and sample files as you follow the walkthrough. 
 
@@ -86,23 +100,6 @@ To get started with Microsoft Education in a trial environment, follow these ste
 2. Click https://aka.ms/getsdspromocode to apply a School Data Sync trial promo code to your Office 365 education tenant.
 3. Follow the instructions in [Use School Data Sync to import student data](#2-use-school-data-sync-to-import-student-data).
 4. Follow the instructions in [Try out Intune for Education](#schooluseso365tryi4e).
-
-### <a name="noo365prodenv"></a> Try out Microsoft Education in a production environment
-Trying out Microsoft Education in a production environment means you'll be using real school data as you evaluate the features and tools. This requires more time to get fully set up and going. If you want a quicker way to evaluate Microsoft Education, you can [use a trial environment instead](#noo365trialenv).
-
-To get started with Microsoft Education in a production environment, follow these steps.
-
-1. [Set up a new Office 365 for Education tenant](#1-set-up-a-new-office-365-for-education-tenant). 
-
-  Wait for your tenant to be education-verified before proceeding with the next step. Verification can take up to two weeks.
-
-2. Go to https://aka.ms/sdssignup and fill out the form to sign up for School Data Sync and receive a free, one-on-one support from Microsoft.
-
-  A team will contact you within 3 business days to help you deploy School Data Sync in a production environment. 
-
-3. While getting your school data set up, you can skip ahead and follow the instructions in [Try out Intune for Education](#schooluseso365tryi4e).
-
-  Note that you may not have any student data to work with when following the walkthrough if you're still working to deploy SDS. In this case, you can use your global admin account to try out the scenarios in the walkthrough. Anything you provision to all the devices or all the users will be visible when you log in to a device using your global admin credentials.
 
 ### <a name="schooluseso365tryi4e"></a> Try out Intune for Education
 Already have an Office 365 for Education verified tenant? Just sign in with your global admin credentials to apply the Intune for Education preview trial code to your tenant and follow the rest of the walkthrough.
