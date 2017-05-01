@@ -139,23 +139,20 @@ For info on how to distribute **Minecraft: Education Edition**, see [For teacher
 **To assign an app to a student**
 
 1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com).
-2. Click **Manage**, and then choose **Inventory**.
+2. Click **Manage**, and then choose **Apps & software**.
 3. Find an app, click the ellipses under **Action**, and then choose **Assign to people**.
-4. Type the email address, or name for the student that you're assigning the app to, and click **Confirm**.
+4. Type the email address, or name for the student that you're assigning the app to, and click **Assign**.
 
 Employees will receive an email with a link that will install the app on their device. Click the link to start the Windows Store app, and then click **Install**. Also, in the Windows Store app, they can find the app under **My Library**.
 
 ### Purchase additional licenses
 Applies to: IT admins and teachers
 
-You can manage current app licenses, or purchase more licenses for apps in your inventory. 
+You can manage current app licenses, or purchase more licenses for apps in **Apps & software**. 
 
 **To purchase additional app licenses**
 1. Click **Manage**, click **Apps & software**, and then click an app. 
-2. On the app page, click **View app details**. 
-3. From this page, click **Buy more** to purchase more licenses</br>
--OR-</br>
-Click **Manage** to distribute or reclaim current licenses. 
+2. Click **Buy more** to purchase more licenses</br>
 
 You'll have a summary of current license availability.  
 
@@ -163,7 +160,7 @@ You'll have a summary of current license availability.
 
 Similarly, you can purchase additional subscriptions of **Minecraft: Education Edition** through Windows Store for Business. Find **Minecraft: Education Edition** in your inventory and use the previous steps for purchasing additional app licenses. 
 
-## Manage WSfB order history
+## Manage order history
 Applies to: IT admins and teachers
 
 You can manage your orders through Windows Store for Business. For info on order history and how to refund an order, see [Manage app orders in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/manage-orders-windows-store-for-business). 
