@@ -31,15 +31,15 @@ If you deployed Skype for Business Cloud PBX with one of the hybrid voice option
 
     ![Add product license](images/product-license-hybrid-voice.png)
 
-4.	Wait approximately 15 minutes until your user account appears in Skype for Business Online.
+4.	Wait approximately 15 minutes until the user account for the room appears in Skype for Business Online.
 
-5.	After your user is created in Skype for Business Online, enable it for Hybrid Voice in Skype for Business Remote PowerShell by running the following cmdlet:
+5.	After the user account for room is created in Skype for Business Online, enable it for Hybrid Voice in Skype for Business Remote PowerShell by running the following cmdlet:
 
     ```
-    Set-csuser surfacehub2@adatum.biz EnterpriseVoiceEnabled $true -HostedVoiceMail $true -onpremlineuri tel:+15005000102
+    Set-csuser surfacehub2@adatum.com EnterpriseVoiceEnabled $true -HostedVoiceMail $true -onpremlineuri tel:+15005000102
     ```
     
-6.	Validate Hybrid Voice call flow by placing test calls.
+6.	Validate Hybrid Voice call flow by placing test calls from the Surface Hub.
 
 7.	Start a remote PowerShell session on a PC and connect to Exchange by running the following cmdlets.
 
@@ -50,54 +50,54 @@ If you deployed Skype for Business Cloud PBX with one of the hybrid voice option
     Import-PSSession $sess
     ```
     
-8.	After establishing a session, modify the mailbox account on previous steps and enable it as a RoomMailboxAccount. This allows the account to authenticate with Surface Hub.
+8.	After establishing a session, modify the user account for the room to enable it as a **RoomMailboxAccount** by running the following cmdlets. This allows the account to authenticate with Surface Hub.
 
     ```
-    Set-Mailbox surfacehub2@adatum.biz -Type Room
-    Set-Mailbox surfacehub2@adatum.biz -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
+    Set-Mailbox surfacehub2@adatum.com -Type Room
+    Set-Mailbox surfacehub2@adatum.com -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
     ```
     
 9.	After setting up the mailbox, you will need to either create a new Exchange ActiveSync policy, or use a compatible existing policy.
 
     Surface Hubs are only compatible with device accounts that have an ActiveSync policy where the **PasswordEnabled** property is set to **False**. If this isn’t set properly, then Exchange services on the Surface Hub (mail, calendar, and joining meetings), will not be enabled.
     
-    If you haven’t created a compatible policy yet, use the following cmdlet—this one creates a policy called "Surface Hubs". Once it’s created, you can apply the same policy to other device accounts.
+    If you haven’t created a compatible policy yet, use the following cmdlet (this one creates a policy called "Surface Hubs"). After it’s created, you can apply the same policy to other device accounts.
 
     ```
     $easPolicy = New-MobileDeviceMailboxPolicy -Name “SurfaceHubs” -PasswordEnabled $false
     ```
     
-    Once you have a compatible policy, then you will need to apply the policy to the device account. However, policies can only be applied to user accounts and not resource mailboxes. You need to convert the mailbox into a user type, apply the policy, and then convert it back into a mailbox—you may need to re-enable it and set the password again.
+    After you have a compatible policy, then you will need to apply the policy to the device account. However, policies can only be applied to user accounts and not resource mailboxes. Run the following cmdlets to convert the mailbox into a user type, apply the policy, and then convert it back into a mailbox (you may need to re-enable the account and set the password again).
     
     ```
-    Set-Mailbox surfacehub2@adatum.biz -Type Regular
-    Set-CASMailbox surfacehub2@adatum.biz -ActiveSyncMailboxPolicy $easPolicy.id
-    Set-Mailbox surfacehub2@adatum.biz -Type Room
+    Set-Mailbox surfacehub2@adatum.com -Type Regular
+    Set-CASMailbox surfacehub2@adatum.com -ActiveSyncMailboxPolicy $easPolicy.id
+    Set-Mailbox surfacehub2@adatum.com -Type Room
     $credNewAccount = Get-Credential -Message "Please provide the Surface Hub username and password"
-    Set-Mailbox surfacehub2@adatum.biz -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
+    Set-Mailbox surfacehub2@adatum.com -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
     ```
     
-10.	Various Exchange properties must be set on the device account to improve the meeting experience. You can see which properties need to be set in [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md).
+10.	Various Exchange properties must be set on the device account to improve the meeting experience. You can see which properties can be set in [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md). The following cmdlets provide an example of setting Exchange properties.
 
     ```
-    Set-CalendarProcessing surfacehub2@adatum.biz -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
-    Set-CalendarProcessing surfacehub2@adatum.biz -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
+    Set-CalendarProcessing surfacehub2@adatum.com -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
+    Set-CalendarProcessing surfacehub2@adatum.com -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
-11.	Enable the mailbox as a meeting device in Skype for Business Online. The first step is to understand your home registrar, to get the registrar pool. The second step is to run cmdlet which enables the acount as a meeting device (you need registrarpool with from the first cmdlet)
+11.	Enable the mailbox as a meeting device in Skype for Business Online. Run the following cmdlet which enables the acount as a meeting device. 
 
     ```
     Get-CsTenant | select registrarpool
-    Enable-CsMeetingRoom surfacehub2@adatum.biz -RegistrarPool  'sippoolbl20a04.infra.lync.com' -SipAddressType UserPrincipalName
+    Enable-CsMeetingRoom surfacehub2@adatum.com -RegistrarPool  'sippoolbl20a04.infra.lync.com' -SipAddressType UserPrincipalName
     ```
     
     As a result of running this cmdlet, users will be asked if they are in a meeting room, as shown in the following image. **Yes** will mute the microphone and speaker.
 
     ![](images/adjust-room-audio.png)
 
-    It also will change lobby behavior, you can read about lobby behavior. 
+
     
-At this moment the  room account is fully configured, including Hybrid Voice. Additional attributes, like description, location, etc., must be set in on-premises as we sync the room from on-premises. If you create a room in online, these parameters can be set online. 
+At this moment the room account is fully configured, including Hybrid Voice. If you use Skype on-premises, you can configure additional attributes, like description, location, etc., on-premises. If you create a room in Skype Online, these parameters can be set online. 
 
 In the following image, you can see how the device appears to users.
 
