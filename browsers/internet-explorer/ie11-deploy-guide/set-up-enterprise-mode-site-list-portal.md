@@ -44,7 +44,7 @@ You must download the deployment folder (**EMIEWebPortal/**), which includes all
 
 6. Go back up a directory, open the solution file **EMIEWebPortal.sln** in Visual Studio, and then build the entire solution.
 
-7. Copy the contents of the **EMIEWebPortal/** folder to a dedicated folder on your file system. In a later step, you'll designate this folder as your website in the IIS Manager.
+7. Copy the contents of the **EMIEWebPortal/** folder to a dedicated folder on your file system. For example, _D:\EMIEWebApp_. In a later step, you'll designate this folder as your website in the IIS Manager.
 
 ## Step 2 - Create the Application Pool and website, by using IIS
 Create a new Application Pool and the website, by using the IIS Manager.
@@ -70,7 +70,7 @@ Create a new Application Pool and the website, by using the IIS Manager.
 
 5. Make sure your **Identity** value is **ApplicationPoolIdentity**, click **OK**, and then close the box.
 
-6. Open File Explorer and go to your deployment directory, created in Step 1. For example, _D:\EMIEWebApp_. <!-- When did we create this directory? I don't see anything about it in the steps above or in here. -->
+6. Open File Explorer and go to your deployment directory, created in Step 1. For example, _D:\EMIEWebApp_.
 
 7. Right-click on the directory, click **Properties**, and then click the **Security** tab.
 
@@ -83,7 +83,7 @@ Create a new Application Pool and the website, by using the IIS Manager.
    
    The **Add Website** box appears.
 
-2. In the **Add Website** box, type the name of your website into the Site name box. For example, _EMIEWebApp_, and then click **Select**.
+2. In the **Add Website** box, type the name of your website into the **Site name** box. For example, _EMIEWebApp_, and then click **Select**.
 
 3. The **Select Application Pool** box appears.
 
