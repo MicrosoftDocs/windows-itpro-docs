@@ -10,7 +10,7 @@ author: TrudyHa
 localizationpriority: high
 ---
 
-# Distribute apps to your employees from the Microsoft Store for Business and Education
+# Distribute apps to your employees from Microsoft Store for Business and Education
 
 
 **Applies to**
