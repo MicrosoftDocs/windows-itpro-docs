@@ -58,7 +58,7 @@ Complete these tasks before you start the walkthrough:
 
   If you don't have Windows 10, version 1703 installed on your devices, we recommend upgrading. This process takes a while so start this task before proceeding with this walkthrough. 
 
-- Have an education-verified tenant to quality for an Office 365 for Education subscription. You also need to be education-verified to use School Data Sync and Intune for Education.
+- Have an education-verified tenant to qualify for an Office 365 for Education subscription. You also need to be education-verified to use School Data Sync and Intune for Education.
 
   If you don't have an education-verified domain, don't worry. We'll show you the steps on how to do this. 
 
@@ -118,7 +118,7 @@ Already have an Office 365 for Education verified tenant? Just sign in with your
 4. Skip ahead and follow the instructions in the walkthrough beginning with [3. Configure Microsoft Store for Education](#3-configure-microsoft-store-for-education).
 
 
-## 1. Set up a new Office 356 for Education tenant
+## 1. Set up a new Office 365 for Education tenant
 Schools can use Office 365 to save time and be more productive. Built with powerful tools and accessible from any device, setting it up is the first step in getting your school to the cloud. 
 
 Don't have an Office 365 for Education verified tenant or just starting out? Follow these steps to set up an Office 365 for Education tenant. [Learn more about Office 365 for Education plans and pricing](https://products.office.com/en-us/academic/compare-office-365-education-plans).
@@ -204,11 +204,6 @@ To learn more about the CSV files that are required and the info you need to inc
     
   3. Click **Start**.
 
-    **Figure 8** - Add a name and sync method for the new profile
-
-    ![Add a name and sync method for the new profile](images/sds_updated_newprofile_name_syncmethod.png)
-
-
 7. In the **Sync options** screen:
   1. Select the domain for the schools/sections. If you have more than one domain, make sure you select the domain that corresponds to the profile you're creating.
   2. In the **Select school and section properties** section, select the properties you want to sync. If you select additional properties, make sure you have these properties and values added in the CSV files. For the walkthrough, we're not changing the default values. These are:
@@ -227,7 +222,7 @@ To learn more about the CSV files that are required and the info you need to inc
   5. In the **License Options** section, check the box to select the option.
   6. Click **Next**.
 
-    **Figure 9** - Sync options for the new profile
+    **Figure 8** - Sync options for the new profile
 
     ![Specify sync options for the new SDS profile](images/sds_addnewprofile_syncoptions.png)
 
@@ -237,7 +232,7 @@ To learn more about the CSV files that are required and the info you need to inc
   3. In the **Teacher licenses** section, choose the SKU to assign licenses for teachers. For this walkthrough, choose **STANDARDWOFFPACK_FACULTY**.
   4. Click **Next**.
 
-    **Figure 10** - Specify options for teacher mapping
+    **Figure 9** - Specify options for teacher mapping
 
     ![Specify options for teacher mapping](images/sds_addnewprofile_teacheroptions.png)
 
@@ -247,7 +242,7 @@ To learn more about the CSV files that are required and the info you need to inc
   3. In the **Student licenses** section, choose the SKU to assign licenses for students. For this walkthrough, choose **STANDARDWOFFPACK_STUDENT**.
   4. Click **Next**.
 
-    **Figure 11** - Specify options for student mapping
+    **Figure 10** - Specify options for student mapping
 
     ![Specify options for student mapping](images/sds_addnewprofile_studentoptions.png)
 
@@ -257,7 +252,7 @@ To learn more about the CSV files that are required and the info you need to inc
 
 11. You will see a page for your profile. The status might indicate that it's still being set up. 
 
-  **Figure 12** - SDS profile page
+  **Figure 11** - SDS profile page
 
   ![SDS profile page](images/sds_profilepage.png)
 
@@ -265,7 +260,7 @@ To learn more about the CSV files that are required and the info you need to inc
 
   If the status still indicates that the profile is being set up, try refreshing the page until you see the status change to **Ready to sync**.
 
-  **Figure 13** - New profile is ready to sync
+  **Figure 12** - New profile is ready to sync
 
   ![Confirm that the new profile is ready](images/sds_profile_readytosync.png)
 
@@ -294,145 +289,135 @@ You'll need to configure Microsoft Store for Education to accept the service agr
 
   This will take you to the Microsoft Store for Education portal.
 
-  **Figure 14** - Microsoft Store for Education portal
+  **Figure 13** - Microsoft Store for Education portal
 
   ![Microsoft Store for Education portal](images/msfe_store_portal.png)
 
 3. In the Microsoft Store portal, click **Manage** to go to the Microsoft Store **Overview** page.
 4. Find the **Overview** page, find the **Store settings** tile and click **Management tools**.
 
-  **Figure 15** - Select management tools from the list of Store settings options
+  **Figure 14** - Select management tools from the list of Store settings options
 
   ![Select management tools from list of Store settings options](images/msfe_storesettings_select_managementtools.png)
 
 4. In the **Management tools** page, find **Microsoft Intune** on the list and click **Activate** to get Intune for Education ready for use with Microsoft Store for Education.
 
-  **Figure 16** - Activate Intune for Education as the management tool
+  **Figure 15** - Activate Intune for Education as the management tool
 
   ![Activate Intune for Education as the management tool](images/msfe_managementtools_activateintune.png) 
 
 Your Microsoft Store for Education account is now linked to Intune for Education so let's set that up next.
 
 ## 4. Use Intune for Education to manage groups, apps, and settings
-Intune for Education is a streamlined device management solution for educational institutions that can be used to quickly set up and manage Windows 10 devices for your school. It provides a new streamlined UI with the enterprise readiness and resiliency of the Intune service. You can learn more about Intune for Education by reading the **Intune for Education documentation**. 
+Intune for Education is a streamlined device management solution for educational institutions that can be used to quickly set up and manage Windows 10 devices for your school. It provides a new streamlined UI with the enterprise readiness and resiliency of the Intune service. You can learn more about Intune for Education by reading the **[Intune for Education documentation](https://docs.microsoft.com/intune-education)***. 
 
 ### Example - Force a sync, set up Intune for Education, buy apps from the Store, and install the apps
 In this walkthrough, we'll go through a sample scenario and walk you through the steps to:
-- Force a sync in Intune for Education so that apps will appear in your catalog right away
-- Quickly set up Intune for Education
-- Use Intune for Education to buy apps from the Store for Business
-- Use Intune for Education to install the apps for all users in your tenant
+- [Use express configuration to quickly set up Intune for Education](#setupintune)
+- [Use Intune for Education to buy apps from the Microsoft Store for Education](#addappsfrommsfe)
+- [Use Intune for Education to install the apps for all users in your tenant](#installappsallusers)
 
-Note that for verified education tenants, Microsoft automatically provisions your app catalog with these apps so you will see them appear on your Intune catalog even before you've bought any apps:
-- Excel Mobile
+Note that for verified education tenants, Microsoft automatically provisions your app catalog with these apps so you will see them appear on your Intune for Education catalog even before you've bought any apps:
+- Excel 
 - Fresh Paint
-- Minecraft: Education Edition (trial license)
+- Minecraft: Education Edition
 - OneNote
-- PowerPoint Mobile
+- PowerPoint
 - Sway
-- Word Mobile
+- Word
 
   > [!NOTE]
-  > Apps that you own in Store for Business are automatically available in Intune for Education. Any changes you make to your purchases get reflected in Intune for Education.
+  > Apps that you own in the Microsoft Store for Education are automatically available in Intune for Education. Any changes you make to your purchases get reflected in Intune for Education.
 
-**<a name="forceappsync"></a>Sync recently purchased apps**
 
-To sync your most recently purchased apps and have it appear in your catalog right away, force a Store sync.
- 
-1. Log in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>.
-2. Select **Tenant Settings** to see the various settings that you can configure for your tenant.
+**<a name="setupintune"></a>Set up Intune for Education**
 
-  **Figure 16** - Select tenant settings
-
-  ![Select tenant settings](images/i4e_tenant_settings_force_sync.png)
-
-3. Click the ***Edit** button to make edits to the tenant settings.
-  1. In the **Others** settings group, locate the **Sync with store** setting and then click **On** to turn on sync with Store for Business.
-  2. Click **Save** to save your changes.
-
-    **Figure 17** - Update your tenant settings to turn on sync with Microsoft Store
-
-    ![Update your tenant settings to turn on sync with Microsoft Store](images/i4e_tenantsettings_edit_syncwithstore_on.png)
-
-4. In the updated **Tenant Settings** page:
-  1. Confirm that **Sync with store** now says **On** next to it.
-  2. At the top of the page, click **Sync with Store now** to force a sync.
-
-**Set up Intune for Education**
-
-Intune for Education provides an Express Configuration option so you can get going right away. We'll use that option here.
+Intune for Education provides an **Express configuration** option so you can get going right away. We'll use that option here.
 
 1. Log into the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>. You will see the Intune for Education dashboard once you're logged in.
 
-  **Figure 18** - Intune for Education dashboard
+  **Figure 16** - Intune for Education dashboard
 
-  ![Intune for Education dashboard](images/i4e_dashboard_latest.png)
+  ![Intune for Education dashboard](images/i4e_portal.png)
 
-2. On the dashboard, click **Launch Express Configuration**, or select the **Express Configuration** option on the menu on the left.
+2. On the dashboard, click **Launch Express Configuration**, or select the **Express configuration** option on the menu on the left.
 3. In the **Welcome to Intune for Education** screen, click **Get started**.
   
-  **Figure 19** - Choose the group
+  **Figure 17** - Click Get started to set up Intune for Education
 
-  ![Click Get Started to configure groups, apps, and settings](images/i4e_express_configuration_welcometoi4e.png)
+  ![Click Get Started to configure groups, apps, and settings](images/i4e_expressconfiguration_welcome.png)
 
-4. In the **Choose group** screen, select **All Users**. All apps and settings that we select during express setup will apply to this group. 
+4. In the **Get school information (optiona)** screen, it should indicate that SDS is already configured. Click **Next**.
+
+  **Figure 18** - SDS is configured
+
+  ![SDS is already configured](images/i4e_expressconfiguration_sdsconfigured.png)
+
+5. In the **Choose group** screen, select **All Users**. All apps and settings that we select during express setup will apply to this group. 
 
   You can choose another group during this step, but note that your experience may vary from what we show in the walkthrough.
 
-5. The **Next** button will appear at the bottom of the screen after you select **All Users**. Click **Next**.
+6. The **Next** button will appear at the bottom of the screen after you select **All Users**. Click **Next**.
 
   > [!TIP]
   > At the top of the screen, did you notice the **Choose group** button change to a green check mark? This means we are done with that step. If you change your mind or need to make changes, simply click on the button to go back to that step. Try it!
   >
-  > **Figure 20** - Click on the buttons to go back to that step
+  > **Figure 19** - Click on the buttons to go back to that step
   >
   > ![Click on the buttons to back to that step](images/i4e_expressconfiguration_choosebuttontogoback.png)
 
-6. In the **Choose apps** screen, you will see a selection of Web apps and Microsoft Store apps. You will also see a list of popular apps from each category. 
+7. In the **Choose apps** screen, you will see a selection of Web apps, Microsoft Store apps, and desktop (Win32) apps. You will also see a list of popular apps from each category. 
 
   - Add or remove apps by clicking on them. A blue checkmark means the app is added and will be installed for all members of the group selected in the **Choose group** step.
   
-    In this walkthrough, it's up to you to select the apps you choose to install. Just remember what they are so that later in the walkthrough you can verify that they were installed correctly on the device.
+    In this walkthrough, it's up to you to select the apps you choose to install. Just remember what they are so that later in the walkthrough you can verify that the apps were installed correctly on the device.
 
     > [!TIP]
-    > Web apps are pushed as links in the Windows Start menu under **All apps**. If you want apps to appear in Edge browser tabs, use the **Homepages** setting for Edge through Express Configuration or Manage Users and Devices.
+    > Web apps are pushed as links in the Windows Start menu under **All apps**. If you want apps to appear in Microsoft Edge browser tabs, use the **Homepages** setting for Microsoft Edge through **Express configuration** or **Manage Users and Devices**.
 
-  **Figure 21** - Choose the apps that you want to install for the group
+  **Figure 20** - Choose the apps that you want to install for the group
 
-  ![Choose apps to install for the group](images/i4e_expressconfiguration_chooseapps.png)
+  ![Choose apps to install for the group](images/i4e_expressconfiguration_chooseapps_selected.png)
 
-7. When you're done choosing apps, click **Next** at the bottom of the screen.
+8. When you're done choosing apps, click **Next** at the bottom of the screen.
 
-  If you select Store for Business apps, you will see a notification that Intune for Education is getting these apps.
+  If you select Microsoft Store apps, you will see a notification that Intune for Education is getting these apps.
 
 8. In the **Choose settings** screen, we will set the settings to apply to the group. Click the reverse caret (downward-facing arrow) to expand the settings group and get more information about each setting in that settings group.
 
-  **Figure 22** - Expand the settings group to get more details
+  **Figure 21** - Expand the settings group to get more details
 
-  ![Expand the settings group to get more info](images/i4e_expressconfiguration_choosesettings.png)
+  ![Expand the settings group to get more info](images/i4e_expressconfiguration_choosesettings_expandcollapse.png)
 
 9. For this walkthrough, set the following settings:
-  - In the **Internet browser settings** group, change the **Do-Not-Track headers** setting to **Block**.
-  - In the **Device update settings** group, change the **Choose how to install updates** setting to **Auto install and reboot at scheduled time**, and then set the **Auto Install and Reboot Day** to **Friday** and the **Auto Install and Reboot Time** to **4 PM**.
+  - In the **Internet browser settings** group, change the **Send Do Not Track requests to help protect users' privacy** setting to **Block**.
+  - In the **App settings** group, change the **Microsoft Store for Business apps** setting to **Block**, and then set the **Private Microsoft Store for Business apps** to **Allow**.
 
-  **Figure 23** - Set some additional settings
+  **Figure 22** - Set some additional settings
 
-  ![Set some additional settings](images/i4e_expressconfiguration_choosesettings_additionalsettings.png)
+  ![Set some additional settings](images/i4e_expressconfiguration_choosesettings_additionalsettingsconfigured.png)
 
 10. Click **Next**. In the **Review** screen, you will see a summary of the apps and settings you selected to apply.
+
+  **Figure 23** - Review the group, apps, and settings you configured
+
+  ![Review the group, apps, and settings you configured](images/i4e_expressconfiguration_review.png)
+
 11. Click **Save** to end express configuration.
 12. You will see the **You're done!** screen which lets you choose one of two options. 
 
-  **Figure 24** - All done with Intune for Education express setup
+  **Figure 24** - All done with Intune for Education express configuration
 
-  ![Done with Intune for Education express setup](images/i4e_expresssetup_alldone.png)
+  ![Done with Intune for Education express configuration](images/i4e_expressconfiguration_alldone.png)
 
 13. Click **All done** or click the **X** on the upper-right corner of the screen to dismiss this screen and go back to the dashboard.
 
-**<a name="addappsfromwsfb"></a>Add apps bought from Store for Business**
+
+**<a name="addappsfrommsfe"></a>Add apps bought from Microsoft Store for Education**
+
 - **Example 1 - Minecraft: Education Edition**
 
-  By default, education tenants automatically get trial licenses for Minecraft: Education Edition. However, if you would like to purchase Minecraft: Education Edition or want to learn more about volume licensing, see <a href="https://technet.microsoft.com/en-us/edu/windows/school-get-minecraft" target="_blank">For IT administrators - get Minecraft: Education Edition</a>.
+  If you would like to purchase Minecraft: Education Edition or want to learn more about volume licensing, see <a href="https://technet.microsoft.com/en-us/edu/windows/school-get-minecraft" target="_blank">For IT administrators - get Minecraft: Education Edition</a>.
 
 - **Example 2 - Free educational/reference apps**
 
@@ -440,15 +425,15 @@ Intune for Education provides an Express Configuration option so you can get goi
 
     **Figure 25** - Click on **Apps** to see the list of apps for your tenant
 
-    ![Click Apps to see the list of apps for your tenant](images/i4e_dashboard_clickapps_latest.png)
+    ![Click Apps to see the list of apps for your tenant](images/i4e_dashboard_clickapps.png)
 
-  2. In the **Store apps** section, click **+ New app**. This will take you to the Store for Business portal and you will already be signed in.
+  2. In the **Store apps** section, click **+ New app**. This will take you to the Microsoft Store for Education portal and you will already be signed in.
 
     **Figure 26** - Select the option to add a new Store app
 
-    ![Select the option to add a new Store app](images/i4e_apps_storeapps_newappbutton.png)
+    ![Select the option to add a new Store app](images/i4e_apps_newstoreapp_selected.png)
 
-  3. In the Store for Business page, check some of the categories for suggested apps or search the Store for a free educational or reference app. Find ones that you haven't already installed during express setup for Intune for Education.
+  3. In the Microsoft Store page, check some of the categories for suggested apps or search the Store for a free educational or reference app. Find ones that you haven't already installed during express setup for Intune for Education.
   
     For example, these apps are free:
     - Duolingo - Learn Languages for Free
@@ -456,25 +441,23 @@ Intune for Education provides an Express Configuration option so you can get goi
     - Khan Academy
     - My Study Life
 
-  4. Select the app you want to install.
-  5. In the app's Store page, select the license type and then select **Get the app**.
-  6. You should see a dialog that confirms your order. Click **Close**.
-  7. In the app's Store page, select **Add to private store**.
-  8. Repeat steps 3-7 to install another app.
-  9. In the Store for Business portal, select **Manage > Inventory** and verify that the apps you purchased appear in your inventory.
+  4. Find or select the app you want to install and click **Get the app**.
+  5. In the app's Store page, click the **...** button and select **Add to private store**.
+  6. Repeat steps 3-5 to install another app or move to the next step.
+  7. In the Microsoft Store for Education portal, select **Manage > Apps & software > Manage apps** to verify that the apps you purchased appear in your inventory.
 
     For example, if you bought Duolingo and Khan Academy, they will show up in your inventory along with the apps that Microsoft automatically provisioned for your education tenant.
 
-    **Figure 27** - Apps inventory in Store for Business
+    **Figure 27** - Apps inventory in Microsoft Store for Education
 
-    ![Apps inventory in Store for Business](images/wsfb_manage_inventory_annotated.png)
+    ![Apps inventory in Store for Business](images/msfe_manageapps_inventory_grouped.png)
 
-    In the **Private store** column of the **Inventory** page, the status for some apps will indicate that it's "In private store" while others will say "Not in private store". We won't go over this in the walkthrough, but you can learn more about this in [Distribute apps using your private store](https://technet.microsoft.com/en-us/itpro/windows/manage/distribute-apps-from-your-private-store).
+    In the **Private store** column of the **Apps & software** page, the status for some apps will indicate that it's "In private store" while others will say "Not in private store". We won't go over this in the walkthrough, but you can learn more about this in [Distribute apps using your private store](https://technet.microsoft.com/en-us/itpro/windows/manage/distribute-apps-from-your-private-store).
 
     > [!NOTE]  
-    > You'll see in the above screenshot that some apps say that add is in progress. Sync happens automatically, but it may take up to 24 hours for your organization's private store and 12 hours for Intune for Education to sync all your purchased apps. Let's force a sync to make this process happen faster. 
+    > You'll see in the above screenshot that some apps say that **Add is in progress**. Sync happens automatically, but it may take up to 24 hours for your organization's private store and 12 hours for Intune for Education to sync all your purchased apps. 
 
-**Install apps for all users**
+**<a name="installappsallusers"></a>Install apps for all users**
 
 Now that you've bought the apps, use Intune for Education to specify the group to install the apps for. Here, we'll show you how to install the apps you bought for all devices used by all users in your tenant. 
 
@@ -482,16 +465,13 @@ Now that you've bought the apps, use Intune for Education to specify the group t
 
   **Figure 28** - Groups page in Intune for Education
 
-  ![Groups page in Intune for Education](images/i4e_groups.png)
+  ![Groups page in Intune for Education](images/i4e_groupspage.png)
 
-2. In the **Groups** page, select **All Users** to see the list of users. The list should match all the names we imported using SDS.
-
-  > [!TIP]
-  > If you don't see the names, click the **Users** option in the taskbar at the top of the **All Users** page. 
+2. In the **Groups** page, select **All Users** from the list of groups on the left, and then click **Users** in the taskbar at the top of the **All Users** page. 
 
   **Figure 29** - List of all users in the tenant
 
-  ![List of all users in the tenant](images/i4e_groups_allusers_list.png)
+  ![List of all users in the tenant](images/i4e_groups_allusers_users_steps.png)
 
 3. In the taskbar at the top, select **Apps** and then click **Edit apps** to see a list of available apps.
 
