@@ -14,6 +14,12 @@ localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
+## May 2017
+
+| New or changed topic | Description |
+| --- | --- |
+| [Online or hybrid deployment using Skype Hybrid Voice environment](skype-hybrid-voice.md) | New |
+
 ## February 2017
 
 | New or changed topic | Description |
