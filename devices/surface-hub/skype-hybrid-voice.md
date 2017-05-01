@@ -12,18 +12,18 @@ localizationpriority: medium
 
 # Online or hybrid deployment using Skype Hybrid Voice environment  (Surface Hub)
 
-This topic explains how to enable Skype for Business Cloud PBX with on-premises Public Switched Telephone Network (PSTN) connectivity via Cloud Connector Edition or Skype for Business 2015 pool. In this option. your Skype for Business home pools and Exchange servers are in the Cloud, and are connected by PSTN via an on-premises pool running Skype for Business 2015 or Cloud Connector edition. [Learn more about different Cloud PBX options](https://technet.microsoft.com/library/mt612869.aspx).  
+This topic explains how to enable Skype for Business Cloud PBX with on-premises Public Switched Telephone Network (PSTN) connectivity via Cloud Connector Edition or Skype for Business 2015 pool. In this option. your Skype for Business home pools and Exchange servers are in the cloud, and are connected by PSTN via an on-premises pool running Skype for Business 2015 or Cloud Connector edition. [Learn more about different Cloud PBX options](https://technet.microsoft.com/library/mt612869.aspx).  
 
 If you deployed Skype for Business Cloud PBX with one of the hybrid voice options, follow the steps below to enable the room account for Surface Hub. It is important to create a regular user account first, assign all hybrid voice options and phone numbers, and then convert the account to a room account. If you do not follow this order, you will not be able to assign a hybrid phone number.  
 
 >[!WARNING]
 >If you create an account before configuration of Hybrid voice (you run Enable-CSMeetingRoom command), you will not be able to configure required hybrid voice parameters. In order to configure hybrid voice parameters for a previously configured account or to reconfigure a phone number, delete the E5 or E3  + Cloud PBX add-on license, and then follow the steps below, starting at step 3.
 
-1. Create a new user account for Surface Hub. This example uses `surfacehub2@adatum.com`. The account can be created in local Active Directory and synchronized to the cloud, or created directly in the cloud. 
+1. Create a new user account for Surface Hub. This example uses **surfacehub2@adatum.com**. The account can be created in local Active Directory and synchronized to the cloud, or created directly in the cloud. 
 
     ![new object user](images/new-user-hybrid-voice.png)
 
-2.	Select **Password Never Expires**. This is important for a Surface Room device.
+2.	Select **Password Never Expires**. This is important for a Surface Hub device.
 
     ![Password never expires](images/new-user-password-hybrid-voice.png)
 
