@@ -16,7 +16,7 @@
 ### [Surface Dock Updater](surface-dock-updater.md)
 ### [Wake On LAN for Surface devices](wake-on-lan-for-surface-devices.md)
 ## [Considerations for Surface and System Center Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md)
-## [Deploy Surface app with Windows Store for Business](deploy-surface-app-with-windows-store-for-business.md)
+## [Deploy Surface app with Microsoft Store for Business](deploy-surface-app-with-windows-store-for-business.md)
 ## [Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices](enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md)
 ## [Manage Surface UEFI settings](manage-surface-uefi-settings.md)
 ### [Advanced UEFI security features for Surface Pro 3](advanced-uefi-security-features-for-surface-pro-3.md)
