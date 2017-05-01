@@ -67,7 +67,7 @@ Before users can install or deploy an app from a company’s Microsoft Store for
     *Figure 3. Offline-licensed app acknowledgement*
     * Click **OK**.
 
-##Download Surface app from a Windows Store for Business account
+##Download Surface app from a Microsoft Store for Business account
 After you add an app to the Windows Store for Business account in Offline mode, you can download and add the app as an AppxBundle to a deployment share.
 1. Log on to the Microsoft Store for Business account at https://businessstore.microsoft.com.
 2. Click **Manage->Apps & software**. A list of all of your company’s apps is displayed, including the Surface app you added in the [Add Surface app to a Windows Store for Business account](#add-surface-app-to-a-windows-store-for-business-account) section of this article.
