@@ -74,7 +74,7 @@ Complete these tasks before you start the walkthrough:
 | * My school doesn't use Office 365 for Education | * My school doesn't use Office 365 for Education | * My school uses Office 365 for Education |
 | * My school is not an education-verified tenant | * My school is not an education-verified tenant | * My school is an education-verified tenant |
 | * I would like to get started with Microsoft Education in a production environment | * I would like to try out Microsoft Education in a trial environment | * I would like to apply the Intune for Education trial code to my school's production environment |
-| * Hardest, need to start from scratch | * Simplest, but may take longer to start | * Fastest, Office 365 and SDS already set up |
+| * Longest, need to start from scratch | * Simplest, but may take longer to start | * Fastest, Office 365 and SDS already set up |
 
 
 ### <a name="noo365prodenv"></a>Option 1: Get started with Microsoft Education in a production environment
@@ -84,7 +84,7 @@ To get started with Microsoft Education in a production environment:
 
 * Go to https://aka.ms/sdssignup and fill out the form to sign up for School Data Sync and receive a free, one-on-one support from Microsoft.
 
-  A team will contact you within 3 business days to help you deploy School Data Sync in a production environment. 
+  A team from Microsoft will contact you to help get started with Microsoft Education. 
 
 If you want a quicker way to evaluate Microsoft Education, you can [use a trial environment instead](#noo365trialenv).
 
@@ -374,7 +374,7 @@ Intune for Education provides an **Express configuration** option so you can get
 
   **Figure 20** - Choose the apps that you want to install for the group
 
-  ![Choose apps to install for the group](images/i4e_expressconfiguration_chooseapps_selected.png)
+  ![Choose apps to install for the group](images/i4e_expressconfiguration_chooseapps_selected_cropped.png)
 
 8. When you're done choosing apps, click **Next** at the bottom of the screen.
 
@@ -384,7 +384,7 @@ Intune for Education provides an **Express configuration** option so you can get
 
   **Figure 21** - Expand the settings group to get more details
 
-  ![Expand the settings group to get more info](images/i4e_expressconfiguration_choosesettings_expandcollapse.png)
+  ![Expand the settings group to get more info](images/i4e_expressconfiguration_choosesettings_expandcollapse_cropped.png)
 
 9. For this walkthrough, set the following settings:
   - In the **Internet browser settings** group, change the **Send Do Not Track requests to help protect users' privacy** setting to **Block**.
@@ -392,7 +392,7 @@ Intune for Education provides an **Express configuration** option so you can get
 
   **Figure 22** - Set some additional settings
 
-  ![Set some additional settings](images/i4e_expressconfiguration_choosesettings_additionalsettingsconfigured.png)
+  ![Set some additional settings](images/i4e_expressconfiguration_choosesettings_additionalsettingsconfigured_cropped.png)
 
 10. Click **Next**. In the **Review** screen, you will see a summary of the apps and settings you selected to apply.
 
@@ -491,7 +491,7 @@ Now that you've bought the apps, use Intune for Education to specify the group t
 
 You're now done assigning apps to all users in your tenant. It's time to set up your Windows 10 device(s) and check that your cloud infrastructure is correctly set up and your apps are being pushed to your devices from the cloud.
 
-## 5. Set up your Windows devices
+## 5. Set up Windows 10 devices
 
 ### 5.1 Set up devices using Set up School PCs or Windows OOBE
 We recommend using the latest build of Windows 10, version 1703 on your education devices. To set up new Windows 10 devices and enroll them to your education tenant, choose from one of these options:
@@ -509,25 +509,32 @@ We recommend using the latest build of Windows 10, version 1703 on your educatio
 1. If you don't have a Wi-Fi network configured, make sure you connect the device to the Internet through a wired or Ethernet connection.
 2. Go through the Windows device setup experience. On a new or reset device, this starts with the **Let's start with region. Is this right?** screen.
 
-  **Figure 43** - Let's get you signed in
+  **Figure 33** - Let's start with region
 
-  ![Let's get you signed in](images/win10_oobe_letsgetyousignedin.png)
+  ![Let's start with region](images/win10_letsstartwithregion.png)
 
-3. Sign in using the user account and password that you set up for one of the users in your education tenant. Depending on the user password setting, you may be prompted to update the password.
-4. Choose privacy settings for your device. Location, speech recognition, and diagnostics are all on by default. You can turn off a setting based on your privacy preferences. Click **Accept** to go through the rest of device setup.
+3. Continue with setup. In the **How would you like to set up?** screen, select **Set up for an organization**.
 
-  **Figure 44** - Windows setup is complete
+  **Figure 34** - Select setup for an organization
 
-  ![Windows setup is complete](images/win10_oobe_complete.png)
+  ![Select setup for an organization](images/win10_setupforanorg.png)
+
+4. Sign in using the user's account and password. Depending on the user password setting, you may be prompted to update the password.
+5. Choose privacy settings for the device. Location, speech recognition, diagnostics, and other settings are all on by default. Configure the settings based on the school's policies. 
+6. Click **Accept** to go through the rest of device setup.
+
 
 ### 5.2 Verify correct device setup
 Verify that the device is set up correctly and boots without any issues.
 
 **Verify that the device was set up correctly**
 1. Confirm that the Start menu contains a simple configuration.
-2. Confirm that the Store and built-in apps are installed and working. The apps pushed down from Intune for Education will appear under **Recently added**. Note that it may take some time before some apps are pushed down to your device from Intune for Education. Check again later if you don't see some of the apps you provisioned for the user.
+2. Confirm that the Store and built-in apps are installed and working. The apps pushed down from Intune for Education will appear under **Recently added**. 
 
-  **Figure 45** - Apps list contains the apps provisioned for the user
+  > [!NOTE]  
+  > It may take some time before some apps are pushed down to your device from Intune for Education. Check again later if you don't see some of the apps you provisioned for the user.
+
+  **Figure 35** - Sample list of apps for a user
 
   ![Apps list contains the apps provisioned for the user](images/win10_start_checkapps.png)
 
@@ -539,19 +546,19 @@ Let's now verify that the device is joined to your organization's Azure AD and s
 2. Select **Groups** and select **All Devices**.
 3. In the **All Devices** page, see the list of devices and verify that the device you're signed into appears on the list.
 
-  **Figure 46** - List of all managed devices
+  **Figure 36** - List of all managed devices
 
-  ![Verify that the device is managed in Intune for Education](images/i4e_groups_alldevices_aadjoined_list.png)
+  ![Verify that the device is managed in Intune for Education](images/i4e_groups_alldevices_listofaadjdevices.png)
 
-4. On the Windows education device, click **Start** and go to **Settings**. 
-5. In the **Windows Settings** page, click **Accounts**. Select the **Access work or school** option on the left of the account info page.
-6. In the **Access work or school** page, confirm that it says your device is connected to your organization's Azure AD.
+4. On the Windows 10 education device, click **Start** and go to **Settings**. 
+5. Select **Accounts > Access work or school**.
+6. In the **Access work or school** page, confirm that the device is connected to the organization's Azure AD.
 
-  **Figure 47** - Confirm that the Windows device is joined to Azure AD
+  **Figure 37** - Confirm that the Windows 10 device is joined to Azure AD
 
-  ![Confirm that the Windows device is joined to Azure AD](images/win10_settings_accounts_aadjoined_confirmation.png)
+  ![Confirm that the Windows 10 device is joined to Azure AD](images/win10_confirmaadj.png)
 
-**That's it! You're done!** You've completed basic cloud setup for your education tenant and confirmed that your education devices and users are managed all in the cloud.
+**That's it! You're done!** You've completed basic cloud setup, deployment, and management using Microsoft Education. You can continue follow the rest of the walkthrough to finish setup and complete other tasks.
 
 
 ## 6. Finishing setup and other tasks
@@ -561,13 +568,17 @@ If you need to make changes or updates to any of the apps or settings for the gr
 
 1. Log in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>.
 2. Click **Groups** and then choose **Settings** in the taskbar at the top of the page.
-3. You will see the same settings groups that you saw in express setup for Intune for Education as well as other settings categories such as **Windows Defender settings**, **Device sharing** and so on.
+3. You will see the same settings groups that you saw in express setup for Intune for Education as well as other settings categories such as **Windows Defender settings**, **Device sharing**, **Edition upgrade**, and so on.
 
-  **Figure 48** - Use the **Settings** option to make app or device settings changes
+  **Figure 38** - See the list of available settings in Intune for Education
 
-  ![Use the Settings option to make app and settings changes](images/i4e_groups_settings_changes.png)
+  ![See the list of available settings in Intune for Education](images/i4e_groups_settingslist_full.png)
 
-4. Click **Save** or **Discard changes**.
+4. Keep the default settings or configure the settings according to your school's policies. 
+
+  For example, you can configure the diagnostic data sent to Microsoft in **Basic device settings > Send diagnostic data**. 
+
+5. Click **Save** or **Discard changes**.
 
 ### 6.2 Configure Azure settings
 After completing the basic setup for your cloud infrastructure and confirming that it is up and running, it's time to prepare for additional devices to be added and enable capabilities for the user to use.
@@ -581,7 +592,7 @@ Follow the steps in this section to enable a single person to add many devices t
 2. Click **Admin centers** and select **Azure AD** to go to the Azure portal.
 3. Configure the device settings for the school's Active Directory. From the new Azure portal, <a href="https://portal.azure.com" target="_blank">https://portal.azure.com</a>, select **Azure Active Directory > Users and groups > Device settings**.
 
-  **Figure 49** - Device settings in the new Azure portal
+  **Figure 39** - Device settings in the new Azure portal
 
   ![Configure device settings in the new Azure portal](images/azure_newportal_usersandgroups_devicesettings.png)
 
@@ -598,7 +609,7 @@ Follow the steps in this section to ensure that settings for the each user follo
 3. Configure the device settings for the school's Active Directory. From the new Azure portal, <a href="https://portal.azure.com" target="_blank">https://portal.azure.com</a>, select **Azure Active Directory > Users and groups > Device settings**.
 4. Find the setting **Users may sync settings and enterprise app data** and change the value to **All**.
 
-  **Figure 50** - Enable settings to roam with users
+  **Figure 40** - Enable settings to roam with users
 
   ![Enable settings to roam with users](images/azure_usersandgroups_devicesettings_ers.png)
 
@@ -608,28 +619,42 @@ Follow the steps in this section to ensure that settings for the each user follo
 Now that your basic cloud infrastructure is up and running, it's time to complete the rest of the Office 365 for Education setup. You can find detailed information about completing Office 365 setup, services and applications, troubleshooting, and more by reading the <a href="https://support.office.com/en-US/Article/set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa#ID0EAAAABAAA=Education" target="_blank">Office 365 admin documentation</a>.
 
 ### 6.4 Add more users
-After your cloud infrastructure is set up and you have a device management strategy in place, you may need to add more users and you want the same policies to apply to these users. 
-
-You can add new users to your tenant simply by adding them to the Office 365 groups. Adding new users to Office 365 groups automatically adds them to the corresponding groups in Intune.
+After your cloud infrastructure is set up and you have a device management strategy in place, you may need to add more users and you want the same policies to apply to these users. You can add new users to your tenant simply by adding them to the Office 365 groups. Adding new users to Office 365 groups automatically adds them to the corresponding groups in Intune for Education.
 
 See <a href="https://support.office.com/en-us/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc" target="_blank">Add users to Office 365</a> to learn more. Once you're done adding new users, go to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a> and verify that the same users were added to the Intune for Education groups as well.
 
 ### 6.5 Connect other devices to your cloud infrastructure
-Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [3. Set up devices](#3-set-up-your-windows-devices). For other devices, such as those personally-owned by teachers who need to connect to the school network to access work or school resources (BYOD), you can follow the steps in this section to get these devices connected.
+Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [5. Set up Windows 10 devices](#5-set-up-windows-10-devices). For other devices, such as those personally-owned by teachers who need to connect to the school network to access work or school resources (BYOD), you can follow the steps in this section to get these devices connected.
 
   > [!NOTE]  
   > These steps enable users to get access to the organization's resources, but it also gives the organization some control over the device.
 
 **To connect a personal device to your work or school**
+
 1. On your Windows device, go to **Settings > Accounts**.
 2. Select **Access work or school** and then click **Connect** in the **Connect to work or school** page.
-3. In the **Set up a work or school account** window, click **Join this device to Azure Active Directory** to add an Azure AD account to the device.
-4. In the **Let's get you signed in** window, enter the credentials for the account and then click **Sign in** to authenticate the user.
-5. Depending on the organization's policy, you may be asked to update the password.
-6. Verify the details to make sure you're connecting to the right organization and then click **Join**.
-7. You will see a confirmation window that says the device is now connected to the organization. Click **Done**.
-8. The **Connect to work or school** window will refresh and will now include an entry that shows you're connected to your organization's Azure AD. This means the device is now registered in Azure AD and enrolled in MDM and the account should have access to the organization's resources.
-9. You can confirm that the new device and user are showing up as Intune-managed by going to the Intune management portal and following the steps in [3.3 Verify the device is Azure AD joined](#33-verify-the-device-is-azure-ad-joined). It may take several minutes before the new device shows up so check again later.
+3. In the **Set up a work or school account** window, enter the user's account info.
+
+  For example, if a teacher connects their personal device to the school network, they'll see the following screen after typing in their account information.
+
+  **Figure 41** - Device is now managed by Intune for Education
+
+  ![Device is managed by Intune for Education](images/byob_aad_enrollment_intune.png)
+
+4. Enter the account password and then click **Sign in** to authenticate the user.
+
+   Depending on the organization's policy, the user may be asked to update the password.
+
+5. After the user's credentails are validated, the window will refresh and will now include an entry that shows the device is now connected to the organization's MDM. This means the device is now enrolled in Intune for Education MDM and the account should have access to the organization's resources.
+
+  **Figure 42** - Device is connected to organization's MDM
+
+  ![Device is connected to organization's MDM](images/win10_connectedtoorgmdm.png)
+
+6. You can confirm that the new device and user are showing up as Intune for Education-managed by going to the Intune for Education management portal and following the steps in [5.3 Verify the device is Azure AD joined](#53-verify-the-device-is-azure-ad-joined). 
+
+  It may take several minutes before the new device shows up so check again later.
+
 
 ## Get more info
 
