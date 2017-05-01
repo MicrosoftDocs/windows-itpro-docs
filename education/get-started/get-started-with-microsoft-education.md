@@ -306,7 +306,7 @@ You'll need to configure Microsoft Store for Education to accept the service agr
 Your Microsoft Store for Education account is now linked to Intune for Education so let's set that up next.
 
 ## 4. Use Intune for Education to manage groups, apps, and settings
-Intune for Education is a streamlined device management solution for educational institutions that can be used to quickly set up and manage Windows 10 devices for your school. It provides a new streamlined UI with the enterprise readiness and resiliency of the Intune service. You can learn more about Intune for Education by reading the **[Intune for Education documentation](https://docs.microsoft.com/intune-education)***. 
+Intune for Education is a streamlined device management solution for educational institutions that can be used to quickly set up and manage Windows 10 devices for your school. It provides a new streamlined UI with the enterprise readiness and resiliency of the Intune service. You can learn more about Intune for Education by reading the **[Intune for Education documentation](https://docs.microsoft.com/intune-education)**. 
 
 ### Example - Force a sync, set up Intune for Education, buy apps from the Store, and install the apps
 In this walkthrough, we'll go through a sample scenario and walk you through the steps to:
