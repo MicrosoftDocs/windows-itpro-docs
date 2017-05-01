@@ -2,6 +2,6 @@
   tocHref: /
   topicHref: /
   items:
-    - name: Windows
-      tocHref: /windows
-      topicHref: /windows/windows-10
+    - name: Windows Store for Business
+      tocHref: /microsoft-store
+      topicHref: /microsoft-store/index
