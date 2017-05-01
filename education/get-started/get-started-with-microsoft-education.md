@@ -561,7 +561,7 @@ Let's now verify that the device is joined to your organization's Azure AD and s
 **That's it! You're done!** You've completed basic cloud setup, deployment, and management using Microsoft Education. You can continue follow the rest of the walkthrough to finish setup and complete other tasks.
 
 
-## 6. Finishing setup and other tasks
+## 6. Finish setup and other tasks
 
 ### 6.1 Update group settings in Intune for Education
 If you need to make changes or updates to any of the apps or settings for the group(s), follow these steps.
