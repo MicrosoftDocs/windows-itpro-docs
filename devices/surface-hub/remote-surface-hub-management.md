@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
-author: jdeckerMS
+author: TrudyHa
 localizationpriority: medium
 ---
 

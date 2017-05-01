@@ -15,7 +15,7 @@ The **Internal Install** page of the Internet Explorer Customization Wizard 11 l
 
 **Note**<br>The customizations made on this page only apply to Internet Explorer for the desktop on Windows 7.
 
-![](images/wedge.gif) **To use the Internal Install page**
+**To use the Internal Install page**
 
 1.  Pick either:
 

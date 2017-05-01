@@ -1,5 +1,5 @@
 ---
-title: Edit an existing topic using the Contribute link
+title: Edit an existing topic using the Edit link
 description: Instructions about how to edit an existing topic by using the Contribute link on TechNet.
 keywords: contribute, edit a topic
 ms.prod: w10
@@ -7,7 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ---
 
-# Edit an existing topic using the Contribute link
+# Editing existing Windows IT professional documentation
 You can now make suggestions and update existing, public content with a GitHub account and a simple click of a link.
 
 >**Note**<br>
@@ -16,12 +16,11 @@ You can now make suggestions and update existing, public content with a GitHub a
 **To edit a topic**
 
 1. All contributors who are ***not*** a Microsoft employee must [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/) before contributing to any Microsoft repositories. 
-If you've already contributed to Microsoft repositories in the past, congratulations! 
-You've already completed this step.
+If you've already contributed to Microsoft repositories in the past, congratulations! You've already completed this step.
 
-2. Go to the page on TechNet that you want to update, and then click **Contribute**.
+2. Go to the page on TechNet that you want to update, and then click **Edit**.
 
-    ![GitHub Web, showing the Contribute link](images/contribute-link.png)
+    ![GitHub Web, showing the Edit link](images/contribute-link.png)
 
 3. Log into (or sign up for) a GitHub account.
     
@@ -62,10 +61,13 @@ You've already completed this step.
 
     The pull request is sent to the writer of the topic and your edits are reviewed. If your request is accepted, updates are published to one of the following places:
 
-    - [Windows 10](https://technet.microsoft.com/itpro/windows)
-    - [Internet Explorer 11](https://technet.microsoft.com/itpro/internet-explorer)
-    - [Microsoft Edge](https://technet.microsoft.com/itpro/microsoft-edge)
-    - [Surface](https://technet.microsoft.com/itpro/surface)
-    - [Surface Hub](https://technet.microsoft.com/itpro/surface-hub)
-    - [Windows 10 for Education](https://technet.microsoft.com/edu/windows)
-    - [Microsoft Desktop Optimization Pack](https://technet.microsoft.com/itpro/mdop)
+    - [Windows 10](https://docs.microsoft.com/windows/windows-10)
+    - [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy)    
+    - [Surface](https://docs.microsoft.com/surface)
+    - [Surface Hub](https://docs.microsoft.com/surface-hub)
+    - [HoloLens](https://docs.microsoft.com/hololens)
+    - [Microsoft Store](https://docs.microsoft.com/microsoft-store)
+    - [Windows 10 for Education](https://docs.microsoft.com/education/windows)
+    - [Windows 10 for SMB](https://docs.microsoft.com/windows/smb)
+    - [Internet Explorer 11](https://docs.microsoft.com/internet-explorer)
+    - [Microsoft Desktop Optimization Pack](https://docs.microsoft.com/microsoft-desktop-optimization-pack)

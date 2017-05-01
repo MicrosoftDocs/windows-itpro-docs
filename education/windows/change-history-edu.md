@@ -12,12 +12,25 @@ author: CelesteDG
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
 
+## RELEASE: Windows 10, version 1703 (Creators Update)
+
+| New or changed topic | Description|
+| --- | --- |
+| [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)  | New. Provides guidance on ways to configure the OS diagnostic data, consumer experiences, Cortana, search, as well as some of the preinstalled apps, so that Windows is ready for your school. |
+| [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)  | Updated the screenshots and related instructions to reflect the current UI and experience.  |
+| [Set up Windows devices for education](set-up-windows-10.md) | Updated for Windows 10, version 1703. |
+| Set up School PCs app: </br> [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md) </br> [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Updated. Describes the school-specific settings and policies that Set up School PC configures. Also provides step-by-step instructions for using the latest version of the app to create a provisioning package that you can use to set up student PCs. |
+| Set up using Windows Configuration Designer: </br> [Set up student PCs to join domain](set-up-students-pcs-to-join-domain.md) </br> [Provision student PCs with apps](set-up-students-pcs-with-apps.md) | Updated the information for Windows 10, version 1703. |
+| [Take tests in Windows 10 ](take-tests-in-windows-10.md) </br> [Set up Take a Test on a single PC](take-a-test-single-pc.md) </br> [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md) </br> [Take a Test app technical reference](take-a-test-app-technical.md) | Updated. Includes new information on ways you can set up the test account and assessment URL and methods for creating and distributing the link. Methods available to you vary depending on whether you're setting up Take a Test on a single PC or multiple PCs. |
+
 ## January 2017
+
 | New or changed topic | Description |
 | --- | --- |
 | [For IT administrators - get Minecraft: Education Edition](school-get-minecraft.md) | Updates. Learn how schools can use invoices to pay for Minecraft: Education Edition. |
 
 ## December 2016
+
 | New or changed topic | Description |
 | --- | --- |
 | [Upgrade Windows 10 Pro to Pro Education from Windows Store for Business](windows-10-pro-to-pro-edu-upgrade.md) | New. Learn how to opt-in to a free upgrade to Windows 10 Pro Education. |
@@ -30,13 +43,8 @@ This topic lists new and updated topics in the [Windows 10 for Education](index.
 | [For teachers - get Minecraft: Education Edition](teacher-get-minecraft.md)  | Updates. Subscription support for Minecraft: Education Edition.  |
 | [For IT administrators - get Minecraft: Education Edition](school-get-minecraft.md)  | Updates. Subscription support for Minecraft: Education Edition.  |
 
-## September 2016
 
-| New or changed topic | Description|
-| --- | --- |
-| [Create tests using Microsoft Forms](create-tests-using-microsoft-forms.md)  | New. Learn how to use Microsoft Forms with the Take a Test app to prevent access to other computers or online resources while completing a test.  |
-
-## RELEASE: Windows 10, version 1607
+## RELEASE: Windows 10, version 1607 (Anniversary Update)
 The topics in this library have been updated for Windows 10, version 1607 (also known as the Anniversary Update). The following new topics have been added:
 
 - [Set up Windows 10](set-up-windows-10.md)

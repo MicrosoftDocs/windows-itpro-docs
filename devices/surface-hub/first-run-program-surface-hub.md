@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
-author: jdeckerMS
+author: TrudyHa
 localizationpriority: medium
 ---
 
@@ -43,10 +43,9 @@ Each of these sections also contains information about paths you might take when
 
 This is the first screen you'll see when you power up the Surface Hub for the first time. It's where you input localization information for your device.
 
->[!NOTE]
->This is also where you begin the optional process of deploying a provisioning package. See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md) if that's what you're doing.
+>**Note**  This is also where you begin the optional process of deploying a provisioning package. See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md) if that's what you're doing.
 
- Select a language and the initial setup options are displayed.
+ 
 
 ![Image showing ICD options checklist.](images/setuplocale.png)
 
@@ -327,9 +326,6 @@ This is what happens when you choose an option.
 -   **Use Microsoft Azure Active Directory**
 
     Clicking this option allows you to join the device to Azure AD. Once you click **Next**, the device will restart to apply some settings, and then you’ll be taken to the [Use Microsoft Azure Active Directory](#use-microsoft-azure) page and asked to enter credentials that can allow you to join Azure AD. After joining, admins from the joined organization will be able to use the Settings app. The specific people that will be allowed depends on your Azure AD subscription and how you’ve configured the settings for your Azure AD organization.
-    
-    >[!IMPORTANT]
-    >If you join Surface Hub to Azure AD during first-run setup, single sign-on (SSO) for Office apps will not work properly. Users will have to sign in to each Office app individually.
 
 -   **Use Active Directory Domain Services**
 
@@ -386,7 +382,7 @@ Once the device has been domain joined, you must specify a security group from t
 The following input is required:
 
 -   **Domain:** This is the fully qualified domain name (FQDN) of the domain that you want to join. A security group from this domain can be used to manage the device.
--   **User name:** The user name of an account that has sufficient permission to join the specified domain. This account must be a computer object.
+-   **User name:** The user name of an account that has sufficient permission to join the specified domain.
 -   **Password:** The password for the account.
 
 After the credentials are verified, you will be asked to type a security group name. This input is required.

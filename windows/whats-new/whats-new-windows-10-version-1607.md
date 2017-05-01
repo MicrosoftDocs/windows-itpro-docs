@@ -1,7 +1,6 @@
 ---
 title: What's new in Windows 10, version 1607 (Windows 10)
 description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
-ms.assetid: 75F285B0-09BE-4821-9B42-37B9BE54CEC6
 keywords: ["What's new in Windows 10", "Windows 10", "anniversary update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -26,11 +25,11 @@ In previous versions of the Windows 10 Assessment and Deployment Kit (ADK), you 
 
 Windows ICD now includes simplified workflows for creating provisioning packages:
 
-- [Simple provisioning to set up common settings for Active Directory-joined devices](~/deploy/provision-pcs-for-initial-deployment.md)
-- [Advanced provisioning to deploy certificates and apps](~/deploy/provision-pcs-with-apps-and-certificates.md)
+- [Simple provisioning to set up common settings for Active Directory-joined devices](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment)
+- [Advanced provisioning to deploy certificates and apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps-and-certificates)
 - [School provisioning to set up classroom devices for Active Directory](https://technet.microsoft.com/en-us/edu/windows/set-up-students-pcs-to-join-domain)
 
-[Learn more about using provisioning packages in Windows 10.](../deploy/provisioning-packages.md)
+[Learn more about using provisioning packages in Windows 10.](/windows/configuration/provisioning-packages/provisioning-packages)
 
 ### Windows Upgrade Analytics
 
@@ -50,7 +49,7 @@ Use Upgrade Analytics to get:
 
 The Upgrade Analytics workflow steps you through the discovery and rationalization process until you have a list of computers that are upgrade-ready.
 
-[Learn more about planning and managing Windows upgrades with Windows Upgrade Analytics.](../deploy/manage-windows-upgrades-with-upgrade-analytics.md)
+[Learn more about planning and managing Windows upgrades with Windows Upgrade Analytics.](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-analytics)
 
 ## Windows updates
 
@@ -78,12 +77,12 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 - Beginning in version 1607, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN for Windows 10, version 1607, enable the Group Policy setting **Turn on convenience PIN sign-in**. 
 <!--- Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.-->
 
-[Learn more about Windows Hello for Business.](../keep-secure/manage-identity-verification-using-microsoft-passport.md)
+[Learn more about Windows Hello for Business.](/windows/access-protection/hello-for-business/hello-identity-verification)
 
 ### VPN
 
 - The VPN client can integrate with the Conditional Access Framework, a cloud-pased policy engine built into Azure Active Directory, to provide a device compliance option for remote clients.
-- The VPN client can integrate with Windows Information Protection (WIP) policy to provide additional security. [Learn more about Windows Information Protection](../keep-secure/protect-enterprise-data-using-edp.md), previously known as Enterprise Data Protection.
+- The VPN client can integrate with Windows Information Protection (WIP) policy to provide additional security. [Learn more about Windows Information Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip), previously known as Enterprise Data Protection.
 - New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](https://msdn.microsoft.com/en-us/library/windows/hardware/mt299056%28v=vs.85%29.aspx#whatsnew_1607)
 - Microsoft Intune: *VPN Profile (Windows 10 Desktop and Mobile and later)* policy template includes support for native VPN plug-ins.
 
@@ -101,28 +100,28 @@ Windows Information Protection (WIP) helps to protect against this potential dat
 ### Windows Defender
 Several new features and management options have been added to Windows Defender in Windows 10, version 1607.
 
-- [Windows Defender Offline in Windows 10](../keep-secure/windows-defender-offline.md) can be run directly from within Windows, without having to create bootable media.
-- [Use PowerShell cmdlets for Windows Defender](../keep-secure/use-powershell-cmdlets-windows-defender-for-windows-10.md) to configure options and run scans.
-- [Enable the Block at First Sight feature in Windows 10](../keep-secure/windows-defender-block-at-first-sight.md) to leverage the Windows Defender cloud for near-instant protection against new malware.
-- [Configure enhanced notifications for Windows Defender in Windows 10](../keep-secure/windows-defender-enhanced-notifications.md) to see more informaiton about threat detections and removal.
-- [Run a Windows Defender scan from the command line](../keep-secure/run-cmd-scan-windows-defender-for-windows-10.md).
-- [Detect and block Potentially Unwanted Applications with Windows Defender](../keep-secure/enable-pua-windows-defender-for-windows-10.md) during download and install times.
+- [Windows Defender Offline in Windows 10](/windows/threat-protection/windows-defender-antivirus/windows-defender-offline) can be run directly from within Windows, without having to create bootable media.
+- [Use PowerShell cmdlets for Windows Defender](/windows/threat-protection/windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus) to configure options and run scans.
+- [Enable the Block at First Sight feature in Windows 10](/windows/threat-protection/windows-defender-antivirus/windows-defender-block-at-first-sight) to leverage the Windows Defender cloud for near-instant protection against new malware.
+- [Configure enhanced notifications for Windows Defender in Windows 10](/windows/threat-protection/windows-defender-antivirus/configure-notifications-windows-defender-antivirus) to see more informaiton about threat detections and removal.
+- [Run a Windows Defender scan from the command line](/windows/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus).
+- [Detect and block Potentially Unwanted Applications with Windows Defender](/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus) during download and install times.
 
 ### Windows Defender Advanced Threat Protection (ATP)
 With the growing threat from more sophisticated targeted attacks, a new security solution is imperative in securing an increasingly complex network ecosystem. Windows Defender Advanced Threat Protection (Windows Defender ATP) is a security service, built into Windows 10 that enables enterprise customers detect, investigate, and respond to advanced threats on their networks.
 
-[Learn more about Windows Defender Advanced Threat Protection (ATP)](../keep-secure/windows-defender-advanced-threat-protection.md).
+[Learn more about Windows Defender Advanced Threat Protection (ATP)](/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
 
 ## Management
 
 ### Use Remote Desktop Connection for PCs joined to Azure Active Directory
 
-From its release, Windows 10 has supported remote connections to PCs that are joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is joined to Azure Active Directory (Azure AD). [Learn about the requirements and supported configurations.](../manage/connect-to-remote-aadj-pc.md)
+From its release, Windows 10 has supported remote connections to PCs that are joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is joined to Azure Active Directory (Azure AD). [Learn about the requirements and supported configurations.](/windows/client-management/connect-to-remote-aadj-pc)
 
 
 ### Taskbar configuration
 
-Enterprise administrators can add and remove pinned apps from the taskbar. Users can pin apps, unpin apps, and change the order of pinned apps on the taskbar after the enterprise configuration is applied. [Learn how to configure the taskbar.](../manage/windows-10-start-layout-options-and-policies.md)
+Enterprise administrators can add and remove pinned apps from the taskbar. Users can pin apps, unpin apps, and change the order of pinned apps on the taskbar after the enterprise configuration is applied. [Learn how to configure the taskbar.](/windows/configuration/windows-10-start-layout-options-and-policies)
 
 ### Mobile device management and configuration service providers (CSPs)
 
@@ -130,7 +129,7 @@ Numerous settings have been added to the Windows 10 CSPs to expand MDM capabilit
 
 ### Shared PC mode
 
-Windows 10, Version 1607, introduces shared PC mode, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Education, and Enterprise. [Learn how to set up a shared or guest PC.](../configure/set-up-shared-or-guest-pc.md)
+Windows 10, Version 1607, introduces shared PC mode, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Education, and Enterprise. [Learn how to set up a shared or guest PC.](/windows/configuration/set-up-shared-or-guest-pc)
 
 ### Application Virtualization (App-V) for Windows 10
 
@@ -138,7 +137,7 @@ Application Virtualization (App-V) enables organizations to deliver Win32 applic
 
 With the release of Windows 10, version 1607, App-V is included with the Windows 10 for Enterprise edition. If you are new to Windows 10 and App-V or if you're upgrading from a previous version of App-V, you’ll need to download, activate, and install server- and client-side components to start delivering virtual applications to users. 
 
-[Learn how to deliver virtual applications with App-V.](../manage/appv-getting-started.md)
+[Learn how to deliver virtual applications with App-V.](/windows/application-management/app-v/appv-getting-started)
 
 ### User Experience Virtualization (UE-V) for Windows 10
 
@@ -148,7 +147,7 @@ With User Experience Virtualization (UE-V), you can capture user-customized Wind
 
 With the release of Windows 10, version 1607, UE-V is included with the Windows 10 for Enterprise edition. If you are new to Windows 10 and UE-V or upgrading from a previous version of UE-V, you’ll need to download, activate, and install server- and client-side components to start synchronizing user-customized settings across devices. 
 
-[Learn how to synchronize user-customized settings with UE-V.](../manage/uev-for-windows.md)
+[Learn how to synchronize user-customized settings with UE-V.](/windows/configuration/ue-v/uev-for-windows)
 
 ## Learn more
 

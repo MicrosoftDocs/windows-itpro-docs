@@ -12,12 +12,15 @@ ms.pagetype: smb
 author: CelesteDG
 ---
 
-![Are you ready to move to the cloud?](images/business-cloud-mode.png)
-
 # Get started: Deploy and manage a full cloud IT solution for your business
+
+![Learn how to set up a full cloud infrastructure for your business](images/business-cloud-mode.png)
+
 **Applies to:**
 
 -   Office 365 Business Premium, Azure AD Premium, Intune, Windows Store for Business, Windows 10
+
+Are you ready to move your business to the cloud or wondering what it takes to make this happen with Microsoft cloud services and tools?
 
 In this walkthrough, we'll show you how to deploy and manage a full cloud IT solution for your small to medium business using Office 365 Business Premium, Microsoft Azure AD, Intune, Windows Store for Business, and Windows 10. We'll show you the basics on how to:
 - Acquire an Office 365 business domain

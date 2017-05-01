@@ -2,6 +2,10 @@
 title: Diagnostics and Recovery Toolset 6.5
 description: Diagnostics and Recovery Toolset 6.5
 author: jamiejdt
+ms.pagetype: mdop
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.prod: w10
 ---
 
 # Diagnostics and Recovery Toolset 6.5

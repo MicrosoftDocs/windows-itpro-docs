@@ -1,0 +1,11 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Windows
+      tocHref: /windows
+      topicHref: https://docs.microsoft.com/en-us/windows/#pivot=it-pro
+      items:
+      - name: SMB
+        tocHref: /windows/smb
+        topicHref: /windows/smb/index

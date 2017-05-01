@@ -11,7 +11,7 @@ localizationpriority: medium
 
 # Microsoft HoloLens in the enterprise: requirements
 
-When you develop for HoloLens, there are [system requirements and tools](https://developer.microsoft.com/windows/holographic/install_the_tools) that you need. In an enterprise environment, there are also a few requirements to use and manage HoloLens which are listed below.
+When you develop for HoloLens, there are [system requirements and tools](https://developer.microsoft.com/windows/mixed-reality/install_the_tools) that you need. In an enterprise environment, there are also a few requirements to use and manage HoloLens which are listed below.
 
 ## General use
 - Microsoft account or Azure Active Directory (Azure AD) account

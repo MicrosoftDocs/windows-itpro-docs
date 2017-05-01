@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub, networking
-author: jdeckerMS
+author: TrudyHa
 localizationpriority: medium
 ---
 
@@ -24,7 +24,7 @@ If a wired network connection is not available, the Surface Hub can use a wirele
 ### Choose a wireless access point
 
 1.  On the Surface Hub, open **Settings** and enter your admin credentials.
-2.  Click **Network & Internet**. Under **Wi-Fi**, choose an access point. If you want Surface Hub to automatically connect to this access point, click **Connect automatically**. Click **Connect**.
+2.  Click **System**, and then click **Network & Internet**. Under **Wi-Fi**, choose an access point. If you want Surface Hub to automatically connect to this access point, click **Connect automatically**. Click **Connect**.
 
     ![Image showing Wi-Fi settings, Network & Internet page.](images/networkmgtwireless-01.png)
 
@@ -35,7 +35,7 @@ If a wired network connection is not available, the Surface Hub can use a wirele
 ### Review wireless settings
 
 1.  On the Surface Hub, open **Settings** and enter your admin credentials.
-2.  Click **Network & Internet**, then **Wi-Fi**, and then click **Advanced options**.
+2.  Click **System**, click **Network & Internet**, then **Wi-Fi**, and then click **Advanced options**.
 3.  Surface Hub shows you the properties for the wireless network connection.
 
     ![Image showing properties for connected Wi-Fi.](images/networkmgtwireless-04.png)

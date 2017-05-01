@@ -22,7 +22,7 @@ ms.sitesec: library
 -   Windows Server 2008 R2 with Service Pack 1 (SP1)
 
 
- ![](images/wedge.gif) **To delete a single site from your global Enterprise Mode site list**
+ **To delete a single site from your global Enterprise Mode site list**
 
 -   From the Enterprise Mode Site List Manager, pick the site you want to delete, and then click **Delete**.<br>
 The site is permanently removed from your list.

@@ -1,28 +1,35 @@
 ---
-title: Provisioning options for Windows 10
+title: Set up Windows devices for education
 description: Decide which option for setting up Windows 10 is right for you.
-keywords: shared cart, shared PC, school
+keywords: school, Windows device setup, education device setup
 ms.prod: w10
-ms.mktglfcycl: plan
+ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
+localizationpriority: high
 author: CelesteDG
 ---
 
-# Provisioning options for Windows 10
+# Set up Windows devices for education
 **Applies to:**
 
 -   Windows 10 
 
-You have two tools to choose from to set up PCs for your classroom: **Set up School PCs** app and the **Provision school devices** option in Windows Imaging and Configuration Designer (ICD). Choose the tool that is appropriate for how your students will sign in (Active Directory, Azure Active Directory, or no account). The following diagram compares the tools.
+You have two tools to choose from to set up PCs for your classroom: 
+  * Set up School PCs 
+  * Windows Configuration Designer
+  
+Choose the tool that is appropriate for how your students will sign in (Active Directory, Azure Active Directory, or no account). 
 
-![Which tool to use to set up Windows 10](images/setup-options.png)
+You can use the following diagram to compare the tools.
+
+![Which tool to use to set up Windows 10](images/suspc_wcd_featureslist.png)
 
 
 ## In this section
 
-- [Use the Set up School PCs app (Preview)](use-set-up-school-pcs-app.md)
-- [Technical reference for the Set up School PCs app (Preview)](set-up-school-pcs-technical.md)
+- [Use the Set up School PCs app](use-set-up-school-pcs-app.md)
+- [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md)
 - [Set up student PCs to join domain](set-up-students-pcs-to-join-domain.md)
 - [Provision student PCs with apps](set-up-students-pcs-with-apps.md)
 

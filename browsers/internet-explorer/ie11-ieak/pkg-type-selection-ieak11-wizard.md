@@ -15,7 +15,7 @@ The **Package Type Selection** page of the Internet Explorer Customization Wizar
 
 **Important**<br>You can't create a full installation package for deployment to Windows 10 computers. That option only works for computers running Windows 7 or Windows 8.1.
 
-![](images/wedge.gif) **To use the File Locations page**
+**To use the File Locations page**
 
 1.  Check the **Full Installation Package** box if you’re going to build your package on, or move your package to, a local area network (LAN). This media package includes the Internet Explorer 11 installation files, and is named **IE11-Setup-Full.exe**, in the `<system_drive>\<destination_folder>\FLAT\<os_version>\<language_code>` folder.<p>-OR-<p> 
 

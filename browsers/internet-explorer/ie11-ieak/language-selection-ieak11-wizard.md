@@ -15,7 +15,7 @@ The **Language Selection** page of the Internet Explorer Customization Wizard 11
 
 **Important**<br>Make sure that the language of your IEAK 11 installation matches the language of your custom IE11 package. If the languages don’t match, IEAK 11 won’t work properly.
 
-![](images/wedge.gif) **To use the Language Selection page**
+**To use the Language Selection page**
 
 1.  Pick the language you want your custom IE11 installation package to use.<p>
 You can support as many languages as you want, but each localized version must be in its own install package.<p>

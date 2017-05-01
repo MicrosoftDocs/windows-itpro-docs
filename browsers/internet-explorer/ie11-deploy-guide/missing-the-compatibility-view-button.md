@@ -32,7 +32,7 @@ There might be extenuating circumstances in your company, which require you to c
 
 **Important**<br>This functionality is only available in Internet Explorer for the desktop.
 
- ![](images/wedge.gif) **To change your Compatibility View settings**
+ **To change your Compatibility View settings**
 
 1.  Open Internet Explorer for the desktop, click **Tools**, and then click **Compatibility View settings**.
 

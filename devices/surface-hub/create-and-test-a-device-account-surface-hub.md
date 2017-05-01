@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
-author: jdeckerMS
+author: TrudyHa
 localizationpriority: medium
 ---
 
@@ -50,7 +50,8 @@ For detailed steps using PowerShell to provision a device account, choose an opt
 | [On-premises deployment (multiple forests)](on-premises-deployment-surface-hub-multi-forest.md) | Your organization has servers that it controls and uses to host Active Directory, Exchange, and Skype for Business (or Lync) in a multi-forest environment. |
 | [Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md) | Your organization has a mix of services, with some hosted on-premises and some hosted online through Office 365. |
 
-If you prefer to use a graphical user interface, some steps can be done using UI instead of PowerShell. 
+
+If you prefer to use a graphical user interface (UI), some steps can be done using UI instead of PowerShell. 
 For more information, see [Creating a device account using UI](create-a-device-account-using-office-365.md).
 
 

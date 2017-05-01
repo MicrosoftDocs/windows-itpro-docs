@@ -47,7 +47,7 @@ When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration D
 7. Expand **Runtime settings** and customize the package with any of the settings [described below](#what-you-can-configure).
 
     >[!IMPORTANT]
-    >If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in. If the user account is locked out, you must [perform a full device recovery](https://developer.microsoft.com/windows/holographic/reset_or_recover_your_hololens#perform_a_full_device_recovery).
+    >If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in. If the user account is locked out, you must [perform a full device recovery](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery).
 
 8. On the **File** menu, click **Save**. 
 
@@ -107,7 +107,7 @@ In Windows ICD, when you create a provisioning package for Windows Holographic, 
 
 | Setting | Description |
 | --- | --- |
-| **Accounts**  | Create a local account. HoloLens currently supports a single user only. Creating multiple local accounts in a provisioning package is not supported. <br><br>**IMPORTANT**<br>If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in. If the user account is locked out, you must [perform a full device recovery](https://developer.microsoft.com/windows/holographic/reset_or_recover_your_hololens#perform_a_full_device_recovery). |
+| **Accounts**  | Create a local account. HoloLens currently supports a single user only. Creating multiple local accounts in a provisioning package is not supported. <br><br>**IMPORTANT**<br>If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in. If the user account is locked out, you must [perform a full device recovery](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery). |
 | **Certificates** | Deploy a certificate to HoloLens.  |
 | **ConnectivityProfiles** | Deploy a Wi-Fi profile to HoloLens.   |
 | **EditionUpgrade** | [Upgrade to Windows Holographic for Business.](hololens-upgrade-enterprise.md)  |
