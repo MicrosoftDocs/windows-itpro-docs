@@ -77,7 +77,7 @@ Complete these tasks before you start the walkthrough:
 | * Hardest, need to start from scratch | * Simplest, but may take longer to start | * Fastest, Office 365 and SDS already set up |
 
 
-### <a name="noo365prodenv"></a>Get started with Microsoft Education in a production environment
+### <a name="noo365prodenv"></a>Option 1: Get started with Microsoft Education in a production environment
 Trying out Microsoft Education in a production environment means you'll be using real school data as you evaluate the features and tools. This requires more time to get fully set up and going. 
 
 To get started with Microsoft Education in a production environment:
@@ -88,7 +88,7 @@ To get started with Microsoft Education in a production environment:
 
 If you want a quicker way to evaluate Microsoft Education, you can [use a trial environment instead](#noo365trialenv).
 
-### <a name="noo365trialenv"></a> Try out Microsoft Education in a trial environment
+### <a name="noo365trialenv"></a>Option 2: Try out Microsoft Education in a trial environment
 Once you get an Office 365 education-verified tenant, trying out Microsoft Education in a trial environment is an easy way to evaluate all the features and tools. Here, you'll use promo codes and sample files as you follow the walkthrough. 
 
 To get started with Microsoft Education in a trial environment, follow these steps.
@@ -101,7 +101,7 @@ To get started with Microsoft Education in a trial environment, follow these ste
 3. Follow the instructions in [Use School Data Sync to import student data](#2-use-school-data-sync-to-import-student-data).
 4. Follow the instructions in [Try out Intune for Education](#schooluseso365tryi4e).
 
-### <a name="schooluseso365tryi4e"></a> Try out Intune for Education
+### <a name="schooluseso365tryi4e"></a>Option 3: Try out Intune for Education
 Already have an Office 365 for Education verified tenant? Just sign in with your global admin credentials to apply the Intune for Education preview trial code to your tenant and follow the rest of the walkthrough.
 
 1. Click https://aka.ms/intuneforedupreviewtrial to get started.
@@ -136,7 +136,7 @@ Don't have an Office 365 for Education verified tenant or just starting out? Fol
 
     You may need to fill in other information to provide that you qualify for an education tenant. Provide and submit the info to Microsoft to continue verification for your tenant.  
 
-As part of setting up a basic cloud infrastructure, you don't need to complete the rest of the Office 365 for Education setup so we will skip the rest of setup for now and start importing school data. You can pick up where you left off with Office 365 for Education setup once you've completed the rest of the steps in the walkthrough. See [4.2 Complete Office 365 for Education setup](#42-complete-office-365-education-setup) for info.
+As part of setting up a basic cloud infrastructure, you don't need to complete the rest of the Office 365 for Education setup so we will skip the rest of setup for now and start importing school data. You can pick up where you left off with Office 365 for Education setup once you've completed the rest of the steps in the walkthrough. See [6.3 Complete Office 365 for Education setup](#63-complete-office-365-education-setup) for info.
 
 
 ## 2. Use School Data Sync to import student data
