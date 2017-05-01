@@ -24,7 +24,7 @@ Organizations of any size can benefit from using the Store for Business:
 
 - **Scales to fit the size of your business** - For smaller businesses, with Azure AD accounts or Office 365 accounts and Windows 10 devices, you can quickly have an end-to-end process for acquiring and distributing content using the Store for Business. For larger businesses, all the capabilities of the Store for Business are available to you, or you can integrate the Store for Business with management tools, for greater control over access to apps and app updates. You can use existing work or school accounts.
 - **Bulk app acquisition** - Acquire apps in volume from the Store for Business.
-- **Centralized management** – Microsoft Store provides centralized management for inventory and order history. You can use Microsoft Store to view, manage and distribute items purchased from:
+- **Centralized management** – Microsoft Store provides centralized management for inventory, billing, permissions, and order history. You can use Microsoft Store to view, manage and distribute items purchased from:
     - **Microsoft Store for Business** – Apps and subscriptions
     - **Microsoft Store for Education** – Apps and subscriptions
     - **Office 365** – Subscriptions
@@ -57,7 +57,7 @@ Microsoft Azure Active Directory (AD) accounts for your employees:
 - Employees need Azure AD account when they access Store for Business content from Windows devices.
 - If you use a management tool to distribute and manage online-licensed apps, all employees will need an Azure AD account
 - For offline-licensed apps, Azure AD accounts are not required for employees.
-- Admins can add or remove user accounts in the [Office 365 admin center](portal.office.com/adminportal/home), even if you don’t have an Office 365 subscrition. You can access the Office 365 admin portal directly from the Microsoft Store for Business and Eduction. 
+- Admins can add or remove user accounts in the Office 365 admin center, even if you don’t have an Office 365 subscrition. You can access the Office 365 admin portal directly from the Microsoft Store for Business and Eduction. 
 
 For more information on Azure AD, see [About Office 365 and Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=708612), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
 
@@ -65,19 +65,19 @@ For more information on Azure AD, see [About Office 365 and Azure Active Directo
 
 While not required, you can use a management tool to distribute and manage apps. Using a management tool allows you to distribute content, scope app availability, and control when app updates are installed. This might make sense for larger organizations that already use a management tool. A couple of things to note about management tools:
 
--   Need to integrate with Windows 10 management framework and Azure AD.
+- Need to integrate with Windows 10 management framework and Azure AD.
 
--   Need to sync with the Store for Business inventory to distribute apps.
+- Need to sync with the Store for Business inventory to distribute apps.
 
 ## How does the Store for Business work?
 
-### Sign up!
+## Sign up!
 
 The first step for getting your organization started with the Store for Business is signing up. Sign up  using an existing account (the same one you use for Office 365, Dynamics 365, Intune, Azure, etc.) or we’ll quickly create an account for you. You must be a Global Administrator for your organization.
 
 For more information, see [Sign up for the Store for Business](sign-up-windows-store-for-business.md).
 
-### Set up
+## Set up
 
 After your admin signs up for the Store for Business, they can assign roles to other employees in your company. The admin needs Azure AD User Admin permissions to assign WSFB roles. These are the roles and their permissions.
 
@@ -95,7 +95,7 @@ In some cases, admins will need to add Azure Active Directory (AD) accounts for 
 
 Also, if your organization plans to use a management tool, you’ll need to configure your management tool to sync with the Store for Business.
 
-### Get apps and content
+## Get apps and content
 
 Once signed in to the Microsoft Store, you can browse and search for all products in the Store for Business catalog. Some apps are free, and some apps charge a price. We're continuing to add more paid apps to the Store for Business. Check back if you don't see the app that you're looking for. Currently, you can pay for apps with a credit card, and some items can be paid for with an invoice. We'll be adding more payment options over time. 
 
@@ -114,7 +114,7 @@ The Business store supports two options to license apps: online and offline. **O
 
 For more information, see [Apps in the Store for Business](apps-in-windows-store-for-business.md#licensing-model).
 
-### Distribute apps and content
+## Distribute apps and content
 
 App distribution is handled through two channels, either through the Store for Business, or using a management tool. You can use either or both distribution methods in your organization.
 
@@ -122,18 +122,18 @@ App distribution is handled through two channels, either through the Store for B
 
 - Email link – After purchasing an app, admins can send employees a link in an email message. Employees can click the link to install the app.
 - Curate private store for all employees – A private store can include content you’ve purchased from the Store, and your line-of-business apps that you’ve submitted to the Store for Business. Apps in your private store are available to all of your employees. They can browse the private store and install apps when needed.
-- To use the options above users must be signed in with an Azure AD account on a Windows 10 device.
+- To use the options above users must be signed in with an Azure AD account on a Windows 10 device. Licenses are assigned as individuals install apps. 
 
 **Using a management tool** – For larger organizations that might want a greater level of control over how apps are distributed and managed, a management tools provides other distribution options:
 
 - Scoped content distribution – Ability to scope content distribution to specific groups of employees.
 - Install apps for employees – Employees are not responsible for installing apps. Management tool installs apps for employees.
 
-Management tools can synchronize content that has been acquired in the Store for Business. If an offline application has been purchased this will also include the app package, license and metadata for the app (like, icons, count, or localized product descriptions). Using the metadata, management tools can enable portals or apps as a destination for employees to acquire apps.
+Management tools can synchronize content that has been acquired in the Store for Business. If an offline application has been purchased this will also include the app package, license and metadata for the app (like, icons, count, or localized product descriptions). Using the metadata,management tools can enable portals or apps as a destination for employees to acquire apps.
 
 For more information, see [Distribute apps to your employees from the Store for Business](distribute-apps-to-your-employees-windows-store-for-business.md).
 
-### Manage Store for Business settings and content
+## Manage Store for Business settings and content
 
 Once you are signed up with the Business store and have purchased apps, Admins can manage Store for Business settings and inventory.
 
@@ -146,7 +146,6 @@ Once you are signed up with the Business store and have purchased apps, Admins c
 - Update the name of your private store
 
 **Manage inventory**
-
 - Assign app licenses to employees
 - Reclaim and reassign app licenses
 - Manage app updates for all apps, or customize updates for each app. Online apps will automatically update from the Store. Offline apps can be updated using a management server.
