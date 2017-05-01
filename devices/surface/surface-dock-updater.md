@@ -113,12 +113,16 @@ Microsoft periodically updates Surface Dock Updater. To learn more about the app
 
 ### Version 1.0.8.0
 
+Release date: April 26, 2016
+
 This version of Surface Dock Updater adds support for the following:
 
 * Update for Surface Dock Main Chipset firmware
 * Update for Surface Dock DisplayPort firmware
 
 ### Version 2.0.22.0
+
+Release date: October 21, 2016
 
 This version of Surface Dock Updater adds support for the following:
 
@@ -127,9 +131,12 @@ This version of Surface Dock Updater adds support for the following:
 
 ### Version 2.1.6.0
 
+Release date: April 7, 2017
+
 This version of Surface Dock Updater adds support for the following:
 
-* Updated firmware for Surface Dock DisplayPort
+* Update for Surface Dock DisplayPort firmware
+* Requires Windows 10
 
 
 ## Related topics
