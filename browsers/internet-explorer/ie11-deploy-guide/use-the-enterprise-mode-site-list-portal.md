@@ -45,6 +45,8 @@ The following topics give you more information about the things that you can do 
 
 ## Related topics
 
+- [Set up the Enterprise Mode Site List Portal](set-up-enterprise-mode-site-list-portal.md)
+
 - [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)
 
 - [Enterprise Mode and the Enterprise Mode Site List](what-is-enterprise-mode.md)
