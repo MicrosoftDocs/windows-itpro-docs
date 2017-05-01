@@ -344,7 +344,7 @@ Intune for Education provides an **Express configuration** option so you can get
 
   ![Click Get Started to configure groups, apps, and settings](images/i4e_expressconfiguration_welcome.png)
 
-4. In the **Get school information (optiona)** screen, it should indicate that SDS is already configured. Click **Next**.
+4. In the **Get school information (optional)** screen, it should indicate that SDS is already configured. Click **Next**.
 
   **Figure 18** - SDS is configured
 
