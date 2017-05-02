@@ -204,13 +204,6 @@ For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 
 3. On the **Network Retrieval** tab, select the **Define these policy settings** check box.
 4. Clear the **Automatically update certificates in the Microsoft Root Certificate Program (recommended)** check box, and then click **OK**.
 
-    -and-
-
-- Apply the Privacy/LetAppsAccessEmail MDM policy from the [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsaccessemail), where:
-
-        -   **0**. User in control
-        -   **1**. Force allow
-        -   **2**. Force deny
 
 On Windows Server 2016 Nano Server:
 
@@ -316,7 +309,7 @@ To turn off Find My Device:
 
 -   Turn off the feature in the UI
 
-    -or
+    -or-
 
 -   Disable the Group Policy: **Computer Configuration** > **Administrative Template** > **Windows Components** > **Find My Device** > **Turn On/Off Find My Device**
 
