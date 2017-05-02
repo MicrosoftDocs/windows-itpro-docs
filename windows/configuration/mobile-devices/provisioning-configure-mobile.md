@@ -16,7 +16,7 @@ Windows provisioning makes it easy for IT administrators to configure end-user d
 
 A provisioning package (.ppkg) is a container for a collection of configuration settings. Using Windows Configuration Designer, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 
-Windows Configuration Designer can be installed from the [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). Windows Configuration Designer is also available as an app in the Windows Store. [Learn more about installing Windows Configuration Designer.](../provisioning-packages/provisioning-install-icd.md)
+Windows Configuration Designer can be installed from the [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). Windows Configuration Designer is also available as an app in the Microsoft Store. [Learn more about installing Windows Configuration Designer.](../provisioning-packages/provisioning-install-icd.md)
 
 ## Create a provisioning package using the wizard
 

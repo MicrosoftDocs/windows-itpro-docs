@@ -13,6 +13,9 @@ author: CelesteDG
 ---
 
 # Get started: Deploy and manage a full cloud IT solution for your business
+
+![Learn how to set up a full cloud infrastructure for your business](images/business-cloud-mode.png)
+
 **Applies to:**
 
 -   Office 365 Business Premium, Azure AD Premium, Intune, Windows Store for Business, Windows 10

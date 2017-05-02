@@ -1,5 +1,5 @@
 ---
-title: Manage Windows 10 and Windows Store tips, tricks, and suggestions (Windows 10)
+title: Manage Windows 10 and Microsoft Store tips, tricks, and suggestions (Windows 10)
 description: Windows 10 provides organizations with various options to manage user experiences to provide a consistent and predictable experience for employees. 
 keywords: ["device management"]
 ms.prod: w10
@@ -10,7 +10,7 @@ author: jdeckerms
 localizationpriority: high
 ---
 
-# Manage Windows 10 and Windows Store tips, tricks, and suggestions
+# Manage Windows 10 and Microsoft Store tips, tricks, and suggestions
 
 
 **Applies to**
@@ -18,11 +18,11 @@ localizationpriority: high
 -   Windows 10
 
 
-Since its inception, Windows 10 has included a number of user experience features that provide useful tips, tricks, and suggestions as you use Windows, as well as app suggestions from the Windows Store. These features are designed to help people get the most out of their Windows 10 experience by, for example, sharing new features, providing more details on the features they use, or sharing content available in the Windows Store. Examples of such user experiences include: 
+Since its inception, Windows 10 has included a number of user experience features that provide useful tips, tricks, and suggestions as you use Windows, as well as app suggestions from the Microsoft Store. These features are designed to help people get the most out of their Windows 10 experience by, for example, sharing new features, providing more details on the features they use, or sharing content available in the Microsoft Store. Examples of such user experiences include: 
 
 * **Windows Spotlight on the lock screen**.  Daily updated images on the lock screen that can include additional facts and tips in “hotspots” that are revealed on hover. 
 
-* **Start menu app suggestions**. App suggestions in Start that recommend productivity tool or utilities from the Windows Store. 
+* **Start menu app suggestions**. App suggestions in Start that recommend productivity tool or utilities from the Microsoft Store. 
 
 * **Additional apps on Start**.  Additional apps pre-installed on the Start screen which can enhance the user’s experience. 
 
@@ -31,11 +31,11 @@ Since its inception, Windows 10 has included a number of user experience feature
 * **Microsoft account notifications**.  For users who have a connected Microsoft account, toast notifications about their account like parental control notifications or subscription expiration. 
 
 >[!TIP]
-> On all Windows desktop editions, users can directly enable and disable Windows 10 tips, tricks, and suggestions and Windows Store suggestions.  For example, users are able to select personal photos for the lock screen as opposed to the images provided by Microsoft, or turn off tips, tricks, or suggestions as they use Windows.   
+> On all Windows desktop editions, users can directly enable and disable Windows 10 tips, tricks, and suggestions and Microsoft Store suggestions.  For example, users are able to select personal photos for the lock screen as opposed to the images provided by Microsoft, or turn off tips, tricks, or suggestions as they use Windows.   
 
 Windows 10, version 1607 (also known as the Anniversary Update), provides organizations the ability to centrally manage the type of content provided by these features through Group Policy or mobile device management (MDM). The following table describes how administrators can manage suggestions and tips in Windows 10 commercial and education editions.  
 
-## Options available to manage Windows 10 tips and tricks and Windows Store suggestions
+## Options available to manage Windows 10 tips and tricks and Microsoft Store suggestions
 
 | Windows 10 edition | Disable |Show Microsoft apps only | Show Microsoft and popular third-party apps |
 | --- | --- | --- | --- |

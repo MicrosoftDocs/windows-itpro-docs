@@ -20,6 +20,7 @@ Surface Hubs have many settings that are common to other Windows devices, but al
 
 | Setting | Location | Description |
 | ------- | -------- | ----------- |
+<<<<<<< HEAD
 | Device account | Surface Hub > Accounts | Set or change the Surface Hub's device account. |
 | Device account sync status | Surface Hub > Accounts | Check the sync status of the device account’s mail and calendar on the Surface Hub. |
 | Password rotation | Surface Hub > Accounts | Choose whether to let the Surface Hub automatically rotate the device account's password. |
@@ -45,6 +46,25 @@ Surface Hubs have many settings that are common to other Windows devices, but al
 | Session time out | Surface Hub > Session & clean up | Choose how long the device needs to be inactive before returning to the welcome screen. |
 | Sleep time out | Surface Hub > Session & clean up | Choose how long the device needs to be inactive before going to sleep mode. |
 | Friendly name | Surface Hub > About | Set the Surface Hub name that people will see when connecting wirelessly. |
+=======
+| Device account | This device > Accounts | Set or change the Surface Hub's device account. |
+| Device account sync status | This device > Accounts | Check the sync status of the device account’s mail and calendar on the Surface Hub. |
+| Password rotation | This device > Accounts | Choose whether to let the Surface Hub automatically rotate the device account's password. |
+| Change admin account password  | This device > Accounts | Change the password for the local admin account. This is only available if you configured the device to use a local admin during first run. |
+| Configure Operations Management Suite (OMS) | This device > Device management | Set up monitoring for your Surface Hub using OMS. |
+| Open the Microsoft Store app | This device > Apps & features | The Microsoft Store app is only available to admins through the Settings app. |
+| Skype for Business domain name | This device > Calling | Configure a domain name for your Skype for Business server. |
+| Default microphone and speaker settings | This device > Calling | Configure a default microphone and speaker for calls, and a default speaker for media playback. |
+| Turn off wireless projection using Miracast | This device > Wireless projection | Choose whether presenters can wirelessly project to the Surface Hub using Miracast. |
+| Require a PIN for wireless projection | This device > Wireless projection | Choose whether people are required to enter a PIN before they use wireless projection. |
+| Wireless projection (Miracast) channel | This device > Wireless projection | Set the channel for Miracast projection. |
+| Meeting info shown on the welcome screen | This device > Welcome screen | Choose whether meeting organizer, time, and subject show up on the welcome screen. |
+| Welcome screen background |  This device > Welcome screen | Choose a background image for the welcome screen. |
+| Turn on screen with motion sensors | This device > Session & clean up | Choose whether the screen turns on when motion is detected. |
+| Session time out | This device > Session & clean up | Choose how long the device needs to be inactive before returning to the welcome screen. |
+| Sleep time out | This device > Session & clean up | Choose how long the device needs to be inactive before going to sleep mode. |
+| Friendly name | This device > About | Set the Surface Hub name that people will see when connecting wirelessly. |
+>>>>>>> refs/remotes/origin/master
 | Maintenance hours | Update & security > Windows Update > Advanced options | Configure when updates can be installed. |
 | Configure Windows Server Update Services (WSUS) server | Update & security > Windows Update > Advanced options | Change whether Surface Hub receives updates from a WSUS server instead of Windows Update. |
 | Recover from the cloud | Update & security > Recovery | Reinstall the operating system on Surface Hub to a manufacturer build from the cloud. |

@@ -16,7 +16,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Provisioning packages in Windows 10 provide IT administrators with a simplified way to apply configuration settings to Windows 10 devices. Windows Configuration Designer is a tool that makes it easy to create a provisioning package. Windows Configuration Designer can be installed from the [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) or through the Windows Store.
+Provisioning packages in Windows 10 provide IT administrators with a simplified way to apply configuration settings to Windows 10 devices. Windows Configuration Designer is a tool that makes it easy to create a provisioning package. Windows Configuration Designer can be installed from the [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) or through the Microsoft Store.
 
 ## Provisioning packages
 

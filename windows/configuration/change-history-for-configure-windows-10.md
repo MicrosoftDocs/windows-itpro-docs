@@ -14,6 +14,12 @@ author: jdeckerms
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## May 2017
+
+| New or changed topic | Description |
+| --- | --- |
+| [ Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added MDM policies for privacy settings. |
+
 ## April 2017
 
 | New or changed topic | Description |

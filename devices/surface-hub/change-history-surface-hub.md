@@ -14,11 +14,20 @@ localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
+## May 2017
+
+| New or changed topic | Description |
+| --- | --- |
+| [Online or hybrid deployment using Skype Hybrid Voice environment](skype-hybrid-voice.md) | New |
+
+
 ## RELEASE: Windows 10, version 1703
 
 The topics in this library have been updated for Windows 10, version 1703 (also known as the Creators Update). The following new topics have been added:
 
 - [Miracast on existing wireless network or LAN](miracast-over-infrastructure.md)
+
+
 
 ## February 2017
 
