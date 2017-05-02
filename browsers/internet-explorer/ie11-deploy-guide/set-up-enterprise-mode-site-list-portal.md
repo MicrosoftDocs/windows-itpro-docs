@@ -74,7 +74,7 @@ Create a new Application Pool and the website, by using the IIS Manager.
 
 7. Right-click on the directory, click **Properties**, and then click the **Security** tab.
 
-8. Add your new application pool to the list (for example, *IIS AppPool\EMIEWebAppPool*) with **Full control access**, making sure the location searches the local computer.
+8. Add your new application pool to the list (for example, _IIS AppPool\EMIEWebAppPool_) with **Full control access**, making sure the location searches the local computer.
 
 9. Add **Everyone** to the list with **Read & execute access**.
 
@@ -121,9 +121,9 @@ Create a SQL Server database and run our custom query to create the Enterprise M
 **To create and prep your database**
 1. Start SQL Server Management Studio.
 
-2. Open Object Explorer and then connect to an instance fo the SQL Server Database Engine.
+2. Open **Object Explorer** and then connect to an instance of the SQL Server Database Engine.
 
-3. Expand the instance, right-click on Databases, and then click New Database.
+3. Expand the instance, right-click on **Databases**, and then click **New Database**.
 
 4. Type a database name. For example, _EMIEDatabase_.
 
@@ -131,7 +131,7 @@ Create a SQL Server database and run our custom query to create the Enterprise M
 
 6. Open the **DatabaseScripts/Create DB Tables/1_CreateEMIETables.sql** query file.
 
-7. Replace the database name placeholder with the database name you created earlier. For example, _EMIEDatabase_.
+7. Replace the database name placeholder with the database name you created earlier. Our process uses _EMIEDatabase_.
 
 8. Run the query.
 
@@ -140,14 +140,24 @@ Map your ApplicationPoolIdentity to your database, adding the db_owner role.
 
 **To map your ApplicationPoolIdentity to a SQL Server role**
 1. Start SQL Server Management Studio and connect to your database.
-2. Expand the instance and 
-Open SQL Server Management Studio and connect to your instance.
-Expand the instance and open the *Security folder at the server level, not the security folder for the database.
-Right-click on Logins and select New Login.
-Do not click Search. In the Login name field, if you have a local SQL Server instance, where IIS and SQL Server are on the same server, enter the name of your Application Pool, e.g. IIS AppPool\EMIEWebAppPool. If you have a remote SQL Server instance, where IIS and SQL Server are on the same server, enter Domain\ServerName$.
-(If a search is executed, it will resolve to an account with ServerName\AppPool Name and Management Studio will be unable to resolve the account's SID, as it is virtual) 
-Open the User Mapping page and check the database you created earlier, e.g. EMIEDatabase. Select db_owner in the list of roles.
-Click OK.
+
+2. Expand the database instance and then open the server-level **Security** folder.
+    
+    > [!IMPORTANT]
+    > Make sure you open the **Security** folder at the server level and not for the database.
+
+3. Right-click **Logins**, and then click **New Login**.
+
+4. Type the following into the **Login name** box, based on your server instance type:
+
+    - **Local SQL Server instance.** If you have a local SQL Server instance, where IIS and SQL Server are on the same server, type the name of your Application Pool. For example, _IIS AppPool\EMIEWebAppPool_.
+
+    - **Remote SQL Server instance.** If you have a remote SQL Server instance, where IIS and SQL Server are on the same server, type `Domain\ServerName$`. <!-- is this literal or placeholder text? -->
+
+        > [!IMPORTANT]
+        > Don't click **Search** in the **Login name** box. Login name searches will resolve to a ServerName\AppPool Name account and SQL Server Management Studio won't be able to resolve the account's virtual Security ID (SID).
+
+5. Open the **Login Properties (User Mapping page)**, select your database (for example, _EMIEDatabase_), click **db_owner** from the list of available roles, and then click **OK**.
 
 ## Step 5: Restart the Application Pool and website
 Using the IIS Manager, you must restart both your Application Pool and your website.
@@ -156,3 +166,49 @@ Using the IIS Manager, you must restart both your Application Pool and your webs
 1. In IIS Manager, expand your local computer in the **Connections** pane, select your website, then click **Restart** from the **Manage Website** pane.
 
 2. In the **Connections** pane, select your Application Pool, and then click **Recycle** from the **Application Pool Tasks** pane.
+
+## Step 6: Registering as an administrator
+After you've created your database and website, you'll need to register yourself (or another employee) as an administrator for the Enterprise Mode Site List Portal.
+
+**To register as an administrator**
+1. Open Microsoft Edge and type your website URL into the Address bar. For example, http://emieportal:8085.
+
+2. Click **Register now**.
+
+3. Type your name or alias into the **Email** box, making sure it matches the info in the drop-down box.
+
+4. Click **Administrator** from the **Role** box, and then click **Save**.
+
+5. Append your website URL with `/#/EMIEAdminConsole` in the Address bar to go to your administrator console. For example, http://emieportal:8085/#/EMIEAdminConsole.
+
+   A dialog box appears, prompting you for the system user name and password. The default user name is EMIEAdmin and the default password is Admin123. We strongly recommend that you change the password by using the **Change password** link as soon as you're done with your first visit.
+
+6. Select your name from the available list, and then click **Activate**.
+
+7. Go to the Enterprise Mode Site List Portal Home page and sign in.
+
+## Step 7: Configure the SMTP server and port for email notification
+After you've set up the portal, you need to configure your SMTP server and port for email notifications from the system.
+
+1. Open Visual Studio, and then open the web.config file from your deployment directory.
+
+2. Update the SMTP server and port info with your info, using this format:
+
+    ```
+       <add key="host" value="SMTPHOST.corp.contoso.com"/>
+       <add key="port" value="2500"/>
+    ```
+3. Open the Settings page in the Enterprise Mode Site List Portal, and then update the email account and password info.
+
+## Step 8: Register the scheduler service
+Register the EMIEScheduler tool and service for production site list changes.
+
+1. Open File Explorer and go to EMIEWebPortal.SchedulerService\EMIEWebPortal.SchedulerService in your deployment directory, and then copy the App_Data, bin, and Logs folders to a separate folder. For example, C:\EMIEService\.
+
+2. In Visual Studio start the Developer Command Prompt as an administrator, and then change the directory to the location of the InstallUtil.exe file. For example C:\Windows\Microsoft.NET\Framework\v4.0.30319.
+
+3. Run the command, `InstallUtil "<i><path_to_service></i>"`. For example, InstallUtil "C:\EMIEService\bin\Debug\EMIEWebPortal.SchedulerService.exe".
+ 
+   You'll be asked for your user name and password for the service.
+
+4. Open the **Run** command, type `Services.msc`, and then start the EMIEScheduler service.
