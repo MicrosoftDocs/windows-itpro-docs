@@ -1,5 +1,5 @@
 ---
-title: Microsoft Store for Business and Education (Windows 10)
+title: Microsoft Store for Business (Windows 10)
 description: Welcome to the Microsoft Store for Business and Education. You can use Microsoft Store, to find, acquire, distribute, and manage apps for your organization or school.
 ms.assetid: 527E611E-4D47-44F0-9422-DCC2D1ACBAB8
 ms.prod: w10
@@ -10,7 +10,7 @@ author: TrudyHa
 localizationpriority: high
 ---
 
-# Microsoft Store for Business and Education
+# Microsoft Store for Business
 
 
 **Applies to**
