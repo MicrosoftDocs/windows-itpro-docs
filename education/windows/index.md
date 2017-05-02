@@ -59,5 +59,5 @@ Follow these links to find step-by-step guidance on how to deploy Windows 8.1 in
 <p><b><a href="https://technet.microsoft.com/library/dn645486.aspx" target="_blank">Windows To Go</a></b><br />Learn about the benefits, limitations, and processes involved in deploying Windows To Go.</p>
 
 ## Related topics
-
+- [Microsoft Education documentation and resources](https://docs.microsoft.com/education)
 - [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/index)
