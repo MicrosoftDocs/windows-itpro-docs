@@ -82,7 +82,7 @@ Trying out Microsoft Education in a production environment means you'll be using
 
 To get started with Microsoft Education in a production environment:
 
-* Go to https://aka.ms/sdssignup and fill out the form to sign up for School Data Sync and receive a free, one-on-one support from Microsoft.
+* Go to <a href="https://aka.ms/sdssignup" target="_blank">https://aka.ms/sdssignup</a> and fill out the form to sign up for School Data Sync and receive a free, one-on-one support from Microsoft.
 
   A team from Microsoft will contact you to help get started with Microsoft Education. 
 
@@ -97,14 +97,14 @@ To get started with Microsoft Education in a trial environment, follow these ste
 
   Wait for your tenant to be education-verified before proceeding with the next step. Verification can take up to two weeks.
 
-2. Click https://aka.ms/getsdspromocode to apply a School Data Sync trial promo code to your Office 365 education tenant.
+2. Click <a href="https://aka.ms/getsdspromocode" target="_blank">https://aka.ms/getsdspromocode</a> to apply a School Data Sync trial promo code to your Office 365 education tenant.
 3. Follow the instructions in [Use School Data Sync to import student data](#2-use-school-data-sync-to-import-student-data).
 4. Follow the instructions in [Try out Intune for Education](#schooluseso365tryi4e).
 
 ### <a name="schooluseso365tryi4e"></a>Option 3: Try out Intune for Education
 Already have an Office 365 for Education verified tenant? Just sign in with your global admin credentials to apply the Intune for Education preview trial code to your tenant and follow the rest of the walkthrough.
 
-1. Click https://aka.ms/intuneforedupreviewtrial to get started.
+1. Click <a href="https://aka.ms/intuneforedupreviewtrial" target="_blank">https://aka.ms/intuneforedupreviewtrial</a> to get started.
 2. In the **Intune for Education Trial** page, click **Sign in**.
 
   **Figure 1** - Intune for Education trial sign in page
@@ -120,14 +120,14 @@ Schools can use Office 365 to save time and be more productive. Built with power
 
 Don't have an Office 365 for Education verified tenant or just starting out? Follow these steps to set up an Office 365 for Education tenant. [Learn more about Office 365 for Education plans and pricing](https://products.office.com/en-us/academic/compare-office-365-education-plans).
 
-1. Go to the [Office 365 for Education sign up page](https://signup.microsoft.com/Signup?OfferId=03ee83a5-5cb4-4545-aca9-33ead43f222a,d764709a-7763-45ef-a2a8-db5b8b6ae704&DL=ENTERPRISEPREMIUM_FACULTY) to sign up for a free subscription for your school.
+1. Go to the <a href="https://signup.microsoft.com/Signup?OfferId=03ee83a5-5cb4-4545-aca9-33ead43f222a,d764709a-7763-45ef-a2a8-db5b8b6ae704&DL=ENTERPRISEPREMIUM_FACULTY" target="_blank">Office 365 for Education sign up page</a> to sign up for a free subscription for your school.
 2. Create an account and a user ID and password to use to sign into your account. 
 
   **Figure 2** - Office 365 account creation
 
   ![Create an Office 365 account](images/o365_createaccount.png)
 
-3. Save your sign-in info so you can use it to sign into https://portal.office.com (the sign-in page). Click **You're ready to go...** 
+3. Save your sign-in info so you can use it to sign into <a href="https://portal.office.com" target="_blank">https://portal.office.com</a> (the sign-in page). Click **You're ready to go...** 
 4. In the **Verify eligibility for Microsoft Office 365 for Education** screen:
   1. Add your domain name and follow the steps to confirm ownership of the domain. 
   2. Choose your DNS hosting provider to see step-by-step instructions on how to confirm that you own the domain.
@@ -278,10 +278,10 @@ To learn more about the CSV files that are required and the info you need to inc
 That's it for importing sample school data using SDS.
 
 ## 3. Configure Microsoft Store for Education
-You'll need to configure Microsoft Store for Education to accept the service agreement and make sure your Microsoft Store account is associated with Intune for Education.
+You'll need to configure Microsoft Store for Education to accept the services agreement and make sure your Microsoft Store account is associated with Intune for Education.
 
 **Associate your Microsoft Store account with Intune for Education**
-1. Sign into <a href="https://businessstore.microsoft.com" target="_blank">Microsoft Store for Education</a>.
+1. Sign into <a href="https://educationstore.microsoft.com" target="_blank">Microsoft Store for Education</a>.
 2. Accept the Microsoft Store for Business and Education Services Agreement. 
 
   This will take you to the Microsoft Store for Education portal.
@@ -306,9 +306,9 @@ You'll need to configure Microsoft Store for Education to accept the service agr
 Your Microsoft Store for Education account is now linked to Intune for Education so let's set that up next.
 
 ## 4. Use Intune for Education to manage groups, apps, and settings
-Intune for Education is a streamlined device management solution for educational institutions that can be used to quickly set up and manage Windows 10 devices for your school. It provides a new streamlined UI with the enterprise readiness and resiliency of the Intune service. You can learn more about Intune for Education by reading the **[Intune for Education documentation](https://docs.microsoft.com/intune-education)**. 
+Intune for Education is a streamlined device management solution for educational institutions that can be used to quickly set up and manage Windows 10 devices for your school. It provides a new streamlined UI with the enterprise readiness and resiliency of the Intune service. You can learn more about Intune for Education by reading the <a href="https://docs.microsoft.com/intune-education" target="_blank">Intune for Education documentation</a>. 
 
-### Example - Force a sync, set up Intune for Education, buy apps from the Store, and install the apps
+### Example - Set up Intune for Education, buy apps from the Store, and install the apps
 In this walkthrough, we'll go through a sample scenario and walk you through the steps to:
 - [Use express configuration to quickly set up Intune for Education](#setupintune)
 - [Use Intune for Education to buy apps from the Microsoft Store for Education](#addappsfrommsfe)
@@ -414,7 +414,7 @@ Intune for Education provides an **Express configuration** option so you can get
 
 - **Example 1 - Minecraft: Education Edition**
 
-  If you would like to purchase Minecraft: Education Edition or want to learn more about volume licensing, see <a href="https://technet.microsoft.com/en-us/edu/windows/school-get-minecraft" target="_blank">For IT administrators - get Minecraft: Education Edition</a>.
+  If you would like to purchase Minecraft: Education Edition or want to learn how to get, distribute, and manage permissions for Minecraft: Education Edition, see <a href="https://technet.microsoft.com/en-us/edu/windows/school-get-minecraft" target="_blank">For IT administrators - get Minecraft: Education Edition</a>.
 
 - **Example 2 - Free educational/reference apps**
 
@@ -449,7 +449,7 @@ Intune for Education provides an **Express configuration** option so you can get
 
     ![Apps inventory in Store for Business](images/msfe_manageapps_inventory_grouped.png)
 
-    In the **Private store** column of the **Apps & software** page, the status for some apps will indicate that it's "In private store" while others will say "Not in private store". We won't go over this in the walkthrough, but you can learn more about this in [Distribute apps using your private store](https://technet.microsoft.com/en-us/itpro/windows/manage/distribute-apps-from-your-private-store).
+    In the **Private store** column of the **Apps & software** page, the status for some apps will indicate that it's "In private store" while others will say "Not in private store". We won't go over this in the walkthrough, but you can learn more about this in <a href="https://technet.microsoft.com/en-us/itpro/windows/manage/distribute-apps-from-your-private-store" target="_blank">Distribute apps using your private store</a>.
 
     > [!NOTE]  
     > You'll see in the above screenshot that some apps say that **Add is in progress**. Sync happens automatically, but it may take up to 24 hours for your organization's private store and 12 hours for Intune for Education to sync all your purchased apps. 
@@ -500,7 +500,7 @@ We recommend using the latest build of Windows 10, version 1703 on your educatio
 
 **<a name="usesetupschoolpcs"></a>Option 1: Set up a device using the Set up School PCs app**
 
-1. Follow the steps in [Use the Set up School PCs app](https://docs.microsoft.com/en-us/education/windows/use-set-up-school-pcs-app) to quickly set up one or more student PCs.
+1. Follow the steps in <a href="https://docs.microsoft.com/en-us/education/windows/use-set-up-school-pcs-app" target="_blank">Use the Set up School PCs app</a> to quickly set up one or more student PCs.
 2. Follow the steps in [5.2 Verify correct device setup](#52-verify-correct-device-setup).
 
 
@@ -680,5 +680,6 @@ If you're a student, follow these links to get find out what resources and servi
 
 ## Related topics
 
-Microsoft Education documentation and resources
-<!-- add missing link here -->
+<a href="https://docs.microsoft.com/education" target="_blank">Microsoft Education documentation and resources</a>
+<a href="https://docs.microsoft.com/en-us/education/window" target="_blank">Windows 10 for Education</a>
+
