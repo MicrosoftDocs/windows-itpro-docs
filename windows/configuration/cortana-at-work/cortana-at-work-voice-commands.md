@@ -34,11 +34,11 @@ To enable voice commands in Cortana
 
 2.	**Install the VCD file on employees' devices**. You can use System Center Configuration Manager or Microsoft Intune to deploy and install the VCD file on your employees' devices, the same way you deploy and install any other package in your organization.
 
-## Test scenario: Use voice commands in a Windows Store app
+## Test scenario: Use voice commands in a Microsoft Store app
 While these aren't line-of-business apps, we've worked to make sure to implement a VCD file, allowing you to test how the functionality works with Cortana in your organization.
 
-**To get a Windows Store app** 
-1.	Go to the Windows Store, scroll down to the **Collections** area, click **Show All**, and then click **Better with Cortana**.
+**To get a Microsoft Store app** 
+1.	Go to the Microsoft Store, scroll down to the **Collections** area, click **Show All**, and then click **Better with Cortana**.
 
 2.	Click **Uber**, and then click **Install**.
 

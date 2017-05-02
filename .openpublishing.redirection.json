@@ -8152,7 +8152,7 @@
 },
 {
 "source_path": "windows/keep-secure/collect-wip-audit-event-logs.md",
-"redirect_url": "/windows/threat-protection/collect-wip-audit-event-logs",
+"redirect_url": "/windows/threat-protection/windows-information-protection/collect-wip-audit-event-logs",
 "redirect_document_id": true
 },
 {
@@ -8208,6 +8208,11 @@
 {
 "source_path": "windows/keep-secure/security-technologies.md",
 "redirect_url": "/windows/windows-10/index",
+"redirect_document_id": true
+},
+{
+"source_path": "education/get-started/index.md",
+"redirect_url": "/education/get-started/get-started-with-microsoft-education",
 "redirect_document_id": true
 }
 ]

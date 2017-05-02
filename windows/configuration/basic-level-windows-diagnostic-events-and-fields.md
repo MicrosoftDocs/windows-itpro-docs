@@ -20,7 +20,7 @@ ms.author: brianlic
 - Windows 10, version 1703
 
 
-The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Windows Store. When the level is set to Basic, it also includes the Security level information.
+The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store. When the level is set to Basic, it also includes the Security level information.
 
 The Basic level helps to identify problems that can occur on a particular device hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version. This helps Microsoft fix operating system or app problems.
 
@@ -1707,7 +1707,7 @@ The following fields are available:
 - **WUDODownloadMode**  Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded WU updates to other devices on the same network.
 - **OSWUAutoUpdateOptions**  Retrieves the auto update settings on the device.
 - **AppStoreAutoUpdate**  Retrieves the Appstore settings for auto upgrade. (Enable/Disabled).
-- **AppStoreAutoUpdatePolicy**  Retrieves the Windows Store App Auto Update group policy setting
+- **AppStoreAutoUpdatePolicy**  Retrieves the Microsoft Store App Auto Update group policy setting
 - **AppStoreAutoUpdateMDM**  Retrieves the App Auto Update value for MDM: 0 - Disallowed. 1 - Allowed. 2 - Not configured. Default: [2] Not configured
 - **DelayUpgrade**  Retrieves the Windows upgrade flag for delaying upgrades.
 - **UpdateServiceURLConfigured**  Retrieves if the device is managed by Windows Server Update Services (WSUS).
@@ -2009,7 +2009,7 @@ The following fields are available:
 - **objectInstanceId**  ProgramId (a hash of Name, Version, Publisher, and Language of an application used to identify it).
 - **PackageFullName**  The package full name for a Store application.
 - **InventoryVersion**  The version of the inventory file generating the events.
-- **StoreAppType**  A sub-classification for the type of Windows Store app, such as UWP or Win8StoreApp.
+- **StoreAppType**  A sub-classification for the type of Microsoft Store app, such as UWP or Win8StoreApp.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryApplicationRemove
@@ -2594,7 +2594,7 @@ The following fields are available:
 - **WUDeviceID**  The unique identifier of a specific device, used to identify how many devices are encountering success or a particular issue.
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
 - **ProcessName**  The process name of the caller who initiated API calls, in the event where CallerApplicationName was not provided.
-- **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Microsoft Store, etc.).
 - **StatusCode**  Indicates the result of a CheckForUpdates event (success, cancellation, failure code HResult).
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
 - **FlightRing**  The ring (speed of getting builds) that a device is on if participating in flighting (pre-release builds).
@@ -2675,7 +2675,7 @@ The following fields are available:
 - **BiosSKUNumber**  The sku number of the device BIOS.
 - **ClientVersion**  The version number of the software distribution client.
 - **WUDeviceID**  UniqueDeviceID
-- **ServerId**  Identifier for the service to which the software distribution client is connecting, such as Windows Update and Windows Store.
+- **ServerId**  Identifier for the service to which the software distribution client is connecting, such as Windows Update and Microsoft Store.
 - **EventType**  Possible values are "Child", "Bundle", or "Driver".
 - **UpdateId**  Unique Update ID
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
@@ -2707,7 +2707,7 @@ The following fields are available:
 - **WUDeviceID**  The unique identifier of a specific device, used to identify how many devices are encountering success or a particular issue.
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
 - **ProcessName**  The process name of the caller who initiated API calls, in the event where CallerApplicationName was not provided.
-- **ServiceGuid**  An ID which represents which service the software distribution client is installing content for (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID which represents which service the software distribution client is installing content for (Windows Update, Microsoft Store, etc.).
 - **StatusCode**  Indicates the result of a Download event (success, cancellation, failure code HResult).
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
 - **FlightRing**  The ring (speed of getting builds) that a device is on if participating in flighting (pre-release builds).
@@ -2791,7 +2791,7 @@ The following fields are available:
 - **WUDeviceID**  The unique identifier of a specific device, used to identify how many devices are encountering success or a particular issue.
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
 - **ProcessName**  The process name of the caller who initiated API calls, in the event where CallerApplicationName was not provided.
-- **ServiceGuid**  An ID which represents which service the software distribution client is installing content for (Windows Update, Windows Store, etc.).
+- **ServiceGuid**  An ID which represents which service the software distribution client is installing content for (Windows Update, Microsoft Store, etc.).
 - **StatusCode**  Indicates the result of an installation event (success, cancellation, failure code HResult).
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
 - **FlightRing**  The ring that a device is on if participating in the Windows Insider Program.
@@ -2859,7 +2859,7 @@ The following fields are available:
 - **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed
 - **SusClientId**  The unique device ID controlled by the software distribution client
 - **WUAVersion**  The version number of the software distribution client
-- **ServiceID**  An ID which represents which service the software distribution client is connecting to (Windows Update, Windows Store, etc.)
+- **ServiceID**  An ID which represents which service the software distribution client is connecting to (Windows Update, Microsoft Store, etc.)
 - **UrlPath**  Path to the SLS cab that was downloaded
 - **HResult**  Indicates the result code of the event (success, cancellation, failure code HResult)
 - **IsBackground**  Indicates whether the SLS discovery event took place in the foreground or background
@@ -2868,7 +2868,7 @@ The following fields are available:
 
 ### SoftwareUpdateClientTelemetry.UpdateDetected
 
-This event sends data about an AppX app that has been updated from the Windows Store, including what app needs an update and what version/architecture is required, in order to understand and address problems with apps getting required updates.
+This event sends data about an AppX app that has been updated from the Microsoft Store, including what app needs an update and what version/architecture is required, in order to understand and address problems with apps getting required updates.
 
 The following fields are available:
 
@@ -2890,7 +2890,7 @@ The following fields are available:
 - **BiosSKUNumber**  The device's SKU as defined in system bios
 - **ClientVersion**  The version number of the software distribution client
 - **ProcessName**  The process name of the caller who initiated API calls, in the event where CallerApplicationName was not provided
-- **ServiceGuid**  An ID which represents which service the software distribution client is connecting to (Windows Update, Windows Store, etc.)
+- **ServiceGuid**  An ID which represents which service the software distribution client is connecting to (Windows Update, Microsoft Store, etc.)
 - **StatusCode**  Indicates the result code of the event (success, cancellation, failure code HResult)
 - **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode wasn't specific enough
 - **FlightRing**  The ring (speed of getting builds) that a device is on if participating in flighting (pre-release builds).
@@ -2919,7 +2919,7 @@ This event identifies whether updates have been tampered with and protects again
 The following fields are available:
 
 - **EventScenario**  The purpose of this event, such as scan started, scan succeeded, or scan failed.
-- **ServiceGuid**  Identifies the service to which the software distribution client is connected, Example: Windows Update or Windows Store
+- **ServiceGuid**  Identifies the service to which the software distribution client is connected, Example: Windows Update or Microsoft Store
 - **MetadataIntegrityMode**  The mode of the transport metadata integrity check. 0 = unknown; 1 = ignore; 2 = audit; 3 = enforce
 - **StatusCode**  The status code of the event.
 - **ExtendedStatusCode**  The secondary status code of the event.
@@ -3263,7 +3263,7 @@ The following fields are available:
 - **DumpFileAttributes**  Codes that identify the type of data contained in the dump file
 
 
-## Windows Store events
+## Microsoft Store events
 
 ### Microsoft.Windows.StoreAgent.Telemetry.AbortedInstallation
 
