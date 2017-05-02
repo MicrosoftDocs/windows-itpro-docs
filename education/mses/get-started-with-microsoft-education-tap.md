@@ -88,14 +88,13 @@ Schools can use Office 365 to save time and be more productive. Built with power
 
 5. **Optional**. On the **Welcome to the new Office 365 admin center** pop-up window, click **Next** to get a brief tour of the admin center.
 
-
 As part of setting up a basic cloud infrastructure, you don't need to complete the rest of the Office 365 for Education setup so we will skip the rest of setup for now and start importing school data. You can pick up where you left off with Office 365 for Education setup once you've completed the rest of the steps in the walkthrough. See [6.3 Complete Office 365 for Education setup](#63-complete-office-365-education-setup) for info.
 
 
 ## 2. Use School Data Sync to import student data
-School Data Sync (SDS) helps you import Student Information System (SIS) data into Office 365. It helps automate the process for importing and integrating SIS data that you can use with Office 365 and apps like OneNote Class Notebooks. 
+School Data Sync (SDS) helps you import Student Information System (SIS) data into Office 365. It helps automate the process for importing and integrating SIS data that you can use with Office 365 and apps like Classroom and OneNote Class Notebooks. To learn more about School Data Sync (SDS) and the deployment methods available to you, see <a href="https://aka.ms/sdsoverview" target="_blank">Overview of School Data Sync and Classroom</a>. We recommend using comma separated value (CSV) files with SDS to synchronize SIS users with Office 365. However, SDS supports many other deployment options such as PowerSchool Sync, Clever Sync, and OneRoster CSV files. See the *For IT admins* section in [Get more info](#get-more-info) to learn more about these other deployment options.
 
-Follow all the steps in this section to use SDS and sample CSV files in a trial environment. To use SDS in a production environment, see step 2 in [Try out Microsoft Education in a production environment](#noo365prodenv) instead.
+In this section of the walkthrough, we created a new education tenant and we need to add new users. To simplify this process, we will use sample SDS files to prepopulate our tenant with school data. 
 
 **<a name="downloadcsvsamples"></a>Download sample school data**
 
