@@ -74,7 +74,7 @@ The TPM Group Policy settings in the following list are located at:
 
     This policy setting allows you to manage the maximum number of authorization failures for the TPM for all standard users. If the total number of authorization failures for all users equals the duration that is set for the policy, all users are prevented from sending commands to the TPM that require authorization.
 
-For information about mitigating dictionary attacks that use the lockout settings, see [TPM fundamentals](tpm-fundamentals.md#how-the-tpm-mitigates-dictionary-attacks).
+For information about mitigating dictionary attacks that use the lockout settings, see [TPM fundamentals](tpm-fundamentals.md#anti-hammering).
 
 ## Use the TPM cmdlets
 
