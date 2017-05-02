@@ -44,7 +44,7 @@ You'll create the provisioning package on a PC running Windows 10, save the pack
 
 Currently, you can add these items to provisioning packages for Surface Hub:
 - **Certificates** - You can add certificates, if needed, to authenticate to Microsoft Exchange.
-- **Universal Windows Platform (UWP) apps** - You can install UWP apps. This can be an offline-licensed app from the Windows Store for Business, or an app created by an in-house dev.
+- **Universal Windows Platform (UWP) apps** - You can install UWP apps. This can be an offline-licensed app from the Microsoft Store for Business, or an app created by an in-house dev.
 - **Policies** - Surface Hub supports a subset of the policies in the [Policy configuration service provider](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). Some of those policies can be configured with ICD.
 - **Settings** - You can configure any setting in the [SurfaceHub configuration service provider](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx).
 
@@ -90,17 +90,17 @@ You can use provisioning packages to install certificates that will allow the de
 
 
 ### Add a Universal Windows Platform (UWP) app to your package
-Before adding a UWP app to a provisioning package, you need the app package (either an .appx, or .appxbundle) and any dependency files. If you acquired the app from the Windows Store for Business, you will also need the *unencoded* app license. See [Distribute offline apps](https://technet.microsoft.com/itpro/windows/manage/distribute-offline-apps#download-an-offline-licensed-app) to learn how to download these items from the Windows Store for Business.
+Before adding a UWP app to a provisioning package, you need the app package (either an .appx, or .appxbundle) and any dependency files. If you acquired the app from the Microsoft Store for Business, you will also need the *unencoded* app license. See [Distribute offline apps](https://technet.microsoft.com/itpro/windows/manage/distribute-offline-apps#download-an-offline-licensed-app) to learn how to download these items from the Microsoft Store for Business.
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **UniversalAppInstall** > **DeviceContextApp**.
 
-2. Enter a **PackageFamilyName** for the app and then click **Add**. For consistency, use the app's package family name. If you acquired the app from the Windows Store for Business, you can find the package family name in the app license. Open the license file using a text editor, and use the value between the \<PFM\>...\</PFM\> tags.
+2. Enter a **PackageFamilyName** for the app and then click **Add**. For consistency, use the app's package family name. If you acquired the app from the Microsoft Store for Business, you can find the package family name in the app license. Open the license file using a text editor, and use the value between the \<PFM\>...\</PFM\> tags.
 
 3. For **ApplicationFile**, click **Browse** to find and select the target app (either an \*.appx or \*.appxbundle).
 
 4. For **DependencyAppxFiles**, click **Browse** to find and add any dependencies for the app. For Surface Hub, you will only need the x64 versions of these dependencies.
 
-If you acquired the app from the Windows Store for Business, you will also need to add the app license to your provisioning package.
+If you acquired the app from the Microsoft Store for Business, you will also need to add the app license to your provisioning package.
 
 1. Make a copy of the app license, and rename it to use a **.ms-windows-store-license** extension. For example, "example.xml" becomes "example.ms-windows-store-license".
 

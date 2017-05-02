@@ -25,7 +25,7 @@ Surface Hubs have many settings that are common to other Windows devices, but al
 | Password rotation | This device > Accounts | Choose whether to let the Surface Hub automatically rotate the device account's password. |
 | Change admin account password  | This device > Accounts | Change the password for the local admin account. This is only available if you configured the device to use a local admin during first run. |
 | Configure Operations Management Suite (OMS) | This device > Device management | Set up monitoring for your Surface Hub using OMS. |
-| Open the Windows Store app | This device > Apps & features | The Windows Store app is only available to admins through the Settings app. |
+| Open the Microsoft Store app | This device > Apps & features | The Microsoft Store app is only available to admins through the Settings app. |
 | Skype for Business domain name | This device > Calling | Configure a domain name for your Skype for Business server. |
 | Default microphone and speaker settings | This device > Calling | Configure a default microphone and speaker for calls, and a default speaker for media playback. |
 | Turn off wireless projection using Miracast | This device > Wireless projection | Choose whether presenters can wirelessly project to the Surface Hub using Miracast. |
