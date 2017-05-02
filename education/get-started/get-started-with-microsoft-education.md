@@ -48,7 +48,7 @@ In this walkthrough, we'll show you the basics on how to:
 
 This diagram shows a high-level view of what we cover in this walkthrough. The numbers correspond to the sections in the walkthrough and roughly correspond to the flow of the overall process; but, note that not all sections in this walkthrough are shown in the diagram.
 
-![Deploy and manage a full cloud IT solution using Microsoft Education](images/microsoft-education-workflow.png)
+![Deploy and manage a full cloud IT solution using Microsoft Education](images/microsoft-education-get-started-workflow.png)
 
 ## Prerequisites
 Complete these tasks before you start the walkthrough:
@@ -414,7 +414,7 @@ Intune for Education provides an **Express configuration** option so you can get
 
 - **Example 1 - Minecraft: Education Edition**
 
-  If you would like to purchase Minecraft: Education Edition or want to learn how to get, distribute, and manage permissions for Minecraft: Education Edition, see <a href="https://technet.microsoft.com/en-us/edu/windows/school-get-minecraft" target="_blank">For IT administrators - get Minecraft: Education Edition</a>.
+  If you would like to purchase Minecraft: Education Edition or want to learn how to get, distribute, and manage permissions for Minecraft: Education Edition, see <a href="https://docs.microsoft.com/education/windows/school-get-minecraft" target="_blank">For IT administrators - get Minecraft: Education Edition</a>.
 
 - **Example 2 - Free educational/reference apps**
 
@@ -449,7 +449,7 @@ Intune for Education provides an **Express configuration** option so you can get
 
     ![Apps inventory in Store for Business](images/msfe_manageapps_inventory_grouped.png)
 
-    In the **Private store** column of the **Apps & software** page, the status for some apps will indicate that it's "In private store" while others will say "Not in private store". We won't go over this in the walkthrough, but you can learn more about this in <a href="https://technet.microsoft.com/en-us/itpro/windows/manage/distribute-apps-from-your-private-store" target="_blank">Distribute apps using your private store</a>.
+    In the **Private store** column of the **Apps & software** page, the status for some apps will indicate that it's "In private store" while others will say "Not in private store". We won't go over this in the walkthrough, but you can learn more about this in <a href="https://docs.microsoft.com/microsoft-store/distribute-apps-from-your-private-store" target="_blank">Distribute apps using your private store</a>.
 
     > [!NOTE]  
     > You'll see in the above screenshot that some apps say that **Add is in progress**. Sync happens automatically, but it may take up to 24 hours for your organization's private store and 12 hours for Intune for Education to sync all your purchased apps. 
@@ -658,28 +658,28 @@ Adding a new device to your cloud-based tenant is easy. For new devices, you can
 
 ## Get more info
 
-### For IT admins
+### Microsoft Education documentation and resources hub
+See the <a href="https://docs.microsoft.com/education" target="_blank">Microsoft Education documentation and resources</a> hub for links to more content for IT admins, teachers, students, and education app developers.
+
+### Info related to this walkthrough
+
+**For IT admins**
+
 To learn more about the services and tools mentioned in this walkthrough, and learn what other tasks you can do, follow these links:
-- <a href="https://technet.microsoft.com/en-us/edu/windows/education-scenarios-store-for-business" target="_blank">Working with Store for Business - education scenarios</a>
+- <a href="https://docs.microsoft.com/education/windows/education-scenarios-store-for-business" target="_blank">Working with Microsoft Store for Education</a>
 - *Resources for anyone who uses Office 365* and *Resources for admins* in <a href="https://support.office.com/en-US/article/Get-started-with-Office-365-Education-AB02ABE5-A1EE-458C-B749-5B44416CCF14" target="_blank">Get started with Office 365 for Education</a>
-- School Data Sync
+- School Data Sync deployment options
   - Deployment using CSV files: <a href="https://aka.ms/sdscsv" target="_blank">How to deploy School Data Sync by using CSV files</a> and <a href="https://aka.ms/sdscsvattributes" target="_blank">CSV files for School Data Sync</a>
   - Deployment using PowerSchool Sync: <a href="https://aka.ms/sdspowerschool" target="_blank">How to deploy School Data Sync by using PowerSchool Sync</a> and <a href="https://aka.ms/sdspowerschoolattributes" target="_blank">School Data Sync required attributes for PowerSchool Sync</a>
   - Deployment using Clever Sync: <a href="https://aka.ms/sdsclever" target="_blank">How to deploy School Data Sync by using Clever Sync</a> and <a href="https://aka.ms/sdscleverattributes" target="_blank">School Data Sync required attributes for Clever sync</a>
   - Deployment using OneRoster CSV files: <a href="https://aka.ms/sdsoneroster" target="_blank">How to deploy School Data Sync by using OneRoster CSV files</a>
 
-### For teachers
+**For teachers**
+
 Whether it's in the classroom, getting the most out of your devices, or learning some of the cool things you can do, we've got teachers covered. Follow these links for more info:
-- [Microsoft Educator Community](https://education.microsoft.com/)
 - *Resources for anyone who uses Office 365* in <a href="https://support.office.com/en-US/article/Get-started-with-Office-365-Education-AB02ABE5-A1EE-458C-B749-5B44416CCF14" target="_blank">Get started with Office 365 for Education</a>
 - <a href="https://education.microsoft.com/windows-10-online-resources-for-teachers" target="_blank">Windows 10 online resources for teachers</a>
 
-### For students
-If you're a student, follow these links to get find out what resources and services are available to you:
-- <a href="https://www.microsoft.com/en-us/education/students/resources/default.aspx" target="_blank">Student resources</a>
 
-## Related topics
 
-<a href="https://docs.microsoft.com/education" target="_blank">Microsoft Education documentation and resources</a>
-<a href="https://docs.microsoft.com/en-us/education/window" target="_blank">Windows 10 for Education</a>
 
