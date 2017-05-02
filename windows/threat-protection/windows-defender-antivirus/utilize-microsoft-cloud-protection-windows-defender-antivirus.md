@@ -33,7 +33,7 @@ Enabling cloud-delivered protection helps detect and block new malware - even if
 
 Cloud-delivered protection is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies.
 
-The following table describes the differences in cloud-based protection between recent versions of Windows and System Center Configuration Manager.
+The following table describes the differences in cloud-delivered protection between recent versions of Windows and System Center Configuration Manager.
 
 
 Feature | Windows 8.1 (Group Policy) | Windows 10, version 1607 (Group Policy) | Windows 10, version 1703 (Group Policy) | Configuration manager 2012 | Configuration manager (current branch) | Microsoft Intune
@@ -54,4 +54,4 @@ You can also [configure Windows Defender AV to automatically receive new protect
 [Specify the cloud-delivered protection level](specify-cloud-protection-level-windows-defender-antivirus.md) | You can specify the level of protection offered by the cloud with Group Policy and System Center Configuration Manager. The protection level will affect the amount of information shared with the cloud and how aggressively new files are blocked.
 [Configure and validate network connections for Windows Defender Antivirus](configure-network-connections-windows-defender-antivirus.md) | There are certain Microsoft URLs that your network and endpoints must be able to connect to for cloud-delivered protection to work effectively. This topic lists the URLs that should be allowed via firewall or network filtering rules, and instructions for confirming your network is properly enrolled in cloud-delivered protection.
 [Configure the Block at First Sight feature](configure-block-at-first-sight-windows-defender-antivirus.md) | The Block at First Sight feature can block new malware within seconds, without having to wait hours for a traditional signature. You can enable and configure it with System Center Configuration Manager and Group Policy.
-[Configure the cloud block timeout period](configure-cloud-block-timeout-period-windows-defender-antivirus.md) | Windows Defender Antivirus can block suspicious files from running while it queries our cloud-based protection service. You can configure the amount of time the file will be prevented from running with System Center Configuration Manager and Group Policy.
+[Configure the cloud block timeout period](configure-cloud-block-timeout-period-windows-defender-antivirus.md) | Windows Defender Antivirus can block suspicious files from running while it queries our cloud-delivered protection service. You can configure the amount of time the file will be prevented from running with System Center Configuration Manager and Group Policy.
