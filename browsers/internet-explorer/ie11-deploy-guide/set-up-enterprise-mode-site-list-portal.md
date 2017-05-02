@@ -207,7 +207,7 @@ Register the EMIEScheduler tool and service for production site list changes.
 
 2. In Visual Studio start the Developer Command Prompt as an administrator, and then change the directory to the location of the InstallUtil.exe file. For example C:\Windows\Microsoft.NET\Framework\v4.0.30319.
 
-3. Run the command, `InstallUtil "<i><path_to_service></i>"`. For example, InstallUtil "C:\EMIEService\bin\Debug\EMIEWebPortal.SchedulerService.exe".
+3. Run the command, `InstallUtil "<path_to_service>"`. For example, InstallUtil "C:\EMIEService\bin\Debug\EMIEWebPortal.SchedulerService.exe".
  
    You'll be asked for your user name and password for the service.
 
