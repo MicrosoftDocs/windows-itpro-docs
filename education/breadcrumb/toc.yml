@@ -2,6 +2,14 @@
   tocHref: /
   topicHref: /
   items:
-    - name: Windows
-      tocHref: /education/windows
-      topicHref: /education/windows/index
+    - name: Education
+      tocHref: /education/
+      topicHref: /education/index
+      items:
+      - name: Get started
+        tocHref: /education/get-started
+        topicHref: /education/get-started/index
+      - name: Windows
+        tocHref: /education/windows
+        topicHref: /education/windows/index
+        
