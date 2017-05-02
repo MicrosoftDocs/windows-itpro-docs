@@ -42,6 +42,7 @@ The following topics give you more information about the things that you can do 
 |Topic |Description |
 |------|------------|
 |[Set up the Enterprise Mode Site List Portal](set-up-enterprise-mode-site-list-portal.md) |Details about what needs to be set up before you can use the Enterprise Mode Site List portal in your organization. |
+|[Role-based scenarios for the Enterprise Mode Site List Portal](role-based-scenarios-enterprise-mode-site-list-portal.md) |Details about what each user-assigned role can do on the Enterprise Mode Site List Portal. |
 
 
 ## Related topics
