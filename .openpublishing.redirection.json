@@ -8152,7 +8152,7 @@
 },
 {
 "source_path": "windows/keep-secure/collect-wip-audit-event-logs.md",
-"redirect_url": "/windows/threat-protection/collect-wip-audit-event-logs",
+"redirect_url": "/windows/threat-protection/windows-information-protection/collect-wip-audit-event-logs",
 "redirect_document_id": true
 },
 {
