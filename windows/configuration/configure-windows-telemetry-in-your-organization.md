@@ -156,7 +156,7 @@ The principle of least privileged access guides access to telemetry data. Micros
 
 ### Retention
 
-Microsoft believes in and practices information minimization. We strive to gather only the info we need, and store it for as long as it’s needed to provide a service or for analysis. Much of the info about how Windows and apps are functioning is deleted within 30 days. Other info may be retained longer, such as error reporting data or Windows Store purchase history. 
+Microsoft believes in and practices information minimization. We strive to gather only the info we need, and store it for as long as it’s needed to provide a service or for analysis. Much of the info about how Windows and apps are functioning is deleted within 30 days. Other info may be retained longer, such as error reporting data or Microsoft Store purchase history. 
 
 ## Telemetry levels
 
@@ -256,7 +256,7 @@ The data gathered at this level includes:
 
     -   **Driver data**. Includes specific driver usage that’s meant to help figure out whether apps and devices will function after upgrading to a new version of the operating system. This can help to determine blocking issues and then help Microsoft and our partners apply fixes and improvements.
 
--   **Windows Store**. Provides information about how the Windows Store performs, including app downloads, installations, and updates. It also includes Windows Store launches, page views, suspend and resumes, and obtaining licenses.
+-   **Microsoft Store**. Provides information about how the Microsoft Store performs, including app downloads, installations, and updates. It also includes Microsoft Store launches, page views, suspend and resumes, and obtaining licenses.
 
 
 ### Enhanced level

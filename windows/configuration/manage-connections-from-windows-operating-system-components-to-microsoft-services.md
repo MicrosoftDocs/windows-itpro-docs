@@ -112,7 +112,7 @@ See the following table for a summary of the management settings for Windows 10 
 | [22. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [23. Windows Media Player](#bkmk-wmp) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
 | [24. Windows spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
-| [25. Windows Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [25. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [26. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [27. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 
@@ -139,7 +139,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [20. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [22. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [23. Windows Media Player](#bkmk-wmp) | | | | ![Check mark](images/checkmark.png) |
-| [25. Windows Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [25. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [27. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 
 ### Settings for Windows Server 2016 Server Core
@@ -816,7 +816,7 @@ To turn off **Let apps use my advertising ID for experiences across apps (turnin
 
 -   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo!DisabledByGroupPolicy**, with a value of 1 (one).
 
-To turn off **Turn on SmartScreen Filter to check web content (URLs) that Windows Store apps use**:
+To turn off **Turn on SmartScreen Filter to check web content (URLs) that Microsoft Store apps use**:
 
 -   Turn off the feature in the UI.
 
@@ -1605,11 +1605,11 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
 
 For more info, see [Windows Spotlight on the lock screen](windows-spotlight.md).
 
-### <a href="" id="bkmk-windowsstore"></a>25. Windows Store
+### <a href="" id="bkmk-windowsstore"></a>25. Microsoft Store
 
-You can turn off the ability to launch apps from the Windows Store that were preinstalled or downloaded. This will also turn off automatic app updates, and the Windows Store will be disabled. On Windows Server 2016, this will block Windows Store calls from Universal Windows Apps.
+You can turn off the ability to launch apps from the Microsoft Store that were preinstalled or downloaded. This will also turn off automatic app updates, and the Microsoft Store will be disabled. On Windows Server 2016, this will block Microsoft Store calls from Universal Windows Apps.
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Disable all apps from Windows Store**.
+-   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Disable all apps from Microsoft Store**.
 
     -or-
 
@@ -1625,7 +1625,7 @@ Disable the Group Policy: **Computer Configuration** > **Administrative Template
 
 ### <a href="" id="bkmk-updates"></a>26. Windows Update Delivery Optimization
 
-Windows Update Delivery Optimization lets you get Windows updates and Windows Store apps from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organization's PCs up-to-date. If you have Delivery Optimization turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
+Windows Update Delivery Optimization lets you get Windows updates and Microsoft Store apps from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organization's PCs up-to-date. If you have Delivery Optimization turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
 
 By default, PCs running Windows 10 Enterprise and Windows 10 Education will only use Delivery Optimization to get and receive updates for PCs and apps on your local network.
 
