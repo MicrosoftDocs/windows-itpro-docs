@@ -1,6 +1,6 @@
 ---
 title: Distribute apps with a management tool (Windows 10)
-description: You can configure a mobile device management (MDM) tool to synchronize your Store for Business inventory. Store for Business management tool services work with MDM tools to manage content.
+description: You can configure a mobile device management (MDM) tool to synchronize your Microsoft Store for Business or Microsoft Store for Education inventory. Microsoft Store management tool services work with MDM tools to manage content.
 ms.assetid: 006F5FB1-E688-4769-BD9A-CFA6F5829016
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -18,13 +18,13 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-You can configure a mobile device management (MDM) tool to synchronize your Store for Business inventory. Store for Business management tool services work with MDM tools to manage content.
+You can configure a mobile device management (MDM) tool to synchronize your Microsoft Store for Business or Microsoft Store for Education inventory. Microsoft Store management tool services work with MDM tools to manage content.
 
-Your MDM tool needs to be installed and configured in Azure AD, in the same Azure AD directory used with Windows Store for Business.
+Your MDM tool needs to be installed and configured in Azure AD, in the same Azure AD directory used with Microsoft Store.
 
-In Azure AD management portal, find the MDM application, and then add it to your directory. Once the MDM has been configured in Azure AD, you can authorize the tool to work with the Store for Business. This allows the MDM tool to call Store for Business management tool services. For more information, see [Configure MDM provider](configure-mdm-provider-windows-store-for-business.md) and [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
+In Azure AD management portal, find the MDM application, and then add it to your directory. Once the MDM has been configured in Azure AD, you can authorize the tool to work with the Microsoft Store for Business or Microsoft Store for Education. This allows the MDM tool to call Microsoft Store management tool services. For more information, see [Configure MDM provider](configure-mdm-provider-windows-store-for-business.md) and [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
-Store for Business services provide:
+Microsoft Store services provide:
 
 -   Services for third-party MDM tools.
 
@@ -38,14 +38,13 @@ MDM tool requirements:
 
 -   Must be an Azure Active Directory (AD) application to authenticate against the Store for Business services.
 
--   Must be configured in Azure AD, and Store for Business.
+-   Must be configured in Azure AD, and Microsoft Store.
 
--   Azure AD identity is required to authorize Store for Business services.
+-   Azure AD identity is required to authorize Microsoft Store services.
 
 ## Distribute offline-licensed apps
 
-
-If your vendor doesn’t support the ability to synchronize applications from the management tool services or cannot connect to the management tool services, your vendor may support the ability to deploy offline licensed applications by downloading the application and license from the store and then deploying the app through your MDM. For more information on online and offline licensing with Store for Business, see [Apps in the Windows Store for Business.](apps-in-windows-store-for-business.md#licensing-model)
+If your vendor doesn’t support the ability to synchronize applications from the management tool services, or can't connect to the management tool services, your vendor may support the ability to deploy offline licensed applications by downloading the application and license from the store and then deploying the app through your MDM. For more information on online and offline licensing with Store for Business, see [Apps in the Windows Store for Business.](apps-in-windows-store-for-business.md#licensing-model)
 
 This diagram shows how you can use a management tool to distribute offline-licensed app to employees in your organization. Once synchronized from Store for Business, management tools can use the Windows Management framework to distribute applications to devices.
 
@@ -53,17 +52,14 @@ This diagram shows how you can use a management tool to distribute offline-licen
 
 ## Distribute online-licensed apps
 
+This diagram shows how you can use a management tool to distribute an online-licensed app to employees in your organization. Once synchronized from Microsoft Store, management tools use the Windows Management framework to distribute applications to devices. For online-licensed applications, the management tool calls back to Microsoft Store management services to assign an application prior to issuing the policy to install the application.
 
-This diagram shows how you can use a management tool to distribute an online-licensed app to employees in your organization. Once synchronized from Store for Business, management tools use the Windows Management framework to distribute applications to devices. For Online licensed applications, the management tool calls back in to Store for Business management services to assign an application prior to issuing the policy to install the application.
-
-![Image showing flow for distributing online-licensed app from Wndows Store for Business.](images/wsfb-online-distribute-mdm.png)
+![Image showing flow for distributing online-licensed app from Microsoft Store for Business.](images/wsfb-online-distribute-mdm.png)
 
 ## Related topics
 
-
 [Configure MDM Provider](configure-mdm-provider-windows-store-for-business.md)
-
-[Manage apps you purchased from the Windows Store for Business with Microsoft InTune](https://technet.microsoft.com/library/mt676514.aspx)
+[Manage apps you purchased from the Microsoft Store for Business and Education with Microsoft InTune](https://technet.microsoft.com/library/mt676514.aspx)
 
  
 

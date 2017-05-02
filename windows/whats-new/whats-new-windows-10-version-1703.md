@@ -75,7 +75,7 @@ Cortana is Microsoft’s personal digital assistant, who helps busy people get t
 
 Using Azure AD also means that you can remove an employee’s profile (for example, when an employee leaves your organization) while respecting Windows Information Protection (WIP) policies and ignoring enterprise content, such as emails, calendar items, and people lists that are marked as enterprise data.
 
-For more info about Cortana at work, see [Cortana integration in your business or enterprise](/windows/configuration/cortana-at-work/cortana-at-work-overview.md)
+For more info about Cortana at work, see [Cortana integration in your business or enterprise](/windows/configuration/cortana-at-work/cortana-at-work-overview)
 
 
 ## Deployment
@@ -139,12 +139,12 @@ Some of the highlights of the new library include:
 
 New features for Windows Defender AV in Windows 10, version 1703 include:
 
-- [Updates to how the Block at First Sight feature can be configured](/windows/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus)
-- [The ability to specify the level of cloud-protection](/windows/windows-defender-antivirus/specify-cloud-protection-level-windows-defender-antivirus)
-- [Windows Defender Antivirus protection in the Windows Defender Security Center app](/windows/windows-defender-antivirus/windows-defender-security-center-antivirus)
+- [Updates to how the Block at First Sight feature can be configured](/windows/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus)
+- [The ability to specify the level of cloud-protection](/windows/threat-protection/windows-defender-antivirus/specify-cloud-protection-level-windows-defender-antivirus)
+- [Windows Defender Antivirus protection in the Windows Defender Security Center app](/windows/threat-protection/windows-defender-antivirus/windows-defender-security-center-antivirus)
 
 
-In Windows 10, version 1607, we [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment in version 1703 with [updated beahvior monitoring and always-on real-time protection](/windows/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).
+In Windows 10, version 1607, we [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment in version 1703 with [updated behavior monitoring and always-on real-time protection](/windows/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).
 
 You can read more about ransomware mitigations and detection capability in Windows Defender AV in the [Ransomware Protection in Windows 10 Anniversary Update whitepaper (PDF)](http://wincom.blob.core.windows.net/documents/Ransomware_protection_in_Windows_10_Anniversary_Update.pdf) and at the [Microsoft Malware Protection Center blog](https://blogs.technet.microsoft.com/mmpc/category/research/ransomware/).
 
@@ -169,6 +169,11 @@ For Windows Phone devices, an administrator is able to initiate a remote PIN res
 For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**.
 
 For more details, check out [What if I forget my PIN?](/windows/access-protection/hello-for-business/hello-why-pin-is-better-than-password#what-if-i-forget-my-pin).
+
+### Windows Information Protection (WIP) and Azure Active Directory (Azure AD)
+Microsoft Azure Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network. For more info, see [Create a Windows Information Protection (WIP) policy using Microsoft Azure Intune](/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune.md) and [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Azure Intune](/windows/threat-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune.md).
+
+You can also now collect your audit event logs by using the Reporting configuration service provider (CSP) or the Windows Event Forwarding (for Windows desktop domain-joined devices). For info, see the brand-new topic, [How to collect Windows Information Protection (WIP) audit event logs](/windows/threat-protection/windows-information-protection/collect-wip-audit-event-logs.md).
 
 ## Update
 

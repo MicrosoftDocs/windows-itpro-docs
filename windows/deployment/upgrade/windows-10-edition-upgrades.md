@@ -41,13 +41,16 @@ X = unsupported <BR>
 - To upgrade mobile editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithLicense** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](https://go.microsoft.com/fwlink/p/?LinkID=690907).
 
 ## Upgrade using a provisioning package
-The Windows Imaging and Configuration Designer (ICD) tool is included in the Windows Assessment and Deployment Kit (ADK) for Windows 10. [Install the ADK.](https://go.microsoft.com/fwlink/p/?LinkId=526740)
+Use Windows Configuration Designer to create a provisioning package to upgrade a desktop edition or mobile edition of Windows 10. To get started, [install Windows Configuration Designer from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). 
 
-- To use Windows ICD to create a provisioning package for upgrading desktop editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithProductKey** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
+- To create a provisioning package for upgrading desktop editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithProductKey** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
 
-- To use Windows ICD to create a provisioning package for upgrading mobile editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithLicense** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
+- To create a provisioning package for upgrading mobile editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithLicense** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
 
-For more info on creating and applying a provisioning package using Windows ICD, see [Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkID=533700).
+For more info about Windows Configuration Designer, see these topics:
+- [Create a provisioining package for Windows 10](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-create-package)
+- [Apply a provisioning package](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-apply-package)
+
 
 ## Upgrade using a command-line tool
 You can run the changepk.exe command-line tool to upgrade devices to a supported edition of Windows 10:
@@ -81,12 +84,3 @@ If you do not have a product key, you can upgrade your edition of Windows 10 th
     **Note**<br>If you are a Windows 10 Home N or Windows 10 Home KN user and have trouble finding your applicable upgrade in the Windows Store, click [here](ms-windows-store://windowsupgrade/).
 
  
-
- 
-
- 
-
-
-
-
-
