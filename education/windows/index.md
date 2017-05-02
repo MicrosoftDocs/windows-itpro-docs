@@ -45,9 +45,10 @@ author: CelesteDG
 
 ## ![Upgrade to Windows 10 for education](images/windows.png) Upgrade
 
-<p><b>[Switch Windows 10 Pro to Pro Education from Microsoft Store for Education](windows-10-pro-to-pro-edu-upgrade.md)</b><br />If you have an education tenant and use Windows 10 Pro in your schools now, find out how you can opt-in to a free switch to Windows 10 Pro Education.</p></div>
+<p><b>[Switch Windows 10 Pro to Pro Education from Microsoft Store for Education](windows-10-pro-to-pro-edu-upgrade.md)</b><br />If you have an education tenant and use Windows 10 Pro in your schools now, find out how you can opt-in to a free switch to Windows 10 Pro Education.</p>
 
 ## Windows 8.1
+
 Follow these links to find step-by-step guidance on how to deploy Windows 8.1 in an academic environment.
 
 <p><b><a href="https://technet.microsoft.com/library/dn645509.aspx" target="_blank">Windows 8.1 deployment planning</a></b><br />Explore key considerations and questions that should be answered when planning for Windows 8.1 deployment.</p>
