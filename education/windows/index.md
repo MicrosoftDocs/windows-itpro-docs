@@ -9,6 +9,7 @@ ms.pagetype: edu
 localizationpriority: high
 author: CelesteDG
 ---
+
 # Windows 10 for Education
 
 ![Windows 10 Education and Windows 10 Pro Education](images/windows-10-for-education-banner.png)
