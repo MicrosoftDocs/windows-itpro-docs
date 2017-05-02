@@ -5,6 +5,8 @@ keywords: education, Microsoft Education, Microsoft Education system, full cloud
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.topic: hero-article
+localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ---
