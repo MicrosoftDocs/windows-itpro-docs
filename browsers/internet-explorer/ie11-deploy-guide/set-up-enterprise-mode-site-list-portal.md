@@ -50,7 +50,7 @@ You must download the deployment folder (**EMIEWebPortal/**), which includes all
 Create a new Application Pool and the website, by using the IIS Manager.
 
 **To create a new Application Pool**
-1. In IIS Manager, expand your local computer, right-click **Application Pools**, then click **Add Application Pool**.
+1. In IIS Manager, expand your local computer in the **Connections** pane, right-click **Application Pools**, then click **Add Application Pool**.
    
    The **Add Application Pool** box appears.
 
@@ -74,12 +74,12 @@ Create a new Application Pool and the website, by using the IIS Manager.
 
 7. Right-click on the directory, click **Properties**, and then click the **Security** tab.
 
-8. Add your new application pool to the list (for example, _IIS AppPool\EMIEWebAppPool_) with **Full control access**, making sure the location searches the local computer.
+8. Add your new application pool to the list (for example, *IIS AppPool\EMIEWebAppPool*) with **Full control access**, making sure the location searches the local computer.
 
 9. Add **Everyone** to the list with **Read & execute access**.
 
 **To create the website**
-1. In IIS Manager, expand your local computer, right-click **Sites**, then click **Add Website**.
+1. In IIS Manager, expand your local computer in the **Connections** pane, right-click **Sites**, then click **Add Website**.
    
    The **Add Website** box appears.
 
@@ -97,14 +97,14 @@ Create a new Application Pool and the website, by using the IIS Manager.
 
 8. In IIS Manager, expand your local computer, and then double-click your new website. For example, _EMIEWebApp_.
 
-   The **_EMIEWebApp_ Home** pane appears.
+   The **<<i>website_name</i>> Home** pane appears.
 
 9. Double-click the **Authentication** icon, right-click on **Windows Authentication**, and then click **Enable**. 
 
     >[!Note]
     >You must also make sure that **Anonymous Authentication** is marked as **Enabled**.
 
-10. Return to the **_EMIEWebApp_ Home** pane, and double-click the **Connection Strings** icon.
+10. Return to the **<<i>website_name</i>> Home** pane, and double-click the **Connection Strings** icon.
 
 11. Open the **LOBMergedEntities Connection String** to edit: 
 
@@ -122,13 +122,34 @@ Create a new Application Pool and the website, by using the IIS Manager.
 
 3. Expand the instance, right-click on Databases, and then click New Database.
 
-4. Type a database name. For example, EMIEDatabase.
+4. Type a database name. For example, _EMIEDatabase_.
 
 5. Accept all of the default values, and then click **OK**.
 
-6. Open the DatabaseScripts/Create DB Tables/1_CreateEMIETables.sql query.
+6. Open the **DatabaseScripts/Create DB Tables/1_CreateEMIETables.sql** query file.
 
-7. Replace the database name placeholder with your database name, created in Step 4.
+7. Replace the database name placeholder with the database name you created earlier. For example, _EMIEDatabase_.
 
 8. Run the query.
 
+## Step 4: Map your Application Pool to a SQL Server role
+Map your ApplicationPoolIdentity to your database, adding the db_owner role.
+
+**To map your ApplicationPoolIdentity to a SQL Server role**
+1. Start SQL Server Management Studio and connect to your database.
+2. Expand the instance and 
+Open SQL Server Management Studio and connect to your instance.
+Expand the instance and open the *Security folder at the server level, not the security folder for the database.
+Right-click on Logins and select New Login.
+Do not click Search. In the Login name field, if you have a local SQL Server instance, where IIS and SQL Server are on the same server, enter the name of your Application Pool, e.g. IIS AppPool\EMIEWebAppPool. If you have a remote SQL Server instance, where IIS and SQL Server are on the same server, enter Domain\ServerName$.
+(If a search is executed, it will resolve to an account with ServerName\AppPool Name and Management Studio will be unable to resolve the account's SID, as it is virtual) 
+Open the User Mapping page and check the database you created earlier, e.g. EMIEDatabase. Select db_owner in the list of roles.
+Click OK.
+
+## Step 5: Restart the Application Pool and website
+Using the IIS Manager, you must restart both your Application Pool and your website.
+
+**To restart your Application Pool and website**
+1. In IIS Manager, expand your local computer in the **Connections** pane, select your website, then click **Restart** from the **Manage Website** pane.
+
+2. In the **Connections** pane, select your Application Pool, and then click **Recycle** from the **Application Pool Tasks** pane.
