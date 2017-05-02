@@ -11,7 +11,7 @@
 ### [Set up Take a Test on a single PC](take-a-test-single-pc.md)
 ### [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md)
 ### [Take a Test app technical reference](take-a-test-app-technical.md)
-## [Working with Windows Store for Business – education scenarios](education-scenarios-store-for-business.md)
+## [Working with Microsoft Store for Education](education-scenarios-store-for-business.md)
 ## [Get Minecraft Education Edition](get-minecraft-for-education.md)
 ### [For teachers: get Minecraft Education Edition](teacher-get-minecraft.md)
 ### [For IT administrators: get Minecraft Education Edition](school-get-minecraft.md)
