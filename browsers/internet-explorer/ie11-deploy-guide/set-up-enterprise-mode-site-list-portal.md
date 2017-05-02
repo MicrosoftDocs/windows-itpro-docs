@@ -115,7 +115,10 @@ Create a new Application Pool and the website, by using the IIS Manager.
         >[!Note]
         >Step 3 of this topic provides the steps to create your database.
 
-## Step 3 - Create and prepare the database
+## Step 3 - Create and prep your database
+Create a SQL Server database and run our custom query to create the Enterprise Mode Site List tables.
+
+**To create and prep your database**
 1. Start SQL Server Management Studio.
 
 2. Open Object Explorer and then connect to an instance fo the SQL Server Database Engine.
