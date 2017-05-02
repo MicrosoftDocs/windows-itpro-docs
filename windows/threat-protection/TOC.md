@@ -94,7 +94,7 @@
 ##### [Manage event-based forced updates](windows-defender-antivirus\manage-event-based-updates-windows-defender-antivirus.md)
 ##### [Manage updates for mobile devices and VMs](windows-defender-antivirus\manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
 ### [Configure Windows Defender Antivirus features](windows-defender-antivirus\configure-windows-defender-antivirus-features.md)
-#### [Utilize Microsoft cloud-provided protection](windows-defender-antivirus\utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
+#### [Utilize Microsoft cloud-delivered protection](windows-defender-antivirus\utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 ##### [Enable cloud-delivered protection](windows-defender-antivirus\enable-cloud-protection-windows-defender-antivirus.md)
 ##### [Specify the cloud-delivered protection level](windows-defender-antivirus\specify-cloud-protection-level-windows-defender-antivirus.md)
 ##### [Configure and validate network connections](windows-defender-antivirus\configure-network-connections-windows-defender-antivirus.md)

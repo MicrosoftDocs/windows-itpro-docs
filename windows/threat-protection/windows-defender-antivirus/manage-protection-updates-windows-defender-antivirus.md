@@ -33,7 +33,7 @@ author: iaanw
 
 Windows Defender AV uses both [cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloaded protection updates to provide protection. These protection updates are also known as "definitions" or "signature updates".
 
-The cloud-based protection is “always-on” and requires an active connection to the Internet to function, while the protection updates generally occur once a day (although this can be configured).  
+The cloud-delivered protection is “always-on” and requires an active connection to the Internet to function, while the protection updates generally occur once a day (although this can be configured).  
 
 There are two components to managing protection updates - where the updates are downloaded from, and when updates are downloaded and applied.
 
