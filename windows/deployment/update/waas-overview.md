@@ -53,7 +53,7 @@ Device compatibility in Windows 10 is also very strong; new hardware is not need
 
 ## Servicing
 
-Traditional Windows servicing has included several release types: major revisions (e.g., the Windows 8.1, Windows 8, and Windows 7 operating systems), service packs, and monthly updates. With Windows 10, there are two release types: feature updates that add new functionality two times per year, and quality updates that provide security and reliability fixes at least once a month. 
+Traditional Windows servicing has included several release types: major revisions (e.g., the Windows 8.1, Windows 8, and Windows 7 operating systems), service packs, and monthly updates. With Windows 10, there are two release types: feature updates that add new functionality twice per year, and quality updates that provide security and reliability fixes at least once a month. 
 
 With Windows 10, organizations will need to change the way they approach deploying updates. Servicing branches are the first way to separate users into deployment groups for feature and quality updates. With the introduction of servicing branches comes the concept of a [deployment ring](waas-deployment-rings-windows-10-updates.md), which is simply a way to categorize the combination of a deployment group and a servicing branch to group devices for successive waves of deployment. For more information about developing a deployment strategy that leverages servicing branches and deployment rings, see [Plan servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md). 
 
@@ -64,10 +64,10 @@ To align with this new update delivery model, Windows 10 has three servicing bra
 
 ### Feature updates
 
-With Windows 10, Microsoft will package new features into feature updates that can be deployed using existing management tools. Because feature updates are delivered more frequently than with previous Windows releases — two times per year, around March and September, rather than every 3–5 years — changes will be in bite-sized chunks rather than all at once and end user readiness time much shorter. 
+With Windows 10, Microsoft will package new features into feature updates that can be deployed using existing management tools. Because feature updates are delivered more frequently than with previous Windows releases — twice per year, around March and September, rather than every 3–5 years — changes will be in bite-sized chunks rather than all at once and end user readiness time much shorter. 
 
 >[!TIP]
-> The feature update cadence has been aligned with Office 365 ProPlus updates. Starting with this falls' update, both Windows and office will deliver their major updates semi-annually, around March and September. See [upcoming changes to Office 365 ProPlus update management](https://support.office.com/article/Overview-of-the-upcoming-changes-to-Office-365-ProPlus-update-management-78b33779-9356-4cdf-9d2c-08350ef05cca) for more information about changes to Office update management.
+> The feature update cadence has been aligned with Office 365 ProPlus updates. Starting with this falls' update, both Windows and Office will deliver their major updates semi-annually, around March and September. See [upcoming changes to Office 365 ProPlus update management](https://support.office.com/article/Overview-of-the-upcoming-changes-to-Office-365-ProPlus-update-management-78b33779-9356-4cdf-9d2c-08350ef05cca) for more information about changes to Office update management.
 
 ### Quality updates
 
