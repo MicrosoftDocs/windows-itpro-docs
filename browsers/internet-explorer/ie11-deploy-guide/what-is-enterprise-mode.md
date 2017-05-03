@@ -143,7 +143,7 @@ In addition to all the functionality of the Enterprise Mode Site List Manager to
 
 Updates to your site list are made by submitting new change requests, which are then approved by a designated group of people, put into a pre-production environment for testing, and then deployed immediately, or scheduled for deployment later.
 
-Because the tool is open-source, the source code is readily available for examination and experimentation. We encourage you to [fork the code, submit pull requests, and send us your feedback](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)! For more info about the Enterprise Mode Site List Portal, see the [Use the Enterprise Mode Site List Portal](use-the-enterprise-mode-site-list-portal.md) topics.
+Because the tool is open-source, the source code is readily available for examination and experimentation. We encourage you to [fork the code, submit pull requests, and send us your feedback](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)! For more info about the Enterprise Mode Site List Portal, see the [Use the Enterprise Mode Site List Portal](use-the-enterprise-mode-portal.md) topics.
 
 ## Related topics
 
