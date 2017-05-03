@@ -34,6 +34,7 @@ Use the topics in this section to learn how to set up and use Enterprise Mode an
 |[Check for a new Enterprise Mode site list xml file](check-for-new-enterprise-mode-site-list-xml-file.md) |Guidance about how the Enterprise Mode functionality looks for your updated site list. |
 |[Turn on local control and logging for Enterprise Mode](turn-on-local-control-and-logging-for-enterprise-mode.md) |Guidance about how to turn on local control of Enterprise Mode, using Group Policy or the registry.|
 |[Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md) |Guidance about how to use the Enterprise Mode Site List Manager, including how to add and update sites on your site list. |
+|[Use the Enterprise Mode Site List Portal](use-the-enterprise-mode-portal.md) |Guidance about how to set up and use the Enterprise Mode Site List Manager, including how to add and update sites on your site list. |
 |[Using Enterprise Mode](using-enterprise-mode.md)                           |Guidance about how to turn on either IE7 Enterprise Mode or IE8 Enterprise Mode.    |
 |[Fix web compatibility issues using document modes and the Enterprise Mode Site List](fix-compat-issues-with-doc-modes-and-enterprise-mode-site-list.md) |Guidance about how to decide and test whether to use document modes or Enterprise Mode to help fix compatibility issues. |
 |[Remove sites from a local Enterprise Mode site list](remove-sites-from-a-local-enterprise-mode-site-list.md) |Guidance about how to remove websites from a device's local Enterprise Mode site list. |
