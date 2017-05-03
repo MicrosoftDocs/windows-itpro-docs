@@ -1,6 +1,6 @@
 ---
 title: Windows 10 editions for education customers
-description: Provides an overview of the two editions in Windows 10, version 1607 that's designed for the needs of K-12 institutions.
+description: Provides an overview of the two Windows 10 editions that are designed for the needs of K-12 institutions.
 keywords: Windows 10 Pro Education, Windows 10 Education, Windows 10 editions, education customers
 ms.prod: w10
 ms.mktglfcycl: plan
@@ -26,8 +26,8 @@ Windows 10, version 1607 introduces two editions designed for the unique needs o
 
 Windows 10 Pro Education builds on the commercial version of Windows 10 Pro and provides important management controls needed in schools. Windows 10 Pro Education is effectively a variant of Windows 10 Pro that provides education-specific default settings. These default settings disable tips, tricks and suggestions & Windows Store suggestions. More detailed information on these default settings is available in [Manage Windows 10 and Microsoft Store tips, tricks, and suggestions](https://go.microsoft.com/fwlink/?LinkId=822627).
 
-For Cortana,
-- If you're using version 1607, Cortana<sup>1</sup> is removed.
+For Cortana<sup>1</sup>,
+- If you're using version 1607, Cortana is removed.
 - If you're using new devices with version 1703, Cortana is turned on by default.
 - If you're upgrading from version 1607 to version 1703, Cortana will be enabled. 
 
@@ -45,7 +45,7 @@ Customers who deploy Windows 10 Pro are able to configure the product to have si
 
 Windows 10 Education builds on Windows 10 Enterprise and provides the enterprise-grade manageability and security desired by many schools. Windows 10 Education is effectively a variant of Windows 10 Enterprise that provides education-specific default settings. These default settings disable tips, tricks and suggestions & Windows Store suggestions. More detailed information on these default settings is available in [Manage Windows 10 and Microsoft Store tips, tricks, and suggestions](https://go.microsoft.com/fwlink/?LinkId=822627).
 
-For Cortana,
+For Cortana<sup>1</sup>,
 - If you're using version 1607, Cortana<sup>1</sup> is removed.
 - If you're using new devices with version 1703, Cortana is turned on by default.
 - If you're upgrading from version 1607 to version 1703, Cortana will be enabled. 
