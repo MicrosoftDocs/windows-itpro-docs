@@ -25,7 +25,7 @@ For Credential Guard to provide protections, the computers you are protecting mu
 
 ## Hardware and software requirements
 
-To provide basic protection against OS level attempts to read Credential Manager domain credentials, NTLM and Kerberos derived credentials, Credential Manager uses:
+To provide basic protection against OS level attempts to read Credential Manager domain credentials, NTLM and Kerberos derived credentials, Credential Guard uses:
 - Support for Virtualization-based security (required)
 - Secure boot (required)
 - TPM 2.0 either discrete or firmware (preferred - provides binding to hardware)
