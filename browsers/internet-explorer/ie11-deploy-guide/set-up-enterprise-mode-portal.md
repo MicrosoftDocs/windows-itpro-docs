@@ -148,6 +148,8 @@ Map your ApplicationPoolIdentity to your database, adding the db_owner role.
 
 3. Right-click **Logins**, and then click **New Login**.
 
+   The **Login-New** dialog box appears.  
+
 4. Type the following into the **Login name** box, based on your server instance type:
 
     - **Local SQL Server instance.** If you have a local SQL Server instance, where IIS and SQL Server are on the same server, type the name of your Application Pool. For example, _IIS AppPool\EMIEWebAppPool_.
@@ -157,7 +159,9 @@ Map your ApplicationPoolIdentity to your database, adding the db_owner role.
         > [!IMPORTANT]
         > Don't click **Search** in the **Login name** box. Login name searches will resolve to a ServerName\AppPool Name account and SQL Server Management Studio won't be able to resolve the account's virtual Security ID (SID).
 
-5. Open the **Login Properties (User Mapping page)**, select your database (for example, _EMIEDatabase_), click **db_owner** from the list of available roles, and then click **OK**.
+5. Click **User Mapping** from the **Select a page** pane, click the checkbox for your database (for example, _EMIEDatabase_) from the **Users mapped to this login** pane, and then click **db_owner** from the list of available roles in the **Database role membership** pane. 
+
+6. Click **OK**.
 
 ## Step 5: Restart the Application Pool and website
 Using the IIS Manager, you must restart both your Application Pool and your website.
@@ -203,11 +207,14 @@ After you've set up the portal, you need to configure your SMTP server and port 
 ## Step 8: Register the scheduler service
 Register the EMIEScheduler tool and service for production site list changes.
 
-1. Open File Explorer and go to EMIEWebPortal.SchedulerService\EMIEWebPortal.SchedulerService in your deployment directory, and then copy the App_Data, bin, and Logs folders to a separate folder. For example, C:\EMIEService\.
+1. Open File Explorer and go to EMIEWebPortal.SchedulerService\EMIEWebPortal.SchedulerService in your deployment directory, and then copy the **App_Data**, **bin**, and **Logs** folders to a separate folder. For example, C:\EMIEService\.
+ 
+    >[!Important]
+    >If you can't find the **bin** and **Logs** folders, you probably haven't built the Visual Studio solution. Building the solution creates the folders and files.
 
-2. In Visual Studio start the Developer Command Prompt as an administrator, and then change the directory to the location of the InstallUtil.exe file. For example C:\Windows\Microsoft.NET\Framework\v4.0.30319.
+2. In Visual Studio start the Developer Command Prompt as an administrator, and then change the directory to the location of the InstallUtil.exe file. For example _C:\Windows\Microsoft.NET\Framework\v4.0.30319_.
 
-3. Run the command, `InstallUtil "<path_to_service>"`. For example, InstallUtil "C:\EMIEService\bin\Debug\EMIEWebPortal.SchedulerService.exe".
+3. Run the command, `InstallUtil "<path_to_service>"`. For example, _InstallUtil "C:\EMIEService\bin\Debug\EMIEWebPortal.SchedulerService.exe"._
  
    You'll be asked for your user name and password for the service.
 
