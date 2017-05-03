@@ -48,7 +48,7 @@ The Windows Hello for Business PIN is subject to the same set of IT management p
 
 ## What if someone steals the laptop or phone?
 
-To compromise a Windows Hello credential that TPM protects, an attacker must have access to the physical device, and then must find a way to spoof the user’s biometrics or guess his or her PIN—and all of this must be done before TPM anti-hammer capabilities lock the device.
+To compromise a Windows Hello credential that TPM protects, an attacker must have access to the physical device, and then must find a way to spoof the user’s biometrics or guess his or her PIN—and all of this must be done before [TPM anti-hammering](/windows/device-security/tpm/tpm-fundamentals#anti-hammering) protection locks the device.
 You can provide additional protection for laptops that don't have TPM by enablng BitLocker and setting a policy to limit failed sign-ins.
 
 **Configure BitLocker without TPM**

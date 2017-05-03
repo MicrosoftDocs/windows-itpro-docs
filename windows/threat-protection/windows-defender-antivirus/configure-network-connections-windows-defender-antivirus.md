@@ -51,10 +51,10 @@ The following table lists the services and their associated URLs that your netwo
 </tr>
 <tr style="vertical-align:top">
 <td>
- Windows Defender Antivirus cloud-based protection service, also referred to as Microsoft Active Protection Service (MAPS)
+ Windows Defender Antivirus cloud-delivered protection service, also referred to as Microsoft Active Protection Service (MAPS)
 </td>
 <td>
- Used by Windows Defender Antivirus to provide cloud-based protection
+ Used by Windows Defender Antivirus to provide cloud-delivered protection
 </td>
 <td>
 *.wdcp.microsoft.com*<br />
