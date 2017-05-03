@@ -127,11 +127,11 @@ Create a SQL Server database and run our custom query to create the Enterprise M
 
 4. Type a database name. For example, _EMIEDatabase_.
 
-5. Accept all of the default values, and then click **OK**.
+5. Leave all default values for the database files, and then click **OK**.
 
 6. Open the **DatabaseScripts/Create DB Tables/1_CreateEMIETables.sql** query file.
 
-7. Replace the database name placeholder with the database name you created earlier. Our process uses _EMIEDatabase_.
+7. Replace the database name placeholder with the database name you created earlier. For example, _EMIEDatabase_.
 
 8. Run the query.
 
