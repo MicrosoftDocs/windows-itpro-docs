@@ -33,14 +33,12 @@ Admins can assign roles to employees for the Enterprise Mode Site List Portal, a
 ## Enterprise Mode Site List Portal workflow
 The following workflow describes how to use the Enterprise Mode Site List Portal.
 
-1. [A Requester submits a change request](create-change-request-enterprise-mode-portal.md)
+1. [A Requester submits a change request and verifies the info against the pre-production site list](create-change-request-enterprise-mode-portal.md)
 
-2. The change is verified against the pre-production site list.
+2. [The Approvers group accepts the change request](approve-change-request-enterprise-mode-portal.md)
 
-3. [The Approvers group accepts the change request](approve-change-request-enterprise-mode-portal.md)
+3. The change is scheduled for the production environment.
 
-4. The change is scheduled for the production environment.
+4. The change is verified against the production site list.
 
-5. The change is verified against the production site list.
-
-6. The change request is signed off and closed.
+5. The change request is signed off and closed.

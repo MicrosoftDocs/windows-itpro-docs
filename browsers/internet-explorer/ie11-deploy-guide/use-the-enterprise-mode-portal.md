@@ -22,7 +22,7 @@ Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, lett
 
 You can use IE11 and the Enterprise Mode Site List Portal to manage your Enterprise Mode Site List, hosted by the app, with multiple users.
 
-## Minimum system requirements
+## Minimum system requirements for portal and test machines
 Some of the components in this table might also need additional system resources. Check the component's documentation for more information.
 
 |Item |Description |
