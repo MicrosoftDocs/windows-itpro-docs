@@ -61,21 +61,42 @@ You can also choose to highlight an alert from the **Alerts related to this mach
 
 The **Machine timeline** section provides a chronological view of the events and associated alerts that have been observed on the machine.
 
-This feature also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a specified time period.
+This feature also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a specified time period. You can also view alerts related to a specific user without leaving the context of the machine timeline by selecting their name from the machine timeline.  
 
 ![Image of machine timeline with events](images/atp-machine-timeline.png)
 
 Windows Defender ATP monitors and captures questionable behavior on Windows 10 machines and displays the process tree flow in the **Machine timeline**. This gives you better context of the behavior which can contribute to understanding the correlation between events, files, and IP addresses in relation to the machine.
 
 ### Search for specific alerts
-Use the search bar to look for specific alerts or files associated with the machine:
+Use the search bar to look for specific alerts or files associated with the machine. Harness the power of using the following defined search queries and event filter types to sift through the search results:
 
--	**Value** – Type in any search keyword to filter the timeline with the attribute you’re searching for.
+-	**Value** - Type in any search keyword to filter the timeline with the attribute you’re searching for. <br>
+  You can use any of the following values:<br>
+  - Hash: Sha1 or MD5
+  - File name
+  - File extension
+  - Path
+  - Command line
+  - User
+  - IP
+  - URL
 -	**Informational level** – Click the drop-down button to filter by the following levels:
-  - **Detections mode**: displays Windows ATP Alerts and detections
-  -	**Behaviors mode**: displays "detections" and selected events of interest
-  -	**Verbose mode**: displays "behaviors" (including "detections"), and all reported events
--	**User** – Click the drop-down button to filter the machine timeline by the following user associated events:
+  - Detections mode: displays Windows ATP Alerts and detections
+  -	Behaviors mode: displays "detections" and selected events of interest
+  -	Verbose mode: displays all raw events without aggregation or filtering
+- **Event type** - Click the drop-down button to filter by the following levels:
+  - Windows Defender ATP alerts
+  - Windows Defender AV alerts
+  - Response actions
+  - AppGuard related events
+  - Windows Defender Device Guard events
+  - Process events
+  - Network events
+  - File events
+  - Registry events
+  - Load DLL events
+  - Other events
+-	**User account** – Click the drop-down button to filter the machine timeline by the following user associated events:
   -	Logon users
   -	System
   -	Network
