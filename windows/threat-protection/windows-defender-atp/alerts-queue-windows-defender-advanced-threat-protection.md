@@ -35,19 +35,23 @@ To see a list of alerts, click any of the queues under the **Alerts queue** opti
 > [!NOTE]
 > By default, the queues are sorted from newest to oldest.
 
-## Sort and filter the alerts
-You can sort and filter the alerts by using the available filters or clicking columns that allows you to sort the view in ascending or descending order.
+##  Sort, filter, and group the alerts list
+You can refine the alerts queue list by using the available filters.
 
-![Alerts queue with numbers](images/alerts-queue-numbered.png)
+![Alerts queue with numbers](images/atp-alerts-queue-user.png)
 
-Highlighted area|Area name|Description
-:---|:---|:---
-1 | Alert filters | Filter the list of alerts by severity, detection source, time period, or change the view from flat to grouped.
-2 | Alert selected | Select an alert to bring up the **Alert management** to manage and see details about the alert.
-3 | Alert management pane | View and manage alerts without leaving the alerts queue view.
+**Time period**</br>
+- 1 day
+- 3 days
+- 7 days
+- 30 days
+- 6 months
 
-### Sort, filter, and group the alerts list
-You can use the following filters to limit the list of alerts displayed during an investigation:
+**OS Platform**<br>
+  - Windows 10
+  - Windows Server 2012 R2
+  - Windows Server 2016
+  - Other
 
 **Severity**</br>
 
@@ -66,13 +70,6 @@ Reviewing the various alerts and their severity can help you decide on the appro
 
 >[!NOTE]
 >The Windows Defender Antivirus filter will only appear if your endpoints are using Windows Defender as the default real-time protection antimalware product.
-
-**Time period**</br>
-- 1 day
-- 3 days
-- 7 days
-- 30 days
-- 6 months
 
 **View**</br>
 - **Flat view** - Lists alerts individually with alerts having the latest activity displayed at the top.
@@ -100,6 +97,9 @@ You can take immediate action on an alert and see details about an alert in the 
 
 >[!NOTE]
 >You can also access the **Alert management** pane from the machine details view by selecting an alert in the **Alerts related to this machine** section.
+
+### Use the user details pane
+Selecting a user brings up the **User details** pane where you can see information such as machine details, related alerts, last IP address, when the machine was first and last seen reporting to the service, and information on the logged on users.
 
 ### Bulk edit alerts
 Select multiple alerts (Ctrl or Shift select) and manage or edit alerts together, which allows resolving multiple similar alerts in one action.
