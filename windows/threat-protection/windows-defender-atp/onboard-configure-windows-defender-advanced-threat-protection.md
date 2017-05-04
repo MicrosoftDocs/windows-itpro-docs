@@ -23,7 +23,16 @@ localizationpriority: high
 
 You need to onboard to Windows Defender ATP before you can use the service.
 
-For more information, see [Onboard your Windows 10 endpoints to Windows Defender ATP](https://www.youtube.com/watch?v=JT7VGYfeRlA&feature=youtu.be). 
+For more information, see [Onboard your Windows 10 endpoints to Windows Defender ATP](https://www.youtube.com/watch?v=JT7VGYfeRlA&feature=youtu.be).
+
+## Licensing requirements
+Windows Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
+
+  -	Windows 10 Enterprise E5
+  -	Windows 10 Education E5
+  - Secure Productive Enterprise E5 (SPE E5) which includes Windows 10 Enterprise E5
+
+For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
 
 ## In this section
 Topic | Description
