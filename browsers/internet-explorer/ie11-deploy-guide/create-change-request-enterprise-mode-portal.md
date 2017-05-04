@@ -43,11 +43,11 @@ Employees assigned to the Requester role all have the ability to create a change
 
     - Business impact (Optional)
 
-    - App location (URL). You can optionally add the filepath location to the app.
+    - App location (URL).
 
     - App best viewed in
  
-    - Is an X-UA tag used? This is optional.
+    - Is an X-UA tag used?
 
     A message appears that the request was successful, including a **Request ID** number, and saying that the change is being made to the pre-production environment site list.
 
