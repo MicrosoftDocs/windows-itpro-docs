@@ -67,7 +67,7 @@ We have also adjusted the maximum feature update deferral period to be 365 days,
 
 ### Additional changes
 
-The pause period is now calculated starting from the set start date. For additional details, see [Pause Feature Updates](waas-configure-wufb.md#pause-feature-updates) and [Pause Quality Updates](waas-configure-wufb.md#pause-quality-updates). Due to that, some policies keys are now named differently. For more information, see [Comparing the version 1607 keys to the version 1703 keys](waas-configure-wufb.md#comparing-the-version-1607-keys-to-the-version-1703-keys).
+The pause period is now calculated starting from the set start date. For additional details, see [Pause Feature Updates](waas-configure-wufb.md#pause-feature-updates) and [Pause Quality Updates](waas-configure-wufb.md#pause-quality-updates). Due to that, some policy keys are now named differently. For more information, see [Comparing the version 1607 keys to the version 1703 keys](waas-configure-wufb.md#comparing-the-version-1607-keys-to-the-version-1703-keys).
 
 ## Comparing Windows Update for Business in Windows 10, version 1511 and version 1607
 
