@@ -47,7 +47,7 @@ The following sections provide an overview of the technologies that support the 
 
 -   [TPM Key Attestation](#key-attestation)
 
--   [How the TPM mitigates dictionary attacks](#how-the-tpm-mitigates-dictionary-attacks)
+-   [Anti-hammering](#anti-hammering)
 
 The following topic describes the TPM Services that can be controlled centrally by using Group Policy settings:
 [TPM Group Policy Settings](trusted-platform-module-services-group-policy-settings.md).
@@ -85,17 +85,17 @@ For a TPM to be usable by a trusted application, it must contain an endorsement 
 
 TPM key attestation allows a certification authority to verify that a private key is actually protected by a TPM and that the TPM is one that the certification authority trusts. Endorsement keys which have been proven valid can be used to bind the user identity to a device. Moreover, the user certificate with a TPM attested key provides higher security assurance backed up by the non-exportability, anti-hammering, and isolation of keys provided by a TPM.
 
-## How the TPM mitigates dictionary attacks
+## Anti-hammering
 
 When a TPM processes a command, it does so in a protected environment, for example, a dedicated microcontroller on a discrete chip or a special hardware-protected mode on the main CPU. A TPM can be used to create a cryptographic key that is not disclosed outside the TPM, but is able to be used in the TPM after the correct authorization value is provided.
 
-TPMs have dictionary attack logic that is designed to prevent brute force attacks that attempt to determine authorization values for using a key. The basic approach is for the TPM to allow only a limited number of authorization failures before it prevents more attempts to use keys and locks. Providing a failure count for individual keys is not technically practical, so TPMs have a global lockout when too many authorization failures occur.
+TPMs have anti-hammering protection that is designed to prevent brute force attacks, or more complex dictionary attacks, that attempt to determine authorization values for using a key. The basic approach is for the TPM to allow only a limited number of authorization failures before it prevents more attempts to use keys and locks. Providing a failure count for individual keys is not technically practical, so TPMs have a global lockout when too many authorization failures occur.
 
-Because many entities can use the TPM, a single authorization success cannot reset the TPM’s dictionary attack logic. This prevents an attacker from creating a key with a known authorization value and then using it to reset the TPM’s dictionary attack logic. Generally TPMs are designed to forget about authorization failures after a period of time so the TPM does not enter a lockout state unnecessarily. A TPM owner password can be used to reset the TPM’s lockout logic.
+Because many entities can use the TPM, a single authorization success cannot reset the TPM’s anti-hammering protection. This prevents an attacker from creating a key with a known authorization value and then using it to reset the TPM’s protection. Generally, TPMs are designed to forget about authorization failures after a period of time so the TPM does not enter a lockout state unnecessarily. A TPM owner password can be used to reset the TPM’s lockout logic.
 
-### TPM 2.0 dictionary attack behavior
+### TPM 2.0 anti-hammering
 
-TPM 2.0 has well defined dictionary attack logic behavior. This is in contrast to TPM 1.2 for which the dictionary attack logic was set by the manufacturer, and the logic varied widely throughout the industry.
+TPM 2.0 has well defined anti-hammering behavior. This is in contrast to TPM 1.2 for which the anti-hammering protection was implemented by the manufacturer, and the logic varied widely throughout the industry.
 
 > [!WARNING]
 > For the purposes of this topic, Windows 8 Certified Hardware also pertains to Windows 8.1 systems. The following references to “Windows” include these supported Windows versions.
@@ -106,7 +106,7 @@ Attempts to use a key with an authorization value for the next two hours would n
 
 Windows 8 Certification does not require TPM 2.0 systems to forget about authorization failures when the system is fully powered off or when the system has hibernated. Windows does require that authorization failures are forgotten when the system is running normally, in a sleep mode, or in low power states other than off. If a Windows system with TPM 2.0 is locked, the TPM leaves lockout mode if the system is left on for two hours.
 
-The dictionary attack logic for TPM 2.0 can be fully reset immediately by sending a reset lockout command to the TPM and providing the TPM owner password. By default, Windows automatically provisions TPM 2.0 and stores the TPM owner password for use by system administrators.
+The anti-hammering protection for TPM 2.0 can be fully reset immediately by sending a reset lockout command to the TPM and providing the TPM owner password. By default, Windows automatically provisions TPM 2.0 and stores the TPM owner password for use by system administrators.
 
 In some enterprise situations, the TPM owner authorization value is configured to be stored centrally in Active Directory, and it is not stored on the local system. An administrator can launch the TPM MMC and choose to reset the TPM lockout time. If the TPM owner password is stored locally, it is used to reset the lockout time. If the TPM owner password is not available on the local system, the administrator needs to provide it. If an administrator attempts to reset the TPM lockout state with the wrong TPM owner password, the TPM does not allow another attempt to reset the lockout state for 24 hours.
 
@@ -114,12 +114,12 @@ TPM 2.0 allows some keys to be created without an authorization value associate
 
 ### Rationale behind the Windows 8.1 and Windows 8 defaults
 
-Windows relies on the TPM 2.0 dictionary attack protection for multiple features. The defaults that are selected for Windows 8 balance trade-offs for different scenarios.
+Windows relies on the TPM 2.0 anti-hammering protection for multiple features. The defaults that are selected for Windows 8 balance trade-offs for different scenarios.
 For example, when BitLocker is used with a TPM plus PIN configuration, it needs the number of PIN guesses to be limited over time. If the computer is lost, someone could make only 32 PIN guesses immediately, and then only one more guess every two hours. This totals about 4415 guesses per year. This makes a good standard for system administrators to determine how many PIN characters to use for BitLocker deployments.
 
 The Windows TPM-based smart card, which is a virtual smart card, can be configured to allow sign in to the system. In contrast with physical smart cards, the sign-in process uses a TPM-based key with an authorization value. The following list shows the advantages of virtual smart cards:
 
--   Physical smart cards can enforce lockout for only the physical smart card PIN, and they can reset the lockout after the correct PIN is entered. With a virtual smart card, the TPM’s dictionary attack is not reset after a successful authentication. The allowed number of authorization failures before the TPM enters lockout includes many factors.
+-   Physical smart cards can enforce lockout for only the physical smart card PIN, and they can reset the lockout after the correct PIN is entered. With a virtual smart card, the TPM’s anti-hammering protection is not reset after a successful authentication. The allowed number of authorization failures before the TPM enters lockout includes many factors.
 
 -   Hardware manufacturers and software developers have the option to use the security features of the TPM to meet their requirements.
 

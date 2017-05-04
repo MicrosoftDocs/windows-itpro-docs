@@ -36,53 +36,38 @@ Windows Update for Business is a free service that is available for Windows Pro,
 
 Windows Update for Business provides three types of updates to Windows 10 devices:
 
-- **Feature Updates**: previously referred to as *upgrades*, Feature Updates contain not only security and quality revisions, but also significant feature additions and changes; they are released at a slower cadence, every 4 to 8 months.
+- **Feature Updates**: previously referred to as *upgrades*, Feature Updates contain not only security and quality revisions, but also significant feature additions and changes; they are released semi-anually.
 - **Quality Updates**: these are traditional operating system updates, typically released the second Tuesday of each month (though they can be released at any time).  These include security, critical, and driver updates. Windows Update for Business also treats non-Windows updates (such as those for Microsoft Office or Visual Studio) as Quality Updates. These non-Windows Updates are known as *Microsoft Updates* and devices can be optionally configured to receive such updates along with their Windows Updates.
 - **Non-deferrable updates**: Currently, antimalware and antispyware Definition Updates from Windows Update cannot be deferred.
  
 Both Feature and Quality Updates can be deferred from deploying to client devices by a Windows Update for Business administrator within a bounded range of time from when those updates are first made available on the Windows Update Service. This deferral capability allows administrators to validate deployments as they are pushed to all client devices configured for Windows Update for Business.
 
-<table>
-<tr>
-<th>Category</th>
-<th>Maximum deferral</th>
-<th>Deferral increments</th>
-<th>Example</th>
-<th>Classification GUID</th>
-</tr>
-<tr>
-<td>Feature Updates</td>
-<td>180 days</td>
-<td>Days</td>
-<td>From Windows 10, version 1511 to version 1607</td>
-<td>3689BDC8-B205-4AF4-8D4A-A63924C5E9D5</td>
-</tr>
-<tr>
-<td rowspan="4">Quality Updates</td>
-<td rowspan="4">30 days</td>
-<td rowspan="4">Days</td>
-<td>Security updates</td>
-<td>0FA1201D-4330-4FA8-8AE9-B877473B6441</td>
-</tr>
-<tr>
-<td>Drivers (optional)</td>
-<td>EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0</td>
-</tr>
-<tr>
-<td>Non-security updates</td>
-<td>CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83</td>
-</tr><tr><td>Microsoft updates (Office, Visual Studio, etc.)</td><td>varies</td></tr>
-<tr>
-<td>Non-deferrable</td>
-<td>No deferral</td>
-<td>No deferral</td>
-<td>Definition updates</td>
-<td>E0789628-CE08-4437-BE74-2495B842F43B</td>
-</tr>
-</table> 
+| Category | Maximum deferral | Deferral increments | Example | Classification GUID |
+| --- | --- | --- | --- | --- |
+| Feature Updates | 365 days | Days | From Windows 10, version 1511 to version 1607 maximum was 180 days</br>In Windows 10, version 1703 maximum is 365 | 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5 |
+| Quality Updates | 30 days | Days | Security updates</br>Drivers (optional)</br>Non-security updates</br>Microsoft updates (Office,Visual Studio, etc.) | 0FA1201D-4330-4FA8-8AE9-B877473B6441</br>EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0</br>CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83</br>varies |
+| Non-deferrable | No deferral | No deferral | Definition updates | E0789628-CE08-4437-BE74-2495B842F43B |
 
 >[!NOTE]
 >For information about classification GUIDs, see [WSUS Classification GUIDs](https://msdn.microsoft.com/en-us/library/ff357803.aspx).
+
+## Changes to Windows Update for Business in Windows 10, version 1703
+
+### Options added to Settings
+
+We have added a few controls into settings to allow users to control Windows Update for Business through an interface. 
+- [Configuring the device's branch readiness level](waas-configure-wufb.md#configure-devices-for-current-branch-or-current-branch-for-business), through **Settings > Update & security > Windows Update > Advanced options**
+- [Pausing feature updates](waas-configure-wufb.md#pause-feature-updates), through **Settings > Update & security > Window Update > Advanced options**
+
+### Adjusted time periods
+
+We have adjusted the maximum pause period for both quality and feature updates to be 35 days, as opposed to 30 and 60 days previously, respectively.
+
+We have also adjusted the maximum feature update deferral period to be 365 days, as opposed to 180 days previously.
+
+### Additional changes
+
+The pause period is now calculated starting from the set start date. For additional details, see [Pause Feature Updates](waas-configure-wufb.md#pause-feature-updates) and [Pause Quality Updates](waas-configure-wufb.md#pause-quality-updates). Due to that, some policy keys are now named differently. For more information, see [Comparing the version 1607 keys to the version 1703 keys](waas-configure-wufb.md#comparing-the-version-1607-keys-to-the-version-1703-keys).
 
 ## Comparing Windows Update for Business in Windows 10, version 1511 and version 1607
 
