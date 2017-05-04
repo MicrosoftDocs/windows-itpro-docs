@@ -27,7 +27,27 @@ Employees assigned to the Requester role all have the ability to create a change
 **To create a new change request**
 1. The Requester (an employee that has been assigned the Requester role) signs into the Enterprise Mode Site List Portal, and clicks **Create new request**.
 
-2. Type blah into blah, and then click **Save and continue**.
+   The **Create new request** screen appears.
+
+2. Fill out the required fields, including:
+
+    - Group name.
+    
+    - App name.
+
+    - Description.
+
+    - Requested change
+
+    - Reason for request
+
+    - Business impact (Optional)
+
+    - App location (URL). You can optionally add the filepath location to the app.
+
+    - App best viewed in
+ 
+    - Is an X-UA tag used? This is optional.
 
     A message appears that the request was successful, including a **Request ID** number, and saying that the change is being made to the pre-production environment site list.
 
