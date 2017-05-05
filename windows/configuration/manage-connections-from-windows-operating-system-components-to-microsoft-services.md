@@ -287,7 +287,7 @@ You can prevent Windows from setting the time automatically.
 
     -or-
 
--   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Enable Windows NTP Server** &gt; **Windows Time Service** &gt; **Enable Windows NTP Client**
+-   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Enable Windows NTP Server** &gt; **Windows Time Service** &gt; **Configure Windows NTP Client**
 
     -or -
 
@@ -511,6 +511,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 | Configure Windows Defender SmartScreen Filter (Windows 10, version 1703)  <br/> Configure SmartScreen Filter (Windows Server 2016)                      | Choose whether Windows Defender SmartScreen is turned on or off.  <br /> Default: Enabled                            |
 | Allow web content on New Tab page                     | Choose whether a new tab page appears.  <br /> Default: Enabled                                     |
 | Configure Start pages                       | Choose the Start page for domain-joined devices. <br /> Set this to **about:blank**        |
+| Prevent the First Run webpage from opening pages                       | Choose whether employees see the First Run webpage. <br /> Default: Enabled        |
 
 
 The Windows 10, version 1511 Microsoft Edge Group Policy names are:
@@ -1824,7 +1825,7 @@ You can turn off Windows Update by setting the following registry entries:
 
     -and-
 
--   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Intenet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off access to all Windows Update features**.
+-   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Internet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off access to all Windows Update features**.
 
     -and-
 
