@@ -1,8 +1,9 @@
 --- 
 layout: HubPage
 hide_bc: true
-title: Microsoft Education Documentation | Microsoft Docs
-description: TK from Celeste Guzman
+title: Microsoft Education documentation and resources | Microsoft Docs
+description: Learn about product documentation and resources available for school IT administrators, teachers, students, and education app developers.
+author: CelesteDG
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -14,7 +15,7 @@ description: TK from Celeste Guzman
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/media/common/i_advanced.svg" src="/media/common/i_advanced.svg" alt="" />
+                                        <img data-hoverimage="/media/common/i_advanced.svg" src="/media/common/i_advanced.svg" alt="Learn more about Microsoft Education products." />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -32,7 +33,7 @@ description: TK from Celeste Guzman
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/media/common/i_get-started.svg" src="/media/common/i_get-started.svg" alt="" />
+                                        <img data-hoverimage="/media/common/i_get-started.svg" src="/media/common/i_get-started.svg" alt="For IT Pros: Get started with Microsoft Education" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -61,7 +62,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-get-started.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-pro-get-started.svg" alt="For IT Pros: Get started with Microsoft Education" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -80,7 +81,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-office365.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-pro-office365.svg" alt="Office 365 for Education" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -99,7 +100,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-intune.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-pro-intune.svg" alt="Microsoft Intune for Education" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -118,7 +119,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-windows10.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-pro-windows10.svg" alt="Windows 10 for Education" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -137,7 +138,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-school-data.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-pro-school-data.svg" alt="School Data Sync" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -156,7 +157,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-azure-directory.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-pro-azure-directory.svg" alt="Azure Active Directory" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -175,7 +176,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-store.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-pro-store.svg" alt="Microsoft Store for Education" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -194,7 +195,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-minecraft.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-pro-minecraft.svg" alt="Minecraft: Educaton Edition" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -223,7 +224,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-teachers-help.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-teachers-help.svg" alt="Get started for educators" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -242,7 +243,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-teachers-office-help.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-teachers-office-help.svg" alt="Office help and training" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -261,7 +262,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-teachers-windows-help.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-teachers-windows-help.svg" alt="Windows help" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -280,7 +281,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-store.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-pro-store.svg" alt="Microsoft Store for Education" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -299,7 +300,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-minecraft.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-pro-minecraft.svg" alt="Minecraft: Education Edition" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -318,7 +319,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-teachers-educator-community.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-teachers-educator-community.svg" alt="Microsoft Educator Community" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -347,7 +348,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-help.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-students-help.svg" alt="Get started for students" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -366,7 +367,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-office-help.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-students-office-help.svg" alt="Office help and training" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -385,7 +386,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-windows-help.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-students-windows-help.svg" alt="Windows help" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -404,7 +405,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-imagine.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-students-imagine.svg" alt="Microsoft Imagine" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -433,12 +434,12 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-uwp-apps.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-developers-uwp-apps.svg" alt="UWP apps for education" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>UWP apps for education</h3>
-                                                    <p>Learn how to write Universal Windows apps for education</p>
+                                                    <p>Learn how to write Universal Windows apps for education.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -452,7 +453,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-api-test.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-developers-api-test.svg" alt="Take a Test API" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -471,7 +472,7 @@ description: TK from Celeste Guzman
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-office-education.svg" alt="" />
+                                                        <img src="/media/hubs/education/education-developers-office-education.svg" alt="Office Education Dev Center" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
