@@ -11,7 +11,7 @@ localizationpriority: medium
 
 # Enroll HoloLens in MDM
 
-You can manage multiple Microsoft HoloLens devices simultaneously using solutions like Microsoft InTune. You will be able to manage settings, select apps to install and set security configurations tailored to your organization's need.
+You can manage multiple Microsoft HoloLens devices simultaneously using solutions like Microsoft Intune. You will be able to manage settings, select apps to install and set security configurations tailored to your organization's need.
 
 >[!NOTE]
 >Mobile device management (MDM) for the Development edition of HoloLens does not include VPN, BitLocker, or kiosk mode. Those features are only available when you [upgrade to Windows Holographic for Business](hololens-upgrade-enterprise.md).
@@ -22,7 +22,7 @@ You can manage multiple Microsoft HoloLens devices simultaneously using solution
 
 ## Auto-enrollment in MDM 
 
-If your organization uses Azure Active Directory (Azure AD) and an MDM solution that accepts an AAD token for authentication (currently, only supported in Microsoft Intune and Airwatch), your IT admin can configure Azure AD to automatically allow MDM enrollment after the user signs in with their Azure AD account. [Learn how to configure Azure AD enrollment.](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment) 
+If your organization uses Azure Active Directory (Azure AD) and an MDM solution that accepts an AAD token for authentication (currently, only supported in Microsoft Intune and AirWatch), your IT admin can configure Azure AD to automatically allow MDM enrollment after the user signs in with their Azure AD account. [Learn how to configure Azure AD enrollment.](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment) 
 
 When auto-enrollment is enabled, no additional manual enrollment is needed. When the user signs in with an Azure AD account, the device is enrolled in MDM after completing the first-run experience.
 
