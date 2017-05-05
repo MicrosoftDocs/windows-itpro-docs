@@ -357,7 +357,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
             https://fabrikam.com/opensearch.xml
     
-    - If you disable this setting, the policy-set default search engine is removed. If this is also the current in-use default, the engine changes to the Microsoft Edge specified engine for the market.<p>If you don't configure this setting, the default search engine is set to the one specified in App settings.
+    - If you disable this setting, the policy-set default search engine is removed. If this is also the current in-use default, the engine changes to the Microsoft Edge specified engine for the market.
 
     - If you don't configure this setting (default), the default search engine is set to the one specified in App settings.
 
