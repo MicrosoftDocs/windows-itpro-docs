@@ -1,4 +1,4 @@
----
+s---
 title: Investigate machines in the Windows Defender ATP Machines view
 description: Investigate affected machines in your network by reviewing alerts, network connection information, and service health on the Machines view.
 keywords: machines, endpoints, machine, endpoint, alerts queue, alerts, machine name, domain, last seen, internal IP, active alerts, threat category, filter, sort, review alerts, network, connection, type, password stealer, ransomware, exploit, threat, low severity
@@ -34,38 +34,38 @@ You can click on affected machines whenever you see them in the portal to open a
 - Any IP address or domain details view
 
 When you investigate a specific machine, you'll see:
--	Machine details, Logged on user, and Machine Reporting
+-	Machine details, Logged on users, and Machine Reporting
 - Alerts related to this machine
 - Machine timeline
 
 ![Image of machine details page](images/atp-machine-details-view.png)
 
-The machine details, total logged on users and machine reporting sections display various attributes about the machine. You’ll see details such as machine name, health state, actions you can take on the machine. For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md).
+The machine details, total logged on users and machine reporting sections display various attributes about the machine. You’ll see details such as machine name, health state, actions you can take on the machine, etc. For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md).
 
-You'll also see other information such as domain, operating system (OS), total logged on users and who frequently and less frequently logged on, IP address, and how long it's been reporting sensor data to the Windows Defender ATP service.
+You'll also see other information such as domain, operating system (OS) and build, total logged on users and who frequently and less frequently logged on, IP address, and how long it's been reporting sensor data to the Windows Defender ATP service.
 
-Clicking on the number of total logged on users in the Logged on user tile opens the Users Details pane that displays the following information for logged on users in the past 30 days:
+Clicking on the number of total logged on users in the Logged on users tile opens the Users Details pane that displays the following information for logged on users in the past 30 days:
 
 -	Interactive and remote interactive logins
 -	Network, batch, and system logins
 
 ![Image of user details pane](images/atp-user-details-pane.png)
 
-You'll also see details such as logon types for each user account, the user group, and when the account was logged in.
+You'll also see details such as logon types for each user account, the user group, and when the account logon occurred.
 
  For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
 
-The **Alerts related to this machine** section provides a list of alerts that are associated with the machine. This list is a simplified version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows the date when the last activity was detected, a short description of the alert, the user associated with the alert, the alert's severity, the alert's status in the queue, and who is addressing the alert.
+The **Alerts related to this machine** section provides a list of alerts that are associated with the machine. This list is a filtered version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows the date when the alert's last activity was detected, a short description of the alert, the user account associated with the alert, the alert's severity, the alert's status in the queue, and who is addressing the alert.
 
-You can also choose to highlight an alert from the **Alerts related to this machine** or from the  **Machine timeline** section to see the correlation between the alert and other events that occurred on the machine by right-clicking on the alert and selecting **Select and mark events**. This highlights alerts and related events and helps distinguish from other alerts and events appearing in the timeline. Highlighted events are displayed in all filtering modes whether you choose to view the timeline by **Detections**, **Behaviors**, or **Verbose**.
+You can also choose to highlight an alert from the **Alerts related to this machine** or from the  **Machine timeline** section to see the correlation between the alert and its related events on the machine by right-clicking on the alert and selecting **Select and mark events**. This highlights the alert and its related events and helps distinguish them from other alerts and events appearing in the timeline. Highlighted events are displayed in all information levels whether you choose to view the timeline by **Detections**, **Behaviors**, or **Verbose**.
 
 The **Machine timeline** section provides a chronological view of the events and associated alerts that have been observed on the machine.
 
-This feature also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a specified time period.
+This feature also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a selected time period.
 
 ![Image of machine timeline with events](images/atp-machine-timeline.png)
 
-Windows Defender ATP monitors and captures questionable behavior on Windows 10 machines and displays the process tree flow in the **Machine timeline**. This gives you better context of the behavior which can contribute to understanding the correlation between events, files, and IP addresses in relation to the machine.
+Windows Defender ATP monitors and captures suspicious or anomalous behavior on Windows 10 machines and displays the process tree flow in the **Machine timeline**. This gives you better context of the behavior which can contribute to understanding the correlation between events, files, and IP addresses in relation to the machine.
 
 ### Search for specific alerts
 Use the search bar to look for specific alerts or files associated with the machine:
@@ -106,9 +106,9 @@ From the list of events that are displayed in the timeline, you can examine the 
 
 You can also use the [Alerts spotlight](investigate-alerts-windows-defender-advanced-threat-protection.md#alert-timeline) feature to see the correlation between alerts and events on a specific machine.
 
-Expand an event to view associated processes related to the event. Click on the circle next to any process or IP address in the process tree to investigating further into the identified processes. This action brings up the **Details pane** which includes execution context of processes, network communications and a summary of metadata on the file or IP address.
+Expand an event to view associated processes related to the event. Click on the circle next to any process or IP address in the process tree to investigate additional details of the identified processes. This action brings up the **Details pane** which includes execution context of processes, network communications and a summary of metadata on the file or IP address.
 
-This enhances the ‘in-context’ information across investigation and exploration activities, reducing the need to switch between contexts. It lets you focus on the task of tracing associations between attributes without leaving the current context.
+The details pane enriches the ‘in-context’ information across investigation and exploration activities, reducing the need to switch between contexts. It lets you focus on the task of tracing associations between attributes without leaving the current context.
 
 ## Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
