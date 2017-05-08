@@ -35,6 +35,10 @@ Employees assigned to the Requester role all have the ability to create a change
     
     - **App name.** Provide the name of the app, search for the app, or add a new app name.
 
+        - **Add new app.** Click the **Add new app** button, and then ...
+
+        - **Search all apps.** Click the **Search all apps** button, and then ...
+
     - **Description.** Optionally, you can add a description about the app.
 
     - **Requested change.** 
