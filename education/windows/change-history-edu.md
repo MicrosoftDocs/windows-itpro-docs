@@ -16,6 +16,8 @@ This topic lists new and updated topics in the [Windows 10 for Education](index.
 
 | New or changed topic | Description|
 | --- | --- |
+| [Get started: Deploy and manage a full cloud IT solution with Microsoft Education](https://docs.microsoft.com/education/get-started/get-started-with-microsoft-education) | New. Learn how you can you can quickly and easily use the new Microsoft Education system to implement a full IT cloud solution for your school. |
+| [Microsoft Education documentation and resources](https://docs.microsoft.com/education) | New. Find links to more content for IT admins, teachers, students, and education app developers. |
 | [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)  | New. Provides guidance on ways to configure the OS diagnostic data, consumer experiences, Cortana, search, as well as some of the preinstalled apps, so that Windows is ready for your school. |
 | [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)  | Updated the screenshots and related instructions to reflect the current UI and experience.  |
 | [Set up Windows devices for education](set-up-windows-10.md) | Updated for Windows 10, version 1703. |

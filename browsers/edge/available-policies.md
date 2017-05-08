@@ -226,9 +226,6 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
 
 - **Description:** This policy setting lets you decide whether employees must take an action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash.
 
-    >[!Important]
-    >Sites are put on the auto-allowed list based on how frequently employees load and run the content.
-
     - If you enable or don’t configure the Adobe Flash Click-to-Run setting, an employee must click the content, click a Click-to-Run button, or have the site appear on an auto-allow list before Microsoft Edge loads and runs Adobe Flash content.
     
     - If you disable this setting, Adobe Flash content is automatically loaded and run by Microsoft Edge.
@@ -357,7 +354,7 @@ Microsoft Edge works with these Group Policy settings (`Computer Configuration\A
     
             https://fabrikam.com/opensearch.xml
     
-    - If you disable this setting, the policy-set default search engine is removed. If this is also the current in-use default, the engine changes to the Microsoft Edge specified engine for the market.<p>If you don't configure this setting, the default search engine is set to the one specified in App settings.
+    - If you disable this setting, the policy-set default search engine is removed. If this is also the current in-use default, the engine changes to the Microsoft Edge specified engine for the market.
 
     - If you don't configure this setting (default), the default search engine is set to the one specified in App settings.
 
