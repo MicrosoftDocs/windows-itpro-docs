@@ -27,14 +27,14 @@ You can use Group Policy settings or mobile device management (MDM) to configure
 
 | Group Policy setting | MDM setting | Supported from version | 
 | --- | --- | --- |
-| [Specify Intranet Microsoft update service location](#specify-intranet-microsoft-update-service-location) | [UpdateServiceUrl](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurl) and [UpdateServiceUrlAlternate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurlalternate) | |
+| [Specify Intranet Microsoft update service location](#specify-intranet-microsoft-update-service-location) | [UpdateServiceUrl](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurl) and [UpdateServiceUrlAlternate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurlalternate) | All |
 | [Automatic Updates Detection Frequency](#automatic-updates-detection-frequency) | [DetectionFrequency](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-detectionfrequency) | 1703 |
-| [Remove access to use all Windows Update features](#remove-access-to-use-all-windows-update-features) | | |
-| [Do not connect to any Windows Update Internet locations](#do-not-connect-to-any-windows-update-internet-locations) | | |
-| [Enable client-side targeting](#enable-client-side-targeting) | | |
-| [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location) | [AllowNonMicrosoftSignedUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | |
+| [Remove access to use all Windows Update features](#remove-access-to-use-all-windows-update-features) | | All |
+| [Do not connect to any Windows Update Internet locations](#do-not-connect-to-any-windows-update-internet-locations) | | All |
+| [Enable client-side targeting](#enable-client-side-targeting) | | All |
+| [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location) | [AllowNonMicrosoftSignedUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | All |
 | [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) | [ExcludeWUDriversInQualityUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-excludewudriversinqualityupdate) | 1607 |
-| [Configure Automatic Updates](#configure-automatic-updates) | [AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate) | |
+| [Configure Automatic Updates](#configure-automatic-updates) | [AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate) | All |
 
 >[!NOTE]
 >Additional information about settings to manage device restarts and restart notifications for updates is available on [Manage device restarts after updates](waas-restart.md).
