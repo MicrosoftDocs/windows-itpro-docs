@@ -23,7 +23,7 @@ A provisioning package (.ppkg) is a container for a collection of configuration 
 
 Provisioning packages are simple enough that with a short set of written instructions, a student or non-technical employee can use them to configure their device. This can result in a significant reduction in the time required to configure multiple devices in your organization.
 
-The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Windows Configuration Designer, a tool for configuring provisioning packages. Windows Configuration Designer is also available as an [app in the Windows Store](https://www.microsoft.com/store/apps/9nblggh4tx22). 
+The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Windows Configuration Designer, a tool for configuring provisioning packages. Windows Configuration Designer is also available as an [app in the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). 
 
 
 
@@ -31,12 +31,12 @@ The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://develo
 ## New in Windows 10, version 1703
 
 - The tool for creating provisioning packages is renamed Windows Configuration Designer, replacing the Windows Imaging and Configuration Designer (ICD) tool. The components for creating images have been removed from Windows Configuration Designer, which now provides access to runtime settings only.
-- Windows Configuration Designer can still be installed from the Windows ADK. You can also install it from the Windows Store.
+- Windows Configuration Designer can still be installed from the Windows ADK. You can also install it from the Microsoft Store.
 - Windows Configuration Designer adds more wizards to make it easier to create provisioning packages for specific scenarios. See [What you can configure](#configuration-designer-wizards) for wizard descriptions.
 - The wizard **Provision desktop devices** (previously called **Simple provisioning**) now enables joining Azure Active Directory (Azure AD) domains and also allows you to remove non-Microsoft software from Windows desktop devices during provisioning.
 - When provisioning packages are applied to a device, a status screen indicates successful or failed provisioning. 
 - Windows 10 includes PowerShell cmdlets that simplify scripted provisioning. Using these cmdlets, you can add provisioning packages, remove provisioning packages and generate log files to investigate provisioning errors.
-- The **Provision school devices** wizard is removed from Windows Configuration Designer. Instead, use the [Setup School PCs app](https://www.microsoft.com/store/p/set-up-school-pcs/9nblggh4ls40) from the Windows Store.
+- The **Provision school devices** wizard is removed from Windows Configuration Designer. Instead, use the [Setup School PCs app](https://www.microsoft.com/store/p/set-up-school-pcs/9nblggh4ls40) from the Microsoft Store.
 <!-- Provisioning packages can be made available [using NFC and barcodes](provisioning-nfc.md).--> 
 
 
@@ -71,7 +71,7 @@ The following table describes settings that you can configure using the wizards 
 
 <table><tr><td align="left">**Step**</td><td align="left">**Description**</td><td>**Desktop</br>wizard**</td><td align="center">**Mobile</br>wizard**</td><td>**Kiosk</br>wizard**</td></tr>
 <tr><td valign="top">Set up device</td><td valign="top">Assign device name,</br>enter product key to upgrade Windows,</br>configure shared used,</br>remove pre-installed software</td><td align="center" valign="top">![yes](../images/checkmark.png)</td><td align="center" valign="top">![yes](../images/checkmark.png)</br>(Only device name and upgrade key)</td><td align="center" valign="top">![yes](../images/checkmark.png)</td></tr>
-<tr><td valign="top">Set up network</td><td valign="top">Connect to a Wi-Fit network</td><td align="center" valign="top">![yes](../images/checkmark.png)</td><td align="center" valign="top">![yes](../images/checkmark.png)</td><td align="center" valign="top">![yes](../images/checkmark.png)</td></tr>
+<tr><td valign="top">Set up network</td><td valign="top">Connect to a Wi-Fi network</td><td align="center" valign="top">![yes](../images/checkmark.png)</td><td align="center" valign="top">![yes](../images/checkmark.png)</td><td align="center" valign="top">![yes](../images/checkmark.png)</td></tr>
 <tr><td valign="top">Account management</td><td valign="top">Enroll device in Active Directory,</br>enroll device in Azure Active Directory,</br>or create a local administrator account</td><td align="center" valign="top">![yes](../images/checkmark.png)</td><td align="center" valign="top">![no](../images/crossmark.png)</td><td align="center" valign="top">![yes](../images/checkmark.png)</td></tr>
 <tr><td valign="top">Bulk Enrollment in Azure AD</td><td valign="top">Enroll device in Azure Active Directory</br></br>Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, [set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup).</td><td align="center" valign="top">![no](../images/crossmark.png)</td><td align="center" valign="top">![yes](../images/checkmark.png)</td><td align="center" valign="top">![no](../images/crossmark.png)</td></tr>
 <tr><td valign="top">Add applications</td><td valign="top">Install applications using the provisioning package.</td><td align="center" valign="top">![yes](../images/checkmark.png)</td><td align="center" valign="top">![no](../images/crossmark.png)</td><td align="center" valign="top">![yes](../images/checkmark.png)</td></tr>

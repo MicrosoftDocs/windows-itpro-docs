@@ -260,6 +260,14 @@ If the verification fails and your environment is using a proxy to connect to th
 
     ![Image of registry key for Windows Defender](images/atp-disableantispyware-regkey.png)
 
+## Licensing requirements
+Windows Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
+
+  -	Windows 10 Enterprise E5
+  -	Windows 10 Education E5
+  - Secure Productive Enterprise E5 (SPE E5) which includes Windows 10 Enterprise E5
+
+For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
 
 
 ## Related topics

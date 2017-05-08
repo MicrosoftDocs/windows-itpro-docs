@@ -43,7 +43,7 @@ The app also includes the settings and status of:
 - Parental and Family Controls
 
 >[!NOTE]
->The Windows Defender Security Center app is a client interface on Windows 10, version 1703. It is not the Windows Defender Advanced Security Center, which is the web portal used to review and manage [Windows Defender Advanced Threat Protection](../windows-defender-atp/windows-defender-advanced-threat-protection.md).
+>The Windows Defender Security Center app is a client interface on Windows 10, version 1703. It is not the Windows Defender Security Center web portal that is used to review and manage [Windows Defender Advanced Threat Protection](../windows-defender-atp/windows-defender-advanced-threat-protection.md).
 
 **Review virus and threat protection settings in the Windows Defender Security Center app:**
 

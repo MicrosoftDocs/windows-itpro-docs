@@ -4,8 +4,7 @@ description: Deploy Windows 10 in a test lab using System Center Configuration M
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.pagetype: deploy
-keywords: deployment, automate, tools, configure, sccm, configuration manager
+ms.pagetype: deploykeywords: deployment, automate, tools, configure, sccm, configuration manager
 localizationpriority: high
 author: greg-lindsay
 ---
@@ -15,7 +14,6 @@ author: greg-lindsay
 **Applies to**
 
 -   Windows 10
-
 **Important**: This guide leverages the proof of concept (PoC) environment, and some settings that are configured in the following guides:
 - [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md)
 - [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
@@ -26,7 +24,6 @@ The PoC environment is a virtual network running on Hyper-V with three virtual m
 - **DC1**: A contoso.com domain controller, DNS server, and DHCP server.
 - **SRV1**: A dual-homed contoso.com domain member server, DNS server, and default gateway providing NAT service for the PoC network.
 - **PC1**: A contoso.com member computer running Windows 7, Windows 8, or Windows 8.1 that has been cloned from a physical computer on your corporate network for testing purposes.
-
 This guide leverages the Hyper-V server role to perform procedures. If you do not complete all steps in a single session, consider using [checkpoints](https://technet.microsoft.com/library/dn818483.aspx) and [saved states](https://technet.microsoft.com/library/ee247418.aspx) to pause, resume, or restart your work.
 
 >Multiple features and services are installed on SRV1 in this guide. This is not a typical installation, and is only done to set up a lab environment with a bare minimum of resources. However, if less than 4 GB of RAM is allocated to SRV1 in the Hyper-V console, some procedures will be extremely slow to complete. If resources are limited on the Hyper-V host, consider reducing RAM allocation on DC1 and PC1, and then increasing the RAM allocation on SRV1. You can adjust RAM allocation for a VM by right-clicking the VM in the Hyper-V Manager console, clicking **Settings**, clicking **Memory**, and modifying the value next to **Maximum RAM**.
@@ -38,7 +35,6 @@ This guide provides end-to-end instructions to install and configure System Cent
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
 
 <div style='font-size:9.0pt'>
-
 <TABLE border=1 cellspacing=0 cellpadding=0>
 <TR><TD BGCOLOR="#a0e4fa"><B>Topic</B><TD BGCOLOR="#a0e4fa"><B>Description</B><TD BGCOLOR="#a0e4fa"><B>Time</B>
 
@@ -48,8 +44,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 <TR><TD>[Prepare for Zero Touch installation](#prepare-for-zero-touch-installation)<TD>Prerequisite procedures to support Zero Touch installation.<TD>60 minutes
 <TR><TD>[Create a boot image for Configuration Manager](#create-a-boot-image-for-configuration-manager)<TD>Use the MDT wizard to create the boot image in Configuration Manager.<TD>20 minutes
 <TR><TD>[Create a Windows 10 reference image](#create-a-windows-10-reference-image)<TD>This procedure can be skipped if it was done previously, otherwise instructions are provided to create a reference image.<TD>0-60 minutes
-<TR><TD>[Add a Windows 10 operating system image](#add-a-windows-10-operating-system-image)<TD>Add a Windows 10 operating system image and distribute it.<TD>10 minutes
-<TR><TD>[Create a task sequence](#create-a-task-sequence)<TD>Create a Configuration Manager task sequence with MDT integration using the MDT wizard<TD>15 minutes
+<TR><TD>[Add a Windows 10 operating system image](#add-a-windows-10-operating-system-image)<TD>Add a Windows 10 operating system image and distribute it.<TD>10 minutes<TR><TD>[Create a task sequence](#create-a-task-sequence)<TD>Create a Configuration Manager task sequence with MDT integration using the MDT wizard<TD>15 minutes
 <TR><TD>[Finalize the operating system configuration](#finalize-the-operating-system-configuration)<TD>Enable monitoring, configure rules, and distribute content.<TD>30 minutes
 <TR><TD>[Deploy Windows 10 using PXE and Configuration Manager](#deploy-windows-10-using-pxe-and-configuration-manager)<TD>Deploy Windows 10 using Configuration Manager deployment packages and task sequences.<TD>60 minutes
 <TR><TD>[Replace a client with Windows 10 using Configuration Manager](#replace-a-client-with-windows-10-using-configuration-manager)<TD>Replace a client computer with Windows 10 using Configuration Manager.<TD>90 minutes
@@ -60,7 +55,6 @@ Topics and procedures in this guide are summarized in the following table. An es
 </div>
 
 ## Install prerequisites
-
 1. Before installing System Center Configuration Manager, we must install prerequisite services and features. Type the following command at an elevated Windows PowerShell prompt on SRV1: 
 
     ```
@@ -78,7 +72,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 
     This command mounts the .ISO file to drive D on SRV1.
 
-4. Type the following command at an elevated Windows PowerShell prompt on SRV1 to install SQL Server 2012 SP2:
+4. Type the following command at an elevated Windows PowerShell prompt on SRV1 to install SQL Server:
 
     ```
     D:\setup.exe /q /ACTION=Install /ERRORREPORTING="False" /FEATURES=SQLENGINE,RS,IS,SSMS,TOOLS,ADV_SSMS,CONN /INSTANCENAME=MSSQLSERVER /INSTANCEDIR="C:\Program Files\Microsoft SQL Server" /SQLSVCACCOUNT="NT AUTHORITY\System" /SQLSYSADMINACCOUNTS="BUILTIN\ADMINISTRATORS" /SQLSVCSTARTUPTYPE=Automatic /AGTSVCACCOUNT="NT AUTHORITY\SYSTEM" /AGTSVCSTARTUPTYPE=Automatic /RSSVCACCOUNT="NT AUTHORITY\System" /RSSVCSTARTUPTYPE=Automatic /ISSVCACCOUNT="NT AUTHORITY\System" /ISSVCSTARTUPTYPE=Disabled /ASCOLLATION="Latin1_General_CI_AS" /SQLCOLLATION="SQL_Latin1_General_CP1_CI_AS" /TCPENABLED="1" /NPENABLED="1" /IAcceptSQLServerLicenseTerms
