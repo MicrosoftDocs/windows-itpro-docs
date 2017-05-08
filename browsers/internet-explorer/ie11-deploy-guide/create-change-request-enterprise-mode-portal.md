@@ -29,31 +29,9 @@ Employees assigned to the Requester role all have the ability to create a change
 
    The **Create new request** screen appears.
 
-2. Fill out the required fields, including:
-
-    - **Group name.** Select your group name.
+2. Fill out all of the required fields, based on your group and the app.
     
-    - **App name.** Provide the name of the app, search for the app, or add a new app name.
-
-        - **Add new app.** Click the **Add new app** button, and then ...
-
-        - **Search all apps.** Click the **Search all apps** button, and then ...
-
-    - **Description.** Optionally, you can add a description about the app.
-
-    - **Requested change.** 
-
-    - **Reason for request.**
-
-    - **Business impact (Optional).**
-
-    - **App location (URL).** Provide the full URL to the app.
-
-    - **App best viewed in.** Select the best browser or compatibility mode for this app.
- 
-    - **Is an X-UA tag used?** Choose either **Yes** or **No**, depending on whether the app uses the X-UA tag.
-
-    A message appears that the request was successful, including a **Request ID** number, and saying that the change is being made to the pre-production environment site list.
+   A message appears that the request was successful, including a **Request ID** number, and saying that the change is being made to the pre-production environment site list.
 
 3. The requester gets an email that includes:
 
