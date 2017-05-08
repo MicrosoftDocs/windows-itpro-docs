@@ -85,7 +85,7 @@ Employees assigned to the Requester role all have the ability to create a change
 
 2. Update any of the request fields, and then click **Save and continue**.
 
-    A message appears that the request was successful, including a **Request ID** number, and saying that the change is being made to the pre-production environment site list.
+    A message appears that the update was successful, including a **Request ID** number, and saying that the change is being made to the pre-production environment site list.
 
 3. The requester gets an email that includes:
 
