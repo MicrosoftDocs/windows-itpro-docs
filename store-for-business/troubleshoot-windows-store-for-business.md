@@ -49,7 +49,7 @@ The private store for your organization is a page in the Windows Store app that 
 ## Still having trouble?
 
 If you are still having trouble using Microsoft Store or installing an app, Admins can sign in and look for topics on our **Support** page.
-                            t    
+   
 **To view Support page** 
 
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com)
