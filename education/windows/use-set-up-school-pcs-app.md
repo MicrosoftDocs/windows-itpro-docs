@@ -17,7 +17,7 @@ author: CelesteDG
 
 IT administrators and technical teachers can use the **Set up School PCs** app to quickly set up PCs for students. A student PC set up using the app is tailored to provide students with the tools they need for learning while removing apps and features that they don't need.
 
-![Set up School PCs app](images/suspc_getstarted_resized.png)
+![Set up School PCs app](images/suspc_getstarted_050817.png)
 
 ## What does this app do?
 
@@ -112,7 +112,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
   **Figure 1** - Launch the Set up School PCs app
 
-  ![Launch the Set up School PCs app](images/suspc_getstarted_resized.png)
+  ![Launch the Set up School PCs app](images/suspc_getstarted_050817.png)
 
 2. Click **Get started**.
 3. To sign in to your school's Office 365 account, in the **First step: Let's get you signed in** page:
@@ -170,7 +170,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
     **Figure 3** - Configure student PC settings
 
-    ![Configure student PC settings](images/suspc_choosesettings_settings_updated.png)
+    ![Configure student PC settings](images/suspc_createpackage_settingspage.png)
 
  When you're doing configuring the student PC settings, click **Next**.
 
@@ -182,7 +182,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
     **Figure 4** - Configure the Take a Test app
 
-    ![Configure the Take a Test app](images/suspc_choosesettings_setuptakeatest.png)
+    ![Configure the Take a Test app](images/suspc_createpackage_takeatestpage.png)
 
   3. Click **Next** or **Skip** depending on whether you want to set up Take a Test.
 
@@ -202,7 +202,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
       **Figure 5** - Review your settings and change them as needed
 
-      ![Review your settings and change them as needed](images/suspc_choosesettings_summary.png)
+      ![Review your settings and change them as needed](images/suspc_createpackage_summary.png)
 
   2. Click **Accept**.
 
@@ -213,19 +213,19 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
       **Figure 6** - Select the USB drive and save the provisioning package
 
-      ![Select the USB drive and save the provisioning package](images/suspc_savepackage_insertusb.png)
+      ![Select the USB drive and save the provisioning package](images/suspc_savepackage_insertusb_050817.png)
 
 10. When the provisioning package is ready, you will see the name of the file and you can remove the USB drive. Click **Next** if you're done, or click **Add a USB** to save the same provisioning package to another USB drive.
 
   **Figure 7** - Provisioning package is ready
 
-  ![Provisioning package is ready](images/suspc_ppkg_isready.png)
+  ![Provisioning package is ready](images/suspc_ppkgisready_050817.png)
 
 12. Follow the instructions in the **Get the student PCs ready** page to start setting up the student PCs. 
 
   **Figure 8** - Line up the student PCs and get them ready for setup
 
-  ![Line up the student PCs and get them ready for setup](images/suspc_getpcsready_getpcsready.png)
+  ![Line up the student PCs and get them ready for setup](images/suspc_runpackage_getpcsready.png)
 
 13. Click **Next**.
 14. In the **Install the package** page, follow the instructions in [Apply the provisioning package to the student PCs](#apply-the-provisioning-package-to-the-student-pcs) to set up the student PCs. 
@@ -234,7 +234,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
   **Figure 9** - Install the provisioning package on the student PCs
 
-  ![Install the provisioning package on the student PCs](images/suspc_getpcsready_installpackage.png)
+  ![Install the provisioning package on the student PCs](images/suspc_runpackage_installpackage.png)
 
 
 ### Apply the provisioning package to the student PCs
