@@ -150,7 +150,7 @@ When enabling this setting through Group Policy, under **Computer Configuration\
 
 **3 - Auto download and notify for Install** - Windows finds updates that apply to the device and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to **Settings > Update & security > Windows Update**, users can install them.
 
-**4 - Auto download and schedule the instal** - Specify the schedule using the options in the Group Policy Setting. For more informationa about this setting, see [Schedule update installation](waas-restart,md#schedule-update-installation).
+**4 - Auto download and schedule the instal** - Specify the schedule using the options in the Group Policy Setting. For more informationa about this setting, see [Schedule update installation](waas-restart.md#schedule-update-installation).
 
 **5 - Allow local admin to choose setting** - With this option, local administrators will be allowed to use the settings app to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.
 
