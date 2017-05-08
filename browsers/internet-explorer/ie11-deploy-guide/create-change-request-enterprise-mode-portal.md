@@ -31,29 +31,29 @@ Employees assigned to the Requester role all have the ability to create a change
 
 2. Fill out the required fields, including:
 
-    - Group name.
+    - **Group name.** Select your group name.
     
-    - App name.
+    - **App name.** Provide the name of the app, search for the app, or add a new app name.
 
-    - Description.
+    - **Description.** Optionally, you can add a description about the app.
 
-    - Requested change
+    - **Requested change.** 
 
-    - Reason for request
+    - **Reason for request.**
 
-    - Business impact (Optional)
+    - **Business impact (Optional).**
 
-    - App location (URL).
+    - **App location (URL).** Provide the full URL to the app.
 
-    - App best viewed in
+    - **App best viewed in.** Select the best browser or compatibility mode for this app.
  
-    - Is an X-UA tag used?
+    - **Is an X-UA tag used?** Choose either **Yes** or **No**, depending on whether the app uses the X-UA tag.
 
     A message appears that the request was successful, including a **Request ID** number, and saying that the change is being made to the pre-production environment site list.
 
 3. The requester gets an email that includes:
 
-    - A batch script, that when run, configures the test machine for the pre-production environment.
+    - A batch script, that when run, configures their test machine for the pre-production environment.
     
     - The necessary steps to make sure that the changed info is correct. 
 
@@ -63,7 +63,7 @@ Employees assigned to the Requester role all have the ability to create a change
 
 
 **To edit an existing change request** (start here, copied text for edit and delete, need to see actual screens)
-1. The Requester (an employee that has been assigned the Requester role) signs into the Enterprise Mode Site List Portal, and clicks **Create new request**.
+1. The Requester (an employee that has been assigned the Requester role) signs into the Enterprise Mode Site List Portal, and clicks their active request.
 
 2. Type blah into blah, and then click **Save and continue**.
 
@@ -83,7 +83,7 @@ Employees assigned to the Requester role all have the ability to create a change
 **To delete an unapproved or no longer relevant change request**
 1. The Requester (an employee that has been assigned the Requester role) signs into the Enterprise Mode Site List Portal, and clicks **Create new request**.
 
-2. Type blah into blah, and then click **Save and continue**.
+2. Update any of the request fields, and then click **Save and continue**.
 
     A message appears that the request was successful, including a **Request ID** number, and saying that the change is being made to the pre-production environment site list.
 
