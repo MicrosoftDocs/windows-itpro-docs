@@ -36,7 +36,7 @@ Windows 10 gains new functionality with twice-per-year feature update releases. 
 
 Each Windows 10 feature update will be serviced with quality updates for 18 months from the date of the feature update release. 
 
-Windows 10 Enterprise LTSB is a separate **Long Term Servicing Branch (LTSB)** version.  Each release is supported for a total of 10 years (five years standard support, five years extended support).  New releases are expected about every three years.
+Windows 10 Enterprise LTSB is a separate **Long Term Servicing Channel** version.  Each release is supported for a total of 10 years (five years standard support, five years extended support).  New releases are expected about every three years.
 
 See [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) for more information.
 
