@@ -50,6 +50,8 @@ In this walkthrough, we'll show you the basics on how to:
 
 This diagram shows a high-level view of what we cover in this walkthrough. The numbers correspond to the sections in the walkthrough and roughly correspond to the flow of the overall process; but, note that not all sections in this walkthrough are shown in the diagram.
 
+**Figure 1** - Microsoft Education IT administrator workflow
+
 ![Deploy and manage a full cloud IT solution using Microsoft Education](images/microsoft-education-get-started-workflow.png)
 
 ## Prerequisites
@@ -109,7 +111,7 @@ Already have an Office 365 for Education verified tenant? Just sign in with your
 1. Click <a href="https://aka.ms/intuneforedupreviewtrial" target="_blank">https://aka.ms/intuneforedupreviewtrial</a> to get started.
 2. In the **Intune for Education Trial** page, click **Sign in**.
 
-  **Figure 1** - Intune for Education trial sign in page
+  **Figure 2** - Intune for Education trial sign in page
 
   ![Intune for Education trial sign in page](images/i4e_trialsigninpage.png)
 
@@ -125,7 +127,7 @@ Don't have an Office 365 for Education verified tenant or just starting out? Fol
 1. Go to the <a href="https://signup.microsoft.com/Signup?OfferId=03ee83a5-5cb4-4545-aca9-33ead43f222a,d764709a-7763-45ef-a2a8-db5b8b6ae704&DL=ENTERPRISEPREMIUM_FACULTY" target="_blank">Office 365 for Education sign up page</a> to sign up for a free subscription for your school.
 2. Create an account and a user ID and password to use to sign into your account. 
 
-  **Figure 2** - Office 365 account creation
+  **Figure 3** - Office 365 account creation
 
   ![Create an Office 365 account](images/o365_createaccount.png)
 
@@ -151,7 +153,7 @@ Follow all the steps in this section to use SDS and sample CSV files in a trial 
 1. Go to the <a href="https://aka.ms/sdsscripts" target="_blank">O365-EDU-Tools GitHub site</a>.
 2. Click the green **Clone or download** button to download the SDS sample files.
 
-  **Figure 3** - Download the SDS sample files from GitHub
+  **Figure 4** - Download the SDS sample files from GitHub
 
   ![Download the SDS sample files from GitHub](images/sds_github_downloadsample.png)
 
@@ -159,7 +161,7 @@ Follow all the steps in this section to use SDS and sample CSV files in a trial 
 4. Go to the folder where you saved the .zip and unzip the files.
 5. Open the **O365-EDU-Tools-master** folder and then open the **CSV Samples** subfolder. Confirm that you can see the following sample CSV files.
 
-  **Figure 4** - Sample CSV files
+  **Figure 5** - Sample CSV files
 
   ![Use the sample CSV files](images/sds_sample_csv_files_us_uk.png)
 
@@ -178,11 +180,6 @@ The Classroom application is retired, but you will need to assign the Classroom 
 2. Select the checkbox for your global admin account.
 3. In the account details window, under **Product licenses**, click **Edit**.
 4. In the **Product licenses** page, turn on **Microsoft Classroom** and then click **Save**.
-
-  **Figure 5** - Assign yourself the Microsoft Classroom license
-
-  ![Assign yourself the Microsoft Classroom license](images/o365_assignlicense.png)
-
 5. Confirm that you can access SDS. To do this, log in to <a href="http://sds.microsoft.com" target="_blank">https://sds.microsoft.com</a>.
 
   > [!NOTE]
