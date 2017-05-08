@@ -18,7 +18,7 @@ localizationpriority: high
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
-You can use Group Policy settings or mobile device management (MDM) to configure the behavior of Windows Update (WU) on your Windows 10 devices. You can configure the update detection frequenct, select when updates are recieved, specify the update service location and more.
+You can use Group Policy settings or mobile device management (MDM) to configure the behavior of Windows Update (WU) on your Windows 10 devices. You can configure the update detection frequent, select when updates are received, specify the update service location and more.
 
 >[!IMPORTANT]
 >In Windows 10, any Group Policy user configuration settings for Windows Update were deprecated and are no longer supported on this platform.
@@ -94,7 +94,7 @@ By enabling the Group Policy setting under **Computer Configuration\Administrati
 
 Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update or the Microsoft Store.
 
-Use **Computer Configuration\Administrative Templates\Windows Components\Windows update\Do not connect to any Windows Update Internet locations** to enable this policy. When enabled, this policy will disable the functionality discribed above, and may cause connection to public services such as the Microsoft Store, Windows Update for Business and Delivery Optimization to stop working.
+Use **Computer Configuration\Administrative Templates\Windows Components\Windows update\Do not connect to any Windows Update Internet locations** to enable this policy. When enabled, this policy will disable the functionality described above, and may cause connection to public services such as the Microsoft Store, Windows Update for Business and Delivery Optimization to stop working.
 
 >[!NOTE]
 >This policy applies only when the device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
@@ -107,7 +107,7 @@ This Group Policy setting can be found under **Computer Configuration\Administra
 If the setting is set to *Enabled*, the specified target group information is sent to the intranet Microsoft update service which uses it to determine which updates should be deployed to this computer.
 If the setting is set to *Disabled* or *Not Configured*, no target group information will be sent to the intranet Microsoft update service.
 
-If the intranet Microsoft update service supports multiple target groups this policy can specify multiple group names separated by semicolons. Otherwise, a single group must be specified.
+If the intranet Microsoft update service supports multiple target groups, this policy can specify multiple group names separated by semicolons. Otherwise, a single group must be specified.
 
 >[!NOTE]
 >This policy applies only when the intranet Microsoft update service the device is directed to is configured to support client-side targeting. If the “Specify intranet Microsoft update service location” policy is disabled or not configured, this policy has no effect.
@@ -134,7 +134,7 @@ TODO: Story
 
 ### Do not include drivers with Windows Updates
 
-Allows admins to exlucde Windows Update (WU) drivers during updates.
+Allows admins to exclude Windows Update (WU) drivers during updates.
 
 To configure this setting in Group Policy, use **Computer Configuration\Administrative Templates\Windows Components\Windows update\Do not include drivers with Windows Updates**. 
 Enable this policy to not include drivers with Windows quality updates.
@@ -150,7 +150,7 @@ When enabling this setting through Group Policy, under **Computer Configuration\
 
 **3 - Auto download and notify for Install** - Windows finds updates that apply to the device and downloads them in the background (the user is not notified or interrupted during this process). When the downloads are complete, users will be notified that they are ready to install. After going to **Settings > Update & security > Windows Update**, users can install them.
 
-**4 - Auto download and schedule the instal** - Specify the schedule using the options in the Group Policy Setting. For more informationa about this setting, see [Schedule update installation](waas-restart.md#schedule-update-installation).
+**4 - Auto download and schedule the install** - Specify the schedule using the options in the Group Policy Setting. For more information about this setting, see [Schedule update installation](waas-restart.md#schedule-update-installation).
 
 **5 - Allow local admin to choose setting** - With this option, local administrators will be allowed to use the settings app to select a configuration option of their choice. Local administrators will not be allowed to disable the configuration for Automatic Updates.
 
