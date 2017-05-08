@@ -67,11 +67,11 @@ This feature also enables you to selectively drill down into events that occurre
 
 Windows Defender ATP monitors and captures suspicious or anomalous behavior on Windows 10 machines and displays the process tree flow in the **Machine timeline**. This gives you better context of the behavior which can contribute to understanding the correlation between events, files, and IP addresses in relation to the machine.
 
-<span id="search" />
-### Search for specific alerts
-Use the search bar to look for specific alerts or files associated with the machine. Harness the power of using the following defined search queries and event filter types to sift through the search results:
 
--	**Value** - Type in any search keyword to filter the timeline with the attribute you’re searching for. <br>
+### Search for specific alerts
+Use the search bar to look for specific alerts or files associated with the machine. Harness the power of using the following defined search queries based on type:value pairs and event filter types to sift through the search results:
+
+-	**Value** - Type in any search keyword to filter the timeline with the attribute you’re searching for. This search supports defined search queries based on type:value pairs.<br>
   You can use any of the following values:<br>
   - Hash: Sha1 or MD5
   - File name
@@ -85,6 +85,7 @@ Use the search bar to look for specific alerts or files associated with the mach
   - Detections mode: displays Windows ATP Alerts and detections
   -	Behaviors mode: displays "detections" and selected events of interest
   -	Verbose mode: displays all raw events without aggregation or filtering
+
 - **Event type** - Click the drop-down button to filter by the following levels:
   - Windows Defender ATP alerts
   - Windows Defender AV alerts
@@ -96,7 +97,9 @@ Use the search bar to look for specific alerts or files associated with the mach
   - File events
   - Registry events
   - Load DLL events
-  - Other events
+  - Other events <br><br>
+  Filtering by event type allows you to define precise queries so that you see events with a specific focus. For example, you can search for a file name, then filter the results to only see Process events matching the search criteria or to only view file events, or even better: to view only network events over a period of time to make sure no suspicious outbound communications go unnoticed.
+
 -	**User account** – Click the drop-down button to filter the machine timeline by the following user associated events:
   -	Logon users
   -	System
