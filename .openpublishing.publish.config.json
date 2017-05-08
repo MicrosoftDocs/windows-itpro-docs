@@ -2,7 +2,6 @@
   "build_entry_point": "",
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
-  "enable_incremental_build": true,
   "docsets_to_publish": [
     {
       "docset_name": "education",
@@ -387,7 +386,14 @@
   "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
+  "enable_incremental_build": true,
   "dependent_repositories": [
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master",
+      "branch_mapping": {}
+    },
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
@@ -395,5 +401,14 @@
       "branch_mapping": {}
     }
   ],
-  "need_generate_pdf_url_template": false
+  "branch_target_mapping": {
+    "live": ["Publish","Pdf"],
+    "master": ["Publish", "Pdf"]
+  }, 
+  "need_generate_pdf_url_template": true,
+  "Targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  }
 }
