@@ -61,7 +61,7 @@ A student PC that's set up using the Set up School PCs provisioning package is t
 * **Network tips**
   * You cannot use Set up School PCs over a certification-based network, or one where you have to enter credentials in a browser. You can only connect to an open network, or one with a basic password. 
   * If you need to set up a lot of devices over Wi-Fi, make sure that your network configuration can support it.
-    - We recommend configuring your DHCP so you have a good set of IP addresses available (about 100-200). These IP addresses will expire after a short amount of time (about 30 minutes). This allows you set up many devices simultaneously, and the IP addresses will be freed up quick so you can continue to set up devices without risk of crashing your network.
+    - We recommend configuring your DHCP so at least 200 IP addresses are available for the devices you are setting up. Configure your IP addresses to expire after a short time (about 30 minutes). This ensures that you can set up many devices simultaneously, and IP addresses will free up quickly so you can continue to set up devices without hitting network issues.
 
 * **Apply to new student PCs**
   * The provisioning package that the Set up School PCs app creates should be used on new PCs that haven't been set up for accounts yet. If you apply the provisioning package to a student PC that has already been set up, existing accounts and data might be lost.
