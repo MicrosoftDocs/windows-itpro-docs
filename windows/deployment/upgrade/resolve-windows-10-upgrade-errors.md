@@ -851,7 +851,7 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <ol>
 <li>Open <b>Administrative Tools</b> from the Control Panel.</li>
 <li>Double-click <b>Services</b>.</li>
-<li>Find the <b>Windows Update</b> service, right-click it, and then click <b>Stop</b>.</li>
+<li>Find the <b>Windows Update</b> service, right-click it, and then click <b>Stop</b>. If prompted, enter your credentials.</li>
 </ol>
 </li>
 <li>Delete all files and folders under c:\Windows\SoftwareDistribution\DataStore.</li>
