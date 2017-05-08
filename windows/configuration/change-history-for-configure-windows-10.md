@@ -19,7 +19,7 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 | New or changed topic | Description |
 | --- | --- |
 | [Configure cellular settings for tablets and PCs](provisioning-apn.md) | New |
-| [ Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added MDM policies for privacy settings. |
+| [ Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added MDM policies for privacy settings |
 
 ## April 2017
 
