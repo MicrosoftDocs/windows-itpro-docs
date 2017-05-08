@@ -15,12 +15,12 @@ author: trudyha
 
 -   Windows 10  
 
-When you sign up for a [Minecraft: Education Edition](http://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](http://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Windows Store for Business, a private version of Windows Store associated with your Azure Active Directory (Azure AD) tenant. Your Store for Business is only displayed to members of your organization.
+When you sign up for a [Minecraft: Education Edition](http://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](http://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Microsoft Store for Education which is associated with your Azure Active Directory (Azure AD) tenant. Your Microsoft Store for Education is only displayed to members of your organization.
 
 >[!Note]
 >If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans).
 
-## Add Minecraft to your Windows Store for Business 
+## Add Minecraft to your Windows Store for Education 
 
 You can start with the Minecraft: Education Edition trial to get individual copies of the app. For more information, see [Minecraft: Education Edition - direct purchase](#individual-copies). 
 
@@ -36,7 +36,7 @@ If you’ve been approved and are part of the Enrollment for Education Solutions
 
     <!-- ![Enter school email address](images/enter-email.png) -->
     
-3. Select **Get the app**. This will take you to the Windows Store for Business to download the app. You will also receive an email with instructions and a link to the Store.
+3. Select **Get the app**. This will take you to the Microsoft Store for Education to download the app. You will also receive an email with instructions and a link to the Store.
 
     <!-- ![You can get the app now](images/get-the-app.png) -->
 
@@ -55,9 +55,9 @@ If you need additional licenses for **Minecraft: Education Edition**, see [Purch
 ### <a href="" id="volume-license"></a>Minecraft: Education Edition - volume licensing
 Qualified education institutions can purchase Minecraft: Education Edition licenses through their Microsoft channel partner. Schools need to be part of the Enrollment for Education Solutions (EES) volume licensing program. Educational institutions should work with their channel partner to determine which Minecraft: Education Edition licensing offer is best for their institution. The process looks like this: 
 
-- Your channel partner will submit and process your volume license order, your licenses will be shown on [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), and the licenses will be available in your [Microsoft Store for Business](https://www.microsoft.com/business-store) inventory. 
-- You’ll receive an email with a link to Microsoft Store for Business. 
-- Sign in to [Windows Store for Business](https://www.microsoft.com/business-store) to distribute and manage the Minecraft: Education Edition licenses. For more information on distribution options, see [Distribute Minecraft](#distribute-minecraft)
+- Your channel partner will submit and process your volume license order, your licenses will be shown on [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), and the licenses will be available in your [Microsoft Store for Education](https://www.microsoft.com/business-store) inventory. 
+- You’ll receive an email with a link to Microsoft Store for Education. 
+- Sign in to [Windows Store for Education](https://educationstore.microsoft.com) to distribute and manage the Minecraft: Education Edition licenses. For more information on distribution options, see [Distribute Minecraft](#distribute-minecraft)
 
 ## Minecraft: Education Edition payment options
 You can pay for Minecraft: Education Edition with a debit or credit card, or with an invoice. 
@@ -83,12 +83,13 @@ Invoices are now a supported payment method for Minecraft: Education Edition. Th
 
 ### Find your invoice
 
-After you've finished the purchase, you can find your invoice by checking **Minecraft: Education Edition** in your **Inventory**. 
+After you've finished the purchase, you can find your invoice by checking **Minecraft: Education Edition** in your **Apps & software**. 
 
-> **Note**: After you complete a purchase, it can take up to twenty-four hours for the app to appear in **Inventory**.
+> [!NOTE]
+> After you complete a purchase, it can take up to twenty-four hours for the app to appear in **Apps & software**.
 
 **To view your invoice**
-1. In Microsoft Store for Business, click **Manage** and then click **Inventory**. 
+1. In Microsoft Store for Education, click **Manage** and then click **Apps & software**. 
 2. Click **Minecraft: Education Edition** in the list of apps. 
 3. On **Minecraft: Education Edition**, click **View Bills**.
 
@@ -101,7 +102,7 @@ After you've finished the purchase, you can find your invoice by checking **Mine
 The **Payment Instructions** section on the first page of the invoice has information on invoice amount, due date, and how to pay with electronic funds transfer, or with a check. 
 
 ## Distribute Minecraft
-After Minecraft: Education Edition is added to your Windows Store for Business inventory, you have three options:
+After Minecraft: Education Edition is added to your Microsoft Store for Education inventory, you have three options:
 
 - You can install the app on your PC.
 - You can assign the app to others. 
@@ -125,8 +126,8 @@ For Minecraft: Education Edition, you can use auto assign subscription to contro
 
 **How to turn off automatic subscription assignment**
 
->[!Note]
->The version of the Minecraft: Education Edition page in the Store for Business will be different depending on which Store for Business flight you are using. 
+> [!Note]
+> The version of the Minecraft: Education Edition page in the Microsoft Store will be different depending on which Microsoft Store for Education flight you are using. 
 
 1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com)
 2. Click Manage.
@@ -292,10 +293,10 @@ You can purchase more licenses by working with your channel partner. Licenses ar
 If you’ve purchased a volume license, be sure to let other basic purchasers in your organization know about the volume license. That should help prevent unnecessary purchases of individual copies. -->
 
 ## Learn more
-[Working with Microsoft Store for Business – education scenarios](education-scenarios-store-for-business.md) </br>
-Learn about overall Microsoft Store for Business management: manage settings, shop for apps, distribute apps, manage inventory, and manage order history.  
-[Roles and permissions in Microsoft Store for Business](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business)
-[Troubleshoot Microsoft Store for Business](https://technet.microsoft.com/itpro/windows/manage/troubleshoot-windows-store-for-business)
+[Working with Microsoft Store for Education – education scenarios](education-scenarios-store-for-business.md) </br>
+Learn about overall Microsoft Store for Education management: manage settings, shop for apps, distribute apps, manage inventory, and manage order history.  
+[Roles and permissions in Microsoft Store for Business and Education](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business)
+[Troubleshoot Microsoft Store for Business and Education](https://technet.microsoft.com/itpro/windows/manage/troubleshoot-windows-store-for-business)
 
 ## Related topics
 

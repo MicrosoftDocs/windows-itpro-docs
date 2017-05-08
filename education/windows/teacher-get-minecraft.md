@@ -17,7 +17,7 @@ author: trudyha
 
 Learn how teachers can get and distribute Minecraft: Education Edition.
 
-## Add Minecraft to your Microsoft Store for Business 
+## Add Minecraft to your Microsoft Store for Education 
 
 1. Go to [http://education.minecraft.net/](http://education.minecraft.net/) and select **GET STARTED**.
 
@@ -27,15 +27,15 @@ Learn how teachers can get and distribute Minecraft: Education Edition.
 
     <!-- ![Enter school email address](images/enter-email.png) -->
     
-3. Select **Get the app**. This will take you to the Windows Store for Business to download the app. You will also receive an email with instructions and a link to the Store.
+3. Select **Get the app**. This will take you to the Windows Store for Ecucation to download the app. You will also receive an email with instructions and a link to the Store.
 
     <!-- ![You can get the app now](images/get-the-app.png) -->
 
-4. Sign in to Microsoft Store for Business with your email address.
+4. Sign in to Microsoft Store for Education with your email address.
 
-5. Read and accept the Microsoft Store for Business Service Agreement, and then select **Next**.
+5. Read and accept the Microsoft Store for Business and Education Service Agreement, and then select **Next**.
 
-6. **Minecraft: Education Edition** opens in the Windows Store for Business. Select **Get the app**. This places **Minecraft: Education Edition** in your Windows Store for Business inventory.
+6. **Minecraft: Education Edition** opens in the Microsoft Store for Education. Select **Get the app**. This places **Minecraft: Education Edition** in your Microsoft Store inventory.
 
     ![Get Minecraft app in Store](images/minecraft-get-the-app.png)
     
@@ -43,7 +43,7 @@ If you need additional licenses for **Minecraft: Education Edition**, see [Purch
     
 ## Distribute Minecraft
 
-After Minecraft: Education Edition is added to your Windows Store for Business inventory, you have three options:
+After Minecraft: Education Edition is added to your Microsoft Store for Education inventory, you have three options:
 
 - You can install the app on your PC.
 - You can assign the app to others.  
