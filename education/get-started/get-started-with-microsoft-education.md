@@ -172,18 +172,25 @@ To learn more about the CSV files that are required and the info you need to inc
 
 **<a name="assignclassroom"></a>Assign Classroom license**
 
-The Classroom application is retired, but you need to confirm and assign the Classroom license to enable both Classroom and SDS in the tenant. To do this, follow these steps:
+The Classroom application is retired, but you will need to assign the Classroom Preview license to yourself and other global admins so that you can access the services. The single license will allow global admins to access both Classroom Preview and School Data Sync.
 
-1. After you've applied the SDS promo code, confirm purchase of the Classroom subscription. In the <a href="https://portal.office.com/adminportal" target="_blank">Office 365 admin portal</a>, go to **Billing > Subscriptions** and confirm **Microsoft Classroom** appears under the list of **Active** subscriptions.
-2. In the **Subscriptions** page, select **Microsoft Classroom** and verify that the licenses are assigned to users. If not, click **Assign to users** and assign licenses to users in your tenant.
+1. In the <a href="https://portal.office.com/adminportal" target="_blank">Office 365 admin center</a>, select **Users > Active users**.
+2. Select the checkbox for your global admin account.
+3. In the account details window, under **Product licenses**, click **Edit**.
+4. In the **Product licenses** page, turn on **Microsoft Classroom** and then click **Save**.
 
-  **Figure 5** - Confirm Classroom subscription is assigned
+  **Figure 5** - Assign yourself the Microsoft Classroom license
 
-  ![Confirm Classroom subscription is assigned](images/o365_subscriptions_verifyclassroomsubscription.png)
+  ![Assign yourself the Microsoft Classroom license](images/o365_assignlicense.png)
+
+5. Confirm that you can access SDS. To do this, log in to <a href="http://sds.microsoft.com" target="_blank">https://sds.microsoft.com</a>.
+
+  > [!NOTE]
+  > Only global admins can access SDS.
 
 **<a name="usesdstoimportdata"></a>Use SDS to import student data**
 
-1. Go to the <a href="http://sds.microsoft.com" target="_blank">Microsoft School Data Sync site</a>.
+1. If you haven't done so already, To do this, go to <a href="http://sds.microsoft.com" target="_blank">https://sds.microsoft.com</a>.
 2. Click **Sign in**. You will see the **Settings** option for **Manage School Data Sync**.
 
   **Figure 6** - Settings for managing SDS
