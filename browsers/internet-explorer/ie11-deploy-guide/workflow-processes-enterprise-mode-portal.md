@@ -26,14 +26,16 @@ Use the topics in this section to learn how to perform the available Enterprise 
 ## In this section
 |Topic                                                          |Description                                                                        |
 |---------------------------------------------------------------|-----------------------------------------------------------------------------------|
-|[Create a change request using the Enterprise Mode Site List Portal](ie11-deploy-guide/create-change-request-enterprise-mode-portal.md)|Details about how the Requester creates a change request in the Enterprise Mode Site List Portal.|
-|[Verify your changes using the Enterprise Mode Site List Portal](ie11-deploy-guide/verify-changes-preprod-enterprise-mode-portal.md)|Details about how the Requester tests a change request in the pre-production environment of the Enterprise Mode Site List Portal.|
-|[Approve a change request using the Enterprise Mode Site List Portal](ie11-deploy-guide/approve-change-request-enterprise-mode-portal.md)|Details about how the Approver(s) approve a change request in the Enterprise Mode Site List Portal.|
-|[Schedule approved change requests for production using the Enterprise Mode Site List Portal](ie11-deploy-guide/schedule-production-change-enterprise-mode-portal.md)|Details about how the Requester schedules the approved change request update in the Enterprise Mode Site List Portal.|
-|[Verify the change request update in the production environment using the Enterprise Mode Site List Portal](ie11-deploy-guide/verify-changes-production-enterprise-mode-portal.md)|Details about how the Requester tests an update in the production environment of the Enterprise Mode Site List Portal.|
+|[Create a change request using the Enterprise Mode Site List Portal](create-change-request-enterprise-mode-portal.md)|Details about how the Requester creates a change request in the Enterprise Mode Site List Portal.|
+|[Verify your changes using the Enterprise Mode Site List Portal](verify-changes-preprod-enterprise-mode-portal.md)|Details about how the Requester tests a change request in the pre-production environment of the Enterprise Mode Site List Portal.|
+|[Approve a change request using the Enterprise Mode Site List Portal](approve-change-request-enterprise-mode-portal.md)|Details about how the Approver(s) approve a change request in the Enterprise Mode Site List Portal.|
+|[Schedule approved change requests for production using the Enterprise Mode Site List Portal](schedule-production-change-enterprise-mode-portal.md)|Details about how the Requester schedules the approved change request update in the Enterprise Mode Site List Portal.|
+|[Verify the change request update in the production environment using the Enterprise Mode Site List Portal](verify-changes-production-enterprise-mode-portal.md)|Details about how the Requester tests an update in the production environment of the Enterprise Mode Site List Portal.|
 |[Use the Administrator tools for the Enterprise Mode Site List Portal](use-admin-tools-enterprise-mode-portal.md) |Details about how to use the Administrator tools to manage employees and the portal settings, to use the standalone Enterprise Mode Site List Manager page, and to view the included reports.|
 
 ## Related topics
+- [Set up the Enterprise Mode Site List Portal](set-up-enterprise-mode-portal.md)
+
 - [Enterprise Mode Site List Portal source code](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)
 
 - [Enterprise Mode and the Enterprise Mode Site List](what-is-enterprise-mode.md)
