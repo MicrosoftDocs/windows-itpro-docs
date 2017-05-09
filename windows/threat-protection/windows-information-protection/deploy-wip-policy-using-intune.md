@@ -1,5 +1,5 @@
 ---
-title: Deploy your Windows Information Protection (WIP) policy using Microsoft Azure Intune (Windows 10)
+title: Deploy your Windows Information Protection (WIP) policy using Microsoft Intune (Windows 10)
 description: After you’ve created your Windows Information Protection (WIP) policy, you'll need to deploy it to your organization's enrolled devices.
 ms.assetid: 9c4a01e7-0b1c-4f15-95d0-0389f0686211
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, Intune
@@ -11,7 +11,7 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Deploy your Windows Information Protection (WIP) policy using Microsoft Azure Intune
+# Deploy your Windows Information Protection (WIP) policy using Microsoft Intune
 **Applies to:**
 
 - Windows 10, version 1607 and later
@@ -29,15 +29,15 @@ After you’ve created your Windows Information Protection (WIP) policy, you'll 
 
     The policy is deployed to the selected users' devices.
 
-    ![Microsoft Azure Intune: Pick your user groups that should get the policy when it's deployed](images/wip-azure-add-user-groups.png)
+    ![Microsoft Intune: Pick your user groups that should get the policy when it's deployed](images/wip-azure-add-user-groups.png)
 
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
 
 ## Related topics
-- [Create a Windows Information Protection (WIP) policy using Microsoft Azure Intune](create-wip-policy-using-intune.md)
+- [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md)
 
-- [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Azure Intune](create-vpn-and-wip-policy-using-intune.md)
+- [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune](create-vpn-and-wip-policy-using-intune.md)
 
 - [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
