@@ -47,6 +47,8 @@ IMAGE 2
 ##  Sort, filter, and group the alerts list
 You can refine the alerts queue list by using the available filters.
 
+[SME ALERT: THE FILTER LISTED ASSUMES IMAGE 1 WAS USED.]
+
 **Time period**</br>
 - 1 day
 - 3 days
@@ -86,6 +88,8 @@ The group view allows for efficient alert triage and management.
 
 ### Use the Alert management pane
 Selecting an alert brings up the **Alert management** pane where you can manage and see details about the alert.
+
+![Image of an alert selected](images/atp-alerts-selected.png)
 
 You can take immediate action on an alert and see details about an alert in the **Alert management** pane:
 
