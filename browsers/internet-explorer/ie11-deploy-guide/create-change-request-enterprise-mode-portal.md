@@ -27,7 +27,7 @@ Employees assigned to the Requester role all have the ability to create a change
 **To create a new change request**
 1. The Requester (an employee that has been assigned the Requester role) signs into the Enterprise Mode Site List Portal, and clicks **Create new request**.
 
-   The **Create new request** screen appears.
+   The **Create new request** page appears.
 
 2. Fill out all of the required fields, based on the group and the app, including:
 

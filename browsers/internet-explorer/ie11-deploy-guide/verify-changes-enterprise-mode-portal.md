@@ -22,7 +22,7 @@ ms.sitesec: library
 >[!Important]
 >This step requires that each Requester have access to a test machine with Administrator rights, letting him or her get to the pre-production environment to make sure that the requested change is correct. 
 
-After the Requester successfully submits a change request to the Enterprise Mode Site List Portal, he or she gets an email, including:
+The Requester successfully submits a change request to the Enterprise Mode Site List Portal and then gets an email, including:
 
 - **EMIE_RegKey**. A batch file that when run, sets the registry key to point to the local pre-production Enterprise Mode Site List. 
 
@@ -31,15 +31,15 @@ After the Requester successfully submits a change request to the Enterprise Mode
 - **EMIE_Reset**. A batch file that when run, reverts the changes made to the pre-production registry.
 
 ## Certify your results in the pre-production environment
-After the Requester tests the changes, he or she must go back into the Enterprise Mode Site List Portal, **Pre-production verification** screen to certify whether the testing was successful.
+The Requester tests the changes and then goes back into the Enterprise Mode Site List Portal, **Pre-production verification** page to certify whether the testing was successful.
 
-**To certify changes and send to approvers**
-1. On the **Pre-production verification** screen, the Requester clicks **Successful** and optionally includes any attachments (only .jpeg, .png, .jpg and .txt files are allowed) to support the change request and testing results.
+**To certify changes and send to the Approver(s)**
+1. On the **Pre-production verification** page, the Requester clicks **Successful** and optionally includes any attachments (only .jpeg, .png, .jpg and .txt files are allowed) to support the change request and testing results.
 
-2. The Requester reviews the pre-defined approvers, and then clicks **Send for approval**.
+2. The Requester reviews the pre-defined Approver(s), and then clicks **Send for approval**.
 
 **To rollback your pre-production changes**
-1. On the **Pre-production verification** screen, the Requester clicks **Failed** and optionally includes any attachments (only .jpeg, .png, .jpg and .txt files are allowed) to support the change request and testing results.
+1. On the **Pre-production verification** page, the Requester clicks **Failed** and optionally includes any attachments (only .jpeg, .png, .jpg and .txt files are allowed) to support the change request and testing results.
 
 2. Add a description about the issue into the **Issue description** box, and then click **Send failure details**.
 
@@ -47,7 +47,7 @@ After the Requester tests the changes, he or she must go back into the Enterpris
 
 3. The Requester clicks **Roll back** to roll back the changes in the pre-production environment.
 
-    After the Requester rolls back the changes, he or she can update the requst and re-submit the ticket.
+    After the Requester rolls back the changes, the request can be updated and re-submitted.
 
 ## Next steps
 If the change request is certified as successful, the Requester must next send it to the Approvers for approval. For the Approver-related steps, see the [Approve a change request using the Enterprise Mode Site List Portal](approve-change-request-enterprise-mode-portal.md) topic.
