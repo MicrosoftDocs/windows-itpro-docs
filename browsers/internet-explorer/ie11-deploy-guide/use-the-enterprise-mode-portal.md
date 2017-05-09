@@ -60,20 +60,11 @@ The following workflow describes how to use the Enterprise Mode Site List Portal
 
 4. [The change is verified against the production site list and signed off](verify-changes-production-enterprise-mode-portal.md)
 
-## In this section
-The following topics give you more information about the things that you can do with the Enterprise Mode Site List Portal.
-
-|Topic |Description |
-|------|------------|
-|[Set up the Enterprise Mode Site List Portal](set-up-enterprise-mode-portal.md) |Details about what needs to be set up before you can use the Enterprise Mode Site List portal in your organization. |
-|[Create a change request using the Enterprise Mode Site List Portal](create-change-request-enterprise-mode-portal.md)|Details about how to create a change request using the Enterprise Mode Site List Portal. |
-|[Verify the change request in the pre-production environment using the Enterprise Mode Site List Portal](verify-changes-preprod-enterprise-mode-portal.md)|Details about how to test and verify a change request in the pre-production environment, using the Enterprise Mode Site List Portal.|
-|[Approve a change request using the Enterprise Mode Site List Portal](approve-change-request-enterprise-mode-portal.md)|Details about how to approve a change request using the Enterprise Mode Site List Portal. |
-|[Schedule approved change requests for production using the Enterprise Mode Site List Portal](schedule-production-change-enterprise-mode-portal.md)|Details about how to schedule  a change request using the Enterprise Mode Site List Portal. |
-|[Verify the change request update in the production environment using the Enterprise Mode Site List Portal](verify-changes-production-enterprise-mode-portal.md)|Details about how to test and verify a change request update in the production environment, using the Enterprise Mode Site List Portal.|
-|[Use the Administrator tools for the Enterprise Mode Site List Portal](use-admin-tools-enterprise-mode-portal.md) |Details about how to use the Administrator tools to manage employees and the portal settings, to use the standalone Enterprise Mode Site List Manager page, and to view the included reports.|
-
 ## Related topics
+- [Set up the Enterprise Mode Site List Portal](set-up-enterprise-mode-portal.md)
+
+- [Workflow-based processes using the Enterprise Mode Site List Portal](workflow-processes-enterprise-mode-portal.md)
+
 - [Enterprise Mode Site List Portal source code](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)
 
 - [Enterprise Mode and the Enterprise Mode Site List](what-is-enterprise-mode.md)
