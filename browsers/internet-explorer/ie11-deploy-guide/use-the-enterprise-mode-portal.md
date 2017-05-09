@@ -52,7 +52,7 @@ The following workflow describes how to use the Enterprise Mode Site List Portal
 
 1. [A Requester submits a change request for an app](create-change-request-enterprise-mode-portal.md)
 
-2. [The Requester tests the change request info, certifying it's accuracy](verify-changes-enterprise-mode-portal.md)
+2. [The Requester tests the change request info, certifying it's accuracy](verify-changes-preprod-enterprise-mode-portal.md)
 
 2. [The Approver(s) group accepts the change request](approve-change-request-enterprise-mode-portal.md)
 
@@ -69,10 +69,10 @@ The following topics give you more information about the things that you can do 
 |------|------------|
 |[Set up the Enterprise Mode Site List Portal](set-up-enterprise-mode-portal.md) |Details about what needs to be set up before you can use the Enterprise Mode Site List portal in your organization. |
 |[Create a change request using the Enterprise Mode Site List Portal](create-change-request-enterprise-mode-portal.md)|Details about how to create a change request using the Enterprise Mode Site List Portal. |
-|[Verify your changes using the Enterprise Mode Site List Portal](verify-changes-enterprise-mode-portal.md)|Details about how to test and certify a change request using the Enterprise Mode Site List Portal. |
+|[Verify the change request in the pre-production environment using the Enterprise Mode Site List Portal](verify-changes-preprod-enterprise-mode-portal.md)|Details about how to test and verify a change request in the pre-production environment, using the Enterprise Mode Site List Portal.|
 |[Approve a change request using the Enterprise Mode Site List Portal](approve-change-request-enterprise-mode-portal.md)|Details about how to approve a change request using the Enterprise Mode Site List Portal. |
-|[Schedule a production environment change using the Enterprise Mode Site List Portal](schedule-production-change-enterprise-mode-portal.md)|Details about how to schedule  a change request using the Enterprise Mode Site List Portal. |
-|[Rollback changes in the production environment using the Enterprise Mode Site List Portal](rollback-changes-production-environment-enterprise-mode-portal.md)|Details about how to rollback a change request in the production environment. |
+|[Schedule approved change requests for production using the Enterprise Mode Site List Portal](schedule-production-change-enterprise-mode-portal.md)|Details about how to schedule  a change request using the Enterprise Mode Site List Portal. |
+|[Verify the change request update in the production environment using the Enterprise Mode Site List Portal](verify-changes-production-enterprise-mode-portal.md)|Details about how to test and verify a change request update in the production environment, using the Enterprise Mode Site List Portal.|
 |[Grant access to the Enterprise Mode Site List Portal](grant-access-enterprise-mode-portal.md)|Details about how to let employees access the Enterprise Mode Site List Portal.|
 |[Use the Settings page for the Enterprise Mode Site List Portal](use-settings-enterprise-mode-portal.md)|Details about how to use the **Settings** page of the Enterprise Mode Site List Portal.|
 

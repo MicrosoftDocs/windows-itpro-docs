@@ -25,13 +25,16 @@ After a change request is successfully submitted to the pre-defined Approver(s),
 The Approvers get an email stating that a Requester successfully opened, tested, and submitted the change request to the Approvers group. The Approvers can accept or reject a change request.
 
 **To approve or reject a change request**
-1. The Approver logs onto the Enterprise Mode Site List Portal, **My Approvals** page.
+1. The Approver logs onto the Enterprise Mode Site List Portal, **All Approvals** page.
 
-   The Approver can also get to the **My Approvals** page by clicking **Approvals Pending** in the left pane.
+   The Approver can also get to the **All Approvals** page by clicking **Approvals Pending** from the left pane.
 
-2. The Approver clicks the **Request ID** for the change request that needs review and certifies that the included info is correct. If the info is correct, the Approver clicks **Approve** to approve the change request. If the info seems incorrect, or if the app shouldn't be added to the site list, the Approver clicks **Reject**.
+2. The Approver clicks the expander arrow (**\/**) to the right side of the change request, showing the list of Approvers and the **Approve** and **Reject** buttons.
+
+3. The Approver reviews the change request, making sure it's correct. If the info is correct, the Approver clicks **Approve** to approve the change request. If the info seems incorrect, or if the app shouldn't be added to the site list, the Approver clicks **Reject**.
 
    An email is sent to the Requester, the Approver(s) group, and the Administrator(s) group, with the updated status of the request.
+
 
 ## Send a reminder to the Approver(s) group
 If the change request is sitting in the approval queue for too long, the Requester can send a reminder to the group.
@@ -51,4 +54,4 @@ The original Requester, the Approver(s) group, and the Administrator(s) group ca
 
 
 ## Next steps
-After an Approver approves the change request, it must be scheduled for inclusion in the production Enterprise Mode Site List. For the scheduling steps, see the [Schedule a production environment change using the Enterprise Mode Site List Portal](schedule-production-change-enterprise-mode-portal.md) topic.
+After an Approver approves the change request, it must be scheduled for inclusion in the production Enterprise Mode Site List. For the scheduling steps, see the [Schedule approved change requests for production using the Enterprise Mode Site List Portal](schedule-production-change-enterprise-mode-portal.md) topic.

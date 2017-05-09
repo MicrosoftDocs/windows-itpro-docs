@@ -41,7 +41,7 @@ Employees assigned to the Requester role all have the ability to create a change
 
     - **Requested by.** Automatically filled in with your name.
 
-    - **Description.** An optional area where you can add descriptive info about the app.
+    - **Description.** Add descriptive info about the app.
 
     - **Requested change.** Select whether you want to **Add to EMIE**, **Delete from EMIE**, or **Update to EMIE**.
 
@@ -66,4 +66,4 @@ Employees assigned to the Requester role all have the ability to create a change
     - **If the change is incorrect.** The Requester can rollback the change in pre-production or ask for help from the Administrator.
 
 ## Next steps
-After the change request is created, the Requester must make sure the suggested changes work in the pre-production environment. For these steps, see the [Verify your changes using the Enterprise Mode Site List Portal](verify-changes-enterprise-mode-portal.md) topic.
+After the change request is created, the Requester must make sure the suggested changes work in the pre-production environment. For these steps, see the [Verify your changes using the Enterprise Mode Site List Portal](verify-changes-preprod-enterprise-mode-portal.md) topic.

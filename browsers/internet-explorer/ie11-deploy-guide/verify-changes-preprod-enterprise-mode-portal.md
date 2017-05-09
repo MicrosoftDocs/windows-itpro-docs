@@ -30,15 +30,15 @@ The Requester successfully submits a change request to the Enterprise Mode Site 
 
 - **EMIE_Reset**. A batch file that when run, reverts the changes made to the pre-production registry.
 
-## Certify your results in the pre-production environment
-The Requester tests the changes and then goes back into the Enterprise Mode Site List Portal, **Pre-production verification** page to certify whether the testing was successful.
+## Verify and send the change request to Approvers
+The Requester tests the changes and then goes back into the Enterprise Mode Site List Portal, **Pre-production verification** page to verify whether the testing was successful.
 
-**To certify changes and send to the Approver(s)**
+**To verify changes and send to the Approver(s)**
 1. On the **Pre-production verification** page, the Requester clicks **Successful** and optionally includes any attachments (only .jpeg, .png, .jpg and .txt files are allowed) to support the change request and testing results.
 
 2. The Requester reviews the pre-defined Approver(s), and then clicks **Send for approval**.
 
-   The Requester gets an email, stating that the change request is waiting for approval.
+   The Requester, the Approver group, and the Administrator group all get an email, stating that the change request is waiting for approval.
 
 
 **To rollback your pre-production changes**
