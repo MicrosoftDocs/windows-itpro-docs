@@ -106,6 +106,11 @@ Use the search bar to look for specific alerts or files associated with the mach
   -	Network
   -	Local service
 
+The following example illustrates the use of type:value pair. The events were filtered by searching for the user jonathan.wolcott and network events as the event type:
+
+![Image of events filtered by user and event type](images/atp-machine-timeline-filter.png)
+
+The results in the timeline only show network communication events run in the defined user context.
 
 ### Filter events from a specific date
 Use the time-based slider to filter events from a specific date. By default, the machine timeline is set to display the events of the current day.
