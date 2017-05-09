@@ -47,14 +47,16 @@ Admins can assign roles to employees for the Enterprise Mode Site List Portal, a
 |Approver<br><br>(can also be the App Manager role or the Group Head role) |<ul><li>Approve requests from the assigned group</li><br><br><li>Validate changes in the pre-production environment</li><br><br><li>Rollback changes in case of failure</li><br><br><li>Send requests for approval</li><br><br><li>View personal requests</li><br><br><li>Sign off and close requests</li></ul> |
 |Administrator |<ul><li>Add employees to the portal</li><br><br><li>Assign employee roles</li><br><br><li>Approve registrations to the portal</li><br><br><li>Configure portal settings (for example, determine the freeze schedule, determine the pre-production and production XML paths, and determine the attachment upload location)</li><br><br><li>Use the standalone Enterprise Mode Site List Manager page</li><br><br><li>View reports</li><br><br><li>Approve requests</li><br><br><li>Validate changes in the pre-production environment</li><br><br><li>Rollback changes in case of failure</li><br><br><li>Send requests for approval</li><br><br><li>View personal requests</li><br><br><li>Sign off and close requests</li><br><br><li>Rollback changes in the pre-production environment</li></ul> |
 
-## Enterprise Mode Site List Portal workflow
+## Enterprise Mode Site List Portal workflow by role
 The following workflow describes how to use the Enterprise Mode Site List Portal.
 
-1. [A Requester submits a change request and verifies the info against the pre-production site list](create-change-request-enterprise-mode-portal.md)
+1. [A Requester submits a change request for an app](create-change-request-enterprise-mode-portal.md)
 
-2. [The Approvers group accepts the change request](approve-change-request-enterprise-mode-portal.md)
+2. [The Requester tests the change request info, certifying it's accuracy](verify-changes-enterprise-mode-portal.md)
 
-3. The change is scheduled for the production environment.
+2. [The Approver(s) group accepts the change request](approve-change-request-enterprise-mode-portal.md)
+
+3. [An Administrator schedules the change for the production environment](schedule-production-change-enterprise-mode-portal.md)
 
 4. The change is verified against the production site list.
 

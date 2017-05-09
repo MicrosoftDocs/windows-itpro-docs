@@ -24,8 +24,15 @@ After a change request is successfully submitted to the pre-defined Approver(s),
 ## Approve a change request
 The Approvers get an email stating that a Requester successfully opened, tested, and submitted the change request to the Approvers group. The Approvers can accept or reject a change request.
 
+>[!NOTE]
+>All employees included in the Approver(s) group will receive the email; however, only one Approver needs to approve the request.
+
 **To approve a change request**
-1. The Approver(s) log onto the Enterprise Mode Site List Portal, **My Approvals** page.
+1. The Approver log onto the Enterprise Mode Site List Portal, **My Approvals** page.
+
+   The Approver can also get to the **My Approvals** page by clicking **Approvals Pending** in the left pane.
+
+2. The Approver clicks the **Request ID** for the change request that needs review
 
 
 

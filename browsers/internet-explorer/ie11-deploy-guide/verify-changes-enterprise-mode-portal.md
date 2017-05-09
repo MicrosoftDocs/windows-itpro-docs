@@ -38,6 +38,9 @@ The Requester tests the changes and then goes back into the Enterprise Mode Site
 
 2. The Requester reviews the pre-defined Approver(s), and then clicks **Send for approval**.
 
+   The Requester gets an email, stating that the change request is waiting for approval.
+
+
 **To rollback your pre-production changes**
 1. On the **Pre-production verification** page, the Requester clicks **Failed** and optionally includes any attachments (only .jpeg, .png, .jpg and .txt files are allowed) to support the change request and testing results.
 
