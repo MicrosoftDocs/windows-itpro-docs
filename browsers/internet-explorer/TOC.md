@@ -43,7 +43,7 @@
 ###[Use the Enterprise Mode Site List Portal](ie11-deploy-guide/use-the-enterprise-mode-portal.md)
 ####[Set up the Enterprise Mode Site List Portal](ie11-deploy-guide/set-up-enterprise-mode-portal.md)
 #####[Create a change request using the Enterprise Mode Site List Portal](ie11-deploy-guide/create-change-request-enterprise-mode-portal.md)
-#####[Rollback changes in the pre-production environment using the Enterprise Mode Site List Portal](ie11-deploy-guide/rollback-changes-pre-production-environment-enterprise-mode-portal.md)
+#####[Verify your changes using the Enterprise Mode Site List Portal](ie11-deploy-guide/verify-changes-enterprise-mode-portal.md)
 #####[Approve a change request using the Enterprise Mode Site List Portal](ie11-deploy-guide/approve-change-request-enterprise-mode-portal.md)
 #####[Schedule a production environment change using the Enterprise Mode Site List Portal](ie11-deploy-guide/schedule-production-change-enterprise-mode-portal.md)
 #####[Rollback changes in the production environment using the Enterprise Mode Site List Portal](ie11-deploy-guide/rollback-changes-production-environment-enterprise-mode-portal.md)
