@@ -323,7 +323,7 @@ This policy setting is used to set a minimum PIN length when you use an unlock m
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Policy description</strong></p></td>
-<td align="left"><p>With this policy setting, you can configure a minimum length for a TPM startup PIN. This policy setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 4 digits, and it can have a maximum length of 20 digits.</p></td>
+<td align="left"><p>With this policy setting, you can configure a minimum length for a TPM startup PIN. This policy setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 6 digits, and it can have a maximum length of 20 digits.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Introduced</strong></p></td>
