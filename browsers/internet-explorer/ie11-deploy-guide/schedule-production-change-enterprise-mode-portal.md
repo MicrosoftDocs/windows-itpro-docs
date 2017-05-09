@@ -46,4 +46,4 @@ After a change request is approved, the original Requester can schedule the chan
 
 
 ## Next steps
-After the update to the production environment completes, the Requester must again test the change. If the testing succeeds, the Requester can sign off on the change request. If the testing fails, the Requester can contact the Administrator group for more help. For the production environment testing steps, see the []() topic.
+After the update to the production environment completes, the Requester must again test the change. If the testing succeeds, the Requester can sign off on the change request. If the testing fails, the Requester can contact the Administrator group for more help. For the production environment testing steps, see the [Verify the change request update in the production environment using the Enterprise Mode Site List Portal](verify-changes-production-enterprise-mode-portal.md) topic.

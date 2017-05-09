@@ -39,6 +39,3 @@ The Requester, Approver group, and Administrator group all get an email, stating
 
     After the Requester rolls back the changes, the request is automatically handled in the production environment site list.
 
-
-## Next steps
-If the change request is certified as successful, the Requester must next send it to the Approvers for approval. For the Approver-related steps, see the [Approve a change request using the Enterprise Mode Site List Portal](approve-change-request-enterprise-mode-portal.md) topic.
