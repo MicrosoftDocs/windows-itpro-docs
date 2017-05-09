@@ -19,6 +19,7 @@
 ### [Settings and quick actions that can be locked down in Windows 10 Mobile](mobile-devices/settings-that-can-be-locked-down.md)
 ### [Product IDs in Windows 10 Mobile](mobile-devices/product-ids-in-windows-10-mobile.md)
 ### [Start layout XML for mobile editions of Windows 10 (reference)](mobile-devices/start-layout-xml-mobile.md)
+## [Configure cellular settings for tablets and PCs](provisioning-apn.md)
 ## [Configure Start, taskbar, and lock screen](start-taskbar-lockscreen.md)
 ### [Configure Windows Spotlight on the lock screen](windows-spotlight.md)
 ### [Manage Windows 10 and Microsoft Store tips, tricks, and suggestions](manage-tips-and-suggestions.md)
