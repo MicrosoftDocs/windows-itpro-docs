@@ -50,6 +50,8 @@ In this walkthrough, we'll show you the basics on how to:
 
 This diagram shows a high-level view of what we cover in this walkthrough. The numbers correspond to the sections in the walkthrough and roughly correspond to the flow of the overall process; but, note that not all sections in this walkthrough are shown in the diagram.
 
+**Figure 1** - Microsoft Education IT administrator workflow
+
 ![Deploy and manage a full cloud IT solution using Microsoft Education](images/microsoft-education-get-started-workflow.png)
 
 ## Prerequisites
@@ -109,7 +111,7 @@ Already have an Office 365 for Education verified tenant? Just sign in with your
 1. Click <a href="https://aka.ms/intuneforedupreviewtrial" target="_blank">https://aka.ms/intuneforedupreviewtrial</a> to get started.
 2. In the **Intune for Education Trial** page, click **Sign in**.
 
-  **Figure 1** - Intune for Education trial sign in page
+  **Figure 2** - Intune for Education trial sign in page
 
   ![Intune for Education trial sign in page](images/i4e_trialsigninpage.png)
 
@@ -125,7 +127,7 @@ Don't have an Office 365 for Education verified tenant or just starting out? Fol
 1. Go to the <a href="https://signup.microsoft.com/Signup?OfferId=03ee83a5-5cb4-4545-aca9-33ead43f222a,d764709a-7763-45ef-a2a8-db5b8b6ae704&DL=ENTERPRISEPREMIUM_FACULTY" target="_blank">Office 365 for Education sign up page</a> to sign up for a free subscription for your school.
 2. Create an account and a user ID and password to use to sign into your account. 
 
-  **Figure 2** - Office 365 account creation
+  **Figure 3** - Office 365 account creation
 
   ![Create an Office 365 account](images/o365_createaccount.png)
 
@@ -151,7 +153,7 @@ Follow all the steps in this section to use SDS and sample CSV files in a trial 
 1. Go to the <a href="https://aka.ms/sdsscripts" target="_blank">O365-EDU-Tools GitHub site</a>.
 2. Click the green **Clone or download** button to download the SDS sample files.
 
-  **Figure 3** - Download the SDS sample files from GitHub
+  **Figure 4** - Download the SDS sample files from GitHub
 
   ![Download the SDS sample files from GitHub](images/sds_github_downloadsample.png)
 
@@ -159,7 +161,7 @@ Follow all the steps in this section to use SDS and sample CSV files in a trial 
 4. Go to the folder where you saved the .zip and unzip the files.
 5. Open the **O365-EDU-Tools-master** folder and then open the **CSV Samples** subfolder. Confirm that you can see the following sample CSV files.
 
-  **Figure 4** - Sample CSV files
+  **Figure 5** - Sample CSV files
 
   ![Use the sample CSV files](images/sds_sample_csv_files_us_uk.png)
 
@@ -170,12 +172,25 @@ Follow all the steps in this section to use SDS and sample CSV files in a trial 
 
 To learn more about the CSV files that are required and the info you need to include in each file, see <a href="https://aka.ms/sdscsvattributes" target="_blank">CSV files for School Data Sync</a>. If you run into any issues, see <a href="https://aka.ms/sdserrors" target="_blank">School Data Sync errors and troubleshooting</a>.
 
+**<a name="assignclassroom"></a>Assign Classroom license**
+
+The Classroom application is retired, but you will need to assign the Classroom Preview license to yourself and other global admins so that you can access the services. The single license will allow global admins to access both Classroom Preview and School Data Sync.
+
+1. In the <a href="https://portal.office.com/adminportal" target="_blank">Office 365 admin center</a>, select **Users > Active users**.
+2. Select the checkbox for your global admin account.
+3. In the account details window, under **Product licenses**, click **Edit**.
+4. In the **Product licenses** page, turn on **Microsoft Classroom** and then click **Save**.
+5. Confirm that you can access SDS. To do this, log in to <a href="http://sds.microsoft.com" target="_blank">https://sds.microsoft.com</a>.
+
+  > [!NOTE]
+  > Only global admins can access SDS.
+
 **<a name="usesdstoimportdata"></a>Use SDS to import student data**
 
-1. Go to the <a href="http://sds.microsoft.com" target="_blank">Microsoft School Data Sync site</a>.
+1. If you haven't done so already, To do this, go to <a href="http://sds.microsoft.com" target="_blank">https://sds.microsoft.com</a>.
 2. Click **Sign in**. You will see the **Settings** option for **Manage School Data Sync**.
 
-  **Figure 5** - Settings for managing SDS
+  **Figure 6** - Settings for managing SDS
 
   ![Settings for managing SDS](images/sds_sds_and_classroom_off.png)
 
@@ -183,7 +198,7 @@ To learn more about the CSV files that are required and the info you need to inc
 
   New menu options will appear on the left of the SDS portal.
 
-  **Figure 6** - New menu options appear after SDS is turned on
+  **Figure 7** - New menu options appear after SDS is turned on
 
   ![New menu options appear after SDS is turned on](images/sds_sds_on_newmenu_items.png)
 
@@ -191,7 +206,7 @@ To learn more about the CSV files that are required and the info you need to inc
 
   This opens up the new profile setup wizard within the main page.
 
-  **Figure 7** - New SDS profile setup wizard
+  **Figure 8** - New SDS profile setup wizard
 
   ![New SDS profile setup wizard](images/sds_updated_addnewprofile.png)
 
@@ -221,7 +236,7 @@ To learn more about the CSV files that are required and the info you need to inc
   5. In the **License Options** section, check the box to select the option.
   6. Click **Next**.
 
-    **Figure 8** - Sync options for the new profile
+    **Figure 9** - Sync options for the new profile
 
     ![Specify sync options for the new SDS profile](images/sds_addnewprofile_syncoptions.png)
 
@@ -231,7 +246,7 @@ To learn more about the CSV files that are required and the info you need to inc
   3. In the **Teacher licenses** section, choose the SKU to assign licenses for teachers. For this walkthrough, choose **STANDARDWOFFPACK_FACULTY**.
   4. Click **Next**.
 
-    **Figure 9** - Specify options for teacher mapping
+    **Figure 10** - Specify options for teacher mapping
 
     ![Specify options for teacher mapping](images/sds_addnewprofile_teacheroptions.png)
 
@@ -241,7 +256,7 @@ To learn more about the CSV files that are required and the info you need to inc
   3. In the **Student licenses** section, choose the SKU to assign licenses for students. For this walkthrough, choose **STANDARDWOFFPACK_STUDENT**.
   4. Click **Next**.
 
-    **Figure 10** - Specify options for student mapping
+    **Figure 11** - Specify options for student mapping
 
     ![Specify options for student mapping](images/sds_addnewprofile_studentoptions.png)
 
@@ -251,7 +266,7 @@ To learn more about the CSV files that are required and the info you need to inc
 
 11. You will see a page for your profile. The status might indicate that it's still being set up. 
 
-  **Figure 11** - SDS profile page
+  **Figure 12** - SDS profile page
 
   ![SDS profile page](images/sds_profilepage.png)
 
@@ -259,7 +274,7 @@ To learn more about the CSV files that are required and the info you need to inc
 
   If the status still indicates that the profile is being set up, try refreshing the page until you see the status change to **Ready to sync**.
 
-  **Figure 12** - New profile is ready to sync
+  **Figure 13** - New profile is ready to sync
 
   ![Confirm that the new profile is ready](images/sds_profile_readytosync.png)
 
@@ -288,20 +303,20 @@ You'll need to configure Microsoft Store for Education to accept the services ag
 
   This will take you to the Microsoft Store for Education portal.
 
-  **Figure 13** - Microsoft Store for Education portal
+  **Figure 14** - Microsoft Store for Education portal
 
   ![Microsoft Store for Education portal](images/msfe_store_portal.png)
 
 3. In the Microsoft Store portal, click **Manage** to go to the Microsoft Store **Overview** page.
 4. Find the **Overview** page, find the **Store settings** tile and click **Management tools**.
 
-  **Figure 14** - Select management tools from the list of Store settings options
+  **Figure 15** - Select management tools from the list of Store settings options
 
   ![Select management tools from list of Store settings options](images/msfe_storesettings_select_managementtools.png)
 
 4. In the **Management tools** page, find **Microsoft Intune** on the list and click **Activate** to get Intune for Education ready for use with Microsoft Store for Education.
 
-  **Figure 15** - Activate Intune for Education as the management tool
+  **Figure 16** - Activate Intune for Education as the management tool
 
   ![Activate Intune for Education as the management tool](images/msfe_managementtools_activateintune.png) 
 
@@ -335,20 +350,20 @@ Intune for Education provides an **Express configuration** option so you can get
 
 1. Log into the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>. You will see the Intune for Education dashboard once you're logged in.
 
-  **Figure 16** - Intune for Education dashboard
+  **Figure 17** - Intune for Education dashboard
 
   ![Intune for Education dashboard](images/i4e_portal.png)
 
 2. On the dashboard, click **Launch Express Configuration**, or select the **Express configuration** option on the menu on the left.
 3. In the **Welcome to Intune for Education** screen, click **Get started**.
   
-  **Figure 17** - Click Get started to set up Intune for Education
+  **Figure 18** - Click Get started to set up Intune for Education
 
   ![Click Get Started to configure groups, apps, and settings](images/i4e_expressconfiguration_welcome.png)
 
 4. In the **Get school information (optional)** screen, it should indicate that SDS is already configured. Click **Next**.
 
-  **Figure 18** - SDS is configured
+  **Figure 19** - SDS is configured
 
   ![SDS is already configured](images/i4e_expressconfiguration_sdsconfigured.png)
 
@@ -361,7 +376,7 @@ Intune for Education provides an **Express configuration** option so you can get
   > [!TIP]
   > At the top of the screen, did you notice the **Choose group** button change to a green check mark? This means we are done with that step. If you change your mind or need to make changes, simply click on the button to go back to that step. Try it!
   >
-  > **Figure 19** - Click on the buttons to go back to that step
+  > **Figure 20** - Click on the buttons to go back to that step
   >
   > ![Click on the buttons to back to that step](images/i4e_expressconfiguration_choosebuttontogoback.png)
 
@@ -374,7 +389,7 @@ Intune for Education provides an **Express configuration** option so you can get
     > [!TIP]
     > Web apps are pushed as links in the Windows Start menu under **All apps**. If you want apps to appear in Microsoft Edge browser tabs, use the **Homepages** setting for Microsoft Edge through **Express configuration** or **Manage Users and Devices**.
 
-  **Figure 20** - Choose the apps that you want to install for the group
+  **Figure 21** - Choose the apps that you want to install for the group
 
   ![Choose apps to install for the group](images/i4e_expressconfiguration_chooseapps_selected_cropped.png)
 
@@ -384,7 +399,7 @@ Intune for Education provides an **Express configuration** option so you can get
 
 8. In the **Choose settings** screen, we will set the settings to apply to the group. Click the reverse caret (downward-facing arrow) to expand the settings group and get more information about each setting in that settings group.
 
-  **Figure 21** - Expand the settings group to get more details
+  **Figure 22** - Expand the settings group to get more details
 
   ![Expand the settings group to get more info](images/i4e_expressconfiguration_choosesettings_expandcollapse_cropped.png)
 
@@ -392,20 +407,20 @@ Intune for Education provides an **Express configuration** option so you can get
   - In the **Internet browser settings** group, change the **Send Do Not Track requests to help protect users' privacy** setting to **Block**.
   - In the **App settings** group, change the **Microsoft Store for Business apps** setting to **Block**, and then set the **Private Microsoft Store for Business apps** to **Allow**.
 
-  **Figure 22** - Set some additional settings
+  **Figure 23** - Set some additional settings
 
   ![Set some additional settings](images/i4e_expressconfiguration_choosesettings_additionalsettingsconfigured_cropped.png)
 
 10. Click **Next**. In the **Review** screen, you will see a summary of the apps and settings you selected to apply.
 
-  **Figure 23** - Review the group, apps, and settings you configured
+  **Figure 24** - Review the group, apps, and settings you configured
 
   ![Review the group, apps, and settings you configured](images/i4e_expressconfiguration_review.png)
 
 11. Click **Save** to end express configuration.
 12. You will see the **You're done!** screen which lets you choose one of two options. 
 
-  **Figure 24** - All done with Intune for Education express configuration
+  **Figure 25** - All done with Intune for Education express configuration
 
   ![Done with Intune for Education express configuration](images/i4e_expressconfiguration_alldone.png)
 
@@ -422,13 +437,13 @@ Intune for Education provides an **Express configuration** option so you can get
 
   1. In the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>, click **Apps** from the menu on the left.
 
-    **Figure 25** - Click on **Apps** to see the list of apps for your tenant
+    **Figure 26** - Click on **Apps** to see the list of apps for your tenant
 
     ![Click Apps to see the list of apps for your tenant](images/i4e_dashboard_clickapps.png)
 
   2. In the **Store apps** section, click **+ New app**. This will take you to the Microsoft Store for Education portal and you will already be signed in.
 
-    **Figure 26** - Select the option to add a new Store app
+    **Figure 27** - Select the option to add a new Store app
 
     ![Select the option to add a new Store app](images/i4e_apps_newstoreapp_selected.png)
 
@@ -447,7 +462,7 @@ Intune for Education provides an **Express configuration** option so you can get
 
     For example, if you bought Duolingo and Khan Academy, they will show up in your inventory along with the apps that Microsoft automatically provisioned for your education tenant.
 
-    **Figure 27** - Apps inventory in Microsoft Store for Education
+    **Figure 28** - Apps inventory in Microsoft Store for Education
 
     ![Apps inventory in Store for Business](images/msfe_manageapps_inventory_grouped.png)
 
@@ -462,32 +477,32 @@ Now that you've bought the apps, use Intune for Education to specify the group t
 
 1. In the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>, click the **Groups** option from the menu on the left.
 
-  **Figure 28** - Groups page in Intune for Education
+  **Figure 29** - Groups page in Intune for Education
 
   ![Groups page in Intune for Education](images/i4e_groupspage.png)
 
 2. In the **Groups** page, select **All Users** from the list of groups on the left, and then click **Users** in the taskbar at the top of the **All Users** page. 
 
-  **Figure 29** - List of all users in the tenant
+  **Figure 30** - List of all users in the tenant
 
   ![List of all users in the tenant](images/i4e_groups_allusers_users_steps.png)
 
 3. In the taskbar at the top, select **Apps** and then click **Edit apps** to see a list of available apps.
 
-  **Figure 30** - Edit apps to assign them to users
+  **Figure 31** - Edit apps to assign them to users
 
   ![Edit apps to assign them to users](images/i4e_groups_allusers_appspage_editapps.png)
 
 4. Select the apps to deploy to the group. A blue checkmark will appear next to the apps you select. 
 
-  **Figure 31** - Select the apps to deploy to the group
+  **Figure 32** - Select the apps to deploy to the group
 
   ![Select the apps to deploy to the group](images/i4e_groups_allusers_selectappstodeploy.png)
 
 5. Once you're done, click **Save** at the bottom of the page to deploy the selected apps to the group.
 6. You'll be notified that app assignments are being updated. The updated **All Users** groups page now include the apps you selected. 
 
-  **Figure 32** - Updated list of assigned apps
+  **Figure 33** - Updated list of assigned apps
 
   ![Updated list of assigned apps](images/i4e_groups_allusers_updatedappslist.png)
 
@@ -511,13 +526,13 @@ We recommend using the latest build of Windows 10, version 1703 on your educatio
 1. If you don't have a Wi-Fi network configured, make sure you connect the device to the Internet through a wired or Ethernet connection.
 2. Go through the Windows device setup experience. On a new or reset device, this starts with the **Let's start with region. Is this right?** screen.
 
-  **Figure 33** - Let's start with region
+  **Figure 34** - Let's start with region
 
   ![Let's start with region](images/win10_letsstartwithregion.png)
 
 3. Continue with setup. In the **How would you like to set up?** screen, select **Set up for an organization**.
 
-  **Figure 34** - Select setup for an organization
+  **Figure 35** - Select setup for an organization
 
   ![Select setup for an organization](images/win10_setupforanorg.png)
 
@@ -536,7 +551,7 @@ Verify that the device is set up correctly and boots without any issues.
   > [!NOTE]  
   > It may take some time before some apps are pushed down to your device from Intune for Education. Check again later if you don't see some of the apps you provisioned for the user.
 
-  **Figure 35** - Sample list of apps for a user
+  **Figure 36** - Sample list of apps for a user
 
   ![Apps list contains the apps provisioned for the user](images/win10_start_checkapps.png)
 
@@ -548,7 +563,7 @@ Let's now verify that the device is joined to your organization's Azure AD and s
 2. Select **Groups** and select **All Devices**.
 3. In the **All Devices** page, see the list of devices and verify that the device you're signed into appears on the list.
 
-  **Figure 36** - List of all managed devices
+  **Figure 37** - List of all managed devices
 
   ![Verify that the device is managed in Intune for Education](images/i4e_groups_alldevices_listofaadjdevices.png)
 
@@ -556,7 +571,7 @@ Let's now verify that the device is joined to your organization's Azure AD and s
 5. Select **Accounts > Access work or school**.
 6. In the **Access work or school** page, confirm that the device is connected to the organization's Azure AD.
 
-  **Figure 37** - Confirm that the Windows 10 device is joined to Azure AD
+  **Figure 38** - Confirm that the Windows 10 device is joined to Azure AD
 
   ![Confirm that the Windows 10 device is joined to Azure AD](images/win10_confirmaadj.png)
 
@@ -572,7 +587,7 @@ If you need to make changes or updates to any of the apps or settings for the gr
 2. Click **Groups** and then choose **Settings** in the taskbar at the top of the page.
 3. You will see the same settings groups that you saw in express setup for Intune for Education as well as other settings categories such as **Windows Defender settings**, **Device sharing**, **Edition upgrade**, and so on.
 
-  **Figure 38** - See the list of available settings in Intune for Education
+  **Figure 39** - See the list of available settings in Intune for Education
 
   ![See the list of available settings in Intune for Education](images/i4e_groups_settingslist_full.png)
 
@@ -594,7 +609,7 @@ Follow the steps in this section to enable a single person to add many devices t
 2. Click **Admin centers** and select **Azure AD** to go to the Azure portal.
 3. Configure the device settings for the school's Active Directory. From the new Azure portal, <a href="https://portal.azure.com" target="_blank">https://portal.azure.com</a>, select **Azure Active Directory > Users and groups > Device settings**.
 
-  **Figure 39** - Device settings in the new Azure portal
+  **Figure 40** - Device settings in the new Azure portal
 
   ![Configure device settings in the new Azure portal](images/azure_newportal_usersandgroups_devicesettings.png)
 
@@ -611,7 +626,7 @@ Follow the steps in this section to ensure that settings for the each user follo
 3. Configure the device settings for the school's Active Directory. From the new Azure portal, <a href="https://portal.azure.com" target="_blank">https://portal.azure.com</a>, select **Azure Active Directory > Users and groups > Device settings**.
 4. Find the setting **Users may sync settings and enterprise app data** and change the value to **All**.
 
-  **Figure 40** - Enable settings to roam with users
+  **Figure 41** - Enable settings to roam with users
 
   ![Enable settings to roam with users](images/azure_usersandgroups_devicesettings_ers.png)
 
@@ -639,7 +654,7 @@ Adding a new device to your cloud-based tenant is easy. For new devices, you can
 
   For example, if a teacher connects their personal device to the school network, they'll see the following screen after typing in their account information.
 
-  **Figure 41** - Device is now managed by Intune for Education
+  **Figure 42** - Device is now managed by Intune for Education
 
   ![Device is managed by Intune for Education](images/byob_aad_enrollment_intune.png)
 
@@ -649,7 +664,7 @@ Adding a new device to your cloud-based tenant is easy. For new devices, you can
 
 5. After the user's credentails are validated, the window will refresh and will now include an entry that shows the device is now connected to the organization's MDM. This means the device is now enrolled in Intune for Education MDM and the account should have access to the organization's resources.
 
-  **Figure 42** - Device is connected to organization's MDM
+  **Figure 43** - Device is connected to organization's MDM
 
   ![Device is connected to organization's MDM](images/win10_connectedtoorgmdm.png)
 
