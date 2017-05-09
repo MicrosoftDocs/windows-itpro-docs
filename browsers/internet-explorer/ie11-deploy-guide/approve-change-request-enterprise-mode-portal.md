@@ -25,29 +25,16 @@ After a change request is successfully submitted to the pre-defined Approver(s),
 The Approvers get an email stating that a Requester successfully opened, tested, and submitted the change request to the Approvers group. The Approvers can accept or reject a change request.
 
 >[!NOTE]
->All employees included in the Approver(s) group will receive the email; however, only one Approver needs to approve the request.
+>All employees included in the Approver(s) group receive the email; however, only one Approver needs to approve the request.
 
-**To approve a change request**
-1. The Approver log onto the Enterprise Mode Site List Portal, **My Approvals** page.
+**To approve or reject a change request**
+1. The Approver logs onto the Enterprise Mode Site List Portal, **My Approvals** page.
 
    The Approver can also get to the **My Approvals** page by clicking **Approvals Pending** in the left pane.
 
-2. The Approver clicks the **Request ID** for the change request that needs review
+2. The Approver clicks the **Request ID** for the change request that needs review and certifies that the included info is correct. If the info is correct, the Approver clicks **Approve** to approve the change request. If the info seems incorrect, or if the app shouldn't be added to the site list, the Approver clicks **Reject**.
 
-
+   An email is sent to the Requester, the Approver(s) group, and the Administrator(s) group, with the updated status of the request.
 
 ## Next steps
-After the Approvers approve the change request, it must be scheduled for inclusion in the production Enterprise Mode Site List. For the scheduling steps, see the [Schedule a production environment change using the Enterprise Mode Site List Portal](schedule-production-change-enterprise-mode-portal.md) topic.
-
-
-
-
-Approving a change request
-An e-mail will be sent to the list of approvers.
-After signing in, the employee will land on the My approvals page, or can navigate to the page by clicking Approvals pending in the sidebar.
-The employee can select individual ticket IDs and verify the information provided in the change request.
-The employee can approve or reject the ticket.
-An e-mail will be sent to the Requester, Approvers, and Administrators with the status of the ticket.
-The employee can also view the status of other tickets in his/her group by clicking the In progress, Closed, and Rolled back links in the sidebar.
-
-
+After an Approver approves the change request, it must be scheduled for inclusion in the production Enterprise Mode Site List. For the scheduling steps, see the [Schedule a production environment change using the Enterprise Mode Site List Portal](schedule-production-change-enterprise-mode-portal.md) topic.
