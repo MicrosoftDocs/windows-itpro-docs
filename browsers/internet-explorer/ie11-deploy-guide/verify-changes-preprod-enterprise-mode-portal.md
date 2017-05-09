@@ -57,7 +57,8 @@ The Requester tests the changes and then goes back into the Enterprise Mode Site
 The original Requester and the Administrator(s) group can view the rolled back change requests.
 
 **To view the rolled back change request**
-1. In the Enterprise Mode Site List Portal, click **Rolled back** from the left pane.
+
+- In the Enterprise Mode Site List Portal, click **Rolled back** from the left pane.
 
    All rolled back change requests appear, with role assignment determining which ones are visible.
 

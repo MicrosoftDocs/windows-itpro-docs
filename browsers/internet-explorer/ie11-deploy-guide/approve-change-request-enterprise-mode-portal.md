@@ -48,7 +48,8 @@ If the change request is sitting in the approval queue for too long, the Request
 The original Requester, the Approver(s) group, and the Administrator(s) group can all view the rejected change request.
 
 **To view the rejected change request**
-1. In the Enterprise Mode Site List Portal, click **Rejected** from the left pane.
+
+- In the Enterprise Mode Site List Portal, click **Rejected** from the left pane.
 
    All rejected change requests appear, with role assignment determining which ones are visible.
 

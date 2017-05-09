@@ -47,7 +47,7 @@ Admins can assign roles to employees for the Enterprise Mode Site List Portal, a
 |Approver<br><br>(includes the App Manager and Group Head roles) |<ul><li>Approve requests</li><br><br><li>Validate changes in the pre-production environment</li><br><br><li>Rollback pre-production and production changes in case of failure</li><br><br><li>Send approval requests</li><br><br><li>View own requests</li><br><br><li>Sign off and close own requests</li></ul> |
 |Administrator |<ul><li>Add employees to the portal</li><br><br><li>Assign employee roles</li><br><br><li>Approve registrations to the portal</li><br><br><li>Configure portal settings (for example, determine the freeze schedule, determine the pre-production and production XML paths, and determine the attachment upload location)</li><br><br><li>Use the standalone Enterprise Mode Site List Manager page</li><br><br><li>View reports</li><br><br><li>Approve requests</li><br><br><li>Validate changes in the pre-production environment</li><br><br><li>Rollback pre-production and production changes in case of failure</li><br><br><li>Send requests for approval</li><br><br><li>View requests</li><br><br><li>Sign off and close requests</li></ul> |
 
-## Enterprise Mode Site List Portal workflow by role
+## Enterprise Mode Site List Portal workflow by employee role
 The following workflow describes how to use the Enterprise Mode Site List Portal.
 
 1. [The Requester submits a change request for an app](create-change-request-enterprise-mode-portal.md)
@@ -60,10 +60,13 @@ The following workflow describes how to use the Enterprise Mode Site List Portal
 
 4. [The change is verified against the production site list and signed off](verify-changes-production-enterprise-mode-portal.md)
 
+
 ## Related topics
 - [Set up the Enterprise Mode Site List Portal](set-up-enterprise-mode-portal.md)
 
-- [Workflow-based processes using the Enterprise Mode Site List Portal](workflow-processes-enterprise-mode-portal.md)
+- [Workflow-based processes for employees using the Enterprise Mode Site List Portal](workflow-processes-enterprise-mode-portal.md)
+
+- [Use the Administrator tools with the Enterprise Mode Site List Portal](use-admin-tools-enterprise-mode-portal.md)
 
 - [Enterprise Mode Site List Portal source code](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)
 

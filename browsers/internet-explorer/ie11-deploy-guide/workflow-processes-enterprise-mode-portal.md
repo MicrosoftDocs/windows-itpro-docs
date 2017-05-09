@@ -5,13 +5,12 @@ ms.pagetype: appcompat
 description: Use the topics in this section to learn how to perform all of the workflow-related processes in the Enterprise Mode Site List Portal.
 author: eross-msft
 ms.prod: ie11
-ms.assetid: d52ba8ba-b3c7-4314-ba14-0610e1d8456e
-title: Workflow-based processes using the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
+title: Workflow-based processes for employees using the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ---
 
 
-# Workflow-based processes using the Enterprise Mode Site List Portal
+# Workflow-based processes for employees using the Enterprise Mode Site List Portal
 
 **Applies to:**
 
@@ -31,10 +30,13 @@ Use the topics in this section to learn how to perform the available Enterprise 
 |[Approve a change request using the Enterprise Mode Site List Portal](approve-change-request-enterprise-mode-portal.md)|Details about how the Approver(s) approve a change request in the Enterprise Mode Site List Portal.|
 |[Schedule approved change requests for production using the Enterprise Mode Site List Portal](schedule-production-change-enterprise-mode-portal.md)|Details about how the Requester schedules the approved change request update in the Enterprise Mode Site List Portal.|
 |[Verify the change request update in the production environment using the Enterprise Mode Site List Portal](verify-changes-production-enterprise-mode-portal.md)|Details about how the Requester tests an update in the production environment of the Enterprise Mode Site List Portal.|
-|[Use the Administrator tools for the Enterprise Mode Site List Portal](use-admin-tools-enterprise-mode-portal.md) |Details about how to use the Administrator tools to manage employees and the portal settings, to use the standalone Enterprise Mode Site List Manager page, and to view the included reports.|
+|[View the apps currently on the Enterprise Mode Site List](view-apps-enterprise-mode-site-list.md)|Details about how anyone with access to the portal can review the apps already on the active Enterprise Mode Site List.|
+
 
 ## Related topics
 - [Set up the Enterprise Mode Site List Portal](set-up-enterprise-mode-portal.md)
+
+- [Use the Administrator tools with the Enterprise Mode Site List Portal](use-admin-tools-enterprise-mode-portal.md)
 
 - [Enterprise Mode Site List Portal source code](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)
 
