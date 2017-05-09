@@ -11,7 +11,7 @@ localizationpriority: medium
 
 # Troubleshoot Miracast on Surface Hub
 
-Surface Hub supports wireless projection through the Miracast protocol. Most wireless monitors and adapters available today use the original implementation of Miracast. Surface Hub uses a slightly different version of Miracast known as **Miracast Autonomous Group Owner (AGO)**. A common troubleshooting step when wireless projection to Surface Hub fails is to test protecting to another wireless monitor or adapter. In most cases, these devices are not using Miracast AGO and do not handle wireless projection the same way that Surface Hub does.
+Surface Hub supports wireless projection through the Miracast protocol. Most wireless monitors and adapters available today use the original implementation of Miracast. Surface Hub uses a slightly different version of Miracast known as **Miracast Autonomous Group Owner (AGO)**. A common troubleshooting step when projecting wirelessly to Surface Hub fails is to test projecting to another wireless monitor or adapter. In most cases, these devices are not using Miracast AGO and do not handle wireless projection the same way that Surface Hub does.
 
 In traditional Miracast, the projecting device will connect the access point set up by the Miracast-enabled monitor, and then the monitor will send traffic back to the projecting device using the network channel of the projecting device. Miracast AGO is a two-step connection process:
 
