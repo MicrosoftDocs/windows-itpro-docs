@@ -59,7 +59,7 @@ This diagram shows how you can use a management tool to distribute an online-lic
 ## Related topics
 
 [Configure MDM Provider](configure-mdm-provider-windows-store-for-business.md)
-[Manage apps you purchased from the Microsoft Store for Business and Education with Microsoft InTune](https://technet.microsoft.com/library/mt676514.aspx)
+[Manage apps you purchased from the Microsoft Store for Business and Education with Microsoft Intune](https://technet.microsoft.com/library/mt676514.aspx)
 
  
 
