@@ -14,7 +14,7 @@ localizationpriority: medium
 You can manage multiple Microsoft HoloLens devices simultaneously using solutions like Microsoft Intune. You will be able to manage settings, select apps to install and set security configurations tailored to your organization's need.
 
 >[!NOTE]
->Mobile device management (MDM) for the Development edition of HoloLens does not include VPN, BitLocker, or kiosk mode. Those features are only available when you [upgrade to Windows Holographic for Business](hololens-upgrade-enterprise.md).
+>Mobile device management (MDM), including the VPN, Bitlocker, and kiosk mode features, is only available when you [upgrade to Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
 
 ## Requirements
