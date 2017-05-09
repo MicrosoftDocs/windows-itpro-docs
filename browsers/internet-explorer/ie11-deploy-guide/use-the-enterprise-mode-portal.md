@@ -66,8 +66,8 @@ The following topics give you more information about the things that you can do 
 |Topic |Description |
 |------|------------|
 |[Set up the Enterprise Mode Site List Portal](set-up-enterprise-mode-portal.md) |Details about what needs to be set up before you can use the Enterprise Mode Site List portal in your organization. |
-|[Create a change request using the Enterprise Mode Site List Portal](create-change-request-enterprise-mode-portal.md)|Details about how to create and verify a change request using the Enterprise Mode Site List Portal. |
-|[Rollback changes in the pre-production environment using the Enterprise Mode Site List Portal](rollback-changes-pre-production-environment-enterprise-mode-portal.md)|Details about how to rollback a change request in the pre-production environment. |
+|[Create a change request using the Enterprise Mode Site List Portal](create-change-request-enterprise-mode-portal.md)|Details about how to create a change request using the Enterprise Mode Site List Portal. |
+|[Verify your changes using the Enterprise Mode Site List Portal](verify-changes-enterprise-mode-portal.md)|Details about how to test and certify a change request using the Enterprise Mode Site List Portal. |
 |[Approve a change request using the Enterprise Mode Site List Portal](approve-change-request-enterprise-mode-portal.md)|Details about how to approve a change request using the Enterprise Mode Site List Portal. |
 |[Schedule a production environment change using the Enterprise Mode Site List Portal](schedule-production-change-enterprise-mode-portal.md)|Details about how to schedule  a change request using the Enterprise Mode Site List Portal. |
 |[Rollback changes in the production environment using the Enterprise Mode Site List Portal](rollback-changes-production-environment-enterprise-mode-portal.md)|Details about how to rollback a change request in the production environment. |
