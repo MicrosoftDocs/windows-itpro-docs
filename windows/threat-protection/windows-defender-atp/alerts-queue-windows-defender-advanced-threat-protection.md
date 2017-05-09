@@ -109,7 +109,7 @@ You can take immediate action on an alert and see details about an alert in the 
 >[!NOTE]
 >You can also access the **Alert management** pane from the machine details view by selecting an alert in the **Alerts related to this machine** section.
 
-### Use the user details pane
+### Use the User details pane
 Selecting a user brings up the **User details** pane where you can see information such as machine details, related alerts, last IP address, when the machine was first and last seen reporting to the service, and information on the logged on users.
 
 ![Alerts queue with numbers](images/atp-alerts-queue-user.png)
