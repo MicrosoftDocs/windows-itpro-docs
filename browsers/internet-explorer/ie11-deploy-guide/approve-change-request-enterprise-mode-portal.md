@@ -19,13 +19,10 @@ ms.sitesec: library
 -   Windows Server 2012 R2
 -   Windows Server 2008 R2 with Service Pack 1 (SP1)
 
-After a change request is successfully submitted to the pre-defined Approver(s), employees granted the role of **App Manager** or **Group Head**, they must approve the changes.
+After a change request is successfully submitted to the pre-defined Approver(s), employees granted the role of **App Manager**, **Group Head**, or **Administrator**, they must approve the changes.
 
-## Approve a change request
+## Approve or reject a change request
 The Approvers get an email stating that a Requester successfully opened, tested, and submitted the change request to the Approvers group. The Approvers can accept or reject a change request.
-
->[!NOTE]
->All employees included in the Approver(s) group receive the email; however, only one Approver needs to approve the request.
 
 **To approve or reject a change request**
 1. The Approver logs onto the Enterprise Mode Site List Portal, **My Approvals** page.
@@ -35,6 +32,23 @@ The Approvers get an email stating that a Requester successfully opened, tested,
 2. The Approver clicks the **Request ID** for the change request that needs review and certifies that the included info is correct. If the info is correct, the Approver clicks **Approve** to approve the change request. If the info seems incorrect, or if the app shouldn't be added to the site list, the Approver clicks **Reject**.
 
    An email is sent to the Requester, the Approver(s) group, and the Administrator(s) group, with the updated status of the request.
+
+## Send a reminder to the Approver(s) group
+If the change request is sitting in the approval queue for too long, the Requester can send a reminder to the group.
+
+- From the **My Approvals** page, click the checkbox next to the name of each Approver to be reminded, and then click **Send reminder**.
+
+  An email is sent to the selected Approver(s).
+
+
+## View rejected change requests
+The original Requester, the Approver(s) group, and the Administrator(s) group can all view the rejected change request.
+
+**To view the rejected change request**
+1. In the Enterprise Mode Site List Portal, click **Rejected** from the left pane.
+
+   All rejected change requests appear, with role assignment determining which ones are visible.
+
 
 ## Next steps
 After an Approver approves the change request, it must be scheduled for inclusion in the production Enterprise Mode Site List. For the scheduling steps, see the [Schedule a production environment change using the Enterprise Mode Site List Portal](schedule-production-change-enterprise-mode-portal.md) topic.
