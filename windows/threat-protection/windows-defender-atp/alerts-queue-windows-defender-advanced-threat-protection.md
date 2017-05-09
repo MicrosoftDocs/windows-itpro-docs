@@ -35,10 +35,17 @@ To see a list of alerts, click any of the queues under the **Alerts queue** opti
 > [!NOTE]
 > By default, the queues are sorted from newest to oldest.
 
+[SME ALERT: PLEASE LET ME KNOW WHICH IMAGE TO USE. FIRST IS TAKEN FROM SEVILLEPORTAL-STG. IT HAS "REFINE YOUR RESULTS BY" FILTERS (TIME, OS, SEVERITY, DETECTION SOURCE). SECOND IMAGE IS TAKEN FROM SECURITYCENTER. ONLY HAS A FEW FILTERS.]
+
+IMAGE 1
+![Image of alerts queue](images/atp-alertsq1.png)
+
+IMAGE 2
+![Image of alerts queue](images/atp-alertsq2.png)
+
+
 ##  Sort, filter, and group the alerts list
 You can refine the alerts queue list by using the available filters.
-
-![Alerts queue with numbers](images/atp-alerts-queue-user.png)
 
 **Time period**</br>
 - 1 day
@@ -100,6 +107,8 @@ You can take immediate action on an alert and see details about an alert in the 
 
 ### Use the user details pane
 Selecting a user brings up the **User details** pane where you can see information such as machine details, related alerts, last IP address, when the machine was first and last seen reporting to the service, and information on the logged on users.
+
+![Alerts queue with numbers](images/atp-alerts-queue-user.png)
 
 ### Bulk edit alerts
 Select multiple alerts (Ctrl or Shift select) and manage or edit alerts together, which allows resolving multiple similar alerts in one action.
