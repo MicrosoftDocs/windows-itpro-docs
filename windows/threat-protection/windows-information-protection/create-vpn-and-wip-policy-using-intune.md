@@ -28,11 +28,11 @@ Follow these steps to associate your WIP policy with your organization's existin
 
 2. Open the Microsoft Intune mobile application management console, click **Device configuration**, and then click **Create Profile**.
 
-    ![Microsoft Azure Intune, Create a new policy using the the Azure portal](images/wip-azure-vpn-device-policy.png)
+    ![Microsoft Intune, Create a new policy using the portal](images/wip-azure-vpn-device-policy.png)
 
 3.  In the **Create Profile** blade, type a name for your profile, such as *Contoso_VPN_Win10*, into the **Name** box, add an optional description for your policy into the **Description** box, select **Windows 10 and later** from the **Platform** dropdown box, select **Custom** from the **Profile type** dropdown box, and then click **Configure**.
 
-    ![Microsoft Azure Intune, Create a new policy using the Create Profile blade](images/wip-azure-vpn-configure-policy.png)
+    ![Microsoft Intune, Create a new policy using the Create Profile blade](images/wip-azure-vpn-configure-policy.png)
 
 4. In the **Custom OMA-URI Settings** blade, click **Add**.
 
@@ -48,13 +48,13 @@ Follow these steps to associate your WIP policy with your organization's existin
     
     - **Value.** Type your fully-qualified domain that should be used by the OMA-URI setting. For example, _corp.contoso.com_.
 
-        ![Microsoft Azure Intune, Add your OMA-URI settings](images/wip-azure-vpn-custom-omauri.png)
+        ![Microsoft Intune, Add your OMA-URI settings](images/wip-azure-vpn-custom-omauri.png)
 
 6. Click **OK** to save your setting info in the **Add Row** blade, and then click **OK** in the **Custom OMA-URI Settings** blade to save the setting with your policy.
 
 7. Click **Create** to create the policy, including your OMA_URI info.
 
-## Deploy your VPN policy using Microsoft Azure Intune
+## Deploy your VPN policy using Microsoft Intune
 After you’ve created your VPN policy, you'll need to deploy it to the same group you deployed your Windows Information Protection (WIP) policy.
 
 **To deploy your Custom VPN policy**
