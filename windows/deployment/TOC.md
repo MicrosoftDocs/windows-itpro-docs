@@ -144,6 +144,7 @@
 #### [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-sccm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 #### [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 #### [Perform an in-place upgrade to Windows 10 using Configuration Manager](upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md)
+#### [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)
 
 ### [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 #### [Get started with the Microsoft Deployment Toolkit (MDT)](deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit.md)
@@ -165,6 +166,7 @@
 ##### [Assign applications using roles in MDT](deploy-windows-mdt/assign-applications-using-roles-in-mdt.md)
 ##### [Use web services in MDT](deploy-windows-mdt/use-web-services-in-mdt.md)
 ##### [Use Orchestrator runbooks with MDT](deploy-windows-mdt/use-orchestrator-runbooks-with-mdt.md)
+#### [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
 
 ### [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md)
 
@@ -185,8 +187,6 @@
 ##### [Step 3: Deploy Windows](upgrade/upgrade-readiness-deploy-windows.md)
 ##### [Additional insights](upgrade/upgrade-readiness-additional-insights.md)
 #### [Troubleshoot Upgrade Readiness](upgrade/troubleshoot-upgrade-readiness.md)
-### [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
-### [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)
 ### [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md)
 
 ## [Update Windows 10](update/index.md)
