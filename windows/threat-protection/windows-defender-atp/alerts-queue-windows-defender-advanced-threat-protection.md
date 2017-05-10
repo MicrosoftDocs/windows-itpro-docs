@@ -40,8 +40,6 @@ To see a list of alerts, click any of the queues under the **Alerts queue** opti
 ##  Sort, filter, and group the alerts list
 You can refine the alerts queue list by using the available filters.
 
-[SME ALERT: THE FILTER LISTED ASSUMES IMAGE 1 WAS USED.]
-
 **Time period**</br>
 - 1 day
 - 3 days
