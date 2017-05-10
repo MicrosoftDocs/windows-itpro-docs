@@ -63,9 +63,6 @@ Learn about deployment in Windows 10 for IT professionals. This includes deploy
 |[Volume Activation [client]](volume-activation/volume-activation-windows-10.md) |This guide is designed to help organizations that are planning to use volume activation to deploy and activate Windows 10, including organizations that have used volume activation for earlier versions of Windows. |
 |[Change history for Deploy Windows 10](change-history-for-deploy-windows-10.md) |This topic lists new and updated topics in the Deploy Windows 10 documentation for [Windows 10 and Windows 10 Mobile](/windows/windows-10). |
 
-## Related topics
-- [Windows 10 and Windows 10 Mobile](/windows/windows-10)
-
  
 
  
