@@ -121,7 +121,7 @@ CollectionSummaryReport.xls | This file is a summary of the investigation packag
 
     You can also search for historical packages in the machine timeline.
 
-## Run Windows Defender Antivirus scan on machines
+## Run remote Windows Defender Antivirus scan on machines
 If your organization uses Windows Defender Antivirus as the active antimalware solution, you can run antivirus scans on machines in your network.
 
 1.	Select the machine that you want to run the scan on. You can select or search for a machine from any of the following views:
