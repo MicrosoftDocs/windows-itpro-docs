@@ -151,3 +151,4 @@ If the policy is defined, admin tools, scripts and software that formerly enumer
 
 [SAMRi10 - Hardening SAM Remote Access in Windows 10/Server 2016](https://gallery.technet.microsoft.com/SAMRi10-Hardening-Remote-48d94b5b)
 
+<br>
