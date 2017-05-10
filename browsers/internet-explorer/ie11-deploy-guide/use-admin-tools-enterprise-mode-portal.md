@@ -25,6 +25,7 @@ Use the topics in this section to learn how to perform the available Enterprise 
 |Topic                                                          |Description                                                                        |
 |---------------------------------------------------------------|-----------------------------------------------------------------------------------|
 |[Add employees to the Enterprise Mode Site List Portal](add-employees-enterprise-mode-portal.md)|Details about how the Administrator can add employees to the Enterprise Mode Site List Portal.|
+|[Use the Settings page to set up the Enterprise Mode Site List Portal](configure-settings-enterprise-mode-portal.md)|Details about how the Administrator can use the **Settings** page to set up Groups and roles, the Enterprise Mode Site List Portal environment, and the freeze dates for production changes. |
 
 ## Related topics
 - [Set up the Enterprise Mode Site List Portal](set-up-enterprise-mode-portal.md)
@@ -57,5 +58,3 @@ Merge multiple XML files and save as one XML file
 Export the site list
 Import the site list
 Bulk add the sites to the portal production list
-View the site list
-The current production list can be viewed by everyone who has access to the portal. An employee can view this list by navigating to the Production sites list page.

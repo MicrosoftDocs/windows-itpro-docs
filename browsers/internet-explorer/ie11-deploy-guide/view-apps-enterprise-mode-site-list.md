@@ -24,7 +24,7 @@ Any employee with access to the Enterprise Mode Site List Portal can view the ap
 **To view the active Enterprise Mode Site List**
 1. Open the Enterprise Mode Site List Portal and click the **Production sites list** icon in the upper-right area of the page.
 
-    Each app shows its URL, the compatibility mode to use, and the assigned browser to open the site.
+    The **Production sites list** page appears, with each app showing its URL, the compatibility mode to use, and the assigned browser to open the site.
 
 2. Click any URL to view the actual site, using the compatibility mode and opening in the correct browser.
  
