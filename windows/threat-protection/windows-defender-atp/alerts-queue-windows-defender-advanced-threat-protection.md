@@ -35,14 +35,7 @@ To see a list of alerts, click any of the queues under the **Alerts queue** opti
 > [!NOTE]
 > By default, the queues are sorted from newest to oldest.
 
-[SME ALERT: PLEASE LET ME KNOW WHICH IMAGE TO USE. FIRST IS TAKEN FROM SEVILLEPORTAL-STG. IT HAS "REFINE YOUR RESULTS BY" FILTERS (TIME, OS, SEVERITY, DETECTION SOURCE). SECOND IMAGE IS TAKEN FROM SECURITYCENTER. ONLY HAS A FEW FILTERS.]
-
-IMAGE 1
-![Image of alerts queue](images/atp-alertsq1.png)
-
-IMAGE 2
 ![Image of alerts queue](images/atp-alertsq2.png)
-
 
 ##  Sort, filter, and group the alerts list
 You can refine the alerts queue list by using the available filters.
