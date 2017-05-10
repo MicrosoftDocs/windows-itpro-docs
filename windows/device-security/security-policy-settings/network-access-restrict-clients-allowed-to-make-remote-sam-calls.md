@@ -54,8 +54,7 @@ This policy setting controls a string that will contain the SDDL of the security
 HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\RestrictRemoteSam
 
 > [!NOTE] 
-
-  This policy is implemented similarly to other Network access policies in that there is a single policy element at the registry path listed. There is no notion of a local policy versus an enterprise policy; there is just one policy setting and whichever writes last wins. For example, suppose a local administrator configures this setting as part of a local policy using the Local Security Policy snap-in (Secpol.msc), which edits that same registry path. If an enterprise administrator configures this setting as part of an enterprise GPO, that enterprise GPO will overwrite the same registry path. 
+This policy is implemented similarly to other Network access policies in that there is a single policy element at the registry path listed. There is no notion of a local policy versus an enterprise policy; there is just one policy setting and whichever writes last wins. For example, suppose a local administrator configures this setting as part of a local policy using the Local Security Policy snap-in (Secpol.msc), which edits that same registry path. If an enterprise administrator configures this setting as part of an enterprise GPO, that enterprise GPO will overwrite the same registry path. 
 
 ## Default values
 Beginning with Windows 10, version 1607 and Windows Server 2016, computers have hard-coded and more restrictive default values than earlier versions of Windows. The different default values help strike a balance where recent Windows versions are more secure by default and older versions don’t undergo any disruptive behavior changes. Computers that run earlier versions of Windows do not perform any access check by default. That includes domain controllers and non-domain controllers. This allows administrators to test whether applying the same restriction (that is, granting READ_CONTROL access only to members of the local Administrators group) will cause compatibility problems for existing applications before implementing this security policy setting in a production environment. 
@@ -66,9 +65,9 @@ In other words, the hotfix in each KB article provides the necessary code and fu
 The following default values apply to computers beginning with Windows Server 2016 and Windows 10, version 1607. The default security descriptor for non-domain controllers grants RC access (READ_CONTROL, also known as STANDARD_RIGHTS_READ) only to members of the local (built-in) Administrators group.
 
 
-	| |Default SDDL	|Translated SDDL	| Comments
-    |---|---|---|---|
-|Domain controller (reading Active Directory|“”|-|Everyone has read permissions to preserve compatibility.|
+| |Default SDDL	|Translated SDDL| Comments
+|---|---|---|---|
+|Domain controller (reading Active Directory|“”|-|Everyone has read permissions to preserve compatibility.
 |Non-domain controller|(O:SYG:SYD:(A;;RC;;;BA)| Owner: NTAUTHORITY/SYSTEM (WellKnownGroup) (S-1-5-18) <br>Primary group: NTAUTHORITY/SYSTEM (WellKnownGroup) (S-1-5-18) <br>DACL: <br>•	Revision: 0x02 <br>•	Size: 0x0020 <br>•	Ace Count: 0x001 <br>•	Ace[00]------------------------- AceType:0x00 <br> (ACCESS_ALLOWED_ACE_TYPE)<br> AceSize:0x0018 <br> InheritFlags:0x00 <br> Access Mask:0x00020000 <br> AceSid: BUILTIN\Administrators (Alias) (S-1-5-32-544) <br><br> SACL: Not present |Only members of the local (built-in) Administrators group get access.|
 
 ### Default values for earlier versions of Windows
