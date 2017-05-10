@@ -1,4 +1,4 @@
-s---
+---
 title: View and organize the Windows Defender ATP Alerts queue
 description: Learn about how the Windows Defender ATP alerts queues work, and how to sort and filter lists of alerts.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period
