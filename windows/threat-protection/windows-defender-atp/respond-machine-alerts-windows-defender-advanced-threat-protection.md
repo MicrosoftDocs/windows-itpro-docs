@@ -121,6 +121,33 @@ CollectionSummaryReport.xls | This file is a summary of the investigation packag
 
     You can also search for historical packages in the machine timeline.
 
+## Run Windows Defender Antivirus scan on machines
+If your organization uses Windows Defender Antivirus as the active antimalware solution, you can run antivirus scans on machines in your network.
+
+1.	Select the machine that you want to run the scan on. You can select or search for a machine from any of the following views:
+
+  -	**Dashboard** - Select the machine name from the Top machines with active alerts section.
+  -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+  -	**Machines list** - Select the machine name from the list of machines.
+  -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
+
+2.	Open the **Actions** menu and select **Run antivirus scan**.
+
+[INSERT SCREEN CAPTURE OF ACTION BUTTON HERE!!!]
+
+3. Type a comment (optional) and select **Yes** to take action on the machine.
+
+  The Action center shows the scan information:
+[INSERT SCREEN CAPTURE OF POP UP HERE]
+
+  -	**Pending** - Indicates that the scan is yet to be done on the machine.
+  -	**Submitted** - Indicates that the scan action has been submitted.
+  -	**Failed** - Indicates that the scan failed.
+[ABOVE DESCRIPTIONS MIGHT NEED TO BE UPDATED BASED ON LOUIE'S UX REVIEWS]
+
+When a scan is successfully done on the machine, a response event is added on the machine timeline. You'll also be able to view malware alerts based on the scan results.
+
+
 ## Check activity details in Action center
 The **Action center** provides information on actions that were taken on a machine or file. You’ll be able to view if a machine was isolated and if an investigation package is available from a machine. All related details are also shown, for example, submission time, submitting user, and if the action succeeded or failed.
 
