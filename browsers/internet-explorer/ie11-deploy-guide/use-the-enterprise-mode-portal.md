@@ -66,8 +66,6 @@ The following workflow describes how to use the Enterprise Mode Site List Portal
 
 - [Workflow-based processes for employees using the Enterprise Mode Site List Portal](workflow-processes-enterprise-mode-portal.md)
 
-- [Use the Administrator tools with the Enterprise Mode Site List Portal](use-admin-tools-enterprise-mode-portal.md)
-
 - [Enterprise Mode Site List Portal source code](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)
 
 - [Enterprise Mode and the Enterprise Mode Site List](what-is-enterprise-mode.md)

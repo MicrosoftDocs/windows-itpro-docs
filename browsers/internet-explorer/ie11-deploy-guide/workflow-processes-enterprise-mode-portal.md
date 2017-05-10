@@ -36,8 +36,6 @@ Use the topics in this section to learn how to perform the available Enterprise 
 ## Related topics
 - [Set up the Enterprise Mode Site List Portal](set-up-enterprise-mode-portal.md)
 
-- [Use the Administrator tools with the Enterprise Mode Site List Portal](use-admin-tools-enterprise-mode-portal.md)
-
 - [Enterprise Mode Site List Portal source code](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)
 
 - [Enterprise Mode and the Enterprise Mode Site List](what-is-enterprise-mode.md)

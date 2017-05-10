@@ -5,11 +5,11 @@ ms.pagetype: appcompat
 description: Details about how the Administrator can use the Settings page to set up Groups and roles, the Enterprise Mode Site List Portal environment, and the freeze dates for production changes.
 author: eross-msft
 ms.prod: ie11
-title: Use the Settings page to set up the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
+title: Use the Settings page to finish setting up the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ---
 
-# Use the Settings page to set up the Enterprise Mode Site List Portal
+# Use the Settings page to finish setting up the Enterprise Mode Site List Portal
 
 **Applies to:**
 
@@ -51,15 +51,15 @@ This area lets you add or edit your Group info, along with letting you pick whic
 
 2. In the **Required approvers** area, choose which roles are required to approve a change request for the group. You can choose one or many roles.
 
-    - **App Manager.** All employees in this group must get change request approval by someone assigned this role. 
+    - **App Manager.** All employees in the selected group must get change request approval by someone assigned this role. 
 
         You can change the name of this role by clicking the pencil icon and providing a new name in the **Edit role name** box.
 
-    - **Group Head.** All employees in this group must get change request approval by someone assigned this role.
+    - **Group Head.** All employees in the selected group must get change request approval by someone assigned this role.
 
         You can change the name of this role by clicking the pencil icon and providing a new name in the **Edit role name** box.
 
-    - **Administrator.** All employees in this group must get change request approval by someone assigned this role.
+    - **Administrator.** All employees in the selected group must get change request approval by someone assigned this role.
 
 
 
