@@ -22,6 +22,7 @@ ms.sitesec: library
 The **Settings** page lets anyone with Administrator rights set up groups and roles, set up the Enterprise Mode Site List Portal environment, and choose the freeze dates for production changes.
 
 ## Use the Group and role settings area
+This area lets you add or edit your Group info, along with letting you pick which roles must be Approvers for the group.
 
 **To add a new group and determine the required change request Approvers**
 1. Open the Enterprise Mode Site List Portal and click the **Settings** icon in the upper-right area of the page.
@@ -45,14 +46,6 @@ The **Settings** page lets anyone with Administrator rights set up groups and ro
 4. Click **Save**.
 
 
-**To edit an existing group**
-1. In the **Group and role settings** area of the page, click **Group details**.
-
-    The **Add or edit group names** box appears.
-
-2. Click the **Edit group** tab and then update the info, as necessary.
-
-
 **To set a group's required Approvers**
 1. In the **Group and role settings** area of the page, choose the group name you want to update with Approvers from the **Group name** box.
 
@@ -71,14 +64,26 @@ The **Settings** page lets anyone with Administrator rights set up groups and ro
 
 
 ## Use the Environment settings area
-This area lets you specify the location of your pre-production environment, your production environment...
+This area lets you specify the location of your production and pre-production environments, where to store your attachments, your settings location, and the website domain for email notifications.
 
-**To add environment info and credentials** 
+**To add location info**
+1. Open the Enterprise Mode Site List Portal and click the **Settings** icon in the upper-right area of the page.
 
-**To edit environment info and credentials**
+   The **Settings** page appears.
+
+2. In the **Environment settings** area of the page, provide the locations to your **Pre-production environment**, your **Production environment**, **Attachments location**, **Settings location**, and **Website domain for email notifications**.
+
+3. Click **Credentials** to add the appropriate domain, user name, and password for each location, and then click **OK**.
 
 
 ## Use the Freeze production changes area
 This optional area lets you specify a period of time when your employees must stop adding changes to the current Enterprise Mode Site List. This must include both a start and an end date.
 
 **To add the start and end dates**
+1. Open the Enterprise Mode Site List Portal and click the **Settings** icon in the upper-right area of the page.
+
+   The **Settings** page appears.
+
+2. In the **Freeze production changes** area of the page, use the calendars to provide the **Freeze start date** and the **Freeze end date**. Your employees can't add apps to the production Enterprise Mode Site List during this span of time.
+
+3. Click **Save**.
