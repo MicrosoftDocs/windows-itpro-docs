@@ -34,7 +34,7 @@ Administrators can view the Microsoft-provided Enterprise Mode reports from the 
 
     - **Total number of websites in the site list.** A box at the top of the reports page that tells you the total number of websites included in the Enterprise Mode Sit List.
 
-    - **All websites by docmode.** Shows how many change requests exist, based on the different doc modes entered into the **App best viewed in** field.
+    - **All websites by docmode.** Shows how many change requests exist, based on the different doc modes included in the **App best viewed in** field.
 
     - **All websites by browser.** Shows how many apps require which browser, including **IE11**, **MSEdge**, or **None**.
 
@@ -47,5 +47,3 @@ Administrators can view the Microsoft-provided Enterprise Mode reports from the 
     - **Reasons for request.** Shows how many change request reasons exist, based on the **Reason for request** field.
 
     - **Requested changes by app name.** Shows what specific apps were **Added to site list**, **Deleted from site list**, or **Updated from site list**.
-
-

@@ -30,7 +30,7 @@ After a change request is approved, the original Requester can schedule the chan
 
 3. The Requester clicks **Now**, and then clicks **Save**.
 
-   The update is scheduled to immediately update the production environment and an email is sent to the Requester. After the update finishes, the Requester is asked to verify the changes.
+   The update is scheduled to immediately update the production environment, and an email is sent to the Requester. After the update finishes, the Requester is asked to verify the changes.
 
 
 **To schedule the change for a different day or time**

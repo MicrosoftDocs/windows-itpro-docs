@@ -85,7 +85,7 @@ Create a new Application Pool and the website, by using the IIS Manager.
 
 2. In the **Add Website** box, type the name of your website into the **Site name** box. For example, _EMIEWebApp_, and then click **Select**.
 
-3. The **Select Application Pool** box appears.
+   The **Select Application Pool** box appears.
 
 4. Pick the name of the application pool created earlier in this step, and then click **OK**. For example, _EMIEWebAppPool_.
 
@@ -135,7 +135,7 @@ Create a SQL Server database and run our custom query to create the Enterprise M
 
 8. Run the query.
 
-## Step 4: Map your Application Pool to a SQL Server role
+## Step 4 - Map your Application Pool to a SQL Server role
 Map your ApplicationPoolIdentity to your database, adding the db_owner role.
 
 **To map your ApplicationPoolIdentity to a SQL Server role**
@@ -163,7 +163,7 @@ Map your ApplicationPoolIdentity to your database, adding the db_owner role.
 
 6. Click **OK**.
 
-## Step 5: Restart the Application Pool and website
+## Step 5 - Restart the Application Pool and website
 Using the IIS Manager, you must restart both your Application Pool and your website.
 
 **To restart your Application Pool and website**
@@ -171,7 +171,7 @@ Using the IIS Manager, you must restart both your Application Pool and your webs
 
 2. In the **Connections** pane, select your Application Pool, and then click **Recycle** from the **Application Pool Tasks** pane.
 
-## Step 6: Registering as an administrator
+## Step 6 - Registering as an administrator
 After you've created your database and website, you'll need to register yourself (or another employee) as an administrator for the Enterprise Mode Site List Portal.
 
 **To register as an administrator**
@@ -191,9 +191,10 @@ After you've created your database and website, you'll need to register yourself
 
 7. Go to the Enterprise Mode Site List Portal Home page and sign in.
 
-## Step 7: Configure the SMTP server and port for email notification
+## Step 7 - Configure the SMTP server and port for email notification
 After you've set up the portal, you need to configure your SMTP server and port for email notifications from the system.
 
+**To set up your SMTP server and port for emails**
 1. Open Visual Studio, and then open the web.config file from your deployment directory.
 
 2. Update the SMTP server and port info with your info, using this format:
@@ -202,17 +203,19 @@ After you've set up the portal, you need to configure your SMTP server and port 
        <add key="host" value="SMTPHOST.corp.contoso.com"/>
        <add key="port" value="2500"/>
     ```
-3. Open the Settings page in the Enterprise Mode Site List Portal, and then update the email account and password info.
+3. Open the **Settings** page in the Enterprise Mode Site List Portal, and then update the email account and password info.
 
-## Step 8: Register the scheduler service
+## Step 8 - Register the scheduler service
 Register the EMIEScheduler tool and service for production site list changes.
+
+**To register the scheduler service**
 
 1. Open File Explorer and go to EMIEWebPortal.SchedulerService\EMIEWebPortal.SchedulerService in your deployment directory, and then copy the **App_Data**, **bin**, and **Logs** folders to a separate folder. For example, C:\EMIEService\.
  
     >[!Important]
     >If you can't find the **bin** and **Logs** folders, you probably haven't built the Visual Studio solution. Building the solution creates the folders and files.
 
-2. In Visual Studio start the Developer Command Prompt as an administrator, and then change the directory to the location of the InstallUtil.exe file. For example _C:\Windows\Microsoft.NET\Framework\v4.0.30319_.
+2. In Visual Studio start the Developer Command Prompt as an administrator, and then change the directory to the location of the InstallUtil.exe file. For example, _C:\Windows\Microsoft.NET\Framework\v4.0.30319_.
 
 3. Run the command, `InstallUtil "<path_to_service>"`. For example, _InstallUtil "C:\EMIEService\bin\Debug\EMIEWebPortal.SchedulerService.exe"._
  

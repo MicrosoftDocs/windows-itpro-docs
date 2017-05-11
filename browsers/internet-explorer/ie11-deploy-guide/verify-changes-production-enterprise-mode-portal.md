@@ -25,7 +25,7 @@ The Requester tests the changes in the production environment and then goes back
 **To verify the changes and sign off**
 - On the **Production verification** page, the Requester clicks **Successful**, optionally includes any attachments (only .jpeg, .png, .jpg and .txt files are allowed) to support the testing results, optionally includes a description of the change, and then clicks **Sign off**.
 
-The Requester, Approver group, and Administrator group all get an email, stating that the change request has been signed off.
+   The Requester, Approver group, and Administrator group all get an email, stating that the change request has been signed off.
 
 
 **To rollback production changes**

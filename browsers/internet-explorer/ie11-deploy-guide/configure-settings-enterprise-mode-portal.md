@@ -62,7 +62,6 @@ This area lets you add or edit your Group info, along with letting you pick whic
     - **Administrator.** All employees in the selected group must get change request approval by someone assigned this role.
 
 
-
 ## Use the Environment settings area
 This area lets you specify the location of your production and pre-production environments, where to store your attachments, your settings location, and the website domain for email notifications.
 
@@ -71,13 +70,13 @@ This area lets you specify the location of your production and pre-production en
 
    The **Settings** page appears.
 
-2. In the **Environment settings** area of the page, provide the locations to your **Pre-production environment**, your **Production environment**, **Attachments location**, **Settings location**, and **Website domain for email notifications**.
+2. In the **Environment settings** area of the page, provide the info for your **Pre-production environment**, your **Production environment**, your **Attachments location**, your **Settings location**, and your **Website domain for email notifications**.
 
 3. Click **Credentials** to add the appropriate domain, user name, and password for each location, and then click **OK**.
 
 
 ## Use the Freeze production changes area
-This optional area lets you specify a period of time when your employees must stop adding changes to the current Enterprise Mode Site List. This must include both a start and an end date.
+This optional area lets you specify a period when your employees must stop adding changes to the current Enterprise Mode Site List. This must include both a start and an end date.
 
 **To add the start and end dates**
 1. Open the Enterprise Mode Site List Portal and click the **Settings** icon in the upper-right area of the page.

@@ -19,7 +19,7 @@ ms.sitesec: library
 -   Windows Server 2012 R2
 -   Windows Server 2008 R2 with Service Pack 1 (SP1)
 
-Employees assigned to the Requester role all have the ability to create a change request. A change request is used to tell the Approvers and the Administrator that a website needs to be added or removed from the Enterprise Mode Site List. The employee can navigate to each stage of the process by using the workflow links provided at the top of each page of the portal.
+Employees assigned to the Requester role can create a change request. A change request is used to tell the Approvers and the Administrator that a website needs to be added or removed from the Enterprise Mode Site List. The employee can navigate to each stage of the process by using the workflow links provided at the top of each page of the portal.
 
 >[!Important]
 >Each Requester must have access to a test machine with Administrator rights, letting him or her get to the pre-production environment to make sure that the requested change is correct. 
@@ -29,7 +29,7 @@ Employees assigned to the Requester role all have the ability to create a change
 
    The **Create new request** page appears.
 
-2. Fill out all of the required fields, based on the group and the app, including:
+2. Fill out the required fields, based on the group and the app, including:
 
     - **Group name.** Select the name of your group from the dropdown box.
     
@@ -53,7 +53,7 @@ Employees assigned to the Requester role all have the ability to create a change
 
     - **App best viewed in.** Select the best browser experience for the app. This can be Internet Explorer 5 through Internet Explorer 11 or one of the IE7Enterprise or IE8Enterprise modes.
 
-    - **Is an x-ua tag used?** Select **Yes** or **No** whether an x-ua-compatible tag is used by the app. For more info about x-ua-compatible tags, see the topcis in [Defining document compatibility](https://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx).
+    - **Is an x-ua tag used?** Select **Yes** or **No** whether an x-ua-compatible tag is used by the app. For more info about x-ua-compatible tags, see the topics in [Defining document compatibility](https://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx).
     
 4. Click **Save and continue** to save the request and get the app info sent to the pre-production environment site list for testing.
     

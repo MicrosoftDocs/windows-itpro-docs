@@ -31,6 +31,7 @@ Use the topics in this section to learn how to perform the available Enterprise 
 |[Schedule approved change requests for production using the Enterprise Mode Site List Portal](schedule-production-change-enterprise-mode-portal.md)|Details about how the Requester schedules the approved change request update in the Enterprise Mode Site List Portal.|
 |[Verify the change request update in the production environment using the Enterprise Mode Site List Portal](verify-changes-production-enterprise-mode-portal.md)|Details about how the Requester tests an update in the production environment of the Enterprise Mode Site List Portal.|
 |[View the apps currently on the Enterprise Mode Site List](view-apps-enterprise-mode-site-list.md)|Details about how anyone with access to the portal can review the apps already on the active Enterprise Mode Site List.|
+|[View the available Enterprise Mode reports from the Enterprise Mode Site List Portal](view-enterprise-mode-reports-for-portal.md) |Details about how the Administrator can view the view the Microsoft-provided Enterprise Mode reports from the Enterprise Mode Site List Portal. |
 
 
 ## Related topics
