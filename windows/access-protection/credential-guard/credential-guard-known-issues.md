@@ -32,11 +32,11 @@ The following issue is under investigation. For available workarounds, see the f
     
     <sup>[1]</sup> For further technical information on LSAiso.exe, see this MSDN article: [Isolated User Mode (IUM) Processes](https://msdn.microsoft.com/library/windows/desktop/mt809132(v=vs.85).aspx)
     
-     The following issue affects Cisco AnyConnect Secure Mobility Client:
+The following issue affects Cisco AnyConnect Secure Mobility Client:
 
 -	[Blue screen on Windows 10 computers running Device Guard and Credential Guard with Cisco Anyconnect 4.3.04027](https://quickview.cloudapps.cisco.com/quickview/bug/CSCvc66692)**
 
-    **Registration required to access this article. 
+**Registration required to access this article. 
 
 Products that connect to Virtualization Based Security (VBS) protected processes can cause Credential Guard-enabled Windows 10 clients to exhibit high CPU usage. For further information, see the following Knowledge Base article:
 
@@ -48,6 +48,7 @@ The following issue is under investigation:
 
 ## Vendor support
 
+See the following article on Citrix support for Secure Boot:
 -	[Citrix Support for Secure Boot](https://www.citrix.com/blogs/2016/12/08/windows-server-2016-hyper-v-secure-boot-support-now-available-in-xenapp-7-12/)
 
 Credential Guard is not supported by either these products, products versions, computer systems, or Windows 10 versions:
