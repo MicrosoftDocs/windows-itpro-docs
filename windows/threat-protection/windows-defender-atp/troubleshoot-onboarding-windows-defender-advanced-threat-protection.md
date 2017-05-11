@@ -43,7 +43,7 @@ When onboarding endpoints using the following versions of System Center Configur
 
 Deployment with the above-mentioned versions of System Center Configuration Manager is done by running the onboarding script on the endpoints. You can track the deployment in the Configuration Manager Console.
 
-If the deployment fails, you can check the output of the script on the endpoints. For more information, see [Troubleshoot onboarding when deploying with a script on the endpoint](#troubleshoot-onboarding-when-deploying-with-a-script-on-the-endpoint).
+If the deployment fails, you can check the output of the script on the endpoints.
 
 If the onboarding completed successfully but the endpoints are not showing up in the **Machines list** after an hour, see [Troubleshoot onboarding issues on the endpoint](#troubleshoot-onboarding-issues-on-the-endpoint) for additional errors that might occur.
 
