@@ -107,7 +107,7 @@ Monitoring can also be done directly on the portal, or by using the different de
 ### Monitor endpoints using the portal
 1.	Go to the Windows Defender ATP portal.
 
-2.	Click **Machines view**.
+2.	Click **Machines list**.
 
 3.	Verify that endpoints are appearing.
 

@@ -23,14 +23,14 @@ localizationpriority: high
 
 The **Machines list** shows a list of the machines in your network, the domain of each machine, when it last reported and the local IP Address it reported on, its **Health state**, the number of active alerts on each machine categorized by alert severity level, and the number of active malware detections. This view allows viewing machines ranked by risk or sensor health state, and keeping track of all machines that are reporting sensor data in your network.
 
-Use the Machines view in these main scenarios:
+Use the Machines list in these main scenarios:
 
 - **During onboarding**</br>
   During the onboarding process, the **Machines list** is gradually populated with endpoints as they begin to report sensor data. Use this view to track your onboarded endpoints as they come online. Sort and filter by time of last report, **Active malware category**, or **Sensor health state**, or download the complete endpoint list as a CSV file for offline analysis.
 - **Day-to-day work**
   The **Machines list** enables easy identification of machines most at risk in a glance. High-risk machines have the greatest number and highest-severity alerts; **Sensor health state** provides another dimension to rank machines. Sorting machines by **Active alerts**, and then by **Sensor health state** helps identify the most vulnerable machines and take action on them.
 
-## Sort, filter, and download the list of machines from the Machines view
+## Sort, filter, and download the list of machines from the Machines list
 You can sort the **Machines list** by clicking on any column header to sort the view in ascending or descending order.  
 
 Filter the **Machines list** by time period, **Active malware categories**, or **Sensor health state** to focus on certain sets of machines, according to the desired criteria.  
@@ -70,7 +70,7 @@ You can  download a full list of all the machines in your organization, in CSV f
 **Note**: Exporting the list depends on the number of machines in your organization. It might take a significant amount of time to download, depending on how large your organization is.
 Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all machines in the organization, regardless of any filtering applied in the view itself.
 
-## Sort the Machines view
+## Sort the Machines list
 You can sort the **Machines list** by the following columns:
 
 - **Machine name** - Name or GUID of the machine
@@ -91,7 +91,7 @@ You can sort the **Machines list** by the following columns:
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
 - [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
 - [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines view](investigate-machines-windows-defender-advanced-threat-protection.md)
+- [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
 - [Investigate a user account in Windows Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
 - [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
 - [Take response actions in Windows Defender ATP](response-actions-windows-defender-advanced-threat-protection.md)
