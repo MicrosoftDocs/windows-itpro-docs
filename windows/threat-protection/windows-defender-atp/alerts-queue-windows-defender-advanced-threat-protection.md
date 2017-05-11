@@ -1,6 +1,6 @@
 ---
 title: View and organize the Windows Defender ATP Alerts queue
-description: Learn about how the Windows Defender ATP alerts queue work, and how to sort and filter lists of alerts.
+description: Learn about how the Windows Defender ATP alerts queues work, and how to sort and filter lists of alerts.
 keywords: alerts, queues, alerts queue, sort, order, filter, manage alerts, new, in progress, resolved, newest, time in queue, severity, time period
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -21,7 +21,7 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-The **Alerts queue** shows a list of alerts that were flagged from endpoints in your network. Alerts are displayed in queues according to their current status. In any of the queues, you'll see details such as the severity of alerts and the number of machines where the alerts were seen.
+The **Alerts queue** shows a list of alerts that were flagged from endpoints in your network. Alerts are displayed in queues according to their current status. In each queue, you'll see details such as the severity of alerts and the number of machines the alerts were raised on.
 
 Alerts are organized in queues by their workflow status or assignment:
 
@@ -33,17 +33,17 @@ Alerts are organized in queues by their workflow status or assignment:
 To see a list of alerts, click any of the queues under the **Alerts queue** option in the navigation pane.
 
 > [!NOTE]
-> By default, the queues are sorted from newest to oldest.
+> By default, alerts in the queues are sorted from newest to oldest.
 
 ## Sort and filter the alerts
-You can sort and filter the alerts by using the available filters or clicking columns that allows you to sort the view in ascending or descending order.
+You can sort and filter the alerts using the available filters or clicking on a column's header that will sort the view in ascending or descending order.
 
 ![Alerts queue with numbers](images/alerts-queue-numbered.png)
 
 Highlighted area|Area name|Description
 :---|:---|:---
 1 | Alert filters | Filter the list of alerts by severity, detection source, time period, or change the view from flat to grouped.
-2 | Alert selected | Select an alert to bring up the **Alert management** to manage and see details about the alert.
+2 | Alert selected | Select an alert to bring up the **Alert management** pane to manage and see details about the alert.
 3 | Alert management pane | View and manage alerts without leaving the alerts queue view.
 
 ### Sort, filter, and group the alerts list
@@ -76,9 +76,9 @@ Reviewing the various alerts and their severity can help you decide on the appro
 
 **View**</br>
 - **Flat view** - Lists alerts individually with alerts having the latest activity displayed at the top.
-- **Grouped view** - Groups alerts by alert ID, file hash, malware family, or other attribute to enable more efficient alert triage and management. Alert grouping reduces the number of rows in the queue by aggregating alerts together.
+- **Grouped view** - Groups alerts by alert ID, file hash, malware family, or other attribute to enable more efficient alert triage and management. Alert grouping reduces the number of rows in the queue by aggregating similar alerts together.
 
-The group view allows for efficient alert triage and management.
+The grouped view allows efficient alert triage and management.
 
 ### Use the Alert management pane
 Selecting an alert brings up the **Alert management** pane where you can manage and see details about the alert.

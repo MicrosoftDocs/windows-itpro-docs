@@ -825,6 +825,41 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 </td>
 </tr>
 
+<tr>
+<td>0x80240FFF </td>
+<td>Occurs when update synchronization fails. It can occur when you are using Windows Server Update Services on its own or when it is integrated with System Center Configuration Manager. If you enable update synchronization before you install <a href="https://support.microsoft.com/help/3095113/en-us">hotfix 3095113</a>, WSUS doesn't recognize the Upgrades classification and instead treats the upgrade like a regular update.</td>
+<td> You can prevent this by installing <a href="http://blogs.technet.com/b/wsus/archive/2015/12/04/important-update-for-wsus-4-0-kb-3095113.aspx">hotfix 3095113</a> before you enable update synchronization. However, if you have already run into this problem, do the following: 
+
+<ol>
+<li>Disable the Upgrades classification.</li>
+<li>Install hotfix 3095113.</li>
+<li>Delete previously synched updates.</li>
+<li>Enable the Upgrades classification.</li>
+<li>Perform a full synch.</li>
+</ol>
+<p>For detailed information on how to run these steps check out <a href="http://blogs.technet.com/b/wsus/archive/2016/01/30/quot-help-i-synched-upgrades-too-soon-quot.aspx">How to delete upgrades in WSUS</a>.</p>
+</td>
+</tr>
+
+<tr>
+<td>0x8007007E</td>
+<td>Occurs when update synchronization fails because you do not have <a href="https://support.microsoft.com/help/3095113/en-us">hotfix 3095113</a> installed before you enable update synchronization. Specifically, the CopyToCache operation fails on clients that have already downlaoded the upgrade because Windows Server Update Services has bad metadata related to the upgrade. It can occur when you are using standalone Windows Server Update Services or when WSUS is integrated with System Center Configuration Manager.</td>
+<td> Use the following steps to repair Windows Server Update Services. You must run these steps on each WSUS server that synched metadate before you installed the hotfix.
+
+<ol>
+<li>Stop the Windows Update service. Sign in as a user with administrative privileges, and then do the following:
+<ol>
+<li>Open <b>Administrative Tools</b> from the Control Panel.</li>
+<li>Double-click <b>Services</b>.</li>
+<li>Find the <b>Windows Update</b> service, right-click it, and then click <b>Stop</b>. If prompted, enter your credentials.</li>
+</ol>
+</li>
+<li>Delete all files and folders under c:\Windows\SoftwareDistribution\DataStore.</li>
+<li>Restart the Windows Update service.</li>
+</ol>
+</td>
+</tr>
+
 </table>
 
 ### Other error codes
