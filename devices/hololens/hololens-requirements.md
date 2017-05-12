@@ -46,7 +46,7 @@ When you develop for HoloLens, there are [system requirements and tools](https:/
 
 #### Is Windows Hello for Business supported on HoloLens?
 
-Hello for Business (using a PIN or biometric to sign in) is supported for HoloLens. It must be configured [using MDM](hololens-enroll-mdm.md).
+Hello for Business (using a PIN to sign in) is supported for HoloLens. It must be configured [using MDM](hololens-enroll-mdm.md).
 
 #### Does the type of account change the sign-in behavior?
 
@@ -62,7 +62,7 @@ Yes, the behavior for the type of account impacts the sign-in behavior. If you a
 
 #### How do I remove a HoloLens device from the Intune dashboard?
 
-You cannot [unenroll](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows) HoloLens from Intune remotely. If the administrator unenrolls the device using MDM, 
+You cannot [unenroll](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows) HoloLens from Intune remotely. If the administrator unenrolls the device using MDM, the device will age out of the Intune dashboard.
 
 
 ## Related resources
