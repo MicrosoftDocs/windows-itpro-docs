@@ -51,6 +51,7 @@ Command | Description
 \-ListAllDynamicSignature [-Path] | Lists the loaded dynamic signatures
 \-RemoveDynamicSignature [-SignatureSetID] | Removes a dynamic signature
 \-ValidateMapsConnection | Used to validate connection to the [cloud-delivered protection service](configure-network-connections-windows-defender-antivirus.md)
+\-SignatureUpdate [-UNC [-Path <path>]] | Checks for new definition updates
 
 
 
