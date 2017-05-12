@@ -71,15 +71,16 @@ Active malware is defined as threats that were actively executing at the time of
 
 Hover over each bar to see the number of active malware detections (as **Malware detections**) and the number of endpoints with at least one active detection (as **Machines**) over the past 30 days.
 
-![The Machines with active malware detections tile shows the number of threats and machines for each threat category](images/machines-active-threats-tile.png)
+![The Machines with active malware detections tile shows the number of threats and machines for each threat category](images/atp-machines-active-threats-tile.png)
 
 The chart is sorted into five categories:
 
-- **Password stealer** - threats that attempt to steal credentials.
 - **Ransomware** - threats that prevent user access to a machine or its files and demand payment to restore access.
+- **Credential theft** - threats that attempt to steal credentials.
 - **Exploit** - threats that use software vulnerabilities to infect machines.
-- **Threat** - all other threats that don't fit into the **Password stealer**, **Ransomware**, or **Exploit** categories. This includes trojans, worms, backdoors, and viruses.
-- **Low severity** - threats with low severity, including adware and potentially unwanted software such as browser modifiers.
+- **Backdoor** - threats that gives a malicious hacker access to and control of machines.
+- **General** - threats that perform unwanted actions, including actions that can disrupt, cause direct damage, and facilitate intrusion and data theft.
+- **PUA** - applications that install and perform undesirable activity without adequate user consent.
 
 Threats are considered "active" if there is a very high probability that the malware was executing on your network, as opposed to statically located on-disk.
 
