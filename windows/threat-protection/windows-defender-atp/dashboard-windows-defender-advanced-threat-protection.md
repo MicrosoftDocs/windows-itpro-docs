@@ -96,9 +96,9 @@ The **Sensor health** tile provides information on the individual endpoint’s a
 
 There are two status indicators that provide information on the number of machines that are not reporting properly to the service:
 - **Inactive** - Machines that have stopped reporting to the Windows Defender ATP service for more than seven days in the past month.
--	**Misconfigured** – These machines might partially be reporting telemetry to the Windows Defender ATP service and might have configuration errors that need to be corrected.
+-	**Misconfigured** – These machines might partially be reporting sensor data to the Windows Defender ATP service and might have configuration errors that need to be corrected.
 
-When you click any of the groups, you’ll be directed to machines list, filtered according to your choice. For more information, see [Check sensor health state](check-sensor-status-windows-defender-advanced-threat-protection.md) and [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
+When you click any of the groups, you’ll be directed to machines list, filtered according to your choice. For more information, see [Check sensor state](check-sensor-status-windows-defender-advanced-threat-protection.md) and [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md).
 
 ## Service health
 The **Service health** tile informs you if the service is active or if there are issues.
@@ -110,7 +110,7 @@ For more information on the service status, see [Check the Windows Defender ATP 
 ## Daily machines reporting
 The **Daily machines reporting** tile shows a bar graph that represents the number of machines reporting alerts daily in the last 30 days. Hover over individual bars on the graph to see the exact number of machines reporting in each day.
 
-![The Machines reporting tile shows the number of machines reporting each day for the past 30 days](images/machines-reporting-tile.png)
+![The Machines reporting tile shows the number of machines reporting each day for the past 30 days](images/atp-daily-machines-reporting.png)
 
 ## Related topics
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
