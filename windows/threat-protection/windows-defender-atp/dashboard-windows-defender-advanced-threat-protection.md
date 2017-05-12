@@ -110,7 +110,7 @@ For more information on the service status, see [Check the Windows Defender ATP 
 ## Daily machines reporting
 The **Daily machines reporting** tile shows a bar graph that represents the number of machines reporting alerts daily in the last 30 days. Hover over individual bars on the graph to see the exact number of machines reporting in each day.
 
-![The Machines reporting tile shows the number of machines reporting each day for the past 30 days](images/atp-daily-machines-reporting.png)
+![Shows the Daily machines reporting tile](images/atp-daily-machines-reporting.png)
 
 ## Related topics
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
