@@ -48,7 +48,6 @@
 #### [User Account Control Group Policy and registry key settings](user-account-control\user-account-control-group-policy-and-registry-key-settings.md)
 
 ### [Virtual Smart Cards](virtual-smart-cards\virtual-smart-card-overview.md)
-### [Virtual Smart Cards](virtual-smart-cards\virtual-smart-card-overview.md)
 #### [Understanding and Evaluating Virtual Smart Cards](virtual-smart-cards\virtual-smart-card-understanding-and-evaluating.md)
 ##### [Get Started with Virtual Smart Cards: Walkthrough Guide](virtual-smart-cards\virtual-smart-card-get-started.md)
 ##### [Use Virtual Smart Cards](virtual-smart-cards\virtual-smart-card-use-virtual-smart-cards.md)
