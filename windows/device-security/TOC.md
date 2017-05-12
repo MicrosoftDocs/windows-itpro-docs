@@ -12,7 +12,6 @@
 #### [Monitor app usage with AppLocker](applocker\monitor-application-usage-with-applocker.md)
 #### [Manage packaged apps with AppLocker](applocker\manage-packaged-apps-with-applocker.md)
 #### [Working with AppLocker rules](applocker\working-with-applocker-rules.md)
-#### [Working with AppLocker rules](applocker\working-with-applocker-rules.md)
 ##### [Create a rule that uses a file hash condition](applocker\create-a-rule-that-uses-a-file-hash-condition.md)
 ##### [Create a rule that uses a path condition](applocker\create-a-rule-that-uses-a-path-condition.md)
 ##### [Create a rule that uses a publisher condition](applocker\create-a-rule-that-uses-a-publisher-condition.md)
