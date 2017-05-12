@@ -24,10 +24,12 @@ localizationpriority: high
 The **Dashboard** displays a snapshot of:
 
 - The latest active alerts on your network
-- Machines reporting
-- Top machines with active alerts
-- The overall status of Windows Defender ATP for the past 30 days
-- Machines with active malware detections
+- Daily machines reporting
+- Machines at risk
+- Users at risk
+- Machines with active malware alerts
+- Sensor health
+- Service health
 
 You can explore and investigate alerts and machines to quickly determine if, where, and when suspicious activities occurred in your network to help you understand the context they appeared in.
 
@@ -38,7 +40,7 @@ It also has clickable tiles that give visual cues on the overall health state of
 ## ATP alerts
 You can view the overall number of active ATP alerts from the last 30 days in your network from the **ATP alerts** tile. Alerts are grouped into **New** and **In progress**.
 
-![Click on each slice or severity to see a list of alerts from the past 30 days](images/atp.png)
+![Click on each slice or severity to see a list of alerts from the past 30 days](images/atp-alerts-tile.png)
 
 Each group is further sub-categorized into their corresponding alert severity levels. Click the number of alerts inside each alert ring to see a sorted view of that category's queue (**New** or **In progress**).
 

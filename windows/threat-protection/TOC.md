@@ -73,7 +73,7 @@
 #### [Turn on preview experience](windows-defender-atp\preview-settings-windows-defender-advanced-threat-protection.md)
 #### [Configure email notifications](windows-defender-atp\configure-email-notifications-windows-defender-advanced-threat-protection.md)
 #### [Enable SIEM integration](windows-defender-atp\enable-siem-integration-windows-defender-advanced-threat-protection.md)
-#### [Enable Threat intel API](windows-defender-atp\enable-custom-ti-windows-defender-advanced-threat-protection)
+#### [Enable Threat intel API](windows-defender-atp\enable-custom-ti-windows-defender-advanced-threat-protection.md)
 ### [Windows Defender ATP settings](windows-defender-atp\settings-windows-defender-advanced-threat-protection.md)
 ### [Windows Defender ATP service status](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
 ### [Troubleshoot Windows Defender ATP](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
