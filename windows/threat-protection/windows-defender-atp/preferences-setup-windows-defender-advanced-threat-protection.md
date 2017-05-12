@@ -31,4 +31,4 @@ Topic | Description
 [Enable the preview experience](preview-settings-windows-defender-advanced-threat-protection.md) | Allows you to turn on preview features so you can try upcoming features.
 [Configure email notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md) | Enables you to configure and identify a group of individuals who will immediately be informed of new alerts through email notifications.
 [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md) | Enable security information and event management (SIEM) integration to pull alerts from the Windows Defender ATP portal using your SIEM solution.
-[Enable Threat intel API](enable-custom-ti-windows-defender-advanced-threat-protection) | Before you can create custom threat intelligence (TI) using REST API, you'll need to set up the custom threat intelligence application.
+[Enable Threat intel API](enable-custom-ti-windows-defender-advanced-threat-protection.md) | Before you can create custom threat intelligence (TI) using REST API, you'll need to set up the custom threat intelligence application.
