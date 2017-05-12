@@ -487,17 +487,17 @@
 },
 {
 "source_path": "windows/deploy/upgrade-analytics-prepare-your-environment.md",
-"redirect_url": "/windows/deployment/upgrade/upgrade-analytics-identify-apps",
+"redirect_url": "/windows/deployment/upgrade/upgrade-readiness-identify-apps",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/deploy/upgrade-analytics-release-notes.md",
-"redirect_url": "/windows/deployment/upgrade/upgrade-analytics-requirements",
+"redirect_url": "/windows/deployment/upgrade/upgrade-readiness-requirements",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/deploy/upgrade-analytics-review-site-discovery.md",
-"redirect_url": "/windows/deployment/upgrade/upgrade-analytics-additional-insights",
+"redirect_url": "/windows/deployment/upgrade/upgrade-readiness-additional-insights",
 "redirect_document_id": true
 },
 {
