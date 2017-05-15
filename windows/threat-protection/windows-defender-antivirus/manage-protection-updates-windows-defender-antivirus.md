@@ -1,6 +1,6 @@
 ---
 title: Manage how and where Windows Defender AV receives updates
-description: Manage how Windows Defender Antivirus receives protection updates.
+description: Manage the fallback order for how Windows Defender Antivirus receives protection updates.
 keywords: updates, security baselines, protection, fallback order, ADL, MMPC, UNC, file path, share, wsus
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -12,14 +12,14 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Manage Windows Defender Antivirus protection and definition updates
+# Manage the sources for Windows Defender Antivirus protection updates
 
 **Applies to**
 -   Windows 10
 
 **Audience**
 
-- Network administrators
+- Enterprise security administrators
 
 **Manageability available with**
 
@@ -31,16 +31,14 @@ author: iaanw
 <a id="protection-updates"></a>  
 <!-- this has been used as anchor in VDI content -->
 
-Windows Defender AV uses both [cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloaded protection updates to provide protection. These protection updates are also known as "definitions" or "signature updates".
-
-The cloud-delivered protection is “always-on” and requires an active connection to the Internet to function, while the protection updates generally occur once a day (although this can be configured).  
-
 There are two components to managing protection updates - where the updates are downloaded from, and when updates are downloaded and applied.
 
-This topic describes the locations 
+This topic describes where you can specify the updates should be downloaded from, also known as the fallback order.
+
+See the [Manage Windows Defender AV updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) topic for an overview on how updates work, and how to configure other aspects of updates (such as scheduling updates).
 
 <a id="fallback-order"></a>
-## Manage the fallback order for downloading protection updates
+
 There are five locations where you can specify where an endpoint should obtain updates. Typically, you would configure each endpoint to individually download the updates from a primary source and specify fallback sources in case the primary source is unavailable.
 
 -   [Windows Server Update Service (WSUS)](https://technet.microsoft.com/windowsserver/bb332157.aspx)
@@ -55,12 +53,13 @@ Each location has typical scenarios (in addition to acting as fallback locations
 
 Location | Sample scenario
 ---|---
-WSUS | You are using WSUS to manage updates for your network
+WSUS | You are using WSUS to manage updates for your network.
 Microsoft Update | You want your endpoints to connect directly to Microsoft Update. This can be useful for endpoints that irregularly connect to your enterprise network, or if you do not use WSUS to manage your updates.
-File share | You have non-Internet-connected devices (such as VMs). You can use your Internet-connected VM host download the updates to a network share, from which the VMs can obtain the updates. See the [VDI deployment guide](deployment-vdi-windows-defender-antivirus.md) for how file shares can be used in virtual desktop infrastructure (VDI) environments.
+File share | You have non-Internet-connected devices (such as VMs). You can use your Internet-connected VM host to download the updates to a network share, from which the VMs can obtain the updates. See the [VDI deployment guide](deployment-vdi-windows-defender-antivirus.md) for how file shares can be used in virtual desktop infrastructure (VDI) environments.
 Configuration Manager | You are using System Center Configuration Manager to update your endpoints.
 MMPC | You need to download the latest protection updates because of a recent infection or to help provision a strong, base image for [VDI deployment](deployment-vdi-windows-defender-antivirus.md). This option should generally be used only as a final fallback source, and not the primary source.
-
+  
+    
 You can manage the order in which update sources are used with Group Policy, System Center Configuration Manager, PowerShell cmdlets, and WMI.
 
 > [!IMPORTANT]
@@ -82,7 +81,7 @@ The procedures in this article first describe how to set the order, and then how
     
     1.  Double-click the **Define the order of sources for downloading definition updates** setting and set the option to **Enabled**.  
 
-    2.  Enter the order of sources, separated by a single pipe, for example: `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`, shown in the following screenshot.  
+    2.  Enter the order of sources, separated by a single pipe, for example: `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`, as shown in the following screenshot.  
 
     ![Screenshot of group policy setting listing the order of sources](images/defender/wdav-order-update-sources.png)
 
@@ -136,11 +135,11 @@ See the following for more information:
 
 
 ## Related topics
-- [Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
-- [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
+- [Deploy, manage updates, and report on Windows Defender AV](deploy-manage-report-windows-defender-antivirus.md)
+- [Manage Windows Defender AV updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
 - [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md)
 - [Manage updates for endpoints that are out of date](manage-outdated-endpoints-windows-defender-antivirus.md)
 - [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
-- [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
-- [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+- [Manage updates for mobile devices and VMs](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
+- [Windows Defender AV in Windows 10](windows-defender-antivirus-in-windows-10.md)
 
