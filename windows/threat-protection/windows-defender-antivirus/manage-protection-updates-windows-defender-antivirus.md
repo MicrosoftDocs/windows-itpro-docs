@@ -44,25 +44,30 @@ This topic describes the locations
 There are five locations where you can specify where an endpoint should obtain updates. Typically, you would configure each endpoint to individually download the updates from a primary source and specify fallback sources in case the primary source is unavailable.
 
 -   [Windows Server Update Service (WSUS)](https://technet.microsoft.com/windowsserver/bb332157.aspx)
--   Microsoft Update.
--   The [Microsoft Malware Protection Center definitions page (MMPC)](http://www.microsoft.com/security/portal/definitions/adl.aspx)
+-   Microsoft Update
 -   A network file share
 -   Configuration manager
+
+
+You can also use the [Microsoft Malware Protection Center definitions page (MMPC)](http://www.microsoft.com/security/portal/definitions/adl.aspx) as a fallback source. In most cases, you should set this as the last source. When you download updates from the MMPC, you will download the entire update package, which can be over 100 mb. The WSUS and Microsoft Update sources, however, will only download the deltas or changes between the latest update and whatever is currently installed on the endpoint. This can be only a few kb.
 
 Each location has typical scenarios (in addition to acting as fallback locations) for when you would use that source, as described in the following table:
 
 Location | Sample scenario
 ---|---
 WSUS | You are using WSUS to manage updates for your network
-Microsoft Update | You want your endpoints to connect directly to Microsoft Update. This can be useful for endpoints that irregularly connect to your enterprise network.
-MMPC | You need to download the latest protection updates because of a recent infection or to help provision a strong, base image for [VDI deployment](deployment-vdi-windows-defender-antivirus.md).
+Microsoft Update | You want your endpoints to connect directly to Microsoft Update. This can be useful for endpoints that irregularly connect to your enterprise network, or if you do not use WSUS to manage your updates.
 File share | You have non-Internet-connected devices (such as VMs). You can use your Internet-connected VM host download the updates to a network share, from which the VMs can obtain the updates. See the [VDI deployment guide](deployment-vdi-windows-defender-antivirus.md) for how file shares can be used in virtual desktop infrastructure (VDI) environments.
 Configuration Manager | You are using System Center Configuration Manager to update your endpoints.
+MMPC | You need to download the latest protection updates because of a recent infection or to help provision a strong, base image for [VDI deployment](deployment-vdi-windows-defender-antivirus.md). This option should generally be used only as a final fallback source, and not the primary source.
 
 You can manage the order in which update sources are used with Group Policy, System Center Configuration Manager, PowerShell cmdlets, and WMI.
 
 > [!IMPORTANT]
 > If you set WSUS as a download location, you must approve the updates - regardless of what management tool you use to specify the location. You can set up an automatic approval rule with WSUS, which may be useful as updates arrive at least once a day. See [To synchronize endpoint protection updates in standalone WSUS](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus) for more details.
+
+
+The procedures in this article first describe how to set the order, and then how to set up the **File share** option if you have enabled it.
 
 
 **Use Group Policy to manage the update location:**
