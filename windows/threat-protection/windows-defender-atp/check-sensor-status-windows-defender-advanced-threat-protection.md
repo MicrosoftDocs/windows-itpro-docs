@@ -32,7 +32,7 @@ There are two status indicators on the tile that provide information on the numb
 
 Clicking any of the groups directs you to Machines list, filtered according to your choice.
 
-![Windows Defender ATP sensor filter](images/atp-sensor-filter.png)
+![Windows Defender ATP sensor filter](images/atp-machines-list-misconfigured.png)
 
 You can filter the health state list by the following status:
 - **Active** - Machines that are actively reporting to the Windows Defender ATP service.
