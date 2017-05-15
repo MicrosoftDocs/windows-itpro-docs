@@ -512,7 +512,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 | Configure search suggestions in Address bar              | Choose whether the address bar shows search suggestions. <br /> Default: Enabled                    |
 | Configure Windows Defender SmartScreen Filter (Windows 10, version 1703)  <br/> Configure SmartScreen Filter (Windows Server 2016)                      | Choose whether Windows Defender SmartScreen is turned on or off.  <br /> Default: Enabled                            |
 | Allow web content on New Tab page                     | Choose whether a new tab page appears.  <br /> Default: Enabled                                     |
-| Configure Start pages                       | Choose the Start page for domain-joined devices. <br /> Set this to **<about:blank>**        |
+| Configure Start pages                       | Choose the Start page for domain-joined devices. <br /> Set this to **\<about:blank\>**        |
 | Prevent the First Run webpage from opening on Microsoft Edge                       | Choose whether employees see the First Run webpage. <br /> Default: Disabled        |
 
 
