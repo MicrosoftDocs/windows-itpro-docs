@@ -34,6 +34,10 @@ Clicking any of the groups directs you to Machines list, filtered according to y
 
 ![Windows Defender ATP sensor filter](images/atp-machines-list-misconfigured.png)
 
+Filter the **Machines list** by time period, **OS Platform**, **Health**, or **Malware category alerts** to focus on certain sets of machines, according to the desired criteria.  
+
+You can also download the entire list in CSV format using the **Export to CSV** feature. For more information on filters, see [View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md).
+
 You can filter the health state list by the following status:
 - **Active** - Machines that are actively reporting to the Windows Defender ATP service.
 - **Inactive** - Machines that have stopped reporting to the Windows Defender ATP service.
