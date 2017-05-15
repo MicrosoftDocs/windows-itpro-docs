@@ -61,7 +61,7 @@ This rule should be a *remediating* compliance rule configuration item that sets
 
 The configuration is set through the following registry key entry:
 
-```text
+```
 Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
 Name: "AllowSampleCollection"
 Value: 0 or 1
@@ -75,6 +75,32 @@ Possible values are:
 The default value in case the registry key doesn’t exist is 1.
 
 For more information about System Center Configuration Manager Compliance see [Compliance Settings in Configuration Manager](https://technet.microsoft.com/library/gg681958.aspx).
+
+## Configure reporting frequency settings
+Windows Defender ATP reporting frequency was tested over a large number of machines and is optimized to provide a recommended balance between speed and performance.
+
+In cases where high-value assets or machines are at high risk, you can configure the reporting frequency to expedite mode, allowing the machine to report at a higher frequency.
+
+>[!NOTE]
+> Setting a machine to expedite mode is not the Windows Defender ATP recommended setting. Performance degradation should be taken into consideration when using this setting.
+
+
+For each endpoint, you can configure a value to set the sensor reporting frequency which will determine the cadence for reporting telemetry from the machine.
+
+The configuration is set through the following registry key entry:
+
+```
+Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
+Name: "latency"
+Value: Normal or expedite
+```
+Where:<br>
+Key type is a string. <br>
+Possible values are:
+- Normal - sets reporting frequency from the endpoint to normal mode for the optimal speed and performance balance
+- Expedite - sets reporting frequency from the endpoint to expedite mode
+
+The default value in case the registry key doesn’t exist is normal.
 
 
 ### Offboard endpoints
