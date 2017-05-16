@@ -108,7 +108,7 @@ Selecting a user brings up the **User details** pane where you can see informati
 ### Bulk edit alerts
 Select multiple alerts (Ctrl or Shift select) and manage or edit alerts together, which allows resolving multiple similar alerts in one action.
 
-![Alerts queue bulk edit](images/alerts-q-bulk.png)
+
 
 ## Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
