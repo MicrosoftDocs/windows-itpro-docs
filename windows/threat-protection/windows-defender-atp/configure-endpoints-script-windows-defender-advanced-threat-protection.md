@@ -57,7 +57,7 @@ You can manually configure the sample sharing setting on the endpoint by using *
 
 The configuration is set through the following registry key entry:
 
-```text
+```
 Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
 Name: "AllowSampleCollection"
 Value: 0 or 1
@@ -98,6 +98,10 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
 5.  Press the **Enter** key or click **OK**.
+
+> [!IMPORTANT]
+> Offboarding causes the machine to stop sending sensor data to the portal but data from the machine, including reference to any alerts it has had will be retained for up to 6 months.
+
 
 ## Monitor endpoint configuration
 You can follow the different verification steps in the [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) to verify that the script completed successfully and the agent is running.

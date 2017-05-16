@@ -99,6 +99,7 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 > [!NOTE]
 > - The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.
 > - Configuration of telemetry reporting frequency is only available for machines on Windows 10, version 1703.
+> - Setting a machine to expedite mode is not the Windows Defender ATP recommended setting. Performance degradation should be taken into consideration when using this setting.
 
 ### Using the Azure Intune Portal to deploy Windows Defender Advanced Threat Protection policies on Windows 10 1607 and higher
 
@@ -180,6 +181,8 @@ Health Status for offboarded machines: Onboarding State | ./Device/Vendor/MSFT/W
 > [!NOTE]
 > The **Health Status for offboarded machines** policy uses read-only properties and can't be remediated.
 
+> [!IMPORTANT]
+> Offboarding causes the machine to stop sending sensor data to the portal but data from the machine, including reference to any alerts it has had will be retained for up to 6 months.
 
 ## Related topics
 - [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
