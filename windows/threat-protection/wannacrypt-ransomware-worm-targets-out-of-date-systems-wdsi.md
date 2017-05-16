@@ -71,7 +71,7 @@ When run, WannaCrypt creates the following registry keys:
  
 It changes the wallpaper to a ransom message by modifying the following registry key:
  
-- *HKCU\Control Panel\Desktop\Wallpaper: '\<malware working directory>\@WanaDecryptor@.bmp'*
+- *HKCU\Control Panel\Desktop\Wallpaper: '\<malware working directory>\\@WanaDecryptor@.bmp'*
  
 It creates the following files in the malware's working directory:
  
@@ -134,8 +134,8 @@ It creates the following files in the malware's working directory:
 WannaCrypt may also create the following files:
  
 - *%SystemRoot%\tasksche.exe*
-- *%SystemDrive%\intel\<random directory name>\tasksche.exe*
-- *%ProgramData%\<random directory name>\tasksche.exe*
+- *%SystemDrive%\intel\\\<random directory name>\tasksche.exe*
+- *%ProgramData%\\\<random directory name>\tasksche.exe*
  
 It may create a randomly named service that has the following associated ImagePath: `cmd.exe /c '<malware working directory>\tasksche.exe'`.
 
