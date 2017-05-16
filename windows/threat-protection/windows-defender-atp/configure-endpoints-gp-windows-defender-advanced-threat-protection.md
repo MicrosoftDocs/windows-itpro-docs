@@ -138,11 +138,11 @@ With Group Policy there isn’t an option to monitor deployment of policies on t
 
 ## Monitor endpoints using the portal
 1.	Go to the [Windows Defender ATP portal](https://securitycenter.windows.com/).
-2.	Click **Machines view**.
+2.	Click **Machines list**.
 3.	Verify that endpoints are appearing.
 
 > [!NOTE]
-> It can take several days for endpoints to start showing on the **Machines view**. This includes the time it takes for the policies to be distributed to the endpoint, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
+> It can take several days for endpoints to start showing on the **Machines list**. This includes the time it takes for the policies to be distributed to the endpoint, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
 
 
 ## Related topics
