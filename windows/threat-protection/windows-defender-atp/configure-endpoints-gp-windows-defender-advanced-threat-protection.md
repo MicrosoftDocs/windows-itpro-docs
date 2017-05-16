@@ -74,6 +74,32 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 >[!NOTE]
 > If you don't set a value, the default value is to enable sample collection.
 
+## Configure reporting frequency settings
+Windows Defender ATP reporting frequency was tested over a large number of machines and is optimized to provide a recommended balance between speed and performance.
+
+In cases where high-value assets or machines are at high risk, you can configure the reporting frequency to expedite mode, allowing the machine to report at a higher frequency.
+
+>[!NOTE]
+> Setting a machine to expedite mode is not the Windows Defender ATP recommended setting. Performance degradation should be taken into consideration when using this setting.
+
+
+For each endpoint, you can configure a value to set the sensor reporting frequency which will determine the cadence for reporting telemetry from the machine.
+
+The configuration is set through the following registry key entry:
+
+```
+Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
+Name: "latency"
+Value: Normal or expedite
+```
+Where:<br>
+Key type is a string. <br>
+Possible values are:
+- Normal - sets reporting frequency from the endpoint to normal mode for the optimal speed and performance balance
+- Expedite - sets reporting frequency from the endpoint to expedite mode
+
+The default value in case the registry key doesn’t exist is normal.
+
 ### Offboard endpoints
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
@@ -103,6 +129,10 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 8.	Go to the **Actions** tab and click **New...**. Ensure that **Start a program** is selected in the **Action** field. Enter the file name and location of the shared  *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* file.
 
 9.	Click **OK** and close any open GPMC windows.
+
+> [!IMPORTANT]
+> Offboarding causes the machine to stop sending sensor data to the portal but data from the machine, including reference to any alerts it has had will be retained for up to 6 months.
+
 
 ## Monitor endpoint configuration
 With Group Policy there isn’t an option to monitor deployment of policies on the endpoints. Monitoring can be done directly on the portal, or by using the different deployment tools.

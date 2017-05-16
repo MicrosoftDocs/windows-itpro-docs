@@ -96,6 +96,10 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 5.  Press the **Enter** key or click **OK**.
 
+> [!IMPORTANT]
+> Offboarding causes the machine to stop sending sensor data to the portal but data from the machine, including reference to any alerts it has had will be retained for up to 6 months.
+
+
 ## Monitor endpoint configuration
 You can follow the different verification steps in the [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) to verify that the script completed successfully and the agent is running.
 

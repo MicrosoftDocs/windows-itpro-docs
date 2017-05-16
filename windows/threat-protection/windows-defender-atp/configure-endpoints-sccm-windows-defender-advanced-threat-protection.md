@@ -126,6 +126,10 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
     a. Choose a predefined device collection to deploy the package to.
 
+> [!IMPORTANT]
+> Offboarding causes the machine to stop sending sensor data to the portal but data from the machine, including reference to any alerts it has had will be retained for up to 6 months.
+
+
 ### Monitor endpoint configuration
 Monitoring with SCCM consists of two parts:
 

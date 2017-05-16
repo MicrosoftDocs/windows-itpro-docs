@@ -180,6 +180,8 @@ Health Status for offboarded machines: Onboarding State | ./Device/Vendor/MSFT/W
 > [!NOTE]
 > The **Health Status for offboarded machines** policy uses read-only properties and can't be remediated.
 
+> [!IMPORTANT]
+> Offboarding causes the machine to stop sending sensor data to the portal but data from the machine, including reference to any alerts it has had will be retained for up to 6 months.
 
 ## Related topics
 - [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
