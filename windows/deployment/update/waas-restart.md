@@ -2,7 +2,7 @@
 title: Manage device restarts after updates (Windows 10)
 description: tbd
 ms.prod: w10
-ms.mktglfcycl: manage
+ms.mktglfcycl: deploy
 ms.sitesec: library
 author: DaniHalfin
 localizationpriority: high
