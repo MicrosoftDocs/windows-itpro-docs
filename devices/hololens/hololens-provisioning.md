@@ -111,10 +111,13 @@ In Windows ICD, when you create a provisioning package for Windows Holographic, 
 | **Certificates** | Deploy a certificate to HoloLens.  |
 | **ConnectivityProfiles** | Deploy a Wi-Fi profile to HoloLens.   |
 | **EditionUpgrade** | [Upgrade to Windows Holographic for Business.](hololens-upgrade-enterprise.md)  |
-| **Policies** | Allow or prevent developer mode on HoloLens.  |
+| **Policies** | Allow or prevent developer mode on HoloLens. [Policies supported by Windows Holographic for Business](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies) |
 
 >[!NOTE]
 >App installation (**UniversalAppInstall**) using a provisioning package is not currently supported for HoloLens.
+
+
+
 
 
 
