@@ -76,7 +76,7 @@ The default value in case the registry key doesn’t exist is 1.
 
 For more information about System Center Configuration Manager Compliance see [Compliance Settings in Configuration Manager](https://technet.microsoft.com/library/gg681958.aspx).
 
-## Configure reporting frequency settings
+### Configure reporting frequency settings
 Windows Defender ATP reporting frequency was tested over a large number of machines and is optimized to provide a recommended balance between speed and performance.
 
 In cases where high-value assets or machines are at high risk, you can configure the reporting frequency to expedite mode, allowing the machine to report at a higher frequency.
@@ -84,8 +84,7 @@ In cases where high-value assets or machines are at high risk, you can configure
 >[!NOTE]
 > Setting a machine to expedite mode is not the Windows Defender ATP recommended setting. Performance degradation should be taken into consideration when using this setting.
 
-
-For each endpoint, you can configure a value to set the sensor reporting frequency which will determine the cadence for reporting telemetry from the machine.
+For each endpoint, you can configure a registry key value that determines how frequent a machine reports sensor data to the portal.
 
 The configuration is set through the following registry key entry:
 
