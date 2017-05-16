@@ -49,7 +49,7 @@ Area | Description
 **Dashboard**	| Provides clickable tiles that open detailed information on various alerts that have been detected in your organization.
 **Alerts queue** | Enables you to view separate queues of new, in progress, and resolved alerts.
 **Machines list** | Displays the list of machines that are onboarded to Windows Defender ATP, some information about them, and the corresponding number of alerts.
-**Service health** | Provides information on the current status of the Window Defender ATP service. You'll be able to verify that the service status is healthy or if there are current issues.
+**Service health** | Provides information on the current status of the Window Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues.
 **Preferences setup** |	Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set email notifications, activate the preview experience, and enable or turn off advanced features.
 **Endpoint management** |	Allows you to download the onboarding configuration package. It provides access to endpoint offboarding.
 (3) Main portal| Main area where you will see the different views such as the Dashboard, Alerts queue, and Machines list.
