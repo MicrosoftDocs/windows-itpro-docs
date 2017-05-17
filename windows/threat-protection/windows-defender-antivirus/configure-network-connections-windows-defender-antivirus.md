@@ -146,6 +146,8 @@ Use the following argument with the Windows Defender AV command line utility (*m
 ```DOS
 MpCmdRun - ValidateMapsConnection 
 ```
+> [!NOTE]
+> You may need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
 
 See [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender Antivirus](command-line-arguments-windows-defender-antivirus.md) for more information on how to use the *mpcmdrun.exe* utility.
 
