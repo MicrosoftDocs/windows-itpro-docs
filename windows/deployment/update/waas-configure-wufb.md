@@ -2,7 +2,7 @@
 title: Configure Windows Update for Business (Windows 10)
 description: You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices.
 ms.prod: w10
-ms.mktglfcycl: manage
+ms.mktglfcycl: deploy
 ms.sitesec: library
 author: DaniHalfin
 localizationpriority: high
@@ -90,12 +90,6 @@ Starting with version 1703, when configuring pause through policy, a start date 
 
 In cases where the pause policy is first applied after the configured start date has passed, administrators will be able to extend the pause period up to a total of 35 days by configuring a later start date.
 
-With version 1703, pausing through the settings app will provide a more consistent experience:
-- Any active restart notification are cleared or closed
-- Any pending restarts are canceled
-- Any pending update installations are canceled
-- Any update installation running when pause is activated will attempt to rollback
-
 >[!IMPORTANT]
 >This policy does not apply to Windows 10 Mobile Enterprise.
 >
@@ -122,6 +116,12 @@ The local group policy editor (GPEdit.msc) will not reflect if your Feature Upda
 
 >[!NOTE]
 >If not configured by policy, users can pause feature updates, by going to **Settings > Update & security > Windows Update > Advanced options**.
+
+With version 1703, pausing through the settings app will provide a more consistent experience:
+- Any active restart notification are cleared or closed
+- Any pending restarts are canceled
+- Any pending update installations are canceled
+- Any update installation running when pause is activated will attempt to rollback
 
 ## Configure when devices receive Quality Updates
 
@@ -152,12 +152,6 @@ Starting with version 1703, when configuring pause through policy, a start date 
 
 In cases where the pause policy is first applied after the configured start date has passed, administrators will be able to extend the pause period up to a total of 35 days by configuring a later start date.
 
-With version 1703, pause will provide a more consistent experience:
-- Any active restart notification are cleared or closed
-- Any pending restarts are canceled
-- Any pending update installations are canceled
-- Any update installation running when pause is activated will attempt to rollback
-
 >[!IMPORTANT]
 >This policy pauses both Feature and Quality Updates on Windows 10 Mobile Enterprise.
 
@@ -182,6 +176,12 @@ The local group policy editor (GPEdit.msc) will not reflect if your Quality Upda
 
 >[!NOTE]
 >If not configured by policy, users can pause quality updates, by going to **Settings > Update & security > Windows Update > Advanced options**.
+
+With version 1703, pausing through the settings app will provide a more consistent experience:
+- Any active restart notification are cleared or closed
+- Any pending restarts are canceled
+- Any pending update installations are canceled
+- Any update installation running when pause is activated will attempt to rollback
 
 ## Exclude drivers from Quality Updates
 
@@ -225,7 +225,7 @@ Below are quick-reference tables of the supported Windows Update for Business po
 
 ## Update devices to newer versions
 
-Due to the changes in the Windows Update for Business feature set, Windows 10, version 1607, uses different GPO and MDM keys than those available in version 1511. Windows 10, version 1703, is also using a few new GPO and MDM keys than those available in version 1607. However,Windows Update for Business clients running version older versions will still see their policies honored after they update to a newer version; the old policy keys will continue to exist with their values ported forward during the update. Following the update to a newer version, it should be noted that only the old keys will be populated and not the new version keys, until the newer keys are explicitly defined on the device by the administrator.
+Due to the changes in the Windows Update for Business feature set, Windows 10, version 1607, uses different GPO and MDM keys than those available in version 1511. Windows 10, version 1703, also uses a few GPO and MDM keys that are different to what's available in version 1607. However, Windows Update for Business clients running version older versions will still see their policies honored after they update to a newer version; the old policy keys will continue to exist with their values ported forward during the update. Following the update to a newer version, it should be noted that only the old keys will be populated and not the new version keys, until the newer keys are explicitly defined on the device by the administrator.
 
 ### How older version policies are respected on newer versions
 

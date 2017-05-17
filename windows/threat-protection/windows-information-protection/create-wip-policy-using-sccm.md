@@ -339,10 +339,13 @@ After you've added the apps you want to protect with WIP, you'll need to apply a
 
 We recommend that you start with **Silent** or **Override** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, either **Override** or **Block**.
 
+>[!NOTE]
+>For info about how to collect your audit log files, see [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md).
+
 |Mode |Description |
 |-----|------------|
 |Block |WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
-|Override |WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](https://go.microsoft.com/fwlink/p/?LinkID=746459). |
+|Override |WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log. |
 |Silent |WIP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still blocked.|
 |Off (not recommended) |WIP is turned off and doesn't help to protect or audit your data.<p>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.|
 
@@ -490,13 +493,21 @@ After you've finished configuring your policy, you can review all of your info o
 ## Deploy the WIP policy
 After you’ve created your WIP policy, you'll need to deploy it to your organization's devices. For info about your deployment options, see these topics:
 - [Operations and Maintenance for Compliance Settings in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=708224)
+
 - [How to Create Configuration Baselines for Compliance Settings in Configuration Manager]( https://go.microsoft.com/fwlink/p/?LinkId=708225)
+
 - [How to Deploy Configuration Baselines in Configuration Manager]( https://go.microsoft.com/fwlink/p/?LinkId=708226)
 
 ## Related topics
 - [System Center Configuration Manager and Endpoint Protection (Version 1606)](https://go.microsoft.com/fwlink/p/?LinkId=717372)
+
 - [TechNet documentation for Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=691623)
+
 - [Manage mobile devices with Configuration Manager and Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=691624)
+
+- [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md)
+
+- [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

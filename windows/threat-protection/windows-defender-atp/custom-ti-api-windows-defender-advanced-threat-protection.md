@@ -27,7 +27,7 @@ You can define custom alert definitions and indicators of compromise (IOC) using
 Before creating custom alerts, you'll need to enable the threat intelligence application in Azure Active Directory and generate access tokens. For more information, see [Enable the custom threat intelligence application](enable-custom-ti-windows-defender-advanced-threat-protection.md).
 
 ### Use the threat intelligence REST API to create custom threat intelligence alerts
-You can call and specify the resource URLs using one of the following operations to access and manipulate a threat intelligence resource, you call and specify the resource URLs using one of the following operations:
+You can call and specify the resource URLs using one of the following operations to access and manipulate a threat intelligence resource:
 
 -	GET
 -	POST
