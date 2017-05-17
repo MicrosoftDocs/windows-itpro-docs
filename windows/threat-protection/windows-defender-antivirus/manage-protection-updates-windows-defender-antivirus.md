@@ -39,17 +39,33 @@ See the [Manage Windows Defender AV updates and apply baselines](manage-updates-
 
 <a id="fallback-order"></a>
 
-There are five locations where you can specify where an endpoint should obtain updates. Typically, you would configure each endpoint to individually download the updates from a primary source and specify fallback sources in case the primary source is unavailable.
+There are five locations where you can specify where an endpoint should obtain updates. Typically, you would configure endpoints to individually download the updates from a primary source, followed by the other sources in order of priority based on your network configuration.
 
--   [Windows Server Update Service (WSUS)](https://technet.microsoft.com/windowsserver/bb332157.aspx)
+Updates will be obtained from the sources in the order you specify. If a source is not available, the next source in the list will be used.
+
+You can use the following sources:
+
+
 -   Microsoft Update
+-   [Windows Server Update Service (WSUS)](https://technet.microsoft.com/windowsserver/bb332157.aspx)
+-   System Center Configuration Manager
 -   A network file share
--   Configuration manager
+-   The [Microsoft Malware Protection Center definitions page (MMPC)](http://www.microsoft.com/security/portal/definitions/adl.aspx)
 
 
-You can also use the [Microsoft Malware Protection Center definitions page (MMPC)](http://www.microsoft.com/security/portal/definitions/adl.aspx) as a fallback source. In most cases, you should set this as the last source. When you download updates from the MMPC, you will download the entire update package, which can be over 100 mb. The WSUS and Microsoft Update sources, however, will only download the deltas or changes between the latest update and whatever is currently installed on the endpoint. This can be only a few kb.
+When updates are published, some logic will be applied to minimize the size of the update. In most cases, only the "delta" (or the differences between the latest update and the update that is currently installed on the endpoint) will be downloaded and applied. However, the size of the delta depends on:
 
-Each location has typical scenarios (in addition to acting as fallback locations) for when you would use that source, as described in the following table:
+- How old the current update on the endpoint is
+- Which source you use
+
+
+The older the updates on an endpoint, the larger the download. However, you must also consider frequency versus size - a more frequent update schedule may result in more ad hoc network usage, while a less-frequent schedule may result in larger file sizes.
+
+Microsoft Update allows for rapid releases, which means it will download small deltas on a frequent basis. This ensures the best protection, but may increase network bandwidth.
+
+The WSUS, Configuration Manager and MMPC sources will deliver less frequent updates. The size of the updates may be slightly larger than the frequent release from Microsoft Update (as the delta, or differences between the latest version and what is on the endpoint will be larger). This ensures consistent protection without increasing ad hoc network usage (although the amount of data may be the same or increased as the updates will be fewer, but may be slightly larger).
+
+Each source has typical scenarios that depend on how your network is configured, in addition to how often they publish updates, as described in the following table:
 
 Location | Sample scenario
 ---|---
