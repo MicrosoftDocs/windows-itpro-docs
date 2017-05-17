@@ -237,7 +237,7 @@ On a computer with a compatible TPM, four types of authentication methods can be
 
 -   only the TPM for authentication
 -   insertion of a USB flash drive containing the startup key
--   the entry of a 4-digit to 20-digit personal identification number (PIN)
+-   the entry of a 6-digit to 20-digit personal identification number (PIN)
 -   a combination of the PIN and the USB flash drive
 
 There are four options for TPM-enabled computers or devices:
@@ -347,14 +347,14 @@ This policy setting is used to set a minimum PIN length when you use an unlock m
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>When disabled or not configured</strong></p></td>
-<td align="left"><p>Users can configure a startup PIN of any length between 4 and 20 digits.</p></td>
+<td align="left"><p>Users can configure a startup PIN of any length between 6 and 20 digits.</p></td>
 </tr>
 </tbody>
 </table>
  
 **Reference**
 
-This policy setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 4 digits and can have a maximum length of 20 digits.
+This policy setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 6 digits and can have a maximum length of 20 digits.
 
 ### Disable new DMA devices when this computer is locked
 
@@ -527,7 +527,7 @@ This policy setting is used to control what unlock options are available for com
  
 **Reference**
 
-On a computer with a compatible TPM, two authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can require users to insert a USB drive that contains a startup key. It can also require users to enter a 4-digit to 20-digit startup PIN.
+On a computer with a compatible TPM, two authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can require users to insert a USB drive that contains a startup key. It can also require users to enter a 6-digit to 20-digit startup PIN.
 
 A USB drive that contains a startup key is needed on computers without a compatible TPM. Without a TPM, BitLocker-encrypted data is protected solely by the key material that is on this USB drive.
 
