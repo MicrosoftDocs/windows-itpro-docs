@@ -261,10 +261,6 @@ The deployment script displays the following exit codes to let you know if it wa
         <td>Check the logs for the exception message and HResult.</td>
     </tr>
 <tr>
-        <td>43 - Function **EndImpersonatingLoggedOnUser** failed with an unexpected exception.</td>
-        <td>Check the logs for the exception message and HResult.</td>
-    </tr>
-<tr>
         <td>44 - Diagtrack.dll version is old, so Auth Proxy will not work.</td>
         <td>Update the PC using Windows Update/Windows Server Update Services.</td>
     </tr>
