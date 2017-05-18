@@ -82,7 +82,7 @@ Windows Defender ATP reporting frequency was tested over a large number of machi
 In cases where high-value assets or machines are at high risk, you can configure the reporting frequency to expedite mode, allowing the machine to report at a higher frequency.
 
 > [!NOTE]
-> Using the Expedite mode might have an impact on the machine's battery usage and actual bandwidth used for sensor data. You should consider this when these measure are critical.
+> Using the Expedite mode might have an impact on the machine's battery usage and actual bandwidth used for sensor data. You should consider this when these measures are critical.
 
 For each endpoint, you can configure a registry key value that determines how frequent a machine reports sensor data to the portal.
 
