@@ -32,9 +32,14 @@ There are two status indicators on the tile that provide information on the numb
 
 Clicking any of the groups directs you to Machines list, filtered according to your choice.
 
+![Windows Defender ATP sensor filter](images/atp-sensor-filter.png)
+
+<!--
 ![Windows Defender ATP sensor filter](images/atp-machines-list-misconfigured.png)
 
 Filter the **Machines list** by time period, **OS Platform**, **Health**, or **Malware category alerts** to focus on certain sets of machines, according to the desired criteria.  
+
+-->
 
 You can also download the entire list in CSV format using the **Export to CSV** feature. For more information on filters, see [View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md).
 
