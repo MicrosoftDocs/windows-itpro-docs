@@ -27,7 +27,7 @@ Learn how teachers can get and distribute Minecraft: Education Edition.
 
     <!-- ![Enter school email address](images/enter-email.png) -->
     
-3. Select **Get the app**. This will take you to the Windows Store for Ecucation to download the app. You will also receive an email with instructions and a link to the Store.
+3. Select **Get the app**. This will take you to Microsoft Store for Ecucation to download the app. You will also receive an email with instructions and a link to the Store.
 
     <!-- ![You can get the app now](images/get-the-app.png) -->
 
@@ -54,7 +54,7 @@ After Minecraft: Education Edition is added to your Microsoft Store for Educatio
 ### Install for me
 You can install the app on your PC. This gives you a chance to work with the app before using it with your students.   
 
-1. Sign in to [Micrsoft Store for Education](https://educationstore.microsoft.com). 
+1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**, and then click **Install**.
 
     ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)
@@ -65,7 +65,7 @@ You can install the app on your PC. This gives you a chance to work with the app
 Enter email addresses for your students, and each student will get an email with a link to install the app. This option is best for older, more tech-savvy students who will always use the same PC at school. 
 
 **To assign to others**
-1. Sign in to [Micrsoft Store for Education](https://educationstore.microsoft.com). 
+1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**.
 
     ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)
@@ -95,7 +95,7 @@ Students will receive an email with a link that will install the app on their PC
 
     ![Windows Store app showing access to My Library](images/minecraft-private-store.png) 
 
-      When students click **My Libarary** they'll find apps assigned to them.
+      When students click **My Library** they'll find apps assigned to them.
 
     ![My Library for example student](images/minecraft-my-library.png)  
 
@@ -155,7 +155,7 @@ If you are still having trouble installing the app, you can get more help on our
 ## Related topics
 
 [Working with Microsoft Store for Education](education-scenarios-store-for-business.md) </br>
-Learn about overall Windows Store for Business management: manage settings, shop for apps, distribute apps, manage inventory, and manage order history.
+Learn about overall Microsoft Store for Business management: manage settings, shop for apps, distribute apps, manage inventory, and manage order history.
 [Get Minecraft: Education Edition](get-minecraft-for-education.md)
 [For IT admins: get Minecraft: Education Edition](school-get-minecraft.md)
 
