@@ -31,11 +31,11 @@ You can use the [Windows Defender ATP portal](https://securitycenter.windows.com
 ## Windows Defender ATP portal
 When you open the portal, you’ll see the main areas of the application:
 
- ![Windows Defender Advanced Threat Protection portal](images/atp-main-portal.png)
+ ![Windows Defender Advanced Threat Protection portal](images/atp-portal.png)
 
-- (1) Search, Feedback, Settings, Help and support
-- (2) Navigation pane
-- (3) Main portal
+- (1) Navigation pane
+- (2) Main portal Search
+- (3) Feedback, Settings, Help and support
 
 > [!NOTE]
 > Malware related detections will only appear if your endpoints are using [Windows Defender Antivirus](https://technet.microsoft.com/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
