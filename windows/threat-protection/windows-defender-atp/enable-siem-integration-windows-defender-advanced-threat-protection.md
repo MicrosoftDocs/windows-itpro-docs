@@ -29,14 +29,14 @@ Enable security information and event management (SIEM) integration so you can p
 
 2. Select **Enable SIEM integration**. This activates the **SIEM connector access details** section with pre-populated values and an application is created under you Azure Active Directory (AAD) tenant.
 
-  WARNING:<br>
-  The client secret is only displayed once. Make sure you keep a copy of it in a safe place.<br>
+  > [!WARNING]
+  >The client secret is only displayed once. Make sure you keep a copy of it in a safe place.<br>
   For more information about getting a new secret see, [Learn how to get a new secret](troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md#learn-how-to-get-a-new-client-secret).
 
 3. Choose the SIEM type you use in your organization.
 
-  NOTE:<br>
-  If you select HP ArcSight, you'll need to save these two configuration files:<br>
+  > [!NOTE]
+  > If you select HP ArcSight, you'll need to save these two configuration files:<br>
   - WDATP-connector.jsonparser.properties
   - WDATP-connector.properties <br>
 
