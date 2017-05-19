@@ -44,7 +44,7 @@ Topic | Description
 [Investigate files](investigate-files-windows-defender-advanced-threat-protection.md) | Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach.
 [Investigate an IP address](investigate-ip-windows-defender-advanced-threat-protection.md) | Examine possible communication between your machines and external Internet protocol (IP) addresses.
 [Investigate a domain](investigate-domain-windows-defender-advanced-threat-protection.md) | Investigate a domain to see if machines and servers in your enterprise network have been communicating with a known malicious domain.
-[View and organize the Machines view](machines-view-overview-windows-defender-advanced-threat-protection.md)| You can sort, filter, and exporting the machine list.
+[View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)| You can sort, filter, and exporting the machine list.
 [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md) | The **Machines list** shows a list of the machines in your network, the corresponding number of active alerts for each machine categorized by alert severity levels, as well as the number of threats.
 [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md)| Investigate user accounts with the most active alerts.
 [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md) | The **Manage Alert** menu on every alert lets you change an alert's status, resolve it, suppress it, or contribute comments about the alert.
