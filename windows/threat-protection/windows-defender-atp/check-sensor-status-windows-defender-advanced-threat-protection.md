@@ -24,7 +24,7 @@ localizationpriority: high
 
 The sensor health tile provides information on the individual endpoint’s ability to provide sensor data and communicate with the Windows Defender ATP service. It reports how many machines require attention and helps you identify problematic machines and take action to correct known issues.
 
-![Windows Defender ATP sensor health tile](images/atp-sensor-health-filter.png)
+![Windows Defender ATP sensor health tile](images/atp-portal-sensor.png)
 
 There are two status indicators on the tile that provide information on the number of machines that are not reporting properly to the service:
 -	**Inactive** - Machines that have stopped reporting to the Windows Defender ATP service for more than seven days in the past month.
