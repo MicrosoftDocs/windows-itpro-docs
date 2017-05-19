@@ -21,7 +21,15 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-You can click an alert in any of the [alert queues](alerts-queue-windows-defender-advanced-threat-protection.md) to begin an investigation. Selecting an alert brings up the **Alert management pane**, while clicking an alert brings you the alert details view where general information about the alert, some recommended actions, an alert process tree, an incident graph, and an alert timeline is shown.  
+You can click an alert in any of the [alert queues](alerts-queue-windows-defender-advanced-threat-protection.md) to begin an investigation. Selecting an alert brings up the **Alert management pane**, while clicking an alert brings you the alert details view.
+
+![Image of the alert page](images/atp-alert-details.png)
+
+The alert details view allows you to manage an alert and see alert metadata, see the alert context to see the where, who, and when context of the alert, and the status of the alert in the alerts queue. You'll also see a description and a set of recommended actions which you can expand.
+
+For more information about managing alerts, see [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md).
+
+The alert details page also shows the alert process tree, an incident graph, and an alert timeline.
 
 You can click on the machine link from the alert view to navigate to the machine. The alert will be highlighted automatically, and the timeline will display the appearance of the alert and its evidence in the **Machine timeline**. If the alert appeared more than once on the machine, the latest occurrence will be displayed in the **Machine timeline**.
 
@@ -44,13 +52,18 @@ The **Alert process tree** takes alert triage and investigation to the next leve
 
 The **Alert process tree** expands to display the execution path of the alert, its evidence, and related events that occurred in the minutes - before and after - the alert.
 
-The alert and related events or evidence have circles with thunderbolt icons inside them.
+The alert and related events or evidence have circles with thunderbolt icons inside them. It presents nodes for files that were parsed from the command line arguments of common system tools.
+
+[TOMER - PLEASE REVIEW IF MY INTERPRETATION IS CORRECT - THANK YOU]
 
 >[!NOTE]
 >The alert process tree might not be available in some alerts.
 
-Clicking in the circle immediately to the left of the indicator displays the **Alert details** pane where you can take a deeper look at the details about the alert. It displays rich information about the selected process, file, IP address, and other details taken from the entity's page –  while remaining on the alert page, so you never leave the current context of your investigation.  
+Clicking in the circle immediately to the left of the indicator displays the **Alert details** pane.
 
+![Image of the alert details pane](images/atp-alert-mgt-pane.png)
+
+The alert details pane helps you take a deeper look at the details about the alert. It displays rich information about the execution details, file details, detections, observed worldwide, observed in organization, and other details taken from the entity's page –  while remaining on the alert page, so you never leave the current context of your investigation.  
 
 
 ## Incident graph
