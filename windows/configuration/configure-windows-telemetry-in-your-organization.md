@@ -98,7 +98,7 @@ Windows telemetry also helps Microsoft better understand how customers use (or d
 
 ### Insights into your own organization
 
-Sharing information with Microsoft helps make Windows and other products better, but it can also help make your internal processes and user experiences better, as well.  Microsoft is in the process of developing a set of analytics customized for your internal use.  The first of these, called [Upgrade Readiness](/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
+Sharing information with Microsoft helps make Windows and other products better, but it can also help make your internal processes and user experiences better, as well.  Microsoft is in the process of developing a set of analytics customized for your internal use.  The first of these, called [Upgrade Readiness](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
 
 #### Upgrade Readiness
 
