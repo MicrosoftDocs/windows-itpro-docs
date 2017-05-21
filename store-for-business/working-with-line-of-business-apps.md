@@ -17,7 +17,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Your company or school can make line-of-business (LOB) applications available through Microsoft Store for Business or Microsoft Store for Education. These apps are custom to your school or organization – they might be internal apps, or apps specific to your school,business, or industry.
+Your company or school can make line-of-business (LOB) applications available through Microsoft Store for Business or Microsoft Store for Education. These apps are custom to your school or organization – they might be internal apps, or apps specific to your school, business, or industry.
 
 Developers within your organization, or ISVs that you invite, can become LOB publishers and submit apps to Microsoft Store for your company or school. Once an LOB publisher submits an app for your company, the app is only available to your company. LOB publishers submit apps through the Windows Dev Center using the same process as all apps that are in the Store, and then can be managed or deployed using the same process as any other app that has been acquired through the Store.
 
@@ -88,7 +88,7 @@ For more information, see [Organizational licensing options]( https://go.microso
 
 ## <a href="" id="add-lob-app-to-inventory"></a>Add app to inventory (admin)
 
-After an ISV submits the LOB app for your company or school, someone with Microsoft Store for Business and Eduction admin permissions needs to accept the app.
+After an ISV submits the LOB app for your company or school, someone with Microsoft Store for Business and Education admin permissions needs to accept the app.
 
 **To add the LOB app to your inventory**
 
