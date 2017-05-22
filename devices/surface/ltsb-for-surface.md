@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 ---
 
 # Long-Term Servicing Branch (LTSB) for Surface devices

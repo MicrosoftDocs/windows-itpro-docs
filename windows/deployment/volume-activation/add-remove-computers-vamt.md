@@ -5,7 +5,7 @@ ms.assetid: cb6f3a78-ece0-4dc7-b086-cb003d82cd52
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 ms.pagetype: activation
 ---
 
