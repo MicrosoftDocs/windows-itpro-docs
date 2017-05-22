@@ -24,7 +24,7 @@ You can make an app available in your private store when you acquire the app, or
 
 **To acquire an app and make it available in your private store**
 
-1.  Sign in to [Micrososft Store for Business](https://businessstore.microsoft.com) or [Micrososft Store for Education](https://educationstore.microsoft.com).
+1.  Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com).
 
 2.  Click an app, choose the license type, and then click **Get the app** to acquire the app for your organization.
 
@@ -34,7 +34,7 @@ Microsoft Store adds the app to **Apps & software**. Click **Manage**, **Apps & 
 
 **To make an app in Apps & software available in your private store**
 
-1.  Sign in to the [Store for Business](https://businessstore.microsoft.com) or [Micrososft Store for Education](https://educationstore.microsoft.com).
+1.  Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com).
 2.  Click **Manage**, and then choose **Apps & software**.
 
     <!--- ![Image showing Manage menu in Windows Store for Business.](images/wsfb-manageinventory.png) -->

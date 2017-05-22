@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
-author: jdeckerMS
+author: jdeckerms
 ---
 
 # Configure Start layout, taskbar, and lock screen for Windows 10 PCs 

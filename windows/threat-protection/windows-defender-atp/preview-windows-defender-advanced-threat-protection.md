@@ -32,3 +32,6 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 1. In the navigation pane, select **Preferences setup** > **Preview experience**.
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
+
+## Preview features
+There are currently no preview only features.
