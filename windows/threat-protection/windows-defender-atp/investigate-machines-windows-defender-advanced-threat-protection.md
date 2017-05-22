@@ -122,7 +122,7 @@ The slider is helpful when you're investigating a particular alert on a machine.
 ### Export machine timeline events
 You can also export detailed event data from the machine timeline to conduct offline analysis. You can choose to export the machine timeline for the current date or specify a date range. You can export up to seven days of data and specify the specific time between the two dates.
 
-![Image of export machine timeline events](images/atp-export-machine-timeline-events.png)
+![Image of export machine timeline events](images/atp-machine-timeline-export.png)
 
 ### Navigate between pages
 Use the events per page drop-down to choose the number of alerts you’d like to see on the page. You can choose to display 20, 50, or 100 events per page. You can also move between pages by clicking **Older** or **Newer**.
