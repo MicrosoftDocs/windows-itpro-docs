@@ -19,7 +19,7 @@ localizationpriority: high
 
 In your organization, you might have different configuration requirements for devices that you manage. You can create separate provisioning packages for each group of devices in your organization that have different requirements. Or, you can create a multivariant provisioning package, a single provisioning package that can work for multiple conditions. For example, in a single provisioning package, you can define one set of customization settings that will apply to devices set up for French and a different set of customization settings for devices set up for Japanese. 
 
-To provision multivariant settings, you use Windows Imaging and Configuration Designer (ICD) to create a provisioning package that contains all of the customization settings that you want to apply to any of your devices. Next, you manually edit the .XML file for that project to define each set of devices (a **Target**). For each **Target**, you specify at least one **Condition** with a value, which identifies the devices to receive the configuration. Finally, for each **Target**, you provide the customization settings to be applied to those devices.
+To provision multivariant settings, you use Windows Configuration Designer to create a provisioning package that contains all of the customization settings that you want to apply to any of your devices. Next, you manually edit the .XML file for that project to define each set of devices (a **Target**). For each **Target**, you specify at least one **Condition** with a value, which identifies the devices to receive the configuration. Finally, for each **Target**, you provide the customization settings to be applied to those devices.
 
 Let's begin by learning how to define a **Target**.
 
@@ -258,7 +258,7 @@ Follow these steps to create a provisioning package with multivariant capabiliti
 6. Save the updated customizations.xml file and note the path to this updated file. You will need the path as one of the values for the next step.
 
 
-7. Use the [Windows ICD command-line interface](provisioning-command-line.md) to create a provisioning package using the updated customizations.xml. 
+7. Use the [Windows Configuration Designer command-line interface](provisioning-command-line.md) to create a provisioning package using the updated customizations.xml. 
 
     For example:
 

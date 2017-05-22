@@ -68,7 +68,7 @@ To run the Upgrade Readiness deployment script:
 
 5.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script.  If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
 
-The deployment script displays the following exit codes to let ddfyou know if it was successful, or if an error was encountered.
+The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered.
 
 <div font-size='7pt;'>
 <table border='1' cellspacing='0' cellpadding='0'>
@@ -259,5 +259,26 @@ The deployment script displays the following exit codes to let ddfyou know if it
     <tr>
         <td>43 - Function **EndImpersonatingLoggedOnUser** failed with an unexpected exception.</td>
         <td>Check the logs for the exception message and HResult.</td>
+    </tr>
+<tr>
+        <td>44 - Diagtrack.dll version is old, so Auth Proxy will not work.</td>
+        <td>Update the PC using Windows Update/Windows Server Update Services.</td>
+    </tr>
+<tr>
+        <td>45 - Diagrack.dll was not found.</td>
+        <td>Update the PC using Windows Update/Windows Server Update Services.</td>
+    </tr>
+<tr>
+        <td>46 - **DisableEnterpriseAuthProxy** property should be set to **1** for **ClientProxy=Telemetry** to work.</td>
+        <td>Set the **DisableEnterpriseAuthProxy** registry property to **1** at key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**</font>.</td>
+    </tr>
+<tr>
+        <td>47 - **TelemetryProxyServer** is not present in key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**</font>.</td>
+        <td>**ClientProxy** selected is **Telemetry**, but you need to add **TelemetryProxyServer** in key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**</font>.</td>
+    </tr>
+<tr>
+        <td>48 - **CommercialID** mentioned in RunConfig.bat should be a GUID.</td>
+        <td>**CommercialID** is mentioned in RunConfig.bat, but it is not a GUID. Copy the commercialID from your workspace.  To find the commercialID, in the OMS portal click **Upgrade Readiness > Settings**.</td>
+    </tr>
 </table>
 
