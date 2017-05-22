@@ -43,7 +43,7 @@ There are a couple of things we need to know when you pay for apps. You can add 
 
 You’ll also need to have your business address saved on **Account information** or **Payments & billing**. The address is used to generate tax rates. For more information on taxes for apps, see [organization tax information](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings#organization-tax-information). 
 
-Microsoft Store adds the app to your inventory. From **Inventory**or **Apps & software**, you can:
+Microsoft Store adds the app to your inventory. From **Inventory** or **Apps & software**, you can:
 - Distribute the app: add to private store, or assign licenses
 - View app licenses: review current licenses, reclaim and reassign licenses
 - View app details: review the app details page and purchase more licenses

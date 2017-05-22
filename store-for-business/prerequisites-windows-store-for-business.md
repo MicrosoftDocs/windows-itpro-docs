@@ -27,7 +27,7 @@ You'll need this software to work with Microsoft Store for Business or Education
 ### Required
 
 -   IT Pros that are administering Microsoft Store for Business and Education need a browser compatible with Microsoft Store for Business and Education running on a PC or mobile device. Supported browsers include: Internet Explorer 10 or later, Microsoft Edge, or current versions of Chrome or Firefox. Javascript needs to be supported and enabled. 
--   Employees using apps from Micrsoft Store for Business and Education need at least Windows 10, version 1511 running on a PC or mobile device.
+-   Employees using apps from Microsoft Store for Business and Education need at least Windows 10, version 1511 running on a PC or mobile device.
 
 Microsoft Azure Active Directory (AD) or Office 365 accounts for your employees:
 -   IT Pros need Azure AD or Office 365 accounts to sign up for Microsoft Store for Business and Education, and then to sign in, get apps, distribute apps, and manage app licenses.
@@ -41,9 +41,9 @@ For more information on Azure AD, see [About Office 365 and Azure Active Directo
 While not required, you can use a management tool to distribute and manage apps. Using a management tool allows you to distribute content, scope app availability, and control when app updates are installed. This might make sense for larger organizations that already use a management tool. If you're considering using management tools, check with the management tool vendor to see if they support Microsoft Store for Business and Education. The management tool will need to:
 
 -   Integrate with the Windows 10 management framework and Azure AD.
--   Sync with the Microsoft Store for Business and Education inventory to distribute apps.
+-   Sync with Microsoft Store for Business and Education inventory to distribute apps.
 
-### Proxy configuration
+## Proxy configuration
 
 If your organization restricts computers on your network from connecting to the Internet, there is a set of URLs that need to be available for devices to use Microsoft Store. Some of the Microsoft Store features use Windows Store app and Microsoft Store services. Devices using Microsoft Store – either to acquire, install, or update apps – will need access to these URLs. If you use a proxy sever to block traffic, your configuration needs to allow these URLs:
 
