@@ -194,17 +194,6 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
   3. Click **Next** or **Skip** depending on whether you want to set up Take a Test.
 
-<!-- comment out
-7. If you want to add Microsoft Store for Education apps to the student PCs, you can select from the list of recommended apps in the **Add STEM and Makerspace apps to Student PCs** page.
-  1. Select the apps that you want to add. You'll see a checkmark on apps that you select.
-  2. Click **Next**.
-
-    **Figure 4** - Select Microsoft Store apps to add to student PCs
-
-    ![Select Microsoft Store apps to add to student PCs](images/suspc_choosesettings_apps.png)
-
--->
-
 8. In the **Add recommended apps** page, you can choose from a set of recommended Microsoft Store apps to provision. The recommended apps include Minecraft: Education Edition and several STEM and Makerspace apps.
   1. Select the apps that you would like to provision and then click **Next** when you're done.
   2. Click **Skip** if you don't want to provision any apps.
@@ -212,6 +201,8 @@ The **Set up School PCs** app guides you through the configuration choices for t
     **Figure 6** - Select from a set of recommended Microsoft Store apps
 
     ![Select from a set of recommended Microsoft Store apps](images/suspc_createpackage_recommendedapps.png)
+    
+    The set of recommended Microsoft Store for Education apps may vary from what we show here.
 
 9. In the **Review package summary** page, make sure that all the settings you configured appear correctly.
   1. If you need to change any of the settings, you can on the sections to go back to that page and make your changes.
