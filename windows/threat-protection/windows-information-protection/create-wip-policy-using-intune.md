@@ -41,10 +41,6 @@ The steps to add your app rules are based on the type of rule template being app
 >[!Important]
 >WIP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<p>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your **App Rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
 
-
->[!Note]
->If you want to use **File hash** or **Path** rules, instead of **Publisher** rules, you must follow the steps in the [Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md) topic.
-
 #### Add a store app rule to your policy
 For this example, we’re going to add Microsoft OneNote, a store app, to the **App Rules** list.
 
@@ -71,8 +67,6 @@ If you don't know the publisher or product name, you can find them for both desk
 
 **To find the Publisher and Product Name values for Store apps without installing them**
 1.	Go to the [Windows Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Microsoft OneNote*.
-
-    >**Note**<br>If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the [Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md) topic.
 
 2.	Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
 
@@ -469,11 +463,14 @@ After you've decided where your protected apps can access enterprise data on you
 2. Click **Save Policy**.
 
 ## Related topics
-- [Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md)
 - [Deploy your Windows Information Protection (WIP) policy](deploy-wip-policy-using-intune.md)
+
 - [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-vpn-and-wip-policy-using-intune.md)
+
 - [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
+
 - [Azure RMS Documentation Update for May 2016](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/azure-rms-documentation-update-for-may-2016/)
+
 - [What is Azure Rights Management?]( https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
 
 >[!NOTE]

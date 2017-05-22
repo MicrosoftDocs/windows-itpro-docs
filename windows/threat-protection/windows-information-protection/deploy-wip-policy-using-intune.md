@@ -38,6 +38,7 @@ The policy is deployed to the selected users' devices.
 
 ## Related topics
 - [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune.md)
-- [Add apps to your Windows Information Protection (WIP) policy by using the Microsoft Intune custom URI functionality](add-apps-to-protected-list-using-custom-uri.md)
+
 - [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](create-vpn-and-wip-policy-using-intune.md)
+
 - [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
