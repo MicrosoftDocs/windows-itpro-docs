@@ -86,10 +86,6 @@ Europe |```*.blob.core.windows.net```<br>```crl.microsoft.com```<br> ```eu.vorte
 
  If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.
 
- If you selected US as your region, you should permit anonymous traffic for URLs listed in both Central US and East US (2).
-
- If you selected EU as your region, you should permit anonymous traffic for URLs listed in both West Europe and North Europe.
-
 
 ## Verify client connectivity to Windows Defender ATP service URLs
 

@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerMS
+author: jdeckerms
 ---
 
 # Configure Client Computers

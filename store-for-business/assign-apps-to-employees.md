@@ -18,7 +18,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Adminis, Purchasers, and Basic Purchasers can assign online-licensed apps to employees in their organization.
+Admins, Purchasers, and Basic Purchasers can assign online-licensed apps to employees or students in their organization.
 
 **To assign an app to an employee**
  

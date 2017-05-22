@@ -549,9 +549,11 @@ The following Microsoft Edge MDM policies are available in the [Policy CSP](http
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Browser/AllowAutoFill                                | Choose whether employees can use autofill on websites. <br /> Default: Allowed                      |
 | Browser/AllowDoNotTrack                              | Choose whether employees can send Do Not Track headers.<br /> Default: Not allowed                  |
+| Browser/AllowMicrosoftCompatbilityList               | Specify the Microsoft compatibility list in Microsoft Edge. <br /> Default: Enabled                 |
 | Browser/AllowPasswordManager                         | Choose whether employees can save passwords locally on their devices. <br /> Default: Allowed       |
 | Browser/AllowSearchSuggestionsinAddressBar           | Choose whether the address bar shows search suggestions.. <br /> Default: Allowed                   |
 | Browser/AllowSmartScreen                             | Choose whether SmartScreen is turned on or off.  <br /> Default: Allowed                            |
+| Browser/FirstRunURL                                  | Choose the home page for Microsoft Edge on Windows Mobile 10. <br /> Default: blank                 |
 
 
 For a complete list of the Microsoft Edge policies, see [Available policies for Microsoft Edge](http://technet.microsoft.com/library/mt270204.aspx).
