@@ -31,7 +31,7 @@ Microsoft Store for Business and Education shows this info for each app in your 
 - Access to actions for the app
 
 The last modified date tracks changes about the app as an item in your inventory. The last modified date changes when one of the following happens:
-- First purchase (the date you acquire the app from Windows Store for Business)
+- First purchase (the date you acquire the app from Microsoft Store for Business)
 - Purchase additional licenses
 - Assign license
 - Reclaim license
@@ -45,14 +45,14 @@ There are a couple of ways to find specific apps, or groups of apps in your inve
 
 **Search** - Use the Search box to search for an app.<br>
 **Refine results** - Use **Refine results** to scope your list of apps by one or more of these app attributes:
-- **License type** - Online or offline licenses. For more info, see [Apps in Windows Store for Business](apps-in-windows-store-for-business.md#licensing-model).
+- **License type** - Online or offline licenses. For more info, see [Apps in Microsoft Store for Business](apps-in-windows-store-for-business.md#licensing-model).
 - **Supported devices** - Lists the devices that apps in your inventory were originally written to support. This list is cumulative for all apps in your inventory.
 - **Source** - **Store**, for apps acquired from Store for Business, or LOB, for line-of-business apps.
 - **Product type** - Product categories, such as app, or game. 
 - **Private store** - Whether or not the app is in the private store, or status if the app is being added or removed from private store. 
 
 ## Manage apps in your inventory
-Each app in the Store for Business has an online, or an offline license. For more information on Store for Business licensing model, see [Apps in the Windows Store for Business](apps-in-windows-store-for-business.md#licensing-model). There are different actions you can take depending on the app license type. They're summarized in this table.
+Each app in the Store for Business has an online, or an offline license. For more information on Store for Business licensing model, see [Apps in the Microsoft Store for Business](apps-in-windows-store-for-business.md#licensing-model). There are different actions you can take depending on the app license type. They're summarized in this table.
 
 | Action | Online-licensed app | Offline-licensed app |
 | ------ | ------------------- | -------------------- |
@@ -77,7 +77,7 @@ Once an app is in your private store, people in your org can install the app on 
 
 **To make an app in Apps & software available in your private store**
 
-1.  Sign in to the [Store for Business](https://businessstore.microsoft.com) or [Micrososft Store for Education](https://businessstore.microsoft.com).
+1.  Sign in to the [Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://businessstore.microsoft.com).
 2.  Click **Manage**, and then choose **Apps & software**.
 3.  Use **Refine results** to search for online-licensed apps under **License type**.
 4.  From the list of online-licensed apps, click the ellipses for the app you want, and then choose **Add to private store**.
@@ -97,7 +97,7 @@ If you decide that you don't want an app available for employees to install on t
 
 **To remove an app from the private store**
  
-1.  Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com) or [Micrososft Store for Education](https://businessstore.microsoft.com).
+1.  Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://businessstore.microsoft.com).
 2.	Click **Manage**, and then choose **Apps & software**.
 3.	Find an app, click the ellipses under **Action**, choose **Remove from private store**, and then click **Remove**.
 
@@ -105,7 +105,7 @@ The app will still be in your inventory, but your employees will not have access
 
 **To assign an app to an employee**
 
-1.	Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com) or [Micrososft Store for Education](https://businessstore.microsoft.com).
+1.	Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://businessstore.microsoft.com).
 2.	Click **Manage**, and then choose **Inventory**.
 3.	Find an app, click the ellipses under **Action**, and then choose **Assign to people**.
 4.	Type the email address for the employee that you're assigning the app to, and click **Confirm**.
@@ -118,7 +118,7 @@ For each app in your inventory, you can view and manage license details. This gi
 
 **To view license details**
 
-1. Sign in to [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkId=691845) or [Micrososft Store for Education](https://businessstore.microsoft.com).
+1. Sign in to [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkId=691845) or [Microsoft Store for Education](https://businessstore.microsoft.com).
 2. Click **Manage**, and then choose **Apps & software**.
 3. Click an app you want to manage. 
 4. On the app page, you'll see the names of people in your organization who have installed the app and are using one of the licenses. From here, you can:
@@ -134,7 +134,7 @@ You can assign the app to more people in your organization, or reclaim licenses.
 
 - On the app page, click **Assign users**, type the email address for the person that you're assigning the app to, and click **Assign**.
 
-Micrososft Store updates the list of assigned licenses.
+Microsoft Store updates the list of assigned licenses.
 
 **To reclaim licenses**
 
@@ -147,7 +147,7 @@ You can purchase additional licenses for apps in your Inventory.
 
 **To purchase additional app licenses**
 
-1. Sign in to [Store for Business](https://go.microsoft.com/fwlink/p/?LinkId=691845) or [Micrososft Store for Education](https://businessstore.microsoft.com)
+1. Sign in to [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkId=691845) or [Microsoft Store for Education](https://businessstore.microsoft.com)
 2. Click **Manage**, and then choose **Apps & software**.
 3. From **Apps & software**, click an app. 
 4. On the app page, click **Buy more** for additional licenses, or click **Assign users** to manage your current licenses. 

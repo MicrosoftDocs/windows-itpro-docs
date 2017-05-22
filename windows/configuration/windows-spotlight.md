@@ -6,7 +6,7 @@ keywords: ["lockscreen"]
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: high
 ---
 

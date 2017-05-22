@@ -24,15 +24,24 @@ localizationpriority: high
 
 The sensor health tile provides information on the individual endpoint’s ability to provide sensor data and communicate with the Windows Defender ATP service. It reports how many machines require attention and helps you identify problematic machines and take action to correct known issues.
 
-![Windows Defender ATP sensor health tile](images/atp-sensor-health-filter.png)
+![Windows Defender ATP sensor health tile](images/atp-portal-sensor.png)
 
 There are two status indicators on the tile that provide information on the number of machines that are not reporting properly to the service:
 -	**Inactive** - Machines that have stopped reporting to the Windows Defender ATP service for more than seven days in the past month.
 - **Misconfigured** - These machines might partially be reporting sensor data to the Windows Defender ATP service and might have configuration errors that need to be corrected.
 
-Clicking any of the groups directs you to Machines view, filtered according to your choice.
+Clicking any of the groups directs you to Machines list, filtered according to your choice.
 
 ![Windows Defender ATP sensor filter](images/atp-sensor-filter.png)
+
+<!--
+![Windows Defender ATP sensor filter](images/atp-machines-list-misconfigured.png)
+
+Filter the **Machines list** by time period, **OS Platform**, **Health**, or **Malware category alerts** to focus on certain sets of machines, according to the desired criteria.  
+
+-->
+
+You can also download the entire list in CSV format using the **Export to CSV** feature. For more information on filters, see [View and organize the Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md).
 
 You can filter the health state list by the following status:
 - **Active** - Machines that are actively reporting to the Windows Defender ATP service.
@@ -45,7 +54,7 @@ You can view the machine details when you click on a misconfigured or inactive m
 
 ![Windows Defender ATP sensor filter](images/atp-machine-health-details.png)
 
-In the **Machines view**, you can download a full list of all the machines in your organization in a CSV format. To download, click the **Manage Alert** menu icon on the top corner of the page.
+In the **Machines list**, you can download a full list of all the machines in your organization in a CSV format. To download, click the **Manage Alert** menu icon on the top corner of the page.
 
 >[!NOTE]
 >Export the list in CSV format to display the unfiltered data. The CSV file will include all machines in the organization, regardless of any filtering applied in the view itself and can take a significant amount of time to download, depending on how large your organization is.

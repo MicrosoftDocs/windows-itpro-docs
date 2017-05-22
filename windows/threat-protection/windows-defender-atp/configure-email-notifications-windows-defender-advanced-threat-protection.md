@@ -35,7 +35,7 @@ The email notification includes basic information about the alert and a link to 
 ## Set up email notifications for alerts
 The email notifications feature is turned off by default. Turn it on to start receiving email notifications.
 
-1. On the navigation pane, select **Preferences Setup** > **Email Notifications**.
+1. On the navigation pane, select **Preferences setup** > **Email Notifications**.
 2. Toggle the setting between **On** and **Off**.
 3.	Select the alert severity level that you’d like your recipients to receive:
   - **High** – Select this level to send notifications for high-severity alerts.

@@ -4,7 +4,7 @@ description: With Windows 10, you can create provisioning packages that let you
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: high
 ---
 

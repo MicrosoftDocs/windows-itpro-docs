@@ -4,7 +4,7 @@ description: This topic lists new and updated topics in the Surface documentatio
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 ---
 
 # Change history for Surface documentation

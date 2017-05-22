@@ -16,7 +16,7 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-For companies or organizations using mobile device management (MDM) tools,those tools can synchronize with Windows Store for Business inventory to manage apps with offline licenses. Store for Business management tool services work with your third-party management tool to manage content.
+For companies or organizations using mobile device management (MDM) tools, those tools can synchronize with Windows Store for Business inventory to manage apps with offline licenses. Store for Business management tool services work with your third-party management tool to manage content.
 
 Your management tool needs to be installed and configured with Azure AD, in the same directory that you are using for Store for Business. Once that's done, you can configure it to work with Store for Business
 
@@ -34,7 +34,7 @@ After your management tool is added to your Azure AD directory, you can configur
 2.  Click **Manage**, click **Store settings**, and then click  **Management tools**.
 3.  From the list of MDM tools, select the one you want to synchronize with Microsoft Store, and then click **Activate.**
 
-Your MDM tool is ready to use with Microsoft Store. To learn how to configure synchroniztion and deploy apps, see these topics:
+Your MDM tool is ready to use with Microsoft Store. To learn how to configure synchronization and deploy apps, see these topics:
 - [Manage apps you purchased from Windows Store for Business with Microsoft Intune](https://technet.microsoft.com/library/mt676514.aspx)
 - [Manage apps from Windows Store for Business with System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business) 
 
