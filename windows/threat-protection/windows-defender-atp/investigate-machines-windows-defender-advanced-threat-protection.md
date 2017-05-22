@@ -63,13 +63,13 @@ The **Machine timeline** section provides a chronological view of the events and
 
 This feature also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a selected time period.  
 
-![Image of machine timeline with events](images/atp-machine-timeline.png)
+![Image of machine timeline with events](images/atp-machines-timeline.png)
 
 Windows Defender ATP monitors and captures suspicious or anomalous behavior on Windows 10 machines and displays the process tree flow in the **Machine timeline**. This gives you better context of the behavior which can contribute to understanding the correlation between events, files, and IP addresses in relation to the machine.
 
 
-### Search for specific alerts
-Use the search bar to look for specific alerts or files associated with the machine. Harness the power of using the following defined search queries based on type:value pairs and event filter types to sift through the search results:
+### Search for specific events
+Use the search bar to look for specific timeline events. Harness the power of using the following defined search queries based on type:value pairs and event filter types to sift through the search results:
 
 -	**Value** - Type in any search keyword to filter the timeline with the attribute you’re searching for. This search supports defined search queries based on type:value pairs.<br>
   You can use any of the following values:<br>
