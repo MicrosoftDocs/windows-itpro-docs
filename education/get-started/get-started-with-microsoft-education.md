@@ -408,7 +408,7 @@ Intune for Education provides an **Express configuration** option so you can get
 
   **Figure 22** - Expand the settings group to get more details
 
-  ![Expand the settings group to get more info](images/i4e_expressconfiguration_choosesettings_expandcollapse_cropped.png)
+  ![Expand the settings group to get more info](images/i4e_expressconfiguration_choosesettings_expandcollapse_cropped_052217.png)
 
 9. For this walkthrough, set the following settings:
   - In the **Microsoft Edge settings** group, change the **Do-Not-Track headers** setting to **Require**.
