@@ -1,6 +1,6 @@
 ---
-title: Investigate machines in the Windows Defender ATP Machines view
-description: Investigate affected machines in your network by reviewing alerts, network connection information, and service health on the Machines view.
+title: Investigate machines in the Windows Defender ATP Machines list
+description: Investigate affected machines in your network by reviewing alerts, network connection information, and service health on the Machines list.
 keywords: machines, endpoints, machine, endpoint, alerts queue, alerts, machine name, domain, last seen, internal IP, active alerts, threat category, filter, sort, review alerts, network, connection, type, password stealer, ransomware, exploit, threat, low severity
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# Investigate machines in the Windows Defender ATP Machines view
+# Investigate machines in the Windows Defender ATP Machines list
 
 **Applies to:**
 
@@ -26,7 +26,7 @@ Investigate the details of an alert raised on a specific machine to identify oth
 
 You can click on affected machines whenever you see them in the portal to open a detailed report about that machine. Affected machines are identified in the following areas:
 
-- The [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md)
+- The [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
 - The [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
 - The [Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - Any individual alert
@@ -97,7 +97,7 @@ You can also export detailed event data from the machine timeline to conduct off
 ### Navigate between pages
 Use the events per page drop-down to choose the number of alerts you’d like to see on the page. You can choose to display 20, 50, or 100 events per page. You can also move between pages by clicking **Older** or **Newer**.
 
-From the **Machines view**, you can also navigate to the file, IP, or URL view and the timeline associated with an alert is retained, helping you view the investigation from different angles and retain the context of the event time line.
+From the **Machines list**, you can also navigate to the file, IP, or URL view and the timeline associated with an alert is retained, helping you view the investigation from different angles and retain the context of the event time line.
 
 From the list of events that are displayed in the timeline, you can examine the behaviors or events in to help identify indicators of interests such as files and IP addresses to help determine the scope of a breach. You can then use the information to respond to events and keep your system secure.
 
@@ -117,7 +117,7 @@ This enhances the ‘in-context’ information across investigation and explorat
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
 - [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
 - [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [View and organize the Windows Defender ATP Machines view](machines-view-overview-windows-defender-advanced-threat-protection.md)
+- [View and organize the Windows Defender ATP Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
 - [Investigate a user account in Windows Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
 - [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
 - [Take response actions in Windows Defender ATP](response-actions-windows-defender-advanced-threat-protection.md)

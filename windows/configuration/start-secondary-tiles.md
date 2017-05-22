@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
-author: jdeckerMS
+author: jdeckerms
 ---
 
 # Add image for secondary Microsoft Edge tiles 

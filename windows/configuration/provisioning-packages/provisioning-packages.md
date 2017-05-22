@@ -5,7 +5,7 @@ ms.assetid: 287706E5-063F-4AB5-902C-A0DF6D0730BC
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: high
 ---
 
