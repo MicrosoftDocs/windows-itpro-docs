@@ -26,7 +26,7 @@ We need your business address, email contact, and tax-exemption certificates tha
 
 Before purchasing apps that have a fee, you need to add or update your organization's business address, and contact email address. 
 
-We use the Business address to calculate sales tax. If your organization's address has already been entered for other commercial purchases through the Microsoft Store, or through other online purchases such as Office 365 or Azure subscriptions, then we’ll use the same address in the Microsoft Store for Business and Microsoft Store for Education. If we don’t have an address, we’ll ask you to enter it during your first purchase. 
+We use the Business address to calculate sales tax. If your organization's address has already been entered for other commercial purchases through Microsoft Store, or through other online purchases such as Office 365 or Azure subscriptions, then we’ll use the same address in Microsoft Store for Business and Microsoft Store for Education. If we don’t have an address, we’ll ask you to enter it during your first purchase. 
 
 We need an email address in case we need to contact you about your Microsoft Store for Business and Education account. This email account should reach the admin for your organization’s Office 365 or Azure AD tenant that is used with Microsoft Store. 
 
@@ -99,7 +99,7 @@ For example:<br>
 ($1.29 X .095) X 100 = $12.25
 
 ## Payment options
-You can purchase apps from the Microsoft Store for Business using your credit card. You can enter your credit card information on Account Information, or when you purchase an app. We currently accept these credit cards: 
+You can purchase apps from Microsoft Store for Business using your credit card. You can enter your credit card information on Account Information, or when you purchase an app. We currently accept these credit cards: 
 1. VISA 
 2. MasterCard 
 3. Discover 
@@ -148,5 +148,3 @@ You have the following distribution options for offline-licensed apps:
 - Include the app in a provisioning package, and then use it as part of imaging a device.
 - Distribute the app through a management tool. 
 For more information, see [Distribute apps to your employees from the Store for Business](distribute-apps-with-management-tool.md).
-
-

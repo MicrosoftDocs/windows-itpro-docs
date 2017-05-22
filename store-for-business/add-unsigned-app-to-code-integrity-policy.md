@@ -77,13 +77,13 @@ After you're done, the files are saved to your desktop. You still need to sign t
 
 ## <a href="" id="catalog-signing-device-guard-portal"></a>Catalog signing with Device Guard signing portal
 
-To sign catalog files with the Device Guard signing portal, you need to be signed up with the Windows Store for Business. For more information, see [Sign up for the Windows Store for Business](sign-up-windows-store-for-business.md).
+To sign catalog files with the Device Guard signing portal, you need to be signed up with the Microsoft Store for Business. For more information, see [Sign up for the Microsoft Store for Business](sign-up-windows-store-for-business.md).
 
 Catalog signing is a vital step to adding your unsigned apps to your code integrity policy.
 
 **To sign a catalog file with Device Guard signing portal**
 
-1. Sign in to the [Store for Business](http://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com).
+1. Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com).
 2. Click **Settings**, click **Store settings**, and then click **Device Guard**.
 3. Click **Upload** to upload your unsigned catalog files. These are the catalog files you created earlier in [Create catalog files for your unsigned app](#create-catalog-files).
 4. After the files are uploaded, click **Sign** to sign the catalog files.
