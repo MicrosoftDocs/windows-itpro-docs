@@ -89,13 +89,15 @@ This section describes how to perform some of the most common tasks when reviewi
 
 4. Click **Advanced scan** to specify different types of scans, such as a full scan.
 
-
-**Download protection updates in the Windows Defender Security Center app**
+<a id="definition-version"></a>
+**Review the definition update version and download the latest updates in the Windows Defender Security Center app**
 1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Click **Protection updates**.
+3. Click **Protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check this against the latest version available for manual download, or review the change log for that version.
+
+![Definition version number information](images/defender/wdav-wdsc-defs.png)
 
 4. Click **Check for updates** to download new protection updates (if there are any).
 
@@ -129,15 +131,16 @@ This section describes how to perform some of the most common tasks when reviewi
 5. Click the plus icon to choose the type and set the options for each exclusion. 
 
 <a id="detection-history"></a>
-**Review threat detection history in the Windows Defender Security Center app**
-1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
-
-2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
-
-3. Click **Scan history**.
-
-4. Click **See full history** under each of the categories (**Current threats**, **Quarantined threats**, **Allowed threats**).
-
+**Review threat detection history in the Windows Defender Security Center app**
+1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+ 
+2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+ 
+3. Click **Scan history**.
+ 
+4. Click **See full history** under each of the categories (**Current threats**, **Quarantined threats**, **Allowed threats**).
+ 
+ 
 
 
 

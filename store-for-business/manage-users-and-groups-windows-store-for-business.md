@@ -21,7 +21,7 @@ localizationpriority: high
 Microsoft Store for Business and Education manages permissions with a set of roles. Currently, you can [assign these roles to individuals in your organization](roles-and-permissions-windows-store-for-business.md), but not to groups.
 
 ## Why Azure AD accounts?
-For organizations planning to use the private store feature with Store for Business, we recommend that you also configure cloud domain join. This provides a seamless integration between the identity your admin and employees will use to sign in to Windows and the Store for Business.
+For organizations planning to use the private store feature with Store for Business, we recommend that you also configure cloud domain join. This provides a seamless integration between the identity your admin and employees will use to sign in to Windows and Microsoft Store for Business.
 
 Azure AD is an Azure service that provides identity and access management capabilities using the cloud. It is primarily designed to provide this service for cloud- or web-based applications that need to access your local Active Directory information. Azure AD identity and access management includes:
 

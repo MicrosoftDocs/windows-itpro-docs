@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
-author: jdeckerMS
+author: jdeckerms
 ---
 
 # Change history for Configure Windows 10

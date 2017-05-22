@@ -7,6 +7,14 @@ ms.sitesec: library
 author: DaniHalfin
 localizationpriority: high
 ---
+<font size=1>
+<table border="0">
+  <tr>
+    <td><img src="../images/security-update.png" alt="Icon showing a security alert"> </td>
+    <td>A wide-spread ransomware attack, known as "WannaCrypt," targets Windows systems that do not yet have the latest updates. Given the severity of this threat, immediately update your Windows systems. [Learn more](https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/).</td>
+  </tr>
+</table>
+</font>
 
 # Update Windows 10 in the enterprise
 
@@ -40,7 +48,8 @@ Windows as a service provides a new way to think about building, deploying, and 
 | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md) | Explains how to use Windows Update for Business to manage when devices receive updates directly from Windows Update. Includes walkthroughs for configuring Windows Update for Business using Group Policy and Microsoft Intune.  |
 | [Deploy Windows 10 updates using Windows Server Update Services (WSUS)](waas-manage-updates-wsus.md) | Explains how to use WSUS to manage Windows 10 updates. |
 | [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md) | Explains how to use Configuration Manager to manage Windows 10 updates.  |
-| [Manage device restarts after updates](waas-restart.md) | Explains how to use Group Policy to manage device restarts. |
+| [Manage device restarts after updates](waas-restart.md) | Explains how to manage update related device restarts. |
+| [Manage additional Windows Update settings](waas-wu-settings.md) | Provides details about settings available to control and configure Windows Update |
 | [Windows Insider Program for Business](waas-windows-insider-for-business.md) | Explains how the Windows Insider Program for Business works and how to become an insider. |
 
 >[!TIP]

@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
-author: jdeckerMS
+author: jdeckerms
 ---
 
 # Configure kiosk and shared devices running Windows desktop editions
