@@ -5,7 +5,7 @@ keywords: ["taskbar layout","pin apps"]
 ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: high
 ---
 # Configure Windows 10 taskbar
