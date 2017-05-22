@@ -51,7 +51,7 @@ Clicking on the number of total logged on users in the Logged on users tile open
 
 ![Image of user details pane](images/atp-user-details-pane.png)
 
-You'll also see details such as logon types for each user account, the user group, and when the account logged occurred.
+You'll also see details such as logon types for each user account, the user group, and when the account logon occurred.
 
  For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
 
