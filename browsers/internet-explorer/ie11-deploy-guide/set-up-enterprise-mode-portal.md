@@ -23,7 +23,7 @@ The Enterprise Mode Site List Portal is an open-source web tool on GitHub that a
 
 Before you can begin using the Enterprise Mode Site List Portal, you must set up your environment.
 
-## Step 1 - Copying the deployment folder to the web server
+## Step 1 - Copy the deployment folder to the web server
 You must download the deployment folder (**EMIEWebPortal/**), which includes all of the source code for the website, from the [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal) site to your web server.
 
 **To download the source code**
