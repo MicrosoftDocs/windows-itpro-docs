@@ -222,3 +222,10 @@ Register the EMIEScheduler tool and service for production site list changes.
    You'll be asked for your user name and password for the service.
 
 4. Open the **Run** command, type `Services.msc`, and then start the EMIEScheduler service.
+
+## Related topics
+- [Enterprise Mode Site List Portal source code](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)
+
+- [Enterprise Mode and the Enterprise Mode Site List](what-is-enterprise-mode.md)
+
+- [Use the Enterprise Mode Site List Manager tool or page](use-the-enterprise-mode-site-list-manager.md) 
