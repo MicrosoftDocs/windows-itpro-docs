@@ -97,7 +97,7 @@ The new taskbar layout for upgrades to Windows 10, version 1607 or later, will a
 * If the user didn't pin the app and the app is in the updated layout file, the app will be pinned to the right.
 * New apps specified in updated layout file are pinned to right of user's pinned apps.
   
-[Learn how to onfigure Windows 10 taskbar](configure-windows-10-taskbar.md).
+[Learn how to configure Windows 10 taskbar](configure-windows-10-taskbar.md).
 
 ## Related topics
 

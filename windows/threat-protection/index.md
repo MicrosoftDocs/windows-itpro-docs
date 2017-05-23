@@ -8,15 +8,6 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-<font size=1>
-<table border="0">
-  <tr>
-    <td><img src="images/security-update.png" alt="Icon showing a security alert"> </td>
-    <td>A wide-spread ransomware attack, known as "WannaCrypt," targets Windows systems that do not yet have the latest updates. Given the severity of this threat, immediately update your Windows systems. [Learn more](https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/).</td>
-  </tr>
-</table>
-</font>
-
 # Threat Protection
 
 Learn more about how to help protect against threats in Windows 10 and Windows 10 Mobile.
