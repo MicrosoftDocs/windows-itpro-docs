@@ -37,5 +37,5 @@ The Requester tests the changes in the production environment and then goes back
 
 3. The Requester clicks **Roll back** to roll back the changes in the production environment.
 
-    After the Requester rolls back the changes, the request is automatically handled in the production environment site list.
+    After the Requester rolls back the changes, the request is automatically handled in the production and pre-production environment site lists.
 

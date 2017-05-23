@@ -129,7 +129,7 @@ Create a SQL Server database and run our custom query to create the Enterprise M
 
 5. Leave all default values for the database files, and then click **OK**.
 
-6. Open the **DatabaseScripts/Create DB Tables/1_CreateEMIETables.sql** query file.
+6. Open the **DatabaseScripts/Create DB Tables/1_CreateEMIETables.sql** query file, located in the deployment directory.
 
 7. Replace the database name placeholder with the database name you created earlier. For example, _EMIEDatabase_.
 
@@ -154,7 +154,7 @@ Map your ApplicationPoolIdentity to your database, adding the db_owner role.
 
     - **Local SQL Server instance.** If you have a local SQL Server instance, where IIS and SQL Server are on the same server, type the name of your Application Pool. For example, _IIS AppPool\EMIEWebAppPool_.
 
-    - **Remote SQL Server instance.** If you have a remote SQL Server instance, where IIS and SQL Server are on the same server, type `Domain\ServerName$`. <!-- is this literal or placeholder text? -->
+    - **Remote SQL Server instance.** If you have a remote SQL Server instance, where IIS and SQL Server are on different servers, type `Domain\ServerName$`.
 
         > [!IMPORTANT]
         > Don't click **Search** in the **Login name** box. Login name searches will resolve to a ServerName\AppPool Name account and SQL Server Management Studio won't be able to resolve the account's virtual Security ID (SID).

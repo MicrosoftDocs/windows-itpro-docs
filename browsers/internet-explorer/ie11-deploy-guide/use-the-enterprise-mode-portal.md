@@ -44,13 +44,13 @@ Admins can assign roles to employees for the Enterprise Mode Site List Portal, a
 |Role assignment |Available actions |
 |----------------|------------------|
 |Requester |<ul><li>Create a change request</li><br><br><li>Validate changes in the pre-production environment</li><br><br><li>Rollback pre-production and production changes in case of failure</li><br><br><li>Send approval requests</li><br><br><li>View own requests</li><br><br><li>Sign off and close own requests</li></ul> |
-|Approver<br><br>(includes the App Manager and Group Head roles) |<ul><li>Approve requests</li><br><br><li>Validate changes in the pre-production environment</li><br><br><li>Rollback pre-production and production changes in case of failure</li><br><br><li>Send approval requests</li><br><br><li>View own requests</li><br><br><li>Sign off and close own requests</li></ul> |
-|Administrator |<ul><li>Add employees to the portal</li><br><br><li>Assign employee roles</li><br><br><li>Approve registrations to the portal</li><br><br><li>Configure portal settings (for example, determine the freeze schedule, determine the pre-production and production XML paths, and determine the attachment upload location)</li><br><br><li>Use the standalone Enterprise Mode Site List Manager page</li><br><br><li>View reports</li><br><br><li>Approve requests</li><br><br><li>Validate changes in the pre-production environment</li><br><br><li>Rollback pre-production and production changes in case of failure</li><br><br><li>Send requests for approval</li><br><br><li>View requests</li><br><br><li>Sign off and close requests</li></ul> |
+|Approver<br><br>(includes the App Manager and Group Head roles) |<ul><li>All of the Requester actions, plus:</li><br><br><li>Approve requests</li></ul> |
+|Administrator |<ul><li>All of the Requester and Approver actions, plus:</li><br><br><li>Add employees to the portal</li><br><br><li>Assign employee roles</li><br><br><li>Approve registrations to the portal</li><br><br><li>Configure portal settings (for example, determine the freeze schedule, determine the pre-production and production XML paths, and determine the attachment upload location)</li><br><br><li>Use the standalone Enterprise Mode Site List Manager page</li><br><br><li>View reports</li></ul> |
 
 ## Enterprise Mode Site List Portal workflow by employee role
 The following workflow describes how to use the Enterprise Mode Site List Portal.
 
-1. [The Requester submits a change request for an app](create-change-request-enterprise-mode-portal.md)<!--Should Step 1 be to view apps to see if they're on the production list?-->
+1. [The Requester submits a change request for an app](create-change-request-enterprise-mode-portal.md)
 
 2. [The Requester tests the change request info, verifying its accuracy](verify-changes-preprod-enterprise-mode-portal.md)
 
@@ -65,6 +65,8 @@ The following workflow describes how to use the Enterprise Mode Site List Portal
 - [Set up the Enterprise Mode Site List Portal](set-up-enterprise-mode-portal.md)
 
 - [Workflow-based processes for employees using the Enterprise Mode Site List Portal](workflow-processes-enterprise-mode-portal.md)
+
+- [How to use the Enterprise Mode Site List Manager tool or page](use-the-enterprise-mode-site-list-manager.md) 
 
 - [Enterprise Mode Site List Portal source code](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal)
 
