@@ -222,9 +222,7 @@ The Classroom application is retired, but you will need to assign the Classroom 
 
 7. In the **Sync options** screen:
   1. Select the domain for the schools/sections. If you have more than one domain, make sure you select the domain that corresponds to the profile you're creating.
-  2. In the **Select school and section properties** section, select the properties you want to sync. If you select additional properties, make sure you have these properties and values added in the CSV files. For the walkthrough, we're not changing the default values. These are:
-    - **School properties:** SIS ID, Name
-    - **Section properties:** SIS ID, School SIS ID, Section Name
+  2. In the **Select school and section properties** section, select the properties you want to sync. If you select additional properties, make sure you have these properties and values added in the CSV files. For the walkthrough, we're not changing the default values.
   3. In the **Select new or existing users** section, you can select either **New users** or **Existing users** based on the scenaro that applies to you. For this walkthrough, select **New users**.
   <!--
     - Choose **New users** if this is a brand new tenant and this is the first time that you're adding users.
