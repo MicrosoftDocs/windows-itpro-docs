@@ -1,6 +1,6 @@
 ---
 title: Investigate Windows Defender Advanced Threat Protection alerts
-description: Use the investigation options to get details on which alerts are affecting your network, what they mean, and how to resolve them.
+description: Use the investigation options to get details on alerts are affecting your network, what they mean, and how to resolve them.
 keywords: investigate, investigation, machines, machine, endpoints, endpoint, alerts queue, dashboard, IP address, file, submit, submissions, deep analysis, timeline, search, domain, URL, IP
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -15,17 +15,11 @@ localizationpriority: high
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-You can click an alert in any of the [alert queues](alerts-queue-windows-defender-advanced-threat-protection.md) to begin an investigation. Selecting an alert brings up the **Alert management pane**, while clicking an alert brings you the alert details view.
+Use the investigation options to get details on alerts that are affecting your network, what they mean, and how to resolve them.
 
-![Image of the alert page](images/atp-alert-details.png)
-
-The alert details view allows you to manage an alert and see alert metadata, see the alert context to see the where, who, and when context of the alert, and the status of the alert in the alerts queue. You'll also see a description and a set of recommended actions which you can expand.
+The alert details view provides various tiles to  allows you to manage an alert and see alert metadata. There's also an alert context tile where you'll see the where, who, and when context of the alert. As with other pages, you can click on the icon beside the name or user account to bring up the machine or user details pane. The alert details view also has a status tile that shows the status of the alert in the queue. You'll also see a description and a set of recommended actions which you can expand.
 
 For more information about managing alerts, see [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md).
 
@@ -46,20 +40,19 @@ Some actor profiles include a link to download a more comprehensive threat intel
 The detailed alert profile helps you understand who the attackers are, who they target, what techniques, tools, and procedures (TTPs) they use, which geolocations they are active in, and finally, what recommended actions you may take. In many cases, you can download a more detailed Threat Intelligence report about this attacker or campaign for offline reading.
 
 ## Alert process tree
-The **Alert process tree** takes alert triage and investigation to the next level, displaying the alert and related evidence and other events that occurred within the same execution context and time. This rich triage context of the alert and surrounding events is available on the alert page.
+The **Alert process tree** takes alert triage and investigation to the next level, displaying the alert and related evidence, together with other events that occurred within the same execution context and time. This rich triage context of the alert and surrounding events is available on the alert page.
 
 ![Image of the alert process tree](images/atp-alert-process-tree.png)
 
 The **Alert process tree** expands to display the execution path of the alert, its evidence, and related events that occurred in the minutes - before and after - the alert.
 
-The alert and related events or evidence have circles with thunderbolt icons inside them. It presents nodes for files that were parsed from the command line arguments of common system tools.
+The alert and related events or evidence have circles with thunderbolt icons inside them.
 
-[TOMER - PLEASE REVIEW IF MY INTERPRETATION IS CORRECT - THANK YOU]
 
 >[!NOTE]
 >The alert process tree might not be available in some alerts.
 
-Clicking in the circle immediately to the left of the indicator displays the **Alert details** pane.
+Clicking in the circle immediately to the left of the indicator displays its details.
 
 ![Image of the alert details pane](images/atp-alert-mgt-pane.png)
 
@@ -71,9 +64,7 @@ The **Incident Graph**  provides a visual representation of the organizational f
 
 ![Image of the Incident graph](images/atp-incident-graph.png)
 
-The **Incident Graph**  previously supported expansion by File and Process, and now supports expansion by additional criteria: known processes and Destination IP Address.
-
-The Windows Defender ATP service keeps track of "known processes". Alerts related to known processes mostly include specific command lines, that combined are the basis for the alert. The **Incident Graph** supports expanding known processes with their command line to display other machines where the known process and the same command line were observed.
+The **Incident Graph** supports expansion by File, Process, command line, or Destination IP Address, as appropriate.
 
 The **Incident Graph** expansion by destination IP Address, shows the organizational footprint of communications with this IP Address without having to change context by navigating to the IP Address page.
 
