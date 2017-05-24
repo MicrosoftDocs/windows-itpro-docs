@@ -51,7 +51,7 @@ After you set up your email credentials, you'll be able to add or edit your Grou
     
     - **Group head email.** Type the email address for the primary contact for the group.
 
-    - **Group head name.** This box autofills based on the email address.
+    - **Group head name.** This box automatically fills, based on the email address.
 
     - **Active.** Click the check box to make the group active in the system. If you want to keep the group in the system, but you want to prevent access, clear this check box.
 
