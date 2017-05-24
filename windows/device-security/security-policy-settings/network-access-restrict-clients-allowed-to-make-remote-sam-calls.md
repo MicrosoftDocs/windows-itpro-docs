@@ -65,7 +65,7 @@ This policy setting controls a string that will contain the SDDL of the security
 
 HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\RestrictRemoteSam
 
-On comnputers that run earlier versions of Windows, you need to edit the registry setting directly or use Group Policy Preferences.  
+On computers that run earlier versions of Windows, you need to edit the registry setting directly or use Group Policy Preferences.  
 
 > [!NOTE] 
 This policy is implemented similarly to other Network access policies in that there is a single policy element at the registry path listed. There is no notion of a local policy versus an enterprise policy; there is just one policy setting and whichever writes last wins. For example, suppose a local administrator configures this setting as part of a local policy using the Local Security Policy snap-in (Secpol.msc), which edits that same registry path. If an enterprise administrator configures this setting as part of an enterprise GPO, that enterprise GPO will overwrite the same registry path. 
