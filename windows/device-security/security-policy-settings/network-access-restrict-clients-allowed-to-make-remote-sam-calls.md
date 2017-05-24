@@ -107,7 +107,7 @@ Audit only mode configures the SAM interface to do the access check against the 
 There are corresponding events that indicate when remote calls to the SAM are restricted, what accounts attempted to read from the SAM database, and more. The following workflow is recommended to identify applications that may be affected by restricting remote calls to SAM:
 1.	Dump event logs to a common share. 
 2.	Parse them with the [Events 16962 - 16969 Reader](https://gallery.technet.microsoft.com/Events-16962-16969-Reader-2eae5f1d) script. 
-3.	Review Event IDs 16962 to 16969, as listed in the following table, in the System log with event source Directory-Service-SAM. <br>
+3.	Review Event IDs 16962 to 16969, as listed in the following table, in the System log with event source Directory-Service-SAM.
 4.	Identify which security contexts are enumerating users or groups in the SAM database. 
 5.	Prioritize the callers, determine if they should be allowed or not, then include the allowed callers in the SDDL string.
 
