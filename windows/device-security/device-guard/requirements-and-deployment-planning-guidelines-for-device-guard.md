@@ -106,7 +106,7 @@ Typically, deployment of Device Guard happens best in phases, rather than being 
 
 ## Device Guard deployment in virtual machines
 
-Device Guard can protect a Hyper-V virtual machine, just as it would a physical machine. The enablement steps are the same from within the virtual machine.
+Device Guard can protect a Hyper-V virtual machine, just as it would a physical machine. The steps to enable Device Guard are the same from within the virtual machine.
 
 Device Guard protects against malware running in the guest virtual machine. It does not provide additional protection from the host administrator. From the host, you can disable Device Guard for a virtual machine:
 
@@ -116,6 +116,10 @@ Device Guard protects against malware running in the guest virtual machine. It d
 ### Requirements for running Device Guard in Hyper-V virtual machines 
  -   The Hyper-V host must run at least Windows Server 2016 or Windows 10 version 1607.
  -   The Hyper-V virtual machine must be Generation 2, and running at least Windows Server 2016 or Windows 10. 
+ -   Device Guard and [nested virtualization](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization) cannot be enabled at the same time. 
+ -   Virtual Fibre Channel adapters are not compatible with Device Guard. Before attaching a virtual Fibre Channel Adapter to a virtual machine, you must first opt out of virtualization-based security using Set-VMSecurity.
+ -   The AllowFullSCSICommandSet option for pass-through disks is not compatible with Device Guard. Before configuring a pass-through disk with AllowFullSCSICommandSet, you must first opt out of virtualization-based security using Set-VMSecurity.
+
 
 ## Reviewing your applications: application signing and catalog files 
 

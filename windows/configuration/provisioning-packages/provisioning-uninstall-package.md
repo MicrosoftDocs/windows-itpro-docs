@@ -4,7 +4,7 @@ description: This topic lists the settings that are reverted when you uninstall 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: high
 ---
 

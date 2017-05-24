@@ -18,7 +18,7 @@ We've tried to make editing an existing, public file as simple as possible.
 
 **To edit a topic**
 
-1.	Go to the page on TechNet that you want to update, and then click **Edit**.
+1.	Go to the page on docs.microsoft.com that you want to update, and then click **Edit**.
 
     ![GitHub Web, showing the Edit link](images/contribute-link.png)
 
@@ -62,14 +62,23 @@ We've tried to make editing an existing, public file as simple as possible.
     The pull request is sent to the writer of the topic and your edits are reviewed. If your request is accepted, updates are published to one of the following places:
 
     - [Windows 10](https://docs.microsoft.com/windows/windows-10)
-    - [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy)    
+    
+    - [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy)
+    
     - [Surface](https://docs.microsoft.com/surface)
+    
     - [Surface Hub](https://docs.microsoft.com/surface-hub)
+    
     - [HoloLens](https://docs.microsoft.com/hololens)
+    
     - [Microsoft Store](https://docs.microsoft.com/microsoft-store)
+    
     - [Windows 10 for Education](https://docs.microsoft.com/education/windows)
+    
     - [Windows 10 for SMB](https://docs.microsoft.com/windows/smb)
+    
     - [Internet Explorer 11](https://docs.microsoft.com/internet-explorer)
+    
     - [Microsoft Desktop Optimization Pack](https://docs.microsoft.com/microsoft-desktop-optimization-pack)
 
 

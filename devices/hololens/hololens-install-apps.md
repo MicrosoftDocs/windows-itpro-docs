@@ -1,30 +1,30 @@
 ---
 title: Install apps on HoloLens (HoloLens)
-description: The recommended way to install apps on HoloLens is to use Windows Store for Business.
+description: The recommended way to install apps on HoloLens is to use Microsoft Store for Business.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: hololens, devices
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: medium
 ---
 
 # Install apps on HoloLens
 
-The recommended way to install Universal Windows Platform (UWP) apps on HoloLens is to use Windows Store for Business. You can make your own [line-of-business application](https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps) available through Windows Store for Business.
+The recommended way to install Universal Windows Platform (UWP) apps on HoloLens is to use Microsoft Store for Business. You can make your own [line-of-business application](https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps) available through Microsoft Store for Business.
 
 You can also deploy apps using your mobile device management (MDM) provider or use the Windows Device Portal to install apps, if you enable **Developer Mode** on the HoloLens device.
 
 >[!IMPORTANT]
     >When you set up HoloLens to use the Device Portal, you must enable **Developer Mode** on the device.**Developer Mode** on a device that has been upgraded to Windows Holographic for Business enables side-loading of apps, which risks the installation of apps that have not been certified by the Microsoft Store. Administrators can block the ability to enable **Developer Mode** using the **ApplicationManagement/AllowDeveloper Unlock** setting in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). [Learn more about Developer Mode.](https://msdn.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
 
-## Use Windows Store for Business to deploy apps to HoloLens
+## Use Microsoft Store for Business to deploy apps to HoloLens
 
-Windows Store for Business is a private Windows Store for your enterprise. People in your organization can open the Store app and select your private Store to install apps that you have made available to them. 
+Microsoft Store for Business is a private Microsoft Store for your enterprise. People in your organization can open the Store app and select your private Store to install apps that you have made available to them. 
 
-![How Windows Store for Business appears in Store app](images/wsfb-private.png)
+![How Microsoft Store for Business appears in Store app](images/wsfb-private.png)
 
-In your Windows Store for Business dashboard, you can also download apps to distribute to devices that aren't connected to the Internet, plus add line-of-business (LOB) apps for distribution. 
+In your Microsoft Store for Business dashboard, you can also download apps to distribute to devices that aren't connected to the Internet, plus add line-of-business (LOB) apps for distribution. 
 
 ### Requirements
 
@@ -35,17 +35,17 @@ In your Windows Store for Business dashboard, you can also download apps to dist
      
 - End users need Azure AD accounts when they access Store for Business content from Windows-based devices.
 
-### Windows Store for Business process
+### Microsoft Store for Business process
 
-1. [Sign up for Windows Store for Business.](https://technet.microsoft.com/itpro/windows/manage/sign-up-windows-store-for-business)
+1. [Sign up for Microsoft Store for Business.](https://technet.microsoft.com/itpro/windows/manage/sign-up-windows-store-for-business)
 2. [Assign roles and permissions for managing your Store for Business.](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business)
-3. (Optional) [Configure Windows Store for Business to work with your MDM provider.](https://technet.microsoft.com/itpro/windows/manage/configure-mdm-provider-windows-store-for-business)
+3. (Optional) [Configure Microsoft Store for Business to work with your MDM provider.](https://technet.microsoft.com/itpro/windows/manage/configure-mdm-provider-windows-store-for-business)
 3. [Get apps for your Store for Business.](https://technet.microsoft.com/itpro/windows/manage/acquire-apps-windows-store-for-business)
 4. [Distribute apps to your employees.](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-to-your-employees-windows-store-for-business)
 
-### Install apps on HoloLens from Windows Store for Business
+### Install apps on HoloLens from Microsoft Store for Business
 
-The method that you use to install an app from your Windows Store for Business on HoloLens depends on the the distribution method that you choose.
+The method that you use to install an app from your Microsoft Store for Business on HoloLens depends on the the distribution method that you choose.
 
 | Distribution method | To install on HoloLens|
 | --- | --- |

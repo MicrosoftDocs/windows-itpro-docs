@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: high
 ---
 
@@ -36,12 +36,12 @@ Many of the lockdown features available in Windows Embedded 8.1 Industry have be
 <tr class="odd">
 <td align="left"><p>[Hibernate Once/Resume Many (HORM)](https://go.microsoft.com/fwlink/p/?LinkId=626758): Quick boot to device</p></td>
 <td align="left">N/A</td>
-<td align="left"><p>HORM is supported in Windows 10, version 1607. </p></td>
+<td align="left"><p>HORM is supported in Windows 10, version 1607 and later. </p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[Unified Write Filter](https://go.microsoft.com/fwlink/p/?LinkId=626757): protect a device's physical storage media</p></td>
 <td align="left">[Unified Write Filter](https://msdn.microsoft.com/en-us/library/windows/hardware/mt572001.aspx)</td>
-<td align="left"><p>The Unified Write Filter is continued in Windows 10, with the exception of HORM which has been deprecated.</p></td>
+<td align="left"><p>The Unified Write Filter is continued in Windows 10.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[Keyboard Filter]( https://go.microsoft.com/fwlink/p/?LinkId=626761): block hotkeys and other key combinations</p></td>

@@ -28,7 +28,7 @@ You can use a dedicated command-line tool to perform various functions in Window
 
 This utility can be useful when you want to automate the use of Windows Defender Antivirus. 
 
-The utility is available in _%Program Files%\Windows Defender\MpCmdRun.exe_ and must be run from a command prompt.
+The utility is available in _%ProgramFiles%\Windows Defender\MpCmdRun.exe_ and must be run from a command prompt.
 
 > [!NOTE]
 > You may need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
@@ -51,6 +51,7 @@ Command | Description
 \-ListAllDynamicSignature [-Path] | Lists the loaded dynamic signatures
 \-RemoveDynamicSignature [-SignatureSetID] | Removes a dynamic signature
 \-ValidateMapsConnection | Used to validate connection to the [cloud-delivered protection service](configure-network-connections-windows-defender-antivirus.md)
+\-SignatureUpdate [-UNC [-Path <path>]] | Checks for new definition updates
 
 
 

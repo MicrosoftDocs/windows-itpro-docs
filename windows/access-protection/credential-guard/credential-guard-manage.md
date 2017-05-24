@@ -97,7 +97,7 @@ If you enable Credential Guard by using Group Policy, the steps to enable Window
 You can also enable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v3.0.ps1 -Enable -AutoReboot
+DG_Readiness_Tool_v3.2.ps1 -Enable -AutoReboot
 ```
 
 ### Credential Guard deployment in virtual machines
@@ -126,7 +126,7 @@ You can view System Information to check that Credential Guard is running on a P
 You can also check that Credential Guard is running by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v3.0.ps1 -Ready
+DG_Readiness_Tool_v3.2.ps1 -Ready
 ```
 
 > [!NOTE]
@@ -143,8 +143,8 @@ For client machines that are running Windows 10 1703, LSAIso is running whenever
     -   **Event ID 15** Credential Guard (LsaIso.exe) is configured but the secure kernel is not running; continuing without Credential Guard.
     -   **Event ID 16** Credential Guard (LsaIso.exe) failed to launch: \[error code\]
     -   **Event ID 17** Error reading Credential Guard (LsaIso.exe) UEFI configuration: \[error code\]
-    You can also verify that TPM is being used for key protection by checking the following event in the **Microsoft** -&gt; **Windows** -&gt; **Kernel-Boot** event source. If you are running with a TPM, the TPM PCR mask value will be something other than 0.
-    -   **Event ID 51** VSM Master Encryption Key Provisioning. Using cached copy status: 0x0. Unsealing cached copy status: 0x1. New key generation status: 0x1. Sealing status: 0x1. TPM PCR mask: 0x0.
+    You can also verify that TPM is being used for key protection by checking Event ID 51 in the **Microsoft** -&gt; **Windows** -&gt; **Kernel-Boot** event source. If you are running with a TPM, the TPM PCR mask value will be something other than 0.
+        -   **Event ID 51** VSM Master Encryption Key Provisioning. Using cached copy status: 0x0. Unsealing cached copy status: 0x1. New key generation status: 0x1. Sealing status: 0x1. TPM PCR mask: 0x0.
       
 ## Disable Credential Guard
 
@@ -194,7 +194,7 @@ For more info on virtualization-based security and Device Guard, see [Device Gua
 You can also disable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v3.0.ps1 -Disable -AutoReboot
+DG_Readiness_Tool_v3.2.ps1 -Disable -AutoReboot
 ```
 
 #### Disable Credential Guard for a virtual machine

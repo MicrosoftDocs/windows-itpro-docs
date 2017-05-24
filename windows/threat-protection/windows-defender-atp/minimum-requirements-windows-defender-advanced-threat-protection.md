@@ -29,12 +29,21 @@ There are some minimum requirements for onboarding your network and endpoints.
 You must be on Windows 10, version 1607 at a minimum.
 For more information, see [Windows 10 Enterprise edition](https://www.microsoft.com/en-us/WindowsForBusiness/buy).
 
+### Licensing requirements
+Windows Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
+
+-	Windows 10 Enterprise E5
+-	Windows 10 Education E5
+- Secure Productive Enterprise E5 (SPE E5) which includes Windows 10 Enterprise E5
+
+For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
+
 ### Network and data storage and configuration requirements
 When you run the onboarding wizard for the first time, you must choose where your Windows Defender Advanced Threat Protection-related information is stored: either in a European or United States datacenter.
 
-> **Notes**&nbsp;&nbsp;
--   You cannot change your data storage location after the first-time setup.
--   Review the [Windows Defender ATP data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md) for more information on where and how Microsoft stores your data.
+> [!NOTE]
+> -   You cannot change your data storage location after the first-time setup.
+> -   Review the [Windows Defender ATP data storage and privacy](data-storage-privacy-windows-defender-advanced-threat-protection.md) for more information on where and how Microsoft stores your data.
 
 ### Endpoint hardware and software requirements
 
@@ -59,7 +68,7 @@ The Windows Defender ATP sensor can utilize up to 5MB daily of bandwidth  to com
 
 For more information on additional proxy configuration settings see, [Configure Windows Defender ATP endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md) .
 
-Before you configure endpoints, the telemetry and diagnostics service must be enabled. The service is enabled by default in Windows 10, but if it has been disabled you can turn it on by following the instructions in the [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) section.
+Before you configure endpoints, the telemetry and diagnostics service must be enabled. The service is enabled by default in Windows 10.
 
 ### Telemetry and diagnostics settings
 You must ensure that the telemetry and diagnostics service is enabled on all the endpoints in your organization.

@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: high
 ---
 
