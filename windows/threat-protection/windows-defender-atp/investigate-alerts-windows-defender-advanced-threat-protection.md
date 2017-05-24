@@ -29,13 +29,13 @@ You can click on the machine link from the alert view to navigate to the machine
 
 Alerts attributed to an adversary or actor display a colored tile with the actor's name.
 
-![A detailed view of an alert when clicked](images/alert-details.png)
+![A detailed view of an alert when clicked](images/atp-actor-alert.png)
 
 Click on the actor's name to see the threat intelligence profile of the actor, including a brief overview of the actor, their interests or targets, their tools, tactics, and processes (TTPs) and areas where they've been observed worldwide. You will also see a set of recommended actions to take.
 
 Some actor profiles include a link to download a more comprehensive threat intelligence report.
 
-![Image of detailed actor profile](images/atp-actor-report.png)
+![Image of detailed actor profile](images/atp-detailed-actor.png)
 
 The detailed alert profile helps you understand who the attackers are, who they target, what techniques, tools, and procedures (TTPs) they use, which geolocations they are active in, and finally, what recommended actions you may take. In many cases, you can download a more detailed Threat Intelligence report about this attacker or campaign for offline reading.
 
