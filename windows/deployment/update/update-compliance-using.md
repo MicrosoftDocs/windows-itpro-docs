@@ -143,7 +143,7 @@ Devices are evaluated by OS Version (e.g., 1607) and the count of how many are C
 <a id="wdav-assessment"></a>
 ## Windows Defender Antivirus Assessment
 
-If you're using [Windows Defender Antivirus in Windows 10](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) to protect devices in your organization, you can use this section to review the overall status of key protection features, including the number of devices that have [always-on real-time protection](/windows/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md) and [cloud-delivered protection](/windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md) enabled.
+If you're using [Windows Defender Antivirus in Windows 10](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) to protect devices in your organization, you can use this section to review the overall status of key protection features, including the number of devices that have [always-on real-time protection](/windows/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) and [cloud-delivered protection](/windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus) enabled.
 
 There are two blades in the Windows Defender AV Assessment section:
 
@@ -160,7 +160,7 @@ The **Protection Status** blade shows three key measurements:
 
 ![Windows Defender Antivirus protection status in Update Compliance](images/update-compliance-wdav-prot-status.png)
 
-See the [Manage Windows Defender AV updates and apply baselines](/windows/threat-protection/windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md) topic for an overview on how updates work, and further information on applying updates.
+See the [Manage Windows Defender AV updates and apply baselines](/windows/threat-protection/windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus) topic for an overview on how updates work, and further information on applying updates.
 
 The **Threats Status** blade shows the following measurements:
 
@@ -175,7 +175,7 @@ Devices can be in multiple states at once, as one device may have multiple threa
 > [!IMPORTANT]
 > The data reported in Update Compliance can be delayed by up to 24 hours. Devices that are listed as requiring further action may continue to have that status even if the further action has been completed and remediation was successful.
 
-See the [Customize, initiate, and review the results of Windows Defender AV scans and remediation](/windows/threat-protection/windows-defender-antivirus/customize-run-review-remediate-scans-windows-defender-antivirus.md) topic for more information on how to perform scans and other manual remediation tasks.
+See the [Customize, initiate, and review the results of Windows Defender AV scans and remediation](/windows/threat-protection/windows-defender-antivirus/customize-run-review-remediate-scans-windows-defender-antivirus) topic for more information on how to perform scans and other manual remediation tasks.
 
 As with other blades in Update Compliance, clicking on a specific measurement or item will open the associated query that you can use to investigate individual devices and issues, described below.
 
