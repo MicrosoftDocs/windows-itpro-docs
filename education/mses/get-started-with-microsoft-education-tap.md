@@ -90,7 +90,6 @@ Schools can use Office 365 to save time and be more productive. Built with power
 
 As part of setting up a basic cloud infrastructure, you don't need to complete the rest of the Office 365 for Education setup so we will skip the rest of setup for now and start importing school data. You can pick up where you left off with Office 365 for Education setup once you've completed the rest of the steps in the walkthrough. See [6.3 Complete Office 365 for Education setup](#63-complete-office-365-education-setup) for info.
 
-
 ## 2. Use School Data Sync to import student data
 School Data Sync (SDS) helps you import Student Information System (SIS) data into Office 365. It helps automate the process for importing and integrating SIS data that you can use with Office 365 and apps like Classroom and OneNote Class Notebooks. To learn more about School Data Sync (SDS) and the deployment methods available to you, see <a href="https://aka.ms/sdsoverview" target="_blank">Overview of School Data Sync and Classroom</a>. We recommend using comma separated value (CSV) files with SDS to synchronize SIS users with Office 365. However, SDS supports many other deployment options such as PowerSchool Sync, Clever Sync, and OneRoster CSV files. See the *For IT admins* section in [Get more info](#get-more-info) to learn more about these other deployment options.
 
@@ -120,9 +119,24 @@ In this section of the walkthrough, we created a new education tenant and we nee
 
 To learn more about the CSV files that are required and the info you need to include in each file, see <a href="https://aka.ms/sdscsvattributes" target="_blank">CSV files for School Data Sync</a>. If you run into any issues, see <a href="https://aka.ms/sdserrors" target="_blank">School Data Sync errors and troubleshooting</a>.
 
+**<a name="assignclassroom"></a>Assign Classroom license**
+
+The Classroom application is retired, but you will need to assign the Classroom Preview license to global admin accounts that will be used to administer SDS. The single license allows global admins to access both Classroom Preview and School Data Sync.
+
+1. In the <a href="https://portal.office.com/adminportal" target="_blank">Office 365 admin center</a>, select **Users > Active users**.
+2. Select the checkbox for your global admin account.
+3. In the account details window, under **Product licenses**, click **Edit**.
+4. In the **Product licenses** page, turn on **Microsoft Classroom** and then click **Save**.
+5. Confirm that you can access SDS. To do this:
+  - Navigate to <a href="http://sds.microsoft.com" target="_blank">https://sds.microsoft.com</a> and click **Sign in**. When prompted, enter your global admin username and password to access the SDS portal. Or,
+  - From the Office 365 admin portal, go to **Admin centers** and click on **School Data Sync** to go to the SDS portal.
+
+  > [!NOTE]
+  > Only global admins can access SDS.
+
 **<a name="usesdstoimportdata"></a>Use SDS to import student data**
 
-1. Go to the <a href="http://sds.microsoft.com" target="_blank">Microsoft School Data Sync site</a>.
+1. If you haven't done so already, go to the SDS portal, <a href="http://sds.microsoft.com" target="_blank">https://sds.microsoft.com</a>.
 2. Click **Sign in**. You will see the **Settings** option for **Manage School Data Sync**.
 
   **Figure 5** - Settings for managing SDS
@@ -146,7 +160,7 @@ To learn more about the CSV files that are required and the info you need to inc
   ![New SDS profile setup wizard](images/sds_updated_addnewprofile.png)
 
 6. For the new profile, in the **Before you begin...** screen:
-  1. Enter a name for your profile, such as *ContosoElementarySchool*.
+  1. Enter a name for your profile, such as *Contoso_Profile_1*.
   2. Select a sync method for your profile. For this walkthrough, select **CSV Files**.
 
     Note that for any sync method that you choose, you can click the **View steps** link to get more information about the steps you need to take depending on the sync method of your choosing.
@@ -154,11 +168,8 @@ To learn more about the CSV files that are required and the info you need to inc
   3. Click **Start**.
 
 7. In the **Sync options** screen:
-  1. Select the domain for the schools/sections. If you have more than one domain, make sure you select the domain that corresponds to the profile you're creating.
-  2. In the **Select school and section properties** section, select the properties you want to sync. If you select additional properties, make sure you have these properties and values added in the CSV files. For the walkthrough, we're not changing the default values. These are:
-    - **School properties:** SIS ID, Name
-    - **Section properties:** SIS ID, School SIS ID, Section Name
-  3. In the **Select new or existing users** section, select either **New users** or **Existing users** based on the scenaro that applies to you.
+  1. In the **Select new or existing users** section, you can select either **New users** or **Existing users** based on the scenaro that applies to you. For this walkthrough, select **New users**.
+  <!--
     - Choose **New users** if this is a brand new tenant and this is the first time that you're adding users.
 
         Choose the **New users** option if you are using an unaltered version of the sample CSV files from [Download sample school data](#downloadcsvsamples) or if you created your own CSV files with new users.
@@ -166,36 +177,45 @@ To learn more about the CSV files that are required and the info you need to inc
     - Choose **Existing users** if you already have a live production tenant, with teachers and students that already have active accounts in Office 365 (cloud only or synced from on-premise Active Directory).
 
         Using the **Existing users** option, SDS will not attempt to create new users. Instead, it uses the identity matching options in the next section of the setup wizard to match the students and teachers in your CSV files to the user accounts that already exist in Azure. All additiional details for the students and teachers contained within the CSV files will be written as extension attributes on top of the already existing user objects. You can find more information about these settings on the main SDS deployment page for CSV-based deployments in <a href="http://aka.ms/sdscsv" target="_blank">How to deploy School Data Sync by using CSV files</a>.
-
-  4. In the **Sync option for Section Group Display Name**, check the box if you want to allow teachers to overwrite the section names.
-  5. In the **License Options** section, check the box to select the option.
-  6. Click **Next**.
+  -->
+  2. In the **Import data** section:
+    1. Click **Upload Files** to bring up the **Select data files to be uploaded** window.
+    2. In the **Select data files to be uploaded** window, click **+ Add Files** and navigate to the directory where you saved the six CSV files required for data import.
+    3. In the File Explorer window, you will see a folder for the sample CSV files for the UK and six sample CSV files for the US. Select the CSV files that match your region/locale, and then click **Open**.
+    4. In the **Select data files to be uploaded** window, confirm that all six CSV files (School.csv, Section.csv, Student.csv, StudentEnrollment.csv, Teacher.csv, and TeacherRoster.csv) are listed and then click **Upload**.
+    4. After all the files are successfully uploaded, click **OK**. 
+  3. Select the domain for the schools/sections. This domain will be used for the Section email addresses created during setup. If you have more than one domain, make sure you select the appropriate domain for the sync profile and subsequent sections being created.
+  4. In the **Select school and section properties** section, ensure the attributes that have been automatically selected for you align to your CSV files. If you select additional properties, or deselect any properties, make sure you have the properties and values contained within the CSV files. For the walkthrough, you don't have to change the default.
+  5. In the **Sync option for Section Group Display Name**, check the box if you want to allow teachers to overwrite the section names. Otherwise, SDS will always reset the display name value for sections to the value contained within the CSV files.
+  6. In the **License Options** section, check the box to allow users being created to receive an Office 365 license.
+  7. Check the **Intune for Education** checkbox to allow users to receive the Intune for Education license and to create the SDS dynamic groups and security groups, which be used within Intune for Education.
+  8. Click **Next**.
 
     **Figure 8** - Sync options for the new profile
 
-    ![Specify sync options for the new SDS profile](images/sds_addnewprofile_syncoptions.png)
+    ![Specify sync options for the new SDS profile](images/sds_profile_syncoptions.png)
 
 8. In the **Teacher options** screen:
-  1. Select the domain for the teachers. SDS uses this to match teachers from your source data to their existing accounts in Office 365/Azure Active Directory. In the walkthrough, the CSV files are our source data.
-  2. In the **Select teacher properties** section, you can add optional teacher properties to sync. For this walkthrough, you don't have to change the default.
+  1. Select the domain for the teachers. SDS appends the selected domain suffix to the teacher's username attribute contained in the CSV file, to build the UserPrincipalName for each user in Office 365/Azure Active Directory during the account creation process. The teacher will log in to Office 365 with the UserPrincipalName once the account is created.
+  2. In the **Select teacher properties** section, make sure the attributes that have been automatically selected for you align to your CSV files. If you select additional properties or deselect any properties, make sure you have the corresponding properties and values contained within the CSV files. For this walkthrough, you don't have to change the default.
   3. In the **Teacher licenses** section, choose the SKU to assign licenses for teachers. For this walkthrough, choose **STANDARDWOFFPACK_FACULTY**.
   4. Click **Next**.
 
     **Figure 9** - Specify options for teacher mapping
 
-    ![Specify options for teacher mapping](images/sds_addnewprofile_teacheroptions.png)
+    ![Specify options for teacher mapping](images/sds_profile_teacheroptions.png)
 
 9. In the **Student options** screen:
-  1. Select the domain for the students. SDS uses this to match students from your source data to their existing accounts in Office 365/Azure Active Directory. In the walkthrough, the CSV files are our source data.
-  2. In the **Select student properties** section, you can add optional student properties to sync. For this walkthrough, you don't have to change the default.
+  1. Select the domain for the students. SDS appends the selected domain suffix to the student's username attribute contained in the CSV file, to build the UserPrincipalName for each user in Office 365/Azure Active Directory during the account creation process. The student will log in to Office 365 with the UserPrincipalName once the account is created.
+  2. In the **Select student properties** section, make sure the attributes that have been automatically selected for you align to your CSV files. If you select additional properties or deselect any properties, make sure you have the corresponding properties and values contained within the CSV files. For this walkthrough, you don't have to change the default.
   3. In the **Student licenses** section, choose the SKU to assign licenses for students. For this walkthrough, choose **STANDARDWOFFPACK_STUDENT**.
   4. Click **Next**.
 
     **Figure 10** - Specify options for student mapping
 
-    ![Specify options for student mapping](images/sds_addnewprofile_studentoptions.png)
+    ![Specify options for student mapping](images/sds_profile_studentoptions.png)
 
-10. In the profile **Review** page, review the summary and confirm that the values matches with the data you entered. Click **Create profile**.
+10. In the profile **Review** page, review the summary and confirm that the options selected are correct. Click **Create profile**.
 
   You will see a notification that your profile is being created.
 
@@ -203,29 +223,22 @@ To learn more about the CSV files that are required and the info you need to inc
 
   **Figure 11** - SDS profile page
 
-  ![SDS profile page](images/sds_profilepage.png)
+  ![SDS profile page](images/sds_profile_profilepage.png)
 
-12. After the profile name at the top, confirm that the status for your profile now says **Ready to sync**.
+12. After the profile is created and finished **Setting up**, confirm that the status for your profile now says **Sync enabled**.
 
-  If the status still indicates that the profile is being set up, try refreshing the page until you see the status change to **Ready to sync**.
+  If the status still indicates that the profile is being set up, try refreshing the page until you see the status change to **Sync enabled**.
 
-  **Figure 12** - New profile is ready to sync
+  **Figure 12** - New profile is sync enabled
 
-  ![Confirm that the new profile is ready](images/sds_profile_readytosync.png)
+  ![Confirm that the new profile is sync enabled](images/sds_profile_syncenabled.png)
 
-11. On the profile page, below the profile name and profile status, there are four options: **Upload Files**, **Start Sync**, **Edit**, and **Delete**. Click **Upload Files** and then follow these steps:
-  1. In the **Select data files to be uploaded** window, click **+ Add Files** and navigate to the directory where you saved the six CSV files required for data import.
-  2. In the File Explorer window, you will see a folder for the sample CSV files for the UK and six sample CSV files for the US. Select the CSV files that match your region/locale, and then click **Open**.
-  3. In the **Select data files to be uploaded** window, confirm that all six CSV files (School.csv, Section.csv, Student.csv, StudentEnrollment.csv, Teacher.csv, and TeacherRoster.csv) are listed and then click **Upload**.
-  4. After all the files are successfully uploaded, click **OK**.
-12. On the profile page, click **Start Sync** and then follow these steps:
-  1. In the **Would you like to start sync for *Profile_Name?*** window, click **Start Sync**. *Profile_Name* should match the name you entered for your profile in the **Before you begin...** screen.
-  2. Confirm that sync successfully started for the file and then click **OK**.
+  > [!TIP]
+  > If you get errors during the pre-sync validation process, your profile status will change to **x Error**. To continue, review or resolve any pre-sync validation errors, and then click **Resume Sync** to start the synchronization cycle.
 
-  > [!NOTE]
-  > Sync times, like file download times, can vary widely depending on when you start the sync, how much data you are syncing, the complexity of your data (such as the number of users, schools, and class enrollments), overall system/network load, and other factors. Two people who start a sync at the same time may not have their syncs complete at the same time.
-  >
-  > You can refresh the page to confirm that your profile synced successfully.
+  Sync times, like file download times, can vary widely depending on when you start the sync, how much data you are syncing, the complexity of your data (such as the number of users, schools, and class enrollments), overall system/network load, and other factors. Two people who start a sync at the same time may not have their syncs complete at the same time.
+
+  You can refresh the page to confirm that your profile synced successfully.
 
 That's it for importing sample school data using SDS.
 
