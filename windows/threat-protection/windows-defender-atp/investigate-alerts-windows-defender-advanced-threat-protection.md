@@ -17,9 +17,12 @@ localizationpriority: high
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Use the investigation options to get details on alerts that are affecting your network, what they mean, and how to resolve them.
+Investigate alerts that are affecting your network, what they mean, and how to resolve them. Use the alert details view to see various tiles that provide information about alerts. You can also manage an alert and see alert metadata along with other information that can help you make better decisions on how to approach them.
 
-The alert details view provides various tiles to  allows you to manage an alert and see alert metadata. There's also an alert context tile where you'll see the where, who, and when context of the alert. As with other pages, you can click on the icon beside the name or user account to bring up the machine or user details pane. The alert details view also has a status tile that shows the status of the alert in the queue. You'll also see a description and a set of recommended actions which you can expand.
+![Image of the alert page](images/atp-alert-details.png)
+
+
+The alert context tile shows the where, who, and when context of the alert. As with other pages, you can click on the icon beside the name or user account to bring up the machine or user details pane. The alert details view also has a status tile that shows the status of the alert in the queue. You'll also see a description and a set of recommended actions which you can expand.
 
 For more information about managing alerts, see [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md).
 
