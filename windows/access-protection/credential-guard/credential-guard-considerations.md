@@ -28,9 +28,9 @@ in the Deep Dive into Credential Guard video series.
     -   You cannot restore credentials using the Credential Manager control panel if the credentials were backed up from a PC that has Credential Guard turned on. If you need to back up your credentials, you must do this before you enable Credential Guard. Otherwise, you won't be able to restore those credentials.
     - Credential Guard uses hardware security so some features, such as Windows To Go, are not supported. 
 
-## NTLM and CHAP Considerations
+## Wi-fi and VPN Considerations
+When you enable Credential Guard, you can no longer use NTLM v1 authentication. If you are using WiFi and VPN endpoints that are based on MS-CHAPv2, they are subject to similar attacks as for NTLMv1. For WiFi and VPN connections, Microsoft recommends that organizations move from MSCHAPv2-based connections such as PEAP-MSCHAPv2 and EAP-MSCHAPv2, to certificate-based authentication such as PEAP-TLS or EAP-TLS. 
 
-When you enable Credential Guard, you can no longer use NTLM v1 authentication. If you are using WiFi and VPN endpoints that are based on MS-CHAPv2, they are subject to similar attacks as NTLMv1. We recommend that organizations use certificated-based authentication for WiFi and VPN connections.
 
 ## Kerberos Considerations
 

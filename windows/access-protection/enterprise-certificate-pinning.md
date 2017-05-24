@@ -6,7 +6,7 @@ author: MikeStephens-MS
 description: Enterprise certificate pinning is a Windows feature for remembering, or “pinning” a root, issuing certificate authority, or end entity certificate to a given domain name.  
 manager: alanth
 ms.prod: w10
-ms.technology: security
+ms.technology: windows
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
