@@ -15,6 +15,7 @@ This topic lists new and updated topics in the [Device security](index.md) docum
 |New or changed topic |Description |
 |---------------------|------------|
 | [BitLocker Group Policy settings](bitlocker/bitlocker-group-policy-settings.md) | Changed startup PIN minimun length from 4 to 6. |
+| [Network access: Restrict clients allowed to make remote calls to SAM](network-access-restrict-clients-allowed-to-make-remote-sam-calls.md) | New security policy setting |
 
 ## March 2017
 |New or changed topic |Description |
