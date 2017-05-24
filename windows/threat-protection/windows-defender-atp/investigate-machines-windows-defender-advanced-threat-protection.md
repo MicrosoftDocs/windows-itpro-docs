@@ -15,10 +15,6 @@ localizationpriority: high
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 ## Investigate machines
@@ -55,9 +51,7 @@ You'll also see details such as logon types for each user account, the user grou
 
  For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
 
-The **Alerts related to this machine** section provides a list of alerts that are associated with the machine.
-
-[JOEY: INSERT NEW IMAGE WHEN SCREENSHOT IS AVAILABLE!!]
+The **Alerts related to this machine** section provides a list of alerts that are associated with the machine. You can also manage alerts from this section by clicking the circle icons to the left of the alert (or using Ctrl or Shift + click to select multiple alerts).
 
 This list is a filtered version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows the date when the alert's last activity was detected, a short description of the alert, the user account associated with the alert, the alert's severity, the alert's status in the queue, and who is addressing the alert. You'll also see a list of displayed alerts and you'll be able to quickly know the total number of alerts on the machine.
 
