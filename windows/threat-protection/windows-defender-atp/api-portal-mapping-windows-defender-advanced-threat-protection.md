@@ -60,7 +60,7 @@ Portal label | SIEM field name  | ArcSight field| Example value | Description
 
 
 
-![Image of alert with numbers](images/atp-mapping1.png)
+![Image of alert with numbers](images/atp-siem-mapping1.png)
 
 ![Image of alert details pane with numbers](images/atp-mapping2.png)
 
