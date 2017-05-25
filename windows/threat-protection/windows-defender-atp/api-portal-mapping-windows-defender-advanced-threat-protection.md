@@ -27,42 +27,52 @@ Understand what data fields are exposed as part of the alerts API and how they m
 ##	Alert API fields and portal mapping
 Field numbers match the numbers in the images below.
 
-| Portal label | SIEM field name  | ArcSight field| Example value |Description                                                                                                                                   |
+| Portal label | SIEM field name  | ArcSight field| Example value |Description                                                                                                                     |
 |--------------|---------------------------|---------------------|------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 1            | AlertTitle                | name                | A dll was unexpectedly loaded into a high integrity   process without a UAC prompt |                                                                                                                                               |
-| 2            | Severity                  | deviceSeverity      | Medium                                                                             |                                                                                                                                               |
-| 3            | Category                  | deviceEventCategory | Privilege Escalation                                                               |                                                                                                                                               |
-| 4            | Source                    | sourceServiceName   | WindowsDefenderATP                                                                 | WindowsDefenderAV/WindowsDefenderATP                                                                                                          |
-| 5            | MachineName               | sourceHostName      | liz-bean                                                                           |                                                                                                                                               |
-| 6            | FileName                  | fileName            | Robocopy.exe                                                                       | Available for alerts associated with a file/process                                                                                           |
-| 7            | FilePath                  | filePath            | C:\Windows\System32\Robocopy.exe                                                   | Available for alerts associated with a file/process                                                                                           |
-| 8            | UserDomain                | sourceNtDomain      | contoso                                                                            | The domain of the user context executing the   activity, available for Windows Defender ATP behavioral beased alerts                          |
-| 9            | UserName                  | sourceUserName      | liz-bean                                                                           | The user context executing the activity, available   for Windows Defender ATP behavioral based alerts                                         |
-| 10           | Sha1                      | fileHash            | 5b4b3985339529be3151d331395f667e1d5b7f35                                           | Available for alerts associated with a file/process                                                                                           |
-| 11           | Md5                       | deviceCustomString5 | 55394b85cb5edddff551f6f3faa9d8eb                                                   | Available for Windows Defender AV alerts,                                                                                                     |
-| 12           | Sha256                    | deviceCustomString6 | 9987474deb9f457ece2a9533a08ec173a0986fa3aa6ac355eeba5b622e4a43f5                   | Available for Windows Defender AV alerts                                                                                                      |
-| 13           | ThreatName                | eviceCustomString1  | Trojan:Win32/Skeeyah.A!bit                                                         | Available for Windows Defender AV alerts                                                                                                      |
-| 14           | IpAddress                 | sourceAddress       | 218.90.204.141                                                                     | Availabe for alerts associated to network events.   E.g. 'Communication to a malicious network destination'                                   |
-| 15           | Url                       | requestUrl          | down.esales360.cn                                                                  | Availabe for alerts associated to network events.   E.g. 'Communication to a malicious network destination'                                   |
-| 16           | RemediationIsSuccess      | deviceCustomNumber2 | TRUE                                                                               | Available for Windows Defender AV   alerts, ArcSight value is 1 when TRUE, 0 when FALSE                                                       |
-| 17           | WasExecutingWhileDetected | deviceCustomNumber1 | FALSE                                                                              | Available for Windows Defender AV alerts, ArcSight   value is 1 when TRUE, 0 when FALSE                                                       |
-| 18           | AlertId                   | externalId          | 636210704265059241_673569822                                                       |                                                                                                                                               |
-| 19           | LinkToWDATP               | flexString1         | https://securitycenter.windows.com/alert/636210704265059241_673569822              |                                                                                                                                               |
-| 20           | AlertTime                 | deviceReceiptTime   | 2017-05-07T01:56:59.3191352Z                                                       | The time the activity relevant to the alert occurred                                                                                          |
-| 21           | MachineDomain             | sourceDnsDomain     | contoso.com                                                                        | Domain name not relevant for AAD join machines                                                                                                |
-| 22           | Actor                     | deviceCustomString4 |                                                                                    | Available for alerts related to a known actor group                                                                                           |
-| *            | LogOnUsers                | sourceUserId        | contoso\liz-bean; contoso\jay-hardee                                               | The domain + user of the interactive logon user/s at   the time of the event. Note: for Redstone 1 machines, domain would not be   available. |
-| 21+5         | ComputerDnsName           | No mapping          | liz-bean.contoso.com                                                               | The machine fully qualified domain   name                                                                                                     |
+| 1            | AlertTitle                | name                | A dll was unexpectedly loaded into a high integrity  process without a UAC prompt |   Value available for every alert. |                                                                                                                                         
+| 2            | Severity                  | deviceSeverity      | Medium   | Value available for every alert.  |
+| 3            | Category                  | deviceEventCategory | Privilege Escalation  | Value available for every alert. |                                            
+| 4            | Source                    | sourceServiceName   | WindowsDefenderATP   | Windows Defender Antivirus or Windows Defender ATP. <br> Value available for every alert. |                                                                                                         
+| 5            | MachineName               | sourceHostName      | liz-bean                                                                           | Value available for every alert.  |
+| 6            | FileName                  | fileName            | Robocopy.exe                                                                       | Available for alerts associated with a file or process.           |                                                                                
+| 7            | FilePath                  | filePath            | C:\Windows\System32\Robocopy.exe                                                   | Available for alerts associated with a file or process.       |                                                                                    
+| 8            | UserDomain                | sourceNtDomain      | contoso                                                                            | The domain of the user context running the activity, available for Windows Defender ATP behavioral based alerts.           |               
+| 9            | UserName                  | sourceUserName      | liz-bean                                                                           | The user context running the activity, available for Windows Defender ATP behavioral based alerts.    |                                     
+| 10           | Sha1                      | fileHash            | 5b4b3985339529be3151d331395f667e1d5b7f35      |                                      Available for alerts associated with a file or process.                             |                                                             
+| 11           | Md5                       | deviceCustomString5 | 55394b85cb5edddff551f6f3faa9d8eb                                                 | Available for Windows Defender AV alerts.                                                                                                 |
+| 12           | Sha256                    | deviceCustomString6 | 9987474deb9f457ece2a9533a08ec173a0986fa3aa6ac355eeba5b622e4a43f5                   | Available for Windows Defender AV alerts.                                                                                                      |
+| 13           | ThreatName                | eviceCustomString1  | Trojan:Win32/Skeeyah.A!bit                                                         | Available for Windows Defender AV alerts.                                                                                                      |
+| 14           | IpAddress                 | sourceAddress       | 218.90.204.141                                                                     | Available for alerts associated to network events.   For example, 'Communication to a malicious network destination'                                   |
+| 15           | Url                       | requestUrl          | down.esales360.cn                                                                  | Availabe for alerts associated to network events.   For example, 'Communication to a malicious network destination'.                                   |
+| 16           | RemediationIsSuccess      | deviceCustomNumber2 | TRUE                                                                               | Available for Windows Defender AV   alerts. ArcSight value is 1 when TRUE and 0 when FALSE.                                                       |
+| 17           | WasExecutingWhileDetected | deviceCustomNumber1 | FALSE                                                                              | Available for Windows Defender AV alerts. ArcSight   value is 1 when TRUE and 0 when FALSE.                                                       |
+| 18           | AlertId                   | externalId          | 636210704265059241_673569822                                                       |   Value available for every alert.                                                                                                                                            |
+| 19           | LinkToWDATP               | flexString1         | `https://securitycenter.windows.com/alert/636210704265059241_673569822`             |  Value available for every alert.  |
+| 20           | AlertTime                 | deviceReceiptTime   | 2017-05-07T01:56:59.3191352Z  | The time the activity relevant to the alert occurred. <br> Value available for every alert. |
+| 21           | MachineDomain             | sourceDnsDomain     | contoso.com                                                                        | Domain name not relevant for AAD joined machines. Value available for every alert.                                                                                                |
+| 22           | Actor                     | deviceCustomString4 |                                                                                    | Available for alerts related to a known actor group.                                                                                           |
+| 21       | ComputerDnsName           | No mapping          | liz-bean.contoso.com                                                               | The machine fully qualified domain   name. <br> Value available for every alert.                                                                                                     |
+| *            | LogOnUsers                | sourceUserId        | contoso\liz-bean; contoso\jay-hardee                                               | The domain and user of the interactive logon user/s at   the time of the event. Note: For machines on Windows 10 version 1607, the domain information will not be available. |
+| Internal field | LastProcessedTimeUtc   | No mapping    | 2017-05-07T01:56:58.9936648Z | Time when event arrived at the  backend. This field can be used when setting the request parameter for the range of time that alerts are retrieved. |
+|                | Not part of the schema | deviceVendor  |                              | Static value in the ArcSight mapping -   'Microsoft'.                                                                                                    |
+|                | Not part of the schema | deviceProduct |                              | Static value in the ArcSight mapping - 'Windows   Defender ATP'.                                                                                         |
+|                | Not part of the schema | deviceVersion |                              | Static value in the ArcSight mapping - '2.0', used to   identify the mapping versions.|                                                                    
 
-![Image of actor profile with numbers](images/atp-actor.png)
 
-![Image of alert timeline with numbers](images/atp-alert-timeline-numbered.png)
 
-![Image of new alerts with numbers](images/atp-alert-source.png)
+![Image of alert with numbers](images/atp-mapping1.png)
 
-![Image of machine timeline with numbers](images/atp-remediated-alert.png)
+![Image of alert details pane with numbers](images/atp-mapping2.png)
 
-![Image of file details](images/atp-file-details.png)
+![Image of alert timeline with numbers](images/atp-mapping3.png)
+
+![Image of alert timeline with numbers](images/atp-mapping4.png)
+
+![Image browser URL](images/atp-mapping5.png)
+
+![Image machine view](images/atp-mapping6.png)
+
+![Image actor alert](images/atp-mapping7.png)
 
 
 ## Related topics
