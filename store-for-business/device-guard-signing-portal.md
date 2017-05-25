@@ -1,6 +1,6 @@
 ---
 title: Device Guard signing (Windows 10)
-description: Device Guard signing is a Device Guard feature that is available in the Windows Store for Business.
+description: Device Guard signing is a Device Guard feature that is available in the Microsoft Store for Business and Microsoft Store for Education.
 ms.assetid: 8D9CD2B9-5FC6-4C3D-AA96-F135AFEEBB78
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -18,41 +18,18 @@ localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Device Guard signing is a Device Guard feature that is available in the Windows Store for Business. It gives admins a single place to sign catalog files and code integrity policies. After admins have created catalog files for unsigned apps and signed the catalog files, they can add the signers to a code integrity policy. You can merge the code integrity policy with your existing policy to include your custom signing certificate. This allows you to trust the catalog files.
+Device Guard signing is a Device Guard feature that is available in Microsoft Store for Business and Education. It gives admins a single place to sign catalog files and code integrity policies. After admins have created catalog files for unsigned apps and signed the catalog files, they can add the signers to a code integrity policy. You can merge the code integrity policy with your existing policy to include your custom signing certificate. This allows you to trust the catalog files.
 
 Device Guard is a feature set that consists of both hardware and software system integrity hardening features. These features use new virtualization-based security options and the trust-nothing mobile device operating system model. A key feature in this model is called configurable code integrity, which allows your organization to choose exactly which software or trusted software publishers are allowed to run code on your client machines. Also, Device Guard offers organizations a way to sign existing line-of-business (LOB) applications so that they can trust their own code, without the requirement that the application be repackaged. Also, this same method of signing allows organizations to trust individual third-party applications. For more information, see [Device Guard deployment guide](https://technet.microsoft.com/library/mt463091.aspx).
 
 ## In this section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Topic</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[Add unsigned app to code integrity policy](add-unsigned-app-to-code-integrity-policy.md)</p></td>
-<td align="left"><p>When you want to add an unsigned app to a code integrity policy, you need to start with a code integrity policy created from a reference device. Then, create the catalog files for your unsigned app, sign the catalog files, and then merge the default policy that includes your signing certificate with existing code integrity policies.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Sign code integrity policy with Device Guard signing](sign-code-integrity-policy-with-device-guard-signing.md)</p></td>
-<td align="left"><p>Signing code integrity policies prevents policies from being tampered with after they're deployed. You can sign code integrity policies with the Device Guard signing portal.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Topic | Description |
+| ----- | ----------- |
+| [Add unsigned app to code integrity policy](add-unsigned-app-to-code-integrity-policy.md) | When you want to add an unsigned app to a code integrity policy, you need to start with a code integrity policy created from a reference device. Then, create the catalog files for your unsigned app, sign the catalog files, and then merge the default policy that includes your signing certificate with existing code integrity policies. |
+| [Sign code integrity policy with Device Guard signing](sign-code-integrity-policy-with-device-guard-signing.md) | Signing code integrity policies prevents policies from being tampered with after they're deployed. You can sign code integrity policies with the Device Guard signing portal. |
 
 ## File and size limits
-
-
 When you're uploading files for Device Guard signing, there are a few limits for files and file size:
 
 | Description                                           | Limit    |
@@ -61,11 +38,7 @@ When you're uploading files for Device Guard signing, there are a few limits for
 | Maximum size for multiple files (uploaded in a group) | 4 MB     |
 | Maximum number of files per upload                    | 15 files |
 
- 
-
-## File types
-
-
+ ## File types
 Catalog and policy files have required files types.
 
 | File          | Required file type |
@@ -73,23 +46,8 @@ Catalog and policy files have required files types.
 | catalog files | .cat               |
 | policy files  | .bin               |
 
- 
-
-##  Store for Business roles and permissions
-
-
+ ##  Store for Business roles and permissions
 Signing code integrity policies and access to Device Guard portal requires the Device Guard signer role.
 
 ## Device Guard signing certificates
-
-
 All certificates generated by the Device Guard signing service are unique per customer and are independent of the Microsoft production code signing certificate authorities. All Certification Authority (CA) keys are stored within the cryptographic boundary of Federal Information Processing Standards (FIPS) publication 140-2 compliant hardware security modules. After initial generation, root certificate keys and top level CA keys are removed from the online signing service, encrypted, and stored offline.
-
- 
-
- 
-
-
-
-
-

@@ -5,7 +5,7 @@ ms.assetid: FDC63933-C94C-43CB-8373-629795926DC8
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: medium
 ---
 

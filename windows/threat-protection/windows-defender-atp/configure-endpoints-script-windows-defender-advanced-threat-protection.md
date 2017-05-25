@@ -23,10 +23,13 @@ localizationpriority: high
 
 You can also manually onboard individual endpoints to Windows Defender ATP. You might want to do this first when testing the service before you commit to onboarding all endpoints in your network.
 
+> [!NOTE]
+> The script has been optimized to be used on a limited number of machines (1-10 machines). To deploy to scale, use other deployment options. For more information on using other deployment options, see [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md).
+
 ## Onboard endpoints
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Click **Endpoint Management** on the **Navigation pane**.
+    a.  Click **Endpoint management** on the **Navigation pane**.
 
     b.  Select **Local Script**, click **Download package** and save the .zip file.
 
@@ -54,7 +57,7 @@ You can manually configure the sample sharing setting on the endpoint by using *
 
 The configuration is set through the following registry key entry:
 
-```text
+```
 Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
 Name: "AllowSampleCollection"
 Value: 0 or 1
@@ -76,7 +79,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint Management** on the **Navigation pane**.
+    a. Click **Endpoint management** on the **Navigation pane**.
 
     b. Click the **Endpoint offboarding** section.
 
@@ -96,6 +99,10 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 5.  Press the **Enter** key or click **OK**.
 
+> [!IMPORTANT]
+> Offboarding causes the machine to stop sending sensor data to the portal but data from the machine, including reference to any alerts it has had will be retained for up to 6 months.
+
+
 ## Monitor endpoint configuration
 You can follow the different verification steps in the [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) to verify that the script completed successfully and the agent is running.
 
@@ -104,7 +111,7 @@ Monitoring can also be done directly on the portal, or by using the different de
 ### Monitor endpoints using the portal
 1.	Go to the Windows Defender ATP portal.
 
-2.	Click **Machines view**.
+2.	Click **Machines list**.
 
 3.	Verify that endpoints are appearing.
 

@@ -12,9 +12,7 @@ localizationpriority: high
 
 # Configure an MDM provider
 
-
 **Applies to**
-
 -   Windows 10
 -   Windows 10 Mobile
 
@@ -25,34 +23,19 @@ Your management tool needs to be installed and configured with Azure AD, in the 
 **To configure a management tool in Azure AD**
 
 1.  Sign in to the Azure Portal as an Administrator.
-
 2.  Click **Active Directory**, and then choose your directory. 
-
 3.  Click **Applications**, find the application, and add it to your directory.
 
-After your management tool is added to your Azure AD directory, you can configure it to work with Store for Business. You can configure multiple management tools - just repeat the following procedure. 
+After your management tool is added to your Azure AD directory, you can configure it to work with Microsoft Store. You can configure multiple management tools - just repeat the following procedure. 
 
 **To configure a management tool in Store for Business**
 
-1.  Log in to Store for Business.
+1.  Sign in to the [Store for Business](http://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com)
+2.  Click **Manage**, click **Store settings**, and then click  **Management tools**.
+3.  From the list of MDM tools, select the one you want to synchronize with Microsoft Store, and then click **Activate.**
 
-2.  Click **Settings**, and then choose **Management tool**.
+Your MDM tool is ready to use with Microsoft Store. To learn how to configure synchronization and deploy apps, see these topics:
+- [Manage apps you purchased from Windows Store for Business with Microsoft Intune](https://technet.microsoft.com/library/mt676514.aspx)
+- [Manage apps from Windows Store for Business with System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business) 
 
-    You'll see a list of available MDM tools.
-
-    ![Screenshot showing page in Management tools page in Windows Store for Business](images/wsfb-settings-mgmt.png)
-
-3.  Choose the MDM tool you want to synchronize with Store for Business, and then click **Activate.**
-
-Your MDM tool is ready to use with Store for Business. Consult docs for your management tool to learn how to distribute apps from your synchronized inventory.
-
-See [Manage apps you purchased from Windows Store for Business with Microsoft InTune](https://technet.microsoft.com/library/mt676514.aspx) to learn how to configure synchroniztion and deploy apps.
-
- 
-
- 
-
-
-
-
-
+For third-party MDM providers or management servers, check your product documentation.

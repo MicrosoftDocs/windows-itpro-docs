@@ -10,14 +10,11 @@ localizationpriority: high
 author: CelesteDG
 ---
 
+# Windows 10 for Education
+
 ![Windows 10 Education and Windows 10 Pro Education](images/windows-10-for-education-banner.png)
 
-# Windows 10 for Education
-<link rel="stylesheet" href="https://az835927.vo.msecnd.net/sites/uwp/Resources/css/custom.css">
-
-## Windows 10
-
-### ![Learn more about Windows](images/education.png) Learn
+## ![Learn more about Windows](images/education.png) Learn
 
 <p><b>[Windows 10 editions for education customers](windows-editions-for-education-customers.md)</b><br />Windows 10, version 1607 introduces two editions designed for the unique needs of K-12 institutions: Windows 10 Pro Education and Windows 10 Education. These editions provide education-specific default settings for the evolving landscape in K-12 education IT environments.</p>
 <p><b>[Compare each Windows edition](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)</b><br />Find out more about the features and functionality we support in each edition of Windows.</p>
@@ -32,7 +29,7 @@ author: CelesteDG
 </ul>
 </p>
 
-### ![Plan for Windows 10 in your school](images/clipboard.png) Plan
+## ![Plan for Windows 10 in your school](images/clipboard.png) Plan
 
 <p><b>[Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)</b><br />Provides guidance on ways to customize the OS diagnostic data, consumer experiences, Cortana, search, as well as some of the preinstalled apps, so that Windows is ready for your school.</p>
 <p><b>[Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)</b><br />Learn how to customize the OS privacy settings, Skype, and Xbox for Windows-based devices used in schools so that you can choose what information is shared with Microsoft.</p>
@@ -40,18 +37,25 @@ author: CelesteDG
 <div class="side-by-side-content-right"><p><b>[Take tests in Windows 10](take-tests-in-windows-10.md)</b><br />Take a Test is a new app that lets you create the right environment for taking tests. Learn how to use and get it set up.</p>
 <p><b>[Chromebook migration guide](chromebook-migration-guide.md)</b><br />Find out how you can migrate a Chromebook-based learning environment to a Windows 10-based learning environment.</p>
 
-### ![Deploy Windows 10 for education](images/PCicon.png) Deploy
+## ![Deploy Windows 10 for education](images/PCicon.png) Deploy
 
 <p><b>[Set up Windows devices for education](set-up-windows-10.md)</b><br />Depending on your school's device management needs, you can use the Set up School PCs app or the Windows Configuration Designer tool to quickly set up student PCs.</p><p>
 <p><b>[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)</b><br />Get step-by-step guidance to help you deploy Windows 10 in a school environment.</p>
 <p><b>[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)</b><br />Get step-by-step guidance on how to deploy Windows 10 to PCs and devices across a school district.</p>
 <p><b><a href="https://technet.microsoft.com/en-us/windows/mt574244" target="_blank">Try it out: Windows 10 deployment (for education)</a></b><br />Learn how to upgrade devices running the Windows 7 operating system to Windows 10 Anniversary Update, and how to manage devices, apps, and users in Windows 10 Anniversary Update.<br /><br />For the best experience, use this guide in tandem with the <a href="https://vlabs.holsystems.com/vlabs/technet?eng=VLabs&auth=none&src=vlabs&altadd=true&labid=20949&lod=true" target="_blank">TechNet Virtual Lab: IT Pro Try-It-Out</a>.</p>
 
+<<<<<<< HEAD
 ### ![Upgrade to Windows 10 for education](images/windows.png) Switch
 
 <p><b>[Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md)</b><br />If you have an education tenant and use Windows 10 Pro or Windows 10 S in your schools, find out how you can opt-in to a free switch to Windows 10 Pro Education.</p></div>
+=======
+## ![Upgrade to Windows 10 for education](images/windows.png) Upgrade
+
+<p><b>[Switch Windows 10 Pro to Pro Education from Microsoft Store for Education](windows-10-pro-to-pro-edu-upgrade.md)</b><br />If you have an education tenant and use Windows 10 Pro in your schools now, find out how you can opt-in to a free switch to Windows 10 Pro Education.</p>
+>>>>>>> f786f5b9a9068088c79f3774b5b3e6ba24a96c8c
 
 ## Windows 8.1
+
 Follow these links to find step-by-step guidance on how to deploy Windows 8.1 in an academic environment.
 
 <p><b><a href="https://technet.microsoft.com/library/dn645509.aspx" target="_blank">Windows 8.1 deployment planning</a></b><br />Explore key considerations and questions that should be answered when planning for Windows 8.1 deployment.</p>
@@ -62,7 +66,6 @@ Follow these links to find step-by-step guidance on how to deploy Windows 8.1 in
 <p><b><a href="https://technet.microsoft.com/library/dn645532.aspx" target="_blank">Windows Store apps</a></b><br />Explore Windows Store app deployment strategies and considerations for educational institutions running Windows 8.1.</p>
 <p><b><a href="https://technet.microsoft.com/library/dn645486.aspx" target="_blank">Windows To Go</a></b><br />Learn about the benefits, limitations, and processes involved in deploying Windows To Go.</p>
 
-
 ## Related topics
-
+- [Microsoft Education documentation and resources](https://docs.microsoft.com/education)
 - [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/index)

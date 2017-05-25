@@ -77,7 +77,7 @@ netsh winhttp set proxy <proxy>:<port>
 For example: netsh winhttp set proxy 10.0.0.6:8080
 
 ## Enable access to Windows Defender ATP service URLs in the proxy server
-If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service in port 80 and 443:
+If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service in port 80 and 443:
 
 Primary Domain Controller | .Microsoft.com DNS record
 :---|:---
@@ -85,10 +85,6 @@ Primary Domain Controller | .Microsoft.com DNS record
 Europe |```*.blob.core.windows.net```<br>```crl.microsoft.com```<br> ```eu.vortex-win.data.microsoft.com```<br>```winatp-gw-neu.microsoft.com```<br> ```winatp-gw-weu.microsoft.com```<br>
 
  If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.
-
- If you selected US as your region, you should permit anonymous traffic for URLs listed in both Central US and East US (2).
-
- If you selected EU as your region, you should permit anonymous traffic for URLs listed in both West Europe and North Europe.
 
 
 ## Verify client connectivity to Windows Defender ATP service URLs

@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: hololens, devices
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: medium
 ---
 
@@ -23,10 +23,10 @@ localizationpriority: medium
 | [HoloLens in the enterprise: requirements](hololens-requirements.md) | Lists requirements for general use, Wi-Fi, and device management |
 | [Set up HoloLens](hololens-setup.md) | How to set up HoloLens for the first time  |
 | [Unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md)  | How to upgrade your Development Edition HoloLens to Windows Holographic for Business|
-| [Enroll HoloLens in MDM](hololens-enroll-mdm.md) | Manage multiple HoloLens devices simultaneously using solutions like Microsoft InTune |
+| [Enroll HoloLens in MDM](hololens-enroll-mdm.md) | Manage multiple HoloLens devices simultaneously using solutions like Microsoft Intune |
 | [Set up HoloLens in kiosk mode](hololens-kiosk.md) | Enable kiosk mode for HoloLens, which limits the user's ability to launch new apps or change the running app  |
 | [Configure HoloLens using a provisioning package](hololens-provisioning.md) | Provisioning packages make it easy for IT administrators to configure HoloLens devices without imaging |
-| [Install apps on HoloLens](hololens-install-apps.md) | Use Windows Store for Business, mobile device management (MDM), or the Windows Device Portal to install apps on HoloLens|
+| [Install apps on HoloLens](hololens-install-apps.md) | Use Microsoft Store for Business, mobile device management (MDM), or the Windows Device Portal to install apps on HoloLens|
 </br>
 
 ## Related resources

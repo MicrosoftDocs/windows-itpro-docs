@@ -5,7 +5,7 @@ ms.assetid: 25C1FDCA-0E10-42A1-A368-984FFDB2B7B6
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: medium
 ---
 
@@ -139,7 +139,7 @@ CSPs provide access to a number of settings useful to enterprises. This section 
     Some of the settings available in the Policy CSP include the following:
 
     -   **Accounts**, such as whether a non-Microsoft account can be added to the device
-    -   **Application management**, such as whether only Windows Store apps are allowed
+    -   **Application management**, such as whether only Microsoft Store apps are allowed
     -   **Bluetooth**, such as the services allowed to use it
     -   **Browser**, such as restricting InPrivate browsing
     -   **Connectivity**, such as whether the device can be connected to a computer by USB
@@ -151,7 +151,7 @@ CSPs provide access to a number of settings useful to enterprises. This section 
     -   **Start**, such as applying a standard Start layout
     -   **System**, such as allowing the user to reset the device
     -   **Text input**, such as allowing the device to send anonymized user text input data samples to Microsoft
-    -   **Update**, such as specifying whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Windows Store
+    -   **Update**, such as specifying whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store
     -   **WiFi**, such as whether to enable Internet sharing
 
 Here is a list of CSPs supported on Windows 10 Enterprise, Windows 10 Mobile Enterprise, or both:
