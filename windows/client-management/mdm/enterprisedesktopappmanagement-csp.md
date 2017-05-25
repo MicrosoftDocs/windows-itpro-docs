@@ -5,11 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
-ms.author: windows-hardware-design-content
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nibr
 ---
 
 # EnterpriseDesktopAppManagement CSP
@@ -54,92 +55,839 @@ Executes the download and installation of the application. Value type is string.
 Status of the application. Value type is string. Supported operation is Get.
 
 | Status                    | Value |
-|---------------------------|-------|
-| Initialized               | 10    |
-| Download In Progress      | 20    |
-| Pending Download Retry    | 25    |
-| Download Failed           | 30    |
-| Download Completed        | 40    |
-| Pending User Session      | 48    |
-| Enforcement In Progress   | 50    |
-| Pending Enforcement Retry | 55    |
-| Enforcement Failed        | 60    |
-| Enforcement Completed     | 70    |
-
- 
-
-<a href="" id="msi-productid-lasterror"></a>**MSI/*ProductID*/LastError**  
-The last error code during the application installation process. This is typically stored as an HRESULT format. Depending on what was occurring when the error happened, this could be the result of executing MSIExec.exe or the error result from an API that failed.
-
-Value type is string. Supported operation is Get.
-
-<a href="" id="msi-productid-lasterrordesc"></a>**MSI/*ProductID*/LastErrorDesc**  
-Contains the last error code description. The LastErrorDesc value is looked up for the matching LastError value. Sometimes there is no LastErrorDesc returned.
-
-Value type is string. Supported operation is Get.
-
-<a href="" id="msi-upgradecode"></a>**MSI/UpgradeCode**  
-Added in the March service release of Windows 10, version 1607.
-
-<a href="" id="msi-upgradecode"></a>**MSI/UpgradeCode/_Guid_**  
-Added in the March service release of Windows 10, version 1607. A gateway (or device management server) uses this method to detect matching upgrade MSI product when a Admin wants to update an existing MSI app. If the same upgrade product is installed, then the update is allowed.
-
-Value type is string. Supported operation is Get. 
-
-
-## Examples
-
-
-**SyncML to request CSP version information**
-
-``` syntax
-<SyncML xmlns="SYNCML:SYNCML1.1">
-  <SyncBody>
-    <Get>
-      <CmdID>12345</CmdID>
-      <Item>
-        <Target>
-          <LocURI>./Device/Vendor/MSFT/EnterpriseDesktopAppManagement?prop=Type</LocURI>
-        </Target>
-      </Item>
-    </Get>
-    <Final/>
-  </SyncBody>
-</SyncML>
-```
-
-The following table describes the fields in the previous sample:
-
-| Name   | Description                                                                                                                   |
-|--------|-------------------------------------------------------------------------------------------------------------------------------|
-| Get    | Operation being performed. The Get operation is a request to return information.                                              |
-| CmdID  | Input value used to reference the request. Responses will include this value which can be used to match request and response. |
-| LocURI | Path to Win32 CSP command processor.                                                                                          |
-
- 
-
-**SyncML to perform MSI operations for application uninstall**
-
-``` syntax
-<SyncML xmlns="SYNCML:SYNCML1.1">
-  <SyncBody>
-    <Delete>
-      <CmdID>12345</CmdID>
-      <Item>
-        <Target>
-          <LocURI>./Device/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/%7B1803A630-3C38-4D2B-9B9A-0CB37243539C%7D</LocURI>
-        </Target>
-      </Item>
-    </Delete>
-    <Final/>
-  </SyncBody>
-</SyncML>
-```
-
-The following table describes the fields in the previous sample:
-
-| Name   | Description                                                                                                                                                                                                         |
-|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---|
 | Delete | Operation being performed. The Delete operation is a request to delete the CSP node that represents the specified MSI installed application and to perform and uninstall of the application as part of the process. |
 | CmdID  | Input value used to reference the request. Responses will include this value which can be used to match request and response.                                                                                       |
 | LocURI | Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting.                                                          |
@@ -167,7 +915,358 @@ The following table describes the fields in the previous sample:
 The following table describes the fields in the previous sample:
 
 | Name   | Description                                                                                                                                                |
-|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+-----|---
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: EnterpriseDesktopAppManagement CSP
+description: The EnterpriseDesktopAppManagement configuration service provider is used to handle enterprise desktop application management tasks, such as querying installed enterprise applications, installing applications, or removing applications.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---|
 | Get    | Operation being performed. The Get operation is a request to report the status of the specified MSI installed application.                                 |
 | CmdID  | Input value used to reference the request. Responses will include this value which can be used to match request and response.                              |
 | LocURI | Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting. |

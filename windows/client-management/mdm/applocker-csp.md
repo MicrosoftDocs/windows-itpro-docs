@@ -5,11 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
-ms.author: windows-hardware-design-content
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nibr
 ---
 
 # AppLocker CSP
@@ -336,7 +337,319 @@ When you create a list of allowed apps in Windows 10 Mobile, you must also incl
 The product name is first part of the PackageFullName followed by the version number.
 
 | Settings app name                  | PackageFullName or Product name                                         | ProductID                            |
-|------------------------------------|-------------------------------------------------------------------------|--------------------------------------|
+|---
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---|---
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+----|---
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: AppLocker CSP
+description: AppLocker CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+-----|
 | Work or school account             | Microsoft.AAD.BrokerPlugin                                              | e5f8b2c4-75ae-45ee-9be8-212e34f77747 |
 | Email and accounts                 | Microsoft.AccountsControl                                               | 39cf127b-8c67-c149-539a-c02271d07060 |
 | SettingsPageKeyboard               | 5b04b775-356b-4aa0-aaf8-6491ffea5608\_1.1.0.0\_neutral\_\_cw8ffb7c56vgc | 5b04b775-356b-4aa0-aaf8-6491ffea5608 |

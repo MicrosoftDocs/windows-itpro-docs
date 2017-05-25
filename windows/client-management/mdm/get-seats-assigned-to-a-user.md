@@ -5,11 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: CB963E44-8C7C-46F9-A979-89BBB376172B
-ms.author: windows-hardware-design-content
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nibr
 ---
 
 # Get seats assigned to a user

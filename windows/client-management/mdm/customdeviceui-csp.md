@@ -5,11 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 20ED1867-7B9E-4455-B397-53B8B15C95A3
-ms.author: windows-hardware-design-content
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nibr
 ---
 
 # CustomDeviceUI CSP

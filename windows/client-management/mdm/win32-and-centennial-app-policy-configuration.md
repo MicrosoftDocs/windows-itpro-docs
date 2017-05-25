@@ -1,11 +1,12 @@
 ---
 title: Win32 and Desktop Bridge app policy configuration
 description: Starting in Windows 10, version 1703, you can import ADMX files and set those ADMX-backed policies for Win32 and Desktop Bridge apps.
-ms.author: windows-hardware-design-content
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nibr
 ---
 
 # Win32 and Desktop Bridge app policy configuration

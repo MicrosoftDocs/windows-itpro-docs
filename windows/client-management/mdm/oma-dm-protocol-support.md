@@ -5,11 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
-ms.author: windows-hardware-design-content
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nibr
 ---
 
 
@@ -353,7 +354,514 @@ The following LocURL shows a per device CSP node configuration: **./device/vendo
 When using SyncML in OMA DM, there are standard response status codes that are returned. The following table lists the common SyncML response status codes you are likely to see. For more information about SyncML response status codes, see section 10 of the [SyncML Representation Protocol](http://go.microsoft.com/fwlink/p/?LinkId=526905) specification.
 
 | Status code | Description                                                                                                                                                                                                                       |
-|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+----|---
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: OMA DM protocol support
+description: OMA DM protocol support
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: e882aaae-447e-4bd4-9275-463824da4fa0
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+--------|
 | 200         | The SyncML command completed successfully.                                                                                                                                                                                        |
 | 202         | Accepted for processing. This is usually an asynchronous operation, such as a request to run a remote execution of an application.                                                                                                |
 | 212         | Authentication accepted. Normally you'll only see this in response to the SyncHdr element (used for authentication in the OMA-DM standard). You may see this if you look at OMA DM logs, but CSPs do not typically generate this. |

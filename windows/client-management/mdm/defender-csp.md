@@ -5,11 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 481AA74F-08B2-4A32-B95D-5A3FD05B335C
-ms.author: windows-hardware-design-content
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nibr
 ---
 
 # Defender CSP
@@ -68,7 +69,72 @@ The data type is a integer.
 The following table describes the supported values:
 
 | Value | Description                 |
-|-------|-----------------------------|
+|---
+title: Defender CSP
+description: Defender CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 481AA74F-08B2-4A32-B95D-5A3FD05B335C
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+----|---
+title: Defender CSP
+description: Defender CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 481AA74F-08B2-4A32-B95D-5A3FD05B335C
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: Defender CSP
+description: Defender CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 481AA74F-08B2-4A32-B95D-5A3FD05B335C
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: Defender CSP
+description: Defender CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 481AA74F-08B2-4A32-B95D-5A3FD05B335C
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+------
+title: Defender CSP
+description: Defender CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 481AA74F-08B2-4A32-B95D-5A3FD05B335C
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+--------|
 | 0     | Invalid                     |
 | 1     | Adware                      |
 | 2     | Spyware                     |

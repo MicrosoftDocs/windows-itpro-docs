@@ -8,11 +8,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: windows-hardware-design-content
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
 ---
 
 # MDM enrollment of Windows-based devices
@@ -88,7 +88,712 @@ Because joining your device to an Active Directory domain during the OOBE is not
 There are a few instances where your device cannot be connected to an Active Directory domain:
 
 | Connection issue                                                | Explanation                                                                                                                                                                                                               |
-|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+---|
 | Your device is already connected to an Active Directory domain. | Your device can be connected to only a single Active Directory domain at a time.                                                                                                                                          |
 | Your device is connected to an Azure AD domain.                 | Your device can either be connected to an Azure AD domain or an Active Directory domain. You cannot connect to both simultaneously.                                                                                       |
 | You are logged in as a standard user.                           | Your device can only be connected to an Azure AD domain if you are logged in as an administrative user. You’ll need to switch to an administrator account to continue.                                                    |
@@ -159,7 +864,712 @@ All Windows devices can be connected to an Azure AD domain. These devices can be
 There are a few instances where your device cannot be connected to an Azure AD domain:
 
 | Connection issue                                                | Explanation                                                                                                                                                                                                                |
-|-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+----|
 | Your device is connected to an Azure AD domain.                 | Your device can only be connected to a single Azure AD domain at a time.                                                                                                                                                   |
 | Your device is already connected to an Active Directory domain. | Your device can either be connected to an Azure AD domain or an Active Directory domain. You cannot connect to both simultaneously.                                                                                        |
 | Your device already has a user connected to a work account.     | You can either connect to an Azure AD domain or connect to a work or school account. You cannot connect to both simultaneously.                                                                                            |
@@ -277,28 +1687,997 @@ All Windows 10-based devices can be connected to an MDM. You can connect to an 
 There are a few instances where your device may not be able to connect to work, as described in the following table.
 
 | Error Message                                                                                                                                                                              | Description                                                                                         |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Your device is already connected to your organization’s cloud.                                                                                                                             | Your device is already connected to either Azure AD, a work or school account, or an AD domain.     |
-| We could not find your identity in your organization’s cloud.                                                                                                                              | The username you entered was not found on your Azure AD tenant.                                     |
-| Your device is already being managed by an organization.                                                                                                                                   | Your device is either already managed by MDM or System Center Configuration Manager.                |
-| You don’t have the right privileges to perform this operation. Please talk to your admin.                                                                                                  | You cannot enroll your device into MDM as a standard user. You must be on an administrator account. |
-| We couldn’t auto-discover a management endpoint matching the username entered. Please check your username and try again. If you know the URL to your management endpoint, please enter it. | You need to provide the server URL for your MDM or check the spelling of the username you entered.  |
-
- 
-
-## Connecting your Windows 10-based device to work using a deep link
-
-
-Windows 10-based devices may be connected to work using a deep link. Users will be able to click or open a link in a particular format from anywhere in Windows 10 and be directed to the new enrollment experience.
-
-In Windows 10, version 1607, deep linking will only be supported for connecting devices to MDM. It will not support adding a work or school account, joining a device to Azure AD, and joining a device to Active Directory.
-
-The deep link used for connecting your device to work will always use the following format:
-
-**ms-device-enrollment:?mode={mode\_name}**
-
-| Parameter | Description                                                  | Supported Value for Windows 10|
-|-----------|--------------------------------------------------------------|----------------------------------------------|
+|---
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+-----|---
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+-----|---
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+-----|---
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+------
+title: MDM enrollment of Windows-based devices
+description: MDM enrollment of Windows-based devices
+MS-HAID:
+- 'p\_phdevicemgmt.enrollment\_ui'
+- 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+-------|
 | mode      | Describes which mode will be executed in the enrollment app. Added in Windows 10, version 1607| “mdm”                                        |
 |Username  | Specifies the email address or UPN of the user who should be enrolled into MDM. Added in Windows 10, version 1703. | string |
 | Servername | Specifies the MDM server URL that will be used to enroll the device. Added in Windows 10, version 1703. | string|
