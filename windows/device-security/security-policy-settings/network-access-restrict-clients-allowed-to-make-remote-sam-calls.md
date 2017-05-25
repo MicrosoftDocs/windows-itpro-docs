@@ -60,7 +60,7 @@ This less restrictive default allows for testing the impact of enabling restrict
 | Possible values | <br>- Not defined <br>- Defined, along with the security descriptor for users and groups who are allowed or denied to use SAMRPC to remotely access either the local SAM or Active Directory. |
 | Registry location | `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\RestrictRemoteSam` |
 | Registry type | REG_DWORD |
-| Registry values | A string that will contain the SDDL of the security descriptor to be deployed to the following registry setting. |
+| Registry values | A string that will contain the SDDL of the security descriptor to be deployed. |
 
 The Group Policy setting is only available on computers that run Windows Server 2016 or Windows 10, version 1607 and later. 
 This is the only option to configure this setting by using a user interface (UI).
