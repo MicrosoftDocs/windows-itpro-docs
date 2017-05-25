@@ -28,7 +28,7 @@ Understand what data fields are exposed as part of the alerts API and how they m
 Field numbers match the numbers in the images below.
 
 Portal label | SIEM field name  | ArcSight field| Example value | Description
-:---|:---|:---
+:---|:---|:---|:---|:---
 1 | AlertTitle  | name   | A dll was unexpectedly loaded into a high integrity  process without a UAC prompt |   Value available for every alert.                                  
 2 | Severity  | deviceSeverity  | Medium | Value available for every alert.  
 3 | Category  | deviceEventCategory | Privilege Escalation  | Value available for every alert.                                            
@@ -62,11 +62,11 @@ Portal label | SIEM field name  | ArcSight field| Example value | Description
 
 ![Image of alert with numbers](images/atp-siem-mapping1.png)
 
-![Image of alert details pane with numbers](images/atp-mapping2.png)
+![Image of alert details pane with numbers](images/atp-siem-mapping2.png)
 
-![Image of alert timeline with numbers](images/atp-mapping3.png)
+![Image of alert timeline with numbers](images/atp-siem-mapping3.png)
 
-![Image of alert timeline with numbers](images/atp-mapping4.png)
+![Image of alert timeline with numbers](images/atp-siem-mapping4.png)
 
 ![Image browser URL](images/atp-mapping5.png)
 
