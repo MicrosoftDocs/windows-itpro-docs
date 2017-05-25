@@ -199,7 +199,7 @@ Enabling the automatic switch also triggers an email message notifying all globa
 
 **Figure 6** - Email notifying all global admins about the switch
 
-![Email notifying all global admins about the switch](images/msfe_switchtoproedu_globaladminsemail_cancelswitch)
+![Email notifying all global admins about the switch](images/msfe_switchtoproedu_globaladminsemail_cancelswitch.png)
 
 
 ## Explore the switch experience
