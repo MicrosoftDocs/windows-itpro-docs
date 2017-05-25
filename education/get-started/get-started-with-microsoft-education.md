@@ -518,6 +518,33 @@ We recommend using the latest build of Windows 10, version 1703 on your educatio
 
 **<a name="usesetupschoolpcs"></a>Option 1: Set up a device using the Set up School PCs app**
 
+IT administrators and technical teachers can use the Set up School PCs app to quickly set up PCs for students. A student PC set up using the app is tailored to provide students with the tools they need for learning while removing apps and features that they don't need.
+
+![Set up School PCs app](images/suspc_getstarted_050817.png)
+
+Set up School PCs makes it easy to set up Windows 10 PCs with Microsoft's recommended education settings, using a quick USB setup. This app guides you through the creation of a student PC provisioning package and helps you save it to a USB drive. From there, just plug the USB drive into student PCs running Windows 10 Creators Update (version 1703). It automatically:
+- Joins each student PC to your organization's Office 365 and Azure Active Directory tenant
+- Enrolls each student PC into a mobile device management (MDM) provider, like Intune for Education, if licensed in your tenant. You can manage all the settings Set up School PCs sets later through MDM.
+- Removes OEM preinstalled software from each student PC
+- Auto-configures and saves a wireless network profile on each student PC
+- Gives a friendly and unique name to each student device for future management
+- Sets Microsoft-recommended school PC settings, including shared PC mode which provides faster sign-in and automatic account cleanup
+- Enables optional guest account for younger students, lost passwords, or visitors
+- Enables optional secure testing account
+- Locks down the student PC to prevent mischievous activity:
+    * Prevents students from removing the PC from the school's device management system
+    * Prevents students from removing the Set up School PCs settings
+- Keeps student PCs up-to-date without interfering with class time using Windows Update and maintenance hours
+
+A student PC that's set up using the Set up School PCs provisioning package is tailored to provide students with the tools they need for learning while removing apps and features that they don't need. 
+    * Customizes the Start layout with Office
+    * Installs OneDrive for cloud-based documents and places it on the Start menu and taskbar 
+    * Uninstalls apps not specific to education, such as Solitaire
+    * [Gets the student PC ready for use in an education environment](configure-windows-for-education.md)
+    * Prevents students from adding personal Microsoft accounts to the PC
+
+**To set up a device using the Set up School PCs app**
+
 1. Follow the steps in <a href="https://docs.microsoft.com/en-us/education/windows/use-set-up-school-pcs-app" target="_blank">Use the Set up School PCs app</a> to quickly set up one or more student PCs.
 2. Follow the steps in [5.2 Verify correct device setup](#52-verify-correct-device-setup).
 
