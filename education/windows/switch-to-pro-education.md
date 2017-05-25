@@ -1,7 +1,7 @@
 ---
 title: Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S
 description: Learn how IT Pros can opt into switching to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S.
-keywords: switch, Pro to Pro Education, S to Pro Education, education customers, Windows 10 Pro Education, Windows 10 Pro, Windows 10 S
+keywords: switch, free switch, Windows 10 Pro to Windows 10 Pro Education, Windows 10 S to Windows 10 Pro Education, education customers, Windows 10 Pro Education, Windows 10 Pro, Windows 10 S
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
