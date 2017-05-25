@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # Structure of OMA DM provisioning files
 
 OMA DM commands are transmitted between the server and the client device in messages. A message can contain one or more commands. For a list of commands supported, see the table in [OMA DM protocol support](oma-dm-protocol-support.md).

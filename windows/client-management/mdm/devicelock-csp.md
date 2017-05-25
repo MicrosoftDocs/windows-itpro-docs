@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # DeviceLock CSP
 
 
@@ -51,7 +52,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: DeviceLock CSP
 description: DeviceLock CSP
 MSHAttr:
@@ -64,7 +66,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: DeviceLock CSP
 description: DeviceLock CSP
 MSHAttr:
@@ -77,7 +80,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
------mindevicepasswordcomplexcharacters"></a>**DeviceValue/DevicePasswordEnable, …, MinDevicePasswordComplexCharacters**  
+---
+--mindevicepasswordcomplexcharacters"></a>**DeviceValue/DevicePasswordEnable, …, MinDevicePasswordComplexCharacters**  
 Required. This node has the same set of policy nodes as the **ProviderID** node. All nodes under **DeviceValue** are read-only permanent nodes. Each node represents the current device lock policy. For detailed descriptions of each policy, see the ***ProviderID*** subnode descriptions.
 
 ## OMA DM examples

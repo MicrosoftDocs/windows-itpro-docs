@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # ICSPNodeTransactioning
 
 This is an optional interface that enables a configuration service provider to define its own transactioning scheme (internal transactioning) for an individual node. Transactioning supports the ability to roll back previous actions on a node. The majority of nodes use external transactioning, which is handled automatically, and do not need to implement this interface. For more information about internal and external transactioning, including how to handle the `RollbackAction` functions, see "Determine node operations" in [Designing a custom configuration service provider](design-a-custom-windows-csp.md).

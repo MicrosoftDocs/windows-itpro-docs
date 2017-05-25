@@ -13,7 +13,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
+author: nibr
 ---
+
 
 # MDM enrollment of Windows-based devices
 
@@ -103,7 +105,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -118,7 +122,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -133,7 +139,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -148,7 +156,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -163,7 +173,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -178,7 +190,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -193,7 +207,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -208,7 +224,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -223,7 +241,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -238,7 +258,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -253,7 +275,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -268,7 +292,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -283,7 +309,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -298,7 +326,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -313,7 +343,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -328,7 +360,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -343,7 +377,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -358,7 +394,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -373,7 +411,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -388,7 +428,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -403,7 +445,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -418,7 +462,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -433,7 +479,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -448,7 +496,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -463,7 +513,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -478,7 +530,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -493,7 +547,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -508,7 +564,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -523,7 +581,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -538,7 +598,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -553,7 +615,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -568,7 +632,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -583,7 +649,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -598,7 +666,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -613,7 +683,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -628,7 +700,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -643,7 +717,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -658,7 +734,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -673,7 +751,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -688,7 +768,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -703,7 +785,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -718,7 +802,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -733,7 +819,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -748,7 +836,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -763,7 +853,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -778,7 +870,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -793,7 +887,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
----|
+author: nibr
+---
+|
 | Your device is already connected to an Active Directory domain. | Your device can be connected to only a single Active Directory domain at a time.                                                                                                                                          |
 | Your device is connected to an Azure AD domain.                 | Your device can either be connected to an Azure AD domain or an Active Directory domain. You cannot connect to both simultaneously.                                                                                       |
 | You are logged in as a standard user.                           | Your device can only be connected to an Azure AD domain if you are logged in as an administrative user. You’ll need to switch to an administrator account to continue.                                                    |
@@ -879,7 +975,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -894,7 +992,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -909,7 +1009,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -924,7 +1026,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -939,7 +1043,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -954,7 +1060,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -969,7 +1077,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -984,7 +1094,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -999,7 +1111,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1014,7 +1128,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1029,7 +1145,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1044,7 +1162,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1059,7 +1179,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1074,7 +1196,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1089,7 +1213,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1104,7 +1230,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1119,7 +1247,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1134,7 +1264,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1149,7 +1281,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1164,7 +1298,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1179,7 +1315,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1194,7 +1332,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1209,7 +1349,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1224,7 +1366,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1239,7 +1383,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1254,7 +1400,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1269,7 +1417,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1284,7 +1434,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1299,7 +1451,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1314,7 +1468,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1329,7 +1485,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1344,7 +1502,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1359,7 +1519,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1374,7 +1536,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1389,7 +1553,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1404,7 +1570,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1419,7 +1587,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1434,7 +1604,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1449,7 +1621,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1464,7 +1638,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1479,7 +1655,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1494,7 +1672,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1509,7 +1689,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1524,7 +1706,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1539,7 +1723,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1554,7 +1740,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1569,7 +1757,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-----|
+author: nibr
+---
+-|
 | Your device is connected to an Azure AD domain.                 | Your device can only be connected to a single Azure AD domain at a time.                                                                                                                                                   |
 | Your device is already connected to an Active Directory domain. | Your device can either be connected to an Azure AD domain or an Active Directory domain. You cannot connect to both simultaneously.                                                                                        |
 | Your device already has a user connected to a work account.     | You can either connect to an Azure AD domain or connect to a work or school account. You cannot connect to both simultaneously.                                                                                            |
@@ -1702,7 +1892,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1717,7 +1909,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1732,7 +1926,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1747,7 +1943,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1762,7 +1960,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1777,7 +1977,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1792,7 +1994,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1807,7 +2011,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1822,7 +2028,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1837,7 +2045,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1852,7 +2062,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1867,7 +2079,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1882,7 +2096,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1897,7 +2113,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1912,7 +2130,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1927,7 +2147,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1942,7 +2164,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1957,7 +2181,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1972,7 +2198,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -1987,7 +2215,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2002,7 +2232,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2017,7 +2249,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2032,7 +2266,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2047,7 +2283,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2062,7 +2300,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2077,7 +2317,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2092,7 +2334,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2107,7 +2351,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2122,7 +2368,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2137,7 +2385,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2152,7 +2402,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
------|---
+author: nibr
+---
+--|---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2167,7 +2419,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2182,7 +2436,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2197,7 +2453,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2212,7 +2470,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2227,7 +2487,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2242,7 +2504,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2257,7 +2521,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2272,7 +2538,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2287,7 +2555,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2302,7 +2572,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2317,7 +2589,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2332,7 +2606,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2347,7 +2623,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2362,7 +2640,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2377,7 +2657,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2392,7 +2674,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2407,7 +2691,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2422,7 +2708,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
------|---
+author: nibr
+---
+--|---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2437,7 +2725,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2452,7 +2742,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2467,7 +2759,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2482,7 +2776,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2497,7 +2793,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2512,7 +2810,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2527,7 +2827,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2542,7 +2844,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2557,7 +2861,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2572,7 +2878,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
------|---
+author: nibr
+---
+--|---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2587,7 +2895,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2602,7 +2912,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2617,7 +2929,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2632,7 +2946,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2647,7 +2963,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2662,7 +2980,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: MDM enrollment of Windows-based devices
 description: MDM enrollment of Windows-based devices
 MS-HAID:
@@ -2677,7 +2997,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
--------|
+author: nibr
+---
+----|
 | mode      | Describes which mode will be executed in the enrollment app. Added in Windows 10, version 1607| “mdm”                                        |
 |Username  | Specifies the email address or UPN of the user who should be enrolled into MDM. Added in Windows 10, version 1703. | string |
 | Servername | Specifies the MDM server URL that will be used to enroll the device. Added in Windows 10, version 1703. | string|

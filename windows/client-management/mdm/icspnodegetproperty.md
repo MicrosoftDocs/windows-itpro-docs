@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # ICSPNode::GetProperty
 
 This method returns a property value from a configuration service provider node.

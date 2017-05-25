@@ -10,7 +10,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
+author: nibr
 ---
+
 
 # PassportForWork CSP
 
@@ -66,7 +68,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
----device-vendor-msft-"></a>***TenantId*/Policies/ExcludeSecurityDevices/TPM12** (only for ./Device/Vendor/MSFT)  
+author: nibr
+---
+device-vendor-msft-"></a>***TenantId*/Policies/ExcludeSecurityDevices/TPM12** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Some Trusted Platform Modules (TPMs) are compliant only with the older 1.2 revision of the TPM specification defined by the Trusted Computing Group (TCG).
 
 <p style="margin-left: 20px">Default value is false. If you enable this policy setting, TPM revision 1.2 modules will be disallowed from being used with Windows Hello for Business.
@@ -97,7 +101,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
----device-vendor-msft-"></a>***TenantId*/Policies/Remote** (only for ./Device/Vendor/MSFT)  
+author: nibr
+---
+device-vendor-msft-"></a>***TenantId*/Policies/Remote** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Interior node for defining remote Windows Hello for Business policies. This node was added in Windows 10, version 1511.
 
 <a href="" id="tenantid-policies-remote-useremotepassport--only-for---
@@ -112,7 +118,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
----device-vendor-msft-"></a>**Biometrics** (only for ./Device/Vendor/MSFT)  
+author: nibr
+---
+device-vendor-msft-"></a>**Biometrics** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Node for defining biometric settings. This node was added in Windows 10, version 1511.
 
 <a href="" id="biometrics-usebiometrics--only-for---
@@ -127,7 +135,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
----device-vendor-msft-"></a>**Biometrics/FacialFeaturesUseEnhancedAntiSpoofing** (only for ./Device/Vendor/MSFT)  
+author: nibr
+---
+device-vendor-msft-"></a>**Biometrics/FacialFeaturesUseEnhancedAntiSpoofing** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Boolean value used to enable or disable enhanced anti-spoofing for facial feature recognition on Windows Hello face authentication. This node was added in Windows 10, version 1511.
 
 <p style="margin-left: 20px">Default value is false. If you set this policy to true or don't configure this setting, Windows requires all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. Windows Hello face authentication is disabled on devices that do not support enhanced anti-spoofing.

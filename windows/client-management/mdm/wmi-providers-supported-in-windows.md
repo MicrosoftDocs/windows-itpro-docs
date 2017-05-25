@@ -13,7 +13,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
+author: nibr
 ---
+
 
 # WMI providers supported in Windows 10
 
@@ -227,7 +229,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -242,7 +246,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -257,7 +263,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -272,7 +280,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -287,7 +297,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -302,7 +314,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -317,7 +331,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -332,7 +348,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -347,7 +365,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -362,7 +382,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -377,7 +399,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -392,7 +416,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
------|---
+author: nibr
+---
+--|---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -407,7 +433,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -422,7 +450,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -437,7 +467,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -452,7 +484,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -467,7 +501,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -482,7 +518,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -497,7 +535,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
----|
+author: nibr
+---
+|
 | [**wpcappoverride**](https://msdn.microsoft.com/library/windows/hardware/ms711334)       | ![cross mark](images/checkmark.png)      |
 | [**wpcgameoverride**](https://msdn.microsoft.com/library/windows/hardware/ms711334)      | ![cross mark](images/checkmark.png)      |
 | [**wpcgamessettings**](https://msdn.microsoft.com/library/windows/hardware/ms711334)     | ![cross mark](images/checkmark.png)      |
@@ -529,7 +569,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -544,7 +586,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -559,7 +603,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -574,7 +620,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -589,7 +637,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -604,7 +654,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -619,7 +671,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -634,7 +688,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -649,7 +705,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -664,7 +722,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -679,7 +739,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -694,7 +756,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
------|---
+author: nibr
+---
+--|---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -709,7 +773,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -724,7 +790,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -739,7 +807,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -754,7 +824,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -769,7 +841,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -784,7 +858,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: WMI providers supported in Windows 10
 description: WMI providers supported in Windows 10
 MS-HAID:
@@ -799,7 +875,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
----|
+author: nibr
+---
+|
 [**Win32\_1394Controller**](https://msdn.microsoft.com/library/windows/hardware/aa394059) |
 [**Win32\_BaseBoard**](https://msdn.microsoft.com/library/windows/hardware/aa394072)      |
 [**Win32\_Battery**](https://msdn.microsoft.com/library/windows/hardware/aa394074)        | ![cross mark](images/checkmark.png)

@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # WindowsAdvancedThreatProtection CSP
 
 The Windows Defender Advanced Threat Protection (WDATP) configuration service provider (CSP) allows IT Admins to onboard, determine configuration and health status, and offboard endpoints for WDATP.

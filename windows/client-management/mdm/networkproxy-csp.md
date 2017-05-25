@@ -12,6 +12,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # NetworkProxy CSP
 
 The NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and Wi-Fi connections. These settings do not apply to VPN connections. This CSP was added in Windows 10, version 1703.

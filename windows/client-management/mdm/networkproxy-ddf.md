@@ -12,6 +12,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # NetworkProxy DDF file
 
 This topic shows the OMA DM device description framework (DDF) for the **NetworkProxy** configuration service provider. 

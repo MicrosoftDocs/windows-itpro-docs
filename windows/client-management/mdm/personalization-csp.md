@@ -12,6 +12,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # Personalization CSP
 
 The Personalization CSP can set the lock screen and desktop background images. Setting these policies also prevents the user from changing the image. You can also use the Personalization settings in a provisioning package.

@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # EnterpriseModernAppManagement CSP
 
 The EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps. For details about how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
@@ -193,7 +194,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-----packagefamilyname-packagefullname"></a>**.../*PackageFamilyName*/****_PackageFullName_**  
+---
+-packagefamilyname-packagefullname"></a>**.../*PackageFamilyName*/****_PackageFullName_**  
 <p style="margin-left: 20px">Optional. Full name of the package installed.
 
 <p style="margin-left: 20px">Supported operations are Get and Delete.
@@ -215,7 +217,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-----packagefamilyname-packagefullname-version"></a>**.../*PackageFamilyName*/*PackageFullName*/Version**  
+---
+-packagefamilyname-packagefullname-version"></a>**.../*PackageFamilyName*/*PackageFullName*/Version**  
 <p style="margin-left: 20px">Required. Version of the app. Value type is string.
 
 <p style="margin-left: 20px">Supported operation is Get.
@@ -233,7 +236,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-----packagefamilyname-packagefullname-architecture"></a>**.../*PackageFamilyName*/*PackageFullName*/Architecture**  
+---
+-packagefamilyname-packagefullname-architecture"></a>**.../*PackageFamilyName*/*PackageFullName*/Architecture**  
 <p style="margin-left: 20px">Required. Architecture of installed package. Value type is string.
 
 > [!Note]
@@ -256,7 +260,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-----packagefamilyname-packagefullname-isframework"></a>**.../*PackageFamilyName*/*PackageFullName*/IsFramework**  
+---
+-packagefamilyname-packagefullname-isframework"></a>**.../*PackageFamilyName*/*PackageFullName*/IsFramework**  
 <p style="margin-left: 20px">Required. Whether or not the app is a framework package. Value type is int. The value is 1 if the app is a framework package and 0 (zero) for all other cases.
 
 > [!Note]
@@ -278,7 +283,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-----packagefamilyname-packagefullname-installdate"></a>**.../*PackageFamilyName*/*PackageFullName*/InstallDate**  
+---
+-packagefamilyname-packagefullname-installdate"></a>**.../*PackageFamilyName*/*PackageFullName*/InstallDate**  
 <p style="margin-left: 20px">Required. Date the app was installed. Value type is string.
 
 <p style="margin-left: 20px">Supported operation is Get.
@@ -296,7 +302,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-----packagefamilyname-packagefullname-packagestatus"></a>**.../*PackageFamilyName*/*PackageFullName*/PackageStatus**  
+---
+-packagefamilyname-packagefullname-packagestatus"></a>**.../*PackageFamilyName*/*PackageFullName*/PackageStatus**  
 <p style="margin-left: 20px">Required. Provides information about the status of the package. Value type is int. Valid values are:
 
 -   OK (0) - The package is usable.
@@ -325,7 +332,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-----packagefamilyname-packagefullname-users"></a>**.../*PackageFamilyName*/*PackageFullName*/Users**  
+---
+-packagefamilyname-packagefullname-users"></a>**.../*PackageFamilyName*/*PackageFullName*/Users**  
 <p style="margin-left: 20px">Required. Registered users of the app. If the query is at the device level, it returns all the registered users of the device. If you query the user context, it will only return the current user. Value type is string.
 
 <p style="margin-left: 20px">Supported operation is Get.
@@ -343,7 +351,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-----packagefamilyname-donotupdate"></a>**.../*PackageFamilyName*/DoNotUpdate**  
+---
+-packagefamilyname-donotupdate"></a>**.../*PackageFamilyName*/DoNotUpdate**  
 <p style="margin-left: 20px">Required. Specifies whether you want to block a specific app from being updated via auto-updates.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
@@ -361,7 +370,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----only-for---
+---
+only-for---
 title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
 MSHAttr:
@@ -374,7 +384,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-----packagefamilyname-appsettingpolicy-settingvalue---
+---
+-packagefamilyname-appsettingpolicy-settingvalue---
 title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
 MSHAttr:
@@ -387,7 +398,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----user-vendor-msft-"></a>**.../*PackageFamilyName*/AppSettingPolicy/****_SettingValue_** (only for ./User/Vendor/MSFT)  
+---
+user-vendor-msft-"></a>**.../*PackageFamilyName*/AppSettingPolicy/****_SettingValue_** (only for ./User/Vendor/MSFT)  
 <p style="margin-left: 20px">Added in Windows 10, version 1511. The *SettingValue* and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the Managed.App.Settings container.
 
 <p style="margin-left: 20px">This setting only works for apps that support the feature and it is only supported in the user context.

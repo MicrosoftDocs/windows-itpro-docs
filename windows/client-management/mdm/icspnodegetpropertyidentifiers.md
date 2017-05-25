@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # ICSPNode::GetPropertyIdentifiers
 
 This method returns a list of non-standard properties supported by the node. The returned array must be allocated with `CoTaskMemAlloc`.

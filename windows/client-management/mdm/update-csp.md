@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # Update CSP
 
 The Update configuration service provider enables IT administrators to manage and control the rollout of new updates.

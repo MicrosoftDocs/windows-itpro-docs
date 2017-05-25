@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # Enable offline upgrades to Windows 10 for Windows Embedded 8.1 Handheld devices
 
 

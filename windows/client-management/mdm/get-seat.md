@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # Get seat
 
 The **Get seat** operation retrieves the information about an active seat for a specified user in the Windows Store for Business.

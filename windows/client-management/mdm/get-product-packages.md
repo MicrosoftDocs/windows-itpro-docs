@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # Get product packages
 
 The **Get product packages** operation retrieves the information about applications in the Windows Store for Business.

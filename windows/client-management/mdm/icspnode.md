@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # ICSPNode
 
 This interface does most of the work in a configuration service provider. Each individual node in a configuration service provider tree is represented by a separate implementation of this interface. The actions of a ConfigManager2 client are typically translated into calls to an instance of an ICSPNode.

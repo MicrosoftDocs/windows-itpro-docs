@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # ICSPNode::GetValue
 
 This method gets the value and data type for the node. Interior (non-leaf) nodes may not have a value.

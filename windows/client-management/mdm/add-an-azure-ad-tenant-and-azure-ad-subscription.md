@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # Add an Azure AD tenant and Azure AD subscription
 
 Here's a step-by-step guide to adding an Azure Active Directory tenant, adding an Azure AD subscription, and registering your subscription.

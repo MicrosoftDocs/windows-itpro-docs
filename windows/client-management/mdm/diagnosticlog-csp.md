@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # DiagnosticLog CSP
 
 
@@ -184,7 +185,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-----|---
+---
+-|---
 title: DiagnosticLog CSP
 description: DiagnosticLog CSP
 MSHAttr:
@@ -197,7 +199,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: DiagnosticLog CSP
 description: DiagnosticLog CSP
 MSHAttr:
@@ -210,7 +213,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-----|
+---
+-|
 | 0     | Stopped     |
 | 1     | Started     |
 
@@ -271,7 +275,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-----|---
+---
+-|---
 title: DiagnosticLog CSP
 description: DiagnosticLog CSP
 MSHAttr:
@@ -284,7 +289,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: DiagnosticLog CSP
 description: DiagnosticLog CSP
 MSHAttr:
@@ -297,7 +303,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: DiagnosticLog CSP
 description: DiagnosticLog CSP
 MSHAttr:
@@ -310,7 +317,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
------|
+---
+--|
 | START | Start log tracing. |
 | STOP  | Stop log tracing   |
 

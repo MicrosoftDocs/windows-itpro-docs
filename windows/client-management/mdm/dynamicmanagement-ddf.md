@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # DynamicManagement DDF file
 
 This topic shows the OMA DM device description framework (DDF) for the **DynamicManagement** configuration service provider. 

@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # ICSPNode::DeleteChild
 
 Deletes the specified child node from the configuration service provider node. [ICSPNode::Clear](icspnodeclear.md) must always be called first on the child node that is to be deleted.
@@ -44,7 +45,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
 MSHAttr:
@@ -57,7 +59,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
 MSHAttr:
@@ -70,7 +73,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
 MSHAttr:
@@ -83,7 +87,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
 MSHAttr:
@@ -96,7 +101,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----|---
+---
+|---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
 MSHAttr:
@@ -109,7 +115,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
 MSHAttr:
@@ -122,7 +129,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
 MSHAttr:
@@ -135,7 +143,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
 MSHAttr:
@@ -148,7 +157,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
 MSHAttr:
@@ -161,7 +171,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
 MSHAttr:
@@ -174,7 +185,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
 MSHAttr:
@@ -187,7 +199,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
 MSHAttr:
@@ -200,7 +213,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
------|
+---
+--|
 | CFGMGR\_E\_NODENOTFOUND      | The child node does not exist                    |
 | CFGMGR\_E\_COMMANDNOTALLOWED | The child node to be deleted is a read-only node |
 | S\_OK                        | Success.                                         |

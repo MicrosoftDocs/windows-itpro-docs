@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # Policy CSP - ADMX-backed policies
 
 The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies. This reference topic targets only policies which are backed by ADMX. To understand the difference between traditional MDM and ADMX-backed policies please see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).

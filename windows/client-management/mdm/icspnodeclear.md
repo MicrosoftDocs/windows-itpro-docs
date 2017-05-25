@@ -14,6 +14,7 @@ author: nibr
 ---
 
 
+
 # ICSPNode::Clear
 
 This method deletes the contents and child nodes of the current configuration service provider node. This method is always called on the child node before [ICSPNode::DeleteChild](icspnodedeletechild.md) is called on the parent node.

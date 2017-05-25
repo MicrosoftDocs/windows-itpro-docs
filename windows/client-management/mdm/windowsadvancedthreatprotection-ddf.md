@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # WindowsAdvancedThreatProtection DDF file
 
 This topic shows the OMA DM device description framework (DDF) for the **WindowsAdvancedThreatProtection** configuration service provider. DDF files are used only with OMA DM provisioning XML.

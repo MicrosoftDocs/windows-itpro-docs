@@ -12,6 +12,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # Deploy and configure App-V apps using MDM
 
 ## Executive summary

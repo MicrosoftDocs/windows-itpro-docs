@@ -12,6 +12,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # BitLocker CSP
 
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703.

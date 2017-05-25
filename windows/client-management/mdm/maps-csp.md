@@ -10,7 +10,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
+author: nibr
 ---
+
 
 # Maps CSP
 
@@ -62,7 +64,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: Maps CSP
 description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
 MSHAttr:
@@ -74,7 +78,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: Maps CSP
 description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
 MSHAttr:
@@ -86,7 +92,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: Maps CSP
 description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
 MSHAttr:
@@ -98,7 +106,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: Maps CSP
 description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
 MSHAttr:
@@ -110,7 +120,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-----|---
+author: nibr
+---
+-|---
 title: Maps CSP
 description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
 MSHAttr:
@@ -122,7 +134,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: Maps CSP
 description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
 MSHAttr:
@@ -134,7 +148,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: Maps CSP
 description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
 MSHAttr:
@@ -146,7 +162,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: Maps CSP
 description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
 MSHAttr:
@@ -158,7 +176,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: Maps CSP
 description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
 MSHAttr:
@@ -170,7 +190,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-------
+author: nibr
+---
+---
 title: Maps CSP
 description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
 MSHAttr:
@@ -182,7 +204,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
------|
+author: nibr
+---
+--|
 | **Germany**                   |                                      |
 | Baden-Wuerttemberg            | bab02b93-31c4-413a-b0fe-95a43e186d8c |
 | Bavaria                       | dceea482-12e9-458e-9f0f-21def9a70ed7 |

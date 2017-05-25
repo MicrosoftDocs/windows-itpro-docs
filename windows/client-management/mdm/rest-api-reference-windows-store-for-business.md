@@ -13,7 +13,9 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
+author: nibr
 ---
+
 
 # REST API reference for Windows Store for Business
 

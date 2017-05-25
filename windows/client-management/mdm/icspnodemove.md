@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # ICSPNode::Move
 
 This method moves the node to a new location within the configuration service provider. If the target node already exists, it should be overwritten.

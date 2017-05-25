@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # ClientCertificateInstall CSP
 
 
@@ -71,7 +72,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-----|---
+---
+-|---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -84,7 +86,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -97,7 +100,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -110,7 +114,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -123,7 +128,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -136,7 +142,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -149,7 +156,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -162,7 +170,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -175,7 +184,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -188,7 +198,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -201,7 +212,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -214,7 +226,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -227,7 +240,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -240,7 +254,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -253,7 +268,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -266,7 +282,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -279,7 +296,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -292,7 +310,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -305,7 +324,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -318,7 +338,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -331,7 +352,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -344,7 +366,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -357,7 +380,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -370,7 +394,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -383,7 +408,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -396,7 +422,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -409,7 +436,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -422,7 +450,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -435,7 +464,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -448,7 +478,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -461,7 +492,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -474,7 +506,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -487,7 +520,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -500,7 +534,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -513,7 +548,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -526,7 +562,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -539,7 +576,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -552,7 +590,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -565,7 +604,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -578,7 +618,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -591,7 +632,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -604,7 +646,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -617,7 +660,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -630,7 +674,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -643,7 +688,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -656,7 +702,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -669,7 +716,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -682,7 +730,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -695,7 +744,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -708,7 +758,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -721,7 +772,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -734,7 +786,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -747,7 +800,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -760,7 +814,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -773,7 +828,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -786,7 +842,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -799,7 +856,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -812,7 +870,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -825,7 +884,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -838,7 +898,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -851,7 +912,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -864,7 +926,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -877,7 +940,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -890,7 +954,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -903,7 +968,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -916,7 +982,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -929,7 +996,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -942,7 +1010,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -955,7 +1024,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -968,7 +1038,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
-------
+---
+---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
 MSHAttr:
@@ -981,7 +1052,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----|
+---
+|
 | 1     | Finished successfully                                                                             |
 | 2     | Pending (the device hasn’t finished the action but has received the SCEP server pending response) |
 | 16    | Action failed                                                                                     |

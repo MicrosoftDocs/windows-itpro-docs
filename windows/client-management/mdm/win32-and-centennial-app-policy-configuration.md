@@ -9,6 +9,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # Win32 and Desktop Bridge app policy configuration
   
 ## In this section

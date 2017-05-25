@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # RootCATrustedCertificates CSP
 
 The RootCATrustedCertificates configuration service provider enables the enterprise to set the Root Certificate Authority (CA) certificates.

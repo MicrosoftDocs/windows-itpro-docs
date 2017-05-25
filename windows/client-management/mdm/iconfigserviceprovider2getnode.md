@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # IConfigServiceProvider2::GetNode
 
 

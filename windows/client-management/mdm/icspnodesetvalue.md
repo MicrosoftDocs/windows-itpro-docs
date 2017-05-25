@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # ICSPNode::SetValue
 
 This method sets the value for the configuration service provider node. It is an error to attempt to set the value of an interior node.

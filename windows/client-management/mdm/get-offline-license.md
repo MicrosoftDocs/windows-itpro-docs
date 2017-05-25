@@ -13,6 +13,7 @@ ms.technology: windows
 author: nibr
 ---
 
+
 # Get offline license
 
 The **Get offline license** operation retrieves the offline license information of a product from the Windows Store for Business.
