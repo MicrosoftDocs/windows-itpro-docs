@@ -540,7 +540,7 @@ A student PC that's set up using the Set up School PCs provisioning package is t
     * Customizes the Start layout with Office
     * Installs OneDrive for cloud-based documents and places it on the Start menu and taskbar 
     * Uninstalls apps not specific to education, such as Solitaire
-    * [Gets the student PC ready for use in an education environment](configure-windows-for-education.md)
+    * [Gets the student PC ready for use in an education environment](https://docs.microsoft.com/en-us/education/windows/configure-windows-for-education)
     * Prevents students from adding personal Microsoft accounts to the PC
 
 **To set up a device using the Set up School PCs app**
