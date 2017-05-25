@@ -5,12 +5,14 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
-ms.author: windows-hardware-design-content
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nibr
 ---
+
 
 # Device HealthAttestation CSP
 
@@ -260,25 +262,71 @@ You can use OpenSSL to validate access to DHA-Service. Here is a sample OpenSSL 
 PS C:\openssl> ./openssl.exe s_client -connect has.spserv.microsoft.com:443
 CONNECTED(000001A8)
 ---
-Certificate chain
- 0 s:/CN=*.spserv.microsoft.com
-   i:/C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/OU=Microsoft IT/CN=Microsoft IT SSL SHA2
- 1 s:/C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/OU=Microsoft IT/CN=Microsoft IT SSL SHA2
-   i:/C=IE/O=Baltimore/OU=CyberTrust/CN=Baltimore CyberTrust Root
+title: Device HealthAttestation CSP
+description: Device HealthAttestation CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
 ---
+
 Server certificate
------BEGIN CERTIFICATE-----
+---
+title: Device HealthAttestation CSP
+description: Device HealthAttestation CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+--
 MIIGOTCCBCGgAwIBAgITWgAA1KJb40tpukQoewABAADUojANBgkqhkiG9w0BAQsFA4ICAQCJaKewFQuqQwR5fkAr9kZOmtq5fk03p82eHWLaftXlc4RDvVFp4a2ciSjZL8f3f+XWPVdUj9DAi3bCSddlrcNOPRXNepFC1OEmKtE9jM0r7M8qnqFkIfbNrVNUtPxHoraQeMIgbk0SHEOlShY2GXETVBqZdDZ5Rmk4rA+3ggoeV8hNzm2dfNp0iGSrZzawbLzWU1D2Tped1k5IV63yb+cU/TmM ……………………………………………………………………………………………………………………………………
 ………………………………………………………………………………………………………………………………………………………………………………………………………………………………
 ……………2RXXwogn1UM8TZduCEjz+b05mAkvytugzzaI4wXkCP4OgNyy8gul2z5Gj/51pCTN
------END CERTIFICATE-----
+---
+title: Device HealthAttestation CSP
+description: Device HealthAttestation CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+--
 subject=/CN=*.spserv.microsoft.com
 issuer=/C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/OU=Microsoft IT/CN=Microsoft IT SSL SHA2
 ---
-No client certificate CA names sent
-Peer signing digest: SHA1
-Server Temp Key: ECDH, P-384, 384 bits
+title: Device HealthAttestation CSP
+description: Device HealthAttestation CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
 ---
+
 SSL handshake has read 3681 bytes and written 561 bytes
 New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES256-SHA384
 Server public key is 2048 bit

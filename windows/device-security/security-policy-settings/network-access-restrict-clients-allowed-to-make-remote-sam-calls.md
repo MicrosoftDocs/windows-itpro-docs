@@ -1,4 +1,4 @@
----
+﻿---
 title: Network access - Restrict clients allowed to make remote calls to SAM
 description: Security policy setting that controls which users can enumerate users and groups in the local Security Accounts Manager (SAM) database.
 ms.prod: w10
@@ -28,7 +28,7 @@ The setting was first supported by Windows 10 version 1607 and Windows Server 20
 
 This topic describes the default values for this security policy setting in different versions of Windows.
 By default, computers beginning with Windows 10 version 1607 and Windows Server 2016 are more restrictive than earlier versions of Windows. 
-This means that if you have a mix of computers, such as servers that run both Windows Server 2016 and Windows Server 2012 R2, the servers that run Windows Server 2016 may fail to enumerate accounts by default where the servers that run Windows Server 2012 R2 succeed.
+This means that if you have a mix of computers, such as member servers that run both Windows Server 2016 and Windows Server 2012 R2, the servers that run Windows Server 2016 may fail to enumerate accounts by default where the servers that run Windows Server 2012 R2 succeed.
 
 This topic also covers related events, and how to enable audit mode before constraining the security principals that are allowed to remotely enumerate users and groups so that your environment remains secure without impacting application compatibility. 
 
