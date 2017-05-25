@@ -77,7 +77,7 @@ In this scenario:
 
 - The IT admin of the tenant chooses to turn on the switch for all Azure AD joined devices.
 - Any device that joins the Azure AD will switch automatically to Windows 10 Pro Education.
-- To switch back to Windows 10 Pro, the device reverts seamlessly to Windows 10 Pro.
+- The IT admin has the option to automatically roll back to Windows 10 Pro, if desired. See [Roll back Windows 10 Pro Education to Windows 10 Pro](#roll-back-windows-10-pro-education-to-windows-10-pro).
 
 See [Switch using Microsoft Store for Education](#switch-using-microsoft-store-for-education) for details on how to do this.
 
@@ -161,46 +161,46 @@ Once you enable the setting to switch to Windows 10 Pro Education, the switch wi
 
 1. Sign in to [Microsoft Store for Education](https://businessstore.microsoft.com/) with your work or school account.
 
-  If this is the first time you're signing into the Microsoft Store, you'll be prompted to accept the Microsoft Store for Education Terms of Use.
+  If this is the first time you're signing into the Microsoft Store for Education, you'll be prompted to accept the Microsoft Store for Education Terms of Use.
 
 2. Click **Manage** from the top menu and then select the **Benefits tile**.
-3. In the **Benefits** tile, look for the **Automatic Windows 10 Pro Education switch** link and then click it.
+3. In the **Benefits** tile, look for the **Switch to Windows 10 Pro Education for free** link and then click it.
 
     You will see the following page informing you that your school is eligible to switch free to Windows 10 Pro Education from Windows 10 S or Windows 10 Pro.
-<!-- Comment out the screenshot
+
     **Figure 3** - Switch Windows 10 Pro to Windows 10 Pro Education
 
-    ![Eligible for free Windows 10 Pro to Windows 10 Pro Education switch](images/wsfb_win10_pro_to proedu_upgrade_eligibility_page.png)
---->
-4. Select **I understand enabling this setting will impact all devices running Windows 10 Pro in my organization**.
-5. Click **Send me email with a link to enable this upgrade** to receive an email with a link to the switch.
-<!-- comment out screenshot
-    **Figure 4** - Email notification with a link to enable the switch
+    ![Eligible for free Windows 10 Pro to Windows 10 Pro Education switch](images/msfe_manage_benefits_switchtoproedu.png)
 
-    ![Email with Windows 10 Pro to Pro Education switch link](images/wsfb_win10_pro_to_proedu_email_upgrade_link.png)
---->
-6. Click **Enable the automatic upgrade now** to turn on switches automatically.
-<!--- Comment out screenshot
-    **Figure 5** - Enable the automatic switch
+4. In the **Switch all your devices to Windows 10 Pro Education for free** page, check box next to **I understand enabling this setting will switch all domain-joined devices running Windows 10 Pro or Windows 10 S in my organization**.
 
-    ![Enable the automatic switch](images/wsfb_win10_pro_to proedu_upgrade_enable.png)
---->
-    Enabling the automatic switch also triggers an email message notifying all global administrators in your organization about the switch. It also contains a link that enables any global administrators to cancel the switch if they choose. For more info about rolling back or canceling the switch, see [Roll back Windows 10 Pro Education to Windows 10 Pro](#roll-back-windows-10-pro-education-to-windows-10-pro).
-<!--- Comment out screenshot
-    **Figure 6** - Notification email sent to all global administrators
+    **Figure 4** - Check the box to confirm
 
-    ![Email informing other global admins about the switch](images/wsfb_win10_pro_to proedu_upgrade_email_global_admins.png)
---->
-7. Click **Close** in the **Success** page.
+    ![Check the box to confirm](images/msfe_manage_benefits_checktoconfirm.png)
 
-    In the **Upgrade Windows 10 Pro to Windows 10 Pro Education** page, you will see a message informing you when the switch was enabled and the name of the admin who enabled the switch.
+5. Click **Switch all my devices**. 
 
-<!--- Comment out screenshot
+    A confirmation window pops up to let you know that an email has been sent to you to enable the switch. 
 
-    **Figure 7** - Details about the automatic switch
+6. Close the confirmation window and check the email to proceed to the next step.
+7. In the email, click the link to **Switch to Windows 10 Pro Education**. Once you click the link, this will take you back to the Microsoft Store for Education portal.
 
-    ![Summary page about the switch](images/wsfb_win10_pro_to proedu_upgrade_summary.png)
---->
+    **Figure 5** - Click the link in the email to switch to Windows 10 Pro Education
+
+    ![Click the email link to switch to Windows 10 Pro Education](images/msfe_clickemaillink_switchtoproedu.png)
+
+8. Click **Switch now** in the **Switching your device to Windows 10 Pro Education for free** page in the Microsoft Store. 
+
+    You will see a window that confirms you've successfully switched all the devices in your organization to Windows 10 Pro Education, and each Azure AD joined device running Windows 10 Pro or Windows 10 S will automatically switch the next time someone in your organization signs in to the device.
+
+9. Click **Close** in the **Success** window.
+
+Enabling the automatic switch also triggers an email message notifying all global administrators in your organization about the switch. It also contains a link that enables any global administrators to cancel the switch if they choose. For more info about rolling back or canceling the switch, see [Roll back Windows 10 Pro Education to Windows 10 Pro](#roll-back-windows-10-pro-education-to-windows-10-pro).\
+
+**Figure 6** - Email notifying all global admins about the switch
+
+![Email notifying all global admins about the switch](images/msfe_switchtoproedu_globaladminsemail_cancelswitch)
+
 
 ## Explore the switch experience
 
@@ -228,13 +228,13 @@ If the Windows device is running Windows 10, version 1703, follow these steps.
 
 1. During initial device setup, on the **How would you like to set up?** page, select **Set up for an organization**, and then click **Next**.
 
-    **Figure 3** - Select how you'd like to set up the device
+    **Figure 7** - Select how you'd like to set up the device
 
     ![Select how you'd like to set up the device](images/1_howtosetup.png)
 
 2. On the **Sign in with Microsoft** page, enter the username and password to use with Office 365 or other services from Microsoft, and then click **Next**.
 
-    **Figure 4** - Enter the account details
+    **Figure 8** - Enter the account details
 
     ![Enter the account details you use with Office 365 or other Microsoft services](images/2_signinwithms.png)
 
@@ -247,21 +247,21 @@ If the Windows device is running Windows 10, version 1703, follow these steps.
 
 1.  Go to **Settings > Accounts > Access work or school**.
 
-    **Figure 5** - Go to **Access work or school** in Settings
+    **Figure 9** - Go to **Access work or school** in Settings
 
     ![Go to Access work or school in Settings](images/settings_workorschool_1.png)
 
 2. In **Access work or school**, click **Connect**.
 3. In the **Set up a work or school account** window, click the **Join this device to Azure Active Directory** option at the bottom.
 
-    **Figure 6** - Select the option to join the device to Azure Active Directory
+    **Figure 10** - Select the option to join the device to Azure Active Directory
 
     ![Select the option to join the device to Azure Active Directory](images/settings_setupworkorschoolaccount_2.png)
 
 4. On the **Let's get you signed in** window, enter the Azure AD credentials (username and password) and sign in. This will join the device to the school's Azure AD.
 5. To verify that the device was successfully joined to Azure AD, go back to **Settings > Accounts > Access work or school**. You should now see a connection under the **Connect to work or school** section that indicates the device is connected to Azure AD.
 
-    **Figure 7** - Verify the device connected to Azure AD
+    **Figure 11** - Verify the device connected to Azure AD
 
     ![Verify the device is connected to Azure AD](images/settings_connectedtoazuread_3.png)
 
@@ -275,7 +275,7 @@ Once the device is joined to your Azure AD subscription, the user will sign in b
 
 You can verify the Windows 10 Pro Education in **Settings &gt; Update & Security &gt; Activation**.
 
-**Figure 8** - Windows 10 Pro Education in Settings
+**Figure 12** - Windows 10 Pro Education in Settings
 
 <img src="images/win-10-pro-edu-activated-subscription-active.png" alt="Windows 10 activated and subscription active" />
 
@@ -290,13 +290,12 @@ In some instances, users may experience problems with the Windows 10 Pro Educat
 
 Use the following figures to help you troubleshoot when users experience these common problems:
 
-**Figure 9** - Illustrates a device in a healthy state, where the existing operating system is activated, and the Windows 10 Pro Education switch is active.
+**Figure 13** - Illustrates a device in a healthy state, where the existing operating system is activated, and the Windows 10 Pro Education switch is active.
 
 <img src="images/win-10-pro-edu-activated-subscription-active.png" alt="Windows 10 activated and subscription active" /></br></br>
 
 
-
-**Figure 10** - Illustrates a device on which the existing operating system is not activated, but the Windows 10 Pro Education switch is active.
+**Figure 14** - Illustrates a device on which the existing operating system is not activated, but the Windows 10 Pro Education switch is active.
 
 <img src="images/win-10-pro-edu-not-activated-subscription-active.png" alt="Windows 10 not activated and subscription active" /></br></br>
 
@@ -343,13 +342,17 @@ Once the automatic switch to Windows 10 Pro Education is turned off, the change 
 **To roll back Windows 10 Pro Education to Windows 10 Pro**
 
 1. Log in to [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/Store/Apps) with your school or work account, or follow the link from the notification email to turn off the automatic switch.
-2. Select **Manage > Benefits** and locate the section **Automatic Windows 10 Pro Education switch** and follow the link.
-3. In the **Switch Windows 10 Pro to Windows 10 Pro Education** page, select **Turn off the automatic switch to Windows 10 Pro Education**.
+2. Select **Manage > Benefits** and locate the section **Windows 10 Pro Education** and follow the link.
+3. In the **Revert to Windows 10 Pro** page, click **Revert to Windows 10 Pro**.
+
+    **Figure 15** - Revert to Windows 10 Pro
+
+    ![Revert to Windows 10 Pro](images/msfe_manage_reverttowin10pro.png)
+
 4. You will be asked if you're sure that you want to turn off automatic switches to Windows 10 Pro Education. Click **Yes**.
 5. Click **Close** in the **Success** page.
-6. In the **Switch Windows 10 Pro to Windows 10 Pro Education** page, you will see information on when the switch was disabled.
 
-    If you decide later that you want to turn on automatic switches again, you can do this from the **Upgrade Windows 10 Pro to Windows 10 Pro Education**.
+    All global admins get a confirmation email that a request was made to roll back your organization to Windows 10 Pro. If you, or another global admin, decide later that you want to turn on automatic switches again, you can do this by selecting **Switch to Windows 10 Pro Education for free** from the **Manage > Benefits** in the Microsoft Store for Education.
 
 
 ## Preparing for deployment of Windows 10 Pro Education licenses
@@ -360,7 +363,7 @@ You need to synchronize these identities so that users will have a *single ident
 
 Figure 11 illustrates the integration between the on-premises AD DS domain with Azure AD. [Microsoft Azure Active Directory Connect](http://www.microsoft.com/en-us/download/details.aspx?id=47594) (Azure AD Connect) is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
 
-**Figure 11** - On-premises AD DS integrated with Azure AD
+**Figure 16** - On-premises AD DS integrated with Azure AD
 
 ![Illustration of Azure Active Directory Connect](images/windows-ad-connect.png)
 
