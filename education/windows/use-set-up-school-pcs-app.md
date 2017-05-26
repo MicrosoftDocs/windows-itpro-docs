@@ -34,13 +34,10 @@ Set up School PCs makes it easy to set up Windows 10 PCs with Microsoft's recomm
     * Prevents students from removing the PC from the school's device management system
     * Prevents students from removing the Set up School PCs settings
 - Keeps student PCs up-to-date without interfering with class time using Windows Update and maintenance hours
-
-A student PC that's set up using the Set up School PCs provisioning package is tailored to provide students with the tools they need for learning while removing apps and features that they don't need. 
-    * Customizes the Start layout with Office
-    * Installs OneDrive for cloud-based documents and places it on the Start menu and taskbar 
-    * Uninstalls apps not specific to education, such as Solitaire
-    * [Gets the student PC ready for use in an education environment](configure-windows-for-education.md)
-    * Prevents students from adding personal Microsoft accounts to the PC
+- Customizes the Start layout with Office
+- Installs OneDrive for storing cloud-based documents and Sway for creating interactive reports, presentations, and more
+- Uninstalls apps not specific to education, such as Solitaire
+- Prevents students from adding personal Microsoft accounts to the PC
 
 ## Tips for success
 
