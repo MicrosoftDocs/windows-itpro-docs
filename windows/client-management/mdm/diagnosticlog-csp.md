@@ -7,7 +7,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 
 
@@ -178,7 +178,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 -|---
 title: DiagnosticLog CSP
@@ -189,7 +189,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 ---
 title: DiagnosticLog CSP
@@ -200,7 +200,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 -|
 | 0     | Stopped     |
@@ -259,7 +259,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 -|---
 title: DiagnosticLog CSP
@@ -270,7 +270,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 ---
 title: DiagnosticLog CSP
@@ -281,7 +281,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 ---
 title: DiagnosticLog CSP
@@ -292,7 +292,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 --|
 | START | Start log tracing. |

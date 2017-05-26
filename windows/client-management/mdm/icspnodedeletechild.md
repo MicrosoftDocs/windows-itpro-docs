@@ -7,7 +7,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 
 
@@ -38,7 +38,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 ---
 title: ICSPNode DeleteChild
@@ -49,7 +49,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 ---
 title: ICSPNode DeleteChild
@@ -60,7 +60,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 ---
 title: ICSPNode DeleteChild
@@ -71,7 +71,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 ---
 title: ICSPNode DeleteChild
@@ -82,7 +82,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 |---
 title: ICSPNode DeleteChild
@@ -93,7 +93,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 ---
 title: ICSPNode DeleteChild
@@ -104,7 +104,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 ---
 title: ICSPNode DeleteChild
@@ -115,7 +115,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 ---
 title: ICSPNode DeleteChild
@@ -126,7 +126,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 ---
 title: ICSPNode DeleteChild
@@ -137,7 +137,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 ---
 title: ICSPNode DeleteChild
@@ -148,7 +148,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 ---
 title: ICSPNode DeleteChild
@@ -159,7 +159,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 ---
 title: ICSPNode DeleteChild
@@ -170,7 +170,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 --|
 | CFGMGR\_E\_NODENOTFOUND      | The child node does not exist                    |

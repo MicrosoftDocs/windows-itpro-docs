@@ -7,7 +7,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 
 
@@ -62,7 +62,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 device-vendor-msft-"></a>***TenantId*/Policies/ExcludeSecurityDevices/TPM12** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Some Trusted Platform Modules (TPMs) are compliant only with the older 1.2 revision of the TPM specification defined by the Trusted Computing Group (TCG).
@@ -92,7 +92,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 device-vendor-msft-"></a>***TenantId*/Policies/Remote** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Interior node for defining remote Windows Hello for Business policies. This node was added in Windows 10, version 1511.
@@ -106,7 +106,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 device-vendor-msft-"></a>**Biometrics** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Node for defining biometric settings. This node was added in Windows 10, version 1511.
@@ -120,7 +120,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nickbrower
+author: "Nick Brower"
 ---
 device-vendor-msft-"></a>**Biometrics/FacialFeaturesUseEnhancedAntiSpoofing** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Boolean value used to enable or disable enhanced anti-spoofing for facial feature recognition on Windows Hello face authentication. This node was added in Windows 10, version 1511.
