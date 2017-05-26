@@ -482,7 +482,7 @@ Set up School PCs makes it easy to set up Windows 10 PCs with Microsoft's recomm
     * Prevents students from removing the Set up School PCs settings
 - Keeps student PCs up-to-date without interfering with class time using Windows Update and maintenance hours
 - Customizes the Start layout with Office
-- Installs OneDrive for cloud-based documents and places it on the Start menu and taskbar
+- Installs OneDrive for storing cloud-based documents and Sway for creating interactive reports, presentations, and more
 - Uninstalls apps not specific to education, such as Solitaire
 - Prevents students from adding personal Microsoft accounts to the PC
 
