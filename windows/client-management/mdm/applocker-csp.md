@@ -7,7 +7,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 
 
@@ -344,7 +344,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -355,7 +355,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -366,7 +366,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -377,7 +377,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -388,7 +388,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -399,7 +399,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 |---
 title: AppLocker CSP
@@ -410,7 +410,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -421,7 +421,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -432,7 +432,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -443,7 +443,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -454,7 +454,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -465,7 +465,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -476,7 +476,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -487,7 +487,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -498,7 +498,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -509,7 +509,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -520,7 +520,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -531,7 +531,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 -|---
 title: AppLocker CSP
@@ -542,7 +542,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -553,7 +553,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -564,7 +564,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -575,7 +575,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -586,7 +586,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 ---
 title: AppLocker CSP
@@ -597,7 +597,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 --|
 | Work or school account             | Microsoft.AAD.BrokerPlugin                                              | e5f8b2c4-75ae-45ee-9be8-212e34f77747 |

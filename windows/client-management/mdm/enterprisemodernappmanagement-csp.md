@@ -7,7 +7,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 
 
@@ -187,7 +187,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 -packagefamilyname-packagefullname"></a>**.../*PackageFamilyName*/****_PackageFullName_**  
 <p style="margin-left: 20px">Optional. Full name of the package installed.
@@ -207,7 +207,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 -packagefamilyname-packagefullname-version"></a>**.../*PackageFamilyName*/*PackageFullName*/Version**  
 <p style="margin-left: 20px">Required. Version of the app. Value type is string.
@@ -223,7 +223,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 -packagefamilyname-packagefullname-architecture"></a>**.../*PackageFamilyName*/*PackageFullName*/Architecture**  
 <p style="margin-left: 20px">Required. Architecture of installed package. Value type is string.
@@ -244,7 +244,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 -packagefamilyname-packagefullname-isframework"></a>**.../*PackageFamilyName*/*PackageFullName*/IsFramework**  
 <p style="margin-left: 20px">Required. Whether or not the app is a framework package. Value type is int. The value is 1 if the app is a framework package and 0 (zero) for all other cases.
@@ -264,7 +264,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 -packagefamilyname-packagefullname-installdate"></a>**.../*PackageFamilyName*/*PackageFullName*/InstallDate**  
 <p style="margin-left: 20px">Required. Date the app was installed. Value type is string.
@@ -280,7 +280,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 -packagefamilyname-packagefullname-packagestatus"></a>**.../*PackageFamilyName*/*PackageFullName*/PackageStatus**  
 <p style="margin-left: 20px">Required. Provides information about the status of the package. Value type is int. Valid values are:
@@ -307,7 +307,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 -packagefamilyname-packagefullname-users"></a>**.../*PackageFamilyName*/*PackageFullName*/Users**  
 <p style="margin-left: 20px">Required. Registered users of the app. If the query is at the device level, it returns all the registered users of the device. If you query the user context, it will only return the current user. Value type is string.
@@ -323,7 +323,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 -packagefamilyname-donotupdate"></a>**.../*PackageFamilyName*/DoNotUpdate**  
 <p style="margin-left: 20px">Required. Specifies whether you want to block a specific app from being updated via auto-updates.
@@ -339,7 +339,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 only-for---
 title: EnterpriseModernAppManagement CSP
@@ -350,7 +350,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 -packagefamilyname-appsettingpolicy-settingvalue---
 title: EnterpriseModernAppManagement CSP
@@ -361,7 +361,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: "Nick Brower"
 ---
 user-vendor-msft-"></a>**.../*PackageFamilyName*/AppSettingPolicy/****_SettingValue_** (only for ./User/Vendor/MSFT)  
 <p style="margin-left: 20px">Added in Windows 10, version 1511. The *SettingValue* and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the Managed.App.Settings container.
