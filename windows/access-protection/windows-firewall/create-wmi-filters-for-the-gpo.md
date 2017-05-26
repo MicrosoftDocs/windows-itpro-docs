@@ -85,7 +85,7 @@ First, create the WMI filter and configure it to look for a specified version (o
 
 After you have created a filter with the correct query, link the filter to the GPO. Filters can be reused with many GPOs simultaneously; you do not have to create a new one for each GPO if an existing one meets your needs.
 
-1.  Open theGroup Policy Management console.
+1.  Open the Group Policy Management console.
 
 2.  In the navigation pane, find and then click the GPO that you want to modify.
 
