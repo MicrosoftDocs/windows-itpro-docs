@@ -1,13 +1,16 @@
 ---
 title: VPN CSP
 description: VPN CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 05ca946a-1c0b-4e11-8d7e-854e14740707
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

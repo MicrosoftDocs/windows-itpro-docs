@@ -4,13 +4,16 @@ description: This topic provides information about what's new and breaking chang
 MS-HAID:
 - 'p\_phdevicemgmt.mdm\_enrollment\_and\_management\_overview'
 - 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9C42064F-091C-4901-BC73-9ABE79EE4224
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

@@ -1,13 +1,16 @@
 ---
 title: VPN DDF file
 description: VPN DDF file
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 728FCD9C-0B8E-413B-B54A-CD72C9F2B9EE
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

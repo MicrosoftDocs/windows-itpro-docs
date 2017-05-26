@@ -1,13 +1,16 @@
 ---
 title: EnterpriseAPN DDF
 description: EnterpriseAPN DDF
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: A953ADEF-4523-425F-926C-48DA62EB9E21
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

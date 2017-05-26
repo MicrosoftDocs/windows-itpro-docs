@@ -1,13 +1,16 @@
 ---
 title: PROXY CSP
 description: PROXY CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9904d44c-4a1e-4ae7-a6c7-5dba06cb16ce
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

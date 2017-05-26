@@ -1,13 +1,16 @@
 ---
 title: UnifiedWriteFilter DDF File
 description: UnifiedWriteFilter DDF File
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 23A7316E-A298-43F7-9407-A65155C8CEA6
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

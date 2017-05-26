@@ -1,13 +1,16 @@
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 
@@ -59,783 +62,996 @@ The following image shows the ClientCertificateInstall configuration service pro
 |---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 -|---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 |
 | 1     | Finished successfully                                                                             |

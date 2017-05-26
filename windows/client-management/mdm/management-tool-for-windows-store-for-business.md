@@ -4,13 +4,16 @@ description: The Windows Store for Business has a new web service designed for t
 MS-HAID:
 - 'p\_phdevicemgmt.business\_store\_portal\_management\_tool'
 - 'p\_phDeviceMgmt.management\_tool\_for\_windows\_store\_for\_business'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0E39AE85-1703-4B24-9A7F-831C6455068F
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

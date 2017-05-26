@@ -1,13 +1,16 @@
 ---
 title: Reclaim seat from user
 description: The Reclaim seat from user operation returns reclaimed seats for a user in the Windows Store for Business.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: E2C3C899-D0AD-469A-A319-31A420472A4C
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

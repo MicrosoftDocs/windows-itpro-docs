@@ -1,13 +1,16 @@
 ---
 title: Reboot CSP
 description: Reboot CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4E3F1225-BBAD-40F5-A1AB-FF221B6BAF48
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

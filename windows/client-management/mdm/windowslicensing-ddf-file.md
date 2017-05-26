@@ -1,13 +1,16 @@
 ---
 title: WindowsLicensing DDF file
 description: WindowsLicensing DDF file
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2A24C922-A167-4CEE-8F74-08E7453800D2
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

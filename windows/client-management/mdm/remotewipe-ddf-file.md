@@ -1,13 +1,16 @@
 ---
 title: RemoteWipe DDF file
 description: RemoteWipe DDF file
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 10ec4fb7-f911-4d0c-9a8f-e96bf5faea0c
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

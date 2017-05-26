@@ -1,13 +1,16 @@
 ---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 
@@ -32,145 +35,184 @@ HRESULT DeleteChild([in] IConfigManager2URI* puriChildToDelete);
 |---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 |---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 --|
 | CFGMGR\_E\_NODENOTFOUND      | The child node does not exist                    |

@@ -1,13 +1,16 @@
 ---
 title: DevDetail CSP
 description: DevDetail CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 719bbd2d-508d-439b-b175-0874c7e6c360
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

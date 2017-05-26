@@ -4,13 +4,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 
@@ -93,13 +96,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -107,13 +113,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -121,13 +130,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -135,13 +147,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -149,13 +164,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -163,13 +181,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -177,13 +198,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -191,13 +215,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -205,13 +232,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -219,13 +249,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -233,13 +266,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -247,13 +283,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -261,13 +300,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -275,13 +317,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -289,13 +334,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -303,13 +351,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -317,13 +368,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -331,13 +385,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -345,13 +402,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -359,13 +419,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -373,13 +436,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -387,13 +453,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -401,13 +470,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -415,13 +487,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -429,13 +504,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -443,13 +521,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -457,13 +538,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -471,13 +555,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -485,13 +572,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -499,13 +589,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -513,13 +606,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -527,13 +623,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -541,13 +640,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -555,13 +657,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -569,13 +674,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -583,13 +691,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -597,13 +708,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -611,13 +725,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -625,13 +742,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -639,13 +759,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -653,13 +776,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -667,13 +793,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -681,13 +810,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -695,13 +827,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -709,13 +844,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -723,13 +861,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -737,13 +878,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 |
 | Your device is already connected to an Active Directory domain. | Your device can be connected to only a single Active Directory domain at a time.                                                                                                                                          |
@@ -822,13 +966,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -836,13 +983,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -850,13 +1000,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -864,13 +1017,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -878,13 +1034,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -892,13 +1051,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -906,13 +1068,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -920,13 +1085,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -934,13 +1102,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -948,13 +1119,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -962,13 +1136,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -976,13 +1153,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -990,13 +1170,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1004,13 +1187,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1018,13 +1204,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1032,13 +1221,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1046,13 +1238,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1060,13 +1255,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1074,13 +1272,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1088,13 +1289,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1102,13 +1306,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1116,13 +1323,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1130,13 +1340,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1144,13 +1357,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1158,13 +1374,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1172,13 +1391,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1186,13 +1408,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1200,13 +1425,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1214,13 +1442,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1228,13 +1459,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1242,13 +1476,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1256,13 +1493,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1270,13 +1510,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1284,13 +1527,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1298,13 +1544,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1312,13 +1561,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1326,13 +1578,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1340,13 +1595,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1354,13 +1612,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1368,13 +1629,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1382,13 +1646,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1396,13 +1663,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1410,13 +1680,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1424,13 +1697,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1438,13 +1714,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1452,13 +1731,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1466,13 +1748,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 -|
 | Your device is connected to an Azure AD domain.                 | Your device can only be connected to a single Azure AD domain at a time.                                                                                                                                                   |
@@ -1598,13 +1883,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1612,13 +1900,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1626,13 +1917,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1640,13 +1934,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1654,13 +1951,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1668,13 +1968,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1682,13 +1985,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1696,13 +2002,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1710,13 +2019,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1724,13 +2036,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1738,13 +2053,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1752,13 +2070,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1766,13 +2087,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1780,13 +2104,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1794,13 +2121,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1808,13 +2138,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1822,13 +2155,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1836,13 +2172,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1850,13 +2189,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1864,13 +2206,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1878,13 +2223,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1892,13 +2240,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1906,13 +2257,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1920,13 +2274,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1934,13 +2291,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1948,13 +2308,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1962,13 +2325,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1976,13 +2342,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1990,13 +2359,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2004,13 +2376,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2018,13 +2393,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 --|---
 title: MDM enrollment of Windows-based devices
@@ -2032,13 +2410,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2046,13 +2427,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2060,13 +2444,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2074,13 +2461,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2088,13 +2478,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2102,13 +2495,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2116,13 +2512,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2130,13 +2529,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2144,13 +2546,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2158,13 +2563,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2172,13 +2580,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2186,13 +2597,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2200,13 +2614,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2214,13 +2631,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2228,13 +2648,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2242,13 +2665,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2256,13 +2682,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2270,13 +2699,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 --|---
 title: MDM enrollment of Windows-based devices
@@ -2284,13 +2716,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2298,13 +2733,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2312,13 +2750,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2326,13 +2767,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2340,13 +2784,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2354,13 +2801,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2368,13 +2818,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2382,13 +2835,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2396,13 +2852,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2410,13 +2869,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 --|---
 title: MDM enrollment of Windows-based devices
@@ -2424,13 +2886,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2438,13 +2903,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2452,13 +2920,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2466,13 +2937,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2480,13 +2954,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2494,13 +2971,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2508,13 +2988,16 @@ description: MDM enrollment of Windows-based devices
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 ----|
 | mode      | Describes which mode will be executed in the enrollment app. Added in Windows 10, version 1607| “mdm”                                        |

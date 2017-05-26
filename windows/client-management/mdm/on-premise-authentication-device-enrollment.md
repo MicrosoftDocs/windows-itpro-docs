@@ -1,13 +1,16 @@
 ---
 title: On-premise authentication device enrollment
 description: This section provides an example of the mobile device enrollment protocol using on-premise authentication policy.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 626AC8B4-7575-4C41-8D59-185D607E3A47
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

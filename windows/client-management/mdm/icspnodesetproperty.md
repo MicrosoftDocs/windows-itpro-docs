@@ -1,13 +1,16 @@
 ---
 title: ICSPNode SetProperty
 description: ICSPNode SetProperty
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e235c38f-ea04-4cd8-adec-3c6c0ce7172d
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

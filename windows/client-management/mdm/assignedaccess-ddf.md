@@ -1,13 +1,16 @@
 ---
 title: AssignedAccess DDF
 description: AssignedAccess DDF
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 224FADDB-0EFD-4E5A-AE20-1BD4ABE24306
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

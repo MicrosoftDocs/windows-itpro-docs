@@ -1,13 +1,16 @@
 ---
 title: PassportForWork CSP
 description: The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work).
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3BAE4827-5497-41EE-B47F-5C071ADB2C51
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 
@@ -56,13 +59,16 @@ The following diagram shows the PassportForWork configuration service provider i
 <a href="" id="tenantid-policies-excludesecuritydevices--only-for---
 title: PassportForWork CSP
 description: The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work).
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3BAE4827-5497-41EE-B47F-5C071ADB2C51
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 device-vendor-msft-"></a>***TenantId*/Policies/ExcludeSecurityDevices/TPM12** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Some Trusted Platform Modules (TPMs) are compliant only with the older 1.2 revision of the TPM specification defined by the Trusted Computing Group (TCG).
@@ -86,13 +92,16 @@ This cloud service encrypts a recovery secret, which is stored locally on the cl
 <a href="" id="tenantid-policies-usecertificateforonpremauth--only-for---
 title: PassportForWork CSP
 description: The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work).
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3BAE4827-5497-41EE-B47F-5C071ADB2C51
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 device-vendor-msft-"></a>***TenantId*/Policies/Remote** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Interior node for defining remote Windows Hello for Business policies. This node was added in Windows 10, version 1511.
@@ -100,13 +109,16 @@ device-vendor-msft-"></a>***TenantId*/Policies/Remote** (only for ./Device/Vendo
 <a href="" id="tenantid-policies-remote-useremotepassport--only-for---
 title: PassportForWork CSP
 description: The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work).
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3BAE4827-5497-41EE-B47F-5C071ADB2C51
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 device-vendor-msft-"></a>**Biometrics** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Node for defining biometric settings. This node was added in Windows 10, version 1511.
@@ -114,13 +126,16 @@ device-vendor-msft-"></a>**Biometrics** (only for ./Device/Vendor/MSFT)
 <a href="" id="biometrics-usebiometrics--only-for---
 title: PassportForWork CSP
 description: The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work).
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3BAE4827-5497-41EE-B47F-5C071ADB2C51
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 device-vendor-msft-"></a>**Biometrics/FacialFeaturesUseEnhancedAntiSpoofing** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Boolean value used to enable or disable enhanced anti-spoofing for facial feature recognition on Windows Hello face authentication. This node was added in Windows 10, version 1511.

@@ -1,13 +1,16 @@
 ---
 title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 
@@ -181,13 +184,16 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 <a href="" id="---
 title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 -packagefamilyname-packagefullname"></a>**.../*PackageFamilyName*/****_PackageFullName_**  
 <p style="margin-left: 20px">Optional. Full name of the package installed.
@@ -201,13 +207,16 @@ author: Nick Brower
 <a href="" id="---
 title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 -packagefamilyname-packagefullname-version"></a>**.../*PackageFamilyName*/*PackageFullName*/Version**  
 <p style="margin-left: 20px">Required. Version of the app. Value type is string.
@@ -217,13 +226,16 @@ author: Nick Brower
 <a href="" id="---
 title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 -packagefamilyname-packagefullname-architecture"></a>**.../*PackageFamilyName*/*PackageFullName*/Architecture**  
 <p style="margin-left: 20px">Required. Architecture of installed package. Value type is string.
@@ -238,13 +250,16 @@ author: Nick Brower
 <a href="" id="---
 title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 -packagefamilyname-packagefullname-isframework"></a>**.../*PackageFamilyName*/*PackageFullName*/IsFramework**  
 <p style="margin-left: 20px">Required. Whether or not the app is a framework package. Value type is int. The value is 1 if the app is a framework package and 0 (zero) for all other cases.
@@ -258,13 +273,16 @@ author: Nick Brower
 <a href="" id="---
 title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 -packagefamilyname-packagefullname-installdate"></a>**.../*PackageFamilyName*/*PackageFullName*/InstallDate**  
 <p style="margin-left: 20px">Required. Date the app was installed. Value type is string.
@@ -274,13 +292,16 @@ author: Nick Brower
 <a href="" id="---
 title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 -packagefamilyname-packagefullname-packagestatus"></a>**.../*PackageFamilyName*/*PackageFullName*/PackageStatus**  
 <p style="margin-left: 20px">Required. Provides information about the status of the package. Value type is int. Valid values are:
@@ -301,13 +322,16 @@ author: Nick Brower
 <a href="" id="---
 title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 -packagefamilyname-packagefullname-users"></a>**.../*PackageFamilyName*/*PackageFullName*/Users**  
 <p style="margin-left: 20px">Required. Registered users of the app. If the query is at the device level, it returns all the registered users of the device. If you query the user context, it will only return the current user. Value type is string.
@@ -317,13 +341,16 @@ author: Nick Brower
 <a href="" id="---
 title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 -packagefamilyname-donotupdate"></a>**.../*PackageFamilyName*/DoNotUpdate**  
 <p style="margin-left: 20px">Required. Specifies whether you want to block a specific app from being updated via auto-updates.
@@ -333,35 +360,44 @@ author: Nick Brower
 <a href="" id="---
 title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 only-for---
 title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 -packagefamilyname-appsettingpolicy-settingvalue---
 title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 user-vendor-msft-"></a>**.../*PackageFamilyName*/AppSettingPolicy/****_SettingValue_** (only for ./User/Vendor/MSFT)  
 <p style="margin-left: 20px">Added in Windows 10, version 1511. The *SettingValue* and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the Managed.App.Settings container.

@@ -1,13 +1,16 @@
 ---
 title: SecureAssessment CSP
 description: SecureAssessment CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6808BE4B-961E-4638-BF15-FD7841D1C00A
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

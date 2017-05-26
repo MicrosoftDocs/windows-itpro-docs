@@ -1,13 +1,16 @@
 ---
 title: RemoteRing CSP
 description: RemoteRing CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 70015243-c07f-46cb-a0f9-4b4ad13a5609
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

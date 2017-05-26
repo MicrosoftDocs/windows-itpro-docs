@@ -1,13 +1,16 @@
 ---
 title: SecurityPolicy CSP
 description: SecurityPolicy CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6014f8fe-f91b-49f3-a357-bdf625545bc9
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

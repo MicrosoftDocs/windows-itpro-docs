@@ -1,13 +1,16 @@
 ---
 title: EnterpriseDesktopAppManagement DDF
 description: This topic shows the OMA DM device description framework (DDF) for the EnterpriseDesktopAppManagement configuration service provider.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: EF448602-65AC-4D59-A0E8-779876542FE3
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

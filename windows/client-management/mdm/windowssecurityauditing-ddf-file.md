@@ -1,13 +1,16 @@
 ---
 title: WindowsSecurityAuditing DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the WindowsSecurityAuditing configuration service provider. This CSP was added in Windows 10, version 1511.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B1F9A5FA-185B-48C6-A7F4-0F0F23B971F0
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

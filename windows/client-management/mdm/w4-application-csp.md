@@ -1,13 +1,16 @@
 ---
 title: w4 APPLICATION CSP
 description: w4 APPLICATION CSP
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ef42b82a-1f04-49e4-8a48-bd4e439fc43a
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

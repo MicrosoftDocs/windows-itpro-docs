@@ -1,13 +1,16 @@
 ---
 title: Create a custom configuration service provider
 description: Create a custom configuration service provider
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0cb37f03-5bf2-4451-8276-23f4a1dee33f
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

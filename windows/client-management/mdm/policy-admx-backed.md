@@ -1,13 +1,16 @@
 ---
 title: Policy CSP - ADMX-backed policies
 description: Policy CSP - ADMX-backed policies
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 

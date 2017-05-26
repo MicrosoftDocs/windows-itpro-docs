@@ -1,13 +1,16 @@
 ---
 title: Get product package
 description: The Get product package operation retrieves the information about a specific application in the Windows Store for Business.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4314C65E-6DDC-405C-A591-D66F799A341F
-ms.author: maricia
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: Nick Brower
+author: nibr
 ---
 
 
