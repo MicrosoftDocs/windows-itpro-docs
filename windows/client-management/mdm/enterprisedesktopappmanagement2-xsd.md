@@ -5,12 +5,14 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
-ms.author: windows-hardware-design-content
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nibr
 ---
+
 
 # EnterpriseDesktopAppManagement XSD
 
@@ -78,7 +80,455 @@ The following table describes the various elements and attributes of the XSD fil
  
 
 | Name           | Description                                                                                                                                                                        |
-|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: EnterpriseDesktopAppManagement XSD
+description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---|
 | MsiInstallJob  | Root element                                                                                                                                                                       |
 | id             | The application identifier for the application being installed.                                                                                                                    |
 | Product        | Child element of MsiInstallJob                                                                                                                                                     |
