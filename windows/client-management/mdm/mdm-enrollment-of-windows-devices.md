@@ -13,7 +13,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # MDM enrollment of Windows-based devices
 
 

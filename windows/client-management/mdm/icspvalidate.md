@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # ICSPValidate
 
 This interface is optional. It is called by ConfigManager2 as it batches commands before transactioning begins. This allows the configuration service provider to validate the node before performing specific actions. It is generally only used for configuration service providers that need to expose UI.

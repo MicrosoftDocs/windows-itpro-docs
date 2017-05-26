@@ -13,7 +13,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Management tool for the Windows Store for Business
 
 The Windows Store for Business has a new web service designed for the enterprise to acquire, manage, and distribute applications in bulk. The Store for Business enables several capabilities that are required for the enterprise to manage the lifecycle of applications from acquisition to updates.

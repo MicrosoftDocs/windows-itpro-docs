@@ -13,7 +13,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Design a custom configuration service provider
 
 To design a custom configuration service provider, the OEM must perform the following steps:

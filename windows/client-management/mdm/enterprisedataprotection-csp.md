@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # EnterpriseDataProtection CSP
 
 The EnterpriseDataProtection configuration service provider (CSP) is used to configure Windows Information Protection (WIP) (formerly known as Enterprise Data Protection) specific settings. For more information about WIP, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).

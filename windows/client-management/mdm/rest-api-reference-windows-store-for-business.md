@@ -13,7 +13,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # REST API reference for Windows Store for Business
 
 Here's the list of available operations:

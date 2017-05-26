@@ -13,7 +13,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Server requirements for using OMA DM to manage Windows devices
 
 The following list shows the general server requirements for using OMA DM to manage Windows devices:

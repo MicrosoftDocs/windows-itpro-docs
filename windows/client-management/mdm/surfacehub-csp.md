@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # SurfaceHub CSP
 
 The SurfaceHub configuration service provider (CSP) is used to configure Microsoft Surface Hub settings. This CSP was added in Windows 10, version 1511.

@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # WiFi CSP
 
 

@@ -10,7 +10,6 @@ author: nickbrower
 ---
 
 
-
 # Implement server-side support for mobile application management on Windows 
 
 The Windows version of mobile application management (MAM) is a lightweight solution for managing company data access and security on personal devices. MAM support is built into Windows on top of Windows Information Protection (WIP), starting in Windows 10, version 1703.

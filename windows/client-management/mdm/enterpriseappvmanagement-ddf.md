@@ -9,7 +9,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # EnterpriseAppVManagement DDF file
 
 This topic shows the OMA DM device description framework (DDF) for the **EnterpriseAppVManagement** configuration service provider.  

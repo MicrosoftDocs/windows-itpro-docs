@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # CellularSettings CSP
 
 The CellularSettings configuration service provider is used to configure cellular settings on a mobile device.

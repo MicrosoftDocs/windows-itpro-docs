@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Get seats
 
 The **Get seats** operation retrieves the information about active seats in the Windows Store for Business.

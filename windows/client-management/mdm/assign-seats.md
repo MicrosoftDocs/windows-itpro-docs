@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Assign seat
 
 The **Assign seat** operation assigns seat for a specified user in the Windows Store for Business.

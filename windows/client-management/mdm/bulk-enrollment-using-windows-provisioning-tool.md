@@ -14,7 +14,6 @@ author: nickbrower
 ---
 
 
-
 # Bulk enrollment
 
 Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to re-image the devices. In Windows 10 desktop and mobile devices, you can use the [Provisioning CSP](provisioning-csp.md) for bulk enrollment, except for the Azure Active Directory Join (Cloud Domain Join) enrollment scenario.

@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Get product details
 
 The **Get product details** operation retrieves the product information from the Windows Store for Business for a specific application.

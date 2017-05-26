@@ -9,7 +9,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # EnterpriseAppVManagement CSP
 
 The EnterpriseAppVManagement configuration service provider (CSP) is used to manage virtual applications in Windows 10 PCs (Enterprise and Education editions). This CSP was added in Windows 10, version 1703.

@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Get seats assigned to a user
 
 The **Get seats assigned to a user** operation retrieves information about assigned seats in the Windows Store for Business.

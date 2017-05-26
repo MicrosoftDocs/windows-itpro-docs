@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # ICSPNode::Execute
 
 This method runs a task on an internally-transactioned configuration service provider node by passing in the specified user data and returning a result. The exact meaning of **Execute** and whether it is even supported depends on the purpose of the node. For example, **Execute** called on a node that represents a file should probably **ShellExecute** the file, whereas calling **Execute** on a registry node generally does not make sense.

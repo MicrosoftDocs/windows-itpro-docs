@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # ICSPNode::DeleteProperty
 
 This method deletes a property from a configuration service provider node.

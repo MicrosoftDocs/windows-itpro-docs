@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Enterprise app management
 
 This topic covers one of the key mobile device management (MDM) features in Windows 10 for managing the lifecycle of apps across all of Windows. It is the ability to manage both Store and non-Store apps as part of the native MDM capabilities. New in Windows 10 is the ability to take inventory of all your apps.

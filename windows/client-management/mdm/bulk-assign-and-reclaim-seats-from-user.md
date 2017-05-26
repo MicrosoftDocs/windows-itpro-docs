@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Bulk assign and reclaim seats from users
 
 The **Bulk assign and reclaim seats from users** operation returns reclaimed or assigned seats in the Windows Store for Business.

@@ -13,7 +13,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Get Inventory
 
 The **Get Inventory** operation retrieves information from the Windows Store for Business to determine if new or updated applications are available.

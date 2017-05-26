@@ -13,7 +13,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Enterprise settings, policies, and app management
 
 The actual management interaction between the device and server is done via the DM client. The DM client communicates with the enterprise management server via DM v1.2 SyncML syntax. The full description of the OMA DM protocol v1.2 can be found at the [OMA website](http://go.microsoft.com/fwlink/p/?LinkId=267526).

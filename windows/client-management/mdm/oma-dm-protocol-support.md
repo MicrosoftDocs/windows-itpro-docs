@@ -11,7 +11,6 @@ author: nickbrower
 ---
 
 
-
 # OMA DM protocol support
 
 The OMA DM client communicates with the server over HTTPS and uses DM Sync (OMA DM v1.2) as the message payload. This topic describes the OMA DM functionality that the DM client supports in general. The full description of the OMA DM protocol v1.2 can be found at the [OMA website](http://go.microsoft.com/fwlink/p/?LinkId=267526).

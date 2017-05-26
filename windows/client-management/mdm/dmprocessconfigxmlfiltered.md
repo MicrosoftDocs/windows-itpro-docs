@@ -20,7 +20,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # DMProcessConfigXMLFiltered function
 
 > **Important**  

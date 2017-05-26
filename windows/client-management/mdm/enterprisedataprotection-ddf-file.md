@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # EnterpriseDataProtection DDF file
 
 The following topic shows the OMA DM device description framework (DDF) for the EnterpriseDataProtection configuration service provider.

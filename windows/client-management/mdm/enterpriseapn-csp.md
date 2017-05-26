@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # EnterpriseAPN CSP
 
 The EnterpriseAPN configuration service provider (CSP) is used by the enterprise to provision an APN for the Internet.

@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Get product package
 
 The **Get product package** operation retrieves the information about a specific application in the Windows Store for Business.

@@ -14,7 +14,6 @@ author: nickbrower
 ---
 
 
-
 # Disconnecting from the management infrastructure (unenrollment)
 
 Disconnecting may be initiated either locally by the user from the phone or remotely by the IT admin using management server. User-initiated disconnection is performed much like the initial connection, and it is initiated from the same location in the Setting Control Panel as creating the workplace account. Users may choose to disconnect for any number of reasons, including leaving the company or getting a new device and no longer needing access to their LOB apps on the old device. When an administrator initiates a disconnection, the enrollment client performs the disconnection during its next regular maintenance session. Administrators may choose to disconnect a user’s device after they’ve left the company or because the device is regularly failing to comply with the organization’s security settings policy.

@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # ICSPNode::DeleteChild
 
 Deletes the specified child node from the configuration service provider node. [ICSPNode::Clear](icspnodeclear.md) must always be called first on the child node that is to be deleted.

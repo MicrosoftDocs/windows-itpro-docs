@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Update DDF file
 
 This topic shows the OMA DM device description framework (DDF) for the **Update** configuration service provider. DDF files are used only with OMA DM provisioning XML.

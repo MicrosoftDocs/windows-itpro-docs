@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Samples for writing a custom configuration service provider
 
 The following example shows how to retrieve Integrated Circuit Card Identifier (ICCID) and International Mobile Subscriber Identity (IMSI) for a dual SIM phone.

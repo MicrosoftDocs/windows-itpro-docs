@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # ICSPNode::GetChildNodeNames
 
 This method returns the list of child nodes for a configuration service provider node.

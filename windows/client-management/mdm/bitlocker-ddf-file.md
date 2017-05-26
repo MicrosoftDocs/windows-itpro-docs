@@ -9,7 +9,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # BitLocker DDF file
 
 This topic shows the OMA DM device description framework (DDF) for the **BitLocker** configuration service provider. 

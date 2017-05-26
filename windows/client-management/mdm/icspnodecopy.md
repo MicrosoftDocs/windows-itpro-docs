@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # ICSPNode::Copy
 
 This method makes a copy of the current node at the specified path within the configuration service provider. If the target node exists, it should be overwritten.

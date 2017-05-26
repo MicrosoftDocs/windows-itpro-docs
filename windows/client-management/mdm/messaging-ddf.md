@@ -9,7 +9,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Messaging DDF file
 
 This topic shows the OMA DM device description framework (DDF) for the Messaging configuration service provider. This CSP was added in Windows 10, version 1703.

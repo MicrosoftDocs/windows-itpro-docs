@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Device HealthAttestation CSP
 
 The Device HealthAttestation configuration service provider (DHA-CSP) enables enterprise IT managers to assess if a device is booted to a trusted and compliant state, and take enterprise policy actions.

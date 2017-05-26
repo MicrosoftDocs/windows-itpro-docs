@@ -10,7 +10,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # ICSPNode::SetProperty
 
 This method sets a property value for a configuration service provider node.

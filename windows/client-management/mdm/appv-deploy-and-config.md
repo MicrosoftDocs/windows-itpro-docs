@@ -9,7 +9,6 @@ ms.technology: windows
 author: nickbrower
 ---
 
-
 # Deploy and configure App-V apps using MDM
 
 ## Executive summary
