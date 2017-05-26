@@ -8,11 +8,11 @@ MSHAttr:
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: ABE44EC8-CBE5-4775-BA8A-4564CB73531B
 description: 
-ms.author: exists
+ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # Data structures for Windows Store for Business

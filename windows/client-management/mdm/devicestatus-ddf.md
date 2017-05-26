@@ -5,11 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 780DC6B4-48A5-4F74-9F2E-6E0D88902A45
-ms.author: exists
+ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # DeviceStatus DDF

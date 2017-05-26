@@ -5,12 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: exists
+ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # EnterpriseModernAppManagement CSP
@@ -180,20 +179,35 @@ The following image shows the EnterpriseModernAppManagement configuration servic
 
 <p style="margin-left: 20px">Supported operations are Get and Delete.
 
-<a href="" id="---
-title: EnterpriseModernAppManagement CSP
-description: EnterpriseModernAppManagement CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
-----packagefamilyname-packagefullname"></a>**.../*PackageFamilyName*/****_PackageFullName_**  
+<a href="" id="----packagefamilyname"></a>**.../****_PackageFamilyName_**  
+<p style="margin-left: 20px">Optional. Package family name (PFN) of the app. There is one for each PFN on the device when reporting inventory. These items are rooted under their signing origin.
+
+<p style="margin-left: 20px">Supported operations are Get and Delete.
+
+> [!Note]
+> XAP files use a product ID in place of PackageFamilyName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
+
+
+<p style="margin-left: 20px">Here's an example for uninstalling an app:
+
+``` syntax
+<SyncML xmlns="SYNCML:SYNCML1.2">
+  <SyncBody>
+        <!-- Uninstall app -->
+        <delete>
+           <CmdID>2</CmdID>
+              <Item>
+                 <Target>
+                    <LocURI>./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/%7b12345678-9012-3456-7890-123456789012%7D</LocURI>
+                 </Target>
+              </Item>
+        </delete>
+     <Final/>
+  </SyncBody>
+</SyncML>
+```
+
+<a href="" id="----packagefamilyname-packagefullname"></a>**.../*PackageFamilyName*/****_PackageFullName_**  
 <p style="margin-left: 20px">Optional. Full name of the package installed.
 
 <p style="margin-left: 20px">Supported operations are Get and Delete.
@@ -202,38 +216,22 @@ author: nibr
 > XAP files use a product ID in place of PackageFullName. Here's an example of XAP product ID (including the braces), {12345678-9012-3456-7890-123456789012}.
 
  
-<a href="" id="---
-title: EnterpriseModernAppManagement CSP
-description: EnterpriseModernAppManagement CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
-----packagefamilyname-packagefullname-version"></a>**.../*PackageFamilyName*/*PackageFullName*/Version**  
+<a href="" id="----packagefamilyname-packagefullname-name"></a>**.../*PackageFamilyName*/*PackageFullName*/Name**  
+<p style="margin-left: 20px">Required. Name of the app. Value type is string.
+
+<p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="----packagefamilyname-packagefullname-version"></a>**.../*PackageFamilyName*/*PackageFullName*/Version**  
 <p style="margin-left: 20px">Required. Version of the app. Value type is string.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="---
-title: EnterpriseModernAppManagement CSP
-description: EnterpriseModernAppManagement CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
-----packagefamilyname-packagefullname-architecture"></a>**.../*PackageFamilyName*/*PackageFullName*/Architecture**  
+<a href="" id="----packagefamilyname-packagefullname-publisher"></a>**.../*PackageFamilyName*/*PackageFullName*/Publisher**  
+<p style="margin-left: 20px">Required. Publisher name of the app. Value type is string.
+
+<p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="----packagefamilyname-packagefullname-architecture"></a>**.../*PackageFamilyName*/*PackageFullName*/Architecture**  
 <p style="margin-left: 20px">Required. Architecture of installed package. Value type is string.
 
 > [!Note]
@@ -243,20 +241,17 @@ author: nibr
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="---
-title: EnterpriseModernAppManagement CSP
-description: EnterpriseModernAppManagement CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
-----packagefamilyname-packagefullname-isframework"></a>**.../*PackageFamilyName*/*PackageFullName*/IsFramework**  
+<a href="" id="----packagefamilyname-packagefullname-installlocation"></a>**.../*PackageFamilyName*/*PackageFullName*/InstallLocation**  
+<p style="margin-left: 20px">Required. Install location of the app on the device. Value type is string.
+
+> [!Note]
+> Not applicable to XAP files.
+
+ 
+
+<p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="----packagefamilyname-packagefullname-isframework"></a>**.../*PackageFamilyName*/*PackageFullName*/IsFramework**  
 <p style="margin-left: 20px">Required. Whether or not the app is a framework package. Value type is int. The value is 1 if the app is a framework package and 0 (zero) for all other cases.
 
 > [!Note]
@@ -265,38 +260,26 @@ author: nibr
  
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="---
-title: EnterpriseModernAppManagement CSP
-description: EnterpriseModernAppManagement CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
-----packagefamilyname-packagefullname-installdate"></a>**.../*PackageFamilyName*/*PackageFullName*/InstallDate**  
+<a href="" id="----packagefamilyname-packagefullname-isbundle"></a>**.../*PackageFamilyName*/*PackageFullName*/IsBundle**  
+<p style="margin-left: 20px">Required. The value is 1 if the package is an app bundle and 0 (zero) for all other cases. Value type is int.
+
+<p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="----packagefamilyname-packagefullname-installdate"></a>**.../*PackageFamilyName*/*PackageFullName*/InstallDate**  
 <p style="margin-left: 20px">Required. Date the app was installed. Value type is string.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="---
-title: EnterpriseModernAppManagement CSP
-description: EnterpriseModernAppManagement CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
-----packagefamilyname-packagefullname-packagestatus"></a>**.../*PackageFamilyName*/*PackageFullName*/PackageStatus**  
+<a href="" id="----packagefamilyname-packagefullname-resourceid"></a>**.../*PackageFamilyName*/*PackageFullName*/ResourceID**  
+<p style="margin-left: 20px">Required. Resource ID of the app. This is null for the main app, ~ for a bundle, and contains resource information for resources packages. Value type is string.
+
+> [!Note]
+> Not applicable to XAP files.
+
+ 
+<p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="----packagefamilyname-packagefullname-packagestatus"></a>**.../*PackageFamilyName*/*PackageFullName*/PackageStatus**  
 <p style="margin-left: 20px">Required. Provides information about the status of the package. Value type is int. Valid values are:
 
 -   OK (0) - The package is usable.
@@ -312,82 +295,34 @@ author: nibr
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="---
-title: EnterpriseModernAppManagement CSP
-description: EnterpriseModernAppManagement CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
-----packagefamilyname-packagefullname-users"></a>**.../*PackageFamilyName*/*PackageFullName*/Users**  
+<a href="" id="----packagefamilyname-packagefullname-requiresreinstall"></a>**.../*PackageFamilyName*/*PackageFullName*/RequiresReinstall**  
+<p style="margin-left: 20px">Required. Specifies whether the package state has changed and requires a reinstallation of the app. This can occur when new app resources are required, such as when a device has a change in language preference or a new DPI. It can also occur of the package was corrupted. If the value is 1, reinstallation of the app is performed. Value type is int.
+
+> [!Note]
+> Not applicable to XAP files.
+
+ 
+<p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="----packagefamilyname-packagefullname-users"></a>**.../*PackageFamilyName*/*PackageFullName*/Users**  
 <p style="margin-left: 20px">Required. Registered users of the app. If the query is at the device level, it returns all the registered users of the device. If you query the user context, it will only return the current user. Value type is string.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="---
-title: EnterpriseModernAppManagement CSP
-description: EnterpriseModernAppManagement CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
-----packagefamilyname-donotupdate"></a>**.../*PackageFamilyName*/DoNotUpdate**  
+<a href="" id="----packagefamilyname-packagefullname-isprovisioned"></a>**.../*PackageFamilyName*/*PackageFullName*/IsProvisioned**  
+<p style="margin-left: 20px">Required. The value is 0 or 1 that indicates if the app is provisioned on the device. The value type is int.
+
+<p style="margin-left: 20px">Supported operation is Get.
+
+<a href="" id="----packagefamilyname-donotupdate"></a>**.../*PackageFamilyName*/DoNotUpdate**  
 <p style="margin-left: 20px">Required. Specifies whether you want to block a specific app from being updated via auto-updates.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="---
-title: EnterpriseModernAppManagement CSP
-description: EnterpriseModernAppManagement CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----only-for---
-title: EnterpriseModernAppManagement CSP
-description: EnterpriseModernAppManagement CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
-----packagefamilyname-appsettingpolicy-settingvalue---
-title: EnterpriseModernAppManagement CSP
-description: EnterpriseModernAppManagement CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----user-vendor-msft-"></a>**.../*PackageFamilyName*/AppSettingPolicy/****_SettingValue_** (only for ./User/Vendor/MSFT)  
+<a href="" id="----packagefamilyname-appsettingpolicy---only-for---user-vendor-msft-"></a>**.../*PackageFamilyName*/AppSettingPolicy** (only for ./User/Vendor/MSFT)  
+<p style="margin-left: 20px">Added in Windows 10, version 1511. Interior node for all managed app setting values. This node is only supported in the user context.
+
+<a href="" id="----packagefamilyname-appsettingpolicy-settingvalue---only-for---user-vendor-msft-"></a>**.../*PackageFamilyName*/AppSettingPolicy/****_SettingValue_** (only for ./User/Vendor/MSFT)  
 <p style="margin-left: 20px">Added in Windows 10, version 1511. The *SettingValue* and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the Managed.App.Settings container.
 
 <p style="margin-left: 20px">This setting only works for apps that support the feature and it is only supported in the user context.

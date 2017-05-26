@@ -8,11 +8,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 33B2B248-631B-451F-B534-5DA095C4C8E8
-ms.author: exists
+ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 

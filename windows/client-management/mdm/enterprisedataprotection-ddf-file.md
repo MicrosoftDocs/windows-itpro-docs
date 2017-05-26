@@ -5,11 +5,11 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: C6427C52-76F9-4EE0-98F9-DE278529D459
-ms.author: exists
+ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
 
 # EnterpriseDataProtection DDF file
