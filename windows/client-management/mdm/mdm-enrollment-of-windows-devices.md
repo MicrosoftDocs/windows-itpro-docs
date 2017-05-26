@@ -10,7 +10,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 
 
@@ -99,7 +99,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -113,7 +113,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -127,7 +127,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -141,7 +141,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -155,7 +155,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -169,7 +169,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -183,7 +183,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -197,7 +197,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -211,7 +211,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -225,7 +225,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -239,7 +239,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -253,7 +253,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -267,7 +267,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -281,7 +281,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -295,7 +295,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -309,7 +309,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -323,7 +323,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -337,7 +337,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -351,7 +351,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -365,7 +365,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -379,7 +379,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -393,7 +393,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -407,7 +407,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -421,7 +421,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -435,7 +435,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -449,7 +449,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -463,7 +463,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -477,7 +477,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -491,7 +491,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -505,7 +505,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -519,7 +519,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -533,7 +533,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -547,7 +547,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -561,7 +561,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -575,7 +575,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -589,7 +589,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -603,7 +603,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -617,7 +617,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -631,7 +631,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -645,7 +645,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -659,7 +659,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -673,7 +673,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -687,7 +687,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -701,7 +701,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -715,7 +715,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -729,7 +729,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -743,7 +743,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 |
 | Your device is already connected to an Active Directory domain. | Your device can be connected to only a single Active Directory domain at a time.                                                                                                                                          |
@@ -828,7 +828,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -842,7 +842,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -856,7 +856,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -870,7 +870,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -884,7 +884,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -898,7 +898,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -912,7 +912,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -926,7 +926,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -940,7 +940,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -954,7 +954,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -968,7 +968,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -982,7 +982,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -996,7 +996,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1010,7 +1010,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1024,7 +1024,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1038,7 +1038,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1052,7 +1052,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1066,7 +1066,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1080,7 +1080,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1094,7 +1094,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1108,7 +1108,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1122,7 +1122,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1136,7 +1136,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1150,7 +1150,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1164,7 +1164,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1178,7 +1178,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1192,7 +1192,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1206,7 +1206,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1220,7 +1220,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1234,7 +1234,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1248,7 +1248,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1262,7 +1262,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1276,7 +1276,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1290,7 +1290,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1304,7 +1304,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1318,7 +1318,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1332,7 +1332,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1346,7 +1346,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1360,7 +1360,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1374,7 +1374,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1388,7 +1388,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1402,7 +1402,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1416,7 +1416,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1430,7 +1430,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1444,7 +1444,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1458,7 +1458,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1472,7 +1472,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 -|
 | Your device is connected to an Azure AD domain.                 | Your device can only be connected to a single Azure AD domain at a time.                                                                                                                                                   |
@@ -1604,7 +1604,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1618,7 +1618,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1632,7 +1632,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1646,7 +1646,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1660,7 +1660,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1674,7 +1674,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1688,7 +1688,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1702,7 +1702,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1716,7 +1716,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1730,7 +1730,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1744,7 +1744,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1758,7 +1758,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1772,7 +1772,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1786,7 +1786,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1800,7 +1800,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1814,7 +1814,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1828,7 +1828,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1842,7 +1842,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1856,7 +1856,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1870,7 +1870,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1884,7 +1884,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1898,7 +1898,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1912,7 +1912,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1926,7 +1926,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1940,7 +1940,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1954,7 +1954,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1968,7 +1968,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1982,7 +1982,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -1996,7 +1996,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2010,7 +2010,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2024,7 +2024,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 --|---
 title: MDM enrollment of Windows-based devices
@@ -2038,7 +2038,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2052,7 +2052,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2066,7 +2066,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2080,7 +2080,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2094,7 +2094,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2108,7 +2108,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2122,7 +2122,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2136,7 +2136,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2150,7 +2150,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2164,7 +2164,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2178,7 +2178,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2192,7 +2192,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2206,7 +2206,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2220,7 +2220,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2234,7 +2234,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2248,7 +2248,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2262,7 +2262,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2276,7 +2276,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 --|---
 title: MDM enrollment of Windows-based devices
@@ -2290,7 +2290,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2304,7 +2304,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2318,7 +2318,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2332,7 +2332,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2346,7 +2346,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2360,7 +2360,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2374,7 +2374,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2388,7 +2388,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2402,7 +2402,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2416,7 +2416,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 --|---
 title: MDM enrollment of Windows-based devices
@@ -2430,7 +2430,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2444,7 +2444,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2458,7 +2458,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2472,7 +2472,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2486,7 +2486,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2500,7 +2500,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ---
 title: MDM enrollment of Windows-based devices
@@ -2514,7 +2514,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: nickbrower
 ---
 ----|
 | mode      | Describes which mode will be executed in the enrollment app. Added in Windows 10, version 1607| “mdm”                                        |
