@@ -184,7 +184,7 @@ Field numbers match the numbers in the images below.
     <td class>19</td>
     <td class>LinkToWDATP</td>
     <td class>flexString1</td>
-    <td class>https://securitycenter.windows.com/alert/636210704265059241_673569822</td>
+    <td class>`https://securitycenter.windows.com/alert/636210704265059241_673569822`</td>
     <td class>Value available for every alert.</td>
     <td class></td>
   </tr>
