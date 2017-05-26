@@ -5,14 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: C0DEDD51-4EAD-4F8E-AEE2-CBE9658BCA22
-ms.author: exists
+ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
-
 
 # Win32AppInventory CSP
 

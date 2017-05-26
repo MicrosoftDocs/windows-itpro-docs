@@ -5,14 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2EB02824-65BF-4B40-A338-672D219AF5A0
-ms.author: exists
+ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
-
 
 # RemoteFind CSP
 
