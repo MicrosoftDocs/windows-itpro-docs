@@ -1,15 +1,13 @@
 ---
 title: Certificate authentication device enrollment
 description: This section provides an example of the mobile device enrollment protocol using certificate authentication policy.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 57DB3C9E-E4C9-4275-AAB5-01315F9D3910
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # Certificate authentication device enrollment

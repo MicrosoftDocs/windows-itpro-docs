@@ -1,15 +1,13 @@
 ---
 title: SharedPC DDF file
 description: SharedPC DDF file
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 70234197-07D4-478E-97BB-F6C651C0B970
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # SharedPC DDF file
