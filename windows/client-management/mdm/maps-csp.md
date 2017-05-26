@@ -5,12 +5,14 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
-ms.author: windows-hardware-design-content
+ms.author: exists
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nibr
 ---
+
 
 # Maps CSP
 
@@ -50,7 +52,161 @@ Supported operation is Get. If the map is neither queued, downloading, or instal
 Here is a list of GUIDs of the most downloaded reqions.
 
 | Region                        | GUID                                 |
-|-------------------------------|--------------------------------------|
+|---
+title: Maps CSP
+description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: Maps CSP
+description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: Maps CSP
+description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: Maps CSP
+description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: Maps CSP
+description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+-|---
+title: Maps CSP
+description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: Maps CSP
+description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: Maps CSP
+description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: Maps CSP
+description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: Maps CSP
+description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+---
+title: Maps CSP
+description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
+ms.author: exists
+ms.date: 05/02/2017
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nibr
+---
+--|
 | **Germany**                   |                                      |
 | Baden-Wuerttemberg            | bab02b93-31c4-413a-b0fe-95a43e186d8c |
 | Bavaria                       | dceea482-12e9-458e-9f0f-21def9a70ed7 |
