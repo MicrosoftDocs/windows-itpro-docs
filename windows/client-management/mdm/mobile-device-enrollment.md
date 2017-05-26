@@ -5,14 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 08C8B3DB-3263-414B-A368-F47B94F47A11
-ms.author: exists
+ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
-
 
 # Mobile device enrollment
 

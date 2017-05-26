@@ -5,14 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: E236E468-88F3-402A-BA7A-834ED38DD388
-ms.author: exists
+ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
-
 
 # Update DDF file
 

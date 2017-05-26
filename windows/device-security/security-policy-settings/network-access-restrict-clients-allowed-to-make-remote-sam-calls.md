@@ -56,7 +56,7 @@ This less restrictive default allows for testing the impact of enabling restrict
 |   |   |
 |----|---|
 | Policy Name | Network access: Restrict clients allowed to make remote calls to SAM |
-| Location | Computer Configuration\|Windows Settings\|Security Settings\|Local Policies\|Security Option |
+| Location | Computer Configuration\|Windows Settings\|Security Settings\|Local Policies\|Security Options |
 | Possible values | <br>- Not defined <br>- Defined, along with the security descriptor for users and groups who are allowed or denied to use SAMRPC to remotely access either the local SAM or Active Directory. |
 | Registry location | `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\RestrictRemoteSam` |
 | Registry type | REG_SZ |
@@ -97,7 +97,7 @@ Audit only mode configures the SAMRPC protocol to do the access check against th
 
 |Registry|Details|
 |---|---|
-|Path|HKEY_LOCAL_MACHINE\|SYSTEM\|CurrentControlSet\|Control\|Lsa|
+|Path|HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa|
 |Setting|RestrictRemoteSamAuditOnlyMode|
 |Data Type|REG_DWORD|
 |Value|1|

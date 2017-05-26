@@ -5,14 +5,12 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: ACA5CD79-BBD5-4DD1-86DA-0285B93982BD
-ms.author: exists
+ms.author: windows-hardware-design-content
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
+ms.prod: windows-hardware
+ms.technology: windows-oem
 ---
-
 
 # EnterpriseExt CSP
 
