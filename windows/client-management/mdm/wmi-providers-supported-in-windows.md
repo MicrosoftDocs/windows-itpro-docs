@@ -10,7 +10,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 
 
@@ -223,7 +223,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -237,7 +237,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -251,7 +251,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -265,7 +265,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -279,7 +279,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -293,7 +293,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -307,7 +307,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -321,7 +321,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -335,7 +335,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -349,7 +349,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -363,7 +363,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -377,7 +377,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 --|---
 title: WMI providers supported in Windows 10
@@ -391,7 +391,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -405,7 +405,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -419,7 +419,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -433,7 +433,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -447,7 +447,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -461,7 +461,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -475,7 +475,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 |
 | [**wpcappoverride**](https://msdn.microsoft.com/library/windows/hardware/ms711334)       | ![cross mark](images/checkmark.png)      |
@@ -506,7 +506,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -520,7 +520,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -534,7 +534,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -548,7 +548,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -562,7 +562,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -576,7 +576,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -590,7 +590,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -604,7 +604,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -618,7 +618,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -632,7 +632,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -646,7 +646,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -660,7 +660,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 --|---
 title: WMI providers supported in Windows 10
@@ -674,7 +674,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -688,7 +688,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -702,7 +702,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -716,7 +716,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -730,7 +730,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -744,7 +744,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: WMI providers supported in Windows 10
@@ -758,7 +758,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 |
 [**Win32\_1394Controller**](https://msdn.microsoft.com/library/windows/hardware/aa394059) |

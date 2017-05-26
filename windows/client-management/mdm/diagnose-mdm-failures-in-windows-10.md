@@ -7,7 +7,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 
 
@@ -141,7 +141,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: Diagnose MDM failures in Windows 10
@@ -152,7 +152,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: Diagnose MDM failures in Windows 10
@@ -163,7 +163,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: Diagnose MDM failures in Windows 10
@@ -174,7 +174,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: Diagnose MDM failures in Windows 10
@@ -185,7 +185,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: Diagnose MDM failures in Windows 10
@@ -196,7 +196,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 --|---
 title: Diagnose MDM failures in Windows 10
@@ -207,7 +207,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: Diagnose MDM failures in Windows 10
@@ -218,7 +218,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: Diagnose MDM failures in Windows 10
@@ -229,7 +229,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: Diagnose MDM failures in Windows 10
@@ -240,7 +240,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: Diagnose MDM failures in Windows 10
@@ -251,7 +251,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: Diagnose MDM failures in Windows 10
@@ -262,7 +262,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: Diagnose MDM failures in Windows 10
@@ -273,7 +273,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: Diagnose MDM failures in Windows 10
@@ -284,7 +284,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: Diagnose MDM failures in Windows 10
@@ -295,7 +295,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 --|
 | 099614a5-5dd7-4788-8bc9-e29f43db28fc | Microsoft-Windows-LDAP-Client                          |

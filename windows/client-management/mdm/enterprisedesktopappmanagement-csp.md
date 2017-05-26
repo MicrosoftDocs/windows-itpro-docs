@@ -7,7 +7,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 
 
@@ -62,7 +62,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -73,7 +73,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -84,7 +84,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -95,7 +95,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -106,7 +106,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -117,7 +117,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -128,7 +128,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -139,7 +139,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -150,7 +150,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -161,7 +161,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -172,7 +172,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -183,7 +183,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -194,7 +194,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -205,7 +205,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -216,7 +216,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -227,7 +227,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -238,7 +238,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -249,7 +249,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -260,7 +260,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -271,7 +271,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -282,7 +282,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -293,7 +293,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -304,7 +304,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -315,7 +315,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -326,7 +326,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -337,7 +337,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -348,7 +348,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -359,7 +359,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -370,7 +370,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -381,7 +381,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -392,7 +392,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -403,7 +403,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -414,7 +414,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -425,7 +425,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -436,7 +436,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -447,7 +447,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -458,7 +458,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -469,7 +469,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -480,7 +480,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -491,7 +491,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -502,7 +502,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -513,7 +513,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -524,7 +524,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -535,7 +535,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -546,7 +546,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -557,7 +557,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -568,7 +568,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -579,7 +579,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -590,7 +590,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -601,7 +601,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -612,7 +612,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -623,7 +623,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -634,7 +634,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -645,7 +645,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -656,7 +656,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -667,7 +667,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -678,7 +678,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -689,7 +689,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -700,7 +700,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -711,7 +711,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -722,7 +722,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -733,7 +733,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -744,7 +744,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -755,7 +755,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 |
 | Delete | Operation being performed. The Delete operation is a request to delete the CSP node that represents the specified MSI installed application and to perform and uninstall of the application as part of the process. |
@@ -794,7 +794,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 --|---
 title: EnterpriseDesktopAppManagement CSP
@@ -805,7 +805,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -816,7 +816,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -827,7 +827,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -838,7 +838,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -849,7 +849,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -860,7 +860,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -871,7 +871,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -882,7 +882,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -893,7 +893,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -904,7 +904,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -915,7 +915,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -926,7 +926,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -937,7 +937,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -948,7 +948,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -959,7 +959,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -970,7 +970,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -981,7 +981,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -992,7 +992,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -1003,7 +1003,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -1014,7 +1014,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -1025,7 +1025,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -1036,7 +1036,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -1047,7 +1047,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -1058,7 +1058,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -1069,7 +1069,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: EnterpriseDesktopAppManagement CSP
@@ -1080,7 +1080,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 |
 | Get    | Operation being performed. The Get operation is a request to report the status of the specified MSI installed application.                                 |

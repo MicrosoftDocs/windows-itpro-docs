@@ -7,7 +7,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 
 
@@ -45,7 +45,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: DeviceLock CSP
@@ -56,7 +56,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 ---
 title: DeviceLock CSP
@@ -67,7 +67,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: "Nick Brower"
+author: Nick Brower
 ---
 --mindevicepasswordcomplexcharacters"></a>**DeviceValue/DevicePasswordEnable, …, MinDevicePasswordComplexCharacters**  
 Required. This node has the same set of policy nodes as the **ProviderID** node. All nodes under **DeviceValue** are read-only permanent nodes. Each node represents the current device lock policy. For detailed descriptions of each policy, see the ***ProviderID*** subnode descriptions.
