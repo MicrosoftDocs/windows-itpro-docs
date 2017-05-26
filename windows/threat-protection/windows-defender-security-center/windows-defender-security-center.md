@@ -59,7 +59,7 @@ The Windows Defender Security Center operates as a separate app or process from 
 > [!IMPORTANT]
 > Disabling any one of the features individually will not disable the entire Windows Defender Security Center.
 
-For example, [using a 3rd party antivirus will disable Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus). However, the Windows Defender Security Center will still run, show its icon in the taskbar, and display information about the other features, such as Windows Defender SmartScreen and Windows Frewall.
+For example, [using a 3rd party antivirus will disable Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus). However, the Windows Defender Security Center will still run, show its icon in the taskbar, and display information about the other features, such as Windows Defender SmartScreen and Windows Firewall.
 
 
 See the following links for more information on the features in the Windows Defender Security Center:
