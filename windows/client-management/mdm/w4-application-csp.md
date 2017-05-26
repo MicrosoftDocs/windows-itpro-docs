@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # w4 APPLICATION CSP
 
 

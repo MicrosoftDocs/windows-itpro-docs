@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # Defender CSP
 
 
@@ -83,8 +82,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
--|---
+----|---
 title: Defender CSP
 description: Defender CSP
 MSHAttr:
@@ -97,8 +95,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: Defender CSP
 description: Defender CSP
 MSHAttr:
@@ -111,8 +108,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: Defender CSP
 description: Defender CSP
 MSHAttr:
@@ -125,8 +121,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: Defender CSP
 description: Defender CSP
 MSHAttr:
@@ -139,8 +134,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
------|
+--------|
 | 0     | Invalid                     |
 | 1     | Adware                      |
 | 2     | Spyware                     |

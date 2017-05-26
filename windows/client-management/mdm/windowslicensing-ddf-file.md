@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # WindowsLicensing DDF file
 
 This topic shows the OMA DM device description framework (DDF) for the **WindowsLicensing** configuration service provider. DDF files are used only with OMA DM provisioning XML.

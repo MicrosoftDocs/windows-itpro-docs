@@ -9,9 +9,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
 ---
-
 
 
 # Implement server-side support for mobile application management on Windows 

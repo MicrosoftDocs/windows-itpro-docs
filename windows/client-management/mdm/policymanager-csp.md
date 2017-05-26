@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # PolicyManager CSP
 
 
@@ -65,8 +64,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
-policyname-"></a>**Device/_&lt;AreaName&gt;_/****_&lt;PolicyName&gt;_**  
+---policyname-"></a>**Device/_&lt;AreaName&gt;_/****_&lt;PolicyName&gt;_**  
 Specifies the name/value pair used in the policy. Supported operation is Get.
 
 ## <a href="" id="bkmk-supportedpolicies"></a>List of *&lt;AreaName&gt;*/*&lt;PolicyName&gt;*

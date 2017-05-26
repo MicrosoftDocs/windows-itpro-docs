@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # Using PowerShell scripting with the WMI Bridge Provider
 
 This topic covers using PowerShell Cmdlet scripts to configure per-user and per-device policy settings, as well as how to invoke methods through the [WMI Bridge Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx).

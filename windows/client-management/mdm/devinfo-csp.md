@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # DevInfo CSP
 
 

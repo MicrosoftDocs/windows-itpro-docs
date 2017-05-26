@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # On-premise authentication device enrollment
 
 

@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # Create a custom configuration service provider
 
 Mobile device OEMs can create custom configuration service providers to manage their devices. A configuration service provider includes an interface for creating, editing, and deleting nodes, and the nodes themselves. Each node contains data for one registry value and can optionally support get, set, and delete operations.

@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # Register your free Azure Active Directory subscription
 
 If you have paid subscriptions to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Azure AD. Here's a step-by-step guide to register your free Azure AD subscription using an Office 365 Premium Business subscription.

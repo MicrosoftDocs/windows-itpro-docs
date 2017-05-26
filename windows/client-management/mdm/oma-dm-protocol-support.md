@@ -14,7 +14,6 @@ author: nibr
 ---
 
 
-
 # OMA DM protocol support
 
 The OMA DM client communicates with the server over HTTPS and uses DM Sync (OMA DM v1.2) as the message payload. This topic describes the OMA DM functionality that the DM client supports in general. The full description of the OMA DM protocol v1.2 can be found at the [OMA website](http://go.microsoft.com/fwlink/p/?LinkId=267526).
@@ -368,8 +367,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -382,8 +380,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
--|---
+----|---
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -396,8 +393,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -410,8 +406,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -424,8 +419,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -438,8 +432,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -452,8 +445,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -466,8 +458,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -480,8 +471,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -494,8 +484,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -508,8 +497,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -522,8 +510,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -536,8 +523,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -550,8 +536,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -564,8 +549,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -578,8 +562,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -592,8 +575,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -606,8 +588,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -620,8 +601,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -634,8 +614,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -648,8 +627,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -662,8 +640,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -676,8 +653,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -690,8 +666,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -704,8 +679,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -718,8 +692,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -732,8 +705,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -746,8 +718,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -760,8 +731,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -774,8 +744,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -788,8 +757,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -802,8 +770,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -816,8 +783,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -830,8 +796,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -844,8 +809,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -858,8 +822,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -872,8 +835,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -886,8 +848,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: OMA DM protocol support
 description: OMA DM protocol support
 MSHAttr:
@@ -900,8 +861,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
------|
+--------|
 | 200         | The SyncML command completed successfully.                                                                                                                                                                                        |
 | 202         | Accepted for processing. This is usually an asynchronous operation, such as a request to run a remote execution of an application.                                                                                                |
 | 212         | Authentication accepted. Normally you'll only see this in response to the SyncHdr element (used for authentication in the OMA-DM standard). You may see this if you look at OMA DM logs, but CSPs do not typically generate this. |

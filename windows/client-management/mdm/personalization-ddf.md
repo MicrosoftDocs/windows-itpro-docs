@@ -12,7 +12,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # Personalization DDF file
 
 This topic shows the OMA DM device description framework (DDF) for the **Personalization** configuration service provider.  

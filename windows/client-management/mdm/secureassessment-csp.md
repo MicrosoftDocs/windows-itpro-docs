@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # SecureAssessment CSP
 
 The SecureAssessment configuration service provider is used to provide configuration information for the secure assessment browser.

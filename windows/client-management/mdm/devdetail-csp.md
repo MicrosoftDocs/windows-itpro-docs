@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # DevDetail CSP
 
 The DevDetail configuration service provider handles the management object which provides device-specific parameters to the OMA DM server. These device parameters are not sent from the client to the server automatically, but can be queried by servers using OMA DM commands.

@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # VPN DDF file
 
 

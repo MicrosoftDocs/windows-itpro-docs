@@ -13,9 +13,7 @@ ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
 ---
-
 
 # Server requirements for using OMA DM to manage Windows devices
 

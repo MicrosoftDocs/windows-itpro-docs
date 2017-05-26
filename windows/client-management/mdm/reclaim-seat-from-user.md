@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # Reclaim seat from user
 
 The **Reclaim seat from user** operation returns reclaimed seats for a user in the Windows Store for Business.

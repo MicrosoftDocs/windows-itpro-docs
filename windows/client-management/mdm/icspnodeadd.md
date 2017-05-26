@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # ICSPNode::Add
 
 This method adds an immediate child node to a configuration service provider node and returns a pointer to the new node.

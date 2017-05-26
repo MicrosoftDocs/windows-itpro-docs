@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # Policy DDF file
 
 This topic shows the OMA DM device description framework (DDF) for the **Policy** configuration service provider. DDF files are used only with OMA DM provisioning XML.

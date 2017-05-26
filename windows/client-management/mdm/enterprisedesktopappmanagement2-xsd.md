@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # EnterpriseDesktopAppManagement XSD
 
 
@@ -93,8 +92,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -107,8 +105,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -121,8 +118,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -135,8 +131,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -149,8 +144,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -163,8 +157,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -177,8 +170,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -191,8 +183,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -205,8 +196,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -219,8 +209,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -233,8 +222,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -247,8 +235,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -261,8 +248,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -275,8 +261,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -289,8 +274,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -303,8 +287,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -317,8 +300,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -331,8 +313,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -345,8 +326,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -359,8 +339,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -373,8 +352,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -387,8 +365,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -401,8 +378,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -415,8 +391,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -429,8 +404,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -443,8 +417,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -457,8 +430,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -471,8 +443,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -485,8 +456,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -499,8 +469,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -513,8 +482,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 MSHAttr:
@@ -527,8 +495,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----|
+------|
 | MsiInstallJob  | Root element                                                                                                                                                                       |
 | id             | The application identifier for the application being installed.                                                                                                                    |
 | Product        | Child element of MsiInstallJob                                                                                                                                                     |

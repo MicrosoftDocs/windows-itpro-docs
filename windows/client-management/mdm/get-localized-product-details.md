@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # Get localized product details
 
 The **Get localized product details** operation retrieves the localization information of a product from the Windows Store for Business.

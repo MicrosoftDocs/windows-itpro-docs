@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # Policy CSP
 
 The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.

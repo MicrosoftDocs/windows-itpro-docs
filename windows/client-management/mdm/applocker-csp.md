@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # AppLocker CSP
 
 
@@ -351,8 +350,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -365,8 +363,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -379,8 +376,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -393,8 +389,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -407,8 +402,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -421,8 +415,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
-|---
+---|---
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -435,8 +428,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -449,8 +441,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -463,8 +454,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -477,8 +467,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -491,8 +480,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -505,8 +493,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -519,8 +506,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -533,8 +519,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -547,8 +532,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -561,8 +545,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -575,8 +558,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -589,8 +571,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
--|---
+----|---
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -603,8 +584,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -617,8 +597,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -631,8 +610,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -645,8 +623,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -659,8 +636,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: AppLocker CSP
 description: AppLocker CSP
 MSHAttr:
@@ -673,8 +649,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
---|
+-----|
 | Work or school account             | Microsoft.AAD.BrokerPlugin                                              | e5f8b2c4-75ae-45ee-9be8-212e34f77747 |
 | Email and accounts                 | Microsoft.AccountsControl                                               | 39cf127b-8c67-c149-539a-c02271d07060 |
 | SettingsPageKeyboard               | 5b04b775-356b-4aa0-aaf8-6491ffea5608\_1.1.0.0\_neutral\_\_cw8ffb7c56vgc | 5b04b775-356b-4aa0-aaf8-6491ffea5608 |

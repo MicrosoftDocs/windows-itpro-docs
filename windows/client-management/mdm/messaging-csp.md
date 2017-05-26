@@ -12,7 +12,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # Messaging CSP
 
 The Messaging configuration service provider is used to configure the ability to get text messages audited on a mobile device. This CSP was added in Windows 10, version 1703.

@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # BrowserFavorite CSP
 
 
@@ -47,8 +46,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
----
+------
 title: BrowserFavorite CSP
 description: BrowserFavorite CSP
 MSHAttr:
@@ -61,8 +59,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
--"></a>***favorite name***   
+----"></a>***favorite name***   
 Required. Specifies the user-friendly name of the favorite URL that is displayed in the Favorites list of Internet Explorer.
 
 > **Note**  The *favorite name* should contain only characters that are valid in the Windows file system. The invalid characters are: \\ / : \* ? " &lt; &gt; |

@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # Device HealthAttestation CSP
 
 The Device HealthAttestation configuration service provider (DHA-CSP) enables enterprise IT managers to assess if a device is booted to a trusted and compliant state, and take enterprise policy actions.
@@ -275,7 +274,6 @@ ms.prod: w10
 ms.technology: windows
 author: nibr
 ---
-
 Server certificate
 ---
 title: Device HealthAttestation CSP
@@ -290,8 +288,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
---
+-----
 MIIGOTCCBCGgAwIBAgITWgAA1KJb40tpukQoewABAADUojANBgkqhkiG9w0BAQsFA4ICAQCJaKewFQuqQwR5fkAr9kZOmtq5fk03p82eHWLaftXlc4RDvVFp4a2ciSjZL8f3f+XWPVdUj9DAi3bCSddlrcNOPRXNepFC1OEmKtE9jM0r7M8qnqFkIfbNrVNUtPxHoraQeMIgbk0SHEOlShY2GXETVBqZdDZ5Rmk4rA+3ggoeV8hNzm2dfNp0iGSrZzawbLzWU1D2Tped1k5IV63yb+cU/TmM ……………………………………………………………………………………………………………………………………
 ………………………………………………………………………………………………………………………………………………………………………………………………………………………………
 ……………2RXXwogn1UM8TZduCEjz+b05mAkvytugzzaI4wXkCP4OgNyy8gul2z5Gj/51pCTN
@@ -308,8 +305,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nibr
----
---
+-----
 subject=/CN=*.spserv.microsoft.com
 issuer=/C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/OU=Microsoft IT/CN=Microsoft IT SSL SHA2
 ---
@@ -326,7 +322,6 @@ ms.prod: w10
 ms.technology: windows
 author: nibr
 ---
-
 SSL handshake has read 3681 bytes and written 561 bytes
 New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES256-SHA384
 Server public key is 2048 bit

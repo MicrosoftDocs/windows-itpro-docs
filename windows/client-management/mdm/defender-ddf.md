@@ -13,7 +13,6 @@ ms.technology: windows
 author: nibr
 ---
 
-
 # Defender DDF file
 
 
