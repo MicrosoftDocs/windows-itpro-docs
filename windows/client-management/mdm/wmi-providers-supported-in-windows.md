@@ -4,16 +4,15 @@ description: WMI providers supported in Windows 10
 MS-HAID:
 - 'p\_phdevicemgmt.wmi\_providers\_supported\_in\_windows\_10\_technical\_preview'
 - 'p\_phDeviceMgmt.wmi\_providers\_supported\_in\_windows'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7D533044-AAD7-4B8F-B71B-9D52C15A168A
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
+
 
 # WMI providers supported in Windows 10
 

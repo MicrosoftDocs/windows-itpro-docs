@@ -4,16 +4,15 @@ description: Bulk enrollment is an efficient way to set up a large number of dev
 MS-HAID:
 - 'p\_phdevicemgmt.bulk\_enrollment'
 - 'p\_phDeviceMgmt.bulk\_enrollment\_using\_Windows\_provisioning\_tool'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: DEB98FF3-CC5C-47A1-9277-9EF939716C87
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
+
 
 
 # Bulk enrollment

@@ -1,16 +1,15 @@
 ---
 title: NAPDEF CSP
 description: NAPDEF CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9bcc65dd-a72b-4f90-aba7-4066daa06988
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
+
 
 # NAPDEF CSP
 

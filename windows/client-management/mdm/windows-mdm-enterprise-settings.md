@@ -4,16 +4,15 @@ description: The actual management interaction between the device and server is 
 MS-HAID:
 - 'p\_phdevicemgmt.enterprise\_settings\_\_policies\_\_and\_app\_management'
 - 'p\_phDeviceMgmt.windows\_mdm\_enterprise\_settings'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 92711D65-3022-4789-924B-602BE3187E23
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
+
 
 # Enterprise settings, policies, and app management
 

@@ -4,16 +4,15 @@ description: REST API reference for Windows Store for Business
 MS-HAID:
 - 'p\_phdevicemgmt.business\_store\_portal\_management\_rest\_api\_reference'
 - 'p\_phDeviceMgmt.rest\_api\_reference\_windows\_store\_for\_Business'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8C48A879-525A-471F-B0FD-506E743A7D2F
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
+
 
 # REST API reference for Windows Store for Business
 

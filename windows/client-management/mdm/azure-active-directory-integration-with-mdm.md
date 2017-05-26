@@ -1,16 +1,15 @@
 ---
 title: Azure Active Directory integration with MDM
 description: Azure Active Directory is the world largest enterprise cloud identity management service.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: D03B0765-5B5F-4C7B-9E2B-18E747D504EE
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
+
 
 <head>
 <style type='text/css'> table.topalign td { vertical-align: top } </style>

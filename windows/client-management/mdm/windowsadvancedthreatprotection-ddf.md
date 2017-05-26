@@ -1,16 +1,15 @@
 ---
 title: WindowsAdvancedThreatProtection DDF file
 description: WindowsAdvancedThreatProtection DDF file
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0C62A790-4351-48AF-89FD-7D46C42D13E0
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
+
 
 # WindowsAdvancedThreatProtection DDF file
 

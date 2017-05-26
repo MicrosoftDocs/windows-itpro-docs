@@ -3,17 +3,16 @@ title: Data structures for Windows Store for Business
 MS-HAID:
 - 'p\_phdevicemgmt.business\_store\_data\_structures'
 - 'p\_phDeviceMgmt.data\_structures\_windows\_store\_for\_business'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ABE44EC8-CBE5-4775-BA8A-4564CB73531B
 description: 
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
+
 
 # Data structures for Windows Store for Business
 

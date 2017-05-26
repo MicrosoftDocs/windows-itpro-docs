@@ -4,16 +4,15 @@ description: Windows 10 provides an enterprise management solution to help IT p
 MS-HAID:
 - 'p\_phDeviceMgmt.provisioning\_and\_device\_management'
 - 'p\_phDeviceMgmt.mobile\_device\_management\_windows\_mdm'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 50ac90a7-713e-4487-9cb9-b6d6fdaa4e5b
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
+
 
 # Mobile device management
 

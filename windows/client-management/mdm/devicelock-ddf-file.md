@@ -1,16 +1,15 @@
 ---
 title: DeviceLock DDF file
 description: DeviceLock DDF file
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 46a691b9-6350-4987-bfc7-f8b1eece3ad9
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
+
 
 # DeviceLock DDF file
 
