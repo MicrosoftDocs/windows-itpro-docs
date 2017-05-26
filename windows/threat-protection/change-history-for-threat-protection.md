@@ -14,11 +14,8 @@ This topic lists new and updated topics in the [Threat protection](index.md) doc
 ## March 2017
 |New or changed topic |Description |
 |---------------------|------------|
-|[Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune.md)|Updated based on Windows 10, version 1703.|
 |[How to collect Windows Information Protection (WIP) audit event logs](windows-information-protection\collect-wip-audit-event-logs.md) |New |
 |[Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](windows-information-protection\mandatory-settings-for-wip.md) |Updated based on Windows 10, version 1703. |
-|[Create a Windows Information Protection (WIP) policy using Microsoft Intune](windows-information-protection\create-wip-policy-using-intune.md) |Updated based on Windows 10, version 1703. |
-|[Deploy your Windows Information Protection (WIP) policy using Microsoft Intune](windows-information-protection\deploy-wip-policy-using-intune.md) |Updated based on Windows 10, version 1703.
 |[Limitations while using Windows Information Protection (WIP)](windows-information-protection\limitations-with-wip.md) |Added additional limitations for Windows 10, version 1703.|
 |[Windows Defender SmartScreen overview](windows-defender-smartscreen\windows-defender-smartscreen-overview.md)|New |
 |[Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen\windows-defender-smartscreen-available-settings.md)|New |

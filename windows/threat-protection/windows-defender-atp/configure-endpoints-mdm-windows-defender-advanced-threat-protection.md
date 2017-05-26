@@ -33,7 +33,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Select **Endpoint Management** on the **Navigation pane**.
+    a.  Select **Endpoint management** on the **Navigation pane**.
 
     b.  Select **Mobile Device Management/Microsoft Intune** > **Download package** and save the .zip file.
 
@@ -80,7 +80,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
   ![Microsoft Intune manage deployment](images/atp-intune-manage-deployment.png)
 
-When the policy is deployed and is propagated, endpoints will be shown in the **Machines view**.
+When the policy is deployed and is propagated, endpoints will be shown in the **Machines list**.
 
 You can use the following onboarding policies to deploy configuration settings on endpoints. These policies can be sub-categorized to:
 - Onboarding
@@ -99,12 +99,13 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 > [!NOTE]
 > - The **Health Status for onboarded machines** policy uses read-only properties and can't be remediated.
 > - Configuration of telemetry reporting frequency is only available for machines on Windows 10, version 1703.
+> - Using the Expedite mode might have an impact on the machine's battery usage and actual bandwidth used for sensor data. You should consider this when these measures are critical.
 
 ### Using the Azure Intune Portal to deploy Windows Defender Advanced Threat Protection policies on Windows 10 1607 and higher
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Select **Endpoint Management** on the **Navigation pane**.
+    a.  Select **Endpoint management** on the **Navigation pane**.
 
     b.  Select **Mobile Device Management/Microsoft Intune** > **Download package** and save the .zip file.
 
@@ -156,7 +157,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint Management** on the **Navigation pane**.
+    a. Click **Endpoint management** on the **Navigation pane**.
 
     b. Click the **Endpoint offboarding** section.
 
@@ -180,6 +181,8 @@ Health Status for offboarded machines: Onboarding State | ./Device/Vendor/MSFT/W
 > [!NOTE]
 > The **Health Status for offboarded machines** policy uses read-only properties and can't be remediated.
 
+> [!IMPORTANT]
+> Offboarding causes the machine to stop sending sensor data to the portal but data from the machine, including reference to any alerts it has had will be retained for up to 6 months.
 
 ## Related topics
 - [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)

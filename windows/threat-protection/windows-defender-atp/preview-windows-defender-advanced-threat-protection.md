@@ -34,10 +34,4 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 
 ## Preview features
-
-The following feature is included in the preview release:
-
-- **Machine timeline full verbose and advanced search** <br>
-  You can now see all raw events in the machine timeline without aggregation or filtering. The machine timeline also allows you to do defined search queries based on type:value pairs.
-
-  You can harness the power of using defined search queries and event filter types to sift through the search results. For more information, see [Investigate machines](investigate-machines-windows-defender-advanced-threat-protection.md#search-for-specific-alerts).
+There are currently no preview only features.

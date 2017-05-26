@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: hololens, devices
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: medium
 ---
 

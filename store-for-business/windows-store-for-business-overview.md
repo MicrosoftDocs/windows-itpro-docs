@@ -57,7 +57,7 @@ Microsoft Azure Active Directory (AD) accounts for your employees:
 - Employees need Azure AD account when they access Store for Business content from Windows devices.
 - If you use a management tool to distribute and manage online-licensed apps, all employees will need an Azure AD account
 - For offline-licensed apps, Azure AD accounts are not required for employees.
-- Admins can add or remove user accounts in the Office 365 admin center, even if you don’t have an Office 365 subscrition. You can access the Office 365 admin portal directly from the Microsoft Store for Business and Eduction. 
+- Admins can add or remove user accounts in the Office 365 admin center, even if you don’t have an Office 365 subscription. You can access the Office 365 admin portal directly from the Microsoft Store for Business and Education. 
 
 For more information on Azure AD, see [About Office 365 and Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=708612), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
 
@@ -79,7 +79,7 @@ For more information, see [Sign up for the Store for Business](sign-up-windows-s
 
 ## Set up
 
-After your admin signs up for the Store for Business, they can assign roles to other employees in your company. The admin needs Azure AD User Admin permissions to assign WSFB roles. These are the roles and their permissions.
+After your admin signs up for the Store for Business, they can assign roles to other employees in your company. The admin needs Azure AD User Admin permissions to assign Microsoft Store for Business and Education roles. These are the roles and their permissions.
 
 | Permission | Account settings | Acquire apps | Distribute apps | Device Guard signing |
 | ---------- | ---------------- | ------------ | --------------- | -------------------- |
@@ -129,7 +129,7 @@ App distribution is handled through two channels, either through the Store for B
 - Scoped content distribution – Ability to scope content distribution to specific groups of employees.
 - Install apps for employees – Employees are not responsible for installing apps. Management tool installs apps for employees.
 
-Management tools can synchronize content that has been acquired in the Store for Business. If an offline application has been purchased this will also include the app package, license and metadata for the app (like, icons, count, or localized product descriptions). Using the metadata,management tools can enable portals or apps as a destination for employees to acquire apps.
+Management tools can synchronize content that has been acquired in the Store for Business. If an offline application has been purchased this will also include the app package, license and metadata for the app (like, icons, count, or localized product descriptions). Using the metadata, management tools can enable portals or apps as a destination for employees to acquire apps.
 
 For more information, see [Distribute apps to your employees from the Store for Business](distribute-apps-to-your-employees-windows-store-for-business.md).
 
@@ -137,7 +137,7 @@ For more information, see [Distribute apps to your employees from the Store for 
 
 Once you are signed up with the Business store and have purchased apps, Admins can manage Store for Business settings and inventory.
 
-**Manage Store for Business settings**
+**Manage Microsoft Store for Business settings**
 - Assign and change roles for employees or groups
 - Device Guard signing
 - Register a management server to deploy and install content
@@ -155,7 +155,7 @@ For more information, see [Manage settings in the Store for Business](manage-set
 
 ## Supported markets
 
-Store for Business is currently available in these markets.
+Microsoft Store for Business and Education is currently available in these markets.
 
 <table>
    <tr>
