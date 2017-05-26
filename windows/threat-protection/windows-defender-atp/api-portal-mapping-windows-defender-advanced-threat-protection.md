@@ -29,236 +29,236 @@ Field numbers match the numbers in the images below.
 
 <table style="table-layout:fixed;width:100%" >
   <tr>
-    <th class="tg-yw4l">Portal label</th>
-    <th class="tg-yw4l">SIEM field name</th>
-    <th class="tg-yw4l">ArcSight field</th>
-    <th class="tg-yw4l">Example value</th>
-    <th class="tg-yw4l">Description</th>
-    <th class="tg-yw4l"></th>
+    <th class>Portal label</th>
+    <th class>SIEM field name</th>
+    <th class>ArcSight field</th>
+    <th class>Example value</th>
+    <th class>Description</th>
+    <th class></th>
   </tr>
   <tr>
-    <td class="tg-yw4l">1</td>
-    <td class="tg-yw4l">AlertTitle</td>
-    <td class="tg-yw4l">name</td>
-    <td class="tg-yw4l">A dll was unexpectedly loaded into a high integrity process without a UAC prompt</td>
-    <td class="tg-yw4l">Value available for every alert.</td>
-    <td class="tg-yw4l"></td>
+    <td class>1</td>
+    <td class>AlertTitle</td>
+    <td class>name</td>
+    <td class>A dll was unexpectedly loaded into a high integrity process without a UAC prompt</td>
+    <td class>Value available for every alert.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">2</td>
-    <td class="tg-yw4l">Severity</td>
-    <td class="tg-yw4l">deviceSeverity</td>
-    <td class="tg-yw4l">Medium</td>
-    <td class="tg-yw4l">Value available for every alert.</td>
-    <td class="tg-yw4l"></td>
+    <td class>2</td>
+    <td class>Severity</td>
+    <td class>deviceSeverity</td>
+    <td class>Medium</td>
+    <td class>Value available for every alert.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">3</td>
-    <td class="tg-yw4l">Category</td>
-    <td class="tg-yw4l">deviceEventCategory</td>
-    <td class="tg-yw4l">Privilege Escalation</td>
-    <td class="tg-yw4l">Value available for every alert.</td>
-    <td class="tg-yw4l"></td>
+    <td class>3</td>
+    <td class>Category</td>
+    <td class>deviceEventCategory</td>
+    <td class>Privilege Escalation</td>
+    <td class>Value available for every alert.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">4</td>
-    <td class="tg-yw4l">Source</td>
-    <td class="tg-yw4l">sourceServiceName</td>
-    <td class="tg-yw4l">WindowsDefenderATP</td>
-    <td class="tg-yw4l">Windows Defender Antivirus or Windows Defender ATP. Value available for every alert.</td>
-    <td class="tg-yw4l"></td>
+    <td class>4</td>
+    <td class>Source</td>
+    <td class>sourceServiceName</td>
+    <td class>WindowsDefenderATP</td>
+    <td class>Windows Defender Antivirus or Windows Defender ATP. Value available for every alert.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">5</td>
-    <td class="tg-yw4l">MachineName</td>
-    <td class="tg-yw4l">sourceHostName</td>
-    <td class="tg-yw4l">liz-bean</td>
-    <td class="tg-yw4l">Value available for every alert.</td>
-    <td class="tg-yw4l"></td>
+    <td class>5</td>
+    <td class>MachineName</td>
+    <td class>sourceHostName</td>
+    <td class>liz-bean</td>
+    <td class>Value available for every alert.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">6</td>
-    <td class="tg-yw4l">FileName</td>
-    <td class="tg-yw4l">fileName</td>
-    <td class="tg-yw4l">Robocopy.exe</td>
-    <td class="tg-yw4l">Available for alerts associated with a file or process.</td>
-    <td class="tg-yw4l"></td>
+    <td class>6</td>
+    <td class>FileName</td>
+    <td class>fileName</td>
+    <td class>Robocopy.exe</td>
+    <td class>Available for alerts associated with a file or process.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">7</td>
-    <td class="tg-yw4l">FilePath</td>
-    <td class="tg-yw4l">filePath</td>
-    <td class="tg-yw4l">C:\Windows\System32\Robocopy.exe</td>
-    <td class="tg-yw4l">Available for alerts associated with a file or process. \</td>
-    <td class="tg-yw4l"></td>
+    <td class>7</td>
+    <td class>FilePath</td>
+    <td class>filePath</td>
+    <td class>C:\Windows\System32\Robocopy.exe</td>
+    <td class>Available for alerts associated with a file or process. \</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">8</td>
-    <td class="tg-yw4l">UserDomain</td>
-    <td class="tg-yw4l">sourceNtDomain</td>
-    <td class="tg-yw4l">contoso</td>
-    <td class="tg-yw4l">The domain of the user context running the activity, available for Windows Defender ATP behavioral based alerts.</td>
-    <td class="tg-yw4l"></td>
+    <td class>8</td>
+    <td class>UserDomain</td>
+    <td class>sourceNtDomain</td>
+    <td class>contoso</td>
+    <td class>The domain of the user context running the activity, available for Windows Defender ATP behavioral based alerts.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">9</td>
-    <td class="tg-yw4l">UserName</td>
-    <td class="tg-yw4l">sourceUserName</td>
-    <td class="tg-yw4l">liz-bean</td>
-    <td class="tg-yw4l">The user context running the activity, available for Windows Defender ATP behavioral based alerts.</td>
-    <td class="tg-yw4l"></td>
+    <td class>9</td>
+    <td class>UserName</td>
+    <td class>sourceUserName</td>
+    <td class>liz-bean</td>
+    <td class>The user context running the activity, available for Windows Defender ATP behavioral based alerts.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">10</td>
-    <td class="tg-yw4l">Sha1</td>
-    <td class="tg-yw4l">fileHash</td>
-    <td class="tg-yw4l">5b4b3985339529be3151d331395f667e1d5b7f35</td>
-    <td class="tg-yw4l">Available for alerts associated with a file or process.</td>
-    <td class="tg-yw4l"></td>
+    <td class>10</td>
+    <td class>Sha1</td>
+    <td class>fileHash</td>
+    <td class>5b4b3985339529be3151d331395f667e1d5b7f35</td>
+    <td class>Available for alerts associated with a file or process.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">11</td>
-    <td class="tg-yw4l">Md5</td>
-    <td class="tg-yw4l">deviceCustomString5</td>
-    <td class="tg-yw4l">55394b85cb5edddff551f6f3faa9d8eb</td>
-    <td class="tg-yw4l">Available for Windows Defender AV alerts.</td>
-    <td class="tg-yw4l"></td>
+    <td class>11</td>
+    <td class>Md5</td>
+    <td class>deviceCustomString5</td>
+    <td class>55394b85cb5edddff551f6f3faa9d8eb</td>
+    <td class>Available for Windows Defender AV alerts.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">12</td>
-    <td class="tg-yw4l">Sha256</td>
-    <td class="tg-yw4l">deviceCustomString6</td>
-    <td class="tg-yw4l">9987474deb9f457ece2a9533a08ec173a0986fa3aa6ac355eeba5b622e4a43f5</td>
-    <td class="tg-yw4l">Available for Windows Defender AV alerts.</td>
-    <td class="tg-yw4l"></td>
+    <td class>12</td>
+    <td class>Sha256</td>
+    <td class>deviceCustomString6</td>
+    <td class>9987474deb9f457ece2a9533a08ec173a0986fa3aa6ac355eeba5b622e4a43f5</td>
+    <td class>Available for Windows Defender AV alerts.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">13</td>
-    <td class="tg-yw4l">ThreatName</td>
-    <td class="tg-yw4l">eviceCustomString1</td>
-    <td class="tg-yw4l">Trojan:Win32/Skeeyah.A!bit</td>
-    <td class="tg-yw4l">Available for Windows Defender AV alerts.</td>
-    <td class="tg-yw4l"></td>
+    <td class>13</td>
+    <td class>ThreatName</td>
+    <td class>eviceCustomString1</td>
+    <td class>Trojan:Win32/Skeeyah.A!bit</td>
+    <td class>Available for Windows Defender AV alerts.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">14</td>
-    <td class="tg-yw4l">IpAddress</td>
-    <td class="tg-yw4l">sourceAddress</td>
-    <td class="tg-yw4l">218.90.204.141</td>
-    <td class="tg-yw4l">Available for alerts associated to network events. For example, 'Communication to a malicious network destination'.</td>
-    <td class="tg-yw4l"></td>
+    <td class>14</td>
+    <td class>IpAddress</td>
+    <td class>sourceAddress</td>
+    <td class>218.90.204.141</td>
+    <td class>Available for alerts associated to network events. For example, 'Communication to a malicious network destination'.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">15</td>
-    <td class="tg-yw4l">Url</td>
-    <td class="tg-yw4l">requestUrl</td>
-    <td class="tg-yw4l">down.esales360.cn</td>
-    <td class="tg-yw4l">Availabe for alerts associated to network events. For example, 'Communication to a malicious network destination'.</td>
-    <td class="tg-yw4l"></td>
+    <td class>15</td>
+    <td class>Url</td>
+    <td class>requestUrl</td>
+    <td class>down.esales360.cn</td>
+    <td class>Availabe for alerts associated to network events. For example, 'Communication to a malicious network destination'.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">16</td>
-    <td class="tg-yw4l">RemediationIsSuccess</td>
-    <td class="tg-yw4l">deviceCustomNumber2</td>
-    <td class="tg-yw4l">TRUE</td>
-    <td class="tg-yw4l">Available for Windows Defender AV alerts. ArcSight value is 1 when TRUE and 0 when FALSE.</td>
-    <td class="tg-yw4l"></td>
+    <td class>16</td>
+    <td class>RemediationIsSuccess</td>
+    <td class>deviceCustomNumber2</td>
+    <td class>TRUE</td>
+    <td class>Available for Windows Defender AV alerts. ArcSight value is 1 when TRUE and 0 when FALSE.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">17</td>
-    <td class="tg-yw4l">WasExecutingWhileDetected</td>
-    <td class="tg-yw4l">deviceCustomNumber1</td>
-    <td class="tg-yw4l">FALSE</td>
-    <td class="tg-yw4l">Available for Windows Defender AV alerts. ArcSight value is 1 when TRUE and 0 when FALSE.</td>
-    <td class="tg-yw4l"></td>
+    <td class>17</td>
+    <td class>WasExecutingWhileDetected</td>
+    <td class>deviceCustomNumber1</td>
+    <td class>FALSE</td>
+    <td class>Available for Windows Defender AV alerts. ArcSight value is 1 when TRUE and 0 when FALSE.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">18</td>
-    <td class="tg-yw4l">AlertId</td>
-    <td class="tg-yw4l">externalId</td>
-    <td class="tg-yw4l">636210704265059241_673569822</td>
-    <td class="tg-yw4l">Value available for every alert.</td>
-    <td class="tg-yw4l"></td>
+    <td class>18</td>
+    <td class>AlertId</td>
+    <td class>externalId</td>
+    <td class>636210704265059241_673569822</td>
+    <td class>Value available for every alert.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">19</td>
-    <td class="tg-yw4l">LinkToWDATP</td>
-    <td class="tg-yw4l">flexString1</td>
-    <td class="tg-yw4l">https://securitycenter.windows.com/alert/636210704265059241_673569822</td>
-    <td class="tg-yw4l">Value available for every alert.</td>
-    <td class="tg-yw4l"></td>
+    <td class>19</td>
+    <td class>LinkToWDATP</td>
+    <td class>flexString1</td>
+    <td class>https://securitycenter.windows.com/alert/636210704265059241_673569822</td>
+    <td class>Value available for every alert.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">20</td>
-    <td class="tg-yw4l">AlertTime</td>
-    <td class="tg-yw4l">deviceReceiptTime</td>
-    <td class="tg-yw4l">2017-05-07T01:56:59.3191352Z</td>
-    <td class="tg-yw4l">The time the activity relevant to the alert occurred. Value available for every alert.</td>
-    <td class="tg-yw4l"></td>
+    <td class>20</td>
+    <td class>AlertTime</td>
+    <td class>deviceReceiptTime</td>
+    <td class>2017-05-07T01:56:59.3191352Z</td>
+    <td class>The time the activity relevant to the alert occurred. Value available for every alert.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">21</td>
-    <td class="tg-yw4l">MachineDomain</td>
-    <td class="tg-yw4l">sourceDnsDomain</td>
-    <td class="tg-yw4l">contoso.com</td>
-    <td class="tg-yw4l">Domain name not relevant for AAD joined machines. Value available for every alert.</td>
-    <td class="tg-yw4l"></td>
+    <td class>21</td>
+    <td class>MachineDomain</td>
+    <td class>sourceDnsDomain</td>
+    <td class>contoso.com</td>
+    <td class>Domain name not relevant for AAD joined machines. Value available for every alert.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">22</td>
-    <td class="tg-yw4l">Actor</td>
-    <td class="tg-yw4l">deviceCustomString4</td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">Available for alerts related to a known actor group.</td>
-    <td class="tg-yw4l"></td>
+    <td class>22</td>
+    <td class>Actor</td>
+    <td class>deviceCustomString4</td>
+    <td class></td>
+    <td class>Available for alerts related to a known actor group.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">21+5</td>
-    <td class="tg-yw4l">ComputerDnsName</td>
-    <td class="tg-yw4l">No mapping</td>
-    <td class="tg-yw4l">liz-bean.contoso.com</td>
-    <td class="tg-yw4l">The machine fully qualified domain name. Value available for every alert.</td>
-    <td class="tg-yw4l"></td>
+    <td class>21+5</td>
+    <td class>ComputerDnsName</td>
+    <td class>No mapping</td>
+    <td class>liz-bean.contoso.com</td>
+    <td class>The machine fully qualified domain name. Value available for every alert.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">LogOnUsers</td>
-    <td class="tg-yw4l">sourceUserId</td>
-    <td class="tg-yw4l">contoso\liz-bean; contoso\jay-hardee</td>
-    <td class="tg-yw4l">The domain and user of the interactive logon user/s at the time of the event. Note: For machines on Windows 10 version 1607, the domain information will not be available.</td>
-    <td class="tg-yw4l"></td>
+    <td class></td>
+    <td class>LogOnUsers</td>
+    <td class>sourceUserId</td>
+    <td class>contoso\liz-bean; contoso\jay-hardee</td>
+    <td class>The domain and user of the interactive logon user/s at the time of the event. Note: For machines on Windows 10 version 1607, the domain information will not be available.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Internal field</td>
-    <td class="tg-yw4l">LastProcessedTimeUtc</td>
-    <td class="tg-yw4l">No mapping</td>
-    <td class="tg-yw4l">2017-05-07T01:56:58.9936648Z</td>
-    <td class="tg-yw4l">Time when event arrived at the backend. This field can be used when setting the request parameter for the range of time that alerts are retrieved.</td>
-    <td class="tg-yw4l"></td>
+    <td class>Internal field</td>
+    <td class>LastProcessedTimeUtc</td>
+    <td class>No mapping</td>
+    <td class>2017-05-07T01:56:58.9936648Z</td>
+    <td class>Time when event arrived at the backend. This field can be used when setting the request parameter for the range of time that alerts are retrieved.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">Not part of the schema</td>
-    <td class="tg-yw4l">deviceVendor</td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">Static value in the ArcSight mapping - 'Microsoft'.</td>
-    <td class="tg-yw4l"></td>
+    <td class></td>
+    <td class>Not part of the schema</td>
+    <td class>deviceVendor</td>
+    <td class></td>
+    <td class>Static value in the ArcSight mapping - 'Microsoft'.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">Not part of the schema</td>
-    <td class="tg-yw4l">deviceProduct</td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">Static value in the ArcSight mapping - 'Windows Defender ATP'.</td>
-    <td class="tg-yw4l"></td>
+    <td class></td>
+    <td class>Not part of the schema</td>
+    <td class>deviceProduct</td>
+    <td class></td>
+    <td class>Static value in the ArcSight mapping - 'Windows Defender ATP'.</td>
+    <td class></td>
   </tr>
   <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">Not part of the schema</td>
-    <td class="tg-yw4l">deviceVersion</td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">Static value in the ArcSight mapping - '2.0', used to identify the mapping versions.</td>
-    <td class="tg-yw4l"></td>
+    <td class></td>
+    <td class>Not part of the schema</td>
+    <td class>deviceVersion</td>
+    <td class></td>
+    <td class>Static value in the ArcSight mapping - '2.0', used to identify the mapping versions.</td>
+    <td class></td>
   </tr>
 </table>
 
