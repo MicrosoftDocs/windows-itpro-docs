@@ -1,16 +1,13 @@
 ---
 title: BOOTSTRAP CSP
 description: BOOTSTRAP CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b8acbddc-347f-4543-a45b-ad2ffae3ffd0
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

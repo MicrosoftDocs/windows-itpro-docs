@@ -1,16 +1,13 @@
 ---
 title: WiFi DDF file
 description: WiFi DDF file
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 00DE1DA7-23DE-4871-B3F0-28EB29A62D61
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

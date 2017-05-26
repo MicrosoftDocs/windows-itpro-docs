@@ -1,16 +1,13 @@
 ---
 title: Device HealthAttestation CSP
 description: Device HealthAttestation CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 
@@ -264,32 +261,26 @@ CONNECTED(000001A8)
 ---
 title: Device HealthAttestation CSP
 description: Device HealthAttestation CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 Server certificate
 ---
 title: Device HealthAttestation CSP
 description: Device HealthAttestation CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 --
 MIIGOTCCBCGgAwIBAgITWgAA1KJb40tpukQoewABAADUojANBgkqhkiG9w0BAQsFA4ICAQCJaKewFQuqQwR5fkAr9kZOmtq5fk03p82eHWLaftXlc4RDvVFp4a2ciSjZL8f3f+XWPVdUj9DAi3bCSddlrcNOPRXNepFC1OEmKtE9jM0r7M8qnqFkIfbNrVNUtPxHoraQeMIgbk0SHEOlShY2GXETVBqZdDZ5Rmk4rA+3ggoeV8hNzm2dfNp0iGSrZzawbLzWU1D2Tped1k5IV63yb+cU/TmM ……………………………………………………………………………………………………………………………………
@@ -298,16 +289,13 @@ MIIGOTCCBCGgAwIBAgITWgAA1KJb40tpukQoewABAADUojANBgkqhkiG9w0BAQsFA4ICAQCJaKewFQuq
 ---
 title: Device HealthAttestation CSP
 description: Device HealthAttestation CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 --
 subject=/CN=*.spserv.microsoft.com
@@ -315,16 +303,13 @@ issuer=/C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/OU=Microsoft IT/CN=
 ---
 title: Device HealthAttestation CSP
 description: Device HealthAttestation CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 SSL handshake has read 3681 bytes and written 561 bytes

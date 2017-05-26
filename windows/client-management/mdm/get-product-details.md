@@ -1,16 +1,13 @@
 ---
 title: Get product details
 description: The Get product details operation retrieves the product information from the Windows Store for Business for a specific application.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: BC432EBA-CE5E-43BD-BD54-942774767286
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

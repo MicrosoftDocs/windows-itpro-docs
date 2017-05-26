@@ -1,16 +1,13 @@
 ---
 title: RemoteWipe CSP
 description: RemoteWipe CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6e89bd37-7680-4940-8a67-11ed062ffb70
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

@@ -1,16 +1,13 @@
 ---
 title: Defender DDF file
 description: Defender DDF file
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 39B9E6CF-4857-4199-B3C3-EC740A439F65
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

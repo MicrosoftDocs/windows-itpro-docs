@@ -1,16 +1,13 @@
 ---
 title: IConfigServiceProvider2
 description: IConfigServiceProvider2
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8deec0fb-59a6-4d08-8ddb-6d0d3d868a10
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

@@ -1,16 +1,13 @@
 ---
 title: ICSPValidate
 description: ICSPValidate
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b0993f2d-6269-412f-a329-af25fff34ca2
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

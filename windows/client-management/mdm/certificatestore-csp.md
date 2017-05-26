@@ -1,16 +1,13 @@
 ---
 title: CertificateStore CSP
 description: CertificateStore CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0fe28629-3cc3-42a0-91b3-3624c8462fd3
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

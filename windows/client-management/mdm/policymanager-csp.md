@@ -1,16 +1,13 @@
 ---
 title: PolicyManager CSP
 description: PolicyManager CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 048427b1-6024-4660-8660-bd91c583f7f9
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 
@@ -55,16 +52,13 @@ Supported operations are Add, Get, and Delete.
 <a href="" id="my--areaname---
 title: PolicyManager CSP
 description: PolicyManager CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 048427b1-6024-4660-8660-bd91c583f7f9
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 policyname-"></a>**Device/_&lt;AreaName&gt;_/****_&lt;PolicyName&gt;_**  
 Specifies the name/value pair used in the policy. Supported operation is Get.

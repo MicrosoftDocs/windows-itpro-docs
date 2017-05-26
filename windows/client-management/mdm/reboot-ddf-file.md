@@ -1,16 +1,13 @@
 ---
 title: Reboot DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the Reboot configuration service provider. DDF files are used only with OMA DM provisioning XML.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ABBD850C-E744-462C-88E7-CA3F43D80DB1
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

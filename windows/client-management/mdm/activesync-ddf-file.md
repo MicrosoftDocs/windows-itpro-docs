@@ -1,16 +1,13 @@
 ---
 title: ActiveSync DDF file
 description: ActiveSync DDF file
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c4cd4816-ad8f-45b2-9b81-8abb18254096
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

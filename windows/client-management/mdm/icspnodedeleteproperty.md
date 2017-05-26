@@ -1,16 +1,13 @@
 ---
 title: ICSPNode DeleteProperty
 description: ICSPNode DeleteProperty
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7e21851f-d663-4558-b3e8-590d24b4f6c4
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

@@ -1,16 +1,13 @@
 ---
 title: PXLOGICAL configuration service provider
 description: PXLOGICAL configuration service provider
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b5fc84d4-aa32-4edd-95f1-a6a9c0feb459
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

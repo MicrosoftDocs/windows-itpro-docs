@@ -1,16 +1,13 @@
 ---
 title: DeviceInstanceService CSP
 description: DeviceInstanceService CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f113b6bb-6ce1-45ad-b725-1b6610721e2d
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

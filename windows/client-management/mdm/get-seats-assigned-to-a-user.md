@@ -1,16 +1,13 @@
 ---
 title: Get seats assigned to a user
 description: The Get seats assigned to a user operation retrieves information about assigned seats in the Windows Store for Business.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: CB963E44-8C7C-46F9-A979-89BBB376172B
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

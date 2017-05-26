@@ -1,16 +1,13 @@
 ---
 title: HealthAttestation DDF
 description: HealthAttestation DDF
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: D20AC78D-D2D4-434B-B9FD-294BCD9D1DDE
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

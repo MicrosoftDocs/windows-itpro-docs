@@ -1,16 +1,13 @@
 ---
 title: BrowserFavorite CSP
 description: BrowserFavorite CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5d2351ff-2d6a-4273-9b09-224623723cbf
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 
@@ -37,30 +34,24 @@ The following diagram shows the BrowserFavorite configuration service provider i
 <a href="" id="favorite-name---
 title: BrowserFavorite CSP
 description: BrowserFavorite CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5d2351ff-2d6a-4273-9b09-224623723cbf
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 ---
 title: BrowserFavorite CSP
 description: BrowserFavorite CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5d2351ff-2d6a-4273-9b09-224623723cbf
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 -"></a>***favorite name***   
 Required. Specifies the user-friendly name of the favorite URL that is displayed in the Favorites list of Internet Explorer.

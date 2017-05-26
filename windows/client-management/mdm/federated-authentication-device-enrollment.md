@@ -1,16 +1,13 @@
 ---
 title: Federated authentication device enrollment
 description: This section provides an example of the mobile device enrollment protocol using federated authentication policy.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 049ECA6E-1AF5-4CB2-8F1C-A5F22D722DAA
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

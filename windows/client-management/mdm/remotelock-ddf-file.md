@@ -1,16 +1,13 @@
 ---
 title: RemoteLock DDF file
 description: RemoteLock DDF file
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: A301AE26-1BF1-4328-99AB-1ABBA4960797
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 

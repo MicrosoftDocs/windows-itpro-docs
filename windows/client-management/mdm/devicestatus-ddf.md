@@ -1,16 +1,13 @@
 ---
 title: DeviceStatus DDF
 description: This topic shows the OMA DM device description framework (DDF) for the DeviceStatus configuration service provider. DDF files are used only with OMA DM provisioning XML.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 780DC6B4-48A5-4F74-9F2E-6E0D88902A45
-ms.author: exists
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: Nick Brower
 ---
 
 
