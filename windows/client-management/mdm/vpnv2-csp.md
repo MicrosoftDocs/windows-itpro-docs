@@ -1,15 +1,13 @@
 ---
 title: VPNv2 CSP
 description: VPNv2 CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 51ADA62E-1EE5-4F15-B2AD-52867F5B2AD2
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # VPNv2 CSP

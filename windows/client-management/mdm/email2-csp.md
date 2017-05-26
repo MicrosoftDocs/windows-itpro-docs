@@ -1,15 +1,13 @@
 ---
 title: EMAIL2 CSP
 description: EMAIL2 CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bcfc9d98-bc2e-42c6-9b81-0b5bf65ce2b8
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # EMAIL2 CSP

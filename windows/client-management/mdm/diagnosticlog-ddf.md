@@ -1,15 +1,13 @@
 ---
 title: DiagnosticLog DDF
 description: DiagnosticLog DDF
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD75EDA-5913-45B4-9BED-20E30CDEBE16
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # DiagnosticLog DDF

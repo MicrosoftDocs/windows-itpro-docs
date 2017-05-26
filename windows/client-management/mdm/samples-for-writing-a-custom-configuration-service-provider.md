@@ -1,15 +1,13 @@
 ---
 title: Samples for writing a custom configuration service provider
 description: Samples for writing a custom configuration service provider
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ccda4d62-7ce1-483b-912f-25d50c974270
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # Samples for writing a custom configuration service provider

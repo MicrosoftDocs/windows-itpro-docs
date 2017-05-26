@@ -1,15 +1,13 @@
 ---
 title: ActiveSync CSP
 description: ActiveSync CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c65093ef-bd36-4f32-9dab-edb7bcfb3188
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # ActiveSync CSP

@@ -1,15 +1,13 @@
 ---
 title: Get localized product details
 description: The Get localized product details operation retrieves the localization information of a product from the Windows Store for Business.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: EF6AFCA9-8699-46C9-A3BB-CD2750C07901
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # Get localized product details
