@@ -28,6 +28,7 @@ Understand what data fields are exposed as part of the alerts API and how they m
 Field numbers match the numbers in the images below.
 
 <table class="tg">
+<table style="table-layout:fixed; width:100%">
   <tr>
     <th class="tg-yw4l">Portal label</th>
     <th class="tg-yw4l">SIEM field name</th>
