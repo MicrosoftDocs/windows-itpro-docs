@@ -265,7 +265,7 @@ Field numbers match the numbers in the images below.
 
 ![Image of alert with numbers](images/atp-siem-mapping1.png)
 
-![Image of alert details pane with numbers](images/atp-siem-mapping2.png)
+![Image of alert details pane with numbers](images/atp-siem-mapping13.png)
 
 ![Image of alert timeline with numbers](images/atp-siem-mapping3.png)
 
