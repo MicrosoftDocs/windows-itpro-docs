@@ -3,7 +3,6 @@ title: DeveloperSetup DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the DeveloperSetup configuration service provider. This CSP was added in Windows 10, version 1703.
 ms.assetid: 
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

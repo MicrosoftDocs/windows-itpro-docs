@@ -3,7 +3,6 @@ title: ApplicationRestrictions XSD
 description: Here's the XSD for the ApplicationManagement/ApplicationRestrictions policy.
 ms.assetid: A5AA2B59-3736-473E-8F70-A90FD61EE426
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

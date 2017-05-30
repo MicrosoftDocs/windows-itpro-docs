@@ -3,7 +3,6 @@ title: Defender CSP
 description: Defender CSP
 ms.assetid: 481AA74F-08B2-4A32-B95D-5A3FD05B335C
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

@@ -3,7 +3,6 @@ title: DevInfo DDF file
 description: DevInfo DDF file
 ms.assetid: beb07cc6-4133-4c0f-aa05-64db2b4a004f
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

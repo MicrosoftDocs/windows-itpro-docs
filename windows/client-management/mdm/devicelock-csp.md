@@ -3,7 +3,6 @@ title: DeviceLock CSP
 description: DeviceLock CSP
 ms.assetid: 9a547efb-738e-4677-95d3-5506d350d8ab
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

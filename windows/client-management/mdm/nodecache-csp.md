@@ -3,7 +3,6 @@ title: NodeCache CSP
 description: NodeCache CSP
 ms.assetid: b4dd2b0d-79ef-42ac-ab5b-ee07b3097876
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

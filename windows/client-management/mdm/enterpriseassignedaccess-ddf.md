@@ -3,7 +3,6 @@ title: EnterpriseAssignedAccess DDF
 description: EnterpriseAssignedAccess DDF
 ms.assetid: 8BD6FB05-E643-4695-99A2-633995884B37
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
