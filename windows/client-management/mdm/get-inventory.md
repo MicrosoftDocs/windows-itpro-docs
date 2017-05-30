@@ -6,7 +6,6 @@ MS-HAID:
 - 'p\_phDeviceMgmt.get\_inventory'
 ms.assetid: C5485722-FC49-4358-A097-74169B204E74
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

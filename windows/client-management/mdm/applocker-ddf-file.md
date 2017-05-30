@@ -3,7 +3,6 @@ title: AppLocker DDF file
 description: AppLocker DDF file
 ms.assetid: 79E199E0-5454-413A-A57A-B536BDA22496
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

@@ -3,7 +3,6 @@ title: w7 APPLICATION CSP
 description: w7 APPLICATION CSP
 ms.assetid: 10f8aa16-5c89-455d-adcd-d7fb45d4e768
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

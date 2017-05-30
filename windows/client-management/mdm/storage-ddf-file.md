@@ -3,7 +3,6 @@ title: Storage DDF file
 description: Storage DDF file
 ms.assetid: 247062A3-4DFB-4B14-A3D1-68D02C27703C
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

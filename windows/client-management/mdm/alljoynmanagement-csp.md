@@ -3,7 +3,6 @@ title: AllJoynManagement CSP
 description: The AllJoynManagement configuration service provider (CSP) allows an IT administrator to enumerate the AllJoyn devices that are connected to the AllJoyn bus.
 ms.assetid: 468E0EE5-EED3-48FF-91C0-89F9D159AA8C
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
