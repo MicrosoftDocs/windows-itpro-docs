@@ -1228,6 +1228,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Ownership</li>
 </ul>
 </td></tr>
+<tr class="odd">
+<td style="vertical-align:top">MDM support for Windows 10 S</td>
+<td style="vertical-align:top"><p>Updated the following topics to indicate MDM support in Windows 10 S.</p>
+<ul>
+<li>[Configuration service provider reference](configuration-service-provider-reference.md)</li>
+<li>[Policy CSP](policy-configuration-service-provider.md)</li>
+</ul>
+</td></tr>
 </tbody>
 </table>
 
@@ -1483,14 +1491,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 </td>
 </tr>
-<tr class="odd">
-<td style="vertical-align:top">MDM support for Windows 10 S</td>
-<td style="vertical-align:top"><p>Updated the following topics to indicate MDM support in Windows 10 S.</p>
-<ul>
-<li>[Configuration service provider reference](configuration-service-provider-reference.md)</li>
-<li>[Policy CSP](policy-configuration-service-provider.md)</li>
-</ul>
-</td></tr>
 </tbody>
 </table>
 
