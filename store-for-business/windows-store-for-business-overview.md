@@ -176,10 +176,12 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Belgium</li>
             <li>Belize</li>
             <li>Bermuda</li>
+            <li>Bhutan</li>
             <li>Bolivia</li>
             <li>Botswana</li>
             <li>Brunei Darussalam</li>
             <li>Bulgaria</li>
+            <li>Cambodia</li>
             <li>Cameroon</li>
             <li>Canada</li>
             <li>Republic of Cabo Verde</li>
@@ -191,12 +193,12 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Croatia</li>
             <li>Cur&ccedil;ao</li>
             <li>Cyprus</li>
-            <li>Czech Republic</li>
-            <li>Denmark</li>
         </ul>
     </td>
      <td>
         <ul>
+            <li>Czech Republic</li>
+            <li>Denmark</li>
             <li>Dominican Republic</li>
             <li>Ecuador</li>
             <li>Egypt</li>
@@ -209,6 +211,7 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Germany</li>
             <li>Ghana</li>
             <li>Greece</li>
+            <li>Guadeloupe</li>
             <li>Guatemala</li>
             <li>Honduras</li>
             <li>Hong Kong SAR</li>
@@ -222,14 +225,14 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Jamaica</li>
             <li>Japan</li>
             <li>Jordan</li>
-            <li>Kenya</li>
-            <li>Kuwait</li>
-            <li>Latvia</li>
-            <li>Lebanon</li>
+            <li>Kenya</li> 
         </ul>
     </td>
     <td>
         <ul>
+            <li>Kuwait</li>
+            <li>Latvia</li>
+            <li>Lebanon</li>
             <li>Libya</li>
             <li>Liechtenstein</li>
             <li>Lithuania</li>
@@ -241,6 +244,7 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Mongolia</li>
             <li>Montenegro</li>
             <li>Morocco</li>
+            <li>Mozambique</li>
             <li>Namibia</li>
             <li>Netherlands</li>
             <li>New Zealand</li>
@@ -254,15 +258,15 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Paraguay</li>
             <li>Peru</li>
             <li>Philippines</li>
-            <li>Poland</li>
-            <li>Portugal</li>
-            <li>Puerto Rico</li>
-            <li>Qatar</li>
-            <li>Romania</li>          
+            <li>Poland</li>          
         </ul>
     </td>
     <td>
         <ul>
+            <li>Portugal</li>
+            <li>Puerto Rico</li>
+            <li>Qatar</li>
+            <li>Romania</li>
             <li>Rwanda</li>
             <li>Saint Kitts and Nevis</li>
             <li>Saudi Arabia</li>
@@ -283,12 +287,16 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Uganda</li>
             <li>United Arab Emirates</li>
             <li>United Kingdom</li>
-            <li>United States</li>
+            <li>United States</li>           
+        </ul>
+    </td>
+    <td>
+        <ul>
             <li>Uruguay</li>
             <li>Viet Nam</li>
             <li>Virgin Islands, U.S.</li>
             <li>Zambia</li>
-            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>           
+            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>           
         </ul>
     </td>
    </tr>
